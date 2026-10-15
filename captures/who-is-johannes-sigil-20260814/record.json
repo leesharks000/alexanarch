@@ -20,7 +20,7 @@
  "addr_id": "ADDR-658d8df50aaa",
  "obs_id": "OBS-59ba96be25b2",
  "cites": 10,
- "per": 1.0,
+ "per": 0.25,
  "per_v": {
   "author": true,
   "inst": true,
@@ -160,7 +160,7 @@
    "addr_id": "ADDR-658d8df50aaa",
    "obs_id": "OBS-59ba96be25b2",
    "cites": 10,
-   "per": 1.0,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -294,7 +294,13 @@
    },
    "operator_disclosure": "Turn 8 contains the operator's own statement of health, employment and financial circumstance. Preserved at explicit operator instruction ('preserve full transcript, as always'). Flagged, not redacted: the standing redaction rule governs THIRD-PARTY private correspondence, and this is the operator's own disclosure about himself, made deliberately.",
    "cite": "https://www.alexanarch.org/captures/who-is-johannes-sigil-20260814/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_corrected": {
+    "from": 1.0,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   }
  ],
  "n_observations": 1,
@@ -355,5 +361,11 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_corrected": {
+  "from": 1.0,
+  "to": 0.25,
+  "on": "2026-10-15",
+  "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+ },
  "record_url": "https://www.alexanarch.org/captures/who-is-johannes-sigil-20260814/"
 }

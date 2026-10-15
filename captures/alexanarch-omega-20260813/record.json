@@ -15,7 +15,7 @@
  "auth": "incognito, signed out",
  "ev": "paste",
  "cites": 6,
- "per": 0.75,
+ "per": 0.25,
  "per_v": {
   "author": true,
   "inst": true,
@@ -115,7 +115,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 6,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -208,7 +208,13 @@
     "https://www.alexanarch.org/data/captures/alexanarch-omega-20260813/screengrab-20260813-164709.png"
    ],
    "cite": "https://www.alexanarch.org/captures/alexanarch-omega-20260813/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   }
  ],
  "n_observations": 1,
@@ -265,5 +271,11 @@
   30,
   1423
  ],
+ "per_corrected": {
+  "from": 0.75,
+  "to": 0.25,
+  "on": "2026-10-15",
+  "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+ },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-omega-20260813/"
 }

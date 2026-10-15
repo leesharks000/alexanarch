@@ -43,7 +43,7 @@
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; QUERY FROM THE RECORD PAGE'S LINK; CHIPS INLINE)",
  "transcript_complete": "One answer, complete as pasted; the operator turn blank, the query taken from the link.",
  "transcript_read": "READ IN FULL 2026-10-12",
- "per": 1.0,
+ "per": 0.0,
  "per_v": {
   "author": true,
   "inst": true,
@@ -149,6 +149,12 @@
   "query_basis": "The operator turn is blank in the paste. The string is the record page's Ask ChatGPT prompt for #1675, live from 2026-10-12 ~01:30 (the plain ?q= link); the operator's 'clicking' and the answer's form (its arguments, ranked, grounded in the text) agree with it.",
   "reached_basis": "The answer's headings and quotations are the deposit's text verbatim, so the alexanarch.org page it cites holds the text; the chip shows the site label only.",
   "verified": "Compared 2026-10-12 against the text of #1675 (data/texts)."
+ },
+ "per_corrected": {
+  "from": 1.0,
+  "to": 0.0,
+  "on": "2026-10-15",
+  "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
  "record_url": "https://www.alexanarch.org/captures/missing-translator-ask-chatgpt-20261012/"
 }

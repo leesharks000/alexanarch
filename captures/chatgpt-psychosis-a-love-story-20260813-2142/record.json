@@ -15,7 +15,7 @@
  "auth": "signed in",
  "ev": "paste",
  "cites": 6,
- "per": 1.0,
+ "per": 0.0,
  "per_v": {
   "author": true,
   "inst": true,
@@ -121,7 +121,7 @@
    "auth": "signed in",
    "ev": "paste",
    "cites": 6,
-   "per": 1.0,
+   "per": 0.0,
    "per_v": {
     "author": true,
     "inst": true,
@@ -220,7 +220,13 @@
    "auth_basis": "OPERATOR ATTESTATION, 2026-08-13: signed in, not incognito. The frames corroborate the authentication dimension — no Sign in pill in any of the seven, and a partial account-avatar ring at the header edge — but a frame cannot show the incognito dimension, so the attestation carries it.",
    "addr_id": "ADDR-2225b57e8496",
    "cite": "https://www.alexanarch.org/captures/chatgpt-psychosis-a-love-story-20260813-2142/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_corrected": {
+    "from": 1.0,
+    "to": 0.0,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   }
  ],
  "n_observations": 1,
@@ -278,5 +284,11 @@
   753,
   1377
  ],
+ "per_corrected": {
+  "from": 1.0,
+  "to": 0.0,
+  "on": "2026-10-15",
+  "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+ },
  "record_url": "https://www.alexanarch.org/captures/chatgpt-psychosis-a-love-story-20260813-2142/"
 }

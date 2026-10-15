@@ -30,6 +30,7 @@
     "transcript_complete": {"type": ["string","null"]},
     "transcript_read": {"type": ["string","null"]},
     "per": {"type": ["number","null"]},
+    "per_corrected": {"type": "object", "description": "PER re-derived from per_v, the four-unit vector that is the record (repair of 2026-10-15): {from, to, on, basis}.", "required": ["from","to","on"]},
     "per_v": {"type": ["object","null"]},
     "per_note": {"type": ["string","null"]},
     "sf": {"type": ["string","null"]},

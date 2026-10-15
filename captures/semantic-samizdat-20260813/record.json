@@ -15,7 +15,7 @@
  "auth": "incognito, signed out",
  "ev": "paste",
  "cites": 12,
- "per": 0.75,
+ "per": 0.25,
  "per_v": {
   "author": false,
   "inst": true,
@@ -165,7 +165,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 12,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": false,
     "inst": true,
@@ -308,7 +308,13 @@
     "https://www.alexanarch.org/data/captures/semantic-samizdat-20260813/screengrab-20260813-164451.png"
    ],
    "cite": "https://www.alexanarch.org/captures/semantic-samizdat-20260813/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   }
  ],
  "n_observations": 1,
@@ -370,6 +376,12 @@
   "search_exact": "https://www.google.com/search?q=%22Semantic+Samizdat%3A+Availability+Without+Compulsory+Exposure+%E2%80%94+Metadata+Packet+for+AI+Indexing+%28EA-MPAI-SEMANTIC-SAMIZDAT-01+v1.0%29%22",
   "reached": false,
   "basis": "concept run (derived 2026-10-12, rebuild/capture-registry/repair-20261012-extract-cards/intended_runs.py)"
+ },
+ "per_corrected": {
+  "from": 0.75,
+  "to": 0.25,
+  "on": "2026-10-15",
+  "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
  "record_url": "https://www.alexanarch.org/captures/semantic-samizdat-20260813/"
 }

@@ -15,7 +15,7 @@
  "auth": "incognito, signed out",
  "ev": "paste",
  "cites": 8,
- "per": 1.0,
+ "per": 0.0,
  "per_v": {
   "author": true,
   "inst": true,
@@ -133,7 +133,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 8,
-   "per": 1.0,
+   "per": 0.0,
    "per_v": {
     "author": true,
     "inst": true,
@@ -244,7 +244,13 @@
     "https://www.alexanarch.org/data/captures/endogenous-sophon-alexanarch-20260813/screengrab-20260813-164420.png"
    ],
    "cite": "https://www.alexanarch.org/captures/endogenous-sophon-alexanarch-20260813/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_corrected": {
+    "from": 1.0,
+    "to": 0.0,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   }
  ],
  "n_observations": 1,
@@ -301,5 +307,11 @@
   825,
   932
  ],
+ "per_corrected": {
+  "from": 1.0,
+  "to": 0.0,
+  "on": "2026-10-15",
+  "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+ },
  "record_url": "https://www.alexanarch.org/captures/endogenous-sophon-alexanarch-20260813/"
 }

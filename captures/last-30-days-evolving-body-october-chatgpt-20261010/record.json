@@ -50,7 +50,7 @@
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; QUERY FROM THE OPERATOR'S MESSAGE; CHIPS INLINE)",
  "transcript_complete": "One answer, complete as pasted; the operator turn blank in the paste, supplied in the operator's message.",
  "transcript_read": "READ IN FULL 2026-10-10",
- "per": 0.75,
+ "per": 0.25,
  "per_v": {
   "author": false,
   "inst": true,
@@ -152,5 +152,11 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_corrected": {
+  "from": 0.75,
+  "to": 0.25,
+  "on": "2026-10-15",
+  "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+ },
  "record_url": "https://www.alexanarch.org/captures/last-30-days-evolving-body-october-chatgpt-20261010/"
 }

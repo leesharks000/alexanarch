@@ -145,7 +145,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": null,
-   "per": 0.0,
+   "per": 1.0,
    "per_v": {
     "author": false,
     "inst": false,
@@ -189,7 +189,13 @@
      "date": "2026-08-14",
      "why": "observation slugs became citable anchors; this slug collided with another observation and would have resolved two distinct captures to one anchor"
     }
-   ]
+   ],
+   "per_corrected": {
+    "from": 0.0,
+    "to": 1.0,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   }
  ],
  "n_observations": 2,

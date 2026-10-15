@@ -37,8 +37,8 @@
   "_record_pages": "Ruled 2026-10-01 (Lee Sharks, option b): the record page captures/{slug}/ is the citation. Until then a capture was cited at captures/#{slug}, an anchor in one page past 8 MB; a fetcher drops the fragment, requests the whole page, and the fetch interfaces composition surfaces use refuse a response above about 4 MiB, so no citation resolved for a machine. The gallery anchors (anchor_form) remain and resolve in a browser. Written by scripts/build_capture_records.py; table of contents at captures/index.json."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "12.202",
- "date": "2026-10-14",
+ "version": "12.203",
+ "date": "2026-10-15",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
  "license": "CC-BY-4.0",
@@ -3275,7 +3275,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 5,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -3358,7 +3358,13 @@
      ],
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "cite": "https://www.alexanarch.org/captures/alexanarch-ai-mode-2026-07/#alexanarch-20260813-1857",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 5,
@@ -3571,7 +3577,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": null,
-     "per": 0.0,
+     "per": 1.0,
      "per_v": {
       "author": false,
       "inst": false,
@@ -3615,7 +3621,13 @@
        "date": "2026-08-14",
        "why": "observation slugs became citable anchors; this slug collided with another observation and would have resolved two distinct captures to one anchor"
       }
-     ]
+     ],
+     "per_corrected": {
+      "from": 0.0,
+      "to": 1.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -4158,7 +4170,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 10,
-   "per": 1.0,
+   "per": 0.0,
    "per_v": {
     "author": true,
     "inst": true,
@@ -4296,7 +4308,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 10,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -4427,7 +4439,13 @@
       "https://www.alexanarch.org/data/captures/alexanarch-classics-20260813/screengrab-20260813-164815.png"
      ],
      "cite": "https://www.alexanarch.org/captures/alexanarch-classics-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -4484,7 +4502,13 @@
     626,
     18,
     1422
-   ]
+   ],
+   "per_corrected": {
+    "from": 1.0,
+    "to": 0.0,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "alexanarch-datasets-20260813",
@@ -4493,7 +4517,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 8,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -4615,7 +4639,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 8,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -4730,7 +4754,13 @@
       "https://www.alexanarch.org/data/captures/alexanarch-datasets-20260813/screengrab-20260813-164822.png"
      ],
      "cite": "https://www.alexanarch.org/captures/alexanarch-datasets-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -4788,7 +4818,13 @@
     477,
     1426,
     3
-   ]
+   ],
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "alexanarch-deleuze-nomadology-20260731",
@@ -5381,7 +5417,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 4,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -5455,7 +5491,13 @@
      ],
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "cite": "https://www.alexanarch.org/captures/alexanarch-endogenous-sophon-20260731/#alexanarch-endogenous-sophon-20260813-1857",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -7729,7 +7771,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 6,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -7829,7 +7871,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 6,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -7922,7 +7964,13 @@
       "https://www.alexanarch.org/data/captures/alexanarch-omega-20260813/screengrab-20260813-164709.png"
      ],
      "cite": "https://www.alexanarch.org/captures/alexanarch-omega-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -7978,7 +8026,13 @@
    "related_deposits": [
     30,
     1423
-   ]
+   ],
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "alexanarch-records-20260813",
@@ -7987,7 +8041,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 8,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": false,
     "inst": true,
@@ -8105,7 +8159,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 8,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": false,
       "inst": true,
@@ -8216,7 +8270,13 @@
       "https://www.alexanarch.org/data/captures/alexanarch-records-20260813/screengrab-20260813-164524.png"
      ],
      "cite": "https://www.alexanarch.org/captures/alexanarch-records-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -8272,7 +8332,13 @@
    "related_deposits": [
     1424,
     1423
-   ]
+   ],
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "alexanarch-revelation-20260813",
@@ -8661,7 +8727,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 5,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -8746,7 +8812,13 @@
      ],
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "cite": "https://www.alexanarch.org/captures/alexanarch-revelation-misread-20260731/#alexanarch-revelation-20260813-1857",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -10226,7 +10298,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 5,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -10313,7 +10385,13 @@
      ],
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "cite": "https://www.alexanarch.org/captures/alexanarch-socrates-20260731/#alexanarch-socrates-20260813-1857",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     },
     {
      "slug": "alexanarch-socrates-20260911",
@@ -10868,7 +10946,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 6,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -10966,7 +11044,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 6,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -11057,7 +11135,13 @@
       "https://www.alexanarch.org/data/captures/alexanarch-surface-weather-observatory-20260813/screengrab-20260813-164618.png"
      ],
      "cite": "https://www.alexanarch.org/captures/alexanarch-surface-weather-observatory-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -11112,7 +11196,13 @@
    "match_note": null,
    "related_deposits": [
     1423
-   ]
+   ],
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "alexanarch-unmade-sign-20260811",
@@ -11670,7 +11760,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 7,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -11773,7 +11863,13 @@
      ],
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "cite": "https://www.alexanarch.org/captures/alexanarch-whitman-mantle-bleed-20260731/#alexanarch-whitman-20260813-1857",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -13081,7 +13177,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 4,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": false,
       "inst": true,
@@ -13158,7 +13254,13 @@
      "auth_basis": "OPERATOR ATTESTATION, 2026-08-13: signed in, not incognito. The frames corroborate the authentication dimension — no Sign in pill in any of the seven, and a partial account-avatar ring at the header edge — but a frame cannot show the incognito dimension, so the attestation carries it.",
      "addr_id": "ADDR-05f65d10da85",
      "cite": "https://www.alexanarch.org/captures/crimson-hexagon-6-tuple-20260718/#crimson-hexagon-6-tuple-20260813-2142",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -13459,7 +13561,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 6,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -13564,7 +13666,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/crimson-hexagon-operative-architecture-adoption-20260718/#crimson-hexagon-operative-architecture-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -13870,7 +13978,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 5,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -13962,7 +14070,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/crimson-hexagon-sappho-room-20260726/#crimson-hexagon-sappho-room-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -14830,7 +14944,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 7,
-     "per": 0.25,
+     "per": 0.75,
      "per_v": {
       "author": false,
       "inst": false,
@@ -14938,7 +15052,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/crimson-hexagonal-archive-revelation/#crimson-hexagonal-archive-revelation-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.25,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -15255,7 +15375,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 7,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -15359,7 +15479,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/crimson-hexagonal-archive-space-ark-invoke-20260612/#crimson-hexagonal-archive-space-ark-invoke-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -15575,7 +15701,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 8,
-   "per": 1.0,
+   "per": 0.0,
    "per_v": {
     "author": true,
     "inst": true,
@@ -15693,7 +15819,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 8,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -15804,7 +15930,13 @@
       "https://www.alexanarch.org/data/captures/endogenous-sophon-alexanarch-20260813/screengrab-20260813-164420.png"
      ],
      "cite": "https://www.alexanarch.org/captures/endogenous-sophon-alexanarch-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -15860,7 +15992,13 @@
    "related_deposits": [
     825,
     932
-   ]
+   ],
+   "per_corrected": {
+    "from": 1.0,
+    "to": 0.0,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "glyphic-checksum",
@@ -24357,7 +24495,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (FINAL-ROUND SOURCE CARDS INCLUDED)",
    "transcript_complete": "Four rounds as supplied. The query line is not in the paste; the issued string is the operator's attestation (the link title on the round-4 citation reads 'aristotle and theophrastus \"one author\"', a different string). Operator turns are marked 'You said:'. The round-1 source cards are not in the paste; the round-1 citation of the Medium packet is attested by the operator's round-3 turn and conceded by the composition in round 4. The final-round cards are kept.",
    "transcript_read": "READ IN FULL 2026-09-28",
-   "per": 0.5,
+   "per": 0.75,
    "per_v": {
     "author": false,
     "inst": false,
@@ -24448,7 +24586,13 @@
     "verified": "Round-4 points checked against #1588 (AXN:067D) on 2026-09-28: De sensibus nearest neighbour of PA and De caelo (table row citing #1586 §§3–4); Athenaion Politeia lean to the Theophrastan cluster; catalogue's ἢ and twelve identical titles; maker-count not claimed."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.75,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "aristotle-theophrastus-not-two-distinct-authors-aio-20260930",
@@ -27792,7 +27936,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 8,
-     "per": 0.25,
+     "per": 0.75,
      "per_v": {
       "author": false,
       "inst": false,
@@ -27905,7 +28049,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/generative-monoculture-adoption/#generative-monoculture-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.25,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -28529,7 +28679,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 6,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -28625,7 +28775,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/doxastic-regulatory-calcification-mint-block-20260627/#doxastic-regulatory-calcification-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -28799,7 +28955,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 4,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -28874,7 +29030,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/haitch-portuna-lal-20260627/#haitch-portuna-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -30956,7 +31118,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 2,
-     "per": 0.25,
+     "per": 0.75,
      "per_v": {
       "author": false,
       "inst": false,
@@ -31016,7 +31178,13 @@
      ],
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "cite": "https://www.alexanarch.org/captures/acanthian-dove-20260718/#acanthian-dove-20260813-1857",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.25,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -31877,7 +32045,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 2,
-     "per": 0.0,
+     "per": 1.0,
      "per_v": {
       "author": false,
       "inst": false,
@@ -31932,7 +32100,13 @@
       "https://www.alexanarch.org/data/captures/the-network-is-the-poem-20260813/screengrab-20260813-164533.png"
      ],
      "cite": "https://www.alexanarch.org/captures/the-network-is-the-poem-20260812/#the-network-is-the-poem-20260813",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.0,
+      "to": 1.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -32013,7 +32187,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 12,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": false,
     "inst": true,
@@ -32163,7 +32337,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 12,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": false,
       "inst": true,
@@ -32306,7 +32480,13 @@
       "https://www.alexanarch.org/data/captures/semantic-samizdat-20260813/screengrab-20260813-164451.png"
      ],
      "cite": "https://www.alexanarch.org/captures/semantic-samizdat-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -32368,6 +32548,12 @@
     "search_exact": "https://www.google.com/search?q=%22Semantic+Samizdat%3A+Availability+Without+Compulsory+Exposure+%E2%80%94+Metadata+Packet+for+AI+Indexing+%28EA-MPAI-SEMANTIC-SAMIZDAT-01+v1.0%29%22",
     "reached": false,
     "basis": "concept run (derived 2026-10-12, rebuild/capture-registry/repair-20261012-extract-cards/intended_runs.py)"
+   },
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -32377,7 +32563,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 4,
-   "per": 0.25,
+   "per": 0.75,
    "per_v": {
     "author": true,
     "inst": false,
@@ -32461,7 +32647,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 4,
-     "per": 0.25,
+     "per": 0.75,
      "per_v": {
       "author": true,
       "inst": false,
@@ -32538,7 +32724,13 @@
       "https://www.alexanarch.org/data/captures/stable-visionary-loci-20260813/screengrab-20260813-164407.png"
      ],
      "cite": "https://www.alexanarch.org/captures/stable-visionary-loci-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.25,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -32593,7 +32785,13 @@
    "match_note": null,
    "related_deposits": [
     1033
-   ]
+   ],
+   "per_corrected": {
+    "from": 0.25,
+    "to": 0.75,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "aphoristic-tooth-20260814",
@@ -35627,7 +35825,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 2,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": false,
       "inst": true,
@@ -35684,7 +35882,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/gravity-well-protocol-tachyon-reconstitute-zenodo-20260612/#gravity-well-protocol-tachyon-reconstitute-zenodo-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -42134,7 +42338,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 8,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -42262,6 +42466,12 @@
       "binding_relation": "weakened",
       "organic_presence": "no",
       "_basis": "retrofitted from the observation's own d field — archive absent from the returned set"
+     },
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
      }
     }
    ],
@@ -43453,7 +43663,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 9,
-     "per": 0.0,
+     "per": 1.0,
      "per_v": {
       "author": false,
       "inst": false,
@@ -43571,7 +43781,13 @@
      "auth_basis": "OPERATOR ATTESTATION, 2026-08-13: signed in, not incognito. The frames corroborate the authentication dimension — no Sign in pill in any of the seven, and a partial account-avatar ring at the header edge — but a frame cannot show the incognito dimension, so the attestation carries it.",
      "addr_id": "ADDR-9252d3eeca02",
      "cite": "https://www.alexanarch.org/captures/computational-audial-criticism-field-mint-20260718/#computational-audial-criticism-20260813-2142",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.0,
+      "to": 1.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -46507,7 +46723,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD",
    "transcript_complete": "complete as supplied",
    "transcript_read": "READ IN FULL 2026-09-17",
-   "per": 0.25,
+   "per": 0.75,
    "per_v": {
     "author": false,
     "inst": false,
@@ -46581,7 +46797,13 @@
    ],
    "notes": null,
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.25,
+    "to": 0.75,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "negative-ontology-alexanarch-aio-20260922",
@@ -46985,7 +47207,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (FIVE OPERATOR TURNS AS PASTED, PAGE CHROME AND ADS INCLUDED)",
    "transcript_complete": "Complete as supplied: five turns — 'what is spxi protocol?', 'yes, please', 'does it work?', and two operator corrections. Source chips show site labels only (SPXI Protocol, Zenodo, '+1').",
    "transcript_read": "READ IN FULL 2026-09-25",
-   "per": 0.75,
+   "per": 0.5,
    "per_v": {
     "author": false,
     "inst": false,
@@ -47055,7 +47277,7 @@
      "mt": "THE PROTOCOL EXPLAINED; THE EVIDENCE READ FROM A SEVERED RECORD",
      "obs_id": "OBS-6a2c0ac2f0f5",
      "oq": null,
-     "per": 0.75,
+     "per": 0.5,
      "per_v": {
       "author": false,
       "inst": false,
@@ -47076,7 +47298,13 @@
      "transcript_class": "CAPTURE-TIME VERBATIM RECORD (FIVE OPERATOR TURNS AS PASTED, PAGE CHROME AND ADS INCLUDED)",
      "transcript_complete": "Complete as supplied: five turns — 'what is spxi protocol?', 'yes, please', 'does it work?', and two operator corrections. Source chips show site labels only (SPXI Protocol, Zenodo, '+1').",
      "transcript_raw": null,
-     "transcript_read": "READ IN FULL 2026-09-25"
+     "transcript_read": "READ IN FULL 2026-09-25",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.5,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     },
     {
      "date": "2026-09-26",
@@ -47294,7 +47522,13 @@
     "not_verified": "The Zenodo v8.3 and v7.2 figures as stated; the Wikidata claim in round three."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.5,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "what-is-spxi-protocol-grok-20260927",
@@ -48477,7 +48711,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (SOURCE CARDS INCLUDED)",
    "transcript_complete": "Complete as supplied: one operator turn (echoed twice) and one answer with its card rail.",
    "transcript_read": "READ IN FULL 2026-10-04",
-   "per": 0.25,
+   "per": 0.5,
    "per_v": {
     "author": true,
     "inst": false,
@@ -48573,7 +48807,13 @@
     "verified": "Compared 2026-10-04: #416 (AXN-00E3, the knowledge-graph sentence); #27 (AXN-0170, the pressures sentence). '1611' and 'scope' absent from the answer."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.25,
+    "to": 0.5,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "negative-ontology-crimson-hexagon-essay-aio-20261004",
@@ -57343,7 +57583,7 @@
    "addr_id": "ADDR-658d8df50aaa",
    "obs_id": "OBS-59ba96be25b2",
    "cites": 10,
-   "per": 1.0,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -57483,7 +57723,7 @@
      "addr_id": "ADDR-658d8df50aaa",
      "obs_id": "OBS-59ba96be25b2",
      "cites": 10,
-     "per": 1.0,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -57617,7 +57857,13 @@
      },
      "operator_disclosure": "Turn 8 contains the operator's own statement of health, employment and financial circumstance. Preserved at explicit operator instruction ('preserve full transcript, as always'). Flagged, not redacted: the standing redaction rule governs THIRD-PARTY private correspondence, and this is the operator's own disclosure about himself, made deliberately.",
      "cite": "https://www.alexanarch.org/captures/who-is-johannes-sigil-20260814/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -57677,7 +57923,13 @@
     }
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 1.0,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "who-is-sparrow-wells-chatgpt-20260815",
@@ -67749,7 +68001,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 15,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": false,
@@ -67932,7 +68184,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 15,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": false,
@@ -68108,7 +68360,13 @@
       "https://www.alexanarch.org/data/captures/ai-overview-capture-registry-20260813/screengrab-20260813-164850.png"
      ],
      "cite": "https://www.alexanarch.org/captures/ai-overview-capture-registry-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -68163,7 +68421,13 @@
    "match_note": null,
    "related_deposits": [
     1398
-   ]
+   ],
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "cha-theology-krisis-chatgpt-unprimed-20260905",
@@ -74741,7 +75005,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (THREE ANSWERS; QUERY FROM THE OPERATOR'S MESSAGE; LATER TURNS BLANK; CHIPS INLINE)",
    "transcript_complete": "Three answers, complete as pasted; the operator turns blank in the paste, the first supplied in the operator's message.",
    "transcript_read": "READ IN FULL 2026-10-10",
-   "per": 0.5,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -74842,7 +75106,13 @@
     "revision": "Revised 2026-10-10 on the operator's correction (09:58 EDT): \"weve only redone one on the new terms, so admitted on equal terms remains accurate for the majority of entries - and im still thinking over how the compositions should work, nothing frozen\". Checked: of the /non entries, theophrastus carries v0.8 compositions; the others carry v0.7 or earlier."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "max-hidalgo-nacher-aimode-20261010",
@@ -74922,7 +75192,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition with links and cards as pasted",
    "transcript_complete": "complete as pasted: body with inline links, six cards",
    "transcript_read": "READ IN FULL 2026-10-10",
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -75014,7 +75284,13 @@
     "verified": "Compared 2026-10-10 against pre-textos.com, ub.academia.edu/MaxHidalgoNácher, and the text of #668."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "last-30-days-evolving-body-october-chatgpt-20261010",
@@ -75058,7 +75334,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; QUERY FROM THE OPERATOR'S MESSAGE; CHIPS INLINE)",
    "transcript_complete": "One answer, complete as pasted; the operator turn blank in the paste, supplied in the operator's message.",
    "transcript_read": "READ IN FULL 2026-10-10",
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": false,
     "inst": true,
@@ -75159,7 +75435,13 @@
     "revision": "Revised 2026-10-10 on the operator's correction (09:58 EDT): \"weve only redone one on the new terms, so admitted on equal terms remains accurate for the majority of entries - and im still thinking over how the compositions should work, nothing frozen\". Checked: of the /non entries, theophrastus carries v0.8 compositions; the others carry v0.7 or earlier."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "lee-sharks-admissibility-legibility-existence-chatgpt-20261010",
@@ -75365,7 +75647,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition with chips, and the organic results, as pasted",
    "transcript_complete": "complete as pasted: composition, four chips, organic results",
    "transcript_read": "READ IN FULL 2026-10-10",
-   "per": 0.25,
+   "per": 0.5,
    "per_v": {
     "author": false,
     "inst": true,
@@ -75463,7 +75745,13 @@
     "verified": "Compared 2026-10-10 against data/EA-WG-CAPTURES-01.json and the titles of #3 and #855."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.25,
+    "to": 0.5,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "lee-sharks-experimental-poets-chatgpt-20261010",
@@ -75552,7 +75840,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (SIX ANSWERS; OPERATOR TURNS FROM THE OPERATOR'S MESSAGE; CHIPS INLINE)",
    "transcript_complete": "Six answers, complete as pasted; the six operator turns blank in the paste, supplied verbatim in the operator's message.",
    "transcript_read": "READ IN FULL 2026-10-10",
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -75658,7 +75946,13 @@
     "verified": "Compared 2026-10-10 against #1656 §P (the poem whole), data/texts/AXN-06DE-text.md (Pearl p. 73) and the mantle-bearing criteria table."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "dedication-what-syllogizing-can-divide-chatgpt-20261011",
@@ -75720,7 +76014,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (FIVE ANSWERS; FIRST QUERY FROM THE OPERATOR'S MESSAGE; LATER TURNS BLANK; CHIPS INLINE)",
    "transcript_complete": "Five answers, complete as pasted 16:49 EDT (the 16:24 paste held answer 1, identical); the first operator turn supplied in the operator's message, turns 2–5 blank and not given.",
    "transcript_read": "READ IN FULL 2026-10-11",
-   "per": 1.0,
+   "per": 0.0,
    "per_v": {
     "author": true,
     "inst": true,
@@ -75833,7 +76127,13 @@
     "verified": "Compared 2026-10-11 against the text and record of #1658."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 1.0,
+    "to": 0.0,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "recent-alexanarch-aio-20261011",
@@ -75960,7 +76260,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and source cards as pasted",
    "transcript_complete": "complete as pasted: composition, eleven cards",
    "transcript_read": "READ IN FULL 2026-10-11",
-   "per": 0.5,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -76051,6 +76351,12 @@
     "date_basis": "The operator's message of 2026-10-11, 22:13 EDT.",
     "operator_reading": "it prioritize the captures so strongly",
     "verified": "Compared 2026-10-11 against data/registry.json, data/EA-WG-CAPTURES-01.json and s/browse/index.html."
+   },
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -76245,7 +76551,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition with links and cards as pasted inline",
    "transcript_complete": "complete as pasted: composition, links, two cards",
    "transcript_read": "READ IN FULL 2026-10-11",
-   "per": 0.5,
+   "per": 0.25,
    "per_v": {
     "author": false,
     "inst": true,
@@ -76345,6 +76651,12 @@
     "date_basis": "The operator's message of 2026-10-11, 23:24 EDT.",
     "test": "search-form test run 6 (rebuild/record-pages/search-form-test/search-form-test.json)",
     "verified": "Compared 2026-10-11 against data/registry.json, s/browse/ and s/wiki/."
+   },
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -76382,7 +76694,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and card as pasted inline",
    "transcript_complete": "complete as pasted: composition, one card",
    "transcript_read": "READ IN FULL 2026-10-11",
-   "per": 0.5,
+   "per": 0.25,
    "per_v": {
     "author": false,
     "inst": true,
@@ -76480,6 +76792,12 @@
     "date_basis": "The operator's message of 2026-10-11, 23:24 EDT.",
     "test": "search-form test run 8",
     "verified": "Compared 2026-10-11 against data/registry.json and operativesemiotics.org/open/."
+   },
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -76580,7 +76898,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and source cards as pasted",
    "transcript_complete": "complete as pasted",
    "transcript_read": "READ IN FULL 2026-10-12",
-   "per": 0.5,
+   "per": 0.25,
    "per_v": {
     "author": false,
     "inst": true,
@@ -76678,6 +76996,12 @@
     "operator_reading": "Operator, with the runs: 'well have to go hard on corrections. its actively erasing the sophistical refutations arguments. irritates me it just composes from the title.'",
     "series": "title runs from the list of twenty works with no capture (2026-10-11 23:45)",
     "verified": "Compared 2026-10-12 against data/registry.json and the text of #1603 (/data/texts/AXN-0693-text.md)."
+   },
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -76733,7 +77057,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and source cards as pasted",
    "transcript_complete": "complete as pasted",
    "transcript_read": "READ IN FULL 2026-10-12",
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -76831,6 +77155,12 @@
     "operator_reading": "Operator, with the runs: 'well have to go hard on corrections. its actively erasing the sophistical refutations arguments. irritates me it just composes from the title.'",
     "series": "title runs from the list of twenty works with no capture (2026-10-11 23:45)",
     "verified": "Compared 2026-10-12 against data/registry.json and the text of #637 (/data/texts/AXN-01ED-text.md)."
+   },
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -76868,7 +77198,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and source cards as pasted",
    "transcript_complete": "complete as pasted",
    "transcript_read": "READ IN FULL 2026-10-12",
-   "per": 0.5,
+   "per": 0.25,
    "per_v": {
     "author": false,
     "inst": true,
@@ -76966,6 +77296,12 @@
     "operator_reading": "Operator, with the runs: 'well have to go hard on corrections. its actively erasing the sophistical refutations arguments. irritates me it just composes from the title.'",
     "series": "title runs from the list of twenty works with no capture (2026-10-11 23:45)",
     "verified": "Compared 2026-10-12 against data/registry.json and the text of #1628 (/data/texts/AXN-06BF-text.md)."
+   },
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -77030,7 +77366,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and source cards as pasted",
    "transcript_complete": "complete as pasted",
    "transcript_read": "READ IN FULL 2026-10-12",
-   "per": 0.75,
+   "per": 0.5,
    "per_v": {
     "author": true,
     "inst": false,
@@ -77128,6 +77464,12 @@
     "operator_reading": "Operator, with the runs: 'well have to go hard on corrections. its actively erasing the sophistical refutations arguments. irritates me it just composes from the title.'",
     "series": "title runs from the list of twenty works with no capture (2026-10-11 23:45)",
     "verified": "Compared 2026-10-12 against data/registry.json and the text of #1627 (/data/texts/AXN-06BD-text.md)."
+   },
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.5,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -77165,7 +77507,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and source cards as pasted",
    "transcript_complete": "complete as pasted",
    "transcript_read": "READ IN FULL 2026-10-12",
-   "per": 0.25,
+   "per": 0.5,
    "per_v": {
     "author": false,
     "inst": true,
@@ -77263,6 +77605,12 @@
     "operator_reading": "Operator, with the runs: 'well have to go hard on corrections. its actively erasing the sophistical refutations arguments. irritates me it just composes from the title.'",
     "series": "title runs from the list of twenty works with no capture (2026-10-11 23:45)",
     "verified": "Compared 2026-10-12 against data/registry.json and the text of #1041 (/data/texts/AXN-041D-text.md)."
+   },
+   "per_corrected": {
+    "from": 0.25,
+    "to": 0.5,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -77399,7 +77747,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and source cards as pasted",
    "transcript_complete": "complete as pasted",
    "transcript_read": "READ IN FULL 2026-10-12",
-   "per": 0.0,
+   "per": 1.0,
    "per_v": {
     "author": false,
     "inst": false,
@@ -77498,6 +77846,12 @@
     "series": "title runs from the list of twenty works with no capture (2026-10-11 23:45)",
     "verified": "Compared 2026-10-12 against data/registry.json and the text of #1650 (/data/texts/AXN-06D8-text.md).",
     "source": "the operator's attachment of 2026-10-12 00:07 (fe1c280f-attachment.txt), saved as paste-steganographic-channels.txt"
+   },
+   "per_corrected": {
+    "from": 0.0,
+    "to": 1.0,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -78002,7 +78356,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER, PASTED INLINE; QUERY FROM THE OPERATOR'S MESSAGE; CHIPS INLINE)",
    "transcript_complete": "One answer, complete as pasted inline; the query given separately by the operator.",
    "transcript_read": "READ IN FULL 2026-10-12",
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": false,
@@ -78100,6 +78454,12 @@
     "date_basis": "The operator's messages of 2026-10-12, 00:38 and 00:41 EDT.",
     "paired_overview": "rebuild/record-pages/search-form-test/run-17-166-title-unquoted-20261012-0007.txt",
     "verified": "Compared 2026-10-12 against #166 and the text of #187."
+   },
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -78137,7 +78497,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; QUERY FROM THE RECORD PAGE'S LINK; CHIPS INLINE)",
    "transcript_complete": "One answer, complete as pasted; the operator turn blank, the query taken from the link.",
    "transcript_read": "READ IN FULL 2026-10-12",
-   "per": 1.0,
+   "per": 0.0,
    "per_v": {
     "author": true,
     "inst": true,
@@ -78243,6 +78603,12 @@
     "query_basis": "The operator turn is blank in the paste. The string is the record page's Ask ChatGPT prompt for #1675, live from 2026-10-12 ~01:30 (the plain ?q= link); the operator's 'clicking' and the answer's form (its arguments, ranked, grounded in the text) agree with it.",
     "reached_basis": "The answer's headings and quotations are the deposit's text verbatim, so the alexanarch.org page it cites holds the text; the chip shows the site label only.",
     "verified": "Compared 2026-10-12 against the text of #1675 (data/texts)."
+   },
+   "per_corrected": {
+    "from": 1.0,
+    "to": 0.0,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -85319,7 +85685,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; CHIPS INLINE)",
    "transcript_complete": "One answer, complete as pasted; the operator turn from the operator's message.",
    "transcript_read": "READ IN FULL 2026-10-14",
-   "per": 0.5,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": false,
@@ -85409,6 +85775,12 @@
    },
    "notes": {
     "date_basis": "The operator's message of 2026-10-14, 15:48 EDT."
+   },
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -89118,7 +89490,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 7,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -89231,7 +89603,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 7,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -89337,7 +89709,13 @@
       "https://www.alexanarch.org/data/captures/10-000-macarthur-genius-grants-20260813/screengrab-20260813-164549.png"
      ],
      "cite": "https://www.alexanarch.org/captures/10-000-macarthur-genius-grants-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -89393,7 +89771,13 @@
    "related_deposits": [
     1121,
     1393
-   ]
+   ],
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "enli-lucente-d54607-20260813",
@@ -89402,7 +89786,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 6,
-   "per": 0.5,
+   "per": 0.75,
    "per_v": {
     "author": true,
     "inst": false,
@@ -89504,7 +89888,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 6,
-     "per": 0.5,
+     "per": 0.75,
      "per_v": {
       "author": true,
       "inst": false,
@@ -89604,7 +89988,13 @@
      ],
      "surface_basis": "Google AI Overview BY EXCLUSION, operator attestation: AI Mode was avoided after June. An expanded Overview presented as AI Mode chrome and was recorded as the surface.",
      "cite": "https://www.alexanarch.org/captures/enli-lucente-d54607-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.5,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -89661,7 +90051,13 @@
    "citable_unit": "address — the semantic address across all its surfaces and dates",
    "findings": [],
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.75,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "enli-lucente-047f38-20260813",
@@ -89670,7 +90066,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 6,
-   "per": 0.5,
+   "per": 0.75,
    "per_v": {
     "author": true,
     "inst": false,
@@ -89772,7 +90168,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 6,
-     "per": 0.5,
+     "per": 0.75,
      "per_v": {
       "author": true,
       "inst": false,
@@ -89872,7 +90268,13 @@
      ],
      "surface_basis": "Google AI Overview BY EXCLUSION, operator attestation: AI Mode was avoided after June. An expanded Overview presented as AI Mode chrome and was recorded as the surface.",
      "cite": "https://www.alexanarch.org/captures/enli-lucente-047f38-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.5,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -89929,7 +90331,13 @@
    "citable_unit": "address — the semantic address across all its surfaces and dates",
    "findings": [],
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.75,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "enli-lucente-515ba5-20260813",
@@ -89938,7 +90346,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 3,
-   "per": 0.5,
+   "per": 0.75,
    "per_v": {
     "author": true,
     "inst": false,
@@ -90009,7 +90417,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 3,
-     "per": 0.5,
+     "per": 0.75,
      "per_v": {
       "author": true,
       "inst": false,
@@ -90078,7 +90486,13 @@
      ],
      "surface_basis": "Google AI Overview BY EXCLUSION, operator attestation: AI Mode was avoided after June. An expanded Overview presented as AI Mode chrome and was recorded as the surface.",
      "cite": "https://www.alexanarch.org/captures/enli-lucente-515ba5-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.5,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -90142,7 +90556,13 @@
     "basis": "Operator ruling 2026-09-25: originated outside the archive; did not receive full SPXI treatment."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.75,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "enli-lucente-04ecb6-20260813",
@@ -92494,7 +92914,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 9,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -92620,7 +93040,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/criticisms-of-cern-lee-sharks-aimode-20260805/#criticisms-of-cern-lee-sharks-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -98699,7 +99125,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 5,
-     "per": 0.25,
+     "per": 0.75,
      "per_v": {
       "author": false,
       "inst": false,
@@ -98793,7 +99219,13 @@
      "auth_basis": "OPERATOR ATTESTATION, 2026-08-13: signed in, not incognito. The frames corroborate the authentication dimension — no Sign in pill in any of the seven, and a partial account-avatar ring at the header edge — but a frame cannot show the incognito dimension, so the attestation carries it.",
      "addr_id": "ADDR-5137e3f2f15e",
      "cite": "https://www.alexanarch.org/captures/composition-layer-entity-substitution-20260617/#composition-layer-entity-substitution-20260813-2142",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.25,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -98950,7 +99382,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 6,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -99057,7 +99489,13 @@
        "date": "2026-08-14",
        "why": "observation slugs became citable anchors; this slug collided with another observation and would have resolved two distinct captures to one anchor"
       }
-     ]
+     ],
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -105555,7 +105993,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 5,
-     "per": 0.25,
+     "per": 0.75,
      "per_v": {
       "author": false,
       "inst": false,
@@ -105639,7 +106077,13 @@
      "auth_basis": "OPERATOR ATTESTATION, 2026-08-13: signed in, not incognito. The frames corroborate the authentication dimension — no Sign in pill in any of the seven, and a partial account-avatar ring at the header edge — but a frame cannot show the incognito dimension, so the attestation carries it.",
      "addr_id": "ADDR-34364bdc2dbd",
      "cite": "https://www.alexanarch.org/captures/counter-token-white-stone/#counter-token-white-stone-20260813-2142",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.25,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 3,
@@ -109107,7 +109551,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 10,
-     "per": 0.25,
+     "per": 0.75,
      "per_v": {
       "author": false,
       "inst": false,
@@ -109236,7 +109680,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/heteronymic-authorship-nt-josephus-adoption-20260627/#heteronymic-authorship-new-testament-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.25,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -112275,7 +112725,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 6,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -112373,7 +112823,13 @@
      "auth_basis": "OPERATOR ATTESTATION, 2026-08-13: signed in, not incognito. The frames corroborate the authentication dimension — no Sign in pill in any of the seven, and a partial account-avatar ring at the header edge — but a frame cannot show the incognito dimension, so the attestation carries it.",
      "addr_id": "ADDR-0db22e1afa6d",
      "cite": "https://www.alexanarch.org/captures/constitution-of-the-semantic-economy-installable-edition-20260612/#constitution-of-the-semantic-economy-installable-edition-20260813-2142",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -112870,7 +113326,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 8,
-     "per": 0.25,
+     "per": 0.75,
      "per_v": {
       "author": false,
       "inst": false,
@@ -112992,6 +113448,12 @@
       "binding_relation": "SEVERED",
       "organic_presence": "not-checked",
       "_basis": "retrofitted from the observation's own d field, which reads LIQUIDATION, longitudinal and controlled"
+     },
+     "per_corrected": {
+      "from": 0.25,
+      "to": 0.75,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
      }
     }
    ],
@@ -117650,7 +118112,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 3,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -117718,7 +118180,13 @@
      "surface_basis": "Google AI Overview — collapsed popup in frame, All tab active.",
      "auth_basis": "OPERATOR ATTESTATION: signed in, not incognito. ELECTED, not forced — AI Overview was available in incognito at this sitting and the signed-in state was chosen for comparison.",
      "cite": "https://www.alexanarch.org/captures/gamma-semantic-economy/#gamma-semantic-economy-20260813-2248",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 2,
@@ -119455,7 +119923,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD",
    "transcript_complete": "Complete as supplied -- the Overview was expanded from the popup and the whole answer copied, with both source cards and the footer. Inline reference markers are preserved by number; their goto-encoded URLs are held in cite_list rather than in the body.",
    "transcript_read": "READ IN FULL 2026-09-19",
-   "per": 0.25,
+   "per": 0.75,
    "per_v": {
     "author": false,
     "institution": false,
@@ -119535,7 +120003,13 @@
    ],
    "notes": null,
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.25,
+    "to": 0.75,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "lee-sharks-money-form-aio-20260921",
@@ -120232,7 +120706,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition with links and cards as pasted inline",
    "transcript_complete": "complete as pasted: composition, inline links, four cards",
    "transcript_read": "READ IN FULL 2026-10-12",
-   "per": 0.5,
+   "per": 0.25,
    "per_v": {
     "author": false,
     "inst": true,
@@ -120327,6 +120801,12 @@
     "date_basis": "The operator's messages of 2026-10-12, 01:02 and 01:03 EDT.",
     "operator_reading": "aio is perfectly capable of decent summarization. it is prevented from doing so",
     "verified": "Compared 2026-10-12 against data/registry.json (#531, #1617, #1619, #1620) and data/EA-WG-CAPTURES-01.json."
+   },
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    }
   },
   {
@@ -128959,7 +129439,7 @@
    "auth": "signed in",
    "ev": "paste",
    "cites": 6,
-   "per": 1.0,
+   "per": 0.0,
    "per_v": {
     "author": true,
     "inst": true,
@@ -129065,7 +129545,7 @@
      "auth": "signed in",
      "ev": "paste",
      "cites": 6,
-     "per": 1.0,
+     "per": 0.0,
      "per_v": {
       "author": true,
       "inst": true,
@@ -129164,7 +129644,13 @@
      "auth_basis": "OPERATOR ATTESTATION, 2026-08-13: signed in, not incognito. The frames corroborate the authentication dimension — no Sign in pill in any of the seven, and a partial account-avatar ring at the header edge — but a frame cannot show the incognito dimension, so the attestation carries it.",
      "addr_id": "ADDR-2225b57e8496",
      "cite": "https://www.alexanarch.org/captures/chatgpt-psychosis-a-love-story-20260813-2142/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 1.0,
+      "to": 0.0,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -129221,7 +129707,13 @@
     1376,
     753,
     1377
-   ]
+   ],
+   "per_corrected": {
+    "from": 1.0,
+    "to": 0.0,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "lee-sharks-the-network-is-the-porm-20260813",
@@ -129230,7 +129722,7 @@
    "auth": "incognito, signed out",
    "ev": "paste",
    "cites": 6,
-   "per": 0.75,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -129338,7 +129830,7 @@
      "auth": "incognito, signed out",
      "ev": "paste",
      "cites": 6,
-     "per": 0.75,
+     "per": 0.25,
      "per_v": {
       "author": true,
       "inst": true,
@@ -129439,7 +129931,13 @@
       "https://www.alexanarch.org/data/captures/lee-sharks-the-network-is-the-porm-20260813/screengrab-20260813-164359.png"
      ],
      "cite": "https://www.alexanarch.org/captures/lee-sharks-the-network-is-the-porm-20260813/",
-     "citable_unit": "observation — one surface, one address, one date"
+     "citable_unit": "observation — one surface, one address, one date",
+     "per_corrected": {
+      "from": 0.75,
+      "to": 0.25,
+      "on": "2026-10-15",
+      "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+     }
     }
    ],
    "n_observations": 1,
@@ -129497,7 +129995,13 @@
     120,
     1191,
     1007
-   ]
+   ],
+   "per_corrected": {
+    "from": 0.75,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "the-final-time-contingent-singularity-bing-copilot-20260927",
@@ -130138,7 +130642,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD, FOUR ROUNDS (SOURCE CARDS INCLUDED)",
    "transcript_complete": "Complete as supplied. The paste's page code (inline image data, script calls) and the repeated share/feedback interface text are removed; each round's composition is kept whole, and each round's source cards are listed once, de-duplicated from the paste's doubled card rail.",
    "transcript_read": "READ IN FULL 2026-09-28",
-   "per": 0.5,
+   "per": 0.25,
    "per_v": {
     "author": true,
     "inst": true,
@@ -130255,7 +130759,13 @@
     "operator_observation": "'it is closing the loop between the creative and critical work in a new way' (MANUS, 2026-09-28, 11:28). On the erasure reading: 'that is not the intention, but it is an option ... in another sense, that is what it already is - I already left the name behind ... lee sharks is a heteronym.' On Benjamin: 'benjamin is the right reading, whether explicit or not - that is in fact a development of his tiger leap' (MANUS, 2026-09-28, 11:39)."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.25,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "leesharks-mantle-bearing-hf-chatgpt-20261003",
@@ -131005,7 +131515,7 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (TWO TURNS; INLINE CITATIONS CUT; NO CARD RAIL IN THE PASTE)",
    "transcript_complete": "Complete as supplied: two operator turns and two answers.",
    "transcript_read": "READ IN FULL 2026-10-05",
-   "per": 0.5,
+   "per": 0.75,
    "per_v": {
     "author": true,
     "inst": false,
@@ -131099,7 +131609,13 @@
     "verified": "Compared 2026-10-05 against #1521 (the site lead; 'composition sited in the public summarizer') and the capture 'suppressing-hexagon-aio-20260827' ('Operative Lens'); 'repetitive prompting' and 'prompting loop' absent from every seated deposit text."
    },
    "match": "BROAD MATCH",
-   "match_note": null
+   "match_note": null,
+   "per_corrected": {
+    "from": 0.5,
+    "to": 0.75,
+    "on": "2026-10-15",
+    "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   }
   },
   {
    "slug": "feist-cleis-daughters-chatgpt-20261005",
@@ -134550,6 +135066,82 @@
    "date": "2026-10-08",
    "change": "version 12.93 → 12.94; googles-collapsing-ontology-chatgpt-20261008 revised in place to the full session",
    "detail": "v12.93 was seated from the operator's attachment of 15:28 EDT, answer 1 only (6,318 chars). The operator's attachment of 16:10 EDT is the same session with its second answer ('yes, please'), after his note at 16:08: 'next round it left the basin entirely and went right back to google only sources.' The transcript is the capture, so the entry is revised in place (same address, surface, date and slug) by scripts/revise_capture_entry.py; transcript 6,318 → 19,594 chars; d, findings, reading, cite_list and sf rewritten to both answers."
+  },
+  {
+   "date": "2026-10-15",
+   "change": "version 12.202 → 12.203; PER re-derived from its vector on 69 observations",
+   "detail": "The entity layer (data/entity-relations.json) computed PER from per_v and found the stored scalar disagreeing on these observations: most stored the retained share, the rest matched neither. The vector is the record (capture_intake.per_vector); the scalar is re-derived and each observation carries per_corrected {from, to}. Ruling: operator, 2026-10-15 03:39 EDT, 'lets correct the scores'.",
+   "observations": [
+    "OBS-f602455bf7e0",
+    "OBS-e511d518d411",
+    "OBS-ca5e4525b17b",
+    "OBS-fd7f9c53be8e",
+    "OBS-6c1aac46daa3",
+    "OBS-8193f540657c",
+    "OBS-277884902c11",
+    "OBS-3e527e7a80c9",
+    "OBS-e0126d8bc6bf",
+    "OBS-032008cc010f",
+    "OBS-14dcdb67c052",
+    "OBS-e2f1086da3e6",
+    "OBS-314b52fb2765",
+    "OBS-bc91c577fb84",
+    "OBS-4adcf2932031",
+    "OBS-b426d9847d67",
+    "OBS-64fab4f7f0fd",
+    "OBS-9d591a4b5220",
+    "OBS-5db180651957",
+    "OBS-9a79d776d8a7",
+    "OBS-9dbaad79e160",
+    "OBS-df0b285efdd7",
+    "OBS-f12eb4d05803",
+    "OBS-6a8b624505a9",
+    "OBS-e42c46bfef81",
+    "OBS-5663a17fb550",
+    "OBS-bd051a55eba2",
+    "OBS-0a3dbf3824df",
+    "OBS-68690d87f787",
+    "OBS-6a2c0ac2f0f5",
+    "OBS-a0404bdef972",
+    "OBS-59ba96be25b2",
+    "OBS-63f112570c77",
+    "OBS-d3c8db03132c",
+    "OBS-3c66e5ad486a",
+    "OBS-6ef87834303c",
+    "OBS-461892af40d9",
+    "OBS-7c9e940fd94c",
+    "OBS-8e921395f215",
+    "OBS-195f496b8108",
+    "OBS-d2f524e14050",
+    "OBS-2cf44e30073a",
+    "OBS-5c567d0f0934",
+    "OBS-719075c38714",
+    "OBS-37eb83bc7c8d",
+    "OBS-13c9ba370cf2",
+    "OBS-eb2901fb4329",
+    "OBS-f289d0c5958d",
+    "OBS-544c9f46cb5d",
+    "OBS-cddceb85325d",
+    "OBS-a71fdfd0e4a5",
+    "OBS-6ba6e51f8bc0",
+    "OBS-dd1938e1013d",
+    "OBS-5c64326a45f4",
+    "OBS-9f34351b61c0",
+    "OBS-072bd7ee0842",
+    "OBS-66ef373438ab",
+    "OBS-7303e9dcd85a",
+    "OBS-1acca0894f50",
+    "OBS-ac926cf5ee2b",
+    "OBS-53ee25a3eede",
+    "OBS-db0069738457",
+    "OBS-dbfd111a8ac3",
+    "OBS-d96098b1fae8",
+    "OBS-d0db33cb200f",
+    "OBS-d9b3e0a42650",
+    "OBS-927b03557e15",
+    "OBS-5b22d4c9e592",
+    "OBS-dfc62a8c7130"
+   ]
   }
  ],
  "_projection": {

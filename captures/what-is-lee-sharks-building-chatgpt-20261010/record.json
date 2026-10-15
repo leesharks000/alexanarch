@@ -149,7 +149,7 @@
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD (THREE ANSWERS; QUERY FROM THE OPERATOR'S MESSAGE; LATER TURNS BLANK; CHIPS INLINE)",
  "transcript_complete": "Three answers, complete as pasted; the operator turns blank in the paste, the first supplied in the operator's message.",
  "transcript_read": "READ IN FULL 2026-10-10",
- "per": 0.5,
+ "per": 0.25,
  "per_v": {
   "author": true,
   "inst": true,
@@ -251,5 +251,11 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_corrected": {
+  "from": 0.5,
+  "to": 0.25,
+  "on": "2026-10-15",
+  "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+ },
  "record_url": "https://www.alexanarch.org/captures/what-is-lee-sharks-building-chatgpt-20261010/"
 }
