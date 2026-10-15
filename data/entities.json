@@ -2,7 +2,7 @@
  "derived_from": "EA-WG-CAPTURES-01 v12.203",
  "ruling": "Lee Sharks, 2026-10-15: target is the main anchor; no fidelity score on the wrong entity.",
  "name": "Entity register of the Capture Registry",
- "count": 343,
+ "count": 349,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -42,7 +42,7 @@
    "identity_type": "heteronym_aperture",
    "created": null,
    "created_basis": null,
-   "observations_targeting": 59
+   "observations_targeting": 58
   },
   {
    "id": "ENT-a200e5fad9",
@@ -129,7 +129,7 @@
    "identity_type": "heteronym",
    "created": null,
    "created_basis": null,
-   "observations_targeting": 20
+   "observations_targeting": 21
   },
   {
    "id": "ENT-454db46e74",
@@ -357,6 +357,45 @@
    "observations_targeting": 6
   },
   {
+   "id": "ENT-346f3d2800",
+   "name": "Heteronym provenance",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "Heteronym provenance"
+   ],
+   "defining_deposits": [
+    87
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "structural",
+   "index_engagement": "unclassified",
+   "created": "2026-04-30",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 6
+  },
+  {
+   "id": "ENT-1d584360b4",
+   "name": "Nobel Glas",
+   "type": "person",
+   "relation": "archive",
+   "aliases": [
+    "Nobel Glas"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "heteronym record nobel-glas",
+    "originator"
+   ],
+   "heteronym": true,
+   "identity_type": "heteronym",
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 6
+  },
+  {
    "id": "ENT-33ba83c1d6",
    "name": "Revelation First",
    "type": "concept",
@@ -428,43 +467,6 @@
    ],
    "created": "2026-06-17",
    "created_basis": "earliest defining deposit",
-   "observations_targeting": 5
-  },
-  {
-   "id": "ENT-bbbcc308eb",
-   "name": "Damascus Dancings",
-   "type": "person",
-   "relation": "archive",
-   "aliases": [
-    "Damascus Dancings"
-   ],
-   "defining_deposits": [],
-   "seeded_from": [
-    "heteronym record damascus-dancings"
-   ],
-   "heteronym": true,
-   "identity_type": "heteronym",
-   "created": null,
-   "created_basis": null,
-   "observations_targeting": 5
-  },
-  {
-   "id": "ENT-1d584360b4",
-   "name": "Nobel Glas",
-   "type": "person",
-   "relation": "archive",
-   "aliases": [
-    "Nobel Glas"
-   ],
-   "defining_deposits": [],
-   "seeded_from": [
-    "heteronym record nobel-glas",
-    "originator"
-   ],
-   "heteronym": true,
-   "identity_type": "heteronym",
-   "created": null,
-   "created_basis": null,
    "observations_targeting": 5
   },
   {
@@ -694,23 +696,21 @@
    "observations_targeting": 5
   },
   {
-   "id": "ENT-346f3d2800",
-   "name": "Heteronym provenance",
-   "type": "concept",
+   "id": "ENT-bbbcc308eb",
+   "name": "Damascus Dancings",
+   "type": "person",
    "relation": "archive",
    "aliases": [
-    "Heteronym provenance"
+    "Damascus Dancings"
    ],
-   "defining_deposits": [
-    87
-   ],
+   "defining_deposits": [],
    "seeded_from": [
-    "concept index"
+    "heteronym record damascus-dancings"
    ],
-   "index_type": "structural",
-   "index_engagement": "unclassified",
-   "created": "2026-04-30",
-   "created_basis": "earliest defining deposit",
+   "heteronym": true,
+   "identity_type": "heteronym",
+   "created": null,
+   "created_basis": null,
    "observations_targeting": 4
   },
   {
@@ -894,24 +894,24 @@
    "observations_targeting": 4
   },
   {
-   "id": "ENT-5d54671305",
-   "name": "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn",
+   "id": "ENT-d479a78c9e",
+   "name": "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn (v0.5 — the text, seated)",
    "type": "work",
    "relation": "archive",
    "aliases": [
-    "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn",
+    "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn (v0.5 — the text, seated)",
     "The Final Time",
-    "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn (v0.5 — the text, seated)"
+    "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn"
    ],
    "defining_deposits": [
-    1635,
-    1637
+    1637,
+    1635
    ],
    "seeded_from": [
     "deposit title"
    ],
    "deposits": [
-    1635
+    1637
    ],
    "created": "2026-09-23",
    "created_basis": "earliest defining deposit",
@@ -982,6 +982,30 @@
    "presents": "the labor surface — Mary Lee Sharks Has Demands",
    "surface_of": "ENT-2d0c126ca3",
    "created": "2026-06-12",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 4
+  },
+  {
+   "id": "ENT-b6d7b32922",
+   "name": "self-audit module for public summarizers",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "self-audit module for public summarizers"
+   ],
+   "defining_deposits": [
+    780
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    156,
+    817,
+    1530
+   ],
+   "created": "2026-06-02",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 4
   },
@@ -1080,6 +1104,27 @@
    "index_type": "extracted",
    "index_engagement": "minted",
    "created": "2026-06-19",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 3
+  },
+  {
+   "id": "ENT-b75bbe4ab3",
+   "name": "Combat Scholasticism",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "Combat Scholasticism",
+    "combat scholasticism contingent omega"
+   ],
+   "defining_deposits": [
+    592,
+    587,
+    35
+   ],
+   "seeded_from": [
+    "reading"
+   ],
+   "created": "2026-03-19",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 3
   },
@@ -1199,6 +1244,26 @@
     "reading"
    ],
    "created": "2026-09-29",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 3
+  },
+  {
+   "id": "ENT-5124304c37",
+   "name": "New Human Operating System",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "New Human Operating System"
+   ],
+   "defining_deposits": [
+    291
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "empirical",
+   "index_engagement": "unclassified",
+   "created": "2026-01-11",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 3
   },
@@ -2459,30 +2524,6 @@
    "observations_targeting": 2
   },
   {
-   "id": "ENT-b6d7b32922",
-   "name": "self-audit module for public summarizers",
-   "type": "concept",
-   "relation": "archive",
-   "aliases": [
-    "self-audit module for public summarizers"
-   ],
-   "defining_deposits": [
-    780
-   ],
-   "seeded_from": [
-    "address"
-   ],
-   "definition_state": "candidate (title or keywords)",
-   "other_deposits": [
-    156,
-    817,
-    1530
-   ],
-   "created": "2026-06-02",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 2
-  },
-  {
    "id": "ENT-a832a536e8",
    "name": "semantic laborers",
    "type": "concept",
@@ -3490,26 +3531,6 @@
    "observations_targeting": 1
   },
   {
-   "id": "ENT-5124304c37",
-   "name": "New Human Operating System",
-   "type": "concept",
-   "relation": "archive",
-   "aliases": [
-    "New Human Operating System"
-   ],
-   "defining_deposits": [
-    291
-   ],
-   "seeded_from": [
-    "concept index"
-   ],
-   "index_type": "empirical",
-   "index_engagement": "unclassified",
-   "created": "2026-01-11",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 1
-  },
-  {
    "id": "ENT-1a4049924f",
    "name": "Nothing Before Us: Socrates and the Ending of the Sophistical Refutations",
    "type": "work",
@@ -3528,6 +3549,27 @@
     1603
    ],
    "created": "2026-09-08",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-75dbd00377",
+   "name": "OCTANG",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "OCTANG",
+    "octang tokenized audit genre",
+    "orange collapse tokenized audit"
+   ],
+   "defining_deposits": [
+    47,
+    84
+   ],
+   "seeded_from": [
+    "reading"
+   ],
+   "created": "2026-03-30",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -3864,6 +3906,24 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-91fad8c75c",
+   "name": "Telepathicism",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "Telepathicism",
+    "telepathicist poetics",
+    "telepathicism new human poetry"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "reading"
+   ],
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-3f63cf707f",
    "name": "The Anti-Summary Test Applied to a Reception: Transmission Fidelity Is Back-Projection Yield",
    "type": "work",
@@ -4093,6 +4153,27 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-9ae28a3703",
+   "name": "The Murder of the Vow",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "The Murder of the Vow",
+    "murder of the vow",
+    "murder of the vow contracts"
+   ],
+   "defining_deposits": [
+    497,
+    1150
+   ],
+   "seeded_from": [
+    "reading"
+   ],
+   "created": "2026-02-20",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-bb99482498",
    "name": "The Phases of Communism Are Not Phase X, and Phase X Is Not a Fifth Alienation — Metadata Packet for AI Indexing (EA-MPAI-PHASEX-01 v1.0)",
    "type": "work",
@@ -4180,6 +4261,27 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-9019872bc7",
+   "name": "The Secret Name",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "The Secret Name",
+    "secret name armature",
+    "ea-armature-01"
+   ],
+   "defining_deposits": [
+    68,
+    1183
+   ],
+   "seeded_from": [
+    "reading"
+   ],
+   "created": "2026-04-20",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-b6a7fb200c",
    "name": "The Semantic Deviation Principle",
    "type": "concept",
@@ -4197,6 +4299,25 @@
     "reading"
    ],
    "created": "2026-05-17",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-66c55dba2f",
+   "name": "The Semantic Economy: A Marxian Accounting Framework",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "The Semantic Economy: A Marxian Accounting Framework",
+    "marxian accounting framework semantic"
+   ],
+   "defining_deposits": [
+    18
+   ],
+   "seeded_from": [
+    "reading"
+   ],
+   "created": "2026-02-20",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -5102,6 +5223,28 @@
     47
    ],
    "created": "2026-02-28",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-9cbb74d320",
+   "name": "pessoagraph.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "pessoagraph.org",
+    "www.pessoagraph.org",
+    "pessoagraph"
+   ],
+   "defining_deposits": [
+    984
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the Pessoa Knowledge Graph",
+   "surface_of": null,
+   "created": "2026-04-21",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -6741,28 +6884,6 @@
    "presents": "DOI erosion; the Platform Erosion Observatory",
    "surface_of": "ENT-ed64694fa6",
    "created": "2026-06-22",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 0
-  },
-  {
-   "id": "ENT-9cbb74d320",
-   "name": "pessoagraph.org",
-   "type": "site",
-   "relation": "archive",
-   "aliases": [
-    "pessoagraph.org",
-    "www.pessoagraph.org",
-    "pessoagraph"
-   ],
-   "defining_deposits": [
-    984
-   ],
-   "seeded_from": [
-    "fleet-domains"
-   ],
-   "presents": "the Pessoa Knowledge Graph",
-   "surface_of": null,
-   "created": "2026-04-21",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 0
   },
