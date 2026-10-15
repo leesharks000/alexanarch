@@ -39,7 +39,7 @@ READ = ROOT / "rebuild/entity-layer/read.json"          # relations decided by r
 
 # The archive's own entities that no other register carries (name, type, aliases, defining deposits).
 CORE = [
-    ("Crimson Hexagonal Archive", "archive", ["crimson hexagonal archive", "crimson hexagon archive", "crimson hexagonal", "crimson hexagon", "CHA"], []),   # v0.8: #1 is Zenodotus' Book-Burning, not the archive's defining deposit
+    ("Crimson Hexagonal Archive", "archive", ["crimson hexagonal archive", "crimson hexagon archive", "crimson hexagonal", "crimson hexagon", "CHA"], []),
     ("Alexanarch", "site", ["alexanarch"], []),
     ("Capture Registry", "dataset", ["capture registry", "EA-WG-CAPTURES-01", "ai overview capture registry"], [3]),
     ("SPXI", "protocol", ["spxi", "spxi protocol", "semantic packet for exchange"], [660]),
@@ -136,6 +136,16 @@ def register(reg):
             add(x["name"], x["type"], x.get("aliases", []), x.get("deposits", []), "reading", firm=True)
     link_sites(ents)
     FIX = {"allen ginsberg": "person", "howl": "work"}   # /non entries whose type carries no subtype
+    # THE ARCHIVE IS DEFINED BY THE WHOLE (operator, 2026-10-15: "there is no defining deposit to the crimson hexagonal
+    # archive - that is the whole thing. but you could pick one of the various primers in how to read it"). No
+    # defining deposit; the primer is #269 (A Primer in How to Read the Crimson Hexagon: Meta-Documentation of the
+    # Summarizer as Entry Point, 2026-01-08), with the other primers beside it.
+    cha = ents.get(eid("Crimson Hexagonal Archive"))
+    if cha:
+        cha["defining_deposits"] = []
+        cha["defined_by"] = "the whole archive"
+        cha["primer"] = 269
+        cha["primers"] = [269, 287, 288, 1102]
     for r in ents.values():
         r.pop("_firm", None)
         t = FIX.get(re.sub(r"\s*\(.*?\)\s*", "", r["name"]).strip().lower())
