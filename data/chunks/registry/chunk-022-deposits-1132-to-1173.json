@@ -3513,7 +3513,7 @@
       },
       "external_metadata_path": "/data/external-metadata/AXN-0487.json",
       "superseded_by_deposit_number": 431,
-      "version_series_id": "DUP-13",
+      "version_series_id": "DUP-431",
       "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration): THE THUMB already existed as deposit #431, which remains canonical. CORRECTED 2026-10-15: previously recorded as a duplicate of #13 on a body containment of 0.93 measured against the wrong body (the Navigation Map). The seated body is left as it is; THE THUMB is not seated again here, because it already stands at #431.",
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -3621,6 +3621,13 @@
           "reason": "successor corrected #13 -> #431 (retirement caused by wrong body)",
           "was": "{\"superseded_by_deposit_number\": 13, \"superseded_reason\": \"Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion",
           "now": "{\"superseded_by_deposit_number\": 431}"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "version_series_id",
+          "reason": "duplicate-series label follows the corrected record of standing (#431)",
+          "was": "DUP-13",
+          "now": "DUP-431"
         }
       ],
       "date_modified": "2026-10-15",

@@ -12332,7 +12332,7 @@
       ],
       "axn_reading": "Search -> Threshold -> Closure -> Text -> Search -> Search",
       "minted_at": "2026-08-11T19:59:44Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-05DA-text.md",
       "wiki_article": "**The Priors, Measured (EA-SEI-BATTERY-01 v1.0)** is the work plan and first empirical record of the program that extracts the SEI classifier-foreclosure family — the OAR Protocol (#931), the Collapse Synthesis (#932), the auditable-foreclosure architecture (#933), The Endogenous Sophon (#935), and the SIGAGNOSTIC disambiguation packet (#1436) — into three publishable papers: a science paper for SciPost Physics, a philosophy-of-science paper on measurable theory-ladenness, and an STS/political-economy paper on the double enclosure.\n\nIts empirical core is inversion battery v0.1, a demonstration-scale execution of Protocol I from the OAR Protocol, run 2026-08-11 on two public community datasets: the top-quark tagging reference dataset and the LHC Olympics 2020 R&D dataset. Four process pairs were tested against three anomaly-score families — a reconstruction autoencoder, an encoder-side latent-norm VAE with latent dimension 8 (the AXOL1TL-class score), and a Gaussian-mixture density model — in both training directions, with thresholds calibrated on held-out own background at accepted-background rates of one percent and one per mille. The design was fixed in the executable script header before any training.\n\nThe battery's headline finding is that the direction-dependence first measured by Finke et al. (2021) replicates in an independent implementation and extends beyond reconstruction loss: on jet constituents, QCD-trained systems detect top jets at AUC 0.84–0.87 while top-trained systems rate QCD as more ordinary than their own training class (AUC 0.24–0.30), for the autoencoder and the density family alike. Direction-dependence is systematic across every background-versus-signal pair; the density family posts the largest Inversion Asymmetry Index values (up to 0.41); at trigger-like operating points every tested system assimilates at least 93 percent of the structurally distinct partner class as ordinary; and the near-structure control pair stays quiet, showing the battery does not manufacture asymmetry. The record states its bounds with equal care: single seed, demonstration scale, surrogates rather than deployed systems, and no bound of any kind on the open-world Ontological Assimilation Rate — the no-bounds discipline of the protocol paper reproduced rather than softened.\n\nThe record also fixes the program's literature position: the direction-dependence conversation exists (Finke 2021; the Heidelberg normalized autoencoder; the CMS Wasserstein-NAE inversion check), and the program's contribution is the estimand framework, the systematic pre-registered panel, the deployed-model Benchmark Assimilation Rate audit, and per-stage retention maps as model cards for triggers. Battery v0.2 requirements, per-paper task ledgers, and the open decisions reserved to the MANUS close the plan.",
@@ -12504,7 +12504,17 @@
       },
       "line": "semantic-economy",
       "line_parent": "science",
-      "line_basis": "derived"
+      "line_basis": "derived",
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "marked ACTIVE while carrying a forward pointer to a later edition (#1456); status follows the pointer",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1450,
@@ -13563,7 +13573,7 @@
       ],
       "axn_reading": "Threshold -> Touch -> Threshold -> Origin -> Duration -> Alarm",
       "minted_at": "2026-08-12T04:38:33Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-05E0-text.md",
       "wiki_article": "**Inversion Battery v0.2 (EA-SEI-BATTERY-01 v2.0)** is the multi-seed successor to deposit #1449, re-running the pre-registered inversion battery with five independent seeds per cell across sixteen cells and eighty trained model pairs, on the public top-quark tagging reference dataset and the LHC Olympics 2020 R&D dataset.\n\nIts surviving findings: the top/QCD inversion reproduces across five trainings — a QCD-trained autoencoder detects top jets at AUC 0.838 while the reversed system rates QCD as more ordinary than its own training class at 0.243, and the density family inverts likewise (0.873 / 0.319), so the failure is not a property of reconstruction loss; direction-dependence appears across all tested families on the background/signal pairs with seed-stable intervals; the near-structure control stays an order of magnitude quieter; and at the severe operating point every system assimilates most of the partner class, so absolute retention and directional asymmetry are distinct quantities. The encoder-side latent score alone escapes the inversion while carrying the largest asymmetry on that pair — architecture changes the orientation of the blind spot. From the distillation test: global student-teacher rank agreement is moderate while only 36 to 47 percent of the teacher's top one percent survives into the student's top one percent, and weight quantization costs almost nothing further.\n\nThe deposit is as notable for what it refuses as for what it reports. A seven-item correction ledger records every mismatch between registration and execution — an unfaithful normalized-autoencoder surrogate that leaves the registered remedy prediction untested, a per-class rather than pooled complexity measurement that leaves the Low-Complexity Blind-Spot Hypothesis inconclusive, distillation measured on the withheld class rather than background, a weight-only quantization surrogate, a pilot-scale miss-overlap measurement, seed-level rather than hierarchical intervals, and the finding that the inversion asymmetry is uninterpretable without the mean assimilation burden beside it. Four readings returned by Assembly review are recorded as rejected, including that the run proves the thesis, that the complexity hypothesis is confirmed, and that the normalized-autoencoder remedy fails.",
@@ -13737,7 +13747,17 @@
           "deposit": 1456,
           "what": "v0.3: ten registered tests, seventeen deviations, and what survives them"
         }
-      ]
+      ],
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "marked ACTIVE while carrying a forward pointer to a later edition (#1456); status follows the pointer",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1456,

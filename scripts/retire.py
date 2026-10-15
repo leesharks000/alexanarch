@@ -97,7 +97,9 @@ def apply(reg, D, plan):
             tail = (TAIL_TARGET.format(target=t, ttitle=tt) if t else TAIL_ORPHAN)
             banner = BANNER_STUB.format(tail=tail)
         else:
-            kind = 'duplicate witness' if 'uplicate' in info['reason'] else 'fragment'
+            # 2026-10-15: an earlier edition is not a fragment; 'fragment' only where the reason says so
+            r = info['reason'].lower()
+            kind = ('duplicate witness' if 'uplicate' in r else 'fragment' if 'fragment' in r else 'superseded edition')
             banner = BANNER_SUP.format(kind=kind, target=t, ttitle=tt)
         head = ('<meta name="robots" content="noindex, follow">\n'
                 f'<meta name="axn:retired" content="{info["kind"]}">\n')

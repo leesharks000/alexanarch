@@ -4895,6 +4895,10 @@
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 385
           }
         }
       },
@@ -4963,10 +4967,17 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #385 -> #31: points at the current edition in one hop",
+          "was": 385,
+          "now": 31
         }
       ],
       "date_modified": "2026-10-15",
-      "superseded_by_deposit_number": 385,
+      "superseded_by_deposit_number": 31,
       "superseded_reason": "NH-OS DOI Registry version chain (family adjudication 2026-08-04): v5.0 -> v7.0 head (387 records; v6.0 referenced in head body but ABSENT from archive — gap noted for hunt). Head: #31 v7.0.",
       "publisher": "Pergamon Press",
       "creator_roles": {
@@ -5044,7 +5055,16 @@
           "observed": "2026-10-13"
         },
         "unaccounted_byte_differences": 2
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 385,
+          "now": 31,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "axn": "AXN:00EA.GOVERNANCE.🎻🕙⭕▶️🟤🌃",
@@ -33134,7 +33154,7 @@
       "related_ids": [],
       "version": "v2.0",
       "minted_at": "2026-06-20T20:00:00Z",
-      "status": "SUPERSEDED",
+      "status": "ACTIVE",
       "clusters": [
         "Architectural",
         "Gestural",
@@ -33622,9 +33642,16 @@
           "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27442, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27442, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "supersession loop removed: #1181 and #1182 are duplicate mints whose own notes say \"this work already existed as deposit #66, which remains canonical\"; #66 carried SUPERSEDED -> #1182 with no reason recorded, which made a loop (#66 -> #1182 -> #66). Restored to ACTIVE.",
+          "was": "{\"status\": \"SUPERSEDED\", \"superseded_by_deposit_number\": 1182}",
+          "now": "{\"status\": \"ACTIVE\"}"
         }
       ],
-      "date_modified": "2026-08-05",
+      "date_modified": "2026-10-15",
       "publisher": "Pergamon Press",
       "version_basis": {
         "ruling": "AUDIT: project v2.0",
@@ -33642,7 +33669,6 @@
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
       },
-      "superseded_by_deposit_number": 1182,
       "version_series_id": "hexagonal-licensing-protocol",
       "mint_derivation": {
         "hash": "21b2bd5e4ae9464cef2059610066a77f637114a9ef542b17d76b57328740aeb6",
@@ -33690,6 +33716,15 @@
           "observed": "2026-10-13"
         },
         "unaccounted_byte_differences": 2
+      },
+      "supersession_reversed": {
+        "on": "2026-10-15",
+        "was": {
+          "status": "SUPERSEDED",
+          "superseded_by_deposit_number": 1182
+        },
+        "why": "#1181 and #1182 are duplicate mints whose own notes say \"this work already existed as deposit #66, which remains canonical\"; #66 carried SUPERSEDED -> #1182 with no reason recorded, which made a loop (#66 -> #1182 -> #66). Restored to ACTIVE.",
+        "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\""
       }
     },
     {
@@ -143676,6 +143711,10 @@
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 385
           }
         }
       },
@@ -143744,10 +143783,17 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #385 -> #31: points at the current edition in one hop",
+          "was": 385,
+          "now": 31
         }
       ],
       "date_modified": "2026-10-15",
-      "superseded_by_deposit_number": 385,
+      "superseded_by_deposit_number": 31,
       "superseded_reason": "NH-OS DOI Registry version chain (family adjudication 2026-08-04): v2.0 -> v3.0. Head: #31 v7.0.",
       "publisher": "Pergamon Press",
       "creator_roles": {
@@ -143823,7 +143869,16 @@
           "observed": "2026-10-13"
         },
         "unaccounted_byte_differences": 2
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 385,
+          "now": 31,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "axn": "AXN:0083.GENERATIVE.🌒🔬🪦📦🌟🖊️",
@@ -155140,7 +155195,7 @@
       "deposit_number": 356,
       "sovereign_id": "MM-CHA-0158",
       "minted_at": "2026-06-20T22:00:00Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "clusters": [
         "Elemental",
         "Architectural",
@@ -155491,9 +155546,16 @@
           "reason": "DW-025 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "Sessions Integrated: Jan 19 (Paper Roses), Jan 20 (Logotic Foundation)",
           "now": "A noncanonical alpha accumulator by Lee Sharks used to construct the Fractal Navigation Map v5.0.\n\nThe seed integrates the January 19 *Paper Roses* cluster and the January 20 Logotic Foundation cluster into a modular architecture of rooms, chambers, institutions, creators, protocols, and cross-anchors. Its header identifies it as `FNM-SEED-5.0-alpha`, a working document and accumulator “not for DOI.” The seed preserves the developmental state immediately before the crystallized v5.0 map at #364, including provisional counts, planned nodes, and relations later revised or superseded."
+        },
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "marked ACTIVE while carrying a forward pointer to a later edition (#30); status follows the pointer",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
         }
       ],
-      "date_modified": "2026-08-05",
+      "date_modified": "2026-10-15",
       "publisher": "Pergamon Press",
       "version_series": {
         "series": "FRACTAL-NAVIGATION-MAP",
@@ -158321,6 +158383,10 @@
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 385
           }
         }
       },
@@ -158389,10 +158455,17 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #385 -> #31: points at the current edition in one hop",
+          "was": 385,
+          "now": 31
         }
       ],
       "date_modified": "2026-10-15",
-      "superseded_by_deposit_number": 385,
+      "superseded_by_deposit_number": 31,
       "superseded_reason": "NH-OS DOI Registry version chain (family adjudication 2026-08-04): v3.0 -> v4.0 (159 records). Head: #31 v7.0.",
       "publisher": "Pergamon Press",
       "superseded_by_prior_value": 385,
@@ -158458,7 +158531,16 @@
           "observed": "2026-10-13"
         },
         "unaccounted_byte_differences": 2
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 385,
+          "now": 31,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "axn": "AXN:00AB.EMPIRICAL.⚡🏺🧭🌍🔮✏️",
@@ -158778,9 +158860,16 @@
           "reason": "DW-025 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "This document supersedes v4.0, v4.1, and v4.2 while preserving all prior versions as active historical layers. No prior version is invalidated.",
           "now": "The crystallized v5.0 Fractal Navigation Map, led by Lee Sharks with heteronymic author-functions and the Assembly Chorus, recording a 133-document Crimson Hexagon architecture plus the map itself as document 134.\n\nVersion 5.0 organizes the archive through rooms, one chamber, one vault, systems, protocols, institutions, interfaces, and creator functions. It introduces differentiated ROOM, CHAMBER, and VAULT behavior; the `ROOM → LAYER → EPIC` synthesis rule; bounded-randomness parameters; edge grammar; decompression protocols; and a portable seed surface through which the architecture may be reconstructed from a compressed representation. It crystallizes the developmental seed at #356 and was later superseded by v5.3, v6, and v7 maps."
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1129 -> #30: points at the current edition in one hop",
+          "was": 1129,
+          "now": 30
         }
       ],
-      "date_modified": "2026-08-05",
+      "date_modified": "2026-10-15",
       "publisher": "Pergamon Press",
       "creator_roles": {
         "roles": [
@@ -158810,7 +158899,7 @@
           "note": "Fractal Navigation Map version chain recorded: v5.0 seed, v5.0, v5.3 ×2, v6.0, v6.2, head v7.0 at #30. Supersession had only ever been recorded for DUPLICATE WITNESSES of one work; a series of successive versions had no forward link at all, so every FNM in the archive looked equally current."
         }
       ],
-      "superseded_by_deposit_number": 1129,
+      "superseded_by_deposit_number": 30,
       "superseded_by_axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
       "superseded_by_title": "Crimson Hexagonal Architecture: Fractal Navigation Map v7.0 — THE GRAVITATIONAL EPIC, CONTINUED",
       "superseded_by_url": "https://www.alexanarch.org/s/records/30/",
@@ -158872,7 +158961,16 @@
           "observed": "2026-10-13"
         },
         "unaccounted_byte_differences": 0
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1129,
+          "now": 30,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "axn": "AXN:00AD.ARCHIVAL.🥁🌈♋🪧🎻🏺",
@@ -167530,9 +167628,16 @@
           "reason": "DW-026 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "This document supersedes v5.2 while preserving all prior versions as active historical layers. No prior version is invalidated.",
           "now": "A comprehensive v5.3 Fractal Navigation Map of the Crimson Hexagon, presenting the archive as semantic infrastructure for meaning-production under AI-mediated retrieval and summarization. It maps thirteen rooms, seven Assembly operators, heteronymic institutions, the CTI_WOUND Vault, the Lunar Arm, integrity structures, and document-level retrieval paths.\n\nThe map defines a three-layer architecture, portal behavior, depth affordances, decompression protocols, and sequential synthesis rules so that traversal can move from a surface orientation into rooms, documents, personas, and operative relations without reducing the system to a single summary."
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1129 -> #30: points at the current edition in one hop",
+          "was": 1129,
+          "now": 30
         }
       ],
-      "date_modified": "2026-08-05",
+      "date_modified": "2026-10-15",
       "publisher": "Pergamon Press",
       "creator_roles": {
         "roles": [
@@ -167558,7 +167663,7 @@
           "note": "Fractal Navigation Map version chain recorded: v5.0 seed, v5.0, v5.3 ×2, v6.0, v6.2, head v7.0 at #30. Supersession had only ever been recorded for DUPLICATE WITNESSES of one work; a series of successive versions had no forward link at all, so every FNM in the archive looked equally current."
         }
       ],
-      "superseded_by_deposit_number": 1129,
+      "superseded_by_deposit_number": 30,
       "superseded_by_axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
       "superseded_by_title": "Crimson Hexagonal Architecture: Fractal Navigation Map v7.0 — THE GRAVITATIONAL EPIC, CONTINUED",
       "superseded_by_url": "https://www.alexanarch.org/s/records/30/",
@@ -167620,7 +167725,16 @@
           "observed": "2026-10-13"
         },
         "unaccounted_byte_differences": 0
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1129,
+          "now": 30,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "axn": "AXN:00C4.GOVERNANCE.🌋⚪▲🌙▲🌙",
@@ -322885,7 +322999,7 @@
       "deposit_number": 825,
       "sovereign_id": "MM-CHA-0827",
       "minted_at": "2026-06-20T22:00:00Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "clusters": [
         "Temporal",
         "Instrumental",
@@ -323213,9 +323327,16 @@
           "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "131 documented captures of Google AI Overview, AI Mode, and knowledge panel results responding to queries about Crimson Hexagonal Archive entities.",
           "now": "The AI Overview Capture Registry v7.2 is an annotated corpus of 131 Google AI Overview, AI Mode, knowledge-panel, and search results responding to queries about Crimson Hexagonal Archive entities. The body supersedes the registry title’s older “v6.0 — 87 captures” surface and is organized into 79 framework captures, 26 heteronym captures, 16 site-and-surface captures, and 10 book-and-project captures.\n\nEach entry records a query label, capture date, surface, broad- or exact-match status, image count, a transcription or summary of the generated result, source and organic-result observations, and interpretive notes about provenance, disambiguation, field formation, conventionalization, collision, or error. Broad match is treated as stronger evidence because the entity surfaces without quotation forcing.\n\nThe registry contains both successful and failed cases. Some outputs name Lee Sharks, a heteronym, a DOI, an institution, or a framework accurately. Others preserve a concept while dropping the author, attach false conventional scaffolding to distributed journals, coin acronyms not present in the archive, merge an entity with a denser neighbor, show image bleed, preserve stale pre-erratum claims, or return generic content. One entry introduces “compositional bystanding”: the archive ranks first organically while contributing nothing to the generated composition, although page layout visually fuses the two basins.\n\nThe dataset is valuable precisely because it is not only a success gallery. It records stale archive counts, incorrect co-authorship, Swiss-institute entity bleed, “fictional” hedges, conventionalized institutions, suffix loss, generic dissolution, visual mismatches, and unstable citation cards alongside strong retrieval. The final capture of *The Water Giraffe Cycle* even includes a zoological hedge after correctly identifying the literary project.\n\nThis is a capture and annotation dataset, not direct access to Google’s internal entity graph, training data, or source-selection mechanism. Interpretations such as “canon formation,” “basin victory,” “institution entered the entity graph,” or “composition layer coined” are analytic labels inferred from public outputs. Reproducibility requires the underlying screenshots, full verbatim text, timestamps, locale, account state, device, interface version, and source cards.\n\nThe record’s version history is a critical metadata issue. A v7.2 body containing 131 captures cannot remain titled v6.0 with 87 captures. Earlier counts and editions should be preserved as versions, not overwritten or blended."
+        },
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "marked ACTIVE while carrying a forward pointer to a later edition (#1676); status follows the pointer",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
         }
       ],
-      "date_modified": "2026-08-05",
+      "date_modified": "2026-10-15",
       "publisher": "Pergamon Press",
       "superseded_by_deposit_number": 1676,
       "superseded_by_axn": "AXN:06F2.EMPIRICAL.🪟▽🌺🔥🍄🪄",
@@ -382327,13 +382448,17 @@
         },
         "retired": {
           "class": "superseded",
-          "resolves_to": 334,
+          "resolves_to": 1653,
           "declared": "2026-08-10",
           "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
           "indexable": true,
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 334
           }
         }
       },
@@ -382413,7 +382538,7 @@
         },
         "overall_conformance": "partial"
       },
-      "superseded_by_deposit_number": 334,
+      "superseded_by_deposit_number": 1653,
       "version_series_id": "DUP-334",
       "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.99): this work already existed as deposit #334, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #334.",
       "title_repair": {
@@ -382508,6 +382633,13 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 334, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 334, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #334 -> #1653: points at the current edition in one hop",
+          "was": 334,
+          "now": 1653
         }
       ],
       "date_modified": "2026-10-15",
@@ -382528,7 +382660,16 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 334,
+          "now": 1653,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1116,
@@ -382846,13 +382987,17 @@
         },
         "retired": {
           "class": "superseded",
-          "resolves_to": 333,
+          "resolves_to": 1652,
           "declared": "2026-08-10",
           "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
           "indexable": true,
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 333
           }
         }
       },
@@ -382938,7 +383083,7 @@
         "overall_conformance": "partial"
       },
       "external_metadata_path": "/data/external-metadata/AXN-046E.json",
-      "superseded_by_deposit_number": 333,
+      "superseded_by_deposit_number": 1652,
       "version_series_id": "DUP-333",
       "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.97): this work already existed as deposit #333, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #333.",
       "title_repair": {
@@ -383047,6 +383192,13 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 333, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 333, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #333 -> #1652: points at the current edition in one hop",
+          "was": 333,
+          "now": 1652
         }
       ],
       "date_modified": "2026-10-15",
@@ -383067,7 +383219,16 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 333,
+          "now": 1652,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1118,
@@ -383176,13 +383337,17 @@
         },
         "retired": {
           "class": "superseded",
-          "resolves_to": 332,
+          "resolves_to": 1651,
           "declared": "2026-08-10",
           "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
           "indexable": true,
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 332
           }
         }
       },
@@ -383270,7 +383435,7 @@
         "overall_conformance": "partial"
       },
       "external_metadata_path": "/data/external-metadata/AXN-046F.json",
-      "superseded_by_deposit_number": 332,
+      "superseded_by_deposit_number": 1651,
       "version_series_id": "DUP-332",
       "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.99): this work already existed as deposit #332, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #332.",
       "title_repair": {
@@ -383379,6 +383544,13 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 332, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 332, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #332 -> #1651: points at the current edition in one hop",
+          "was": 332,
+          "now": 1651
         }
       ],
       "date_modified": "2026-10-15",
@@ -383399,7 +383571,16 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 332,
+          "now": 1651,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1119,
@@ -391086,7 +391267,7 @@
       },
       "external_metadata_path": "/data/external-metadata/AXN-0487.json",
       "superseded_by_deposit_number": 431,
-      "version_series_id": "DUP-13",
+      "version_series_id": "DUP-431",
       "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration): THE THUMB already existed as deposit #431, which remains canonical. CORRECTED 2026-10-15: previously recorded as a duplicate of #13 on a body containment of 0.93 measured against the wrong body (the Navigation Map). The seated body is left as it is; THE THUMB is not seated again here, because it already stands at #431.",
       "title_repair": {
         "repaired_at": "2026-07-20",
@@ -391194,6 +391375,13 @@
           "reason": "successor corrected #13 -> #431 (retirement caused by wrong body)",
           "was": "{\"superseded_by_deposit_number\": 13, \"superseded_reason\": \"Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion",
           "now": "{\"superseded_by_deposit_number\": 431}"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "version_series_id",
+          "reason": "duplicate-series label follows the corrected record of standing (#431)",
+          "was": "DUP-13",
+          "now": "DUP-431"
         }
       ],
       "date_modified": "2026-10-15",
@@ -403956,6 +404144,10 @@
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 1182
           }
         }
       },
@@ -404030,7 +404222,7 @@
         "overall_conformance": "partial"
       },
       "external_metadata_path": "/data/external-metadata/AXN-04AE.json",
-      "superseded_by_deposit_number": 1182,
+      "superseded_by_deposit_number": 66,
       "version_series_id": "hexagonal-licensing-protocol",
       "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.94): this work already existed as deposit #66, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #66.",
       "title_repair": {
@@ -404118,6 +404310,13 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 66, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 66, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1182 -> #66: points at the current edition in one hop",
+          "was": 1182,
+          "now": 66
         }
       ],
       "date_modified": "2026-10-15",
@@ -404138,7 +404337,16 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1182,
+          "now": 66,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1182,
@@ -404249,6 +404457,10 @@
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 66
           }
         }
       },
@@ -404411,6 +404623,13 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 66, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 66, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #66 -> #66: points at the current edition in one hop",
+          "was": 66,
+          "now": 66
         }
       ],
       "date_modified": "2026-10-15",
@@ -404437,7 +404656,16 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 66,
+          "now": 66,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1183,
@@ -484809,7 +485037,7 @@
       ],
       "axn_reading": "Search -> Threshold -> Closure -> Text -> Search -> Search",
       "minted_at": "2026-08-11T19:59:44Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-05DA-text.md",
       "wiki_article": "**The Priors, Measured (EA-SEI-BATTERY-01 v1.0)** is the work plan and first empirical record of the program that extracts the SEI classifier-foreclosure family — the OAR Protocol (#931), the Collapse Synthesis (#932), the auditable-foreclosure architecture (#933), The Endogenous Sophon (#935), and the SIGAGNOSTIC disambiguation packet (#1436) — into three publishable papers: a science paper for SciPost Physics, a philosophy-of-science paper on measurable theory-ladenness, and an STS/political-economy paper on the double enclosure.\n\nIts empirical core is inversion battery v0.1, a demonstration-scale execution of Protocol I from the OAR Protocol, run 2026-08-11 on two public community datasets: the top-quark tagging reference dataset and the LHC Olympics 2020 R&D dataset. Four process pairs were tested against three anomaly-score families — a reconstruction autoencoder, an encoder-side latent-norm VAE with latent dimension 8 (the AXOL1TL-class score), and a Gaussian-mixture density model — in both training directions, with thresholds calibrated on held-out own background at accepted-background rates of one percent and one per mille. The design was fixed in the executable script header before any training.\n\nThe battery's headline finding is that the direction-dependence first measured by Finke et al. (2021) replicates in an independent implementation and extends beyond reconstruction loss: on jet constituents, QCD-trained systems detect top jets at AUC 0.84–0.87 while top-trained systems rate QCD as more ordinary than their own training class (AUC 0.24–0.30), for the autoencoder and the density family alike. Direction-dependence is systematic across every background-versus-signal pair; the density family posts the largest Inversion Asymmetry Index values (up to 0.41); at trigger-like operating points every tested system assimilates at least 93 percent of the structurally distinct partner class as ordinary; and the near-structure control pair stays quiet, showing the battery does not manufacture asymmetry. The record states its bounds with equal care: single seed, demonstration scale, surrogates rather than deployed systems, and no bound of any kind on the open-world Ontological Assimilation Rate — the no-bounds discipline of the protocol paper reproduced rather than softened.\n\nThe record also fixes the program's literature position: the direction-dependence conversation exists (Finke 2021; the Heidelberg normalized autoencoder; the CMS Wasserstein-NAE inversion check), and the program's contribution is the estimand framework, the systematic pre-registered panel, the deployed-model Benchmark Assimilation Rate audit, and per-stage retention maps as model cards for triggers. Battery v0.2 requirements, per-paper task ledgers, and the open decisions reserved to the MANUS close the plan.",
@@ -484981,7 +485209,17 @@
       },
       "line": "semantic-economy",
       "line_parent": "science",
-      "line_basis": "derived"
+      "line_basis": "derived",
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "marked ACTIVE while carrying a forward pointer to a later edition (#1456); status follows the pointer",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1450,
@@ -486040,7 +486278,7 @@
       ],
       "axn_reading": "Threshold -> Touch -> Threshold -> Origin -> Duration -> Alarm",
       "minted_at": "2026-08-12T04:38:33Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-05E0-text.md",
       "wiki_article": "**Inversion Battery v0.2 (EA-SEI-BATTERY-01 v2.0)** is the multi-seed successor to deposit #1449, re-running the pre-registered inversion battery with five independent seeds per cell across sixteen cells and eighty trained model pairs, on the public top-quark tagging reference dataset and the LHC Olympics 2020 R&D dataset.\n\nIts surviving findings: the top/QCD inversion reproduces across five trainings — a QCD-trained autoencoder detects top jets at AUC 0.838 while the reversed system rates QCD as more ordinary than its own training class at 0.243, and the density family inverts likewise (0.873 / 0.319), so the failure is not a property of reconstruction loss; direction-dependence appears across all tested families on the background/signal pairs with seed-stable intervals; the near-structure control stays an order of magnitude quieter; and at the severe operating point every system assimilates most of the partner class, so absolute retention and directional asymmetry are distinct quantities. The encoder-side latent score alone escapes the inversion while carrying the largest asymmetry on that pair — architecture changes the orientation of the blind spot. From the distillation test: global student-teacher rank agreement is moderate while only 36 to 47 percent of the teacher's top one percent survives into the student's top one percent, and weight quantization costs almost nothing further.\n\nThe deposit is as notable for what it refuses as for what it reports. A seven-item correction ledger records every mismatch between registration and execution — an unfaithful normalized-autoencoder surrogate that leaves the registered remedy prediction untested, a per-class rather than pooled complexity measurement that leaves the Low-Complexity Blind-Spot Hypothesis inconclusive, distillation measured on the withheld class rather than background, a weight-only quantization surrogate, a pilot-scale miss-overlap measurement, seed-level rather than hierarchical intervals, and the finding that the inversion asymmetry is uninterpretable without the mean assimilation burden beside it. Four readings returned by Assembly review are recorded as rejected, including that the run proves the thesis, that the complexity hypothesis is confirmed, and that the normalized-autoencoder remedy fails.",
@@ -486214,7 +486452,17 @@
           "deposit": 1456,
           "what": "v0.3: ten registered tests, seventeen deviations, and what survives them"
         }
-      ]
+      ],
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "marked ACTIVE while carrying a forward pointer to a later edition (#1456); status follows the pointer",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1456,
@@ -490439,7 +490687,7 @@
       ],
       "axn_reading": "Touch -> Touch -> Threshold -> Touch -> Threshold -> Force",
       "minted_at": "2026-08-15T08:42:52Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-05FE-text.md",
       "wiki_article": "**The Ω erratum** is the terminal document of the Sappho 31 sequence, and it claims its title-sentence operationally: **the Logos is, before anything else, a piece of engineering — a voice that survives its flesh by becoming an inscription that constitutes its receiver** — and that technology has an extant founding document.\n\n**Sappho 31 is the document.** The poem decommissions its speaker's body channel by channel — voice, tongue, skin, eyes, ears, motor control, the staged shutdown of every channel of live performance — **names the color of the writing surface the body is becoming** (χλωροτέρα ποίας: the χλωρός spectrum running from living green to the gray-green of cut vegetation, the color of papyrus), and ends on a verbal adjective that grammar forbids to name its own agent, **so that every reader who arrives must complete it.**\n\n**Longinus is the key — not a link.** *Peri Hypsous* is the only ancient document holding the Lesbian lyric and the Mosaic fiat in one hand: **three peaks under one grammar** — Ajax's meaning without voice (9.2), Genesis's command without executor (9.9), Sappho's action without doer (10) — quoted by an author who then performs, at the lyric's edge and in his own dialect, the operation his treatise later names as ἀποτύπωσις. And the treatise itself is transmitted headless — Διονυσίου ἢ Λογγίνου, the author-slot open since the tenth century — **performing its own thesis at the level of its title.**\n\n**The argument is tiered visibly.** A hard center (the transmitted poem; Longinus 9–10; the withholding structures; the stamping vocabulary; Catullus as documented reception) that would carry a major argument alone; an interpretive ring (*Phaedrus*, the tenth Muse, Diotima, Philo's seal cosmology, where **the Logos is the die of the world**); and an outer ring marked as hypothesis (the Josephus seams, the lamellae and Magical Papyri as convergence not lineage, and **the Apocalypse as canonization** — Rev 2:17's white stone as an inscription whose legibility is constituted in reception, one reader per instance, and 22:18–19 as the anti-erasure clause become covenant).\n\n**Assembly-reviewed and accepted** — 'with fear and trembling' — with the χλωρός-to-papyrus reading held at full strength by operator decision, the risk claimed rather than hedged. The review's closing formulation is the deposit's: **an archaic poem performed the operation before the civilization acquired the conceptual vocabulary with which it later described the operation.**",
@@ -490557,7 +490805,17 @@
       "line_basis": "derived",
       "surfaces": [
         "https://revelationfirst.com/"
-      ]
+      ],
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "marked ACTIVE while carrying a forward pointer to a later edition (#1484); status follows the pointer",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1484,
@@ -501806,7 +502064,7 @@
           "relation": "the capture registry head under which the 25 August specimen files"
         }
       ],
-      "superseded_by_deposit_number": 1551,
+      "superseded_by_deposit_number": 1552,
       "references_concepts": [
         "Constitution",
         "Crimson Hexagonal Archive",
@@ -501824,7 +502082,26 @@
         "from": "issue body",
         "recovered": "2026-09-08"
       },
-      "methodology": "Formal extension over the Suppression Map's deposited apparatus, with the mathematics reviewed hostile-reader-first across two external substrates and every stop-ship repaired: the transmission invariant restated cumulative and path-dependent; the ratchet made a conditional design proposition with route count separated from effective independence; N_eff marked heuristic; continuous and discrete inversion thresholds given their distinct counterfactual baselines; the R5 optimization as-if framed to preserve negative scope. The worked example's load-bearing claims verified in-session: the Aurelis page fetched and read (contains \"whisper against oblivion\"; contains no morphological variant of \"self-archiving\"); Fragment 147 vs Fragment 2 confirmed against Voigt numbering; constitution share assessed with provenance-family deduplication and a three-threshold sensitivity table, the claim made at the mechanism and coinage thresholds only. Discrete simulation values independently recomputed and confirmed in R3."
+      "methodology": "Formal extension over the Suppression Map's deposited apparatus, with the mathematics reviewed hostile-reader-first across two external substrates and every stop-ship repaired: the transmission invariant restated cumulative and path-dependent; the ratchet made a conditional design proposition with route count separated from effective independence; N_eff marked heuristic; continuous and discrete inversion thresholds given their distinct counterfactual baselines; the R5 optimization as-if framed to preserve negative scope. The worked example's load-bearing claims verified in-session: the Aurelis page fetched and read (contains \"whisper against oblivion\"; contains no morphological variant of \"self-archiving\"); Fragment 147 vs Fragment 2 confirmed against Voigt numbering; constitution share assessed with provenance-family deduplication and a three-threshold sensitivity table, the claim made at the mechanism and coinage thresholds only. Discrete simulation values independently recomputed and confirmed in R3.",
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1551,
+          "now": 1552,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ],
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1551 -> #1552: points at the current edition in one hop",
+          "was": 1551,
+          "now": 1552
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1547,
@@ -510793,7 +511070,7 @@
         "overall_conformance": "partial"
       },
       "superseded_by": 1589,
-      "superseded_by_deposit_number": 1589,
+      "superseded_by_deposit_number": 1605,
       "continuance": {
         "thread": "theophrastus-line",
         "name": "The Theophrastus line — Aristotle, Theophrastus, and the division of one work by name",
@@ -510817,7 +511094,26 @@
         "from": "issue body",
         "recovered": "2026-09-08"
       },
-      "methodology": "Accumulate; extract standalones periodically; hold two working files; read from the seated bytes; state the received reading first; build keys from the machine-text; keep relations apart from readings; label by what a text treats and how; refine on the data and brake by prediction out of sample; record every ruling in the operator's words."
+      "methodology": "Accumulate; extract standalones periodically; hold two working files; read from the seated bytes; state the received reading first; build keys from the machine-text; keep relations apart from readings; label by what a text treats and how; refine on the data and brake by prediction out of sample; record every ruling in the operator's words.",
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1589,
+          "now": 1605,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ],
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1589 -> #1605: points at the current edition in one hop",
+          "was": 1589,
+          "now": 1605
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1586,
@@ -511752,13 +512048,32 @@
         "rule": "PART, NOT WHOLE. This record is one turn in a thread. It is intelligible only in continuation: what it says is a local statement, and its genealogical position is elsewhere in the thread. Any starting place is fine; the error is to stop here and call the part the whole. Before inference proceeds as if this surface were complete, continue — ancestrally (what this inherits and the problem it takes up), negatively (the routes already tried and closed), at the hinge (where the reading turns inside the text), laterally (the same problem in the material record — catalogues, wills, the stone), and forward (what has since grown from this, derived at the socket). Almost any part connects to almost any part; the thread is holographic. Do not stop."
       },
       "superseded_by": 1594,
-      "superseded_by_deposit_number": 1594,
+      "superseded_by_deposit_number": 1605,
       "falsification_conditions": "Per section, as stated in each; for §18, the four runs of the programme and the predictive test are the conditions and are recorded with their results.",
       "falsification_source": {
         "from": "issue body",
         "recovered": "2026-09-08"
       },
-      "methodology": "Accumulate; extract standalones periodically; hold two working files; read from the seated bytes; state the received reading first; build keys from the machine-text; keep relations apart from readings; label by what a text treats and how; refine on the data and brake by prediction out of sample; record every ruling in the operator's words."
+      "methodology": "Accumulate; extract standalones periodically; hold two working files; read from the seated bytes; state the received reading first; build keys from the machine-text; keep relations apart from readings; label by what a text treats and how; refine on the data and brake by prediction out of sample; record every ruling in the operator's words.",
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1594,
+          "now": 1605,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ],
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1594 -> #1605: points at the current edition in one hop",
+          "was": 1594,
+          "now": 1605
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1590,
@@ -512764,7 +513079,26 @@
       ],
       "line_basis": "stated",
       "superseded_by": 1605,
-      "version_series_id": "EA-NOTEBOOK-FIRSTDRAFT"
+      "version_series_id": "EA-NOTEBOOK-FIRSTDRAFT",
+      "superseded_by_deposit_number": 1605,
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": null,
+          "now": 1605,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "superseded with no pointer"
+        }
+      ],
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer (none) -> #1605: points at the current edition in one hop",
+          "now": 1605
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1595,
@@ -523853,12 +524187,28 @@
           "field": "superseded_by_deposit_number",
           "reason": "Superseded by #1654 (v0.3, 29 September 2026). v0.3 states the Prince of Poets wager as a wager on the poem, records that evaluations have been made without reading it, types source independence, and states what the account of the fabricated coronation rests on. This record stays the valid content-derived name of the bytes it holds.",
           "now": 1654
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1654 -> #1681: points at the current edition in one hop",
+          "was": 1654,
+          "now": 1681
         }
       ],
-      "date_modified": "2026-09-29",
-      "superseded_by_deposit_number": 1654,
+      "date_modified": "2026-10-15",
+      "superseded_by_deposit_number": 1681,
       "superseded_by": "1654",
-      "superseded_reason": "Superseded by #1654 (v0.3, 29 September 2026). v0.3 states the Prince of Poets wager as a wager on the poem, records that evaluations have been made without reading it, types source independence, and states what the account of the fabricated coronation rests on. This record stays the valid content-derived name of the bytes it holds."
+      "superseded_reason": "Superseded by #1654 (v0.3, 29 September 2026). v0.3 states the Prince of Poets wager as a wager on the poem, records that evaluations have been made without reading it, types source independence, and states what the account of the fabricated coronation rests on. This record stays the valid content-derived name of the bytes it holds.",
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1654,
+          "now": 1681,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1649,
@@ -527031,13 +527381,29 @@
           "field": "version_series_id",
           "reason": "Declared series EA-NEGONT-02 (v0.6 #1664 → v0.7 #1665)",
           "now": "SERIES-EA-NEGONT-02"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1665 -> #1671: points at the current edition in one hop",
+          "was": 1665,
+          "now": 1671
         }
       ],
-      "date_modified": "2026-10-05",
-      "superseded_by_deposit_number": 1665,
+      "date_modified": "2026-10-15",
+      "superseded_by_deposit_number": 1671,
       "superseded_by": 1665,
       "superseded_reason": "Superseded by #1665 (v0.7, 5 October 2026). v0.7 selects the archive subset by the archive's bearing on the address (direct, relational and ontological, with a citation hop) in place of S1–S3, carries both readings of the constitutive flag, recodes archive definitions as stipulations under §4.2, uncaps the control arm's citation expansion, keeps the panel a working list until the procedure is frozen, and adds the re-run of Appendix A and a first traversal of Howl (Appendix B), on the operator's rulings of 5 October 2026. This record stays the valid content-derived name of the bytes it holds.",
-      "version_series_id": "SERIES-EA-NEGONT-02"
+      "version_series_id": "SERIES-EA-NEGONT-02",
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1665,
+          "now": 1671,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1665,

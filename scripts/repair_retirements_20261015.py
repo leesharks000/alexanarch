@@ -27,6 +27,7 @@ reversal). Page layers: #1142's page is re-rendered and its retirement layer re-
 
     python3 scripts/repair_retirements_20261015.py --apply      # registry + retired-records.json
     python3 scripts/repair_retirements_20261015.py --pages      # re-render #1142 and re-apply its layer
+    python3 scripts/repair_retirements_20261015.py --series     # #1142's duplicate-series label DUP-13 -> DUP-431
 """
 import json, os, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -117,7 +118,19 @@ def pages():
     print('#1142 re-rendered; retirement layer re-applied -> #431 (indexable, canonical self)')
 
 
+def series():
+    reg = json.loads(REGP.read_text()); d = {x['deposit_number']: x for x in reg['deposits']}[1142]
+    was = d.get('version_series_id')
+    d['version_series_id'] = 'DUP-431'
+    rm.touch(d, 'version_series_id', 'duplicate-series label follows the corrected record of standing (#431)',
+             was=was, now='DUP-431', when=ON)
+    REGP.write_text(json.dumps(reg, ensure_ascii=False, indent=2))
+    print('#1142 version_series_id', was, '-> DUP-431')
+
+
 if __name__ == '__main__':
+    if '--series' in sys.argv:
+        series()
     if '--apply' in sys.argv:
         registry()
     if '--pages' in sys.argv:

@@ -2453,6 +2453,10 @@
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 1182
           }
         }
       },
@@ -2527,7 +2531,7 @@
         "overall_conformance": "partial"
       },
       "external_metadata_path": "/data/external-metadata/AXN-04AE.json",
-      "superseded_by_deposit_number": 1182,
+      "superseded_by_deposit_number": 66,
       "version_series_id": "hexagonal-licensing-protocol",
       "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.94): this work already existed as deposit #66, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #66.",
       "title_repair": {
@@ -2615,6 +2619,13 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 66, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 66, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1182 -> #66: points at the current edition in one hop",
+          "was": 1182,
+          "now": 66
         }
       ],
       "date_modified": "2026-10-15",
@@ -2635,7 +2646,16 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1182,
+          "now": 66,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1182,
@@ -2746,6 +2766,10 @@
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 66
           }
         }
       },
@@ -2908,6 +2932,13 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 66, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 66, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #66 -> #66: points at the current edition in one hop",
+          "was": 66,
+          "now": 66
         }
       ],
       "date_modified": "2026-10-15",
@@ -2934,7 +2965,16 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 66,
+          "now": 66,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1183,

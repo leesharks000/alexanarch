@@ -5389,12 +5389,28 @@
           "field": "superseded_by_deposit_number",
           "reason": "Superseded by #1654 (v0.3, 29 September 2026). v0.3 states the Prince of Poets wager as a wager on the poem, records that evaluations have been made without reading it, types source independence, and states what the account of the fabricated coronation rests on. This record stays the valid content-derived name of the bytes it holds.",
           "now": 1654
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1654 -> #1681: points at the current edition in one hop",
+          "was": 1654,
+          "now": 1681
         }
       ],
-      "date_modified": "2026-09-29",
-      "superseded_by_deposit_number": 1654,
+      "date_modified": "2026-10-15",
+      "superseded_by_deposit_number": 1681,
       "superseded_by": "1654",
-      "superseded_reason": "Superseded by #1654 (v0.3, 29 September 2026). v0.3 states the Prince of Poets wager as a wager on the poem, records that evaluations have been made without reading it, types source independence, and states what the account of the fabricated coronation rests on. This record stays the valid content-derived name of the bytes it holds."
+      "superseded_reason": "Superseded by #1654 (v0.3, 29 September 2026). v0.3 states the Prince of Poets wager as a wager on the poem, records that evaluations have been made without reading it, types source independence, and states what the account of the fabricated coronation rests on. This record stays the valid content-derived name of the bytes it holds.",
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1654,
+          "now": 1681,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1649,
@@ -8567,13 +8583,29 @@
           "field": "version_series_id",
           "reason": "Declared series EA-NEGONT-02 (v0.6 #1664 → v0.7 #1665)",
           "now": "SERIES-EA-NEGONT-02"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1665 -> #1671: points at the current edition in one hop",
+          "was": 1665,
+          "now": 1671
         }
       ],
-      "date_modified": "2026-10-05",
-      "superseded_by_deposit_number": 1665,
+      "date_modified": "2026-10-15",
+      "superseded_by_deposit_number": 1671,
       "superseded_by": 1665,
       "superseded_reason": "Superseded by #1665 (v0.7, 5 October 2026). v0.7 selects the archive subset by the archive's bearing on the address (direct, relational and ontological, with a citation hop) in place of S1–S3, carries both readings of the constitutive flag, recodes archive definitions as stipulations under §4.2, uncaps the control arm's citation expansion, keeps the panel a working list until the procedure is frozen, and adds the re-run of Appendix A and a first traversal of Howl (Appendix B), on the operator's rulings of 5 October 2026. This record stays the valid content-derived name of the bytes it holds.",
-      "version_series_id": "SERIES-EA-NEGONT-02"
+      "version_series_id": "SERIES-EA-NEGONT-02",
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1665,
+          "now": 1671,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "deposit_number": 1665,

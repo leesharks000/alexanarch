@@ -10712,7 +10712,7 @@
       "deposit_number": 356,
       "sovereign_id": "MM-CHA-0158",
       "minted_at": "2026-06-20T22:00:00Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "clusters": [
         "Elemental",
         "Architectural",
@@ -11063,9 +11063,16 @@
           "reason": "DW-025 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "Sessions Integrated: Jan 19 (Paper Roses), Jan 20 (Logotic Foundation)",
           "now": "A noncanonical alpha accumulator by Lee Sharks used to construct the Fractal Navigation Map v5.0.\n\nThe seed integrates the January 19 *Paper Roses* cluster and the January 20 Logotic Foundation cluster into a modular architecture of rooms, chambers, institutions, creators, protocols, and cross-anchors. Its header identifies it as `FNM-SEED-5.0-alpha`, a working document and accumulator “not for DOI.” The seed preserves the developmental state immediately before the crystallized v5.0 map at #364, including provisional counts, planned nodes, and relations later revised or superseded."
+        },
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "marked ACTIVE while carrying a forward pointer to a later edition (#30); status follows the pointer",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
         }
       ],
-      "date_modified": "2026-08-05",
+      "date_modified": "2026-10-15",
       "publisher": "Pergamon Press",
       "version_series": {
         "series": "FRACTAL-NAVIGATION-MAP",
@@ -13893,6 +13900,10 @@
           "indexing_ruled": {
             "on": "2026-10-15",
             "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 385
           }
         }
       },
@@ -13961,10 +13972,17 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #385 -> #31: points at the current edition in one hop",
+          "was": 385,
+          "now": 31
         }
       ],
       "date_modified": "2026-10-15",
-      "superseded_by_deposit_number": 385,
+      "superseded_by_deposit_number": 31,
       "superseded_reason": "NH-OS DOI Registry version chain (family adjudication 2026-08-04): v3.0 -> v4.0 (159 records). Head: #31 v7.0.",
       "publisher": "Pergamon Press",
       "superseded_by_prior_value": 385,
@@ -14030,7 +14048,16 @@
           "observed": "2026-10-13"
         },
         "unaccounted_byte_differences": 2
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 385,
+          "now": 31,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "axn": "AXN:00AB.EMPIRICAL.⚡🏺🧭🌍🔮✏️",
@@ -14350,9 +14377,16 @@
           "reason": "DW-025 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "This document supersedes v4.0, v4.1, and v4.2 while preserving all prior versions as active historical layers. No prior version is invalidated.",
           "now": "The crystallized v5.0 Fractal Navigation Map, led by Lee Sharks with heteronymic author-functions and the Assembly Chorus, recording a 133-document Crimson Hexagon architecture plus the map itself as document 134.\n\nVersion 5.0 organizes the archive through rooms, one chamber, one vault, systems, protocols, institutions, interfaces, and creator functions. It introduces differentiated ROOM, CHAMBER, and VAULT behavior; the `ROOM → LAYER → EPIC` synthesis rule; bounded-randomness parameters; edge grammar; decompression protocols; and a portable seed surface through which the architecture may be reconstructed from a compressed representation. It crystallizes the developmental seed at #356 and was later superseded by v5.3, v6, and v7 maps."
+        },
+        {
+          "date": "2026-10-15",
+          "field": "superseded_by_deposit_number",
+          "reason": "forward pointer #1129 -> #30: points at the current edition in one hop",
+          "was": 1129,
+          "now": 30
         }
       ],
-      "date_modified": "2026-08-05",
+      "date_modified": "2026-10-15",
       "publisher": "Pergamon Press",
       "creator_roles": {
         "roles": [
@@ -14382,7 +14416,7 @@
           "note": "Fractal Navigation Map version chain recorded: v5.0 seed, v5.0, v5.3 ×2, v6.0, v6.2, head v7.0 at #30. Supersession had only ever been recorded for DUPLICATE WITNESSES of one work; a series of successive versions had no forward link at all, so every FNM in the archive looked equally current."
         }
       ],
-      "superseded_by_deposit_number": 1129,
+      "superseded_by_deposit_number": 30,
       "superseded_by_axn": "AXN:019A.GOVERNANCE.🕓🔥🔎🌉🌑💛",
       "superseded_by_title": "Crimson Hexagonal Architecture: Fractal Navigation Map v7.0 — THE GRAVITATIONAL EPIC, CONTINUED",
       "superseded_by_url": "https://www.alexanarch.org/s/records/30/",
@@ -14444,7 +14478,16 @@
           "observed": "2026-10-13"
         },
         "unaccounted_byte_differences": 0
-      }
+      },
+      "supersession_repointed": [
+        {
+          "on": "2026-10-15",
+          "was": 1129,
+          "now": 30,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
+          "why": "chain"
+        }
+      ]
     },
     {
       "axn": "AXN:00AD.ARCHIVAL.🥁🌈♋🪧🎻🏺",
