@@ -1,10 +1,10 @@
 {
- "axn": "AXN:00D3.GOVERNANCE.📌🌙🔺🌆💎↗️",
+ "axn": "AXN:00D3.GOVERNANCE.💎🔺🌙💥🌻🌕",
  "root_axn": "AXN:00D3.GOVERNANCE",
  "hex": "00D3",
  "family": "GOVERNANCE",
- "emoji": "📌🌙🔺🌆💎↗️",
- "hash": "460cd0e31cda4705808b3eea2b483f91527b4dc5c4fd75adde10baa66d8b5efd",
+ "emoji": "💎🔺🌙💥🌻🌕",
+ "hash": "1cd00ceb7204e9f74de70db9dcffe9db4f524fef127167e9eae2835910a16cfa",
  "title": "Epistle to the Human Diaspora The Seed Text of the New Human Project",
  "creator": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -29,15 +29,15 @@
  "minted_at": "2026-06-20T22:00:00Z",
  "status": "ACTIVE",
  "clusters": [
-  "Scriptural",
-  "Celestial",
-  "Structural",
-  "Liminal",
   "Elemental",
-  "Structural"
+  "Structural",
+  "Celestial",
+  "Liminal",
+  "Organic",
+  "Celestial"
  ],
- "reading": "Text → Origin → Direction → Threshold → Force → Direction",
- "axn_canonical": "460cd0e31cda4705808b3eea2b483f91527b4dc5c4fd75adde10baa66d8b5efd",
+ "reading": "Force -> Direction -> Origin -> Threshold -> Growth -> Origin",
+ "axn_canonical": "1cd00ceb7204e9f74de70db9dcffe9db4f524fef127167e9eae2835910a16cfa",
  "axn_display": "📌🌙🔺🌆💎↗️",
  "mirrors": {
   "blog": "https://mindcontrolpoems.blogspot.com/2026/01/epistle-to-human-diaspora-seed-text-of.html"
@@ -203,43 +203,12 @@
  "body_status": {
   "class": "full",
   "lacuna": false,
-  "recovery_status": "COMPLETE",
-  "residual_chars": 18691,
-  "audited_at": "2026-07-17T04:49:17.789813Z",
-  "audit_version": "v3-dual-store+recovery-map",
-  "measured_prose_words": 3210,
-  "measured_at": "2026-07-31",
-  "work_sha256": "7afa85b3a1d462770983aff735a56da8835c252b7efd447b83afafe1f78735f8",
-  "prior_bytes_sha256": "99e5cb4600ce33d056332b1f9851e36a435ba3162352469d73aebfc379b6dfb6",
-  "source_recovery": "2026-08-04 AUDIT-DIRECTED RECOVERY: audit directive \"Seat Damascus Dancings as author, preserve composition and canonization as separate dates,\" satisfied — manifestation located at https://mindcontrolpoems.blogspot.com/2026/05/render-unto-operator-inverse-principle.html and seated via the newline-preserving converter (identity probe 0.80, 61,746 chars).",
-  "related_instances": {
-   "instances": [
-    {
-     "deposit_number": 1138,
-     "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizatio",
-     "match": "title",
-     "score": 0.83,
-     "body_chars": 23011,
-     "relation": "other instance of this work in-archive (direction not adjudicated)"
-    }
-   ],
-   "basis": "MANUS directive 2026-08-04: a partially-restored or intermediary record whose work exists elsewhere in the archive must not dead-end. These are OTHER INSTANCES of the same work, matched by title-token overlap or content fingerprint and recorded as relations only — no supersession direction is asserted here; version order for these families is ADJUDICATION (see §11). The open audit directive for this record stands regardless.",
-   "open_audit_directive": "Seat Damascus Dancings as author, preserve composition and canonization as separate dates, and type the work as a foundational epistle / see"
-  },
-  "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 17 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
-  "version_history_plate": {
-   "witnesses": [
-    1138
-   ],
-   "declared": "2026-08-10",
-   "rule": "Backward navigation lives only on the current record. A superseded record links forward and nowhere else."
-  },
-  "render_audit": {
-   "date": "2026-08-10",
-   "verdict": "CONTENT",
-   "note": "HOLOGRAPHIC KERNEL — canonical provenance, carrying the explicit warning that any extraction stripping it produces a ghost document. Renders raw only because _kernel_split does not yet see past a leading horizontal rule; the bytes are correct."
-  }
+  "recovery_status": "RESTORED-20261015",
+  "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/01/epistle-to-human-diaspora-seed-text-of.html",
+  "residual_chars": 83209,
+  "audited_at": "2026-10-15T21:45:41.031508+00:00",
+  "audit_version": "restore_wrong_bodies-20261015",
+  "class_before_restoration": "full"
  },
  "title_repair_log": [
   {
@@ -250,7 +219,7 @@
    "basis": "Title field carried the document frontmatter block concatenated after the title and truncated at a 120- or 200-character ceiling. Cut at the first metadata marker. Read and confirmed by inspection, not pattern-matched."
   }
  ],
- "canonical_text_status": "canonical_full_text",
+ "canonical_text_status": "recovered_full_text",
  "modifications": [
   {
    "date": "2026-08-01",
@@ -315,7 +284,7 @@
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 18691, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "publisher": "Pergamon Press",
  "creator_roles": {
   "roles": [
@@ -387,6 +356,17 @@
   },
   "unaccounted_byte_differences": 3
  },
+ "restoration": {
+  "fulltext": "restored",
+  "fulltext_source": "https://mindcontrolpoems.blogspot.com/2026/01/epistle-to-human-diaspora-seed-text-of.html",
+  "restored_at": "2026-10-15",
+  "repair_kind": "wrong_body",
+  "identity_basis": "the post carries this deposit's DOI 10.5281/zenodo.18381184 and hex 11.REV.EPISTLE.DIASPORA",
+  "axn_before_restoration": "AXN:00D3.GOVERNANCE.📌🌙🔺🌆💎↗️",
+  "hash_before_restoration": "460cd0e31cda4705808b3eea2b483f91527b4dc5c4fd75adde10baa66d8b5efd",
+  "ruled_by": "Lee Sharks, 2026-10-15: \"lets restore the ones we can\" (wrong bodies first, from the blog or elsewhere in the archive); repair standard: the text as he published it. Identity of each post checked by hand; the basis is recorded per record."
+ },
+ "remediation_note": "2026-10-15 RECORD REPAIR (wrong body): the body previously seated here was a different work (wrong body); the published text from https://mindcontrolpoems.blogspot.com/2026/01/epistle-to-human-diaspora-seed-text-of.html seated as canonical; new hash and glyph; the previous body retained as appendix.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/402/",
