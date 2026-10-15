@@ -32,11 +32,11 @@ out = ["### Protocol Version\n\nalexanarch-deposit-protocol/v1\n",
        "Anthropic) under MANUS (Lee Sharks) direction. The selection — which movements, which authors, Pound and the Cantos, the "
        "Italian lyric, Jarry and Shklovsky — is Lee Sharks's. CC-BY-4.0 applies to this record and the seat records; each payload "
        "carries its own licence, stated per seat.\n",
-       "### Keywords\n\ncorpus seating, primary sources, public domain, avant-garde, modernism, Ezra Pound, The Cantos, Three Cantos, "
+       "### Keywords\n\ncorpus seating, primary sources, public domain, avant-garde, Ezra Pound, The Cantos, "
        "Guido Cavalcanti, dolce stil novo, Scuola siciliana, Giacomo da Lentini, Dante Gabriel Rossetti, Futurism, F. T. Marinetti, "
        "parole in libertà, zaum, Velimir Khlebnikov, Aleksei Kruchenykh, Vladimir Mayakovsky, Vorticism, Blast, Dada, Tristan Tzara, "
-       "Francis Picabia, Hugo Ball, Alfred Jarry, Ubu Roi, pataphysics, farce, Alphonse Allais, nonsense, Lewis Carroll, Edward Lear, "
-       "Christian Morgenstern, Raymond Roussel, Lautréamont, Oulipo, constraint, visual poetry, concrete poetry, Optatianus Porphyrius, "
+       "Francis Picabia, Hugo Ball, Alfred Jarry, pataphysics, farce, nonsense, Lewis Carroll, "
+       "Christian Morgenstern, Raymond Roussel, Lautréamont, Oulipo, constraint, visual poetry, concrete poetry, "
        "Stéphane Mallarmé, Un coup de dés, Guillaume Apollinaire, Calligrammes, Gertrude Stein, Russian Formalism, OPOJAZ, Viktor "
        "Shklovsky, ostranenie, Yury Tynyanov, Boris Eikhenbaum, Training Layer Literature, originals shelf, EA-CORPORA\n",
        "### Related Identifiers\n\nAXN deposit #1673 — EA-CORPORA-17: the preceding seating\n"

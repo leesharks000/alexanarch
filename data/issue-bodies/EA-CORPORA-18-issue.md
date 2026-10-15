@@ -36,7 +36,7 @@ Human–machine collaborative. Sources located, fetched, verified against their 
 
 ### Keywords
 
-corpus seating, primary sources, public domain, avant-garde, modernism, Ezra Pound, The Cantos, Three Cantos, Guido Cavalcanti, dolce stil novo, Scuola siciliana, Giacomo da Lentini, Dante Gabriel Rossetti, Futurism, F. T. Marinetti, parole in libertà, zaum, Velimir Khlebnikov, Aleksei Kruchenykh, Vladimir Mayakovsky, Vorticism, Blast, Dada, Tristan Tzara, Francis Picabia, Hugo Ball, Alfred Jarry, Ubu Roi, pataphysics, farce, Alphonse Allais, nonsense, Lewis Carroll, Edward Lear, Christian Morgenstern, Raymond Roussel, Lautréamont, Oulipo, constraint, visual poetry, concrete poetry, Optatianus Porphyrius, Stéphane Mallarmé, Un coup de dés, Guillaume Apollinaire, Calligrammes, Gertrude Stein, Russian Formalism, OPOJAZ, Viktor Shklovsky, ostranenie, Yury Tynyanov, Boris Eikhenbaum, Training Layer Literature, originals shelf, EA-CORPORA
+corpus seating, primary sources, public domain, avant-garde, Ezra Pound, The Cantos, Guido Cavalcanti, dolce stil novo, Scuola siciliana, Giacomo da Lentini, Dante Gabriel Rossetti, Futurism, F. T. Marinetti, parole in libertà, zaum, Velimir Khlebnikov, Aleksei Kruchenykh, Vladimir Mayakovsky, Vorticism, Blast, Dada, Tristan Tzara, Francis Picabia, Hugo Ball, Alfred Jarry, pataphysics, farce, nonsense, Lewis Carroll, Christian Morgenstern, Raymond Roussel, Lautréamont, Oulipo, constraint, visual poetry, concrete poetry, Stéphane Mallarmé, Un coup de dés, Guillaume Apollinaire, Calligrammes, Gertrude Stein, Russian Formalism, OPOJAZ, Viktor Shklovsky, ostranenie, Yury Tynyanov, Boris Eikhenbaum, Training Layer Literature, originals shelf, EA-CORPORA
 
 ### Related Identifiers
 

@@ -13,7 +13,7 @@
   "Network Preservation",
   "Tombstone Guarantee"
  ],
- "total_deposits": 1681,
+ "total_deposits": 1682,
  "deposits": [
   {
    "axn": "AXN:0001.GOVERNANCE.♍🜁🏴⌛🍃💫",
@@ -530869,6 +530869,198 @@
     },
     "overall_conformance": "partial"
    }
+  },
+  {
+   "deposit_number": 1682,
+   "axn": "AXN:06F8.DATASET.🌉📖🌅🔵🔍🧫",
+   "hex": "06F8",
+   "family": "DATASET",
+   "emoji": "🌉📖🌅🔵🔍🧫",
+   "hash": "2b41e0c5563a5a7ae5adfe5af6fefe2f75601fed07b58c400095056410a05f95",
+   "title": "EA-CORPORA-18 — The Eighteenth Seating: The Avant-Garde and Its Sources — Pound and the Cantos as First Printed, the Italian Lyric, Futurism, Dada, Jarry, Farce, Nonsense and Constraint, Visual Poetry, Stein, and Russian Formalism",
+   "creator": "Sharks, Lee",
+   "date": "2026-10-15",
+   "description": "Ten seats on the originals shelf, 97 works and 515,012 lines, for the modern avant-garde and the sources it read, in the editions a reader of their time could open, every one public domain in the United States. Pound's further volumes and the Cantos as first printed (Three Cantos, Poetry, 1917) with his Cavalcanti of 1912; the Italian lyric of the thirteenth and fourteenth centuries, the Sicilian school to the stilnovisti, with Rossetti's English; Italian and Russian Futurism and the English Vortex; Dada, the journal entire; Jarry, Ubu to Faustroll; French farce; the nonsense and constraint the Oulipo named as its plagiarists by anticipation; visual poetry from Optatianus to Mallarmé and Apollinaire, the line behind concrete poetry; Stein; and Russian Formalism, OPOJAZ's Poetika of 1919 and Shklovsky to 1930. Each seat holds the files as fetched, scans where the page is the text, one text per work, a provenance record with its verified loci, and a SHA-256 manifest; each has a card on the Training Layer Literature shelf. What is still in copyright — the Oulipo itself, the concrete poets proper, the Cantos after XXX — is named and not seated.",
+   "content_type": "Dataset",
+   "license": "CC-BY-4.0",
+   "substrate": "Human–machine collaborative. Sources located, fetched, verified against their front matter, assembled into seats, hashed and indexed, and every locus found in the seated text, all in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction. The selection — which movements, which authors, Pound and the Cantos, the Italian lyric, Jarry and Shklovsky — is Lee Sharks's. CC-BY-4.0 applies to this record and the seat records; each payload carries its own licence, stated per seat.",
+   "methodology": "Sources located on Project Gutenberg (catalogue searched by author), the Internet Archive (advanced search, item metadata read for access restriction and files) and Wikisource (fr, ru; rendered pages, the single-page text where one exists). Each item's front matter read against the edition claimed for it and the edition statement corrected to what the file shows; publishers not shown in a file are not asserted. Gutenberg texts stripped at the START/END markers; Internet Archive scans seated with their OCR text layers, uncorrected, the scan as witness; Wikisource texts as rendered from the proofread transcription, their page lists kept. Every file hashed into the seat's MANIFEST.sha256. Every verified locus is a string found in the seated text by rebuild/corpora/ea-corpora-18/build_seats.py; a locus not found is recorded as not found. Licences stated per seat, with the EU term carried where it differs (payload/record split, EA-CORPORA-02/01). The builders, the seat specification and this body are under rebuild/corpora/ea-corpora-18/.",
+   "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a seated file differs from the file at the origin its source.json names; if an edition statement misstates the front matter of the file it describes; if a verified locus cannot be found in the seated text; if an item stated public domain in the United States was published in or after 1931 by an author not in the public domain in the source country on 1 January 1996; or if the four surfaces (seat, index, deposit, shelf) disagree.",
+   "root_axn": "AXN:06F8.DATASET",
+   "axn_schema_version": "v2",
+   "protocol_version": "alexanarch-deposit-protocol/v1",
+   "axn_canonical": "2b41e0c5563a5a7ae5adfe5af6fefe2f75601fed07b58c400095056410a05f95",
+   "clusters": [
+    "Architectural",
+    "Scriptural",
+    "Liminal",
+    "Signal",
+    "Navigational",
+    "Instrumental"
+   ],
+   "axn_reading": "Foundation -> Text -> Threshold -> Alarm -> Search -> Method",
+   "minted_at": "2026-10-15T17:54:07Z",
+   "status": "ACTIVE",
+   "status_authorial": "SELF_SERVE_MINTED",
+   "full_text_path": "/data/texts/AXN-06F8-text.md",
+   "wiki_article": "EA-CORPORA-18 seats ten corpora of the modern avant-garde and the sources it read on the archive's originals shelf: 97 works and about 515,000 lines, every one public domain in the United States, in the editions a reader of their time could open. Pound's further volumes come with the Cantos as first printed — Three Cantos in Poetry (1917), whose opening argues with Browning's Sordello — and with his Sonnets and Ballate of Guido Cavalcanti (1912), the Italian on the facing page. Beside them the Italian lyric of the thirteenth and fourteenth centuries is seated in its own language: the Sicilian school, the Siculo-Tuscans, the stilnovisti, Jacopone and Cecco d'Ascoli, with Rossetti's Dante and his Circle. Futurism is seated Italian and Russian — Marinetti's manifestos and Zang Tumb Tuuum, Govoni's visual tables, A Slap in the Face of Public Taste, Mayakovsky, Khlebnikov, Kruchenykh's zaum — with the English Vortex of Blast; Dada as the journal Dada, all eight issues, with Tzara, Picabia, Serner and Ball; Jarry from Ubu Roi to Faustroll; French farce; the nonsense and constraint the Oulipo named its plagiarists by anticipation (Carroll, Lear, Morgenstern, Lautréamont, Roussel); visual poetry from Optatianus to Mallarmé's Un coup de dés and Apollinaire's Calligrammes, the line behind concrete poetry; Gertrude Stein; and Russian Formalism, OPOJAZ's Poetika of 1919 with Shklovsky's 'Art as Device', and Shklovsky, Tynyanov and Eikhenbaum to 1930. Each seat holds the files as fetched, the scans where the page is the text, one text per work, a provenance record whose edition statements were checked against each file's front matter and whose loci were found in the seated text, and a SHA-256 manifest. What remains in copyright — the Oulipo, the concrete poets proper, the Cantos after XXX — is named in each seat's scope and not seated.",
+   "wiki_status": "AUTHORED_IN_SESSION",
+   "entities": [
+    {
+     "subject": "EA-CORPORA-18 — The Eighteenth Seating: The Avant-Garde and Its Sources — Pound and the Cantos as Fi",
+     "predicate": "created_by",
+     "object": "Sharks, Lee",
+     "type": "work",
+     "evidence_status": "observed"
+    },
+    {
+     "subject": "EA-CORPORA-18 — The Eighteenth Seating: The Avant-Garde and Its Sources — Pound and the Cantos as Fi",
+     "predicate": "is_type",
+     "object": "Dataset",
+     "type": "work",
+     "evidence_status": "observed"
+    },
+    {
+     "subject": "EA-CORPORA-18 — The Eighteenth Seating: The Avant-Garde and Its Sources — Pound and the Cantos as Fi",
+     "predicate": "belongs_to_family",
+     "object": "DATASET",
+     "type": "work",
+     "evidence_status": "observed"
+    },
+    {
+     "subject": "EA-CORPORA-18 — The Eighteenth Seating: The Avant-Garde and Its Sources — Pound and the Cantos as Fi",
+     "predicate": "is_part_of",
+     "object": "Crimson Hexagonal Archive",
+     "type": "work",
+     "evidence_status": "observed"
+    }
+   ],
+   "entity_status": "provisional",
+   "defines_concepts": [],
+   "orcid": "0009-0000-1599-0703",
+   "version": "v1.0",
+   "keywords": [
+    "corpus seating",
+    "primary sources",
+    "public domain",
+    "avant-garde",
+    "Ezra Pound",
+    "The Cantos",
+    "Guido Cavalcanti",
+    "dolce stil novo",
+    "Scuola siciliana",
+    "Giacomo da Lentini",
+    "Dante Gabriel Rossetti",
+    "Futurism",
+    "F. T. Marinetti",
+    "parole in libertà",
+    "zaum",
+    "Velimir Khlebnikov",
+    "Aleksei Kruchenykh",
+    "Vladimir Mayakovsky",
+    "Vorticism",
+    "Blast",
+    "Dada",
+    "Tristan Tzara",
+    "Francis Picabia",
+    "Hugo Ball",
+    "Alfred Jarry",
+    "pataphysics",
+    "farce",
+    "nonsense",
+    "Lewis Carroll",
+    "Christian Morgenstern",
+    "Raymond Roussel",
+    "Lautréamont",
+    "Oulipo",
+    "constraint",
+    "visual poetry",
+    "concrete poetry",
+    "Stéphane Mallarmé",
+    "Un coup de dés",
+    "Guillaume Apollinaire",
+    "Calligrammes",
+    "Gertrude Stein",
+    "Russian Formalism",
+    "OPOJAZ",
+    "Viktor Shklovsky",
+    "ostranenie",
+    "Yury Tynyanov",
+    "Boris Eikhenbaum",
+    "Training Layer Literature",
+    "originals shelf",
+    "EA-CORPORA"
+   ],
+   "related_identifiers_raw": "AXN deposit #1673 — EA-CORPORA-17: the preceding seating\nAXN deposit #1580 — EA-CORPORA-12: the rule that seatings are periodically gathered\nSeat EA-CORPORA-05/01 (browning) and 05/02 (pound) — the constructed-voice series this seating extends",
+   "mint_source": {
+    "kind": "github_issue",
+    "issue_number": 0,
+    "repository": "leesharks000/alexanarch",
+    "minted_by_workflow": ".github/workflows/mint-axn.yml",
+    "minted_by_script": "scripts/mint_deposit.py",
+    "minted_via": "self_serve_validated_pr"
+   },
+   "body_status": {
+    "class": "full",
+    "lacuna": false,
+    "recovery_status": "COMPLETE",
+    "residual_chars": 35883,
+    "audited_at": "2026-10-15T17:54:07Z",
+    "audit_version": "mint-time-declaration"
+   },
+   "related_deposits": [
+    1673,
+    1580
+   ],
+   "references_concepts": [
+    "Hugh Selwyn Mauberley"
+   ],
+   "references_concept_count": 1,
+   "citations": [],
+   "wikidata_candidates": [],
+   "cha_cross_references": [],
+   "external_metadata_path": "/data/external-metadata/AXN-06F8.json",
+   "spxi_audit": {
+    "spxi_protocol": "v0.2",
+    "validated_at": "2026-10-15T17:55:52.038232+00:00",
+    "layers": {
+     "layer_1_inscription_anchors": {
+      "present": false,
+      "anchors_found": [
+       "authorial_position_phrase"
+      ],
+      "anchor_count": 1,
+      "orcid_in_body": false,
+      "creator_in_body": false,
+      "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+     },
+     "layer_2_micro_kernels": {
+      "present": false,
+      "fenced_json_blocks": 0,
+      "json_ld_context_markers": 0
+     },
+     "layer_3_content_hash": {
+      "present": true,
+      "canonical_hash": "525601e9b5ed639caf88b4b743bba1ccfe783b6dcff5e28a5783a577331c8267",
+      "hash_in_body": false,
+      "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+     },
+     "layer_4_cross_signing": {
+      "present": false,
+      "cross_references_count": 0,
+      "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+     },
+     "layer_5_external_anchors": {
+      "present": true,
+      "wikidata_qid_count": 0,
+      "external_doi_count": 0,
+      "orcid_present": true
+     }
+    },
+    "overall_conformance": "partial"
+   },
+   "concepts_attested_none": true,
+   "lexical_attested_none": true
   }
  ],
  "last_updated": "2026-10-07T20:04:49Z",
