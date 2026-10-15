@@ -130,6 +130,10 @@ def register(reg):
             nm = re.split(r" \(", o["name"])[0]
             add(nm, o.get("entity_type") or "unknown", [], [], "originator", relation=o.get("relation") or "archive")
     concepts_from_addresses(reg, add, alias_of, norm)
+    re_path = ROOT / "rebuild/entity-layer/read-entities.json"          # entities identified by reading
+    if re_path.exists():
+        for x in json.loads(re_path.read_text(encoding="utf-8"))["entities"]:
+            add(x["name"], x["type"], x.get("aliases", []), x.get("deposits", []), "reading", firm=True)
     link_sites(ents)
     FIX = {"allen ginsberg": "person", "howl": "work"}   # /non entries whose type carries no subtype
     for r in ents.values():
@@ -509,14 +513,29 @@ def main(check=False):
             row["framing"] = framing(e, o)
             if key in read:
                 r = read[key]
-                for f in ("target", "reached", "note"):
+                if "target" in r:
+                    tg = []
+                    for t in r["target"]:
+                        t = dict(t)
+                        if "name" in t:                       # a reading names the entity; resolved here, never stale
+                            t["ent"] = lookup.get(nrm(t.pop("name")), "unassigned")
+                        tg.append(t)
+                    row["target"] = tg
+                for f in ("reached", "note"):
                     if f in r:
-                        row[f] = r[f]
-                row["reached"]["state"] = "read"
+                        row[f] = dict(r[f]) if isinstance(r[f], dict) else r[f]
+                row["reached"]["state"] = "open" if row["reached"].get("kind") == "unread" else "read"
             k = row["reached"]["kind"]
             per = o.get("per")
+            # THE ELEMENTS DECIDE (v0.5): PER is the share of the four elements lost (per_v: True = retained). 49
+            # observations store the retained share and 20 match neither; the stored figure is kept beside the computed.
+            pv = o.get("per_v") if isinstance(o.get("per_v"), dict) else None
+            vals = [bool(v) for v in (pv or {}).values() if isinstance(v, bool)]
+            per_el = round(1 - sum(vals) / len(vals), 2) if vals else None
             row["score"] = {"against": row["target"][0]["ent"],
-                            "per_target": (1.0 if k in ("substitute", "generic", "refused") else per if k in ("same", "weakened", "collision") else None),
+                            "per_target": (1.0 if k in ("substitute", "generic", "refused") else (per_el if per_el is not None else per) if k in ("same", "weakened", "collision") else None),
+                            "per_recorded": per, "per_elements": per_el,
+                            "per_conflict": bool(per is not None and per_el is not None and abs(per - per_el) > 0.01),
                             "reached_scored": False,
                             "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"}
             rows.append(row)
