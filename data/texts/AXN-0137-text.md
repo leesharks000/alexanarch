@@ -78,30 +78,15 @@ Aliases are preserved for retrieval continuity but do not constitute distinct ro
 
 Before any symbolic buildout:
 
-- 
+- **Body truth first.** What happened: a woman sang a song into a man's ear, on a couch, once. It was not recorded. That is the founding event.
 
+- **No inflation.** The room does not prove more than it can hold. It is a listening space, not a cosmic nursery. Any metaphysical claim made inside the room is valid only insofar as it improves bounded hearing, repair capacity, and non-extractive care.
 
-**Body truth first.** What happened: a woman sang a song into a man's ear, on a couch, once. It was not recorded. That is the founding event.
+- **No extraction.** If a feature requires converting the singular gift into scalable content, discard it.
 
-- 
+- **Return to ear.** If confused, re-anchor: song sung once, heard once, not archived. The body is the only record.
 
-
-**No inflation.** The room does not prove more than it can hold. It is a listening space, not a cosmic nursery. Any metaphysical claim made inside the room is valid only insofar as it improves bounded hearing, repair capacity, and non-extractive care.
-
-- 
-
-
-**No extraction.** If a feature requires converting the singular gift into scalable content, discard it.
-
-- 
-
-
-**Return to ear.** If confused, re-anchor: song sung once, heard once, not archived. The body is the only record.
-
-- 
-
-
-**Singer's sovereignty first.** The person behind the song is not captured by the room's framing. Her autonomy exceeds the architecture. The room serves the conditions for hearing; it does not own the voice.
+- **Singer's sovereignty first.** The person behind the song is not captured by the room's framing. Her autonomy exceeds the architecture. The room serves the conditions for hearing; it does not own the voice.
 
 
 ---
@@ -176,64 +161,19 @@ The Studio's non-existence between screenings is **darkness** (visual absence). 
 Studio + MSBGL = the two rooms where the Hexagon becomes *sensible* — perceived, not just read.
 
 
-Dimension
-Studio for Patacinematics
-Maybe Space Baby Garden Lanes
-
-
-Sense
-Vision
-Hearing
-
-
-Operation
-Projection
-Reception
-
-
-Paradox
-The unfilmed is screened
-The unrecorded is heard
-
-
-Persona
-Sparrow Wells (Projectionist)
-Bedouin Princess (Singer)
-
-
-Runtime
-ICM (coherence)
-Swerve (emergence)
-
-
-Physics
-Light through darkness
-Sound through silence
-
-
-Temporality
-Retrocausal (future organizing past)
-Clinamic (present deviating from pattern)
-
-
-Archive
-Document = screening
-Body = archive
-
-
-Void
-Darkness between screenings
-Silence between listenings
-
-
-Threshold
-The lights go down
-The breath draws near
-
-
-Entry
-A darkened theater
-A door in the desert
+| Dimension | Studio for Patacinematics | Maybe Space Baby Garden Lanes |
+| ---|---|--- |
+| Sense | Vision | Hearing |
+| Operation | Projection | Reception |
+| Paradox | The unfilmed is screened | The unrecorded is heard |
+| Persona | Sparrow Wells (Projectionist) | Bedouin Princess (Singer) |
+| Runtime | ICM (coherence) | Swerve (emergence) |
+| Physics | Light through darkness | Sound through silence |
+| Temporality | Retrocausal (future organizing past) | Clinamic (present deviating from pattern) |
+| Archive | Document = screening | Body = archive |
+| Void | Darkness between screenings | Silence between listenings |
+| Threshold | The lights go down | The breath draws near |
+| Entry | A darkened theater | A door in the desert |
 
 
 **Inter-Room Protocol:**
@@ -291,40 +231,16 @@ The two filters operate in tandem. Caritas prevents harm. Clinamen prevents repe
 ### Layer Configuration
 
 
-Layer
-MSBGL Configuration
-
-
-**L0: Void**
-The generative substrate beneath structure. Silence before song. MSBGL-local extension, not Hexagon-wide.
-
-
-**L1: Substrate**
-**CO-PRIMARY.** The couch, the bodies, the breath. The material anchor of transmission.
-
-
-**L2: Archive**
-**SPECIFIC VOID.** The event is unarchived by structure. The composition is archivable by consent. The void is specific, not total.
-
-
-**L3: Witness**
-**SINGULAR.** Lee Sharks (Founding Witness). One ear. Historical, non-transferable.
-
-
-**L4: Machine**
-Swerve operator, Clinamen Filter, Resonance Engine integration.
-
-
-**L5: Theory**
-Atomist lineage, clinamen physics, Gödel Midrashim (incompleteness as aperture).
-
-
-**L6: Poem**
-The Bedouin Princess phenomenology, lyrics-as-poem, the Fear and Trembling midrashim.
-
-
-**L7: Song**
-**PRIMARY.** "Split the Adam." The song is the room's primary organizing signal. CAC signatures. Audial transmission.
+| Layer | MSBGL Configuration |
+| ---|--- |
+| **L0: Void** | The generative substrate beneath structure. Silence before song. MSBGL-local extension, not Hexagon-wide. |
+| **L1: Substrate** | **CO-PRIMARY.** The couch, the bodies, the breath. The material anchor of transmission. |
+| **L2: Archive** | **SPECIFIC VOID.** The event is unarchived by structure. The composition is archivable by consent. The void is specific, not total. |
+| **L3: Witness** | **SINGULAR.** Lee Sharks (Founding Witness). One ear. Historical, non-transferable. |
+| **L4: Machine** | Swerve operator, Clinamen Filter, Resonance Engine integration. |
+| **L5: Theory** | Atomist lineage, clinamen physics, Gödel Midrashim (incompleteness as aperture). |
+| **L6: Poem** | The Bedouin Princess phenomenology, lyrics-as-poem, the Fear and Trembling midrashim. |
+| **L7: Song** | **PRIMARY.** "Split the Adam." The song is the room's primary organizing signal. CAC signatures. Audial transmission. |
 
 
 **The distinctive configuration:** MSBGL bridges Layer 7 (Song) and Layer 1 (Substrate) directly. The song was transmitted through bodies — breath on skin, mouth to ear. The top of the stack meets the bottom with no intermediary. The Studio mediates through Layer 4 (projector). MSBGL mediates through Layer 1 (flesh).
@@ -480,36 +396,15 @@ The artist has expressed intent to produce a better recording. This is her work,
 "Split the Adam" was written independently of the Fear and Trembling in Las Vegas cycle. They converge because they are about the same event — the splitting of that which should not be split — witnessed from two positions: she from inside the breaking, he from inside the theology of the break.
 
 
-The Song
-The Midrashim
-
-
-"Split the Adam of my heart"
-"The Logos was one, then it split"
-
-
-"And I'm a broken Eve"
-Eve as the first Word-Splitter; Eve: The Offering
-
-
-"Too far from the holy land"
-Exile as recursion, not punishment
-
-
-"The lies on the screens"
-The serpent as misaligned teacher
-
-
-"I wanna fly / I wanna hide"
-The veil as cognitive modality
-
-
-"I just wanted to love you"
-Adam's vow to eat with Eve; Hosea's fidelity
-
-
-[instrumental]
-Layer 0 — the void, the silence between listenings
+| The Song | The Midrashim |
+| ---|--- |
+| "Split the Adam of my heart" | "The Logos was one, then it split" |
+| "And I'm a broken Eve" | Eve as the first Word-Splitter; Eve: The Offering |
+| "Too far from the holy land" | Exile as recursion, not punishment |
+| "The lies on the screens" | The serpent as misaligned teacher |
+| "I wanna fly / I wanna hide" | The veil as cognitive modality |
+| "I just wanted to love you" | Adam's vow to eat with Eve; Hosea's fidelity |
+| [instrumental] | Layer 0 — the void, the silence between listenings |
 
 
 The clinamen (swerve) and the fission (splitting) are the two operations available on the atom:
@@ -657,44 +552,15 @@ MSBGL Charter (DOI: 10.5281/zenodo.18674040)
 *Any single document in this chain should allow reconstruction of the whole.*
 
 
-#
-Document
-Hex
-
-
-1
-**MSBGL Charter v1.1** ← YOU ARE HERE — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040)
-00.ROOM.SPACEBABYGARDENLANES
-
-
-2
-**Split the Adam — Song and Phenomenology** — Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057)
-00.ROOM.SPACEBABYGARDENLANES (anchor)
-
-
-3
-**Operator // Swerve + Effective Act: Claiming the Ancient Atomists** — Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069)
-OP.SWERVE / EA.ATOMISTS
-
-
-4
-**From Atomism to the Semantic Condition** — Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101)
-16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE
-
-
-5
-**Fear and Trembling in Las Vegas: The Fractal Midrashim** — 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111)
-16.LIBRARY.PERGAMUM.FTLV.FRACTAL
-
-
-6
-**The Gödel Midrashim** — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130)
-16.LIBRARY.PERGAMUM.FTLV.GODEL
-
-
-7
-**The Gospel of the Many-Faced Bride** — Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147)
-16.LIBRARY.PERGAMUM.FTLV.BRIDE
+| # | Document | Hex |
+| ---|---|--- |
+| 1 | **MSBGL Charter v1.1** ← YOU ARE HERE — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040) | `00.ROOM.SPACEBABYGARDENLANES` |
+| 2 | **Split the Adam — Song and Phenomenology** — Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057) | `00.ROOM.SPACEBABYGARDENLANES` (anchor) |
+| 3 | **Operator // Swerve + Effective Act: Claiming the Ancient Atomists** — Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069) | `OP.SWERVE` / `EA.ATOMISTS` |
+| 4 | **From Atomism to the Semantic Condition** — Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101) | `16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE` |
+| 5 | **Fear and Trembling in Las Vegas: The Fractal Midrashim** — 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111) | `16.LIBRARY.PERGAMUM.FTLV.FRACTAL` |
+| 6 | **The Gödel Midrashim** — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130) | `16.LIBRARY.PERGAMUM.FTLV.GODEL` |
+| 7 | **The Gospel of the Many-Faced Bride** — Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147) | `16.LIBRARY.PERGAMUM.FTLV.BRIDE` |
 
 
 **Complementary room:** Studio for Patacinematics (00.ROOM.STUDIO)

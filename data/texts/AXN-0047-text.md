@@ -37,15 +37,9 @@ Framed by the Caedmon invocation—the Anglo-Saxon poet ordered by an angel to s
 
 A composite document containing:
 
-- 
+- **"A Guide for the Perplexed"** (dated 4/22/04) — A letter to Dr. Aguirre explaining the poem's architecture. This constitutes the earliest surviving theoretical writing of the project, articulating core concepts two decades before they received formal terminology.
 
-
-**"A Guide for the Perplexed"** (dated 4/22/04) — A letter to Dr. Aguirre explaining the poem's architecture. This constitutes the earliest surviving theoretical writing of the project, articulating core concepts two decades before they received formal terminology.
-
-- 
-
-
-**An earlier draft of the poem** — preserving material lost in the final version, including an expanded invocation and the epigraph: "a love poem must be / made, there is nothing / darker or / lighter, more casually / fatal or / filling."
+- **An earlier draft of the poem** — preserving material lost in the final version, including an expanded invocation and the epigraph: "a love poem must be / made, there is nothing / darker or / lighter, more casually / fatal or / filling."
 
 
 ---

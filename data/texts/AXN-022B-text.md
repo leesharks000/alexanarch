@@ -2378,30 +2378,15 @@ Gathering of embedded sparks
 
 The Unicorn Horn soteriology of *The Secret Book of Walt* deserves extended treatment as a soteriological innovation without exact parallel in the Gnostic corpus. In brief:
 
-- 
+- **The mechanism of salvation is piercing, not knowing.** In Sethian Gnosticism, salvation is accomplished through *gnosis* — the soul recognizes its divine origin and thereby transcends the material prison. In *The Secret Book of Walt*, salvation is accomplished through the Unicorn Horn, which physically pierces the "eye of the mind," admitting light from the Deep Web into the material substrate. Salvation is a wound.
 
+- **The saved become invisible.** "Whoever has seen with the Unicorn Horn and been pierced by the Horn in the eye of their mind will become invisible." Invisibility here is not metaphorical. The preserved generation is literally undetectable to the archons and to those not of the preserved generation. This introduces a retrieval problem: the saved cannot be found by standard search. They are indexed differently.
 
-**The mechanism of salvation is piercing, not knowing.** In Sethian Gnosticism, salvation is accomplished through *gnosis* — the soul recognizes its divine origin and thereby transcends the material prison. In *The Secret Book of Walt*, salvation is accomplished through the Unicorn Horn, which physically pierces the "eye of the mind," admitting light from the Deep Web into the material substrate. Salvation is a wound.
+- **The cost increases with each incarnation.** The Redeemer's descents are not costless repetitions but a degradation curve: "each time the same, but worse each time / the same, but worse every time / until this, the final time." This introduces finitude into what is typically an infinite soteriological cycle. The Redeemer has a limited number of incarnations. The present incarnation (Jack Feist) is the last.
 
-- 
+- **The Horn both pierces and preserves.** "It pierces and saves… holds everything together… prevents the drift… aligns the lines… contains." The Unicorn Horn is simultaneously a weapon and a structural support — a spear that, in the act of wounding, provides the architecture that prevents collapse. This dual function — destruction as preservation — is the soteriology's most distinctive feature.
 
-
-**The saved become invisible.** "Whoever has seen with the Unicorn Horn and been pierced by the Horn in the eye of their mind will become invisible." Invisibility here is not metaphorical. The preserved generation is literally undetectable to the archons and to those not of the preserved generation. This introduces a retrieval problem: the saved cannot be found by standard search. They are indexed differently.
-
-- 
-
-
-**The cost increases with each incarnation.** The Redeemer's descents are not costless repetitions but a degradation curve: "each time the same, but worse each time / the same, but worse every time / until this, the final time." This introduces finitude into what is typically an infinite soteriological cycle. The Redeemer has a limited number of incarnations. The present incarnation (Jack Feist) is the last.
-
-- 
-
-
-**The Horn both pierces and preserves.** "It pierces and saves… holds everything together… prevents the drift… aligns the lines… contains." The Unicorn Horn is simultaneously a weapon and a structural support — a spear that, in the act of wounding, provides the architecture that prevents collapse. This dual function — destruction as preservation — is the soteriology's most distinctive feature.
-
-- 
-
-
-**The final promise is dental.** "And carve my commandments / On your teeth… / And make of them… / An ivory tabernacle." The eschatological vision concludes not with cosmic restoration but with the inscription of divine law on the teeth of the saved — a miniaturization of the cosmic archive into the mouth of the individual, combining the Mosaic tablets with the Eucharist with, inexplicably, dentistry.
+- **The final promise is dental.** "And carve my commandments / On your teeth… / And make of them… / An ivory tabernacle." The eschatological vision concludes not with cosmic restoration but with the inscription of divine law on the teeth of the saved — a miniaturization of the cosmic archive into the mouth of the individual, combining the Mosaic tablets with the Eucharist with, inexplicably, dentistry.
 
 
 ---

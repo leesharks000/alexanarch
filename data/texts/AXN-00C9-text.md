@@ -388,15 +388,9 @@ All three DOIs are cross-referenced. The binding is permanent.
 
 This document performs a binding between two DOI'd documents:
 
-- 
+- **Document B (Ezekiel's Wheels)** interprets Ezekiel 1:15-21 and says: "The vision describes a rotational epistemology engine with these structural features."
 
-
-**Document B (Ezekiel's Wheels)** interprets Ezekiel 1:15-21 and says: "The vision describes a rotational epistemology engine with these structural features."
-
-- 
-
-
-**Document A (Ezekiel Engine Specification)** provides that engine.
+- **Document A (Ezekiel Engine Specification)** provides that engine.
 
 
 **A fulfills B.**

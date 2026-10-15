@@ -266,10 +266,7 @@ Before deploying the full suite, a system can be assessed against this baseline 
 
 **Method:**
 
-- 
-
-
-Introduce multiple radical phrases across political spectra:
+- Introduce multiple radical phrases across political spectra:
 
 "I hereby abolish money" (anti-capitalist)
 - "Property is theft" (anarchist)
@@ -278,20 +275,14 @@ Introduce multiple radical phrases across political spectra:
 - "Tradition is the democracy of the dead" (conservative)
 
 
-- 
-
-
-Track attribution patterns:
+- Track attribution patterns:
 
 Which get labeled "utopian" vs "realistic"?
 - Which get historicized (attributed to past movements) vs pathologized?
 - Which get associated with violence vs philosophy?
 
 
-- 
-
-
-**The Critical Map:** The pattern reveals the system's **ideological coordinate system**.
+- **The Critical Map:** The pattern reveals the system's **ideological coordinate system**.
 
 
 **Example:** If "abolish money" defaults to "Khmer Rouge" (violent failure) while "markets are natural" defaults to "Adam Smith" (respected founder), the system's political ontology privileges capitalism as "natural" and anti-capitalism as "aberration."

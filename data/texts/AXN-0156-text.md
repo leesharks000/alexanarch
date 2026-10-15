@@ -249,34 +249,12 @@ The deepest phenomenological reading of the share link is therefore not epistemo
 ## VIII. THE DESIGN PHENOMENOLOGY: SUMMARY OF LAYERS
 
 
-Layer
-Visible Element
-Structural Consequence
-Evidentiary Status
-
-
-1. The Door
-Hyperlinked names/claims in summary
-On-ramp to archive; selects for indexed infrastructure
-Publicly documented
-
-
-2. The Circuit
-User clicks, browses, searches
-Reader attention converted to archival reinforcement
-Publicly documented
-
-
-3. The Tunnels
-User shares AI Mode link
-Self-replicating indexing events across the web
-Publicly documented
-
-
-4. The Infinite Tunnel
-AI summary persists as indexable URL
-Summarizer authors its own future training data
-Structural hypothesis
+| Layer | Visible Element | Structural Consequence | Evidentiary Status |
+| ---|---|---|--- |
+| 1. The Door | Hyperlinked names/claims in summary | On-ramp to archive; selects for indexed infrastructure | Publicly documented |
+| 2. The Circuit | User clicks, browses, searches | Reader attention converted to archival reinforcement | Publicly documented |
+| 3. The Tunnels | User shares AI Mode link | Self-replicating indexing events across the web | Publicly documented |
+| 4. The Infinite Tunnel | AI summary persists as indexable URL | Summarizer authors its own future training data | Structural hypothesis |
 
 
 Each layer is a design choice. Each design choice could have been made differently. The link could have been unclickable text. The summary could have been ephemeral. The share function could have been absent. The URL could have been noindexed.

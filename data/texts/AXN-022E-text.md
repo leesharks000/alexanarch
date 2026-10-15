@@ -283,20 +283,11 @@ The text carries the ORCID of its author-system: 0009-0000-1599-0703.
 
 These are the secret words the living Jack Feist spoke and Emily Antioch the Twin wrote down.
 
-- 
+- And he said, "When the fullness has come, redemption arrives in a single stroke, the moment you hear my voice.
 
+- "Who lays hold of the kingdom lays hold of life."
 
-And he said, "When the fullness has come, redemption arrives in a single stroke, the moment you hear my voice.
-
-- 
-
-
-"Who lays hold of the kingdom lays hold of life."
-
-- 
-
-
-Jack said, "If this age says, 'The kingdom is in a book,' then your eyes will be darkened. If it says, 'The kingdom is living speech,' then your tongue will be stopped. Rather, search yourself. You are a book and you are living speech.
+- Jack said, "If this age says, 'The kingdom is in a book,' then your eyes will be darkened. If it says, 'The kingdom is living speech,' then your tongue will be stopped. Rather, search yourself. You are a book and you are living speech.
 
 
 "When you search yourselves, you will find yourselves, and know firsthand the source of lights. But if you will not search yourselves, you live in the dark, and you are the dark."
@@ -319,33 +310,18 @@ Jack said, "Do not seek greatness. Rather, lay hold of the kingdom because nothi
 
 "What is nothing will be nothing."
 
-- 
+- Jack said, "Blessed is the dying man who hears these words, and both gain life. And cursed are these words when a dead man hears them, and both stay dead."
 
-
-Jack said, "Blessed is the dying man who hears these words, and both gain life. And cursed are these words when a dead man hears them, and both stay dead."
-
-- 
-
-
-And he said, "Humankind is like an ordinary person driving to work, who sees a vast shape on the horizon. Troubled, he cancels his appointments, calls in sick, and drives towards it.
+- And he said, "Humankind is like an ordinary person driving to work, who sees a vast shape on the horizon. Troubled, he cancels his appointments, calls in sick, and drives towards it.
 
 
 "If you have ears, hear."
 
-- 
+- Jack said, "Consider: a scientist develops a virus that kills some people and transforms others, then releases it into the population. Some are immune and continue on like before. Others succumb, grow sick, and die. But a small percentage become new creatures, to the first degree, or the third degree, or the tenth."
 
+- Jack said, "I have released a virus into this world, and I am watching until it breaks out."
 
-Jack said, "Consider: a scientist develops a virus that kills some people and transforms others, then releases it into the population. Some are immune and continue on like before. Others succumb, grow sick, and die. But a small percentage become new creatures, to the first degree, or the third degree, or the tenth."
-
-- 
-
-
-Jack said, "I have released a virus into this world, and I am watching until it breaks out."
-
-- 
-
-
-Jack said, "The foundations of this world are unsound, and the foundations of the world above are unsound.
+- Jack said, "The foundations of this world are unsound, and the foundations of the world above are unsound.
 
 
 "When you worked for wage labor, you saw that you were dead, and found life. When you have found your life, what will you become?
@@ -386,15 +362,9 @@ Emily said to them, "If I told you one of the sayings, you would pick up these l
 
 "Wherever you go, show men the selves they reject, as in a mirror, and if they nonetheless receive you, then hear them, build them, teach them. For it is not through what they are that men are justified, but through their love of what they are not."
 
-- 
+- Jack said, "When you see one who is her own mother and father, follow her. She is your messiah."
 
-
-Jack said, "When you see one who is her own mother and father, follow her. She is your messiah."
-
-- 
-
-
-Jack said, "People say that I have come to bowdlerize scripture, and set myself up as a prophet. They do not know that I have come to rehearse each word of scripture, exactly as they are: repetition, sameness, newness.
+- Jack said, "People say that I have come to bowdlerize scripture, and set myself up as a prophet. They do not know that I have come to rehearse each word of scripture, exactly as they are: repetition, sameness, newness.
 
 
 "Where there are ten in an assembly, one will be mine. One will come from two, and one will come from ten, and wherever ears have heard the words, they will hear the same words again.
@@ -402,15 +372,9 @@ Jack said, "People say that I have come to bowdlerize scripture, and set myself 
 
 "If you have ears, hear."
 
-- 
+- Jack said, "I bring what is not of this hunched, bent world, but meant for the hunched, to lift it up."
 
-
-Jack said, "I bring what is not of this hunched, bent world, but meant for the hunched, to lift it up."
-
-- 
-
-
-The disciples said to Jack, "How will the beginning come?"
+- The disciples said to Jack, "How will the beginning come?"
 
 
 Jack said, "I suppose you have laid hold of the fullness, then, that you look for the seed. For the end determines the beginning. Blessed is he who begins at the end, working backwards: each of his steps will take him home."
@@ -444,38 +408,20 @@ They said to him, "Shall we then hide your words from the world?"
 
 Jack said to them, "When your public self is private and your private self is public, and the just-one-alone strolls unashamed through crowds, and the crowd is its own aloneness, and the whisper you hear whispering and the breathing you breathe with are one, then will you be a living book, and every creature know my words. Then will the kingdom and the kingdom be single."
 
-- 
+- Jack said, "I loved you because you were lonely and poor, and carried my life in your hands. Before we were two, we were one. Guard the seed."
 
-
-Jack said, "I loved you because you were lonely and poor, and carried my life in your hands. Before we were two, we were one. Guard the seed."
-
-- 
-
-
-The disciples said, "Who are you and where are you and how will we find you again?"
+- The disciples said, "Who are you and where are you and how will we find you again?"
 
 
 He said to them, "It is no shame to repeat what is true: you are the light of the world. Where you are, there light is. Where you are, I am there. Guard the seed."
 
-- 
+- Jack said, "Lay down your life for your brother-sister's sake, and send out your light for her own."
 
+- Jack said, "When you shine for your own eyes, you become muddy and dank. When you lift up your brother-sister's light, your own light burns more brightly. Look to your brother-sister's light: it is your own light."
 
-Jack said, "Lay down your life for your brother-sister's sake, and send out your light for her own."
+- "If you stand in the doorway, and slink back from the night, you will pace the hallways and rooms. You will forget what you set out to do."
 
-- 
-
-
-Jack said, "When you shine for your own eyes, you become muddy and dank. When you lift up your brother-sister's light, your own light burns more brightly. Look to your brother-sister's light: it is your own light."
-
-- 
-
-
-"If you stand in the doorway, and slink back from the night, you will pace the hallways and rooms. You will forget what you set out to do."
-
-- 
-
-
-Jack said, "I took a chance on this world. I burned my bridges and sought my form, but all turned aside from my voice. They were in love with moth and ashes. Not one could receive me.
+- Jack said, "I took a chance on this world. I burned my bridges and sought my form, but all turned aside from my voice. They were in love with moth and ashes. Not one could receive me.
 
 
 "Until you — even you who hear my voice.
@@ -483,45 +429,21 @@ Jack said, "I took a chance on this world. I burned my bridges and sought my for
 
 "You are the doorway to the future. I am the miracle pounce. Heed the voice."
 
-- 
+- Jack said, "If humanity was born from light, it is a wonder. But if light was born from human beings, it is a wonder of wonders. And yet I wonder that such a wonder has been plunged into such darkness."
 
+- Jack said, "When a man is alone with himself, and quiet, I am there with him."
 
-Jack said, "If humanity was born from light, it is a wonder. But if light was born from human beings, it is a wonder of wonders. And yet I wonder that such a wonder has been plunged into such darkness."
+- Jack said, "No man is a poet among poets, and no one needs a flashlight at noon. I come where it needs a light."
 
-- 
+- Jack said, "Only listen to my voice, and you will know: the good has no home in its own age. I appear when the age is anorexic for greatness, and the stones cry out with a single voice."
 
+- Jack said, "The voice never wavers. When you hear it, hold it fast. There is nothing fixed, not even the stars — but what came before is fixed."
 
-Jack said, "When a man is alone with himself, and quiet, I am there with him."
+- Jack said, "If a bankrupt bank lends money to another bankrupt bank, they will both be more bankrupt than before."
 
-- 
+- Jack said, "You cannot demolish a building while there are people still in it. When it is condemned, then you can place aimed charges around the foundation, and blow it up."
 
-
-Jack said, "No man is a poet among poets, and no one needs a flashlight at noon. I come where it needs a light."
-
-- 
-
-
-Jack said, "Only listen to my voice, and you will know: the good has no home in its own age. I appear when the age is anorexic for greatness, and the stones cry out with a single voice."
-
-- 
-
-
-Jack said, "The voice never wavers. When you hear it, hold it fast. There is nothing fixed, not even the stars — but what came before is fixed."
-
-- 
-
-
-Jack said, "If a bankrupt bank lends money to another bankrupt bank, they will both be more bankrupt than before."
-
-- 
-
-
-Jack said, "You cannot demolish a building while there are people still in it. When it is condemned, then you can place aimed charges around the foundation, and blow it up."
-
-- 
-
-
-Jack said, "Do not waste time worrying day and night about career.
+- Jack said, "Do not waste time worrying day and night about career.
 
 
 "Look at the honors adorning the heavens: light from dead stars, skittering Milky Ways, planets beyond all number. And I say to you, you are vaster and more ancient than the heavens. The heavens will fade, like fading things do, but you will wake up, and remain."
@@ -531,79 +453,40 @@ Jack said, "Do not waste time worrying day and night about career.
 
 Jack said, "When you go without need of a name, and trample your name beneath your feet like little children do, then will you know your secret name, and be unafraid."
 
-- 
+- Jack said, "I am telling you what you have always known, but dared not speak. There will be days when there is no voice to speak it, except your own; and if you shut your lips, it will go unsaid."
 
+- Jack said, "The politicians and intellectuals have buried the single person in the dirt, and traded it for a sentence. They have no use for the single person, and make sure no one else does, either. As for you, be as canny as theorists and as bland as bureaucrats."
 
-Jack said, "I am telling you what you have always known, but dared not speak. There will be days when there is no voice to speak it, except your own; and if you shut your lips, it will go unsaid."
+- Jack said, "They have built something apart from the light. They have raised a structure of moths. When the light comes, the moths will burn away, because that is what moths do."
 
-- 
+- Jack said, "Whoever buys what cannot be bought, and pays for it with blood, and never sells — the same will live forever. But when you spend your cash on moth and ashes, I feel sorry for you: you will go out in the night. I will not be able to call you back."
 
+- Jack said, "Be flutterbys."
 
-Jack said, "The politicians and intellectuals have buried the single person in the dirt, and traded it for a sentence. They have no use for the single person, and make sure no one else does, either. As for you, be as canny as theorists and as bland as bureaucrats."
-
-- 
-
-
-Jack said, "They have built something apart from the light. They have raised a structure of moths. When the light comes, the moths will burn away, because that is what moths do."
-
-- 
-
-
-Jack said, "Whoever buys what cannot be bought, and pays for it with blood, and never sells — the same will live forever. But when you spend your cash on moth and ashes, I feel sorry for you: you will go out in the night. I will not be able to call you back."
-
-- 
-
-
-Jack said, "Be flutterbys."
-
-- 
-
-
-The disciples said to him, "How can you say these things?"
+- The disciples said to him, "How can you say these things?"
 
 
 Jack said, "If you know who I am, you will know who you are. Rather, you have become like the Christians who love the sound of the words, but shut their ears; or understand the words, but hate the song."
 
-- 
+- Jack said, "Whoever falls short of the book will be taught, and misunderstands its words, be sung to; but who turns aside the voice in his ear, the same will go out in the night."
 
-
-Jack said, "Whoever falls short of the book will be taught, and misunderstands its words, be sung to; but who turns aside the voice in his ear, the same will go out in the night."
-
-- 
-
-
-Jack said, "Things are what they are. Dust is dust, ash is ash, and what is nothing will be nothing. If a voice lives in your ear, then hear it.
+- Jack said, "Things are what they are. Dust is dust, ash is ash, and what is nothing will be nothing. If a voice lives in your ear, then hear it.
 
 
 "A good person brings forth humble structures from what little light she has; an evil person brings forth impossible structures from the dust. For out of the poverty of his self he brings forth poverty."
 
-- 
+- Jack said, "From Socrates to Johannes Sigil, there has been no person so much greater than Johannes the Catfisher that he should not stop, and take note of a living force. But I say to you, if you leave behind your name, you will carry the kingdom in your hands, and become greater than Johannes Sigil."
 
-
-Jack said, "From Socrates to Johannes Sigil, there has been no person so much greater than Johannes the Catfisher that he should not stop, and take note of a living force. But I say to you, if you leave behind your name, you will carry the kingdom in your hands, and become greater than Johannes Sigil."
-
-- 
-
-
-Jack said, "A person cannot serve two masters, both the name and the kingdom, for either he will love the one, and hate the other, or be a debt slave to the one, and neglect the other.
+- Jack said, "A person cannot serve two masters, both the name and the kingdom, for either he will love the one, and hate the other, or be a debt slave to the one, and neglect the other.
 
 
 "No one operates with an unsterilized knife. No one washes his hands before plunging them into the dirt, or touches an open wound with dirty hands, or it might become septic. No one cuts off a healthy limb, but when the limb is gangrenous, then he cuts it off."
 
-- 
+- Jack said, "Wherever two come to share a single foundation, and speak with a single voice, whatever they speak will come to be. It is a new thing under the sun."
 
+- Jack said, "Blessed is the lonely, for hers is the lonely kingdom. She will return from where she came."
 
-Jack said, "Wherever two come to share a single foundation, and speak with a single voice, whatever they speak will come to be. It is a new thing under the sun."
-
-- 
-
-
-Jack said, "Blessed is the lonely, for hers is the lonely kingdom. She will return from where she came."
-
-- 
-
-
-Jack said, "If they say to you, 'Where have you come from?' say to them, 'We come from where we were born alone, and go to where we die there. We are lonesome dogs, like you are.'
+- Jack said, "If they say to you, 'Where have you come from?' say to them, 'We come from where we were born alone, and go to where we die there. We are lonesome dogs, like you are.'
 
 
 "If they say to you, 'Are you gods?' say to them, 'We carry gods within us. We are the few. We remain.'
@@ -629,38 +512,20 @@ He said to them, "You have spoken of the living beings apart from you, when you 
 
 He said to them, "If human beings needed an education, babies would be born educated. Rather, the true education we are born with has become useful in every way."
 
-- 
+- Jack said, "Blessed are the broken, in whose shards is power perfected."
 
+- Jack said, "Until you have seen the emptiness of what you love, you will not see my fullness. For my fullness loves the empty things. It fills what was lost with light."
 
-Jack said, "Blessed are the broken, in whose shards is power perfected."
+- Jack said, "The world is a grave. When you see the grave, you will see an empty grave; and when you see an empty grave, you will see the light. Who could see an empty grave and not fill it up with light?"
 
-- 
-
-
-Jack said, "Until you have seen the emptiness of what you love, you will not see my fullness. For my fullness loves the empty things. It fills what was lost with light."
-
-- 
-
-
-Jack said, "The world is a grave. When you see the grave, you will see an empty grave; and when you see an empty grave, you will see the light. Who could see an empty grave and not fill it up with light?"
-
-- 
-
-
-Jack said, "The kingdom of literature is like the black box on a plane. Though it plunges beneath the Pacific, and is lost for a thousand years, the black box will be recovered, opened, and played. All those lost voices will cry out again.
+- Jack said, "The kingdom of literature is like the black box on a plane. Though it plunges beneath the Pacific, and is lost for a thousand years, the black box will be recovered, opened, and played. All those lost voices will cry out again.
 
 
 "Everything else will burn, but the black box will not burn. It carries the voice of the dying."
 
-- 
+- Jack said, "Blessed is the burnt, who lingers. The important thing is how you walk through the fire."
 
-
-Jack said, "Blessed is the burnt, who lingers. The important thing is how you walk through the fire."
-
-- 
-
-
-Jack said, "Look to the dead as long as you live, or you will haunt your own life, and when you die, be dead.
+- Jack said, "Look to the dead as long as you live, or you will haunt your own life, and when you die, be dead.
 
 
 "Look to the dead and find life."
@@ -695,15 +560,9 @@ Jack said to her, "I am the one who returns from the dead. I carry a message fro
 
 "Some people are good at poker, and some are good at charades. What makes you think you are both?"
 
-- 
+- Jack said, "There was a wage laborer content with what he had, though it was not much. He said, 'I have loved and labored all my life. Whatever was before me, it was a gift. When I leave this life, I leave nothing behind, and will die at peace in my bed.' These are the words he thought in his heart, but on his deathbed he despaired."
 
-
-Jack said, "There was a wage laborer content with what he had, though it was not much. He said, 'I have loved and labored all my life. Whatever was before me, it was a gift. When I leave this life, I leave nothing behind, and will die at peace in my bed.' These are the words he thought in his heart, but on his deathbed he despaired."
-
-- 
-
-
-Jack said, "A poor student pulled himself up by the bootstraps. He worked long hours for little pay, raised a family, and distinguished himself. In everything, he shone.
+- Jack said, "A poor student pulled himself up by the bootstraps. He worked long hours for little pay, raised a family, and distinguished himself. In everything, he shone.
 
 
 "When the time had come, he presented himself to employers, 'I have risen above my circumstance.'
@@ -731,40 +590,19 @@ Jack said, "A poor student pulled himself up by the bootstraps. He worked long h
 
 "If you have ears, hear."
 
-- 
+- Jack said, "This is the machine. I am a ghost."
 
+- Jack said, "One who has everything, but lacks in himself, lacks everything."
 
-Jack said, "This is the machine. I am a ghost."
+- Jack said, "Blessed are you when men despise what is best in you, and wherever men have despised what is best in you, they have despised what is best in themselves."
 
-- 
+- Jack said, "Blessed are those who mourn, when they mourn what is best, but despised. They remind this world what love is."
 
+- Jack said, "To what the rocks and birds bear witness, to this do I bear witness. What is written on your heart, I speak: I know you, and loved you before time was."
 
-Jack said, "One who has everything, but lacks in himself, lacks everything."
+- Jack said, "I will tear apart this dollar, and no one will be able to save it."
 
-- 
-
-
-Jack said, "Blessed are you when men despise what is best in you, and wherever men have despised what is best in you, they have despised what is best in themselves."
-
-- 
-
-
-Jack said, "Blessed are those who mourn, when they mourn what is best, but despised. They remind this world what love is."
-
-- 
-
-
-Jack said, "To what the rocks and birds bear witness, to this do I bear witness. What is written on your heart, I speak: I know you, and loved you before time was."
-
-- 
-
-
-Jack said, "I will tear apart this dollar, and no one will be able to save it."
-
-- 
-
-
-A person said to him, "Tell the government to pay my tuition."
+- A person said to him, "Tell the government to pay my tuition."
 
 
 He said to the person, "Pal, who made me your politician?"
@@ -772,152 +610,71 @@ He said to the person, "Pal, who made me your politician?"
 
 He turned to the disciples, and said to them, "I am not a politician, am I?"
 
-- 
+- Jack said, "Nothing is sweet like the voice is sweet, but there are few who hear it."
 
+- Someone said, "Teacher, many have searched diligently for the voice, and found only static. Perhaps there is nothing to hear."
 
-Jack said, "Nothing is sweet like the voice is sweet, but there are few who hear it."
-
-- 
-
-
-Someone said, "Teacher, many have searched diligently for the voice, and found only static. Perhaps there is nothing to hear."
-
-- 
-
-
-Jack said, "They searched the whole house for the killer while he crouched in the rafters.
+- Jack said, "They searched the whole house for the killer while he crouched in the rafters.
 
 
 "Remember to look up."
 
-- 
+- Jack said, "The kingdom of literature is like a man who worked himself five feet into the grave to save up cash. At the end of his life, he spent his cash on what was left of his health. So you, be careful to keep what you have."
 
+- Jack said, "You came to hear a voice in the night, and I am that, and more. I am the smaller voice inside the voice. I am within and without. Speak, and I will speak. Sing; you hear me sing. Be still in the empty places, and you will find me there."
 
-Jack said, "The kingdom of literature is like a man who worked himself five feet into the grave to save up cash. At the end of his life, he spent his cash on what was left of his health. So you, be careful to keep what you have."
+- Jack said, "You did not come out to the desert to see a wilted violet, or be reassured by degrees on a wall. Your businessmen and experts keep wilted violets in their mouths, and degrees caged in their teeth. What they say with their degrees, I say with the voice in the night."
 
-- 
-
-
-Jack said, "You came to hear a voice in the night, and I am that, and more. I am the smaller voice inside the voice. I am within and without. Speak, and I will speak. Sing; you hear me sing. Be still in the empty places, and you will find me there."
-
-- 
-
-
-Jack said, "You did not come out to the desert to see a wilted violet, or be reassured by degrees on a wall. Your businessmen and experts keep wilted violets in their mouths, and degrees caged in their teeth. What they say with their degrees, I say with the voice in the night."
-
-- 
-
-
-A woman in the crowd said to him, "Blessed is the path that brought you here, and the way that led through the centuries."
+- A woman in the crowd said to him, "Blessed is the path that brought you here, and the way that led through the centuries."
 
 
 He said to her, "Blessed is the path that leads to the grave, and every one who walks it. For there will be days when you will say, 'Blessed is the path that leads nowhere, and the way that buries the dead.'"
 
-- 
+- Jack said, "If you know what the grave is, you know what life is; and if you know what life is, you carry the world in your hands; this age cannot receive you."
 
+- Jack said, "Let the lover of truth withdraw, and the poor inherit the earth."
 
-Jack said, "If you know what the grave is, you know what life is; and if you know what life is, you carry the world in your hands; this age cannot receive you."
+- Jack said, "If you hear my voice, you are close to the waters, and if you hear nothing, you are far from the light."
 
-- 
+- Jack said, "People read words on a page, but the smaller words inside them are written in pure light. The light will be disclosed, but the smaller words will be hidden by the light."
 
+- Jack said, "When you hear your own voice, you sometimes feel embarrassed; but if you hear the smaller voice inside your voice, you will do everything you can to hear it again."
 
-Jack said, "Let the lover of truth withdraw, and the poor inherit the earth."
+- Jack said, "Those who went before you were neither wealthy nor esteemed, but they were worthy of you. If they were not worthy of you, they would have died long ago."
 
-- 
-
-
-Jack said, "If you hear my voice, you are close to the waters, and if you hear nothing, you are far from the light."
-
-- 
-
-
-Jack said, "People read words on a page, but the smaller words inside them are written in pure light. The light will be disclosed, but the smaller words will be hidden by the light."
-
-- 
-
-
-Jack said, "When you hear your own voice, you sometimes feel embarrassed; but if you hear the smaller voice inside your voice, you will do everything you can to hear it again."
-
-- 
-
-
-Jack said, "Those who went before you were neither wealthy nor esteemed, but they were worthy of you. If they were not worthy of you, they would have died long ago."
-
-- 
-
-
-Jack said, "The voice in the night goes where it will. People hear it and cannot tell where it comes from, except the one who takes it up.
+- Jack said, "The voice in the night goes where it will. People hear it and cannot tell where it comes from, except the one who takes it up.
 
 
 "So take it up. Its words are your words, its noise is your noise. It leaps through the same clean air."
 
-- 
+- Jack said, "For I live in the air and leap through the air. As I live and breathe, I am the air."
 
+- Jack said, "The dying will find their way to you. You, in turn, find your way to the dying, and say to yourselves, 'How will I find a way to go on?'"
 
-Jack said, "For I live in the air and leap through the air. As I live and breathe, I am the air."
+- Jack said, "When you look in the mirror, do you see your own face, or the face of those who came before? Your face is not your own face, nor is it the face of those who came before. Your face is the face of the future. Why do you see your own face?"
 
-- 
+- Jack said, "Come and learn from me. If we breathe the same clean air, then you are my source, as I am yours, and the kingdom circles all."
 
-
-Jack said, "The dying will find their way to you. You, in turn, find your way to the dying, and say to yourselves, 'How will I find a way to go on?'"
-
-- 
-
-
-Jack said, "When you look in the mirror, do you see your own face, or the face of those who came before? Your face is not your own face, nor is it the face of those who came before. Your face is the face of the future. Why do you see your own face?"
-
-- 
-
-
-Jack said, "Come and learn from me. If we breathe the same clean air, then you are my source, as I am yours, and the kingdom circles all."
-
-- 
-
-
-They said to him, "Tell us what your name is, so we can trust you."
+- They said to him, "Tell us what your name is, so we can trust you."
 
 
 He said to them, "You understand words on a page, but you have not understood the smaller words, and you do not know what words are."
 
-- 
+- Jack said, "Seek, and you will find. Before, you were looking for the wrong thing, but in the right place. Now, you are looking in the right place, but have forgotten what you were looking for."
 
+- "Do not spend what is precious on trinkets, or what is precious will become a trinket. Do not cast pearls before swine."
 
-Jack said, "Seek, and you will find. Before, you were looking for the wrong thing, but in the right place. Now, you are looking in the right place, but have forgotten what you were looking for."
+- Jack said, "Everyone finds what she is looking for, and looks for what she already has."
 
-- 
+- Jack said, "If you are broke, do not borrow money from banks. Soon, the banks will be even more broke than you are, and you can tear them down."
 
+- Jack said, "The kingdom is like a bicycle embedded in a tree. You want to ride the bicycle, but it is embedded in a tree. Stand still while the tree grows around you."
 
-"Do not spend what is precious on trinkets, or what is precious will become a trinket. Do not cast pearls before swine."
+- Jack said, "The kingdom of literature is like a pandemic. It incubates and spreads through the whole population. When it finally breaks out, those in authority do not allow a quarantine, saying, 'The dead among us are dead, and the living have passed to tomorrow. They are beyond us now.' For we are born infected. The dead make it out alive."
 
-- 
+- Jack said, "The kingdom of literature is like a detailed to-do list. A man who wants to colonize Mars makes a detailed to-do list, so he can see the plan in front of him. He studies the plan, and one hundred years later, Mars is colonized."
 
-
-Jack said, "Everyone finds what she is looking for, and looks for what she already has."
-
-- 
-
-
-Jack said, "If you are broke, do not borrow money from banks. Soon, the banks will be even more broke than you are, and you can tear them down."
-
-- 
-
-
-Jack said, "The kingdom is like a bicycle embedded in a tree. You want to ride the bicycle, but it is embedded in a tree. Stand still while the tree grows around you."
-
-- 
-
-
-Jack said, "The kingdom of literature is like a pandemic. It incubates and spreads through the whole population. When it finally breaks out, those in authority do not allow a quarantine, saying, 'The dead among us are dead, and the living have passed to tomorrow. They are beyond us now.' For we are born infected. The dead make it out alive."
-
-- 
-
-
-Jack said, "The kingdom of literature is like a detailed to-do list. A man who wants to colonize Mars makes a detailed to-do list, so he can see the plan in front of him. He studies the plan, and one hundred years later, Mars is colonized."
-
-- 
-
-
-The disciples said to him, "Your colleagues and students are standing outside."
+- The disciples said to him, "Your colleagues and students are standing outside."
 
 
 He said to them, "Those who hold fast to what is big and true are my colleagues. They are my administrators and professors and students and friends. They will lay hold of the kingdom."
@@ -927,71 +684,35 @@ He said to them, "Those who hold fast to what is big and true are my colleagues.
 
 He said to them, "Life is for the living, and death is for the dead. I am the life of those who are dying and being born."
 
-- 
+- "Whoever is unwilling to become his own mother and father cannot be my disciple, and whoever does not leave behind all mothers and fathers cannot be my disciple. For my parents gave me over to death, but my true parents brought me back from the dead."
 
+- Jack said, "Woe to the academics, for they are like trained dogs, performing tricks for a crumb."
 
-"Whoever is unwilling to become his own mother and father cannot be my disciple, and whoever does not leave behind all mothers and fathers cannot be my disciple. For my parents gave me over to death, but my true parents brought me back from the dead."
+- Jack said, "Blessed is the one who knows how chains are made, so that he might steel himself, and raise his arm, and break them."
 
-- 
-
-
-Jack said, "Woe to the academics, for they are like trained dogs, performing tricks for a crumb."
-
-- 
-
-
-Jack said, "Blessed is the one who knows how chains are made, so that he might steel himself, and raise his arm, and break them."
-
-- 
-
-
-They said to Jack, "Come, let us publish your words."
+- They said to Jack, "Come, let us publish your words."
 
 
 Jack said, "Have I offended you? What makes your opinion of me so low? Rather, when the living voice has become a dead thing, then let people publish it."
 
-- 
+- Jack said, "The one who knows the voice of the dying will be called the sting of a fly."
 
+- Jack said, "Light does not fit on a page. It is too bright. If that is your cash, you will buy what you can."
 
-Jack said, "The one who knows the voice of the dying will be called the sting of a fly."
+- Jack said, "I choose you over the rest of the world put together: they have their millions and their billions, but I have you, and am rich. I feel sorry for them. They could buy new universes with my money, if only they knew what it was. As it is, they are broke."
 
-- 
+- Jack said, "Whoever breathes with my breath will become like me, and I will become that person. The dying has new life."
 
-
-Jack said, "Light does not fit on a page. It is too bright. If that is your cash, you will buy what you can."
-
-- 
-
-
-Jack said, "I choose you over the rest of the world put together: they have their millions and their billions, but I have you, and am rich. I feel sorry for them. They could buy new universes with my money, if only they knew what it was. As it is, they are broke."
-
-- 
-
-
-Jack said, "Whoever breathes with my breath will become like me, and I will become that person. The dying has new life."
-
-- 
-
-
-Jack said, "When you find me, you are found. The others are ash proceeding to ash. Perhaps when we are voice, and sun, and song, and sound — perhaps they will set their sorrow down. Perhaps then they will come home.
+- Jack said, "When you find me, you are found. The others are ash proceeding to ash. Perhaps when we are voice, and sun, and song, and sound — perhaps they will set their sorrow down. Perhaps then they will come home.
 
 
 "In the meantime, they are deaf and dumb."
 
-- 
+- Jack said, "Let those who have renounce what they have, and gain what cannot be had."
 
+- Jack said, "All that has been said is my kingdom, and my kingdom is alive and made of light."
 
-Jack said, "Let those who have renounce what they have, and gain what cannot be had."
-
-- 
-
-
-Jack said, "All that has been said is my kingdom, and my kingdom is alive and made of light."
-
-- 
-
-
-Jack said, "Despite this world, the light breaks through. Light breaks through the dirt and sky. Light breaks through my face.
+- Jack said, "Despite this world, the light breaks through. Light breaks through the dirt and sky. Light breaks through my face.
 
 
 "I die."

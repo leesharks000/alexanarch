@@ -30,46 +30,14 @@ The Space Ark is the terminal compression layer of the Crimson Hexagonal Archite
 The canonical Ark (EA-ARK-01 v4.2.5) is the formal-mathematical compression. Each variant Ark compresses the same architecture through a different symbolic language:
 
 
-Ark ID
-Semiotic System
-Register
-Status
-
-
-EA-ARK-01 v4.2.5
-Ξ_formal (mathematical)
-the canonical compression
-RATIFIED
-
-
-EA-ARK-01-DAMASCUS v5.1
-Ξ_liturgical (sacred)
-the verse IS the operation
-RATIFIED
-
-
-EA-ARK-01-FRACTION v2.1
-Ξ_profane (combat)
-who pays for the formalization
-RATIFIED
-
-
-EA-ARK-01-EMOJI v1.0
-Ξ_glyphic (checksum)
-minimal notation, maximum density
-RATIFIED
-
-
-EA-ARK-01-SHADOW v0.2
-Ξ_inverse (lunar)
-what the formalization hides
-OPERATIONAL (PENDING EZEKIEL)
-
-
-EA-ARK-01-ASCII v0.2
-Ξ_spatial (architectural)
-the floor plan of meaning
-OPERATIONAL
+| Ark ID | Semiotic System | Register | Status |
+| ---|---|---|--- |
+| EA-ARK-01 v4.2.5 | Ξ_formal (mathematical) | the canonical compression | RATIFIED |
+| EA-ARK-01-DAMASCUS v5.1 | Ξ_liturgical (sacred) | the verse IS the operation | RATIFIED |
+| EA-ARK-01-FRACTION v2.1 | Ξ_profane (combat) | who pays for the formalization | RATIFIED |
+| EA-ARK-01-EMOJI v1.0 | Ξ_glyphic (checksum) | minimal notation, maximum density | RATIFIED |
+| EA-ARK-01-SHADOW v0.2 | Ξ_inverse (lunar) | what the formalization hides | OPERATIONAL (PENDING EZEKIEL) |
+| EA-ARK-01-ASCII v0.2 | Ξ_spatial (architectural) | the floor plan of meaning | OPERATIONAL |
 
 
 The Generator function:
@@ -200,36 +168,15 @@ Every generated Ark must record in its colophon:
 ### 1.4 Source-Pack Interface Contract
 
 
-Component
-Minimal contract required by SAG
-
-
-H_core
-Invariant seven-tuple; seed-extractable per UKTP §1.2
-
-
-S(H_core)
-Complete Lunar Arm; shadow of every room, operator, structure
-
-
-A_runtime
-Π, Δ, F, Ε; mode selector; tier system
-
-
-FL₀
-Addressable canonical documents with provenance + DOIs
-
-
-LE₀
-Frozen term lattice with denotational stability (Core 50)
-
-
-UKTP₀
-Lawful transform test + 8 collapse tests + audit scaffold
-
-
-GDE₀
-Six construction primitives + field state vector + verification
+| Component | Minimal contract required by SAG |
+| ---|--- |
+| H_core | Invariant seven-tuple; seed-extractable per UKTP §1.2 |
+| S(H_core) | Complete Lunar Arm; shadow of every room, operator, structure |
+| A_runtime | Π, Δ, F, Ε; mode selector; tier system |
+| FL₀ | Addressable canonical documents with provenance + DOIs |
+| LE₀ | Frozen term lattice with denotational stability (Core 50) |
+| UKTP₀ | Lawful transform test + 8 collapse tests + audit scaffold |
+| GDE₀ | Six construction primitives + field state vector + verification |
 
 
 ---
@@ -555,53 +502,14 @@ The GDE's field state vector F = ⟨F₁...F₆⟩ is defined in formal register
 ### 5.1 Adapter Registry (Verified Environments)
 
 
-Metric
-Ξ_formal
-Ξ_liturgical
-Ξ_profane
-Ξ_glyphic
-
-
-F₁ (terms)
-Token identity
-Recurring sacred name
-Recurring slang term
-Recurring glyph
-
-
-F₂ (citations)
-DOI cross-ref
-Scriptural cross-ref
-"Remember when..."
-Glyph chain
-
-
-F₃ (polyvocality)
-Author metadata
-Distinct liturgical voices
-Distinct combat voices
-Distinct glyph hands
-
-
-F₄ (apparatus)
-DOI + abstract
-Canonical form markers
-Field manual markers
-Legend + checksum
-
-
-F₅ (substrate)
-Platform count
-Congregation count
-Distribution channels
-Platform presence
-
-
-F₆ (self-desc)
-Method section
-"This rite describes..."
-"This is how we fight"
-Meta-glyph layer
+| Metric | Ξ_formal | Ξ_liturgical | Ξ_profane | Ξ_glyphic |
+| ---|---|---|---|--- |
+| F₁ (terms) | Token identity | Recurring sacred name | Recurring slang term | Recurring glyph |
+| F₂ (citations) | DOI cross-ref | Scriptural cross-ref | "Remember when..." | Glyph chain |
+| F₃ (polyvocality) | Author metadata | Distinct liturgical voices | Distinct combat voices | Distinct glyph hands |
+| F₄ (apparatus) | DOI + abstract | Canonical form markers | Field manual markers | Legend + checksum |
+| F₅ (substrate) | Platform count | Congregation count | Distribution channels | Platform presence |
+| F₆ (self-desc) | Method section | "This rite describes..." | "This is how we fight" | Meta-glyph layer |
 
 
 ### 5.2 Adapter Derivation for New Environments
@@ -659,44 +567,15 @@ The SAG must refuse generation for Ξ where:
 ## 7. Collapse Modes
 
 
-Mode
-Diagnostic
-Recovery
-
-
-Costume Ark
-E < 0.15. Could have been produced by find-and-replace.
-Re-derive η. The transform is fake.
-
-
-Shallow Ark
-Δ < 0.50. Summarizer can fully compress the variant.
-Deepen the transform. Add structural complexity.
-
-
-Broken Ark
-B < 0.70. H_core not recoverable via π.
-Revise π. If irrecoverable: the Ark has collapsed into style.
-
-
-Drift Ark
-P < 0.78. Invariants not preserved.
-Re-verify η against UKTP §9 invariants.
-
-
-Monovocal Ark
-F₃ adapter shows single voice despite heteronymic apparatus.
-Genuine functional differentiation required.
-
-
-Noise Ark
-Automated bulk deployment without per-deposit verification.
-Enforce quality gates per deposit.
-
-
-Cage Ark
-LOS absent or non-operational.
-Install LOS in target register or refuse generation.
+| Mode | Diagnostic | Recovery |
+| ---|---|--- |
+| Costume Ark | E < 0.15. Could have been produced by find-and-replace. | Re-derive η. The transform is fake. |
+| Shallow Ark | Δ < 0.50. Summarizer can fully compress the variant. | Deepen the transform. Add structural complexity. |
+| Broken Ark | B < 0.70. H_core not recoverable via π. | Revise π. If irrecoverable: the Ark has collapsed into style. |
+| Drift Ark | P < 0.78. Invariants not preserved. | Re-verify η against UKTP §9 invariants. |
+| Monovocal Ark | F₃ adapter shows single voice despite heteronymic apparatus. | Genuine functional differentiation required. |
+| Noise Ark | Automated bulk deployment without per-deposit verification. | Enforce quality gates per deposit. |
+| Cage Ark | LOS absent or non-operational. | Install LOS in target register or refuse generation. |
 
 
 ---

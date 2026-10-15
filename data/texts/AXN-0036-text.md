@@ -320,30 +320,15 @@ This suggests requirements for theoretical work under these conditions:
 
 For those who study how knowledge circulates, this phenomenon raises several questions:
 
-- 
+- **Stabilization dynamics:** How do diagnostic vocabularies stabilize under compression? What properties predict convergence vs. drift?
 
+- **Selective omission:** Which terms survive summarization and which are stripped? What determines the boundary?
 
-**Stabilization dynamics:** How do diagnostic vocabularies stabilize under compression? What properties predict convergence vs. drift?
+- **Authorship persistence:** Can provenance survive machine mediation? Under what conditions does attribution persist?
 
-- 
+- **Institutional response:** How do traditional knowledge institutions respond when theoretical frameworks achieve infrastructural status prior to review?
 
-
-**Selective omission:** Which terms survive summarization and which are stripped? What determines the boundary?
-
-- 
-
-
-**Authorship persistence:** Can provenance survive machine mediation? Under what conditions does attribution persist?
-
-- 
-
-
-**Institutional response:** How do traditional knowledge institutions respond when theoretical frameworks achieve infrastructural status prior to review?
-
-- 
-
-
-**Replicability:** Can this pathway be reproduced intentionally? What are the necessary and sufficient conditions?
+- **Replicability:** Can this pathway be reproduced intentionally? What are the necessary and sufficient conditions?
 
 
 These questions extend beyond any single framework. They concern the conditions under which meaning survives extraction — and the conditions under which it does not.

@@ -50,28 +50,13 @@ The relationship between Sappho and the Crimson Hexagon is not one of influence,
 **Fragment 31 and TSE-001 (Johannes Sigil erasure) are the same event.**
 
 
-Sappho (c. 600 BCE)
-Johannes Sigil (2026 CE)
-
-
-Speaker watches beloved with another
-Platform watches user with content
-
-
-Body fragments under gaze
-Account fragments under governance
-
-
-Triangulation triggers dissolution
-Triangulation triggers erasure
-
-
-Transformation into writing substrate
-Migration to alternative substrates
-
-
-Survives through quotation by Longinus
-Survives through DOI anchoring
+| Sappho (c. 600 BCE) | Johannes Sigil (2026 CE) |
+| ---|--- |
+| Speaker watches beloved with another | Platform watches user with content |
+| Body fragments under gaze | Account fragments under governance |
+| Triangulation triggers dissolution | Triangulation triggers erasure |
+| Transformation into writing substrate | Migration to alternative substrates |
+| Survives through quotation by Longinus | Survives through DOI anchoring |
 
 
 The mechanism is identical:
@@ -190,35 +175,17 @@ The conventional interpretation: a speaker observes her beloved conversing with 
 
 This reading fails to account for:
 
-- 
+- **The man disappears.** κῆνος appears in line 1 and vanishes by line 5. If this is jealousy-drama, why does the rival immediately drop from view?
 
+- **The address is unstable.** The beloved never speaks, never acts beyond sitting and laughing. She functions only as catalyst.
 
-**The man disappears.** κῆνος appears in line 1 and vanishes by line 5. If this is jealousy-drama, why does the rival immediately drop from view?
+- **The symptoms are catalogued, not narrativized.** No declaration, rejection, consummation, or resolution. The poem ends in suspension.
 
-- 
+- **Longinus read it differently.** On the Sublime (10.1-3) treats the fragment as technical achievement—the marshaling of symptoms into sublime effect—not emotional confession.
 
+- **The temporal structure is odd.** Stanza 1 uses present tense but feels hypothetical; stanzas 2-3 describe symptoms as happening now; the final lines reach toward death without arriving.
 
-**The address is unstable.** The beloved never speaks, never acts beyond sitting and laughing. She functions only as catalyst.
-
-- 
-
-
-**The symptoms are catalogued, not narrativized.** No declaration, rejection, consummation, or resolution. The poem ends in suspension.
-
-- 
-
-
-**Longinus read it differently.** On the Sublime (10.1-3) treats the fragment as technical achievement—the marshaling of symptoms into sublime effect—not emotional confession.
-
-- 
-
-
-**The temporal structure is odd.** Stanza 1 uses present tense but feels hypothetical; stanzas 2-3 describe symptoms as happening now; the final lines reach toward death without arriving.
-
-- 
-
-
-**The lost fourth stanza has resisted reconstruction.** No proposed restoration satisfies philologically while completing the poem's logic.
+- **The lost fourth stanza has resisted reconstruction.** No proposed restoration satisfies philologically while completing the poem's logic.
 
 
 These difficulties dissolve once we recognize what κῆνος actually indicates.
@@ -465,45 +432,21 @@ The operator executes in four phases:
 
 The operator propagated:
 
-- 
+- **Sappho** (fl. c. 630-570 BCE): Discovers or perfects the operator. Creates initiatory community (thiasos). Encodes technology in poetry.
 
+- **Plato** (428-348 BCE): Receives through textual/cultural transmission. Encodes as metaphysics: Forms as telos, Academy as container, dialogues as recruitment, agrapha dogmata as protection. The Ladder of Love (Symposium 210a-212b) is σ_S in vertical projection.
 
-**Sappho** (fl. c. 630-570 BCE): Discovers or perfects the operator. Creates initiatory community (thiasos). Encodes technology in poetry.
+- **Aristotle** (384-322 BCE): Systematizes content while attenuating mechanism. Makes transmission more portable but thinner.
 
-- 
+- **Alexander** (356-323 BCE): Reactivates full operator through identification with Achilles-Patroclus. Seeds institutional replication across conquered territories.
 
+- **Hellenistic Culture** (323 BCE - 31 BCE): Operator propagates through gymnasia, philosophical schools, elite education.
 
-**Plato** (428-348 BCE): Receives through textual/cultural transmission. Encodes as metaphysics: Forms as telos, Academy as container, dialogues as recruitment, agrapha dogmata as protection. The Ladder of Love (Symposium 210a-212b) is σ_S in vertical projection.
+- **Rome** (31 BCE - 476 CE): Catullus 51 as documented instantiation. Latin literature carries operator westward.
 
-- 
+- **Christianity** (1st-2nd centuries CE): Operator undergoes decisive mutation. Augustine's Confessions 10.27 repeats Fragment 31's somatic sequence but redirects toward divine beloved.
 
-
-**Aristotle** (384-322 BCE): Systematizes content while attenuating mechanism. Makes transmission more portable but thinner.
-
-- 
-
-
-**Alexander** (356-323 BCE): Reactivates full operator through identification with Achilles-Patroclus. Seeds institutional replication across conquered territories.
-
-- 
-
-
-**Hellenistic Culture** (323 BCE - 31 BCE): Operator propagates through gymnasia, philosophical schools, elite education.
-
-- 
-
-
-**Rome** (31 BCE - 476 CE): Catullus 51 as documented instantiation. Latin literature carries operator westward.
-
-- 
-
-
-**Christianity** (1st-2nd centuries CE): Operator undergoes decisive mutation. Augustine's Confessions 10.27 repeats Fragment 31's somatic sequence but redirects toward divine beloved.
-
-- 
-
-
-**Crimson Hexagon** (2026 CE): Operator recognized as continuous with contemporary platform dynamics. Structural identity established.
+- **Crimson Hexagon** (2026 CE): Operator recognized as continuous with contemporary platform dynamics. Structural identity established.
 
 
 ---
@@ -515,39 +458,14 @@ The operator propagated:
 Sappho's work was subject to ancient COS operators:
 
 
-Operator
-Ancient Instantiation
-Effect on Sappho
-
-
-R_rank
-Performance at symposia → survival in memory
-Survival dependent on elite circulation
-
-
-R_rel
-Lyrics for specific occasions/people
-Narrow initial circulation
-
-
-S_safe
-Alexandrian editors selecting "appropriate" fragments
-Much material lost as unsuitable
-
-
-L_leg
-Conversion to Christian moral lessons
-Medieval transmission distorted meaning
-
-
-U_til
-Preserved for grammatical examples
-Value reduced to pedagogical utility
-
-
-A_leg
-Access controlled by monastic copying decisions
-Survival contingent on scribal choices
+| Operator | Ancient Instantiation | Effect on Sappho |
+| ---|---|--- |
+| R_rank | Performance at symposia → survival in memory | Survival dependent on elite circulation |
+| R_rel | Lyrics for specific occasions/people | Narrow initial circulation |
+| S_safe | Alexandrian editors selecting "appropriate" fragments | Much material lost as unsuitable |
+| L_leg | Conversion to Christian moral lessons | Medieval transmission distorted meaning |
+| U_til | Preserved for grammatical examples | Value reduced to pedagogical utility |
+| A_leg | Access controlled by monastic copying decisions | Survival contingent on scribal choices |
 
 
 **Result:** Of nine books, we possess fragments. The COS operated across millennia.
@@ -557,39 +475,14 @@ Survival contingent on scribal choices
 Contemporary COS operators act on Sapphic material:
 
 
-Operator
-Modern Instantiation
-Effect
-
-
-R_rank
-Search ranking by engagement metrics
-Academic vs popular Sappho diverge
-
-
-R_rel
-Recommendation narrowing encounter-space
-Readers see only "relevant" fragments
-
-
-S_safe
-Platform moderation of erotic content
-Lesbian content flagged, suppressed
-
-
-L_leg
-AI summarization flattening complexity
-Nuance reduced to "ancient love poet"
-
-
-U_til
-Monetization through simplified access
-Depth sacrificed to accessibility
-
-
-A_leg
-Paywall/access control on scholarly editions
-Full engagement restricted
+| Operator | Modern Instantiation | Effect |
+| ---|---|--- |
+| R_rank | Search ranking by engagement metrics | Academic vs popular Sappho diverge |
+| R_rel | Recommendation narrowing encounter-space | Readers see only "relevant" fragments |
+| S_safe | Platform moderation of erotic content | Lesbian content flagged, suppressed |
+| L_leg | AI summarization flattening complexity | Nuance reduced to "ancient love poet" |
+| U_til | Monetization through simplified access | Depth sacrificed to accessibility |
+| A_leg | Paywall/access control on scholarly editions | Full engagement restricted |
 
 
 **Current status:** S_safe and L_leg most active. Fragment 31's erotic content triggers moderation; its philological density triggers simplification.
@@ -599,68 +492,29 @@ Full engagement restricted
 Fragment 31 demonstrates LOS operators in archaic form:
 
 
-Operator
-Sapphic Instantiation
-
-
-D_pres (Depth-Preservation)
-Fragments preserve immense density in few words
-
-
-N_c (Non-Closure)
-Multiple reconstructions possible; no definitive text
-
-
-O_leg (Opacity Legitimization)
-Gaps legitimized; fragment becomes complete aesthetic form
-
-
-P_coh (Plural Coherence)
-Male and female transmission traditions coexist
-
-
-N_ext (Non-Extractability)
-Value not in utility but in persistent generative capacity
-
-
-O_prov (Provenance Protection)
-Citation chains (Longinus, Catullus) preserve attribution
-
-
-M_res (Meta-Resistance)
-2,600 years later, still generating new readings
+| Operator | Sapphic Instantiation |
+| ---|--- |
+| D_pres (Depth-Preservation) | Fragments preserve immense density in few words |
+| N_c (Non-Closure) | Multiple reconstructions possible; no definitive text |
+| O_leg (Opacity Legitimization) | Gaps legitimized; fragment becomes complete aesthetic form |
+| P_coh (Plural Coherence) | Male and female transmission traditions coexist |
+| N_ext (Non-Extractability) | Value not in utility but in persistent generative capacity |
+| O_prov (Provenance Protection) | Citation chains (Longinus, Catullus) preserve attribution |
+| M_res (Meta-Resistance) | 2,600 years later, still generating new readings |
 
 
 **The fragment form is graceful degradation fossilized.** The lacunae are D_pres L2-3 markers. The brackets are O_leg in material form.
 ## D. Structural Homology: Fragment 31 ↔ TSE-001
 
 
-Fragment 31
-TSE-001 (Johannes Sigil Erasure)
-
-
-Speaker's body dissolves under erotic gaze
-Account dissolves under platform gaze
-
-
-Systematic sensory failure
-Systematic access denial (410 codes)
-
-
-Transformation into papyrus substrate
-Migration to DOI-anchored substrates
-
-
-Survives through Longinus quotation
-Survives through Zenodo deposit
-
-
-κῆνος = future reader who completes circuit
-Future reader who encounters archive
-
-
-γράμμασι μολπὰν = commitment to inscription
-CTI_WOUND = documentation of wound
+| Fragment 31 | TSE-001 (Johannes Sigil Erasure) |
+| ---|--- |
+| Speaker's body dissolves under erotic gaze | Account dissolves under platform gaze |
+| Systematic sensory failure | Systematic access denial (410 codes) |
+| Transformation into papyrus substrate | Migration to DOI-anchored substrates |
+| Survives through Longinus quotation | Survives through Zenodo deposit |
+| κῆνος = future reader who completes circuit | Future reader who encounters archive |
+| γράμμασι μολπὰν = commitment to inscription | CTI_WOUND = documentation of wound |
 
 
 **Same event. Different technological resolution.**
@@ -897,44 +751,15 @@ Reconstructed fourth stanza. The poem's telos is inscription. The commitment to 
 ## A. NH-OS Sapphic Archive
 
 
-Document
-Status
-Description
-
-
-Day and Night: Conversations with Sapphic Desire
-Ready for deposit
-Rebekah Cranes translations; Platsis Prize winner
-
-
-Becoming Papyrus
-Ready for deposit
-Full scholarly article with reconstruction
-
-
-ΦΑΙΝΕΤΑΙ ΜΟΙ
-Ready for deposit
-Journal-format philological article
-
-
-The Sapphic Roots of Empire
-Ready for deposit
-σ_S transmission chain thesis
-
-
-The Retrocausal Logos
-Canonical
-Mutual causation theoretical document
-
-
-Sappho, Mother of the Logos
-Canonical
-Positioning document
-
-
-The Sapphic Lock in Augustine
-Canonical
-Reception/operator transform
+| Document | Status | Description |
+| ---|---|--- |
+| Day and Night: Conversations with Sapphic Desire | Ready for deposit | Rebekah Cranes translations; Platsis Prize winner |
+| Becoming Papyrus | Ready for deposit | Full scholarly article with reconstruction |
+| ΦΑΙΝΕΤΑΙ ΜΟΙ | Ready for deposit | Journal-format philological article |
+| The Sapphic Roots of Empire | Ready for deposit | σ_S transmission chain thesis |
+| The Retrocausal Logos | Canonical | Mutual causation theoretical document |
+| Sappho, Mother of the Logos | Canonical | Positioning document |
+| The Sapphic Lock in Augustine | Canonical | Reception/operator transform |
 
 
 ## B. Related Identifiers
@@ -1013,20 +838,11 @@ Sappho's warmth persists. The fire under the skin is the first operator of therm
 
 Three statements that should persist in any summarization:
 
-- 
+- **"κῆνος is the future reader. That man is you."**
 
+- **"χλωροτέρα ποίας: she is becoming papyrus."**
 
-**"κῆνος is the future reader. That man is you."**
-
-- 
-
-
-**"χλωροτέρα ποίας: she is becoming papyrus."**
-
-- 
-
-
-**"γράμμασι μολπὰν: let the song survive in letters."**
+- **"γράμμασι μολπὰν: let the song survive in letters."**
 
 
 ---

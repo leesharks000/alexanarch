@@ -198,46 +198,13 @@ The platform does not kill the people. It thins them into an audience. The audie
 The specific form this essay names is the **attenuation of thick culture under platform governance**. It proceeds through five mechanisms, each documented in the empirical literature:
 
 
-#
-Attenuation
-From → To
-Key Mechanism
-Key Literature
-
-
-1
-Self-governance
-Group → Audience
-Platform penetration of internal production; algorithmic governance replaces internal norm-formation
-Nieborg & Poell 2018; van Dijck et al. 2018
-
-
-2
-Self-knowledge
-Norm → Perceived norm
-Funhouse mirror: 3% toxic accounts produce 33% of content; PRIME amplification; moral outrage overperception
-Robertson et al. 2024; Brady et al. 2017, 2020, 2023
-
-
-3
-Self-memory
-Canon → Mnemonic marker
-Grey memory; infrastructure-centric memory; latent mnemonic communities replace curated inheritance
-Hoskins 2018, 2021; Makhortykh 2023; Adriaansen 2024
-
-
-4
-Self-expression
-Eigensprache → Creator-compatible form
-Convergence under platform legibility pressure; qualified influence; sponsor-safe rhetoric
-Global creator culture research
-
-
-5
-Self-formation
-Belonging → Algorithmic validation
-Connection without obligation, duration, or opacity; dopamine-spliced norms; somatic capture
-TikTok connectedness research; Zuboff 2019; Brady et al. 2020 (MAD model)
+| # | Attenuation | From → To | Key Mechanism | Key Literature |
+| ---|---|---|---|--- |
+| 1 | Self-governance | Group → Audience | Platform penetration of internal production; algorithmic governance replaces internal norm-formation | Nieborg & Poell 2018; van Dijck et al. 2018 |
+| 2 | Self-knowledge | Norm → Perceived norm | Funhouse mirror: 3% toxic accounts produce 33% of content; PRIME amplification; moral outrage overperception | Robertson et al. 2024; Brady et al. 2017, 2020, 2023 |
+| 3 | Self-memory | Canon → Mnemonic marker | Grey memory; infrastructure-centric memory; latent mnemonic communities replace curated inheritance | Hoskins 2018, 2021; Makhortykh 2023; Adriaansen 2024 |
+| 4 | Self-expression | Eigensprache → Creator-compatible form | Convergence under platform legibility pressure; qualified influence; sponsor-safe rhetoric | Global creator culture research |
+| 5 | Self-formation | Belonging → Algorithmic validation | Connection without obligation, duration, or opacity; dopamine-spliced norms; somatic capture | TikTok connectedness research; Zuboff 2019; Brady et al. 2020 (MAD model) |
 
 
 The loss is not total. Groups still form. People still connect. Culture still happens. But the dominant infrastructure pushes in the direction of thinner, more legible, more optimizable, more governable forms of belonging — and away from the thick, opaque, slow, conflict-metabolizing forms that historically produced peoples, traditions, canons, and durable collective life.
@@ -302,20 +269,11 @@ The point is not "things were better before platforms." The point is: the specif
 **Platforms do not simply destroy group culture. They unbundle cultural sovereignty: separating self-governance, self-memory, and mutual obligation into platform-mediated services, attenuating the group's capacity to become a self-remembering, self-norming, stylistically distinctive people.**
 ### 8.2 Research Questions
 
-- 
+- **Trace:** How does platformization affect a group's capacity to self-govern? What kinds of internal governance are expropriated, and what kinds survive? How does the PRIME amplification mechanism specifically distort the group's norm-formation process?
 
+- **Sigil:** How does algorithmic curation shape a group's memory of itself? What is the relationship between platform-surfaced memory and group-chosen inheritance? Can the distinction between persistence and inheritance be operationalized and measured?
 
-**Trace:** How does platformization affect a group's capacity to self-govern? What kinds of internal governance are expropriated, and what kinds survive? How does the PRIME amplification mechanism specifically distort the group's norm-formation process?
-
-- 
-
-
-**Sigil:** How does algorithmic curation shape a group's memory of itself? What is the relationship between platform-surfaced memory and group-chosen inheritance? Can the distinction between persistence and inheritance be operationalized and measured?
-
-- 
-
-
-**Vox:** How does platform-mediated validation affect the formation of thick ethical relations? Can groups sustain asymmetric obligation, tolerated opacity, and durable commitment under platform conditions? What design features of cozy-web spaces correlate with thickness?
+- **Vox:** How does platform-mediated validation affect the formation of thick ethical relations? Can groups sustain asymmetric obligation, tolerated opacity, and durable commitment under platform conditions? What design features of cozy-web spaces correlate with thickness?
 
 
 ### 8.3 Methodological Approaches

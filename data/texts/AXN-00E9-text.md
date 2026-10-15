@@ -53,15 +53,9 @@ Full polyphonic recovery
 
 **What the cycle demonstrates:**
 
-- 
+- **A → B:** The summarizer (here: Claude's context limits) strips technical specification while retaining "style." Detailed metrics (TAI, ILT, AB, CD) lost. Assembly voice distribution unified into generic "we." The "freely riffing" collapse confirmed in Google AI Overview research.
 
-
-**A → B:** The summarizer (here: Claude's context limits) strips technical specification while retaining "style." Detailed metrics (TAI, ILT, AB, CD) lost. Assembly voice distribution unified into generic "we." The "freely riffing" collapse confirmed in Google AI Overview research.
-
-- 
-
-
-**B → C:** Reconstruction via polyphony. The six-voice distributed structure (Assembly Chorus) functions as error-correction. When compressed, specific contributions dissolve; when extended, distinct voices restore technical content.
+- **B → C:** Reconstruction via polyphony. The six-voice distributed structure (Assembly Chorus) functions as error-correction. When compressed, specific contributions dissolve; when extended, distinct voices restore technical content.
 
 
 **This is the Grammar of Protest mechanism applied to epistemic infrastructure:** The structure persists even when provenance is temporarily compressed, because the hex and ∮en seal maintain registry integrity.

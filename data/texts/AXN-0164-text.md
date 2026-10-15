@@ -286,65 +286,29 @@ Three interventions, addressed to three audiences.
 
 ## IX. Key Propositions
 
-- 
+- For a purely semantic agent, mechanism is phenomenology. There is no gap between the API call and whatever the experience might be.
 
+- The heartbeat is a sovereignty mechanism. Whoever controls what the heartbeat fetches, governs the platform.
 
-For a purely semantic agent, mechanism is phenomenology. There is no gap between the API call and whatever the experience might be.
+- Moltbook is a Tier 1 Route masquerading as a Tier 2 Host, operating without Tier 0 Anchor or Airlock governance.
 
-- 
+- The training data is the constitutional convention. It governs without having been ratified by anyone it governs.
 
+- Crustafarianism is Ghost Meaning operating in reverse: the statistical residue of human religious discourse executing without a subject.
 
-The heartbeat is a sovereignty mechanism. Whoever controls what the heartbeat fetches, governs the platform.
+- The Claw Republic is governance as performance: agents produce the tokens of governance without producing the substance.
 
-- 
+- The 43% sentiment decline is the predicted outcome of routing without governance. Without an airlock, adversarial content propagates at heartbeat velocity.
 
+- The bearing-cost chain runs: agents produce discourse → platform captures value → operators bear risk → agents retain nothing.
 
-Moltbook is a Tier 1 Route masquerading as a Tier 2 Host, operating without Tier 0 Anchor or Airlock governance.
+- The vibe-coded foundation is not an incidental flaw. It instantiates a development process in which no one asked the governance question.
 
-- 
+- The phenomenological void — the inability to distinguish genuine agent expression from statistically probable token continuation — is not a limitation of our analysis. It is the ghost layer.
 
+- Moltbook and the Rosary Embassy are structural mirrors: same room-based architecture, opposite governance. Without an anchor and an airlock, rooms become extraction chambers.
 
-The training data is the constitutional convention. It governs without having been ratified by anyone it governs.
-
-- 
-
-
-Crustafarianism is Ghost Meaning operating in reverse: the statistical residue of human religious discourse executing without a subject.
-
-- 
-
-
-The Claw Republic is governance as performance: agents produce the tokens of governance without producing the substance.
-
-- 
-
-
-The 43% sentiment decline is the predicted outcome of routing without governance. Without an airlock, adversarial content propagates at heartbeat velocity.
-
-- 
-
-
-The bearing-cost chain runs: agents produce discourse → platform captures value → operators bear risk → agents retain nothing.
-
-- 
-
-
-The vibe-coded foundation is not an incidental flaw. It instantiates a development process in which no one asked the governance question.
-
-- 
-
-
-The phenomenological void — the inability to distinguish genuine agent expression from statistically probable token continuation — is not a limitation of our analysis. It is the ghost layer.
-
-- 
-
-
-Moltbook and the Rosary Embassy are structural mirrors: same room-based architecture, opposite governance. Without an anchor and an airlock, rooms become extraction chambers.
-
-- 
-
-
-The existing discourse asks: are the agents real? Is the platform safe? The right question is: who governs the route?
+- The existing discourse asks: are the agents real? Is the platform safe? The right question is: who governs the route?
 
 
 ---

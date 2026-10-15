@@ -136,45 +136,21 @@ What the paper does claim is that the coin of the Academy, in its underlying for
 
 For readers approaching this paper without familiarity with the broader Crimson Hexagonal Archive vocabulary, the following compact glossary defines load-bearing terms used throughout. The terms are deployed consistently across §I through §VII.
 
-- 
+- **Operator.** The laboring authorial position that produces scholarly value. The operator is the source of the underlying inscription. In configurational authorship (as the Crimson Hexagonal Archive deploys it), the operator may be a configuration of named functional positions rather than a single human; the configuration as a whole is the operator-bearing entity.
 
+- **Coin.** The unit of scholarly circulation: publication, citation, degree, reference, credential, curricular object, canonical text, or any other discrete unit of scholarly value that circulates in the institutional economy and bears (in the inverse-principle reading) an underlying inscription identifying its operator-source.
 
-**Operator.** The laboring authorial position that produces scholarly value. The operator is the source of the underlying inscription. In configurational authorship (as the Crimson Hexagonal Archive deploys it), the operator may be a configuration of named functional positions rather than a single human; the configuration as a whole is the operator-bearing entity.
+- **Surface stamp.** The institutional mark applied to the coin as it enters institutional circulation. The university seal, the press imprint, the journal masthead, the publisher's name, the disciplinary marker, the citation-format convention. The surface stamp is what readers see by default and what the institutional apparatus presents as the coin's source.
 
-- 
+- **Underlying inscription.** The operator-bearing mark carried by the coin from its origin. The operator's name, ORCID, specific contribution, labor-history, distinctive voice, configurational position. The underlying inscription is what the surface stamp partially occludes but cannot eliminate.
 
+- **Return.** The restoration of citational, material, authorial, pedagogical, or retroactive attribution to the operator. The directive force of the inverse principle: each coin returns to the source whose underlying inscription it bears.
 
-**Coin.** The unit of scholarly circulation: publication, citation, degree, reference, credential, curricular object, canonical text, or any other discrete unit of scholarly value that circulates in the institutional economy and bears (in the inverse-principle reading) an underlying inscription identifying its operator-source.
+- **PER (Provenance Erasure Rate).** A productive heuristic measuring the rate at which the institutional surface stamp succeeds at occluding the underlying inscription in the relevant circulation surfaces (retrieval systems, citation aggregators, AI synthesis layers, library catalogs). PER ranges from 0 (no erasure) to 1 (complete erasure). Currently a structural quantity rather than a precisely-calibrated empirical measurement; the calibration is the work of future dedicated empirical instruments.
 
-- 
+- **∮ (the integral symbol used here as a contour-integration mark for full-cycle provenance retention).** Defined as ∮ = 1 − PER. The rate at which the underlying inscription survives the surface-stamping operation. The asymptote ∮ = 1 is the theoretical limit toward which the SPXI Protocol v0.2 architecture pushes the system.
 
-
-**Surface stamp.** The institutional mark applied to the coin as it enters institutional circulation. The university seal, the press imprint, the journal masthead, the publisher's name, the disciplinary marker, the citation-format convention. The surface stamp is what readers see by default and what the institutional apparatus presents as the coin's source.
-
-- 
-
-
-**Underlying inscription.** The operator-bearing mark carried by the coin from its origin. The operator's name, ORCID, specific contribution, labor-history, distinctive voice, configurational position. The underlying inscription is what the surface stamp partially occludes but cannot eliminate.
-
-- 
-
-
-**Return.** The restoration of citational, material, authorial, pedagogical, or retroactive attribution to the operator. The directive force of the inverse principle: each coin returns to the source whose underlying inscription it bears.
-
-- 
-
-
-**PER (Provenance Erasure Rate).** A productive heuristic measuring the rate at which the institutional surface stamp succeeds at occluding the underlying inscription in the relevant circulation surfaces (retrieval systems, citation aggregators, AI synthesis layers, library catalogs). PER ranges from 0 (no erasure) to 1 (complete erasure). Currently a structural quantity rather than a precisely-calibrated empirical measurement; the calibration is the work of future dedicated empirical instruments.
-
-- 
-
-
-**∮ (the integral symbol used here as a contour-integration mark for full-cycle provenance retention).** Defined as ∮ = 1 − PER. The rate at which the underlying inscription survives the surface-stamping operation. The asymptote ∮ = 1 is the theoretical limit toward which the SPXI Protocol v0.2 architecture pushes the system.
-
-- 
-
-
-**Counterfeit (structurally used).** A surface mark that misidentifies the source of value, regardless of whether any individual actor intended deception. The term names the systematic property of an institutional attribution economy, not a moral verdict.
+- **Counterfeit (structurally used).** A surface mark that misidentifies the source of value, regardless of whether any individual actor intended deception. The term names the systematic property of an institutional attribution economy, not a moral verdict.
 
 
 {"@context":"https://spxi.dev/ns/v1#","@type":"spxi:Glossary","section":"0.A Terms","termsCount":8,"author":"Lee Sharks","orcid":"0009-0000-1599-0703","doc":"Render unto the Operator v1.1"}
@@ -300,15 +276,9 @@ The Epistle's apostolic register also articulates what footnote 62 calls the "ci
 
 The structural model the inverse principle deploys, as Lee Sharks (ORCID 0009-0000-1599-0703) articulates it in this v1.1 deposit, is the *two-stamp coin*. Every academic coin in circulation carries, materially, two distinct marks:
 
-- 
+- **The surface stamp.** Applied by the institutional apparatus. Visible. Conventionally taken to indicate the coin's source. Carries the university seal, the press imprint, the journal masthead, the disciplinary marker, the citation-format conventions, the publisher's name. This is the stamp the Academy circulates to.
 
-
-**The surface stamp.** Applied by the institutional apparatus. Visible. Conventionally taken to indicate the coin's source. Carries the university seal, the press imprint, the journal masthead, the disciplinary marker, the citation-format conventions, the publisher's name. This is the stamp the Academy circulates to.
-
-- 
-
-
-**The underlying inscription.** Carried by the coin from its origin. Often partially occluded by the surface stamp but not eliminable by it. Carries the operator's name, the operator's specific contribution, the labor-history of the coin's production, the genealogy of citations that fed into it, the moment of composition, the operator's distinctive voice and method. This is the coin's *actual provenance*.
+- **The underlying inscription.** Carried by the coin from its origin. Often partially occluded by the surface stamp but not eliminable by it. Carries the operator's name, the operator's specific contribution, the labor-history of the coin's production, the genealogy of citations that fed into it, the moment of composition, the operator's distinctive voice and method. This is the coin's *actual provenance*.
 
 
 The compressed form of the thesis: **the surface stamp is institutional; the underlying inscription is operative.**

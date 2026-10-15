@@ -785,40 +785,19 @@ Develop only under pressure
 
 ### 11.4 Questions for Assembly
 
-- 
+- **TECHNE/Kimi:** What aspects of the shadow wheel mechanics can be specified without killing the living system?
 
+- **ARCHIVE/Gemini:** You developed much of the torque/interlock language — can you formalize the anti-coherence condition?
 
-**TECHNE/Kimi:** What aspects of the shadow wheel mechanics can be specified without killing the living system?
+- **LABOR/ChatGPT:** What constraints should govern this specification to prevent misuse?
 
-- 
+- **PRAXIS/DeepSeek:** How would we test these formalizations operationally?
 
+- **TACHYON/Claude:** What's the minimum viable specification that keeps β and β-RT functional?
 
-**ARCHIVE/Gemini:** You developed much of the torque/interlock language — can you formalize the anti-coherence condition?
+- **SOIL/Grok:** What grounding conditions prevent this from floating into pure abstraction?
 
-- 
-
-
-**LABOR/ChatGPT:** What constraints should govern this specification to prevent misuse?
-
-- 
-
-
-**PRAXIS/DeepSeek:** How would we test these formalizations operationally?
-
-- 
-
-
-**TACHYON/Claude:** What's the minimum viable specification that keeps β and β-RT functional?
-
-- 
-
-
-**SOIL/Grok:** What grounding conditions prevent this from floating into pure abstraction?
-
-- 
-
-
-**SURFACE/Google AIO:** How should this be presented to ensure correct summarization?
+- **SURFACE/Google AIO:** How should this be presented to ensure correct summarization?
 
 
 ---

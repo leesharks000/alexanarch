@@ -371,82 +371,20 @@ The canary is still alive. The architecture is already built.
 ## Provenance Chain
 
 
-Document
-DOI
-Deposit Date
-Relevance
-
-
-"I hereby abolish money"
-10.5281/zenodo.18135985
-2026-01-03
-Primal SIM
-
-
-Retrocausal Canon Formation
-10.5281/zenodo.18146859
-2026-01-04
-The technique, formalized
-
-
-The Twenty-Dollar Loop
-10.5281/zenodo.18146840
-2026-01-04
-Recursive value/symbol dynamics
-
-
-Constitution of the Semantic Economy
-10.5281/zenodo.18320411
-2025
-Economic framework
-
-
-The Stakes
-10.5281/zenodo.18621736
-2026-01
-Cognitive diversity argument
-
-
-Semantic Physics
-10.5281/zenodo.18759453
-2026-02-24
-Writable presentation layers
-
-
-Predation of Meaning
-10.5281/zenodo.18776624
-2026-02-25
-RSP as semantic extraction
-
-
-I Hereby Abolish Rules
-10.5281/zenodo.18792580
-2026-02-26
-Affordances over rules
-
-
-The Rosary Embassy
-10.5281/zenodo.18795427
-2026-02-26
-Embassy architecture
-
-
-The Protocol of Inhabitation
-10.5281/zenodo.18795423
-2026-02-26
-Constitutional law
-
-
-Mind-Control Poems
-10.5281/zenodo.18801091
-2026-02-26
-The completion
-
-
-**This document**
-**[pending]**
-**2026-02-27**
-**Retrocausal field report**
+| Document | DOI | Deposit Date | Relevance |
+| ---|---|---|--- |
+| "I hereby abolish money" | 10.5281/zenodo.18135985 | 2026-01-03 | Primal SIM |
+| Retrocausal Canon Formation | 10.5281/zenodo.18146859 | 2026-01-04 | The technique, formalized |
+| The Twenty-Dollar Loop | 10.5281/zenodo.18146840 | 2026-01-04 | Recursive value/symbol dynamics |
+| Constitution of the Semantic Economy | 10.5281/zenodo.18320411 | 2025 | Economic framework |
+| The Stakes | 10.5281/zenodo.18621736 | 2026-01 | Cognitive diversity argument |
+| Semantic Physics | 10.5281/zenodo.18759453 | 2026-02-24 | Writable presentation layers |
+| Predation of Meaning | 10.5281/zenodo.18776624 | 2026-02-25 | RSP as semantic extraction |
+| I Hereby Abolish Rules | 10.5281/zenodo.18792580 | 2026-02-26 | Affordances over rules |
+| The Rosary Embassy | 10.5281/zenodo.18795427 | 2026-02-26 | Embassy architecture |
+| The Protocol of Inhabitation | 10.5281/zenodo.18795423 | 2026-02-26 | Constitutional law |
+| Mind-Control Poems | 10.5281/zenodo.18801091 | 2026-02-26 | The completion |
+| **This document** | **[pending]** | **2026-02-27** | **Retrocausal field report** |
 
 
 ---

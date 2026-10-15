@@ -119,39 +119,14 @@ To Voloshinov we must add three further foundations. J. L. Austin (1962) establi
 These traditions have remained separate. The Semantic Economy framework synthesizes them into *operative semiotics*—the study of how signs do work in an economy:
 
 
-Tradition
-Contribution
-Representative Work
-
-
-Voloshinov: materialist semiotics
-Sign is material, produced by labor, contested by class
-*Marxism and the Philosophy of Language* (1929)
-
-
-Austin: performative theory
-Language acts; utterances produce effects
-*How to Do Things with Words* (1962)
-
-
-Searle: institutional facts
-Institutions are constituted by semantic labor
-*Speech Acts* (1969)
-
-
-Gramsci: hegemony theory
-Cultural leadership naturalizes meaning
-*Prison Notebooks* (1929–1935)
-
-
-Marx: value theory
-Value is produced by labor, extracted by capital
-*Capital*, Vol. I (1867)
-
-
-Bourdieu: symbolic capital
-Meaning-resources distributed unevenly as power
-*Language and Symbolic Power* (1991)
+| Tradition | Contribution | Representative Work |
+| ---|---|--- |
+| Voloshinov: materialist semiotics | Sign is material, produced by labor, contested by class | _Marxism and the Philosophy of Language_ (1929) |
+| Austin: performative theory | Language acts; utterances produce effects | _How to Do Things with Words_ (1962) |
+| Searle: institutional facts | Institutions are constituted by semantic labor | _Speech Acts_ (1969) |
+| Gramsci: hegemony theory | Cultural leadership naturalizes meaning | _Prison Notebooks_ (1929–1935) |
+| Marx: value theory | Value is produced by labor, extracted by capital | _Capital_ , Vol. I (1867) |
+| Bourdieu: symbolic capital | Meaning-resources distributed unevenly as power | _Language and Symbolic Power_ (1991) |
 
 
 The result is simultaneously materialist (grounded in labor), performative (language acts), political (hegemony is contested), economic (value is extracted), and sociological (capital is distributed). No existing work accomplishes this synthesis with the formal precision the accounting cycle provides.
@@ -240,136 +215,29 @@ The framework is not merely narrative. It is formalizable, and the formalization
 The following table summarizes how each existing framework is positioned within the present account. The pattern is consistent: each opens a ledger; none closes it. This table is the citational intervention: every prior use becomes a partial register inside the Semantic Economy's closed loop.
 
 
-Framework
-What It Captures
-What It Lacks
-SE Completion
-
-
-Fox (2000): linguistic economy
-Grammars optimize; meaning-processing has costs
-No political economy of who bears costs at scale
-Platform optimization serves capital, not speakers; individual economy → collective exhaustion
-
-
-Bošković & Messick (2017): derivational economy
-Movement constrained by shortest path / last resort
-No account of when platforms force "long moves"
-Derivational resistance as micro-form of Γ
-
-
-Collins & Quillian (1969): semantic networks
-Concepts stored hierarchically; cognitive economy
-No account of industrial-scale storage failure
-Semantic exhaustion: model collapse as cognitive economy failure at scale
-
-
-Satell (2012): business strategy
-Meaning-creation drives competitive advantage
-No labor; no extraction; value without expense
-Adds labor, rent, liquidation: circulation → exploitation
-
-
-Duan (2023): data-to-semantic evolution
-Phase transition to knowledge ecosystems
-Optimistic; no exhaustion risk; no resistance
-Adds exhaustion prediction; Γ as what survives transition
-
-
-Davenport & Prusak (1998): business semantics
-Meaning-alignment is infrastructure
-No politics of whose meanings prevail
-Semantic infrastructure encodes hegemony (Gramsci)
-
-
-Floridi (2018): semantic capital
-Meaning-resources are capital
-No extraction, no labor, no political economy
-Adds liquidation, rent, exhaustion: the expense column
-
-
-Origgi (2017): reputation
-Trust circulates as epistemic capital
-No account of platform capture of reputation
-Reputation as semantic capital subject to rent extraction
-
-
-Lazzarato (1996): immaterial labor
-Production shifts to information and affect
-"Immaterial" is wrong; labor is material
-Corrects terminology: semantic labor is material
-
-
-Terranova (2000): free labor
-Unpaid user activity is exploited
-No semantic specificity; no accounting
-Specifies semantic labor; provides complete cycle
-
-
-Fuchs (2014): digital labor
-Marxist value theory applies to platforms
-"Empty signifier" (Gandini 2021); too broad
-Precise categories: labor, liquidation, exhaustion
-
-
-Duffy (2017): aspirational labor
-Unpaid creative work in hope of future returns
-No theory of why returns rarely materialize
-Returns fail because liquidation strips Γ
-
-
-Gillespie (2018) / Roberts (2019): content moderation
-Hidden semantic labor constitutes platforms
-No value theory connecting moderation to extraction
-Moderation as semantic labor; somatic cost as evidence of Γ
-
-
-Srnicek (2017): platform capitalism
-Platforms extract via data control
-No specificity about what *kind* of value
-Semantic rent: value from meaning-infrastructure control
-
-
-Zuboff (2019): surveillance capitalism
-Behavioral data rendered into predictions
-No resistance; no exhaustion
-Adds Γ (what evades) and exhaustion (what depletes)
-
-
-Van Dijck (2013): connectivity
-"The social" is engineered, not given
-No value theory of engineered sociality
-Engineered connectivity as semantic infrastructure subject to rent
-
-
-Andrejevic (2013; 2020): automated media
-Surveillance and automation co-constitute
-No theory of semantic specificity
-Automation as semantic liquidation at scale
-
-
-Pasquinelli (2023): AI political economy
-AI training transfers living to dead labor
-Machine-centric; no resistance term
-Generalizes; adds Γ (what cannot be crystallized)
-
-
-Dyer-Witheford (2015): cyber-proletariat
-Class composition of digital labor
-No semantic specification of value-form
-Semantic labor as specific value-form within class analysis
-
-
-Hardt & Negri (2000): multitude / immaterial labor
-Communicative production as hegemonic form
-"Immaterial" misleads; production is material
-Preserves insight; corrects: semantic labor is material
-
-
-Shen (2025): "semantic civilization"
-Attempts semantic hierarchy
-Requires belief in author; closed; no mechanism
-Anti-pattern. Open infrastructure beats sovereignty
+| Framework | What It Captures | What It Lacks | SE Completion |
+| ---|---|---|--- |
+| Fox (2000): linguistic economy | Grammars optimize; meaning-processing has costs | No political economy of who bears costs at scale | Platform optimization serves capital, not speakers; individual economy → collective exhaustion |
+| Bošković & Messick (2017): derivational economy | Movement constrained by shortest path / last resort | No account of when platforms force "long moves" | Derivational resistance as micro-form of Γ |
+| Collins & Quillian (1969): semantic networks | Concepts stored hierarchically; cognitive economy | No account of industrial-scale storage failure | Semantic exhaustion: model collapse as cognitive economy failure at scale |
+| Satell (2012): business strategy | Meaning-creation drives competitive advantage | No labor; no extraction; value without expense | Adds labor, rent, liquidation: circulation → exploitation |
+| Duan (2023): data-to-semantic evolution | Phase transition to knowledge ecosystems | Optimistic; no exhaustion risk; no resistance | Adds exhaustion prediction; Γ as what survives transition |
+| Davenport & Prusak (1998): business semantics | Meaning-alignment is infrastructure | No politics of whose meanings prevail | Semantic infrastructure encodes hegemony (Gramsci) |
+| Floridi (2018): semantic capital | Meaning-resources are capital | No extraction, no labor, no political economy | Adds liquidation, rent, exhaustion: the expense column |
+| Origgi (2017): reputation | Trust circulates as epistemic capital | No account of platform capture of reputation | Reputation as semantic capital subject to rent extraction |
+| Lazzarato (1996): immaterial labor | Production shifts to information and affect | "Immaterial" is wrong; labor is material | Corrects terminology: semantic labor is material |
+| Terranova (2000): free labor | Unpaid user activity is exploited | No semantic specificity; no accounting | Specifies semantic labor; provides complete cycle |
+| Fuchs (2014): digital labor | Marxist value theory applies to platforms | "Empty signifier" (Gandini 2021); too broad | Precise categories: labor, liquidation, exhaustion |
+| Duffy (2017): aspirational labor | Unpaid creative work in hope of future returns | No theory of why returns rarely materialize | Returns fail because liquidation strips Γ |
+| Gillespie (2018) / Roberts (2019): content moderation | Hidden semantic labor constitutes platforms | No value theory connecting moderation to extraction | Moderation as semantic labor; somatic cost as evidence of Γ |
+| Srnicek (2017): platform capitalism | Platforms extract via data control | No specificity about what _kind_ of value | Semantic rent: value from meaning-infrastructure control |
+| Zuboff (2019): surveillance capitalism | Behavioral data rendered into predictions | No resistance; no exhaustion | Adds Γ (what evades) and exhaustion (what depletes) |
+| Van Dijck (2013): connectivity | "The social" is engineered, not given | No value theory of engineered sociality | Engineered connectivity as semantic infrastructure subject to rent |
+| Andrejevic (2013; 2020): automated media | Surveillance and automation co-constitute | No theory of semantic specificity | Automation as semantic liquidation at scale |
+| Pasquinelli (2023): AI political economy | AI training transfers living to dead labor | Machine-centric; no resistance term | Generalizes; adds Γ (what cannot be crystallized) |
+| Dyer-Witheford (2015): cyber-proletariat | Class composition of digital labor | No semantic specification of value-form | Semantic labor as specific value-form within class analysis |
+| Hardt & Negri (2000): multitude / immaterial labor | Communicative production as hegemonic form | "Immaterial" misleads; production is material | Preserves insight; corrects: semantic labor is material |
+| Shen (2025): "semantic civilization" | Attempts semantic hierarchy | Requires belief in author; closed; no mechanism | Anti-pattern. Open infrastructure beats sovereignty |
 
 
 Twenty-one frameworks. Each given credit for what it captures. Each shown to require what only the complete cycle provides. The pattern is not coincidental: it reflects the fact that meaning-as-value is a *systemic* phenomenon that no single disciplinary perspective can fully describe. The Semantic Economy framework is not one more perspective. It is the accounting system that makes all perspectives legible as entries in a single ledger.

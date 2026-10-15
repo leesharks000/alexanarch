@@ -251,30 +251,15 @@ The operator is not merely permitted but **required** to scan the archive for su
 
 The operator:
 
-- 
+- **Searches the archive** — via Zenodo API queries against the crimsonhexagonal community, via the canonical JSON, via known DOI cross-references — for works that are complementary, opposed, adjacent, or structurally analogous to the deposited piece.
 
+- **Selects 3–8 novel cross-links** beyond the standing relations. Each cross-link must be accompanied by a 1–2 sentence rationale explaining the connection: how the deposited piece relates to, extends, complicates, or illuminates the linked work.
 
-**Searches the archive** — via Zenodo API queries against the crimsonhexagonal community, via the canonical JSON, via known DOI cross-references — for works that are complementary, opposed, adjacent, or structurally analogous to the deposited piece.
+- **Writes these rationales into the deposit's description field** as a "Hexagonal Relations" section, so the cross-links are not just machine-readable metadata but human-readable critical argument.
 
-- 
+- **Uses appropriate Zenodo relation types:** references (engages with), isSupplementTo (extends), isDerivedFrom (transforms), cites (explicitly names).
 
-
-**Selects 3–8 novel cross-links** beyond the standing relations. Each cross-link must be accompanied by a 1–2 sentence rationale explaining the connection: how the deposited piece relates to, extends, complicates, or illuminates the linked work.
-
-- 
-
-
-**Writes these rationales into the deposit's description field** as a "Hexagonal Relations" section, so the cross-links are not just machine-readable metadata but human-readable critical argument.
-
-- 
-
-
-**Uses appropriate Zenodo relation types:** references (engages with), isSupplementTo (extends), isDerivedFrom (transforms), cites (explicitly names).
-
-- 
-
-
-**Does not limit itself to obvious connections.** If the deposited music shares a structural principle with the Three Compressions theorem, or if its harmonic movement enacts something analogous to retrocausal canon formation, or if its lyric fragments echo the Sappho transmission chain — the operator should say so. The archive rewards diagonal connections. The archive IS diagonal connections.
+- **Does not limit itself to obvious connections.** If the deposited music shares a structural principle with the Three Compressions theorem, or if its harmonic movement enacts something analogous to retrocausal canon formation, or if its lyric fragments echo the Sappho transmission chain — the operator should say so. The archive rewards diagonal connections. The archive IS diagonal connections.
 
 
 **Discovery query pattern:**

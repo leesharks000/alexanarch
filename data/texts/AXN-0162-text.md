@@ -173,45 +173,21 @@ That is the diagnostic. Not that Iran was right. Not that the conspiracy theory 
 
 ## IX. Key Propositions
 
-- 
+- The Baal effigy was not propaganda, not symbolism, and not theology. It was an **effective act**: a self-verifying declaration that created the conditions of its own confirmation.
 
+- It named a **partly documented referent** (elite abuse, institutional failure, proximity to power) through a **crude theological medium** (Baal, idolatry, 666) that foreclosed engagement with the underlying referent.
 
-The Baal effigy was not propaganda, not symbolism, and not theology. It was an **effective act**: a self-verifying declaration that created the conditions of its own confirmation.
+- The **Baal Mechanism**: within the frame the effigy installs, every available response — strike, ignore, debunk, condemn — functions as confirmation. The only defusing response (address the documented referent directly) is structurally near-impossible.
 
-- 
+- The US-Israeli strikes did not answer the effigy. They **completed** it — not as hidden motive, but as semiotic confirmation. The strikes entered the interpretive field the effigy had installed, and within that field they could only read as proof.
 
+- The **bearing-cost** of the adversary's violence was transferred to the adversary. Iran burned a puppet. The United States killed a head of state.
 
-It named a **partly documented referent** (elite abuse, institutional failure, proximity to power) through a **crude theological medium** (Baal, idolatry, 666) that foreclosed engagement with the underlying referent.
+- "Conspiracy theory" is now a **ghost category** — persisting by institutional habit after the Epstein files partially destroyed its conditions. The effigy operates in the gap.
 
-- 
+- The Baal Mechanism is **isomorphic** to the "all lawful purposes" primitive (EA-DIAGNOSTIC-03). Both are effective acts that foreclose every response except confirmation of the declaration.
 
-
-The **Baal Mechanism**: within the frame the effigy installs, every available response — strike, ignore, debunk, condemn — functions as confirmation. The only defusing response (address the documented referent directly) is structurally near-impossible.
-
-- 
-
-
-The US-Israeli strikes did not answer the effigy. They **completed** it — not as hidden motive, but as semiotic confirmation. The strikes entered the interpretive field the effigy had installed, and within that field they could only read as proof.
-
-- 
-
-
-The **bearing-cost** of the adversary's violence was transferred to the adversary. Iran burned a puppet. The United States killed a head of state.
-
-- 
-
-
-"Conspiracy theory" is now a **ghost category** — persisting by institutional habit after the Epstein files partially destroyed its conditions. The effigy operates in the gap.
-
-- 
-
-
-The Baal Mechanism is **isomorphic** to the "all lawful purposes" primitive (EA-DIAGNOSTIC-03). Both are effective acts that foreclose every response except confirmation of the declaration.
-
-- 
-
-
-The violence was always coming. The effigy did not cause it. The effigy altered the **interpretive field** into which the violence arrived — making it legible as confirmation. Thinkability precedes actuality. Legibility is a form of proof.
+- The violence was always coming. The effigy did not cause it. The effigy altered the **interpretive field** into which the violence arrived — making it legible as confirmation. Thinkability precedes actuality. Legibility is a form of proof.
 
 
 ---

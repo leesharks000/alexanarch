@@ -264,57 +264,23 @@ To ground the formalism, we trace a concrete example through three scales of the
 **Scale s=1 (sentence):** Unit extraction yields 7 sentence units {S1–S7}. Within context window W(1) = 5:
 
 
-Pair
-Relationship labels
-Extraction basis
-
-
-S1 → S2
-seq=1, caus=1
-Adjacent; "this warming" = causal connective
-
-
-S2 → S3
-seq=1, contr=1
-Adjacent; "however" = contrastive connective
-
-
-S3 → S4
-seq=1, elab=1
-Adjacent; S4 specifies mechanism for S3's claim
-
-
-S1 → S4
-caus=1, ref=1
-"ocean circulation" refers to "ocean temperatures"; causal chain
-
-
-S5 → S6
-seq=1, caus=1
-Adjacent; "at this rate" = consequential
-
-
-S6 → S7
-seq=1, elab=1
-Adjacent; S7 exemplifies S6's claim
-
-
-S5 → S1
-ref=1
-S5 elaborates the quantitative basis of S1's claim
+| Pair | Relationship labels | Extraction basis |
+| ---|---|--- |
+| S1 → S2 | seq=1, caus=1 | Adjacent; "this warming" = causal connective |
+| S2 → S3 | seq=1, contr=1 | Adjacent; "however" = contrastive connective |
+| S3 → S4 | seq=1, elab=1 | Adjacent; S4 specifies mechanism for S3's claim |
+| S1 → S4 | caus=1, ref=1 | "ocean circulation" refers to "ocean temperatures"; causal chain |
+| S5 → S6 | seq=1, caus=1 | Adjacent; "at this rate" = consequential |
+| S6 → S7 | seq=1, elab=1 | Adjacent; S7 exemplifies S6's claim |
+| S5 → S1 | ref=1 | S5 elaborates the quantitative basis of S1's claim |
 
 
 **Scale s=2 (paragraph):** Unit extraction yields 2 paragraph units {P1 = S1–S4, P2 = S5–S7}.
 
 
-Pair
-Relationship labels
-Extraction basis
-
-
-P1 → P2
-seq=1, elab=1
-P2 provides quantitative detail for P1's claims
+| Pair | Relationship labels | Extraction basis |
+| ---|---|--- |
+| P1 → P2 | seq=1, elab=1 | P2 provides quantitative detail for P1's claims |
 
 
 Coherence score: Γ(P1, P2) = MLP₂(lex=0.35, sem=0.82, log=0.71) = 0.78 (strong coherence; shared topic, high semantic similarity).
@@ -630,44 +596,15 @@ Total pairs: ~378M, dominated by s=1. This is tractable on modern GPU clusters �
 ### 8.4 Ablation Studies
 
 
-Ablation
-What is removed
-What it tests
-
-
-A1: No version-differential
-Remove s=6 and L_vdt
-Is revision learning necessary for coherence/collapse benefits?
-
-
-A2: No cross-scale consistency
-Remove L_consist
-Is multi-scale coordination necessary, or do independent models suffice?
-
-
-A3: Single-scale relational
-Only s=1 (sentence), no other scales
-Is multi-scale necessary, or is sentence-level sufficient?
-
-
-A4: Token-generator only
-Remove Architecture 2 entirely
-Baseline: does the relational component add value?
-
-
-A5: Categorical τ
-Use softmax instead of multi-label for τ
-Does multi-label improve revision modeling?
-
-
-A6: No coherence gating
-Remove inference-time coherence gating
-Is the inference integration necessary, or does training alone suffice?
-
-
-A7: Label noise robustness
-Add 10%, 20%, 30% random label noise
-How sensitive is the architecture to annotation quality?
+| Ablation | What is removed | What it tests |
+| ---|---|--- |
+| A1: No version-differential | Remove s=6 and L_vdt | Is revision learning necessary for coherence/collapse benefits? |
+| A2: No cross-scale consistency | Remove L_consist | Is multi-scale coordination necessary, or do independent models suffice? |
+| A3: Single-scale relational | Only s=1 (sentence), no other scales | Is multi-scale necessary, or is sentence-level sufficient? |
+| A4: Token-generator only | Remove Architecture 2 entirely | Baseline: does the relational component add value? |
+| A5: Categorical τ | Use softmax instead of multi-label for τ | Does multi-label improve revision modeling? |
+| A6: No coherence gating | Remove inference-time coherence gating | Is the inference integration necessary, or does training alone suffice? |
+| A7: Label noise robustness | Add 10%, 20%, 30% random label noise | How sensitive is the architecture to annotation quality? |
 
 
 ### 8.5 Scaling Behavior Investigation
@@ -841,189 +778,47 @@ Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 ### v2.1 → v2.2 (Perfective)
 
 
-Change
-Section
-Motivation
-
-
-Abstract reordered: architecture first, collapse hypothesis last
-Abstract
-Hierarchy of emphasis (DeepSeek)
-
-
-Default deployment mode named explicitly
-Abstract, Key Contributions
-"What is the canonical near-term mode?" (DeepSeek)
-
-
-Γ MLP pre-trained on human-annotated seed set before joint training
-§3.5
-Circular dependency risk (Gemini)
-
-
-Teacher model data leakage prevention + API cost noted
-§3.6
-Test split contamination risk (Gemini)
-
-
-s=5 window clarified as k-NN graph with ANN indexing
-§3.3
-Ambiguity in "nearest documents" (Gemini)
-
-
-"Fractal" clarified as training principle, not parameter identity
-§4.1
-Pre-empt "just multi-scale ensemble" objection (Gemini, DeepSeek)
-
-
-ε floor justified: why keep bad revisions at low weight
-§5.2
-Ad hoc hyperparameter (Gemini)
-
-
-Relationship embedding and thematic vector sources specified
-§6.2
-Undefined terms (Gemini)
-
-
-Binary falsification replaced with delay factor hypothesis
-§8.1
-Binary too strict/too loose (Gemini)
-
-
-Computational analysis tempered: preprocessing costs, sync bottleneck, proof-of-concept target
-§7.1
-"Too optimistic" (DeepSeek)
-
-
-Conclusion reordered: architecture → version-differential → inference → collapse
-§11
-Hierarchy of emphasis (DeepSeek)
+| Change | Section | Motivation |
+| ---|---|--- |
+| Abstract reordered: architecture first, collapse hypothesis last | Abstract | Hierarchy of emphasis (DeepSeek) |
+| Default deployment mode named explicitly | Abstract, Key Contributions | "What is the canonical near-term mode?" (DeepSeek) |
+| Γ MLP pre-trained on human-annotated seed set before joint training | §3.5 | Circular dependency risk (Gemini) |
+| Teacher model data leakage prevention + API cost noted | §3.6 | Test split contamination risk (Gemini) |
+| s=5 window clarified as k-NN graph with ANN indexing | §3.3 | Ambiguity in "nearest documents" (Gemini) |
+| "Fractal" clarified as training principle, not parameter identity | §4.1 | Pre-empt "just multi-scale ensemble" objection (Gemini, DeepSeek) |
+| ε floor justified: why keep bad revisions at low weight | §5.2 | Ad hoc hyperparameter (Gemini) |
+| Relationship embedding and thematic vector sources specified | §6.2 | Undefined terms (Gemini) |
+| Binary falsification replaced with delay factor hypothesis | §8.1 | Binary too strict/too loose (Gemini) |
+| Computational analysis tempered: preprocessing costs, sync bottleneck, proof-of-concept target | §7.1 | "Too optimistic" (DeepSeek) |
+| Conclusion reordered: architecture → version-differential → inference → collapse | §11 | Hierarchy of emphasis (DeepSeek) |
 
 
 ### v2.0 → v2.1
 
 
-Change
-Section
-Motivation
-
-
-Subtitle revised from "Infinite Scalability" to "Scale-Parameterized Relational Training"
-Title
-Overclaim (all 4 reviewers)
-
-
-Collapse claim downgraded from "prevention by design" to "falsifiable hypothesis"
-Abstract, §1.2
-Overclaim: Architecture 1 still uses token CE (ChatGPT, DeepSeek)
-
-
-s=0 (token) removed from relational architecture
-§3.1
-Tokens are not semantic units (ChatGPT, DeepSeek)
-
-
-Operational unit extraction pipeline added
-§3.2
-"φₛ too abstract" (DeepSeek)
-
-
-Operational relationship type definitions with extraction criteria
-§3.4
-"No decision boundary" (ChatGPT)
-
-
-Coherence metric Γ uses learned MLP, not fixed weights
-§3.5
-"α,β,γ underdefined" (ChatGPT)
-
-
-Automated relationship extraction pipeline (3-stage bootstrap)
-§3.6
-"Annotation bottleneck" (all 4 reviewers)
-
-
-Worked toy example added
-§3.7
-"Add concrete example" (DeepSeek)
-
-
-Multi-label binary τ, not categorical
-§3.3, §5.1
-"Operations not mutually exclusive" (ChatGPT)
-
-
-Sliding window W(s) restricts pairs to O(n·W)
-§3.3, §7.1
-"O(n²) unaddressed" (ChatGPT)
-
-
-"Fractal" clarified as principle, not weight sharing
-§4.1
-"Not truly fractal" (ChatGPT)
-
-
-Inference architecture added (skeleton, gating, reranking, revision scoring)
-§4.4
-"No inference story" (DeepSeek)
-
-
-ΔΓ coherence reward for version-differential training
-§5.2
-"Revision direction matters" (Gemini)
-
-
-Noisy revision handling
-§5.4
-"Revisions can worsen text" (Gemini, DeepSeek)
-
-
-Bidirectional cross-scale consistency with vector alignment
-§6.2–6.3
-"Monotonicity flaw" (Gemini); "One-way" (ChatGPT)
-
-
-Training regime (independent + consistency phases)
-§6.4
-"Cross-scale training underspecified" (DeepSeek)
-
-
-Concrete pair counts and complexity analysis
-§7.1
-"Too optimistic" (DeepSeek)
-
-
-Explicit baselines, success criteria, falsification criteria
-§8.1
-"What does success mean?" (DeepSeek)
-
-
-Ablation table
-§8.4
-"Add ablations" (DeepSeek)
-
-
-Discourse parsing and coherence modeling in related work
-§2.4–2.5
-"Discourse literature missing" (DeepSeek)
-
-
-Revision modeling literature (Faigley & Witte, IteraTeR)
-§2.6
-"Prior revision work unacknowledged" (DeepSeek)
-
-
-Operative Semiotics reframed as "Theoretical Foundations"
-§9
-"Risk of philosophical baggage" (Gemini, DeepSeek)
-
-
-Weight sharing as research direction, not default
-§10.3
-Honest about current architecture (ChatGPT)
-
-
-Fully relational generation as long-term direction
-§10.4
-Honest about collapse limits (ChatGPT)
+| Change | Section | Motivation |
+| ---|---|--- |
+| Subtitle revised from "Infinite Scalability" to "Scale-Parameterized Relational Training" | Title | Overclaim (all 4 reviewers) |
+| Collapse claim downgraded from "prevention by design" to "falsifiable hypothesis" | Abstract, §1.2 | Overclaim: Architecture 1 still uses token CE (ChatGPT, DeepSeek) |
+| s=0 (token) removed from relational architecture | §3.1 | Tokens are not semantic units (ChatGPT, DeepSeek) |
+| Operational unit extraction pipeline added | §3.2 | "φₛ too abstract" (DeepSeek) |
+| Operational relationship type definitions with extraction criteria | §3.4 | "No decision boundary" (ChatGPT) |
+| Coherence metric Γ uses learned MLP, not fixed weights | §3.5 | "α,β,γ underdefined" (ChatGPT) |
+| Automated relationship extraction pipeline (3-stage bootstrap) | §3.6 | "Annotation bottleneck" (all 4 reviewers) |
+| Worked toy example added | §3.7 | "Add concrete example" (DeepSeek) |
+| Multi-label binary τ, not categorical | §3.3, §5.1 | "Operations not mutually exclusive" (ChatGPT) |
+| Sliding window W(s) restricts pairs to O(n·W) | §3.3, §7.1 | "O(n²) unaddressed" (ChatGPT) |
+| "Fractal" clarified as principle, not weight sharing | §4.1 | "Not truly fractal" (ChatGPT) |
+| Inference architecture added (skeleton, gating, reranking, revision scoring) | §4.4 | "No inference story" (DeepSeek) |
+| ΔΓ coherence reward for version-differential training | §5.2 | "Revision direction matters" (Gemini) |
+| Noisy revision handling | §5.4 | "Revisions can worsen text" (Gemini, DeepSeek) |
+| Bidirectional cross-scale consistency with vector alignment | §6.2–6.3 | "Monotonicity flaw" (Gemini); "One-way" (ChatGPT) |
+| Training regime (independent + consistency phases) | §6.4 | "Cross-scale training underspecified" (DeepSeek) |
+| Concrete pair counts and complexity analysis | §7.1 | "Too optimistic" (DeepSeek) |
+| Explicit baselines, success criteria, falsification criteria | §8.1 | "What does success mean?" (DeepSeek) |
+| Ablation table | §8.4 | "Add ablations" (DeepSeek) |
+| Discourse parsing and coherence modeling in related work | §2.4–2.5 | "Discourse literature missing" (DeepSeek) |
+| Revision modeling literature (Faigley & Witte, IteraTeR) | §2.6 | "Prior revision work unacknowledged" (DeepSeek) |
+| Operative Semiotics reframed as "Theoretical Foundations" | §9 | "Risk of philosophical baggage" (Gemini, DeepSeek) |
+| Weight sharing as research direction, not default | §10.3 | Honest about current architecture (ChatGPT) |
+| Fully relational generation as long-term direction | §10.4 | Honest about collapse limits (ChatGPT) |

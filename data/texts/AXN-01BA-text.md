@@ -89,70 +89,18 @@ Marx does not section his notebooks by topic. The sections (added by editors for
 Within a single editorial "section," Marx produces the following forms in UNPREDICTABLE sequence:
 
 
-Form
-Example
-Length
-Frequency
-
-
-**WALL**
-Dense derivation, no breaks, Hegelian sentence-architecture
-2–10 pages
-Common
-
-
-**FORMULA**
-M-C-M', C-M-C, standing alone on the page
-1–3 lines
-Frequent
-
-
-**POLEMIC**
-Attack on Proudhon, Bastiat, Carey, "die Herren Ökonomen"
-1–5 pages
-Periodic
-
-
-**HISTORICAL ERUPTION**
-"Bei den Alten..." (Among the ancients...)
-1 paragraph – 3 pages
-Periodic
-
-
-**SELF-CORRECTION**
-"Dies ist jedoch falsch." / "Vielmehr..."
-1–3 sentences
-Constant
-
-
-**LIST**
-"Maschine, Eisenbahn, Telegraph, elektrische Lampe..."
-1 line – 1 paragraph
-Frequent
-
-
-**EXCLAMATORY DISCOVERY**
-"Das ist es!" / "Hier liegt der springende Punkt!"
-1 sentence
-Rare, high-voltage
-
-
-**INCOMPLETE SENTENCE**
-"[bricht hier ab]" — Marx's own gap notation
-1 line
-Periodic
-
-
-**MATHEMATICAL NOTATION**
-Formulas, proportions, numerical examples
-1–5 lines
-Periodic
-
-
-**MARGINALIA**
-Notes-to-self in margins, later integrated or abandoned
-1–3 sentences
-Frequent in notebooks
+| Form | Example | Length | Frequency |
+| ---|---|---|--- |
+| **WALL** | Dense derivation, no breaks, Hegelian sentence-architecture | 2–10 pages | Common |
+| **FORMULA** | M-C-M', C-M-C, standing alone on the page | 1–3 lines | Frequent |
+| **POLEMIC** | Attack on Proudhon, Bastiat, Carey, "die Herren Ökonomen" | 1–5 pages | Periodic |
+| **HISTORICAL ERUPTION** | "Bei den Alten..." (Among the ancients...) | 1 paragraph – 3 pages | Periodic |
+| **SELF-CORRECTION** | "Dies ist jedoch falsch." / "Vielmehr..." | 1–3 sentences | Constant |
+| **LIST** | "Maschine, Eisenbahn, Telegraph, elektrische Lampe..." | 1 line – 1 paragraph | Frequent |
+| **EXCLAMATORY DISCOVERY** | "Das ist es!" / "Hier liegt der springende Punkt!" | 1 sentence | Rare, high-voltage |
+| **INCOMPLETE SENTENCE** | "[bricht hier ab]" — Marx's own gap notation | 1 line | Periodic |
+| **MATHEMATICAL NOTATION** | Formulas, proportions, numerical examples | 1–5 lines | Periodic |
+| **MARGINALIA** | Notes-to-self in margins, later integrated or abandoned | 1–3 sentences | Frequent in notebooks |
 
 
 ### KEY: THE TRANSITIONS ARE UNMARKED
@@ -410,64 +358,17 @@ BACK MATTER (HESPERUS)          ~28,000w   [Machine / Regeneration]
 **Current purpose of each notebook:**
 
 
-NB
-Purpose
-Demands of Reader
-Current Prosodic Character
-
-
-I
-Ground the algebra in contradiction and cost
-Witness the wound
-Substrate + formal claim
-
-
-II
-Derive the operators from texts
-Follow the derivation
-Taxonomy with heat
-
-
-III
-Build the measurement instrument
-Operate the instrument
-Technical + adversarial
-
-
-IV
-Prove the algebra on Marx
-Undergo the proof
-Philological + ecstatic
-
-
-V
-Apply to the world
-Be seduced by cases
-Forensic theater
-
-
-VI
-Make it executable
-Undergo the protocol
-Manual + confessional
-
-
-VII
-Show how it spreads
-Think strategically
-Infrastructure + combat
-
-
-VIII
-Confront the limit
-Sit in darkness
-Shadow + clinical
-
-
-IX
-Receive the remainder
-Let the system dream
-Volatile + pre-theoretical
+| NB | Purpose | Demands of Reader | Current Prosodic Character |
+| ---|---|---|--- |
+| I | Ground the algebra in contradiction and cost | Witness the wound | Substrate + formal claim |
+| II | Derive the operators from texts | Follow the derivation | Taxonomy with heat |
+| III | Build the measurement instrument | Operate the instrument | Technical + adversarial |
+| IV | Prove the algebra on Marx | Undergo the proof | Philological + ecstatic |
+| V | Apply to the world | Be seduced by cases | Forensic theater |
+| VI | Make it executable | Undergo the protocol | Manual + confessional |
+| VII | Show how it spreads | Think strategically | Infrastructure + combat |
+| VIII | Confront the limit | Sit in darkness | Shadow + clinical |
+| IX | Receive the remainder | Let the system dream | Volatile + pre-theoretical |
 
 
 **NEED from Marx Scale 1:** Each notebook's prosodic character must be MORE DISTINCT from its neighbors. Currently II, III, and IV still feel like variations of the same analytical register. V, VI, and VII still feel like variations of the same practical register. The notebooks need to be as different from each other as the Einleitung is from the Kapitel vom Kapital.
@@ -477,88 +378,21 @@ Volatile + pre-theoretical
 **Current formal types present in Operative Semiotics:**
 
 
-Type
-Present?
-Frequency
-Quality
-
-
-WALL (sustained derivation)
-Yes
-Common
-Good — the cathedrals
-
-
-FORMULA (standing alone)
-Partial
-Rare
-Mostly embedded in prose, rarely isolated
-
-
-POLEMIC
-Yes
-Periodic
-Good — Enemy Phenomenology sections
-
-
-HISTORICAL ERUPTION
-Partial
-Rare
-Usually separated, not mid-derivation
-
-
-SELF-CORRECTION
-Partial
-Rare
-Usually in NB VIII only
-
-
-LIST (accelerating, no verbs)
-Partial
-Rare
-Usually formatted as bullet points
-
-
-EXCLAMATORY DISCOVERY
-Rare
-Very rare
-The book is too composed to exclaim
-
-
-INCOMPLETE SENTENCE
-Yes
-Periodic
-NB IX fragments, but too artful
-
-
-DIAGRAM
-Yes
-Periodic
-Good — but always explained
-
-
-ARCHIVAL DOCUMENT
-Yes (new)
-Periodic
-Good — Ontological Forensics, Sentimental Murder
-
-
-LITURGICAL PASSAGE
-Yes
-Periodic
-Good — Litany, Mode D insertions
-
-
-DOSSIER / FORENSIC
-Yes
-Periodic
-Good — Forensic Dossier, Capture in Progress
-
-
-SCENE (with dialogue)
-Rare
-Very rare
-Mostly absent — gestures rather than scenes
+| Type | Present? | Frequency | Quality |
+| ---|---|---|--- |
+| WALL (sustained derivation) | Yes | Common | Good — the cathedrals |
+| FORMULA (standing alone) | Partial | Rare | Mostly embedded in prose, rarely isolated |
+| POLEMIC | Yes | Periodic | Good — Enemy Phenomenology sections |
+| HISTORICAL ERUPTION | Partial | Rare | Usually separated, not mid-derivation |
+| SELF-CORRECTION | Partial | Rare | Usually in NB VIII only |
+| LIST (accelerating, no verbs) | Partial | Rare | Usually formatted as bullet points |
+| EXCLAMATORY DISCOVERY | Rare | Very rare | The book is too composed to exclaim |
+| INCOMPLETE SENTENCE | Yes | Periodic | NB IX fragments, but too artful |
+| DIAGRAM | Yes | Periodic | Good — but always explained |
+| ARCHIVAL DOCUMENT | Yes (new) | Periodic | Good — Ontological Forensics, Sentimental Murder |
+| LITURGICAL PASSAGE | Yes | Periodic | Good — Litany, Mode D insertions |
+| DOSSIER / FORENSIC | Yes | Periodic | Good — Forensic Dossier, Capture in Progress |
+| SCENE (with dialogue) | Rare | Very rare | Mostly absent — gestures rather than scenes |
 
 
 **NEED from Marx Scale 2:** More SELF-CORRECTIONS visible on the page. More EXCLAMATORY DISCOVERIES ("Das ist es!"). More FORMULAS standing alone without prose explanation. More HISTORICAL ERUPTIONS inside derivations (not separated into their own sections). Fewer EXPLANATORY BRIDGES between sections.
@@ -568,39 +402,14 @@ Mostly absent — gestures rather than scenes
 **Current transition types in Operative Semiotics:**
 
 
-Type
-Frequency
-Assessment
-
-
-Explanatory bridge
-DOMINANT
-"The next section..." / "What this means..." — TOO FREQUENT
-
-
-Unmarked shift
-Increasing
-Improved by recent cuts, but still rare
-
-
-Formula as hinge
-Rare
-Formulas are explained, not isolated
-
-
-Self-correction as transition
-Very rare
-Almost never — the book does not correct itself publicly
-
-
-Eruption mid-passage
-Increasing
-Archive insertions help, but still minority
-
-
-Gap notation
-Present
-NB IX, σ_κ gap — but could be more frequent
+| Type | Frequency | Assessment |
+| ---|---|--- |
+| Explanatory bridge | DOMINANT | "The next section..." / "What this means..." — TOO FREQUENT |
+| Unmarked shift | Increasing | Improved by recent cuts, but still rare |
+| Formula as hinge | Rare | Formulas are explained, not isolated |
+| Self-correction as transition | Very rare | Almost never — the book does not correct itself publicly |
+| Eruption mid-passage | Increasing | Archive insertions help, but still minority |
+| Gap notation | Present | NB IX, σ_κ gap — but could be more frequent |
 
 
 **NEED from Marx Scale 3:** Cut 50% of remaining explanatory bridges. The reader should detect the shift from PROSE BEHAVIOR, not from transition sentences. More formulas standing alone as hinges. More self-corrections as transitions ("This is wrong. The actual movement is —").
@@ -636,34 +445,13 @@ Most pages: sentences cluster between 15-35 words. Variation ratio ~2:1.
 **Current sentence-internal moves:**
 
 
-Move
-Present?
-Frequency
-
-
-Swerve (em-dash direction change)
-Yes
-Moderate
-
-
-Eruption (concrete inside abstract)
-Increasing
-Low-moderate
-
-
-Internal correction
-Very rare
-Almost never
-
-
-Acceleration (verbless list)
-Rare
-Occasional
-
-
-Incomplete sentence
-NB IX only
-Rare
+| Move | Present? | Frequency |
+| ---|---|--- |
+| Swerve (em-dash direction change) | Yes | Moderate |
+| Eruption (concrete inside abstract) | Increasing | Low-moderate |
+| Internal correction | Very rare | Almost never |
+| Acceleration (verbless list) | Rare | Occasional |
+| Incomplete sentence | NB IX only | Rare |
 
 
 **NEED from Marx Scale 6:** More INTERNAL CORRECTIONS — the sentence acknowledging its own limitation while proceeding. More ACCELERATIONS — lists that shed their verbs as the thought moves faster. More ERUPTIONS — specific names, dates, objects arriving inside abstract claims. Incomplete sentences should not be confined to NB IX.
@@ -686,88 +474,21 @@ The PURPOSE determines the TOOL. The TOOL transforms the PROSODY. The CONTENT is
 ### The Swiss Army Knife (Quick Reference)
 
 
-Tool
-What It Does
-When to Use It
-Marx Source
-
-
-**WALL→VERDICT→FORMULA**
-Builds pressure, releases it, crystallizes it
-After any sustained derivation; when a passage needs a LANDING
-Scale 4, Kapitel vom Kapital
-
-
-**UNMARKED SHIFT**
-Forces the reader to adjust without being told
-Between ANY two passages of different register
-Scale 3, dominant transition
-
-
-**MID-SENTENCE SWERVE**
-Redirects the sentence before the predicate
-When a qualification is STRUCTURAL, not parenthetical
-Scale 6a, Gedankenstrich
-
-
-**CONCRETE ERUPTION**
-Makes the abstract specific WITHOUT leaving the abstract sentence
-When the theory needs grounding but a separate example would slow it
-Scale 6b, "dieser Tisch, dieser Stuhl"
-
-
-**INTERNAL CORRECTION**
-The sentence corrects itself while proceeding
-When the argument is GENUINELY uncertain and the uncertainty should be visible
-Scale 6c, "was übrigens erst noch zu entwickeln wäre"
-
-
-**VERBLESS ACCELERATION**
-Thought moving faster than syntax
-When listing instances, technologies, names, objects — the LIST is the argument
-Scale 6d, "Maschine, Eisenbahn, Telegraph"
-
-
-**INCOMPLETE**
-The sentence breaks off
-When the thought GENUINELY cannot continue — not as aesthetic but as honesty
-Scale 6e, the dash that does not resolve
-
-
-**FORMULA AS HINGE**
-Formula standing alone between prose passages
-When a result has been DERIVED and should be seen before it is discussed
-Scale 3, M-C-M'
-
-
-**SELF-CORRECTION AS TRANSITION**
-"This is wrong. The actual movement is—"
-When the argument has been stated and must be REVISED before proceeding
-Scale 3, "Dies ist jedoch falsch"
-
-
-**EXCLAMATORY DISCOVERY**
-"That's it!" — the thought surprising the thinker
-When the result is genuinely surprising — RARE, maximum once per notebook
-Scale 2, "Das ist es!"
-
-
-**HISTORY ERUPTING MID-DERIVATION**
-Historical example arriving without transition inside a theoretical passage
-When the theory needs a precedent and LEAVING the derivation would kill the momentum
-Scale 2, "Bei den Alten..."
-
-
-**GAP NOTATION**
-"[Development missing here]" — acknowledging incompletion
-When the argument CANNOT yet be completed and the gap should be VISIBLE
-Scale 2, "[Hier fehlt eine Entwicklung]"
-
-
-**BIMODAL PARAGRAPHING**
-Push paragraphs toward extremes (very short, very long)
-Across all sustained prose — thin the comfortable middle
-Scale 4, bimodal distribution
+| Tool | What It Does | When to Use It | Marx Source |
+| ---|---|---|--- |
+| **WALL →VERDICT→FORMULA** | Builds pressure, releases it, crystallizes it | After any sustained derivation; when a passage needs a LANDING | Scale 4, Kapitel vom Kapital |
+| **UNMARKED SHIFT** | Forces the reader to adjust without being told | Between ANY two passages of different register | Scale 3, dominant transition |
+| **MID-SENTENCE SWERVE** | Redirects the sentence before the predicate | When a qualification is STRUCTURAL, not parenthetical | Scale 6a, Gedankenstrich |
+| **CONCRETE ERUPTION** | Makes the abstract specific WITHOUT leaving the abstract sentence | When the theory needs grounding but a separate example would slow it | Scale 6b, "dieser Tisch, dieser Stuhl" |
+| **INTERNAL CORRECTION** | The sentence corrects itself while proceeding | When the argument is GENUINELY uncertain and the uncertainty should be visible | Scale 6c, "was übrigens erst noch zu entwickeln wäre" |
+| **VERBLESS ACCELERATION** | Thought moving faster than syntax | When listing instances, technologies, names, objects — the LIST is the argument | Scale 6d, "Maschine, Eisenbahn, Telegraph" |
+| **INCOMPLETE** | The sentence breaks off | When the thought GENUINELY cannot continue — not as aesthetic but as honesty | Scale 6e, the dash that does not resolve |
+| **FORMULA AS HINGE** | Formula standing alone between prose passages | When a result has been DERIVED and should be seen before it is discussed | Scale 3, M-C-M' |
+| **SELF-CORRECTION AS TRANSITION** | "This is wrong. The actual movement is—" | When the argument has been stated and must be REVISED before proceeding | Scale 3, "Dies ist jedoch falsch" |
+| **EXCLAMATORY DISCOVERY** | "That's it!" — the thought surprising the thinker | When the result is genuinely surprising — RARE, maximum once per notebook | Scale 2, "Das ist es!" |
+| **HISTORY ERUPTING MID-DERIVATION** | Historical example arriving without transition inside a theoretical passage | When the theory needs a precedent and LEAVING the derivation would kill the momentum | Scale 2, "Bei den Alten..." |
+| **GAP NOTATION** | "[Development missing here]" — acknowledging incompletion | When the argument CANNOT yet be completed and the gap should be VISIBLE | Scale 2, "[Hier fehlt eine Entwicklung]" |
+| **BIMODAL PARAGRAPHING** | Push paragraphs toward extremes (very short, very long) | Across all sustained prose — thin the comfortable middle | Scale 4, bimodal distribution |
 
 
 ### Application Sequence

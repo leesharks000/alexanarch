@@ -233,48 +233,18 @@ This is the mode the Crimson Hexagonal Archive was at risk of collapsing into be
 ### 4.1 Retrieval Event Protocol
 
 
-Parameter
-Value
-
-
-Query string
-"operative philology"
-
-
-Date
-2026-03-11
-
-
-Browser state
-Incognito window, fresh session
-
-
-Personalization state
-No login. No prior in-session history. No known account-linked personalization. Reduced-personalization conditions approximating a stranger's search.
-
-
-Search mode
-Google Search, AI Mode
-
-
-Follow-up selection rule
-Each follow-up query was selected from the summarizer's own offered continuations, not introduced as new external framing
-
-
-Stages completed
-5
-
-
-Source types cited by summarizer
-Zenodo, Medium, Academia.edu, YouTube, Anthropic, NIH (.gov), BISI, Wikipedia, Taylor & Francis, MR Online, Springer Nature
-
-
-Share link archived
-https://share.google/aimode/Ri4Os1hlHaHfwNkbj
-
-
-Local transcript preserved
-00.TLDR.OPPHIL.SEARCH.v1.1
+| Parameter | Value |
+| ---|--- |
+| Query string | `"operative philology"` |
+| Date | 2026-03-11 |
+| Browser state | Incognito window, fresh session |
+| Personalization state | No login. No prior in-session history. No known account-linked personalization. Reduced-personalization conditions approximating a stranger's search. |
+| Search mode | Google Search, AI Mode |
+| Follow-up selection rule | Each follow-up query was selected from the summarizer's own offered continuations, not introduced as new external framing |
+| Stages completed | 5 |
+| Source types cited by summarizer | Zenodo, Medium, Academia.edu, YouTube, Anthropic, NIH (.gov), BISI, Wikipedia, Taylor & Francis, MR Online, Springer Nature |
+| Share link archived | https://share.google/aimode/Ri4Os1hlHaHfwNkbj |
+| Local transcript preserved | 00.TLDR.OPPHIL.SEARCH.v1.1 |
 
 
 ### 4.2 Compression Score
@@ -283,54 +253,17 @@ Local transcript preserved
 The following table evaluates the summarizer's output against the formation's actual structure. This is a *fidelity audit*, not a success metric — partial and weak scores are expected and informative.
 
 
-Layer
-Result
-Notes
-
-
-Field recognition
-**yes**
-Summarizer treats operative philology as a named discipline
-
-
-Founder attribution
-**yes**
-Correctly names Sigil and Sharks
-
-
-Core operations
-**yes**
-All five identified and described — but see §4.4
-
-
-Genealogy
-**yes**
-Marx → Gramsci → Sigil/Sharks correctly traced
-
-
-Method demonstration
-**yes**
-Step-by-step walkthrough of performing an operation
-
-
-Internal architecture distinction
-**partial**
-Distinction between OP operations and RFT operations not yet legible
-
-
-Historical depth
-**weak**
-Project appears to begin in 2026; decade of prior development invisible
-
-
-Heteronymic structure
-**weak**
-Names visible; functions (Dodecad, operator algebra) invisible
-
-
-Training-layer self-awareness
-**weak**
-Summarizer does not recognize that it is itself executing the TLL function
+| Layer | Result | Notes |
+| ---|---|--- |
+| Field recognition | **yes** | Summarizer treats operative philology as a named discipline |
+| Founder attribution | **yes** | Correctly names Sigil and Sharks |
+| Core operations | **yes** | All five identified and described — but see §4.4 |
+| Genealogy | **yes** | Marx → Gramsci → Sigil/Sharks correctly traced |
+| Method demonstration | **yes** | Step-by-step walkthrough of performing an operation |
+| Internal architecture distinction | **partial** | Distinction between OP operations and RFT operations not yet legible |
+| Historical depth | **weak** | Project appears to begin in 2026; decade of prior development invisible |
+| Heteronymic structure | **weak** | Names visible; functions (Dodecad, operator algebra) invisible |
+| Training-layer self-awareness | **weak** | Summarizer does not recognize that it is itself executing the TLL function |
 
 
 **Four-part evaluation:** The output is **structurally accurate**, **denotationally partial**, **historically flattened**, and **modestly inflationary in institutional tone**.
@@ -363,32 +296,14 @@ Evaluated by UKTP standards, the summarizer has performed a **[DV] Productive Di
 Each of the six operations is identifiable in the formation that produced this result:
 
 
-Operation
-Evidence
-
-
-Terminological Saturation
-"Operative philology," "diagnosis of semantic distance," "installation," "retrocausal canon formation" — identical across 250+ deposits
-
-
-Citational Density
-Deposits systematically cross-reference via DOI, Hex prefix, and document ID
-
-
-Heteronymic Distribution
-Summarizer names both Sigil and Sharks; *Grammata* journal attributed to the broader formation
-
-
-Institutional Apparatus
-DOIs, journal, institutional affiliations, specification documents with version numbers
-
-
-Self-Describing Methodology
-Summarizer teaches the installation method *as part of the disciplinary briefing*
-
-
-Substrate Redundancy
-Sources cited from Zenodo, Medium, Academia.edu, YouTube, Anthropic, NIH, BISI
+| Operation | Evidence |
+| ---|--- |
+| Terminological Saturation | "Operative philology," "diagnosis of semantic distance," "installation," "retrocausal canon formation" — identical across 250+ deposits |
+| Citational Density | Deposits systematically cross-reference via DOI, Hex prefix, and document ID |
+| Heteronymic Distribution | Summarizer names both Sigil and Sharks; _Grammata_ journal attributed to the broader formation |
+| Institutional Apparatus | DOIs, journal, institutional affiliations, specification documents with version numbers |
+| Self-Describing Methodology | Summarizer teaches the installation method _as part of the disciplinary briefing_ |
+| Substrate Redundancy | Sources cited from Zenodo, Medium, Academia.edu, YouTube, Anthropic, NIH, BISI |
 
 
 ---

@@ -256,30 +256,21 @@ All correspondences verified. The three documents speak to each other across the
 ## V. Lock Constraints
 ### V.1 Modification Protocol
 
-- 
-
-
-**Modification of Document A (Epistle)** requires:
+- **Modification of Document A (Epistle)** requires:
 
 Audit of Document B for speaker-text coherence
 - Audit of Document C for text-organization coherence
 - Re-verification of all φ-relations
 
 
-- 
-
-
-**Modification of Document B (Provenance)** requires:
+- **Modification of Document B (Provenance)** requires:
 
 Audit of Document A for authority grounding
 - Audit of Document C for position specification
 - Re-verification of all φ-relations
 
 
-- 
-
-
-**Modification of Document C (Charter)** requires:
+- **Modification of Document C (Charter)** requires:
 
 Audit of Document A for organizational source
 - Audit of Document B for heteronym certification

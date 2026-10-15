@@ -277,20 +277,11 @@ The number is a *checksum*, not a unique identifier. In computing, a checksum is
 
 This distinction matters because it means:
 
-- 
+- One can know the number of the name without knowing the name. The flat-solve tradition assumes that knowing the number should lead back to the name. But the text's own logic points in the other direction: the number is what the name *produces* when calculated, not a reversible encryption. Many names can yield 666. The number is not a unique key; it is a *checksum*.
 
+- The calculation operates on the sovereignty claim at one remove. The number is not the beast's self-presentation (that is the image and the name). The number is the *forensic handle* — the arithmetic residue available to the one who calculates. It is what the analyst extracts, not what the beast displays.
 
-One can know the number of the name without knowing the name. The flat-solve tradition assumes that knowing the number should lead back to the name. But the text's own logic points in the other direction: the number is what the name *produces* when calculated, not a reversible encryption. Many names can yield 666. The number is not a unique key; it is a *checksum*.
-
-- 
-
-
-The calculation operates on the sovereignty claim at one remove. The number is not the beast's self-presentation (that is the image and the name). The number is the *forensic handle* — the arithmetic residue available to the one who calculates. It is what the analyst extracts, not what the beast displays.
-
-- 
-
-
-The number is a compression product. The beast has an image, a name, a mark, and a market-exclusion clause. The number is the result of compressing the name through the operation of calculation. It is a further compression of an already-compressed inscriptional complex. 666 is not the compression of the beast but the compression of the beast's own compression machine.
+- The number is a compression product. The beast has an image, a name, a mark, and a market-exclusion clause. The number is the result of compressing the name through the operation of calculation. It is a further compression of an already-compressed inscriptional complex. 666 is not the compression of the beast but the compression of the beast's own compression machine.
 
 
 ### B. 600 / 60 / 6 as Descending Compression Ladder

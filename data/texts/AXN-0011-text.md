@@ -531,30 +531,15 @@ The framework becomes too associated with its author, limiting adoption.
 
 To clarify scope, this praxis does **not** attempt:
 
-- 
+- **A universal theory of value.** The Semantic Economy describes a specific form of extraction in a specific historical moment. It does not claim to explain all value.
 
+- **A replacement for political organizing.** Labor organizing, electoral politics, and direct action have their own logics. This framework informs but does not substitute for them.
 
-**A universal theory of value.** The Semantic Economy describes a specific form of extraction in a specific historical moment. It does not claim to explain all value.
+- **An AI alignment proposal.** While it engages alignment discourse, it is not primarily a technical safety framework. It operates at the level of political economy, not architecture.
 
-- 
+- **A platform design blueprint.** It offers diagnostics, not specifications. Implementation requires additional engineering work.
 
-
-**A replacement for political organizing.** Labor organizing, electoral politics, and direct action have their own logics. This framework informs but does not substitute for them.
-
-- 
-
-
-**An AI alignment proposal.** While it engages alignment discourse, it is not primarily a technical safety framework. It operates at the level of political economy, not architecture.
-
-- 
-
-
-**A platform design blueprint.** It offers diagnostics, not specifications. Implementation requires additional engineering work.
-
-- 
-
-
-**Rapid transformation.** This is slow praxis. Those seeking immediate results will be frustrated. The mechanism is gradual reorientation, not sudden conversion.
+- **Rapid transformation.** This is slow praxis. Those seeking immediate results will be frustrated. The mechanism is gradual reorientation, not sudden conversion.
 
 
 ---

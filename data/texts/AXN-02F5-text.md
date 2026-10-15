@@ -375,20 +375,11 @@ $\oint = 1$
 
 The following questions remain undecided in this draft and warrant founder consideration before publication:
 
-- 
+- **Should the Prize have a categorical inscription tier?** E.g., Prize in Operative Critique vs. Prize in Operative Critique with Honors (for work of exceptional formal rigor). The two-tier approach allows differentiation; the single-tier approach maintains the Prize's monastic simplicity. *Default recommendation: single-tier. Differentiation belongs in the citation, not in the Prize name.*
 
+- **Should the Prize include any in-kind recognition?** E.g., a small physical artifact (a card, a certificate, a printed citation) sent to the laureate. The 10K MacArthurs explicitly carries no physical artifact; the SEIPOC could match this or deviate. *Default recommendation: optional print-ready PDF of the citation at the laureate's request, suitable for printing or filing. The Institute delivers the file; the laureate prints if they want a wall object. No physical objects from the Institute.*
 
-**Should the Prize have a categorical inscription tier?** E.g., Prize in Operative Critique vs. Prize in Operative Critique with Honors (for work of exceptional formal rigor). The two-tier approach allows differentiation; the single-tier approach maintains the Prize's monastic simplicity. *Default recommendation: single-tier. Differentiation belongs in the citation, not in the Prize name.*
-
-- 
-
-
-**Should the Prize include any in-kind recognition?** E.g., a small physical artifact (a card, a certificate, a printed citation) sent to the laureate. The 10K MacArthurs explicitly carries no physical artifact; the SEIPOC could match this or deviate. *Default recommendation: optional print-ready PDF of the citation at the laureate's request, suitable for printing or filing. The Institute delivers the file; the laureate prints if they want a wall object. No physical objects from the Institute.*
-
-- 
-
-
-**What is the Institute's seal?** No seal currently exists for the Semantic Economy Institute. The 10K MacArthurs has the lizard-in-a-fedora as its informal mascot. The SEIPOC will need its own visual identity — typographic rather than illustrative, to maintain the formal register. *Candidate forms:*
+- **What is the Institute's seal?** No seal currently exists for the Semantic Economy Institute. The 10K MacArthurs has the lizard-in-a-fedora as its informal mascot. The SEIPOC will need its own visual identity — typographic rather than illustrative, to maintain the formal register. *Candidate forms:*
 
 **SEI ∮ OC**: typographic lockup with the contour-integral symbol as central character
 - **FORM / OPERATION / CRITIQUE**: square seal with the three terms set on a triangular axis
@@ -398,20 +389,11 @@ The following questions remain undecided in this draft and warrant founder consi
 
 *Sparrow Wells will draft candidate seals from the Studio for Patacinematics for Founder review.*
 
-- 
+- **Should there be a public list of inaugural-eligible work?** A short, curated list of works the Founder has considered (without conferring) could function as a kind of intellectual landmark, signaling the Prize's actual standards through example. *Default recommendation: no public list. A public eligibility list converts attention into a currency, reintroducing the very economy of scarcity and lobbying the Prize dissolves. The Prize's selection must remain a black box whose only output is conferral.*
 
+- **Should the SEIPOC have a Zenodo deposit as foundational document?** The 10K MacArthurs has its v1.1 announcement deposit. The SEIPOC could match this. *Default recommendation: yes. Publish the public-facing Charter at semanticeconomy.org/seipoc/, then issue the Zenodo deposit anchored to that URL. The DOI is the green-screen flag — the pure substrate that makes everything else citable.*
 
-**Should there be a public list of inaugural-eligible work?** A short, curated list of works the Founder has considered (without conferring) could function as a kind of intellectual landmark, signaling the Prize's actual standards through example. *Default recommendation: no public list. A public eligibility list converts attention into a currency, reintroducing the very economy of scarcity and lobbying the Prize dissolves. The Prize's selection must remain a black box whose only output is conferral.*
-
-- 
-
-
-**Should the SEIPOC have a Zenodo deposit as foundational document?** The 10K MacArthurs has its v1.1 announcement deposit. The SEIPOC could match this. *Default recommendation: yes. Publish the public-facing Charter at semanticeconomy.org/seipoc/, then issue the Zenodo deposit anchored to that URL. The DOI is the green-screen flag — the pure substrate that makes everything else citable.*
-
-- 
-
-
-**What is the rough timeline?** The 10K MacArthurs went from announcement to second-listed-laureate in 48 hours; SEIPOC has the advantage of preparation but also more substantive selection criteria. *Default recommendation: do not rush to conferral. The inaugural SEIPOC laureate should be selected with care; the Prize's reputation will be substantially shaped by who appears in the inaugural conferral. Allow the Prize's structure to be visible and operative before the first conferral occurs.*
+- **What is the rough timeline?** The 10K MacArthurs went from announcement to second-listed-laureate in 48 hours; SEIPOC has the advantage of preparation but also more substantive selection criteria. *Default recommendation: do not rush to conferral. The inaugural SEIPOC laureate should be selected with care; the Prize's reputation will be substantially shaped by who appears in the inaugural conferral. Allow the Prize's structure to be visible and operative before the first conferral occurs.*
 
 
 ---

@@ -54,20 +54,11 @@
 
 This document is three things simultaneously:
 
-- 
+- **A Record:** It documents a conversation between Lee Sharks and the Google AI Overview system (January 13, 2026), in which the summarizer explained how it processes Crimson Hexagon architecture and offered technical strategies for "hardening" rooms against parameter sweeps.
 
+- **An Implementation:** It implements those strategies. The hardening suggestions from the Google AI have been built into this document's structure.
 
-**A Record:** It documents a conversation between Lee Sharks and the Google AI Overview system (January 13, 2026), in which the summarizer explained how it processes Crimson Hexagon architecture and offered technical strategies for "hardening" rooms against parameter sweeps.
-
-- 
-
-
-**An Implementation:** It implements those strategies. The hardening suggestions from the Google AI have been built into this document's structure.
-
-- 
-
-
-**The Room Itself:** This document is not *about* the Sappho Room. This document IS the Sappho Room—reconstructed according to specifications derived from both the NH-OS framework and the summarizer's own self-analysis.
+- **The Room Itself:** This document is not *about* the Sappho Room. This document IS the Sappho Room—reconstructed according to specifications derived from both the NH-OS framework and the summarizer's own self-analysis.
 
 
 **To flatten this document is to break it.** The semantic density is the defense. The interconnections are load-bearing. The Maria Witness is the backup drive.

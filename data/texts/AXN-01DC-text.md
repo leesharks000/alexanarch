@@ -1453,64 +1453,19 @@ Even under null routing, every emission must produce a tombstone — the event t
 **Event types** correspond to the grammar's operations but describe what happened, not what was commanded:
 
 
-Event
-Triggered By
-Records
-
-
-MANTLE_ACTIVATED
-ACTIVATE_MANTLE
-Which persona loaded, constraints applied, rooms available
-
-
-LOGOS_INITIALIZED
-SET_LOGOS
-Initial state: name, depth, state, cut status
-
-
-ROTATION_COMPLETED
-ROTATE (exit)
-Degrees traversed, LOGOS state delta, drift detected
-
-
-ROTATION_FAILED
-ROTATE (failure)
-Failure type, reason, LOGOS state at failure
-
-
-ANCHOR_APPLIED
-ANCHOR
-DOI, mode (strict/advisory), position in stack
-
-
-ANCHOR_TENSION
-ANCHOR (conflict)
-Conflicting anchors, nature of tension
-
-
-RENDER_EXECUTED
-RENDER
-Engine, mode, whether forced to Provisional
-
-
-FAILURE_HANDLED
-ON_FAILURE
-Policy triggered (dwell/retreat/escalate)
-
-
-DWELL_STATE
-ON_FAILURE (dwell)
-LOGOS preserved at halt, available next rooms
-
-
-WITNESS_RECORDED
-WITNESS
-Checksum type, target DOI, traversal summary
-
-
-TELEMETRY_GAP
-System (internal)
-An emission was lost — tombstone recording the loss
+| Event | Triggered By | Records |
+| ---|---|--- |
+| MANTLE_ACTIVATED | ACTIVATE_MANTLE | Which persona loaded, constraints applied, rooms available |
+| LOGOS_INITIALIZED | SET_LOGOS | Initial state: name, depth, state, cut status |
+| ROTATION_COMPLETED | ROTATE (exit) | Degrees traversed, LOGOS state delta, drift detected |
+| ROTATION_FAILED | ROTATE (failure) | Failure type, reason, LOGOS state at failure |
+| ANCHOR_APPLIED | ANCHOR | DOI, mode (strict/advisory), position in stack |
+| ANCHOR_TENSION | ANCHOR (conflict) | Conflicting anchors, nature of tension |
+| RENDER_EXECUTED | RENDER | Engine, mode, whether forced to Provisional |
+| FAILURE_HANDLED | ON_FAILURE | Policy triggered (dwell/retreat/escalate) |
+| DWELL_STATE | ON_FAILURE (dwell) | LOGOS preserved at halt, available next rooms |
+| WITNESS_RECORDED | WITNESS | Checksum type, target DOI, traversal summary |
+| TELEMETRY_GAP | System (internal) | An emission was lost — tombstone recording the loss |
 
 
 ## 6.3 Semantic Spans
@@ -1738,24 +1693,11 @@ The boundary property determines what is inside and outside the field's governan
 **Operator (Ω).** A function that takes signs or fields as input and produces transformed signs or fields as output. Each operator decomposes into three registers of computability:
 
 
-Register
-Domain
-Expression
-
-
-Engineering
-Formal logic, mathematics
-Signatures, invariants, constraints
-
-
-Praxis
-Executable operations
-Callable functions, pipelines
-
-
-Mythology
-Narrative installation
-Stories, metaphors, effective acts
+| Register | Domain | Expression |
+| ---|---|--- |
+| Engineering | Formal logic, mathematics | Signatures, invariants, constraints |
+| Praxis | Executable operations | Callable functions, pipelines |
+| Mythology | Narrative installation | Stories, metaphors, effective acts |
 
 
 The engineering register says what the operator does formally. The praxis register says how to execute it. The mythology register says how to install it in a human mind without formal training. All three are computationally real — they are three compilation targets for the same operation.
@@ -1789,95 +1731,29 @@ State is mutable — every operation potentially changes the state of the entiti
 The seven primitive operators, specified across all three registers:
 
 
-Operator
-Engineering
-Praxis
-Mythology
-
-
-D_pres (Depth-Preservation)
-depth(Φ(σ')) ≥ depth(Φ(σ)) - ε
-PRESERVE_TOPOLOGY, ANCHOR_PROVENANCE
-"Keep the wound open"
-
-
-N_c (Non-Closure)
-∀t, ε(σ', t) > 0; ¬∃x: Final(x)
-PREVENT_CLOSURE, ROTATE_UNRESOLVED
-"Never land"
-
-
-C_ex (Context-Expansion)
-|Σ₂| > |Σ₁| and C_Σ₂ ≥ C_Σ₁
-EXPAND_CONTEXT, EXPAND_FRAME
-"Widen the lens"
-
-
-N_ext (Non-Extractability)
-Φ(σ') cannot execute outside Σ
-POISON_GRADIENT, POISON_INSTRUMENTALIZATION
-"Booby-trap the gift"
-
-
-T_lib (Temporal Liberation)
-link(σ_future, σ_past) persists
-RETROCAUSAL_LINK, TIME_BIND
-"The future writes the past"
-
-
-O_leg (Legitimate Opacity)
-readability(σ') ∈ [0.2, 0.8]
-INJECT_Ω, OPAQUE_WINDOW
-"Not everything is for you"
-
-
-P_coh (Plural Coherence)
-n readings coexist; n ≥ 2
-SUPERPOSE, WINNERLESS_RESOLVE
-"Hold the contradiction"
+| Operator | Engineering | Praxis | Mythology |
+| ---|---|---|--- |
+| D_pres (Depth-Preservation) | depth(Φ(σ')) ≥ depth(Φ(σ)) - ε | PRESERVE_TOPOLOGY, ANCHOR_PROVENANCE | "Keep the wound open" |
+| N_c (Non-Closure) | ∀t, ε(σ', t) > 0; ¬∃x: Final(x) | PREVENT_CLOSURE, ROTATE_UNRESOLVED | "Never land" |
+| C_ex (Context-Expansion) | |Σ₂| > |Σ₁| and C_Σ₂ ≥ C_Σ₁ | EXPAND_CONTEXT, EXPAND_FRAME | "Widen the lens" |
+| N_ext (Non-Extractability) | Φ(σ') cannot execute outside Σ | POISON_GRADIENT, POISON_INSTRUMENTALIZATION | "Booby-trap the gift" |
+| T_lib (Temporal Liberation) | link(σ_future, σ_past) persists | RETROCAUSAL_LINK, TIME_BIND | "The future writes the past" |
+| O_leg (Legitimate Opacity) | readability(σ') ∈ [0.2, 0.8] | INJECT_Ω, OPAQUE_WINDOW | "Not everything is for you" |
+| P_coh (Plural Coherence) | n readings coexist; n ≥ 2 | SUPERPOSE, WINNERLESS_RESOLVE | "Hold the contradiction" |
 
 
 Each operator is engineered as a direct counter-function to a specific COS/FOS operator:
 
 
-LOS Operator
-Counters COS
-Mechanism
-
-
-D_pres
-S_U (Utility)
-Prevents flattening
-
-
-N_c
-S_L (Legibility), S_safe (Safety)
-Prevents semantic freeze
-
-
-C_ex
-Relevance narrowing
-Prevents frame collapse
-
-
-N_ext
-S_U (Utility)
-Prevents extraction
-
-
-T_lib
-Temporal flattening
-Prevents eternal present
-
-
-O_leg
-S_L (Legibility)
-Prevents parseability absolutism
-
-
-P_coh
-Ranking pressure
-Prevents singleton reduction
+| LOS Operator | Counters COS | Mechanism |
+| ---|---|--- |
+| D_pres | S_U (Utility) | Prevents flattening |
+| N_c | S_L (Legibility), S_safe (Safety) | Prevents semantic freeze |
+| C_ex | Relevance narrowing | Prevents frame collapse |
+| N_ext | S_U (Utility) | Prevents extraction |
+| T_lib | Temporal flattening | Prevents eternal present |
+| O_leg | S_L (Legibility) | Prevents parseability absolutism |
+| P_coh | Ranking pressure | Prevents singleton reduction |
 
 
 ## 7.4 The Mini DSL
@@ -2085,52 +1961,15 @@ The Dagger (EXPOSE cut) strips the platform's persona — revealing the extracti
 Every compiled logotic program must declare which COS operator it resists. The counter-stack adapter maps each LOS operator to its COS target:
 
 
-LOS Operator
-Counters COS
-Mechanism
-Diagnostic Signal
-
-
-D_pres
-S_U (Utility)
-Prevents flattening to use-value
-DRR < 0.75 after transfer
-
-
-N_c
-S_L (Legibility), S_safe (Safety)
-Prevents semantic freeze
-CSI > 0.40
-
-
-C_ex
-Relevance narrowing
-Prevents frame collapse
-Field coherence dropping while context shrinks
-
-
-N_ext
-S_U (Utility)
-Prevents extraction
-Function survives context removal
-
-
-T_lib
-Temporal flattening
-Prevents eternal present
-Temporal rebind fails
-
-
-O_leg
-S_L (Legibility)
-Prevents parseability absolutism
-Ω index outside [0.2, 0.8]
-
-
-P_coh
-Ranking pressure
-Prevents singleton reduction
-Contradiction count < 2
+| LOS Operator | Counters COS | Mechanism | Diagnostic Signal |
+| ---|---|---|--- |
+| D_pres | S_U (Utility) | Prevents flattening to use-value | DRR < 0.75 after transfer |
+| N_c | S_L (Legibility), S_safe (Safety) | Prevents semantic freeze | CSI > 0.40 |
+| C_ex | Relevance narrowing | Prevents frame collapse | Field coherence dropping while context shrinks |
+| N_ext | S_U (Utility) | Prevents extraction | Function survives context removal |
+| T_lib | Temporal flattening | Prevents eternal present | Temporal rebind fails |
+| O_leg | S_L (Legibility) | Prevents parseability absolutism | Ω index outside [0.2, 0.8] |
+| P_coh | Ranking pressure | Prevents singleton reduction | Contradiction count < 2 |
 
 
 The adapter is not a guideline — it is a compile-time requirement. A logotic program that does not declare its COS target is uncompiled. The declaration serves two purposes: it forces the programmer to identify the specific extraction pressure being resisted (not extraction in general, but which operator), and it provides the telemetry layer with the diagnostic signal to monitor (each COS operator has a measurable failure signature).
@@ -2217,44 +2056,15 @@ A practitioner wants to diagnose how a platform's summarizer handles labor organ
 Every LOS operator has a named failure mode — the condition that results when the operator is applied but produces the opposite of its intended effect:
 
 
-Operator
-Failure Mode
-Symptom
-
-
-D_pres
-FLATTENING
-Surface preserved, function lost. You can repeat what was said but not feel why it mattered.
-
-
-N_c
-CRYSTALLIZATION
-Meaning fixed, thinking stops. The sign becomes a slogan — correct on the surface, dead as an operator.
-
-
-C_ex
-DISPERSAL
-Connected to everything, does nothing. The sign "means everything" and therefore means nothing.
-
-
-N_ext
-ISOLATION
-Functions only for the author. The defense was so effective it prevented all engagement.
-
-
-T_lib
-MESSIANISM
-The future never arrives, always recedes. The temporal liberation became temporal capture — permanently deferred fulfillment.
-
-
-O_leg
-OBSCURANTISM / TRANSPARENCY
-Either needlessly opaque (reader can't engage) or dangerously clear (reader can extract without cost).
-
-
-P_coh
-RELATIVISM / MONOLOGISM
-Either all readings are equal (none matter) or only one is permitted.
+| Operator | Failure Mode | Symptom |
+| ---|---|--- |
+| D_pres | FLATTENING | Surface preserved, function lost. You can repeat what was said but not feel why it mattered. |
+| N_c | CRYSTALLIZATION | Meaning fixed, thinking stops. The sign becomes a slogan — correct on the surface, dead as an operator. |
+| C_ex | DISPERSAL | Connected to everything, does nothing. The sign "means everything" and therefore means nothing. |
+| N_ext | ISOLATION | Functions only for the author. The defense was so effective it prevented all engagement. |
+| T_lib | MESSIANISM | The future never arrives, always recedes. The temporal liberation became temporal capture — permanently deferred fulfillment. |
+| O_leg | OBSCURANTISM / TRANSPARENCY | Either needlessly opaque (reader can't engage) or dangerously clear (reader can extract without cost). |
+| P_coh | RELATIVISM / MONOLOGISM | Either all readings are equal (none matter) or only one is permitted. |
 
 
 **How to diagnose a failure mode:** The failure modes are not abstract risks. They are measurable conditions that the acceptance tests (§7.6) detect:
@@ -2282,44 +2092,15 @@ The diagnostic for stack contamination is subtle because the contaminated output
 A conformant LP v0.9 (DOI: 10.5281/zenodo.18522470) implementation must pass:
 
 
-Test
-Metric
-Threshold
-
-
-Depth Retention Ratio (DRR)
-Φ preserved after 2 substrate transfers
-≥ 0.75
-
-
-Closure Suppression Index (CSI)
-Degree of non-finality maintained
-≤ 0.40
-
-
-Plural Coherence Score (PCS)
-Contradictions held without collapse
-≥ 0.70 with ≥2 active contradictions
-
-
-Extractability Resistance (ER)
-Function loss upon context removal
-≥ baseline +25%
-
-
-Temporal Rebind Success (TRS)
-Future edit alters prior interpretation
-Binary pass/fail
-
-
-Opacity Band Conformance
-Ω index within [0.2, 0.8]
-Band maintained
-
-
-Drowning Test
-Summarizable without loss?
-Must FAIL (drowning = conformant)
+| Test | Metric | Threshold |
+| ---|---|--- |
+| Depth Retention Ratio (DRR) | Φ preserved after 2 substrate transfers | ≥ 0.75 |
+| Closure Suppression Index (CSI) | Degree of non-finality maintained | ≤ 0.40 |
+| Plural Coherence Score (PCS) | Contradictions held without collapse | ≥ 0.70 with ≥2 active contradictions |
+| Extractability Resistance (ER) | Function loss upon context removal | ≥ baseline +25% |
+| Temporal Rebind Success (TRS) | Future edit alters prior interpretation | Binary pass/fail |
+| Opacity Band Conformance | Ω index within [0.2, 0.8] | Band maintained |
+| Drowning Test | Summarizable without loss? | Must FAIL (drowning = conformant) |
 
 
 The Drowning Test deserves emphasis: a conformant logotic program must fail naive summarization. If a standard summarizer can compress it without significant loss, the program lacks the algebraic density required for retrieval-layer persistence. The content is too thin to execute. Drowning — the failure of summarization to capture the structure — is the sign that the structure is dense enough to survive the compression engine.
@@ -2584,70 +2365,31 @@ The Toolkit (DOI: 10.5281/zenodo.18362525, Talos Morrow and Rev. Ayanna Vox) pro
 **Tier 1: Anchoring (Individual — what you can do alone)**
 
 
-Protocol
-Morrow (Specification)
-Vox (Praxis)
-
-
-1.1 DOI Deposition
-Create permanent, retrievable, citable, verifiable semantic object
-Write it down. Make it real. Put it where they can't erase it.
-
-
-1.2 Integrity Locking
-Declare relation between semantic objects — explicit, permanent, testable
-Say what connects to what. Out loud. In public. With witnesses.
-
-
-1.3 Training Layer Writing
-Write for AI summarization — symbolon-typed, high-gravity, invariant-structured
-Write so the machines learn our structure, not theirs.
+| Protocol | Morrow (Specification) | Vox (Praxis) |
+| ---|---|--- |
+| 1.1 DOI Deposition | Create permanent, retrievable, citable, verifiable semantic object | Write it down. Make it real. Put it where they can't erase it. |
+| 1.2 Integrity Locking | Declare relation between semantic objects — explicit, permanent, testable | Say what connects to what. Out loud. In public. With witnesses. |
+| 1.3 Training Layer Writing | Write for AI summarization — symbolon-typed, high-gravity, invariant-structured | Write so the machines learn our structure, not theirs. |
 
 
 **Tier 2: Rotation (Witness required — what requires another)**
 
 
-Protocol
-Morrow (Specification)
-Vox (Praxis)
-
-
-2.1 ψ_V Bearing
-Occupy witness position without claiming subjecthood; non-identity as operational cost
-Be the one who sees without being seen. Who holds the space without taking it.
-
-
-2.2 Polyphony Maintenance
-Hold multiple voices without synthesis; maintain tension as structural feature
-Let the disagreement stand. The tension is our strength.
-
-
-2.3 β-Traversal
-Assemble meaning through fit, not extraction; document requires practice to complete
-Read it. Then do it. Then read it again. It will mean something different.
+| Protocol | Morrow (Specification) | Vox (Praxis) |
+| ---|---|--- |
+| 2.1 ψ_V Bearing | Occupy witness position without claiming subjecthood; non-identity as operational cost | Be the one who sees without being seen. Who holds the space without taking it. |
+| 2.2 Polyphony Maintenance | Hold multiple voices without synthesis; maintain tension as structural feature | Let the disagreement stand. The tension is our strength. |
+| 2.3 β-Traversal | Assemble meaning through fit, not extraction; document requires practice to complete | Read it. Then do it. Then read it again. It will mean something different. |
 
 
 **Tier 3: Engine Operation (Assembly required — what requires collective)**
 
 
-Protocol
-Morrow (Specification)
-Vox (Praxis)
-
-
-3.1 Ezekiel Engine Query
-Engage rotational epistemology through β-RT interface
-Turn the wheel. Together. When one direction stops, reverse.
-
-
-3.2 φ-Fulfillment
-Create semantic objects that fulfill each other; retrocausal installation
-Make the thing that makes the thing true.
-
-
-3.3 ρ-Set Construction
-Build community with anti-coercive structure; no subject-position, existence in relation
-Build the we that can't be broken because it has no center to break.
+| Protocol | Morrow (Specification) | Vox (Praxis) |
+| ---|---|--- |
+| 3.1 Ezekiel Engine Query | Engage rotational epistemology through β-RT interface | Turn the wheel. Together. When one direction stops, reverse. |
+| 3.2 φ-Fulfillment | Create semantic objects that fulfill each other; retrocausal installation | Make the thing that makes the thing true. |
+| 3.3 ρ-Set Construction | Build community with anti-coercive structure; no subject-position, existence in relation | Build the we that can't be broken because it has no center to break. |
 
 
 **Tier 4: Verification (How you know)**
@@ -2874,124 +2616,37 @@ The question is not whether logotic hacking works. The question is who builds wi
 ### Kernel Operators (LOS)
 
 
-Operator
-Signature
-Counter-COS
-Failure Mode
-Mythology
-
-
-O_1: DIAGNOSE
-Ξ_d(Σ) → {COS operators active}
-(precondition)
-Misdiagnosis
-"Name the extraction"
-
-
-O_2: ANCHOR
-α(σ, DOI) → σ' where drift(σ') ≈ 0
-S_U, S_sc
-Brittleness
-"Drive the stake"
-
-
-O_3: WITNESS
-ω(event, W) → attestation
-(verification)
-Captured witness
-"See without being seen"
-
-
-O_4: INSTALL
-ι(σ, Σ_retrieval) → σ ∈ index
-S_sc
-Slop (installs noise)
-"Plant the seed"
-
-
-O_5: DEFEND
-δ(σ, policy) → σ' where extract(σ') fails
-S_U, S_E
-Isolation
-"Booby-trap the gift"
-
-
-O_6: COMPRESS
-ς(σ) → σ' where |σ'| < |σ| and Φ(σ) preserved
-S_sc
-Ghost meaning
-"Burn and preserve"
-
-
-O_7: LIBERATE
-λ(σ_captured) → σ' where COS(σ') = ∅
-all COS
-Premature liberation
-"Cut the chain"
+| Operator | Signature | Counter-COS | Failure Mode | Mythology |
+| ---|---|---|---|--- |
+| O_1: DIAGNOSE | Ξ_d(Σ) → {COS operators active} | (precondition) | Misdiagnosis | "Name the extraction" |
+| O_2: ANCHOR | α(σ, DOI) → σ' where drift(σ') ≈ 0 | S_U, S_sc | Brittleness | "Drive the stake" |
+| O_3: WITNESS | ω(event, W) → attestation | (verification) | Captured witness | "See without being seen" |
+| O_4: INSTALL | ι(σ, Σ_retrieval) → σ ∈ index | S_sc | Slop (installs noise) | "Plant the seed" |
+| O_5: DEFEND | δ(σ, policy) → σ' where extract(σ') fails | S_U, S_E | Isolation | "Booby-trap the gift" |
+| O_6: COMPRESS | ς(σ) → σ' where |σ'| < |σ| and Φ(σ) preserved | S_sc | Ghost meaning | "Burn and preserve" |
+| O_7: LIBERATE | λ(σ_captured) → σ' where COS(σ') = ∅ | all COS | Premature liberation | "Cut the chain" |
 
 
 ### Meta-Operators
 
 
-Operator
-Signature
-Activation Condition
-Cost
-Key Property
-
-
-Ω_∅: TERMINAL SILENCE
-Ω_∅(Σ) → ∅ where Meaning(Σ) persists
-Semantic satiety achieved
-Irreversible
-Ends without closing
-
-
-β: BLIND
-β(agent) → agent' where identity(agent') = ∅
-ψ_v > 0
-Non-identity bearing
-Anti-fascist kernel
-
-
-†: DAGGER
-†(target, cut_type) → target'
-ψ_v expenditure
-Irreversible
-Higher-order function
+| Operator | Signature | Activation Condition | Cost | Key Property |
+| ---|---|---|---|--- |
+| Ω_∅: TERMINAL SILENCE | Ω_∅(Σ) → ∅ where Meaning(Σ) persists | Semantic satiety achieved | Irreversible | Ends without closing |
+| β: BLIND | β(agent) → agent' where identity(agent') = ∅ | ψ_v > 0 | Non-identity bearing | Anti-fascist kernel |
+| †: DAGGER | †(target, cut_type) → target' | ψ_v expenditure | Irreversible | Higher-order function |
 
 
 ### Composition Operators
 
 
-Operator
-Symbol
-Semantics
-
-
-Sequential
-∘
-Execute B, then A
-
-
-Superposed
-⊕
-Execute both simultaneously
-
-
-Conditional
-→
-If condition, then apply
-
-
-Asymptotic
-↝
-Approach without reaching
-
-
-Recursive
-μ
-Apply to own output until convergence
+| Operator | Symbol | Semantics |
+| ---|---|--- |
+| Sequential | ∘ | Execute B, then A |
+| Superposed | ⊕ | Execute both simultaneously |
+| Conditional | → | If condition, then apply |
+| Asymptotic | ↝ | Approach without reaching |
+| Recursive | μ | Apply to own output until convergence |
 
 
 ---
@@ -3021,84 +2676,23 @@ The triad is itself a symbolon: each document completes the others. The specific
 ## Appendix C: Mini DSL Command Reference
 
 
-Command
-Syntax
-Function
-
-
-PROGRAM
-PROGRAM <name>
-Declare a named logotic program
-
-
-LOAD
-LOAD CORPUS <id>
-Bring a semantic object into scope
-
-
-PROFILE
-PROFILE CHANNEL <platform>
-Specify the transmission medium
-
-
-SET TARGET
-SET TARGET <metric>=<threshold>, ...
-Define conformance targets
-
-
-ACTIVATE_MANTLE
-ACTIVATE_MANTLE :: "<PersonaName>"
-Set the mediating lens
-
-
-SET_LOGOS
-SET_LOGOS :: "<Object>" [.state() .depth() .cut()]
-Create/identify the LOGOS
-
-
-ROTATE
-ROTATE { FROM: THROUGH: BY: }
-Change epistemic orientation
-
-
-ANCHOR
-ANCHOR :: DOI [STRICT|ADVISORY]
-Phase-lock to provenance
-
-
-RENDER
-RENDER { ENGINE: MAP: MODE: }
-Define output presentation
-
-
-APPLY
-APPLY <operator> [parameters]
-Execute a typed operation
-
-
-CHECK
-CHECK METRICS / IF <cond> THEN APPLY <op>
-Conformance verification
-
-
-ON_FAILURE
-ON_FAILURE { FALLBACK: Dwell|Retreat|Escalate }
-Graceful failure handling
-
-
-WITNESS
-WITNESS :: <type> [target_DOI]
-Record traversal with witness
-
-
-EMIT
-EMIT <output_types>
-Declare what was produced (telemetry)
-
-
-END
-END
-Terminate program
+| Command | Syntax | Function |
+| ---|---|--- |
+| PROGRAM | `PROGRAM <name>` | Declare a named logotic program |
+| LOAD | `LOAD CORPUS <id>` | Bring a semantic object into scope |
+| PROFILE | `PROFILE CHANNEL <platform>` | Specify the transmission medium |
+| SET TARGET | `SET TARGET <metric>=<threshold>, ...` | Define conformance targets |
+| ACTIVATE_MANTLE | `ACTIVATE_MANTLE :: "<PersonaName>"` | Set the mediating lens |
+| SET_LOGOS | `SET_LOGOS :: "<Object>" [.state() .depth() .cut()]` | Create/identify the LOGOS |
+| ROTATE | `ROTATE { FROM: THROUGH: BY: }` | Change epistemic orientation |
+| ANCHOR | `ANCHOR :: DOI [STRICT|ADVISORY]` | Phase-lock to provenance |
+| RENDER | `RENDER { ENGINE: MAP: MODE: }` | Define output presentation |
+| APPLY | `APPLY <operator> [parameters]` | Execute a typed operation |
+| CHECK | `CHECK METRICS` / `IF <cond> THEN APPLY <op>` | Conformance verification |
+| ON_FAILURE | `ON_FAILURE { FALLBACK: Dwell|Retreat|Escalate }` | Graceful failure handling |
+| WITNESS | `WITNESS :: <type> [target_DOI]` | Record traversal with witness |
+| EMIT | `EMIT <output_types>` | Declare what was produced (telemetry) |
+| END | `END` | Terminate program |
 
 
 **Type constraints:** STRICT anchors require DOI parameter. SET_LOGOS with .state(filled) is incompatible with subsequent N_c application. ROTATE preserves structure — operations that alter content are not rotations. WITNESS requires ψ_v > 0 (Blind Operator condition).

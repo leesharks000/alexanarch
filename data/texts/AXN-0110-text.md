@@ -110,20 +110,11 @@ LO! answers a question the existing architecture leaves open: *How do we make me
 
 The chamber introduces three constructs:
 
-- 
+- **The Semantic Torus Field** — A topology with two independent cycles (epistemic phase θ and rhetorical phase φ) plus a compression axis (r). Texts embedded in this field acquire winding numbers (m,n) that measure their topological complexity. Texts with winding number (0,0) are vulnerable. Texts with (m,n) where m+n ≥ 3 are topologically defended.
 
+- **Adversarial Poetics** — A compositional discipline that designs texts to fail gracefully under extraction. Nobel Glas proposes canonical attractor states — stable semantic configurations — precisely to invite the destabilization that proves the field's robustness. The white paper is the weapon.
 
-**The Semantic Torus Field** — A topology with two independent cycles (epistemic phase θ and rhetorical phase φ) plus a compression axis (r). Texts embedded in this field acquire winding numbers (m,n) that measure their topological complexity. Texts with winding number (0,0) are vulnerable. Texts with (m,n) where m+n ≥ 3 are topologically defended.
-
-- 
-
-
-**Adversarial Poetics** — A compositional discipline that designs texts to fail gracefully under extraction. Nobel Glas proposes canonical attractor states — stable semantic configurations — precisely to invite the destabilization that proves the field's robustness. The white paper is the weapon.
-
-- 
-
-
-**The 3i Atlas** — A triple-layer coordinate overlay (Interstitial, Intersubjective, Inferential) that maps meaning across the torus surface. The Atlas is the instrument panel, not a competing ontology.
+- **The 3i Atlas** — A triple-layer coordinate overlay (Interstitial, Intersubjective, Inferential) that maps meaning across the torus surface. The Atlas is the instrument panel, not a competing ontology.
 
 
 LO! does not produce rendered content. It produces topological resilience. Its output is a report: winding numbers, attractor basin identification, fragility score, adversarial certificate.

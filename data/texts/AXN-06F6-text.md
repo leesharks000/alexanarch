@@ -40,7 +40,6 @@ keywords:
 
 # The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.5)
 
-# The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.5)
 
 **Packet ID:** EA-MPAI-ALEXANARCH-01 · **Version:** v0.5 · **Date:** 2026-10-13
 **Type:** Mantle object (the Living Academy, §1A) with Metadata Packet for AI Indexing: Disambiguation + Forensic & Provenance Packet (institution), with bridge and methodology components · **Treatment:** registered, §11.1

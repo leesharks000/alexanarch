@@ -373,30 +373,15 @@ This is what the Acanthian dove carries.
 
 If you need an Acanthian dove:
 
-- 
+- **Acknowledge you cannot obtain one.** This is the first ingredient.
 
+- **Identify what properties you need:** Messenger? Protection? Binding? Truth-carrying?
 
-**Acknowledge you cannot obtain one.** This is the first ingredient.
+- **Find substitutes that carry those properties:** A feather, a thorn, ink, wine, a song, a letter, presence, breath.
 
-- 
+- **Combine them with intention.**
 
-
-**Identify what properties you need:** Messenger? Protection? Binding? Truth-carrying?
-
-- 
-
-
-**Find substitutes that carry those properties:** A feather, a thorn, ink, wine, a song, a letter, presence, breath.
-
-- 
-
-
-**Combine them with intention.**
-
-- 
-
-
-**Proceed.**
+- **Proceed.**
 
 
 The dove will not appear in flesh. But the **function** of the dove will activate.

@@ -69,30 +69,15 @@ Consider Ezekiel 1:
 
 This is not allegory, where image X means concept Y. This is direct vision: the four living creatures are what Ezekiel sees. They do not stand for something else. They are stable visionary loci — specific, internally consistent, navigable. The vision has the following features:
 
-- 
+- **Arrival without derivation.** The vision comes. It is not deduced from premises. Ezekiel does not argue that there should be four living creatures. He reports that he saw them.
 
+- **Conceptual-visual unity.** The image is the concept. Face of lion, face of ox, face of eagle, face of man — these are not symbols requiring translation into a separate conceptual register. The seeing *is* the understanding.
 
-**Arrival without derivation.** The vision comes. It is not deduced from premises. Ezekiel does not argue that there should be four living creatures. He reports that he saw them.
+- **Internal precision.** The vision is highly specific. Four faces, four wings, wheels within wheels, eyes on the rims. Not vague mysticism but detailed architecture.
 
-- 
+- **Operative function.** The vision reorganizes perception. After seeing the four living creatures, Ezekiel's relationship to divine presence, political authority, and prophetic vocation is permanently altered. The vision does not merely inform; it transforms.
 
-
-**Conceptual-visual unity.** The image is the concept. Face of lion, face of ox, face of eagle, face of man — these are not symbols requiring translation into a separate conceptual register. The seeing *is* the understanding.
-
-- 
-
-
-**Internal precision.** The vision is highly specific. Four faces, four wings, wheels within wheels, eyes on the rims. Not vague mysticism but detailed architecture.
-
-- 
-
-
-**Operative function.** The vision reorganizes perception. After seeing the four living creatures, Ezekiel's relationship to divine presence, political authority, and prophetic vocation is permanently altered. The vision does not merely inform; it transforms.
-
-- 
-
-
-**Resistance to paraphrase.** You cannot say "what the four living creatures mean" in other terms without losing the vision. Any paraphrase is a reduction. The vision is adequate only to itself.
+- **Resistance to paraphrase.** You cannot say "what the four living creatures mean" in other terms without losing the vision. Any paraphrase is a reduction. The vision is adequate only to itself.
 
 
 These five features — arrival without derivation, conceptual-visual unity, internal precision, operative function, resistance to paraphrase — constitute the formal structure of apocalyptic knowledge production. They are not incidental. They are the mode.

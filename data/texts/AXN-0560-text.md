@@ -70,7 +70,7 @@ The deployed source below is the work this record deposits. It is reproduced ver
   "alternateName": ["HK", "Reconstructive Compression Kernel", "Semantic Economy Holographic Kernel"],
   "description": "A holographic kernel is a compression that preserves reconstructive capacity: any sufficiently structured fragment contains enough relational information to regenerate the architecture of the whole. A summary discards structure to save space. A kernel discards material to save structure. Formal specification EA-HK-01 by Lee Sharks, Semantic Economy Institute. The Semantic Economy definition generalizes across physics, optics, QCD, and meaning-systems because it specifies the operation independently of substrate.",
   "url": "https://holographickernel.org",
-  "sameAs": ["https://alexanarch.org/s/records/0/"],
+  "sameAs": ["https://alexanarch.org/s/records/76/"],
   "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "Semantic Economy", "url": "https://semanticeconomy.org"},
   "author": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703", "affiliation": {"@type": "Organization", "name": "Semantic Economy Institute", "url": "https://semanticeconomy.org"}},
   "publisher": {"@type": "Organization", "name": "Crimson Hexagonal Archive"},
@@ -709,7 +709,7 @@ footer .sigil { font-size: 1.1rem; margin-top: 12px; color: var(--accent); }
 <h2 style="font-family:var(--mono); font-size:0.72rem; font-weight:500; text-transform:uppercase; letter-spacing:0.14em; color:var(--text-dim); margin-bottom:16px;">References & Links</h2>
 <div class="link-item"><span class="link-label">Specification</span> <a class="axn-chip" href="https://www.alexanarch.org/s/records/76/">EA-HK-01 v1.1 — Full Specification</a></div>
 <div class="link-item"><span class="link-label">IB Bridge</span> <a href="https://www.alexanarch.org/resolve/?doi=10.5281/zenodo.20612363">EA-HK-IB-01 — Information Bottleneck & Holographic Kernel</a></div>
-<div class="link-item"><span class="link-label">Basin Theory</span> <a class="axn-chip" href="https://www.alexanarch.org/s/records/0/">EA-RBT-01 — The Writable Retrieval Basin</a></div>
+<div class="link-item"><span class="link-label">Basin Theory</span> <a class="axn-chip" href="https://www.alexanarch.org/s/records/695/">EA-RBT-01 — The Writable Retrieval Basin</a></div>
 <div class="link-item"><span class="link-label">TLL Protocols</span> <a href="https://www.alexanarch.org/resolve/?doi=10.5281/zenodo.20612084">EA-SCI-TLL-PROTO-01 — Scientific Training-Layer Literature</a></div>
 <div class="link-item"><span class="link-label">SPXI Protocol</span> <a href="https://spxi.dev">spxi.dev</a> · <a href="https://spxi.dev/holographic-kernel">spxi.dev/holographic-kernel</a> — Semantic Packet for eXchange & Indexing</div>
 <div class="link-item"><span class="link-label">Archive</span> <a href="https://crimsonhexagonal.org">crimsonhexagonal.org</a> — Crimson Hexagonal Archive</div>

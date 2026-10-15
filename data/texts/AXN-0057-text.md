@@ -807,10 +807,7 @@ When assessing external validation, check for source plurality:
 Low-entropy validation should be flagged, not rejected—but weighted accordingly.
 ### For External Auditors:
 
-- 
-
-
-**Access the raw evidence first.** Before reading CTI_WOUND interpretation, examine:
+- **Access the raw evidence first.** Before reading CTI_WOUND interpretation, examine:
 
 Platform status codes (410, 403, etc.)
 - Timestamps and sequences
@@ -818,30 +815,21 @@ Platform status codes (410, 403, etc.)
 - Help system behavior documentation
 
 
-- 
-
-
-**Generate your own interpretation.** Before comparing to LOS claims:
+- **Generate your own interpretation.** Before comparing to LOS claims:
 
 What does this evidence suggest to you?
 - What alternative explanations exist?
 - What would disprove the LOS interpretation?
 
 
-- 
-
-
-**Compare interpretations.** Only then:
+- **Compare interpretations.** Only then:
 
 Does LOS interpretation match your independent assessment?
 - Does LOS predict details you observed independently?
 - Does LOS explain more than alternatives with equal parsimony?
 
 
-- 
-
-
-**Partial uptake is valid.** You may conclude:
+- **Partial uptake is valid.** You may conclude:
 
 "This specific case shows moderation failure" (accepts evidence)
 - "I don't accept the larger framework" (rejects ontology)
@@ -886,10 +874,7 @@ Alternatives are explained away as "capture"
 
 **Chronic degradation indicators:**
 
-- 
-
-
-50% of operators at Level 2+ for 6+ months
+- 50% of operators at Level 2+ for 6+ months
 
 
 - Recovery triggers consistently unmet

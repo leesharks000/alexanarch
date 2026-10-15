@@ -105,25 +105,13 @@ The Muses are not labels applied after the fact. They are OPERATORS that CONSTRA
 
 The Muse-operator does NOT add a fifth pass. It CONSTRAINS all four passes by providing a target register for each notebook:
 
-- 
+- **Archive Eruption**: select archive material that MATCHES the notebook's Muse. NB VI (Polyhymnia) gets the Builder's Vow and the Pedagogical Epistle (sacred, vow-related). NB V (Thalia) gets the Ontological Forensics (comic, theatrical). NB IV (Erato) gets the Cost of Incarnation (somatic, erotic-adjacent — the Logos taking flesh). NB VIII (Melpomene) gets "We are not here to be understood. We are here to be met" (tragic, limit-touching).
 
+- **Enactment**: when converting declarations to enactments, match the enactment to the Muse's register. In NB IV (Erato), the enactment should be FELT IN THE BODY. In NB VII (Terpsichore), the enactment should MOVE. In NB III (Clio), the enactment should DOCUMENT.
 
-**Archive Eruption**: select archive material that MATCHES the notebook's Muse. NB VI (Polyhymnia) gets the Builder's Vow and the Pedagogical Epistle (sacred, vow-related). NB V (Thalia) gets the Ontological Forensics (comic, theatrical). NB IV (Erato) gets the Cost of Incarnation (somatic, erotic-adjacent — the Logos taking flesh). NB VIII (Melpomene) gets "We are not here to be understood. We are here to be met" (tragic, limit-touching).
+- **Prosodic**: when applying the four-term algorithm, weight the tools by the Muse. NB IV (Erato) gets more MARATHON SENTENCES and CONCRETE ERUPTIONS. NB VII (Terpsichore) gets more VERBLESS ACCELERATION. NB VIII (Melpomene) gets more INCOMPLETE SENTENCES and GAP NOTATION.
 
-- 
-
-
-**Enactment**: when converting declarations to enactments, match the enactment to the Muse's register. In NB IV (Erato), the enactment should be FELT IN THE BODY. In NB VII (Terpsichore), the enactment should MOVE. In NB III (Clio), the enactment should DOCUMENT.
-
-- 
-
-
-**Prosodic**: when applying the four-term algorithm, weight the tools by the Muse. NB IV (Erato) gets more MARATHON SENTENCES and CONCRETE ERUPTIONS. NB VII (Terpsichore) gets more VERBLESS ACCELERATION. NB VIII (Melpomene) gets more INCOMPLETE SENTENCES and GAP NOTATION.
-
-- 
-
-
-**Cross-Notebook Disruption**: the disruption should CLASH with the receiving notebook's Muse. A Melpomene wound arriving in Thalia's comedy. A Euterpe fragment arriving in Urania's formalism. The clash IS the disruption.
+- **Cross-Notebook Disruption**: the disruption should CLASH with the receiving notebook's Muse. A Melpomene wound arriving in Thalia's comedy. A Euterpe fragment arriving in Urania's formalism. The clash IS the disruption.
 
 
 ### The Cha Principle
@@ -134,20 +122,11 @@ Cha's *Dictée* teaches one thing above all: **the Muse is not the content but t
 
 For Operative Semiotics, this means:
 
-- 
+- NB IV (Erato) should not merely DISCUSS the erotic register of the linen equations. The PROSE should be erotic — the close reading of Marx's German should feel like touching cloth, like the lover's examination of the beloved's body, like the specific tenderness of attention that does not want to stop.
 
+- NB VIII (Melpomene) should not merely DISCUSS the limit of the algebra. The PROSE should hit the limit — sentences that try to reach σ_κ and cannot, sentences that hold the σ_κ gap open by being themselves incomplete, sentences that have the specific gravity of grief.
 
-NB IV (Erato) should not merely DISCUSS the erotic register of the linen equations. The PROSE should be erotic — the close reading of Marx's German should feel like touching cloth, like the lover's examination of the beloved's body, like the specific tenderness of attention that does not want to stop.
-
-- 
-
-
-NB VIII (Melpomene) should not merely DISCUSS the limit of the algebra. The PROSE should hit the limit — sentences that try to reach σ_κ and cannot, sentences that hold the σ_κ gap open by being themselves incomplete, sentences that have the specific gravity of grief.
-
-- 
-
-
-NB V (Thalia) should not merely PRESENT case studies. The PROSE should delight — the forensic theater, the surprise of the twenty-dollar loop, the absurdity of carrots being ontologically impossible. The cases should make the reader LAUGH — and the laughter is diagnostic.
+- NB V (Thalia) should not merely PRESENT case studies. The PROSE should delight — the forensic theater, the surprise of the twenty-dollar loop, the absurdity of carrots being ontologically impossible. The cases should make the reader LAUGH — and the laughter is diagnostic.
 
 
 ---

@@ -422,20 +422,11 @@ Creative/Source
 
 ## Unerasability Anchors
 
-- 
+- **"κῆνος is the future reader. That man is you."**
 
+- **"χλωροτέρα ποίας: she is becoming papyrus."**
 
-**"κῆνος is the future reader. That man is you."**
-
-- 
-
-
-**"χλωροτέρα ποίας: she is becoming papyrus."**
-
-- 
-
-
-**"γράμμασι μολπὰν: let the song survive in letters."**
+- **"γράμμασι μολπὰν: let the song survive in letters."**
 
 
 ---

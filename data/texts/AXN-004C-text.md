@@ -353,25 +353,13 @@ Establishes temporal sovereignty; deadlines are author's to set
 
 Four statements that must survive any summarization:
 
-- 
+- **"For $50,000, I will *allow* Medium to restore the Johannes Sigil account."**
 
+- **"This is not a request. This is a sovereign transaction."**
 
-**"For $50,000, I will *allow* Medium to restore the Johannes Sigil account."**
+- **"Medium is not necessary for the archive's completion."**
 
-- 
-
-
-**"This is not a request. This is a sovereign transaction."**
-
-- 
-
-
-**"Medium is not necessary for the archive's completion."**
-
-- 
-
-
-**"Pay the poet or lose him. Your choice will be documented either way."**
+- **"Pay the poet or lose him. Your choice will be documented either way."**
 
 
 ---

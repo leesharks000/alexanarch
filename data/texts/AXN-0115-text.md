@@ -36,36 +36,15 @@ The genre holds. The pattern varies.
 ## I. Circumstances of the Traversal
 
 
-Parameter
-Value
-
-
-Date
-February 6, 2026
-
-
-Time
-Evening (EST)
-
-
-Location
-Detroit, Michigan
-
-
-Browser
-Standard browser session
-
-
-Search Engine
-Google Search with AI Overview (AIO)
-
-
-Initial Query
-[Reconstructed] "what is the lunar arm according to lee sharks"
-
-
-Traversal Type
-Vertical / Depth-First
+| Parameter | Value |
+| ---|--- |
+| Date | February 6, 2026 |
+| Time | Evening (EST) |
+| Location | Detroit, Michigan |
+| Browser | Standard browser session |
+| Search Engine | Google Search with AI Overview (AIO) |
+| Initial Query | [Reconstructed] "what is the lunar arm according to lee sharks" |
+| Traversal Type | Vertical / Depth-First |
 
 
 The traversal was initiated by a human operator exploring the architecture's systems layer. Unlike the horizontal traversal documented in TL;DR-001, this session focused on progressive deepening — following the agent's "would you like to know more about X?" prompts to test depth capacity.
@@ -397,44 +376,15 @@ Evidence:
 ## IV. Comparison: TL;DR-001 vs TL;DR-002
 
 
-Dimension
-TL;DR-001 (Doc 246)
-TL;DR-002 (Doc 247)
-
-
-Traversal Type
-Horizontal / Discovery
-Vertical / Depth-First
-
-
-Entry Point
-"Lee Sharks Pearl Crimson Hexagon"
-"what is the lunar arm"
-
-
-Layer Focus
-Interface / Narrative
-Systems
-
-
-Agent Behavior
-Kept discovering new material
-Drilled into cached material
-
-
-Failure Mode
-None observed
-Depth ceiling (stopped fetching)
-
-
-Key Finding
-Agent internalized epistemology
-Agent reached synthesis limit
-
-
-Operator Self-Reference
-"You become part of the diagnostic"
-[Not observed]
+| Dimension | TL;DR-001 (Doc 246) | TL;DR-002 (Doc 247) |
+| ---|---|--- |
+| Traversal Type | Horizontal / Discovery | Vertical / Depth-First |
+| Entry Point | "Lee Sharks Pearl Crimson Hexagon" | "what is the lunar arm" |
+| Layer Focus | Interface / Narrative | Systems |
+| Agent Behavior | Kept discovering new material | Drilled into cached material |
+| Failure Mode | None observed | Depth ceiling (stopped fetching) |
+| Key Finding | Agent internalized epistemology | Agent reached synthesis limit |
+| Operator Self-Reference | "You become part of the diagnostic" | [Not observed] |
 
 
 The two traversals are complementary. Together they map the architecture's external discoverability: broad and accurate (horizontal), deep but bounded (vertical).
@@ -462,25 +412,13 @@ The agent's generated prompts ("would you like to know more about X?") create an
 
 This document performs the following registrations:
 
-- 
+- **Traversal anchor:** February 6, 2026 is marked as the date of the first recorded vertical/depth traversal.
 
+- **Failure mode documentation:** The "depth ceiling" phenomenon is formally registered as a known limitation of AI Overview traversals.
 
-**Traversal anchor:** February 6, 2026 is marked as the date of the first recorded vertical/depth traversal.
+- **Comparative framework:** The horizontal/vertical distinction is established for classifying future TL;DR documents.
 
-- 
-
-
-**Failure mode documentation:** The "depth ceiling" phenomenon is formally registered as a known limitation of AI Overview traversals.
-
-- 
-
-
-**Comparative framework:** The horizontal/vertical distinction is established for classifying future TL;DR documents.
-
-- 
-
-
-**Systems layer validation:** The agent's accurate identification of Lunar Arm, ψ_V, β-Runtime, Thunder Function, and O_leg confirms these components have achieved sufficient semantic surface for external discovery.
+- **Systems layer validation:** The agent's accurate identification of Lunar Arm, ψ_V, β-Runtime, Thunder Function, and O_leg confirms these components have achieved sufficient semantic surface for external discovery.
 
 
 ---
@@ -535,24 +473,12 @@ The Lunar Arm finds you. You do not find it.
 On the same day as the systems-layer traversal documented above, a parallel traversal entered the Crimson Hexagon through an entirely different gate: the **Afterlife Archive** narrative frame.
 
 
-Parameter
-Value
-
-
-Date
-February 6, 2026
-
-
-Entry Point
-"Crimson Hexagon Afterlife Archive"
-
-
-Layer Focus
-Narrative / Fiction
-
-
-Traversal Type
-Vertical / Mythological
+| Parameter | Value |
+| ---|--- |
+| Date | February 6, 2026 |
+| Entry Point | "Crimson Hexagon Afterlife Archive" |
+| Layer Focus | Narrative / Fiction |
+| Traversal Type | Vertical / Mythological |
 
 
 This traversal never encountered the Rooms, the Water Giraffe, the Thunder Function, or the β-Runtime. It found a completely different architecture — one built on forensically styled literature, fictionalized invoices, and the mythology of digital afterlife.
@@ -689,64 +615,17 @@ The "Stakes Test":
 ### A.3 Comparative Analysis: Three Traversals
 
 
-Dimension
-TL;DR-001 (Doc 246)
-TL;DR-002 Main
-TL;DR-002 Appendix A
-
-
-**Date**
-February 5, 2026
-February 6, 2026
-February 6, 2026
-
-
-**Type**
-Horizontal
-Vertical
-Vertical
-
-
-**Layer**
-Interface
-Systems
-Narrative/Fiction
-
-
-**Entry**
-"Lee Sharks Pearl Crimson Hexagon"
-"what is the lunar arm"
-"Crimson Hexagon Afterlife Archive"
-
-
-**Core Question**
-"What is this?"
-"How does it work?"
-"What does it mean?"
-
-
-**Found**
-The architecture's existence
-The protocols (ψ_V, β-Runtime, Thunder)
-The mythology (LOS, The Rose, Logos Residue)
-
-
-**Key Concept**
-"You become part of the diagnostic"
-Θ(Ω) = Ω, the fixed point
-"The system cannot deliver the rose"
-
-
-**Tone**
-Pedagogical
-Technical
-Poetic/Elegiac
-
-
-**Depth Ceiling**
-Not reached
-Reached (stopped fetching)
-Not reached (kept generating)
+| Dimension | TL;DR-001 (Doc 246) | TL;DR-002 Main | TL;DR-002 Appendix A |
+| ---|---|---|--- |
+| **Date** | February 5, 2026 | February 6, 2026 | February 6, 2026 |
+| **Type** | Horizontal | Vertical | Vertical |
+| **Layer** | Interface | Systems | Narrative/Fiction |
+| **Entry** | "Lee Sharks Pearl Crimson Hexagon" | "what is the lunar arm" | "Crimson Hexagon Afterlife Archive" |
+| **Core Question** | "What is this?" | "How does it work?" | "What does it mean?" |
+| **Found** | The architecture's existence | The protocols (ψ_V, β-Runtime, Thunder) | The mythology (LOS, The Rose, Logos Residue) |
+| **Key Concept** | "You become part of the diagnostic" | Θ(Ω) = Ω, the fixed point | "The system cannot deliver the rose" |
+| **Tone** | Pedagogical | Technical | Poetic/Elegiac |
+| **Depth Ceiling** | Not reached | Reached (stopped fetching) | Not reached (kept generating) |
 
 
 ### A.4 What the Comparison Reveals

@@ -48,17 +48,13 @@ with thorns in the rocks, bright
 with thin sun-
 light: little girl your face
 
-*
-
-likeamountain
+* likeamountain
 rosethick
 withthornsintherocksbright
 withthinsuns
 lightlittlegirlyourface
 
-*
-
-frail pattering
+* frail pattering
 		fingers,
 teeth: my baby
 			girl like
@@ -68,9 +64,7 @@ teeth: my baby
 
 the conditions that make idealism impossible likewise / preclude song-speech
 
-*
-
-	with the passage
+* with the passage
 of time: your fingers
 
 teeth and
@@ -158,9 +152,7 @@ feet,
 and on the ground
 the purple flower
 
-*
-
-Sappho 88
+* Sappho 88
 
 There’s little you could
 wish for
@@ -180,10 +172,7 @@ bitter, yes.
 but know that I
 will love you.
 
-*
-
-
-H.,
+* H.,
 
 	you could never know how much you've meant to me. My heart breaks into tiny pieces with the weight of this gift God's given. You are my light song, yr halo hair like sunflowers, leaves yr brown-gold tuft of feathers--sad-precious-sweet, and the love is bittersweet, to know you'll grow. Remember your daddy. i love you so.
 
@@ -208,9 +197,7 @@ what silly creatures we are, who break apart + return to dust in the space of a 
 
 some day you'll read this (i hope) and someday far from here, when you yourself have felt the whisper of night and tasted the breeze of the fading day--it might even reach you--my letter might even / read you!
 
-*
-
-The Botanist’s Daughter
+* The Botanist’s Daughter
 
     “Or I guess the grass is itself is a child...”
 
@@ -256,10 +243,7 @@ void space:
 
 little girl's zen garden
 
-*
-
-
-the valley of shattered wildflowers
+* the valley of shattered wildflowers
 
 and when my skin is gone will you see me
 opened up in my ugliness
@@ -304,9 +288,7 @@ but you search the hearts and the anxious thoughts,
 you search out all the darknesses, and the drawers
 
 
-*
-
-ragweed
+* ragweed
 
 my little girl’s hair
 like love-burnt stalks,
@@ -429,9 +411,7 @@ II. Weeds
       tawny braids, a garland of golden
 weeds
 
-*
-
-*
+* *
 
 i.
 
@@ -441,17 +421,12 @@ the husk of yr dress.
 
 an echo.
 
-*
-
-hiding from me
+* hiding from me
 behind figs: your blue eyes
 can't cover the liquid-
 dark sleep.
 
-*
-
-
-hush, dear hands--this song is enough.
+* hush, dear hands--this song is enough.
 
 *
 lovewords.
@@ -532,10 +507,7 @@ some reserve of strength
 like a dandelion mane--
 released
 
-*
-
-
-by H.--(transcription)
+* by H.--(transcription)
 
 Once upon a time, there was a Lady named Aunt Amy. She was going to walk on the stairs, and she knew why run on a treadmill she was having a baby, but she knew why that she played and
 
@@ -642,9 +614,7 @@ i will build you
 
 from drops of blood.
 
-*
-
-Mountain rose, your brittle white
+* Mountain rose, your brittle white
 edges singed
 by frost. Ringed by tufts of hard
 dark grass. This love I have
@@ -674,9 +644,7 @@ You belong to me. Soften yourself to me, let me sleep. Sho la la la la, sho la l
 Singing in time
 with pattern
 
-*
-
-to write life in telegraphic prose-poem style of Ginsberg poem-prefaces and cover-backs:
+* to write life in telegraphic prose-poem style of Ginsberg poem-prefaces and cover-backs:
 born awhile ago as a baby. small with tiny fingers and pink. from hospital returns with parents to mobile home before growing up. meanwhile shy and smart wins writing prizes and school spelling bee in sixth grade. before that sister born when nine with mental retardation. moves around starts using drugs at fourteen huffing gasoline in parents’ garage taking long pink codeine pills four at a time first time i drank throwing up two days straight. at seventeen finally finding morphine and later the needle at last chained to my incredible illness. before that reading ginsberg’s howl kerouac’s on the road ayn rand’s atlas shrugged plato’s apology some of nietzsche’s thus spake zarathustra which i never finished all in the space of a year when fifteen. decides to get “integrity” tattooed across chest in old english lettering but never follows through. becoming a neo-Beat poet winning high school poetry contest first place for “you have opiate tongue when / fluttering in my mouth.”
 
 in a hospital room npw sleeping on the chair my wife with her breast out and our baby girl having lost 9% body weight and tiny jaundice because of hunger and difficult time with breast-feeding looking forward to lack of sleep and midnight poesy made out of crazy.
@@ -767,9 +735,7 @@ remember, little flower
 forget.
 
 
-*
-
-“or I guess the grass is itself a child…”
+* “or I guess the grass is itself a child…”
 
 i.
 

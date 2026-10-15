@@ -248,25 +248,13 @@ A **Zenodo packet Zenodo packet** treats the packet itself as content worthy of 
 
 This matters because:
 
-- 
+- **Framing is argument.** The claim that A→B→C demonstrates compression/recovery is not auxiliary to the triptych; it *is* the triptych's contribution.
 
+- **Relations are real.** The connection between documents is not merely "also see" or "related work." It is constitutive. The three versions are one document in three states.
 
-**Framing is argument.** The claim that A→B→C demonstrates compression/recovery is not auxiliary to the triptych; it *is* the triptych's contribution.
+- **Meta-levels anchor.** If only the versions are deposited, the framing lives in README files, in descriptions, in surrounding prose that can be lost or altered. Depositing the framing gives it the same persistence as the content.
 
-- 
-
-
-**Relations are real.** The connection between documents is not merely "also see" or "related work." It is constitutive. The three versions are one document in three states.
-
-- 
-
-
-**Meta-levels anchor.** If only the versions are deposited, the framing lives in README files, in descriptions, in surrounding prose that can be lost or altered. Depositing the framing gives it the same persistence as the content.
-
-- 
-
-
-**Genre instantiation is operative.** This document does not propose a genre; it enacts one. The effective act above is not description but performance. J.L. Austin's performative utterance, applied to scholarly infrastructure.
+- **Genre instantiation is operative.** This document does not propose a genre; it enacts one. The effective act above is not description but performance. J.L. Austin's performative utterance, applied to scholarly infrastructure.
 
 
 ---

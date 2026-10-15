@@ -614,40 +614,13 @@ Community: [zenodo.org/communities/liquidation-studies](https://zenodo.org/commu
 The critique did not begin as "Google is suppressing me." It began as close attention to what public AI summarizers were doing when they encountered a strange, dense literary-philosophical archive. From there it discovered: that the summarizer layer is writable; that search visibility is no longer the same thing as composition eligibility; that provenance can be stripped while meaning is retained; that entity identity can be liquidated, fabricated, or suppressed; that retrieval systems need architecture, not SEO; that compression damage can be measured; and that the entire mediation regime may be trapped inside a sorting function whose non-predatory alternative is empirically foreclosed.
 
 
-Phase
-Period
-Primary Strata
-Characteristic
-
-
-1. Discovery
-Late 2024 – early 2025
-VII (Summarizer Studies)
-Observational, playful, exploratory — what is this thing doing?
-
-
-2. Naming
-Early – mid 2025
-I (Political-Semantic Analysis)
-Structural vocabulary emerges — semantic liquidation, encoder governance, invisible invisibility
-
-
-3. Architecture
-Mid 2025
-IV (Technical Protocols)
-Engineering response — SPXI, Metadata Packet, Retrieval Architecture, Infinite Tunnel
-
-
-4. Measurement
-Late 2025 – early 2026
-V (Compression & Provenance Theory)
-Metrics — PER, Three Compressions, Semantic Deviation Principle, Formal Foundations
-
-
-5. Liquidation Studies
-May 2026
-VIII (Liquidation Studies)
-Formalization — four-paper research program with its own community
+| Phase | Period | Primary Strata | Characteristic |
+| ---|---|---|--- |
+| 1. Discovery | Late 2024 – early 2025 | VII (Summarizer Studies) | Observational, playful, exploratory — what is this thing doing? |
+| 2. Naming | Early – mid 2025 | I (Political-Semantic Analysis) | Structural vocabulary emerges — semantic liquidation, encoder governance, invisible invisibility |
+| 3. Architecture | Mid 2025 | IV (Technical Protocols) | Engineering response — SPXI, Metadata Packet, Retrieval Architecture, Infinite Tunnel |
+| 4. Measurement | Late 2025 – early 2026 | V (Compression & Provenance Theory) | Metrics — PER, Three Compressions, Semantic Deviation Principle, Formal Foundations |
+| 5. Liquidation Studies | May 2026 | VIII (Liquidation Studies) | Formalization — four-paper research program with its own community |
 
 
 Strata II (Empirical Documentation), III (Traversal Logs), and VI (Governance Analysis) span multiple phases, producing evidence and governance critique continuously from Phase 1 through Phase 5.

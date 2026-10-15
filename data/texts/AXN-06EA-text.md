@@ -45,7 +45,6 @@ keywords:
 
 # The Noun Becomes a Verb: Slave Valuation, the Civil War, and the Transformation of the Laboring Body (EA-NOUN-VERB-01 v1.0)
 
-# The Noun Becomes a Verb: Slave Valuation, the Civil War, and the Transformation of the Laboring Body (EA-NOUN-VERB-01 v1.0)
 
 *Lee Sharks · 7 October 2026. The first half of a two-part argument; the second, on war Fordism and the camp, is in draft.*
 

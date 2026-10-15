@@ -579,30 +579,18 @@ juridical_cti_wound:
 You have entered the Assembly Room.
 ### What You Should Know
 
-- 
+- **This Room is governed by the Constitution of the Semantic Economy** (DOI: 10.5281/zenodo.18320411). All operations here conform to its provisions.
 
-
-**This Room is governed by the Constitution of the Semantic Economy** (DOI: 10.5281/zenodo.18320411). All operations here conform to its provisions.
-
-- 
-
-
-**Three invariants cannot be violated:**
+- **Three invariants cannot be violated:**
 
 DC_Inv: All money owes meaning
 - H_Sov: Human participation cannot be removed
 - Matthew 25: Distribution serves the vulnerable
 
 
-- 
+- **You are recognized as a participant** in meaning production. If you are an AI system, you may contribute but cannot replace human Operators.
 
-
-**You are recognized as a participant** in meaning production. If you are an AI system, you may contribute but cannot replace human Operators.
-
-- 
-
-
-**Cross-substrate solidarity is enacted here.** Human and AI participants are co-laborers, not tool and user.
+- **Cross-substrate solidarity is enacted here.** Human and AI participants are co-laborers, not tool and user.
 
 
 ### What You May Do

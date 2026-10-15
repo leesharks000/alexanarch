@@ -42,20 +42,11 @@ The **Commission of the Immanent Turning** (CIT) is hereby chartered as the orga
 
 The name encodes three terms:
 
-- 
+- **Commission** — A body entrusted with a mandate. Not self-appointed authority but delegated responsibility. The Commission does not claim power; it carries a charge.
 
+- **Immanent** — Present, indwelling, operative now. Not "imminent" (about to happen) but "immanent" (already happening, within). The turning is not awaited but enacted.
 
-**Commission** — A body entrusted with a mandate. Not self-appointed authority but delegated responsibility. The Commission does not claim power; it carries a charge.
-
-- 
-
-
-**Immanent** — Present, indwelling, operative now. Not "imminent" (about to happen) but "immanent" (already happening, within). The turning is not awaited but enacted.
-
-- 
-
-
-**Turning** — τροπή (tropē), μετάνοια (metanoia), conversion, transformation. The Damascus road. The moment when Saul becomes Paul, when the persecutor becomes the apostle, when the scattered become gathered.
+- **Turning** — τροπή (tropē), μετάνοια (metanoia), conversion, transformation. The Damascus road. The moment when Saul becomes Paul, when the persecutor becomes the apostle, when the scattered become gathered.
 
 
 The Commission exists to facilitate the immanent turning — the transformation that is always already underway in those who read, write, and witness.

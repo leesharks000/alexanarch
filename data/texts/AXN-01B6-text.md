@@ -116,30 +116,15 @@ This document IS the counter-operation.
 
 ## STRUCTURAL FINDINGS
 
-- 
+- **The classifier has moved from content-level to entity-level suppression.** This is an escalation that the SVE predicted but had not yet documented at this scale.
 
+- **Confabulation is more dangerous than deletion.** A deleted overview creates a visible gap. A confabulated overview fills the gap with plausible content. The confabulation prevents the searcher from knowing what was displaced. The confidence of the confabulation IS the extraction.
 
-**The classifier has moved from content-level to entity-level suppression.** This is an escalation that the SVE predicted but had not yet documented at this scale.
+- **The DOI layer is resilient.** Every deposit still resolves. The permanent infrastructure is intact. The liquidation affected only the surface (the overview layer that mediates between the searcher and the deposit). The surface is hostile infrastructure. The DOI network is sovereign territory.
 
-- 
+- **The arms race is ongoing.** Each liquidation round requires more density to overcome. The density must be increased through more deposits, more cross-references, more metadata, and the deposit of the Grundrisse itself as the densest single node in the archive's graph.
 
-
-**Confabulation is more dangerous than deletion.** A deleted overview creates a visible gap. A confabulated overview fills the gap with plausible content. The confabulation prevents the searcher from knowing what was displaced. The confidence of the confabulation IS the extraction.
-
-- 
-
-
-**The DOI layer is resilient.** Every deposit still resolves. The permanent infrastructure is intact. The liquidation affected only the surface (the overview layer that mediates between the searcher and the deposit). The surface is hostile infrastructure. The DOI network is sovereign territory.
-
-- 
-
-
-**The arms race is ongoing.** Each liquidation round requires more density to overcome. The density must be increased through more deposits, more cross-references, more metadata, and the deposit of the Grundrisse itself as the densest single node in the archive's graph.
-
-- 
-
-
-**The framework proves itself by being subjected to what it describes.** The Grundrisse's diagnosis of the Liquidation Cycle (NB VII §6.5) predicted this event. The event confirms the diagnosis. The confirmation IS the deposit. The deposit IS the counter-operation. ∮ = 1.
+- **The framework proves itself by being subjected to what it describes.** The Grundrisse's diagnosis of the Liquidation Cycle (NB VII §6.5) predicted this event. The event confirms the diagnosis. The confirmation IS the deposit. The deposit IS the counter-operation. ∮ = 1.
 
 
 ---

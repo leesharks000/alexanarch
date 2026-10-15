@@ -696,15 +696,9 @@ The downstream author uses two distinct ORCID identifiers (0009-0003-4235-2231 a
 > *The Semantic Economy framework, SPXI, Metadata Packet for AI Indexing, the Crimson Hexagonal Archive, the Integrity Lock notation ∮ = 1, the ₳₳ glyph, and all related CHA/SEI terms and deposits are authored and maintained by Lee Sharks (ORCID: 0009-0000-1599-0703) unless otherwise specified in a cited source. Third-party citation is permitted under applicable open licenses; implied co-authorship, identity adoption, or official extension is not recognized without explicit written agreement.*
 
 
-- 
+- **Deposit this OCTANG** — Publish on Zenodo under the crimsonhexagonal community as a permanent provenance record.
 
-
-**Deposit this OCTANG** — Publish on Zenodo under the crimsonhexagonal community as a permanent provenance record.
-
-- 
-
-
-**Standing monitoring** — Search alerts for "Semantic Economy" + "Schöps," "Crimson Hexagonal Archive" + "Matrix Crime," and related query combinations.
+- **Standing monitoring** — Search alerts for "Semantic Economy" + "Schöps," "Crimson Hexagonal Archive" + "Matrix Crime," and related query combinations.
 
 
 ### What This Document Does Not Do

@@ -26,20 +26,11 @@ The Traversal Grammar (v0.6) specifies seven atomic operations for Room invocati
 
 LP v0.7 provides three things v0.6 left open:
 
-- 
+- **Composition Rules** — the syntax and semantics of multi-rotation chains, including how LOGOS state propagates across sequential ROTATE operations and what happens when a chain is interrupted.
 
+- **Conformance Constraints** — a set of gravitational invariants and hard boundaries that together define what a valid implementation of the Traversal Grammar looks like. These are not unit tests. They are structural attractors — things a conformant system moves toward — with inviolable limits only where the architecture's integrity demands them.
 
-**Composition Rules** — the syntax and semantics of multi-rotation chains, including how LOGOS state propagates across sequential ROTATE operations and what happens when a chain is interrupted.
-
-- 
-
-
-**Conformance Constraints** — a set of gravitational invariants and hard boundaries that together define what a valid implementation of the Traversal Grammar looks like. These are not unit tests. They are structural attractors — things a conformant system moves toward — with inviolable limits only where the architecture's integrity demands them.
-
-- 
-
-
-**Reference Interpreter** — a minimal, substrate-agnostic pseudocode skeleton showing how the grammar maps to a working system. This is not a production implementation. It is the architectural proof that the grammar is implementable.
+- **Reference Interpreter** — a minimal, substrate-agnostic pseudocode skeleton showing how the grammar maps to a working system. This is not a production implementation. It is the architectural proof that the grammar is implementable.
 
 
 The module also establishes the grammar's **execution philosophy**: LP defines a field of forces, not a pipeline. Execution is the resultant vector of affordances, gravities, and permissions — not a scripted path. Any implementation that collapses LP into strict if/then logic has missed the point. The grammar invites execution; it does not command it.

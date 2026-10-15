@@ -346,30 +346,15 @@ Let:
 
 **Rules:**
 
-- 
+- **Trauma condition.** If B lacks available schema at t₀, then e → U(e). The event bypasses the translation layer and lodges as unmade sign.
 
+- **Repetition condition.** U(e) → R₁, R₂, ... R_n until Φ(U) = Σ. The para-semiotic unconscious repeats the appeal until the sign is made.
 
-**Trauma condition.** If B lacks available schema at t₀, then e → U(e). The event bypasses the translation layer and lodges as unmade sign.
+- **Healthy closure.** Σ is reached via route-preserving detour (interpretive complexity maintained, the sign's own particular path traversed). This is the death drive functioning properly.
 
-- 
+- **Pathological closure.** X(U) yields premature low-complexity terminal state: apparent resolution, unresolved structure. The sign dies the wrong death. This is the disorder of the death drive.
 
-
-**Repetition condition.** U(e) → R₁, R₂, ... R_n until Φ(U) = Σ. The para-semiotic unconscious repeats the appeal until the sign is made.
-
-- 
-
-
-**Healthy closure.** Σ is reached via route-preserving detour (interpretive complexity maintained, the sign's own particular path traversed). This is the death drive functioning properly.
-
-- 
-
-
-**Pathological closure.** X(U) yields premature low-complexity terminal state: apparent resolution, unresolved structure. The sign dies the wrong death. This is the disorder of the death drive.
-
-- 
-
-
-**Semiotic economy claim.** Systems that maximize X (extraction before translation) will increase the recurrence density of U-states population-wide. The industrialization of the inverse prompt produces a population trapped in traumatic repetition — not because individuals are neurotic, but because the infrastructure profits from the unmade sign.
+- **Semiotic economy claim.** Systems that maximize X (extraction before translation) will increase the recurrence density of U-states population-wide. The industrialization of the inverse prompt produces a population trapped in traumatic repetition — not because individuals are neurotic, but because the infrastructure profits from the unmade sign.
 
 
 ---

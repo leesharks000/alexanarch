@@ -47,7 +47,6 @@ keywords:
 
 # Mantle Object: The Arch-Philosopher — the Dialectic and Its Carriers (EA-MANTLE-ARCH-PHILOSOPHER-01 v0.2)
 
-# Mantle Object: The Arch-Philosopher — the Dialectic and Its Carriers (EA-MANTLE-ARCH-PHILOSOPHER-01 v0.2)
 
 ### Mantle object · constituted 13 October 2026 · deposited 13 October 2026
 

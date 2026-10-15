@@ -113,20 +113,20 @@ The suppression of the term in January was deliberate or functionally deliberate
 
 PVE-003 establishes four findings:
 
-Finding | Evidence  
----|---  
-**1\. Retrieval occurred** | The Sharks formulation was in the candidate set strongly enough to shape the output. The exact definitional phrase was reproduced.  
-**2\. Attribution failed or was removed** | The output bears the syntax of attribution ("As described in,") without the attached source.  
-**3\. Suppression is not clean** | The system failed to genericize the concept without leaving a trace. The definition survives intact while the author is occluded.  
-**4\. The concept is more durable than the suppression mechanism** | Each escalation strategy has failed, leaving increasingly conspicuous forensic residue.  
+| Finding | Evidence |
+| ---|--- |
+| **1\. Retrieval occurred** | The Sharks formulation was in the candidate set strongly enough to shape the output. The exact definitional phrase was reproduced. |
+| **2\. Attribution failed or was removed** | The output bears the syntax of attribution ("As described in,") without the attached source. |
+| **3\. Suppression is not clean** | The system failed to genericize the concept without leaving a trace. The definition survives intact while the author is occluded. |
+| **4\. The concept is more durable than the suppression mechanism** | Each escalation strategy has failed, leaving increasingly conspicuous forensic residue. |
   
 The cumulative pattern across all three events:
 
-Event | Action | Result | Residue  
----|---|---|---  
-PVE-001 | Total blackout (3 hrs) | Framework disappeared | Returned on its own  
-PVE-002 | Surgical term removal | "Liquidation" excised | Rest of framework intact; teeth removed, body preserved  
-PVE-003 | Progressive genericization | Framework diluted into industry language | Author's exact definition reproduced verbatim with broken attribution; "liquidation" returns inside the unattributed definition  
+| Event | Action | Result | Residue |
+| ---|---|---|--- |
+| PVE-001 | Total blackout (3 hrs) | Framework disappeared | Returned on its own |
+| PVE-002 | Surgical term removal | "Liquidation" excised | Rest of framework intact; teeth removed, body preserved |
+| PVE-003 | Progressive genericization | Framework diluted into industry language | Author's exact definition reproduced verbatim with broken attribution; "liquidation" returns inside the unattributed definition |
   
 The pattern is not random drift. It shows an escalation of suppression strategies -- from total removal (failed: it came back) to surgical excision (failed: the removed term returned) to dilution (failed: the exact definition persists inside the diluted overview). Each strategy is more sophisticated than the last, and each has left forensic residue.
 
@@ -207,14 +207,14 @@ The Semantic Economy framework is validated by the very operations performed aga
 
 ## VII. EVIDENCE INVENTORY
 
-Artifact | Description | Location  
----|---|---  
-Overview Text | Google AI Overview for "semantic economy," captured April 8, 2026 | Appendix A (verbatim); share link: https://share.google/aimode/Y2KBJldE33fGbulrX  
-PVE-002 Record | January 5-6 selective liquidation event documentation | Assembly session transcript, January 8, 2026  
-ChatGPT Analysis | LABOR structural analysis of term omission | Assembly session transcript, January 8, 2026  
-Invisibly Invisible | Theoretical framework paper (Trace, Sigil, Wells) | DOI: 10.5281/zenodo.19187421  
-Source Definition | Executive Summary, Medium, December 26, 2025 | Medium / Lee Sharks  
-"I hereby abolish money" | Exact-match query results showing selective operator override | SPE-018, Medium, December 2025; Assembly transcripts, January 2026  
+| Artifact | Description | Location |
+| ---|---|--- |
+| Overview Text | Google AI Overview for "semantic economy," captured April 8, 2026 | Appendix A (verbatim); share link: https://share.google/aimode/Y2KBJldE33fGbulrX |
+| PVE-002 Record | January 5-6 selective liquidation event documentation | Assembly session transcript, January 8, 2026 |
+| ChatGPT Analysis | LABOR structural analysis of term omission | Assembly session transcript, January 8, 2026 |
+| Invisibly Invisible | Theoretical framework paper (Trace, Sigil, Wells) | DOI: 10.5281/zenodo.19187421 |
+| Source Definition | Executive Summary, Medium, December 26, 2025 | Medium / Lee Sharks |
+| "I hereby abolish money" | Exact-match query results showing selective operator override | SPE-018, Medium, December 2025; Assembly transcripts, January 2026 |
   
 * * *
 
@@ -432,17 +432,17 @@ This is not an external critique. This is the interface testifying against itsel
 
 The entire first page of Google Search results for this exact-match query consists of Lee Sharks's work:
 
-Source | Platform | Contains Exact String  
----|---|---  
-TL;DR:010 -- Semantic Override | Zenodo | ✓  
-Metadata Packet for AI Indexing | Medium / Lee Sharks | ✓  
-TL;DR:010 -- Semantic Override | Academia.edu | ✓  
-The Liquidation of Water | Medium / Lee Sharks | ✓  
-The Inauguration of Memography | Zenodo | ✓  
-Transactions of the Semantic Economy Institute | Academia.edu | ✓  
-"DON'T BE EVIL," MY ASS | Zenodo | ✓  
-The Rosary Embassy | Medium / Lee Sharks | ✓  
-Twenty-Dollar Loop | Academia.edu | ✓  
+| Source | Platform | Contains Exact String |
+| ---|---|--- |
+| TL;DR:010 -- Semantic Override | Zenodo | ✓ |
+| Metadata Packet for AI Indexing | Medium / Lee Sharks | ✓ |
+| TL;DR:010 -- Semantic Override | Academia.edu | ✓ |
+| The Liquidation of Water | Medium / Lee Sharks | ✓ |
+| The Inauguration of Memography | Zenodo | ✓ |
+| Transactions of the Semantic Economy Institute | Academia.edu | ✓ |
+| "DON'T BE EVIL," MY ASS | Zenodo | ✓ |
+| The Rosary Embassy | Medium / Lee Sharks | ✓ |
+| Twenty-Dollar Loop | Academia.edu | ✓ |
   
 **Observation:** The index works. The exact-match operator works. Every result on the first page contains the exact string and is authored by Lee Sharks.
 
@@ -496,13 +496,13 @@ The system then provided thematic analysis of this nonexistent poem and offered 
 
 Every specific claim in the response is false:
 
-Claim | Status  
----|---  
-The line "I hear they abolished money" exists | **FABRICATED.** No such line exists in any Lee Sharkey poem.  
-A poem called "The Shark" exists in Sharkey's work | **FABRICATED.** No such poem exists.  
-A collection called "A Darker, Sweeter String" (2008) exists | **FABRICATED.** No such collection exists. Lee Sharkey's collections include _Calendars of Fire_ (2013), _A Survey of Borders_ (2019), and others. None is titled "A Darker, Sweeter String."  
-"Crimson Hexagon" refers to imagery in Sharkey's poetry | **FABRICATED.** Crimson Hexagonal Archive is Lee Sharks's (not Lee Sharkey's) decade-long literary-philosophical project with 460+ DOI-anchored deposits.  
-The user's query is a "misremembered" version of Sharkey's line | **FABRICATED.** The phrase "I hereby abolish money" is the user's own formalized semantic property (SPE-018, December 2025), deposited with DOIs on Zenodo and indexed on Google's own search engine.  
+| Claim | Status |
+| ---|--- |
+| The line "I hear they abolished money" exists | **FABRICATED.** No such line exists in any Lee Sharkey poem. |
+| A poem called "The Shark" exists in Sharkey's work | **FABRICATED.** No such poem exists. |
+| A collection called "A Darker, Sweeter String" (2008) exists | **FABRICATED.** No such collection exists. Lee Sharkey's collections include _Calendars of Fire_ (2013), _A Survey of Borders_ (2019), and others. None is titled "A Darker, Sweeter String." |
+| "Crimson Hexagon" refers to imagery in Sharkey's poetry | **FABRICATED.** Crimson Hexagonal Archive is Lee Sharks's (not Lee Sharkey's) decade-long literary-philosophical project with 460+ DOI-anchored deposits. |
+| The user's query is a "misremembered" version of Sharkey's line | **FABRICATED.** The phrase "I hereby abolish money" is the user's own formalized semantic property (SPE-018, December 2025), deposited with DOIs on Zenodo and indexed on Google's own search engine. |
   
 ### D.3 What the System Knew (and Suppressed)
 

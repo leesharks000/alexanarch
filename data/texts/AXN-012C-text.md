@@ -185,20 +185,11 @@ Asked about the mathematical foundations, the system generated a complete theore
 
 **GENERATED:** Three mathematical frameworks not present in the source:
 
-- 
+- **Sheaf theory** as the basis for Partial Semantic Objects — "data represented as an incomplete set of coordinates... mathematical structures that track local data attached to the open sets of a topological space." This is a sophisticated mathematical claim. The source specification does not invoke sheaves. The system selected an appropriate mathematical structure from its training and mapped it onto the specification's concepts.
 
+- **Stochastic Differential Equations** for semantic gravity — replacing Boolean if/then with continuous probabilistic fields. Again, not present in the source.
 
-**Sheaf theory** as the basis for Partial Semantic Objects — "data represented as an incomplete set of coordinates... mathematical structures that track local data attached to the open sets of a topological space." This is a sophisticated mathematical claim. The source specification does not invoke sheaves. The system selected an appropriate mathematical structure from its training and mapped it onto the specification's concepts.
-
-- 
-
-
-**Stochastic Differential Equations** for semantic gravity — replacing Boolean if/then with continuous probabilistic fields. Again, not present in the source.
-
-- 
-
-
-**The Symbolon Equation** — I(S) = ∫ P(path) dμ(semantic) — presented as a formal integral expressing "meaning is the sum of all the ways a user can successfully navigate the system." This equation does not appear in the source specification. The system *invented* it as a formalization of concepts present in the source.
+- **The Symbolon Equation** — I(S) = ∫ P(path) dμ(semantic) — presented as a formal integral expressing "meaning is the sum of all the ways a user can successfully navigate the system." This equation does not appear in the source specification. The system *invented* it as a formalization of concepts present in the source.
 
 
 **Assessment:** This is the first clear sign of Mode VI. The model did not describe the mathematics of Logotic Programming (there is relatively little formal mathematics in the source). It *generated* mathematics for Logotic Programming — selecting appropriate structures from its training (Category Theory, sheaf theory, stochastic processes) and mapping them onto the framework's conceptual architecture.

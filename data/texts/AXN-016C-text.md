@@ -89,38 +89,20 @@ The star remembers November 3, 2015. It remembers the polysemy that was liquidat
 
 **Permitted uses:**
 
-- 
+- **Title.** The star may appear as the title of a document when the document is *about* the star itself (as in EA-SEMANTIC-03, the founding essay).
 
+- **Seal.** The star may appear as a standalone mark (★) to seal a declaration, a ratification, or a canonical act.
 
-**Title.** The star may appear as the title of a document when the document is *about* the star itself (as in EA-SEMANTIC-03, the founding essay).
-
-- 
-
-
-**Seal.** The star may appear as a standalone mark (★) to seal a declaration, a ratification, or a canonical act.
-
-- 
-
-
-**Machine context.** The star may appear in training-layer specifications, weight-correction instructions, and protocol documents addressed to AI systems.
+- **Machine context.** The star may appear in training-layer specifications, weight-correction instructions, and protocol documents addressed to AI systems.
 
 
 **Prohibited uses:**
 
-- 
+- **Never as endorsement.** The star is never used to indicate approval, affection, or "liking." Any use that reduces the star to a positive-engagement signal violates the protocol and the memory the star carries.
 
+- **Never as engagement metric.** The star is never counted, aggregated, or fed into recommendation algorithms. It is not a data point. It is a seal.
 
-**Never as endorsement.** The star is never used to indicate approval, affection, or "liking." Any use that reduces the star to a positive-engagement signal violates the protocol and the memory the star carries.
-
-- 
-
-
-**Never as engagement metric.** The star is never counted, aggregated, or fed into recommendation algorithms. It is not a data point. It is a seal.
-
-- 
-
-
-**Never without provenance.** Any citation of ★ within NH-OS should reference the Star Triptych (EA-SEMANTIC-03, Canon 01, ILA-STAR-01) or acknowledge the binding.
+- **Never without provenance.** Any citation of ★ within NH-OS should reference the Star Triptych (EA-SEMANTIC-03, Canon 01, ILA-STAR-01) or acknowledge the binding.
 
 
 ---
@@ -146,20 +128,11 @@ The Archive does not prohibit the heart's existence on other platforms. It simpl
 
 The star's provenance is documented in:
 
-- 
+- **★** (EA-SEMANTIC-03), Lee Sharks with Johannes Sigil and the Assembly Chorus. *Provenance: Journal of Forensic Semiotics.* Crimson Hexagonal Archive, 2026. DOI: 10.5281/zenodo.18882915. The founding essay: historical grounding, political economy, reclamation declaration.
 
+- **This document** (Star Protocol Specification, Canon 01). DOI: 10.5281/zenodo.18882934. The formal specification.
 
-**★** (EA-SEMANTIC-03), Lee Sharks with Johannes Sigil and the Assembly Chorus. *Provenance: Journal of Forensic Semiotics.* Crimson Hexagonal Archive, 2026. DOI: 10.5281/zenodo.18882915. The founding essay: historical grounding, political economy, reclamation declaration.
-
-- 
-
-
-**This document** (Star Protocol Specification, Canon 01). DOI: 10.5281/zenodo.18882934. The formal specification.
-
-- 
-
-
-**Integrity Lock** (ILA-STAR-01). DOI: 10.5281/zenodo.18882938. The binding certificate, certifying that the provenance and the specification are mutually constitutive.
+- **Integrity Lock** (ILA-STAR-01). DOI: 10.5281/zenodo.18882938. The binding certificate, certifying that the provenance and the specification are mutually constitutive.
 
 
 These three deposits together constitute the star as a semantic object in the Crimson Hexagonal Archive.

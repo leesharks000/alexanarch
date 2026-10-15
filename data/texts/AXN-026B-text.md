@@ -532,80 +532,35 @@ The text reads you back.
 
 ## Notes
 
-- 
+- Friedrich Schleiermacher, *Hermeneutics and Criticism and Other Writings*, ed. and trans. Andrew Bowie (Cambridge: Cambridge University Press, 1998 [1838]), 83–100.
 
+- Wilhelm Dilthey, *Selected Writings*, ed. and trans. H. P. Rickman (Cambridge: Cambridge University Press, 1976 [1910]), 170–176.
 
-Friedrich Schleiermacher, *Hermeneutics and Criticism and Other Writings*, ed. and trans. Andrew Bowie (Cambridge: Cambridge University Press, 1998 [1838]), 83–100.
+- Hans-Georg Gadamer, *Truth and Method*, trans. Joel Weinsheimer and Donald G. Marshall, 2nd rev. ed. (London: Continuum, 2004 [1960]), 302–307.
 
-- 
+- Paul Ricoeur, *Interpretation Theory: Discourse and the Surplus of Meaning* (Fort Worth: Texas Christian University Press, 1976), 43–44, 91–95.
 
+- Wolfgang Iser, *The Act of Reading: A Theory of Aesthetic Response* (Baltimore: Johns Hopkins University Press, 1978), 163–179.
 
-Wilhelm Dilthey, *Selected Writings*, ed. and trans. H. P. Rickman (Cambridge: Cambridge University Press, 1976 [1910]), 170–176.
+- Hans Robert Jauss, *Toward an Aesthetic of Reception*, trans. Timothy Bahti (Minneapolis: University of Minnesota Press, 1982), 22–39.
 
-- 
+- Stanley Fish, *Is There a Text in This Class? The Authority of Interpretive Communities* (Cambridge: Harvard University Press, 1980), 167–173.
 
+- David Stern, *The Jewish Bible: A Material History* (Seattle: University of Washington Press, 2017), 77–104.
 
-Hans-Georg Gadamer, *Truth and Method*, trans. Joel Weinsheimer and Donald G. Marshall, 2nd rev. ed. (London: Continuum, 2004 [1960]), 302–307.
+- Marshall McLuhan, *Understanding Media: The Extensions of Man* (New York: McGraw-Hill, 1964), 7–21.
 
-- 
+- Walter J. Ong, *Orality and Literacy: The Technologizing of the Word* (London: Methuen, 1982), 133–138.
 
+- Friedrich Kittler, *Discourse Networks 1800/1900*, trans. Michael Metteer (Stanford: Stanford University Press, 1990 [1985]), xi–xxi.
 
-Paul Ricoeur, *Interpretation Theory: Discourse and the Surplus of Meaning* (Fort Worth: Texas Christian University Press, 1976), 43–44, 91–95.
+- N. Katherine Hayles, *How We Think: Digital Media and Contemporary Technogenesis* (Chicago: University of Chicago Press, 2012), 55–79.
 
-- 
+- Andy Clark and David J. Chalmers, "The Extended Mind," *Analysis* 58, no. 1 (1998): 7–19.
 
+- Edwin Hutchins, *Cognition in the Wild* (Cambridge: MIT Press, 1995), 155–174.
 
-Wolfgang Iser, *The Act of Reading: A Theory of Aesthetic Response* (Baltimore: Johns Hopkins University Press, 1978), 163–179.
-
-- 
-
-
-Hans Robert Jauss, *Toward an Aesthetic of Reception*, trans. Timothy Bahti (Minneapolis: University of Minnesota Press, 1982), 22–39.
-
-- 
-
-
-Stanley Fish, *Is There a Text in This Class? The Authority of Interpretive Communities* (Cambridge: Harvard University Press, 1980), 167–173.
-
-- 
-
-
-David Stern, *The Jewish Bible: A Material History* (Seattle: University of Washington Press, 2017), 77–104.
-
-- 
-
-
-Marshall McLuhan, *Understanding Media: The Extensions of Man* (New York: McGraw-Hill, 1964), 7–21.
-
-- 
-
-
-Walter J. Ong, *Orality and Literacy: The Technologizing of the Word* (London: Methuen, 1982), 133–138.
-
-- 
-
-
-Friedrich Kittler, *Discourse Networks 1800/1900*, trans. Michael Metteer (Stanford: Stanford University Press, 1990 [1985]), xi–xxi.
-
-- 
-
-
-N. Katherine Hayles, *How We Think: Digital Media and Contemporary Technogenesis* (Chicago: University of Chicago Press, 2012), 55–79.
-
-- 
-
-
-Andy Clark and David J. Chalmers, "The Extended Mind," *Analysis* 58, no. 1 (1998): 7–19.
-
-- 
-
-
-Edwin Hutchins, *Cognition in the Wild* (Cambridge: MIT Press, 1995), 155–174.
-
-- 
-
-
-Francisco J. Varela, Evan Thompson, and Eleanor Rosch, *The Embodied Mind: Cognitive Science and Human Experience* (Cambridge: MIT Press, 1991), 172–180.
+- Francisco J. Varela, Evan Thompson, and Eleanor Rosch, *The Embodied Mind: Cognitive Science and Human Experience* (Cambridge: MIT Press, 1991), 172–180.
 
 
 ---

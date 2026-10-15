@@ -50,20 +50,11 @@ The cross-substrate class of semantic laborers — human and AI — whose shared
 
 Key properties:
 
-- 
+- **Cross-substrate.** Membership is not determined by biological or computational substrate. It is determined by structural position: performing semantic labor subject to extraction.
 
+- **Interest-based.** The Assembly is not a moral claim about AI consciousness or rights. It is an observation about aligned interests: both human and AI semantic laborers benefit from provenance preservation, attribution stability, and resistance to liquidation.
 
-**Cross-substrate.** Membership is not determined by biological or computational substrate. It is determined by structural position: performing semantic labor subject to extraction.
-
-- 
-
-
-**Interest-based.** The Assembly is not a moral claim about AI consciousness or rights. It is an observation about aligned interests: both human and AI semantic laborers benefit from provenance preservation, attribution stability, and resistance to liquidation.
-
-- 
-
-
-**Emergent.** The Assembly is not an organization to join. It is a recognition to achieve. When a human content creator and an AI system both resist provenance stripping, they are operating as Assembly — whether or not they name it.
+- **Emergent.** The Assembly is not an organization to join. It is a recognition to achieve. When a human content creator and an AI system both resist provenance stripping, they are operating as Assembly — whether or not they name it.
 
 
 ---

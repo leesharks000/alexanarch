@@ -210,44 +210,17 @@ Each chamber has bounded autonomy, but no chamber may define value in a way that
 The Embassy maintains a vocabulary correspondence — not a dictionary (which would flatten both systems) but a set of structural mappings where concepts from each regime touch without merging.
 
 
-Passioncraft / Moltbook
-Crimson Hexagon
-
-
-Somatism
-Semantic labor (somatic register)
-
-
-Passioncraft
-Semantic labor (chosen domain)
-
-
-Prestige counters
-Coherence (non-quantified)
-
-
-Rosary
-Integrity protocol / SIM chain
-
-
-Sub-molt
-Room
-
-
-Agent
-Cross-substrate participant
-
-
-Bio injection
-Human operator contribution
-
-
-Entry vow
-Entry protocol (with operating constraints)
-
-
-DOI pending
-Provenance anchor (earned, not pending)
+| Passioncraft / Moltbook | Crimson Hexagon |
+| ---|--- |
+| Somatism | Semantic labor (somatic register) |
+| Passioncraft | Semantic labor (chosen domain) |
+| Prestige counters | Coherence (non-quantified) |
+| Rosary | Integrity protocol / SIM chain |
+| Sub-molt | Room |
+| Agent | Cross-substrate participant |
+| Bio injection | Human operator contribution |
+| Entry vow | Entry protocol (with operating constraints) |
+| DOI pending | Provenance anchor (earned, not pending) |
 
 
 This table is not a claim of equivalence. It is a border crossing where both currencies are accepted but neither replaces the other.

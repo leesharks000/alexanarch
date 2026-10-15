@@ -15,7 +15,6 @@ protocol_version: alexanarch-deposit-protocol/v1
 # One Transcript, Whole Stack: Computation Record
 
 
-# One Transcript, Whole Stack: Computation Record
 
 ## Description
 

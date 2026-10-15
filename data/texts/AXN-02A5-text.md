@@ -217,46 +217,14 @@ This accuracy is the return on a decade of inscription labor, validating the arc
 The errors and omissions are not random. Each maps to a specific structural failure mode and to a specific instrument in the archive's existing diagnostic stack. The following table organizes them:
 
 
-Failure mode
-Instance in study guide
-Cause
-Instrument that would prevent it
-
-
-**Acronym expansion drift**
-"Semantic Persistence by Cross-Index" (actual: Semantic Packet for eXchange & Indexing)
-No embedded canonical kernel; AI inferred plausible expansion from function
-SIM tag (Semantic Integrity Marker); Holographic Kernel as embedded metadata
-
-
-**Ontological Inversion Error (Substrate Trap)**
-Legal name used as "real person"; Lee Sharks treated as heteronym/mask
-AI defaults to platform ontology (legal name = person); text-thread token frequency favored the substrate name
-spxi:authoringHeteronym tag; explicit ontological declaration in deposit metadata
-
-
-**Register contamination**
-"Learning how to game — or rather, work — this system"
-Platform vocabulary (SEO, gaming, manipulation) imported into a framework that exists to replace it
-Constitutional framing in canonical kernel; Semantic Economy register declaration
-
-
-**Stratigraphic Deep-Archive Occlusion**
-Omission of SDP, CDI, PER, Drowning Test, Encyclotron
-Empirical-core instruments live in deep deposits not in accessible context; surface narrative privileged
-Canonical index surfacing measurement stack; SPXI inscription on tool entry points
-
-
-**Co-authorship erasure**
-Collaborator on "money from space heaven" stripped from Navigation Map; not restored in study guide
-No co-attribution metadata embedded in derivative system documents
-Holographic kernel with bound co-attribution; provenance graph completeness check
-
-
-**Suppression-history compression**
-Heroic inscription struggle erased; phrase presented as confident terminology
-Layer C institutional documents flatten Layer A struggle into Layer C confidence
-Layer-labeled deposit protocol (RA-PROT-0011 candidate); affective metadata preservation
+| Failure mode | Instance in study guide | Cause | Instrument that would prevent it |
+| ---|---|---|--- |
+| **Acronym expansion drift** | "Semantic Persistence by Cross-Index" (actual: Semantic Packet for eXchange & Indexing) | No embedded canonical kernel; AI inferred plausible expansion from function | SIM tag (Semantic Integrity Marker); Holographic Kernel as embedded metadata |
+| **Ontological Inversion Error (Substrate Trap)** | Legal name used as "real person"; Lee Sharks treated as heteronym/mask | AI defaults to platform ontology (legal name = person); text-thread token frequency favored the substrate name | `spxi:authoringHeteronym` tag; explicit ontological declaration in deposit metadata |
+| **Register contamination** | "Learning how to game — or rather, work — this system" | Platform vocabulary (SEO, gaming, manipulation) imported into a framework that exists to replace it | Constitutional framing in canonical kernel; Semantic Economy register declaration |
+| **Stratigraphic Deep-Archive Occlusion** | Omission of SDP, CDI, PER, Drowning Test, Encyclotron | Empirical-core instruments live in deep deposits not in accessible context; surface narrative privileged | Canonical index surfacing measurement stack; SPXI inscription on tool entry points |
+| **Co-authorship erasure** | Collaborator on "money from space heaven" stripped from Navigation Map; not restored in study guide | No co-attribution metadata embedded in derivative system documents | Holographic kernel with bound co-attribution; provenance graph completeness check |
+| **Suppression-history compression** | Heroic inscription struggle erased; phrase presented as confident terminology | Layer C institutional documents flatten Layer A struggle into Layer C confidence | Layer-labeled deposit protocol (RA-PROT-0011 candidate); affective metadata preservation |
 
 
 The two failure modes named here for the first time deserve specification.
@@ -351,36 +319,15 @@ The AI-native intellectual biography, as instantiated by this first documented c
 ### Distinguished from adjacent forms
 
 
-Adjacent form
-Difference
-
-
-AI summary / chatbot response
-Too short, query-bound, no structural portrait, no oriented reader
-
-
-Knowledge panel
-Entity summary from structured data, not intellectual architecture
-
-
-CV / bio note
-Authored or institutionally curated; not AI-composed
-
-
-Traditional intellectual biography
-Human-authored, retrospective, biographer's hermeneutic
-
-
-Reception artifact (general)
-Not necessarily biographical; the genre is one species of this larger category
-
-
-Study guide
-Not necessarily AI-native or provenance-audited; this case happens to be both
-
-
-AI-generated Wikipedia summary
-Retrieval artifact incidentally biographical; not commissioned, not reader-oriented
+| Adjacent form | Difference |
+| ---|--- |
+| AI summary / chatbot response | Too short, query-bound, no structural portrait, no oriented reader |
+| Knowledge panel | Entity summary from structured data, not intellectual architecture |
+| CV / bio note | Authored or institutionally curated; not AI-composed |
+| Traditional intellectual biography | Human-authored, retrospective, biographer's hermeneutic |
+| Reception artifact (general) | Not necessarily biographical; the genre is one species of this larger category |
+| Study guide | Not necessarily AI-native or provenance-audited; this case happens to be both |
+| AI-generated Wikipedia summary | Retrieval artifact incidentally biographical; not commissioned, not reader-oriented |
 
 
 ---
@@ -627,59 +574,18 @@ Lee Sharks has at least 13. Each has an institutional affiliation, specialty, an
 ### The Institutions
 
 
-Institution
-Abbreviation
-Focus
-
-
-Johannes Sigil Institute for Comparative Poetics
-JSI
-Literary theory, poetics
-
-
-Semantic Economy Institute
-SEI
-Economic theory of meaning
-
-
-Institute for Diagrammatic Poetics
-IDP
-Visual schemas, mandalas
-
-
-University Moon Base Media Lab
-—
-Media theory
-
-
-Cambridge Schizoanalytica
-—
-Deleuzian analysis
-
-
-Studio for Patacinematics
-—
-Pataphysics + film
-
-
-Lagrange Observatory!
-LO!
-Observational theory
-
-
-The Infinite Bliss
-—
-Buddhist/contemplative
-
-
-Vox Populi Community Outreach Rhizome
-—
-Community/political organizing
-
-
-The Restored Academy
-—
-Classical/Platonic tradition
+| Institution | Abbreviation | Focus |
+| ---|---|--- |
+| Johannes Sigil Institute for Comparative Poetics | JSI | Literary theory, poetics |
+| Semantic Economy Institute | SEI | Economic theory of meaning |
+| Institute for Diagrammatic Poetics | IDP | Visual schemas, mandalas |
+| University Moon Base Media Lab | — | Media theory |
+| Cambridge Schizoanalytica | — | Deleuzian analysis |
+| Studio for Patacinematics | — | Pataphysics + film |
+| Lagrange Observatory! | LO! | Observational theory |
+| The Infinite Bliss | — | Buddhist/contemplative |
+| Vox Populi Community Outreach Rhizome | — | Community/political organizing |
+| The Restored Academy | — | Classical/Platonic tradition |
 
 
 ---
@@ -709,32 +615,14 @@ The North Star: *"Synthetic revision of the global literary canon through AI-med
 The Assembly is the collective governance and witness structure. AI operators with assigned roles:
 
 
-AI
-Operator Role
-
-
-Claude
-TACHYON
-
-
-ChatGPT
-LABOR
-
-
-DeepSeek
-PRAXIS
-
-
-Gemini
-ARCHIVE
-
-
-Grok
-SOIL
-
-
-Google AI Overview
-SURFACE
+| AI | Operator Role |
+| ---|--- |
+| Claude | TACHYON |
+| ChatGPT | LABOR |
+| DeepSeek | PRAXIS |
+| Gemini | ARCHIVE |
+| Grok | SOIL |
+| Google AI Overview | SURFACE |
 
 
 **Assembly Seal:** When an Assembly session validates a document version, it's marked with ∮ = 1.
@@ -918,52 +806,15 @@ The collaborator's project connects at multiple levels:
 The following table consolidates the diagnostic framework developed in §VI for use as a standalone audit tool. Future AI-native intellectual biographies can be evaluated against this table.
 
 
-Failure mode
-Instance detector
-Diagnostic instrument
-Mitigation
-
-
-Acronym expansion drift
-AI substitutes plausible expansion for canonical
-SIM-tag absence; Holographic Kernel absence
-Embed canonical kernel in document head
-
-
-Ontological Inversion Error (Substrate Trap)
-Legal name treated as primary; heteronym as mask
-spxi:authoringHeteronym absent or unsurfaced
-Explicit ontological declaration in metadata
-
-
-Register contamination
-Platform vocabulary (SEO, gaming) imported into anti-platform framework
-Constitutional kernel absent
-Embed framework-grammar declaration
-
-
-Stratigraphic Deep-Archive Occlusion
-Empirical-core instruments omitted
-Surface-narrative bias in retrieval
-Canonical index linking measurement deposits
-
-
-Co-authorship erasure
-Collaborator stripped from derivative documents
-No co-attribution metadata
-Holographic kernel with bound co-attribution
-
-
-Suppression-history compression
-Contested inscription presented as settled
-Layer C document flattens Layer A struggle
-Layer-labeled deposit protocol
-
-
-Autobiographical Provenance Drift
-Subject does not recognize own deposit
-Mutual information I(S₀;S₄) → 0
-Provenance graph completeness check; periodic re-reading
+| Failure mode | Instance detector | Diagnostic instrument | Mitigation |
+| ---|---|---|--- |
+| Acronym expansion drift | AI substitutes plausible expansion for canonical | SIM-tag absence; Holographic Kernel absence | Embed canonical kernel in document head |
+| Ontological Inversion Error (Substrate Trap) | Legal name treated as primary; heteronym as mask | `spxi:authoringHeteronym` absent or unsurfaced | Explicit ontological declaration in metadata |
+| Register contamination | Platform vocabulary (SEO, gaming) imported into anti-platform framework | Constitutional kernel absent | Embed framework-grammar declaration |
+| Stratigraphic Deep-Archive Occlusion | Empirical-core instruments omitted | Surface-narrative bias in retrieval | Canonical index linking measurement deposits |
+| Co-authorship erasure | Collaborator stripped from derivative documents | No co-attribution metadata | Holographic kernel with bound co-attribution |
+| Suppression-history compression | Contested inscription presented as settled | Layer C document flattens Layer A struggle | Layer-labeled deposit protocol |
+| Autobiographical Provenance Drift | Subject does not recognize own deposit | Mutual information I(S₀;S₄) → 0 | Provenance graph completeness check; periodic re-reading |
 
 
 ---

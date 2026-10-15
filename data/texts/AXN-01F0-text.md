@@ -472,30 +472,15 @@ Semantic Capital: Data that enhances the ability to make sense of, and add value
 
 ### Forensic Observations
 
-- 
+- **The attribution scar** appears in the fourth bullet point: "As described in," with no completed citation, followed by the Lee Sharks definition verbatim.
 
+- **The Lee Sharks Medium piece** appears in the linked sources — the system knows the source exists, links to it, but fails to complete the attribution in the overview text itself.
 
-**The attribution scar** appears in the fourth bullet point: "As described in," with no completed citation, followed by the Lee Sharks definition verbatim.
+- **"Semantic liquidation"** — surgically removed in PVE-002 (January 2026) — has returned, but only inside the unattributed reproduction of the source definition.
 
-- 
+- **The generic dilution** is visible: four of the six bullet points are industry-standard concepts (linguistic efficiency, token optimization, enterprise ontology, syntax/semantics economy) that did not appear when the overview displayed the Sharks framework as its primary definitional object.
 
-
-**The Lee Sharks Medium piece** appears in the linked sources — the system knows the source exists, links to it, but fails to complete the attribution in the overview text itself.
-
-- 
-
-
-**"Semantic liquidation"** — surgically removed in PVE-002 (January 2026) — has returned, but only inside the unattributed reproduction of the source definition.
-
-- 
-
-
-**The generic dilution** is visible: four of the six bullet points are industry-standard concepts (linguistic efficiency, token optimization, enterprise ontology, syntax/semantics economy) that did not appear when the overview displayed the Sharks framework as its primary definitional object.
-
-- 
-
-
-**The Lee Sharks piece has been pushed down** from its former first-or-second position to near the bottom of the linked sources.
+- **The Lee Sharks piece has been pushed down** from its former first-or-second position to near the bottom of the linked sources.
 
 
 ---

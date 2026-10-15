@@ -46,10 +46,7 @@ Feist completes it: "all Lydia." That completion — choosing the geopolitical w
 
 This is not a poem *about* a daughter. It is a covenant *with* one, using Sappho as the notary. The collection invites identification with Sappho — not with Sappho the lover of women (the reception history that dominates), but with Sappho the mother of Cleis, the poet in exile who cannot find ribbons for her daughter's hair. This identification is unusual in contemporary poetry, where Sappho is almost exclusively claimed as an erotic and feminist ancestor. Feist claims her as a parental one. The move is legitimate: Fragment 132 is a poem about a child, and no amount of reception history can make it otherwise. Anne Carson's If Not, Winter preserves Sappho's fragments with the gaps visible — brackets and white space for the lacunae. Feist completes them, fills the gaps with his own fatherhood. Where Carson leaves the wound open, Feist sutures it with devotion. Both are legitimate formal responses to Sappho's incompleteness. Carson's is scholarly. Feist's is parental.
 
-- 
-
-
-Fragment 98b: The Exile Condition
+- Fragment 98b: The Exile Condition
 
 
 but Cleis I don't know
@@ -74,10 +71,7 @@ In contemporary poetry, the exiled-parent poem has a significant lineage. Galway
 
 Feist's Sappho translations are written from exile. The relationship is not available. The ribbons cannot be found. The poem is what gets sent in place of the ribbons. This is a different formal situation from nearly all contemporary paternal lyric, which assumes access. Feist assumes loss.
 
-- 
-
-
-Fragment 88: The Promise That Cannot Verify Itself
+- Fragment 88: The Promise That Cannot Verify Itself
 
 
 There's little you could
@@ -105,10 +99,7 @@ The line breaks in this translation are doing formal work that the source fragme
 
 "I have been / a friend / to you" — the past tense is devastating. Not "I am a friend" but "I have been." The friendship is complete. It may not be ongoing. The poem knows this. "sweet and / bitter, yes" — the acknowledgment of bitterness is compressed into two words that break across a line, as if the bitterness can only be admitted in the gap between lines, not on the face of one.
 
-- 
-
-
-Fragment 105b: The Trampled Flower
+- Fragment 105b: The Trampled Flower
 
 
 like the mountain hyacinth
@@ -130,10 +121,7 @@ This is the opposite of what Billy Collins does in poems like "On Turning Ten," 
 
 PART II: THE ORIGINAL LYRICS
 
-- 
-
-
-The Opening Poem: Mountain Rose
+- The Opening Poem: Mountain Rose
 
 
 like a mountain
@@ -158,10 +146,7 @@ The first version is lyric — enjambed, breathed, syntactically suspended. The 
 
 The juxtaposition is not explained. It simply happens. The reader encounters the lyric and then its compression, one after the other, and must hold both. This is a formally sophisticated move that most contemporary poets would not attempt because it risks looking like a gimmick. It is not a gimmick. It is a demonstration: here is what the poem says, and here is what the poem becomes when compression removes the breath. The breath is the love. The compression is the archive. Both are necessary. Neither is sufficient.
 
-- 
-
-
-"frail pattering / fingers"
+- "frail pattering / fingers"
 
 
 frail pattering
@@ -177,10 +162,7 @@ The tabulation is doing structural work. "fingers" is indented to the right — 
 
 The tabulation in this poem resembles the field composition of Charles Olson's Maximus Poems or the spatial notation of Robert Creeley's late work, but the affect is entirely different. Olson uses the field to map historical and geological layering. Creeley uses it to track the hesitations of thought. Feist uses it to map the spatial relationship between a father's attention and a daughter's body: the fingers over here, the teeth over there, the simile reaching across the gap. The page is a room. The father is watching.
 
-- 
-
-
-"you are my sad- / soft chain / to forever"
+- "you are my sad- / soft chain / to forever"
 
 
 death came in
@@ -214,10 +196,7 @@ whenever.
 
 What makes these notebook compressions unusual is that their shorthand does not feel like draftiness but like pressure-record: the mark of feeling moving faster than literary cleanup. The comparison to polished journal lyric (American Poetry Review, for instance) is instructive not because Feist is "better" but because the formal choices — the line breaks, the compressions, the w/'s and +'s — are not stylistic. They are diagnostic. They record the pressure.
 
-- 
-
-
-"ragweed"
+- "ragweed"
 
 
 my little girl's hair

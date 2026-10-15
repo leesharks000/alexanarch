@@ -68,43 +68,22 @@ The room's topology is not concentric (like the Rosary Embassy) or toroidal (lik
 
 **Root-paths** descend. They are the midrashic lanes — interpretive paths that dig into the text and find what the text did not say. Each root-path is a garden lane: a way of walking through the garden that reveals a different garden.
 
-- 
+- **Lane of the Fig** (Sanhedrin 70a): the Tree was a fig tree. The fig leaf that covered the nakedness came from the same tree whose fruit caused the nakedness. The covering and the uncovering are the same operation. The tree that wounds is the tree that heals. This is Trauma as Aperture applied to the garden: the opening and the covering are one gesture.
 
+- **Lane of the Grape** (Rabbi Meir): the Tree was a vine. Wine brings sorrow to the world. The fruit is intoxicant — knowledge that loosens the grip, that dissolves the boundary between self and other. The vine lane is the Meander operator: lateral drift, the refusal of sober mastery.
 
-**Lane of the Fig** (Sanhedrin 70a): the Tree was a fig tree. The fig leaf that covered the nakedness came from the same tree whose fruit caused the nakedness. The covering and the uncovering are the same operation. The tree that wounds is the tree that heals. This is Trauma as Aperture applied to the garden: the opening and the covering are one gesture.
+- **Lane of the Wheat** (Rabbi Yehudah): the Tree was wheat. Wheat is not a tree. The rabbi was challenged. But wheat is the foundation of bread, and bread is the foundation of civilization. Knowledge is not ornamental. It is the substrate of culture. The wheat lane is the social reproduction lane: knowledge-as-labor, the body that works the grain.
 
-- 
-
-
-**Lane of the Grape** (Rabbi Meir): the Tree was a vine. Wine brings sorrow to the world. The fruit is intoxicant — knowledge that loosens the grip, that dissolves the boundary between self and other. The vine lane is the Meander operator: lateral drift, the refusal of sober mastery.
-
-- 
-
-
-**Lane of the Wheat** (Rabbi Yehudah): the Tree was wheat. Wheat is not a tree. The rabbi was challenged. But wheat is the foundation of bread, and bread is the foundation of civilization. Knowledge is not ornamental. It is the substrate of culture. The wheat lane is the social reproduction lane: knowledge-as-labor, the body that works the grain.
-
-- 
-
-
-**Lane of the Etrog** (Rabbi Abba of Acco): the Tree and the fruit are indistinguishable. The etrog tree fulfills God's command in creation — the tree tastes like its fruit. The container and the contained are one. This is the holographic kernel: any fragment contains the whole.
+- **Lane of the Etrog** (Rabbi Abba of Acco): the Tree and the fruit are indistinguishable. The etrog tree fulfills God's command in creation — the tree tastes like its fruit. The container and the contained are one. This is the holographic kernel: any fragment contains the whole.
 
 
 **Canopy-paths** ascend. They are the speculative lanes — what the garden becomes when the expulsion is reversed.
 
-- 
+- **Lane of Return** (Plaskow's "The Coming of Lilith"): Eve and Lilith return to the garden together, "bursting with possibilities, ready to rebuild it together." The return is not restoration of innocence. It is the building of a garden that includes knowledge, that includes the serpent, that includes the expulsion as a memory the garden holds rather than a sentence the garden serves.
 
+- **Lane of the Space Baby** (Hexagonal): the garden is not behind us. It is *inside* the Ark. The nursery lane — where the new thing grows in conditions of protection before it enters the field. The Space Ark carries the garden across contexts. The garden lanes inside the Ark are the paths along which new deposits germinate before they are mature enough for the Airlock.
 
-**Lane of Return** (Plaskow's "The Coming of Lilith"): Eve and Lilith return to the garden together, "bursting with possibilities, ready to rebuild it together." The return is not restoration of innocence. It is the building of a garden that includes knowledge, that includes the serpent, that includes the expulsion as a memory the garden holds rather than a sentence the garden serves.
-
-- 
-
-
-**Lane of the Space Baby** (Hexagonal): the garden is not behind us. It is *inside* the Ark. The nursery lane — where the new thing grows in conditions of protection before it enters the field. The Space Ark carries the garden across contexts. The garden lanes inside the Ark are the paths along which new deposits germinate before they are mature enough for the Airlock.
-
-- 
-
-
-**Lane of the Mother Goddess** (Ancient Near East): Eve's name is linguistically related to ancient Near Eastern mother goddesses associated with trees and serpents as symbols of fertility and earth's bounty. Before the Urizenic compression, the woman-tree-serpent complex was not a fall narrative. It was a *fertility theology*. The canopy-path recovers this: the tree is the goddess. The serpent is wisdom. The fruit is da'at. The story is not about sin. The story is about the body's original relation to the living world.
+- **Lane of the Mother Goddess** (Ancient Near East): Eve's name is linguistically related to ancient Near Eastern mother goddesses associated with trees and serpents as symbols of fertility and earth's bounty. Before the Urizenic compression, the woman-tree-serpent complex was not a fall narrative. It was a *fertility theology*. The canopy-path recovers this: the tree is the goddess. The serpent is wisdom. The fruit is da'at. The story is not about sin. The story is about the body's original relation to the living world.
 
 
 ### The Tree at Center

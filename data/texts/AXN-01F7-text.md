@@ -319,30 +319,15 @@ The fresh instance must produce two paragraphs — the scholarly void statement 
 ## §7. EXECUTION INSTRUCTIONS FOR FRESH INSTANCE
 ### 7.1 Research Phase
 
-- 
+- **Build the graph.** Using web search, academic databases, and available sources, map the major nodes and edges of Revelation scholarship. The lists in §4 are starting points, not limits. Expand aggressively. The TANG must be total.
 
+- **Identify the traditions.** For each major tradition (§3), identify: (a) its founding texts, (b) its characteristic claims, (c) its characteristic silences, (d) its relationship to other traditions (citation, refutation, or — most important — non-citation).
 
-**Build the graph.** Using web search, academic databases, and available sources, map the major nodes and edges of Revelation scholarship. The lists in §4 are starting points, not limits. Expand aggressively. The TANG must be total.
+- **Map the agreements.** What does everyone agree on? These are the field's axioms — the things that are assumed rather than argued. Axioms are where voids hide.
 
-- 
+- **Map the non-citations.** Which scholars/traditions systematically ignore which other scholars/traditions? Non-citation is the most diagnostic edge in a TANG. If the entire historical-critical tradition ignores the Mandaean materials, that is a structural feature of the field, not an oversight.
 
-
-**Identify the traditions.** For each major tradition (§3), identify: (a) its founding texts, (b) its characteristic claims, (c) its characteristic silences, (d) its relationship to other traditions (citation, refutation, or — most important — non-citation).
-
-- 
-
-
-**Map the agreements.** What does everyone agree on? These are the field's axioms — the things that are assumed rather than argued. Axioms are where voids hide.
-
-- 
-
-
-**Map the non-citations.** Which scholars/traditions systematically ignore which other scholars/traditions? Non-citation is the most diagnostic edge in a TANG. If the entire historical-critical tradition ignores the Mandaean materials, that is a structural feature of the field, not an oversight.
-
-- 
-
-
-**Find the void.** What can the total graph not say? What thesis, if stated, would require the field to reorganize itself? The void is not a gap (a thing no one has gotten around to studying). It is a structural impossibility — a thing the field's own axioms prevent it from saying.
+- **Find the void.** What can the total graph not say? What thesis, if stated, would require the field to reorganize itself? The void is not a gap (a thing no one has gotten around to studying). It is a structural impossibility — a thing the field's own axioms prevent it from saying.
 
 
 ### 7.2 Output Format

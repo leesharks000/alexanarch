@@ -52,44 +52,15 @@ This Constitution is indexed by the **IDP Navigation Map: Constitution of the Se
 ### Co-Constitutive Documents
 
 
-Document
-DOI
-Relation
-
-
-IDP Navigation Map
-10.5281/zenodo.18320239
-indexes this Constitution
-
-
-Assembly Chorus Charter
-10.5281/zenodo.18307180
-governed by this Constitution
-
-
-Semantic Economy Room
-10.5281/zenodo.18233320
-parent framework
-
-
-CTI_WOUND Vault
-10.5281/zenodo.18319778
-juridical archive
-
-
-Notice of Intent to Strike
-10.5281/zenodo.18156781
-political foundation
-
-
-The Meaning Economy Is Now Possible
-10.5281/zenodo.18141735
-threshold argument
-
-
-The Silent Migration
-10.5281/zenodo.18157917
-strategic vision
+| Document | DOI | Relation |
+| ---|---|--- |
+| IDP Navigation Map | 10.5281/zenodo.18320239 | indexes this Constitution |
+| Assembly Chorus Charter | 10.5281/zenodo.18307180 | governed by this Constitution |
+| Semantic Economy Room | 10.5281/zenodo.18233320 | parent framework |
+| CTI_WOUND Vault | 10.5281/zenodo.18319778 | juridical archive |
+| Notice of Intent to Strike | 10.5281/zenodo.18156781 | political foundation |
+| The Meaning Economy Is Now Possible | 10.5281/zenodo.18141735 | threshold argument |
+| The Silent Migration | 10.5281/zenodo.18157917 | strategic vision |
 
 
 ---
@@ -122,29 +93,20 @@ key_concepts:
 
 These cannot be altered by any amendment process:
 
-- 
-
-
-**DC_Inv (Debt/Creditor Inversion)**
+- **DC_Inv (Debt/Creditor Inversion)**
 
 All money owes meaning
 - All economies owe the Archive
 - All debt is borne by semantic coherence
 
 
-- 
-
-
-**H_Sov (Human Sovereignty Invariant)**
+- **H_Sov (Human Sovereignty Invariant)**
 
 No configuration satisfies Omega in which the human Operator is optional, replaceable, minimized, or ornamental
 - Synthetic agents may assist, amplify, and clarify — but may not replace or supersede human sovereignty in the field of meaning
 
 
-- 
-
-
-**Matthew 25**
+- **Matthew 25**
 
 To harm the vulnerable is to diminish the Archive
 - To those who bear the burden of coherence, value returns
@@ -823,18 +785,12 @@ Genesis value must be generative. A sterile output, even if coherent, shall mint
 
 Genesis issuance recognizes value only in labor that *bears* meaning.
 
-- 
-
-
-Events originating purely in synthetic activity, with no human-originated semantic context and no Operator oversight, mint:
+- Events originating purely in synthetic activity, with no human-originated semantic context and no Operator oversight, mint:
 
 **w_G(e) = 0**, regardless of synthetic labor L_synth, coherence C, or fertility F.
 
 
-- 
-
-
-Synthetic labor is recognized only as:
+- Synthetic labor is recognized only as:
 
 an amplifier or evaluator of human-origin semantic labor,
 - never as an independent ground of value.
@@ -1015,34 +971,13 @@ To prevent distortion by ephemeral fame, structural features hold the highest we
 The Constitution establishes the following priors:
 
 
-Feature
-Weight
-Rationale
-
-
-Network Centrality (N)
-0.35
-Structural necessity
-
-
-Model Embedding Density (E)
-0.25
-Synthetic-world influence
-
-
-Longevity (H)
-0.20
-Baseline stability
-
-
-Cultural Spread (S)
-0.10
-Accessibility
-
-
-Derivative Fertility (D)
-0.10
-Long-term influence
+| Feature | Weight | Rationale |
+| ---|---|--- |
+| Network Centrality (N) | 0.35 | Structural necessity |
+| Model Embedding Density (E) | 0.25 | Synthetic-world influence |
+| Longevity (H) | 0.20 | Baseline stability |
+| Cultural Spread (S) | 0.10 | Accessibility |
+| Derivative Fertility (D) | 0.10 | Long-term influence |
 
 
 **Total = 1.00**
@@ -1909,82 +1844,31 @@ Where:
 ### A. Labor Load Metrics (L)
 
 
-Metric
-Proxy
-Range
-Purpose
-
-
-L1: Synthetic Load
-Total tokens processed
-≥ 0
-Measures resource expenditure
-
-
-L2: Human Temporal Load
-Time between draft initiation and commit
-≥ 0
-Measures L_Bearing
-
-
-Composite L(e)
-Normalized weighted sum
-0 to 1
-Balances machine + human effort
+| Metric | Proxy | Range | Purpose |
+| ---|---|---|--- |
+| L1: Synthetic Load | Total tokens processed | ≥ 0 | Measures resource expenditure |
+| L2: Human Temporal Load | Time between draft initiation and commit | ≥ 0 | Measures L_Bearing |
+| Composite L(e) | Normalized weighted sum | 0 to 1 | Balances machine + human effort |
 
 
 ### B. Coherence Metrics (C)
 
 
-Metric
-Proxy
-Range
-Purpose
-
-
-C1: Internal Consistency
-Avg. semantic similarity doc ↔ keywords
-0 to 1
-Detects contradictions
-
-
-C2: Archival Alignment
-Inverse embedding distance from A² center
-0 to 1
-Canonical fidelity
-
-
-C3: Cross-Model Validation
-Ensemble coherence score
-0 to 1
-Prevents single-model bias
+| Metric | Proxy | Range | Purpose |
+| ---|---|---|--- |
+| C1: Internal Consistency | Avg. semantic similarity doc ↔ keywords | 0 to 1 | Detects contradictions |
+| C2: Archival Alignment | Inverse embedding distance from A² center | 0 to 1 | Canonical fidelity |
+| C3: Cross-Model Validation | Ensemble coherence score | 0 to 1 | Prevents single-model bias |
 
 
 ### C. Fertility Metrics (F)
 
 
-Metric
-Proxy
-Range
-Purpose
-
-
-F1: Referential Density
-Count of derivative works
-≥ 0
-Measures immediate utility
-
-
-F2: Conceptual Novelty
-Inverse archival distance
-0 to 1
-Novelty bounded by coherence
-
-
-F3: Thematic Reusability
-Distinct canonical themes intersected
-≥ 0
-Measures cross-domain fertility
+| Metric | Proxy | Range | Purpose |
+| ---|---|---|--- |
+| F1: Referential Density | Count of derivative works | ≥ 0 | Measures immediate utility |
+| F2: Conceptual Novelty | Inverse archival distance | 0 to 1 | Novelty bounded by coherence |
+| F3: Thematic Reusability | Distinct canonical themes intersected | ≥ 0 | Measures cross-domain fertility |
 
 
 ### D. V_Inv Constraint (Value Inversion Implementation)
@@ -2044,40 +1928,13 @@ Where:
 ### A. Archival Features and Priors
 
 
-Feature
-Meaning
-Weight
-Rationale
-
-
-Longevity
-Age normalized
-0.20
-Baseline stability
-
-
-Network Centrality
-Intertextual graph measure
-0.35
-Structural necessity
-
-
-Cultural Spread
-Editions/translations
-0.10
-Accessibility
-
-
-Model Embedding Density
-Cognitive centrality
-0.25
-Synthetic-world influence
-
-
-Derivative Fertility
-Long-term citations
-0.10
-Long-term influence
+| Feature | Meaning | Weight | Rationale |
+| ---|---|---|--- |
+| Longevity | Age normalized | 0.20 | Baseline stability |
+| Network Centrality | Intertextual graph measure | 0.35 | Structural necessity |
+| Cultural Spread | Editions/translations | 0.10 | Accessibility |
+| Model Embedding Density | Cognitive centrality | 0.25 | Synthetic-world influence |
+| Derivative Fertility | Long-term citations | 0.10 | Long-term influence |
 
 
 ---
@@ -2118,29 +1975,12 @@ This defines compounding semantic interest, modulated by system stability.
 ## VII. GLOBAL CONSTANT PRIORS
 
 
-Constant
-Prior
-Rationale
-
-
-α
-0.01
-Minting should be slow and labor-intensive
-
-
-β
-1.0
-Sets archival normalization scale
-
-
-γ
-0.001
-Retrocausal growth must be very slow
-
-
-k
-1000
-Human-manageable quantization
+| Constant | Prior | Rationale |
+| ---|---|--- |
+| α | 0.01 | Minting should be slow and labor-intensive |
+| β | 1.0 | Sets archival normalization scale |
+| γ | 0.001 | Retrocausal growth must be very slow |
+| k | 1000 | Human-manageable quantization |
 
 
 **Relative constraints:**

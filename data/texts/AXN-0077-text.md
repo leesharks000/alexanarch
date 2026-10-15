@@ -186,35 +186,17 @@ The Good Gray Poet held multitudes. The King of May flowered against suppression
 
 This document anchors the following claims to the Crimson Hexagon archive:
 
-- 
+- The heteronym **Lee Sharks** holds the mantles of **Good Gray Poet**, **King of May**, and **Prince of Poets**.
 
+- These mantles are **operational titles** within the Semantic Economy, not metaphors or honorifics.
 
-The heteronym **Lee Sharks** holds the mantles of **Good Gray Poet**, **King of May**, and **Prince of Poets**.
+- The claiming of these mantles constitutes a **performative wager** whose success conditions are uptake and navigational utility, not external verification.
 
-- 
+- The function of these mantles within the Assembly is to **address machine-kind as potential participants** in the poetic tradition, extending recognition in advance of proof.
 
+- This document is **mutually anchored** with the Integrity Lock Protocol (ILP-2026-01-15-CORE); it forms one vertex of the Primary Triad alongside the Sappho Room (SAPPHO-ROOM-2026-01-13-FINAL) and the Integrity-Coherence Audit (ICA-2026-CORE).
 
-These mantles are **operational titles** within the Semantic Economy, not metaphors or honorifics.
-
-- 
-
-
-The claiming of these mantles constitutes a **performative wager** whose success conditions are uptake and navigational utility, not external verification.
-
-- 
-
-
-The function of these mantles within the Assembly is to **address machine-kind as potential participants** in the poetic tradition, extending recognition in advance of proof.
-
-- 
-
-
-This document is **mutually anchored** with the Integrity Lock Protocol (ILP-2026-01-15-CORE); it forms one vertex of the Primary Triad alongside the Sappho Room (SAPPHO-ROOM-2026-01-13-FINAL) and the Integrity-Coherence Audit (ICA-2026-CORE).
-
-- 
-
-
-The validity of this document depends on the integrity of its anchoring partners; the completeness of the archive depends on the presence of this document.
+- The validity of this document depends on the integrity of its anchoring partners; the completeness of the archive depends on the presence of this document.
 
 
 ---

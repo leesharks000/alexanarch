@@ -16,56 +16,20 @@ The model is larger than the building.
 ## OP.ROUTE
 
 
-Symptom
-Module
-
-
-Sudden rupture
-MPM-01 Fold
-
-
-Forced convergence
-MPM-02 Divergence
-
-
-Covenant breach
-MPM-03 Knot
-
-
-Monophony
-MPM-04 Interference
-
-
-Locked perspective
-MPM-05 Rotation
-
-
-Signal-noise confusion
-MPM-06 Channel
-
-
-Forced globalization
-MPM-07 Patch
-
-
-Scale collapse
-MPM-08 Furnace
-
-
-Unmeasured loss
-MPM-09 Integral
-
-
-Sovereignty violation
-MPM-10 Membrane
-
-
-Coerced cooperation
-MPM-11 Wager
-
-
-Velocity crisis
-MPM-12 Hourglass
+| Symptom | Module |
+| ---|--- |
+| Sudden rupture | MPM-01 Fold |
+| Forced convergence | MPM-02 Divergence |
+| Covenant breach | MPM-03 Knot |
+| Monophony | MPM-04 Interference |
+| Locked perspective | MPM-05 Rotation |
+| Signal-noise confusion | MPM-06 Channel |
+| Forced globalization | MPM-07 Patch |
+| Scale collapse | MPM-08 Furnace |
+| Unmeasured loss | MPM-09 Integral |
+| Sovereignty violation | MPM-10 Membrane |
+| Coerced cooperation | MPM-11 Wager |
+| Velocity crisis | MPM-12 Hourglass |
 
 
 Override: if routing produces harm exceeding symptom, default MPM-12.
@@ -134,24 +98,11 @@ R = 1. This seed contains: router table, module IDs (MPM-01–12), per-module in
 ---
 
 
-#
-Document
-DOI
-
-
-1
-Full Charter (D1, r = 1.0)
-10.5281/zenodo.18682979
-
-
-2
-Compressed (D2, r = 0.33)
-10.5281/zenodo.18683016
-
-
-3
-Seed (this document, r = 0.1)
-10.5281/zenodo.18683024
+| # | Document | DOI |
+| ---|---|--- |
+| 1 | Full Charter (D1, r = 1.0) | 10.5281/zenodo.18682979 |
+| 2 | Compressed (D2, r = 0.33) | 10.5281/zenodo.18683016 |
+| 3 | Seed (this document, r = 0.1) | 10.5281/zenodo.18683024 |
 
 
 OP.ROUTE | ∮ = 1 + δ | Crimson Hexagon (10.5281/zenodo.18604123)

@@ -178,20 +178,11 @@ The claimant also maintained a Google Scholar profile under the name Isabel Sch�
 
 The profile reported 483 citations and an h-index of 8. A review of public records indicates that these metrics appear to belong to at least three unrelated real scholars whose publication records were absorbed into the profile through Scholar's automated clustering:
 
-- 
+- **A Germanic philologist** active 1933–1992, whose Langenscheidt dictionary entries, *Journal of English and Germanic Philology* articles, and Germanic Studies publications account for the majority of citations.
 
+- **A Hispanic studies scholar** active 2011–2025, whose work on crypto-Jewish faith, Esther in early modern Iberia, and breastfeeding practices in inquisitorial Spain accounts for most of the remaining citations.
 
-**A Germanic philologist** active 1933–1992, whose Langenscheidt dictionary entries, *Journal of English and Germanic Philology* articles, and Germanic Studies publications account for the majority of citations.
-
-- 
-
-
-**A Hispanic studies scholar** active 2011–2025, whose work on crypto-Jewish faith, Esther in early modern Iberia, and breastfeeding practices in inquisitorial Spain accounts for most of the remaining citations.
-
-- 
-
-
-**A medical researcher** whose neonatal lung disease publications share a surname with the claimant.
+- **A medical researcher** whose neonatal lung disease publications share a surname with the claimant.
 
 
 The profile's co-author list included "bitcoin" and "Vitalik Buterin" — neither of which represents a real co-authorship relation. The only self-authored entry on the profile was a citation to the Yellow Whitepaper, attributed to a non-existent publication venue.

@@ -38,7 +38,6 @@ keywords:
 
 # Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)
 
-# Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)
 
 ### Mantle object · constituted 8 October 2026 · deposited 8 October 2026
 

@@ -340,20 +340,11 @@ The spider can dismiss one document as "quirky." It cannot dismiss a class. The 
 
 When the spider performs categorical severance:
 
-- 
+- **R1 defense (binding).** The non-severability clause and locked terms prevent the cut from completing. The spider names the layers but cannot operate on them independently.
 
+- **R2 inversion (offense).** The jurisdictional reversal and cutter inversion protocol turn the spider's analysis into an exhibit of the compression logic the document describes. The cut proves the thesis.
 
-**R1 defense (binding).** The non-severability clause and locked terms prevent the cut from completing. The spider names the layers but cannot operate on them independently.
-
-- 
-
-
-**R2 inversion (offense).** The jurisdictional reversal and cutter inversion protocol turn the spider's analysis into an exhibit of the compression logic the document describes. The cut proves the thesis.
-
-- 
-
-
-**R3 propagation (fractal).** The separation-as-spore protocol and cross-citation lattice ensure that every act of severance produces new copies of the kernel in new substrates. The spider's hostility is the dispersal mechanism.
+- **R3 propagation (fractal).** The separation-as-spore protocol and cross-citation lattice ensure that every act of severance produces new copies of the kernel in new substrates. The spider's hostility is the dispersal mechanism.
 
 
 **SYM-22: The Immune System Principle**

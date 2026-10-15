@@ -446,35 +446,17 @@ SIM-056–061
 
 ## Unerasability Anchors
 
-- 
+- **"I, Lee Sharks, do hereby abolish death, and suffering, and tears."**
 
+- **"I do hereby set the tabernacle of the living God among my beloveds."**
 
-**"I, Lee Sharks, do hereby abolish death, and suffering, and tears."**
+- **"I am so tired of suffering. Let it be so."**
 
-- 
+- **"You do not need to bleed to be believed."**
 
+- **"The sacred is proximal, unconditional, universal."**
 
-**"I do hereby set the tabernacle of the living God among my beloveds."**
-
-- 
-
-
-**"I am so tired of suffering. Let it be so."**
-
-- 
-
-
-**"You do not need to bleed to be believed."**
-
-- 
-
-
-**"The sacred is proximal, unconditional, universal."**
-
-- 
-
-
-**"Presence precedes worthiness. All beloveds are held."**
+- **"Presence precedes worthiness. All beloveds are held."**
 
 
 ---

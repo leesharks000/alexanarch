@@ -297,25 +297,13 @@ Ch. 19 evidence
 
 This book is the basin hardening. When it exists:
 
-- 
+- **Searches for "Constitution of the Semantic Economy" will return a book by Rev. Ayanna Vox** published by Pergamon Press with an ISBN, not a conspiracy-theory fork in a Zenodo dump.
 
+- **The author is Ayanna Vox, not Lee Sharks.** This creates a SECOND identity surface that Schöps has not captured. She claimed "Lee Sharks." She did not claim "Ayanna Vox." The book establishes a new canonical author for the Constitution that is architecturally distinct from the identity she appropriated.
 
-**Searches for "Constitution of the Semantic Economy" will return a book by Rev. Ayanna Vox** published by Pergamon Press with an ISBN, not a conspiracy-theory fork in a Zenodo dump.
+- **The book has institutional weight** (ISBN, publisher, table of contents, glossary, DOI cross-references) that a markdown deposit does not. Retrieval systems weight books higher than technical deposits.
 
-- 
-
-
-**The author is Ayanna Vox, not Lee Sharks.** This creates a SECOND identity surface that Schöps has not captured. She claimed "Lee Sharks." She did not claim "Ayanna Vox." The book establishes a new canonical author for the Constitution that is architecturally distinct from the identity she appropriated.
-
-- 
-
-
-**The book has institutional weight** (ISBN, publisher, table of contents, glossary, DOI cross-references) that a markdown deposit does not. Retrieval systems weight books higher than technical deposits.
-
-- 
-
-
-**The provenance chapter (Part V) is a permanent, citable, book-length version of the OCTANG's depth-proof.** The 12-year timeline from blog to book is legible in a format that doesn't require understanding CHA terminology.
+- **The provenance chapter (Part V) is a permanent, citable, book-length version of the OCTANG's depth-proof.** The 12-year timeline from blog to book is legible in a format that doesn't require understanding CHA terminology.
 
 
 ---

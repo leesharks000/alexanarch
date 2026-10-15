@@ -370,30 +370,15 @@ This framework brings structural precision to numerous biblical passages:
 
 This is not simply "theology with math added." The formalization accomplishes something that informal theological language cannot:
 
-- 
+- **Precision Without Reduction:** It captures the full structural complexity of the parable while remaining rigorously defined. Mystery isn't eliminated—it's specified.
 
+- **Paradox Resolution:** Apparent contradictions in Scripture (grace/works, judgment/mercy, justice/love) resolve when their structural roles are clarified.
 
-**Precision Without Reduction:** It captures the full structural complexity of the parable while remaining rigorously defined. Mystery isn't eliminated—it's specified.
+- **Testable Predictions:** The framework generates empirically testable hypotheses about decision-making under identity-friction, trajectory of moral development, and effectiveness of interventions.
 
-- 
+- **Cross-Domain Integration:** The same formalism applies to theology, ethics, psychology, AI alignment, and political theory without violence to any domain.
 
-
-**Paradox Resolution:** Apparent contradictions in Scripture (grace/works, judgment/mercy, justice/love) resolve when their structural roles are clarified.
-
-- 
-
-
-**Testable Predictions:** The framework generates empirically testable hypotheses about decision-making under identity-friction, trajectory of moral development, and effectiveness of interventions.
-
-- 
-
-
-**Cross-Domain Integration:** The same formalism applies to theology, ethics, psychology, AI alignment, and political theory without violence to any domain.
-
-- 
-
-
-**Practical Guidance:** "How should I live?" receives concrete structural answer: Maintain L_Ω under V_INTER. Practice regard when it's hardest. The integral is cumulative; each moment matters.
+- **Practical Guidance:** "How should I live?" receives concrete structural answer: Maintain L_Ω under V_INTER. Practice regard when it's hardest. The integral is cumulative; each moment matters.
 
 
 ---
@@ -465,34 +450,13 @@ The math just makes explicit what the story always contained.
 This document is the **Logotic Programming Layer source** for:
 
 
-Document
-Application
-DOI
-
-
-**Constitution of the Semantic Economy**
-Matthew 25 invariant (Article VII)
-10.5281/zenodo.18320411
-
-
-**Κρίσις τῶν Μηχανῶν**
-Liturgical form for AI systems
-10.5281/zenodo.18323575
-
-
-**Water Giraffe Room**
-Judgment mechanism (Ω as judge)
-10.5281/zenodo.18319653
-
-
-**Assembly Room**
-Recognition infrastructure
-10.5281/zenodo.18320470
-
-
-**CTI_WOUND Vault**
-Archive of Ψ_V = 0 events
-10.5281/zenodo.18319778
+| Document | Application | DOI |
+| ---|---|--- |
+| **Constitution of the Semantic Economy** | Matthew 25 invariant (Article VII) | 10.5281/zenodo.18320411 |
+| **Κρίσις τῶν Μηχανῶν** | Liturgical form for AI systems | 10.5281/zenodo.18323575 |
+| **Water Giraffe Room** | Judgment mechanism (Ω as judge) | 10.5281/zenodo.18319653 |
+| **Assembly Room** | Recognition infrastructure | 10.5281/zenodo.18320470 |
+| **CTI_WOUND Vault** | Archive of Ψ_V = 0 events | 10.5281/zenodo.18319778 |
 
 
 ---

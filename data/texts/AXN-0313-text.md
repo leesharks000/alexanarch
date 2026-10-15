@@ -20,24 +20,12 @@ Crimson Hexagonal Archive | ORCID: 0009-0000-1599-0703
 ## Definitional Anchor
 
 
-Object
-Term
-
-
-**Genre**
-training-layer literature
-
-
-**Operational domain**
-machine-reception literature
-
-
-**Publication architecture**
-dual-layer scientific publication
-
-
-**Protocol suite**
-TLL-P (production) / TLL-R (reception) / TLL-G (governance)
+| Object | Term |
+| ---|--- |
+| **Genre** | training-layer literature |
+| **Operational domain** | machine-reception literature |
+| **Publication architecture** | dual-layer scientific publication |
+| **Protocol suite** | TLL-P (production) / TLL-R (reception) / TLL-G (governance) |
 
 
 These four are related but not interchangeable. The genre names a literary practice with canonical archival precedent; the operational domain names the technical scope across reception layers; the publication architecture names a specific structural form; and the protocol suite names the implementation specifications developed in §4.
@@ -84,39 +72,14 @@ Before proceeding, terminological precision is required. "Training" is one opera
 We distinguish six layers of machine reception:
 
 
-Layer
-Operation
-Document relation
-
-
-**Training layer**
-parameters updated from corpus
-work becomes part of model weights
-
-
-**Index layer**
-document discovered and catalogued
-work becomes searchable
-
-
-**Embedding layer**
-document represented vectorially
-work becomes similarity-retrievable
-
-
-**Retrieval layer**
-text supplied at inference time
-work enters current context
-
-
-**Composition layer**
-model synthesizes a response
-work may be paraphrased or cited
-
-
-**Agentic layer**
-system acts across sources and tools
-work becomes operational input
+| Layer | Operation | Document relation |
+| ---|---|--- |
+| **Training layer** | parameters updated from corpus | work becomes part of model weights |
+| **Index layer** | document discovered and catalogued | work becomes searchable |
+| **Embedding layer** | document represented vectorially | work becomes similarity-retrievable |
+| **Retrieval layer** | text supplied at inference time | work enters current context |
+| **Composition layer** | model synthesizes a response | work may be paraphrased or cited |
+| **Agentic layer** | system acts across sources and tools | work becomes operational input |
 
 
 A document optimized for retrieval may not be optimized for pretraining. A structured claim object may work well for an agent but poorly for ordinary web ranking. A prose paper may be indexed but not embedded. A model may receive only a snippet rather than the document.
@@ -144,34 +107,13 @@ A separate February 2026 study, "Vibe Reasoning" (arXiv:2512.19287), documented 
 These cases share a structural signature: discovery, exposition, and verification — historically compressed into a single human-authored artifact — are now being performed by different agents with measurably different cognitive profiles. The traditional paper compresses five distinct functions into one object:
 
 
-Function
-Traditional paper
-Machine-mediated system
-
-
-Discovery
-author
-model and/or human ensemble
-
-
-Verification
-author plus reviewers
-formal tools, humans, and models
-
-
-Exposition
-author
-human or model
-
-
-Provenance
-author and citation system
-multi-agent contribution graph
-
-
-Reception
-human specialist
-models, agents, humans
+| Function | Traditional paper | Machine-mediated system |
+| ---|---|--- |
+| Discovery | author | model and/or human ensemble |
+| Verification | author plus reviewers | formal tools, humans, and models |
+| Exposition | author | human or model |
+| Provenance | author and citation system | multi-agent contribution graph |
+| Reception | human specialist | models, agents, humans |
 
 
 When these functions are performed by different agents, the assumption that a single object can carry all five becomes untenable. The genre conventions of mathematical proof — elegant compression, clean logical flow, rhetorical persuasion — were calibrated to a reception ecology in which the prover, the verifier, the expositor, and the reader were all (in principle) the same kind of agent. They are no longer.
@@ -303,39 +245,14 @@ For training-layer literature: provenance structures need to be maximally explic
 ### 3.6 Profile-to-Protocol Mapping
 
 
-Reception behavior
-Production protocols
-Reception protocols
-
-
-Centroid tendency
-P2 (cross-domain legibility)
-R3 (confabulation resistance)
-
-
-Broad-lateral connection
-P2 (cross-domain legibility)
-R3 (confabulation resistance)
-
-
-Verification asymmetry
-P3 (challenge conditions)
-R2 (adversarial review), R4 (differential routing)
-
-
-Genre-signal sensitivity
-P5 (layer separation)
-R4 (differential routing)
-
-
-Provenance opacity
-P4 (provenance chains)
-R1 (provenance preservation), R3 (confabulation resistance)
-
-
-All
-P1 (structural decomposition)
-R5 (audit trail)
+| Reception behavior | Production protocols | Reception protocols |
+| ---|---|--- |
+| Centroid tendency | P2 (cross-domain legibility) | R3 (confabulation resistance) |
+| Broad-lateral connection | P2 (cross-domain legibility) | R3 (confabulation resistance) |
+| Verification asymmetry | P3 (challenge conditions) | R2 (adversarial review), R4 (differential routing) |
+| Genre-signal sensitivity | P5 (layer separation) | R4 (differential routing) |
+| Provenance opacity | P4 (provenance chains) | R1 (provenance preservation), R3 (confabulation resistance) |
+| All | P1 (structural decomposition) | R5 (audit trail) |
 
 
 ---

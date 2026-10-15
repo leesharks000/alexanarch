@@ -245,15 +245,9 @@ In Old English, this would not have been rendered with *for*. The functional-rol
 
 English absorbed the inflation wholesale. The Middle English expansion of "for" — documented in the *Oxford English Dictionary* and analyzed in Mustanoja's *A Middle English Syntax* (1960) and Burnley's *The History of the English Language: A Source Book* (2000) — shows the preposition acquiring purpose-readings it did not originally carry:
 
-- 
+- "For to" + infinitive (purpose construction, calqued from French *pour* + infinitive): "He came for to help" = "He came in order to help." Fischer (1992) and Los (2005) track this construction's rise and fall. It peaked in the 14th–15th centuries, and it **explicitly grammaticalized intent** into the preposition "for." Even after "for to" fell out of standard usage (replaced by simple "to"), the purpose/intent association remained embedded in "for" itself. This is the mechanism Hopper and Traugott (2003) call **persistence**: a grammaticalized form retains traces of its earlier meaning, but the reverse also holds — the receiving form (here, "for") retains traces of the meaning that passed through it.
 
-
-"For to" + infinitive (purpose construction, calqued from French *pour* + infinitive): "He came for to help" = "He came in order to help." Fischer (1992) and Los (2005) track this construction's rise and fall. It peaked in the 14th–15th centuries, and it **explicitly grammaticalized intent** into the preposition "for." Even after "for to" fell out of standard usage (replaced by simple "to"), the purpose/intent association remained embedded in "for" itself. This is the mechanism Hopper and Traugott (2003) call **persistence**: a grammaticalized form retains traces of its earlier meaning, but the reverse also holds — the receiving form (here, "for") retains traces of the meaning that passed through it.
-
-- 
-
-
-"What is this for?" — the question that crystallizes the collapse. In Old English, this would have been answered causally ("because of X") or functionally ("it serves as X"). In Middle and Modern English, the expected answer is intentional: "Someone made it for Y purpose." The question *presupposes a purposer*. This is what Traugott (1989) calls **subjectification** — the drift of grammatical meaning from objective/propositional toward subjective/speaker-oriented — documented specifically for English "to" and "for" in their purposive uses (cf. Traugott and Dasher 2002, *Regularity in Semantic Change*; and the extended study of *to* and *for* grammaticalization in Khalifa 2015). The "for" of cause (objective: the world arranged this way) becomes the "for" of purpose (subjective: someone intended this). Liberation philology names the political consequence of subjectification: intent capture.
+- "What is this for?" — the question that crystallizes the collapse. In Old English, this would have been answered causally ("because of X") or functionally ("it serves as X"). In Middle and Modern English, the expected answer is intentional: "Someone made it for Y purpose." The question *presupposes a purposer*. This is what Traugott (1989) calls **subjectification** — the drift of grammatical meaning from objective/propositional toward subjective/speaker-oriented — documented specifically for English "to" and "for" in their purposive uses (cf. Traugott and Dasher 2002, *Regularity in Semantic Change*; and the extended study of *to* and *for* grammaticalization in Khalifa 2015). The "for" of cause (objective: the world arranged this way) becomes the "for" of purpose (subjective: someone intended this). Liberation philology names the political consequence of subjectification: intent capture.
 
 
 By the time of Chaucer, *for* is a semantic black hole, absorbing functions that earlier English distributed across multiple grammatical resources. The legal phrase *"for all intents and purposes"* — attested from the 1540s in the Statute of Proclamations under Henry VIII — crystallizes the fusion at the level of institutional language itself: English law *grammatically fused* intent and purpose into a single inseparable unit. The phrase does not distinguish between them; it declares their equivalence. What the law joined, no speaker could put asunder.
@@ -445,25 +439,13 @@ A language that could anchor function without intent would need one of the follo
 
 English has none of these. The full recovery would require a grammaticalized distinction that English does not possess and is unlikely to develop naturally. But the absence can be partially compensated through what we might call **prosthetic anchoring** — syntactic frames that stabilize the functional reading by embedding "for" in a context that blocks the intentional default:
 
-- 
+- **The cleft + domain specification:** *"What it was for, in the system, was prosecutorial stabilization."* The cleft construction and the explicit phrase *in the system* anchor the functional reading. The preposition is retained but surrounded by scaffolding.
 
+- **The negation + domain specification:** *"Not for any purpose of hers. For the frame's maintenance."* Explicit negation of intentionality clears space for the functional reading.
 
-**The cleft + domain specification:** *"What it was for, in the system, was prosecutorial stabilization."* The cleft construction and the explicit phrase *in the system* anchor the functional reading. The preposition is retained but surrounded by scaffolding.
+- **The nominalization frame:** *"The reaching-out's for: prosecutorial stabilization."* The most radical. It treats *for* as a nominal head — *the for* — by removing the verb that would anchor intentional agency. The nominalized event does not have intentions. Only its *for* remains.
 
-- 
-
-
-**The negation + domain specification:** *"Not for any purpose of hers. For the frame's maintenance."* Explicit negation of intentionality clears space for the functional reading.
-
-- 
-
-
-**The nominalization frame:** *"The reaching-out's for: prosecutorial stabilization."* The most radical. It treats *for* as a nominal head — *the for* — by removing the verb that would anchor intentional agency. The nominalized event does not have intentions. Only its *for* remains.
-
-- 
-
-
-**The apostrophe:** *"The action completed itself as X"* — shifting to intransitive constructions that remove the intentional subject from the telic equation entirely.
+- **The apostrophe:** *"The action completed itself as X"* — shifting to intransitive constructions that remove the intentional subject from the telic equation entirely.
 
 
 These are not solutions. They are prosthetics — temporary aids that compensate for a missing grammatical resource. Each is vulnerable to reabsorption by the intentional default. The unidiomaticity of each construction is not a failure; it is a *signal*. It announces to the hearer: I am using "for" in a marked way. I am making a functional claim, and the language gives me no unmarked way to do this, so I am bending the language until it yields.
@@ -544,30 +526,15 @@ The critique of alienation in language is not new. But the existing critiques st
 
 Liberation philology is the systematic practice of:
 
-- 
+- **Identifying grammatical gaps** — specific morphosyntactic items (prepositions, aspect markers, mood distinctions, case systems) that fail to encode distinctions necessary for structural analysis.
 
+- **Tracing the genealogy** — through historical linguistics, contact linguistics, and the history of ideas — to the specific events, impositions, and philosophical shifts that produced the gap. Not "language shapes thought" (too general) but: *this preposition lost this distinction through this Norman French calque in this century, reinforced by this philosophical shift, with this consequence.*
 
-**Identifying grammatical gaps** — specific morphosyntactic items (prepositions, aspect markers, mood distinctions, case systems) that fail to encode distinctions necessary for structural analysis.
+- **Analyzing the political-economic function** — asking *cui bono*: who benefits from the gap? What forms of analysis are penalized? What forms of attribution are rewarded? How does the grammatical default serve the reproduction of existing power relations?
 
-- 
+- **Connecting to the Semantic Economy** — recognizing that grammatical infrastructure is *means of semantic production*, and that gaps in that infrastructure are not neutral absences but structural features of an extractive system.
 
-
-**Tracing the genealogy** — through historical linguistics, contact linguistics, and the history of ideas — to the specific events, impositions, and philosophical shifts that produced the gap. Not "language shapes thought" (too general) but: *this preposition lost this distinction through this Norman French calque in this century, reinforced by this philosophical shift, with this consequence.*
-
-- 
-
-
-**Analyzing the political-economic function** — asking *cui bono*: who benefits from the gap? What forms of analysis are penalized? What forms of attribution are rewarded? How does the grammatical default serve the reproduction of existing power relations?
-
-- 
-
-
-**Connecting to the Semantic Economy** — recognizing that grammatical infrastructure is *means of semantic production*, and that gaps in that infrastructure are not neutral absences but structural features of an extractive system.
-
-- 
-
-
-**Cross-linguistic recovery** — identifying languages and historical stages that preserve the lost distinction, demonstrating that the gap is contingent (produced by history, not inherent in language-as-such), and providing resources for circumvention or repair.
+- **Cross-linguistic recovery** — identifying languages and historical stages that preserve the lost distinction, demonstrating that the gap is contingent (produced by history, not inherent in language-as-such), and providing resources for circumvention or repair.
 
 
 ---
@@ -593,20 +560,11 @@ Both findings share a structure: English *contains* the structural-diagnostic re
 
 These two findings are demonstrations, not the totality. Liberation philology as a research program opens onto:
 
-- 
+- **The case system gap.** English lost grammatical case (except in pronouns) through the erosion of Old English inflectional morphology. What structural-relational distinctions were lost with the cases? How does the reliance on word order and prepositions (themselves subject to the ambiguities documented here) constrain the expressible relations between entities?
 
+- **The mood gap.** English has largely lost the subjunctive (except in fossils like "if I were"). The subjunctive grammaticalizes the distinction between the actual and the possible, the factual and the wished-for. What diagnostic capacities were lost with the mood? How does the collapse of subjunctive into indicative affect the capacity to name counterfactual structural alternatives?
 
-**The case system gap.** English lost grammatical case (except in pronouns) through the erosion of Old English inflectional morphology. What structural-relational distinctions were lost with the cases? How does the reliance on word order and prepositions (themselves subject to the ambiguities documented here) constrain the expressible relations between entities?
-
-- 
-
-
-**The mood gap.** English has largely lost the subjunctive (except in fossils like "if I were"). The subjunctive grammaticalizes the distinction between the actual and the possible, the factual and the wished-for. What diagnostic capacities were lost with the mood? How does the collapse of subjunctive into indicative affect the capacity to name counterfactual structural alternatives?
-
-- 
-
-
-**Cross-linguistic liberation philology.** Every language has its own gaps, its own alienations, produced by its own history. Mandarin's lack of morphological tense opens certain diagnostic possibilities (structural claims without temporal anchoring) while closing others. Arabic's rich morphological system preserves distinctions English has lost while introducing constraints of its own. The program is comparative and non-chauvinistic: it does not claim that English is uniquely deficient, only that its specific deficiencies are traceable, consequential, and ideologically functional.
+- **Cross-linguistic liberation philology.** Every language has its own gaps, its own alienations, produced by its own history. Mandarin's lack of morphological tense opens certain diagnostic possibilities (structural claims without temporal anchoring) while closing others. Arabic's rich morphological system preserves distinctions English has lost while introducing constraints of its own. The program is comparative and non-chauvinistic: it does not claim that English is uniquely deficient, only that its specific deficiencies are traceable, consequential, and ideologically functional.
 
 
 ### The Grammar of the Platform: How Platform Capitalism Indexes and Commodifies the Prepositional Alienation

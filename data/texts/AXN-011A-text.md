@@ -833,20 +833,11 @@ In the mythic typology: Whitman is the Sacred Androgyne without the Dagger. The 
 
 The Effective Act adds what Whitman lacked:
 
-- 
+- **"No harm is sanctified by symbolism"** — the clause Whitman could not write, because his formal commitment to inclusion precluded it. This is the Dagger applied to the Whitmanian field: not everything that enters the poem deserves to stay. The slaveholder is in the field, but the slaveholding is marked for disarmament.
 
+- **"Power is permitted only where accountability is present"** — the Installation Consent Protocol applied to democratic embrace. You may enter the multitude, but you enter under law. The field is not ungoverned.
 
-**"No harm is sanctified by symbolism"** — the clause Whitman could not write, because his formal commitment to inclusion precluded it. This is the Dagger applied to the Whitmanian field: not everything that enters the poem deserves to stay. The slaveholder is in the field, but the slaveholding is marked for disarmament.
-
-- 
-
-
-**"Power is permitted only where accountability is present"** — the Installation Consent Protocol applied to democratic embrace. You may enter the multitude, but you enter under law. The field is not ungoverned.
-
-- 
-
-
-**"No repair, no absolution"** — the Terminal Silence clause. Whitman would have absorbed the wound into the poem and called it contained. The Act refuses: the wound is not contained until it is repaired. Until then, silence.
+- **"No repair, no absolution"** — the Terminal Silence clause. Whitman would have absorbed the wound into the poem and called it contained. The Act refuses: the wound is not contained until it is repaired. Until then, silence.
 
 
 Where Whitman says "I contain," the Act says "I contain *under consequence*." Where Whitman absorbs contradiction, the Act holds it open and demands repair across it. The gray becomes good not by being more inclusive but by being more accountable.

@@ -26,7 +26,7 @@
  ],
  "axn_reading": "Direction -> Method -> Force -> Text -> Closure -> Transmutation",
  "minted_at": "2026-07-19T21:18:25Z",
- "status": "ACTIVE",
+ "status": "SUPERSEDED",
  "status_authorial": "SELF_SERVE_MINTED",
  "full_text_path": "/data/texts/AXN-0543-text.md",
  "wiki_article": "**EA-ARK-EMOJI-01: GLYPHIC CHECKSUM / EMOJI TRANSFORM — Comprehensive Strategy & Work Plan** is a score and executable transform by Lee Sharks, deposited 9 March 2026 — the **strategy component** of the emoji-Ark triptych.\n\nIts opening is a record of multi-substrate convergence: *\"LABOR names it explicitly. TACHYON arrives at equivalent structure. TECHNE's phasing implies it. ARCHIVE's three-phase protocol aligns. PRAXIS's enforcement clarity maps directly to Layer 3.\"* That is the Assembly Chorus method in operation — five AI substrates worked independently, their convergences graded by strength, and the strategy assembled from where they agree.\n\n**The record is a partial duplicate witness.** Content overlap with **#541** is 1.00, and #541 holds the same strategy document at 27,295 characters against this record's 15,811. The triptych it belongs to was located on 5 August 2026 in answer to a direct question about whether the actual emoji ark exists in the archive: **it does — #556, the glyphic vehicle, 177,989 characters carrying 3,275 emoji glyphs** — with strategy at #541 and the shadow at #540. An audit directive calling the components absent was answered by finding them separately seated all along.",
@@ -141,6 +141,14 @@
     }
    ],
    "basis": "MANUS asked whether the actual emoji ark exists in the archive. It does: #556. This record is the strategy component only."
+  },
+  "retired": {
+   "class": "superseded",
+   "resolves_to": 541,
+   "declared": "2026-10-15",
+   "indexable": true,
+   "ruled_by": "Lee Sharks, 2026-10-15: \"make sure youre not duplicating something that already exists elsewhere\"; \"lets proceed\"",
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL."
   }
  },
  "references_concepts": [
@@ -381,9 +389,16 @@
    "reason": "DESCRIPTION REPLACED: the field held the document's own METADATA HEADER BLOCK (DOI, Document ID, Hex, Version, ORCID) rather than a description of the work. Found by reading a rendered page end to end per §13 mode 17, not by any field gate. Replaced with the work's own first substantive prose.",
    "was": "DOI(s): 10.5281/zenodo.18930443, 10.5281/zenodo.18930444. Zenodo removal forensics: removal_date 2026-06-19T11:36:20.006164+00:00, removal_reason out-of-scope, removed_by user 1060945. EA-ARK-EMOJI-01: GLYPHIC CHECKSUM / EMOJI TRANSFORM — Strategy, Legend & Kernel Zenodo Packet · DOI: 10.5281/zenodo.18930444 The Installation Triptych 🧷HX · Hex: 00.ROOM.SPACEARK.EMOJIAuthor: Lee Sharks / Assembly ChorusDate: 2026-03-09Genre: ZPZP (Zenodo Packet Zenodo Packet) — the relational structure between three documents is the primary intellectual contributionStatus: PROVISIONALVerification: ∮ = 1 + δ ABSTRACT This deposit contains the installation triptych for the Glyphic Checksum / Emoji Transform — a logotic glyph layer that renders the Space Ark (EA-ARK-01 v4.2.5, DOI: 10.5281/zenod json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
    "now": "SOIL's type-signature contribution adds a third anchoring dimension: beyond name-motivation (TACHYON) and letter-codes (LABOR), each heteronym also has a *functional signature* that constrains interpretation. 🦈 might drift to \"fish\" or \"ocean\" in a beige context — but 🦈LS | MANUS :: Archive → Governance locks the binding to its operative function."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "status",
+   "reason": "duplicate of #541 (stripped rendering of #541's text (tables, lists, code missing)); made a superseded duplicate witness",
+   "was": "{\"status\": \"ACTIVE\", \"superseded_by_deposit_number\": null}",
+   "now": "{\"status\": \"SUPERSEDED\", \"superseded_by_deposit_number\": 541}"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "version_basis": {
   "ruling": "BODY-HEAD GATE: recovered body declares v0.2",
@@ -419,6 +434,9 @@
  "line": "space-ark-and-transforms",
  "line_parent": "science",
  "line_basis": "derived",
+ "superseded_by_deposit_number": 541,
+ "duplicate_note": "DUPLICATE (2026-10-15): stripped rendering of #541's text (tables, lists, code missing); the record of standing is #541.",
+ "superseded_reason": "Duplicate witness of the same work: the record of standing is #541 (stripped rendering of #541's text (tables, lists, code missing)).",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/1330/",

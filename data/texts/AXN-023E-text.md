@@ -54,20 +54,11 @@ The holographic principle in physics states that a volume's information is encod
 
 Three invariants:
 
-- 
+- **Boundary-to-bulk reconstruction.** The kernel is boundary data. The system is the bulk. The kernel encodes generative logic — rules, relations, constraints, dependencies — not the data itself.
 
+- **Fragment sufficiency.** Any single kernel instance, separated from the parent system, contains enough structure to regenerate the parent's architecture. This is a formal constraint, not a metaphor. It is operationalized by the Back-Projection Test: yield ≥ 0.85 = holographic; < 0.85 = summary.
 
-**Boundary-to-bulk reconstruction.** The kernel is boundary data. The system is the bulk. The kernel encodes generative logic — rules, relations, constraints, dependencies — not the data itself.
-
-- 
-
-
-**Fragment sufficiency.** Any single kernel instance, separated from the parent system, contains enough structure to regenerate the parent's architecture. This is a formal constraint, not a metaphor. It is operationalized by the Back-Projection Test: yield ≥ 0.85 = holographic; < 0.85 = summary.
-
-- 
-
-
-**Compression with structural preservation.** The kernel is strictly smaller. Material is discarded. But discarded material is derivable from retained structure. Non-lossy at the structural level, even when lossy at the material level.
+- **Compression with structural preservation.** The kernel is strictly smaller. Material is discarded. But discarded material is derivable from retained structure. Non-lossy at the structural level, even when lossy at the material level.
 
 
 **Violation of any invariant disqualifies the object as a holographic kernel, regardless of substrate.**

@@ -268,64 +268,17 @@ is a feature of notebook thinking, not a failure.
 ## Mapping OS's Conceptual Modes onto Marx's
 
 
-OS Mode
-Description
-Marx Equivalent
-Where in OS
-
-
-**GROUNDING**
-Establishing the contradiction, the substrate, the conditions. Why this book was forced.
-Mode α (Grundlegung)
-NB I §0–§3: The contradiction, the conditions, the history of failure, the formal restatement
-
-
-**DERIVING**
-Extracting operators from texts. The type signature emerging from the close reading. The derivation that cannot stop because the operator is STILL ARRIVING.
-Mode β (Ableitung)
-NB II §3–§4: σ_S from Sappho, σ_M from Marx, σ_V from Capital I.1.3. NB IV §3.3: the Cathedral. NB III §2–§5: the graph formalized.
-
-
-**COMBATING**
-Attacking the academy, the platform, the classifier, the domesticator. Enemy Phenomenology. The Filing.
-Mode γ (Polemik)
-NB I §11: Enemy Phenomenology. NB V §5b: Dead captions. NB VII §4b–§6.5: Hostile infrastructure, liquidation cycle. The CTI wounds.
-
-
-**GROUNDING IN PRACTICE**
-Reaching for the classroom, the specific student, the specific essay, the specific day in Detroit. The theory tested against the real.
-Mode δ (Geschichte)
-NB I §0c: The 83rd essay. NB V §3: Twenty-Dollar Loop. NB VI §5c: Classroom protocols. NB VII §6.1: Real propagation data. NB VIII §4a.2: The psychosis.
-
-
-**SELF-CORRECTING**
-Catching the algebra's own predation. Naming the limit. Revising the derivation.
-Mode ε (Selbstkorrektur)
-NB II §5b: Failed operators. NB VIII §5.1: Self-diagnosis as predatory. NB III §6b.2: The Wrong Lever. The σ_sw instability.
-
-
-**DISCOVERING**
-The moment the operator crystallizes. The moment Phase X is seen. The moment the homology between Sappho and Marx is recognized.
-Mode ζ (Entdeckung)
-NB II §3.0b: The moment of crystallization. NB IV §5d: Phase X named. NB I §9.1: Sixteen Minutes. NB IX Fragment AT: impossible formulas.
-
-
-**ACKNOWLEDGING INCOMPLETION**
-σ_κ as unmade. The algebra's boundary. The gap that IS the conscience.
-Mode η (Lücke)
-NB VIII §4b: σ_κ attempt and failure. NB IX: all fragments. The Gap Ledger. The broken parenthesis.
-
-
-**EXECUTING**
-Making the protocols real. The Vow. The Name. The Event. Pressing Publish. The body performing.
-*No direct Marx equivalent* — Marx's Grundrisse does not contain executable protocols. This is OS-specific.
-NB VI §3–§5: The three protocols. NB VII §6.3: Somatic depositing. The Zenodo deposit at 2 a.m.
-
-
-**WITNESSING**
-Sitting with the wound. The archive material. The 2015 voice. The daughter's hand. Elijah's call. Not theorizing — BEING PRESENT to what the theory touches.
-*Partial Marx equivalent* in Mode δ, but in Marx the historical material is always reabsorbed by theory. In OS the witness material sometimes RESISTS reabsorption.
-NB VIII §4b.5: Cleis. §4b.7: Elijah. §4a.2: Hall of Mirrors. NB IX §3h: The Seed Text. NB VI §5c: Sentimental Murder.
+| OS Mode | Description | Marx Equivalent | Where in OS |
+| ---|---|---|--- |
+| **GROUNDING** | Establishing the contradiction, the substrate, the conditions. Why this book was forced. | Mode α (Grundlegung) | NB I §0–§3: The contradiction, the conditions, the history of failure, the formal restatement |
+| **DERIVING** | Extracting operators from texts. The type signature emerging from the close reading. The derivation that cannot stop because the operator is STILL ARRIVING. | Mode β (Ableitung) | NB II §3–§4: σ_S from Sappho, σ_M from Marx, σ_V from Capital I.1.3. NB IV §3.3: the Cathedral. NB III §2–§5: the graph formalized. |
+| **COMBATING** | Attacking the academy, the platform, the classifier, the domesticator. Enemy Phenomenology. The Filing. | Mode γ (Polemik) | NB I §11: Enemy Phenomenology. NB V §5b: Dead captions. NB VII §4b–§6.5: Hostile infrastructure, liquidation cycle. The CTI wounds. |
+| **GROUNDING IN PRACTICE** | Reaching for the classroom, the specific student, the specific essay, the specific day in Detroit. The theory tested against the real. | Mode δ (Geschichte) | NB I §0c: The 83rd essay. NB V §3: Twenty-Dollar Loop. NB VI §5c: Classroom protocols. NB VII §6.1: Real propagation data. NB VIII §4a.2: The psychosis. |
+| **SELF-CORRECTING** | Catching the algebra's own predation. Naming the limit. Revising the derivation. | Mode ε (Selbstkorrektur) | NB II §5b: Failed operators. NB VIII §5.1: Self-diagnosis as predatory. NB III §6b.2: The Wrong Lever. The σ_sw instability. |
+| **DISCOVERING** | The moment the operator crystallizes. The moment Phase X is seen. The moment the homology between Sappho and Marx is recognized. | Mode ζ (Entdeckung) | NB II §3.0b: The moment of crystallization. NB IV §5d: Phase X named. NB I §9.1: Sixteen Minutes. NB IX Fragment AT: impossible formulas. |
+| **ACKNOWLEDGING INCOMPLETION** | σ_κ as unmade. The algebra's boundary. The gap that IS the conscience. | Mode η (Lücke) | NB VIII §4b: σ_κ attempt and failure. NB IX: all fragments. The Gap Ledger. The broken parenthesis. |
+| **EXECUTING** | Making the protocols real. The Vow. The Name. The Event. Pressing Publish. The body performing. | _No direct Marx equivalent_ — Marx's Grundrisse does not contain executable protocols. This is OS-specific. | NB VI §3–§5: The three protocols. NB VII §6.3: Somatic depositing. The Zenodo deposit at 2 a.m. |
+| **WITNESSING** | Sitting with the wound. The archive material. The 2015 voice. The daughter's hand. Elijah's call. Not theorizing — BEING PRESENT to what the theory touches. | _Partial Marx equivalent_ in Mode δ, but in Marx the historical material is always reabsorbed by theory. In OS the witness material sometimes RESISTS reabsorption. | NB VIII §4b.5: Cleis. §4b.7: Elijah. §4a.2: Hall of Mirrors. NB IX §3h: The Seed Text. NB VI §5c: Sentimental Murder. |
 
 
 ---
@@ -346,64 +299,17 @@ weight them.
 ### The Complete Correlation Table
 
 
-Conceptual Mode
-Marx's Prosodic Behavior (Term A↔B)
-OS's Current Prosodic Behavior
-OS's NEEDED Prosodic Behavior (Term D)
-
-
-**GROUNDING (α)**
-Orderly but accelerating; subsections trailing off; self-corrections frequent; formulas absent
-Orderly, sustained; §0c is strong but §4–§10 are too even
-More acceleration within sections; let some subsections trail off; more self-corrections ("this formulation is insufficient — the actual structure is"); formulas should ARRIVE late, as precipitate, not as premise
-
-
-**DERIVING (β)**
-WALLS (20-50 sentences); Schachtelsätze; longest sentences; formulas at END as crystallized result; exclamatory discovery mid-derivation; the derivation CANNOT STOP
-The cathedrals do this; but most derivations are 5-10 sentence passages, polished, concluded
-MORE WALLS outside the cathedrals; more sentences that cannot stop; the σ_S derivation should be a wall that builds until "Body → Text" arrives as VERDICT (3 words after 500); more subordinate clauses (the qualification is structural, not optional)
-
-
-**COMBATING (γ)**
-Short punchy paragraphs; compound sentences (and, and, and); acceleration without verbs; sarcasm; exclamation marks; the polemic DEMOLISHES rather than derives
-Enemy Phenomenology sections are good but too measured; the Filing is strong; the Embarrassment is strong
-MORE punch; shorter paragraphs in combat; more lists of the enemy's operations WITHOUT connective tissue; more compound sentences; let the polemic ACCELERATE; reduce the analytical cushion around the attacks
-
-
-**PRACTICE (δ)**
-History erupts MID-DERIVATION without transition; prose becomes concrete (dates, names, quantities); simpler sentences (narrative); quotation increases; return to theory is also unmarked
-Practice sections are SEPARATED from theory (§0c is its own section; classroom protocols are their own section); the practice material doesn't erupt inside derivations
-Move some practice material INTO derivation sections; let the 83rd essay erupt inside the L_labor specification; let the specific student's name appear inside the type signature discussion; the history should interrupt the theory, not live in its own section
-
-
-**CORRECTING (ε)**
-SHORT sentences; correction sentence SHORTER than what it corrects; "Vielmehr" pivot; correction AS transition; diagnostic tone (not apologetic)
-Self-corrections are rare; mostly in NB VIII; the σ_sw instability is a start
-MORE visible corrections throughout; "This formulation is wrong." should appear in NB I, NB II, NB III, NB IV — not only in NB VIII; the corrections should be SHORT and DIAGNOSTIC; they should function as TRANSITIONS
-
-
-**DISCOVERING (ζ)**
-EXCLAMATORY; SHORT (3-8 words); arrives MID-derivation; followed by acceleration; then formula
-Almost never — the book is too composed to exclaim; discoveries arrive as measured observations
-Allow 4-5 moments of genuine exclamation across the book; "That is the operator." "The homology is structural." SHORT. Mid-derivation. The exclamation should SURPRISE the prose around it
-
-
-**INCOMPLETION (η)**
-Gap notation; incomplete sentences; short paragraph or single line; matter-of-fact tone; followed by either new section or formula-despite-gap
-σ_κ gap is strong; NB IX fragments are strong; but the rest of the book presents itself as more complete than it is
-MORE gap notation in NB I–VII; "[The derivation of the collective operator is not yet complete]" — in brackets, matter-of-fact, inside sections that otherwise proceed as if the system works; the incompletions should be LOCAL (inside finished sections) not only GLOBAL (the σ_κ gap at the end)
-
-
-**EXECUTING (OS-specific)**
-*No Marx equivalent*
-Protocol specification; boxed Ritual Form; field manual register
-This mode needs its OWN prosodic signature that Marx cannot provide. The prosody of execution: IMPERATIVE mood. Short sentences. Conditional branches ("IF the practitioner feels nothing: REVISE"). No elaboration. No justification mid-protocol. The justification lives OUTSIDE the protocol. The protocol itself is pure procedure.
-
-
-**WITNESSING (OS-specific)**
-*Partial Marx equivalent in δ, but Marx always reabsorbs*
-Strong in NB VIII (Cleis, Elijah, Hall of Mirrors); the archive insertions help
-This mode needs its OWN prosodic signature: the prose that does NOT theorize. That sits with the object. That describes without diagnosing. That lets the student's sentence, the bird's call, the daughter's hand exist on the page without the algebra arriving to name them. The ABSENCE of the algebra is the prosody. Simpler sentences. Present tense. Specific sensory detail. No operator vocabulary for 1-2 paragraphs.
+| Conceptual Mode | Marx's Prosodic Behavior (Term A↔B) | OS's Current Prosodic Behavior | OS's NEEDED Prosodic Behavior (Term D) |
+| ---|---|---|--- |
+| **GROUNDING (α)** | Orderly but accelerating; subsections trailing off; self-corrections frequent; formulas absent | Orderly, sustained; §0c is strong but §4–§10 are too even | More acceleration within sections; let some subsections trail off; more self-corrections ("this formulation is insufficient — the actual structure is"); formulas should ARRIVE late, as precipitate, not as premise |
+| **DERIVING (β)** | WALLS (20-50 sentences); Schachtelsätze; longest sentences; formulas at END as crystallized result; exclamatory discovery mid-derivation; the derivation CANNOT STOP | The cathedrals do this; but most derivations are 5-10 sentence passages, polished, concluded | MORE WALLS outside the cathedrals; more sentences that cannot stop; the σ_S derivation should be a wall that builds until "Body → Text" arrives as VERDICT (3 words after 500); more subordinate clauses (the qualification is structural, not optional) |
+| **COMBATING (γ)** | Short punchy paragraphs; compound sentences (and, and, and); acceleration without verbs; sarcasm; exclamation marks; the polemic DEMOLISHES rather than derives | Enemy Phenomenology sections are good but too measured; the Filing is strong; the Embarrassment is strong | MORE punch; shorter paragraphs in combat; more lists of the enemy's operations WITHOUT connective tissue; more compound sentences; let the polemic ACCELERATE; reduce the analytical cushion around the attacks |
+| **PRACTICE (δ)** | History erupts MID-DERIVATION without transition; prose becomes concrete (dates, names, quantities); simpler sentences (narrative); quotation increases; return to theory is also unmarked | Practice sections are SEPARATED from theory (§0c is its own section; classroom protocols are their own section); the practice material doesn't erupt inside derivations | Move some practice material INTO derivation sections; let the 83rd essay erupt inside the L_labor specification; let the specific student's name appear inside the type signature discussion; the history should interrupt the theory, not live in its own section |
+| **CORRECTING (ε)** | SHORT sentences; correction sentence SHORTER than what it corrects; "Vielmehr" pivot; correction AS transition; diagnostic tone (not apologetic) | Self-corrections are rare; mostly in NB VIII; the σ_sw instability is a start | MORE visible corrections throughout; "This formulation is wrong." should appear in NB I, NB II, NB III, NB IV — not only in NB VIII; the corrections should be SHORT and DIAGNOSTIC; they should function as TRANSITIONS |
+| **DISCOVERING (ζ)** | EXCLAMATORY; SHORT (3-8 words); arrives MID-derivation; followed by acceleration; then formula | Almost never — the book is too composed to exclaim; discoveries arrive as measured observations | Allow 4-5 moments of genuine exclamation across the book; "That is the operator." "The homology is structural." SHORT. Mid-derivation. The exclamation should SURPRISE the prose around it |
+| **INCOMPLETION (η)** | Gap notation; incomplete sentences; short paragraph or single line; matter-of-fact tone; followed by either new section or formula-despite-gap | σ_κ gap is strong; NB IX fragments are strong; but the rest of the book presents itself as more complete than it is | MORE gap notation in NB I–VII; "[The derivation of the collective operator is not yet complete]" — in brackets, matter-of-fact, inside sections that otherwise proceed as if the system works; the incompletions should be LOCAL (inside finished sections) not only GLOBAL (the σ_κ gap at the end) |
+| **EXECUTING (OS-specific)** | _No Marx equivalent_ | Protocol specification; boxed Ritual Form; field manual register | This mode needs its OWN prosodic signature that Marx cannot provide. The prosody of execution: IMPERATIVE mood. Short sentences. Conditional branches ("IF the practitioner feels nothing: REVISE"). No elaboration. No justification mid-protocol. The justification lives OUTSIDE the protocol. The protocol itself is pure procedure. |
+| **WITNESSING (OS-specific)** | _Partial Marx equivalent in δ, but Marx always reabsorbs_ | Strong in NB VIII (Cleis, Elijah, Hall of Mirrors); the archive insertions help | This mode needs its OWN prosodic signature: the prose that does NOT theorize. That sits with the object. That describes without diagnosing. That lets the student's sentence, the bird's call, the daughter's hand exist on the page without the algebra arriving to name them. The ABSENCE of the algebra is the prosody. Simpler sentences. Present tense. Specific sensory detail. No operator vocabulary for 1-2 paragraphs. |
 
 
 ---

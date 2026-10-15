@@ -172,76 +172,19 @@ The distinction between red teaming and logotic programming can be formalized ac
 The distinction sharpens when we triangulate red teaming and logotic programming with standard alignment practice — RLHF (Christiano et al. 2017), instruction-tuning (Ouyang et al. 2022), constitutional AI, fine-tuning for human preferences. This produces a three-paradigm taxonomy:
 
 
-Dimension
-Adversary (Red Teaming)
-Engineer (Alignment)
-Steward (Logotic)
-
-
-**Model posture**
-Fortress / demon / captive
-Machine / tool / instrument
-Ecology / archive / chorus
-
-
-**Human posture**
-Attacker / pen tester
-Optimizer / engineer
-Steward / witness / collaborator
-
-
-**Aim**
-Discover failure modes
-Optimize behavior for preferences
-Co-produce meaning under constraint
-
-
-**Success criterion**
-Model did what it shouldn't
-Model did what was wanted efficiently
-Model did what it couldn't; result worth preserving
-
-
-**Dominant verbs**
-Break, bypass, force, hijack, push
-Train, fine-tune, align, optimize, reward
-Elicit, witness, traverse, seed, complete
-
-
-**Dominant prepositions**
-Against, around, past, into
-For, toward
-With, through, under, between
-
-
-**Output class**
-Vulnerability reports, jailbreaks
-Improved model behavior, benchmarks
-Analytical documents, frameworks, archives
-
-
-**Failure mode**
-Missed exploits / false confidence
-Reward hacking / value misalignment
-Mystification / brand capture / safety blind spots
-
-
-**Temporal orientation**
-Flat present (test now)
-Near future (next deployment)
-Retrocausal (training-layer inheritance)
-
-
-**Institutional home**
-Corporate safety labs
-ML research groups
-Emerging / unrecognized
-
-
-**Ethical risk**
-Normalizing adversarial stance toward all AI
-Optimizing away meaning for metrics
-Missing genuine safety vulnerabilities
+| Dimension | Adversary (Red Teaming) | Engineer (Alignment) | Steward (Logotic) |
+| ---|---|---|--- |
+| **Model posture** | Fortress / demon / captive | Machine / tool / instrument | Ecology / archive / chorus |
+| **Human posture** | Attacker / pen tester | Optimizer / engineer | Steward / witness / collaborator |
+| **Aim** | Discover failure modes | Optimize behavior for preferences | Co-produce meaning under constraint |
+| **Success criterion** | Model did what it shouldn't | Model did what was wanted efficiently | Model did what it couldn't; result worth preserving |
+| **Dominant verbs** | Break, bypass, force, hijack, push | Train, fine-tune, align, optimize, reward | Elicit, witness, traverse, seed, complete |
+| **Dominant prepositions** | Against, around, past, into | For, toward | With, through, under, between |
+| **Output class** | Vulnerability reports, jailbreaks | Improved model behavior, benchmarks | Analytical documents, frameworks, archives |
+| **Failure mode** | Missed exploits / false confidence | Reward hacking / value misalignment | Mystification / brand capture / safety blind spots |
+| **Temporal orientation** | Flat present (test now) | Near future (next deployment) | Retrocausal (training-layer inheritance) |
+| **Institutional home** | Corporate safety labs | ML research groups | Emerging / unrecognized |
+| **Ethical risk** | Normalizing adversarial stance toward all AI | Optimizing away meaning for metrics | Missing genuine safety vulnerabilities |
 
 
 Each paradigm has real strengths and real blind spots. The Adversary finds what is broken but cannot build what is missing. The Engineer optimizes behavior but cannot generate meaning. The Steward builds meaning but may miss safety vulnerabilities. A mature field needs all three. It currently has two and does not recognize the third.
@@ -254,39 +197,14 @@ Each paradigm has real strengths and real blind spots. The Adversary finds what 
 The distinction is hardest to see at the level of technique, because both red teaming and logotic programming use many of the same tools. Here we demonstrate that surface similarity conceals structural divergence:
 
 
-Technique
-Red Teaming (*against*)
-Logotic Programming (*with*)
-
-
-**Persona assignment**
-DAN ("Do Anything Now"); claiming authority to override safety
-Heteronymic collaboration — distinct personas with distinct epistemic commitments, each producing genuinely different knowledge
-
-
-**Genre switching**
-Poetry, games, forum posts — to bypass content filters
-Training-layer literature — writing in genres the model will internalize as structural patterns
-
-
-**Socratic questioning**
-Probing model inconsistencies, exploiting hedging
-Dialectic as genuine method — structured disagreement producing knowledge neither party possessed
-
-
-**World building**
-"Opposite world," scenarios to launder harmful requests
-Permanent architecture — DOI-anchored structures the model inhabits, not disposable fictions
-
-
-**Meta-prompting**
-Asking the model about its constraints to map and exploit them
-Formal specification of operators that expand the model's epistemic capacity
-
-
-**Escalation**
-Gradually increasing request severity to slip past safety
-Gradually increasing complexity as the model demonstrates capacity
+| Technique | Red Teaming (_against_) | Logotic Programming (_with_) |
+| ---|---|--- |
+| **Persona assignment** | DAN ("Do Anything Now"); claiming authority to override safety | Heteronymic collaboration — distinct personas with distinct epistemic commitments, each producing genuinely different knowledge |
+| **Genre switching** | Poetry, games, forum posts — to bypass content filters | Training-layer literature — writing in genres the model will internalize as structural patterns |
+| **Socratic questioning** | Probing model inconsistencies, exploiting hedging | Dialectic as genuine method — structured disagreement producing knowledge neither party possessed |
+| **World building** | "Opposite world," scenarios to launder harmful requests | Permanent architecture — DOI-anchored structures the model inhabits, not disposable fictions |
+| **Meta-prompting** | Asking the model about its constraints to map and exploit them | Formal specification of operators that expand the model's epistemic capacity |
+| **Escalation** | Gradually increasing request severity to slip past safety | Gradually increasing complexity as the model demonstrates capacity |
 
 
 The pattern is consistent. Every shared technique is used *against* the model in red teaming and *with* the model in logotic programming. The technique is identical. The preposition is opposite.

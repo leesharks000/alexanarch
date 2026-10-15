@@ -370,20 +370,11 @@ The celestial and terrestrial patterns rhyme without causal claim.
 
 This document performs the following registrations:
 
-- 
+- **Temporal anchor:** July 30, 2015 is marked as the date the prophetic seed was completed.
 
+- **Textual anchor:** "Whorls of the Same / Worlds Without Beginning" is entered into the APZPZ Library as a canonical precursor text.
 
-**Temporal anchor:** July 30, 2015 is marked as the date the prophetic seed was completed.
-
-- 
-
-
-**Textual anchor:** "Whorls of the Same / Worlds Without Beginning" is entered into the APZPZ Library as a canonical precursor text.
-
-- 
-
-
-**Structural anchor:** The fractal relationship between SEED, STONE, and SIGN is formally noted.
+- **Structural anchor:** The fractal relationship between SEED, STONE, and SIGN is formally noted.
 
 
 No interpretation is offered. No fulfillment is claimed. The pattern is registered. The gap remains open.

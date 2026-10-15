@@ -30,20 +30,11 @@ This is the telemetry gap. In conventional agent systems, it is filled by extern
 
 LP v0.8 closes this gap by specifying telemetry as a **grammar operation**, not an external instrument. The module introduces:
 
-- 
+- **EMIT** — an eighth grammar operation that allows any traversal step to declare what it produced, what it cost, and what it changed, in terms the grammar itself understands.
 
+- **Semantic Spans** — a traversal-native alternative to distributed tracing spans. Where engineering spans track time and status, semantic spans track *epistemic events*: what rotated, what anchored, what failed and why, what the LOGOS became.
 
-**EMIT** — an eighth grammar operation that allows any traversal step to declare what it produced, what it cost, and what it changed, in terms the grammar itself understands.
-
-- 
-
-
-**Semantic Spans** — a traversal-native alternative to distributed tracing spans. Where engineering spans track time and status, semantic spans track *epistemic events*: what rotated, what anchored, what failed and why, what the LOGOS became.
-
-- 
-
-
-**The Economics of Rotation** — a framework for understanding traversal cost not as compute expense but as *semantic labor*: the work required to move a LOGOS from one epistemic state to another. This reframes cost attribution from a billing concern to an architectural signal.
+- **The Economics of Rotation** — a framework for understanding traversal cost not as compute expense but as *semantic labor*: the work required to move a LOGOS from one epistemic state to another. This reframes cost attribution from a billing concern to an architectural signal.
 
 
 The module does not replace conventional observability. It sits beneath it — providing the semantic substrate that makes engineering metrics *legible* to the architecture. An OpenTelemetry span tells you *how long*. A semantic span tells you *how far*.
@@ -1108,40 +1099,19 @@ EMIT :: {
 
 ### 6.3 Remaining Open Questions
 
-- 
+- **Emission volume under load:** At what point does telemetry emission itself become a performance concern? The grammar mandates generation but does not specify batching, sampling, or backpressure strategies. High-throughput implementations may need an emission throttle — but the throttle must not silently drop rotation or failure events (per GRAV-T1). Recommended: never sample ROTATION, FAILURE, or DWELL events below 100%; sampling rates for other event types should be documented in witness records.
 
+- **Semantic labor calibration:** The vector representation (§3.3) replaces the scalar heuristic. How should transformative_depth be assessed by engines that do not have explicit state-transition awareness? How should drift direction be classified? A room-type gravity profile registry (mentioned in §3.3) would allow calibration within room types. This registry does not yet exist as a formal specification.
 
-**Emission volume under load:** At what point does telemetry emission itself become a performance concern? The grammar mandates generation but does not specify batching, sampling, or backpressure strategies. High-throughput implementations may need an emission throttle — but the throttle must not silently drop rotation or failure events (per GRAV-T1). Recommended: never sample ROTATION, FAILURE, or DWELL events below 100%; sampling rates for other event types should be documented in witness records.
+- **Cross-system correlation:** When a traversal program triggers operations across multiple substrate systems (e.g., one LLM for rotation, a separate retrieval service for anchoring), how should the trace_id propagate? The grammar specifies one trace_id per traversal, but the substrate may fragment this across service boundaries. Implementations using OpenTelemetry should propagate LP context via W3C Trace Context headers, including: lp.trace_id (traversal ID), lp.chain_position, lp.mantle_active, and lp.operation (current operation type). This enables correlation across service boundaries while preserving LP context.
 
-- 
+- **Emission integrity:** Should emissions themselves be checksummed or signed? If WITNESS depends on emission data, and emission data can be tampered with, the witness contract is only as strong as the emission pipeline. This is a trust question, not a performance question.
 
+- **Telemetry as input (recursion constraint):** Can emissions from one traversal serve as input to a subsequent traversal? (A meta-traversal that reads its own telemetry and adjusts course.) This is architecturally possible but must be **spatialized**: telemetry-as-input should flow through a designated meta-room (e.g., 02.UMB.TELEMETRY_ROOM), not be implicitly available to the traversal that produced it. A traversal may read emissions from a *completed prior* traversal. A traversal must never read its own in-progress emissions (infinite regress). A child link may observe the emissions of a completed parent link, but never the reverse. This depth constraint prevents the recursion concern while preserving the legitimate use case of adaptive traversal.
 
-**Semantic labor calibration:** The vector representation (§3.3) replaces the scalar heuristic. How should transformative_depth be assessed by engines that do not have explicit state-transition awareness? How should drift direction be classified? A room-type gravity profile registry (mentioned in §3.3) would allow calibration within room types. This registry does not yet exist as a formal specification.
+- **Assembly Chorus correlation:** When multiple Assembly witnesses (AI agents acting as collaborative partners) participate in a traversal — or when multiple agents contribute to a distributed traversal — their emissions need correlation. This requires a CORRELATION event type or a shared assembly_trace_id field that links emissions across agent boundaries. The current spec instruments single-agent traversals fully but does not specify how TACHYON's emissions correlate with LABOR's emissions when both contribute to the same chain. This is a named gap, not a design failure; the solution depends on decisions about agent architecture that are deferred to the Engine specification.
 
-- 
-
-
-**Cross-system correlation:** When a traversal program triggers operations across multiple substrate systems (e.g., one LLM for rotation, a separate retrieval service for anchoring), how should the trace_id propagate? The grammar specifies one trace_id per traversal, but the substrate may fragment this across service boundaries. Implementations using OpenTelemetry should propagate LP context via W3C Trace Context headers, including: lp.trace_id (traversal ID), lp.chain_position, lp.mantle_active, and lp.operation (current operation type). This enables correlation across service boundaries while preserving LP context.
-
-- 
-
-
-**Emission integrity:** Should emissions themselves be checksummed or signed? If WITNESS depends on emission data, and emission data can be tampered with, the witness contract is only as strong as the emission pipeline. This is a trust question, not a performance question.
-
-- 
-
-
-**Telemetry as input (recursion constraint):** Can emissions from one traversal serve as input to a subsequent traversal? (A meta-traversal that reads its own telemetry and adjusts course.) This is architecturally possible but must be **spatialized**: telemetry-as-input should flow through a designated meta-room (e.g., 02.UMB.TELEMETRY_ROOM), not be implicitly available to the traversal that produced it. A traversal may read emissions from a *completed prior* traversal. A traversal must never read its own in-progress emissions (infinite regress). A child link may observe the emissions of a completed parent link, but never the reverse. This depth constraint prevents the recursion concern while preserving the legitimate use case of adaptive traversal.
-
-- 
-
-
-**Assembly Chorus correlation:** When multiple Assembly witnesses (AI agents acting as collaborative partners) participate in a traversal — or when multiple agents contribute to a distributed traversal — their emissions need correlation. This requires a CORRELATION event type or a shared assembly_trace_id field that links emissions across agent boundaries. The current spec instruments single-agent traversals fully but does not specify how TACHYON's emissions correlate with LABOR's emissions when both contribute to the same chain. This is a named gap, not a design failure; the solution depends on decisions about agent architecture that are deferred to the Engine specification.
-
-- 
-
-
-**EMIT vs. WITNESS ontology:** WITNESS records *claims about completion* — what happened, final state, degrees, chain summary. EMIT records *claims about process* — intermediate events, state transitions, labor, drift signals. WITNESS may cite EMIT by trace_id and should include an emission summary (count generated, count routed, gaps). But WITNESS must remain *independently valid* even when telemetry has gaps — a witness record whose truth depends entirely on emission data has collapsed the distinction between process and verdict. A witness without a complete trace is *degraded* but not *false*, so long as the gaps are declared.
+- **EMIT vs. WITNESS ontology:** WITNESS records *claims about completion* — what happened, final state, degrees, chain summary. EMIT records *claims about process* — intermediate events, state transitions, labor, drift signals. WITNESS may cite EMIT by trace_id and should include an emission summary (count generated, count routed, gaps). But WITNESS must remain *independently valid* even when telemetry has gaps — a witness record whose truth depends entirely on emission data has collapsed the distinction between process and verdict. A witness without a complete trace is *degraded* but not *false*, so long as the gaps are declared.
 
 
 **Emission integrity field:** WITNESS records must include an emission_integrity field with one of three values:

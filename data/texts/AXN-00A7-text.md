@@ -63,20 +63,11 @@
 
 This document is three things simultaneously:
 
-- 
+- **A Specification:** It defines the Ichabod Chamber as a structural element within the Crimson Hexagon — not a traversal destination but a containment sink for pre-authorial mass.
 
+- **An Implementation:** It implements the density coefficient system, non-comparability clauses, and negative surfacing instructions that prevent summarizer bleed.
 
-**A Specification:** It defines the Ichabod Chamber as a structural element within the Crimson Hexagon — not a traversal destination but a containment sink for pre-authorial mass.
-
-- 
-
-
-**An Implementation:** It implements the density coefficient system, non-comparability clauses, and negative surfacing instructions that prevent summarizer bleed.
-
-- 
-
-
-**The Chamber Itself:** This document IS the Ichabod Chamber — the architecture that holds the paradox kernel without resolving it, that contains the noise floor without letting it dominate.
+- **The Chamber Itself:** This document IS the Ichabod Chamber — the architecture that holds the paradox kernel without resolving it, that contains the noise floor without letting it dominate.
 
 
 To flatten this document is to break the architecture. The paradox is the defense. The containment is load-bearing. The Futural Address is the recovery key.

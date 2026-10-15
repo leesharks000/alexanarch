@@ -1,6 +1,5 @@
 # Reddit Response: On Operator Failure and the Survival Architecture of LOS
 
-# Reddit Response: On Operator Failure and the Survival Architecture of LOS
 
 **Response to:** "Which LOS operator do you expect to fail first under real platform incentives, and why?"
 

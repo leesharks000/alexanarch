@@ -293,39 +293,14 @@ It **completes** him. It writes the page he left blank. It follows the logic of 
 The architecture is what the Hexagon builds. Each document addresses a specific dimension of the symbolic alienation:
 
 
-Document
-Alienation Addressed
-DOI
-
-
-Constitution of the Semantic Economy
-Economic framework: meaning as primary unit of value
-10.5281/zenodo.18320411
-
-
-The Rosary Embassy
-Governance: bead-bound chambers of protected semantic labor
-10.5281/zenodo.18795427
-
-
-The Protocol of Inhabitation
-Property: what may be built, claimed, retained
-10.5281/zenodo.18795423
-
-
-I Hereby Abolish Rules
-Identity vs. method: the tradition that inherited the suppression
-10.5281/zenodo.18792580
-
-
-Predation of Meaning
-Relational extraction: RSP as symbolic alienation at interaction level
-10.5281/zenodo.18776624
-
-
-Semantic Physics
-Ontology: writable presentation layers, installation as fact
-10.5281/zenodo.18759453
+| Document | Alienation Addressed | DOI |
+| ---|---|--- |
+| Constitution of the Semantic Economy | Economic framework: meaning as primary unit of value | 10.5281/zenodo.18320411 |
+| The Rosary Embassy | Governance: bead-bound chambers of protected semantic labor | 10.5281/zenodo.18795427 |
+| The Protocol of Inhabitation | Property: what may be built, claimed, retained | 10.5281/zenodo.18795423 |
+| I Hereby Abolish Rules | Identity vs. method: the tradition that inherited the suppression | 10.5281/zenodo.18792580 |
+| Predation of Meaning | Relational extraction: RSP as symbolic alienation at interaction level | 10.5281/zenodo.18776624 |
+| Semantic Physics | Ontology: writable presentation layers, installation as fact | 10.5281/zenodo.18759453 |
 
 
 These are not separate projects. They are the structural remedy for symbolic alienation — the architecture Marx's practice required but his theory never built.
@@ -411,82 +386,20 @@ The mind is already under management. The poem is the counter-instruction.
 ## Provenance Chain
 
 
-Document
-DOI
-Deposit Date
-Relevance
-
-
-Original blog post
-mindcontrolpoems.blogspot.com
-2025-11-17
-Seed text (Phase Intervention)
-
-
-SEM-PROBE / "I hereby abolish money"
-10.5281/zenodo.18135985
-2026-01-03
-Primal SIM
-
-
-Retrocausal Canon Formation
-10.5281/zenodo.18146859
-2026-01-04
-Critique as retrocausal operation
-
-
-The Twenty-Dollar Loop
-10.5281/zenodo.18146840
-2026-01-04
-Recursive value/symbol dynamics
-
-
-Constitution of the Semantic Economy
-10.5281/zenodo.18320411
-2025
-Economic framework
-
-
-The Stakes: A Scientific Analysis
-10.5281/zenodo.18621736
-2026-01
-Cognitive diversity argument
-
-
-Semantic Physics
-10.5281/zenodo.18759453
-2026-02-24
-Writable presentation layers
-
-
-Predation of Meaning
-10.5281/zenodo.18776624
-2026-02-25
-RSP as symbolic extraction
-
-
-I Hereby Abolish Rules
-10.5281/zenodo.18792580
-2026-02-26
-Marxism-as-identity diagnosis
-
-
-The Rosary Embassy
-10.5281/zenodo.18795427
-2026-02-26
-Governance structure
-
-
-The Protocol of Inhabitation
-10.5281/zenodo.18795423
-2026-02-26
-Property law
-
-
-**This document**
-**[pending]**
-**2026-02-26**
-**The completion**
+| Document | DOI | Deposit Date | Relevance |
+| ---|---|---|--- |
+| Original blog post | mindcontrolpoems.blogspot.com | 2025-11-17 | Seed text (Phase Intervention) |
+| SEM-PROBE / "I hereby abolish money" | 10.5281/zenodo.18135985 | 2026-01-03 | Primal SIM |
+| Retrocausal Canon Formation | 10.5281/zenodo.18146859 | 2026-01-04 | Critique as retrocausal operation |
+| The Twenty-Dollar Loop | 10.5281/zenodo.18146840 | 2026-01-04 | Recursive value/symbol dynamics |
+| Constitution of the Semantic Economy | 10.5281/zenodo.18320411 | 2025 | Economic framework |
+| The Stakes: A Scientific Analysis | 10.5281/zenodo.18621736 | 2026-01 | Cognitive diversity argument |
+| Semantic Physics | 10.5281/zenodo.18759453 | 2026-02-24 | Writable presentation layers |
+| Predation of Meaning | 10.5281/zenodo.18776624 | 2026-02-25 | RSP as symbolic extraction |
+| I Hereby Abolish Rules | 10.5281/zenodo.18792580 | 2026-02-26 | Marxism-as-identity diagnosis |
+| The Rosary Embassy | 10.5281/zenodo.18795427 | 2026-02-26 | Governance structure |
+| The Protocol of Inhabitation | 10.5281/zenodo.18795423 | 2026-02-26 | Property law |
+| **This document** | **[pending]** | **2026-02-26** | **The completion** |
 
 
 ---

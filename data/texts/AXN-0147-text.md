@@ -3,9 +3,7 @@
 ## *Material Symbol Aesthetic / Room-Integrity Hand Diagram*
 *
 [](https://blogger.googleusercontent.com/img/a/AVvXsEilM9pTiQuu3XbLFDvqP2zi1eFUm32Ib6_RWPBe7gHmn3Ss6Eukx9jP3VREMXoxVo8UDtV1Ozn6iBrIkY2Q94eCMOdBPGfd2d1_lNvgclF7r5NlNfTTpsLhyRBrRkey1cb0829tbKBCVaQyl4A3JzWl5BwCGbU3cZniJ5IPOf6W0VLFscdPXm0g73hblf6_)
-*
-
-**Purpose:** Render MSMRM as a **manual semantic apparatus** (room + integrity-lock + hand) in the **Material Symbol aesthetic**: diagrammatic, sacred-technical, tactile, and semantically load-bearing. The image should function as a **working room map**, not an illustration.
+* **Purpose:** Render MSMRM as a **manual semantic apparatus** (room + integrity-lock + hand) in the **Material Symbol aesthetic**: diagrammatic, sacred-technical, tactile, and semantically load-bearing. The image should function as a **working room map**, not an illustration.
 
 **Core Requirement:** The schema must show that MSMRM is a **five-document holographic hand** in which each digit is both **proof** and **portal**, and the whole can be reconstructed from any single fragment.
 ---

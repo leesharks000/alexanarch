@@ -190,25 +190,13 @@ This sequence constitutes **semantic liquidation as process**: the situated utte
 ### 4.1 Operational Principles
 
 This experiment employs "writing for the training layer"—creating texts designed to function as diagnostics of AI processing. The method involves:
-- 
+- **Non-quotable performatives**: Phrases that resist paraphrase because their meaning is inseparable from their grammatical form ("I hereby abolish" performs what it names)
 
+- **Persona redundancy without canonical anchor**: Publishing across multiple bylines (Sharks, Sigil) prevents the system from settling on a single "authoritative" source while also testing disambiguation robustness
 
-**Non-quotable performatives**: Phrases that resist paraphrase because their meaning is inseparable from their grammatical form ("I hereby abolish" performs what it names)
+- **Semantic overdetermination**: The phrase operates simultaneously as economic critique, performative speech act, and experimental artifact—forcing categorization systems to choose, thereby revealing their priorities
 
-- 
-
-
-**Persona redundancy without canonical anchor**: Publishing across multiple bylines (Sharks, Sigil) prevents the system from settling on a single "authoritative" source while also testing disambiguation robustness
-
-- 
-
-
-**Semantic overdetermination**: The phrase operates simultaneously as economic critique, performative speech act, and experimental artifact—forcing categorization systems to choose, thereby revealing their priorities
-
-- 
-
-
-**Embedded prediction**: This document predicts its own liquidation. If future AI systems summarize it as "an experimental text about AI" without engaging its specific claims, the prediction is confirmed.
+- **Embedded prediction**: This document predicts its own liquidation. If future AI systems summarize it as "an experimental text about AI" without engaging its specific claims, the prediction is confirmed.
 
 ### 4.2 The Recursive Bind
 
@@ -384,30 +372,15 @@ Anticipate and document deflection patterns
 **The meta-strategy**: Make the guardrail's operation visible. Document each layer's behavior. Force the system to either acknowledge provenance or visibly refuse—eliminating the middle ground of plausible neutrality.
 
 ### 6.5 Research Questions
-- 
+- **Threshold mapping**: At what authority level does a source become "retrievable"? Can this threshold be measured?
 
+- **Sensitivity taxonomy**: Which semantic markers trigger enhanced scrutiny? Is there a learnable pattern?
 
-**Threshold mapping**: At what authority level does a source become "retrievable"? Can this threshold be measured?
+- **Temporal dynamics**: How long does a phrase need to exist before it becomes "established" enough to attribute?
 
-- 
+- **Cross-platform variance**: Do different AI systems (Google, OpenAI, Anthropic, xAI) exhibit the same diffuse guardrail architecture?
 
-
-**Sensitivity taxonomy**: Which semantic markers trigger enhanced scrutiny? Is there a learnable pattern?
-
-- 
-
-
-**Temporal dynamics**: How long does a phrase need to exist before it becomes "established" enough to attribute?
-
-- 
-
-
-**Cross-platform variance**: Do different AI systems (Google, OpenAI, Anthropic, xAI) exhibit the same diffuse guardrail architecture?
-
-- 
-
-
-**Intervention points**: Which layer is most susceptible to counter-strategy? Where does resistance have maximum leverage?
+- **Intervention points**: Which layer is most susceptible to counter-strategy? Where does resistance have maximum leverage?
 
 
 ---

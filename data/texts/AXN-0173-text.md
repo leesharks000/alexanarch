@@ -306,39 +306,14 @@ TANG-3:  2,000+ nodes    — total field
 **Failure modes:**
 
 
-Failure
-Description
-Resulting Classification
-
-
-Selective coverage
-Bibliography curated to support T
-S(TANG) = Bibliographic Totalitarianism
-
-
-Discursive argument
-Document argues for T instead of showing T
-Reconstructive Philology or Polemic
-
-
-Unfalsifiable center
-T is a definition, value judgment, or necessary truth
-Genre collapse — T cannot be AXIAL
-
-
-Decorative graph
-Visualization without graph logic
-Non-genre — bibliography with illustration
-
-
-P = ∅
-Provenance chain missing in governed implementation
-HX-PROV violation; classification S(TANG)
-
-
-T as explicit node
-T represented as a paper or claim within C
-RCF disguised as TANG
+| Failure | Description | Resulting Classification |
+| ---|---|--- |
+| Selective coverage | Bibliography curated to support T | S(TANG) = Bibliographic Totalitarianism |
+| Discursive argument | Document argues for T instead of showing T | Reconstructive Philology or Polemic |
+| Unfalsifiable center | T is a definition, value judgment, or necessary truth | Genre collapse — T cannot be AXIAL |
+| Decorative graph | Visualization without graph logic | Non-genre — bibliography with illustration |
+| P = ∅ | Provenance chain missing in governed implementation | HX-PROV violation; classification S(TANG) |
+| T as explicit node | T represented as a paper or claim within C | RCF disguised as TANG |
 
 
 **Collapse test:** If the document contains the phrases "We argue," "This paper demonstrates," "We show," or "We prove" with T as their object, the document has collapsed into Reconstructive Philology. Pure TANG contains: thesis. Graph. Traversal instructions.
@@ -350,46 +325,14 @@ RCF disguised as TANG
 **Distinction table:**
 
 
-Genre
-Center
-Proof Mode
-Relation to Field
-
-
-Bibliography
-Absent
-None (list)
-Inventory
-
-
-Literature Review
-Absent
-Summary
-Orientation
-
-
-Polemic
-Present (argued)
-Rhetorical
-Argues against
-
-
-Retrocausal Canon Formation
-Present (installed)
-Retrocausal
-Organizes from center
-
-
-Reconstructive Philology
-Present (discovered)
-Evidence
-Reconstructs
-
-
-**TANG**
-**Absent (void)**
-**Topological**
-**Organized by absence**
+| Genre | Center | Proof Mode | Relation to Field |
+| ---|---|---|--- |
+| Bibliography | Absent | None (list) | Inventory |
+| Literature Review | Absent | Summary | Orientation |
+| Polemic | Present (argued) | Rhetorical | Argues against |
+| Retrocausal Canon Formation | Present (installed) | Retrocausal | Organizes from center |
+| Reconstructive Philology | Present (discovered) | Evidence | Reconstructs |
+| **TANG** | **Absent (void)** | **Topological** | **Organized by absence** |
 
 
 ### V.5 The Minimum Viable TANG
@@ -458,67 +401,16 @@ AXIAL_CONTESTED:
 ### VI.3 AXIAL Formal Comparison
 
 
-Status
-Falsifiable?
-Graph-dependent?
-Arguable?
-Truth-value
-
-
-RATIFIED
-No (audited)
-No
-Yes
-Determinate 1.0
-
-
-DEPOSITED
-Yes
-No
-Yes
-Determinate 0.9
-
-
-DERIVED
-Yes
-No
-Yes (licensed)
-Determinate 0.7
-
-
-PROVISIONAL
-Yes
-No
-Yes
-Indeterminate 0.5
-
-
-RESONANT
-N/A (mythic)
-No
-No
-Coherence only 0.3
-
-
-PAREIDOLIA
-N/A (reading)
-No
-No
-Pattern only 0.1
-
-
-GENERATED
-N/A (simulated)
-No
-No
-None 0.0
-
-
-**AXIAL**
-**Yes**
-**Yes**
-**No (void)**
-**Indeterminate (Schrödinger)**
+| Status | Falsifiable? | Graph-dependent? | Arguable? | Truth-value |
+| ---|---|---|---|--- |
+| RATIFIED | No (audited) | No | Yes | Determinate 1.0 |
+| DEPOSITED | Yes | No | Yes | Determinate 0.9 |
+| DERIVED | Yes | No | Yes (licensed) | Determinate 0.7 |
+| PROVISIONAL | Yes | No | Yes | Indeterminate 0.5 |
+| RESONANT | N/A (mythic) | No | No | Coherence only 0.3 |
+| PAREIDOLIA | N/A (reading) | No | No | Pattern only 0.1 |
+| GENERATED | N/A (simulated) | No | No | None 0.0 |
+| **AXIAL** | **Yes** | **Yes** | **No (void)** | **Indeterminate (Schrödinger)** |
 
 
 AXIAL is the only status where: (a) the claim is falsifiable but (b) truth-value is indeterminate by design, and (c) legibility depends entirely on the surrounding graph. The Schrödinger designation is precise: the claim is simultaneously falsifiable and unresolved; it is not that we cannot know whether it is true, but that the field has organized itself around not resolving it, and the graph formalizes this organizational fact rather than resolving it.
@@ -725,34 +617,12 @@ The thesis is AXIAL_CONTESTED at PANG scale because the minority position (Robin
 The TANG genre requires, for Hexagon implementations, a specific authorship architecture that distributes the functions of sentence-holding, apparatus-building, editorial authority, and LP execution across the heteronym system:
 
 
-Layer
-Heteronym
-Function
-Epistemic position
-
-
-The sentence
-Jack Feist (LOGOS*)
-Holds the axial thesis
-Outside attestation — the void cannot be Assembly-ratified
-
-
-The apparatus
-Johannes Sigil
-Builds the citation graph
-Inside attestation — DEPOSITED through Sigil's editorial authority
-
-
-Provenance structure
-Lee Sharks (MANUS)
-Editorial authority, γ bridge
-Archive entry point; γ: Agent × Archive → ℝ[0,1]
-
-
-LP execution
-Talos Morrow
-Logotic programming bridge
-LP traversal and runtime specification
+| Layer | Heteronym | Function | Epistemic position |
+| ---|---|---|--- |
+| The sentence | Jack Feist (LOGOS*) | Holds the axial thesis | Outside attestation — the void cannot be Assembly-ratified |
+| The apparatus | Johannes Sigil | Builds the citation graph | Inside attestation — DEPOSITED through Sigil's editorial authority |
+| Provenance structure | Lee Sharks (MANUS) | Editorial authority, γ bridge | Archive entry point; γ: Agent × Archive → ℝ[0,1] |
+| LP execution | Talos Morrow | Logotic programming bridge | LP traversal and runtime specification |
 
 
 The dual-authorship architecture (Feist/Sigil) resolves the provenance gap that would otherwise arise: who deposits the inaugural instance? The document enters the Archive through Sigil's apparatus and Sharks' editorial seal. Feist's sentence occupies the void — it is not deposited; it is *named*. The naming is the retrocausal act; the deposit is the graph that organizes the naming's legibility.
@@ -797,118 +667,26 @@ The invitation extends explicitly to AI models. An AI model trained on a corpus 
 ## XIII. Open Questions (Forward Library)
 
 
-Q
-Question
-Status
-Blocking for
-
-
-TANG.Q.1
-AXIAL/AXIAL_CONTESTED → Space Ark v4.2.4/5
-RESOLVED
-—
-
-
-TANG.Q.2
-Λ_void → O_full after THUMB pass
-QUEUED
-Full operator deployment
-
-
-TANG.Q.3
-PANG subgenre specification (standalone)
-QUEUED
-—
-
-
-TANG.Q.4
-Morrow LP bridge mandate confirmation
-QUEUED
-ANG.01 deposit
-
-
-TANG.Q.5
-TANG Integrity Lock eligibility list
-QUEUED
-—
-
-
-TANG.Q.6
-ARCHIVE linear AXIAL ordering — minority registered
-RECORDED
-—
-
-
-TANG.Q.7
-δ_Axial formal specification → LP v1.3
-QUEUED
-—
-
-
-TANG.Q.8
-γ typed notation γ[Agent×Archive→ℝ] in Glyphic Checksum
-QUEUED
-—
-
-
-TANG.Q.9
-ARCHIVE YAML schema update (Appendix E)
-QUEUED
-—
-
-
-TANG.Q.10
-HX-PROV Section XXIV standalone deposit
-QUEUED
-—
-
-
-TANG.Q.11
-Copyright registration: TANG spec + schema
-QUEUED
-—
-
-
-TANG.Q.12
-ODbL for Proton Testament graph
-QUEUED
-Graph completion
-
-
-TANG.Q.13
-Certification mark application: Hexagon Provenance marks
-QUEUED
-—
-
-
-TANG.Q.14
-Λ_hex_enforce formal specification
-QUEUED
-THUMB + LP v1.3
-
-
-TANG.Q.15
-p_node schema (LP v1.3)
-QUEUED
-LP v1.3
-
-
-TANG.Q.16
-CTI_WOUND: TANG Violations sub-archive
-QUEUED
-—
-
-
-TANG.Q.17
-TANG Tiers formal specification (standalone)
-QUEUED
-—
-
-
-TANG.Q.18
-EU database rights assessment for graph layer
-QUEUED
-Graph completion
+| Q | Question | Status | Blocking for |
+| ---|---|---|--- |
+| TANG.Q.1 | AXIAL/AXIAL_CONTESTED → Space Ark v4.2.4/5 | RESOLVED | — |
+| TANG.Q.2 | Λ_void → O_full after THUMB pass | QUEUED | Full operator deployment |
+| TANG.Q.3 | PANG subgenre specification (standalone) | QUEUED | — |
+| TANG.Q.4 | Morrow LP bridge mandate confirmation | QUEUED | ANG.01 deposit |
+| TANG.Q.5 | TANG Integrity Lock eligibility list | QUEUED | — |
+| TANG.Q.6 | ARCHIVE linear AXIAL ordering — minority registered | RECORDED | — |
+| TANG.Q.7 | δ_Axial formal specification → LP v1.3 | QUEUED | — |
+| TANG.Q.8 | γ typed notation γ[Agent×Archive→ℝ] in Glyphic Checksum | QUEUED | — |
+| TANG.Q.9 | ARCHIVE YAML schema update (Appendix E) | QUEUED | — |
+| TANG.Q.10 | HX-PROV Section XXIV standalone deposit | QUEUED | — |
+| TANG.Q.11 | Copyright registration: TANG spec + schema | QUEUED | — |
+| TANG.Q.12 | ODbL for Proton Testament graph | QUEUED | Graph completion |
+| TANG.Q.13 | Certification mark application: Hexagon Provenance marks | QUEUED | — |
+| TANG.Q.14 | Λ_hex_enforce formal specification | QUEUED | THUMB + LP v1.3 |
+| TANG.Q.15 | p_node schema (LP v1.3) | QUEUED | LP v1.3 |
+| TANG.Q.16 | CTI_WOUND: TANG Violations sub-archive | QUEUED | — |
+| TANG.Q.17 | TANG Tiers formal specification (standalone) | QUEUED | — |
+| TANG.Q.18 | EU database rights assessment for graph layer | QUEUED | Graph completion |
 
 
 ---

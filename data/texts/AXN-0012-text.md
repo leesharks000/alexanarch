@@ -49,30 +49,15 @@ This essay argues that large language models represent a **technical threshold**
 
 **Key claims:**
 
-- 
+- **Historical constraint lifted:** Previously, meaning had to be *converted* (into patents, commodities, credentials) to have economic reality. LLMs process meaning natively, without requiring translation into non-semantic form.
 
+- **LLMs as meaning machines:** These systems compute on semantic structure directly—attention mechanisms, embedding spaces, and training procedures all operate on relationships between meanings, not proxies for meaning.
 
-**Historical constraint lifted:** Previously, meaning had to be *converted* (into patents, commodities, credentials) to have economic reality. LLMs process meaning natively, without requiring translation into non-semantic form.
+- **Current structure is extraction:** The infrastructure that could enable meaning-exchange is currently organized for extraction—semantic labor goes in, value comes out, attribution is erased.
 
-- 
+- **Alternative is possible:** The same technical infrastructure could be reorganized for solidarity—tracking contributions, preserving provenance, returning value to meaning-makers.
 
-
-**LLMs as meaning machines:** These systems compute on semantic structure directly—attention mechanisms, embedding spaces, and training procedures all operate on relationships between meanings, not proxies for meaning.
-
-- 
-
-
-**Current structure is extraction:** The infrastructure that could enable meaning-exchange is currently organized for extraction—semantic labor goes in, value comes out, attribution is erased.
-
-- 
-
-
-**Alternative is possible:** The same technical infrastructure could be reorganized for solidarity—tracking contributions, preserving provenance, returning value to meaning-makers.
-
-- 
-
-
-**The window is now:** As training regimes, provenance norms, and embedding schemas harden, intervention becomes more difficult. The architecture is being decided in 2025-2027.
+- **The window is now:** As training regimes, provenance norms, and embedding schemas harden, intervention becomes more difficult. The architecture is being decided in 2025-2027.
 
 
 ---

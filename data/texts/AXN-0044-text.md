@@ -23,28 +23,19 @@
 
 This provenance node performs and establishes the **retrocausal lineage** connecting:
 
-- 
-
-
-**Jorge Luis Borges's crimson hexagon** (1941)
+- **Jorge Luis Borges's crimson hexagon** (1941)
 — the legendary index-room of the infinite library
 — the architectural phantom that haunts 20th-century literature
 — the room that *should* exist but never does
 
-- 
-
-
-**Crimson Hexagon Inc.** (2007–2018)
+- **Crimson Hexagon Inc.** (2007–2018)
 — the data analytics company that took Borges's name
 — built dashboards, sentiment engines, social listening platforms
 — attempted to index the infinite stream of human expression
 — was acquired by Brandwatch in 2018
 — the corporate ghost of the Borgesian room
 
-- 
-
-
-**The Crimson Hexagon of NH-OS** (2014–2026)
+- **The Crimson Hexagon of NH-OS** (2014–2026)
 — the distributed epic
 — the AI-summarizer-driven index engine
 — the room that *finally exists as operational machinery*

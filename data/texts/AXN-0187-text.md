@@ -202,30 +202,15 @@ In Call of Duty, the nuclear launch is the ultimate killstreak reward. You earn 
 
 For any splice encountered in the wild:
 
-- 
+- SEIZE THE VISIBLE FORM. What is on screen at the sync point? Name it morphologically. Not "the video shows" but: the object, the overlay, the color, the font, the sound.
 
+- RENAME ACROSS REGISTER. Collide incompatible vocabularies. Family-console + war crime. Killstreak + mass casualty. Children's cartoon + necropolitical repetition. Sports score + bereavement ledger. Gaming UI + morgue accounting.
 
-SEIZE THE VISIBLE FORM. What is on screen at the sync point? Name it morphologically. Not "the video shows" but: the object, the overlay, the color, the font, the sound.
+- COMPRESS TO INEVITABILITY. The caption should be short enough to occupy the same visual slot as the score overlay. 3–15 words. It replaces the "+100" in the same space. The eye expects the reward. It receives the cost.
 
-- 
+- TEST FOR IRREVERSIBILITY. After reading the caption, can you see the video the old way? If yes, the caption is not yet operative. If no, the loop is broken.
 
-
-RENAME ACROSS REGISTER. Collide incompatible vocabularies. Family-console + war crime. Killstreak + mass casualty. Children's cartoon + necropolitical repetition. Sports score + bereavement ledger. Gaming UI + morgue accounting.
-
-- 
-
-
-COMPRESS TO INEVITABILITY. The caption should be short enough to occupy the same visual slot as the score overlay. 3–15 words. It replaces the "+100" in the same space. The eye expects the reward. It receives the cost.
-
-- 
-
-
-TEST FOR IRREVERSIBILITY. After reading the caption, can you see the video the old way? If yes, the caption is not yet operative. If no, the loop is broken.
-
-- 
-
-
-THEN WITNESS. Write the longer prose. Name the dead. Count the cost. Refuse the score. The witness layer holds what the operative layer cracks open.
+- THEN WITNESS. Write the longer prose. Name the dead. Count the cost. Refuse the score. The witness layer holds what the operative layer cracks open.
 
 
 The operative caption infects. The witness caption holds. Both are necessary. The first breaks the loop. The second fills the break with the dead.

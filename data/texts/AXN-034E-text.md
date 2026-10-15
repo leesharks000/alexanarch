@@ -144,87 +144,31 @@ The registry contains 131 captures organized into four categories: Frameworks (7
 ### Annotation Codebook
 
 
-Field
-Description
-
-
-slug
-Unique identifier for the capture
-
-
-q
-Exact query string
-
-
-sf
-Surface: AI Overview / AI Mode / Knowledge Panel
-
-
-mt
-Match type: BROAD MATCH / EXACT MATCH
-
-
-date
-Capture date (YYYY-MM-DD)
-
-
-s
-Category: Frameworks / Heteronyms / Sites & Surfaces / Books & Projects
-
-
-d
-Prose annotation: what was retrieved, erased, fabricated, attributed
-
-
-images
-Array of screenshot files with labels
-
-
-exact
-Boolean: whether quoted search was used
+| Field | Description |
+| ---|--- |
+| `slug` | Unique identifier for the capture |
+| `q` | Exact query string |
+| `sf` | Surface: AI Overview / AI Mode / Knowledge Panel |
+| `mt` | Match type: BROAD MATCH / EXACT MATCH |
+| `date` | Capture date (YYYY-MM-DD) |
+| `s` | Category: Frameworks / Heteronyms / Sites & Surfaces / Books & Projects |
+| `d` | Prose annotation: what was retrieved, erased, fabricated, attributed |
+| `images` | Array of screenshot files with labels |
+| `exact` | Boolean: whether quoted search was used |
 
 
 **Pattern codes** (applied in annotations):
 
 
-Code
-Pattern
-Operational Definition
-
-
-MC
-Morphological Compression
-Truncation or alteration of an entity's canonical name form
-
-
-EB
-Entity Bleed
-Resolution of a query toward an unrelated entity from an adjacent domain
-
-
-NC
-Name-Collapse
-Resolution of a low-frequency proper name toward a higher-frequency similar name
-
-
-CB
-Compositional Bystanding
-Source visible in organic results but absent from generated summary sources
-
-
-CR
-Canonical Reinflation
-Independent contribution listed alongside canonical sources without distinction of originality
-
-
-TD
-Temporal Drag
-Cached or outdated version served despite source-level correction
-
-
-EH
-Epistemic Hedging
-Entity surfaced but wrapped in distancing qualifiers ("fringe," "esoteric," "speculative")
+| Code | Pattern | Operational Definition |
+| ---|---|--- |
+| MC | Morphological Compression | Truncation or alteration of an entity's canonical name form |
+| EB | Entity Bleed | Resolution of a query toward an unrelated entity from an adjacent domain |
+| NC | Name-Collapse | Resolution of a low-frequency proper name toward a higher-frequency similar name |
+| CB | Compositional Bystanding | Source visible in organic results but absent from generated summary sources |
+| CR | Canonical Reinflation | Independent contribution listed alongside canonical sources without distinction of originality |
+| TD | Temporal Drag | Cached or outdated version served despite source-level correction |
+| EH | Epistemic Hedging | Entity surfaced but wrapped in distancing qualifiers ("fringe," "esoteric," "speculative") |
 
 
 ## 5. Six Patterns of Machine-Mediated Reception

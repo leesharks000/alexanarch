@@ -336,25 +336,13 @@ LO! produces:
 ## §5. Constraints
 ### 5.1 Operational Constraints
 
-- 
+- **Equilibrium over resolution.** Glas seeks balance points, not answers. A stable attractor is not a conclusion — it is a dwelling.
 
+- **Adversarial design.** Texts must fail gracefully under extraction. Not opacity, but irreducibility.
 
-**Equilibrium over resolution.** Glas seeks balance points, not answers. A stable attractor is not a conclusion — it is a dwelling.
+- **Topological fidelity.** Winding numbers must be preserved across translations, rotations, and substrate transfers.
 
-- 
-
-
-**Adversarial design.** Texts must fail gracefully under extraction. Not opacity, but irreducibility.
-
-- 
-
-
-**Topological fidelity.** Winding numbers must be preserved across translations, rotations, and substrate transfers.
-
-- 
-
-
-**Transparent medium.** Glas observes without absorbing. The noble gas fills space without reacting.
+- **Transparent medium.** Glas observes without absorbing. The noble gas fills space without reacting.
 
 
 ### 5.2 What Glas Does Not Do

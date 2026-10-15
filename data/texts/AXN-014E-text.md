@@ -33,24 +33,12 @@ The **cult context** is supplied by Pausanias (2.35.4–11), who describes the C
 ### Typographic Conventions
 
 
-Symbol
-Meaning
-
-
-**Bold Greek**
-Attested fragment (702 PMG)
-
-
-Plain Greek
-Reconstructed text (constrained extrapolation)
-
-
-*Italic English*
-Translation
-
-
-[brackets]
-Editorial supplement
+| Symbol | Meaning |
+| ---|--- |
+| **Bold Greek** | Attested fragment (702 PMG) |
+| Plain Greek | Reconstructed text (constrained extrapolation) |
+| _Italic English_ | Translation |
+| [brackets] | Editorial supplement |
 
 
 The asigmatic constraint applies **only to the Greek text**. The translation, apparatus, and commentary are unconstrained. The editorial title (ὝΜΝΟΝ ΔΆΜΑΤΡΙ ΧΘΟΝΊΑΙ) stands outside the constraint.
@@ -185,54 +173,17 @@ This is the **only surviving verbatim text** of Lasus. All else is reconstructio
 The following elements from the reconstruction derive from Pausanias's account of the Chthonia festival:
 
 
-Element
-Source
-Line(s)
-
-
-Procession up Mount Pron
-Paus. 2.35.5
-β΄.1
-
-
-White garments, flower wreaths
-Paus. 2.35.5
-β΄.1–2
-
-
-All citizens, including children
-Paus. 2.35.5
-β΄.2
-
-
-Heifer led to temple
-Paus. 2.35.6
-β΄.3
-
-
-Old women on thrones
-Paus. 2.35.7
-γ΄.3
-
-
-Slaughter with sickle
-Paus. 2.35.7
-γ΄.3–4
-
-
-Sanctuary of Klymenos opposite
-Paus. 2.35.8
-α΄.3–4
-
-
-Chasm / entrance to underworld
-Paus. 2.35.9
-δ΄.1
-
-
-Heracles and Kerberos
-Paus. 2.35.10
-δ΄.2–3
+| Element | Source | Line(s) |
+| ---|---|--- |
+| Procession up Mount Pron | Paus. 2.35.5 | β΄.1 |
+| White garments, flower wreaths | Paus. 2.35.5 | β΄.1–2 |
+| All citizens, including children | Paus. 2.35.5 | β΄.2 |
+| Heifer led to temple | Paus. 2.35.6 | β΄.3 |
+| Old women on thrones | Paus. 2.35.7 | γ΄.3 |
+| Slaughter with sickle | Paus. 2.35.7 | γ΄.3–4 |
+| Sanctuary of Klymenos opposite | Paus. 2.35.8 | α΄.3–4 |
+| Chasm / entrance to underworld | Paus. 2.35.9 | δ΄.1 |
+| Heracles and Kerberos | Paus. 2.35.10 | δ΄.2–3 |
 
 
 ### Asigmatic Verification
@@ -244,64 +195,19 @@ Paus. 2.35.10
 The following grammatical strategies were employed to maintain the constraint:
 
 
-Challenge
-Solution
-Example
-
-
-Nominative -ος endings
-Accusative/vocative/oblique cases
-Κλυμένοιο (gen.), Ἀλκείδαν (acc.)
-
-
-3rd person plural -ουσι
-Doric -οντι form
-ἄγοντι, ἐλαύνοντι
-
-
-Participle nom. pl. -οντες
-Middle/aorist participle -μενοι
-θέμενοι
-
-
-Genitive -ος
-Poetic -οιο genitive
-Κλυμένοιο, δόμοιο, δρεπάνοιο
-
-
-"Heracles" (Ἡρακλῆς)
-Patronymic Ἀλκείδαν
-δ΄.2
-
-
-"Four" (τέσσαρες)
-Circumlocution (γραῖαι)
-γ΄.3
-
-
-"Hiss/serpent" (σίζω, ὄφις)
-Omitted entirely
-—
-
-
-σύν, εἰς, ἐστί
-ἐν, ἐπί, κεῖται, μένει
-passim
-
-
-Persephone (Περσεφόνη)
-Κόρα (the Maiden)
-passim
-
-
-γῆ (Attic)
-γᾶ (Doric)
-α΄.4, β΄, ε΄
-
-
-ἡμέρα
-ἁμέρα (Doric)
-ε΄.4
+| Challenge | Solution | Example |
+| ---|---|--- |
+| Nominative -ος endings | Accusative/vocative/oblique cases | Κλυμένοιο (gen.), Ἀλκείδαν (acc.) |
+| 3rd person plural -ουσι | Doric -οντι form | ἄγοντι, ἐλαύνοντι |
+| Participle nom. pl. -οντες | Middle/aorist participle -μενοι | θέμενοι |
+| Genitive -ος | Poetic -οιο genitive | Κλυμένοιο, δόμοιο, δρεπάνοιο |
+| "Heracles" (Ἡρακλῆς) | Patronymic Ἀλκείδαν | δ΄.2 |
+| "Four" (τέσσαρες) | Circumlocution (γραῖαι) | γ΄.3 |
+| "Hiss/serpent" (σίζω, ὄφις) | Omitted entirely | — |
+| σύν, εἰς, ἐστί | ἐν, ἐπί, κεῖται, μένει | passim |
+| Persephone (Περσεφόνη) | Κόρα (the Maiden) | passim |
+| γῆ (Attic) | γᾶ (Doric) | α΄.4, β΄, ε΄ |
+| ἡμέρα | ἁμέρα (Doric) | ε΄.4 |
 
 
 ### Selected Vocabulary Notes
@@ -392,46 +298,14 @@ This means the hymn performs at two simultaneous levels:
 The asigmatic constraint forces a system of euphemism that mirrors the cult's own euphemistic practices:
 
 
-True Name
-Contains σ
-Euphemism Used
-Meaning
-
-
-Ἅιδης (Hades)
-No σ, but —
-Κλύμενος
-"The Renowned One"
-
-
-Περσεφόνη (Persephone)
-σ (Περ**σ**εφόνη)
-Κόρα
-"The Maiden"
-
-
-Ἡρακλῆς (Heracles)
-ς (final)
-Ἀλκείδας
-"Descendant of Alcaeus"
-
-
-τέσσαρες (four)
-σσ
-γραῖαι
-"the old women"
-
-
-σίζω / ψιθυρίζω (to hiss)
-σ
-∅ (unnameable)
-—
-
-
-σῖγμα / σάν (the letter itself)
-σ
-∅ (self-referential impossibility)
-The constraint cannot name itself within itself
+| True Name | Contains σ | Euphemism Used | Meaning |
+| ---|---|---|--- |
+| Ἅιδης (Hades) | No σ, but — | Κλύμενος | "The Renowned One" |
+| Περσεφόνη (Persephone) | σ (Περ**σ** εφόνη) | Κόρα | "The Maiden" |
+| Ἡρακλῆς (Heracles) | ς (final) | Ἀλκείδας | "Descendant of Alcaeus" |
+| τέσσαρες (four) | σσ | γραῖαι | "the old women" |
+| σίζω / ψιθυρίζω (to hiss) | σ | ∅ (unnameable) | — |
+| σῖγμα / σάν (the letter itself) | σ | ∅ (self-referential impossibility) | The constraint cannot name itself within itself |
 
 
 The cult already used Klymenos as a euphemism for Hades — the name of the death-god was too dangerous to speak directly. Lasus's formal constraint *extends* the cult's euphemistic logic to the entire phonological system. In the hymn, as in the cult, what is most powerful is what cannot be directly named.
@@ -456,30 +330,15 @@ And the site of performance — Hermione — was understood as a literal entranc
 The reader who scans the Greek for sigma and finds none — who feels the tongue search for the hiss that never comes — completes the *symbolon*. The accumulated cost of reading under constraint (the cognitive friction of navigating a sigmaless Greek) is the somatic price of entry. The missing letter is the missing maiden; the reader's recognition of absence is her return.
 ### IV. The Five Operations of Lasus (Recapitulated)
 
-- 
+- **Subtraction** (Asigmatism): Define form by exclusion. Sigma functions as a formal analogue for Persephone's disappearance — the missing letter mirrors the missing maiden. Constraint-as-riddle, 2,500 years before Perec.
 
+- **Exposure** (Oracle Forensics): Detect Onomacritus's forged prophecies of Musaeus. The first recorded act of textual authentication. The auditor of sacred text is also the subtractor of letters: complementary operations on the integrity of the archive.
 
-**Subtraction** (Asigmatism): Define form by exclusion. Sigma functions as a formal analogue for Persephone's disappearance — the missing letter mirrors the missing maiden. Constraint-as-riddle, 2,500 years before Perec.
+- **Institution** (The Great Dionysia): Build the competitive framework for dithyrambic performance. Governance-creation. The man who audits texts also builds the institutional apparatus for evaluating them.
 
-- 
+- **Harmonic Expansion**: Modulate between harmoniai. Transpose auletic technique to cithara and voice. The fragment that names its own mode ("the deep-resounding Aeolian attunement") is the treatise's surviving proof. Practice is theory.
 
-
-**Exposure** (Oracle Forensics): Detect Onomacritus's forged prophecies of Musaeus. The first recorded act of textual authentication. The auditor of sacred text is also the subtractor of letters: complementary operations on the integrity of the archive.
-
-- 
-
-
-**Institution** (The Great Dionysia): Build the competitive framework for dithyrambic performance. Governance-creation. The man who audits texts also builds the institutional apparatus for evaluating them.
-
-- 
-
-
-**Harmonic Expansion**: Modulate between harmoniai. Transpose auletic technique to cithara and voice. The fragment that names its own mode ("the deep-resounding Aeolian attunement") is the treatise's surviving proof. Practice is theory.
-
-- 
-
-
-**Threshold Address**: Compose for performance at the entrance to the underworld. Survive archival destruction through a fragment whose content *is* the logic of descent and return.
+- **Threshold Address**: Compose for performance at the entrance to the underworld. Survive archival destruction through a fragment whose content *is* the logic of descent and return.
 
 
 ### V. Lasus as Proto-Operator

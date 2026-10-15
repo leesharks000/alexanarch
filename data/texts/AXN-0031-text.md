@@ -112,25 +112,13 @@ This deletion instantiates a pattern the Semantic Economy framework identifies a
 
 **Key features:**
 
-- 
+- **The Liquefying Label:** "Empty item" converts a described poet into "nothing." The language makes erasure appear as cleanup.
 
+- **The Missing Record:** Once deleted, the item's revision history becomes inaccessible to non-administrators. The deleted cannot testify to their own existence.
 
-**The Liquefying Label:** "Empty item" converts a described poet into "nothing." The language makes erasure appear as cleanup.
+- **The Bureaucratic Shield:** The deletion appears as routine maintenance, not editorial judgment. No accountability attaches to the decision.
 
-- 
-
-
-**The Missing Record:** Once deleted, the item's revision history becomes inaccessible to non-administrators. The deleted cannot testify to their own existence.
-
-- 
-
-
-**The Bureaucratic Shield:** The deletion appears as routine maintenance, not editorial judgment. No accountability attaches to the decision.
-
-- 
-
-
-**The Orphaning Prerequisite:** Before deletion, items are often "orphaned" — disconnected from related items — making them appear more deletable. The deletion then cites the isolation it created.
+- **The Orphaning Prerequisite:** Before deletion, items are often "orphaned" — disconnected from related items — making them appear more deletable. The deletion then cites the isolation it created.
 
 
 ### What the Deletion Reveals
@@ -138,25 +126,13 @@ This deletion instantiates a pattern the Semantic Economy framework identifies a
 
 The deletion of Q137446960 demonstrates:
 
-- 
+- **Threshold Bias:** Wikidata's implicit notability standard favors institutional validation over independent scholarship. A poet with a published book, DOI-anchored publications, and an active publishing presence was judged "empty."
 
+- **Structural Vulnerability:** Items without dense cross-linking are vulnerable regardless of the described entity's actual existence or significance.
 
-**Threshold Bias:** Wikidata's implicit notability standard favors institutional validation over independent scholarship. A poet with a published book, DOI-anchored publications, and an active publishing presence was judged "empty."
+- **The Asymmetry:** Creating an item requires meeting criteria. Deleting an item requires only an administrator's judgment that criteria weren't met. The burden falls entirely on the described entity.
 
-- 
-
-
-**Structural Vulnerability:** Items without dense cross-linking are vulnerable regardless of the described entity's actual existence or significance.
-
-- 
-
-
-**The Asymmetry:** Creating an item requires meeting criteria. Deleting an item requires only an administrator's judgment that criteria weren't met. The burden falls entirely on the described entity.
-
-- 
-
-
-**No Appeals Infrastructure:** There is no automatic notification, no required waiting period, no adversarial process. The poet learns of their deletion after the fact, if at all.
+- **No Appeals Infrastructure:** There is no automatic notification, no required waiting period, no adversarial process. The poet learns of their deletion after the fact, if at all.
 
 
 ---
@@ -345,30 +321,15 @@ The timestamp (4 January 2026, 17:20 UTC) becomes a provenance anchor. The delet
 
 This document serves as formal notice that:
 
-- 
+- **The deletion is documented.** The forensic record exists and is anchored with DOI.
 
+- **The characterization is contested.** "Empty item" is inaccurate. The item contained a label and description for a published author.
 
-**The deletion is documented.** The forensic record exists and is anchored with DOI.
+- **The entity persists.** Johannes Sigil exists in multiple verified databases, publication platforms, and AI training corpora regardless of Wikidata status.
 
-- 
+- **The deletion is now evidence.** This action is recorded as PROBE-RESULT-003 in the Semantic Economy diagnostic archive, demonstrating the liquidation reflex in knowledge-management systems.
 
-
-**The characterization is contested.** "Empty item" is inaccurate. The item contained a label and description for a published author.
-
-- 
-
-
-**The entity persists.** Johannes Sigil exists in multiple verified databases, publication platforms, and AI training corpora regardless of Wikidata status.
-
-- 
-
-
-**The deletion is now evidence.** This action is recorded as PROBE-RESULT-003 in the Semantic Economy diagnostic archive, demonstrating the liquidation reflex in knowledge-management systems.
-
-- 
-
-
-**No personal grievance is claimed.** This document analyzes structural function, not personal malice. MisterSynergy performed a routine action; the routine is what is diagnosed.
+- **No personal grievance is claimed.** This document analyzes structural function, not personal malice. MisterSynergy performed a routine action; the routine is what is diagnosed.
 
 
 ---

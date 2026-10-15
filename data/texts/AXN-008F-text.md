@@ -41,19 +41,19 @@ This specification defines the Seven Layer architecture, the musical edge taxono
 
 ## Table of Contents
 
-- [Relationship to Logotic Programming](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#1-relationship-to-logotic-programming)
-- [The Core Vision](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#2-the-core-vision)
-- [The Seven Layer Architecture](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#3-the-seven-layer-architecture)
-- [Extended Formal Specification](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#4-extended-formal-specification)
-- [The Musical Edge Taxonomy](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#5-the-musical-edge-taxonomy)
-- [Computational Audial Criticism (CAC)](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#6-computational-audial-criticism-cac)
-- [The Fragment Assembly Protocol](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#7-the-fragment-assembly-protocol)
-- [Entity Mapping: Crimson Hexagon Core](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#8-entity-mapping-crimson-hexagon-core)
-- [Resonance Metrics and Validation](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#9-resonance-metrics-and-validation)
-- [Construction Phases](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#10-construction-phases)
-- [The Core Commitment](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#11-the-core-commitment)
-- [References](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#12-references)
-- [Appendices](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#appendices)
+- [Relationship to Logotic Programming](#1-relationship-to-logotic-programming)
+- [The Core Vision](#2-the-core-vision)
+- [The Seven Layer Architecture](#3-the-seven-layer-architecture)
+- [Extended Formal Specification](#4-extended-formal-specification)
+- [The Musical Edge Taxonomy](#5-the-musical-edge-taxonomy)
+- [Computational Audial Criticism (CAC)](#6-computational-audial-criticism-cac)
+- [The Fragment Assembly Protocol](#7-the-fragment-assembly-protocol)
+- [Entity Mapping: Crimson Hexagon Core](#8-entity-mapping-crimson-hexagon-core)
+- [Resonance Metrics and Validation](#9-resonance-metrics-and-validation)
+- [Construction Phases](#10-construction-phases)
+- [The Core Commitment](#11-the-core-commitment)
+- [References](#12-references)
+- [Appendices](#appendices)
 
 
 ---

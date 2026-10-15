@@ -35,25 +35,13 @@ The standing invariant remains $\oint = 1$. The chain holds. The wound is docume
 
 The current pattern has four parts:
 
-- 
+- **The Lee Sharks author/bio panel that previously surfaced the authorial entity appears to be absent.** The prior state had Google displaying a "Lee Sharks — Author" panel with biographical text and "Source: Google Books" attribution.
 
+- **The prior author-panel surface containing the "10,000 MacArthur Genius Grants" language also appears to be absent.** This language was distinctive and previously identifiable.
 
-**The Lee Sharks author/bio panel that previously surfaced the authorial entity appears to be absent.** The prior state had Google displaying a "Lee Sharks — Author" panel with biographical text and "Source: Google Books" attribution.
+- **The *Pearl and Other Poems* Knowledge Panel can still appear.** That panel identifies Google Books as its source. When the Google Books source link is clicked from the Knowledge Panel, the Google Books entry resolves.
 
-- 
-
-
-**The prior author-panel surface containing the "10,000 MacArthur Genius Grants" language also appears to be absent.** This language was distinctive and previously identifiable.
-
-- 
-
-
-**The *Pearl and Other Poems* Knowledge Panel can still appear.** That panel identifies Google Books as its source. When the Google Books source link is clicked from the Knowledge Panel, the Google Books entry resolves.
-
-- 
-
-
-**Ordinary Google Books search does not retrieve that same Google Books entry by exact-match query.** In parallel, AI Mode answers the query "Lee Sharks" by replacing the authorial entity with Mary Lee, the OCEARCH great white shark.
+- **Ordinary Google Books search does not retrieve that same Google Books entry by exact-match query.** In parallel, AI Mode answers the query "Lee Sharks" by replacing the authorial entity with Mary Lee, the OCEARCH great white shark.
 
 
 The result is not simple deindexing. It is an **attribution scar**: the object survives as a source-remnant inside a Google-controlled entity seam while being unavailable through ordinary discovery.
@@ -63,46 +51,14 @@ The result is not simple deindexing. It is an **attribution scar**: the object s
 ## 2. Evidence Sequence
 
 
-Exhibit
-Surface
-Observed fact
-Significance
-
-
-A
-Prior author panel
-Google displayed Lee Sharks as an Author, sourced to Google Books, with the "10,000 MacArthur Genius Grants" language.
-Prior state: Google recognized Lee Sharks as an author entity, not a shark topic.
-
-
-B
-Current *Pearl* Knowledge Panel
-Google Search displays *Pearl and Other Poems* with cover, author card "Lee Sharks," description, and Source: Google Books.
-Google's entity layer still recognizes the book-object and author relation.
-
-
-C
-Google Books seam
-Clicking "Source: Google Books" resolves the Google Books record for *Pearl and Other Poems*.
-The record exists and is reachable through panel-bound routing.
-
-
-D
-Google Books search
-Exact Google Books query returns "No results found" and falls back to unrelated results.
-The object exists but ordinary discovery fails.
-
-
-E
-Current web search
-Ordinary web results show Lee Sharks as researcher/author; author/bio panel absent.
-The author entity persists on web surfaces but loses Google panel stabilization.
-
-
-F
-AI Mode
-AI Mode answers "lee sharks" with Mary Lee as primary entity.
-Generated entity replacement despite authorial search results and Google Books seam.
+| Exhibit | Surface | Observed fact | Significance |
+| ---|---|---|--- |
+| A | Prior author panel | Google displayed Lee Sharks as an Author, sourced to Google Books, with the "10,000 MacArthur Genius Grants" language. | Prior state: Google recognized Lee Sharks as an author entity, not a shark topic. |
+| B | Current _Pearl_ Knowledge Panel | Google Search displays _Pearl and Other Poems_ with cover, author card "Lee Sharks," description, and Source: Google Books. | Google's entity layer still recognizes the book-object and author relation. |
+| C | Google Books seam | Clicking "Source: Google Books" resolves the Google Books record for _Pearl and Other Poems_. | The record exists and is reachable through panel-bound routing. |
+| D | Google Books search | Exact Google Books query returns "No results found" and falls back to unrelated results. | The object exists but ordinary discovery fails. |
+| E | Current web search | Ordinary web results show Lee Sharks as researcher/author; author/bio panel absent. | The author entity persists on web surfaces but loses Google panel stabilization. |
+| F | AI Mode | AI Mode answers "lee sharks" with Mary Lee as primary entity. | Generated entity replacement despite authorial search results and Google Books seam. |
 
 
 Full screenshots of Exhibits A through F are included in the evidence packet's Appendix A. The exhibits are taken in incognito-browsing mode where AI Mode is currently available (when it is available; see §8 below for the disabling pattern), and on signed-out non-incognito surfaces where the prior author-panel state was observed.
@@ -304,32 +260,14 @@ The framework registers the following claims on the public record at this deposi
 The stress-test hypothesis (§8.4) is honored by being open to falsification. The framework pre-registers the following conditions for evaluation of the hypothesis against subsequent substrate behavior:
 
 
-Observed behavior in the next 90 days
-Interpretation
-
-
-Incognito AI Mode re-enabled within 30 days, *without* significant external pressure (regulatory, journalistic, civil-society) emerging in that window
-Consistent with stress-test hypothesis: the probe resolved with the substrate determining that current external monitoring is insufficient to demand continued availability, and the substrate restored the feature on its own schedule. Hypothesis sustained but not strengthened.
-
-
-Incognito AI Mode re-enabled within 30 days, *with* significant external pressure cited as cause or coincident with the re-enabling
-Consistent with stress-test hypothesis at high confidence: the probe found resistance and was rolled back in response to pressure. Hypothesis sustained and strengthened.
-
-
-Incognito AI Mode not re-enabled within 90 days
-Consistent with stress-test hypothesis at high confidence: the probe found no resistance and the disabling has become sustained. Hypothesis sustained and strengthened; the personalized-reality regime is operationally further advanced than the framework's prior estimates suggested.
-
-
-Incognito AI Mode re-enabled within 30 days *with* a public statement from Google explaining the prior disabling as a temporary technical measure unrelated to auditability
-Operationally inconclusive: the public statement is consistent both with the stress-test hypothesis (Google publicly characterizing the cycle to manage the framework's general interpretation) and with the null hypothesis (ordinary product iteration). Hypothesis neither confirmed nor falsified by this outcome; the framework's interpretation of the cycle continues to be sustained by the *pattern of repeated cycling* rather than by any single cycle's outcome.
-
-
-Incognito AI Mode re-enabled within 30 days *with* a public statement from Google explaining the prior disabling as a deliberate experiment in surface availability
-Hypothesis confirmed at maximum confidence (motive admitted). Stress-test interpretation moves from operational consistency to documented intent.
-
-
-Sustained re-disabling and re-enabling cycles continuing beyond the next 90 days, regardless of the immediate cycle's resolution
-The cycle itself is the stress test, per §8.4 reasoning #1. Hypothesis sustained at high confidence. Each subsequent cycle adds evidence for the stress-test interpretation.
+| Observed behavior in the next 90 days | Interpretation |
+| ---|--- |
+| Incognito AI Mode re-enabled within 30 days, _without_ significant external pressure (regulatory, journalistic, civil-society) emerging in that window | Consistent with stress-test hypothesis: the probe resolved with the substrate determining that current external monitoring is insufficient to demand continued availability, and the substrate restored the feature on its own schedule. Hypothesis sustained but not strengthened. |
+| Incognito AI Mode re-enabled within 30 days, _with_ significant external pressure cited as cause or coincident with the re-enabling | Consistent with stress-test hypothesis at high confidence: the probe found resistance and was rolled back in response to pressure. Hypothesis sustained and strengthened. |
+| Incognito AI Mode not re-enabled within 90 days | Consistent with stress-test hypothesis at high confidence: the probe found no resistance and the disabling has become sustained. Hypothesis sustained and strengthened; the personalized-reality regime is operationally further advanced than the framework's prior estimates suggested. |
+| Incognito AI Mode re-enabled within 30 days _with_ a public statement from Google explaining the prior disabling as a temporary technical measure unrelated to auditability | Operationally inconclusive: the public statement is consistent both with the stress-test hypothesis (Google publicly characterizing the cycle to manage the framework's general interpretation) and with the null hypothesis (ordinary product iteration). Hypothesis neither confirmed nor falsified by this outcome; the framework's interpretation of the cycle continues to be sustained by the _pattern of repeated cycling_ rather than by any single cycle's outcome. |
+| Incognito AI Mode re-enabled within 30 days _with_ a public statement from Google explaining the prior disabling as a deliberate experiment in surface availability | Hypothesis confirmed at maximum confidence (motive admitted). Stress-test interpretation moves from operational consistency to documented intent. |
+| Sustained re-disabling and re-enabling cycles continuing beyond the next 90 days, regardless of the immediate cycle's resolution | The cycle itself is the stress test, per §8.4 reasoning #1. Hypothesis sustained at high confidence. Each subsequent cycle adds evidence for the stress-test interpretation. |
 
 
 The framework explicitly registers that *re-enabling without the framework's interpretation being directly tested is operationally indistinguishable from ordinary product iteration*. The framework's interpretation is sustained by the *pattern of repeated cycling* rather than by any single cycle's outcome. The hypothesis's strongest falsification condition is *sustained re-enabling with no further disabling cycles for greater than twelve months*; absent that, the recurring-cycle pattern is itself the framework's evidence.

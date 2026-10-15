@@ -381,35 +381,17 @@ Companies like Myco (Germany) have developed continuous sterilization lines that
 
 ## 6. OPEN QUESTIONS
 
-- 
+- **Fold-line viability.** Does colonized cardboard maintain mycelial integrity across a fold? At what colonization stage is folding most successful? This is the single most important experiment for the flat-pack approach.
 
+- **Nutrient supplementation.** What is the optimal nutrient additive for boosting cardboard yield without introducing contamination risk? Coffee grounds are widely used but increase mold susceptibility. Soy hull flour may be more stable.
 
-**Fold-line viability.** Does colonized cardboard maintain mycelial integrity across a fold? At what colonization stage is folding most successful? This is the single most important experiment for the flat-pack approach.
+- **Shelf life.** How long does a colonized flat-pack remain viable in refrigeration? In ambient conditions? This determines shipping and distribution constraints.
 
-- 
+- **Regulatory requirements.** Are there food safety or agricultural product regulations that apply to selling a living mycelium product? This varies by state. Michigan's Department of Agriculture and Rural Development should be consulted.
 
+- **Printing safety.** What inks and printing methods are safe for cardboard that will become a growing substrate? Soy-based inks are generally considered safe. UV-cured inks and heavy coatings should be avoided. Printing on the exterior only (not the corrugated interior) may be sufficient.
 
-**Nutrient supplementation.** What is the optimal nutrient additive for boosting cardboard yield without introducing contamination risk? Coffee grounds are widely used but increase mold susceptibility. Soy hull flour may be more stable.
-
-- 
-
-
-**Shelf life.** How long does a colonized flat-pack remain viable in refrigeration? In ambient conditions? This determines shipping and distribution constraints.
-
-- 
-
-
-**Regulatory requirements.** Are there food safety or agricultural product regulations that apply to selling a living mycelium product? This varies by state. Michigan's Department of Agriculture and Rural Development should be consulted.
-
-- 
-
-
-**Printing safety.** What inks and printing methods are safe for cardboard that will become a growing substrate? Soy-based inks are generally considered safe. UV-cured inks and heavy coatings should be avoided. Printing on the exterior only (not the corrugated interior) may be sufficient.
-
-- 
-
-
-**Species expansion.** Beyond oysters, which species can reliably colonize cardboard with acceptable yield? Systematic testing with shiitake, lion's mane, and wine cap on supplemented cardboard would expand the product line.
+- **Species expansion.** Beyond oysters, which species can reliably colonize cardboard with acceptable yield? Systematic testing with shiitake, lion's mane, and wine cap on supplemented cardboard would expand the product line.
 
 
 ---

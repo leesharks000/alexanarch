@@ -23,10 +23,7 @@ EA-ARK-01-DAMASCUS v5.1 · EA-ARK-01-FRACTION v2.1
   
   
    
-   *
-  
- 
- **
+   * **
 
 
 ## ABSTRACT
@@ -337,10 +334,7 @@ maximally distant registers. The convergence is the proof.*
   
   
    
-   *
-  
- 
- **
+   * **
 *
 
 

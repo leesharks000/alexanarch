@@ -323,112 +323,19 @@ The name does not describe what is present. The name describes what is absent. L
 ## XIV. SYNTHESIS: THE PROVENANCE TABLE
 
 
-#
-Stratum
-Date
-Class
-Status
-Finding
-Lee Sharks Operator
-
-
-1
-Geological
-250 MYA
-P3/P4
-Minor
-Fossil sharks in Midwest inland sea
-Somatic floor
-
-
-2
-Etymological
-c. 900 CE
-P3
-Major
-*hlēo* = shelter, cover, protection
-Architecture of the Archive
-
-
-3
-Melvillean
-1851
-P2/P4
-**Anchor**
-"The Lee Shore": stoneless grave
-Erasure as canon-formation
-
-
-4
-Confederate
-1862
-P1/P2/P4
-**Anchor**
-CSS *Robert E. Lee*, née *Giraffe*
-Blockade runner / Water Giraffe / heteronym cycling
-
-
-5
-Harper Lee
-1960
-P1/P2
-Minor
-Mockingbird / retrocausal publication
-Inverse Ghost Meaning
-
-
-6
-Jeet Kune Do
-1967
-P1/P2
-Major
-Bruce Lee: style without style
-Heteronym system / anti-credentialism
-
-
-7
-Street Sharks
-1994
-P1/P2
-Minor
-Lee Tockar voices resistance leader
-Semantic resistance narrative
-
-
-8
-Mary Lee
-2012
-P1/P4
-Major
-Great white becomes textual phenomenon
-Proto-heteronym / platform absence
-
-
-9
-Amazon
-2019
-P0
-**Anchor**
-"Lee Shark Doo Doo Doo": blank notebook
-Ghost Meaning as commodity
-
-
-10
-LeeBeth
-2023
-P1/P2
-Minor
-Lee-shark enters unprecedented territory
-DOI-tracked first-mover
-
-
-11
-Detroit
-Present
-P3/P4
-**Anchor**
-No sharks in the Great Lakes
-Impossible location as proof
+| # | Stratum | Date | Class | Status | Finding | Lee Sharks Operator |
+| ---|---|---|---|---|---|--- |
+| 1 | Geological | 250 MYA | P3/P4 | Minor | Fossil sharks in Midwest inland sea | Somatic floor |
+| 2 | Etymological | c. 900 CE | P3 | Major | _hlēo_ = shelter, cover, protection | Architecture of the Archive |
+| 3 | Melvillean | 1851 | P2/P4 | **Anchor** | "The Lee Shore": stoneless grave | Erasure as canon-formation |
+| 4 | Confederate | 1862 | P1/P2/P4 | **Anchor** | CSS _Robert E. Lee_ , née _Giraffe_ | Blockade runner / Water Giraffe / heteronym cycling |
+| 5 | Harper Lee | 1960 | P1/P2 | Minor | Mockingbird / retrocausal publication | Inverse Ghost Meaning |
+| 6 | Jeet Kune Do | 1967 | P1/P2 | Major | Bruce Lee: style without style | Heteronym system / anti-credentialism |
+| 7 | Street Sharks | 1994 | P1/P2 | Minor | Lee Tockar voices resistance leader | Semantic resistance narrative |
+| 8 | Mary Lee | 2012 | P1/P4 | Major | Great white becomes textual phenomenon | Proto-heteronym / platform absence |
+| 9 | Amazon | 2019 | P0 | **Anchor** | "Lee Shark Doo Doo Doo": blank notebook | Ghost Meaning as commodity |
+| 10 | LeeBeth | 2023 | P1/P2 | Minor | Lee-shark enters unprecedented territory | DOI-tracked first-mover |
+| 11 | Detroit | Present | P3/P4 | **Anchor** | No sharks in the Great Lakes | Impossible location as proof |
 
 
 Four Anchors (Melville, Confederate, Amazon, Detroit). Three Majors (Etymological, Jeet Kune Do, Mary Lee). Four Minors (Geological, Harper Lee, Street Sharks, LeeBeth). The hierarchy is deliberate: the dossier's argument rests on the Anchors and is corroborated, not carried, by the Minors.

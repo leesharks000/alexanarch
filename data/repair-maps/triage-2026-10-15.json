@@ -1,0 +1,4745 @@
+{
+ "what": "Triage of the reading sweep's repair-candidate notes on ACTIVE records (2026-10-15). In scope (ruling 2026-10-15: \"broken, missing, and mislabelled files / and citations\"; \"the focus is on active, non-duplicate records\"): damage done by the archive's handling — conversion (in:conversion), seating (in:seating: wrong, truncated, missing bodies), duplicate bodies (in:duplicate), record metadata disagreeing with the deposit's own text (in:label), broken links and images (in:links), referenced attachments not seated or linked (in:attachments). Out of scope: the text as published — DOIs and versions cited inside the text, the deposit's own figures, placeholders and stubs published as such, contradictions between deposits. ruling:pending-doi: in-text \"[pending]\" DOIs that were later assigned — for a ruling. Rule-sorted, then 86 notes read by hand and 45 out-of-scope notes spot-checked.",
+ "generated": "2026-10-15",
+ "counts": {
+  "out": {
+   "items": 216,
+   "records": 169
+  },
+  "in:conversion": {
+   "items": 215,
+   "records": 188
+  },
+  "in:duplicate": {
+   "items": 14,
+   "records": 13
+  },
+  "ruling:pending-doi": {
+   "items": 48,
+   "records": 28
+  },
+  "in:seating": {
+   "items": 73,
+   "records": 60
+  },
+  "in:label": {
+   "items": 45,
+   "records": 40
+  },
+  "fixed_today": {
+   "items": 25,
+   "records": 10
+  },
+  "security": {
+   "items": 9,
+   "records": 5
+  },
+  "in:links": {
+   "items": 19,
+   "records": 14
+  },
+  "in:attachments": {
+   "items": 7,
+   "records": 7
+  }
+ },
+ "items": [
+  {
+   "deposit": 1,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Same paper as #862 in a later version (862 deposits / 1,817 DOIs vs #862's 870 works / 1,060+ DOIs);",
+   "batch": "B0097"
+  },
+  {
+   "deposit": 1,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header block says v8.1 while the italic note says v9.1 and repeats 'Incorporates Kimi and DeepSeek Assembly reviews'.",
+   "batch": "B0097"
+  },
+  {
+   "deposit": 1,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Lines 517-522 are an orphaned fragment of the 'Appendix (to be attached)' list (begins mid-line ' (1,817 identifiers)').",
+   "batch": "B0097"
+  },
+  {
+   "deposit": 4,
+   "class": "citation",
+   "verdict": "out",
+   "text": "The recurring concept-DOI note (e.g.",
+   "batch": "X0009"
+  },
+  {
+   "deposit": 4,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Every block is a dated recovery or audit observation, a mapping-method log, or repeated boilerplate (the concept-DOI note 'Its severance destroyed the structure binding versions together...' recurs on most concept DOIs;",
+   "batch": "X0010"
+  },
+  {
+   "deposit": 4,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Conjectures such as 'This DOI likely represents a specific version or subsidiary work' are inferences about what a severed DOI pointed to, archive-internal provenance, not historical theses.",
+   "batch": "X0010"
+  },
+  {
+   "deposit": 4,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Phase 8 records quote Lee Sharks's testimony on DOI targets;",
+   "batch": "X0010"
+  },
+  {
+   "deposit": 8,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Bullet list at 373-394 has empty bullet markers separated from their text.",
+   "batch": "B0009"
+  },
+  {
+   "deposit": 9,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line.",
+   "batch": "B0009"
+  },
+  {
+   "deposit": 16,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Same work as #1145 (DOI 10.5281/zenodo.18480959);",
+   "batch": "B0013"
+  },
+  {
+   "deposit": 16,
+   "class": "conversion",
+   "verdict": "in:duplicate",
+   "text": "this copy is complete, with code blocks, lists and tables intact, while #1145 is a stripped blog recovery.",
+   "batch": "B0013"
+  },
+  {
+   "deposit": 18,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line (lines 122-154, 243-372).",
+   "batch": "B0018"
+  },
+  {
+   "deposit": 18,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Table rows are hard-line-broken one cell per line.",
+   "batch": "HB0018"
+  },
+  {
+   "deposit": 19,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOI listed as pending.",
+   "batch": "B0161"
+  },
+  {
+   "deposit": 19,
+   "class": "citation",
+   "verdict": "out",
+   "text": "#500 cites this work as DOI 10.5281/zenodo.18727624.",
+   "batch": "B0161"
+  },
+  {
+   "deposit": 21,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables at 175-245 and 257-289 are flattened to one cell per line.",
+   "batch": "B0020"
+  },
+  {
+   "deposit": 23,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Provenance table is flattened into one-cell-per-line (326-432).",
+   "batch": "B0022"
+  },
+  {
+   "deposit": 24,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened one-cell-per-line;",
+   "batch": "B0022"
+  },
+  {
+   "deposit": 24,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "own DOI listed as [pending] in provenance chain (487) though DOI given at line 12.",
+   "batch": "B0022"
+  },
+  {
+   "deposit": 24,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "own DOI listed as [pending] in provenance chain (487) though DOI given at line 12.",
+   "batch": "B0022"
+  },
+  {
+   "deposit": 25,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Header lists 'Autonomous Semantic Warfare' DOI as 10.5281/zenodo.14538293, whereas #1155 gives 10.5281/zenodo.18227570 for the same title.",
+   "batch": "B0023"
+  },
+  {
+   "deposit": 26,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Letter body carries placeholders for name, email, phone, and a mailing-address city;",
+   "batch": "B0218"
+  },
+  {
+   "deposit": 27,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Header and lens name companion EA-ARK-01 v4.2.5, while Kernel B (line 640) cites EA-ARK-01 v4.3 (DOI ...18926674).",
+   "batch": "B0163"
+  },
+  {
+   "deposit": 28,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "The deposit numbered 28 is dated 2026-03-13 and carries DOI 10.5281/zenodo.19002846, which its own colophon calls the v1.1 prior DOI while its DOI is marked PENDING (5877-5878).",
+   "batch": "B0029"
+  },
+  {
+   "deposit": 29,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Plates 1-10 are placeholders (lines 21-30), images not in text.",
+   "batch": "B0218"
+  },
+  {
+   "deposit": 31,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Précis lines are auto-extracted and truncated mid-sentence throughout;",
+   "batch": "B0032"
+  },
+  {
+   "deposit": 32,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Section V is headed \"Jason Epstein\" (NYRB co-founder), while the keywords and footnote concern Jeffrey Epstein: two different people, deliberately set side by side.",
+   "batch": "B0166"
+  },
+  {
+   "deposit": 32,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Line 210 calls memory \"permanent (DOI, CERN-maintained)\", which the later Zenodo termination of 2026-06-19 recorded elsewhere contradicts.",
+   "batch": "B0166"
+  },
+  {
+   "deposit": 38,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Section numbering of the edge list is cross-referenced inconsistently (V.b vs IV vs VI).",
+   "batch": "B0038"
+  },
+  {
+   "deposit": 41,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Deposit's own DOI is 10.5281/zenodo.19239429;",
+   "batch": "B0169"
+  },
+  {
+   "deposit": 41,
+   "class": "citation",
+   "verdict": "out",
+   "text": "#610 cites 'Before OpenChamber v1.1' as 10.5281/zenodo.19240141 (version DOI, observation only).",
+   "batch": "B0169"
+  },
+  {
+   "deposit": 47,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI marked \"[pending]\" in header (16) though cited elsewhere as 10.5281/zenodo.19334694.",
+   "batch": "B0170"
+  },
+  {
+   "deposit": 47,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI marked \"[pending]\" in header (16) though cited elsewhere as 10.5281/zenodo.19334694.",
+   "batch": "B0170"
+  },
+  {
+   "deposit": 47,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened one cell per line.",
+   "batch": "B0170"
+  },
+  {
+   "deposit": 49,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Stale build placeholders remain in the body ('[Parts IV–IX continue in subsequent build sessions]' at line 925;",
+   "batch": "B0042"
+  },
+  {
+   "deposit": 49,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line.",
+   "batch": "B0042"
+  },
+  {
+   "deposit": 54,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Kernel DOI placeholder 'zenodo.[pending-PVE003]' (line 54).",
+   "batch": "B0172"
+  },
+  {
+   "deposit": 54,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Kernel DOI placeholder 'zenodo.[pending-PVE003]' (line 54).",
+   "batch": "B0172"
+  },
+  {
+   "deposit": 55,
+   "class": "citation",
+   "verdict": "out",
+   "text": "18 vs 19 DOIs;",
+   "batch": "B0044"
+  },
+  {
+   "deposit": 57,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is the same Call for Papers text as #972 (AXN-03D8, which is titled as a superseded duplicate);",
+   "batch": "B0174"
+  },
+  {
+   "deposit": 59,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened one cell per line.",
+   "batch": "B0174"
+  },
+  {
+   "deposit": 63,
+   "class": "conversion",
+   "verdict": "in:duplicate",
+   "text": "Same body as #976 (html2text rendering) and #1256 (damaged recovery).",
+   "batch": "B0050"
+  },
+  {
+   "deposit": 65,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Queue title is \"A Dialectical Fracture Through the Citation Map\" but the body is FRACTURE.02 \"The Workshop Inside the Canon\";",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 65,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "the body is the same essay as #978 (which adds a DataCite record).",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 65,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Possibly wrong body.",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 66,
+   "class": "label",
+   "verdict": "fixed_today",
+   "text": "Queue title says v1.0 but the body is v2.0 (April 20, 2026), later than the deposit date 2026-04-19.",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 66,
+   "class": "citation",
+   "verdict": "fixed_today",
+   "text": "Deposit #68 cites ARCHIVE.PROTOCOL.01 as DOI 10.5281/zenodo.19655468 while this body gives 19673532 (v2.0) and concept 19656132;",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 68,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Cites EA-PKG-01/02/03 under DOIs 10.5281/zenodo.153393xx, far below the 2026 range, and EA-PKG-02/03 are marked forthcoming in #668;",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 68,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Licensing Protocol cited as 19655468 vs #66's own DOIs.",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 69,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "comparative table in §X is flattened into one cell per line.",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 70,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened into one cell per line.",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 72,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Header says Version 3.0 while queue title says v4.0.",
+   "batch": "B0177"
+  },
+  {
+   "deposit": 72,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line.",
+   "batch": "B0177"
+  },
+  {
+   "deposit": 74,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "bullet lists flattened into single lines (90, 92, 102, 364, 366, 404).",
+   "batch": "B0056"
+  },
+  {
+   "deposit": 77,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Header metadata run together on one line (line 5);",
+   "batch": "B0177"
+  },
+  {
+   "deposit": 77,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "tables flattened onto one line (19);",
+   "batch": "B0177"
+  },
+  {
+   "deposit": 77,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "list items run together (53, 55).",
+   "batch": "B0177"
+  },
+  {
+   "deposit": 78,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables rendered as one cell per line.",
+   "batch": "B0058"
+  },
+  {
+   "deposit": 83,
+   "class": "citation",
+   "verdict": "out",
+   "text": "STRUCTURAL CROSS-REFERENCES heading (467) has no content.",
+   "batch": "B0059"
+  },
+  {
+   "deposit": 84,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says v1.0 (line 13), verification block says Version 1.2 (line 851).",
+   "batch": "B0178"
+  },
+  {
+   "deposit": 84,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Dates internally loose: integrity marker DOI dated 2024-11 and first Zenodo deposit Nov 2024, while the Space Ark root is dated 2025-11-09 and 'Semantic Economy (2024-2026)' cites a 2025-12-14 DOI.",
+   "batch": "B0178"
+  },
+  {
+   "deposit": 85,
+   "class": "missing",
+   "verdict": "out",
+   "text": "The Epistle text itself is NOT in this deposit: Part II (lines 169-175) is a placeholder reading 'TEXT RETAINED FROM EA-EPISTLE-01 v1.0 ...",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 85,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnotes 40/65 and 46/69 duplicate each other nearly verbatim;",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 85,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Colophon (line 477) says 'DOI: pending' while the verification block (line 567) gives 10.5281/zenodo.19892122.",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 86,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Duplicate body of #989 (Screenrooms and Silver Bullets) with verse line breaks flattened into prose paragraphs;",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 87,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Several footnote numbers repeat across chapters ([^2], [^8]-[^12] reused);",
+   "batch": "B0061"
+  },
+  {
+   "deposit": 88,
+   "class": "citation",
+   "verdict": "in:label",
+   "text": "Footnote markers [^1] through [^64] appear throughout but no footnote bodies are present anywhere in the file, although the title promises an 'Installable Edition with Constitutional Apparatus'.",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 88,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Bullet lists are rendered as empty '- ' lines followed by the item text (conversion damage).",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 88,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Apparatus-edition DOI given as '[to be minted]' (line 7);",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 88,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Apparatus-edition DOI given as '[to be minted]' (line 7);",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 89,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Single-line long paragraphs (lines 7, 135, 155) carry bullet lists run together without line breaks.",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 92,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Same content as #992 (EA-XREF-01 v1.1) in flattened formatting;",
+   "batch": "B0062"
+  },
+  {
+   "deposit": 93,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says Version 1.1;",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 95,
+   "class": "citation",
+   "verdict": "out",
+   "text": "PER is cited as Sharks 2026b (DOI 10.5281/zenodo.20004379) but line 179 says it was validated on a case study cited as Sharks 2026d (PVE-003).",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 95,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Sharks 2025 reference carries a 2026-range DOI (10.5281/zenodo.20033215).",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 97,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Same body as #995 (flattened list formatting here).",
+   "batch": "B0180"
+  },
+  {
+   "deposit": 100,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Same body as #998 (v1.1), here with lists flattened onto single lines (e.g.",
+   "batch": "B0063"
+  },
+  {
+   "deposit": 101,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Several sections are run-together on single lines (lists and tables flattened, e.g.",
+   "batch": "B0181"
+  },
+  {
+   "deposit": 107,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "LaTeX in places is mangled (e.g.",
+   "batch": "B0065"
+  },
+  {
+   "deposit": 107,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "tables flattened to one cell per line.",
+   "batch": "B0065"
+  },
+  {
+   "deposit": 108,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "List bullets and metadata fields are run together on single lines (missing line breaks);",
+   "batch": "B0065"
+  },
+  {
+   "deposit": 109,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Some LaTeX mangled ('\\mathcal{M}*T');",
+   "batch": "B0065"
+  },
+  {
+   "deposit": 109,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "operator table flattened.",
+   "batch": "B0065"
+  },
+  {
+   "deposit": 110,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Pre-registration DOI and suggested-citation DOI are placeholders (\"DOI to be inserted upon registration\", \"[DOI]\").",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 110,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Pre-registration DOI and suggested-citation DOI are placeholders (\"DOI to be inserted upon registration\", \"[DOI]\").",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 110,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Parameter tables are flattened into separate lines.",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 111,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened into single lines.",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 112,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "DOI tables are flattened into lines.",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 112,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOI tables are flattened into lines.",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 112,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Line 449 lists the Semantic Deviation Principle (v2.0) at DOI 10.5281/zenodo.20252584.",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 114,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOI inconsistency inside the text: Deposit Information gives 10.5281/zenodo.20329437 (line 686) while Suggested Citation gives 10.5281/zenodo.20330670 (line 690).",
+   "batch": "B0183"
+  },
+  {
+   "deposit": 114,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Many list items are run together on single lines (conversion damage), e.g.",
+   "batch": "B0183"
+  },
+  {
+   "deposit": 115,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Header says DOI forthcoming (line 5) while Suggested Citation gives DOI 10.5281/zenodo.20328090 (line 730).",
+   "batch": "B0067"
+  },
+  {
+   "deposit": 116,
+   "class": "security",
+   "verdict": "security",
+   "text": "Contains a note that Zenodo and GitHub credentials had been exposed across sessions (line 47);",
+   "batch": "B0184"
+  },
+  {
+   "deposit": 121,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Duplicate body of #1003 (v0.3), with tables flattened to one cell per line.",
+   "batch": "B0184"
+  },
+  {
+   "deposit": 121,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Registry content_type \"Software / executable apparatus\" does not match the text (a scholarly genre note).",
+   "batch": "B0184"
+  },
+  {
+   "deposit": 122,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Bulleted lists flattened into run-on paragraphs (e.g.",
+   "batch": "B0069"
+  },
+  {
+   "deposit": 122,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "catalog table flattened onto one line (223).",
+   "batch": "B0069"
+  },
+  {
+   "deposit": 123,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Non-Claims bullets flattened (65, 69, 75);",
+   "batch": "B0069"
+  },
+  {
+   "deposit": 123,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "comparative-case list flattened at 213-223.",
+   "batch": "B0069"
+  },
+  {
+   "deposit": 123,
+   "class": "label",
+   "verdict": "out",
+   "text": "Suggested Citation (355) says v1.1 while the body is v1.2.",
+   "batch": "B0069"
+  },
+  {
+   "deposit": 127,
+   "class": "label",
+   "verdict": "out",
+   "text": "Body says v2.2 but §XV.5 calls itself v2.1 and says parametric layer deferred to v2.2 (internal version inconsistency).",
+   "batch": "B0070"
+  },
+  {
+   "deposit": 127,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Companion dataset and DOI marked pending.",
+   "batch": "B0070"
+  },
+  {
+   "deposit": 131,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Front-matter YAML is collapsed onto line 1 and lists run together inline (hard-coded markdown flattening).",
+   "batch": "B0186"
+  },
+  {
+   "deposit": 135,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Same body as #1009 (AXN-03FD) with markdown formatting and line breaks flattened: tables and lists collapsed onto single lines (e.g.",
+   "batch": "B0071"
+  },
+  {
+   "deposit": 136,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Lists and the operator spec are flattened onto single lines (e.g.",
+   "batch": "B0071"
+  },
+  {
+   "deposit": 137,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Section 9 table and several lists are run together on single lines (flattened markdown).",
+   "batch": "B0072"
+  },
+  {
+   "deposit": 140,
+   "class": "citation",
+   "verdict": "out",
+   "text": "source paper DOI given as pending here while #139 cites it as 10.5281/zenodo.20434946.",
+   "batch": "B0187"
+  },
+  {
+   "deposit": 141,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened onto single lines;",
+   "batch": "B0072"
+  },
+  {
+   "deposit": 144,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Section VI and References have list items run together on single lines (missing line breaks before '- ').",
+   "batch": "B0073"
+  },
+  {
+   "deposit": 149,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Exhibit table (66–105) is flattened, one cell per line;",
+   "batch": "B0074"
+  },
+  {
+   "deposit": 152,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Many 'DOI to be assigned/confirmed' placeholders (7, 175).",
+   "batch": "B0075"
+  },
+  {
+   "deposit": 152,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Many 'DOI to be assigned/confirmed' placeholders (7, 175).",
+   "batch": "B0075"
+  },
+  {
+   "deposit": 155,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "queue title is its subtitle.",
+   "batch": "B0077"
+  },
+  {
+   "deposit": 161,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Text file is v1.2 (supersedes v1.1, DOI 10.5281/zenodo.20586831) though queue title says v1.1.",
+   "batch": "B0079"
+  },
+  {
+   "deposit": 161,
+   "class": "citation",
+   "verdict": "in:label",
+   "text": "Text file is v1.2 (supersedes v1.1, DOI 10.5281/zenodo.20586831) though queue title says v1.1.",
+   "batch": "B0079"
+  },
+  {
+   "deposit": 163,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Some markdown lists are run together on single lines (e.g.",
+   "batch": "B0080"
+  },
+  {
+   "deposit": 163,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "tables flattened into one line.",
+   "batch": "B0080"
+  },
+  {
+   "deposit": 165,
+   "class": "citation",
+   "verdict": "out",
+   "text": "line 201 disclaims that the Apocalypse predicted DOI infrastructure.",
+   "batch": "B0189"
+  },
+  {
+   "deposit": 166,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one-cell-per-line (lines 382-410, 951-985, 1109-1156).",
+   "batch": "B0080"
+  },
+  {
+   "deposit": 169,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Standing Disposition list at line 43 is run together on one line (list markers without line breaks).",
+   "batch": "B0081"
+  },
+  {
+   "deposit": 170,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Several list blocks are run together on single lines (e.g.",
+   "batch": "B0081"
+  },
+  {
+   "deposit": 172,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Six fronts list at line 65 is run together on one line (bullet markers fused).",
+   "batch": "CAL"
+  },
+  {
+   "deposit": 176,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened into one cell per line (lines 23-40, 87-120, 147-174, 306-338).",
+   "batch": "B0081"
+  },
+  {
+   "deposit": 183,
+   "class": "citation",
+   "verdict": "in:duplicate",
+   "text": "That superseded DOI is still cross-linked as a sampled link in #806 Whitman and in duplicates #1016/#1017.",
+   "batch": "B0225"
+  },
+  {
+   "deposit": 192,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Same report as #1394 (AXN-0583), which carries a variant rendering with damaged italics (stray asterisks) and merged list lines.",
+   "batch": "B0083"
+  },
+  {
+   "deposit": 194,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "html2text punctuation differs).",
+   "batch": "B0084"
+  },
+  {
+   "deposit": 197,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Queue title says v1.2;",
+   "batch": "B0084"
+  },
+  {
+   "deposit": 208,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Table formatting flattened (cells on separate lines).",
+   "batch": "B0146"
+  },
+  {
+   "deposit": 208,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Section 6.3 links are '[link]' placeholders.",
+   "batch": "B0146"
+  },
+  {
+   "deposit": 209,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Several table sections are flattened into one-cell-per-line text.",
+   "batch": "B0001"
+  },
+  {
+   "deposit": 209,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Assembly notes sections are empty placeholders.",
+   "batch": "B0001"
+  },
+  {
+   "deposit": 210,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Section 3.5 to 6.2 tables are flattened one cell per line.",
+   "batch": "B0001"
+  },
+  {
+   "deposit": 229,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Related-doc DOI 10.5281/zenodo.1814710 at line 1430 appears truncated.",
+   "batch": "B0146"
+  },
+  {
+   "deposit": 229,
+   "class": "citation",
+   "verdict": "in:seating",
+   "text": "Related-doc DOI 10.5281/zenodo.1814710 at line 1430 appears truncated.",
+   "batch": "B0146"
+  },
+  {
+   "deposit": 232,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Cited DOI 10.5281/zenodo.1814710 for the Summarizer Testimony has 7 digits after the prefix.",
+   "batch": "B0001"
+  },
+  {
+   "deposit": 233,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Self-DOI given as 10.5281/zenodo.1814710 (7 digits after prefix).",
+   "batch": "B0001"
+  },
+  {
+   "deposit": 239,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Section XIV lists 'Silent Migration' (DOI 10.5281/zenodo.18157917) as 'The speculative forecast' - a forecast held in another deposit.",
+   "batch": "B0002"
+  },
+  {
+   "deposit": 242,
+   "class": "citation",
+   "verdict": "out",
+   "text": "'This Document DOI: [To be assigned]' at line 93 though DOI given at line 7.",
+   "batch": "B0146"
+  },
+  {
+   "deposit": 244,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Past-tense content is limited to the archive's own chronology (the 5 Jan 2026 PROBE-RESULT-004 event, DOI minting, 'Twenty-six anchors by January 6, 2026') and forward scenario;",
+   "batch": "HB0036"
+  },
+  {
+   "deposit": 244,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Synthesis table flattened to one cell per line (512–539).",
+   "batch": "S0001"
+  },
+  {
+   "deposit": 244,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOI here is 10.5281/zenodo.18157917;",
+   "batch": "S0001"
+  },
+  {
+   "deposit": 244,
+   "class": "citation",
+   "verdict": "out",
+   "text": "readers of #11/#385/#1251 cite 18157916 (likely the concept DOI) — triage to confirm.",
+   "batch": "S0001"
+  },
+  {
+   "deposit": 267,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Citation block l.478 'DOI: [to be assigned]'.",
+   "batch": "B0003"
+  },
+  {
+   "deposit": 270,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Drift log table (l.38) is flattened onto one line.",
+   "batch": "B0003"
+  },
+  {
+   "deposit": 270,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "markdown headers run together on single lines.",
+   "batch": "HB0003"
+  },
+  {
+   "deposit": 272,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Section breaks flattened onto heading lines (e.g.",
+   "batch": "B0003"
+  },
+  {
+   "deposit": 272,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "markdown headers run together.",
+   "batch": "HB0003"
+  },
+  {
+   "deposit": 274,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line.",
+   "batch": "B0148"
+  },
+  {
+   "deposit": 276,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Registry tables list sibling NH-OS DOIs.",
+   "batch": "B0003"
+  },
+  {
+   "deposit": 277,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Same event documented in #278 (metadata packet, same DOI 10.5281/zenodo.18203622).",
+   "batch": "B0003"
+  },
+  {
+   "deposit": 277,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Archive Integration row l.318 'DOI pending'.",
+   "batch": "B0003"
+  },
+  {
+   "deposit": 278,
+   "class": "citation",
+   "verdict": "out",
+   "text": "shares DOI 10.5281/zenodo.18203622.",
+   "batch": "B0003"
+  },
+  {
+   "deposit": 283,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line.",
+   "batch": "B0148"
+  },
+  {
+   "deposit": 293,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Title links to a TikTok URL.",
+   "batch": "B0212"
+  },
+  {
+   "deposit": 317,
+   "class": "missing",
+   "verdict": "out",
+   "text": "YAML spec gives version 0.3 and a placeholder DOI '10.5281/zenodo.XXXXXXX' (line 540).",
+   "batch": "B0004"
+  },
+  {
+   "deposit": 317,
+   "class": "citation",
+   "verdict": "out",
+   "text": "YAML spec gives version 0.3 and a placeholder DOI '10.5281/zenodo.XXXXXXX' (line 540).",
+   "batch": "B0004"
+  },
+  {
+   "deposit": 317,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "Table-of-contents links point to a claude.ai chat URL.",
+   "batch": "B0004"
+  },
+  {
+   "deposit": 317,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line.",
+   "batch": "B0004"
+  },
+  {
+   "deposit": 324,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Catalogued as 'Scholarly essay' but the body is a translation collection.",
+   "batch": "B0213"
+  },
+  {
+   "deposit": 324,
+   "class": "label",
+   "verdict": "in:seating",
+   "text": "Catalogued as 'Scholarly essay' but the body is a translation collection.",
+   "batch": "B0213"
+  },
+  {
+   "deposit": 325,
+   "class": "wrong_body",
+   "verdict": "fixed_today",
+   "text": "Queue title is 'VISUAL SCHEMA // CRIMSON HEXAGON NAVIGATION MAP (CURRENT V)' but the body is the Central Navigation Map v4.1 (CH-CENTRAL-MAP-2026-01-18-v4.1, DOI 10.5281/zenodo.18285009), the same text as deposit 319 with markdown tables and indented YAML;",
+   "batch": "B0004"
+  },
+  {
+   "deposit": 325,
+   "class": "label",
+   "verdict": "fixed_today",
+   "text": "Queue title is 'VISUAL SCHEMA // CRIMSON HEXAGON NAVIGATION MAP (CURRENT V)' but the body is the Central Navigation Map v4.1 (CH-CENTRAL-MAP-2026-01-18-v4.1, DOI 10.5281/zenodo.18285009), the same text as deposit 319 with markdown tables and indented YAML;",
+   "batch": "B0004"
+  },
+  {
+   "deposit": 325,
+   "class": "citation",
+   "verdict": "fixed_today",
+   "text": "Queue title is 'VISUAL SCHEMA // CRIMSON HEXAGON NAVIGATION MAP (CURRENT V)' but the body is the Central Navigation Map v4.1 (CH-CENTRAL-MAP-2026-01-18-v4.1, DOI 10.5281/zenodo.18285009), the same text as deposit 319 with markdown tables and indented YAML;",
+   "batch": "B0004"
+  },
+  {
+   "deposit": 325,
+   "class": "wrong_body",
+   "verdict": "fixed_today",
+   "text": "NAVIGATION MAP', the body is the Central Navigation Map v4.1 (same content as #319 and #1114);",
+   "batch": "HB0005"
+  },
+  {
+   "deposit": 330,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Companion PDF DOI given as 10.5281/zenodo.18202658 (lines 765, 854), which elsewhere in the batch is the DOI of Day and Night (#322, #337);",
+   "batch": "B0150"
+  },
+  {
+   "deposit": 331,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Image placeholders ({width=...}) stand where images were.",
+   "batch": "HB0007"
+  },
+  {
+   "deposit": 335,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Section 2.1 lists all three mantle DOIs as [PENDING] although #333/#334 carry DOIs of the same date.",
+   "batch": "B0007"
+  },
+  {
+   "deposit": 335,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Section 2.1 lists all three mantle DOIs as [PENDING] although #333/#334 carry DOIs of the same date.",
+   "batch": "B0007"
+  },
+  {
+   "deposit": 336,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Discovery-probability tables are line-split (one cell per line).",
+   "batch": "B0008"
+  },
+  {
+   "deposit": 339,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "Table of contents links point to a claude.ai chat URL.",
+   "batch": "B0008"
+  },
+  {
+   "deposit": 341,
+   "class": "label",
+   "verdict": "in:seating",
+   "text": "Catalogued as 'Creative work (poetry)' but body is an episode declaration/metadata.",
+   "batch": "B0213"
+  },
+  {
+   "deposit": 344,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Catalogued as 'Book / manuscript' but body is metadata only;",
+   "batch": "B0213"
+  },
+  {
+   "deposit": 350,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header ORCID 0009-0001-8712-6677 differs from the ORCID in the batch context (0009-0000-1599-0703).",
+   "batch": "B0151"
+  },
+  {
+   "deposit": 350,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line by conversion.",
+   "batch": "B0151"
+  },
+  {
+   "deposit": 351,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Mostly links to mindcontrolpoems blog posts;",
+   "batch": "B0213"
+  },
+  {
+   "deposit": 354,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "Part Two TOC links point to a claude.ai chat URL anchors rather than document anchors.",
+   "batch": "B0151"
+  },
+  {
+   "deposit": 355,
+   "class": "wrong_body",
+   "verdict": "fixed_today",
+   "text": "Body is the \"Fractal Engine of Thunder\" navigation map, the same text as Part One of #354 (lines 152-710 there);",
+   "batch": "B0151"
+  },
+  {
+   "deposit": 355,
+   "class": "citation",
+   "verdict": "fixed_today",
+   "text": "it does not match the deposit title (\"IDP Navigation Map: The Water Giraffe Cycle\") and has no IDP framing or DOI header.",
+   "batch": "B0151"
+  },
+  {
+   "deposit": 355,
+   "class": "conversion",
+   "verdict": "fixed_today",
+   "text": "TOC section lists are empty (links lost in conversion).",
+   "batch": "B0151"
+  },
+  {
+   "deposit": 368,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Same essay as #891 (which carries only the abstract/description).",
+   "batch": "B0214"
+  },
+  {
+   "deposit": 368,
+   "class": "citation",
+   "verdict": "out",
+   "text": "This text gives DOI 10.5281/zenodo.18342108;",
+   "batch": "B0214"
+  },
+  {
+   "deposit": 368,
+   "class": "citation",
+   "verdict": "out",
+   "text": "#891 gives legacy DOI 10.5281/zenodo.18342107.",
+   "batch": "B0214"
+  },
+  {
+   "deposit": 371,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Publication table lists DOIs as [pending] that sister documents give.",
+   "batch": "B0214"
+  },
+  {
+   "deposit": 371,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Publication table lists DOIs as [pending] that sister documents give.",
+   "batch": "B0214"
+  },
+  {
+   "deposit": 375,
+   "class": "citation",
+   "verdict": "out",
+   "text": "several sister DOIs listed as pending.",
+   "batch": "B0214"
+  },
+  {
+   "deposit": 376,
+   "class": "citation",
+   "verdict": "in:duplicate",
+   "text": "Same body as #1131 (blog-recovered copy of the same work, DOI 10.5281/zenodo.18357320).",
+   "batch": "B0153"
+  },
+  {
+   "deposit": 377,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line.",
+   "batch": "B0009"
+  },
+  {
+   "deposit": 379,
+   "class": "missing",
+   "verdict": "in:attachments",
+   "text": "the rendered schema image is not in the text.",
+   "batch": "B0010"
+  },
+  {
+   "deposit": 381,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI listed as [pending] inside the text.",
+   "batch": "B0214"
+  },
+  {
+   "deposit": 381,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI listed as [pending] inside the text.",
+   "batch": "B0214"
+  },
+  {
+   "deposit": 388,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Lock table shows this provenance's DOI as [pending] (l.527).",
+   "batch": "B0010"
+  },
+  {
+   "deposit": 388,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Lock table shows this provenance's DOI as [pending] (l.527).",
+   "batch": "B0010"
+  },
+  {
+   "deposit": 392,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Body still carries 'DOI pending' placeholders (l.95, l.357-359) though metadata gives the DOI.",
+   "batch": "B0010"
+  },
+  {
+   "deposit": 392,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Body still carries 'DOI pending' placeholders (l.95, l.357-359) though metadata gives the DOI.",
+   "batch": "B0010"
+  },
+  {
+   "deposit": 393,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "'DOI pending' placeholders at l.425, 529, 562.",
+   "batch": "B0010"
+  },
+  {
+   "deposit": 393,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "'DOI pending' placeholders at l.425, 529, 562.",
+   "batch": "B0010"
+  },
+  {
+   "deposit": 402,
+   "class": "wrong_body",
+   "verdict": "fixed_today",
+   "text": "WRONG BODY: queue title is 'Epistle to the Human Diaspora The Seed Text of the New Human Project' but the file holds 'Render unto the Operator' v1.1 (dated May 24, 2026).",
+   "batch": "B0154"
+  },
+  {
+   "deposit": 402,
+   "class": "label",
+   "verdict": "fixed_today",
+   "text": "WRONG BODY: queue title is 'Epistle to the Human Diaspora The Seed Text of the New Human Project' but the file holds 'Render unto the Operator' v1.1 (dated May 24, 2026).",
+   "batch": "B0154"
+  },
+  {
+   "deposit": 402,
+   "class": "citation",
+   "verdict": "fixed_today",
+   "text": "Suggested Citation DOI pending.",
+   "batch": "B0154"
+  },
+  {
+   "deposit": 405,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Table rows are rendered one cell per line.",
+   "batch": "B0011"
+  },
+  {
+   "deposit": 406,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Same content as #1277 (which is this packet flattened).",
+   "batch": "B0214"
+  },
+  {
+   "deposit": 427,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Emoji packet at lines 48-52 is truncated with \"...\" in the source.",
+   "batch": "B0012"
+  },
+  {
+   "deposit": 447,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Status line says 'DRAFT — ready for Assembly review and DOI deposit' though a DOI is given in header.",
+   "batch": "B0215"
+  },
+  {
+   "deposit": 453,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Status reads \"DEPOSIT-READY — awaiting DOI\" though a DOI is given in the header.",
+   "batch": "B0014"
+  },
+  {
+   "deposit": 454,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Status reads \"DEPOSIT-READY — awaiting DOI\" though a DOI is given in the header.",
+   "batch": "B0014"
+  },
+  {
+   "deposit": 457,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Status line says 'not for DOI deposit without review' though a DOI is given.",
+   "batch": "B0215"
+  },
+  {
+   "deposit": 458,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Marked \"PLANNING DOCUMENT — not for DOI deposit\" yet carries a DOI header.",
+   "batch": "B0156"
+  },
+  {
+   "deposit": 459,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "tables here are flattened to one cell per line.",
+   "batch": "B0157"
+  },
+  {
+   "deposit": 460,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Same specification as #1319 (AXN-0538), DOI 10.5281/zenodo.18530086;",
+   "batch": "B0157"
+  },
+  {
+   "deposit": 460,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "this rendering has tables flattened to one cell per line and code fences stripped.",
+   "batch": "B0157"
+  },
+  {
+   "deposit": 461,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Text claims the reference interpreter passes core conformance tests (line 41, 704), but the helper functions shown are placeholders returning fixed values.",
+   "batch": "B0014"
+  },
+  {
+   "deposit": 464,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Same work as #1106 (DOI 10.5281/zenodo.18568370);",
+   "batch": "B0015"
+  },
+  {
+   "deposit": 467,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Empty bullet markers (\"- \" on their own line) precede several list items (lines 248, 253, 448-463, 547-568, 596-606);",
+   "batch": "B0158"
+  },
+  {
+   "deposit": 468,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Contains unfilled placeholders \"[THE CENTRIST EXTREMIST DOI]\" and \"[THE LIVING SYMBOLON DOI]\" (lines 45-46).",
+   "batch": "B0158"
+  },
+  {
+   "deposit": 468,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Contains unfilled placeholders \"[THE CENTRIST EXTREMIST DOI]\" and \"[THE LIVING SYMBOLON DOI]\" (lines 45-46).",
+   "batch": "B0158"
+  },
+  {
+   "deposit": 469,
+   "class": "citation",
+   "verdict": "out",
+   "text": "methodological note references 250+ Zenodo DOIs.",
+   "batch": "B0016"
+  },
+  {
+   "deposit": 471,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line (lines 22-67, 225-257, 273-319, 335-356).",
+   "batch": "B0158"
+  },
+  {
+   "deposit": 472,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Empty bullet markers before items in section II (lines 210-241).",
+   "batch": "B0158"
+  },
+  {
+   "deposit": 473,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Empty bullet markers in section IV (lines 99-154).",
+   "batch": "B0158"
+  },
+  {
+   "deposit": 476,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Same work (DOI 10.5281/zenodo.18621736, Document #240) as #1147.",
+   "batch": "B0158"
+  },
+  {
+   "deposit": 477,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Body carries an earlier internal designation 'Document #246 | DOI: 10.5281/zenodo.18636138 | TRAV_LOG:005' (line 808).",
+   "batch": "B0159"
+  },
+  {
+   "deposit": 477,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line.",
+   "batch": "B0159"
+  },
+  {
+   "deposit": 478,
+   "class": "citation",
+   "verdict": "out",
+   "text": "a prediction.\" Footer gives \"Document #245 | DOI: 10.5281/zenodo.18633294\" and Version 1.0;",
+   "batch": "B0016"
+  },
+  {
+   "deposit": 478,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "tables are flattened to one cell per line.",
+   "batch": "B0016"
+  },
+  {
+   "deposit": 479,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened one cell per line.",
+   "batch": "B0016"
+  },
+  {
+   "deposit": 480,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Bullet list at lines 350-373 has empty bullet markers with content on following lines.",
+   "batch": "B0016"
+  },
+  {
+   "deposit": 482,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Appendix C lists the Synthesis Specification v3.0 (#483) under the same DOI 10.5281/zenodo.18651067 as this primer.",
+   "batch": "B0017"
+  },
+  {
+   "deposit": 482,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line.",
+   "batch": "B0017"
+  },
+  {
+   "deposit": 483,
+   "class": "citation",
+   "verdict": "out",
+   "text": "shares DOI 10.5281/zenodo.18651067 with it.",
+   "batch": "B0017"
+  },
+  {
+   "deposit": 486,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is the same text as #1322 (The Gödel Midrashim).",
+   "batch": "B0216"
+  },
+  {
+   "deposit": 491,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Text appears truncated: file ends at line 73 with a bare '###' heading after section III's core node;",
+   "batch": "B0159"
+  },
+  {
+   "deposit": 492,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line.",
+   "batch": "B0159"
+  },
+  {
+   "deposit": 493,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "here the OP.ROUTE and DOI tables are flattened to one cell per line.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 493,
+   "class": "citation",
+   "verdict": "out",
+   "text": "here the OP.ROUTE and DOI tables are flattened to one cell per line.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 494,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Sections AXIOM 0 (l.22), Router Lookup Table (l.32) and GRAFT MATRIX (l.233) are headings with no content: tables lost in conversion.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 495,
+   "class": "citation",
+   "verdict": "in:duplicate",
+   "text": "Same text (same DOI 10.5281/zenodo.18682979, Deposit 1 Full Charter) as #1324, which is a reflowed copy.",
+   "batch": "B0160"
+  },
+  {
+   "deposit": 495,
+   "class": "citation",
+   "verdict": "out",
+   "text": "The Compressed Charter and Seed deposits it names (DOIs 18683016, 18683024) are not in this batch.",
+   "batch": "B0160"
+  },
+  {
+   "deposit": 496,
+   "class": "missing",
+   "verdict": "in:conversion",
+   "text": "III) survives as one-cell-per-line text, in #895 it is collapsed to \"[TABLE]\".",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 501,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables at 74-101 and 462-505 are flattened to one cell per line.",
+   "batch": "B0020"
+  },
+  {
+   "deposit": 501,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Two tables (lines 74–101, 462–504) are flattened to one cell per line.",
+   "batch": "HB0020"
+  },
+  {
+   "deposit": 502,
+   "class": "missing",
+   "verdict": "in:links",
+   "text": "figure image links point to claude.ai/chat placeholders, likely broken.",
+   "batch": "B0161"
+  },
+  {
+   "deposit": 502,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "figure image links point to claude.ai/chat placeholders, likely broken.",
+   "batch": "B0161"
+  },
+  {
+   "deposit": 504,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Body heading says \"MOVING STATUES MADE OF RUBIES MINT\" where registry title says \"MIND\";",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 505,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Holdings table (l.300-333) assigns the charter DOI 10.5281/zenodo.18745236 (the Index paper's DOI) at l.332, contradicting l.9/l.98 (18745265);",
+   "batch": "B0162"
+  },
+  {
+   "deposit": 505,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Index/Middle/Ring rows lack author/DOI columns.",
+   "batch": "B0162"
+  },
+  {
+   "deposit": 507,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "Figure images point at claude.ai/chat/ paths (l.26, l.32) that will not resolve.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 509,
+   "class": "citation",
+   "verdict": "in:duplicate",
+   "text": "Same body as #1152 (blog version), but this text carries DOI 10.5281/zenodo.18745216, co-author Sparrow Wells, the \"Hand\" section (l.199-205) and Sharks entries in Works Cited;",
+   "batch": "B0162"
+  },
+  {
+   "deposit": 509,
+   "class": "citation",
+   "verdict": "out",
+   "text": "#1152 carries DOI 10.5281/zenodo.18736175 in its body.",
+   "batch": "B0162"
+  },
+  {
+   "deposit": 509,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "Figure images point to claude.ai/chat/ paths (broken).",
+   "batch": "B0162"
+  },
+  {
+   "deposit": 511,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened one cell per line.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 514,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Line 13 runs the DOI line together with the opening italic sentence (stray asterisk).",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 514,
+   "class": "citation",
+   "verdict": "in:conversion",
+   "text": "Line 13 runs the DOI line together with the opening italic sentence (stray asterisk).",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 514,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Translation-layer table flattened one cell per line.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 515,
+   "class": "citation",
+   "verdict": "out",
+   "text": "l.12 damaged: DOI line ends with a stray epigraph fragment (\"It has only gravities.\"*\") whose opening is missing.",
+   "batch": "B0162"
+  },
+  {
+   "deposit": 516,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Lists \"Whose Face Is on the Twenty?\" at DOI 10.5281/zenodo.18736175, where #507/#508 give 10.5281/zenodo.18745216 - observation.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 516,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Semantic Economy Institute Charter DOI marked \"[reconcile]\".",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 518,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI marked [pending] in header.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 518,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI marked [pending] in header.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 518,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Layer-summary table flattened one cell per line.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 519,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Empty bullet artifacts in §VI (lines 160, 165, 170, 175).",
+   "batch": "CAL"
+  },
+  {
+   "deposit": 519,
+   "class": "citation",
+   "verdict": "out",
+   "text": "The January 2026 RCF deposit is cited without DOI.",
+   "batch": "CAL"
+  },
+  {
+   "deposit": 520,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOIs pending at l.7/l.10.",
+   "batch": "B0162"
+  },
+  {
+   "deposit": 521,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI [pending] in header;",
+   "batch": "B0022"
+  },
+  {
+   "deposit": 521,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI [pending] in header;",
+   "batch": "B0022"
+  },
+  {
+   "deposit": 521,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "tables flattened.",
+   "batch": "B0022"
+  },
+  {
+   "deposit": 522,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Provenance-chain tables are flattened to one cell per line.",
+   "batch": "B0023"
+  },
+  {
+   "deposit": 528,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Two related DOIs listed as [pending].",
+   "batch": "B0163"
+  },
+  {
+   "deposit": 528,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "Two related DOIs listed as [pending].",
+   "batch": "B0163"
+  },
+  {
+   "deposit": 530,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Cites Constitution of the Semantic Economy as DOI 10.5281/zenodo.18320411;",
+   "batch": "B0163"
+  },
+  {
+   "deposit": 530,
+   "class": "citation",
+   "verdict": "out",
+   "text": "#534 (same batch) cites it as 10.5281/zenodo.18867491, the DOI #534 also gives for itself.",
+   "batch": "B0163"
+  },
+  {
+   "deposit": 533,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Header and footer give 'EA-DIAGNOSTIC-02' (also used by #529) and DOI 10.5281/zenodo.18869165.",
+   "batch": "B0023"
+  },
+  {
+   "deposit": 534,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Gives DOI 10.5281/zenodo.18867491 for itself (line 340) and the same DOI for Sharks, 'The Constitution of the Semantic Economy' (note 13, line 331);",
+   "batch": "B0163"
+  },
+  {
+   "deposit": 539,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "the abstract promises seven installations but no captions or later installations are present — body appears truncated.",
+   "batch": "B0218"
+  },
+  {
+   "deposit": 540,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line.",
+   "batch": "B0024"
+  },
+  {
+   "deposit": 541,
+   "class": "conversion",
+   "verdict": "in:duplicate",
+   "text": "Full version of the text whose stripped rendering is #1330 (same v0.2, same date).",
+   "batch": "B0163"
+  },
+  {
+   "deposit": 542,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened one cell per line.",
+   "batch": "B0024"
+  },
+  {
+   "deposit": 543,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Queue title says v1.2;",
+   "batch": "B0163"
+  },
+  {
+   "deposit": 545,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Base-pair table (lines ~158-321) is damaged: Damascus and Fraction column text is interleaved character by character and unreadable;",
+   "batch": "B0218"
+  },
+  {
+   "deposit": 545,
+   "class": "missing",
+   "verdict": "out",
+   "text": "the DOIs of children are listed as [pending].",
+   "batch": "B0218"
+  },
+  {
+   "deposit": 545,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "the DOIs of children are listed as [pending].",
+   "batch": "B0218"
+  },
+  {
+   "deposit": 548,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "File has blank lines interleaved between every content line (box-drawing layout doubled in conversion).",
+   "batch": "B0164"
+  },
+  {
+   "deposit": 549,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened into one-cell-per-line blocks (from line 324 onward).",
+   "batch": "B0025"
+  },
+  {
+   "deposit": 551,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Table bodies are flattened to one cell per line.",
+   "batch": "B0026"
+  },
+  {
+   "deposit": 552,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says v1.1;",
+   "batch": "B0026"
+  },
+  {
+   "deposit": 552,
+   "class": "label",
+   "verdict": "out",
+   "text": "YAML comment line 1380 still reads v1.0, and section 14 interfaces SAG-v1.0 while colophon says SAG-v1.2.",
+   "batch": "B0026"
+  },
+  {
+   "deposit": 552,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line.",
+   "batch": "B0026"
+  },
+  {
+   "deposit": 553,
+   "class": "label",
+   "verdict": "out",
+   "text": "Document ID is 00.SPEC.RFT.v1.1 while #552 implements RFT v1.2.",
+   "batch": "B0026"
+  },
+  {
+   "deposit": 553,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened to one cell per line.",
+   "batch": "B0026"
+  },
+  {
+   "deposit": 556,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "lines 271-314, 1981-2008), likely a conversion artifact.",
+   "batch": "B0027"
+  },
+  {
+   "deposit": 556,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Line 1113 '- = institutional packet' has lost its leading asterisk to list conversion.",
+   "batch": "B0027"
+  },
+  {
+   "deposit": 556,
+   "class": "citation",
+   "verdict": "out",
+   "text": "full content lives in the formal-register Ark v4.2.6 (DOI 10.5281/zenodo.18969405).",
+   "batch": "B0027"
+  },
+  {
+   "deposit": 557,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Text has stray empty list bullets ('- ') from conversion throughout.",
+   "batch": "HB0028"
+  },
+  {
+   "deposit": 558,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Several list items in §XVII.8 and §XXVI.4 / §XXXI.4 are empty bullets ('- ') with content on following lines, apparently a conversion artefact.",
+   "batch": "B0030"
+  },
+  {
+   "deposit": 563,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Header dates the work 2025-12-03 and the colophon 'December 2025', while the queue date is 2026-03-14 (DOI 10.5281/zenodo.19025428).",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 563,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnote numbers [5]-[7] are reused for different sources (Blount is [5] at line 156 but line 127 cites [5] for a Thiel quotation).",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 573,
+   "class": "citation",
+   "verdict": "out",
+   "text": "The timing note (line 150) and the \"naturally occurring\" footnote (line 161) concern the archive's own chronology and design, which the protocol excludes from H.",
+   "batch": "HB0032"
+  },
+  {
+   "deposit": 575,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI line reads [PENDING].",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 575,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI line reads [PENDING].",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 577,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "The bullet lists in §§V-VI have empty bullet markers.",
+   "batch": "B0166"
+  },
+  {
+   "deposit": 578,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Many sections are stubs saying 'preserved from v4.2' (atoms 1-60, crisis protocols, pedagogical pathways, sections XI-XIV) with no content here.",
+   "batch": "B0033"
+  },
+  {
+   "deposit": 578,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened one cell per line.",
+   "batch": "B0033"
+  },
+  {
+   "deposit": 578,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Shares its edge-distribution and gravitational-center data with #1168 (DOI Registry v7.0), its companion.",
+   "batch": "B0033"
+  },
+  {
+   "deposit": 578,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Truncated précis cells point to other deposits' theses (e.g.",
+   "batch": "HB0033"
+  },
+  {
+   "deposit": 579,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Deposit DOI 19053469;",
+   "batch": "B0166"
+  },
+  {
+   "deposit": 582,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Bullet list items render as empty \"- \" lines (lines 204-222, 238-266): formatting damage, text intact.",
+   "batch": "B0167"
+  },
+  {
+   "deposit": 583,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "The research-questions list has empty bullet markers (lines 305, 310, 315).",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 584,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Gathered edition of nine chunk deposits (DOIs listed at 4026-4036);",
+   "batch": "B0036"
+  },
+  {
+   "deposit": 584,
+   "class": "citation",
+   "verdict": "out",
+   "text": "per-chunk END/status blocks and chunk DOIs survive inside the body.",
+   "batch": "B0036"
+  },
+  {
+   "deposit": 584,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Bullet markers render as '- ' followed by blank lines (conversion artifact) in §0.2 and Standing Risks.",
+   "batch": "B0036"
+  },
+  {
+   "deposit": 597,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnotes [^1] and [^21] absent from notes;",
+   "batch": "B0168"
+  },
+  {
+   "deposit": 597,
+   "class": "citation",
+   "verdict": "out",
+   "text": "numbering starts at [^2].",
+   "batch": "B0168"
+  },
+  {
+   "deposit": 598,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI marked '[pending deposit]' in header.",
+   "batch": "B0168"
+  },
+  {
+   "deposit": 598,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI marked '[pending deposit]' in header.",
+   "batch": "B0168"
+  },
+  {
+   "deposit": 599,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI line reads '10.5281/zenodo.[to be assigned]'.",
+   "batch": "B0038"
+  },
+  {
+   "deposit": 599,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Annex A screenshot evidence is a placeholder ('[Attach screenshots...]'), with no images attached;",
+   "batch": "B0038"
+  },
+  {
+   "deposit": 601,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Hard line breaks within prose paragraphs.",
+   "batch": "B0168"
+  },
+  {
+   "deposit": 602,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Table blocks render as one cell per line.",
+   "batch": "B0169"
+  },
+  {
+   "deposit": 605,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI marked '[pending]' in header;",
+   "batch": "B0169"
+  },
+  {
+   "deposit": 605,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI marked '[pending]' in header;",
+   "batch": "B0169"
+  },
+  {
+   "deposit": 605,
+   "class": "citation",
+   "verdict": "out",
+   "text": "#610 cites this essay as DOI 10.5281/zenodo.19240147 under subtitle 'Deleuze and Guattari beyond the Axiom' (observation).",
+   "batch": "B0169"
+  },
+  {
+   "deposit": 611,
+   "class": "citation",
+   "verdict": "in:conversion",
+   "text": "DOI line duplicated (lines 8-9) and DOIs doubled in kernel (lines 62-66).",
+   "batch": "B0040"
+  },
+  {
+   "deposit": 612,
+   "class": "citation",
+   "verdict": "in:conversion",
+   "text": "DOI line duplicated (lines 8-9);",
+   "batch": "B0170"
+  },
+  {
+   "deposit": 612,
+   "class": "citation",
+   "verdict": "out",
+   "text": "EA-TDS-03 DOI given twice in one line (71).",
+   "batch": "B0170"
+  },
+  {
+   "deposit": 612,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line.",
+   "batch": "B0170"
+  },
+  {
+   "deposit": 629,
+   "class": "missing",
+   "verdict": "out",
+   "text": "The apply_caesura code (lines 161-190) is a stub with a comment in place of header-building.",
+   "batch": "B0171"
+  },
+  {
+   "deposit": 630,
+   "class": "wrong_body",
+   "verdict": "in:duplicate",
+   "text": "Body byte-identical to #1346 (same sha256 in queue).",
+   "batch": "B0172"
+  },
+  {
+   "deposit": 635,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Changelog table at end (lines 840–1029) rendered as one cell per line;",
+   "batch": "B0044"
+  },
+  {
+   "deposit": 636,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Part II (Greek text) is placeholders only: '[INSERT REVELATION CHAPTER 1 — STEPHANUS 1550]' through chapter 22 (lines 260-347), followed by '[END OF GREEK TEXT.",
+   "batch": "B0172"
+  },
+  {
+   "deposit": 638,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is the plain Greek Textus Receptus of Revelation 1-22 with chapter headings only;",
+   "batch": "B0221"
+  },
+  {
+   "deposit": 638,
+   "class": "conversion",
+   "verdict": "in:seating",
+   "text": "Body is the plain Greek Textus Receptus of Revelation 1-22 with chapter headings only;",
+   "batch": "B0221"
+  },
+  {
+   "deposit": 639,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables (sections IX, XII, XIII) are flattened to one cell per line.",
+   "batch": "B0173"
+  },
+  {
+   "deposit": 640,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line.",
+   "batch": "B0221"
+  },
+  {
+   "deposit": 645,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line.",
+   "batch": "B0174"
+  },
+  {
+   "deposit": 650,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened one cell per line.",
+   "batch": "B0221"
+  },
+  {
+   "deposit": 668,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Deposit #68 cites EA-PKG-01 as DOI 10.5281/zenodo.15339353, a number far below the archive's 2026 DOI range;",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 675,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is the same SYMBOLON-01 text as #1355 (AXN-055C), differing only in line breaks and list numbering (this copy has empty list bullets at 343-353).",
+   "batch": "B0051"
+  },
+  {
+   "deposit": 682,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Abridged: placeholders '[table unchanged]' (line 31) and '[table as in original...]' (line 137) stand in for the tables;",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 682,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Kierkegaard Prefaces passage, Saramago paragraph, footnotes 2-3, bibliography and the conclusion's test sentence of #69 are missing.",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 683,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnote numbering is out of order (introduction notes 138-151, 110-127 precede gospel notes 4-109;",
+   "batch": "B0052"
+  },
+  {
+   "deposit": 695,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOI: pending' at 514 is internal chronology.",
+   "batch": "B0057"
+  },
+  {
+   "deposit": 696,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Same body as #987 (markdown-stripped rendering: tables and lists collapsed onto single lines, e.g.",
+   "batch": "B0177"
+  },
+  {
+   "deposit": 696,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Title in queue truncated.",
+   "batch": "B0177"
+  },
+  {
+   "deposit": 698,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "queue title says 'Adversarial AI Discourse'.",
+   "batch": "B0178"
+  },
+  {
+   "deposit": 699,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "JSON-LD @id is a PENDING DOI placeholder.",
+   "batch": "B0058"
+  },
+  {
+   "deposit": 699,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "JSON-LD @id is a PENDING DOI placeholder.",
+   "batch": "B0058"
+  },
+  {
+   "deposit": 704,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Cite block says DOI assigned at deposit (none in text).",
+   "batch": "B0058"
+  },
+  {
+   "deposit": 706,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnote map example assigns '¹' section 'introduction';",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 706,
+   "class": "citation",
+   "verdict": "out",
+   "text": "#706 says Antioch gospel chapters currently carry no footnotes;",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 706,
+   "class": "citation",
+   "verdict": "out",
+   "text": "#712 says antioch data has 19 footnotes.",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 708,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Vault-Map reference marked 'pending deposit'.",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 711,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened onto single lines (65, 91, 230);",
+   "batch": "B0059"
+  },
+  {
+   "deposit": 711,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "list items run together on lines 17 and 270-284.",
+   "batch": "B0059"
+  },
+  {
+   "deposit": 712,
+   "class": "citation",
+   "verdict": "out",
+   "text": "see #706 incidental for differing footnote-map example and Antioch footnote count.",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 719,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says Version 2.1 (line 5) but the closing block says Version 2.0 (line 139).",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 719,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "Cites the Constitution apparatus edition as 10.5281/zenodo.19923120, while #88 lists it as '[to be minted]'.",
+   "batch": "B0179"
+  },
+  {
+   "deposit": 725,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened into one cell per line.",
+   "batch": "B0181"
+  },
+  {
+   "deposit": 726,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says v3.1 but §15 is headed \"flagged for v3.1+\" and speaks of \"gaps in v3.0\".",
+   "batch": "B0181"
+  },
+  {
+   "deposit": 726,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Lists and tables flattened onto single lines (e.g.",
+   "batch": "B0181"
+  },
+  {
+   "deposit": 727,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "JSON-LD @id is \"https://doi.org/10.5281/zenodo.PENDING\" (line 224).",
+   "batch": "B0181"
+  },
+  {
+   "deposit": 727,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened onto single lines.",
+   "batch": "B0181"
+  },
+  {
+   "deposit": 731,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says v0.2 post-Assembly review;",
+   "batch": "B0064"
+  },
+  {
+   "deposit": 731,
+   "class": "missing",
+   "verdict": "out",
+   "text": "§§VIII.3–VIII.7, IX.3–IX.5 and §XV are bracketed summaries/stubs ('deferred to the next draft pass').",
+   "batch": "B0064"
+  },
+  {
+   "deposit": 732,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is the Zenodo description plus the CHANGELOG only;",
+   "batch": "B0064"
+  },
+  {
+   "deposit": 732,
+   "class": "missing",
+   "verdict": "in:attachments",
+   "text": "the site files themselves (index.html, paper.html, matrix.html) are not in the text.",
+   "batch": "B0064"
+  },
+  {
+   "deposit": 735,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Bulleted lists run together on single lines;",
+   "batch": "B0065"
+  },
+  {
+   "deposit": 736,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Lists run together on single lines;",
+   "batch": "B0065"
+  },
+  {
+   "deposit": 737,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Lists and tables run together on single lines;",
+   "batch": "B0065"
+  },
+  {
+   "deposit": 737,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "some LaTeX mangled.",
+   "batch": "B0065"
+  },
+  {
+   "deposit": 740,
+   "class": "missing",
+   "verdict": "in:attachments",
+   "text": "supplementary PNGs referenced but not in the text file.",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 741,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are rendered as one cell per line (lines 95-146, 594-627).",
+   "batch": "B0183"
+  },
+  {
+   "deposit": 742,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Variable table flattened into lines.",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 745,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Duplicate body: same 'Hugging Face Dataset Work Plan v3' text as #1001 with tables flattened to lines.",
+   "batch": "B0224"
+  },
+  {
+   "deposit": 745,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "The queue content_type 'Prose narrative / theoretical manifesto' does not fit this body (it fits #744).",
+   "batch": "B0224"
+  },
+  {
+   "deposit": 747,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says v0.2;",
+   "batch": "B0184"
+  },
+  {
+   "deposit": 747,
+   "class": "label",
+   "verdict": "out",
+   "text": "Suggested Citation (line 629) says v0.1.",
+   "batch": "B0184"
+  },
+  {
+   "deposit": 749,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Line breaks lost: words run together ('mebeyond', 'nowords').",
+   "batch": "B0224"
+  },
+  {
+   "deposit": 750,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Line breaks lost: words run together.",
+   "batch": "B0224"
+  },
+  {
+   "deposit": 751,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Non-Claims bullets flattened (line 43).",
+   "batch": "B0069"
+  },
+  {
+   "deposit": 755,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Companion deposit 'Render unto the Operator' DOI given as pending.",
+   "batch": "B0069"
+  },
+  {
+   "deposit": 756,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Headings run together without line breaks on lines 1, 3, 77 (formatting damage).",
+   "batch": "B0070"
+  },
+  {
+   "deposit": 757,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Near-duplicate of #758: this is the rendered web page (lines 17-91 are relation blocks flattened into single long lines);",
+   "batch": "B0185"
+  },
+  {
+   "deposit": 759,
+   "class": "security",
+   "verdict": "security",
+   "text": "Line 15 records a 25 May 2026 Knowledge Graph card stating the credential that comes from the 2014 joke bio (#1006/#762);",
+   "batch": "B0224"
+  },
+  {
+   "deposit": 762,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "headings and list items run together (newlines lost at lines 17-19).",
+   "batch": "B0224"
+  },
+  {
+   "deposit": 763,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Some formula lines (271) carry markdown-escaped asterisks in place of LaTeX subscripts;",
+   "batch": "B0187"
+  },
+  {
+   "deposit": 763,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "bullet lists are run together on single lines.",
+   "batch": "B0187"
+  },
+  {
+   "deposit": 768,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables flattened onto single lines;",
+   "batch": "B0072"
+  },
+  {
+   "deposit": 769,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "§8 list and roadmap table are flattened onto single lines.",
+   "batch": "B0072"
+  },
+  {
+   "deposit": 772,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Text ends mid-word at line 256 ('development bec');",
+   "batch": "B0188"
+  },
+  {
+   "deposit": 772,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "the file is truncated, so §7 and anything after it are missing.",
+   "batch": "B0188"
+  },
+  {
+   "deposit": 779,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Section 1 bullet list and reference lists run together on single lines.",
+   "batch": "B0073"
+  },
+  {
+   "deposit": 783,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "list items and references run together on single lines.",
+   "batch": "B0073"
+  },
+  {
+   "deposit": 786,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened into single lines.",
+   "batch": "B0076"
+  },
+  {
+   "deposit": 790,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Some bulleted lists are run together onto single lines (e.g.",
+   "batch": "B0079"
+  },
+  {
+   "deposit": 796,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "#1225 is a variant rendering with italics damaged to stray asterisks and different line numbering.",
+   "batch": "B0082"
+  },
+  {
+   "deposit": 803,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOI inconsistency: header gives 10.5281/zenodo.18319454 (line 9), manifest and colophon give 10.5281/zenodo.18319455.",
+   "batch": "B0190"
+  },
+  {
+   "deposit": 829,
+   "class": "conversion",
+   "verdict": "out",
+   "text": "#829 has them stripped).",
+   "batch": "B0191"
+  },
+  {
+   "deposit": 833,
+   "class": "missing",
+   "verdict": "in:links",
+   "text": "Markdown edition: all 221 screenshots are [IMAGE] placeholders.",
+   "batch": "B0091"
+  },
+  {
+   "deposit": 833,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "The annotation codebook tables (147-227) are flattened to one cell per line.",
+   "batch": "B0091"
+  },
+  {
+   "deposit": 833,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Entry 53 cites the Future Beloved thesis under DOI 10.5281/zenodo.20413317 while the references list Sharks 2026f as 10.5281/zenodo.20693104.",
+   "batch": "B0091"
+  },
+  {
+   "deposit": 835,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOI given for 'This analysis' is 10.5281/zenodo.20723750 (line 363) but the self-audit block and kernel give 10.5281/zenodo.20723820 (lines 435, 460).",
+   "batch": "CAL"
+  },
+  {
+   "deposit": 835,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says v1.2;",
+   "batch": "CAL"
+  },
+  {
+   "deposit": 835,
+   "class": "label",
+   "verdict": "out",
+   "text": "assembly note says v1.1.",
+   "batch": "CAL"
+  },
+  {
+   "deposit": 835,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Empty bullet artifacts at lines 152, 157, 162.",
+   "batch": "CAL"
+  },
+  {
+   "deposit": 838,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Header reads v1.4 while queue title says v1.3 and the closing (line 249) calls itself v1.0.",
+   "batch": "B0192"
+  },
+  {
+   "deposit": 843,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "List items are run together inline with '- ' separators in several places (e.g.",
+   "batch": "B0094"
+  },
+  {
+   "deposit": 846,
+   "class": "citation",
+   "verdict": "out",
+   "text": "provenance kernel gives DOI 10.5281/zenodo.20735736.",
+   "batch": "B0192"
+  },
+  {
+   "deposit": 850,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "table rows flattened into single lines.",
+   "batch": "B0193"
+  },
+  {
+   "deposit": 851,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Section headings are run together with preceding text on single lines (e.g.",
+   "batch": "B0096"
+  },
+  {
+   "deposit": 851,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "line 7 '∮ = 1# Editor's Note', line 23, 55, 197) — conversion damage.",
+   "batch": "B0096"
+  },
+  {
+   "deposit": 852,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Companion capture EA-FEIST-NAMEEATER-01 is said to be 'pending deposit' (l.127).",
+   "batch": "B0193"
+  },
+  {
+   "deposit": 855,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Structural-identity tables are flattened onto single lines (92, 160).",
+   "batch": "B0096"
+  },
+  {
+   "deposit": 856,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Relation table flattened onto line 145.",
+   "batch": "B0096"
+  },
+  {
+   "deposit": 862,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Tables are flattened to one cell per line;",
+   "batch": "B0097"
+  },
+  {
+   "deposit": 863,
+   "class": "label",
+   "verdict": "out",
+   "text": "Word-count inconsistency: subtitle says 2,427 words (line 16), provenance block and footer say ~3,000 (lines 9, 146).",
+   "batch": "CAL"
+  },
+  {
+   "deposit": 864,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "File heading title lacks \"Accelerated\" (queue title has it);",
+   "batch": "B0099"
+  },
+  {
+   "deposit": 866,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Titles truncated at 80 chars;",
+   "batch": "B0099"
+  },
+  {
+   "deposit": 870,
+   "class": "security",
+   "verdict": "security",
+   "text": "Lines 363-366 carry partial credential prefixes (Zenodo tokens, GitHub PATs) in deposited text;",
+   "batch": "B0194"
+  },
+  {
+   "deposit": 870,
+   "class": "security",
+   "verdict": "security",
+   "text": "Credential exposure reported by readers (B0194;",
+   "batch": "launcher"
+  },
+  {
+   "deposit": 870,
+   "class": "security",
+   "verdict": "security",
+   "text": "B0184 for #116): #870 lines 363–366 carry partial Zenodo and GitHub token prefixes;",
+   "batch": "launcher"
+  },
+  {
+   "deposit": 870,
+   "class": "security",
+   "verdict": "security",
+   "text": "#871 line 203 carries what looks like a full key string;",
+   "batch": "launcher"
+  },
+  {
+   "deposit": 870,
+   "class": "security",
+   "verdict": "security",
+   "text": "#116 line 47 records that Zenodo and GitHub credentials had been exposed.",
+   "batch": "launcher"
+  },
+  {
+   "deposit": 871,
+   "class": "security",
+   "verdict": "security",
+   "text": "Line 203 carries what appears to be a full key string (labelled \"Zenodo key gw_...\") in deposited text;",
+   "batch": "B0194"
+  },
+  {
+   "deposit": 872,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Queue title says v1.3;",
+   "batch": "B0227"
+  },
+  {
+   "deposit": 874,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Cites the Feist Function deposit as #850 / AXN-035F with a placeholder DOI \"10.5281/zenodo.20741XXX\" (line 220).",
+   "batch": "B0194"
+  },
+  {
+   "deposit": 874,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Cites the Feist Function deposit as #850 / AXN-035F with a placeholder DOI \"10.5281/zenodo.20741XXX\" (line 220).",
+   "batch": "B0194"
+  },
+  {
+   "deposit": 875,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Counts differ across the text: ~1,817 DOIs revoked (lines 53, 111), 870 CHA deposits harvested (143), 871 cases in parent #868 (190, 195) — reported as observation.",
+   "batch": "B0194"
+  },
+  {
+   "deposit": 876,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says v1.2, body says v1.0.",
+   "batch": "B0099"
+  },
+  {
+   "deposit": 884,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Queue title ends '0.",
+   "batch": "B0100"
+  },
+  {
+   "deposit": 886,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Textually the same document as #238 (AXN-0027), same DOI 10.5281/zenodo.18143771, different line layout (pandoc-style rules and numbered lists).",
+   "batch": "B0002"
+  },
+  {
+   "deposit": 893,
+   "class": "label",
+   "verdict": "out",
+   "text": "The packet lists a corresponding-author ORCID 0009-0001-8712-6677, which differs from the header ORCID 0009-0000-1599-0703.",
+   "batch": "B0216"
+  },
+  {
+   "deposit": 895,
+   "class": "missing",
+   "verdict": "in:conversion",
+   "text": "the Operator Transform Table at l.91 is reduced to the placeholder \"[TABLE]\" - the node-by-node table is missing here.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 896,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is a pasted Zenodo deposit-instruction block run together on one line (instructions, poem, note, keywords, related identifiers).",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 896,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Body is a pasted Zenodo deposit-instruction block run together on one line (instructions, poem, note, keywords, related identifiers).",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 897,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is a pasted Zenodo deposit-instruction block on one line with literal <br> tags.",
+   "batch": "B0217"
+  },
+  {
+   "deposit": 900,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Description and Body are identical one-paragraph stubs (SUPERSEDED by v2.0);",
+   "batch": "B0220"
+  },
+  {
+   "deposit": 901,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Description and Body are identical one-paragraph stubs;",
+   "batch": "B0220"
+  },
+  {
+   "deposit": 909,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Frame says assembly feedback EA-ASMBLY-RHIZOME-FBK-01 'pending deposit';",
+   "batch": "B0100"
+  },
+  {
+   "deposit": 910,
+   "class": "missing",
+   "verdict": "out",
+   "text": "§0 says the document 'fixes' v0.1 while the closed-set fields (content_hash, signature) remain unfilled placeholders.",
+   "batch": "B0195"
+  },
+  {
+   "deposit": 912,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Section 16 lists partial credential strings (truncated tokens).",
+   "batch": "B0196"
+  },
+  {
+   "deposit": 912,
+   "class": "security",
+   "verdict": "security",
+   "text": "Section 16 lists partial credential strings (truncated tokens).",
+   "batch": "B0196"
+  },
+  {
+   "deposit": 913,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Line 1 heading is run together ('ACTIVATED## Run 001', missing line break).",
+   "batch": "B0195"
+  },
+  {
+   "deposit": 921,
+   "class": "missing",
+   "verdict": "out",
+   "text": "§18 notes §3A chronology as 'placeholder pending depositor's completion';",
+   "batch": "B0101"
+  },
+  {
+   "deposit": 925,
+   "class": "citation",
+   "verdict": "out",
+   "text": "cites tombstoned Zenodo DOIs;",
+   "batch": "B0082"
+  },
+  {
+   "deposit": 943,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Appendix A placeholder citations flagged as unconfirmed (Hussein 2018, Monget 2020, Ruiz Fabo 2017, Wiechetek 2019).",
+   "batch": "B0197"
+  },
+  {
+   "deposit": 950,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Body/metadata mismatch: the title and the embedded DataCite record (DOI 10.5281/zenodo.19202704, 'Working infrastructure...",
+   "batch": "B0039"
+  },
+  {
+   "deposit": 950,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "a later reader should check whether this is the wrong body or the monograph was deposited under the planning-documents record.",
+   "batch": "B0039"
+  },
+  {
+   "deposit": 950,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Internal inconsistencies recorded, not judged: 'predatory compression' said not to exist before March 2026 (6926) vs coined January 14, 2026 (8727, 12458) and first DOI deposit narrated January 2026;",
+   "batch": "B0039"
+  },
+  {
+   "deposit": 950,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Back matter TANG/Glossary/Index placeholders marked [TO BE BUILT] (11045-11065) precede a populated HESPERUS apparatus.",
+   "batch": "B0039"
+  },
+  {
+   "deposit": 957,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Many timestamps are \"xx:xxpm\" placeholders;",
+   "batch": "B0209"
+  },
+  {
+   "deposit": 958,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Queue title says v1.0, but the body is Provenance Log v1.3 (2026-04-01, 20 posts + 10 comments).",
+   "batch": "B0220"
+  },
+  {
+   "deposit": 959,
+   "class": "label",
+   "verdict": "in:seating",
+   "text": "Body does not match the queue title 'Hexagonal OS: Interface Build Files v0.4': the text is 'LOGOTIC PROGRAMMING ...",
+   "batch": "B0041"
+  },
+  {
+   "deposit": 959,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Draft v0.4 (January 2026)', DOI 10.5281/zenodo.18286050 (content_type in queue: Wrong-object recovery).",
+   "batch": "B0041"
+  },
+  {
+   "deposit": 959,
+   "class": "citation",
+   "verdict": "in:label",
+   "text": "Draft v0.4 (January 2026)', DOI 10.5281/zenodo.18286050 (content_type in queue: Wrong-object recovery).",
+   "batch": "B0041"
+  },
+  {
+   "deposit": 959,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Treat as a wrong body;",
+   "batch": "B0041"
+  },
+  {
+   "deposit": 960,
+   "class": "wrong_body",
+   "verdict": "in:duplicate",
+   "text": "Body is byte-identical to #1347 (same sha256).",
+   "batch": "B0043"
+  },
+  {
+   "deposit": 962,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Body is 'THE HEXAGON INTERFACE CONSTITUTION' (March 2026, DOI 10.5281/zenodo.19355075), while the queue title is 'Crimson Hexagonal Interface v1.0 ...",
+   "batch": "B0171"
+  },
+  {
+   "deposit": 962,
+   "class": "citation",
+   "verdict": "in:label",
+   "text": "Body is 'THE HEXAGON INTERFACE CONSTITUTION' (March 2026, DOI 10.5281/zenodo.19355075), while the queue title is 'Crimson Hexagonal Interface v1.0 ...",
+   "batch": "B0171"
+  },
+  {
+   "deposit": 967,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Header gives Dead DOI 10.5281/zenodo.19455104 while body gives 19455105;",
+   "batch": "B0044"
+  },
+  {
+   "deposit": 968,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOI field reads 'pending-PVE003'.",
+   "batch": "B0173"
+  },
+  {
+   "deposit": 972,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "registry title marks it '[DUPLICATE — SUPERSEDED →' (title truncated in queue).",
+   "batch": "B0174"
+  },
+  {
+   "deposit": 976,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Same body as #63 in html2text rendering (header fields run together on line 5;",
+   "batch": "B0050"
+  },
+  {
+   "deposit": 978,
+   "class": "citation",
+   "verdict": "out",
+   "text": "adds verbatim DataCite record (lines 200-526), dead DOI 10.5281/zenodo.19642641.",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 980,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Wrong body: queue title is 'Hexagonal Deposit Registry — Alice Thornburgh' but the body is MPAI-LAL-AT-01, a disambiguation packet reviewed 2026-04-28 (after the 2026-04-19 deposit date).",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 980,
+   "class": "label",
+   "verdict": "in:seating",
+   "text": "Wrong body: queue title is 'Hexagonal Deposit Registry — Alice Thornburgh' but the body is MPAI-LAL-AT-01, a disambiguation packet reviewed 2026-04-28 (after the 2026-04-19 deposit date).",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 980,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Internal DOI inconsistencies: HCL v3.0 is 19673629 in the packet but 19655712 in references;",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 981,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Wrong body: queue title is 'Hexagonal Deposit Registry — Alice Thornburgh' but the body is MPAI-LAL-AT-01, a disambiguation packet reviewed 2026-04-28 (after the 2026-04-19 deposit date).",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 981,
+   "class": "label",
+   "verdict": "in:seating",
+   "text": "Wrong body: queue title is 'Hexagonal Deposit Registry — Alice Thornburgh' but the body is MPAI-LAL-AT-01, a disambiguation packet reviewed 2026-04-28 (after the 2026-04-19 deposit date).",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 981,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Internal DOI inconsistencies: HCL v3.0 is 19673629 in the packet but 19655712 in references;",
+   "batch": "B0175"
+  },
+  {
+   "deposit": 982,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Title and DataCite abstract describe the pessoagraph.org visualization (EA-PKG-VIS-01, 110+ nodes, 5,000 years), but the body is the EA-PKG-01 launch document;",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 983,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "the body is the unrevoked v1.0 text.",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 983,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Placeholders remain ([RESERVED], [LICENSE_DOI]).",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 983,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Placeholders remain ([RESERVED], [LICENSE_DOI]).",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 985,
+   "class": "missing",
+   "verdict": "in:links",
+   "text": "JSON-LD sameAs points twice to records/0/ (placeholder).",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 985,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "JSON-LD sameAs points twice to records/0/ (placeholder).",
+   "batch": "B0176"
+  },
+  {
+   "deposit": 986,
+   "class": "missing",
+   "verdict": "in:links",
+   "text": "Many record links point to placeholder https://alexanarch.org/s/records/0/ (sameAs list repeats it four times, lines 125-128;",
+   "batch": "B0177"
+  },
+  {
+   "deposit": 986,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "Many record links point to placeholder https://alexanarch.org/s/records/0/ (sameAs list repeats it four times, lines 125-128;",
+   "batch": "B0177"
+  },
+  {
+   "deposit": 988,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "WRONG/DUPLICATE BODY: title says 'Site Code v0.1.1 (Phase 1 Kernel)', content type 'Software / executable apparatus', but the text is the EA-LAL-WORKPLAN-01 workplan, the same as #707 (AXN-024E) re-rendered with markdown tables.",
+   "batch": "B0178"
+  },
+  {
+   "deposit": 989,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Dead DOI given as 10.5281/zenodo.19889972;",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 990,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Registry DOI 10.5281/zenodo.19890261 differs from the dead DOI 10.5281/zenodo.19889972 recorded in #989 for the same collection (possibly concept vs version DOI);",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 992,
+   "class": "citation",
+   "verdict": "out",
+   "text": "LOS DOI at l.65 reads 18201564 where #92 reads 18201565.",
+   "batch": "B0062"
+  },
+  {
+   "deposit": 993,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Header marks 'Dead DOI: 10.5281/zenodo.20041156';",
+   "batch": "B0062"
+  },
+  {
+   "deposit": 994,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is a registry/catalogue;",
+   "batch": "B0180"
+  },
+  {
+   "deposit": 995,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Mismatch: the title and DataCite abstract (lines 1, 270, 425) describe a worked example on 'Name the Frame' (v1.0), but the body is the v1.1 revision with D_pres;",
+   "batch": "B0180"
+  },
+  {
+   "deposit": 1002,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "title says bundle with 24 cards + charter + audit infrastructure but only index.html is seated.",
+   "batch": "B0068"
+  },
+  {
+   "deposit": 1003,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Queue title carries a stray suffix \"Description (as recorded by DataCite)\".",
+   "batch": "B0184"
+  },
+  {
+   "deposit": 1003,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Suggested Citation gives DOI 20343776, which the kernel names as the v0.2 version.",
+   "batch": "B0184"
+  },
+  {
+   "deposit": 1005,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "record title says v1.1 founding deployment but the captured page is the 2026-08-04 live state (colophon 2026-07-13).",
+   "batch": "B0185"
+  },
+  {
+   "deposit": 1009,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Duplicate body of #135 (AXN-02C3), here with markdown formatting intact, a \"Dead DOI: 10.5281/zenodo.20413064\" header, and an appended verbatim DataCite record (captured 2026-07-03, lines 604-772).",
+   "batch": "B0071"
+  },
+  {
+   "deposit": 1011,
+   "class": "citation",
+   "verdict": "out",
+   "text": "header calls the DOI \"Dead DOI\".",
+   "batch": "B0076"
+  },
+  {
+   "deposit": 1012,
+   "class": "missing",
+   "verdict": "in:links",
+   "text": "Links to \"Holographic Kernel\" and \"The Network Is the Poem\" point to alexanarch.org/s/records/0/ (lines 829, 848), which may be a placeholder record number.",
+   "batch": "B0225"
+  },
+  {
+   "deposit": 1012,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "Links to \"Holographic Kernel\" and \"The Network Is the Poem\" point to alexanarch.org/s/records/0/ (lines 829, 848), which may be a placeholder record number.",
+   "batch": "B0225"
+  },
+  {
+   "deposit": 1021,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "WRONG BODY: titled as the Ezra Pound node, but the text is the Sappho canon provenance node (same sha256 as #1019).",
+   "batch": "B0225"
+  },
+  {
+   "deposit": 1024,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is a DataCite capture;",
+   "batch": "B0226"
+  },
+  {
+   "deposit": 1025,
+   "class": "label",
+   "verdict": "fixed_today",
+   "text": "Queue title names 'Keyword Surface and Pre-Seeding Baseline' (SURFACE v1.0 + BASELINE), but the text body holds only EA-LOGOS-REVFIRST-BASELINE v1.1;",
+   "batch": "B0087"
+  },
+  {
+   "deposit": 1025,
+   "class": "conversion",
+   "verdict": "fixed_today",
+   "text": "Markdown tables are flattened onto single lines (l.35, l.303).",
+   "batch": "B0087"
+  },
+  {
+   "deposit": 1025,
+   "class": "citation",
+   "verdict": "fixed_today",
+   "text": "Self-audit DOI reads '[assigned at deposit]'.",
+   "batch": "B0087"
+  },
+  {
+   "deposit": 1029,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is a provenance anchor plus DataCite capture.",
+   "batch": "B0226"
+  },
+  {
+   "deposit": 1032,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Header notes the restoration replaced a damaged blog-mirror conversion seated 2026-07-20.",
+   "batch": "B0227"
+  },
+  {
+   "deposit": 1034,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Header says Version 1.0 though the queue title says v1.1 Clinamen Edition;",
+   "batch": "B0194"
+  },
+  {
+   "deposit": 1034,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "§14.2 table has stray asterisks (markdown damage).",
+   "batch": "B0194"
+  },
+  {
+   "deposit": 1034,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Cross-reference: #874 cites this protocol as #850 (AXN-035F) while the queue carries it as #1034 (AXN-0416) — numbering observation, not judged.",
+   "batch": "B0194"
+  },
+  {
+   "deposit": 1039,
+   "class": "label",
+   "verdict": "out",
+   "text": "Draft (v0.4 header, status section says v0.1 MD stage);",
+   "batch": "B0107"
+  },
+  {
+   "deposit": 1039,
+   "class": "missing",
+   "verdict": "out",
+   "text": "exhibits E1 image and E8 figure are placeholders;",
+   "batch": "B0107"
+  },
+  {
+   "deposit": 1097,
+   "class": "missing",
+   "verdict": "in:attachments",
+   "text": "the atlas body itself is not in the text file.",
+   "batch": "B0198"
+  },
+  {
+   "deposit": 1099,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Title says ~50,000 words;",
+   "batch": "B0145"
+  },
+  {
+   "deposit": 1101,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Many headed sections have empty bodies (tables/lists apparently stripped in recovery): D/R/O operator lists (109-129), Threat Model (192-196), Boot Sequence, Compact Lens, the fulfillment map, Ezekiel-wheel rotation (662), correspondence table (797), evidence chain (900), Catastrophe (1070), Structural Identity Table (1349), near-miss positions (1522), Josephus components (1557), Testimonium posit",
+   "batch": "B0045"
+  },
+  {
+   "deposit": 1111,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Many register subsections are empty headings (lines 85-97 etc.;",
+   "batch": "B0150"
+  },
+  {
+   "deposit": 1111,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "\"Symptoms:\", \"Structured Triples:\" with no content) -- list content appears lost in the html2text conversion.",
+   "batch": "B0150"
+  },
+  {
+   "deposit": 1132,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Description/frontmatter title the deposit as the VPCOR Integrity Lock Declaration (opening quoted at line 32), but the canonical bytes below the rule (lines 48-855) are FNM-LOGOTIC-6.0 dated 2026-01-28 (DOI 10.5281/zenodo.18404789);",
+   "batch": "B0011"
+  },
+  {
+   "deposit": 1132,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Description/frontmatter title the deposit as the VPCOR Integrity Lock Declaration (opening quoted at line 32), but the canonical bytes below the rule (lines 48-855) are FNM-LOGOTIC-6.0 dated 2026-01-28 (DOI 10.5281/zenodo.18404789);",
+   "batch": "B0011"
+  },
+  {
+   "deposit": 1132,
+   "class": "citation",
+   "verdict": "out",
+   "text": "The canonical bytes below the recovery rule are FNM-LOGOTIC-6.0 (Fractal Navigation Map, DOI 10.5281/zenodo.18404789, dated 2026-01-28), not the VPCOR Integrity Lock Declaration the title and Description's opening name;",
+   "batch": "HB0011"
+  },
+  {
+   "deposit": 1154,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "the RSE subtype comparison table, Glossary and Alternative Titles sections are empty headings (lines 249, 466, 513).",
+   "batch": "HB0022"
+  },
+  {
+   "deposit": 1165,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Front matter states recovery from a blog source after DOI severance.",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 1165,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "Image links point to data-rhizome.internal.",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 1165,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "the text ends mid-poem at line 945 ('the silphium-bearing riverbanks'), which may be the original ending or a truncation.",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 1168,
+   "class": "citation",
+   "verdict": "in:label",
+   "text": "Recovered blog body of 'CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0' (DOI 10.5281/zenodo.19055255) under title 'Untitled'.",
+   "batch": "B0033"
+  },
+  {
+   "deposit": 1168,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Precis strings are auto-extracted and often truncated mid-word;",
+   "batch": "B0033"
+  },
+  {
+   "deposit": 1168,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "The deposit is titled 'Untitled' but its body is the CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 (DOI 10.5281/zenodo.19055255);",
+   "batch": "HB0033"
+  },
+  {
+   "deposit": 1168,
+   "class": "citation",
+   "verdict": "in:seating",
+   "text": "The deposit is titled 'Untitled' but its body is the CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 (DOI 10.5281/zenodo.19055255);",
+   "batch": "HB0033"
+  },
+  {
+   "deposit": 1170,
+   "class": "citation",
+   "verdict": "fixed_today",
+   "text": "Title and frontmatter name the emoji work 'question-mark 24 calendar = question-mark' (DOI 10.5281/zenodo.18512289, Ichabod Spellings), but the canonical bytes below the rule (lines 46-1671) are the whole CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 (DOI 10.5281/zenodo.19055255, Lee Sharks), recovered from the blog post .../crimson-hexagon-nh-os-doi-registry-v70.html.",
+   "batch": "B0034"
+  },
+  {
+   "deposit": 1170,
+   "class": "wrong_body",
+   "verdict": "fixed_today",
+   "text": "The recovery note's body-head gate pass looks mistaken: wrong body for this deposit.",
+   "batch": "B0034"
+  },
+  {
+   "deposit": 1170,
+   "class": "citation",
+   "verdict": "fixed_today",
+   "text": "Recovered body does not match the deposit title: the title is the emoji work (zenodo.18512289) but the canonical bytes are the DOI Registry v7.0 (zenodo.19055255) blog post;",
+   "batch": "HB0034"
+  },
+  {
+   "deposit": 1189,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "several sections are empty headings (5.1, 6.6, 8.3, 'Forthcoming satellites', 'Key concepts introduced') where list content appears to have been lost in html2text conversion.",
+   "batch": "B0182"
+  },
+  {
+   "deposit": 1190,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Sections 4, 5.1, 6.6, 7, 8.3 and the four citation sub-heads in 10 are empty headings;",
+   "batch": "B0182"
+  },
+  {
+   "deposit": 1190,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "table/list content likely lost in conversion.",
+   "batch": "B0182"
+  },
+  {
+   "deposit": 1192,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Trailing lines 149-155 are stray asterisk/$ fragments (conversion debris).",
+   "batch": "B0183"
+  },
+  {
+   "deposit": 1197,
+   "class": "citation",
+   "verdict": "fixed_today",
+   "text": "Restoration record for a severed Zenodo DOI;",
+   "batch": "B0187"
+  },
+  {
+   "deposit": 1206,
+   "class": "citation",
+   "verdict": "fixed_today",
+   "text": "Restored blog-canonical text (severed Zenodo DOIs).",
+   "batch": "B0191"
+  },
+  {
+   "deposit": 1210,
+   "class": "missing",
+   "verdict": "in:conversion",
+   "text": "Damaged relative to #823: \"No Third Position\" section heading has no body (l.115-116);",
+   "batch": "B0191"
+  },
+  {
+   "deposit": 1217,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Recovered blog-canonical bytes (html2text).",
+   "batch": "B0095"
+  },
+  {
+   "deposit": 1217,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Many bulleted lists and tables were lost in conversion: headings followed by nothing at e.g.",
+   "batch": "B0095"
+  },
+  {
+   "deposit": 1223,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Body declares v2.2 with lineage through May 5, 2026 drafts and cites DOIs (e.g.",
+   "batch": "B0148"
+  },
+  {
+   "deposit": 1223,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "lines 77, 89, 102, 153) - flattened formatting.",
+   "batch": "B0148"
+  },
+  {
+   "deposit": 1226,
+   "class": "label",
+   "verdict": "out",
+   "text": "Heading says v1.1 while the packet line says Version: 1.0.",
+   "batch": "B0001"
+  },
+  {
+   "deposit": 1237,
+   "class": "citation",
+   "verdict": "out",
+   "text": "#1240 (v1.8) names v1.7 DOI 10.5281/zenodo.19373638, which does not appear here.",
+   "batch": "B0209"
+  },
+  {
+   "deposit": 1242,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "WRONG BODY: title is \"v1 - Encrypted Session Deposit\" but the text is the v7 session (2026-04-17), byte-identical to #1238 and #1243.",
+   "batch": "B0145"
+  },
+  {
+   "deposit": 1264,
+   "class": "wrong_body",
+   "verdict": "fixed_today",
+   "text": "Body is the essay \"The Meaning Economy Is Now Possible\" (same text as #219, reformatted), not a provenance-documentation packet as the title says;",
+   "batch": "B0210"
+  },
+  {
+   "deposit": 1264,
+   "class": "label",
+   "verdict": "fixed_today",
+   "text": "Body is the essay \"The Meaning Economy Is Now Possible\" (same text as #219, reformatted), not a provenance-documentation packet as the title says;",
+   "batch": "B0210"
+  },
+  {
+   "deposit": 1265,
+   "class": "citation",
+   "verdict": "out",
+   "text": "DOI link routed via alexanarch.org/go.",
+   "batch": "B0210"
+  },
+  {
+   "deposit": 1267,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Seated text is the guide letter plus a draft of the poem (it carries the 'a love poem must be / made' epigraph and '[insert map here]', which #268 attributes to the earlier draft in the .docx).",
+   "batch": "B0211"
+  },
+  {
+   "deposit": 1267,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "It ends mid-poem at line 2393 ('drink wine from the veins until life expires,') before the Files section, and lacks the Sappho 31 section and the 'Ordered by an angel' epilogue that #268 describes for the 57-page final poem;",
+   "batch": "B0211"
+  },
+  {
+   "deposit": 1301,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Points to the APZPZ packet living only in the Zenodo description field of DOI 10.5281/zenodo.18451824 (INFINITY ENOUGH);",
+   "batch": "B0013"
+  },
+  {
+   "deposit": 1302,
+   "class": "wrong_body",
+   "verdict": "in:duplicate",
+   "text": "Body is byte-identical to #1303 (same sha256 3e3bdabc...;",
+   "batch": "B0013"
+  },
+  {
+   "deposit": 1302,
+   "class": "citation",
+   "verdict": "out",
+   "text": "v0.5', DOI 10.5281/zenodo.18452132;",
+   "batch": "B0013"
+  },
+  {
+   "deposit": 1302,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "the queue titles them Document 208 and Document 209 (UMBML module) but the bodies do not differ.",
+   "batch": "B0013"
+  },
+  {
+   "deposit": 1303,
+   "class": "wrong_body",
+   "verdict": "in:duplicate",
+   "text": "Body is byte-identical to #1302 (same sha256;",
+   "batch": "B0013"
+  },
+  {
+   "deposit": 1303,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "The queue title 'GLYPHIC CHECKSUM UMBML MODULE (Document 209)' suggests a distinct document was intended;",
+   "batch": "B0013"
+  },
+  {
+   "deposit": 1303,
+   "class": "wrong_body",
+   "verdict": "in:duplicate",
+   "text": "Body is byte-identical to #1302 (same sha256 in hpass.json);",
+   "batch": "HB0013"
+  },
+  {
+   "deposit": 1303,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "title says Document 209 but text is the Document 208 v0.5 module.",
+   "batch": "HB0013"
+  },
+  {
+   "deposit": 1317,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Duplicate body of #459 (AXN-0115), same Doc 247 / DOI 10.5281/zenodo.18505416, with markdown tables;",
+   "batch": "B0157"
+  },
+  {
+   "deposit": 1319,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "queue labels it 'Dataset' but the body is the specification.",
+   "batch": "B0157"
+  },
+  {
+   "deposit": 1322,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Encoding damage at line 219: \"G�del\" for \"Gödel\".",
+   "batch": "B0216"
+  },
+  {
+   "deposit": 1323,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Front-matter keyword list truncated (\"Revelati\", line 35).",
+   "batch": "B0216"
+  },
+  {
+   "deposit": 1327,
+   "class": "missing",
+   "verdict": "ruling:pending-doi",
+   "text": "\"DOI: [pending]\" at 437.",
+   "batch": "B0020"
+  },
+  {
+   "deposit": 1327,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "\"DOI: [pending]\" at 437.",
+   "batch": "B0020"
+  },
+  {
+   "deposit": 1327,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Hard line breaks split words (e.g.",
+   "batch": "HB0020"
+  },
+  {
+   "deposit": 1330,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Body duplicates #541 but with every table, list and code block missing: sources table, C.1 member quotations, layer table, the Adopted Architecture block, legend sections A-G (headings only), the Checksum Spine itself, and the Part Four success-criteria list (line 401 introduces a list that is absent).",
+   "batch": "B0163"
+  },
+  {
+   "deposit": 1334,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Damaged body: most section headings are empty (Reading stance, Redaction policy, Index, Observed Behavior, Output Sample, Findings, Evidence Preserved, Protocol Cross-Refs, Checklist sections, Slack export body, memo bullets, Attachments catalog, SHARKS activity list).",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 1334,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "List content appears stripped in extraction;",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 1334,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Title field carries a DOI tree fragment.",
+   "batch": "B0219"
+  },
+  {
+   "deposit": 1335,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Deliberately truncated ending: \"The 2018 analysis was\" (line 538).",
+   "batch": "B0166"
+  },
+  {
+   "deposit": 1338,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Final keyword truncated ('English linguisti').",
+   "batch": "B0035"
+  },
+  {
+   "deposit": 1338,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Keyword list in front matter is truncated ('English linguisti').",
+   "batch": "HB0035"
+  },
+  {
+   "deposit": 1342,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Front matter keyword list truncated ('ra');",
+   "batch": "B0168"
+  },
+  {
+   "deposit": 1342,
+   "class": "citation",
+   "verdict": "out",
+   "text": "related_ids DOIs marked severed;",
+   "batch": "B0168"
+  },
+  {
+   "deposit": 1343,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is the Operative Semiotics Executive Summary (EA-OPSEM-EXEC-01), dated 'June 2026' in-text although the deposit date is 2026-03-31;",
+   "batch": "B0171"
+  },
+  {
+   "deposit": 1343,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "queue title flags it as a restored duplicate of #800 mistitled as Public Research Edition.",
+   "batch": "B0171"
+  },
+  {
+   "deposit": 1346,
+   "class": "wrong_body",
+   "verdict": "in:duplicate",
+   "text": "Body byte-identical to #630 (same sha256);",
+   "batch": "B0172"
+  },
+  {
+   "deposit": 1347,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Possible wrong body: titled \"Gravity Well Codebase v0.4.1\" but the body is the v0.4.0 protocol document, byte-identical to #960 (same sha256).",
+   "batch": "B0043"
+  },
+  {
+   "deposit": 1348,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "keywords truncated (\"isR\").",
+   "batch": "B0043"
+  },
+  {
+   "deposit": 1353,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Same body as #665 (AXN-0211), flattened formatting;",
+   "batch": "B0221"
+  },
+  {
+   "deposit": 1356,
+   "class": "wrong_body",
+   "verdict": "fixed_today",
+   "text": "Title says Hexagonal Contributor License v1.0 (Rhys Owens) but body is the blog essay \"Rhys Owens -- The Lunar Arm of New Human\";",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 1356,
+   "class": "label",
+   "verdict": "fixed_today",
+   "text": "Title says Hexagonal Contributor License v1.0 (Rhys Owens) but body is the blog essay \"Rhys Owens -- The Lunar Arm of New Human\";",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 1356,
+   "class": "wrong_body",
+   "verdict": "fixed_today",
+   "text": "byte-identical to #1358 (same sha256).",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 1357,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Contains a ZENODO_TOKEN placeholder only ([PASTE HERE]);",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 1358,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Title says Hexagonal Contributor License v3.0 (Rhys Owens) but body is the Lunar Arm blog essay;",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 1358,
+   "class": "label",
+   "verdict": "in:seating",
+   "text": "Title says Hexagonal Contributor License v3.0 (Rhys Owens) but body is the Lunar Arm blog essay;",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 1358,
+   "class": "wrong_body",
+   "verdict": "out",
+   "text": "byte-identical to #1356 (same sha256).",
+   "batch": "B0222"
+  },
+  {
+   "deposit": 1359,
+   "class": "missing",
+   "verdict": "in:links",
+   "text": "sameAs (line 73) and 'Basin Theory' link (line 712) point to alexanarch.org/s/records/0/, which looks like a placeholder/wrong record for EA-HK-01 / EA-RBT-01.",
+   "batch": "B0057"
+  },
+  {
+   "deposit": 1359,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "sameAs (line 73) and 'Basin Theory' link (line 712) point to alexanarch.org/s/records/0/, which looks like a placeholder/wrong record for EA-HK-01 / EA-RBT-01.",
+   "batch": "B0057"
+  },
+  {
+   "deposit": 1359,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Front matter lists original DOIs as severed.",
+   "batch": "B0057"
+  },
+  {
+   "deposit": 1361,
+   "class": "label",
+   "verdict": "out",
+   "text": "The FAQ text states Alice Thornburgh's ORCID as 0009-0000-1599-0703, which is the ORCID the archive gives for Lee Sharks;",
+   "batch": "B0223"
+  },
+  {
+   "deposit": 1362,
+   "class": "citation",
+   "verdict": "in:seating",
+   "text": "companion BOOK_OF_LIFE.md and FOOTNOTES.md are not seated (lines 33-35).",
+   "batch": "B0060"
+  },
+  {
+   "deposit": 1362,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnote numbering is non-sequential (110-118 and 138-158 interleave with 1-109), suggesting sections assembled from different drafts.",
+   "batch": "B0060"
+  },
+  {
+   "deposit": 1362,
+   "class": "citation",
+   "verdict": "out",
+   "text": "'Current Status' (lines 2284-2288) asserts a Zenodo DOI and indexing that the header records as severed.",
+   "batch": "B0060"
+  },
+  {
+   "deposit": 1362,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Superseded metadata stub retained at lines 2560-2586.",
+   "batch": "B0060"
+  },
+  {
+   "deposit": 1366,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "frontmatter keywords truncated at 'institutio' (line 32).",
+   "batch": "B0061"
+  },
+  {
+   "deposit": 1366,
+   "class": "citation",
+   "verdict": "out",
+   "text": "related_ids record severed Zenodo DOIs.",
+   "batch": "B0061"
+  },
+  {
+   "deposit": 1367,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Queue title says v2.2 but the body is headed Version 2.1 (supersedes v2.0, DOI 20045723);",
+   "batch": "B0181"
+  },
+  {
+   "deposit": 1367,
+   "class": "citation",
+   "verdict": "in:label",
+   "text": "Queue title says v2.2 but the body is headed Version 2.1 (supersedes v2.0, DOI 20045723);",
+   "batch": "B0181"
+  },
+  {
+   "deposit": 1368,
+   "class": "missing",
+   "verdict": "in:links",
+   "text": "Annex A screenshots are a placeholder ('[Attach screenshots ...]');",
+   "batch": "B0063"
+  },
+  {
+   "deposit": 1368,
+   "class": "citation",
+   "verdict": "ruling:pending-doi",
+   "text": "DOI 'to be assigned'.",
+   "batch": "B0063"
+  },
+  {
+   "deposit": 1370,
+   "class": "label",
+   "verdict": "in:duplicate",
+   "text": "Same body as #105 (frontmatter says semi-restored v1.0, body says v1.1).",
+   "batch": "B0063"
+  },
+  {
+   "deposit": 1371,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Possible wrong/variant body: queue title is 'EA-MPAI-SEMEX-01: Semantic Exhaustion — Disambiguating ...' dated 2026-05-14, but the body is headed 'EA-SEMEX-DISAMBIG-01 v1.0', dated 'June 2026', and says it 'Builds on: EA-MPAI-SEMEX-01' — the text may be a later companion rather than the titled packet.",
+   "batch": "B0224"
+  },
+  {
+   "deposit": 1372,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Damaged body of #103: all bullet lists, tables, the Test Queries table (§7), the Verification Protocol steps (§9), edge tables, absurdity-lemma examples, canonical sources and JSON-LD are stripped, leaving headings only.",
+   "batch": "B0063"
+  },
+  {
+   "deposit": 1373,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Queue title says \"v2.0 — Framework 15 Operational Re-Edition\" but the text body is headed \"The Semantic Deviation Principle (v0.2 Final)\", EA-SEI-MM-01, dated May 17, 2026;",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 1373,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "LaTeX display formulas are partly garbled (e.g.",
+   "batch": "B0066"
+  },
+  {
+   "deposit": 1376,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "WRONG/DUPLICATE BODY: queue title is 'ChatGPT Psychosis: A Love Story — Project Prospectus and Formal Design Specification ...",
+   "batch": "B0183"
+  },
+  {
+   "deposit": 1380,
+   "class": "label",
+   "verdict": "out",
+   "text": "Frontmatter date 2026-05-20;",
+   "batch": "B0221"
+  },
+  {
+   "deposit": 1380,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Related DOIs marked severed.",
+   "batch": "B0221"
+  },
+  {
+   "deposit": 1386,
+   "class": "citation",
+   "verdict": "out",
+   "text": "deposit 133 footnote 5 gives PER-A retrieval, PER-C composition, PER-D substrate — observation.",
+   "batch": "B0186"
+  },
+  {
+   "deposit": 1389,
+   "class": "missing",
+   "verdict": "in:attachments",
+   "text": "The appendix screenshots (Exhibits A-F) it refers to are not in the text file.",
+   "batch": "B0037"
+  },
+  {
+   "deposit": 1392,
+   "class": "citation",
+   "verdict": "out",
+   "text": "The canonical-source card (l.349) gives DOI 10.5281/zenodo.18324886 while the rest of the page gives 10.5281/zenodo.20469514 for DSL.",
+   "batch": "B0188"
+  },
+  {
+   "deposit": 1392,
+   "class": "citation",
+   "verdict": "out",
+   "text": "On l.368 the 'supersedes 20449321' link points to 20449266.",
+   "batch": "B0188"
+  },
+  {
+   "deposit": 1393,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "WRONG/DUPLICATE BODY: the queue title is the Jess Elgene Certificate of Conferral and Honorary Laureate License, but the text file contains the v1.1 Announcement of Establishment and Inaugural Conferral, i.e.",
+   "batch": "B0079"
+  },
+  {
+   "deposit": 1393,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "the same body as #160 (AXN-02F6), re-formatted with stray asterisks.",
+   "batch": "B0079"
+  },
+  {
+   "deposit": 1404,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Title promises 'Critical Edition with Apparatus (Rebekah Cranes, ed.)' but the body contains no apparatus and no editor attribution: it is the #851 text with headings split onto their own lines and stray asterisks (e.g.",
+   "batch": "B0096"
+  },
+  {
+   "deposit": 1420,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Frontmatter title/description (\"Canonical Formation, Shelf-Order Hermeneutics...",
+   "batch": "B0199"
+  },
+  {
+   "deposit": 1420,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Body carries [V] verification placeholders and build notes (not for submission).",
+   "batch": "B0199"
+  },
+  {
+   "deposit": 1422,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Frontmatter title (\"Machine Editions, and the Two Marks of Custody\") differs from body H1 (\"Machine Composition, and the Politics of Interpretive Supply\");",
+   "batch": "B0199"
+  },
+  {
+   "deposit": 1422,
+   "class": "missing",
+   "verdict": "out",
+   "text": "Build notes and [V] tail present.",
+   "batch": "B0199"
+  },
+  {
+   "deposit": 1428,
+   "class": "label",
+   "verdict": "out",
+   "text": "Header says v1.0 at line 47 though title is v1.1;",
+   "batch": "B0113"
+  },
+  {
+   "deposit": 1443,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Title says v3.6, frontmatter/body say v3.7.",
+   "batch": "B0114"
+  },
+  {
+   "deposit": 1454,
+   "class": "label",
+   "verdict": "out",
+   "text": "Creator field is the heteronym Nobel Glas;",
+   "batch": "B0115"
+  },
+  {
+   "deposit": 1454,
+   "class": "label",
+   "verdict": "out",
+   "text": "SPXI packet inside says version 0.2 / DRAFT NOT MINTED while header says v1.0.",
+   "batch": "B0115"
+  },
+  {
+   "deposit": 1457,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Creator ORCID given as 0009-0000-1000-0000 (Assembly Chorus), not Lee's.",
+   "batch": "B0115"
+  },
+  {
+   "deposit": 1458,
+   "class": "citation",
+   "verdict": "out",
+   "text": "cross-references to '§VI Period 4' and '§VIII.2' point to §X and §XII.2).",
+   "batch": "B0201"
+  },
+  {
+   "deposit": 1486,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Extraction-set Greek windows are truncated mid-word by design.",
+   "batch": "B0119"
+  },
+  {
+   "deposit": 1488,
+   "class": "missing",
+   "verdict": "in:attachments",
+   "text": "Eighteen attached workplan files are not in the text file and were not read.",
+   "batch": "B0228"
+  },
+  {
+   "deposit": 1490,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated (lines 23 and 25).",
+   "batch": "B0120"
+  },
+  {
+   "deposit": 1494,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Lines 47-52 carry hard line breaks inside clause C2, unlike the other clauses.",
+   "batch": "B0120"
+  },
+  {
+   "deposit": 1513,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is a single specification paragraph pointing to external JSON files (schema.json, edges.json RE-0001–RE-0009);",
+   "batch": "B0202"
+  },
+  {
+   "deposit": 1525,
+   "class": "label",
+   "verdict": "out",
+   "text": "version labels conflict (v3.0 in frontmatter/title, v4.0 in JSON and address).",
+   "batch": "B0120"
+  },
+  {
+   "deposit": 1526,
+   "class": "label",
+   "verdict": "out",
+   "text": "Version labels conflict (title v2.0, heading v8.0, JSON/address v9.0);",
+   "batch": "B0120"
+  },
+  {
+   "deposit": 1528,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Line 367 contains a sentence fragment ('and v5.') spliced into a duplicated summary sentence — damaged text.",
+   "batch": "B0121"
+  },
+  {
+   "deposit": 1550,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "X-016 and X-044 seated truncated mid-sentence as received (X-016's remainder seated as X-047);",
+   "batch": "B0123"
+  },
+  {
+   "deposit": 1557,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated at lines 27 and 29.",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1557,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Lines 52-53 and 63-64 carry hard line breaks inside a sentence.",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1558,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "LaTeX-to-text conversion damage: many formulas lost their symbols (e.g.",
+   "batch": "B0203"
+  },
+  {
+   "deposit": 1558,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "94 'Bᵢ Bernoulli(ᵢ)'), the hierarchy list after line 76 is empty, LaTeX residues ('0.4em', 'quote', 'fig:bca', 'document') and a broken figure reference at 146/401.",
+   "batch": "B0203"
+  },
+  {
+   "deposit": 1558,
+   "class": "citation",
+   "verdict": "in:links",
+   "text": "94 'Bᵢ Bernoulli(ᵢ)'), the hierarchy list after line 76 is empty, LaTeX residues ('0.4em', 'quote', 'fig:bca', 'document') and a broken figure reference at 146/401.",
+   "batch": "B0203"
+  },
+  {
+   "deposit": 1559,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Seat table rows truncated mid-cell in the licence column (lines 34-35).",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1560,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Seat table licence cells truncated (lines 37-39).",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1562,
+   "class": "missing",
+   "verdict": "in:seating",
+   "text": "Seat table licence cells truncated (lines 39-41).",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1563,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated (lines 26, 28).",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1564,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated (lines 25, 27).",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1567,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated (lines 27, 29).",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1568,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is a condensed summary of EA-MMRS-RAW-01 v1.2, not the full paper (§XIII review record and appendix referred to but not present).",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1573,
+   "class": "missing",
+   "verdict": "in:attachments",
+   "text": "Reference implementation said to accompany the deposit is not in the text file.",
+   "batch": "B0127"
+  },
+  {
+   "deposit": 1574,
+   "class": "citation",
+   "verdict": "out",
+   "text": "inconsistency: CLAUSE footnote (313) puts third παντελῶς at 183b29 while A1/A5/A6 give 184a1.",
+   "batch": "B0128"
+  },
+  {
+   "deposit": 1576,
+   "class": "citation",
+   "verdict": "out",
+   "text": "the text file carries the full article body, Works Cited and 27 footnotes.",
+   "batch": "B0127"
+  },
+  {
+   "deposit": 1583,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnote [^13] precedes [^12] in the notes list (out of order in source);",
+   "batch": "B0203"
+  },
+  {
+   "deposit": 1586,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Body is largely the notebook #1585 §18 text reshaped (tables and paragraphs verbatim, internal cross-references to \"18.1\", \"18.3\" left unconverted).",
+   "batch": "B0129"
+  },
+  {
+   "deposit": 1590,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnotes out of numeric order ([^13] before [^12], [^11], [^10], [^9]).",
+   "batch": "B0229"
+  },
+  {
+   "deposit": 1601,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Apparatus cross-references \"note 46\" (line 437) and \"note 47\" (line 459), but notes run only to 41;",
+   "batch": "B0204"
+  },
+  {
+   "deposit": 1603,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnotes are out of numeric order ([^11] first, [^9] after [^7], [^8] before [^10]);",
+   "batch": "B0205"
+  },
+  {
+   "deposit": 1606,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated at lines 40 and 42.",
+   "batch": "B0134"
+  },
+  {
+   "deposit": 1608,
+   "class": "label",
+   "verdict": "out",
+   "text": "Revision record (line 525) says v1.0 had nine assessments, all captured;",
+   "batch": "B0134"
+  },
+  {
+   "deposit": 1609,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Creator field carries an embedded heading ('Trace, Orin\\n\\n### Contributor\\n\\nSharks, Lee').",
+   "batch": "B0230"
+  },
+  {
+   "deposit": 1610,
+   "class": "label",
+   "verdict": "in:label",
+   "text": "Frontmatter creator field embeds a markdown heading (\"Kuro, Sen\\n\\n### Contributor\\n\\nGlas, Nobel;",
+   "batch": "B0134"
+  },
+  {
+   "deposit": 1619,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Formula blocks are mangled conversions (e.g.",
+   "batch": "B0205"
+  },
+  {
+   "deposit": 1619,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "\"Θ[Marrowmu]\", \"laborarrowwage\", stray \"}\" lines).",
+   "batch": "B0205"
+  },
+  {
+   "deposit": 1620,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Several dollar figures lost their '$' in conversion (e.g.",
+   "batch": "B0230"
+  },
+  {
+   "deposit": 1621,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Formula blocks carry LaTeX-conversion debris (stray \"}\", \"arrow\", \"!=\") throughout.",
+   "batch": "B0136"
+  },
+  {
+   "deposit": 1623,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Text carries LaTeX residue throughout (stray \"}\" closers, \"\\$\", \"arrow\", \"!=\") in display blocks, e.g.",
+   "batch": "B0206"
+  },
+  {
+   "deposit": 1623,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "legible but damaged by conversion.",
+   "batch": "B0206"
+  },
+  {
+   "deposit": 1630,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "mathematical displays are plain-text conversions.",
+   "batch": "B0230"
+  },
+  {
+   "deposit": 1631,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is the attached v0.2 file ingested into the deposit (lines 31-918);",
+   "batch": "B0137"
+  },
+  {
+   "deposit": 1631,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Notation is flattened ASCII (e.g.",
+   "batch": "B0137"
+  },
+  {
+   "deposit": 1631,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "'sigma[A][d]elta', 'arrow') — likely conversion damage of math symbols, text otherwise intact.",
+   "batch": "B0137"
+  },
+  {
+   "deposit": 1634,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is the ingested staged v0.12 Markdown;",
+   "batch": "B0138"
+  },
+  {
+   "deposit": 1634,
+   "class": "conversion",
+   "verdict": "in:conversion",
+   "text": "Dollar signs in several salary figures render as LaTeX-escaped backslashes (e.g.",
+   "batch": "B0138"
+  },
+  {
+   "deposit": 1662,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is a framing note only;",
+   "batch": "B0230"
+  },
+  {
+   "deposit": 1663,
+   "class": "wrong_body",
+   "verdict": "in:seating",
+   "text": "Body is a single line repeating the title.",
+   "batch": "B0230"
+  },
+  {
+   "deposit": 1668,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated (lines 46 and 48).",
+   "batch": "B0231"
+  },
+  {
+   "deposit": 1669,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated (lines 45 and 47).",
+   "batch": "B0209"
+  },
+  {
+   "deposit": 1675,
+   "class": "citation",
+   "verdict": "out",
+   "text": "Footnote 4 notes the Pessoa Plural issue number discrepancy (39 vs running header 29).",
+   "batch": "B0231"
+  },
+  {
+   "deposit": 1679,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated at lines 48 and 50.",
+   "batch": "B0143"
+  },
+  {
+   "deposit": 1680,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated at lines 41 and 43.",
+   "batch": "B0144"
+  },
+  {
+   "deposit": 1682,
+   "class": "label",
+   "verdict": "in:conversion",
+   "text": "Title heading duplicated (68, 70).",
+   "batch": "B0231"
+  }
+ ]
+}

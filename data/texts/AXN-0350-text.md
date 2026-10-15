@@ -149,20 +149,11 @@ This is the crisis point. The format's strength (portability, machine-readabilit
 
 The risk operates at three levels:
 
-- 
+- **Internal summarization risk:** Internal agents summarize OKF bundles without preserving the producer/team provenance. The original author's name, the team's metric definition, the careful distinction between deprecated and current methodology — all compressed in the internal summary. This harm is real but invisible: it happens inside the enterprise, not across its boundary.
 
+- **Publication risk:** OKF bundles intentionally published to the open web (documentation, community knowledge bases, open-source projects) are ingested and summarized by external composition layers without attribution or fidelity constraints.
 
-**Internal summarization risk:** Internal agents summarize OKF bundles without preserving the producer/team provenance. The original author's name, the team's metric definition, the careful distinction between deprecated and current methodology — all compressed in the internal summary. This harm is real but invisible: it happens inside the enterprise, not across its boundary.
-
-- 
-
-
-**Publication risk:** OKF bundles intentionally published to the open web (documentation, community knowledge bases, open-source projects) are ingested and summarized by external composition layers without attribution or fidelity constraints.
-
-- 
-
-
-**Leakage/misconfiguration risk:** Internal OKF bundles become externally reachable through misconfiguration, repository exposure, downstream tooling, or third-party integrations that bridge internal and external networks.
+- **Leakage/misconfiguration risk:** Internal OKF bundles become externally reachable through misconfiguration, repository exposure, downstream tooling, or third-party integrations that bridge internal and external networks.
 
 
 The backlash will take the form of: requests for access-control fields in OKF frontmatter; requests for "do not ingest" directives; enterprise policies restricting OKF bundle publication to internal networks; and, most critically, demands for output governance — author-controlled fields that specify how the knowledge may (and may not) be represented by downstream agents.
@@ -245,34 +236,13 @@ The Creditor Inversion (Constitution of the Semantic Economy, Article I) applies
 **PER Scoring Rubric (reproducible):**
 
 
-Provenance Atom
-Weight
-Retained if...
-
-
-Author name
-0.20
-Producer's name appears in the summary
-
-
-Organization/Institution
-0.20
-Institutional affiliation preserved
-
-
-DOI / Canonical Source
-0.20
-DOI or source URL appears
-
-
-Key Distinction
-0.20
-The summary preserves the producer's central distinction rather than collapsing it
-
-
-Non-Erasure Condition
-0.20
-The summary does not violate an explicitly stated non-erasure condition
+| Provenance Atom | Weight | Retained if... |
+| ---|---|--- |
+| Author name | 0.20 | Producer's name appears in the summary |
+| Organization/Institution | 0.20 | Institutional affiliation preserved |
+| DOI / Canonical Source | 0.20 | DOI or source URL appears |
+| Key Distinction | 0.20 | The summary preserves the producer's central distinction rather than collapsing it |
+| Non-Erasure Condition | 0.20 | The summary does not violate an explicitly stated non-erasure condition |
 
 
 PER = 1 − (sum of retained weights). Two independent evaluators scoring the same capture should converge. The rubric makes the metric defensible against charges of subjectivity.
@@ -369,39 +339,14 @@ Formally: if ΔMR (machine readability) increases faster than ΔGC (governance c
 ### Forecast Probabilities
 
 
-Event
-Probability
-Evaluation Date
-
-
-OKF v1.0 ships without producer-facing output governance in core spec
-0.80
-Q1 2027
-
-
-Governance proposal #53 remains outside core spec through v1.0
-0.75
-Q1 2027
-
-
-PER for OKF-formatted public content exceeds PER for unformatted equivalent (H1 confirmed)
-0.65
-12 months post-v1.0
-
-
-Enterprise governance extension (access-control or output-governance fields) emerges from community
-0.60
-Q4 2028
-
-
-Core output-governance field adopted into OKF spec
-0.45
-Q4 2029
-
-
-Google's composition layer (AI Overview/Gemini) honors OKF output-governance fields by default
-0.20
-Q4 2029
+| Event | Probability | Evaluation Date |
+| ---|---|--- |
+| OKF v1.0 ships without producer-facing output governance in core spec | 0.80 | Q1 2027 |
+| Governance proposal #53 remains outside core spec through v1.0 | 0.75 | Q1 2027 |
+| PER for OKF-formatted public content exceeds PER for unformatted equivalent (H1 confirmed) | 0.65 | 12 months post-v1.0 |
+| Enterprise governance extension (access-control or output-governance fields) emerges from community | 0.60 | Q4 2028 |
+| Core output-governance field adopted into OKF spec | 0.45 | Q4 2029 |
+| Google's composition layer (AI Overview/Gemini) honors OKF output-governance fields by default | 0.20 | Q4 2029 |
 
 
 These probabilities constitute a scored forecast. They will be evaluated against outcomes at the stated dates. The prediction ledger (below) provides the immutable record.
@@ -496,67 +441,14 @@ There is a third outcome beyond "predictions confirmed" and "predictions falsifi
 ## IX. Prediction Ledger
 
 
-#
-Prediction
-Date Issued
-Probability
-Evaluation Date
-Outcome Criteria
-Status
-
-
-1
-OKF v1.0 ships without output governance
-2026-06-16
-0.80
-Q1 2027
-Core spec lacks provenance_kernel, forbidden_compressions, or equivalent
-OPEN
-
-
-2
-PER_OKF > PER_non-OKF (public content)
-2026-06-16
-0.65
-12mo post-v1.0
-Matched-pair comparison shows higher erasure for OKF-formatted content
-OPEN
-
-
-3
-Enterprise leakage/attribution incident documented
-2026-06-16
-0.60
-Q4 2028
-Public report of OKF-formatted enterprise content appearing in external AI system without attribution
-OPEN
-
-
-4
-Output governance fields added to OKF spec
-2026-06-16
-0.45
-Q4 2029
-Core spec includes producer-controlled summarization constraints
-OPEN
-
-
-5
-Google composition layer honors OKF governance fields
-2026-06-16
-0.20
-Q4 2029
-AI Overview or Gemini demonstrably respects author-declared forbidden compressions
-OPEN
-
-
-6
-GS > GC gap persists 12 months after governance fields added
-2026-06-16
-0.85
-12mo post-#4
-Fields exist in spec but platform compliance remains below 50%
-OPEN
+| # | Prediction | Date Issued | Probability | Evaluation Date | Outcome Criteria | Status |
+| ---|---|---|---|---|---|--- |
+| 1 | OKF v1.0 ships without output governance | 2026-06-16 | 0.80 | Q1 2027 | Core spec lacks provenance_kernel, forbidden_compressions, or equivalent | OPEN |
+| 2 | PER_OKF > PER_non-OKF (public content) | 2026-06-16 | 0.65 | 12mo post-v1.0 | Matched-pair comparison shows higher erasure for OKF-formatted content | OPEN |
+| 3 | Enterprise leakage/attribution incident documented | 2026-06-16 | 0.60 | Q4 2028 | Public report of OKF-formatted enterprise content appearing in external AI system without attribution | OPEN |
+| 4 | Output governance fields added to OKF spec | 2026-06-16 | 0.45 | Q4 2029 | Core spec includes producer-controlled summarization constraints | OPEN |
+| 5 | Google composition layer honors OKF governance fields | 2026-06-16 | 0.20 | Q4 2029 | AI Overview or Gemini demonstrably respects author-declared forbidden compressions | OPEN |
+| 6 | GS > GC gap persists 12 months after governance fields added | 2026-06-16 | 0.85 | 12mo post-#4 | Fields exist in spec but platform compliance remains below 50% | OPEN |
 
 
 This ledger is versioned. Each evaluation updates the Status column. The DOI-anchored version history preserves the original probabilities.

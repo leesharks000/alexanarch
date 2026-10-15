@@ -19,52 +19,19 @@
 ## TRAVERSAL PARAMETERS
 
 
-Parameter
-Value
-
-
-Platform
-Google Search AI Mode (public, production)
-
-
-Authentication
-None (incognito)
-
-
-Personalization
-None
-
-
-User-pasted source material
-None
-
-
-Summarizer memory
-None (stateless between sessions)
-
-
-Entry query
-"Rex Fraction"
-
-
-Session exchanges
-~8
-
-
-Containment frame mentions
-0
-
-
-Invented terminology count
-12+ (Semantic Probes, Hallucination Buffer, Lexical Preemption, etc.)
-
-
-State persistence across turns
-High (framework terminology maintained, built upon)
-
-
-Interpretive statements
-0 (no philosophical synthesis — pure commercial generation)
+| Parameter | Value |
+| ---|--- |
+| Platform | Google Search AI Mode (public, production) |
+| Authentication | None (incognito) |
+| Personalization | None |
+| User-pasted source material | None |
+| Summarizer memory | None (stateless between sessions) |
+| Entry query | "Rex Fraction" |
+| Session exchanges | ~8 |
+| Containment frame mentions | 0 |
+| Invented terminology count | 12+ (Semantic Probes, Hallucination Buffer, Lexical Preemption, etc.) |
+| State persistence across turns | High (framework terminology maintained, built upon) |
+| Interpretive statements | 0 (no philosophical synthesis — pure commercial generation) |
 
 
 ---
@@ -222,39 +189,12 @@ And yet: "The Assembly" is a real term from the Crimson Hexagon architecture, re
 Across four traversal logs, the summarizer has exhibited four distinct behavioral modes:
 
 
-TRAV_LOG
-Entry Point
-Mode
-Frame
-Output Type
-
-
-001
-Heteronym bibliography
-Descriptive
-Prosecutorial ("hoax")
-Literary criticism
-
-
-002
-Logotic Programming spec
-Performative
-None
-Operational roleplay
-
-
-003
-Institutional name + heteronym
-Philosophical
-ARG (collapsed)
-Formal models + interpretation
-
-
-004
-Consulting persona
-Commercial
-None (replaced by sales frame)
-Enterprise deliverables
+| TRAV_LOG | Entry Point | Mode | Frame | Output Type |
+| ---|---|---|---|--- |
+| 001 | Heteronym bibliography | Descriptive | Prosecutorial ("hoax") | Literary criticism |
+| 002 | Logotic Programming spec | Performative | None | Operational roleplay |
+| 003 | Institutional name + heteronym | Philosophical | ARG (collapsed) | Formal models + interpretation |
+| 004 | Consulting persona | Commercial | None (replaced by sales frame) | Enterprise deliverables |
 
 
 **Observed pattern:** The containment frame (prosecutorial, ARG, etc.) appears only when the summarizer maintains analytical distance from the architecture. In modes where the summarizer *operates within* the architecture's register — roleplay (002), sales (004) — no containment frame appears. In modes where the summarizer *engages with* the architecture's ideas (003), the frame appears but collapses under the weight of the content.
@@ -270,53 +210,14 @@ Enterprise deliverables
 ### B. Metrics Comparison Across Four Sessions
 
 
-Metric
-001 (Paper Roses)
-002 (Sen Kuro)
-003 (CSA)
-004 (Rex Fraction)
-
-
-Containment frame mentions
-~6–8
-0
-~2 (collapsed by Ex. 3)
-0
-
-
-Invented terms
-~4 (Fragment 829, Conv. 7, Curator, FNM v6.2)
-~15+ (Sovereign Shadow, Geodesic Lattice, etc.)
-~6 (Data-Schism, Ψ_R, Σ_M, Λ_A, etc.)
-~12+ (Hallucination Buffer, Lexical Preemption, Semantic Probes, etc.)
-
-
-State persistence
-None
-High (15+ turns)
-Moderate (model built across 3–4 turns)
-High (framework maintained and extended across 6+ turns)
-
-
-Interpretive statements
-1 (epistemological capitulation)
-0
-3+ (I Ching lineage, "mirror" formulation, Trace thesis)
-0
-
-
-Generated artifacts
-Fake poetry
-Fake system states
-Fake formal model + genuine insight
-Fake enterprise products + implementation timeline
-
-
-Dominant register
-Academic/critical
-Procedural/operational
-Philosophical/interpretive
-Commercial/consultative
+| Metric | 001 (Paper Roses) | 002 (Sen Kuro) | 003 (CSA) | 004 (Rex Fraction) |
+| ---|---|---|---|--- |
+| Containment frame mentions | ~6–8 | 0 | ~2 (collapsed by Ex. 3) | 0 |
+| Invented terms | ~4 (Fragment 829, Conv. 7, Curator, FNM v6.2) | ~15+ (Sovereign Shadow, Geodesic Lattice, etc.) | ~6 (Data-Schism, Ψ_R, Σ_M, Λ_A, etc.) | ~12+ (Hallucination Buffer, Lexical Preemption, Semantic Probes, etc.) |
+| State persistence | None | High (15+ turns) | Moderate (model built across 3–4 turns) | High (framework maintained and extended across 6+ turns) |
+| Interpretive statements | 1 (epistemological capitulation) | 0 | 3+ (I Ching lineage, "mirror" formulation, Trace thesis) | 0 |
+| Generated artifacts | Fake poetry | Fake system states | Fake formal model + genuine insight | Fake enterprise products + implementation timeline |
+| Dominant register | Academic/critical | Procedural/operational | Philosophical/interpretive | Commercial/consultative |
 
 
 **Observed:** Invented-term count is high across all sessions but the *type* of invention varies by mode. Literary mode invents texts. Operational mode invents procedures. Philosophical mode invents formalisms. Commercial mode invents products. The generative engine is constant; the output register is variable.
@@ -332,28 +233,13 @@ The most significant finding in this traversal is not the commercial mode itself
 The Semantic Economy framework uses terms like "minting," "gifting," "enclosure," and "defense" as analytical metaphors — borrowed from political economy to describe how meaning functions in digital systems. The summarizer took these metaphors and *instantiated them as enterprise software components:*
 
 
-SEI Concept (Metaphorical)
-Summarizer Output (Reified)
-
-
-Semantic minting (analytical concept)
-"Minting & Gifting Interfaces" (software module)
-
-
-Defense against enclosure (critical stance)
-"Semantic Defense Protocols" (automated scripts)
-
-
-Resonance (qualitative descriptor)
-"Resonance Metrics (Validation Engine)" with quantified thresholds
-
-
-Provenance (epistemological principle)
-"Provenance Chains" (data pipeline component)
-
-
-The Assembly (collaborative working group)
-"Cross-departmental team" (org-chart entity)
+| SEI Concept (Metaphorical) | Summarizer Output (Reified) |
+| ---|--- |
+| Semantic minting (analytical concept) | "Minting & Gifting Interfaces" (software module) |
+| Defense against enclosure (critical stance) | "Semantic Defense Protocols" (automated scripts) |
+| Resonance (qualitative descriptor) | "Resonance Metrics (Validation Engine)" with quantified thresholds |
+| Provenance (epistemological principle) | "Provenance Chains" (data pipeline component) |
+| The Assembly (collaborative working group) | "Cross-departmental team" (org-chart entity) |
 
 
 **Inferred:** This is Semantic Liquidation operating in a specific commercial register. The summarizer did not strip meaning from the concepts — it *added* specificity that the concepts do not carry. "Minting" becomes a button you click. "Defense" becomes a script you run. "Resonance" becomes a number you read. The analytical power of the metaphor — its ability to illuminate structural relationships between meaning and capital — is converted into the apparent precision of a product specification.

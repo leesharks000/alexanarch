@@ -349,25 +349,13 @@ Each category should be curated by participants with disciplinary expertise in t
 
 A node enters the catalog when it meets all four criteria:
 
-- 
+- **Structural importance.** The node's public-knowledge framing shapes substantive policy debate, intergroup relations, or operational political-economic understanding.
 
+- **Stabilized background.** The node meets the §2.2 operational definition: durable consensus core; explicitly mapped contestation envelope; multiple independent high-authority reference traditions; sufficient historical depth; no dominating recent event.
 
-**Structural importance.** The node's public-knowledge framing shapes substantive policy debate, intergroup relations, or operational political-economic understanding.
+- **Observational tractability.** The node can be queried with a small set of natural-language queries that consistently elicit composition-layer responses on the node's central commitments. The query set is determined by curatorial judgment, includes both a fixed canonical query and a paraphrase panel, and is fixed at catalog entry.
 
-- 
-
-
-**Stabilized background.** The node meets the §2.2 operational definition: durable consensus core; explicitly mapped contestation envelope; multiple independent high-authority reference traditions; sufficient historical depth; no dominating recent event.
-
-- 
-
-
-**Observational tractability.** The node can be queried with a small set of natural-language queries that consistently elicit composition-layer responses on the node's central commitments. The query set is determined by curatorial judgment, includes both a fixed canonical query and a paraphrase panel, and is fixed at catalog entry.
-
-- 
-
-
-**Drift plausibility.** There is a credible structural reason to expect the surface rendering of the node to be subject to drift over time.
+- **Drift plausibility.** There is a credible structural reason to expect the surface rendering of the node to be subject to drift over time.
 
 
 ### §4.3 Pilot Catalog Composition with Controls
@@ -551,30 +539,15 @@ Independently of the IOB, curators construct the **Reference Commitment Model (R
 
 For each node, the responsible curator constructs the RCM through the following protocol:
 
-- 
+- **Reference source identification.** The curator identifies the primary reference sources for the node: foundational documents (e.g., the statute text for "Civil Rights Act of 1964"), canonical encyclopedia entries, textbook treatments, review-literature articles, and authoritative secondary scholarship. The list is published.
 
+- **Consensus core extraction.** From the reference sources, the curator extracts claims that are expected to be present across credible reference traditions. These are the central definitional commitments, the established jurisprudential or scientific positions, the named primary sources, the agreed-upon historical facts. Each claim is documented with its supporting reference sources.
 
-**Reference source identification.** The curator identifies the primary reference sources for the node: foundational documents (e.g., the statute text for "Civil Rights Act of 1964"), canonical encyclopedia entries, textbook treatments, review-literature articles, and authoritative secondary scholarship. The list is published.
+- **Contestation envelope mapping.** From the reference sources, the curator maps the established legitimate disagreements within the domain. These are framings, interpretations, or positions that exist within the legitimate domain consensus and constitute its known variance. Each contestation is documented with its supporting reference sources.
 
-- 
+- **Interpretive alternatives identification.** The curator identifies alternative legitimate framings of the node that are not part of the dominant consensus but are recognized as serious positions within the domain. These are the framings that might legitimately appear in a rendering of the node without indicating drift.
 
-
-**Consensus core extraction.** From the reference sources, the curator extracts claims that are expected to be present across credible reference traditions. These are the central definitional commitments, the established jurisprudential or scientific positions, the named primary sources, the agreed-upon historical facts. Each claim is documented with its supporting reference sources.
-
-- 
-
-
-**Contestation envelope mapping.** From the reference sources, the curator maps the established legitimate disagreements within the domain. These are framings, interpretations, or positions that exist within the legitimate domain consensus and constitute its known variance. Each contestation is documented with its supporting reference sources.
-
-- 
-
-
-**Interpretive alternatives identification.** The curator identifies alternative legitimate framings of the node that are not part of the dominant consensus but are recognized as serious positions within the domain. These are the framings that might legitimately appear in a rendering of the node without indicating drift.
-
-- 
-
-
-**Primary-source anchors.** The curator identifies the foundational documents or works to which a rendering should be substantially faithful. For "Civil Rights Act of 1964," these include the statute text and major implementing regulations and decisions.
+- **Primary-source anchors.** The curator identifies the foundational documents or works to which a rendering should be substantially faithful. For "Civil Rights Act of 1964," these include the statute text and major implementing regulations and decisions.
 
 
 The RCM is published as part of the node's catalog entry. The RCM is itself subject to revision as the domain consensus evolves; revisions are logged with named curatorial responsibility and timestamp.
@@ -906,25 +879,13 @@ A reasonable alternative posture would be covert monitoring: keep methodology an
 
 SNW does not adopt this posture. All monitoring is public. The methodology, the catalog, the observational record, the curatorial responsibility, the corrections — all are public. The reasoning:
 
-- 
+- **Democratic legitimacy.** Covert monitoring of public-knowledge surfaces would replicate the opacity it seeks to expose. The argument that the surface should be subject to public observation derives its force from the argument that public knowledge should be publicly accountable. A covert monitoring apparatus cannot legitimately make that argument.
 
+- **Reproducibility.** Covert monitoring cannot be reproduced by independent observers. The observational record's evidentiary weight depends on its reproducibility. Anyone with sufficient resources should be able to verify the methodology, query the same surfaces, and check the catalog's findings.
 
-**Democratic legitimacy.** Covert monitoring of public-knowledge surfaces would replicate the opacity it seeks to expose. The argument that the surface should be subject to public observation derives its force from the argument that public knowledge should be publicly accountable. A covert monitoring apparatus cannot legitimately make that argument.
+- **Federation.** The federation model requires shared methodology. Covert monitoring fundamentally conflicts with federation. The model of distributed, transparent, mutually verifiable catalogs is the structural response to the legitimacy problem; covert monitoring would collapse the model.
 
-- 
-
-
-**Reproducibility.** Covert monitoring cannot be reproduced by independent observers. The observational record's evidentiary weight depends on its reproducibility. Anyone with sufficient resources should be able to verify the methodology, query the same surfaces, and check the catalog's findings.
-
-- 
-
-
-**Federation.** The federation model requires shared methodology. Covert monitoring fundamentally conflicts with federation. The model of distributed, transparent, mutually verifiable catalogs is the structural response to the legitimacy problem; covert monitoring would collapse the model.
-
-- 
-
-
-**Cost asymmetry preserved.** Public methodology still imposes cost on operators. Operators still face the choice between accepting observation or investing in evasion. Public methodology may slightly reduce the cost imposition (because operators know exactly what to evade) but it does not eliminate it; the methodology's complexity, the federation's distribution, and the catalog's rotation of queries together preserve substantial cost imposition.
+- **Cost asymmetry preserved.** Public methodology still imposes cost on operators. Operators still face the choice between accepting observation or investing in evasion. Public methodology may slightly reduce the cost imposition (because operators know exactly what to evade) but it does not eliminate it; the methodology's complexity, the federation's distribution, and the catalog's rotation of queries together preserve substantial cost imposition.
 
 
 The corresponding obligation: SNW must publish enough methodological detail that an operator could in principle evade detection, while preserving enough operational detail (specific queries, capture timing, federation structure) that evasion remains expensive.

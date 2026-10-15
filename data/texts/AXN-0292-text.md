@@ -213,32 +213,14 @@ The comparison case is the differential between generative search systems with d
 A testable protocol would operationalize several variables:
 
 
-Variable
-Operationalization
-
-
-Trigger rate
-Fraction of queries in the test panel that yield an AI synthesis (binary per query, aggregated)
-
-
-Inclusion rate
-Fraction of triggered syntheses that mention the target concept (binary per triggered query, aggregated)
-
-
-Owner concentration
-Herfindahl–Hirschman index computed over the resolved provenance owners of cited documents; values approaching 1 indicate single-owner concentration
-
-
-Cross-owner support
-Number of distinct provenance clusters represented in the citation set, where clusters are operationalized over registrable domains, author strings, or other identifying features
-
-
-Semantic density
-Internal citation graph depth within the support set, measured as average path length in the citation network of cited documents
-
-
-Cross-system differential
-Difference in trigger rate and inclusion rate for the same query set across multiple generative search systems (Google AI Mode, Google AI Overviews, Bing Copilot, Perplexity, others)
+| Variable | Operationalization |
+| ---|--- |
+| Trigger rate | Fraction of queries in the test panel that yield an AI synthesis (binary per query, aggregated) |
+| Inclusion rate | Fraction of triggered syntheses that mention the target concept (binary per triggered query, aggregated) |
+| Owner concentration | Herfindahl–Hirschman index computed over the resolved provenance owners of cited documents; values approaching 1 indicate single-owner concentration |
+| Cross-owner support | Number of distinct provenance clusters represented in the citation set, where clusters are operationalized over registrable domains, author strings, or other identifying features |
+| Semantic density | Internal citation graph depth within the support set, measured as average path length in the citation network of cited documents |
+| Cross-system differential | Difference in trigger rate and inclusion rate for the same query set across multiple generative search systems (Google AI Mode, Google AI Overviews, Bing Copilot, Perplexity, others) |
 
 
 The Herfindahl–Hirschman index is borrowed from economics, where it measures market concentration. Its application to provenance concentration is analytically parallel: it ranges from approximately 0 (perfect distribution across many owners) to 1 (complete concentration in one owner). It is a standard, computable, defensible metric. Its use here makes the single-owner discount empirically operational rather than rhetorically suggestive.

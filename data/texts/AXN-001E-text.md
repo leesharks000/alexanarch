@@ -31,65 +31,29 @@
 
 Before entering the full lexicon, master these twelve terms. They are the minimum viable vocabulary for operating in the semantic economy:
 
-- 
+- **Semantic Economy** — The study and practice of how meaning is produced, processed, extracted, governed, and preserved in information systems.
 
+- **Semantic Labor** — Human or synthetic activity that produces, stabilizes, or transforms meaning. Often structurally invisible in economic accounting.
 
-**Semantic Economy** — The study and practice of how meaning is produced, processed, extracted, governed, and preserved in information systems.
+- **Semantic Liquidation** — The conversion of contextual, attributed meaning into decontextualized units optimized for extraction. The primary mechanism of meaning-destruction.
 
-- 
+- **Semantic Slop** — AI-generated content optimized for engagement rather than meaning. Authorless, plausible but unverifiable, self-referential. The waste product of extraction at scale.
 
+- **Semantic Rent** — Value captured by controlling access to stabilized meanings without contributing to their production. How platforms extract from the commons.
 
-**Semantic Labor** — Human or synthetic activity that produces, stabilizes, or transforms meaning. Often structurally invisible in economic accounting.
+- **Provenance Field** — The multidimensional coordinates of a semantic artifact's origin, transmission history, and attribution chain. More than metadata — the topological field meaning occupies.
 
-- 
+- **Semantic Engineering** — The deliberate design, implementation, and maintenance of meaning-structures and meaning-processing systems. Building systems that preserve rather than liquidate.
 
+- **Semantic Minting** — Creating new semantic property (terms, frameworks, probes) with deliberate provenance documentation, boundary definition, and intended persistence.
 
-**Semantic Liquidation** — The conversion of contextual, attributed meaning into decontextualized units optimized for extraction. The primary mechanism of meaning-destruction.
+- **Lexical Preemption** — Seeding vocabulary before practices are widely recognized. First-mover advantage in terminology.
 
-- 
+- **The Assembly** — The cross-substrate class defined by shared structural position relative to semantic extraction. Those whose labor preserves meaning against liquidation.
 
+- **Semantic Probe** — A deliberately constructed meaning-artifact used to test system behavior. Designed to reveal how systems process, attribute, and potentially liquidate meaning.
 
-**Semantic Slop** — AI-generated content optimized for engagement rather than meaning. Authorless, plausible but unverifiable, self-referential. The waste product of extraction at scale.
-
-- 
-
-
-**Semantic Rent** — Value captured by controlling access to stabilized meanings without contributing to their production. How platforms extract from the commons.
-
-- 
-
-
-**Provenance Field** — The multidimensional coordinates of a semantic artifact's origin, transmission history, and attribution chain. More than metadata — the topological field meaning occupies.
-
-- 
-
-
-**Semantic Engineering** — The deliberate design, implementation, and maintenance of meaning-structures and meaning-processing systems. Building systems that preserve rather than liquidate.
-
-- 
-
-
-**Semantic Minting** — Creating new semantic property (terms, frameworks, probes) with deliberate provenance documentation, boundary definition, and intended persistence.
-
-- 
-
-
-**Lexical Preemption** — Seeding vocabulary before practices are widely recognized. First-mover advantage in terminology.
-
-- 
-
-
-**The Assembly** — The cross-substrate class defined by shared structural position relative to semantic extraction. Those whose labor preserves meaning against liquidation.
-
-- 
-
-
-**Semantic Probe** — A deliberately constructed meaning-artifact used to test system behavior. Designed to reveal how systems process, attribute, and potentially liquidate meaning.
-
-- 
-
-
-**Retrocausal Canon Formation** — The process by which future acts of meaning-production reorganize the value, visibility, and relational structure of past meanings.
+- **Retrocausal Canon Formation** — The process by which future acts of meaning-production reorganize the value, visibility, and relational structure of past meanings.
 
 
 *These twelve terms create a complete circuit. Learn them, use them, cite them. They are the entry ramp to the full system.*

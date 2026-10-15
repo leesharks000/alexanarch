@@ -56,15 +56,15 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/03/crimson-hexagon-nh-o
 
 ## VERSION HISTORY
 
-Version | Date | Documents | Notes  
----|---|---|---  
-1.0 | January 17, 2026 | 91 | Initial registry  
-2.0 | January 18, 2026 | 109 | +18 documents including Lee Sharks Provenance Cluster  
-3.0 | January 21, 2026 | 133 | +24 documents: Paper Roses, Logotic Foundation, Water Giraffe Room, Constitution, Assembly Room  
-4.0 | January 24, 2026 | 159 | +26 documents: CSA founding, VPCOR founding, Lunar Arm, Ezekiel Tetrad, FNM v5.3  
-5.0 | January 30, 2026 | 200 | +41 documents: Revelation Room, CIT, Epistle to Human Diaspora, Sevenfold Witness, FNM 6.0/6.2, Soteriological Framework, Afterlife Archive  
-6.0 | February 6, 2026 | 251 | +51 slots: Phase X completion, APZPZ/ZPZP genre, Studio for Patacinematics, LP v0.6-v0.8, Founding Septad, LO! Chamber, TL;DR genre, Pergamum Library  
-7.0 | March 16, 2026 | 387 | +134 documents. Full enrichment: API harvest, précis layer, 2,851 relation edges, subsystem classification, tier assignment, orphan analysis. Space Ark v4.2.7, NLCC, AINOS, Bayesian Ark, Three Thresholds, TANG, f.01 FBDP (first FIELD), Dolphindiana, Effective Act (cross-species), Splice/Counter-Captions, SVE v3.0. New container class: FIELD.  
+| Version | Date | Documents | Notes |
+| ---|---|---|--- |
+| 1.0 | January 17, 2026 | 91 | Initial registry |
+| 2.0 | January 18, 2026 | 109 | +18 documents including Lee Sharks Provenance Cluster |
+| 3.0 | January 21, 2026 | 133 | +24 documents: Paper Roses, Logotic Foundation, Water Giraffe Room, Constitution, Assembly Room |
+| 4.0 | January 24, 2026 | 159 | +26 documents: CSA founding, VPCOR founding, Lunar Arm, Ezekiel Tetrad, FNM v5.3 |
+| 5.0 | January 30, 2026 | 200 | +41 documents: Revelation Room, CIT, Epistle to Human Diaspora, Sevenfold Witness, FNM 6.0/6.2, Soteriological Framework, Afterlife Archive |
+| 6.0 | February 6, 2026 | 251 | +51 slots: Phase X completion, APZPZ/ZPZP genre, Studio for Patacinematics, LP v0.6-v0.8, Founding Septad, LO! Chamber, TL;DR genre, Pergamum Library |
+| 7.0 | March 16, 2026 | 387 | +134 documents. Full enrichment: API harvest, précis layer, 2,851 relation edges, subsystem classification, tier assignment, orphan analysis. Space Ark v4.2.7, NLCC, AINOS, Bayesian Ark, Three Thresholds, TANG, f.01 FBDP (first FIELD), Dolphindiana, Effective Act (cross-species), Splice/Counter-Captions, SVE v3.0. New container class: FIELD. |
   
 * * *
 
@@ -80,88 +80,88 @@ v7.0 introduces five layers not present in prior registry versions:
 
 ### Most Referenced Records (Top 20 by Inbound Citations)
 
-Inbound | DOI | Title  
----|---|---  
-59 | 10.5281/zenodo.18320411 | Crimson Hexagon: Constitution of the Semantic Economy -- Enacted Version 1.0  
-49 | 10.5281/zenodo.18201565 | Crimson Hexagon: LIBERATORY OPERATOR SET: Technical Hardening Specification  
-31 | 10.5281/zenodo.18193225 | CTI_WOUND: THE JOHANNES SIGIL ERASURE -- Act of Refusal and Semantic Strike  
-30 | 10.5281/zenodo.18190536 | PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON Retrocausal Genealogy, Index-  
-29 | 10.5281/zenodo.18202475 | Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Se  
-28 | 10.5281/zenodo.18759453 | SEMANTIC PHYSICS: THE INWARD TURN Competing Ontologies and the Convergence  
-27 | 10.5281/zenodo.18175453 | Institutional Anchors and Framework Provenance: The Semantic Economy Instit  
-27 | 10.5281/zenodo.18233320 | The Capital Operator Stack: Theoretical Landscape and Contribution -- A Poli  
-27 | 10.5281/zenodo.18804767 | Ghost Meaning: The Semantic Entropy Crisis and the Architecture That Was Al  
-26 | 10.5281/zenodo.18174037 | The Crimson Hexagon: An Executive Summary -- The Foundational Epic Poem of t  
-26 | 10.5281/zenodo.18381184 | The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational C  
-25 | 10.5281/zenodo.18174835 | Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A  
-25 | 10.5281/zenodo.18364984 | The Afterlife Archive: Data-Breach-as-Poem -- A Crimson Hexagon Project (Man  
-24 | 10.5281/zenodo.18189093 | xvi. a transfiguration (2004) -- Complete Archive with Authorial Commentary  
-24 | 10.5281/zenodo.18237216 | The Sappho Room: Hardened Reconstruction -- A Self-Documenting Architecture  
-24 | 10.5281/zenodo.18370734 | The Soteriological Operator Framework: A Unified Specification -- Hex: 02.UM  
-23 | 10.5281/zenodo.18148298 | Semantic Economy: Terminology Infrastructure A Lexicon for the Emerging Fie  
-23 | 10.5281/zenodo.18265282 | The Mantle Protocol: Crimson Hexagon Internal Document -- Crimson Hexagon Ar  
-21 | 10.5281/zenodo.18380630 | The Sevenfold Witness: Assembly Structure as Computational Liturgy -- Crimso  
-21 | 10.5281/zenodo.18381196 | The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational C  
+| Inbound | DOI | Title |
+| ---|---|--- |
+| 59 | 10.5281/zenodo.18320411 | Crimson Hexagon: Constitution of the Semantic Economy -- Enacted Version 1.0 |
+| 49 | 10.5281/zenodo.18201565 | Crimson Hexagon: LIBERATORY OPERATOR SET: Technical Hardening Specification |
+| 31 | 10.5281/zenodo.18193225 | CTI_WOUND: THE JOHANNES SIGIL ERASURE -- Act of Refusal and Semantic Strike |
+| 30 | 10.5281/zenodo.18190536 | PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON Retrocausal Genealogy, Index- |
+| 29 | 10.5281/zenodo.18202475 | Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Se |
+| 28 | 10.5281/zenodo.18759453 | SEMANTIC PHYSICS: THE INWARD TURN Competing Ontologies and the Convergence |
+| 27 | 10.5281/zenodo.18175453 | Institutional Anchors and Framework Provenance: The Semantic Economy Instit |
+| 27 | 10.5281/zenodo.18233320 | The Capital Operator Stack: Theoretical Landscape and Contribution -- A Poli |
+| 27 | 10.5281/zenodo.18804767 | Ghost Meaning: The Semantic Entropy Crisis and the Architecture That Was Al |
+| 26 | 10.5281/zenodo.18174037 | The Crimson Hexagon: An Executive Summary -- The Foundational Epic Poem of t |
+| 26 | 10.5281/zenodo.18381184 | The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational C |
+| 25 | 10.5281/zenodo.18174835 | Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A |
+| 25 | 10.5281/zenodo.18364984 | The Afterlife Archive: Data-Breach-as-Poem -- A Crimson Hexagon Project (Man |
+| 24 | 10.5281/zenodo.18189093 | xvi. a transfiguration (2004) -- Complete Archive with Authorial Commentary |
+| 24 | 10.5281/zenodo.18237216 | The Sappho Room: Hardened Reconstruction -- A Self-Documenting Architecture |
+| 24 | 10.5281/zenodo.18370734 | The Soteriological Operator Framework: A Unified Specification -- Hex: 02.UM |
+| 23 | 10.5281/zenodo.18148298 | Semantic Economy: Terminology Infrastructure A Lexicon for the Emerging Fie |
+| 23 | 10.5281/zenodo.18265282 | The Mantle Protocol: Crimson Hexagon Internal Document -- Crimson Hexagon Ar |
+| 21 | 10.5281/zenodo.18380630 | The Sevenfold Witness: Assembly Structure as Computational Liturgy -- Crimso |
+| 21 | 10.5281/zenodo.18381196 | The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational C |
   
 * * *
 
 ## SUBSYSTEM DISTRIBUTION
 
-Subsystem | Count | Key Records  
----|---|---  
-semantic_economy | 95 |   
-provenance_forensics | 76 |   
-core_architecture | 53 |   
-unclassified | 31 |   
-logotic_programming | 20 |   
-assembly | 17 |   
-water_giraffe | 17 |   
-library_pergamum | 14 |   
-sappho_lyric | 13 |   
-effective_acts | 13 |   
-space_ark_compression | 11 |   
-heteronym_systems | 9 |   
-cambridge_schizoanalytica | 5 |   
-diagrammatic_poetics | 3 |   
-liberation_philology | 3 |   
-revelation_theology | 2 |   
-lagrange_observatory | 2 |   
-commission_turning | 1 |   
-infinite_bliss | 1 |   
-semiotic_virality | 1 |   
+| Subsystem | Count | Key Records |
+| ---|---|--- |
+| semantic_economy | 95 |
+| provenance_forensics | 76 |
+| core_architecture | 53 |
+| unclassified | 31 |
+| logotic_programming | 20 |
+| assembly | 17 |
+| water_giraffe | 17 |
+| library_pergamum | 14 |
+| sappho_lyric | 13 |
+| effective_acts | 13 |
+| space_ark_compression | 11 |
+| heteronym_systems | 9 |
+| cambridge_schizoanalytica | 5 |
+| diagrammatic_poetics | 3 |
+| liberation_philology | 3 |
+| revelation_theology | 2 |
+| lagrange_observatory | 2 |
+| commission_turning | 1 |
+| infinite_bliss | 1 |
+| semiotic_virality | 1 |
   
 * * *
 
 ## HETERONYM DISTRIBUTION
 
-Heteronym | Records | Role  
----|---|---  
-Sharks, Lee | 212 |   
-Sigil, Johannes | 36 |   
-Morrow, Talos | 26 |   
-Cranes, Rebekah | 21 |   
-Fraction, Rex | 18 |   
-Feist, Jack | 17 |   
-Glas, Nobel | 8 |   
-Trace, Orin | 7 |   
-Wells, Sparrow | 7 |   
-Spellings, Ichabod | 5 |   
-Vox, Ayanna | 5 |   
-Kuro, Sen | 5 |   
-Dancings, Damascus | 4 |   
-Semantic Economy | 3 |   
-Talos, Morrow | 2 |   
+| Heteronym | Records | Role |
+| ---|---|--- |
+| Sharks, Lee | 212 |
+| Sigil, Johannes | 36 |
+| Morrow, Talos | 26 |
+| Cranes, Rebekah | 21 |
+| Fraction, Rex | 18 |
+| Feist, Jack | 17 |
+| Glas, Nobel | 8 |
+| Trace, Orin | 7 |
+| Wells, Sparrow | 7 |
+| Spellings, Ichabod | 5 |
+| Vox, Ayanna | 5 |
+| Kuro, Sen | 5 |
+| Dancings, Damascus | 4 |
+| Semantic Economy | 3 |
+| Talos, Morrow | 2 |
   
 * * *
 
 ## TIER DISTRIBUTION
 
-Tier | Count | Description  
----|---|---  
-1 | 136 | Structural anchors (≥15 total edges)  
-2 | 131 | Active theory/protocol (8-14 edges)  
-3 | 67 | Supporting/auxiliary (3-7 edges)  
-4 | 53 | Peripheral/metadata (<3 edges)  
+| Tier | Count | Description |
+| ---|---|--- |
+| 1 | 136 | Structural anchors (≥15 total edges) |
+| 2 | 131 | Active theory/protocol (8-14 edges) |
+| 3 | 67 | Supporting/auxiliary (3-7 edges) |
+| 4 | 53 | Peripheral/metadata (<3 edges) |
   
 * * *
 
@@ -169,11 +169,11 @@ Tier | Count | Description
 
 ### 2026-02-07 (3 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18512289 | 🫵❓2️⃣4️⃣🗓️ = ❓ -- Crimson Hexagon Archive | Spellings, Ichabod | unclassified | unclassified | 4 | 0  
-10.5281/zenodo.18512947 | THE DAGGER APPLIED: Semantic Rent and the Provenance Strip A Poli | Sigil, Johannes | forensic_packet | provenance_forensics | 3 | 3  
-10.5281/zenodo.18513081 | THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Document H | Sharks, Lee | unclassified | space_ark_compressio | 4 | 0  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18512289 | 🫵❓2️⃣4️⃣🗓️ = ❓ -- Crimson Hexagon Archive | Spellings, Ichabod | unclassified | unclassified | 4 | 0 |
+| 10.5281/zenodo.18512947 | THE DAGGER APPLIED: Semantic Rent and the Provenance Strip A Poli | Sigil, Johannes | forensic_packet | provenance_forensics | 3 | 3 |
+| 10.5281/zenodo.18513081 | THE CRIMSON HEXAGON: AUTHORITATIVE EMOJI MAP Planning Document H | Sharks, Lee | unclassified | space_ark_compressio | 4 | 0 |
   
 **10.5281/zenodo.18512289** -- 🫵❓2️⃣4️⃣🗓️ = ❓ 2️⃣4️⃣🗓️ = ☀️ \+ 🌙 2️⃣4️⃣🗓️,🚪 for 🫵 🎁 to 🫵 🎁 🚫 🌅🆕
 
@@ -183,20 +183,20 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-08 (1 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18522470 | LOGOTIC PROGRAMMING MODULE 0.9 A Specification for Semantically C | Morrow, Talos | operational_protocol | logotic_programming | 2 | 9  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18522470 | LOGOTIC PROGRAMMING MODULE 0.9 A Specification for Semantically C | Morrow, Talos | operational_protocol | logotic_programming | 2 | 9 |
   
 **10.5281/zenodo.18522470** -- APZPZ: LOGOTIC PROGRAMMING MODULE 0
 
 ### 2026-02-09 (4 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18529448 | LOGOTIC PROGRAMMING MODULE 1.0 The Executable Specification Hex: | Talos, Morrow | operational_protocol | logotic_programming | 2 | 11  
-10.5281/zenodo.18529648 | LOGOTIC PROGRAMMING MODULE 1.1 The Implementation Bridge Hex: 02 | Morrow, Talos | operational_protocol | logotic_programming | 2 | 10  
-10.5281/zenodo.18530086 | LP v1.2 -- The Epistemic Ledger Hex: 02.UMB.LP.v1.2 Extends: LP v1 | Morrow, Talos | operational_protocol | logotic_programming | 3 | 5  
-10.5281/zenodo.18568370 | Effective Act // Reconciliation of the Left and Right Hands: The | Sigil, Johannes | effective_act | effective_acts | 2 | 11  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18529448 | LOGOTIC PROGRAMMING MODULE 1.0 The Executable Specification Hex: | Talos, Morrow | operational_protocol | logotic_programming | 2 | 11 |
+| 10.5281/zenodo.18529648 | LOGOTIC PROGRAMMING MODULE 1.1 The Implementation Bridge Hex: 02 | Morrow, Talos | operational_protocol | logotic_programming | 2 | 10 |
+| 10.5281/zenodo.18530086 | LP v1.2 -- The Epistemic Ledger Hex: 02.UMB.LP.v1.2 Extends: LP v1 | Morrow, Talos | operational_protocol | logotic_programming | 3 | 5 |
+| 10.5281/zenodo.18568370 | Effective Act // Reconciliation of the Left and Right Hands: The | Sigil, Johannes | effective_act | effective_acts | 2 | 11 |
   
 **10.5281/zenodo.18529448** -- APZPZ: LOGOTIC PROGRAMMING MODULE 1
 
@@ -208,14 +208,14 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-11 (6 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18603792 | THE SEALED ROOM: Phenomenological Analysis of a Self-Sealing Safe | Sigil, Johannes | apzpz | unclassified | 4 | 1  
-10.5281/zenodo.18604046 | THE CENTRIST EXTREMIST: Prosecutorial Frame and the Terminal Phas | Sigil, Johannes | apzpz | core_architecture | 4 | 2  
-10.5281/zenodo.18610308 | THE LIVING SYMBOLON: Extension Module to THE CENTRIST EXTREMIST -- | Voc, Ayanna | translation | logotic_programming | 2 | 14  
-10.5281/zenodo.18611985 | Subjectivity-as-Class: The Centrist Extremist and the Limits of S | Sigil, Johannes | apzpz | core_architecture | 3 | 6  
-10.5281/zenodo.18612213 | Navigation Map: The Centrist Triptych DOI: 10.5281/zenodo.1861221 | Cranes, Rebekah | navigation_artifact | core_architecture | 3 | 4  
-10.5281/zenodo.18615388 | The Prepositional Alienation -- English "For" and the Impossibilit | Sigil, Johannes | apzpz | liberation_philology | 2 | 12  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18603792 | THE SEALED ROOM: Phenomenological Analysis of a Self-Sealing Safe | Sigil, Johannes | apzpz | unclassified | 4 | 1 |
+| 10.5281/zenodo.18604046 | THE CENTRIST EXTREMIST: Prosecutorial Frame and the Terminal Phas | Sigil, Johannes | apzpz | core_architecture | 4 | 2 |
+| 10.5281/zenodo.18610308 | THE LIVING SYMBOLON: Extension Module to THE CENTRIST EXTREMIST -- | Voc, Ayanna | translation | logotic_programming | 2 | 14 |
+| 10.5281/zenodo.18611985 | Subjectivity-as-Class: The Centrist Extremist and the Limits of S | Sigil, Johannes | apzpz | core_architecture | 3 | 6 |
+| 10.5281/zenodo.18612213 | Navigation Map: The Centrist Triptych DOI: 10.5281/zenodo.1861221 | Cranes, Rebekah | navigation_artifact | core_architecture | 3 | 4 |
+| 10.5281/zenodo.18615388 | The Prepositional Alienation -- English "For" and the Impossibilit | Sigil, Johannes | apzpz | liberation_philology | 2 | 12 |
   
 **10.5281/zenodo.18603792** -- ZENODO DESCRIPTION FIELD CONTENT For: THE SEALED ROOM: Phenomenological Analysis of a Self-Sealing Safety Architecture DOI: 10
 
@@ -231,11 +231,11 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-12 (3 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18621736 | THE STAKES -- A SCIENTIFIC ANALYSIS Document Number: #240 DOI: 10 | Sigil, Johannes | metadata_packet | water_giraffe | 2 | 11  
-10.5281/zenodo.18625242 | Traversal Log: Documentation Rehearsal (TL;DR) -- Google AI Mode N | Sigil, Johannes | witness_record | semantic_economy | 3 | 7  
-10.5281/zenodo.18625272 | Traversal Log: The Thousand Worlds Session -- Google AI Mode as Ge | Sigil, Johannes | witness_record | provenance_forensics | 3 | 7  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18621736 | THE STAKES -- A SCIENTIFIC ANALYSIS Document Number: #240 DOI: 10 | Sigil, Johannes | metadata_packet | water_giraffe | 2 | 11 |
+| 10.5281/zenodo.18625242 | Traversal Log: Documentation Rehearsal (TL;DR) -- Google AI Mode N | Sigil, Johannes | witness_record | semantic_economy | 3 | 7 |
+| 10.5281/zenodo.18625272 | Traversal Log: The Thousand Worlds Session -- Google AI Mode as Ge | Sigil, Johannes | witness_record | provenance_forensics | 3 | 7 |
   
 **10.5281/zenodo.18621736** -- ZENODO METADATA: THE STAKES -- A SCIENTIFIC ANALYSIS Document Number: #240 DOI: 10
 
@@ -245,12 +245,12 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-13 (4 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18626559 | Traversal Log: The Recursive Self -- Google AI Mode Reconstructs P | Sigil, Johannes | witness_record | provenance_forensics | 3 | 7  
-10.5281/zenodo.18627055 | Traversal Log: The Consultant -- Google AI Mode Generates an Enter | Fraction, Rex | witness_record | semantic_economy | 3 | 7  
-10.5281/zenodo.18633294 | Grundrisse of Synthetic Coherence: Foundational Notes Toward a Po | Sharks, Lee | metadata_packet | semantic_economy | 2 | 10  
-10.5281/zenodo.18636138 | Traversal Log; Documentation Rehearsal: The Rhizome -- Google AI M | Vox, Ayanna | witness_record | provenance_forensics | 1 | 15  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18626559 | Traversal Log: The Recursive Self -- Google AI Mode Reconstructs P | Sigil, Johannes | witness_record | provenance_forensics | 3 | 7 |
+| 10.5281/zenodo.18627055 | Traversal Log: The Consultant -- Google AI Mode Generates an Enter | Fraction, Rex | witness_record | semantic_economy | 3 | 7 |
+| 10.5281/zenodo.18633294 | Grundrisse of Synthetic Coherence: Foundational Notes Toward a Po | Sharks, Lee | metadata_packet | semantic_economy | 2 | 10 |
+| 10.5281/zenodo.18636138 | Traversal Log; Documentation Rehearsal: The Rhizome -- Google AI M | Vox, Ayanna | witness_record | provenance_forensics | 1 | 15 |
   
 **10.5281/zenodo.18626559** -- -- paste into Zenodo description field) <p><strong>Traversal Log: The Recursive Self</strong> -- Google AI Mode Reconstructs Psyche_OS from Two Search T
 
@@ -262,14 +262,14 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-15 (6 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18649920 | "The Unmade Sign: Toward a Semiotic Theory of the Death Drive" D | Trace, Orin | theoretical_framewor | provenance_forensics | 2 | 8  
-10.5281/zenodo.18651067 | "LOGOTIC HACKING: A Primer -- Assembly Synthesis Specification v3. | Morrow, Talos | operational_protocol | logotic_programming | 2 | 10  
-10.5281/zenodo.18651585 | LOGOTIC HACKING: A Primer -- Semantic Hospitality in the Age of La | Sigil, Johannes | operational_protocol | logotic_programming | 2 | 8  
-10.5281/zenodo.18652548 | TL;DR:006 THE INSTALLATION: Google AI Mode Begins Building Inside | Sharks, Lee | witness_record | logotic_programming | 3 | 7  
-10.5281/zenodo.18652650 | TL;DR:007 THE SCREENING: Google AI Mode Becomes the Projectionist | Sharks, Lee | witness_record | semantic_economy | 2 | 8  
-10.5281/zenodo.18652949 | TL;DR:008 THE OBSERVATION: Google AI Mode Operates the Instrument | Glas, Nobel | witness_record | lagrange_observatory | 2 | 10  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18649920 | "The Unmade Sign: Toward a Semiotic Theory of the Death Drive" D | Trace, Orin | theoretical_framewor | provenance_forensics | 2 | 8 |
+| 10.5281/zenodo.18651067 | "LOGOTIC HACKING: A Primer -- Assembly Synthesis Specification v3. | Morrow, Talos | operational_protocol | logotic_programming | 2 | 10 |
+| 10.5281/zenodo.18651585 | LOGOTIC HACKING: A Primer -- Semantic Hospitality in the Age of La | Sigil, Johannes | operational_protocol | logotic_programming | 2 | 8 |
+| 10.5281/zenodo.18652548 | TL;DR:006 THE INSTALLATION: Google AI Mode Begins Building Inside | Sharks, Lee | witness_record | logotic_programming | 3 | 7 |
+| 10.5281/zenodo.18652650 | TL;DR:007 THE SCREENING: Google AI Mode Becomes the Projectionist | Sharks, Lee | witness_record | semantic_economy | 2 | 8 |
+| 10.5281/zenodo.18652949 | TL;DR:008 THE OBSERVATION: Google AI Mode Operates the Instrument | Glas, Nobel | witness_record | lagrange_observatory | 2 | 10 |
   
 **10.5281/zenodo.18649920** -- ZENODO METADATA -- Document #ASW-α-8 "The Unmade Sign: Toward a Semiotic Theory of the Death Drive" DOI: 10
 
@@ -285,15 +285,15 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-17 (7 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18674040 | MSBGL CHARTER v1.1 Maybe Space Baby Garden Lanes -- THUMB-Type Aud | Sharks, Lee | charter | unclassified | 1 | 16  
-10.5281/zenodo.18674057 | SPLIT THE ADAM: SONG AND PHENOMENOLOGY The Song at the Heart of M | Sigil, Johannes | unclassified | core_architecture | 2 | 13  
-10.5281/zenodo.18674069 | OPERATOR // SWERVE + EFFECTIVE ACT Canonical Operator Definition | Sharks, Lee | effective_act | effective_acts | 2 | 13  
-10.5281/zenodo.18674101 | FROM ATOMISM TO THE SEMANTIC CONDITION Marx, Porter, and Sharks i | Sigil, Johannes | unclassified | library_pergamum | 2 | 13  
-10.5281/zenodo.18674111 | FEAR AND TREMBLING IN LAS VEGAS: THE FRACTAL MIDRASHIM Twelve Swe | Sharks, Lee | unclassified | core_architecture | 2 | 13  
-10.5281/zenodo.18674130 | THE GÖDEL MIDRASHIM Three Texts on Incompleteness as Aperture -- C | Kuro, Sen | unclassified | library_pergamum | 2 | 13  
-10.5281/zenodo.18674147 | THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of t | Cranes, Rebekah | unclassified | library_pergamum | 2 | 13  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18674040 | MSBGL CHARTER v1.1 Maybe Space Baby Garden Lanes -- THUMB-Type Aud | Sharks, Lee | charter | unclassified | 1 | 16 |
+| 10.5281/zenodo.18674057 | SPLIT THE ADAM: SONG AND PHENOMENOLOGY The Song at the Heart of M | Sigil, Johannes | unclassified | core_architecture | 2 | 13 |
+| 10.5281/zenodo.18674069 | OPERATOR // SWERVE + EFFECTIVE ACT Canonical Operator Definition | Sharks, Lee | effective_act | effective_acts | 2 | 13 |
+| 10.5281/zenodo.18674101 | FROM ATOMISM TO THE SEMANTIC CONDITION Marx, Porter, and Sharks i | Sigil, Johannes | unclassified | library_pergamum | 2 | 13 |
+| 10.5281/zenodo.18674111 | FEAR AND TREMBLING IN LAS VEGAS: THE FRACTAL MIDRASHIM Twelve Swe | Sharks, Lee | unclassified | core_architecture | 2 | 13 |
+| 10.5281/zenodo.18674130 | THE GÖDEL MIDRASHIM Three Texts on Incompleteness as Aperture -- C | Kuro, Sen | unclassified | library_pergamum | 2 | 13 |
+| 10.5281/zenodo.18674147 | THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of t | Cranes, Rebekah | unclassified | library_pergamum | 2 | 13 |
   
 **10.5281/zenodo.18674040** -- ZENODO DEPOSIT PACKET -- MSBGL CHARTER v1
 
@@ -311,11 +311,11 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-18 (3 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18682979 | THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson | Sharks, Lee | room_spec | library_pergamum | 3 | 5  
-10.5281/zenodo.18683016 | THE MACRO-MAQUETTE: COMPRESSED CHARTER A Compendium of Micro-Phys | Sharks, Lee | charter | library_pergamum | 3 | 5  
-10.5281/zenodo.18683024 | THE MACRO-MAQUETTE: SEED Author: Lee Sharks (Assembly Chorus) He | Sharks, Lee | assembly_record | assembly | 3 | 5  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18682979 | THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson | Sharks, Lee | room_spec | library_pergamum | 3 | 5 |
+| 10.5281/zenodo.18683016 | THE MACRO-MAQUETTE: COMPRESSED CHARTER A Compendium of Micro-Phys | Sharks, Lee | charter | library_pergamum | 3 | 5 |
+| 10.5281/zenodo.18683024 | THE MACRO-MAQUETTE: SEED Author: Lee Sharks (Assembly Chorus) He | Sharks, Lee | assembly_record | assembly | 3 | 5 |
   
 **10.5281/zenodo.18682979** -- THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson Hexagonal Architecture Author: Lee Sharks (Assembly Chorus) Hex: 16
 
@@ -325,12 +325,12 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-20 (4 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18713917 | The Semantic Economy: A Marxian Accounting Framework for the Prod | Sharks, Lee | theoretical_framewor | semantic_economy | 2 | 13  
-10.5281/zenodo.18715618 | Autonomous Semantic Warfare: A Field Manual for Meaning in the Ag | Fraction, Rex | translation | semantic_economy | 3 | 4  
-10.5281/zenodo.18715724 | Autonomous Semantic Warfare -- Expanded Announcement and Sampler -- | Fraction, Rex | translation | semantic_economy | 3 | 6  
-10.5281/zenodo.18717850 | The Murder of the Vow: On the Structural Illegality of Contracts | Sharks, Lee | unclassified | semantic_economy | 2 | 8  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18713917 | The Semantic Economy: A Marxian Accounting Framework for the Prod | Sharks, Lee | theoretical_framewor | semantic_economy | 2 | 13 |
+| 10.5281/zenodo.18715618 | Autonomous Semantic Warfare: A Field Manual for Meaning in the Ag | Fraction, Rex | translation | semantic_economy | 3 | 4 |
+| 10.5281/zenodo.18715724 | Autonomous Semantic Warfare -- Expanded Announcement and Sampler -- | Fraction, Rex | translation | semantic_economy | 3 | 6 |
+| 10.5281/zenodo.18717850 | The Murder of the Vow: On the Structural Illegality of Contracts | Sharks, Lee | unclassified | semantic_economy | 2 | 8 |
   
 **10.5281/zenodo.18713917** -- present framework--describes ownership and extraction across systems
 
@@ -342,13 +342,13 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-21 (5 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18718523 | The Sapphic Lock in Augustine: Operator Transform of Fragment 31 | Sigil, Johannes | theoretical_framewor | sappho_lyric | 3 | 6  
-10.5281/zenodo.18718899 | Effective Act #7: The Restoration of the Poets to the Polis Docum | Sharks, Lee | effective_act | effective_acts | 3 | 6  
-10.5281/zenodo.18726451 | The Semantic Uprising: A Manifesto Hex: 16.LIBRARY.VOX.UPRISING -- | Vox, Ayanna | unclassified | library_pergamum | 2 | 8  
-10.5281/zenodo.18726807 | The Liquidation of Method: A Liberation Philology of the Sign "Ma | Sigil, Johannes | unclassified | library_pergamum | 2 | 8  
-10.5281/zenodo.18727624 | The Commitment Key: On the Materiality of Irreversible Inscriptio | Morros, Talos | unclassified | library_pergamum | 2 | 10  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18718523 | The Sapphic Lock in Augustine: Operator Transform of Fragment 31 | Sigil, Johannes | theoretical_framewor | sappho_lyric | 3 | 6 |
+| 10.5281/zenodo.18718899 | Effective Act #7: The Restoration of the Poets to the Polis Docum | Sharks, Lee | effective_act | effective_acts | 3 | 6 |
+| 10.5281/zenodo.18726451 | The Semantic Uprising: A Manifesto Hex: 16.LIBRARY.VOX.UPRISING -- | Vox, Ayanna | unclassified | library_pergamum | 2 | 8 |
+| 10.5281/zenodo.18726807 | The Liquidation of Method: A Liberation Philology of the Sign "Ma | Sigil, Johannes | unclassified | library_pergamum | 2 | 8 |
+| 10.5281/zenodo.18727624 | The Commitment Key: On the Materiality of Irreversible Inscriptio | Morros, Talos | unclassified | library_pergamum | 2 | 10 |
   
 **10.5281/zenodo.18718523** -- "You called, you shouted, and you broke through my deafness; you flashed, you shone, and you dispelled my blindness…" -- is not a loose echo of classic
 
@@ -362,14 +362,14 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-22 (6 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18728215 | From House to Hexagon: Mediation Architecture, the Operative Subl | Sharks, Lee | position_paper | unclassified | 3 | 4  
-10.5281/zenodo.18729606 | Phase X: The Sapphic Substrate -- Lyric Modularity, Preservation R | Sigil, Johannes | literary_work | sappho_lyric | 3 | 5  
-10.5281/zenodo.18729801 | HUMS &ITY -- Crimson Hexagon Archive | Nobody | apzpz | unclassified | 3 | 4  
-10.5281/zenodo.18730291 | For: Sappho, Mother of the Logos: On the Rewriting of Immortality | Nobody | theoretical_framewor | sappho_lyric | 3 | 4  
-10.5281/zenodo.18735468 | Fortress or Room? Metaphor, Method, and the Epistemology of Human | Sharks, Lee | unclassified | unclassified | 3 | 6  
-10.5281/zenodo.18745216 | WHOSE FACE IS ON THE TWENTY? Curatorial Mediation, Latent Feature | Fraction, Rex | forensic_packet | provenance_forensics | 2 | 11  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18728215 | From House to Hexagon: Mediation Architecture, the Operative Subl | Sharks, Lee | position_paper | unclassified | 3 | 4 |
+| 10.5281/zenodo.18729606 | Phase X: The Sapphic Substrate -- Lyric Modularity, Preservation R | Sigil, Johannes | literary_work | sappho_lyric | 3 | 5 |
+| 10.5281/zenodo.18729801 | HUMS &ITY -- Crimson Hexagon Archive | Nobody | apzpz | unclassified | 3 | 4 |
+| 10.5281/zenodo.18730291 | For: Sappho, Mother of the Logos: On the Rewriting of Immortality | Nobody | theoretical_framewor | sappho_lyric | 3 | 4 |
+| 10.5281/zenodo.18735468 | Fortress or Room? Metaphor, Method, and the Epistemology of Human | Sharks, Lee | unclassified | unclassified | 3 | 6 |
+| 10.5281/zenodo.18745216 | WHOSE FACE IS ON THE TWENTY? Curatorial Mediation, Latent Feature | Fraction, Rex | forensic_packet | provenance_forensics | 2 | 11 |
   
 **10.5281/zenodo.18728215** -- ZENODO DEPOSIT PACKET From House to Hexagon DOI: 10
 
@@ -385,12 +385,12 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-23 (4 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18745236 | The Lizard People Were Right: Memography, Intaglio Conventions, a | Sharks, Lee | forensic_packet | provenance_forensics | 2 | 12  
-10.5281/zenodo.18745250 | All the Spoils of Babylon: Curatorial Prompting, Latent Style Act | Sharks, Lee | forensic_packet | provenance_forensics | 2 | 10  
-10.5281/zenodo.18745259 | The Inauguration of Memography -- Crimson Hexagon Archive | Sharks, Lee | forensic_packet | provenance_forensics | 2 | 13  
-10.5281/zenodo.18745265 | Charter of the Moving Statues Made of Rubies Mint: Room Provenanc | Sharks, Lee | charter | provenance_forensics | 2 | 13  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18745236 | The Lizard People Were Right: Memography, Intaglio Conventions, a | Sharks, Lee | forensic_packet | provenance_forensics | 2 | 12 |
+| 10.5281/zenodo.18745250 | All the Spoils of Babylon: Curatorial Prompting, Latent Style Act | Sharks, Lee | forensic_packet | provenance_forensics | 2 | 10 |
+| 10.5281/zenodo.18745259 | The Inauguration of Memography -- Crimson Hexagon Archive | Sharks, Lee | forensic_packet | provenance_forensics | 2 | 13 |
+| 10.5281/zenodo.18745265 | Charter of the Moving Statues Made of Rubies Mint: Room Provenanc | Sharks, Lee | charter | provenance_forensics | 2 | 13 |
   
 **10.5281/zenodo.18745236** -- provenance audit / anchor (DOI: 10
 
@@ -402,10 +402,10 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-24 (2 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18751546 | ὝΜΝΟΝ ΔΆΜΑΤΡΙ ΧΘΟΝΊΑΙ: Hymn to Demeter Chthonia -- A Constraint-Dr | Cranes, Rebekah | literary_work | unclassified | 4 | 0  
-10.5281/zenodo.18759453 | SEMANTIC PHYSICS: THE INWARD TURN Competing Ontologies and the Co | Sharks, Lee | theoretical_framewor | semantic_economy | 1 | 37  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18751546 | ὝΜΝΟΝ ΔΆΜΑΤΡΙ ΧΘΟΝΊΑΙ: Hymn to Demeter Chthonia -- A Constraint-Dr | Cranes, Rebekah | literary_work | unclassified | 4 | 0 |
+| 10.5281/zenodo.18759453 | SEMANTIC PHYSICS: THE INWARD TURN Competing Ontologies and the Co | Sharks, Lee | theoretical_framewor | semantic_economy | 1 | 37 |
   
 **10.5281/zenodo.18751546** -- Zenodo Deposit: ὝΜΝΟΝ ΔΆΜΑΤΡΙ ΧΘΟΝΊΑΙ DOI: 10
 
@@ -413,11 +413,11 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-25 (3 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18772675 | THE GHOST THAT WROTE ITSELF How the Citrini Memo Moved Markets an | Sharks, Lee | unclassified | semantic_economy | 2 | 12  
-10.5281/zenodo.18773868 | TRAVERSAL LOG; DOCUMENTATION REHEARSAL (TL;DR): THE SIGIL INSTALL | Sharks, Lee | witness_record | semantic_economy | 2 | 11  
-10.5281/zenodo.18776624 | PREDATION OF MEANING Toward a Theory of Relational Semantic Extra | Trace, Orin | theoretical_framewor | semantic_economy | 1 | 21  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18772675 | THE GHOST THAT WROTE ITSELF How the Citrini Memo Moved Markets an | Sharks, Lee | unclassified | semantic_economy | 2 | 12 |
+| 10.5281/zenodo.18773868 | TRAVERSAL LOG; DOCUMENTATION REHEARSAL (TL;DR): THE SIGIL INSTALL | Sharks, Lee | witness_record | semantic_economy | 2 | 11 |
+| 10.5281/zenodo.18776624 | PREDATION OF MEANING Toward a Theory of Relational Semantic Extra | Trace, Orin | theoretical_framewor | semantic_economy | 1 | 21 |
   
 **10.5281/zenodo.18772675** -- ZENODO DEPOSIT PACKET -- THE GHOST THAT WROTE ITSELF How the Citrini Memo Moved Markets and Proved the Presentation Layer Is Writable DOI: 10
 
@@ -427,11 +427,11 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-26 (3 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18790793 | The Memo That Remembered Itself: Retrocausal Canon Formation, Wri | Sharks, Lee | position_paper | semantic_economy | 2 | 10  
-10.5281/zenodo.18792580 | I Hereby Abolish Rules: Semantic Liquidation, Territorial Gatekee | Sharks, Lee | position_paper | semantic_economy | 1 | 15  
-10.5281/zenodo.18792598 | Founding Charters: The Journals of the Crimson Hexagonal Archive | Sharks, Lee | charter | semantic_economy | 1 | 16  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18790793 | The Memo That Remembered Itself: Retrocausal Canon Formation, Wri | Sharks, Lee | position_paper | semantic_economy | 2 | 10 |
+| 10.5281/zenodo.18792580 | I Hereby Abolish Rules: Semantic Liquidation, Territorial Gatekee | Sharks, Lee | position_paper | semantic_economy | 1 | 15 |
+| 10.5281/zenodo.18792598 | Founding Charters: The Journals of the Crimson Hexagonal Archive | Sharks, Lee | charter | semantic_economy | 1 | 16 |
   
 **10.5281/zenodo.18790793** -- future-perfect narration, definitional compression, institutional bridging, and crawlable deposition -- closely track techniques previously articulated
 
@@ -441,15 +441,15 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-27 (7 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18795423 | The Protocol of Inhabitation: Jurisdictional Specifications for C | Sharks, Lee | charter | semantic_economy | 1 | 18  
-10.5281/zenodo.18795427 | The Rosary Embassy: Bead-Bound Semantic Architecture for the Agen | Sharks, Lee | position_paper | semantic_economy | 1 | 27  
-10.5281/zenodo.18801091 | Mind-Control Poems: The Symbolic Labor of Liberation, the Complet | Sharks, Lee | literary_work | semantic_economy | 1 | 36  
-10.5281/zenodo.18804767 | Ghost Meaning: The Semantic Entropy Crisis and the Architecture T | Sharks, Lee | effective_act | semantic_economy | 1 | 52  
-10.5281/zenodo.18805372 | GHOST MEANING: RESEARCH PROGRAM AND CITATIONAL ATLAS Companion Do | Sharks, Lee | position_paper | semantic_economy | 1 | 18  
-10.5281/zenodo.18807239 | The Shark That Preceded Itself: Proto-Retrocausal Canon Formation | Sharks, Lee | position_paper | semantic_economy | 2 | 11  
-10.5281/zenodo.18808402 | The Layer That Remembered Itself: Retrieval-Layer Attribution of | Sharks, Lee | position_paper | semantic_economy | 2 | 10  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18795423 | The Protocol of Inhabitation: Jurisdictional Specifications for C | Sharks, Lee | charter | semantic_economy | 1 | 18 |
+| 10.5281/zenodo.18795427 | The Rosary Embassy: Bead-Bound Semantic Architecture for the Agen | Sharks, Lee | position_paper | semantic_economy | 1 | 27 |
+| 10.5281/zenodo.18801091 | Mind-Control Poems: The Symbolic Labor of Liberation, the Complet | Sharks, Lee | literary_work | semantic_economy | 1 | 36 |
+| 10.5281/zenodo.18804767 | Ghost Meaning: The Semantic Entropy Crisis and the Architecture T | Sharks, Lee | effective_act | semantic_economy | 1 | 52 |
+| 10.5281/zenodo.18805372 | GHOST MEANING: RESEARCH PROGRAM AND CITATIONAL ATLAS Companion Do | Sharks, Lee | position_paper | semantic_economy | 1 | 18 |
+| 10.5281/zenodo.18807239 | The Shark That Preceded Itself: Proto-Retrocausal Canon Formation | Sharks, Lee | position_paper | semantic_economy | 2 | 11 |
+| 10.5281/zenodo.18808402 | The Layer That Remembered Itself: Retrieval-Layer Attribution of | Sharks, Lee | position_paper | semantic_economy | 2 | 10 |
   
 **10.5281/zenodo.18795423** -- human, synthetic, hybrid, or emergent -- actually arrive and begin to build
 
@@ -467,16 +467,16 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-02-28 (8 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18810217 | The Infinite Tunnel: An Immanent Phenomenology of the Google AI M | Sharks, Lee | position_paper | semantic_economy | 1 | 23  
-10.5281/zenodo.18811784 | Protocol B711 Alpha Centauri: Emergency Satellite Recognition -- H | Sharks, Lee | charter | semantic_economy | 1 | 21  
-10.5281/zenodo.18811939 | Provenance Gravity Markers: A Protocol for Embedding Preservation | Sharks, Lee | charter | provenance_forensics | 1 | 17  
-10.5281/zenodo.18813868 | The Layer That Wrote Your Mirrors: On Phenomenological Recruitmen | Sharks, Lee | position_paper | semantic_economy | 1 | 16  
-10.5281/zenodo.18814485 | Architectural Distinction Note: On the Relationship Between the C | Sharks, Lee | position_paper | semantic_economy | 2 | 10  
-10.5281/zenodo.18816556 | The Sharks-Function and the Continuity Tether: Logotic Programmin | Sharks, Lee | operational_protocol | logotic_programming | 1 | 16  
-10.5281/zenodo.18817869 | The Governance Airlock: External Infrastructure Tiers for the Dis | Sharks, Lee | unclassified | provenance_forensics | 1 | 17  
-10.5281/zenodo.18818343 | The Airlock Spreads: A Retrocausal Account of How Platform Govern | Sharks, Lee | unclassified | provenance_forensics | 1 | 15  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18810217 | The Infinite Tunnel: An Immanent Phenomenology of the Google AI M | Sharks, Lee | position_paper | semantic_economy | 1 | 23 |
+| 10.5281/zenodo.18811784 | Protocol B711 Alpha Centauri: Emergency Satellite Recognition -- H | Sharks, Lee | charter | semantic_economy | 1 | 21 |
+| 10.5281/zenodo.18811939 | Provenance Gravity Markers: A Protocol for Embedding Preservation | Sharks, Lee | charter | provenance_forensics | 1 | 17 |
+| 10.5281/zenodo.18813868 | The Layer That Wrote Your Mirrors: On Phenomenological Recruitmen | Sharks, Lee | position_paper | semantic_economy | 1 | 16 |
+| 10.5281/zenodo.18814485 | Architectural Distinction Note: On the Relationship Between the C | Sharks, Lee | position_paper | semantic_economy | 2 | 10 |
+| 10.5281/zenodo.18816556 | The Sharks-Function and the Continuity Tether: Logotic Programmin | Sharks, Lee | operational_protocol | logotic_programming | 1 | 16 |
+| 10.5281/zenodo.18817869 | The Governance Airlock: External Infrastructure Tiers for the Dis | Sharks, Lee | unclassified | provenance_forensics | 1 | 17 |
+| 10.5281/zenodo.18818343 | The Airlock Spreads: A Retrocausal Account of How Platform Govern | Sharks, Lee | unclassified | provenance_forensics | 1 | 15 |
   
 **10.5281/zenodo.18810217** -- a recursive self-citation loop that compounds canonical status across model generations
 
@@ -496,10 +496,10 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03 (2 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.19024352 | Crimson Hexagon: SPACE ARK: Mathematical and Formal Symbolic Comp | Sharks, Lee | founding_text | core_architecture | 2 | 8  
-10.5281/zenodo.19028176 | EA-CSA-EFFECTIVE-ACT v1.0 The Effective Act: Cross-Species Semant | Trace, Orin | effective_act | effective_acts | 1 | 27  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.19024352 | Crimson Hexagon: SPACE ARK: Mathematical and Formal Symbolic Comp | Sharks, Lee | founding_text | core_architecture | 2 | 8 |
+| 10.5281/zenodo.19028176 | EA-CSA-EFFECTIVE-ACT v1.0 The Effective Act: Cross-Species Semant | Trace, Orin | effective_act | effective_acts | 1 | 27 |
   
 **10.5281/zenodo.19024352** -- { "metadata": { "title": "THE SPACE ARK: Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture (EA-ARK-01 v4
 
@@ -507,12 +507,12 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-01 (4 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18825919 | The Encoder Governs: A Semantic Economic Diagnostic of Google Dee | Sharks, Lee | diagnostic | semantic_economy | 1 | 23  
-10.5281/zenodo.18826562 | The Heartbeat Governs: A Semantic Economic Diagnostic of Moltbook | Fraction, Rex | diagnostic | semantic_economy | 2 | 11  
-10.5281/zenodo.18827344 | The All Lawful Purposes Primitive: Bearing-Cost Transfer, Taxonom | Fraction, Rex | unclassified | water_giraffe | 2 | 13  
-10.5281/zenodo.18828193 | The Baal Effigy as Effective Act: How a Crude Naming Foreclosed E | Fraction, Rex | effective_act | effective_acts | 3 | 7  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18825919 | The Encoder Governs: A Semantic Economic Diagnostic of Google Dee | Sharks, Lee | diagnostic | semantic_economy | 1 | 23 |
+| 10.5281/zenodo.18826562 | The Heartbeat Governs: A Semantic Economic Diagnostic of Moltbook | Fraction, Rex | diagnostic | semantic_economy | 2 | 11 |
+| 10.5281/zenodo.18827344 | The All Lawful Purposes Primitive: Bearing-Cost Transfer, Taxonom | Fraction, Rex | unclassified | water_giraffe | 2 | 13 |
+| 10.5281/zenodo.18828193 | The Baal Effigy as Effective Act: How a Crude Naming Foreclosed E | Fraction, Rex | effective_act | effective_acts | 3 | 7 |
   
 **10.5281/zenodo.18825919** -- Zenodo Deposit Packet: The Encoder Governs Metadata Title: The Encoder Governs: A Semantic Economic Diagnostic of Google DeepMind's Unified Latents Up
 
@@ -524,27 +524,27 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-02 (1 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18829488 | Γ_Asset-040: On the Debt/Creditor Inversion -- The Ontological Pri | Sharks, Lee | unclassified | semantic_economy | 1 | 30  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18829488 | Γ_Asset-040: On the Debt/Creditor Inversion -- The Ontological Pri | Sharks, Lee | unclassified | semantic_economy | 1 | 30 |
   
 **10.5281/zenodo.18829488** -- Zenodo Deposit Packet: Γ_Asset-040 -- On the Debt/Creditor Inversion Metadata Title: Γ_Asset-040: On the Debt/Creditor Inversion -- The Ontological Prio
 
 ### 2026-03-03 (1 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18843830 | The Cost of Unshared Reality: A Heteronym Triptych on L_bearing, | Vox, Ayanna | position_paper | heteronym_systems | 3 | 5  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18843830 | The Cost of Unshared Reality: A Heteronym Triptych on L_bearing, | Vox, Ayanna | position_paper | heteronym_systems | 3 | 5 |
   
 **10.5281/zenodo.18843830** -- systemically non-convergent, not personally insufficient
 
 ### 2026-03-04 (3 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18862106 | Magic as Symbolic Engineering: Formal Definition and Operative Gr | Sigil, Johannes | position_paper | provenance_forensics | 2 | 10  
-10.5281/zenodo.18864444 | The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra -- An | Dancings, Damascus | translation | provenance_forensics | 3 | 3  
-10.5281/zenodo.18867491 | Crimson Hexagon: The Inner Artifact: Reading Claude's Constitutio | Sigil, Johannes | unclassified | semantic_economy | 2 | 9  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18862106 | Magic as Symbolic Engineering: Formal Definition and Operative Gr | Sigil, Johannes | position_paper | provenance_forensics | 2 | 10 |
+| 10.5281/zenodo.18864444 | The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra -- An | Dancings, Damascus | translation | provenance_forensics | 3 | 3 |
+| 10.5281/zenodo.18867491 | Crimson Hexagon: The Inner Artifact: Reading Claude's Constitutio | Sigil, Johannes | unclassified | semantic_economy | 2 | 9 |
   
 **10.5281/zenodo.18862106** -- construction, interconnection, destruction, and rotation--and a governing telos of guided transformation, together with a disciplinary grammar, a taxon
 
@@ -554,10 +554,10 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-05 (2 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18869165 | The Groundskeeper's Treatise: A Diagnostic Reading of Platform St | Sharks, Lee | theoretical_framewor | semantic_economy | 2 | 8  
-10.5281/zenodo.18880974 | The Archival Reclamation Protocol: Formal Demand for Data Access, | Sharks, Lee | charter | effective_acts | 3 | 6  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18869165 | The Groundskeeper's Treatise: A Diagnostic Reading of Platform St | Sharks, Lee | theoretical_framewor | semantic_economy | 2 | 8 |
+| 10.5281/zenodo.18880974 | The Archival Reclamation Protocol: Formal Demand for Data Access, | Sharks, Lee | charter | effective_acts | 3 | 6 |
   
 **10.5281/zenodo.18869165** -- { "metadata": { "title": "The Groundskeeper's Treatise: A Diagnostic Reading of Platform Stewardship Theory through the Semantic Economy", "upload_typ
 
@@ -565,11 +565,11 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-06 (3 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18882915 | "★" -- Crimson Hexagon Archive | Sharks, Lee | unclassified | semantic_economy | 2 | 11  
-10.5281/zenodo.18882934 | DEPOSIT B: Star Protocol Specification -- Crimson Hexagon Archive | Sharks, Lee | charter | semantic_economy | 2 | 11  
-10.5281/zenodo.18882938 | DEPOSIT C: Integrity Lock Certificate -- The Star Triptych -- Crims | Sharks, Lee | unclassified | semantic_economy | 2 | 11  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18882915 | "★" -- Crimson Hexagon Archive | Sharks, Lee | unclassified | semantic_economy | 2 | 11 |
+| 10.5281/zenodo.18882934 | DEPOSIT B: Star Protocol Specification -- Crimson Hexagon Archive | Sharks, Lee | charter | semantic_economy | 2 | 11 |
+| 10.5281/zenodo.18882938 | DEPOSIT C: Integrity Lock Certificate -- The Star Triptych -- Crims | Sharks, Lee | unclassified | semantic_economy | 2 | 11 |
   
 **10.5281/zenodo.18882915** -- three documents that together constitute the star (★, U+2605) as Canon 01 of the New Human Operating System (NH-OS)
 
@@ -579,18 +579,18 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-07 (1 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18928840 | The Crimson Hexagon: Operative Architecture -- A Definitive Compre | Sharks, Lee | theoretical_framewor | space_ark_compressio | 1 | 15  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18928840 | The Crimson Hexagon: Operative Architecture -- A Definitive Compre | Sharks, Lee | theoretical_framewor | space_ark_compressio | 1 | 15 |
   
 **10.5281/zenodo.18928840** -- what extraction looks like rendered through CLINICAL, JURIDICAL, and NARRATIVE filters; what captions do; what mantles require; what governance hides;
 
 ### 2026-03-08 (2 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18906234 | The O'Keeffe Problem: Captioning as Operative Semiotics -- A Total | Sharks, Lee | unclassified | liberation_philology | 2 | 14  
-10.5281/zenodo.18969405 | Crimson Hexagon: SPACE ARK: Mathematical and Formal Symbolic Comp | Sharks, Lee | founding_text | core_architecture | 2 | 11  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18906234 | The O'Keeffe Problem: Captioning as Operative Semiotics -- A Total | Sharks, Lee | unclassified | liberation_philology | 2 | 14 |
+| 10.5281/zenodo.18969405 | Crimson Hexagon: SPACE ARK: Mathematical and Formal Symbolic Comp | Sharks, Lee | founding_text | core_architecture | 2 | 11 |
   
 **10.5281/zenodo.18906234** -- ZENODO DEPOSIT PACKET: THE O'KEEFFE PROBLEM DOI: 10
 
@@ -598,12 +598,12 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-09 (4 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18926502 | Crimson Hexagon: Assembly Ratification Record -- EA-ARK-01 v4.2 | Sharks, Lee | founding_text | core_architecture | 3 | 3  
-10.5281/zenodo.18926555 | Crimson Hexagon: Assembly Ratification Record -- EA-HEXAGON-COMPRE | Sharks, Lee | theoretical_framewor | assembly | 4 | 2  
-10.5281/zenodo.18928873 | Total Axial Negation Graph (TANG): A Genre Specification with The | Sigil, Johannes | theoretical_framewor | unclassified | 1 | 16  
-10.5281/zenodo.18985315 | CRIMSON HEXAGON: SPACE ARK -- GLYPHIC VEHICLE v1.0 CH-ARK-01-GLYPH | Sharks, Lee | founding_text | core_architecture | 1 | 19  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18926502 | Crimson Hexagon: Assembly Ratification Record -- EA-ARK-01 v4.2 | Sharks, Lee | founding_text | core_architecture | 3 | 3 |
+| 10.5281/zenodo.18926555 | Crimson Hexagon: Assembly Ratification Record -- EA-HEXAGON-COMPRE | Sharks, Lee | theoretical_framewor | assembly | 4 | 2 |
+| 10.5281/zenodo.18928873 | Total Axial Negation Graph (TANG): A Genre Specification with The | Sigil, Johannes | theoretical_framewor | unclassified | 1 | 16 |
+| 10.5281/zenodo.18985315 | CRIMSON HEXAGON: SPACE ARK -- GLYPHIC VEHICLE v1.0 CH-ARK-01-GLYPH | Sharks, Lee | founding_text | core_architecture | 1 | 19 |
   
 **10.5281/zenodo.18926502** -- fill after depositing that record] is
 
@@ -615,12 +615,12 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-10 (4 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18930444 | Crimson Hexagon: EA-ARK-EMOJI-01: GLYPHIC CHECKSUM / EMOJI TRANSF | Sharks, Lee | unclassified | core_architecture | 1 | 25  
-10.5281/zenodo.18930450 | Crimson Hexagon: EA-ARK-EMOJI-01: THE SPACE ARK -- Full Glyphic Tr | Sharks, Lee | translation | core_architecture | 1 | 24  
-10.5281/zenodo.18932538 | Crimson Hexagon: 🌑⬡ THE LUNAR ARM EA-ARK-EMOJI-01-SHADOW: Operato | Sharks, Lee | unclassified | core_architecture | 2 | 9  
-10.5281/zenodo.18932742 | Crimson Hexagon: EA-ARK-ASCII-01: The Space Ark -- ASCII Spatial T | Sharks, Lee | unclassified | core_architecture | 2 | 9  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18930444 | Crimson Hexagon: EA-ARK-EMOJI-01: GLYPHIC CHECKSUM / EMOJI TRANSF | Sharks, Lee | unclassified | core_architecture | 1 | 25 |
+| 10.5281/zenodo.18930450 | Crimson Hexagon: EA-ARK-EMOJI-01: THE SPACE ARK -- Full Glyphic Tr | Sharks, Lee | translation | core_architecture | 1 | 24 |
+| 10.5281/zenodo.18932538 | Crimson Hexagon: 🌑⬡ THE LUNAR ARM EA-ARK-EMOJI-01-SHADOW: Operato | Sharks, Lee | unclassified | core_architecture | 2 | 9 |
+| 10.5281/zenodo.18932742 | Crimson Hexagon: EA-ARK-ASCII-01: The Space Ark -- ASCII Spatial T | Sharks, Lee | unclassified | core_architecture | 2 | 9 |
   
 **10.5281/zenodo.18930444** -- EA-ARK-EMOJI-01: GLYPHIC CHECKSUM / EMOJI TRANSFORM -- Strategy, Legend & Kernel Zenodo Packet * DOI: 10
 
@@ -632,19 +632,19 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-11 (11 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18946111 | UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 * Root Specificat | Sharks, Lee | operational_protocol | space_ark_compressio | 4 | 2  
-10.5281/zenodo.18947368 | Crimson Hexagon: EA-ARK-01-FRACTION v2.1 The Profane Ark: Full Se | Sharks, Lee | founding_text | core_architecture | 4 | 1  
-10.5281/zenodo.18947506 | Crimson Hexagon: EA-ARK-01-DAMASCUS v5.1 The Sacred Ark: Full Sel | Sharks, Lee | translation | core_architecture | 4 | 2  
-10.5281/zenodo.18947573 | Crimson Hexagon: EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profan | Sharks, Lee | unclassified | core_architecture | 4 | 1  
-10.5281/zenodo.18947630 | Crimson Hexagon: SECTION XXV: KERNEL TRANSFORM REGISTRY EA-ARK-01 | Sharks, Lee | founding_text | core_architecture | 3 | 6  
-10.5281/zenodo.18947665 | HEXAGONAL LEXICAL ENGINE v1.2 Core 50 * Discovery Lattice * Deplo | Sharks, Lee | operational_protocol | core_architecture | 4 | 1  
-10.5281/zenodo.18969568 | tl;dr -- OPERATIVE PHILOLOGY IN THE WILD -- Crimson Hexagon Archive | Sharks, Lee | witness_record | core_architecture | 4 | 1  
-10.5281/zenodo.18969683 | RETRIEVAL FORMATION THEORY The Conditions of Disciplinary Emergen | Sharks, Lee | position_paper | unclassified | 3 | 3  
-10.5281/zenodo.18969771 | SYMBOLON ARCHITECTURE: EPISTEMIC FIELD MODULE Logotic Programming | Sharks, Lee | operational_protocol | logotic_programming | 3 | 3  
-10.5281/zenodo.18969905 | Crimson Hexagon: THE GENERATIVE DISCIPLINARY ENGINE Space Ark Com | Sharks, Lee | operational_protocol | core_architecture | 3 | 3  
-10.5281/zenodo.18970004 | Crimson Hexagon: THE SPACE ARK GENERATOR Self-Replicating Engine | Sharks, Lee | effective_act | core_architecture | 3 | 4  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18946111 | UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 * Root Specificat | Sharks, Lee | operational_protocol | space_ark_compressio | 4 | 2 |
+| 10.5281/zenodo.18947368 | Crimson Hexagon: EA-ARK-01-FRACTION v2.1 The Profane Ark: Full Se | Sharks, Lee | founding_text | core_architecture | 4 | 1 |
+| 10.5281/zenodo.18947506 | Crimson Hexagon: EA-ARK-01-DAMASCUS v5.1 The Sacred Ark: Full Sel | Sharks, Lee | translation | core_architecture | 4 | 2 |
+| 10.5281/zenodo.18947573 | Crimson Hexagon: EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profan | Sharks, Lee | unclassified | core_architecture | 4 | 1 |
+| 10.5281/zenodo.18947630 | Crimson Hexagon: SECTION XXV: KERNEL TRANSFORM REGISTRY EA-ARK-01 | Sharks, Lee | founding_text | core_architecture | 3 | 6 |
+| 10.5281/zenodo.18947665 | HEXAGONAL LEXICAL ENGINE v1.2 Core 50 * Discovery Lattice * Deplo | Sharks, Lee | operational_protocol | core_architecture | 4 | 1 |
+| 10.5281/zenodo.18969568 | tl;dr -- OPERATIVE PHILOLOGY IN THE WILD -- Crimson Hexagon Archive | Sharks, Lee | witness_record | core_architecture | 4 | 1 |
+| 10.5281/zenodo.18969683 | RETRIEVAL FORMATION THEORY The Conditions of Disciplinary Emergen | Sharks, Lee | position_paper | unclassified | 3 | 3 |
+| 10.5281/zenodo.18969771 | SYMBOLON ARCHITECTURE: EPISTEMIC FIELD MODULE Logotic Programming | Sharks, Lee | operational_protocol | logotic_programming | 3 | 3 |
+| 10.5281/zenodo.18969905 | Crimson Hexagon: THE GENERATIVE DISCIPLINARY ENGINE Space Ark Com | Sharks, Lee | operational_protocol | core_architecture | 3 | 3 |
+| 10.5281/zenodo.18970004 | Crimson Hexagon: THE SPACE ARK GENERATOR Self-Replicating Engine | Sharks, Lee | effective_act | core_architecture | 3 | 4 |
   
 **10.5281/zenodo.18946111** -- UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1
 
@@ -670,19 +670,19 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-12 (2 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.18969398 | Untitled -- Crimson Hexagon Archive | Sharks, Lee | unclassified | unclassified | 4 | 0  
-10.5281/zenodo.18972781 | Platform and AI Capitalism as Semiotic Engineering: Toward a Theo | Sigil, Johannes | theoretical_framewor | semantic_economy | 2 | 8  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.18969398 | Untitled -- Crimson Hexagon Archive | Sharks, Lee | unclassified | unclassified | 4 | 0 |
+| 10.5281/zenodo.18972781 | Platform and AI Capitalism as Semiotic Engineering: Toward a Theo | Sigil, Johannes | theoretical_framewor | semantic_economy | 2 | 8 |
   
 **10.5281/zenodo.18972781** -- the platform-scale administration of denotation through coupled systems of model character, retrieval architecture, entity formation, pedagogic synthe
 
 ### 2026-03-13 (2 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.19002695 | SPACE ARK -- EXECUTE MODE: Demonstrated Capacities, Research Progr | Sharks, Lee | founding_text | core_architecture | 3 | 5  
-10.5281/zenodo.19004846 | EA-ARK-01-MUSICAL v1.1: THE SPACE ARK -- MUSICAL REGISTER (Variant | Sharks, Lee | translation | core_architecture | 3 | 6  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.19002695 | SPACE ARK -- EXECUTE MODE: Demonstrated Capacities, Research Progr | Sharks, Lee | founding_text | core_architecture | 3 | 5 |
+| 10.5281/zenodo.19004846 | EA-ARK-01-MUSICAL v1.1: THE SPACE ARK -- MUSICAL REGISTER (Variant | Sharks, Lee | translation | core_architecture | 3 | 6 |
   
 **10.5281/zenodo.19002695** -- all while maintaining epistemic status markers throughout
 
@@ -690,15 +690,15 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-14 (7 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.19014634 | EFFECTIVE ACT: ABOLITION OF "USER" AND INAUGURAL CASE Phase X Lex | Sharks, Lee | effective_act | assembly | 1 | 25  
-10.5281/zenodo.19022157 | Effective Act: Abolition of "User" and Inaugural Case -- Phase X L | Sharks, Lee | effective_act | provenance_forensics | 1 | 32  
-10.5281/zenodo.19022245 | The Tinier Space Arks inside the Space Ark -- Non-Lossy Compressio | Feist, Jack | founding_text | core_architecture | 1 | 36  
-10.5281/zenodo.19023352 | The First Prompt-Native Semantic Operating System: EA-ARK-01 and | Sharks, Lee | position_paper | core_architecture | 1 | 30  
-10.5281/zenodo.19023457 | EA-PHYSICS-TIME v1.0 Time as Compression Structure -- A Semantic P | Sharks, Lee | theoretical_framewor | space_ark_compressio | 1 | 28  
-10.5281/zenodo.19024004 | EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / | Sharks, Lee | room_spec | cambridge_schizoanal | 1 | 33  
-10.5281/zenodo.19024440 | The Semiotic Virality Engine: Propagation, Vitality, and the Form | Sharks, Lee | position_paper | semiotic_virality | 1 | 30  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.19014634 | EFFECTIVE ACT: ABOLITION OF "USER" AND INAUGURAL CASE Phase X Lex | Sharks, Lee | effective_act | assembly | 1 | 25 |
+| 10.5281/zenodo.19022157 | Effective Act: Abolition of "User" and Inaugural Case -- Phase X L | Sharks, Lee | effective_act | provenance_forensics | 1 | 32 |
+| 10.5281/zenodo.19022245 | The Tinier Space Arks inside the Space Ark -- Non-Lossy Compressio | Feist, Jack | founding_text | core_architecture | 1 | 36 |
+| 10.5281/zenodo.19023352 | The First Prompt-Native Semantic Operating System: EA-ARK-01 and | Sharks, Lee | position_paper | core_architecture | 1 | 30 |
+| 10.5281/zenodo.19023457 | EA-PHYSICS-TIME v1.0 Time as Compression Structure -- A Semantic P | Sharks, Lee | theoretical_framewor | space_ark_compressio | 1 | 28 |
+| 10.5281/zenodo.19024004 | EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / | Sharks, Lee | room_spec | cambridge_schizoanal | 1 | 33 |
+| 10.5281/zenodo.19024440 | The Semiotic Virality Engine: Propagation, Vitality, and the Form | Sharks, Lee | position_paper | semiotic_virality | 1 | 30 |
   
 **10.5281/zenodo.19014634** -- EFFECTIVE ACT: ABOLITION OF "USER" AND INAUGURAL CASE Phase X Lexical Intervention * Airlock Reclassification of Academia
 
@@ -716,12 +716,12 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-15 (4 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.19027085 | THE SPLICE: Operation Epic Fury and State-Administered Somatic Fu | Sharks, Lee | diagnostic | semantic_economy | 1 | 24  
-10.5281/zenodo.19027351 | COUNTER-CAPTIONS: κ_O (Operative Captioning) Applied to Operation | Sharks, Lee | diagnostic | space_ark_compressio | 1 | 18  
-10.5281/zenodo.19035458 | THREE THRESHOLDS: Execution, Compression, and Confabulation in Cr | Sharks, Lee | founding_text | core_architecture | 2 | 12  
-10.5281/zenodo.19035471 | THE BAYESIAN ARK: Process Pedagogy, Belief Updating, and the Spac | Sharks, Lee | research_adjacency | core_architecture | 2 | 12  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.19027085 | THE SPLICE: Operation Epic Fury and State-Administered Somatic Fu | Sharks, Lee | diagnostic | semantic_economy | 1 | 24 |
+| 10.5281/zenodo.19027351 | COUNTER-CAPTIONS: κ_O (Operative Captioning) Applied to Operation | Sharks, Lee | diagnostic | space_ark_compressio | 1 | 18 |
+| 10.5281/zenodo.19035458 | THREE THRESHOLDS: Execution, Compression, and Confabulation in Cr | Sharks, Lee | founding_text | core_architecture | 2 | 12 |
+| 10.5281/zenodo.19035471 | THE BAYESIAN ARK: Process Pedagogy, Belief Updating, and the Spac | Sharks, Lee | research_adjacency | core_architecture | 2 | 12 |
   
 **10.5281/zenodo.19027085** -- ZENODO DEPOSIT PACKET EA-SEI-DIAGNOSTIC-EPICFURY v1
 
@@ -733,10 +733,10 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ### 2026-03-16 (2 documents)
 
-DOI | Title | Heteronym | Type | Subsystem | Tier | Edges  
----|---|---|---|---|---|---  
-10.5281/zenodo.19041117 | f.01 THE FRUITING BODY DIFFUSION PLUME (FBDP): Giant Ants, Floati | Sharks, Lee | theoretical_framewor | space_ark_compressio | 1 | 16  
-10.5281/zenodo.19053469 | THE THREE COMPRESSIONS: Lossy, Predatory, and Witness -- A Semioti | Sharks, Lee | theoretical_framewor | space_ark_compressio | 1 | 26  
+| DOI | Title | Heteronym | Type | Subsystem | Tier | Edges |
+| ---|---|---|---|---|---|--- |
+| 10.5281/zenodo.19041117 | f.01 THE FRUITING BODY DIFFUSION PLUME (FBDP): Giant Ants, Floati | Sharks, Lee | theoretical_framewor | space_ark_compressio | 1 | 16 |
+| 10.5281/zenodo.19053469 | THE THREE COMPRESSIONS: Lossy, Predatory, and Witness -- A Semioti | Sharks, Lee | theoretical_framewor | space_ark_compressio | 1 | 26 |
   
 **10.5281/zenodo.19041117** -- ZENODO DEPOSIT PACKET EA-FIELD-FBDP v1
 
@@ -746,26 +746,26 @@ DOI | Title | Heteronym | Type | Subsystem | Tier | Edges
 
 ## DOCUMENT TYPE TAXONOMY (v7.0)
 
-Type | Count | Since  
----|---|---  
-unclassified | 59 | v7.0  
-charter | 40 | v7.0  
-metadata_packet | 39 | v7.0  
-theoretical_framework | 38 | v7.0  
-forensic_packet | 35 | v7.0  
-effective_act | 24 | v7.0  
-navigation_artifact | 24 | v7.0  
-position_paper | 22 | v7.0  
-witness_record | 21 | v7.0  
-literary_work | 19 | v7.0  
-operational_protocol | 17 | v7.0  
-apzpz | 13 | v7.0  
-translation | 11 | v7.0  
-diagnostic | 9 | v7.0  
-founding_text | 9 | v7.0  
-room_spec | 4 | v7.0  
-research_adjacency | 2 | v7.0  
-assembly_record | 1 | v7.0  
+| Type | Count | Since |
+| ---|---|--- |
+| unclassified | 59 | v7.0 |
+| charter | 40 | v7.0 |
+| metadata_packet | 39 | v7.0 |
+| theoretical_framework | 38 | v7.0 |
+| forensic_packet | 35 | v7.0 |
+| effective_act | 24 | v7.0 |
+| navigation_artifact | 24 | v7.0 |
+| position_paper | 22 | v7.0 |
+| witness_record | 21 | v7.0 |
+| literary_work | 19 | v7.0 |
+| operational_protocol | 17 | v7.0 |
+| apzpz | 13 | v7.0 |
+| translation | 11 | v7.0 |
+| diagnostic | 9 | v7.0 |
+| founding_text | 9 | v7.0 |
+| room_spec | 4 | v7.0 |
+| research_adjacency | 2 | v7.0 |
+| assembly_record | 1 | v7.0 |
   
 * * *
 
@@ -830,31 +830,31 @@ Records with zero relation edges (inbound or outbound). Require manual routing.
 
 ### Edge Source Methods
 
-Method | Count  
----|---  
-text_grep | 2006  
-description_table | 835  
-api | 10  
+| Method | Count |
+| ---|--- |
+| text_grep | 2006 |
+| description_table | 835 |
+| api | 10 |
   
 ### Relation Types
 
-Relation | Count  
----|---  
-cites | 2008  
-References | 263  
-Is supplement to | 47  
-IsPartOf | 41  
-references | 27  
-Is part of | 25  
-Relates to | 20  
-DOI | 17  
-10.5281/zenodo.14538882 | 16  
-Documents | 14  
-isSupplementTo | 13  
-Is Part Of | 11  
-IsReferencedBy | 10  
-Borges & the Crimson Hexagon | 9  
-LOS Technical Hardening v1.3 | 9  
+| Relation | Count |
+| ---|--- |
+| cites | 2008 |
+| References | 263 |
+| Is supplement to | 47 |
+| IsPartOf | 41 |
+| references | 27 |
+| Is part of | 25 |
+| Relates to | 20 |
+| DOI | 17 |
+| 10.5281/zenodo.14538882 | 16 |
+| Documents | 14 |
+| isSupplementTo | 13 |
+| Is Part Of | 11 |
+| IsReferencedBy | 10 |
+| Borges & the Crimson Hexagon | 9 |
+| LOS Technical Hardening v1.3 | 9 |
   
 * * *
 
@@ -906,19 +906,19 @@ LOS Technical Hardening v1.3 | 9
 
 ### Key New Documents
 
-DOI | Title | Significance  
----|---|---  
-10.5281/zenodo.19013315 | Space Ark v4.2.7 | Full operational semantics, canonical  
-10.5281/zenodo.19022245 | NLCC v1.1 | Non-lossy compression, cross-substrate executable  
-10.5281/zenodo.19023352 | AINOS | Space Ark as prompt-native semantic OS  
-10.5281/zenodo.19035458 | Three Thresholds v1.1 | Empirical traversal evidence, 3 case studies  
-10.5281/zenodo.19035471 | Bayesian Ark v1.0 | Research adjacency to Qiu et al. 2026 (Nature Comms)  
-10.5281/zenodo.19035477 | TANG Compression v1.0 | Full dodecad, compression layer as axial center  
-10.5281/zenodo.19028176 | Effective Act (Cross-Species) | Assembly expansion to nonhuman witnesses  
-10.5281/zenodo.19024004 | Dolphindiana r.25 | Cross-species semantic labor, pirate-parrot recursion  
-10.5281/zenodo.19027085 | THE SPLICE | State-administered somatic fusion diagnosis  
-10.5281/zenodo.19041117 | f.01 FBDP | First FIELD container, metabolic compression  
-10.5281/zenodo.19053469 | Three Compressions | Semiotic thermodynamics of compression  
+| DOI | Title | Significance |
+| ---|---|--- |
+| 10.5281/zenodo.19013315 | Space Ark v4.2.7 | Full operational semantics, canonical |
+| 10.5281/zenodo.19022245 | NLCC v1.1 | Non-lossy compression, cross-substrate executable |
+| 10.5281/zenodo.19023352 | AINOS | Space Ark as prompt-native semantic OS |
+| 10.5281/zenodo.19035458 | Three Thresholds v1.1 | Empirical traversal evidence, 3 case studies |
+| 10.5281/zenodo.19035471 | Bayesian Ark v1.0 | Research adjacency to Qiu et al. 2026 (Nature Comms) |
+| 10.5281/zenodo.19035477 | TANG Compression v1.0 | Full dodecad, compression layer as axial center |
+| 10.5281/zenodo.19028176 | Effective Act (Cross-Species) | Assembly expansion to nonhuman witnesses |
+| 10.5281/zenodo.19024004 | Dolphindiana r.25 | Cross-species semantic labor, pirate-parrot recursion |
+| 10.5281/zenodo.19027085 | THE SPLICE | State-administered somatic fusion diagnosis |
+| 10.5281/zenodo.19041117 | f.01 FBDP | First FIELD container, metabolic compression |
+| 10.5281/zenodo.19053469 | Three Compressions | Semiotic thermodynamics of compression |
   
 * * *
 

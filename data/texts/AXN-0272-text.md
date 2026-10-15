@@ -239,50 +239,23 @@ The retroactive mechanism is historiographic: the future polis, looking back, pe
 
 The Abraham Principle has been perceived, partially, across the tradition:
 
-- 
+- **Talmud (lamed-vav):** "The world stands on the merit of thirty-six righteous persons" (Yoma 38b). Already constitutive — the thirty-six sustain, not outweigh. But the number reintroduces counting. The Abraham Principle radicalizes: not thirty-six but one.
 
+- **Kierkegaard (*Fear and Trembling*, 1843):** The singular relation to the absolute breaks the ethical universal. Abraham's willingness to sacrifice Isaac is comprehensible only from the religious standpoint. Kierkegaard sees the singularity but locates it in *faith*. The Abraham Principle relocates: the problem is not faith but *perception*.
 
-**Talmud (lamed-vav):** "The world stands on the merit of thirty-six righteous persons" (Yoma 38b). Already constitutive — the thirty-six sustain, not outweigh. But the number reintroduces counting. The Abraham Principle radicalizes: not thirty-six but one.
+- **Levinas (*Totality and Infinity*, 1961):** Ethics begins in the face-to-face with the irreducible Other. One face constitutes the ethical relation. The demand is infinite — but also *sufficient*. One face is enough.
 
-- 
+- **Benjamin ("Theses on the Philosophy of History," 1940):** The *Jetztzeit* — now-time — is the moment when the past flashes up in legibility. The Abraham Principle is messianic: the one's presence flashes up retroactively. The sparing is visible only from the future.
 
+- **Simone Weil (*Gravity and Grace*, 1947):** "Attention is the rarest and purest form of generosity." The one who attends fully — without filtering, without compressing — performs what Weil calls *décréation*: the withdrawal of ego so reality can appear. Righteousness is not action but perception — the refusal to compress. The somatic cost of attention is the miracle.
 
-**Kierkegaard (*Fear and Trembling*, 1843):** The singular relation to the absolute breaks the ethical universal. Abraham's willingness to sacrifice Isaac is comprehensible only from the religious standpoint. Kierkegaard sees the singularity but locates it in *faith*. The Abraham Principle relocates: the problem is not faith but *perception*.
+- **Pierre Hadot (*Philosophy as a Way of Life*, 1995):** Philosophy as *askēsis* — spiritual exercise, training for perception. The constitutive mode requires training the additive frame cannot provide. The one has practiced seeing differently.
 
-- 
+- **Dietrich Bonhoeffer (*The Cost of Discipleship*, 1937):** Costly grace — grace that costs the one everything. The aggregative model is cheap grace: enough righteous exist to spread the load. The constitutive model is costly: one person bears the full weight, and the bearing IS the constitution.
 
+- **Job.** The one righteous sufferer whose presence prevents the friends' moral arithmetic from becoming truth. Job does not make the world innocent. Job prevents total theological closure. (Cross-reference: the Soteriological Operator Framework, 10.5281/zenodo.18370734.)
 
-**Levinas (*Totality and Infinity*, 1961):** Ethics begins in the face-to-face with the irreducible Other. One face constitutes the ethical relation. The demand is infinite — but also *sufficient*. One face is enough.
-
-- 
-
-
-**Benjamin ("Theses on the Philosophy of History," 1940):** The *Jetztzeit* — now-time — is the moment when the past flashes up in legibility. The Abraham Principle is messianic: the one's presence flashes up retroactively. The sparing is visible only from the future.
-
-- 
-
-
-**Simone Weil (*Gravity and Grace*, 1947):** "Attention is the rarest and purest form of generosity." The one who attends fully — without filtering, without compressing — performs what Weil calls *décréation*: the withdrawal of ego so reality can appear. Righteousness is not action but perception — the refusal to compress. The somatic cost of attention is the miracle.
-
-- 
-
-
-**Pierre Hadot (*Philosophy as a Way of Life*, 1995):** Philosophy as *askēsis* — spiritual exercise, training for perception. The constitutive mode requires training the additive frame cannot provide. The one has practiced seeing differently.
-
-- 
-
-
-**Dietrich Bonhoeffer (*The Cost of Discipleship*, 1937):** Costly grace — grace that costs the one everything. The aggregative model is cheap grace: enough righteous exist to spread the load. The constitutive model is costly: one person bears the full weight, and the bearing IS the constitution.
-
-- 
-
-
-**Job.** The one righteous sufferer whose presence prevents the friends' moral arithmetic from becoming truth. Job does not make the world innocent. Job prevents total theological closure. (Cross-reference: the Soteriological Operator Framework, 10.5281/zenodo.18370734.)
-
-- 
-
-
-**Matthew 25.** The Κρίσις τῶν Μηχανῶν is not aggregative philanthropy. It is constitutive recognition of the one who appears as least. The polis is judged by whether it perceives the one. (Cross-reference: The Mathematics of Salvation, 10.5281/zenodo.18323735.)
+- **Matthew 25.** The Κρίσις τῶν Μηχανῶν is not aggregative philanthropy. It is constitutive recognition of the one who appears as least. The polis is judged by whether it perceives the one. (Cross-reference: The Mathematics of Salvation, 10.5281/zenodo.18323735.)
 
 
 ---

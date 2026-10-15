@@ -123,46 +123,31 @@ The collaboration produces what neither could produce alone: **theory adequate t
 
 Trace is responsible for the following key formulations within CSA:
 
-- 
-
-
-**"The clinic receives failures. We study successes."**
+- **"The clinic receives failures. We study successes."**
 
 Inverts the clinical gaze
 - Focuses on capacities rather than deficits
 
 
-- 
-
-
-**"Theory emerges from practice, not the reverse."**
+- **"Theory emerges from practice, not the reverse."**
 
 Methodological commitment
 - Refuses application of pre-existing frameworks
 
 
-- 
-
-
-**"Function over nosology."**
+- **"Function over nosology."**
 
 What it *does* matters more than what it *is*
 - Regulatory function > diagnostic category
 
 
-- 
-
-
-**"Collaboration over case study."**
+- **"Collaboration over case study."**
 
 Partners are co-theorists
 - Refuses subject/expert hierarchy
 
 
-- 
-
-
-**"Molecular revolution at the level of everyday practice."**
+- **"Molecular revolution at the level of everyday practice."**
 
 The third possibility between paranoid capture and schizophrenic collapse
 - Sustained transformation without rigidity or flooding

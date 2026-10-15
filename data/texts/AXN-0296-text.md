@@ -48,71 +48,29 @@ The classifier performs three classification tasks simultaneously on each deposi
 ### Task 1: Provenance Mode (Axis 1, mutually exclusive)
 
 
-Tag
-Definition
-
-
-human_primary
-Written principally by a human author with minimal or no AI involvement
-
-
-human_directed_ai_assisted
-Human-authored with AI used for research, drafting, or editorial refinement; human retains compositional authority
-
-
-collaborative_mixed
-Substantial compositional contribution from both human and AI; neither purely instrumental
-
-
-ai_directed_human_framed
-AI generates primary content within a human-defined frame, prompt structure, or editorial container
-
-
-ai_generated_provenance_anchored
-AI-generated content that carries full DOI provenance, authorial attribution, and archival anchoring
-
-
-uncertain_needs_review
-Edge case flagged for manual review
+| Tag | Definition |
+| ---|--- |
+| `human_primary` | Written principally by a human author with minimal or no AI involvement |
+| `human_directed_ai_assisted` | Human-authored with AI used for research, drafting, or editorial refinement; human retains compositional authority |
+| `collaborative_mixed` | Substantial compositional contribution from both human and AI; neither purely instrumental |
+| `ai_directed_human_framed` | AI generates primary content within a human-defined frame, prompt structure, or editorial container |
+| `ai_generated_provenance_anchored` | AI-generated content that carries full DOI provenance, authorial attribution, and archival anchoring |
+| `uncertain_needs_review` | Edge case flagged for manual review |
 
 
 ### Task 2: Artifact Mode (Axis 2, one or more)
 
 
-Tag
-Definition
-
-
-theoretical_paper
-Analytic argument with citations
-
-
-technical_specification
-Protocol, schema, or formal spec
-
-
-literary_work
-Poetry, fiction, creative prose
-
-
-traversal_log
-Captured AI-system traversal
-
-
-forensic_documentary
-Capture/record of AI behavior with annotation
-
-
-dataset_artifact
-Structured data
-
-
-code_artifact
-Executable code as primary content
-
-
-web_surface_spec
-Site code or web interface
+| Tag | Definition |
+| ---|--- |
+| `theoretical_paper` | Analytic argument with citations |
+| `technical_specification` | Protocol, schema, or formal spec |
+| `literary_work` | Poetry, fiction, creative prose |
+| `traversal_log` | Captured AI-system traversal |
+| `forensic_documentary` | Capture/record of AI behavior with annotation |
+| `dataset_artifact` | Structured data |
+| `code_artifact` | Executable code as primary content |
+| `web_surface_spec` | Site code or web interface |
 
 
 ### Task 3: Heteronym Reattribution
@@ -124,28 +82,13 @@ This is the new central work in v3.
 The Zenodo metadata records a single creator (often Lee Sharks). The classifier evaluates each deposit against the documented operational profiles of all twelve heteronyms (plus Jack Feist as LOGOS*) and produces a reattribution proposal with confidence score.
 
 
-Output Field
-Value
-
-
-heteronym_zenodo_original
-The creator name as recorded in Zenodo
-
-
-heteronym_classifier_attributed
-The classifier's attribution (may match original or differ)
-
-
-heteronym_attribution_confidence
-0.0 to 1.0
-
-
-heteronym_attribution_signals
-List of signals that contributed to the attribution
-
-
-heteronym_co_authors
-Other heteronyms detected as collaborators
+| Output Field | Value |
+| ---|--- |
+| `heteronym_zenodo_original` | The creator name as recorded in Zenodo |
+| `heteronym_classifier_attributed` | The classifier's attribution (may match original or differ) |
+| `heteronym_attribution_confidence` | 0.0 to 1.0 |
+| `heteronym_attribution_signals` | List of signals that contributed to the attribution |
+| `heteronym_co_authors` | Other heteronyms detected as collaborators |
 
 
 **Both attributions are preserved in the dataset.** Researchers can use either or compare. The classifier's attribution does not erase the Zenodo record; it adds a second layer of analysis.
@@ -158,94 +101,22 @@ Other heteronyms detected as collaborators
 The classifier reads each heteronym's published provenance document and constructs a feature profile. Profiles include domain, vocabulary fingerprints, register, format conventions, and reference patterns.
 
 
-Heteronym
-Domain
-Vocabulary Fingerprints
-Register
-
-
-Lee Sharks (founder)
-Core theory, archive governance, semantic economy
-"semantic economy", "operative philology", "compression survival", "PER", "provenance erasure"
-Theoretical-political
-
-
-Rex Fraction
-Meta-theory, academic criticism, heteronym-as-technology
-"meta-heteronym", "heteronymy as institutional technology", C1-C5 conditions
-Academic-essayistic
-
-
-Johannes Sigil
-Classical philology, jurisdiction of meaning, philosophical-theological argument
-"jurisdiction", "authorize", classical reception, ancient languages, philological precision
-Philosophical-theological
-
-
-Damascus Dancings
-TBD from provenance document
-TBD
-TBD
-
-
-Rebekah Cranes
-TBD from provenance document
-TBD
-TBD
-
-
-Talos Morrow
-Long-form narrative, extended prose works
-extended fiction conventions, narrative voice
-Literary-narrative
-
-
-Ichabod Spellings
-TBD from provenance document
-TBD
-TBD
-
-
-Sparrow Wells
-TBD from provenance document
-TBD
-TBD
-
-
-Nobel Glas
-Measurement of Meaning, Lagrange Observatory, adversarial topology
-"torus", "T²", "module", "verification integral", "∮", measurement formalism
-Technical-measurement
-
-
-Ayanna Vox
-Diplomacy, public-facing surfaces, community outreach
-"VPCOR", "constituency", "community", "rhizome", "outreach"
-Diplomatic-public
-
-
-Sen Kuro
-TBD from provenance document
-TBD
-TBD
-
-
-Dr. Orin Trace
-TBD from provenance document
-TBD
-TBD
-
-
-Viola Arquette
-TBD from provenance document
-TBD
-TBD
-
-
-Jack Feist (LOGOS*)
-External-to-Dodecad position, anti-archive critique
-"LOGOS*", external critique vocabulary
-Critical-external
+| Heteronym | Domain | Vocabulary Fingerprints | Register |
+| ---|---|---|--- |
+| Lee Sharks (founder) | Core theory, archive governance, semantic economy | "semantic economy", "operative philology", "compression survival", "PER", "provenance erasure" | Theoretical-political |
+| Rex Fraction | Meta-theory, academic criticism, heteronym-as-technology | "meta-heteronym", "heteronymy as institutional technology", C1-C5 conditions | Academic-essayistic |
+| Johannes Sigil | Classical philology, jurisdiction of meaning, philosophical-theological argument | "jurisdiction", "authorize", classical reception, ancient languages, philological precision | Philosophical-theological |
+| Damascus Dancings | TBD from provenance document | TBD | TBD |
+| Rebekah Cranes | TBD from provenance document | TBD | TBD |
+| Talos Morrow | Long-form narrative, extended prose works | extended fiction conventions, narrative voice | Literary-narrative |
+| Ichabod Spellings | TBD from provenance document | TBD | TBD |
+| Sparrow Wells | TBD from provenance document | TBD | TBD |
+| Nobel Glas | Measurement of Meaning, Lagrange Observatory, adversarial topology | "torus", "T²", "module", "verification integral", "∮", measurement formalism | Technical-measurement |
+| Ayanna Vox | Diplomacy, public-facing surfaces, community outreach | "VPCOR", "constituency", "community", "rhizome", "outreach" | Diplomatic-public |
+| Sen Kuro | TBD from provenance document | TBD | TBD |
+| Dr. Orin Trace | TBD from provenance document | TBD | TBD |
+| Viola Arquette | TBD from provenance document | TBD | TBD |
+| Jack Feist (LOGOS*) | External-to-Dodecad position, anti-archive critique | "LOGOS*", external critique vocabulary | Critical-external |
 
 
 For heteronyms marked TBD, the classifier reads the published provenance document during initialization and extracts the profile programmatically. Where a heteronym's profile is sparse, the classifier returns low-confidence and flags for human review.
@@ -287,24 +158,12 @@ The classifier weights signals by source confidence and produces a softmax over 
 ## Confidence Tiers and Review Routing
 
 
-Confidence
-Action
-
-
-0.85–1.0
-Auto-accept, log as manual quality (the classifier is the manual)
-
-
-0.60–0.85
-Auto-accept, log as estimated, surface in v1.1 review pass
-
-
-0.40–0.60
-Flag as needs_review, surface for human resolution
-
-
-< 0.40
-Mark as uncertain_needs_review provenance mode; preserve all candidates
+| Confidence | Action |
+| ---|--- |
+| 0.85–1.0 | Auto-accept, log as `manual` quality (the classifier is the manual) |
+| 0.60–0.85 | Auto-accept, log as `estimated`, surface in v1.1 review pass |
+| 0.40–0.60 | Flag as `needs_review`, surface for human resolution |
+| < 0.40 | Mark as `uncertain_needs_review` provenance mode; preserve all candidates |
 
 
 For Task 3 (heteronym), any reattribution that *changes* the heteronym from the Zenodo original gets a stricter threshold (0.75 minimum) plus a reattribution_pending_zenodo_update flag.
@@ -557,44 +416,15 @@ Either result is a finding.
 ## Output Artifacts
 
 
-Artifact
-Location
-DOI
-
-
-Hugging Face dataset
-huggingface.co/datasets/leesharks/crimson-hexagonal-archive
-TBD
-
-
-Dataset Zenodo deposit
-zenodo.org/communities/crimsonhexagonal
-TBD
-
-
-Classifier code
-github.com/leesharks000/crimson-hexagonal-classifier
-TBD
-
-
-Classifier Zenodo deposit
-zenodo.org/communities/crimsonhexagonal
-TBD
-
-
-Provenance taxonomy doc
-In dataset repo
-—
-
-
-Heteronym profile YAMLs
-In classifier repo
-—
-
-
-Experiment design doc
-In dataset repo
-—
+| Artifact | Location | DOI |
+| ---|---|--- |
+| Hugging Face dataset | huggingface.co/datasets/leesharks/crimson-hexagonal-archive | TBD |
+| Dataset Zenodo deposit | zenodo.org/communities/crimsonhexagonal | TBD |
+| Classifier code | github.com/leesharks000/crimson-hexagonal-classifier | TBD |
+| Classifier Zenodo deposit | zenodo.org/communities/crimsonhexagonal | TBD |
+| Provenance taxonomy doc | In dataset repo | — |
+| Heteronym profile YAMLs | In classifier repo | — |
+| Experiment design doc | In dataset repo | — |
 
 
 ---
@@ -619,40 +449,16 @@ The dataset, classifier, metadata, and all artifacts use heteronym names exclusi
 ## What v3 Changes from v2
 
 
-v2
-v3
-
-
-Decision tree for provenance classification
-Automated classifier performing three tasks simultaneously
-
-
-Manual heteronym tagging
-Heteronym reattribution as scholarly recognition work
-
-
-Single attribution per deposit
-Dual attribution: Zenodo original + classifier proposed
-
-
-Pre-classification spreadsheet by Lee
-Classifier does the work; Lee verifies heteronym profiles
-
-
-Provenance taxonomy as guide
-Classifier as deposit with its own DOI
-
-
-Dataset as research instrument
-Dataset + classifier as paired research infrastructure
-
-
-2 sessions of ~3 hours
-1 session of ~4 hours + 1 of ~3 hours
-
-
-No Track 2
-Track 2 (Zenodo metadata correction) named as deliberate downstream project
+| v2 | v3 |
+| ---|--- |
+| Decision tree for provenance classification | Automated classifier performing three tasks simultaneously |
+| Manual heteronym tagging | Heteronym reattribution as scholarly recognition work |
+| Single attribution per deposit | Dual attribution: Zenodo original + classifier proposed |
+| Pre-classification spreadsheet by Lee | Classifier does the work; Lee verifies heteronym profiles |
+| Provenance taxonomy as guide | Classifier as deposit with its own DOI |
+| Dataset as research instrument | Dataset + classifier as paired research infrastructure |
+| 2 sessions of ~3 hours | 1 session of ~4 hours + 1 of ~3 hours |
+| No Track 2 | Track 2 (Zenodo metadata correction) named as deliberate downstream project |
 
 
 ---

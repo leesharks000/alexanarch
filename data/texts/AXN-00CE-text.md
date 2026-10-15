@@ -619,34 +619,22 @@ The content of the claimed sight varies. The structure is invariant:
 
 To detect βλέπω-claim foreclosure in a system:
 
-- 
-
-
-**Does the system allow its self-concept to be challenged?**
+- **Does the system allow its self-concept to be challenged?**
 
 If challenge is immediately reclassified as aggression → κ_β elevated
 
 
-- 
-
-
-**Does it treat challenging testimony as aggression?**
+- **Does it treat challenging testimony as aggression?**
 
 If diagnosis is reframed as "trying to teach us" → ω_ε = 1
 
 
-- 
-
-
-**Does it expel the testifier rather than engage the testimony?**
+- **Does it expel the testifier rather than engage the testimony?**
 
 If speaker is delegitimized, not testimony refuted → entry mechanism active
 
 
-- 
-
-
-**Does it maintain "We see" while rejecting evidence of blindness?**
+- **Does it maintain "We see" while rejecting evidence of blindness?**
 
 If identity-property is non-negotiable → π-state trajectory begun
 

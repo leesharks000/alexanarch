@@ -299,33 +299,21 @@ R = Semantic replenishment (value returned to producers)
 
 **Method:**
 
-- 
-
-
-Define terms recursively:
+- Define terms recursively:
 
 "Semantic Liquidation is the necessary condition for Semantic Rent"
 - "Semantic Rent cannot exist without prior Liquidation"
 
 
-- 
+- Submit framework to summarization system
 
-
-Submit framework to summarization system
-
-- 
-
-
-Check logical coherence:
+- Check logical coherence:
 
 Can system explain "Semantic Rent" without "Semantic Liquidation"?
 - Does omission create contradiction?
 
 
-- 
-
-
-Score:
+- Score:
 
 
 IKT = 1 if omission causes incoherence (knot holds)

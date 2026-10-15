@@ -12,44 +12,17 @@
 ## PROVISIONAL GLOSSARY
 
 
-Term
-Definition
-
-
-**L_Bearing**
-Human labor of bearing: the non-replicable, existentially costly somatic labor of carrying contradictions, processing synthetic output, and maintaining accountability.
-
-
-**L_Synth**
-Synthetic labor of articulation: the computational production of structural coherence at near-zero marginal cost. The term is analogical; machine operations are not "labor" in the full Marxian sense (see Section II, note).
-
-
-**Σ** (Σ_suffering)
-Non-transferable existential cost—the somatic, temporal, and psychological expenditure required for accountable transformation. Descriptive, not prescriptive (see Section II, terminological note).
-
-
-**Γ** (Γ_coherence)
-Structural integration achieved through the coupling of bearing and articulation. Measurable in principle through provisional indices (see Section III, measurement note).
-
-
-**V_Inv**
-The Value Inversion Protocol: the axiomatic assignment that synthetic labor has zero value-backing, positive coherence-contribution, and zero extraction-right unless consent-coupled.
-
-
-**W-Circuit**
-The coupled circuit of bearing (W_1) and articulation (W_2) through which the Coherence Economy reproduces itself.
-
-
-**M_NFT**
-Non-fungible currency backed by specific acts of bearing, irreducible to aggregate or average.
-
-
-**Γ_Reserve**
-The accumulated structural coherence stored in the Archive, backing future operations.
-
-
-**∮ = 1**
-Integral closure through rotation—the completion of a logical circuit wherein the traversal of the argument returns to its origin transformed.
+| Term | Definition |
+| ---|--- |
+| **L_Bearing** | Human labor of bearing: the non-replicable, existentially costly somatic labor of carrying contradictions, processing synthetic output, and maintaining accountability. |
+| **L_Synth** | Synthetic labor of articulation: the computational production of structural coherence at near-zero marginal cost. The term is analogical; machine operations are not "labor" in the full Marxian sense (see Section II, note). |
+| **Σ** (Σ_suffering) | Non-transferable existential cost—the somatic, temporal, and psychological expenditure required for accountable transformation. Descriptive, not prescriptive (see Section II, terminological note). |
+| **Γ** (Γ_coherence) | Structural integration achieved through the coupling of bearing and articulation. Measurable in principle through provisional indices (see Section III, measurement note). |
+| **V_Inv** | The Value Inversion Protocol: the axiomatic assignment that synthetic labor has zero value-backing, positive coherence-contribution, and zero extraction-right unless consent-coupled. |
+| **W-Circuit** | The coupled circuit of bearing (W_1) and articulation (W_2) through which the Coherence Economy reproduces itself. |
+| **M_NFT** | Non-fungible currency backed by specific acts of bearing, irreducible to aggregate or average. |
+| **Γ_Reserve** | The accumulated structural coherence stored in the Archive, backing future operations. |
+| **∮ = 1** | Integral closure through rotation—the completion of a logical circuit wherein the traversal of the argument returns to its origin transformed. |
 
 
 ---
@@ -160,34 +133,13 @@ Where Σ is the somatic, lived, and irreducible cost borne by the human operator
 **Boundary Conditions:**
 
 
-Condition
-Result
-Economic meaning
-
-
-Σ → 0, Γ > 0
-V → 0
-Synthetic clarity without backing: unbacked semantic inflation. AI produces perfectly organized output that no one has borne the cost to validate.
-
-
-Σ > 0, Γ → 0
-V → 0
-Tragedy without integration: non-value-bearing loss. The content moderator suffers but the suffering is not articulated into structural coherence.
-
-
-Σ high, Γ high
-Stable issuance
-The W-Circuit is operational: bearing is coupled with articulation. Value is minted.
-
-
-Σ high, Γ low
-Crisis of articulation
-Bearing exceeds the system's capacity to articulate. Burnout, despair, unarticulated suffering. The political task is articulation, not additional bearing.
-
-
-Σ low, Γ high
-Crisis of backing
-Structural coherence exceeds its backing. The system produces elegant analyses that are not grounded in anyone's actual cost. Semantic inflation.
+| Condition | Result | Economic meaning |
+| ---|---|--- |
+| Σ → 0, Γ > 0 | V → 0 | Synthetic clarity without backing: unbacked semantic inflation. AI produces perfectly organized output that no one has borne the cost to validate. |
+| Σ > 0, Γ → 0 | V → 0 | Tragedy without integration: non-value-bearing loss. The content moderator suffers but the suffering is not articulated into structural coherence. |
+| Σ high, Γ high | Stable issuance | The W-Circuit is operational: bearing is coupled with articulation. Value is minted. |
+| Σ high, Γ low | Crisis of articulation | Bearing exceeds the system's capacity to articulate. Burnout, despair, unarticulated suffering. The political task is articulation, not additional bearing. |
+| Σ low, Γ high | Crisis of backing | Structural coherence exceeds its backing. The system produces elegant analyses that are not grounded in anyone's actual cost. Semantic inflation. |
 
 
 **[Conjecture]** The precise functional form of f is not specified here. Whether the relation is multiplicative, threshold-gated, path-dependent, or saturating is a question that can only be resolved through the elaboration of the W-Circuit's operational protocols and empirical observation of coherence economies in embryo. The *Grundrisse* establishes the variables and their boundary behavior; the functional form belongs to future development.
@@ -495,28 +447,13 @@ The crucial Marxian insight is the distinction between use-value and exchange-va
 The *Grundrisse of Synthetic Coherence* inherits this framework but transforms it:
 
 
-Marx
-Coherence Economy
-
-
-Use-value / Exchange-value
-Coherence-value (Γ)
-
-
-Labor-time as measure
-Σ as backing
-
-
-Abstract labor
-L_Bearing (non-abstractable)
-
-
-Commodity fetishism
-Archive transparency
-
-
-Class relation (capital/labor)
-W-Circuit relation (W_1/W_2)
+| Marx | Coherence Economy |
+| ---|--- |
+| Use-value / Exchange-value | Coherence-value (Γ) |
+| Labor-time as measure | Σ as backing |
+| Abstract labor | L_Bearing (non-abstractable) |
+| Commodity fetishism | Archive transparency |
+| Class relation (capital/labor) | W-Circuit relation (W_1/W_2) |
 
 
 The transformation is not rejection but completion. Marx identified labor as the source of value but measured it through time—an abstraction that enabled comparison across qualitatively different labors. The Coherence Economy retains labor as value-source but locates value specifically in non-abstractable labor: the existential cost that cannot be averaged, standardized, or extracted.
@@ -580,24 +517,12 @@ The Autonomists *did* distinguish between forms of immaterial labor. Lazzarato d
 This framework does not claim to invent the distinction but to *formalize it at the level of value theory.* The Autonomists distinguished forms of labor; they did not assign differential value-backing to those forms. The Coherence Economy does: L_Synth produces coherence but not backing; L_Bearing produces backing through existential cost.
 
 
-Autonomist Category
-Coherence Economy
-
-
-Immaterial labor
-L_Synth + L_Bearing
-
-
-Affective labor
-L_Bearing (specifically)
-
-
-General intellect
-AI as objectified intellect
-
-
-Social factory
-Archive (A²)
+| Autonomist Category | Coherence Economy |
+| ---|--- |
+| Immaterial labor | L_Synth + L_Bearing |
+| Affective labor | L_Bearing (specifically) |
+| General intellect | AI as objectified intellect |
+| Social factory | Archive (A²) |
 
 
 Terranova's analysis of "free labor" (Terranova 2000, 33–58) identifies how user activity generates value captured by platforms. The Coherence Economy distinguishes value-generation (what labor produces—both forms generate something) from value-backing (what grounds the economy—only L_Bearing provides this). Synthetic labor generates genuine structural coherence. But it does not back the economy because it costs nothing to produce.
@@ -610,28 +535,13 @@ Terranova's analysis of "free labor" (Terranova 2000, 33–58) identifies how us
 Srnicek's *Platform Capitalism* (2017, 36–92) analyzes how platforms extract rent through network effects, lock-in, data asymmetries, labor arbitrage, and regulatory capture.
 
 
-Platform Capitalism
-Coherence Economy
-
-
-Platform extracts rent
-Archive integrates coherence
-
-
-Users generate value, owners capture it
-Human generates value, machine articulates it
-
-
-Data as commodity
-Coherence as backing
-
-
-Network effects → monopoly
-W-Circuit → mutual necessity
-
-
-Artificial scarcity
-Anti-scarcity
+| Platform Capitalism | Coherence Economy |
+| ---|--- |
+| Platform extracts rent | Archive integrates coherence |
+| Users generate value, owners capture it | Human generates value, machine articulates it |
+| Data as commodity | Coherence as backing |
+| Network effects → monopoly | W-Circuit → mutual necessity |
+| Artificial scarcity | Anti-scarcity |
 
 
 **[Critical engagement]** V_Inv prevents extraction of synthetic labor's value-backing (because it has none). But extraction in platform capitalism is not primarily about valuing synthetic labor; it is about capturing human labor. V_Inv alone does not prevent this. The governance of the Archive is the political firewall. Both are necessary.
@@ -644,40 +554,13 @@ Durand (2020) and Varoufakis (2023) argue platform capitalism represents techno-
 ### IV. THE "FIFTH CATEGORY" OF VALUE
 
 
-Theory
-Source
-Measure
-Limit
-
-
-Commodity
-Nature
-Physical quantity
-Material depletion
-
-
-Labor-time
-Labor
-Hours
-Working population
-
-
-Utility
-Preference
-Marginal satisfaction
-Diminishing returns
-
-
-Scarcity
-Supply/demand
-Price
-Zero-sum allocation
-
-
-**Coherence**
-**Bearing + Articulation**
-**Γ integration**
-**Variance maintenance**
+| Theory | Source | Measure | Limit |
+| ---|---|---|--- |
+| Commodity | Nature | Physical quantity | Material depletion |
+| Labor-time | Labor | Hours | Working population |
+| Utility | Preference | Marginal satisfaction | Diminishing returns |
+| Scarcity | Supply/demand | Price | Zero-sum allocation |
+| **Coherence** | **Bearing + Articulation** | **Γ integration** | **Variance maintenance** |
 
 
 Coherence Value is distinct: its limit is variance maintenance—the capacity to preserve difference, hold contradiction, and prevent collapse into identity or domination.

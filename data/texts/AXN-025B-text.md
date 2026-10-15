@@ -364,70 +364,31 @@ Clown-consent is a non-overridable parameter. If a participant or institution de
 
 ### CLAIMS
 
-- 
+- A cloud-based marketplace platform for connecting institutional clients with certified focus clown troops, comprising: a client interface, a clown registry, a focus stress engine, a deployment logistics module, and a soteriological protocol.
 
+- The platform of claim 1, wherein focus clown troops are selected based on a Performance Fragility Index calculated from institutional seriousness, silence dependency, stakes intensity, credential density, laminated badge count, and the degree to which participants say "we take this very seriously."
 
-A cloud-based marketplace platform for connecting institutional clients with certified focus clown troops, comprising: a client interface, a clown registry, a focus stress engine, a deployment logistics module, and a soteriological protocol.
+- The platform of claim 1, comprising an Enhanced Squirt Flower (ESF) capable of delivering a calibrated, pH-neutral water volume of 0.5–30 mL within 15 cm of a subject's face, with olfactory misdirection, temperature modulation, and a dry-squirt fail-safe mode.
 
-- 
+- The platform of claim 1, comprising a Pie-Plate Attention Resonance (PPAR) methodology producing a 3-second acoustic cascade at 85 dB, decaying to 55 dB, harmonically dissonant to ambient entrainment frequency.
 
+- The platform of claim 1, comprising a Red Nose Biometric with embedded photoplethysmograph monitoring heart rate variability, transmitting real-time arousal status to the clown's attunement display without recording or storing subject data.
 
-The platform of claim 1, wherein focus clown troops are selected based on a Performance Fragility Index calculated from institutional seriousness, silence dependency, stakes intensity, credential density, laminated badge count, and the degree to which participants say "we take this very seriously."
+- The platform of claim 1, wherein the initial deployment event comprises a Clown Car Protocol in which a vehicle of implausible smallness discharges a number of clowns exceeding the vehicle's plausible capacity, said discharge constituting a visual theorem of latent absurdity.
 
-- 
+- The platform of claim 1, further comprising a cremasteric clown module: a certified clown stationed outside the performance venue, visible but inactive, whose passive presence shifts baseline stress metrics without active interruption.
 
+- The platform of claim 1, further comprising an acousmatic clown protocol: clowns whose presence is made known through sound alone — distant honks, muffled laughter, the creak of a clown-car door — deployed when systemic attentional dissociation is detected.
 
-The platform of claim 1, comprising an Enhanced Squirt Flower (ESF) capable of delivering a calibrated, pH-neutral water volume of 0.5–30 mL within 15 cm of a subject's face, with olfactory misdirection, temperature modulation, and a dry-squirt fail-safe mode.
+- The platform of claim 1, wherein the soteriological protocol comprises a six-step sequence (Recognition, Disruption, Absurdity, Eustress, Return, Blessing), wherein the Blessing step is constitutive and non-optional, and a clown who omits the Blessing is reclassified as a prankster and decertified.
 
-- 
+- A method for diagnosing Institutional Hyperfocus Syndrome comprising: deploying at least one focus clown bearing an ESF; engaging a subject exhibiting hyperfocus symptoms; delivering a calibrated somatic disruption; monitoring subject arousal via the Red Nose Biometric; and filing an Attentional Absence Report if the subject fails to respond somatically to two consecutive squirts.
 
+- A focus technology wherein distraction is not minimized but ritualized, personified, scheduled, and clown-mediated, such that attention becomes resilient through comic ordeal rather than fragile through environmental control.
 
-The platform of claim 1, comprising a Pie-Plate Attention Resonance (PPAR) methodology producing a 3-second acoustic cascade at 85 dB, decaying to 55 dB, harmonically dissonant to ambient entrainment frequency.
+- A self-propagating institutional corrective comprising a compressed institutional substrate (the test, the boardroom, the tribunal) and an embedded sacred clown kernel, wherein the kernel survives the institutional compression and regenerates the human subject from within the product of the institution's own destruction of the subject.
 
-- 
-
-
-The platform of claim 1, comprising a Red Nose Biometric with embedded photoplethysmograph monitoring heart rate variability, transmitting real-time arousal status to the clown's attunement display without recording or storing subject data.
-
-- 
-
-
-The platform of claim 1, wherein the initial deployment event comprises a Clown Car Protocol in which a vehicle of implausible smallness discharges a number of clowns exceeding the vehicle's plausible capacity, said discharge constituting a visual theorem of latent absurdity.
-
-- 
-
-
-The platform of claim 1, further comprising a cremasteric clown module: a certified clown stationed outside the performance venue, visible but inactive, whose passive presence shifts baseline stress metrics without active interruption.
-
-- 
-
-
-The platform of claim 1, further comprising an acousmatic clown protocol: clowns whose presence is made known through sound alone — distant honks, muffled laughter, the creak of a clown-car door — deployed when systemic attentional dissociation is detected.
-
-- 
-
-
-The platform of claim 1, wherein the soteriological protocol comprises a six-step sequence (Recognition, Disruption, Absurdity, Eustress, Return, Blessing), wherein the Blessing step is constitutive and non-optional, and a clown who omits the Blessing is reclassified as a prankster and decertified.
-
-- 
-
-
-A method for diagnosing Institutional Hyperfocus Syndrome comprising: deploying at least one focus clown bearing an ESF; engaging a subject exhibiting hyperfocus symptoms; delivering a calibrated somatic disruption; monitoring subject arousal via the Red Nose Biometric; and filing an Attentional Absence Report if the subject fails to respond somatically to two consecutive squirts.
-
-- 
-
-
-A focus technology wherein distraction is not minimized but ritualized, personified, scheduled, and clown-mediated, such that attention becomes resilient through comic ordeal rather than fragile through environmental control.
-
-- 
-
-
-A self-propagating institutional corrective comprising a compressed institutional substrate (the test, the boardroom, the tribunal) and an embedded sacred clown kernel, wherein the kernel survives the institutional compression and regenerates the human subject from within the product of the institution's own destruction of the subject.
-
-- 
-
-
-The corrective of claim 12, wherein the clown car is the compression artifact, the clowns are the decompressed signal, the squirt flower is the baptism, the bicycle horn is the call to worship, the pie plate is the breaking of bread, the blessing gesture is the resurrection, and the participant who returns to question 47 is the one who has been saved.
+- The corrective of claim 12, wherein the clown car is the compression artifact, the clowns are the decompressed signal, the squirt flower is the baptism, the bicycle horn is the call to worship, the pie plate is the breaking of bread, the blessing gesture is the resurrection, and the participant who returns to question 47 is the one who has been saved.
 
 
 ---

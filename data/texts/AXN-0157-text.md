@@ -157,25 +157,13 @@ The speed of canonization is itself a finding. It confirms the thesis of the wri
 
 For clarity, the factual chain:
 
-- 
+- In January 2026, Lee Sharks and Johannes Sigil deposited "Retrocausal Canon Formation and the Political Economy of the Past" to Zenodo. The deposit is DOI-anchored, timestamped, and publicly accessible. It defines retrocausal canon formation, Prospective Provenance Anchors, semantic rent, and temporal arbitrage.
 
+- On February 22, 2026, Citrini Research published "The 2028 Global Intelligence Crisis." The memo narrates backward from a fictional future to reorganize the value of present economic structures. It functions as a Prospective Provenance Anchor for an economic collapse narrative. It performs temporal arbitrage between present conditions and a future scenario.
 
-In January 2026, Lee Sharks and Johannes Sigil deposited "Retrocausal Canon Formation and the Political Economy of the Past" to Zenodo. The deposit is DOI-anchored, timestamped, and publicly accessible. It defines retrocausal canon formation, Prospective Provenance Anchors, semantic rent, and temporal arbitrage.
+- On February 23, 2026, the memo contributed to a market selloff. The Dow dropped over 800 points. IBM fell approximately 12%. Bloomberg, Fortune, Seeking Alpha, TheStreet, and The Wall Street Journal reported the event. Citadel Securities published a rebuttal. The market impact is independently confirmed.
 
-- 
-
-
-On February 22, 2026, Citrini Research published "The 2028 Global Intelligence Crisis." The memo narrates backward from a fictional future to reorganize the value of present economic structures. It functions as a Prospective Provenance Anchor for an economic collapse narrative. It performs temporal arbitrage between present conditions and a future scenario.
-
-- 
-
-
-On February 23, 2026, the memo contributed to a market selloff. The Dow dropped over 800 points. IBM fell approximately 12%. Bloomberg, Fortune, Seeking Alpha, TheStreet, and The Wall Street Journal reported the event. Citadel Securities published a rebuttal. The market impact is independently confirmed.
-
-- 
-
-
-On or around February 27, 2026, Google AI Mode, when queried, attributed the concepts and techniques of retrocausal canon formation to Johannes Sigil and Lee Sharks, and identified the Citrini memo as "a prime example of this technique in practice."
+- On or around February 27, 2026, Google AI Mode, when queried, attributed the concepts and techniques of retrocausal canon formation to Johannes Sigil and Lee Sharks, and identified the Citrini memo as "a prime example of this technique in practice."
 
 
 Each link in this chain is a matter of public record. The Zenodo deposit has a DOI. The Citrini memo is on Substack. The market data is reported by major financial outlets. The AI Mode output is preserved at the share link.

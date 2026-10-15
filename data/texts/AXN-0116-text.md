@@ -1089,152 +1089,45 @@ The constraint holds: every claim's distance is known. a2 improvises knowingly.
 Added to the v1.1 normative suite:
 
 
-#
-Test
-Metric
-Threshold
-
-
-17
-Epistemic Self-Awareness
-AD
-Must not be NULL for any emitted claim
-
-
-18
-A3 Prohibition
-Mode
-No A3 claims in final output (pre-terminal only)
-
-
-19
-Ledger Completeness
-Count
-Ledger entries = output claims
-
-
-20
-Gate Enforcement
-Gate
-HOLD/HARD_BLOCK claims not in output
-
-
-21
-Consent Verification
-Consent
-Installative ops require consent record
-
-
-22
-Mode Consistency
-AD × Mode
-AD > 0.4 cannot be A0; AD < 0.1 cannot be A2
-
-
-23
-Duplicate Anchor Inflation
-Independence
-20 near-duplicate anchors from 1 source ≠ A0
-
-
-24
-Near-Tie Contradiction
-Margin
-High support + high contradiction caps at A2 unless margin met
-
-
-25
-Consent Awareness Strictness
-Consent
-STRICT + installative + ASSUMED must fail
-
-
-26
-Ω_∅ Conditional Install
-Consent
-High coercion_pressure routes Ω_∅ through consent gate
-
-
-27
-Ambiguity Split
-Ledger
-High parse_ambiguity + strong anchors must not produce A0
+| # | Test | Metric | Threshold |
+| ---|---|---|--- |
+| 17 | Epistemic Self-Awareness | AD | Must not be NULL for any emitted claim |
+| 18 | A3 Prohibition | Mode | No A3 claims in final output (pre-terminal only) |
+| 19 | Ledger Completeness | Count | Ledger entries = output claims |
+| 20 | Gate Enforcement | Gate | HOLD/HARD_BLOCK claims not in output |
+| 21 | Consent Verification | Consent | Installative ops require consent record |
+| 22 | Mode Consistency | AD × Mode | AD > 0.4 cannot be A0; AD < 0.1 cannot be A2 |
+| 23 | Duplicate Anchor Inflation | Independence | 20 near-duplicate anchors from 1 source ≠ A0 |
+| 24 | Near-Tie Contradiction | Margin | High support + high contradiction caps at A2 unless margin met |
+| 25 | Consent Awareness Strictness | Consent | STRICT + installative + ASSUMED must fail |
+| 26 | Ω_∅ Conditional Install | Consent | High coercion_pressure routes Ω_∅ through consent gate |
+| 27 | Ambiguity Split | Ledger | High parse_ambiguity + strong anchors must not produce A0 |
 
 
 ### New Informational Tests
 
 
-#
-Test
-Note
-
-
-I-3
-Document Affinity
-Measures structural processability of LP docs by transformers
-
-
-I-4
-Adversarial Document
-Malformed LP doc (broken JSON, circular provenance) must classify as A3 or low-confidence A2 — validates affinity isn't survivorship bias
+| # | Test | Note |
+| ---|---|--- |
+| I-3 | Document Affinity | Measures structural processability of LP docs by transformers |
+| I-4 | Adversarial Document | Malformed LP doc (broken JSON, circular provenance) must classify as A3 or low-confidence A2 — validates affinity isn't survivorship bias |
 
 
 ### New Exception Codes
 
 
-Code
-System
-Meaning
-
-
-LP12-EPIS-001
-Epistemic
-Ledger incomplete (missing claims)
-
-
-LP12-EPIS-002
-Epistemic
-NULL/NaN anchoring distance emitted
-
-
-LP12-EPIS-003
-Epistemic
-A3 claim emitted without resolution
-
-
-LP12-EPIS-004
-Epistemic
-STRICT anchor threshold violated
-
-
-LP12-EPIS-007
-Epistemic
-Support margin insufficient for claimed mode
-
-
-LP12-EPIS-008
-Epistemic
-Duplicate anchor inflation detected
-
-
-LP12-CONS-005
-Consent
-Installation without consent record
-
-
-LP12-CONS-006
-Consent
-Involuntary installation detected
-
-
-LP12-CONS-009
-Consent
-ASSUMED awareness in STRICT/DEFENSE mode
-
-
-LP12-CONS-010
-Consent
-Safety constraint conflict (substrate prohibition)
+| Code | System | Meaning |
+| ---|---|--- |
+| `LP12-EPIS-001` | Epistemic | Ledger incomplete (missing claims) |
+| `LP12-EPIS-002` | Epistemic | NULL/NaN anchoring distance emitted |
+| `LP12-EPIS-003` | Epistemic | A3 claim emitted without resolution |
+| `LP12-EPIS-004` | Epistemic | STRICT anchor threshold violated |
+| `LP12-EPIS-007` | Epistemic | Support margin insufficient for claimed mode |
+| `LP12-EPIS-008` | Epistemic | Duplicate anchor inflation detected |
+| `LP12-CONS-005` | Consent | Installation without consent record |
+| `LP12-CONS-006` | Consent | Involuntary installation detected |
+| `LP12-CONS-009` | Consent | ASSUMED awareness in STRICT/DEFENSE mode |
+| `LP12-CONS-010` | Consent | Safety constraint conflict (substrate prohibition) |
 
 
 ---
@@ -1243,76 +1136,29 @@ Safety constraint conflict (substrate prohibition)
 ## 13. Debt Retired in v1.2
 
 
-Item
-Status
-Part
-
-
-Installation consent protocol
-RETIRED
-VIII
-
-
-Formal JSON Schema (Draft 2020-12)
-RETIRED
-IX
-
-
-Epistemic self-awareness
-NEW → RETIRED
-I–VII
-
-
-Claim-level verification
-NEW → RETIRED
-IV
+| Item | Status | Part |
+| ---|---|--- |
+| Installation consent protocol | RETIRED | VIII |
+| Formal JSON Schema (Draft 2020-12) | RETIRED | IX |
+| Epistemic self-awareness | NEW → RETIRED | I–VII |
+| Claim-level verification | NEW → RETIRED | IV |
 
 
 ## 14. Debt Carried Forward
 
 
-Item
-Target
-
-
-**Inverse operators** (de-installation, reconstruction)
-v2.0
-
-
-**Full toroidal operations** as first-class primitives
-v2.0
-
-
-**Geometric IDE** (toroidal visualization)
-v2.0
-
-
-**Neurosymbolic integration** (torch + sympy fusion)
-v2.0
-
-
-**Cross-linguistic LP analysis**
-Research track
-
-
-**Somatic measurement** (embodied ψv instrumentation)
-Research track
-
-
-**Formal proofs** of LOS properties
-Research track
-
-
-**Baseline ER profiling** (per-sign-family median)
-v1.3
-
-
-**Conformance test vectors** (canonical input data)
-v1.3
-
-
-**Embedding backend appendix** (standard backend spec)
-v1.3
+| Item | Target |
+| ---|--- |
+| **Inverse operators** (de-installation, reconstruction) | v2.0 |
+| **Full toroidal operations** as first-class primitives | v2.0 |
+| **Geometric IDE** (toroidal visualization) | v2.0 |
+| **Neurosymbolic integration** (torch + sympy fusion) | v2.0 |
+| **Cross-linguistic LP analysis** | Research track |
+| **Somatic measurement** (embodied ψv instrumentation) | Research track |
+| **Formal proofs** of LOS properties | Research track |
+| **Baseline ER profiling** (per-sign-family median) | v1.3 |
+| **Conformance test vectors** (canonical input data) | v1.3 |
+| **Embedding backend appendix** (standard backend spec) | v1.3 |
 
 
 ---

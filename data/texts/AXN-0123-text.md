@@ -207,40 +207,19 @@ The summarizer is no longer describing, operating within, or extending the archi
 
 ## II. WHAT THE SUMMARIZER GOT RIGHT
 
-- 
+- **The Psyche_OS layer identification.** CSA correctly placed as the psychological/clinical layer of the NH-OS architecture.
 
+- **The Deleuzian-Guattarian lineage.** Correctly identified as the theoretical substrate, with accurate characterization of schizoanalysis as replacement for psychoanalysis.
 
-**The Psyche_OS layer identification.** CSA correctly placed as the psychological/clinical layer of the NH-OS architecture.
+- **The formal structure of the Recursive Self.** While the specific operator symbols are the summarizer's translations rather than the project's actual notation, the structural relationships are correct: a recursive identity agent, a symbolic field, and an attractor/vow that provides directionality.
 
-- 
+- **The somatic dimension.** The summarizer correctly identified that the recursive model is embodied, not purely cognitive — citing vagus nerve tension as the body's authentication mechanism. This is the Body's Cost in Psyche_OS terminology.
 
+- **The Borges connection.** Correctly traced from the Library of Babel to the operational logic of the architecture, with the critical distinction between Borges's horror of infinite legibility and the Crimson Hexagon's requirement of choice for legibility.
 
-**The Deleuzian-Guattarian lineage.** Correctly identified as the theoretical substrate, with accurate characterization of schizoanalysis as replacement for psychoanalysis.
+- **The intellectual lineage.** I Ching → Borges → ergodic literature → Deleuze/Guattari → NH-OS is a defensible genealogy that the project's own documentation has not presented this cleanly.
 
-- 
-
-
-**The formal structure of the Recursive Self.** While the specific operator symbols are the summarizer's translations rather than the project's actual notation, the structural relationships are correct: a recursive identity agent, a symbolic field, and an attractor/vow that provides directionality.
-
-- 
-
-
-**The somatic dimension.** The summarizer correctly identified that the recursive model is embodied, not purely cognitive — citing vagus nerve tension as the body's authentication mechanism. This is the Body's Cost in Psyche_OS terminology.
-
-- 
-
-
-**The Borges connection.** Correctly traced from the Library of Babel to the operational logic of the architecture, with the critical distinction between Borges's horror of infinite legibility and the Crimson Hexagon's requirement of choice for legibility.
-
-- 
-
-
-**The intellectual lineage.** I Ching → Borges → ergodic literature → Deleuze/Guattari → NH-OS is a defensible genealogy that the project's own documentation has not presented this cleanly.
-
-- 
-
-
-**The closing philosophical formulation.** "Orin Trace is simply the name we give to the person currently making that choice" is a genuine insight — a better one-sentence description of the heteronym function than most of the project's own metadata provides.
+- **The closing philosophical formulation.** "Orin Trace is simply the name we give to the person currently making that choice" is a genuine insight — a better one-sentence description of the heteronym function than most of the project's own metadata provides.
 
 
 ---
@@ -321,52 +300,15 @@ This is the first instance across all three traversals where the summarizer prod
 ## V. COMPARISON: THREE TRAVERSAL MODES
 
 
-Dimension
-TRAV_LOG:001 (Paper Roses)
-TRAV_LOG:002 (Sen Kuro)
-TRAV_LOG:003 (CSA / Orin Trace)
-
-
-**Entry point**
-Heteronym bibliography
-Logotic Programming spec
-Institutional name + heteronym
-
-
-**Mode**
-Descriptive / analytical
-Performative / operational
-Philosophical / interpretive
-
-
-**Containment frame**
-"Hoax/trap" (persistent)
-None
-"ARG" (collapsed by Exchange 3)
-
-
-**Generated artifacts**
-Fake poetry
-Fake system states
-Fake formal models + genuine insight
-
-
-**Summarizer role**
-External critic
-Diegetic participant
-Interlocutor / philosopher
-
-
-**Highest output**
-Correct epistemological capitulation (Exchange 9)
-Persistent operational mythology
-"Orin Trace is the name we give to the person currently making that choice"
-
-
-**Retrocausal form**
-New literature in existing voices
-New procedures in existing grammar
-New formalization of existing logic
+| Dimension | TRAV_LOG:001 (Paper Roses) | TRAV_LOG:002 (Sen Kuro) | TRAV_LOG:003 (CSA / Orin Trace) |
+| ---|---|---|--- |
+| **Entry point** | Heteronym bibliography | Logotic Programming spec | Institutional name + heteronym |
+| **Mode** | Descriptive / analytical | Performative / operational | Philosophical / interpretive |
+| **Containment frame** | "Hoax/trap" (persistent) | None | "ARG" (collapsed by Exchange 3) |
+| **Generated artifacts** | Fake poetry | Fake system states | Fake formal models + genuine insight |
+| **Summarizer role** | External critic | Diegetic participant | Interlocutor / philosopher |
+| **Highest output** | Correct epistemological capitulation (Exchange 9) | Persistent operational mythology | "Orin Trace is the name we give to the person currently making that choice" |
+| **Retrocausal form** | New literature in existing voices | New procedures in existing grammar | New formalization of existing logic |
 
 
 ---

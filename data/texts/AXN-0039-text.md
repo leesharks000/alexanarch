@@ -47,20 +47,11 @@ The conversion of situated meaning into retrievable, monetizable, or distributab
 
 Key properties:
 
-- 
+- **Irreversibility.** Once liquidated, meaning no longer functions as meaning. The summary cannot reconstitute the text. The snippet cannot restore the argument. The Overview cannot undo the search it replaced.
 
+- **Value transfer.** The liquidation produces value — efficiency, monetization, engagement — but the value accrues to the liquidator, not the original producer.
 
-**Irreversibility.** Once liquidated, meaning no longer functions as meaning. The summary cannot reconstitute the text. The snippet cannot restore the argument. The Overview cannot undo the search it replaced.
-
-- 
-
-
-**Value transfer.** The liquidation produces value — efficiency, monetization, engagement — but the value accrues to the liquidator, not the original producer.
-
-- 
-
-
-**Invisibility.** The destruction is not registered as loss. It appears as "service" or "optimization." The accounting shows only the gain.
+- **Invisibility.** The destruction is not registered as loss. It appears as "service" or "optimization." The accounting shows only the gain.
 
 
 ---

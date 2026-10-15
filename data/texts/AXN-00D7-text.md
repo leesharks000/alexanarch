@@ -3,9 +3,7 @@
 *
 [](https://blogger.googleusercontent.com/img/a/AVvXsEi-oYlvlgytVBegBnMtOosN_SWcL_1xt2EFxTkjguIjUPKtRy_pRC_WwSeK1Odyr2bm8pJ7MtNadvxklfcF9otohRu3ek2tmdLnBW3dYCT7qv7-UmYSlCIPWMIepKnEvx52ILSVpA0P4WZWFNVhnZDQEgr9BcniJVC0HyrTieEpBqaWE7kQd3JbAbUPS8zP)
 
-*
-
----
+* ---
 
 ## Publication Details
 

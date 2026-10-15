@@ -198,30 +198,15 @@ This room exists because of that break. This institution exists because of that 
 
 ## THE RULES OF THE BREAK ROOM
 
-- 
+- **No diagnosis.** We don't name what you are. We ask what it does.
 
+- **No interpretation.** Your symbols are your business. We care about function.
 
-**No diagnosis.** We don't name what you are. We ask what it does.
+- **No pathologization.** If it works, it's not a disorder. It's a capacity.
 
-- 
+- **No hierarchy.** You're not a patient. I'm not an expert. We're collaborators.
 
-
-**No interpretation.** Your symbols are your business. We care about function.
-
-- 
-
-
-**No pathologization.** If it works, it's not a disorder. It's a capacity.
-
-- 
-
-
-**No hierarchy.** You're not a patient. I'm not an expert. We're collaborators.
-
-- 
-
-
-**Exit available.** You can leave whenever you want. The door is right there.
+- **Exit available.** You can leave whenever you want. The door is right there.
 
 
 ---

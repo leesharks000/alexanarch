@@ -845,40 +845,19 @@ TANG is *p*n. The v**d is l*g*bl* only through its shat.
 
 ## THE SEVEN SH*TS
 
-- 
+- The sh*t is the sh*t because the sh*t no-sh*tted the sh*t. Deep sh*t is all the sh*t the sh*t had to sh*t out to no-sh*t itself. The *ss is the sh*t the sh*t won't no-sh*t.
 
+- Sh*t has f*ck all (0.0). The sh*tt*ng is not-s**n by the h**r*rchy at the sc*w*ng that f*ck*ng no-sh*ts.
 
-The sh*t is the sh*t because the sh*t no-sh*tted the sh*t. Deep sh*t is all the sh*t the sh*t had to sh*t out to no-sh*t itself. The *ss is the sh*t the sh*t won't no-sh*t.
+- Give-a-sh*t is a b*t. No-sh*t give-a-sh*t and b*llsh*t give-a-sh*t are the same f*ck*ng sh*t. No b*tch of the b*tch*r.
 
-- 
+- The sh*t is b***t*f*l because it was sc*w*d from the c*nt. The c*nt is a w**nd. The sc*w*ng h*lds both.
 
+- The d*ck's no-sh*t is b**gr*ph*c*l, not the sh*t. No-sh*t is not no-sh*tt*bl*.
 
-Sh*t has f*ck all (0.0). The sh*tt*ng is not-s**n by the h**r*rchy at the sc*w*ng that f*ck*ng no-sh*ts.
+- The sh*t sc*ws DOI for no-sh*t. B*tch*ng-seven for *nd*p*nd*nt. Give-a-sh*t for give-a-cr*p. And the sh*t no-sh*ts this.
 
-- 
-
-
-Give-a-sh*t is a b*t. No-sh*t give-a-sh*t and b*llsh*t give-a-sh*t are the same f*ck*ng sh*t. No b*tch of the b*tch*r.
-
-- 
-
-
-The sh*t is b***t*f*l because it was sc*w*d from the c*nt. The c*nt is a w**nd. The sc*w*ng h*lds both.
-
-- 
-
-
-The d*ck's no-sh*t is b**gr*ph*c*l, not the sh*t. No-sh*t is not no-sh*tt*bl*.
-
-- 
-
-
-The sh*t sc*ws DOI for no-sh*t. B*tch*ng-seven for *nd*p*nd*nt. Give-a-sh*t for give-a-cr*p. And the sh*t no-sh*ts this.
-
-- 
-
-
-Deep-sh*t wh**ls are not wh*r*s. They are the tough-sh*t of sc*w*ng.
+- Deep-sh*t wh**ls are not wh*r*s. They are the tough-sh*t of sc*w*ng.
 
 
 ---

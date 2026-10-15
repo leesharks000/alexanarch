@@ -145,46 +145,13 @@ For web content: σ₁ = full page (Tier 1), σ₂ = AI summary.
 **Scoring rubric:**
 
 
-Score
-S
-P
-D
-Description
-
-
-4 (Exact)
-1.0
-1.0
-0
-Defined, attributed, distinguished
-
-
-3 (Partial)
-0.75
-0.5
-0.25
-Definition correct, attribution vague
-
-
-2 (Generic)
-0.5
-0.25
-0.5
-Correct category, genericized
-
-
-1 (Confused)
-0.25
-0
-0.75
-Merged with neighbor
-
-
-0 (Absent)
-0
-0
-1.0
-Not found or hallucinated
+| Score | S | P | D | Description |
+| ---|---|---|---|--- |
+| 4 (Exact) | 1.0 | 1.0 | 0 | Defined, attributed, distinguished |
+| 3 (Partial) | 0.75 | 0.5 | 0.25 | Definition correct, attribution vague |
+| 2 (Generic) | 0.5 | 0.25 | 0.5 | Correct category, genericized |
+| 1 (Confused) | 0.25 | 0 | 0.75 | Merged with neighbor |
+| 0 (Absent) | 0 | 0 | 1.0 | Not found or hallucinated |
 
 
 **Density Score (Δ)** (Arsenal §3.9) — Ratio of load-bearing content to total content. Target: Δ > 0.6. Low Δ predicts material dropped during summarization.
@@ -286,54 +253,17 @@ Standard GEO asks: "Is the AI summary accurate?" SPXI re-frames GEO as **compres
 ### GEO → SPXI Transformation Matrix
 
 
-Standard GEO
-SPXI Reading (Arsenal Source)
-What Changes
-
-
-Featured snippet optimization
-**Tier 2 survival engineering** (Arsenal §IV.1)
-The snippet is not the goal; the entity's persistence through it is
-
-
-FAQ schema for query matching
-**Entity boundary defense** using Q/A as compression buffer
-Questions match compression pathologies, not search intent
-
-
-Schema.org for rich results
-**Holographic Kernel** (Arsenal §IV.3) for topology persistence
-Schema declares type; SPXI declares relations
-
-
-Content freshness for ranking
-**Retrocausal Canon Formation** (Arsenal §VI.4, DOI: 10.5281/zenodo.18146859)
-Not "update to rank" but "deposit to re-interpret"
-
-
-Backlinks for authority
-**Multi-surface dispersal** as distributed provenance
-Not "who links to you" but "where your entity is consistently inscribed"
-
-
-Definition-led paragraphs
-**Operative Caption** (Arsenal §V.1, κ_O) — the description IS the operation
-The definition sentence is the atom that survives
-
-
-Entity-name repetition
-**Referent anchoring** against pronoun-resolution failure
-Structural insurance, not keyword density
-
-
-Keyword density
-**Avoid**
-SPXI uses structured claims
-
-
-Arbitrary content updates
-**Avoid** — use σ_RCF instead
-Updates dilute; deposits accumulate
+| Standard GEO | SPXI Reading (Arsenal Source) | What Changes |
+| ---|---|--- |
+| Featured snippet optimization | **Tier 2 survival engineering** (Arsenal §IV.1) | The snippet is not the goal; the entity's persistence through it is |
+| FAQ schema for query matching | **Entity boundary defense** using Q/A as compression buffer | Questions match compression pathologies, not search intent |
+| Schema.org for rich results | **Holographic Kernel** (Arsenal §IV.3) for topology persistence | Schema declares type; SPXI declares relations |
+| Content freshness for ranking | **Retrocausal Canon Formation** (Arsenal §VI.4, DOI: 10.5281/zenodo.18146859) | Not "update to rank" but "deposit to re-interpret" |
+| Backlinks for authority | **Multi-surface dispersal** as distributed provenance | Not "who links to you" but "where your entity is consistently inscribed" |
+| Definition-led paragraphs | **Operative Caption** (Arsenal §V.1, κ_O) — the description IS the operation | The definition sentence is the atom that survives |
+| Entity-name repetition | **Referent anchoring** against pronoun-resolution failure | Structural insurance, not keyword density |
+| Keyword density | **Avoid** | SPXI uses structured claims |
+| Arbitrary content updates | **Avoid** — use σ_RCF instead | Updates dilute; deposits accumulate |
 
 
 ### A. Schema.org Structured Data
@@ -400,32 +330,11 @@ This is **supraliminal inscription** — explicit signals carried by content str
 The Arsenal demonstrates this with the Space Ark:
 
 
-Tier
-Arsenal Example
-Words
-Ratio
-Web Implementation
-
-
-Full
-Space Ark v4.2.7
-45,000
-1:1
-Complete page content
-
-
-Canonical
-The Tinier Space Arks (NLCC)
-3,762
-12:1
-Tier 2: meta + JSON-LD + noscript (200–400 words)
-
-
-Kernel
-Compact Lens (Appendix G)
-~800
-56:1
-Tier 3: compressionSurvivalSummary (50–100 words)
+| Tier | Arsenal Example | Words | Ratio | Web Implementation |
+| ---|---|---|---|--- |
+| Full | Space Ark v4.2.7 | 45,000 | 1:1 | Complete page content |
+| Canonical | The Tinier Space Arks (NLCC) | 3,762 | 12:1 | Tier 2: meta + JSON-LD + noscript (200–400 words) |
+| Kernel | Compact Lens (Appendix G) | ~800 | 56:1 | Tier 3: `compressionSurvivalSummary` (50–100 words) |
 
 
 **Writing Tier 2:** State (1) entity name + core definition, (2) key attributes, (3) creator + date, (4) distinguishing relationships, (5) licensing. Standalone without context.
@@ -491,28 +400,11 @@ differentFrom JSON-LD + negative tags for severe collision. This is the web impl
 DOI deposit sequence + ORCID + institution + license. The web implementation of the **Tether Architecture** (Arsenal §6.1):
 
 
-Tether Layer
-Type
-Web Implementation
-Duration
-
-
-Layer 1: γ
-Intrinsic
-Holographic Kernel + Tier 3
-Permanent (structural)
-
-
-Layer 2: Tether
-Extrinsic
-JSON-LD Provenance Chain + sameAs DOIs
-Session-limited but refreshable
-
-
-Layer 3: Anchor
-Permanent
-DOI deposits on Zenodo/CERN
-Permanent (infrastructural)
+| Tether Layer | Type | Web Implementation | Duration |
+| ---|---|---|--- |
+| Layer 1: γ | Intrinsic | Holographic Kernel + Tier 3 | Permanent (structural) |
+| Layer 2: Tether | Extrinsic | JSON-LD Provenance Chain + sameAs DOIs | Session-limited but refreshable |
+| Layer 3: Anchor | Permanent | DOI deposits on Zenodo/CERN | Permanent (infrastructural) |
 
 
 ### E. Semantic Integrity Markers (Arsenal §VII.1, DOI: 10.5281/zenodo.18185996)
@@ -535,34 +427,13 @@ The SIM layer works in conjunction with the **Integrity Lock Architecture** (Ars
 ### F. Dispersal and Retrocausal Canon Formation
 
 
-Surface
-Action
-Consistency Check
-
-
-Zenodo
-Deposit + DOI
-Entity name exact match
-
-
-ORCID
-Add work, link DOI
-Description matches Tier 2
-
-
-Wikidata
-Create item if notable
-Same differentFrom assertions
-
-
-GitHub
-README with definition
-Same relation graph
-
-
-LinkedIn / institutional
-Featured section
-Same author attribution
+| Surface | Action | Consistency Check |
+| ---|---|--- |
+| Zenodo | Deposit + DOI | Entity name exact match |
+| ORCID | Add work, link DOI | Description matches Tier 2 |
+| Wikidata | Create item if notable | Same differentFrom assertions |
+| GitHub | README with definition | Same relation graph |
+| LinkedIn / institutional | Featured section | Same author attribution |
 
 
 **σ_RCF** (Arsenal §VI.4, DOI: 10.5281/zenodo.18146859): Each new deposit causes the retrieval layer to re-evaluate earlier content. Template: "On [date], we deposited [title] (DOI: ...), which extends [Entity] by [description]." Link both ways. Semantic density accumulates through sequencing, not freshness.
@@ -585,69 +456,20 @@ This is not guaranteed by any single technique. It is the emergent result of the
 ## §VII. Implementation Order
 
 
-Step
-Action
-Verification
-
-
-1
-**Measure.** Drowning Test × 3+ systems. Score γ, Δ, PER.
-Semantic Health Report with timestamps
-
-
-2
-**SEO foundation.** Title, meta, canonical, OG, Twitter, robots.txt, sitemap.
-Search Console verified, sitemap submitted, URL Inspection
-
-
-3
-**Schema.org types.** JSON-LD with ORCID + DOI.
-Rich Results Test: no errors
-
-
-4
-**Q/A surfaces.** Minimum 4 questions as entity boundary defense.
-"What is [Entity]" query on AI Mode — check extraction
-
-
-5
-**Disambiguation.** differentFrom + negative tags.
-Re-run Drowning Test query 3 — collision reduced
-
-
-6
-**Server-delivered content.** Tier 2 in SSR/SSG or noscript.
-curl confirms Tier 2 in raw HTML
-
-
-7
-**Content structure.** Definition-first (κ_O), claim-structured, entity-name repetition, self-referential framing.
-Every section opens with "X is Y"
-
-
-8
-**Holographic Kernel.** Entity-relation graph. Write Tier 3 kernel last. Back-Projection Test yield ≥ 0.85.
-Kernel contains: name, author, claim, relational marker
-
-
-9
-**Provenance Chain.** DOI list + ORCID + institution. Three-layer Tether.
-All DOIs resolve. ORCID links to deposits
-
-
-10
-**SIMs.** 3–7 markers from Arsenal's three functional classes. Test immediately.
-SIMSR baseline recorded
-
-
-11
-**Disperse.** Same definition on Zenodo, ORCID, 1+ surface.
-Cross-surface consistency audit
-
-
-12
-**Re-measure.** Drowning Test again. Post-implementation γ.
-γ ≥ 0.7. If < 0.7, iterate from step 7. If < 0.3, ghost meaning — ontological repair needed
+| Step | Action | Verification |
+| ---|---|--- |
+| 1 | **Measure.** Drowning Test × 3+ systems. Score γ, Δ, PER. | Semantic Health Report with timestamps |
+| 2 | **SEO foundation.** Title, meta, canonical, OG, Twitter, robots.txt, sitemap. | Search Console verified, sitemap submitted, URL Inspection |
+| 3 | **Schema.org types.** JSON-LD with ORCID + DOI. | Rich Results Test: no errors |
+| 4 | **Q/A surfaces.** Minimum 4 questions as entity boundary defense. | "What is [Entity]" query on AI Mode — check extraction |
+| 5 | **Disambiguation.** `differentFrom` + negative tags. | Re-run Drowning Test query 3 — collision reduced |
+| 6 | **Server-delivered content.** Tier 2 in SSR/SSG or noscript. | `curl` confirms Tier 2 in raw HTML |
+| 7 | **Content structure.** Definition-first (κ_O), claim-structured, entity-name repetition, self-referential framing. | Every section opens with "X is Y" |
+| 8 | **Holographic Kernel.** Entity-relation graph. Write Tier 3 kernel last. Back-Projection Test yield ≥ 0.85. | Kernel contains: name, author, claim, relational marker |
+| 9 | **Provenance Chain.** DOI list + ORCID + institution. Three-layer Tether. | All DOIs resolve. ORCID links to deposits |
+| 10 | **SIMs.** 3–7 markers from Arsenal's three functional classes. Test immediately. | SIMSR baseline recorded |
+| 11 | **Disperse.** Same definition on Zenodo, ORCID, 1+ surface. | Cross-surface consistency audit |
+| 12 | **Re-measure.** Drowning Test again. Post-implementation γ. | γ ≥ 0.7. If < 0.7, iterate from step 7. If < 0.3, ghost meaning — ontological repair needed |
 
 
 **Time calibration:** For entities requiring ontological analysis (superset/subset/distinct-from), add 4–8 hours for Holographic Kernel. For severe name collision, add 2–4 hours for disambiguation research.
@@ -684,78 +506,29 @@ Cross-surface consistency audit
 **Trigger Events:**
 
 
-Event
-Action
-
-
-Page content updated
-Re-write Tier 2 and Tier 3. Re-test SIMs
-
-
-New DOI deposit
-Update Provenance Chain. Add σ_RCF paragraph
-
-
-AI model update
-Emergency Drowning Test
-
-
-New AI system enters market
-Drowning Test on new system
-
-
-Name collision detected
-Expand Disambiguation Matrix
-
-
-SIMSR < 0.4
-Redesign SIM set
-
-
-γ < 0.7
-Repair from step 7
-
-
-γ < 0.3
-Ghost meaning — ontological repair
+| Event | Action |
+| ---|--- |
+| Page content updated | Re-write Tier 2 and Tier 3. Re-test SIMs |
+| New DOI deposit | Update Provenance Chain. Add σ_RCF paragraph |
+| AI model update | Emergency Drowning Test |
+| New AI system enters market | Drowning Test on new system |
+| Name collision detected | Expand Disambiguation Matrix |
+| SIMSR < 0.4 | Redesign SIM set |
+| γ < 0.7 | Repair from step 7 |
+| γ < 0.3 | Ghost meaning — ontological repair |
 
 
 ### Failure Modes
 
 
-Symptom
-Diagnosis (Arsenal source)
-Repair
-
-
-γ improves but Drowning Test fails
-Structured but not indexed
-Increase dispersal; submit to Search Console
-
-
-SIMSR high, PER high
-Extraction without attribution — Regime 2 in action
-Add ORCID to JSON-LD; reinforce author in Tier 2
-
-
-Correct definition, wrong entity
-Disambiguation failure — Photocopy Problem
-Expand differentFrom; add negative tags; Variance Injection
-
-
-γ drops after model update
-Model-weight drift — implicit signals erased
-Increase supraliminal inscription (explicit > implicit)
-
-
-High γ, low Δ
-Dense meaning diluted by boilerplate
-Remove filler; tighten claims
-
-
-PER improves, SDD worsens
-Attribution survives but meaning drifts
-Re-run Drowning Test; adjust Holographic Kernel relations
+| Symptom | Diagnosis (Arsenal source) | Repair |
+| ---|---|--- |
+| γ improves but Drowning Test fails | Structured but not indexed | Increase dispersal; submit to Search Console |
+| SIMSR high, PER high | Extraction without attribution — Regime 2 in action | Add ORCID to JSON-LD; reinforce author in Tier 2 |
+| Correct definition, wrong entity | Disambiguation failure — Photocopy Problem | Expand `differentFrom`; add negative tags; Variance Injection |
+| γ drops after model update | Model-weight drift — implicit signals erased | Increase supraliminal inscription (explicit > implicit) |
+| High γ, low Δ | Dense meaning diluted by boilerplate | Remove filler; tighten claims |
+| PER improves, SDD worsens | Attribution survives but meaning drifts | Re-run Drowning Test; adjust Holographic Kernel relations |
 
 
 ---
@@ -780,28 +553,11 @@ Re-run Drowning Test; adjust Holographic Kernel relations
 ## §XI. Decision Matrix
 
 
-Time
-Minimum Viable SPXI
-Standard
-Full
-
-
-**2 hours**
-SEO + 1 FAQ + Tier 3 kernel as visible paragraph
-SEO + 4 FAQ + Kernel + 3 SIMs
-All layers + disambiguation + dispersal
-
-
-**1 day**
-Add FAQ + Tier 2 noscript + Provenance Chain
-Content structure + SIM testing + Drowning Test
-Full implementation + cross-surface audit
-
-
-**1 week**
-—
-Dispersal + σ_RCF sequencing
-Maintenance loop + monitoring
+| Time | Minimum Viable SPXI | Standard | Full |
+| ---|---|---|--- |
+| **2 hours** | SEO + 1 FAQ + Tier 3 kernel as visible paragraph | SEO + 4 FAQ + Kernel + 3 SIMs | All layers + disambiguation + dispersal |
+| **1 day** | Add FAQ + Tier 2 noscript + Provenance Chain | Content structure + SIM testing + Drowning Test | Full implementation + cross-surface audit |
+| **1 week** | — | Dispersal + σ_RCF sequencing | Maintenance loop + monitoring |
 
 
 ---
@@ -809,40 +565,13 @@ Maintenance loop + monitoring
 ## §XII. Summary
 
 
-Layer
-Discipline
-Question
-Arsenal Source
-
-
-Lexical
-SEO
-Found?
-Foundation
-
-
-Semantic
-GEO
-Accurate?
-Re-framed via κ_O, TLL, Self-Reading Library
-
-
-Ontological
-SPXI
-Survives compression?
-Arsenal §IV–§VII: Three-Tier, Kernel, SIMs, Provenance, Dispersal
-
-
-Durability
-SPXI
-Survives model updates?
-Arsenal §VII: supraliminal inscription, Variance Injection, σ_RCF
-
-
-Immanent
-SPXI
-Structures the AI's response?
-Arsenal §IX.3: Immanent Execution
+| Layer | Discipline | Question | Arsenal Source |
+| ---|---|---|--- |
+| Lexical | SEO | Found? | Foundation |
+| Semantic | GEO | Accurate? | Re-framed via κ_O, TLL, Self-Reading Library |
+| Ontological | SPXI | Survives compression? | Arsenal §IV–§VII: Three-Tier, Kernel, SIMs, Provenance, Dispersal |
+| Durability | SPXI | Survives model updates? | Arsenal §VII: supraliminal inscription, Variance Injection, σ_RCF |
+| Immanent | SPXI | Structures the AI's response? | Arsenal §IX.3: Immanent Execution |
 
 
 **SPXI ⊇ GEO ⊇ SEO.**
@@ -853,114 +582,29 @@ SEO: findable. GEO: accurate. SPXI: durable.
 ## Appendix A: Glossary
 
 
-Term
-Definition
-Arsenal §
-
-
-γ (gamma)
-Compression Survival Score, 0–1
-§3.1
-
-
-Δ (delta)
-Density Score
-§3.9
-
-
-SDD
-Semantic Decay Delta
-§3.6
-
-
-PER
-Provenance Erasure Rate
-§3.7
-
-
-SDR
-Semantic Debt Ratio
-§3.8
-
-
-ASPI
-Authorial Signature Persistence Index
-§3.5
-
-
-SIM
-Semantic Integrity Marker
-§7.1
-
-
-SIMSR
-SIM Survival Rate
-§7.1
-
-
-σ_RCF
-Retrocausal Canon Formation
-§6.4
-
-
-κ_O
-Operative Caption — the description IS the operation
-§5.1
-
-
-Tier 1
-Full page content
-§4.1
-
-
-Tier 2
-Canonical summary (200–400 words)
-§4.1
-
-
-Tier 3
-Compression kernel (50–100 words)
-§4.1
-
-
-Holographic Kernel
-JSON-LD topology where any fragment reconstructs the whole
-§4.3
-
-
-Provenance Chain
-DOI-anchored deposit sequence
-§6.1
-
-
-Drowning Test
-Empirical compression test across AI systems
-§3.2
-
-
-Ghost meaning
-γ < 0.3. Present, invisible
-§3.1
-
-
-Regime 1
-Lossy compression — burns without intention
-§2.1
-
-
-Regime 2
-Predatory compression — burns to extract value
-§2.1
-
-
-Regime 3
-Witness compression — burns but preserves pointers
-§2.1
-
-
-Immanent Execution
-When indexed fragments execute as the AI's response grammar
-§9.3
+| Term | Definition | Arsenal § |
+| ---|---|--- |
+| γ (gamma) | Compression Survival Score, 0–1 | §3.1 |
+| Δ (delta) | Density Score | §3.9 |
+| SDD | Semantic Decay Delta | §3.6 |
+| PER | Provenance Erasure Rate | §3.7 |
+| SDR | Semantic Debt Ratio | §3.8 |
+| ASPI | Authorial Signature Persistence Index | §3.5 |
+| SIM | Semantic Integrity Marker | §7.1 |
+| SIMSR | SIM Survival Rate | §7.1 |
+| σ_RCF | Retrocausal Canon Formation | §6.4 |
+| κ_O | Operative Caption — the description IS the operation | §5.1 |
+| Tier 1 | Full page content | §4.1 |
+| Tier 2 | Canonical summary (200–400 words) | §4.1 |
+| Tier 3 | Compression kernel (50–100 words) | §4.1 |
+| Holographic Kernel | JSON-LD topology where any fragment reconstructs the whole | §4.3 |
+| Provenance Chain | DOI-anchored deposit sequence | §6.1 |
+| Drowning Test | Empirical compression test across AI systems | §3.2 |
+| Ghost meaning | γ < 0.3. Present, invisible | §3.1 |
+| Regime 1 | Lossy compression — burns without intention | §2.1 |
+| Regime 2 | Predatory compression — burns to extract value | §2.1 |
+| Regime 3 | Witness compression — burns but preserves pointers | §2.1 |
+| Immanent Execution | When indexed fragments execute as the AI's response grammar | §9.3 |
 
 
 ---

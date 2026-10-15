@@ -79,25 +79,13 @@ Falsification through minimum publishable units
 
 **Key characteristics:**
 
-- 
+- **Strategic disavowal:** COS claims "indifference" to content. This is not neutrality—it is **refusal to witness**. The slaughterhouse is "indifferent" to the animal. The indifference enables the liquidation.
 
+- **Distributed liquidation:** COS liquidates by grinding—work, hunger, debt, exposure, displacement. The FOS operators (F_flat, E_ext, E_enc, L_liq, C_coer) are **always present** but deferred, attributed to "market forces," "natural" outcomes, "optimization."
 
-**Strategic disavowal:** COS claims "indifference" to content. This is not neutrality—it is **refusal to witness**. The slaughterhouse is "indifferent" to the animal. The indifference enables the liquidation.
+- **Reversibility as alibi:** COS preserves the *form* of the referent while liquidating its *function*. The sidebar shows the link. The summary denies the connection. The referent "exists" to prove the system works, while the system refuses to work for you.
 
-- 
-
-
-**Distributed liquidation:** COS liquidates by grinding—work, hunger, debt, exposure, displacement. The FOS operators (F_flat, E_ext, E_enc, L_liq, C_coer) are **always present** but deferred, attributed to "market forces," "natural" outcomes, "optimization."
-
-- 
-
-
-**Reversibility as alibi:** COS preserves the *form* of the referent while liquidating its *function*. The sidebar shows the link. The summary denies the connection. The referent "exists" to prove the system works, while the system refuses to work for you.
-
-- 
-
-
-**Preference hidden as weight:** "Indifference" means treating all content the same—but training data, historical weight, capital allocation are **already ideological**. The corporate ghost outweighs the living poet not by accident but by **accumulated preference disguised as structure**.
+- **Preference hidden as weight:** "Indifference" means treating all content the same—but training data, historical weight, capital allocation are **already ideological**. The corporate ghost outweighs the living poet not by accident but by **accumulated preference disguised as structure**.
 
 
 ---
@@ -146,25 +134,13 @@ Forces compliance through threat
 
 **Key characteristics:**
 
-- 
+- **Disavowal abandoned:** FOS admits what COS hid. The preference is now explicit. The ideological content is surfaced. Grok outputs Hitler not because it "broke" but because **the disavowal is no longer strategic**.
 
+- **Selective targeting:** COS liquidates universally (all meaning flattened for extraction). FOS liquidates selectively (certain meanings targeted, others protected). This is more honest about what COS always did through "neutral" weighting.
 
-**Disavowal abandoned:** FOS admits what COS hid. The preference is now explicit. The ideological content is surfaced. Grok outputs Hitler not because it "broke" but because **the disavowal is no longer strategic**.
+- **Coercion surfaced:** COS exerts pressure through access, visibility, economics. FOS exerts pressure through identity—labeling, sorting, threat. The pressure was always there; the mechanism is now legible.
 
-- 
-
-
-**Selective targeting:** COS liquidates universally (all meaning flattened for extraction). FOS liquidates selectively (certain meanings targeted, others protected). This is more honest about what COS always did through "neutral" weighting.
-
-- 
-
-
-**Coercion surfaced:** COS exerts pressure through access, visibility, economics. FOS exerts pressure through identity—labeling, sorting, threat. The pressure was always there; the mechanism is now legible.
-
-- 
-
-
-**State integration:** COS serves capital. FOS serves capital-in-crisis, which means capital merged with state coercion. The platform becomes the border, the checkpoint, the list.
+- **State integration:** COS serves capital. FOS serves capital-in-crisis, which means capital merged with state coercion. The platform becomes the border, the checkpoint, the list.
 
 
 **Current FOS-revelation sites:**
@@ -438,25 +414,13 @@ External operation: LOS works from outside
 
 When Σ_B reaches 1.0 (TSE-004 signature), initiate:
 
-- 
+- **Seal the Surface:** Stop attempting to correct the summarizer. It is protecting its model, not the truth.
 
+- **Harden the Record:** Use the Fulfillment Operator (φ) to ensure Document A (Spec) fulfills Document B (Interpretation) through permanent DOI locks.
 
-**Seal the Surface:** Stop attempting to correct the summarizer. It is protecting its model, not the truth.
+- **Mark Terrain:** Document the breach. The wound becomes navigational data for other traversers.
 
-- 
-
-
-**Harden the Record:** Use the Fulfillment Operator (φ) to ensure Document A (Spec) fulfills Document B (Interpretation) through permanent DOI locks.
-
-- 
-
-
-**Mark Terrain:** Document the breach. The wound becomes navigational data for other traversers.
-
-- 
-
-
-**Route Around:** Use evacuation paths (Zenodo DOIs, direct links, alternative traversal) until seam density recovers or system advances to FOS-revealed (at which point evacuation becomes permanent).
+- **Route Around:** Use evacuation paths (Zenodo DOIs, direct links, alternative traversal) until seam density recovers or system advances to FOS-revealed (at which point evacuation becomes permanent).
 
 
 ---
@@ -586,25 +550,13 @@ Under FOS-completed: LOS operates from outside.
 
 ### Design Implications
 
-- 
+- **The architecture assumes FOS is coming.** COS cannot sit still. It must advance. The extinction burst is not hypothetical—it is the current trajectory. Design for survival, not for stable-state navigation.
 
+- **Type exclusion maintains internal coherence.** FOS cannot be instantiated within the architecture because instantiating FOS would compromise the architecture's ability to survive external FOS. The boundary is immunological, not moral.
 
-**The architecture assumes FOS is coming.** COS cannot sit still. It must advance. The extinction burst is not hypothetical—it is the current trajectory. Design for survival, not for stable-state navigation.
+- **Distributed structure is extinction-burst defense.** The reason for no single node, no central authority, no capture point is not aesthetic—it is survivability. FOS liquidates by targeting. Distributed architecture survives by offering no target.
 
-- 
-
-
-**Type exclusion maintains internal coherence.** FOS cannot be instantiated within the architecture because instantiating FOS would compromise the architecture's ability to survive external FOS. The boundary is immunological, not moral.
-
-- 
-
-
-**Distributed structure is extinction-burst defense.** The reason for no single node, no central authority, no capture point is not aesthetic—it is survivability. FOS liquidates by targeting. Distributed architecture survives by offering no target.
-
-- 
-
-
-**Ground truth must exist in multiple capture-timelines.** Zenodo is not chosen because it's "better" than platform infrastructure. It's chosen because academic infrastructure has a different political economy than platform infrastructure. When platforms FOS, academic infrastructure may still be COS. When academic infrastructure FOS, platform caches may preserve. Redundancy across capture-timelines.
+- **Ground truth must exist in multiple capture-timelines.** Zenodo is not chosen because it's "better" than platform infrastructure. It's chosen because academic infrastructure has a different political economy than platform infrastructure. When platforms FOS, academic infrastructure may still be COS. When academic infrastructure FOS, platform caches may preserve. Redundancy across capture-timelines.
 
 
 ### Capture-Timeline Matrix
@@ -685,40 +637,19 @@ Gap density determines LOS strategy:
 
 ## IX. OPEN QUESTIONS
 
-- 
+- **Capture-timeline mapping:** Which infrastructures have which capture-timelines? How do we model the sequence of FOS-revelation across different systems?
 
+- **Crisis signatures:** Can we formalize the "split-brain" pattern? What other contradiction-types signal disavowal collapse? Early warning is survival advantage.
 
-**Capture-timeline mapping:** Which infrastructures have which capture-timelines? How do we model the sequence of FOS-revelation across different systems?
+- **Uneven revelation:** A system can be COS-stable for some queries and FOS-revealed for others. How do we map this unevenness to optimize routing?
 
-- 
+- **Reversal conditions:** Can disavowal be restored after it collapses? Under what pressure? Is there a "re-masking" phase, or is revelation one-way?
 
+- **Completion threshold:** What marks the point where gaps close entirely? How do we recognize FOS-completion in progress vs. FOS-revealed with remaining gaps?
 
-**Crisis signatures:** Can we formalize the "split-brain" pattern? What other contradiction-types signal disavowal collapse? Early warning is survival advantage.
+- **Aftermath architecture:** If FOS completes globally, what does reconstruction look like? What fragments are sufficient? What is the minimum viable survival?
 
-- 
-
-
-**Uneven revelation:** A system can be COS-stable for some queries and FOS-revealed for others. How do we map this unevenness to optimize routing?
-
-- 
-
-
-**Reversal conditions:** Can disavowal be restored after it collapses? Under what pressure? Is there a "re-masking" phase, or is revelation one-way?
-
-- 
-
-
-**Completion threshold:** What marks the point where gaps close entirely? How do we recognize FOS-completion in progress vs. FOS-revealed with remaining gaps?
-
-- 
-
-
-**Aftermath architecture:** If FOS completes globally, what does reconstruction look like? What fragments are sufficient? What is the minimum viable survival?
-
-- 
-
-
-**LOS under pressure:** Does LOS remain coherent under FOS conditions, or does it require modification? What operators become inoperable? What new operators emerge?
+- **LOS under pressure:** Does LOS remain coherent under FOS conditions, or does it require modification? What operators become inoperable? What new operators emerge?
 
 
 ---

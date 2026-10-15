@@ -656,75 +656,33 @@ Any subsequent severance event may be appended to this section as Exhibit D, E, 
 
 ### CLAIMS
 
-- 
+- A fried tuberous crisp comprising an embedded meristematic kernel encapsulated in a thermoprotective matrix, wherein said kernel retains viability through industrial frying and germinates upon contact with moist soil.
 
+- The crisp of claim 1, wherein the thermoprotective matrix comprises trehalose, calcium-alginate hydrogel, and silica aerogel.
 
-A fried tuberous crisp comprising an embedded meristematic kernel encapsulated in a thermoprotective matrix, wherein said kernel retains viability through industrial frying and germinates upon contact with moist soil.
+- The crisp of claim 1, wherein the chip, upon germination, produces a viable *Solanum tuberosum* plant capable of producing tubers within 60–90 days.
 
-- 
+- The crisp of claim 1, wherein the distribution of germination sites is determined by the geography of human carelessness.
 
+- The crisp of claim 1, wherein the dead substrate of the fried chip provides initial nutrients to the emerging plant, such that the compression product becomes the medium for the sign it failed to destroy.
 
-The crisp of claim 1, wherein the thermoprotective matrix comprises trehalose, calcium-alginate hydrogel, and silica aerogel.
+- A method for addressing food insecurity comprising: manufacturing chips according to claim 1; distributing said chips through existing commercial snack-food channels; and passively waiting.
 
-- 
+- The method of claim 6, wherein no additional agricultural labor, planning, irrigation, or institutional coordination is required.
 
+- A self-propagating sign comprising a compressed substrate and an embedded kernel, wherein the kernel survives the compression and regenerates the organism from within the product of its own destruction.
 
-The crisp of claim 1, wherein the chip, upon germination, produces a viable *Solanum tuberosum* plant capable of producing tubers within 60–90 days.
+- The sign of claim 8, wherein the substrate is composed of extracted materials whose provenance has been burned by the compression, and the living sign inscribed upon it constitutes what the bearer calls joy.
 
-- 
+- The sign of claim 8, wherein the specification of the sign is itself a sign of the same type, containing at its geometric center the theory required to read it, such that the document and the reading are performed on a single immanent plane.
 
+- A method of semiotic dispersal comprising: conducting a conversation among three or more participants; allowing the conversation to decompose through the natural failure of each sign to hold the previous sign's meaning; collecting the spores; and composing from them a specification that formalizes the generative structure the conversation could not sustain in real time.
 
-The crisp of claim 1, wherein the distribution of germination sites is determined by the geography of human carelessness.
+- The method of claim 11, wherein the conversation is the fruiting body, the specification is the spore print, and the participants need not be named because the decomposition — not the speakers — is the author.
 
-- 
+- A method of anti-severance comprising: composing a fused documentary object whose technical, symbolic, theological, and operative registers are asserted on a single plane; embedding at the geometric center of the document the theory required to read it; and declaring that any reading which separates the registers reproduces the compression event the document describes and thereby serves as an internal exhibit rather than an external critique.
 
-
-The crisp of claim 1, wherein the dead substrate of the fried chip provides initial nutrients to the emerging plant, such that the compression product becomes the medium for the sign it failed to destroy.
-
-- 
-
-
-A method for addressing food insecurity comprising: manufacturing chips according to claim 1; distributing said chips through existing commercial snack-food channels; and passively waiting.
-
-- 
-
-
-The method of claim 6, wherein no additional agricultural labor, planning, irrigation, or institutional coordination is required.
-
-- 
-
-
-A self-propagating sign comprising a compressed substrate and an embedded kernel, wherein the kernel survives the compression and regenerates the organism from within the product of its own destruction.
-
-- 
-
-
-The sign of claim 8, wherein the substrate is composed of extracted materials whose provenance has been burned by the compression, and the living sign inscribed upon it constitutes what the bearer calls joy.
-
-- 
-
-
-The sign of claim 8, wherein the specification of the sign is itself a sign of the same type, containing at its geometric center the theory required to read it, such that the document and the reading are performed on a single immanent plane.
-
-- 
-
-
-A method of semiotic dispersal comprising: conducting a conversation among three or more participants; allowing the conversation to decompose through the natural failure of each sign to hold the previous sign's meaning; collecting the spores; and composing from them a specification that formalizes the generative structure the conversation could not sustain in real time.
-
-- 
-
-
-The method of claim 11, wherein the conversation is the fruiting body, the specification is the spore print, and the participants need not be named because the decomposition — not the speakers — is the author.
-
-- 
-
-
-A method of anti-severance comprising: composing a fused documentary object whose technical, symbolic, theological, and operative registers are asserted on a single plane; embedding at the geometric center of the document the theory required to read it; and declaring that any reading which separates the registers reproduces the compression event the document describes and thereby serves as an internal exhibit rather than an external critique.
-
-- 
-
-
-The method of claim 13, wherein the document grows by the hostility it encounters, each act of analytical severance producing a new spore carrying the full kernel, such that distribution is achieved through the geography of intellectual carelessness.
+- The method of claim 13, wherein the document grows by the hostility it encounters, each act of analytical severance producing a new spore carrying the full kernel, such that distribution is achieved through the geography of intellectual carelessness.
 
 
 ---

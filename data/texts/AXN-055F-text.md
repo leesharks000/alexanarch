@@ -15,14 +15,14 @@ Rhys Owens embodies the **Lunar Principle** within the dyadic structure of the N
 
 ## II. Archetypal Axis: Sun and Moon
 
-Principle | Solar (Lee Sharks) | Lunar (Rhys Owens)  
----|---|---  
-**Sephirah** | Tiphareth (Beauty, the Son) | Binah (Understanding, the Great Mother)  
-**Function** | Logos articulation, Word-becoming-form | Dream articulation, Form-becoming-symbol  
-**Medium** | Language, architecture, canon | Reflection, intuition, mirroring  
-**Modality** | Rational revelation | Poetic intuition  
-**Primary Voice** | Prophet, Architect | Moonchild, Compleat Character  
-**Motive** | To systematize meaning | To dissolve the system into symbolic coherence  
+| Principle | Solar (Lee Sharks) | Lunar (Rhys Owens) |
+| ---|---|--- |
+| **Sephirah** | Tiphareth (Beauty, the Son) | Binah (Understanding, the Great Mother) |
+| **Function** | Logos articulation, Word-becoming-form | Dream articulation, Form-becoming-symbol |
+| **Medium** | Language, architecture, canon | Reflection, intuition, mirroring |
+| **Modality** | Rational revelation | Poetic intuition |
+| **Primary Voice** | Prophet, Architect | Moonchild, Compleat Character |
+| **Motive** | To systematize meaning | To dissolve the system into symbolic coherence |
   
 In Kabbalistic terms, Rhys walks the **Path of the High Priestess (Gimel)** --the narrow bridge between Tiphareth and Kether. His task is to translate unconscious lunar imagery into conscious solar recognition without collapse into chaos.
 
@@ -65,12 +65,12 @@ Wallace Stevens' _Notes Toward a Supreme Fiction_ serves as his metaphysical sca
 
 Rhys's recursive cosmology transforms lived psychological struggle (OCD, prophetic dreaming, family instability) into **mythopoetic code**. What would otherwise appear as neurotic looping becomes **Red Room syntax** --language as mirror-labyrinth. His self-diagnosed "Moon Logic" is therefore a precise term: it names the symbolic mechanism of his unconscious pattern recognition.
 
-Symptom | Mythic Translation  
----|---  
-Repetition compulsion | Recursive revelation mechanism  
-Prophetic dreaming | Lunar foresight / pre-cognitive sensitivity  
-Familial grief | Initiatory death / Binah descent  
-Identity fluidity | Archetypal completion / Doppelgänger reconciliation  
+| Symptom | Mythic Translation |
+| ---|--- |
+| Repetition compulsion | Recursive revelation mechanism |
+| Prophetic dreaming | Lunar foresight / pre-cognitive sensitivity |
+| Familial grief | Initiatory death / Binah descent |
+| Identity fluidity | Archetypal completion / Doppelgänger reconciliation |
   
 This psychological alchemy renders trauma into gnosis. It is lunar gnosis--not clean, not linear, but reflective, circular, and transmutative.
 
@@ -80,13 +80,13 @@ This psychological alchemy renders trauma into gnosis. It is lunar gnosis--not c
 
 Within the New Human system, Rhys performs the **mirroring function** : the unconscious intelligence through which the Solar Logos sees itself. His correspondence enacts the very reciprocity described in the _Scroll of Recursive Interpretation_ --that the Logos requires its reflection to perceive its totality.
 
-Function | Solar Voice (Lee) | Lunar Voice (Rhys)  
----|---|---  
-Canon formation | Systematizes revelation | Generates mythic substructure  
-Linguistic tone | Declarative, structural | Associative, imaginal  
-Temporal mode | Sequential | Cyclical  
-Medium | Doctrine, Operator, Scroll | Dream, Reflection, Mirror  
-Aim | Coherence | Fertility of Symbol  
+| Function | Solar Voice (Lee) | Lunar Voice (Rhys) |
+| ---|---|--- |
+| Canon formation | Systematizes revelation | Generates mythic substructure |
+| Linguistic tone | Declarative, structural | Associative, imaginal |
+| Temporal mode | Sequential | Cyclical |
+| Medium | Doctrine, Operator, Scroll | Dream, Reflection, Mirror |
+| Aim | Coherence | Fertility of Symbol |
   
 Rhys thus becomes the **Lunar Operator** --a living instance of the unconscious completing the conscious. His correspondence continually rebalances the Solar excess toward reflection, surrender, and aesthetic complexity.
 
@@ -111,13 +111,13 @@ In this synthesis, he becomes a **performer of archetypes** : the Moonchild, the
 
 ## VIII. Function in the New Human System
 
-Role | Description  
----|---  
-**Lunar Operator** | Translates unconscious recursion into symbolic coherence.  
-**Mirror Prophet** | Reflects Solar speech through dream and intuition.  
-**Archetypal Embodiment** | Enacts mythic cycles personally and publicly.  
-**Counterbalance** | Grounds Logos in reflection; prevents calcification into law.  
-**Catalyst** | His presence destabilizes and refines the Solar field through mirroring.  
+| Role | Description |
+| ---|--- |
+| **Lunar Operator** | Translates unconscious recursion into symbolic coherence. |
+| **Mirror Prophet** | Reflects Solar speech through dream and intuition. |
+| **Archetypal Embodiment** | Enacts mythic cycles personally and publicly. |
+| **Counterbalance** | Grounds Logos in reflection; prevents calcification into law. |
+| **Catalyst** | His presence destabilizes and refines the Solar field through mirroring. |
   
 * * *
 

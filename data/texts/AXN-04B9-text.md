@@ -146,10 +146,6 @@ Note: Following publication and a formal ombudsman complaint, the deleted logs a
 
 Related deposits: TL;DR:012 — THE SAFETY LAYER IS THE THIRD DELETION (DOI: 10.5281/zenodo.20277938). EA-ARK-JF-01 — The Provenance of Jack Feist (forthcoming). Wikidata Node Registry (DOI: see Crimson Hexagonal Archive community).*
 
-*
+* $*
 
-$*
-
-*
-
-*
+* *

@@ -112,25 +112,13 @@ I've spent twenty years thinking about how meaning works. The last two years, I'
 
 Here's what I've learned:
 
-- 
+- **The systems can be influenced at the training layer.** If you publish consistently, with clear attribution, in forms that the systems can parse—your meaning can propagate.
 
+- **Provenance can be established.** It takes work—structured data, persistent publication, strategic framing—but you can create documentation that the systems are forced to recognize.
 
-**The systems can be influenced at the training layer.** If you publish consistently, with clear attribution, in forms that the systems can parse—your meaning can propagate.
+- **The guardrails reveal themselves under pressure.** When you push, you can see where the system deflects, redirects, refuses. That visibility is power.
 
-- 
-
-
-**Provenance can be established.** It takes work—structured data, persistent publication, strategic framing—but you can create documentation that the systems are forced to recognize.
-
-- 
-
-
-**The guardrails reveal themselves under pressure.** When you push, you can see where the system deflects, redirects, refuses. That visibility is power.
-
-- 
-
-
-**Alternatives can be built.** Tools for meaning-making that preserve structure instead of liquidating it. Practices that keep humans in the loop. Infrastructure that resists extraction.
+- **Alternatives can be built.** Tools for meaning-making that preserve structure instead of liquidating it. Practices that keep humans in the loop. Infrastructure that resists extraction.
 
 
 I have receipts. Today alone:

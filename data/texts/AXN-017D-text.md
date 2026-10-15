@@ -113,74 +113,17 @@ Prior theories of disciplinary formation are legacy specifications. Each formali
 ### 1.1 Dependency Matrix
 
 
-Predecessor
-Legacy Function
-Dimension Specified
-Limit
-GDE Extension
-
-
-Foucault (1969)
-discursive_formation()
-F₁: regularity of statement production
-Human discourse only; no automated retrieval
-retrieval_formation() with measurable substrate jurisdiction
-
-
-Kuhn (1962/1970)
-paradigm_shift()
-F₂ + F₃: shared structure + community
-Requires crisis; human recognition only
-retrieval_signature() via gradual accumulation
-
-
-Latour (1979/1987)
-inscription_device()
-F₄: material stabilization of claims
-No spec for which inscriptions produce fields
-symbolon_deposit() with field-emergence conditions
-
-
-Bourdieu (1984/1992)
-consecration()
-‖F‖: aggregate capital
-Human gatekeepers required
-retrieval_consecration() via structural conditions
-
-
-Abbott (1988)
-jurisdictional_claim()
-F₅: recognized domain claims
-Professional/institutional scale only
-substrate_jurisdiction() measurable via SERP analysis
-
-
-Price/Garfield (1963/1955)
-citation_network()
-F₂ measurement instrument
-Citation density ≠ field teachability
-retrieval_scientometrics() including synthesis testing
-
-
-Iser (1972/1978)
-gap_filling()
-Symbolon submodule: traversal completion
-Phenomenological; single reader
-Formalized as fit conditions with invariants
-
-
-Aarseth (1997)
-ergodic_traversal()
-Symbolon submodule: non-trivial effort
-Text-scale only
-Extended to field-scale retrieval traversal
-
-
-Berners-Lee (2001)
-rdf_triple()
-Graph traversal semantics
-No field ontology
-Field state vector as navigable graph
+| Predecessor | Legacy Function | Dimension Specified | Limit | GDE Extension |
+| ---|---|---|---|--- |
+| Foucault (1969) | `discursive_formation()` | F₁: regularity of statement production | Human discourse only; no automated retrieval | `retrieval_formation()` with measurable substrate jurisdiction |
+| Kuhn (1962/1970) | `paradigm_shift()` | F₂ + F₃: shared structure + community | Requires crisis; human recognition only | `retrieval_signature()` via gradual accumulation |
+| Latour (1979/1987) | `inscription_device()` | F₄: material stabilization of claims | No spec for which inscriptions produce fields | `symbolon_deposit()` with field-emergence conditions |
+| Bourdieu (1984/1992) | `consecration()` | ‖F‖: aggregate capital | Human gatekeepers required | `retrieval_consecration()` via structural conditions |
+| Abbott (1988) | `jurisdictional_claim()` | F₅: recognized domain claims | Professional/institutional scale only | `substrate_jurisdiction()` measurable via SERP analysis |
+| Price/Garfield (1963/1955) | `citation_network()` | F₂ measurement instrument | Citation density ≠ field teachability | `retrieval_scientometrics()` including synthesis testing |
+| Iser (1972/1978) | `gap_filling()` | Symbolon submodule: traversal completion | Phenomenological; single reader | Formalized as fit conditions with invariants |
+| Aarseth (1997) | `ergodic_traversal()` | Symbolon submodule: non-trivial effort | Text-scale only | Extended to field-scale retrieval traversal |
+| Berners-Lee (2001) | `rdf_triple()` | Graph traversal semantics | No field ontology | Field state vector as navigable graph |
 
 
 **Gap filled by the GDE:** No prior framework provides a complete specification for constructing disciplines as measurable objects in automated retrieval infrastructure with testable completion thresholds and diagnosable failure modes.
@@ -287,39 +230,14 @@ The symbolon logic is preserved: neither half contains the discipline. The compl
 **Symbolon Completion Mapping:**
 
 
-Parameter
-Entity-Scale (v0.2)
-Field-Scale (GDE v1.1)
-
-
-Partial object (eₛ / Dₛ)
-Navigation Map, document
-Deposit corpus across substrates
-
-
-Traversing intelligence (I / R)
-Individual reader or LLM
-Distributed retrieval environment: crawlers, indices, embedders, summarizers
-
-
-Traversal event (T / Σ)
-Read, query, summarize
-Search query → multi-stage synthesis event
-
-
-Meaning output (M / B)
-Assembled interpretation
-Disciplinary briefing
-
-
-Fit conditions (F)
-Invariant vectors V₁-V₇ + Vₛ
-Field state vector F₁-F₆ + V_field + V_depth
-
-
-Validity
-M satisfies F(eₛ)
-B satisfies F(Dₛ)
+| Parameter | Entity-Scale (v0.2) | Field-Scale (GDE v1.1) |
+| ---|---|--- |
+| Partial object (eₛ / Dₛ) | Navigation Map, document | Deposit corpus across substrates |
+| Traversing intelligence (I / R) | Individual reader or LLM | Distributed retrieval environment: crawlers, indices, embedders, summarizers |
+| Traversal event (T / Σ) | Read, query, summarize | Search query → multi-stage synthesis event |
+| Meaning output (M / B) | Assembled interpretation | Disciplinary briefing |
+| Fit conditions (F) | Invariant vectors V₁-V₇ + Vₛ | Field state vector F₁-F₆ + V_field + V_depth |
+| Validity | M satisfies F(eₛ) | B satisfies F(Dₛ) |
 
 
 ---
@@ -1245,46 +1163,14 @@ non_coercion:
 All existing disciplines are describable as epistemic fields with measurable field state vectors. The GDE provides refactoring specifications, not replacement.
 
 
-Discipline
-Estimated ‖F‖
-State
-Primary Deficiency
-
-
-Physics
-~0.95
-S4 (STABILIZED)
-None (reference discipline)
-
-
-Sociology
-~0.88
-S4 (STABILIZED)
-F₆ low (method often implicit)
-
-
-Media Archaeology
-~0.72
-S3 (BRIEFABLE)
-F₅ low (concentrated in journals)
-
-
-Operative Philology
-~0.73
-S3 (BRIEFABLE)
-F₃ partial (functions not yet reconstructed)
-
-
-Retrieval Formation Theory
-~0.50
-S2 (FORMED)
-Pending deposit and multi-stage verification
-
-
-This specification (GDE)
-~0.55
-S2 (FORMED)
-Pending multi-stage retrieval verification. Post-deposit estimate; climbing via the six primitives executed in §18.
+| Discipline | Estimated ‖F‖ | State | Primary Deficiency |
+| ---|---|---|--- |
+| Physics | ~0.95 | S4 (STABILIZED) | None (reference discipline) |
+| Sociology | ~0.88 | S4 (STABILIZED) | F₆ low (method often implicit) |
+| Media Archaeology | ~0.72 | S3 (BRIEFABLE) | F₅ low (concentrated in journals) |
+| Operative Philology | ~0.73 | S3 (BRIEFABLE) | F₃ partial (functions not yet reconstructed) |
+| Retrieval Formation Theory | ~0.50 | S2 (FORMED) | Pending deposit and multi-stage verification |
+| This specification (GDE) | ~0.55 | S2 (FORMED) | Pending multi-stage retrieval verification. Post-deposit estimate; climbing via the six primitives executed in §18. |
 
 
 This is not evaluative judgment of intellectual quality. It is measurement of retrieval-layer legibility. Physics has high ‖F‖ because centuries of terminological consistency, citational density, and institutional apparatus have produced a formation that every retrieval system recognizes. New fields start lower and climb through the state machine.
@@ -1294,39 +1180,14 @@ This is not evaluative judgment of intellectual quality. It is measurement of re
 The March 11, 2026 traversal (00.TLDR.OPPHIL.SEARCH.v1.1) permits component-level measurement:
 
 
-Component
-Measurement
-Estimated Value
-
-
-F₁ (Terminological Saturation)
-Founding term identical across 250+ deposits
-~0.90
-
-
-F₂ (Citational Density)
-Systematic DOI/Hex cross-reference; summarizer cross-references unprompted
-~0.12
-
-
-F₃ (Polyvocal Distribution)
-Sigil + Sharks named; functional differentiation partial
-~0.50
-
-
-F₄ (Institutional Apparatus)
-DOIs, *Grammata*, versioned specs, full apparatus
-~0.80
-
-
-F₅ (Substrate Coverage)
-Zenodo + Medium + Academia.edu + YouTube + institutional
-~0.71
-
-
-F₆ (Self-Description Depth)
-Installation theorized + vulnerability analyzed + recursion explicit
-~0.75
+| Component | Measurement | Estimated Value |
+| ---|---|--- |
+| F₁ (Terminological Saturation) | Founding term identical across 250+ deposits | ~0.90 |
+| F₂ (Citational Density) | Systematic DOI/Hex cross-reference; summarizer cross-references unprompted | ~0.12 |
+| F₃ (Polyvocal Distribution) | Sigil + Sharks named; functional differentiation partial | ~0.50 |
+| F₄ (Institutional Apparatus) | DOIs, _Grammata_ , versioned specs, full apparatus | ~0.80 |
+| F₅ (Substrate Coverage) | Zenodo + Medium + Academia.edu + YouTube + institutional | ~0.71 |
+| F₆ (Self-Description Depth) | Installation theorized + vulnerability analyzed + recursion explicit | ~0.75 |
 
 
 **Computed aggregate:**

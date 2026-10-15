@@ -68,17 +68,11 @@ load time by walking every section.
 
 The text uses Unicode superscripts (¹²³⁴⁵⁶⁷⁸⁹⁰) for two purposes:
 
-- 
-
-
-**Footnote references** — at the end of a sentence, after a quote, or
+- **Footnote references** — at the end of a sentence, after a quote, or
 adjacent to whitespace.
 Examples: …catalogue.³  /  …inside it."¹³⁸  /  arrived from the future).¹⁴²
 
-- 
-
-
-**Identifier suffixes on letters** — most importantly, "Golden Ticket"
+- **Identifier suffixes on letters** — most importantly, "Golden Ticket"
 identifiers in the codicological apparatus.
 Examples: G⁴⁶  /  G³¹–G⁴⁵  /  G¹–G³ | §I.
 

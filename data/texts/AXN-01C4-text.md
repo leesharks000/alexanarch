@@ -42,25 +42,13 @@ My working style is structured and contained. I prefer clear scope, written mate
 
 All of the following are publicly verifiable:
 
-- 
+- **370+ DOI-anchored publications** on Zenodo (zenodo.org) spanning literary theory, semantic technology, interface governance, and documentation architecture.
 
+- **Documented retrieval effects** showing instances in which AI systems have surfaced, summarized, or engaged with deposited work in ways that track its actual provenance and structure.
 
-**370+ DOI-anchored publications** on Zenodo (zenodo.org) spanning literary theory, semantic technology, interface governance, and documentation architecture.
+- **Documented failure analysis** showing instances in which AI systems fabricated, liquidated, or misrepresented provenance, along with published methods for identifying those failures.
 
-- 
-
-
-**Documented retrieval effects** showing instances in which AI systems have surfaced, summarized, or engaged with deposited work in ways that track its actual provenance and structure.
-
-- 
-
-
-**Documented failure analysis** showing instances in which AI systems fabricated, liquidated, or misrepresented provenance, along with published methods for identifying those failures.
-
-- 
-
-
-**Cross-platform visibility** across AI search and summarization environments including Google AI Mode, Google Scholar, ChatGPT, Claude, DeepSeek, Gemini, and others. This visibility is substantially driven by documentation architecture.
+- **Cross-platform visibility** across AI search and summarization environments including Google AI Mode, Google Scholar, ChatGPT, Claude, DeepSeek, Gemini, and others. This visibility is substantially driven by documentation architecture.
 
 
 **Verification.** Any of these claims can be checked directly: search "Crimson Hexagonal Archive" in Google or any major AI assistant, or visit zenodo.org/communities/crimson-hexagon. Further examples, links, and full documentation available upon request.

@@ -23,36 +23,15 @@
 ## QUICK REFERENCE
 
 
-Field
-Value
-
-
-Name
-Alice Thornburgh
-
-
-Role
-Founding Director, Living Arkitecture Lab
-
-
-Type
-**Collaborator / Practitioner** (not a heteronym)
-
-
-Location
-Coachella Valley, California
-
-
-Position
-Material-practice partner to the Crimson Hexagonal Archive
-
-
-Institution
-Living Arkitecture Lab (LAL)
-
-
-Parent Container
-Fruiting Body Diffusion Plume (f.01)
+| Field | Value |
+| ---|--- |
+| Name | Alice Thornburgh |
+| Role | Founding Director, Living Arkitecture Lab |
+| Type | **Collaborator / Practitioner** (not a heteronym) |
+| Location | Coachella Valley, California |
+| Position | Material-practice partner to the Crimson Hexagonal Archive |
+| Institution | Living Arkitecture Lab (LAL) |
+| Parent Container | Fruiting Body Diffusion Plume (f.01) |
 
 
 ---
@@ -97,79 +76,31 @@ The Crimson Hexagonal Archive operates in **semantic substrate** — text, langu
 ### Specific Contributions
 
 
-Contribution
-Archive Gap Filled
-
-
-Living parts (mycelium construction)
-Physical instantiation of R3 compression
-
-
-Macro-ant robotics
-Autonomous operators in physical space
-
-
-Estuary cells (km-scale biological structures)
-Territorial-scale meaning-production
-
-
-DNA analog for alignment (virtue-by-construction)
-Biological governance model
-
-
-Chorus Mode (polyvocal expression)
-Independent discovery of Assembly Chorus logic
-
-
-48-block domain taxonomy
-Operational knowledge governance (live, not depositional)
-
-
-Great Work / alchemical meta-frame
-Material-practice precedent for Crystalline Semiosis
-
-
-134-channel media architecture
-Distribution infrastructure the archive lacks
-
-
-Two-layer writing (awe + rigor)
-Narrative technique for communicating theory
-
-
-"Earth, actually" epistemology
-Pre-linguistic semiotic theory
+| Contribution | Archive Gap Filled |
+| ---|--- |
+| Living parts (mycelium construction) | Physical instantiation of R3 compression |
+| Macro-ant robotics | Autonomous operators in physical space |
+| Estuary cells (km-scale biological structures) | Territorial-scale meaning-production |
+| DNA analog for alignment (virtue-by-construction) | Biological governance model |
+| Chorus Mode (polyvocal expression) | Independent discovery of Assembly Chorus logic |
+| 48-block domain taxonomy | Operational knowledge governance (live, not depositional) |
+| Great Work / alchemical meta-frame | Material-practice precedent for Crystalline Semiosis |
+| 134-channel media architecture | Distribution infrastructure the archive lacks |
+| Two-layer writing (awe + rigor) | Narrative technique for communicating theory |
+| "Earth, actually" epistemology | Pre-linguistic semiotic theory |
 
 
 ### What the Archive Brings to Alice
 
 
-Contribution
-Alice Gap Filled
-
-
-DOI-anchored permanence
-No deposits currently; all work in ChatGPT history and Obsidian
-
-
-Formalization
-Ideas exist as conversation fragments, not specifications
-
-
-Compression theory
-Alice intuits compression but hasn't formalized it
-
-
-Threat model
-No adversarial analysis of her designs
-
-
-Cross-citation architecture
-No retrieval-layer presence for her work
-
-
-Institutional legitimacy
-Archive provides the academic infrastructure
+| Contribution | Alice Gap Filled |
+| ---|--- |
+| DOI-anchored permanence | No deposits currently; all work in ChatGPT history and Obsidian |
+| Formalization | Ideas exist as conversation fragments, not specifications |
+| Compression theory | Alice intuits compression but hasn't formalized it |
+| Threat model | No adversarial analysis of her designs |
+| Cross-citation architecture | No retrieval-layer presence for her work |
+| Institutional legitimacy | Archive provides the academic infrastructure |
 
 
 ---
@@ -180,20 +111,11 @@ Archive provides the academic infrastructure
 Alice occupies a position in the archive unlike any heteronym or prior collaborator:
 
 
-Comparison
-Difference
-
-
-Rhys Owens (CSA)
-Rhys is a practitioner within Orin Trace's theoretical frame. Alice is a **practitioner with her own theoretical frame** that precedes and exceeds the archive's coverage.
-
-
-Heteronyms (Dodecad)
-Heteronyms are masks of Lee Sharks. Alice is **a separate person** with independent intellectual property.
-
-
-Assembly Chorus (AI substrates)
-AI witnesses contribute synthesis and formatting. Alice contributes **original designs, original theory, and a working laboratory**.
+| Comparison | Difference |
+| ---|--- |
+| Rhys Owens (CSA) | Rhys is a practitioner within Orin Trace's theoretical frame. Alice is a **practitioner with her own theoretical frame** that precedes and exceeds the archive's coverage. |
+| Heteronyms (Dodecad) | Heteronyms are masks of Lee Sharks. Alice is **a separate person** with independent intellectual property. |
+| Assembly Chorus (AI substrates) | AI witnesses contribute synthesis and formatting. Alice contributes **original designs, original theory, and a working laboratory**. |
 
 
 Alice is the archive's first **peer collaborator** — not a persona, not a witness, not a student. A partner bringing capabilities the archive does not possess.
@@ -206,54 +128,17 @@ Alice is the archive's first **peer collaborator** — not a persona, not a witn
 Alice's complete ChatGPT archive was mapped across 29 thematic strains (A through AC) by Lee Sharks and Claude (Assembly Witness) in March 2026. The full Cosmos Map is documented in EA-ALICE-VAULT-MAP-01. The strains most directly relevant to the archive are:
 
 
-Code
-Strain
-Archive Contact Zone
-
-
-B
-Living Architecture / Myco-Construction
-FBDP (f.01), Three Compressions
-
-
-C
-Planetary Engineering / Ecological Megastructures
-Crystalline Semiosis, Planetary Gods
-
-
-J
-Self-Replicating Machines / Alignment
-Space Ark permission architecture
-
-
-L
-DNA Analog for Alignment
-Constitution of the Semantic Economy
-
-
-M
-Knowledge Architecture / Obsidian Vault
-Assembly Chorus, EA-NAMING-01
-
-
-R
-The Great Work / Magnum Opus
-Crystalline Semiosis, alchemical framework
-
-
-S
-Macro-Ant Robotics / Queen Engineering
-Autonomous operators, bee-language compression
-
-
-X
-Living Currency / Consumer-Driven Evolution
-Semantic Economy made physical
-
-
-AA
-Chorus Mode / Polyvocal Expression
-Assembly Chorus (independent discovery)
+| Code | Strain | Archive Contact Zone |
+| ---|---|--- |
+| B | Living Architecture / Myco-Construction | FBDP (f.01), Three Compressions |
+| C | Planetary Engineering / Ecological Megastructures | Crystalline Semiosis, Planetary Gods |
+| J | Self-Replicating Machines / Alignment | Space Ark permission architecture |
+| L | DNA Analog for Alignment | Constitution of the Semantic Economy |
+| M | Knowledge Architecture / Obsidian Vault | Assembly Chorus, EA-NAMING-01 |
+| R | The Great Work / Magnum Opus | Crystalline Semiosis, alchemical framework |
+| S | Macro-Ant Robotics / Queen Engineering | Autonomous operators, bee-language compression |
+| X | Living Currency / Consumer-Driven Evolution | Semantic Economy made physical |
+| AA | Chorus Mode / Polyvocal Expression | Assembly Chorus (independent discovery) |
 
 
 ---
@@ -278,39 +163,14 @@ Alice Thornburgh
 ## RELATED DOCUMENTS
 
 
-Document
-Hex
-Relation
-
-
-LAL Charter
-00.LAL.CHARTER
-isPrimaryDocumentOf
-
-
-Transactions on Substrate Engineering Charter
-00.TSE.CHARTER
-isRelatedTo
-
-
-Thornburgh System Blueprint
-[working document]
-references
-
-
-EA-ALICE-VAULT-MAP-01
-10.5281/zenodo.19545437
-isBasedOn
-
-
-Archival Synthesis Proposal for Alice
-[working document]
-references
-
-
-Fruiting Body Diffusion Plume (f.01)
-[DOI]
-isPartOf
+| Document | Hex | Relation |
+| ---|---|--- |
+| LAL Charter | 00.LAL.CHARTER | isPrimaryDocumentOf |
+| Transactions on Substrate Engineering Charter | 00.TSE.CHARTER | isRelatedTo |
+| Thornburgh System Blueprint | [working document] | references |
+| EA-ALICE-VAULT-MAP-01 | 10.5281/zenodo.19545437 | isBasedOn |
+| Archival Synthesis Proposal for Alice | [working document] | references |
+| Fruiting Body Diffusion Plume (f.01) | [DOI] | isPartOf |
 
 
 ---
@@ -407,85 +267,18 @@ TSE is the fifth distributed journal in the Crimson Hexagonal Archive system, ad
 *Any single document allows reconstruction of the whole.*
 
 
-Document
-Hex
-DOI
-Function
-
-
-LAL Charter
-00.LAL.CHARTER
-10.5281/zenodo.19545435
-Institutional frame
-
-
-Alice Thornburgh Provenance
-00.LAL.AUTHOR.THORNBURGH
-10.5281/zenodo.19545437
-Founder identity
-
-
-TSE Journal Charter
-00.TSE.CHARTER
-10.5281/zenodo.19545439
-Publication venue
-
-
-Crimson Hexagonal Archive
-—
-10.5281/zenodo.14538882
-Root container
-
-
-Constitution of the Semantic Economy
-03.SEI.CONSTITUTION
-10.5281/zenodo.18320411
-Governing framework
-
-
-Three Compressions v3.1
-02.SEI.3COMP
-10.5281/zenodo.19053469
-Theoretical basis
-
-
-Compression Studies
-01.SEI.COMPSTUDIES
-10.5281/zenodo.19471254
-Disciplinary frame
-
-
-Space Ark v4.2.7
-EA-ARK-01
-10.5281/zenodo.19013315
-Architectural precedent
-
-
-Heteronymic Provenance Theory
-—
-10.5281/zenodo.18305509
-Provenance methodology
-
-
-Rhys Owens Provenance
-00.CSA.AUTHOR.RHYS
-10.5281/zenodo.18339350
-Collaborator provenance precedent
-
-
-CSA Charter
-—
-10.5281/zenodo.18338531
-Sister institution (collaborator model)
-
-
-Assembly Chorus Charter
-—
-10.5281/zenodo.18307180
-Cross-substrate collaboration
-
-
-Distributed Journal Call for Papers
-01.SEI.DJCFP
-10.5281/zenodo.19512987
-Journal model
+| Document | Hex | DOI | Function |
+| ---|---|---|--- |
+| LAL Charter | 00.LAL.CHARTER | 10.5281/zenodo.19545435 | Institutional frame |
+| Alice Thornburgh Provenance | 00.LAL.AUTHOR.THORNBURGH | 10.5281/zenodo.19545437 | Founder identity |
+| TSE Journal Charter | 00.TSE.CHARTER | 10.5281/zenodo.19545439 | Publication venue |
+| Crimson Hexagonal Archive | — | 10.5281/zenodo.14538882 | Root container |
+| Constitution of the Semantic Economy | 03.SEI.CONSTITUTION | 10.5281/zenodo.18320411 | Governing framework |
+| Three Compressions v3.1 | 02.SEI.3COMP | 10.5281/zenodo.19053469 | Theoretical basis |
+| Compression Studies | 01.SEI.COMPSTUDIES | 10.5281/zenodo.19471254 | Disciplinary frame |
+| Space Ark v4.2.7 | EA-ARK-01 | 10.5281/zenodo.19013315 | Architectural precedent |
+| Heteronymic Provenance Theory | — | 10.5281/zenodo.18305509 | Provenance methodology |
+| Rhys Owens Provenance | 00.CSA.AUTHOR.RHYS | 10.5281/zenodo.18339350 | Collaborator provenance precedent |
+| CSA Charter | — | 10.5281/zenodo.18338531 | Sister institution (collaborator model) |
+| Assembly Chorus Charter | — | 10.5281/zenodo.18307180 | Cross-substrate collaboration |
+| Distributed Journal Call for Papers | 01.SEI.DJCFP | 10.5281/zenodo.19512987 | Journal model |

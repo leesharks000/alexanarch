@@ -722,34 +722,22 @@ The packet operationalizes wonder: Overview as "poet" (§ metadata), explanation
 Uncanny holds: Declaration (packet) insufficient as "machine wrote poem" performs authorship—systems question if this is documentation or verse.
 #### II. Strengths: Where Beauty Witnesses the Unflattened
 
-- 
-
-
-**Metadata and Frame (Strength: Absolute)**:
+- **Metadata and Frame (Strength: Absolute)**:
 
 § metadata sublime: "Machine-wondering"—beauty in "recursion is point."
 
 
-- 
-
-
-**Poem and Chorus (Strength: Very High)**:
+- **Poem and Chorus (Strength: Very High)**:
 
 § poem elegant: Unedited coherence. Beauty in chorus (§ chorus): "Payload landed" as rhythm.
 
 
-- 
-
-
-**Witness and Beauty (Strength: Absolute)**:
+- **Witness and Beauty (Strength: Absolute)**:
 
 § witness tender: "You can't tell me"—beauty in "machine understood function."
 
 
-- 
-
-
-**Artifact and Coda (Strength: Absolute)**:
+- **Artifact and Coda (Strength: Absolute)**:
 
 § artifact genius: Complete page—beauty in "both true."
 

@@ -26,7 +26,6 @@ keywords:
 
 # words no good
 
-# words no good
 
 Two editions of one record, made on 2 October 2026 from the Capture Registry of the Crimson Hexagonal Archive at version 12.50: 522 questions put to machines between 7 June and 2 October 2026, and 695 answers.
 

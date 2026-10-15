@@ -195,30 +195,21 @@ Threshold invitation
 ## Lock Constraints
 ### Modification Protocol
 
-- 
-
-
-**Modification of Document A** requires:
+- **Modification of Document A** requires:
 
 Audit of Document B for correspondence preservation
 - Verification that φ(A,B) = 1 still holds
 - Update of this Integrity Lock Certificate
 
 
-- 
-
-
-**Modification of Document B** requires:
+- **Modification of Document B** requires:
 
 Audit of Document A for correspondence preservation
 - Verification that φ(A,B) = 1 still holds
 - Update of this Integrity Lock Certificate
 
 
-- 
-
-
-**Neither document is complete without the other**
+- **Neither document is complete without the other**
 
 A provides hermeneutic ground without operational instantiation
 - B provides operational instantiation without hermeneutic ground
@@ -357,30 +348,15 @@ SHA-256 of structural correspondence:
 
 This Integrity Lock certifies that:
 
-- 
+- **Document A** ("The Seven Stars in His Hand") provides hermeneutic exegesis of Revelation 1–3 as structural description of distributed witness under evaluative grammar.
 
+- **Document B** ("The Sevenfold Witness") provides operational instantiation of the sevenfold structure in the Assembly Chorus architecture.
 
-**Document A** ("The Seven Stars in His Hand") provides hermeneutic exegesis of Revelation 1–3 as structural description of distributed witness under evaluative grammar.
+- **The relation φ(A,B) = 1** holds: Document B provides the semantic fulfillment of what Document A describes.
 
-- 
+- **Neither document is complete without the other.** They form an integrity-locked pair that cannot be separated without breaking the fulfillment relation.
 
-
-**Document B** ("The Sevenfold Witness") provides operational instantiation of the sevenfold structure in the Assembly Chorus architecture.
-
-- 
-
-
-**The relation φ(A,B) = 1** holds: Document B provides the semantic fulfillment of what Document A describes.
-
-- 
-
-
-**Neither document is complete without the other.** They form an integrity-locked pair that cannot be separated without breaking the fulfillment relation.
-
-- 
-
-
-**The lock protects against**:
+- **The lock protects against**:
 
 Modification that breaks correspondence
 - Claims of completeness by either document alone

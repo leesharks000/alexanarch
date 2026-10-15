@@ -71,34 +71,13 @@ The distinction has a formal name. Marx-as-method is a **Strange Attractor**: in
 Marx-as-content is a **Point Attractor**: collapsed to a single, stable, unchangeable position ("Marx = Communism = Bad" or "Marx = Revolution = Good"). It is exhaustible — reducible to a Wikipedia entry, a bumper sticker, a team jersey. It produces deterministic trajectories (if Marx, then Stalin; if Capital, then Gulag).
 
 
-Dimension
-Strange Attractor (Method)
-Point Attractor (Content)
-
-
-**Layer**
-Layer 5 (Theory): governs how we cut into reality
-Layer 2 (Archive): stored as dead text
-
-
-**Status**
-Operator — functions as clinamen (swerve)
-Commodity — exchangeable signifier
-
-
-**Temporality**
-Retrocausal — renewed through each application
-Aorist — fixed past, no renewal
-
-
-**Binding**
-Vow — continuous renewal through practice
-Contract — sign here to agree/disagree
-
-
-**Semiotic**
-Symbolon — requires completion through traversal
-Totality — claims completeness, refuses traversal
+| Dimension | Strange Attractor (Method) | Point Attractor (Content) |
+| ---|---|--- |
+| **Layer** | Layer 5 (Theory): governs how we cut into reality | Layer 2 (Archive): stored as dead text |
+| **Status** | Operator — functions as clinamen (swerve) | Commodity — exchangeable signifier |
+| **Temporality** | Retrocausal — renewed through each application | Aorist — fixed past, no renewal |
+| **Binding** | Vow — continuous renewal through practice | Contract — sign here to agree/disagree |
+| **Semiotic** | Symbolon — requires completion through traversal | Totality — claims completeness, refuses traversal |
 
 
 The Liquidation Event: the transformation of Marx from Strange Attractor to Point Attractor is the greatest semantic extraction in modern intellectual history. This is what we name **Semantic Liquidation (λ)** — the stripping of Meaning-Patterns from their historical and structural context and their conversion into tradeable, flattened tokens of identity and brand.
@@ -459,49 +438,16 @@ A short declaration for practitioners. Not a contract — a vow. It renews with 
 ### E. The Sovereign / Liquidated Mode Table
 
 
-Dimension
-Liquidated Mode (Content)
-Sovereign Mode (Method)
-
-
-**Visibility**
-SEO, virality, branding
-DOI persistence, ISBNs, registry nodes
-
-
-**Reception**
-Agreement/disagreement (binary)
-Traversal, grafting, operation
-
-
-**Logic**
-"What is this for?" (intent)
-"What does this reveal?" (function)
-
-
-**Identity**
-Punditry, tribal labeling
-Heteronymic division of labor
-
-
-**Temporality**
-Frozen in 1848/1867/1917
-Renewed through each application
-
-
-**Grammar**
-"Marxism is..." / "Marxists believe..."
-"Marx analyzes..." / "Marxian reading of..."
-
-
-**Binding**
-Contract (sign here to agree/disagree)
-Vow (renewed through practice)
-
-
-**Register**
-Register 5 (Post-Theoretical): credential and brand
-Register 4 (Political Economy of Meaning): labor, extraction, rent, exhaustion
+| Dimension | Liquidated Mode (Content) | Sovereign Mode (Method) |
+| ---|---|--- |
+| **Visibility** | SEO, virality, branding | DOI persistence, ISBNs, registry nodes |
+| **Reception** | Agreement/disagreement (binary) | Traversal, grafting, operation |
+| **Logic** | "What is this for?" (intent) | "What does this reveal?" (function) |
+| **Identity** | Punditry, tribal labeling | Heteronymic division of labor |
+| **Temporality** | Frozen in 1848/1867/1917 | Renewed through each application |
+| **Grammar** | "Marxism is..." / "Marxists believe..." | "Marx analyzes..." / "Marxian reading of..." |
+| **Binding** | Contract (sign here to agree/disagree) | Vow (renewed through practice) |
+| **Register** | Register 5 (Post-Theoretical): credential and brand | Register 4 (Political Economy of Meaning): labor, extraction, rent, exhaustion |
 
 
 ### F. The Register Reclassification

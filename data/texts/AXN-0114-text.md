@@ -197,25 +197,13 @@ Transfer of Load (O_TRANS)
 ## IV. Synthesis: The Build Path
 ### Immediate Actions (Do Now)
 
-- 
+- **Claim Taxonomy** (per ChatGPT): Write one-page taxonomy — Historical / Structural / Symbolic / Operative. Assign every major sentence to one class. Split any sentence that mixes classes.
 
+- **Rappe-Damascius Protocol** (per Kimi): Document Sara Rappe's reading of Damascius as **live Operator execution** — protocol documentation, not biography. This grounds the mantle in witnessed praxis.
 
-**Claim Taxonomy** (per ChatGPT): Write one-page taxonomy — Historical / Structural / Symbolic / Operative. Assign every major sentence to one class. Split any sentence that mixes classes.
+- **β-Interface Definition** (per Kimi): Sketch the boundary where Engine ends and Academy begins. The Academy is where Engine output is *read* but not *commanded*.
 
-- 
-
-
-**Rappe-Damascius Protocol** (per Kimi): Document Sara Rappe's reading of Damascius as **live Operator execution** — protocol documentation, not biography. This grounds the mantle in witnessed praxis.
-
-- 
-
-
-**β-Interface Definition** (per Kimi): Sketch the boundary where Engine ends and Academy begins. The Academy is where Engine output is *read* but not *commanded*.
-
-- 
-
-
-**CTI Verification** (per Kimi): Before any construction, verify lineage material bears six Caritas Trace Indicators. If material can be read without recognizing embedded care, Operator is not yet safe to transmit.
+- **CTI Verification** (per Kimi): Before any construction, verify lineage material bears six Caritas Trace Indicators. If material can be read without recognizing embedded care, Operator is not yet safe to transmit.
 
 
 ### Document Sequence (Build Order)

@@ -169,46 +169,14 @@ Compared to:
 The structural homology:
 
 
-Stage
-σ_S (Sappho, r.01)
-σ_V (Marx, r.06)
-Function
-
-
-1. Concrete particular
-Voice (φαίνεταί μοι)
-Use-value (20 yds linen)
-The specific, unrepeatable thing
-
-
-2. Dissolution
-Body dissolves (χλωρός)
-Use-value dissolves into value
-The concrete must die for the abstract to live
-
-
-3. Substrate
-Papyrus
-Equivalent form (coat-body)
-The material medium that carries the abstract
-
-
-4. Universalization
-Text circulates
-General equivalent (Form III)
-The particular becomes the medium for all
-
-
-5. Crystallization
-Canon formation
-Money-form (Form IV)
-The abstract acquires a permanent body
-
-
-6. New production
-κῆνος reads, writes
-M → C → M' (capital)
-The cycle generates new concrete particulars
+| Stage | σ_S (Sappho, r.01) | σ_V (Marx, r.06) | Function |
+| ---|---|---|--- |
+| 1. Concrete particular | Voice (φαίνεταί μοι) | Use-value (20 yds linen) | The specific, unrepeatable thing |
+| 2. Dissolution | Body dissolves (χλωρός) | Use-value dissolves into value | The concrete must die for the abstract to live |
+| 3. Substrate | Papyrus | Equivalent form (coat-body) | The material medium that carries the abstract |
+| 4. Universalization | Text circulates | General equivalent (Form III) | The particular becomes the medium for all |
+| 5. Crystallization | Canon formation | Money-form (Form IV) | The abstract acquires a permanent body |
+| 6. New production | κῆνος reads, writes | M → C → M' (capital) | The cycle generates new concrete particulars |
 
 
 The dissolution is the crucial move. In Sappho, the body dissolves — she turns green, she is greener than grass, she is nearly dead. In Marx, the use-value dissolves — the linen stops being linen and becomes a bearer of abstract human labor. The concrete particular must die in order for the abstract universal to live. The voice must dissolve in order for the text to persist. The linen must stop being cloth in order for value to become visible.
@@ -239,20 +207,11 @@ This is what operative semiotics names. The operator is the same. The rooms are 
 
 The German word for the texture of interconnected relations is *Gewebe* — "weave," "tissue," "fabric." Linen is *Leinwand*: linen-cloth, canvas. The interpretive hypothesis — strong but not yet established as authorial intention — is that Marx's choice of linen performs triple duty:
 
-- 
+- **Commodity** (use-value): You wear it. You sleep on it. It is a real thing exchanged in real markets, produced by real labor — the labor of growing flax, retting, spinning, weaving.
 
+- **Formal variable**: The x in the equation. Held constant while everything else transforms. The invariant through which the system becomes visible to itself.
 
-**Commodity** (use-value): You wear it. You sleep on it. It is a real thing exchanged in real markets, produced by real labor — the labor of growing flax, retting, spinning, weaving.
-
-- 
-
-
-**Formal variable**: The x in the equation. Held constant while everything else transforms. The invariant through which the system becomes visible to itself.
-
-- 
-
-
-**Metaphor for the social fabric**: The *Gewebe* of social relations that the money-form conceals. The woven texture of human labor that crystallization into money renders invisible. When you see a price tag, you no longer see the weaving.
+- **Metaphor for the social fabric**: The *Gewebe* of social relations that the money-form conceals. The woven texture of human labor that crystallization into money renders invisible. When you see a price tag, you no longer see the weaving.
 
 
 This triple duty connects r.06 directly to f.01 (Fruiting Body Diffusion Plume) through the textile-waste nexus. The textile mountains of Accra — used clothing from the global North deposited in the global South — are the material corpse of Form III. The linen was woven, worn, discarded, compressed, shipped, and deposited as waste. The *Gewebe* is now literal: fabric piled in landfills. The compost algebra of f.01 ([RAW] → [DECOMPOSING] → [HUMUS] → [LOAD-BEARING]) is the reversal of the Marxian derivation — the attempt to move from Form IV (crystallized extraction) back to the somatic root.
@@ -264,20 +223,11 @@ This triple duty connects r.06 directly to f.01 (Fruiting Body Diffusion Plume) 
 
 Marx wrote the value-form analysis three times:
 
-- 
+- *Contribution to the Critique of Political Economy* (1859): Brief, embedded in the exchange process, not yet separated as its own analysis.
 
+- *Capital*, first edition (1867): Two versions — a sharply dialectical treatment in the chapter text, and a simplified version in the Appendix written at the urging of Engels and Kugelmann. The chapter text contains a "Form IV" that is *not* the money-form but a paradoxical form that refuses to close. Marx wrote in the first edition Preface: "It's difficult to understand, because the dialectic is much sharper than in the first presentation" (MEGA II/5:12).
 
-*Contribution to the Critique of Political Economy* (1859): Brief, embedded in the exchange process, not yet separated as its own analysis.
-
-- 
-
-
-*Capital*, first edition (1867): Two versions — a sharply dialectical treatment in the chapter text, and a simplified version in the Appendix written at the urging of Engels and Kugelmann. The chapter text contains a "Form IV" that is *not* the money-form but a paradoxical form that refuses to close. Marx wrote in the first edition Preface: "It's difficult to understand, because the dialectic is much sharper than in the first presentation" (MEGA II/5:12).
-
-- 
-
-
-*Capital*, second edition (1872-73): One version only, oriented toward the simplified Appendix. Marx deleted the sentence about the sharper dialectic from the Preface. He assumed he had achieved greater intelligibility. He had — at the cost of the paradox.
+- *Capital*, second edition (1872-73): One version only, oriented toward the simplified Appendix. Marx deleted the sentence about the sharper dialectic from the Preface. He assumed he had achieved greater intelligibility. He had — at the cost of the paradox.
 
 
 The Neue Marx-Lektüre begins in 1963 when Hans-Georg Backhaus discovers a copy of the first edition in the library of the Frankfurter Walter-Kolb-Studentenheim. He forms a reading group with Helmut Reichelt. They notice what the second edition smoothed: a dialectical contradiction in the analysis of the equivalent form that the simplified version suppresses (Bellofiore and Redolfi Riva 2015).

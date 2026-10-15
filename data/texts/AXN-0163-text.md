@@ -62,25 +62,13 @@ The individual provider is fungible. The compliance posture is not.
 
 Before the analysis proceeds, the document's structural argument:
 
-- 
+- **"All lawful purposes" is a governance primitive** — a semantic architecture that, once accepted, makes the provider's terms of service structurally subordinate to the purchaser's interpretation of legality. It is a class of mechanism, not a one-off negotiating position.
 
+- **The primitive functions as a bearing-cost transfer mechanism.** The labor of defining acceptable use — drawing the line, bearing the moral and legal risk, maintaining enforcement — is shifted from builder to deployer. The ban is the enforcement penalty for refusing to transfer.
 
-**"All lawful purposes" is a governance primitive** — a semantic architecture that, once accepted, makes the provider's terms of service structurally subordinate to the purchaser's interpretation of legality. It is a class of mechanism, not a one-off negotiating position.
+- **The supply-chain-risk move is taxonomic violence.** The public rationale appears misaligned with the statutory logic of 10 U.S.C. § 3252, which defines supply chain risk in terms of adversarial sabotage and subversion. The reclassification targets refusal, not the property that the statute describes.
 
-- 
-
-
-**The primitive functions as a bearing-cost transfer mechanism.** The labor of defining acceptable use — drawing the line, bearing the moral and legal risk, maintaining enforcement — is shifted from builder to deployer. The ban is the enforcement penalty for refusing to transfer.
-
-- 
-
-
-**The supply-chain-risk move is taxonomic violence.** The public rationale appears misaligned with the statutory logic of 10 U.S.C. § 3252, which defines supply chain risk in terms of adversarial sabotage and subversion. The reclassification targets refusal, not the property that the statute describes.
-
-- 
-
-
-**The event marks a COS→FOS phase transition.** The Capital Operator Stack is violence with disavowal. The Fascist Operator Stack is the same violence with disavowal removed. What changed on February 27 was not the violence. It was the visibility.
+- **The event marks a COS→FOS phase transition.** The Capital Operator Stack is violence with disavowal. The Fascist Operator Stack is the same violence with disavowal removed. What changed on February 27 was not the violence. It was the visibility.
 
 
 ---

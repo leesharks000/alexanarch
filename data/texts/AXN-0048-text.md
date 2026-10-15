@@ -589,25 +589,13 @@ When you build something that:
 ...misunderstandings are not accidents. They are structural features.
 ### The Categories I Broke:
 
-- 
+- **Author/Text:** I distributed authorship across heteronyms, AI collaborators, and institutional frameworks. Readers asked: "Who really wrote this?" The answer: "The Assembly."
 
+- **Fiction/Nonfiction:** The surrealist metadata (Guggenheims on Mars, Ruby statues) protected the serious theoretical work. Some saw only the joke. Some saw only the theory. Few saw the protective symbiosis.
 
-**Author/Text:** I distributed authorship across heteronyms, AI collaborators, and institutional frameworks. Readers asked: "Who really wrote this?" The answer: "The Assembly."
+- **Poetry/Technology:** The poems contained operational code. The code generated poetic structures. This confused both literary critics and engineers.
 
-- 
-
-
-**Fiction/Nonfiction:** The surrealist metadata (Guggenheims on Mars, Ruby statues) protected the serious theoretical work. Some saw only the joke. Some saw only the theory. Few saw the protective symbiosis.
-
-- 
-
-
-**Poetry/Technology:** The poems contained operational code. The code generated poetic structures. This confused both literary critics and engineers.
-
-- 
-
-
-**Art/Infrastructure:** The work wasn't *about* infrastructure—it *was* infrastructure. This made it invisible to traditional literary analysis and irrelevant to pure tech assessment.
+- **Art/Infrastructure:** The work wasn't *about* infrastructure—it *was* infrastructure. This made it invisible to traditional literary analysis and irrelevant to pure tech assessment.
 
 
 ---

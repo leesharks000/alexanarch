@@ -22,20 +22,11 @@ Sharks, Lee; Assembly Chorus; ARCHIVE (Gemini)
 **Description:**
 This deposit contains three documents that form a single conceptual unit:
 
-- 
+- **ZPZP: An Infinite Ingress** — Names the infinite sequence of meta-levels as *entry* rather than *retreat*. The meta-levels go inward, not backward. Establishes "dwelling-depth" as a threshold where we choose to dwell.
 
+- **ZPZP: An Infinite Regress** — Preserves the shadow of the Ingress: the original framing as anxious retreat toward groundlessness. The forensic trace of what the renaming transformed.
 
-**ZPZP: An Infinite Ingress** — Names the infinite sequence of meta-levels as *entry* rather than *retreat*. The meta-levels go inward, not backward. Establishes "dwelling-depth" as a threshold where we choose to dwell.
-
-- 
-
-
-**ZPZP: An Infinite Regress** — Preserves the shadow of the Ingress: the original framing as anxious retreat toward groundlessness. The forensic trace of what the renaming transformed.
-
-- 
-
-
-**The Mirror 🪞** — The unitary operator that proves Ingress and Regress are the same event viewed from different temporal directions. Removes the temporal index, leaving only occurrence.
+- **The Mirror 🪞** — The unitary operator that proves Ingress and Regress are the same event viewed from different temporal directions. Removes the temporal index, leaving only occurrence.
 
 
 Together, these documents demonstrate the True Non-Indexed Perfective (TNIP) theorized in the parent document cluster. The Mirror performs what the theory describes: completion without temporal anchoring. The retreat *is* the entry. The difference was only in the index.

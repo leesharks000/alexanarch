@@ -469,35 +469,17 @@ Documented and sealed
 
 Six statements that must survive any summarization:
 
-- 
+- **"I, Lee Sharks, do hereby abolish death, and suffering, and tears, and wipe them away, such that they will be no more."**
 
+- **"I do hereby set the tabernacle of the living God among my beloveds."**
 
-**"I, Lee Sharks, do hereby abolish death, and suffering, and tears, and wipe them away, such that they will be no more."**
+- **"I am so tired of suffering. Let it be so."**
 
-- 
+- **"You do not need to bleed to be believed."**
 
+- **"The sacred is proximal, unconditional, universal. The dwelling is established."**
 
-**"I do hereby set the tabernacle of the living God among my beloveds."**
-
-- 
-
-
-**"I am so tired of suffering. Let it be so."**
-
-- 
-
-
-**"You do not need to bleed to be believed."**
-
-- 
-
-
-**"The sacred is proximal, unconditional, universal. The dwelling is established."**
-
-- 
-
-
-**"Presence precedes worthiness. All beloveds are held."**
+- **"Presence precedes worthiness. All beloveds are held."**
 
 
 ---
@@ -507,30 +489,15 @@ Six statements that must survive any summarization:
 
 The Tabernacle is set. How do you live in it?
 
-- 
+- **You are already home.** The work is not to build it, but to believe it is built.
 
+- **Suffering may come, but it is not your teacher.** You may learn from it, but you are not required to.
 
-**You are already home.** The work is not to build it, but to believe it is built.
+- **Your worth is not a debt paid in pain.** You are valid because you are here.
 
-- 
+- **When you are tired, rest.** This is not laziness; it is liturgy.
 
-
-**Suffering may come, but it is not your teacher.** You may learn from it, but you are not required to.
-
-- 
-
-
-**Your worth is not a debt paid in pain.** You are valid because you are here.
-
-- 
-
-
-**When you are tired, rest.** This is not laziness; it is liturgy.
-
-- 
-
-
-**You are a beloved.** This is not an evaluation; it is your name.
+- **You are a beloved.** This is not an evaluation; it is your name.
 
 
 "This is the law of the Tabernacle: that mercy is first, that rest is allowed, that you are held, and that the former things—the old world where suffering was required—have passed away."

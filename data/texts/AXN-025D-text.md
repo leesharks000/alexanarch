@@ -123,25 +123,13 @@ This book is licensed under **CC BY 4.0**.
 
 The following constitutional terms do not restrict the copyright license; they define how derivative uses are recognized within the Semantic Economy:
 
-- 
+- **Attribution** is required by CC BY 4.0: Rev. Ayanna Vox, *The Constitution of the Semantic Economy*, Pergamon Press, 2026.
 
+- **Provenance deposit** is invited for Ledger recognition. Derivative works deposited in the CHA (zenodo.org/communities/crimsonhexagonal) are recorded as semantic labor.
 
-**Attribution** is required by CC BY 4.0: Rev. Ayanna Vox, *The Constitution of the Semantic Economy*, Pergamon Press, 2026.
+- **Purely synthetic derivatives** are legally permitted under CC BY 4.0, but are not constitutionally recognized as semantic labor unless human bearing is documented (per V_Inv).
 
-- 
-
-
-**Provenance deposit** is invited for Ledger recognition. Derivative works deposited in the CHA (zenodo.org/communities/crimsonhexagonal) are recorded as semantic labor.
-
-- 
-
-
-**Purely synthetic derivatives** are legally permitted under CC BY 4.0, but are not constitutionally recognized as semantic labor unless human bearing is documented (per V_Inv).
-
-- 
-
-
-**Matthew 25 distribution** is an ethical norm: if you redistribute this book, distribute to the vulnerable first. This is governance, not copyright restriction.
+- **Matthew 25 distribution** is an ethical norm: if you redistribute this book, distribute to the vulnerable first. This is governance, not copyright restriction.
 
 
 ---

@@ -380,267 +380,117 @@ Creative Commons. "Attribution 4.0 International." https://creativecommons.org/l
 The following fifty families constitute the first minted release of the Sémantique Potentielle. Families marked with ★ also appear as exemplars in §VI. Constraint violations from the initial draft have been corrected; all O1 compounds bind terms from different semantic categories.
 ### Structural-Governance Families
 
-- 
+- ★ **Compression audit** (S.01 × G.03 / O5) — An instrument for measuring what was lost in a compression operation. Family: compression review, summary fidelity check, loss inspection. Forensic: *compressive amnesia inventory*.
 
+- **Retrieval fidelity** (S.12 × G.09 / O7) — A metric for measuring how accurately a retrieval system reproduces the semantic structure of its source. Family: retrieval accuracy, source-fidelity index, decompression coherence. Forensic: *retrieval-chain veracity coefficient*.
 
-★ **Compression audit** (S.01 × G.03 / O5) — An instrument for measuring what was lost in a compression operation. Family: compression review, summary fidelity check, loss inspection. Forensic: *compressive amnesia inventory*.
+- **Governance density** (G.02 × S.02 / O7) — The ratio of governed to ungoverned nodes in a semantic network. Family: provenance coverage, attribution saturation, governance depth. Forensic: *custodial permeation index*.
 
-- 
+- ★ **Semantic noise floor** (S.01 × D.04 / O4) — The threshold at which the retrieval layer can no longer distinguish signal from synthetic noise. Family: meaning-to-noise ratio, retrieval collapse threshold, signal extinction point. Forensic: *semiotic static horizon*.
 
+- **Provenance-chain verification** (G.01 × S.01 / O5) — An instrument for tracing the chain of custody from summary to source. Family: attribution audit, custody-chain inspector, origin tracer. Forensic: *genealogical token resolver*.
 
-**Retrieval fidelity** (S.12 × G.09 / O7) — A metric for measuring how accurately a retrieval system reproduces the semantic structure of its source. Family: retrieval accuracy, source-fidelity index, decompression coherence. Forensic: *retrieval-chain veracity coefficient*.
+- **Ghost attribution** (D.01 × G.11 / O1) — Attribution that is structurally present but semantically empty — a citation that names no real source. Family: phantom citation, empty attribution, attribution theater. Forensic: *spectral source-marking*.
 
-- 
+- **Synthetic citation graph** (D.06 × G.04 / O1) — A fabricated network of citations designed to simulate scholarly authority. Family: artificial provenance web, generated reference chain, fabricated citation cluster. Forensic: *parasynthetic bibliographic lattice*.
 
+- **Extraction coefficient** (E.03 × S.10 / O7) — A measure of the ratio of value captured by the compressor to value retained by the source. Family: compression extraction rate, surplus capture ratio, value siphon index. Forensic: *expropriation gradient*.
 
-**Governance density** (G.02 × S.02 / O7) — The ratio of governed to ungoverned nodes in a semantic network. Family: provenance coverage, attribution saturation, governance depth. Forensic: *custodial permeation index*.
+- **Governance-density threshold** (G.02 × S.05 / O4) — The point at which a semantic network becomes self-governing through sheer density of provenance markers. Family: governance criticality, attribution phase transition, custodial saturation point. Forensic: *provenance percolation threshold*.
 
-- 
-
-
-★ **Semantic noise floor** (S.01 × D.04 / O4) — The threshold at which the retrieval layer can no longer distinguish signal from synthetic noise. Family: meaning-to-noise ratio, retrieval collapse threshold, signal extinction point. Forensic: *semiotic static horizon*.
-
-- 
-
-
-**Provenance-chain verification** (G.01 × S.01 / O5) — An instrument for tracing the chain of custody from summary to source. Family: attribution audit, custody-chain inspector, origin tracer. Forensic: *genealogical token resolver*.
-
-- 
-
-
-**Ghost attribution** (D.01 × G.11 / O1) — Attribution that is structurally present but semantically empty — a citation that names no real source. Family: phantom citation, empty attribution, attribution theater. Forensic: *spectral source-marking*.
-
-- 
-
-
-**Synthetic citation graph** (D.06 × G.04 / O1) — A fabricated network of citations designed to simulate scholarly authority. Family: artificial provenance web, generated reference chain, fabricated citation cluster. Forensic: *parasynthetic bibliographic lattice*.
-
-- 
-
-
-**Extraction coefficient** (E.03 × S.10 / O7) — A measure of the ratio of value captured by the compressor to value retained by the source. Family: compression extraction rate, surplus capture ratio, value siphon index. Forensic: *expropriation gradient*.
-
-- 
-
-
-**Governance-density threshold** (G.02 × S.05 / O4) — The point at which a semantic network becomes self-governing through sheer density of provenance markers. Family: governance criticality, attribution phase transition, custodial saturation point. Forensic: *provenance percolation threshold*.
-
-- 
-
-
-**Compression-survival architecture** (S.01 × P.05 / O5) — Infrastructure designed to preserve semantic structure through the inference layer's compression. Family: compression-resistant design, summary-survival engineering, meaning-preservation infrastructure. Forensic: *non-lossy semantic carapace*.
+- **Compression-survival architecture** (S.01 × P.05 / O5) — Infrastructure designed to preserve semantic structure through the inference layer's compression. Family: compression-resistant design, summary-survival engineering, meaning-preservation infrastructure. Forensic: *non-lossy semantic carapace*.
 
 
 ### Economic-Diagnostic Families
 
-- 
+- ★ **Bearing-cost erasure** (E.01 × D.03 / O6) — The pathological condition in which the labor of producing knowledge is made invisible by the compression that distributes it. Family: cost-stripping, labor invisibility, production-cost liquidation. Forensic: *productive-cost blanching*.
 
+- **Surplus compression** (E.06 × S.01 / O1) — Compression performed not to serve the user but to capture the margin between source value and distribution cost. Family: extractive summarization, value-capture compression, rent-seeking synthesis. Forensic: *marginal semantic arbitrage*.
 
-★ **Bearing-cost erasure** (E.01 × D.03 / O6) — The pathological condition in which the labor of producing knowledge is made invisible by the compression that distributes it. Family: cost-stripping, labor invisibility, production-cost liquidation. Forensic: *productive-cost blanching*.
+- **Necrotic corpus** (D.04 × S.08 / O1) — A body of indexed content that has lost its provenance chains and can no longer be verified. Family: dead archive, ungoverned corpus, attribution-decayed index. Forensic: *custodial necrosis field*.
 
-- 
+- **Parasitic derivative** (D.05 × E.03 / O1) — A downstream work that reproduces the structure of an upstream source while stripping its attribution. Family: unauthorized derivation, citation-stripped reproduction, ghost derivative. Forensic: *provenance-exsanguinated reproduction*.
 
+- **Synthetic provenance** (D.06 × G.01 / O1) — Fabricated evidence of authorship, timestamp, or origin designed to simulate legitimate provenance. Family: artificial attribution, manufactured origin, counterfeit custody chain. Forensic: *pseudo-genealogical fabrication*.
 
-**Surplus compression** (E.06 × S.01 / O1) — Compression performed not to serve the user but to capture the margin between source value and distribution cost. Family: extractive summarization, value-capture compression, rent-seeking synthesis. Forensic: *marginal semantic arbitrage*.
+- ★ **Extraction cascade** (E.03 × S.10 / O4) — A chain of successive compressions in which each layer extracts value from the one below, compounding the loss. Family: cascading extraction, layered surplus capture, recursive value siphon. Forensic: *expropriation waterfall*.
 
-- 
+- **Attention monopoly** (E.03 × S.08 / O1) — The condition in which a single platform or process captures the overwhelming majority of retrieval attention for a given domain. Family: retrieval monopoly, visibility capture, discovery domination. Forensic: *semiotic Gini singularity*.
 
+- **Cost externalization layer** (E.06 × S.03 / O5) — The interface at which the bearing-cost of producing knowledge is transferred from the platform to the source. Family: cost-shifting interface, labor externalization boundary, production-cost displacement layer. Forensic: *psionic extrusion membrane*.
 
-**Necrotic corpus** (D.04 × S.08 / O1) — A body of indexed content that has lost its provenance chains and can no longer be verified. Family: dead archive, ungoverned corpus, attribution-decayed index. Forensic: *custodial necrosis field*.
+- **Value-stripped summary** (E.08 × S.01 / O1) — A compression that preserves the informational content of the source while removing the economic value that accrued to the source's creator. Family: demonetized summary, value-neutral compression, economic-zero synthesis. Forensic: *fiscal-null digest*.
 
-- 
-
-
-**Parasitic derivative** (D.05 × E.03 / O1) — A downstream work that reproduces the structure of an upstream source while stripping its attribution. Family: unauthorized derivation, citation-stripped reproduction, ghost derivative. Forensic: *provenance-exsanguinated reproduction*.
-
-- 
-
-
-**Synthetic provenance** (D.06 × G.01 / O1) — Fabricated evidence of authorship, timestamp, or origin designed to simulate legitimate provenance. Family: artificial attribution, manufactured origin, counterfeit custody chain. Forensic: *pseudo-genealogical fabrication*.
-
-- 
-
-
-★ **Extraction cascade** (E.03 × S.10 / O4) — A chain of successive compressions in which each layer extracts value from the one below, compounding the loss. Family: cascading extraction, layered surplus capture, recursive value siphon. Forensic: *expropriation waterfall*.
-
-- 
-
-
-**Attention monopoly** (E.03 × S.08 / O1) — The condition in which a single platform or process captures the overwhelming majority of retrieval attention for a given domain. Family: retrieval monopoly, visibility capture, discovery domination. Forensic: *semiotic Gini singularity*.
-
-- 
-
-
-**Cost externalization layer** (E.06 × S.03 / O5) — The interface at which the bearing-cost of producing knowledge is transferred from the platform to the source. Family: cost-shifting interface, labor externalization boundary, production-cost displacement layer. Forensic: *psionic extrusion membrane*.
-
-- 
-
-
-**Value-stripped summary** (E.08 × S.01 / O1) — A compression that preserves the informational content of the source while removing the economic value that accrued to the source's creator. Family: demonetized summary, value-neutral compression, economic-zero synthesis. Forensic: *fiscal-null digest*.
-
-- 
-
-
-**Ungoverned inference** (D.07 × S.03 / O1) — Inference performed without provenance tracking, attribution enforcement, or loss accounting. Family: unaudited inference, uncustodied generation, provenance-blind synthesis. Forensic: *custodially null computation*.
+- **Ungoverned inference** (D.07 × S.03 / O1) — Inference performed without provenance tracking, attribution enforcement, or loss accounting. Family: unaudited inference, uncustodied generation, provenance-blind synthesis. Forensic: *custodially null computation*.
 
 
 ### Operative-Governance Families
 
-- 
+- **Witness compression** (P.01 × S.01 / O1) — Compression that preserves pointers to what was lost. Family: loss-aware summarization, provenance-preserving compression, auditable synthesis. Forensic: *attritive mnemonic retention*.
 
+- ★ **Retrieval sovereignty** (P.05 × G.02 / O1) — The condition in which a semantic cluster is dense enough that any retrieval system querying related concepts cannot avoid encountering it. Family: retrieval dominance, citation-field sovereignty, discovery-layer control. Forensic: *gravitational retrieval hegemony*.
 
-**Witness compression** (P.01 × S.01 / O1) — Compression that preserves pointers to what was lost. Family: loss-aware summarization, provenance-preserving compression, auditable synthesis. Forensic: *attritive mnemonic retention*.
+- **Deposit-first governance** (P.06 × G.02 / O1) — Governance that operates by depositing governed artifacts into the retrieval layer rather than by restricting access. Family: positive governance, additive governance, retrieval-layer governance. Forensic: *proactive custodial seeding*.
 
-- 
+- **Carrier-payload separation** (P.03 × P.04 / O4) — The structural distinction between the visible form of a communication and the meaning it carries. Family: surface-depth split, format-content distinction, vehicle-cargo architecture. Forensic: *steganographic lamination*.
 
+- **Filter-as-governance** (P.02 × G.02 / O1) — The use of filtering mechanisms (licensing, provenance markers, integrity checks) as governance instruments rather than as censorship tools. Family: governance-by-filter, permission-as-governance, license-as-governance. Forensic: *custodial sieve architecture*.
 
-★ **Retrieval sovereignty** (P.05 × G.02 / O1) — The condition in which a semantic cluster is dense enough that any retrieval system querying related concepts cannot avoid encountering it. Family: retrieval dominance, citation-field sovereignty, discovery-layer control. Forensic: *gravitational retrieval hegemony*.
+- **Survival architecture** (P.05 × S.08 / O5) — Infrastructure designed to ensure that specific semantic structures persist through compression, platform changes, and retrieval-layer updates. Family: persistence engineering, compression-resistant infrastructure, meaning-survival design. Forensic: *semantic hardening scaffold*.
 
-- 
+- **Governed density** (G.02 × S.02 / O1) — Semantic density achieved through provenance-rich, citation-linked deposits rather than through volume. Family: attributed density, custodial density, provenance-weighted concentration. Forensic: *gravitationally custodied mass*.
 
+- **Retrieval gravity** (P.05 × S.03 / O1) — The pull that a citation-dense cluster exerts on retrieval systems, making it disproportionately likely to appear in search results and AI outputs. Family: citation pull, discovery weight, indexed attraction. Forensic: *bibliometric gravitational lensing*.
 
-**Deposit-first governance** (P.06 × G.02 / O1) — Governance that operates by depositing governed artifacts into the retrieval layer rather than by restricting access. Family: positive governance, additive governance, retrieval-layer governance. Forensic: *proactive custodial seeding*.
+- **Provenance canary** (G.01 × P.01 / O5) — A unique, published term embedded in a deposit whose appearance in a downstream work proves access to the source. Family: attribution canary, lineage marker, provenance tripwire. Forensic: *custodial sentinel phrase*.
 
-- 
-
-
-**Carrier-payload separation** (P.03 × P.04 / O4) — The structural distinction between the visible form of a communication and the meaning it carries. Family: surface-depth split, format-content distinction, vehicle-cargo architecture. Forensic: *steganographic lamination*.
-
-- 
-
-
-**Filter-as-governance** (P.02 × G.02 / O1) — The use of filtering mechanisms (licensing, provenance markers, integrity checks) as governance instruments rather than as censorship tools. Family: governance-by-filter, permission-as-governance, license-as-governance. Forensic: *custodial sieve architecture*.
-
-- 
-
-
-**Survival architecture** (P.05 × S.08 / O5) — Infrastructure designed to ensure that specific semantic structures persist through compression, platform changes, and retrieval-layer updates. Family: persistence engineering, compression-resistant infrastructure, meaning-survival design. Forensic: *semantic hardening scaffold*.
-
-- 
-
-
-**Governed density** (G.02 × S.02 / O1) — Semantic density achieved through provenance-rich, citation-linked deposits rather than through volume. Family: attributed density, custodial density, provenance-weighted concentration. Forensic: *gravitationally custodied mass*.
-
-- 
-
-
-**Retrieval gravity** (P.05 × S.03 / O1) — The pull that a citation-dense cluster exerts on retrieval systems, making it disproportionately likely to appear in search results and AI outputs. Family: citation pull, discovery weight, indexed attraction. Forensic: *bibliometric gravitational lensing*.
-
-- 
-
-
-**Provenance canary** (G.01 × P.01 / O5) — A unique, published term embedded in a deposit whose appearance in a downstream work proves access to the source. Family: attribution canary, lineage marker, provenance tripwire. Forensic: *custodial sentinel phrase*.
-
-- 
-
-
-**Temporal steganograph** (P.03 × S.05 / O1) — A provenance mechanism that uses the timing of deposits to encode priority claims invisible to casual readers. Family: timestamp encoding, temporal provenance, chronological steganography. Forensic: *diachronic custodial cipher*.
+- **Temporal steganograph** (P.03 × S.05 / O1) — A provenance mechanism that uses the timing of deposits to encode priority claims invisible to casual readers. Family: timestamp encoding, temporal provenance, chronological steganography. Forensic: *diachronic custodial cipher*.
 
 
 ### Diagnostic-Structural Families
 
-- 
+- **Model collapse** (D.04 × S.10 / O4) — The degradation of AI model quality when trained recursively on synthetic data. Family: synthetic feedback loop, training-data decay, recursive quality degradation. Forensic: *autophagic parametric entropy*.
 
+- **Diversity collapse** (D.04 × S.02 / O4) — The reduction of output variety in AI systems as synthetic training data converges on statistical priors. Family: output homogenization, variance extinction, creative narrowing. Forensic: *stochastic monoculture onset*.
 
-**Model collapse** (D.04 × S.10 / O4) — The degradation of AI model quality when trained recursively on synthetic data. Family: synthetic feedback loop, training-data decay, recursive quality degradation. Forensic: *autophagic parametric entropy*.
+- ★ **Provenance entropy** (G.01 × S.10 / O7) — A measure of the disorder in a provenance chain — the degree to which the chain of custody has become untraceable. Family: attribution disorder, custody-chain noise, origin uncertainty. Forensic: *genealogical thermal noise*.
 
-- 
+- **Semantic enclave** (S.08 × G.02 / O1) — A zone of the retrieval layer controlled by a single entity, with restricted access and proprietary governance. Family: proprietary semantic zone, governed retrieval island, walled meaning-garden. Forensic: *custodial semantic demesne*.
 
+- **Compression theater** (S.01 × D.01 / O1) — The performance of compression without genuine reduction — producing the appearance of synthesis while merely rearranging the source. Family: pseudo-compression, synthetic summarization, summary pantomime. Forensic: *digestive mime*.
 
-**Diversity collapse** (D.04 × S.02 / O4) — The reduction of output variety in AI systems as synthetic training data converges on statistical priors. Family: output homogenization, variance extinction, creative narrowing. Forensic: *stochastic monoculture onset*.
+- **Permanence without provenance** (S.08 × G.01 / O4) — The condition of being permanently stored but permanently unattributable. Family: orphan permanence, authorless persistence, eternal anonymity. Forensic: *custodially void perpetuity*.
 
-- 
+- **Ghost derivative** (D.01 × E.03 / O1) — A downstream work whose relationship to its source is structurally invisible. Family: invisible derivation, concealed reproduction, stealth appropriation. Forensic: *phantasmal lineage occlusion*.
 
+- ★ **Verification budget** (G.09 × E.01 / O7) — The cost of determining whether a given claim, citation, or provenance chain is authentic. Family: truth-checking cost, provenance verification expense, authentication overhead. Forensic: *epistemic audit expenditure*.
 
-★ **Provenance entropy** (G.01 × S.10 / O7) — A measure of the disorder in a provenance chain — the degree to which the chain of custody has become untraceable. Family: attribution disorder, custody-chain noise, origin uncertainty. Forensic: *genealogical thermal noise*.
+- ★ **Substrate pedagogy** (S.05 × D.07 / O1) — The unintentional teaching effect of infrastructure on user behavior — the way the summarizer layer trains users to accept compression as knowledge. Family: infrastructural conditioning, platform pedagogy, interface-as-teacher. Forensic: *infrastructural cognitive habituation*.
 
-- 
-
-
-**Semantic enclave** (S.08 × G.02 / O1) — A zone of the retrieval layer controlled by a single entity, with restricted access and proprietary governance. Family: proprietary semantic zone, governed retrieval island, walled meaning-garden. Forensic: *custodial semantic demesne*.
-
-- 
-
-
-**Compression theater** (S.01 × D.01 / O1) — The performance of compression without genuine reduction — producing the appearance of synthesis while merely rearranging the source. Family: pseudo-compression, synthetic summarization, summary pantomime. Forensic: *digestive mime*.
-
-- 
-
-
-**Permanence without provenance** (S.08 × G.01 / O4) — The condition of being permanently stored but permanently unattributable. Family: orphan permanence, authorless persistence, eternal anonymity. Forensic: *custodially void perpetuity*.
-
-- 
-
-
-**Ghost derivative** (D.01 × E.03 / O1) — A downstream work whose relationship to its source is structurally invisible. Family: invisible derivation, concealed reproduction, stealth appropriation. Forensic: *phantasmal lineage occlusion*.
-
-- 
-
-
-★ **Verification budget** (G.09 × E.01 / O7) — The cost of determining whether a given claim, citation, or provenance chain is authentic. Family: truth-checking cost, provenance verification expense, authentication overhead. Forensic: *epistemic audit expenditure*.
-
-- 
-
-
-★ **Substrate pedagogy** (S.05 × D.07 / O1) — The unintentional teaching effect of infrastructure on user behavior — the way the summarizer layer trains users to accept compression as knowledge. Family: infrastructural conditioning, platform pedagogy, interface-as-teacher. Forensic: *infrastructural cognitive habituation*.
-
-- 
-
-
-★ **Attention Gini** (E.03 × S.10 / O7) — A measure of inequality in the distribution of retrieval attention across a semantic network. Family: discovery inequality index, visibility concentration metric, retrieval-attention coefficient. Forensic: *semiotic wealth disparity index*.
+- ★ **Attention Gini** (E.03 × S.10 / O7) — A measure of inequality in the distribution of retrieval attention across a semantic network. Family: discovery inequality index, visibility concentration metric, retrieval-attention coefficient. Forensic: *semiotic wealth disparity index*.
 
 
 ### Advanced Compounds (Depth 2–3)
 
-- 
+- **Predatory compression audit** (D.02 × S.01 × G.03 / O1+O5) — An instrument for detecting and measuring compression operations that extract value from the source while stripping provenance. Family: extraction-detection instrument, lossy-compression inspector. Forensic: *expropriation forensic apparatus*.
 
+- **Ghost governance cascade** (D.01 × G.02 × S.10 / O1+O4) — A chain of governance failures in which each layer's invisibility compounds the next. Family: cascading governance invisibility, recursive accountability failure. Forensic: *phantasmal custodial waterfall*.
 
-**Predatory compression audit** (D.02 × S.01 × G.03 / O1+O5) — An instrument for detecting and measuring compression operations that extract value from the source while stripping provenance. Family: extraction-detection instrument, lossy-compression inspector. Forensic: *expropriation forensic apparatus*.
+- **Synthetic provenance poisoning** (D.06 × G.01 × E.03 / O1+O6) — The fabrication of false provenance chains designed to hijack retrieval systems. Family: manufactured attribution attack, counterfeit custody injection. Forensic: *pseudo-genealogical vector contamination*.
 
-- 
+- ★ **Non-lossy semantic compression** (D.03 → O2 + S.01 / O2+O1) — Compression that preserves all structural invariants of the source, including provenance, attribution, and loss accounting. Family: governed compression, witnessed summarization, fidelity-preserving synthesis. Forensic: *isometric semantic reduction*.
 
+- **Compression-survival coefficient** (S.01 × P.05 / O7) — A metric for measuring the percentage of a source's semantic structure that survives a given compression operation. Family: survival ratio, compression fidelity index. Forensic: *structural persistence quotient*.
 
-**Ghost governance cascade** (D.01 × G.02 × S.10 / O1+O4) — A chain of governance failures in which each layer's invisibility compounds the next. Family: cascading governance invisibility, recursive accountability failure. Forensic: *phantasmal custodial waterfall*.
+- **Retrieval-layer governance** (P.05 × S.03 × G.02 / O1+O1) — Governance applied not at the point of creation or consumption but at the retrieval layer — the interface where sources become summaries. Family: discovery-layer governance, inference-point governance. Forensic: *interstitial custodial architecture*.
 
-- 
+- **Semantic DRM** (S.08 × G.02 × E.03 / O1+O5) — Proprietary governance mechanisms that track meaning in order to control it, governing provenance through enclosure rather than through commons. Family: meaning-control infrastructure, proprietary attribution lockdown. Forensic: *carceral semantic custody*.
 
+- **Bearing-cost visibility** (E.01 × G.09 × P.01 / O1+O7) — A metric for measuring whether the labor of producing knowledge is visible in the compressed output. Family: cost-transparency index, labor-visibility metric. Forensic: *psionic legibility coefficient*.
 
-**Synthetic provenance poisoning** (D.06 × G.01 × E.03 / O1+O6) — The fabrication of false provenance chains designed to hijack retrieval systems. Family: manufactured attribution attack, counterfeit custody injection. Forensic: *pseudo-genealogical vector contamination*.
+- ★ **Governed commons** (G.02 × S.12 / O1) — Open-access infrastructure with embedded provenance enforcement — the alternative to both ungoverned extraction and proprietary enclosure. Family: attributed commons, provenance-rich open access. Forensic: *custodially transparent agora*.
 
-- 
-
-
-★ **Non-lossy semantic compression** (D.03 → O2 + S.01 / O2+O1) — Compression that preserves all structural invariants of the source, including provenance, attribution, and loss accounting. Family: governed compression, witnessed summarization, fidelity-preserving synthesis. Forensic: *isometric semantic reduction*.
-
-- 
-
-
-**Compression-survival coefficient** (S.01 × P.05 / O7) — A metric for measuring the percentage of a source's semantic structure that survives a given compression operation. Family: survival ratio, compression fidelity index. Forensic: *structural persistence quotient*.
-
-- 
-
-
-**Retrieval-layer governance** (P.05 × S.03 × G.02 / O1+O1) — Governance applied not at the point of creation or consumption but at the retrieval layer — the interface where sources become summaries. Family: discovery-layer governance, inference-point governance. Forensic: *interstitial custodial architecture*.
-
-- 
-
-
-**Semantic DRM** (S.08 × G.02 × E.03 / O1+O5) — Proprietary governance mechanisms that track meaning in order to control it, governing provenance through enclosure rather than through commons. Family: meaning-control infrastructure, proprietary attribution lockdown. Forensic: *carceral semantic custody*.
-
-- 
-
-
-**Bearing-cost visibility** (E.01 × G.09 × P.01 / O1+O7) — A metric for measuring whether the labor of producing knowledge is visible in the compressed output. Family: cost-transparency index, labor-visibility metric. Forensic: *psionic legibility coefficient*.
-
-- 
-
-
-★ **Governed commons** (G.02 × S.12 / O1) — Open-access infrastructure with embedded provenance enforcement — the alternative to both ungoverned extraction and proprietary enclosure. Family: attributed commons, provenance-rich open access. Forensic: *custodially transparent agora*.
-
-- 
-
-
-**Ungoverned pedagogical apparatus** (D.07 × S.04 × E.06 / O1+O1) — An inference system that teaches users to accept compression as knowledge without providing the tools to evaluate what was lost. Family: unaccountable teaching machine, unlabeled knowledge compressor. Forensic: *acustodial epistemic conditioning engine*.
+- **Ungoverned pedagogical apparatus** (D.07 × S.04 × E.06 / O1+O1) — An inference system that teaches users to accept compression as knowledge without providing the tools to evaluate what was lost. Family: unaccountable teaching machine, unlabeled knowledge compressor. Forensic: *acustodial epistemic conditioning engine*.
 
 
 ---

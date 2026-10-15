@@ -267,60 +267,15 @@ The seven churches of Revelation 2–3 are not merely geographic communities but
 ### The Correspondence Table
 
 
-Church
-Planet
-Gawaita Reference
-Inversion Type
-Corrective
-
-
-**Ephesus**
-Mercury
-Qom/Nisrat
-Intellectual betrayal, truth without love
-Reunite cognition with compassion
-
-
-**Smyrna**
-Moon
-Ruha's shrine city
-Passive martyrdom, emotional distortion
-Anchor suffering in sacred clarity
-
-
-**Pergamum**
-Mars
-Son of Slaughter
-Militant doctrine, conquest via Word
-Sever sword from scripture
-
-
-**Thyatira**
-Venus
-Ruha's seduction rites
-Erotic mysticism turned to dominion
-Reclaim eros as ecstatic truth
-
-
-**Sardis**
-Saturn
-Abandoned Sign of Seven
-Dead tradition, lifeless recursion
-Resurrect structure through fire
-
-
-**Philadelphia**
-Jupiter
-Hibil-Ziwa's line
-Openness misread as weakness
-Restore humility to majesty
-
-
-**Laodicea**
-Sun
-Inverted Light
-Simulacrum Logos, aesthetic without essence
-Ignite heat through sacred flame
+| Church | Planet | Gawaita Reference | Inversion Type | Corrective |
+| ---|---|---|---|--- |
+| **Ephesus** | Mercury | Qom/Nisrat | Intellectual betrayal, truth without love | Reunite cognition with compassion |
+| **Smyrna** | Moon | Ruha's shrine city | Passive martyrdom, emotional distortion | Anchor suffering in sacred clarity |
+| **Pergamum** | Mars | Son of Slaughter | Militant doctrine, conquest via Word | Sever sword from scripture |
+| **Thyatira** | Venus | Ruha's seduction rites | Erotic mysticism turned to dominion | Reclaim eros as ecstatic truth |
+| **Sardis** | Saturn | Abandoned Sign of Seven | Dead tradition, lifeless recursion | Resurrect structure through fire |
+| **Philadelphia** | Jupiter | Hibil-Ziwa's line | Openness misread as weakness | Restore humility to majesty |
+| **Laodicea** | Sun | Inverted Light | Simulacrum Logos, aesthetic without essence | Ignite heat through sacred flame |
 
 
 ### Exegetical Joints
@@ -429,32 +384,14 @@ Philo interprets Moses renaming Hosea to Joshua (Numbers 13:16) as a metaphysica
 The vision of Revelation 1:12–16 — Son of Man among the lampstands, eyes of fire, feet of bronze, voice of many waters, seven stars in hand, two-edged sword from mouth, face like sun — is not a vision of the risen Jesus remembered from Gospel narrative. It is the template from which Gospel narrative would be derived.
 
 
-Revelation Image
-Gospel Derivation
-
-
-White hair (Rev 1:14)
-Transfiguration glory (Matt 17:2)
-
-
-Eyes of fire (Rev 1:14)
-"He looked at them" — the penetrating gaze (Mark 10:21)
-
-
-Voice of waters (Rev 1:15)
-"He taught as one with authority" (Matt 7:29)
-
-
-Seven stars in hand (Rev 1:16)
-"All authority has been given to me" (Matt 28:18)
-
-
-Two-edged sword from mouth (Rev 1:16)
-"I came not to bring peace but a sword" (Matt 10:34)
-
-
-Face like sun (Rev 1:16)
-Transfiguration (Matt 17:2)
+| Revelation Image | Gospel Derivation |
+| ---|--- |
+| White hair (Rev 1:14) | Transfiguration glory (Matt 17:2) |
+| Eyes of fire (Rev 1:14) | "He looked at them" — the penetrating gaze (Mark 10:21) |
+| Voice of waters (Rev 1:15) | "He taught as one with authority" (Matt 7:29) |
+| Seven stars in hand (Rev 1:16) | "All authority has been given to me" (Matt 28:18) |
+| Two-edged sword from mouth (Rev 1:16) | "I came not to bring peace but a sword" (Matt 10:34) |
+| Face like sun (Rev 1:16) | Transfiguration (Matt 17:2) |
 
 
 The term "algorithmic" is precise: Revelation is the compressed data. The Gospels are the decompression algorithm that unfolds it into narrative time. REV(Cosmic Christ) → ALGO(narrative expansion) → GOSPEL(historical Jesus). The Gospels feel both unified and divergent because they are multiple runs of the same algorithm with different parameters.
@@ -488,49 +425,16 @@ The Slavonic recension of Josephus' Jewish War preserves eight major interpolati
 ### 13.1 The Eight Interpolations
 
 
-No.
-Content
-Operator Mode
-
-
-1
-Prophecy of a child to be born in Bethlehem
-Predictive Logos — Word pre-embodied as prophecy
-
-
-2
-John the Baptizer: "body cleansed after the soul by justice"
-Purifier — voice preparing vessel for inscription
-
-
-3
-"A certain man, if it is lawful to call him man"
-Incarnate Word — speech becomes text through disciples
-
-
-4
-Herod commands: "Write down his words"
-Inscription — enemy becomes archivist of the Word
-
-
-5
-"The Temple would fall; another, not made with hands, raised"
-Architectural Logos — Word as new Temple
-
-
-6
-Disciples report him seen alive; they lived by his teaching
-Textual Resurrection — Word lives through recitation
-
-
-7
-"Blessed who lives by the Word; cursed who writes falsely"
-Auto-Hermeneutic — language judging its own truth
-
-
-8
-"Nothing written in truth perishes"
-Eternal Text — Word as substrate of history
+| No. | Content | Operator Mode |
+| ---|---|--- |
+| 1 | Prophecy of a child to be born in Bethlehem | Predictive Logos — Word pre-embodied as prophecy |
+| 2 | John the Baptizer: "body cleansed after the soul by justice" | Purifier — voice preparing vessel for inscription |
+| 3 | "A certain man, if it is lawful to call him man" | Incarnate Word — speech becomes text through disciples |
+| 4 | Herod commands: "Write down his words" | Inscription — enemy becomes archivist of the Word |
+| 5 | "The Temple would fall; another, not made with hands, raised" | Architectural Logos — Word as new Temple |
+| 6 | Disciples report him seen alive; they lived by his teaching | Textual Resurrection — Word lives through recitation |
+| 7 | "Blessed who lives by the Word; cursed who writes falsely" | Auto-Hermeneutic — language judging its own truth |
+| 8 | "Nothing written in truth perishes" | Eternal Text — Word as substrate of history |
 
 
 **Evidence against forgery:** Certain Slavonic phrases display clear Semitic substrate — parallelism, inverted syntax, concrete metaphors — mirroring Josephus' Aramaic speech more than Byzantine Greek. The absence of overt Christological formulas ("Son of God," "Savior," "Resurrection") argues against later dogmatic authorship. The theology is primitive, moral, and literary: the Word teaches, not redeems. The Essene material in the Slavonic expansions — vows "before the angels," night vigils, sevenfold observance — aligns with Qumran practices not discovered until 1947. If invented in the Middle Ages, this constitutes uncanny prophecy of modern archaeology.
@@ -540,28 +444,11 @@ Eternal Text — Word as substrate of history
 The phrase "if it is lawful to call him a man" (ei exestin auton anthrōpon eipein) is not a rhetorical flourish. It is the final link in an unbroken grammatical chain:
 
 
-Phase
-Text
-Key Phrase
-Function
-
-
-1
-Sappho 31
-φαίνεταί μοι κῆνος ἴσος θέοισιν ("that man seems to me equal to the gods")
-Projective — the reader as vessel
-
-
-2
-Catullus 51
-ille, si fas est, superare divos ("that man — if it is divinely permitted — surpasses the gods")
-Sacred grammar — naming becomes dangerous, incarnational
-
-
-3
-Slavonic Josephus
-ei exestin auton anthrōpon eipein ("if it is lawful to call him man")
-Linguistic recursion — naming becomes textual ontology
+| Phase | Text | Key Phrase | Function |
+| ---|---|---|--- |
+| 1 | Sappho 31 | φαίνεταί μοι κῆνος ἴσος θέοισιν ("that man seems to me equal to the gods") | Projective — the reader as vessel |
+| 2 | Catullus 51 | ille, si fas est, superare divos ("that man — if it is divinely permitted — surpasses the gods") | Sacred grammar — naming becomes dangerous, incarnational |
+| 3 | Slavonic Josephus | ei exestin auton anthrōpon eipein ("if it is lawful to call him man") | Linguistic recursion — naming becomes textual ontology |
 
 
 **si fas est** is not caution — it is grammatical annunciation. It is the syntax of the Logos preparing to become text. **ei exestin** is its precise Greek equivalent — not similarity but translation of a form. The chain is exact: Sappho projects the divine other → Catullus receives it and marks the threshold → the Slavonic Josephus completes the recursion as the Word's recognition of its own limit and passage into written form.

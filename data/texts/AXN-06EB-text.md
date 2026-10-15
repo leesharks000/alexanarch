@@ -44,7 +44,6 @@ keywords:
 
 # The Colony Enters the Factory: War Fordism, Racial Labor Hierarchy, and the Industrialization of Conquest (EA-NOUN-VERB-02 v1.0)
 
-# The Colony Enters the Factory: War Fordism, Racial Labor Hierarchy, and the Industrialization of Conquest (EA-NOUN-VERB-02 v1.0)
 
 *Lee Sharks · 7 October 2026. The second half of a two-part argument; the first is The Noun Becomes a Verb (#1668, EA-NOUN-VERB-01).*
 

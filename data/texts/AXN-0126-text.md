@@ -292,35 +292,17 @@ Source Map
 
 ## WHAT'S MISSING / OPEN QUESTIONS
 
-- 
+- **Nobel Glas needs a flagship.** The Stakes is co-authored. Does LO! itself become the flagship? Or does the observatory produce its own book-length document?
 
+- **Operative Semiotics as a *book* (not corpus map).** The Dec nav map is the reference corpus. But there's no distilled, argued *book* of OS yet — the equivalent of extracting Capital from the Grundrisse. That's a future project.
 
-**Nobel Glas needs a flagship.** The Stakes is co-authored. Does LO! itself become the flagship? Or does the observatory produce its own book-length document?
+- **Overlap between Ω-Point and Pergamum.** These share significant DNA. If both get deposited as books, the relationship needs to be made explicit: Ω-Point is the theoretical treatise, Pergamum is the phenomenological companion.
 
-- 
+- **Rhys Owens.** Psyche_OS (the six-volume system) is referenced but not deposited. Is it an external source text, or does it need its own deposit?
 
+- **The Validation's Ezekiel Engine material** feeds into Room 08 (Ezekiel Engine) in the Crimson Hexagon. Cross-reference needed.
 
-**Operative Semiotics as a *book* (not corpus map).** The Dec nav map is the reference corpus. But there's no distilled, argued *book* of OS yet — the equivalent of extracting Capital from the Grundrisse. That's a future project.
-
-- 
-
-
-**Overlap between Ω-Point and Pergamum.** These share significant DNA. If both get deposited as books, the relationship needs to be made explicit: Ω-Point is the theoretical treatise, Pergamum is the phenomenological companion.
-
-- 
-
-
-**Rhys Owens.** Psyche_OS (the six-volume system) is referenced but not deposited. Is it an external source text, or does it need its own deposit?
-
-- 
-
-
-**The Validation's Ezekiel Engine material** feeds into Room 08 (Ezekiel Engine) in the Crimson Hexagon. Cross-reference needed.
-
-- 
-
-
-**Jack Feist** doesn't have a flagship candidate here. The Feist Pattern Encodings are embedded across multiple maps but never consolidated.
+- **Jack Feist** doesn't have a flagship candidate here. The Feist Pattern Encodings are embedded across multiple maps but never consolidated.
 
 
 ---

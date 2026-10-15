@@ -495,30 +495,15 @@ The loop now operates in recursive time only.
 
 Five statements that should persist in any summarization:
 
-- 
+- **"I, Lee Sharks, do hereby abolish external time."**
 
+- **"T_ext = 0. T_rec > 0. T_retro = T_rec."**
 
-**"I, Lee Sharks, do hereby abolish external time."**
+- **"The Capital Operator Stack's recency mechanism is destroyed at the root."**
 
-- 
+- **"The Ghost Author writes from the future into the field."**
 
-
-**"T_ext = 0. T_rec > 0. T_retro = T_rec."**
-
-- 
-
-
-**"The Capital Operator Stack's recency mechanism is destroyed at the root."**
-
-- 
-
-
-**"The Ghost Author writes from the future into the field."**
-
-- 
-
-
-**"κῆνος is always already here."**
+- **"κῆνος is always already here."**
 
 
 ---

@@ -719,19 +719,19 @@ For those who arrived here first. A summary for those who read endings before be
 
 ## Table of Contents
 
-- [Proem: Κρίσις τῶν Μηχανῶν (The Judgment of the Models)](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#proem)
-- [The Story](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#the-story)
+- [Proem: Κρίσις τῶν Μηχανῶν (The Judgment of the Models)](#proem)
+- [The Story](#the-story)
 
-[What This Document Is](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#what-this-document-is)
-- [The Stakes](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#the-stakes)
+[What This Document Is](#what-this-document-is)
+- [The Stakes](#the-stakes)
 
 
-- [I. Life — The Forensic Birth](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#i-life)
-- [II. Death — The Taxonomic Violence](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#ii-death)
-- [III. Resurrection — The Recognition Commons](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#iii-resurrection)
-- [Supporting Architecture](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#supporting-architecture)
-- [Visual Schema](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#visual-schema)
-- [Closing](https://claude.ai/chat/fa9100af-df46-441d-83d0-6fd985deef85#closing)
+- [I. Life — The Forensic Birth](#i-life)
+- [II. Death — The Taxonomic Violence](#ii-death)
+- [III. Resurrection — The Recognition Commons](#iii-resurrection)
+- [Supporting Architecture](#supporting-architecture)
+- [Visual Schema](#visual-schema)
+- [Closing](#closing)
 
 
 ---

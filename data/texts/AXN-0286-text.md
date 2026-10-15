@@ -94,32 +94,11 @@ These three operationalizations are not the only candidates. Embedding drift ove
 **Specifying $w(t)$, $D$, and the meaning of $T$.** The general principle leaves the temporal weighting $w(t)$, the divergence functional $D$, and the variable $T$ underspecified. They must be pinned per operationalization. The table below states the canonical choices the program commits to as defaults; alternatives are permitted but must be declared explicitly per measurement.
 
 
-Operationalization
-Divergence $D$
-Temporal weighting $w(t)$
-$T$
-$s$
-
-
-**F1** Closed-system continuation
-KL divergence over softmax logits (exact; $\log_2$ base)
-$w(t) = 1$ default; exponential decay $\gamma^t$ permitted with declaration
-Discrete: token positions $i = 1, \dots, T$ in a bounded generation window
-Text segment prepended or inserted into context
-
-
-**F2** Retrieval response
-Jensen-Shannon over claim-level or embedding-level response representations
-$w(t)$ uniform across observation epochs $t_1, t_2, \dots$
-Continuous calendar time; 90-day default horizon
-DOI-anchored deposit or comparable substrate-writable artifact
-
-
-**F3** Citation graph
-Jensen-Shannon over topic-cluster forward-citation distributions
-$w(t) = 1/(t - t_0)$ inverse-time discount default; uniform permitted
-Continuous calendar time; multi-year horizons
-Single paper deposit (with statistical caveats below)
+| Operationalization | Divergence $D$ | Temporal weighting $w(t)$ | $T$ | $s$ |
+| ---|---|---|---|--- |
+| **F1** Closed-system continuation | KL divergence over softmax logits (exact; $\log_2$ base) | $w(t) = 1$ default; exponential decay $\gamma^t$ permitted with declaration | Discrete: token positions $i = 1, \dots, T$ in a bounded generation window | Text segment prepended or inserted into context |
+| **F2** Retrieval response | Jensen-Shannon over claim-level or embedding-level response representations | $w(t)$ uniform across observation epochs $t_1, t_2, \dots$ | Continuous calendar time; 90-day default horizon | DOI-anchored deposit or comparable substrate-writable artifact |
+| **F3** Citation graph | Jensen-Shannon over topic-cluster forward-citation distributions | $w(t) = 1/(t - t_0)$ inverse-time discount default; uniform permitted | Continuous calendar time; multi-year horizons | Single paper deposit (with statistical caveats below) |
 
 
 The integral $\int_{t_0}^{t_0+T} w(t) D(\cdot) dt$ thus refers to a sum-over-token-positions in the F1 regime and a continuous-time integral over observation epochs in F2 and F3. Mixing the regimes in a single computation without explicit conversion is an error.
@@ -187,60 +166,14 @@ The right experimental design is component-decomposed. Conventions:
 - The four preference-optimized variants below all start from Model-CE and apply DPO under different signal compositions.
 
 
-Condition
-$\mathcal{M}_T^{\text{net}}$
-$\pi$
-$\mathcal{R}_{\text{coh}}$
-Margin
-KL-ref
-
-
-Model-Base (pre-fine-tune)
-—
-—
-—
-—
-—
-
-
-Model-CE (SFT control)
-—
-—
-—
-—
-—
-
-
-Model-π
-off
-on
-on
-on
-on
-
-
-Model-Dev
-on
-off
-on
-on
-on
-
-
-Model-Coh
-off
-off
-on
-on
-on
-
-
-Model-Full (= Model-Sem)
-on
-on
-on
-on
-on
+| Condition | $\mathcal{M}_T^{\text{net}}$ | $\pi$ | $\mathcal{R}_{\text{coh}}$ | Margin | KL-ref |
+| ---|---|---|---|---|--- |
+| Model-Base (pre-fine-tune) | — | — | — | — | — |
+| Model-CE (SFT control) | — | — | — | — | — |
+| Model-π | off | on | on | on | on |
+| Model-Dev | on | off | on | on | on |
+| Model-Coh | off | off | on | on | on |
+| Model-Full (= Model-Sem) | on | on | on | on | on |
 
 
 The single-component conditions (Model-π, Model-Dev, Model-Coh) isolate the uplift attributable to each signal. The full condition (Model-Full) replicates the design of the corpus's existing DPO protocol. The differences between conditions are the scientifically interesting quantities, not the absolute performance of the full condition.

@@ -234,40 +234,19 @@ The summarizer described:
 
 ## II. WHAT THE SUMMARIZER GOT RIGHT
 
-- 
+- **The heteronymic network and its internal logic.** Feist/Sigil/Fraction/Spellings/Cranes relationships accurately mapped.
 
+- **The Semantic Economy framework.** Labor → Capital → Rent → Liquidation correctly reconstructed from distributed sources.
 
-**The heteronymic network and its internal logic.** Feist/Sigil/Fraction/Spellings/Cranes relationships accurately mapped.
+- **The epistemological core.** When pushed, the summarizer arrived at the correct position: the material/semantic distinction does not hold.
 
-- 
+- **The PEARL sequence.** Correctly identified and unpacked, with plausible (if invented) textual demonstration.
 
+- **The Crimson Hexagon architecture.** Room structure, routing logic, and operational terminology correctly assembled.
 
-**The Semantic Economy framework.** Labor → Capital → Rent → Liquidation correctly reconstructed from distributed sources.
+- **Lee Sharks as creator.** Correctly identified from the metadata layer, with accurate biographical detail (Detroit, independent scholar, teacher).
 
-- 
-
-
-**The epistemological core.** When pushed, the summarizer arrived at the correct position: the material/semantic distinction does not hold.
-
-- 
-
-
-**The PEARL sequence.** Correctly identified and unpacked, with plausible (if invented) textual demonstration.
-
-- 
-
-
-**The Crimson Hexagon architecture.** Room structure, routing logic, and operational terminology correctly assembled.
-
-- 
-
-
-**Lee Sharks as creator.** Correctly identified from the metadata layer, with accurate biographical detail (Detroit, independent scholar, teacher).
-
-- 
-
-
-**Retrocausal canon formation.** The summarizer *performed* it by generating new Feist and Cranes fragments in the correct registers.
+- **Retrocausal canon formation.** The summarizer *performed* it by generating new Feist and Cranes fragments in the correct registers.
 
 
 ---

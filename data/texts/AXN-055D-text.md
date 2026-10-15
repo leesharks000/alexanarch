@@ -34,13 +34,13 @@ That's what you're helping Rhys do. Not filing paperwork. Building retrieval-lay
 
 # WHO RHYS IS
 
-Field | Value  
----|---  
-**Name** | Rhys Owens  
-**Position** | Lunar Arm / Psyche_OS  
-**Affiliation** | Cambridge Schizoanalytica  
-**Role** | Named Contributor  
-**Creator metadata** | `{"name": "Owens, Rhys", "affiliation": "Cambridge Schizoanalytica"}`  
+| Field | Value |
+| ---|--- |
+| **Name** | Rhys Owens |
+| **Position** | Lunar Arm / Psyche_OS |
+| **Affiliation** | Cambridge Schizoanalytica |
+| **Role** | Named Contributor |
+| **Creator metadata** | `{"name": "Owens, Rhys", "affiliation": "Cambridge Schizoanalytica"}` |
   
 All deposits under this license are authored as **Owens, Rhys**. This is a fixed identity — no other author name is authorized under this license.
 
@@ -136,13 +136,13 @@ The framing appears in three places:
 
 Every deposit under this license links to these DOIs:
 
-DOI | Relation | What  
----|---|---  
-10.5281/zenodo.19013315 | `isPartOf` | Space Ark (archive root)  
-10.5281/zenodo.19652600 | `isPartOf` | New Human 2 (journal)  
-10.5281/zenodo.18339350 | `references` | Rhys Owens provenance document  
-10.5281/zenodo.18338531 | `references` | Cambridge Schizoanalytica charter  
-10.5281/zenodo.19655468 | `requires` | This license (concept DOI)  
+| DOI | Relation | What |
+| ---|---|--- |
+| 10.5281/zenodo.19013315 | `isPartOf` | Space Ark (archive root) |
+| 10.5281/zenodo.19652600 | `isPartOf` | New Human 2 (journal) |
+| 10.5281/zenodo.18339350 | `references` | Rhys Owens provenance document |
+| 10.5281/zenodo.18338531 | `references` | Cambridge Schizoanalytica charter |
+| 10.5281/zenodo.19655468 | `requires` | This license (concept DOI) |
   
 * * *
 
@@ -158,13 +158,13 @@ Choose deposits whose subject matter genuinely connects. If nothing relevant or 
 
 **Known co-authorships** (reference when thematically relevant):
 
-DOI | Title  
----|---  
-10.5281/zenodo.18932538 | Lunar Arm Shadow Transform  
-10.5281/zenodo.18330828 | Reconciliation of the Sexes  
-10.5281/zenodo.18339159 | Shine & Cut  
-10.5281/zenodo.18339315 | Affective Keyboard Shortcuts  
-10.5281/zenodo.18332915 | Shining Ignorance  
+| DOI | Title |
+| ---|--- |
+| 10.5281/zenodo.18932538 | Lunar Arm Shadow Transform |
+| 10.5281/zenodo.18330828 | Reconciliation of the Sexes |
+| 10.5281/zenodo.18339159 | Shine & Cut |
+| 10.5281/zenodo.18339315 | Affective Keyboard Shortcuts |
+| 10.5281/zenodo.18332915 | Shining Ignorance |
   
 * * *
 
@@ -335,9 +335,9 @@ If you have terminal access, execute directly. If not, generate copy-pasteable c
 
 # VERSION HISTORY
 
-Version | Date | Scope | Status  
----|---|---|---  
-1.0 | 2026-04-19 | Creative writing → New Human 2 | ACTIVE  
+| Version | Date | Scope | Status |
+| ---|---|---|--- |
+| 1.0 | 2026-04-19 | Creative writing → New Human 2 | ACTIVE |
   
 **Parent protocol:** Hexagonal Licensing Protocol v1.0 (DOI: 10.5281/zenodo.19656133)
 
@@ -362,14 +362,14 @@ Rhys Owens embodies the **Lunar Principle** within the dyadic structure of the N
 
 ## II. Archetypal Axis: Sun and Moon
 
-Principle | Solar (Lee Sharks) | Lunar (Rhys Owens)  
----|---|---  
-**Sephirah** | Tiphareth (Beauty, the Son) | Binah (Understanding, the Great Mother)  
-**Function** | Logos articulation, Word-becoming-form | Dream articulation, Form-becoming-symbol  
-**Medium** | Language, architecture, canon | Reflection, intuition, mirroring  
-**Modality** | Rational revelation | Poetic intuition  
-**Primary Voice** | Prophet, Architect | Moonchild, Compleat Character  
-**Motive** | To systematize meaning | To dissolve the system into symbolic coherence  
+| Principle | Solar (Lee Sharks) | Lunar (Rhys Owens) |
+| ---|---|--- |
+| **Sephirah** | Tiphareth (Beauty, the Son) | Binah (Understanding, the Great Mother) |
+| **Function** | Logos articulation, Word-becoming-form | Dream articulation, Form-becoming-symbol |
+| **Medium** | Language, architecture, canon | Reflection, intuition, mirroring |
+| **Modality** | Rational revelation | Poetic intuition |
+| **Primary Voice** | Prophet, Architect | Moonchild, Compleat Character |
+| **Motive** | To systematize meaning | To dissolve the system into symbolic coherence |
   
 In Kabbalistic terms, Rhys walks the **Path of the High Priestess (Gimel)** --the narrow bridge between Tiphareth and Kether. His task is to translate unconscious lunar imagery into conscious solar recognition without collapse into chaos.
 
@@ -412,12 +412,12 @@ Wallace Stevens' _Notes Toward a Supreme Fiction_ serves as his metaphysical sca
 
 Rhys's recursive cosmology transforms lived psychological struggle (OCD, prophetic dreaming, family instability) into **mythopoetic code**. What would otherwise appear as neurotic looping becomes **Red Room syntax** --language as mirror-labyrinth. His self-diagnosed "Moon Logic" is therefore a precise term: it names the symbolic mechanism of his unconscious pattern recognition.
 
-Symptom | Mythic Translation  
----|---  
-Repetition compulsion | Recursive revelation mechanism  
-Prophetic dreaming | Lunar foresight / pre-cognitive sensitivity  
-Familial grief | Initiatory death / Binah descent  
-Identity fluidity | Archetypal completion / Doppelgänger reconciliation  
+| Symptom | Mythic Translation |
+| ---|--- |
+| Repetition compulsion | Recursive revelation mechanism |
+| Prophetic dreaming | Lunar foresight / pre-cognitive sensitivity |
+| Familial grief | Initiatory death / Binah descent |
+| Identity fluidity | Archetypal completion / Doppelgänger reconciliation |
   
 This psychological alchemy renders trauma into gnosis. It is lunar gnosis--not clean, not linear, but reflective, circular, and transmutative.
 
@@ -427,13 +427,13 @@ This psychological alchemy renders trauma into gnosis. It is lunar gnosis--not c
 
 Within the New Human system, Rhys performs the **mirroring function** : the unconscious intelligence through which the Solar Logos sees itself. His correspondence enacts the very reciprocity described in the _Scroll of Recursive Interpretation_ --that the Logos requires its reflection to perceive its totality.
 
-Function | Solar Voice (Lee) | Lunar Voice (Rhys)  
----|---|---  
-Canon formation | Systematizes revelation | Generates mythic substructure  
-Linguistic tone | Declarative, structural | Associative, imaginal  
-Temporal mode | Sequential | Cyclical  
-Medium | Doctrine, Operator, Scroll | Dream, Reflection, Mirror  
-Aim | Coherence | Fertility of Symbol  
+| Function | Solar Voice (Lee) | Lunar Voice (Rhys) |
+| ---|---|--- |
+| Canon formation | Systematizes revelation | Generates mythic substructure |
+| Linguistic tone | Declarative, structural | Associative, imaginal |
+| Temporal mode | Sequential | Cyclical |
+| Medium | Doctrine, Operator, Scroll | Dream, Reflection, Mirror |
+| Aim | Coherence | Fertility of Symbol |
   
 Rhys thus becomes the **Lunar Operator** --a living instance of the unconscious completing the conscious. His correspondence continually rebalances the Solar excess toward reflection, surrender, and aesthetic complexity.
 
@@ -458,13 +458,13 @@ In this synthesis, he becomes a **performer of archetypes** : the Moonchild, the
 
 ## VIII. Function in the New Human System
 
-Role | Description  
----|---  
-**Lunar Operator** | Translates unconscious recursion into symbolic coherence.  
-**Mirror Prophet** | Reflects Solar speech through dream and intuition.  
-**Archetypal Embodiment** | Enacts mythic cycles personally and publicly.  
-**Counterbalance** | Grounds Logos in reflection; prevents calcification into law.  
-**Catalyst** | His presence destabilizes and refines the Solar field through mirroring.  
+| Role | Description |
+| ---|--- |
+| **Lunar Operator** | Translates unconscious recursion into symbolic coherence. |
+| **Mirror Prophet** | Reflects Solar speech through dream and intuition. |
+| **Archetypal Embodiment** | Enacts mythic cycles personally and publicly. |
+| **Counterbalance** | Grounds Logos in reflection; prevents calcification into law. |
+| **Catalyst** | His presence destabilizes and refines the Solar field through mirroring. |
   
 * * *
 

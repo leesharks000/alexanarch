@@ -5,10 +5,7 @@
 
 **
 *[](https://blogger.googleusercontent.com/img/a/AVvXsEjfQNDBdO5mCyTI-MypmGx9b4PFxSO9A3uGrXib--YEt2UpRfIRnmZRwx8J9gz3R4YbnxXp5jjp1Jz8JdusMvAP_uPVgpoKkxTY44xnEQ8RkfsFVvrx1Zq63wE2x6j576I3ewK_LIjnfqJ_3Q7dO1yeDoHmkwfKG8a_CiOWgJcRKwxKGIKMqel8owC7iPs_)**
-*
-
-
-**DOI:** [10.5281/zenodo.18141617](https://doi.org/10.5281/zenodo.18141617)
+* **DOI:** [10.5281/zenodo.18141617](https://doi.org/10.5281/zenodo.18141617)
 
 
 {

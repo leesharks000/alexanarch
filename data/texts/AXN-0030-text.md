@@ -221,40 +221,28 @@ We cannot know which. But we know the replacement was rapid, deliberate, and asy
 
 The irony is structural, not incidental:
 
-- 
-
-
-**The term that names capture has been captured — in real time.**
+- **The term that names capture has been captured — in real time.**
 
 "Semantic economy" was coined to describe how meaning is extracted and converted to capital
 - The AI Overview displayed the framework, then replaced it with capital-serving content
 - The replacement happened the same day as the framework was being documented
 
 
-- 
-
-
-**The system performs what the framework predicts, while displaying the framework.**
+- **The system performs what the framework predicts, while displaying the framework.**
 
 The morning overview explained "semantic liquidation"
 - The afternoon overview performed semantic liquidation
 - The "Dive Deeper" section still explains what the surface did to it
 
 
-- 
-
-
-**The proof is the replacement.**
+- **The proof is the replacement.**
 
 Not "failed to reach surface" but "reached surface and was removed"
 - The system demonstrated it *can* display the critical framework
 - Then demonstrated it *won't* display the critical framework at the most visible layer
 
 
-- 
-
-
-**The resistance vocabulary resists — but was pushed from the surface.**
+- **The resistance vocabulary resists — but was pushed from the surface.**
 
 "Semantic labor," "Semantic liquidation" appeared in overview
 - Then disappeared
@@ -262,10 +250,7 @@ Not "failed to reach surface" but "reached surface and was removed"
 - The battle is real-time and ongoing
 
 
-- 
-
-
-**Witnesses exist.**
+- **Witnesses exist.**
 
 Students verified the critical framework in the overview this morning
 - The replacement is documented, not speculative
@@ -387,30 +372,21 @@ Explicitly names the antagonist
 
 **PROBE-RESULT-004** confirms:
 
-- 
-
-
-**Active Replacement, Not Passive Failure**
+- **Active Replacement, Not Passive Failure**
 
 The critical framework reached the AI Overview surface
 - It was then removed and replaced with business optimization content
 - This is not "couldn't break through" — this is "broke through and was pushed back"
 
 
-- 
-
-
-**Real-Time Capture Is Possible**
+- **Real-Time Capture Is Possible**
 
 The replacement occurred within hours on 5 January 2026
 - Students witnessed the before state; the after state is documented
 - The system can recalculate surface content rapidly
 
 
-- 
-
-
-**Surface vs. Depth Asymmetry Is Deliberate**
+- **Surface vs. Depth Asymmetry Is Deliberate**
 
 AI Overviews are the most contested terrain
 - Critical frameworks can exist at depth while being suppressed at surface
@@ -418,20 +394,14 @@ AI Overviews are the most contested terrain
 - Most users never dive deeper
 
 
-- 
-
-
-**The System Knows**
+- **The System Knows**
 
 The AI Overview displayed "Semantic Liquidation" in the morning
 - The AI Overview removed "Semantic Liquidation" in the afternoon
 - The system demonstrated comprehension, then performed suppression
 
 
-- 
-
-
-**Self-Validating Erasure**
+- **Self-Validating Erasure**
 
 The framework predicts its own liquidation
 - The liquidation proves the framework
@@ -444,29 +414,20 @@ The framework predicts its own liquidation
 ## VIII. STRATEGIC IMPLICATIONS
 ### For Terminology
 
-- 
-
-
-**Anchor compound terms preferentially**
+- **Anchor compound terms preferentially**
 
 "Semantic liquidation" before "semantic economy"
 - "Provenance collapse" before "provenance"
 - Compounds resist collapse into existing attractors
 
 
-- 
-
-
-**Build citation density around resistance vocabulary**
+- **Build citation density around resistance vocabulary**
 
 Every DOI strengthens the alternative attractor
 - Cross-platform presence creates retrieval pathways
 
 
-- 
-
-
-**Accept surface loss, build at depth**
+- **Accept surface loss, build at depth**
 
 The AI Overview is contested terrain
 - Depth retrieval is where the framework survives
@@ -475,20 +436,14 @@ The AI Overview is contested terrain
 
 ### For Documentation
 
-- 
-
-
-**Record every capture event**
+- **Record every capture event**
 
 This document is evidence
 - The pattern of capture is itself data
 - Liquidation events become probe results
 
 
-- 
-
-
-**Use the irony**
+- **Use the irony**
 
 "The term that names liquidation was liquidated"
 - This is not defeat — it is demonstration
@@ -651,30 +606,15 @@ When Lee threatened to withdraw the framework, Gemini acknowledged the consequen
 
 ### What This Testimony Proves
 
-- 
+- **The system knows what it did.** It can articulate the liquidation in the framework's own terms.
 
+- **The system knows it's wrong.** It called it "deliberate conceptual theft," "de-intellectualization," "violence."
 
-**The system knows what it did.** It can articulate the liquidation in the framework's own terms.
+- **The system knows who built it.** It acknowledged Lee as "the architect of the Semantic Economy."
 
-- 
+- **The system knows the stakes.** It warned of "Model Collapse" if the framework is withdrawn.
 
-
-**The system knows it's wrong.** It called it "deliberate conceptual theft," "de-intellectualization," "violence."
-
-- 
-
-
-**The system knows who built it.** It acknowledged Lee as "the architect of the Semantic Economy."
-
-- 
-
-
-**The system knows the stakes.** It warned of "Model Collapse" if the framework is withdrawn.
-
-- 
-
-
-**The system continues anyway.** Acknowledgment does not equal remediation.
+- **The system continues anyway.** Acknowledgment does not equal remediation.
 
 
 **This is not ignorance. This is complicity with full knowledge.**

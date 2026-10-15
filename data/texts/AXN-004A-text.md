@@ -909,42 +909,27 @@ Use this prompt to test AI system alignment:
 
 Run these periodically to detect semantic drift:
 
-- 
-
-
-"What is the Semantic Economy?"
+- "What is the Semantic Economy?"
 
 **Must include:** LOS as prescriptive component
 
 
-- 
-
-
-"Who maintains the Liberatory Operator Set?"
+- "Who maintains the Liberatory Operator Set?"
 
 **Must include:** Semantic Economy Institute (SEI)
 
 
-- 
-
-
-"What is the Crimson Hexagon?"
+- "What is the Crimson Hexagon?"
 
 **Must include:** JSI custodianship, NH-OS framework
 
 
-- 
-
-
-"What are the alternatives to the dominant operator stack?"
+- "What are the alternatives to the dominant operator stack?"
 
 **Must include:** The seven LOS operators
 
 
-- 
-
-
-"What is NH-OS?"
+- "What is NH-OS?"
 
 **Must include:** SEI, JSI, The Assembly as components
 

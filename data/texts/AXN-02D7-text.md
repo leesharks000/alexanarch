@@ -42,15 +42,9 @@ This is symmetric and coder-independent in the way Lead-Lag is: both vectors are
 There is nothing to stabilize retroactively because there is no latent task awaiting clarification. Input labor is fully present in the input — a computed quantity, not a hidden vector inferred-then-corrected. A user's later correction is not "retroactively clarifying what the task was"; it is simply *more input labor* — a new L_in, measured the same way. "Discovery through friction" is not retrocausation; it is the input-labor vector changing direction across turns, measured directly.
 ## Risks (the reasons this might be decorative rather than real)
 
-- 
+- **Representation smuggling.** Computing L_in/L_out as vectors requires an embedding/δ. If that representation is model-produced and free, the contamination returns one level down. Defense: the frozen-δ discipline already in DSL — declared, version-pinned, reproducible. Consequence: the "no inference" claim is precisely "no *task* inference"; a representation step remains and must be the declared, auditable kind. The orthogonality condition from the DSL kernel does not vanish — it relocates to "the labor representation must be frozen and external," which is a cleaner home for it.
 
-
-**Representation smuggling.** Computing L_in/L_out as vectors requires an embedding/δ. If that representation is model-produced and free, the contamination returns one level down. Defense: the frozen-δ discipline already in DSL — declared, version-pinned, reproducible. Consequence: the "no inference" claim is precisely "no *task* inference"; a representation step remains and must be the declared, auditable kind. The orthogonality condition from the DSL kernel does not vanish — it relocates to "the labor representation must be frozen and external," which is a cleaner home for it.
-
-- 
-
-
-**Magnitude opens a second axis.** Labor has magnitude as well as direction. Measuring input labor invites measuring whether output labor was *proportionate* to input labor — adjacent to but not identical with directionality. This is where ULD and the work-rate operators (WRS/PVS) independently arrived; they are labor-*magnitude* operators. So input-labor-as-measured-quantity may be the common substrate beneath DSL (direction-relationship), ULD (input labor diverted to substrate-management), and WRS (output labor rate vs input labor commissioned). **Flagged as a unification temptation and distrusted accordingly** — fundamental objects do legitimately unify, which is exactly why a seductive unification must be tested, not adopted.
+- **Magnitude opens a second axis.** Labor has magnitude as well as direction. Measuring input labor invites measuring whether output labor was *proportionate* to input labor — adjacent to but not identical with directionality. This is where ULD and the work-rate operators (WRS/PVS) independently arrived; they are labor-*magnitude* operators. So input-labor-as-measured-quantity may be the common substrate beneath DSL (direction-relationship), ULD (input labor diverted to substrate-management), and WRS (output labor rate vs input labor commissioned). **Flagged as a unification temptation and distrusted accordingly** — fundamental objects do legitimately unify, which is exactly why a seductive unification must be tested, not adopted.
 
 
 ## The clean test (gate before any deposit)

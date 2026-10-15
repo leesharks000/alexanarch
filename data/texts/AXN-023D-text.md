@@ -308,40 +308,19 @@ Treat as installed node. Cross-link aggressively. Use as gravity well for contes
 
 ## §VI. Basin Hygiene
 
-- 
+- **Do not repeatedly query naked contested terms before deposit density is sufficient.** "Holographic kernel" before "Semantic Economy holographic kernel" stabilizes is self-sabotage.
 
+- **Use disambiguated compounds during basin-building.** Query "holographic kernel Semantic Economy," not "holographic kernel."
 
-**Do not repeatedly query naked contested terms before deposit density is sufficient.** "Holographic kernel" before "Semantic Economy holographic kernel" stabilizes is self-sabotage.
+- **When testing contested terms, click through only to target-basin sources.** Do not click competitor sources.
 
-- 
+- **Record outputs before interacting further.** Screenshot or copy the overview before clicking. Observation before perturbation.
 
+- **Separate probe queries from reinforcement queries.** Probes measure the field. Reinforcement queries deepen the basin through click-through and dwell.
 
-**Use disambiguated compounds during basin-building.** Query "holographic kernel Semantic Economy," not "holographic kernel."
+- **Never panic-query a destabilizing term.** Repeated anxious testing accelerates ejection.
 
-- 
-
-
-**When testing contested terms, click through only to target-basin sources.** Do not click competitor sources.
-
-- 
-
-
-**Record outputs before interacting further.** Screenshot or copy the overview before clicking. Observation before perturbation.
-
-- 
-
-
-**Separate probe queries from reinforcement queries.** Probes measure the field. Reinforcement queries deepen the basin through click-through and dwell.
-
-- 
-
-
-**Never panic-query a destabilizing term.** Repeated anxious testing accelerates ejection.
-
-- 
-
-
-**Use sovereign terms as gravity wells.** When depositing for a sovereign term (high BDR), explicitly reference contested terms in the prose. "Heteronymic Provenance Theory utilizes a holographic kernel (DOI: ...) to stabilize identity." This uses captured basins as tethers to pull shallow basins into the retrieval window. This is **associative anchoring**.
+- **Use sovereign terms as gravity wells.** When depositing for a sovereign term (high BDR), explicitly reference contested terms in the prose. "Heteronymic Provenance Theory utilizes a holographic kernel (DOI: ...) to stabilize identity." This uses captured basins as tethers to pull shallow basins into the retrieval window. This is **associative anchoring**.
 
 
 ---

@@ -7,10 +7,7 @@
 **Johannes Sigil**
 *Institute for Comparative Poetics*
 
-*
-
-
-*
+* *
 
 
 > "The test of epic is whether the fixed points hold. The test of epic theory is whether it can recognize the epic that establishes new fixed points."

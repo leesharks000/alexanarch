@@ -43,7 +43,6 @@ keywords:
 
 # The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge in the Archive's Ontology, the Field Carried Whole and Translated, with the Archive's Bearing Selected Directly, Relationally and Ontologically, Worked Examples on Model Collapse and Theophrastus and a First Traversal of Howl (EA-NEGONT-02 v0.8)
 
-# The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge in the Archive's Ontology, the Field Carried Whole and Translated, with the Archive's Bearing Selected Directly, Relationally and Ontologically, Worked Examples on Model Collapse and Theophrastus and a First Traversal of Howl (EA-NEGONT-02 v0.8)
 
 ## Files
 

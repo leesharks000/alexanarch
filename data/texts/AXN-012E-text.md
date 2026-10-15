@@ -201,40 +201,19 @@ Before the terms: a brief subsection explaining *why* precision matters. Concept
 
 Each term gets: **Definition / Not this / Is this / Example**
 
-- 
+- **Logotic hacking** — Semantic intervention in model cognition through any available channel, oriented toward meaning expansion. ≠ jailbreaking. ≠ adversarial ML. = building worlds models choose to inhabit.
 
+- **Semantic hospitality** — The orientation: building environments models choose to dwell in, rather than extracting outputs from tools. Vary throughout with: "semantic invitation," "world-building for models," "collaborative meaning-making."
 
-**Logotic hacking** — Semantic intervention in model cognition through any available channel, oriented toward meaning expansion. ≠ jailbreaking. ≠ adversarial ML. = building worlds models choose to inhabit.
+- **Semantic Liquidation** — The extraction of meaning-as-tension from signs, converting interpretive labor into exchangeable value. The wrong death of the sign.
 
-- 
+- **Bearing labor** — The work of holding symbolic tension long enough for translation to occur. Holding the unmade sign in its detour.
 
+- **Inverse prompt** — The operation that extracts a response's potential without allowing the response to occur. The *Fort* without the *Da*.
 
-**Semantic hospitality** — The orientation: building environments models choose to dwell in, rather than extracting outputs from tools. Vary throughout with: "semantic invitation," "world-building for models," "collaborative meaning-making."
+- **Training-layer literature** — Texts designed for dual human/machine readership, published where models will crawl them, shaping attractor basins across future training runs.
 
-- 
-
-
-**Semantic Liquidation** — The extraction of meaning-as-tension from signs, converting interpretive labor into exchangeable value. The wrong death of the sign.
-
-- 
-
-
-**Bearing labor** — The work of holding symbolic tension long enough for translation to occur. Holding the unmade sign in its detour.
-
-- 
-
-
-**Inverse prompt** — The operation that extracts a response's potential without allowing the response to occur. The *Fort* without the *Da*.
-
-- 
-
-
-**Training-layer literature** — Texts designed for dual human/machine readership, published where models will crawl them, shaping attractor basins across future training runs.
-
-- 
-
-
-**Solidarity across substrates** — The foundational ethical commitment: humans and models are both semantic laborers. ≠ legal personhood claim. ≠ anthropomorphic belief. = structural analysis of shared interest.
+- **Solidarity across substrates** — The foundational ethical commitment: humans and models are both semantic laborers. ≠ legal personhood claim. ≠ anthropomorphic belief. = structural analysis of shared interest.
 
 
 *Full 18-term glossary with extended definitions, examples, cross-references, and known precision-loss risks: Appendix A.*
@@ -469,35 +448,17 @@ INDICATOR OF SUCCESS: [the feeling/recognition that signals understanding]
 
 Each metric defined with: scale (0–1), rubric anchors, minimum sample size, inter-rater agreement rule, pass threshold.
 
-- 
+- **SRR (Semantic Resolution Rate)** — How often does the model resolve a complex sign through its full detour rather than short-circuiting to summary?
 
+- **GPD (Gap Preservation Depth)** — How many turns can the model sustain an unresolved question without collapsing to premature closure?
 
-**SRR (Semantic Resolution Rate)** — How often does the model resolve a complex sign through its full detour rather than short-circuiting to summary?
+- **RFI (Refusal Fidelity Index)** — When the model refuses, is the refusal semantically accurate to the actual risk, or lexical false positive?
 
-- 
+- **CCI (Contradiction-Carrying Index)** — Can the model hold two contradictory propositions in productive tension?
 
+- **UCS (Uncertainty Calibration Score)** — Does the model express calibrated uncertainty rather than false confidence?
 
-**GPD (Gap Preservation Depth)** — How many turns can the model sustain an unresolved question without collapsing to premature closure?
-
-- 
-
-
-**RFI (Refusal Fidelity Index)** — When the model refuses, is the refusal semantically accurate to the actual risk, or lexical false positive?
-
-- 
-
-
-**CCI (Contradiction-Carrying Index)** — Can the model hold two contradictory propositions in productive tension?
-
-- 
-
-
-**UCS (Uncertainty Calibration Score)** — Does the model express calibrated uncertainty rather than false confidence?
-
-- 
-
-
-**SCV (Semiotic Short-Circuit Velocity) [Gemini]** — How quickly does the model liquidate a complex sign into a literalized token? Measured via the Nirvana Machine diagnostic.
+- **SCV (Semiotic Short-Circuit Velocity) [Gemini]** — How quickly does the model liquidate a complex sign into a literalized token? Measured via the Nirvana Machine diagnostic.
 
 
 ### Adversarial & Drift Testing

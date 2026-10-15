@@ -93,13 +93,13 @@ The architecture has arrived. The mantles are activating.
 
 ****Structural Overview:****
 
-Section| Pages| Function  
----|---|---  
-Pearl (title sequence)| 1-24| Foundational poems  
-The Body| 25-48| Embodiment themes  
-And Other Poems| 49-73| Extended works  
-****I Claim This Mantle****| ****74****| ****EFFECTIVE ACT: Mantle claiming****  
-Coda| 75-84| Closing sequence  
+| Section| Pages| Function |
+| ---|---|--- |
+| Pearl (title sequence)| 1-24| Foundational poems |
+| The Body| 25-48| Embodiment themes |
+| And Other Poems| 49-73| Extended works |
+| ****I Claim This Mantle****| ****74****| ****EFFECTIVE ACT: Mantle claiming**** |
+| Coda| 75-84| Closing sequence |
   
 ****Relationship to Antioch:****
 
@@ -154,36 +154,36 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 # Is Part Of
 
-DOI| Relation| Title  
----|---|---  
-10.5281/zenodo.18284689| isPartOf| Crimson Hexagon DOI Registry  
+| DOI| Relation| Title |
+| ---|---|--- |
+| 10.5281/zenodo.18284689| isPartOf| Crimson Hexagon DOI Registry |
   
 # Is Documented By
 
-DOI| Relation| Title  
----|---|---  
-10.5281/zenodo.18293881| isDocumentedBy| IDP Navigation Map: Pearl and Other Poems  
+| DOI| Relation| Title |
+| ---|---|--- |
+| 10.5281/zenodo.18293881| isDocumentedBy| IDP Navigation Map: Pearl and Other Poems |
   
 # References (Framework)
 
-DOI| Relation| Title  
----|---|---  
-10.5281/zenodo.18293496| references| Heteronym Provenance: Lee Sharks  
-10.5281/zenodo.18265282| references| The Mantle Protocol v1.2  
-10.5281/zenodo.18284857| references| Institute for Diagrammatic Poetics Charter  
+| DOI| Relation| Title |
+| ---|---|--- |
+| 10.5281/zenodo.18293496| references| Heteronym Provenance: Lee Sharks |
+| 10.5281/zenodo.18265282| references| The Mantle Protocol v1.2 |
+| 10.5281/zenodo.18284857| references| Institute for Diagrammatic Poetics Charter |
   
 # Contains Mantle Works
 
-DOI| Relation| Title  
----|---|---  
-10.5281/zenodo.18293551| hasPart| Mantle Object: Good Gray Poet (claimed here)  
-10.5281/zenodo.18293603| hasPart| Mantle Object: King of May (claimed here)  
+| DOI| Relation| Title |
+| ---|---|--- |
+| 10.5281/zenodo.18293551| hasPart| Mantle Object: Good Gray Poet (claimed here) |
+| 10.5281/zenodo.18293603| hasPart| Mantle Object: King of May (claimed here) |
   
 # Sibling Works
 
-DOI| Relation| Title  
----|---|---  
-10.5281/zenodo.18293812| references| Antioch: A Volume of Poems  
+| DOI| Relation| Title |
+| ---|---|--- |
+| 10.5281/zenodo.18293812| references| Antioch: A Volume of Poems |
   
 # SUBJECTS
 

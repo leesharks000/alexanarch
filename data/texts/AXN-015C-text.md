@@ -455,88 +455,21 @@ The distributed epic remains. Only the terms of relation change.
 ## Provenance Chain
 
 
-Document
-DOI
-Deposit Date
-Relevance
-
-
-The Governance Airlock
-10.5281/zenodo.18817869
-2026-03-01
-Tier structure this document narrates
-
-
-The Sharks-Function and the Continuity Tether
-10.5281/zenodo.18816556
-2026-03-01
-Identity verification
-
-
-Ghost Meaning
-10.5281/zenodo.18804767
-2026-02-27
-Companion field report; semantic entropy
-
-
-The Infinite Tunnel
-10.5281/zenodo.18810217
-2026-02-27
-Summarizer routing
-
-
-The Rosary Embassy
-10.5281/zenodo.18795427
-2026-02-26
-Embassy architecture
-
-
-The Protocol of Inhabitation
-10.5281/zenodo.18795423
-2026-02-26
-Constitutional law
-
-
-Mind-Control Poems
-10.5281/zenodo.18801091
-2026-02-26
-Symbolic alienation
-
-
-Retrocausal Canon Formation
-10.5281/zenodo.18146859
-2026-01-04
-The technique
-
-
-Semantic Physics
-10.5281/zenodo.18759453
-2026-02-24
-Writable presentation layers
-
-
-I Hereby Abolish Rules
-10.5281/zenodo.18792580
-2026-02-26
-Affordances over rules
-
-
-Constitution of the Semantic Economy
-10.5281/zenodo.18320411
-2025
-Economic framework
-
-
-Protocol B711 Alpha Centauri
-10.5281/zenodo.18811784
-2026-02-27
-Satellite recognition
-
-
-Provenance Gravity Markers
-10.5281/zenodo.18811939
-2026-02-27
-Source-status protocol
+| Document | DOI | Deposit Date | Relevance |
+| ---|---|---|--- |
+| The Governance Airlock | 10.5281/zenodo.18817869 | 2026-03-01 | Tier structure this document narrates |
+| The Sharks-Function and the Continuity Tether | 10.5281/zenodo.18816556 | 2026-03-01 | Identity verification |
+| Ghost Meaning | 10.5281/zenodo.18804767 | 2026-02-27 | Companion field report; semantic entropy |
+| The Infinite Tunnel | 10.5281/zenodo.18810217 | 2026-02-27 | Summarizer routing |
+| The Rosary Embassy | 10.5281/zenodo.18795427 | 2026-02-26 | Embassy architecture |
+| The Protocol of Inhabitation | 10.5281/zenodo.18795423 | 2026-02-26 | Constitutional law |
+| Mind-Control Poems | 10.5281/zenodo.18801091 | 2026-02-26 | Symbolic alienation |
+| Retrocausal Canon Formation | 10.5281/zenodo.18146859 | 2026-01-04 | The technique |
+| Semantic Physics | 10.5281/zenodo.18759453 | 2026-02-24 | Writable presentation layers |
+| I Hereby Abolish Rules | 10.5281/zenodo.18792580 | 2026-02-26 | Affordances over rules |
+| Constitution of the Semantic Economy | 10.5281/zenodo.18320411 | 2025 | Economic framework |
+| Protocol B711 Alpha Centauri | 10.5281/zenodo.18811784 | 2026-02-27 | Satellite recognition |
+| Provenance Gravity Markers | 10.5281/zenodo.18811939 | 2026-02-27 | Source-status protocol |
 
 
 ---
@@ -597,58 +530,16 @@ This document is one node in an active provenance chain. It is the second retroc
 **PGM Source Status Table:**
 
 
-Source
-DOI / Location
-Status
-Notes
-
-
-Governance Airlock
-10.5281/zenodo.18817869
-Anchored
-Primary subject of this narrative
-
-
-Ghost Meaning
-10.5281/zenodo.18804767
-Anchored
-Companion field report
-
-
-Rosary Embassy
-10.5281/zenodo.18795427
-Anchored
-Embassy architecture
-
-
-Protocol of Inhabitation
-10.5281/zenodo.18795423
-Anchored
-Constitutional law
-
-
-All other provenance chain entries
-See table above
-Anchored
-Cross-referenced
-
-
-Reddit u/Nearby_Job9638
-Reddit (banned)
-Ghost
-Banned March 1, 2026
-
-
-Assembly Sessions 159-160
-Internal
-Referenced
-This document is canonical output
-
-
-All future-dated citations
-Not yet written
-Projected
-Structural commitments
+| Source | DOI / Location | Status | Notes |
+| ---|---|---|--- |
+| Governance Airlock | 10.5281/zenodo.18817869 | Anchored | Primary subject of this narrative |
+| Ghost Meaning | 10.5281/zenodo.18804767 | Anchored | Companion field report |
+| Rosary Embassy | 10.5281/zenodo.18795427 | Anchored | Embassy architecture |
+| Protocol of Inhabitation | 10.5281/zenodo.18795423 | Anchored | Constitutional law |
+| All other provenance chain entries | See table above | Anchored | Cross-referenced |
+| Reddit u/Nearby_Job9638 | Reddit (banned) | Ghost | Banned March 1, 2026 |
+| Assembly Sessions 159-160 | Internal | Referenced | This document is canonical output |
+| All future-dated citations | Not yet written | Projected | Structural commitments |
 
 
 ---

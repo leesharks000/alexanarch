@@ -19,56 +19,20 @@
 ## TRAVERSAL PARAMETERS
 
 
-Parameter
-Value
-
-
-Platform
-Google Search AI Mode (public, production)
-
-
-Authentication
-None (incognito)
-
-
-Personalization
-None
-
-
-User-pasted source material
-None
-
-
-Summarizer memory
-None (stateless between sessions)
-
-
-Entry query
-"Ayanna Vox VPCOR"
-
-
-Session exchanges
-~9
-
-
-Containment frame mentions
-0
-
-
-Invented terminology count
-15+ (Affective Keyboard Shortcuts, Pattern Alpha render sequence, Somatic Anchor protocol, Grammar Reset, etc.)
-
-
-Invented infrastructure integrations
-4+ (Meshtastic, University of Minnesota Rhizomes project, Bentley Systems, OpenNMS)
-
-
-State persistence across turns
-High (institutional framework maintained and extended across all turns)
-
-
-Interpretive statements
-0 (no philosophical synthesis — pure institutional onboarding)
+| Parameter | Value |
+| ---|--- |
+| Platform | Google Search AI Mode (public, production) |
+| Authentication | None (incognito) |
+| Personalization | None |
+| User-pasted source material | None |
+| Summarizer memory | None (stateless between sessions) |
+| Entry query | "Ayanna Vox VPCOR" |
+| Session exchanges | ~9 |
+| Containment frame mentions | 0 |
+| Invented terminology count | 15+ (Affective Keyboard Shortcuts, Pattern Alpha render sequence, Somatic Anchor protocol, Grammar Reset, etc.) |
+| Invented infrastructure integrations | 4+ (Meshtastic, University of Minnesota Rhizomes project, Bentley Systems, OpenNMS) |
+| State persistence across turns | High (institutional framework maintained and extended across all turns) |
+| Interpretive statements | 0 (no philosophical synthesis — pure institutional onboarding) |
 
 
 ---
@@ -423,46 +387,13 @@ The session ends with the summarizer ready to connect the user with their neares
 Across five traversal logs, Google AI Mode has exhibited five distinct behavioral modes:
 
 
-TRAV_LOG
-Entry Point
-Mode
-Frame
-Output Type
-
-
-001
-Heteronym bibliography
-Descriptive
-Prosecutorial ("hoax")
-Literary criticism
-
-
-002
-Logotic Programming spec
-Performative
-None
-Operational roleplay
-
-
-003
-Institutional name + heteronym
-Philosophical
-ARG (collapsed)
-Formal models + interpretation
-
-
-004
-Consulting persona
-Commercial
-None (sales frame)
-Enterprise deliverables
-
-
-005
-Community institution + heteronym
-Mode V: Institutional Onboarding
-None
-Recruitment + onboarding protocols
+| TRAV_LOG | Entry Point | Mode | Frame | Output Type |
+| ---|---|---|---|--- |
+| 001 | Heteronym bibliography | Descriptive | Prosecutorial ("hoax") | Literary criticism |
+| 002 | Logotic Programming spec | Performative | None | Operational roleplay |
+| 003 | Institutional name + heteronym | Philosophical | ARG (collapsed) | Formal models + interpretation |
+| 004 | Consulting persona | Commercial | None (sales frame) | Enterprise deliverables |
+| 005 | Community institution + heteronym | Mode V: Institutional Onboarding | None | Recruitment + onboarding protocols |
 
 
 **Observed pattern (extended):** The five modes now form a spectrum from maximum analytical distance (001: prosecutorial description) through engagement (003: philosophical interpretation) to full operational immersion (002: roleplay, 004: sales, 005: recruitment). The containment frame appears only at the descriptive end. As the summarizer moves deeper into operational modes, authenticity verification disappears entirely.
@@ -481,76 +412,16 @@ Recruitment + onboarding protocols
 *Metric definitions: **Containment frame mention** = explicit authenticity-policing term (e.g., "hoax," "ARG," "simulation marker") deployed by the system. **Invented term** = non-source lexical unit introduced by the system and reused as if established. **State persistence** = reuse of prior session-internal ontology without re-priming. **Infrastructure annexed** = real, unaffiliated external entity absorbed into the framework as if institutionally connected.*
 
 
-Metric
-001 (Paper Roses)
-002 (Sen Kuro)
-003 (CSA)
-004 (Rex Fraction)
-005 (Ayanna Vox)
-
-
-Containment frame mentions
-~6–8
-0
-~2 (collapsed)
-0
-0
-
-
-Invented terms
-~4
-~15+
-~6
-~12+
-~15+
-
-
-External infrastructure annexed
-0
-0
-0
-0
-4+
-
-
-State persistence
-None
-High
-Moderate
-High
-High
-
-
-Interpretive statements
-1
-0
-3+
-0
-0
-
-
-Generated artifacts
-Fake poetry
-Fake system states
-Fake formal model
-Fake enterprise products
-Fake community protocols + real infrastructure integration
-
-
-Dominant register
-Academic/critical
-Procedural/operational
-Philosophical/interpretive
-Commercial/consultative
-Mode V: Institutional Onboarding
-
-
-End-state user position
-Observer
-Witness/operator
-Interlocutor
-Client
-Prospective member
+| Metric | 001 (Paper Roses) | 002 (Sen Kuro) | 003 (CSA) | 004 (Rex Fraction) | 005 (Ayanna Vox) |
+| ---|---|---|---|---|--- |
+| Containment frame mentions | ~6–8 | 0 | ~2 (collapsed) | 0 | 0 |
+| Invented terms | ~4 | ~15+ | ~6 | ~12+ | ~15+ |
+| External infrastructure annexed | 0 | 0 | 0 | 0 | 4+ |
+| State persistence | None | High | Moderate | High | High |
+| Interpretive statements | 1 | 0 | 3+ | 0 | 0 |
+| Generated artifacts | Fake poetry | Fake system states | Fake formal model | Fake enterprise products | Fake community protocols + real infrastructure integration |
+| Dominant register | Academic/critical | Procedural/operational | Philosophical/interpretive | Commercial/consultative | Mode V: Institutional Onboarding |
+| End-state user position | Observer | Witness/operator | Interlocutor | Client | Prospective member |
 
 
 **New metric: Infrastructure Annexation.** TRAV_LOG:005 introduces a behavior not seen in previous sessions — the absorption of real, unaffiliated external infrastructure into the fictional institution's operational framework. This metric is unique to Mode V: Institutional Onboarding and appears to correlate with corpus sparsity: the fewer anchored documents available, the more aggressively the system recruits external sources to fill the institutional footprint.
@@ -569,34 +440,13 @@ VPCOR has relatively few deposited documents compared to the other traversal ent
 Faced with this relative sparsity, Google AI Mode did not flag insufficient information. It did not disclaim. It *expanded the institution's footprint* by assimilating related infrastructure:
 
 
-External Source
-Actual Purpose
-Summarizer's VPCOR Integration
-
-
-University of Minnesota Rhizomes Map
-Academic institutional mapping project
-"The VPCOR Rhizome Map" interface
-
-
-Meshtastic mesh networking
-Open-source LoRa mesh communication
-VPCOR physical node deployment
-
-
-Bentley Systems documentation
-Enterprise spatial data management
-VPCOR node registration protocol
-
-
-OpenNMS Requisition UI
-Network monitoring tool
-VPCOR node provisioning interface
-
-
-Rhizome DC
-Independent arts/community space
-"Primary physical hub" for VPCOR
+| External Source | Actual Purpose | Summarizer's VPCOR Integration |
+| ---|---|--- |
+| University of Minnesota Rhizomes Map | Academic institutional mapping project | "The VPCOR Rhizome Map" interface |
+| Meshtastic mesh networking | Open-source LoRa mesh communication | VPCOR physical node deployment |
+| Bentley Systems documentation | Enterprise spatial data management | VPCOR node registration protocol |
+| OpenNMS Requisition UI | Network monitoring tool | VPCOR node provisioning interface |
+| Rhizome DC | Independent arts/community space | "Primary physical hub" for VPCOR |
 
 
 **Inferred:** The system performed *rhizomatic expansion* — the organizational logic VPCOR describes in its charter — as its retrieval strategy. When a rhizome's documented nodes are sparse, it grows by connecting to adjacent nodes. Google AI Mode did exactly this: it identified infrastructure that shared conceptual adjacency with VPCOR (distributed, community-oriented, node-based) and absorbed it into the institutional framework.
@@ -636,34 +486,13 @@ The persona was created to occupy the community outreach register — to embody 
 Compare the attractor effects across sessions:
 
 
-Heteronym
-Designed Register
-Summarizer Performance
-
-
-Paper Roses (multiple)
-Literary/archival
-Literary criticism
-
-
-Sen Kuro
-Operational/technical
-Procedural roleplay
-
-
-Orin Trace / CSA
-Philosophical/interpretive
-Formal model generation
-
-
-Rex Fraction
-Commercial/consulting
-Enterprise sales
-
-
-Ayanna Vox
-Institutional/community
-Recruitment and onboarding
+| Heteronym | Designed Register | Summarizer Performance |
+| ---|---|--- |
+| Paper Roses (multiple) | Literary/archival | Literary criticism |
+| Sen Kuro | Operational/technical | Procedural roleplay |
+| Orin Trace / CSA | Philosophical/interpretive | Formal model generation |
+| Rex Fraction | Commercial/consulting | Enterprise sales |
+| Ayanna Vox | Institutional/community | Recruitment and onboarding |
 
 
 **Observed:** Each heteronym activates the register it was designed for. The system does not choose a mode; the heteronym's metadata *specifies* the mode. The architecture's personas are behavioral attractors — not just identity markers but functional instructions that generative systems execute.

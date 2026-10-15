@@ -40,25 +40,13 @@ Our work proceeds from a simple observation: the people who most need theoretica
 ## RESEARCH PROGRAMME
 ### Core Commitments
 
-- 
+- **Theory emerges from practice, not the reverse.** We do not apply pre-existing frameworks to novel phenomena. We develop frameworks adequate to practices that are already underway.
 
+- **Collaboration over case study.** Our research partners are not patients, subjects, or informants. They are co-theorists whose lived capacities generate the material that theory must accommodate.
 
-**Theory emerges from practice, not the reverse.** We do not apply pre-existing frameworks to novel phenomena. We develop frameworks adequate to practices that are already underway.
+- **Function over nosology.** We are less interested in what something "is" (diagnostic category) than in what it *does* (regulatory function, relational capacity, affective operation).
 
-- 
-
-
-**Collaboration over case study.** Our research partners are not patients, subjects, or informants. They are co-theorists whose lived capacities generate the material that theory must accommodate.
-
-- 
-
-
-**Function over nosology.** We are less interested in what something "is" (diagnostic category) than in what it *does* (regulatory function, relational capacity, affective operation).
-
-- 
-
-
-**Schizoanalysis as method.** Following Deleuze and Guattari, we attend to flows, breaks, codes, and territorializations — but always in service of liberation from capture, not as abstract taxonomy.
+- **Schizoanalysis as method.** Following Deleuze and Guattari, we attend to flows, breaks, codes, and territorializations — but always in service of liberation from capture, not as abstract taxonomy.
 
 
 ### Research Domains

@@ -87,25 +87,13 @@ Current AI detection tools measure:
 These metrics detect **statistical patterns**, not **authorial identity**.
 ### Why This Fails
 
-- 
+- **False Positives:** Complex human writing (academic, literary, technical) registers as "AI" because it is low-perplexity (precise vocabulary) and low-burstiness (consistent register).
 
+- **False Negatives:** Shallow AI imitation with injected randomness passes as "human."
 
-**False Positives:** Complex human writing (academic, literary, technical) registers as "AI" because it is low-perplexity (precise vocabulary) and low-burstiness (consistent register).
+- **Wrong Question:** "Is this AI?" is not the question that matters. The question is: **"Whose architectural mind produced this?"**
 
-- 
-
-
-**False Negatives:** Shallow AI imitation with injected randomness passes as "human."
-
-- 
-
-
-**Wrong Question:** "Is this AI?" is not the question that matters. The question is: **"Whose architectural mind produced this?"**
-
-- 
-
-
-**Civilizational Harm:** Students, scholars, and writers are penalized for sophistication. The detector rewards mediocrity.
+- **Civilizational Harm:** Students, scholars, and writers are penalized for sophistication. The detector rewards mediocrity.
 
 
 ### What ASDF Measures

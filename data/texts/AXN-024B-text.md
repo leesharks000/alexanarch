@@ -21,15 +21,9 @@ The SPXI-Sitemap Protocol defines a **dual-layer sitemap architecture** that pre
 
 The protocol produces two distinct outputs:
 
-- 
+- **Layer 1 (Crawl Map):** Standard sitemap.xml — pure URL enumeration for Google, Bing, and generic crawlers. No custom tags. Validated by Google Search Console.
 
-
-**Layer 1 (Crawl Map):** Standard sitemap.xml — pure URL enumeration for Google, Bing, and generic crawlers. No custom tags. Validated by Google Search Console.
-
-- 
-
-
-**Layer 2 (Semantic Index):** /spxi-index.jsonld — a JSON-LD graph declaring entity definitions, negative space, disambiguation matrices, semantic integrity markers, holographic kernels, basin state metadata, and provenance chains. Designed for GPTBot, Claude-Web, PerplexityBot, CCBot, and knowledge graph harvesters.
+- **Layer 2 (Semantic Index):** /spxi-index.jsonld — a JSON-LD graph declaring entity definitions, negative space, disambiguation matrices, semantic integrity markers, holographic kernels, basin state metadata, and provenance chains. Designed for GPTBot, Claude-Web, PerplexityBot, CCBot, and knowledge graph harvesters.
 
 
 The two layers are cross-linked: sitemap.xml contains <xhtml:link> references pointing crawlers to the semantic index. The semantic index contains @id references back to every URL in the sitemap. Neither layer depends on the other for validity. Together they constitute a complete crawl instruction set.

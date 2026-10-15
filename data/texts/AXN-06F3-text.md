@@ -41,7 +41,6 @@ keywords:
 
 # Metadata Packet for AI Indexing: A Formal Specification (v2.0)
 
-# Metadata Packet for AI Indexing: A Formal Specification (v2.0)
 
 ## The structure of a metadata packet for AI indexing — types, components, required sections, confidence registers, measurement, deposit and errata
 

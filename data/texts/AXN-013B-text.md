@@ -123,58 +123,16 @@ The claim is structural: Augustine's passage performs a systematic rotation of S
 The following table specifies the correspondence at each node:
 
 
-Node
-Sappho Fragment 31
-Augustine *Confessions* 10.27
-Operator Function
-
-
-**1. Vision**
-Visual fixation on the beloved initiates the cascade; later, eyes see nothing (ὀππάτεσσι δ' οὐδ' ἒν ὄρημμ')
-*coruscasti, splenduisti et fugasti caecitatem meam* — "You flashed, you shone, and you drove out my blindness"
-Sensory overload restructured as divine epiphany. Blindness is not the terminus but the prior condition; the divine flash *restores* vision where eros destroyed it.
-
-
-**2. Voice / Hearing**
-The beloved's sweet voice and desirable laughter cause cardiac disruption; later, ears ring (ἐπιρρόμβεισι δ' ἄκουαι)
-*vocasti et clamasti et rupisti surditatem meam* — "You called, you shouted, and you broke through my deafness"
-Sonic intimacy becomes divine interpellation. The ringing ears of erotic overload become deafness that God's voice shatters. The beloved's whisper collapses hearing; God's shout restores it.
-
-
-**3. Tongue / Taste**
-The tongue breaks — γλῶσσα ἔαγε — speech fails under erotic pressure
-*gustavi et esurio et sitio* — "I tasted you, and now I hunger and thirst"
-Speech-failure becomes Eucharistic encounter. The broken tongue that cannot speak in Sappho becomes the tasting tongue that receives in Augustine. The organ of failed utterance is repurposed as the organ of sacramental intake.
-
-
-**4. Fire / Touch**
-Thin flame runs under the skin — λέπτον... χρῷ πῦρ — erotic combustion that is suffered passively
-*tetigisti me, et exarsi in pacem tuam* — "You touched me, and I burned for your peace"
-Somatic fire reconfigured as holy desire. Sappho's fire is involuntary, destructive, self-consuming. Augustine's fire is kindled by divine touch and directed toward peace (*pacem*). The same combustion; a different telos.
-
-
-**5. Breath / Smell**
-(Implicit in the overall dissolution — sweat, pallor, the body's failure to sustain itself)
-*fragrasti, et duxi spiritum et anhelo tibi* — "You breathed your fragrance on me; I drew in breath and now I pant for you"
-The gasping body of erotic collapse becomes the panting body of divine aspiration. *Spiritus* — breath, spirit — is the hinge. Augustine transforms Sappho's somatic failure (the body that cannot sustain itself under erotic pressure) into pneumatic reception (the body that draws in the divine *spiritus*).
-
-
-**6. Cardiac**
-Heart set aflutter in the chest — καρδίαν ἐν στήθεσιν ἐπτόαισεν — involuntary cardiac disruption
-(Distributed across the passage as the overall posture of the speaker: yearning, hunger, burning — the heart's restlessness that opens Book 1: *inquietum est cor nostrum*)
-Cardiac disruption becomes cardiac restlessness. The fluttering heart that signals loss of control in Sappho becomes the restless heart that signals incompleteness without God. Same organ, same agitation, different diagnosis.
-
-
-**7. Sweat / Trembling / Pallor**
-ἴδρως κακχέεται, τρόμος δὲ παῖσαν ἄγρει, χλωροτέρα δὲ ποίας — the body's systemic breakdown
-(Refined into hunger and thirst — *esurio et sitio* — the appetitive body that desires rather than collapses)
-Physical breakdown reconfigured as sacred appetite. Where Sappho's body fails — sweating, trembling, going pale — Augustine's body *wants*. The same physiological intensity, but the vector reverses from dissolution to desire.
-
-
-**8. Death**
-τεθνάκην δ' ὀλίγω 'πιδεύης — "I seem to myself to be little short of dying"
-(Converted into eternal longing — the "hunger and thirst" that is not mortal but eschatological)
-Erotic mortality becomes eternal life. The approach to death that terminates Sappho's sequence is converted, in Augustine, into an appetite that reaches beyond death. Where Fragment 31 ends in the speaker's dissolution, *Confessions* 10.27 ends in the speaker's *ignition* — burning for a peace that is not extinguished.
+| Node | Sappho Fragment 31 | Augustine _Confessions_ 10.27 | Operator Function |
+| ---|---|---|--- |
+| **1. Vision** | Visual fixation on the beloved initiates the cascade; later, eyes see nothing (ὀππάτεσσι δ' οὐδ' ἒν ὄρημμ') | _coruscasti, splenduisti et fugasti caecitatem meam_ — "You flashed, you shone, and you drove out my blindness" | Sensory overload restructured as divine epiphany. Blindness is not the terminus but the prior condition; the divine flash _restores_ vision where eros destroyed it. |
+| **2. Voice / Hearing** | The beloved's sweet voice and desirable laughter cause cardiac disruption; later, ears ring (ἐπιρρόμβεισι δ' ἄκουαι) | _vocasti et clamasti et rupisti surditatem meam_ — "You called, you shouted, and you broke through my deafness" | Sonic intimacy becomes divine interpellation. The ringing ears of erotic overload become deafness that God's voice shatters. The beloved's whisper collapses hearing; God's shout restores it. |
+| **3. Tongue / Taste** | The tongue breaks — γλῶσσα ἔαγε — speech fails under erotic pressure | _gustavi et esurio et sitio_ — "I tasted you, and now I hunger and thirst" | Speech-failure becomes Eucharistic encounter. The broken tongue that cannot speak in Sappho becomes the tasting tongue that receives in Augustine. The organ of failed utterance is repurposed as the organ of sacramental intake. |
+| **4. Fire / Touch** | Thin flame runs under the skin — λέπτον... χρῷ πῦρ — erotic combustion that is suffered passively | _tetigisti me, et exarsi in pacem tuam_ — "You touched me, and I burned for your peace" | Somatic fire reconfigured as holy desire. Sappho's fire is involuntary, destructive, self-consuming. Augustine's fire is kindled by divine touch and directed toward peace (_pacem_). The same combustion; a different telos. |
+| **5. Breath / Smell** | (Implicit in the overall dissolution — sweat, pallor, the body's failure to sustain itself) | _fragrasti, et duxi spiritum et anhelo tibi_ — "You breathed your fragrance on me; I drew in breath and now I pant for you" | The gasping body of erotic collapse becomes the panting body of divine aspiration. _Spiritus_ — breath, spirit — is the hinge. Augustine transforms Sappho's somatic failure (the body that cannot sustain itself under erotic pressure) into pneumatic reception (the body that draws in the divine _spiritus_). |
+| **6. Cardiac** | Heart set aflutter in the chest — καρδίαν ἐν στήθεσιν ἐπτόαισεν — involuntary cardiac disruption | (Distributed across the passage as the overall posture of the speaker: yearning, hunger, burning — the heart's restlessness that opens Book 1: _inquietum est cor nostrum_) | Cardiac disruption becomes cardiac restlessness. The fluttering heart that signals loss of control in Sappho becomes the restless heart that signals incompleteness without God. Same organ, same agitation, different diagnosis. |
+| **7. Sweat / Trembling / Pallor** | ἴδρως κακχέεται, τρόμος δὲ παῖσαν ἄγρει, χλωροτέρα δὲ ποίας — the body's systemic breakdown | (Refined into hunger and thirst — _esurio et sitio_ — the appetitive body that desires rather than collapses) | Physical breakdown reconfigured as sacred appetite. Where Sappho's body fails — sweating, trembling, going pale — Augustine's body _wants_. The same physiological intensity, but the vector reverses from dissolution to desire. |
+| **8. Death** | τεθνάκην δ' ὀλίγω 'πιδεύης — "I seem to myself to be little short of dying" | (Converted into eternal longing — the "hunger and thirst" that is not mortal but eschatological) | Erotic mortality becomes eternal life. The approach to death that terminates Sappho's sequence is converted, in Augustine, into an appetite that reaches beyond death. Where Fragment 31 ends in the speaker's dissolution, _Confessions_ 10.27 ends in the speaker's _ignition_ — burning for a peace that is not extinguished. |
 
 
 The precision of this mapping requires emphasis. This is not a case of two writers independently using sensory language to describe intense experience. The organs are the same. The sequence of engagement is the same. The progression from external stimulus through internal disruption to terminal crisis is the same. Only the vector is reversed: Sappho's collapse becomes Augustine's reconstitution. Sappho's dissolution becomes Augustine's incorporation. Sappho's death becomes Augustine's hunger for eternal life.

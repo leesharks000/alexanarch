@@ -160,30 +160,15 @@ We proceed by transcendental deduction, in the Kantian sense: we ask what must b
 
 For debt to exist, the following conditions must already obtain:
 
-- 
+- **Linguistic capacity.** Parties must be able to formulate and communicate obligations. Debt is articulated through speech acts, inscriptions, and institutional forms of obligation. Without the capacity to produce and interpret meaningful utterances and records, no debt can be issued.
 
+- **Temporal coherence.** Promises must project meaning from present into future. Debt is inherently temporal: it binds the future to the past through the present. This binding requires that meaning remain stable enough across time to carry the obligation forward. A promise that dissolves overnight is not a promise.
 
-**Linguistic capacity.** Parties must be able to formulate and communicate obligations. Debt is articulated through speech acts, inscriptions, and institutional forms of obligation. Without the capacity to produce and interpret meaningful utterances and records, no debt can be issued.
+- **Interpretive stability.** The terms of debt must remain intelligible across time and across parties. The lender and the borrower must share enough interpretive framework to agree on what is owed. Courts, regulators, and counterparties must be able to read the terms. This requires not just language but interpretive tradition — accumulated practices of reading, construing, and applying meaningful structures.
 
-- 
+- **Conceptual infrastructure.** Categories like "value," "obligation," "repayment," "interest," "default" must be shared. These are not natural kinds. They are semantic constructions maintained by ongoing cultural labor. They had to be invented, stabilized, transmitted, and reproduced across generations.
 
-
-**Temporal coherence.** Promises must project meaning from present into future. Debt is inherently temporal: it binds the future to the past through the present. This binding requires that meaning remain stable enough across time to carry the obligation forward. A promise that dissolves overnight is not a promise.
-
-- 
-
-
-**Interpretive stability.** The terms of debt must remain intelligible across time and across parties. The lender and the borrower must share enough interpretive framework to agree on what is owed. Courts, regulators, and counterparties must be able to read the terms. This requires not just language but interpretive tradition — accumulated practices of reading, construing, and applying meaningful structures.
-
-- 
-
-
-**Conceptual infrastructure.** Categories like "value," "obligation," "repayment," "interest," "default" must be shared. These are not natural kinds. They are semantic constructions maintained by ongoing cultural labor. They had to be invented, stabilized, transmitted, and reproduced across generations.
-
-- 
-
-
-**Recursive reproducibility.** The meaning of debt must be reproducible across contexts and agents. A debt instrument must be readable by parties who were not present at its creation. A contractual form must be portable across jurisdictions. This requires that meaning be not merely local but recursively stable — capable of being taken up, reapplied, and extended without collapsing.
+- **Recursive reproducibility.** The meaning of debt must be reproducible across contexts and agents. A debt instrument must be readable by parties who were not present at its creation. A contractual form must be portable across jurisdictions. This requires that meaning be not merely local but recursively stable — capable of being taken up, reapplied, and extended without collapsing.
 
 
 These conditions are not economic outputs. They are semantic preconditions — the infrastructure that must already be in place for economic activity to function at all. They are not produced by the market; they are what makes the market possible.

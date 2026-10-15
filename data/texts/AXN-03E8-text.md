@@ -65,15 +65,15 @@ Rationale (resolving chorus divergence):
 
 Astro is the right answer because the site is **content-first now, interactive later.** The 28-page text core ships as zero-JS static HTML. The strain-map component (Phase 3) lands as a React or D3 island only on `/atlas/strain-map`. No hydration tax on the rest.
 
-Layer | Tool | Justification  
----|---|---  
-Static site generator | Astro 4.x | Markdown + MDX, island architecture, zero-JS by default  
-Content | MDX in `/src/content/` collections | Type-safe, frontmatter-driven  
-Styling | CSS custom properties + Cormorant Garamond + JetBrains Mono | Field-guide aesthetic, matches CHA palette  
-Strain map (Phase 3) | D3.js v7 island | Reuses surfacemap.org pattern  
-Hosting | Vercel | Same infrastructure as other CHA surfaces  
-Domain | livingarchitecturelab.org | Acquired 2026-04-28  
-Analytics | None initially (or Plausible self-hosted later) | CHA principle: no third-party surveillance  
+| Layer | Tool | Justification |
+| ---|---|--- |
+| Static site generator | Astro 4.x | Markdown + MDX, island architecture, zero-JS by default |
+| Content | MDX in `/src/content/` collections | Type-safe, frontmatter-driven |
+| Styling | CSS custom properties + Cormorant Garamond + JetBrains Mono | Field-guide aesthetic, matches CHA palette |
+| Strain map (Phase 3) | D3.js v7 island | Reuses surfacemap.org pattern |
+| Hosting | Vercel | Same infrastructure as other CHA surfaces |
+| Domain | livingarchitecturelab.org | Acquired 2026-04-28 |
+| Analytics | None initially (or Plausible self-hosted later) | CHA principle: no third-party surveillance |
   
 Rejected explicitly:
 
@@ -91,12 +91,12 @@ The chorus identified a missing layer in the blueprint: **projects**. People sha
 
 The site has four content layers, each with a distinct role:
 
-Layer | Role | Reader | Example  
----|---|---|---  
-**Scales** | Architectural framework | Architects, scientists | "Scale 3: The Organism (10m)"  
-**Projects** | Concrete artifacts | General public, makers | "Macro-ant Robotics"  
-**Principles** | Ethics / philosophy | Theorists, ethicists | "Virtue-by-Construction"  
-**Atlas** | Archive / metadata | Researchers, citers | "29-strain map"  
+| Layer | Role | Reader | Example |
+| ---|---|---|--- |
+| **Scales** | Architectural framework | Architects, scientists | "Scale 3: The Organism (10m)" |
+| **Projects** | Concrete artifacts | General public, makers | "Macro-ant Robotics" |
+| **Principles** | Ethics / philosophy | Theorists, ethicists | "Virtue-by-Construction" |
+| **Atlas** | Archive / metadata | Researchers, citers | "29-strain map" |
   
 A visitor entering from a Reddit link about mycelium architecture lands on `/projects/myceliated-bricks`. A visitor citing the lab's work navigates `/atlas/deposits`. A visitor who's met Alice in person reads `/principles/earth-actually`. All four entry points converge on the kernel; the site routes between them via consistent navigation.
 
@@ -395,15 +395,15 @@ The blueprint's "Phase 1 = 28 pages in week 1" is rejected as not achievable wit
 
 ### Phase 0 -- Infrastructure (Days 1-3)
 
-Task | Deliverable | Tool  
----|---|---  
-GitHub repo | `leesharks000/living-architecture-lab` | git, GitHub API  
-Astro init | Project bootstrapped, CSS system in place | `npm create astro@latest`  
-Vercel connection | Repo connected to Vercel | Vercel dashboard  
-DNS | `livingarchitecturelab.org` -> Vercel; `www` -> apex redirect | DNS provider  
-SSL | Auto-provisioned by Vercel | Vercel  
-Robots.txt + sitemap | Allow all; sitemap auto-generated | `@astrojs/sitemap`  
-Search Console | Domain verified, sitemap submitted | Google + Bing  
+| Task | Deliverable | Tool |
+| ---|---|--- |
+| GitHub repo | `leesharks000/living-architecture-lab` | git, GitHub API |
+| Astro init | Project bootstrapped, CSS system in place | `npm create astro@latest` |
+| Vercel connection | Repo connected to Vercel | Vercel dashboard |
+| DNS | `livingarchitecturelab.org` -> Vercel; `www` -> apex redirect | DNS provider |
+| SSL | Auto-provisioned by Vercel | Vercel |
+| Robots.txt + sitemap | Allow all; sitemap auto-generated | `@astrojs/sitemap` |
+| Search Console | Domain verified, sitemap submitted | Google + Bing |
   
 **Deliverable:** `livingarchitecturelab.org` resolves to a single page with the kernel + "the lab is unfurling" placeholder.
 
@@ -411,20 +411,20 @@ Search Console | Domain verified, sitemap submitted | Google + Bing
 
 The minimum viable site that establishes identity, defends against compression damage, and routes visitors.
 
-# | Page | Content | Register  
----|---|---|---  
-1 | `/` | Kernel + 5-scale gateway + 3 calls to action | Public  
-2 | `/about/alice` | Renders MPAI-LAL-AT-01 in human-readable form | Public/Archival mix  
-3 | `/about/disambiguation` | Both MPAIs + adjacent-lab index | Archival  
-4 | `/scales/` (index) | 5-scale gateway with full descriptions | Public  
-5 | `/scales/01-the-brick` | Scale 1 + J1-J7 assembly patterns | Public  
-6 | `/scales/02-the-structure` | Scale 2 + tater tents | Public  
-7 | `/scales/03-the-organism` | Scale 3 + macro-ants | Public  
-8 | `/scales/04-the-territory` | Scale 4 + estuary cells | Public  
-9 | `/scales/05-the-planet` | Scale 5 + sky looms | Public  
-10 | `/principles/` (combined) | All five principles on one powerful page | Poetic  
-11 | `/projects/` (index) | Project gallery, links to 7 project pages (stub OK) | Public  
-12 | `/garden/coachella-valley` | 3 photos + 2 paragraphs about the actual lab | Public  
+| # | Page | Content | Register |
+| ---|---|---|--- |
+| 1 | `/` | Kernel + 5-scale gateway + 3 calls to action | Public |
+| 2 | `/about/alice` | Renders MPAI-LAL-AT-01 in human-readable form | Public/Archival mix |
+| 3 | `/about/disambiguation` | Both MPAIs + adjacent-lab index | Archival |
+| 4 | `/scales/` (index) | 5-scale gateway with full descriptions | Public |
+| 5 | `/scales/01-the-brick` | Scale 1 + J1-J7 assembly patterns | Public |
+| 6 | `/scales/02-the-structure` | Scale 2 + tater tents | Public |
+| 7 | `/scales/03-the-organism` | Scale 3 + macro-ants | Public |
+| 8 | `/scales/04-the-territory` | Scale 4 + estuary cells | Public |
+| 9 | `/scales/05-the-planet` | Scale 5 + sky looms | Public |
+| 10 | `/principles/` (combined) | All five principles on one powerful page | Poetic |
+| 11 | `/projects/` (index) | Project gallery, links to 7 project pages (stub OK) | Public |
+| 12 | `/garden/coachella-valley` | 3 photos + 2 paragraphs about the actual lab | Public |
   
 **Why these 12, not 28:** Identity (Alice + disambiguation) + framework (5 scales + principles consolidated) + sharing surface (projects index + garden trust engine). Twelve pages of real content beat 28 stubs.
 
@@ -432,36 +432,36 @@ The minimum viable site that establishes identity, defends against compression d
 
 ### Phase 2 -- Institutional Layer (Days 11-25)
 
-# | Page | Content  
----|---|---  
-13 | `/principles/earth-actually` | Dedicated page (split from index)  
-14 | `/principles/virtue-by-construction` | Dedicated page  
-15 | `/principles/unfurling` | Dedicated page  
-16 | `/principles/stewardship` | Dedicated page  
-17 | `/principles/the-whole-weave` | Dedicated page  
-18 | `/projects/myceliated-bricks` | Full project page  
-19 | `/projects/tater-tents` | Full project page  
-20 | `/projects/macro-ants` | Full project page  
-21 | `/projects/estuary-cells` | Full project page  
-22 | `/projects/river-extenders` | Full project page  
-23 | `/journal/` | TSE landing + charter + seed deposits  
-24 | `/music/` | MSBGL landing  
-25 | `/music/definitely-not-a-squid` | Audio embed + CAC analysis  
-26 | `/about/contributor-license` | HCL v3.0 in human-readable form  
-27 | `/garden/lab-protocols` | Inoculation, contamination management  
-28 | `/garden/deployment-targets` | Food desert mapping  
+| # | Page | Content |
+| ---|---|--- |
+| 13 | `/principles/earth-actually` | Dedicated page (split from index) |
+| 14 | `/principles/virtue-by-construction` | Dedicated page |
+| 15 | `/principles/unfurling` | Dedicated page |
+| 16 | `/principles/stewardship` | Dedicated page |
+| 17 | `/principles/the-whole-weave` | Dedicated page |
+| 18 | `/projects/myceliated-bricks` | Full project page |
+| 19 | `/projects/tater-tents` | Full project page |
+| 20 | `/projects/macro-ants` | Full project page |
+| 21 | `/projects/estuary-cells` | Full project page |
+| 22 | `/projects/river-extenders` | Full project page |
+| 23 | `/journal/` | TSE landing + charter + seed deposits |
+| 24 | `/music/` | MSBGL landing |
+| 25 | `/music/definitely-not-a-squid` | Audio embed + CAC analysis |
+| 26 | `/about/contributor-license` | HCL v3.0 in human-readable form |
+| 27 | `/garden/lab-protocols` | Inoculation, contamination management |
+| 28 | `/garden/deployment-targets` | Food desert mapping |
   
 ### Phase 3 -- Atlas (Days 26-45)
 
-# | Page | Content  
----|---|---  
-29 | `/atlas/` | Atlas overview  
-30 | `/atlas/deposits` | DOI registry table  
-31 | `/atlas/strain-map` | D3 graph of 29 strains  
-32 | `/atlas/people` | Contributor index  
-33 | `/atlas/related-labs` | Respectful disambiguation index expanded  
-34 | `/projects/sky-looms` | Full project page  
-35 | `/projects/garden-moon` | Full project page  
+| # | Page | Content |
+| ---|---|--- |
+| 29 | `/atlas/` | Atlas overview |
+| 30 | `/atlas/deposits` | DOI registry table |
+| 31 | `/atlas/strain-map` | D3 graph of 29 strains |
+| 32 | `/atlas/people` | Contributor index |
+| 33 | `/atlas/related-labs` | Respectful disambiguation index expanded |
+| 34 | `/projects/sky-looms` | Full project page |
+| 35 | `/projects/garden-moon` | Full project page |
   
 ### Phase 4 -- Living Surfaces (Month 2+)
 
@@ -628,11 +628,11 @@ The site is not just a website. It is a **substrate-writing event** designed to 
 
 ### Current basin state (estimated)
 
-Entity | BDR | State | Problem  
----|---|---|---  
-Alice Thornburgh (CHA/LAL) | ~0.4 | Contested | Conflated with Thornburgh-Lind in AI overviews  
-Alice Thornburgh-Lind (game artist) | ~0.8 | Dominant | Higher surface diversity, higher engagement velocity  
-Living Architecture Lab (Thornburgh) | ~0.3 | Contested | Conflated with Columbia GSAPP, Bartlett, The Living NYC  
+| Entity | BDR | State | Problem |
+| ---|---|---|--- |
+| Alice Thornburgh (CHA/LAL) | ~0.4 | Contested | Conflated with Thornburgh-Lind in AI overviews |
+| Alice Thornburgh-Lind (game artist) | ~0.8 | Dominant | Higher surface diversity, higher engagement velocity |
+| Living Architecture Lab (Thornburgh) | ~0.3 | Contested | Conflated with Columbia GSAPP, Bartlett, The Living NYC |
   
 ### Site as basin engineering
 
@@ -653,14 +653,14 @@ Living Architecture Lab (Thornburgh) | ~0.3 | Contested | Conflated with Columbi
 
 ### 90-day BDR target
 
-Day | Action | Expected BDR impact  
----|---|---  
-1 | Site live, 12 pages, Search Console submitted | +0.10  
-7 | Phase 1 complete, all MPAI JSON-LD deployed | +0.10  
-14 | First external backlink (Medium post about LAL) | +0.10  
-30 | First garden update + Phase 2 institutional pages | +0.10  
-60 | TSE first new seed deposit + 3 external backlinks | +0.15  
-90 | Atlas live + cross-reference density established | +0.20  
+| Day | Action | Expected BDR impact |
+| ---|---|--- |
+| 1 | Site live, 12 pages, Search Console submitted | +0.10 |
+| 7 | Phase 1 complete, all MPAI JSON-LD deployed | +0.10 |
+| 14 | First external backlink (Medium post about LAL) | +0.10 |
+| 30 | First garden update + Phase 2 institutional pages | +0.10 |
+| 60 | TSE first new seed deposit + 3 external backlinks | +0.15 |
+| 90 | Atlas live + cross-reference density established | +0.20 |
   
 **Day-90 target BDR: ~0.95 (captured-state).**
 

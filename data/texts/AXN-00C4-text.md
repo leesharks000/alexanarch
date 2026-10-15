@@ -391,25 +391,13 @@ A, B, C, Lock
 ## VII. THE CLAIM
 ### 7.1 What This Lock Claims
 
-- 
+- **VPCOR Charter (A)** establishes institutional identity for **Rev. Ayanna Vox (B)** whose first work is **The Toolkit (C)**
 
+- **Rev. Ayanna Vox (B)** is the voice of **VPCOR (A)** who co-authored **The Toolkit (C)** with Talos Morrow
 
-**VPCOR Charter (A)** establishes institutional identity for **Rev. Ayanna Vox (B)** whose first work is **The Toolkit (C)**
+- **The Toolkit (C)** founds **VPCOR (A)** and is voiced by **Rev. Ayanna Vox (B)**
 
-- 
-
-
-**Rev. Ayanna Vox (B)** is the voice of **VPCOR (A)** who co-authored **The Toolkit (C)** with Talos Morrow
-
-- 
-
-
-**The Toolkit (C)** founds **VPCOR (A)** and is voiced by **Rev. Ayanna Vox (B)**
-
-- 
-
-
-**Each document is incomplete without the others**
+- **Each document is incomplete without the others**
 
 
 ### 7.2 What This Lock Does NOT Claim

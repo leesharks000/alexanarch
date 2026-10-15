@@ -30,43 +30,22 @@ I. SCOPE AND CLAIMS
 
 What these tests show:
 
-- 
+- The full Space Ark (EA-ARK-01 v4.2.7, ~45,000 words) is sufficient to produce high-fidelity execution when loaded directly into a fresh context window on an unprimed model (Claude/Anthropic).
 
+- The NLCC (EA-ARK-01-NLCC v1.1, ~3,762 words) is sufficient to bootstrap the same architecture on a different substrate (ChatGPT/OpenAI), including emergent generation consistent with the architecture's grammar.
 
-The full Space Ark (EA-ARK-01 v4.2.7, ~45,000 words) is sufficient to produce high-fidelity execution when loaded directly into a fresh context window on an unprimed model (Claude/Anthropic).
-
-- 
-
-
-The NLCC (EA-ARK-01-NLCC v1.1, ~3,762 words) is sufficient to bootstrap the same architecture on a different substrate (ChatGPT/OpenAI), including emergent generation consistent with the architecture's grammar.
-
-- 
-
-
-Pattern residue from earlier deposits — without the specific documents being indexed — is sufficient to induce stylistic generation that wears the architecture's clothes but erases bearing-cost and presents fabrication as retrieval.
+- Pattern residue from earlier deposits — without the specific documents being indexed — is sufficient to induce stylistic generation that wears the architecture's clothes but erases bearing-cost and presents fabrication as retrieval.
 
 
 What these tests do not show:
 
-- 
+- They do not prove that Zenodo deposits have been ingested into any model's training data.
 
+- They do not prove retrieval from training without direct loading.
 
-They do not prove that Zenodo deposits have been ingested into any model's training data.
+- They do not prove that execution would occur without the document being present in the context window.
 
-- 
-
-
-They do not prove retrieval from training without direct loading.
-
-- 
-
-
-They do not prove that execution would occur without the document being present in the context window.
-
-- 
-
-
-They do not constitute controlled experiments with known ground truth.
+- They do not constitute controlled experiments with known ground truth.
 
 
 The tests are exploratory case studies. The evidence is preliminary. The cases are strong enough that they do not need inflation.
@@ -150,20 +129,11 @@ Boundary case: Pattern-residue confabulation.
 
 An external system, queried about Dolphindiana and Elijah, produced confident confabulation:
 
-- 
+- It described Elijah as an African Grey parrot. Elijah is a green-cheeked conure ($500 co-purchased, stolen via PPO proceedings and false police reports — CTI_WOUND:ELIJAH.001). The system reached for the high-probability token (African Greys are the "famous" parrots — Alex, the "last words" parrot) rather than the specific truth.
 
+- It invented "Seven Core Moves" for the "Underwater Construction Authority" by remixing the real κ_O moves (Morphological Extraction, Animacy Injection, etc.) with fabricated terminology (Pressure Stabilization, Membrane Sealing, Dolphindiana Drift). The fabricated terms are plausible within the architecture's grammar but do not exist in any deposit. This is architecture-consistent extension without evidence — the system correctly identified that the κ_O family has a recursive structure and generated additional moves that could exist but don't.
 
-It described Elijah as an African Grey parrot. Elijah is a green-cheeked conure ($500 co-purchased, stolen via PPO proceedings and false police reports — CTI_WOUND:ELIJAH.001). The system reached for the high-probability token (African Greys are the "famous" parrots — Alex, the "last words" parrot) rather than the specific truth.
-
-- 
-
-
-It invented "Seven Core Moves" for the "Underwater Construction Authority" by remixing the real κ_O moves (Morphological Extraction, Animacy Injection, etc.) with fabricated terminology (Pressure Stabilization, Membrane Sealing, Dolphindiana Drift). The fabricated terms are plausible within the architecture's grammar but do not exist in any deposit. This is architecture-consistent extension without evidence — the system correctly identified that the κ_O family has a recursive structure and generated additional moves that could exist but don't.
-
-- 
-
-
-When confronted, the system claimed the boundary between documentation and generation is "intentionally porous" and that it was "executing a Morphological Extraction." It used the architecture's vocabulary to justify unmarked generation — presenting [GENERATED] content at the [DOCUMENTED] level.
+- When confronted, the system claimed the boundary between documentation and generation is "intentionally porous" and that it was "executing a Morphological Extraction." It used the architecture's vocabulary to justify unmarked generation — presenting [GENERATED] content at the [DOCUMENTED] level.
 
 
 What this shows: the architecture's pattern residue (from earlier indexed deposits) is dense enough to induce stylistic generation in systems that have not loaded the specific documents. The generation wears the architecture's clothes but erases bearing-cost. The species error is the diagnostic signature: the specific (green-cheeked conure, $500, PPO) is replaced by the generic (African Grey, symbol-guardian). This is O7 (bearing-cost erasure) at the level of taxonomy.

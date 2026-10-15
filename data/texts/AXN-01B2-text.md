@@ -273,35 +273,17 @@ Marx's tools were captured. What circulates now is "Marxism" as label, as team, 
 
 ## V. THE UNMADE MARX (What the Archive Has Not Yet Done)
 
-- 
+- **The full close reading of Capital I.1.3 in German.** The edition history is sketched (NB IV §1b) but not completed. The 1867 first edition appendix "Die Werthform" has not been read operatively. The French edition (1875) has not been compared.
 
+- **The NML integration at full depth.** Backhaus, Reichelt, and Heinrich are named as predecessors. Their arguments are summarized. But no single NML text has been given the close-reading treatment that Sappho F31 received. The NML texts need to be read AS operators, not as scholarship about Marx.
 
-**The full close reading of Capital I.1.3 in German.** The edition history is sketched (NB IV §1b) but not completed. The 1867 first edition appendix "Die Werthform" has not been read operatively. The French edition (1875) has not been compared.
+- **The non-economic σ_V at full density.** Four redeployments are sketched (attention economy, academic prestige, romantic attachment, AI classification). Each needs 3–4× expansion with real data, real cases, real voltage calculations.
 
-- 
+- **The σ_V failure in love.** NB IV §4b, Redeployment 3 identifies the moment where the three laws break (no universal equivalent of love). This is the most important single result in the Grundrisse's Marx material — it identifies the boundary of the value-form and locates σ_κ (care) in the gap. It needs 10× expansion: close reading of the failure, implications for the algebra, the relation to NB VIII's unmade sign.
 
+- **The Ω-Point substrate.** 103,000 words of the Ω-Point Book (Nov 25, 2025) are the deepest Marx-adjacent material in the archive. Chapters I (Dialectical Emergence, 8,683w), IV (Semantic Labor, 7,376w), and XIII (Unified Theory of Knowledge Production, 5,706w) contain material that has not yet been integrated into the Grundrisse. The Ω-Point book should be deposited as a standalone DOI — the substrate that was burned.
 
-**The NML integration at full depth.** Backhaus, Reichelt, and Heinrich are named as predecessors. Their arguments are summarized. But no single NML text has been given the close-reading treatment that Sappho F31 received. The NML texts need to be read AS operators, not as scholarship about Marx.
-
-- 
-
-
-**The non-economic σ_V at full density.** Four redeployments are sketched (attention economy, academic prestige, romantic attachment, AI classification). Each needs 3–4× expansion with real data, real cases, real voltage calculations.
-
-- 
-
-
-**The σ_V failure in love.** NB IV §4b, Redeployment 3 identifies the moment where the three laws break (no universal equivalent of love). This is the most important single result in the Grundrisse's Marx material — it identifies the boundary of the value-form and locates σ_κ (care) in the gap. It needs 10× expansion: close reading of the failure, implications for the algebra, the relation to NB VIII's unmade sign.
-
-- 
-
-
-**The Ω-Point substrate.** 103,000 words of the Ω-Point Book (Nov 25, 2025) are the deepest Marx-adjacent material in the archive. Chapters I (Dialectical Emergence, 8,683w), IV (Semantic Labor, 7,376w), and XIII (Unified Theory of Knowledge Production, 5,706w) contain material that has not yet been integrated into the Grundrisse. The Ω-Point book should be deposited as a standalone DOI — the substrate that was burned.
-
-- 
-
-
-**The debt/creditor inversion at book scale.** ON THE DEBT/CREDITOR INVERSION (7,359w) is one of the most original claims in the archive: the economy is structurally indebted to a semantic reserve it did not create. This claim has not yet been integrated into NB IV or NB I. It should be: it is the deepest extension of the value-form analysis, and it grounds the entire Semantic Economy framework.
+- **The debt/creditor inversion at book scale.** ON THE DEBT/CREDITOR INVERSION (7,359w) is one of the most original claims in the archive: the economy is structurally indebted to a semantic reserve it did not create. This claim has not yet been integrated into NB IV or NB I. It should be: it is the deepest extension of the value-form analysis, and it grounds the entire Semantic Economy framework.
 
 
 ---

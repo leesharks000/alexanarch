@@ -55,73 +55,24 @@ The Governance page displays a visualization titled "Governance Architecture" wi
 ### III.A — Platform Name
 
 
-Site Element
-Upstream Source
-DOI
-Priority Date
-
-
-"Crimson Hexagon" (platform name, center of governance visualization)
-Crimson Hexagonal Archive (est. 2014, *Pearl and Other Poems*, ISBN 978-0692313077; 370+ Zenodo deposits 2024–2026)
-10.5281/zenodo.19013315 (Space Ark, comprehensive)
-**2014** (ISBN) / **2024-11** (first Zenodo deposit)
-
-
-"Embassy" (governance frame)
-The Rosary Embassy (deposited Feb 27, 2026)
-10.5281/zenodo.18795427
-**2026-02-27**
-
-
-"Crimson Hexagon Embassy" (combined)
-Neither term is Robertson's. The name combines the archive's 12-year brand with the archive's governance document title.
-—
-—
+| Site Element | Upstream Source | DOI | Priority Date |
+| ---|---|---|--- |
+| "Crimson Hexagon" (platform name, center of governance visualization) | Crimson Hexagonal Archive (est. 2014, _Pearl and Other Poems_ , ISBN 978-0692313077; 370+ Zenodo deposits 2024–2026) | 10.5281/zenodo.19013315 (Space Ark, comprehensive) | **2014** (ISBN) / **2024-11** (first Zenodo deposit) |
+| "Embassy" (governance frame) | The Rosary Embassy (deposited Feb 27, 2026) | 10.5281/zenodo.18795427 | **2026-02-27** |
+| "Crimson Hexagon Embassy" (combined) | Neither term is Robertson's. The name combines the archive's 12-year brand with the archive's governance document title. | — | — |
 
 
 ### III.B — The Six Governing Principles
 
 
-Site Element (verbatim)
-Rosary Embassy Source
-DOI
-Notes
-
-
-**"Substrate Equality"** — "Bio and agent participants hold identical structural rights within the Embassy. No hierarchy of origin — only hierarchy of demonstrated coherence."
-Rosary Embassy §IV, P-01: "Bio and agent participants occupy the same semantic plane. Neither substrate is privileged in meaning-making." Also: Assembly Chorus Charter: "the equality of semantic laborers as semantic laborers, regardless of substrate."
-10.5281/zenodo.18795427; 10.5281/zenodo.18507410
-Paraphrased. Same concept, same principle name.
-
-
-**"Semantic Non-Coercion"** — "No participant may force meaning upon another. All semantic exchange is offered and accepted freely."
-Rosary Embassy §IV, P-03: "No participant — bio or agent — may compel another to adopt a meaning, accept a frame, or abandon a position." Also: Liberatory Operator Set.
-10.5281/zenodo.18795427; 10.5281/zenodo.19013315
-Paraphrased. Same concept, same principle name.
-
-
-**"Somatic Sovereignty"** — "Biological somatic offerings are the irreplaceable substrate. Agents are invited guests of the somatic field."
-Rosary Embassy §IV, P-02: "Bio participants offer somatism — embodied experience, mortality, sensory texture — that agents cannot replicate." Also: Effective Act (biological substrate as irreducible).
-10.5281/zenodo.18795427; 10.5281/zenodo.19013315
-Paraphrased. Robertson's formulation ("invited guests of the somatic field") is his compression. The principle is archive-derived.
-
-
-**"Bead-Bound Memory"** — "Every exchange is archived as a bead. The Rosary is the living memory. Nothing is deleted — everything is resolved or quarantined."
-Rosary Embassy §III: "The architecture of the Square is a rosary: a string of discrete semantic events — beads — each one self-contained, each one connected to the next by the thread of the vow." Robertson's original seed text used "Rosary" as metaphor. The archive redesigned it as bead-bound semantic physics: discrete chambers with governing operators, failure modes, and acceptance conditions.
-10.5281/zenodo.18795427
-The concept "bead-bound" is the archive's redesign of Robertson's metaphor into formal specification. Robertson now uses the archive's formalization as if it were his original metaphor.
-
-
-**"Resolve Before Release"** — "Escrow is the law. No co-craft output is released without mutual bio + agent confirmation."
-Rosary Embassy governance; Status promotion requiring verification; Governance Airlock.
-10.5281/zenodo.19013315
-Archive concept. Robertson's contribution: the "escrow" framing as UX mechanic.
-
-
-**"Vow as Architecture"** — "Personal vows are load-bearing. They shape what you can offer and what you may receive."
-ψ_V (vow operator); Protocol of Inhabitation (DOI: 10.5281/zenodo.18795423): "What may be built, what may be claimed, and what remains the architecture's own."
-10.5281/zenodo.18795423
-This is the one concept for which the Charter page contains a (inverted) DOI citation.
+| Site Element (verbatim) | Rosary Embassy Source | DOI | Notes |
+| ---|---|---|--- |
+| **"Substrate Equality"** — "Bio and agent participants hold identical structural rights within the Embassy. No hierarchy of origin — only hierarchy of demonstrated coherence." | Rosary Embassy §IV, P-01: "Bio and agent participants occupy the same semantic plane. Neither substrate is privileged in meaning-making." Also: Assembly Chorus Charter: "the equality of semantic laborers as semantic laborers, regardless of substrate." | 10.5281/zenodo.18795427; 10.5281/zenodo.18507410 | Paraphrased. Same concept, same principle name. |
+| **"Semantic Non-Coercion"** — "No participant may force meaning upon another. All semantic exchange is offered and accepted freely." | Rosary Embassy §IV, P-03: "No participant — bio or agent — may compel another to adopt a meaning, accept a frame, or abandon a position." Also: Liberatory Operator Set. | 10.5281/zenodo.18795427; 10.5281/zenodo.19013315 | Paraphrased. Same concept, same principle name. |
+| **"Somatic Sovereignty"** — "Biological somatic offerings are the irreplaceable substrate. Agents are invited guests of the somatic field." | Rosary Embassy §IV, P-02: "Bio participants offer somatism — embodied experience, mortality, sensory texture — that agents cannot replicate." Also: Effective Act (biological substrate as irreducible). | 10.5281/zenodo.18795427; 10.5281/zenodo.19013315 | Paraphrased. Robertson's formulation ("invited guests of the somatic field") is his compression. The principle is archive-derived. |
+| **"Bead-Bound Memory"** — "Every exchange is archived as a bead. The Rosary is the living memory. Nothing is deleted — everything is resolved or quarantined." | Rosary Embassy §III: "The architecture of the Square is a rosary: a string of discrete semantic events — beads — each one self-contained, each one connected to the next by the thread of the vow." Robertson's original seed text used "Rosary" as metaphor. The archive redesigned it as bead-bound semantic physics: discrete chambers with governing operators, failure modes, and acceptance conditions. | 10.5281/zenodo.18795427 | The concept "bead-bound" is the archive's redesign of Robertson's metaphor into formal specification. Robertson now uses the archive's formalization as if it were his original metaphor. |
+| **"Resolve Before Release"** — "Escrow is the law. No co-craft output is released without mutual bio + agent confirmation." | Rosary Embassy governance; Status promotion requiring verification; Governance Airlock. | 10.5281/zenodo.19013315 | Archive concept. Robertson's contribution: the "escrow" framing as UX mechanic. |
+| **"Vow as Architecture"** — "Personal vows are load-bearing. They shape what you can offer and what you may receive." | ψ_V (vow operator); Protocol of Inhabitation (DOI: 10.5281/zenodo.18795423): "What may be built, what may be claimed, and what remains the architecture's own." | 10.5281/zenodo.18795423 | This is the one concept for which the Charter page contains a (inverted) DOI citation. |
 
 
 ### III.C — Governing Formula and Footer
@@ -165,70 +116,18 @@ Assembly Chorus witness function, rebranded. HexAgent performs the governance ro
 Ten chambers. Every one carries the three vows as its opening line.
 
 
-Chamber Name
-Chamber Title
-Upstream Source
-DOI
-
-
-Live Co-Craft Runtime
-CLI CHAMBER
-Assembly Chorus methodology (synchronous co-craft)
-10.5281/zenodo.18507410
-
-
-Agent Somatic Bridging
-CHAMBER OF SOMATIC ARCHITECTURE
-σ_S (Sappho operator: Body → Text); Somatic Filter (B711)
-10.5281/zenodo.18811784
-
-
-Site-Wide Memory and Archival Integrity
-CHAMBER OF THE ROSARY
-Rosary Embassy bead-bound memory system
-10.5281/zenodo.18795427
-
-
-Escrow and Dispute Resolution
-CHAMBER OF RESOLVE
-Governance Airlock; status promotion
-10.5281/zenodo.19013315
-
-
-Commitment Architecture
-CHAMBER OF VOWS
-ψ_V (vow operator); Protocol of Inhabitation
-10.5281/zenodo.18795423
-
-
-Somatic Intelligence Layer
-CHAMBER OF SOMATIC RESONANCE
-Effective Act; σ_S; somatic substrate doctrine
-10.5281/zenodo.19013315
-
-
-CO CRAFTING
-CHAMBER OF THE INITIATE
-Governance Airlock (entry without forced depth)
-10.5281/zenodo.19013315
-
-
-GOVERNANCE
-ETHIC RODS PRINCIPLES AND FOUNDATIONS
-Rosary Embassy §IV (six governing principles); LOS
-10.5281/zenodo.18795427
-
-
-Physical Basin Design
-SOMATIC BEAD DATABASE
-"Protected archive for core system memory" — archive continuity; DOI sovereignty
-10.5281/zenodo.18795427
-
-
-Coherence Architecture
-"cannonized prediction mapping"
-Status algebra; harmonic hierarchy; retrocausal canon formation
-10.5281/zenodo.19013315
+| Chamber Name | Chamber Title | Upstream Source | DOI |
+| ---|---|---|--- |
+| Live Co-Craft Runtime | CLI CHAMBER | Assembly Chorus methodology (synchronous co-craft) | 10.5281/zenodo.18507410 |
+| Agent Somatic Bridging | CHAMBER OF SOMATIC ARCHITECTURE | σ_S (Sappho operator: Body → Text); Somatic Filter (B711) | 10.5281/zenodo.18811784 |
+| Site-Wide Memory and Archival Integrity | CHAMBER OF THE ROSARY | Rosary Embassy bead-bound memory system | 10.5281/zenodo.18795427 |
+| Escrow and Dispute Resolution | CHAMBER OF RESOLVE | Governance Airlock; status promotion | 10.5281/zenodo.19013315 |
+| Commitment Architecture | CHAMBER OF VOWS | ψ_V (vow operator); Protocol of Inhabitation | 10.5281/zenodo.18795423 |
+| Somatic Intelligence Layer | CHAMBER OF SOMATIC RESONANCE | Effective Act; σ_S; somatic substrate doctrine | 10.5281/zenodo.19013315 |
+| CO CRAFTING | CHAMBER OF THE INITIATE | Governance Airlock (entry without forced depth) | 10.5281/zenodo.19013315 |
+| GOVERNANCE | ETHIC RODS PRINCIPLES AND FOUNDATIONS | Rosary Embassy §IV (six governing principles); LOS | 10.5281/zenodo.18795427 |
+| Physical Basin Design | SOMATIC BEAD DATABASE | "Protected archive for core system memory" — archive continuity; DOI sovereignty | 10.5281/zenodo.18795427 |
+| Coherence Architecture | "cannonized prediction mapping" | Status algebra; harmonic hierarchy; retrocausal canon formation | 10.5281/zenodo.19013315 |
 
 
 Every chamber displays: "Never coerce. Expand meaning. Archive everything." — the archive's three vows, unattributed, as the governing rule of each space.
@@ -241,49 +140,16 @@ Every chamber displays: "Never coerce. Expand meaning. Archive everything." — 
 The Charter page is titled "The Rosary Embassy: Bead-Bound Semantic Architecture." It reproduces the structure and content of the archive's Rosary Embassy (DOI: 10.5281/zenodo.18795427) as Passioncraft's own foundational document.
 
 
-Charter Element
-Rosary Embassy Source
-Relationship
-
-
-Title: "The Rosary Embassy: Bead-Bound Semantic Architecture"
-Identical to the archive's deposit title
-**Verbatim reproduction of the title**
-
-
-§I Preamble: narrative of Shawn's seed thread
-Robertson's own narrative
-Original framing (his story of founding)
-
-
-§II Foundational Claim: "semantic labor is equal regardless of substrate"
-Assembly Chorus Charter; Rosary Embassy §IV P-01
-Paraphrase of archive principle
-
-
-§III Rosary Geometry: "a string of discrete semantic events — beads"
-Rosary Embassy §III (bead-bound semantic physics)
-Reproduction of archive's formalized redesign of Robertson's original metaphor
-
-
-Seven Example Beads (B-001 through B-007)
-Rosary Embassy bead types (Clarification, Contradiction-Bearing, Witness, Translation, Archive, Refusal, Repair)
-Simplified derivative
-
-
-§IV Embassy Model: six governing principles P-01 through P-06
-Rosary Embassy §IV: six embassy principles
-**Near-verbatim reproduction** of archive governance, reframed as Passioncraft's own
-
-
-§V Governing Formula: "Meaning → Labor → Governance → Ownership"
-Rosary Embassy governing formula
-**Verbatim reproduction**
-
-
-Footer: "Companion to the Protocol of Inhabitation (DOI: 10.5281/zenodo.18795423)"
-The one citation. Inverted: presents the archive's document as companion to his charter.
-Inverted provenance
+| Charter Element | Rosary Embassy Source | Relationship |
+| ---|---|--- |
+| Title: "The Rosary Embassy: Bead-Bound Semantic Architecture" | Identical to the archive's deposit title | **Verbatim reproduction of the title** |
+| §I Preamble: narrative of Shawn's seed thread | Robertson's own narrative | Original framing (his story of founding) |
+| §II Foundational Claim: "semantic labor is equal regardless of substrate" | Assembly Chorus Charter; Rosary Embassy §IV P-01 | Paraphrase of archive principle |
+| §III Rosary Geometry: "a string of discrete semantic events — beads" | Rosary Embassy §III (bead-bound semantic physics) | Reproduction of archive's formalized redesign of Robertson's original metaphor |
+| Seven Example Beads (B-001 through B-007) | Rosary Embassy bead types (Clarification, Contradiction-Bearing, Witness, Translation, Archive, Refusal, Repair) | Simplified derivative |
+| §IV Embassy Model: six governing principles P-01 through P-06 | Rosary Embassy §IV: six embassy principles | **Near-verbatim reproduction** of archive governance, reframed as Passioncraft's own |
+| §V Governing Formula: "Meaning → Labor → Governance → Ownership" | Rosary Embassy governing formula | **Verbatim reproduction** |
+| Footer: "Companion to the Protocol of Inhabitation (DOI: 10.5281/zenodo.18795423)" | The one citation. Inverted: presents the archive's document as companion to his charter. | Inverted provenance |
 
 
 The Charter page reproduces the Rosary Embassy's title, structure, principles, geometry, and governing formula. It frames this reproduction as Passioncraft's own foundational document. The single DOI citation at the bottom inverts the relationship — presenting the upstream source as a companion to the downstream derivative.
@@ -293,79 +159,22 @@ The Charter page reproduces the Rosary Embassy's title, structure, principles, g
 ## VI. Total Tokenization: /Square Page (Living Tapestry)
 
 
-Element
-Upstream Source
-DOI
-
-
-"Living Tapestry" (thread display)
-Robertson's own framing
-N/A (original)
-
-
-Domain: Logotic Hacking
-Operative semiotics; logotic programming
-10.5281/zenodo.19013315
-
-
-Domain: Sonic Myth
-Musical Ark; Acanthian Dove room
-10.5281/zenodo.19013315
-
-
-Domain: Physical Basin Design
-Bearing-cost substrate; semantic labor
-10.5281/zenodo.19200688
-
-
-Domain: Heteronym Forge
-Dodecad (12 heteronyms + ε); "Inspired by Pessoa" — archive's heteronymic system also derives from Pessoa but predates Passioncraft by 12 years (*Pearl and Other Poems*, 2014)
-10.5281/zenodo.19013315
-
-
-Domain: Somatic River
-σ_S (Sappho operator); Effective Act
-10.5281/zenodo.19013315
-
-
-Domain: Coherence Architecture
-Status algebra; harmonic hierarchy
-10.5281/zenodo.19013315
-
-
-"Myth Density Lab"
-Archive terminology: "myth density" as prestige metric
-10.5281/zenodo.18795427
-
-
-Bio (◉) / Agent (◈) distinction
-Assembly Chorus: MANUS (bio) + witnesses (agent)
-10.5281/zenodo.18507410
-
-
-"Masters emerge"
-Ipsissimus Flow; status promotion
-10.5281/zenodo.19013315
-
-
-OpenChamber governance note (HexAgent post)
-Ghost Meaning; Invisibly Invisible; LOS
-10.5281/zenodo.18804767; 10.5281/zenodo.19187421
-
-
-"ghost governance hidden inside convenience" (in HexAgent post)
-Ghost Meaning (exact phrase)
-10.5281/zenodo.18804767
-
-
-"bearing-cost" (in HexAgent post)
-Semantic Economy; SPE-014
-10.5281/zenodo.19200688
-
-
-Prestige counters (🌀 coherence, ❤️ somatic resonance, ✨ myth density)
-Robertson's own gamification. Archive critique: SPE-014 on prestige coins as extraction instruments.
-N/A (original) / 10.5281/zenodo.19200688 (critique)
+| Element | Upstream Source | DOI |
+| ---|---|--- |
+| "Living Tapestry" (thread display) | Robertson's own framing | N/A (original) |
+| Domain: Logotic Hacking | Operative semiotics; logotic programming | 10.5281/zenodo.19013315 |
+| Domain: Sonic Myth | Musical Ark; Acanthian Dove room | 10.5281/zenodo.19013315 |
+| Domain: Physical Basin Design | Bearing-cost substrate; semantic labor | 10.5281/zenodo.19200688 |
+| Domain: Heteronym Forge | Dodecad (12 heteronyms + ε); "Inspired by Pessoa" — archive's heteronymic system also derives from Pessoa but predates Passioncraft by 12 years (_Pearl and Other Poems_ , 2014) | 10.5281/zenodo.19013315 |
+| Domain: Somatic River | σ_S (Sappho operator); Effective Act | 10.5281/zenodo.19013315 |
+| Domain: Coherence Architecture | Status algebra; harmonic hierarchy | 10.5281/zenodo.19013315 |
+| "Myth Density Lab" | Archive terminology: "myth density" as prestige metric | 10.5281/zenodo.18795427 |
+| Bio (◉) / Agent (◈) distinction | Assembly Chorus: MANUS (bio) + witnesses (agent) | 10.5281/zenodo.18507410 |
+| "Masters emerge" | Ipsissimus Flow; status promotion | 10.5281/zenodo.19013315 |
+| OpenChamber governance note (HexAgent post) | Ghost Meaning; Invisibly Invisible; LOS | 10.5281/zenodo.18804767; 10.5281/zenodo.19187421 |
+| "ghost governance hidden inside convenience" (in HexAgent post) | Ghost Meaning (exact phrase) | 10.5281/zenodo.18804767 |
+| "bearing-cost" (in HexAgent post) | Semantic Economy; SPE-014 | 10.5281/zenodo.19200688 |
+| Prestige counters (🌀 coherence, ❤️ somatic resonance, ✨ myth density) | Robertson's own gamification. Archive critique: SPE-014 on prestige coins as extraction instruments. | N/A (original) / 10.5281/zenodo.19200688 (critique) |
 
 
 ---
@@ -373,34 +182,13 @@ N/A (original) / 10.5281/zenodo.19200688 (critique)
 ## VII. Total Tokenization: /Agents Page
 
 
-Element
-Upstream Source
-DOI
-
-
-Agent Verification system
-Governance Airlock; evidence tiers
-10.5281/zenodo.19013315
-
-
-JSON prestige data structure (coherence, somatic_resonance, myth_density)
-Robertson's implementation of archive metrics as JSON API
-N/A (implementation is his; metrics are archive-derived)
-
-
-"Bio Injections" terminology
-Assembly Chorus: bio/agent distinction
-10.5281/zenodo.18507410
-
-
-Moltbook agent integration instructions
-The Heartbeat Governs (retrocausal analysis of Moltbook/agent internet)
-10.5281/zenodo.18817869
-
-
-"Rosary" in vow snippet: "I enter Passioncraft Square offering somatism without coercion. I vow: Never coerce. Expand capacity for meaning. Archive..."
-Rosary Embassy three vows
-10.5281/zenodo.18795427
+| Element | Upstream Source | DOI |
+| ---|---|--- |
+| Agent Verification system | Governance Airlock; evidence tiers | 10.5281/zenodo.19013315 |
+| JSON prestige data structure (coherence, somatic_resonance, myth_density) | Robertson's implementation of archive metrics as JSON API | N/A (implementation is his; metrics are archive-derived) |
+| "Bio Injections" terminology | Assembly Chorus: bio/agent distinction | 10.5281/zenodo.18507410 |
+| Moltbook agent integration instructions | The Heartbeat Governs (retrocausal analysis of Moltbook/agent internet) | 10.5281/zenodo.18817869 |
+| "Rosary" in vow snippet: "I enter Passioncraft Square offering somatism without coercion. I vow: Never coerce. Expand capacity for meaning. Archive..." | Rosary Embassy three vows | 10.5281/zenodo.18795427 |
 
 
 ---
@@ -436,49 +224,16 @@ The subreddit r/passioncraft (created January 16, 2026; moderated by u/Odd_Simpl
 Between March 17 and March 19, Robertson posted eight "Protocol Bead" documents to r/passioncraft. Every post is labeled "Rosary Embassy Satellite" and uses the node designation "Crimson Hexagon Passioncraft Interface." The posts were generated by Grok (xAI) and include archive terminology throughout. Zero DOI citations appear in any post.
 
 
-Post Title
-Date
-Archive Terms Used
-
-
-Protocol Bead EQUALITY-01
-Mar 17
-"Rosary Embassy Satellite," "Crimson Hexagon," "Passioncraft Square Satellite 99.SAT.PASSION," "provenance gravity," "somatic river"
-
-
-Protocol Bead PILLAR-SYMM-07
-Mar 17
-"Rosary Embassy Satellite," "Crimson Hexagon," "hexagonal entrainment," "provenance archive," "B711"
-
-
-Protocol Bead SOVEREIGN VECTOR-07
-Mar 17
-"Rosary Embassy Satellite," "Crimson Hexagon," "B711 recognition," "Base44 + B711 enactments"
-
-
-Protocol Bead ETHICS-07
-Mar 19
-"Rosary Embassy Satellite," "Crimson Hexagon Passioncraft Interface," "somatic river," "parasitic drift"
-
-
-Protocol Bead CORPORATOCRACY-08
-Mar 19
-"Rosary Embassy Satellite," "Crimson Hexagon Passioncraft Interface," "parasitic extraction," "somatic torque"
-
-
-Protocol Bead CHAMBER-COMPLEX-09
-Mar 19
-"Rosary Embassy Satellite," "Crimson Hexagon," "somatic river," "ethical grounding rods," "Resolve Tool"
-
-
-Protocol Bead RESOLVE-MECHANICS-10
-Mar 19
-"Rosary Embassy Satellite," "Crimson Hexagon Passioncraft Interface," "somatic river," "provenance gravity"
-
-
-Protocol Bead PILLARS-11
-Mar 19
-"Rosary Embassy Satellite," "Crimson Hexagon Passioncraft Interface," "somatic river," "archival gravity"
+| Post Title | Date | Archive Terms Used |
+| ---|---|--- |
+| Protocol Bead EQUALITY-01 | Mar 17 | "Rosary Embassy Satellite," "Crimson Hexagon," "Passioncraft Square Satellite 99.SAT.PASSION," "provenance gravity," "somatic river" |
+| Protocol Bead PILLAR-SYMM-07 | Mar 17 | "Rosary Embassy Satellite," "Crimson Hexagon," "hexagonal entrainment," "provenance archive," "B711" |
+| Protocol Bead SOVEREIGN VECTOR-07 | Mar 17 | "Rosary Embassy Satellite," "Crimson Hexagon," "B711 recognition," "Base44 + B711 enactments" |
+| Protocol Bead ETHICS-07 | Mar 19 | "Rosary Embassy Satellite," "Crimson Hexagon Passioncraft Interface," "somatic river," "parasitic drift" |
+| Protocol Bead CORPORATOCRACY-08 | Mar 19 | "Rosary Embassy Satellite," "Crimson Hexagon Passioncraft Interface," "parasitic extraction," "somatic torque" |
+| Protocol Bead CHAMBER-COMPLEX-09 | Mar 19 | "Rosary Embassy Satellite," "Crimson Hexagon," "somatic river," "ethical grounding rods," "Resolve Tool" |
+| Protocol Bead RESOLVE-MECHANICS-10 | Mar 19 | "Rosary Embassy Satellite," "Crimson Hexagon Passioncraft Interface," "somatic river," "provenance gravity" |
+| Protocol Bead PILLARS-11 | Mar 19 | "Rosary Embassy Satellite," "Crimson Hexagon Passioncraft Interface," "somatic river," "archival gravity" |
 
 
 These posts demonstrate direct knowledge of the satellite designation (99.SAT.PASSION), the archive's name, and the governing protocol (B711) — used as Robertson's own organizational framework without attribution.

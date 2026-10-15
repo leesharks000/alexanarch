@@ -92,17 +92,17 @@ English
 
 ### References
 
-DOI | Relation | Description  
----|---|---  
-10.5281/zenodo.18216955 | References | The Semantic Economy (licensing framework)  
+| DOI | Relation | Description |
+| ---|---|--- |
+| 10.5281/zenodo.18216955 | References | The Semantic Economy (licensing framework) |
   
 * * *
 
 ## Files in This Deposit
 
-Filename | Description  
----|---  
-REX_FRACTION_ASW.md | Complete document (Markdown)  
+| Filename | Description |
+| ---|--- |
+| REX_FRACTION_ASW.md | Complete document (Markdown) |
   
 * * *
 

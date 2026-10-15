@@ -5290,10 +5290,7 @@ and destroys.
 ### FROM ONE WHO DIED LONG AGO...
 
 
-1.
-
-
-You hold my breath: I am a memento
+1. You hold my breath: I am a memento
 
 
 of the beforehand of death. What repels
@@ -5341,10 +5338,7 @@ into ashes. Your breath will have left
 its mark.
 
 
-2.
-
-
-Soon you will be used up.
+2. Soon you will be used up.
 
 
 So long: you won't be quenched so much
@@ -5404,10 +5398,7 @@ Listen to my whisper.
 How can you doubt that you are immortal?
 
 
-3.
-
-
-This is my biology: I live
+3. This is my biology: I live
 
 
 because you breathe me.

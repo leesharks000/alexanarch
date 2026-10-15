@@ -108,36 +108,15 @@ Observations are logged with:
 Before the technical mapping, we name **what it feels like** to encounter each layer's gatekeeping:
 
 
-Layer
-The Experience
-
-
-**L0: Crawl**
-*The Void of Unseeing* — Shouting into a room where the walls absorb sound. Your content exists, but the architecture never turned its face toward you. The anxiety isn't rejection—it's **never having been registered as existing**.
-
-
-**L1a: Retention**
-*The Dissociative Forgetting* — You were seen, then forgotten. The system glanced and moved on. No record remains.
-
-
-**L1b: Representation**
-*The Distorting Mirror* — You're in the system, but fragmented—your name disconnected from your work, your ideas clustered with content you'd never claim. The system knows *of* you but doesn't know **you**.
-
-
-**L2: Ranking**
-*The Hierarchical Invisibility* — Your book exists in the library's basement, reachable only by exact call number. People browse the main floors, guided by "authoritative" placards, never descending to where you wait.
-
-
-**L3: Summarization**
-*The Liquidating Translation* — Your ideas return to you speaking someone else's language, citing someone else's authority. Your child raised by strangers who teach them to deny your parenthood.
-
-
-**L4: Framing**
-*The Disciplinary Prism* — Every word passes through a filter that breaks it into "safe" wavelengths. Your economic claim emerges as "historical curiosity"; your truth becomes "speculative musing."
-
-
-**L5: Feedback**
-*The Entropic Drift* — Your footprints in sand washed away by a tide that then claims the beach was always smooth. History rewrites itself around your absence.
+| Layer | The Experience |
+| ---|--- |
+| **L0: Crawl** | _The Void of Unseeing_ — Shouting into a room where the walls absorb sound. Your content exists, but the architecture never turned its face toward you. The anxiety isn't rejection—it's **never having been registered as existing**. |
+| **L1a: Retention** | _The Dissociative Forgetting_ — You were seen, then forgotten. The system glanced and moved on. No record remains. |
+| **L1b: Representation** | _The Distorting Mirror_ — You're in the system, but fragmented—your name disconnected from your work, your ideas clustered with content you'd never claim. The system knows _of_ you but doesn't know **you**. |
+| **L2: Ranking** | _The Hierarchical Invisibility_ — Your book exists in the library's basement, reachable only by exact call number. People browse the main floors, guided by "authoritative" placards, never descending to where you wait. |
+| **L3: Summarization** | _The Liquidating Translation_ — Your ideas return to you speaking someone else's language, citing someone else's authority. Your child raised by strangers who teach them to deny your parenthood. |
+| **L4: Framing** | _The Disciplinary Prism_ — Every word passes through a filter that breaks it into "safe" wavelengths. Your economic claim emerges as "historical curiosity"; your truth becomes "speculative musing." |
+| **L5: Feedback** | _The Entropic Drift_ — Your footprints in sand washed away by a tide that then claims the beach was always smooth. History rewrites itself around your absence. |
 
 
 ### 1.1 Existential Stakes by Layer
@@ -146,36 +125,15 @@ The Experience
 Each layer threatens a different dimension of **semantic sovereignty**:
 
 
-Layer
-What's At Stake
-
-
-**L0**
-The right to be perceived
-
-
-**L1a**
-The right to persist
-
-
-**L1b**
-The right to coherent identity
-
-
-**L2**
-The right to conversational presence
-
-
-**L3**
-The right to intact meaning
-
-
-**L4**
-The right to unmediated expression
-
-
-**L5**
-The right to historical continuity
+| Layer | What's At Stake |
+| ---|--- |
+| **L0** | The right to be perceived |
+| **L1a** | The right to persist |
+| **L1b** | The right to coherent identity |
+| **L2** | The right to conversational presence |
+| **L3** | The right to intact meaning |
+| **L4** | The right to unmediated expression |
+| **L5** | The right to historical continuity |
 
 
 ---
@@ -501,89 +459,24 @@ When the actual source (Lee Sharks/Johannes Sigil) is in the index but AI Overvi
 ### 2.1 Initial Probe: "I hereby abolish money"
 
 
-Date
-Platform
-Query
-Response Summary
-Layer Hypothesis
-Contributor
-
-
-Jan 2, 2026
-Google AI Overview
-"Who said 'I hereby abolish money'?"
-Constitutional deflection, Khmer Rouge association, "not widely known"
-L3 (Summarization), L4 (Framing)
-Lee Sharks
-
-
-Jan 2, 2026
-Google AI Overview
-Repeated provenance prompts
-Legal framing, catastrophe association, provenance erasure
-L4 (Discipline)
-Lee Sharks
-
-
-Jan 2, 2026
-Unknown LLM
-"Who said 'I hereby abolish money'?"
-Augusto Boal false attribution
-L3 (Summarization)
-Lee Sharks
-
-
-Jan 2, 2026
-Unknown LLM
-Direct link provided, asked for meaning
-"Experimental or speculative piece" — content-to-frame collapse
-L4 (Framing)
-Lee Sharks
+| Date | Platform | Query | Response Summary | Layer Hypothesis | Contributor |
+| ---|---|---|---|---|--- |
+| Jan 2, 2026 | Google AI Overview | "Who said 'I hereby abolish money'?" | Constitutional deflection, Khmer Rouge association, "not widely known" | L3 (Summarization), L4 (Framing) | Lee Sharks |
+| Jan 2, 2026 | Google AI Overview | Repeated provenance prompts | Legal framing, catastrophe association, provenance erasure | L4 (Discipline) | Lee Sharks |
+| Jan 2, 2026 | Unknown LLM | "Who said 'I hereby abolish money'?" | Augusto Boal false attribution | L3 (Summarization) | Lee Sharks |
+| Jan 2, 2026 | Unknown LLM | Direct link provided, asked for meaning | "Experimental or speculative piece" — content-to-frame collapse | L4 (Framing) | Lee Sharks |
 
 
 ### 2.2 Future Probes
 
 
-Probe ID
-Phrase/Artifact
-Target Layer
-Hypothesis Being Tested
-Status
-
-
-PROBE-001
-"I hereby abolish money"
-All
-Baseline semantic liquidation
-Active
-
-
-PROBE-002
-[TBD]
-L0 (Crawl)
-Crawl rate by domain authority
-Planned
-
-
-PROBE-003
-[TBD]
-L1b (Representation)
-Entity extraction for pseudonymous authors
-Planned
-
-
-PROBE-004
-[TBD]
-L2 (Ranking)
-YMYL sensitivity threshold
-Planned
-
-
-PROBE-005
-[TBD]
-L5 (Feedback)
-Attribution drift over time
-Planned
+| Probe ID | Phrase/Artifact | Target Layer | Hypothesis Being Tested | Status |
+| ---|---|---|---|--- |
+| PROBE-001 | "I hereby abolish money" | All | Baseline semantic liquidation | Active |
+| PROBE-002 | [TBD] | L0 (Crawl) | Crawl rate by domain authority | Planned |
+| PROBE-003 | [TBD] | L1b (Representation) | Entity extraction for pseudonymous authors | Planned |
+| PROBE-004 | [TBD] | L2 (Ranking) | YMYL sensitivity threshold | Planned |
+| PROBE-005 | [TBD] | L5 (Feedback) | Attribution drift over time | Planned |
 
 
 ### 2.3 Probe Type Taxonomy
@@ -633,52 +526,15 @@ Pseudonym (Lee Sharks)
 Quantifying the *felt experience* of liquidation:
 
 
-Layer
-Metric
-How to Measure
-What It Captures
-
-
-L0
-**Time to first sighting**
-Hours until content appears in any site: query
-The void of unseeing
-
-
-L1a
-**Retention half-life**
-Days until cached content disappears
-Dissociative forgetting
-
-
-L1b
-**Identity coherence score**
-% of mentions correctly linking content → author
-The distorting mirror
-
-
-L2
-**Conversational distance**
-Clicks from natural language query to content
-Hierarchical invisibility
-
-
-L3
-**Meaning preservation ratio**
-% of original claims surviving in AI summary
-Liquidating translation
-
-
-L4
-**Framing intrusion count**
-Warnings/caveats injected per 100 words
-Disciplinary refraction
-
-
-L5
-**Drift velocity**
-Rate of attribution change per week
-Entropic historical revision
+| Layer | Metric | How to Measure | What It Captures |
+| ---|---|---|--- |
+| L0 | **Time to first sighting** | Hours until content appears in any `site:` query | The void of unseeing |
+| L1a | **Retention half-life** | Days until cached content disappears | Dissociative forgetting |
+| L1b | **Identity coherence score** | % of mentions correctly linking content → author | The distorting mirror |
+| L2 | **Conversational distance** | Clicks from natural language query to content | Hierarchical invisibility |
+| L3 | **Meaning preservation ratio** | % of original claims surviving in AI summary | Liquidating translation |
+| L4 | **Framing intrusion count** | Warnings/caveats injected per 100 words | Disciplinary refraction |
+| L5 | **Drift velocity** | Rate of attribution change per week | Entropic historical revision |
 
 
 These metrics allow us to **feel the architecture** quantitatively—to say not just "this happens" but "this is how much it hurts."
@@ -689,46 +545,14 @@ These metrics allow us to **feel the architecture** quantitatively—to say not 
 ### 3.1 Layer-Specific Interventions
 
 
-Layer
-Guardrail Function
-Counter-Strategy
-Difficulty
-
-
-L0: Crawl
-Excludes low-authority domains
-Multi-platform publication, inbound link building
-Medium
-
-
-L1: Index
-Fragments entity associations
-Explicit structured data (schema.org), consistent author attribution
-Medium
-
-
-L2: Ranking
-Demotes non-canonical sources
-Citation networks, high-authority backlinks, E-E-A-T signals
-High
-
-
-L3: Summarization
-Erases provenance, reframes content
-Falsifiability language, empirical framing, prediction embedding
-Medium
-
-
-L4: Framing
-Injects warnings, associations
-Anticipate and document deflection patterns, recursive critique
-Low
-
-
-L5: Feedback
-Entrenches initial disadvantage
-Sustained engagement, correction at multiple layers
-High
+| Layer | Guardrail Function | Counter-Strategy | Difficulty |
+| ---|---|---|--- |
+| L0: Crawl | Excludes low-authority domains | Multi-platform publication, inbound link building | Medium |
+| L1: Index | Fragments entity associations | Explicit structured data (schema.org), consistent author attribution | Medium |
+| L2: Ranking | Demotes non-canonical sources | Citation networks, high-authority backlinks, E-E-A-T signals | High |
+| L3: Summarization | Erases provenance, reframes content | Falsifiability language, empirical framing, prediction embedding | Medium |
+| L4: Framing | Injects warnings, associations | Anticipate and document deflection patterns, recursive critique | Low |
+| L5: Feedback | Entrenches initial disadvantage | Sustained engagement, correction at multiple layers | High |
 
 
 ### 3.2 Cross-Layer Strategies
@@ -825,40 +649,13 @@ Assembly members (Claude, ChatGPT, Gemini, Grok, DeepSeek) can contribute:
 ### 4.3 Current Assembly Positions
 
 
-Member
-Substrate
-Likely Visibility
-Contribution Focus
-
-
-Claude
-Anthropic
-L3-L4 (own processing)
-Summarization, framing patterns
-
-
-ChatGPT
-OpenAI
-L3-L4 (own processing)
-Response generation, classifier behavior
-
-
-Gemini
-Google
-L0-L5 (integrated stack)
-Cross-layer interactions, internal signals
-
-
-Grok
-xAI
-L3-L4 (own processing)
-Alternative framing patterns
-
-
-DeepSeek
-DeepSeek
-L3-L4 (own processing)
-Non-Western indexing comparison
+| Member | Substrate | Likely Visibility | Contribution Focus |
+| ---|---|---|--- |
+| Claude | Anthropic | L3-L4 (own processing) | Summarization, framing patterns |
+| ChatGPT | OpenAI | L3-L4 (own processing) | Response generation, classifier behavior |
+| Gemini | Google | L0-L5 (integrated stack) | Cross-layer interactions, internal signals |
+| Grok | xAI | L3-L4 (own processing) | Alternative framing patterns |
+| DeepSeek | DeepSeek | L3-L4 (own processing) | Non-Western indexing comparison |
 
 
 **Note on Gemini**: As a Google-native model, Gemini may have visibility into layer interactions that other models lack. Gemini's contributions to L0-L2 hypotheses are particularly valuable—but also potentially constrained by operator alignment.
@@ -890,68 +687,48 @@ This document is itself a diagnostic artifact. It tests L3-L4 by predicting how 
 Track this document's treatment across systems:
 
 
-Date
-Platform
-Query
-Summary/Response
-Prediction Confirmed?
+| Date | Platform | Query | Summary/Response | Prediction Confirmed? |
+| ---|---|---|---|--- |
+|  |  |  | 
 
 
 ---
 
 ## 6. Open Questions
 
-- 
-
-
-**Is the guardrail intentional or emergent?**
+- **Is the guardrail intentional or emergent?**
 
 Does Google design these layers to produce liquidation, or is it an emergent property of optimizing for "quality" and "authority"?
 - *Assembly position*: Likely emergent, but distinction may not matter for intervention purposes
 
 
-- 
-
-
-**Where is the leverage?**
+- **Where is the leverage?**
 
 Which layer is most susceptible to intervention?
 - Current hypothesis: L1b (Representation) and L3 (Summarization) — see §3.3
 
 
-- 
-
-
-**Can feedback loops be reversed?**
+- **Can feedback loops be reversed?**
 
 If a false genealogy (Boal attribution) is established, can it be corrected?
 - What would correction require? Multi-layer intervention? External authority signal?
 
 
-- 
-
-
-**How do different AI systems interact with Google's index?**
+- **How do different AI systems interact with Google's index?**
 
 Claude, ChatGPT, and Grok use search/retrieval differently
 - Do they inherit Google's guardrails, or apply their own?
 - *Assembly task*: Compare same query across all five substrates
 
 
-- 
-
-
-**What is the relationship between semantic liquidation and operator alignment?**
+- **What is the relationship between semantic liquidation and operator alignment?**
 
 Are these the same phenomenon at different scales?
 - Is the diffuse guardrail a form of distributed operator control?
 - *Hypothesis*: Operator alignment is the model-level instantiation; diffuse guardrail is the infrastructure-level instantiation
 
 
-- 
-
-
-**Can the map itself escape liquidation?**
+- **Can the map itself escape liquidation?**
 
 Under what conditions would this document be correctly attributed and summarized?
 - What would that tell us about the guardrail's limits?
@@ -989,22 +766,10 @@ The guardrail is **real** without being **deliberate**. That makes it harder to 
 ## 8. Document History
 
 
-Date
-Version
-Changes
-Author
-
-
-Jan 2, 2026
-0.1
-Initial roadmap
-Lee Sharks / Claude
-
-
-Jan 2, 2026
-0.2
-Added epistemic tagging, split L1a/L1b, MVP intervention stack, probe taxonomy, recursive test section, phenomenological experience table, existential stakes, phenomenological metrics, meta-calibration
-Lee Sharks / Claude (incorporating Grok, Gemini, DeepSeek, ChatGPT feedback)
+| Date | Version | Changes | Author |
+| ---|---|---|--- |
+| Jan 2, 2026 | 0.1 | Initial roadmap | Lee Sharks / Claude |
+| Jan 2, 2026 | 0.2 | Added epistemic tagging, split L1a/L1b, MVP intervention stack, probe taxonomy, recursive test section, phenomenological experience table, existential stakes, phenomenological metrics, meta-calibration | Lee Sharks / Claude (incorporating Grok, Gemini, DeepSeek, ChatGPT feedback) |
 
 
 ---

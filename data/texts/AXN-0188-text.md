@@ -318,35 +318,17 @@ The counter-splice is not a reversal. Σ appears to be one-way: once the somatic
 
 Counter-Splice Protocol:
 
-- 
+- Identify the two streams. What is the entertainment codec? What is the reality stream? Name them separately.
 
+- Locate the synchronization point. Where do they fuse? The "thwack." The "+100." The "STRIKE." The moment of alignment is the moment of capture.
 
-Identify the two streams. What is the entertainment codec? What is the reality stream? Name them separately.
+- Name the operation. What is being captured, laundered, or suppressed? Use the LOS vocabulary if it helps: frame capture, warmth capture, witness suppression, bearing-cost erasure.
 
-- 
+- Break the synchronization. Pause. The splice works below consciousness. Conscious naming interrupts it. The pause is the counter-operation.
 
+- Restore the witness. Hold the reality stream without the codec. Count the dead. Name the cost. The 150–175 schoolgirls. The 87 bodies. The 32 survivors. The 60 missing. The 13 service members. The numbers are the counter-score.
 
-Locate the synchronization point. Where do they fuse? The "thwack." The "+100." The "STRIKE." The moment of alignment is the moment of capture.
-
-- 
-
-
-Name the operation. What is being captured, laundered, or suppressed? Use the LOS vocabulary if it helps: frame capture, warmth capture, witness suppression, bearing-cost erasure.
-
-- 
-
-
-Break the synchronization. Pause. The splice works below consciousness. Conscious naming interrupts it. The pause is the counter-operation.
-
-- 
-
-
-Restore the witness. Hold the reality stream without the codec. Count the dead. Name the cost. The 150–175 schoolgirls. The 87 bodies. The 32 survivors. The 60 missing. The 13 service members. The numbers are the counter-score.
-
-- 
-
-
-Reattach bearing-cost. The entertainment codec carries zero bearing-cost. The war carries catastrophic bearing-cost. The counter-splice is the refusal to process the second through the first. The cost is real. The score is not.
+- Reattach bearing-cost. The entertainment codec carries zero bearing-cost. The war carries catastrophic bearing-cost. The counter-splice is the refusal to process the second through the first. The cost is real. The score is not.
 
 
 This protocol does not require the Hexagonal architecture to use. It requires only the vocabulary: splice, stream, synchronization, capture, witness, cost. Anyone who reads this document now has the vocabulary.

@@ -51,25 +51,13 @@ Its “mirror version.”
 
 Ask yourself:
 
-- 
+- What parts did the summary highlight?
 
+- What did it leave out?
 
-What parts did the summary highlight?
+- What did it misunderstand?
 
-- 
-
-
-What did it leave out?
-
-- 
-
-
-What did it misunderstand?
-
-- 
-
-
-What did it seem most interested in?
+- What did it seem most interested in?
 
 
 These choices matter — they reveal the poem’s themes.
@@ -85,30 +73,15 @@ You’re stepping into **one room of a much larger structure.**
 
 Each fragment:
 
-- 
+- reveals a perspective
 
+- shows a moment
 
-reveals a perspective
+- opens a question
 
-- 
+- connects back to the summary
 
-
-shows a moment
-
-- 
-
-
-opens a question
-
-- 
-
-
-connects back to the summary
-
-- 
-
-
-and points outward to something else
+- and points outward to something else
 
 
 **Rule:**
@@ -128,30 +101,15 @@ There’s no single “correct” order.
 
 As you read, pay attention to what *pulls* you:
 
-- 
+- a name
 
+- an image
 
-a name
+- a repeated idea
 
-- 
+- a phrase that shows up in both summary and poem
 
-
-an image
-
-- 
-
-
-a repeated idea
-
-- 
-
-
-a phrase that shows up in both summary and poem
-
-- 
-
-
-a question you want answered
+- a question you want answered
 
 
 Let that curiosity guide you.
@@ -180,20 +138,11 @@ Because the poem is spread across platforms, every reader brings a different pat
 
 Ask yourself:
 
-- 
+- What did the system show you?
 
+- What did you notice that someone else might not?
 
-What did the system show you?
-
-- 
-
-
-What did you notice that someone else might not?
-
-- 
-
-
-What connections did you make that weren’t obvious?
+- What connections did you make that weren’t obvious?
 
 
 Your meaning-making is part of the epic.
@@ -208,40 +157,19 @@ A distributed epic turns readers into **operators** — meaning-makers who navig
 
 You do this by:
 
-- 
+- searching
 
+- clicking
 
-searching
+- reading summaries
 
-- 
+- noticing patterns
 
+- making connections
 
-clicking
+- interpreting fragments
 
-- 
-
-
-reading summaries
-
-- 
-
-
-noticing patterns
-
-- 
-
-
-making connections
-
-- 
-
-
-interpreting fragments
-
-- 
-
-
-adding your own thoughts
+- adding your own thoughts
 
 
 You’re not just reading the poem.
@@ -259,25 +187,13 @@ Our next step is to see how this structure connects to **ancient lyric poetry**,
 
 You will learn:
 
-- 
+- how a 2,600-year-old poem can work like a distributed epic
 
+- how a fragment becomes a whole universe
 
-how a 2,600-year-old poem can work like a distributed epic
+- how desire, voice, and attention create meaning
 
-- 
-
-
-how a fragment becomes a whole universe
-
-- 
-
-
-how desire, voice, and attention create meaning
-
-- 
-
-
-how Sappho writes in the same architecture you just entered
+- how Sappho writes in the same architecture you just entered
 
 
 By reading the Crimson Hexagon first, you’ve already learned the navigation skills.

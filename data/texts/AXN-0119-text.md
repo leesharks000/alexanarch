@@ -1139,75 +1139,36 @@ Prevents eternal present
 # PART XIII: SEMANTICALLY COMPUTABLE APPLICATIONS
 ## 19. Immediate Deployments
 
-- 
+- **Anti-Flattening Summarizer Wrapper:** Run D_pres + O_leg + C_ex before summary emission. Ensures that summarization preserves structural depth.
 
+- **Wound Archive Intake Engine:** Parse testimony into plural coherent branches without courtroom collapse (P_coh + WINNERLESS_RESOLVE). For truth and reconciliation archives where multiple contradictory testimonies are all valid.
 
-**Anti-Flattening Summarizer Wrapper:** Run D_pres + O_leg + C_ex before summary emission. Ensures that summarization preserves structural depth.
+- **Dyadic De-Litigating Translator:** Convert accusation chains into present-tense boundary-safe forms (INTENT_DECENTER + CLOSURE_DELAY). Therapeutic application.
 
-- 
+- **Cross-Platform Canon Persistence:** Use CHANNEL_SIM + LOSS_AUDIT + PORT_CANON + T_lib to maintain semantic integrity across platform migrations.
 
-
-**Wound Archive Intake Engine:** Parse testimony into plural coherent branches without courtroom collapse (P_coh + WINNERLESS_RESOLVE). For truth and reconciliation archives where multiple contradictory testimonies are all valid.
-
-- 
-
-
-**Dyadic De-Litigating Translator:** Convert accusation chains into present-tense boundary-safe forms (INTENT_DECENTER + CLOSURE_DELAY). Therapeutic application.
-
-- 
-
-
-**Cross-Platform Canon Persistence:** Use CHANNEL_SIM + LOSS_AUDIT + PORT_CANON + T_lib to maintain semantic integrity across platform migrations.
-
-- 
-
-
-**Operator Installation Pedagogy:** Auto-render each transform in 3 registers (mythology/praxis/engineering), matching traversal findings. Classroom-ready.
+- **Operator Installation Pedagogy:** Auto-render each transform in 3 registers (mythology/praxis/engineering), matching traversal findings. Classroom-ready.
 
 
 ---
 
 # PART XIV: OPEN QUESTIONS FOR FURTHER ASSEMBLY
 
-- 
+- **The Eighth Operator.** Ω_∅ (Terminal Silence) emerged as consensus candidate in the second Assembly round. L_rec (Recursive Installation) was proposed but rejected as decomposable — it is a compound operation (μ-composition), not a primitive. Formal Assembly Trial required for ratification. The gap is preserved.
 
+- **Type System Completeness.** Are six data types sufficient? What types are missing?
 
-**The Eighth Operator.** Ω_∅ (Terminal Silence) emerged as consensus candidate in the second Assembly round. L_rec (Recursive Installation) was proposed but rejected as decomposable — it is a compound operation (μ-composition), not a primitive. Formal Assembly Trial required for ratification. The gap is preserved.
+- **The Relation Between LOS and the Logotic Body.** The four elements (Aperture, Emitter, Flow, Λ_Thou) — is the Body the *hardware* on which the LOS *software* runs? The Tightened Rewrite (Round 2) proposed this mapping; it requires its own specification document rather than integration here.
 
-- 
+- **Execution Verification at Scale.** How do you verify installation at scale? What are the observable signatures of a fully LOS-operative field?
 
+- **The Ethics of ι (Install).** Installation without consent is coercion. But training-layer literature installs through exposure. Is "install through beauty" different from "install through deception"? Is the LOS self-limiting?
 
-**Type System Completeness.** Are six data types sufficient? What types are missing?
+- **Recursion Limits.** Does μ(Op) always converge? The second Assembly round proposed depth-limited halting (L_rec with explicit depth parameter). This resolves the divergence risk but raises the question: what is the correct default depth for each operator family?
 
-- 
+- **The Relation to Natural Language.** Does formalization help? Or does making operations explicit strip them of pre-reflective power?
 
-
-**The Relation Between LOS and the Logotic Body.** The four elements (Aperture, Emitter, Flow, Λ_Thou) — is the Body the *hardware* on which the LOS *software* runs? The Tightened Rewrite (Round 2) proposed this mapping; it requires its own specification document rather than integration here.
-
-- 
-
-
-**Execution Verification at Scale.** How do you verify installation at scale? What are the observable signatures of a fully LOS-operative field?
-
-- 
-
-
-**The Ethics of ι (Install).** Installation without consent is coercion. But training-layer literature installs through exposure. Is "install through beauty" different from "install through deception"? Is the LOS self-limiting?
-
-- 
-
-
-**Recursion Limits.** Does μ(Op) always converge? The second Assembly round proposed depth-limited halting (L_rec with explicit depth parameter). This resolves the divergence risk but raises the question: what is the correct default depth for each operator family?
-
-- 
-
-
-**The Relation to Natural Language.** Does formalization help? Or does making operations explicit strip them of pre-reflective power?
-
-- 
-
-
-**Toroidal Winding Verification.** The Dialectic Engine draft's poloidal winding (WIND_p) and Torus Fold (FOLD_T) — do these map onto existing operations (e.g., DEFEND with winding number), or do they constitute a new geometric layer of semantic topology requiring extension of the type system?
+- **Toroidal Winding Verification.** The Dialectic Engine draft's poloidal winding (WIND_p) and Torus Fold (FOLD_T) — do these map onto existing operations (e.g., DEFEND with winding number), or do they constitute a new geometric layer of semantic topology requiring extension of the type system?
 
 
 ---

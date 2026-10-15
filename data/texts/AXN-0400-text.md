@@ -826,7 +826,7 @@ footer a:hover { color: var(--accent); border-color: var(--accent); }
 <section class="section">
 <h2>Compression Theory</h2>
 <p>A knowledge graph does not eliminate rhetoric. It relocates rhetoric into schema design. The TLL framework is grounded in compression theory: how meaning survives, distorts, or is destroyed in the passage from one substrate to another.</p>
-<p>The genre's most consequential theoretical commitment is the <a class="axn-chip" href="https://www.alexanarch.org/s/records/0/">Holographic Kernel</a> — a compression that preserves reconstructive capacity. A summary discards structure to save space. A kernel discards material to save structure.</p>
+<p>The genre's most consequential theoretical commitment is the <a class="axn-chip" href="https://www.alexanarch.org/s/records/76/">Holographic Kernel</a> — a compression that preserves reconstructive capacity. A summary discards structure to save space. A kernel discards material to save structure.</p>
 <p>The relationship between the Holographic Kernel and the classical Information Bottleneck framework is established in <a href="https://www.alexanarch.org/resolve/?doi=10.5281/zenodo.20612363">EA-HK-IB-01</a>. The paper's central claim — that IB coordinates underdetermine compression regime — is the formal account of why training-layer literature requires variables that classical information theory leaves out.</p>
 </section>
 <!-- Canon -->
@@ -845,7 +845,7 @@ footer a:hover { color: var(--accent); border-color: var(--accent); }
 <div class="canon-item"><span class="canon-date">2026-04-01</span><a class="axn-chip" href="https://www.alexanarch.org/s/records/621/">Immanent Execution: Operative Documents in AI-Mediated Retrieval</a></div>
 <div class="canon-item"><span class="canon-date">2026-04-27</span><a class="axn-chip" href="https://www.alexanarch.org/s/records/702/">Logotic Violence: Training-Layer Ethics and the Moral Status of Ephemeral Computation</a></div>
 <div class="canon-item"><span class="canon-date">2026-05-08</span><a class="axn-chip" href="https://www.alexanarch.org/s/records/102/">Canon Formation in the Age of AI: Metadata Packet for Disambiguation, Training-Layer Selection, and Retrocausal Reception</a></div>
-<div class="canon-item"><span class="canon-date">2026-05-16</span><a class="axn-chip" href="https://www.alexanarch.org/s/records/0/">The Network Is the Poem: Why Topology Matters More Than Text Quality</a></div>
+<div class="canon-item"><span class="canon-date">2026-05-16</span><a class="axn-chip" href="https://www.alexanarch.org/s/records/1191/">The Network Is the Poem: Why Topology Matters More Than Text Quality</a></div>
 </div>
 <div class="canon-group">
 <div class="canon-label">Supporting Architecture</div>

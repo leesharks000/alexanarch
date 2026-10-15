@@ -86,35 +86,17 @@ This corpus becomes publishable research, policy evidence, and the empirical bas
 This section is not an afterthought. The extension is built to study extraction — it cannot replicate extraction. Every design decision flows from this principle.
 ### 3.1 Core Ethical Commitments
 
-- 
+- **The user's browsing data belongs to the user.** The extension never accesses, logs, or transmits any data about what the user searches, visits, or does online — except for the specific AI Overview payloads the user explicitly chooses to contribute.
 
+- **Consent is affirmative, granular, and revocable.** The user opts in per-overview, not per-session. They see exactly what data will be shared before sharing it. They can revoke consent and request deletion of their contributed data at any time.
 
-**The user's browsing data belongs to the user.** The extension never accesses, logs, or transmits any data about what the user searches, visits, or does online — except for the specific AI Overview payloads the user explicitly chooses to contribute.
+- **The extension works fully offline.** All personal features (detection, attribution checking, local logging) function without any network calls to our servers. The extension is useful even if the user never opts in to data sharing.
 
-- 
+- **No dark patterns.** The opt-in prompt does not nag, guilt, or manipulate. It appears once per overview, states clearly what will be shared, and defaults to "no."
 
+- **Anonymization is real, not cosmetic.** Contributed overviews are stripped of any data that could identify the user (browser fingerprint, IP, account information). The query string is included because it is essential to the research, but the user can redact or modify it before contributing.
 
-**Consent is affirmative, granular, and revocable.** The user opts in per-overview, not per-session. They see exactly what data will be shared before sharing it. They can revoke consent and request deletion of their contributed data at any time.
-
-- 
-
-
-**The extension works fully offline.** All personal features (detection, attribution checking, local logging) function without any network calls to our servers. The extension is useful even if the user never opts in to data sharing.
-
-- 
-
-
-**No dark patterns.** The opt-in prompt does not nag, guilt, or manipulate. It appears once per overview, states clearly what will be shared, and defaults to "no."
-
-- 
-
-
-**Anonymization is real, not cosmetic.** Contributed overviews are stripped of any data that could identify the user (browser fingerprint, IP, account information). The query string is included because it is essential to the research, but the user can redact or modify it before contributing.
-
-- 
-
-
-**The corpus is open.** The SEAC dataset will be published openly under a license that permits research use, consistent with the Sovereign Provenance Protocol. The community that generates the data can access the data.
+- **The corpus is open.** The SEAC dataset will be published openly under a license that permits research use, consistent with the Sovereign Provenance Protocol. The community that generates the data can access the data.
 
 
 ### 3.2 What the Extension Can See
@@ -237,20 +219,11 @@ The core technical challenge. Google's AI Overview is rendered dynamically and i
 
 **Detection strategy (layered):**
 
-- 
+- **Selector-based detection.** Google currently renders AI Overviews in identifiable container elements. These selectors change, but typically involve data attributes or specific class patterns. The extension maintains a list of known selectors, updatable via a lightweight config fetch.
 
+- **Heuristic detection.** If selectors fail, fall back to heuristic: scan for content blocks that appear above organic results, contain synthesized prose (not snippets), and include inline source citations. Structural pattern: a block of continuous prose with small superscript or inline citation links to sources.
 
-**Selector-based detection.** Google currently renders AI Overviews in identifiable container elements. These selectors change, but typically involve data attributes or specific class patterns. The extension maintains a list of known selectors, updatable via a lightweight config fetch.
-
-- 
-
-
-**Heuristic detection.** If selectors fail, fall back to heuristic: scan for content blocks that appear above organic results, contain synthesized prose (not snippets), and include inline source citations. Structural pattern: a block of continuous prose with small superscript or inline citation links to sources.
-
-- 
-
-
-**MutationObserver.** AI Overviews often load asynchronously after initial page render. A MutationObserver watches for DOM insertions that match the detection criteria.
+- **MutationObserver.** AI Overviews often load asynchronously after initial page render. A MutationObserver watches for DOM insertions that match the detection criteria.
 
 
 **Parsed payload structure:**
@@ -515,35 +488,17 @@ This document format should be consistent with existing PVE (Provenance Violatio
 
 The SEAC corpus is designed to answer:
 
-- 
+- **What is the baseline attribution rate in Google AI Overviews?** What fraction of overviews cite their sources at all? What fraction cite the *originating* source versus secondary aggregators?
 
+- **Does attribution vary by domain?** Are academic sources (.edu, Zenodo, JSTOR) more or less likely to be attributed than journalistic, commercial, or independent sources?
 
-**What is the baseline attribution rate in Google AI Overviews?** What fraction of overviews cite their sources at all? What fraction cite the *originating* source versus secondary aggregators?
+- **Does attribution vary by topic?** Are certain fields (science, politics, culture) more or less prone to source erasure?
 
-- 
+- **Is there temporal drift?** Does attribution for the same query change over time? Does Google improve or degrade attribution as the feature evolves?
 
+- **What is the liquidation rate?** For queries where the contributing creator can be identified (via user match data), how often is the creator's work present in the overview but uncredited?
 
-**Does attribution vary by domain?** Are academic sources (.edu, Zenodo, JSTOR) more or less likely to be attributed than journalistic, commercial, or independent sources?
-
-- 
-
-
-**Does attribution vary by topic?** Are certain fields (science, politics, culture) more or less prone to source erasure?
-
-- 
-
-
-**Is there temporal drift?** Does attribution for the same query change over time? Does Google improve or degrade attribution as the feature evolves?
-
-- 
-
-
-**What is the liquidation rate?** For queries where the contributing creator can be identified (via user match data), how often is the creator's work present in the overview but uncredited?
-
-- 
-
-
-**What is the displacement effect?** Does the presence of an AI Overview reduce click-through to the original sources? (Measurable indirectly via source position analysis.)
+- **What is the displacement effect?** Does the presence of an AI Overview reduce click-through to the original sources? (Measurable indirectly via source position analysis.)
 
 
 ### 6.2 Corpus Governance

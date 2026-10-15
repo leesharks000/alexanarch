@@ -79,40 +79,19 @@ EA-TDS-03 = artifact / semantic object formalization (THIS DOCUMENT)
 
 ## Axioms of the Sharpie Object
 
-- 
+- **Identity across states.** The instrument is physically identical in the SIGN and BLOT states. Same ink, same tip, same barrel, same gesture. The instrument does not change. The operation changes.
 
+- **Relation-defined operation.** The state is determined by the relation between the mark and the substrate, not by any property of the instrument. If the substrate is unmarked → σ_SIGN. If the substrate carries an unauthorized claim → σ_SH. The substrate determines the operation.
 
-**Identity across states.** The instrument is physically identical in the SIGN and BLOT states. Same ink, same tip, same barrel, same gesture. The instrument does not change. The operation changes.
+- **Permanence symmetry.** Both σ_SIGN and σ_SH are irreversible. The signature cannot be removed without destroying the substrate. The blot cannot be removed without destroying the substrate. The correction is as permanent as the extraction.
 
-- 
+- **Composition law.** σ_SH ∘ σ_SIGN = ρ (restoration). The composition of signing and blotting returns the substrate to its commons state — not physically (both marks remain) but functionally (the personal claim is negated, the commons character is reasserted).
 
+- **Democratic access threshold.** The counter-instrument costs $1.49. The extraction instrument was claimed to cost $1,000 (ceremonial pen) or $5 (custom Sharpie). The counter-operation is maximally distributed: available at any drugstore, gas station, or dollar store.
 
-**Relation-defined operation.** The state is determined by the relation between the mark and the substrate, not by any property of the instrument. If the substrate is unmarked → σ_SIGN. If the substrate carries an unauthorized claim → σ_SH. The substrate determines the operation.
+- **Lenticular multiperspectivality.** The same blotted object reveals three readings depending on viewing angle: executive (branding failure), commons (restoration), forensic (evidence of contested provenance). All three readings are present simultaneously.
 
-- 
-
-
-**Permanence symmetry.** Both σ_SIGN and σ_SH are irreversible. The signature cannot be removed without destroying the substrate. The blot cannot be removed without destroying the substrate. The correction is as permanent as the extraction.
-
-- 
-
-
-**Composition law.** σ_SH ∘ σ_SIGN = ρ (restoration). The composition of signing and blotting returns the substrate to its commons state — not physically (both marks remain) but functionally (the personal claim is negated, the commons character is reasserted).
-
-- 
-
-
-**Democratic access threshold.** The counter-instrument costs $1.49. The extraction instrument was claimed to cost $1,000 (ceremonial pen) or $5 (custom Sharpie). The counter-operation is maximally distributed: available at any drugstore, gas station, or dollar store.
-
-- 
-
-
-**Lenticular multiperspectivality.** The same blotted object reveals three readings depending on viewing angle: executive (branding failure), commons (restoration), forensic (evidence of contested provenance). All three readings are present simultaneously.
-
-- 
-
-
-**Self-referential provenance.** The counter-instrument was chosen by the target. Trump selected the Sharpie as his signing instrument, narrated its origin story, displayed it at a Cabinet meeting. The counter-operation does not introduce a foreign tool. It returns the target's own instrument against his own mark.
+- **Self-referential provenance.** The counter-instrument was chosen by the target. Trump selected the Sharpie as his signing instrument, narrated its origin story, displayed it at a Cabinet meeting. The counter-operation does not introduce a foreign tool. It returns the target's own instrument against his own mark.
 
 
 ---

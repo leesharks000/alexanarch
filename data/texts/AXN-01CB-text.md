@@ -226,15 +226,9 @@ The legislative history note explains: "The words 'Only... of a deceased individ
 
 Two things happened in this codification:
 
-- 
+- **"Portrait or likeness" became "portrait."** The broader category — "likeness," which encompasses any form of resemblance or representation — was dropped. This narrowing is the gap the Treasury exploits.
 
-
-**"Portrait or likeness" became "portrait."** The broader category — "likeness," which encompasses any form of resemblance or representation — was dropped. This narrowing is the gap the Treasury exploits.
-
-- 
-
-
-**The word "superscription" never appears in the statute.** Thayer's original concern — the *name-claim* on currency, not just the face — is absent from the codified law.
+- **The word "superscription" never appears in the statute.** Thayer's original concern — the *name-claim* on currency, not just the face — is absent from the codified law.
 
 
 The Treasury's 2026 argument is straightforward: a signature is not a portrait. The statute prohibits portraits of living persons. Therefore, a signature is permitted. Legal scholars, including Michael Bordo of Rutgers' Center for Monetary and Financial History, have acknowledged that while the move will produce political pushback, the Treasury Secretary "may have the authority" to make this change.
@@ -291,47 +285,21 @@ The ChatGPT/TECHNE (105) substrate's blind draft provides the most thorough risk
 **Legal risks:**
 
 
-Risk
-Severity
-Mitigation
-
-
-§ 333 prosecution for physical currency defacement
-Low
-Intent is political speech, not destruction; bills remain circulable; Stamp Stampede provides 14-year precedent of non-prosecution; First Amendment defense
-
-
-§ 504 violation for currency reproduction
-Medium
-Use original artistic illustration, not photographic reproduction; comply with size restrictions; one-sided only; clearly mark as artwork
-
-
-Counterfeiting accusation (§ 471)
-Very low
-Never reproduce bills with intent to pass as genuine; clearly mark as artistic rendering; use off-size, one-sided format
+| Risk | Severity | Mitigation |
+| ---|---|--- |
+| § 333 prosecution for physical currency defacement | Low | Intent is political speech, not destruction; bills remain circulable; Stamp Stampede provides 14-year precedent of non-prosecution; First Amendment defense |
+| § 504 violation for currency reproduction | Medium | Use original artistic illustration, not photographic reproduction; comply with size restrictions; one-sided only; clearly mark as artwork |
+| Counterfeiting accusation (§ 471) | Very low | Never reproduce bills with intent to pass as genuine; clearly mark as artistic rendering; use off-size, one-sided format |
 
 
 **Strategic risks:**
 
 
-Risk
-Severity
-Mitigation
-
-
-Amplifying Trump's visibility
-Medium
-The blot *removes* the signature; narrative centers erasure, not celebration
-
-
-Robertson-style appropriation
-Low (with SA)
-CC BY-SA 4.0 + DOI timestamp makes independent invention claim impossible; SA prevents proprietary enclosure of derivatives
-
-
-Conflation of artistic project with defacement campaign
-Medium
-Three-object split (doctrine/artifact/fiction) maintains legal separation; the ChatGPT (106/107) principle: "Do not let the image outrun the legal memo. Do not let the fiction become instructions."
+| Risk | Severity | Mitigation |
+| ---|---|--- |
+| Amplifying Trump's visibility | Medium | The blot _removes_ the signature; narrative centers erasure, not celebration |
+| Robertson-style appropriation | Low (with SA) | CC BY-SA 4.0 + DOI timestamp makes independent invention claim impossible; SA prevents proprietary enclosure of derivatives |
+| Conflation of artistic project with defacement campaign | Medium | Three-object split (doctrine/artifact/fiction) maintains legal separation; the ChatGPT (106/107) principle: "Do not let the image outrun the legal memo. Do not let the fiction become instructions." |
 
 
 ---
@@ -392,34 +360,13 @@ Trump's signature on currency is Caesar's superscription without Caesar's image.
 The distinction between portrait and signature on currency is a *medium distinction* masking a *functional identity*:
 
 
-Feature
-Portrait
-Signature
-
-
-Identifies a specific individual
-Yes
-Yes
-
-
-Is visually distinctive/recognizable
-Yes
-Yes (Trump's signature is among the most recognizable autographs in the world)
-
-
-Carries the trace of the individual's body
-Yes (face)
-Yes (hand/writing)
-
-
-Claims the individual's authority over the substrate
-Yes
-Yes
-
-
-Benefits the living individual politically
-Yes (which is why it's prohibited)
-Yes (which is why the prohibition should apply)
+| Feature | Portrait | Signature |
+| ---|---|--- |
+| Identifies a specific individual | Yes | Yes |
+| Is visually distinctive/recognizable | Yes | Yes (Trump's signature is among the most recognizable autographs in the world) |
+| Carries the trace of the individual's body | Yes (face) | Yes (hand/writing) |
+| Claims the individual's authority over the substrate | Yes | Yes |
+| Benefits the living individual politically | Yes (which is why it's prohibited) | Yes (which is why the prohibition should apply) |
 
 
 The ChatGPT (106/107) substrate's blind draft identifies this most precisely: "the legal / aesthetic distinction between **portrait** and **signature**" is the center of the MSMRM conceptual payload. The distinction is real at the level of medium; it is fictive at the level of function.
@@ -604,29 +551,12 @@ Creative Commons' own Statement of Enforcement Principles (2021) acknowledges th
 The Gemini substrate's blind draft provides the clearest structural mapping between the currency operation and the CC mechanism:
 
 
-Mechanism
-CC BY-SA License
-Sharpie Blot
-
-
-Theft protection
-Termination clause + statutory damages
-Physical marking makes bills "unownable" as personal artifacts
-
-
-Attribution enforcement
-Legal (TASL requirements)
-Cultural (marked bills circulate with story)
-
-
-Communization
-SA requires sharing alike
-Defacement removes presidential "brand"
-
-
-Retrocausal defense
-Prior DOI anchoring
-Prior "trend" narrative (EA-TDS-02)
+| Mechanism | CC BY-SA License | Sharpie Blot |
+| ---|---|--- |
+| Theft protection | Termination clause + statutory damages | Physical marking makes bills "unownable" as personal artifacts |
+| Attribution enforcement | Legal (TASL requirements) | Cultural (marked bills circulate with story) |
+| Communization | SA requires sharing alike | Defacement removes presidential "brand" |
+| Retrocausal defense | Prior DOI anchoring | Prior "trend" narrative (EA-TDS-02) |
 
 
 Trump placing his signature on currency is structurally identical to stripping attribution from commons-licensed work and stamping a new name on it. Both are provenance capture operations on shared infrastructure. The Sharpie blot is the visual analog of the CC license's automatic termination clause. It does not destroy the substrate. It restores the substrate to its pre-capture state by negating the unauthorized personal mark.

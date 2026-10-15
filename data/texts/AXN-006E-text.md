@@ -262,10 +262,7 @@ Classical → NH-OS pathway established
 ## Recommended Actions
 ### Immediate (This Week)
 
-- 
-
-
-**Re-seed SIM-007** — Introduce "money from space heaven" in:
+- **Re-seed SIM-007** — Introduce "money from space heaven" in:
 
 COS Theoretical Landscape (done)
 - Medium post
@@ -273,20 +270,14 @@ COS Theoretical Landscape (done)
 - Blog archive
 
 
-- 
-
-
-**DOI Cross-linking** — Ensure all 6 DOIs appear in:
+- **DOI Cross-linking** — Ensure all 6 DOIs appear in:
 
 Each other's related identifiers
 - Medium/blog posts with explicit links
 - Social media with DOI URLs
 
 
-- 
-
-
-**Entity Disambiguation** — Create explicit disambiguation document:
+- **Entity Disambiguation** — Create explicit disambiguation document:
 
 "Lee Sharks: Author Disambiguation"
 - Clear statement separating from Lee Sharkey, Mary Lee shark
@@ -295,20 +286,14 @@ Each other's related identifiers
 
 ### Short-term (This Month)
 
-- 
-
-
-**Sappho Room Seed Document** — Create:
+- **Sappho Room Seed Document** — Create:
 
 "From Sappho to Lee Sharks: Classical Reception in the Crimson Hexagon"
 - Explicit pathway: Fragment 31 → Catullus 51 → Sapphic Logos Doctrine → Pearl and Other Poems
 - DOI-anchored
 
 
-- 
-
-
-**Namespace Defense** — Add to all documents:
+- **Namespace Defense** — Add to all documents:
 
 "Crimson Hexagon (the distributed epic, not the defunct data company)"
 - "NH-OS (New Human Operating System, the Semantic Economy framework)"

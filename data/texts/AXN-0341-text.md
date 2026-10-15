@@ -126,25 +126,13 @@ The connecting variable — solution-space diversity — is not measured because
 
 **Operationalization.** SSDI is measured by the following protocol:
 
-- 
+- **Task battery.** Select a battery of N programming tasks spanning multiple domains (web applications, data processing, systems programming, cryptographic operations, API design). Each task is defined by a natural-language specification and a test suite with at least 90% branch coverage.
 
+- **Generation.** For each task, generate K independent solutions from the model under test (K ≥ 100). Filter to the subset that passes the full test suite. Call this the *functional population* F(T, G).
 
-**Task battery.** Select a battery of N programming tasks spanning multiple domains (web applications, data processing, systems programming, cryptographic operations, API design). Each task is defined by a natural-language specification and a test suite with at least 90% branch coverage.
+- **Feature extraction.** For each solution in F(T, G), extract a feature vector encoding structural properties: abstract syntax tree shape and depth, control-flow graph topology, data-flow patterns, library usage, API call sequences, variable naming entropy, cyclomatic complexity, and — critically — the *vulnerability surface*: which CWE categories the solution is potentially exposed to, as determined by static analysis (SAST) and, where feasible, dynamic analysis.
 
-- 
-
-
-**Generation.** For each task, generate K independent solutions from the model under test (K ≥ 100). Filter to the subset that passes the full test suite. Call this the *functional population* F(T, G).
-
-- 
-
-
-**Feature extraction.** For each solution in F(T, G), extract a feature vector encoding structural properties: abstract syntax tree shape and depth, control-flow graph topology, data-flow patterns, library usage, API call sequences, variable naming entropy, cyclomatic complexity, and — critically — the *vulnerability surface*: which CWE categories the solution is potentially exposed to, as determined by static analysis (SAST) and, where feasible, dynamic analysis.
-
-- 
-
-
-**Diversity measurement.** Compute the effective dimensionality of the feature-vector distribution for F(T, G) using the participation ratio of the eigenvalues of the covariance matrix:
+- **Diversity measurement.** Compute the effective dimensionality of the feature-vector distribution for F(T, G) using the participation ratio of the eigenvalues of the covariance matrix:
 
 
 SSDI_raw(T, G) = (Σ λ_i)² / Σ λ_i²
@@ -152,10 +140,7 @@ SSDI_raw(T, G) = (Σ λ_i)² / Σ λ_i²
 
 where λ_i are the eigenvalues of the covariance matrix of the feature vectors. This quantity equals 1 when all outputs are identical (a single eigenvalue dominates) and equals the number of features when outputs are uniformly distributed across all structural dimensions.
 
-- 
-
-
-**Normalization.** Normalize SSDI_raw against a reference population — ideally human-written solutions to the same task collected from diverse sources (competitive programming archives, open-source repositories, textbooks, student submissions). If no human reference population is available, report SSDI_raw as effective dimensionality with bootstrap confidence intervals and mark the task as non-normalized. A synthetic baseline may be included for sensitivity analysis but does not substitute for a reference population of independently produced correct solutions.
+- **Normalization.** Normalize SSDI_raw against a reference population — ideally human-written solutions to the same task collected from diverse sources (competitive programming archives, open-source repositories, textbooks, student submissions). If no human reference population is available, report SSDI_raw as effective dimensionality with bootstrap confidence intervals and mark the task as non-normalized. A synthetic baseline may be included for sensitivity analysis but does not substitute for a reference population of independently produced correct solutions.
 
 
 SSDI(T, G) = SSDI_raw(T, G) / SSDI_raw(T, reference)
@@ -163,15 +148,9 @@ SSDI(T, G) = SSDI_raw(T, G) / SSDI_raw(T, reference)
 
 An SSDI of 1.0 means the model's output diversity matches the reference population. An SSDI below 1.0 means the model's outputs are more concentrated. An SSDI approaching 0 means monoculture.
 
-- 
+- **Vulnerability correlation.** For each pair of solutions in F(T, G), compute the Jaccard similarity of their CWE exposure sets. The *vulnerability correlation coefficient* (VCC) is the mean pairwise Jaccard similarity across the population. A VCC near 0 means each solution has independent failure modes; a VCC near 1 means all solutions fail the same way.
 
-
-**Vulnerability correlation.** For each pair of solutions in F(T, G), compute the Jaccard similarity of their CWE exposure sets. The *vulnerability correlation coefficient* (VCC) is the mean pairwise Jaccard similarity across the population. A VCC near 0 means each solution has independent failure modes; a VCC near 1 means all solutions fail the same way.
-
-- 
-
-
-**Cross-generational tracking.** Repeat the measurement across successive model generations (or successive fine-tuning cycles on corpora with increasing synthetic content). The SSDI trajectory and VCC trajectory across generations constitute the empirical signal of code-domain model collapse. The prediction of this paper is not that every individual model release must show a lower SSDI than its predecessor — real generations may show bumps from mitigation efforts, data refreshes, or architectural changes. The prediction is that, absent diversity-preserving intervention, recursive synthetic saturation produces a declining SSDI trend and a rising VCC trend, while functional pass rate remains stable or improves. The gap between the functional pass rate trajectory and the SSDI trajectory is the *correctness trap* made visible.
+- **Cross-generational tracking.** Repeat the measurement across successive model generations (or successive fine-tuning cycles on corpora with increasing synthetic content). The SSDI trajectory and VCC trajectory across generations constitute the empirical signal of code-domain model collapse. The prediction of this paper is not that every individual model release must show a lower SSDI than its predecessor — real generations may show bumps from mitigation efforts, data refreshes, or architectural changes. The prediction is that, absent diversity-preserving intervention, recursive synthetic saturation produces a declining SSDI trend and a rising VCC trend, while functional pass rate remains stable or improves. The gap between the functional pass rate trajectory and the SSDI trajectory is the *correctness trap* made visible.
 
 
 **Verification condition (∮).** Per the Lagrange Observatory standard (EA-ARK-01 v4.2.7, DOI 10.5281/zenodo.19013315), the measurement must wind both directions: (a) demonstrate that low SSDI predicts high VCC (pattern convergence implies vulnerability correlation), and (b) demonstrate that high VCC is not reducible to trivially shared patterns unrelated to vulnerability (the correlation is in the failure-relevant structure, not in cosmetic similarity). A finding that SSDI and VCC co-vary but that the co-variance is driven by variable naming conventions or comment styles rather than by control-flow and data-flow patterns would satisfy (a) but not (b) and would not confirm the thesis. Both loops must close.

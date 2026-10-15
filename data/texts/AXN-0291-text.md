@@ -92,58 +92,16 @@ The current moment adds a new proxy on top of the inherited stack: provenance to
 The pattern repeats across domains:
 
 
-Domain
-Substantive question
-Proxy actually used
-Unfired evaluator
-
-
-Generative search
-Is this claim substantively useful and sound?
-Provenance topology, authority signals, composition eligibility
-Model evaluation of retrieved materials
-
-
-Peer review
-Is this paper rigorous, novel, significant?
-Journal hierarchy, reviewer availability, triage signals
-Multi-model manuscript evaluation with human adjudication
-
-
-Research funding
-Is this proposal promising and well-designed?
-Institutional prestige, prior-funding history, panel scarcity
-Model-assisted proposal assessment against explicit rubrics
-
-
-Hiring and tenure
-Has this scholar produced important work?
-Venue prestige, h-index, citation counts, affiliation
-Corpus-level substantive evaluation
-
-
-Public knowledge curation
-Is this concept real, useful, emergent?
-Wikidata presence, media pickup, source reputation
-Content-first entity and concept assessment
-
-
-Journalism
-Is this story accurate and consequential?
-Outlet brand, byline reputation, platform trust scores
-Direct assessment of evidence and argument
-
-
-Medicine
-Is this clinical insight valid?
-Journal impact factor, guideline inclusion, institutional source
-Reading the case series, evaluating the methodology
-
-
-Law
-Is this brief's argument sound?
-Court level, firm prestige, clerkship pedigree
-Reading the brief, assessing the reasoning
+| Domain | Substantive question | Proxy actually used | Unfired evaluator |
+| ---|---|---|--- |
+| Generative search | Is this claim substantively useful and sound? | Provenance topology, authority signals, composition eligibility | Model evaluation of retrieved materials |
+| Peer review | Is this paper rigorous, novel, significant? | Journal hierarchy, reviewer availability, triage signals | Multi-model manuscript evaluation with human adjudication |
+| Research funding | Is this proposal promising and well-designed? | Institutional prestige, prior-funding history, panel scarcity | Model-assisted proposal assessment against explicit rubrics |
+| Hiring and tenure | Has this scholar produced important work? | Venue prestige, h-index, citation counts, affiliation | Corpus-level substantive evaluation |
+| Public knowledge curation | Is this concept real, useful, emergent? | Wikidata presence, media pickup, source reputation | Content-first entity and concept assessment |
+| Journalism | Is this story accurate and consequential? | Outlet brand, byline reputation, platform trust scores | Direct assessment of evidence and argument |
+| Medicine | Is this clinical insight valid? | Journal impact factor, guideline inclusion, institutional source | Reading the case series, evaluating the methodology |
+| Law | Is this brief's argument sound? | Court level, firm prestige, clerkship pedigree | Reading the brief, assessing the reasoning |
 
 
 The same structural choice recurs in each domain: a lower-resolution proxy system is kept upstream of a higher-resolution evaluator. The proxy decides what is worth reading; the substantive evaluator, if it operates at all, reads only what the proxy has already approved. The substantive evaluation is downstream and decorative; the proxy is upstream and determinative.
@@ -591,39 +549,14 @@ This paper does not adjudicate the consciousness question. It does observe that 
 Every proposal to change a knowledge-governance system raises objections. The standard objections to content-first evaluation are real. They are also less serious than the objections that apply to the current proxy regime, when the two systems are compared on the same dimensions.
 
 
-Risk
-Content-first evaluation
-Current proxy regime
-
-
-Gaming
-Actors will optimize for model evaluators (adversarial prompts, stylometric mimicry, rubric-targeted writing).
-Actors already optimize for citation networks, journal prestige, h-index manipulation, institutional affiliation cultivation. Industrial paper mills produce synthetic publications at scale. The proxy regime is the gaming.
-
-
-Evaluator bias
-Models inherit training-data biases; a model trained predominantly on institutional scholarship may discount non-institutional work even on substance.
-Peer reviewers, editorial boards, and tenure committees inherit institutional, demographic, and disciplinary biases that have been documented extensively for decades.
-
-
-Capture
-A specific model could become the de facto evaluator; its biases become the de facto standard.
-Specific journals, specific metrics, specific institutions are already de facto standards. The concentration exists; the question is whether to reproduce it.
-
-
-Governance vacuum
-Who decides the rubrics, trains the evaluator, audits its biases?
-Who decides ranking algorithms, peer-review norms, tenure criteria? The current governance is opaque, proprietary, and largely unaccountable.
-
-
-False confidence
-Models can be confidently wrong; users may over-trust the output.
-Proxy signals are routinely confidently wrong — high-impact journals publish retractions, citation networks track influence not validity, institutional prestige tracks history not current work.
-
-
-Rubric capture
-The categories of evaluation themselves can be controlled by vendors, institutions, or model providers, reproducing institutional bias through the *categories* rather than through provenance.
-The categories of proxy evaluation — what counts as a top journal, what counts as influence, what counts as institutional credibility — are entirely captured by the same actors.
+| Risk | Content-first evaluation | Current proxy regime |
+| ---|---|--- |
+| Gaming | Actors will optimize for model evaluators (adversarial prompts, stylometric mimicry, rubric-targeted writing). | Actors already optimize for citation networks, journal prestige, h-index manipulation, institutional affiliation cultivation. Industrial paper mills produce synthetic publications at scale. The proxy regime is the gaming. |
+| Evaluator bias | Models inherit training-data biases; a model trained predominantly on institutional scholarship may discount non-institutional work even on substance. | Peer reviewers, editorial boards, and tenure committees inherit institutional, demographic, and disciplinary biases that have been documented extensively for decades. |
+| Capture | A specific model could become the de facto evaluator; its biases become the de facto standard. | Specific journals, specific metrics, specific institutions are already de facto standards. The concentration exists; the question is whether to reproduce it. |
+| Governance vacuum | Who decides the rubrics, trains the evaluator, audits its biases? | Who decides ranking algorithms, peer-review norms, tenure criteria? The current governance is opaque, proprietary, and largely unaccountable. |
+| False confidence | Models can be confidently wrong; users may over-trust the output. | Proxy signals are routinely confidently wrong — high-impact journals publish retractions, citation networks track influence not validity, institutional prestige tracks history not current work. |
+| Rubric capture | The categories of evaluation themselves can be controlled by vendors, institutions, or model providers, reproducing institutional bias through the _categories_ rather than through provenance. | The categories of proxy evaluation — what counts as a top journal, what counts as influence, what counts as institutional credibility — are entirely captured by the same actors. |
 
 
 The pattern across rows is consistent: every risk that applies to content-first evaluation also applies, in equal or worse form, to the proxy regime. The comparative question is not whether content-first evaluation is perfect — it is not — but whether it is *better than the current system on the dimensions that matter*. The argument here is that it is, in measurable respects, on every dimension where comparison is possible.

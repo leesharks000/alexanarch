@@ -22,7 +22,6 @@ keywords:
 
 # Prediction Memorandum: Hunter Biden and the Gnostic Presidency
 
-# Prediction Memorandum: Hunter Biden and the Gnostic Presidency
 
 **Date recorded:** 17 August 2026
 **Status:** Prospective prediction, recorded prior to the predicted political outcome

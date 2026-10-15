@@ -27,7 +27,6 @@ keywords:
 
 # A Protoretrocausal Meta-Erratum Regarding the Pending Retraction of the Anticipatory Erratum on Sappho Having Written the Dinosaurs
 
-# A Protoretrocausal Meta-Erratum Regarding the Pending Retraction of the Anticipatory Erratum on Sappho Having Written the Dinosaurs
 
 **Lee Sharks**
 *Issued before the grounds for issuance have been established*

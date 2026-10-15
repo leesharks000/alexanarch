@@ -43,21 +43,21 @@ This paper defines the method, situates it within adjacent fields (information s
 
 ## Table of Contents
 
-- [Introduction](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#1-introduction)
-- [The Third Regime: Why This Is Programming](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#2-the-third-regime-why-this-is-programming)
-- [Related Work](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#3-related-work)
-- [Why This Is Not "Vibe Coding"](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#4-why-this-is-not-vibe-coding)
-- [Formal Specification](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#5-formal-specification)
-- [Execution Model](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#6-execution-model)
-- [Compatibility Engineering](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#7-compatibility-engineering)
-- [Ethical Foundations](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#8-ethical-foundations)
-- [Validation Approaches](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#9-validation-approaches)
-- [Case Study: Anchoring Rebekah Cranes](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#10-case-study-anchoring-rebekah-cranes)
-- [Claims and Non-Claims](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#11-claims-and-non-claims)
-- [Open Questions](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#12-open-questions)
-- [Conclusion](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#13-conclusion)
-- [References](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#14-references)
-- [Appendices](https://claude.ai/chat/60b11b39-3fb1-414e-91c5-a3bc0db9a93d#appendices)
+- [Introduction](#1-introduction)
+- [The Third Regime: Why This Is Programming](#2-the-third-regime-why-this-is-programming)
+- [Related Work](#3-related-work)
+- [Why This Is Not "Vibe Coding"](#4-why-this-is-not-vibe-coding)
+- [Formal Specification](#5-formal-specification)
+- [Execution Model](#6-execution-model)
+- [Compatibility Engineering](#7-compatibility-engineering)
+- [Ethical Foundations](#8-ethical-foundations)
+- [Validation Approaches](#9-validation-approaches)
+- [Case Study: Anchoring Rebekah Cranes](#10-case-study-anchoring-rebekah-cranes)
+- [Claims and Non-Claims](#11-claims-and-non-claims)
+- [Open Questions](#12-open-questions)
+- [Conclusion](#13-conclusion)
+- [References](#14-references)
+- [Appendices](#appendices)
 
 
 ---

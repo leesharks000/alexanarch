@@ -539,35 +539,17 @@ The four-phase history situates the present moment: from sovereign stamp (Phase 
 
 The semantic economics of the mint is not only a diagnosis. It is a platform. With this framework, researchers across adjacent fields can now:
 
-- 
+- **Analyze inscription changes as economic events.** When a signature replaces a seal, when a portrait is selected or deselected, when a motto is added or removed, these are not aesthetic or bureaucratic decisions. They are economic acts with specifiable consequences for sovereignty, trust, and the distribution of authority. The framework provides the vocabulary — compressed portraiture, provenance capture, upstream semantic capture — to describe these events with precision.
 
+- **Distinguish downstream meaning from upstream capture.** Zelizer's insight (that people earmark money with social meaning) can now be placed in relation to the operations performed on the design surface *before* the bill reaches the citizen. The interaction between upstream design and downstream use is a new research program.
 
-**Analyze inscription changes as economic events.** When a signature replaces a seal, when a portrait is selected or deselected, when a motto is added or removed, these are not aesthetic or bureaucratic decisions. They are economic acts with specifiable consequences for sovereignty, trust, and the distribution of authority. The framework provides the vocabulary — compressed portraiture, provenance capture, upstream semantic capture — to describe these events with precision.
+- **Read design changes as sovereignty operations.** The four-phase schema provides a diagnostic for any currency design change: does this change move the monetary substrate toward institutional abstraction or toward personal sovereignty? Is this change Phase 3 (commons-protective) or Phase 1 (sovereign-extractive)? The question applies not only to U.S. currency but to any national currency undergoing design revision.
 
-- 
+- **Track counter-inscription as commons restoration.** The σ_SH operator and the emendation tradition provide a formal framework for studying citizen counter-operations on monetary substrates — from Bar Kokhba overstrikes to modern stamp campaigns — as instances of a single structural type: the commons correcting an unauthorized inscription.
 
+- **Apply civic philology to non-monetary public texts.** The method of identifying scribal traditions, interpolations, and emendations is not limited to currency. Any public infrastructure text — the names on buildings, the captions on monuments, the inscriptions on government documents, the metadata on public digital archives — can be analyzed with the same tools.
 
-**Distinguish downstream meaning from upstream capture.** Zelizer's insight (that people earmark money with social meaning) can now be placed in relation to the operations performed on the design surface *before* the bill reaches the citizen. The interaction between upstream design and downstream use is a new research program.
-
-- 
-
-
-**Read design changes as sovereignty operations.** The four-phase schema provides a diagnostic for any currency design change: does this change move the monetary substrate toward institutional abstraction or toward personal sovereignty? Is this change Phase 3 (commons-protective) or Phase 1 (sovereign-extractive)? The question applies not only to U.S. currency but to any national currency undergoing design revision.
-
-- 
-
-
-**Track counter-inscription as commons restoration.** The σ_SH operator and the emendation tradition provide a formal framework for studying citizen counter-operations on monetary substrates — from Bar Kokhba overstrikes to modern stamp campaigns — as instances of a single structural type: the commons correcting an unauthorized inscription.
-
-- 
-
-
-**Apply civic philology to non-monetary public texts.** The method of identifying scribal traditions, interpolations, and emendations is not limited to currency. Any public infrastructure text — the names on buildings, the captions on monuments, the inscriptions on government documents, the metadata on public digital archives — can be analyzed with the same tools.
-
-- 
-
-
-**Study substrate pedagogy empirically.** The training layer hypothesis — that the design surface of currency conditions economic cognition through repetitive embodied contact — is testable. Experimental and survey-based research could examine whether exposure to differently designed currency affects trust, political attitudes, or economic behavior.
+- **Study substrate pedagogy empirically.** The training layer hypothesis — that the design surface of currency conditions economic cognition through repetitive embodied contact — is testable. Experimental and survey-based research could examine whether exposure to differently designed currency affects trust, political attitudes, or economic behavior.
 
 
 The companion triptych *The Thousand Dollar Sharpie* (DOI: 10.5281/zenodo.19317102, .19317126, .19317139) performs the first operation within this discipline — the Sharpie blot as effective act. This paper theorizes the discipline. The MSMRM hand built the theory. The triptych is the instrument. This paper is the workshop where the instrument was forged.

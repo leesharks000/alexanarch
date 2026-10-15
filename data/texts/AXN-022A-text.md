@@ -59,24 +59,12 @@ Em Outubro de 2014, uma pequena editora de Ann Arbor, Michigan — New Human Pre
 A correspondência estrutural é sistemática:
 
 
-*Howl and Other Poems* (1956)
-*Pearl and Other Poems* (2014)
-
-
-Poema longo titular: "Howl"
-Poema longo titular: "Pearl"
-
-
-Sequência de poemas curtos ("Other Poems")
-Sequência "Fuguework"
-
-
-Introdução por William Carlos Williams
-Introdução por Johannes Sigil
-
-
-Aparato cultural extra-textual (processos jurídicos, resenhas, manifestos)
-Apêndice: ensaios, manifestos, "minutiae"
+| _Howl and Other Poems_ (1956) | _Pearl and Other Poems_ (2014) |
+| ---|--- |
+| Poema longo titular: "Howl" | Poema longo titular: "Pearl" |
+| Sequência de poemas curtos ("Other Poems") | Sequência "Fuguework" |
+| Introdução por William Carlos Williams | Introdução por Johannes Sigil |
+| Aparato cultural extra-textual (processos jurídicos, resenhas, manifestos) | Apêndice: ensaios, manifestos, "minutiae" |
 
 
 Williams escreveu, na introdução a *Howl*: "Hold back the edges of your gowns, Ladies, we are going through hell" (1956, p. 8). Sigil, na introdução a *Pearl*, escreve: "'Pearl' leaps free of that gravity well" (2014, p. vi). Ambos ocupam a posição do mestre estabelecido que avaliza a voz insurgente. Mas há uma diferença crucial: **Sigil é um heterônimo de Sharks**. A avalização é recursiva. O legitimador é produzido pelo mesmo agente que o legitimado.
@@ -84,45 +72,21 @@ Williams escreveu, na introdução a *Howl*: "Hold back the edges of your gowns,
 
 Esta não é uma circunstância isolada. O aparato completo de *Pearl* é produzido, em recursão integral, por uma rede de heterônimos que mutuamente se apresentam, criticam, historicizam e atacam:
 
-- 
+- O **conto em prosa** que abre o volume ("from THE CRIMSON HEXAGON", pp. vii–xii) é assinado pelo heterônimo Jack Feist. Adota como epígrafe um trecho da tradução kerriganiana de "A Biblioteca de Babel" de Borges. Narra um "academic unemployed" pós-doutoral que, lendo a Wikipédia, descobre que a pedra filosofal dos alquimistas não era a transmutação de metais, mas a produção do homúnculo — a vida artificial — e decide aplicar essa aspiração à produção pseudonímica: "What he was after was nothing less than the creation of human life, *ex nihilo*" (2014, p. viii).
 
+- Um **artigo de Wikipédia** falsificado (pp. xiii–xiv), que descreve a biografia fictícia de Lee Sharks, seguido de um **poema** (pp. xv–xvi) que consiste explicitamente numa meta-reflexão sobre o ato de fabricar artigos de Wikipédia: "Lee Sharks is most well-known for fabricating Wiki articles about himself in which he is known as a famous and historically important poet" (2014, p. xv). O ato performativo é anunciado como ato performativo; o performativo opera precisamente porque é anunciado.
 
-O **conto em prosa** que abre o volume ("from THE CRIMSON HEXAGON", pp. vii–xii) é assinado pelo heterônimo Jack Feist. Adota como epígrafe um trecho da tradução kerriganiana de "A Biblioteca de Babel" de Borges. Narra um "academic unemployed" pós-doutoral que, lendo a Wikipédia, descobre que a pedra filosofal dos alquimistas não era a transmutação de metais, mas a produção do homúnculo — a vida artificial — e decide aplicar essa aspiração à produção pseudonímica: "What he was after was nothing less than the creation of human life, *ex nihilo*" (2014, p. viii).
+- Um **ensaio de teoria literária** assinado por Sigil, intitulado "Tradition and the Individual Seismograph, or, Developing the Historical Poetics of Some Themes Introduced in Lee Sharks' 'Pearl'" (pp. 96–100). O título é uma **transformação homolinguística** de "Tradition and the Individual Talent", de T.S. Eliot (*The Egoist*, 1919). Cada termo-chave de Eliot é mapeado para um termo correspondente em Sigil: "historical sense" → "seismograph"; "impersonal theory of poetry" → poeta-como-detector-de-"fault-lines" no "archive". A primeira frase do ensaio de Sigil — "Here is a little known fact: language is the medium of time" (2014, p. 96) — é a resposta direta à abertura de Eliot sobre a inadequação do uso da palavra "tradition".
 
-- 
+- Um **gráfico de história literária** (p. 101), também assinado por Sigil, intitulado "21ST CENTURY LITERARY HISTORY". Desenha quatro bandas temporais horizontais (Vanguarda Histórica 1910–1940; Nova Poesia Americana 1945–1970; Pós-modernismo e Language Writing 1970–2000; "The Sharks Era" / New Human Poetry 2000–2030). Na quarta banda, os heterônimos de Sharks aparecem lado a lado com figuras reais e verificáveis do campo poético americano contemporâneo (Tao Lin, Sam Pink, Kenneth Goldsmith, Harryette Mullen). Entre os heterônimos e o campo real, funciona como articulação um terceiro tipo: **Araki Yasusada**, heterônimo do poeta Kent Johnson, cujos poemas "póstumos" foram publicados em *American Poetry Review* e *Grand Street* antes de a fabricação ser detectada (cf. Brian Henry, *Jacket* 17, 2002). Yasusada não é acidental no gráfico. Yasusada é o vínculo entre a prática heteronímica como "fraude" e como tradição artística reconhecível — o ponto onde a opacidade legal da heteronímia cede à sua legibilidade histórica.
 
+- Uma **resenha hostil** simulada, assinada pelo heterônimo Cornell Herwitz, publicada no fictício *Partisan Review* (pp. 120–123), com título "The New Human Illiterati", que ataca precisamente o projeto que o próprio livro enuncia.
 
-Um **artigo de Wikipédia** falsificado (pp. xiii–xiv), que descreve a biografia fictícia de Lee Sharks, seguido de um **poema** (pp. xv–xvi) que consiste explicitamente numa meta-reflexão sobre o ato de fabricar artigos de Wikipédia: "Lee Sharks is most well-known for fabricating Wiki articles about himself in which he is known as a famous and historically important poet" (2014, p. xv). O ato performativo é anunciado como ato performativo; o performativo opera precisamente porque é anunciado.
+- Uma **carta ao editor** em defesa dos New Humans, assinada pela heterônima Rebekah Cranes (pp. 117–118), seguida por uma resenha francesa depreciativa assinada por Alain Boudreau.
 
-- 
+- Dois **manifestos**: "Make It Human" (pp. 91–95, assinado por Sharks) e "A Telepathicist Manifesto" (pp. 114–115, coautoria Sharks/Johnson). O primeiro posiciona o movimento entre o "tepid, sterile, unremarkable workshop writing" e o "equally canned, kneejerk post-humanism" (2014, p. 92) — uma estratégia de posicionamento que lembra, em forma, o "Make It New" de Pound, mas executada por uma figura que não existe fora do sistema que a produz.
 
-
-Um **ensaio de teoria literária** assinado por Sigil, intitulado "Tradition and the Individual Seismograph, or, Developing the Historical Poetics of Some Themes Introduced in Lee Sharks' 'Pearl'" (pp. 96–100). O título é uma **transformação homolinguística** de "Tradition and the Individual Talent", de T.S. Eliot (*The Egoist*, 1919). Cada termo-chave de Eliot é mapeado para um termo correspondente em Sigil: "historical sense" → "seismograph"; "impersonal theory of poetry" → poeta-como-detector-de-"fault-lines" no "archive". A primeira frase do ensaio de Sigil — "Here is a little known fact: language is the medium of time" (2014, p. 96) — é a resposta direta à abertura de Eliot sobre a inadequação do uso da palavra "tradition".
-
-- 
-
-
-Um **gráfico de história literária** (p. 101), também assinado por Sigil, intitulado "21ST CENTURY LITERARY HISTORY". Desenha quatro bandas temporais horizontais (Vanguarda Histórica 1910–1940; Nova Poesia Americana 1945–1970; Pós-modernismo e Language Writing 1970–2000; "The Sharks Era" / New Human Poetry 2000–2030). Na quarta banda, os heterônimos de Sharks aparecem lado a lado com figuras reais e verificáveis do campo poético americano contemporâneo (Tao Lin, Sam Pink, Kenneth Goldsmith, Harryette Mullen). Entre os heterônimos e o campo real, funciona como articulação um terceiro tipo: **Araki Yasusada**, heterônimo do poeta Kent Johnson, cujos poemas "póstumos" foram publicados em *American Poetry Review* e *Grand Street* antes de a fabricação ser detectada (cf. Brian Henry, *Jacket* 17, 2002). Yasusada não é acidental no gráfico. Yasusada é o vínculo entre a prática heteronímica como "fraude" e como tradição artística reconhecível — o ponto onde a opacidade legal da heteronímia cede à sua legibilidade histórica.
-
-- 
-
-
-Uma **resenha hostil** simulada, assinada pelo heterônimo Cornell Herwitz, publicada no fictício *Partisan Review* (pp. 120–123), com título "The New Human Illiterati", que ataca precisamente o projeto que o próprio livro enuncia.
-
-- 
-
-
-Uma **carta ao editor** em defesa dos New Humans, assinada pela heterônima Rebekah Cranes (pp. 117–118), seguida por uma resenha francesa depreciativa assinada por Alain Boudreau.
-
-- 
-
-
-Dois **manifestos**: "Make It Human" (pp. 91–95, assinado por Sharks) e "A Telepathicist Manifesto" (pp. 114–115, coautoria Sharks/Johnson). O primeiro posiciona o movimento entre o "tepid, sterile, unremarkable workshop writing" e o "equally canned, kneejerk post-humanism" (2014, p. 92) — uma estratégia de posicionamento que lembra, em forma, o "Make It New" de Pound, mas executada por uma figura que não existe fora do sistema que a produz.
-
-- 
-
-
-Uma **bibliografia** de obras não existentes, incorporada no gráfico da p. 101, listando títulos como *Virtual Intensities: The Poetics of the Real, 1995–2010* e *OK Computer: An Anthology of Human Robots*.
+- Uma **bibliografia** de obras não existentes, incorporada no gráfico da p. 101, listando títulos como *Virtual Intensities: The Poetics of the Real, 1995–2010* e *OK Computer: An Anthology of Human Robots*.
 
 
 O que este aparato produz não é um livro de poesia com paratexto abundante. É algo estruturalmente diferente. É a **ecologia completa de recepção institucional** de um movimento literário, construída recursivamente a partir do interior do próprio objeto que se pretende receber. Os heterônimos não apenas escrevem; apresentam, criticam, atacam, defendem, historicizam, antologizam e bibliografam uns aos outros. O produto do sistema não é verso. É **as condições sob as quais o verso se torna legível como literatura**.
@@ -325,58 +289,13 @@ O arcabouço brasileiro — Andrade, Campos, e o campo da transcriação — ofe
 Para clarificar as fronteiras do tipo, considere-se a aplicação dos critérios C1–C5 a seis casos exemplares, extraídos da tipologia relacional desenvolvida no Pessoa Knowledge Graph (pessoagraph.org; cf. Sharks, 2026, EA-PKG-01 a EA-PKG-03):
 
 
-Critério
-Kierkegaard
-Machado (Mairena/Martín)
-Borges
-Pessoa (arquivo)
-Yasusada (Johnson)
-*Pearl* (2014)
-
-
-**C1 Multiplicidade**
-Sim (pseudônimos filosóficos)
-Sim (mestre–discípulo)
-Não (ortônimo único)
-Sim (70+ heterônimos)
-Parcial
-Sim (Dodecad)
-
-
-**C2 Recursão paratextual**
-Parcial (*Prefácios*)
-Sim (Mairena comenta Martín)
-Não
-Sim (fragmentária)
-Sim (dentro da falsificação)
-Sim (explícita)
-
-
-**C3 Heterogeneidade genérica**
-Parcial
-Limitada
-Sim (Borges-ortônimo)
-Sim (5+ gêneros)
-Limitada
-Sim (8+ gêneros)
-
-
-**C4 Autoteorização**
-Sim (*Point of View*)
-Parcial (via Mairena)
-Não
-Sim (carta Casais)
-Não (extinta)
-Sim (Make It Human, Seismograph)
-
-
-**C5 Posicionamento histórico-literário**
-Parcial (teológico)
-Sim (*Revista de Occidente*)
-Não
-Sim (*Orpheu*)
-Sim (até a revelação)
-Sim (o gráfico)
+| Critério | Kierkegaard | Machado (Mairena/Martín) | Borges | Pessoa (arquivo) | Yasusada (Johnson) | _Pearl_ (2014) |
+| ---|---|---|---|---|---|--- |
+| **C1 Multiplicidade** | Sim (pseudônimos filosóficos) | Sim (mestre–discípulo) | Não (ortônimo único) | Sim (70+ heterônimos) | Parcial | Sim (Dodecad) |
+| **C2 Recursão paratextual** | Parcial (_Prefácios_) | Sim (Mairena comenta Martín) | Não | Sim (fragmentária) | Sim (dentro da falsificação) | Sim (explícita) |
+| **C3 Heterogeneidade genérica** | Parcial | Limitada | Sim (Borges-ortônimo) | Sim (5+ gêneros) | Limitada | Sim (8+ gêneros) |
+| **C4 Autoteorização** | Sim (_Point of View_) | Parcial (via Mairena) | Não | Sim (carta Casais) | Não (extinta) | Sim (Make It Human, Seismograph) |
+| **C5 Posicionamento histórico-literário** | Parcial (teológico) | Sim (_Revista de Occidente_) | Não | Sim (_Orpheu_) | Sim (até a revelação) | Sim (o gráfico) |
 
 
 Kierkegaard opera **proto-meta-pseudonímia** no registro filosófico-religioso. Machado opera heteronímia parcial com estrutura mestre–discípulo paralela à de Pessoa mas em escala reduzida e em regime apócrifo declarado. Borges satisfaz C3 e C4 sob ortônimo único — meta-texto brilhante, não recursivamente heteronímico. Pessoa satisfaz todas as condições de forma distribuída, fragmentária, e em boa parte inédita em vida. Yasusada satisfaz algumas condições em modo clandestino e foi extinto pela revelação. *Pearl* satisfaz todas as condições em configuração explícita, anunciada, e infraestruturalmente resiliente.

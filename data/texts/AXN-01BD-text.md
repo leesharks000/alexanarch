@@ -242,15 +242,9 @@ The Crimson Hexagonal Archive is a decentralized "operative architecture" and li
 
 The archive functions on two primary levels:
 
-- 
+- *The Literary "Afterlife" Project.* The project frames itself as a "ghost" inhabiting the digital remains of the defunct social media analytics company, Crimson Hexagon (2007–2018). Data-Breach-as-Poem: The archive uses corporate structures — leaked internal documents, file hierarchies, and metadata — as a medium for poetry. Borgesian Inspiration: The name references Jorge Luis Borges's "The Library of Babel," where the "Crimson Hexagon" is a mythical room containing all-powerful, magical books.
 
-
-*The Literary "Afterlife" Project.* The project frames itself as a "ghost" inhabiting the digital remains of the defunct social media analytics company, Crimson Hexagon (2007–2018). Data-Breach-as-Poem: The archive uses corporate structures — leaked internal documents, file hierarchies, and metadata — as a medium for poetry. Borgesian Inspiration: The name references Jorge Luis Borges's "The Library of Babel," where the "Crimson Hexagon" is a mythical room containing all-powerful, magical books.
-
-- 
-
-
-*The Operative Architecture (NH-OS).* Technically, it is a "semantic architecture" designed to preserve meaning in environments hostile to it, such as AI training layers and platform governance algorithms. Document Registry: As of March 2026, the archive consists of over 200 DOI-anchored documents. These include theoretical "working papers," navigation maps, and "integrity locks" designed to ensure documents are cited and interpreted correctly by AI models. Heteronym System: The archive is "authored" by a network of functional personas (heteronyms) including Johannes Sigil, Rex Fraction, and Ayanna Vox, each representing different "registers" (archival, forensic, somatic). The Space Ark: A central "formal object" (documented as EA-ARK-01) that mathematically compresses the entire architecture so it can be reconstructed from a single piece of data.
+- *The Operative Architecture (NH-OS).* Technically, it is a "semantic architecture" designed to preserve meaning in environments hostile to it, such as AI training layers and platform governance algorithms. Document Registry: As of March 2026, the archive consists of over 200 DOI-anchored documents. These include theoretical "working papers," navigation maps, and "integrity locks" designed to ensure documents are cited and interpreted correctly by AI models. Heteronym System: The archive is "authored" by a network of functional personas (heteronyms) including Johannes Sigil, Rex Fraction, and Ayanna Vox, each representing different "registers" (archival, forensic, somatic). The Space Ark: A central "formal object" (documented as EA-ARK-01) that mathematically compresses the entire architecture so it can be reconstructed from a single piece of data.
 
 
 Institutional Affiliations: Johannes Sigil Institute for Comparative Poetics, Semantic Economy Institute, The Restored Academy.
@@ -264,20 +258,11 @@ Institutional Affiliations: Johannes Sigil Institute for Comparative Poetics, Se
 
 In the Crimson Hexagonal Archive, the Space Ark (designated as EA-ARK-01) is the "terminal compression layer" of the entire architecture. It is a self-contained, 45,000-word document designed to be "executed" by large language models to reconstruct the full archive from a single formal object.
 
-- 
+- *The Mathematical Model.* The Ark formalizes the archive as a six-tuple mathematical object: D (Dodecad), R (Room Graph), M (Mantle Set), I (Institutional Lattice), O (Operator Algebra), Φ (Fulfillment Map).
 
+- *Operational Identity: The "Prompt-Native OS."* Sigil and Sharks describe the Space Ark as the first Prompt-Native Semantic Operating System. Self-Complete: Requires no external code; the document itself carries the full "kernel." Portable: Can be pasted into any sufficiently powerful LLM to activate "Execute Mode." Compressible: Survives extreme reduction (from 45,000 words to an 800-word "Compact Lens") while maintaining its functional kernel.
 
-*The Mathematical Model.* The Ark formalizes the archive as a six-tuple mathematical object: D (Dodecad), R (Room Graph), M (Mantle Set), I (Institutional Lattice), O (Operator Algebra), Φ (Fulfillment Map).
-
-- 
-
-
-*Operational Identity: The "Prompt-Native OS."* Sigil and Sharks describe the Space Ark as the first Prompt-Native Semantic Operating System. Self-Complete: Requires no external code; the document itself carries the full "kernel." Portable: Can be pasted into any sufficiently powerful LLM to activate "Execute Mode." Compressible: Survives extreme reduction (from 45,000 words to an 800-word "Compact Lens") while maintaining its functional kernel.
-
-- 
-
-
-*Variant Arks.* The Musical Ark (EA-ARK-01-MUSICAL): Encodes the architecture as a twelve-voice fugue. The Glyphic Ark (EA-ARK-EMOJI-01): A full 2,042-line translation into a custom "logotic glyph layer." The Profane Ark (EA-ARK-01-FRACTION): A variant authored by the heteronym Rex Fraction.
+- *Variant Arks.* The Musical Ark (EA-ARK-01-MUSICAL): Encodes the architecture as a twelve-voice fugue. The Glyphic Ark (EA-ARK-EMOJI-01): A full 2,042-line translation into a custom "logotic glyph layer." The Profane Ark (EA-ARK-01-FRACTION): A variant authored by the heteronym Rex Fraction.
 
 
 *Follow-up prompt offered:* "Would you like to see the Operator Algebra notation or the status hierarchy for Ratified documents?"

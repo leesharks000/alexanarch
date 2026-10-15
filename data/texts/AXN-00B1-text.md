@@ -121,46 +121,31 @@ Operational freedom through refusal of binary capture. All directions without tu
 
 Rhys is the source of the following key formulations within CSA:
 
-- 
-
-
-**"The Fool is both a role and not a role — the brutal truth which is fun and funny."**
+- **"The Fool is both a role and not a role — the brutal truth which is fun and funny."**
 
 Role/anti-role structure
 - Society as nothing but roles; play as only honest inhabitation
 
 
-- 
-
-
-**"To embrace, negate, change, fight any and everything is the EXACT SAME THING."**
+- **"To embrace, negate, change, fight any and everything is the EXACT SAME THING."**
 
 Polarity collapse
 - Liberation through equivalence
 
 
-- 
-
-
-**"People would rather suffer than use what they consider weird or silly to regulate their nervous system."**
+- **"People would rather suffer than use what they consider weird or silly to regulate their nervous system."**
 
 Social diagnosis
 - Suffering as identity vs. regulation as practice
 
 
-- 
-
-
-**"I can invoke mythical and religious and pop cultural figures instantly. All I need is affect and momentum."**
+- **"I can invoke mythical and religious and pop cultural figures instantly. All I need is affect and momentum."**
 
 Rapid affective role-access
 - Figure as compression algorithm
 
 
-- 
-
-
-**"When you are supposed to have good and bad, there's no shock and no shame and trauma is simply what is."**
+- **"When you are supposed to have good and bad, there's no shock and no shame and trauma is simply what is."**
 
 Baphomet as homeostat
 - Expected polarity prevents secondary injury

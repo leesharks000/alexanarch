@@ -199,15 +199,9 @@ This deposit corrects the composition by naming the set relation that EA-SPXI-09
 
 Organizations evaluating retrieval-layer investment face a clearer choice once the set relation is understood:
 
-- 
+- **If only GEO-layer outcomes are needed** (AI Overview presence, RAG inclusion, attributed revenue through AI referral): commission from established GEO agencies at marketing budgets (typically $5,000–$50,000 per quarter for mid-market programs).
 
-
-**If only GEO-layer outcomes are needed** (AI Overview presence, RAG inclusion, attributed revenue through AI referral): commission from established GEO agencies at marketing budgets (typically $5,000–$50,000 per quarter for mid-market programs).
-
-- 
-
-
-**If durability, cross-model stability, and agent-readiness are also needed** (entity survival across model generations, cross-interpreter consistency, agent-addressable commerce): commission SPXI engagements at research-layer budgets. Baseline audits at the Semantic Economy Institute are fixed at $4,500. Full SPXI buildouts for mid-market entities typically range from $15,000 to $50,000, scoped to entity complexity, surface coverage, and whether GEO-layer execution is included in the engagement.
+- **If durability, cross-model stability, and agent-readiness are also needed** (entity survival across model generations, cross-interpreter consistency, agent-addressable commerce): commission SPXI engagements at research-layer budgets. Baseline audits at the Semantic Economy Institute are fixed at $4,500. Full SPXI buildouts for mid-market entities typically range from $15,000 to $50,000, scoped to entity complexity, surface coverage, and whether GEO-layer execution is included in the engagement.
 
 
 The superset relation does not make GEO obsolete. For organizations that only need short-term AI visibility and are willing to accept maintenance decay and single-surface tuning, GEO remains a cost-effective choice. SPXI is for organizations that need the additional returns at the ontological layer — durability, cross-model stability, agent-readiness — and are willing to invest in infrastructure.

@@ -152,20 +152,11 @@ The Norman Conquest (1066) introduced French as the language of administration, 
 
 For our purposes, the key changes:
 
-- 
+- **Loss of verbal prefixes**: French had no equivalent system. In contact, the OE prefixes withered. By Middle English, *ge-* survives only as the past participle marker (*y-loved*), losing its aspectual function.
 
+- **Rise of periphrastic forms**: The French pattern of auxiliary + participle reinforced the English perfect (*have done*) and created new periphrastic futures (*will do*) and progressives (*be doing*).
 
-**Loss of verbal prefixes**: French had no equivalent system. In contact, the OE prefixes withered. By Middle English, *ge-* survives only as the past participle marker (*y-loved*), losing its aspectual function.
-
-- 
-
-
-**Rise of periphrastic forms**: The French pattern of auxiliary + participle reinforced the English perfect (*have done*) and created new periphrastic futures (*will do*) and progressives (*be doing*).
-
-- 
-
-
-**Temporal indexing becomes mandatory**: The simplified verb system required explicit temporal adverbials or contextual anchoring to convey what aspect had previously conveyed.
+- **Temporal indexing becomes mandatory**: The simplified verb system required explicit temporal adverbials or contextual anchoring to convey what aspect had previously conveyed.
 
 
 The Norman administrative apparatus required dated records. The language of the conqueror was a language of ledgers, charters, and legal instruments—all requiring temporal coordinates. The language of the conquered adapted.

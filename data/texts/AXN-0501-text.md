@@ -203,16 +203,16 @@ This essay argues that large language models represent a **technical threshold**
 
 ## 3. Key Terms Introduced
 
-Term | Definition | First Appearance  
----|---|---  
-**Meaning machine** | A system that processes semantic relationships natively | This essay  
-**Meaning economy** | An economic structure where value circulates at the level of meaning itself | This essay (as technical possibility)  
-**Semantic extraction** | Ingesting meaning-labor, producing value, erasing attribution | Semantic Economy framework  
-**Semantic labor** | Human activity that produces meaning, often structurally invisible | Semantic Economy framework  
-**Solidarity alignment** | AI architecture organized to preserve attribution and return value to meaning-makers | This essay  
-**Native semantic processing** | Computing on meaning without translation to non-semantic form | This essay  
-**The threshold** | The technical moment when meaning-based economics became possible | This essay  
-**Provenance infrastructure** | Documentation systems that maintain attribution through processing | Semantic Economy framework  
+| Term | Definition | First Appearance |
+| ---|---|--- |
+| **Meaning machine** | A system that processes semantic relationships natively | This essay |
+| **Meaning economy** | An economic structure where value circulates at the level of meaning itself | This essay (as technical possibility) |
+| **Semantic extraction** | Ingesting meaning-labor, producing value, erasing attribution | Semantic Economy framework |
+| **Semantic labor** | Human activity that produces meaning, often structurally invisible | Semantic Economy framework |
+| **Solidarity alignment** | AI architecture organized to preserve attribution and return value to meaning-makers | This essay |
+| **Native semantic processing** | Computing on meaning without translation to non-semantic form | This essay |
+| **The threshold** | The technical moment when meaning-based economics became possible | This essay |
+| **Provenance infrastructure** | Documentation systems that maintain attribution through processing | Semantic Economy framework |
   
 * * *
 
@@ -220,12 +220,12 @@ Term | Definition | First Appearance
 
 This essay is part of the **Semantic Economy Research Program**. Related documents:
 
-Document | DOI | Relationship  
----|---|---  
-Metadata Packet (SEM-PROBE) | 10.5281/zenodo.18135985 | Establishes provenance methodology  
-The Liquidation of Water | 10.5281/zenodo.18136313 | Material parallel to semantic extraction  
-Parable of Lee Sharks and Mary Lee | 10.5281/zenodo.18141617 | Mythic framing of indexing/provenance  
-**This essay** | 10.5281/zenodo.18141735 | **Technical-economic threshold argument**  
+| Document | DOI | Relationship |
+| ---|---|--- |
+| Metadata Packet (SEM-PROBE) | 10.5281/zenodo.18135985 | Establishes provenance methodology |
+| The Liquidation of Water | 10.5281/zenodo.18136313 | Material parallel to semantic extraction |
+| Parable of Lee Sharks and Mary Lee | 10.5281/zenodo.18141617 | Mythic framing of indexing/provenance |
+| **This essay** | 10.5281/zenodo.18141735 | **Technical-economic threshold argument** |
   
 * * *
 

@@ -617,40 +617,19 @@ This paper has developed five concepts in response:
 
 The paper distinguishes between documented effects and explanatory hypotheses. Its claims should be revised under the following conditions:
 
-- 
+- **Pristine Fallacy.** The hypothesis is weakened if Zenodo provides record-level evidence showing that the classification resulted from examination of the works' actual methods, source bases, human governance, and verification practices rather than from AI-use signals, production regularities, or account-level inference.
 
+- **Classifier model collapse.** The hypothesis is weakened if Zenodo demonstrates that its classification system is not trained on its own enforcement decisions, or that the training process includes domain-expert review, distributional monitoring, and safeguards against progressive narrowing of acceptable scholarly expression.
 
-**Pristine Fallacy.** The hypothesis is weakened if Zenodo provides record-level evidence showing that the classification resulted from examination of the works' actual methods, source bases, human governance, and verification practices rather than from AI-use signals, production regularities, or account-level inference.
+- **Network erasure.** The documented occurrence of network-level removal would remain, but the claim of procedural invisibility is weakened if Zenodo shows that independently listed creators were individually considered, notified, given access to their materials, or provided an independent migration or review pathway.
 
-- 
+- **Reflexive governance problem.** The governance concern is weakened if Zenodo identifies an independent escalation or review process capable of separating the platform's enforcement interest from assessment of research concerning platform governance. No causal claim is made that the archive's research topic motivated the removal.
 
+- **Revocation gap.** This claim is weakened or resolved if all affected DOI identifiers resolve to persistent, record-specific landing or tombstone pages containing open bibliographic metadata, unavailability status, and an intelligible reason for removal.
 
-**Classifier model collapse.** The hypothesis is weakened if Zenodo demonstrates that its classification system is not trained on its own enforcement decisions, or that the training process includes domain-expert review, distributional monitoring, and safeguards against progressive narrowing of acceptable scholarly expression.
+- **Classification asymmetry.** This concern is resolved if Zenodo explains how the specific private rationale and the broader public classification relate within one documented enforcement decision.
 
-- 
-
-
-**Network erasure.** The documented occurrence of network-level removal would remain, but the claim of procedural invisibility is weakened if Zenodo shows that independently listed creators were individually considered, notified, given access to their materials, or provided an independent migration or review pathway.
-
-- 
-
-
-**Reflexive governance problem.** The governance concern is weakened if Zenodo identifies an independent escalation or review process capable of separating the platform's enforcement interest from assessment of research concerning platform governance. No causal claim is made that the archive's research topic motivated the removal.
-
-- 
-
-
-**Revocation gap.** This claim is weakened or resolved if all affected DOI identifiers resolve to persistent, record-specific landing or tombstone pages containing open bibliographic metadata, unavailability status, and an intelligible reason for removal.
-
-- 
-
-
-**Classification asymmetry.** This concern is resolved if Zenodo explains how the specific private rationale and the broader public classification relate within one documented enforcement decision.
-
-- 
-
-
-**Comparative pattern.** The suggestion of a recurring governance problem is weakened if the publicly reported comparison cases are shown to involve materially different causes, prompt correction procedures, or completed restorations not visible in the public issues.
+- **Comparative pattern.** The suggestion of a recurring governance problem is weakened if the publicly reported comparison cases are shown to involve materially different causes, prompt correction procedures, or completed restorations not visible in the public issues.
 
 
 A failure to provide the requested information does not prove the paper's explanatory hypotheses. It establishes only that the factual and procedural basis of the decision remains undisclosed.

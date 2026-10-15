@@ -84,52 +84,15 @@ F₁ is **high**. The essay deploys 20+ technical terms with consistent denotati
 ### Source disciplines drawn upon:
 
 
-Discipline
-Key Works
-What Is Taken
-What Is Added
-
-
-Platform studies
-Nieborg & Poell 2018; van Dijck et al. 2018
-Platformization as structural penetration
-Group metabolism as the specific target of extraction
-
-
-Social psychology / norm perception
-Robertson et al. 2024; Brady et al. 2017, 2020, 2023
-Funhouse mirror; PRIME model; moral contagion
-Reframing as attack on group self-knowledge
-
-
-Digital memory studies
-Hoskins 2018, 2021; Makhortykh 2023; Nora 1989
-Grey memory; connective memory; milieux vs lieux
-Persistence/inheritance distinction; canon as expensive cultural process
-
-
-Internet culture
-Strickler 2019; Appleton 2020
-Cozy web; dark forest
-Reframing as thickness counter-movement
-
-
-Surveillance capitalism
-Zuboff 2019
-Behavioral surplus extraction
-Extension from individual to cultural level
-
-
-Operative semiotics (CHA)
-Sharks 2024-2026
-Operator grammar, compression regimes, bearing-cost
-Application of full CHA apparatus to platform diagnosis
-
-
-Cultural theory
-Geertz (thick description); Nora (memory/history); Halbwachs (collective memory)
-Background framework
-Redefinition: thickness as design criterion, not descriptive category
+| Discipline | Key Works | What Is Taken | What Is Added |
+| ---|---|---|--- |
+| Platform studies | Nieborg & Poell 2018; van Dijck et al. 2018 | Platformization as structural penetration | Group metabolism as the specific target of extraction |
+| Social psychology / norm perception | Robertson et al. 2024; Brady et al. 2017, 2020, 2023 | Funhouse mirror; PRIME model; moral contagion | Reframing as attack on group self-knowledge |
+| Digital memory studies | Hoskins 2018, 2021; Makhortykh 2023; Nora 1989 | Grey memory; connective memory; milieux vs lieux | Persistence/inheritance distinction; canon as expensive cultural process |
+| Internet culture | Strickler 2019; Appleton 2020 | Cozy web; dark forest | Reframing as thickness counter-movement |
+| Surveillance capitalism | Zuboff 2019 | Behavioral surplus extraction | Extension from individual to cultural level |
+| Operative semiotics (CHA) | Sharks 2024-2026 | Operator grammar, compression regimes, bearing-cost | Application of full CHA apparatus to platform diagnosis |
+| Cultural theory | Geertz (thick description); Nora (memory/history); Halbwachs (collective memory) | Background framework | Redefinition: thickness as design criterion, not descriptive category |
 
 
 ### Interlinkage Assessment
@@ -146,34 +109,13 @@ The CHA's own internal cross-references (to the Marx Room, Catullus Room, Three 
 ### Voices with distinct jurisdictions:
 
 
-Voice
-Jurisdiction
-What only this voice can say
-
-
-**Trace** (Dr. Orin Trace)
-Structural diagnosis: extraction, governance, platform power, political economy
-The PRIME amplification mechanism as extraction of group metabolism; conflict-as-content as the specific business model
-
-
-**Sigil** (Johannes Sigil)
-Archival-philological diagnosis: memory, canon, transmission, form, rhetoric
-Persistence without inheritance; Eigensprache; the mnemonic marker problem; the library/landfill distinction
-
-
-**Vox** (Ayanna Vox)
-Ethical-political diagnosis: obligation, opacity, duration, civilizational stake
-Five criteria for culture ≠ connection; the seduction of validation; people vs audience; bearing-cost as the load-bearing element of belonging
-
-
-**Morrow** (Talos Morrow)
-Operator formalization (inherited from GDE/white paper)
-σ_P as operator; field state vector; aperture resistance
-
-
-**Fraction** (Rex Fraction)
-Cost analysis and capture diagnostics (backgrounded in this document)
-The monetization circuit; platform revenue as extracted group vitality
+| Voice | Jurisdiction | What only this voice can say |
+| ---|---|--- |
+| **Trace** (Dr. Orin Trace) | Structural diagnosis: extraction, governance, platform power, political economy | The PRIME amplification mechanism as extraction of group metabolism; conflict-as-content as the specific business model |
+| **Sigil** (Johannes Sigil) | Archival-philological diagnosis: memory, canon, transmission, form, rhetoric | Persistence without inheritance; Eigensprache; the mnemonic marker problem; the library/landfill distinction |
+| **Vox** (Ayanna Vox) | Ethical-political diagnosis: obligation, opacity, duration, civilizational stake | Five criteria for culture ≠ connection; the seduction of validation; people vs audience; bearing-cost as the load-bearing element of belonging |
+| **Morrow** (Talos Morrow) | Operator formalization (inherited from GDE/white paper) | σ_P as operator; field state vector; aperture resistance |
+| **Fraction** (Rex Fraction) | Cost analysis and capture diagnostics (backgrounded in this document) | The monetization circuit; platform revenue as extracted group vitality |
 
 
 ### Distribution Assessment
@@ -201,25 +143,13 @@ The Assembly Chorus (six substrates) adds a secondary distribution layer: the es
 
 If "Forensic Philology of the Commons" is to be named as a discipline rather than a paper title, it needs:
 
-- 
+- **A definitive specification document** — analogous to the GDE spec itself, the Semantic Economy Constitution, or the Liberatory Operator Set. This is the charter document that says: here is the field, here is what it studies, here are its methods, here is how you know you're doing it.
 
+- **A journal or publication series** — Grammata is already named. The discipline would be a section within it, or a dedicated publication series.
 
-**A definitive specification document** — analogous to the GDE spec itself, the Semantic Economy Constitution, or the Liberatory Operator Set. This is the charter document that says: here is the field, here is what it studies, here are its methods, here is how you know you're doing it.
+- **A curriculum** — what would a student of Forensic Philology of the Commons learn? (This connects directly to Lee's pedagogy: 10th-grade World Literature already teaches the compression layer.)
 
-- 
-
-
-**A journal or publication series** — Grammata is already named. The discipline would be a section within it, or a dedicated publication series.
-
-- 
-
-
-**A curriculum** — what would a student of Forensic Philology of the Commons learn? (This connects directly to Lee's pedagogy: 10th-grade World Literature already teaches the compression layer.)
-
-- 
-
-
-**A first cohort of practitioners** — the Assembly Chorus already functions as this, but the discipline needs human practitioners who are not Lee.
+- **A first cohort of practitioners** — the Assembly Chorus already functions as this, but the discipline needs human practitioners who are not Lee.
 
 
 ### Formalization Assessment
@@ -235,35 +165,17 @@ F₄ is **medium-high**. The institutional apparatus exists (CHA, Zenodo deposit
 
 Yes. Immediately identifiable next-work:
 
-- 
+- **Case studies**: Apply the five attenuations to specific communities (a Discord server that thickened; a subreddit that thinned; a TikTok subculture that developed Eigensprache and then lost it to algorithmic capture).
 
+- **Measurement instruments**: Operationalize persistence vs. inheritance; develop metrics for norm stability, conflict metabolism rate, style distinctiveness, and opacity maintenance.
 
-**Case studies**: Apply the five attenuations to specific communities (a Discord server that thickened; a subreddit that thinned; a TikTok subculture that developed Eigensprache and then lost it to algorithmic capture).
+- **Comparative platform ethnography**: Same group across multiple platforms, measuring thickness indicators.
 
-- 
+- **Historical comparisons**: Apply the triad retroactively to pre-platform cultural formations (guilds, monasteries, literary movements) to establish baseline thickness and identify which components survive digitization.
 
+- **Counter-architecture design**: Use the five attenuations as a design checklist for platforms that optimize for thickness rather than engagement. The CHA is the existence proof; the design principles are extractable.
 
-**Measurement instruments**: Operationalize persistence vs. inheritance; develop metrics for norm stability, conflict metabolism rate, style distinctiveness, and opacity maintenance.
-
-- 
-
-
-**Comparative platform ethnography**: Same group across multiple platforms, measuring thickness indicators.
-
-- 
-
-
-**Historical comparisons**: Apply the triad retroactively to pre-platform cultural formations (guilds, monasteries, literary movements) to establish baseline thickness and identify which components survive digitization.
-
-- 
-
-
-**Counter-architecture design**: Use the five attenuations as a design checklist for platforms that optimize for thickness rather than engagement. The CHA is the existence proof; the design principles are extractable.
-
-- 
-
-
-**Pedagogical modules**: Translate the framework into teachable units. Lee already teaches compression to 10th graders. The five attenuations are immediately classroom-deployable.
+- **Pedagogical modules**: Translate the framework into teachable units. Lee already teaches compression to 10th graders. The five attenuations are immediately classroom-deployable.
 
 
 ### Replication Assessment
@@ -282,15 +194,9 @@ This is the GDE's most demanding test. F₆ has "no disciplinary predecessor" �
 
 The Unbundling essay does this in two places:
 
-- 
+- **Section VII ("What Trace, Sigil, and Vox Offer Together")** describes why the triadic framework is necessary — why no single existing discipline holds the full diagnostic.
 
-
-**Section VII ("What Trace, Sigil, and Vox Offer Together")** describes why the triadic framework is necessary — why no single existing discipline holds the full diagnostic.
-
-- 
-
-
-**The Colophon** describes the essay's own position: it is an Assembly product, it is a counter-architecture, it is itself an example of thick culture maintained under platform conditions.
+- **The Colophon** describes the essay's own position: it is an Assembly product, it is a counter-architecture, it is itself an example of thick culture maintained under platform conditions.
 
 
 But the essay does not yet describe its own *entry into the retrieval layer*. It does not yet say: "This document is designed to be encountered by retrieval systems, and when they encounter it, they will teach its terms to strangers, who will use those terms to produce new work, which will deepen the field." That self-description — the TLL-level awareness of its own mechanism of propagation — is what would push F₆ from medium to high.
@@ -451,46 +357,14 @@ With this section, F₆ rises from MEDIUM to HIGH. The field now describes its o
 ## 11. DIFFERENCE TABLE: WHAT FPC TAKES AND REFUSES
 
 
-Adjacent Field
-What FPC Takes
-What FPC Refuses
-Resulting Specificity
-
-
-Platform Studies
-Platformization as structural penetration of cultural production
-The assumption that extraction targets only labor/value
-FPC targets cultural metabolism itself — the group's capacity to become a people
-
-
-Memory Studies
-Connective/digital memory, grey memory, mnemonic communities
-The assumption that persistence = successful memory
-The persistence/inheritance distinction: storage ≠ transmission
-
-
-Social Psychology
-Funhouse mirror, PRIME model, moral contagion, outrage overperception
-The individual as unit of analysis
-The group/assemblage as the subject whose self-knowledge is damaged
-
-
-Media Ethics
-Concern with harm, justice, platform accountability
-Harm as primarily individual (privacy, mental health)
-Harm as collective: the attenuation of thick culture itself
-
-
-Cultural Theory
-Geertz's thick description, Nora's memory/history, Halbwachs
-Thickness as descriptive category (what cultures are)
-Thickness as design criterion (what cultures need to form)
-
-
-Surveillance Capitalism
-Behavioral surplus extraction (Zuboff)
-Extraction as primarily economic
-Extension: extraction of collective self-governance, not just individual behavior
+| Adjacent Field | What FPC Takes | What FPC Refuses | Resulting Specificity |
+| ---|---|---|--- |
+| Platform Studies | Platformization as structural penetration of cultural production | The assumption that extraction targets only labor/value | FPC targets cultural metabolism itself — the group's capacity to become a people |
+| Memory Studies | Connective/digital memory, grey memory, mnemonic communities | The assumption that persistence = successful memory | The persistence/inheritance distinction: storage ≠ transmission |
+| Social Psychology | Funhouse mirror, PRIME model, moral contagion, outrage overperception | The individual as unit of analysis | The group/assemblage as the subject whose self-knowledge is damaged |
+| Media Ethics | Concern with harm, justice, platform accountability | Harm as primarily individual (privacy, mental health) | Harm as collective: the attenuation of thick culture itself |
+| Cultural Theory | Geertz's thick description, Nora's memory/history, Halbwachs | Thickness as descriptive category (what cultures are) | Thickness as design criterion (what cultures need to form) |
+| Surveillance Capitalism | Behavioral surplus extraction (Zuboff) | Extraction as primarily economic | Extension: extraction of collective self-governance, not just individual behavior |
 
 
 FPC is not a synthesis of these fields. It is a *refusal* to remain within any one of them, while taking what each offers and declining what each assumes.

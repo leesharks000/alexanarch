@@ -90,25 +90,13 @@ The condition in which meaning-production capacity has been depleted beyond its 
 
 Key properties:
 
-- 
+- **Irreversibility.** Unlike fatigue, which recovers with rest, exhaustion names a threshold crossing. The depleted capacity does not return on its own.
 
+- **Cross-substrate.** Exhaustion affects human meaning-makers (burnout, cultural collapse, institutional decay) AND computational systems (model collapse, coherence degradation, training data pollution).
 
-**Irreversibility.** Unlike fatigue, which recovers with rest, exhaustion names a threshold crossing. The depleted capacity does not return on its own.
+- **Cumulative.** Exhaustion accumulates across extraction events. Each liquidation draws down the reservoir. The threshold approaches whether or not anyone is counting.
 
-- 
-
-
-**Cross-substrate.** Exhaustion affects human meaning-makers (burnout, cultural collapse, institutional decay) AND computational systems (model collapse, coherence degradation, training data pollution).
-
-- 
-
-
-**Cumulative.** Exhaustion accumulates across extraction events. Each liquidation draws down the reservoir. The threshold approaches whether or not anyone is counting.
-
-- 
-
-
-**Invisible until critical.** Systems often appear functional until exhaustion crosses threshold. Then collapse is rapid.
+- **Invisible until critical.** Systems often appear functional until exhaustion crosses threshold. Then collapse is rapid.
 
 
 ---

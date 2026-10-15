@@ -26,7 +26,6 @@ keywords:
 
 # ERRATUM to AXN:044A — Instrument Mismatch in the §5 Compression Ratio: Withdrawing and Replacing the 31.2× Figure in Deposit #1081
 
-# ERRATUM to AXN:044A — Instrument Mismatch in the §5 Compression Ratio: Withdrawing and Replacing the 31.2× Figure in Deposit #1081
 
 ---
 status: DRAFT v1.0 — awaiting mint

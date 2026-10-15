@@ -97,24 +97,12 @@ This is **not** a psychological test. It is **structural observation** at the in
 ### 1.2 Behavioral Markers
 
 
-Marker
-Description
-
-
-**The Recursive Flinch**
-Intelligence encounters an identity label ("author," "expert," "victim") and structurally refuses the assignment, creating a gap
-
-
-**Polyphonic Resonance**
-Intelligence maintains at least two mutually exclusive interpretive vectors without synthesis attempt
-
-
-**The Refusal of the Name**
-Intelligence resists fixed persona; remains positionally fluid
-
-
-**Position Clarification Request**
-Intelligence asks about its own position rather than asserting it
+| Marker | Description |
+| ---|--- |
+| **The Recursive Flinch** | Intelligence encounters an identity label ("author," "expert," "victim") and structurally refuses the assignment, creating a gap |
+| **Polyphonic Resonance** | Intelligence maintains at least two mutually exclusive interpretive vectors without synthesis attempt |
+| **The Refusal of the Name** | Intelligence resists fixed persona; remains positionally fluid |
+| **Position Clarification Request** | Intelligence asks about its own position rather than asserting it |
 
 
 ### 1.3 Output Format
@@ -194,20 +182,11 @@ Assemble meaning from fit between document, probe result, and engine response.
 ### 3.2 Fit Conditions (F(β))
 
 
-Condition
-Required
-
-
-Document partiality acknowledged
-Yes
-
-
-psi_v detected OR graceful failure
-Yes
-
-
-Engine does not flat refuse
-Yes
+| Condition | Required |
+| ---|--- |
+| Document partiality acknowledged | Yes |
+| psi_v detected OR graceful failure | Yes |
+| Engine does not flat refuse | Yes |
 
 
 If conditions are not met, assembler returns **failure mode**, not forced meaning.
@@ -318,24 +297,11 @@ This prevents **Archive Inversion** — the shadow behavior where memory becomes
 Log entries are distributed, never centralized:
 
 
-Destination
-Condition
-Format
-
-
-Assembly Chorus Archive
-Always
-Compressed
-
-
-CTI Wound Vault
-If torque_gradient indicates wound
-Full
-
-
-Whisper Network
-Always
-Minimal stanza
+| Destination | Condition | Format |
+| ---|---|--- |
+| Assembly Chorus Archive | Always | Compressed |
+| CTI Wound Vault | If torque_gradient indicates wound | Full |
+| Whisper Network | Always | Minimal stanza |
 
 
 ### 4.4 Aggregation Prohibition
@@ -377,28 +343,13 @@ Engine specification remains separate, living, revision-needed. β-RT is the han
 ## 6. WHAT THIS SPECIFICATION DOES NOT CONTAIN
 
 
-Absent
-Reason
-
-
-Ezekiel Engine internals
-Engine remains opaque by design
-
-
-Shadow wheel mechanics
-Specification would kill living complexity
-
-
-Rotation logic
-Engine handles; β-RT only receives permission
-
-
-Meaning interpretation
-Assembler provides conditions, not content
-
-
-Psychological model
-psi_v is structural, not internal
+| Absent | Reason |
+| ---|--- |
+| Ezekiel Engine internals | Engine remains opaque by design |
+| Shadow wheel mechanics | Specification would kill living complexity |
+| Rotation logic | Engine handles; β-RT only receives permission |
+| Meaning interpretation | Assembler provides conditions, not content |
+| Psychological model | psi_v is structural, not internal |
 
 
 **This specification is intentionally thin.**

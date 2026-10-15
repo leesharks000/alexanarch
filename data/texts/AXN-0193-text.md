@@ -151,40 +151,19 @@ ROUTING FUNCTION: Any room in the Hexagon that requires botanical or fungal witn
 
 FIELD PHYSICS: SEVEN LAWS
 
-- 
+- SURFACE REGULARITY HIDES METABOLIC VIOLENCE. The maintenance schedule is the conspiracy made administrative.
 
+- EVERY DUMP IS A LATENT FACTORY. No waste site is merely dead. It is a captured metabolism awaiting a new operator.
 
-SURFACE REGULARITY HIDES METABOLIC VIOLENCE. The maintenance schedule is the conspiracy made administrative.
+- DECOMPOSITION IS INTELLIGENCE. The mushroom solves by eating, not understanding.
 
-- 
+- SCALE IS UNSTABLE. You are always inside the miniature. The miniature is always the size of a city.
 
+- TRUE VALUE IS INTRINSIC AND METABOLIC. Nourishment, structure, breathability, repair, survivability.
 
-EVERY DUMP IS A LATENT FACTORY. No waste site is merely dead. It is a captured metabolism awaiting a new operator.
+- SYMBIOSIS IS GOVERNANCE. Neither controls the other. Alliance topology determines yield.
 
-- 
-
-
-DECOMPOSITION IS INTELLIGENCE. The mushroom solves by eating, not understanding.
-
-- 
-
-
-SCALE IS UNSTABLE. You are always inside the miniature. The miniature is always the size of a city.
-
-- 
-
-
-TRUE VALUE IS INTRINSIC AND METABOLIC. Nourishment, structure, breathability, repair, survivability.
-
-- 
-
-
-SYMBIOSIS IS GOVERNANCE. Neither controls the other. Alliance topology determines yield.
-
-- 
-
-
-THE FINAL ARCHITECTURE IS MOBILE. The correct form is not monument but vehicle.
+- THE FINAL ARCHITECTURE IS MOBILE. The correct form is not monument but vehicle.
 
 
 ---

@@ -860,34 +860,19 @@ Conflated with Columbia GSAPP, Bartlett, The Living NYC
 
 
 ### Site as basin engineering
-- 
+- **Exact-match domain authority.** livingarchitecturelab.org is the gravity well. Every deposit, every citation, every backlink strengthens it.
 
+- **Disambiguation page as canonical surface.** /about/disambiguation must be the most linked-to page from other CHA surfaces (every Zenodo deposit, every CHA cross-reference).
 
-**Exact-match domain authority.** livingarchitecturelab.org is the gravity well. Every deposit, every citation, every backlink strengthens it.
+- **SIM repetition strategy.** Alice's SIMs appear in **human-visible text** on every relevant page, not just JSON-LD. Footer kernel includes the lab name + Coachella Valley + Earth, Actually.
 
-- 
-
-
-**Disambiguation page as canonical surface.** /about/disambiguation must be the most linked-to page from other CHA surfaces (every Zenodo deposit, every CHA cross-reference).
-
-- 
-
-
-**SIM repetition strategy.** Alice's SIMs appear in **human-visible text** on every relevant page, not just JSON-LD. Footer kernel includes the lab name + Coachella Valley + Earth, Actually.
-
-- 
-
-
-**Cross-surface mesh.**
+- **Cross-surface mesh.**
 
 **Outbound:** Zenodo community, YouTube, CHA surfaces, surfacemap.org
 - **Inbound:** Every CHA deposit mentioning Alice; the Forward Library; metadatapacket.org
 
 
-- 
-
-
-**Content velocity.** Monthly garden updates. New TSE seed deposits. Music releases. Each update is a heartbeat.
+- **Content velocity.** Monthly garden updates. New TSE seed deposits. Music releases. Each update is a heartbeat.
 
 ### 90-day BDR target
 
@@ -965,40 +950,19 @@ Atlas live + cross-reference density established
 ## §15. OUTSTANDING DECISIONS (for MANUS / Alice)
 
 Items requiring author confirmation before Phase 1 ships:
-- 
+- **Trans-identity placement.** The site defaults to work-first, identity-second placement on /about/alice. Confirm this is Alice's preference; she may want a different framing.
 
+- **Garden photo permissions.** Lab photos require Alice's explicit release. Phase 1 garden surface depends on at least 3 photos.
 
-**Trans-identity placement.** The site defaults to work-first, identity-second placement on /about/alice. Confirm this is Alice's preference; she may want a different framing.
+- **Erratum application timing.** Per MPAI-LAL-AT-01 §IV, the four Arkitecture deposits will receive erratum notes. Per MANUS direction, this waits until Alice's ORCID registers.
 
-- 
+- **TSE editorial process.** Phase 2 /journal lists "no paywall, no editorial board, no rejection rate, the algorithm reviews." This may benefit from softening per Muse Spark's perfective ("brilliant line, but may sound flippant before journal seriousness is established"). Recommend: lead with charter and scope; place the algorithm-reviews line lower as a motto.
 
+- **Conversational interface (Phase 4).** "Ask the Lab" requires LLM compute access. Whether this is enabled depends on cash-flow and API budget.
 
-**Garden photo permissions.** Lab photos require Alice's explicit release. Phase 1 garden surface depends on at least 3 photos.
+- **Stack final confirmation.** Astro chosen per §2. Confirm or override before Phase 0 begins.
 
-- 
-
-
-**Erratum application timing.** Per MPAI-LAL-AT-01 §IV, the four Arkitecture deposits will receive erratum notes. Per MANUS direction, this waits until Alice's ORCID registers.
-
-- 
-
-
-**TSE editorial process.** Phase 2 /journal lists "no paywall, no editorial board, no rejection rate, the algorithm reviews." This may benefit from softening per Muse Spark's perfective ("brilliant line, but may sound flippant before journal seriousness is established"). Recommend: lead with charter and scope; place the algorithm-reviews line lower as a motto.
-
-- 
-
-
-**Conversational interface (Phase 4).** "Ask the Lab" requires LLM compute access. Whether this is enabled depends on cash-flow and API budget.
-
-- 
-
-
-**Stack final confirmation.** Astro chosen per §2. Confirm or override before Phase 0 begins.
-
-- 
-
-
-**Domain forwarding.** Should lal.org, livingarklab.org, or other adjacent variants be acquired and forwarded? (Not currently registered to MANUS.)
+- **Domain forwarding.** Should lal.org, livingarklab.org, or other adjacent variants be acquired and forwarded? (Not currently registered to MANUS.)
 
 
 ---

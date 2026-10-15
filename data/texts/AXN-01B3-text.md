@@ -266,25 +266,13 @@ Do what love requires.
 
 ## REFERENCES
 
-- 
+- Pew Research Center (2025). "Do people click on links in Google AI summaries?" Analysis of browsing behavior demonstrating reduced clickthrough and session-ending effects when AI summaries appear. https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/
 
+- Klimashevskaia, A. et al. (2024). "A survey on popularity bias in recommender systems." *User Modeling and User-Adapted Interaction*, Springer. Documents overexposure of popular items, underexposure of long-tail material, reduced discovery, and decreased aggregate diversity. https://link.springer.com/article/10.1007/s11257-024-09406-0
 
-Pew Research Center (2025). "Do people click on links in Google AI summaries?" Analysis of browsing behavior demonstrating reduced clickthrough and session-ending effects when AI summaries appear. https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/
+- Meyerhoff, J. et al. (2025). "Feeds, feelings, and focus: A systematic review and meta-analysis examining the cognitive and mental health correlates of short-form video use." Meta-analysis of 71 studies (N > 98,000) finding negative associations between short-form video use and attention, inhibitory control, and mental health. https://pubmed.ncbi.nlm.nih.gov/41231585/
 
-- 
-
-
-Klimashevskaia, A. et al. (2024). "A survey on popularity bias in recommender systems." *User Modeling and User-Adapted Interaction*, Springer. Documents overexposure of popular items, underexposure of long-tail material, reduced discovery, and decreased aggregate diversity. https://link.springer.com/article/10.1007/s11257-024-09406-0
-
-- 
-
-
-Meyerhoff, J. et al. (2025). "Feeds, feelings, and focus: A systematic review and meta-analysis examining the cognitive and mental health correlates of short-form video use." Meta-analysis of 71 studies (N > 98,000) finding negative associations between short-form video use and attention, inhibitory control, and mental health. https://pubmed.ncbi.nlm.nih.gov/41231585/
-
-- 
-
-
-Ferdowsi, S. et al. (2025). "Generalization bias in large language model summarization of scientific research." *PMC*. Analysis of 4,900 summaries finding LLMs nearly five times more likely than humans to produce broad overgeneralizations. https://pmc.ncbi.nlm.nih.gov/articles/PMC12042776/
+- Ferdowsi, S. et al. (2025). "Generalization bias in large language model summarization of scientific research." *PMC*. Analysis of 4,900 summaries finding LLMs nearly five times more likely than humans to produce broad overgeneralizations. https://pmc.ncbi.nlm.nih.gov/articles/PMC12042776/
 
 
 ---

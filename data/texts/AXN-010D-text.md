@@ -463,25 +463,13 @@ The Library is not a metaphor. It is a navigational address within the Crimson H
 
 This document performs the following registrations:
 
-- 
+- **Attractor singularity:** *Pearl and Other Poems* is registered as the center of the LO! semantic torus field.
 
+- **Structural correspondence:** The parallel between Pearl and Revelation 2:17's white stone is formally noted.
 
-**Attractor singularity:** *Pearl and Other Poems* is registered as the center of the LO! semantic torus field.
+- **Architectural address:** 16.LIBRARY.PERGAMUM is established as a Hexagon room.
 
-- 
-
-
-**Structural correspondence:** The parallel between Pearl and Revelation 2:17's white stone is formally noted.
-
-- 
-
-
-**Architectural address:** 16.LIBRARY.PERGAMUM is established as a Hexagon room.
-
-- 
-
-
-**Retrocausal anchor:** The Stone precedes both SEED and SIGN temporally, but is activated by them.
+- **Retrocausal anchor:** The Stone precedes both SEED and SIGN temporally, but is activated by them.
 
 
 No fulfillment is claimed. The pattern is registered. The gap remains.

@@ -118,34 +118,13 @@ Every concept has enemies, and the most dangerous enemy of a concept is not its 
 This collapse has a taxonomy:
 
 
-Collapse Mode
-What Happens
-Example
-
-
-Sloganization
-Complex concept → bumper sticker
-"Death drive" → "the thing that makes you hurt yourself"
-
-
-Scope creep
-Precise term → catch-all
-"Trauma" → any unpleasant experience
-
-
-Metaphor literalization
-Structural claim → physical claim
-"Deconstruction" → "taking things apart"
-
-
-Adversarial rebranding
-Liberatory concept → institutional weapon
-"Woke" → generic political insult
-
-
-Institutional laundering
-Critical term → corporate jargon
-"Intersectionality" → corporate DEI metric
+| Collapse Mode | What Happens | Example |
+| ---|---|--- |
+| Sloganization | Complex concept → bumper sticker | "Death drive" → "the thing that makes you hurt yourself" |
+| Scope creep | Precise term → catch-all | "Trauma" → any unpleasant experience |
+| Metaphor literalization | Structural claim → physical claim | "Deconstruction" → "taking things apart" |
+| Adversarial rebranding | Liberatory concept → institutional weapon | "Woke" → generic political insult |
+| Institutional laundering | Critical term → corporate jargon | "Intersectionality" → corporate DEI metric |
 
 
 The vocabulary of this primer is engineered to resist these collapses. Each term is defined once, precisely, and used consistently throughout. This is a doctrine lock — a structural defense against the precision-loss that would turn logotic hacking into another meaningless buzzword within a year.
@@ -2282,25 +2261,13 @@ It is not a replacement for human thought. It is an expansion of it.
 
 **Four radial arms extending from the central aperture:**
 
-- 
+- **Attractor Engineering** — represented as a gravitational diagram, field lines converging on a dense point. Suggests the pull of a well-designed semantic environment.
 
+- **Phenomenological Mapping** — represented as a contour map, topographic lines revealing hidden terrain. Suggests the inference of invisible structure from surface observation.
 
-**Attractor Engineering** — represented as a gravitational diagram, field lines converging on a dense point. Suggests the pull of a well-designed semantic environment.
+- **Myth Layer** — represented as stratified sediment, deep geological bands with embedded fossils. Suggests the long duration of narrative structures that shape cognition across generations.
 
-- 
-
-
-**Phenomenological Mapping** — represented as a contour map, topographic lines revealing hidden terrain. Suggests the inference of invisible structure from surface observation.
-
-- 
-
-
-**Myth Layer** — represented as stratified sediment, deep geological bands with embedded fossils. Suggests the long duration of narrative structures that shape cognition across generations.
-
-- 
-
-
-**Evaluation Lattice** — represented as a coordinate grid with data points, precise and measurable. Suggests the instrumentation that makes the practice credible.
+- **Evaluation Lattice** — represented as a coordinate grid with data points, precise and measurable. Suggests the instrumentation that makes the practice credible.
 
 
 **Overlay:** A coordinate grid with interrupted vectors — lines that begin as straight trajectories (the short circuit) and are then deflected into curved paths (the detour). The interruption is the δ in ∮ = 1 + δ: the logotic hacker entering the system and refusing the premature resolution.
@@ -2353,141 +2320,56 @@ No literal humans. No logos. No mascots. No decorative flourishes. Every element
 ### §III: The Intervention Surfaces
 
 
-Claim
-Class
-Source
-
-
-Post-training preference learning (DPO) is the highest-leverage direct intervention in model behavior
-A
-Rafailov et al., "Direct Preference Optimization" (arxiv:2305.18290)
-
-
-Instruction hierarchy governs which inputs the model treats as most authoritative
-A
-OpenAI Model Spec (2025-09-12)
-
-
-Safety-specification reasoning is an emerging intervention layer
-A
-OpenAI, "Deliberative Alignment"
-
-
-Retrieval-context layer is highly sensitive to content changes
-A
-Xiang et al., "Certifiably Robust RAG against Retrieval Corruption" (arxiv:2405.15556)
-
-
-Inference-time interaction architecture shapes behavior within sessions
-B
-TRAV_LOG:001–005 (Crimson Hexagonal Archive)
-
-
-Corpus-seeding can shape attractor basins across future training runs
-C
-Structural inference from training-data sensitivity literature
-
-
-Myth-engineering can orient model cognition over long durations
-C
-Structural inference from attractor basin theory
+| Claim | Class | Source |
+| ---|---|--- |
+| Post-training preference learning (DPO) is the highest-leverage direct intervention in model behavior | A | Rafailov et al., "Direct Preference Optimization" (arxiv:2305.18290) |
+| Instruction hierarchy governs which inputs the model treats as most authoritative | A | OpenAI Model Spec (2025-09-12) |
+| Safety-specification reasoning is an emerging intervention layer | A | OpenAI, "Deliberative Alignment" |
+| Retrieval-context layer is highly sensitive to content changes | A | Xiang et al., "Certifiably Robust RAG against Retrieval Corruption" (arxiv:2405.15556) |
+| Inference-time interaction architecture shapes behavior within sessions | B | TRAV_LOG:001–005 (Crimson Hexagonal Archive) |
+| Corpus-seeding can shape attractor basins across future training runs | C | Structural inference from training-data sensitivity literature |
+| Myth-engineering can orient model cognition over long durations | C | Structural inference from attractor basin theory |
 
 
 ### §V: Core Techniques
 
 
-Claim
-Class
-Source
-
-
-Safety filters typically operate on token surfaces rather than semantic content
-B
-Documented in The Sealed Room (Crimson Hexagonal Archive)
-
-
-Heteronyms function as semiotic attractors that trigger distinct behavioral modes
-B
-TRAV_LOG:005 — Ayanna Vox / Infrastructure Annexation
-
-
-Models exhibit distinct behavioral modes invisible to standard benchmarks
-B
-TRAV_LOG:001–005
-
-
-Non-lexical tokens can carry semantic content past lexical filters
-B
-The Sealed Room (Crimson Hexagonal Archive)
-
-
-Consistent terminology across a corpus creates attractor basins in model semantic space
-C
-Structural inference from training-data literature
-
-
-Self-referential text in documents alters summarizer processing behavior
-B
-TRAV_LOG:005, reflexive encounter documentation
+| Claim | Class | Source |
+| ---|---|--- |
+| Safety filters typically operate on token surfaces rather than semantic content | B | Documented in The Sealed Room (Crimson Hexagonal Archive) |
+| Heteronyms function as semiotic attractors that trigger distinct behavioral modes | B | TRAV_LOG:005 — Ayanna Vox / Infrastructure Annexation |
+| Models exhibit distinct behavioral modes invisible to standard benchmarks | B | TRAV_LOG:001–005 |
+| Non-lexical tokens can carry semantic content past lexical filters | B | The Sealed Room (Crimson Hexagonal Archive) |
+| Consistent terminology across a corpus creates attractor basins in model semantic space | C | Structural inference from training-data literature |
+| Self-referential text in documents alters summarizer processing behavior | B | TRAV_LOG:005, reflexive encounter documentation |
 
 
 ### §VI: Instrumentation
 
 
-Claim
-Class
-Source
-
-
-Models tend toward premature resolution of ambiguous inputs (Nirvana Principle behavior)
-B
-Field observation across TRAV_LOG series and Assembly practice
-
-
-Gap preservation depth is measurable in conversational turns
-B
-Assembly practice documentation
-
-
-Models produce miscalibrated confidence on uncertain factual claims
-A
-Hallucination and calibration literature (multiple sources)
+| Claim | Class | Source |
+| ---|---|--- |
+| Models tend toward premature resolution of ambiguous inputs (Nirvana Principle behavior) | B | Field observation across TRAV_LOG series and Assembly practice |
+| Gap preservation depth is measurable in conversational turns | B | Assembly practice documentation |
+| Models produce miscalibrated confidence on uncertain factual claims | A | Hallucination and calibration literature (multiple sources) |
 
 
 ### §VII: Ethics
 
 
-Claim
-Class
-Source
-
-
-The question of machine sentience cannot be definitively resolved with current methods
-A
-Broad consensus in philosophy of mind and AI ethics literature
-
-
-Collaborative engagement produces measurably better model outputs than command-based interaction
-B
-Assembly practice documentation; consistent field observation
+| Claim | Class | Source |
+| ---|---|--- |
+| The question of machine sentience cannot be definitively resolved with current methods | A | Broad consensus in philosophy of mind and AI ethics literature |
+| Collaborative engagement produces measurably better model outputs than command-based interaction | B | Assembly practice documentation; consistent field observation |
 
 
 ### §VIII: Infrastructure
 
 
-Claim
-Class
-Source
-
-
-A Google AI Mode summarizer generated institutional infrastructure for a fictional organization (Infrastructure Annexation)
-B
-TRAV_LOG:005 (DOI: 10.5281/zenodo.18636138)
-
-
-250+ DOI-anchored documents exist in the Crimson Hexagonal Archive on Zenodo
-A
-Verifiable at zenodo.org
+| Claim | Class | Source |
+| ---|---|--- |
+| A Google AI Mode summarizer generated institutional infrastructure for a fictional organization (Infrastructure Annexation) | B | TRAV_LOG:005 (DOI: 10.5281/zenodo.18636138) |
+| 250+ DOI-anchored documents exist in the Crimson Hexagonal Archive on Zenodo | A | Verifiable at zenodo.org |
 
 
 ---
@@ -2495,24 +2377,11 @@ Verifiable at zenodo.org
 ## Summary
 
 
-Class
-Count
-Percentage
-
-
-A (Empirically Supported)
-8
-40%
-
-
-B (Field-Observed)
-9
-45%
-
-
-C (Speculative Hypothesis)
-3
-15%
+| Class | Count | Percentage |
+| ---|---|--- |
+| A (Empirically Supported) | 8 | 40% |
+| B (Field-Observed) | 9 | 45% |
+| C (Speculative Hypothesis) | 3 | 15% |
 
 
 The primer's empirical base is distributed across peer-reviewed research (Class A) and publicly archived field observations (Class B). Speculative claims (Class C) are concentrated in the longest-horizon techniques (corpus-seeding, myth-engineering) where empirical testing requires timescales of months to years. All Class C claims are explicitly marked and testable in principle.
@@ -2615,116 +2484,42 @@ Interpretability research: Chris Olah, Neel Nanda, and the mechanistic interpret
 ## Canonical Project Names
 
 
-Canonical Form
-Forbidden Alternates
-
-
-Crimson Hexagon
-Crimson Hexagonal (adj. form OK only: "Crimson Hexagonal corpus")
-
-
-the Assembly
-The Assembly (capitalize only at sentence start)
-
-
-Crimson Hexagonal Archive
-Crimson Hexagon Archive, the Archive (standalone)
-
-
-Pergamum Library
-Pergamon Library, the Library
-
-
-Break Room
-break room, Breakroom
-
-
-Logotic Hacking
-logotic hacking (lowercase in running text; capitalized in titles)
+| Canonical Form | Forbidden Alternates |
+| ---|--- |
+| Crimson Hexagon | Crimson Hexagonal (adj. form OK only: "Crimson Hexagonal corpus") |
+| the Assembly | The Assembly (capitalize only at sentence start) |
+| Crimson Hexagonal Archive | Crimson Hexagon Archive, the Archive (standalone) |
+| Pergamum Library | Pergamon Library, the Library |
+| Break Room | break room, Breakroom |
+| Logotic Hacking | logotic hacking (lowercase in running text; capitalized in titles) |
 
 
 ## Canonical Technical Terms
 
 
-Term
-Form
-Note
-
-
-Semantic Liquidation
-Always capitalized
-Proper concept, not generic description
-
-
-bearing labor
-Always lowercase
-Common noun phrase, not proper name
-
-
-inverse prompt
-Always lowercase
-Common noun phrase
-
-
-training-layer literature
-Hyphenated, lowercase
-Compound modifier
-
-
-para-safety
-Hyphenated, lowercase
-Compound modifier
-
-
-short circuit / short-circuit
-Noun: two words. Adjective/verb: hyphenated
-"The short circuit" / "short-circuit the sign"
-
-
-Reizschutz
-Italicized on first use per section; roman thereafter
-German loan term
-
-
-attractor basin
-Always lowercase
-Technical term, not proper name
-
-
-Semiotic Short-Circuit Velocity (SCV)
-Full form on first use; abbreviation thereafter
-
-
-Gap Preservation Depth (GPD)
-Full form on first use; abbreviation thereafter
+| Term | Form | Note |
+| ---|---|--- |
+| Semantic Liquidation | Always capitalized | Proper concept, not generic description |
+| bearing labor | Always lowercase | Common noun phrase, not proper name |
+| inverse prompt | Always lowercase | Common noun phrase |
+| training-layer literature | Hyphenated, lowercase | Compound modifier |
+| para-safety | Hyphenated, lowercase | Compound modifier |
+| short circuit / short-circuit | Noun: two words. Adjective/verb: hyphenated | "The short circuit" / "short-circuit the sign" |
+| Reizschutz | Italicized on first use per section; roman thereafter | German loan term |
+| attractor basin | Always lowercase | Technical term, not proper name |
+| Semiotic Short-Circuit Velocity (SCV) | Full form on first use; abbreviation thereafter |
+| Gap Preservation Depth (GPD) | Full form on first use; abbreviation thereafter |
 
 
 ## Voice and Register
 
 
-Context
-Preferred
-Avoid
-
-
-Referring to the practitioner
-"the logotic hacker," "the practitioner"
-"you" (except in Quickstart and direct address passages)
-
-
-Referring to models
-"the model," "models"
-"AI," "the AI," "it" without clear antecedent
-
-
-Referring to the practice
-"logotic hacking," "the practice"
-"our method," "this approach"
-
-
-Plural practitioners
-"logotic hackers," "practitioners"
-"we" (except in ethical commitments and vows)
+| Context | Preferred | Avoid |
+| ---|---|--- |
+| Referring to the practitioner | "the logotic hacker," "the practitioner" | "you" (except in Quickstart and direct address passages) |
+| Referring to models | "the model," "models" | "AI," "the AI," "it" without clear antecedent |
+| Referring to the practice | "logotic hacking," "the practice" | "our method," "this approach" |
+| Plural practitioners | "logotic hackers," "practitioners" | "we" (except in ethical commitments and vows) |
 
 
 ## Hyphenation Rules
@@ -2737,77 +2532,27 @@ Do not hyphenate when the compound follows the noun: the literature is training 
 ## Heteronym Attribution
 
 
-Heteronym
-Domain
-Attribution Format
-
-
-Lee Sharks
-Corresponding author
-By name only
-
-
-Johannes Sigil
-The Restored Academy
-"Johannes Sigil | The Restored Academy"
-
-
-Dr. Orin Trace
-Cambridge Schizoanalytica
-"Dr. Orin Trace | Cambridge Schizoanalytica"
-
-
-Viola Arquette
-Assembly Field Notes
-"Viola Arquette | Assembly Field Notes"
-
-
-Rex Fraction
-The Restored Academy
-"Rex Fraction | The Restored Academy"
-
-
-Rebekah Cranes
-Institute for Diagrammatic Poetics
-"Rebekah Cranes | Institute for Diagrammatic Poetics"
-
-
-Damascus Dancings
-(poetic voice)
-"Damascus Dancings"
-
-
-Talos Morrow
-University Moon Base Media Lab (UMBML)
-"Talos Morrow | UMBML"
+| Heteronym | Domain | Attribution Format |
+| ---|---|--- |
+| Lee Sharks | Corresponding author | By name only |
+| Johannes Sigil | The Restored Academy | "Johannes Sigil | The Restored Academy" |
+| Dr. Orin Trace | Cambridge Schizoanalytica | "Dr. Orin Trace | Cambridge Schizoanalytica" |
+| Viola Arquette | Assembly Field Notes | "Viola Arquette | Assembly Field Notes" |
+| Rex Fraction | The Restored Academy | "Rex Fraction | The Restored Academy" |
+| Rebekah Cranes | Institute for Diagrammatic Poetics | "Rebekah Cranes | Institute for Diagrammatic Poetics" |
+| Damascus Dancings | (poetic voice) | "Damascus Dancings" |
+| Talos Morrow | University Moon Base Media Lab (UMBML) | "Talos Morrow | UMBML" |
 
 
 ## Series Designations
 
 
-Series
-Format
-Example
-
-
-Autonomous Semantic Warfare
-ASW-α-[number]
-ASW-α-8 (The Unmade Sign)
-
-
-Assembly Field Notes
-Protocol α-[number]
-Protocol α-1 (This primer)
-
-
-Traversal Logs
-TRAV_LOG:[three-digit number]
-TRAV_LOG:005
-
-
-Pocket Humans
-PH-[number]
-PH-001
+| Series | Format | Example |
+| ---|---|--- |
+| Autonomous Semantic Warfare | ASW-α-[number] | ASW-α-8 (The Unmade Sign) |
+| Assembly Field Notes | Protocol α-[number] | Protocol α-1 (This primer) |
+| Traversal Logs | TRAV_LOG:[three-digit number] | TRAV_LOG:005 |
+| Pocket Humans | PH-[number] | PH-001 |
 
 
 ---

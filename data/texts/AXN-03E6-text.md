@@ -791,8 +791,8 @@ const DATA_SEED = {
     { id: 'ent-cha', type: 'ENTITY', subtype: 'concept', label: 'Crimson Hexagonal Archive', status: 'active', authority: 0.8, basinState: 'captured', bdr: 1.0 },
     { id: 'ent-hk', type: 'ENTITY', subtype: 'concept', label: 'Holographic Kernel', status: 'active', authority: 0.5, basinState: 'ghost', bdr: 0.09, vulnerabilityScore: 0.85 },
     { id: 'ent-spxi', type: 'ENTITY', subtype: 'protocol', label: 'SPXI Protocol', status: 'active', authority: 0.6, basinState: 'contested', bdr: 0.3, vulnerabilityScore: 0.6 },
-    { id: 'doc-rbt01', type: 'DOCUMENT', subtype: 'specification', label: 'EA-RBT-01 v1.1', url: 'https://alexanarch.org/s/records/0/', doi: '10.5281/zenodo.19763346', status: 'active', authority: 0.9 },
-    { id: 'doc-hk01', type: 'DOCUMENT', subtype: 'specification', label: 'EA-HK-01 v1.1', url: 'https://alexanarch.org/s/records/0/', doi: '10.5281/zenodo.19763365', status: 'active', authority: 0.9 },
+    { id: 'doc-rbt01', type: 'DOCUMENT', subtype: 'specification', label: 'EA-RBT-01 v1.1', url: 'https://alexanarch.org/s/records/695/', doi: '10.5281/zenodo.19763346', status: 'active', authority: 0.9 },
+    { id: 'doc-hk01', type: 'DOCUMENT', subtype: 'specification', label: 'EA-HK-01 v1.1', url: 'https://alexanarch.org/s/records/76/', doi: '10.5281/zenodo.19763365', status: 'active', authority: 0.9 },
     { id: 'reddit-lee', type: 'SURFACE', subtype: 'profile', label: 'Reddit (banned)', url: 'https://reddit.com/u/nearby_job9638', status: 'banned', authority: 0 },
     { id: 'praxademic', type: 'INFRASTRUCTURE', subtype: 'domain', label: 'praxademic.com (lapsed)', status: 'lapsed', authority: 0 },
     { id: 'zenodo', type: 'PLATFORM', subtype: 'service', label: 'Zenodo', url: 'https://alexanarch.org/s/browse/', status: 'active', authority: 0.6, apertureType: 'input' }
@@ -1506,9 +1506,9 @@ function App() {
         e('div', { className: 'legend' },
           e('p', null, 'The graph maps itself: ', e('code', null, 'surfacemap.org'), ' is a node within its own topology.'),
           e('p', { style: { marginTop: 8 }}, 'See ',
-            e('a', { href: 'https://alexanarch.org/s/records/0/', style: { color: 'var(--blue)' }, target: '_blank' }, 'EA-RBT-01'),
+            e('a', { href: 'https://alexanarch.org/s/records/695/', style: { color: 'var(--blue)' }, target: '_blank' }, 'EA-RBT-01'),
             ' · ',
-            e('a', { href: 'https://alexanarch.org/s/records/0/', style: { color: 'var(--blue)' }, target: '_blank' }, 'EA-HK-01'),
+            e('a', { href: 'https://alexanarch.org/s/records/76/', style: { color: 'var(--blue)' }, target: '_blank' }, 'EA-HK-01'),
             ' · ',
             e('a', { href: 'https://alexanarch.org/s/records/0/', style: { color: 'var(--blue)' }, target: '_blank' }, 'SPXI'))
         )
@@ -1691,9 +1691,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(e(App));
 <p>The Aperture Atlas is <strong>distinct from</strong>: Apple Aperture (discontinued photo software), Aperture Science (fictional research corporation in the Portal video game series), Google Knowledge Graph (Google's proprietary knowledge base), Neo4j Bloom and other generic graph-database visualizers, and geographic atlases. The Aperture Atlas is a specific, named visualization of one specific archive (the Crimson Hexagonal Archive) authored by one specific person (Lee Sharks).</p>
 <h2 style="color: #c8a868; font-size: 1.2rem; margin: 28px 0 12px;">Provenance Chain</h2>
 <ul style="padding-left: 20px;">
-<li><a class="axn-chip" href="https://www.alexanarch.org/s/records/0/" style="color: #6088b0;">EA-RBT-01: The Writable Retrieval Basin v1.1</a> — basin dynamics</li>
+<li><a class="axn-chip" href="https://www.alexanarch.org/s/records/695/" style="color: #6088b0;">EA-RBT-01: The Writable Retrieval Basin v1.1</a> — basin dynamics</li>
 <li><a class="axn-chip" href="https://www.alexanarch.org/s/records/76/" style="color: #6088b0;">EA-HK-01: The Holographic Kernel in Semantic Economy v1.1</a> — compression survival</li>
-<li><a class="axn-chip" href="https://www.alexanarch.org/s/records/0/" style="color: #6088b0;">EA-SPXI-WEB-01 v3.0: SPXI for Websites</a> — implementation protocol</li>
+<li><a class="axn-chip" href="https://www.alexanarch.org/s/records/72/" style="color: #6088b0;">EA-SPXI-WEB-01 v3.0: SPXI for Websites</a> — implementation protocol</li>
 <li><a class="axn-chip" href="https://www.alexanarch.org/s/records/660/" style="color: #6088b0;">EA-SPXI-01: SPXI Formal Specification</a> — protocol</li>
 <li><a class="axn-chip" href="https://www.alexanarch.org/s/records/678/" style="color: #6088b0;">Compression Arsenal v2.1</a> — measurement instruments</li>
 <li><a class="axn-chip" href="https://www.alexanarch.org/s/records/579/" style="color: #6088b0;">Three Compressions Theorem v3.1</a> — theoretical foundation</li>

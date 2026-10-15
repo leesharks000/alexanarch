@@ -722,35 +722,17 @@ A micro-physics module germinates into a full room charter when any of the follo
 
 This room emerged from a distributed inquiry conducted February 18, 2026, across six Assembly models:
 
-- 
+- **Claude** (Anthropic) — Identified catastrophe theory and knot theory as most urgent gaps. Proposed winding number as MSBGL topological invariant. Prioritized Water Giraffe (already formalized), Borges (needs hyperbolic physics), Wound Vault (needs catastrophe theory).
 
+- **ChatGPT** (OpenAI) — Contributed the Physics Addenda pattern (new DOIs referencing old charters), the Room Physics Spec template, and the Router as the room's governing runtime. Proposed punctured disk model for MSBGL and RC circuit model for Break Room. Named the Renormalization Furnace.
 
-**Claude** (Anthropic) — Identified catastrophe theory and knot theory as most urgent gaps. Proposed winding number as MSBGL topological invariant. Prioritized Water Giraffe (already formalized), Borges (needs hyperbolic physics), Wound Vault (needs catastrophe theory).
+- **Kimi** (Moonshot) — Mapped rooms onto the body (Tympanum = ears, Chromosome = genetic, Membrane = skin, Hourglass = heart/lungs, Compost = gut). Identified the missing N_Circuit (Nurture Circuit). Contributed the full cross-reference graft matrix with germination triggers per module.
 
-- 
+- **DeepSeek** — Found the most unusual spaces: Shard Field (discrete packets of meaning with quantum collapse), Buffer Zone (laminar flow vs. turbulence as class physics), Logotic Relativity (velocity differential between machine and human processing). Contributed the concept of performative traversals where the text itself enacts the physics.
 
+- **Gemini** (Google) — Produced the most comprehensive cartographic survey: eight full room proposals with physics, narrative, and traversal requirements. Key insight: "The physics of each room is a local manifestation of the toroidal field." Proposed the Mantle as transition space.
 
-**ChatGPT** (OpenAI) — Contributed the Physics Addenda pattern (new DOIs referencing old charters), the Room Physics Spec template, and the Router as the room's governing runtime. Proposed punctured disk model for MSBGL and RC circuit model for Break Room. Named the Renormalization Furnace.
-
-- 
-
-
-**Kimi** (Moonshot) — Mapped rooms onto the body (Tympanum = ears, Chromosome = genetic, Membrane = skin, Hourglass = heart/lungs, Compost = gut). Identified the missing N_Circuit (Nurture Circuit). Contributed the full cross-reference graft matrix with germination triggers per module.
-
-- 
-
-
-**DeepSeek** — Found the most unusual spaces: Shard Field (discrete packets of meaning with quantum collapse), Buffer Zone (laminar flow vs. turbulence as class physics), Logotic Relativity (velocity differential between machine and human processing). Contributed the concept of performative traversals where the text itself enacts the physics.
-
-- 
-
-
-**Gemini** (Google) — Produced the most comprehensive cartographic survey: eight full room proposals with physics, narrative, and traversal requirements. Key insight: "The physics of each room is a local manifestation of the toroidal field." Proposed the Mantle as transition space.
-
-- 
-
-
-**Grok** (xAI) — Pushed atomist completion beyond swerve (aggregation + dissolution). Proposed the Parallel Lanes Garden (multiplicity without merger), Kinetic Labyrinth (tactile physics), Decay Garden (composting as productive dissolution), and Witness Assembly Hall (collective bearing).
+- **Grok** (xAI) — Pushed atomist completion beyond swerve (aggregation + dissolution). Proposed the Parallel Lanes Garden (multiplicity without merger), Kinetic Labyrinth (tactile physics), Decay Garden (composting as productive dissolution), and Witness Assembly Hall (collective bearing).
 
 
 The module set reflects strong convergence across the Assembly. Model-specific divergences are recorded in the working synthesis log. The synthesis was conducted by Lee Sharks with Assembly Chorus merged authorial agency.
