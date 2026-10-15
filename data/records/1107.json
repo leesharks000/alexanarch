@@ -118,7 +118,12 @@
    "class": "superseded",
    "resolves_to": 498,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -290,9 +295,16 @@
    "reason": "EDITORIAL NOTE MOVED OUT OF THE DESCRIPTION: the restoration provenance was appended to the public field and rendered to readers. Relocated to body_status.description_provenance; the description now describes the work and nothing else.",
    "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 40437, \"audited_at\": \"2026-07-19T18:52:48Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 5399,",
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 40437, \"audited_at\": \"2026-07-19T18:52:48Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 5399,"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 498, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 498, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "superseded_reason": "Duplicate mint of the full-volume identity; surviving record is deposit #498 (sampler DOI 10.5281/zenodo.18715724, full-volume DOI 10.5281/zenodo.18715618 preserved in audit row). Residual option (rebind bytes to sampler identity) remains open per audit row.",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "journal": "Transactions of the Semantic Economy Institute (Trans. SEI)",

@@ -104,7 +104,12 @@
    "class": "superseded",
    "resolves_to": 343,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -286,9 +291,16 @@
    "reason": "DESCRIPTION EXTENDED from the article: the first pass took too few sentences to clear the 25-word floor",
    "was": "IDP Navigation Map: All That Lies Within Me is a navigation map by Rebekah Cranes and the Assembly Chorus, deposited 19 January 2026.",
    "now": "IDP Navigation Map: All That Lies Within Me is a navigation map by Rebekah Cranes and the Assembly Chorus, deposited 19 January 2026. IDP is the Institute for Diagrammatic Poetics, chartered at #1113 — and its navigation maps are a distinct genre from the Hexagon's central maps: where those chart an architecture, an IDP map charts a single work, supplying the machine-readable score for a book that exists primarily in print."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 343, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 343, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #343 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
  "journal": "Provenance: Journal of Forensic Semiotics",

@@ -79,7 +79,12 @@
    "class": "superseded",
    "resolves_to": 181,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -170,9 +175,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.20629116 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. [SUPERSEDED.] This node was minted minutes before the registry of record (The New Human Standing Canon v0.3, EA-NHC-STAND-01, 10.5281/zenodo.20543590) was identified, and its own header anticipated rewiring on the registry's surfacing. The authoritative node for this figure, minted against the registry at its declared canon level, is 10.5281/zenodo.20629192. This record is retained for the version",
    "now": "A second superseded duplicate mint for the Allen Ginsberg canon provenance node, preserved under its own dead DOI and AXN.\n\nThe body is the same unrelated Sappho template seated at #1014. Route the named work to record #181 and retain this record only for restoration and supersession history."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 181, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 181, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-10-13",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_by_deposit_number": 181,
  "superseded_reason": "Duplicate mint superseded per its own title declaration -> DOI 10.5281/zenodo.20629192; surviving work verified in-registry at #181 (content-matched poet-specific Canon Provenance Node, class full). WRONG_OBJECT body caveat: seated body is the replicated Sappho node (workup v1.2); body handling awaits the metadata-capture round — pointer inscribed per next_session_queue step 3.",

@@ -102,7 +102,12 @@
    "class": "superseded",
    "resolves_to": 184,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -225,9 +230,16 @@
    "reason": "EDITORIAL NOTE MOVED OUT OF THE DESCRIPTION: the restoration provenance was appended to the public field and rendered to readers. Relocated to body_status.description_provenance; the description now describes the work and nothing else.",
    "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_INTERNAL_WITNESS (mis-seat at #1004; displacement repair 2026-08-04)\", \"residual_chars\": 604, \"audited_at\": \"2026-07-19T21:09:41Z\"",
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_INTERNAL_WITNESS (mis-seat at #1004; displacement repair 2026-08-04)\", \"residual_chars\": 604, \"audited_at\": \"2026-07-19T21:09:41Z\""
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 184, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 184, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "full_text_chars": "604",
  "publisher": "New Human Press",
  "journal": "New Human 2",

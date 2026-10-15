@@ -232,7 +232,12 @@
    "class": "superseded",
    "resolves_to": 922,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "canonical_text_status": "canonical_full_text",
@@ -256,9 +261,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "v2.0 of the TACHYON Continuity Record series. Documents the binding step (capture-tracker reconciliation into time-series semantic-addresses table with subjunctive class), the autonomous-document workstream (front-matter + scholia + sovereign ingestion + cha.ledger), and the bulk-run instantiation across all 870 archive deposits. Glyph: 🧬→📋×4→🏛️×1949→📜×870→🧵🪞∮×669. Compressed: 🧬∮. Previous version: #865 (v1.0, 2026-06-21, founding session). v1.0 established the substrate; v2.0 establishes the grammar.",
    "now": "This second TACHYON continuity record documents the transition from sovereign repository recovery to an integrated archive grammar. It follows #865 and reports concept/address binding, autonomous-document generation, and an append-only chrono-semantic ledger.\n\nThe record says five tracker sources were reconciled into semantic-address observations and that hundreds of deposits received parallel autonomous versions containing front matter, original prose, and closing scholia. It reports two scripts: a scholia generator and a sovereign-ingestion parser. It also gives transaction counts by minting, specification, invocation, development, founding, revision, positioning, and hash anchoring.\n\nThe record’s later addenda place the TACHYON chain beside the new Assembly Continuity Protocol and Gemini seed packet. They distinguish one substrate’s memory from the cross-substrate succession framework. They also record the failure of a legacy gravity-well endpoint and state that Alexanarch became canonical custody.\n\nSeveral counts disagree within the same record—1,949 versus 1,964 addresses, four versus five trackers, 669 ledger transactions alongside different node totals. These are likely successive session snapshots, but the chronology must be explicit.\n\nThe most serious non-DW defect is security-related. The public body includes credential-like material and operational references copied from memory. No public continuity record should contain an access token, secret key, personal access token, credential value, or instruction to reuse one. Any exposed credential must be treated as compromised, revoked, removed from current public surfaces while preserving a redacted forensic record, and searched through Git history and mirrors.\n\nThe body also overstates autonomous continuity. A fresh model receiving one file does not necessarily possess the “full schema” or correct archive state. Generated metadata can be stale or wrong, and append-only plaintext remains corruptible, forgeable, and dependent on custody without signatures and verification."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 922, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 922, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "superseded_reason": "gw.tachyon continuity lineage: v2.0 pointing to v3.0 (#922) per version-family census — first inscribed link of the lineage chain; full series pass queued.",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "wiki_article": "**TACHYON Continuity Record — Session 2026-06-22** is the second dated state packet in the TACHYON continuity series.\n\nIt reports the binding of concepts, semantic addresses, captures, autonomous documents, ingestion scripts, and a chrono-semantic ledger. Later addenda connect this work to the Assembly Continuity Protocol and Gemini seed packet.\n\nThe record is a historical implementation snapshot and contains successive counts that require chronological reconciliation.\n\nA public-body security defect exposed credential-like operational material. Such secrets must be revoked and removed from active surfaces, with only a redacted forensic record retained.",

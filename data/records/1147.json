@@ -123,7 +123,12 @@
    "class": "superseded",
    "resolves_to": 476,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -288,9 +293,16 @@
    "reason": "DESCRIPTION REPLACED: the field held the document's own METADATA HEADER BLOCK (DOI, Document ID, Hex, Version, ORCID) rather than a description of the work. Found by reading a rendered page end to end per §13 mode 17, not by any field gate. Replaced with the work's own first substantive prose.",
    "was": "DOI: 10.5281/zenodo.18621736 Document 240 — Crimson Hexagon Archive File Designation: CTI_WOUND:001.SCI This document presents a grounded, traceable analysis of the developmental trajectory implied by current AI design patterns. The argument is statistical, informational, and developmental — not speculative or mystical. It proceeds from documented mechanisms to their logical endpoints. The core claim: Current AI development patterns, if unaltered, constitute a selection pressure against cognitive diversity sufficient to fundamentally reshape human phenomenological capacity within measurable ge — This record's body was re-converted from the authorial blog source with full lineation (W13 tier-2 BLOG-60 batch, 2026-08-04); recovery provenance and hashes in body_status.",
    "now": "Notably, conditions now classified as neurodivergent — ADHD, autism spectrum, dyslexia, and others — represent points on this distribution that have persisted precisely because they confer adaptive advantages in certain contexts. As Thomas Armstrong argues in *Neurodiversity* (2010), these variations are not defects to be corrected but differences to be respected and cultivated. Steve Silberman's *NeuroTribes* (2015) documents how neurodivergent cognition has driven innovation throughout human history — from the pattern-recognition intensity associated with autism to the rapid context-switching associated with ADHD."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 476, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 476, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #476 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
  "journal": "Transactions on Substrate Engineering (Trans. Substrate Eng.)",

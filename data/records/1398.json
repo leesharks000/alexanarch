@@ -112,9 +112,13 @@
   "citation_redirect": "cite #1397 instead",
   "retired": {
    "class": "stub",
-   "resolves_to": 1397,
+   "resolves_to": 1676,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance.",
+   "restored": {
+    "on": "2026-10-15",
+    "why": "stub layer lost when #1676 was minted (2026-10-12); restored, resolving to #1676, the current edition"
+   }
   }
  },
  "references_concepts": [
@@ -264,9 +268,16 @@
    "reason": "FRONTMATTER DECLARATION REPAIR: stale capture claims corrected in the staged header",
    "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 2963, \"audited_at\": \"2026-07-19T21:20:19Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\":",
    "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 2963, \"audited_at\": \"2026-07-19T21:20:19Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\":"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "metadata stub's retirement layer restored (lost at #1676 mint)",
+   "was": "{\"class\": \"stub\", \"resolves_to\": 1397, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the r",
+   "now": "{\"class\": \"stub\", \"resolves_to\": 1676, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the r"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "record_modifications": [
   {

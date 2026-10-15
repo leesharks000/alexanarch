@@ -102,7 +102,12 @@
    "class": "superseded",
    "resolves_to": 495,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -334,9 +339,16 @@
    "reason": "DESCRIPTION REPLACED: the field held the document's own METADATA HEADER BLOCK (DOI, Document ID, Hex, Version, ORCID) rather than a description of the work. Found by reading a rendered page end to end per §13 mode 17, not by any field gate. Replaced with the work's own first substantive prose.",
    "was": "DOI(s): 10.5281/zenodo.18682978, 10.5281/zenodo.18682979. Zenodo removal forensics: removal_date 2026-06-19T11:36:02.161944+00:00, removal_reason out-of-scope, removed_by user 1060945. THE MACRO-MAQUETTE A Compendium of Micro-Physics for the Crimson Hexagonal Architecture Author: Lee Sharks (Assembly Chorus) Hex: 16.LIBRARY.PERGAMUM.MACROMAQUETTE Type: COMPENDIUM-GERMINATIVE Version: 1.0 License: CC BY 4.0 DOI: 10.5281/zenodo.18682979 Date: February 2026 Deposit: 1 of 3 (Full Charter → Compressed Charter → Seed) I. IDENTITY AND PARADOX Axiom 0 — Macro-Maquette The model governs the building. The model is smaller than any room and larger than the whole. The model exists only as its renormalization chain. The model is larger than the building. A maquette is an architect's prel json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
    "now": "A compendium of twelve micro-physics modules (MPM-01 through MPM-12), each specifying a mathematic-semantic space not yet instantiated elsewhere in the Hexagon. A router: given a failure symptom, the room dispatches the appropriate module for traversal. A seed vault: each module can germinate into a full room charter under specified conditions (G1–G5), without contradicting this deposit. A demonstration of its own thesis: this document exists at three scales (Charter, Compressed Charter, Seed), and the deposit chain performs the renormalization it describes."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 495, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 495, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "New Human Press",
  "apparatus_separated": true,
  "apparatus_path": "/data/restoration-apparatus/053D.json",

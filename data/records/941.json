@@ -86,7 +86,12 @@
    "class": "superseded",
    "resolves_to": 942,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "title_repair": {
@@ -139,9 +144,16 @@
    "reason": "DW-049 intake #941 (manual verification: \"human-authored versus AI-generated\" is LABOR naming the standard binary the specification replaces — a characterisation of the prior framing, not a body quotation)",
    "was": "Preliminary specification and workplan for granular depositor-declared provenance metadata, forming the depositor-attestation layer of a two-layer provenance architecture (this schema + machine-facing distributional measurement per EA-BEARING-METRIC-01). Separates the AI-mediated question (material role in production chain) from the AI-generated question (model-produced language retained in final work). Specifies a seven-type mediation taxonomy (propositional, structural, linguistic, translational, research, editorial, transformational) and five attestation questions (proposition origination, model language retention, review chain, seam recoverability, responsibility structure). All fields optional. Freeform substrate field remains valid. Includes six-phase implementation workplan.",
    "now": "A v0.1 depositor-attestation schema and six-phase implementation workplan. It defines seven mediation types, five attestation questions, model-language-retention categories, seam-recoverability states, review-chain fields, substrate arrays, and external-attestation reconciliation.\n\nAll fields remain optional, and the freeform substrate declaration remains valid."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 942, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 942, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "journal": "Provenance: Journal of Forensic Semiotics",
  "journal_assignment": {
   "assigned": "2026-08-15",

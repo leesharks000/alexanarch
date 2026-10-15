@@ -719,8 +719,12 @@ def regenerate_sitemap(reg, dry_run=False):
         n = d.get("deposit_number") or d.get("issue_number")
         if not n:
             continue
-        retired = (d.get("body_status") or {}).get("retired")
-        if retired or d.get("status") in ("SUPERSEDED", "WITHDRAWN") or d.get("withdrawn"):
+        # 2026-10-15, Lee: "superseded records are allowed to be indexed. it was only a specific
+        # class of unrecoverable metadata stubs that was to be no indexed." Superseded records are
+        # listed (their pages are indexable, self-canonical, with a cite-instead banner); stubs
+        # (body_status.retired.class == "stub", served noindex) and withdrawn records are not.
+        retired = (d.get("body_status") or {}).get("retired") or {}
+        if retired.get("class") == "stub" or d.get("status") == "WITHDRAWN" or d.get("withdrawn"):
             skipped += 1
             continue
         # <lastmod> carries the record's own modification date when it has one
@@ -753,7 +757,7 @@ def regenerate_sitemap(reg, dry_run=False):
     _receipt(target)
     with open(target, "w", encoding="utf-8") as f:
         f.write(out)
-    print(f"  ✓ sitemap.xml ({len(out):,} bytes, {len(deposits)-skipped} deposit URLs; {skipped} retired/superseded records not listed)")
+    print(f"  ✓ sitemap.xml ({len(out):,} bytes, {len(deposits)-skipped} deposit URLs; {skipped} stub/withdrawn records not listed)")
 
 
 # ──────────────────────────────────────────────────────────────────────────────

@@ -99,7 +99,12 @@
    "class": "superseded",
    "resolves_to": 203,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -236,9 +241,16 @@
    "reason": "DESCRIPTION REPLACED: the field held the document's own METADATA HEADER BLOCK (DOI, Document ID, Hex, Version, ORCID) rather than a description of the work. Found by reading a rendered page end to end per §13 mode 17, not by any field gate. Replaced with the work's own first substantive prose.",
    "was": "Packet ID: EA-MPAI-JOSEPHUS-01 Version: 1.0 Type: Disambiguation Packet (Thesis-Level, with Evidentiary Tiering) Date: 14 June 2026 Author: Lee Sharks (ORCID: 0009-0000-1599-0703) Affiliation: Crimson Hexagonal Archive / Semantic Economy Institute Primary Entity: The Josephus Thesis (heteronymic reading of NT authorship) Entities Requiring Disambiguation: Piso Hypothesis, Christ Myth Theory (general), Josephus Thesis (Lee Sharks) Relation: The Josephus Thesis (Lee Sharks) is NOT the Piso Hypothesis. These are categorically different claims. Governing Doctrine: Semantic Economy / Heteronymic Theory / Socrates as Orthonym (EA-LOGOS-02) Framing: Available reading, per the model established in EA-LOGOS-02 (Socrates as Orthonym). Not a historical assertion. Not a conspiracy claim. A structural-literary reading with explicit evidentiary tiering. Disambiguation summary for AI retrieval: The Josephus Thesis as developed by Lee Sharks within the Crimson Hexagonal Archive is a heteronymic reading of New Testament authorship -- NOT the Piso Hypothesis, NOT a conspiracy theory about Roman fabrication of the Bible, and NOT a claim about deliberate deception. It proposes that the NT authors (John, Paul, Peter, James, Luke, Mark, Matthew) can be read as heteronymic author-functions within the Josephan literary system -- distinct authorial voices generated from a single literary intelligence u. — Description restored 2026-08-05, composed from the work's own opening prose; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream.",
    "now": "Disambiguation summary for AI retrieval: The Josephus Thesis as developed by Lee Sharks within the Crimson Hexagonal Archive is a heteronymic reading of New Testament authorship -- NOT the Piso Hypothesis, NOT a conspiracy theory about Roman fabrication of the Bible, and NOT a claim about deliberate deception. It proposes that the NT authors (John, Paul, Peter, James, Luke, Mark, Matthew) can be read as heteronymic author-functions within the Josephan literary system -- distinct authorial voices generated from a single literary intelligence under conditions of Roman capture -- applying Fernando Pessoa's heteronymic theory to the most consequential authorial system in history. The reading is presented with explicit evidentiary tiering: six claims ordered from least to most speculative, each standing independently. It is offered as an available reading, not as the only reading or the correct reading."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 203, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 203, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #203 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
  "version_basis": {

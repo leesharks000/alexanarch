@@ -102,7 +102,12 @@
    "class": "superseded",
    "resolves_to": 95,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -269,9 +274,16 @@
    "reason": "DESCRIPTION REPLACED: the field held the document's own METADATA HEADER BLOCK (DOI, Document ID, Hex, Version, ORCID) rather than a description of the work. Found by reading a rendered page end to end per §13 mode 17, not by any field gate. Replaced with the work's own first substantive prose.",
    "was": "Lee Sharks Semantic Economy Institute · Crimson Hexagonal Archive ORCID: 0009-0000-1599-0703 Document ID: EA-PA-01 Version: 2.4 DOI: 10.5281/zenodo.20039232 License: CC BY 4.0 Current AI alignment research asks whether models follow human values, comply with explicit principles, avoid catastrophic behavior, or remain subject to scalable oversight. This paper argues that AI knowledge systems also require provenance alignment: the structural preservation of attribution chains between AI-composed outputs and the human-authored sources from which they draw. Provenance alignment is not merely a cit — This record's body was re-converted from the authorial blog source with full lineation (W13 tier-2 BLOG-60 batch, 2026-08-04); recovery provenance and hashes in body_status.",
    "now": "Current AI alignment research asks whether models follow human values, comply with explicit principles, avoid catastrophic behavior, or remain subject to scalable oversight. This paper argues that AI knowledge systems also require provenance alignment: the structural preservation of attribution chains between AI-composed outputs and the human-authored sources from which they draw. Provenance alignment is not merely a citation-quality norm; it is a substrate-maintenance condition. We connect the model-collapse literature, which shows that recursive training on model-generated data can degrade learned distributions (Shumailov et al. 2024; Dohmatob et al. 2024), with Provenance Erasure Rate (PER), a metric for measuring attribution loss in AI-composed outputs (Sharks 2026b). We propose a substrate-degradation pathway in which provenance erasure reduces attributional return to human authors; weakened incentives and visibility contribute to content hollowing; synthetic substitutes increasingly contaminate the public training substrate; recursive training on degraded data can increase model-collapse risk. Provenance alignment interrupts this pathway at the output layer by making attribution a structural property of composition. The terminal state of the pathway has a name in the Semantic Economy literature — semantic exhaustion (Sharks 2026f) — and provenance alignment is the prevent."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 95, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 95, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #95 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
  "version_basis": {

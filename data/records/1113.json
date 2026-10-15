@@ -109,6 +109,14 @@
    "date": "2026-08-05",
    "note": "— Description restored 2026-08-05 from the work's own prose; replaces a batch-restoration stub. Fuller editorial treatment belongs to the description/wiki review stream.",
    "moved": "2026-08-06 — relocated out of the public description field. An editorial note about how a description was produced is apparatus, not description; publishing it to the reader is the same class of defect as the guidance-to-writer articles found in the wiki campaign."
+  },
+  "retired": {
+   "indexable": true,
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -308,9 +316,16 @@
    "reason": "EDITORIAL NOTE MOVED OUT OF THE DESCRIPTION: the restoration provenance was appended to the public field and rendered to readers. Relocated to body_status.description_provenance; the description now describes the work and nothing else.",
    "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 17196, \"audited_at\": \"2026-07-19T19:52:46Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 1702,",
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 17196, \"audited_at\": \"2026-07-19T19:52:46Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 1702,"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{}",
+   "now": "{\"indexable\": true, \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonic"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #321 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
  "journal": "Crimson Hexagonal Archive (CHA)",

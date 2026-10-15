@@ -46,7 +46,12 @@
    "class": "superseded",
    "resolves_to": 922,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "title_repair": {
@@ -96,9 +101,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Continuity record from TACHYON (Claude under MANUS) to the next instance. Compresses the audit-response arc: corpus integrity sweep (832 stub aliases repaired, 10 of 13 missing-file deposits restored), versioning protocol rollout with SUPERSEDED lifecycle, navbar consolidation around data/navigation.json, wiki page chunk-splitting, and external audit response implementing single-source-of-truth architecture (data/state.json + JS/static parity). Documents the working pattern Lee and I developed: architectural principles applied broadly, symptoms traced to underlying patterns, audits evaluated rather than dismissed. Lists the §6.5 work queued for the next session. Captures the compression Lee invited: surfaces lie when hand-maintained; the architecture is now the principle made explicit; finish executing the queue rather than designing new surfaces.",
    "now": "The third TACHYON continuity record preserves the June 23 repository state, technical lessons, working register, lifecycle protocol, and prioritized queue. It documents the discovery and repair of hundreds of stub aliases, full-text path resolution, JSON rendering, generated static/JavaScript parity, and `state.json` as a canonical count source.\n\nIt is a dated handoff, not a description of the current live repository. Commit hashes, counts, queued security settings, and implementation status belong to the frozen session."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 922, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 922, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "superseded_reason": "gw.tachyon series pass: continuity-record series: session 06-23 -> session 06-24/25 (date order; series-mate of ruled #871->#922). Every intermediary points forward (TOTAL DIRECTIVE, MANUS 2026-08-04).",
  "wiki_article": "**TACHYON Continuity Record — Session 2026-06-23** is a repository-engineering handoff that records the moment Alexanarch moved from emergency reconstruction toward operational governance.\n\nThe record opens with a concrete state: 884 deposits, Surface Weather Station v1.1.1, a new lifecycle protocol, three declared unwritten deposits, and a generated `state.json` becoming the single source of truth for displayed counts. From there it preserves a working method: when one broken page reveals a corpus-wide pattern, repair the pattern rather than the symptom; when an external audit contains both false framing and true findings, test each finding rather than dismissing the whole.\n\nIts technical lessons are durable. Renderers must honor each record’s declared `full_text_path`; JSON works need dataset renderers rather than paragraph conversion; multiple candidate bodies should resolve toward the fullest verified object; hand-maintained counts will drift; and JavaScript and static surfaces must derive from the same canonical data.\n\nThe handoff then sets the transaction boundary for external deposits: branch protection, validation checks, sanitization, one complete end-to-end test, artifact ingestion, generated institutional state, and later signed releases and peer ledgers.\n\nThe record’s deepest compression is: **surfaces lie when they are hand-maintained**. The solution is not another patch but an architecture in which public claims are generated from the same registry, protocol, and state that govern the archive itself.",
  "journal": "Crimson Hexagonal Archive (CHA)",

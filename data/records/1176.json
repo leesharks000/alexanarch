@@ -102,7 +102,12 @@
    "class": "superseded",
    "resolves_to": 626,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -252,9 +257,16 @@
    "reason": "DESCRIPTION REPLACED from the work's own first substantive prose: the field held structured data, a metadata header, or fewer than 25 words",
    "was": "id: EA-LOGOS-01 title: \"The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos\" authors: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos Part I by Johannes Sigil (main essay and appendices) Part II by Rebekah Cranes (grammar of incarnation and doctrine) This document operates in three registers, each with its own evidentiary standard. Part I (Johannes Sigil) is a speculative-philological intervention. It reads the eight Jesus-and-John passages in the Slavonic recension of Josephus' Jewish War  — This record's body was re-converted from the authorial blog source with full lineation (W13 tier-2 BLOG-60 batch, 2026-08-04); recovery provenance and hashes in body_status.",
    "now": "This essay proposes that the so-called interpolations concerning Jesus and John in the Slavonic recension of Josephus' *Jewish War* are not late Christian forgeries but remnants of a pre-Christian Logotic theology. These passages preserve a worldview in which the Teacher's word becomes its own body through inscription. The \"Word made flesh\" was first \"Word made text.\" The Slavonic additions thus record the moment when speech became scripture, when revelation began to archive itself through language."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 626, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 626, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #626 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
  "journal": "Grammata: Journal of Operative Philology",

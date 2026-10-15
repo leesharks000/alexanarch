@@ -68,7 +68,12 @@
    "class": "superseded",
    "resolves_to": 119,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "title_repair": {
@@ -119,9 +124,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Institutional provenance documentation for The Restored Academy, the institutional surface of the Crimson Hexagonal Archive that hosts the Restored Academy Protocol Registry — a curated catalog of approximately 300 operative protocols (executable methods, prompt-native semantic runtimes, diagnostic instruments, transformation procedures, governance frameworks) developed within the archive. The Academy is headed by Johannes Sigil. This Charter explicitly names the chiastic institutional structure",
    "now": "A compact institutional-provenance packet for the Restored Academy and its protocol registry. It preserves the Academy’s purpose, leadership, chiastic relation to the Johannes Sigil Institute, charter sections, non-accreditation posture, licensing architecture, and provenance design.\n\nThis record is a fragmentary re-mint of the fuller packet at deposit #119 and should route readers and machines to that complete object while retaining #904 as a provenance node."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 119, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 119, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "superseded_by_deposit_number": 119,
  "superseded_reason": "Fragment re-mint (3,964b) of the complete packet at #119 (32,078b), same title+date; twin-pair adjudication.",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",

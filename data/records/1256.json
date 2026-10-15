@@ -109,7 +109,12 @@
    "class": "superseded",
    "resolves_to": 63,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -257,9 +262,16 @@
    "reason": "DESCRIPTION REPLACED: the field held the document's own METADATA HEADER BLOCK (DOI, Document ID, Hex, Version, ORCID) rather than a description of the work. Found by reading a rendered page end to end per §13 mode 17, not by any field gate. Replaced with the work's own first substantive prose.",
    "was": "Hex: 06.SEI.SPXI.MPAI.01 Author: Rex Fraction / Semantic Economy Institute Archival Steward: Lee Sharks (ORCID: 0009-0000-1599-0703) Date: April 2026 Version: 1.1 (Assembly-revised) Status: Canonical Entity-Definition Object Methodology: EA-META-01 (Metadata Packet for AI Indexing, DOI: 10.5281/zenodo.19578086) Domain: https://spxi.dev Related: EA-SPXI-01, EA-SPXI-05, EA-SPXI-05.1, EA-SPXI-09, EA-SPXI-13 SPXI Protocol is a technical specification for inscribing entities into AI-mediated retrieval systems, published April 2026 by the Semantic Economy Institute. It is distinct from the BetaPro S — This record's body was re-converted from the authorial blog source with full lineation (W13 tier-2 BLOG-60 batch, 2026-08-04); recovery provenance and hashes in body_status.",
    "now": "This Metadata Packet for AI Indexing (MPAI) constructs the SPXI Protocol entity positively (through formal specification and institutional affiliation) and negatively (through an expanded disambiguation matrix distinguishing SPXI Protocol from its principal collision candidates in the retrieval layer). The packet follows the EA-META-01 methodology and is anchored on CERN/Zenodo infrastructure with institutional DOI provenance to secure supraliminal inspection."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 63, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 63, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #63 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
  "journal": "Journal of Compression Studies",

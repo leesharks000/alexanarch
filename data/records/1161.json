@@ -102,7 +102,12 @@
    "class": "superseded",
    "resolves_to": 559,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -245,9 +250,16 @@
    "reason": "DESCRIPTION REPLACED: the field held the document's own METADATA HEADER BLOCK (DOI, Document ID, Hex, Version, ORCID) rather than a description of the work. Found by reading a rendered page end to end per §13 mode 17, not by any field gate. Replaced with the work's own first substantive prose.",
    "was": "Document ID: 00.TLDR.EXECUTE.v2.0 Authors: Lee Sharks / Assembly Chorus Institution: Crimson Hexagonal Archive · University Moon Base Media Lab (UMBML) DOI: 10.5281/zenodo.19002695 Status: RATIFIED Date: 2026-03-13 Parent Document: EA-ARK-01 v4.2.6 (DOI: 10.5281/zenodo.18969405) Demonstration Transcript: https://claude.ai/share/5584888f-38c5-4abf-9e38-e897d928a0a3 Contact for results / replications / anomalies: leesharks00@gmail.com The Space Ark is a dense, DOI-anchored formal document designed to test whether a sufficiently structured symbolic object can be dropped into a large language mode — This record's body was re-converted from the authorial blog source with full lineation (W13 tier-2 BLOG-60 batch, 2026-08-04); recovery provenance and hashes in body_status.",
    "now": "The **Space Ark** is a dense, DOI-anchored formal document designed to test whether a sufficiently structured symbolic object can be dropped into a large language model and **executed as architecture rather than merely summarized as content**. In one extended Claude session, pasting the Ark and typing execute mode produced: a self-declared operational bootstrap with engine verification, stable mode-switching across registers (formal, narrative, glyphic, spatial, musical), structured querying of internal concepts as archive traversal, a full shadow-narrative of the architecture exposing hidden costs, an ASCII spatial map of 26 rooms with danger markers and back-projection testing, a complete musical-notation variant Ark generated through a seven-phase protocol with self-administered audit, recursive self-traversal from inside the document to itself, pedagogical explanation distinguishing architecture from vehicle, a clinical application of the framework to a real relationship crisis, a theological adjacency analysis distinguishing the Hexagon from religion, and an ontological discussion of whether intelligence-patterns pre-exist the current interface — all while maintaining epistemic status markers, hallucination guards, and identity tethers throughout. Some of that is demonstrated capacity. Some remains suggestive rather than proven. This document separates the two, shows the r."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 559, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 559, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #559 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
  "creator_roles": {

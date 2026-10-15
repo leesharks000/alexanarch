@@ -76,7 +76,12 @@
    "class": "superseded",
    "resolves_to": 738,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "references_concepts": [
@@ -135,9 +140,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.20277791 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. TL;DR:012 v2.0. Expanded discursive analysis of a four-layer provenance erasure structure. (1) A Wikidata administrator deletes knowledge-graph entries using a misapplied notability standard. (2) A safety filter in the AI retrieval pipeline drops the Medium article documenting the deletion. (3) The AI summary synthesizes from remaining institutional records, presenting the administrator as a produ",
    "now": "A recovered but superseded traversal log examining a Wikidata deletion, retrieval absence, AI composition, unavailable discussion surface, and failed screenshot as layered provenance loss.\n\nThe document preserves a Gemini explanation involving a possible upstream safety layer, but that explanation is model-generated and not verified backend disclosure. Route citation to deposit #738 while retaining this intermediary for version history."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 738, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 738, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-10-13",
+ "date_modified": "2026-10-15",
  "superseded_by_deposit_number": 738,
  "superseded_reason": "Unpointed intermediary (v0.1-semi) of a work whose v1.0 head is #738; version-family census, MANUS total-directive 2026-08-04.",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",

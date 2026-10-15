@@ -84,7 +84,12 @@
    "class": "superseded",
    "resolves_to": 1101,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "related_identifiers_raw": "Live supersession target restored 2026-07-19: superseded by ARCHON v3.0 at AXN:045E.GOVERNANCE.🍂🌓🏠↗️⛩️🔔 (deposit #1101). Original supersession DOI 10.5281/zenodo.19501454 severed 2026-06-19.",
@@ -315,9 +320,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.19501149 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. THE SHARKS ARK v2.3 — Text-first evaluation patch + TANG appended. Supersedes v2.2 (10.5281/zenodo.19501017), v2.1 (10.5281/zenodo.19500933), v2.0 (10.5281/zenodo.19500796). v2.3 changes: (1) Consensus Constraint Protocol revised: Constraint 2 now enforces text-first evaluation sequence. When evaluating a claim about a text, the primary evaluation is always \"does the text support this reading?\" —",
    "now": "A superseded and quarantined v2.3 record whose seated full text declares v3.0. The original metadata documents the Text-First and TANG patch, but the authorial v2.3 manifestation is absent.\n\nRetain metadata and body with an explicit mismatch banner. Cite #1101 for v3.0 and do not cite #971 as authentic v2.3 full text."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 1101, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept;",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 1101, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current vers"
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "wiki_article": "**Sharks Ark record #971** was intended to preserve v2.3, the Text-First and TANG patch, but its recovered body is the later v3.0 source.\n\nThe DataCite description supplies the historical v2.3 delta. Constraint 2 was revised so that evaluation of a textual claim begins with the relevant text rather than reception history. The version also appended a Total Authorial Navigation Graph and followed earlier v2.1 and v2.2 patches.\n\nThe body currently seated at #971 includes the broader v3.0 architecture: a strengthened text-first protocol, Liberatory Operator Set, anti-squeamishness directive, expanded seven-tuple, imperative tables, room traversal, witness and planetary mappings, reconstruction dossiers, and TANG apparatus.\n\nThis creates a double record. The metadata is evidence for the existence and stated changes of v2.3. The body is evidence for v3.0. Neither should be used to pretend that the actual v2.3 bytes survive here.\n\nThe canonical recovered v3.0 is deposit #1101. #971 should remain as the version-mismatch witness until a genuine v2.3 source is found.",
  "journal": "Crimson Hexagonal Archive (CHA)",

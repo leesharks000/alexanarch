@@ -116,7 +116,12 @@
    "class": "superseded",
    "resolves_to": 884,
    "declared": "2026-08-10",
-   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
   }
  },
  "title_repair": {
@@ -175,9 +180,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Specification v1.1 of the Surface Weather Station instrument. Operational calibration of v1.0 following four-substrate review chorus (ChatGPT operational, Kimi concrete-additions, DeepSeek strategic-governance, Gemini framing). Locks ordinal scoring, formalizes R_s, adds Occlusion/symmetric SDI, specifies aggregation rules, observation-environment schema with substrate metadata + retrieval-backend disclosure, governance protocol (G/Y/R), cross-substrate replication, adversarial-use framing, unified 2×2 with DOI Impermanence, and machine-facing run protocol any substrate can self-execute.",
    "now": "The v1.1 specification operationalizes the Surface Weather Station after four-system review. It commits the deferred scoring, aggregation, substrate-independence, observation-environment, governance, replication, documentary-use, and machine-run protocols while preserving v1.0’s conceptual decomposition.\n\nSeveral implementation issues discovered immediately afterward were corrected in v1.1.1: retrieval and coding needed separation; the expected figure needed a frozen manifest; exact-match behavior varied by backend; the 2×2 diagnostic misplaced bystanding; DOI language contradicted the identifier-severance work; and self-disclosed model identity could be unreliable."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
+   "was": "{\"class\": \"superseded\", \"resolves_to\": 884, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
+   "now": "{\"class\": \"superseded\", \"resolves_to\": 884, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "journal": "Machine-Mediated Reception Studies (MMRS)",
  "journal_assignment": {
   "assigned": "2026-08-15",
