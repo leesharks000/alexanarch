@@ -839,7 +839,9 @@ def main():
     # registry. The current version and the supersession statement sit above the count, as text a crawler
     # reads without executing anything. Idempotent: the previous line is removed before the new one is placed.
     sup = r.get("_supersedes") or {}
-    n_obs = sum(len(x.get("observations") or []) or 1 for x in entries)
+    # The registry's own count (intake keeps observation_count); the page used to recount, taking an address
+    # with no observation list as one, and drifted (846 against 848 at v12.202).
+    n_obs = r.get("observation_count") or sum(len(x.get("observations") or []) or 1 for x in entries)
     page = re.sub(r'<p id="cap-current"[^>]*>.*?</p>\n?', "", page, flags=re.S)
     if sup.get("statement"):
         # CANONICAL, STATED FIRST (ruling, Lee Sharks, 2026-10-01: "we need to make it clearer that
@@ -847,13 +849,24 @@ def main():
         # severed Zenodo release as its record. The statement now sits directly under the introduction, ahead
         # of the data-flow notes, with the counts computed here so they cannot go stale, and it names the two
         # routes a fetcher with a size ceiling can use: the table of contents and the per-capture record pages.
+        # ONE DESCRIPTION (operator, 2026-10-14: "can we compress these into one description?"). The fixed
+        # introduction (<p class="sub">, deposit #3, semantic address, observation, windows) and this canonical
+        # statement are merged here; the introduction is removed from the page so the two cannot drift apart.
+        page = re.sub(r'<p class="sub">The <a href="/records/\?id=3">Capture Registry</a> \(deposit #3\) records .*?</p>\n?', "", page, count=1, flags=re.S)
+        last = sup.get("last_severed_count")
         cur = (f'<p id="cap-current" style="font-size:.9em;margin:8px 0 12px;padding:8px 10px;border-left:3px solid var(--teal)">'
-               f'<b>This is the canonical Capture Registry (EA-WG-CAPTURES-01): version {html.escape(str(r.get("version") or ""))}, '
-               f'{html.escape(str(r.get("date") or ""))}; {len(entries)} addresses, {n_obs} observations.</b> '
-               f'Each capture has its own record page at <code>/captures/{{slug}}/</code>, which is its citation; the table of contents is '
-               f'<a href="/captures/index.json">/captures/index.json</a>. The captures pages on godkinggoogle.com, leesharks.com and '
-               f'machinemediation.org are windows that render from this registry and hold no copy. '
-               f'{html.escape(sup["statement"])}</p>')
+               f'<b>The canonical Capture Registry (EA-WG-CAPTURES-01, <a href="/records/?id=3">deposit #3</a>): version '
+               f'{html.escape(str(r.get("version") or ""))}, {html.escape(str(r.get("date") or ""))}; {len(entries)} addresses, {n_obs} observations.</b> '
+               f'It records MACHINE-MEDIATED RECEPTION EVENTS across composition, retrieval, selection, aggregation and related computational '
+               f'surfaces. Each record is a SEMANTIC ADDRESS; each dated encounter with it is an OBSERVATION with its own conditions, evidence '
+               f'(the original images, where captured), sources, measurements and reading. Each capture is cited at its record page, '
+               f'<code>/captures/{{slug}}/</code>; each query has a page at <a href="/addresses/">/addresses/</a>; the table of contents is '
+               f'<a href="/captures/index.json">/captures/index.json</a>. <a href="https://www.godkinggoogle.com/captures/">godkinggoogle.com</a>, '
+               f'<a href="https://www.leesharks.com/captures/">leesharks.com</a> and <a href="https://www.machinemediation.org/captures/">machinemediation.org</a> '
+               f'are windows that render from this registry and hold no copy. It supersedes every Zenodo release '
+               f'({html.escape(str(sup.get("severed_releases") or "v1.1–v8.3")).replace("Zenodo ", "")}{f", the last at {last} captures" if last else ""}), '
+               f'severed when the host terminated the account on {html.escape(str(sup.get("severed_on") or "2026-06-19"))}; any count, version or finding read '
+               f'from those releases is out of date.</p>')
         _mk = '<details id="capture-flow"'
         if _mk not in page:
             _mk = '<div class="stats" id="stats">'
