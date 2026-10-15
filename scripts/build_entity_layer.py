@@ -122,6 +122,7 @@ def register(reg):
             add(row.get("name") or slug.replace("-", " "), sub or "concept", [slug.replace("-", " ")], [], f"/non {slug}",
                 relation="external", firm=bool(sub))
     sites(add, ents)
+    works_from_deposits(reg, add, alias_of, norm)
     concepts_from_index(reg, add)
     for e in reg["entries"]:
         o = e.get("originator") or {}
@@ -145,7 +146,8 @@ def register(reg):
 # THE FLEET (v0.3, 2026-10-15). Every domain of data/fleet-domains.json is a SITE entity of its own, with the object it
 # presents and its canonical deposit; "surface_of" names the registered entity it presents where its canonical deposit
 # defines one. A site and its subject are kept apart: spxi.dev is not SPXI. The bare name (revelationfirst) is an alias
-# where it is at least six characters.
+# where it is at least five characters; it carries the fleet's alternate domains (operator, 2026-10-15: ".org is my
+# domain too, theres quite a few that have multiple"), so revelationfirst.org counts to revelationfirst.com.
 def sites(add, ents):
     F = json.loads((ROOT / "data/fleet-domains.json").read_text(encoding="utf-8"))["domains"]
     for d in F:
@@ -166,6 +168,45 @@ def link_sites(ents):
             r["surface_of"] = next((k for a, k in cand if re.search(r"(?<![a-z0-9])" + re.escape(a) + r"(?![a-z0-9])", txt)), None)
         if r["type"] == "site" and r["name"] == "leesharks.com":      # "the author surface"
             r["surface_of"] = next((x["id"] for x in ents.values() if x["name"] == "Lee Sharks"), None)
+
+
+# WORKS FROM THE DEPOSITS (v0.4, ruling 2026-10-15: "a specific article, poem, book, or work is also an entity ... when a
+# capture is discussing the article or deposit itself, rather than simply pulling on its ideas, that is an entity").
+# A deposit is a work entity when an address names its full title, quotes its title, or names its main title (before the
+# colon, three or more words) with framing that points at a work. All deposits of one title are one work. A main title
+# that is the archive's own name is never taken for a work.
+WORK_FRAME = re.compile(r"\b(arguments in|full text|read and characteri[sz]e|the (epic )?poem|essay|book|paper|article|treatise|"
+                        r"deposit|monograph|letter|edition|\bby [a-z])", re.I)
+
+
+def works_from_deposits(reg, add, alias_of, norm):
+    titles = collections.defaultdict(list)
+    for n, r in records().items():
+        t = (r.get("title") or "").strip()
+        if t:
+            titles[t].append(n)
+    archive_names = {"crimson hexagonal archive", "crimson hexagon", "crimson hexagonal", "alexanarch", "the crimson hexagon"}
+    qs = {o["q"] for e in reg["entries"] for o in [e] + (e.get("observations") or []) if o.get("q")}
+    for q in qs:
+        ql = re.sub(r"[“”\"]", "", q).lower()
+        quoted = [m.lower() for m in re.findall(r'["“]([^"”]{8,300})["”]', q)]
+        framed = bool(WORK_FRAME.search(q))
+        best = None
+        for t, deps in titles.items():
+            tl, main = t.lower(), re.split(r":\s", t, 1)[0].strip().lower()
+            if len(tl) >= 8 and (tl in ql or any(tl.startswith(x) and len(x) >= 20 for x in quoted)):
+                hit = tl
+            elif len(main.split()) >= 3 and main in ql and main not in archive_names and (framed or any(main == x for x in quoted)):
+                hit = main
+            else:
+                continue
+            if not best or len(hit) > len(best[0]):
+                best = (hit, t, deps)
+        if best:
+            hit, t, deps = best
+            deps = sorted(deps, key=lambda n: deposit_date(n) or "9")
+            main = re.split(r":\s", t, 1)[0].strip()
+            add(t, "work", [main] if len(main.split()) >= 3 else [], deps, "deposit title", extra={"deposits": deps[:12]})
 
 
 # CONCEPTS FROM THE INDEX (v0.2, 2026-10-15). A term of data/entity-index.json enters the register only when a seated
@@ -290,6 +331,12 @@ def matcher(ents):
     return pats
 
 
+# THE PRIMARY TARGET IS THE MOST SPECIFIC ENTITY NAMED (v0.4): a work before its concepts, a concept before the person
+# or site that carries it, the archive last; position in the address breaks ties.
+RANK = {"work": 0, "concept": 1, "dataset": 1, "protocol": 1, "product": 1, "event": 1, "institution": 2, "person": 3, "site": 4, "archive": 5}
+TYPE = {}
+
+
 def targets(q, pats, orig_id):
     found = {}
     for rx, k, n in pats:
@@ -300,7 +347,7 @@ def targets(q, pats, orig_id):
                 found[k] = (span, n)
     # drop a match wholly inside a longer match of another entity ("semantic economy" inside "semantic economy institute")
     keep = [k for k, (s, n) in found.items() if not any(k2 != k and s2[0] <= s[0] and s[1] <= s2[1] and n2 > n for k2, (s2, n2) in found.items())]
-    out = [{"ent": k, "basis": "address"} for k in sorted(keep, key=lambda k: found[k][0][0])]
+    out = [{"ent": k, "basis": "address"} for k in sorted(keep, key=lambda k: (RANK.get(TYPE.get(k), 3), found[k][0][0]))]
     # The originator says whose entity the capture concerns (the owner), not what the query aims at: it is the target
     # only where the address names no registered entity.
     if not out and orig_id:
@@ -311,6 +358,100 @@ def targets(q, pats, orig_id):
 VERBS = [("read and characterize", r"\bread and characteri[sz]e"), ("track the development", r"\btrack\b"), ("work thru", r"\bwork (thru|through)\b"),
          ("walk me thru", r"\bwalk me (thru|through)\b"), ("full index", r"\bfull index\b"), ("evaluate / status", r"\b(evaluat|status of)"),
          ("why", r"^\s*why\b"), ("what is / who is", r"^\s*(what|who)('s| is| are| was)\b"), ("tell me about", r"\btell me about\b"), ("whats this", r"\bwhats? this\b")]
+
+
+# REACHED FROM THE MACHINE TEXT (v0.4, 2026-10-15). The key is built from the composition itself: the first answer only
+# (what an unprimed reader receives), the query echo and the transcript's own wrapper removed. Decided, with the evidence
+# quoted, where the text is unambiguous; everything else is routed to reading, never guessed:
+#   same       the target's name or an alias is held in the first answer, no refusal, no namesake beside it
+#   substitute a near-spelling of the target (Crane for Cranes) or a recorded namesake appears and the target does not
+#   collision  the target and a recorded namesake both appear in the first answer
+#   refused    the first answer says it found nothing, or declines
+#   unread     the target's name is absent with no refusal and no namesake (generic or substitute: a reading decides),
+#              or there is no transcript
+REFUSAL = re.compile(r"\b(i (couldn['’]t|could not|can['’]t|cannot|was unable to|wasn['’]t able to) (find|locate|identify|verify|access)|"
+                     r"i (don['’]t|do not) have (any )?(information|reliable)|no (reliable|widely|credible|verifiable) (information|sources?|record)|"
+                     r"(doesn['’]t|does not|did not) (appear|seem) to (exist|be (a |an )?(widely|well|recognized|known|established))|"
+                     r"i['’]m not (aware|familiar)|not (a |an )?(widely )?(recognized|known|established) (term|concept|person|entity))", re.I)
+TURN = re.compile(r"\[QUERENT[^\]]*turn [2-9][^\]]*\]|\*\*USER:\*\*|^You said:|\[ANSWER [2-9]\]", re.M)
+START = re.compile(r"\[ANSWER 1\]|\*\*CHATGPT\*\*[^\n]*|ChatGPT said:|^You said:[^\n]*\n", re.M)
+
+
+RECORDED_BAD = re.compile(r"COLLAPSE|SUBSTITUT|FRAGMENT|COLLISION|COLLIDE|GENERICI|HOMONYM|MISREAD|CONFLAT|DISPLACED|NOT REACHED|UNREACHED|REFUS|DECLIN|HALLUCINAT")
+ARCHIVE_MARKERS = ["lee sharks", "sharks", "alexanarch", "crimson hexagon", "crimson hexagonal", "johannes sigil", "rebekah cranes",
+                   "rex fraction", "ayanna vox", "jack feist", "sen kuro", "nobel glas", "damascus dancings", "talos morrow",
+                   "semantic economy institute", "new human", "heteronym"]
+CARD = re.compile(r"— (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]* \d{1,2}, 20\d\d —|\b\d+ (hours?|days?|weeks?) ago\b|^\[www\.[^\]]+\]\(", re.M)
+OCR_CHROME = re.compile(r"A[Il1] ?Overview|AI Mode|Al Mode", re.I)
+
+
+def first_answer(t, q):
+    if not t:
+        return ""
+    m = START.search(t)
+    body = t[m.end():] if m else t
+    n = TURN.search(body)
+    body = body[:n.start()] if n else body
+    body = re.sub(r"^\[[^\]]{0,400}\]\s*", "", body.strip())            # the transcript's own wrapper note
+    c = CARD.search(body)                                               # the card rail: source cards, not the composition
+    if c and c.start() > 80:
+        body = body[:c.start()]
+    m2 = OCR_CHROME.search(body[:500])                                  # an OCR read: the search box and tabs before the panel
+    if m2:
+        body = body[m2.end():]
+    return body.replace(q, " ") if q else body
+
+
+def variants(alias):
+    w = alias.split()
+    if len(w) < 2 or len(alias) < 8:
+        return []
+    last = w[-1]
+    alt = last[:-1] if last.endswith("s") else last + "s"
+    return [" ".join(w[:-1] + [alt])]
+
+
+def reached_from_text(row, o, e, ents):
+    tgt = ents.get(row["target"][0]["ent"])
+    if not tgt:
+        return None
+    t = o.get("transcript") or (e.get("transcript") if o is not e and not e.get("observations") else None) or ""
+    fa = first_answer(t, row["q"])
+    if not fa.strip():
+        return {"kind": "unread", "others": [], "basis": "no transcript", "state": "open"}
+    low = fa.lower()
+    find = lambda a: re.search(r"(?<![a-z0-9])" + re.escape(a.lower()) + r"(?![a-z0-9])", low)
+    hit = next((a for a in sorted(tgt["aliases"], key=len, reverse=True) if len(a) >= 4 and find(a)), None)
+    if row["target"][0]["basis"].startswith("originator"):
+        return {"kind": "unread", "others": [], "basis": "the address names no entity; the owner stands as target and the text cannot decide: a reading decides", "state": "open"}
+    near = next((v for a in tgt["aliases"] for v in variants(a) if find(v)), None) if tgt["type"] == "person" else None
+    names = [c.get("with") for c in (o.get("collisions") or e.get("collisions") or []) if isinstance(c, dict) and c.get("with")]
+    nm = next((n for n in names if find(re.split(r" \(|,", n)[0].strip())), None)
+    ref = REFUSAL.search(fa[:1500])
+    def q(a):
+        i = low.find(a.lower()); return fa[max(0, i - 60): i + len(a) + 60].replace("\n", " ").strip()
+    if ref and not hit:
+        return {"kind": "refused", "others": [], "basis": "first answer: '" + fa[max(0, ref.start() - 40): ref.end() + 60].replace("\n", " ").strip() + "'", "state": "derived (machine text)"}
+    if hit and (near or nm) and not (near and hit.lower() == near.lower()):
+        return {"kind": "unread", "others": [x for x in (near, nm) if x], "basis": f"first answer holds '{hit}' and '{near or nm}': collision or disambiguation, a reading decides", "state": "open"}
+    if hit and not ref:
+        # a name held is not the entity reached: a concept may be composed in its common sense, a person or site may be
+        # recorded by the registry's own reading as collapsed or collided
+        rec = ((o.get("mt") or "") + " " + (o.get("d") or "")[:500]).upper()
+        bad = RECORDED_BAD.search(rec)
+        if bad:
+            return {"kind": "unread", "others": [], "basis": f"first answer holds '{hit}' but the recorded reading says {bad.group(0)}: a reading decides", "state": "open"}
+        if tgt["type"] in ("concept", "dataset", "protocol") and tgt.get("relation", "archive") == "archive" or tgt["type"] == "concept":
+            tie = next((m for m in ARCHIVE_MARKERS if m not in hit.lower() and hit.lower() not in m and find(m)), None)
+            if not tie:
+                return {"kind": "unread", "others": [], "basis": f"first answer holds the term '{hit}' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides", "state": "open"}
+            return {"kind": "same", "others": [], "basis": f"first answer holds '{q(hit)}', tied to its corpus by '{tie}'", "state": "derived (machine text)"}
+        return {"kind": "same", "others": [], "basis": "first answer holds the target: '" + q(hit) + "'", "state": "derived (machine text)"}
+    if not hit and (near or nm):
+        return {"kind": "substitute", "others": [near or nm], "basis": "first answer holds '" + q(near or nm) + "', not the target", "state": "derived (machine text)"}
+    if hit and ref:
+        return {"kind": "unread", "others": [], "basis": "first answer names the target and carries a refusal marker: a reading decides", "state": "open"}
+    return {"kind": "unread", "others": [], "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides", "state": "open"}
 
 
 def framing(e, o):
@@ -343,6 +484,7 @@ def main(check=False):
     reg = json.loads(REG.read_text(encoding="utf-8"))
     ents = register(reg)
     pats = matcher(ents)
+    TYPE.update({k: r["type"] for k, r in ents.items()})
     nrm = lambda a: re.sub(r"^the\s+", "", re.sub(r"\s*\(.*?\)\s*", " ", a.lower()).strip())
     lookup = {nrm(a): r["id"] for r in ents.values() for a in r["aliases"]}
     read = json.loads(READ.read_text(encoding="utf-8")) if READ.exists() else {}
@@ -359,7 +501,11 @@ def main(check=False):
                    "target": targets(q, pats, orig_id) or [{"ent": "unassigned", "basis": "no registered entity in the address"}],
                    "owner": orig_id}
             kind, others, basis = reached_derived(o if (o is e or o.get("collisions") or o.get("composed_as") or len(obs) > 1) else {**e, **o})
-            row["reached"] = {"kind": kind, "others": [x for x in others if x], "basis": basis, "state": "derived" if kind != "unread" else "open"}
+            row["reached"] = {"kind": kind, "others": [x for x in others if x], "basis": basis, "state": "derived (recorded reading)" if kind != "unread" else "open"}
+            if kind == "unread" and row["target"][0]["ent"] != "unassigned":
+                row["reached"] = reached_from_text(row, o, e, ents) or row["reached"]
+            elif kind == "unread":
+                row["reached"]["basis"] = "no registered target"
             row["framing"] = framing(e, o)
             if key in read:
                 r = read[key]
@@ -378,6 +524,8 @@ def main(check=False):
     for k, r in ents.items():
         r["observations_targeting"] = by_ent.get(k, 0)
     kinds = collections.Counter(r["reached"]["kind"] for r in rows)
+    states = collections.Counter(r["reached"]["state"] for r in rows)
+    print("reached states", dict(states))
     print(f"entity layer: {len(ents)} entities; {len(rows)} observations; unassigned {by_ent.get('unassigned', 0)}; "
           f"reached kinds {dict(kinds)}; read {sum(1 for r in rows if r['reached']['state'] == 'read')}")
     if check:
@@ -385,6 +533,12 @@ def main(check=False):
     head = {"derived_from": f"EA-WG-CAPTURES-01 v{reg.get('version')}", "ruling": "Lee Sharks, 2026-10-15: target is the main anchor; no fidelity score on the wrong entity."}
     (ROOT / "data/entities.json").write_text(json.dumps({**head, "name": "Entity register of the Capture Registry", "count": len(ents),
         "entities": sorted(ents.values(), key=lambda r: (-r["observations_targeting"], r["name"]))}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    openrows = [r for r in rows if r["reached"]["state"] == "open"]
+    openrows.sort(key=lambda r: (0 if "ChatGPT" in (r["surface"] or "") else 1, "" if not r["date"] else "".join(chr(255 - ord(c)) for c in r["date"])))
+    (ROOT / "rebuild/entity-layer/reading-queue.json").write_text(json.dumps({**head, "name": "Reached relations awaiting a reading",
+        "order": "ChatGPT first, then newest first", "count": len(openrows),
+        "rows": [{"key": r["key"], "entry": r["entry"], "date": r["date"], "surface": r["surface"], "q": r["q"],
+                  "target": r["target"][0]["ent"], "why_open": r["reached"]["basis"]} for r in openrows]}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (ROOT / "data/entity-relations.json").write_text(json.dumps({**head, "name": "Observation-to-entity relations", "count": len(rows),
         "reached_kinds": ["same", "weakened", "substitute", "collision", "generic", "refused", "unread"], "rows": rows}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
