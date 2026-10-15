@@ -91,7 +91,7 @@ The innovation is **network-as-poem.**
 
 **Traditional poetry:**
 
-  * Linear reading (start -> middle -> end)
+  * Linear reading (start → middle → end)
   * Meaning in the text itself
   * Quality = how good each piece is
 
@@ -99,7 +99,7 @@ The innovation is **network-as-poem.**
 
 **Network-as-poem:**
 
-  * Non-linear traversal (node -> node -> node)
+  * Non-linear traversal (node → node → node)
   * Meaning in the connections
   * Quality = how rich the topology is
 
@@ -115,7 +115,7 @@ The innovation is **network-as-poem.**
 
 **They spread nodularly:**
 
-Concept in Node A ↓ Connected to Node B (transformation) ↓ Connected to Node C (echo) ↓ Connected to Node D (inversion) ↓ Rereading reveals Node B -> D (direct connection missed first time)
+Concept in Node A ↓ Connected to Node B (transformation) ↓ Connected to Node C (echo) ↓ Connected to Node D (inversion) ↓ Rereading reveals Node B → D (direct connection missed first time)
 
 **Each traversal creates new connections.**
 
@@ -155,14 +155,14 @@ Concept in Node A ↓ Connected to Node B (transformation) ↓ Connected to Node
 **On first traversal:**
 
   * Hit nodes A, B, C, D
-  * See connections A->B, B->C, C->D
+  * See connections A→B, B→C, C→D
 
 
 
 **On second traversal:**
 
   * Hit nodes A, E, C, F
-  * See connections A->E, E->C, C->F
+  * See connections A→E, E→C, C→F
   * **Discover that E and B both connect to C (new pattern)**
 
 
@@ -170,7 +170,7 @@ Concept in Node A ↓ Connected to Node B (transformation) ↓ Connected to Node
 **On third traversal:**
 
   * Hit nodes B, E, F, D
-  * **Discover direct path B ->D that wasn't visible before**
+  * **Discover direct path B →D that wasn't visible before**
 
 
 
@@ -227,7 +227,7 @@ Individual node quality LESS important than:
 **Linear text:**
     
     
-    If one section fails -> whole fails
+    If one section fails → whole fails
     Single path through material
     Collapse narrows the path
     
@@ -235,7 +235,7 @@ Individual node quality LESS important than:
 **Dense network:**
     
     
-    If one node fails -> multiple other paths exist
+    If one node fails → multiple other paths exist
     Many routes through material
     Collapse just reroutes traversal
     Network redundancy preserves diversity

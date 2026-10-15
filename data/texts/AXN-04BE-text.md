@@ -44,7 +44,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2025/10/socrates-let-my-teac
 
 ---
 
-# Socrates -- Let My Teacher Go From Hell
+# Socrates — Let My Teacher Go From Hell
 
 **Versions: Midwest Review / Arion / Hopkins Review**
 
@@ -72,14 +72,14 @@ obsessed with riddles,
 the rags of truth yr only lovers,  
 the tattered pink flowers yr steadfast friends
 
-bagman muttering heaven--yr statuettes stuffed  
-with thoughts--
+bagman muttering heaven—yr statuettes stuffed  
+with thoughts—
 
 ugly Silenus whose shopping cart creaks  
-scrap metal images, rusted saints--
+scrap metal images, rusted saints—
 
 unbathed saints of contrariness,  
-snub-nosed saints of contention--  
+snub-nosed saints of contention—  
 icons bright with power!
 
 finally succumbing to the wasting disease,  
@@ -90,7 +90,7 @@ yr fiery longing for goodness
 ## ii.
 
 wizened old satyr  
-hasn't bathed in days--  
+hasn’t bathed in days—  
 in the doorway  
 or underneath the colonnade  
 thinking about what to say
@@ -105,7 +105,7 @@ unable to give birth!
 cypher of history  
 gadfly of heaven  
 ignorant genius  
-whose daemon declared a "stop" or a "go"  
+whose daemon declared a “stop” or a “go”  
 whose ignorance overswelled itself
 
 unbathed but lovely beauty  
@@ -113,12 +113,12 @@ bright-faced wisdom shone
 
 wet nurse of ages  
 yr incomparable love  
-(who did not feel up boys--  
-if only they'd read what it says!)
+(who did not feel up boys—  
+if only they’d read what it says!)
 
 you who loved only wisdom,  
 and the Good,  
-who ached for a vision of Beauty--
+who ached for a vision of Beauty—
 
 who drank the poison in one fell draught,  
 and died in the honest hope,
@@ -129,9 +129,9 @@ could lead to You.
 
 eloquent bumbler,  
 babbler of truth  
-babbler, betrayer of lies--
+babbler, betrayer of lies—
 
-my dearest First Teacher--my Socrates, friend!--  
+my dearest First Teacher—my Socrates, friend!—  
 irascible asker of questions  
 courage-giver, even in death  
 you refused to lose faith in reason
@@ -142,7 +142,7 @@ you refused to lose faith in reason
 
 dark with age,  
 and mud,  
-and a mission--
+and a mission—
 
 undying lust for _logoi_  
 tempered with doubt!  
@@ -151,11 +151,11 @@ you displayed without shame on yr sleeve
 
 hungry still, unafraid of the hemlock,  
 pacing beyond, merest shadow of sadness,  
-in which your fierce hope shone more brightly--
+in which your fierce hope shone more brightly—
 
 a chariot of fables to carry you home  
 cheap copper myths on yr lips  
-passage beyond the tar-deep Styx--
+passage beyond the tar-deep Styx—
 
 who in relief unraveled rags of body,  
 tossed in incinerator-mouths of Orcus  
@@ -164,7 +164,7 @@ hope in death at last set free
 
 beyond immaterial rings of Saturn  
 to the brink where creation coughs  
-and beyond shines only Father Mind--
+and beyond shines only Father Mind—
 
 at the last moment recalling yr weight,  
 and tragic with gravity sinking,  
@@ -176,10 +176,10 @@ where yr spirit, pained, still paces.
 
 faithful lover of hard-to-touch truth,  
 suitor of long-sought substance,  
-admirer-at-a-distance of Actual Cosmos--
+admirer-at-a-distance of Actual Cosmos—
 
 just a crumb from the table of godheads ironic  
-an anchor, a tiny crown of sarcasm--
+an anchor, a tiny crown of sarcasm—
 
 outcast truth-hoarder, even beyond,  
 who hoarded the truth for its own sake
@@ -193,7 +193,7 @@ alone with yrself and yr questions
 beset by ghosts of thankless Athens  
 whispering unseen accusers  
 beset by longing,  
-love that cuts--
+love that cuts—
 
 the spiny desire consumed you,  
 a Trojan Horse of traitorous gifts
@@ -204,7 +204,7 @@ even in death you searched out answers
 overturning the furthest boundary stones  
 but finding no bars of flame at the edge,  
 only thresholds of dust bordering more dust,  
-and beyond that--  
+and beyond that—  
 vast tracts of dust without limit!
 
 * * *
@@ -213,7 +213,7 @@ vast tracts of dust without limit!
 
 Socrates, sad-faced heathen  
 godlike best-of-Achaeans,  
-death-doomed pagan apostle--
+death-doomed pagan apostle—
 
 you deserved much better  
 than yr heartbroken dome of murk-dim matter  
@@ -224,11 +224,11 @@ you deserved much better than the jerky limbs
 of your image-thin ghosts of answers  
 better than yr hope-stripped courage of kindness
 
-you who offered yr human power--  
-imperfect--yes! but total, entire
+you who offered yr human power—  
+imperfect—yes! but total, entire
 
 to the tattered Muse of wisdom  
-drink offering to the gods of right action--
+drink offering to the gods of right action—
 
 * * *
 
@@ -245,11 +245,11 @@ return to you.
 may some bright hope give birth.
 
 my one true philosopher,  
-precious wordfather born on earth--
+precious wordfather born on earth—
 
-in me--  
-in me i'll beg my unseen father--  
-in me, you'll find yr way home.
+in me—  
+in me i’ll beg my unseen father—  
+in me, you’ll find yr way home.
 
 * * *
 

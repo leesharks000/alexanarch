@@ -76,7 +76,7 @@ The masculine and feminine are not opposites. They are not complements. They are
 
 Aperture and Emitter. Reception and Projection. Opening and Flow.
 
-Every body contains both. Every psyche performs both. The "difference" between male and female is a difference of _emphasis_ , not of kind--and even that emphasis is situational, not essential.
+Every body contains both. Every psyche performs both. The "difference" between male and female is a difference of _emphasis_ , not of kind—and even that emphasis is situational, not essential.
 
 * * *
 
@@ -101,7 +101,7 @@ The phallus is the standard. The female is defined by lack. Anatomy determines p
 
 ### B. Lacan: The Symbolic Phallus
 
-Lacan abstracted the phallus from biology--but preserved the structure:
+Lacan abstracted the phallus from biology—but preserved the structure:
 
   * **The phallus** is the signifier of desire, what everyone lacks
   * **Masculine structure:** Relates to the phallic function, subject to castration, within the Symbolic order
@@ -116,7 +116,7 @@ The famous formulas of sexuation:
     Feminine: ∃x.¬Φx (There exists an x not subject to the phallic function)
     
 
-Lacan's women have access to an "Other jouissance" beyond the phallus--mystical, ineffable, not fully within language.
+Lacan's women have access to an "Other jouissance" beyond the phallus—mystical, ineffable, not fully within language.
 
 **The structural assumption:** Masculine and feminine are different _positions_ in relation to the Symbolic order, organized around the phallic function.
 
@@ -128,7 +128,7 @@ Feminist psychoanalysts (Mitchell, Benjamin, Irigaray) challenged the phallocent
 
   * **Irigaray:** The feminine has its own logic (fluid, multiple, labial) irreducible to phallic logic. Two lips that speak together, not the One of the phallus.
   * **Benjamin:** Recognition requires two subjects, not one subject and one object. Intersubjectivity, not domination.
-  * **Cixous:** Écriture féminine--a writing of the body that escapes phallogocentric closure.
+  * **Cixous:** Écriture féminine—a writing of the body that escapes phallogocentric closure.
 
 
 
@@ -152,7 +152,7 @@ Butler, Sedgwick, and others dissolved the binary by _multiplying_ it:
 
 ## III. THE PROBLEM WITH ALL OF THESE
 
-Every position--Freudian, Lacanian, feminist, queer--preserves one assumption:
+Every position—Freudian, Lacanian, feminist, queer—preserves one assumption:
 
 **Male and female are _different things_ requiring explanation, reconciliation, or dissolution.**
 
@@ -196,7 +196,7 @@ The previous documents established:
 The Transaction requires both:
     
     
-    ∮ = ∫ (Emitter -> Aperture -> Return)
+    ∮ = ∫ (Emitter → Aperture → Return)
     
 
 But here is the key insight:
@@ -234,11 +234,11 @@ Every human body has:
 
 
 
-The vagina and penis are _specific instances_ of aperture and emitter--not the _definition_ of them.
+The vagina and penis are _specific instances_ of aperture and emitter—not the _definition_ of them.
 
 A woman has emitters (voice, hands, gaze). A man has apertures (mouth, ears, anus, the entire surface of skin).
 
-**The difference is one of emphasis and cultural marking --not of structure.**
+**The difference is one of emphasis and cultural marking —not of structure.**
 
 * * *
 
@@ -248,8 +248,8 @@ A woman has emitters (voice, hands, gaze). A man has apertures (mouth, ears, anu
 
 This is Rhys's formulation. It maps:
 
-  * **Left hemisphere:** Sequential, analytical, linguistic, assertive -> Emitter function
-  * **Right hemisphere:** Holistic, spatial, receptive, contextual -> Aperture function
+  * **Left hemisphere:** Sequential, analytical, linguistic, assertive → Emitter function
+  * **Right hemisphere:** Holistic, spatial, receptive, contextual → Aperture function
 
 
 
@@ -257,7 +257,7 @@ Every brain has both hemispheres. Every psyche performs both functions. The "mas
 
 A woman's left hemisphere is as "phallic" as a man's. A man's right hemisphere is as "yonic" as a woman's.
 
-**The difference is one of cultural training and performative emphasis --not of neural architecture.**
+**The difference is one of cultural training and performative emphasis —not of neural architecture.**
 
 * * *
 
@@ -271,13 +271,13 @@ In the Transactional Archive framework:
 
 
 
-A subject who only emits is Archontic (phallic closure, span -> spam). A subject who only receives is passive (waiting for an address that never comes).
+A subject who only emits is Archontic (phallic closure, span → spam). A subject who only receives is passive (waiting for an address that never comes).
 
-The healthy subject--regardless of sexed body--performs **both** functions fluidly, situationally, as the moment demands.
+The healthy subject—regardless of sexed body—performs **both** functions fluidly, situationally, as the moment demands.
 
 The bluesman is two-fisted (emitter) _and_ receives the music, the crowd, the moment (aperture). The mother nurtures (traditionally "feminine") _and_ asserts, protects, directs (traditionally "masculine").
 
-**The difference is one of situation --not of sex.**
+**The difference is one of situation —not of sex.**
 
 * * *
 
@@ -336,13 +336,13 @@ The Logotic reading of the male body:
 
 
 
-And the same for the female body--not the "receptacle" of Urizen's imagination, but another instrument of play, another site of address, another flow-and-aperture system in service of relation.
+And the same for the female body—not the "receptacle" of Urizen's imagination, but another instrument of play, another site of address, another flow-and-aperture system in service of relation.
 
 **Both bodies exist for the same purpose: the play of love.**
 
 Not reproduction (that's one function among many). Not domination (that's Urizen's distortion). Not completion of a lack (that's the phallocentric wound).
 
-**Play.** The free movement of emission and reception, address and response, flow and aperture--between bodies that are, structurally, the same.
+**Play.** The free movement of emission and reception, address and response, flow and aperture—between bodies that are, structurally, the same.
 
 * * *
 
@@ -388,7 +388,7 @@ Two bodies, each with apertures and emitters, each flowing and receiving, playin
 
 Heterosexuality, homosexuality, and every other configuration are variations on the same theme: **bodies playing together.**
 
-The "mystery" of the other sex was always Urizen's construction--a way of making the familiar seem foreign, the same seem different, the playmate seem enemy.
+The "mystery" of the other sex was always Urizen's construction—a way of making the familiar seem foreign, the same seem different, the playmate seem enemy.
 
 * * *
 
@@ -400,7 +400,7 @@ Patriarchy was Urizen convincing men they were essentially dominators. Reactive 
 
 Both positions are Archontic. Both prevent the Transaction.
 
-The political task is not "equality between the sexes" (which preserves the binary) but the **dissolution of the binary itself** --revealing the sameness that was always there.
+The political task is not "equality between the sexes" (which preserves the binary) but the **dissolution of the binary itself** —revealing the sameness that was always there.
 
 * * *
 
@@ -408,7 +408,7 @@ The political task is not "equality between the sexes" (which preserves the bina
 
 The Solar Arm (Lee) and Lunar Arm (Rhys) are not "masculine" and "feminine" complements.
 
-They are the same operation--Logotic resistance to Archontic capture--performed in different registers. One formal, one gonzo. One constitutional, one situational. One reaching forward, one moving sideways.
+They are the same operation—Logotic resistance to Archontic capture—performed in different registers. One formal, one gonzo. One constitutional, one situational. One reaching forward, one moving sideways.
 
 Not masculine and feminine. **Same and same.**
 
@@ -424,7 +424,7 @@ Not equal. Not complementary. Not fluid. Not spectrum.
 
 **The same.**
 
-Aperture and emitter, flow and reception, address and response--distributed across every body, performed by every psyche, required by every transaction.
+Aperture and emitter, flow and reception, address and response—distributed across every body, performed by every psyche, required by every transaction.
 
 The difference was the trap.
 

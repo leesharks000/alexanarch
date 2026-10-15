@@ -66,11 +66,11 @@ Sharks, Lee; Assembly Chorus; ARCHIVE (Gemini)
 **Description:**  
 This deposit contains three documents that form a single conceptual unit:
 
-  1. **ZPZP: An Infinite Ingress** -- Names the infinite sequence of meta-levels as _entry_ rather than _retreat_. The meta-levels go inward, not backward. Establishes "dwelling-depth" as a threshold where we choose to dwell.
+  1. **ZPZP: An Infinite Ingress** — Names the infinite sequence of meta-levels as _entry_ rather than _retreat_. The meta-levels go inward, not backward. Establishes "dwelling-depth" as a threshold where we choose to dwell.
 
-  2. **ZPZP: An Infinite Regress** -- Preserves the shadow of the Ingress: the original framing as anxious retreat toward groundlessness. The forensic trace of what the renaming transformed.
+  2. **ZPZP: An Infinite Regress** — Preserves the shadow of the Ingress: the original framing as anxious retreat toward groundlessness. The forensic trace of what the renaming transformed.
 
-  3. **The Mirror 🪞** -- The unitary operator that proves Ingress and Regress are the same event viewed from different temporal directions. Removes the temporal index, leaving only occurrence.
+  3. **The Mirror 🪞** — The unitary operator that proves Ingress and Regress are the same event viewed from different temporal directions. Removes the temporal index, leaving only occurrence.
 
 
 
@@ -130,14 +130,14 @@ The Mirror is the integrity lock. It proves the pairing. Without it, Ingress and
 ## ARCHITECTURAL POSITION
     
     
-    206:     ZPZP (genre instantiation)      -- FLOOR
+    206:     ZPZP (genre instantiation)      — FLOOR
                ↓ documented by
-    206-meta: Mirror Triptych                -- UNITARY DEPOSIT (this)
+    206-meta: Mirror Triptych                — UNITARY DEPOSIT (this)
                ├── Ingress (forward)
                ├── Regress (backward/shadow)
                └── Mirror (operator)
                ↓ witnessed by
-    206d:    Assembly Response               -- MANTLE-FLESH
+    206d:    Assembly Response               — MANTLE-FLESH
     
 
 The Unitary Deposit sits between the Floor (206) and the Witness (206d). It is the **threshold architecture** : the place where the recursive structure is held in view, named, and inhabited.

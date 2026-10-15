@@ -136,6 +136,26 @@ def _held_pdf(dep: dict):
 
 
 
+
+def _repaired_canonical(d):
+    """2026-10-15: after a recorded body repair the canonical store (registry full_text_path, which the AXN hash is
+    taken from) IS the repaired text, and the other store holds the text before the repair. Longest-wins would pick
+    the older copy whenever the repair shortened the text (a wrong body replaced, "--" become "—"). For a record
+    carrying a repair record whose canonical file hashes to the registry hash, use the canonical file. Every other
+    record keeps longest-wins until the two stores are mapped (data/repair-maps/two-stores-2026-10-15.json)."""
+    import hashlib
+    rs = d.get('restoration') or {}
+    if not (rs.get('restored_at') == '2026-10-15' or rs.get('reconverted') or d.get('text_reconverted')):
+        return None
+    fp = (d.get('full_text_path') or '').lstrip('/')
+    p = REPO_ROOT / fp if fp else None
+    if not p or not p.exists():
+        return None
+    b = p.read_bytes()
+    if hashlib.sha256(b).hexdigest() != d.get('hash'):
+        return None
+    return b.decode('utf-8', 'replace'), fp
+
 def _load_body(hex_id: str, dep_num: int) -> tuple[str, str]:
     """Load deposit body from the LONGEST source across BOTH stores
     (data/deposits/AXN-{hex}.md and data/texts/AXN-{hex}-text.md).
@@ -586,7 +606,7 @@ def main() -> int:
         out_name = f"AXN-{hex_id.zfill(4) if hex_id else n}.pdf"
         out_path = PAPERS_DIR / out_name
 
-        body, body_path = _load_body(hex_id, n)
+        body, body_path = _repaired_canonical(d) or _load_body(hex_id, n)
         bs_cls = (d.get("body_status") or {}).get("class", "full")
 
         # FACSIMILE DEPOSITS ARE NOT RENDERED. When the deposit's work IS a

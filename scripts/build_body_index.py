@@ -126,6 +126,26 @@ def _extract_capitalized_phrases(text: str) -> list[str]:
 
 TEXTS_DIR = REPO_ROOT / "data" / "texts"
 
+
+def _repaired_canonical(d):
+    """2026-10-15: after a recorded body repair the canonical store (registry full_text_path, which the AXN hash is
+    taken from) IS the repaired text, and the other store holds the text before the repair. Longest-wins would pick
+    the older copy whenever the repair shortened the text (a wrong body replaced, "--" become "—"). For a record
+    carrying a repair record whose canonical file hashes to the registry hash, use the canonical file. Every other
+    record keeps longest-wins until the two stores are mapped (data/repair-maps/two-stores-2026-10-15.json)."""
+    import hashlib
+    rs = d.get('restoration') or {}
+    if not (rs.get('restored_at') == '2026-10-15' or rs.get('reconverted') or d.get('text_reconverted')):
+        return None
+    fp = (d.get('full_text_path') or '').lstrip('/')
+    p = REPO_ROOT / fp if fp else None
+    if not p or not p.exists():
+        return None
+    b = p.read_bytes()
+    if hashlib.sha256(b).hexdigest() != d.get('hash'):
+        return None
+    return b.decode('utf-8', 'replace'), fp
+
 def _load_body(hex_id: str, dep_num: int, ftp: str | None = None) -> tuple[str, str]:
     """Return (body_text, path_used) from the LONGEST body across BOTH stores.
 
@@ -185,7 +205,7 @@ def build(dry_run: bool = False, min_phrase_freq: int = 2) -> int:
             hex_id = axn.split(":")[1].split(".")[0]
         hex_id = hex_id or d.get("hex", "") or ""
 
-        body_text, used_path = _load_body(hex_id, n, d.get('full_text_path'))
+        body_text, used_path = _repaired_canonical(d) or _load_body(hex_id, n, d.get('full_text_path'))
         if not body_text:
             body_missing.append(n)
             continue
