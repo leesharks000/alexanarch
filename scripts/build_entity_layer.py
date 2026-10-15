@@ -425,7 +425,7 @@ def reached_from_text(row, o, e, ents):
     t = o.get("transcript") or (e.get("transcript") if o is not e and not e.get("observations") else None) or ""
     fa = first_answer(t, row["q"])
     if not fa.strip():
-        return {"kind": "unread", "others": [], "basis": "no transcript", "state": "open"}
+        return {"kind": "unread", "others": [], "basis": "no transcript", "state": "no transcript"}   # nothing to read: out of the queue
     low = fa.lower()
     find = lambda a: re.search(r"(?<![a-z0-9])" + re.escape(a.lower()) + r"(?![a-z0-9])", low)
     hit = next((a for a in sorted(tgt["aliases"], key=len, reverse=True) if len(a) >= 4 and find(a)), None)
@@ -512,7 +512,10 @@ def main(check=False):
             if kind == "unread" and row["target"][0]["ent"] != "unassigned":
                 row["reached"] = reached_from_text(row, o, e, ents) or row["reached"]
             elif kind == "unread":
-                row["reached"]["basis"] = "no registered target"
+                t_ = o.get("transcript") or (e.get("transcript") if not e.get("observations") else None)
+                row["reached"]["basis"] = "no registered target" if t_ else "no registered target; no transcript"
+                if not t_:
+                    row["reached"]["state"] = "no transcript"
             row["framing"] = framing(e, o)
             if key in read:
                 r = read[key]
