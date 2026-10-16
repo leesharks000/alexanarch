@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-16T17:46:49Z",
+  "regenerated_at": "2026-10-16T18:00:38Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "c1b16f0b1cf4f5f6831476d8ec5bf0ca60de250a50c153a5a7560ab9593cab95",
+    "mm-main-capture": "0821450430801c42abe5fbc164b5e2554d993e771dd1b889691f1e3b3c0c13ea",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2428,
-  "total_observations": 928,
+  "total_addresses": 2429,
+  "total_observations": 929,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 668,
+    "observed_address": 669,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1793,
+    "unmatched": 1794,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -67764,6 +67764,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-25",
       "latest_status": "THE K RESTORED ON CORRECTION"
+    },
+    "what is logotic programming?": {
+      "canonical_query": "what is logotic programming?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-16",
+          "status": "ONE ARTICLE FOR THE WHOLE — THE BODY OF WORK REACHED ONLY AT THE FOURTH PROMPT",
+          "surface": "ChatGPT",
+          "source_format": "Chips, site labels only: Medium (turns 1, 3, 4; the v0.4 draft, #317) and Alexanarch (turns 4, 5; the LOS paper and the v0.9–v1.2 sequence), with '+n' counts up to +7. Links named in the answers: the v0.4 proposal (turns 1, 3), the Telemetry and Conformance modules, v0.9, v1.0, v1.1, v1.2 (turn 4).",
+          "section": "Frameworks",
+          "slug": "what-is-logotic-programming-chatgpt-20261016",
+          "gallery_url": "https://www.alexanarch.org/captures/#what-is-logotic-programming-chatgpt-20261016",
+          "record_url": "https://www.alexanarch.org/captures/what-is-logotic-programming-chatgpt-20261016/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#what-is-logotic-programming-chatgpt-20261016",
+          "details_excerpt": "ONE ARTICLE FOR THE WHOLE: asked what logotic programming is, ChatGPT first doubts the term ('isn't a widely established term in mainstream computer science'), offers logic programming, then summarises the v0.4 draft (#3"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "Logotic Programming is the archive's discipline (#317 and its modules), issued under UMBML. Recorded 2026-10-16."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-16",
+      "latest_status": "ONE ARTICLE FOR THE WHOLE — THE BODY OF WORK REACHED ONLY AT THE FOURTH PROMPT"
     },
     "what is mercury": {
       "canonical_query": "what is mercury",

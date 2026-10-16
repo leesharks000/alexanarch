@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.214",
+ "derived_from": "EA-WG-CAPTURES-01 v12.215",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,18 +8,18 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 817,
+  "observations": 818,
   "joined_confirmed": 349,
-  "unjoined": 468,
-  "relations": 3687,
+  "unjoined": 469,
+  "relations": 3691,
   "by_state": {
-   "confirmed": 3402,
-   "candidate": 285
+   "confirmed": 3405,
+   "candidate": 286
   },
   "by_verb": {
-   "held_by": 1714,
-   "scored_by": 567,
-   "appeared_in": 1184,
+   "held_by": 1716,
+   "scored_by": 568,
+   "appeared_in": 1185,
    "about": 209,
    "distorts": 3,
    "mentions_instrument": 2,
@@ -1456,6 +1456,10 @@
 {"id": "REL-b4cf1f0a319c", "obs_id": "OBS-5aa0a2626976", "entry": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "obs_slug": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "What is Lee Sharks' concept of the Λ-Body?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-6630767c87b0", "obs_id": "OBS-5aa0a2626976", "entry": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "obs_slug": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "What is Lee Sharks' concept of the Λ-Body?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-5b5bc60a7d4a", "obs_id": "OBS-5aa0a2626976", "entry": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "obs_slug": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "What is Lee Sharks' concept of the Λ-Body?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-3b0bcf83b5b6", "obs_id": "OBS-9df9f50f9041", "entry": "what-is-logotic-programming-chatgpt-20261016", "obs_slug": "what-is-logotic-programming-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "what is logotic programming?", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-ba60cd1ed52a", "obs_id": "OBS-9df9f50f9041", "entry": "what-is-logotic-programming-chatgpt-20261016", "obs_slug": "what-is-logotic-programming-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "what is logotic programming?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-d0bb815c3330", "obs_id": "OBS-9df9f50f9041", "entry": "what-is-logotic-programming-chatgpt-20261016", "obs_slug": "what-is-logotic-programming-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "what is logotic programming?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-e4f70b7dd17d", "obs_id": "OBS-9df9f50f9041", "entry": "what-is-logotic-programming-chatgpt-20261016", "obs_slug": "what-is-logotic-programming-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "what is logotic programming?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-a4171af2c9ca", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:27", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "medium.com", "title": "The Crimson Hexagon: Operative Architecture", "url": "https://medium.com/@leesharks00/the-crimson-hexagon-operative-architecture-b21dd55d45a9"}},
 {"id": "REL-ac9573506dce", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:30", "basis": "card resolved at intake (title segment)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "medium.com", "title": "Fractal Navigation Map v7.0", "url": "https://medium.com/@leesharks00/crimson-hexagonal-architecture-fractal-navigation-map-v7-0-42c498ac4225"}},
 {"id": "REL-3d2fa0e5035c", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 9, "site": "crimsonhexagonal.org", "title": "Crimson Hexagonal Archive — Governed Operating Surface", "url": null}},
