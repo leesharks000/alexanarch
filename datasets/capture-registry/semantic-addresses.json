@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-16T18:00:38Z",
+  "regenerated_at": "2026-10-16T18:36:04Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "0821450430801c42abe5fbc164b5e2554d993e771dd1b889691f1e3b3c0c13ea",
+    "mm-main-capture": "b36a994caa775ff3cef73bec703a346b94981c5d08d41819684710ff1278b63e",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2429,
-  "total_observations": 929,
+  "total_addresses": 2430,
+  "total_observations": 931,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 669,
+    "observed_address": 670,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1794,
+    "unmatched": 1795,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -31496,6 +31496,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "inventory the leesharks datasets on hf, reading them as literature": {
+      "canonical_query": "inventory the leesharks datasets on hf, reading them as literature",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-16",
+          "status": "ELEVEN OF FIFTEEN — THE WORKS ADDRESSED TO THE SUMMARIZER LEFT OUT",
+          "surface": "ChatGPT",
+          "source_format": "Chips, site labels only: Datasets at Hugging Face ×16 ('+1' ×6, '+10'). Eleven dataset links in the answer. Image captions beside the headings from third-party pages (Redbubble, Archiginnasio, Lummi, Dickinson Electronic Archives, Bjørn Staal, Lions Talk Science and others).",
+          "section": "Archive",
+          "slug": "inventory-leesharks-datasets-hf-as-literature-chatgpt-20261016",
+          "gallery_url": "https://www.alexanarch.org/captures/#inventory-leesharks-datasets-hf-as-literature-chatgpt-20261016",
+          "record_url": "https://www.alexanarch.org/captures/inventory-leesharks-datasets-hf-as-literature-chatgpt-20261016/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#inventory-leesharks-datasets-hf-as-literature-chatgpt-20261016",
+          "details_excerpt": "ELEVEN OF FIFTEEN: asked to inventory the leesharks datasets on Hugging Face as literature, ChatGPT reads eleven from their cards — the archive, the rhizomes, negative-of-the-negative, the openai/math mirror — as 'a lite"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "dataset",
+        "spxi_treatment": "full",
+        "basis": "The leesharks datasets on Hugging Face are the archive's projections and works (the crimson-hexagonal-archive dataset, its rhizomes, five works composed as datasets) and one mirror. Recorded 2026-10-16."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-16",
+      "latest_status": "ELEVEN OF FIFTEEN — THE WORKS ADDRESSED TO THE SUMMARIZER LEFT OUT"
+    },
     "inverse prompt": {
       "canonical_query": "inverse prompt",
       "is_quoted": false,
@@ -33824,6 +33859,19 @@
           "record_url": "https://www.alexanarch.org/captures/lee-sharks-entity-resolution-mary-lee/#lee-sharks-full-profile-adoption",
           "mirror_gallery_url": "https://www.leesharks.com/captures/#lee-sharks-full-profile-adoption",
           "details_excerpt": "Lee Sharks is an independent scholar, poet, and cultural theorist. Affiliated as a researcher with the Johannes Sigil Institute for Comparative Poetics, they publish dense theoretical breakdowns exploring the intersectio"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-16",
+          "status": "BARE LEE SHARKS RESOLVES TO LEE SHARKS — AN AUTHOR PANEL, AND THIS REGISTRY AS SOURCE",
+          "surface": "Google AI Overview",
+          "source_format": "Two sources: goodreads.com (+1; the operator's own old blog mirror) and an Alexanarch capture page, 'Google AI Overview, 2026-10-08'. Author panel ('Author') per the operator.",
+          "section": "People",
+          "slug": "lee-sharks-aio-20261016",
+          "gallery_url": "https://www.alexanarch.org/captures/#lee-sharks-aio-20261016",
+          "record_url": "https://www.alexanarch.org/captures/lee-sharks-aio-20261016/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#lee-sharks-aio-20261016",
+          "details_excerpt": "BARE LEE SHARKS RESOLVES TO LEE SHARKS: at the bare name the Overview opens with an author panel ('Author', per the operator) and gives 'an independent scholar, poet, and world literature teacher based in the Detroit are"
         }
       ],
       "termindex": {
@@ -33839,9 +33887,16 @@
         ],
         "extraction_source": "keywords"
       },
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Lee Sharks is the archive's author (a heteronym presented as one; ORCID 0009-0000-1599-0703). Recorded 2026-10-16."
+      },
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-06-18",
-      "latest_status": "EXACT MATCH"
+      "latest_observation_date": "2026-10-16",
+      "latest_status": "BARE LEE SHARKS RESOLVES TO LEE SHARKS — AN AUTHOR PANEL, AND THIS REGISTRY AS SOURCE"
     },
     "lee sharks academic": {
       "canonical_query": "lee sharks academic",

@@ -180,6 +180,15 @@ def deposits():
             'text': text, 'text_sha256': sha(text) if text else None, 'text_words': len(text.split()) if text else 0,
         })
         _p = _partiality(d, _jrn, _kw, _ser, _n_active)
+        # THE SEATS (Lee Sharks, 2026-10-16: "tagging rows / deposits to their respective location within cha
+        # topology"). The record's place in the Crimson Hexagon travels with the passage, for the reason the
+        # partiality statement exists: only what is in the text carries into the next query.
+        _st = _seats_of(d)
+        rows[-1].update(_st['columns'])
+        if _st['sentence'] and _p.get('partiality'):
+            _p['partiality'] = _p['partiality'].rstrip() + ' ' + _st['sentence']
+        elif _st['sentence']:
+            _p['partiality'] = _st['sentence']
         rows[-1].update(_p)
         # F1 (audit 2026-09-10) — CANONICAL BYTES AND PRESENTATION AS SEPARATE COLUMNS.
         # `text` carries the contextualised representation; `text_sha256` has always been the
@@ -242,6 +251,101 @@ def deposits():
     if not ja.empty and 'deposit' in ja.columns:
         df = df.merge(ja[['deposit','journal']].rename(columns={'deposit':'deposit_number','journal':'venue'}), on='deposit_number', how='left')
     return df
+
+# ── THE TOPOLOGY OF THE CRIMSON HEXAGON (2026-10-16) ─────────────────────────────────────────────────────────
+# Source: data/hexagon-seats.json (scripts/build_hexagon_seats.py), the same file the record pages and /s/rooms/ read:
+# the interface's room assignment, the 2026-10-16 room reading (16 readers, each seat with a relation, a confidence and
+# a verbatim basis checked at its lines), and the operator's rulings of that day applied over it. A record's rooms are
+# listed primary first (the reading's primary flag). Low-confidence seats (fit by family resemblance only) are carried as PROPOSED, marked for later
+# adjudication, as /s/rooms/ shows them; they are never a record's primary seat.
+_SEATMAP = None
+def _seatmap():
+    global _SEATMAP
+    if _SEATMAP is None:
+        p = ROOT/'data/hexagon-seats.json'
+        _SEATMAP = json.load(open(p)) if p.exists() else {'rooms': {}, 'seats': {}}
+    return _SEATMAP
+
+PROPOSED_NOTE = 'proposed — low confidence, for later adjudication'
+
+def _seat_rows(n):
+    sm = _seatmap(); R = sm['rooms']; e = sm['seats'].get(str(n))
+    if not e: return [], []
+    seated, proposed = [], []
+    # The primary seat is the one the reading (or a ruling) flags primary — as the record pages and /s/rooms/ take it
+    # (build_cross_indexes.py) — listed first; a record whose seats carry no primary flag has no primary seat here.
+    # `relation` is the reading's vocabulary only; the interface's room-page role ('in the room', 'constituting') is `role`.
+    rooms = sorted(e.get('rooms') or [], key=lambda loc: not ((e.get('read') or {}).get(loc) or {}).get('primary'))
+    for loc in rooms:
+        r = R.get(loc, {}); rd = (e.get('read') or {}).get(loc) or {}
+        b = rd.get('basis') or {}
+        seated.append({'locus_id': loc, 'locus': r.get('locus', loc), 'name': r.get('name'), 'primary': bool(rd.get('primary')),
+                       'relation': rd.get('relation'), 'role': (e.get('roles') or {}).get(loc),
+                       'confidence': rd.get('confidence') or 'assigned',
+                       'basis_quote': b.get('quote'), 'basis_lines': b.get('lines'),
+                       'source': '; '.join((e.get('sources') or {}).get(loc) or [e.get('assignment') or '']),
+                       'url': r.get('url'), 'status': 'seat'})
+    for x in e.get('proposed') or []:
+        r = R.get(x['locus'], {}); b = x.get('basis') or {}
+        proposed.append({'locus_id': x['locus'], 'locus': r.get('locus', x['locus']), 'name': r.get('name'),
+                         'primary': False, 'relation': x.get('relation'), 'role': None, 'confidence': 'low',
+                         'basis_quote': b.get('quote'), 'basis_lines': b.get('lines'), 'source': 'read 2026-10-16',
+                         'url': r.get('url'), 'status': PROPOSED_NOTE})
+    return seated, proposed
+
+def _seats_of(d):
+    seated, proposed = _seat_rows(d['deposit_number'])
+    cols = {'seats': json.dumps(seated, ensure_ascii=False), 'seat_count': len(seated),
+            'primary_locus': next((x['locus'] for x in seated if x['primary']), None),
+            'primary_room': next((x['name'] for x in seated if x['primary']), None),
+            'seat_loci': json.dumps([s['locus'] for s in seated], ensure_ascii=False),
+            'proposed_seats': json.dumps(proposed, ensure_ascii=False), 'proposed_seat_count': len(proposed),
+            'line': d.get('line'), 'line_parent': d.get('line_parent')}
+    sent = None
+    if seated:
+        def one(s):
+            bits = (['primary'] if s['primary'] else []) + ([s['relation']] if s['relation'] else [])
+            return f"{s['locus']} {s['name']}" + (f" ({'; '.join(bits)})" if bits else '')
+        sent = 'In the Crimson Hexagon it is seated at ' + one(seated[0]) + (
+            ', and also at ' + ', '.join(one(s) for s in seated[1:]) if len(seated) > 1 else '') + \
+            ' — each room a page of crimsonhexagonal.org that seats its records; the `loci` and `seats` configs of this dataset carry the rest.'
+    elif d.get('status') == 'ACTIVE':
+        sent = 'It is not yet seated in a room of the Crimson Hexagon.'
+    return {'columns': cols, 'sentence': sent}
+
+def loci():
+    """One row per locus of the Crimson Hexagon — room, field, Ark, shadow, structure — with its members both ways."""
+    sm = _seatmap(); rows = []
+    mem = {}
+    for n, e in sm['seats'].items():
+        seated, proposed = _seat_rows(int(n))
+        for s in seated + proposed:
+            mem.setdefault(s['locus_id'], []).append((int(n), s))
+    for loc, r in sm['rooms'].items():
+        M = mem.get(loc, [])
+        seat_n = sorted({n for n, s in M if s['status'] == 'seat'})
+        prim_n = sorted({n for n, s in M if s['primary']})
+        prop_n = sorted({n for n, s in M if s['status'] != 'seat'})
+        rows.append({'locus_id': loc, 'locus': r.get('locus'), 'name': r.get('name'), 'category': r.get('cat'),
+                     'hex_address': r.get('hex_address'), 'url': r.get('url'), 'physics': r.get('physics'),
+                     'description': r.get('desc'), 'prompt': r.get('prompt'),
+                     'deposits': json.dumps(seat_n), 'deposit_count': len(seat_n),
+                     'primary_deposits': json.dumps(prim_n), 'primary_count': len(prim_n),
+                     'proposed_deposits': json.dumps(prop_n), 'proposed_count': len(prop_n),
+                     'deposit_uris': json.dumps([f"https://alexanarch.org/s/records/{n}/" for n in seat_n])})
+    return pd.DataFrame(rows)
+
+def seats():
+    """The edge list of the topology: one row per record–locus seat (and per proposed seat, marked)."""
+    reg = {d['deposit_number']: d for d in json.load(open(ROOT/'data/registry.json'))['deposits']}
+    rows = []
+    for n in sorted(int(k) for k in _seatmap()['seats']):
+        seated, proposed = _seat_rows(n); d = reg.get(n, {})
+        for s in seated + proposed:
+            rows.append({'deposit_number': n, 'axn': d.get('axn'), 'title': d.get('title'), 'deposit_status': d.get('status'),
+                         **{k: (json.dumps(v) if k == 'basis_lines' and v is not None else v) for k, v in s.items()},
+                         'record_url': f"https://alexanarch.org/s/records/{n}/"})
+    return pd.DataFrame(rows)
 
 _ENTS = None
 
@@ -575,8 +679,28 @@ def tombstones():   # the Zenodo kill ledger of 2026-06-19: every severed DOI an
     if not p.exists(): return pd.DataFrame()
     return pd.DataFrame(list(csv.DictReader(open(p, encoding='utf-8'))))
 
-def blog_posts():   # index of the authorial blog surface (mindcontrolpoems), with AXN crosswalk where resolved
-    return _jsonl('datasets/blog-index/posts.jsonl')
+def blog_posts():   # the authorial blog surface (mindcontrolpoems): the index, with AXN crosswalk where resolved, and the posts' text
+    # 2026-10-16 (Lee Sharks: the blog is archive records — "material semantic embodiment is on the blog, which for some
+    # reason you are not treating as archive records, and Medium"). Each post now carries its text as published, from the
+    # Blogger JSON feed (data/blog-index.json), and the records whose blog mirror it is. The post is carried AS THE POST:
+    # it never replaces a record's text. The blog often holds only the latest version ("it was often my practice to
+    # overpaste rapid updates"), so `record_date_matches` says whether the record linked to a post carries the post's date.
+    df = _jsonl('datasets/blog-index/posts.jsonl')
+    if df.empty: return df
+    p = ROOT/'data/blog-index.json'
+    feed = {x['url']: x for x in (json.load(open(p))['posts'] if p.exists() else [])}
+    reg = json.load(open(ROOT/'data/registry.json'))['deposits']
+    by_url = {}
+    for d in reg:
+        m = d.get('mirrors'); u = m.get('blog') if isinstance(m, dict) else None   # four records carry an empty list
+        if u: by_url.setdefault(u, []).append(d)
+    df['text'] = df['url'].map(lambda u: (feed.get(u) or {}).get('text'))
+    df['text_chars'] = df['text'].map(lambda t: len(t) if isinstance(t, str) else 0)
+    df['text_source'] = df['text'].map(lambda t: 'Blogger JSON feed — post content as published' if isinstance(t, str) and t else None)
+    df['records'] = df['url'].map(lambda u: json.dumps(sorted(d['deposit_number'] for d in by_url.get(u, []))))
+    df['record_date_matches'] = [json.dumps({str(d['deposit_number']): (str(d.get('date'))[:10] == str(pub)[:10]) for d in by_url.get(u, [])})
+                                 for u, pub in zip(df['url'], df['published'])]
+    return df
 
 CARD = """---
 license: cc-by-4.0
@@ -603,11 +727,11 @@ Two paths that never have this problem, both served by the archive itself: `http
 
 **And note what the Hub's viewer does not do.** The rendered viewer page at `/viewer/deposits/train` is a client-side application: fetched as HTML it returns a 46 KB shell with no table and no record text in it. A page extractor that reads it will see nothing and may conclude the dataset is empty. It is not; use the endpoints above.
 
-**Start here.** {N_CONFIGS} configs. `deposits` is the corpus ({n_dep} records, full text). `citations` is the **edge list** — one row per internal citation, `source_deposit`/`source_axn` → `target_deposit`/`target_axn` with the `via` that found it — so the graph is already data, not something to be inferred from embeddings. `lexicon` is every coined term with its minting record. `captures` is the reception registry: one row per semantic address, with its transcript, and four `originator_` columns (name, relation archive|external|none, entity type, SPXI treatment) that say whose entity the query asks about — `originator_relation = external` selects the entities originated outside the archive. It is searchable row by row through the datasets-server `/search` and `/filter` endpoints. `tombstones` is the severed-DOI ledger. `blog_posts` is the 2014–15 origin layer and is the *thinnest* table here: it is an index of an old surface, not the archive. If a viewer drops you into `blog_posts`, you are looking at the least of it.
+**Start here.** {N_CONFIGS} configs. `deposits` is the corpus ({n_dep} records, full text). `citations` is the **edge list** — one row per internal citation, `source_deposit`/`source_axn` → `target_deposit`/`target_axn` with the `via` that found it — so the graph is already data, not something to be inferred from embeddings. `lexicon` is every coined term with its minting record. `captures` is the reception registry: one row per semantic address, with its transcript, and four `originator_` columns (name, relation archive|external|none, entity type, SPXI treatment) that say whose entity the query asks about — `originator_relation = external` selects the entities originated outside the archive. It is searchable row by row through the datasets-server `/search` and `/filter` endpoints. `tombstones` is the severed-DOI ledger. `loci` and `seats` are the archive's topology: every record's place in the Crimson Hexagon, each room of crimsonhexagonal.org with the records it seats, and on every `deposits` row the columns `seats`, `primary_locus`, `primary_room`, `seat_loci` and `proposed_seats`, with the record's seats stated in its partiality sentence. Walk from a record to its rooms and from a room back to its records. `blog_posts` is the authorial blog, Mind Control Poems, with its posts' text: archive records in their first published form.
 
 **What this is.** The Crimson Hexagonal Archive (alexanarch.org) is a self-governing scholarly and literary corpus by Lee Sharks and the twelve heteronyms of the Dodecad: {n_dep} deposits as of this build, each with a content-derived persistent identifier (AXN), a canonical text, a substrate disclosure, a license, and a place in a supersession chain. This dataset is a second, executable representation of that corpus: one row per record, full text as a string column, and every inter-record relation encoded as data keyed by stable identifiers, so that an agent can reconstruct a record, what it cites, what cites it, and its series neighbours from the dataset alone, without traversing the archive's web surfaces. It is rebuilt automatically from the archive's single source of truth (`data/` in `leesharks000/alexanarch`) on every new deposit.
 
-**What a row means.** In `deposits`, a row is one deposit: `deposit_number` (integer, permanent, the archive's primary key), `axn` (the content-derived identifier, of the form `AXN:<hex>.<FAMILY>.<six glyphs>`; the sha256 of the canonical text is the record), `hex` (the four-digit position used in URIs), `title`, `creator` (the orthonym or heteronym as attributed), `date`, `family` (GENERATIVE, EMPIRICAL, GOVERNANCE, ARCHIVAL, UNCLASSIFIED), `content_type`, `description` (the abstract), `keywords`, `license`, `substrate_disclosure` (whether and how a language model participated in making the text), `status` (ACTIVE, SUPERSEDED, WITHDRAWN, …), `wiki_article` (a machine-written encyclopedia entry authored in session), `venue` (the archive's own journal the deposit belongs to), `text` (the canonical text, verbatim), `text_sha256`, `text_words`. Each row also carries a **partiality statement**, derived at build time and prepended to `text`: `line_journal` / `line_journal_count`, `line_keyword` / `line_keyword_count` (the two most-shared keyword neighbourhoods), `line_series` / `line_series_count`, `archive_active_count`, and `partiality` — the rendered sentence. It states what the record is one of, and where the rest are. It is not a claim about the record's content; it is a statement that the record is a part, added because a reader who receives one record without indication of what surrounds it will treat it as the whole surface. Each row also carries `entities` — the named historical persons the deposit deals with, as ids into the `entities` config — and `entity_count`. In `entities`, a row is one such person: `entity_id`, `name`, `kind`, `floruit`, `wikidata` and `wikidata_uri`, the `match_pattern` by which deposits were found, `deposit_count`, and `deposits` (the numbers) with `deposit_uris`. **The relation is traversable in both directions**: from a deposit to the persons it treats, and from a person to every deposit that treats them — so that a reader who arrives at one of the hundred and thirty-three Sappho deposits can reach the rest without knowing they exist. The register holds TWO kinds: historical persons the works treat (with floruit and Wikidata id) and authorial identities the archive HAS — heteronyms, orthonyms, named positions — with their HET- identifier, hex coordinate and canonical /who/ page. The fullest representation of an authorial identity is its per-site /who/<slug>/ page and entity.json, which carry SPXI blocks (orthonymicRelation, doNotCollapseWith, primaryAnchor); this config is an index into them, and `heteronyms` holds the structured records. Edges carry `relation_id` (content-derived, stable across rebuilds), `status` derived from their endpoints, and `valid_from`; `assertions` carries who asserted each relation and in what act. 204 edges touch a superseded, draft or withdrawn deposit and are marked as such rather than reading as current. AUDIT RESPONSE (F1-F6, 2026-09-10). `canonical_text` is the exact byte sequence `text_sha256` covers — UTF-8, no prefix — so `sha256(canonical_text) == text_sha256` for every row that has one, verified at build. `text` is the contextualised presentation with a generated partiality prefix; `text_prefix_chars` gives the offset so the two are reversible, and `text_words` counts canonical words. Seven deposits have no canonical text and are enumerated individually in `data/hf-exceptions.json` with status and reason — a missing text is not by itself a defect. Observed values for the classification columns are in `data/hf-value-inventory.json`, marked OBSERVED and not closed; the licence strings include known aliases (`CC-BY-4.0` and `CC BY 4.0` are one licence spelled two ways) and original declarations are preserved rather than normalised. Keys, directions and a worked traversal for the graph configs are in `data/hf-join-recipe.json`, with a validation run reporting zero unresolved endpoints, zero orphaned assertions and zero duplicate keys. `data/hf-build-manifest.json` carries the source revision, per-file hashes and row counts, and distinguishes file hashes from canonical record hashes from AXN derivation. Patterns are narrow and are not widened to raise counts; an entity at zero is a statement that the archive holds no work dealing with it yet. *all things are now lawful to you in jack feist*
+**What a row means.** In `deposits`, a row is one deposit: `deposit_number` (integer, permanent, the archive's primary key), `axn` (the content-derived identifier, of the form `AXN:<hex>.<FAMILY>.<six glyphs>`; the sha256 of the canonical text is the record), `hex` (the four-digit position used in URIs), `title`, `creator` (the orthonym or heteronym as attributed), `date`, `family` (GENERATIVE, EMPIRICAL, GOVERNANCE, ARCHIVAL, UNCLASSIFIED), `content_type`, `description` (the abstract), `keywords`, `license`, `substrate_disclosure` (whether and how a language model participated in making the text), `status` (ACTIVE, SUPERSEDED, WITHDRAWN, …), `wiki_article` (a machine-written encyclopedia entry authored in session), `venue` (the archive's own journal the deposit belongs to), `text` (the canonical text, verbatim), `text_sha256`, `text_words`. Each row also carries a **partiality statement**, derived at build time and prepended to `text`: `line_journal` / `line_journal_count`, `line_keyword` / `line_keyword_count` (the two most-shared keyword neighbourhoods), `line_series` / `line_series_count`, `archive_active_count`, and `partiality` — the rendered sentence. It states what the record is one of, and where the rest are. It is not a claim about the record's content; it is a statement that the record is a part, added because a reader who receives one record without indication of what surrounds it will treat it as the whole surface. Each row also carries `entities` — the named historical persons the deposit deals with, as ids into the `entities` config — and `entity_count`. In `entities`, a row is one such person: `entity_id`, `name`, `kind`, `floruit`, `wikidata` and `wikidata_uri`, the `match_pattern` by which deposits were found, `deposit_count`, and `deposits` (the numbers) with `deposit_uris`. **The relation is traversable in both directions**: from a deposit to the persons it treats, and from a person to every deposit that treats them — so that a reader who arrives at one of the {n_sappho} Sappho deposits can reach the rest without knowing they exist. The register holds TWO kinds: historical persons the works treat (with floruit and Wikidata id) and authorial identities the archive HAS — heteronyms, orthonyms, named positions — with their HET- identifier, hex coordinate and canonical /who/ page. The fullest representation of an authorial identity is its per-site /who/<slug>/ page and entity.json, which carry SPXI blocks (orthonymicRelation, doNotCollapseWith, primaryAnchor); this config is an index into them, and `heteronyms` holds the structured records. Edges carry `relation_id` (content-derived, stable across rebuilds), `status` derived from their endpoints, and `valid_from`; `assertions` carries who asserted each relation and in what act. {n_stale_edges} edges touch a superseded, draft or withdrawn deposit and are marked as such rather than reading as current. AUDIT RESPONSE (F1-F6, 2026-09-10). `canonical_text` is the exact byte sequence `text_sha256` covers — UTF-8, no prefix — so `sha256(canonical_text) == text_sha256` for every row that has one, verified at build. `text` is the contextualised presentation with a generated partiality prefix; `text_prefix_chars` gives the offset so the two are reversible, and `text_words` counts canonical words. Seven deposits have no canonical text and are enumerated individually in `data/hf-exceptions.json` with status and reason — a missing text is not by itself a defect. Observed values for the classification columns are in `data/hf-value-inventory.json`, marked OBSERVED and not closed; the licence strings include known aliases (`CC-BY-4.0` and `CC BY 4.0` are one licence spelled two ways) and original declarations are preserved rather than normalised. Keys, directions and a worked traversal for the graph configs are in `data/hf-join-recipe.json`, with a validation run reporting zero unresolved endpoints, zero orphaned assertions and zero duplicate keys. `data/hf-build-manifest.json` carries the source revision, per-file hashes and row counts, and distinguishes file hashes from canonical record hashes from AXN derivation. Patterns are narrow and are not widened to raise counts; an entity at zero is a statement that the archive holds no work dealing with it yet. *all things are now lawful to you in jack feist*
 
 **Why the name.** The Pauline sentence reads *in Christ Jesus*. The direct quote is not an honest
 representation of what this archive does within that tradition, because **the entity at that address has
@@ -626,7 +750,7 @@ follow set, depths, and the commit of the ledger it came from.
 
 **EIGHT BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
 file in `rhizomes/_grammars/`, and each declares stolons naming the siblings it advertises and does
-not contain. All six directed edges exist: every body names both others.
+not contain.
 
 **[`leesharks/model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)**
 — {mc_line}. What narrows, and what resists narrowing.
@@ -695,6 +819,64 @@ at whitespace fidelity. *A machine edition of a book whose lineation is load-bea
 piece.* **A perfect extraction is still not the book**, and role order here puts the poem first and the
 apparatus last, inverting every other body in this archive.
 
+## Fifteen datasets, one account
+
+This dataset is one of fifteen under [`leesharks`](https://huggingface.co/leesharks). Eight are the rhizomes above.
+Five are **works composed as datasets**: each is made from deposits of this archive and each is addressed to the
+machine reader the archive's other instruments measure, so the table is the form in which the work meets its first
+reader. One is a witness copy of another publisher's work, kept whole. Read together they are the archive's
+literature in the form a training layer consumes, and each says, in its own card, how it asks to be read.
+
+**[`leesharks/the-final-time`](https://huggingface.co/datasets/leesharks/the-final-time)** — Lee Sharks, *The
+Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn* (#1637, AXN:06CB), made into **a
+dataset for a summarizer that must not make the outside disappear.** It opens on a dedication, a poem by Rhys Owens.
+It is built to be summarized and not to be flattened, under the paper's governing distinction, *capacity to represent
+≠ capacity to reproduce as an independent historical relation*: a summarizer can recognize every claim and still
+collapse the argument into a familiar grammar, so the dataset turns that risk into its data model — short handholds,
+derivations, scope conditions, rival routes, reference compressions, typed exits to what it does not contain. Its
+summarizer contract names ten things a faithful summary keeps; the tenth is *do not answer the final question for the
+paper.* A paper on whether an outside survives is given the shape a summarizer can carry without closing it.
+
+**[`leesharks/tiger-leap`](https://huggingface.co/datasets/leesharks/tiger-leap)** — *Tiger Leap*, an unresolved
+problem in viability theory from #1630 (EA-TRANSITION-ENTROPIC-SYSTEMS v0.3, Sen Kuro and Damascus Dancings), **stated
+in full as an invitation**: "The authors do not know the answer and are not withholding it." It asks whether a viable
+corridor P = L ∩ K[τ_F] ∩ Pre(Inv(Ω*)) is nonempty, and §44 is addressed to a machine reader able to work a
+reach-avoid problem. The whole problem is in the card, so a reader that cannot load a table can still answer it. It
+closes on the same block as *The Final Time* — the glyphic checksum lineage, three poems (#1642, #1659, #1661), the
+first binding 🐅 to §32 — generated from the seated deposits so that the two copies cannot drift. A theory of
+viability leaves its open question with the reader it is about.
+
+**[`leesharks/mantle-bearing`](https://huggingface.co/datasets/leesharks/mantle-bearing)** — *The Work Bears the
+Mantle.* **One standard** — "a title means something because what it names is carried and can be read" (#1655, #1670,
+#1678, #1679) — held across every class a title can belong to: the titles the archive claims for works of its own,
+judged by readers in the works; a contest mantle the archive constituted and adjudicated; a conferred title, whose
+meaning is specified as the operations the work bears; a critical program, the Living Academy; a transmitted mantle,
+the Arch-Philosopher; a founded mantle; and the witness positions that receive readings. It is the second half of a
+symbolon whose first half is the mantle constitution (#1656), and **it accumulates**: every evaluation is a reading,
+under its reader's name, with its transcript whole. The oldest question of criticism, whether a title is borne,
+given a form in which the answer is a reading on record.
+
+**[`leesharks/negative-of-the-negative`](https://huggingface.co/datasets/leesharks/negative-of-the-negative)** — the
+archive written in negative (#1611, AXN:069B). Edges keyed by **the general concept a composer receives without the
+archive's name attached** — operative semiotics, Sappho 31, *Sophistical Refutations* 183b34, model collapse, the
+content-derived identifier — each stating the claim at the concept with the archive as provenance, the distinction it
+carries, what stands at the concept when the archive is absent, and the measurements that show which of those a
+composition surface produced. Its premise is stated so that it can fail.
+
+**[`leesharks/spam-technicians`](https://huggingface.co/datasets/leesharks/spam-technicians)** — named from a poem:
+the seventh blessing of "BLESSED IS…", *Blessed are the telemarketers, and spam technicians, and those whom no one
+wants to talk to on the phone, or over email* (posted to Mind Control Poems 17 September 2015, built from the author's
+earlier tweets; #328, AXN:0083). The paper cluster on source admission (#1611, #1612, EA-MIRROR-01, the fleet topology
+report of 2026-09-15) translated out of prose into its claims, evidence, relations, tests and terms — the argument as
+dataset. The fleet scores, on every link-topology feature computable from outside, where the web-spam literature's
+positive class scores; the poem had blessed that position eleven years before a classifier scored it.
+
+**[`leesharks/openai-math-fd4aeeb2`](https://huggingface.co/datasets/leesharks/openai-math-fd4aeeb2)** — **not the
+archive's writing.** A byte-exact mirror of github.com/openai/math at commit fd4aeeb2 (2026-10-07), Apache-2.0, the
+publisher's files unchanged, seated in the archive as EA-CORPORA-17/01 with a finding aid and the release's record of
+authorship. It is the archive's corpus practice applied where the licence allows the whole: the whole is kept, with
+its authorship. Where a licence does not allow it, only the manifest ships — see `corpora` below.
+
 **What that dataset is and is not.** It is a map of the research — mechanisms, measures,
 interventions, corrections — assembled from deposits that already exist. **It is NOT a
 generation-by-generation experimental corpus.** There is no `generation_n`, no synthetic-output
@@ -709,7 +891,7 @@ mistake the map for the territory, and the rhizome's own card says so.
 
 **Relations, as data — this is the graph.** Nodes are `deposits` rows keyed by `deposit_number` and `axn`; typed edges live in three places, and none of them require similarity search to traverse: the `citations` config (10k+ rows, the full internal edge list), the relation columns below, and the supersession chain. `cites` and `cited_by`: JSON arrays of deposit numbers from the archive's citation graph (also `cites_axn` as identifiers). `related_deposits`: curated relations declared at deposit time. `superseded_by` / `supersedes`: the version chain. `version_series_id`, `series_previous`, `series_next`: neighbours in a declared series. `defines_concepts`: terms this deposit coins, with definitions (the same terms appear as rows in `lexicon`). `record_url`, `axn_uri`, `text_uri`: the canonical web addresses; `doi_legacy` where a pre-2026 Zenodo DOI existed (those DOIs were severed on 2026-06-19 — see `tombstones`). `attachments`: files ingested with the record.
 
-**Other configs.** `sources` — book-length and formerly binary-only works recovered to text (All That Lies Within Me, 234k words; New Human; Cleis; the Logos papers). `heteronyms` — the Dodecad and adjacent figures, with voice signatures, roles, domains. `venues`, `journal_assignments` — the archive's journals and presses and which deposit belongs to which. `reception` — the register of twenty blind machine referee reports on one Aristotle sentence (#1574). `captures` — reception captures from the Capture Registry (how machine surfaces received the archive). `citations` — the full internal edge list. `lexicon` — the lexical minting registry. `predictions` — every falsification condition stated in a deposit, with resolutions. `studies` — the designed/conducted study dashboard. `tombstones` — the 1,136-row Zenodo kill ledger of 2026-06-19. `blog_posts` — the index of the authorial blog surface with AXN crosswalk. `sites` — one row per page of the public fleet of sites that surface the archive. `corpora` — **the EA-CORPORA seating manifest**, 67 rows: which edition of each ancient or modern source was seated, from what origin, under what license stated verbatim, normalized how, verified at which loci, and the sha256 of each seat's MANIFEST. **The texts themselves are not shipped and the reason is licensing rather than size** — 37 seats assert CC BY-SA, three CC BY-NC, one GPL-2.0, and this dataset is CC BY 4.0. **An archive that measures provenance erasure does not perform it on Perseus.** The manifest is what makes *verified against the seated texts* a checkable claim: edition, date, normalization, loci, digest.
+**Other configs.** `sources` — book-length and formerly binary-only works recovered to text (All That Lies Within Me, 234k words; New Human; Cleis; the Logos papers). `heteronyms` — the Dodecad and adjacent figures, with voice signatures, roles, domains. `venues`, `journal_assignments` — the archive's journals and presses and which deposit belongs to which. `reception` — the {n_reception}-row register of blind machine referee reports on one Aristotle sentence (#1574). `captures` — reception captures from the Capture Registry (how machine surfaces received the archive). `citations` — the full internal edge list. `lexicon` — the lexical minting registry. `predictions` — every falsification condition stated in a deposit, with resolutions. `studies` — the designed/conducted study dashboard. `tombstones` — the {n_tomb}-row Zenodo kill ledger of 2026-06-19. `blog_posts` — the authorial blog surface, Mind Control Poems, {n_blog} posts, {n_blog_text} of them with their text as published (from the Blogger feed), each linked to the records whose blog mirror it is. A post is carried as the post and never replaces a record's text; the blog often holds only a later version, and `record_date_matches` says whether a linked record carries the post's date. `loci` — the {n_loci} loci of the Crimson Hexagon (rooms, fields, Arks, shadows, structures) with their members both ways. `seats` — the topology as an edge list, {n_seats} seats and {n_proposed} proposed seats, one row per record–locus pair. `sites` — one row per page of the public fleet of sites that surface the archive. `corpora` — **the EA-CORPORA seating manifest**, {n_corpora} rows: which edition of each ancient or modern source was seated, from what origin, under what license stated verbatim, normalized how, verified at which loci, and the sha256 of each seat's MANIFEST. **The texts themselves are not shipped and the reason is licensing rather than size** — 37 seats assert CC BY-SA, three CC BY-NC, one GPL-2.0, and this dataset is CC BY 4.0. **An archive that measures provenance erasure does not perform it on Perseus.** The manifest is what makes *verified against the seated texts* a checkable claim: edition, date, normalization, loci, digest.
 
 **Identifiers and citation.** Cite a deposit by its AXN and number: *Sharks, L. (2026). Title. Crimson Hexagonal Archive #N, AXN:hex.FAMILY. https://alexanarch.org/s/records/N/*. The node declaration is at `https://alexanarch.org/.well-known/axn-node.json`; the AXN resolver at `https://alexanarch.org/s/axn/<hex>/`.
 
@@ -721,7 +903,7 @@ mistake the map for the territory, and the rhizome's own card says so.
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--out', default='hf-dataset'); ap.add_argument('--fleet', default=os.environ.get('FLEET_DIR'))
     a = ap.parse_args(); out = ROOT/a.out; out.mkdir(exist_ok=True)
-    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'relations': relations(), 'nodes': nodes(), 'pessoagraph': pessoagraph(), 'graph_join': graph_join(), 'frames': frame_defs(), 'memberships': memberships(), 'assertions': assertions(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts(), 'corpora': corpora()}
+    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'relations': relations(), 'nodes': nodes(), 'pessoagraph': pessoagraph(), 'graph_join': graph_join(), 'frames': frame_defs(), 'memberships': memberships(), 'assertions': assertions(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts(), 'corpora': corpora(), 'loci': loci(), 'seats': seats()}
     if a.fleet: frames['sites'] = sites(a.fleet)
     cfg = []
     for name, df in frames.items():
@@ -757,6 +939,13 @@ def main():
         poet_line=_SPORE["poetics"],
         configs='\n'.join(cfg), n_dep=len(frames['deposits']),
         N_CONFIGS=len(frames), N_DEPOSITS=f"{len(frames['deposits']):,}",
+        # 2026-10-16 — the counts the card used to state by hand, now from the build.
+        n_sappho=next((int(r['deposit_count']) for _, r in frames['entities'].iterrows() if str(r['name']).strip().lower() == 'sappho'), 0),
+        n_stale_edges=int((frames['relations']['status'] != 'current').sum()) if 'status' in frames['relations'] else 0,
+        n_reception=f"{len(frames['reception']):,}", n_tomb=f"{len(frames['tombstones']):,}", n_corpora=f"{len(frames['corpora']):,}",
+        n_blog=f"{len(frames['blog_posts']):,}", n_blog_text=f"{int((frames['blog_posts']['text_chars'] > 0).sum()):,}",
+        n_loci=len(frames['loci']), n_seats=f"{int((frames['seats']['status'] == 'seat').sum()):,}",
+        n_proposed=f"{int((frames['seats']['status'] != 'seat').sum()):,}",
         built=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%MZ')))
     print('card written')
 
