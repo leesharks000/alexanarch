@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.207",
+ "derived_from": "EA-WG-CAPTURES-01 v12.208",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,17 +8,17 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 810,
+  "observations": 811,
   "joined_confirmed": 344,
-  "unjoined": 466,
-  "relations": 3649,
+  "unjoined": 467,
+  "relations": 3652,
   "by_state": {
-   "confirmed": 3364,
+   "confirmed": 3367,
    "candidate": 285
   },
   "by_verb": {
-   "held_by": 1700,
-   "scored_by": 560,
+   "held_by": 1702,
+   "scored_by": 561,
    "appeared_in": 1167,
    "about": 209,
    "distorts": 3,
@@ -1453,6 +1453,9 @@
 {"id": "REL-ef2335a6bd56", "obs_id": "OBS-e6ea0f3af3a4", "entry": "negative-ontology-crimson-hexagon-essay-aio-20261004", "obs_slug": "negative-ontology-crimson-hexagon-essay-aio-20261004", "date": "2026-10-04", "surface": "Google AI Overview", "q": "Negative ontology of the crimson hexagon essay", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-035d473a07a9", "obs_id": "OBS-e6ea0f3af3a4", "entry": "negative-ontology-crimson-hexagon-essay-aio-20261004", "obs_slug": "negative-ontology-crimson-hexagon-essay-aio-20261004", "date": "2026-10-04", "surface": "Google AI Overview", "q": "Negative ontology of the crimson hexagon essay", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.75", "kind": "derived", "state": "confirmed"},
 {"id": "REL-0ba1e6d724d1", "obs_id": "OBS-e6ea0f3af3a4", "entry": "negative-ontology-crimson-hexagon-essay-aio-20261004", "obs_slug": "negative-ontology-crimson-hexagon-essay-aio-20261004", "date": "2026-10-04", "surface": "Google AI Overview", "q": "Negative ontology of the crimson hexagon essay", "verb": "about", "object": "non:google-ai-overviews", "basis": "defining papers #1611, #1643", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-b4cf1f0a319c", "obs_id": "OBS-5aa0a2626976", "entry": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "obs_slug": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "What is Lee Sharks' concept of the Λ-Body?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-6630767c87b0", "obs_id": "OBS-5aa0a2626976", "entry": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "obs_slug": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "What is Lee Sharks' concept of the Λ-Body?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-5b5bc60a7d4a", "obs_id": "OBS-5aa0a2626976", "entry": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "obs_slug": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "What is Lee Sharks' concept of the Λ-Body?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-a4171af2c9ca", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:27", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "medium.com", "title": "The Crimson Hexagon: Operative Architecture", "url": "https://medium.com/@leesharks00/the-crimson-hexagon-operative-architecture-b21dd55d45a9"}},
 {"id": "REL-ac9573506dce", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:30", "basis": "card resolved at intake (title segment)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "medium.com", "title": "Fractal Navigation Map v7.0", "url": "https://medium.com/@leesharks00/crimson-hexagonal-architecture-fractal-navigation-map-v7-0-42c498ac4225"}},
 {"id": "REL-3d2fa0e5035c", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 9, "site": "crimsonhexagonal.org", "title": "Crimson Hexagonal Archive — Governed Operating Surface", "url": null}},
