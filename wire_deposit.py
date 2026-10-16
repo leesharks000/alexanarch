@@ -1202,6 +1202,25 @@ def regenerate_static_page(d, eidx, registry=None):
                                                         _e['now'] and f"now: {_e['now']}", _e['reason']) if x),
                          "isBasedOn": f"https://www.alexanarch.org/data/errata/{dn}.json"})
     if _corr_ld: _ld["correction"] = _corr_ld
+    # 2026-10-16 SEATED IN THE CRIMSON HEXAGON. crimsonhexagonal.org's room pages link to the records they seat; the
+    # record page did not link back (Lee Sharks: "indexes connecting crimsonhexagonal rooms to alexanarch records and
+    # vice versa"). data/hexagon-seats.json (scripts/build_hexagon_seats.py) holds the seats; the line names each room
+    # by its address, links the room page and, where one exists, the work's standalone page there. Index: /s/rooms/.
+    _seat_html = ''
+    try:
+        global _HEX_SEATS
+        if '_HEX_SEATS' not in globals():
+            _HEX_SEATS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'hexagon-seats.json')))
+        _se = _HEX_SEATS['seats'].get(str(dn))
+        if _se:
+            _rm = [_HEX_SEATS['rooms'][r] for r in _se['rooms'] if r in _HEX_SEATS['rooms']]
+            _seat_html = ('<div style="border-left:4px solid var(--accent);background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
+                          '<strong>Seated in the Crimson Hexagon</strong> — '
+                          + ' · '.join(f'<a href="{esc(r["url"])}" style="color:var(--accent)">{esc(r["locus"])} {esc(r["name"])}</a>' for r in _rm)
+                          + (f' · <a href="{esc(_se["works_url"])}" style="color:var(--accent)">this work on crimsonhexagonal.org</a>' if _se.get('works_url') else '')
+                          + ' · <a href="/s/rooms/" style="color:var(--accent)">all rooms and their records</a></div>')
+    except Exception as _e:
+        print(f"  [hexagon seats] skipped for #{dn}: {_e}")
     # 2026-09-13 SURFACE POROSITY. A seated room document is a closed surface: a machine
     # traversing it meets the room's form of the argument and nothing telling it a more
     # developed one exists. Observed directly — a traversal stayed locked in the Revelation
@@ -2238,7 +2257,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {_author_html}
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
-{_corr_html}{_surf_html}{_ident_html}{_search_html}
+{_corr_html}{_surf_html}{_seat_html}{_ident_html}{_search_html}
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
 {wiki_html}

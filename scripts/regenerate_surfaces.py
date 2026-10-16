@@ -157,7 +157,7 @@ BROWSE_HEADER = """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><m
 <nav class="nav">__NAVBAR_TOKEN__</nav>
 <h1 style="font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px">Complete Deposit Registry</h1>
 <div id="browse-meta" data-total="{total}" data-rendered="{rendered}" data-folded="{folded}" style="color:#777;font-size:.88em;margin-bottom:16px">{total_c} deposits · {rendered_c} shown, {folded_c} earlier versions folded under their series heads · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
-<div style="font-size:.86em;margin:-6px 0 10px">Browse in sections: <a href="/s/browse/month/" style="color:var(--teal)">by month</a> · <a href="/s/browse/family/" style="color:var(--teal)">by family</a> · <a href="/s/browse/venue/" style="color:var(--teal)">by venue</a> — smaller pages, each with abstracts.</div>
+<div style="font-size:.86em;margin:-6px 0 10px">Browse in sections: <a href="/s/browse/month/" style="color:var(--teal)">by month</a> · <a href="/s/browse/family/" style="color:var(--teal)">by family</a> · <a href="/s/browse/venue/" style="color:var(--teal)">by venue</a> · <a href="/s/rooms/" style="color:var(--teal)">by room of the Crimson Hexagon</a> — smaller pages, each with abstracts.</div>
 <div style="color:#999;font-size:.8em;margin:-10px 0 16px">The date shown is <b>the work\u2019s date</b>, not the deposit\u2019s. A work made earlier and deposited later sorts by when it was <i>made</i> \u2014 so <b>recently deposited</b> orders by mint instead.</div>
 """
 
@@ -750,6 +750,12 @@ def regenerate_sitemap(reg, dry_run=False):
     if sec.exists():
         for u in json.loads(sec.read_text()).get("urls", []):
             lines.append(f'  <url><loc>{esc_xml(u)}</loc><priority>0.6</priority></url>')
+    # 2026-10-16: catalogue indexes — rooms of the Crimson Hexagon, captures by section/surface/month
+    # (scripts/build_cross_indexes.py writes the pages and this list; paths are site-relative)
+    xi = REPO_ROOT / "data" / "cross-index-urls.json"
+    if xi.exists():
+        for u in json.loads(xi.read_text()).get("urls", []):
+            lines.append(f'  <url><loc>{esc_xml("https://www.alexanarch.org" + u)}</loc><priority>0.6</priority></url>')
     lines.append("</urlset>")
     out = "\n".join(lines) + "\n"
 
