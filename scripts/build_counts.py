@@ -84,7 +84,29 @@ def build() -> dict:
     # so a reader can tell a derived number from an asserted one.
     prev = _load("data/api/counts.json", {})
     counts["hexagon"] = dict(prev.get("hexagon", {}))
-    counts["hexagon"]["_status"] = "DECLARED — no machine source in-repo; update by hand with the ruling that changes it"
+    counts["hexagon"]["_status"] = ("DECLARED for the taxonomy (loci, rooms, specials, hosted_cosmologies, shadow_spaces, fields, "
+                                    "transversals) and typed_relations (crimsonhexagonal.org/relation_record.json); DERIVED for the seats")
+    # THE SEATS ARE DERIVED (2026-10-16). Until the room reading of that day there was no machine source for how many
+    # records the Hexagon seats, and `seated_documents` was a hand-set 355 — the interface's seated corpus of August.
+    # data/hexagon-seats.json is that source now: the interface's assignment, the 2026-10-16 reading and the operator's
+    # rulings over it, read by the record pages and /s/rooms/. Low-confidence seats are proposals, not seats.
+    _hs = _load("data/hexagon-seats.json", {})
+    if _hs.get("seats"):
+        _reg = {str(d["deposit_number"]): d.get("status") for d in _load("data/registry.json", {}).get("deposits", [])}
+        _S = _hs["seats"]
+        _seated = [n for n, v in _S.items() if v.get("rooms")]
+        counts["hexagon"].update({
+            "seated_records": len(_seated),
+            "seated_records_active": sum(1 for n in _seated if _reg.get(n) == "ACTIVE"),
+            "active_records": sum(1 for s in _reg.values() if s == "ACTIVE"),
+            "seats": sum(len(v.get("rooms") or []) for v in _S.values()),
+            "proposed_seats": sum(len(v.get("proposed") or []) for v in _S.values()),
+            "loci_in_seat_map": len(_hs.get("rooms") or {}),
+            "seated_documents": len(_seated),
+            "_seats_derived_from": "data/hexagon-seats.json",
+            "_superseded_figures": {"355": "seated_documents, hand-set (the interface's seated corpus of August 2026)",
+                                    "220": "typed relations as stated on crimsonhexagonal.org before 2026-10-16"},
+        })
     counts["heteronyms"] = dict(prev.get("heteronyms", {}))
     counts["heteronyms"]["_status"] = "DECLARED"
     counts["zenodo"] = {

@@ -2,7 +2,7 @@
  "_note": "Canonical counts for the fleet. Every surface that states a number should FETCH IT FROM HERE rather than hand-setting it. Derived from source by scripts/build_counts.py — not hand-maintained, because a hand-maintained canonical count is just another surface that drifts.",
  "_source": "https://www.alexanarch.org/api/counts.json",
  "_generator": "scripts/build_counts.py",
- "_generated": "2026-10-15",
+ "_generated": "2026-10-16",
  "deposits": {
   "total": 1682,
   "highest_number": 1682,
@@ -11,7 +11,7 @@
   "_derived_from": "data/registry.json"
  },
  "captures": {
-  "total": 666,
+  "total": 682,
   "_derived_from": "data/EA-WG-CAPTURES-01.json"
  },
  "lexicon": {
@@ -32,9 +32,20 @@
   "shadow_spaces": 1,
   "fields": 4,
   "transversals": 3,
-  "seated_documents": 355,
+  "seated_documents": 1446,
   "typed_relations": 234,
-  "_status": "DECLARED — no machine source in-repo; update by hand with the ruling that changes it"
+  "_status": "DECLARED for the taxonomy (loci, rooms, specials, hosted_cosmologies, shadow_spaces, fields, transversals) and typed_relations (crimsonhexagonal.org/relation_record.json); DERIVED for the seats",
+  "seated_records": 1446,
+  "seated_records_active": 1419,
+  "active_records": 1443,
+  "seats": 3441,
+  "proposed_seats": 456,
+  "loci_in_seat_map": 61,
+  "_seats_derived_from": "data/hexagon-seats.json",
+  "_superseded_figures": {
+   "355": "seated_documents, hand-set (the interface's seated corpus of August 2026)",
+   "220": "typed relations as stated on crimsonhexagonal.org before 2026-10-16"
+  }
  },
  "heteronyms": {
   "dodecad": 12,
