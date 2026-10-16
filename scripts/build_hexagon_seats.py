@@ -25,7 +25,9 @@ def main():
     for r in canon['rooms']:
         slug = (r.get('page_url') or '').rstrip('/').split('/')[-1]
         p = it / 'public/rooms' / slug / 'index.html'
-        if not slug or not p.exists():
+        if not slug or not p.exists():                       # a locus without a room page (the arks, two shadows): named, unlinked
+            rooms[r['id']] = {'id': r['id'], 'locus': r.get('hex_address') or r['id'], 'name': r['name'], 'hex_address': r.get('hex_address'),
+                              'url': None, 'physics': r.get('physics'), 'desc': r.get('desc'), 'prompt': r.get('prompt'), 'cat': r.get('cat')}
             continue
         s = p.read_text(encoding='utf-8')
         name = html.unescape(re.sub(r'<[^>]+>', '', re.search(r'<h1>(.*?)</h1>', s, re.S).group(1))).strip()
@@ -45,6 +47,63 @@ def main():
         for r in x.get('rooms') or []:
             if r in rooms and r not in e['rooms']:
                 e['rooms'].append(r)
+            if r in rooms:
+                e.setdefault('sources', {}).setdefault(r, []).append(f"canonical ({x.get('assignment') or 'unrecorded'})")
+    # 2026-10-16 (Lee Sharks: "the l body has a whole standalone page with seated text on crimsonhexagonal"): the room
+    # pages seat works the canonical document list does not — the constituting documents of R:r.36 The Λ-Body, Ruby
+    # Moot, Pergamum and the rest (322 seats on 294 records). Every record link on a room page, outside the adjacency
+    # and surface-map sections, is a seat; its section heading gives its role.
+    slug_of = {r['id']: (r.get('page_url') or '').rstrip('/').split('/')[-1] for r in canon['rooms']}
+    for rid, slug in slug_of.items():
+        p = it / 'public/rooms' / slug / 'index.html'
+        if rid not in rooms or not p.exists():
+            continue
+        page = p.read_text(encoding='utf-8')
+        page = re.sub(r'<!-- ROOM-READING:BEGIN -->.*?<!-- ROOM-READING:END -->', '', page, flags=re.S)   # the reading's own projection
+        for sec in re.split(r'<h2>', page)[1:]:
+            head = html.unescape(re.sub(r'<[^>]+>', '', sec.split('</h2>')[0])).strip()
+            if re.search(r'Adjacent|Surface Map|Generated attribution', head):
+                continue
+            role = 'constituting' if re.search(r'Constituting|Core documents|in full|constituting|Chain documents|Anatomy', head) else 'in the room'
+            for n in dict.fromkeys(re.findall(r'alexanarch\.org/s/records/(\d+)/', sec)):
+                d = next((x for x in reg['deposits'] if str(x['deposit_number']) == n), None)
+                if not d:
+                    continue
+                e = seats.setdefault(n, {'hex': d['hex'], 'rooms': [], 'assignment': 'room page',
+                                         'works_url': f"{SITE}/works/{d['hex'].lower()}" if d['hex'] in works else None})
+                e.setdefault('roles', {})
+                if rid not in e['rooms']:
+                    e['rooms'].append(rid)
+                if e['roles'].get(rid) != 'constituting':
+                    e['roles'][rid] = role
+                src = e.setdefault('sources', {}).setdefault(rid, [])
+                if 'room page' not in src:
+                    src.append('room page')
+    # 2026-10-16 ROOM READING (Lee Sharks: "the deposits need to be all related to the respective rooms they develop in
+    # crimson hexagon … this is an interpretive read"). 16 readers, every ACTIVE record, each seat with a relation, a
+    # confidence and a verbatim basis checked at its lines (data/room-readings/, scripts/apply_room_readings.py).
+    # High and medium seats are seats; low seats (fit by family resemblance only) are kept as proposals, not shown.
+    rp = ROOT / 'data/room-readings/seats-read-2026-10-16.json'
+    if rp.exists():
+        for n, ss in json.load(open(rp))['seats'].items():
+            d = next((x for x in reg['deposits'] if str(x['deposit_number']) == n), None)
+            if not d:
+                continue
+            e = seats.setdefault(n, {'hex': d['hex'], 'rooms': [], 'assignment': 'read 2026-10-16',
+                                     'works_url': f"{SITE}/works/{d['hex'].lower()}" if d['hex'] in works else None})
+            for x in sorted(ss, key=lambda x: not x['primary']):
+                if x['locus'] not in rooms:
+                    continue
+                if x['confidence'] == 'low':
+                    e.setdefault('proposed', []).append({k: x[k] for k in ('locus', 'relation', 'basis', 'batch')}); continue
+                if x['locus'] not in e['rooms']:
+                    e['rooms'].append(x['locus'])
+                e.setdefault('read', {})[x['locus']] = {k: x[k] for k in ('relation', 'confidence', 'primary', 'basis', 'batch')}
+                src = e.setdefault('sources', {}).setdefault(x['locus'], [])
+                if 'read 2026-10-16' not in src:
+                    src.append('read 2026-10-16')
+                if x['relation'] == 'constitutes':
+                    e.setdefault('roles', {})[x['locus']] = 'constituting'
     seats = {n: e for n, e in seats.items() if e['rooms']}
     out = {'what': ('Records of the alexanarch registry seated in rooms of the Crimson Hexagon (crimsonhexagonal.org), from '
                     'the interface\'s hexagon_canonical.json; assignment as recorded there. Read by the record pages and /s/rooms/.'),

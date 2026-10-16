@@ -1216,7 +1216,7 @@ def regenerate_static_page(d, eidx, registry=None):
             _rm = [_HEX_SEATS['rooms'][r] for r in _se['rooms'] if r in _HEX_SEATS['rooms']]
             _seat_html = ('<div style="border-left:4px solid var(--accent);background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
                           '<strong>Seated in the Crimson Hexagon</strong> — '
-                          + ' · '.join(f'<a href="{esc(r["url"])}" style="color:var(--accent)">{esc(r["locus"])} {esc(r["name"])}</a>' for r in _rm)
+                          + ' · '.join((f'<a href="{esc(r["url"])}" style="color:var(--accent)">{esc(r["locus"])} {esc(r["name"])}</a>' if r.get("url") else f'{esc(r["locus"])} {esc(r["name"])}') for r in _rm)
                           + (f' · <a href="{esc(_se["works_url"])}" style="color:var(--accent)">this work on crimsonhexagonal.org</a>' if _se.get('works_url') else '')
                           + ' · <a href="/s/rooms/" style="color:var(--accent)">all rooms and their records</a></div>')
     except Exception as _e:
