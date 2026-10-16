@@ -26,13 +26,17 @@ def main():
         slug = (r.get('page_url') or '').rstrip('/').split('/')[-1]
         p = it / 'public/rooms' / slug / 'index.html'
         if not slug or not p.exists():                       # a locus without a room page (the arks, two shadows): named, unlinked
-            rooms[r['id']] = {'id': r['id'], 'locus': r.get('hex_address') or r['id'], 'name': r['name'], 'hex_address': r.get('hex_address'),
+            rooms[r['id']] = {'id': r['id'], 'locus': r.get('locus') or r.get('hex_address') or r['id'], 'name': r['name'], 'hex_address': r.get('hex_address'),
                               'url': None, 'physics': r.get('physics'), 'desc': r.get('desc'), 'prompt': r.get('prompt'), 'cat': r.get('cat')}
             continue
         s = p.read_text(encoding='utf-8')
         name = html.unescape(re.sub(r'<[^>]+>', '', re.search(r'<h1>(.*?)</h1>', s, re.S).group(1))).strip()
-        m = re.search(r'Address: ([A-Z]:[a-z]+\.[0-9A-Za-z.-]+)', s)
-        rooms[r['id']] = {'id': r['id'], 'locus': m.group(1) if m else r.get('hex_address') or r['id'], 'name': name,
+        # The room page's Address line governs the locus. 2026-10-16: the pattern took only lowercase after the colon
+        # (R:r.05, S:sp.01, F:f.02), so H:06.HOST.IVN.29, H:U.3-60 and X:LUNAR-ARM fell back to their hexes. The
+        # canonical file now carries `locus` too (operator's ruling of 2026-10-16: the hex is a permanent identifier,
+        # the locus is the position).
+        m = re.search(r'Address: ([A-Z]:[0-9A-Za-z.-]*[0-9A-Za-z])', s)
+        rooms[r['id']] = {'id': r['id'], 'locus': m.group(1) if m else r.get('locus') or r.get('hex_address') or r['id'], 'name': name,
                           'hex_address': r.get('hex_address'), 'url': f'{SITE}/rooms/{slug}', 'physics': r.get('physics'),
                           'desc': r.get('desc'), 'prompt': r.get('prompt'), 'cat': r.get('cat')}
     # 2026-10-16 RULINGS (data/room-readings/rulings-applied-2026-10-16.json): loci the room belt does not hold — the

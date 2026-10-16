@@ -104,6 +104,11 @@ def build() -> dict:
             "loci_in_seat_map": len(_hs.get("rooms") or {}),
             "seated_documents": len(_seated),
             "_seats_derived_from": "data/hexagon-seats.json",
+            # Beside the 47 loci (operator, 2026-10-16: "i like the sound of 47 loci"): named, not counted among them.
+            "arks": sum(1 for r in (_hs.get("rooms") or {}).values() if r.get("cat") == "ark"),
+            "further_shadow_documents": sum(1 for r in (_hs.get("rooms") or {}).values() if r.get("cat") == "shadow") - 1,
+            "meta_structures": sum(1 for r in (_hs.get("rooms") or {}).values() if r.get("cat") == "structure" and r.get("type") == "META-STRUCTURE"),
+            "_beside_the_loci": "47 loci; beside them the five Arks (SP.05–SP.09), two further shadow documents (ZPZP, the Shadow Burn) and UMBML, the meta-structure over the three transversals (ruled 2026-10-16)",
             "_superseded_figures": {"355": "seated_documents, hand-set (the interface's seated corpus of August 2026)",
                                     "220": "typed relations as stated on crimsonhexagonal.org before 2026-10-16"},
         })
