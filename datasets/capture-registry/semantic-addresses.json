@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-15T07:43:16Z",
+  "regenerated_at": "2026-10-16T00:18:46Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "f4b7164889ca6f8b172288b1deae3a62d5eaaf7e34b0c14db3cf1bd339bb5718",
+    "mm-main-capture": "1f8df1f1a56af81571ea917cd15a65a23a88a84e92e1f36833acaf019454ab51",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2417,
-  "total_observations": 917,
+  "total_addresses": 2418,
+  "total_observations": 918,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 657,
+    "observed_address": 658,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1782,
+    "unmatched": 1783,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -29175,6 +29175,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-14",
       "latest_status": "CAPTURE"
+    },
+    "how do you read the crimson hexagon in the summarizer?": {
+      "canonical_query": "how do you read the crimson hexagon in the summarizer?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-15",
+          "status": "THE PRIMER FOLLOWED: THE SUMMARY READ AS PART OF THE POEM",
+          "surface": "Google AI Overview",
+          "source_format": "Card rail of seven: crimsonhexagonal.org (#266), Literature Stack Exchange, alexanarch.org wiki index, Medium FNM v7.0 (#30), Shift Browser, alexanarch.org #287, Medium #1426. #287 is also the first organic result.",
+          "section": "Works",
+          "slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015",
+          "gallery_url": "https://www.alexanarch.org/captures/#how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015",
+          "record_url": "https://www.alexanarch.org/captures/how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015",
+          "details_excerpt": "THE PRIMER FOLLOWED: asked how the Crimson Hexagon is read in the summarizer, the Overview names 'A Primer in How to Read the Crimson Hexagon: Meta-Documentation of the Summarizer as Entry Point' and Lee Sharks, and comp"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "The Crimson Hexagon is the archive's poem; the address asks how it is read in the summarizer, which the Primer (#269) and the student guide (#287) answer. Recorded 2026-10-15."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-15",
+      "latest_status": "THE PRIMER FOLLOWED: THE SUMMARY READ AS PART OF THE POEM"
     },
     "how does the work of lee sharks transform the question, what has athens to do with jerusalem? scan the full range before answering": {
       "canonical_query": "how does the work of lee sharks transform the question, what has athens to do with jerusalem? scan the full range before answering",

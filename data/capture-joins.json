@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.203",
+ "derived_from": "EA-WG-CAPTURES-01 v12.204",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,18 +8,18 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 806,
-  "joined_confirmed": 340,
+  "observations": 807,
+  "joined_confirmed": 341,
   "unjoined": 466,
-  "relations": 3623,
+  "relations": 3633,
   "by_state": {
-   "confirmed": 3338,
+   "confirmed": 3348,
    "candidate": 285
   },
   "by_verb": {
-   "held_by": 1692,
-   "scored_by": 556,
-   "appeared_in": 1153,
+   "held_by": 1694,
+   "scored_by": 557,
+   "appeared_in": 1160,
    "about": 209,
    "distorts": 3,
    "mentions_instrument": 2,
@@ -3575,6 +3575,16 @@
 {"id": "REL-2122e05eb309", "obs_id": "OBS-8fa5f6d2d477", "entry": "mantle-bearing-leesharks-aio-20261014", "obs_slug": "mantle-bearing-leesharks-aio-20261014", "date": "2026-10-14", "surface": "Google AI Overview", "q": "mantle-bearing leesharks", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-edb4b55debdb", "obs_id": "OBS-8fa5f6d2d477", "entry": "mantle-bearing-leesharks-aio-20261014", "obs_slug": "mantle-bearing-leesharks-aio-20261014", "date": "2026-10-14", "surface": "Google AI Overview", "q": "mantle-bearing leesharks", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-8416414882bc", "obs_id": "OBS-8fa5f6d2d477", "entry": "mantle-bearing-leesharks-aio-20261014", "obs_slug": "mantle-bearing-leesharks-aio-20261014", "date": "2026-10-14", "surface": "Google AI Overview", "q": "mantle-bearing leesharks", "verb": "about", "object": "non:howl", "basis": "defining papers #1651, #1652, #1653, #1656", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-d1771b0fb1de", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.crimsonhexagonal.org", "title": "PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON", "url": "https://www.crimsonhexagonal.org"}},
+{"id": "REL-b519243230d2", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "appeared_in", "object": "deposit:266", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.crimsonhexagonal.org", "title": "PROVENANCE NODE: BORGES & THE CRIMSON HEXAGON", "url": "https://www.crimsonhexagonal.org"}},
+{"id": "REL-777f31bb916d", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "www.alexanarch.org", "title": "Wiki — Alexanarch (1610 entries)", "url": "https://www.alexanarch.org"}},
+{"id": "REL-07f72626f202", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "appeared_in", "object": "deposit:30", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "Medium · Lee Sharks", "title": "Crimson Hexagonal Architecture: FRACTAL NAVIGATION MAP v7.0", "url": null}},
+{"id": "REL-777f31bb916d", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 6, "site": "www.alexanarch.org", "title": "HOW TO READ THE CRIMSON HEXAGON: A One-Page Student ...", "url": "https://www.alexanarch.org"}},
+{"id": "REL-0ec927f40c70", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "appeared_in", "object": "deposit:287", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 6, "site": "www.alexanarch.org", "title": "HOW TO READ THE CRIMSON HEXAGON: A One-Page Student ...", "url": "https://www.alexanarch.org"}},
+{"id": "REL-d188d79e3e53", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "appeared_in", "object": "deposit:1426", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 7, "site": "medium.com", "title": "CERN's Destruction of the Crimson Hexagon | by Lee Sharks | Jul ...", "url": null}},
+{"id": "REL-0635001001f8", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7e5f640452f3", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-ab44ec9bd8be", "obs_id": "OBS-a7e02f04fc9e", "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "obs_slug": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015", "date": "2026-10-15", "surface": "Google AI Overview", "q": "how do you read the crimson hexagon in the summarizer?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
