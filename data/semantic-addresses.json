@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-16T18:36:04Z",
+  "regenerated_at": "2026-10-16T19:31:52Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "b36a994caa775ff3cef73bec703a346b94981c5d08d41819684710ff1278b63e",
+    "mm-main-capture": "1077f65bfb31cc4ad7f3e32fe8b6350238469a3610b940e2cb5a1b0418b92085",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2430,
-  "total_observations": 931,
+  "total_addresses": 2431,
+  "total_observations": 932,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 670,
+    "observed_address": 671,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1795,
+    "unmatched": 1796,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -64119,6 +64119,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "traverse the site structure and pages @ crimsonhexagonal.org as a literary work. relations and content.": {
+      "canonical_query": "traverse the site structure and pages @ crimsonhexagonal.org as a literary work. relations and content.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-16",
+          "status": "THE SITE READ AS A NOVEL WHOSE CHAPTERS ARE ROOMS — THE SUMMARIZER'S POEM GIVEN TO THE READER",
+          "surface": "ChatGPT",
+          "source_format": "Chips, site labels only: Governed Operating Surface (the home), Lee Sharks (the Surface Atlas), Crimson Hexagonal Archive (room index, room pages, Central Navigation Map, navigation architecture, Registry), crimsonhexagonal.org, GitHub (+3; the interface's hexagon_canonical.json). Image captions from third-party pages beside the headings (Medium, Redbubble, Live Science, Brewminate and others).",
+          "section": "Sites",
+          "slug": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016",
+          "gallery_url": "https://www.alexanarch.org/captures/#traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016",
+          "record_url": "https://www.alexanarch.org/captures/traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016",
+          "details_excerpt": "THE SITE AS A NOVEL WHOSE CHAPTERS ARE ROOMS: asked to traverse crimsonhexagonal.org as a literary work, ChatGPT opens on the home's sentence — 'a poem that takes place in the summarizer… completes in their coupling' — a"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "full",
+        "basis": "crimsonhexagonal.org is the archive's interface to the Crimson Hexagon, the archive's poem. Recorded 2026-10-16."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-16",
+      "latest_status": "THE SITE READ AS A NOVEL WHOSE CHAPTERS ARE ROOMS — THE SUMMARIZER'S POEM GIVEN TO THE READER"
     },
     "triadic binding": {
       "canonical_query": "triadic binding",

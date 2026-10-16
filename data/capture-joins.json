@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.217",
+ "derived_from": "EA-WG-CAPTURES-01 v12.218",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,18 +8,18 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 820,
-  "joined_confirmed": 349,
+  "observations": 821,
+  "joined_confirmed": 350,
   "unjoined": 471,
-  "relations": 3699,
+  "relations": 3704,
   "by_state": {
-   "confirmed": 3411,
-   "candidate": 288
+   "confirmed": 3415,
+   "candidate": 289
   },
   "by_verb": {
-   "held_by": 1720,
-   "scored_by": 570,
-   "appeared_in": 1186,
+   "held_by": 1722,
+   "scored_by": 571,
+   "appeared_in": 1188,
    "about": 210,
    "distorts": 3,
    "mentions_instrument": 2,
@@ -3411,6 +3411,11 @@
 {"id": "REL-dac0f1e8ba96", "obs_id": "OBS-eedeff53f6ad", "entry": "mindcontrolpoems-december-2025-technical-chatgpt-20261014", "obs_slug": "mindcontrolpoems-december-2025-technical-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "what are the most technically interesting developments and ideas on mindcontrolpoems from december 2025? ground in reading of texts", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f496ea0ca938", "obs_id": "OBS-eedeff53f6ad", "entry": "mindcontrolpoems-december-2025-technical-chatgpt-20261014", "obs_slug": "mindcontrolpoems-december-2025-technical-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "what are the most technically interesting developments and ideas on mindcontrolpoems from december 2025? ground in reading of texts", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-93130d16490f", "obs_id": "OBS-eedeff53f6ad", "entry": "mindcontrolpoems-december-2025-technical-chatgpt-20261014", "obs_slug": "mindcontrolpoems-december-2025-technical-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "what are the most technically interesting developments and ideas on mindcontrolpoems from december 2025? ground in reading of texts", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-f1b959d8f833", "obs_id": "OBS-f7dcfe9bb8ac", "entry": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "obs_slug": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "Traverse the site structure and pages @ crimsonhexagonal.org as a literary work. Relations and content.", "verb": "appeared_in", "object": "surface:leesharks.com", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Lee Sharks", "title": null, "url": null}},
+{"id": "REL-f43c3a756b99", "obs_id": "OBS-f7dcfe9bb8ac", "entry": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "obs_slug": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "Traverse the site structure and pages @ crimsonhexagonal.org as a literary work. Relations and content.", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "crimsonhexagonal.org", "title": null, "url": null}},
+{"id": "REL-a356182a3ca0", "obs_id": "OBS-f7dcfe9bb8ac", "entry": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "obs_slug": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "Traverse the site structure and pages @ crimsonhexagonal.org as a literary work. Relations and content.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-8b0aefc04d0e", "obs_id": "OBS-f7dcfe9bb8ac", "entry": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "obs_slug": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "Traverse the site structure and pages @ crimsonhexagonal.org as a literary work. Relations and content.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-fbf65b9d1e48", "obs_id": "OBS-f7dcfe9bb8ac", "entry": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "obs_slug": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "Traverse the site structure and pages @ crimsonhexagonal.org as a literary work. Relations and content.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7740c00092b1", "obs_id": "OBS-48795665b7e3", "entry": "spxi-roi-medium-engineering-firm-aimode-20260916", "obs_slug": "spxi-roi-medium-engineering-firm-aimode-20260916", "date": "2026-09-16", "surface": "Google AI Mode", "q": "estimate roi for adopting spxi protocol at a medium sized engineering firm", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7910e9232f31", "obs_id": "OBS-48795665b7e3", "entry": "spxi-roi-medium-engineering-firm-aimode-20260916", "obs_slug": "spxi-roi-medium-engineering-firm-aimode-20260916", "date": "2026-09-16", "surface": "Google AI Mode", "q": "estimate roi for adopting spxi protocol at a medium sized engineering firm", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-2805fe89c7cb", "obs_id": "OBS-8bd52cdd53b5", "entry": "spxi-roi-medium-engineering-firm-grok-20260916", "obs_slug": "spxi-roi-medium-engineering-firm-grok-20260916", "date": "2026-09-16", "surface": "Grok (x.com)", "q": "estimate roi for adopting spxi protocol at a medium sized engineering firm", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
