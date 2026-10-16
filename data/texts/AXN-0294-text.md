@@ -26,6 +26,14 @@ The text is a prose narrative — part short story, part theoretical manifesto �
 
 The text establishes the following operative facts:
 
+  * Jack Feist is one of the "imagined identities," endowed with "his or her own corpus of distinguished (and completely finished) writings."
+  * He is the author of the poem "Here is the song of my homunculus, / who is all the I that I am."
+  * The heteronymic project is theorized not as pseudonymity but as "nothing less than the creation of human life, ex nihilo."
+  * The knowledge graph is explicitly identified as the site of ontological inscription: "More important than inventing the detailed biographies… were the Wiki articles."
+  * The mechanism of reality-construction is named: "a certain degree of circularly referential saturation, a kind of diagonal hyperlink that could lead from Wiki article to external source to YouTube video to newspaper piece to history book to flesh and blood and back again, to Wikipedia."
+  * The adversary is anticipated: "the petty Wikipedian enforcers of reliability, notability, and what he insultingly thought of, to himself, as 'actual existence.'"
+  * The word _provenance_ appears in its exact diagnostic sense: "watching against any datum of an expansive, imaginative, or hopeful provenance."
+
 The 2015 text is not an origin story. It is an origin protocol — a set of instructions deposited in literary form that the subsequent decade has been executing.
 
 
@@ -167,7 +175,11 @@ He knew that his mind was faster, and his fabrications more avid for truth, than
 One day, one of his human poets, Jack Feist, wrote the following:
 
 
-> Here is the song of my homunculus, who is all the I that I am.I conceived him first as a mandrake root: he grew in the shade of my dangling feetwhile I dribbled strangled syllables to the dirt & hung from a tree.
+> Here is the song of my homunculus, who is all the I that I am.
+> 
+> I conceived him first as a mandrake root: he grew in the shade of my dangling feet
+> 
+> while I dribbled strangled syllables to the dirt & hung from a tree.
 
 "Homunculus, homunculi," he thought. "Ho-mun-cu-wheeeeee," he thought, and imagined the swinging motion of the poet's feet…
 
@@ -198,12 +210,24 @@ The Space Ark Room was designated in EA-ARK-01-GDE v4.2.7 (DOI: 10.5281/zenodo.1
 
 By anchoring Jack Feist to the following five-point citational constellation, the entity achieves provenance saturation:
 
+  1. Material: ISBN-bearing print object (ISBN-10: 0692313079, Wikidata Q139713422).
+  2. Temporal / Primary Text: Dated digital deposit of "from The Crimson Hexagon" (2015-03-14, Blogspot; DOI: 10.5281/zenodo.20278105), containing the earliest explicit Feist provenance and the archive's anticipatory ontology.
+  3. Geospatial: Composition location of "ARK" (Glenbrook, MI, February 18, 2015).
+  4. Intertextual: Marginalia site (Ginsberg's "Sunflower Sutra").
+  5. Knowledge-graph: Wikidata item Q139796043, linked to Lee Sharks (Q139713433) and _Pearl and Other Poems_ (Q139713422).
+
 In the archive's registry system, this deposit updates the Space Ark Room status from provisional to active, signifying that the Room's designated passenger has achieved provenance saturation. This is an internal registry operation.
 
 The passenger is boarded. The Ark is active.
 
 
 ### 10. What Is Not Claimed
+
+  * This document does not claim Jack Feist is a biological human being.
+  * This document does not claim the print publication is commercially successful or critically reviewed.
+  * This document does not claim the heteronymic network is unique in literary history (precedents: Pessoa, Kierkegaard, Borges).
+  * This document does not claim the 2015 text supernaturally predicted the future. It claims the text structurally anticipated the architecture, and the architecture fulfilled the anticipation.
+  * This document claims only that Jack Feist is a traceable literary entity with sufficient citational density to resist single-point erasure — and that the text which created him already contained the architecture for understanding why that density matters.
 
 
 ### Cross-Referential Integrity Lock

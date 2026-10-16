@@ -100,7 +100,7 @@ The Crimson Hexagonal Archive is an unusually explicit specimen because its cons
 
     L[C] = L[creation] + Lᵣₑₗₐₜᵢₒₙ + L[provenance] + L[disambiguation] + L[indexing] + L[persistence] + Lₜᵣₐₙₛₘᵢₛₛᵢₒₙ.
 
-Let Omega denote an evidence-supported constituted semantic field, and let tauₘu(Omega)>0 mean that the field has demonstrated transmission in a meaning-bearing channel before monetary inscription. Then L[C] arrow Omega arrow tauₘu(Omega)>0, and nothing in that sequence requires money.
+Let Omega denote an evidence-supported constituted semantic field, and let tauₘu(Omega)>0 mean that the field has demonstrated transmission in a meaning-bearing channel before monetary inscription. Then L[C] → Omega → tauₘu(Omega)>0, and nothing in that sequence requires money.
 
 This is a temporal and causal proposition rather than an anti-monetary one. The object existed. The distinctions existed. The transmission existed. The monetary operation enters a field already in motion.
 
@@ -130,7 +130,7 @@ where V(X) is a heterogeneous value-field, sigma[A][d]elta is abstraction under 
 
 Define the **monetary shear** under purpose delta:
 
-    S[M][d]elta: Omega arrow < m, A[M][d]elta, D[M][d]elta >,
+    S[M][d]elta: Omega → < m, A[M][d]elta, D[M][d]elta >,
 
 where m is the visible monetary inscription, A[M][d]elta is the set of distinctions and relations that retain operative standing inside the monetary operation, and D[M][d]elta is the field that does not retain monetary standing while remaining relevant to the production or meaning of what the inscription records.
 
@@ -344,7 +344,7 @@ Let L[C] denote **constitutive labor**: labor that makes the value-bearing objec
 
 In the present archive specimen, even the later acts sometimes described as correction remain constitutive. They do not merely repair another party's ontology; they add relations to the public ontology — entity, history, distinction, incident, relation-to-incident. The graph becomes larger. The world acquires another fact.
 
-Let L[S] denote **shear labor**: labor that selects, commensurates, resolves, ranks, filters, classifies, capitalizes, prices, or settles an already constituted field. Then L[C] arrow Omega while L[S]: Omega arrow Omega[M]. The two can overlap in real institutions; the distinction is functional rather than occupational.
+Let L[S] denote **shear labor**: labor that selects, commensurates, resolves, ranks, filters, classifies, capitalizes, prices, or settles an already constituted field. Then L[C] → Omega while L[S]: Omega → Omega[M]. The two can overlap in real institutions; the distinction is functional rather than occupational.
 
 The economic asymmetry arises where \$L[S]>0 is institutionally legible as compensated skilled labor while substantial components of L[C] enter the object as substrate, source, content, data, environment, or commons. The wage paid to shear labor is not a replacement price for constitutive labor and cannot be used as an hourly rate for it without changing the question. What the wage establishes is narrower and more important: the monetary system recognizes the labor of selecting and constraining the field as value-bearing labor. What it does not thereby price is the constituted field on which that paid operation depends.
 
@@ -366,7 +366,7 @@ The two bills of §3.3 are the limiting case, and they are worth stating here be
 
 # 11. Why the dark coordinate may not be summed
 
-*The Non-Summable Magnitude* establishes the constraint the paper must retain. A monetary amount is a number under general equivalence: it can be added to another amount of its kind. A distinction-preserving measure can also be numerical while refusing that operation. The dark field must therefore not be converted into m+d unless a separate commensuration contract justifies the conversion. There is no general operation D₁+D₂, no general dark-dollar total, and no universal conversion D[M] arrow \$x. Imposed automatically, monetary dark matter would become another valuation scheme and reproduce the reduction it is designed to expose.
+*The Non-Summable Magnitude* establishes the constraint the paper must retain. A monetary amount is a number under general equivalence: it can be added to another amount of its kind. A distinction-preserving measure can also be numerical while refusing that operation. The dark field must therefore not be converted into m+d unless a separate commensuration contract justifies the conversion. There is no general operation D₁+D₂, no general dark-dollar total, and no universal conversion D[M] → \$x. Imposed automatically, monetary dark matter would become another valuation scheme and reproduce the reduction it is designed to expose.
 
 The appropriate object is a vector or relation set:
 
@@ -535,7 +535,7 @@ The specimen is therefore proposed rather than survived, and the Revision Fronti
 
 The ontology case supplies a contemporary extension. A constituted semantic object may already possess name, canonical identity, provenance, bibliographic history, machine-readable metadata, identifiers, retrieval pathways, public transmission, and cross-platform recognition. Institutional labor then operates on that constituted field through resolution, ranking, evaluation, source admission, classification, answer composition, policy, correction, and other forms of representational governance.
 
-That labor can be highly compensated, and its compensation demonstrates that the institution recognizes the economic value of operating on constituted ontology. The wage does not measure the value of the ontology, and does not price the constitutive labor that made the field transmissible. The political-economic relation is L[C] arrow Omega arrow L[S](Omega) arrow V[I], where V[I] is value realized by the institution from that operation, and the question of monetary dark matter is which constitutive relations remain necessary to V[I] while failing to retain standing in the monetary account that recognizes L[S].
+That labor can be highly compensated, and its compensation demonstrates that the institution recognizes the economic value of operating on constituted ontology. The wage does not measure the value of the ontology, and does not price the constitutive labor that made the field transmissible. The political-economic relation is L[C] → Omega → L[S](Omega) → V[I], where V[I] is value realized by the institution from that operation, and the question of monetary dark matter is which constitutive relations remain necessary to V[I] while failing to retain standing in the monetary account that recognizes L[S].
 
 This identifies an empirical question that the ontology case makes unusually visible. It is not a claim that every case of platform mediation is monetary shear.
 

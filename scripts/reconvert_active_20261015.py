@@ -15,7 +15,11 @@ and html2text's markdown escapes dropped where the post has none. Frontmatter, t
 Falsification / Recovery-note apparatus are untouched. A record whose July conversion is not found verbatim is held.
 New hash, glyph and AXN in the same hex and family; the change is recorded (text_reconverted, record_modification).
 
-    python3 scripts/reconvert_active_20261015.py [--dry-run]
+    python3 scripts/reconvert_active_20261015.py [--dry-run] [--superseded]
+
+--superseded (2026-10-15, "lets fix all of that"): the same exact-span method on the records of the map that are not
+ACTIVE (superseded editions and duplicate witnesses are indexable and read; the characters they lost are the same
+loss). A record whose July conversion is no longer in the file verbatim (re-seated since) is held, as above.
 """
 import hashlib, json, pathlib, sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -39,10 +43,12 @@ def main():
     done, held = [], []
     for r in m['records']:
         n = r['deposit']
-        if r['status'] != 'ACTIVE':
+        if (r['status'] != 'ACTIVE') != ('--superseded' in sys.argv):
             continue
         if n in SKIP:
             held.append({'n': n, 'why': SKIP[n]}); continue
+        if D[n].get('text_reconverted'):
+            continue
         d = D[n]; tp = ROOT / d['full_text_path'].lstrip('/'); t = tp.read_text(encoding='utf-8')
         _, body = extract_post(fetch(r['source']).decode('utf-8', 'replace'))
         old = H0.handle(body or '').strip()
@@ -67,8 +73,8 @@ def main():
         rm.touch(d, 'body_status', 'work text converted again with the published characters kept (· — “ ” → etc.)',
                  was={'axn': rec['axn_before']}, now={'axn': d['axn']}, when=ON)
     if not dry and done:
-        json.dump(reg, open(ROOT / 'data/registry.json', 'w'), ensure_ascii=False, indent=2)
-    print('reconverted', done); print('held', held)
+        (ROOT / 'data/registry.json').write_text(json.dumps(reg, ensure_ascii=False, indent=2))
+    print('reconverted', len(done), done); print('held', len(held)); print('held', held)
 
 
 if __name__ == '__main__':

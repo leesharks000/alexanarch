@@ -108,9 +108,9 @@ This is the first non-founder deposit — critical validation.
 ---
 
 ## CREDENTIALS (ALL NEED ROTATION)
-- GitHub PAT (regular): `ghp_U38oywSx...` — EXPOSED, rotate
-- GitHub PAT (workflow): `ghp_XeoKHGMD...` — EXPOSED, rotate
-- Anthropic API key: `sk-ant-api03-RwfLi...` — EXPOSED, rotate (set as GitHub secret ANTHROPIC_API_KEY)
+- GitHub PAT (regular): `[redacted 2026-10-15]` — EXPOSED, rotate
+- GitHub PAT (workflow): `[redacted 2026-10-15]` — EXPOSED, rotate
+- Anthropic API key: `[redacted 2026-10-15]` — EXPOSED, rotate (set as GitHub secret ANTHROPIC_API_KEY)
 - GoatCounter: alexanarch.goatcounter.com (leesharks00@ login)
 
 ---

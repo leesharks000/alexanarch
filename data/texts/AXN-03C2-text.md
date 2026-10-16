@@ -13390,6 +13390,46 @@ These three phrases form the FIELD container for the apparatus. The FIELD's boun
 
 ---
 
+## Planning documents (attached)
+
+The 13 planning documents, algorithms and diagnostic maps this record deposits (named in its DataCite record below):
+
+- [PROSODIC_ASYMMETRY_ALGORITHM.md](/data/attachments/operative-semiotics-idp/PROSODIC_ASYMMETRY_ALGORITHM.md)
+- [FOUR_TERM_PROSODIC_ALGORITHM.md](/data/attachments/operative-semiotics-idp/FOUR_TERM_PROSODIC_ALGORITHM.md)
+- [NB2_PROSODIC_MAP.md](/data/attachments/operative-semiotics-idp/NB2_PROSODIC_MAP.md)
+- [MISSING_PIECES_MAP.md](/data/attachments/operative-semiotics-idp/MISSING_PIECES_MAP.md)
+- [PHASE_1_GAP_MAP_AND_MINING_TARGETS.md](/data/attachments/operative-semiotics-idp/PHASE_1_GAP_MAP_AND_MINING_TARGETS.md)
+- [PHASE_2_ARCHIVE_MINING_RESULTS.md](/data/attachments/operative-semiotics-idp/PHASE_2_ARCHIVE_MINING_RESULTS.md)
+- [MIDDLE_NOTEBOOKS_WORK_PLAN.md](/data/attachments/operative-semiotics-idp/MIDDLE_NOTEBOOKS_WORK_PLAN.md)
+- [WORK_PLAN_SUPPLEMENT_MUSES_AND_FPC.md](/data/attachments/operative-semiotics-idp/WORK_PLAN_SUPPLEMENT_MUSES_AND_FPC.md)
+- [GRUNDRISSE_WORK_PLAN.md](/data/attachments/operative-semiotics-idp/GRUNDRISSE_WORK_PLAN.md)
+- [CATHEDRAL_WORK_PLAN.md](/data/attachments/operative-semiotics-idp/CATHEDRAL_WORK_PLAN.md)
+- [HESPERUS_UPGRADE_PLAN.md](/data/attachments/operative-semiotics-idp/HESPERUS_UPGRADE_PLAN.md)
+- [SOURCE_EXTRACTION_REPORT.md](/data/attachments/operative-semiotics-idp/SOURCE_EXTRACTION_REPORT.md)
+- [OS_NINE_VOLUME_SERIES_ARCHITECTURE.md](/data/attachments/operative-semiotics-idp/OS_NINE_VOLUME_SERIES_ARCHITECTURE.md)
+
+---
+
+## Planning documents (attached)
+
+The 13 planning documents, algorithms and diagnostic maps this record deposits (named in its DataCite record below):
+
+- [PROSODIC_ASYMMETRY_ALGORITHM.md](/data/attachments/operative-semiotics-idp/PROSODIC_ASYMMETRY_ALGORITHM.md)
+- [FOUR_TERM_PROSODIC_ALGORITHM.md](/data/attachments/operative-semiotics-idp/FOUR_TERM_PROSODIC_ALGORITHM.md)
+- [NB2_PROSODIC_MAP.md](/data/attachments/operative-semiotics-idp/NB2_PROSODIC_MAP.md)
+- [MISSING_PIECES_MAP.md](/data/attachments/operative-semiotics-idp/MISSING_PIECES_MAP.md)
+- [PHASE_1_GAP_MAP_AND_MINING_TARGETS.md](/data/attachments/operative-semiotics-idp/PHASE_1_GAP_MAP_AND_MINING_TARGETS.md)
+- [PHASE_2_ARCHIVE_MINING_RESULTS.md](/data/attachments/operative-semiotics-idp/PHASE_2_ARCHIVE_MINING_RESULTS.md)
+- [MIDDLE_NOTEBOOKS_WORK_PLAN.md](/data/attachments/operative-semiotics-idp/MIDDLE_NOTEBOOKS_WORK_PLAN.md)
+- [WORK_PLAN_SUPPLEMENT_MUSES_AND_FPC.md](/data/attachments/operative-semiotics-idp/WORK_PLAN_SUPPLEMENT_MUSES_AND_FPC.md)
+- [GRUNDRISSE_WORK_PLAN.md](/data/attachments/operative-semiotics-idp/GRUNDRISSE_WORK_PLAN.md)
+- [CATHEDRAL_WORK_PLAN.md](/data/attachments/operative-semiotics-idp/CATHEDRAL_WORK_PLAN.md)
+- [HESPERUS_UPGRADE_PLAN.md](/data/attachments/operative-semiotics-idp/HESPERUS_UPGRADE_PLAN.md)
+- [SOURCE_EXTRACTION_REPORT.md](/data/attachments/operative-semiotics-idp/SOURCE_EXTRACTION_REPORT.md)
+- [OS_NINE_VOLUME_SERIES_ARCHITECTURE.md](/data/attachments/operative-semiotics-idp/OS_NINE_VOLUME_SERIES_ARCHITECTURE.md)
+
+---
+
 ## Complete DataCite record (verbatim, captured 2026-07-03)
 
 ```json

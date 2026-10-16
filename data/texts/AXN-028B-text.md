@@ -72,14 +72,14 @@ Let:
 Then the **raw semantic magnitude** of $s$ over horizon $T$ is:
 
 
-$$\boxed{;\mathcal{M}*T(s \mid C) ;=; \int*{t_0}^{t_0 + T} w(t), D!\left(\Psi_t^{s}(C) ,\Big\Vert, \Psi_t^{0}(C)\right), dt;}$$
+$$\boxed{;\mathcal{M}_T(s \mid C) ;=; \int_{t_0}^{t_0 + T} w(t), D!\left(\Psi_t^{s}(C) ,\Big\Vert, \Psi_t^{0}(C)\right), dt;}$$
 ### 2.3 Geometric Form
 
 
 If the semantic field admits an embedding of states into a metric space (an L² space of densities under a chosen reference measure; a Wasserstein space; a topic-vector space), the geometric form is:
 
 
-$$\mathcal{M}*T(s) ;=; \int*{t_0}^{t_0 + T} w(t), \big|\Psi_t^{s} - \Psi_t^{0}\big|^2, dt$$
+$$\mathcal{M}_T(s) ;=; \int_{t_0}^{t_0 + T} w(t), \big|\Psi_t^{s} - \Psi_t^{0}\big|^2, dt$$
 
 
 The distributional and geometric forms are not generically equivalent. They become equivalent under specified embeddings (the L² embedding of probability densities, for instance). The geometric form is the visual handhold; the distributional form is the operative definition. The discipline should default to the distributional form and invoke the geometric form only when an embedding has been specified.
@@ -220,7 +220,7 @@ The principle as stated assumes a single deformation against a single baseline. 
 The discipline therefore requires a recursive extension:
 
 
-$$\mathcal{M}*T^{(n)}(s \mid C) ;=; \int*{t_0}^{t_0 + T} w(t), D!\left(\Psi_t^{s,(n)} ,\Big\Vert, \Psi_t^{(n-1)}\right) dt$$
+$$\mathcal{M}_T^{(n)}(s \mid C) ;=; \int_{t_0}^{t_0 + T} w(t), D!\left(\Psi_t^{s,(n)} ,\Big\Vert, \Psi_t^{(n-1)}\right) dt$$
 
 
 where $\Psi_t^{(n-1)}$ is the field trajectory after $n-1$ prior deformations and $\Psi_t^{s,(n)}$ is the trajectory after the $n$th. Meaning is not deviation from a primordial state. It is **deviation from a state that is itself the accumulation of prior deviations**.
@@ -306,7 +306,7 @@ If the purpose fails this audit, **the measurement is refused.** This is not dec
 For an inscription $s$ into an AI retrieval surface:
 
 
-$$\mathcal{M}*T^{\text{retrieval}}(s) ;=; \sum*{q \in Q} \omega_q \int_{t_0}^{t_0 + T} D_{JS}!\left(R_t^s(q) ,\Big\Vert, R_t^0(q)\right) dt$$
+$$\mathcal{M}_T^{\text{retrieval}}(s) ;=; \sum_{q \in Q} \omega_q \int_{t_0}^{t_0 + T} D_{JS}!\left(R_t^s(q) ,\Big\Vert, R_t^0(q)\right) dt$$
 
 
 where $Q$ is a diagnostic query set, $\omega_q$ are query weights, $R_t^0(q)$ is the pre-deposit response distribution to query $q$, and $R_t^s(q)$ is the post-deposit response distribution.
@@ -384,7 +384,7 @@ The discipline does not need a single number to know which is which. The diagnos
 Sappho Fragment 31 (Voigt) is the canonical test case. The principle predicts that the fragment's meaning is the integral:
 
 
-$$\mathcal{M}*T^{\text{Sappho}};[\text{bounded}];=; \int*{600\text{ BCE}}^{2026} w(t), D!\left(\Psi_t^{\text{with Fragment 31}} ,\Big\Vert, \Psi_t^{0}\right) dt$$
+$$\mathcal{M}_T^{\text{Sappho}};[\text{bounded}];=; \int_{600\text{ BCE}}^{2026} w(t), D!\left(\Psi_t^{\text{with Fragment 31}} ,\Big\Vert, \Psi_t^{0}\right) dt$$
 
 
 The trajectory $\Psi_t^0$ (the world in which Fragment 31 was lost like virtually every other 6th-century-BCE lyric) **lacks — or contains materially different replacements for** — Longinus's invocation in *On the Sublime*, Catullus 51, the medieval transmission, the Renaissance recovery, H.D., Sara Teasdale, Anne Carson, and the present Crimson Hexagonal corpus. The trajectory $\Psi_t^s$ contains them. The counterfactual is unobservable in principle (per §4.3); the measurement is bounded, not computed.

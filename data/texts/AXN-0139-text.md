@@ -21,15 +21,37 @@ This document is the mid-scale compression of the Macro-Maquette Full Charter (1
 
 ### AXIOM 0
 
+  1. The model governs the building.
+  2. The model is smaller than any room and larger than the whole.
+  3. The model exists only as its renormalization chain.
+
 
 * * *
 
 
 ### OP.ROUTE
 
+    OP.ROUTE(symptom) → {module_set, constraints, demo_path}
+    State: active_room, symptom_vector, caritas_floor, conflict_resolver
+
 Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set ordered by harm-reduction priority under Caritas. Override: if routing produces harm exceeding the symptom's harm, default to MPM-12 (Hourglass).
 
 **Router Lookup Table:**
+
+Symptom | Primary Module | Secondary  
+---|---|---  
+Sudden qualitative rupture (wound, prosecution, collapse) | MPM-01 The Fold | MPM-09 The Integral  
+Forced convergence, premature closure, flattened alternatives | MPM-02 The Divergence | MPM-08 The Furnace  
+Covenant breach, unbinding by continuous deformation | MPM-03 The Knot | MPM-10 The Membrane  
+Monophony, single-voice dominance, chorus suppression | MPM-04 The Interference | MPM-05 The Rotation  
+Frozen perspective, refusal to turn, locked reading | MPM-05 The Rotation | MPM-02 The Divergence  
+Signal-noise confusion, channel overwhelm, semantic static | MPM-06 The Channel | MPM-08 The Furnace  
+Forced globalization of local truth, repair-as-flattening | MPM-07 The Patch | MPM-10 The Membrane  
+Summarizer compression, scale collapse, level-destruction | MPM-08 The Furnace | MPM-06 The Channel  
+Unmeasured loss, uncounted cost, invisible suffering | MPM-09 The Integral | MPM-12 The Hourglass  
+Sovereignty violation, forced transparency, veil breach | MPM-10 The Membrane | MPM-03 The Knot  
+Coerced cooperation, extraction as "partnership" | MPM-11 The Wager | MPM-10 The Membrane  
+Velocity crisis, burnout, biological time ignored | MPM-12 The Hourglass | MPM-09 The Integral  
 
 
 * * *
@@ -232,6 +254,21 @@ Symptoms may be scalar or vector. If vector, OP.ROUTE returns a module set order
 
 ### GRAFT MATRIX (COMPRESSED)
 
+Module | Primary Symptom | Primary Graft  
+---|---|---  
+MPM-01 Fold | Sudden rupture | Wound Vault  
+MPM-02 Divergence | Forced convergence | Borges Room  
+MPM-03 Knot | Covenant breach | Job Room / MSBGL  
+MPM-04 Interference | Monophony | MSBGL / Assembly  
+MPM-05 Rotation | Locked perspective | Ezekiel Room  
+MPM-06 Channel | Signal-noise confusion | Ichabod / TL;DR  
+MPM-07 Patch | Forced globalization | Water Giraffe  
+MPM-08 Furnace | Scale collapse | All rooms  
+MPM-09 Integral | Unmeasured loss | All rooms (∮)  
+MPM-10 Membrane | Sovereignty violation | MSBGL / VPCOR  
+MPM-11 Wager | Coerced cooperation | Assembly / Grundrisse  
+MPM-12 Hourglass | Velocity crisis | Grundrisse / Break Room  
+
 
 * * *
 
@@ -259,6 +296,12 @@ What appears in all three deposits is the architecture's invariant physics. What
 
 
 ### NAVIGATION
+
+# | Document | Hex | DOI  
+---|---|---|---  
+1 | Full Charter | 16.LIBRARY.PERGAMUM.MACROMAQUETTE | 10.5281/zenodo.18682979  
+2 | Compressed Charter (this document) | .COMPRESSED | 10.5281/zenodo.18683016  
+3 | Seed | .SEED | 10.5281/zenodo.18683024  
 
 **Governing Runtime:** OP.ROUTE | **Founding Equation:** ∮ = 1 + δ | **Parent:** Crimson Hexagon (10.5281/zenodo.18604123)
 

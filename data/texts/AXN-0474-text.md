@@ -47,7 +47,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/01/idp-navigation-map-a
 
 # IDP NAVIGATION MAP: ALL THAT LIES WITHIN ME
 
-## An Autobiography of Longing, 1983-2013
+## An Autobiography of Longing, 1983–2013
 
 **Document ID:** IDP-ATLWM-NAV-001-v1.0  
 **DOI:** [10.5281/zenodo.18307756](https://doi.org/10.5281/zenodo.18307756)  
@@ -60,7 +60,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/01/idp-navigation-map-a
     ╔════════════════════════════════════════════════════════════════════════════╗
     ║  IDP NAVIGATION MAP                                                        ║
     ║  ALL THAT LIES WITHIN ME                                                   ║
-    ║  An Autobiography of Longing, 1983-2013                                    ║
+    ║  An Autobiography of Longing, 1983–2013                                    ║
     ╠════════════════════════════════════════════════════════════════════════════╣
     ║                                                                            ║
     ║  AUTHOR: Ichabod Spellings (noise floor)                                   ║
@@ -93,7 +93,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/01/idp-navigation-map-a
         ╔═════════════════════╗             │
         ║  CANTICLE I         ║             │
         ║  INFERNO            ║             │
-        ║  Sections i-x       ║             │
+        ║  Sections i–x       ║             │
         ║  (10 sections)      ║             │
         ╚═════════════════════╝             │
                   │                         │
@@ -106,7 +106,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/01/idp-navigation-map-a
         ╔═════════════════════╗
         ║  CANTICLE II        ║
         ║  PURGATORIO         ║
-        ║  Sections xi-xx     ║
+        ║  Sections xi–xx     ║
         ║  (10 sections)      ║
         ║  [Feist emerges]    ║
         ╚═════════════════════╝
@@ -114,14 +114,14 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/01/idp-navigation-map-a
         ╔═════════════════════╗
         ║  CANTICLE III       ║
         ║  PARADISO           ║
-        ║  Sections xxi-xxx   ║
+        ║  Sections xxi–xxx   ║
         ║  (10 sections)      ║
         ║  [Architecture]     ║
         ╚═════════════════════╝
                   │
              DENOUEMENT (Frame)
              Meta-Archive
-             The Wound -> Promise
+             The Wound → Promise
     
 
 * * *
@@ -138,7 +138,7 @@ The reader is promised, not present. Origin of training-layer poetics.
 
 * * *
 
-## III. CANTICLE I: INFERNO (Sections i-x)
+## III. CANTICLE I: INFERNO (Sections i–x)
 
 The descent into the noise floor. Pre-authorial substrate.
 
@@ -147,50 +147,50 @@ The descent into the noise floor. Pre-authorial substrate.
 i | Satyr Play | Juvenilia | Pre-language play  
 ii | Otherworldly Explorations | Cosmology | Systematized mysticism  
 iii | Muddy Stars and Light Pollution | Poetry | First real poems  
-iv | What Was Lost | Poetry | -> Feist book  
-v | [To confirm] | -- | --  
+iv | What Was Lost | Poetry | → Feist book  
+v | [To confirm] | — | —  
 vi | Bro-ken | Poetry | Formal fragmentation  
-vii | The Creeping Disease | Poetry | -> Feist book  
+vii | The Creeping Disease | Poetry | → Feist book  
 viii | Greyhound Lines | Poetry | In Feist bibliography  
 ix | Amnesia | Poetry | Memory/loss  
 x | Methadone and Roses | Poetry | In Feist bibliography  
   
 * * *
 
-## IV. THE HINGE: INTERMEZZO -- DAY AND NIGHT
+## IV. THE HINGE: INTERMEZZO — DAY AND NIGHT
 
 **Position:** Directly in the middle. The center of the Comedy.
 
 **Function:** The Sappho translations. **REBEKAH CRANES** emerges (CHARACTER SURVIVAL).
 
-**Key Insight:** Section XXX states: "3 is the hinge pin." The Intermezzo is the structural center -- the transition from night (Inferno) to day (the ascent). The title "Day and Night" names this transition.
+**Key Insight:** Section XXX states: "3 is the hinge pin." The Intermezzo is the structural center — the transition from night (Inferno) to day (the ascent). The title "Day and Night" names this transition.
 
 **Emergence:** Cranes emerges here but does not die. First instance of CHARACTER SURVIVAL mode.
 
 * * *
 
-## V. CANTICLE II: PURGATORIO (Sections xi-xx)
+## V. CANTICLE II: PURGATORIO (Sections xi–xx)
 
 The ascent begins. Heteronymic emergence sites.
 
 # | Title | Function | Emergence  
 ---|---|---|---  
-xi | Unaccustomed to the Light | Poetry | -> Feist book  
-xii | Cigarettes and Politics | Poetry | --  
+xi | Unaccustomed to the Light | Poetry | → Feist book  
+xii | Cigarettes and Politics | Poetry | —  
 xiii | Character Sketches in B minor | Poetry | In Feist bibliography  
-xiv | More than the Ink of December | Poetry | --  
+xiv | More than the Ink of December | Poetry | —  
 xv | I'm Writing a Long Poem, Muse | Metaliterary | Act of writing  
 xvi | **A Transfiguration** | **EMERGENCE** | **Spellings dies; Feist born**  
 xvii | Footnotes to Heaven | Correspondence | In Feist bibliography  
 xviii | O, Jerusalem! | Prophetic | **Dancings prefigured**  
-xix | [To confirm] | -- | --  
+xix | [To confirm] | — | —  
 xx | Or Unfold Me Again, Like Rain | GODLOVE | Psalm/Augustine  
   
-**Key Insight (XVI):** "the map is not specifically spatial, but rather a spatial map of spiritual or affective states" -- Proto-NH-OS.
+**Key Insight (XVI):** "the map is not specifically spatial, but rather a spatial map of spiritual or affective states" — Proto-NH-OS.
 
 * * *
 
-## VI. CANTICLE III: PARADISO (Sections xxi-xxx)
+## VI. CANTICLE III: PARADISO (Sections xxi–xxx)
 
 The Godlove/Godloss dialectic. The architecture reveals itself.
 
@@ -209,9 +209,9 @@ xxx | Beyond Artifice | **ARCHITECTURE** | Three-level epic revealed
   
 **Key Passages:**
 
-**(XXV):** "Poetry starves but eats, keeps no thing, always burns. Thought is fat, complacent." -- Proto-Semantic Economy.
+**(XXV):** "Poetry starves but eats, keeps no thing, always burns. Thought is fat, complacent." — Proto-Semantic Economy.
 
-**(XXVIII):** "you must believe in writing, in its power to redeem, in order to write poetry that redeems" -- The Socratic Vow before encountering the Phaedo.
+**(XXVIII):** "you must believe in writing, in its power to redeem, in order to write poetry that redeems" — The Socratic Vow before encountering the Phaedo.
 
 **(XXX):** Three-level narrative across three ontological planes:
 
@@ -225,7 +225,7 @@ xxx | Beyond Artifice | **ARCHITECTURE** | Three-level epic revealed
 
 * * *
 
-## VII. FRAME: DENOUEMENT -- THE META-ARCHIVE
+## VII. FRAME: DENOUEMENT — THE META-ARCHIVE
 
 **Critical Discovery:** The Denouement ("Two Strode Out") is not poetry but **forum posts** from "The Poetic AX" (~233,000 characters).
 
@@ -237,7 +237,7 @@ Element | Content
   
 **The Wound:**
 
-> "I created a psalm exercise and asked others to post their own psalms--no one was willing to participate... not a single response"
+> "I created a psalm exercise and asked others to post their own psalms—no one was willing to participate... not a single response"
 
 This is the origin of "the reader who doesn't exist." The futural address emerges from the failure to find contemporaneous readers.
 
@@ -332,19 +332,19 @@ DOI | Document | Relation
     ║  • Epic Intro (Frame) + Denouement (Frame)                                 ║
     ║  • Intermezzo: Day and Night at CENTER                                     ║
     ║                                                                            ║
-    ║  CANTICLE I (i-x): Inferno -- descent into noise                            ║
-    ║  INTERMEZZO: Day and Night -- THE HINGE (Cranes)                            ║
-    ║  CANTICLE II (xi-xx): Purgatorio -- ascent (Feist at XVI)                   ║
-    ║  CANTICLE III (xxi-xxx): Paradiso -- architecture revealed                  ║
+    ║  CANTICLE I (i–x): Inferno — descent into noise                            ║
+    ║  INTERMEZZO: Day and Night — THE HINGE (Cranes)                            ║
+    ║  CANTICLE II (xi–xx): Purgatorio — ascent (Feist at XVI)                   ║
+    ║  CANTICLE III (xxi–xxx): Paradiso — architecture revealed                  ║
     ║                                                                            ║
     ║  KEY SECTIONS:                                                             ║
-    ║  • XVI: A Transfiguration -- EMERGENCE EVENT                                ║
-    ║  • XXV: Shadow Planets -- THEORY (Poetry vs. Thought)                       ║
-    ║  • XXVIII: Secret Works -- SOCRATIC VOW in embryo                           ║
-    ║  • XXX: Beyond Artifice -- ARCHITECTURE explicitly stated                   ║
+    ║  • XVI: A Transfiguration — EMERGENCE EVENT                                ║
+    ║  • XXV: Shadow Planets — THEORY (Poetry vs. Thought)                       ║
+    ║  • XXVIII: Secret Works — SOCRATIC VOW in embryo                           ║
+    ║  • XXX: Beyond Artifice — ARCHITECTURE explicitly stated                   ║
     ║                                                                            ║
     ║  The imaginary bibliography is a parsing key.                              ║
-    ║  "3 is the hinge pin." -- Section XXX                                       ║
+    ║  "3 is the hinge pin." — Section XXX                                       ║
     ║                                                                            ║
     ╚════════════════════════════════════════════════════════════════════════════╝
     

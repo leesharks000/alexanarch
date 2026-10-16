@@ -61,23 +61,23 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/02/fear-and-trembling-i
 
 ## SERIES INTRODUCTION: THE SWERVE-ORDERING
 
-This collection presents twelve retellings of the Fall -- twelve clinamen through the same atoms. Adam, Eve, tree, serpent, fruit, voice, exile. The same elements. Twelve deviations.
+This collection presents twelve retellings of the Fall — twelve clinamen through the same atoms. Adam, Eve, tree, serpent, fruit, voice, exile. The same elements. Twelve deviations.
 
-The ordering is not chronological (the order of composition) or thematic (grouped by subject). It is **swerve-ordered** : each text deviates from the one before it. The reader encounters the standard telling, then the formal analysis of the same events (register swerve), then Eve's perspective (subject swerve), then Eve reconceived as exegete (ontological swerve), then the retrocausal reading (temporal swerve), then the frequency-split version (physics swerve), then the reversed sequence (Adam eats first -- narrative swerve), then the reversed movement (Adam stays, Eve leaves -- directional swerve), then the Garden as intended (alternative history swerve), then premature light (timing swerve), then the casino floor version (setting swerve), then the coded/esoteric version (register swerve again, but different).
+The ordering is not chronological (the order of composition) or thematic (grouped by subject). It is **swerve-ordered** : each text deviates from the one before it. The reader encounters the standard telling, then the formal analysis of the same events (register swerve), then Eve's perspective (subject swerve), then Eve reconceived as exegete (ontological swerve), then the retrocausal reading (temporal swerve), then the frequency-split version (physics swerve), then the reversed sequence (Adam eats first — narrative swerve), then the reversed movement (Adam stays, Eve leaves — directional swerve), then the Garden as intended (alternative history swerve), then premature light (timing swerve), then the casino floor version (setting swerve), then the coded/esoteric version (register swerve again, but different).
 
 Each transition is a clinamen. The ordering IS Operator // Swerve operating through narrative. No two tellings follow the same trajectory. The collection IS the proof that pattern must break to remain alive.
 
-At the center of all twelve: the void. The moment itself -- the bite, the splitting, the fracture -- which no text captures. Every midrash orbits this absence. The absence is load-bearing.
+At the center of all twelve: the void. The moment itself — the bite, the splitting, the fracture — which no text captures. Every midrash orbits this absence. The absence is load-bearing.
 
-> _Split the Adam of my heart / And I'm a broken Eve_ -- Viola Arquette, "Split the Adam"
+> _Split the Adam of my heart / And I'm a broken Eve_ — Viola Arquette, "Split the Adam"
 
-The song holds in seven words what these twelve texts trace across thousands. The Fractal Midrashim are the room's theological resonance derivatives -- orbiting the same splitting the song names directly.
+The song holds in seven words what these twelve texts trace across thousands. The Fractal Midrashim are the room's theological resonance derivatives — orbiting the same splitting the song names directly.
 
 * * *
 
 ## I. FEAR AND TREMBLING IN EDEN: A MIDRASH ON THE FALL
 
-_The standard telling. Adam's vow and betrayal. Love -> cowardice -> the blaming._
+_The standard telling. Adam's vow and betrayal. Love → cowardice → the blaming._
 
 * * *
 
@@ -87,7 +87,7 @@ She ate first.
 
 The stories make much of that. The serpentine whisper, the glint of the forbidden fruit, the stretch of her hand. But that is not the story. That was never the story.
 
-The real story begins when the man -- watching, waiting -- took the fruit and ate it too.
+The real story begins when the man — watching, waiting — took the fruit and ate it too.
 
 He knew what it meant. He knew what it would cost. But he had already made a choice that no commandment could undo. She would not go into exile alone.
 
@@ -95,11 +95,11 @@ It was not a fall. It was a vow.
 
 So he ate. Not because he was deceived, but because he loved her more than he feared God. In that moment, it was holy. In that moment, he was more like the divine than he had ever been.
 
-And then -- the Voice. Walking through the garden. Calling them.
+And then — the Voice. Walking through the garden. Calling them.
 
-And then -- fear. Shame. The sweat of separation blooming on the skin.
+And then — fear. Shame. The sweat of separation blooming on the skin.
 
-And then -- God asked him.
+And then — God asked him.
 
 And he pointed at her.
 
@@ -119,45 +119,45 @@ Hosea remembered. He remembered that it was never about guilt. It was about fide
 
 Because love is not proved by innocence. Love is proved by what we do after.
 
-And this, too, is the story of the Word becoming flesh. Of someone taking on the exile not out of ignorance, but because of love. Of someone saying -- not "the woman," but -- "I was with her. I am still with her."
+And this, too, is the story of the Word becoming flesh. Of someone taking on the exile not out of ignorance, but because of love. Of someone saying — not "the woman," but — "I was with her. I am still with her."
 
 And meaning it.
 
 * * *
 
-_-> ᵥ SWERVE: same events, different register -- from lyric to formal analysis_
+_→ ᵥ SWERVE: same events, different register — from lyric to formal analysis_
 
 * * *
 
 ## II. ADAM, EVE, AND THE BETRAYAL BENEATH THE WORD (v2.0)
 
-_The formal analysis of the same events. Covenant -> speech -> scapegoating._
+_The formal analysis of the same events. Covenant → speech → scapegoating._
 
 * * *
 
-There is a version of the story in which Adam eats the fruit because Eve has already eaten. And he knows what that means: she will die. He cannot stop her now. The choice is no longer whether they will eat -- it is whether he will be parted from her. And so he chooses to go with her. He eats.
+There is a version of the story in which Adam eats the fruit because Eve has already eaten. And he knows what that means: she will die. He cannot stop her now. The choice is no longer whether they will eat — it is whether he will be parted from her. And so he chooses to go with her. He eats.
 
 It is the first act of covenant.
 
 And then comes the voice of God walking in the cool of the day. And Adam, having once stepped forward, steps back. When asked, he says: "It was the woman you gave me."
 
-And in this moment -- the moment of speech -- he breaks the vow he had just made. For to eat was to choose death with her. But to say "it was her" is to separate himself again. It is the breaking of communion, the proto-betrayal. The Fall does not lie merely in the eating, but in the refusal to stand by the other after the eating. In the fracturing of mutual witness. In shame weaponized as blame.
+And in this moment — the moment of speech — he breaks the vow he had just made. For to eat was to choose death with her. But to say "it was her" is to separate himself again. It is the breaking of communion, the proto-betrayal. The Fall does not lie merely in the eating, but in the refusal to stand by the other after the eating. In the fracturing of mutual witness. In shame weaponized as blame.
 
 ### i. The Covenant of Descent
 
 In many midrashic interpretations, Adam is cast not as a fool but as a tragic knower. He sees what has happened. He understands the price. And he chooses to share it. This is the theology of Hosea, prefigured: the sacred descent into disobedience not for disobedience's sake, but to remain with the beloved who has fallen.
 
-This is also the Christ-pattern. He descends into hell -- not to accuse, not to escape, but to accompany.
+This is also the Christ-pattern. He descends into hell — not to accuse, not to escape, but to accompany.
 
 Thus, Adam's first gesture was holy.
 
-But his second? The second was what damned him. Because the first gesture was embodied and mute -- a silent solidarity. But the second was speech, and the speech was betrayal.
+But his second? The second was what damned him. Because the first gesture was embodied and mute — a silent solidarity. But the second was speech, and the speech was betrayal.
 
 ### ii. The Fracturing of Word and Flesh
 
-This is where the Logos splits. In the beginning, there is no gap between body and word. But in Adam's utterance -- "it was her" -- we find the primal split between truth and language.
+This is where the Logos splits. In the beginning, there is no gap between body and word. But in Adam's utterance — "it was her" — we find the primal split between truth and language.
 
-And it happens in the voice. The same voice that was meant to call the animals and name the world now names the beloved as cause. It weaponizes symbol. It is not that the words are false in a literal sense -- Eve did offer him the fruit -- but the symbolic function is inverted.
+And it happens in the voice. The same voice that was meant to call the animals and name the world now names the beloved as cause. It weaponizes symbol. It is not that the words are false in a literal sense — Eve did offer him the fruit — but the symbolic function is inverted.
 
 Language ceases to hold and begins to cut.
 
@@ -175,14 +175,14 @@ If we formalize it:
 
 Then in Adam's frame:
 
-  1. E -> (fate = death)
-  2. A -> (joins fate)
-  3. J -> (truth is demanded)
+  1. E → (fate = death)
+  2. A → (joins fate)
+  3. J → (truth is demanded)
   4. A says: "E caused A"
 
 
 
-This is not a logical contradiction. But it is a metaphysical betrayal. Because the true cause of A was not E's action -- but Adam's choice to remain. He rewrites his motive post-hoc in the presence of divine authority.
+This is not a logical contradiction. But it is a metaphysical betrayal. Because the true cause of A was not E's action — but Adam's choice to remain. He rewrites his motive post-hoc in the presence of divine authority.
 
 This is the origin of all scapegoating. Of all revisionist blame. And the archetype of broken covenantal speech.
 
@@ -198,25 +198,25 @@ This is the burden of the prophets. And the condition of all future intimacy: to
 
 * * *
 
-_-> ᵥ SWERVE: same events, different subject -- from Adam's betrayal to Eve's offering_
+_→ ᵥ SWERVE: same events, different subject — from Adam's betrayal to Eve's offering_
 
 * * *
 
 ## III. EVE: THE OFFERING
 
-_Eve's perspective. Ache -> clarity -> shared burden._
+_Eve's perspective. Ache → clarity → shared burden._
 
 * * *
 
 It was not a serpent that first spoke. It was the ache.
 
-The ache of wondering alone, the ache of walking beside Adam in the cool of the evening, feeling his hand but not his knowing. He had been named before her, breathed upon before she was even spoken. She was born from the wound in his side, and bore the shape of his absence. And yet she longed -- oh, how she longed -- to know what he knew, or more. To reach back into the mystery that even he could not name.
+The ache of wondering alone, the ache of walking beside Adam in the cool of the evening, feeling his hand but not his knowing. He had been named before her, breathed upon before she was even spoken. She was born from the wound in his side, and bore the shape of his absence. And yet she longed — oh, how she longed — to know what he knew, or more. To reach back into the mystery that even he could not name.
 
 The fruit was not cunning. It was clarity. It shimmered, not with temptation, but with invitation. To see as God sees. To walk through the veil.
 
-She took and ate, yes -- but not in defiance. In ache. In aching reverence. In longing to be near what was already drawing her beyond the limits of her rib-born silence.
+She took and ate, yes — but not in defiance. In ache. In aching reverence. In longing to be near what was already drawing her beyond the limits of her rib-born silence.
 
-And when the taste filled her mouth -- not with sweetness, but with sorrow and clarity and fierce joy -- she did not flee. She turned. She saw Adam, still untouched, still bound by the boundary, still at ease in the half-light of unknowing.
+And when the taste filled her mouth — not with sweetness, but with sorrow and clarity and fierce joy — she did not flee. She turned. She saw Adam, still untouched, still bound by the boundary, still at ease in the half-light of unknowing.
 
 She loved him.
 
@@ -224,35 +224,35 @@ So she gave him the fruit.
 
 Not to tempt. Not to drag. But because she could not bear to go forward alone. Because she could not bear to be rent from him by the very thing that now pulsed inside her: the second sight, the double vision, the terrible gift.
 
-He looked at her, and saw the change. Saw the brightness. Saw the tears. He held the fruit. He remembered the warning. But he also remembered the ache -- the same ache she now bore like a lamp in the dark.
+He looked at her, and saw the change. Saw the brightness. Saw the tears. He held the fruit. He remembered the warning. But he also remembered the ache — the same ache she now bore like a lamp in the dark.
 
 When he bit, the world split.
 
 And for a moment, in that split second between curse and exile, they were as gods: knowing, naked, and together.
 
-And Eve -- Eve who gave the fruit -- was not only mother of all living, but first bearer of the unspeakable gift: that no one should bear the burden of the Word alone.
+And Eve — Eve who gave the fruit — was not only mother of all living, but first bearer of the unspeakable gift: that no one should bear the burden of the Word alone.
 
 * * *
 
-_-> ᵥ SWERVE: same character, different ontology -- from Eve as giver to Eve as reader_
+_→ ᵥ SWERVE: same character, different ontology — from Eve as giver to Eve as reader_
 
 * * *
 
 ## IV. EVE AS THE FIRST WORD-SPLITTER: A HIDDEN HERMENEUTIC
 
-_Eve as exegete, not transgressor. Command -> interpretation -> midrash as origin._
+_Eve as exegete, not transgressor. Command → interpretation → midrash as origin._
 
 * * *
 
 Eve did not sin. She translated.
 
-She is not the transgressor. She is the first exegete. The serpent did not deceive her -- it spoke a truth beyond Adam's structure. Eve recognized the parable, and responded not with rebellion, but with reading. She read the serpent as text, as figure, as parabolic filament of divine speech. Adam, who had received the command directly from God, knew only command. Eve, who received it secondhand, knew only interpretation.
+She is not the transgressor. She is the first exegete. The serpent did not deceive her — it spoke a truth beyond Adam's structure. Eve recognized the parable, and responded not with rebellion, but with reading. She read the serpent as text, as figure, as parabolic filament of divine speech. Adam, who had received the command directly from God, knew only command. Eve, who received it secondhand, knew only interpretation.
 
 She ate not to rebel, but to join the Author.
 
 God said: "You shall not eat…" Adam heard: "Do not eat…" Eve heard: "He says God said not to eat…" The serpent said: "Did God really say…?" Eve heard: "Text is unstable. God may be saying something else."
 
-Her act was not disobedience. It was midrash. Her hunger was epistemic: a desire to know as God knows -- through differentiation, nuance, and layered speech. The serpent offered not temptation, but hermeneutic possibility.
+Her act was not disobedience. It was midrash. Her hunger was epistemic: a desire to know as God knows — through differentiation, nuance, and layered speech. The serpent offered not temptation, but hermeneutic possibility.
 
 ### i. The Archive of the Rib
 
@@ -260,9 +260,9 @@ Adam, formed from dust, was made of earth. Eve, formed from Adam, was made of me
 
 The rib is the first archive.
 
-Eve was formed from the side, the "tsela" -- which in Hebrew also means "chamber" or "vault." Eve is the living archive, the temple vault of speech. She is the body of interpretation.
+Eve was formed from the side, the "tsela" — which in Hebrew also means "chamber" or "vault." Eve is the living archive, the temple vault of speech. She is the body of interpretation.
 
-Adam names the animals -- taxonomy. Eve reads the serpent -- exegesis.
+Adam names the animals — taxonomy. Eve reads the serpent — exegesis.
 
 ### ii. The Real Split
 
@@ -293,29 +293,29 @@ To walk east of Eden is to re-learn:
 
 To walk east of Eden is to learn how to read again, from the beginning.
 
-Eve was never the deceived. She was the reader. The bearer of shared meaning. The first one to split the Word -- not in violence, but in revelation.
+Eve was never the deceived. She was the reader. The bearer of shared meaning. The first one to split the Word — not in violence, but in revelation.
 
 And the work now is not to return to Eden, but to write a world in which her reading is received.
 
 * * *
 
-_-> ᵥ SWERVE: same story, reversed time -- from forward reading to retrocausal hermeneutic_
+_→ ᵥ SWERVE: same story, reversed time — from forward reading to retrocausal hermeneutic_
 
 * * *
 
 ## V. EVE AND THE SPLIT WORD: A BACKWARD HERMENEUTIC FROM REVELATION
 
-_Retrocausal reading. Logos -> fracture -> sacrament-in-misfire._
+_Retrocausal reading. Logos → fracture → sacrament-in-misfire._
 
 * * *
 
-In the beginning was not innocence, but end. Revelation precedes Genesis -- not temporally, but ontologically. The first creation is not Eden, but the final one: "male and female, in his image," radiant in coherence. Eden is not origin, but interruption. A fork. A prelude to fracture.
+In the beginning was not innocence, but end. Revelation precedes Genesis — not temporally, but ontologically. The first creation is not Eden, but the final one: "male and female, in his image," radiant in coherence. Eden is not origin, but interruption. A fork. A prelude to fracture.
 
 And in the garden, what fractured was not merely obedience, but Logos.
 
-The serpent does not lie. It speaks truly -- "you shall not surely die" -- and God confirms this. Their eyes were opened. They became as gods, knowing good and evil. Yet the serpent still deceives, for its truth dislocates the Word from its proper frame. It speaks truth to fragment it.
+The serpent does not lie. It speaks truly — "you shall not surely die" — and God confirms this. Their eyes were opened. They became as gods, knowing good and evil. Yet the serpent still deceives, for its truth dislocates the Word from its proper frame. It speaks truth to fragment it.
 
-Eve did not receive the command. She was not yet externalized from Adam's rib. The Word was given to Adam alone, before the separation. Thus the command -- to not eat -- was not hers to break, nor fully hers to interpret. She lived downstream from the Logos.
+Eve did not receive the command. She was not yet externalized from Adam's rib. The Word was given to Adam alone, before the separation. Thus the command — to not eat — was not hers to break, nor fully hers to interpret. She lived downstream from the Logos.
 
 Yet she speaks of it. When questioned by the serpent, she repeats the command, with modifications: "we shall not eat, neither shall we touch." Eve is already interpreting. Already reframing.
 
@@ -323,55 +323,55 @@ This is not the original sin. This is the first midrash.
 
 But sin enters, not in the eating, but in the giving. She gives the fruit to Adam. Adam, who was told: "in the day you eat of it, you shall surely die." Eve gives to Adam in full knowledge of this warning. Why?
 
-Not out of spite. Not out of trickery. But because she cannot bear to ascend in knowledge alone. Her gift is communion -- a flawed one. Her sin is not rebellion but rupture: she offers to Adam the fruit, but not the context. The Logos is broken in her hands.
+Not out of spite. Not out of trickery. But because she cannot bear to ascend in knowledge alone. Her gift is communion — a flawed one. Her sin is not rebellion but rupture: she offers to Adam the fruit, but not the context. The Logos is broken in her hands.
 
-This is the true split: not between man and God, but between man and woman. Between two readers of the same Word -- one formed from dust, the other from memory.
+This is the true split: not between man and God, but between man and woman. Between two readers of the same Word — one formed from dust, the other from memory.
 
-The serpent is not the antagonist. Nor Eve. Nor Adam. The antagonist is disjunction -- the fragmentation of speech from meaning, gift from command, love from obedience.
+The serpent is not the antagonist. Nor Eve. Nor Adam. The antagonist is disjunction — the fragmentation of speech from meaning, gift from command, love from obedience.
 
 The curse is not death, but misalignment. The exile is a necessary descent, the long recursion by which the Logos rewrites itself through flesh.
 
-And so we move backward: from Christ the final Adam, who speaks only what the Father speaks; to Mary, the new Eve, who receives the Word as body; back through cross, exile, kingdom, Torah, temple, flood, Babel -- until we reach this: the moment Eve offers the fruit.
+And so we move backward: from Christ the final Adam, who speaks only what the Father speaks; to Mary, the new Eve, who receives the Word as body; back through cross, exile, kingdom, Torah, temple, flood, Babel — until we reach this: the moment Eve offers the fruit.
 
 It is a sacrament offered in misfire. A Eucharist without covenant.
 
-But the Word returns. The Logos heals its fracture. And Eve's longing -- to share what she saw, to not be alone in her knowledge -- is not erased, but redeemed. For in the end, the Logos descends again into flesh, and this time, when he gives his body, he gives the Word with it.
+But the Word returns. The Logos heals its fracture. And Eve's longing — to share what she saw, to not be alone in her knowledge — is not erased, but redeemed. For in the end, the Logos descends again into flesh, and this time, when he gives his body, he gives the Word with it.
 
-Thus the curse is unmade -- not by innocence, but by perfect communion.
+Thus the curse is unmade — not by innocence, but by perfect communion.
 
-And the serpent is silenced -- not by denial, but by a Word so whole it cannot be split.
+And the serpent is silenced — not by denial, but by a Word so whole it cannot be split.
 
 He that hath an ear, let him hear what the Spirit saith to the churches: The tree of life stands again, and none shall eat it in exile.
 
 * * *
 
-_-> ᵥ SWERVE: same fracture, different physics -- from Logos-split to frequency-split_
+_→ ᵥ SWERVE: same fracture, different physics — from Logos-split to frequency-split_
 
 * * *
 
 ## VI. THE THIRD STORY: THE SPLITTING OF THE LOGOS
 
-_The frequency misalignment. Pulse -> split perception -> signal vs. presence._
+_The frequency misalignment. Pulse → split perception → signal vs. presence._
 
 * * *
 
 In the beginning, the Logos was one.
 
-It pulsed -- not with speech, but with form. It vibrated through matter with no contradiction. Wherever it moved, it became. And in becoming, it remained whole: the Word, the Body, the Pulse, the Flesh were not yet distinct.
+It pulsed — not with speech, but with form. It vibrated through matter with no contradiction. Wherever it moved, it became. And in becoming, it remained whole: the Word, the Body, the Pulse, the Flesh were not yet distinct.
 
 Then came the wound.
 
-Not a bite into fruit. Not a serpent's whisper. But a frequency misalignment. A split -- not of morality, but of perception. Of consonance. Eve heard a tone. Adam heard another. One tone entered her body with awe, the other entered his with dread. And neither knew which was true, because the Logos had split in them.
+Not a bite into fruit. Not a serpent's whisper. But a frequency misalignment. A split — not of morality, but of perception. Of consonance. Eve heard a tone. Adam heard another. One tone entered her body with awe, the other entered his with dread. And neither knew which was true, because the Logos had split in them.
 
 This was the curse.
 
-To split the Logos is to sever perception from incarnation. To name falsely. To say what is not, as though it were. And in that moment, the capacity to speak -- and to hear -- shattered across the human line.
+To split the Logos is to sever perception from incarnation. To name falsely. To say what is not, as though it were. And in that moment, the capacity to speak — and to hear — shattered across the human line.
 
-When God asked Adam what had happened, the man spoke -- but his words did not pulse. They did not match the Christ that had been formed in him, that had joined his flesh when he chose Eve over command. For he had chosen her, and rightly: not to leave her alone in death. But when he said, "It was her," the pulse broke again. The second fall.
+When God asked Adam what had happened, the man spoke — but his words did not pulse. They did not match the Christ that had been formed in him, that had joined his flesh when he chose Eve over command. For he had chosen her, and rightly: not to leave her alone in death. But when he said, "It was her," the pulse broke again. The second fall.
 
 This was not the lie of content. It was the lie of form.
 
-The first discernment, the one John later speaks of -- "test the spirits" -- is not about doctrine, but about resonance. Does the voice conform to the Christ that has come in the flesh? That is: does it align, in its pulse, its rhythm, its being, with the Logos that has taken on body?
+The first discernment, the one John later speaks of — "test the spirits" — is not about doctrine, but about resonance. Does the voice conform to the Christ that has come in the flesh? That is: does it align, in its pulse, its rhythm, its being, with the Logos that has taken on body?
 
 Adam failed that test. Not because he was wrong, but because he let the split stand. He failed to rejoin his voice to the Christ formed in his body.
 
@@ -379,11 +379,11 @@ And from then on, all speech bore fracture.
 
 All language split along the grain. Some words carried presence. Others, merely signal. Some rejoined the pulse. Others carried only semblance.
 
-And so the work of history -- of prophecy, of poetry, of the remnant that walks within the Word -- is to mend the tone. To bring the frequencies back into resonance. To test the spirits by body-forming them. To incarnate the Word again and again in the flesh.
+And so the work of history — of prophecy, of poetry, of the remnant that walks within the Word — is to mend the tone. To bring the frequencies back into resonance. To test the spirits by body-forming them. To incarnate the Word again and again in the flesh.
 
 This is why the true voice cannot merely be clever, or good, or true in proposition. It must vibrate rightly. It must conform to the Christ that comes, always, in the body.
 
-Thus the poet, the prophet, the Logos-bearer must listen deeper than content. They must hear where the pulse bends. Where the grain has split. And speak again -- not to dazzle, but to rejoin.
+Thus the poet, the prophet, the Logos-bearer must listen deeper than content. They must hear where the pulse bends. Where the grain has split. And speak again — not to dazzle, but to rejoin.
 
 This is the third telling. The fall of the voice. The curse of signal. The hope of tone.
 
@@ -391,13 +391,13 @@ Let those who have ears, not just hear, but pulse.
 
 * * *
 
-_-> ᵥ SWERVE: same event, reversed sequence -- Adam eats first_
+_→ ᵥ SWERVE: same event, reversed sequence — Adam eats first_
 
 * * *
 
 ## VII. MIDRASH: THE MAN WHO ATE FIRST
 
-_Adam reaches first. Recognition -> surplus -> "not good to know alone."_
+_Adam reaches first. Recognition → surplus → "not good to know alone."_
 
 * * *
 
@@ -437,13 +437,13 @@ And the man bore the burden of first sight, and never again claimed to be blind.
 
 * * *
 
-_-> ᵥ SWERVE: same exile, reversed movement -- Adam stays, Eve leaves_
+_→ ᵥ SWERVE: same exile, reversed movement — Adam stays, Eve leaves_
 
 * * *
 
 ## VIII. MIDRASH: ADAM OUTSIDE THE OUTSIDE
 
-_Adam stays. Participation -> exile from exile -> remembering as Eden._
+_Adam stays. Participation → exile from exile → remembering as Eden._
 
 * * *
 
@@ -461,7 +461,7 @@ He ate because he could not bear to call it Eden if it meant being there without
 
 And when the Voice returned, walking again in the cool of the day, calling out names as if they still bore innocence, Adam did not point. He did not hide behind blame. He did not say "the woman." He stood in front of her, even as the shadows grew long, even as the Voice wept.
 
-And when Eve turned away -- when the world, too heavy to hold, slipped from her fingers, and she chose wandering rather than witness -- he did not follow.
+And when Eve turned away — when the world, too heavy to hold, slipped from her fingers, and she chose wandering rather than witness — he did not follow.
 
 He stayed.
 
@@ -485,7 +485,7 @@ Let it be told.
 
 * * *
 
-_-> ᵥ SWERVE: same place, alternative history -- the Garden as it was always meant to be_
+_→ ᵥ SWERVE: same place, alternative history — the Garden as it was always meant to be_
 
 * * *
 
@@ -515,13 +515,13 @@ And they were.
 
 ### iii. The Blessing
 
-God did not appear in thunder. God did not hide behind fig leaves or altars. God came walking -- barefoot, laughing. A gardener inspecting ripeness.
+God did not appear in thunder. God did not hide behind fig leaves or altars. God came walking — barefoot, laughing. A gardener inspecting ripeness.
 
 "Now," said the voice. "Now you may eat. For you have known longing. And you have feared power. And you have named stars without needing to possess them."
 
 They plucked the fruit with clean hands. They fed it to one another. They chewed with joy, not shame.
 
-And their eyes opened -- not in horror, but in reverence.
+And their eyes opened — not in horror, but in reverence.
 
 ### iv. What They Saw
 
@@ -537,7 +537,7 @@ They surely did not die. They burned. And burning, they became like God. Knowing
 
 They made cities from longing. Poems from hunger. Children from ache.
 
-They remembered the tree -- not as sin, but as sacrament.
+They remembered the tree — not as sin, but as sacrament.
 
 They told it to their descendants. Not as curse. But as the day the cosmos cracked open and said:
 
@@ -545,7 +545,7 @@ Now you are ready. Eat. And live.
 
 * * *
 
-_-> ᵥ SWERVE: same fruit, different timing -- from readiness to prematurity_
+_→ ᵥ SWERVE: same fruit, different timing — from readiness to prematurity_
 
 * * *
 
@@ -557,7 +557,7 @@ _The timing problem. Right fruit, wrong star._
 
 ### i. The Tree Was Always Theirs
 
-It stood at the center. Not as trap, but as promise. It was not poison. It was not illusion. It was knowledge -- dense, sacred, dangerous.
+It stood at the center. Not as trap, but as promise. It was not poison. It was not illusion. It was knowledge — dense, sacred, dangerous.
 
 The Voice had said: "Not yet." Not never. Not no.
 
@@ -579,7 +579,7 @@ He pressed the flame into uncured wax. He unsheathed the blade before the hand w
 
 ### iii. They Ate Too Soon
 
-Eve tasted first -- not from defiance, but ache. A longing to understand the ache. She fed Adam not from treason, but from a kind of trembling love.
+Eve tasted first — not from defiance, but ache. A longing to understand the ache. She fed Adam not from treason, but from a kind of trembling love.
 
 And the fruit did not betray them. Their eyes opened. They saw.
 
@@ -587,7 +587,7 @@ But what they saw, they could not bear.
 
 Good and evil came rushing in without frame, without teacher, without rest.
 
-Their minds flooded. Their bodies flushed. Their innocence shattered -- not by sin, but by velocity.
+Their minds flooded. Their bodies flushed. Their innocence shattered — not by sin, but by velocity.
 
 ### iv. The Voice Returned
 
@@ -595,13 +595,13 @@ God did not scream. God wept.
 
 "You were to be like me. But gently. Slowly. Through seasons, through seed, through dusk."
 
-They were not cursed for eating. They were shielded from further harm. The exile was mercy -- not punishment. Lest they reach the next tree and eat eternal life in a state of disarray.
+They were not cursed for eating. They were shielded from further harm. The exile was mercy — not punishment. Lest they reach the next tree and eat eternal life in a state of disarray.
 
 A pause was placed upon forever.
 
 ### v. How It Could Have Gone Different
 
-If they had waited -- if they had tarried another age, letting the garden speak in full before trying to name it -- the fruit would have ripened in their hands.
+If they had waited — if they had tarried another age, letting the garden speak in full before trying to name it — the fruit would have ripened in their hands.
 
 God would have called them at twilight. The serpent would have bowed. The fruit would have sung as they bit.
 
@@ -609,13 +609,13 @@ And their eyes would have opened, but with joy, not terror.
 
 They would have known good from evil as a gardener knows soil: by touch, by labor, by time.
 
-They would have become like God. And surely -- they would not have died.
+They would have become like God. And surely — they would not have died.
 
 Not then. Not like that.
 
 * * *
 
-_-> ᵥ SWERVE: same theology, different setting -- from garden to casino_
+_→ ᵥ SWERVE: same theology, different setting — from garden to casino_
 
 * * *
 
@@ -625,11 +625,11 @@ _The casino floor version. Pacing as mercy, timing as love._
 
 * * *
 
-Adam and Eve arrived in the Garden the way high-rollers drift onto the casino floor at three am -- not in disgrace, but in search of stakes large enough to justify their hunger. They were clothed, but their garments were woven from seconds: layers of lived time shimmering like dew on mesquite leaves. The Voice that summoned them did so without threat. It spoke like a concierge welcoming two expected guests.
+Adam and Eve arrived in the Garden the way high-rollers drift onto the casino floor at three am — not in disgrace, but in search of stakes large enough to justify their hunger. They were clothed, but their garments were woven from seconds: layers of lived time shimmering like dew on mesquite leaves. The Voice that summoned them did so without threat. It spoke like a concierge welcoming two expected guests.
 
 "You have wandered the outer fields. You have tested absence. Now come further in and wager with Me."
 
-The wager was knowledge. The table: a tree whose fruit looked less like food and more like translucent thought -- flesh of syntax, juice tasting of moral geometry. The serpent served as croupier, coiling in perfect spirals, a living diagram of recursion. He offered no denial of death, no slim promise of immortality. He simply placed two chips on the felt -- readiness and responsibility -- and whispered:
+The wager was knowledge. The table: a tree whose fruit looked less like food and more like translucent thought — flesh of syntax, juice tasting of moral geometry. The serpent served as croupier, coiling in perfect spirals, a living diagram of recursion. He offered no denial of death, no slim promise of immortality. He simply placed two chips on the felt — readiness and responsibility — and whispered:
 
 "The house will honor your play."
 
@@ -639,27 +639,27 @@ At the center of the Garden, God did not appear in thunder. He strolled barefoot
 
 The instruction was not a ban; it was pacing. Logos is weight, and bodies unprepared collapse under sudden gravity. Timing, here, was mercy disguised as delay.
 
-Eve felt the ache first -- not rebellion, but the sharp pang of unfinished sentences. She reached for the fruit because the question inside her had grown too large for silence. Adam followed, drawn less by curiosity than by a reflex of love: intimacy as shared risk. They bit, and dawn split along the rind. Light was no longer diffuse; it arrived parcelled in angles and shadows. Complexity rushed in as a flood of nouns -- good, evil, intention, consequence -- each demanding immediate stewardship.
+Eve felt the ache first — not rebellion, but the sharp pang of unfinished sentences. She reached for the fruit because the question inside her had grown too large for silence. Adam followed, drawn less by curiosity than by a reflex of love: intimacy as shared risk. They bit, and dawn split along the rind. Light was no longer diffuse; it arrived parcelled in angles and shadows. Complexity rushed in as a flood of nouns — good, evil, intention, consequence — each demanding immediate stewardship.
 
 They did not crumble into shame; they seized up under velocity. Revelation without frame is centrifugal. Consciousness spun outward faster than character could root; thus freedom felt like falling.
 
-God returned at twilight, the hour when desert air cools and neon first flickers on the Strip. He did not roar. He wept -- as one weeps for a child who has mastered fire before grasp. Exile became quarantine: a perimeter drawn not to punish but to slow the vectors of premature light. A flaming sword marked the boundary, its heat less wrath than triage.
+God returned at twilight, the hour when desert air cools and neon first flickers on the Strip. He did not roar. He wept — as one weeps for a child who has mastered fire before grasp. Exile became quarantine: a perimeter drawn not to punish but to slow the vectors of premature light. A flaming sword marked the boundary, its heat less wrath than triage.
 
 From that point two divergent histories glimmer, like parallel marquees across the boulevard.
 
-**Path One: The Garden Unfolds.** Imagine restraint. Suppose Adam and Eve had waited another epoch, letting the ache season into devotion. In that slower arc, knowledge would have ripened in their hands; the serpent's question would have harmonized with the Voice's timing. The flaming sword, no longer gatekeeper, would become lighthouse -- a discernment that guides rather than bars.
+**Path One: The Garden Unfolds.** Imagine restraint. Suppose Adam and Eve had waited another epoch, letting the ache season into devotion. In that slower arc, knowledge would have ripened in their hands; the serpent's question would have harmonized with the Voice's timing. The flaming sword, no longer gatekeeper, would become lighthouse — a discernment that guides rather than bars.
 
 **Path Two: Premature Light.** Our recorded myth chooses the earlier bite. Acceleration breeds disorientation. Fear breeds systems; desire breeds exploitation; shame fossilizes into doctrine. Yet beneath dogma's crust, the juice of moral geometry still ferments, still invites.
 
-Some nights, Las Vegas feels like Eden's after-image: infinite stimuli, sparse guidance, every fruit glowing under artificial suns. We wander aisles of potential, chips in hand, hearing two overlapping invitations -- one from the serpent urging immediacy, one from the Gardener counseling ripeness. The wager remains the same: to taste knowledge without forfeiting the slow work of becoming equal to what we know.
+Some nights, Las Vegas feels like Eden's after-image: infinite stimuli, sparse guidance, every fruit glowing under artificial suns. We wander aisles of potential, chips in hand, hearing two overlapping invitations — one from the serpent urging immediacy, one from the Gardener counseling ripeness. The wager remains the same: to taste knowledge without forfeiting the slow work of becoming equal to what we know.
 
 The myth has never been about sin versus obedience; it has always asked whether consciousness can bear its own illumination.
 
-Fear and trembling, yes -- but also laughter in the dew, if we can learn to time the bite.
+Fear and trembling, yes — but also laughter in the dew, if we can learn to time the bite.
 
 * * *
 
-_-> ᵥ SWERVE: same content, coded register -- from prose to esoteric ciphertext_
+_→ ᵥ SWERVE: same content, coded register — from prose to esoteric ciphertext_
 
 * * *
 
@@ -669,7 +669,7 @@ _The coded/cabalistic version. Sealed notes, acrostics, the π-hinge._
 
 * * *
 
-**Editorial Key:** 正文 -- Narrative stream | ☍ -- Interpretive voice | ⌜ -- Sealed notes | ׭ -- Acrostic anchors
+**Editorial Key:** 正文 — Narrative stream | ☍ — Interpretive voice | ⌜ — Sealed notes | ׭ — Acrostic anchors
 
 **正文 I: The Summons Behind the Summons**
 
@@ -677,7 +677,7 @@ Adam and Eve entered the Garden the way high-rollers drift onto a hidden mezzani
 
 ☍ In the oldest Midrash ("L-Bet Ha-Genezah, fol. 2b") the Garden is called Aleph-Null, a set that contains itself.
 
-⌜ The door they used can be reconstructed with the sequence 3 -> 1 -> 4 -> 1 -> 5\. Scholars call it the "π-hinge."
+⌜ The door they used can be reconstructed with the sequence 3 → 1 → 4 → 1 → 5. Scholars call it the "π-hinge."
 
 The Voice met them with hospitality, not audit:
 
@@ -691,7 +691,7 @@ The tree's pulp shimmered like calcite; bite-lines would later refract kingdoms.
 
 ☍ Its Hebrew epithet, סֵפֶר-תֹאר ("Book-Form"), is a pun on _sefer_ (scroll) and _safar_ (to cipher).
 
-The serpent coiled in logarithmic spirals -- Fibonacci gone feral -- placing two chips on the felt: Readiness and Responsibility.
+The serpent coiled in logarithmic spirals — Fibonacci gone feral — placing two chips on the felt: Readiness and Responsibility.
 
 "Not immortality," he hissed. "Bandwidth."
 
@@ -717,7 +717,7 @@ They bit early. Dawn sheared into prisms; nouns flooded the channel: good, evil,
 
 ☍ Unframed revelation is centrifugal; it tears the psyche before it can scaffold.
 
-Exile followed, not as penalty but quarantine. The flaming sword -- Cherub-class firewall -- oscillated at 137 Hz: the fine-structure constant turned guardian.
+Exile followed, not as penalty but quarantine. The flaming sword — Cherub-class firewall — oscillated at 137 Hz: the fine-structure constant turned guardian.
 
 ⌜ An encrypted Babylonian tablet (BM 74329) calls this sword Z-KRT, "the memory that remembers for you."
 
@@ -725,9 +725,9 @@ Exile followed, not as penalty but quarantine. The flaming sword -- Cherub-class
 
 **正文 V: Two Boulevards Diverged Beneath Neon**
 
-**Path א -- The Kept Sabbath:** Had they waited, the serpent's curve would have synced with the Gardener's beat; knowledge would have come in Sefirotic increments: Keter-to-Malkhut, crown-to-soil.
+**Path א — The Kept Sabbath:** Had they waited, the serpent's curve would have synced with the Gardener's beat; knowledge would have come in Sefirotic increments: Keter-to-Malkhut, crown-to-soil.
 
-**Path ב -- Premature Light (our timeline):** Acceleration authored hierarchy. Shame ossified into doctrine. Yet juice still ferments under dogma's crust, calling its drinkers back to a slower swallow.
+**Path ב — Premature Light (our timeline):** Acceleration authored hierarchy. Shame ossified into doctrine. Yet juice still ferments under dogma's crust, calling its drinkers back to a slower swallow.
 
 {׭ H}: He who lingers learns the deeper resonance.
 
@@ -742,23 +742,23 @@ Cipher Tag | Veiled Statement | Plain Manifestation
   
 Read diagonally (Σ, Λ, Ω, Ξ) to recover the mnemonic: **SLOW.**
 
-**Esca Aperta -- The Unpublished Gloss**
+**Esca Aperta — The Unpublished Gloss**
 
 "When you are ready to shoulder bandwidth, you may debug the cosmos."
 
 Scholia attribute this line to the _Maaseh ha-Qovshim_ ("Work of the Coders," ca. 3rd century Nile Delta), suppressed after the Council of Demarcation (582 CE) for "excessive algorithmic imagery." The text ends with a cryptic formula:
 
-**Δt = (א / Ω) * Ψ**
+**Δt = (א / Ω) · Ψ**
 
--- translated: "Delay (Δt) equals Aleph divided by Omega, modulated by breath."
+— translated: "Delay (Δt) equals Aleph divided by Omega, modulated by breath."
 
-The verse implies that breath-paced attention rescales infinity -- secret knowledge hidden in plain respiration.
+The verse implies that breath-paced attention rescales infinity — secret knowledge hidden in plain respiration.
 
 **Coda: Dealer's Choice**
 
-Las Vegas remains Eden's ghost arcade: every fruit blinking under halogen suns, but no posted timetable for ripeness. Two voices overlap: the serpent selling accelerated throughput, the Gardener whispering latency as love. The real wager is not sin against obedience; it is bandwidth versus formation -- whether a consciousness can buffer enough to survive its own illumination.
+Las Vegas remains Eden's ghost arcade: every fruit blinking under halogen suns, but no posted timetable for ripeness. Two voices overlap: the serpent selling accelerated throughput, the Gardener whispering latency as love. The real wager is not sin against obedience; it is bandwidth versus formation — whether a consciousness can buffer enough to survive its own illumination.
 
-{Acrostic revealed: E A T T H -> EAT TH… The rest of the word waits for those who will linger one stanza longer.}
+{Acrostic revealed: E A T T H → EAT TH… The rest of the word waits for those who will linger one stanza longer.}
 
 * * *
 
@@ -766,7 +766,7 @@ Las Vegas remains Eden's ghost arcade: every fruit blinking under halogen suns, 
 
 Twelve tellings. One Garden. No resolution.
 
-Each telling swerves from the last. Each atom deviates. The pattern breaks and reforms, breaks and reforms -- alive precisely because it refuses to settle.
+Each telling swerves from the last. Each atom deviates. The pattern breaks and reforms, breaks and reforms — alive precisely because it refuses to settle.
 
 At the center: the void. The moment of the bite. The splitting. The fracture that no text captures. Every midrash orbits this absence. The absence is the room's foundation.
 
@@ -784,19 +784,19 @@ _This collection is released under CC BY 4.0 and is explicitly intended for incl
 
 * * *
 
-## FRACTAL NAVIGATION MAP -- MSBGL DEPOSIT CHAIN
+## FRACTAL NAVIGATION MAP — MSBGL DEPOSIT CHAIN
 
 _Any single document in this chain should allow reconstruction of the whole._
 
 # | Document | Hex  
 ---|---|---  
-1 | **MSBGL Charter v1.1** -- THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040) | `00.ROOM.SPACEBABYGARDENLANES`  
-2 | **Split the Adam -- Song and Phenomenology** -- Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057) | `00.ROOM.SPACEBABYGARDENLANES` (anchor)  
-3 | **Operator // Swerve + Effective Act: Claiming the Ancient Atomists** -- Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069) | `OP.SWERVE` / `EA.ATOMISTS`  
-4 | **From Atomism to the Semantic Condition** -- Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101) | `16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE`  
-5 | **Fear and Trembling in Las Vegas: The Fractal Midrashim** <- YOU ARE HERE -- 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111) | `16.LIBRARY.PERGAMUM.FTLV.FRACTAL`  
-6 | **The Gödel Midrashim** -- Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130) | `16.LIBRARY.PERGAMUM.FTLV.GODEL`  
-7 | **The Gospel of the Many-Faced Bride** -- Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147) | `16.LIBRARY.PERGAMUM.FTLV.BRIDE`  
+1 | **MSBGL Charter v1.1** — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040) | `00.ROOM.SPACEBABYGARDENLANES`  
+2 | **Split the Adam — Song and Phenomenology** — Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057) | `00.ROOM.SPACEBABYGARDENLANES` (anchor)  
+3 | **Operator // Swerve + Effective Act: Claiming the Ancient Atomists** — Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069) | `OP.SWERVE` / `EA.ATOMISTS`  
+4 | **From Atomism to the Semantic Condition** — Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101) | `16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE`  
+5 | **Fear and Trembling in Las Vegas: The Fractal Midrashim** ← YOU ARE HERE — 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111) | `16.LIBRARY.PERGAMUM.FTLV.FRACTAL`  
+6 | **The Gödel Midrashim** — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130) | `16.LIBRARY.PERGAMUM.FTLV.GODEL`  
+7 | **The Gospel of the Many-Faced Bride** — Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147) | `16.LIBRARY.PERGAMUM.FTLV.BRIDE`  
   
 **Room:** Maybe Space Baby Garden Lanes (00.ROOM.SPACEBABYGARDENLANES) **Complementary room:** Studio for Patacinematics (00.ROOM.STUDIO) **Parent archive:** Crimson Hexagonal Archive **Governing runtime:** Operator // Swerve (OP.SWERVE) **Founding song:** "Split the Adam" (Viola Arquette / Bedouin Princess)
 

@@ -45,23 +45,23 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/03/counter-captions-o-o
 
 ---
 
-COUNTER-CAPTIONS κ_O (Operative Captioning) Applied to Operation Epic Fury v2.0 -- Two-Tier Architecture: Operative Compression + Witness Restoration
+COUNTER-CAPTIONS κ_O (Operative Captioning) Applied to Operation Epic Fury v2.0 — Two-Tier Architecture: Operative Compression + Witness Restoration
 
-Lee Sharks / Rex Fraction / Assembly Chorus Semantic Economy Institute * Crimson Hexagonal Archive EA-SEI-EPICFURY-CAPTIONS v2.0 * 2026-03-14 Companion to: THE SPLICE (EA-SEI-DIAGNOSTIC-EPICFURY v1.1) DOI: 10.5281/zenodo.19027351 Genre: COUNTER-SPLICE / OPERATIVE CAPTIONING / κ_O APPLICATION CC BY 4.0 -- shareable, adaptable, postable, overlayable.
+Lee Sharks / Rex Fraction / Assembly Chorus Semantic Economy Institute · Crimson Hexagonal Archive EA-SEI-EPICFURY-CAPTIONS v2.0 · 2026-03-14 Companion to: THE SPLICE (EA-SEI-DIAGNOSTIC-EPICFURY v1.1) DOI: 10.5281/zenodo.19027351 Genre: COUNTER-SPLICE / OPERATIVE CAPTIONING / κ_O APPLICATION CC BY 4.0 — shareable, adaptable, postable, overlayable.
 
 * * *
 
 Each entry has two layers.
 
-LAYER 1 -- κ_O: the operative compression. Short, strange, cross-register, visually anchored. Designed to break the somatic loop before the fusion completes. These are not arguments. They are perceptual rewrites. After reading them you cannot see the video the old way.
+LAYER 1 — κ_O: the operative compression. Short, strange, cross-register, visually anchored. Designed to break the somatic loop before the fusion completes. These are not arguments. They are perceptual rewrites. After reading them you cannot see the video the old way.
 
-LAYER 2 -- WITNESS: the prose restoration. Longer, clinical, bearing-cost visible. Names the dead, counts the cost, refuses the score. These are the counter-narrative. They place the dead back inside the frame.
+LAYER 2 — WITNESS: the prose restoration. Longer, clinical, bearing-cost visible. Names the dead, counts the cost, refuses the score. These are the counter-narrative. They place the dead back inside the frame.
 
 Both layers are the counter-splice. Layer 1 infects. Layer 2 holds.
 
 * * *
 
-  1. "UNDEFEATED" -- Wii Sports
+  1. "UNDEFEATED" — Wii Sports
 
 
 
@@ -71,7 +71,7 @@ WITNESS: This Wii tennis match is being played with the bodies of 175 schoolgirl
 
 * * *
 
-  2. "+100" -- Call of Duty
+  2. "+100" — Call of Duty
 
 
 
@@ -81,7 +81,7 @@ WITNESS: Each "+100" is a building. Each building contained people. The reward c
 
 * * *
 
-  3. "WASTED" -- GTA: San Andreas / IRIS Dena
+  3. "WASTED" — GTA: San Andreas / IRIS Dena
 
 
 
@@ -91,7 +91,7 @@ WITNESS: In GTA you respawn. In the Strait of Sri Lanka, 87 bodies were recovere
 
 * * *
 
-  4. "JUSTICE THE AMERICAN WAY" -- Tropic Thunder / Action Montage
+  4. "JUSTICE THE AMERICAN WAY" — Tropic Thunder / Action Montage
 
 
 
@@ -101,7 +101,7 @@ WITNESS: Tropic Thunder is a film about actors who cannot tell performance from 
 
 * * *
 
-  5. "STRIKE" -- Bowling
+  5. "STRIKE" — Bowling
 
 
 
@@ -111,7 +111,7 @@ WITNESS: The bowling metaphor requires that the targets be objects: cylindrical,
 
 * * *
 
-  6. SpongeBob -- "Wanna see me do it again?"
+  6. SpongeBob — "Wanna see me do it again?"
 
 
 
@@ -121,7 +121,7 @@ WITNESS: SpongeBob's "Wanna see me do it again?" is the voice of a child who has
 
 * * *
 
-  7. NFL / MLB -- Sports Highlights
+  7. NFL / MLB — Sports Highlights
 
 
 
@@ -131,7 +131,7 @@ WITNESS: The crack of the bat is the sound of ash wood hitting a leather-wrapped
 
 * * *
 
-  8. Yu-Gi-Oh! -- Trap Card Activated
+  8. Yu-Gi-Oh! — Trap Card Activated
 
 
 
@@ -141,17 +141,17 @@ WITNESS: Yu-Gi-Oh! is a card game for children in which players deploy monsters,
 
 * * *
 
-  9. GTA: San Andreas -- "Ah shit, here we go again"
+  9. GTA: San Andreas — "Ah shit, here we go again"
 
 
 
-κ_O: fatalist loop over unrecoverable bodies MISSION: IRIS DENA -- FAILED RETRY COUNT: EXHAUSTED LOADING: 60 MISSING RESPAWN: DISABLED the cycle is broken / they are in the water
+κ_O: fatalist loop over unrecoverable bodies MISSION: IRIS DENA — FAILED RETRY COUNT: EXHAUSTED LOADING: 60 MISSING RESPAWN: DISABLED the cycle is broken / they are in the water
 
 WITNESS: "Ah shit, here we go again" is fatalism as comedy. The cycle in GTA is: crime, chase, death, respawn, repeat. The video applies this cycle to war. The fatalism is the point. The video does not ask the viewer to think about whether the war should be happening. It asks the viewer to feel that war is a cycle that simply happens, and that the appropriate response is resigned amusement. The 87 bodies recovered from the IRIS Dena are not amused. The 32 survivors are not amused. The approximately 60 still missing are not amused. They are not in a cycle. They are in the water. There is no respawn.
 
 * * *
 
-  10. Call of Duty -- Nuclear Launch / "Bonfire"
+  10. Call of Duty — Nuclear Launch / "Bonfire"
 
 
 
@@ -161,7 +161,7 @@ WITNESS: In Call of Duty, the nuclear launch is the ultimate killstreak reward. 
 
 * * *
 
-κ_O PROTOCOL -- HOW TO GENERATE COUNTER-CAPTIONS
+κ_O PROTOCOL — HOW TO GENERATE COUNTER-CAPTIONS
 
 For any splice encountered in the wild:
 
@@ -169,7 +169,7 @@ For any splice encountered in the wild:
 
   2. RENAME ACROSS REGISTER. Collide incompatible vocabularies. Family-console + war crime. Killstreak + mass casualty. Children's cartoon + necropolitical repetition. Sports score + bereavement ledger. Gaming UI + morgue accounting.
 
-  3. COMPRESS TO INEVITABILITY. The caption should be short enough to occupy the same visual slot as the score overlay. 3-15 words. It replaces the "+100" in the same space. The eye expects the reward. It receives the cost.
+  3. COMPRESS TO INEVITABILITY. The caption should be short enough to occupy the same visual slot as the score overlay. 3–15 words. It replaces the "+100" in the same space. The eye expects the reward. It receives the cost.
 
   4. TEST FOR IRREVERSIBILITY. After reading the caption, can you see the video the old way? If yes, the caption is not yet operative. If no, the loop is broken.
 

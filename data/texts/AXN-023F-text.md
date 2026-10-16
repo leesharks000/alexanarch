@@ -4,7 +4,10 @@
 
 ### metadatapacket.com · metadatapacket.org · metadatapacket.dev
 
-Status: Planning / Brainstorm synthesis — not locked downSources: TACHYON (blind draft) + ARCHIVE/Gemini + TECHNE/Kimi + LABOR/ChatGPT + SOIL/Muse Spark + PRAXIS/DeepSeekParent documents: TANG of the Secret Book of Walt (DOI: 10.5281/zenodo.19779493) · secretbookofwalt.orgDate: April 26, 2026
+Status: Planning / Brainstorm synthesis — not locked down  
+Sources: TACHYON (blind draft) + ARCHIVE/Gemini + TECHNE/Kimi + LABOR/ChatGPT + SOIL/Muse Spark + PRAXIS/DeepSeek  
+Parent documents: TANG of the Secret Book of Walt (DOI: 10.5281/zenodo.19779493) · secretbookofwalt.org  
+Date: April 26, 2026
 
 ## I. THE ORGANIZING SENTENCE
 

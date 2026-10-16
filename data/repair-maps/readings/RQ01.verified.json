@@ -1,0 +1,76 @@
+{
+ "batch_id": "RQ01",
+ "transcript_sha256": "bbddf41cb9f3a28ff40bb51b883fd6e14099e641f18f68da2ce47d36dac2290a",
+ "checks": [
+  {
+   "deposit": 111,
+   "verdict": "restore_sections",
+   "fails": [],
+   "audit": {
+    "lines_returned": 219,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 494,
+   "verdict": "restore_sections",
+   "fails": [],
+   "audit": {
+    "lines_returned": 269,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 786,
+   "verdict": "restore_sections",
+   "fails": [],
+   "audit": {
+    "lines_returned": 101,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1047,
+   "verdict": "no_defect",
+   "fails": [],
+   "audit": {
+    "lines_returned": 205,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1101,
+   "verdict": "restore_sections",
+   "fails": [
+    "COVER: 1204 of 1893 lines not in read_ranges",
+    "AUDIT: 29 claimed lines never returned by Read"
+   ],
+   "audit": {
+    "lines_returned": 660,
+    "claimed_not_returned": 29
+   }
+  },
+  {
+   "deposit": 1111,
+   "verdict": "restore_sections",
+   "fails": [],
+   "audit": {
+    "lines_returned": 384,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1165,
+   "verdict": "restore_sections",
+   "fails": [],
+   "audit": {
+    "lines_returned": 911,
+    "claimed_not_returned": 0
+   }
+  }
+ ],
+ "summary": {
+  "entries": 7,
+  "with_fails": 1
+ }
+}

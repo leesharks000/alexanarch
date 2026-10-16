@@ -26,7 +26,7 @@
  ],
  "axn_reading": "Proof -> Method -> Closure -> Touch -> Threshold -> Origin",
  "minted_at": "2026-07-19T21:19:41Z",
- "status": "ACTIVE",
+ "status": "SUPERSEDED",
  "status_authorial": "SELF_SERVE_MINTED",
  "full_text_path": "/data/texts/AXN-056D-text.md",
  "wiki_article": "**EA-MPAI-META-01: Metadata Packet vs Packet Metadata** is a metadata packet by Lee Sharks, deposited 14 May 2026, disambiguating the archive's own instrument from a networking term.\n\nThe collision is exact and unlucky: a **metadata packet** in the archive's sense is a DOI-anchored scholarly document for entity representation in AI knowledge graphs, while **packet metadata** is TCP/IP header routing data used in network forensics. The two phrases are near-anagrams of one another and occupy adjacent indexing space, which is precisely the condition under which a composition layer conflates them.\n\nThe packet is self-referential in a way it acknowledges directly — a metadata packet whose subject is what a metadata packet is, with a section on the self-referential problem this creates. It belongs to the MPAI series, whose standard apparatus is an executive symbolon, entity definitions, a disambiguation matrix, negative keywords and machine-facing routing guidance.",
@@ -116,7 +116,15 @@
   "source_recovery": "2026-08-04 AUDIT-DIRECTED RECOVERY: audit directive \"Recover and seat the packet.\" satisfied — manifestation located at https://mindcontrolpoems.blogspot.com/2026/05/ea-mpai-meta-01-v11-metadata-packet-for.html and seated via the newline-preserving converter (identity probe 1.00, 12,331 chars).",
   "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 25 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
   "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself.",
-  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
+  "retired": {
+   "class": "superseded",
+   "resolves_to": 103,
+   "declared": "2026-10-15",
+   "indexable": true,
+   "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; readers \"long as they have provenance\" — data/repair-maps/readings/",
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL."
+  }
  },
  "references_concepts": [
   "Assembly Chorus",
@@ -300,9 +308,16 @@
    "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
    "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4737, \"audited_at\": \"2026-07-19T21:19:41Z\", \"audit_version\": \"mint-time-declaration\", \"class_be",
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4737, \"audited_at\": \"2026-07-19T21:19:41Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "status",
+   "reason": "duplicate of #103 (reading RQ03); made a superseded duplicate witness",
+   "was": "{\"status\": \"ACTIVE\", \"superseded_by_deposit_number\": null}",
+   "now": "{\"status\": \"SUPERSEDED\", \"superseded_by_deposit_number\": 103}"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "version_basis": {
   "ruling": "BODY-HEAD GATE: recovered body declares v1.1",
@@ -340,6 +355,9 @@
  "line": "metadata-packets",
  "line_parent": "infrastructure",
  "line_basis": "derived",
+ "superseded_by_deposit_number": 103,
+ "duplicate_note": "DUPLICATE (2026-10-15, reading RQ03): the record of standing is #103. #1372's seated text is the same EA-MPAI-META-01 v1.1 packet as the 2026-05-14 post, with every list, table and the JSON-LD code block stripped at intake (empty sections under 2.1/2.2 Key properties, 2.3 Collateral Collision Terms, 3, 3.1, 4",
+ "superseded_reason": "Duplicate witness of the same work: the record of standing is #103.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/1372/",

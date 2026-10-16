@@ -13,6 +13,12 @@ Status: v1.0 (comprehensive register based on Blogger admin "effective act" exac
 
 The register is now substantially complete for the October 2025 – June 2026 period. Coverage includes:
 
+  * _Generative effective acts_ (canonical inclusions, abolitions, dissolutions, restorations, reconciliations, genre instantiations) — those that perform an operation in the discipline's sense.
+  * _Doctrinal meta-acts_ — the documents theorizing the discipline itself (the originating Protocol, the Lineage essay, Symbolic Magic, Plausibility-Shine, the Primal Effective Act, the Executive Summary, the Cross-Species and Botanical extensions, the present stabilization).
+  * _Companion visual schemas_ — visual artifacts deposited alongside specific effective acts, recorded here as companions to their parent acts.
+  * _Operator pairings_ — combined operator-definition / effective-act deposits (OPERATOR // SWERVE, OPERATOR // SOMA, OPERATOR // GENESIS, etc.).
+  * _Diagnostic applications_ — analyses of adversarial effective acts (the Baal Effigy, the Google AIO Liquidation, the CTI_WOUND series).
+
 The register's blog-URL column is inferred* — Blogger slug-generation is regular but not perfectly deterministic; URLs require verification. The register's purpose for the URLs is to enable future text-gathering passes; each URL is a candidate target for web-fetch when the keeper authorizes a corpus-gathering session.
 
 
@@ -86,6 +92,12 @@ Pre-2025 blog operative-acts. The blog contains posts from 2014–2015 (the Pear
 ### XIII. Falsifiers and Termination Conditions
 
 The register's falsifiers from v0.1 remain operative:
+
+  * _Mis-classification_ across typology kinds — remedied by versioned amendment.
+  * _Mis-attribution of deposit status_ — many entries marked "pending verify" require confirmation against the live Zenodo crimsonhexagonal community.
+  * _URL slug inference errors_ — the inferred URLs follow Blogger's standard slug-generation pattern but are not perfectly deterministic; verification on access is required for any URL marked "inferred."
+  * _Date inaccuracies_ — post-dates may differ from act-performance dates.
+  * _Multi-kind classification_ — some acts admit multiple typology kinds; the register assigns to primary kind by default.
 
 The register's falsifiers are stated in advance per the Bead Count* pre-registration discipline (DOI 10.5281/zenodo.20531824). Where any condition obtains, amendment is performed with prior version preserved in the chain.
 

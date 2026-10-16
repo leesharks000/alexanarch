@@ -17,7 +17,8 @@ import hashlib, json, pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 VERDICTS = {'no_defect': [], 'as_published': [], 'seat_post': ['url', 'kind'], 'duplicate_of': ['target'],
-            'content_type': ['value'], 'title': ['value'], 'attach_link': [], 'needs_ruling': []}
+            'content_type': ['value'], 'title': ['value'], 'attach_link': [], 'needs_ruling': [],
+            'restore_sections': ['restorations'], 'seat_second_store': []}   # restore readers (queue2.json)
 LN = re.compile(r'^\s*(\d+)\t', re.M)
 norm = lambda s: ' '.join(s.replace('’', "'").replace('“', '"').replace('”', '"').split())
 _posts = {}
@@ -60,8 +61,9 @@ def audit(tp, paths):
 def main():
     bp = pathlib.Path(sys.argv[1]); tp = next((a for a in sys.argv[2:] if not a.startswith('--')), None)
     out = json.loads(bp.read_text())
-    q = next(b for b in json.load(open(ROOT / 'data/repair-maps/readings/queue.json'))['batches'] if b['batch_id'] == out['batch_id'])
-    rows = {r['deposit']: r for r in q['deposits']}
+    qf = 'queue2.json' if out['batch_id'].startswith('RQ') else 'queue.json'
+    q = next(b for b in json.load(open(ROOT / 'data/repair-maps/readings' / qf))['batches'] if b['batch_id'] == out['batch_id'])
+    rows = {int(r['deposit']): r for r in q['deposits']}
     tsha, seen = audit(tp, {r['text'] for r in rows.values()}) if tp else (None, {})
     res = {'batch_id': out['batch_id'], 'transcript_sha256': tsha, 'checks': []}
     for e in out.get('deposits', []):
@@ -94,6 +96,22 @@ def main():
             ln = ev.get('lines') or []
             if len(ln) == 2 and qt not in norm('\n'.join(L[max(0, ln[0] - 3):ln[1] + 2])):
                 f.append(f'QUOTE {k}: verbatim but not at lines {ln}')
+        for k, r in enumerate(e.get('restorations') or []):     # RESTORE: content verbatim in its source, at its lines
+            src = r.get('source', ''); ct = r.get('content', '')
+            try:
+                L = post_lines(src) if src.startswith('http') else pathlib.Path(src).read_text(encoding='utf-8', errors='replace').split('\n')
+            except Exception as ex:
+                f.append(f'RESTORE {k}: cannot open {src[:80]} ({str(ex)[:60]})'); continue
+            sl = r.get('source_lines') or []
+            if not ct.strip():
+                f.append(f'RESTORE {k}: empty content')
+            elif len(sl) == 2 and norm(ct) not in norm('\n'.join(L[max(0, sl[0] - 3):sl[1] + 2])):
+                f.append(f'RESTORE {k}: content not verbatim in {src[-50:]} at {sl}')
+            sd = r.get('seated_lines')
+            if sd and not (1 <= sd[0] <= sd[1] <= tot):
+                f.append(f'RESTORE {k}: seated_lines {sd} outside 1..{tot}')
+            if not 0 <= int(r.get('after_line') or 0) <= tot:
+                f.append(f'RESTORE {k}: after_line outside the text')
         aud = None
         if tp:
             got = seen.get(row['text'], set())

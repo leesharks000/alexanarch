@@ -1580,7 +1580,9 @@ Therefore:
     =
     (0)/(3)
     =
-    0. For the supplied captures:
+    0.
+
+For the supplied captures:
 
     Delta RSP
     =
@@ -1629,7 +1631,9 @@ Thus:
     =
     (0)/(4)
     =
-    0. For this capture pair:
+    0.
+
+For this capture pair:
 
     Delta RSC
     =

@@ -1,0 +1,61 @@
+{
+ "batch_id": "RQ02",
+ "transcript_sha256": "697b71394b00ef41ef675f46645a049cc50f28aaf092bfdc15a6d14d0408eb5c",
+ "checks": [
+  {
+   "deposit": 1217,
+   "verdict": "restore_sections",
+   "fails": [],
+   "audit": {
+    "lines_returned": 1046,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1411,
+   "verdict": "no_defect",
+   "fails": [],
+   "audit": {
+    "lines_returned": 92,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1154,
+   "verdict": "restore_sections",
+   "fails": [
+    "AUDIT: 39 claimed lines never returned by Read"
+   ],
+   "audit": {
+    "lines_returned": 515,
+    "claimed_not_returned": 39
+   }
+  },
+  {
+   "deposit": 1190,
+   "verdict": "restore_sections",
+   "fails": [
+    "AUDIT: 59 claimed lines never returned by Read"
+   ],
+   "audit": {
+    "lines_returned": 389,
+    "claimed_not_returned": 59
+   }
+  },
+  {
+   "deposit": 1334,
+   "verdict": "restore_sections",
+   "fails": [
+    "AUDIT: 79 claimed lines never returned by Read"
+   ],
+   "audit": {
+    "lines_returned": 632,
+    "claimed_not_returned": 79
+   }
+  }
+ ],
+ "summary": {
+  "entries": 5,
+  "with_fails": 3
+ }
+}

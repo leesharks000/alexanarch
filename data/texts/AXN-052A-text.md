@@ -85,4 +85,6 @@ The comfort gate is closed. The clarity gate is open. The knot will not become t
 
 ---
 
+**Status (derived COMPLETE_PACKET):** ✓ Complete deposit packet. The semi-restored declaration below ("Full text not yet recovered") appeared here and was FALSE for this record's current state (complete-as-packet, the #1300 ruling); noted 2026-10-15 under the state-conformance rule.
+
 *Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*

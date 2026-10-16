@@ -24,6 +24,30 @@ import wire_deposit
 import retire
 
 
+def lacuna_note(n, d):
+    """2026-10-15: a superseded edition that is ALSO a lacuna (#1635: cut at §36.2, cite #1637) says both. The
+    superseded banner (the renderer's, or the retirement layer's) had replaced the lacuna banner, and the page no
+    longer said the text is cut. The note goes directly under whichever banner the page carries."""
+    import html as _h
+    bs = d.get('body_status') or {}
+    if not (bs.get('lacuna') in (True, 'true', 'TRUE') or bs.get('lacuna_mark')):
+        return
+    p = ROOT / f's/records/{n}/index.html'; s = p.read_text()
+    if 'Lacuna' in s:
+        return
+    ends = []
+    for mark, close in (('Superseded record</div>', '</div>\n</div>'), ('⚠ Superseded</div>', '</div></div>')):
+        i = s.find(mark)
+        if i >= 0 and s.find(close, i) >= 0:
+            ends.append(s.find(close, i) + len(close))
+    if not ends:
+        return
+    note = str((bs.get('lacuna_mark') or {}).get('statement') or bs.get('lacuna_note') or "This edition's text is incomplete.")
+    div = ('<div style="border:1px dashed #c8b78a;padding:10px 18px;margin:0 0 18px;border-radius:4px;font-size:.9em;'
+           'line-height:1.6"><b>◌ Lacuna — this edition is incomplete.</b> ' + _h.escape(note) + '</div>')
+    j = min(ends); p.write_text(s[:j] + '\n' + div + s[j:])
+
+
 def main(nums):
     reg = json.load(open(ROOT / 'data/registry.json'))
     by = {d['deposit_number']: d for d in reg['deposits']}
@@ -51,6 +75,8 @@ def main(nums):
                        f'<link rel="canonical" href="https://www.alexanarch.org/s/records/{n}/">', s, count=1)
             p.write_text(s)
         # retire.apply rewrote body_status.retired only in its own copy; the registry is not written here
+    for n in nums:
+        lacuna_note(n, by[n])
     print(f'rendered {len(nums)} with the registry; retirement layer re-applied to {[n for n, _ in layered]}')
 
 

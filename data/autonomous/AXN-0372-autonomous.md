@@ -360,8 +360,8 @@ the corpus density accrues as scholarly work proceeds.
 ### Credentials rotation queue (urgent)
 
 From userMemories — these tokens are exposed in this session's history and prior sessions:
-- Zenodo tokens: `QtbHIO...`, `9GVLfHz...`, `YCAIRAPYV...`
-- GitHub PATs: `ghp_PRnY...`, `ghp_k0InOm...`, `ghp_U38oywSx...`, `ghp_KrzzZJpBxhh6...`, `ghp_PJLddaP5Ox...`
+- Zenodo tokens: `[redacted 2026-10-15]`, `[redacted 2026-10-15]`, `[redacted 2026-10-15]`
+- GitHub PATs: `[redacted 2026-10-15]`, `[redacted 2026-10-15]`, `[redacted 2026-10-15]`, `[redacted 2026-10-15]`, `[redacted 2026-10-15]`
 - Rotate at zenodo.org/account/settings/applications/ and github.com/settings/tokens
 
 ---

@@ -71,7 +71,7 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 ## Phase 1: Metadata Pull
 
-**Status:** NOT STARTED **Estimated compute:** 30-45 minutes **Resumable:** Yes -- paginate via Zenodo API, save after each page
+**Status:** NOT STARTED **Estimated compute:** 30-45 minutes **Resumable:** Yes — paginate via Zenodo API, save after each page
 
 ### 1.1 Pull all records from crimsonhexagonal community
 
@@ -86,7 +86,7 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
   * Parse each record's title, keywords, and description
   * Extract: capitalized multi-word phrases, EA-* codes, quoted terms, terms in bold/strong tags
-  * Output: `termindex-metadata-terms.json` -- rough list with source DOI for each term
+  * Output: `termindex-metadata-terms.json` — rough list with source DOI for each term
 
 
 
@@ -104,13 +104,13 @@ The archive is minting terms faster than they imprint to long-term memory. An es
 
 ## Phase 2: File Content Extraction
 
-**Status:** NOT STARTED **Estimated compute:** 2-3 hours (may require multiple sessions) **Resumable:** Yes -- track which record IDs have been processed
+**Status:** NOT STARTED **Estimated compute:** 2-3 hours (may require multiple sessions) **Resumable:** Yes — track which record IDs have been processed
 
 ### 2.1 Download and read markdown files
 
   * For each record, download .md files (skip PDFs, images, audio)
   * Read each file, extract terms not already in Phase 1 output
-  * Track progress: `termindex-file-progress.json` -- list of processed record IDs
+  * Track progress: `termindex-file-progress.json` — list of processed record IDs
   * Output: `termindex-file-terms.json`
 
 
@@ -234,13 +234,13 @@ Phase | Step | Status | Output File | Records Processed | Notes
 1 | 1.3 Canonicalization | COMPLETE | termindex-tiered.json | 845/845 | 178 Tier 1, 332 Tier 2, cross-ref with registry  
 2 | 2.1 File download | COMPLETE | termindex-file-progress.json | 735/800 | 444 new Tier 1, 540 new Tier 2 from file contents  
 2 | 2.2 Batch processing | COMPLETE | termindex-file-progress.json | 735/800 | 65 records had download failures  
-2 | 2.3 Merge | PENDING | termindex-merged.json | -- | Needs noise filtering + human review  
-3 | 3.1 Human review | PENDING | -- | -- | ~2,000 terms for review  
-3 | 3.2 Cross-reference | COMPLETE | termindex-crossref.json | -- | 129/131 registry queries matched  
-3 | 3.3 Final index | PENDING | termindex-v1.0.json | -- | After human review  
-4 | 4.1 Deposit | IN PROGRESS | -- | -- | Initial deposit with raw data  
-4 | 4.2 Surface | NOT STARTED | -- | -- |   
-5 | 5.1 MPAI generation | NOT STARTED | -- | -- |   
+2 | 2.3 Merge | PENDING | termindex-merged.json | — | Needs noise filtering + human review  
+3 | 3.1 Human review | PENDING | — | — | ~2,000 terms for review  
+3 | 3.2 Cross-reference | COMPLETE | termindex-crossref.json | — | 129/131 registry queries matched  
+3 | 3.3 Final index | PENDING | termindex-v1.0.json | — | After human review  
+4 | 4.1 Deposit | IN PROGRESS | — | — | Initial deposit with raw data  
+4 | 4.2 Surface | NOT STARTED | — | — |   
+5 | 5.1 MPAI generation | NOT STARTED | — | — |   
   
 * * *
 

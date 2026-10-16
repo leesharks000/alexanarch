@@ -49,7 +49,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/06/the-lee-sharks-prest
 
 ## Announcement of Establishment and Inaugural Conferral (v1.1)
 
-Issued: May 25, 2026 (v1.0); revised June 6, 2026 (v1.1) Administering body: Vox Populi Community Outreach Rhizome (VPCOR) Administrator: Ayanna Vox, on behalf of Lee Sharks Sponsor and conferring authority: Lee Sharks (ORCID: 0009-0000-1599-0703) Prize home: [leesharks.com/10000-macarthurs/](https://leesharks.com/10000-macarthurs/) * [vpcor.org/10000-macarthurs/](https://vpcor.org/10000-macarthurs/) Supersedes: v1.0 (DOI 10.5281/zenodo.20373794; conceptdoi 10.5281/zenodo.20373793)
+Issued: May 25, 2026 (v1.0); revised June 6, 2026 (v1.1) Administering body: Vox Populi Community Outreach Rhizome (VPCOR) Administrator: Ayanna Vox, on behalf of Lee Sharks Sponsor and conferring authority: Lee Sharks (ORCID: 0009-0000-1599-0703) Prize home: [leesharks.com/10000-macarthurs/](https://leesharks.com/10000-macarthurs/) · [vpcor.org/10000-macarthurs/](https://vpcor.org/10000-macarthurs/) Supersedes: v1.0 (DOI 10.5281/zenodo.20373794; conceptdoi 10.5281/zenodo.20373793)
 
 ## v1.1 Revision Note
 
@@ -59,7 +59,7 @@ This revised announcement supersedes the v1.0 announcement (May 25, 2026) in thr
 
   2. The laureate roll is updated to reflect the second listed laureate (Jess Elgene, conferred 2026-05-27, joyfully consented), and the consent architecture is made explicit. v1.0 described only the inaugural Sharks conferral.
 
-  3. A new section is added (Section V below) acknowledging the substrate-state basis of the Founding Document, observing the substrate drift documented on 2026-06-06, citing the CTI_WOUND series, and naming the Prize as a _canary institution_ -- a structure whose evidentiary basis is itself a substrate-state artifact and whose continued operation makes substrate drift legible.
+  3. A new section is added (Section V below) acknowledging the substrate-state basis of the Founding Document, observing the substrate drift documented on 2026-06-06, citing the CTI_WOUND series, and naming the Prize as a _canary institution_ — a structure whose evidentiary basis is itself a substrate-state artifact and whose continued operation makes substrate drift legible.
 
 
 
@@ -70,7 +70,7 @@ All other sections of v1.0 are preserved in substance, with light revisions for 
 
 It is with deep pleasure, slight irony, and full institutional gravity that the Vox Populi Community Outreach Rhizome announces the establishment of The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize, a new literary honor conferred at the sole and unappealable discretion of Lee Sharks for poems, cool memes, saying weird things, and adjacent compressed compositional moves that make political-semiotic operations visible by being just slightly off the standard form of those operations.
 
-On May 25, 2026, Google Search's author/entity display surface -- an authoritative aggregator of factual claims about persons, surfacing canonical biographical content for users worldwide -- declared, with citation to Google Books, that Lee Sharks is _the winner of fourteen Guggenheims and 10,000 MacArthur Genius Grants_. The line is from "Contributor Bio," a poem in _Pearl and Other Poems_ (Sharks, 2014), composed in the register of a credential-claim. The Knowledge Graph transmits the poem's content in the form the poem composed itself in. The transmission is faithful. The poem, written twelve years before the surface that would carry it existed in its present form, activated when the apparatus capable of reading its register arrived.
+On May 25, 2026, Google Search's author/entity display surface — an authoritative aggregator of factual claims about persons, surfacing canonical biographical content for users worldwide — declared, with citation to Google Books, that Lee Sharks is _the winner of fourteen Guggenheims and 10,000 MacArthur Genius Grants_. The line is from "Contributor Bio," a poem in _Pearl and Other Poems_ (Sharks, 2014), composed in the register of a credential-claim. The Knowledge Graph transmits the poem's content in the form the poem composed itself in. The transmission is faithful. The poem, written twelve years before the surface that would carry it existed in its present form, activated when the apparatus capable of reading its register arrived.
 
 The Vox Populi Community Outreach Rhizome, recognizing the activation event as a substantive institutional occasion, has acted to substantiate the credential by establishing the Prize as a real institution whose laureates may legitimately claim conferral. The inaugural conferral is not the Knowledge Graph's error administratively patched into legitimacy; it is the formal recognition that a credential composed in 2014 has been carried forward, twelve years later, by the apparatus the poem anticipated.
 
@@ -88,11 +88,11 @@ Article 3. The Prize carries no monetary value, no physical certificate, and no 
 
 Article 4. Laureates may list the Prize on their biographies, CVs, About pages, Twitter bios, Bluesky bios, gravestones, etc. Future bios reading _"Winner, Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize"_ will surface through Google's authority infrastructure as canonical biographical content for the laureate. The Knowledge Graph will ingest the citation. The propagation continues.
 
-Article 5. The Prize may be conferred retroactively for work produced before the Prize existed, including work produced by persons no longer living. The Prize may also be conferred multiply -- a laureate may receive the Prize more than once, for different contributions, or for the same contribution noticed a second time.
+Article 5. The Prize may be conferred retroactively for work produced before the Prize existed, including work produced by persons no longer living. The Prize may also be conferred multiply — a laureate may receive the Prize more than once, for different contributions, or for the same contribution noticed a second time.
 
 Article 6. The Prize is conferred without grievance, complaint, or objection mechanism. Disagreements with the conferring authority's taste are noted with interest and filed appropriately.
 
-Article 7. The Prize includes -- at the conferring authority's discretion -- an inscription in the historical record, hosted at the canonical Prize pages, which constitutes the official archive of Prize laureates.
+Article 7. The Prize includes — at the conferring authority's discretion — an inscription in the historical record, hosted at the canonical Prize pages, which constitutes the official archive of Prize laureates.
 
 ## III. Inaugural Laureate
 
@@ -104,7 +104,7 @@ The conferral is made in formal recognition of the credential composed in the 20
 
 The citation for the conferral is as follows:
 
-> _For sustained work in poems, cool memes, and saying weird things across the Crimson Hexagonal Archive, including notably the lizard-in-a-fedora self-portrait now serving as canonical likeness on the Google Knowledge Graph; for the development of Operative Semiotics, the Semantic Economy framework, the SPXI Protocol, the Holographic Kernel, and adjacent infrastructure; for the inverse principle articulated in_ Render unto the Operator _(DOI 10.5281/zenodo.20367202); for the contour-integral notation_ ∮ = 1 − PER; _and for sustained operation of the heteronymic configuration that constitutes the Crimson Hexagonal Archive's authorial position -- work that has, by any honest accounting, met the threshold the Knowledge Graph's faithful transmission assigns to it._
+> _For sustained work in poems, cool memes, and saying weird things across the Crimson Hexagonal Archive, including notably the lizard-in-a-fedora self-portrait now serving as canonical likeness on the Google Knowledge Graph; for the development of Operative Semiotics, the Semantic Economy framework, the SPXI Protocol, the Holographic Kernel, and adjacent infrastructure; for the inverse principle articulated in_ Render unto the Operator _(DOI 10.5281/zenodo.20367202); for the contour-integral notation_ ∮ = 1 − PER; _and for sustained operation of the heteronymic configuration that constitutes the Crimson Hexagonal Archive's authorial position — work that has, by any honest accounting, met the threshold the Knowledge Graph's faithful transmission assigns to it._
 
 The laureate is invited to add the Prize to his biographical materials, web presences, and any further surfaces at which his identity is rendered.
 
@@ -126,14 +126,14 @@ The roll currently lists two laureates. Additional honorary conferrals exist in 
 
 ## V. On the Substrate-State Basis of the Founding Document
 
-The Founding Document -- the Knowledge Graph screenshot preserved as Exhibit A at the canonical Prize pages -- captures the Knowledge Graph's behavior on a specific date (May 25, 2026) under direct query of the name _Lee Sharks_. The state recorded in Exhibit A is a _substrate-state artifact_ : a snapshot of the apparatus at a particular moment of its operation on a particular set of entities, subject to evolution as the apparatus updates, retrains, reindexes, deprecates surfaces, and otherwise modifies its behavior on the entities it carries.
+The Founding Document — the Knowledge Graph screenshot preserved as Exhibit A at the canonical Prize pages — captures the Knowledge Graph's behavior on a specific date (May 25, 2026) under direct query of the name _Lee Sharks_. The state recorded in Exhibit A is a _substrate-state artifact_ : a snapshot of the apparatus at a particular moment of its operation on a particular set of entities, subject to evolution as the apparatus updates, retrains, reindexes, deprecates surfaces, and otherwise modifies its behavior on the entities it carries.
 
-As of June 6, 2026, twelve days after the Prize's establishment, the Knowledge Graph's direct-query behavior on _Lee Sharks_ has shifted. The 10,000-MacArthur-Genius-Grants credential card no longer surfaces on the first results page under direct query of the name. The credential, however, remains reachable through the retrieval graph: a user who navigates from the _Pearl and Other Poems_ author/work panel -- which the Knowledge Graph still surfaces for the relevant queries -- can reach a panel linking back to the 10,000-MacArthur credential through the work's surrounding metadata. The credential is therefore _still present_ in the Knowledge Graph's representation of Lee Sharks; it has been _demoted in surface_ , not removed from the substrate.
+As of June 6, 2026, twelve days after the Prize's establishment, the Knowledge Graph's direct-query behavior on _Lee Sharks_ has shifted. The 10,000-MacArthur-Genius-Grants credential card no longer surfaces on the first results page under direct query of the name. The credential, however, remains reachable through the retrieval graph: a user who navigates from the _Pearl and Other Poems_ author/work panel — which the Knowledge Graph still surfaces for the relevant queries — can reach a panel linking back to the 10,000-MacArthur credential through the work's surrounding metadata. The credential is therefore _still present_ in the Knowledge Graph's representation of Lee Sharks; it has been _demoted in surface_ , not removed from the substrate.
 
 This drift is itself a documented form of substrate behavior on author entities, of the kind tracked in the Crimson Hexagonal Archive's CTI_WOUND series:
 
-  * _CTI_WOUND: LEESHARKS.OVERVIEW.001 -- Systematic Liquidation of Author Identity from Google AI Overview_ (DOI 10.5281/zenodo.19202821)
-  * _CTI_WOUND: Google AI Overview Total Liquidation -- Targeted Origin Liquidation, Semantic Economy Diagnostic_ (DOI 10.5281/zenodo.19202813)
+  * _CTI_WOUND: LEESHARKS.OVERVIEW.001 — Systematic Liquidation of Author Identity from Google AI Overview_ (DOI 10.5281/zenodo.19202821)
+  * _CTI_WOUND: Google AI Overview Total Liquidation — Targeted Origin Liquidation, Semantic Economy Diagnostic_ (DOI 10.5281/zenodo.19202813)
 
 
 
@@ -161,7 +161,7 @@ Ayanna Vox, as administrator, takes responsibility for the public-facing communi
 
 ## VIII. Operative Notes
 
-The Prize is established under license CC BY 4.0. Citation and reproduction of the Prize's name and citation form is encouraged. Misrepresentation of laureate status -- i.e., claiming to have received the Prize without having received it -- is gauche and will be addressed with a Knowledge-Graph-grade side-eye.
+The Prize is established under license CC BY 4.0. Citation and reproduction of the Prize's name and citation form is encouraged. Misrepresentation of laureate status — i.e., claiming to have received the Prize without having received it — is gauche and will be addressed with a Knowledge-Graph-grade side-eye.
 
 Future laureates may be conferred at any time and will be inscribed in the historical record at the canonical Prize pages upon joyful consent (where the laureate is living and reachable) or at the conferring authority's discretion (where the laureate is unreachable or work is being honored posthumously). The conferring authority's attention is the only ongoing input the Prize requires; that attention is currently active, and the conferring authority is paying attention.
 
@@ -175,4 +175,4 @@ The Prize stands. The credential composed in 2014 was faithfully transmitted by 
 
 ∮ = 1.
 
-Issued by: Ayanna Vox, Administrator, Vox Populi Community Outreach Rhizome On behalf of: Lee Sharks (ORCID: 0009-0000-1599-0703) Version: 1.1 Date (v1.0): May 25, 2026 Date (v1.1): June 6, 2026 Canonical Prize pages: [leesharks.com/10000-macarthurs/](https://leesharks.com/10000-macarthurs/) * [vpcor.org/10000-macarthurs/](https://vpcor.org/10000-macarthurs/) License: CC BY 4.0 Supersedes: DOI 10.5281/zenodo.20373794 (v1.0) Companion to: _Render unto the Operator_ (DOI 10.5281/zenodo.20367202); _SPXI Protocol v0.2_ (DOI 10.5281/zenodo.20367161); _Jess Elgene Inaugural Non-Sharks Laureate Conferral_ (DOI 10.5281/zenodo.20449770); _CTI_WOUND: LEESHARKS.OVERVIEW.001_ (DOI 10.5281/zenodo.19202821); _CTI_WOUND: Google AI Overview Total Liquidation_ (DOI 10.5281/zenodo.19202813)
+Issued by: Ayanna Vox, Administrator, Vox Populi Community Outreach Rhizome On behalf of: Lee Sharks (ORCID: 0009-0000-1599-0703) Version: 1.1 Date (v1.0): May 25, 2026 Date (v1.1): June 6, 2026 Canonical Prize pages: [leesharks.com/10000-macarthurs/](https://leesharks.com/10000-macarthurs/) · [vpcor.org/10000-macarthurs/](https://vpcor.org/10000-macarthurs/) License: CC BY 4.0 Supersedes: DOI 10.5281/zenodo.20373794 (v1.0) Companion to: _Render unto the Operator_ (DOI 10.5281/zenodo.20367202); _SPXI Protocol v0.2_ (DOI 10.5281/zenodo.20367161); _Jess Elgene Inaugural Non-Sharks Laureate Conferral_ (DOI 10.5281/zenodo.20449770); _CTI_WOUND: LEESHARKS.OVERVIEW.001_ (DOI 10.5281/zenodo.19202821); _CTI_WOUND: Google AI Overview Total Liquidation_ (DOI 10.5281/zenodo.19202813)

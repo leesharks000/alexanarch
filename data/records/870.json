@@ -1,10 +1,10 @@
 {
- "axn": "AXN:0372.ARCHIVAL.🌟🛡️🔝🪦🔜🕘",
+ "axn": "AXN:0372.ARCHIVAL.●🔗💧🔗🏺🌱",
  "root_axn": "AXN:0372.ARCHIVAL",
  "hex": "0372",
  "family": "ARCHIVAL",
- "emoji": "🌟🛡️🔝🪦🔜🕘",
- "hash": "092df5fdf66a5fd265ea2220d3fb475b2e586c3923a20070ac21b488364c9038",
+ "emoji": "●🔗💧🔗🏺🌱",
+ "hash": "9c3311332f192f71726535edadd47acdedb12686158c1d545e1d4711ea827d74",
  "title": "Alexanarch Data Foundry — Session Workplan 2026-06-22",
  "creator": "Lee Sharks (MANUS) + TACHYON",
  "orcid": "0009-0000-1599-0703",
@@ -123,16 +123,16 @@
  },
  "legacy_axn": "AXN:0372.ARCHIVAL.📋🜁🏛️♾️",
  "clusters": [
-  "Celestial",
+  "Mathematical",
+  "Instrumental",
+  "Elemental",
+  "Instrumental",
   "Architectural",
-  "Terminal",
-  "Terminal",
-  "Terminal",
-  "Temporal"
+  "Elemental"
  ],
- "reading": "Origin -> Foundation -> Closure -> Closure -> Closure -> Duration",
+ "reading": "Proof -> Method -> Force -> Method -> Foundation -> Force",
  "axn_schema_version": "v2",
- "axn_canonical": "092df5fdf66a5fd265ea2220d3fb475b2e586c3923a20070ac21b488364c9038",
+ "axn_canonical": "9c3311332f192f71726535edadd47acdedb12686158c1d545e1d4711ea827d74",
  "references_concepts": [
   "ACTIVATE_MANTLE",
   "Assembly Room",
@@ -221,9 +221,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Session 3 workplan documenting the binding step (capture-tracker reconciliation into time-series semantic-addresses table with subjunctive class), and the new Autonomous Document workstream evaluating Gemini's proposal for embedded text metadata. Mints 5 concepts (Autonomous Document, The Binding Step, Subjunctive Address, Forensic Canary, Scholia Injection). Demonstrates the autonomous-document principle by carrying its own front-matter, inline markers, and closing scholia.",
    "now": "This work plan records the session in which Alexanarch separated **concepts** from **semantic addresses** and then returned structured metadata into the texts themselves.\n\nThe inclusion test is broader than coinage: a concept belongs when the archive arrived at it, engaged it, and left a defined position. Engagement types include minted, developed, revised, positioned, founded, and specified. Provenance levels distinguish pattern extraction from human reading and deeper relational enrichment.\n\nThe “binding step” corrects a structural error in the capture registry. A search query is an address pointing toward one or more concepts, not itself necessarily a concept. Each capture is a dated observation, so status belongs to the observation rather than the address. A third class, **subjunctive address**, identifies a plausible query that has not yet been tested.\n\nThe work plan reports integration of term-index, mint, capture, battery, and reception sources into a time-series address table connected back to the concept graph. Counts in different body sections vary because the document records successive states during the session; these should be preserved chronologically rather than forced into one number.\n\nThe second major workstream is the **autonomous document**: front matter, original prose, and closing scholia generated from the archive’s data. Minimal inline markers are reserved for minting, founding, invocation, and citation. The goal is that any document carry its own local schema, definitions, and relations if external databases fail.\n\nThe body progresses beyond planning into reported implementation: scripts, autonomous-document generation, and a ledger. That creates a status ambiguity. It is a work plan updated after execution, not merely a prospective design. Public metadata should identify which phases were completed by the frozen commit and which remained pending."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "body_status",
+   "reason": "credentials redacted from the deposited text (ruling 2026-10-15); AXN re-derived",
+   "was": "{\"axn\": \"AXN:0372.ARCHIVAL.\\ud83c\\udf1f\\ud83d\\udee1\\ufe0f\\ud83d\\udd1d\\ud83e\\udea6\\ud83d\\udd1c\\ud83d\\udd58\"}",
+   "now": "{\"axn\": \"AXN:0372.ARCHIVAL.\\u25cf\\ud83d\\udd17\\ud83d\\udca7\\ud83d\\udd17\\ud83c\\udffa\\ud83c\\udf31\"}"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "wiki_article": "**Alexanarch Data Foundry — Session Workplan 2026-06-22** is a work plan and implementation record by Lee Sharks with TACHYON support.\n\nIt separates archive concepts from search-query addresses, treats captures as dated observations, and defines untested queries as subjunctive addresses.\n\nThe plan then specifies autonomous documents combining YAML front matter, original prose, minimal structural markers, and closing scholia. Later sections report implementation of generators and an append-only ledger.\n\nBecause the document records a moving session state, its counts and statuses must be read chronologically.",
  "journal": "Crimson Hexagonal Archive (CHA)",
@@ -239,6 +246,13 @@
  "line": "continuity-records",
  "line_parent": "method",
  "line_basis": "derived",
+ "redaction": {
+  "on": "2026-10-15",
+  "what": "credential strings (token prefixes, a key) replaced with [redacted 2026-10-15]; every copy in the repository",
+  "hash_before": "092df5fdf66a5fd265ea2220d3fb475b2e586c3923a20070ac21b488364c9038",
+  "axn_before": "AXN:0372.ARCHIVAL.🌟🛡️🔝🪦🔜🕘",
+  "ruled_by": "Lee Sharks, 2026-10-15: \"yes, of course strip credentials.\""
+ },
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/870/",

@@ -248,6 +248,16 @@ Relational Semantic Extraction (RSE) is the umbrella category. Not all extractio
 
 **RSE Subtype Comparison:**
 
+| Collaborative Scaffolding | Crisis Borrowing | RSP  
+---|---|---|---  
+**Duration** | Temporary, bounded | Acute, situational | Recurrent, structural  
+**Reciprocity** | Acknowledged, reciprocated | Expected upon recovery | Absent or asymmetric  
+**Metabolization** | Producer's labor integrated | Partial, improves over time | Non-metabolized; semantic backlog  
+**Producer depletion** | Minimal, sustainable | Moderate, temporary | Cumulative, structural  
+**Replenishment lag** | Short or none | Resolves with crisis | Persistent, lengthening  
+**Withdrawal effects** | Mutual adjustment | Mutual relief | Asymmetric: producer clarity, extractor crisis  
+**Recurrence driver** | Need-based, not cyclical | External crisis | Decay of borrowed map  
+
 This taxonomy matters. Without it, the framework overclaims — pathologizing ordinary asymmetry or temporary crisis as predation. RSP applies only to the strong-form pattern: recurrent, depleting, structurally sustained, and non-reciprocal.
 
 
@@ -465,6 +475,28 @@ The question is not "who is bad?" The question is "what economy is running?"
 
 ### Glossary of Proposed Terms
 
+Term | Definition  
+---|---  
+**Semantic Labor** | The cognitive-semiotic work of producing distinctions, calibrations, contextualizations, and navigational meaning structures  
+**Coherence** | A temporally stable, compressible, reusable meaning structure that allows orientation in complex environments  
+**Coherence Extraction** | Appropriation of another's semantic labor through destabilizing interaction  
+**Relational Semantic Extraction (RSE)** | Umbrella category for dynamics in which one party's coherence-production capacity becomes a consumed resource  
+**Relational Semantic Predation (RSP)** | Strong-form RSE subtype: recurrent, asymmetric, structurally sustained extraction with depletion, non-metabolization, and replenishment lag  
+**Collaborative Scaffolding** | Healthy asymmetry in which one party temporarily subsidizes another's coherence during crisis; acknowledged and reciprocated  
+**Crisis Borrowing** | Temporary asymmetric extraction under acute stress; resolves when crisis passes  
+**Extraction Site** | The relational condition in which coherence transfer occurs — e.g., conflict loop, forced meta-analysis during dysregulation, recursive accusation  
+**Narrative Laundering** | Recoding another's distress signal as evidence of their unreliability  
+**Intimacy Cover** | Framing coherence extraction as care, mutual growth, or relational work  
+**Replenishment Lag** | Recovery period required for the producer to restore interpretive capacity following extraction  
+**The Broken Instrument** | The condition of the extracting party's nonfunctional interpretive apparatus in a specific relational context, generating structural dependency on external coherence; not a global deficit or fixed trait  
+**Metabolization** | Condition in which a claim is accurately restated, retained over time, behaviorally integrated, and not recursively re-litigated from zero  
+**Appropriation** | Direct uptake of another's coherence structure without metabolic transformation; the extractor uses the producer's distinctions as-is  
+**Conversion** | Recoding of extracted coherence into self-narrative (e.g., "I tried, they couldn't handle it")  
+**Semantic Budgeting** | Deliberate allocation of finite coherence resources based on structural assessment of relational capacity  
+**Pull-Back Mechanism** | An interaction designed to reopen a closed extraction site by framing withdrawal as evasion or incapacity  
+**Single-Pass Clarification** | The practice of making a claim once, specifically and boundedly, and treating non-metabolization as data rather than as a prompt to re-produce at higher cost  
+**Sonar Function** | The use of high-volume, high-intensity interaction to probe another's coherence structure, reading the return signal rather than communicating directly  
+
 
 * * *
 
@@ -512,6 +544,10 @@ Sharks, Lee. *Constitution of the Semantic Economy.* Semantic Economy Institute,
 
 ### Alternative Titles
 
+  1. **Predation of Meaning: Toward a Theory of Relational Coherence Extraction and Semantic Labor**
+  2. **The Broken Instrument: Coherence Extraction, Narrative Laundering, and the Relational Meaning Economy**
+  3. **Coherence Extraction: When Intimacy Becomes an Extraction Site**
+
 
 * * *
 
@@ -520,27 +556,27 @@ Sharks, Lee. *Constitution of the Semantic Economy.* Semantic Economy Institute,
 
 The following checklist is offered as a practical tool for recognizing RSP dynamics. It is not diagnostic. It is a set of questions to ask about a recurrent relational pattern.
 
-**After repeated interactions with this person, do I consistently lose clarity while they gain it?**
+  1. **After repeated interactions with this person, do I consistently lose clarity while they gain it?**
 
-**Am I being asked to perform high-cost interpretive work while physiologically dysregulated?**
+  2. **Am I being asked to perform high-cost interpretive work while physiologically dysregulated?**
 
-**Are my distress signals (panic, shutdown, pain) being reclassified as evidence of my perceptual failure?**
+  3. **Are my distress signals (panic, shutdown, pain) being reclassified as evidence of my perceptual failure?**
 
-**Do I find myself re-explaining the same distinction across multiple interactions, with the explanation heard but not metabolized?**
+  4. **Do I find myself re-explaining the same distinction across multiple interactions, with the explanation heard but not metabolized?**
 
-**Does the other party produce high message volume in response to bounded claims?**
+  5. **Does the other party produce high message volume in response to bounded claims?**
 
-**Is there a diagnostic framework in play ("splitting," "defensiveness," "avoidance") that absorbs all possible responses I might give?**
+  6. **Is there a diagnostic framework in play ("splitting," "defensiveness," "avoidance") that absorbs all possible responses I might give?**
 
-**When I withdraw, does my clarity return rapidly?**
+  7. **When I withdraw, does my clarity return rapidly?**
 
-**When I withdraw, does the other party attempt to reopen the interaction by challenging my competence or willingness?**
+  8. **When I withdraw, does the other party attempt to reopen the interaction by challenging my competence or willingness?**
 
-**Is the interaction framed as mutual growth, care, or "doing the work together" while the coherence flow is consistently one-directional?**
+  9. **Is the interaction framed as mutual growth, care, or "doing the work together" while the coherence flow is consistently one-directional?**
 
-**If I stop producing semantic labor, does the interaction collapse — not because of conflict, but because there is nothing left to extract?**
+  10. **If I stop producing semantic labor, does the interaction collapse — not because of conflict, but because there is nothing left to extract?**
 
-**Is my distress signal treated as evidence about the interaction, or as evidence about my pathology?** This is the narrative laundering detector. If your panic, shutdown, or pain is consistently reclassified as your perceptual failure rather than as information about the dynamic, the signal is being laundered.
+  11. **Is my distress signal treated as evidence about the interaction, or as evidence about my pathology?** This is the narrative laundering detector. If your panic, shutdown, or pain is consistently reclassified as your perceptual failure rather than as information about the dynamic, the signal is being laundered.
 
 If the answer to several of these questions is yes, the relational economy may be extractive. This is a suggestive pattern warranting structural attention, not diagnostic certainty. It is not a moral judgment. It is an economic observation. Use it accordingly.
 

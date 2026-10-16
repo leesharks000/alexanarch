@@ -784,6 +784,10 @@ def _inline_md(t):
     # [^<>] stops a match spanning an anchor this pass has already made.
     t = re.sub(r'(?<!!)\[([^\]\n<>]{1,120})\]\((https?://[^\s)<>]+|/[^\s)<>]+)\)',
                r'<a href="\2" target="_blank" rel="noopener">\1</a>', t)
+    # 2026-10-15 IN-PAGE LINKS. A text's own table of contents ('[Introduction](#1-introduction)') rendered as
+    # literal brackets: 63 links on 5 records (#317, #339, #354, #803, #959). They now link to the heading ids the
+    # full text's headings carry (_heading_ids, GitHub's slug form, which is the form the texts were written for).
+    t = re.sub(r'(?<!!)\[([^\]\n<>]{1,120})\]\((#[\w\-.%]+)\)', r'<a href="\2">\1</a>', t)
     # 2026-09-13 A SEVERED DOI IS NOT A REFERENCE, IT IS A DEAD END. The Zenodo registrant
     # severed 1,136 DOIs on 2026-06-19, and a canonical text that names one — many do, in
     # their own front matter — rendered as a live doi.org link that resolves to nothing.
@@ -1025,6 +1029,27 @@ def _errata_html(d, dn, esc):
             '<div style="opacity:.7;margin-top:.4rem;font-size:.92em">Corrections of reference, citation, source or count, '
             'recorded beside the record. The deposited text and its AXN are unchanged. As data: '
             f'<a href="/data/errata/{dn}.json" style="color:var(--accent)">/data/errata/{dn}.json</a>.</div></section>')
+
+
+def _heading_ids(h):
+    """2026-10-15: give each full-text heading an id in GitHub's slug form (lowercase; tags, punctuation dropped;
+    spaces to hyphens; repeats numbered -1, -2), so a text's own '[…](#slug)' links resolve. Headings that already
+    carry an id keep it."""
+    import html as _hl
+    seen = {}
+    def sub(m):
+        tag, attrs, inner = m.group(1), m.group(2), m.group(3)
+        if 'id=' in attrs:
+            return m.group(0)
+        txt = _hl.unescape(re.sub(r'<[^>]+>', '', inner)).strip().lower()
+        slug = re.sub(r'\s', '-', re.sub(r'[^\w\s-]', '', txt))
+        if not slug:
+            return m.group(0)
+        k = seen.get(slug, 0); seen[slug] = k + 1
+        if k:
+            slug = f'{slug}-{k}'
+        return f'<{tag}{attrs} id="{_hl.escape(slug, quote=True)}">{inner}</{tag}>'
+    return re.sub(r'<(h[2-6])((?:\s[^>]*)?)>(.*?)</\1>', sub, h, flags=re.S)
 
 
 def regenerate_static_page(d, eidx, registry=None):
@@ -1715,6 +1740,7 @@ def regenerate_static_page(d, eidx, registry=None):
     fulltext_marked = re.sub(r'</h2>', '</h3>', fulltext_marked)
     fulltext_marked = re.sub(r'<h1([ >])', r'<h2\1', fulltext_marked)
     fulltext_marked = re.sub(r'</h1>', '</h2>', fulltext_marked)
+    fulltext_marked = _heading_ids(fulltext_marked)
 
     apparatus_html = ''
     _W10_MARK = 'Canonical bytes below the rule'

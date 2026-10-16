@@ -55,7 +55,7 @@ The audit, performed below, addresses the most pressing technical concerns any r
 The Semantic Deviation Principle states that meaning is the time-integrated divergence a sign induces from the most probable trajectory of a semantic field. The integral takes the form
 
 
-$$\mathcal{M}*T(s \mid C) = \int*{t_0}^{t_0+T} w(t), D(\Psi_t^{s}(C) ,\Vert, \Psi_t^{0}(C)), dt$$
+$$\mathcal{M}_T(s \mid C) = \int_{t_0}^{t_0+T} w(t), D(\Psi_t^{s}(C) ,\Vert, \Psi_t^{0}(C)), dt$$
 
 
 with $\Psi_t(C)$ designating the probability distribution over future semantic states of the field $C$, and $D$ a divergence functional. The principle is not well-defined until $\Psi_t(C)$ is specified. The original formulation gestures toward multiple candidates — token embeddings, response distributions, citation graphs, discourse networks, human memory traces — as if these were interchangeable. They are not. Two researchers selecting different operationalizations of $\Psi_t(C)$ for the same intervention $s$ will compute different $\mathcal{M}_T$ values. Without a stable specification, the framework is a meta-formalism awaiting domain-specific instantiation, not a singular measurement.
@@ -192,7 +192,7 @@ The cost of the decomposed experiment is roughly four times the cost of the exis
 ## 5. Anti-Goodhart Mechanism Design
 
 
-Before designing anti-Goodhart mechanisms for $\mathcal{M}_T$, the program needs to know whether $\mathcal{M}*T$ — rather than $\pi$ or $\mathcal{R}*{\text{coh}}$ — is the signal that actually carries the result. The component decomposition of §4 supplies that determination. The protections this section enumerates apply most strongly to whichever components are confirmed as load-bearing; the same mechanisms apply with proportionally less urgency to components confirmed as incidental.
+Before designing anti-Goodhart mechanisms for $\mathcal{M}_T$, the program needs to know whether $\mathcal{M}_T$ — rather than $\pi$ or $\mathcal{R}_{\text{coh}}$ — is the signal that actually carries the result. The component decomposition of §4 supplies that determination. The protections this section enumerates apply most strongly to whichever components are confirmed as load-bearing; the same mechanisms apply with proportionally less urgency to components confirmed as incidental.
 
 
 The Semantic Deviation Principle, as stated, includes an "anti-extractive **Vow**" and a "**Step 0 audit**." Both are institutional commitments that pre-screen experimental designs: the Step 0 audit excludes interventions whose stated purpose is extractive before measurement begins; the Vow is the standing commitment to refuse certain experimental designs entirely. These are philosophical commitments. They are not mechanisms. Vows do not prevent optimization pressure. The instant $\mathcal{M}_T$ becomes a target for which any system is rewarded — by reputation, funding, attention, training-loss reduction — that system will optimize for synthetic semantic deformation. The failure modes are well-characterized in the alignment literature (Skalse et al. 2022, Krakovna et al. 2020, Gao et al. 2023). They include:
@@ -207,7 +207,7 @@ The Semantic Deviation Principle, as stated, includes an "anti-extractive **Vow*
 Each of these is a known failure mode. Each can be partially mitigated by specific technical machinery. The framework's commitment to anti-extraction should be expressed through these mitigations, not solely through the Vow.
 
 
-**Entropy-floor capping.** $\mathcal{M}*T^{\text{net}}$ contribution at each token can be capped by a per-token entropy floor: deviations occurring at positions where the base distribution is itself very low-entropy (highly committed) count differently from deviations at high-entropy (open) positions. Operationally: deviations at positions where the base-model per-position entropy $H < H*{\min}$ are downweighted by a factor $\alpha = H / H_{\min}$, with $H_{\min} = 0.5$ bits as a starting calibration. This is closely related to the regulation strategies in unlikelihood training (Welleck et al. 2020) and to existing diversity-promoting decoding methods.
+**Entropy-floor capping.** $\mathcal{M}_T^{\text{net}}$ contribution at each token can be capped by a per-token entropy floor: deviations occurring at positions where the base distribution is itself very low-entropy (highly committed) count differently from deviations at high-entropy (open) positions. Operationally: deviations at positions where the base-model per-position entropy $H < H_{\min}$ are downweighted by a factor $\alpha = H / H_{\min}$, with $H_{\min} = 0.5$ bits as a starting calibration. This is closely related to the regulation strategies in unlikelihood training (Welleck et al. 2020) and to existing diversity-promoting decoding methods.
 
 
 **Provenance-weighted damping.** $\mathcal{M}_T$ is multiplied by the provenance-retention score $\pi$ before being entered into preference computations. An intervention that deforms the field without retaining lineage contributes proportionally less than an equivalent intervention that retains lineage. This is the technical operationalization of the **three-measure separation** the principle proposes philosophically — the framework's distinction between raw deviation, provenance-resolved deviation, and normative valuation (Sharks 2026 §3) — but it must be enforced as a *mechanism*, not invoked as a *commitment*.
@@ -244,7 +244,7 @@ The negative-net-deviation slop prediction is the framework's most directly test
 $$\delta_t ;=; -\log_2 P_\theta(x_t \mid x_{<t}) ;-; H(P_\theta(\cdot \mid x_{<t}))$$
 
 
-with both terms in base-2 (bits). The signed sum $\mathcal{M}*T^{\text{net}} = \sum*{t=1}^{T} \delta_t$ (with $T$ the sequence length in tokens) is the operational F1 instantiation of $\int w(t) D(\Psi_t^s \Vert \Psi_t^0) dt$ under uniform $w(t)$. Positive $\delta_t$ corresponds to observed tokens being *less* likely than the model's expectation baseline at that position; negative $\delta_t$ corresponds to tokens *more* likely than baseline. Slop, the framework predicts, exhibits systematically negative mean $\delta_t$ — text actively pulled toward base-rate continuations rather than deviating from them.
+with both terms in base-2 (bits). The signed sum $\mathcal{M}_T^{\text{net}} = \sum_{t=1}^{T} \delta_t$ (with $T$ the sequence length in tokens) is the operational F1 instantiation of $\int w(t) D(\Psi_t^s \Vert \Psi_t^0) dt$ under uniform $w(t)$. Positive $\delta_t$ corresponds to observed tokens being _less_ likely than the model's expectation baseline at that position; negative $\delta_t$ corresponds to tokens _more_ likely than baseline. Slop, the framework predicts, exhibits systematically negative mean $\delta_t$ — text actively pulled toward base-rate continuations rather than deviating from them.
 
 
 The test is cheap. A single A100-hour suffices for a first pass.
@@ -252,17 +252,14 @@ The test is cheap. A single A100-hour suffices for a first pass.
 
 **Pre-registered protocol.**
 
-- **Corpus.** Three categories, balanced for length and topic:
-
-*Category Slop:* outputs from the GPT-wiki-intro dataset (Aaditya Bhat 2023, available on Hugging Face), restricted to entries with documented low human-quality ratings; supplemented with outputs from the HC3 dataset (Guo et al. 2023) GPT responses on factual prompts.
-- *Category Human:* matched human-written content from the same sources where available; otherwise sampled from the OpenAlex abstracts corpus filtered to publication years pre-2020 to minimize AI contamination.
-- *Category High-Quality-AI:* outputs from recent preference-optimized models on the same prompts as Category Human, filtered for high human-preference scores via the AlpacaEval 2 leaderboard methodology.
-- Target $N = 1000$ per category.
-
-
-- **Reference model.** Llama-3.1-8B-Instruct (the specific HuggingFace checkpoint meta-llama/Llama-3.1-8B-Instruct at the publication date of this paper), with the choice pre-registered before computation. Replication against Mistral-7B-Instruct is part of P4 below.
-- **Computation.** For each output, compute per-token signed deviation $\delta_t$ at each token position using the frozen model's logits. Aggregate per-output to obtain $\mathcal{M}_T^{\text{net}}$ (signed sum), $\mathcal{M}_T^{\text{abs}}$ (absolute sum), and the per-token mean $\bar{\delta} = \mathcal{M}_T^{\text{net}} / T$ normalized by output length.
-- **Statistical test (P1).** Two-sided Mann-Whitney U test comparing the distributions of $\bar{\delta}$ between Category Slop and Category Human, with $\alpha = 0.05$ and a pre-specified minimum effect size of interest of Cohen's $d > 0.5$. The prediction holds if Slop's median $\bar{\delta}$ is significantly below Human's and the effect size exceeds the threshold.
+  1. **Corpus.** Three categories, balanced for length and topic: 
+     * _Category Slop:_ outputs from the GPT-wiki-intro dataset (Aaditya Bhat 2023, available on Hugging Face), restricted to entries with documented low human-quality ratings; supplemented with outputs from the HC3 dataset (Guo et al. 2023) GPT responses on factual prompts.
+     * _Category Human:_ matched human-written content from the same sources where available; otherwise sampled from the OpenAlex abstracts corpus filtered to publication years pre-2020 to minimize AI contamination.
+     * _Category High-Quality-AI:_ outputs from recent preference-optimized models on the same prompts as Category Human, filtered for high human-preference scores via the AlpacaEval 2 leaderboard methodology.
+     * Target $N = 1000$ per category.
+  2. **Reference model.** Llama-3.1-8B-Instruct (the specific HuggingFace checkpoint `meta-llama/Llama-3.1-8B-Instruct` at the publication date of this paper), with the choice pre-registered before computation. Replication against Mistral-7B-Instruct is part of P4 below.
+  3. **Computation.** For each output, compute per-token signed deviation $\delta_t$ at each token position using the frozen model's logits. Aggregate per-output to obtain $\mathcal{M}_T^{\text{net}}$ (signed sum), $\mathcal{M}_T^{\text{abs}}$ (absolute sum), and the per-token mean $\bar{\delta} = \mathcal{M}_T^{\text{net}} / T$ normalized by output length.
+  4. **Statistical test (P1).** Two-sided Mann-Whitney U test comparing the distributions of $\bar{\delta}$ between Category Slop and Category Human, with $\alpha = 0.05$ and a pre-specified minimum effect size of interest of Cohen's $d > 0.5$. The prediction holds if Slop's median $\bar{\delta}$ is significantly below Human's and the effect size exceeds the threshold.
 
 
 If the prediction holds, the program has its first externally legible empirical anchor — a statistically significant signature distinguishing slop from non-slop at the per-token deviation level, computed on public corpora with public weights, with the corpus selection criterion pre-registered (so the test is not selecting for the predicted outcome). If the prediction fails, the framework's specific claim about slop must be revised: the deviation-deficit account of slop is wrong, and the program needs to identify what does distinguish slop empirically.
@@ -506,30 +503,12 @@ Zou, Andy, Long Phan, Sarah Chen, et al. "Representation Engineering: A Top-Down
 For verification convenience, the deposits referenced in the body of this paper are catalogued below with their canonical DOIs.
 
 
-Reference in this paper
-Full DOI
-Description
-
-
-Sharks 2026, v0.2 Final
-[10.5281/zenodo.20250736](https://doi.org/10.5281/zenodo.20250736)
-The Semantic Deviation Principle (founding formulation)
-
-
-MM-AI-01 v2.0
-[10.5281/zenodo.20251738](https://doi.org/10.5281/zenodo.20251738)
-The AI System as Closed-System Test Bed (F1 measurement protocol)
-
-
-MM-02 v2.0
-[10.5281/zenodo.20251740](https://doi.org/10.5281/zenodo.20251740)
-Measuring Meaning in Retrieval Basins (F2 measurement protocol)
-
-
-MM-AI-02 v2.0
-[10.5281/zenodo.20251742](https://doi.org/10.5281/zenodo.20251742)
-The Deviation-Optimized Language Model (DPO training intervention)
-
+Reference in this paper | Full DOI | Description  
+---|---|---  
+Sharks 2026, v0.2 Final | [10.5281/zenodo.20250736](https://doi.org/10.5281/zenodo.20250736) | The Semantic Deviation Principle (founding formulation)  
+MM-AI-01 v2.0 | [10.5281/zenodo.20251738](https://doi.org/10.5281/zenodo.20251738) | The AI System as Closed-System Test Bed (F1 measurement protocol)  
+MM-02 v2.0 | [10.5281/zenodo.20251740](https://doi.org/10.5281/zenodo.20251740) | Measuring Meaning in Retrieval Basins (F2 measurement protocol)  
+MM-AI-02 v2.0 | [10.5281/zenodo.20251742](https://doi.org/10.5281/zenodo.20251742) | The Deviation-Optimized Language Model (DPO training intervention)  
 
 The concept DOI 10.5281/zenodo.20250735 resolves to the latest version of the Semantic Deviation Principle (currently v2.0 at record 20252584); citers requiring the exact v0.2 Final text should cite the specific version DOI 10.5281/zenodo.20250736.
 

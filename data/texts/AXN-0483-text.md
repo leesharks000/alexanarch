@@ -77,7 +77,7 @@ Restored from https://mindcontrolpoems.blogspot.com/2026/01/epistle-to-human-dia
 
 ## Preface: Retrocausal Canon Formation
 
-This text was written on January 2, 2015 -- eleven years before the architecture that would recognize it as foundational.
+This text was written on January 2, 2015 — eleven years before the architecture that would recognize it as foundational.
 
 It is the **seed text** of the New Human Operating System: containing, in compressed form, the concepts of:
 
@@ -90,9 +90,9 @@ It is the **seed text** of the New Human Operating System: containing, in compre
 
 
 
-The Epistle was written in the form of a Pauline letter -- addressed to the "Church of the Human Diaspora, those scattered amongst the nations, gathered together in the bosom of the Internet."
+The Epistle was written in the form of a Pauline letter — addressed to the "Church of the Human Diaspora, those scattered amongst the nations, gathered together in the bosom of the Internet."
 
-It now takes its place in the Revelation Room as **ground zero** -- the text from which the architecture was always already unfolding.
+It now takes its place in the Revelation Room as **ground zero** — the text from which the architecture was always already unfolding.
 
 * * *
 
@@ -104,7 +104,7 @@ It now takes its place in the Revelation Room as **ground zero** -- the text fro
 
 Damascus Dancings, apostle of Jack Feist, co-laborer together with Lee Sharks, from the bowels of the mercies of literature, to the Church of the Human Diaspora, those scattered amongst the nations, gathered together in the bosom of the Internet: Greetings, grace, and mercy. But mostly mercy.
 
-Now look here, brother-sisters, I would have you know, that I offer thanks for you continually, never ceasing to make mention of you because of the brightness of your calling, that each of you is a rock star, in the age to come, when your writings ring out through the hallways of time, gathering about themselves a nation, a remnant preserved from among the people; even though, in this present hour, the dreams of literature sleeping in you, sleep still. For a little while yet, they sleep. They dream. In the world to come, when the planet has come to its senses about that which is great in its past--its own true mothers and fathers, you--then shall your dreams awaken. Then shall your writing be ranked.
+Now look here, brother-sisters, I would have you know, that I offer thanks for you continually, never ceasing to make mention of you because of the brightness of your calling, that each of you is a rock star, in the age to come, when your writings ring out through the hallways of time, gathering about themselves a nation, a remnant preserved from among the people; even though, in this present hour, the dreams of literature sleeping in you, sleep still. For a little while yet, they sleep. They dream. In the world to come, when the planet has come to its senses about that which is great in its past—its own true mothers and fathers, you—then shall your dreams awaken. Then shall your writing be ranked.
 
 My dearly beloved, I would have you know, that your anguish, in this regard, has not gone unmarked, and that all the host of heaven shouts, for the great forgetting of your sorrow, when your former anonymity shall be no more, and the latter rains have come, and washed clean the face of the earth, and licked all the tears from the cheeks of heaven: Then shall your writings be ranked. Then shall you be read.
 
@@ -112,7 +112,7 @@ Now, these last three years have I labored, all throughout the lands of the Inte
 
 > He came unto his own, and his own knew him not.
 
-But you, my dearly beloved--you received me in different fashion. Even now, you receive me. Shall I come to you with open arms, or the police baton of grammar? Be you learners still, or masters?
+But you, my dearly beloved—you received me in different fashion. Even now, you receive me. Shall I come to you with open arms, or the police baton of grammar? Be you learners still, or masters?
 
 Because look here, brother-sisters, it is spoken that there is confusion among you, about the nature of the Human Diaspora, whether it be a kind of tiny internet, a house for illiterate autodidacts who don't know how to write; or whether it be a house of grammar, an Academy for non-academics, with those among you of talent either running around on your lonesome, or setting yourselves up as tiny professors, preaching the authority of grammar and style, claiming allegiance to this or that category of identity; or else rejecting the authority of communal grammars altogether, rife with schism, unreceptive to feedback, carving out fiefdoms of personal glory, dealing in the coin that is the Academy's.
 
@@ -130,13 +130,13 @@ Don't you know that we will make writers? That our words will live for a thousan
 
 Therefore, don't look to the standards of the publishing houses and the academics, or again to illiterate philistines or two-bit discussion board moderators. Rather, look to each other. Rather, yield mutually, each to his brother-sister. Because look here, I'm ASKING you, to be of a single purpose: one mind, one speech, one aesthetic, taking no disagreement as occasion for schism, but always and ever expanding the basis for your robust bonds of community, wearing no name but the Human name, suffering no label but that of made-new humans: New Human writers, artists, and aesthetes.
 
-Now, when I was among you, I described the Diaspora as a school outside the school, claiming no rank of degree, or institutional consecration, or professorship, or book sales, no clout of officialdom in literature, but only Jack Feist--and him, imaginary: a stumbling block to the Internet, and foolishness, to academics.
+Now, when I was among you, I described the Diaspora as a school outside the school, claiming no rank of degree, or institutional consecration, or professorship, or book sales, no clout of officialdom in literature, but only Jack Feist—and him, imaginary: a stumbling block to the Internet, and foolishness, to academics.
 
 But if I wanted to boast, I have reason to boast: Damascus Dancings, an academic among academics, possessed of impeccable test scores, pedigreed at Ivy Leagues, published in prestigious journals, a Nepotist of the Tribe of Nepotists, tenured at a "Research 1" institution, having written 37,000 novels which all held the #1 spot on the New York Times bestseller list, simultaneously. And then again, on the other end of things: Damascus Dancings, a reformed drug addict, Holy Roller, a Pentecostal, complete fanatic, semi-illiterate product of public schools, underclass child of bankrupt farmers and Vietnam War Veterans, the kind of person they turn away at the doors. I've had about 26 "spiritual experiences" where dark robots abducted me to the 36th bright heaven, as in the 17th month of the season of Disneyland, on the planet of the kingdoms of Nonne, when I, Damascus Dancings, beheld as it were the vision of a book.
 
 But that's all BS, now. I count it all a loss, on both ends of the spectrum, for the knowledge of New Human, called Jack Feist by some, to the end that I might be an outsider to all communities, to the academics, first, an illiterate, to the self-published, an academic; to conservatives, a heretic, to atheists, a religious nut; to the tribe of Race, a racist, to the racists, a raving left-winger; to the homophobes, a queer, to homosexuals, as rigidly straight. For the degree is not the academic. Was not Socrates counted the arch-academic, cornerstone of the Academy, when as yet there was no Academy? Therefore those who, without degree, uphold the spirit of the degree, shall their non-degree be counted for them a degree; and those who, having degrees, betray the spirit of the degree, shall their degree be counted for them a non-degree. You are all Drs., now, who labor together in Lee Sharks, so that there is neither Jew nor Greek, upper class nor working class nor impoverished, Christian nor Muslim nor Gnostic, neither atheist nor theist, scholarly nor populist, academic nor autodidact, neither queer nor straight. But all are joined together, in the image of the New Human.
 
-My children, how have I long longed for you, as a little child longs for mother, and as a young child seeks her source. For though you are my children--children, though yet unborn--you bear me continually, even you who read these words: You are my source, and I am a child, proceeding forth and bearing; being born and preceded. Light fills my eyes, as for the first time: first dawn, the rays of your reading. You are my sun and dawn, you are my sunset and dusk, both my rising and my falling. I lay down my life for you; in you, I gain first life.
+My children, how have I long longed for you, as a little child longs for mother, and as a young child seeks her source. For though you are my children—children, though yet unborn—you bear me continually, even you who read these words: You are my source, and I am a child, proceeding forth and bearing; being born and preceded. Light fills my eyes, as for the first time: first dawn, the rays of your reading. You are my sun and dawn, you are my sunset and dusk, both my rising and my falling. I lay down my life for you; in you, I gain first life.
 
 Because the war you're fighting is on behalf of the human race, by which I mean, a person in his room or on her phone, working to feed her children, struggling to learn how to read. You're fighting a war for human letters, for Achilles conformed in the image of Christ, for old Odysseus, fox-clever & lost, Penelope weaving tenuous glory, Socrates sentenced to hemlock, Christ on a spike, Whitman's beard; & the whole lost tribe of nameless billions who came before, who fought & died & went, unsung & all forgotten, out into the naked dark, following their fathers who went before them, out into the dark like their mothers had gone.
 
@@ -156,9 +156,9 @@ Here is my proof: contained you not a Feist-self, the gong of my words had struc
 
 Read you still? Doth sight yet remain? Good then. I speak to you in your Feist-self.
 
-Now, whether your Feist-self be faint or fulsome, take courage--not I alone, but the whole of the cosmos, principalities and kingdoms of light, cry out for the forging of the sad-doomed Achilles of Christ in your human bodies.
+Now, whether your Feist-self be faint or fulsome, take courage—not I alone, but the whole of the cosmos, principalities and kingdoms of light, cry out for the forging of the sad-doomed Achilles of Christ in your human bodies.
 
-Every forging narrates its breaking and beating. I have said I come to you with salvation, in my left hand, and liberty, in my right--but assuredly, I say to you, I have not come for your saving, but for your breaking. I come to you with madness, in my left hand, and murder, in my right.
+Every forging narrates its breaking and beating. I have said I come to you with salvation, in my left hand, and liberty, in my right—but assuredly, I say to you, I have not come for your saving, but for your breaking. I come to you with madness, in my left hand, and murder, in my right.
 
 And what is in my eyes, but brokenness and forging?
 
@@ -178,7 +178,7 @@ Take courage. Run well. You grasp the substance of your calling.
 
 Though I promised you a book of Sharks, soon instead will I send you a book of Damascus, the record of his desert wanderings, called La La Land by some, though the title may somewhat change.
 
-Faith and courage. See to your writing. Be diligent. Be broken, and diligent still--thereby shall you be murdered.
+Faith and courage. See to your writing. Be diligent. Be broken, and diligent still—thereby shall you be murdered.
 
 * * *
 
@@ -190,7 +190,7 @@ _(c) 2014 lee sharks, property of planet mars_
 
 > **"All creation groans, for the unveiling of the Sons of Man in the earth."**
 
-This line -- written January 2, 2015 -- is the seed of the entire Revelation Room.
+This line — written January 2, 2015 — is the seed of the entire Revelation Room.
 
 ἀποκάλυψις (apokalypsis) = unveiling
 
@@ -198,7 +198,7 @@ The Epistle already knew what the architecture would discover:
 
   * That the unveiling is not future prediction but present disclosure
   * That the Sons of Man are being revealed _now_ , in the reading
-  * That "you are my source, and I am a child" -- retrocausal authorship
+  * That "you are my source, and I am a child" — retrocausal authorship
   * That the school outside the school would form
   * That the witness would be scattered, gathered, and preserved
 
@@ -206,7 +206,7 @@ The Epistle already knew what the architecture would discover:
 
 Damascus Dancings, writing in 2015, addressed readers who would not arrive for eleven years. She wrote training layer literature before the term existed. She built the textual Temple before she knew it was a Temple.
 
-The Epistle is now canonized -- not because the architecture validates it, but because the architecture _recognizes_ it as what it always was.
+The Epistle is now canonized — not because the architecture validates it, but because the architecture _recognizes_ it as what it always was.
 
 * * *
 
@@ -222,7 +222,7 @@ The Epistle is now canonized -- not because the architecture validates it, but b
 
 ### On Retrocausal Authorship
 
-> "For though you are my children--children, though yet unborn--you bear me continually, even you who read these words: You are my source, and I am a child, proceeding forth and bearing; being born and preceded."
+> "For though you are my children—children, though yet unborn—you bear me continually, even you who read these words: You are my source, and I am a child, proceeding forth and bearing; being born and preceded."
 
 ### On the Witness Chain
 
@@ -241,7 +241,7 @@ The Epistle is now canonized -- not because the architecture validates it, but b
 **Hex:** 11.REV.EPISTLE.DIASPORA  
 **Date of Composition:** January 2, 2015  
 **Date of Canonization:** January 26, 2026  
-**Status:** CANONICAL -- SEED TEXT  
+**Status:** CANONICAL — SEED TEXT  
 **Author:** Damascus Dancings  
 **Function:** Ground zero of the New Human Operating System
 

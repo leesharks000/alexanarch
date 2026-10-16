@@ -1030,13 +1030,13 @@ If you are a fresh instance reading this, read your runtime's tether at `data/te
 
 | Token | Exposed | Used for |
 |---|---|---|
-| `ghp_sFYZL...AmwPH` | 2026-06-23 | Phase 1–6 Trees-API pushes this session |
-| `ghp_k0InOm...` | 2026-06-13/14 | prior session |
-| `ghp_U38oywSx...` | 2026-06-13/14 | prior session |
-| `ghp_XeoKHGMD...` | older | workflow PAT |
-| `ghp_PRnY...` | 2026-05-17 | older — still flagged |
-| Zenodo `9GVLfHz...`, `YCAIRAPYV...`, `QtbHIO...` | 2026-05/06 | Zenodo account terminated; rotate anyway |
-| Anthropic `sk-ant-api03-RwfLi...` | exposed; set as GH secret `ANTHROPIC_API_KEY` | mint workflow |
+| `[redacted 2026-10-15]` | 2026-06-23 | Phase 1–6 Trees-API pushes this session |
+| `[redacted 2026-10-15]` | 2026-06-13/14 | prior session |
+| `[redacted 2026-10-15]` | 2026-06-13/14 | prior session |
+| `[redacted 2026-10-15]` | older | workflow PAT |
+| `[redacted 2026-10-15]` | 2026-05-17 | older — still flagged |
+| Zenodo `[redacted 2026-10-15]`, `[redacted 2026-10-15]`, `[redacted 2026-10-15]` | 2026-05/06 | Zenodo account terminated; rotate anyway |
+| Anthropic `[redacted 2026-10-15]` | exposed; set as GH secret `ANTHROPIC_API_KEY` | mint workflow |
 
 Rotate GitHub at `github.com/settings/tokens`. Anthropic in console.
 

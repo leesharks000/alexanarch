@@ -1920,7 +1920,10 @@ def _fmt_count(value):
 
 _ATTR_RE = re.compile(r'(data-count="([^"]+)"[^>]*>)([^<]*)(</)')
 _COMMENT_RE = re.compile(r'<!--\s*REGEN-COUNT\s+([^\s]+)\s*-->\s*\n?([^\n]*)')
-_NUM_IN_LINE_RE = re.compile(r'\b\d[\d,]*(?:\+)?\b')
+# 2026-10-15: a free-standing number only. The first number on the captures page's meta line was the "01" of
+# "EA-WG-CAPTURES-01", so every sweep rewrote the registry's name to "EA-WG-CAPTURES-666" (reverted by hand each
+# round); numbers inside identifiers, dates (2026-10-15) and versions (12.204) are not counts.
+_NUM_IN_LINE_RE = re.compile(r'(?<![\w.\-])\d[\d,]*(?:\+)?(?![\w\-]|\.\d)')
 
 DYNAMIC_COUNT_PAGES = [
     "index.html",
