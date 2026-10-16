@@ -31,8 +31,8 @@ keywords:
 
 | seat | corpus | lines | language | licence |
 |---|---|---|---|---|
-| 04/01 | **aristotle** | 83,110 | Ancient Greek | CC BY-SA (First1KGreek and Perseus packaging); |
-| 04/02 | **plotinus** | 20,923 | Ancient Greek | CC BY-SA (First1KGreek packaging); underlying  |
+| 04/01 | **aristotle** | 83,110 | Ancient Greek | CC BY-SA (First1KGreek and Perseus packaging); underlying editions public domain |
+| 04/02 | **plotinus** | 20,923 | Ancient Greek | CC BY-SA (First1KGreek packaging); underlying edition public domain  |
 
 
 Data is published as a sidecar index at [api/corpora.json](https://www.alexanarch.org/api/corpora.json) with per-seat links; each seat carries its own `source.json` and SHA-256 `MANIFEST.sha256` at `alexanarch.org/data/corpora/<corpus>/`, and a rendered reading room at `traininglayerliterature.org/originals/<corpus>/`. The per-deposit external-metadata sidecar for this record is at `/data/external-metadata/AXN-0657.json`.

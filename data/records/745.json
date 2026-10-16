@@ -10,7 +10,7 @@
  "orcid": "0009-0000-1599-0703",
  "date": "2026-05-20",
  "description": "This v3 work plan proposes a Hugging Face corpus of Crimson Hexagonal Archive deposits for research on synthetic-data collapse, AI-mediated authorship, provenance-bearing training, and heteronymic attribution. Its central methodological change is an automated classifier performing three tasks: provenance-mode classification, artifact-type classification, and proposed heteronym reattribution.\n\nThe design preserves both original Zenodo creator metadata and classifier proposals. High-confidence changes may later enter a separate human-reviewed metadata-correction project; the classifier itself is not authorized to rewrite canonical authorship. Multiple textual views—body only, minimal header, and full provenance header—allow researchers to test whether visible provenance affects model degradation or semantic drift. The null and alternative hypotheses remain prospective.\n\nThe dataset, classifier repository, software deposit, and DOIs were not yet created in the preserved plan. Several heteronym profiles remain `TBD`, the asserted two-session schedule is optimistic, and licensing, privacy, text extraction, duplicate handling, model-generation disclosure, and evaluation design require substantial implementation work.",
- "content_type": "Prose narrative / theoretical manifesto",
+ "content_type": "Work plan",
  "license": "CC-BY-4.0",
  "substrate": "Various",
  "keywords": [
@@ -403,6 +403,13 @@
    "reason": "conversion damage repaired in place: 0 empty bullets joined, 0 doubled headings dropped, 0 tables given edge pipes, 7 flattened tables rebuilt from the published post",
    "was": "{\"axn\": \"AXN:0296.EMPIRICAL.\\ud83d\\udf01\\u270b\\ud83d\\udfe4\\ud83c\\udf0b\\u2795\\ud83d\\udd1d\"}",
    "now": "{\"axn\": \"AXN:0296.EMPIRICAL.\\u264a\\u267b\\ufe0f\\u264e\\u264a\\u23ea\\ud83d\\udee4\\ufe0f\"}"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "content_type",
+   "reason": "content_type did not describe the text (reading RP04)",
+   "was": "Prose narrative / theoretical manifesto",
+   "now": "Work plan"
   }
  ],
  "date_modified": "2026-10-15",

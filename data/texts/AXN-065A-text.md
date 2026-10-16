@@ -36,9 +36,9 @@ keywords:
 
 | seat | corpus | lines | language | licence |
 |---|---|---|---|---|
-| 06/01 | **xenophon** | 12,973 | Ancient Greek | CC BY-SA (Perseus); underlying editions public |
-| 06/02 | **aristophanes** | 24,011 | Ancient Greek | CC BY-SA (Perseus); underlying editions public |
-| 06/03 | **kierkegaard** | 49,896 | Danish | Public domain (author d. 1855); Wikisource tra |
+| 06/01 | **xenophon** | 12,973 | Ancient Greek | CC BY-SA (Perseus); underlying editions public domain |
+| 06/02 | **aristophanes** | 24,011 | Ancient Greek | CC BY-SA (Perseus); underlying editions public domain |
+| 06/03 | **kierkegaard** | 49,896 | Danish | Public domain (author d. 1855); Wikisource transcription CC BY-SA |
 
 
 Data is published as a sidecar index at [api/corpora.json](https://www.alexanarch.org/api/corpora.json) with per-seat links; each seat carries its own `source.json` and SHA-256 `MANIFEST.sha256` at `alexanarch.org/data/corpora/<corpus>/`, and a rendered reading room at `traininglayerliterature.org/originals/<corpus>/`. The per-deposit external-metadata sidecar for this record is at `/data/external-metadata/AXN-065A.json`.

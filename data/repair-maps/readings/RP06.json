@@ -1,0 +1,650 @@
+{
+ "batch_id": "RP06",
+ "reader": "repair reader (Claude)",
+ "deposits": [
+  {
+   "deposit": 121,
+   "read_ranges": [
+    [
+     1,
+     820
+    ]
+   ],
+   "lines_total": 820,
+   "second_store_read": [
+    [
+     1,
+     969
+    ]
+   ],
+   "verdict": "content_type",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": "Scholarly essay (genre note)",
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-02A5-text.md",
+     "lines": [
+      97,
+      97
+     ],
+     "quote": "**Document class:** Genre Note / Reception Apparatus artifact"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-02A5-text.md",
+     "lines": [
+      487,
+      487
+     ],
+     "quote": "**Document class:** Genre Note / Reception Apparatus artifact"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-02A5-text.md",
+     "lines": [
+      9,
+      9
+     ],
+     "quote": "\"@type\": \"ScholarlyArticle\""
+    }
+   ],
+   "find_checks": [
+    "The Substrate Trap is named because the trap is exactly to treat the substrate",
+    "phrases coined recently can fall out of the subject's recall window within months"
+   ],
+   "note": "The registry content_type is \"Software / executable apparatus\"; the deposit names its own class twice as a genre note and its kernel types it ScholarlyArticle. The second store differs from the seated text only in table layout (tables flattened to one cell per line)."
+  },
+  {
+   "deposit": 379,
+   "read_ranges": [
+    [
+     1,
+     372
+    ]
+   ],
+   "lines_total": 372,
+   "second_store_read": null,
+   "verdict": "attach_link",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-00BC-text.md",
+     "lines": [
+      7,
+      7
+     ],
+     "quote": "**[](https://blogger.googleusercontent.com/img/a/AVvXsEj3sqidNnhKzw4YF4cgak4fm7MzQ4Zss9wqrF6-kbKL1Fag3l0bm5w_QxGa_Bj7b6YX_Oxe45YQCv3xEp0iFlPb0YXLWExba9TR0wd_usHDVAjErTaZTVW85UTuh4OkY2AZ-kCXSzKfWQKvnN9p4LdQETGtWaGBNLLgSQoaDKoO5zi9oaSN9GO-pnrEtmy1)****"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP06/p379.txt",
+     "lines": [
+      9,
+      9
+     ],
+     "quote": "**[![](https://blogger.googleusercontent.com/img/a/AVvXsEj3sqidNnhKzw4YF4cgak4fm7MzQ4Zss9wqrF6-kbKL1Fag3l0bm5w_QxGa_Bj7b6YX_Oxe45YQCv3xEp0iFlPb0YXLWExba9TR0wd_usHDVAjErTaZTVW85UTuh4OkY2AZ-kCXSzKfWQKvnN9p4LdQETGtWaGBNLLgSQoaDKoO5zi9oaSN9GO-pnrEtmy1)]"
+    }
+   ],
+   "find_checks": [
+    "This enacts: *\"The moon base cannot be audited. That is not a bug.\"*",
+    "Lunar greys"
+   ],
+   "note": "The 2026-01-23 post embeds the rendered schema image as a linked image ([![](url)](url)); the seated text keeps only an empty-text link [](url) to the same Blogger URL, so the image is neither rendered nor clickable. Second store is byte-identical to the text. No local copy of the image was found in the repository (data/, s/records/379/, data/attachments/)."
+  },
+  {
+   "deposit": 675,
+   "read_ranges": [
+    [
+     1,
+     408
+    ]
+   ],
+   "lines_total": 408,
+   "second_store_read": [
+    [
+     1,
+     417
+    ]
+   ],
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0220-text.md",
+     "lines": [
+      1,
+      2
+     ],
+     "quote": "# SYMBOLON-01"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-055C-text.md",
+     "lines": [
+      1,
+      3
+     ],
+     "quote": "# SYMBOLON-01"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/deposits/AXN-055C.md",
+     "lines": [
+      4,
+      4
+     ],
+     "quote": "title: \"SYMBOLON-01: Anti-Severance Technologies for Fused Documentary Objects — with Applied Example (Self-Propagating Chip Patent, SYMBOLON-Enhanced)\""
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP06/p675.txt",
+     "lines": [
+      262,
+      262
+     ],
+     "quote": "1. **R1 defense (binding).**"
+    }
+   ],
+   "find_checks": [
+    "The spider that says \"I'm separating two questions the piece deliberately fuses\"",
+    "There is no meta-language that is not already a potato chip"
+   ],
+   "note": "#675 is the lower-numbered, standing record of SYMBOLON-01 and its seated text matches the 2026-04-19 post (the spec alone, no applied example); the shared text sits in #1355, the later record, whose title promises an applied example its seated text does not carry — that is #1355's question, outside this batch. The empty bullets the note cites are in the second store only (AXN-0220.md lines 343-353); the seated text renders the R1/R2/R3 list as bullets where the post numbers it 1-3."
+  },
+  {
+   "deposit": 864,
+   "read_ranges": [
+    [
+     1,
+     291
+    ]
+   ],
+   "lines_total": 291,
+   "second_store_read": [
+    [
+     1,
+     405
+    ]
+   ],
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/EA-CHA-DRAIN-HYPOTHESIS.md",
+     "lines": [
+      1,
+      1
+     ],
+     "quote": "# The Drain Hypothesis: Subterranean Engineering, Aquifer Puncture, and the Desertification of the Sahara"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/EA-CHA-DRAIN-HYPOTHESIS.md",
+     "lines": [
+      6,
+      6
+     ],
+     "quote": "*v6 — Incorporates four Assembly reviews"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/EA-CHA-DRAIN-HYPOTHESIS.md",
+     "lines": [
+      6,
+      6
+     ],
+     "quote": "Stronger title claim"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/deposits/AXN-036D.md",
+     "lines": [
+      13,
+      13
+     ],
+     "quote": "v5 — Incorporates four Assembly reviews"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP06/p864.txt",
+     "lines": [
+      9,
+      9
+     ],
+     "quote": "# The Drain Hypothesis: Subterranean Engineering, Aquifer Puncture, and the Accelerated Desertification of the Sahara"
+    }
+   ],
+   "find_checks": [
+    "The narrowness of the Nile is anomalous among major river systems"
+   ],
+   "note": "The seated text is v6, whose own revision note lists a \"Stronger title claim\" and whose heading drops \"Accelerated\"; the registry title, the second store and the 2026-06-21 post carry the v5 title with \"Accelerated\". This is a version label difference, left as is under the ruling."
+  },
+  {
+   "deposit": 912,
+   "read_ranges": [
+    [
+     1,
+     1238
+    ]
+   ],
+   "lines_total": 1238,
+   "second_store_read": null,
+   "verdict": "as_published",
+   "url": "https://mindcontrolpoems.blogspot.com/2026/06/alexanarch-workplan-comprehensive.html",
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-039C-text.md",
+     "lines": [
+      1110,
+      1110
+     ],
+     "quote": "| `ghp_sFYZL...AmwPH` | 2026-06-23 | Phase 1–6 Trees-API pushes this session |"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP06/p912.txt",
+     "lines": [
+      1737,
+      1737
+     ],
+     "quote": "| `ghp_sFYZL...AmwPH` | 2026-06-23 | Phase 1–6 Trees-API pushes this session |"
+    }
+   ],
+   "find_checks": [
+    "Blob uploads run ~2.5/s"
+   ],
+   "note": "§16's credential rotation table elides each token with \"...\" in the document itself; the 2026-06-24 post carries the same elided strings (post lines 1737-1749). Nothing was cut by the archive. Second store is byte-identical to the text."
+  },
+  {
+   "deposit": 994,
+   "read_ranges": [
+    [
+     1,
+     674
+    ]
+   ],
+   "lines_total": 674,
+   "second_store_read": null,
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-03EE-text.md",
+     "lines": [
+      6,
+      6
+     ],
+     "quote": "# DODECAD HETERONYM PROVENANCE REGISTRY"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-03EE-text.md",
+     "lines": [
+      10,
+      10
+     ],
+     "quote": "**Document ID:** EA-HET-DODECAD-01"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-03EE-text.md",
+     "lines": [
+      40,
+      40
+     ],
+     "quote": "For each heteronym, the Registry identifies the canonical existing provenance document"
+    }
+   ],
+   "find_checks": [
+    "Sen Kuro restored to sixth position in the Twelve",
+    "The Dodecad is structurally fixed at twelve. The Adjacent class is, in principle, expandable."
+   ],
+   "note": "The body is the complete v1.1 provenance registry (§0–§9, sealed) followed by its verbatim DataCite record; \"Provenance document\" describes it. The note is a lead without a defect. Second store is byte-identical to the text."
+  },
+  {
+   "deposit": 1099,
+   "read_ranges": [
+    [
+     1,
+     848
+    ]
+   ],
+   "lines_total": 848,
+   "second_store_read": null,
+   "verdict": "as_published",
+   "url": "https://mindcontrolpoems.blogspot.com/2026/07/dead-letters-testy-ideological-letters.html",
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-045C-text.md",
+     "lines": [
+      822,
+      823
+     ],
+     "quote": "posts_fully_preserved: [1, 2, 3, 4, 5, 6, 7]"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-045C-text.md",
+     "lines": [
+      761,
+      761
+     ],
+     "quote": "Posts #8–#13 canonical bytes are held for v1.1 minting once the photograph protocol is ratified"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP06/p1099.txt",
+     "lines": [
+      852,
+      852
+     ],
+     "quote": "### Reference (canonical bytes to be included in v1.1)"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP06/p1099.txt",
+     "lines": [
+      9,
+      9
+     ],
+     "quote": "Creative work / correspondence archive (14 posts, ~50,000 words, one composite deposit)"
+    }
+   ],
+   "find_checks": [
+    "Lee Sharks is dead now he died from a broken heart",
+    "enormous work, small returns"
+   ],
+   "note": "The record holds Posts #1–#7 in full, #8–#13 by URL only and #14 in summary, and about 13,400 words against the ~50,000 its label states; the 2026-07-18 post carries the same structure, the same held-for-v1.1 note and the same ~50,000 figure. The figure is the deposit's own and is left. Second store is byte-identical to the text."
+  },
+  {
+   "deposit": 1338,
+   "read_ranges": [
+    [
+     1,
+     573
+    ]
+   ],
+   "lines_total": 573,
+   "second_store_read": null,
+   "verdict": "needs_ruling",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": "English linguistics",
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-054B-text.md",
+     "lines": [
+      33,
+      33
+     ],
+     "quote": "  - English linguisti"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/datacite-full-backup.json",
+     "lines": [
+      1,
+      1
+     ],
+     "quote": "English linguistics"
+    }
+   ],
+   "find_checks": [],
+   "note": "The front-matter (and registry) keyword list ends \"English linguisti\"; the DataCite backup entry for the record's own DOI 10.5281/zenodo.18446646 has the keyword \"English linguistics\", so the cut came in handling. No verdict here covers a keyword field: one reading is an in-place keyword repair to \"English linguistics\"; the other is to leave the metadata, since the seated body is whole."
+  },
+  {
+   "deposit": 1368,
+   "read_ranges": [
+    [
+     1,
+     327
+    ]
+   ],
+   "lines_total": 327,
+   "second_store_read": [
+    [
+     1,
+     65
+    ]
+   ],
+   "verdict": "duplicate_of",
+   "url": null,
+   "kind": null,
+   "target": 599,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0569-text.md",
+     "lines": [
+      1,
+      1
+     ],
+     "quote": "# CTI_WOUND:GOOGLE_AIO_TOTAL_LIQUIDATION_20260322"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-01B7-text.md",
+     "lines": [
+      1,
+      1
+     ],
+     "quote": "# CTI_WOUND:GOOGLE_AIO_TOTAL_LIQUIDATION_20260322"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0569-text.md",
+     "lines": [
+      250,
+      250
+     ],
+     "quote": "The fish does not know it is a costume."
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0569-text.md",
+     "lines": [
+      267,
+      267
+     ],
+     "quote": "*[Attach screenshots with timestamps for all affected queries. Include before images where available.]*"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP06/p1368.txt",
+     "lines": [
+      246,
+      246
+     ],
+     "quote": "_[Attach screenshots with timestamps for all affected queries. Include before images where available.]_"
+    }
+   ],
+   "find_checks": [
+    "The fish does not know it is a costume"
+   ],
+   "note": "#1368's seated text is the same CTI_WOUND document seated in #599 (dated 2026-03-24, mirror the 2026-03-24 post); a whitespace-normalized diff shows only table layout and list numbering differ. The Annex A screenshot placeholder from the note is in the published post as well (post line 246). The second store is the DataCite capture page for #1368's severed DOIs 10.5281/zenodo.19202812/13."
+  },
+  {
+   "deposit": 1486,
+   "read_ranges": [
+    [
+     1,
+     2608
+    ]
+   ],
+   "lines_total": 2608,
+   "second_store_read": [
+    [
+     1,
+     2624
+    ]
+   ],
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0601-text.md",
+     "lines": [
+      927,
+      927
+     ],
+     "quote": "All passages pulled with `toolkit/extract_context.py` (diacritic-blind search, accented output) from:"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0601-text.md",
+     "lines": [
+      931,
+      931
+     ],
+     "quote": "Nothing here was retyped from memory. Section numbers are editorial identifications of the extracted window, not machine-derived"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0601-text.md",
+     "lines": [
+      2555,
+      2555
+     ],
+     "quote": "lo, hi = im[max(0, j - a.width // 2)], im[min(len(im) - 1, j + a.width // 2)]"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/attachments/sappho-philo-program/EXTRACTION-SET.md",
+     "lines": [
+      16,
+      16
+     ],
+     "quote": "> ῦς μου οὗτος Δαμασκὸς"
+    }
+   ],
+   "find_checks": [],
+   "note": "The extraction-set windows are fixed-width character windows cut by the deposit's own extract_context.py, so they start and end mid-word as produced; the attachment file EXTRACTION-SET.md carries the same cuts. All five attachments and the toolkit referred to exist under data/attachments/sappho-philo-program/. The second store differs only by hard line wrapping and one f-string form."
+  },
+  {
+   "deposit": 1560,
+   "read_ranges": [
+    [
+     1,
+     55
+    ]
+   ],
+   "lines_total": 55,
+   "second_store_read": [
+    [
+     1,
+     43
+    ]
+   ],
+   "verdict": "needs_ruling",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0658-text.md",
+     "lines": [
+      37,
+      37
+     ],
+     "quote": "Public domain (author d. 1889); Project Gutenb |"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0658-text.md",
+     "lines": [
+      38,
+      38
+     ],
+     "quote": "Public domain in the United States (all volume |"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0658-text.md",
+     "lines": [
+      39,
+      39
+     ],
+     "quote": "Public domain (author d. 1935); Wikisource tra |"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/corpora/browning/source.json",
+     "lines": [
+      13,
+      13
+     ],
+     "quote": "Public domain (author d. 1889); Project Gutenberg packaging under the PG licence"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/corpora/pound/source.json",
+     "lines": [
+      20,
+      20
+     ],
+     "quote": "Public domain in the United States (all volumes published before 1930); Project Gutenberg packaging under the PG licence"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/corpora/pessoa/source.json",
+     "lines": [
+      15,
+      15
+     ],
+     "quote": "Public domain (author d. 1935); Wikisource transcription under CC BY-SA"
+    }
+   ],
+   "find_checks": [],
+   "note": "The seat table's licence cells are cut at 46 characters from the seats' own source.json licence strings (the same cut appears in AXN-065A-text.md). No post exists for the record. No verdict covers a truncated table cell: one reading is an in-place repair of the three cells from source.json; the other is to leave the generated table, since the full strings stand in each seat's source.json. The second store lacks the seat table and the sidecar paragraph altogether."
+  },
+  {
+   "deposit": 1662,
+   "read_ranges": [
+    [
+     1,
+     36
+    ]
+   ],
+   "lines_total": 36,
+   "second_store_read": [
+    [
+     1,
+     37
+    ]
+   ],
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-06E4-text.md",
+     "lines": [
+      32,
+      32
+     ],
+     "quote": "[The transcripts](https://www.alexanarch.org/data/attachments/words-no-good/capture-registry-v12.50-transcripts.md)"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-06E4-text.md",
+     "lines": [
+      34,
+      34
+     ],
+     "quote": "[The commentary](https://www.alexanarch.org/data/attachments/words-no-good/capture-registry-v12.50-commentary.md)"
+    }
+   ],
+   "find_checks": [],
+   "note": "The body is the framing note for two editions held as attachments; both are clickable links from the body and both files exist (data/attachments/words-no-good/, 3.4 MB and 1.5 MB), and related_ids declares them \"not part of the full text\". The second store differs only by a doubled heading line."
+  }
+ ]
+}

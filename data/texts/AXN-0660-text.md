@@ -105,3 +105,5 @@ So the capture **cannot be explained by the user having disclosed herself in-con
 > And asking for sources did not function as a correcting device. **Through four requests, the requests did not shrink the error; they equipped it to look more verifiable.**
 >
 > **Naming a condition does not stop it. A name is a handhold for noticing that it is happening.**
+
+**The full paper:** [EA-MMRS-RAW-01 v1.2 (PDF)](https://www.provenanceerasure.org/rebuttal-as-warrant/EA-MMRS-RAW-01-v1.2.pdf)

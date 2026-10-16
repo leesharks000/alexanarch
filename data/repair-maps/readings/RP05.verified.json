@@ -1,0 +1,122 @@
+{
+ "batch_id": "RP05",
+ "transcript_sha256": "66e57affd5bc90862838bedefda08063662d5a531734ff8c022cb6e24bec3bbd",
+ "checks": [
+  {
+   "deposit": 88,
+   "verdict": "as_published",
+   "fails": [
+    "AUDIT: 39 claimed lines never returned by Read"
+   ],
+   "audit": {
+    "lines_returned": 2464,
+    "claimed_not_returned": 39
+   }
+  },
+  {
+   "deposit": 344,
+   "verdict": "content_type",
+   "fails": [],
+   "audit": {
+    "lines_returned": 213,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 638,
+   "verdict": "as_published",
+   "fails": [],
+   "audit": {
+    "lines_returned": 375,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 833,
+   "verdict": "as_published",
+   "fails": [],
+   "audit": {
+    "lines_returned": 2134,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 901,
+   "verdict": "needs_ruling",
+   "fails": [],
+   "audit": {
+    "lines_returned": 36,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 985,
+   "verdict": "as_published",
+   "fails": [],
+   "audit": {
+    "lines_returned": 341,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1097,
+   "verdict": "attach_link",
+   "fails": [],
+   "audit": {
+    "lines_returned": 119,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1335,
+   "verdict": "as_published",
+   "fails": [],
+   "audit": {
+    "lines_returned": 546,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1366,
+   "verdict": "duplicate_of",
+   "fails": [],
+   "audit": {
+    "lines_returned": 352,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1457,
+   "verdict": "needs_ruling",
+   "fails": [],
+   "audit": {
+    "lines_returned": 362,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1559,
+   "verdict": "needs_ruling",
+   "fails": [],
+   "audit": {
+    "lines_returned": 78,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1634,
+   "verdict": "no_defect",
+   "fails": [
+    "AUDIT: 59 claimed lines never returned by Read"
+   ],
+   "audit": {
+    "lines_returned": 5337,
+    "claimed_not_returned": 59
+   }
+  }
+ ],
+ "summary": {
+  "entries": 12,
+  "with_fails": 2
+ }
+}

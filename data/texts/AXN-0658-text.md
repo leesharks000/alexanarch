@@ -34,9 +34,9 @@ keywords:
 
 | seat | corpus | lines | language | licence |
 |---|---|---|---|---|
-| 05/01 | **browning** | 4,598 | English | Public domain (author d. 1889); Project Gutenb |
-| 05/02 | **pound** | 7,967 | English | Public domain in the United States (all volume |
-| 05/03 | **pessoa** | 20,486 | Portuguese | Public domain (author d. 1935); Wikisource tra |
+| 05/01 | **browning** | 4,598 | English | Public domain (author d. 1889); Project Gutenberg packaging under the PG licence |
+| 05/02 | **pound** | 7,967 | English | Public domain in the United States (all volumes published before 1930); Project Gutenberg packaging under the PG licence |
+| 05/03 | **pessoa** | 20,486 | Portuguese | Public domain (author d. 1935); Wikisource transcription under CC BY-SA |
 
 
 Data is published as a sidecar index at [api/corpora.json](https://www.alexanarch.org/api/corpora.json) with per-seat links; each seat carries its own `source.json` and SHA-256 `MANIFEST.sha256` at `alexanarch.org/data/corpora/<corpus>/`, and a rendered reading room at `traininglayerliterature.org/originals/<corpus>/`. The per-deposit external-metadata sidecar for this record is at `/data/external-metadata/AXN-0658.json`.

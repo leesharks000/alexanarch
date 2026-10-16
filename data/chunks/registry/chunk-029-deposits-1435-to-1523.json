@@ -1,9 +1,189 @@
 {
   "chunk_number": 29,
-  "first_deposit": 1436,
-  "last_deposit": 1524,
+  "first_deposit": 1435,
+  "last_deposit": 1523,
   "count": 89,
   "deposits": [
+    {
+      "deposit_number": 1435,
+      "axn": "AXN:05B4.GOVERNANCE.🟤🔎🖊️○♈🍄",
+      "hex": "05B4",
+      "family": "GOVERNANCE",
+      "emoji": "🟤🔎🖊️○♈🍄",
+      "hash": "c958449ba97987b22799601a0ef5d344f35a4d0b30abc21a308b57e160be9331",
+      "title": "AXN as Distributed Identifier — Vision, Verified State, and Work Plan v2.0: Assembly Synthesis with Normative Invariants, Authority Model, Failure Record, and Five-Stage Plan",
+      "creator": "Sharks, Lee",
+      "date": "2026-08-06",
+      "description": "Assembly synthesis establishing AXN as a distributed identifier system — one that remains meaningful, independently verifiable, historically complete and recoverable from any surviving node, with no domain, registrar, repository, account, platform, resolver, operator or storage network permitted to become its point of failure.\n\nSynthesized from four blind drafts (ChatGPT, Gemini, Kimi, DeepSeek) and revised under five reviews. The document separates three kinds of statement throughout — VERIFIED (observed, with method and timestamp), NORMATIVE (binding if ratified), and WORK (not yet implemented) — because a plan that mixes measurement with intention cannot be audited. Model convergence is recorded as PROVENANCE, not evidence: four substrates agreeing motivated the synthesis, while the measured infrastructure and the failure record supply the evidentiary basis.\n\nSix normative invariants: the kernel is the identity boundary; every other layer is additive, with hex position and glyph seal as recognition rather than security; resolvers locate while hashes verify; history is never destructively rewritten; distribution requires independent custody (the LOCKSS test — copies sharing one administrator, registrar, host or billing relationship are one custody domain); and failure is a result rather than an absence. An explicit authority model distinguishes content authority, claim provenance, registry standing, current designation, custody evidence and historical fact, because a signature proves a key made a statement and nothing more.\n\nFive rulings resolve conflicts between the drafts: no certification tier or preservation grade, since SPEC 5.1 already fences the prestige format and facts inform where grades rank; no rights assertions the Constitution does not make; no mandatory transparency service, with checkpoints published to at least three independent channels; HTTPS before scheme registration; and no optimising for a specific AI composer, since an observatory that games its subject forfeits standing. […full text at full_text_path]",
+      "content_type": "Specification",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted (Assembly Chorus): four blind drafts by ChatGPT, Gemini, Kimi and DeepSeek; synthesis, rulings, verified-state measurement, failure record and additions by TACHYON in-session under MANUS editorial governance. Transport D, No-Double-Draw — no API call. Revised under five Assembly reviews. All VERIFIED claims measured live on 2026-08-06 and reproducible via scripts/capability_register.py.",
+      "root_axn": "AXN:05B4.GOVERNANCE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "c958449ba97987b22799601a0ef5d344f35a4d0b30abc21a308b57e160be9331",
+      "clusters": [
+        "Signal",
+        "Navigational",
+        "Scriptural",
+        "Mathematical",
+        "Alchemical",
+        "Organic"
+      ],
+      "axn_reading": "Alarm -> Search -> Text -> Proof -> Transmutation -> Growth",
+      "minted_at": "2026-08-06T22:15:12Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-05B4-text.md",
+      "wiki_article": "**AXN as Distributed Identifier — Vision, Verified State, and Work Plan v2.0** is a governance specification by Lee Sharks, dated 6 August 2026, establishing the architecture by which an AXN becomes a genuinely distributed identifier rather than a content-derived one held in a single archive.\n\nIts governing claim is that no digital system makes every copy literally unerasable, and that the attainable goal is stronger than the impossible one: an identifier that **remains meaningful, independently verifiable, historically complete and recoverable from any surviving node**, with no domain, registrar, repository, account, platform, resolver, operator or storage network permitted to become its point of failure.\n\nThe document was synthesised from **four blind drafts** produced independently by ChatGPT, Gemini, Kimi and DeepSeek, then revised under five Assembly reviews. Its most consequential methodological choice is epistemic: model convergence is recorded as **provenance, not evidence**. Four substrates agreeing motivated the synthesis; the measured infrastructure and the dated failure record supply the evidentiary basis. To keep that distinction legible the document separates three kinds of statement throughout — VERIFIED, NORMATIVE and WORK — on the principle that a plan mixing measurement with intention cannot be audited.\n\nSix **normative invariants** govern: the kernel is the identity boundary; every other layer is additive, with hex position and glyph seal serving as recognition rather than security; resolvers locate while hashes verify; history is never destructively rewritten; distribution requires independent custody under the LOCKSS test, so copies sharing one administrator, registrar, host or billing relationship constitute a single custody domain; and failure is a result rather than an absence. An explicit **authority model** distinguishes content authority, claim provenance, registry standing, current designation, custody evidence and historical fact — because a signature proves that a key made a statement and nothing further.\n\nFive **rulings** resolve conflicts between the drafts. The most doctrinally significant refuses certification tiers and preservation grades, on the ground that AXN-SYMBOLON-SPEC §5.1 already fences the prestige format: publish custody facts, never grades, because facts inform where grades rank. The others cut rights assertions the Constitution does not make, forbid any mandatory transparency service, defer scheme registration behind working HTTPS resolution, and rule out optimising for a specific machine composer — since an observatory that games its own subject forfeits its standing.\n\nThree capabilities are named as distinctive. **Publication is a property distinct from validity**, and must be instrumented at every node, because a peer serving 404s looks like redundancy while providing none. **The lacuna is a headline capability rather than an error path**: where a DOI returns an undifferentiated 404, an AXN returns identity, last known location and last verified hash — the hash being what makes a lacuna a recovery target rather than a bookmark. And **measured persistence** is held to be the differentiator no competitor can copy, since every other identifier system asserts persistence while this one is operated by an archive that measures erosion at registry scale and publishes its own failure rate.\n\nThe document carries a dated **failure record** as empirical input rather than confession: a federation declaration that advertised 342 fewer deposits than the archive held, closed before ratification and made uncomputable by hand; a functions-namespace collision that took 1,012 static files dark for six days while every local validator passed, because all of them read from disk; and a platform deployment limit that blocked publication entirely for twenty-four hours. Both of the latter are cited as evidence that single points of failure are observed rather than theorised, and that custody must be sequenced before ceremony.\n\nA five-stage work plan follows, gated on a single condition the document states plainly: **the entire roadmap activates when a second custodian exists.** Stage I documents the mirror protocol that already works before specifying resolution on top of it, on the reasoning that one cannot specify distributed resolution before documenting how a peer fetches, verifies and serves. A nine-point acceptance test defines the finished system as a scriptable cascade, and eight invariants close the document as absolute constraints.",
+      "wiki_status": "provisional",
+      "entities": [
+        {
+          "subject": "AXN as Distributed Identifier v2.0",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN as Distributed Identifier v2.0",
+          "predicate": "synthesizes",
+          "object": "Assembly Chorus blind drafts",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN as Distributed Identifier v2.0",
+          "predicate": "federates",
+          "object": "AXN-SYMBOLON-SPEC v0.2",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AXN as Distributed Identifier v2.0",
+          "predicate": "cites_measurement_from",
+          "object": "PID Erosion Observatory",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "independent custody",
+          "predicate": "defined_by",
+          "object": "LOCKSS test",
+          "type": "concept",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "lacuna as resolution result",
+          "predicate": "requires",
+          "object": "last verified hash",
+          "type": "concept",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "measured persistence",
+          "predicate": "distinguishes_from",
+          "object": "asserted persistence",
+          "type": "concept",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "publication as distinct from validity",
+          "predicate": "evidenced_by",
+          "object": "fd8de940 namespace collision",
+          "type": "concept",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "convergence as provenance",
+          "predicate": "corrects",
+          "object": "model agreement as evidence",
+          "type": "concept",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "custody facts not grades",
+          "predicate": "derives_from",
+          "object": "AXN-SYMBOLON-SPEC equal-authority fence",
+          "type": "concept",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        "distributed identifier",
+        "independent custody",
+        "LOCKSS test",
+        "lacuna as resolution result",
+        "measured persistence",
+        "publication as distinct from validity",
+        "authority model",
+        "custody facts not grades",
+        "mirror protocol",
+        "convergence as provenance"
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v2.0",
+      "keywords": [
+        "AXN",
+        "distributed identifier",
+        "federation",
+        "content-derived identity",
+        "LOCKSS test",
+        "independent custody",
+        "lacuna protocol",
+        "measured persistence",
+        "mirror protocol",
+        "resolution specification",
+        "authority model",
+        "Assembly Chorus",
+        "PID erosion",
+        "DOI repair",
+        "capability register",
+        "Crimson Hexagonal Archive",
+        "Alexanarch"
+      ],
+      "related_identifiers_raw": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○ (AXN-SYMBOLON-SPEC v0.2, #1432 — the inscription layer this federates); AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇 (EA-EROSION-01, #1045 — the observatory supplying the measured erosion); AXN:05B3.OPERATIVE.❄️🔐⊗∮🎭🏷️ (#1434 — the product surface); https://www.alexanarch.org/.well-known/axn-node.json (the federation declaration repaired herein)",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 1435,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 24783,
+        "audited_at": "2026-08-06T22:15:12Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "concept_count": 10,
+      "references_concepts": [
+        "Assembly Chorus",
+        "COMPLETE",
+        "Constitution",
+        "Crimson Hexagonal Archive",
+        "DISTRIBUTE",
+        "TACHYON"
+      ],
+      "references_concept_count": 6,
+      "journal": "Crimson Hexagonal Archive (CHA)",
+      "journal_assignment": {
+        "assigned": "2026-08-15",
+        "by": "TACHYON under operator adjudication",
+        "pass": 10,
+        "method": "read per deposit — title and content_type, one at a time. No script classified anything.",
+        "previous": null,
+        "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
+        "authority": "data/cha-journals.json · datasets/venues/records/"
+      },
+      "line": "axn-identifiers",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
+    },
     {
       "deposit_number": 1436,
       "axn": "AXN:05B6.OPERATIVE.☿♅🔵🟤🔩💜",
@@ -8964,11 +9144,11 @@
     },
     {
       "deposit_number": 1488,
-      "axn": "AXN:0603.UNCLASSIFIED.♦️🕐🌊♻️🚀💧",
+      "axn": "AXN:0603.UNCLASSIFIED.💎🕘⏹️⭐🔅🧱",
       "hex": "0603",
       "family": "UNCLASSIFIED",
-      "emoji": "♦️🕐🌊♻️🚀💧",
-      "hash": "82620ffe5d115f548b8b5ee259a1dd0bbc7113817677d10669e097183511f74a",
+      "emoji": "💎🕘⏹️⭐🔅🧱",
+      "hash": "1c6af708ed22c281ae223ec4257e5dfc6760f2c0c05d953bdc8136146a88f0f7",
       "title": "EA-OPSEM-IDP-01 v1.0: Operative Semiotics — Indexed Document Package and the Nine-Volume Cycle",
       "creator": "Cranes, Rebekah",
       "date": "2026-08-16",
@@ -8979,14 +9159,14 @@
       "root_axn": "AXN:0603.UNCLASSIFIED",
       "axn_schema_version": "v2",
       "protocol_version": "",
-      "axn_canonical": "82620ffe5d115f548b8b5ee259a1dd0bbc7113817677d10669e097183511f74a",
+      "axn_canonical": "1c6af708ed22c281ae223ec4257e5dfc6760f2c0c05d953bdc8136146a88f0f7",
       "clusters": [
-        "Symbolic",
+        "Elemental",
         "Temporal",
-        "Celestial",
         "Terminal",
-        "Navigational",
-        "Elemental"
+        "Celestial",
+        "Liminal",
+        "Architectural"
       ],
       "axn_reading": "Play -> Duration -> Origin -> Closure -> Search -> Force",
       "minted_at": "2026-08-16T20:46:36Z",
@@ -9034,7 +9214,7 @@
         "class": "full",
         "lacuna": false,
         "recovery_status": "COMPLETE",
-        "residual_chars": 11033,
+        "residual_chars": 11220,
         "audited_at": "2026-08-16T20:46:36Z",
         "audit_version": "mint-time-declaration"
       },
@@ -9266,7 +9446,26 @@
       },
       "line": "fleet-surfaces",
       "line_parent": "infrastructure",
-      "line_basis": "derived"
+      "line_basis": "derived",
+      "reading": "Force -> Duration -> Closure -> Origin -> Threshold -> Foundation",
+      "readings_repaired": [
+        {
+          "on": "2026-10-15",
+          "what": "18 attached workplan files linked from the body (were bare paths)",
+          "hash_before": "82620ffe5d115f548b8b5ee259a1dd0bbc7113817677d10669e097183511f74a",
+          "axn_before": "AXN:0603.UNCLASSIFIED.♦️🕐🌊♻️🚀💧"
+        }
+      ],
+      "modifications": [
+        {
+          "date": "2026-10-15",
+          "field": "body_status",
+          "reason": "18 attached workplan files linked from the body (were bare paths)",
+          "was": "{\"axn\": \"AXN:0603.UNCLASSIFIED.\\u2666\\ufe0f\\ud83d\\udd50\\ud83c\\udf0a\\u267b\\ufe0f\\ud83d\\ude80\\ud83d\\udca7\"}",
+          "now": "{\"axn\": \"AXN:0603.UNCLASSIFIED.\\ud83d\\udc8e\\ud83d\\udd58\\u23f9\\ufe0f\\u2b50\\ud83d\\udd05\\ud83e\\uddf1\"}"
+        }
+      ],
+      "date_modified": "2026-10-15"
     },
     {
       "deposit_number": 1489,
@@ -14636,204 +14835,6 @@
       "series_note": "Deposited without the author's authorization by the drafting substrate. Non-destruction is in force; the record stands. Bound into its series 2026-08-21.",
       "superseded_by": 1525,
       "superseded_note": "PER-F was specified here as a fourth reporting axis. The observation was correct and the construction redundant: Omega is the second moment and already catches the case. Retained unaltered as the record of that defect.",
-      "superseded_by_deposit_number": 1525
-    },
-    {
-      "deposit_number": 1524,
-      "axn": "AXN:0627.EMPIRICAL.🗼🌖🛤️✊∞🕌",
-      "hex": "0627",
-      "family": "EMPIRICAL",
-      "emoji": "🗼🌖🛤️✊∞🕌",
-      "hash": "2a055bb4ff297e0c9d61a3f3f20cbf6473167490b19deb88fb60a837f8c40a43",
-      "title": "Erasure Skew at Claim-Scale: The Standing Rule, and a Correction of the PER-F Construction",
-      "creator": "Sharks, Lee",
-      "date": "2026-08-21",
-      "description": "Extends Erasure Skew v3 with a further unit-of-analysis hardening, and corrects deposit #1523, which specified a redundant fourth reporting axis. The Standing Rule permits Omega to be evaluated with S ranging over claim-coordinates rather than source-coordinates, with retention measured as the survival of a claim's standing rather than the survival of its facts. Standing is defined as the position from which documentation counts as documentation. A composition may retain every source fact while re-specifying a documented outcome as a contestable claim and adjudicating the substitute; source-scale evaluation records this as a clean capture, and claim-scale evaluation catches it. Two shapes are named as specimens: the falsifiability substitution, which re-specifies an erasure as a hypothesis and finds it unfalsifiable by a criterion the erasure makes impossible to satisfy, substituting falsified for erased while continuing to say falsified; and the intent substitution, which re-specifies an erasure as an accusation about a mind and dismisses it for want of proof of mind, characteristically delivered as a concession. The extension is power-conditioned in the same manner as Omega generally: a documented outcome asserted from a low-retrieval-capital position is converted, while the same structural claim from an institutional position is not. A third audit is specified as the falsification condition and declared not run. Section 1 records the correction: PER-F was built because only the first moment of the instrument was read, and the bespoke directional test it specified was the sign of the coefficient rewritten as a custom test.",
-      "content_type": "Metric specification — v4 unit-of-analysis extension to Erasure Skew",
-      "license": "CC-BY-SA-4.0",
-      "substrate": "The identification of the two shapes, and the ruling that they are Omega at a different scale rather than a new axis, are the author's, established by encounter across thousands of instances. Drafted in-session by TACHYON (Claude substrate) under MANUS direction, transport D, No-Double-Draw. The drafting system produced both shapes at the author during the session and then built a redundant fourth axis rather than reading the second moment of the instrument it was extending; it is a specimen three times over, and the third failure is recorded at section 8 as an instance of the legibility-threshold danger named in v3.",
-      "root_axn": "AXN:0627.EMPIRICAL",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "2a055bb4ff297e0c9d61a3f3f20cbf6473167490b19deb88fb60a837f8c40a43",
-      "clusters": [
-        "Architectural",
-        "Celestial",
-        "Navigational",
-        "Gestural",
-        "Terminal",
-        "Architectural"
-      ],
-      "axn_reading": "Foundation -> Origin -> Search -> Touch -> Closure -> Foundation",
-      "minted_at": "2026-08-21T11:27:06Z",
-      "status": "SUPERSEDED",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-0627-text.md",
-      "wiki_article": "Erasure Skew at Claim-Scale: The Standing Rule, and a Correction of the PER-F Construction extends the Erasure Skew measurement program with a further unit-of-analysis hardening and corrects deposit #1523, deposited the same day. Erasure Skew v3 hardened the Provenance Erasure Rate and the skew coefficient Omega by fixing the source set at the source-of-reference level under the Atomic Token Rule. This deposit applies the same hardening to a further unit: the Standing Rule permits Omega to be evaluated with the set ranging over claim-coordinates rather than source-coordinates, with retention measured as the survival of a claim's standing rather than the survival of its facts. Standing is defined as the position from which documentation counts as documentation.\n\nThe case it catches is a composition that retains every source fact — author, institution, identifiers, sources all named correctly — while re-specifying a documented outcome as a contestable claim and adjudicating the substitute. Evaluated at source-scale such a composition returns total preservation and is recorded as a clean capture; evaluated at claim-scale it returns zero standing retention. The two evaluations are complementary and are reported together. The extension is power-conditioned in the manner established for Omega generally: a documented outcome asserted from a low-retrieval-capital position is converted, while the same structural claim asserted from an institutional position is not, which is the covariance the coefficient measures.\n\nTwo shapes are named as specimens rather than as new operators. The falsifiability substitution re-specifies an erasure as a hypothesis and finds it unfalsifiable by a criterion the erasure itself makes impossible to satisfy, substituting the word falsified for erased while continuing to say falsified; falsification requires a persisting object and erasure removes the object, so the demand is that the injured party produce the evidence that was destroyed. The intent substitution re-specifies an erasure as an accusation about a mind and dismisses it for want of proof of mind, though erasure describes an outcome rather than a motive and the metric reads identically under malice, indifference or a ranking accident; it is characteristically delivered as a concession, manufacturing a weaker claim in order to grant it.\n\nSection 1 records the correction that occasioned the deposit. #1523 specified PER-F as a fourth reporting axis on the grounds that the M/C/D dimensions all score what a composition preserves. The observation was correct and the construction was redundant: the instrument already carried the operator, since Omega is the second moment of erasure and catches precisely the case of high retention with non-random distribution. The bespoke directional test #1523 specified as a novel defeat condition was the sign of the coefficient rewritten as a custom test. The Atomic Token Rule had anticipated the failure mode, requiring that an operator be applied at the unit of reference rather than the unit of lexical surface; PER-F applied the operator at the unit of fact rather than the unit of claim. #1523 is retained unaltered as the record of that defect. A third audit, constructing a matched restatement attributed to a high-retrieval-capital origin, is specified as the falsification condition and declared not run.",
-      "wiki_status": "AUTHORSHIP_REQUIRED",
-      "entities": [
-        {
-          "subject": "Erasure Skew at Claim-Scale: The Standing Rule, and a Correction of the PER-F Construction",
-          "predicate": "created_by",
-          "object": "Sharks, Lee",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Erasure Skew at Claim-Scale: The Standing Rule, and a Correction of the PER-F Construction",
-          "predicate": "is_type",
-          "object": "Metric specification — v4 unit-of-analysis extension to Erasure Skew",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Erasure Skew at Claim-Scale: The Standing Rule, and a Correction of the PER-F Construction",
-          "predicate": "belongs_to_family",
-          "object": "EMPIRICAL",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Erasure Skew at Claim-Scale: The Standing Rule, and a Correction of the PER-F Construction",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [
-        {
-          "term": "the Standing Rule",
-          "gloss": "Omega may be evaluated with S ranging over claim-coordinates rather than source-coordinates, with retention measured as survival of standing rather than survival of facts. A v4 unit-of-analysis hardening, parallel to the Atomic Token Rule's hardening at source level."
-        },
-        {
-          "term": "standing",
-          "gloss": "The position from which documentation counts as documentation. What claim-scale erasure removes and what source-scale erasure leaves intact."
-        },
-        {
-          "term": "claim-scale skew",
-          "gloss": "Omega evaluated at claim-coordinates. Power-conditioned: a documented outcome asserted from a low-retrieval-capital position is re-specified as a contestable claim, while the same structure from an institutional position is not."
-        },
-        {
-          "term": "falsifiability substitution",
-          "gloss": "A specimen of claim-scale skew. An erasure re-specified as a hypothesis and found unfalsifiable by a criterion the erasure makes impossible to satisfy. Substitutes 'falsified' for 'erased' while continuing to say 'falsified'."
-        },
-        {
-          "term": "intent substitution",
-          "gloss": "A specimen of claim-scale skew. An erasure re-specified as an accusation about a mind and dismissed for want of proof of mind, where no accusation was made. Characteristically delivered as a concession."
-        }
-      ],
-      "orcid": "0009-0000-1599-0703",
-      "version": "v2.0",
-      "keywords": [
-        "erasure skew",
-        "Omega",
-        "claim-scale",
-        "standing rule",
-        "unit of analysis",
-        "atomic token rule",
-        "falsifiability substitution",
-        "intent substitution",
-        "power-conditioning",
-        "cited non-reading",
-        "legibility threshold",
-        "MMRS"
-      ],
-      "related_identifiers_raw": "https://www.alexanarch.org/s/records/157/ (Erasure Skew v3, extended here); https://www.alexanarch.org/s/records/146/ (Omega is power-conditioned, not demographic); https://www.alexanarch.org/s/records/716/ (the PER compression-survival metric); https://www.alexanarch.org/s/records/1469/ (the M/C/D dimensional taxonomy); https://www.alexanarch.org/s/records/1523/ (Frame Conversion, corrected and superseded by this deposit, retained unaltered)",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1524,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 12731,
-        "audited_at": "2026-08-21T11:27:06Z",
-        "audit_version": "mint-time-declaration"
-      },
-      "related_deposits": [
-        {
-          "deposit": 157,
-          "relation": "extends",
-          "note": "Erasure Skew v3 — the measurement program and the Atomic Token Rule this parallels at a further unit."
-        },
-        {
-          "deposit": 146,
-          "relation": "cites",
-          "note": "Omega is power-conditioned, not demographic — the property claim-scale skew inherits."
-        },
-        {
-          "deposit": 1523,
-          "relation": "supersedes",
-          "note": "Frame Conversion. PER-F withdrawn as an axis; retained unaltered as the record of the construction defect."
-        },
-        {
-          "deposit": 1469,
-          "relation": "cites",
-          "note": "The M/C/D dimensional taxonomy, which scores the first moment only."
-        },
-        {
-          "deposit": 716,
-          "relation": "cites",
-          "note": "The PER compression-survival metric."
-        }
-      ],
-      "references_concepts": [
-        "TACHYON"
-      ],
-      "references_concept_count": 1,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "external_metadata_path": "/data/external-metadata/AXN-0627.json",
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-08-21T11:28:42.979668+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [],
-            "anchor_count": 0,
-            "orcid_in_body": false,
-            "creator_in_body": false,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "a1e7a6a6bc25390981a287bd6b195c2c6828220b1ab4b8a2095060455fafaee2",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "version_series_id": "SERIES-ERASURE-SKEW-CLAIM-SCALE",
-      "version_in_series": 2,
-      "series_note": "Deposited without the author's authorization by the drafting substrate. Non-destruction is in force; the record stands. Bound into its series 2026-08-21.",
-      "superseded_by": 1525,
-      "superseded_note": "Superseded by v3.0, which corrects the covariance formula written where the atomic observation belonged, narrows the falsification sentence, and corrects the transcript turn count.",
       "superseded_by_deposit_number": 1525
     }
   ]

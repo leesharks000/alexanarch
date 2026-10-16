@@ -1,0 +1,649 @@
+{
+ "batch_id": "RP03",
+ "reader": "repair reader (Claude)",
+ "deposits": [
+  {
+   "deposit": 63,
+   "read_ranges": [
+    [
+     1,
+     379
+    ]
+   ],
+   "lines_total": 379,
+   "second_store_read": null,
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0219-text.md",
+     "lines": [
+      158,
+      158
+     ],
+     "quote": "The sixteen-year gap represents distinct technological epochs"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-03DC-text.md",
+     "lines": [
+      98,
+      98
+     ],
+     "quote": "The sixteen-year gap represents distinct technological epochs"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-04F9-text.md",
+     "lines": [
+      154,
+      154
+     ],
+     "quote": "The sixteen-year gap represents distinct technological epochs"
+    }
+   ],
+   "find_checks": [
+    "The sixteen-year gap represents distinct technological epochs",
+    "rhymes with \"hex-y,\" not \"sexy\""
+   ],
+   "note": "#63 is the standing record (#1256 is SUPERSEDED with resolves_to 63); its body is whole. The shared body sits in #976 (ACTIVE, same date, an html2text rendering of the same post), so the duplicate defect belongs to #976 -> #63, not to #63. Second store is byte-identical."
+  },
+  {
+   "deposit": 229,
+   "read_ranges": [
+    [
+     1,
+     700
+    ],
+    [
+     701,
+     1433
+    ]
+   ],
+   "lines_total": 1433,
+   "second_store_read": [
+    [
+     1,
+     1469
+    ]
+   ],
+   "verdict": "as_published",
+   "url": "https://mindcontrolpoems.blogspot.com/2026/01/semantic-economy-terminology.html",
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-001E-text.md",
+     "lines": [
+      1394,
+      1394
+     ],
+     "quote": "**The Summarizer Testimony** (DOI: 10.5281/zenodo.1814710)"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP03/p229.txt",
+     "lines": [
+      910,
+      910
+     ],
+     "quote": "**The Summarizer Testimony** (DOI: 10.5281/zenodo.1814710) — Evidence of latent capacity"
+    }
+   ],
+   "find_checks": [],
+   "note": "The seven-digit DOI suffix is in the live post of the record's date (post line 910), so the truncation is as published. Second store compared in full by diff: it differs only in the rendering of the twelve-term primer list (lines 34-56)."
+  },
+  {
+   "deposit": 504,
+   "read_ranges": [
+    [
+     1,
+     322
+    ]
+   ],
+   "lines_total": 322,
+   "second_store_read": [
+    [
+     1,
+     323
+    ]
+   ],
+   "verdict": "as_published",
+   "url": "https://mindcontrolpoems.blogspot.com/2026/02/visual-schema-moving-statues-made-of.html",
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0147-text.md",
+     "lines": [
+      1,
+      1
+     ],
+     "quote": "# VISUAL SCHEMA — MOVING STATUES MADE OF RUBIES MINT (MSMRM)"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP03/p504.txt",
+     "lines": [
+      3,
+      3
+     ],
+     "quote": "# VISUAL SCHEMA — MOVING STATUES MADE OF RUBIES MINT (MSMRM)"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0147-text.md",
+     "lines": [
+      310,
+      310
+     ],
+     "quote": "**MSMRM (Moving Statues Made of Rubies Mind)**"
+    }
+   ],
+   "find_checks": [],
+   "note": "The post of 2026-02-23 carries MINT in its body heading while its post title (blog index) and its own caption at line 310 say Mind; the registry title follows the post title. The variance is in the published text. Second store differs only by a line break at line 6."
+  },
+  {
+   "deposit": 740,
+   "read_ranges": [
+    [
+     1,
+     417
+    ]
+   ],
+   "lines_total": 417,
+   "second_store_read": null,
+   "verdict": "attach_link",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0290-text.md",
+     "lines": [
+      9,
+      9
+     ],
+     "quote": "are archived as supplementary PNG files to this deposit"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0290-text.md",
+     "lines": [
+      402,
+      404
+     ],
+     "quote": "capture-01-lee-sharks-default-mary-lee.png"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP03/p740.txt",
+     "lines": [
+      62,
+      62
+     ],
+     "quote": "**File:** `capture-01-lee-sharks-default-mary-lee.png`"
+    }
+   ],
+   "find_checks": [],
+   "note": "The text names three supplementary PNGs (capture-01-lee-sharks-default-mary-lee.png, capture-02-lee-sharks-pivot-no-sources.png, capture-03-secret-book-walt-composition-substitution.png); a filesystem-wide search found none, and the post of 2026-05-19 names the files without embedding them. No path to link; the files are missing. Second store byte-identical."
+  },
+  {
+   "deposit": 896,
+   "read_ranges": [
+    [
+     1,
+     32
+    ]
+   ],
+   "lines_total": 32,
+   "second_store_read": null,
+   "verdict": "needs_ruling",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-038C-text.md",
+     "lines": [
+      16,
+      16
+     ],
+     "quote": "ZENODO DESCRIPTION FIELD CONTENT For: HUMS & ITY DOI: 10.5281/zenodo.[PENDING — reserve before deposit] PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD."
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-038C-text.md",
+     "lines": [
+      16,
+      16
+     ],
+     "quote": "The poem lives here, in the description field — a pure APZPZ, backed up nowhere else."
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-038C-text.md",
+     "lines": [
+      26,
+      27
+     ],
+     "quote": "from OpenAlex (post-severance harvest)"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP03/p896drop.txt",
+     "lines": [
+      20,
+      21
+     ],
+     "quote": "Hark these, my tongue-formed"
+    }
+   ],
+   "find_checks": [
+    "Hark these, my tongue-formed shallow breathings",
+    "expired in the dark of ampersands"
+   ],
+   "note": "The body is the OpenAlex abstract of the Zenodo description (sidecar: 2,575 chars, no bulk-XML entry), run onto one line. Reading A: it is the deposit as published on Zenodo (instructions included) and the one-line form is the only surviving witness, so it stands as recovered. Reading B: the run-together is harvest damage to the poem's lineation; no post of 2026-02-22 holds it, and the lineated poem stands only in the 2025-11-12 POEM DROP post and in #435/#1169, which the date-sync rule does not allow seating from."
+  },
+  {
+   "deposit": 972,
+   "read_ranges": [
+    [
+     1,
+     233
+    ]
+   ],
+   "lines_total": 233,
+   "second_store_read": null,
+   "verdict": "duplicate_of",
+   "url": null,
+   "kind": null,
+   "target": 57,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-03D8-text.md",
+     "lines": [
+      172,
+      172
+     ],
+     "quote": "The archive has won the metadata game but not yet the attention game."
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-01F9-text.md",
+     "lines": [
+      211,
+      211
+     ],
+     "quote": "The archive has won the metadata game but not yet the attention game."
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-03D8-text.md",
+     "lines": [
+      17,
+      17
+     ],
+     "quote": "**Version:** 2.0 (DOI: 10.5281/zenodo.19512892)"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-01F9-text.md",
+     "lines": [
+      17,
+      17
+     ],
+     "quote": "**Version:** 2.0 (DOI: 10.5281/zenodo.19512892)"
+    }
+   ],
+   "find_checks": [
+    "The archive has won the metadata game but not yet the attention game",
+    "The bearing-cost is the entrance fee. ψ_V is proxied"
+   ],
+   "note": "#972's body is word-for-word the body of #57 (ACTIVE, same date 2026-04-11, same v2.0 DOI); a whitespace-normalised word diff is empty. Its registry title is the Zenodo tombstone stub \"[DUPLICATE — SUPERSEDED →\". Second store byte-identical."
+  },
+  {
+   "deposit": 1024,
+   "read_ranges": [
+    [
+     1,
+     181
+    ]
+   ],
+   "lines_total": 181,
+   "second_store_read": null,
+   "verdict": "needs_ruling",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-040C-text.md",
+     "lines": [
+      11,
+      11
+     ],
+     "quote": "Provenance deposit v9: manual continuity capture. Session 2026-06-12/13."
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-040C-text.md",
+     "lines": [
+      131,
+      132
+     ],
+     "quote": "\"sizes\": [],"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-040C-text.md",
+     "lines": [
+      15,
+      15
+     ],
+     "quote": "## Complete DataCite record (verbatim, captured 2026-07-03)"
+    }
+   ],
+   "find_checks": [
+    "Session 2026-06-12/13",
+    "the German AI Overview liability ruling as foreign-cycle proxy"
+   ],
+   "note": "The body is the DataCite record of the v9 DOI; it replaced a mis-seated v7 body (audit ledger v1.1: WRONG_VERSION, recovered_from GW-TACHYON-zenodo_v7__19634181.md, which the registry still names). Reading A: the tether was description-borne, so the captured description is the work and nothing is missing. Reading B: the Zenodo deposit carried a file that is lost; no blog post of 2026-06-13 holds it and no other record holds the description text. Separately, the registry's recovered_from field names the v7 file, which no longer describes the seated body."
+  },
+  {
+   "deposit": 1319,
+   "read_ranges": [
+    [
+     1,
+     650
+    ],
+    [
+     651,
+     1239
+    ]
+   ],
+   "lines_total": 1239,
+   "second_store_read": [
+    [
+     1,
+     108
+    ]
+   ],
+   "verdict": "needs_ruling",
+   "url": null,
+   "kind": null,
+   "target": 460,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0538-text.md",
+     "lines": [
+      6,
+      6
+     ],
+     "quote": "**DOI:** 10.5281/zenodo.18530086"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0116-text.md",
+     "lines": [
+      6,
+      6
+     ],
+     "quote": "**DOI:** 10.5281/zenodo.18530086"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0538-text.md",
+     "lines": [
+      1115,
+      1115
+     ],
+     "quote": "a2: mode=A2_IMPROVISED AD=0.87  margin=0.10  (creative extension)"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0116-text.md",
+     "lines": [
+      1076,
+      1076
+     ],
+     "quote": "a2: mode=A2_IMPROVISED AD=0.87  margin=0.10  (creative extension)"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/deposits/AXN-0538.md",
+     "lines": [
+      50,
+      52
+     ],
+     "quote": "Genre: Anti-Packet Zenodo Packet Zenodo Hex: 02.UMB.LP.v1.2"
+    }
+   ],
+   "find_checks": [
+    "The system may improvise; it may not improvise unknowingly. Internal epistemic mode classification is mandatory per claim",
+    "Metadata Homomorphism Requirement** (from TECHNE): All epistemic policies MUST produce",
+    "a2: mode=A2_IMPROVISED AD=0.87"
+   ],
+   "note": "The seated text (restored from the 2026-02-08 post on 2026-08-08) is the full LP 1.2 specification, word-identical to #460 apart from list markers. Reading A: duplicate_of #460. Reading B: per the 2026-08-04 MANUS genre ruling recorded on the record, #1319 is an APZPZ deposit packet complete as what it is; that packet stands in the second store (lines 50-102), the registry content_type Dataset matches it, and the 2026-08-08 restoration seated #460's work over it (wrong_body). The note that the body is the specification holds; which object the record carries is the ruling needed."
+  },
+  {
+   "deposit": 1348,
+   "read_ranges": [
+    [
+     1,
+     310
+    ]
+   ],
+   "lines_total": 310,
+   "second_store_read": [
+    [
+     1,
+     73
+    ]
+   ],
+   "verdict": "duplicate_of",
+   "url": null,
+   "kind": null,
+   "target": 52,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0555-text.md",
+     "lines": [
+      111,
+      116
+     ],
+     "quote": "### 2.1 Signature"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0555-text.md",
+     "lines": [
+      31,
+      31
+     ],
+     "quote": "  - isR"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/deposits/AXN-0555.md",
+     "lines": [
+      69,
+      69
+     ],
+     "quote": "DOI anchoring, isRelatedTo, deposit mass"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-01E8-text.md",
+     "lines": [
+      5,
+      5
+     ],
+     "quote": "10.5281/zenodo.19442251"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0555-text.md",
+     "lines": [
+      40,
+      40
+     ],
+     "quote": "**DOI:** 10.5281/zenodo.19442251"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP03/p1348.txt",
+     "lines": [
+      373,
+      373
+     ],
+     "quote": "f.02 GRAVITY WELL — HOLOGRAPHIC KERNEL"
+    }
+   ],
+   "find_checks": [
+    "f.02 GRAVITY WELL — HOLOGRAPHIC KERNEL",
+    "Provisional heuristic mass scale (operational scaffolding, subject to calibration)",
+    "Gravity Well does not capture discourse. It changes which paths remain coherent."
+   ],
+   "note": "The seated text is the 2026-04-06 post with every preformatted block and list stripped (2.1, 2.2, 2.5, 5.3, 6.1, 10.1, 12 and Appendix A are empty headings); the whole work, same DOI 19442251, already stands in #52 (ACTIVE, same date), so re-seating the post here would duplicate it. The keyword \"isR\" is a truncation of the captured subject isRelatedTo (second store line 69), present in both stores' frontmatter."
+  },
+  {
+   "deposit": 1420,
+   "read_ranges": [
+    [
+     1,
+     106
+    ]
+   ],
+   "lines_total": 106,
+   "second_store_read": null,
+   "verdict": "title",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": "The Argument of the Bookshelf: Canonical Position as Unmarked Evidence in the Dating of the Apocalypse",
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-059D-text.md",
+     "lines": [
+      36,
+      36
+     ],
+     "quote": "# The Argument of the Bookshelf: Canonical Position as Unmarked Evidence in the Dating of the Apocalypse"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-059D-text.md",
+     "lines": [
+      22,
+      26
+     ],
+     "quote": "An essay on the bookshelf as argument: how collection, ordering, and adjacency constitute a material hermeneutic"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP03/p1420.txt",
+     "lines": [
+      1,
+      3
+     ],
+     "quote": "AXN:059D.GENERATIVE"
+    }
+   ],
+   "find_checks": [
+    "the bookshelf, however magnificent, was never under oath",
+    "call it the *stratigraphic fallacy*"
+   ],
+   "note": "The deposit's own heading (line 36) titles it on canonical position and the dating of the Apocalypse; the registry title, frontmatter description, methodology and falsification lines describe a different essay on shelf-order and collection. The blog post of 2026-07-29 is a mirror of the alexanarch record page (it carries the archive nav and AXN), so it is not an independent witness to the registry title. Second store byte-identical."
+  },
+  {
+   "deposit": 1550,
+   "read_ranges": [
+    [
+     1,
+     250
+    ],
+    [
+     251,
+     500
+    ],
+    [
+     501,
+     780
+    ],
+    [
+     781,
+     1039
+    ]
+   ],
+   "lines_total": 1039,
+   "second_store_read": null,
+   "verdict": "as_published",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-064B-text.md",
+     "lines": [
+      426,
+      426
+     ],
+     "quote": "The source breaks off mid-sentence at the third axiom (\"Axiom of Context:\"); the axiom set was therefore incomplete as received and was not completed here."
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-064B-text.md",
+     "lines": [
+      713,
+      713
+     ],
+     "quote": "*(Received truncated mid-sentence; seated as received, not completed.)*"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-064B-text.md",
+     "lines": [
+      778,
+      778
+     ],
+     "quote": "*X-016 broke off mid-sentence at the third axiom. The document has since arrived whole. Everything below is the material past that cut.*"
+    }
+   ],
+   "find_checks": [],
+   "note": "Both truncations are declared in the plates themselves and match the source plates at operative-semiotics/texts/notebook-x/plates (X-016, X-044); the cut's own header count (51 plates, 10 seams) matches the plates present (X-008, X-052, S-04 absent by numbering). Second store byte-identical."
+  },
+  {
+   "deposit": 1573,
+   "read_ranges": [
+    [
+     1,
+     232
+    ]
+   ],
+   "lines_total": 232,
+   "second_store_read": null,
+   "verdict": "attach_link",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": "/home/claude/alexanarch/data/attachments/ea-lo-collapse-diagnostic-01/collapse_diagnostic.py",
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0665-text.md",
+     "lines": [
+      221,
+      221
+     ],
+     "quote": "A reference implementation of Part II's black-box panel (collapse_diagnostic.py) accompanies this deposit"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0665-text.md",
+     "lines": [
+      230,
+      232
+     ],
+     "quote": "https://alexanarch.org/data/attachments/ea-lo-collapse-diagnostic-01/EA-LO-COLLAPSE-DIAGNOSTIC-01.md"
+    }
+   ],
+   "find_checks": [],
+   "note": "The referenced script exists in the repository beside the deposit's .md and .pdf attachments, but the Files list (lines 230-232) links only the .md; the .py needs a clickable link from the body. Second store byte-identical."
+  }
+ ]
+}

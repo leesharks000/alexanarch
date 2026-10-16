@@ -26,7 +26,7 @@
  ],
  "axn_reading": "Threshold -> Proof -> Play -> Foundation -> Foundation -> Touch",
  "minted_at": "2026-07-19T21:18:50Z",
- "status": "ACTIVE",
+ "status": "SUPERSEDED",
  "status_authorial": "SELF_SERVE_MINTED",
  "full_text_path": "/data/texts/AXN-0555-text.md",
  "wiki_article": "**Gravity Well: Field Specification for Retentive Citational Curvature** is a specification by Lee Sharks, deposited 6 April 2026.\n\nIts opening declaration is an ontological refusal: **Gravity Well is not a room.** It is not a chamber, a vault, or an engine. It is a **field** — a nonlocal semantic curvature that suffuses the entire Hexagon and alters the behaviour of everything within it. The Hexagon is otherwise organised as addressed rooms, so declaring a second kind of object required stating what kind of thing it is before saying anything about what it does.\n\n**Retentive citational curvature** names the effect: citation does not travel in straight lines through a field, and a work's gravitational mass — its density of anchored reference — bends the paths by which other works are reached. The specification is the theoretical statement behind the Gravity Well microservice (#1347) and the MCP protocol surface (#1381), and it gives the TACHYON continuity chain its name.",
@@ -116,7 +116,15 @@
   "source_recovery": "2026-08-04 AUDIT-DIRECTED RECOVERY: audit directive \"Recover and seat the v1.1 specification.\" satisfied — manifestation located at https://mindcontrolpoems.blogspot.com/2026/04/gravity-well-field-specification-ea-gw.html and seated via the newline-preserving converter (identity probe 1.00, 9,150 chars).",
   "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 39 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
   "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself.",
-  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
+  "retired": {
+   "class": "superseded",
+   "resolves_to": 52,
+   "declared": "2026-10-15",
+   "indexable": true,
+   "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; readers \"long as they have provenance\" — data/repair-maps/readings/",
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL."
+  }
  },
  "references_concepts": [
   "ASSEMBLY",
@@ -284,9 +292,16 @@
    "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
    "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5140, \"audited_at\": \"2026-07-19T21:18:50Z\", \"audit_version\": \"mint-time-declaration\", \"class_be",
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5140, \"audited_at\": \"2026-07-19T21:18:50Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "status",
+   "reason": "duplicate of #52 (reading RP03); made a superseded duplicate witness",
+   "was": "{\"status\": \"ACTIVE\", \"superseded_by_deposit_number\": null}",
+   "now": "{\"status\": \"SUPERSEDED\", \"superseded_by_deposit_number\": 52}"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "version_basis": {
   "ruling": "BODY-HEAD GATE: recovered body declares v1.1",
@@ -324,6 +339,9 @@
  "line": "protocol-and-governance",
  "line_parent": "governance",
  "line_basis": "derived",
+ "superseded_by_deposit_number": 52,
+ "duplicate_note": "DUPLICATE (2026-10-15, reading RP03): the record of standing is #52. The seated text is the 2026-04-06 post with every preformatted block and list stripped (2.1, 2.2, 2.5, 5.3, 6.1, 10.1, 12 and Appendix A are empty headings); the whole work, same DOI 19442251, already stands in #52 (ACTIVE, same date), so r",
+ "superseded_reason": "Duplicate witness of the same work: the record of standing is #52.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/1348/",

@@ -1,0 +1,130 @@
+{
+ "batch_id": "RP03",
+ "transcript_sha256": "4cde82e02f12df1b61b18d3d619e6971c6425cfe30974f55c738cfd94c5d46e0",
+ "checks": [
+  {
+   "deposit": 63,
+   "verdict": "no_defect",
+   "fails": [
+    "COVER: lines_total 379 but file has 380",
+    "COVER: 1 of 380 lines not in read_ranges"
+   ],
+   "audit": {
+    "lines_returned": 380,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 229,
+   "verdict": "as_published",
+   "fails": [
+    "COVER: lines_total 1433 but file has 1434",
+    "COVER: 1 of 1434 lines not in read_ranges"
+   ],
+   "audit": {
+    "lines_returned": 1433,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 504,
+   "verdict": "as_published",
+   "fails": [],
+   "audit": {
+    "lines_returned": 322,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 740,
+   "verdict": "attach_link",
+   "fails": [
+    "COVER: lines_total 417 but file has 418",
+    "COVER: 1 of 418 lines not in read_ranges"
+   ],
+   "audit": {
+    "lines_returned": 418,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 896,
+   "verdict": "needs_ruling",
+   "fails": [],
+   "audit": {
+    "lines_returned": 32,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 972,
+   "verdict": "duplicate_of",
+   "fails": [
+    "COVER: lines_total 233 but file has 234",
+    "COVER: 1 of 234 lines not in read_ranges"
+   ],
+   "audit": {
+    "lines_returned": 234,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1024,
+   "verdict": "needs_ruling",
+   "fails": [],
+   "audit": {
+    "lines_returned": 181,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1319,
+   "verdict": "needs_ruling",
+   "fails": [],
+   "audit": {
+    "lines_returned": 1239,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1348,
+   "verdict": "duplicate_of",
+   "fails": [],
+   "audit": {
+    "lines_returned": 310,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1420,
+   "verdict": "title",
+   "fails": [],
+   "audit": {
+    "lines_returned": 106,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1550,
+   "verdict": "as_published",
+   "fails": [],
+   "audit": {
+    "lines_returned": 1039,
+    "claimed_not_returned": 0
+   }
+  },
+  {
+   "deposit": 1573,
+   "verdict": "attach_link",
+   "fails": [],
+   "audit": {
+    "lines_returned": 232,
+    "claimed_not_returned": 0
+   }
+  }
+ ],
+ "summary": {
+  "entries": 12,
+  "with_fails": 4
+ }
+}

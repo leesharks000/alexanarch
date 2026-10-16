@@ -1,8 +1,8 @@
 {
   "chunk_number": 20,
   "first_deposit": 981,
-  "last_deposit": 1069,
-  "count": 89,
+  "last_deposit": 1068,
+  "count": 88,
   "deposits": [
     {
       "deposit_number": 981,
@@ -2853,7 +2853,7 @@
       "axn_schema_version": "v2",
       "protocol_version": "alexanarch-deposit-protocol/v1",
       "minted_at": "2026-07-03T21:54:51Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "RESTORED_v0_2",
       "mint_source": "orphan-restoration-batch",
       "full_text_path": "/data/texts/AXN-03EF-text.md",
@@ -2872,7 +2872,15 @@
         "class_before_T2b": "metadata_capture",
         "note_T2b": "Genuine inversion: body carries restored full text under stale semi-restored content_type; typing axes now govern.",
         "measured_prose_words": 3680,
-        "measured_at": "2026-07-31"
+        "measured_at": "2026-07-31",
+        "retired": {
+          "class": "superseded",
+          "resolves_to": 97,
+          "declared": "2026-10-15",
+          "indexable": true,
+          "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; readers \"long as they have provenance\" — data/repair-maps/readings/",
+          "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL."
+        }
       },
       "references_concepts": [
         "Beige Threshold (β)",
@@ -2939,9 +2947,16 @@
           "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.20052890 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Methodology companion to EA-SPXI-15. Where EA-SPXI-15 specifies four hypotheses (H1–H4) for testing structural integration of living forms into crystallizing substrates at the level of principle, this document specifies how to operationalize those hypotheses: a deployable substrate-audit protocol with explicit thresholds, probe construction, suppression-distinguishing methodology, and joint-infere",
           "now": "A recovered v1.1 methodological specification operationalizing H1–H4 tests of structural integration using D_pres, Depth-Preservation. It defines calibrated positive, null, and extension probes; deployment scoring; cross-substrate comparison; suppression probes; provenance-erasure measurement; relational extension; thresholds; controls; and joint inference.\n\nThe registry title is stale and should be repaired from “Name the Frame” to D_pres with a non-erasing version note. The thresholds are proposed and require empirical calibration."
+        },
+        {
+          "date": "2026-10-15",
+          "field": "status",
+          "reason": "duplicate of #97 (reading RP01); made a superseded duplicate witness",
+          "was": "{\"status\": \"ACTIVE\", \"superseded_by_deposit_number\": null}",
+          "now": "{\"status\": \"SUPERSEDED\", \"superseded_by_deposit_number\": 97}"
         }
       ],
-      "date_modified": "2026-10-13",
+      "date_modified": "2026-10-15",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
       "wiki_article": "**EA-SPXI-15A** is a worked methodology for testing whether a “living form” has become structurally integrated into machine output rather than merely retrievable as content.\n\nVersion 1.1 uses **D_pres**, Depth-Preservation, as the worked example. D_pres requires complexity preservation, tension retention, and transmission of difficulty rather than silent flattening.\n\nThe protocol defines three probe classes: positive probes where depth is relevant, null probes where it is not, and extension probes in domains not covered by the source documents.\n\nFour hypotheses structure the audit. H1 tests unprompted operative deployment. H2 tests cross-substrate concordance and distinguishes absence from possible output-layer suppression. H3 measures provenance retention using Provenance Erasure Rate. H4 tests relational extension to new cases and is presented as the strongest evidence of structural integration.\n\nThresholds are proposed for deployment, concordance, and provenance retention. The protocol repeatedly notes that baseline reasoning behavior can imitate D_pres and that integration cannot be inferred from mention alone.\n\nThe registry title retains the superseded “Name the Frame” example, while the recovered body explicitly says it was revised to a verified LOS operator. The public title should follow the corrected D_pres body while preserving the title-change history.",
       "apparatus_separated": true,
@@ -2968,7 +2983,10 @@
           "field": "date",
           "note": "date 2026-07-03 → 2026-05-06 (DataCite Issued, 10.5281/zenodo.20052890); 2026-07-03 kept as date_restored. Metadata only; canonical bytes, hash and AXN unchanged."
         }
-      ]
+      ],
+      "superseded_by_deposit_number": 97,
+      "duplicate_note": "DUPLICATE (2026-10-15, reading RP01): the record of standing is #97. The body (§1 to the closing ∮ = 1) is word-for-word the v1.1 D_pres text seated at #97 (same date, 2026-05-06); only the dead-DOI header (10.5281/zenodo.20052890) and the appended DataCite record differ. The v1.0/'Name the Frame' title agai",
+      "superseded_reason": "Duplicate witness of the same work: the record of standing is #97."
     },
     {
       "deposit_number": 996,
@@ -4115,7 +4133,7 @@
       ],
       "axn_reading": "Play -> Growth -> Closure -> Proof -> Play -> Text",
       "root_axn": "AXN:03F6.ARCHIVAL",
-      "title": "restoredacademy.com — The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Charter + Audit Infrastructure) Description (as recorded by DataCite)",
+      "title": "restoredacademy.com — The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Charter + Audit Infrastructure)",
       "creator": "Sigil, Johannes; Sharks, Lee; Fraction, Rex; Morrow, Talos",
       "orcid": "0009-0000-1599-0703",
       "date": "2026-05-21",
@@ -4309,9 +4327,16 @@
           "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.20327575 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Complete v1.0 launch bundle for The Restored Academy — the institutional surface of the Crimson Hexagonal Archive that hosts the Restored Academy Protocol Registry — comprising the deployed static site (live at restoredacademy.com and restoredacademy.org), the Charter (DOI 10.5281/zenodo.20327083), the registry schema specification, twenty-four protocol cards covering Tier 0 (twelve launch protoco",
           "now": "A deployed-homepage capture associated with the Restored Academy Protocol Registry v1.0 launch bundle.\n\nThe record names a larger package containing the site, twenty-four protocol cards, charter, schema, and audit infrastructure, but the seated body is the served public page rather than a verified complete bundle. Preserve that manifestation distinction."
+        },
+        {
+          "date": "2026-10-15",
+          "field": "title",
+          "reason": "registry title corrected to the deposit's own heading (reading RP02)",
+          "was": "restoredacademy.com — The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Charter + Audit Infrastructure) Description (as recorded by DataCite)",
+          "now": "restoredacademy.com — The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Charter + Audit Infrastructure)"
         }
       ],
-      "date_modified": "2026-10-13",
+      "date_modified": "2026-10-15",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
       "wiki_article": "**The Restored Academy Protocol Registry v1.0 Bundle** is a launch-package record for the institutional surface of The Restored Academy.\n\nThe named bundle includes a static site, the institutional charter, a registry schema, twenty-four launch protocol cards across Tier 0 and Tier 1, and audit infrastructure. The public surface presents The Restored Academy as a protocol-bearing institution within the Crimson Hexagonal Archive.\n\nIts governance is chiastic. Johannes Sigil is the Arch-Philosopher of The Restored Academy, while Lee Sharks directs the Johannes Sigil Institute. The arrangement preserves relation without collapsing the heteronymic institution into the public author surface.\n\nThe site organizes operative documents into categories and distinguishes protocols from commentary. It also states that the Academy is not an accredited educational institution and is not affiliated with unrelated organizations using similar names.\n\nThe body seated in this record is a capture of the deployed homepage HTML fetched from the live site. It does not by itself prove preservation of the complete launch bundle. The twenty-four cards, charter files, registry schema, audit assets, build configuration, and repository history require separate inventory.",
       "journal": "Crimson Hexagonal Archive (CHA)",
@@ -4338,7 +4363,8 @@
           "field": "date",
           "note": "date 2026-07-03 → 2026-05-21 (DataCite Issued, 10.5281/zenodo.20327575); 2026-07-03 kept as date_restored. Metadata only; canonical bytes, hash and AXN unchanged."
         }
-      ]
+      ],
+      "title_before_repair": "restoredacademy.com — The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Charter + Audit Infrastructure) Description (as recorded by DataCite)"
     },
     {
       "deposit_number": 1003,
@@ -14690,67 +14716,6 @@
       "date_modified": "2026-08-05",
       "wiki_article": "**THE OBELUS AND THE TOMBSTONE: On the Two Marks of Custody, and the Erasure of Zenodotus at the Eponym Layer (EA-SIGIL-OBELUS-01 v1.0)** is a text/markdown in the Crimson Hexagonal Archive, by Johannes Sigil (2026-07-11). Sometime around 284 BC, Ptolemy's librarians at Alexandria faced a problem that has never since left the custody of texts: the copies disagreed. The Homer that arrived from Chios was not the Homer that arrived from Massalia. Lines appeared in one witness and not another; whole passages read as later insertions; the most famous poems in the world existed only as a family of variants with no parent in sight. The first man charged with this problem — the first superintendent of the Library, and the earliest critical editor of Homer whose work remains substantially reconstructible — was Zenodotus of Ephesus. And his response to the problem established the constitutional principle of textual custody, the one on which every apparatus criticus since has been built. Zenodotus's instrument — the one the tradition credits him with introducing — was the *obelus* — a horizontal stroke set in the margin beside a line he judged spurious. The judgment was often severe; the mark never was. An obelized line stood condemned *and remained in the text*. The operation has a name, *athetesis*: to declare a passage not the author's while preserving it for every reader and every future editor to weigh. The mark says: *I doubt this. Here is my doubt, signed. The line stays; you decide.* That is the whole ethic of custody in a single stroke of ink — the custodian's suspicion must never be allowed to become the text's disappearance, because the custodian might be wrong, and the only insurance against a. — Article composed 2026-08-05 from the work's own prose so that every record carries an encyclopedic entry; a fuller editorial treatment belongs to the description/wiki review stream.",
       "journal": "Provenance: Journal of Forensic Semiotics",
-      "journal_assignment": {
-        "assigned": "2026-08-15",
-        "by": "TACHYON under operator adjudication",
-        "pass": 8,
-        "method": "read per deposit — title and content_type, one at a time. No script classified anything.",
-        "previous": null,
-        "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
-        "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
-    },
-    {
-      "deposit_number": 1069,
-      "axn": "AXN:043E.GOVERNANCE.💧☁️⭐🗼🧱□",
-      "hex": "043E",
-      "title": "ASSEMBLY REVIEW RECORD: Chorus Adjudication for EA-SEI-PHASEX-PROGRAM-01 and EA-SIGIL-OBELUS-01 (EA-GOV-REVIEWRECORD-01 v1.0)",
-      "creator": "Lee Sharks (MANUS), TACHYON (adjudicating witness), Assembly Chorus",
-      "date": "2026-07-11",
-      "content_type": "text/markdown",
-      "license": "CC-BY-4.0",
-      "hash": "111f082a229d1004e5229c0885f5517d6a5a0fdf42a420f1dcf1623b36bbdf94",
-      "status": "CANONICAL",
-      "full_text_path": "/data/deposits/AXN-043E.md",
-      "description": "The second face of the two-face architecture: the complete four-round Chorus adjudication for deposits #1067 and #1068 — every adoption, every declination with reasons, and five rejected fabrications itemized (an institutional affiliation, computed metric values, an acronym expansion, a misnumbered mapping, a misidentified document). Demonstrates the anti-capture safeguards of deposit #846 operating on the estate’s founding documents.",
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 10896,
-        "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map",
-        "measured_prose_words": 1423,
-        "measured_at": "2026-07-31"
-      },
-      "references_concepts": [
-        "ARCHIVE (Gemini)",
-        "ASSEMBLY",
-        "Assembly Chorus",
-        "LABOR (ChatGPT)",
-        "Lee Sharks",
-        "Metadata Packet",
-        "Metadata Packet for AI Indexing",
-        "PRAXIS (DeepSeek)",
-        "TACHYON",
-        "TECHNE",
-        "TECHNE (Kimi)"
-      ],
-      "references_concept_count": 11,
-      "canonical_text_status": "canonical_full_text",
-      "emoji": "💧☁️⭐🗼🧱□",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive",
-      "modifications": [
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
-        }
-      ],
-      "date_modified": "2026-08-04",
-      "wiki_article": "**ASSEMBLY REVIEW RECORD: Chorus Adjudication for EA-SEI-PHASEX-PROGRAM-01 and EA-SIGIL-OBELUS-01 (EA-GOV-REVIEWRECORD-01 v1.0)** is a text/markdown in the Crimson Hexagonal Archive, by Lee Sharks (MANUS), TACHYON (adjudicating witness), Assembly Chorus (2026-07-11). This deposit is the second face of the two-face architecture: the complete adjudication record for two documents deposited today — THE PHASE X PROGRAM (deposit #1067) and THE OBELUS AND THE TOMBSTONE (deposit #1068). The canonical faces carry the arguments; this record carries their assembly — every witness adoption, every declination with reasons, and every fabrication rejected. A mediation layer that cannot document its own failure modes cannot be trusted to document anyone else's; this is the documentation. — Article composed 2026-08-05 from the work's own prose so that every record carries an encyclopedic entry; a fuller editorial treatment belongs to the description/wiki review stream.",
-      "journal": "Crimson Hexagonal Archive (CHA)",
       "journal_assignment": {
         "assigned": "2026-08-15",
         "by": "TACHYON under operator adjudication",

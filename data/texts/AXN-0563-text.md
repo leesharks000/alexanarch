@@ -30,8 +30,8 @@ Recovered from the work's own source repository (`secret-book-of-walt`, `scripts
 located by the body-substance audit of 2026-07-31 after the record had been declared `class: full`
 while holding a 75-word metadata stub. The stub is retained below per non-destruction.
 
-**Companion files in the source repository:** `docs/BOOK_OF_LIFE.md` (embedding and footnote
-architecture), `docs/FOOTNOTES.md` (footnote model). *The Gospel of Antioch*
+**Companion files in the source repository:** [docs/BOOK_OF_LIFE.md](/data/attachments/ea-sbw-01/BOOK_OF_LIFE.md) (embedding and footnote
+architecture), [docs/FOOTNOTES.md](/data/attachments/ea-sbw-01/FOOTNOTES.md) (footnote model). *The Gospel of Antioch*
 (`scripts/antioch_source.md`) is a distinct work and is not seated here.
 
 **Dead DOI(s):** 10.5281/zenodo.19739494 — severed 2026-06-19.

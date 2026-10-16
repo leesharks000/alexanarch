@@ -1,0 +1,524 @@
+{
+ "batch_id": "RP02",
+ "reader": "repair reader (Claude)",
+ "deposits": [
+  {
+   "deposit": 57,
+   "read_ranges": [
+    [
+     1,
+     295
+    ]
+   ],
+   "lines_total": 295,
+   "second_store_read": null,
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-01F9-text.md",
+     "lines": [
+      17,
+      17
+     ],
+     "quote": "**Version:** 2.0 (DOI: 10.5281/zenodo.19512892)"
+    }
+   ],
+   "find_checks": [],
+   "note": "#57 is the standing record of the v2.0 call for papers (blog mirror 2026/04/call-for-papers-distributed-journal-as.html; version line names DOI 19512892). #972 holds the same text but is the self-declared duplicate (registry title was '[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.19512987 (v2.0)] ...', now cut to '[DUPLICATE — SUPERSEDED →'); the duplication lies on #972's side, not #57's. Side observation for #972 (not this batch): its title was truncated by TITLE HYGIENE v2 on 2026-08-05."
+  },
+  {
+   "deposit": 183,
+   "read_ranges": [
+    [
+     1,
+     39
+    ]
+   ],
+   "lines_total": 39,
+   "second_store_read": [
+    [
+     1,
+     51
+    ]
+   ],
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0327-text.md",
+     "lines": [
+      23,
+      23
+     ],
+     "quote": "This record supersedes and replaces DOI 10.5281/zenodo.20628554, which incorrectly attributed Mrozony to Lee Sharks."
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP02/p183.txt",
+     "lines": [
+      23,
+      23
+     ],
+     "quote": "This record supersedes and replaces DOI 10.5281/zenodo.20628554, which incorrectly attributed Mrozony to Lee Sharks."
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP02/p806.txt",
+     "lines": [
+      23,
+      23
+     ],
+     "quote": "10.5281/zenodo.20628547; 10.5281/zenodo.20628554; 10.5281/zenodo.18293881."
+    }
+   ],
+   "find_checks": [
+    "selection randomized per operator instruction (seed 1515172716"
+   ],
+   "note": "#183's text matches its own post of 2026-06-10 line for line (second store is the same text plus frontmatter). The superseded DOI 20628554 that the note points to sits in #806's sampled cross-links, and the Whitman post of 2026-06-10 carries it at line 23, so it is as published there; #1016/#1017 are SUPERSEDED. #1029 (2026-06-15) is the DataCite capture of the corrected DOI 20703834 and holds the same prose; #183 is the earlier record."
+  },
+  {
+   "deposit": 486,
+   "read_ranges": [
+    [
+     1,
+     380
+    ]
+   ],
+   "lines_total": 380,
+   "second_store_read": null,
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0131-text.md",
+     "lines": [
+      364,
+      364
+     ],
+     "quote": "**The Gödel Midrashim** ← YOU ARE HERE — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130)"
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP02/p486.txt",
+     "lines": [
+      254,
+      254
+     ],
+     "quote": "**The Gödel Midrashim** ← YOU ARE HERE — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130)"
+    }
+   ],
+   "find_checks": [
+    "Hegel smiles like someone who has seen a dialectic unfold across a thunderstorm"
+   ],
+   "note": "#486 is the standing record: blog mirror 2026/02/the-godel-midrashim-on-retrocausal.html, minted 2026-06-20. #1322 (minted 2026-07-19) is the later severed-DOI restoration of the same work, with text supplied in-session. The duplication lies on #1322's side. Separately, #486's navigation map (lines 333-371) has its markdown table cells split onto separate lines, while the post (lines ~248-255) keeps them as table rows. That is a formatting fix in place, not a reseat."
+  },
+  {
+   "deposit": 698,
+   "read_ranges": [
+    [
+     1,
+     324
+    ]
+   ],
+   "lines_total": 324,
+   "second_store_read": null,
+   "verdict": "title",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": "The Logotic Technique Catalogue: Recovering Cooperative and Defensive Coordination Patterns from Adversarial AI Agent Architecture",
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0243-text.md",
+     "lines": [
+      8,
+      8
+     ],
+     "quote": "\"title\": \"The Logotic Technique Catalogue: Recovering Cooperative and Defensive Coordination Patterns from Adversarial AI Agent Architecture\","
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP02/p698.txt",
+     "lines": [
+      10,
+      10
+     ],
+     "quote": "\"title\": \"The Logotic Technique Catalogue: Recovering Cooperative and Defensive Coordination Patterns from Adversarial AI Agent Architecture\","
+    }
+   ],
+   "find_checks": [],
+   "note": "The registry title ends 'Adversarial AI Discourse'. The word 'Discourse' occurs nowhere in the seated text or in the post of 2026-04-27 (both are 351/324 lines, checked by grep). The text's own title field reads 'Adversarial AI Agent Architecture', which is also the title of the companion paper #699."
+  },
+  {
+   "deposit": 884,
+   "read_ranges": [
+    [
+     1,
+     787
+    ],
+    [
+     788,
+     1149
+    ]
+   ],
+   "lines_total": 1149,
+   "second_store_read": null,
+   "verdict": "title",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": "Compositional Defiguration: A Methodology for Measuring Public-Surface Visibility of Scholarly Corpora",
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0380-text.md",
+     "lines": [
+      3,
+      3
+     ],
+     "quote": "title: \"Compositional Defiguration: A Methodology for Measuring Public-Surface Visibility of Scholarly Corpora\""
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0380-text.md",
+     "lines": [
+      90,
+      90
+     ],
+     "quote": "# Compositional Defiguration: A Methodology for Measuring Public-Surface Visibility of Scholarly Corpora"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0380-text.md",
+     "lines": [
+      99,
+      99
+     ],
+     "quote": "## 0. Status declaration"
+    }
+   ],
+   "find_checks": [],
+   "note": "The registry title ends '... Scholarly Corpora 0. Status declaration'. That tail is the §0 heading at line 99, welded onto the title. The deposit's frontmatter and H1 give the title without it. #880 and #882 (SUPERSEDED) carry the same welded tail."
+  },
+  {
+   "deposit": 960,
+   "read_ranges": [
+    [
+     1,
+     245
+    ]
+   ],
+   "lines_total": 245,
+   "second_store_read": null,
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-03CC-text.md",
+     "lines": [
+      1,
+      1
+     ],
+     "quote": "# Gravity Well Protocol — v0.4.0"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0554-text.md",
+     "lines": [
+      1,
+      1
+     ],
+     "quote": "# Gravity Well Protocol — v0.4.0"
+    }
+   ],
+   "find_checks": [],
+   "note": "Byte-identical to #1347 (same sha256 5cc77337...). Both were recovered on 2026-07-20 from the same file, semantic-economy EA-GW-01_Gravity_Well_Protocol_v0.4.1__19405459.md. The text's own heading names v0.4.0, which is #960's title and DOI (19405020, 2026-04-03), and #960 is the earlier record. The duplication lies on #1347's side ('Gravity Well Codebase v0.4.1', DOI 19405459, 2026-04-06). Per the version-label rule, the v0.4.1 filename does not make #960's text wrong."
+  },
+  {
+   "deposit": 1002,
+   "read_ranges": [
+    [
+     1,
+     700
+    ],
+    [
+     701,
+     1408
+    ]
+   ],
+   "lines_total": 1408,
+   "second_store_read": null,
+   "verdict": "title",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": "restoredacademy.com — The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Charter + Audit Infrastructure)",
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/datacite-full-backup.json",
+     "lines": [
+      1,
+      1
+     ],
+     "quote": "[{\"title\": \"restoredacademy.com — The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Charter + Audit Infrastructure)\"}]"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-03F6-text.md",
+     "lines": [
+      1,
+      6
+     ],
+     "quote": "The deployed source below is the work this record deposits, reproduced verbatim; the site remains the live manifestation and this is its archival capture."
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-03F6-text.md",
+     "lines": [
+      919,
+      919
+     ],
+     "quote": "<a class=\"protocol-title\" href=\"/protocols/RA-PROT-0001.html\">SPXI — Semantic Packet for eXchange &amp; Indexing</a>"
+    }
+   ],
+   "find_checks": [
+    "Johannes Sigil, head of The Restored Academy",
+    "The Academy was named in citation blocks before it was charter-documented",
+    "cards live in registry"
+   ],
+   "note": "The registry title ends with ' Description (as recorded by DataCite)', a capture heading welded onto the title. The DataCite record for DOI 20327575 gives the title without it. Two further findings, recorded and not ruled on. (1) The seated body is the restoredacademy.com homepage as fetched live on 2026-08-04: it carries July 2026 MSP tokens, a 'deposit #116' idstrip and a 2026-07-13 colophon. The post of the record's date (2026/05/restoredacademycom.html, 2,837 lines, mirrored by no record) holds the 2026-05-21 edition of the same index.html. (2) The 24 card files (/protocols/RA-PROT-0001..0024.html), the charter, the MANIFEST and the tar/zip that the DataCite description lists are not in the repository (Glob **/RA-PROT-00* found nothing)."
+  },
+  {
+   "deposit": 1267,
+   "read_ranges": [
+    [
+     1,
+     800
+    ],
+    [
+     801,
+     1600
+    ],
+    [
+     1601,
+     2397
+    ]
+   ],
+   "lines_total": 2397,
+   "second_store_read": [
+    [
+     1,
+     90
+    ]
+   ],
+   "verdict": "attach_link",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/deposits/AXN-0504.md",
+     "lines": [
+      62,
+      62
+     ],
+     "quote": "1. The completed poem (PDF, 57 pages) — A four-part structure modeled on Dante's Commedia, framed by invocations to Caedmon, the Anglo-Saxon poet commanded by an angel to sing creation."
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0047-text.md",
+     "lines": [
+      42,
+      42
+     ],
+     "quote": "- **An earlier draft of the poem** — preserving material lost in the final version, including an expanded invocation and the epigraph: \"a love poem must be / made, there is nothing / darker or / lighter, more casually / fatal or / filling.\""
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0504-text.md",
+     "lines": [
+      2393,
+      2397
+     ],
+     "quote": "- [xvi. a transfiguration — original .docx (authorial lineation and whitespace)](/data/attachments/AXN-0504/xvi-a-transfiguration-source.docx)"
+    }
+   ],
+   "find_checks": [
+    "in the lonely dark",
+    "drink wine from the veins until life expires"
+   ],
+   "note": "The seated text is a full rendering of the attached source .docx (the guide letter plus the earlier draft). Converted with pandoc, the docx itself ends at 'drink wine from the veins until life expires,', so the mid-poem ending is in the file and not a seating cut. An identical copy is in fleet/semantic-economy/atlwm. What the record lacks is the archive's file A, the completed 57-page poem PDF (the Sappho 31 section and the 'Ordered by an angel' epilogue, per #268 lines 114-135). The record's captured description refers to it. It is not in the repository or the fleet; 'in the lonely dark' occurs only in #268. No blog post holds the poem: the post of 2026-01-08 is #268's provenance node."
+  },
+  {
+   "deposit": 1343,
+   "read_ranges": [
+    [
+     1,
+     81
+    ]
+   ],
+   "lines_total": 81,
+   "second_store_read": [
+    [
+     1,
+     119
+    ]
+   ],
+   "verdict": "duplicate_of",
+   "url": null,
+   "kind": null,
+   "target": 800,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/deposits/AXN-0550.md",
+     "lines": [
+      42,
+      42
+     ],
+     "quote": "Recovered from https://mindcontrolpoems.blogspot.com/2026/06/operative-semiotics-executive-summary.html"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0550-text.md",
+     "lines": [
+      5,
+      5
+     ],
+     "quote": "EA-OPSEM-EXEC-01 v1.0"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/deposits/AXN-0550.md",
+     "lines": [
+      103,
+      103
+     ],
+     "quote": "Captured citation: Sharks, L., & Sigil, J. (2026). Operative Semiotics: A Grundrisse — Public Research Edition v1.0 (Draft). Zenodo. https://doi.org/10.5281/zenodo.19202401"
+    }
+   ],
+   "find_checks": [
+    "Classical semiotics asks what signs mean. Operative semiotics asks what signs do.",
+    "The two frameworks have zero shared citations, different objects, different methods, and different traditions."
+   ],
+   "note": "The seated text is the Operative Semiotics Executive Summary (EA-OPSEM-EXEC-01), restored 2026-07-28 from the June 2026 post that #800 (2026-06-09) mirrors. #800's text is the same work, differing only in markup (italics). The record's own DOI 19202401 belongs to the Grundrisse Public Research Edition v1.0 (Draft) of 2026-03-31, which this record does not hold. The in-text 'June 2026' date is the Executive Summary's own date."
+  },
+  {
+   "deposit": 1389,
+   "read_ranges": [
+    [
+     1,
+     441
+    ]
+   ],
+   "lines_total": 441,
+   "second_store_read": [
+    [
+     1,
+     474
+    ]
+   ],
+   "verdict": "as_published",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-057E-text.md",
+     "lines": [
+      63,
+      63
+     ],
+     "quote": "Full screenshots of Exhibits A through F are included in the evidence packet's Appendix A."
+    },
+    {
+     "file": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/repair/RP02/p1389.txt",
+     "lines": [
+      55,
+      55
+     ],
+     "quote": "Full screenshots of Exhibits A through F are included in the evidence packet's Appendix A."
+    }
+   ],
+   "find_checks": [],
+   "note": "The post of 2026-06-04 (341 lines) has the same Appendix A sentence and no images or appendix. No exhibit screenshots for this deposit exist in the repository. The registry date is 2026-03-22, while the text (line 8), the second store frontmatter, the post and the DataCite Issued date all give 2026-06-04. That date mismatch is a mislabel outside this verdict."
+  },
+  {
+   "deposit": 1513,
+   "read_ranges": [
+    [
+     1,
+     26
+    ]
+   ],
+   "lines_total": 26,
+   "second_store_read": null,
+   "verdict": "no_defect",
+   "url": null,
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": "/home/claude/alexanarch/data/reception/schema.json; /home/claude/alexanarch/data/reception/edges.json",
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-061C-text.md",
+     "lines": [
+      26,
+      26
+     ],
+     "quote": "Schema: https://www.alexanarch.org/data/reception/schema.json · Founding graph: https://www.alexanarch.org/data/reception/edges.json (RE-0001 through RE-0009)"
+    }
+   ],
+   "find_checks": [],
+   "note": "This is a native short specification record, minted 2026-08-19 with no blog post. Its body links by URL to schema.json and edges.json, and both are in the repository at data/reception/ (edges.json holds RE-0001 through RE-0009). The referenced files exist and are clickable from the body."
+  },
+  {
+   "deposit": 1568,
+   "read_ranges": [
+    [
+     1,
+     108
+    ]
+   ],
+   "lines_total": 108,
+   "second_store_read": null,
+   "verdict": "attach_link",
+   "url": "https://www.provenanceerasure.org/rebuttal-as-warrant/EA-MMRS-RAW-01-v1.2.pdf",
+   "kind": null,
+   "target": null,
+   "value": null,
+   "path": null,
+   "evidence": [
+    {
+     "file": "/home/claude/alexanarch/data/texts/AXN-0660-text.md",
+     "lines": [
+      95,
+      95
+     ],
+     "quote": "**§XIII carries eleven external and twelve internal review passes in full — adopted and rejected alike.**"
+    },
+    {
+     "file": "/home/claude/alexanarch/data/sidecars/AXN-0660-evidence.json",
+     "lines": [
+      18,
+      18
+     ],
+     "quote": "\"paper_pdf\": \"https://www.provenanceerasure.org/rebuttal-as-warrant/EA-MMRS-RAW-01-v1.2.pdf\","
+    }
+   ],
+   "find_checks": [],
+   "note": "The seated text is the deposit's summary of EA-MMRS-RAW-01 v1.2. It is the same summary as fleet/machinemediation-org/articles/EA-MMRS-RAW-01.md, which links the paper, while the record body does not. The full paper (§XIII review record, appendix) is the PDF at provenanceerasure.org/rebuttal-as-warrant/, named in the record's sidecar. It is not in the alexanarch repository; local copies are /home/claude/fleet/provenance-erasure/rebuttal-as-warrant/EA-MMRS-RAW-01-v1.2.pdf and fleetclones. No blog post exists."
+  }
+ ]
+}

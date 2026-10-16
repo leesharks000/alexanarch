@@ -230,3 +230,4 @@ Shumailov et al., *Nature* 631 (2024). Alemohammad et al., ICLR 2024. Dohmatob, 
 ## Files
 
 https://alexanarch.org/data/attachments/ea-lo-collapse-diagnostic-01/EA-LO-COLLAPSE-DIAGNOSTIC-01.md
+- [collapse_diagnostic.py](/data/attachments/ea-lo-collapse-diagnostic-01/collapse_diagnostic.py) — reference implementation of Part II's black-box panel

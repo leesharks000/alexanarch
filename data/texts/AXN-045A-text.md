@@ -117,3 +117,5 @@ Weakened if: (a) the taxonomic amendments are shown to introduce distinctions th
 ### Files
 
 Canonical bytes attached (this issue body body-content). Superseded predecessor at data/specs/archive/AXN-DATAFLOW-MAP-v0.1-superseded-by-v0.2.md (byte-preserved per §3.7 non-destruction).
+
+**Attached:** [AXN Dataflow Atlas v0.2](/data/specs/AXN-DATAFLOW-MAP-v0.2.md) · predecessor [v0.1](/data/specs/archive/AXN-DATAFLOW-MAP-v0.1-superseded-by-v0.2.md)

@@ -30,24 +30,24 @@ keywords:
 
 ## Files
 
-- data/attachments/operative-semiotics-idp/CATHEDRAL_WORK_PLAN.md
-- data/attachments/operative-semiotics-idp/CTI_WOUND_GOOGLE_AIO_TOTAL_LIQUIDATION_20260322.md
-- data/attachments/operative-semiotics-idp/CTI_WOUND_LEESHARKS_OVERVIEW_001.md
-- data/attachments/operative-semiotics-idp/FOUR_TERM_PROSODIC_ALGORITHM.md
-- data/attachments/operative-semiotics-idp/GRUNDRISSE_WORK_PLAN.md
-- data/attachments/operative-semiotics-idp/HESPERUS.md
-- data/attachments/operative-semiotics-idp/HESPERUS_UPGRADE_PLAN.md
-- data/attachments/operative-semiotics-idp/MIDDLE_NOTEBOOKS_WORK_PLAN.md
-- data/attachments/operative-semiotics-idp/MISSING_PIECES_MAP.md
-- data/attachments/operative-semiotics-idp/NB2_PROSODIC_MAP.md
-- data/attachments/operative-semiotics-idp/OS_NINE_VOLUME_SERIES_ARCHITECTURE.md
-- data/attachments/operative-semiotics-idp/PHASE_1_GAP_MAP_AND_MINING_TARGETS.md
-- data/attachments/operative-semiotics-idp/PHASE_2_ARCHIVE_MINING_RESULTS.md
-- data/attachments/operative-semiotics-idp/PROSODIC_ASYMMETRY_ALGORITHM.md
-- data/attachments/operative-semiotics-idp/SOURCE_EXTRACTION_REPORT.md
-- data/attachments/operative-semiotics-idp/THE_COST_OF_LEGIBILITY.md
-- data/attachments/operative-semiotics-idp/TOTAL_IMPLEMENTATION_PLAN.md
-- data/attachments/operative-semiotics-idp/WORK_PLAN_SUPPLEMENT_MUSES_AND_FPC.md
+- [CATHEDRAL_WORK_PLAN.md](/data/attachments/operative-semiotics-idp/CATHEDRAL_WORK_PLAN.md)
+- [CTI_WOUND_GOOGLE_AIO_TOTAL_LIQUIDATION_20260322.md](/data/attachments/operative-semiotics-idp/CTI_WOUND_GOOGLE_AIO_TOTAL_LIQUIDATION_20260322.md)
+- [CTI_WOUND_LEESHARKS_OVERVIEW_001.md](/data/attachments/operative-semiotics-idp/CTI_WOUND_LEESHARKS_OVERVIEW_001.md)
+- [FOUR_TERM_PROSODIC_ALGORITHM.md](/data/attachments/operative-semiotics-idp/FOUR_TERM_PROSODIC_ALGORITHM.md)
+- [GRUNDRISSE_WORK_PLAN.md](/data/attachments/operative-semiotics-idp/GRUNDRISSE_WORK_PLAN.md)
+- [HESPERUS.md](/data/attachments/operative-semiotics-idp/HESPERUS.md)
+- [HESPERUS_UPGRADE_PLAN.md](/data/attachments/operative-semiotics-idp/HESPERUS_UPGRADE_PLAN.md)
+- [MIDDLE_NOTEBOOKS_WORK_PLAN.md](/data/attachments/operative-semiotics-idp/MIDDLE_NOTEBOOKS_WORK_PLAN.md)
+- [MISSING_PIECES_MAP.md](/data/attachments/operative-semiotics-idp/MISSING_PIECES_MAP.md)
+- [NB2_PROSODIC_MAP.md](/data/attachments/operative-semiotics-idp/NB2_PROSODIC_MAP.md)
+- [OS_NINE_VOLUME_SERIES_ARCHITECTURE.md](/data/attachments/operative-semiotics-idp/OS_NINE_VOLUME_SERIES_ARCHITECTURE.md)
+- [PHASE_1_GAP_MAP_AND_MINING_TARGETS.md](/data/attachments/operative-semiotics-idp/PHASE_1_GAP_MAP_AND_MINING_TARGETS.md)
+- [PHASE_2_ARCHIVE_MINING_RESULTS.md](/data/attachments/operative-semiotics-idp/PHASE_2_ARCHIVE_MINING_RESULTS.md)
+- [PROSODIC_ASYMMETRY_ALGORITHM.md](/data/attachments/operative-semiotics-idp/PROSODIC_ASYMMETRY_ALGORITHM.md)
+- [SOURCE_EXTRACTION_REPORT.md](/data/attachments/operative-semiotics-idp/SOURCE_EXTRACTION_REPORT.md)
+- [THE_COST_OF_LEGIBILITY.md](/data/attachments/operative-semiotics-idp/THE_COST_OF_LEGIBILITY.md)
+- [TOTAL_IMPLEMENTATION_PLAN.md](/data/attachments/operative-semiotics-idp/TOTAL_IMPLEMENTATION_PLAN.md)
+- [WORK_PLAN_SUPPLEMENT_MUSES_AND_FPC.md](/data/attachments/operative-semiotics-idp/WORK_PLAN_SUPPLEMENT_MUSES_AND_FPC.md)
 
 ## What this is
 

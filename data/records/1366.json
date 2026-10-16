@@ -26,7 +26,7 @@
  ],
  "axn_reading": "Closure -> Transmutation -> Touch -> Origin -> Text -> Growth",
  "minted_at": "2026-07-19T21:19:22Z",
- "status": "ACTIVE",
+ "status": "SUPERSEDED",
  "status_authorial": "SELF_SERVE_MINTED",
  "full_text_path": "/data/texts/AXN-0567-text.md",
  "wiki_article": "**ClownCloud: Networked Deployment System for Clownic Attentional Stressors** is a patent-poem by Lee Sharks, deposited 30 April 2026 and subtitled *A Patent-Poem on Focus Clowns*.\n\nWritten as a US patent application, it specifies a cloud-mediated system for the scheduling, deployment, credentialing, routing and **theological interpretation** of professional clown cohorts in high-stakes performance environments, where controlled absurd disruption is administered as a service.\n\nThe form does what the DashFace poems do — patent prose specifies and cannot editorialize — but the target differs. Where DashFace claims a worker's face as property, ClownCloud claims *attention* itself, treating deliberate absurdity as an infrastructure that can be provisioned and billed. Inserting \"theological interpretation\" into a routing pipeline is the poem's central joke and its argument at once: the register of the claim absorbs anything placed in it, including the sacred, without changing tone.",
@@ -117,7 +117,15 @@
   "source_recovery": "2026-08-04 AUDIT-DIRECTED RECOVERY: audit directive \"Recover and seat the patent-poem.\" satisfied — manifestation located at https://mindcontrolpoems.blogspot.com/2026/04/united-states-patent-application_30.html and seated via the newline-preserving converter (identity probe 1.00, 27,004 chars).",
   "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 17 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
   "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself.",
-  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
+  "retired": {
+   "class": "superseded",
+   "resolves_to": 714,
+   "declared": "2026-10-15",
+   "indexable": true,
+   "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; readers \"long as they have provenance\" — data/repair-maps/readings/",
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL."
+  }
  },
  "references_concepts": [
   "Attentional Absence Report (AAR)",
@@ -321,9 +329,16 @@
    "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
    "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5924, \"audited_at\": \"2026-07-19T21:19:22Z\", \"audit_version\": \"mint-time-declaration\", \"class_be",
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5924, \"audited_at\": \"2026-07-19T21:19:22Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "status",
+   "reason": "duplicate of #714 (reading RP05); made a superseded duplicate witness",
+   "was": "{\"status\": \"ACTIVE\", \"superseded_by_deposit_number\": null}",
+   "now": "{\"status\": \"SUPERSEDED\", \"superseded_by_deposit_number\": 714}"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-15",
  "publisher": "New Human Press",
  "journal": "New Human 2",
  "provenance_note": {
@@ -355,6 +370,9 @@
  "line": "poetry",
  "line_parent": "letters",
  "line_basis": "derived",
+ "superseded_by_deposit_number": 714,
+ "duplicate_note": "DUPLICATE (2026-10-15, reading RP05): the record of standing is #714. 1366 is a severed-DOI recapture of the 2026-04-30 ClownCloud patent-poem with its lists and table dropped (Soteriological Sequence, the three blessing forms, the deployment table, claim numbers) and its keywords cut at 'institutio'. Record ",
+ "superseded_reason": "Duplicate witness of the same work: the record of standing is #714.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/1366/",

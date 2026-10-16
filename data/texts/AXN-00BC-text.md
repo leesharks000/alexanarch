@@ -4,7 +4,11 @@
 **Institute for Diagrammatic Poetics**
 
 ****
-**[](https://blogger.googleusercontent.com/img/a/AVvXsEj3sqidNnhKzw4YF4cgak4fm7MzQ4Zss9wqrF6-kbKL1Fag3l0bm5w_QxGa_Bj7b6YX_Oxe45YQCv3xEp0iFlPb0YXLWExba9TR0wd_usHDVAjErTaZTVW85UTuh4OkY2AZ-kCXSzKfWQKvnN9p4LdQETGtWaGBNLLgSQoaDKoO5zi9oaSN9GO-pnrEtmy1)****
+**
+
+![Visual Schema: University Moon Base Media Lab](/data/attachments/axn-00bc/visual-schema-university-moon-base-media-lab.png)
+
+[Image on the published post](https://blogger.googleusercontent.com/img/a/AVvXsEj3sqidNnhKzw4YF4cgak4fm7MzQ4Zss9wqrF6-kbKL1Fag3l0bm5w_QxGa_Bj7b6YX_Oxe45YQCv3xEp0iFlPb0YXLWExba9TR0wd_usHDVAjErTaZTVW85UTuh4OkY2AZ-kCXSzKfWQKvnN9p4LdQETGtWaGBNLLgSQoaDKoO5zi9oaSN9GO-pnrEtmy1)****
 **
 
 

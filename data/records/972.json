@@ -48,7 +48,7 @@
  "axn_schema_version": "v2",
  "protocol_version": "alexanarch-deposit-protocol/v1",
  "minted_at": "2026-07-03T21:54:51Z",
- "status": "ACTIVE",
+ "status": "SUPERSEDED",
  "status_authorial": "SEMI_RESTORED",
  "mint_source": "orphan-restoration-batch",
  "full_text_path": "/data/texts/AXN-03D8-text.md",
@@ -71,7 +71,15 @@
   "class_before_T2b": "metadata_capture",
   "note_T2b": "Genuine inversion: body carries restored full text under stale semi-restored content_type; typing axes now govern.",
   "measured_prose_words": 2229,
-  "measured_at": "2026-07-31"
+  "measured_at": "2026-07-31",
+  "retired": {
+   "class": "superseded",
+   "resolves_to": 57,
+   "declared": "2026-10-15",
+   "indexable": true,
+   "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; readers \"long as they have provenance\" — data/repair-maps/readings/",
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL."
+  }
  },
  "references_concepts": [
   "Capital Operator Stack",
@@ -157,9 +165,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.19513034 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. CALL FOR PAPERS v2.0 — The Distributed Journal as Counter-Infrastructure. Metadata-coordinated publication after the legacy journal. v2.0 additions (from Assembly Chorus review): §0 urgency section (the retrieval layer is being trained NOW), supercharged Step 4 (citation as tether, not homage), diagnostic questions for each journal, concrete example submissions, proof-of-concept section (JCS at 5",
    "now": "A fully recovered duplicate deposit of the v2.0 distributed-journal call for papers. It describes a repository-based publication mechanism, four journal clusters, deposit steps, citation and keyword strategy, post-publication quality claims, proof-of-concept status, objections, and forking instructions.\n\nThe record must retain its duplicate/superseded condition and point to the canonical v2.0 deposit rather than presenting itself as an independent edition."
+  },
+  {
+   "date": "2026-10-15",
+   "field": "status",
+   "reason": "duplicate of #57 (reading RP03); made a superseded duplicate witness",
+   "was": "{\"status\": \"ACTIVE\", \"superseded_by_deposit_number\": null}",
+   "now": "{\"status\": \"SUPERSEDED\", \"superseded_by_deposit_number\": 57}"
   }
  ],
- "date_modified": "2026-10-13",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "wiki_article": "**The Distributed Journal as Counter-Infrastructure** is a call for authors to create journal-like publication clusters through open repository metadata, shared titles, identifiers, keywords, and cross-citation.\n\nThe document argues that retrieval systems increasingly encounter openly available, structured records more readily than paywalled scholarship. Its proposed submission mechanism is direct deposit: create an openly accessible artifact, assign persistent author and work identifiers, enter a shared journal name, link existing cluster members, and publish without prepublication gatekeeping.\n\nFour Archive journals are named: *Transactions of the Semantic Economy Institute*, *Grammata*, *Provenance*, and the *Journal of Compression Studies*. Each receives a scope, diagnostic questions, existing anchors, and example submissions.\n\nThe proposal substitutes post-deposit reception for selection. Citation, retrieval, cluster density, and Encyclotron audit are described as forms of review. The journal is a metadata-coordinated pattern rather than a legal organization or editorial corporation.\n\nVersion 2.0 adds urgency, stronger citation instructions, examples, proof-of-concept discussion, objections, and a guide for forking new journals.\n\nRecord #972 is explicitly a duplicate of another v2.0 deposit. Its restored body is useful as a manifestation witness, but it is not the canonical version node.",
  "journal": "Crimson Hexagonal Archive (CHA)",
@@ -185,6 +200,9 @@
    "note": "date 2026-07-03 → 2026-04-11 (DataCite Issued, 10.5281/zenodo.19513034); 2026-07-03 kept as date_restored. Metadata only; canonical bytes, hash and AXN unchanged."
   }
  ],
+ "superseded_by_deposit_number": 57,
+ "duplicate_note": "DUPLICATE (2026-10-15, reading RP03): the record of standing is #57. #972's body is word-for-word the body of #57 (ACTIVE, same date 2026-04-11, same v2.0 DOI); a whitespace-normalised word diff is empty. Its registry title is the Zenodo tombstone stub \"[DUPLICATE — SUPERSEDED →\". Second store byte-identical",
+ "superseded_reason": "Duplicate witness of the same work: the record of standing is #57.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/972/",
