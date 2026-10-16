@@ -60,54 +60,97 @@ def rooms_index(reg):
     """/s/rooms/ — every locus with its physics, prompt and count; /s/rooms/<id-name>/ — the records it seats, each with
     the relation and the sentence of the record that grounds it (room reading 2026-10-16), or its role on the room page."""
     S = json.load(open(ROOT / 'data/hexagon-seats.json')); D = {d['deposit_number']: d for d in reg['deposits']}
-    by = collections.defaultdict(list)
+    by = collections.defaultdict(list); low = collections.defaultdict(list)
     for n, e in S['seats'].items():
         for r in e['rooms']:
             by[r].append((int(n), e))
-    key = lambda r: (r['locus'][0] != 'R', re.sub(r'\d+', lambda m: m.group(0).zfill(4), r['locus']))
-    rooms = sorted((S['rooms'][r] for r in by), key=key)
+        for x in e.get('proposed') or []:                    # low seats: shown, marked for later adjudication (ruling 2026-10-16)
+            if x['locus'] not in e['rooms']:
+                low[x['locus']].append((int(n), e, x))
+    key = lambda r: (r['locus'][0] == 'T', r['locus'][0] != 'R', re.sub(r'\d+', lambda m: m.group(0).zfill(4), r['locus']))
+    rooms = sorted((S['rooms'][r] for r in set(by) | set(low) if r in S['rooms']), key=key)
+    RU = json.load(open(ROOT / 'data/room-readings/rulings-applied-2026-10-16.json'))
+    LOWL = RU['low_confidence']['label']
+    out = ('<div class="idx" style="margin-top:28px;border-top:1px solid var(--border);padding-top:10px"><b>Elsewhere</b> — '
+           + ' · '.join(f'<a href="{esc(u)}">{esc(t)}</a>' for t, u in RU['outward'])
+           + ' · <a href="/s/browse/">browse this archive</a></div>')
+    seated = sum(1 for e in S['seats'].values() if e['rooms'])
     src = collections.Counter(x for e in S['seats'].values() for v in (e.get('sources') or {}).values() for x in v
                               if not x.startswith('canonical')) + collections.Counter(
         'canonical' for e in S['seats'].values() for v in (e.get('sources') or {}).values() if any(x.startswith('canonical') for x in v))
     rlink = lambda o: f'<a href="/s/rooms/{room_slug(o)}/">{esc(o["locus"])} {esc(o["name"])}</a>'
     head = lambda r: ((f'<b>Physics</b> {esc(r["physics"])}. ' if r.get('physics') else '') + (f'{esc(r["desc"])} ' if r.get('desc') else '')
                       + (f'<b>Prompt</b> <i>{esc(r["prompt"])}</i> ' if r.get('prompt') else '')
-                      + (f'· <a href="{esc(r["url"])}">the room at crimsonhexagonal.org</a>' if r.get('url') else '· no room page yet'))
+                      + (f'<b>{esc(r["type"])}</b> — a structure across the plane, not a room. ' if r.get('type') else '')
+                      + (f'· <a href="{esc(r["url"])}">' + ('the structure' if r.get('type') else 'the room') + ' at crimsonhexagonal.org</a>' if r.get('url') else '· no room page yet')
+                      + (f'<div class="d" style="margin-top:6px"><b>Ruled 2026-10-16</b> — {esc(r["note"]["note"])}'
+                         + (f' <a href="{esc(r["note"]["link"][1])}">{esc(r["note"]["link"][0])}</a>.' if r['note'].get('link') else '')
+                         + (f' {esc(r["note"]["later"])}' if r['note'].get('later') else '')
+                         + f' <span class="q">(Lee Sharks: “{esc(r["note"]["clause"])}”)</span></div>' if r.get('note') else '')
+                      + (f'<div class="d" style="margin-top:6px"><b>Ruled 2026-10-16</b> <span class="q">(Lee Sharks: “{esc(r["ruling"]["clause"])}”)</span></div>'
+                         if r.get('ruling') and not r.get('note') else ''))
     root = [f'<h1>Rooms of the Crimson Hexagon — and the records each room seats</h1>'
             f'<div class="sub">The Crimson Hexagon (Lee Sharks) is organised as rooms — chambers, specials, fields, shadows, arks — at '
             f'<a href="https://www.crimsonhexagonal.org/rooms">crimsonhexagonal.org</a>; the works it seats are records of this archive. '
-            f'{len(S["seats"])} records are seated in {len(rooms)} loci (a record may sit in several). Seats come from the room pages, '
+            f'{seated} records are seated in {len(rooms)} loci (a record may sit in several), the transversal structures and UMBML, a '
+            f'meta-structure of the Hexagon, among them. Seats come from the room pages, '
             f'the interface\'s canonical data, and the room reading of 2026-10-16, in which every active record was read and seated with '
             f'the relation it bears to the room and a sentence of its own text as the ground. Seat counts by source: '
-            + ', '.join(f'{k} {v}' for k, v in src.most_common()) + '.</div>']
+            + ', '.join(f'{k} {v}' for k, v in src.most_common()) + f'. Seats the reading gave at low confidence — fit by family resemblance only — '
+            f'are listed under each locus, marked {esc(LOWL)} ({sum(len(v) for v in low.values())}).</div>']
+    tdone = False
     urls = ['/s/rooms/']
     for r in rooms:
         rows = sorted(by[r['id']], key=lambda t: (not ((t[1].get('read') or {}).get(r['id']) or {}).get('primary'),
                                                     (t[1].get('roles') or {}).get(r['id']) != 'constituting',
                                                     -int((D[t[0]].get('date') or '0000')[:4]), t[0]))
+        if r['locus'].startswith('T:') and not tdone:
+            tdone = True
+            root.append('<h2 style="margin-top:40px;border-top:2px solid var(--accent);padding-top:12px">Structures across the plane</h2>'
+                        '<div class="sub">Not rooms: the transversals of the Surface Map (Armature, Secret Name, Pearl) and UMBML, the '
+                        'meta-structure in which Logotic Programming, which constitutes the Hexagon, is developed.</div>')
+        lw = sorted(low.get(r['id'], []), key=lambda t: t[0])
         root.append(f'<h2>{esc(r["locus"])} {esc(r["name"])}</h2><div class="room">{head(r)}</div>'
-                    f'<div class="idx"><a href="/s/rooms/{room_slug(r)}/">the {len(rows)} records seated here</a></div>')
+                    f'<div class="idx"><a href="/s/rooms/{room_slug(r)}/">the {len(rows)} records seated here</a>'
+                    + (f' · and {len(lw)} at low confidence' if lw else '') + '</div>')
         parts = [f'<h1>{esc(r["locus"])} {esc(r["name"])} — the records it seats</h1><div class="room">{head(r)}</div>'
                  f'<div class="sub">{len(rows)} records. Each row: the record, its date, type and identifier; how it bears on this room '
                  '(constitutes, develops, applies, documents, belongs) with the sentence of its own text that grounds it; the other rooms it sits in. '
-                 'Primary and constituting seats first.</div>']
+                 'Primary and constituting seats first; seats set by Lee Sharks\'s rulings of 2026-10-16 are marked ruled'
+                 + (f'; then {len(lw)} seats at low confidence, {esc(LOWL)}' if lw else '') + '.</div>']
         for n, e in rows:
             d = D[n]; others = [S['rooms'][x] for x in e['rooms'] if x != r['id']]
             rd = (e.get('read') or {}).get(r['id']); role = (e.get('roles') or {}).get(r['id'])
             how = ((f'<div class="d"><b>{esc(rd["relation"])}</b>' + (' (primary)' if rd.get('primary') else '')
-                    + (f' — “{esc((rd.get("basis") or {}).get("quote", ""))}”' if (rd.get('basis') or {}).get('quote') else '') + '</div>') if rd
+                    + (f' — “{esc((rd.get("basis") or {}).get("quote", ""))}”' if (rd.get('basis') or {}).get('quote') else '')
+                    + (f' — ruled 2026-10-16: {esc(rd["basis"]["group"])}' if (rd.get('basis') or {}).get('ruling') else '')
+                    + ''.join(f' · moved here from {esc(S["rooms"][m["from"]]["locus"])} by ruling' for m in e.get('moved') or [] if m['to'] == r['id'])
+                    + '</div>') if rd
                    else (f'<div class="d"><b>{esc(role)}</b></div>' if role else ''))
             tail = ([f'<a href="{esc(e["works_url"])}">work page</a>'] if e.get('works_url') else []) + (['also in ' + ', '.join(rlink(o) for o in others)] if others else [])
             parts.append(f'<div class="rec"><a class="t" href="/s/records/{n}/">{esc(d["title"])}</a>'
                          f'<div class="m">#{n} · {esc(d.get("date"))} · {esc(d.get("content_type") or "")} · {esc(d["axn"])}</div>'
                          + how + (f'<div class="d">{" · ".join(tail)}</div>' if tail else '') + '</div>')
+        if lw:
+            parts.append(f'<h2>Low confidence — for later adjudication ({len(lw)})</h2><div class="sub">Seats the reading gave by family '
+                         'resemblance only, held for a ruling. They are not seats yet.</div>')
+            for n, e, x in lw:
+                d = D[n]; others = [S['rooms'][o] for o in e['rooms']]
+                parts.append(f'<div class="rec"><a class="t" href="/s/records/{n}/">{esc(d["title"])}</a>'
+                             f'<div class="m">#{n} · {esc(d.get("date"))} · {esc(d.get("content_type") or "")} · {esc(d["axn"])} · low confidence</div>'
+                             f'<div class="d"><b>{esc(x["relation"])}</b> (low)'
+                             + (f' — “{esc((x.get("basis") or {}).get("quote", ""))}”' if (x.get('basis') or {}).get('quote') else '') + '</div>'
+                             + (f'<div class="d">seated in {", ".join(rlink(o) for o in others)}</div>' if others else '<div class="d">not otherwise seated</div>')
+                             + '</div>')
+        parts.append(out)
         path = f'/s/rooms/{room_slug(r)}/'
-        write(path, page(path, f'{r["locus"]} {r["name"]} — records seated in this room of the Crimson Hexagon',
-                         f'The {len(rows)} archive records seated in {r["locus"]} {r["name"]}, a room of the Crimson Hexagon by Lee Sharks: '
+        write(path, page(path, f'{r["locus"]} {r["name"]} — records seated in this ' + ('structure' if r.get('type') else 'room') + ' of the Crimson Hexagon',
+                         f'The {len(rows)} archive records seated in {r["locus"]} {r["name"]}, ' + ('a structure' if r.get('type') else 'a room') + ' of the Crimson Hexagon by Lee Sharks: '
                          'how each bears on the room, in its own words.',
-                         [('Alexanarch', '/'), ('Rooms of the Crimson Hexagon', '/s/rooms/'), (f'{r["locus"]} {r["name"]}', None)], ''.join(parts), len(rows)))
+                         [('Alexanarch', '/'), ('Rooms of the Crimson Hexagon', '/s/rooms/'), (f'{r["locus"]} {r["name"]}', None)], ''.join(parts), len(rows) + len(lw)))
         urls.append(path)
-    desc = (f'The rooms of the Crimson Hexagon, the distributed epic by Lee Sharks, and the {len(S["seats"])} archive records seated in them: '
+    root.append(out)
+    desc = (f'The rooms of the Crimson Hexagon, the distributed epic by Lee Sharks, and the {seated} archive records seated in them: '
             'each room\'s physics and prompt, and a page per room of its records.')
     write('/s/rooms/', page('/s/rooms/', 'Rooms of the Crimson Hexagon — records by room', desc,
                             [('Alexanarch', '/'), ('Browse', '/s/browse/'), ('Rooms of the Crimson Hexagon', None)], ''.join(root), len(S['seats'])))

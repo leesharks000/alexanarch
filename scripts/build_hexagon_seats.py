@@ -35,6 +35,17 @@ def main():
         rooms[r['id']] = {'id': r['id'], 'locus': m.group(1) if m else r.get('hex_address') or r['id'], 'name': name,
                           'hex_address': r.get('hex_address'), 'url': f'{SITE}/rooms/{slug}', 'physics': r.get('physics'),
                           'desc': r.get('desc'), 'prompt': r.get('prompt'), 'cat': r.get('cat')}
+    # 2026-10-16 RULINGS (data/room-readings/rulings-applied-2026-10-16.json): loci the room belt does not hold — the
+    # transversal structures (Armature, Secret Name, Pearl) and UMBML, "a meta structure of cha" — and notes on loci.
+    RP = ROOT / 'data/room-readings/rulings-applied-2026-10-16.json'
+    RU = json.load(open(RP)) if RP.exists() else {}
+    for L in RU.get('loci', []):
+        rooms[L['id']] = {'id': L['id'], 'locus': L['id'], 'name': L['name'], 'hex_address': None, 'url': L['url'],
+                          'physics': None, 'desc': L['desc'], 'prompt': None, 'cat': 'structure', 'type': L['type'],
+                          'ruling': {'clause': L['clause'], 'by': RU['ruled_by']}}
+    for rid, nt in (RU.get('locus_notes') or {}).items():
+        if rid in rooms:
+            rooms[rid]['note'] = dict(nt, by=RU['ruled_by'])
     works = {x.upper() for x in os.listdir(it / 'public/works') if (it / 'public/works' / x / 'index.html').exists()}
     seats = {}
     for x in canon['documents']:
@@ -53,9 +64,11 @@ def main():
     # pages seat works the canonical document list does not — the constituting documents of R:r.36 The Λ-Body, Ruby
     # Moot, Pergamum and the rest (322 seats on 294 records). Every record link on a room page, outside the adjacency
     # and surface-map sections, is a seat; its section heading gives its role.
-    slug_of = {r['id']: (r.get('page_url') or '').rstrip('/').split('/')[-1] for r in canon['rooms']}
-    for rid, slug in slug_of.items():
-        p = it / 'public/rooms' / slug / 'index.html'
+    pages = {r['id']: it / 'public/rooms' / (r.get('page_url') or '').rstrip('/').split('/')[-1] / 'index.html'
+             for r in canon['rooms'] if (r.get('page_url') or '').rstrip('/')}
+    for L in RU.get('loci', []):                             # the structure pages seat their constituting work the same way
+        pages[L['id']] = it / 'public' / L['url'].split('crimsonhexagonal.org/')[1] / 'index.html'
+    for rid, p in pages.items():
         if rid not in rooms or not p.exists():
             continue
         page = p.read_text(encoding='utf-8')
@@ -104,7 +117,49 @@ def main():
                     src.append('read 2026-10-16')
                 if x['relation'] == 'constitutes':
                     e.setdefault('roles', {})[x['locus']] = 'constituting'
-    seats = {n: e for n, e in seats.items() if e['rooms']}
+    # 2026-10-16 RULINGS, applied over the reading. Moves first (the Encyclotron, R:r.15 → R:r.05: only a seat the reading
+    # alone gave is moved), then ruled seats. A ruled primary seat takes the primary flag from the reader's.
+    by_n = {str(d['deposit_number']): d for d in reg['deposits']}
+    for mv in RU.get('moves', []):
+        for n in map(str, mv['deposits']):
+            e = seats.get(n)
+            if not e:
+                continue
+            e['proposed'] = [x for x in e.get('proposed', []) if x['locus'] != mv['from']]
+            src = (e.get('sources') or {}).get(mv['from'], [])
+            x = (e.get('read') or {}).get(mv['from'])
+            if x and src == ['read 2026-10-16']:
+                e['read'].pop(mv['from']); e['sources'].pop(mv['from']); e['rooms'].remove(mv['from'])
+                (e.get('roles') or {}).pop(mv['from'], None)
+                if mv['to'] not in e['read']:
+                    e['read'][mv['to']] = dict(x, batch=f"{x['batch']}; moved {mv['from']} → {mv['to']} by ruling 2026-10-16")
+                    if mv['to'] not in e['rooms']:
+                        e['rooms'].append(mv['to'])
+                    e['sources'].setdefault(mv['to'], []).append('ruled 2026-10-16')
+                e.setdefault('moved', []).append({'from': mv['from'], 'to': mv['to'], 'clause': mv['clause']})
+    for g in RU.get('seats', []):
+        for n in map(str, g['deposits']):
+            d = by_n[n]
+            e = seats.setdefault(n, {'hex': d['hex'], 'rooms': [], 'assignment': 'ruled 2026-10-16',
+                                     'works_url': f"{SITE}/works/{d['hex'].lower()}" if d['hex'] in works else None})
+            rd = e.setdefault('read', {})
+            if g['primary']:
+                for x in rd.values():
+                    x['primary'] = False
+            prev = rd.get(g['locus'])
+            rd[g['locus']] = {'relation': g['relation'], 'confidence': 'ruled', 'primary': g['primary'] or bool(prev and prev.get('primary')),
+                              'basis': {'ruling': RU['ruled_by'], 'group': g['group']}, 'batch': 'ruled 2026-10-16'}
+            if g['locus'] not in e['rooms']:
+                e['rooms'].append(g['locus'])
+            e['proposed'] = [x for x in e.get('proposed', []) if x['locus'] != g['locus']]
+            src = e.setdefault('sources', {}).setdefault(g['locus'], [])
+            if 'ruled 2026-10-16' not in src:
+                src.append('ruled 2026-10-16')
+            if g['relation'] == 'constitutes':
+                e.setdefault('roles', {})[g['locus']] = 'constituting'
+    # Low seats are kept and shown in the index, marked for later adjudication (ruling 2026-10-16); a record seated only
+    # at low confidence stays in the file with no rooms.
+    seats = {n: e for n, e in seats.items() if e['rooms'] or e.get('proposed')}
     out = {'what': ('Records of the alexanarch registry seated in rooms of the Crimson Hexagon (crimsonhexagonal.org), from '
                     'the interface\'s hexagon_canonical.json; assignment as recorded there. Read by the record pages and /s/rooms/.'),
            'generated': '2026-10-16', 'rooms': rooms, 'seats': seats}
