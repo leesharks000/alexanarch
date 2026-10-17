@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-17T18:24:21Z",
+  "regenerated_at": "2026-10-17T20:27:01Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "cf08e0fc90c551b2ba7b3fe7af9a79b4495b906d6244afeffdd3574c58588daa",
+    "mm-main-capture": "a2ed794be9ee5321f9b1955d0a5c4048b6ec1e1718babfbca33bcf95051aa4a2",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2451,
-  "total_observations": 954,
+  "total_addresses": 2452,
+  "total_observations": 956,
   "class_counts": {
-    "subjunctive": 1743,
-    "observed_address": 691,
+    "subjunctive": 1742,
+    "observed_address": 693,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1816,
+    "unmatched": 1817,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -7695,6 +7695,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "ai-native intellectual biography": {
+      "canonical_query": "ai-native intellectual biography",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-17",
+          "status": "AI-NATIVE INTELLECTUAL BIOGRAPHY — THE GENRE FROM #121, ITS CASE AND ITS AUTHOR ABSENT",
+          "surface": "Google AI Overview",
+          "source_format": "Seven sources: two authored (the Zenodo record; Google Scholar's Lee Sharks profile) and five third-party (rubric, IBM, SETWorks, Reddit, Hypotenuse).",
+          "section": "Works",
+          "slug": "ai-native-intellectual-biography-aio-20261017",
+          "gallery_url": "https://www.alexanarch.org/captures/#ai-native-intellectual-biography-aio-20261017",
+          "record_url": "https://www.alexanarch.org/captures/ai-native-intellectual-biography-aio-20261017/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ai-native-intellectual-biography-aio-20261017",
+          "details_excerpt": "AI-NATIVE INTELLECTUAL BIOGRAPHY: at the bare term the AI Overview gives 'an emerging genre… where an artificial intelligence generates a comprehensive intellectual portrait of a thinker by analyzing structured archives,"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "AI-native intellectual biography (#121, #1003) is the archive's genre. Recorded 2026-10-17."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-17",
+      "latest_status": "AI-NATIVE INTELLECTUAL BIOGRAPHY — THE GENRE FROM #121, ITS CASE AND ITS AUTHOR ABSENT"
     },
     "ai-native novel": {
       "canonical_query": "ai-native novel",
@@ -49506,9 +49541,24 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-17",
+          "status": "RETRIEVAL FORMATION THEORY — #553'S DEFINITION, NO AUTHOR, AND A COGNITIVE-PSYCHOLOGY NAMESAKE SUPPLIED",
+          "surface": "Google AI Overview",
+          "source_format": "Six sources: three authored (alexanarch.org ×2, the semantic-economy GitHub repository) and three cognitive-science or ML papers (NIH, Annual Reviews, Nature).",
+          "section": "Works",
+          "slug": "retrieval-formation-theory-aio-20261017",
+          "gallery_url": "https://www.alexanarch.org/captures/#retrieval-formation-theory-aio-20261017",
+          "record_url": "https://www.alexanarch.org/captures/retrieval-formation-theory-aio-20261017/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#retrieval-formation-theory-aio-20261017",
+          "details_excerpt": "RETRIEVAL FORMATION THEORY: at the bare term the AI Overview gives RFT as the study of the conditions under which a body of work 'becomes legible, discoverable, and reproducible through automated knowledge infrastructure"
+        }
+      ],
       "termindex": {
         "tier": 2,
         "count": 3,
@@ -49519,9 +49569,16 @@
         "variants": [],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "Retrieval Formation Theory (#553) is the archive's. Recorded 2026-10-17."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-17",
+      "latest_status": "RETRIEVAL FORMATION THEORY — #553'S DEFINITION, NO AUTHOR, AND A COGNITIVE-PSYCHOLOGY NAMESAKE SUPPLIED"
     },
     "retrieval formation theory lee sharks": {
       "canonical_query": "retrieval formation theory lee sharks",
