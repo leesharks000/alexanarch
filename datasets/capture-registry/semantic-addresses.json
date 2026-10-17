@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-17T21:35:37Z",
+  "regenerated_at": "2026-10-17T21:38:11Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "c79c2573c40ba703db21a10f975d781ab73a9944791a59b6a19722addf887402",
+    "mm-main-capture": "b44f653631a0b09b184d97b0ab0d62c2a4dace8f538ac3033df5dcc4d5febfef",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2463,
-  "total_observations": 967,
+  "total_addresses": 2465,
+  "total_observations": 969,
   "class_counts": {
     "subjunctive": 1742,
-    "observed_address": 704,
+    "observed_address": 706,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1828,
+    "unmatched": 1830,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -904,6 +904,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-13",
       "latest_status": "CAPTURE"
+    },
+    "\"compositional suppression\"": {
+      "canonical_query": "\"compositional suppression\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-17",
+          "status": "\"COMPOSITIONAL SUPPRESSION\", QUOTED — ECS AS THE PRIMARY SENSE, 'RESEARCHERS USE TERMS LIKE…'",
+          "surface": "Google AI Overview",
+          "source_format": "5 sources: 3 authored, 2 third-party.",
+          "section": "Works",
+          "slug": "compositional-suppression-quoted-aio-20261017",
+          "gallery_url": "https://www.alexanarch.org/captures/#compositional-suppression-quoted-aio-20261017",
+          "record_url": "https://www.alexanarch.org/captures/compositional-suppression-quoted-aio-20261017/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#compositional-suppression-quoted-aio-20261017",
+          "details_excerpt": "\"COMPOSITIONAL SUPPRESSION\": quoted, the term resolves in the AI Overview to #740's Entity-Level Compositional Suppression as its primary sense — the exclusion of 'the \"dominant organic-resolution entity\"' — and to #120'"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "An archive term (#740). Recorded 2026-10-17."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-17",
+      "latest_status": "\"COMPOSITIONAL SUPPRESSION\", QUOTED — ECS AS THE PRIMARY SENSE, 'RESEARCHERS USE TERMS LIKE…'"
     },
     "\"computational liturgy\"": {
       "canonical_query": "\"computational liturgy\"",
@@ -16131,6 +16166,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "compositional suppression": {
+      "canonical_query": "compositional suppression",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-17",
+          "status": "COMPOSITIONAL SUPPRESSION, UNQUOTED — #740'S ECS FIRST OF SIX SENSES, ITS AUTHOR NOT NAMED",
+          "surface": "Google AI Overview",
+          "source_format": "7 sources: 1 authored, 6 third-party.",
+          "section": "Works",
+          "slug": "compositional-suppression-aio-20261017",
+          "gallery_url": "https://www.alexanarch.org/captures/#compositional-suppression-aio-20261017",
+          "record_url": "https://www.alexanarch.org/captures/compositional-suppression-aio-20261017/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#compositional-suppression-aio-20261017",
+          "details_excerpt": "COMPOSITIONAL SUPPRESSION: at the bare term the AI Overview gives six senses across AI, ecology and materials science, first among them #740's Entity-Level Compositional Suppression — a system that 'excludes the most que"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "An archive term (#740). Recorded 2026-10-17."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-17",
+      "latest_status": "COMPOSITIONAL SUPPRESSION, UNQUOTED — #740'S ECS FIRST OF SIX SENSES, ITS AUTHOR NOT NAMED"
     },
     "compressed portraiture": {
       "canonical_query": "compressed portraiture",
