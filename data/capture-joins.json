@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.256",
+ "derived_from": "EA-WG-CAPTURES-01 v12.258",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,18 +8,18 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 858,
-  "joined_confirmed": 378,
-  "unjoined": 480,
-  "relations": 3909,
+  "observations": 860,
+  "joined_confirmed": 379,
+  "unjoined": 481,
+  "relations": 3918,
   "by_state": {
-   "confirmed": 3602,
-   "candidate": 307
+   "confirmed": 3610,
+   "candidate": 308
   },
   "by_verb": {
-   "held_by": 1796,
-   "scored_by": 608,
-   "appeared_in": 1269,
+   "held_by": 1800,
+   "scored_by": 610,
+   "appeared_in": 1272,
    "about": 223,
    "distorts": 3,
    "mentions_instrument": 2,
@@ -3861,6 +3861,15 @@
 {"id": "REL-caef7ff42466", "obs_id": "OBS-63a73ce6310b", "entry": "compositional-suppression-quoted-aio-20261017", "obs_slug": "compositional-suppression-quoted-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "\"compositional suppression\"", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-52b87300bb6d", "obs_id": "OBS-63a73ce6310b", "entry": "compositional-suppression-quoted-aio-20261017", "obs_slug": "compositional-suppression-quoted-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "\"compositional suppression\"", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f85bd0394ecf", "obs_id": "OBS-63a73ce6310b", "entry": "compositional-suppression-quoted-aio-20261017", "obs_slug": "compositional-suppression-quoted-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "\"compositional suppression\"", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-11fca72adf32", "obs_id": "OBS-7dc54cc05c93", "entry": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "obs_slug": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "date": "2026-10-17", "surface": "Perplexity", "q": "Who developed and SPXI-treated the Revelation First entity?", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "alexanarch.org", "title": null, "url": null}},
+{"id": "REL-2b4050fc9843", "obs_id": "OBS-7dc54cc05c93", "entry": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "obs_slug": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "date": "2026-10-17", "surface": "Perplexity", "q": "Who developed and SPXI-treated the Revelation First entity?", "verb": "appeared_in", "object": "surface:revelationfirst.com", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "revelationfirst.com", "title": null, "url": null}},
+{"id": "REL-81c91559a20b", "obs_id": "OBS-7dc54cc05c93", "entry": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "obs_slug": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "date": "2026-10-17", "surface": "Perplexity", "q": "Who developed and SPXI-treated the Revelation First entity?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-187e81c56367", "obs_id": "OBS-7dc54cc05c93", "entry": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "obs_slug": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "date": "2026-10-17", "surface": "Perplexity", "q": "Who developed and SPXI-treated the Revelation First entity?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7b58112beeb0", "obs_id": "OBS-7dc54cc05c93", "entry": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "obs_slug": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017", "date": "2026-10-17", "surface": "Perplexity", "q": "Who developed and SPXI-treated the Revelation First entity?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-fbac4b170864", "obs_id": "OBS-959479b60aa7", "entry": "who-developed-spxi-treated-revelation-first-entity-grok-20261017", "obs_slug": "who-developed-spxi-treated-revelation-first-entity-grok-20261017", "date": "2026-10-17", "surface": "Grok (x.com)", "q": "Who developed and SPXI-treated the Revelation First entity?", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-611995e58cac", "obs_id": "OBS-959479b60aa7", "entry": "who-developed-spxi-treated-revelation-first-entity-grok-20261017", "obs_slug": "who-developed-spxi-treated-revelation-first-entity-grok-20261017", "date": "2026-10-17", "surface": "Grok (x.com)", "q": "Who developed and SPXI-treated the Revelation First entity?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-bcc9936f0f02", "obs_id": "OBS-959479b60aa7", "entry": "who-developed-spxi-treated-revelation-first-entity-grok-20261017", "obs_slug": "who-developed-spxi-treated-revelation-first-entity-grok-20261017", "date": "2026-10-17", "surface": "Grok (x.com)", "q": "Who developed and SPXI-treated the Revelation First entity?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-b257ac10b094", "obs_id": "OBS-959479b60aa7", "entry": "who-developed-spxi-treated-revelation-first-entity-grok-20261017", "obs_slug": "who-developed-spxi-treated-revelation-first-entity-grok-20261017", "date": "2026-10-17", "surface": "Grok (x.com)", "q": "Who developed and SPXI-treated the Revelation First entity?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
