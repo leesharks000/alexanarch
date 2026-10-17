@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.220",
+ "derived_from": "EA-WG-CAPTURES-01 v12.222",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,18 +8,18 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 823,
-  "joined_confirmed": 350,
-  "unjoined": 473,
-  "relations": 3711,
+  "observations": 825,
+  "joined_confirmed": 351,
+  "unjoined": 474,
+  "relations": 3720,
   "by_state": {
-   "confirmed": 3421,
+   "confirmed": 3430,
    "candidate": 290
   },
   "by_verb": {
-   "held_by": 1726,
-   "scored_by": 573,
-   "appeared_in": 1189,
+   "held_by": 1730,
+   "scored_by": 575,
+   "appeared_in": 1192,
    "about": 210,
    "distorts": 3,
    "mentions_instrument": 2,
@@ -3663,6 +3663,15 @@
 {"id": "REL-46ef5be699c1", "obs_id": "OBS-8f2de6ab17cd", "entry": "main-character-crimson-hexagonal-epic-book-one-chatgpt-20261016", "obs_slug": "main-character-crimson-hexagonal-epic-book-one-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-2d5e4d79cc87", "obs_id": "OBS-8f2de6ab17cd", "entry": "main-character-crimson-hexagonal-epic-book-one-chatgpt-20261016", "obs_slug": "main-character-crimson-hexagonal-epic-book-one-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-82b687a2c4ff", "obs_id": "OBS-8f2de6ab17cd", "entry": "main-character-crimson-hexagonal-epic-book-one-chatgpt-20261016", "obs_slug": "main-character-crimson-hexagonal-epic-book-one-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0215bc789108", "obs_id": "OBS-343a90d24cbb", "entry": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "obs_slug": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts. $ construct the first book in this epic poem. take reference to the iliad but ground in reading of crimson hexagon documents", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "www.crimsonhexagonal.org", "title": "The Sappho Room", "url": "https://www.crimsonhexagonal.org/rooms/sappho/"}},
+{"id": "REL-8b1ee1138da8", "obs_id": "OBS-343a90d24cbb", "entry": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "obs_slug": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts. $ construct the first book in this epic poem. take reference to the iliad but ground in reading of crimson hexagon documents", "verb": "appeared_in", "object": "deposit:1121", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "Amazon.com", "title": "Pearl and Other Poems (The Crimson Hexagon) - Amazon.com", "url": null}},
+{"id": "REL-7d4d7f181a08", "obs_id": "OBS-343a90d24cbb", "entry": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "obs_slug": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts. $ construct the first book in this epic poem. take reference to the iliad but ground in reading of crimson hexagon documents", "verb": "appeared_in", "object": "surface:leesharks.com", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "www.leesharks.com", "title": "The Crimson Hexagon — the plan - Lee Sharks", "url": "https://www.leesharks.com/hexagon/"}},
+{"id": "REL-3cfd93a974a7", "obs_id": "OBS-343a90d24cbb", "entry": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "obs_slug": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts. $ construct the first book in this epic poem. take reference to the iliad but ground in reading of crimson hexagon documents", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-6063f3ee2117", "obs_id": "OBS-343a90d24cbb", "entry": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "obs_slug": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts. $ construct the first book in this epic poem. take reference to the iliad but ground in reading of crimson hexagon documents", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-a46614a66fca", "obs_id": "OBS-343a90d24cbb", "entry": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "obs_slug": "main-character-crimson-hexagonal-epic-book-one-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts. $ construct the first book in this epic poem. take reference to the iliad but ground in reading of crimson hexagon documents", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-1fbc062cd1bb", "obs_id": "OBS-c1a8beda34e1", "entry": "main-character-crimson-hexagonal-epic-aio-20261017", "obs_slug": "main-character-crimson-hexagonal-epic-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-3fe66d637be6", "obs_id": "OBS-c1a8beda34e1", "entry": "main-character-crimson-hexagonal-epic-aio-20261017", "obs_slug": "main-character-crimson-hexagonal-epic-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-94da3d4b03c9", "obs_id": "OBS-c1a8beda34e1", "entry": "main-character-crimson-hexagonal-epic-aio-20261017", "obs_slug": "main-character-crimson-hexagonal-epic-aio-20261017", "date": "2026-10-17", "surface": "Google AI Overview", "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
