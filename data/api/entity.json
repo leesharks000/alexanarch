@@ -222,7 +222,7 @@
   ]
  },
  "as_of": {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "registry_head": "19f27ba8fff794a21f764e6d23872faa7f8a918cca9fd1660ae65b16aadbb62c",
   "note": "Counts are dated. Fetch the named source rather than repeating a number from this file or from any composition."
  },
@@ -812,12 +812,12 @@
    "scale_at_snapshot": "1,677 deposits before this one, no gaps (`/api/counts.json`). By status: ACTIVE 1,462 · SUPERSEDED 195 · CANONICAL 5 · WITHDRAWN 5 · DRAFT 4 · PRESERVED_AS_HISTORICAL_SEED 1 · undeclared 5. By declared text state: canonical_full_text 1,007 · recovered_full_text 353 · metadata_only 56 · attachment_only 1 · SEATED 1 · undeclared 259.",
    "measured": {
     "deposits": {
-     "value": 1682,
+     "value": 1683,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
-      "ACTIVE": 1443,
+      "ACTIVE": 1444,
       "SUPERSEDED": 219,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
@@ -829,12 +829,12 @@
     },
     "by_text_state": {
      "value": {
-      "canonical_full_text": 997,
-      "recovered_full_text": 363,
+      "canonical_full_text": 996,
+      "recovered_full_text": 362,
+      "metadata_only": 58,
       "attachment_only": 1,
-      "metadata_only": 56,
       "SEATED": 1,
-      "undeclared": 264
+      "undeclared": 265
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -941,11 +941,11 @@
    "scale_at_snapshot": "1,677 record pages and wiki entries; body search over sharded full text (`/api/body-shards/manifest.json`).",
    "measured": {
     "record_pages": {
-     "value": 1682,
+     "value": 1683,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1682,
+     "value": 1683,
      "source": "registry wiki_article"
     }
    },
@@ -1102,7 +1102,7 @@
    "scale_at_snapshot": "OAI-PMH: 1,616 of 1,677 records exposed (61 withheld by doctrine: foreign tombstones and audit-withheld records), validated by the Open Archives Initiative validator 2026-07-31 (38 tests, 0 errors). `leesharks/crimson-hexagonal-archive`: 23 configurations. Contracted endpoints in `/api/endpoint-contract.json`.",
    "measured": {
     "oai_exposed": {
-     "value": 1621,
+     "value": 1622,
      "source": "/oai (completeListSize)",
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
@@ -1226,7 +1226,7 @@
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 339,
+     "value": 340,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1323,7 +1323,7 @@
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1682,
+   "data": 1683,
    "note": "stated deposit count vs registry"
   },
   {

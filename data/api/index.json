@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.1",
-  "last_updated": "2026-10-15",
+  "last_updated": "2026-10-18",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -177,12 +177,12 @@
       "name": "Deposit Registry (the AXN registry)",
       "canonical_path": "/data/registry.json",
       "purpose": "Canonical list of every deposit. Drives home-page Recent Deposits, browse page, sitemap, chunks. THE source of truth — all other surfaces are derived.",
-      "current_count": 1682,
+      "current_count": 1683,
       "validates_against": [
         "/api/schemas/deposit-entry.schema.json"
       ],
       "regenerated_by_change": "scripts/regenerate_surfaces.py must run after every change. Mint workflow does this automatically; manual edits must do it explicitly.",
-      "last_updated": "2026-10-07T20:04:49Z"
+      "last_updated": "2026-10-18T05:53:32Z"
     },
     "entities": {
       "name": "Entity / Concept Index",
@@ -579,17 +579,17 @@
   "state": {
     "canonical_path": "/data/state.json",
     "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
-    "content_sha256": "1af54b17e7147c20ddd1cec31e213ad625c116a8f7659c362a2a23ec42f722c7"
+    "content_sha256": "79369896e97a2b3a7565d51e01e735a5b6cae064b416a2c439993f192d91a716"
   },
   "surface_hashes": {
     "algorithm": "sha256",
-    "hashed_at": "2026-10-15T18:13:43Z",
+    "hashed_at": "2026-10-18T05:58:17Z",
     "files": {
-      "data/registry.json": "19f27ba8fff794a21f764e6d23872faa7f8a918cca9fd1660ae65b16aadbb62c",
-      "data/api/search-index.json": "4f5cc43ddcf9cbea3374e36b5a564ebc21487a97206b5ee3c16275aa3d375d07",
-      "data/api/body-index.json": "85524501b7b66201c58251f791073b9deb6faa213220cdf54782129140559e57",
-      "data/api/axn-index.json": "f2ff58e9a0263f8c8ca2a3fa47ea7ac95813f1a5a8d5cb2e402db72b26d150d7",
-      "data/doi-resolution-index.json": "a34761b03da4f82378c9d226bdbdc60bdb2accafd3e56f9beb98639e1f533165"
+      "data/registry.json": "7cf70b4baeec01fcaef4eaa1812262678c69897073e4c2e380fba723cd35e711",
+      "data/api/search-index.json": "3f92854d520e4bfea787bdae07a30e2596195539ce27adc6f5c12a66979f0a4c",
+      "data/api/body-index.json": "3c21d8c0f3b2544e81dccbab20c2b7a5b6e145ef596cb8bf1d2b649fbd022e4f",
+      "data/api/axn-index.json": "04f3ef37d238e34405c3909cd96b5409bc6612e44cf0a9f5e21916932efa3457",
+      "data/doi-resolution-index.json": "7864852a6efaf21e5b3c52589c3decc63f3fb44f9d529f2d22bc78f8861789e7"
     }
   }
 }
