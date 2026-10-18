@@ -13,7 +13,7 @@
     "Network Preservation",
     "Tombstone Guarantee"
   ],
-  "total_deposits": 1688,
+  "total_deposits": 1689,
   "deposits": [
     {
       "axn": "AXN:0001.GOVERNANCE.♍🜁🏴⌛🍃💫",
@@ -540824,6 +540824,205 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "9938c5ab99a45d7d5f5ed8448d4b00ffb0373cb08fc5abffc6c1b409d1f21778",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1689,
+      "axn": "AXN:06FF.DATASET.♉🌟❤️☿🦋🌹",
+      "hex": "06FF",
+      "family": "DATASET",
+      "emoji": "♉🌟❤️☿🦋🌹",
+      "hash": "aa0981a27c730d8c4a3e03f1b4080a75ba056f31f2c52101832d7f33983e3d1e",
+      "title": "EA-CORPORA-19 — The Nineteenth Seating: Pearl, the Masnavi, The Prophet and Blake's Illuminated Books, Each in Its Original Language",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-18",
+      "description": "Four seats on the originals shelf, 15 works and 139,257 lines, each in the language it was written in and public domain in the United States. The Pearl poet's Pearl, Cleanness and Patience in Middle English, in Richard Morris's first edition (Early English Text Society, 1864), with the unique manuscript, British Library Cotton Nero A.x, in the EETS facsimile of 1923 and Israel Gollancz's Pearl of 1891; Rumi's Masnavi-yi Ma'navi, all six books, in Persian, from Ganjoor; Kahlil Gibran's The Prophet (Knopf, 1923) entire, in English, the language Gibran wrote it in, with his twelve drawings; and Blake's illuminated books as text, in Geoffrey Keynes's Writings of William Blake (Nonesuch, 1925), with the Songs of Innocence and of Experience and The Marriage of Heaven and Hell also as proofread texts. Each seat holds the files as fetched, scans where the page is the witness, one text per work, a provenance record with its verified loci, and a SHA-256 manifest; each has a spine and a card on the Training Layer Literature shelf. What is not seated — Sir Gawain apart from the facsimile, the Divan-e Shams, translations, Blake's plates as images — is named.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. Sources located, fetched, verified against their front matter, assembled into seats, hashed and indexed, and every locus found in the seated text, all in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction. The selection — Pearl, Rumi, Gibran's The Prophet, Blake's illuminated books, originals in the original language — is Lee Sharks's. CC-BY-4.0 applies to this record and the seat records; each payload carries its own licence, stated per seat.",
+      "methodology": "Sources located on Project Gutenberg (catalogue searched by author and title), the Internet Archive (advanced search, item metadata read for access restriction and files) and Ganjoor (its public API, api.ganjoor.net, section by section). Each item's front matter read against the edition claimed for it; publishers not shown in a file are not asserted. Gutenberg texts stripped at the START/END markers; Internet Archive scans seated with their OCR text layers, uncorrected, the scan as witness; Ganjoor's sections seated as fetched, one JSONL per book, and rendered one couplet per line with the hemistichs joined by ' / '. Every file hashed into the seat's MANIFEST.sha256. Every verified locus is a string found in the seated text by rebuild/corpora/ea-corpora-19/build_seats.py; a locus not found is recorded as not found. Licences stated per seat, with the EU term carried where it differs (payload/record split, EA-CORPORA-02/01). The builders, the seat specification and this body are under rebuild/corpora/ea-corpora-19/.",
+      "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a seated file differs from the file at the origin its source.json names; if an edition statement misstates the front matter of the file it describes; if a verified locus cannot be found in the seated text; if an item stated public domain in the United States was published in or after 1931 by an author not in the public domain in the source country on 1 January 1996; or if the four surfaces (seat, index, deposit, shelf) disagree.",
+      "root_axn": "AXN:06FF.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "aa0981a27c730d8c4a3e03f1b4080a75ba056f31f2c52101832d7f33983e3d1e",
+      "clusters": [
+        "Alchemical",
+        "Celestial",
+        "Symbolic",
+        "Alchemical",
+        "Organic",
+        "Organic"
+      ],
+      "axn_reading": "Transmutation -> Origin -> Play -> Transmutation -> Growth -> Growth",
+      "minted_at": "2026-10-18T23:07:20Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06FF-text.md",
+      "wiki_article": "EA-CORPORA-19 seats four works on the archive's originals shelf, each in the language it was written in and public domain in the United States: 15 works and about 139,000 lines. The Pearl poet's Pearl, Cleanness and Patience are seated in Middle English in Richard Morris's first edition (Early English Text Society, 1864), with the unique manuscript, British Library Cotton Nero A.x, in the EETS facsimile of 1923, and Israel Gollancz's Pearl of 1891 with its modern rendering on the facing page. Pearl is a dream vision of the late fourteenth century in 1,212 lines: a father who has lost a pearl, his daughter, sees her across a river in the New Jerusalem of Revelation 21. It is the poem whose name the archive's own Pearl and Other Poems (2014) carries. Rumi's Masnavi-yi Ma'navi is seated whole in Persian, six books and 972 sections, as Ganjoor transcribes it, opening with the reed's lament for its separation from the reed bed. Kahlil Gibran's The Prophet (Knopf, 1923) is seated entire in English, the language Gibran wrote it in, with his twelve drawings. Blake's illuminated books are seated as text in Geoffrey Keynes's Writings of William Blake (Nonesuch, 1925), from There is No Natural Religion and the Songs to Milton and Jerusalem, with the Songs of Innocence and of Experience and The Marriage of Heaven and Hell also as proofread texts; the plates as images are queued. Each seat holds the files as fetched, scans where the page is the witness, one text per work, a provenance record with verified loci and a SHA-256 manifest, and each has a spine and a card on the Training Layer Literature originals shelf.",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-19 — The Nineteenth Seating: Pearl, the Masnavi, The Prophet and Blake's Illuminated Book",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-19 — The Nineteenth Seating: Pearl, the Masnavi, The Prophet and Blake's Illuminated Book",
+          "predicate": "is_type",
+          "object": "Dataset",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-19 — The Nineteenth Seating: Pearl, the Masnavi, The Prophet and Blake's Illuminated Book",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-19 — The Nineteenth Seating: Pearl, the Masnavi, The Prophet and Blake's Illuminated Book",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "corpus seating",
+        "primary sources",
+        "public domain",
+        "original language",
+        "Pearl",
+        "the Pearl poet",
+        "Gawain poet",
+        "Cotton Nero A.x",
+        "Cleanness",
+        "Patience",
+        "Middle English",
+        "alliterative revival",
+        "dream vision",
+        "Richard Morris",
+        "Early English Text Society",
+        "Israel Gollancz",
+        "Rumi",
+        "Jalal al-Din Rumi",
+        "Masnavi",
+        "Mathnawi",
+        "Persian poetry",
+        "Sufism",
+        "Song of the Reed",
+        "Ganjoor",
+        "Kahlil Gibran",
+        "The Prophet",
+        "Almustafa",
+        "William Blake",
+        "illuminated books",
+        "prophetic books",
+        "Songs of Innocence and of Experience",
+        "The Marriage of Heaven and Hell",
+        "The Book of Urizen",
+        "Milton",
+        "Jerusalem",
+        "Geoffrey Keynes",
+        "Nonesuch Press",
+        "Training Layer Literature",
+        "originals shelf",
+        "EA-CORPORA"
+      ],
+      "related_identifiers_raw": "AXN deposit #1682 — EA-CORPORA-18: the preceding seating, whose form this one follows\nAXN deposit #1580 — EA-CORPORA-12: the rule that seatings are periodically gathered\nAXN deposit #1121 — Pearl and Other Poems (2014): the archive's own book of the name, seated at EA-CORPORA-03/02\nSeat EA-CORPORA-03/02 (pearl-and-other-poems) — on the same shelf",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 14092,
+        "audited_at": "2026-10-18T23:07:20Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        {
+          "deposit": 1682,
+          "relation": "EA-CORPORA-18, the preceding seating, whose form this one follows"
+        },
+        {
+          "deposit": 1580,
+          "relation": "EA-CORPORA-12, the rule that seatings are periodically gathered"
+        },
+        {
+          "deposit": 1121,
+          "relation": "Pearl and Other Poems (2014), the archive's own book of the name"
+        }
+      ],
+      "concepts_attested_none": true,
+      "related_attested_none": false,
+      "lexical_attested_none": true,
+      "references_concepts": [
+        "Gospel of John",
+        "Lee Sharks",
+        "Pearl and Other Poems",
+        "TACHYON",
+        "The Pearl Poet",
+        "Training Layer",
+        "Training Layer Literature"
+      ],
+      "references_concept_count": 7,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06FF.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-18T23:09:35.271936+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "authorial_position_phrase"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "13ccf4c2b3f764c02cb19c7728eb108326f1d03d8bd7bcacfc37964f45df62d9",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
