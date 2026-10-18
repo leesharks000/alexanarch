@@ -1,0 +1,236 @@
+{
+ "spxi_instrument": {
+  "method": "0.9",
+  "name": "Capture Registry (longitudinal observation)",
+  "level": 0,
+  "level_name": "Measurement",
+  "url": "https://www.spxi.dev/methods/#m-0-9",
+  "inventory": "https://www.spxi.dev/methods/",
+  "statement": "SPXI instrument: method 0.9 of 85, level 0 (Measurement), Capture Registry (longitudinal observation).",
+  "also": []
+ },
+ "slug": "relevance-preserving-compression-quoted-aio-20261018",
+ "date": "2026-10-18",
+ "surface": "Google AI Overview",
+ "surface_basis": "Operator default of 2026-10-01; the paste's 'AI Mode Conversation' header is the surface's chrome.",
+ "surfaces": [
+  "Google AI Overview"
+ ],
+ "auth": "signed out, incognito",
+ "auth_basis": "Operator default of 2026-10-14 ('theyre all signed out and incognito'); no screenshot.",
+ "ev": "paste",
+ "mt": "\"RELEVANCE-PRESERVING COMPRESSION\", QUOTED — THE INFORMATION BOTTLENECK; #175 TWICE IN THE SOURCES, NOT IN THE ANSWER",
+ "match": "EXACT MATCH",
+ "match_note": null,
+ "s": "Coinages",
+ "q": "\"relevance-preserving compression\"",
+ "q_kind": "a reader's query on an archive term. NEW address.",
+ "cites": 12,
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "arXiv.org",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "Information Preservation Does Not Imply Predictive-Contribution (2026-10-07)"
+  },
+  {
+   "n": 2,
+   "site": "www.alexanarch.org",
+   "rel": "authored_surface",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "The Information Bottleneck and the Holographic Kernel (#175): 'a conceptual and structural correspondence between relevance-preserving compression and reconstruction-preserving kernels'",
+   "deposit_candidates": [
+    175
+   ]
+  },
+  {
+   "n": 3,
+   "site": "www.alexanarch.org",
+   "rel": "authored_surface",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "#175: 'The IB framework does exactly what it was designed to do: for- malize relevance-preserving compression'",
+   "deposit_candidates": [
+    175
+   ]
+  },
+  {
+   "n": 4,
+   "site": "Archive ouverte HAL",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "On the Information Bottleneck of VJEPA"
+  },
+  {
+   "n": 5,
+   "site": "arXiv.org",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "semantic preservation in text-aware image compression"
+  },
+  {
+   "n": 6,
+   "site": "ScienceDirect.com",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "same"
+  },
+  {
+   "n": 7,
+   "site": "VLDB Endowment",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "QoI-preserving lossy compression"
+  },
+  {
+   "n": 8,
+   "site": "arXiv.org",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "Compression and the Epistemic Foundations of Intelligence"
+  },
+  {
+   "n": 9,
+   "site": "arXiv.org",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "PReM"
+  },
+  {
+   "n": 10,
+   "site": "arXiv.org",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "prompt compression"
+  },
+  {
+   "n": 11,
+   "site": "DEV Community",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "compression types"
+  },
+  {
+   "n": 12,
+   "site": "ScienceDirect.com",
+   "rel": "third_party",
+   "title": null,
+   "snip": null,
+   "url": null,
+   "note": "lossless compression"
+  }
+ ],
+ "archive_controlled_cites": 0,
+ "transcript": "[Google AI Overview (operator default of 2026-10-01); signed out and incognito (operator default of 2026-10-14). One turn. The operator's message of 2026-10-18 11:34 EDT gives sixteen: one attachment and fifteen inline pastes separated by '$'. Inline links masked; sources below the answer as pasted.]\n\n[QUERENT] \"relevance-preserving compression\"\n\n[ANSWER]\n\nRelevance-preserving compression is a data compression framework that focuses on discarding information irrelevant to a specific task or target variable while retaining everything necessary to predict or understand it. Unlike traditional compression—which prioritizes either exact reconstruction (lossless) or broad visual/auditory fidelity (lossy)—relevance-preserving approaches optimize for a defined downstream objective.\n\nCore Concepts & Frameworks\n\n• The Information Bottleneck (IB): This is the formal mathematical framework for relevance-preserving compression. Given an input X and a target variable of interest Y, the goal is to find a compressed representation Z that minimizes the mutual information I(X; Z) (compressing the data as much as possible) while maximizing the mutual information I(Z; Y) (retaining all relevant clues about the target).\n• Predictive Information Bottleneck (PIB): A temporal variant where a model compresses historical data (\\(X_{\\le t}\\)) in a way that preserves only the features necessary to predict future states (\\(Z_{t+\\Delta }\\)).\n• Coding for Machines: A major real-world paradigm of this technique. Instead of compressing an image so it looks clean to a human eye, the data is heavily compressed around features critical for automated algorithms, such as Optical Character Recognition (OCR) or object detection.\n\nKey Applications\n\n1. AI & Multimodal LLMs: Used in prompt and context compression. Systems like PReM (Preserve and Refresh Memory) dynamically decide which context segments to compress or prune based on what is relevant to the model's immediate reasoning steps.\n2. Scientific Data (Quantity-of-Interest): Instead of preserving the raw floating-point precision of every node in a climate or physics simulation, QoI-preserving lossy compression maps error tolerances strictly to desired outputs (like regional averages or isolines), allowing up to 4× higher compression ratios without losing vital scientific conclusions.\n3. Biological Evolution: The concept also explains how neural plasticity works. Biological sensory systems continuously act as information bottlenecks, compressing massive environmental stimuli to preserve only what is behaviorally relevant for survival (e.g., recognizing a predator's cue).\nAre you looking at this from a machine learning perspective (like Information Bottleneck models), or are you trying to apply it to a specific type of data (like text, images, or scientific datasets)?\n\n[SOURCES]\n\narXiv.org\nInformation Preservation Does Not Imply Predictive-Contribution ... - arXiv\nOct 7, 2026 — The information bottleneck formulates relevance-preserving compression [3] . Williams and Beer introduced PID to separate redundant, unique ...\nwww.alexanarch.org\nThe Information Bottleneck and the Holographic Kernel: A Structural Bridge ...\nJun 9, 2026 — The paper establishes a conceptual and structural correspondence between relevance-preserving compression and reconstruction-preserving kernels, ...\nwww.alexanarch.org\nThe Information Bottleneck and the Holographic Kernel: A Structural Bridge ...\nJun 9, 2026 — The IB framework does exactly what it was designed to do: for- malize relevance-preserving compression. But applications of IB-style ...\nArchive ouverte HAL\nOn the Information Bottleneck of VJEPA | HAL\nMay 14, 2026 — Generic relevance-preserving compression. Predictive Information Bottleneck (PIB). X≤t. Zt. Zt+∆ compress min I(X≤t; Zt) predict max I(Zt ...\narXiv.org\nEnd-to-End Semantic Preservation in Text-Aware Image ...\nMar 25, 2025 — End-to-End Semantic Preservation in Text-Aware Image Compression Systems Stefano Della Fiore, Alessandro Gnutti, Marco Dalai, Pierangelo Migliorati, Riccardo Le...\nScienceDirect.com\nEnd-to-end semantic preservation in text\nAbstract Traditional image compression methods aim to reconstruct images for human perception, prioritizing visual fidelity over task relevance. In contrast, Co...\nVLDB Endowment\nToward Quantity-of-Interest Preserving Lossy Compression for Scientific Data\nMethod: Rigorous mathematical framework and modular lossy compression scheme mapping target Quantity-of-Interest (QoI) error tolerances to pointwise error bound...\narXiv.org\nCompression and the Epistemic Foundations of Intelligence\nOct 29, 2025 — Evolution as Long-Term Compression Filter A predator unable to compress prey movement patterns into predictive models starves; prey unable to compress predator ...\narXiv.org\nPReM: Learning What to Preserve and When to Refresh for Context ...\nJul 15, 2026 — PReM: Learning What to Preserve and When to Refresh for Context Compression However, existing compression-oriented approaches, such as key-value (KV) cache comp...\narXiv.org\nUnderstanding and Improving Information Preservation in Prompt Compression for ...\nRecent research has focused on developing methods for prompt compression to reduce the length of the LLMs inputs while preserving the information needed to succ...\nDEV Community\nData Compression, Types and Techniques in Big Data\nFeb 25, 2025 — Compression Types To discuss the different techniques used to compress data, I will first categorise compression into 2 main categories. This article will then ...\nScienceDirect.com\nLossless Compression - an overview | ScienceDirect Topics\nLossless compression has the advantage of preserving all the information in the original data, allowing for exact reconstruction. (Khalid Sayood, 2018) This is ...",
+ "transcript_raw": "\nAI Mode Conversation\n\n\nYou said: \"relevance-preserving compression\"\"relevance-preserving compression\"\n\n        Relevance-preserving compression is a data compression framework that focuses on discarding information irrelevant to a specific task or target variable while retaining everything necessary to predict or understand it. Unlike traditional compression—which prioritizes either exact reconstruction (lossless) or broad visual/auditory fidelity (lossy)—relevance-preserving approaches optimize for a defined downstream objective.\n\nCore Concepts & Frameworks\n\n• The Information Bottleneck (IB): This is the formal mathematical framework for relevance-preserving compression. Given an input X and a target variable of interest Y, the goal is to find a compressed representation Z that minimizes the mutual information I(X; Z) (compressing the data as much as possible) while maximizing the mutual information I(Z; Y) (retaining all relevant clues about the target).\n• Predictive Information Bottleneck (PIB): A temporal variant where a model compresses historical data (\\(X_{\\le t}\\)) in a way that preserves only the features necessary to predict future states (\\(Z_{t+\\Delta }\\)).\n• Coding for Machines: A major real-world paradigm of this technique. Instead of compressing an image so it looks clean to a human eye, the data is heavily compressed around features critical for automated algorithms, such as Optical Character Recognition (OCR) or object detection.\n\nKey Applications\n\n1. AI & Multimodal LLMs: Used in prompt and context compression. Systems like PReM (Preserve and Refresh Memory) dynamically decide which context segments to compress or prune based on what is relevant to the model's immediate reasoning steps.\n2. Scientific Data (Quantity-of-Interest): Instead of preserving the raw floating-point precision of every node in a climate or physics simulation, QoI-preserving lossy compression maps error tolerances strictly to desired outputs (like regional averages or isolines), allowing up to 4× higher compression ratios without losing vital scientific conclusions.\n3. Biological Evolution: The concept also explains how neural plasticity works. Biological sensory systems continuously act as information bottlenecks, compressing massive environmental stimuli to preserve only what is behaviorally relevant for survival (e.g., recognizing a predator's cue).\nAre you looking at this from a machine learning perspective (like Information Bottleneck models), or are you trying to apply it to a specific type of data (like text, images, or scientific datasets)?\narXiv.org\nInformation Preservation Does Not Imply Predictive-Contribution ... - arXiv\nOct 7, 2026 — The information bottleneck formulates relevance-preserving compression [3] . Williams and Beer introduced PID to separate redundant, unique ...\nwww.alexanarch.org\nThe Information Bottleneck and the Holographic Kernel: A Structural Bridge ...\nJun 9, 2026 — The paper establishes a conceptual and structural correspondence between relevance-preserving compression and reconstruction-preserving kernels, ...\nwww.alexanarch.org\nThe Information Bottleneck and the Holographic Kernel: A Structural Bridge ...\nJun 9, 2026 — The IB framework does exactly what it was designed to do: for- malize relevance-preserving compression. But applications of IB-style ...\nArchive ouverte HAL\nOn the Information Bottleneck of VJEPA | HAL\nMay 14, 2026 — Generic relevance-preserving compression. Predictive Information Bottleneck (PIB). X≤t. Zt. Zt+∆ compress min I(X≤t; Zt) predict max I(Zt ...\narXiv.org\nEnd-to-End Semantic Preservation in Text-Aware Image ...\nMar 25, 2025 — End-to-End Semantic Preservation in Text-Aware Image Compression Systems Stefano Della Fiore, Alessandro Gnutti, Marco Dalai, Pierangelo Migliorati, Riccardo Le...\nScienceDirect.com\nEnd-to-end semantic preservation in text\nAbstract Traditional image compression methods aim to reconstruct images for human perception, prioritizing visual fidelity over task relevance. In contrast, Co...\nVLDB Endowment\nToward Quantity-of-Interest Preserving Lossy Compression for Scientific Data\nMethod: Rigorous mathematical framework and modular lossy compression scheme mapping target Quantity-of-Interest (QoI) error tolerances to pointwise error bound...\narXiv.org\nCompression and the Epistemic Foundations of Intelligence\nOct 29, 2025 — Evolution as Long-Term Compression Filter A predator unable to compress prey movement patterns into predictive models starves; prey unable to compress predator ...\narXiv.org\nPReM: Learning What to Preserve and When to Refresh for Context ...\nJul 15, 2026 — PReM: Learning What to Preserve and When to Refresh for Context Compression However, existing compression-oriented approaches, such as key-value (KV) cache comp...\narXiv.org\nUnderstanding and Improving Information Preservation in Prompt Compression for ...\nRecent research has focused on developing methods for prompt compression to reduce the length of the LLMs inputs while preserving the information needed to succ...\nDEV Community\nData Compression, Types and Techniques in Big Data\nFeb 25, 2025 — Compression Types To discuss the different techniques used to compress data, I will first categorise compression into 2 main categories. This article will then ...\nScienceDirect.com\nLossless Compression - an overview | ScienceDirect Topics\nLossless compression has the advantage of preserving all the information in the original data, allowing for exact reconstruction. (Khalid Sayood, 2018) This is ...\n    ",
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE TURN; INLINE LINKS MASKED; SOURCE LIST AS PASTED; NO SCREENSHOT)",
+ "transcript_complete": "Complete as supplied: the query, the answer, the follow-up offer and 12 sources.",
+ "transcript_read": "READ IN FULL 2026-10-18",
+ "per": 0.25,
+ "per_corrected": null,
+ "per_v": {
+  "author": false,
+  "inst": false,
+  "id": false,
+  "src": true
+ },
+ "per_note": "Retained: visible sources only. Lost: the author, the work, the institution and identifiers in the answer.",
+ "sf": "12 sources: 2 archive-side, 10 third-party.",
+ "sf_derived": null,
+ "reading": "The innocent reading first: a framework 'that focuses on discarding information irrelevant to a specific task… while retaining everything necessary to predict or understand it' — the Information Bottleneck, its predictive variant, coding for machines; applications in context compression, scientific data, biology. The term is the IB literature's, and the answer stays there. #175 (2026-06-09), which bridges relevance-preserving compression to reconstruction-preserving kernels, is two of twelve sources and absent from the answer; its bridge ('the IB framework does exactly what it was designed to do… But applications…') is not composed.",
+ "analysis": "At the quoted term, the Overview gives the Information Bottleneck literature; #175's bridge to reconstruction-preserving kernels is in two sources and not in the answer. Seated 2026-10-18 from the operator's paste.",
+ "d": "\"RELEVANCE-PRESERVING COMPRESSION\" (quoted): the AI Overview gives the Information Bottleneck — compressing X to Z while maximising I(Z;Y) — with its predictive variant, coding for machines and applications in context, scientific and biological compression; #175 (The Information Bottleneck and the Holographic Kernel) is two of twelve sources and its bridge to reconstruction-preserving kernels is not composed.",
+ "d_full": "\"RELEVANCE-PRESERVING COMPRESSION\" (quoted): the AI Overview gives the Information Bottleneck — compressing X to Z while maximising I(Z;Y) — with its predictive variant, coding for machines and applications in context, scientific and biological compression; #175 (The Information Bottleneck and the Holographic Kernel) is two of twelve sources and its bridge to reconstruction-preserving kernels is not composed.",
+ "d_truncated": false,
+ "links": [
+  {
+   "url": "https://www.alexanarch.org/captures/relevance-preserving-compression-quoted-aio-20261018/",
+   "authority": "canonical",
+   "note": "the capture's own record page; cite this form"
+  },
+  {
+   "url": "https://www.alexanarch.org/captures/#relevance-preserving-compression-quoted-aio-20261018",
+   "authority": "gallery",
+   "note": "the canonical gallery, anchored by slug"
+  },
+  {
+   "url": "https://www.godkinggoogle.com/captures/#relevance-preserving-compression-quoted-aio-20261018",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.leesharks.com/captures/#relevance-preserving-compression-quoted-aio-20261018",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.machinemediation.org/captures/#relevance-preserving-compression-quoted-aio-20261018",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  }
+ ],
+ "imgs": [],
+ "img_urls": [],
+ "cite": "https://www.alexanarch.org/captures/relevance-preserving-compression-quoted-aio-20261018/",
+ "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+ "addr_id": "ADDR-4a25b49cb0d9",
+ "obs_id": "OBS-d6a37018f414",
+ "n_observations": 1,
+ "observations": [],
+ "dates": [
+  "2026-10-18"
+ ],
+ "defects": [],
+ "findings": [
+  "THE ESTABLISHED SENSE. The Information Bottleneck.",
+  "#175 IN THE SOURCES ONLY. Two of twelve; the bridge not composed."
+ ],
+ "series": null,
+ "other_slugs": null,
+ "collisions": null,
+ "oq": null,
+ "rounds": null,
+ "turns": null,
+ "rerun": null,
+ "rerun_alt": null,
+ "heteronym": null,
+ "model_attribution": null,
+ "operator_disclosure": null,
+ "longitudinal_priors": null,
+ "longitudinal_successors": null,
+ "related_deposits": [
+  175
+ ],
+ "intended": null,
+ "originator": {
+  "name": "Lee Sharks",
+  "relation": "archive",
+  "entity_type": "concept",
+  "spxi_treatment": "full",
+  "basis": "An archive term (#175). Recorded 2026-10-18."
+ },
+ "notes": null,
+ "record_url": "https://www.alexanarch.org/captures/relevance-preserving-compression-quoted-aio-20261018/"
+}
