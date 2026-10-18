@@ -1,14 +1,80 @@
 {
  "dataset": "prediction-index",
  "title": "Prediction Index — forecasts, standing claims, tests, historical theses and priority records",
+ "build_id": "PI-2026-10-18-9b0e16492f",
+ "builds": "/datasets/prediction-index/builds.json",
+ "sources": {
+  "operative-semiotics": {
+   "commit": "5a4a8d9e45768d757a87803296722a0723a4c198",
+   "uncommitted_changes": false
+  },
+  "alexanarch_read_by_pass_1": "65ad9cf16d1ca268f94a4172df51191cc5a64369",
+  "alexanarch_at_build": {
+   "commit": "fab98a438bfa9925135b46da69439d5f059a2fe9",
+   "uncommitted_changes": true
+  }
+ },
+ "claim_form": "https://www.operativesemiotics.org/predictions/claim/{id}/",
+ "claim_routes": "https://www.operativesemiotics.org/predictions/claim/index.json",
+ "recall": {
+  "value": 0.945,
+  "definition": "first-reading finds / (first-reading finds + distinct passages the protocol required that only the second reading found); passages both readings missed are not counted",
+  "sample_deposits": 40,
+  "record": "operative-semiotics data/reading/recall-result.json"
+ },
+ "counts": {
+  "finds": 6939,
+  "confirmation_records_C": 412,
+  "held_out_gone": 142,
+  "held_out_superseded": 30,
+  "pass2_duplicates": 69,
+  "finds_in_claims": 6305,
+  "claims_after_triage": 4704,
+  "merged_by_topical_and_join": 310,
+  "claims": 4394,
+  "by_shape": {
+   "A": {
+    "finds": 306,
+    "in_claims": 290
+   },
+   "B": {
+    "finds": 819,
+    "in_claims": 796
+   },
+   "C": {
+    "finds": 412,
+    "in_claims": 0
+   },
+   "D": {
+    "finds": 463,
+    "in_claims": 448
+   },
+   "E": {
+    "finds": 267,
+    "in_claims": 254
+   },
+   "F": {
+    "finds": 1433,
+    "in_claims": 1388
+   },
+   "G": {
+    "finds": 1300,
+    "in_claims": 1266
+   },
+   "H": {
+    "finds": 1939,
+    "in_claims": 1863
+   }
+  }
+ },
  "date": "2026-10-18",
- "description": "4385 claims read out of the archive's deposits by the prediction sweep (2026-10-15) and its second reading pass over repaired text and attachments (2026-10-18), and grouped by its triage, topical and join passes (2026-10-17, 2026-10-18): each registered at its earliest statement, every statement quoted. Generated from operative-semiotics data/reading/; never hand-edit.",
+ "description": "4394 claims read out of the archive's deposits by the prediction sweep (2026-10-15) and its second reading pass over repaired text and attachments (2026-10-18), and grouped by its triage, topical and join passes (2026-10-17, 2026-10-18): each registered at its earliest statement, every statement quoted. Generated from operative-semiotics data/reading/; never hand-edit.",
  "canonical_home": "https://www.operativesemiotics.org/predictions",
  "table_of_contents": "https://www.operativesemiotics.org/predictions/index.json",
  "record_form": "https://www.operativesemiotics.org/predictions/{slug}",
  "record_json_form": "https://www.operativesemiotics.org/predictions/{slug}/record.json",
  "source_of_truth": "operative-semiotics — data/reading/ (finds.jsonl; triage/claims.json)",
- "total_claims": 4385,
+ "total_claims": 4394,
  "total_pages": 194,
  "generated_by": "operative-semiotics scripts/index/build_index.py",
  "predecessors": [
@@ -29,8 +95,8 @@
   {
    "name": "predictions.json",
    "path": "/datasets/prediction-index/predictions.json",
-   "size_bytes": 8953397,
-   "sha256": "d594e17c6cd0d0c9f7f6fb4f7c2000b604bdb1e880a4848b7ffac33fb78c5c83"
+   "size_bytes": 15547150,
+   "sha256": "9f6c440affcad3f82f99e6033b320ff94f2018b997fe4c8bfb120b6f4e624fd0"
   },
   {
    "name": "series.json",
@@ -47,8 +113,8 @@
   {
    "name": "pages.json",
    "path": "/datasets/prediction-index/pages.json",
-   "size_bytes": 330015,
-   "sha256": "db44c45c58c6963237358061814eba743eeb6a3de11fd8129a5553e01122ca37"
+   "size_bytes": 396465,
+   "sha256": "187507a8a01f6d56c602d7b4663a8900c1a48d05a1cf5ddc50dcb4115a0ead68"
   }
  ]
 }
