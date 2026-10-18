@@ -80,6 +80,7 @@ def rooms_index(reg):
         'canonical' for e in S['seats'].values() for v in (e.get('sources') or {}).values() if any(x.startswith('canonical') for x in v))
     rlink = lambda o: f'<a href="/s/rooms/{room_slug(o)}/">{esc(o["locus"])} {esc(o["name"])}</a>'
     head = lambda r: ((f'<b>Physics</b> {esc(r["physics"])}. ' if r.get('physics') else '') + (f'{esc(r["desc"])} ' if r.get('desc') else '')
+                      + ('<i>Its physics and question are not yet declared.</i> ' if r.get('declared') else '')
                       + (f'<b>Prompt</b> <i>{esc(r["prompt"])}</i> ' if r.get('prompt') else '')
                       + (f'<b>{esc(r["type"])}</b> — a structure across the plane, not a room. ' if r.get('type') else '')
                       + (f'· <a href="{esc(r["url"])}">' + ('the structure' if r.get('type') else 'the room') + ' at crimsonhexagonal.org</a>' if r.get('url') else '· no room page yet')
@@ -116,7 +117,7 @@ def rooms_index(reg):
         parts = [f'<h1>{esc(r["locus"])} {esc(r["name"])} — the records it seats</h1><div class="room">{head(r)}</div>'
                  f'<div class="sub">{len(rows)} records. Each row: the record, its date, type and identifier; how it bears on this room '
                  '(constitutes, develops, applies, documents, belongs) with the sentence of its own text that grounds it; the other rooms it sits in. '
-                 'Primary and constituting seats first; seats set by Lee Sharks\'s rulings of 2026-10-16 are marked ruled'
+                 'Primary and constituting seats first; seats set by Lee Sharks\'s rulings of 2026-10-16 are marked ruled; earlier seats a reader disputed are marked disputed, with the reader\'s ground'
                  + (f'; then {len(lw)} seats at low confidence, {esc(LOWL)}' if lw else '') + '.</div>']
         for n, e in rows:
             d = D[n]; others = [S['rooms'][x] for x in e['rooms'] if x != r['id']]
@@ -127,6 +128,13 @@ def rooms_index(reg):
                     + ''.join(f' · moved here from {esc(S["rooms"][m["from"]]["locus"])} by ruling' for m in e.get('moved') or [] if m['to'] == r['id'])
                     + '</div>') if rd
                    else (f'<div class="d"><b>{esc(role)}</b></div>' if role else ''))
+            dsp = (e.get('disputed') or {}).get(r['id'])
+            if dsp:                                         # 2026-10-18: kept seated, marked, with the reader's ground
+                how += (f'<div class="d"><b>disputed</b> by the room reading of {esc(dsp["read"])}: “{esc(dsp["note"])}”'
+                        f' — the seat stands until a ruling; its earlier ground: {esc(", ".join((e.get("sources") or {}).get(r["id"], [])))}</div>')
+            rr = (rd or {}).get('reread')
+            if rr:
+                how += f'<div class="d">re-read {esc(rr["date"])}: {esc(rr["reason"])}</div>'
             tail = ([f'<a href="{esc(e["works_url"])}">work page</a>'] if e.get('works_url') else []) + (['also in ' + ', '.join(rlink(o) for o in others)] if others else [])
             parts.append(f'<div class="rec"><a class="t" href="/s/records/{n}/">{esc(d["title"])}</a>'
                          f'<div class="m">#{n} · {esc(d.get("date"))} · {esc(d.get("content_type") or "")} · {esc(d["axn"])}</div>'

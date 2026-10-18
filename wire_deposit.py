@@ -1211,13 +1211,16 @@ def regenerate_static_page(d, eidx, registry=None):
         global _HEX_SEATS
         if '_HEX_SEATS' not in globals():
             _HEX_SEATS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'hexagon-seats.json')))
+        # 2026-10-18: a seat the room reading disputed (data/room-readings/reading-2026-10-18.json) stays on the line,
+        # marked; its grounds are on the room's index at /s/rooms/.
         _se = _HEX_SEATS['seats'].get(str(dn))
         if _se and _se.get('rooms'):                         # records seated at low confidence only: listed in /s/rooms/, no line here
             _pr = [r for r, x in (_se.get('read') or {}).items() if x.get('primary')]   # the primary seat first (rulings 2026-10-16)
             _rm = [_HEX_SEATS['rooms'][r] for r in sorted(_se['rooms'], key=lambda r: r not in _pr) if r in _HEX_SEATS['rooms']]
             _seat_html = ('<div style="border-left:4px solid var(--accent);background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
                           '<strong>Seated in the Crimson Hexagon</strong> — '
-                          + ' · '.join((f'<a href="{esc(r["url"])}" style="color:var(--accent)">{esc(r["locus"])} {esc(r["name"])}</a>' if r.get("url") else f'{esc(r["locus"])} {esc(r["name"])}') for r in _rm)
+                          + ' · '.join(((f'<a href="{esc(r["url"])}" style="color:var(--accent)">{esc(r["locus"])} {esc(r["name"])}</a>' if r.get("url") else f'{esc(r["locus"])} {esc(r["name"])}')
+                                        + (' (disputed by the room reading)' if r['id'] in (_se.get('disputed') or {}) else '')) for r in _rm)
                           + (f' · <a href="{esc(_se["works_url"])}" style="color:var(--accent)">this work on crimsonhexagonal.org</a>' if _se.get('works_url') else '')
                           + ' · <a href="/s/rooms/" style="color:var(--accent)">all rooms and their records</a></div>')
     except Exception as _e:

@@ -39,6 +39,8 @@ def main():
         rooms[r['id']] = {'id': r['id'], 'locus': m.group(1) if m else r.get('locus') or r.get('hex_address') or r['id'], 'name': name,
                           'hex_address': r.get('hex_address'), 'url': f'{SITE}/rooms/{slug}', 'physics': r.get('physics'),
                           'desc': r.get('desc'), 'prompt': r.get('prompt'), 'cat': r.get('cat')}
+        if r.get('declared'):                                # 2026-10-18: a placeholder removed; this place's own not yet declared
+            rooms[r['id']]['declared'] = r['declared']
     # 2026-10-16 RULINGS (data/room-readings/rulings-applied-2026-10-16.json): loci the room belt does not hold — the
     # transversal structures (Armature, Secret Name, Pearl) and UMBML, "a meta structure of cha" — and notes on loci.
     RP = ROOT / 'data/room-readings/rulings-applied-2026-10-16.json'
@@ -101,12 +103,19 @@ def main():
     # confidence and a verbatim basis checked at its lines (data/room-readings/, scripts/apply_room_readings.py).
     # High and medium seats are seats; low seats (fit by family resemblance only) are kept as proposals, not shown.
     rp = ROOT / 'data/room-readings/seats-read-2026-10-16.json'
+    R2 = ROOT / 'data/room-readings/reading-2026-10-18.json'
+    P2 = json.load(open(R2)) if R2.exists() else {}
+    passes = []
     if rp.exists():
-        for n, ss in json.load(open(rp))['seats'].items():
+        passes.append(('read 2026-10-16', json.load(open(rp))['seats']))
+    if P2.get('seats'):                                    # the second pass (2026-10-18): records deposited after the first
+        passes.append(('read 2026-10-18', P2['seats']))
+    for label, ps in passes:
+        for n, ss in ps.items():
             d = next((x for x in reg['deposits'] if str(x['deposit_number']) == n), None)
             if not d:
                 continue
-            e = seats.setdefault(n, {'hex': d['hex'], 'rooms': [], 'assignment': 'read 2026-10-16',
+            e = seats.setdefault(n, {'hex': d['hex'], 'rooms': [], 'assignment': label,
                                      'works_url': f"{SITE}/works/{d['hex'].lower()}" if d['hex'] in works else None})
             for x in sorted(ss, key=lambda x: not x['primary']):
                 if x['locus'] not in rooms:
@@ -117,8 +126,8 @@ def main():
                     e['rooms'].append(x['locus'])
                 e.setdefault('read', {})[x['locus']] = {k: x[k] for k in ('relation', 'confidence', 'primary', 'basis', 'batch')}
                 src = e.setdefault('sources', {}).setdefault(x['locus'], [])
-                if 'read 2026-10-16' not in src:
-                    src.append('read 2026-10-16')
+                if label not in src:
+                    src.append(label)
                 if x['relation'] == 'constitutes':
                     e.setdefault('roles', {})[x['locus']] = 'constituting'
     # 2026-10-16 RULINGS, applied over the reading. Moves first (the Encyclotron, R:r.15 → R:r.05: only a seat the reading
@@ -161,12 +170,31 @@ def main():
                 src.append('ruled 2026-10-16')
             if g['relation'] == 'constitutes':
                 e.setdefault('roles', {})[g['locus']] = 'constituting'
+    # 2026-10-18 RE-READS: a seat whose cue was a placeholder, read again against the room's constituting works.
+    for rr in P2.get('rereads', []):
+        e = seats.get(str(rr['deposit']))
+        x = (e or {}).get('read', {}).get(rr['locus'])
+        if not x:
+            continue
+        x['reread'] = {'date': '2026-10-18', 'from': rr['from'], 'to': rr['to'], 'reason': rr['reason']}
+        if rr['to'] == 'low' and (e.get('sources') or {}).get(rr['locus']) == ['read 2026-10-16']:
+            e['read'].pop(rr['locus']); e['sources'].pop(rr['locus']); e['rooms'].remove(rr['locus'])
+            (e.get('roles') or {}).pop(rr['locus'], None)
+            e.setdefault('proposed', []).append({'locus': rr['locus'], 'relation': x['relation'], 'basis': x['basis'],
+                                                 'batch': f"{x['batch']}; re-read 2026-10-18: low"})
+    # 2026-10-18 DISPUTED: earlier seats a reader of 2026-10-16 named with a negative ground. Kept seated and shown,
+    # marked disputed with the reader's note; removing a seat is a ruling.
+    for n, dv in ((P2.get('disputed') or {}).get('seats') or {}).items():
+        e = seats.get(n)
+        for loc in dv['disputed']:
+            if e and loc in e['rooms']:
+                e.setdefault('disputed', {})[loc] = {'note': dv['note'], 'batch': dv.get('batch'), 'read': '2026-10-16', 'marked': '2026-10-18'}
     # Low seats are kept and shown in the index, marked for later adjudication (ruling 2026-10-16); a record seated only
     # at low confidence stays in the file with no rooms.
     seats = {n: e for n, e in seats.items() if e['rooms'] or e.get('proposed')}
     out = {'what': ('Records of the alexanarch registry seated in rooms of the Crimson Hexagon (crimsonhexagonal.org), from '
                     'the interface\'s hexagon_canonical.json; assignment as recorded there. Read by the record pages and /s/rooms/.'),
-           'generated': '2026-10-16', 'rooms': rooms, 'seats': seats}
+           'generated': '2026-10-18', 'rooms': rooms, 'seats': seats}
     (ROOT / 'data/hexagon-seats.json').write_text(json.dumps(out, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     print(f'{len(seats)} records seated in {len({r for e in seats.values() for r in e["rooms"]})} rooms; '
           f'{sum(1 for e in seats.values() if e["works_url"])} with a works page')
