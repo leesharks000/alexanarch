@@ -1,10 +1,10 @@
 {
  "deposit_number": 1358,
- "axn": "AXN:055F.UNCLASSIFIED.🗺️🛸🔧📋⏬♻️",
+ "axn": "AXN:055F.UNCLASSIFIED.🎹🔬🕒♈❄️🌕",
  "hex": "055F",
  "family": "UNCLASSIFIED",
- "emoji": "🗺️🛸🔧📋⏬♻️",
- "hash": "515e3045d9febf264b3d492d976ce4665b96140898b19ecd65df06339303c33d",
+ "emoji": "🎹🔬🕒♈❄️🌕",
+ "hash": "893764a914045d8326b59c47a79a20b4d435ce0cbc5506fd97f1a6fccb3c95f3",
  "title": "Hexagonal Contributor License v3.0 — Rhys Owens — Lunar Arm — Full Unified License",
  "creator": "Sharks, L.",
  "date": "2026-04-25",
@@ -15,14 +15,14 @@
  "root_axn": "AXN:055F.UNCLASSIFIED",
  "axn_schema_version": "v2",
  "protocol_version": "alexanarch-deposit-protocol/v1",
- "axn_canonical": "515e3045d9febf264b3d492d976ce4665b96140898b19ecd65df06339303c33d",
+ "axn_canonical": "893764a914045d8326b59c47a79a20b4d435ce0cbc5506fd97f1a6fccb3c95f3",
  "clusters": [
-  "Navigational",
-  "Navigational",
+  "Symbolic",
   "Instrumental",
-  "Scriptural",
-  "Structural",
-  "Terminal"
+  "Temporal",
+  "Alchemical",
+  "Elemental",
+  "Celestial"
  ],
  "axn_reading": "Closure -> Text -> Origin -> Proof -> Duration -> Force",
  "minted_at": "2026-07-19T21:19:04Z",
@@ -64,7 +64,7 @@
  "entity_status": "provisional",
  "defines_concepts": [],
  "orcid": "0009-0000-1599-0703",
- "version": "v1.0",
+ "version": "v3.0",
  "keywords": [
   "Crimson Hexagonal Archive",
   "New Human",
@@ -81,32 +81,22 @@
   "minted_via": "self_serve_validated_pr"
  },
  "body_status": {
-  "class": "full",
-  "lacuna": false,
-  "recovery_status": "COMPLETE",
-  "residual_chars": 7870,
-  "audited_at": "2026-07-19T21:19:04Z",
-  "audit_version": "mint-time-declaration",
-  "semi_audit": "2026-07-20 prose-word discriminator",
-  "recovered_from": "https://mindcontrolpoems.blogspot.com/2025/10/rhys-owens-lunar-arm-of-new-human.html",
-  "recovered_at": "2026-07-20T11:18:29Z",
-  "note": "address-resolver batch, gate 0.50",
-  "class_before_T2": "full",
-  "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2",
-  "reclassified_at": "2026-07-28T17:49:24.757195+00:00",
-  "class_before_T2b_ruling": "metadata_capture",
-  "ruled_by": "MANUS ruling 2026-07-28 (T2b cluster ruling: body is the complete work)",
-  "measured_prose_words": 935,
-  "measured_at": "2026-07-31",
-  "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself."
+  "class": "metadata_capture",
+  "lacuna": true,
+  "recovery_status": "NOT_RECOVERED-20261018",
+  "residual_chars": 9278,
+  "audited_at": "2026-10-18T05:53:32.580193+00:00",
+  "audit_version": "record_repairs_20261018",
+  "class_before_repair": "full"
  },
  "references_concepts": [
   "Biographical",
   "Canon formation",
   "Lee Sharks",
+  "New Human 2",
   "The Lunar Arm"
  ],
- "references_concept_count": 4,
+ "references_concept_count": 5,
  "citations": [],
  "wikidata_candidates": [],
  "cha_cross_references": [],
@@ -150,7 +140,7 @@
   "overall_conformance": "partial"
  },
  "external_metadata_path": "/data/external-metadata/AXN-055F.json",
- "canonical_text_status": "recovered_full_text",
+ "canonical_text_status": "metadata_only",
  "modifications": [
   {
    "date": "2026-07-30",
@@ -229,7 +219,7 @@
    "now": "{\"axn\": \"AXN:055F.UNCLASSIFIED.\\ud83d\\uddfa\\ufe0f\\ud83d\\udef8\\ud83d\\udd27\\ud83d\\udccb\\u23ec\\u267b\\ufe0f\"}"
   }
  ],
- "date_modified": "2026-10-15",
+ "date_modified": "2026-10-18",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "provenance_note": {
   "severed_dois": [
@@ -245,6 +235,12 @@
    "date": "2026-08-08",
    "field": "description",
    "note": "FORENSICS PREFIX LIFTED OUT OF THE DESCRIPTION. The field opened with the severed DOIs and the Zenodo removal record — date, reason, and the numeric ID of the account that removed it — before saying anything about the work. That is provenance, and it is now held in provenance_note where it belongs; the description now opens with the work. The trailing 'json; if canonical bytes surface, a full-text version supersedes this record' fragment was also removed: it is a truncation artifact, and false on a record that holds its full text."
+  },
+  {
+   "date": "2026-10-18",
+   "field": "mislabelled body",
+   "note": "the seated body was another work (the Lunar Arm essay, blog 2025-10-13); the licence text is not recovered; the record is metadata-only with its knowledge-graph witness; the essay retained as appendix and minted as its own record.",
+   "ruled_by": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\"."
   }
  ],
  "journal": "Crimson Hexagonal Archive (CHA)",
@@ -280,7 +276,14 @@
   "axn_before": "AXN:055F.UNCLASSIFIED.♻️📦🌓◇🕚☁️",
   "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files\"; \"the focus is on active, non-duplicate records\"; \"lets proceed\""
  },
- "reading": "Search -> Search -> Method -> Text -> Direction -> Closure",
+ "reading": "Play -> Method -> Duration -> Transmutation -> Force -> Origin",
+ "related_deposits": [
+  {
+   "deposit": 1356,
+   "relation": "series: v1.0 of the Rhys Owens contributor licence"
+  }
+ ],
+ "remediation_note": "2026-10-18 RECORD REPAIR (mislabelled body): the seated body was another work (the Lunar Arm essay, blog 2025-10-13); the licence text is not recovered; the record is metadata-only with its knowledge-graph witness; the essay retained as appendix and minted as its own record.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/1358/",

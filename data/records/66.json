@@ -1,9 +1,9 @@
 {
- "axn": "AXN:021F.GOVERNANCE.👁‍🗨👁‍🗨🪨🌘🔒📖",
+ "axn": "AXN:021F.GOVERNANCE.📎🚀🌀🟤🌲🎶",
  "hex": "021F",
  "family": "GOVERNANCE",
- "emoji": "👁‍🗨👁‍🗨🪨🌘🔒📖",
- "hash": "b0b01b07f941a3c315ca0d54bde9a128e4267ca6790e5127eca7f3d128ef1de9",
+ "emoji": "📎🚀🌀🟤🌲🎶",
+ "hash": "475d5fc975887efb7f1c33d3b16a610bb1957967cc49041522aa60eeb171cf04",
  "title": "Hexagonal Licensing Protocol v1.0 — Comprehensive Specification for Distributed Contributor Infrastructure",
  "creator": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -16,19 +16,19 @@
   "dataset"
  ],
  "related_ids": [],
- "version": "v2.0",
+ "version": "v1.0",
  "minted_at": "2026-06-20T20:00:00Z",
- "status": "ACTIVE",
+ "status": "SUPERSEDED",
  "clusters": [
-  "Gestural",
-  "Gestural",
-  "Elemental",
-  "Celestial",
-  "Terminal",
-  "Scriptural"
+  "Scriptural",
+  "Navigational",
+  "Navigational",
+  "Signal",
+  "Organic",
+  "Symbolic"
  ],
- "reading": "Touch -> Touch -> Force -> Origin -> Closure -> Text",
- "axn_canonical": "b0b01b07f941a3c315ca0d54bde9a128e4267ca6790e5127eca7f3d128ef1de9",
+ "reading": "Text -> Search -> Search -> Alarm -> Growth -> Play",
+ "axn_canonical": "475d5fc975887efb7f1c33d3b16a610bb1957967cc49041522aa60eeb171cf04",
  "axn_display": "🏗️👐🫶🛸🗂️✨",
  "full_text_path": "/data/texts/AXN-021F-text.md",
  "mirrors": {
@@ -379,6 +379,7 @@
   "First-session flow",
   "Framing authorship",
   "Hex: 06.SEI.ARCHIVE.PROTOCOL.01",
+  "Hexagonal Licensing Protocol",
   "Institutional charter DOI",
   "Lee Sharks",
   "Lee Sharks, MANUS (Tier 0)",
@@ -412,7 +413,7 @@
   "Why it matters",
   "Writes the license"
  ],
- "references_concept_count": 44,
+ "references_concept_count": 45,
  "external_metadata_path": "/data/external-metadata/AXN-021F.json",
  "openalex_ids": [
   "https://openalex.org/W7135388610",
@@ -420,25 +421,19 @@
  ],
  "datacite_severance": "mixed",
  "body_status": {
-  "class": "full",
-  "lacuna": false,
-  "recovery_status": "COMPLETE",
-  "residual_chars": 29882,
-  "audited_at": "2026-07-17T04:49:17.789813Z",
-  "audit_version": "v3-dual-store+recovery-map",
-  "measured_prose_words": 3976,
-  "measured_at": "2026-07-31",
-  "work_sha256": "32a091356214b4c17b4b6fe9f5677ddbebe66e62c4a0cc16001e0815c29ca8f1",
-  "prior_bytes_sha256": "9f224800f9b5f71747ba47af20fe844fdd15bfea117d7e164dc71f74fcedb67b",
-  "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 32 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
-  "version_history_plate": {
-   "witnesses": [
-    1181,
-    1182
-   ],
-   "declared": "2026-08-10",
-   "rule": "Backward navigation lives only on the current record. A superseded record links forward and nowhere else."
+  "class": "metadata_capture",
+  "lacuna": true,
+  "recovery_status": "NOT_RECOVERED-20261018",
+  "residual_chars": 30959,
+  "audited_at": "2026-10-18T05:53:32.580788+00:00",
+  "audit_version": "record_repairs_20261018",
+  "class_before_repair": "full",
+  "retired": {
+   "class": "superseded",
+   "resolves_to": 1182,
+   "declared": "2026-10-18",
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL.",
+   "indexable": true
   }
  },
  "title_repair_log": [
@@ -457,7 +452,7 @@
    "basis": "Set verbatim to the title this work carried at Zenodo, from data/doi-resolution-index.json (10.5281/zenodo.19656133, remediated_containment, word overlap 1.00). The recovered metadata is the published form of record; the registry title was a variant."
   }
  ],
- "canonical_text_status": "canonical_full_text",
+ "canonical_text_status": "metadata_only",
  "modifications": [
   {
    "date": "2026-08-03",
@@ -522,14 +517,14 @@
    "now": "{\"axn\": \"AXN:021F.GOVERNANCE.\\ud83d\\udc41\\u200d\\ud83d\\udde8\\ud83d\\udc41\\u200d\\ud83d\\udde8\\ud83e\\udea8\\ud83c\\udf18\\ud83d\\udd12\\ud83d\\udcd6\"}"
   }
  ],
- "date_modified": "2026-10-15",
+ "date_modified": "2026-10-18",
  "publisher": "Pergamon Press",
  "version_basis": {
-  "ruling": "AUDIT: project v2.0",
-  "prior_registry_claim": "v1.0",
-  "observed_body_version": "v2.0",
-  "directive": "Project v2.0 and classify the object as a protocol specification rather than a dataset.",
-  "audit_date": "2026-08-03"
+  "ruling": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\".",
+  "title_version": "v1.0",
+  "observed_body_version": "v2.0 (appendix)",
+  "audit_date": "2026-10-18",
+  "directive": "v1.0 record; v1.0 text not recovered; v2.0 is #1182"
  },
  "journal_assignment": {
   "assigned": "2026-08-15",
@@ -608,6 +603,24 @@
   "axn_before": "AXN:021F.GOVERNANCE.🏗️👐🫶🛸🗂️✨",
   "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files\"; \"the focus is on active, non-duplicate records\"; \"lets proceed\""
  },
+ "version_basis_before_repair": {
+  "ruling": "AUDIT: project v2.0",
+  "prior_registry_claim": "v1.0",
+  "observed_body_version": "v2.0",
+  "directive": "Project v2.0 and classify the object as a protocol specification rather than a dataset.",
+  "audit_date": "2026-08-03"
+ },
+ "superseded_by_deposit_number": 1182,
+ "superseded_reason": "Earlier version: v1.0 of the Hexagonal Licensing Protocol, superseded by v2.0 (#1182). Its own text is not recovered.",
+ "record_modifications": [
+  {
+   "date": "2026-10-18",
+   "field": "mislabelled body / supersession chain",
+   "note": "titled v1.0 but held the v2.0 text; v1.0 text not recovered; v2.0 retained as appendix; superseded by the v2.0 head #1182.",
+   "ruled_by": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\"."
+  }
+ ],
+ "remediation_note": "2026-10-18 RECORD REPAIR (mislabelled body / supersession chain): titled v1.0 but held the v2.0 text; v1.0 text not recovered; v2.0 retained as appendix; superseded by the v2.0 head #1182.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/66/",
