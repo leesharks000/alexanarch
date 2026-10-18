@@ -1,0 +1,54 @@
+{
+ "dataset": "prediction-index",
+ "title": "Prediction Index — forecasts, standing claims, tests, historical theses and priority records",
+ "date": "2026-10-17",
+ "description": "4134 claims read out of the archive's deposits by the prediction sweep (2026-10-15) and grouped by its triage, topical and join passes (2026-10-17): each registered at its earliest statement, every statement quoted. Generated from operative-semiotics data/reading/; never hand-edit.",
+ "canonical_home": "https://www.operativesemiotics.org/predictions",
+ "table_of_contents": "https://www.operativesemiotics.org/predictions/index.json",
+ "record_form": "https://www.operativesemiotics.org/predictions/{slug}",
+ "record_json_form": "https://www.operativesemiotics.org/predictions/{slug}/record.json",
+ "source_of_truth": "operative-semiotics — data/reading/ (finds.jsonl; triage/claims.json)",
+ "total_claims": 4134,
+ "total_pages": 194,
+ "generated_by": "operative-semiotics scripts/index/build_index.py",
+ "predecessors": [
+  {
+   "dataset": "prediction-registry",
+   "path": "/datasets/prediction-registry.json",
+   "date": "2026-08-23",
+   "relation": "A structural extraction (38 numbered predictions, 152 predictive assertions). This index reads every deposit in full and supersedes its counts; it is kept as the record of the earlier pass."
+  },
+  {
+   "dataset": "prediction-ledger",
+   "path": "/datasets/prediction-ledger/",
+   "date": "2026-08-23",
+   "relation": "Falsification conditions taken from named sections (451) and a hand-verified set of 17 predictions with known outcomes, weighted toward those that failed. Its resolutions are not repeated here; it stands beside this index."
+  }
+ ],
+ "records": [
+  {
+   "name": "predictions.json",
+   "path": "/datasets/prediction-index/predictions.json",
+   "size_bytes": 8334678,
+   "sha256": "df0ea9e33946d3f5e20ead261991a30d61de38969fd1ea2eca72c7156ede2bcb"
+  },
+  {
+   "name": "series.json",
+   "path": "/datasets/prediction-index/series.json",
+   "size_bytes": 218916,
+   "sha256": "cb18ec26a2e3d1ad10c5d3603dd9091438f990977433d5775cc0ea6a0cf2b110"
+  },
+  {
+   "name": "confirmations.json",
+   "path": "/datasets/prediction-index/confirmations.json",
+   "size_bytes": 276462,
+   "sha256": "a19b5664bc2af18417ad59dfe751a52a2ad2543acab2ea2f25462636fa790ac1"
+  },
+  {
+   "name": "pages.json",
+   "path": "/datasets/prediction-index/pages.json",
+   "size_bytes": 324667,
+   "sha256": "cc97b3b92d0796755498e113e10b542a706ea875c1e9b7d58b780e12f45d5c74"
+  }
+ ]
+}
