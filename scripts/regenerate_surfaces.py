@@ -59,6 +59,16 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scripts.render_navbar import render_navbar
 
+
+def recency_excluded(d):
+    """A record seated by a repair, of a work made long before (ruling, Lee Sharks, 2026-10-18: "can we take that off of
+    main and locate it within the browse tab in its proper order? its older material and i dont want it to appear that
+    is a current development rather than an overdue repair ... by main i mean the main page of alexanarch"). Such a
+    record (registry field surface_recency.excluded) is left off the home page's Recent Deposits and the feed, and on
+    /s/browse/ sorts by its work's date under "recently deposited" too, its seating shown as a repair."""
+    sr = d.get('surface_recency')
+    return isinstance(sr, dict) and bool(sr.get('excluded'))
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 REGISTRY_PATH = REPO_ROOT / "data" / "registry.json"
 
@@ -317,6 +327,10 @@ def regenerate_browse(reg, dry_run=False):
         elif status == 'DRAFT_PENDING':
             status_badge = ' · <span style="color:#6b7280;font-size:.85em;font-style:italic">draft pending</span>'
             card_opacity = ';opacity:.65'
+        if recency_excluded(d):
+            _sr = d["surface_recency"]
+            status_badge += (f' · <span style="color:#6b7280;font-size:.85em">seated {esc_html(_sr.get("seated", ""))} '
+                             f'by a record repair</span>')
         # T6: surface non-canonical availability on the card itself
         _cts = d.get("canonical_text_status")
         if _cts == "metadata_only":
@@ -333,7 +347,8 @@ def regenerate_browse(reg, dry_run=False):
             # deposited in August sorts by July on any date sort — which put #1539
             # at position 116 of 1,539 under "newest" on the day it landed. The
             # archive records both facts; the surface must offer both.
-            deposited=esc_html((d.get("minted_at") or "")[:10]),
+            # a record seated by a repair sorts by its work's date here too (recency_excluded)
+            deposited=esc_html(d.get("date", "") if recency_excluded(d) else (d.get("minted_at") or "")[:10]),
             axn=esc_html(d.get("axn", "")),
             version_chip=version_chip,
             status_badge=status_badge,
@@ -633,7 +648,7 @@ def regenerate_feed(reg, dry_run=False):
     """
     feed_n = 50
     deposits = sorted(reg['deposits'], key=lambda d: d.get('deposit_number', 0))
-    active = [d for d in deposits if d.get('status', 'ACTIVE') != 'SUPERSEDED']
+    active = [d for d in deposits if d.get('status', 'ACTIVE') != 'SUPERSEDED' and not recency_excluded(d)]
     recent = list(reversed(active[-feed_n:]))
     if not recent:
         print("  ⚠ no deposits — skipping feed")
@@ -1363,7 +1378,7 @@ def regenerate_homepage_noscript(reg, dry_run=False):
     # reverse for newest-first. Keeps the static fallback in parity with
     # the runtime JS view.
     deposits = sorted(reg['deposits'], key=lambda d: d.get('deposit_number', 0))
-    active_deposits = [d for d in deposits if d.get('status', 'ACTIVE') != 'SUPERSEDED']
+    active_deposits = [d for d in deposits if d.get('status', 'ACTIVE') != 'SUPERSEDED' and not recency_excluded(d)]
     recent = list(reversed(active_deposits[-HOMEPAGE_RECENT_N:]))
 
     cards = []
