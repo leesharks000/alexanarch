@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-10-15T17:10:25.529104Z",
- "seats": 75,
- "lines_total": 1481584,
+ "_generated": "2026-10-18T23:06:27.404701Z",
+ "seats": 79,
+ "lines_total": 1620841,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -3153,7 +3153,229 @@
    "why_seated": "Shklovsky's device, and the school that read Futurism (card 18/03) as it happened: «Искусство как прием» is the theory of what zaum and parole in libertà do — make the word strange so it can be seen. Tynyanov's parody essay is the theory of the move the archive's heteronymic practice makes.",
    "scope": "Shklovsky's Воскрешение слова (1914), Zoo (1923), Ход коня (1923) and Третья фабрика (1926) were not located on the reachable sources; QUEUED. Архаисты и новаторы (Tynyanov, 1929) is on the Internet Archive only in a scan filed under 1985 and is not seated until its printing is established. Jakobson's Новейшая русская поэзия (Prague, 1921) not located; QUEUED. Text layers are the Internet Archive's OCR, uncorrected; the scans are the witnesses.",
    "data": "https://www.alexanarch.org/data/corpora/russian-formalism/"
+  },
+  {
+   "seat": "EA-CORPORA-19/01",
+   "corpus": "pearl-poet",
+   "edition": "Early English Alliterative Poems in the West-Midland Dialect of the Fourteenth Century: The Pearl, Cleanness, Patience, ed. Richard Morris (Early English Text Society, o.s. 1; 1864, the Gutenberg text from the second edition of 1869); Pearl, Cleanness, Patience and Sir Gawain, reproduced in facsimile from the unique MS. Cotton Nero A.x in the British Museum, introduction by Israel Gollancz (Early English Text Society, o.s. 162; Oxford University Press, 1923) — the manuscript is the witness; the scanner's text layer is legible in the introduction and noise over the manuscript pages; Pearl, an English Poem of the Fourteenth Century, edited with a modern rendering by Israel Gollancz (London: David Nutt, 1891) — Cornell University Library copy",
+   "license": {
+    "payload": "Public domain: the poems are anonymous, of the late fourteenth century. Morris's edition (Early English Text Society, 1864; second edition 1869), Gollancz's Pearl (London: David Nutt, 1891) and the EETS facsimile of the manuscript (Oxford University Press for the EETS, 1923) are public domain in the United States (published before 1931). Project Gutenberg packaging under the PG licence; Internet Archive scans of public-domain volumes.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg",
+      "ebook": "30282",
+      "url": "https://www.gutenberg.org/ebooks/30282"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "30081003489469",
+      "url": "https://archive.org/details/30081003489469",
+      "files": [
+       "30081003489469.pdf",
+       "30081003489469_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "cu31924013116284",
+      "url": "https://archive.org/details/cu31924013116284",
+      "files": [
+       "cu31924013116284.pdf",
+       "cu31924013116284_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-18",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "enm",
+   "lines": 37208,
+   "verified_loci": [
+    "Pearl, line 1 — 'Perle plesau{n}te to prynces paye' (the expansions of the manuscript's abbreviations, italic in Morris, are marked with braces in the Gutenberg text)",
+    "Pearl, line 1212, the last — 'Ande precio{us} perleȝ vnto his pay. Amen. Amen.'",
+    "Gollancz 1891, line 1 — the text layer reads 'ERLE plesaunte to prynces paye' (the drop capital is lost; the scan is the witness)"
+   ],
+   "why_seated": "The poem whose name the archive's own Pearl and Other Poems (2014) carries, seated so the name has its source on the shelf. A father who has lost a pearl in the grass, his daughter, dead before she was two, falls asleep where it fell and sees her across a river in the New Jerusalem of Revelation 21: the archive's Revelation line meets it there.",
+   "scope": "Pearl, Cleanness and Patience in their first edition, with the manuscript itself in the 1923 facsimile, and Gollancz's Pearl of 1891 with its modern rendering on the facing page. Sir Gawain and the Green Knight, the fourth poem of Cotton Nero A.x, is in the facsimile and not otherwise seated in this pass: QUEUED (Morris, EETS o.s. 4, 1864, is public domain). Modern editions (Gordon 1953; Andrew and Waldron) are in copyright and are not seated. St. Erkenwald, sometimes given to the same poet, is in another manuscript and is not seated.",
+   "data": "https://www.alexanarch.org/data/corpora/pearl-poet/"
+  },
+  {
+   "seat": "EA-CORPORA-19/02",
+   "corpus": "rumi-masnavi",
+   "edition": "Masnavi, Book One (دفتر اول); Masnavi, Book Two (دفتر دوم); Masnavi, Book Three (دفتر سوم); Masnavi, Book Four (دفتر چهارم); Masnavi, Book Five (دفتر پنجم); Masnavi, Book Six (دفتر ششم)",
+   "license": {
+    "payload": "Public domain: Rumi d. 1273. The transcription is Ganjoor's (ganjoor.net), which names its source for each section and states of its texts: 'هم‌اکنون منبع عمدهٔ آثار موجود در این مجموعه منابع آزاد در دسترس همگان است' (the principal source of the works in this collection is free sources available to all), releasing them on the principle 'دگران کاشتند و ما خوردیم، ما بکاریم و دیگران بخورند' (others planted and we ate; we plant and others will eat). Ganjoor's statement is recorded as given; it is not a formal licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Ganjoor",
+      "book": "daftar1",
+      "sections": 172,
+      "url": "https://ganjoor.net/moulavi/masnavi/daftar1",
+      "transcription_source": [
+       "ویکی‌درج"
+      ]
+     },
+     {
+      "source": "Ganjoor",
+      "book": "daftar2",
+      "sections": 115,
+      "url": "https://ganjoor.net/moulavi/masnavi/daftar2",
+      "transcription_source": [
+       "ویکی‌درج"
+      ]
+     },
+     {
+      "source": "Ganjoor",
+      "book": "daftar3",
+      "sections": 228,
+      "url": "https://ganjoor.net/moulavi/masnavi/daftar3",
+      "transcription_source": [
+       "ویکی‌درج"
+      ]
+     },
+     {
+      "source": "Ganjoor",
+      "book": "daftar4",
+      "sections": 139,
+      "url": "https://ganjoor.net/moulavi/masnavi/daftar4",
+      "transcription_source": [
+       "ویکی‌درج"
+      ]
+     },
+     {
+      "source": "Ganjoor",
+      "book": "daftar5",
+      "sections": 178,
+      "url": "https://ganjoor.net/moulavi/masnavi/daftar5",
+      "transcription_source": [
+       "ویکی‌درج"
+      ]
+     },
+     {
+      "source": "Ganjoor",
+      "book": "daftar6",
+      "sections": 140,
+      "url": "https://ganjoor.net/moulavi/masnavi/daftar6",
+      "transcription_source": [
+       "ویکی‌درج"
+      ]
+     }
+    ],
+    "fetched": "2026-10-18",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "fas",
+   "lines": 27605,
+   "verified_loci": [
+    "Book One, section 1 (سرآغاز), the first couplet: 'بشنو این نی چون شکایت می‌کند / از جدایی‌ها حکایت می‌کند' — the Song of the Reed"
+   ],
+   "why_seated": "Rumi asked for by name, in the original. The Masnavi opens with the reed cut from its bed and telling the story of its separation: transmission out of loss, the archive's oldest subject, from the other side of the medieval world.",
+   "scope": "The Masnavi entire, all six books, in Persian, one text per book. Ganjoor's prose summaries of couplets and its recitations are not seated. The printed edition behind the transcription is not stated in the fetched data beyond Ganjoor's per-section source name, which is recorded. Nicholson's critical edition (Leiden: Brill, 1925–1933) and his translation are not seated: original language only, by ruling. Whinfield's abridged English (1887; 1898) is public domain and not seated for the same reason. The Divan-e Shams-e Tabrizi is not seated in this pass: QUEUED.",
+   "data": "https://www.alexanarch.org/data/corpora/rumi-masnavi/"
+  },
+  {
+   "seat": "EA-CORPORA-19/03",
+   "corpus": "gibran-prophet",
+   "edition": "The Prophet (New York: Alfred A. Knopf, 1923) — the Gutenberg text is taken from a later Knopf printing: its front matter carries an epigraph from Claude Bragdon and a list of the author's books running to Nymphs of the Valley (1948); the text of the book is the 1923 text. With the Gutenberg HTML edition carrying the author's twelve drawings",
+   "license": {
+    "payload": "Public domain in the United States (first published 1923; public domain since 1 January 2019) and in the EU (Gibran d. 1931). Written by Gibran in English, its original language. The later printing's front matter (the Bragdon epigraph, a list of the author's books) is recorded as it stands and adds nothing to the book's text. Project Gutenberg packaging under the PG licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg",
+      "ebook": "58585",
+      "url": "https://www.gutenberg.org/ebooks/58585",
+      "files": [
+       "pg58585.txt",
+       "pg58585-h.zip"
+      ]
+     }
+    ],
+    "fetched": "2026-10-18",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 3091,
+   "verified_loci": [
+    "The opening — 'Almustafa, the chosen and the beloved'",
+    "On Children — 'Your children are not your children.'"
+   ],
+   "why_seated": "Asked for in full. A book of sayings delivered by a departing teacher to a city that kept him twelve years: the farewell discourse as a genre, beside the Gospel of John the archive reads in its own seats.",
+   "scope": "The book entire, all twenty-six sermons with the coming of the ship and the farewell, and the twelve drawings. Gibran's Arabic works are not seated in this pass; The Prophet's original language is English.",
+   "data": "https://www.alexanarch.org/data/corpora/gibran-prophet/"
+  },
+  {
+   "seat": "EA-CORPORA-19/04",
+   "corpus": "blake",
+   "edition": "Songs of Innocence and of Experience (London: R. Brimley Johnson; Guildford: A. C. Curtis, 1901); The Marriage of Heaven and Hell (Boston: John W. Luce, 1906); The Writings of William Blake, ed. Geoffrey Keynes, vol. I (London: Nonesuch Press, 1925) — There is No Natural Religion, All Religions are One, Songs of Innocence, The Book of Thel, The Marriage of Heaven and Hell, Visions of the Daughters of Albion, America, For Children: The Gates of Paradise, Songs of Experience, Europe, The First Book of Urizen, The Book of Ahania, The Book of Los, The Song of Los; The Writings of William Blake, ed. Geoffrey Keynes, vol. II (1925) — Milton, a Poem in 2 Books; The Writings of William Blake, ed. Geoffrey Keynes, vol. III (1925) — Jerusalem, the Emanation of the Giant Albion; For the Sexes: The Gates of Paradise; On Homer's Poetry and On Virgil; The Ghost of Abel",
+   "license": {
+    "payload": "Blake d. 1827: the poems are public domain. Keynes's edition (London: Nonesuch Press, 1925) is public domain in the United States (published before 1931); Keynes's editorial matter is NOT public domain in the UK or EU (Keynes d. 1982): payload/record split per the DSS precedent (EA-CORPORA-02/01), the seat's US ground stated and redistribution scoped accordingly. The Songs (London: R. Brimley Johnson; Guildford: A. C. Curtis, 1901) and the Marriage (Boston: John W. Luce, 1906) public domain. Project Gutenberg packaging under the PG licence; Internet Archive scans of public-domain volumes.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg",
+      "ebook": "1934",
+      "url": "https://www.gutenberg.org/ebooks/1934"
+     },
+     {
+      "source": "Project Gutenberg",
+      "ebook": "45315",
+      "url": "https://www.gutenberg.org/ebooks/45315"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "writingsofwillia01blak",
+      "url": "https://archive.org/details/writingsofwillia01blak",
+      "files": [
+       "writingsofwillia01blak.pdf",
+       "writingsofwillia01blak_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "writingsofwillia02blak",
+      "url": "https://archive.org/details/writingsofwillia02blak",
+      "files": [
+       "writingsofwillia02blak.pdf",
+       "writingsofwillia02blak_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "writingsofwillia03blak",
+      "url": "https://archive.org/details/writingsofwillia03blak",
+      "files": [
+       "writingsofwillia03blak.pdf",
+       "writingsofwillia03blak_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-18",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 71353,
+   "verified_loci": [
+    "Songs of Experience, 'The Tiger' — 'Tiger, tiger, burning bright' (the 1901 edition's spelling)",
+    "The Marriage of Heaven and Hell, plate 3 — 'Without contraries is no progression.'",
+    "Keynes I, The Book of Thel — 'The daughters of Mne Seraphim led round their sunny flocks' (the text layer drops the drop capital: 'HE daughters')",
+    "Keynes II, Milton, preface — 'And did those feet in ancient time'",
+    "Keynes III, Jerusalem, plate 10 — 'I must Create a System or be enslav’d by another Man’s'"
+   ],
+   "why_seated": "Blake asked for by name. The prophetic books are the one English body that builds its own mythology, its own names and its own cosmos and prints them as one object, word and image together: the Hexagon's nearest precedent in the language.",
+   "scope": "The illuminated books as text, to start, by ruling: every one of them in Keynes's 1925 edition, the standard text before Erdman, with the Songs and the Marriage also as proofread texts. Keynes's three volumes carry Blake's other writings bound in with the illuminated books (Poetical Sketches, Tiriel, The French Revolution, Vala or the Four Zoas, the prose, letters and annotations); they are seated with the volumes and are not counted as illuminated. The plates as images (the Blake Archive) are not seated in this pass: QUEUED. Erdman's Complete Poetry and Prose (1965; 1982) is in copyright and is not seated.",
+   "data": "https://www.alexanarch.org/data/corpora/blake/"
   }
  ],
- "count": 79
+ "count": 83
 }
