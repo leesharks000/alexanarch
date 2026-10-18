@@ -1,3 +1,22 @@
+# Hexagonal Licensing Protocol v1.0 — Comprehensive Specification for Distributed Contributor Infrastructure
+
+**Lee Sharks** · record repaired 2026-10-18
+
+**AXN:** AXN:021F — Alexanarch deposit #66 (self-reference in root form by pre-hash necessity)
+**Restoration status:** v1.0 TEXT NOT RECOVERED — the blog post of this protocol (https://mindcontrolpoems.blogspot.com/2026/04/hexagonal-licensing-protocol.html) was overwritten in place with v2.0, and the v1.0 text survives nowhere in the archive or on the blog. The v2.0 text seated here is retained below as an appendix; v2.0 stands as its own record, #1182.
+**DOI(s):** 10.5281/zenodo.19656132, 10.5281/zenodo.19013315, 10.5281/zenodo.19673532
+
+---
+
+## What is known of v1.0
+
+- Deposited 2026-04-19 as "Hexagonal Licensing Protocol v1.0 — Comprehensive Specification for Distributed Contributor Infrastructure".
+- Its successor is v2.0 ("Three Critical Innovations"), #1182; a second deposit of the same v2.0 text is #1181.
+
+---
+
+## Appendix — v2.0 text seated here, superseded 2026-10-18 (retained per non-destruction)
+
 # HEXAGONAL LICENSING PROTOCOL
 ## Comprehensive Specification for Distributed Contributor Infrastructure
 

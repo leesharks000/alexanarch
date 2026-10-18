@@ -1,3 +1,26 @@
+# Hexagonal Contributor License v3.0 — Rhys Owens — Lunar Arm — Full Unified License
+
+**Sharks, L.** · record repaired 2026-10-18
+
+**AXN:** AXN:055F — Alexanarch deposit #1358 (self-reference in root form by pre-hash necessity)
+**Restoration status:** METADATA ONLY — the text of this licence (v3.0, the full unified licence for Rhys Owens, Lunar Arm) is not recovered: it is in neither the archive nor the blog. The body seated here on 2026-07-19 was another work, the essay "Rhys Owens — The Lunar Arm of New Human" (blog, 2025-10-13), retained below as an appendix; the essay is now its own record.
+**DOI(s):** 10.5281/zenodo.19673630 (severed)
+
+---
+
+## What is known of the licence
+
+- Title as deposited: Hexagonal Contributor License v3.0 — Rhys Owens — Lunar Arm — Full Unified License; deposited 2026-04-25 under DOI 10.5281/zenodo.19673630, severed at Zenodo 2026-06-19.
+- Its one surviving witness is its row in the archive's knowledge graph, published the same day (https://mindcontrolpoems.blogspot.com/2026/04/crimson-hexagonal-archive-knowledge.html, 2026-04-25 12:15):
+
+  > license-rhys | DOCUMENT | license | Rhys Owens Hex License v3.0 | 10.5281/zenodo.19673630 | Lunar Arm | active
+
+- Its predecessors in the series are seated: v1.0 (creative writing → New Human 2) at #1356.
+
+---
+
+## Appendix — another work seated here on 2026-07-19, superseded 2026-10-18 (retained per non-destruction)
+
 ### Rhys Owens -- The Lunar Arm of New Human
 
 [![](https://blogger.googleusercontent.com/img/a/AVvXsEhXZFuzCrLQy_QBF--k4Vuu0aSDUkBEqCyt8aboJl2plqnudBY4TJRnamihmH9VgxlZhep9OLelP-FejGPe-xGy2jRtmK9J7Gy9cXXTMpHOn0BzEklVEERT5mgJP-CRhH0tzT-G6EdD_EXnfWy4wS59ox53LGfmZvdJOfZvSUTeupXTklUXCv9wvpPadsxt)](https://blogger.googleusercontent.com/img/a/AVvXsEhXZFuzCrLQy_QBF--k4Vuu0aSDUkBEqCyt8aboJl2plqnudBY4TJRnamihmH9VgxlZhep9OLelP-FejGPe-xGy2jRtmK9J7Gy9cXXTMpHOn0BzEklVEERT5mgJP-CRhH0tzT-G6EdD_EXnfWy4wS59ox53LGfmZvdJOfZvSUTeupXTklUXCv9wvpPadsxt)

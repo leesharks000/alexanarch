@@ -33536,11 +33536,11 @@
       }
     },
     {
-      "axn": "AXN:021F.GOVERNANCE.👁‍🗨👁‍🗨🪨🌘🔒📖",
+      "axn": "AXN:021F.GOVERNANCE.📎🚀🌀🟤🌲🎶",
       "hex": "021F",
       "family": "GOVERNANCE",
-      "emoji": "👁‍🗨👁‍🗨🪨🌘🔒📖",
-      "hash": "b0b01b07f941a3c315ca0d54bde9a128e4267ca6790e5127eca7f3d128ef1de9",
+      "emoji": "📎🚀🌀🟤🌲🎶",
+      "hash": "475d5fc975887efb7f1c33d3b16a610bb1957967cc49041522aa60eeb171cf04",
       "title": "Hexagonal Licensing Protocol v1.0 — Comprehensive Specification for Distributed Contributor Infrastructure",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
@@ -33553,19 +33553,19 @@
         "dataset"
       ],
       "related_ids": [],
-      "version": "v2.0",
+      "version": "v1.0",
       "minted_at": "2026-06-20T20:00:00Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "clusters": [
-        "Gestural",
-        "Gestural",
-        "Elemental",
-        "Celestial",
-        "Terminal",
-        "Scriptural"
+        "Scriptural",
+        "Navigational",
+        "Navigational",
+        "Signal",
+        "Organic",
+        "Symbolic"
       ],
-      "reading": "Touch -> Touch -> Force -> Origin -> Closure -> Text",
-      "axn_canonical": "b0b01b07f941a3c315ca0d54bde9a128e4267ca6790e5127eca7f3d128ef1de9",
+      "reading": "Text -> Search -> Search -> Alarm -> Growth -> Play",
+      "axn_canonical": "475d5fc975887efb7f1c33d3b16a610bb1957967cc49041522aa60eeb171cf04",
       "axn_display": "🏗️👐🫶🛸🗂️✨",
       "full_text_path": "/data/texts/AXN-021F-text.md",
       "mirrors": {
@@ -33957,25 +33957,19 @@
       ],
       "datacite_severance": "mixed",
       "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 29882,
-        "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map",
-        "measured_prose_words": 3976,
-        "measured_at": "2026-07-31",
-        "work_sha256": "32a091356214b4c17b4b6fe9f5677ddbebe66e62c4a0cc16001e0815c29ca8f1",
-        "prior_bytes_sha256": "9f224800f9b5f71747ba47af20fe844fdd15bfea117d7e164dc71f74fcedb67b",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 32 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
-        "version_history_plate": {
-          "witnesses": [
-            1181,
-            1182
-          ],
-          "declared": "2026-08-10",
-          "rule": "Backward navigation lives only on the current record. A superseded record links forward and nowhere else."
+        "class": "metadata_capture",
+        "lacuna": true,
+        "recovery_status": "NOT_RECOVERED-20261018",
+        "residual_chars": 30959,
+        "audited_at": "2026-10-18T05:53:32.580788+00:00",
+        "audit_version": "record_repairs_20261018",
+        "class_before_repair": "full",
+        "retired": {
+          "class": "superseded",
+          "resolves_to": 1182,
+          "declared": "2026-10-18",
+          "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL.",
+          "indexable": true
         }
       },
       "title_repair_log": [
@@ -33994,7 +33988,7 @@
           "basis": "Set verbatim to the title this work carried at Zenodo, from data/doi-resolution-index.json (10.5281/zenodo.19656133, remediated_containment, word overlap 1.00). The recovered metadata is the published form of record; the registry title was a variant."
         }
       ],
-      "canonical_text_status": "canonical_full_text",
+      "canonical_text_status": "metadata_only",
       "modifications": [
         {
           "date": "2026-08-03",
@@ -34059,14 +34053,14 @@
           "now": "{\"axn\": \"AXN:021F.GOVERNANCE.\\ud83d\\udc41\\u200d\\ud83d\\udde8\\ud83d\\udc41\\u200d\\ud83d\\udde8\\ud83e\\udea8\\ud83c\\udf18\\ud83d\\udd12\\ud83d\\udcd6\"}"
         }
       ],
-      "date_modified": "2026-10-15",
+      "date_modified": "2026-10-18",
       "publisher": "Pergamon Press",
       "version_basis": {
-        "ruling": "AUDIT: project v2.0",
-        "prior_registry_claim": "v1.0",
-        "observed_body_version": "v2.0",
-        "directive": "Project v2.0 and classify the object as a protocol specification rather than a dataset.",
-        "audit_date": "2026-08-03"
+        "ruling": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\".",
+        "title_version": "v1.0",
+        "observed_body_version": "v2.0 (appendix)",
+        "audit_date": "2026-10-18",
+        "directive": "v1.0 record; v1.0 text not recovered; v2.0 is #1182"
       },
       "journal_assignment": {
         "assigned": "2026-08-15",
@@ -34144,7 +34138,25 @@
         "hash_before": "21b2bd5e4ae9464cef2059610066a77f637114a9ef542b17d76b57328740aeb6",
         "axn_before": "AXN:021F.GOVERNANCE.🏗️👐🫶🛸🗂️✨",
         "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files\"; \"the focus is on active, non-duplicate records\"; \"lets proceed\""
-      }
+      },
+      "version_basis_before_repair": {
+        "ruling": "AUDIT: project v2.0",
+        "prior_registry_claim": "v1.0",
+        "observed_body_version": "v2.0",
+        "directive": "Project v2.0 and classify the object as a protocol specification rather than a dataset.",
+        "audit_date": "2026-08-03"
+      },
+      "superseded_by_deposit_number": 1182,
+      "superseded_reason": "Earlier version: v1.0 of the Hexagonal Licensing Protocol, superseded by v2.0 (#1182). Its own text is not recovered.",
+      "record_modifications": [
+        {
+          "date": "2026-10-18",
+          "field": "mislabelled body / supersession chain",
+          "note": "titled v1.0 but held the v2.0 text; v1.0 text not recovered; v2.0 retained as appendix; superseded by the v2.0 head #1182.",
+          "ruled_by": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\"."
+        }
+      ],
+      "remediation_note": "2026-10-18 RECORD REPAIR (mislabelled body / supersession chain): titled v1.0 but held the v2.0 text; v1.0 text not recovered; v2.0 retained as appendix; superseded by the v2.0 head #1182."
     },
     {
       "axn": "AXN:0227.STRUCTURAL.🗼🏔️❄️🕐🗼⚡",
@@ -409896,7 +409908,7 @@
         "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
         "retired": {
           "class": "superseded",
-          "resolves_to": 66,
+          "resolves_to": 1182,
           "declared": "2026-08-10",
           "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
           "indexable": true,
@@ -409907,6 +409919,9 @@
           "corrected": {
             "on": "2026-10-15",
             "was_resolves_to": 1182
+          },
+          "corrected_20261018": {
+            "was_resolves_to": 66
           }
         }
       },
@@ -409981,7 +409996,7 @@
         "overall_conformance": "partial"
       },
       "external_metadata_path": "/data/external-metadata/AXN-04AE.json",
-      "superseded_by_deposit_number": 66,
+      "superseded_by_deposit_number": 1182,
       "version_series_id": "hexagonal-licensing-protocol",
       "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.94): this work already existed as deposit #66, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #66.",
       "title_repair": {
@@ -410078,9 +410093,9 @@
           "now": 66
         }
       ],
-      "date_modified": "2026-10-15",
+      "date_modified": "2026-10-18",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
-      "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #66 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
+      "superseded_reason": "Duplicate deposit of the same work: the v2.0 text of the Hexagonal Licensing Protocol, from the same blog post as #1182, which is the record of standing. CORRECTED 2026-10-18: the successor was recorded as #66, whose title is v1.0.",
       "journal": "Crimson Hexagonal Archive (CHA)",
       "journal_assignment": {
         "assigned": "2026-08-15",
@@ -410105,7 +410120,26 @@
           "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
           "why": "chain"
         }
-      ]
+      ],
+      "supersession_before_repair": {
+        "superseded_by_deposit_number": 66,
+        "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #66 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
+      },
+      "related_deposits": [
+        {
+          "deposit": 1182,
+          "relation": "duplicate of: the v2.0 head"
+        }
+      ],
+      "record_modifications": [
+        {
+          "date": "2026-10-18",
+          "field": "supersession chain",
+          "note": "successor corrected from #66 (v1.0) to #1182 (the v2.0 head); a duplicate deposit, not an earlier version.",
+          "ruled_by": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\"."
+        }
+      ],
+      "remediation_note": "2026-10-18 RECORD REPAIR (supersession chain): successor corrected from #66 (v1.0) to #1182 (the v2.0 head); a duplicate deposit, not an earlier version."
     },
     {
       "deposit_number": 1182,
@@ -410135,7 +410169,7 @@
       ],
       "axn_reading": "Search -> Method -> Direction -> Method -> Direction -> Direction",
       "minted_at": "2026-07-19T20:37:28Z",
-      "status": "SUPERSEDED",
+      "status": "ACTIVE",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-04AF-text.md",
       "wiki_article": "**Hexagonal Licensing Protocol v2.0 — Three Critical Innovations** is a specification by Lee Sharks, deposited 19 April 2026 at 17,387 characters — the innovations-focused presentation of the protocol held comprehensively at **#1181**.\n\nThe protocol governs the archive's contributor licenses, the genre that reads as a legal instrument and functions as a room specification, admitting a named contributor to a position in the Hexagon while stating the terms on which their material is held. Instances stand at #1357 (Thornburgh, with the anti-homogenization clause), #1358 (Owens, the Lunar Arm) and #1364 (Maria, the 3:60 Room).\n\nBoth records open by explaining the archive to the party being licensed — *\"a DOI-anchored research and literary archive… It studies how meaning survives compression\"* — which is the form's characteristic move: **the instrument that admits you also tells you what you are joining.** The two records are byte-identical at 17,387 characters and stand as duplicate witnesses.",
@@ -410206,22 +410240,7 @@
         "prior_bytes_sha256": "43c2a0322b7d426f45813d7f579f03cd8be5bd4c823506bd7b071a868cb70460",
         "source_reconversion": "2026-08-04 W13-T2 BLOG-60 batch: re-converted from https://mindcontrolpoems.blogspot.com/2026/04/hexagonal-licensing-protocol.html with the newline-preserving converter (gates: content-overlap 0.76, title-match, length). Blog source ceiling: lineation yes, indentation no (flattened at publication).",
         "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 52 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
-        "retired": {
-          "class": "superseded",
-          "resolves_to": 66,
-          "declared": "2026-08-10",
-          "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
-          "indexable": true,
-          "indexing_ruled": {
-            "on": "2026-10-15",
-            "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
-          },
-          "corrected": {
-            "on": "2026-10-15",
-            "was_resolves_to": 66
-          }
-        }
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
       },
       "references_concepts": [
         "Close analytical engagement",
@@ -410294,9 +410313,7 @@
         "overall_conformance": "partial"
       },
       "external_metadata_path": "/data/external-metadata/AXN-04AF.json",
-      "superseded_by_deposit_number": 66,
       "version_series_id": "hexagonal-licensing-protocol",
-      "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.94): this work already existed as deposit #66, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #66.",
       "title_repair": {
         "repaired_at": "2026-07-20",
         "old": "Hexagonal Licensing Protocol v2.0 — Three Critical Innovations: Archive Scanning, Generous Treatment, DOI Registry",
@@ -410391,9 +410408,8 @@
           "now": 66
         }
       ],
-      "date_modified": "2026-10-15",
+      "date_modified": "2026-10-18",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
-      "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #66 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
       "journal": "Crimson Hexagonal Archive (CHA)",
       "journal_assignment": {
         "assigned": "2026-08-15",
@@ -410406,8 +410422,12 @@
       },
       "related_deposits": [
         {
+          "deposit": 66,
+          "relation": "series: v1.0 (text not recovered), superseded by this record"
+        },
+        {
           "deposit": 1181,
-          "relation": "series: earlier versions collapsed under this head — #66, #1181"
+          "relation": "duplicate: a second deposit of this v2.0 text, from the same blog post"
         }
       ],
       "falsification_conditions": "Byte fidelity verifiable against the live blog URL and the recorded hashes; authorial originals, if they surface with different bytes, supersede this record per the versioning protocol.",
@@ -410424,7 +410444,41 @@
           "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files / and citations\"; \"lets proceed - this is a lot of repairs to make\"",
           "why": "chain"
         }
-      ]
+      ],
+      "supersession_before_repair": {
+        "superseded_by_deposit_number": 66,
+        "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #66 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
+        "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 0.94): this work already existed as deposit #66, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #66."
+      },
+      "record_modifications": [
+        {
+          "date": "2026-10-18",
+          "field": "supersession chain",
+          "note": "the v2.0 head of the Hexagonal Licensing Protocol: ACTIVE; it no longer names #66 (v1.0) as its successor; #1181 is a duplicate deposit of the same text, not an earlier version.",
+          "ruled_by": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\"."
+        }
+      ],
+      "remediation_note": "2026-10-18 RECORD REPAIR (supersession chain): the v2.0 head of the Hexagonal Licensing Protocol: ACTIVE; it no longer names #66 (v1.0) as its successor; #1181 is a duplicate deposit of the same text, not an earlier version.",
+      "retirement_reversed": {
+        "retired": {
+          "class": "superseded",
+          "resolves_to": 66,
+          "declared": "2026-08-10",
+          "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+          "indexable": true,
+          "indexing_ruled": {
+            "on": "2026-10-15",
+            "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+          },
+          "corrected": {
+            "on": "2026-10-15",
+            "was_resolves_to": 66
+          }
+        },
+        "reversed_on": "2026-10-18",
+        "ruled_by": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\".",
+        "why": "retired 2026-08-10 as a duplicate witness of #66; #66 is titled v1.0 and its text is not recovered, so #1182, the v2.0 text, is the head of the family."
+      }
     },
     {
       "deposit_number": 1183,
@@ -431686,7 +431740,7 @@
       "external_metadata_path": "/data/external-metadata/AXN-04F4.json",
       "superseded_by_deposit_number": 31,
       "version_series_id": "DUP-31",
-      "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 1.0): this work already existed as deposit #31, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #31.",
+      "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration): the work this record names — title and DOI 10.5281/zenodo.18284689 — is seated at #323. The body seated here is the March 2026 v7.0 registry (held at #31 and #1171), kept as found; seating the January post here would duplicate #323.",
       "canonical_text_status": "recovered_full_text",
       "modifications": [
         {
@@ -431786,9 +431840,9 @@
           "now": "{\"axn\": \"AXN:04F4.UNCLASSIFIED.\\ud83d\\udc9a\\u2600\\ufe0f\\ud83c\\udfdb\\ufe0f\\ud83c\\udfd4\\ufe0f\\ud83c\\udf05\\ud83c\\udccf\"}"
         }
       ],
-      "date_modified": "2026-10-15",
+      "date_modified": "2026-10-18",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
-      "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #31 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
+      "superseded_reason": "Duplicate witness: the work this record names — the DOI Registry post of 2026-01-17, 18:13 (91 documents, DOI 10.5281/zenodo.18284689) — is seated in full at #323, its own record; the registry's current edition is #31 (v7.0, March 2026), to which every edition points in one hop. CORRECTED 2026-10-18: the reason named #31 as the same work, because the body seated here on 2026-07-19 was the v7.0 post; the containment measure matched that body.",
       "version_basis": {
         "ruling": "AUDIT: project v7.0",
         "prior_registry_claim": "v1.0",
@@ -431825,7 +431879,21 @@
         "ruled_by": "Lee Sharks, 2026-10-15: \"the ten active. and lets keep proceeding thru. the focus is on active, non-duplicate records in general\"",
         "why": "the work segment, converted in July with html2text at its default (ASCII stand-ins for entity-encoded characters), converted again with the characters kept; apparatus untouched"
       },
-      "reading": "Alarm -> Origin -> Foundation -> Force -> Threshold -> Play"
+      "reading": "Alarm -> Origin -> Foundation -> Force -> Threshold -> Play",
+      "supersession_before_repair": {
+        "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #31 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
+        "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 1.0): this work already existed as deposit #31, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #31."
+      },
+      "duplicate_of_deposit_number": 323,
+      "record_modifications": [
+        {
+          "date": "2026-10-18",
+          "field": "supersession / citation",
+          "note": "the duplicate is of #323, the record of the post its title and DOI name (successor stays #31, the current edition); not re-seated (it would duplicate #323).",
+          "ruled_by": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\"."
+        }
+      ],
+      "remediation_note": "2026-10-18 RECORD REPAIR (supersession / citation): the duplicate is of #323, the record of the post its title and DOI name (successor stays #31, the current edition); not re-seated (it would duplicate #323)."
     },
     {
       "deposit_number": 1252,
@@ -467029,11 +467097,11 @@
     },
     {
       "deposit_number": 1358,
-      "axn": "AXN:055F.UNCLASSIFIED.🗺️🛸🔧📋⏬♻️",
+      "axn": "AXN:055F.UNCLASSIFIED.🎹🔬🕒♈❄️🌕",
       "hex": "055F",
       "family": "UNCLASSIFIED",
-      "emoji": "🗺️🛸🔧📋⏬♻️",
-      "hash": "515e3045d9febf264b3d492d976ce4665b96140898b19ecd65df06339303c33d",
+      "emoji": "🎹🔬🕒♈❄️🌕",
+      "hash": "893764a914045d8326b59c47a79a20b4d435ce0cbc5506fd97f1a6fccb3c95f3",
       "title": "Hexagonal Contributor License v3.0 — Rhys Owens — Lunar Arm — Full Unified License",
       "creator": "Sharks, L.",
       "date": "2026-04-25",
@@ -467044,14 +467112,14 @@
       "root_axn": "AXN:055F.UNCLASSIFIED",
       "axn_schema_version": "v2",
       "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "515e3045d9febf264b3d492d976ce4665b96140898b19ecd65df06339303c33d",
+      "axn_canonical": "893764a914045d8326b59c47a79a20b4d435ce0cbc5506fd97f1a6fccb3c95f3",
       "clusters": [
-        "Navigational",
-        "Navigational",
+        "Symbolic",
         "Instrumental",
-        "Scriptural",
-        "Structural",
-        "Terminal"
+        "Temporal",
+        "Alchemical",
+        "Elemental",
+        "Celestial"
       ],
       "axn_reading": "Closure -> Text -> Origin -> Proof -> Duration -> Force",
       "minted_at": "2026-07-19T21:19:04Z",
@@ -467093,7 +467161,7 @@
       "entity_status": "provisional",
       "defines_concepts": [],
       "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
+      "version": "v3.0",
       "keywords": [
         "Crimson Hexagonal Archive",
         "New Human",
@@ -467110,24 +467178,13 @@
         "minted_via": "self_serve_validated_pr"
       },
       "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 7870,
-        "audited_at": "2026-07-19T21:19:04Z",
-        "audit_version": "mint-time-declaration",
-        "semi_audit": "2026-07-20 prose-word discriminator",
-        "recovered_from": "https://mindcontrolpoems.blogspot.com/2025/10/rhys-owens-lunar-arm-of-new-human.html",
-        "recovered_at": "2026-07-20T11:18:29Z",
-        "note": "address-resolver batch, gate 0.50",
-        "class_before_T2": "full",
-        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2",
-        "reclassified_at": "2026-07-28T17:49:24.757195+00:00",
-        "class_before_T2b_ruling": "metadata_capture",
-        "ruled_by": "MANUS ruling 2026-07-28 (T2b cluster ruling: body is the complete work)",
-        "measured_prose_words": 935,
-        "measured_at": "2026-07-31",
-        "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself."
+        "class": "metadata_capture",
+        "lacuna": true,
+        "recovery_status": "NOT_RECOVERED-20261018",
+        "residual_chars": 9278,
+        "audited_at": "2026-10-18T05:53:32.580193+00:00",
+        "audit_version": "record_repairs_20261018",
+        "class_before_repair": "full"
       },
       "references_concepts": [
         "Biographical",
@@ -467179,7 +467236,7 @@
         "overall_conformance": "partial"
       },
       "external_metadata_path": "/data/external-metadata/AXN-055F.json",
-      "canonical_text_status": "recovered_full_text",
+      "canonical_text_status": "metadata_only",
       "modifications": [
         {
           "date": "2026-07-30",
@@ -467258,7 +467315,7 @@
           "now": "{\"axn\": \"AXN:055F.UNCLASSIFIED.\\ud83d\\uddfa\\ufe0f\\ud83d\\udef8\\ud83d\\udd27\\ud83d\\udccb\\u23ec\\u267b\\ufe0f\"}"
         }
       ],
-      "date_modified": "2026-10-15",
+      "date_modified": "2026-10-18",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
       "provenance_note": {
         "severed_dois": [
@@ -467274,6 +467331,12 @@
           "date": "2026-08-08",
           "field": "description",
           "note": "FORENSICS PREFIX LIFTED OUT OF THE DESCRIPTION. The field opened with the severed DOIs and the Zenodo removal record — date, reason, and the numeric ID of the account that removed it — before saying anything about the work. That is provenance, and it is now held in provenance_note where it belongs; the description now opens with the work. The trailing 'json; if canonical bytes surface, a full-text version supersedes this record' fragment was also removed: it is a truncation artifact, and false on a record that holds its full text."
+        },
+        {
+          "date": "2026-10-18",
+          "field": "mislabelled body",
+          "note": "the seated body was another work (the Lunar Arm essay, blog 2025-10-13); the licence text is not recovered; the record is metadata-only with its knowledge-graph witness; the essay retained as appendix and minted as its own record.",
+          "ruled_by": "Lee Sharks, 2026-10-18: \"y thats mislabelled. search alexanarch and blog for 3.0 ... theres also an issue where each of the hexagonal license specs points to each other as superseded ... check what else is in the archive\"; the repairs proposed from that search: \"adopted for all\"."
         }
       ],
       "journal": "Crimson Hexagonal Archive (CHA)",
@@ -467309,7 +467372,14 @@
         "axn_before": "AXN:055F.UNCLASSIFIED.♻️📦🌓◇🕚☁️",
         "ruled_by": "Lee Sharks, 2026-10-15: repair \"broken, missing, and mislabelled files\"; \"the focus is on active, non-duplicate records\"; \"lets proceed\""
       },
-      "reading": "Search -> Search -> Method -> Text -> Direction -> Closure"
+      "reading": "Play -> Method -> Duration -> Transmutation -> Force -> Origin",
+      "related_deposits": [
+        {
+          "deposit": 1356,
+          "relation": "series: v1.0 of the Rhys Owens contributor licence"
+        }
+      ],
+      "remediation_note": "2026-10-18 RECORD REPAIR (mislabelled body): the seated body was another work (the Lunar Arm essay, blog 2025-10-13); the licence text is not recovered; the record is metadata-only with its knowledge-graph witness; the essay retained as appendix and minted as its own record."
     },
     {
       "deposit_number": 1359,
@@ -538967,7 +539037,7 @@
       "lexical_attested_none": true
     }
   ],
-  "last_updated": "2026-10-15T23:45:54Z",
+  "last_updated": "2026-10-18T05:53:32Z",
   "citation_policy": {
     "non_citable": {
       "declared": "2026-08-10",
