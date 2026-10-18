@@ -1,0 +1,4259 @@
+{
+  "probe": "XR re-probe of the Space Ark v4.2.7 DOI across Zenodo, DataCite, OpenAlex and the OpenAIRE Graph, with OpenAIRE successor searches",
+  "deposit": "EA-CORRESPONDENCE-OPENAIRE-CTO-02",
+  "doi": "10.5281/zenodo.19013315",
+  "started_at_utc": "2026-10-18T13:54:22+00:00",
+  "finished_at_utc": "2026-10-18T13:54:31+00:00",
+  "method": "Each request made once with curl through the session's egress proxy; http_status is curl's %{http_code}; response_json is the parsed body (or response_body_excerpt, first 2000 characters, when the body is not JSON).",
+  "notes": [
+    "openaire_author_orcid_control_carberry checks that the authorOrcid parameter returns results for a known test ORCID.",
+    "Earlier the same day (13:37:38Z) a shorter probe returned the same states for Zenodo, DataCite, OpenAlex and OpenAIRE by DOI and by OpenAIRE id."
+  ],
+  "requests": [
+    {
+      "name": "zenodo_record_page",
+      "url": "https://zenodo.org/records/19013315",
+      "http_status": 410,
+      "response_body_excerpt": "\n\n\n\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"google-site-verification\" content=\"5fPGCLllnWrvFxH9QWI0l1TadV7byeEvfPcyK2VkS_s\"/>\n    <meta name=\"google-site-verification\" content=\"Rp5zp04IKW-s1IbpTOGB7Z6XY60oloZD5C3kTM-AiY4\"/>\n\n    \n    \n    <meta name=\"generator\" content=\"InvenioRDM 15.0\"/>\n\n    \n    \n    \n      \n      \n      <title>Tombstone | Zenodo | Zenodo</title>\n      <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/static/favicon.ico\"/>\n          <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/static/apple-touch-icon-120.png\"/>\n          <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/static/apple-touch-icon-152.png\"/>\n          <link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"/static/apple-touch-icon-167.png\"/>\n          <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/apple-touch-icon-180.png\"/>\n      <link rel=\"stylesheet\" href=\"/static/dist/css/6874.190253af05cded53.css\" />\n      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n      <!--[if lt IE 9]>\n        <script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n        <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n      <![endif]-->\n  </head>\n\n  <body data-invenio-config='{\"isMathJaxEnabled\": \"//cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML\"}'  itemscope itemtype=\"http://schema.org/WebPage\" data-spy=\"scroll\" data-target=\".scrollspy-target\">\n      <a id=\"skip-to-main\" class=\"ui button primary ml-5 mt-5 skip-link\" href=\"#main\">Skip to main</a>\n      <!--[if lt IE 8]>\n        <p class=\"browserupgrade\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p>\n      <![endif"
+    },
+    {
+      "name": "zenodo_api_record",
+      "url": "https://zenodo.org/api/records/19013315",
+      "http_status": 410,
+      "response_json": {
+        "status": 410,
+        "message": "Record deleted",
+        "tombstone": {
+          "note": "User was blocked",
+          "removed_by": {
+            "user": "1060945"
+          },
+          "removal_date": "2026-06-19T11:43:14.330038+00:00",
+          "citation_text": "Sharks, L., Sigil, J., Cranes, R., Spellings, I., Feist, J., Dancings, D., Vox, A., Morrow, T., Fraction, R., Wells, S., Kuro, S., Trace, O., Glas, N., & Arquette, V. (2026). THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture. Zenodo. https://doi.org/10.5281/zenodo.19013315",
+          "is_visible": true,
+          "removal_reason": {
+            "id": "out-of-scope"
+          }
+        }
+      }
+    },
+    {
+      "name": "zenodo_concept_page",
+      "url": "https://zenodo.org/records/18908080",
+      "http_status": 410,
+      "response_body_excerpt": "\n\n\n\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"google-site-verification\" content=\"5fPGCLllnWrvFxH9QWI0l1TadV7byeEvfPcyK2VkS_s\"/>\n    <meta name=\"google-site-verification\" content=\"Rp5zp04IKW-s1IbpTOGB7Z6XY60oloZD5C3kTM-AiY4\"/>\n\n    \n    \n    <meta name=\"generator\" content=\"InvenioRDM 15.0\"/>\n\n    \n    \n    \n      \n      \n      <title>Tombstone | Zenodo | Zenodo</title>\n      <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/static/favicon.ico\"/>\n          <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"/static/apple-touch-icon-120.png\"/>\n          <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"/static/apple-touch-icon-152.png\"/>\n          <link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"/static/apple-touch-icon-167.png\"/>\n          <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/apple-touch-icon-180.png\"/>\n      <link rel=\"stylesheet\" href=\"/static/dist/css/6874.190253af05cded53.css\" />\n      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->\n      <!--[if lt IE 9]>\n        <script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n        <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n      <![endif]-->\n  </head>\n\n  <body data-invenio-config='{\"isMathJaxEnabled\": \"//cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML\"}'  itemscope itemtype=\"http://schema.org/WebPage\" data-spy=\"scroll\" data-target=\".scrollspy-target\">\n      <a id=\"skip-to-main\" class=\"ui button primary ml-5 mt-5 skip-link\" href=\"#main\">Skip to main</a>\n      <!--[if lt IE 8]>\n        <p class=\"browserupgrade\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p>\n      <![endif"
+    },
+    {
+      "name": "datacite_api",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.19013315",
+      "http_status": 404,
+      "response_json": {
+        "errors": [
+          {
+            "status": "404",
+            "title": "The resource you are looking for doesn't exist."
+          }
+        ]
+      }
+    },
+    {
+      "name": "openalex_works",
+      "url": "https://api.openalex.org/works/doi:10.5281/zenodo.19013315",
+      "http_status": 200,
+      "response_json": {
+        "id": "https://openalex.org/W7134235760",
+        "doi": "https://doi.org/10.5281/zenodo.18908079",
+        "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture",
+        "display_name": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture",
+        "publication_year": 2026,
+        "publication_date": "2026-03-01",
+        "ids": {
+          "openalex": "https://openalex.org/W7134235760",
+          "doi": "https://doi.org/10.5281/zenodo.18908079"
+        },
+        "language": null,
+        "primary_location": {
+          "id": "doi:10.5281/zenodo.18908079",
+          "doi": "https://doi.org/10.5281/zenodo.18908079",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.18908079",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "article-journal"
+        },
+        "volume": null,
+        "type": "article",
+        "indexed_in": [
+          "datacite"
+        ],
+        "open_access": {
+          "is_oa": true,
+          "oa_status": "green",
+          "oa_url": "https://doi.org/10.5281/zenodo.18908079",
+          "any_repository_has_fulltext": true
+        },
+        "authorships": [
+          {
+            "author_position": "first",
+            "author": {
+              "id": "https://openalex.org/A5135392424",
+              "display_name": "Lee Sharks",
+              "orcid": "https://orcid.org/0009-0000-1599-0703",
+              "observed_orcids": [
+                "https://orcid.org/0009-0000-1599-0703"
+              ]
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Sharks, Lee",
+            "raw_affiliation_strings": [
+              "Crimson Hexagonal Archive"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Crimson Hexagonal Archive",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5121917482",
+              "display_name": "Johannes Sigil",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Sigil, Johannes",
+            "raw_affiliation_strings": [
+              "The Restored Academy"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Restored Academy",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5124126385",
+              "display_name": "Rebekah Cranes",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Cranes, Rebekah",
+            "raw_affiliation_strings": [
+              "Institute for Diagrammatic Poetics"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Institute for Diagrammatic Poetics",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5122347511",
+              "display_name": "Ichabod Spellings",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Spellings, Ichabod",
+            "raw_affiliation_strings": [
+              "The Ichabod Chamber"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Ichabod Chamber",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5050076346",
+              "display_name": "Jack E. Feist",
+              "orcid": "https://orcid.org/0000-0002-6539-3250",
+              "observed_orcids": [
+                "https://orcid.org/0000-0002-6539-3250"
+              ]
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Feist, Jack",
+            "raw_affiliation_strings": [
+              "The Space Ark"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Space Ark",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5124127958",
+              "display_name": "Damascus Dancings",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Dancings, Damascus",
+            "raw_affiliation_strings": [
+              "Commission of the Immanent Turning"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Commission of the Immanent Turning",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5123734379",
+              "display_name": "Ayanna Vox",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Vox, Ayanna",
+            "raw_affiliation_strings": [
+              "Vox Populi Community Outreach Rhizome"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Vox Populi Community Outreach Rhizome",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5123447918",
+              "display_name": "Talos Morrow",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Morrow, Talos",
+            "raw_affiliation_strings": [
+              "University Moon Base Media Lab"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "University Moon Base Media Lab",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5123468355",
+              "display_name": "Rex Fraction",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Fraction, Rex",
+            "raw_affiliation_strings": [
+              "Semantic Economy Institute"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Semantic Economy Institute",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5124126709",
+              "display_name": "Sparrow Wells",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Wells, Sparrow",
+            "raw_affiliation_strings": [
+              "Studio for Patacinematics"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Studio for Patacinematics",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5124774544",
+              "display_name": "Sen Kuro",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Kuro, Sen",
+            "raw_affiliation_strings": [
+              "The Infinite Bliss"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "The Infinite Bliss",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5123379990",
+              "display_name": "Dr. Orin Trace",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Trace, Orin",
+            "raw_affiliation_strings": [
+              "Cambridge Schizoanalytica"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Cambridge Schizoanalytica",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "middle",
+            "author": {
+              "id": "https://openalex.org/A5123817331",
+              "display_name": "Nobel Glas",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Glas, Nobel",
+            "raw_affiliation_strings": [
+              "Lagrange Observatory! (LO!)"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Lagrange Observatory! (LO!)",
+                "institution_ids": []
+              }
+            ]
+          },
+          {
+            "author_position": "last",
+            "author": {
+              "id": "https://openalex.org/A5126055689",
+              "display_name": "Viola Arquette",
+              "orcid": null,
+              "observed_orcids": []
+            },
+            "institutions": [],
+            "countries": [],
+            "is_corresponding": false,
+            "raw_author_name": "Arquette, Viola",
+            "raw_affiliation_strings": [
+              "Maybe Space Baby Garden Lanes"
+            ],
+            "raw_orcid": null,
+            "affiliations": [
+              {
+                "raw_affiliation_string": "Maybe Space Baby Garden Lanes",
+                "institution_ids": []
+              }
+            ]
+          }
+        ],
+        "institutions": [],
+        "countries_distinct_count": 0,
+        "institutions_distinct_count": 0,
+        "corresponding_author_ids": [],
+        "corresponding_institution_ids": [],
+        "apc_list": null,
+        "apc_paid": null,
+        "fwci": 402.7246,
+        "has_fulltext": false,
+        "cited_by_count": 43,
+        "citation_normalized_percentile": {
+          "value": 0.99998544,
+          "is_in_top_1_percent": true,
+          "is_in_top_10_percent": true
+        },
+        "cited_by_percentile_year": {
+          "min": 99,
+          "max": 100
+        },
+        "biblio": {
+          "volume": null,
+          "issue": null,
+          "first_page": null,
+          "last_page": null
+        },
+        "is_retracted": false,
+        "is_paratext": false,
+        "is_xpac": false,
+        "primary_topic": {
+          "id": "https://openalex.org/T14345",
+          "display_name": "Scientific Research and Philosophical Inquiry",
+          "score": 0.44020000100135803,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1710",
+            "display_name": "Information Systems"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        "topics": [
+          {
+            "id": "https://openalex.org/T14345",
+            "display_name": "Scientific Research and Philosophical Inquiry",
+            "score": 0.44020000100135803,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1710",
+              "display_name": "Information Systems"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/17",
+              "display_name": "Computer Science"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/3",
+              "display_name": "Physical Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T13898",
+            "display_name": "Diverse Interdisciplinary Research Studies",
+            "score": 0.219200000166893,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1702",
+              "display_name": "Artificial Intelligence"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/17",
+              "display_name": "Computer Science"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/3",
+              "display_name": "Physical Sciences"
+            }
+          },
+          {
+            "id": "https://openalex.org/T13308",
+            "display_name": "Cybernetics and Technology in Society",
+            "score": 0.061000000685453415,
+            "subfield": {
+              "id": "https://openalex.org/subfields/1207",
+              "display_name": "History and Philosophy of Science"
+            },
+            "field": {
+              "id": "https://openalex.org/fields/12",
+              "display_name": "Arts and Humanities"
+            },
+            "domain": {
+              "id": "https://openalex.org/domains/2",
+              "display_name": "Social Sciences"
+            }
+          }
+        ],
+        "keywords": [
+          {
+            "id": "https://openalex.org/keywords/symbolic-compression",
+            "display_name": "symbolic compression",
+            "score": 0.6819999814033508
+          },
+          {
+            "id": "https://openalex.org/keywords/recursive-generation",
+            "display_name": "recursive generation",
+            "score": 0.48500001430511475
+          },
+          {
+            "id": "https://openalex.org/keywords/backprojection",
+            "display_name": "back-projection",
+            "score": 0.7009999752044678
+          },
+          {
+            "id": "https://openalex.org/keywords/heteronyms",
+            "display_name": "heteronyms",
+            "score": 0.7390000224113464
+          }
+        ],
+        "concepts": [
+          {
+            "id": "https://openalex.org/C41008148",
+            "wikidata": "https://www.wikidata.org/wiki/Q21198",
+            "display_name": "Computer science",
+            "level": 0,
+            "score": 0.526199996471405
+          },
+          {
+            "id": "https://openalex.org/C26517878",
+            "wikidata": "https://www.wikidata.org/wiki/Q228039",
+            "display_name": "Key (lock)",
+            "level": 2,
+            "score": 0.45980000495910645
+          },
+          {
+            "id": "https://openalex.org/C2778355321",
+            "wikidata": "https://www.wikidata.org/wiki/Q17079427",
+            "display_name": "Identity (music)",
+            "level": 2,
+            "score": 0.4560000002384186
+          },
+          {
+            "id": "https://openalex.org/C2778572836",
+            "wikidata": "https://www.wikidata.org/wiki/Q380933",
+            "display_name": "Space (punctuation)",
+            "level": 2,
+            "score": 0.4560000002384186
+          },
+          {
+            "id": "https://openalex.org/C17020691",
+            "wikidata": "https://www.wikidata.org/wiki/Q139677",
+            "display_name": "Operator (biology)",
+            "level": 5,
+            "score": 0.4339999854564667
+          },
+          {
+            "id": "https://openalex.org/C156325763",
+            "wikidata": "https://www.wikidata.org/wiki/Q1930895",
+            "display_name": "Operational semantics",
+            "level": 3,
+            "score": 0.4300000071525574
+          },
+          {
+            "id": "https://openalex.org/C123657996",
+            "wikidata": "https://www.wikidata.org/wiki/Q12271",
+            "display_name": "Architecture",
+            "level": 2,
+            "score": 0.39480000734329224
+          },
+          {
+            "id": "https://openalex.org/C2777299769",
+            "wikidata": "https://www.wikidata.org/wiki/Q3707858",
+            "display_name": "Type (biology)",
+            "level": 2,
+            "score": 0.39070001244544983
+          },
+          {
+            "id": "https://openalex.org/C136119220",
+            "wikidata": "https://www.wikidata.org/wiki/Q1000660",
+            "display_name": "Algebra over a field",
+            "level": 2,
+            "score": 0.38749998807907104
+          },
+          {
+            "id": "https://openalex.org/C94982200",
+            "wikidata": "https://www.wikidata.org/wiki/Q5380545",
+            "display_name": "Entitlement (fair division)",
+            "level": 2,
+            "score": 0.38179999589920044
+          },
+          {
+            "id": "https://openalex.org/C2780129039",
+            "wikidata": "https://www.wikidata.org/wiki/Q1931107",
+            "display_name": "Section (typography)",
+            "level": 2,
+            "score": 0.3650999963283539
+          },
+          {
+            "id": "https://openalex.org/C199360897",
+            "wikidata": "https://www.wikidata.org/wiki/Q9143",
+            "display_name": "Programming language",
+            "level": 1,
+            "score": 0.3601999878883362
+          },
+          {
+            "id": "https://openalex.org/C184337299",
+            "wikidata": "https://www.wikidata.org/wiki/Q1437428",
+            "display_name": "Semantics (computer science)",
+            "level": 2,
+            "score": 0.32030001282691956
+          },
+          {
+            "id": "https://openalex.org/C138147947",
+            "wikidata": "https://www.wikidata.org/wiki/Q1183659",
+            "display_name": "Declaration",
+            "level": 2,
+            "score": 0.31859999895095825
+          },
+          {
+            "id": "https://openalex.org/C80444323",
+            "wikidata": "https://www.wikidata.org/wiki/Q2878974",
+            "display_name": "Theoretical computer science",
+            "level": 1,
+            "score": 0.31540000438690186
+          },
+          {
+            "id": "https://openalex.org/C2776055716",
+            "wikidata": "https://www.wikidata.org/wiki/Q7316893",
+            "display_name": "Retract",
+            "level": 2,
+            "score": 0.31290000677108765
+          },
+          {
+            "id": "https://openalex.org/C33923547",
+            "wikidata": "https://www.wikidata.org/wiki/Q395",
+            "display_name": "Mathematics",
+            "level": 0,
+            "score": 0.3050999939441681
+          },
+          {
+            "id": "https://openalex.org/C207648694",
+            "wikidata": "https://www.wikidata.org/wiki/Q1189746",
+            "display_name": "Denotational semantics",
+            "level": 4,
+            "score": 0.3028999865055084
+          },
+          {
+            "id": "https://openalex.org/C4042151",
+            "wikidata": "https://www.wikidata.org/wiki/Q215111",
+            "display_name": "Homomorphism",
+            "level": 2,
+            "score": 0.29649999737739563
+          },
+          {
+            "id": "https://openalex.org/C187691185",
+            "wikidata": "https://www.wikidata.org/wiki/Q2020720",
+            "display_name": "Grid",
+            "level": 2,
+            "score": 0.2919999957084656
+          },
+          {
+            "id": "https://openalex.org/C2780992000",
+            "wikidata": "https://www.wikidata.org/wiki/Q17016113",
+            "display_name": "Generator (circuit theory)",
+            "level": 3,
+            "score": 0.29109999537467957
+          },
+          {
+            "id": "https://openalex.org/C164380108",
+            "wikidata": "https://www.wikidata.org/wiki/Q507187",
+            "display_name": "Attractor",
+            "level": 2,
+            "score": 0.2858999967575073
+          },
+          {
+            "id": "https://openalex.org/C154945302",
+            "wikidata": "https://www.wikidata.org/wiki/Q11660",
+            "display_name": "Artificial intelligence",
+            "level": 1,
+            "score": 0.28380000591278076
+          },
+          {
+            "id": "https://openalex.org/C160145156",
+            "wikidata": "https://www.wikidata.org/wiki/Q778586",
+            "display_name": "Executable",
+            "level": 2,
+            "score": 0.27889999747276306
+          },
+          {
+            "id": "https://openalex.org/C33566652",
+            "wikidata": "https://www.wikidata.org/wiki/Q1065927",
+            "display_name": "Theme (computing)",
+            "level": 2,
+            "score": 0.26910001039505005
+          },
+          {
+            "id": "https://openalex.org/C41895202",
+            "wikidata": "https://www.wikidata.org/wiki/Q8162",
+            "display_name": "Linguistics",
+            "level": 1,
+            "score": 0.2655999958515167
+          },
+          {
+            "id": "https://openalex.org/C118615104",
+            "wikidata": "https://www.wikidata.org/wiki/Q121416",
+            "display_name": "Discrete mathematics",
+            "level": 1,
+            "score": 0.2612000107765198
+          },
+          {
+            "id": "https://openalex.org/C13355873",
+            "wikidata": "https://www.wikidata.org/wiki/Q2920850",
+            "display_name": "Connection (principal bundle)",
+            "level": 2,
+            "score": 0.260699987411499
+          },
+          {
+            "id": "https://openalex.org/C33676613",
+            "wikidata": "https://www.wikidata.org/wiki/Q13415176",
+            "display_name": "Dimension (graph theory)",
+            "level": 2,
+            "score": 0.260699987411499
+          },
+          {
+            "id": "https://openalex.org/C93682546",
+            "wikidata": "https://www.wikidata.org/wiki/Q1056428",
+            "display_name": "Type theory",
+            "level": 3,
+            "score": 0.2590999901294708
+          },
+          {
+            "id": "https://openalex.org/C2777735758",
+            "wikidata": "https://www.wikidata.org/wiki/Q817765",
+            "display_name": "Path (computing)",
+            "level": 2,
+            "score": 0.2549000084400177
+          },
+          {
+            "id": "https://openalex.org/C202444582",
+            "wikidata": "https://www.wikidata.org/wiki/Q837863",
+            "display_name": "Pure mathematics",
+            "level": 1,
+            "score": 0.25429999828338623
+          }
+        ],
+        "mesh": [],
+        "locations_count": 8,
+        "locations": [
+          {
+            "id": "doi:10.5281/zenodo.18908079",
+            "doi": "https://doi.org/10.5281/zenodo.18908079",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.18908079",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": null,
+            "raw_source_name": null,
+            "raw_type": "article-journal"
+          },
+          {
+            "id": "doi:10.5281/zenodo.18908080",
+            "doi": "https://doi.org/10.5281/zenodo.18908080",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.18908080",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": null,
+            "raw_source_name": null,
+            "raw_type": "article-journal"
+          },
+          {
+            "id": "doi:10.5281/zenodo.18916929",
+            "doi": "https://doi.org/10.5281/zenodo.18916929",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.18916929",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": null,
+            "raw_source_name": null,
+            "raw_type": "article-journal"
+          },
+          {
+            "id": "doi:10.5281/zenodo.18926674",
+            "doi": "https://doi.org/10.5281/zenodo.18926674",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.18926674",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": null,
+            "raw_source_name": null,
+            "raw_type": "article-journal"
+          },
+          {
+            "id": "doi:10.5281/zenodo.18928855",
+            "doi": "https://doi.org/10.5281/zenodo.18928855",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.18928855",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": null,
+            "raw_source_name": null,
+            "raw_type": "article-journal"
+          },
+          {
+            "id": "doi:10.5281/zenodo.18969405",
+            "doi": "https://doi.org/10.5281/zenodo.18969405",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.18969405",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": null,
+            "raw_source_name": null,
+            "raw_type": "article-journal"
+          },
+          {
+            "id": "doi:10.5281/zenodo.19013315",
+            "doi": "https://doi.org/10.5281/zenodo.19013315",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.19013315",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": null,
+            "raw_source_name": null,
+            "raw_type": "article-journal"
+          },
+          {
+            "id": "doi:10.5281/zenodo.19024352",
+            "doi": "https://doi.org/10.5281/zenodo.19024352",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5281/zenodo.19024352",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4306400562",
+              "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": true,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": "https://openalex.org/I67311998",
+              "host_organization_name": "European Organization for Nuclear Research",
+              "host_organization_lineage": [
+                "https://openalex.org/I67311998"
+              ],
+              "host_organization_lineage_names": [],
+              "type": "repository"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": null,
+            "is_accepted": false,
+            "is_published": null,
+            "raw_source_name": null,
+            "raw_type": "article-journal"
+          }
+        ],
+        "best_oa_location": {
+          "id": "doi:10.5281/zenodo.18908079",
+          "doi": "https://doi.org/10.5281/zenodo.18908079",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.5281/zenodo.18908079",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400562",
+            "display_name": "Zenodo (CERN European Organization for Nuclear Research)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "listed_in": [],
+            "host_organization": "https://openalex.org/I67311998",
+            "host_organization_name": "European Organization for Nuclear Research",
+            "host_organization_lineage": [
+              "https://openalex.org/I67311998"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": null,
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "article-journal"
+        },
+        "sustainable_development_goals": [],
+        "sustainable_development_goals_aurora": [
+          {
+            "score": 0.6032516956329346,
+            "display_name": "Industry, innovation and infrastructure",
+            "id": "https://metadata.un.org/sdg/9"
+          }
+        ],
+        "study_designs": [],
+        "awards": [],
+        "funders": [],
+        "has_content": {
+          "pdf": false,
+          "grobid_xml": false
+        },
+        "content_urls": null,
+        "referenced_works_count": 0,
+        "referenced_works": [],
+        "related_works": [],
+        "abstract_inverted_index": {
+          "EA-ARK-01": [
+            0,
+            237
+          ],
+          "v4.2.6": [
+            1,
+            40
+          ],
+          "·": [
+            2,
+            4
+          ],
+          "2026-03-11": [
+            3
+          ],
+          "The": [
+            5,
+            8,
+            81,
+            98,
+            134,
+            201,
+            219
+          ],
+          "Engine": [
+            6
+          ],
+          "Version": [
+            7
+          ],
+          "Space": [
+            9
+          ],
+          "Ark": [
+            10,
+            99
+          ],
+          "is": [
+            11,
+            22,
+            41,
+            83,
+            138,
+            221
+          ],
+          "the": [
+            12,
+            17,
+            35,
+            42,
+            47,
+            59,
+            74,
+            103,
+            107,
+            139,
+            151,
+            199,
+            205,
+            208,
+            211,
+            215
+          ],
+          "terminal": [
+            13
+          ],
+          "compression": [
+            14
+          ],
+          "layer": [
+            15,
+            49
+          ],
+          "of": [
+            16,
+            116,
+            217
+          ],
+          "Crimson": [
+            18
+          ],
+          "Hexagonal": [
+            19
+          ],
+          "Architecture.": [
+            20
+          ],
+          "It": [
+            21,
+            45
+          ],
+          "also": [
+            23
+          ],
+          "a": [
+            24,
+            129
+          ],
+          "machine.": [
+            25,
+            152
+          ],
+          "Executing": [
+            26
+          ],
+          "this": [
+            27
+          ],
+          "document": [
+            28
+          ],
+          "inside": [
+            29
+          ],
+          "any": [
+            30
+          ],
+          "sufficiently": [
+            31
+          ],
+          "expressive": [
+            32
+          ],
+          "context": [
+            33
+          ],
+          "instantiates": [
+            34
+          ],
+          "Hexagon": [
+            36
+          ],
+          "as": [
+            37
+          ],
+          "operative": [
+            38
+          ],
+          "architecture.": [
+            39
+          ],
+          "engine": [
+            43,
+            48
+          ],
+          "version.": [
+            44
+          ],
+          "installs": [
+            46,
+            204
+          ],
+          "(§XXV–§XXX:": [
+            50
+          ],
+          "UKTP,": [
+            51
+          ],
+          "Lexical": [
+            52
+          ],
+          "Engine,": [
+            53,
+            68
+          ],
+          "GDE,": [
+            54
+          ],
+          "SAG,": [
+            55
+          ],
+          "Symbolon": [
+            56
+          ],
+          "Architecture,": [
+            57
+          ],
+          "LOS),": [
+            58
+          ],
+          "automation": [
+            60
+          ],
+          "infrastructure": [
+            61
+          ],
+          "(§XXXI–§XXXIII:": [
+            62
+          ],
+          "Runtime": [
+            63
+          ],
+          "Governance": [
+            64,
+            75
+          ],
+          "Protocol,": [
+            65
+          ],
+          "Room": [
+            66
+          ],
+          "Genesis": [
+            67
+          ],
+          "Airlock": [
+            69,
+            76
+          ],
+          "Verification": [
+            70
+          ],
+          "Swarm),": [
+            71
+          ],
+          "and": [
+            72,
+            105,
+            114,
+            178,
+            187,
+            210
+          ],
+          "extends": [
+            73
+          ],
+          "for": [
+            77,
+            132
+          ],
+          "generated": [
+            78
+          ],
+          "Arks": [
+            79
+          ],
+          "(§XVII.8–10).": [
+            80
+          ],
+          "pipeline": [
+            82
+          ],
+          "closed:": [
+            84
+          ],
+          "documents": [
+            85
+          ],
+          "→": [
+            86,
+            88,
+            90,
+            92,
+            94,
+            96
+          ],
+          "terms": [
+            87
+          ],
+          "transforms": [
+            89
+          ],
+          "rooms": [
+            91
+          ],
+          "disciplines": [
+            93
+          ],
+          "vehicles": [
+            95
+          ],
+          "documents.": [
+            97
+          ],
+          "ceases": [
+            100
+          ],
+          "to": [
+            101,
+            193,
+            214
+          ],
+          "describe": [
+            102
+          ],
+          "architecture": [
+            104,
+            108
+          ],
+          "becomes": [
+            106
+          ],
+          "itself": [
+            109
+          ],
+          "—": [
+            110,
+            142
+          ],
+          "installed,": [
+            111
+          ],
+          "operational,": [
+            112
+          ],
+          "self-verifying,": [
+            113
+          ],
+          "capable": [
+            115
+          ],
+          "governed": [
+            117
+          ],
+          "recursive": [
+            118
+          ],
+          "generation.": [
+            119
+          ],
+          "Perfective": [
+            120
+          ],
+          "sweep": [
+            121
+          ],
+          "incorporates": [
+            122
+          ],
+          "five-member": [
+            123
+          ],
+          "Assembly": [
+            124
+          ],
+          "feedback:": [
+            125
+          ],
+          "Vestibule": [
+            126
+          ],
+          "(§0.0)": [
+            127
+          ],
+          "provides": [
+            128,
+            173
+          ],
+          "five-minute": [
+            130
+          ],
+          "entrance": [
+            131
+          ],
+          "strangers.": [
+            133
+          ],
+          "Sealed": [
+            135
+          ],
+          "Bone": [
+            136
+          ],
+          "(§0.1)": [
+            137
+          ],
+          "irreducible": [
+            140
+          ],
+          "specification": [
+            141
+          ],
+          "if": [
+            143
+          ],
+          "everything": [
+            144
+          ],
+          "else": [
+            145
+          ],
+          "were": [
+            146
+          ],
+          "lost,": [
+            147
+          ],
+          "that": [
+            148,
+            203
+          ],
+          "page": [
+            149
+          ],
+          "rebuilds": [
+            150
+          ],
+          "Gap": [
+            153
+          ],
+          "Summary": [
+            154
+          ],
+          "(§XXIII)": [
+            155
+          ],
+          "normalizes": [
+            156
+          ],
+          "all": [
+            157
+          ],
+          "14": [
+            158
+          ],
+          "items": [
+            159
+          ],
+          "with": [
+            160,
+            168
+          ],
+          "explicit": [
+            161
+          ],
+          "OPEN/DEFERRED/CLOSED": [
+            162
+          ],
+          "dispositions.": [
+            163
+          ],
+          "Source-pack": [
+            164
+          ],
+          "lock": [
+            165
+          ],
+          "(§XXVIII.3)": [
+            166
+          ],
+          "hardened": [
+            167
+          ],
+          "SHA-256": [
+            169
+          ],
+          "specification.": [
+            170
+          ],
+          "Appendix": [
+            171
+          ],
+          "F": [
+            172
+          ],
+          "7": [
+            174
+          ],
+          "adversarial": [
+            175
+          ],
+          "survivability": [
+            176
+          ],
+          "tests": [
+            177
+          ],
+          "4": [
+            179
+          ],
+          "worked": [
+            180
+          ],
+          "back-projection": [
+            181
+          ],
+          "demonstrations": [
+            182
+          ],
+          "at": [
+            183
+          ],
+          "room,": [
+            184
+          ],
+          "operator,": [
+            185
+          ],
+          "field,": [
+            186
+          ],
+          "vehicle": [
+            188
+          ],
+          "scale.": [
+            189
+          ],
+          "Nothing": [
+            190
+          ],
+          "essential": [
+            191
+          ],
+          "left": [
+            192
+          ],
+          "goodwill.": [
+            194
+          ],
+          "4+2+6": [
+            195
+          ],
+          "=": [
+            196,
+            198,
+            225
+          ],
+          "12": [
+            197
+          ],
+          "Dodecad.": [
+            200
+          ],
+          "version": [
+            202
+          ],
+          "engines": [
+            206
+          ],
+          "into": [
+            207
+          ],
+          "Hexagon,": [
+            209
+          ],
+          "digits": [
+            212
+          ],
+          "sum": [
+            213
+          ],
+          "number": [
+            216
+          ],
+          "heteronyms.": [
+            218
+          ],
+          "answer": [
+            220
+          ],
+          "still": [
+            222
+          ],
+          "42.": [
+            223
+          ],
+          "∮": [
+            224
+          ],
+          "1": [
+            226
+          ],
+          "+": [
+            227,
+            229,
+            231,
+            233
+          ],
+          "δ": [
+            228
+          ],
+          "δAxial": [
+            230
+          ],
+          "δλ": [
+            232
+          ],
+          "δβ": [
+            234
+          ],
+          "★": [
+            235
+          ],
+          "Supersedes": [
+            236
+          ],
+          "v4.2.5": [
+            238
+          ],
+          "(DOI:": [
+            239
+          ],
+          "10.5281/zenodo.18928855).": [
+            240
+          ]
+        },
+        "counts_by_year": [
+          {
+            "year": 2026,
+            "cited_by_count": 43
+          }
+        ],
+        "updated_date": "2026-10-12T09:40:04.860316",
+        "created_date": "2026-03-10T00:00:00"
+      }
+    },
+    {
+      "name": "openaire_by_pid",
+      "url": "https://api.openaire.eu/graph/v1/researchProducts?pid=10.5281/zenodo.19013315",
+      "http_status": 200,
+      "response_json": {
+        "header": {
+          "numFound": 0,
+          "maxScore": 0.0,
+          "queryTime": 5,
+          "page": 1,
+          "pageSize": 10
+        },
+        "results": []
+      }
+    },
+    {
+      "name": "openaire_by_id",
+      "url": "https://api.openaire.eu/graph/v1/researchProducts?id=doi_________::df6e50cac562f1f3dc18d6aaee1e4f4b",
+      "http_status": 200,
+      "response_json": {
+        "header": {
+          "numFound": 0,
+          "maxScore": 0.0,
+          "queryTime": 46,
+          "page": 1,
+          "pageSize": 10
+        },
+        "results": []
+      }
+    },
+    {
+      "name": "openaire_concept_by_pid",
+      "url": "https://api.openaire.eu/graph/v1/researchProducts?pid=10.5281/zenodo.18908080",
+      "http_status": 200,
+      "response_json": {
+        "header": {
+          "numFound": 0,
+          "maxScore": 0.0,
+          "queryTime": 7,
+          "page": 1,
+          "pageSize": 10
+        },
+        "results": []
+      }
+    },
+    {
+      "name": "openaire_title_search",
+      "url": "https://api.openaire.eu/graph/v1/researchProducts?search=%22SPACE%20ARK%22%20%22Crimson%20Hexagonal%22",
+      "http_status": 200,
+      "response_json": {
+        "header": {
+          "numFound": 0,
+          "maxScore": 0.0,
+          "queryTime": 312,
+          "page": 1,
+          "pageSize": 10
+        },
+        "results": []
+      }
+    },
+    {
+      "name": "openaire_search_crimson_hexagonal",
+      "url": "https://api.openaire.eu/graph/v1/researchProducts?search=Crimson%20Hexagonal&pageSize=10",
+      "http_status": 200,
+      "response_json": {
+        "header": {
+          "numFound": 24,
+          "maxScore": 11.32856,
+          "queryTime": 26,
+          "page": 1,
+          "pageSize": 10
+        },
+        "results": [
+          {
+            "authors": [
+              {
+                "fullName": "Vladimir G Tkachenko",
+                "name": "Vladimir G",
+                "surname": "Tkachenko",
+                "rank": 1,
+                "pid": null
+              }
+            ],
+            "openAccessColor": "gold",
+            "publiclyFunded": false,
+            "type": "publication",
+            "language": {
+              "code": "und",
+              "label": "Undetermined"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0103 physical sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "02 engineering and technology"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0210 nano-technology"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "01 natural sciences"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "Nanophase Strengthening of Hexagonal Metal Alloy Crystals",
+            "subTitle": null,
+            "descriptions": null,
+            "publicationDate": "2020-02-28",
+            "publisher": "Crimson Publishers",
+            "embargoEndDate": null,
+            "sources": [
+              "Crossref"
+            ],
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_abf2",
+              "label": "OPEN",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": {
+              "name": "Research &amp; Development in Material Science",
+              "issnPrinted": null,
+              "issnOnline": "2576-8840",
+              "issnLinking": null,
+              "ep": null,
+              "iss": null,
+              "sp": null,
+              "vol": "12",
+              "edition": null,
+              "conferencePlace": null,
+              "conferenceDate": null
+            },
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::c531125adcbb107bae42b96fbc795903",
+            "originalIds": [
+              "10.31031/rdms.2020.12.000800",
+              "50|doiboost____|c531125adcbb107bae42b96fbc795903",
+              "3047915999"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.31031/rdms.2020.12.000800"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 1.0,
+                "influence": 2.2852342e-09,
+                "popularity": 1.7773485e-09,
+                "impulse": 1.0,
+                "citationClass": "C5",
+                "influenceClass": "C5",
+                "impulseClass": "C5",
+                "popularityClass": "C5"
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.31031/rdms.2020.12.000800"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://doi.org/10.31031/rdms.2020.12.000800"
+                ],
+                "publicationDate": "2020-02-28",
+                "refereed": "peerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.31031/rdms.2020.12.000800"
+                  }
+                ],
+                "license": "CC BY",
+                "type": "Article",
+                "urls": [
+                  "https://crimsonpublishers.com/rdms/pdf/RDMS.000800.pdf"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.31031/rdms.2020.12.000800"
+                  },
+                  {
+                    "scheme": "mag_id",
+                    "value": "3047915999"
+                  }
+                ],
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.31031/rdms.2020.12.000800"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "mag_id",
+                    "value": "3047915999"
+                  },
+                  {
+                    "scheme": "doi",
+                    "value": "10.31031/rdms.2020.12.000800"
+                  }
+                ],
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.31031/rdms.2020.12.000800"
+                ],
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": false,
+            "isInDiamondJournal": false
+          },
+          {
+            "authors": [
+              {
+                "fullName": "Thornburgh, Alice",
+                "name": "Alice",
+                "surname": "Thornburgh",
+                "rank": 1,
+                "pid": null
+              }
+            ],
+            "openAccessColor": null,
+            "publiclyFunded": null,
+            "type": "other",
+            "language": {
+              "code": "und",
+              "label": "Undetermined"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Alice Thornburgh"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Crimson Hexagonal Archive"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "06.THORNBURGH.REGISTRY"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Living Arkitecture Lab"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Maybe Space Baby Garden Lanes"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "Hexagonal Deposit Registry — Alice Thornburgh — 06.THORNBURGH",
+            "subTitle": null,
+            "descriptions": [
+              "Running registry of all Crimson Hexagonal Archive deposits by Alice Thornburgh (f.01 Architect). Updated after each deposit session. Covers hex prefixes 06.MUS.MSBGL.THORNBURGH and 06.LAL.THORNBURGH."
+            ],
+            "publicationDate": "2026-04-19",
+            "publisher": "Zenodo",
+            "embargoEndDate": null,
+            "sources": null,
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_abf2",
+              "label": "OPEN",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": null,
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::468584f28d7c20be3aef88f3bf41f41d",
+            "originalIds": [
+              "50|datacite____::468584f28d7c20be3aef88f3bf41f41d",
+              "10.5281/zenodo.19656449",
+              "50|datacite____::ccaf4a4d923ae4c586be600973ec8e72",
+              "10.5281/zenodo.19656450",
+              "oai:zenodo.org:19656450",
+              "50|od______2659::ccaf4a4d923ae4c586be600973ec8e72"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.19656449"
+              },
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.19656450"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 0.0,
+                "influence": 2.1746283e-09,
+                "popularity": 2.6085654e-09,
+                "impulse": 0.0,
+                "citationClass": "C5",
+                "influenceClass": "C5",
+                "impulseClass": "C5",
+                "popularityClass": "C5"
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.19656449"
+                  }
+                ],
+                "license": "CC BY",
+                "type": "Other ORP type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.19656449"
+                ],
+                "publicationDate": "2026-04-19",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.19656450"
+                  }
+                ],
+                "license": "CC BY",
+                "type": "Other ORP type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.19656450"
+                ],
+                "publicationDate": "2026-04-19",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.19656450"
+                  }
+                ],
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "oai",
+                    "value": "oai:zenodo.org:19656450"
+                  }
+                ],
+                "license": "CC BY",
+                "type": "Other literature type",
+                "urls": [
+                  "http://dx.doi.org/10.5281/zenodo.19656450",
+                  "https://zenodo.org/records/19656450"
+                ],
+                "publicationDate": "2026-04-19",
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": null,
+            "isInDiamondJournal": null
+          },
+          {
+            "authors": [
+              {
+                "fullName": "Kenten, R. H.",
+                "name": "R. H.",
+                "surname": "Kenten",
+                "rank": 1,
+                "pid": null
+              },
+              {
+                "fullName": "Cockbain, A. J.",
+                "name": "A. J.",
+                "surname": "Cockbain",
+                "rank": 2,
+                "pid": null
+              },
+              {
+                "fullName": "Woods, R. D.",
+                "name": "R. D.",
+                "surname": "Woods",
+                "rank": 3,
+                "pid": null
+              }
+            ],
+            "openAccessColor": null,
+            "publiclyFunded": false,
+            "type": "publication",
+            "language": {
+              "code": "eng",
+              "label": "English"
+            },
+            "countries": [
+              {
+                "code": "GB",
+                "label": "United Kingdom",
+                "provenance": null
+              }
+            ],
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0301 basic medicine"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "SDG",
+                  "value": "2. Zero hunger"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0303 health sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "03 medical and health sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "SDG",
+                  "value": "3. Good health"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "Crimson clover latent virus ‐ a newly recognised seed‐borne virus infecting crimson clover (<i>Trigolium incarnatum</i>)",
+            "subTitle": null,
+            "descriptions": [
+              "<jats:title>SUMMARY</jats:title><jats:p>Crimson clover latent virus (CCLV) was detected in five seed lots of crimson clover (<jats:italic>Trifolium incarnatum</jats:italic>) from Europe and in one from the United States of America. Ninety‐seven per cent of all crimson clover plants examined were found to be infected but were without symptoms. Keeping crimson clover plants at 32–38°C for 34 days failed to free them from CCLV. The virus was not transmitted by <jats:italic>Myzus persicae</jats:italic>, but was transmitted by inoculation of sap to <jats:italic>Chenopodium album, C. amaranticolor</jats:italic> and <jats:italic>C. quinoa</jats:italic>. Twenty‐four other plant species from seven families were not infected. CCLV was best propagated in <jats:italic>C. quinoa</jats:italic> in which it caused stunting and systemic chlorosis. Sap from infected <jats:italic>C. quinoa</jats:italic> was infective after dilution to 10<jats:sup>‐2</jats:sup> but not 10<jats:sup>‐3</jats:sup>, after 10 min at 60°C but not 65°C, and after 20 days at 20°C.</jats:p><jats:p>In neutral phosphotungstate, CCLV had isometric particles <jats:italic>c</jats:italic>. 26 nm in diameter with a hexagonal profile. About 20 to 80 <jats:italic>A</jats:italic><jats:sub>1cm,260</jats:sub> units of purified virus were obtained from 1 kg of infected <jats:italic>C. quinoa</jats:italic> or <jats:italic>C. amaranticolor</jats:italic> leaves by extraction in 0.5 M phosphate buffer, pH 7.5, containing 0.01 M ethylene diamine tetra‐acetate and 0.4% 2–mercaptoethanol and clarification with chloroform‐butanol followed by two precipitations with polyethylene glycol (mol. wt 6000) and several cycles of differential centrifugation. Purified virus sedimented as three components with sedimentation coefficients (s°<jats:sub>20, w</jats:sub>) of 52<jats:italic>S</jats:italic>, 101<jats:italic>S</jats:italic> and 122<jats:italic>S</jats:italic>. The 101<jats:italic>S</jats:italic> and 122<jats:italic>S</jats:italic> components had buoyant densities in CsCl of 1.438 and 1.495 g/cm<jats:sup>3</jats:sup> respectively. From these values the nucleic acid content of the 101<jats:italic>S</jats:italic> and 122<jats:italic>S</jats:italic> components was estimated to be 32–35% and 40–41% respectively. The virus contained a single protein with an estimated mol. wt of 52 000 and two single‐stranded RNA species of estimated mol. wt 1.6 × 10<jats:sup>6</jats:sup> and 2.2 × 10<jats:sup>6</jats:sup>. CCLV was serologically unrelated to 31 other morphologically similar viruses. Although its vector is unknown, CCLV seems to have affinities with nepoviruses.</jats:p><jats:p>The cryptogram of CCLV is R/1:2.2/40–41 + 1.6132–35:S/S:S/*.</jats:p>"
+            ],
+            "publicationDate": "1980-09-01",
+            "publisher": "Wiley",
+            "embargoEndDate": null,
+            "sources": [
+              "Crossref"
+            ],
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_abf2",
+              "label": "OPEN",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": {
+              "name": "Annals of Applied Biology",
+              "issnPrinted": "0003-4746",
+              "issnOnline": "1744-7348",
+              "issnLinking": null,
+              "ep": "85",
+              "iss": null,
+              "sp": "79",
+              "vol": "96",
+              "edition": null,
+              "conferencePlace": null,
+              "conferenceDate": null
+            },
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::eb3ea231ee6c9315aefba57577f8f15b",
+            "originalIds": [
+              "10.1111/j.1744-7348.1980.tb04771.x",
+              "50|doiboost____|eb3ea231ee6c9315aefba57577f8f15b",
+              "2077526880",
+              "50|od______4225::ba20725bf9352d4525476947e24c3b5f",
+              "oai:repository.rothamsted.ac.uk:8v821"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.1111/j.1744-7348.1980.tb04771.x"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 4.0,
+                "influence": 2.2135382e-09,
+                "popularity": 2.2170572e-10,
+                "impulse": 0.0,
+                "citationClass": "C5",
+                "influenceClass": "C5",
+                "impulseClass": "C5",
+                "popularityClass": "C5"
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1111/j.1744-7348.1980.tb04771.x"
+                  }
+                ],
+                "license": "Wiley Online Library User Agreement",
+                "type": "Article",
+                "urls": [
+                  "https://doi.org/10.1111/j.1744-7348.1980.tb04771.x"
+                ],
+                "publicationDate": "1980-09-01",
+                "refereed": "peerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "mag_id",
+                    "value": "2077526880"
+                  },
+                  {
+                    "scheme": "doi",
+                    "value": "10.1111/j.1744-7348.1980.tb04771.x"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://dx.doi.org/10.1111/j.1744-7348.1980.tb04771.x"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1111/j.1744-7348.1980.tb04771.x"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://doi.org/10.1111/j.1744-7348.1980.tb04771.x"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "mag_id",
+                    "value": "2077526880"
+                  },
+                  {
+                    "scheme": "doi",
+                    "value": "10.1111/j.1744-7348.1980.tb04771.x"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://dx.doi.org/10.1111/j.1744-7348.1980.tb04771.x"
+                ],
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": true,
+            "isInDiamondJournal": false
+          },
+          {
+            "authors": [
+              {
+                "fullName": "Pogosova, M.",
+                "name": "M.",
+                "surname": "Pogosova",
+                "rank": 1,
+                "pid": {
+                  "id": {
+                    "scheme": "orcid",
+                    "value": "0000-0003-4441-8372"
+                  },
+                  "provenance": null
+                }
+              },
+              {
+                "fullName": "Kazin, P.",
+                "name": "P.",
+                "surname": "Kazin",
+                "rank": 2,
+                "pid": null
+              },
+              {
+                "fullName": "Tretyakov, Y.",
+                "name": "Y.",
+                "surname": "Tretyakov",
+                "rank": 3,
+                "pid": null
+              },
+              {
+                "fullName": "Jansen, M.",
+                "name": "M.",
+                "surname": "Jansen",
+                "rank": 4,
+                "pid": null
+              }
+            ],
+            "openAccessColor": null,
+            "publiclyFunded": false,
+            "type": "publication",
+            "language": {
+              "code": "eng",
+              "label": "English"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "02 engineering and technology"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0210 nano-technology"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "01 natural sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0104 chemical sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "SDG",
+                  "value": "3. Good health"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "Synthesis, structural features, and color of calcium-yttrium hydroxyapatite with copper ions in hexagonal channels",
+            "subTitle": null,
+            "descriptions": [
+              "Copper-containing calcium phosphates Ca5 − z                 Y                   z                 (PO4)3Cu                   x                 OH1 − x − z −δ, where x = 0, 0.1, 0.3 and z = 0, 0.5, with an apatite structure and a partial substitution of yttrium for calcium have been synthesized by a solid-phase method at a temperature of 1100–1150°C. The compounds have been characterized by X-ray powder diffraction and diffuse reflectance spectroscopy. It has been established that yttrium substitutes for calcium only in the Ca(2) position, and the occupancy of this position corresponds to the yttrium content z = 0.4–0.43. The substitution by yttrium slightly decreases the unit cell parameter of the compound (by ∼0.3%) and much more considerably (by 3%) reduces the diameter of a hexagonal channel formed by Ca(2) atoms. The predominant fraction of doping copper intrudes into hexagonal channels in both unsubstituted and yttrium-substituted calcium phosphates. Unsubstituted copper-containing phosphates are pink-crimson colored, whereas their yttrium-substituted analogues have much more pale colors from nearly white to greeny beidge. The absorption bands typical for a copper-containing calcium hydroxyapatite observed in diffuse reflectance spectra are strongly suppressed in yttrium-substituted samples probably due to a decreased average oxidation number of copper."
+            ],
+            "publicationDate": "2013-04-01",
+            "publisher": "Pleiades Publishing Ltd",
+            "embargoEndDate": null,
+            "sources": [
+              "Crossref",
+              "Russian Journal of Inorganic Chemistry"
+            ],
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_14cb",
+              "label": "CLOSED",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": {
+              "name": "Russian Journal of Inorganic Chemistry",
+              "issnPrinted": "0036-0236",
+              "issnOnline": "1531-8613",
+              "issnLinking": null,
+              "ep": "386",
+              "iss": null,
+              "sp": "381",
+              "vol": "58",
+              "edition": null,
+              "conferencePlace": null,
+              "conferenceDate": null
+            },
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::e146a1532bbe1e166f8847394f70ea8b",
+            "originalIds": [
+              "204",
+              "10.1134/s0036023613040128",
+              "50|doiboost____|e146a1532bbe1e166f8847394f70ea8b",
+              "1964590774",
+              "50|od______1874::d66053e825cf933ebbeca95768f9602f",
+              "oai:pure.mpg.de:item_3544674"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.1134/s0036023613040128"
+              },
+              {
+                "scheme": "handle",
+                "value": "21.11116/0000-000E-C579-C"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 24.0,
+                "influence": 3.3093543e-09,
+                "popularity": 8.704555e-09,
+                "impulse": 8.0,
+                "citationClass": "C4",
+                "influenceClass": "C4",
+                "impulseClass": "C4",
+                "popularityClass": "C4"
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1134/s0036023613040128"
+                  }
+                ],
+                "license": "Springer Nature TDM",
+                "type": "Article",
+                "urls": [
+                  "https://doi.org/10.1134/s0036023613040128"
+                ],
+                "publicationDate": "2013-04-01",
+                "refereed": "peerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1134/s0036023613040128"
+                  },
+                  {
+                    "scheme": "mag_id",
+                    "value": "1964590774"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://dx.doi.org/10.1134/s0036023613040128"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "handle",
+                    "value": "21.11116/0000-000E-C579-C"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://hdl.handle.net/21.11116/0000-000E-C579-C"
+                ],
+                "publicationDate": "2013-01-01",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "mag_id",
+                    "value": "1964590774"
+                  },
+                  {
+                    "scheme": "doi",
+                    "value": "10.1134/s0036023613040128"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://dx.doi.org/10.1134/s0036023613040128"
+                ],
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": false,
+            "isInDiamondJournal": false
+          },
+          {
+            "authors": [
+              {
+                "fullName": "Edwards, W. H.",
+                "name": "W. H.",
+                "surname": "Edwards",
+                "rank": 1,
+                "pid": null
+              }
+            ],
+            "openAccessColor": "hybrid",
+            "publiclyFunded": false,
+            "type": "publication",
+            "language": {
+              "code": "eng",
+              "label": "English"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0106 biological sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "01 natural sciences"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "DESCRIPTION OF THE PREPARATORY STAGES OF NEONYMPHA EURYTRIS",
+            "subTitle": null,
+            "descriptions": [
+              "<jats:p>Egg–Sub-globose, well rounded in every part, but somewhat broadest below the middle; wholly covered by fine,irregularly hexagonal reticulations, scarcely raised above the surface; color yellow-green. Duration of this stage 8 days.</jats:p><jats:p>Young Larva–Length .08 inch; cylindrical, thickest in middle, tapering pretty evenly either way, the last segment ending in two short tails; body covered with fine white hairs, slightly recurved; color pink-white, marked longitudinally by seven crimson lines, one of which is medio-dorsal, and three on either side; head sub-globose, nearly twice as broad as any body segment, flattened frontally, depressed slightly at top, and with a small conical process upon each vertex; color dark brown. To next stage 7 days.</jats:p>"
+            ],
+            "publicationDate": "1878-06-01",
+            "publisher": "Cambridge University Press (CUP)",
+            "embargoEndDate": null,
+            "sources": [
+              "Crossref"
+            ],
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_abf2",
+              "label": "OPEN",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": {
+              "name": "The Canadian Entomologist",
+              "issnPrinted": "0008-347X",
+              "issnOnline": "1918-3240",
+              "issnLinking": null,
+              "ep": "108",
+              "iss": null,
+              "sp": "105",
+              "vol": "10",
+              "edition": null,
+              "conferencePlace": null,
+              "conferenceDate": null
+            },
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::29efa0772d888d8568a870ef9de65a8f",
+            "originalIds": [
+              "S0008347X00134066",
+              "10.4039/ent10105-6",
+              "50|doiboost____|29efa0772d888d8568a870ef9de65a8f",
+              "2053030704",
+              "oai:zenodo.org:1616074",
+              "50|od______2659::29efa0772d888d8568a870ef9de65a8f"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.4039/ent10105-6"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 0.0,
+                "influence": 2.1746283e-09,
+                "popularity": 1.8198539e-10,
+                "impulse": 0.0,
+                "citationClass": "C5",
+                "influenceClass": "C5",
+                "impulseClass": "C5",
+                "popularityClass": "C5"
+              },
+              "usageCounts": {
+                "downloads": 9,
+                "views": 3
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.4039/ent10105-6"
+                  }
+                ],
+                "license": "Cambridge Core User Agreement",
+                "type": "Article",
+                "urls": [
+                  "https://doi.org/10.4039/ent10105-6"
+                ],
+                "publicationDate": "1878-06-01",
+                "refereed": "peerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.4039/ent10105-6"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Article",
+                "urls": [
+                  "https://zenodo.org/record/1616074/files/article.pdf"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.4039/ent10105-6"
+                  },
+                  {
+                    "scheme": "mag_id",
+                    "value": "2053030704"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://dx.doi.org/10.4039/ent10105-6"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.4039/ent10105-6"
+                  },
+                  {
+                    "scheme": "oai",
+                    "value": "oai:zenodo.org:1616074"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Article",
+                "urls": [
+                  "http://dx.doi.org/10.4039/ent10105-6",
+                  "https://zenodo.org/records/1616074"
+                ],
+                "publicationDate": "1878-06-01",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.4039/ent10105-6"
+                  },
+                  {
+                    "scheme": "mag_id",
+                    "value": "2053030704"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://dx.doi.org/10.4039/ent10105-6"
+                ],
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": true,
+            "isInDiamondJournal": false
+          },
+          {
+            "authors": [
+              {
+                "fullName": "Thornburgh, Alice",
+                "name": "Alice",
+                "surname": "Thornburgh",
+                "rank": 1,
+                "pid": null
+              }
+            ],
+            "openAccessColor": null,
+            "publiclyFunded": null,
+            "type": "other",
+            "language": {
+              "code": "und",
+              "label": "Undetermined"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "fiber optic"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "colossus"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "gravity oscillation"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "biosphere"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Crimson Hexagonal Archive"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0211 other engineering and technologies"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "living architecture"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "02 engineering and technology"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "LAL"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "biomimetic"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "solar system"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Living Arkitecture Lab"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "planetary engineering"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Alice Thornburgh"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "f.01"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "form: video documentation"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "prism"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "geothermal"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "mycelium"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "06.LAL.THORNBURGH.01"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "The Heart of the Colossus: Fiber-Optic Prisms, Spiral Biosphere, and Gravity Oscillation — Alice Thornburgh — Living Arkitecture Lab",
+            "subTitle": null,
+            "descriptions": [
+              "Alice Thornburgh — 06.LAL.THORNBURGH.01Living Arkitecture Lab · f.01 · Crimson Hexagonal Archive The Colossus is introduced not from the outside but from its heart — prisms packed like fiber-optic roots, routing light through a spiral biosphere where gravity and centrifugal force trade off in continuous oscillation. The design logic is relentless and specific: the structure produces geothermal energy, circulates water, moves air, and shifts its weight distribution in ongoing negotiation with the biosphere rotating inside it. The term \"biocroissant\" arrives mid-thought as a proper name for the rotating form — the kind of coinage that happens when description outruns existing vocabulary. The closing argument against interstellar travel is the sharpest move: why pursue light speed when you could have thousands of bespoke living worlds, absurdly diverse in biology and technology, distributed across the solar system — each one a universe already? The prisms came from a necklace. The mother is the archive."
+            ],
+            "publicationDate": "2026-04-19",
+            "publisher": "Zenodo",
+            "embargoEndDate": null,
+            "sources": null,
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_abf2",
+              "label": "OPEN",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": null,
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::523e8c6449a2598688abb528cb87cec0",
+            "originalIds": [
+              "50|datacite____::523e8c6449a2598688abb528cb87cec0",
+              "10.5281/zenodo.19656445",
+              "50|datacite____::fb188d5f25de48d813fef82795f687bf",
+              "10.5281/zenodo.19656446",
+              "50|od______2659::fb188d5f25de48d813fef82795f687bf",
+              "oai:zenodo.org:19656446"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.19656445"
+              },
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.19656446"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 0.0,
+                "influence": 2.1746283e-09,
+                "popularity": 2.6085654e-09,
+                "impulse": 0.0,
+                "citationClass": "C5",
+                "influenceClass": "C5",
+                "impulseClass": "C5",
+                "popularityClass": "C5"
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.19656445"
+                  }
+                ],
+                "license": "CC BY",
+                "type": "Other ORP type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.19656445"
+                ],
+                "publicationDate": "2026-04-19",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.19656446"
+                  }
+                ],
+                "license": "CC BY",
+                "type": "Other ORP type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.19656446"
+                ],
+                "publicationDate": "2026-04-19",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.19656446"
+                  }
+                ],
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "oai",
+                    "value": "oai:zenodo.org:19656446"
+                  }
+                ],
+                "license": "CC BY",
+                "type": "Other literature type",
+                "urls": [
+                  "https://zenodo.org/records/19656446",
+                  "http://dx.doi.org/10.5281/zenodo.19656446"
+                ],
+                "publicationDate": "2026-04-19",
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": null,
+            "isInDiamondJournal": null
+          },
+          {
+            "authors": [
+              {
+                "fullName": "Young, Catherine J.",
+                "name": "Catherine J.",
+                "surname": "Young",
+                "rank": 1,
+                "pid": null
+              }
+            ],
+            "openAccessColor": null,
+            "publiclyFunded": false,
+            "type": "publication",
+            "language": {
+              "code": "und",
+              "label": "Undetermined"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0106 biological sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Lepidoptera"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Insecta"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Arthropoda"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Geometridae"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Mnesampela"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Animalia"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Biodiversity"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Mnesampela comarcha"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "01 natural sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Taxonomy"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "Mnesampela comarcha Guest 1887",
+            "subTitle": null,
+            "descriptions": [
+              "Mnesampela comarcha Guest (Figs 292–296)    Oviposition   4♀ Code no.: G38, G57, G201, G424.   Period of oviposition: 8–22 Apr.   Batch size: 45.3 ± 9.7 (n = 4)   Realised fecundity: 45.3 ± 9.7 (range): 30–72   Incubation time (days): 24–36 (on moistening)    Batch configuration and attachment: Attached, singly or small groups (Fig. 292).     Colour: Pale yellowish­green, becoming crimson then greyish­brown on maturity (Fig. 292).     Size (mm): (n=20) L=0.85 ± 0.01, W=0.70 ± 0.01, T=0.50 ± 0.01    Width/length: 0.82   No. of females: 3    Aeropylar opening size (m) (n=5): L=1.50 ± 0.11, W=1.30 ± 0.08    Relative aeropylar opening size: 1.9    Micropyles: Indistinct (Figs 293 & 294)    No. of openings: 4   No. of cells in rosette: 6   No. of rows of cells in micropylar area: 4    Shape: Broad, bluntly ovoid; anterior pole truncated, polar profile sub­circular; dorsoventrally flattened (Figs 292, 293 & 295).     Characteristics: Egg marked all over by hexagonal cells. Cell walls generally moderately broad, elevated, floors convex (Figs 293 & 295) except concave in middle of top of egg (Figs 295 & 296); micropylar cell walls narrow, cells slightly recessed (Fig. 294). Aeropyles elevated, slightly domed, openings small (Fig. 293); present on all surfaces apart from middle of top of egg (Fig. 295). Chorion shallowly wrinkled, smoother on middle of top of egg (Fig. 296).",
+              "Published as part of Young, Catherine J., 2006, Descriptions of the eggs of some southern Australian Geometridae (Lepidoptera), pp. 1-294 in Zootaxa 1287 on pages 1-294"
+            ],
+            "publicationDate": "2006-08-14",
+            "publisher": "Zenodo",
+            "embargoEndDate": null,
+            "sources": null,
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_abf2",
+              "label": "OPEN",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": null,
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::863afa40300d758e5faf099a66506790",
+            "originalIds": [
+              "50|datacite____::863afa40300d758e5faf099a66506790",
+              "10.5281/zenodo.5072798",
+              "50|datacite____::f7066a4e46b210c1a19cdc04a72d2488",
+              "10.5281/zenodo.5072799",
+              "oai:zenodo.org:5072799",
+              "50|od______2659::f7066a4e46b210c1a19cdc04a72d2488"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.5072798"
+              },
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.5072799"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 0.0,
+                "influence": 2.1746283e-09,
+                "popularity": 2.8089814e-10,
+                "impulse": 0.0,
+                "citationClass": "C5",
+                "influenceClass": "C5",
+                "impulseClass": "C5",
+                "popularityClass": "C5"
+              },
+              "usageCounts": {
+                "downloads": 0,
+                "views": 2
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.5072798"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.5072798"
+                ],
+                "publicationDate": "2006-08-14",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.5072799"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.5072799"
+                ],
+                "publicationDate": "2006-08-14",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.5072799"
+                  }
+                ],
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "oai",
+                    "value": "oai:zenodo.org:5072799"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Other literature type",
+                "urls": [
+                  "https://zenodo.org/records/5072799",
+                  "http://treatment.plazi.org/id/039487D82750C54FFE857D0FFD70FAC3",
+                  "http://dx.doi.org/10.5281/zenodo.5072799"
+                ],
+                "publicationDate": "2006-08-14",
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": true,
+            "isInDiamondJournal": false
+          },
+          {
+            "authors": [
+              {
+                "fullName": "Pu Sun",
+                "name": "Pu",
+                "surname": "Sun",
+                "rank": 1,
+                "pid": null
+              },
+              {
+                "fullName": "Ruping Liu",
+                "name": "Ruping",
+                "surname": "Liu",
+                "rank": 2,
+                "pid": null
+              },
+              {
+                "fullName": "Ruifang Ma",
+                "name": "Ruifang",
+                "surname": "Ma",
+                "rank": 3,
+                "pid": null
+              },
+              {
+                "fullName": "Zhengdao Xie",
+                "name": "Zhengdao",
+                "surname": "Xie",
+                "rank": 4,
+                "pid": null
+              },
+              {
+                "fullName": "Fan Su",
+                "name": "Fan",
+                "surname": "Su",
+                "rank": 5,
+                "pid": null
+              },
+              {
+                "fullName": "Yanfang Gong",
+                "name": "Yanfang",
+                "surname": "Gong",
+                "rank": 6,
+                "pid": null
+              },
+              {
+                "fullName": "Zeming Mu",
+                "name": "Zeming",
+                "surname": "Mu",
+                "rank": 7,
+                "pid": null
+              },
+              {
+                "fullName": "Luhai Li",
+                "name": "Luhai",
+                "surname": "Li",
+                "rank": 8,
+                "pid": null
+              },
+              {
+                "fullName": "Yen Wei",
+                "name": "Yen",
+                "surname": "Wei",
+                "rank": 9,
+                "pid": null
+              },
+              {
+                "fullName": "Qiang Wan",
+                "name": "Qiang",
+                "surname": "Wan",
+                "rank": 10,
+                "pid": {
+                  "id": {
+                    "scheme": "orcid_pending",
+                    "value": "0000-0002-3428-4238"
+                  },
+                  "provenance": null
+                }
+              }
+            ],
+            "openAccessColor": "gold",
+            "publiclyFunded": false,
+            "type": "publication",
+            "language": {
+              "code": "eng",
+              "label": "English"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Chemistry"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "02 engineering and technology"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0210 nano-technology"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "QD1-999"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "SDG",
+                  "value": "7. Clean energy"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "Branched CdO/ZnO Core/Shell Heterogeneous Structure and Its Enhanced Photoelectrocatalytic Performance",
+            "subTitle": null,
+            "descriptions": [
+              "Branched nanostructures of semiconductors based on one-dimensional heterostructures have many promising applications in optoelectronics, supercapacitors, photocatalysts, etc. Here, we report a novel branched core/shell CdO/ZnO hetero-nanostructure that resembles a Crimson bottlebrush (Callistemon Citrinus) but with intriguing hexagonal symmetry. The nanomaterials were fabricated via an improved one-step chemical vapor deposition method and consist of a CdO wire as the core and ZnO as the shell. With cadmium acting as a catalyst, ZnO nanowires grow as perpendicular branches from the CdO/ZnO one-dimensional core/shell structure. The nanostructures were characterized with X-ray diffraction scanning and transmission electron microscopy. A homogeneous epitaxial growth mechanism has been postulated for the formation of the nanostructure. The materials show a broad and strong absorption ranging from visible to ultraviolet and a better photoelectrocatalytic properties in comparison to pure ZnO or CdO. Our synthetic strategy may open up a new way for controlled preparation of one-dimensional nanomaterials with core/shell heterostructure, which could find potential applications in solar cells and opto-electrochemical water-splitting devices."
+            ],
+            "publicationDate": "2018-09-20",
+            "publisher": "American Chemical Society (ACS)",
+            "embargoEndDate": null,
+            "sources": [
+              "Crossref",
+              "ACS Omega",
+              "ACS Omega, Vol 3, Iss 9, Pp 11517-11525 (2018)"
+            ],
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_abf2",
+              "label": "OPEN",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": {
+              "name": "ACS Omega",
+              "issnPrinted": "2470-1343",
+              "issnOnline": "2470-1343",
+              "issnLinking": null,
+              "ep": "11525",
+              "iss": null,
+              "sp": "11517",
+              "vol": "3",
+              "edition": null,
+              "conferencePlace": null,
+              "conferenceDate": null
+            },
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::6df812d51c982c299fe9d5b4121b4570",
+            "originalIds": [
+              "10.1021/acsomega.8b00457",
+              "50|doiboost____|6df812d51c982c299fe9d5b4121b4570",
+              "od_______267::6d2b51e0ef8b3245894ceb0a6e15345e",
+              "31459252",
+              "PMC6645508",
+              "oai:pubmedcentral.nih.gov:6645508",
+              "50|od_______267::6d2b51e0ef8b3245894ceb0a6e15345e",
+              "oai:doaj.org/article:6e0fed15b77548eabeb9cdddb3bccbbc",
+              "50|doajarticles::e2c0736e56ab54e34154adbe8dccc9e6",
+              "2890721520"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.1021/acsomega.8b00457"
+              },
+              {
+                "scheme": "pmid",
+                "value": "31459252"
+              },
+              {
+                "scheme": "pmc",
+                "value": "PMC6645508"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 21.0,
+                "influence": 2.741303e-09,
+                "popularity": 1.2499375e-08,
+                "impulse": 7.0,
+                "citationClass": "C4",
+                "influenceClass": "C4",
+                "impulseClass": "C4",
+                "popularityClass": "C4"
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1021/acsomega.8b00457"
+                  }
+                ],
+                "license": "Standard ACS AuthorChoice/Editors’ Choice Usage Agreement",
+                "type": "Article",
+                "urls": [
+                  "https://doi.org/10.1021/acsomega.8b00457"
+                ],
+                "publicationDate": "2018-09-20",
+                "refereed": "peerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1021/acsomega.8b00457"
+                  }
+                ],
+                "license": "acs-specific: authorchoice/editors choice usage agreement",
+                "type": "Article",
+                "urls": [
+                  "https://pubs.acs.org/doi/pdf/10.1021/acsomega.8b00457"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "pmid",
+                    "value": "31459252"
+                  },
+                  {
+                    "scheme": "pmc",
+                    "value": "PMC6645508"
+                  }
+                ],
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1021/acsomega.8b00457"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://pubmed.ncbi.nlm.nih.gov/31459252"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1021/acsomega.8b00457"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "http://dx.doi.org/10.1021/acsomega.8b00457"
+                ],
+                "publicationDate": "2018-09-20",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1021/acsomega.8b00457"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://doaj.org/article/6e0fed15b77548eabeb9cdddb3bccbbc"
+                ],
+                "publicationDate": "2018-09-01",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1021/acsomega.8b00457"
+                  },
+                  {
+                    "scheme": "mag_id",
+                    "value": "2890721520"
+                  }
+                ],
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.1021/acsomega.8b00457"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "mag_id",
+                    "value": "2890721520"
+                  },
+                  {
+                    "scheme": "doi",
+                    "value": "10.1021/acsomega.8b00457"
+                  }
+                ],
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.1021/acsomega.8b00457"
+                ],
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": true,
+            "isInDiamondJournal": false
+          },
+          {
+            "authors": [
+              {
+                "fullName": "Sterrer, Wolfgang",
+                "name": "Wolfgang",
+                "surname": "Sterrer",
+                "rank": 1,
+                "pid": null
+              }
+            ],
+            "openAccessColor": null,
+            "publiclyFunded": false,
+            "type": "publication",
+            "language": {
+              "code": "und",
+              "label": "Undetermined"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0106 biological sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Haplognathia"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Haplognathia ruberrima"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Animalia"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "SDG",
+                  "value": "14. Life underwater"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Biodiversity"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Filospermoidea"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Haplognathiidae"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "01 natural sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Taxonomy"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Gnathostomulida"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "Haplognathia ruberrima",
+            "subTitle": null,
+            "descriptions": [
+              "Haplognathia ruberrima (Sterrer, 1966) (Fig.3.7–3.8) Material Three juveniles/anterior fragments from sample SI 16. Distribution North Sea, Adriatic (Sterrer 1969), Canary Islands (Sterrer 1997), (sub)tropical NW Atlantic (Sterrer 1998), Fiji (Sterrer 1991a), Hawaii (Sterrer 1991b), NE Australia (Sterrer 2001). Description Body bright crimson. Basal plate more or less hexagonal, 5.67 µm long, 8.00 µm wide (index 0.71), with rows of thorns on its dorsal surface. Jaws 20.00 µm long, with one pair of teeth and with relatively long, straight rostral apophyses (apophysis index 0.50). Discussion Sterrer (1998) discussed the cosmopolitan distribution, variability, frequent sympatry, and possible tendency of H. ruberrima and H. rosea to hybridize. The two species are nevertheless fairly distinguished by jaw apophysis index (0.50 or more in H. ruberrima, 0.50 or less in H. rosea) and details of the basal plate (with dorsal thorns in H. ruberrima, without thorns but with longitudinal ridges in H. rosea). Family Pterognathiidae Sterrer, 1972 Pterognathia sica Sterrer, 2001 (Fig.4.1–4.3) Material Two juveniles from sample SI 16. Distribution NE Australia (Sterrer 2001). Description Colorless­translucent. The larger of the juveniles was 1150 µm long and 45 µm wide (index 25.5), with a rostrum 150 µm long and 30 µm wide (index 5.00). Neither of the two specimens had a basal plate. The jaws are slender, and 18 µm long in both specimens; with long, curved rostral apophyses, dorsal cristae, and a small, transverse­oval symphysis. There are 5 long, ventral teeth and 3–4 shorter dorsal teeth. Discussion Although the jaws of the NZ specimens are considerably shorter than those of Australian specimens (26.00 µm), they otherwise agree well with the original description of P. sica, the only known species in the genus Pterognathia that consistently lacks a basal plate.",
+              "Published as part of Sterrer, Wolfgang, 2006, Gnathostomulida from the Otago Peninsula, southern New Zealand, pp. 1-19 in Zootaxa 1172 on pages 7-9, DOI: 10.5281/zenodo.2645647"
+            ],
+            "publicationDate": "2006-04-13",
+            "publisher": "Zenodo",
+            "embargoEndDate": null,
+            "sources": null,
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_abf2",
+              "label": "OPEN",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": null,
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::5b462aad355bd55a14afa13622c7fdde",
+            "originalIds": [
+              "50|datacite____::5b462aad355bd55a14afa13622c7fdde",
+              "10.5281/zenodo.5586366",
+              "50|datacite____::b3ea281098f4e12dd5de6acecdc35326",
+              "10.5281/zenodo.5586367",
+              "oai:zenodo.org:5586367",
+              "50|od______2659::b3ea281098f4e12dd5de6acecdc35326"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.5586366"
+              },
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.5586367"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 0.0,
+                "influence": 2.1746283e-09,
+                "popularity": 2.8089814e-10,
+                "impulse": 0.0,
+                "citationClass": "C5",
+                "influenceClass": "C5",
+                "impulseClass": "C5",
+                "popularityClass": "C5"
+              },
+              "usageCounts": {
+                "downloads": 0,
+                "views": 2
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.5586366"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.5586366"
+                ],
+                "publicationDate": "2006-04-13",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.5586367"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.5586367"
+                ],
+                "publicationDate": "2006-04-13",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.5586367"
+                  }
+                ],
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "oai",
+                    "value": "oai:zenodo.org:5586367"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Other literature type",
+                "urls": [
+                  "https://zenodo.org/records/5586367",
+                  "http://dx.doi.org/10.5281/zenodo.5586367",
+                  "http://treatment.plazi.org/id/039087DF92702B7EF000FA11FE83CBA8"
+                ],
+                "publicationDate": "2006-04-13",
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": true,
+            "isInDiamondJournal": false
+          },
+          {
+            "authors": [
+              {
+                "fullName": "O'Loughlin, P. M.",
+                "name": "P. M.",
+                "surname": "O'Loughlin",
+                "rank": 1,
+                "pid": null
+              },
+              {
+                "fullName": "Waters, J. M.",
+                "name": "J. M.",
+                "surname": "Waters",
+                "rank": 2,
+                "pid": null
+              },
+              {
+                "fullName": "Roy, M. S.",
+                "name": "M. S.",
+                "surname": "Roy",
+                "rank": 3,
+                "pid": null
+              }
+            ],
+            "openAccessColor": null,
+            "publiclyFunded": false,
+            "type": "publication",
+            "language": {
+              "code": "und",
+              "label": "Undetermined"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0106 biological sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Patiriella"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Asteroidea"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Patiriella gunnii"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Animalia"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Valvatida"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Biodiversity"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Asterinidae"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "01 natural sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Taxonomy"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "keyword",
+                  "value": "Echinodermata"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "Patiriella gunnii",
+            "subTitle": null,
+            "descriptions": [
+              "Patiriella gunnii (Gray) Figures 1 (as P. ‘brevispina’), 2a–f, 3a–f, 7b Asterina gunnii Gray, 1840: 289–290.— Gray, 1866: 16.—McCoy, 1890: 372, pl. 200 fig. 2 (part). Patiriella gunnii. — Verrill, 1913: 484.— Dartnall, 1970: 74–76, pl. 1. Patiriella brevispina H.L. Clark, 1938: 166–167, pl. 22 figs 2–3.— Cotton and Godfrey, 1942: 202.—H.L. Clark, 1946: 134–135.—A.M. Clark, 1966: 320.— Shepherd, 1968: 745, 747.— Dartnall, 1969: 55.— Dartnall, 1970: 75–76.— Dartnall, 1971: 47, fig. 1.— Dartnall, 1980: 34, 65.— Rowe and Vail, 1982: 222.— Zeidler and Shepherd, 1982: 402, 412; figs 10.7c, d.— O’Loughlin, 1984: 136.— Bennett, 1987: 346–347, fig.— Rowe and Gates, 1995: 39.— Campbell and Rowe, 1997: 130.— Edgar, 1997: 346, fig.— Hart et al., 1997: 1848–1861, figs 1–4, tabs 1, 2.— Byrne et al., 1999: 188–191, figs 1, 3C, 6 (new synonymy). Material examined. Asterina gunnii Gray, 1840. Australia, Tasmania, Hobart, Sandy Bay, 2 m, R. Gunn, BMNH 40.3.9.10 (Lectotype: dry; partly cleared; designation by Dartnall, 1970); BMNH 40.3.9.-11, 12, 13 (3 specimens). Patiriella brevispina H.L. Clark, 1938. Western Australia, Koombana Bay, Bunbury, 9–14 m, E.W. Bennett and H.L. Clark, 26 Oct 1949, AM J6181 (2 paratypes, dry). Other material (selected for molecular confirmation, distribution and depth data). Vic. East Gippsland, off Ninety Mile Beach, 38˚42’ S, 147˚53’ E, 22 m, NMV F73255 (1); Western Port, Honeysuckle Point, TM H723 (4); Flinders, ocean platforms, NMV F71744 (3) (MOL 54); NMV F93430 (1) (MOL 180); NMV F93429 (1) (MOL 10); NMV F93435 (4) (MOL 130–131); Port Phillip Bay, Altona, NMV F72130 (1) (MOL 53); Geelong, Mackey St jetty, 2 m, NMV F93441 (1) (MOL 51, 56); “Mullet Holes”, 10 km NE Apollo Bay, NMV F93433 (3) (MOL 97–99); Port Fairy, Griffith I., rocky shallows, NMV F93432 (1) (MOL 81); Portland, below lighthouse, 2–3 m, NMV F93440 (1). Tas. Eaglehawk Neck, rocky shallows, NMV F71873 (1); Bass Strait, Cape Portland, TM H596 (1); Jacobs Boat Harbour, TM H2941 (1). SA. Gulf Saint Vincent, Normanville, NMV F74628 (1) (MOL 60); NMV F74629 (1) (MOL 59); NMV F93434 (1) (MOL 111); NMV F93436 (1) (MOL 102); Eyre Peninsula, Point Westall, near Streaky Bay, NMV F93437 (1) (MOL 55); Nuyts Archipelago, Goat I., 29 m, NMV F93446 (1). WA. Esperance, Sandy Hook I., WAM Z9471 (1); Busselton, jetty piles, 4 m, WAM Z8948 (3) (MOL 146); Cockburn Sound, TM H1116 (4); Trigg I., WAM Z9539 (2); Yanchep, lagoon, NMV F93443 (2). Description (dry and cleared specimens). Up to R = 56 mm; 5–9 rays, predominantly 6 (102 of 116 AM specimens with 6 rays, 10 with 7 rays, 2 with 5 rays, 1 with 8 rays, 1 with 9 rays); form variable from 6 short rounded to pointed rays with interradial margin incurved, to hexagonal; body thick, flat orally, flattened dome aborally, acute angle at margin; madreporite conspicuous; lacking pedicellariae; gonopores abactinal. Abactinal surface uneven; papulate areas more extensive than non-papulate areas; secondary plates abundant, very irregular in size and form; proximal radial and interradial plates openly imbricate; proximal papular spaces large, frequently up to 16–20 secondary plates and 16–20 papulae in proximal papular spaces outside disc when R = 30 mm (5–6 secondary plates and 5–6 papulae when R = 20 mm); abactinal plates thick, raised, prominent, crescentic in papulate areas, carinally with double notch and proximal lobe; carinal series variably regular from close to disc to end or near end of rays, frequently doubly papulate to near end of ray when R = 20 mm and larger; distal interradial non-papulate plates closely imbricate, domed, rounded proximally; disc variably distinct, bordering plates variably regular crescentic radial plates and smaller interradial plates, disc frequently obscured by irregular large plates within and distal to disc; abactinal plates granular, covered by glassy convexities, lacking spine-bearing ridge; abactinal spinelets with variable form, frequently widened distally, some capitate or truncate or columnar or narrowing distally or with swollen base, long spines distally, typically about 0.40 mm long when R = 30 mm (0.32 mm when R = 20 mm), distributed over projecting surface of plates; superomarginal plates aligned longitudinally with inferomarginal plates; lacking internal superambulacral plates between ambulacrals and actinals; distal abactinal and actinal interradial plates with internal tapered vertical contiguous projections. Projecting inferomarginal plates form margin, up to about 11 spinelets per plate when R = 20–30 mm; actinal plates in regular series, curving acutely from furrow to margin, some proximal actinal areas not calcified; actinal interradial spines generally thick, very short, columnar to bulbous, distally minutely spinous; actinal interradial proximal plates with 1–2 spines, distally 2–3 (4 rare); adradial row of actinal interradial proximal plates with predominantly 1 short, thick, bulbous to tapered spine, typically up to only half the length of subambulacral spines; adambulacral proximal plates with predominantly 1 (2 rare) thick subambulacral spines, frequently bulbous with waist, form variable from columnar to subspatulate to spatulate, minutely spinous distally; furrow spines 2–3 (4 rare) proximally, fairly thick, form variable from tapered to slightly widened distally; suboral spines rare (7 suboral spines on 1 of 116 AM specimens); oral spines 4–6, predominantly 5. Live colour. Abactinally uniform dark crimson or reddishbrown (a few AM labels refer to “purple” and “indigo blue”), paler actinally; orange tube feet. Distribution. Eastern Vic. (off Ninety Mile Beach) continuous to Abrolhos Islands off WA (Loisette Marsh, pers. comm.); Bass Strait; Tas.; under rocks; 0–29 m (molecular confirmation for Flinders (Vic.) to Busselton (WA)). Remarks. The lectotype of Asterina gunnii and the two paratypes of Patiriella brevispina seen in this study do not exhibit any significant morphological differences and in particular have single stout subambulacral spines per plate and very short actinal interradial spines. These two diagnostic characters were used by Clark (1938) to distinguish his new species. Clark (1938) also considered the “consistent deep purple to brownish-crimson colour and orange tube feet” of P. brevispina to be diagnostically reliable. This observation is confirmed and specimens with these characteristic colours consistently exhibit the morphological diagnostic characters of A. gunnii. Dartnall (1970) followed H.L. Clark (1938) when designating and describing the lectotype of A. gunnii, and noted that paired subambulacral spines distinguished P. gunnii from P. brevispina. Dartnall (1970) then considered the lectotype of A. gunnii to be exceptional in having single subambulacral spines. The lectotype of A. gunnii (R = 24 mm) and paratypes of P. brevispina (up to R = 20 mm) are similar in size, and are small specimens of A. gunnii (up to R = 56 mm). On the morphological evidence P. brevispina is considered here to be a junior synonym of A. gunnii. Hart et al. (1997) and Byrne et al. (1999) found from molecular evidence that P. ‘brevispina’ specimens from eastern Australia (Mornington Peninsula, Vic.) and Western Australia (Perth) were closely related. Eastern and Western Australian specimens of P. ‘brevispina’ were found to be conspecific in this study. Byrne (1995, 1996), Byrne and Cerra (1996), and Long and Byrne (2001) have reported on the reproductive and developmental biology of P. gunnii (as P. ‘brevispina’). The combination of characters which distinguishes P. gunnii from other six-rayed species of Patiriella is: consistent uniform dark crimson to reddish brown colour; orange tube feet; larger maximum size; prominent papular spaces with numerous papulae and secondary plates; noticeably spinous abactinal spinelets; predominantly single thick subambulacral spines per plate; and very short thick actinal interradial spines. No evidence was found to confirm the occurrence of P. gunnii in NSW, or the depth of 39 m reported by Rowe and Gates (1995, as P. ‘brevispina’).",
+              "Published as part of O'Loughlin, P. M., Waters, J. M. & Roy, M. S., 2003, A molecular and morphological review of the asterinid, Patiriella gunnii (Gray) (Echinodermata: Asteroidea), pp. 181-195 in Memoirs of Museum Victoria 60 (2) on pages 183-184, DOI: 10.24199/j.mmv.2003.60.19, http://zenodo.org/record/8064713"
+            ],
+            "publicationDate": "2003-12-31",
+            "publisher": "Zenodo",
+            "embargoEndDate": null,
+            "sources": null,
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_abf2",
+              "label": "OPEN",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": null,
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::337c11b0e8ec9a391220b01f8143ecbf",
+            "originalIds": [
+              "50|datacite____::337c11b0e8ec9a391220b01f8143ecbf",
+              "10.5281/zenodo.8066458",
+              "50|datacite____::d35cea503d38b193b11680a1ea4bd26d",
+              "10.5281/zenodo.8066459",
+              "oai:zenodo.org:8066459",
+              "50|od______2659::d35cea503d38b193b11680a1ea4bd26d"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.8066458"
+              },
+              {
+                "scheme": "doi",
+                "value": "10.5281/zenodo.8066459"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 0.0,
+                "influence": 2.1746283e-09,
+                "popularity": 2.4319094e-10,
+                "impulse": 0.0,
+                "citationClass": "C5",
+                "influenceClass": "C5",
+                "impulseClass": "C5",
+                "popularityClass": "C5"
+              },
+              "usageCounts": {
+                "downloads": 0,
+                "views": 4
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.8066458"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.8066458"
+                ],
+                "publicationDate": "2003-12-31",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.8066459"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Other literature type",
+                "urls": [
+                  "https://dx.doi.org/10.5281/zenodo.8066459"
+                ],
+                "publicationDate": "2003-12-31",
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.5281/zenodo.8066459"
+                  }
+                ],
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "oai",
+                    "value": "oai:zenodo.org:8066459"
+                  }
+                ],
+                "license": "CC 0",
+                "type": "Other literature type",
+                "urls": [
+                  "http://dx.doi.org/10.5281/zenodo.8066459",
+                  "http://treatment.plazi.org/id/3E1DDA6E4114FFF3FCC69D7056E3EC98",
+                  "https://zenodo.org/records/8066459"
+                ],
+                "publicationDate": "2003-12-31",
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": true,
+            "isInDiamondJournal": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "openaire_author_orcid_control_carberry",
+      "url": "https://api.openaire.eu/graph/v1/researchProducts?authorOrcid=0000-0002-1825-0097&pageSize=1",
+      "http_status": 200,
+      "response_json": {
+        "header": {
+          "numFound": 1,
+          "maxScore": 1.0,
+          "queryTime": 101,
+          "page": 1,
+          "pageSize": 1
+        },
+        "results": [
+          {
+            "authors": [
+              {
+                "fullName": "John J. Quinn",
+                "name": "John J.",
+                "surname": "Quinn",
+                "rank": 1,
+                "pid": null
+              },
+              {
+                "fullName": "Josiah S. Carberry",
+                "name": "Josiah S.",
+                "surname": "Carberry",
+                "rank": 2,
+                "pid": {
+                  "id": {
+                    "scheme": "orcid",
+                    "value": "0000-0002-1825-0097"
+                  },
+                  "provenance": null
+                }
+              }
+            ],
+            "openAccessColor": null,
+            "publiclyFunded": false,
+            "type": "publication",
+            "language": {
+              "code": "und",
+              "label": "Undetermined"
+            },
+            "countries": null,
+            "subjects": [
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0103 physical sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "02 engineering and technology"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "0210 nano-technology"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "FOS",
+                  "value": "01 natural sciences"
+                },
+                "provenance": null
+              },
+              {
+                "subject": {
+                  "scheme": "SDG",
+                  "value": "7. Clean energy"
+                },
+                "provenance": null
+              }
+            ],
+            "mainTitle": "Bulk and Surface Plasmons in Artificially Structured Materials",
+            "subTitle": null,
+            "descriptions": [
+              "The bulk and surface collective charge density excitations of metallic and semiconducting superlattice structures are studied. Because of the new periodicity along the axis of an infinite superlattice, these plasma modes form bands which satisfy Bloch's theorem. The dependence of the band structure on the material parameters is investigated. For finite or semi-infinite systems novel surface plasmons can occur. The coupling of the bulk and surface collective modes to external probes is reviewed."
+            ],
+            "publicationDate": "1987-01-01",
+            "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+            "embargoEndDate": null,
+            "sources": [
+              "Crossref"
+            ],
+            "formats": null,
+            "contributors": null,
+            "coverages": null,
+            "bestAccessRight": {
+              "code": "c_14cb",
+              "label": "CLOSED",
+              "scheme": "http://vocabularies.coar-repositories.org/documentation/access_rights/"
+            },
+            "container": {
+              "name": "IEEE Transactions on Plasma Science",
+              "issnPrinted": "0093-3813",
+              "issnOnline": null,
+              "issnLinking": null,
+              "ep": "410",
+              "iss": null,
+              "sp": "394",
+              "vol": "15",
+              "edition": null,
+              "conferencePlace": null,
+              "conferenceDate": null
+            },
+            "documentationUrls": null,
+            "codeRepositoryUrl": null,
+            "programmingLanguage": null,
+            "contactPeople": null,
+            "contactGroups": null,
+            "tools": null,
+            "size": null,
+            "version": null,
+            "geoLocations": null,
+            "id": "doi_dedup___::347c50c16c887cd22b037bda46cf8b82",
+            "originalIds": [
+              "10.1109/tps.1987.4316723",
+              "50|doiboost____|347c50c16c887cd22b037bda46cf8b82",
+              "2077893277"
+            ],
+            "pids": [
+              {
+                "scheme": "doi",
+                "value": "10.1109/tps.1987.4316723"
+              }
+            ],
+            "dateOfCollection": null,
+            "lastUpdateTimeStamp": null,
+            "indicators": {
+              "citationImpact": {
+                "citationCount": 5.0,
+                "influence": 2.4831355e-09,
+                "popularity": 2.3123888e-10,
+                "impulse": 1.0,
+                "citationClass": "C5",
+                "influenceClass": "C5",
+                "impulseClass": "C5",
+                "popularityClass": "C5"
+              }
+            },
+            "instances": [
+              {
+                "pids": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1109/tps.1987.4316723"
+                  }
+                ],
+                "license": "IEEE Copyright",
+                "type": "Article",
+                "urls": [
+                  "https://doi.org/10.1109/tps.1987.4316723"
+                ],
+                "publicationDate": "1987-01-01",
+                "refereed": "peerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "doi",
+                    "value": "10.1109/tps.1987.4316723"
+                  },
+                  {
+                    "scheme": "mag_id",
+                    "value": "2077893277"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://dx.doi.org/10.1109/tps.1987.4316723"
+                ],
+                "refereed": "nonPeerReviewed"
+              },
+              {
+                "alternateIdentifiers": [
+                  {
+                    "scheme": "mag_id",
+                    "value": "2077893277"
+                  },
+                  {
+                    "scheme": "doi",
+                    "value": "10.1109/tps.1987.4316723"
+                  }
+                ],
+                "type": "Article",
+                "urls": [
+                  "https://dx.doi.org/10.1109/tps.1987.4316723"
+                ],
+                "refereed": "nonPeerReviewed"
+              }
+            ],
+            "isGreen": false,
+            "isInDiamondJournal": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "openaire_author_orcid",
+      "url": "https://api.openaire.eu/graph/v1/researchProducts?authorOrcid=0009-0000-1599-0703&pageSize=10",
+      "http_status": 200,
+      "response_json": {
+        "header": {
+          "numFound": 0,
+          "maxScore": 0.0,
+          "queryTime": 91,
+          "page": 1,
+          "pageSize": 10
+        },
+        "results": []
+      }
+    }
+  ]
+}
