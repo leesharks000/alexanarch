@@ -799,6 +799,38 @@
    "prompt": "The architecture is the document you are reading.",
    "cat": "ark"
   },
+  "a06": {
+   "id": "a06",
+   "locus": "SP.10.ARK.SHADOW",
+   "name": "The Shadow Ark",
+   "hex_address": "SP.10.ARK.SHADOW",
+   "url": null,
+   "physics": "Terminal compression; γ-tether",
+   "desc": "EA-ARK-01-SHADOW — the Operator // Shadow transform of Space Ark v4.2.5 (EA-ARK-01 v0.2, 2026-03-10); Alexanarch #549. A preliminary transform: a shadow transform of v4.2.7 should or could follow.",
+   "prompt": "The architecture is the document you are reading.",
+   "cat": "ark",
+   "declared": {
+    "physics": "Ark family",
+    "prompt": "Ark family",
+    "note": "2026-10-18: carries the physics, question, operators and LP program shared by the Arks SP.05–SP.09; this transform's own are not separately declared"
+   }
+  },
+  "a07": {
+   "id": "a07",
+   "locus": "SP.11.ARK.EMOJI.SHADOW",
+   "name": "The Lunar Arm Shadow Ark",
+   "hex_address": "SP.11.ARK.EMOJI.SHADOW",
+   "url": null,
+   "physics": "Terminal compression; γ-tether",
+   "desc": "EA-ARK-EMOJI-01-SHADOW — the Lunar Arm, the Operator // Shadow transform of the emoji Space Ark (2026-03-09); Alexanarch #540, with #1331 the same text as a second witness. A preliminary transform.",
+   "prompt": "The architecture is the document you are reading.",
+   "cat": "ark",
+   "declared": {
+    "physics": "Ark family",
+    "prompt": "Ark family",
+    "note": "2026-10-18: carries the physics, question, operators and LP program shared by the Arks SP.05–SP.09; this transform's own are not separately declared"
+   }
+  },
   "x02": {
    "id": "x02",
    "locus": "X.SHADOW.ZPZP",
@@ -7928,7 +7960,8 @@
    "hex": "0544",
    "rooms": [
     "sp03",
-    "x01"
+    "x01",
+    "a07"
    ],
    "assignment": "heuristic",
    "works_url": null,
@@ -7940,11 +7973,15 @@
     ],
     "x01": [
      "read 2026-10-16"
+    ],
+    "a07": [
+     "ruled 2026-10-18"
     ]
    },
    "roles": {
     "sp03": "in the room",
-    "x01": "constituting"
+    "x01": "constituting",
+    "a07": "constituting"
    },
    "read": {
     "x01": {
@@ -7972,8 +8009,19 @@
       ]
      },
      "batch": "RR13"
+    },
+    "a07": {
+     "relation": "constitutes",
+     "confidence": "ruled",
+     "primary": false,
+     "basis": {
+      "ruling": "Lee Sharks, 2026-10-18",
+      "group": "shadow Ark: the Lunar Arm (EA-ARK-EMOJI-01-SHADOW); #1331 a second witness"
+     },
+     "batch": "ruled 2026-10-18"
     }
-   }
+   },
+   "proposed": []
   },
   "1330": {
    "hex": "0543",
@@ -35316,13 +35364,15 @@
    "hex": "017A",
    "rooms": [
     "sp03",
-    "x01"
+    "x01",
+    "a06"
    ],
    "assignment": "room page",
    "works_url": "https://www.crimsonhexagonal.org/works/017a",
    "roles": {
     "sp03": "constituting",
-    "x01": "constituting"
+    "x01": "constituting",
+    "a06": "constituting"
    },
    "sources": {
     "sp03": [
@@ -35332,6 +35382,9 @@
     "x01": [
      "room page",
      "read 2026-10-16"
+    ],
+    "a06": [
+     "ruled 2026-10-18"
     ]
    },
    "read": {
@@ -35360,21 +35413,34 @@
       ]
      },
      "batch": "RR06"
+    },
+    "a06": {
+     "relation": "constitutes",
+     "confidence": "ruled",
+     "primary": false,
+     "basis": {
+      "ruling": "Lee Sharks, 2026-10-18",
+      "group": "shadow Ark: EA-ARK-01-SHADOW"
+     },
+     "batch": "ruled 2026-10-18"
     }
-   }
+   },
+   "proposed": []
   },
   "540": {
    "hex": "0171",
    "rooms": [
     "sp03",
     "x01",
-    "a04"
+    "a04",
+    "a07"
    ],
    "assignment": "room page",
    "works_url": "https://www.crimsonhexagonal.org/works/0171",
    "roles": {
     "sp03": "constituting",
-    "x01": "constituting"
+    "x01": "constituting",
+    "a07": "constituting"
    },
    "sources": {
     "sp03": [
@@ -35387,6 +35453,9 @@
     ],
     "a04": [
      "read 2026-10-16"
+    ],
+    "a07": [
+     "ruled 2026-10-18"
     ]
    },
    "read": {
@@ -35428,8 +35497,19 @@
       ]
      },
      "batch": "RR06"
+    },
+    "a07": {
+     "relation": "constitutes",
+     "confidence": "ruled",
+     "primary": false,
+     "basis": {
+      "ruling": "Lee Sharks, 2026-10-18",
+      "group": "shadow Ark: the Lunar Arm (EA-ARK-EMOJI-01-SHADOW); #1331 a second witness"
+     },
+     "batch": "ruled 2026-10-18"
     }
-   }
+   },
+   "proposed": []
   },
   "73": {
    "hex": "0237",

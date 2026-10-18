@@ -28,6 +28,8 @@ def main():
         if not slug or not p.exists():                       # a locus without a room page (the arks, two shadows): named, unlinked
             rooms[r['id']] = {'id': r['id'], 'locus': r.get('locus') or r.get('hex_address') or r['id'], 'name': r['name'], 'hex_address': r.get('hex_address'),
                               'url': None, 'physics': r.get('physics'), 'desc': r.get('desc'), 'prompt': r.get('prompt'), 'cat': r.get('cat')}
+            if r.get('declared'):
+                rooms[r['id']]['declared'] = r['declared']
             continue
         s = p.read_text(encoding='utf-8')
         name = html.unescape(re.sub(r'<[^>]+>', '', re.search(r'<h1>(.*?)</h1>', s, re.S).group(1))).strip()
@@ -150,26 +152,30 @@ def main():
                         e['rooms'].append(mv['to'])
                     e['sources'].setdefault(mv['to'], []).append('ruled 2026-10-16')
                 e.setdefault('moved', []).append({'from': mv['from'], 'to': mv['to'], 'clause': mv['clause']})
-    for g in RU.get('seats', []):
-        for n in map(str, g['deposits']):
-            d = by_n[n]
-            e = seats.setdefault(n, {'hex': d['hex'], 'rooms': [], 'assignment': 'ruled 2026-10-16',
-                                     'works_url': f"{SITE}/works/{d['hex'].lower()}" if d['hex'] in works else None})
-            rd = e.setdefault('read', {})
-            if g['primary']:
-                for x in rd.values():
-                    x['primary'] = False
-            prev = rd.get(g['locus'])
-            rd[g['locus']] = {'relation': g['relation'], 'confidence': 'ruled', 'primary': g['primary'] or bool(prev and prev.get('primary')),
-                              'basis': {'ruling': RU['ruled_by'], 'group': g['group']}, 'batch': 'ruled 2026-10-16'}
-            if g['locus'] not in e['rooms']:
-                e['rooms'].append(g['locus'])
-            e['proposed'] = [x for x in e.get('proposed', []) if x['locus'] != g['locus']]
-            src = e.setdefault('sources', {}).setdefault(g['locus'], [])
-            if 'ruled 2026-10-16' not in src:
-                src.append('ruled 2026-10-16')
-            if g['relation'] == 'constitutes':
-                e.setdefault('roles', {})[g['locus']] = 'constituting'
+    # Ruled seats: 2026-10-16 (rulings-applied-2026-10-16.json) and 2026-10-18 (reading-2026-10-18.json `ruled`: the two
+    # shadow Arks, a06 and a07). Same handling; the label names the ruling.
+    R18 = P2.get('ruled') or {}
+    for RX, lab in ((RU, 'ruled 2026-10-16'), (R18, 'ruled 2026-10-18')):
+        for g in RX.get('seats', []):
+            for n in map(str, g['deposits']):
+                d = by_n[n]
+                e = seats.setdefault(n, {'hex': d['hex'], 'rooms': [], 'assignment': lab,
+                                         'works_url': f"{SITE}/works/{d['hex'].lower()}" if d['hex'] in works else None})
+                rd = e.setdefault('read', {})
+                if g['primary']:
+                    for x in rd.values():
+                        x['primary'] = False
+                prev = rd.get(g['locus'])
+                rd[g['locus']] = {'relation': g['relation'], 'confidence': 'ruled', 'primary': g['primary'] or bool(prev and prev.get('primary')),
+                                  'basis': {'ruling': RX['ruled_by'], 'group': g['group']}, 'batch': lab}
+                if g['locus'] not in e['rooms']:
+                    e['rooms'].append(g['locus'])
+                e['proposed'] = [x for x in e.get('proposed', []) if x['locus'] != g['locus']]
+                src = e.setdefault('sources', {}).setdefault(g['locus'], [])
+                if lab not in src:
+                    src.append(lab)
+                if g['relation'] == 'constitutes':
+                    e.setdefault('roles', {})[g['locus']] = 'constituting'
     # 2026-10-18 RE-READS: a seat whose cue was a placeholder, read again against the room's constituting works.
     for rr in P2.get('rereads', []):
         e = seats.get(str(rr['deposit']))
