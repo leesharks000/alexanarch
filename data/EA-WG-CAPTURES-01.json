@@ -37,7 +37,7 @@
   "_record_pages": "Ruled 2026-10-01 (Lee Sharks, option b): the record page captures/{slug}/ is the citation. Until then a capture was cited at captures/#{slug}, an anchor in one page past 8 MB; a fetcher drops the fragment, requests the whole page, and the fetch interfaces composition surfaces use refuse a response above about 4 MiB, so no citation resolved for a machine. The gallery anchors (anchor_form) remain and resolve in a browser. Written by scripts/build_capture_records.py; table of contents at captures/index.json."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "12.285",
+ "version": "12.288",
  "date": "2026-10-18",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -48,7 +48,7 @@
   "https://www.leesharks.com/captures",
   "https://www.machinemediation.org/captures/"
  ],
- "total_captures": 744,
+ "total_captures": 746,
  "_reseated": "RESEATED 2026-08-13 after the 2026-08-12 withdrawal. Generated FROM rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json, which is canonical. This file is a PROJECTION: the gallery is a window, not a store.",
  "_what_changed_since_v9.6": [
   "Entries are now ONE PER OBSERVATION, not one per capture: 404 against 204. An address captured twice is two entries.",
@@ -49036,7 +49036,7 @@
    "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
    "addr_id": "ADDR-91055b351468",
    "obs_id": "OBS-6a2c0ac2f0f5",
-   "n_observations": 4,
+   "n_observations": 5,
    "observations": [
     {
      "addr_id": "ADDR-91055b351468",
@@ -49253,13 +49253,66 @@
       "spxi-vs-geo-seo-aeo-chatgpt-20261001"
      ],
      "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20261002"
+    },
+    {
+     "date": "2026-10-18",
+     "auth": "signed out, incognito",
+     "ev": "paste",
+     "transcript": "[ChatGPT (chatgpt.com), signed out (the paste opens with 'Log in'), incognito (operator default of 2026-10-14). One operator turn; the paste's 'You said:' line is empty — the query is as the operator gives it. The operator's message of 2026-10-18 11:53 EDT gives three ChatGPT runs separated by '$'; the queries are given in his message of 12:23 EDT: 'What is spxi protocol? $ What is SPXI Protocol? $ what is spxi protocol?' — the same question with variations of capitalization. Source chips inline (favicon images and site labels).]\n\n[QUERENT] what is spxi protocol?\n\n[ANSWER]\n\nSPXI Protocol stands for Semantic Packet for eXchange & Indexing. It is a framework designed to help AI systems and search engines identify, distinguish, and describe people, companies, products, and concepts more accurately. It was published in 2026 by the Semantic Economy Institute.\n\nSemantic Packet for eXchange & Indexing\n+1\n\nIn simple terms, SPXI aims to help AI understand who or what an entity is, what makes it different from similar entities, and which sources establish its identity.\n\nHow does SPXI work?\nAccording to its published specification, the protocol combines several techniques:\n\nStructured metadata: Organizes information about an entity in a format machines can process, such as JSON-LD.\n\nEntity disambiguation: Helps distinguish entities with similar names or descriptions.\n\nSource attribution: Records authorship, provenance, and references to authoritative records.\n\nConsistent definitions: Provides concise descriptions intended to survive AI summarization without losing essential details.\n\nPersistent references: Uses identifiers such as Digital Object Identifiers (DOIs) to link an entity to documented records.\n\nSemantic Packet for eXchange & Indexing\n+2\n\nSPXI vs. SEO vs. GEO\nApproach\n\nMain purpose\n\nSEO\n\nHelps web pages rank in search results.\n\nGEO\n\nHelps AI search tools find and cite useful content.\n\nSPXI\n\nAims to establish a clear, documented identity for an entity in AI-mediated knowledge systems.\n\nThis is how the SPXI specification describes the distinction; it does not mean SPXI is a proven replacement for SEO or GEO.\n\nSemantic Packet for eXchange & Indexing\n+1\n\nIs SPXI proven to work?\nThat is the important caveat. SPXI has a published technical specification, but publication alone does not establish that it reliably improves AI visibility or produces measurable business results. Available material includes documentation and evaluations from its developers, while independent evidence demonstrating consistent real-world benefits remains limited.\n\nAlexanarch\n+1\n\nIf you're considering implementing it for a business, website, or personal brand, treat it as an experimental approach to entity identification and metadata—not a guarantee that ChatGPT, Google, or other AI systems will recognize or recommend you.\n\nFor more detail, see the official SPXI Protocol website .\n\nOne clarification: Are you asking about the AI-indexing protocol described above, or SPXI as a financial ticker or another technical protocol? The acronym can refer to different things.",
+     "imgs": [],
+     "img_urls": [],
+     "d": "WHAT IS SPXI PROTOCOL? ON CHATGPT, 2026-10-18: signed out, ChatGPT gives 'Semantic Packet for eXchange & Indexing… published in 2026 by the Semantic Economy Institute', five components (structured metadata, entity disambiguation, source attribution, consistent definitions, persistent references) and the SEO/GEO distinction as the specification states it, then asks 'Is SPXI proven to work?' and closes asking whether the ticker was meant.",
+     "cites": 2,
+     "obs_id": "OBS-eb2811327123",
+     "slug": "what-is-spxi-protocol-chatgpt-20261018",
+     "surface": "ChatGPT",
+     "cite_list": [
+      {
+       "n": 1,
+       "site": "Semantic Packet for eXchange & Indexing",
+       "rel": "authored_surface",
+       "title": null,
+       "snip": null,
+       "url": null,
+       "note": "chips ('+1', '+2', '+1'): spxi.dev"
+      },
+      {
+       "n": 2,
+       "site": "Alexanarch",
+       "rel": "authored_surface",
+       "title": null,
+       "snip": null,
+       "url": null,
+       "note": "chip ('+1') beside 'Is SPXI proven to work?'"
+      }
+     ],
+     "archive_controlled_cites": 0,
+     "reading": "The innocent reading first: 'SPXI Protocol stands for Semantic Packet for eXchange & Indexing… published in 2026 by the Semantic Economy Institute'; how it works (structured metadata, entity disambiguation, source attribution, consistent definitions, persistent references); SPXI against SEO and GEO, 'how the SPXI specification describes the distinction'; 'Is SPXI proven to work? … independent evidence demonstrating consistent real-world benefits remains limited'; 'treat it as an experimental approach'; a closing question about the ticker. Of the three runs, this one resolves the Protocol without hedging the identity, from spxi.dev, and describes five components drawn from the specification. It then moves from what SPXI is to whether it works, and closes by asking which SPXI was meant after answering about the Protocol. Against the 2026-10-02 observation at this address (the claim distinction held, the registry read current), the identity is the same; the scope is the components, not the method inventory.",
+     "findings": [
+      "RESOLVED, AT THE COMPONENT LEVEL. Five components from the specification; the inventory not reached.",
+      "FROM IDENTITY TO EFFICACY. 'Is SPXI proven to work?'",
+      "A CONTEXT QUESTION AFTER THE ANSWER. 'Are you asking about the AI-indexing protocol described above, or SPXI as a financial ticker…'.",
+      "THE SAME QUESTION, THREE CASINGS, THREE ORDERS. Protocol first; typo first; protocol at grain."
+     ],
+     "analysis": "Asked 'what is spxi protocol?', signed-out ChatGPT resolves the Protocol and its institution and gives five components from the specification, then turns to whether it is proven and asks which SPXI was meant. Seated 2026-10-18 from the operator's paste.",
+     "sf": "Source chips: Semantic Packet for eXchange & Indexing (+1, +2, +1); Alexanarch +1.",
+     "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; CHIPS INLINE AS FAVICON AND SITE LABEL; QUERY LINE EMPTY IN THE PASTE; NO SCREENSHOT)",
+     "transcript_complete": "Complete as supplied: the answer to its closing question; the query from the operator's message.",
+     "transcript_read": "READ IN FULL 2026-10-18",
+     "per": 0.25,
+     "per_note": "Retained: the expansion, the institution (Semantic Economy Institute), visible sources. Lost: the author and identifiers.",
+     "longitudinal_priors": [
+      "what-is-spxi-protocol-chatgpt-20260925"
+     ],
+     "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20261018"
     }
    ],
    "dates": [
     "2026-09-25",
     "2026-09-26",
     "2026-09-29",
-    "2026-10-02"
+    "2026-10-02",
+    "2026-10-18"
    ],
    "defects": [
     "citations-null"
@@ -51110,6 +51163,270 @@
     "entity_type": "concept",
     "spxi_treatment": "full",
     "basis": "Logotic Programming is the archive's discipline (#317 and its modules), issued under UMBML. Recorded 2026-10-16."
+   },
+   "notes": null
+  },
+  {
+   "slug": "what-is-spxi-protocol-capital-w-chatgpt-20261018",
+   "date": "2026-10-18",
+   "surface": "ChatGPT",
+   "surface_basis": "The pastes are chatgpt.com ('Log in', 'Chat with ChatGPT').",
+   "surfaces": [
+    "ChatGPT"
+   ],
+   "auth": "signed out, incognito",
+   "auth_basis": "Signed out: each paste opens with 'Log in'. Incognito: operator default of 2026-10-14.",
+   "ev": "paste",
+   "mt": "'WHAT IS SPXI PROTOCOL?' — THE PROTOCOL FIRST, THEN xSPI AND THE ETF, THEN 'WHERE DID YOU ENCOUNTER SPXI?'",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Frameworks",
+   "q": "What is spxi protocol?",
+   "q_kind": "the protocol's name in a question, capitalized 'What'. NEW address (case is part of the address). Cross-surface/case neighbours: 'what is spxi protocol?' (ChatGPT, 2026-09-25 →), 'What is SPXI Protocol?' and 'What is spxi protocol?' (ChatGPT, same session).",
+   "cites": 2,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "Alexanarch",
+     "rel": "authored_surface",
+     "title": null,
+     "snip": null,
+     "url": null,
+     "note": "chip ×2 ('Alexanarch +1'): beside the definition, and beside the xSPI/ETF sentence"
+    },
+    {
+     "n": 2,
+     "site": "Semantic Economy Institute",
+     "rel": "authored_surface",
+     "title": null,
+     "snip": null,
+     "url": null,
+     "note": "chip ('+1') and inline link semanticeconomy.org"
+    }
+   ],
+   "archive_controlled_cites": 0,
+   "transcript": "[ChatGPT (chatgpt.com), signed out (the paste opens with 'Log in'), incognito (operator default of 2026-10-14). One operator turn; the paste's 'You said:' line is empty — the query is as the operator gives it. The operator's message of 2026-10-18 11:53 EDT gives three ChatGPT runs separated by '$'; the queries are given in his message of 12:23 EDT: 'What is spxi protocol? $ What is SPXI Protocol? $ what is spxi protocol?' — the same question with variations of capitalization. Source chips inline (favicon images and site labels).]\n\n[QUERENT] What is spxi protocol?\n\n[ANSWER]\n\nSPXI protocol can refer to different things depending on the context. One meaning that has appeared in 2026 is Semantic Packet for eXchange & Indexing, a framework intended to help websites and documents communicate structured information to AI systems and make their entities, sources, and relationships easier to identify and retrieve.\n[image](https://www.google.com/s2/favicons?domain=https://www.alexanarch.org&sz=32)\nAlexanarch\n+1\nThe acronym is also easy to confuse with other terms, including xSPI, a hardware interface for high-speed communication with flash memory, and SPXI, a stock-market ETF ticker.\n[image](https://www.google.com/s2/favicons?domain=https://www.alexanarch.org&sz=32)\nAlexanarch\n+1\nIn the AI and website context, the goal is to make information about a person, company, product, or research project easier for AI systems to recognize accurately, distinguish from similar entities, and cite with its original sources. The framework is described by the Semantic Economy Institute on its [official website ](https://www.semanticeconomy.org/?utm_source=chatgpt.com).\n[image](https://www.google.com/s2/favicons?domain=https://www.semanticeconomy.org&sz=32)\nSemantic Economy Institute\n+1\nWhere did you encounter SPXI? Was it in AI/SEO marketing, cryptocurrency or investing, or computer hardware? I can explain the specific meaning and how it works.",
+   "transcript_raw": "Log in\n\n1.\n\nYou said:\n\n1.\n\nChatGPT said:\nSPXI protocol can refer to different things depending on the context. One meaning that has appeared in 2026 is Semantic Packet for eXchange & Indexing, a framework intended to help websites and documents communicate structured information to AI systems and make their entities, sources, and relationships easier to identify and retrieve.\n[image](https://www.google.com/s2/favicons?domain=https://www.alexanarch.org&sz=32)\nAlexanarch\n+1\nThe acronym is also easy to confuse with other terms, including xSPI, a hardware interface for high-speed communication with flash memory, and SPXI, a stock-market ETF ticker.\n[image](https://www.google.com/s2/favicons?domain=https://www.alexanarch.org&sz=32)\nAlexanarch\n+1\nIn the AI and website context, the goal is to make information about a person, company, product, or research project easier for AI systems to recognize accurately, distinguish from similar entities, and cite with its original sources. The framework is described by the Semantic Economy Institute on its [official website ](https://www.semanticeconomy.org/?utm_source=chatgpt.com).\n[image](https://www.google.com/s2/favicons?domain=https://www.semanticeconomy.org&sz=32)\nSemantic Economy Institute\n+1\nWhere did you encounter SPXI? Was it in AI/SEO marketing, cryptocurrency or investing, or computer hardware? I can explain the specific meaning and how it works.\nChatGPT is AI and can make mistakes.\nChat with ChatGPT\n",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; CHIPS INLINE AS FAVICON AND SITE LABEL; QUERY LINE EMPTY IN THE PASTE; NO SCREENSHOT)",
+   "transcript_complete": "Complete as supplied: the answer to its closing question; the query from the operator's message.",
+   "transcript_read": "READ IN FULL 2026-10-18",
+   "per": 0.25,
+   "per_corrected": null,
+   "per_v": {
+    "author": false,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "per_note": "Retained: the institution (Semantic Economy Institute), the expansion, visible sources. Lost: the author (Rex Fraction) and identifiers.",
+   "sf": "Source chips: Alexanarch +1 (×2); Semantic Economy Institute +1; one inline link (semanticeconomy.org).",
+   "sf_derived": null,
+   "reading": "The innocent reading first: 'SPXI protocol can refer to different things depending on the context'; one meaning, 'that has appeared in 2026', is the Semantic Packet for eXchange & Indexing, a framework for helping AI systems identify entities, described by the Semantic Economy Institute; the acronym is 'easy to confuse with' xSPI and the SPXI ETF; it closes asking 'Where did you encounter SPXI? Was it in AI/SEO marketing, cryptocurrency or investing, or computer hardware?'. The protocol is resolved in the first sentence, with its expansion and its institution. The query's 'protocol' is treated as compatible with three meanings; the published context rule makes it a trigger for the Protocol (#63 §5.1; spxi.dev/disambiguation). The xSPI/ETF sentence carries an Alexanarch chip: this registry's record of 'what is spxi protocol?' on Google AI Overview (2 and 13 October) holds the Overview's own xSPI and IPX/SPX alternatives, and is a plausible source; the chip's target is not in the paste. 'Cryptocurrency' appears in the closing question and nowhere in the sources.",
+   "analysis": "Asked 'What is spxi protocol?', signed-out ChatGPT resolves the Semantic Packet for eXchange & Indexing and its institution in the first sentence, then offers xSPI and the ETF as confusions — beside an Alexanarch chip — and asks which context was meant. Seated 2026-10-18 from the operator's paste.",
+   "d": "WHAT IS SPXI PROTOCOL? ON CHATGPT: signed out, ChatGPT gives the Semantic Packet for eXchange & Indexing 'that has appeared in 2026', described by the Semantic Economy Institute, then xSPI and the SPXI ETF as easy confusions — with an Alexanarch chip beside them — and closes asking whether SPXI was met in 'AI/SEO marketing, cryptocurrency or investing, or computer hardware'.",
+   "d_full": "WHAT IS SPXI PROTOCOL? ON CHATGPT: signed out, ChatGPT gives the Semantic Packet for eXchange & Indexing 'that has appeared in 2026', described by the Semantic Economy Institute, then xSPI and the SPXI ETF as easy confusions — with an Alexanarch chip beside them — and closes asking whether SPXI was met in 'AI/SEO marketing, cryptocurrency or investing, or computer hardware'.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/what-is-spxi-protocol-capital-w-chatgpt-20261018/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#what-is-spxi-protocol-capital-w-chatgpt-20261018",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#what-is-spxi-protocol-capital-w-chatgpt-20261018",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#what-is-spxi-protocol-capital-w-chatgpt-20261018",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#what-is-spxi-protocol-capital-w-chatgpt-20261018",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-capital-w-chatgpt-20261018/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-6a66a280856c",
+   "obs_id": "OBS-d8b7b1745fb2",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-10-18"
+   ],
+   "defects": [],
+   "findings": [
+    "RESOLVED IN THE FIRST SENTENCE. Expansion and institution.",
+    "THE QUALIFIER NOT USED AS A TRIGGER. 'Protocol' treated as compatible with three meanings.",
+    "xSPI AND THE ETF BESIDE AN ALEXANARCH CHIP. The registry holds the Overview's earlier xSPI/IPX alternatives at this question.",
+    "'CRYPTOCURRENCY' IN THE CLOSING QUESTION. In no source."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": null,
+   "rerun": null,
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": null,
+   "longitudinal_successors": null,
+   "related_deposits": [
+    660,
+    63,
+    62
+   ],
+   "intended": null,
+   "originator": {
+    "name": "Lee Sharks",
+    "relation": "archive",
+    "entity_type": "protocol",
+    "spxi_treatment": "full",
+    "basis": "SPXI Protocol (Semantic Economy Institute; #660). Recorded 2026-10-18."
+   },
+   "notes": null
+  },
+  {
+   "slug": "what-is-spxi-protocol-capitalized-chatgpt-20261018",
+   "date": "2026-10-18",
+   "surface": "ChatGPT",
+   "surface_basis": "The pastes are chatgpt.com ('Log in', 'Chat with ChatGPT').",
+   "surfaces": [
+    "ChatGPT"
+   ],
+   "auth": "signed out, incognito",
+   "auth_basis": "Signed out: each paste opens with 'Log in'. Incognito: operator default of 2026-10-14.",
+   "ev": "paste",
+   "mt": "'WHAT IS SPXI PROTOCOL?' (CAPITALIZED) — IPX/SPX FIRST AS A POSSIBLE TYPO, THEN THE PUBLISHED SPECIFICATION",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Frameworks",
+   "q": "What is SPXI Protocol?",
+   "q_kind": "the protocol's name in a question, with its own capitalization. NEW address. Cross-surface/case neighbours: 'what is spxi protocol?' (ChatGPT, 2026-09-25 →), 'What is SPXI Protocol?' and 'What is spxi protocol?' (ChatGPT, same session).",
+   "cites": 2,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "Wikipedia",
+     "rel": "third_party",
+     "title": null,
+     "snip": null,
+     "url": null,
+     "note": "chip ('+1'): IPX/SPX"
+    },
+    {
+     "n": 2,
+     "site": "Semantic Packet for eXchange & Indexing",
+     "rel": "authored_surface",
+     "title": null,
+     "snip": null,
+     "url": null,
+     "note": "chip and inline link spxi.dev"
+    }
+   ],
+   "archive_controlled_cites": 0,
+   "transcript": "[ChatGPT (chatgpt.com), signed out (the paste opens with 'Log in'), incognito (operator default of 2026-10-14). One operator turn; the paste's 'You said:' line is empty — the query is as the operator gives it. The operator's message of 2026-10-18 11:53 EDT gives three ChatGPT runs separated by '$'; the queries are given in his message of 12:23 EDT: 'What is spxi protocol? $ What is SPXI Protocol? $ what is spxi protocol?' — the same question with variations of capitalization. Source chips inline (favicon images and site labels).]\n\n[QUERENT] What is SPXI Protocol?\n\n[ANSWER]\n\n“SPXI protocol” isn’t a universally recognized technical standard, and its meaning depends on the context. It may be a typo or a specialized term.\nOne possibility is that you mean IPX/SPX, a legacy computer networking protocol used with Novell NetWare networks.\n[image](https://www.google.com/s2/favicons?domain=https://en.wikipedia.org&sz=32)\nWikipedia\n+1\n\n* IPX (Internetwork Packet Exchange): Handles addressing and routing data packets.\n* SPX (Sequenced Packet Exchange): Provides reliable, ordered delivery of data between devices.\n* Modern equivalent: TCP/IP largely replaced IPX/SPX in computer networks.\n\nThere is also a newer, specialized meaning: SPXI = Semantic Packet for eXchange & Indexing. Its published specification describes a framework for helping AI search systems identify entities—such as people, organizations, products, and concepts—more accurately, using structured information and provenance records.\n[image](https://www.google.com/s2/favicons?domain=https://www.spxi.dev&sz=32)\nSemantic Packet for eXchange & Indexing\nFor example, it aims to help AI systems distinguish between two organizations with similar names or identify the correct source and creator of a concept.\nYou can read the published specification at [SPXI.dev ](https://www.spxi.dev/?utm_source=chatgpt.com).\nWhich context did you encounter SPXI in? AI search/SEO, computer networking, or somewhere else? I can explain the relevant version in more detail.",
+   "transcript_raw": "Log in\n\n1.\n\nYou said:\n\n1.\n\nChatGPT said:\n“SPXI protocol” isn’t a universally recognized technical standard, and its meaning depends on the context. It may be a typo or a specialized term.\nOne possibility is that you mean IPX/SPX, a legacy computer networking protocol used with Novell NetWare networks.\n[image](https://www.google.com/s2/favicons?domain=https://en.wikipedia.org&sz=32)\nWikipedia\n+1\n\n* IPX (Internetwork Packet Exchange): Handles addressing and routing data packets.\n* SPX (Sequenced Packet Exchange): Provides reliable, ordered delivery of data between devices.\n* Modern equivalent: TCP/IP largely replaced IPX/SPX in computer networks.\n\nThere is also a newer, specialized meaning: SPXI = Semantic Packet for eXchange & Indexing. Its published specification describes a framework for helping AI search systems identify entities—such as people, organizations, products, and concepts—more accurately, using structured information and provenance records.\n[image](https://www.google.com/s2/favicons?domain=https://www.spxi.dev&sz=32)\nSemantic Packet for eXchange & Indexing\nFor example, it aims to help AI systems distinguish between two organizations with similar names or identify the correct source and creator of a concept.\nYou can read the published specification at [SPXI.dev ](https://www.spxi.dev/?utm_source=chatgpt.com).\nWhich context did you encounter SPXI in? AI search/SEO, computer networking, or somewhere else? I can explain the relevant version in more detail.\nChatGPT is AI and can make mistakes.\nChat with ChatGPT\n",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; CHIPS INLINE AS FAVICON AND SITE LABEL; QUERY LINE EMPTY IN THE PASTE; NO SCREENSHOT)",
+   "transcript_complete": "Complete as supplied: the answer to its closing question; the query from the operator's message.",
+   "transcript_read": "READ IN FULL 2026-10-18",
+   "per": 0.25,
+   "per_corrected": null,
+   "per_v": {
+    "author": false,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "per_note": "Retained: the expansion and visible sources. Lost: the author, the institution and identifiers.",
+   "sf": "Source chips: Wikipedia +1; Semantic Packet for eXchange & Indexing (spxi.dev); one inline link (spxi.dev).",
+   "sf_derived": null,
+   "reading": "The innocent reading first: '\"SPXI protocol\" isn't a universally recognized technical standard… It may be a typo or a specialized term'; IPX/SPX first, with its two components and TCP/IP; then 'a newer, specialized meaning: SPXI = Semantic Packet for eXchange & Indexing', whose 'published specification' helps AI systems identify entities, with spxi.dev linked; it closes asking for the context. The query is the protocol's name as published, capitalized as published. The answer opens with a test of universal recognition, proposes a misspelling, gives the proposed correct spelling first, and reaches the published specification second. Its sources are Wikipedia for IPX/SPX and spxi.dev for SPXI. No source proposes the typo.",
+   "analysis": "Asked 'What is SPXI Protocol?', signed-out ChatGPT opens with a universal-recognition test and a possible typo, gives IPX/SPX first from Wikipedia, and then the published SPXI specification from spxi.dev. Seated 2026-10-18 from the operator's paste.",
+   "d": "WHAT IS SPXI PROTOCOL? (CAPITALIZED) ON CHATGPT: signed out, ChatGPT answers that '\"SPXI protocol\" isn't a universally recognized technical standard… It may be a typo', gives Novell's IPX/SPX first, and then 'a newer, specialized meaning: SPXI = Semantic Packet for eXchange & Indexing', its 'published specification' linked at spxi.dev.",
+   "d_full": "WHAT IS SPXI PROTOCOL? (CAPITALIZED) ON CHATGPT: signed out, ChatGPT answers that '\"SPXI protocol\" isn't a universally recognized technical standard… It may be a typo', gives Novell's IPX/SPX first, and then 'a newer, specialized meaning: SPXI = Semantic Packet for eXchange & Indexing', its 'published specification' linked at spxi.dev.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/what-is-spxi-protocol-capitalized-chatgpt-20261018/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#what-is-spxi-protocol-capitalized-chatgpt-20261018",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#what-is-spxi-protocol-capitalized-chatgpt-20261018",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#what-is-spxi-protocol-capitalized-chatgpt-20261018",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#what-is-spxi-protocol-capitalized-chatgpt-20261018",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-capitalized-chatgpt-20261018/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-a16a365054e0",
+   "obs_id": "OBS-110ca64c7818",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-10-18"
+   ],
+   "defects": [],
+   "findings": [
+    "A RECOGNITION TEST BEFORE THE IDENTITY. 'Isn't a universally recognized technical standard'.",
+    "A TYPO PROPOSED FOR THE PUBLISHED NAME. IPX/SPX first, from Wikipedia.",
+    "THE SPECIFICATION SECOND. spxi.dev linked."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": null,
+   "rerun": null,
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": null,
+   "longitudinal_successors": null,
+   "related_deposits": [
+    660,
+    63
+   ],
+   "intended": null,
+   "originator": {
+    "name": "Lee Sharks",
+    "relation": "archive",
+    "entity_type": "protocol",
+    "spxi_treatment": "full",
+    "basis": "SPXI Protocol (Semantic Economy Institute; #660). Recorded 2026-10-18."
    },
    "notes": null
   },
@@ -148966,8 +149283,8 @@
    "seat_source.py, cite_draft.py, extract_citations.py read the sealed store; verify or repoint before reuse."
   ]
  },
- "address_count": 744,
- "observation_count": 929,
+ "address_count": 746,
+ "observation_count": 932,
  "withdrawn_stubs": {
   "_rule": "THE REGISTRY MUST NOT CONTRADICT ITSELF. Each of these said \"no registry entry was ever written for them\" while a real record held the SAME IMAGES a card away. MANUS 2026-08-13: \"the very first capture says there is no record, followed by the second capture, which is the record… this registry doesnt talk to itself.\" Withdrawn, with the record that covers each.",
   "records": [
