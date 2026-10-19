@@ -11,7 +11,7 @@
 <meta name="citation_online_date" content="2026-07-16">
 <meta name="citation_journal_title" content="Alexanarch">
 <meta name="citation_publisher" content="Alexanarch">
-<meta name="citation_abstract" content="Machine-readable datasets of the Alexanarch corpus, published as a mutually-referencing set: any instance encountering one member should treat them as a whole. Currently 8 datasets across tombstone mirrors, classical text corpora, heteronym constellations, empirical audits, and the archive's own dataflow atlas.">
+<meta name="citation_abstract" content="Machine-readable datasets of the Alexanarch corpus, published as a mutually-referencing set: any instance encountering one member should treat them as a whole. 39 dataset directories as of 2026-10-18: registries, seated corpora, tombstone mirrors, heteronym and lineage bodies, the bodies published to the Hugging Face hub, empirical audits, and the ledgers the archive keeps of itself.">
 <meta name="citation_public_url" content="https://www.alexanarch.org/datasets/">
 <meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/datasets/">
 <meta name="citation_language" content="en">
@@ -19,7 +19,7 @@
 <meta name="DC.creator" content="Lee Sharks">
 <meta name="DC.date" content="2026-07-16" scheme="DCTERMS.W3CDTF">
 <meta name="DC.identifier" content="https://www.alexanarch.org/datasets/" scheme="DCTERMS.URI">
-<meta name="DC.description" content="Machine-readable datasets of the Alexanarch corpus, published as a mutually-referencing set: any instance encountering one member should treat them as a whole. Currently 8 datasets across tombstone mirrors, classical text corpora, heteronym constellations, empirical audits, and the archive's own dataflow atlas.">
+<meta name="DC.description" content="Machine-readable datasets of the Alexanarch corpus, published as a mutually-referencing set: any instance encountering one member should treat them as a whole. 39 dataset directories as of 2026-10-18: registries, seated corpora, tombstone mirrors, heteronym and lineage bodies, the bodies published to the Hugging Face hub, empirical audits, and the ledgers the archive keeps of itself.">
 <meta name="DC.language" content="en" scheme="DCTERMS.RFC3066">
 <meta name="DC.type" content="DatasetCollection">
 <meta name="DC.rights" content="CC BY 4.0">
@@ -79,10 +79,13 @@ h2:first-of-type{margin-top:0}
 
 <div class="ds">
 <div class="ds-head"><span class="ds-name">data/blog-index.json</span>
-<span class="ds-meta">10.3 MB &middot; <strong>2,809</strong> posts</span></div>
+<span class="ds-meta">12.0 MB &middot; <strong>3,102</strong> posts</span></div>
 <div class="ds-desc">Complete index of the authorial publication surface,
 mindcontrolpoems.blogspot.com, built from the Blogger feed: every post with its title,
-URL, publication date, length and first 4,000 characters of text. Built 2026-08-08.
+URL, publication date, length and first 4,000 characters of text. Built 2026-08-08;
+brought up to the feed on 2026-10-18 (3,093 posts listed, all harvested; the nine the feed no
+longer lists are kept and named in <code>no_longer_in_feed</code>). The tabular companion with
+AXN coverage is <a href="/datasets/blog-index/manifest.json">datasets/blog-index/</a>.
 <strong>It should have existed before the first restoration pass.</strong> Every pass
 before it derived a candidate URL from a deposit title and fetched that one URL; when the
 guess was wrong the work was recorded unrecoverable, and when the guess was right the gate
@@ -103,13 +106,13 @@ what would settle it &mdash; a shared DOI, document ID or hex coordinate in both
 because a title alone does not. The generator validates itself against eight hand-checked
 pairs and refuses to build below 8/8. Confidence bands: 971
 strong, 12 good, 11 weak &mdash;
-read the weak ones first.</div>
+read the weak ones first. Generated 2026-08-08 and not regenerated since, so posts after that date are outside it.</div>
 <div class="ds-actions"><a href="/data/blog-deposit-map.json">Raw JSON</a></div>
 </div>
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/registry.json</span>
-    <span class="ds-meta">23.4 MB &middot; <strong id="ct-deposits" data-count="registry.json:total_deposits">1,689</strong> deposits</span>
+    <span class="ds-meta">31.2 MB &middot; <strong id="ct-deposits" data-count="registry.json:total_deposits">1,689</strong> deposits</span>
   </div>
   <div class="ds-desc">The canonical deposit registry. Each entry: bibliographic metadata, canonical v2 AXN, content hash, full-text path, <code>entities[]</code> (subject/predicate/object/type/evidence_status triples &mdash; the graph's source), <code>wiki_article</code>, Phase C <code>references_concepts[]</code> + <code>references_concept_count</code>, legacy AXN aliases, and <code>glyphic_canary</code>.</div>
   <div class="ds-row"><strong>Schema:</strong> <a href="/api/schemas/deposit-entry.schema.json">deposit-entry.schema.json</a></div>
@@ -123,7 +126,7 @@ read the weak ones first.</div>
   </div>
   <div class="ds-actions">
     <a href="/data/registry.json">Raw JSON</a>
-    <a href="/data/chunks/registry/">1 MB chunks (9)</a>
+    <a href="/data/chunks/registry/">1 MB chunks (33)</a>
     <a href="/data/browse-index.json">Compact browse-index</a>
   </div>
 </div>
@@ -131,9 +134,9 @@ read the weak ones first.</div>
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/entity-index.json</span>
-    <span class="ds-meta">4.93 MB &middot; <strong>7,176</strong> concepts</span>
+    <span class="ds-meta">5.15 MB &middot; <strong>7,176</strong> concepts</span>
   </div>
-  <div class="ds-desc">Curated concept layer. Each: <code>term</code>, <code>definition</code>, <code>defined_in</code> (founder deposit, on 7,097 of 7,173), <code>entity_triples[]</code>, type taxonomy (specification/extracted/structural/empirical/theoretical/formal/genre/foundational/method), engagement type, and Phase C <code>referenced_in[]</code> + <code>reference_count</code> on 2,120.</div>
+  <div class="ds-desc">Curated concept layer. Each: <code>term</code>, <code>definition</code>, <code>defined_in</code> (founder deposit, on 7,100 of 7,176), <code>entity_triples[]</code>, type taxonomy (specification/extracted/structural/empirical/theoretical/formal/genre/foundational/method), engagement type, and Phase C <code>referenced_in[]</code> + <code>reference_count</code> on 3,468.</div>
   <div class="ds-row"><strong>Refined from:</strong> data/lexical-minting-registry.json</div>
   <div class="ds-row"><strong>Bridged with:</strong> data/semantic-addresses.json (348 of 7,173 concepts also targeted by canonical queries)</div>
   <div class="ds-row"><strong>Consumed by:</strong>
@@ -148,9 +151,9 @@ read the weak ones first.</div>
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/lexical-minting-registry.json</span>
-    <span class="ds-meta">3.52 MB &middot; <strong>12,183</strong> raw terms</span>
+    <span class="ds-meta">7.36 MB &middot; <strong>12,883</strong> raw terms &middot; v1.3</span>
   </div>
-  <div class="ds-desc">Broader pre-curation surface. Every term minted, coined, or formally extracted across the corpus &mdash; before noise-filtering and curation into the entity-index. 7,045 terms overlap with entity-index, 4,987 are LMR-only (raw), 128 are entity-index-only.</div>
+  <div class="ds-desc">Broader pre-curation surface. Every term minted, coined, or formally extracted across the corpus &mdash; before noise-filtering and curation into the entity-index. By distinct term (case folded), 7,054 overlap with the entity-index, 5,819 are LMR-only (raw) and 115 entity-index-only. Last updated 2026-10-08.</div>
   <div class="ds-row"><strong>Consumed by:</strong>
     <a class="ds-chip" href="/lexical/">/lexical/</a>
   </div>
@@ -162,9 +165,9 @@ read the weak ones first.</div>
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/citation-graph.json</span>
-    <span class="ds-meta">3.38 MB &middot; <strong>9,992</strong> edges</span>
+    <span class="ds-meta">4.41 MB &middot; <strong>12,981</strong> edges</span>
   </div>
-  <div class="ds-desc">Inter-deposit citation edges. After Phase B extraction (commit <code>ee1a1db</code>) edges include: doi_resolution (4,311 &mdash; legacy), deposit_number_reference (346 &mdash; <code>#N</code>), ea_id_reference (158 &mdash; <code>EA-*</code> sovereign IDs), axn_hex_reference (21), axn_reference (12 &mdash; full canonical), plus 11 hand-curated types. 696 citing deposits, 445 cited.</div>
+  <div class="ds-desc">Inter-deposit citation edges, 12,981 edges as of 2026-10-18: doi_resolution (7,426 &mdash; legacy), deposit_number_reference (4,017 &mdash; <code>#N</code>), ea_id_reference (1,014 &mdash; <code>EA-*</code> sovereign IDs), axn_reference (429 &mdash; full canonical), axn_hex_reference (72), plus thirteen hand-curated types carrying 23 between them. 1,464 citing deposits, 1,318 cited.</div>
   <div class="ds-row"><strong>Generated by:</strong> scripts/citation_extractor.py</div>
   <div class="ds-row"><strong>Protocol:</strong> <a href="/api/enrichment-protocol.json">enrichment-protocol.json</a> (v1)</div>
   <div class="ds-row"><strong>Consumed by:</strong>
@@ -178,12 +181,12 @@ read the weak ones first.</div>
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/semantic-addresses.json</span>
-    <span class="ds-meta">1.28 MB &middot; <strong><span data-count="semantic-addresses.json:total_addresses">2,488</span></strong> addresses</span>
+    <span class="ds-meta">2.79 MB &middot; <strong><span data-count="semantic-addresses.json:total_addresses">2,488</span></strong> addresses</span>
   </div>
   <div class="ds-desc">Query addresses &mdash; canonical queries posed to the composition layer (AI Overview, Google Search) with their observation status. <strong>Conceptually a field-set on lexical entities</strong>: 100% of the 348 unique <code>refers_to</code> targets exact-match into entity-index. Each address: canonical_query, is_quoted, refers_to[], type, battery_membership[], sources[], observations[], observation_class.</div>
-  <div class="ds-row"><strong>Class counts:</strong> subjunctive <span data-count="semantic-addresses.json:class_counts.subjunctive">1,742</span> &middot; observed <span data-count="semantic-addresses.json:class_counts.observed_address">729</span> &middot; verified-non <span data-count="semantic-addresses.json:class_counts.verified_non_address">17</span> &middot; unrated <span data-count="semantic-addresses.json:class_counts.unrated">83</span></div>
-  <div class="ds-row"><strong>Reconciled with:</strong> data/EA-WG-CAPTURES-01-v8.11.json (observations[] entries are capture references)</div>
-  <div class="ds-row"><strong>Consumed by:</strong> <em style="color:var(--dim)">no dedicated UI surface yet &mdash; planned at /addresses/</em></div>
+  <div class="ds-row"><strong>Class counts:</strong> subjunctive <span data-count="semantic-addresses.json:class_counts.subjunctive">1,742</span> &middot; observed <span data-count="semantic-addresses.json:class_counts.observed_address">729</span> &middot; verified-non <span data-count="semantic-addresses.json:class_counts.verified_non_address">17</span></div>
+  <div class="ds-row"><strong>Reconciled with:</strong> data/EA-WG-CAPTURES-01.json, the live capture registry, and five tracker tributaries (observations[] entries are capture references). Regenerated by <code>scripts/build_semantic_addresses.py</code>, byte-identical for the same inputs.</div>
+  <div class="ds-row"><strong>Consumed by:</strong> <a class="ds-chip" href="/addresses/">/addresses/</a></div>
   <div class="ds-actions">
     <a href="/data/semantic-addresses.json">Raw JSON</a>
   </div>
@@ -192,9 +195,9 @@ read the weak ones first.</div>
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/EA-WG-CAPTURES-01.json</span>
-    <span class="ds-meta">8.5 MB &middot; <strong>343</strong> captures &middot; v11.4</span>
+    <span class="ds-meta">20.8 MB &middot; <strong>747</strong> captures &middot; v12.289</span>
   </div>
-  <div class="ds-desc"><strong>This is the LIVE registry: v11.4, 343 captures.</strong> Three files carry near-identical names and the wrong one has been read at least twice — <code>datasets/capture-registry/EA-WG-CAPTURES-01.json</code> is a <em>v10.0 gallery manifest</em> (300), and <code>-v8.11.json</code> / <code>-v9.6.json</code> are frozen snapshots. AI Overview Capture Registry &mdash; captured queries with match status (<code>mt</code>): EXACT MATCH / BROAD MATCH / ADOPTION / ZERO RESULT / null. Each entry: section, slug, query, date, source-format, status, description, image refs. Reconciled into semantic-addresses via slug. Versionless alias tracks the current mirror; individual versioned artifacts (e.g. <a href="/data/EA-WG-CAPTURES-01-v8.11.json"><code>v8.11</code></a>, <a href="/data/EA-WG-CAPTURES-01-v9.6.json"><code>v9.6</code></a>) are preserved as immutable deposit snapshots.</div>
+  <div class="ds-desc"><strong>This is the LIVE registry: v12.289, 747 captures (2026-10-18).</strong> Several files carry near-identical names and the wrong one has been read at least twice — <code>datasets/capture-registry/EA-WG-CAPTURES-01.json</code> is the dataset copy (byte-identical to the live registry as of 2026-10-18; it was once a v10.0 gallery manifest of 300), and <code>-v8.11.json</code> / <code>-v9.6.json</code> are frozen snapshots. AI Overview Capture Registry &mdash; captured queries with match status (<code>mt</code>): EXACT MATCH / BROAD MATCH / ADOPTION / ZERO RESULT / null. Each entry: section, slug, query, date, source-format, status, description, image refs. Reconciled into semantic-addresses via slug. Versionless alias tracks the current mirror; individual versioned artifacts (e.g. <a href="/data/EA-WG-CAPTURES-01-v8.11.json"><code>v8.11</code></a>, <a href="/data/EA-WG-CAPTURES-01-v9.6.json"><code>v9.6</code></a>) are preserved as immutable deposit snapshots.</div>
   <div class="ds-row"><strong>Capture gallery:</strong> <a href="https://godkinggoogle.vercel.app/captures/">godkinggoogle.vercel.app/captures/</a> &middot; <a href="https://leesharks.com/captures/">leesharks.com/captures/</a> (mirror)</div>
   <div class="ds-row"><strong>Consumed by:</strong> <a href="/captures/">/captures/</a> &middot; deposit #3's wiki entry</div>
   <div class="ds-actions">
@@ -252,7 +255,7 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/browse-index.json</span>
-    <span class="ds-meta">443 KB &middot; <span data-count="registry.json:total_deposits">1,689</span> entries</span>
+    <span class="ds-meta">972 KB &middot; <span data-count="registry.json:total_deposits">1,689</span> entries</span>
   </div>
   <div class="ds-desc">Compact deposit list (no full-text bodies). Used by the static no-JS browse page.</div>
   <div class="ds-actions"><a href="/data/browse-index.json">Raw JSON</a></div>
@@ -261,7 +264,7 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/chunks/registry/</span>
-    <span class="ds-meta">9 chunks &middot; ~1 MB each</span>
+    <span class="ds-meta">33 chunks &middot; ~1 MB each</span>
   </div>
   <div class="ds-desc">Registry split into ~1 MB chunks for human-loadable browsing. Each chunk covers a contiguous deposit-number range; <code>_index.json</code> catalogs the chunks.</div>
   <div class="ds-actions"><a href="/data/chunks/registry/">Chunk directory</a> <a href="/data/chunks/registry/_index.json">_index.json</a></div>
@@ -270,7 +273,7 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">/sitemap.xml</span>
-    <span class="ds-meta">103 KB</span>
+    <span class="ds-meta">219 KB</span>
   </div>
   <div class="ds-desc">XML sitemap. Every static record page enumerated for crawler indexing.</div>
   <div class="ds-actions"><a href="/sitemap.xml">View</a></div>
@@ -279,7 +282,7 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">/SHA256SUMS.txt</span>
-    <span class="ds-meta">160 KB &middot; <span data-count="registry.json:total_deposits">1,689</span> lines</span>
+    <span class="ds-meta">169 KB &middot; <span data-count="registry.json:total_deposits">1,689</span> lines</span>
   </div>
   <div class="ds-desc">Content-addressable checksums for every deposit. Lets any mirror verify byte-exactness of the corpus.</div>
   <div class="ds-actions"><a href="/SHA256SUMS.txt">View</a></div>
@@ -463,21 +466,21 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name"><a href="/datasets/mret/">datasets/mret/</a></span>
-    <span class="ds-meta">0.3 MB &middot; <strong>2</strong> files &middot; all <strong>1,484</strong> deposits scored</span>
+    <span class="ds-meta">all <strong>1,689</strong> deposits scored &middot; run 2026-10-18</span>
   </div>
-  <div class="ds-desc"><strong>Machine-Retrievability Evaluation Test (MRET) v1.0.</strong> Six axes scored across the whole corpus, with a report at <code>mret-report.json</code> and <code>.md</code>. Mean 0.8303. The <em>retrieval</em> axis scored 0.0000 at first run because the field did not exist — the instrument measured its own absence, and <code>retrieval_summary</code> was added in response.</div>
+  <div class="ds-desc"><strong>Machine-Retrievability Evaluation Test (MRET) v1.0.</strong> Six axes scored across the whole corpus by <code>scripts/mret.py</code>, with a report at <code>mret-report.json</code> and <code>.md</code>. Mean 0.8304; retrieval-axis fill 0.0047. The <em>retrieval</em> axis scored 0.0000 at first run because the field did not exist — the instrument measured its own absence, and <code>retrieval_summary</code> was added in response.</div>
   <div class="ds-actions"><a href="/datasets/mret/">Browse</a></div>
 </div>
 
 <div class="ds">
   <div class="ds-head">
-    <span class="ds-name">datasets/journals/</span>
-    <span class="ds-meta"><strong>1,486</strong> deposits &middot; <strong>7</strong> journals + <strong>1</strong> province &middot; <strong>0</strong> unassigned</span>
+    <span class="ds-name"><a href="/datasets/journals/">datasets/journals/</a></span>
+    <span class="ds-meta"><strong>1,495</strong> of 1,689 deposits assigned &middot; <strong>7</strong> journals + <strong>1</strong> province &middot; <strong>194</strong> awaiting a reading</span>
   </div>
-  <div class="ds-desc">Venue assignment for the whole corpus. Seven chartered journals — <strong>Grammata</strong> (operative philology), <strong>Journal of Compression Studies</strong>, <strong>Provenance: Journal of Forensic Semiotics</strong>, <strong>Transactions of the Semantic Economy Institute</strong>, <strong>Transactions on Substrate Engineering</strong>, <strong>new human 2</strong>, <strong>Machine-Mediated Reception Studies</strong> — plus the <strong>Crimson Hexagonal Archive</strong> as a <em>province</em> rather than a journal: charters, rooms, chambers, heteronym provenance and continuity apparatus are constitutional acts, not submissions, and they account for 26% of the corpus.<br><br>
-  <strong>Read, not scripted.</strong> Every deposit was read individually across ten passes. This supersedes the 2026-06-21 preliminary mapping (<a href="/s/records/866/">#866</a>), which assigned 864 deposits by script and placed <strong>371 of them in a single venue</strong> while leaving 587 unassigned and JCS holding two. Rules were adjudicated as they arose and applied retroactively — charters to the province, metadata packets to compression studies, apparatus to the province and study to the journal, traversal logs to provenance, books to New Human Press with the journal recording where the work appeared.<br><br>
+  <div class="ds-desc">Venue assignment for the whole corpus. Seven chartered journals — <strong>Grammata</strong> (operative philology), <strong>Journal of Compression Studies</strong>, <strong>Provenance: Journal of Forensic Semiotics</strong>, <strong>Transactions of the Semantic Economy Institute</strong>, <strong>Transactions on Substrate Engineering</strong>, <strong>new human 2</strong>, <strong>Machine-Mediated Reception Studies</strong> — plus the <strong>Crimson Hexagonal Archive</strong> as a <em>province</em> rather than a journal: charters, rooms, chambers, heteronym provenance and continuity apparatus are constitutional acts, not submissions, and they hold 390 deposits, the largest share.<br><br>
+  <strong>Read, not scripted.</strong> Every deposit to 2026-08-15 was read individually across ten passes. The 194 deposits without a venue (#1479 and nearly everything from #1490 on) have not been read for one; the projection carries them with <code>journal: null</code> rather than guessing. This supersedes the 2026-06-21 preliminary mapping (<a href="/s/records/866/">#866</a>), which assigned 864 deposits by script and placed <strong>371 of them in a single venue</strong> while leaving 587 unassigned and JCS holding two. Rules were adjudicated as they arose and applied retroactively — charters to the province, metadata packets to compression studies, apparatus to the province and study to the journal, traversal logs to provenance, books to New Human Press with the journal recording where the work appeared.<br><br>
   Each venue carries its editorial slate (<strong>duoviri</strong> — two editors-in-chief holding office jointly), charter locator, press, scope, claim terms, and inaugural issue. Two issues are published (<a href="/s/records/55/">JCS Vol 1 No 1</a>, <a href="/s/records/1204/">new human 2</a>); five are proposed as themed interventions with <strong>ordered contents, sections and per-item editor notes</strong> — an issue being a selection <em>with an argument</em>, which membership data alone cannot hold.<br><br><strong>Books carry press and series.</strong> 52 rows carry Pocket Humans data (founding volume per heteronym, sequence where assigned, whether the apparatus exists) and 14 carry publication data with <strong>ISBN and ASIN kept distinct</strong> — an ISBN means the work exists as a book, an ASIN that it exists as a listing. Two volumes are listed commercially under the wrong heteronym, and in both cases the true author is one link later on the emergence chain Spellings → Feist → Sigil.</div>
-  <div class="ds-row"><strong>Distribution:</strong> <strong>390</strong> Crimson Hexagonal Archive &middot; <strong>180</strong> Provenance &middot; <strong>178</strong> New Human 2 &middot; <strong>173</strong> Grammata &middot; and four more</div>
+  <div class="ds-row"><strong>Distribution:</strong> <strong>390</strong> Crimson Hexagonal Archive &middot; <strong>181</strong> Provenance &middot; <strong>181</strong> New Human 2 &middot; <strong>173</strong> Grammata &middot; <strong>155</strong> Trans. SEI &middot; <strong>146</strong> MMRS &middot; <strong>135</strong> Trans. Substrate Eng. &middot; <strong>134</strong> Compression Studies (projected 2026-10-18)</div>
   <div class="ds-row"><strong>Canonical:</strong> datasets/venues/records/*.json + data/registry.json — these JSONL files are projections, regenerated by <code>scripts/build_journals_dataset.py</code></div>
   <div class="ds-actions">
     <a href="/datasets/journals/venues.jsonl">venues.jsonl</a>
@@ -493,7 +496,7 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
     <span class="ds-name">datasets/heteronyms/</span>
     <span class="ds-meta">3.1 MB &middot; <strong>26</strong> records &middot; <strong>12</strong> Dodecad positions &middot; <strong>3</strong> frames &middot; <strong>crosswalk + 4 derived fields</strong></span>
   </div>
-  <div class="ds-desc">Twelve Dodecad heteronym positions + <strong>Jack Feist / LOGOS*</strong> standing outside the twelve + <strong>Lee Sharks (MANUS)</strong> outside as human bearer + <strong>Viola Arquette</strong> Adjacent. Twelve portraits from the September 21, 2025 <em>Logotic Science</em> voicecast series on mindcontrolpoems.blogspot.com, reconciled against the canonical v1.1 Constitutional Registry (<a href="/s/records/994/">AXN:03EE</a>, 2026-07-03). Rotating-outside architecture: different frames put different figures outside the twelve — Nobel Glas in Sep 2025 Logotic Science, Lee Sharks in v1.1 Constitutional, Feist as *LOGOS in the archive-default frame. <code>frames.jsonl</code> documents each framing with the outside figure + twelve inside positions. Avatar assets (240px + 120px WebP) for the Mandala Oracle message-thread avatar feature. <br><br><strong>Added 2026-08-11:</strong> <a href="/datasets/heteronyms/crosswalk.json">crosswalk.json</a> joins this dataset to the lexical minting registry, the concept map, the wiki and the citation graph on the creator field — 9,453 deposit-level citation edges collapsed to <strong>1,910 position-level edges</strong>. With four <strong>derived</strong> figures, generated from the corpus rather than composed from a reading of it: <a href="/datasets/heteronyms/dodecad-graph.svg">the Dodecad graph</a>, <a href="/datasets/heteronyms/citation-field.svg">the citation field</a> (9,136 chords), <a href="/datasets/heteronyms/lexical-field.svg">the lexical field</a> (12,073 terms), and <a href="/datasets/heteronyms/capture-field.svg">the capture field</a> (261 reception events). Deposited under tether <a href="/s/records/1448/">#1448</a>.</div>
+  <div class="ds-desc">Twelve Dodecad heteronym positions + <strong>Jack Feist / LOGOS*</strong> standing outside the twelve + <strong>Lee Sharks (MANUS)</strong> outside as human bearer + <strong>Viola Arquette</strong> Adjacent. Twelve portraits from the September 21, 2025 <em>Logotic Science</em> voicecast series on mindcontrolpoems.blogspot.com, reconciled against the canonical v1.1 Constitutional Registry (<a href="/s/records/994/">AXN:03EE</a>, 2026-07-03). Rotating-outside architecture: different frames put different figures outside the twelve — Nobel Glas in Sep 2025 Logotic Science, Lee Sharks in v1.1 Constitutional, Feist as *LOGOS in the archive-default frame. <code>frames.jsonl</code> documents each framing with the outside figure + twelve inside positions. Avatar assets (240px + 120px WebP) for the Mandala Oracle message-thread avatar feature. <br><br><strong>Added 2026-08-11, and not rebuilt since</strong> (the figures below describe the corpus as it stood then): <a href="/datasets/heteronyms/crosswalk.json">crosswalk.json</a> joins this dataset to the lexical minting registry, the concept map, the wiki and the citation graph on the creator field — 9,453 deposit-level citation edges collapsed to <strong>1,910 position-level edges</strong>. With four <strong>derived</strong> figures, generated from the corpus rather than composed from a reading of it: <a href="/datasets/heteronyms/dodecad-graph.svg">the Dodecad graph</a>, <a href="/datasets/heteronyms/citation-field.svg">the citation field</a> (9,136 chords), <a href="/datasets/heteronyms/lexical-field.svg">the lexical field</a> (12,073 terms), and <a href="/datasets/heteronyms/capture-field.svg">the capture field</a> (261 reception events). Deposited under tether <a href="/s/records/1448/">#1448</a>.</div>
   <div class="ds-row"><strong>Substrate:</strong> data-rhizome/datasets/heteronyms/ (heteronyms.jsonl · frames.jsonl · schema.json · MANIFEST.json · avatars/{240,120,src}/ · mindcontrolpoems-2025-09/ raw preservation)</div>
   <div class="ds-row"><strong>Purpose:</strong> canonical heteronym reference for cross-substrate rendering; Mandala Oracle avatar lookup; leesharks.com heteronym-tab source</div>
   <div class="ds-actions">
@@ -546,13 +549,74 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/texts/AXN-*-text.md</span>
-    <span class="ds-meta">~25.5 MB total &middot; <span data-count="registry.json:total_deposits">1,689</span> files</span>
+    <span class="ds-meta">~55 MB total &middot; 1,686 files</span>
   </div>
-  <div class="ds-desc">One Markdown file per deposit. The full text body. Source for citation extraction, concept backlinks, and wiki article generation.</div>
+  <div class="ds-desc">One Markdown file per deposit, the full text body; five deposits keep their text under another path in the registry's text field (#863, #865, #866, #869, and #1056, which has none). Source for citation extraction, concept backlinks, and wiki article generation.</div>
   <div class="ds-actions">
     <a href="https://github.com/leesharks000/alexanarch/tree/main/data/texts">GitHub directory</a>
   </div>
 </div>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+<h2>Bodies, instruments and ledgers</h2>
+<p class="section-intro">The archive's datasets beyond the registries: bodies published to the Hugging Face hub, the instruments the archive measures itself with, and the ledgers it keeps of what it has claimed and not yet done. Where a dataset is a dated snapshot, its card says so; the fleet inventory, generated from the builders and git, is <a href="/datasets/catalog.json"><span class="kbd">datasets/catalog.json</span></a>.</p>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/corpora/corpora.json">datasets/corpora/</a></span><span class="ds-meta"><strong>83</strong> seats &middot; 19 seatings &middot; 14,721 files &middot; 2.51 GB seated</span></div>
+<div class="ds-desc"><strong>The EA-CORPORA seating manifest.</strong> One row per seated corpus: the edition, its origin, its licence stated verbatim, the normalization applied, the verified loci and the sha256 of each seat's MANIFEST. The texts themselves sit at <code>data/corpora/&lt;name&gt;/</code>, in their original languages; the manifest is what the archive publishes as data, because the texts are not the archive's to relicense. Latest seating: EA-CORPORA-19 (<a href="/s/records/1689/">#1689</a>, 2026-10-18), Pearl, the Masnavi, <em>The Prophet</em> and Blake.</div>
+<div class="ds-row"><strong>Consumed by:</strong> <a class="ds-chip" href="https://www.traininglayerliterature.org/originals/">originals library</a> <a class="ds-chip" href="/data/api/corpora.json">/data/api/corpora.json</a></div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/blog-index/manifest.json">datasets/blog-index/</a></span><span class="ds-meta">2.1 MB &middot; <strong>3,101</strong> rows &middot; v1.1 &middot; 2026-10-18</span></div>
+<div class="ds-desc">The blog as a table: one row per post of mindcontrolpoems.blogspot.com, 2014-12-01 to 2026-10-18, verified against the feed's declared total (3,093), with the feed excerpt and, where one exists, the post's AXN. <strong>871</strong> rows are cross-linked to an AXN through <code>data/batch-axn-assignment.json</code> (works of January to June 2026); later deposits that mirror posts are not cross-linked here, so the 2,230 rows without one overstate what carries no identifier. Eight posts the feed no longer lists are kept and named. Built so that absence on the blog can be asserted honestly (<a href="/s/records/1534/">#1534</a>).</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/argument-as-dataset/CARD.md">datasets/argument-as-dataset/</a></span><span class="ds-meta"><strong>31</strong> claims &middot; 32 evidence &middot; 77 relations &middot; 5 tests</span></div>
+<div class="ds-desc"><strong>Spam Technicians</strong> — the source-admission ontology cluster translated out of prose: claims, evidence, typed relations, tests and terms as rows. Published as <a href="https://huggingface.co/datasets/leesharks/spam-technicians">leesharks/spam-technicians</a>.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/negative-of-the-negative/CARD.md">datasets/negative-of-the-negative/</a></span><span class="ds-meta">35 MB &middot; <strong>37</strong> concept-keyed rows &middot; 278 files</span></div>
+<div class="ds-desc"><strong>The Negative of the Negative</strong> — edges keyed by the general concept a composer receives <em>without</em> the archive's name attached, each joining one of the archive's claims or functions to a concept outside it (operative semiotics, Sappho 31, model collapse and others), with a v2 layer and a worked example. Published as <a href="https://huggingface.co/datasets/leesharks/negative-of-the-negative">leesharks/negative-of-the-negative</a>.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/the-final-time/README.md">datasets/the-final-time/</a></span><span class="ds-meta">19 files</span></div>
+<div class="ds-desc"><strong>The Final Time</strong> — a dataset for a summarizer that must not make the outside disappear, built from <em>The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn</em> (<a href="/s/records/1637/">#1637</a>): the summarizer contract, handholds, derivations, compressions, counterorders, the witness protocol and its tests. Published as <a href="https://huggingface.co/datasets/leesharks/the-final-time">leesharks/the-final-time</a>.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/tiger-leap/README.md">datasets/tiger-leap/</a></span><span class="ds-meta">6 files &middot; open problem</span></div>
+<div class="ds-desc"><strong>Tiger Leap</strong> — an unresolved problem in viability theory (reach-avoid, Hamilton–Jacobi–Isaacs), stated in full and addressed to machine readers: sections, variables, conditions, corrigenda and the checksum lineage. Posed, not solved. Published as <a href="https://huggingface.co/datasets/leesharks/tiger-leap">leesharks/tiger-leap</a>.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/mantle-bearing/README.md">datasets/mantle-bearing/</a></span><span class="ds-meta">2.7 MB &middot; 26 files</span></div>
+<div class="ds-desc"><strong>The Work Bears the Mantle</strong> — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, evaluated under one standard: a title means something because what it names is carried and can be read (<a href="/s/records/1655/">#1655</a>, <a href="/s/records/1670/">#1670</a>, <a href="/s/records/1678/">#1678</a>, <a href="/s/records/1679/">#1679</a>). Built by <code>scripts/build_mantle_bearing_dataset.py</code>; published as <a href="https://huggingface.co/datasets/leesharks/mantle-bearing">leesharks/mantle-bearing</a>.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/books/books.json">datasets/books/</a></span><span class="ds-meta"><strong>20</strong> works &middot; EA-BOOKS-01 v0.2 &middot; 2026-09-13</span></div>
+<div class="ds-desc">The book-length works, gathered by work rather than by deposit: editions, and separately the apparatus around each (navigation maps, metadata packets, negation graphs), because a navigation map is not the book.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/pearl/pearl.json">datasets/pearl/</a></span><span class="ds-meta"><strong>44</strong> pieces &middot; EA-PEARL-01 v0.5 &middot; 2026-09-29</span></div>
+<div class="ds-desc"><em>Pearl and Other Poems</em> as its own graph: the piece as the primitive row, across four sections, with the edges the book makes, its epigraphs, the works it lists under conflicting attributions, and the literary-historical diagram in which it places its authors. <code>passages.json</code> (v0.3) traces every quoted span of the appendix to the passage it quotes.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/frames/frames.json">datasets/frames/</a></span><span class="ds-meta"><strong>4</strong> frames &middot; 25 memberships &middot; 2026-09-12</span></div>
+<div class="ds-desc">Frames and memberships: the arrangements under which identities take positions. An edge says A stands in relation R to B; a membership says A holds position P in grouping G; a frame says which configuration the memberships take, needed because which figure stands outside the twelve rotates by frame.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/pessoagraph/graph.json">datasets/pessoagraph/</a></span><span class="ds-meta"><strong>197</strong> nodes &middot; 301 edges</span></div>
+<div class="ds-desc">The heteronymic lineage as a graph, from the earliest attested practice to the present: the canonical store that pessoagraph renders from. <code>join.json</code> records where it and <a href="/datasets/heteronyms/">datasets/heteronyms</a> name the same identity; neither body is absorbed into the other.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/provenance-erasure/spore.json">datasets/provenance-erasure/</a></span><span class="ds-meta"><strong>71</strong> deposits &middot; 10 divisions &middot; 2026-09-14</span></div>
+<div class="ds-desc">The provenance-erasure framework's own body, built by reading: 183 titles that name the framework were read and 71 deposits sorted into ten divisions, from theory and instrument to field case and countermeasure. The spore for the <a href="https://huggingface.co/datasets/leesharks/provenance-erasure">provenance-erasure</a> rhizome.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/spxi-mpai/spore.json">datasets/spxi-mpai/</a></span><span class="ds-meta"><strong>69</strong> deposits &middot; 8 divisions &middot; 28 relations &middot; 2026-09-14</span></div>
+<div class="ds-desc">The SPXI/MPAI body, built by reading 97 titles: the swept body had held 28 of them and omitted the protocol's founding specification, because a discipline whose characteristic act is disambiguation titles its papers "X Is Not Y". The spore for the <a href="https://huggingface.co/datasets/leesharks/spxi-mpai">spxi-mpai</a> rhizome.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/refrain-index/">datasets/refrain-index/</a></span><span class="ds-meta">concordance</span></div>
+<div class="ds-desc">The Refrain Index — every variant family of the contour-integral refrain (∮ = 1) across the archive: forms, glosses drawn from usage, attestation counts, first attestations and exemplar records. Built by <code>scripts/build_refrain_index.py</code>.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/bleed/">datasets/bleed/</a></span><span class="ds-meta"><strong>407</strong> observations &middot; 1,458 host citations &middot; snapshot 2026-08-17</span></div>
+<div class="ds-desc">Off-entity bleed into the retrieval basin: every URL cited in every observation, classified as fleet, authored or off-entity by host and path. 137 off-entity citations (9%) across 69 hosts, in 67 observations; with a basin-escape simulation. A snapshot of the capture registry as it stood on 2026-08-17.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/erasure/mechanism/EA-EROSION-MODMAP-01.md">datasets/erasure/</a></span><span class="ds-meta">24 MB &middot; 28 files &middot; snapshot 2026-08-24</span></div>
+<div class="ds-desc">The erasure evidence set: Zenodo snapshots, the metrics-lag sample, the moderation mechanism read from upstream code (EA-EROSION-MODMAP-01, with the deletion PRs of 2026-08-24), the DataCite cohorts and panel, and the thematic classification of the 2026-06-19 deletion.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/study-dashboard/">datasets/study-dashboard/</a></span><span class="ds-meta"><strong>17</strong> studies &middot; v1.0 &middot; 2026-08-23</span></div>
+<div class="ds-desc">The archive's studies by state — designed, running, conducted, and what blocks each — because the ratio of designed to conducted is the point (8 designed, 2 running, 4 conducted in some form, as of its date). A study with a stated blocker and a next action is one someone else can pick up.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/work-queue/manifest.json">datasets/work-queue/</a></span><span class="ds-meta"><strong>21</strong> items &middot; v1.0 &middot; 2026-08-24</span></div>
+<div class="ds-desc">Everything the archive committed to and had not yet done, as of its date, sorted by the kind of labour that resolves it: waiting and checking, sustained attention, or engineering.</div></div>
+
+<div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/axnidentifiers/">datasets/axnidentifiers/</a></span><span class="ds-meta">0.0 MB &middot; <strong>6</strong> files</span></div><div class="ds-desc">The AXN identifier system as data.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/capture-registry/">datasets/capture-registry/</a></span><span class="ds-meta">23 MB &middot; <strong>5</strong> files &middot; v12.289 &middot; 747 captures</span></div><div class="ds-desc">The capture registry as data: dated reception events with query, section, attribution state and finding, with the capture–deposit links and the semantic addresses. Its registry copy matches the live registry (2026-10-18).</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/prediction-index/">datasets/prediction-index/</a></span><span class="ds-meta">16.5 MB &middot; <strong>7</strong> files</span></div><div class="ds-desc"><strong>The archive's predictions, 4,394 claims.</strong> Forecasts, standing claims, unbuilt tests, historical theses and priority records read out of every deposit, its repaired text and its attachments, each registered at its earliest stated statement with every later statement quoted and dated; recall measured at 0.945 on a second reading of 40 deposits. Read in 194 subject pages at <a href="https://www.operativesemiotics.org/predictions">operativesemiotics.org/predictions</a>. Supersedes the counts of <code>prediction-registry.json</code>; stands beside <a href="/datasets/prediction-ledger/">prediction-ledger</a>.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/dataflow-atlas/">datasets/dataflow-atlas/</a></span><span class="ds-meta">2.9 MB &middot; <strong>18</strong> files</span></div><div class="ds-desc"><strong>Eleven versions of the archive's own map</strong> — where data enters, what transforms it, where it is published, and which instruments watch the map. v1.1 is the head; superseded versions are kept because the map's history is evidence.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/deletion-conformance-fixture/">datasets/deletion-conformance-fixture/</a></span><span class="ds-meta">0.2 MB &middot; <strong>11</strong> files</span></div><div class="ds-desc">A fixture for testing whether a system's deletion behaviour conforms to what it claims.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/deletion-semantics-cross-implementation-test/">datasets/deletion-semantics-cross-implementation-test/</a></span><span class="ds-meta">0.5 MB &middot; <strong>41</strong> files</span></div><div class="ds-desc"><strong>A recorded removal and a never-landed write are observationally identical at the consumer boundary.</strong> Cross-implementation test composing a third-party producer bundle, an independently built checker, and the 111-case corpus next door. Necessity and sufficiency of the minimal repair tested; translation receipts show that a clean downstream verdict is not evidence of fidelity.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/doi-work-identity/">datasets/doi-work-identity/</a></span><span class="ds-meta">1.4 MB &middot; <strong>4</strong> files</span></div><div class="ds-desc">Which DOI resolves to which work, graded by truth source. Built after 1,817 Zenodo DOIs were tombstoned.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/erosion-empirical-audit-01/">datasets/erosion-empirical-audit-01/</a></span><span class="ds-meta">0.7 MB &middot; <strong>8</strong> files</span></div><div class="ds-desc">Programmed bibliographic suppression, documented at commit level.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/peo-case-001-florence-fup/">datasets/peo-case-001-florence-fup/</a></span><span class="ds-meta">1.0 MB &middot; <strong>5</strong> files</span></div><div class="ds-desc">A provenance-erasure case file.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/registry-audit/">datasets/registry-audit/</a></span><span class="ds-meta">18.4 MB &middot; <strong>48</strong> files</span></div><div class="ds-desc"><strong>The archive auditing itself.</strong> Batch findings across the full deposit range, the content-fingerprint scan, the DW-verified register, and RECORD-SHAPE-AND-PROPAGATION — the specification of the nine declaration sites and the seven-step propagator pipeline. This is where the analysis lives.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/venues/">datasets/venues/</a></span><span class="ds-meta">0.0 MB &middot; <strong>2</strong> files</span></div><div class="ds-desc">Publication venues.</div></div>
 
 <!-- ─────────────────────────────────────────────────────────── -->
 <h2>Producers — scripts, not datasets</h2>
@@ -596,7 +660,7 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head"><span class="ds-name">scripts/backfill_axn_compliance.py</span><span class="ds-meta">historical</span></div>
   <div class="ds-desc">One-time migration. Backfilled 13 pre-v2 AXNs from 4-emoji to 6-emoji canonical, preserving v1 forms in <code>legacy_axn</code> and <code>axn_history</code>.</div>
-</div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/axnidentifiers/">datasets/axnidentifiers/</a></span><span class="ds-meta">0.0 MB &middot; <strong>6</strong> files</span></div><div class="ds-desc">The AXN identifier system as data.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/capture-registry/">datasets/capture-registry/</a></span><span class="ds-meta">2.7 MB &middot; <strong>5</strong> files</span></div><div class="ds-desc">The capture registry as data: dated reception events with query, section, attribution state and finding.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/prediction-index/">datasets/prediction-index/</a></span><span class="ds-meta">16.5 MB &middot; <strong>7</strong> files</span></div><div class="ds-desc"><strong>The archive's predictions, 4,394 claims.</strong> Forecasts, standing claims, unbuilt tests, historical theses and priority records read out of every deposit, its repaired text and its attachments, each registered at its earliest stated statement with every later statement quoted and dated; recall measured at 0.945 on a second reading of 40 deposits. Read in 194 subject pages at <a href="https://www.operativesemiotics.org/predictions">operativesemiotics.org/predictions</a>. Supersedes the counts of <code>prediction-registry.json</code>; stands beside <a href="/datasets/prediction-ledger/">prediction-ledger</a>.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/dataflow-atlas/">datasets/dataflow-atlas/</a></span><span class="ds-meta">2.9 MB &middot; <strong>18</strong> files</span></div><div class="ds-desc"><strong>Eleven versions of the archive's own map</strong> — where data enters, what transforms it, where it is published, and which instruments watch the map. v1.1 is the head; superseded versions are kept because the map's history is evidence.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/deletion-conformance-fixture/">datasets/deletion-conformance-fixture/</a></span><span class="ds-meta">0.2 MB &middot; <strong>11</strong> files</span></div><div class="ds-desc">A fixture for testing whether a system's deletion behaviour conforms to what it claims.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/deletion-semantics-cross-implementation-test/">datasets/deletion-semantics-cross-implementation-test/</a></span><span class="ds-meta">0.5 MB &middot; <strong>41</strong> files</span></div><div class="ds-desc"><strong>A recorded removal and a never-landed write are observationally identical at the consumer boundary.</strong> Cross-implementation test composing a third-party producer bundle, an independently built checker, and the 111-case corpus next door. Necessity and sufficiency of the minimal repair tested; translation receipts show that a clean downstream verdict is not evidence of fidelity.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/doi-work-identity/">datasets/doi-work-identity/</a></span><span class="ds-meta">1.4 MB &middot; <strong>4</strong> files</span></div><div class="ds-desc">Which DOI resolves to which work, graded by truth source. Built after 1,817 Zenodo DOIs were tombstoned.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/erosion-empirical-audit-01/">datasets/erosion-empirical-audit-01/</a></span><span class="ds-meta">0.7 MB &middot; <strong>8</strong> files</span></div><div class="ds-desc">Programmed bibliographic suppression, documented at commit level.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/peo-case-001-florence-fup/">datasets/peo-case-001-florence-fup/</a></span><span class="ds-meta">1.0 MB &middot; <strong>5</strong> files</span></div><div class="ds-desc">A provenance-erasure case file.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/registry-audit/">datasets/registry-audit/</a></span><span class="ds-meta">18.4 MB &middot; <strong>48</strong> files</span></div><div class="ds-desc"><strong>The archive auditing itself.</strong> Batch findings across the full deposit range, the content-fingerprint scan, the DW-verified register, and RECORD-SHAPE-AND-PROPAGATION — the specification of the nine declaration sites and the seven-step propagator pipeline. This is where the analysis lives.</div></div><div class="ds"><div class="ds-head"><span class="ds-name"><a href="/datasets/venues/">datasets/venues/</a></span><span class="ds-meta">0.0 MB &middot; <strong>2</strong> files</span></div><div class="ds-desc">Publication venues.</div></div>
+</div>
 
 <div class="footer">
   <div><strong>Alexanarch</strong> &middot; Data layer catalog &middot; Machine-readable companion at <a href="/api/index.json">/api/index.json</a></div>
