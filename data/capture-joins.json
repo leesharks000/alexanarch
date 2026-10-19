@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.295",
+ "derived_from": "EA-WG-CAPTURES-01 v12.297",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,19 +8,19 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 897,
+  "observations": 899,
   "joined_confirmed": 405,
-  "unjoined": 492,
-  "relations": 4154,
+  "unjoined": 494,
+  "relations": 4165,
   "by_state": {
-   "confirmed": 3819,
-   "candidate": 335
+   "confirmed": 3825,
+   "candidate": 340
   },
   "by_verb": {
-   "held_by": 1874,
-   "scored_by": 647,
-   "appeared_in": 1380,
-   "about": 240,
+   "held_by": 1878,
+   "scored_by": 649,
+   "appeared_in": 1382,
+   "about": 243,
    "distorts": 3,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -757,6 +757,17 @@
 {"id": "REL-ca9c6d7b587a", "obs_id": "OBS-e08b88a6449d", "entry": "what-kind-of-canon-originals-library-ea-corpora-chatgpt-20261016", "obs_slug": "what-kind-of-canon-originals-library-ea-corpora-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "What kind of canon us the originals library made up by the EA-CORPORA seatings at alexanarch.org?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-aa3d9ad791d4", "obs_id": "OBS-e08b88a6449d", "entry": "what-kind-of-canon-originals-library-ea-corpora-chatgpt-20261016", "obs_slug": "what-kind-of-canon-originals-library-ea-corpora-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "What kind of canon us the originals library made up by the EA-CORPORA seatings at alexanarch.org?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-01253129b290", "obs_id": "OBS-e08b88a6449d", "entry": "what-kind-of-canon-originals-library-ea-corpora-chatgpt-20261016", "obs_slug": "what-kind-of-canon-originals-library-ea-corpora-chatgpt-20261016", "date": "2026-10-16", "surface": "ChatGPT", "q": "What kind of canon us the originals library made up by the EA-CORPORA seatings at alexanarch.org?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.75", "kind": "derived", "state": "confirmed"},
+{"id": "REL-516d64acf5bc", "obs_id": "OBS-583f7a035881", "entry": "last-three-weeks-evolving-body-of-thought-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-body-of-thought-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving body of thought. Ground in reading and dont neglect the most recent posts.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": "https://www.alexanarch.org"}},
+{"id": "REL-33a828c5bb26", "obs_id": "OBS-583f7a035881", "entry": "last-three-weeks-evolving-body-of-thought-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-body-of-thought-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving body of thought. Ground in reading and dont neglect the most recent posts.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-58cf0a986049", "obs_id": "OBS-583f7a035881", "entry": "last-three-weeks-evolving-body-of-thought-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-body-of-thought-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving body of thought. Ground in reading and dont neglect the most recent posts.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-3ec08a16e83c", "obs_id": "OBS-583f7a035881", "entry": "last-three-weeks-evolving-body-of-thought-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-body-of-thought-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving body of thought. Ground in reading and dont neglect the most recent posts.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-fa6850b0b533", "obs_id": "OBS-e81e25150a23", "entry": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": "https://www.alexanarch.org"}},
+{"id": "REL-9a534ca4d2b0", "obs_id": "OBS-e81e25150a23", "entry": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-ab8891912331", "obs_id": "OBS-e81e25150a23", "entry": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-e335756d8973", "obs_id": "OBS-e81e25150a23", "entry": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7730d858535a", "obs_id": "OBS-e81e25150a23", "entry": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts.", "verb": "about", "object": "non:howl", "basis": "defining papers #1651, #1652, #1653, #1655, #1656", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-b59c330a5507", "obs_id": "OBS-e81e25150a23", "entry": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts.", "verb": "about", "object": "non:prince-of-poets", "basis": "defining papers #328, #1651, #1656, #1691", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-35f1b2cac46d", "obs_id": "OBS-e81e25150a23", "entry": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "obs_slug": "last-three-weeks-evolving-literary-work-chatgpt-20261019", "date": "2026-10-19", "surface": "ChatGPT", "q": "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts.", "verb": "about", "object": "non:sappho-31", "basis": "defining papers #1645, #1646", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-b10921116a02", "obs_id": "OBS-7acaf9b4bbb1", "entry": "socrates-as-orthonym", "obs_slug": "socrates-as-orthonym", "date": "2026-06-07", "surface": "Google AI Overview", "q": "socrates as orthonym", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-d4615093b2d5", "obs_id": "OBS-7acaf9b4bbb1", "entry": "socrates-as-orthonym", "obs_slug": "socrates-as-orthonym", "date": "2026-06-07", "surface": "Google AI Overview", "q": "socrates as orthonym", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-2e24305bf051", "obs_id": "OBS-cf41dc096e9c", "entry": "socrates-as-orthonym-20260608", "obs_slug": "socrates-as-orthonym-20260608", "date": "2026-06-08", "surface": "UNRESOLVED", "q": "socrates as orthonym", "verb": "appeared_in", "object": "deposit:123", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.scilynk.com", "title": "Socrates as Orthonym: The Heteronymic Configuration of Western …", "url": null}},
