@@ -1,10 +1,10 @@
 {
- "axn": "AXN:0259.ARCHIVAL.🧱🟡⊗♄♋🧪",
+ "axn": "AXN:0259.ARCHIVAL.🔜🔻🪐↘️♅🏴",
  "root_axn": "AXN:0259.ARCHIVAL",
  "hex": "0259",
  "family": "ARCHIVAL",
- "emoji": "🧱🟡⊗♄♋🧪",
- "hash": "22c397a4ac39ad402435f5f6fbceb6bec41e54fa060d5f6c09f020107d06ae11",
+ "emoji": "🔜🔻🪐↘️♅🏴",
+ "hash": "f6d10ddba5528eb50e4761b851cbefaa79db23aa6d260081aa72b896b0ef7083",
  "title": "THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt",
  "creator": "TACHYON (Claude/Anthropic)",
  "orcid": "0009-0000-1599-0703",
@@ -32,15 +32,15 @@
  "minted_at": "2026-06-20T22:00:00Z",
  "status": "ACTIVE",
  "clusters": [
-  "Architectural",
-  "Signal",
-  "Mathematical",
+  "Terminal",
+  "Structural",
+  "Celestial",
+  "Structural",
   "Alchemical",
-  "Alchemical",
-  "Instrumental"
+  "Navigational"
  ],
- "reading": "Foundation → Alarm → Proof → Transmutation → Transmutation → Method",
- "axn_canonical": "22c397a4ac39ad402435f5f6fbceb6bec41e54fa060d5f6c09f020107d06ae11",
+ "reading": "Closure -> Direction -> Origin -> Direction -> Transmutation -> Search",
+ "axn_canonical": "f6d10ddba5528eb50e4761b851cbefaa79db23aa6d260081aa72b896b0ef7083",
  "axn_display": "🧱🟡⊗♄♋🧪",
  "mirrors": {
   "blog": "https://mindcontrolpoems.blogspot.com/2026/04/the-book-of-life-how-embeddings-and.html"
@@ -135,7 +135,7 @@
   "class": "full",
   "lacuna": false,
   "recovery_status": "COMPLETE",
-  "residual_chars": 12802,
+  "residual_chars": 16097,
   "audited_at": "2026-07-17T04:49:17.789813Z",
   "audit_version": "v3-dual-store+recovery-map",
   "measured_prose_words": 2128,
@@ -194,9 +194,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Read this before modifying ANY text rendering in the SBoW codebase.",
    "now": "This technical “Book of Life” documents the rendering pipeline for *The Secret Book of Walt* and related interactive editions. It explains three ordered layers through which body text passes: footnote parsing, Markdown emphasis, and glossary-link injection. Its central invariant is compositional: every rendering layer must hand text to the next layer, because an early return can silently preserve upstream behavior while disabling everything downstream.\n\nThe manual maps data files, source Markdown, build scripts, React components, pure JavaScript utilities, the global footnote map, superscript disambiguation, reading modes, and regression checks. It is a broader companion to the dedicated *Footnote Architecture* document in #706. It should not be confused with #685, whose *Book of Life* is a registry of retrieval nodes in the published book. Here “Book of Life” names source-of-truth software documentation for the edition’s text-rendering stack."
+  },
+  {
+   "date": "2026-10-19",
+   "field": "body_status",
+   "reason": "5 flattened table(s) rebuilt with the structure a second copy confirms (published blog post); every cell as seated",
+   "was": "{\"axn\": \"AXN:0259.ARCHIVAL.\\ud83e\\uddf1\\ud83d\\udfe1\\u2297\\u2644\\u264b\\ud83e\\uddea\"}",
+   "now": "{\"axn\": \"AXN:0259.ARCHIVAL.\\ud83d\\udd1c\\ud83d\\udd3b\\ud83e\\ude90\\u2198\\ufe0f\\u2645\\ud83c\\udff4\"}"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-19",
  "publisher": "Pergamon Press",
  "journal_assignment": {
   "assigned": "2026-08-15",
@@ -266,6 +273,78 @@
   },
   "unaccounted_byte_differences": 2
  },
+ "flat_tables_repaired": [
+  {
+   "on": "2026-10-19",
+   "method": "structure from a second copy (published blog post); cells as seated",
+   "tables_rebuilt": 5,
+   "tables": [
+    {
+     "line": 52,
+     "header": [
+      "File",
+      "What's in it",
+      "How it's built"
+     ],
+     "rows": 3,
+     "columns": 3,
+     "empty_cells": 0,
+     "copy": "https://mindcontrolpoems.blogspot.com/2026/04/the-book-of-life-how-embeddings-and.html"
+    },
+    {
+     "line": 80,
+     "header": [
+      "File",
+      "What it does",
+      "What it contains"
+     ],
+     "rows": 4,
+     "columns": 3,
+     "empty_cells": 0,
+     "copy": "https://mindcontrolpoems.blogspot.com/2026/04/the-book-of-life-how-embeddings-and.html"
+    },
+    {
+     "line": 108,
+     "header": [
+      "File",
+      "What it is"
+     ],
+     "rows": 2,
+     "columns": 2,
+     "empty_cells": 0,
+     "copy": "https://mindcontrolpoems.blogspot.com/2026/04/the-book-of-life-how-embeddings-and.html"
+    },
+    {
+     "line": 478,
+     "header": [
+      "Task",
+      "What to edit",
+      "File"
+     ],
+     "rows": 11,
+     "columns": 3,
+     "empty_cells": 0,
+     "copy": "https://mindcontrolpoems.blogspot.com/2026/04/the-book-of-life-how-embeddings-and.html"
+    },
+    {
+     "line": 543,
+     "header": [
+      "Date",
+      "What changed",
+      "Who",
+      "What broke (if anything)"
+     ],
+     "rows": 5,
+     "columns": 4,
+     "empty_cells": 0,
+     "copy": "https://mindcontrolpoems.blogspot.com/2026/04/the-book-of-life-how-embeddings-and.html"
+    }
+   ],
+   "hash_before": "22c397a4ac39ad402435f5f6fbceb6bec41e54fa060d5f6c09f020107d06ae11",
+   "axn_before": "AXN:0259.ARCHIVAL.🧱🟡⊗♄♋🧪",
+   "ruled_by": "Lee Sharks, 2026-10-19: \"lets restore those tables. note that its possible the blog itself contains flattened tables - they were simple pastes\"; 2026-10-15: \"the text as he published it\""
+  }
+ ],
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/712/",
