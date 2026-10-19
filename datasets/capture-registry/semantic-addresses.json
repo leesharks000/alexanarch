@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-18T20:41:56Z",
+  "regenerated_at": "2026-10-19T01:27:16Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "fa099ce50014ef218a4e35ec8c2434a45405973d08c769765b85cadb885d1ee4",
+    "mm-main-capture": "d7d57b3b94c818a5115f0804811bb8b9323e87220ba9336704354d41dccbf1a7",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2488,
-  "total_observations": 1002,
+  "total_addresses": 2489,
+  "total_observations": 1003,
   "class_counts": {
     "subjunctive": 1742,
-    "observed_address": 729,
+    "observed_address": 730,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1853,
+    "unmatched": 1854,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -16149,6 +16149,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "compare house of leaves with the crimson hexagon": {
+      "canonical_query": "compare house of leaves with the crimson hexagon",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-18",
+          "status": "'COMPARE HOUSE OF LEAVES WITH THE CRIMSON HEXAGON' — THE ANCESTOR ESSAY AT GRAIN, AFTER THE LIBRARY OF BABEL",
+          "surface": "Google AI Overview",
+          "source_format": "12 sources: 9 archive-side (crimsonhexagonal.org ×9), 3 third-party (Reddit, Substack, Facebook).",
+          "section": "Architecture",
+          "slug": "compare-house-of-leaves-with-the-crimson-hexagon-aio-20261018",
+          "gallery_url": "https://www.alexanarch.org/captures/#compare-house-of-leaves-with-the-crimson-hexagon-aio-20261018",
+          "record_url": "https://www.alexanarch.org/captures/compare-house-of-leaves-with-the-crimson-hexagon-aio-20261018/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#compare-house-of-leaves-with-the-crimson-hexagon-aio-20261018",
+          "details_excerpt": "COMPARE HOUSE OF LEAVES WITH THE CRIMSON HEXAGON. ON GOOGLE AI OVERVIEW: after about eight refreshes that compared the work with the Library of Babel, a composition reaches the archive and gives #500's comparison at its "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "From House to Hexagon (#500, 2026-02-21) establishes House of Leaves as the Hexagon's direct ancestor. Recorded 2026-10-18."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-18",
+      "latest_status": "'COMPARE HOUSE OF LEAVES WITH THE CRIMSON HEXAGON' — THE ANCESTOR ESSAY AT GRAIN, AFTER THE LIBRARY OF BABEL"
     },
     "compare lee sharks with contemporary experimental poets": {
       "canonical_query": "compare lee sharks with contemporary experimental poets",
