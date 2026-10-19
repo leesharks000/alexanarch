@@ -221,7 +221,7 @@ fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then
         '<div class="resolve-focus-doi">'+escapeHtml(doi)+'</div>'+
         '<div class="resolve-focus-result unmatched">'+
           '<div class="resolve-focus-result-label">Not found in resolution index</div>'+
-          '<div style="font-size:0.92em;color:#444;line-height:1.5">This DOI is not among the '+mappings.length.toLocaleString()+' indexed CHA mappings. It may not have originated from the Crimson Hexagonal Archive, or it may be from a Zenodo record outside CHA. The general Zenodo termination on 2026-06-19 affected only the CHA account.</div>'+
+          '<div style="font-size:0.92em;color:#444;line-height:1.5">This DOI is not among the '+mappings.length.toLocaleString()+' indexed CHA mappings. It may not have originated from the Crimson Hexagonal Archive, or it may be from a Zenodo record outside CHA. The Zenodo termination of 2026-06-19 was of the CHA account; a DOI outside that account is not indexed here.</div>'+
         '</div>'+
         '<div class="resolve-focus-actions">'+
           '<a href="https://doi.org/'+encodeURIComponent(doi)+'" target="_blank" rel="noopener">Try the live DOI →</a>'+
