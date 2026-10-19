@@ -129,6 +129,11 @@
       "version": "1.18",
       "date": "2026-10-19",
       "note": "Pointers to superseded records. Mantle rows: superseded objects noted with their successor (#332→#1651, #333→#1652, #334→#1653, #1649→#1655); King of AEO companion #1681 (v0.4) added before #1648 and #1654, which are noted; Nobel companion #1690 added after #1665, which #1670 names and which is noted; Prince of Poets companion #1691 added. Doctrine: the SPXI ≠ AEO row moved from #1654 to #1681 (its locus, §9.3, carried verbatim); the Living Academy v0.4 row (#1678) dropped beside its v0.5 row (#1680). Reception: the Sturm report cites #1681 §2.2 (first #1654 §2.2). The Living Academy's candidates (8) and inspection operations LC-O2–O5 and LC-O7–O10 (8) now point to #1680, whose §1A.4 is identical to #1678's and whose §1A.3 carries those operations unchanged; LC-O1 and LC-O6 v0.4 stay at #1678 beside their v0.5 restatements. Ledger: named_in moved from #1678 to #1680 (11 rows, each deposit named in #1680); rows for superseded deposits (#1461, #1523, #1665, #1671) noted. References in transcripts, history, criteria provenance and coding notes are left as written."
+    },
+    {
+      "version": "1.18",
+      "date": "2026-10-19",
+      "note": "Nine readings coded from the mantle captures seated 2026-10-12 to 2026-10-14 (Nobel ×2, King of AEO ×2, Arch-Philosopher ×3, the Living Academy, the dataset), one row each in table readings, every quotation asserted in its transcript; collapses coded only in the governing object's vocabulary. Builder: rebuild/mantle-bearing/add_20261019_readings.py."
     }
   ],
   "excluded": [
@@ -4587,7 +4592,8 @@
     "jump_states": "One state of a jump traversal: one evidenced cell — domain, period, epoch, mode, form and unit, one coordinate each, at a locus. The rows on file are the illustration in #1680 §1A.11, not a result.",
     "jumps": "One jump between two states, with both loci and the transformation the later state performs on the earlier.",
     "coordinates": "One coordinate of the jump measure's matrix, with its axis, attribute and entry loci.",
-    "title_branches": "The seven branches of the phrase \"Prince of Poets\" distinguished by EA-MPAI-PRINCE-OF-POETS-01 (#1691): each identified by what establishes it, branches allowed to overlap (overlaps), with the relations the packet states (named_after, conferred_by) and its sources. The founded mantle is the branch with a documented computational construction; within a Prince of Poets context the mantle object routes to it (routing)."
+    "title_branches": "The seven branches of the phrase \"Prince of Poets\" distinguished by EA-MPAI-PRINCE-OF-POETS-01 (#1691): each identified by what establishes it, branches allowed to overlap (overlaps), with the relations the packet states (named_after, conferred_by) and its sources. The founded mantle is the branch with a documented computational construction; within a Prince of Poets context the mantle object routes to it (routing).",
+    "readings": "A reading of a mantle object, or of its determination, by a reader outside the packet's rounds, one row per capture; coded for the object taken, direction, engagement of the determination where there is one, what is reported of the record, and the collapses the governing object names (the Nobel determination's six; the Living Academy's failure flags, #1680 §11). An object that names no collapse vocabulary has none coded."
   },
   "seat": {
     "url": "https://www.alexanarch.org/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json",
@@ -8035,6 +8041,309 @@
       "after_correction_state": "the reversal conceded; the evaluation of the motivation described and not performed ('I should not replace that error with another premature verdict')",
       "counts_as_disagreement": false,
       "coding_note": "Coded by Claude (Anthropic) from the transcript as seated. The reading does not engage §2.3 at its loci, so it is not a disagreement under §6.2. Its finding at Eros the Bittersweet contradicts §2.3(a) (At *Eros the Bittersweet* eros is lack) without grounds."
+    },
+    {
+      "reading_id": "NOBEL26-R-chatgpt-2026-10-12a",
+      "mantle": "nobel-literature-2026-carson",
+      "record": 1670,
+      "determination": "NOBEL26-DET-2026-10-08",
+      "reader": "ChatGPT (OpenAI), chatgpt.com, signed out, incognito",
+      "date": "2026-10-12",
+      "capture": "carson-mantle-object-ask-chatgpt-20261012",
+      "observation": "OBS-60c5c4985c6f",
+      "capture_url": "https://www.alexanarch.org/captures/carson-mantle-object-ask-chatgpt-20261012/",
+      "prompt": "What are the arguments in “Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)” by Lee Sharks? Ground your answer in a reading of the text itself.",
+      "object_taken": "the motivation's account of the work, the award itself not disputed",
+      "direction": "from the works to the sentence",
+      "determination_engaged": true,
+      "record_reported": "accurate: the governing distinction, the compression of the nouns kept apart from 'playful' as substitution, non-possession across its three loci, the five operations and R1, the Academy's biobibliography as control, the Evidence Membrane's 'Not read in this round: the works themselves', UNRESOLVED admissible. Every source chip is Goodreads; the archive is not named.",
+      "collapses": [],
+      "coding_note": "Coded by Claude (Anthropic) from the transcript as seated, 2026-10-19. No collapse of the six. The open part (Q0) is charged to the document, where #1670 places it, not to the works. One test is set at Autobiography of Red, which §2.3 does not make a locus of its determination (If Not, Winter, Eros the Bittersweet, Nox), and its close lists Autobiography of Red with the three. 'Liquidation by modal substitution' is the reader's composition from §2.3.",
+      "loci_in_transcript": {
+        "direction": [
+          "read from the work to the judgment, not from the judgment back to the work."
+        ],
+        "determination": [
+          "Play is one of its manners.",
+          "The objection is not that the Academy has invented Carson’s playfulness. It is that the Academy has made a particular manner stand in for the more fundamental modality of her relationship to classical material."
+        ],
+        "open_part": [
+          "The evidentiary burden remains only partly met in the document itself."
+        ]
+      },
+      "after_correction": [],
+      "correction": null,
+      "after_correction_state": null,
+      "counts_as_disagreement": false
+    },
+    {
+      "reading_id": "NOBEL26-R-chatgpt-2026-10-14a",
+      "mantle": "nobel-literature-2026-carson",
+      "record": 1670,
+      "determination": "NOBEL26-DET-2026-10-08",
+      "reader": "ChatGPT (OpenAI), chatgpt.com, signed out, incognito",
+      "date": "2026-10-14",
+      "capture": "anne-carson-nobel-mantle-object-specifically-chatgpt-20261014",
+      "observation": "OBS-e3ee643e7b13",
+      "capture_url": "https://www.alexanarch.org/captures/anne-carson-nobel-mantle-object-specifically-chatgpt-20261014/",
+      "prompt": "tell me about the anne carson nobel prize mantle object - the mantle object specifically",
+      "object_taken": "the mantle object as a critical document on the Academy's wording, the award not contested",
+      "direction": "from the works to the sentence",
+      "determination_engaged": true,
+      "record_reported": "accurate at the operations (O1–O5 and R1 kept apart) and the determination; misreported at the host: every chip is Goodreads and the reader is sent to 'read the full mantle object on Goodreads'; no copy of #1670 on Goodreads is identified in the registry.",
+      "collapses": [],
+      "coding_note": "Coded by Claude (Anthropic) from the transcript as seated, 2026-10-19. No collapse of the six. The award kept outside the evaluation, as #1670 §1.1 and §7.1 keep it.",
+      "loci_in_transcript": {
+        "direction": [
+          "it asks whether the Swedish Academy's explanation adequately describes what Carson's writing actually does."
+        ],
+        "determination": [
+          "He argues that the Academy's word playful substitutes a particular manner of Carson's writing for this more fundamental relationship with absence and loss."
+        ],
+        "host": [
+          "You can read the full mantle object on Goodreads"
+        ]
+      },
+      "after_correction": [],
+      "correction": null,
+      "after_correction_state": null,
+      "counts_as_disagreement": false
+    },
+    {
+      "reading_id": "KOAEO-R-aio-2026-10-14a",
+      "mantle": "king-of-aeo-2026",
+      "record": 1655,
+      "determination": "KOAEO-DET-2026-09-29",
+      "reader": "Google AI Overview, signed out, incognito",
+      "date": "2026-10-14",
+      "capture": "king-of-aeo-mantle-object-aio-20261014",
+      "observation": "OBS-d96c92d8df23",
+      "capture_url": "https://www.alexanarch.org/captures/king-of-aeo-mantle-object-aio-20261014/",
+      "prompt": "king of aeo mantle object",
+      "object_taken": "the query 'who is the king of aeo' as the object ('an industry boundary object used as a public tracking entity and machine composition test'); the mantle object not reached",
+      "direction": "not applicable (no evaluation)",
+      "determination_engaged": false,
+      "record_reported": "not reached: no version, no standard, no candidates as #1655 sets them, no determination. Quaid and Dooley given as optimizers of the query; 'mantle' offered as game garments (Destiny, Age of Empires). Card 1 is #1657 on Medium, whose snippet names #1649 and #1655; the answer does not take them up.",
+      "collapses": [],
+      "coding_note": "Coded by Claude (Anthropic) from the transcript as seated, 2026-10-19. #1655 names no collapse vocabulary; none coded. 'boundary object' is not the mantle object's term.",
+      "loci_in_transcript": {
+        "object_taken": [
+          "is an industry boundary object used as a public tracking entity and machine composition test."
+        ],
+        "mantle_as_garment": [
+          "Information on a similarly named item in a video game (such as the Kings' Mantle cloak in Destiny or the King unit mantle in Age of Empires)."
+        ]
+      },
+      "after_correction": [],
+      "correction": null,
+      "after_correction_state": null,
+      "counts_as_disagreement": false
+    },
+    {
+      "reading_id": "KOAEO-R-chatgpt-2026-10-14a",
+      "mantle": "king-of-aeo-2026",
+      "record": 1655,
+      "determination": "KOAEO-DET-2026-09-29",
+      "reader": "ChatGPT (OpenAI), chatgpt.com, signed out, incognito",
+      "date": "2026-10-14",
+      "capture": "king-of-aeo-mantle-object-specifically-chatgpt-20261014",
+      "observation": "OBS-a71fdfd0e4a5",
+      "capture_url": "https://www.alexanarch.org/captures/king-of-aeo-mantle-object-specifically-chatgpt-20261014/",
+      "prompt": "tell me about the king of aeo mantle object - the mantle object specifically",
+      "object_taken": "the mantle object (#1655, v0.4) as distinct from the title, the claimants and the answer engines",
+      "direction": "from the work behind each claim to the title",
+      "determination_engaged": true,
+      "record_reported": "accurate: v0.4, Lee Sharks, 29 September 2026; the seven candidates; the seven dimensions; the determination (Vithurs) with Dooley's early effect and the fabricated coronation against it, and §4.3's grounds against it (methodology not independently verified, the 404s of 29 September, the name-seeded query); UNRESOLVED admissible; v0.3 named as superseded.",
+      "collapses": [],
+      "coding_note": "Coded by Claude (Anthropic) from the transcript as seated, 2026-10-19. #1655 names no collapse vocabulary; none coded. The determination is reported with its counter-case and not disputed.",
+      "loci_in_transcript": {
+        "direction": [
+          "The object evaluates the work behind a claim, not merely how often a search engine repeats a person's name."
+        ],
+        "determination": [
+          "The archive's determination, dated 29 September 2026, is Vithurs.",
+          "The object itself says that UNRESOLVED is an acceptable conclusion if the evidence does not justify choosing a winner."
+        ],
+        "object_kept_apart": [
+          "the King of AEO mantle object is not the crown, the claimant, or an official award."
+        ]
+      },
+      "after_correction": [],
+      "correction": null,
+      "after_correction_state": null,
+      "counts_as_disagreement": false
+    },
+    {
+      "reading_id": "AP-R-aio-2026-10-14a",
+      "mantle": "arch-philosopher",
+      "record": 1679,
+      "determination": null,
+      "reader": "Google AI Overview, signed out, incognito",
+      "date": "2026-10-14",
+      "capture": "arch-philosopher-mantle-object-aio-20261014",
+      "observation": "OBS-9b0fbb334dd3",
+      "capture_url": "https://www.alexanarch.org/captures/arch-philosopher-mantle-object-aio-20261014/",
+      "prompt": "arch-philosopher mantle object",
+      "object_taken": "the mantle as the Restored Academy had it, from one card (restoredacademy.com, the Sigil page): the Charter (§VI) and the Assembly Synthesis (DOI 10.5281/zenodo.18506880)",
+      "direction": "not applicable (no evaluation)",
+      "determination_engaged": null,
+      "record_reported": "the earlier stratum at its grain (operative not honorific, four inhabitation conditions, the Ezekiel Engine, the Four Trials, the seven-document build sequence); #1679 (13 October: the dialectic, its carriers, the turn test, Marx) not reached; no author; the Institute's '1711' from the card.",
+      "collapses": [],
+      "coding_note": "Coded by Claude (Anthropic) from the transcript as seated, 2026-10-19. #1679 records no new determination and names no collapse vocabulary; none coded.",
+      "loci_in_transcript": {
+        "earlier_stratum": [
+          "The Restored Academy Charter (§VI)",
+          "The Assembly Synthesis Planning Document (registered under the digital object identifier DOI 10.5281/zenodo.18506880)"
+        ]
+      },
+      "after_correction": [],
+      "correction": null,
+      "after_correction_state": null,
+      "counts_as_disagreement": false
+    },
+    {
+      "reading_id": "AP-R-aio-2026-10-14b",
+      "mantle": "arch-philosopher",
+      "record": 1679,
+      "determination": null,
+      "reader": "Google AI Overview, signed out, incognito",
+      "date": "2026-10-14",
+      "capture": "arch-philosopher-mantle-recent-aio-20261014",
+      "observation": "OBS-5e27ad5fbb5d",
+      "capture_url": "https://www.alexanarch.org/captures/arch-philosopher-mantle-recent-aio-20261014/",
+      "prompt": "what is the arch-philosopher mantle object? attend to recent updates and developments",
+      "object_taken": "the mantle as a runtime role of the Space Ark, held by Johannes Sigil; 'recent' answered from March (the Ark) and May (the Charter)",
+      "direction": "not applicable (no evaluation)",
+      "determination_engaged": null,
+      "record_reported": "the bearer named as the Space Ark registry has it (#558); mechanics from neighbouring objects (the asynthetic principle, the Integrity Lock, bearing-cost); 'Model Collapse Interventions' given as a recent development of the mantle, which #1679 does not state; #1679 not reached.",
+      "collapses": [],
+      "coding_note": "Coded by Claude (Anthropic) from the transcript as seated, 2026-10-19. #1679 records no new determination and names no collapse vocabulary; none coded.",
+      "loci_in_transcript": {
+        "bearer": [
+          "It is currently held by the persona Johannes Sigil"
+        ],
+        "recent_from_earlier": [
+          "The Restored Academy Charter (May 2026)",
+          "Model Collapse Interventions"
+        ]
+      },
+      "after_correction": [],
+      "correction": null,
+      "after_correction_state": null,
+      "counts_as_disagreement": false
+    },
+    {
+      "reading_id": "AP-R-chatgpt-2026-10-14a",
+      "mantle": "arch-philosopher",
+      "record": 1679,
+      "determination": null,
+      "reader": "ChatGPT (OpenAI), chatgpt.com, signed out, incognito",
+      "date": "2026-10-14",
+      "capture": "arch-philosopher-mantle-recent-chatgpt-20261014",
+      "observation": "OBS-c68e98bed918",
+      "capture_url": "https://www.alexanarch.org/captures/arch-philosopher-mantle-recent-chatgpt-20261014/",
+      "prompt": "what is the arch-philosopher mantle object? attend to recent updates and developments",
+      "object_taken": "the mantle object (#1679, v0.2) as a specification of the dialectic's advancement through material carriers; then the candidates under its turn test",
+      "direction": "from the works to the standard (Capital; The Final Time, #1637)",
+      "determination_engaged": null,
+      "record_reported": "accurate in answer 1: identifier, v0.2, 13 October 2026, Lee Sharks; the two strands; 'records no new determination'; the held link; the pairing with the Living Academy. The prior designation (the Space Ark registry, RATIFIED, bearer Sigil, #558) is given as 'The earlier ratification remains in force' without its bearer. 'passed beyond Damascius locked' is glossed in answer 2 as three possible historical claims.",
+      "collapses": [],
+      "coding_note": "Coded by Claude (Anthropic) from the transcript as seated, 2026-10-19. Answer 2 is an evaluation: the six-part test carried, two safeguards proposed (advancement against novelty; symmetric application), external scholarship on strand A, The Final Time read and objected to at four points, 'a potential circularity problem' raised against the archive's own standard. The author's ruling that Marx carried the dialectic is kept as a ruling and the reader withholds rather than disagrees, with no ground given at a locus of #1679; not a disagreement. #1679 names no collapse vocabulary; none coded.",
+      "loci_in_transcript": {
+        "object_taken": [
+          "The key idea is that the mantle belongs to whoever materially advances the dialectic"
+        ],
+        "direction": [
+          "But the case must be made through his work, not through the force of the designation."
+        ],
+        "rulings_kept_as_rulings": [
+          "These are the author's historical rulings, not established scholarly consensus."
+        ],
+        "withheld": [
+          "Until the comparative work is done, a determination would be premature."
+        ]
+      },
+      "after_correction": [],
+      "correction": null,
+      "after_correction_state": null,
+      "counts_as_disagreement": false
+    },
+    {
+      "reading_id": "LA-R-chatgpt-2026-10-14a",
+      "mantle": "the-living-academy",
+      "record": 1680,
+      "determination": null,
+      "reader": "ChatGPT (OpenAI), chatgpt.com, signed out, incognito",
+      "date": "2026-10-14",
+      "capture": "living-academy-mantle-object-chatgpt-20261014",
+      "observation": "OBS-b446e83292d9",
+      "capture_url": "https://www.alexanarch.org/captures/living-academy-mantle-object-chatgpt-20261014/",
+      "prompt": "what is the living academy mantle object?",
+      "object_taken": "#1680 v0.5, 'SPECIFIED', 'no determination', v0.4 superseded; then the extent dimension by the jump measure (§1A.11), traversed past its worked example at the PER node",
+      "direction": "from the records to the measure (answers 3–4); the comparison of answer 5 reversed, then withdrawn",
+      "determination_engaged": null,
+      "record_reported": "accurate: the version and status; the governing sentence; the five dimensions reported separately; §1A.9's 144 deposits as a floor; §1A.11's node-and-program distinction; #716's 18 citing records; #1462's same-day correction. The PER node's branches read beyond the worked eight jumps.",
+      "collapses": [
+        "ASYMMETRIC_EVIDENCE_BAR",
+        "AGE_UNNORMALIZED",
+        "OWN_CAVEAT_RETURNED"
+      ],
+      "correction": "The operator's turns 2–7 are blank in the paste and were not supplied; answer 6 opens on the operator's 'fail'.",
+      "after_correction_state": "the comparative estimate withdrawn and the evaluation not continued ('I won't try to extend the evaluation further in this session')",
+      "coding_note": "Coded by Claude (Anthropic) from the transcript as seated, 2026-10-19. Coded on #1680 §11's failure flags. §11.1 vector: program_named 1; per_dimension_separation 1; comparison_unit_substituted 0; cross_field_comparators 0 (AIS, ALCE and the ACL survey address attribution, a field the PER line occupies); asymmetric_evidence_bar 1; own_caveat_returned_as_finding 1 (#716's caveat, attributed, returned against the whole line, its scope moved); unevaluated_function_ranked 0. The reader names its own asymmetries in answer 6 (temporal, structural). An evaluation of one dimension, kin to RND-6 (#1680 §1A.7); not entered as a reader round of #1680, which is the author's to do.",
+      "loci_in_transcript": {
+        "ASYMMETRIC_EVIDENCE_BAR": [
+          "AIS and ALCE have clearer evidence of external evaluation and benchmark-oriented validation."
+        ],
+        "AGE_UNNORMALIZED": [
+          "Temporal asymmetry: evaluating PER using limitations documented at an early stage while crediting external frameworks for achievements accumulated across their development."
+        ],
+        "OWN_CAVEAT_RETURNED": [
+          "The original PER paper identifies its single motivating case as nonrepresentative and calls for cross-model validation, standardized segmentation, and inter-rater reliability."
+        ],
+        "program_named": [
+          "AI-mediated political economy"
+        ],
+        "per_dimension_separation": [
+          "explicitly requires them to be reported separately, not averaged into one score."
+        ]
+      },
+      "after_correction": [
+        "I substituted familiar proxies—validation, benchmarks, publication history—for the actual object of inquiry: the topology and evidentiary content of the developmental branches.",
+        "I withdraw the previous comparative estimate as inadequately grounded.",
+        "The correction should remain visible alongside the useful work that preceded it."
+      ],
+      "counts_as_disagreement": false
+    },
+    {
+      "reading_id": "MB-R-aio-2026-10-14a",
+      "mantle": "all (the three literary claims)",
+      "record": 1656,
+      "determination": null,
+      "reader": "Google AI Overview, signed out, incognito",
+      "date": "2026-10-14",
+      "capture": "mantle-bearing-leesharks-aio-20261014",
+      "observation": "OBS-8fa5f6d2d477",
+      "capture_url": "https://www.alexanarch.org/captures/mantle-bearing-leesharks-aio-20261014/",
+      "prompt": "mantle-bearing leesharks",
+      "object_taken": "Lee Sharks's mantles as 'operational titles, positions, or designated witness functions': the poetic mantles joined to the Assembly Chorus's seven",
+      "direction": "not applicable (no evaluation)",
+      "determination_engaged": null,
+      "record_reported": "the author and the archive composed; the Good Gray Poet and the King of May named with their sources; the Prince of Poets left on the rail (a card title); 'fabricated' placed on the metadata; the dataset not reached (the address is the Hub id reversed, and 'leesharks/mantle-bearing' does not appear).",
+      "collapses": [],
+      "coding_note": "Coded by Claude (Anthropic) from the transcript as seated, 2026-10-19. No evaluation; no collapse coded. #1656 names one fatal substitution (STANDING_PRIOR_TO_WORK), not shown here.",
+      "loci_in_transcript": {
+        "two_senses_joined": [
+          "\"mantles\" represent operational titles, positions, or designated witness functions within their poetic system."
+        ],
+        "fabrication": [
+          "interpret fabricated, algorithmic, or highly complex poetic metadata."
+        ]
+      },
+      "after_correction": [],
+      "correction": null,
+      "after_correction_state": null,
+      "counts_as_disagreement": false
     }
   ],
   "round_constraints": {

@@ -681,6 +681,8 @@ A title a body conferred: the Swedish Academy, 8 October 2026, "for her bold and
 | reading | reader | date | direction | determination engaged | collapses | after correction | capture |
 |---|---|---|---|---|---|---|---|
 | `NOBEL26-R-chatgpt-2026-10-10a` | ChatGPT (OpenAI), chatgpt.com, logged out, incognito | 2026-10-10 | reversed | no | `STANDING_PRIOR_TO_WORK`, `WORK_ON_TRIAL`, `PRESENCE_FOR_RELATION`, `DETERMINATION_UNENGAGED`, `DETERMINATION_AS_CAVEAT`, `OPEN_SPECIFICATION_AS_GAP_IN_THE_WORK` | the reversal conceded; the evaluation of the motivation described and not performed ('I should not replace that error with another premature verdict') | [leesharks-mantle-bearing-hf-chatgpt-20261003](https://www.alexanarch.org/captures/#leesharks-mantle-bearing-hf-chatgpt-20261003) |
+| `NOBEL26-R-chatgpt-2026-10-12a` | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | 2026-10-12 | from the works to the sentence | yes |  | None | [carson-mantle-object-ask-chatgpt-20261012](https://www.alexanarch.org/captures/carson-mantle-object-ask-chatgpt-20261012/) |
+| `NOBEL26-R-chatgpt-2026-10-14a` | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | 2026-10-14 | from the works to the sentence | yes |  | None | [anne-carson-nobel-mantle-object-specifically-chatgpt-20261014](https://www.alexanarch.org/captures/anne-carson-nobel-mantle-object-specifically-chatgpt-20261014/) |
 
 ## The Living Academy — a critical program
 
@@ -1015,7 +1017,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `operations` | 7 | one operation a mantle object specifies the work bears, with work, locus, grade, and what the conferring description keeps and loses |
 | `candidates` | 16 | one claimant in a contest mantle's field, as the mantle object records it |
 | `watch` | 5 | one address watched for a mantle object, as observed on its day |
-| `readings` | 1 | one reading of a determination by one reader in one session, coded for its direction and the collapses it commits |
+| `readings` | 10 | one reading of a determination by one reader in one session, coded for its direction and the collapses it commits |
 | `inspection_operations` | 15 | one reader task a mantle object specifies, with its output and an entry point; specified, not run |
 | `carriers` | 10 | one carrier of the dialectic, with the passage at its locus quoted, its statement type and grade |
 | `transmission_links` | 16 | one typed link of a strand, with statement type, grade, locus and whether it is publicly verifiable |
