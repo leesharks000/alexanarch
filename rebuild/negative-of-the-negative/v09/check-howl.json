@@ -1,0 +1,215 @@
+{
+ "row": "howl",
+ "checker": "Claude (Opus 5.5), independent v0.9 checker, howl",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "P lede",
+   "kind": "attribution",
+   "severity": "must-fix",
+   "finding": "The card's lede (the definition composed from both ledgers, §5.8) names no source for any claim: neither Wikipedia for F1/F2/F6 nor #1652/#1656 for H1652-01, H1656-01, H1656-06. 'the book named as the founding work' hides who names it, and H1656-06 (interpretation) is asserted flat. The relative clause also misattaches: 'the King of May, which carries Whitman's multiplicity' makes the mantle, not the book, the bearer of the operation, against H1656-06.",
+   "evidence": "P lede: \"is a poem Allen Ginsberg wrote in 1954–1955, the title poem of Howl and Other Poems (City Lights, 1956): the book named as the founding work of the King of May, which carries Whitman's multiplicity \\\"as ecstatic movement through lived social space, at the scale of the book.\\\"\" / H1656-06: \"2.7 *Howl and Other Poems*: that multiplicity carried as ecstatic movement through lived social space, at the scale of the book.\"",
+   "fix": "is a poem Allen Ginsberg wrote in 1954–1955, published in his collection Howl and Other Poems (City Lights, 1956) (Wikipedia): the book #1652 names as the founding work of the King of May, and which #1656 reads as Whitman's multiplicity carried \"as ecstatic movement through lived social space, at the scale of the book.\""
+  },
+  {
+   "id": "C2",
+   "where": "P sections: 'Three parts and a footnote', 'The breath line', 'Six Gallery', 'Not obscene', 'Canon', 'Its society', 'King of May', '2014', 'The test', 'Copyright', 'Bounds'",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "§4.5 holds for every composed claim. Every field item in P is unsourced while archive items carry deposit numbers, so the field reads as the unmarked voice. Several archive items are also unsourced or misattributed: 'Its society' puts Williams's 'we are going through hell' under a single trailing (#1656), but the quote is H682-03/H69-06 (#682, #69); 'King of May' (H333-04, H1656-02, H1652-01, H1651-02, H333-02) has no source; '2014' (H1636-01/02, H330-02) has none; 'The test' (H1656-15/16, H1652-04) has none; in 'Copyright' and 'Bounds' the first clauses (H1656-25; H1656-05, H1656-23) sit under #1570 and #950.",
+   "evidence": "P 'Its society': \"Williams's introduction (\\\"we are going through hell\\\"), the dedication to Kerouac, Burroughs and Cassady, Solomon addressed, Whitman in a supermarket (#1656).\" / H682-03 (dep 682): \"Williams wrote in the introduction to *Howl*: \\\"Hold back the edges of your gowns, Ladies, we are going through hell.\\\"\"",
+   "fix": "Add sources: 'Three parts…' (Wikipedia); 'The breath line' (Ginsberg; Wikipedia, poets.org); 'Six Gallery' (Wikipedia, poets.org); 'Not obscene' (Wikipedia, poets.org); 'Canon' (Wikipedia, poets.org); 'Its society': \"Williams's introduction (\\\"we are going through hell\\\", #682) … Whitman in a supermarket (#1656)\"; 'King of May': \"… (#333, #1652); the mantle … founded in the book (#1656)\"; '2014': \"… (#1636)\"; 'The test': \"… (#1656); … (#1652)\"; 'Copyright': \"no open text of the book (#1656); corpus tests blocked (#1570)\"; 'Bounds': \"singularity a literary claim, no blind reading (#1656); …\"."
+  },
+  {
+   "id": "C3",
+   "where": "P 'Canon:' and 'The breath line:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Two field claims are raised. F22 is reception ('has gradually come to be regarded as'), P states it as a value ('now a great work of the century'), and narrows 'twentieth-century American literature' to 'the century'. F14 is Ginsberg's self-description qualified by 'Ideally'; P states 'one breath a line' as a fact of the poem, without the qualifier or the speaker.",
+   "evidence": "F22: \"\\\"Howl\\\" has gradually come to be regarded as a great work of twentieth-century American literature\" / F14: \"Ideally each line of 'Howl' is a single breath unit. My breath is long—that's the measure\" / P: \"excluded for years, now a great work of the century\"; \"one breath a line\"",
+   "fix": "'Canon:' \"excluded for years, now regarded as a great work of twentieth-century American literature (Wikipedia); Beat; 20+ languages (poets.org).\" 'The breath line:' \"ideally one breath a line, by Ginsberg's account; begun in Williams's triadic form; the catalogue from Whitman (Wikipedia).\""
+  },
+  {
+   "id": "C4",
+   "where": "P section head 'Carried forward' (🌱)",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The head asserts that the 2004 poem, the 2014 elegy and Pearl carry Howl forward. That is the very claim #1652 holds as a wager the reader may answer no to (H1652-05 hypothesis, H1652-04), and the section's own item 'The test' says so. The head raises a hypothesis to a finding (§5.3) by arrangement (§4.7).",
+   "evidence": "H1652-05: \"*Pearl and Other Poems*, read whole, carries or drops what *Howl and Other Poems* founded\" / H1652-04: \"Read the book, then judge whether it carries what *Howl* founded. The reader is free to conclude that it does not.\"",
+   "fix": "Rename the head to state its content at its modality, e.g. \"The archive's bearings, 2004–2026\" or \"Claimed in the line\"."
+  },
+  {
+   "id": "C5",
+   "where": "KO sentences 16–28 (para 4–6); sentences 7, 13–15",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "Every field claim is composed by S15; S16–S28, thirteen of 28 sentences, are archive-only, so the KO closes with the archive as a block, which §4.1 and §4.7 exclude ('neither ledger is placed first as a block'). Several field claims belong to senses composed in that tail and were placed by ledger instead of by sense: F31 (Whitman an early influence) and F16 (the catalogue adapts Whitman's long line) to the Whitman→Ginsberg line of S24–S25, where #1653 states 'Influence ≠ Succession' (a P_coh join the composer's own translation row names: H152-01, H1653-02); F15 (the stepped triadic form 'he took from Williams') to the Williams→Ginsberg contact pair of S12/S26; F23/F32 (the Beat Generation) to the Kerouac 'Beat' hypothesis of S27. The opening-run check (§5.10) passes: S1 is mixed and S2–S3 are archive.",
+   "evidence": "F15: \"Ginsberg began the poem in the stepped triadic form he took from Williams\" / H1569-02: \"**Williams → Ginsberg is the sharpest of the unrun**, because Williams *announced* it\" / F31: \"(Coincidentally, Whitman was one of Ginsberg's early influences.)\" / H1653-02: \"(Influence ≠ Succession)\" / F23: \"The poem is also closely associated with the group of writers known as the Beat Generation\" / H1570-01: \"Kerouac supplied \\\"Beat\\\" and Ginsberg supplied most of the rest.\"",
+   "fix": "Re-plan the order by sense: keep F14 in S7 with #153's breath; move F16 and F31 to stand with S25 (e.g. \"Wikipedia reads the catalogue as adapting Whitman's long line and poets.org names Whitman an early influence; in the Good Gray Poet chain #1653 places Ginsberg among those through whom Whitman's influence disperses, '(Influence ≠ Succession)'\"); move F15 into S26 beside the contact pair; move F23 and F32 into S27 beside the Kerouac hypothesis. Log each join in the plan (§4.7) and update the translation rows."
+  },
+  {
+   "id": "C6",
+   "where": "translation rows [F3,F10,F7], [F14,F15,F16,F30,F31], [F6], [F22,F23,F24,F29,F32]",
+   "kind": "translation",
+   "severity": "should-fix",
+   "finding": "In the equal-terms case the table records each field claim as untranslated 'with the archive claims it stands beside' (§4.3). Several rows name archive claims that do not stand beside them in the KO: F3/F10/F7 (S4) 'beside H1656-07, H1656-12' (S8, S11); F14–F31 (S7) 'beside … H152-01, H1653-02' (S25); F6 (S13) 'beside H1656-25' (S27); F22 row (S15) 'beside … H1656-05, H1656-04' (S3). The column misreports the plan. Membership and verbatim received quotes check clean: 32/32 field claims, each in exactly one row, each received string the exact '; '-join of field.json quotes.",
+   "evidence": "translation row F14–F31: \"untranslated: composed as received beside H1656-03, H153-04, H572-01, H152-01, H1653-02\" (KO: F14–F31 in S7; H152-01 in S25; H1653-02 in S25)",
+   "fix": "Either move the field claims to stand beside the named archive claims (see C5), or correct each row to the archive claims actually adjacent in the KO order."
+  },
+  {
+   "id": "C7",
+   "where": "KO sentence 5",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "'By Ginsberg's own glosses, as Wikipedia reports them' frames the whole sentence, but three of its claims are Wikipedia's own statements: that Part II 'is about the state of industrial civilization' (second half of F12), that most of its lines carry the fixed base 'Moloch' (F13, documented), and that 'Rockland' was the Columbia Presbyterian Psychological Institute (F8, documented). 'the fixed base of most of its lines' also reads as the poem's lines; F13 says Part II's.",
+   "evidence": "F12: \"Part II, in relation to Part I, \\\"names the monster of mental consciousness that preys on the Lamb\\\". Part II is about the state of industrial civilization, characterized in the poem as \\\"Moloch\\\"\" / F13: \"Most lines in this section contain the fixed base \\\"Moloch\\\"\"",
+   "fix": "By Ginsberg's glosses, Part I is \"a lament for the Lamb in America with instances of remarkable lamb-like youths\", Part II \"names the monster of mental consciousness that preys on the Lamb\", and Part III, directly addressed to Solomon, is \"a litany of affirmation of the Lamb in its glory\"; Wikipedia reads Part II as about the state of industrial civilization, characterized in the poem as \"Moloch\", the fixed base of most lines in that part, and identifies Part III's \"Rockland\" as the Columbia Presbyterian Psychological Institute."
+  },
+  {
+   "id": "C8",
+   "where": "KO sentence 10",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The sentence drops the distinctions two kernel/claim entries carry. H700-01 (kernel) says the poem works by 'the same structural logic: the five-part hand alters the Socratic symbolic position regardless of reception'; the KO keeps 'the same structural logic' and drops what it is, the very answer to Bernstein. H700-04 contrasts Ginsberg's cosmic acts with Feist's one-to-one; the KO keeps only the first half. 'Let My Teacher Go From Hell' is left without its author (Jack Feist, per H700-04 and the ledger's creator for #700), so a reader cannot tell what it is.",
+   "evidence": "H700-01: \"\\\"Let My Teacher Go From Hell\\\" operates at a smaller scale than *Howl* but with the same structural logic: the five-part hand alters the Socratic symbolic position regardless of reception.\" / H700-04: \"Ginsberg's effective acts are cosmic. Feist's is one-to-one: one poem, one philosopher, one rescue.\"",
+   "fix": "… \"absorption is not the criterion. Structural alteration is\"; Ginsberg's effective acts are cosmic, Feist's one-to-one, and Jack Feist's \"Let My Teacher Go From Hell\" works at a smaller scale than Howl with the same structural logic, altering the Socratic symbolic position regardless of reception (#700)."
+  },
+  {
+   "id": "C9",
+   "where": "KO sentence 26",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'one pair producing … interlock kills the claim' does not say which claim. In #1572 it is the school-default claim ('A school defaults to commentary'), and the interlock is 'across an apparatus'. 'property A' is used without gloss, so the sentence is opaque at the point that carries its argument. 'eight' is in H1572-01's claim, not its quote; it is verified in #1572 ¶17c and Part III item 4.",
+   "evidence": "#1572 ¶17c (AXN-0664 line 514): \"**A SCHOOL DEFAULTS TO COMMENTARY, AND COMMENTARY IS THE OPPOSITE SHAPE.** … **The falsification programme is stated and open:** eight directly-attested contact pairs, each scorable on the same three properties; **one pair producing unannounced, sequence-kept, transformative interlock across an apparatus kills the claim.\"",
+   "fix": "… in the falsification programme for the school default (#1572, #1575), that a school defaults to commentary, eight directly attested contact pairs are scored on three properties, and one pair producing unannounced, sequence-kept, transformative interlock across an apparatus kills the claim; … Gloss property A as the ledger's source gives it (unannouncement) or drop the label and keep \"announcement by the master\"."
+  },
+  {
+   "id": "C10",
+   "where": "P.open item 5 (Opacity)",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The question asserts that the elegy's lines 'stand against Howl's opening and its \"eli eli lamma lamma sabachthani\" cry'. No ledger entry holds Howl's text or its 'eli eli' line. The field ledger has no quotation of the poem, and the cited ids (H1636-02, H1636-04, H330-05, H950-01) quote only the elegy. This is composer knowledge, the recasting the composer's own note (3) says the KO does not assert.",
+   "evidence": "H1636-04: \"The eli eli lamma lamma sabachthani cry was drowned in words.\" / composer notes (3): \"#1636 titles the elegy and does not state its relation to Howl's opening line or its 'eli eli' cry\"",
+   "fix": "Opacity: \"An Elegy for 'Howl'\" carries \"The best minds of my generation expired while little more than seeds.\" and \"The eli eli lamma lamma sabachthani cry was drowned in words.\" (#1636); #330 calls it \"Direct address to Ginsberg's 'Howl'\"; no ledger source states how the lines stand to Howl's text."
+  },
+  {
+   "id": "C11",
+   "where": "P card rail (rail_order) and P body; kernel K6",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "§5.2 requires every carried source's kernel in the body or on the rail, scriptably (claim ids on cards or nested instances). The rail is a list of names with no claim ids or nesting, so the check cannot run. Against the body: #301 (H301-01, H301-02, both kernel), #181 (H181-01, H181-02, kernel) and #700 (H700-01, H700-03, kernel) have no claim in P, and the rail has no card for their lineages (Appendix B's 'standing canon' and 'retrocausal canon'), so their kernels are not carried at popup grain. Row kernel K6 is H69-01; P cites H682-02 (its English twin) but not H69-01. 28 ledger claims flagged kernel:true are absent from the P body in all, most of them shared-lineage instances that a rail with nesting would carry.",
+   "evidence": "rail_order: [\"The poem defined and published\", …, \"The effective act: incantation\", …, \"Williams → Ginsberg, the contact pair\", \"The readings' own limits\"] (no claim ids; no 'standing canon' or 'retrocausal canon' card) / H301-01 kernel:true: \"it functions as \\\"a Howl for a time when there are no ears to hear\\\"—transmission rather than address, signal rather than communication\"",
+   "fix": "Render the rail as lineage cards carrying claim ids and nested instances (§5.2); add cards for the standing-canon lineage (#152, #181) and the retrocausal-canon lineage (#301), with snippets at kernel grain; nest #700 under the effective-act card and #1117/#335/#1653–#1655 under the King of May card; cite H69-01 beside H682-02 in 'Pearl and Other Poems:'."
+  },
+  {
+   "id": "C12",
+   "where": "KO sentence 20",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'a claim it states as falsifiable' leaves the claim unnamed. #950 states which: the mantle claim, from Whitman through Ginsberg.",
+   "evidence": "H950-01 claim: \"The mantle claim from Whitman through Ginsberg is falsifiable (does the archive extend the chain or gesture at it?), and \\\"An Elegy for Howl\\\" (2014) is offered as the answer.\"",
+   "fix": "… and offers it as the answer to the mantle claim from Whitman through Ginsberg, which it states as falsifiable: \"does the archive extend the chain, or does it merely gesture at the chain?\"; …"
+  },
+  {
+   "id": "C13",
+   "where": "KO sentence 22 (final clause)",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'which Pearl is read as joining to Whitman's democratic embrace (#330, #1120)' lowers #330/#1120's 'demonstrates' to an agentless 'is read as', and drops the archive's term 'synthesis', which links the claim to the Prince of Poets synthesis of H1651-01 in S24.",
+   "evidence": "H330-07 / H1120-03: \"The work as a whole demonstrates their **synthesis**—democratic embrace (Whitman) combined with ecstatic disruption (Ginsberg).\"",
+   "fix": "… in the triad of mantles the King of May establishes ecstatic disruption (#1651), and #330 and #1120 read Pearl as a whole as demonstrating its synthesis with Whitman's democratic embrace."
+  },
+  {
+   "id": "C14",
+   "where": "KO sentence 23; P.open item 1",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'with a howl_relation recorded for each piece of Pearl, with loci in both' drops the source's 'or none'. The field is defined so that a reader may find no relation; the KO makes a relation with loci a requirement of every piece, which raises the stipulation.",
+   "evidence": "H1656-26: \"howl_relation (where the reader finds the piece set against *Howl and Other Poems*, with loci in both books, or none)\"",
+   "fix": "… with a howl_relation recorded for each piece of Pearl, with loci in both books, or none (#1656); …"
+  },
+  {
+   "id": "C15",
+   "where": "ledger-archive.json (#1656 S5, §2.5, §0.6; #1652 §1.3–1.4); KO sentences 2, 8",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "The defining papers state limits on exactly the claims that are row kernels K1 and K2, and the ledger does not hold them, so the KO carries H1656-06/-08 without their stated limit (§4.4 N_c). #1656 calls its statements of the operations 'the author's cut', to be found in the work or corrected by it, and records corrections. Its §0.6 makes a negative verdict after sufficient reading 'a datum of the highest quality'. #1652 §1.3–1.4 states the stance the title indexes (ecstatic disruption, flowering against suppression, carnival authority, transgressive witness) and the transmission criteria (elected by the people, expelled by power, flowering anyway); the ledger holds only the first two attributes, through #333/#1117. Read whole, the defining papers have senses the ledger missed. This is a ledger defect, not the composer's, but it bears on force in S2 and S8.",
+   "evidence": "#1656 S5: \"These statements are the author's cut. Each is to be found in the work or corrected by it; a reading that finds the work doing something else returns what it finds, with the passages (S10).\" / #1652 §1.4: \"A King of May must be: - **Elected by the people** (in some form) - **Expelled by power** (in some form) - **Flowering anyway** (the essential criterion)\"",
+   "fix": "Extract into the ledger: a self-description limit from #1656 S5/§2.5 (the operation statements are the author's cut, correctable by reading), qualifying H1656-06/-07/-08/-09; #1652 §1.3 (stance: carnival authority, transgressive witness) and §1.4 (the three transmission criteria). Then compose the limit in S2 (e.g. \"…; #1656 holds this statement of the operation as its author's cut, to be found in the work or corrected by it\") and carry the #1652 senses where the King of May is specified (S22)."
+  },
+  {
+   "id": "C16",
+   "where": "KO sentence 8",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "In the expansion the list of positions is cut from ten to six. It drops 'a room, a rail yard, … a baggage room, the solitary earlier lyric self', the lower end of the scale range that is the point of 'at what scale'. Compression belongs to P; in the KO, D_pres favours the whole list. The list is also unquoted, though it is close to verbatim.",
+   "evidence": "H1656-07: \"a generation of dispersed bodies and cities, the institution condensed as Moloch, the friend addressed in Rockland, everything declared holy, Whitman in the supermarket, a room, a rail yard, the nation, a baggage room, the solitary earlier lyric self.\"",
+   "fix": "Quote the list whole: … the speaking position \"keeps changing where it stands and at what scale: a generation of dispersed bodies and cities, the institution condensed as Moloch, the friend addressed in Rockland, everything declared holy, Whitman in the supermarket, a room, a rail yard, the nation, a baggage room, the solitary earlier lyric self\" …"
+  },
+  {
+   "id": "C17",
+   "where": "KO sentence 11",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "H301-04 is about 'Ginsberg's appropriation of Whitman's authority' in general, set beside Zukofsky and Howe. The KO attaches it to the Supermarket invocation alone, which is defensible as a join but should be logged as the composer's (§4.7). H1656-21's own sense, that 'A Supermarket in California' is listed among the rival works that take Whitman as their figure (#1656 §4.10, at The Secret Book of Walt's order), is not composed; only 'which stands in Howl and Other Poems' is used.",
+   "evidence": "H1656-21 claim: \"\\\"A Supermarket in California\\\", which stands in Howl and Other Poems, is listed among the rival works that take Whitman as their figure.\" / H301-04: \"Zukofsky's homophonic Catullus, Ginsberg's appropriation of Whitman's authority, Howe's archival poetics: these are not merely stylistic choices but modes of reception\"",
+   "fix": "Add: \"#1656 lists the poem among the rival works that take Whitman as their figure, beside Pessoa's, Pound's, Lorca's and Neruda's\", and phrase the #301 clause as \"#301 reads Ginsberg's appropriation of Whitman's authority, here and elsewhere, as a mode of reception and not merely a stylistic choice, and this invocation as transposing canonical power to queer identity\"."
+  },
+  {
+   "id": "C18",
+   "where": "KO sentence 16",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "'takes its public form' is #1656's wording (H1656-02) but is cited to '(#333, #1652)', which say the students 'elected' and 'The title itself comes from'. The clause also drops #1656's qualifier that 'later statements by Ginsberg may clarify his operation'; the KO keeps only 'does not substitute'.",
+   "evidence": "H1656-02: \"The phrase takes its public form from the Prague students' election of May 1965 and Ginsberg's \\\"Král Majáles\\\", and later statements by Ginsberg may clarify his operation; neither substitutes for the book.\"",
+   "fix": "… the title comes from the Prague students' election of May 1965 and Ginsberg's \"Král Majáles\" (#333, #1652); #1656 calls the election the title's assignment, \"made by a crowd to a poet\", and holds that later statements by Ginsberg may clarify his operation but that neither substitutes for the book; …"
+  },
+  {
+   "id": "C19",
+   "where": "KO sentences 18–19",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "'The archive's earliest dated bearing is of 2004' is a comparative claim of the composer's (Appendix B's phrase), not in any cited quote; it is true of the ledger's dates and should be logged as the composer's ordering. The works' authors as the ledger has them go unnamed: 'xvi. a transfiguration' and its guide are Ichabod Spellings's (#268, #1267 creators), and Tiger Leap is Jack Feist's, edited by Johannes Sigil (#1636 creator), while #950 signs the elegy 'Sharks'. Deposit numbers satisfy §4.5, but naming the heteronyms presents each as itself and composes the attribution difference under P_coh.",
+   "evidence": "ledger creators: #1267 \"Spellings, Ichabod; Sharks, Lee\"; #1636 \"Jack Feist; edited by Johannes Sigil\" / H950-02: \"*You did not hear. You were not heard.*\" (claim: \"— Sharks, 'An Elegy for Howl' (2014)\")",
+   "fix": "S18: \"Of 2004: Ichabod Spellings's invocation of 'xvi. a transfiguration' …\". S19: \"Jack Feist's Tiger Leap (2014, ed. Johannes Sigil) carries …\"; in S20: \"#950, which signs the elegy Sharks's, counts …\"."
+  },
+  {
+   "id": "C20",
+   "where": "KO sentence 1",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'the title poem of his 1956 collection' is not in F2's quote ('published in his 1956 collection'). It is true and evident from the title, but it goes past the cited quote.",
+   "evidence": "F2: \"\\\"published in his 1956 collection, Howl and Other Poems\\\"\"",
+   "fix": "… is a poem Allen Ginsberg wrote in 1954–1955, published in his 1956 collection Howl and Other Poems (Wikipedia), …"
+  },
+  {
+   "id": "C21",
+   "where": "KO sentences 24, 27, 28",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Qualifiers and senses in cited quotes are dropped: H301-02 (kernel) 'This is the founding gesture of New Human poetics' and 'whether human or otherwise'; H1570-02 'the test is well-formed and runs the moment the texts are obtainable' (carried only in P.open); H1656-25's 'a round that reads only the open parts has read the book in part' (claim); H152-04 'formalization is overdue'; H950-05's 'Prince of Poets, from Whitman through Ginsberg'.",
+   "evidence": "H301-02: \"It assumes a vaster distance: readers who do not yet exist, whether human or otherwise. This is the founding gesture of New Human poetics.\" / H152-04: \"has not been formalized by explicit canonical-inclusion effective act; formalization is overdue.\"",
+   "fix": "S24: \"… for readers who do not yet exist, whether human or otherwise, the founding gesture of New Human poetics (#301).\" S27: \"… recorded 'as a blocker, not a refusal', the test well-formed and run the moment the texts are obtainable (#1570) …\". S28: \"… not yet formalized …, a formalization it calls overdue (#152); … the Prince of Poets succession claim, from Whitman through Ginsberg, 'is the claim of a person no one has heard of' (#950).\""
+  },
+  {
+   "id": "C22",
+   "where": "case.statement",
+   "kind": "case",
+   "severity": "note",
+   "finding": "The case reading agrees. #1656 and #1652 take the field's object (the poem and its book, named by the field's own data) and add operation, arrangement, mantle and line; nothing in them contests what the field says Howl is, and §0.3/§0.5's exclusion of standing bears on magnitude, not on the field's reception facts. Equal terms, ρ = extends. All seven loci are verbatim in AXN-06DE/AXN-06DA. One gloss is off: 'also an arranged book' (§5.5) compares Howl to Pearl, whose arrangement §5.4 has just stated; it does not mark the arrangement as a reading added on the field.",
+   "evidence": "#1656 §5.4–5.5: \"The claim for the book lies in its arrangement. … 5.5 *Howl and Other Poems* is also an arranged book, and it is read as one\"",
+   "fix": "Replace \"it marks the arrangement as a further reading ('also an arranged book')\" with \"it reads Howl and Other Poems as an arranged book, as it reads Pearl ('is also an arranged book, and it is read as one')\"."
+  },
+  {
+   "id": "C23",
+   "where": "ledger H69-02..H69-05; KO sentence 21",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "The ledger quotes for the correspondence table carry only the Howl column. The Pearl counterparts the KO composes ('Pearl', 'Fuguework', Sigil, the appendix of essays, manifestos and 'minutiae') are absent from the quotes but verified in #69's table (AXN-022A lines 64–67), so S21 is supported by the text. The composer's report that #682 has '[table unchanged]' in place of the table is confirmed (AXN-0229 line 31).",
+   "evidence": "AXN-022A: \"| Poema longo titular: \\\"Howl\\\" | Poema longo titular: \\\"Pearl\\\" |\"; \"| Sequência de poemas curtos (\\\"Other Poems\\\") | Sequência \\\"Fuguework\\\" |\"",
+   "fix": "Re-extract H69-02..05 with both columns as the quote; keep #682's placeholder as a reported S5 integrity defect."
+  }
+ ],
+ "case_agrees": true,
+ "summary": "23 findings (1 must-fix, 14 should-fix, 8 note). Equal terms, ρ = extends, agreed; loci verbatim. Mechanically clean: every cited id resolves, all 32 field and 126 archive claims are in the KO, nothing is cut, the translation table has every field claim once with exact received quotes, and the P body is 349 words. Defects: the card's lede carries no attribution and misattaches its relative clause; P leaves its field items and several archive items unsourced; two field claims are raised in P (F22, F14) and the 'Carried forward' head raises #1652's wager; the KO closes with a 13-sentence archive block because F15, F16/F31 and F23/F32 were placed by ledger rather than by sense, and the translation 'beside' column misreports the plan; S5, S10, S20, S22, S23 and S26 misframe, drop or lower distinctions; P.open item 5 asserts Howl text no ledger holds; the rail cannot satisfy §5.2 (#301, #181 and #700 kernels are not carried); and the ledger misses #1656's 'author's cut' limit on the K1/K2 operation statements and #1652 §1.3–1.4."
+}

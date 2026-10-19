@@ -1,0 +1,211 @@
+{
+ "row": "germany-role-wwii",
+ "checker": "Claude (independent check subagent), 2026-10-18, against field.json (65 claims), ledger-archive.json (106 claims), the row file's KO_B, spec AXN-0700 v0.9, and the defining papers #1669 (AXN-06EB) and #1668 (AXN-06EA), both read",
+ "mechanical_checks": {
+  "translation_rows_verbatim": "65/65 field quotes are verbatim substrings of their row's received column; every field claim is in exactly one row; none missing",
+  "ko_coverage": "every field id (65) and every archive id (106) is cited by at least one KO sentence; no KO id outside the ledgers",
+  "kernels": "field kernels (F1, F2, F13, F14, F21, F24, F27, F28, F34, F36, F40, F43, F44, F45, F46, F54, F60, F63, F64) and archive kernels (Z1669-14, -95, -96) are in the KO, and none is in the cuts list",
+  "p_coverage": "every ledger id is in P (lede, items or open block) or in the cuts list",
+  "opening_run_5_10": "no KO_B sentence survives in the KO at 0.95 or above (highest is KO_B 2 to KO 2 at 0.72, by difflib ratio); no opening run",
+  "case_loci_verbatim": "all six case loci are verbatim: #1669 §0.8, §1.6, §11.5, §9.7, §12 ¶2; #1668 §0.8"
+ },
+ "findings": [
+  {
+   "id": "C1",
+   "where": "KO sentence 17",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "The 700,000 / six million / 2.2 million peak figures are made to fall under 'by Hachtmann's caveat'. In #1669 they are not Hachtmann's. The ledger gives them as #1669's own statement, and #1669 sources them to Spoerer (§3.4, §6.6, note 6). Hachtmann's caveat (Z1669-53) is only the minority and the 1942–44 span.",
+   "evidence": "Z1669-57 quote: \"Camp prisoners were a small part of the foreign labor force: about 700,000 against about six million civilians and 2.2 million prisoners of war at the peak.\" #1669 §3.4: \"At the late-war peak about nine million foreign workers and prisoners were present at once: about six million civilians, 2.2 million prisoners of war and about 700,000 camp prisoners.[^6]\" (note 6 = Spoerer 2008)",
+   "fix": "Split the clause: \"...for by Hachtmann's caveat only a minority of camp prisoners was used in industrial production, from late 1942 to mid-1944; camp prisoners, #1669 states, were a small part of the foreign labor force, about 700,000 against about six million civilians and 2.2 million prisoners of war at the peak;...\""
+  },
+  {
+   "id": "C2",
+   "where": "P section 'Conquest as labor', item 'People, not land:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The label makes #1669 say people instead of land. #1669 says land and then people: the empire for land also became a labor supply. The label pushes the archive's claim past its own wording, which is a raised force (§4.4, §5.3).",
+   "evidence": "Z1669-19: \"Lebensraum answered with land. What conquest delivered to the factory, from 1940 onward, was people. Labor became a binding constraint, and the empire pursued for land, settlement and racial reordering also became a mechanism for supplying it.\"",
+   "fix": "Label 'Land, then people:' with text \"Lebensraum answered with land; what conquest delivered to the factory from 1940 was people (#1669).\""
+  },
+  {
+   "id": "C3",
+   "where": "KO sentence 23; P section 'Why Germany lost', item 'Conquest unpaid:'; open item 3",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The KO keeps only the first part of Z1669-80, 'not necessarily representative cases'. It drops the part that matters most: involvement in the system often had political and social causes, not only economic ones. Z1669-81 (value explains why a firm took prisoners, access explains which firms got them) rests on that part, so as composed Z1669-81 follows from nothing. In P, 'forced labor often did not pay' loses the representativeness limit altogether.",
+   "evidence": "Z1669-80 quote: \"These are not necessarily representative cases, but they point to something important: involvement in the slave labor system frequently had political and social causes rather than exclusively economic ones.\"",
+   "fix": "KO 23: \"...calling these 'not necessarily representative cases' that show involvement in the slave labor system 'frequently had political and social causes rather than exclusively economic ones', and #1669 holds that value explains why a firm took prisoners and access explains which firms got them.\" P: \"forced labor in many cases did not pay for itself, in cases Hayes calls not necessarily representative (Hayes, via #1669).\""
+  },
+  {
+   "id": "C4",
+   "where": "KO sentence 17 (Z1669-59)",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The KO quotes only the last clause of the tribunal's finding. It drops the tribunal's own limit, that the camp may not have been the deciding factor in choosing the site. This is 'limit dropped': the clause carries more than the tribunal found.",
+   "evidence": "Z1669-59 quote: \"while the camp may not have been the determining factor in selecting the location, it was an important one and, from the beginning, it was planned to use concentration-camp labor to supplement the supply of workers.\"",
+   "fix": "\"at Auschwitz the IG Farben tribunal found the camp, though perhaps not the determining factor in the choice of site, 'an important one', and that 'from the beginning, it was planned to use concentration-camp labor to supplement the supply of workers'\""
+  },
+  {
+   "id": "C5",
+   "where": "KO sentences 25–28 (closing run); order against §4.1, §4.7",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "The KO ends with four archive-only sentences: the Holocaust limit and the non-claims, colonial continuity, Arendt's frame, and the EVZ payments with the source grades and relations. They come after the field-only defeat cluster (22, 24), so the KO closes with the archive as a block. That is the shape §4.1 rules out in the equal-terms case. The order does not come from dependency. #1669 says its Holocaust limit 'governs §9', which is the material of KO 20–21. Colonial continuity and Arendt's frame belong to the colony sense in KO 9 (Z1669-11 is already there) and KO 11. Sentences 1–24 interleave well; only the tail is a block.",
+   "evidence": "Z1669-14: \"The Holocaust is larger than this labor history. That limit governs §9.\" Z1669-11: \"The colonial reading of Nazism has three parts... (a) The East as colonial empire is the least contested.\" (parts b and c are composed only in KO 25–26)",
+   "fix": "Put KO 25 straight after KO 21, so the limit closes the annihilation sense. Put KO 26 after KO 9, completing the three-part colonial reading. Put KO 27 after KO 11, or join it to 'the colony entered the factory'. Keep the defeat cluster (22–24) as the close, with KO 28's source grades and relations either folded into the sentences they grade or kept last as a short apparatus sentence. Log these moves as coordinating acts (§4.7)."
+  },
+  {
+   "id": "C6",
+   "where": "P lede",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "The lede names a source only for the archive claim (#1669). The field claims F1 (war state, invasion of Poland) and F34 (caused in part by the Depression and First World War tensions) appear with no source, against §4.5. Leaving out the field's attribution while giving the archive's is uneven treatment on the card (§5.8).",
+   "evidence": "Lede: \"is that of a Nazi war state's war of conquest, begun by invading Poland in 1939 and caused in part by the Depression and tensions left by the First World War; that state was ... (#1669).\"",
+   "fix": "\"is that of a Nazi war state's war of conquest, begun by invading Poland in 1939 (National WWII Museum) and caused in part by the Depression and tensions left by the First World War (History.com); that state was an advanced industrial power for which labor became a binding wartime constraint, and its land program, Lebensraum, was turned in practice into a labor supply (#1669).\""
+  },
+  {
+   "id": "C7",
+   "where": "P section 'Lebensraum, a continental colony', item 'Relocated:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'the colonial relation moved overseas to continent' is garbled. It can be read as the relation moving overseas, the reverse of the claim.",
+   "evidence": "Z1669-25: \"The colonial relation was relocated from overseas to the continent.\"",
+   "fix": "\"the colonial relation moved from overseas to the continent (#1669).\""
+  },
+  {
+   "id": "C8",
+   "where": "P section 'Limits', item 'Contested:'",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "'annihilation through labor' has no source. Z1669-10 names the positions and their holders, and #1669 grades them as cited through Wikipedia (Z1669-99).",
+   "evidence": "Z1669-10: \"Hermann Kaienburg and Miroslav Kárný treat annihilation through labor as a consistent SS goal; Falk Pingel holds that the phrase should not be applied to all prisoners; Jens-Christian Wagner calls it a metaphor of moral indignation\"",
+   "fix": "\"Windhoek to Auschwitz (Zimmerer against Kramer); annihilation through labor (Kaienburg and Kárný; Pingel; Wagner, via #1669).\""
+  },
+  {
+   "id": "C9",
+   "where": "KO sentence 9 (Z1669-11)",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "'the East as colonial empire is the least contested part of the field's colonial reading of Nazism' is in the narrator's voice. It is an attributed claim, #1669 reporting the field's verdict. Sentence 9's '(#1669)' closes the RKF clause and '#1669 holds' governs only Z1669-25, so this clause names no source.",
+   "evidence": "Z1669-11 (attributed): \"The colonial reading of Nazism has three parts, and the field gives each a different verdict. (a) The East as colonial empire is the least contested.\"",
+   "fix": "\"...the East as colonial empire is, by #1669's report of the field, the least contested part of the colonial reading of Nazism, and the colonial relation, #1669 holds, was relocated from overseas to the continent.\""
+  },
+  {
+   "id": "C10",
+   "where": "KO sentence 5 (Z1669-38)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Z1669-38 drops its condition. The claim (Hachtmann) holds under full employment from 1934–35, with skilled metalworkers scarce; the KO keeps only 'increasingly attractive'. Also, '#1669, with Rüdiger Hachtmann, finds' runs #1669's interpretation (Z1669-15) together with Hachtmann's attributed claims (Z1669-36, -38).",
+   "evidence": "Z1669-38 claim: \"Hachtmann: with full employment from 1934–35, organization that replaced qualified with unqualified workers became attractive.\"",
+   "fix": "\"...and, with full employment from 1934–35, Hachtmann writes, forms of work organization that promised to replace qualified workers with unqualified ones became increasingly attractive.\""
+  },
+  {
+   "id": "C11",
+   "where": "KO sentence 6 (F41)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'Hitler counted on their reluctance' makes 'their' refer to Britain and France from the clause before. F41 says Britain and Europe.",
+   "evidence": "F41: \"Hitler counted on the reluctance of Britain and Europe to intervene, for fear of another war.\"",
+   "fix": "\"Hitler counted on the reluctance of Britain and Europe to intervene, for fear of another war (USHMM)\""
+  },
+  {
+   "id": "C12",
+   "where": "KO sentence 10 (F52 with F60)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'650,000 Italian soldiers among them' places the Italians inside Evans's 8 million by mid-1944. No cited quote says so; it is a coordinating act the plan does not log.",
+   "evidence": "F52: \"Following the armistice, they seized 650,000 Italian soldiers and shipped them off to Germany as forced labourers to join millions of others drafted in from Poland and the Soviet Union...\"",
+   "fix": "Replace 'among them' with a separate clause: \"after the armistice 650,000 Italian soldiers were shipped to Germany as forced labourers to join millions drafted from Poland and the Soviet Union (Evans, The Guardian)\"; or log the join under §4.7."
+  },
+  {
+   "id": "C13",
+   "where": "KO sentence 14 (F43); KO sentence 27 (Z1669-92/94); KO sentence 28 (Z1669-70)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Three phrases rest on ledger paraphrases or on #1669's text, not on the cited quotes: 'at the killing centers' (in F43's claim, not its quote); 'Its frame is Hannah Arendt's continental imperialism' (#1669 §11.4, 'the frame this paper needs', which is not in the ledger); 'as a set of legal categories' (#1669 §8.4, first sentence, not in Z1669-70's quote). Each is true to the source text. Each is outside the frozen quotes the audit reads.",
+   "evidence": "F43 quote begins \"Those whom the SS judged unable to work were killed...\"; Z1669-70 quote: \"The EVZ Foundation paid more than 1.66 million former forced laborers in 98 countries a total of €4.4 billion between 2001 and 2007.\"",
+   "fix": "Either reword to what the quotes carry (\"the SS, USHMM states, killed those it judged unable to work...\"; \"#1669 extends Arendt's continental imperialism...\"; \"The classification outlived the regime in compensation...\"), or record these as ledger extraction gaps for a re-extraction of #1669 §8.4 and §11.4."
+  },
+  {
+   "id": "C14",
+   "where": "KO sentence 25 (Z1669-09 with Z1669-84)",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "'by Gerwarth and Malinowski's statement ... gives it no colonial or economic cause' credits G&M with the economic non-cause. Z1669-09, G&M's statement, is about colonial causation only. 'No economic cause' is #1669's own summary (Z1669-84, §9.8, under note 10).",
+   "evidence": "Z1669-09: \"the standard accounts of Nazi anti-Jewish policy, by Longerich, Browning and Friedländer, give no colonial causation, and the large literature on German antisemitism has not found colonial racism to be an influence.\"",
+   "fix": "\"the standard accounts, by Gerwarth and Malinowski's statement that #1669 reports, give no colonial causation, and the field, #1669 states, finds the Holocaust's causes in Nazi anti-Jewish policy and gives it no colonial or economic cause\""
+  },
+  {
+   "id": "C15",
+   "where": "KO sentence 24 (F65)",
+   "kind": "force",
+   "severity": "note",
+   "finding": "The byline claim (F65) is set as an appositive to an attribution, 'the turning point of the war for Evans, regius professor of modern history at Cambridge'. There it works as a credential beside the claim, which §4.2 keeps out of composition. F65 has to be carried (C_ex), but as authorship of B8, not as standing.",
+   "evidence": "F65: \"Richard J Evans is regius professor of modern history at Cambridge University.\"",
+   "fix": "Carry F65 where B8 is first named, as authorship: \"(Evans, writing in The Guardian, where he is given as regius professor of modern history at Cambridge)\", or on the B8 rail card only, and drop the appositive from the Stalingrad clause."
+  },
+  {
+   "id": "C16",
+   "where": "case.statement",
+   "kind": "case",
+   "severity": "note",
+   "finding": "The case statement says #1668 'supplies the grammar (noun, verb, switch)'. #1668 supplies noun and verb. The switch is #1669's (§8.1); 'switch' does not occur in #1668. The case reading itself stands (see summary).",
+   "evidence": "#1669 §8.1: \"Slavery priced the noun. Fordism specified the verb. War Fordism kept the specified verb and made the noun a switch\"; #1668 opening: \"Under chattel slavery the worker was capitalized as a noun: the priced body. Under industrial management what was capitalized was the worker as a verb: timed motion.\"",
+   "fix": "\"#1668, the first half, supplies the grammar of noun and verb, which #1669 completes with the switch, and accepts its own field's reading in the same words.\""
+  },
+  {
+   "id": "C17",
+   "where": "rho.guard; KO sentences 10 and 23",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "The guard says F48/F59 (conquest that failed to pay) are composed under P_coh beside Z1669-19 (conquest delivering people). In the KO, Z1669-19 is in sentence 10 and F48/F59 are in sentence 23; only the Z1669-79 join is made and logged. The guard describes a joint the text does not make.",
+   "evidence": "rho.guard: \"Where an archive sense meets a field claim (F48/F59, conquest that failed to pay, beside Z1669-19, conquest delivering people; Z1669-79...)\"",
+   "fix": "Either cut the Z1669-19 pairing from the guard, or add to KO 23 a clause taking up Z1669-19 (\"while what conquest delivered to the factory was people (#1669)\") and log it."
+  },
+  {
+   "id": "C18",
+   "where": "translation rows F49; F28/F46; and the many rows 'beside Z1669-13'",
+   "kind": "translation",
+   "severity": "note",
+   "finding": "The 'beside' column does not always match where the KO places the claim. F49 (fuel) is listed beside Z1669-16 (the East as an answer to blockade), but F49 is in KO 22 and Z1669-16 is in KO 7. F28/F46 are listed beside Z1669-42 (Hachtmann's dead end), but they are in KO 22 and Z1669-42 is in KO 12. Twelve rows give Z1669-13 (the conventional reading accepted) as a default neighbour for claims it does not stand beside (Stalingrad, Lend-Lease, supply lines). Received quotes are all verbatim; only the neighbour column is affected.",
+   "evidence": "translation: F49 \"untranslated: composed as received beside Z1669-16\"; F28/F46 \"beside Z1669-42\"",
+   "fix": "Set each row's archive_claims to the archive ids in the same KO sentence or the next one (F49: none, or Z1669-42 if moved; F28/F46: none in KO 22), and use an empty list rather than Z1669-13 where no archive claim stands beside."
+  },
+  {
+   "id": "C19",
+   "where": "P open block, would_resolve of items 1, 2, 3, 5",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "These resolvers name items found only in #1669's Open verification items, not in the cited quotes: Nuremberg 654-PS and the Goebbels–Thierack exchange of 14 September 1942 (item 17); Eckert (item 21); Wagner, IG Auschwitz p. 290 (item 13, in Z1669-79's paraphrase only); Jochmann (1980) and Picker (item 7). They are accurate to #1669 and outside the ledger the audit reads.",
+   "evidence": "#1669 Open verification items 7, 13, 17, 21",
+   "fix": "Keep them, and add each item's locus to rests_on as '#1669 Open verification item n', or add those items to the archive ledger at the next extraction."
+  },
+  {
+   "id": "C20",
+   "where": "cuts (Z1669-08)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Z1669-08 (USHMM's definition of the Holocaust) is flagged constitutive and is cut from the P body. §4.6 requires a constitutive cut to be logged with both readings of the flag. The cuts entry logs no reading. Nothing is lost from the KO (it is in KO 25).",
+   "evidence": "ledger Z1669-08: kind definition, const true; cuts: {\"claims\": [\"Z1669-02\", \"Z1669-08\", \"Z1669-85\", \"Z1669-86\"], ...}",
+   "fix": "Add to that cuts entry: \"Z1669-08 constitutive (first-pass reading); second reading not yet extracted (§3.8, ledger unaudited)\"."
+  },
+  {
+   "id": "C21",
+   "where": "coverage (C_ex) against #1669",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "C_ex holds against the ledgers: every claim in both ledgers is composed. The composer's own report of extraction gaps in #1669 checks out on reading: §0.1 USHMM's planned mass starvation of over 30 million (bears on F56); §4.5 allocation following political standing (Z1669-81's 'access' depends on it); §5.1 Herbert's four-tiered wage system; §6.3 Monowitz as the model for satellite camps; §0.2 camp counts. Also unextracted: §0.6 Gerwarth and Malinowski on the break with colonial tradition, Eckert's 'no direct path', and Evans on Baranowski. The row's status names Eckert and G&M as on record in #1669. These are ledger defects, not composition defects.",
+   "evidence": "#1669 §4.5: \"Allocation followed political standing.\" §0.6(b): \"Andreas Eckert ... is 'quite clear that there was no direct path \"from Windhoek to Auschwitz\".'\"",
+   "fix": "Report for re-extraction of the archive ledger; no change to the composition until then."
+  }
+ ],
+ "case_agrees": true,
+ "case_reasoning": "ρ = extends, equal-terms case, agreed. #1669 §0.8 accepts the conventional reading (§0.1–0.7) whole and names its object as an addition on the field's own entity: the form of the labor relation. Its senses rest on field scholarship it reports (Herbert, Hachtmann, Spoerer, Hayes, Nelson, USHMM). §9.7 gives the field's own name for its central tension (Hayes's 'mutually negating desires'). §11.5 calls the paper an extension of Arendt's frame. §12 ¶2 states its non-claims, so nothing in the field's ontology is contested. The witness case needs an ontology no other source makes available; the paper itself shows the field already holds this one. A reader of the same two papers would decide the same way.",
+ "counts": {
+  "must-fix": 0,
+  "should-fix": 9,
+  "note": 12
+ },
+ "summary": "Equal-terms case and ρ = extends are supported by verbatim loci and agreed. Coverage, kernels, translation verbatim-ness and the opening-run check all pass. Nine should-fix items: the 700,000 peak figure credited to Hachtmann instead of Spoerer (C1); 'People, not land' raising Z1669-19 (C2); Hayes's political-causes limit dropped (C3); the tribunal's 'not the determining factor' dropped (C4); the KO closing with four archive-only sentences that belong with the annihilation and colony senses (C5); the P lede missing field attribution (C6); the garbled 'Relocated' item (C7); 'annihilation through labor' unattributed in P (C8); Z1669-11 unattributed in KO 9 (C9). Twelve notes."
+}

@@ -1,0 +1,188 @@
+{
+ "row": "literary-heteronym",
+ "checker": "Claude (Opus 5.5) independent checker, v0.9 CHECK-BRIEF",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "KO sentence 7 (and KO 9 clause '#348 holds heteronyms not masks')",
+   "kind": "force",
+   "severity": "must-fix",
+   "finding": "#348's stipulation is scoped to the archive's own framework; the KO drops the qualifier 'within the NH-OS framework' and composes it as a general definition of the heteronym ('The archive defines the heteronym as a function: heteronyms \"are not pseudonyms, masks, or personas\"'). Dropping a qualifier raises the claim (§5.3). The source's own text confirms the scope (AXN-0098 line 20, under the subtitle 'Authorial Emergence, Exhaust, and Excess within NH-OS').",
+   "evidence": "N348-01 quote: \"Heteronyms within the NH-OS framework are not pseudonyms, masks, or personas.\"",
+   "fix": "KO 7: 'Within the archive's own framework, NH-OS, #348 holds that heteronyms \"are not pseudonyms, masks, or personas\" but \"**authorial functions**\", authorship treated \"as a system, not a name\"; for #79 a heteronym is ...'. KO 9: '#348 holds the heteronyms of NH-OS not masks'."
+  },
+  {
+   "id": "C2",
+   "where": "KO sentence 7, opening clause",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'The archive defines the heteronym as a function' credits the definition to the archive as a whole. KO 9 then shows the archive's deposits disagree on exactly this point (#96 'A heteronym is a person.'), and the row status lists person/position as contested within the pool. The subject should be the deposits that state it (§4.5).",
+   "evidence": "N96-02 quote: \"A heteronym is a person.\"; N90-02 quote: \"The heteronyms are not separate persons; they are differentiated positions\"",
+   "fix": "Replace 'The archive defines the heteronym as a function:' with '#348 and #79 define the heteronym as a function:'."
+  },
+  {
+   "id": "C3",
+   "where": "KO sentence 35, clause 'in Pessoa \"The master position is constituted by dying.\", as \"The death of a heteronym is not failure. It is formal completion.\" (#348)'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The 'as' makes #348's NH-OS principle the explanation of Caeiro's death in Pessoa. No cited quote states that link. #348 is about heteronyms within NH-OS ('A new voice inherits what survives'), and #1572 [H2] gives Pessoa's case a different bearing: its heading reads 'AND THE DEATH OF THE MASTER IS NOT INDEPENDENT EVIDENCE' (AXN-0664 line 364). The join is the composer's coordinating act, it is not logged (§4.7), and it fails reverse entailment.",
+   "evidence": "N1572-02 context, AXN-0664: \"[H2] AND THE DEATH OF THE MASTER IS NOT INDEPENDENT EVIDENCE. Pessoa gives Caeiro a lifespan ... The master position is constituted by dying.\"; N348-04 context, AXN-0098 line 27: \"The death of a heteronym is not failure. It is formal completion. The archive seals. A new voice inherits what survives.\"",
+   "fix": "Split into two clauses: 'in Pessoa, #1572 finds, \"The master position is constituted by dying.\"; and #348 states, of heteronyms within NH-OS, that \"The death of a heteronym is not failure. It is formal completion.\"'. Optionally carry [H2]'s 'not independent evidence' bearing at the next ledger revision (it is not in the ledger now)."
+  },
+  {
+   "id": "C4",
+   "where": "KO sentence 14",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "Several clauses name no source (§4.5): the opening Caeiro clause (F51, B8 Poetry International), 'they \"collaborated on projects ...\"' (F20, B2 Poetry Society) and '\"There was considerable interaction among the heteronyms\"' (F52, B8). The only parenthetical naming Poetry International is attached to the last clause (F53). A reader would credit F51 to no one and F20 to Wikipedia.",
+   "evidence": "F51 (B8 ¶2): \"Caeiro, the first in the poetic trinity to emerge from Pessoa’s soul, was considered the Master of the other two and, indeed, of Pessoa himself.\"; F20 (B2 body): \"They also collaborated on projects (Crosse worked with his brother, I. I. Crosse)\"; F52 (B8 ¶5)",
+   "fix": "'Caeiro, Poetry International writes, \"the first in the poetic trinity ...\"; ... the Poetry Society account adds that they \"collaborated on projects (...)\", and Poetry International that \"There was considerable interaction among the heteronyms\" ...'."
+  },
+  {
+   "id": "C5",
+   "where": "P lede; P 'What it is' items 'The field:' and 'The archive:'; P items 'Positions:', '1914:', 'Interplay:', 'Counts:'",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "The compression attributes to ledger families ('The field gives it ...; the archive defines it ...'; labels 'The field:', 'The archive:'), and several items carry no source at all. A family is not a source (§4.5). The family split also brings back the field/archive division that the equal-terms lede is meant to compose away (§5.8: 'the definition composed from both ledgers').",
+   "evidence": "P lede: \"The field gives it its own supposed physique, biography and style; the archive defines it as an authorial function, attributable through its civil bearer and not reducible to it.\"",
+   "fix": "Lede: '... its own supposed physique, biography and style (Wikipedia); an authorial function, attributable through its civil bearer and not reducible to it (#940).' Rename the labels by content ('A character:', 'A position:') and name the source in each item, e.g. 'Interplay: they criticise, translate and meddle in Pessoa's life (Wikipedia, Poetry International)'; 'Positions: ... (Wikipedia; Lopes and later critics, #667)'."
+  },
+  {
+   "id": "C6",
+   "where": "P section 'What it is', item 'The line:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'pseudonyms are common' changes Steiner's claim: he says pseudonymous writing is 'not rare'. 'Not rare' becomes 'common', and the subject moves from writing to pseudonyms.",
+   "evidence": "F11: \"Pseudonymous writing is not rare in literature or philosophy (Kierkegaard provides a celebrated instance).\"",
+   "fix": "'Steiner: pseudonymous writing \"not rare\"; heteronyms \"exceedingly strange\".'"
+  },
+  {
+   "id": "C7",
+   "where": "P section 'Pessoa's system', item 'Counts:'",
+   "kind": "force",
+   "severity": "note",
+   "finding": "The bare figures '70, 72, 75, over 100' drop each source's qualifier ('at least', 'approximately', 'about') and all four attributions. Only 'over 100' keeps its grade.",
+   "evidence": "F4 \"at least 70 heteronyms\"; N667-06 \"approximately seventy-two\"; F28 \"about 75 different names\"; F45 \"more than one hundred fictitious authors\"",
+   "fix": "'at least 70 (Lopes), about 72 (#667), about 75 (Studi Irlandesi), over 100 with the childhood figures (Zenith); \"only three full-fledged\".'"
+  },
+  {
+   "id": "C8",
+   "where": "P section 'Origin and lineage', item 'Yeats:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'partial heteronyms (#666, #667)': the term is #666's. #667 places Robartes and Hearne 'in a zone between heteronym and literary character' and does not call them partial heteronyms.",
+   "evidence": "N667-11: \"occupying a zone between heteronym and literary character\"; N666-05: \"partial heteronyms in the typology of EA-PKG-02\"",
+   "fix": "'partial heteronyms (#666); between heteronym and character (#667).'"
+  },
+  {
+   "id": "C9",
+   "where": "P section 'Measured', item 'Summed:'",
+   "kind": "force",
+   "severity": "note",
+   "finding": "The compression carries #1570's pooled-recovery finding without the limits #1570 states for it. KO 33 carries them; the compressed line does not, and N_c says the limits are composed because the source states them.",
+   "evidence": "N1570-02: \"Limits: ratio statistics carry a size confound; cross-language absolute comparison is shaky; Kierkegaard's seat holds four pseudonymous works of ~12.\"",
+   "fix": "'pooled, the heteronyms recover the orthonym; size-confounded, by #1570's own limits (#1570).' Add N1570-02 to the item's claims."
+  },
+  {
+   "id": "C10",
+   "where": "KO paragraphs 6–10 (sentences 22–35) against paragraph 3 (sentences 13–15); translation rows 6 and 7",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "The §5.10 breach does not occur (0 of 10 KO_B sentences survive). But the last fourteen sentences are an archive-only run (KO 26's Bowie clause, F14, is the one field claim), and several of those archive claims are about the field's own objects. N1570-03 says Caeiro's epithet '*the master*' is supplied by Mora, Campos and Reis, against F6, F37 and F51 (Caeiro the master). N1570-05/06 (a configuration instantiating master–student) bear on F5 and F20 (the heteronyms interacting). N1572-02 (Caeiro's master position constituted by dying) and N682-03 (Orpheu 1915) bear on the 1914 sense. These sit in paragraphs 6 and 10, not beside the field claims they bear on, so the archive's measured senses close the KO as a block (§4.1, §4.7: ordered together by sense). The translation table itself says F6/F37/F51 are 'composed as received beside N1561-01, N1572-02, N1570-03', and F5/F12/F20/F52/F34/F53 'beside N1570-05, N1570-06, N667-05'. The KO's arrangement does not do this, so the plan and the text disagree.",
+   "evidence": "translation row 6: \"untranslated: composed as received beside N1561-01, N1572-02, N1570-03\"; N1570-03: \"Every term by which Caeiro is known is ABSENT from Caeiro. Paganism, sensationism, objectivism, the master, sensibility — all supplied by Mora, Campos and Reis.\"",
+   "fix": "Move the N1570-03 clause and the N1572-02 clause into KO 14, after the Caeiro-as-master clauses, and the N1570-05/06 clause after the interaction clauses. Move N682-03 (Orpheu) into KO 13 beside N682-08. Keep KO 32–34's method and limit claims (N1560-03, N1570-01/02, N1572-04) where they are. Alternatively, amend translation rows 6–7 to match the KO as composed, and log the arrangement."
+  },
+  {
+   "id": "C11",
+   "where": "P section 'What it is'",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "The section's first items are ordered as field definition, then the line (field), then archive definition. This is a small instance of field-first-then-archive at the card's grain.",
+   "evidence": "items: \"The field:\" ... \"The line:\" ... \"The archive:\"",
+   "fix": "Compose one definitional item from both ledgers, e.g. 'Definition: a character with its own physique, biography and style (Wikipedia), writing from a constructed position (#667)', then the line, then person/position."
+  },
+  {
+   "id": "C12",
+   "where": "P compression, kernel coverage (§5.2); rail_order",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "Eight kernel claims do not appear in the compression's body or open block: N348-01, N667-13, N123-05, N136-02, N136-04, N203-02, N1569-01, N1572-01. rail_order lists the 64 lineage names (they match the ledger's lineages one to one) but has no snippets or claim ids, so the §5.2 check (kernel ids among rendered cards' claim ids or nested instances) cannot be run. N203-02 is a falsifier and N667-13 a stated limit.",
+   "evidence": "§5.2: \"every source's kernel ids must appear among the rendered cards' claim ids or their nested instances\"",
+   "fix": "Give each rail entry its snippet claim id(s) and nested instances, or add the eight kernels to body or open-block lines (e.g. 'Further: ... a typology claiming adequacy, not universality (#667)'; 'Antiquity: pseudepigrapha conceal, heteronyms do not (#123); falsifiable if heteronymy is shown inapplicable to ancient texts (#203)')."
+  },
+  {
+   "id": "C13",
+   "where": "KO sentence 22, 'a system with multiplicity but no paratextual recursion \"(Kierkegaard in part)\"'",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "The glosses of C1 as 'multiplicity' and C2 as 'paratextual recursion' are not in the cited quote. They are verbatim in #682 (AXN-0229 lines 61, 63), so the sentence is true to the source but not entailed by the ledger entry it cites.",
+   "evidence": "N682-02 quote: \"A pseudonymous system satisfying C1 but not C2 (Kierkegaard in part) is merely multi-pseudonymous\"; AXN-0229: \"C1. Multiplicity.\" / \"C2. Paratextual recursion.\"",
+   "fix": "Extend N682-02's σ to include the C1/C2 headings at the next ledger revision, or recast as 'a system satisfying C1 but not C2'."
+  },
+  {
+   "id": "C14",
+   "where": "KO sentence 29, '#68 lists, without reference to concealment, ...'",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'without reference to concealment' is the composer's coordinating claim. It sets #68 against #123's concealment criterion, it is entailed by no quote, and it is not logged as an arrangement (§4.7).",
+   "evidence": "N68-02 quote: \"**Inherited** — a disciple writes under a teacher's name (Second Temple scribal workshops; the Johannine community; the Pauline school)\"",
+   "fix": "Delete 'without reference to concealment', or log the juxtaposition N123-05 / N68-02 in the plan's arrangement."
+  },
+  {
+   "id": "C15",
+   "where": "KO sentence 19, '#68 calls heteronymic practice \"a 5,000-year technology ...\"'",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "In #68 the phrase is what its doctrine, the Secret Name, names: 'The Secret Name is the doctrine. It names ... that heteronymic practice is a 5,000-year technology'. The ledger quote begins at 'that'. The sentence is close to the source, but #68 states the claim as the content of its doctrine.",
+   "evidence": "AXN-0228 line 26: \"**The Secret Name** is the doctrine. It names the theological and theoretical principle: ... that heteronymic practice is a 5,000-year technology for creating new persons through naming.\"",
+   "fix": "'#68's doctrine of the Secret Name names heteronymic practice \"a 5,000-year technology for creating new persons through naming\"'."
+  },
+  {
+   "id": "C16",
+   "where": "P open block, items 'Did Pessoa invent ...' and 'Can how many makers ...', field 'modality'",
+   "kind": "force",
+   "severity": "note",
+   "finding": "The modality lines miscode two cited claims. N940-14 is self-description, but the archive is given as 'documented and interpretation'. N136-06 is a self-description limit, but #136 is given as 'hypothesis'.",
+   "evidence": "N940-14 modality: self-description; N136-06 modality: self-description (limit)",
+   "fix": "'documented (#1127), interpretation (#96), self-description (#940)'; 'hypothesis and a stated limit (#136); hypothesis (#1658)'."
+  },
+  {
+   "id": "C17",
+   "where": "P items 'The line:', 'The archive:', 'Gimmick or technology:', 'Not decisive:'",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Some items cite claims they do not state: F38 and F16 in 'The line'; N348-02 and N123-02 in 'The archive'; F47, F22 and F19 in 'Gimmick'; N1570-05 in 'Not decisive' (a configuration can instantiate master–student, not stated there). Citing an id the line does not state makes the per-line entailment audit unreadable.",
+   "evidence": "P 'Not decisive:' text: \"capture occurs in both classes; relation-type is not recoverable from lexical distribution (#1570, #1572)\"; claims [N1570-04, N1572-04, N1570-05]",
+   "fix": "Remove the unstated ids from each item's claims, or carry them on the rail entries for their lineages."
+  },
+  {
+   "id": "C18",
+   "where": "ledger-archive.json (N1570-04 locus; kernels)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Ledger defects, reported and not fixed. (a) The composer's defect (1) is confirmed: 'So capture is NOT DISTINCTIVE of heteronymy' stands under §36.7 Freud ← Sophocles (AXN-0662 lines 1760–1796); §36.8 is Ginsberg ← Kerouac, which is blocked. #1570 §36.9 gives the corrected status 'reception capture occurs in both classes; neither model has been shown to explain the Plato–Aristotle instance better', which agrees with KO 33's wording, so the KO needs no change. (b) 17 admitted deposits carry no kernel in the ledger (263, 1127, 404, 668, 68, 90, 761, 794, 165, 832, 859, 921, 584, 852, 1562, 1571, 1658), against §3.5 'Every admitted source has a kernel'. This is upstream of composition, but it means the §5.2 check cannot cover those sources.",
+   "evidence": "AXN-0662: \"## 36.7 FREUD ← SOPHOCLES — the non-practitioner control, RUN ... **So capture is NOT DISTINCTIVE of heteronymy.** It occurs in both classes.\"",
+   "fix": "Correct N1570-04 locus to '§36.7'; set kernel flags for the 17 deposits at the ledger audit (§3.8)."
+  },
+  {
+   "id": "C19",
+   "where": "case / ρ",
+   "kind": "case",
+   "severity": "note",
+   "finding": "All 10 case loci are verbatim in the named texts (checked mechanically, 10/10). Equal-terms with ρ = extends is supported. #667 and #682 present themselves as formalizing and extending Pessoa's own typology, and #666 says cross-substrate practice 'does not violate the typological structure'. The archive's sharpest contests (formalized, not invented; a heteronym is a person) have counterparts in B3 (F26, F31 on Yeats; F27 'a real man ... except ... being real itself'), so §0.10 does not apply. A reader of the same papers might weigh the Plato–Aristotle configuration (#123, #136, #1658) as a witness-type ontology, since it rules at the Theophrastus row. At this entity, though, #123 marks it 'an analytic category, not a claim about historical self-description', and #136/#1658 apply the category to antiquity without redefining the heteronym. I would decide equal.",
+   "evidence": "#123 §II: \"It is crucial to mark that this is an analytic category, not a claim about historical self-description.\"; #666 §5: \"The substrate dimension adds a new variable but does not violate the typological structure.\"",
+   "fix": "None."
+  },
+  {
+   "id": "C20",
+   "where": "KO sentences 21, 25 (#1569)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "#1569's kernel (N1569-01) and two further claims are composed from ledger quotes only; by the composer's note, the deposit (about 43k words) was not read whole. #1569 is not among E_A's defining papers, so the brief's requirement is met, but KO 25's 'corrects it' framing rests on the ledger's reading of Round 5 alone.",
+   "evidence": "composer notes: \"#1569 (EA-NOTEBOOK-01, about 43k words; one kernel claim, N1569-01) was not read whole\"",
+   "fix": "Read #1569 Round 5 in context before freeze, and confirm the corrected criterion is #1569's settled statement."
+  }
+ ],
+ "case_agrees": true,
+ "summary": "The literary-heteronym composition largely holds. All 256 quoted fragments in the KO and P are verbatim in the ledger quotes they cite. All 190 ledger claims (55 field, 135 archive) are carried in the KO, with no cuts. Every field claim is in exactly one translation row with its quote verbatim. The 10 case loci are verbatim and support equal / ρ = extends. One must-fix: #348's NH-OS scope is dropped (KO 7, 9). Should-fixes: attribution in KO 14 and the compression; the #348–Pessoa join in KO 35; the archive's measured claims on Caeiro and the master–student relation sit in a closing archive run, away from the field claims the translation table says they stand beside; P raises Steiner's 'not rare' and miscredits 'partial heteronyms' to #667; 8 kernels are not verifiable on the compression."
+}

@@ -1,0 +1,260 @@
+{
+ "row": "ml-classifiers-particle-accelerators",
+ "checker": "TACHYON (Claude) independent checker, v0.9 CHECK-BRIEF",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "KO sentence 22",
+   "kind": "entailment",
+   "severity": "must-fix",
+   "finding": "'the dominant discard is the Level-1 menu' is in neither cited quote (Q934-04, Q935-09) and carries no source in the sentence. The point is in the defining papers (#934 and #935), but the composition cites no ledger claim for it, so it reads as the composer's own assertion.",
+   "evidence": "Q934-04: 'At the LHC, the retained fraction of physical interactions is approximately $2.5 \\times 10^{-5}$ ... It does not demonstrate wrongdoing and should not be confused with an anomaly-trigger rejection rate.' Text #935 (AXN-03B2) l.217: '(A precision: the dominant discard happens at the broader Level-1 trigger menu rather than principally through the anomaly-detection components; ...'",
+   "fix": "Either extract #935 l.217 (and #934 l.208, the same parenthesis) as a ledger claim and cite it with attribution — '...; the dominant discard, #935 adds, happens at the broader Level-1 trigger menu rather than principally through the anomaly-detection components' — or cut the clause."
+  },
+  {
+   "id": "C2",
+   "where": "KO sentence 22",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "Only the negative half of Q935-09 is composed. Its positive claim, that the whole trigger system works as classifier-mediated foreclosure under a 'rate budget' justification that need not disclose what is foreclosed, is missing from the KO, the P body and the open block.",
+   "evidence": "Q935-09: 'it is that the entire trigger system, of which anomaly detectors are one component, operates as classifier-mediated foreclosure under a bureaucratic justification — \"rate budget\" — that does not require disclosure of what is being foreclosed.'",
+   "fix": "'...; #935's claim is not that anomaly detectors alone determine what physics can see but that the entire trigger system, of which they are one component, operates as classifier-mediated foreclosure under a bureaucratic justification, \"rate budget\", that does not require disclosure of what is being foreclosed.'"
+  },
+  {
+   "id": "C3",
+   "where": "KO sentence 20; P 'Foreclosure, graded' / 'Unbounded:'",
+   "kind": "force",
+   "severity": "must-fix",
+   "finding": "Q1450-01, a kernel claim, loses its governing condition ('unless the relevant off-support conditional retention functions are themselves constrained'), and in P 'no nontrivial lower bound' becomes 'no lower bound'. Without the condition the claim is unconditional, which raises its force (§5.3: dropping a qualifier is a breach).",
+   "evidence": "Q1450-01: 'Validation of each stage on its design and validation support establishes no nontrivial lower bound on R_end(Q) for a novelty distribution Q outside that characterized support, unless the relevant off-support conditional retention functions are themselves constrained.'",
+   "fix": "KO: '...establishes no nontrivial lower bound on end-to-end retention for a novelty distribution outside that support unless the off-support conditional retention functions are themselves constrained, ...'. P: 'stage validation sets no nontrivial lower bound on retention off support, absent constraints on off-support retention (#1450)'."
+  },
+  {
+   "id": "C4",
+   "where": "P 'Foreclosure, graded' / 'Unbounded:'",
+   "kind": "force",
+   "severity": "must-fix",
+   "finding": "'BAR bounds the OAR in neither direction (#931)' drops Q931-12's condition: for an unobserved Q, without explicit linking assumptions. As written it denies that any assumptions could ever link the two, which is stronger than #931 claims. Q931-12 is a kernel claim.",
+   "evidence": "Q931-12: 'BAR values neither upper- nor lower-bound OAR for an unobserved $Q$ without explicit assumptions linking the benchmark distributions to that $Q$.'",
+   "fix": "'without linking assumptions, BAR bounds the OAR for an unobserved Q in neither direction (#931)'."
+  },
+  {
+   "id": "C5",
+   "where": "P 'Built against it' / 'A control group:'",
+   "kind": "force",
+   "severity": "must-fix",
+   "finding": "'a content-independent sample is the least assumption-laden baseline' changes Q1453-01, a kernel and constitutive claim. #1453 compares the sample only with content-sensitive algorithms, under a finite storage budget, and requires a known inclusion probability. P turns that comparison into an unconditional superlative.",
+   "evidence": "Q1453-01: 'Under a finite storage budget, no content-sensitive algorithm can constitute a less assumption-laden baseline than a probability sample whose inclusion mechanism is independent of event content and whose inclusion probability is known.'",
+   "fix": "'under a finite budget, no content-sensitive algorithm is a less assumption-laden baseline than a content-independent sample of known inclusion probability; ...'"
+  },
+  {
+   "id": "C6",
+   "where": "KO sentences 12–13",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "Specifics in these sentences are not in the cited quotes: 'reads three scores off one set of fixed weights' (Q1456-01 has no number), 'surviving hierarchical uncertainty' (Q1456-06), and 'the published normalized-autoencoder remedy reduces the asymmetry on the LHCO pairs with a converged sampler' (Q1456-07 says only that 'the remedy works'). All three are verbatim in #1456 (AXN-05E1 l.39, l.41, l.97), but the ledger does not carry them.",
+   "evidence": "Q1456-01: 'With model weights fixed, changing the score function is sufficient to reverse the directional ordering of the anomaly relation.' Q1456-06: 'The constituent inversion survives with its entire interval below chance.' Q1456-07: 'On the LHCO pairs the remedy works, and the diagnostic says we may believe it'. Text l.41: 'the published normalized-autoencoder remedy reduces directional asymmetry on the low-dimensional pairs with a converged sampler'.",
+   "fix": "Add #1456 l.39/l.41 as ledger claims and cite them, or reduce the sentences to the quotes: '...finds that, with model weights fixed, changing the score function is sufficient to reverse the directional ordering ...; the constituent inversion survives with its entire interval below chance; on the LHCO pairs the remedy works, and the diagnostic says it may be believed (#1456)'."
+  },
+  {
+   "id": "C7",
+   "where": "KO sentence 19",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'#932 extends the homology to repository classification, summarization, ranking, moderation and clinical decision support' names domains that are not in Q932-10's quote. They are in #932 (AXN-03AF l.198), outside the ledger span.",
+   "evidence": "Q932-10: 'This is a homology hypothesis to be tested domain by domain, not an assertion that every classifier-mediated system instantiates identical mechanisms or rates.' Text l.198: '...plausible structural homologues in repository classification, web summarization, search ranking, content moderation, and clinical decision support.'",
+   "fix": "Extend Q932-10's span to the preceding clause of l.198 in the ledger, or write: '#932 holds its homology a hypothesis to be tested domain by domain, not an assertion that every classifier-mediated system instantiates identical mechanisms or rates'."
+  },
+  {
+   "id": "C8",
+   "where": "KO sentence 15",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'these measurements are not published in any form #1427's author has located' moves #1427's 'these measurements' onto #931's BAR and IAI. In #1427 the measurements are those of what the pipeline and the repository discard, and the scope it gives ('Not for the repository, and not ... for the classification pipelines of frontier experimental physics') is dropped. The cited id bears on a different object than the sentence gives it.",
+   "evidence": "Q1427-02: 'Here is the peculiar fact: these measurements are not published.** Not for the repository, and not, in any form this author has located, for the classification pipelines of frontier experimental physics.' Q1427-01: 'The unmeasured part is not whether model dependence exists. It is what the *pipeline* discards before analysis begins.'",
+   "fix": "'...; measurements of what a pipeline discards, #1427 writes, are not published, not for the repository and not, in any form its author has located, for the classification pipelines of frontier experimental physics, an absence that is not evidence of foreclosure but the condition under which foreclosure would be undetectable.'"
+  },
+  {
+   "id": "C9",
+   "where": "KO sentence 11",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Q932-08 is narrowed and so raised. 'Universal inference' becomes 'inference', and 'open-world assimilation' becomes 'assimilation'. #932 makes Finke et al. a counterexample only to universal inference.",
+   "evidence": "Q932-08: 'The Finke et al. (2021) result is the empirical counterexample to universal inference from single-direction anomaly-detection success. It does not, by itself, quantify open-world assimilation at the deployed LHC triggers.'",
+   "fix": "'...the result being, for #932, the empirical counterexample to universal inference from single-direction success, which does not by itself quantify open-world assimilation at the deployed triggers; ...'"
+  },
+  {
+   "id": "C10",
+   "where": "KO sentence 17",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The stipulated definition Q932-13 drops 'exclusively or dominantly', which broadens the definition (§4.2: compose the definition as the source gives it). The same sentence drops Q932-02's evidentiary basis (eight mechanisms, twelve institutional beliefs, published systems instantiating several of them). Q932-02 is a kernel and constitutive claim, and D_pres keeps the distinction it carries.",
+   "evidence": "Q932-13: 'a discriminative model, trained exclusively or dominantly on a known distribution of physical events, progressively loses the capacity ...'. Q932-02: 'The witnesses propose eight foreclosure mechanisms and twelve associated institutional beliefs; published trigger systems instantiate several of the mechanisms in their corresponding architectural forms; the institutional claims remain hypotheses for audit ...'",
+   "fix": "'...trained exclusively or dominantly on a known distribution of physical events...'; and 'Claim A, that foreclosure is structurally present in every classifier-mediated trigger architecture deployed at the LHC, its witnesses proposing eight foreclosure mechanisms and twelve institutional beliefs, published trigger systems instantiating several of the mechanisms, and the institutional claims remaining hypotheses for audit'."
+  },
+  {
+   "id": "C11",
+   "where": "KO sentence 21; P 'Built against it' / 'Irreversibility frontier:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The definition Q1452-01 (kernel, constitutive) drops its relativizing qualifier, 'For a specified scientific question and fidelity hierarchy'. Without it the frontier reads as a single absolute stage.",
+   "evidence": "Q1452-01: 'For a specified scientific question and fidelity hierarchy, define the **irreversibility frontier** as the earliest stage ...'",
+   "fix": "KO: '#1452 defines, for a specified scientific question and fidelity hierarchy, the irreversibility frontier as ...'. P: 'for a given question, the earliest stage where loss becomes unauditable; older than ML (#1452)'."
+  },
+  {
+   "id": "C12",
+   "where": "KO sentence 27",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Q1611-05 is limited to 'Under Claim A alone'. The sentence gives its finding generally, and 'dollar table' is not in the quote (the locus is '§4 toy cost').",
+   "evidence": "Q1611-05: 'Under Claim A alone — the small portion — the cell is not the finding; the finding is that L is the quantity the exclusion keeps unmeasured'",
+   "fix": "'...; under Claim A alone, #1611's toy-cost cell is not the finding, which is that the loss is the quantity the exclusion keeps unmeasured (#1611).'"
+  },
+  {
+   "id": "C13",
+   "where": "KO sentence 25",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Q1558-01 (kernel, documented) loses its 95% intervals, so 'measures a representation-blind class at 0.000' reads as exact. The KO is not under the length bound, so nothing forces the cut.",
+   "evidence": "Q1558-01: 'estimates the retention of a shifted class at 0.76 (95\\% interval [0.71, 0.81]) against a true 0.016, while the content-independent sample measures a deliberately representation-blind class at 0.000 [0, 0.073].'",
+   "fix": "'...at 0.76 (95% interval 0.71–0.81) against a true 0.016 while the content-independent sample measures a deliberately representation-blind class at 0.000 (interval 0–0.073)'."
+  },
+  {
+   "id": "C14",
+   "where": "P lede; P 'In operation' / 'APS injector:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The P lede has the field's classifiers already 'placed in an accelerator's operation (fault diagnosis, failure and faulty-beam prediction, anomaly identification, tuning)'. Most of those claims are explorations or proposals, and KO sentence 1 keeps their modality. 'APS injector: anomaly sources identified' likewise raises B1's 'explore the possibility'. The card shows this lede (§5.8).",
+   "evidence": "F1: 'We explore the possibility of using a Machine Learning (ML) algorithm to identify the source ...'; F12: 'we propose using machine learning approaches to predict machine failures'; F42: 'we explore the predictive power ... we propose a Machine Learning approach'; F17: 'we propose a Classifier-pruned ...'",
+   "fix": "Lede: 'are learned models explored, proposed or field-tested in an accelerator's operation (fault diagnosis, failure and faulty-beam prediction, anomaly identification, tuning) and deployed in its event selection, where AXOL1TL, CICADA and GELATO score events at the CMS and ATLAS Level-1 triggers.' APS item: 'anomaly sources explored; a classifier above 99% a few hours on; a proof of principle.'"
+  },
+  {
+   "id": "C15",
+   "where": "P 'Agnostic is not independent' / 'At the triggers:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'label-agnostic, a model stays selective about departures' turns Q1454-01's 'can ... while remaining' (a possibility) into an assertion about every such model.",
+   "evidence": "Q1454-01: 'A model can be agnostic with respect to signal labels during training while remaining highly selective with respect to the geometry, complexity, and representation of departures from its learned reference distribution.'",
+   "fix": "'a label-agnostic model can stay highly selective about departures (#1454)'."
+  },
+  {
+   "id": "C16",
+   "where": "P 'Contested within the archive' / 'No field for noncoverage:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Q1611-02 (kernel) and Q1611-03 are not contested in the ledger. Placing them under the head 'Contested within the archive' lowers their force by arrangement, a coordinating act (§4.7) that the ledger does not license.",
+   "evidence": "Q1611-02 modality 'interpretation', kernel true: 'Under R_0 the graph cannot represent noncoverage as a quantity, because R_0 has no field for it.' The pool's contested set in the row status names #935/#934, #932 W2, #1436/#1454, not #1611.",
+   "fix": "Move the 'No field for noncoverage:' item under 'Foreclosure, graded' or 'Built against it', or give it its own head; leave only the #935/#934 item under 'Contested within the archive'."
+  },
+  {
+   "id": "C17",
+   "where": "KO sentences 5 and P 'APS injector:'",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "F10 is a kernel claim with two parts, the limit (proof of principle) and the central hypothesis (the classifier may be useful in real life, if a magnet's current meter fails). Only the limit is composed, in the KO and in P.",
+   "evidence": "F10: 'Even though this was a proof-of-principle experiment, the obtained classifier may be useful in real life, if the current meter for one of the considered magnets (see Fig. 1) becomes faulty and stops reflecting the real magnetic field.'",
+   "fix": "KO s5 ends: '..., in what they call a proof-of-principle experiment, holding that the classifier may be useful in real life if the current meter for one of the magnets becomes faulty.' P: 'a proof of principle, possibly useful if a magnet's current meter fails.'"
+  },
+  {
+   "id": "C18",
+   "where": "KO sentence 6",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "F18 (kernel, constitutive, the only constitutive field claim) loses its purpose clause, 'to eliminate non-physical signals', in the KO. P keeps it.",
+   "evidence": "F18: 'The exploration history is filtered through a pretrained ResNet50 classifier to eliminate non-physical signals.'",
+   "fix": "'...filtering its exploration history through a pretrained ResNet50 classifier to eliminate non-physical signals, the classifier trained to about 0.99989 accuracy ...'"
+  },
+  {
+   "id": "C19",
+   "where": "KO sentences 3–7 and 9–27",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "The equal-terms case is not met in structure. Sentences 3–7 are a field-only run (operational senses, F11–F45), and from sentence 9 to the end (sentences 9–27) no field claim is cited, so the KO closes with the archive as a block. §5.10's similarity measure passes (0/9 KO_B sentences at ≥0.95) only because the field sentences were rewritten. Sentence 8 is the one point where the two ledgers are joined. The ledgers' senses are largely disjoint (the ρ guard), but the field's limits and validation claims have archive counterparts in the claim-boundary and validation senses.",
+   "evidence": "§4.7: 'neither ledger is placed first as a block'; §4.1: 'the knowledge object does not open with the field's composition and close with the archive's'. Field limit claims F10 ('proof-of-principle experiment'), F24 ('Currently, the method is implemented as a post-processing step'), F31 ('Additional results are under analysis').",
+   "fix": "Order by sense across both ledgers. Compose the field's stated limits (F10, F24, F31) and its within-distribution validation figures (F7, F9) in the paragraph of sentence 18 (claim boundaries) and beside sentence 15 (validation), each with its own source, juxtaposition only. Log the move as a §4.7 coordinating act, and do not assert that the archive's metrology applies to the field's systems (that question stays in the open block)."
+  },
+  {
+   "id": "C20",
+   "where": "case statement (row 'case')",
+   "kind": "case",
+   "severity": "note",
+   "finding": "The reading 'equal / ρ = extends' agrees with the defining papers, and all 12 case loci are verbatim in the named texts (checked by grep). A reader looking for the witness case would cite #1611 §1f: 'Under R_0 the graph cannot represent noncoverage as a quantity, because R_0 has no field for it. What R_H would supply is exactly that field.' The case statement does not consider this locus. It is declined on the same grounds as the others: R_0 there is the graph's standing representation, the same section gives model collapse (the spec's equal-terms exemplar) in the same R_0/R_H form, and #1611 §7.1 W5 and #1450 §3.4 place the problem within the field's own literature.",
+   "evidence": "#1611 (AXN-069B) §1f: 'Under R_0 the graph cannot represent noncoverage as a quantity, because R_0 has no field for it. What R_H would supply is exactly that field.'; §7.1 W5: 'the ML community's own OOD and open-set literature is the same problem under another name'",
+   "fix": "Add #1611 §1f to the case statement's considered-and-declined loci, with the reason above."
+  },
+  {
+   "id": "C21",
+   "where": "KO sentence 8; translation row 2",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Sentence 8 states 'mapping between a pair of sensors across the accelerator' but does not cite F42, which carries it (F42 is cited only in sentence 1). Translation row 2 places F42 beside Q931-09/Q1454-01, as sentence 8 does.",
+   "evidence": "F42: 'we propose a Machine Learning approach to model mapping from a pair of sensors located across the accelerator.'",
+   "fix": "Add F42 to sentence 8's claims."
+  },
+  {
+   "id": "C22",
+   "where": "KO sentence 1",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'in the CMS Level-1 Global Trigger' — Q1452-04's quote does not say CMS. CMS comes from Q931-01/Q932-07, which sentence 1 does not cite.",
+   "evidence": "Q1452-04: 'AXOL1TL is now deployed in the Level-1 Global Trigger as a real-time unsupervised, signal-agnostic event-level anomaly detector trained on Zero Bias data.'",
+   "fix": "Add Q932-07 to sentence 1's claims."
+  },
+  {
+   "id": "C23",
+   "where": "KO sentences 4, 6, 7",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Three small composer joins. (a) s4 places the 85%/78% of 'its first field test' (F27) inside 'a two-week test in March 2020' (F29); B4 gives these in separate sections and does not identify them. (b) s6 has HPSim 'designed to replicate the accelerator and the beam'; B3 says it replicates the accelerator and 'provides a realistic representation of the true beam'. (c) s7 gives the cDVAE's extrapolation (F38) to 'its adaptive diffusion model' (F36) without the ledger identifying the two.",
+   "evidence": "F27: 'In its first field test, ...'; F29: 'In a two-week test of the system in March 2020, ...'; F21: 'The software is designed to replicate the accelerator and, therefore, provides a realistic representation of the true beam used at ...'; F38: 'The cDVAE was able to extrapolate beyond the training data ...'",
+   "fix": "(a) Keep the two as separate clauses: 'in its first field test it identified ...; in a two-week test in March 2020 it analysed a few hundred faults'. (b) '...designed to replicate the accelerator and so to represent realistically the beam used at LANSCE'. (c) 'and the cDVAE extrapolated beyond its training data ...'."
+  },
+  {
+   "id": "C24",
+   "where": "KO sentences 6, 20",
+   "kind": "force",
+   "severity": "note",
+   "finding": "Asymmetric verbs. The field's documented result is cushioned ('it is reported to outperform', s6), while the archive's interpretation is raised ('#1450 observes', s20, for claims coded interpretation). Neither changes a claim's content, but §4.4 N_c asks for each source's own modality, in both directions.",
+   "evidence": "F22 modality 'documented': 'CBOL-Tuner demonstrates superior performance ... and outperforms alternative global optimization methods.' Q1450-01/-05/-04 modality 'interpretation'.",
+   "fix": "s6: '...it outperforms alternative global optimization methods (Rautela, Williams and Scheinker) ...'; s20: '#1450 holds that ...'."
+  },
+  {
+   "id": "C25",
+   "where": "KO sentences 12, 18",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Wording not in the quotes: 'assembly readings' (Q1455-04 says 'Two witnesses'), and the dropped 'simply' in 'no evidence that CERN discards novel physics' (Q932-17: 'simply discards').",
+   "evidence": "Q1455-04: 'Two witnesses described the run as unassailable, as proving the thesis, and as a pristine payload. Rejected:'; Q932-17: 'I found no evidence that CERN simply discards novel physics as bad detector data.'",
+   "fix": "s12: '#1455 rejects two witnesses' descriptions of the run as unassailable and as proving the thesis'; s18: 'no evidence that CERN simply discards novel physics as bad detector data'."
+  },
+  {
+   "id": "C26",
+   "where": "KO sentence 27; P 'No field for noncoverage:'",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Q1611-02 (kernel) is composed without its counts and its locus claim: 'the synthesis catalogues twelve' and 'the decisive epistemic acts now occur before any physicist sees an event'.",
+   "evidence": "Q1611-02: '... the synthesis catalogues twelve — and that the decisive epistemic acts now occur before any physicist sees an event.'",
+   "fix": "s27: '...a belief that prevents a mechanism from being measured, twelve of them catalogued by the synthesis, the decisive epistemic acts now occurring before any physicist sees an event, ...'."
+  },
+  {
+   "id": "C27",
+   "where": "KO (whole); field ledger",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "T_lib: no priority date is stated for any field claim, and the field ledger carries none except B4's March 2020 test and B5's 2025-01-16 page date. So the 'genealogy' order of paragraph 1 (B2, B6, B4, B1, B3, B5) cannot be checked from the ledger: B6 (NIM A 1063) is grouped with B2 (NIM A 955, 2020). This is an extraction gap the composer cannot fix.",
+   "evidence": "field.json B2 fetched: '(M. Rescic, R. Seviour, W. Blokland, NIM A 955, 163240, 2020)'; B6: '(abstract whole; NIM A 1063, 169232; authors not on the page)'",
+   "fix": "Record t per field source at re-extraction (§3.2), then re-order paragraph 1 by t."
+  },
+  {
+   "id": "C28",
+   "where": "archive ledger; case loci",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Besides the gaps the composer reported (#1450 §3.4, #934 §4.1, #1558 §11a), three more case loci have no ledger claim: #931 §1.2 'These defenses are real and should be acknowledged.', #1452 §14 'Learned anomaly detection is therefore partly a response ...', and #1454 §1 'First, direction dependence is not an invented concern external to collider machine learning ...'. These are limits and headline claims under §3.5, so their senses (the field's defenses acknowledged; anomaly detection as the field's own response) reach the KO only through the case statement.",
+   "evidence": "#1454 §1 (AXN-05DF): 'First, direction dependence is not an invented concern external to collider machine learning; it is already recognized within the field.'",
+   "fix": "Carry them at re-extraction; the KO's sentence 10 is where they would compose."
+  }
+ ],
+ "case_agrees": true,
+ "summary": "Case (equal, ρ = extends) agrees and all 12 case loci are verbatim. Translation passes: 45/45 field claims, each in exactly one row, quotes verbatim. Every ledger claim is cited in the KO and all 47 kernels are in P. Breaches: an uncited, unattributed clause (s22, the Level-1 menu); conditions dropped from kernel claims, which raises them (Q1450-01, Q931-12, Q1453-01 in P); several specifics drawn from the defining papers outside the ledger quotes (s12–13, s19); a referent shift on #1427 (s15); and an arrangement that passes §5.10's measure while running the field as a block at s3–7 and closing with the archive as a block at s9–27."
+}
