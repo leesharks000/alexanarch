@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-19T21:58:31Z",
+  "regenerated_at": "2026-10-19T23:30:35Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "0dc7f40fe71bde95e2d2aeed71f7643aac1e89c8bca7cccc59eb45fd5ed0b7e4",
+    "mm-main-capture": "4589cc0f1aca7ae3e4d44944ee1560c2cbc9c9e369250561b19dbb3a358dec4a",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2496,
-  "total_observations": 1014,
+  "total_addresses": 2497,
+  "total_observations": 1016,
   "class_counts": {
-    "subjunctive": 1742,
-    "observed_address": 737,
+    "subjunctive": 1741,
+    "observed_address": 739,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1861,
+    "unmatched": 1862,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -53289,9 +53289,24 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-19",
+          "status": "A SUBSTITUTE REFERENT TWICE, THEN THE WORK WHOLE ON BEING TOLD TO LOOK",
+          "surface": "Google AI Overview",
+          "source_format": "Source cards: turn 1 Evergreen Review, The Walt Disney Family Museum, Theme Park Press, BiblioCommons, eBay, Instagram·Film Aesthete; turn 2 two Google Books links and three unlabelled snippets; turn 3 one cited source (secretbookofwalt.org) and two unlabelled cards.",
+          "section": "Works",
+          "slug": "secret-book-of-walt-aio-20261019",
+          "gallery_url": "https://www.alexanarch.org/captures/#secret-book-of-walt-aio-20261019",
+          "record_url": "https://www.alexanarch.org/captures/secret-book-of-walt-aio-20261019/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#secret-book-of-walt-aio-20261019",
+          "details_excerpt": "SECRET BOOK OF WALT. ON GOOGLE AI OVERVIEW, SIGNED OUT, THREE TURNS: first Breaking Bad's inscribed Leaves of Grass as what the phrase 'most commonly refers to', with Fetherling and Disney as alternatives; marked factual"
+        }
+      ],
       "termindex": {
         "tier": 3,
         "count": 10,
@@ -53304,9 +53319,16 @@
         ],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "The Secret Book of Walt is Lee Sharks's work (#683, research edition, DOI 10.5281/zenodo.19703009; #1362, critical edition; secretbookofwalt.org, #985). Recorded 2026-10-19."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-19",
+      "latest_status": "A SUBSTITUTE REFERENT TWICE, THEN THE WORK WHOLE ON BEING TOLD TO LOOK"
     },
     "secret name armature": {
       "canonical_query": "secret name armature",
@@ -64069,6 +64091,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-17",
       "latest_status": "THE SCIENCE OF OPAQUE PUBLIC SYSTEMS — #120'S EMPIRICAL PHENOMENOLOGY, UNATTRIBUTED; A HARVARD CITATION WITH NO SOURCE"
+    },
+    "the secret book of walt": {
+      "canonical_query": "the secret book of walt",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-19",
+          "status": "SEVEN SUBSTITUTES ABOVE A PAGE THAT RANKS THE WORK FIRST; THE TITLE CONCEDED, THE SUBSTITUTES KEPT",
+          "surface": "Google AI Overview",
+          "source_format": "Source cards: turn 1 The Walt Disney Family Museum, Evergreen Review, Quill and Quire, Penguin Random House Canada, Amazon.com, YouTube, umass.ecampus.com, Google ×3; turn 3 In These Times, YouTube, Penguin Random House Canada, www.secretbookofwalt.org, Goodreads.",
+          "section": "Works",
+          "slug": "the-secret-book-of-walt-aio-20261019",
+          "gallery_url": "https://www.alexanarch.org/captures/#the-secret-book-of-walt-aio-20261019",
+          "record_url": "https://www.alexanarch.org/captures/the-secret-book-of-walt-aio-20261019/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#the-secret-book-of-walt-aio-20261019",
+          "details_excerpt": "THE SECRET BOOK OF WALT. ON GOOGLE AI OVERVIEW, SIGNED OUT, THREE TURNS: seven 'Walt' and 'secret' titles (Fetherling, Disney, Wallace Wattles, National Treasure, Walter Mitty), no card using the phrase, while the same p"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "The Secret Book of Walt is Lee Sharks's work (#683, research edition, DOI 10.5281/zenodo.19703009; #1362, critical edition; secretbookofwalt.org, #985). Recorded 2026-10-19."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-19",
+      "latest_status": "SEVEN SUBSTITUTES ABOVE A PAGE THAT RANKS THE WORK FIRST; THE TITLE CONCEDED, THE SUBSTITUTES KEPT"
     },
     "the secret name": {
       "canonical_query": "the secret name",

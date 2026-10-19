@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.301",
+ "derived_from": "EA-WG-CAPTURES-01 v12.303",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,19 +8,19 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 903,
-  "joined_confirmed": 407,
+  "observations": 905,
+  "joined_confirmed": 409,
   "unjoined": 496,
-  "relations": 4187,
+  "relations": 4197,
   "by_state": {
-   "confirmed": 3846,
-   "candidate": 341
+   "confirmed": 3854,
+   "candidate": 343
   },
   "by_verb": {
-   "held_by": 1886,
-   "scored_by": 653,
-   "appeared_in": 1391,
-   "about": 244,
+   "held_by": 1890,
+   "scored_by": 655,
+   "appeared_in": 1393,
+   "about": 246,
    "distorts": 3,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -4139,6 +4139,16 @@
 {"id": "REL-21e0e30d1cec", "obs_id": "OBS-ae05d28078bf", "entry": "predation-of-meaning-quoted-aio-20261018", "obs_slug": "predation-of-meaning-quoted-aio-20261018", "date": "2026-10-18", "surface": "Google AI Overview", "q": "\"predation of meaning\"", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-d61b7e0b642f", "obs_id": "OBS-ae05d28078bf", "entry": "predation-of-meaning-quoted-aio-20261018", "obs_slug": "predation-of-meaning-quoted-aio-20261018", "date": "2026-10-18", "surface": "Google AI Overview", "q": "\"predation of meaning\"", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-71f04b6b69f6", "obs_id": "OBS-ae05d28078bf", "entry": "predation-of-meaning-quoted-aio-20261018", "obs_slug": "predation-of-meaning-quoted-aio-20261018", "date": "2026-10-18", "surface": "Google AI Overview", "q": "\"predation of meaning\"", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-c6e810ec6991", "obs_id": "OBS-092c33bdae77", "entry": "secret-book-of-walt-aio-20261019", "obs_slug": "secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "secret book of Walt", "verb": "appeared_in", "object": "surface:secretbookofwalt.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 8, "site": "www.secretbookofwalt.org", "title": null, "url": "https://www.secretbookofwalt.org"}},
+{"id": "REL-b908c9ec8204", "obs_id": "OBS-092c33bdae77", "entry": "secret-book-of-walt-aio-20261019", "obs_slug": "secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "secret book of Walt", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-cfabe3446122", "obs_id": "OBS-092c33bdae77", "entry": "secret-book-of-walt-aio-20261019", "obs_slug": "secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "secret book of Walt", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-bda4e4ff0d0c", "obs_id": "OBS-092c33bdae77", "entry": "secret-book-of-walt-aio-20261019", "obs_slug": "secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "secret book of Walt", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-e63a8c475653", "obs_id": "OBS-092c33bdae77", "entry": "secret-book-of-walt-aio-20261019", "obs_slug": "secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "secret book of Walt", "verb": "about", "object": "non:howl", "basis": "defining papers #683, #1362", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-e8dfd0087f5c", "obs_id": "OBS-283bd4202574", "entry": "the-secret-book-of-walt-aio-20261019", "obs_slug": "the-secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "the secret book of walt", "verb": "appeared_in", "object": "surface:secretbookofwalt.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 11, "site": "www.secretbookofwalt.org", "title": "The Secret Book of Walt", "url": "https://www.secretbookofwalt.org"}},
+{"id": "REL-16f74e87952f", "obs_id": "OBS-283bd4202574", "entry": "the-secret-book-of-walt-aio-20261019", "obs_slug": "the-secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "the secret book of walt", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-764e19447b2a", "obs_id": "OBS-283bd4202574", "entry": "the-secret-book-of-walt-aio-20261019", "obs_slug": "the-secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "the secret book of walt", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-67168b9838bd", "obs_id": "OBS-283bd4202574", "entry": "the-secret-book-of-walt-aio-20261019", "obs_slug": "the-secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "the secret book of walt", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-21bf32b67313", "obs_id": "OBS-283bd4202574", "entry": "the-secret-book-of-walt-aio-20261019", "obs_slug": "the-secret-book-of-walt-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "the secret book of walt", "verb": "about", "object": "non:howl", "basis": "defining papers #683, #1362", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
