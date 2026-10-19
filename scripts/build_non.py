@@ -128,7 +128,7 @@ details>summary:hover{color:var(--accent2)}
 details>summary>span:not(.k):not(.n){flex:1 1 12em;min-width:0}
 details>summary{flex-wrap:wrap}
 details>summary .k{font-family:var(--mono);font-weight:500;color:var(--accent2);flex:none}
-details>summary .n{color:var(--dim);font-family:var(--mono);font-size:.86em;margin-left:auto;flex:none;padding-left:8px}
+details>summary .n{color:var(--dim);font-family:var(--mono);font-size:.86em;margin-left:auto;flex:0 1 auto;min-width:0;max-width:100%;overflow-wrap:anywhere;padding-left:8px}
 details[open]>summary{border-bottom:1px solid var(--border)}
 details>.inner{padding:10px 14px 6px}
 details details{background:var(--surface)}
@@ -264,8 +264,11 @@ def claim_li(cid, ko, ledger, reg, FC=None, FS=None):
         f = FC[cid]
         return (f'<li><code class="cid">{esc(cid)}</code> {esc(FS.get(f["source"], f["source"]))}, {esc(f["locus"])} '
                 f'<span class="pill dim">documented · field</span><br><span class="qt">{esc(unquote(f["quote"]))}</span></li>')
-    c = ledger[cid]; d = reg[c["dep"]]
-    return (f'<li><code class="cid">{esc(cid)}</code> <a href="{dep_href(c["dep"])}">{esc(dep_label(c["dep"]))}</a> <em>{esc(d["title"][:120])}</em> '
+    c = ledger[cid]
+    # a source that is not a deposit (a blog post, a surface) carries its own title, creator and url in the ledger
+    d = reg.get(c["dep"]) or {"title": c.get("title") or str(c["dep"]), "creator": c.get("creator"), "date": c.get("date")}
+    href = dep_href(c["dep"]) if c["dep"] in reg or isinstance(c["dep"], int) else ((c.get("surface") or {}).get("url") or "#")
+    return (f'<li><code class="cid">{esc(cid)}</code> <a href="{href}">{esc(dep_label(c["dep"]))}</a> <em>{esc(d["title"][:120])}</em> '
             f'<span class="meta">{esc(str(d.get("creator") or ""))} · {esc(str(c.get("date") or ""))} · {esc(c["locus"])}</span> '
             f'<span class="pill">{esc(c["modality"])}</span><br><span class="qt">{esc(unquote(c["quote"]))}</span></li>')
 

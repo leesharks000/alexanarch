@@ -1,0 +1,18 @@
+{
+ "row": "crimson-hexagon",
+ "address": "library of babel crimson hexagon",
+ "entity": "the crimson hexagon of Borges's \"The Library of Babel\" (1941)",
+ "row_type": "C (a public entity: a fictional object, a room in a short story), with the archive's own entity sharing its name",
+ "aliases": [
+  {"pattern": "\\bcrimson hexagons?\\b(?!al)", "flags": "i"},
+  {"pattern": "hex[aá]gono carmes[ií]", "flags": "i"},
+  {"pattern": "\\bcarmes[ií]\\b", "flags": "i"},
+  {"pattern": "Library of Babel", "flags": "i"},
+  {"pattern": "Biblioteca de Babel", "flags": "i"},
+  {"pattern": "(?=.*\\bBorges)(?=.*\\b[Hh]exagon)", "flags": ""}
+ ],
+ "classes": [],
+ "classes_note": "O-class not run on this pass. The string 'crimson hexagon' names three entities: Borges's room (the row's entity), the archive (the Crimson Hexagon, the Crimson Hexagonal Archive) and Crimson Hexagon Inc. (analytics, 2007–2018, the bare string's occupant on the rail). 'Crimson Hexagonal' is excluded from the alias as the archive's own name; a sentence naming Borges with 'hexagon' is caught by the last alias whatever the adjective. Admission by reading (§3.4): a candidate is admitted when it makes a claim on Borges's hexagon, or on its relation to the archive's; naming the archive is not a claim on Borges's room. Deposits that name only the company are recorded as homonym bearings, not admitted to the room.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-18, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-crimson-hexagon.md; addresses 'library of babel crimson hexagon' (T) and 'crimson hexagon' (the bare string, composed as Crimson Hexagon Inc. only). v0.9 §10.16: the first expected marginal case."
+}
