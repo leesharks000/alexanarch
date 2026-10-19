@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.294",
+ "derived_from": "EA-WG-CAPTURES-01 v12.295",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,19 +8,19 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 896,
-  "joined_confirmed": 404,
+  "observations": 897,
+  "joined_confirmed": 405,
   "unjoined": 492,
-  "relations": 4149,
+  "relations": 4154,
   "by_state": {
-   "confirmed": 3815,
-   "candidate": 334
+   "confirmed": 3819,
+   "candidate": 335
   },
   "by_verb": {
-   "held_by": 1872,
-   "scored_by": 646,
-   "appeared_in": 1379,
-   "about": 239,
+   "held_by": 1874,
+   "scored_by": 647,
+   "appeared_in": 1380,
+   "about": 240,
    "distorts": 3,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -1571,6 +1571,11 @@
 {"id": "REL-cc643221dd2d", "obs_id": "OBS-f55dbe25cb81", "entry": "what-is-spxi-protocol-bing-aimode-20261019", "obs_slug": "what-is-spxi-protocol-bing-aimode-20261019", "date": "2026-10-19", "surface": "Bing AI Mode", "q": "What is SPXI protocol?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-2486c2d09c06", "obs_id": "OBS-f55dbe25cb81", "entry": "what-is-spxi-protocol-bing-aimode-20261019", "obs_slug": "what-is-spxi-protocol-bing-aimode-20261019", "date": "2026-10-19", "surface": "Bing AI Mode", "q": "What is SPXI protocol?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-538190cae7a1", "obs_id": "OBS-f55dbe25cb81", "entry": "what-is-spxi-protocol-bing-aimode-20261019", "obs_slug": "what-is-spxi-protocol-bing-aimode-20261019", "date": "2026-10-19", "surface": "Bing AI Mode", "q": "What is SPXI protocol?", "verb": "about", "object": "non:spxi", "basis": "issued string of the entity", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-40973835d9cb", "obs_id": "OBS-7bab79cb5835", "entry": "what-is-spxi-protocol-bing-overview-20261019", "obs_slug": "what-is-spxi-protocol-bing-overview-20261019", "date": "2026-10-19", "surface": "Bing AI Overview", "q": "What is SPXI protocol?", "verb": "appeared_in", "object": "surface:spxi.dev", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "spxi.dev", "title": "SPXI — Semantic Packet for eXchange …", "url": "https://www.spxi.dev/"}},
+{"id": "REL-9f49c7b0c3ab", "obs_id": "OBS-7bab79cb5835", "entry": "what-is-spxi-protocol-bing-overview-20261019", "obs_slug": "what-is-spxi-protocol-bing-overview-20261019", "date": "2026-10-19", "surface": "Bing AI Overview", "q": "What is SPXI protocol?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-36e9e71eaa50", "obs_id": "OBS-7bab79cb5835", "entry": "what-is-spxi-protocol-bing-overview-20261019", "obs_slug": "what-is-spxi-protocol-bing-overview-20261019", "date": "2026-10-19", "surface": "Bing AI Overview", "q": "What is SPXI protocol?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-6637df60970e", "obs_id": "OBS-7bab79cb5835", "entry": "what-is-spxi-protocol-bing-overview-20261019", "obs_slug": "what-is-spxi-protocol-bing-overview-20261019", "date": "2026-10-19", "surface": "Bing AI Overview", "q": "What is SPXI protocol?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-b71c2edb4345", "obs_id": "OBS-7bab79cb5835", "entry": "what-is-spxi-protocol-bing-overview-20261019", "obs_slug": "what-is-spxi-protocol-bing-overview-20261019", "date": "2026-10-19", "surface": "Bing AI Overview", "q": "What is SPXI protocol?", "verb": "about", "object": "non:spxi", "basis": "issued string of the entity", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-a4171af2c9ca", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:27", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "medium.com", "title": "The Crimson Hexagon: Operative Architecture", "url": "https://medium.com/@leesharks00/the-crimson-hexagon-operative-architecture-b21dd55d45a9"}},
 {"id": "REL-ac9573506dce", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:30", "basis": "card resolved at intake (title segment)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "medium.com", "title": "Fractal Navigation Map v7.0", "url": "https://medium.com/@leesharks00/crimson-hexagonal-architecture-fractal-navigation-map-v7-0-42c498ac4225"}},
 {"id": "REL-3d2fa0e5035c", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 9, "site": "crimsonhexagonal.org", "title": "Crimson Hexagonal Archive — Governed Operating Surface", "url": null}},
