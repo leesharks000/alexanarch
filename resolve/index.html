@@ -140,6 +140,20 @@ fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then
     return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
+  // 2026-10-19: the evidence envelope governs. A DOI it rejects as the archive's is shown as such:
+  // no sovereign AXN, no record link. Another depositor's DOI that entered the index as a citation in an
+  // archive text is kept as a record of that citation; a colliding twin points to the record's confirmed DOI.
+  function membership(m){ return String((m.envelope||{}).archive_membership||''); }
+  function isRejected(m){ return membership(m).indexOf('rejected') === 0; }
+  function confirmedSibling(m){
+    if(!m.alexanarch_record) return null;
+    for(var i=0;i<mappings.length;i++){
+      var x=mappings[i];
+      if(x !== m && x.alexanarch_record === m.alexanarch_record && membership(x) === 'confirmed') return x;
+    }
+    return null;
+  }
+
   // Normalize an input to a CHA DOI form
   function normalizeDoi(raw){
     if(!raw) return null;
@@ -162,8 +176,8 @@ fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then
     var mt = m.match_type || 'NONE';
     matchCount[mt] = (matchCount[mt]||0) + 1;
   });
-  var withAxn = mappings.filter(function(m){return m.axn;}).length;
-  var withRecord = mappings.filter(function(m){return m.alexanarch_record;}).length;
+  var withAxn = mappings.filter(function(m){return m.axn && !isRejected(m);}).length;
+  var withRecord = mappings.filter(function(m){return m.alexanarch_record && !isRejected(m);}).length;
   document.getElementById('stats').innerHTML =
     '<div class="stat"><div class="stat-num">'+mappings.length.toLocaleString()+'</div><div class="stat-label">Mappings</div></div>'+
     '<div class="stat"><div class="stat-num">'+withAxn.toLocaleString()+'</div><div class="stat-label">With sovereign AXN</div></div>'+
@@ -207,7 +221,7 @@ fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then
         '<div class="resolve-focus-doi">'+escapeHtml(doi)+'</div>'+
         '<div class="resolve-focus-result unmatched">'+
           '<div class="resolve-focus-result-label">Not found in resolution index</div>'+
-          '<div style="font-size:0.92em;color:#444;line-height:1.5">This DOI is not among the 1,838 indexed CHA mappings (97% resolve to valid alexanarch records). It may not have originated from the Crimson Hexagonal Archive, or it may be from a Zenodo record outside CHA. The general Zenodo termination on 2026-06-19 affected only the CHA account.</div>'+
+          '<div style="font-size:0.92em;color:#444;line-height:1.5">This DOI is not among the '+mappings.length.toLocaleString()+' indexed CHA mappings. It may not have originated from the Crimson Hexagonal Archive, or it may be from a Zenodo record outside CHA. The general Zenodo termination on 2026-06-19 affected only the CHA account.</div>'+
         '</div>'+
         '<div class="resolve-focus-actions">'+
           '<a href="https://doi.org/'+encodeURIComponent(doi)+'" target="_blank" rel="noopener">Try the live DOI →</a>'+
@@ -217,6 +231,25 @@ fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then
       return;
     }
     var m = hits[0]; // primary mapping if multiple
+    if(isRejected(m)){
+      var env = m.envelope||{}, other = env.relationship === 'none_other_author' || membership(m) === 'rejected_other_author';
+      var sib = other ? null : confirmedSibling(m);
+      var cited = (m.live_urls||{}).blog || '';
+      var body = other
+        ? '<div class="resolve-focus-result-label">Not an archive record</div><div style="font-size:0.92em;color:#444;line-height:1.5">DataCite registers this DOI to another depositor. It entered this index as a citation in an archive text and is kept as a record of that citation; it has no successor in the archive.</div>'
+        : '<div class="resolve-focus-result-label">Not the archive\'s DOI for this work</div><div style="font-size:0.92em;color:#444;line-height:1.5">The index rejects this DOI as the archive\'s ('+escapeHtml(membership(m))+').'+(sib?' The record\'s confirmed DOI is <a href="?doi='+encodeURIComponent(sib.dead_doi)+'">'+escapeHtml(sib.dead_doi)+'</a>.':'')+'</div>';
+      var acts = [];
+      if(sib) acts.push('<a href="?doi='+encodeURIComponent(sib.dead_doi)+'">Resolve the confirmed DOI →</a>');
+      if(cited) acts.push('<a href="'+escapeHtml(cited)+'" target="_blank" rel="noopener">'+(other?'The archive text that cited it →':'Live blog mirror →')+'</a>');
+      acts.push('<a href="https://api.datacite.org/dois/'+encodeURIComponent(doi)+'" target="_blank" rel="noopener">DataCite metadata →</a>');
+      document.getElementById('focus-area').innerHTML = '<div class="resolve-focus">'+
+        '<div class="resolve-focus-head">Lookup result &middot; rejected as the archive\'s</div>'+
+        '<div class="resolve-focus-doi">'+escapeHtml(doi)+'</div>'+
+        (m.title?'<div class="resolve-focus-title">'+escapeHtml(m.title)+'</div>':'')+
+        '<div class="resolve-focus-result unmatched">'+body+'</div>'+
+        '<div class="resolve-focus-actions">'+acts.join('')+'</div></div>';
+      return;
+    }
     var statusClass = 'status-' + (m.status || 'UNKNOWN');
     var resultClass = (m.sovereign_id && m.sovereign_id !== 'UNMATCHED') ? '' : 'unmatched';
     var liveUrls = m.live_urls || {};
@@ -238,6 +271,9 @@ fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then
         '<div style="font-size:0.92em;color:#444;line-height:1.5">'+escapeHtml(m.note || 'No firm sovereign mapping established yet.')+'</div>';
     } else if(m.note){
       resultInner += '<div style="margin-top:8px;font-size:0.86em;color:#444;font-style:italic">'+escapeHtml(m.note)+'</div>';
+    }
+    if((m.envelope||{}).quarantine){
+      resultInner += '<div style="margin-top:8px;font-size:0.86em;color:#444">Membership: '+escapeHtml(membership(m)||'unrecorded')+' &middot; held from redirect: '+escapeHtml(m.envelope.quarantine)+'</div>';
     }
 
     var actions = [];
@@ -288,14 +324,16 @@ fetch('/data/doi-resolution-index.json').then(function(r){return r.json()}).then
     var liveUrls = m.live_urls || {};
     var noteHtml = m.note ? '<div class="doi-card-note">'+escapeHtml(m.note)+'</div>' : '';
     var metaParts = [];
-    if(m.axn) metaParts.push('<strong>AXN:</strong> <span class="axn">'+escapeHtml(m.axn)+'</span>');
-    if(m.sovereign_id && m.sovereign_id !== 'UNMATCHED') metaParts.push('<strong>id:</strong> '+escapeHtml(m.sovereign_id));
+    var rej = isRejected(m);
+    if(rej) metaParts.push('<strong>not the archive\'s</strong> ('+escapeHtml(membership(m))+')');
+    if(m.axn && !rej) metaParts.push('<strong>AXN:</strong> <span class="axn">'+escapeHtml(m.axn)+'</span>');
+    if(m.sovereign_id && m.sovereign_id !== 'UNMATCHED' && !rej) metaParts.push('<strong>id:</strong> '+escapeHtml(m.sovereign_id));
     if(m.date) metaParts.push('<strong>date:</strong> '+escapeHtml(m.date));
     if(m.mapping_type) metaParts.push('<strong>type:</strong> '+escapeHtml(m.mapping_type));
     if(m.match_type && m.match_type !== 'NONE') metaParts.push('<strong>match:</strong> '+escapeHtml(m.match_type));
     var metaHtml = metaParts.length ? '<div class="doi-card-meta">'+metaParts.join(' &middot; ')+'</div>' : '';
     var actions = [];
-    if(m.alexanarch_record) actions.push('<a href="'+escapeHtml(m.alexanarch_record)+'">Record →</a>');
+    if(m.alexanarch_record && !rej) actions.push('<a href="'+escapeHtml(m.alexanarch_record)+'">Record →</a>');
     if(liveUrls.blog) actions.push('<a href="'+escapeHtml(liveUrls.blog)+'" target="_blank" rel="noopener">Blog mirror →</a>');
     if(liveUrls.registry) actions.push('<a href="'+escapeHtml(liveUrls.registry)+'" target="_blank" rel="noopener">Registry mirror →</a>');
     actions.push('<a href="?doi='+encodeURIComponent(m.dead_doi)+'">Resolve →</a>');
