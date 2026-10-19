@@ -1,20 +1,20 @@
 {
  "_FLOW": "Complete index of mindcontrolpoems.blogspot.com, the archive's primary publication surface. Built 2026-08-23 by exhaustive start-index pagination of the Blogger summary feed, verified against the feed's own declared total. EXISTS SO THAT ABSENCE CAN BE ASSERTED HONESTLY: the archival search protocol says check the archive before claiming a record does not exist, and until this index the blog was not searchable that way. A registry search is not an archive search.",
  "dataset": "blog-index",
- "version": "v1.0",
- "date": "2026-08-23",
+ "version": "v1.1",
+ "date": "2026-10-18",
  "source": "https://mindcontrolpoems.blogspot.com/feeds/posts/summary",
  "method": "start-index pagination, 34 entries per response (Blogger response-size cap; max-results is not honoured above that). Completeness verified against openSearch:totalResults.",
- "declared_total": 2939,
- "harvested": 2939,
+ "declared_total": 3093,
+ "harvested": 3093,
  "complete": true,
  "range": {
   "first": "2014-12-01",
-  "last": "2026-08-22"
+  "last": "2026-10-18"
  },
  "axn_coverage": {
   "indexed": 871,
-  "unindexed": 2068,
+  "unindexed": 2230,
   "by_year": {
    "2014": {
     "posts": 7,
@@ -22,9 +22,9 @@
     "gap": 7
    },
    "2015": {
-    "posts": 31,
+    "posts": 32,
     "indexed": 0,
-    "gap": 31
+    "gap": 32
    },
    "2025": {
     "posts": 1696,
@@ -32,9 +32,9 @@
     "gap": 1696
    },
    "2026": {
-    "posts": 1205,
+    "posts": 1366,
     "indexed": 871,
-    "gap": 334
+    "gap": 495
    }
   }
  },
@@ -42,6 +42,31 @@
  "known_limits": [
   "excerpt is the feed summary, truncated at 300 characters, not the post body",
   "no word counts: the summary feed does not carry full content, and fetching 2,939 bodies is a separate run",
-  "post_id is the Blogger entry id tail, not an archive identifier"
- ]
+  "post_id is the Blogger entry id tail, not an archive identifier",
+  "indexed means listed in data/batch-axn-assignment.json (works of 2026-01-01 to 2026-06-19). Posts mirrored by later deposits are not cross-linked here, so the 2026 gap overstates what carries no identifier."
+ ],
+ "rows": 3101,
+ "updates": [
+  {
+   "version": "v1.1",
+   "date": "2026-10-18",
+   "method": "The feed harvested again whole (summary and full feeds, 3,093 posts each, matching openSearch:totalResults). The 2,939 rows of v1.0 are kept byte for byte; 162 posts published since are appended. 8 rows of v1.0 are no longer in the feed and are kept (listed in no_longer_in_feed). The AXN cross-link is still data/batch-axn-assignment.json, so the 162 new rows read indexed: false."
+  }
+ ],
+ "no_longer_in_feed": {
+  "checked": "2026-10-18",
+  "urls": [
+   "https://mindcontrolpoems.blogspot.com/2025/10/effective-act-claiming-triple-mantle.html",
+   "https://mindcontrolpoems.blogspot.com/2025/10/book-of-contact-atlas-mandala.html",
+   "https://mindcontrolpoems.blogspot.com/2025/10/contact-protocol-for-sorcerous.html",
+   "https://mindcontrolpoems.blogspot.com/2025/10/logos-137-contact-protocol.html",
+   "https://mindcontrolpoems.blogspot.com/2025/11/lineagesystem-map.html",
+   "https://mindcontrolpoems.blogspot.com/2025/11/poetcognitive-engineer-professional.html",
+   "https://mindcontrolpoems.blogspot.com/2026/03/steganographic-channels-history-and.html",
+   "https://mindcontrolpoems.blogspot.com/2026/04/ea-spxi-091-spxi-roi-operational-and.html"
+  ],
+  "republished": {
+   "https://mindcontrolpoems.blogspot.com/2026/03/steganographic-channels-history-and.html": "https://mindcontrolpoems.blogspot.com/2025/11/steganographic-channels-history-and.html"
+  }
+ }
 }
