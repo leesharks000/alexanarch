@@ -166,6 +166,13 @@ def main():
         print(f'FATAL: {len(dupckeys)} duplicate dead_doi keys in canonical index: {dupckeys[:5]}')
         sys.exit(1)
 
+    def map_axn(m):
+        """2026-10-19: a DOI whose envelope rejects archive membership (another author's record, or the
+        colliding twin of a confirmed DOI) maps to no AXN: the archive's identifier is not given for it."""
+        if str((m.get('envelope') or {}).get('archive_membership') or '').startswith('rejected'):
+            return None
+        return m.get('axn') or None
+
     def map_url(m):
         """Resolution target for the api map. P0-5: quarantined entries emit
         null — a redirect requires a verified full identifier, confirmed
@@ -182,7 +189,7 @@ def main():
         dirty = sum(fixes.values())
         print('CHECK ONLY — no writes.' + (f' ({dirty} normalizations pending; run --apply)' if dirty else ' Index is normalized.'))
         # Also verify api map freshness against what --apply would produce
-        want = {m['dead_doi']: [m.get('axn') or None, map_url(m)] for m in maps}
+        want = {m['dead_doi']: [map_axn(m), map_url(m)] for m in maps}
         try:
             have = json.load(open(APIMAP)).get('map', {})
             stale = sum(1 for k, v in want.items() if have.get(k) != v)
@@ -219,7 +226,7 @@ def main():
         'quarantine_policy': 'entries with fragment-candidate identifiers, unresolved parent works, '
                              'other-author classification, or unsupported namespaces emit null targets; '
                              'see quarantine field per entry in canonical index',
-        'map': {m['dead_doi']: [m.get('axn') or None, map_url(m)] for m in maps},
+        'map': {m['dead_doi']: [map_axn(m), map_url(m)] for m in maps},
     }
     with open(APIMAP, 'w') as f:
         json.dump(api, f, ensure_ascii=False, indent=None, separators=(',', ':'))

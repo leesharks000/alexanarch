@@ -70,6 +70,11 @@ def _load_doi_index():
                 f"https://doi.org/{row['dead_doi']}" if row.get('dead_doi') else None)
             if not axn or not url:
                 continue
+            # 2026-10-19: a DOI the index's evidence envelope rejects as the archive's (another author's
+            # record, or the colliding twin of a confirmed DOI) is kept in the index as history and is
+            # never presented on a record page as that record's former DOI or in its sameAs.
+            if str((row.get('envelope') or {}).get('archive_membership') or '').startswith('rejected'):
+                continue
             for key in {axn, (re.match(r'AXN:([0-9A-Fa-f]{4})', axn).group(1).upper()
                               if re.match(r'AXN:([0-9A-Fa-f]{4})', axn) else axn)}:
                 out.setdefault(key, set()).add(url)

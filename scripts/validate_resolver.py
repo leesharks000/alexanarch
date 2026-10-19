@@ -119,7 +119,9 @@ def main():
             want = lu.get('repo') or lu.get('github') or lu.get('blog') or None
         if v[1] != want:
             fail('G6_target_drift', f'{k}: api={v[1]} canonical-derived={want}')
-        if v[0] != (m.get('axn') or None):
+        # 2026-10-19: a DOI whose envelope rejects archive membership maps to no AXN (sync_resolver.map_axn).
+        want_axn = None if str((m.get('envelope') or {}).get('archive_membership') or '').startswith('rejected') else (m.get('axn') or None)
+        if v[0] != want_axn:
             fail('G6_axn_drift', k)
 
     # G7 target existence; G8 AXN agreement
