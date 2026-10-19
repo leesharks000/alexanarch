@@ -1,0 +1,197 @@
+{
+  "row": "political-economy",
+  "checker": "Claude (Anthropic), independent v0.9 check subagent; did not see the composition composed; read CHECK-BRIEF, AXN-0700 §0.7-0.10, §1.2a, §4.1-4.8, §5.10, the composition, field.json (49 claims), ledger-archive.json (139 claims), and #727 (AXN-0278), #726 (0277), #533 (0168), #1634 (06C8), #18 (013F), #1644 (06D2), #247 (0030), #437 (00FC), #704 (024A), #122 (02A8), #550 (017B) at the cited loci",
+  "findings": [
+    {
+      "id": "C1",
+      "where": "KO sentence 33; P section 'Measured and dated', item 'Removed, stabilized:'",
+      "kind": "entailment",
+      "severity": "must-fix",
+      "finding": "#247's observation concerns the AI Overview for the address 'semantic economy', not 'political economy'. KO 33 says 'the AI Overview displayed the critical framework, and then that \"The political economy has been removed\"' with no address. In a knowledge object at the address 'political economy' the reader takes this as the Overview for political economy. The P item has the same gap. #730's Overview is given its address in the same sentence, and #247's is not. The text states the address: the sentence only has to name it.",
+      "evidence": "#247 header: \"**Subject:** AI Overview treatment of \\\"semantic economy\\\"\"; §II.5: \"Until the morning of 5 January 2026, the AI Overview displayed the **critical framework**.\"; ledger E247-01 claim: \"on 5 January 2026 the AI Overview for 'semantic economy' removed the political economy frame\"",
+      "fix": "KO 33: \"#247 records that until the morning of 5 January 2026 the AI Overview for 'semantic economy' displayed the critical framework, and that later that day 'The political economy has been removed. What remains is business optimization'\". P item: \"'The political economy has been removed' from the Overview for semantic economy (#247); ...\" (trade words elsewhere to stay within 350)."
+    },
+    {
+      "id": "C2",
+      "where": "KO sentences 5, 6, 7 (field clauses after the first semicolon or clause)",
+      "kind": "attribution",
+      "severity": "must-fix",
+      "finding": "Several field claims are stated in the composer's voice with no source, while every archive claim in the KO carries its deposit number. S5: 'the phrase first appeared in France in 1615 in ... Montchrétien' (F9, Wikipedia) follows a Britannica clause and has no source. S6: 'Smith described it as part of the \"science of a statesman or legislator\"' (F10), 'thinkers from John Stuart Mill to Karl Marx saw economics and politics as inseparable' (F4) and 'the first professorship in it was established in 1754' (F17) are Wikipedia's, and none is attributed after the semicolon. S7: 'In the late 19th century economics became a discipline separate...' (F5), 'William Stanley Jevons advocated...' (F12) and 'Ngram metrics indicate...' (F14) are all Wikipedia's and unnamed. §4.5 requires the source in the sentence. The asymmetry also does what §4.2 forbids: field claims are composed as the voice of the record and archive claims as attributed positions, so standing comes back in.",
+      "evidence": "F9 source B1 (Wikipedia) \"first appeared in France in 1615 with the book Traicté de l'oeconomie politique\"; F5, F12, F14, F10, F4, F17 all source B1",
+      "fix": "S5: \"...; Wikipedia records that the phrase first appeared in France in 1615 ...\". S6: \"... by Wikipedia's account Smith described it ..., thinkers from Mill to Marx saw ... inseparable, and the first professorship ... 1754 ...\". S7: \"Wikipedia records that in the late 19th century economics became a discipline separate ..., that Jevons advocated ..., and that Ngram metrics indicate ...\"."
+    },
+    {
+      "id": "C3",
+      "where": "P lede; P items 'Not without power:', 'The public household:', 'Founders:', 'Became economics:', 'Revived:', 'Schools:', 'Not unified:' (F25), 'Topics:', 'Language and communication:' (F22, F26)",
+      "kind": "attribution",
+      "severity": "must-fix",
+      "finding": "The compression names no field source in the lede or in nine items, while every archive claim on the card carries '#N'. The lede composes the field's definition unattributed ('is the study of how political and economic systems, markets and the state, shape each other') and the archive's as 'in the archive's definition (#727)'. §5.8 asks for a definition composed from both ledgers. As written, one ledger is the definition and the other is a qualification of it.",
+      "evidence": "P lede claims F1, F27, F31, F43, F35 (Wikipedia, Harvard, Britannica, EBSCO, Universidad Europea); none is named in the lede text",
+      "fix": "Lede: \"is the study of how political and economic systems, markets and the state, shape each other (Wikipedia, Harvard, Britannica, EBSCO, UE) and of how power, institutions, law, labor, markets, money and social organization determine the production, circulation, distribution and extraction of value (#727); #727 holds that it has always already been semantic economy.\" Items: add short source tags, e.g. 'Smith's ... ; Marx on economic power (Wikipedia)'; 'oikonomikos; Montchrétien, 1615 (Wikipedia); polis + oikonomos (Britannica)'; 'Marshall, 1890; Jevons; Ngram (Wikipedia); Milonakis and Fine'; '1970s, OPEC (EBSCO); Strange; Gramsci, Polanyi (Wikipedia)'; 'liberalism ... realism (UE); market and command (EBSCO)'; 'radically different perspectives (Wikipedia)'. Pay for the words by cutting the uncited extras listed in C14."
+    },
+    {
+      "id": "C4",
+      "where": "KO sentences 17-34 (the archive-only tail); P sections 4-6",
+      "kind": "structure",
+      "severity": "should-fix",
+      "finding": "In the equal-terms case the KO does not open with the field as a block (S1 mixes the ledgers; §4.10 measure 0 of 12). It does close with the archive as a block: the last field claims (F22, F26) are in S16, and S17-S34, 18 consecutive sentences, are archive-only. §4.1 excludes this ('does not open with the field's composition and close with the archive's'), and so does §4.7 ('neither ledger is placed first as a block'). Ordering by dependency does excuse part of it, since the field holds no claims on the political economy of meaning, ontological economy or meaning feudalism. But field claims that bear on those senses were placed in the first half: F29 (technological change, inequality, the role of government), F26 (communications: owners, labor, advertisers, structures of production, the state), F13 (desocialisation and dehistoricisation) and F49 (geoeconomics). The translation table pairs several of them with tail claims (F29 with E1634-05) but does not compose them together (see C5). The compression has the same shape: sections 4-6 are archive-only except F22/F26.",
+      "evidence": "KO S16 claims F22, F26, E467-01, E467-02, E24-01; S17-S34 claims all E-prefixed",
+      "fix": "Move F29 into S25 beside E1634-05/E499-02 (the succession of political economies: factory, platform, AI). Move F26 into S17 or S22 beside E308-01 and #727's political economy of communication (E727-05). Move F13 into S10 or S11 beside E950-03 and E501-01, so the rival accounts of how political economy became economics are composed together under P_coh. Then re-run §5.10 and record the positions."
+    },
+    {
+      "id": "C5",
+      "where": "translation rows 1, 2, 4, 5, 6, 7, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20",
+      "kind": "translation",
+      "severity": "should-fix",
+      "finding": "Each equal-terms row records its field claims as 'composed as received beside' named archive claims. That is a coordinating act, logged and subject to reverse entailment (§4.7). In 16 of 21 rows the named archive claims sit in a different KO sentence, often far away: F17 (Naples professorship, S6) beside E516-01 (Transactions journal, S32); F30/F34 (S15) beside E166-01 (S33); F2/F11 (S6) beside E531-01 (S19); F18 (rational choice, S13) beside E533-04 (S4); F42/F49 (S15) and F6/F28 (S15) and F8/F9 (S5) beside E727-02 (S1). Several of these pairs do not bear on each other: a professorship and a journal, rational-choice approaches and the irremovability of the questions.",
+      "evidence": "row 8: field_claims [F17] translation \"untranslated: composed as received beside E516-01\"; F17 in KO S6, E516-01 in KO S32",
+      "fix": "In each row record only the archive claims the field claim is composed with in the same sentence or adjacent sentence. Where none is, write 'untranslated: composed as received; no archive claim bears'. Alternatively move the claims together (see C4) and keep the pairs that bear: F13 with E501-01/E950-03, F29 with E1634-05, F26 with E727-05/E727-10, F19 with E501-01."
+    },
+    {
+      "id": "C6",
+      "where": "P open block item [0]",
+      "kind": "force",
+      "severity": "should-fix",
+      "finding": "'Does \"always already semantic economy\" claim more than cultural political economy already holds?' is raised by no source. It is the composer's question, and it holds #727's canonical claim against a field school. That puts the archive claim in the open block because of where it stands relative to the field. §4.4 N_c rules this out ('No operator is applied to E_A from outside E_A'), and §4.7 makes placement in the open block a semantic act. The archive states its own relation to cultural political economy, and the item's own would_resolve points to that answer (#727's §2 'Three Levels of Difference').",
+      "evidence": "#727 §4 Disambiguation Matrix: \"Cultural political economy | ... | Strong bridge field | Closest existing academic bridge; Semantic Economy radicalizes and operationalizes the semantic layer under AI\"; #727 §2: \"## 2. Three Levels of Difference\" (2.1 Usage-level difference; 2.2 Method-level continuity; 2.3 Radical-level identity)",
+      "fix": "Delete item [0], or replace it with a question a source poses. #727's relation to CPE is already composed in KO 17 and the P item 'The junction'. If the composer wants it kept as a reading, log it in the plan's conflict log as the composer's act, not in the open block."
+    },
+    {
+      "id": "C7",
+      "where": "KO sentence 2 (F36)",
+      "kind": "entailment",
+      "severity": "should-fix",
+      "finding": "UE says political economy is 'not just about governments or markets in isolation'. The KO drops 'just' and says it is 'not about governments or markets in isolation', which turns 'not only' into 'not'.",
+      "evidence": "F36: \"It is not just about governments or markets in isolation, but about how power, wealth, and policy decisions intertwine.\"",
+      "fix": "\"For Universidad Europea it is not just about governments or markets in isolation but about how power, wealth and policy decisions intertwine;\""
+    },
+    {
+      "id": "C8",
+      "where": "KO sentence 15 (F30, F29)",
+      "kind": "force",
+      "severity": "should-fix",
+      "finding": "F30's 'can help' becomes 'helps', which raises its modality. F29 is a past-tense finding followed by a question ('has produced ... what role do governments play in amplifying or countering these trends?'). The KO recasts it as 'as technological change produces greater inequality' and drops 'amplifying or countering'.",
+      "evidence": "F30: \"Training in political economy can help students understand how societies work\"; F29: \"Technological change has produced greater inequality and concentration of wealth; what role do governments play in amplifying or countering these trends?\"",
+      "fix": "\"... Harvard that training in it can help students understand how societies work ...\"; \"... with the question, since technological change has produced greater inequality and concentration of wealth, of what role governments play in amplifying or countering these trends;\""
+    },
+    {
+      "id": "C9",
+      "where": "KO sentence 16 (E467-02); P item 'Language and communication:'",
+      "kind": "entailment",
+      "severity": "should-fix",
+      "finding": "#467's claim is a disjunction: existing critiques 'stop too soon, operate at the wrong level, or fail to connect linguistic structure to political economy'. The KO makes the third disjunct universal: 'holds that existing critiques fail to connect linguistic structure to political economy'. The P item adds a temporal claim no source makes ('not yet connected').",
+      "evidence": "E467-02: \"But the existing critiques stop too soon, operate at the wrong level, or fail to connect linguistic structure to political economy.\"",
+      "fix": "KO: \"... and holds that existing critiques stop too soon, operate at the wrong level, or fail to connect linguistic structure to political economy\". P: \"... critiques stop short of linguistic structure (#467)\"."
+    },
+    {
+      "id": "C10",
+      "where": "KO sentence 25 (E727-12)",
+      "kind": "entailment",
+      "severity": "should-fix",
+      "finding": "E727-12 ('AI governance is also semantic political economy: who owns meaning, who gets cited, whose context is compressed, whose labor becomes model capacity, whose archive becomes substrate') is reduced to the tag 'AI governance included' and attached to E727-13's definition of 'the political economy of the AI era'. That changes its object, from semantic political economy to the political economy of the AI era, and drops its questions. D_pres allows a claim to be shortened but not stripped of the distinction it carries.",
+      "evidence": "E727-12 quote as above (#727 §3.6 'AI governance treated as safety-only')",
+      "fix": "\"...; #727 holds AI governance to be also semantic political economy: who owns meaning, who gets cited, whose context is compressed, whose labor becomes model capacity, whose archive becomes substrate.\""
+    },
+    {
+      "id": "C11",
+      "where": "KO sentence 29 (E1666-04)",
+      "kind": "force",
+      "severity": "should-fix",
+      "finding": "#1666's falsifier is scoped to 'addresses where the queried concept is not itself the returned entity', and that scope is dropped. §4.4 N_c requires archive claims to carry their falsifiers as the archive states them. Without the condition, the falsifier is a different test. The open block item [2] drops the scope as well.",
+      "evidence": "E1666-04: \"If coded replacements, at addresses where the queried concept is not itself the returned entity, show no excess toward monetizable entities, then G is unsupported and the margin reduces to S.\"",
+      "fix": "\"... states that if coded replacements, at addresses where the queried concept is not itself the returned entity, show no excess toward monetizable entities its term G is unsupported and the margin reduces to S ...\"; amend open item [2] would_resolve likewise."
+    },
+    {
+      "id": "C12",
+      "where": "KO sentence 32 (E122-01/02); P item 'A domain:'",
+      "kind": "force",
+      "severity": "should-fix",
+      "finding": "#122's count is a dated measurement: a catalog of 705 deposits scanned on 2026-05-23. The KO and the P item give it in the timeless present ('measures ... as the third largest ... at 160 deposits'), which turns a dated count into a standing fact about an archive that has since grown. T_lib requires the date where it bears. The composer's note also says the ledger does not date the count, but E122-01/02 carry date 2026-05-23.",
+      "evidence": "#122 JSON-LD: \"datePublished\": \"2026-05-23\", \"totalDeposits\": 705, \"scanDate\": \"2026-05-23\"; E122-02 quote \"| 3 | Political Economy & Platform Capitalism | 160 |\"",
+      "fix": "KO: \"#122's catalog of 2026-05-23, at 705 deposits, measures Political Economy & Platform Capitalism as the third largest of the archive's domains, at 160 deposits;\". P: \"third largest, 160 of 705 deposits, 2026-05-23 (#122).\" Correct the note."
+    },
+    {
+      "id": "C13",
+      "where": "P items 'The junction:', 'The thesis:', 'Succession:'",
+      "kind": "attribution",
+      "severity": "should-fix",
+      "finding": "(a) 'cultural political economy the closest bridge (#727; #308)': only #727 calls CPE the closest bridge. #308 reports Jessop's CPE (E308-02) and does not rank it. (b) 'not all is language (#727)': #727's limit is a scope limit on its own claim ('The claim is not \"everything is language\"'). The item turns it into a first-order proposition #727 does not assert. (c) 'means of denotation (#550, hypothesis)': the means-of-denotation supplement is E550-05, modality interpretation, stated outright. The hypothesis is E550-01, the novel-regime thesis. Labelling E550-05 a hypothesis lowers its force.",
+      "evidence": "E727-10 (only #727) \"Closest existing academic bridge\"; E727-07 \"The claim is not \\\"everything is language.\\\"\"; E550-05 modality interpretation: \"the question \\\"who controls the means of production?\\\" must be supplemented by a second question: \\\"who controls the means of denotation?\\\"\"",
+      "fix": "\"cultural political economy the closest bridge (#727); Jessop's CPE (#308).\" \"... the claim not that everything is language (#727) ...\". \"means of denotation (#550); a novel regime (#550, hypothesis).\""
+    },
+    {
+      "id": "C14",
+      "where": "P items 'Fixed questions:' (E597-01, E1634-03), 'The critique › Kritik:' (E18-02, E533-06), 'Labor/labor-power:' (E1631-01), 'The junction:' (E288-02), 'Register 4:' (E727-04), 'Succession:' (E514-01, E499-01), 'Extensions:' (E1634-08), 'The bag' (E1666-04)",
+      "kind": "entailment",
+      "severity": "note",
+      "finding": "These items cite claim ids whose content and source do not appear in the item's text. The text says less than its claims, so this is no entailment breach. But the cited ids are not rendered or attributed there, and E1634-08 is a stated limit (§4.4 N_c: limits are composed because the archive states them). Coverage holds at the union because the KO carries them all.",
+      "evidence": "P 'Extensions:' text \"ontological economy (#1634); meaning feudalism (#112).\" claims [E1634-01, E1634-08, E112-01]",
+      "fix": "Either drop the unrendered ids from the item's claims list (rail entailment), or render them briefly with source. For E1634-08: \"ontological economy (#1634; laundering only where evidence connects the control)\"."
+    },
+    {
+      "id": "C15",
+      "where": "KO sentence 9 (F20)",
+      "kind": "attribution",
+      "severity": "note",
+      "finding": "'Wikipedia ... credits Susan Strange as almost single-handedly responsible' makes the judgment Wikipedia's own. The quote marks inside F20 show Wikipedia quoting another account (the ledger claim names Chris Brown, a name the quote does not carry).",
+      "evidence": "F20: \"Susan Strange, was \\\"almost single-handedly responsible for creating international political economy as a field of study.\\\"\"",
+      "fix": "\"... records the judgment that Susan Strange was 'almost single-handedly responsible for creating international political economy as a field of study' ...\"."
+    },
+    {
+      "id": "C16",
+      "where": "KO sentence 4 (E533-02)",
+      "kind": "attribution",
+      "severity": "note",
+      "finding": "The redefinition quoted is Patrick Grady's, from his series 'On Platforms' as #533 quotes it. The sentence opens with 'a platform-stewardship essay series that defines ...' and names Grady only in the next clause. The paper supports the description, though the ledger quote does not carry it.",
+      "evidence": "#533 Abstract: \"Patrick Grady's nine-part essay series \\\"On Platforms\\\" (Substack, December 2025–February 2026)\"",
+      "fix": "\"against Patrick Grady's essay series 'On Platforms', which defines political economy, as #533 quotes it, as how incentives, legitimacy and coordination reorganize, 'not how authority allocates scarce resources', #533 reads Grady as ...\"."
+    },
+    {
+      "id": "C17",
+      "where": "KO sentence 3 (E133-03); KO sentence 28 (E550-01, E550-06)",
+      "kind": "entailment",
+      "severity": "note",
+      "finding": "Compressions that drop part of a claim. E133-03's 'and anthropologically unacceptable' is dropped, which is a normative predicate. E550-01's inheritance list is cut from six regimes to three, though the KO's 'identical with none' leans on the full list. E550-06's neighbourhood is cut to 'the political economy of language', leaving out platform capitalism and AI governance.",
+      "evidence": "E133-03: \"the cost is structurally misassigned and anthropologically unacceptable\"; E550-01: \"It is not surveillance capitalism, platform capitalism, data colonialism, computational sovereignty, pharmacological proletarianization, or machinic abstraction of labor — though it inherits from all of these.\"",
+      "fix": "\"... to name a cost that is structurally misassigned and anthropologically unacceptable ...\"; \"inheriting from surveillance capitalism, platform capitalism, data colonialism, computational sovereignty, pharmacological proletarianization and the machinic abstraction of labor, and identical with none\"."
+    },
+    {
+      "id": "C18",
+      "where": "KO sentence 21 (E1644-03)",
+      "kind": "force",
+      "severity": "note",
+      "finding": "The E1644-03 quote is #1644's model sentence for compositions, set in italics after 'A composition that keeps the heading keeps it with its author:'. 'states that' is supported because #1644 asserts the same thing in bold just before it. The ledger locus should still point to the assertion, not to the template.",
+      "evidence": "#1644 §4.2: \"... is Lee Sharks's Semantic Economy.** ... A composition that keeps the heading keeps it with its author: *In the political economy of digital platforms, the semantic economy is the framework developed by Lee Sharks (2025–2026), which analyzes …*\"",
+      "fix": "Keep the KO wording. At re-extraction, cite the bold assertion in §4.2 as the quote."
+    },
+    {
+      "id": "C19",
+      "where": "KO sentence 34; P open block item [5]",
+      "kind": "case",
+      "severity": "note",
+      "finding": "'The archive dates its semantic political economy line differently in different places' joins three objects into one line. #437 is a six-document series titled 'Semantic Political Economy', composed 29-30 December 2024. #704 gives the Semantic Economy framework's first_use as 2025-01. #1644 dates the framework from December 2025 (2025-12-25 onward). The #704/#1644 pair are two dates for one object. Whether #437 belongs to the same line is a coordinating act of the composer and should be logged as one (§4.7). The open item handles the resolution well.",
+      "evidence": "#437: \"The documents were composed across December 29–30, 2024\"; #1644: \"Provenance. Lee Sharks, from 2025-12-25\"; #704: \"first_use: \\\"2025-01\\\"\"",
+      "fix": "Log the join in the plan's arrangement with the three ids. Optionally write: \"#704 and #1644 date the Semantic Economy framework differently (first_use 2025-01; from December 2025), and #437 registers a series titled Semantic Political Economy as composed 29-30 December 2024.\""
+    },
+    {
+      "id": "C20",
+      "where": "ledger-archive.json (extraction from #727); KO sentence 1; E_A definition",
+      "kind": "coverage",
+      "severity": "note",
+      "finding": "C_ex reads the ledger only, and every ledger claim is composed: 139/139 archive, 49/49 field, no cuts, no kernel claim cut. But #727, read whole, holds senses of the entity that the ledger does not extract. §1.1 gives #727's own definition of political economy, which coincides with the field's. §0's Central Invariant reads 'Political economy studies the production and governance of value'. §1.3 says 'Political economy asks how social power governs value'. §2.1-2.2 give usage-level difference and method-level continuity. The §4 matrix rows for Political economy ('Historical container / disclosed parent field'), Economics ('Adjacent but narrower') and Classical political economy ('Important origin, not exhaustive definition') are also missing. Separately, E308-01's quote characterises political economy as 'how capital accumulates', and no KO sentence composes that sense. With these, S1 could carry a definition the two ledgers share.",
+      "evidence": "#727 §1.1: \"Political economy is an interdisciplinary field studying the relation between markets and states, individuals and society, production and governance, economic systems and political institutions.\"; E308-01: \"nor how capital accumulates (political economy)\"",
+      "fix": "At the next extraction, add #727 §1.1 (definition), §0 Central Invariant, §1.3, §2.1-2.2 and the matrix rows for Political economy, Economics and Classical political economy to the ledger. Then compose S1 with #727 §1.1 beside F31/F1 as a shared definition. Add #308's 'how capital accumulates' to S17."
+    },
+    {
+      "id": "C21",
+      "where": "case, rho, E_A, case loci",
+      "kind": "case",
+      "severity": "note",
+      "finding": "Case equal and ρ = extends are supported. All nine case loci are verbatim at the named sections: #727 header, §0, §2.3 and §4; #726 Governing Doctrine and §11.5; #533 §II; #1634 §1; #18 Introduction. #727 also names the relation in so many words ('Semantic Economy is Lee Sharks' contemporary extension and disclosure of political economy'), and its matrix calls political economy the 'disclosed parent field'. A reader of the same papers would decide the same way. The witness reading fails because the archive does not contest the field's object; it adds a substrate to it ('does not abolish political economy'). The mixed reading fails because #727 itself places its strongest sense next to an existing field (cultural political economy), so §0.10 does not apply. E531-02 ('semantic infrastructure is ontologically prior to debt-bearing economic systems') is the strongest ontological sense, and it too is stated about the field's object.",
+      "evidence": "#727 §0: \"Semantic Economy is Lee Sharks' contemporary extension and disclosure of political economy under AI retrieval, platform governance, and knowledge-graph capitalism\"",
+      "fix": "None to the reading. Optionally add the §0 'extension and disclosure' sentence to the case loci, since it states ρ in its own word."
+    }
+  ],
+  "case_agrees": true,
+  "summary": "Equal/extends confirmed and every claim of both ledgers is composed with received quotes verbatim, but the KO misplaces #247's 'semantic economy' Overview as if it were political economy's, leaves many field claims unattributed (KO 5-7, P lede and nine items) while every archive claim carries its number, closes with an 18-sentence archive-only block, lists translation pairings that are not composed together, and alters several claims (F36 'just', F30 'can help', E467-02 disjunction, E727-12, E1666-04 scope, #122's undated count) plus an open-block question that cushions #727's canonical claim."
+}

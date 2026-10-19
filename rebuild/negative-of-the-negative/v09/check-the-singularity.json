@@ -1,0 +1,197 @@
+{
+ "row": "the-singularity",
+ "checker": "Claude (Opus 5.5), independent checker subagent under v09/CHECK-BRIEF.md; did not compose the row; read spec §0.7–0.10, §1.2a, §4.1–4.8, §5.10, field.json (49 claims), ledger-archive.json (58 claims), #1635 (AXN-06C9), #1637 (AXN-06CB), #1643 (AXN-06D1); all 58 archive ledger quotes and all 8 case loci found verbatim in the named texts (whitespace/asterisks normalized); translation table checked by script (49/49 field claims, each in exactly one row, every received quote verbatim from field.json); every ledger id is cited in the KO; P body 350 words with labels",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "P (compression body) and cuts[0]",
+   "kind": "coverage",
+   "severity": "must-fix",
+   "finding": "A kernel claim is cut from the compression. F30 (Miessler, B4) is kernel: true, and it is in the cut list. The cut log says 'none of these is a kernel claim', which is false. §4.6: 'Kernel claims are never cut (§5.2).' B4's kernel is F30 + F32; only F32 survives in P (and at raised force, see C4).",
+   "evidence": "field.json F30: \"AGI and ASI are about the machine. The singularity is about us—specifically, about the moment we lose the ability to see what's coming\" … 'kernel': True. cuts[0].kernel: \"none of these is a kernel claim\"",
+   "fix": "Restore F30 to the 'Unpredictable' item: `Unpredictable: \"an opaque wall across the future\" (Britannica); \"the moment we lose the ability to see what's coming\" (Miessler).` Recover the words from the Lineage items (e.g. 'Kurzweil 2005, 2024: accelerating returns; an epistemic horizon' → 'Kurzweil: accelerating returns; a horizon'). Remove F30 from cuts[0].claims and correct cuts[0].kernel to name no kernel claim only after the restoration."
+  },
+  {
+   "id": "C2",
+   "where": "P §'Plausibility and limits', items 'Capability apart:' and 'Non-claims:'",
+   "kind": "attribution",
+   "severity": "must-fix",
+   "finding": "Archive claims are composed with no source named (§4.5, §5.4). 'Capability apart' carries G1635-07 and G1637-06 (with F6) and names nobody. 'Non-claims' carries G1635-38 and G1637-02, the archive's own stated limits, and names nobody. Without a label read as a non-claim, 'neither self-improvement nor a technological singularity impossible' also reads as a flat assertion that neither is impossible, which the paper does not make.",
+   "evidence": "G1635-38: \"The paper does not claim recursive self-improvement is impossible or irrelevant\"; G1637-02: \"… that a technological singularity is impossible;\"; G1637-06: \"A model can become more capable while the viable field of exterior history contracts\"",
+   "fix": "`Capability apart: human-level machines need no singularity (Wikipedia); capability can rise as exterior history contracts (#1635, #1637).` `Non-claims (#1635, #1637): not that self-improvement or a technological singularity is impossible.` Trim elsewhere to stay within 350 words."
+  },
+  {
+   "id": "C3",
+   "where": "P items 'Von Neumann, Ulam 1958', 'Good 1965', 'Vinge 1983, 1993', 'Kurzweil 2005, 2024', 'Self-improvement', 'Dates', 'Saturation', 'Sign unknown'; also 'Unpredictable' (F14) and 'Generate against reproduce' (G1637-04/05)",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "Field claims in the compression carry no source: Wikipedia (F7, F8, F2, F9, F10, F11, F4, F5, F15, F18), Third Way (F21, F22, F23), The Hill (F43), IBM (F28, F29), Marr (F39, F40, F41), Britannica (F46–F48), singularity.com (F42). Archive claims of #1635 sit under labels naming only #1637 ('Vinge': G1635-09; 'Kurzweil': G1635-10), and #1637 claims under '(#1635)' only ('Generate against reproduce': G1637-04, G1637-05). §4.5 applies to field and archive alike.",
+   "evidence": "P items: \"Von Neumann, Ulam 1958: beyond which human affairs could not continue.\"; \"Saturation: decreasing returns, S curves, exponentials that never last.\"; \"Sign unknown: beneficial, harmful, existential; disease banished; machine goals first; security.\"",
+   "fix": "Name the source per item at compression grain, e.g. `Von Neumann, Ulam 1958 (Wikipedia): …`; `Good 1965 (Wikipedia, Third Way, The Hill): …; the recursive core (#1635).`; `Vinge (Wikipedia): the end of the human era; discontinuity (#1635), possibly from a system (#1637).`; `Saturation (Wikipedia, IBM): …`; `Sign unknown (Wikipedia, Britannica, IBM): …`; `Generate against reproduce (hypothesis): … (#1635, #1637).`"
+  },
+  {
+   "id": "C4",
+   "where": "P §'When', item 'Dates:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The item states Miessler's interpretation (F32), Third Way's attributed consensus (F23) and Altman's quoted remark (F41) as flat facts: 'the window closed', 'AGI this decade', '\"now\"'. KO 17 carries them correctly; the compression raises them.",
+   "evidence": "F32 (interpretation): \"Vinge's thirty-year window from 1993 has basically closed\"; F23 (attributed): \"There is an emerging consensus among experts that AGI should arrive at least by the end of the decade.\"; F41 (attributed): \"we are now, like, in the singularity\"",
+   "fix": "`Dates: Vinge 2005–2030, a window Miessler judges closed; Kurzweil 2045; AGI this decade by an emerging consensus (Third Way); \"now\" (Marr).`"
+  },
+  {
+   "id": "C5",
+   "where": "P §'What it names', item 'Re-objected:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The item drops the second half of G1635-03 ('or of durable non-closure'), so the archive's sense is narrowed to closure alone. That is #1643's reading (KO 29), and it prejudges open item 2. The phrasing 'not runaway intelligence' also turns the paper's side-by-side contrast into a correction, which #1637 B.6 explicitly declines ('not a correction to every existing one').",
+   "evidence": "G1635-03: \"The technological singularity is a theory of runaway intelligence. The contingent singularity is a theory of runaway closure, or of durable non-closure, in the conditions of symbolic history.\"",
+   "fix": "`Re-objected: runaway closure, or durable non-closure, beside runaway intelligence (#1635).`"
+  },
+  {
+   "id": "C6",
+   "where": "P §'Plausibility and limits', item 'Growth not its variable:'; rho.statement ('the growth objections do not touch its variable')",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'Thorstad's critique misses it' and 'do not touch its variable' are stronger than what the paper says, which is comparative: the critique is not a problem 'in the way it is for the intelligence explosion'.",
+   "evidence": "G1635-29: \"Thorstad's critique is not a problem for this theory in the way it is for the intelligence explosion.\"; G1635-15: \"the contingent singularity changes all three elements and depends on none of the growth assumptions.\"",
+   "fix": "P: `Growth not its variable: depends on none of the growth assumptions; Thorstad's critique not a problem for it as for the intelligence explosion; logistic curves coexist with closure (#1635, #1637).` rho.statement: 'limits on the field's object (it depends on none of the growth assumptions; capability and closure come apart)'."
+  },
+  {
+   "id": "C7",
+   "where": "KO sentence 12",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The paper identifies its sense with Vinge's ('That is Vinge's \"old models must be discarded\"') and only then calls it nearer to that than to an infinite rate of growth. KO 12 keeps only the comparison, which lowers an identification to a proximity.",
+   "evidence": "G1635-17: \"That is Vinge's \"old models must be discarded,\" and it is nearer to it than to an infinite rate of intelligence growth.\"",
+   "fix": "`The Final Time specifies singularity as a breakdown or transformation in the rule governing continuation, which it calls Vinge's \"old models must be discarded\", nearer to it than to an infinite rate of intelligence growth (#1635).`"
+  },
+  {
+   "id": "C8",
+   "where": "KO sentence 28",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Two interpretations (G1635-22, G1635-24) are stated as flat assertions. The source appears only in a closing parenthesis, and no verb carries the source's modality (§5.3: the grammar must carry the modality to the reader). Every other archive sentence in the KO has 'The Final Time holds/reads/defines' or an equivalent.",
+   "evidence": "KO 28: \"No single terminal target governs the transition: heterogeneous orders can share a carrier … (#1635).\"; G1635-22 modality 'interpretation'",
+   "fix": "`The Final Time holds that no single terminal target governs the transition: heterogeneous orders can share a carrier while pursuing distinct invariant futures, a field of competing contingent Omegas, and more than one incompatible future can remain viable from the same present (#1635).`"
+  },
+  {
+   "id": "C9",
+   "where": "KO sentence 1 and P lede",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "In the equal case there is no precedence either way (§0.9), and claims within a sense are ordered by genealogy (§4.7). KO 1 and the lede (the card, §5.8) open with the archive's frame (G1637-11, 2026-09-25; G1635-13, 2026-09-23) as the head of the definition, ahead of F1, the field's definition and the earlier instance. Elsewhere the KO orders by genealogy, field first within each sense. A reader applying §4.7 would open with F1 and then give the family-of-hypotheses claim, or else log the dependency reason for putting it first as a coordinating act. As it stands, no reason is logged.",
+   "evidence": "KO 1: \"The singularity is, in the words of The Final Time (#1637), a contested family-resemblance term … : Wikipedia defines …\"; notes: coordinating acts logged for KO 4, 20, 29 only",
+   "fix": "Either reorder: `The technological singularity, often simply called the singularity, is in Wikipedia's definition \"a hypothetical event in which technological growth accelerates beyond human control, producing unpredictable changes in human civilization\"; The Final Time (#1637) holds \"singularity\" a contested family-resemblance term, its literature a family of hypotheses, not one prediction (#1635), and defines a distinct member, the contingent singularity, \"…\" (#1635).` Or keep the order and log it in notes as a dependency act (the family claim governs how the members are listed), citing G1637-11, G1635-13 and F1. Apply the same choice to the P lede."
+  },
+  {
+   "id": "C10",
+   "where": "P lede",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The lede compresses kernel claim G1635-02 to 'a threshold at which the machinery of symbolic difference can alter …' and drops 'historical', 'material' and 'that makes symbolic difference operable'. 'Material' is the distinction the paper rests on (G1637-04; G1637-05, 'cannot be merely computational or symbolic'). Under D_pres a compression may shorten a claim but may not remove the distinction it carries.",
+   "evidence": "G1635-02: \"A contingent singularity is a historical threshold at which the material machinery that makes symbolic difference operable becomes capable of altering the viability of further dialectical difference itself.\"",
+   "fix": "`… and the contingent singularity, a historical threshold at which the material machinery that makes symbolic difference operable can alter the viability of further dialectical difference (#1635).` (+5 words; recover them from the Lineage items)"
+  },
+  {
+   "id": "C11",
+   "where": "KO sentence 4",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "G1635-31 is cited, but only its second sentence is composed. 'Its catastrophe can be bureaucratic, smooth, and finite' is a distinct characterization, and it is the claim's answer to the field's 'existential catastrophe' (F18; G1635-28). Dropping it removes part of the claim, not just words.",
+   "evidence": "G1635-31: \"Its catastrophe can be bureaucratic, smooth, and finite. Nothing has to be superhuman for the exits to close.\"",
+   "fix": "End KO 4 with: `… that its catastrophe can be bureaucratic, smooth and finite, and that \"Nothing has to be superhuman for the exits to close\" (#1635, #1637).`"
+  },
+  {
+   "id": "C12",
+   "where": "case.statement and notes ('F16, F17, F44'); case.statement ('adopting Vinge's discontinuity criterion over the growth criterion')",
+   "kind": "case",
+   "severity": "should-fix",
+   "finding": "The case reading agrees (see case_agrees), but one cited support does not bear. F16 records disagreement about when or whether human intelligence will be surpassed. It is not evidence that the field holds the term as plural. The field's real marginal holding of a non-superintelligence sense is F17 (broader use), together with F44/F49 (Britannica's technology-synthesis definition). Separately, 'over the growth criterion' raises the B.2 locus, which says 'more directly than'.",
+   "evidence": "F16: \"Technology forecasters and researchers disagree about when, or whether, human intelligence will be surpassed.\"; #1637 B.2: \"The contingent-singularity model adopts the discontinuity criterion more directly than the growth criterion\"",
+   "fix": "Replace '(F16, F17, F44)' with '(F17, F44, F49)' in case.statement and notes. Replace 'adopting Vinge's discontinuity criterion over the growth criterion' with 'adopting the discontinuity criterion more directly than the growth criterion'."
+  },
+  {
+   "id": "C13",
+   "where": "P open item 2 ('What is the sign of The Final Time's singularity?')",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "The open item presents the sign as open between #1635/#1637 and #1643, and says it would be resolved by 'a statement in either deposit'. The defining paper makes that statement itself, at §0, in both #1635 and #1637. The statement is not in the ledger, so the KO cannot cite it (the composer saw this; notes). The open block should say so rather than ask for a statement that exists.",
+   "evidence": "#1635/#1637 §0 (verbatim in both texts): \"And a boundary once reached has no fixed sign: it can close, or it can install an invariant architecture of revisability.\"",
+   "fix": "Rewrite would_resolve: `the paper's own statement at #1635/#1637 §0 (\"a boundary once reached has no fixed sign: it can close, or it can install an invariant architecture of revisability\"), not in the ledger, re-extracted; what then remains open is whether #1643's 'point of closure' names terminal closure alone.` Add 'opacity: ledger extraction gap' to the item's modality."
+  },
+  {
+   "id": "C14",
+   "where": "ledger-archive.json (upstream of the KO)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Under the opening-and-defined-terms extraction rule (§3.5), the ledger lacks several claims from #1635/#1637 §0 that bear on ρ and on the sign: the primary variable, that the boundary may not occur, that no single successor is necessary, and that the sign is not fixed. C_ex reads the ledger only, so this is not a composition defect. A re-extraction should take them before freeze.",
+   "evidence": "#1635 §0: \"Its primary variable is not iota(t)=machine intelligence, but K[D](t)=the set of states from which an exterior symbolic difference can still reach durable standing.\"; \"The boundary may not occur.\"; \"No single successor is necessary; several heterogeneous orders can be viable from the same present.\"",
+   "fix": "Re-extract #1635/#1637 §0 into the archive ledger. Then recompose KO 3 (variable), KO 18 (may not occur) and KO 26 (no fixed sign)."
+  },
+  {
+   "id": "C15",
+   "where": "P items 'Double:' (G1635-32, G1635-35) and 'Non-claims:' (G1635-25)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "These items cite ids whose content they do not state: the plural-looking closed system, 'no apocalypse is required', and the terminological non-claim. The claims are carried in KO 27 and KO 23, so coverage holds. But the item-level claim lists overstate what the compression says.",
+   "evidence": "P 'Double:' text: \"terminal closure or terminal reflexivity, \\\"durability without finality\\\" (#1635, #1637).\"",
+   "fix": "Move G1635-32, G1635-35 and G1635-25 from these items' claim lists to cuts[0] (carried in KO 23, 27), or state them in the items."
+  },
+  {
+   "id": "C16",
+   "where": "P §'Mechanisms', item 'Narrowing:' ('regime-dependent')",
+   "kind": "force",
+   "severity": "note",
+   "finding": "'regime-dependent' is stated flatly. G1637-10 makes it conditional: enlarging cases would be evidence that diminution is regime-dependent. Open item 5 then poses as open the question the item has just answered.",
+   "evidence": "G1637-10: \"cases in which later turns enlarge the viable state space are direct counterinstances to a universal diminishing-dialectic claim and evidence that diminution is regime-dependent.\"",
+   "fix": "`Narrowing: no exponential acceleration needed; the viable kernel can shrink where turns close state space, diminution not presumed universal (#1635, #1637).`"
+  },
+  {
+   "id": "C17",
+   "where": "KO sentence 25 (F24); P item 'Sign unknown:' ('security')",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "F24 (lineage 'policy frame') is placed among the sign-of-outcome claims. In P it sits under the label 'Sign unknown', which states something about F24 that F24 does not say. The coordinating act is not logged.",
+   "evidence": "F24: \"American leadership in AI, including open source, is a national security issue.\" lineage 'policy frame'",
+   "fix": "In KO 25, keep the clause and mark it as policy ('…; on policy, Third Way holds …'). In P, give it its own clause outside 'Sign unknown' or log the placement in notes."
+  },
+  {
+   "id": "C18",
+   "where": "KO sentences 15 ('corrects its earlier formulation'), 16 ('Tiger Leap's contingent Logos'), 26 ('requires invariants, above them')",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "These phrases come from the ledger claim texts. They are not in the cited quotes, but each is verified in #1635/#1637: §19 'The earlier formulation treated this as if it already supplied the formal result … It does not.'; the §18 heading 'Tiger Leap: the contingent Logos'; §34 'That requires invariants such as … and above them no settlement owns …'. The sentences are entailed by the defining paper. The ledger quotes are too short.",
+   "evidence": "G1635-40 quote: \"A positive cost does not by itself prove Sₙ₊₁<Sₙ\"; G1635-41 quote: \"meaning can fail to cross the interval required for its continuation.\"; G1635-33 quote: \"no settlement owns the possibility of its own revision.\"",
+   "fix": "No change to the text. Widen the three ledger quotes at re-extraction."
+  },
+  {
+   "id": "C19",
+   "where": "KO sentences 17 (F41), 19 (F19), 20 (F36)",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "The ledger claim texts name speakers (Altman, Pinker, Davies) that the quotes do not contain. The KO correctly leaves the names out ('Marr quotes the view', 'it quotes the judgment', 'the reply'). The defect is in the ledger, not the composition.",
+   "evidence": "F41 claim: \"Altman: 'we are now, like, in the singularity'\" against quote \"we are now, like, in the singularity\"; F19 claim \"Pinker: …\"; F36 claim \"Davies: …\"",
+   "fix": "Re-extract from saved texts with the speaker inside the quote, then attribute in the sentence."
+  },
+  {
+   "id": "C20",
+   "where": "KO paragraphs 1–7; KO 26–29; P final section",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "The KO does not open with the field's composition as a block: KO 1 mixes both ledgers, KO 3 is archive, and the composer reports 0/13 KO_B survivals (not recomputed here). Within each sense paragraph, field sentences lead and archive sentences follow. Genealogy entails this, since every field source predates 2026-09-23. The KO ends with four archive sentences (26–29) and P with three archive items, but KO 25 (field) opens that sense, so this is ordering within a sense, not a closing block. The §5.10 opening-run check passes.",
+   "evidence": "Paragraph pattern: para 2 = KO 11 (F) then 12 (A); para 3 = 13 (F) then 14–16 (A); para 7 = 25 (F) then 26–29 (A)",
+   "fix": "None required. Record for §5.10."
+  },
+  {
+   "id": "C21",
+   "where": "KO sentence 8 (G1637-15)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "KO 8 drops the evidence G1637-15 gives for Vinge's not limiting the route to a single machine: networked intelligence, intimate interfaces, biological enhancement. This bears on open item 1 (superintelligence as criterion).",
+   "evidence": "G1637-15: \"He did not limit the route to a single autonomous machine, considering networked intelligence, intimate interfaces, and biological enhancement; the discontinuity could arise from a system.\"",
+   "fix": "`… reports that he did not limit the route to a single autonomous machine, considering networked intelligence, intimate interfaces and biological enhancement, so that the discontinuity could arise from a system (#1635, #1637).`"
+  }
+ ],
+ "case_agrees": true,
+ "summary": "The case reading holds. Equal, ρ = extends is supported by verbatim loci (#1637 B.6 'a distinct member of the family, not a correction to every existing one', §31 coexistence, §2.5, §37; #1635 Abstract and §1), and the field's own broader sense (F17) and synthesis definition (F44/F49) show the field holds a non-superintelligence sense, so the witness law does not apply. A reader of the same papers would decide the same, though F16 should drop out of the support. The KO's sentences are entailed by their ledger quotes, attributed, and verbatim in the texts, and the translation table is complete and verbatim. The defects are in the compression: a kernel claim (F30) cut, with the cut log wrongly saying no kernel claim was cut; archive and field claims left unattributed; and several force shifts (Dates, Re-objected, Thorstad 'misses it'). In the KO: two force fixes (KO 12, 28), a dropped clause (KO 4) and a lede ordering question (KO 1). The ledger lacks #1635/#1637 §0's 'no fixed sign' statement, so open item 2 asks for a statement the paper already makes."
+}

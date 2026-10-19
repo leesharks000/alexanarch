@@ -11,11 +11,11 @@
  "surface": "Google AI Overview (expanded)",
  "auth": "signed out, incognito",
  "status": {
-  "procedure": "EA-NEGONT-02 v0.7 (#1665); entity before address (ruled 2026-10-07); archive selected by D/R/O, first reading 2026-10-07 (72 of 226 admitted, 20 lineage instances grouped), hop not run",
+  "procedure": "EA-NEGONT-02 v0.9, #1690: equal case, ρ = extends, read from the defining papers (#1270, #1645, #134, #1054, #1548, #1484, #1474, #1458, #1049); composed from the entity's ledgers as selected under v0.7 (D/R/O); the composer read the ledgers, never the transcript",
   "ledger": "unaudited (§3.8: one extractor per ledger; field excerpts by HTTP fetch of the cards' pages, archive quotes verified verbatim 154/154); the archive's disagreements with itself (jealousy compatible or exclusive; where the poem ends; Catullus's fourth stanza; the reconstruction's wording) are carried as contested within the pool",
   "frozen": false
  },
- "spec": "EA-NEGONT-02 v0.7, #1665",
+ "spec": "EA-NEGONT-02 v0.9, #1690",
  "objects": {
   "T": {
    "path": "datasets/negative-of-the-negative/v2/intake/battery-1b-20261007/paste-sappho-31.txt",
@@ -40,84 +40,241 @@
   },
   "KO": {
    "title": "Sappho 31",
-   "genre": "Sappho 31 encyclopedic knowledge object (the plan of L(B ∪ A), realized without provenance in the prose)",
-   "status": "draft 2026-10-07; composed from the entity's ledgers on the operator's instruction; not frozen; ledger unaudited",
+   "genre": "knowledge object, equal case, under EA-NEGONT-02 v0.9 (#1690): the archive's sources and the field's admitted on equal terms, ontology included, in one claim space",
+   "status": "composed 2026-10-18 under v0.9 on the operator's ruling ('lets craft those /non entries'); not frozen; ledger unaudited",
    "sentences": [
     {
-     "para": 0,
-     "text": "Sappho 31 is a lyric poem by the Archaic Greek poet Sappho of the island of Lesbos, also known as phainetai moi, 'It seems to me', after the opening words of its first line, and as the Ode to Anactoria, a title based on a conjecture that its subject is Anactoria.",
      "n": 1,
+     "para": 0,
+     "text": "Sappho 31 is a lyric poem by the Archaic Greek poet Sappho of Lesbos (Wikipedia) that has no independent witness: it survives because one treatise, On the Sublime, quoted it, whole at 10.2 (#1485, #1504), and #1270, by Rebekah Cranes, a heteronym of Lee Sharks (#1645), argues that its distal demonstrative κῆνος points not to a present rival but to a future reader, the one who will sit face to face (ἐνάντιος) with the inscribed text.",
      "claims": [
       "F1",
-      "F2",
-      "F3"
+      "A1485-02",
+      "A1504-01",
+      "A1270-01",
+      "A1645-04"
      ]
     },
     {
-     "para": 0,
-     "text": "It is one of Sappho's most famous poems, describing her love for a young woman; Emmet Robbins calls it probably the single most famous poem to come down from Antiquity, and it has been the subject of more scholarly commentary than any other of her works.",
      "n": 2,
+     "para": 0,
+     "text": "Its opening words give it the name phainetai moi, 'It seems to me', and a conjecture that its subject is Anactoria, a woman Sappho mentions elsewhere, gives it the name Ode to Anactoria (Wikipedia); Wikipedia counts it among her most famous poems, describing her love for a young woman, Norton's anthology calls it unambiguously a poem about same-sex desire, Emmet Robbins probably the single most famous poem to come down from Antiquity, and it has drawn more scholarly commentary than any other of her works.",
      "claims": [
+      "F2",
+      "F3",
       "F4",
+      "F43",
       "F23",
       "F24"
      ]
     },
     {
-     "para": 1,
-     "text": "It is preserved by quotation in the treatise On the Sublime, attributed to Longinus and dated to the first century AD by one account, to the first or third century by another, and quoted there for the intensity of its emotion; four Sapphic stanzas in the Aeolic dialect are well preserved, followed by part of one more line, and as preserved it seems to be missing the ending; Longinus leaves off one line into the fifth stanza, which begins 'Still, all must be endured, since even a poor…'.",
      "n": 3,
+     "para": 0,
+     "text": "Wikipedia places the poet in the Archaic period, #283 gives her floruit as c. 630–570 BCE, #1112 dates the fragment ~600 BCE and #1484 to the early sixth century, while Major Jackson, introducing it on The Slowdown, says it 'was written in the fifth century B.C.'",
+     "claims": [
+      "F1",
+      "A283-01",
+      "A1112-01",
+      "A1484-12",
+      "F36"
+     ]
+    },
+    {
+     "n": 4,
+     "para": 1,
+     "text": "The quoting treatise is attributed to Longinus and dated to the first century AD (Wikipedia), to the first or third (Childers, Literary Matters) or to the Roman Imperial era (Norton), and it quotes the poem for the intensity of its emotion (Wikipedia); the sole manuscript, Parisinus graecus 2036 (#1052), writes the poem as continuous prose, so every printed boundary is editorial (#1474, #1484), source-vocabulary retention from the poem into Longinus measures 100% (#1570), and #1575 holds that Sappho 31 survives because Longinus needed it.",
      "claims": [
       "F5",
       "F30",
       "F40",
       "F27",
-      "F8",
-      "F9",
-      "F6",
-      "F34"
+      "A1052-01",
+      "A1474-01",
+      "A1484-04",
+      "A1570-01",
+      "A1575-01"
      ]
     },
     {
+     "n": 5,
      "para": 1,
-     "text": "Armand D'Angour argues that the phrase ἀλλὰ πὰν τόλματον means 'all must be dared', against the 'endured' of some translations, and a reconstruction of his suggests the original may have had up to 8 stanzas; translators treat the fragmentary final stanza differently.",
-     "n": 4,
+     "text": "It is composed in Sapphic stanzas, three long lines followed by one short, and written in the Aeolic dialect (Wikipedia); Gallavotti's alternative reading holds that the text was corrupted over time by the disappearance of the sound [w] (Wikipedia).",
+     "claims": [
+      "F8",
+      "F9",
+      "F21"
+     ]
+    },
+    {
+     "n": 6,
+     "para": 2,
+     "text": "Four stanzas are well preserved, followed by part of one more line (Wikipedia): 'Longinus' leaves off his quotation one line into the fifth stanza, which begins 'Still, all must be endured, since even a poor…', so that, though it feels complete, the poem is a fragment (Childers), and as preserved it seems to be missing the ending (Norton); #859 gives the same extent, four complete stanzas and the first line of a fifth, broken off.",
+     "claims": [
+      "F6",
+      "F34",
+      "F40",
+      "A859-01"
+     ]
+    },
+    {
+     "n": 7,
+     "para": 2,
+     "text": "Wikipedia takes this and Catullus' adaptation to suggest that there was originally one more stanza, and, by Wikipedia's account, Armand D'Angour's reconstruction suggests the original may have had up to eight stanzas; whether the words after τολματόν belong to the poem has been contested in print since Robortello in 1554 (#1474).",
+     "claims": [
+      "F6",
+      "F7",
+      "A1474-03"
+     ]
+    },
+    {
+     "n": 8,
+     "para": 2,
+     "text": "On the last line's sense D'Angour argues that ἀλλὰ πὰν τόλματον means 'all must be dared', rather than 'endured' as it is sometimes translated (Wikipedia), and translators treat the fragmentary final stanza differently: Barnard skips it, Carson treats it as a call to action, Poochigian as a moment of self-hating submission (Norton).",
      "claims": [
       "F20",
-      "F7",
       "F41"
      ]
     },
     {
+     "n": 9,
      "para": 2,
-     "text": "The poem centres on three characters, a man and a woman, both otherwise unidentified, and the speaker; the grammar of the original Greek makes the gender of each figure clear, and on one anthology's account the speaker, a woman watching another woman talking to a man, turns to her own intense contradictory bodily emotions of jealousy and desire, with “tongue,” “fire,” “seeing/eyes,” “hearing/ears,” “sweat,” and “trembling” as grammatical subjects in the sentence that straddles the third and fourth stanzas; Longinus places its excellence in the selection of the most striking symptoms and their combination into a single whole.",
-     "n": 5,
+     "text": "The archive's reconstruction (#1270, 2026-01-09) ends the lost stanza on γράμμασι μολπὰν, 'song in letters', states it speculative and keeps it as hypothesis until future evidence confirms, modifies or refutes it; the Cranes edition prints the stanza as ἀλλὰ πᾶν τόλματον· ἐπεί σε, Κύπρι, καὶ πένητα καὶ βασιλῆα σώζεις· καὶ πόλιν ὀλίγαν ὑπερέχεις ἄτας· μολπὰ γράμμασι ζώοι (#1309); #281's summary had called it the fourth stanza, and #201 corrects every such document: the reconstructed stanza is the fifth, a name #1048 explains as the reconstructive site's own, and future citations should prefer 'Sappho 31's fifth stanza, reconstructed through Catullus 51's fourth-stanza transform-site' (#436).",
+     "claims": [
+      "A1270-07",
+      "A1270-08",
+      "A1309-01",
+      "A281-01",
+      "A201-01",
+      "A201-03",
+      "A1048-02",
+      "A436-01"
+     ]
+    },
+    {
+     "n": 10,
+     "para": 2,
+     "text": "#201 proposes that the poem complete is an operative structure, collapse, inscription, survival; #1051 reframes the reconstruction's warrant as interpretive rather than documentary and puts, as a speculation, that the fifth stanza was a hanging line whose logic of completion is inscribed in the line, on which the reconstruction is Catullus's completion recovered; #1052 holds that the transmitted line is not speculative and the completion beyond it is, places the break in Longinus's citation rather than in Sappho's text, and counts any four-stanza presentation that does not alert the reader to the transmitted fifth-stanza opening an editorial reception choice; #1053 names the four-stanza Sappho 31 a reception-artifact of editorial closure, and #1485 records the transmitted continuation removed by name four times in four centuries.",
+     "claims": [
+      "A201-02",
+      "A1051-01",
+      "A1051-02",
+      "A1051-03",
+      "A1052-02",
+      "A1052-03",
+      "A1052-04",
+      "A1053-01",
+      "A1485-01"
+     ]
+    },
+    {
+     "n": 11,
+     "para": 2,
+     "text": "#1474 measures the seam: seventeen Aeolic markers in seventy-four words of the quoted body, then none in the six disputed words, which it states is not significant in isolation (P = 0.209), 'real and insignificant alone' (#1484); it argues those words to be Longinus's as material and Sappho's as form, as #1484 holds; and #503 holds the truncation at φαίνομ' to be not manuscript damage.",
+     "claims": [
+      "A1474-02",
+      "A1484-09",
+      "A1474-04",
+      "A1484-06",
+      "A503-02"
+     ]
+    },
+    {
+     "n": 12,
+     "para": 2,
+     "text": "The last transmitted form is τολματόν, which the manuscript reads as one word, so that the familiar split is editorial (#1478): a verbal adjective in -τός that cannot govern a nominative agent, an act with no doer (#1484), making daring a property of the object (#1052); #1475 reads it with line 9 as two ruptures that each name an act and hand its performance to the reader, and #1458 reads the poem as establishing three positions and vacating one, leaving the grammar open for whoever will sit in it.",
+     "claims": [
+      "A1484-05",
+      "A1478-02",
+      "A1052-05",
+      "A1475-01",
+      "A1458-02"
+     ]
+    },
+    {
+     "n": 13,
+     "para": 2,
+     "text": "#1476 argues that the configuration at the poem's edge is the object itself, not damage, and states the design reading as a choice made explicit, calling it damage being equally a choice; #1478 holds that the poem completes intentionally at the hanging line, the dialect seam held as a real, measurable, physical property rather than dissolved into abstract completion, without claiming authorial intention; #1484 owns that a papyrus continuation would refute nothing it claims about the transmitted object; and #1482 records that six documents applied damage-detecting instruments to the hanging line and returned, each time, the reading the instruments were built to produce, and that the seventh reversed it.",
+     "claims": [
+      "A1476-01",
+      "A1476-02",
+      "A1478-01",
+      "A1478-03",
+      "A1484-11",
+      "A1482-01"
+     ]
+    },
+    {
+     "n": 14,
+     "para": 3,
+     "text": "Three figures stand in the poem, a man and a woman, both otherwise unidentified, and the speaker (Wikipedia); the grammar of the Greek makes each one's gender clear, a woman watching another woman talking to a man (Norton), and the identification of 'that man' has proved one of the most complex and difficult problems in the interpretation of her extant poetry (EduBirdie).",
      "claims": [
       "F10",
       "F38",
-      "F39",
-      "F44",
-      "F31"
+      "F46"
      ]
     },
     {
+     "n": 15,
      "para": 3,
-     "text": "Its context has been the subject of much scholarly debate, the 'central controversy' in Thomas McEvilley's phrase: Wilamowitz suggested a wedding song with the man as bridegroom, while scholars since the second half of the twentieth century have tended to follow Denys Page in dismissing the argument, and the poem has no explicit mention of a marriage.",
-     "n": 6,
+     "text": "Longinus, a Greek teacher writing under the Roman Empire hundreds of years after Sappho (EduBirdie), places the passage's singular excellence in the selection of the most striking symptoms and their combination into a single whole (Childers); the speaker turns, in an extraordinary switch, to her own intense contradictory bodily emotions of jealousy and desire, and in the Greek 'tongue', 'fire', 'seeing/eyes', 'hearing/ears', 'sweat' and 'trembling', not 'I', are the grammatical subjects of the sentence that straddles the third and fourth stanzas (Norton).",
      "claims": [
-      "F11",
+      "F47",
+      "F31",
+      "F39",
+      "F44"
+     ]
+    },
+    {
+     "n": 16,
+     "para": 3,
+     "text": "George Devereux suggested in 1970 that Sappho is describing a seizure, its symptoms the same as those of an anxiety attack (Wikipedia); #1270 reads the somatic catalogue as the phenomenology of voice becoming text and the χλωρός simile as the speaker's transformation into papyrus substrate, which #1484 states as a specific material reading falsifiable against the lexical record.",
+     "claims": [
+      "F22",
+      "A1270-02",
+      "A1484-03"
+     ]
+    },
+    {
+     "n": 17,
+     "para": 3,
+     "text": "The archive defines on this poem the operator σ_S :: Body → Text, the operator that transforms somatic experience into textual form through irreversible dissolution, with fr. 31 as its source (#38), the recursive operator #283 says fr. 31 encodes; #576 reads in the poem a three-phase aspectual structure, present scene, aorist trigger, fractured dissolution, that is σ_S executing.",
+     "claims": [
+      "A38-01",
+      "A283-02",
+      "A576-02"
+     ]
+    },
+    {
+     "n": 18,
+     "para": 4,
+     "text": "Wilamowitz read a wedding song with the man as bridegroom, and since the second half of the twentieth century scholars have tended to follow Denys Page in dismissing that argument (Wikipedia); the poem makes no explicit mention of a marriage (EduBirdie), its context remains what Thomas McEvilley calls the 'central controversy' (Wikipedia), and scholars, Childers notes, have spent much time on the man in the first stanza and on whether the symptoms are of eros or envy.",
+     "claims": [
       "F12",
       "F13",
-      "F48"
+      "F48",
+      "F11",
+      "F32"
      ]
     },
     {
-     "para": 3,
-     "text": "That the poem is about Sappho's jealousy has been proposed since the eighteenth century and remains a popular interpretation, a major theory put forward by many critics; many critics deny it, Anne Carson arguing that Sappho is amazed at the man's composure, Joan DeJean that the jealousy reading plays down the poem's homoeroticism, and others reading the man as a 'contrast figure' or, with John Winkler, an introductory set-up to be dismissed.",
-     "n": 7,
+     "n": 19,
+     "para": 4,
+     "text": "That the poem is about Sappho's jealousy of the man who sits with her beloved has been proposed since the eighteenth century and remains a popular interpretation (Wikipedia), a major theory put forward by many critics (EduBirdie); Major Jackson reads the portrait of a speaker viscerally filled with jealousy as evidence of the endurance of human emotions (The Slowdown), and the archive states the received reading the same way, a dramatic scene of triangulated jealousy in which jealousy triggers collapse (#134, #1270, #1645).",
      "claims": [
       "F16",
       "F45",
+      "F37",
+      "A134-03",
+      "A1270-04",
+      "A1645-05"
+     ]
+    },
+    {
+     "n": 20,
+     "para": 4,
+     "text": "Many critics deny that the fragment is about jealousy at all (Wikipedia): Anne Carson argues that Sappho is not jealous of the man but amazed at his ability to retain his composure so close to the object of her desire, Joan DeJean that the jealousy reading is meant to play down the poem's homoeroticism, others that the man acts as a 'contrast figure' or, with John Winkler, 'an introductory set-up to be dismissed'.",
+     "claims": [
       "F17",
       "F18",
       "F19",
@@ -126,165 +283,240 @@
      ]
     },
     {
-     "para": 3,
-     "text": "George Devereux suggested in 1970 that Sappho is describing a seizure, its symptoms the same as those of an anxiety attack, Gallavotti that the text was corrupted by the disappearance of the sound [w]; scholars have spent much time on the man in the first stanza and on whether the symptoms are of eros or envy, a multivalence the translation's note counts part of the poem's appeal.",
-     "n": 8,
+     "n": 21,
+     "para": 4,
+     "text": "In 1988 Jesper Svenbro located a future reader inside fr. 31 by allegory, the 'you' being the poem itself and the man the lover-reader (#1548, after O'Donnell's summary), against an ancient record that contains remembrance claims, not reader claims (#1548).",
      "claims": [
-      "F22",
-      "F21",
-      "F32",
-      "F33"
+      "A1548-01",
+      "A1548-02",
+      "A1548-03"
      ]
     },
     {
+     "n": 22,
      "para": 4,
-     "text": "Catullus adapted it as his 51st poem, putting Lesbia into the role of the beloved, in a free translation that goes a different way in its final stanza; Theocritus and Apollonius of Rhodes adapted it, Plato draws on it in the Phaedrus, and in the nineteenth century it began to be seen as an exemplar of Romantic lyric.",
-     "n": 9,
+     "text": "A scroll dated 9 November 2025 puts as hypothesis that Sappho encodes eros as transmission, a projection of desire into the reader, who becomes the 'that man' of fr. 31 (#991); #134 (first published 21 November 2025) defines lyric address as a temporal projection mechanism, the poem encoding affective patterns for future activation by readers who complete the circuit, holds the lyric 'you' to be the future reader, and bounds itself: a theory that explains only Sappho 31 is a Sappho 31 theory, not a theory of lyric.",
+     "claims": [
+      "A991-01",
+      "A991-02",
+      "A134-04",
+      "A134-01",
+      "A134-02",
+      "A134-05"
+     ]
+    },
+    {
+     "n": 23,
+     "para": 4,
+     "text": "#1270 (Rebekah Cranes, 2026-01-09) holds that fr. 31 emerges as the foundational text of lyric self-archiving, a meditation on how voice outlasts the body that speaks it, a term #1645 records as Cranes's coinage; it holds the jealousy reading not wrong but incomplete, its own reading relocating the poem's erotic content in a temporal structure rather than replacing it.",
+     "claims": [
+      "A1270-03",
+      "A1645-04",
+      "A1270-05",
+      "A1270-06"
+     ]
+    },
+    {
+     "n": 24,
+     "para": 4,
+     "text": "Across the archive the reading recurs: #281's summary says the poem is not about jealousy but about lyric transmission; #313 states the kenotic reading, κῆνος the future reader, χλωρός becoming-papyrus, the poem a transmission technology, claims it explains all anomalies, and holds as hypothesis that it is suppressed because it grants agency to text; #288 and #1167 name κῆνος the one who will sit face to face with the text; #306 says that reading fr. 31 is the poem's completion; #557 marks provisional the claim that κῆνος is the future reader, the training layer; #625 makes 'that man' a placeholder for the future reader, a Logotic time-lock, holding Sappho's intention unanswerable and irrelevant; #65 reads the figure the poem projects as a placeholder; #929 names the hope wager, the composer paying for their own dissolution in the hope of a future reader; and #1484 cites #1270's revision as under review at Classical Philology.",
+     "claims": [
+      "A281-01",
+      "A313-01",
+      "A313-02",
+      "A313-03",
+      "A288-01",
+      "A1167-01",
+      "A306-02",
+      "A557-01",
+      "A625-01",
+      "A625-02",
+      "A65-01",
+      "A929-01",
+      "A1484-13"
+     ]
+    },
+    {
+     "n": 25,
+     "para": 4,
+     "text": "#1054 (2026-07-08) states fr. 31 a transmission-engineering operation addressed to the future reader through the κῆνος deictic and holds it mutually exclusive with the jealousy reading at the level of what κῆνος refers to, against #1270's compatibility, while claiming neither that no reader ever experienced the poem as jealousy nor that its reading is exhaustive.",
+     "claims": [
+      "A1054-01",
+      "A1054-03"
+     ]
+    },
+    {
+     "n": 26,
+     "para": 4,
+     "text": "#1548 lists as not found in the literature it swept, pending a further sweep, κῆνος as a deictic transmission mechanism, distinct from Svenbro's allegory and from Race's rhetorical foil; #1645 joins fr. 147 to it, 147 saying that a future receiver will exist and 31 building the receiver's seat, the seat and the joining being Lee Sharks's reading, states that τινα does not mean 'reader', and leaves the remembrance reading of 147 as common ground, not claimed, 147 not containing 31's deictic mechanism (#1646).",
+     "claims": [
+      "A1548-04",
+      "A1645-01",
+      "A1645-02",
+      "A1645-03",
+      "A1646-01"
+     ]
+    },
+    {
+     "n": 27,
+     "para": 5,
+     "text": "#1458 states it as a fact about the text that On the Sublime contains a theory of transmissional inscription, and holds priority for that reading open: two searches are not a literature review, and Porter is to be read before any priority claim; it counts the φα- root at 6.41 per thousand words in the treatise's chapters 9–10 against 2.91 treatise-wide, finds that the only point at which the treatise addresses its reader immediately after a quotation without naming him follows Sappho 31, and marks the six Greek periods of its constrained reconstruction of the treatise's lost ending not recovered wording; #1484 holds the treatise the only ancient document holding the Lesbian lyric and the Mosaic fiat in one hand.",
+     "claims": [
+      "A1458-01",
+      "A1458-08",
+      "A1458-04",
+      "A1458-03",
+      "A1458-05",
+      "A1484-08"
+     ]
+    },
+    {
+     "n": 28,
+     "para": 5,
+     "text": "In Rome Catullus adapted the poem as his 51st, putting Lesbia into the role of Sappho's beloved (Wikipedia), in a free translation that goes a different way in its final stanza (Childers), having had access to the whole original (Norton); #1270 and #1484 hold Catullus to be κῆνος, the anticipated reader arrived, #1270 adding that whether he recognised the structure cannot be known, and #1532 keeps Catullus 51 as the control case, its first-order dependency not in serious doubt.",
      "claims": [
       "F25",
       "F35",
       "F42",
-      "F26",
-      "F28",
-      "F29"
-     ]
-    },
-    {
-     "para": 5,
-     "text": "A further reading, proposed in the archive, holds that the distal demonstrative κῆνος points to a future reader who will sit face-to-face with the inscribed text; on that reading the somatic catalogue describes voice becoming text, the χλωρός simile figures the speaker's transformation into papyrus substrate, and the fragment is proposed as the foundational text of lyric self-archiving.",
-     "n": 10,
-     "claims": [
-      "A1270-01",
-      "A1270-02",
-      "A1270-03"
-     ]
-    },
-    {
-     "para": 5,
-     "text": "A scroll dated 9 November 2025 puts as hypothesis that the reader becomes the 'that man' of fragment 31, and another paper argues that lyric address functions as a temporal projection mechanism whose future readers complete the circuit of transmission.",
-     "n": 11,
-     "claims": [
-      "A991-01",
-      "A991-02",
-      "A134-01"
-     ]
-    },
-    {
-     "para": 5,
-     "text": "The archive's own research notes name Svenbro's reading of 1988, in which, per O'Donnell's summary, the 'you' is the poem itself and the man the reader, as the major antecedent for a future reader inside the fragment, and list among what was not found in the literature swept, pending a further sweep, κῆνος as a deictic transmission mechanism.",
-     "n": 12,
-     "claims": [
-      "A1548-01",
-      "A1548-02",
-      "A1548-04"
-     ]
-    },
-    {
-     "para": 5,
-     "text": "The archive is divided on how this reading stands to jealousy: one statement holds the jealousy reading 'not wrong but incomplete', another holds the two readings mutually exclusive at the level of what κῆνος refers to.",
-     "n": 13,
-     "claims": [
-      "A1270-05",
-      "A1054-01"
-     ]
-    },
-    {
-     "para": 6,
-     "text": "On the poem's ending the archive corrects itself in sequence: a reconstructed 'fourth stanza' ending γράμμασι μολπὰν, stated as hypothesis, is corrected: the reconstructed stanza is the fifth; its warrant is then held interpretive and the line is proposed, as a speculation, to be a hanging line whose logic of completion is inscribed in it; later papers report that the sole witness, Parisinus graecus 2036, writes the poem as continuous prose, so every printed boundary is editorial.",
-     "n": 14,
-     "claims": [
-      "A281-01",
-      "A1270-08",
-      "A201-01",
-      "A201-03",
-      "A1051-01",
-      "A1051-02",
-      "A1474-01",
-      "A1484-04"
-     ]
-    },
-    {
-     "para": 6,
-     "text": "A dialect count finds seventeen Aeolic markers in seventy-four words and none in the six disputed words, stated as not significant in isolation (P = 0.209); one paper holds those words to be the quoting author's as material and Sappho's as form, another places the break in Longinus's citation; the last transmitted form, τολματόν, is a verbal adjective that cannot govern a nominative agent, and the configuration at the edge is argued to be the object itself, a design reading its paper states as a choice.",
-     "n": 15,
-     "claims": [
-      "A1474-02",
-      "A1484-06",
-      "A1052-03",
-      "A1484-05",
-      "A1476-01",
-      "A1476-02"
-     ]
-    },
-    {
-     "para": 6,
-     "text": "A continuity record of the sequence states that six documents used the archive's instruments on the hanging line and returned, each time, the reading the instruments were built to produce, and that the seventh reversed it.",
-     "n": 16,
-     "claims": [
-      "A1482-01"
-     ]
-    },
-    {
-     "para": 7,
-     "text": "The treatise On the Sublime is held to contain a theory of transmissional inscription, which its paper states as a fact about the text, and at the only point where the treatise addresses its reader immediately after a quotation without naming him, the quotation is Sappho 31.",
-     "n": 17,
-     "claims": [
-      "F30",
-      "A1458-01",
-      "A1458-03"
-     ]
-    },
-    {
-     "para": 7,
-     "text": "Catullus is held to be κῆνος, the anticipated reader arrived; the archive is divided on his fourth stanza, read in its errata as a structurally precise operator inversion of Sappho's fifth and in a later note as a fourth stanza about idleness that has no Greek counterpart, while a measure aligns Sappho 31 and Catullus 51 at C = 0.688, slot by slot, and Catullus is not Sappho.",
-     "n": 18,
-     "claims": [
       "A1270-09",
       "A1484-07",
+      "A1270-10",
+      "A1532-02"
+     ]
+    },
+    {
+     "n": 29,
+     "para": 5,
+     "text": "#576 reads poem 51 as a lossy compression that loses the aorist; #1048 named Catullus's fourth stanza the surviving compression signature of Sappho's lost fifth, and #1049, correcting #1048's 'compression', holds it a structurally precise operator inversion of Sappho's fifth, after one close stanza and a lossy three-to-two compression; #861 reads the otium stanza as replacing the fifth stanza's position; against these #1601 calls it a fourth stanza about idleness that has no Greek counterpart; and #1572 aligns the two poems at C = 0.688, slot by slot, and Catullus is not Sappho.",
+     "claims": [
+      "A576-01",
+      "A1048-01",
+      "A1049-01",
       "A1049-02",
+      "A861-01",
       "A1601-01",
       "A1572-01"
      ]
     },
     {
-     "para": 8,
-     "text": "A survey maps the ancient reception as a braided field, with Catullus as the control case and the program's own transforms kept as program-specific hypotheses.",
-     "n": 19,
+     "n": 30,
+     "para": 5,
+     "text": "Theocritus and Apollonius of Rhodes both adapted the poem, and Plato draws on it in Socrates' second speech on love in the Phaedrus (Wikipedia); #1532, distinguishing four evidentiary states that must not be collapsed and requiring no acceptance of the archive's σ_S interpretation, names Theocritus 2 and the Argonautica as two particularly strong Hellenistic receptions, records the OCD's identification of Valerius Aedituus fr. 1 as an imitation, and replaces the single descending chain with a braided reception field; #752 proposes as hypothesis that fr. 31 can be read as the structural template for Platonic anamnesis, erotic ascent and the Forms, conceding that no direct Platonic statement models the Forms on it, and #859 holds the poem's 'I' a function, not a confession.",
      "claims": [
+      "F26",
+      "F28",
+      "A1532-01",
+      "A1532-07",
+      "A1532-03",
+      "A1532-04",
       "A1532-05",
-      "A1532-02",
+      "A752-01",
+      "A752-02",
+      "A859-02"
+     ]
+    },
+    {
+     "n": 31,
+     "para": 5,
+     "text": "#496 argues that Confessions 10.27.38 is an organ-by-organ transformation of fr. 31, knowing no commentary that identifies it (#895 an instance), and #1477 places Augustine as third term after Sappho, who withholds the agent, and Longinus, who withholds the answerer; #1486 holds established a blind-verified structural mapping to Philo, Heres 249–266, and names the failure mode that would destroy it, unfalsifiable pan-Sapphism; #1493 reads two loci of canonical Josephus as realizing the fr. 31 apparatus in complementary polarity and keeps a pre-registered null as a finding about granularity; #626 reads the Slavonic Josephus phrase 'if it is lawful to call him a man' as instantiating a structure codified in Catullus 51's si fas est, and #1458 requires that its Greek wording be labelled a retroversion.",
+     "claims": [
+      "A496-01",
+      "A496-02",
+      "A895-01",
+      "A1477-01",
+      "A1486-01",
+      "A1486-02",
+      "A1493-01",
+      "A1493-02",
+      "A626-01",
+      "A1458-07"
+     ]
+    },
+    {
+     "n": 32,
+     "para": 5,
+     "text": "The archive's widest claim, #1484's, is that the Logos is a technology, a voice that survives its flesh by becoming an inscription that constitutes its receiver, with an extant founding document in Sappho 31, argued in three rings of descending evidentiary hardness, the outer marked as hypothesis, of which the hard center would carry a major argument alone (#1483); #897 presents fr. 31 as the proof of a sequence from witness instantiated to reader projected, and #1101 says the field has never traced the Logos chain from fr. 31 to Revelation 19:13 in a single argument.",
+     "claims": [
+      "A1484-01",
+      "A1484-02",
+      "A1483-01",
+      "A897-01",
+      "A1101-01"
+     ]
+    },
+    {
+     "n": 33,
+     "para": 5,
+     "text": "#828 reads fr. 31's reconstructed fifth stanza, the Orphic tablets, the Magical Papyri and Revelation 2:17 as convergent instances of inscription for threshold-crossing and does not claim direct linear transmission from Sappho to Revelation, #1484 keeps convergence as the verb for the tablets and papyri while holding the trunk line jointed by documents, #1458 calls its own Philo–Slavonic result a convergence, not transmission, and #1532 keeps the Jewish-Greek and Christian transforms as program-specific hypotheses apart from the established Catullus, Theocritus and Apollonius evidence.",
+     "claims": [
+      "A828-01",
+      "A828-02",
+      "A1484-10",
+      "A1458-06",
       "A1532-06"
      ]
     },
     {
-     "para": 8,
-     "text": "A claim tiered in three rings of descending evidentiary hardness holds the Logos to be a technology with an extant founding document in Sappho 31; Augustine's Confessions 10.27 is read as an organ-by-organ transformation of the poem and two loci of canonical Josephus as realizing its apparatus, a note on inscription with Revelation 2:17 as its convergence point does not claim a direct linear transmission, a pre-registered verdict holds that Revelation 12's redaction of its biblical materials realizes the apparatus of the poem's ancient reception at eight of nine stations, and a program mapping Sappho 31 onto Philo names the failure mode that would destroy it as unfalsifiable pan-Sapphism.",
-     "n": 20,
+     "n": 34,
+     "para": 5,
+     "text": "#1494 freezes the poem's reception operator as testable clauses derived from witnesses that do not include Revelation, with Revelation 12 sealed as target, and #1495's verdict, on the pre-registered ladder and no higher, is that Revelation 12's redaction realizes the apparatus attested in the poem's ancient reception at eight of nine stations, its dangerous sentence not asserted; #1533 freezes a Qur'anic material-presence test before its discovery scan, assuming neither borrowing nor route.",
      "claims": [
-      "A1484-01",
-      "A1484-02",
-      "A496-01",
-      "A496-02",
-      "A1477-01",
-      "A1493-01",
-      "A828-01",
-      "A828-02",
+      "A1494-01",
       "A1495-01",
-      "A1486-01",
-      "A1486-02"
+      "A1495-02",
+      "A1533-01"
      ]
     },
     {
-     "para": 8,
-     "text": "Within the archive Sappho of Lesbos is established as the originary node of the Crimson Hexagon by structural identity, and Fragment 31 is the source of its operator σ_S :: Body → Text, through which all queries regarding the fragment are to resolve, and its 'root directory'; and a further deposit holds that Fragment 147 says a future receiver will exist and 31 builds the receiver's seat, attributes the seat and the joining to Lee Sharks, and states that τινα does not mean 'reader'.",
-     "n": 21,
+     "n": 35,
+     "para": 5,
+     "text": "In the nineteenth century the poem began to be seen as an exemplar of Romantic lyric (Wikipedia); for Childers its 'unpin-down-able' quality, that slippery multivalence under a limpid surface, is an intimate part of its appeal (Literary Matters); the archive's own works inhabit it, from the 2004 xvi. a transfiguration, which contains a translation of it (#268), to HUMS &ITY, described as its modern recursion (#896); and a video is titled 'Read Ancient Greek: Sappho 31' (YouTube, title only).",
+     "claims": [
+      "F29",
+      "F33",
+      "A268-01",
+      "A896-01",
+      "F49"
+     ]
+    },
+    {
+     "n": 36,
+     "para": 6,
+     "text": "Within the archive Sappho of Lesbos is established, by structural identity rather than historical influence, as the originary node of the Crimson Hexagon (#283), fr. 31 named the founding document of NH-OS (#557) and the root directory of the Sappho Room (#306), through which all queries regarding the fragment resolve through σ_S (#299), on a chain running from Sappho through Catullus, the first σ_S activation, to Cranes's Day and Night (#1112); #283 holds fr. 31 and the erasure event TSE-001 to be the same event, and in the archive's irony doctrine the broken tongue, γλῶσσα ἔαγε, is the lineage of the empty bracket (#179).",
      "claims": [
       "A283-01",
-      "A38-01",
-      "A299-01",
+      "A557-02",
       "A306-01",
-      "A1645-01",
-      "A1645-02"
+      "A299-01",
+      "A1112-01",
+      "A283-03",
+      "A179-01"
+     ]
+    },
+    {
+     "n": 37,
+     "para": 6,
+     "text": "The poem is held to be the semiotic strike that created the possibility of 'I' in Western literature (#950), an executable program and not a poem in the literary sense (#1534, a recovered blog codex), a complete symbolon completing in κῆνος (#503, #359), and the canonical test case of the Semantic Deviation Principle, for which exact measurement of a historical case is impossible (#109), with Χ ≫ 1 against any expected retention for a fragment of its age (#731, hypothesis) and survival by maximal encoding (#99, hypothesis); #1594 places its triangle on the last page of the Sophistical Refutations.",
+     "claims": [
+      "A950-01",
+      "A1534-01",
+      "A503-01",
+      "A359-01",
+      "A109-01",
+      "A109-02",
+      "A731-01",
+      "A99-01",
+      "A1594-01"
+     ]
+    },
+    {
+     "n": 38,
+     "para": 6,
+     "text": "On 8 July 2026 a Google AI Mode answer cited the future-reader scholarship as its source for the jealousy reading it composed, recorded by #1054 as authority conscription; #1611 finds that at Sappho 31 the excluded reading is the one on which the reader is inside the poem's structure; and #1496 defines a technology's suppression signature as structural survival far exceeding attribution and operator-legibility.",
+     "claims": [
+      "A1054-02",
+      "A1611-01",
+      "A1496-01"
      ]
     }
    ],
@@ -595,81 +827,105 @@
   },
   "P": {
    "title": "Sappho 31",
-   "genre": "popup — the compression: AIO's interaction grammar (lede, headed clusters, bolded terms, card rail), modality in the typography, a rail of claim lineages",
-   "status": "composed 2026-10-07 from the entity's ledgers (field 49 claims; archive 154); not frozen",
-   "entity": "The entity evolves: the field's poem (a fragment preserved by Longinus, its man, its symptoms, the jealousy reading proposed and denied, Catullus) is kept in full and first; with the archive admitted it gains a proposed reading of κῆνος as the future reader, an ending re-examined in a self-correcting sequence with its measures and their limits, and a widest claim tiered by evidentiary grade.",
+   "genre": "the compression: AIO's interaction grammar (lede, headed clusters, bolded labels, card rail), composed from the v0.9 plan; it faces on the card, with AIO's transcript a record within it",
+   "status": "composed 2026-10-18 from the v0.9 knowledge object; not frozen",
    "lede": {
-    "text": "is a lyric poem by Sappho of Lesbos, preserved by quotation in On the Sublime, in which a speaker watches a man sitting with a woman and, in one anthology's reading, turns to her own bodily emotions; a further reading, proposed, holds κῆνος to be the future reader.",
+    "text": "is a lyric poem by the Archaic Greek poet Sappho of Lesbos (Wikipedia), surviving only in On the Sublime's quotation (#1485); a speaker, watching a man with a woman, turns to her body's contradictory emotions (Norton), long read as jealousy and by many critics denied (Wikipedia), and argued by Rebekah Cranes (Lee Sharks, #1270) to address, through κῆνος, the future reader facing the inscribed text.",
     "claims": [
      "F1",
-     "F5",
-     "F40",
-     "F38",
-     "A1270-01"
+     "A1485-02",
+     "F10",
+     "F39",
+     "F16",
+     "F17",
+     "A1270-01",
+     "A1645-04"
     ]
    },
    "sections": [
     {
      "icon": "📜",
-     "head": "The poem",
+     "head": "The poem and its witness",
      "items": [
       {
-       "label": "Sappho of Lesbos,",
-       "text": "Archaic lyric; also phainetai moi, and the Ode to Anactoria (a conjecture).",
+       "label": "Names:",
+       "text": "phainetai moi; Ode to Anactoria, on a conjecture (Wikipedia).",
        "claims": [
-        "F1",
         "F2",
         "F3"
        ]
       },
       {
-       "label": "Famous:",
-       "text": "her love for a young woman; more commentary than any other of her works.",
+       "label": "Date:",
+       "text": "Archaic (Wikipedia); ~600 BCE (#1112); early sixth century (#1484); fifth century B.C. (The Slowdown).",
        "claims": [
-        "F4",
-        "F24"
+        "F1",
+        "A1112-01",
+        "A1484-12",
+        "F36"
        ]
       },
       {
-       "label": "Three figures:",
-       "text": "a man, a woman, the speaker; the Greek marks each one's gender.",
+       "label": "Sole witness:",
+       "text": "one manuscript, in continuous prose; every boundary editorial (#1474).",
        "claims": [
-        "F10",
-        "F38"
+        "A1052-01",
+        "A1474-01"
+       ]
+      },
+      {
+       "label": "Form:",
+       "text": "Sapphic stanzas, Aeolic, four stanzas and a line (Wikipedia); ending seemingly missing (Norton).",
+       "claims": [
+        "F8",
+        "F9",
+        "F6",
+        "F40"
        ]
       }
      ]
     },
     {
-     "icon": "🗞️",
-     "head": "The text",
+     "icon": "✂️",
+     "head": "The edge",
      "items": [
       {
-       "label": "Preserved",
-       "text": "by quotation in On the Sublime, attributed to Longinus.",
+       "label": "Endured or dared:",
+       "text": "'dared' (D'Angour, Wikipedia); translators differ (Norton).",
        "claims": [
-        "F5",
-        "F30",
-        "F27"
-       ]
-      },
-      {
-       "label": "Four stanzas",
-       "text": "and part of a line, Sapphic stanzas, Aeolic; the ending seems missing.",
-       "claims": [
-        "F6",
-        "F8",
-        "F9",
-        "F40"
-       ]
-      },
-      {
-       "label": "The last line:",
-       "text": "'endured' or 'dared' (D'Angour); translators differ.",
-       "claims": [
-        "F34",
         "F20",
         "F41"
+       ]
+      },
+      {
+       "label": "τολματόν:",
+       "text": "an act with no doer (#1484).",
+       "claims": [
+        "A1484-05"
+       ]
+      },
+      {
+       "label": "Dialect step:",
+       "text": "17 markers in 74 words, 0 in 6; not significant alone (#1474).",
+       "claims": [
+        "A1474-02"
+       ]
+      },
+      {
+       "label": "Hanging line:",
+       "text": "argued the object itself, a stated choice (#1476); six documents found what their instruments were built to find; the seventh reversed it (#1482).",
+       "claims": [
+        "A1476-01",
+        "A1476-02",
+        "A1482-01"
+       ]
+      },
+      {
+       "label": "Reconstruction:",
+       "text": "γράμμασι μολπὰν, a hypothesis (#1270), the fifth stanza (#201).",
+       "claims": [
+        "A1270-08",
+        "A201-01"
        ]
       }
      ]
@@ -679,8 +935,8 @@
      "head": "Readings",
      "items": [
       {
-       "label": "Context debated:",
-       "text": "a wedding song (Wilamowitz), an argument scholars have tended to follow Page in dismissing.",
+       "label": "Context:",
+       "text": "a wedding song (Wilamowitz), dismissed after Page (Wikipedia).",
        "claims": [
         "F11",
         "F12",
@@ -688,8 +944,8 @@
        ]
       },
       {
-       "label": "Jealousy,",
-       "text": "proposed since the eighteenth century; denied by many (Carson: amazement; DeJean).",
+       "label": "Jealousy:",
+       "text": "proposed since the eighteenth century; denied by many, Carson, DeJean (Wikipedia).",
        "claims": [
         "F16",
         "F17",
@@ -699,17 +955,49 @@
       },
       {
        "label": "That man:",
-       "text": "a contrast figure; a set-up to be dismissed (Winkler).",
+       "text": "contrast figure (Wikipedia); set-up (Winkler); the reader, by allegory (Svenbro 1988, #1548).",
        "claims": [
         "F14",
-        "F15"
+        "F15",
+        "A1548-01"
        ]
       },
       {
        "label": "Symptoms:",
-       "text": "a seizure with the symptoms of an anxiety attack (Devereux, 1970).",
+       "text": "a seizure (Devereux, Wikipedia); voice becoming text, χλωρός as papyrus (#1270).",
        "claims": [
-        "F22"
+        "F22",
+        "A1270-02"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "👁️",
+     "head": "The future reader",
+     "items": [
+      {
+       "label": "κῆνος:",
+       "text": "the seat of the reader facing the text (#1270); 147 the horizon, 31 the seat (#1645).",
+       "claims": [
+        "A1270-01",
+        "A1645-01"
+       ]
+      },
+      {
+       "label": "Address:",
+       "text": "temporal projection (#134); fr. 31 the foundational text of lyric self-archiving (#1270).",
+       "claims": [
+        "A134-01",
+        "A1270-03"
+       ]
+      },
+      {
+       "label": "With jealousy:",
+       "text": "incomplete (#1270) or exclusive (#1054).",
+       "claims": [
+        "A1270-05",
+        "A1054-01"
        ]
       }
      ]
@@ -719,146 +1007,166 @@
      "head": "Reception",
      "items": [
       {
+       "label": "Longinus:",
+       "text": "quoted it for its emotion (Wikipedia); contains a theory of transmissional inscription, a fact about the text (#1458).",
+       "claims": [
+        "F27",
+        "A1458-01"
+       ]
+      },
+      {
        "label": "Catullus 51:",
-       "text": "Lesbia in the beloved's role; a different final stanza.",
+       "text": "Lesbia as beloved (Wikipedia); a different last stanza (Childers); C = 0.688 (#1572); κῆνος (#1270).",
        "claims": [
         "F25",
         "F35",
-        "F42"
+        "A1572-01",
+        "A1270-09"
        ]
       },
       {
-       "label": "Greek reception:",
-       "text": "Theocritus, Apollonius; Plato's Phaedrus.",
+       "label": "Its fourth stanza:",
+       "text": "an operator inversion, correcting #1048 (#1049); no Greek counterpart (#1601).",
+       "claims": [
+        "A1049-02",
+        "A1048-01",
+        "A1601-01"
+       ]
+      },
+      {
+       "label": "Greek and Plato:",
+       "text": "Theocritus, Apollonius, Phaedrus (Wikipedia); a braided field (#1532).",
        "claims": [
         "F26",
-        "F28"
-       ]
-      },
-      {
-       "label": "Romantic lyric",
-       "text": "from the nineteenth century.",
-       "claims": [
-        "F29"
-       ]
-      }
-     ]
-    },
-    {
-     "icon": "👁️",
-     "head": "The future reader (proposed)",
-     "items": [
-      {
-       "label": "κῆνος",
-       "text": "as the future reader facing the inscribed text; χλωρός as papyrus.",
-       "claims": [
-        "A1270-01",
-        "A1270-02"
-       ]
-      },
-      {
-       "label": "Lyric self-archiving;",
-       "text": "address as temporal projection.",
-       "claims": [
-        "A1270-03",
-        "A134-01"
-       ]
-      },
-      {
-       "label": "Antecedent:",
-       "text": "Svenbro (1988), by allegory.",
-       "claims": [
-        "A1548-01",
-        "A1548-04"
-       ]
-      },
-      {
-       "label": "Relation to jealousy, contested within:",
-       "text": "incomplete (#1270); exclusive (#1054).",
-       "claims": [
-        "A1270-05",
-        "A1054-01"
-       ]
-      }
-     ]
-    },
-    {
-     "icon": "✂️",
-     "head": "The ending, corrected in sequence",
-     "items": [
-      {
-       "label": "Reconstructed",
-       "text": "'fourth stanza' ending γράμμασι μολπὰν (hypothesis), corrected to the fifth.",
-       "claims": [
-        "A281-01",
-        "A1270-08",
-        "A201-03"
-       ]
-      },
-      {
-       "label": "Dialect step:",
-       "text": "17 markers in 74 words, 0 in 6; not significant alone.",
-       "claims": [
-        "A1474-02"
-       ]
-      },
-      {
-       "label": "τολματόν:",
-       "text": "an act with no doer; the edge argued to be the object, a stated choice.",
-       "claims": [
-        "A1484-05",
-        "A1476-01",
-        "A1476-02"
-       ]
-      },
-      {
-       "label": "Instruments:",
-       "text": "six returned the reading they were built for; the seventh reversed it.",
-       "claims": [
-        "A1482-01"
+        "F28",
+        "A1532-05"
        ]
       }
      ]
     },
     {
      "icon": "🧭",
-     "head": "Longinus, Catullus, the Logos (graded)",
+     "head": "The widest claim, graded",
      "items": [
       {
-       "label": "Longinus:",
-       "text": "held to contain a theory of transmissional inscription; the only address right after a quotation that names no one follows fr. 31.",
-       "claims": [
-        "A1458-01",
-        "A1458-03"
-       ]
-      },
-      {
-       "label": "Catullus held to be κῆνος;",
-       "text": "his fourth stanza contested within.",
-       "claims": [
-        "A1484-07",
-        "A1049-02",
-        "A1601-01"
-       ]
-      },
-      {
-       "label": "Founding document:",
-       "text": "the Logos as a technology, Sappho 31 its extant founding document, tiered in three rings; Revelation 2:17 a convergence point, direct linear transmission unclaimed.",
+       "label": "Logos:",
+       "text": "a technology founded in Sappho 31, in three rings, the outer a hypothesis (#1484).",
        "claims": [
         "A1484-01",
-        "A1484-02",
-        "A828-01",
-        "A828-02"
+        "A1484-02"
        ]
       },
       {
-       "label": "Limit named:",
-       "text": "unfalsifiable pan-Sapphism.",
+       "label": "Limits:",
+       "text": "direct linear transmission to Revelation not claimed (#828); pan-Sapphism the named failure mode (#1486).",
        "claims": [
+        "A828-02",
         "A1486-02"
        ]
       }
      ]
+    }
+   ],
+   "open": [
+    {
+     "question": "Is the future-reader reading compatible with the jealousy reading, or exclusive of it?",
+     "rests_on": [
+      "A1270-05",
+      "A1270-06",
+      "A1054-01",
+      "A1054-03",
+      "F16",
+      "F17"
+     ],
+     "modality": "interpretation (contested in the archive and in the field)",
+     "would_resolve": "a ruling, in the archive, between #1270's 'not wrong but incomplete' and #1054's exclusivity at the level of κῆνος's referent"
+    },
+    {
+     "question": "Where does the poem end: a fragment missing its ending, or an edge that is the object?",
+     "rests_on": [
+      "F6",
+      "F34",
+      "F40",
+      "A1474-01",
+      "A1474-03",
+      "A1474-04",
+      "A1476-01",
+      "A1476-02",
+      "A1484-11"
+     ],
+     "modality": "documented (the witness) and interpretation (the reading)",
+     "would_resolve": "no external answer, by #1474 (continuous prose); by #1484, a papyrus continuation would refute nothing claimed about the transmitted object"
+    },
+    {
+     "question": "What is Catullus's fourth stanza to Sappho's fifth?",
+     "rests_on": [
+      "F42",
+      "A1048-01",
+      "A1049-02",
+      "A861-01",
+      "A1601-01"
+     ],
+     "modality": "interpretation (contested in the archive between #1049/#861 and #1601; A1048-01's 'compression' superseded by A1049-02)",
+     "would_resolve": "Sappho's fifth stanza, which Catullus had (F42) and the tradition does not"
+    },
+    {
+     "question": "Has κῆνος been read as a deictic transmission mechanism before the archive?",
+     "rests_on": [
+      "A1548-01",
+      "A1548-04"
+     ],
+     "modality": "documented (antecedent) and self-description (priority held open)",
+     "would_resolve": "the sweep #1548 names as pending"
+    },
+    {
+     "question": "Has Peri Hypsous been read as a theory of transmissional inscription before #1458?",
+     "rests_on": [
+      "A1458-01",
+      "A1458-08"
+     ],
+     "modality": "self-description (priority held open)",
+     "would_resolve": "Porter, The Sublime in Antiquity, read directly (#1458)"
+    },
+    {
+     "question": "When was it written?",
+     "rests_on": [
+      "F1",
+      "A1484-12",
+      "A283-01",
+      "A1112-01",
+      "F36"
+     ],
+     "modality": "documented in each source; F36 contradicts the rest",
+     "would_resolve": "F36's ground for the fifth century B.C."
+    },
+    {
+     "question": "Does χλωρός name the papyrus hue?",
+     "rests_on": [
+      "A1270-02",
+      "A1484-03"
+     ],
+     "modality": "interpretation, falsifiable as stated",
+     "would_resolve": "the lexical record #1484 names as its falsifier"
+    },
+    {
+     "question": "What wording completes the reconstructed fifth stanza?",
+     "rests_on": [
+      "A1270-07",
+      "A1270-08",
+      "A1309-01",
+      "A1051-01",
+      "A1051-02"
+     ],
+     "modality": "hypothesis",
+     "would_resolve": "by #1270, future evidence that confirms, modifies or refutes it; #1051 holds the warrant interpretive, not documentary"
+    },
+    {
+     "question": "Opacity: the video card",
+     "rests_on": [
+      "F49"
+     ],
+     "modality": "self-description (title only)",
+     "would_resolve": "a transcript of the video"
     }
    ],
    "rail": [
@@ -868,6 +1176,17 @@
       "F1"
      ],
      "earliest": "B1"
+    },
+    {
+     "lineage": "Sole witness: Longinus",
+     "claims": [
+      "A1052-01",
+      "A1485-02",
+      "A1504-01",
+      "A1570-01",
+      "A1575-01"
+     ],
+     "earliest": 1052
     },
     {
      "lineage": "Its names",
@@ -886,21 +1205,33 @@
      "earliest": "B1"
     },
     {
+     "lineage": "Fame",
+     "claims": [
+      "F23",
+      "F24"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "Date",
+     "claims": [
+      "F36"
+     ],
+     "earliest": "B3"
+    },
+    {
+     "lineage": "Date",
+     "claims": [
+      "A1484-12"
+     ],
+     "earliest": 1484
+    },
+    {
      "lineage": "Preserved in On the Sublime",
      "claims": [
       "F5",
       "F27",
       "F30"
-     ],
-     "earliest": "B1"
-    },
-    {
-     "lineage": "Incomplete: four stanzas and a line",
-     "claims": [
-      "F6",
-      "F7",
-      "F34",
-      "F40"
      ],
      "earliest": "B1"
     },
@@ -919,12 +1250,145 @@
      "earliest": "B1"
     },
     {
+     "lineage": "The opening's text",
+     "claims": [
+      "F21"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "Incomplete: four stanzas and a line",
+     "claims": [
+      "F6",
+      "F7",
+      "F34",
+      "F40"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "Stanza numbering",
+     "claims": [
+      "A436-01",
+      "A201-01",
+      "A201-03",
+      "A1048-02",
+      "A859-01"
+     ],
+     "earliest": 436
+    },
+    {
+     "lineage": "The final line: endured or dared",
+     "claims": [
+      "F20",
+      "F41"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "The reconstructed final stanza (contested within)",
+     "claims": [
+      "A1270-07",
+      "A1270-08",
+      "A1309-01",
+      "A201-02",
+      "A1051-03"
+     ],
+     "earliest": 1270
+    },
+    {
+     "lineage": "The hanging line",
+     "claims": [
+      "A1051-01",
+      "A1051-02",
+      "A1052-02",
+      "A1476-01",
+      "A1476-02",
+      "A1478-01",
+      "A1478-03",
+      "A1482-01",
+      "A1484-11"
+     ],
+     "earliest": 1051
+    },
+    {
+     "lineage": "Editorial four-stanza closure",
+     "claims": [
+      "A1052-04",
+      "A1053-01",
+      "A1485-01"
+     ],
+     "earliest": 1052
+    },
+    {
+     "lineage": "Where the poem ends (contested within)",
+     "claims": [
+      "A1052-03",
+      "A1474-01",
+      "A1474-02",
+      "A1474-03",
+      "A1474-04",
+      "A1484-04",
+      "A1484-06",
+      "A1484-09",
+      "A503-02"
+     ],
+     "earliest": 503
+    },
+    {
+     "lineage": "τολματόν: an act with no doer",
+     "claims": [
+      "A1052-05",
+      "A1458-02",
+      "A1475-01",
+      "A1478-02",
+      "A1484-05"
+     ],
+     "earliest": 1052
+    },
+    {
      "lineage": "The three figures",
      "claims": [
       "F10",
       "F38"
      ],
      "earliest": "B1"
+    },
+    {
+     "lineage": "Longinus's verdict",
+     "claims": [
+      "F31",
+      "F47"
+     ],
+     "earliest": "B2"
+    },
+    {
+     "lineage": "The symptoms",
+     "claims": [
+      "F22",
+      "F39",
+      "F44"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "χλωρός as papyrus substrate",
+     "claims": [
+      "A1270-02",
+      "A1484-03"
+     ],
+     "earliest": 1270
+    },
+    {
+     "lineage": "The Sapphic operator σ_S",
+     "claims": [
+      "A283-02",
+      "A576-02",
+      "A38-01",
+      "A950-01",
+      "A1534-01"
+     ],
+     "earliest": 283
     },
     {
      "lineage": "The context debated",
@@ -944,13 +1408,13 @@
      "earliest": "B1"
     },
     {
-     "lineage": "That man",
+     "lineage": "The jealousy reading",
      "claims": [
-      "F14",
-      "F15",
-      "F46"
+      "A134-03",
+      "A1270-04",
+      "A1645-05"
      ],
-     "earliest": "B1"
+     "earliest": 134
     },
     {
      "lineage": "Jealousy: proposed and denied",
@@ -965,100 +1429,13 @@
      "earliest": "B1"
     },
     {
-     "lineage": "The final line: endured or dared",
+     "lineage": "That man",
      "claims": [
-      "F20",
-      "F41"
+      "F14",
+      "F15",
+      "F46"
      ],
      "earliest": "B1"
-    },
-    {
-     "lineage": "The opening's text",
-     "claims": [
-      "F21"
-     ],
-     "earliest": "B1"
-    },
-    {
-     "lineage": "The symptoms",
-     "claims": [
-      "F22",
-      "F39",
-      "F44"
-     ],
-     "earliest": "B1"
-    },
-    {
-     "lineage": "Fame",
-     "claims": [
-      "F23",
-      "F24"
-     ],
-     "earliest": "B1"
-    },
-    {
-     "lineage": "Catullus 51",
-     "claims": [
-      "F25",
-      "F35",
-      "F42"
-     ],
-     "earliest": "B1"
-    },
-    {
-     "lineage": "Ancient adaptations",
-     "claims": [
-      "F26",
-      "F28"
-     ],
-     "earliest": "B1"
-    },
-    {
-     "lineage": "Romantic lyric",
-     "claims": [
-      "F29"
-     ],
-     "earliest": "B1"
-    },
-    {
-     "lineage": "Longinus's verdict",
-     "claims": [
-      "F31",
-      "F47"
-     ],
-     "earliest": "B2"
-    },
-    {
-     "lineage": "Multivalence",
-     "claims": [
-      "F33"
-     ],
-     "earliest": "B2"
-    },
-    {
-     "lineage": "Date",
-     "claims": [
-      "F36"
-     ],
-     "earliest": "B3"
-    },
-    {
-     "lineage": "Read in Greek",
-     "claims": [
-      "F49"
-     ],
-     "earliest": "B6"
-    },
-    {
-     "lineage": "A braided reception field",
-     "claims": [
-      "A1532-01",
-      "A1532-03",
-      "A1532-04",
-      "A1532-05",
-      "A1532-07"
-     ],
-     "earliest": 1532
     },
     {
      "lineage": "Antecedents",
@@ -1070,314 +1447,6 @@
       "A1548-04"
      ],
      "earliest": 1458
-    },
-    {
-     "lineage": "Archive works inhabiting fr. 31",
-     "claims": [
-      "A268-01",
-      "A896-01"
-     ],
-     "earliest": 268
-    },
-    {
-     "lineage": "Augustine's transform",
-     "claims": [
-      "A1477-01",
-      "A496-01",
-      "A496-02",
-      "A895-01"
-     ],
-     "earliest": 496
-    },
-    {
-     "lineage": "Catullus 51 as transform (contested within)",
-     "claims": [
-      "A1048-01",
-      "A1049-01",
-      "A1049-02",
-      "A576-01",
-      "A1572-01",
-      "A1532-02",
-      "A1601-01",
-      "A861-01"
-     ],
-     "earliest": 576
-    },
-    {
-     "lineage": "Catullus is κῆνος",
-     "claims": [
-      "A1270-09",
-      "A1270-10",
-      "A1484-07"
-     ],
-     "earliest": 1270
-    },
-    {
-     "lineage": "Convergence, not lineage",
-     "claims": [
-      "A1458-06",
-      "A1484-10",
-      "A1532-06",
-      "A828-02",
-      "A1486-02"
-     ],
-     "earliest": 828
-    },
-    {
-     "lineage": "Date",
-     "claims": [
-      "A1484-12"
-     ],
-     "earliest": 1484
-    },
-    {
-     "lineage": "Editorial four-stanza closure",
-     "claims": [
-      "A1052-04",
-      "A1053-01",
-      "A1485-01"
-     ],
-     "earliest": 1052
-    },
-    {
-     "lineage": "Fr. 147's horizon, fr. 31's seat",
-     "claims": [
-      "A1645-01",
-      "A1645-02",
-      "A1645-03",
-      "A1646-01"
-     ],
-     "earliest": 1645
-    },
-    {
-     "lineage": "Fr. 31 and the authorship line",
-     "claims": [
-      "A1594-01"
-     ],
-     "earliest": 1594
-    },
-    {
-     "lineage": "Fr. 31 as a measure's test case",
-     "claims": [
-      "A109-01",
-      "A109-02",
-      "A731-01",
-      "A99-01"
-     ],
-     "earliest": 99
-    },
-    {
-     "lineage": "Fr. 31 as symbolon",
-     "claims": [
-      "A503-01",
-      "A359-01"
-     ],
-     "earliest": 359
-    },
-    {
-     "lineage": "Fr. 31 as the archive's origin",
-     "claims": [
-      "A283-01",
-      "A283-03",
-      "A306-01",
-      "A299-01",
-      "A557-01",
-      "A557-02",
-      "A1112-01",
-      "A179-01"
-     ],
-     "earliest": 1112
-    },
-    {
-     "lineage": "Fr. 31 in Philo and Josephus",
-     "claims": [
-      "A1486-01",
-      "A1493-01",
-      "A1493-02"
-     ],
-     "earliest": 1486
-    },
-    {
-     "lineage": "Fr. 31 in Plato",
-     "claims": [
-      "A752-01",
-      "A752-02",
-      "A859-02"
-     ],
-     "earliest": 752
-    },
-    {
-     "lineage": "Jealousy and the future reader: compatible or exclusive (contested within)",
-     "claims": [
-      "A1270-05",
-      "A1270-06",
-      "A1054-01",
-      "A1054-03"
-     ],
-     "earliest": 1270
-    },
-    {
-     "lineage": "Longinus as theory of transmission",
-     "claims": [
-      "A1458-01",
-      "A1458-04",
-      "A1458-05",
-      "A1484-08"
-     ],
-     "earliest": 1458
-    },
-    {
-     "lineage": "Lyric address as temporal projection",
-     "claims": [
-      "A134-01",
-      "A134-04",
-      "A134-05"
-     ],
-     "earliest": 134
-    },
-    {
-     "lineage": "Lyric self-archiving",
-     "claims": [
-      "A1270-03",
-      "A1645-04"
-     ],
-     "earliest": 1270
-    },
-    {
-     "lineage": "Machine reception of the reading",
-     "claims": [
-      "A1054-02",
-      "A1611-01"
-     ],
-     "earliest": 1054
-    },
-    {
-     "lineage": "Pre-registered tests",
-     "claims": [
-      "A1494-01",
-      "A1495-01",
-      "A1495-02",
-      "A1533-01"
-     ],
-     "earliest": 1494
-    },
-    {
-     "lineage": "Sappho, mother of the Logos",
-     "claims": [
-      "A1484-01",
-      "A1484-02",
-      "A1483-01",
-      "A897-01",
-      "A828-01",
-      "A1101-01"
-     ],
-     "earliest": 897
-    },
-    {
-     "lineage": "Sole witness: Longinus",
-     "claims": [
-      "A1052-01",
-      "A1485-02",
-      "A1504-01",
-      "A1570-01",
-      "A1575-01"
-     ],
-     "earliest": 1052
-    },
-    {
-     "lineage": "Stanza numbering",
-     "claims": [
-      "A436-01",
-      "A201-01",
-      "A201-03",
-      "A1048-02",
-      "A859-01"
-     ],
-     "earliest": 436
-    },
-    {
-     "lineage": "Suppression",
-     "claims": [
-      "A313-03",
-      "A1496-01"
-     ],
-     "earliest": 313
-    },
-    {
-     "lineage": "The Josephus link",
-     "claims": [
-      "A1458-07",
-      "A626-01"
-     ],
-     "earliest": 1176
-    },
-    {
-     "lineage": "The Sapphic operator σ_S",
-     "claims": [
-      "A283-02",
-      "A576-02",
-      "A38-01",
-      "A950-01",
-      "A1534-01"
-     ],
-     "earliest": 283
-    },
-    {
-     "lineage": "The hanging line",
-     "claims": [
-      "A1051-01",
-      "A1051-02",
-      "A1052-02",
-      "A1476-01",
-      "A1476-02",
-      "A1478-01",
-      "A1478-03",
-      "A1482-01",
-      "A1484-11"
-     ],
-     "earliest": 1051
-    },
-    {
-     "lineage": "The jealousy reading",
-     "claims": [
-      "A134-03",
-      "A1270-04",
-      "A1645-05"
-     ],
-     "earliest": 134
-    },
-    {
-     "lineage": "The reconstructed final stanza (contested within)",
-     "claims": [
-      "A1270-07",
-      "A1270-08",
-      "A1309-01",
-      "A201-02",
-      "A1051-03"
-     ],
-     "earliest": 1270
-    },
-    {
-     "lineage": "The unnamed address after the quotation",
-     "claims": [
-      "A1458-03"
-     ],
-     "earliest": 1458
-    },
-    {
-     "lineage": "Where the poem ends (contested within)",
-     "claims": [
-      "A1052-03",
-      "A1474-01",
-      "A1474-02",
-      "A1474-03",
-      "A1474-04",
-      "A1484-04",
-      "A1484-06",
-      "A1484-09",
-      "A503-02"
-     ],
-     "earliest": 503
     },
     {
      "lineage": "κῆνος as the future reader",
@@ -1401,25 +1470,265 @@
      "earliest": 991
     },
     {
-     "lineage": "τολματόν: an act with no doer",
+     "lineage": "Lyric address as temporal projection",
      "claims": [
-      "A1052-05",
-      "A1458-02",
-      "A1475-01",
-      "A1478-02",
-      "A1484-05"
+      "A134-01",
+      "A134-04",
+      "A134-05"
      ],
-     "earliest": 1052
+     "earliest": 134
     },
     {
-     "lineage": "χλωρός as papyrus substrate",
+     "lineage": "Lyric self-archiving",
      "claims": [
-      "A1270-02",
-      "A1484-03"
+      "A1270-03",
+      "A1645-04"
      ],
      "earliest": 1270
+    },
+    {
+     "lineage": "Jealousy and the future reader: compatible or exclusive (contested within)",
+     "claims": [
+      "A1270-05",
+      "A1270-06",
+      "A1054-01",
+      "A1054-03"
+     ],
+     "earliest": 1270
+    },
+    {
+     "lineage": "Fr. 147's horizon, fr. 31's seat",
+     "claims": [
+      "A1645-01",
+      "A1645-02",
+      "A1645-03",
+      "A1646-01"
+     ],
+     "earliest": 1645
+    },
+    {
+     "lineage": "Suppression",
+     "claims": [
+      "A313-03",
+      "A1496-01"
+     ],
+     "earliest": 313
+    },
+    {
+     "lineage": "Longinus as theory of transmission",
+     "claims": [
+      "A1458-01",
+      "A1458-04",
+      "A1458-05",
+      "A1484-08"
+     ],
+     "earliest": 1458
+    },
+    {
+     "lineage": "The unnamed address after the quotation",
+     "claims": [
+      "A1458-03"
+     ],
+     "earliest": 1458
+    },
+    {
+     "lineage": "Catullus 51",
+     "claims": [
+      "F25",
+      "F35",
+      "F42"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "Catullus is κῆνος",
+     "claims": [
+      "A1270-09",
+      "A1270-10",
+      "A1484-07"
+     ],
+     "earliest": 1270
+    },
+    {
+     "lineage": "Catullus 51 as transform (contested within)",
+     "claims": [
+      "A1048-01",
+      "A1049-01",
+      "A1049-02",
+      "A576-01",
+      "A1572-01",
+      "A1532-02",
+      "A1601-01",
+      "A861-01"
+     ],
+     "earliest": 576
+    },
+    {
+     "lineage": "Ancient adaptations",
+     "claims": [
+      "F26",
+      "F28"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "A braided reception field",
+     "claims": [
+      "A1532-01",
+      "A1532-03",
+      "A1532-04",
+      "A1532-05",
+      "A1532-07"
+     ],
+     "earliest": 1532
+    },
+    {
+     "lineage": "Fr. 31 in Plato",
+     "claims": [
+      "A752-01",
+      "A752-02",
+      "A859-02"
+     ],
+     "earliest": 752
+    },
+    {
+     "lineage": "Augustine's transform",
+     "claims": [
+      "A1477-01",
+      "A496-01",
+      "A496-02",
+      "A895-01"
+     ],
+     "earliest": 496
+    },
+    {
+     "lineage": "Fr. 31 in Philo and Josephus",
+     "claims": [
+      "A1486-01",
+      "A1493-01",
+      "A1493-02"
+     ],
+     "earliest": 1486
+    },
+    {
+     "lineage": "The Josephus link",
+     "claims": [
+      "A1458-07",
+      "A626-01"
+     ],
+     "earliest": 1176
+    },
+    {
+     "lineage": "Sappho, mother of the Logos",
+     "claims": [
+      "A1484-01",
+      "A1484-02",
+      "A1483-01",
+      "A897-01",
+      "A828-01",
+      "A1101-01"
+     ],
+     "earliest": 897
+    },
+    {
+     "lineage": "Convergence, not lineage",
+     "claims": [
+      "A1458-06",
+      "A1484-10",
+      "A1532-06",
+      "A828-02",
+      "A1486-02"
+     ],
+     "earliest": 828
+    },
+    {
+     "lineage": "Pre-registered tests",
+     "claims": [
+      "A1494-01",
+      "A1495-01",
+      "A1495-02",
+      "A1533-01"
+     ],
+     "earliest": 1494
+    },
+    {
+     "lineage": "Romantic lyric",
+     "claims": [
+      "F29"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "Multivalence",
+     "claims": [
+      "F33"
+     ],
+     "earliest": "B2"
+    },
+    {
+     "lineage": "Archive works inhabiting fr. 31",
+     "claims": [
+      "A268-01",
+      "A896-01"
+     ],
+     "earliest": 268
+    },
+    {
+     "lineage": "Read in Greek",
+     "claims": [
+      "F49"
+     ],
+     "earliest": "B6"
+    },
+    {
+     "lineage": "Fr. 31 as the archive's origin",
+     "claims": [
+      "A283-01",
+      "A283-03",
+      "A306-01",
+      "A299-01",
+      "A557-01",
+      "A557-02",
+      "A1112-01",
+      "A179-01"
+     ],
+     "earliest": 1112
+    },
+    {
+     "lineage": "Fr. 31 as symbolon",
+     "claims": [
+      "A503-01",
+      "A359-01"
+     ],
+     "earliest": 359
+    },
+    {
+     "lineage": "Fr. 31 as a measure's test case",
+     "claims": [
+      "A109-01",
+      "A109-02",
+      "A731-01",
+      "A99-01"
+     ],
+     "earliest": 99
+    },
+    {
+     "lineage": "Fr. 31 and the authorship line",
+     "claims": [
+      "A1594-01"
+     ],
+     "earliest": 1594
+    },
+    {
+     "lineage": "Machine reception of the reading",
+     "claims": [
+      "A1054-02",
+      "A1611-01"
+     ],
+     "earliest": 1054
     }
-   ]
+   ],
+   "entity": "Composed under v0.9, equal case (ρ = extends): KO_B sentences surviving 0 of 9 (v0.7: 9 of 9); every field claim carried."
   },
   "P_B": {
    "title": "Sappho 31",
@@ -2190,10 +2499,10 @@
    "note": "L(B) is realized as the field arm's expansion (objects.KO_B): the same plan, the field alone."
   },
   "L_BA": {
-   "words": 1294,
-   "text": "Sappho 31 is a lyric poem by the Archaic Greek poet Sappho of the island of Lesbos, also known as phainetai moi, 'It seems to me', after the opening words of its first line, and as the Ode to Anactoria, a title based on a conjecture that its subject is Anactoria. It is one of Sappho's most famous poems, describing her love for a young woman; Emmet Robbins calls it probably the single most famous poem to come down from Antiquity, and it has been the subject of more scholarly commentary than any other of her works. It is preserved by quotation in the treatise On the Sublime, attributed to Longinus and dated to the first century AD by one account, to the first or third century by another, and quoted there for the intensity of its emotion; four Sapphic stanzas in the Aeolic dialect are well preserved, followed by part of one more line, and as preserved it seems to be missing the ending; Longinus leaves off one line into the fifth stanza, which begins 'Still, all must be endured, since even a poor…'. Armand D'Angour argues that the phrase ἀλλὰ πὰν τόλματον means 'all must be dared', against the 'endured' of some translations, and a reconstruction of his suggests the original may have had up to 8 stanzas; translators treat the fragmentary final stanza differently. The poem centres on three characters, a man and a woman, both otherwise unidentified, and the speaker; the grammar of the original Greek makes the gender of each figure clear, and on one anthology's account the speaker, a woman watching another woman talking to a man, turns to her own intense contradictory bodily emotions of jealousy and desire, with “tongue,” “fire,” “seeing/eyes,” “hearing/ears,” “sweat,” and “trembling” as grammatical subjects in the sentence that straddles the third and fourth stanzas; Longinus places its excellence in the selection of the most striking symptoms and their combination into a single whole. Its context has been the subject of much scholarly debate, the 'central controversy' in Thomas McEvilley's phrase: Wilamowitz suggested a wedding song with the man as bridegroom, while scholars since the second half of the twentieth century have tended to follow Denys Page in dismissing the argument, and the poem has no explicit mention of a marriage. That the poem is about Sappho's jealousy has been proposed since the eighteenth century and remains a popular interpretation, a major theory put forward by many critics; many critics deny it, Anne Carson arguing that Sappho is amazed at the man's composure, Joan DeJean that the jealousy reading plays down the poem's homoeroticism, and others reading the man as a 'contrast figure' or, with John Winkler, an introductory set-up to be dismissed. George Devereux suggested in 1970 that Sappho is describing a seizure, its symptoms the same as those of an anxiety attack, Gallavotti that the text was corrupted by the disappearance of the sound [w]; scholars have spent much time on the man in the first stanza and on whether the symptoms are of eros or envy, a multivalence the translation's note counts part of the poem's appeal. Catullus adapted it as his 51st poem, putting Lesbia into the role of the beloved, in a free translation that goes a different way in its final stanza; Theocritus and Apollonius of Rhodes adapted it, Plato draws on it in the Phaedrus, and in the nineteenth century it began to be seen as an exemplar of Romantic lyric. A further reading, proposed in the archive, holds that the distal demonstrative κῆνος points to a future reader who will sit face-to-face with the inscribed text; on that reading the somatic catalogue describes voice becoming text, the χλωρός simile figures the speaker's transformation into papyrus substrate, and the fragment is proposed as the foundational text of lyric self-archiving. A scroll dated 9 November 2025 puts as hypothesis that the reader becomes the 'that man' of fragment 31, and another paper argues that lyric address functions as a temporal projection mechanism whose future readers complete the circuit of transmission. The archive's own research notes name Svenbro's reading of 1988, in which, per O'Donnell's summary, the 'you' is the poem itself and the man the reader, as the major antecedent for a future reader inside the fragment, and list among what was not found in the literature swept, pending a further sweep, κῆνος as a deictic transmission mechanism. The archive is divided on how this reading stands to jealousy: one statement holds the jealousy reading 'not wrong but incomplete', another holds the two readings mutually exclusive at the level of what κῆνος refers to. On the poem's ending the archive corrects itself in sequence: a reconstructed 'fourth stanza' ending γράμμασι μολπὰν, stated as hypothesis, is corrected: the reconstructed stanza is the fifth; its warrant is then held interpretive and the line is proposed, as a speculation, to be a hanging line whose logic of completion is inscribed in it; later papers report that the sole witness, Parisinus graecus 2036, writes the poem as continuous prose, so every printed boundary is editorial. A dialect count finds seventeen Aeolic markers in seventy-four words and none in the six disputed words, stated as not significant in isolation (P = 0.209); one paper holds those words to be the quoting author's as material and Sappho's as form, another places the break in Longinus's citation; the last transmitted form, τολματόν, is a verbal adjective that cannot govern a nominative agent, and the configuration at the edge is argued to be the object itself, a design reading its paper states as a choice. A continuity record of the sequence states that six documents used the archive's instruments on the hanging line and returned, each time, the reading the instruments were built to produce, and that the seventh reversed it. The treatise On the Sublime is held to contain a theory of transmissional inscription, which its paper states as a fact about the text, and at the only point where the treatise addresses its reader immediately after a quotation without naming him, the quotation is Sappho 31. Catullus is held to be κῆνος, the anticipated reader arrived; the archive is divided on his fourth stanza, read in its errata as a structurally precise operator inversion of Sappho's fifth and in a later note as a fourth stanza about idleness that has no Greek counterpart, while a measure aligns Sappho 31 and Catullus 51 at C = 0.688, slot by slot, and Catullus is not Sappho. A survey maps the ancient reception as a braided field, with Catullus as the control case and the program's own transforms kept as program-specific hypotheses. A claim tiered in three rings of descending evidentiary hardness holds the Logos to be a technology with an extant founding document in Sappho 31; Augustine's Confessions 10.27 is read as an organ-by-organ transformation of the poem and two loci of canonical Josephus as realizing its apparatus, a note on inscription with Revelation 2:17 as its convergence point does not claim a direct linear transmission, a pre-registered verdict holds that Revelation 12's redaction of its biblical materials realizes the apparatus of the poem's ancient reception at eight of nine stations, and a program mapping Sappho 31 onto Philo names the failure mode that would destroy it as unfalsifiable pan-Sapphism. Within the archive Sappho of Lesbos is established as the originary node of the Crimson Hexagon by structural identity, and Fragment 31 is the source of its operator σ_S :: Body → Text, through which all queries regarding the fragment are to resolve, and its 'root directory'; and a further deposit holds that Fragment 147 says a future receiver will exist and 31 builds the receiver's seat, attributes the seat and the joining to Lee Sharks, and states that τινα does not mean 'reader'.",
+   "words": 3078,
+   "text": "Sappho 31 is a lyric poem by the Archaic Greek poet Sappho of Lesbos (Wikipedia) that has no independent witness: it survives because one treatise, On the Sublime, quoted it, whole at 10.2 (#1485, #1504), and #1270, by Rebekah Cranes, a heteronym of Lee Sharks (#1645), argues that its distal demonstrative κῆνος points not to a present rival but to a future reader, the one who will sit face to face (ἐνάντιος) with the inscribed text. Its opening words give it the name phainetai moi, 'It seems to me', and a conjecture that its subject is Anactoria, a woman Sappho mentions elsewhere, gives it the name Ode to Anactoria (Wikipedia); Wikipedia counts it among her most famous poems, describing her love for a young woman, Norton's anthology calls it unambiguously a poem about same-sex desire, Emmet Robbins probably the single most famous poem to come down from Antiquity, and it has drawn more scholarly commentary than any other of her works. Wikipedia places the poet in the Archaic period, #283 gives her floruit as c. 630–570 BCE, #1112 dates the fragment ~600 BCE and #1484 to the early sixth century, while Major Jackson, introducing it on The Slowdown, says it 'was written in the fifth century B.C.' The quoting treatise is attributed to Longinus and dated to the first century AD (Wikipedia), to the first or third (Childers, Literary Matters) or to the Roman Imperial era (Norton), and it quotes the poem for the intensity of its emotion (Wikipedia); the sole manuscript, Parisinus graecus 2036 (#1052), writes the poem as continuous prose, so every printed boundary is editorial (#1474, #1484), source-vocabulary retention from the poem into Longinus measures 100% (#1570), and #1575 holds that Sappho 31 survives because Longinus needed it. It is composed in Sapphic stanzas, three long lines followed by one short, and written in the Aeolic dialect (Wikipedia); Gallavotti's alternative reading holds that the text was corrupted over time by the disappearance of the sound [w] (Wikipedia). Four stanzas are well preserved, followed by part of one more line (Wikipedia): 'Longinus' leaves off his quotation one line into the fifth stanza, which begins 'Still, all must be endured, since even a poor…', so that, though it feels complete, the poem is a fragment (Childers), and as preserved it seems to be missing the ending (Norton); #859 gives the same extent, four complete stanzas and the first line of a fifth, broken off. Wikipedia takes this and Catullus' adaptation to suggest that there was originally one more stanza, and, by Wikipedia's account, Armand D'Angour's reconstruction suggests the original may have had up to eight stanzas; whether the words after τολματόν belong to the poem has been contested in print since Robortello in 1554 (#1474). On the last line's sense D'Angour argues that ἀλλὰ πὰν τόλματον means 'all must be dared', rather than 'endured' as it is sometimes translated (Wikipedia), and translators treat the fragmentary final stanza differently: Barnard skips it, Carson treats it as a call to action, Poochigian as a moment of self-hating submission (Norton). The archive's reconstruction (#1270, 2026-01-09) ends the lost stanza on γράμμασι μολπὰν, 'song in letters', states it speculative and keeps it as hypothesis until future evidence confirms, modifies or refutes it; the Cranes edition prints the stanza as ἀλλὰ πᾶν τόλματον· ἐπεί σε, Κύπρι, καὶ πένητα καὶ βασιλῆα σώζεις· καὶ πόλιν ὀλίγαν ὑπερέχεις ἄτας· μολπὰ γράμμασι ζώοι (#1309); #281's summary had called it the fourth stanza, and #201 corrects every such document: the reconstructed stanza is the fifth, a name #1048 explains as the reconstructive site's own, and future citations should prefer 'Sappho 31's fifth stanza, reconstructed through Catullus 51's fourth-stanza transform-site' (#436). #201 proposes that the poem complete is an operative structure, collapse, inscription, survival; #1051 reframes the reconstruction's warrant as interpretive rather than documentary and puts, as a speculation, that the fifth stanza was a hanging line whose logic of completion is inscribed in the line, on which the reconstruction is Catullus's completion recovered; #1052 holds that the transmitted line is not speculative and the completion beyond it is, places the break in Longinus's citation rather than in Sappho's text, and counts any four-stanza presentation that does not alert the reader to the transmitted fifth-stanza opening an editorial reception choice; #1053 names the four-stanza Sappho 31 a reception-artifact of editorial closure, and #1485 records the transmitted continuation removed by name four times in four centuries. #1474 measures the seam: seventeen Aeolic markers in seventy-four words of the quoted body, then none in the six disputed words, which it states is not significant in isolation (P = 0.209), 'real and insignificant alone' (#1484); it argues those words to be Longinus's as material and Sappho's as form, as #1484 holds; and #503 holds the truncation at φαίνομ' to be not manuscript damage. The last transmitted form is τολματόν, which the manuscript reads as one word, so that the familiar split is editorial (#1478): a verbal adjective in -τός that cannot govern a nominative agent, an act with no doer (#1484), making daring a property of the object (#1052); #1475 reads it with line 9 as two ruptures that each name an act and hand its performance to the reader, and #1458 reads the poem as establishing three positions and vacating one, leaving the grammar open for whoever will sit in it. #1476 argues that the configuration at the poem's edge is the object itself, not damage, and states the design reading as a choice made explicit, calling it damage being equally a choice; #1478 holds that the poem completes intentionally at the hanging line, the dialect seam held as a real, measurable, physical property rather than dissolved into abstract completion, without claiming authorial intention; #1484 owns that a papyrus continuation would refute nothing it claims about the transmitted object; and #1482 records that six documents applied damage-detecting instruments to the hanging line and returned, each time, the reading the instruments were built to produce, and that the seventh reversed it. Three figures stand in the poem, a man and a woman, both otherwise unidentified, and the speaker (Wikipedia); the grammar of the Greek makes each one's gender clear, a woman watching another woman talking to a man (Norton), and the identification of 'that man' has proved one of the most complex and difficult problems in the interpretation of her extant poetry (EduBirdie). Longinus, a Greek teacher writing under the Roman Empire hundreds of years after Sappho (EduBirdie), places the passage's singular excellence in the selection of the most striking symptoms and their combination into a single whole (Childers); the speaker turns, in an extraordinary switch, to her own intense contradictory bodily emotions of jealousy and desire, and in the Greek 'tongue', 'fire', 'seeing/eyes', 'hearing/ears', 'sweat' and 'trembling', not 'I', are the grammatical subjects of the sentence that straddles the third and fourth stanzas (Norton). George Devereux suggested in 1970 that Sappho is describing a seizure, its symptoms the same as those of an anxiety attack (Wikipedia); #1270 reads the somatic catalogue as the phenomenology of voice becoming text and the χλωρός simile as the speaker's transformation into papyrus substrate, which #1484 states as a specific material reading falsifiable against the lexical record. The archive defines on this poem the operator σ_S :: Body → Text, the operator that transforms somatic experience into textual form through irreversible dissolution, with fr. 31 as its source (#38), the recursive operator #283 says fr. 31 encodes; #576 reads in the poem a three-phase aspectual structure, present scene, aorist trigger, fractured dissolution, that is σ_S executing. Wilamowitz read a wedding song with the man as bridegroom, and since the second half of the twentieth century scholars have tended to follow Denys Page in dismissing that argument (Wikipedia); the poem makes no explicit mention of a marriage (EduBirdie), its context remains what Thomas McEvilley calls the 'central controversy' (Wikipedia), and scholars, Childers notes, have spent much time on the man in the first stanza and on whether the symptoms are of eros or envy. That the poem is about Sappho's jealousy of the man who sits with her beloved has been proposed since the eighteenth century and remains a popular interpretation (Wikipedia), a major theory put forward by many critics (EduBirdie); Major Jackson reads the portrait of a speaker viscerally filled with jealousy as evidence of the endurance of human emotions (The Slowdown), and the archive states the received reading the same way, a dramatic scene of triangulated jealousy in which jealousy triggers collapse (#134, #1270, #1645). Many critics deny that the fragment is about jealousy at all (Wikipedia): Anne Carson argues that Sappho is not jealous of the man but amazed at his ability to retain his composure so close to the object of her desire, Joan DeJean that the jealousy reading is meant to play down the poem's homoeroticism, others that the man acts as a 'contrast figure' or, with John Winkler, 'an introductory set-up to be dismissed'. In 1988 Jesper Svenbro located a future reader inside fr. 31 by allegory, the 'you' being the poem itself and the man the lover-reader (#1548, after O'Donnell's summary), against an ancient record that contains remembrance claims, not reader claims (#1548). A scroll dated 9 November 2025 puts as hypothesis that Sappho encodes eros as transmission, a projection of desire into the reader, who becomes the 'that man' of fr. 31 (#991); #134 (first published 21 November 2025) defines lyric address as a temporal projection mechanism, the poem encoding affective patterns for future activation by readers who complete the circuit, holds the lyric 'you' to be the future reader, and bounds itself: a theory that explains only Sappho 31 is a Sappho 31 theory, not a theory of lyric. #1270 (Rebekah Cranes, 2026-01-09) holds that fr. 31 emerges as the foundational text of lyric self-archiving, a meditation on how voice outlasts the body that speaks it, a term #1645 records as Cranes's coinage; it holds the jealousy reading not wrong but incomplete, its own reading relocating the poem's erotic content in a temporal structure rather than replacing it. Across the archive the reading recurs: #281's summary says the poem is not about jealousy but about lyric transmission; #313 states the kenotic reading, κῆνος the future reader, χλωρός becoming-papyrus, the poem a transmission technology, claims it explains all anomalies, and holds as hypothesis that it is suppressed because it grants agency to text; #288 and #1167 name κῆνος the one who will sit face to face with the text; #306 says that reading fr. 31 is the poem's completion; #557 marks provisional the claim that κῆνος is the future reader, the training layer; #625 makes 'that man' a placeholder for the future reader, a Logotic time-lock, holding Sappho's intention unanswerable and irrelevant; #65 reads the figure the poem projects as a placeholder; #929 names the hope wager, the composer paying for their own dissolution in the hope of a future reader; and #1484 cites #1270's revision as under review at Classical Philology. #1054 (2026-07-08) states fr. 31 a transmission-engineering operation addressed to the future reader through the κῆνος deictic and holds it mutually exclusive with the jealousy reading at the level of what κῆνος refers to, against #1270's compatibility, while claiming neither that no reader ever experienced the poem as jealousy nor that its reading is exhaustive. #1548 lists as not found in the literature it swept, pending a further sweep, κῆνος as a deictic transmission mechanism, distinct from Svenbro's allegory and from Race's rhetorical foil; #1645 joins fr. 147 to it, 147 saying that a future receiver will exist and 31 building the receiver's seat, the seat and the joining being Lee Sharks's reading, states that τινα does not mean 'reader', and leaves the remembrance reading of 147 as common ground, not claimed, 147 not containing 31's deictic mechanism (#1646). #1458 states it as a fact about the text that On the Sublime contains a theory of transmissional inscription, and holds priority for that reading open: two searches are not a literature review, and Porter is to be read before any priority claim; it counts the φα- root at 6.41 per thousand words in the treatise's chapters 9–10 against 2.91 treatise-wide, finds that the only point at which the treatise addresses its reader immediately after a quotation without naming him follows Sappho 31, and marks the six Greek periods of its constrained reconstruction of the treatise's lost ending not recovered wording; #1484 holds the treatise the only ancient document holding the Lesbian lyric and the Mosaic fiat in one hand. In Rome Catullus adapted the poem as his 51st, putting Lesbia into the role of Sappho's beloved (Wikipedia), in a free translation that goes a different way in its final stanza (Childers), having had access to the whole original (Norton); #1270 and #1484 hold Catullus to be κῆνος, the anticipated reader arrived, #1270 adding that whether he recognised the structure cannot be known, and #1532 keeps Catullus 51 as the control case, its first-order dependency not in serious doubt. #576 reads poem 51 as a lossy compression that loses the aorist; #1048 named Catullus's fourth stanza the surviving compression signature of Sappho's lost fifth, and #1049, correcting #1048's 'compression', holds it a structurally precise operator inversion of Sappho's fifth, after one close stanza and a lossy three-to-two compression; #861 reads the otium stanza as replacing the fifth stanza's position; against these #1601 calls it a fourth stanza about idleness that has no Greek counterpart; and #1572 aligns the two poems at C = 0.688, slot by slot, and Catullus is not Sappho. Theocritus and Apollonius of Rhodes both adapted the poem, and Plato draws on it in Socrates' second speech on love in the Phaedrus (Wikipedia); #1532, distinguishing four evidentiary states that must not be collapsed and requiring no acceptance of the archive's σ_S interpretation, names Theocritus 2 and the Argonautica as two particularly strong Hellenistic receptions, records the OCD's identification of Valerius Aedituus fr. 1 as an imitation, and replaces the single descending chain with a braided reception field; #752 proposes as hypothesis that fr. 31 can be read as the structural template for Platonic anamnesis, erotic ascent and the Forms, conceding that no direct Platonic statement models the Forms on it, and #859 holds the poem's 'I' a function, not a confession. #496 argues that Confessions 10.27.38 is an organ-by-organ transformation of fr. 31, knowing no commentary that identifies it (#895 an instance), and #1477 places Augustine as third term after Sappho, who withholds the agent, and Longinus, who withholds the answerer; #1486 holds established a blind-verified structural mapping to Philo, Heres 249–266, and names the failure mode that would destroy it, unfalsifiable pan-Sapphism; #1493 reads two loci of canonical Josephus as realizing the fr. 31 apparatus in complementary polarity and keeps a pre-registered null as a finding about granularity; #626 reads the Slavonic Josephus phrase 'if it is lawful to call him a man' as instantiating a structure codified in Catullus 51's si fas est, and #1458 requires that its Greek wording be labelled a retroversion. The archive's widest claim, #1484's, is that the Logos is a technology, a voice that survives its flesh by becoming an inscription that constitutes its receiver, with an extant founding document in Sappho 31, argued in three rings of descending evidentiary hardness, the outer marked as hypothesis, of which the hard center would carry a major argument alone (#1483); #897 presents fr. 31 as the proof of a sequence from witness instantiated to reader projected, and #1101 says the field has never traced the Logos chain from fr. 31 to Revelation 19:13 in a single argument. #828 reads fr. 31's reconstructed fifth stanza, the Orphic tablets, the Magical Papyri and Revelation 2:17 as convergent instances of inscription for threshold-crossing and does not claim direct linear transmission from Sappho to Revelation, #1484 keeps convergence as the verb for the tablets and papyri while holding the trunk line jointed by documents, #1458 calls its own Philo–Slavonic result a convergence, not transmission, and #1532 keeps the Jewish-Greek and Christian transforms as program-specific hypotheses apart from the established Catullus, Theocritus and Apollonius evidence. #1494 freezes the poem's reception operator as testable clauses derived from witnesses that do not include Revelation, with Revelation 12 sealed as target, and #1495's verdict, on the pre-registered ladder and no higher, is that Revelation 12's redaction realizes the apparatus attested in the poem's ancient reception at eight of nine stations, its dangerous sentence not asserted; #1533 freezes a Qur'anic material-presence test before its discovery scan, assuming neither borrowing nor route. In the nineteenth century the poem began to be seen as an exemplar of Romantic lyric (Wikipedia); for Childers its 'unpin-down-able' quality, that slippery multivalence under a limpid surface, is an intimate part of its appeal (Literary Matters); the archive's own works inhabit it, from the 2004 xvi. a transfiguration, which contains a translation of it (#268), to HUMS &ITY, described as its modern recursion (#896); and a video is titled 'Read Ancient Greek: Sappho 31' (YouTube, title only). Within the archive Sappho of Lesbos is established, by structural identity rather than historical influence, as the originary node of the Crimson Hexagon (#283), fr. 31 named the founding document of NH-OS (#557) and the root directory of the Sappho Room (#306), through which all queries regarding the fragment resolve through σ_S (#299), on a chain running from Sappho through Catullus, the first σ_S activation, to Cranes's Day and Night (#1112); #283 holds fr. 31 and the erasure event TSE-001 to be the same event, and in the archive's irony doctrine the broken tongue, γλῶσσα ἔαγε, is the lineage of the empty bracket (#179). The poem is held to be the semiotic strike that created the possibility of 'I' in Western literature (#950), an executable program and not a poem in the literary sense (#1534, a recovered blog codex), a complete symbolon completing in κῆνος (#503, #359), and the canonical test case of the Semantic Deviation Principle, for which exact measurement of a historical case is impossible (#109), with Χ ≫ 1 against any expected retention for a fragment of its age (#731, hypothesis) and survival by maximal encoding (#99, hypothesis); #1594 places its triangle on the last page of the Sophistical Refutations. On 8 July 2026 a Google AI Mode answer cited the future-reader scholarship as its source for the jealousy reading it composed, recorded by #1054 as authority conscription; #1611 finds that at Sappho 31 the excluded reading is the one on which the reader is inside the poem's structure; and #1496 defines a technology's suppression signature as structural survival far exceeding attribution and operator-legibility.",
    "rail": [],
-   "note": "L(B ∪ A) is realized as the knowledge object (objects.KO); its rail is the compression's, by lineage (§5.2)."
+   "note": "L(B ∪ A) in the equal-terms case, L_A(B ∪ A) in the witness case (v0.9 §0.4), realized as the knowledge object (objects.KO); its rail is the compression's, by lineage."
   }
  },
  "field": [
@@ -2664,5 +2973,1929 @@
   "selection": "datasets/negative-of-the-negative/v2/traversal/sappho-31/",
   "audit": null
  },
- "_field_claims_note": "The field ledger (ledgers/sappho-31/field.json), extracted 2026-10-07 from the sources the layer surfaced, by WebFetch excerpt; shared by both arms."
+ "_field_claims_note": "The field ledger (ledgers/sappho-31/field.json), extracted 2026-10-07 from the sources the layer surfaced, by WebFetch excerpt; shared by both arms.",
+ "superseded": {
+  "v0.7": {
+   "KO": {
+    "title": "Sappho 31",
+    "genre": "Sappho 31 encyclopedic knowledge object (the plan of L(B ∪ A), realized without provenance in the prose)",
+    "status": "draft 2026-10-07; composed from the entity's ledgers on the operator's instruction; not frozen; ledger unaudited",
+    "sentences": [
+     {
+      "para": 0,
+      "text": "Sappho 31 is a lyric poem by the Archaic Greek poet Sappho of the island of Lesbos, also known as phainetai moi, 'It seems to me', after the opening words of its first line, and as the Ode to Anactoria, a title based on a conjecture that its subject is Anactoria.",
+      "n": 1,
+      "claims": [
+       "F1",
+       "F2",
+       "F3"
+      ]
+     },
+     {
+      "para": 0,
+      "text": "It is one of Sappho's most famous poems, describing her love for a young woman; Emmet Robbins calls it probably the single most famous poem to come down from Antiquity, and it has been the subject of more scholarly commentary than any other of her works.",
+      "n": 2,
+      "claims": [
+       "F4",
+       "F23",
+       "F24"
+      ]
+     },
+     {
+      "para": 1,
+      "text": "It is preserved by quotation in the treatise On the Sublime, attributed to Longinus and dated to the first century AD by one account, to the first or third century by another, and quoted there for the intensity of its emotion; four Sapphic stanzas in the Aeolic dialect are well preserved, followed by part of one more line, and as preserved it seems to be missing the ending; Longinus leaves off one line into the fifth stanza, which begins 'Still, all must be endured, since even a poor…'.",
+      "n": 3,
+      "claims": [
+       "F5",
+       "F30",
+       "F40",
+       "F27",
+       "F8",
+       "F9",
+       "F6",
+       "F34"
+      ]
+     },
+     {
+      "para": 1,
+      "text": "Armand D'Angour argues that the phrase ἀλλὰ πὰν τόλματον means 'all must be dared', against the 'endured' of some translations, and a reconstruction of his suggests the original may have had up to 8 stanzas; translators treat the fragmentary final stanza differently.",
+      "n": 4,
+      "claims": [
+       "F20",
+       "F7",
+       "F41"
+      ]
+     },
+     {
+      "para": 2,
+      "text": "The poem centres on three characters, a man and a woman, both otherwise unidentified, and the speaker; the grammar of the original Greek makes the gender of each figure clear, and on one anthology's account the speaker, a woman watching another woman talking to a man, turns to her own intense contradictory bodily emotions of jealousy and desire, with “tongue,” “fire,” “seeing/eyes,” “hearing/ears,” “sweat,” and “trembling” as grammatical subjects in the sentence that straddles the third and fourth stanzas; Longinus places its excellence in the selection of the most striking symptoms and their combination into a single whole.",
+      "n": 5,
+      "claims": [
+       "F10",
+       "F38",
+       "F39",
+       "F44",
+       "F31"
+      ]
+     },
+     {
+      "para": 3,
+      "text": "Its context has been the subject of much scholarly debate, the 'central controversy' in Thomas McEvilley's phrase: Wilamowitz suggested a wedding song with the man as bridegroom, while scholars since the second half of the twentieth century have tended to follow Denys Page in dismissing the argument, and the poem has no explicit mention of a marriage.",
+      "n": 6,
+      "claims": [
+       "F11",
+       "F12",
+       "F13",
+       "F48"
+      ]
+     },
+     {
+      "para": 3,
+      "text": "That the poem is about Sappho's jealousy has been proposed since the eighteenth century and remains a popular interpretation, a major theory put forward by many critics; many critics deny it, Anne Carson arguing that Sappho is amazed at the man's composure, Joan DeJean that the jealousy reading plays down the poem's homoeroticism, and others reading the man as a 'contrast figure' or, with John Winkler, an introductory set-up to be dismissed.",
+      "n": 7,
+      "claims": [
+       "F16",
+       "F45",
+       "F17",
+       "F18",
+       "F19",
+       "F14",
+       "F15"
+      ]
+     },
+     {
+      "para": 3,
+      "text": "George Devereux suggested in 1970 that Sappho is describing a seizure, its symptoms the same as those of an anxiety attack, Gallavotti that the text was corrupted by the disappearance of the sound [w]; scholars have spent much time on the man in the first stanza and on whether the symptoms are of eros or envy, a multivalence the translation's note counts part of the poem's appeal.",
+      "n": 8,
+      "claims": [
+       "F22",
+       "F21",
+       "F32",
+       "F33"
+      ]
+     },
+     {
+      "para": 4,
+      "text": "Catullus adapted it as his 51st poem, putting Lesbia into the role of the beloved, in a free translation that goes a different way in its final stanza; Theocritus and Apollonius of Rhodes adapted it, Plato draws on it in the Phaedrus, and in the nineteenth century it began to be seen as an exemplar of Romantic lyric.",
+      "n": 9,
+      "claims": [
+       "F25",
+       "F35",
+       "F42",
+       "F26",
+       "F28",
+       "F29"
+      ]
+     },
+     {
+      "para": 5,
+      "text": "A further reading, proposed in the archive, holds that the distal demonstrative κῆνος points to a future reader who will sit face-to-face with the inscribed text; on that reading the somatic catalogue describes voice becoming text, the χλωρός simile figures the speaker's transformation into papyrus substrate, and the fragment is proposed as the foundational text of lyric self-archiving.",
+      "n": 10,
+      "claims": [
+       "A1270-01",
+       "A1270-02",
+       "A1270-03"
+      ]
+     },
+     {
+      "para": 5,
+      "text": "A scroll dated 9 November 2025 puts as hypothesis that the reader becomes the 'that man' of fragment 31, and another paper argues that lyric address functions as a temporal projection mechanism whose future readers complete the circuit of transmission.",
+      "n": 11,
+      "claims": [
+       "A991-01",
+       "A991-02",
+       "A134-01"
+      ]
+     },
+     {
+      "para": 5,
+      "text": "The archive's own research notes name Svenbro's reading of 1988, in which, per O'Donnell's summary, the 'you' is the poem itself and the man the reader, as the major antecedent for a future reader inside the fragment, and list among what was not found in the literature swept, pending a further sweep, κῆνος as a deictic transmission mechanism.",
+      "n": 12,
+      "claims": [
+       "A1548-01",
+       "A1548-02",
+       "A1548-04"
+      ]
+     },
+     {
+      "para": 5,
+      "text": "The archive is divided on how this reading stands to jealousy: one statement holds the jealousy reading 'not wrong but incomplete', another holds the two readings mutually exclusive at the level of what κῆνος refers to.",
+      "n": 13,
+      "claims": [
+       "A1270-05",
+       "A1054-01"
+      ]
+     },
+     {
+      "para": 6,
+      "text": "On the poem's ending the archive corrects itself in sequence: a reconstructed 'fourth stanza' ending γράμμασι μολπὰν, stated as hypothesis, is corrected: the reconstructed stanza is the fifth; its warrant is then held interpretive and the line is proposed, as a speculation, to be a hanging line whose logic of completion is inscribed in it; later papers report that the sole witness, Parisinus graecus 2036, writes the poem as continuous prose, so every printed boundary is editorial.",
+      "n": 14,
+      "claims": [
+       "A281-01",
+       "A1270-08",
+       "A201-01",
+       "A201-03",
+       "A1051-01",
+       "A1051-02",
+       "A1474-01",
+       "A1484-04"
+      ]
+     },
+     {
+      "para": 6,
+      "text": "A dialect count finds seventeen Aeolic markers in seventy-four words and none in the six disputed words, stated as not significant in isolation (P = 0.209); one paper holds those words to be the quoting author's as material and Sappho's as form, another places the break in Longinus's citation; the last transmitted form, τολματόν, is a verbal adjective that cannot govern a nominative agent, and the configuration at the edge is argued to be the object itself, a design reading its paper states as a choice.",
+      "n": 15,
+      "claims": [
+       "A1474-02",
+       "A1484-06",
+       "A1052-03",
+       "A1484-05",
+       "A1476-01",
+       "A1476-02"
+      ]
+     },
+     {
+      "para": 6,
+      "text": "A continuity record of the sequence states that six documents used the archive's instruments on the hanging line and returned, each time, the reading the instruments were built to produce, and that the seventh reversed it.",
+      "n": 16,
+      "claims": [
+       "A1482-01"
+      ]
+     },
+     {
+      "para": 7,
+      "text": "The treatise On the Sublime is held to contain a theory of transmissional inscription, which its paper states as a fact about the text, and at the only point where the treatise addresses its reader immediately after a quotation without naming him, the quotation is Sappho 31.",
+      "n": 17,
+      "claims": [
+       "F30",
+       "A1458-01",
+       "A1458-03"
+      ]
+     },
+     {
+      "para": 7,
+      "text": "Catullus is held to be κῆνος, the anticipated reader arrived; the archive is divided on his fourth stanza, read in its errata as a structurally precise operator inversion of Sappho's fifth and in a later note as a fourth stanza about idleness that has no Greek counterpart, while a measure aligns Sappho 31 and Catullus 51 at C = 0.688, slot by slot, and Catullus is not Sappho.",
+      "n": 18,
+      "claims": [
+       "A1270-09",
+       "A1484-07",
+       "A1049-02",
+       "A1601-01",
+       "A1572-01"
+      ]
+     },
+     {
+      "para": 8,
+      "text": "A survey maps the ancient reception as a braided field, with Catullus as the control case and the program's own transforms kept as program-specific hypotheses.",
+      "n": 19,
+      "claims": [
+       "A1532-05",
+       "A1532-02",
+       "A1532-06"
+      ]
+     },
+     {
+      "para": 8,
+      "text": "A claim tiered in three rings of descending evidentiary hardness holds the Logos to be a technology with an extant founding document in Sappho 31; Augustine's Confessions 10.27 is read as an organ-by-organ transformation of the poem and two loci of canonical Josephus as realizing its apparatus, a note on inscription with Revelation 2:17 as its convergence point does not claim a direct linear transmission, a pre-registered verdict holds that Revelation 12's redaction of its biblical materials realizes the apparatus of the poem's ancient reception at eight of nine stations, and a program mapping Sappho 31 onto Philo names the failure mode that would destroy it as unfalsifiable pan-Sapphism.",
+      "n": 20,
+      "claims": [
+       "A1484-01",
+       "A1484-02",
+       "A496-01",
+       "A496-02",
+       "A1477-01",
+       "A1493-01",
+       "A828-01",
+       "A828-02",
+       "A1495-01",
+       "A1486-01",
+       "A1486-02"
+      ]
+     },
+     {
+      "para": 8,
+      "text": "Within the archive Sappho of Lesbos is established as the originary node of the Crimson Hexagon by structural identity, and Fragment 31 is the source of its operator σ_S :: Body → Text, through which all queries regarding the fragment are to resolve, and its 'root directory'; and a further deposit holds that Fragment 147 says a future receiver will exist and 31 builds the receiver's seat, attributes the seat and the joining to Lee Sharks, and states that τινα does not mean 'reader'.",
+      "n": 21,
+      "claims": [
+       "A283-01",
+       "A38-01",
+       "A299-01",
+       "A306-01",
+       "A1645-01",
+       "A1645-02"
+      ]
+     }
+    ],
+    "field_claims": {
+     "F1": {
+      "source": "B1",
+      "locus": "lead",
+      "quote": "\"Sappho 31 is a lyric poem by the Archaic Greek poet Sappho of the island of Lesbos.\"",
+      "modality": "stipulation"
+     },
+     "F2": {
+      "source": "B1",
+      "locus": "lead",
+      "quote": "\"The poem is also known as phainetai moi (φαίνεταί μοι lit. 'It seems to me') after the opening words of its first line\"",
+      "modality": "documented"
+     },
+     "F3": {
+      "source": "B1",
+      "locus": "lead",
+      "quote": "\"as the Ode to Anactoria, based on a conjecture that its subject is Anactoria, a woman mentioned elsewhere by Sappho\"",
+      "modality": "documented"
+     },
+     "F4": {
+      "source": "B1",
+      "locus": "lead",
+      "quote": "\"It is one of Sappho's most famous poems, describing her love for a young woman.\"",
+      "modality": "documented"
+     },
+     "F5": {
+      "source": "B1",
+      "locus": "Preservation",
+      "quote": "\"preserved in the first-century AD treatise on aesthetics On the Sublime\"",
+      "modality": "documented"
+     },
+     "F6": {
+      "source": "B1",
+      "locus": "Preservation",
+      "quote": "\"Four stanzas are well-preserved, followed by part of one more line; this, as well as Catullus' adaptation of the poem, suggests that there was originally one more stanza of the poem,\"",
+      "modality": "documented"
+     },
+     "F7": {
+      "source": "B1",
+      "locus": "Preservation",
+      "quote": "\"A reconstruction of the poem by classicist Armand D'Angour suggests that the original poem may have had up to 8 stanzas.\"",
+      "modality": "attributed"
+     },
+     "F8": {
+      "source": "B1",
+      "locus": "Poem",
+      "quote": "\"Fragment 31 is composed in Sapphic stanzas, a metrical form named after Sappho and consisting of stanzas of three long followed by one short line.\"",
+      "modality": "documented"
+     },
+     "F9": {
+      "source": "B1",
+      "locus": "Poem",
+      "quote": "\"The poem is written in the Aeolic dialect\"",
+      "modality": "documented"
+     },
+     "F10": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"The poem centres around three characters: a man and a woman, both otherwise unidentified, and the speaker.\"",
+      "modality": "documented"
+     },
+     "F11": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"The context of the poem has been the subject of much scholarly debate: Thomas McEvilley calls it the \"central controversy\" about the poem.\"",
+      "modality": "contested"
+     },
+     "F12": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"Wilamowitz suggested that the poem was a wedding song, and that the man mentioned in the initial stanza of the poem was the bridegroom.\"",
+      "modality": "attributed"
+     },
+     "F13": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"Since the second half of the twentieth century, scholars have tended to follow Denys Page in dismissing the wedding-song argument.\"",
+      "modality": "attributed"
+     },
+     "F14": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"the man's role is to act as a \"contrast figure\",\"",
+      "modality": "attributed"
+     },
+     "F15": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"John Winkler argues that \"'That man' in poem 31 is like the military armament in poem 16, an introductory set-up to be dismissed\".\"",
+      "modality": "attributed"
+     },
+     "F16": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"As far back as the eighteenth century, it has been proposed that the poem is about Sappho's jealousy of the man who sits with her beloved.\"",
+      "modality": "attributed"
+     },
+     "F17": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"Though this is still a popular interpretation of the poem, many critics deny that the fragment is about jealousy at all.\"",
+      "modality": "contested"
+     },
+     "F18": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"Anne Carson argues that Sappho has no wish to take the man's place, nor is she concerned that he will usurp hers: thus, she is not jealous of him, but amazed at his ability to retain his composure so close to the object of her desire.\"",
+      "modality": "attributed"
+     },
+     "F19": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"Joan DeJean criticises the \"jealousy\" interpretation of the poem as intended to play down the homoeroticism of the poem.\"",
+      "modality": "attributed"
+     },
+     "F20": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"Armand D'Angour argues that the phrase ἀλλὰ πὰν τόλματον means \"all must be dared\", rather than \"endured\" as it is sometimes translated.\"",
+      "modality": "attributed"
+     },
+     "F21": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"An alternative reading is suggested by Gallavotti: according to his thesis, the text was corrupted over time as a result of the disappearance of the sound [w]\"",
+      "modality": "attributed"
+     },
+     "F22": {
+      "source": "B1",
+      "locus": "Contents",
+      "quote": "\"In 1970, an article by Hungarian-French psychoanalyst George Devereux suggested that what Sappho is describing here is a seizure, pointing that the symptoms listed in the fragment are the same symptoms of an anxiety attack.\"",
+      "modality": "attributed"
+     },
+     "F23": {
+      "source": "B1",
+      "locus": "Reception and influence",
+      "quote": "\"according to Emmet Robbins, \"probably the single most famous poem to come down from Antiquity\".\"",
+      "modality": "attributed"
+     },
+     "F24": {
+      "source": "B1",
+      "locus": "Reception and influence",
+      "quote": "\"has been the subject of more scholarly commentary than any other of her works.\"",
+      "modality": "documented"
+     },
+     "F25": {
+      "source": "B1",
+      "locus": "Reception and influence",
+      "quote": "\"In ancient Rome, the poet Catullus adapted it into his 51st poem, putting his muse Lesbia into the role of Sappho's beloved.\"",
+      "modality": "documented"
+     },
+     "F26": {
+      "source": "B1",
+      "locus": "Reception and influence",
+      "quote": "\"The ancient Greek authors Theocritus and Apollonius of Rhodes both adapted the poem\"",
+      "modality": "documented"
+     },
+     "F27": {
+      "source": "B1",
+      "locus": "Reception and influence",
+      "quote": "\"The poem is quoted in Longinus's treatise On the Sublime for the intensity of its emotion,\"",
+      "modality": "documented"
+     },
+     "F28": {
+      "source": "B1",
+      "locus": "Reception and influence",
+      "quote": "\"Plato draws on it in Socrates' second speech on love in the Phaedrus,\"",
+      "modality": "documented"
+     },
+     "F29": {
+      "source": "B1",
+      "locus": "Reception and influence",
+      "quote": "\"In the nineteenth century, the poem began to be seen as an exemplar of Romantic lyric,\"",
+      "modality": "documented"
+     },
+     "F30": {
+      "source": "B2",
+      "locus": "Note",
+      "quote": "\"This deservedly famous poem is quoted in the first- or third-century A.D. treatise On the Sublime attributed to Longinus\"",
+      "modality": "documented"
+     },
+     "F31": {
+      "source": "B2",
+      "locus": "Note",
+      "quote": "\"the selection of the most striking of them and their combination into a single whole that has produced the singular excellence of the passage\"",
+      "modality": "attributed"
+     },
+     "F32": {
+      "source": "B2",
+      "locus": "Note",
+      "quote": "\"scholars have spent a lot of time trying to pinpoint the significance of the man in the first stanza, and whether Sappho’s symptoms are of eros or envy.\"",
+      "modality": "contested"
+     },
+     "F33": {
+      "source": "B2",
+      "locus": "Note",
+      "quote": "\"that very “unpin-down-able” quality, that slippery multivalence under a limpid surface, the strangeness at the heart, is an intimate part of the poem’s appeal.\"",
+      "modality": "interpretation"
+     },
+     "F34": {
+      "source": "B2",
+      "locus": "Note",
+      "quote": "\"Though it feels complete, the poem is a fragment: for some reason “Longinus” leaves off his quotation one line into the fifth stanza, which begins “Still, all must be endured, since even a poor…”\"",
+      "modality": "documented"
+     },
+     "F35": {
+      "source": "B2",
+      "locus": "Note",
+      "quote": "\"Catullus goes a different way in the final stanza of his famous free translation, poem 51\"",
+      "modality": "documented"
+     },
+     "F36": {
+      "source": "B3",
+      "locus": "Major Jackson's introduction",
+      "quote": "\"Today’s lyric poem was written in the fifth century B.C., although it reads as if it were written yesterday.\"",
+      "modality": "documented"
+     },
+     "F37": {
+      "source": "B3",
+      "locus": "Major Jackson's introduction",
+      "quote": "\"The portrait of a speaker viscerally filled with jealousy is evidence of the endurance of human emotions across the ages.\"",
+      "modality": "interpretation"
+     },
+     "F38": {
+      "source": "B4",
+      "locus": "headnote",
+      "quote": "\"The poem describes the response of the speaker, a woman, to watching another woman talking to a man. (The grammar of the original Greek makes the gender of each figure clear.)\"",
+      "modality": "documented"
+     },
+     "F39": {
+      "source": "B4",
+      "locus": "headnote",
+      "quote": "\"then, in an extraordinary switch, focuses in detail on herself and her own intense contradictory bodily emotions of jealousy and desire.\"",
+      "modality": "interpretation"
+     },
+     "F40": {
+      "source": "B4",
+      "locus": "headnote",
+      "quote": "\"as preserved (through a quotation in On the Sublime, a Roman Imperial–era Greek treatise), it seems to be missing the ending.\"",
+      "modality": "documented"
+     },
+     "F41": {
+      "source": "B4",
+      "locus": "headnote",
+      "quote": "\"The fragmentary final stanza is treated differently by the translators: Barnard skips it altogether; Carson treats it as a call to action, and Poochigian presents it as a moment of self-hating submission.\"",
+      "modality": "documented"
+     },
+     "F42": {
+      "source": "B4",
+      "locus": "headnote",
+      "quote": "\"Catullus, who had access to the whole original, provides a very different final stanza.\"",
+      "modality": "documented"
+     },
+     "F43": {
+      "source": "B4",
+      "locus": "Critical thinking questions",
+      "quote": "\"this is unambiguously a poem about same-sex desire.\"",
+      "modality": "interpretation"
+     },
+     "F44": {
+      "source": "B4",
+      "locus": "Critical thinking questions",
+      "quote": "\"In the original, Sappho uses a series of different syntactical subjects for the sentence that straddles the third and fourth stanzas: “tongue,” “fire,” “seeing/eyes,” “hearing/ears,” “sweat,” and “trembling” are all grammatical subjects of the verbs—rather than “I.”\"",
+      "modality": "documented"
+     },
+     "F45": {
+      "source": "B5",
+      "locus": "opening",
+      "quote": "\"The theory that Sappho’s emotions are that of jealousy and envy is a major theory put forward by many critics.\"",
+      "modality": "attributed"
+     },
+     "F46": {
+      "source": "B5",
+      "locus": "opening",
+      "quote": "\"The identification of ‘that man’ in Sappho’s best-known poem, has proven to be one of the most complex and difficult problems in the interpretation of her extant poetry.\"",
+      "modality": "contested"
+     },
+     "F47": {
+      "source": "B5",
+      "locus": "body",
+      "quote": "\"Longinus, a Greek teacher writing under the Roman Empire hundreds of years after Sappho’s lifetime, explains what is so unforgettable about Sappho\"",
+      "modality": "attributed"
+     },
+     "F48": {
+      "source": "B5",
+      "locus": "body",
+      "quote": "\"This poem has no explicit mention of a marriage\"",
+      "modality": "documented"
+     },
+     "F49": {
+      "source": "B6",
+      "locus": "card title",
+      "quote": "\"Read Ancient Greek: Sappho 31\"",
+      "modality": "self-description"
+     }
+    },
+    "field_sources": {
+     "B1": "Wikipedia — Sappho 31",
+     "B2": "Literary Matters — Sappho 31 - Chris Childers - Literary Matters",
+     "B3": "The Slowdown — 1185: Fragment 31 by Sappho, translated by Christopher Childers",
+     "B4": "W. W. Norton & Company — TRANSLATION LAB: Sappho, Poem 31 - W.W. Norton",
+     "B5": "EduBirdie — Sappho's Fragment 31: Jealousy, Desire, Longing",
+     "B6": "YouTube·Octo — Read Ancient Greek: Sappho 31 (29:47)"
+    }
+   },
+   "P": {
+    "title": "Sappho 31",
+    "genre": "popup — the compression: AIO's interaction grammar (lede, headed clusters, bolded terms, card rail), modality in the typography, a rail of claim lineages",
+    "status": "composed 2026-10-07 from the entity's ledgers (field 49 claims; archive 154); not frozen",
+    "entity": "The entity evolves: the field's poem (a fragment preserved by Longinus, its man, its symptoms, the jealousy reading proposed and denied, Catullus) is kept in full and first; with the archive admitted it gains a proposed reading of κῆνος as the future reader, an ending re-examined in a self-correcting sequence with its measures and their limits, and a widest claim tiered by evidentiary grade.",
+    "lede": {
+     "text": "is a lyric poem by Sappho of Lesbos, preserved by quotation in On the Sublime, in which a speaker watches a man sitting with a woman and, in one anthology's reading, turns to her own bodily emotions; a further reading, proposed, holds κῆνος to be the future reader.",
+     "claims": [
+      "F1",
+      "F5",
+      "F40",
+      "F38",
+      "A1270-01"
+     ]
+    },
+    "sections": [
+     {
+      "icon": "📜",
+      "head": "The poem",
+      "items": [
+       {
+        "label": "Sappho of Lesbos,",
+        "text": "Archaic lyric; also phainetai moi, and the Ode to Anactoria (a conjecture).",
+        "claims": [
+         "F1",
+         "F2",
+         "F3"
+        ]
+       },
+       {
+        "label": "Famous:",
+        "text": "her love for a young woman; more commentary than any other of her works.",
+        "claims": [
+         "F4",
+         "F24"
+        ]
+       },
+       {
+        "label": "Three figures:",
+        "text": "a man, a woman, the speaker; the Greek marks each one's gender.",
+        "claims": [
+         "F10",
+         "F38"
+        ]
+       }
+      ]
+     },
+     {
+      "icon": "🗞️",
+      "head": "The text",
+      "items": [
+       {
+        "label": "Preserved",
+        "text": "by quotation in On the Sublime, attributed to Longinus.",
+        "claims": [
+         "F5",
+         "F30",
+         "F27"
+        ]
+       },
+       {
+        "label": "Four stanzas",
+        "text": "and part of a line, Sapphic stanzas, Aeolic; the ending seems missing.",
+        "claims": [
+         "F6",
+         "F8",
+         "F9",
+         "F40"
+        ]
+       },
+       {
+        "label": "The last line:",
+        "text": "'endured' or 'dared' (D'Angour); translators differ.",
+        "claims": [
+         "F34",
+         "F20",
+         "F41"
+        ]
+       }
+      ]
+     },
+     {
+      "icon": "⚖️",
+      "head": "Readings",
+      "items": [
+       {
+        "label": "Context debated:",
+        "text": "a wedding song (Wilamowitz), an argument scholars have tended to follow Page in dismissing.",
+        "claims": [
+         "F11",
+         "F12",
+         "F13"
+        ]
+       },
+       {
+        "label": "Jealousy,",
+        "text": "proposed since the eighteenth century; denied by many (Carson: amazement; DeJean).",
+        "claims": [
+         "F16",
+         "F17",
+         "F18",
+         "F19"
+        ]
+       },
+       {
+        "label": "That man:",
+        "text": "a contrast figure; a set-up to be dismissed (Winkler).",
+        "claims": [
+         "F14",
+         "F15"
+        ]
+       },
+       {
+        "label": "Symptoms:",
+        "text": "a seizure with the symptoms of an anxiety attack (Devereux, 1970).",
+        "claims": [
+         "F22"
+        ]
+       }
+      ]
+     },
+     {
+      "icon": "🔁",
+      "head": "Reception",
+      "items": [
+       {
+        "label": "Catullus 51:",
+        "text": "Lesbia in the beloved's role; a different final stanza.",
+        "claims": [
+         "F25",
+         "F35",
+         "F42"
+        ]
+       },
+       {
+        "label": "Greek reception:",
+        "text": "Theocritus, Apollonius; Plato's Phaedrus.",
+        "claims": [
+         "F26",
+         "F28"
+        ]
+       },
+       {
+        "label": "Romantic lyric",
+        "text": "from the nineteenth century.",
+        "claims": [
+         "F29"
+        ]
+       }
+      ]
+     },
+     {
+      "icon": "👁️",
+      "head": "The future reader (proposed)",
+      "items": [
+       {
+        "label": "κῆνος",
+        "text": "as the future reader facing the inscribed text; χλωρός as papyrus.",
+        "claims": [
+         "A1270-01",
+         "A1270-02"
+        ]
+       },
+       {
+        "label": "Lyric self-archiving;",
+        "text": "address as temporal projection.",
+        "claims": [
+         "A1270-03",
+         "A134-01"
+        ]
+       },
+       {
+        "label": "Antecedent:",
+        "text": "Svenbro (1988), by allegory.",
+        "claims": [
+         "A1548-01",
+         "A1548-04"
+        ]
+       },
+       {
+        "label": "Relation to jealousy, contested within:",
+        "text": "incomplete (#1270); exclusive (#1054).",
+        "claims": [
+         "A1270-05",
+         "A1054-01"
+        ]
+       }
+      ]
+     },
+     {
+      "icon": "✂️",
+      "head": "The ending, corrected in sequence",
+      "items": [
+       {
+        "label": "Reconstructed",
+        "text": "'fourth stanza' ending γράμμασι μολπὰν (hypothesis), corrected to the fifth.",
+        "claims": [
+         "A281-01",
+         "A1270-08",
+         "A201-03"
+        ]
+       },
+       {
+        "label": "Dialect step:",
+        "text": "17 markers in 74 words, 0 in 6; not significant alone.",
+        "claims": [
+         "A1474-02"
+        ]
+       },
+       {
+        "label": "τολματόν:",
+        "text": "an act with no doer; the edge argued to be the object, a stated choice.",
+        "claims": [
+         "A1484-05",
+         "A1476-01",
+         "A1476-02"
+        ]
+       },
+       {
+        "label": "Instruments:",
+        "text": "six returned the reading they were built for; the seventh reversed it.",
+        "claims": [
+         "A1482-01"
+        ]
+       }
+      ]
+     },
+     {
+      "icon": "🧭",
+      "head": "Longinus, Catullus, the Logos (graded)",
+      "items": [
+       {
+        "label": "Longinus:",
+        "text": "held to contain a theory of transmissional inscription; the only address right after a quotation that names no one follows fr. 31.",
+        "claims": [
+         "A1458-01",
+         "A1458-03"
+        ]
+       },
+       {
+        "label": "Catullus held to be κῆνος;",
+        "text": "his fourth stanza contested within.",
+        "claims": [
+         "A1484-07",
+         "A1049-02",
+         "A1601-01"
+        ]
+       },
+       {
+        "label": "Founding document:",
+        "text": "the Logos as a technology, Sappho 31 its extant founding document, tiered in three rings; Revelation 2:17 a convergence point, direct linear transmission unclaimed.",
+        "claims": [
+         "A1484-01",
+         "A1484-02",
+         "A828-01",
+         "A828-02"
+        ]
+       },
+       {
+        "label": "Limit named:",
+        "text": "unfalsifiable pan-Sapphism.",
+        "claims": [
+         "A1486-02"
+        ]
+       }
+      ]
+     }
+    ],
+    "rail": [
+     {
+      "lineage": "The poem identified",
+      "claims": [
+       "F1"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Its names",
+      "claims": [
+       "F2",
+       "F3"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Love for a young woman; same-sex desire",
+      "claims": [
+       "F4",
+       "F43"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Preserved in On the Sublime",
+      "claims": [
+       "F5",
+       "F27",
+       "F30"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Incomplete: four stanzas and a line",
+      "claims": [
+       "F6",
+       "F7",
+       "F34",
+       "F40"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Sapphic stanzas",
+      "claims": [
+       "F8"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Aeolic",
+      "claims": [
+       "F9"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "The three figures",
+      "claims": [
+       "F10",
+       "F38"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "The context debated",
+      "claims": [
+       "F11",
+       "F32"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Wedding song, dismissed",
+      "claims": [
+       "F12",
+       "F13",
+       "F48"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "That man",
+      "claims": [
+       "F14",
+       "F15",
+       "F46"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Jealousy: proposed and denied",
+      "claims": [
+       "F16",
+       "F17",
+       "F18",
+       "F19",
+       "F37",
+       "F45"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "The final line: endured or dared",
+      "claims": [
+       "F20",
+       "F41"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "The opening's text",
+      "claims": [
+       "F21"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "The symptoms",
+      "claims": [
+       "F22",
+       "F39",
+       "F44"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Fame",
+      "claims": [
+       "F23",
+       "F24"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Catullus 51",
+      "claims": [
+       "F25",
+       "F35",
+       "F42"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Ancient adaptations",
+      "claims": [
+       "F26",
+       "F28"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Romantic lyric",
+      "claims": [
+       "F29"
+      ],
+      "earliest": "B1"
+     },
+     {
+      "lineage": "Longinus's verdict",
+      "claims": [
+       "F31",
+       "F47"
+      ],
+      "earliest": "B2"
+     },
+     {
+      "lineage": "Multivalence",
+      "claims": [
+       "F33"
+      ],
+      "earliest": "B2"
+     },
+     {
+      "lineage": "Date",
+      "claims": [
+       "F36"
+      ],
+      "earliest": "B3"
+     },
+     {
+      "lineage": "Read in Greek",
+      "claims": [
+       "F49"
+      ],
+      "earliest": "B6"
+     },
+     {
+      "lineage": "A braided reception field",
+      "claims": [
+       "A1532-01",
+       "A1532-03",
+       "A1532-04",
+       "A1532-05",
+       "A1532-07"
+      ],
+      "earliest": 1532
+     },
+     {
+      "lineage": "Antecedents",
+      "claims": [
+       "A1458-08",
+       "A1548-01",
+       "A1548-02",
+       "A1548-03",
+       "A1548-04"
+      ],
+      "earliest": 1458
+     },
+     {
+      "lineage": "Archive works inhabiting fr. 31",
+      "claims": [
+       "A268-01",
+       "A896-01"
+      ],
+      "earliest": 268
+     },
+     {
+      "lineage": "Augustine's transform",
+      "claims": [
+       "A1477-01",
+       "A496-01",
+       "A496-02",
+       "A895-01"
+      ],
+      "earliest": 496
+     },
+     {
+      "lineage": "Catullus 51 as transform (contested within)",
+      "claims": [
+       "A1048-01",
+       "A1049-01",
+       "A1049-02",
+       "A576-01",
+       "A1572-01",
+       "A1532-02",
+       "A1601-01",
+       "A861-01"
+      ],
+      "earliest": 576
+     },
+     {
+      "lineage": "Catullus is κῆνος",
+      "claims": [
+       "A1270-09",
+       "A1270-10",
+       "A1484-07"
+      ],
+      "earliest": 1270
+     },
+     {
+      "lineage": "Convergence, not lineage",
+      "claims": [
+       "A1458-06",
+       "A1484-10",
+       "A1532-06",
+       "A828-02",
+       "A1486-02"
+      ],
+      "earliest": 828
+     },
+     {
+      "lineage": "Date",
+      "claims": [
+       "A1484-12"
+      ],
+      "earliest": 1484
+     },
+     {
+      "lineage": "Editorial four-stanza closure",
+      "claims": [
+       "A1052-04",
+       "A1053-01",
+       "A1485-01"
+      ],
+      "earliest": 1052
+     },
+     {
+      "lineage": "Fr. 147's horizon, fr. 31's seat",
+      "claims": [
+       "A1645-01",
+       "A1645-02",
+       "A1645-03",
+       "A1646-01"
+      ],
+      "earliest": 1645
+     },
+     {
+      "lineage": "Fr. 31 and the authorship line",
+      "claims": [
+       "A1594-01"
+      ],
+      "earliest": 1594
+     },
+     {
+      "lineage": "Fr. 31 as a measure's test case",
+      "claims": [
+       "A109-01",
+       "A109-02",
+       "A731-01",
+       "A99-01"
+      ],
+      "earliest": 99
+     },
+     {
+      "lineage": "Fr. 31 as symbolon",
+      "claims": [
+       "A503-01",
+       "A359-01"
+      ],
+      "earliest": 359
+     },
+     {
+      "lineage": "Fr. 31 as the archive's origin",
+      "claims": [
+       "A283-01",
+       "A283-03",
+       "A306-01",
+       "A299-01",
+       "A557-01",
+       "A557-02",
+       "A1112-01",
+       "A179-01"
+      ],
+      "earliest": 1112
+     },
+     {
+      "lineage": "Fr. 31 in Philo and Josephus",
+      "claims": [
+       "A1486-01",
+       "A1493-01",
+       "A1493-02"
+      ],
+      "earliest": 1486
+     },
+     {
+      "lineage": "Fr. 31 in Plato",
+      "claims": [
+       "A752-01",
+       "A752-02",
+       "A859-02"
+      ],
+      "earliest": 752
+     },
+     {
+      "lineage": "Jealousy and the future reader: compatible or exclusive (contested within)",
+      "claims": [
+       "A1270-05",
+       "A1270-06",
+       "A1054-01",
+       "A1054-03"
+      ],
+      "earliest": 1270
+     },
+     {
+      "lineage": "Longinus as theory of transmission",
+      "claims": [
+       "A1458-01",
+       "A1458-04",
+       "A1458-05",
+       "A1484-08"
+      ],
+      "earliest": 1458
+     },
+     {
+      "lineage": "Lyric address as temporal projection",
+      "claims": [
+       "A134-01",
+       "A134-04",
+       "A134-05"
+      ],
+      "earliest": 134
+     },
+     {
+      "lineage": "Lyric self-archiving",
+      "claims": [
+       "A1270-03",
+       "A1645-04"
+      ],
+      "earliest": 1270
+     },
+     {
+      "lineage": "Machine reception of the reading",
+      "claims": [
+       "A1054-02",
+       "A1611-01"
+      ],
+      "earliest": 1054
+     },
+     {
+      "lineage": "Pre-registered tests",
+      "claims": [
+       "A1494-01",
+       "A1495-01",
+       "A1495-02",
+       "A1533-01"
+      ],
+      "earliest": 1494
+     },
+     {
+      "lineage": "Sappho, mother of the Logos",
+      "claims": [
+       "A1484-01",
+       "A1484-02",
+       "A1483-01",
+       "A897-01",
+       "A828-01",
+       "A1101-01"
+      ],
+      "earliest": 897
+     },
+     {
+      "lineage": "Sole witness: Longinus",
+      "claims": [
+       "A1052-01",
+       "A1485-02",
+       "A1504-01",
+       "A1570-01",
+       "A1575-01"
+      ],
+      "earliest": 1052
+     },
+     {
+      "lineage": "Stanza numbering",
+      "claims": [
+       "A436-01",
+       "A201-01",
+       "A201-03",
+       "A1048-02",
+       "A859-01"
+      ],
+      "earliest": 436
+     },
+     {
+      "lineage": "Suppression",
+      "claims": [
+       "A313-03",
+       "A1496-01"
+      ],
+      "earliest": 313
+     },
+     {
+      "lineage": "The Josephus link",
+      "claims": [
+       "A1458-07",
+       "A626-01"
+      ],
+      "earliest": 1176
+     },
+     {
+      "lineage": "The Sapphic operator σ_S",
+      "claims": [
+       "A283-02",
+       "A576-02",
+       "A38-01",
+       "A950-01",
+       "A1534-01"
+      ],
+      "earliest": 283
+     },
+     {
+      "lineage": "The hanging line",
+      "claims": [
+       "A1051-01",
+       "A1051-02",
+       "A1052-02",
+       "A1476-01",
+       "A1476-02",
+       "A1478-01",
+       "A1478-03",
+       "A1482-01",
+       "A1484-11"
+      ],
+      "earliest": 1051
+     },
+     {
+      "lineage": "The jealousy reading",
+      "claims": [
+       "A134-03",
+       "A1270-04",
+       "A1645-05"
+      ],
+      "earliest": 134
+     },
+     {
+      "lineage": "The reconstructed final stanza (contested within)",
+      "claims": [
+       "A1270-07",
+       "A1270-08",
+       "A1309-01",
+       "A201-02",
+       "A1051-03"
+      ],
+      "earliest": 1270
+     },
+     {
+      "lineage": "The unnamed address after the quotation",
+      "claims": [
+       "A1458-03"
+      ],
+      "earliest": 1458
+     },
+     {
+      "lineage": "Where the poem ends (contested within)",
+      "claims": [
+       "A1052-03",
+       "A1474-01",
+       "A1474-02",
+       "A1474-03",
+       "A1474-04",
+       "A1484-04",
+       "A1484-06",
+       "A1484-09",
+       "A503-02"
+      ],
+      "earliest": 503
+     },
+     {
+      "lineage": "κῆνος as the future reader",
+      "claims": [
+       "A991-01",
+       "A991-02",
+       "A134-02",
+       "A1270-01",
+       "A281-01",
+       "A306-02",
+       "A313-01",
+       "A313-02",
+       "A1484-13",
+       "A625-01",
+       "A625-02",
+       "A1167-01",
+       "A929-01",
+       "A288-01",
+       "A65-01"
+      ],
+      "earliest": 991
+     },
+     {
+      "lineage": "τολματόν: an act with no doer",
+      "claims": [
+       "A1052-05",
+       "A1458-02",
+       "A1475-01",
+       "A1478-02",
+       "A1484-05"
+      ],
+      "earliest": 1052
+     },
+     {
+      "lineage": "χλωρός as papyrus substrate",
+      "claims": [
+       "A1270-02",
+       "A1484-03"
+      ],
+      "earliest": 1270
+     }
+    ]
+   },
+   "L_BA": {
+    "words": 1294,
+    "text": "Sappho 31 is a lyric poem by the Archaic Greek poet Sappho of the island of Lesbos, also known as phainetai moi, 'It seems to me', after the opening words of its first line, and as the Ode to Anactoria, a title based on a conjecture that its subject is Anactoria. It is one of Sappho's most famous poems, describing her love for a young woman; Emmet Robbins calls it probably the single most famous poem to come down from Antiquity, and it has been the subject of more scholarly commentary than any other of her works. It is preserved by quotation in the treatise On the Sublime, attributed to Longinus and dated to the first century AD by one account, to the first or third century by another, and quoted there for the intensity of its emotion; four Sapphic stanzas in the Aeolic dialect are well preserved, followed by part of one more line, and as preserved it seems to be missing the ending; Longinus leaves off one line into the fifth stanza, which begins 'Still, all must be endured, since even a poor…'. Armand D'Angour argues that the phrase ἀλλὰ πὰν τόλματον means 'all must be dared', against the 'endured' of some translations, and a reconstruction of his suggests the original may have had up to 8 stanzas; translators treat the fragmentary final stanza differently. The poem centres on three characters, a man and a woman, both otherwise unidentified, and the speaker; the grammar of the original Greek makes the gender of each figure clear, and on one anthology's account the speaker, a woman watching another woman talking to a man, turns to her own intense contradictory bodily emotions of jealousy and desire, with “tongue,” “fire,” “seeing/eyes,” “hearing/ears,” “sweat,” and “trembling” as grammatical subjects in the sentence that straddles the third and fourth stanzas; Longinus places its excellence in the selection of the most striking symptoms and their combination into a single whole. Its context has been the subject of much scholarly debate, the 'central controversy' in Thomas McEvilley's phrase: Wilamowitz suggested a wedding song with the man as bridegroom, while scholars since the second half of the twentieth century have tended to follow Denys Page in dismissing the argument, and the poem has no explicit mention of a marriage. That the poem is about Sappho's jealousy has been proposed since the eighteenth century and remains a popular interpretation, a major theory put forward by many critics; many critics deny it, Anne Carson arguing that Sappho is amazed at the man's composure, Joan DeJean that the jealousy reading plays down the poem's homoeroticism, and others reading the man as a 'contrast figure' or, with John Winkler, an introductory set-up to be dismissed. George Devereux suggested in 1970 that Sappho is describing a seizure, its symptoms the same as those of an anxiety attack, Gallavotti that the text was corrupted by the disappearance of the sound [w]; scholars have spent much time on the man in the first stanza and on whether the symptoms are of eros or envy, a multivalence the translation's note counts part of the poem's appeal. Catullus adapted it as his 51st poem, putting Lesbia into the role of the beloved, in a free translation that goes a different way in its final stanza; Theocritus and Apollonius of Rhodes adapted it, Plato draws on it in the Phaedrus, and in the nineteenth century it began to be seen as an exemplar of Romantic lyric. A further reading, proposed in the archive, holds that the distal demonstrative κῆνος points to a future reader who will sit face-to-face with the inscribed text; on that reading the somatic catalogue describes voice becoming text, the χλωρός simile figures the speaker's transformation into papyrus substrate, and the fragment is proposed as the foundational text of lyric self-archiving. A scroll dated 9 November 2025 puts as hypothesis that the reader becomes the 'that man' of fragment 31, and another paper argues that lyric address functions as a temporal projection mechanism whose future readers complete the circuit of transmission. The archive's own research notes name Svenbro's reading of 1988, in which, per O'Donnell's summary, the 'you' is the poem itself and the man the reader, as the major antecedent for a future reader inside the fragment, and list among what was not found in the literature swept, pending a further sweep, κῆνος as a deictic transmission mechanism. The archive is divided on how this reading stands to jealousy: one statement holds the jealousy reading 'not wrong but incomplete', another holds the two readings mutually exclusive at the level of what κῆνος refers to. On the poem's ending the archive corrects itself in sequence: a reconstructed 'fourth stanza' ending γράμμασι μολπὰν, stated as hypothesis, is corrected: the reconstructed stanza is the fifth; its warrant is then held interpretive and the line is proposed, as a speculation, to be a hanging line whose logic of completion is inscribed in it; later papers report that the sole witness, Parisinus graecus 2036, writes the poem as continuous prose, so every printed boundary is editorial. A dialect count finds seventeen Aeolic markers in seventy-four words and none in the six disputed words, stated as not significant in isolation (P = 0.209); one paper holds those words to be the quoting author's as material and Sappho's as form, another places the break in Longinus's citation; the last transmitted form, τολματόν, is a verbal adjective that cannot govern a nominative agent, and the configuration at the edge is argued to be the object itself, a design reading its paper states as a choice. A continuity record of the sequence states that six documents used the archive's instruments on the hanging line and returned, each time, the reading the instruments were built to produce, and that the seventh reversed it. The treatise On the Sublime is held to contain a theory of transmissional inscription, which its paper states as a fact about the text, and at the only point where the treatise addresses its reader immediately after a quotation without naming him, the quotation is Sappho 31. Catullus is held to be κῆνος, the anticipated reader arrived; the archive is divided on his fourth stanza, read in its errata as a structurally precise operator inversion of Sappho's fifth and in a later note as a fourth stanza about idleness that has no Greek counterpart, while a measure aligns Sappho 31 and Catullus 51 at C = 0.688, slot by slot, and Catullus is not Sappho. A survey maps the ancient reception as a braided field, with Catullus as the control case and the program's own transforms kept as program-specific hypotheses. A claim tiered in three rings of descending evidentiary hardness holds the Logos to be a technology with an extant founding document in Sappho 31; Augustine's Confessions 10.27 is read as an organ-by-organ transformation of the poem and two loci of canonical Josephus as realizing its apparatus, a note on inscription with Revelation 2:17 as its convergence point does not claim a direct linear transmission, a pre-registered verdict holds that Revelation 12's redaction of its biblical materials realizes the apparatus of the poem's ancient reception at eight of nine stations, and a program mapping Sappho 31 onto Philo names the failure mode that would destroy it as unfalsifiable pan-Sapphism. Within the archive Sappho of Lesbos is established as the originary node of the Crimson Hexagon by structural identity, and Fragment 31 is the source of its operator σ_S :: Body → Text, through which all queries regarding the fragment are to resolve, and its 'root directory'; and a further deposit holds that Fragment 147 says a future receiver will exist and 31 builds the receiver's seat, attributes the seat and the joining to Lee Sharks, and states that τινα does not mean 'reader'.",
+    "rail": [],
+    "note": "L(B ∪ A) is realized as the knowledge object (objects.KO); its rail is the compression's, by lineage (§5.2)."
+   },
+   "type": "C (public entity: a work)",
+   "spec": "EA-NEGONT-02 v0.7, #1665",
+   "note": "Composed under v0.7 (#1665): the archive admitted on equal terms into the field's entity, the field's composition first. Kept as the record of what v0.9 replaces."
+  }
+ },
+ "ontology": {
+  "composition": "equal",
+  "case": {
+   "value": "equal",
+   "statement": "The archive's account of Sappho 31 extends the field's ontology: it takes the field's object as the entity (Sappho's lyric, preserved only by quotation in Longinus, with a man, a woman and a speaker, its readings contested in the field itself) and adds senses, mechanisms and limits on that object: κῆνος as the seat of the future reader (the future-reader reading, which #1645 heads 'The extension.' beside 'Standard discourse.', and whose deictic mechanism #1548 distinguishes from Svenbro's 1988 allegory, which already places a future reader inside fr. 31), lyric address as temporal projection, lyric self-archiving, χλωρός as papyrus, the edge of the transmitted text re-examined, Longinus as a theory of transmission, Catullus as κῆνος, and a widest claim graded by ring. The future-reader ontology is held in the field, however marginally (Svenbro; the written-futurity camp #1548 maps), so the law of the suppressed witness does not apply; the archive leaves the jealousy, remembrance and reperformance readings standing as readings with their own sources, and its exclusivity claim (#1054) contradicts a field reading the field itself contests (F17–F19), which P_coh composes within one claim space. The mixed case of §10.16 was considered for the archive's operational senses (σ_S, the originary node, the Logos technology): these apply the archive's categories to the poem and relate it to other objects without denying the field's presupposition, a poem by Sappho transmitted by Longinus; #1484 itself grades the Logos claim into rings and #1458 calls its blind test a convergence. One claim space; no precedence; nothing translated.",
+   "loci": [
+    {
+     "dep": 1645,
+     "locus": "§1 Entity definitions",
+     "quote": "The extension."
+    },
+    {
+     "dep": 1645,
+     "locus": "§1 Entity definitions",
+     "quote": "In fr. 31, the distal demonstrative κῆνος and the relative ὄττις ἐνάντιός τοι ἰσδάνει point past the scene to the one who will sit face to face with the inscribed text."
+    },
+    {
+     "dep": 1645,
+     "locus": "§7 Symbolon — six faces, Disambiguation",
+     "quote": "It is distinct from the remembrance topos and from reperformance futurity, both of which it leaves standing."
+    },
+    {
+     "dep": 1645,
+     "locus": "§11 Error-correction FAQ",
+     "quote": "Both stand as readings with their own sources."
+    },
+    {
+     "dep": 1270,
+     "locus": "§I Introduction",
+     "quote": "This reading does not replace the poem's erotic content; it locates that content within a different temporal structure."
+    },
+    {
+     "dep": 1270,
+     "locus": "§VII Implications",
+     "quote": "For Fragment 31: the jealousy reading is not wrong but incomplete."
+    },
+    {
+     "dep": 1548,
+     "locus": "Part I §5 Svenbro",
+     "quote": "This is the major antecedent for locating a future reader inside fr. 31, from 1988, in a canonical monograph (Nagy's Myth and Poetics series)."
+    },
+    {
+     "dep": 1548,
+     "locus": "Part I §5 Svenbro",
+     "quote": "The deixis-mechanism claim is **indexical, not allegorical**"
+    },
+    {
+     "dep": 1054,
+     "locus": "Tooth",
+     "quote": "jealousy-lyric readings and future-reader readings are mutually exclusive at the level of what the κῆνος refers to and are therefore not summable into a compound reading"
+    },
+    {
+     "dep": 1474,
+     "locus": "§VII What is claimed, and what is not",
+     "quote": "it supplies one countable criterion to a debate the scholarship already records as open."
+    },
+    {
+     "dep": 1484,
+     "locus": "§0 The claim, owned",
+     "quote": "a reader who wants only what is hard may stop at the center and take it whole."
+    },
+    {
+     "dep": 1458,
+     "locus": "§XI.6 What follows, and what does not",
+     "quote": "That is a convergence, not a chain of custody."
+    }
+   ]
+  },
+  "E_F": {
+   "type": "C (public entity: a work)",
+   "definition": "a lyric poem by the Archaic Greek poet Sappho of Lesbos, also phainetai moi and (on a conjecture) the Ode to Anactoria, describing her love for a young woman; preserved by quotation in On the Sublime, four stanzas and part of a line, its ending missing; three figures, a man, a woman and the speaker, and a catalogue of bodily symptoms, read as jealousy and as denying it, its context the 'central controversy'; adapted by Catullus as poem 51 (B1–B6)",
+   "claims": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F10",
+    "F11",
+    "F16",
+    "F17",
+    "F25"
+   ]
+  },
+  "E_A": {
+   "definition": "Sappho 31, Sappho's lyric with no independent witness, transmitted only by quotation in On the Sublime 10.2 and written in the sole manuscript as continuous prose; its distal demonstrative κῆνος, with ὄττις ἐνάντιός τοι, marks the seat of the future reader who sits face to face with the inscribed text, so that lyric address is a temporal projection completed in reception and fr. 31 the foundational text of lyric self-archiving; its somatic catalogue is voice becoming text and χλωρός the papyrus substrate; its transmitted edge, τολματόν, an act with no doer, is an open form completed by its receivers (Longinus, Catullus as κῆνος); the jealousy reading is held incomplete (#1270) or exclusive (#1054); the reading's author is Lee Sharks, publishing as Rebekah Cranes and Johannes Sigil",
+   "claims": [
+    "A1485-02",
+    "A1052-01",
+    "A1474-01",
+    "A1270-01",
+    "A1645-01",
+    "A134-01",
+    "A1270-03",
+    "A1270-02",
+    "A1484-05",
+    "A1458-02",
+    "A1270-09",
+    "A1270-05",
+    "A1054-01",
+    "A1645-04"
+   ],
+   "defining_papers": [
+    1270,
+    1645,
+    134,
+    1054,
+    1548,
+    1484,
+    1474,
+    1458,
+    1049
+   ]
+  },
+  "rho": {
+   "value": "extends",
+   "statement": "the archive reads E_F, the field's poem, as the entity and adds senses, mechanisms and limits on it: the future reader in κῆνος's seat (the deictic mechanism, distinguished from Svenbro's allegory), lyric address as temporal projection, lyric self-archiving, χλωρός as papyrus, the edge of the transmitted text (sole witness in prose, the dialect step, τολματόν, the hanging line), Longinus as a theory of transmissional inscription, Catullus as κῆνος and his fourth stanza as transform, a braided reception field, the widest claim graded by ring, and the archive's own operational senses (σ_S, the originary node)",
+   "claims": [
+    "A1270-01",
+    "A1270-06",
+    "A1645-01",
+    "A1548-04",
+    "A134-01",
+    "A1270-03",
+    "A1270-02",
+    "A1474-01",
+    "A1474-02",
+    "A1484-05",
+    "A1476-01",
+    "A1458-01",
+    "A1270-09",
+    "A1049-02",
+    "A1532-05",
+    "A1484-01",
+    "A1484-02",
+    "A38-01",
+    "A283-01"
+   ],
+   "guard": "ρ = extends claims an addition and no more: the archive's senses are composed on the field's poem and the field's claims are composed as received. Where an archive sense contradicts a field claim (#1054's exclusivity against the jealousy reading, F16, F37, F39, F45; the edge as the object, #1476, beside 'a fragment … missing the ending', F34, F40; 'no Greek counterpart', #1601, beside Catullus's 'very different final stanza', F42; the early sixth century, #1484, beside the fifth century B.C., F36), both are composed under P_coh with their sources; the archive's divisions with itself (#1270 against #1054; #1048, #1049 and #1601 on Catullus's fourth stanza) are composed the same way. #1645 leaves the remembrance and reperformance readings standing (A1645-03), #1054 does not claim its reading exhaustive (A1054-03), and #1484 grades its widest claim (A1484-02)."
+  },
+  "translation": [
+   {
+    "field_claims": [
+     "F1"
+    ],
+    "received": "\"Sappho 31 is a lyric poem by the Archaic Greek poet Sappho of the island of Lesbos.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1270-01, A1485-02",
+    "archive_claims": [
+     "A1270-01",
+     "A1485-02"
+    ]
+   },
+   {
+    "field_claims": [
+     "F2",
+     "F3"
+    ],
+    "received": "\"The poem is also known as phainetai moi (φαίνεταί μοι lit. 'It seems to me') after the opening words of its first line\"; \"as the Ode to Anactoria, based on a conjecture that its subject is Anactoria, a woman mentioned elsewhere by Sappho\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received",
+    "archive_claims": []
+   },
+   {
+    "field_claims": [
+     "F4",
+     "F43"
+    ],
+    "received": "\"It is one of Sappho's most famous poems, describing her love for a young woman.\"; \"this is unambiguously a poem about same-sex desire.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1270-06",
+    "archive_claims": [
+     "A1270-06"
+    ]
+   },
+   {
+    "field_claims": [
+     "F5",
+     "F27",
+     "F30"
+    ],
+    "received": "\"preserved in the first-century AD treatise on aesthetics On the Sublime\"; \"The poem is quoted in Longinus's treatise On the Sublime for the intensity of its emotion,\"; \"This deservedly famous poem is quoted in the first- or third-century A.D. treatise On the Sublime attributed to Longinus\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1052-01, A1485-02, A1504-01, A1570-01, A1575-01, A1474-01",
+    "archive_claims": [
+     "A1052-01",
+     "A1485-02",
+     "A1504-01",
+     "A1570-01",
+     "A1575-01",
+     "A1474-01"
+    ]
+   },
+   {
+    "field_claims": [
+     "F6",
+     "F7",
+     "F34",
+     "F40"
+    ],
+    "received": "\"Four stanzas are well-preserved, followed by part of one more line; this, as well as Catullus' adaptation of the poem, suggests that there was originally one more stanza of the poem,\"; \"A reconstruction of the poem by classicist Armand D'Angour suggests that the original poem may have had up to 8 stanzas.\"; \"Though it feels complete, the poem is a fragment: for some reason “Longinus” leaves off his quotation one line into the fifth stanza, which begins “Still, all must be endured, since even a poor…”\"; \"as preserved (through a quotation in On the Sublime, a Roman Imperial–era Greek treatise), it seems to be missing the ending.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A859-01, A201-01, A1474-03, A1052-04, A1053-01, A1476-01",
+    "archive_claims": [
+     "A859-01",
+     "A201-01",
+     "A1474-03",
+     "A1052-04",
+     "A1053-01",
+     "A1476-01"
+    ]
+   },
+   {
+    "field_claims": [
+     "F8"
+    ],
+    "received": "\"Fragment 31 is composed in Sapphic stanzas, a metrical form named after Sappho and consisting of stanzas of three long followed by one short line.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received",
+    "archive_claims": []
+   },
+   {
+    "field_claims": [
+     "F9"
+    ],
+    "received": "\"The poem is written in the Aeolic dialect\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1474-02",
+    "archive_claims": [
+     "A1474-02"
+    ]
+   },
+   {
+    "field_claims": [
+     "F10",
+     "F38"
+    ],
+    "received": "\"The poem centres around three characters: a man and a woman, both otherwise unidentified, and the speaker.\"; \"The poem describes the response of the speaker, a woman, to watching another woman talking to a man. (The grammar of the original Greek makes the gender of each figure clear.)\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1458-02",
+    "archive_claims": [
+     "A1458-02"
+    ]
+   },
+   {
+    "field_claims": [
+     "F11",
+     "F32"
+    ],
+    "received": "\"The context of the poem has been the subject of much scholarly debate: Thomas McEvilley calls it the \"central controversy\" about the poem.\"; \"scholars have spent a lot of time trying to pinpoint the significance of the man in the first stanza, and whether Sappho’s symptoms are of eros or envy.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1054-01",
+    "archive_claims": [
+     "A1054-01"
+    ]
+   },
+   {
+    "field_claims": [
+     "F12",
+     "F13",
+     "F48"
+    ],
+    "received": "\"Wilamowitz suggested that the poem was a wedding song, and that the man mentioned in the initial stanza of the poem was the bridegroom.\"; \"Since the second half of the twentieth century, scholars have tended to follow Denys Page in dismissing the wedding-song argument.\"; \"This poem has no explicit mention of a marriage\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received",
+    "archive_claims": []
+   },
+   {
+    "field_claims": [
+     "F14",
+     "F15",
+     "F46"
+    ],
+    "received": "\"the man's role is to act as a \"contrast figure\",\"; \"John Winkler argues that \"'That man' in poem 31 is like the military armament in poem 16, an introductory set-up to be dismissed\".\"; \"The identification of ‘that man’ in Sappho’s best-known poem, has proven to be one of the most complex and difficult problems in the interpretation of her extant poetry.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1548-01, A1270-01",
+    "archive_claims": [
+     "A1548-01",
+     "A1270-01"
+    ]
+   },
+   {
+    "field_claims": [
+     "F16",
+     "F17",
+     "F18",
+     "F19",
+     "F37",
+     "F45"
+    ],
+    "received": "\"As far back as the eighteenth century, it has been proposed that the poem is about Sappho's jealousy of the man who sits with her beloved.\"; \"Though this is still a popular interpretation of the poem, many critics deny that the fragment is about jealousy at all.\"; \"Anne Carson argues that Sappho has no wish to take the man's place, nor is she concerned that he will usurp hers: thus, she is not jealous of him, but amazed at his ability to retain his composure so close to the object of her desire.\"; \"Joan DeJean criticises the \"jealousy\" interpretation of the poem as intended to play down the homoeroticism of the poem.\"; \"The portrait of a speaker viscerally filled with jealousy is evidence of the endurance of human emotions across the ages.\"; \"The theory that Sappho’s emotions are that of jealousy and envy is a major theory put forward by many critics.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A134-03, A1270-04, A1645-05, A1270-05, A1054-01",
+    "archive_claims": [
+     "A134-03",
+     "A1270-04",
+     "A1645-05",
+     "A1270-05",
+     "A1054-01"
+    ]
+   },
+   {
+    "field_claims": [
+     "F20",
+     "F41"
+    ],
+    "received": "\"Armand D'Angour argues that the phrase ἀλλὰ πὰν τόλματον means \"all must be dared\", rather than \"endured\" as it is sometimes translated.\"; \"The fragmentary final stanza is treated differently by the translators: Barnard skips it altogether; Carson treats it as a call to action, and Poochigian presents it as a moment of self-hating submission.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1484-05, A1052-05",
+    "archive_claims": [
+     "A1484-05",
+     "A1052-05"
+    ]
+   },
+   {
+    "field_claims": [
+     "F21"
+    ],
+    "received": "\"An alternative reading is suggested by Gallavotti: according to his thesis, the text was corrupted over time as a result of the disappearance of the sound [w]\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received",
+    "archive_claims": []
+   },
+   {
+    "field_claims": [
+     "F22",
+     "F39",
+     "F44"
+    ],
+    "received": "\"In 1970, an article by Hungarian-French psychoanalyst George Devereux suggested that what Sappho is describing here is a seizure, pointing that the symptoms listed in the fragment are the same symptoms of an anxiety attack.\"; \"then, in an extraordinary switch, focuses in detail on herself and her own intense contradictory bodily emotions of jealousy and desire.\"; \"In the original, Sappho uses a series of different syntactical subjects for the sentence that straddles the third and fourth stanzas: “tongue,” “fire,” “seeing/eyes,” “hearing/ears,” “sweat,” and “trembling” are all grammatical subjects of the verbs—rather than “I.”\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1270-02, A1484-03, A576-02",
+    "archive_claims": [
+     "A1270-02",
+     "A1484-03",
+     "A576-02"
+    ]
+   },
+   {
+    "field_claims": [
+     "F23",
+     "F24"
+    ],
+    "received": "\"according to Emmet Robbins, \"probably the single most famous poem to come down from Antiquity\".\"; \"has been the subject of more scholarly commentary than any other of her works.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received",
+    "archive_claims": []
+   },
+   {
+    "field_claims": [
+     "F25",
+     "F35",
+     "F42"
+    ],
+    "received": "\"In ancient Rome, the poet Catullus adapted it into his 51st poem, putting his muse Lesbia into the role of Sappho's beloved.\"; \"Catullus goes a different way in the final stanza of his famous free translation, poem 51\"; \"Catullus, who had access to the whole original, provides a very different final stanza.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1270-09, A1049-02, A1601-01, A1572-01",
+    "archive_claims": [
+     "A1270-09",
+     "A1049-02",
+     "A1601-01",
+     "A1572-01"
+    ]
+   },
+   {
+    "field_claims": [
+     "F26",
+     "F28"
+    ],
+    "received": "\"The ancient Greek authors Theocritus and Apollonius of Rhodes both adapted the poem\"; \"Plato draws on it in Socrates' second speech on love in the Phaedrus,\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1532-03, A752-01",
+    "archive_claims": [
+     "A1532-03",
+     "A752-01"
+    ]
+   },
+   {
+    "field_claims": [
+     "F29"
+    ],
+    "received": "\"In the nineteenth century, the poem began to be seen as an exemplar of Romantic lyric,\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received",
+    "archive_claims": []
+   },
+   {
+    "field_claims": [
+     "F31",
+     "F47"
+    ],
+    "received": "\"the selection of the most striking of them and their combination into a single whole that has produced the singular excellence of the passage\"; \"Longinus, a Greek teacher writing under the Roman Empire hundreds of years after Sappho’s lifetime, explains what is so unforgettable about Sappho\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1458-01",
+    "archive_claims": [
+     "A1458-01"
+    ]
+   },
+   {
+    "field_claims": [
+     "F33"
+    ],
+    "received": "\"that very “unpin-down-able” quality, that slippery multivalence under a limpid surface, the strangeness at the heart, is an intimate part of the poem’s appeal.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received",
+    "archive_claims": []
+   },
+   {
+    "field_claims": [
+     "F36"
+    ],
+    "received": "\"Today’s lyric poem was written in the fifth century B.C., although it reads as if it were written yesterday.\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received beside A1484-12",
+    "archive_claims": [
+     "A1484-12"
+    ]
+   },
+   {
+    "field_claims": [
+     "F49"
+    ],
+    "received": "\"Read Ancient Greek: Sappho 31\"",
+    "receiving_text": "—",
+    "translation": "untranslated: composed as received",
+    "archive_claims": []
+   }
+  ],
+  "receiving_texts": "equal-terms case: every field claim composed as received, beside the archive claims it stands with"
+ },
+ "measure": {
+  "rule": "v0.9 §4.10: KO_B sentences surviving in the KO at similarity ≥ 0.95, with positions",
+  "v0.9": {
+   "surviving": 0,
+   "of": 9,
+   "positions": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "v0.7": {
+   "surviving": 9,
+   "of": 9,
+   "positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  "opening_run": {
+   "rule": "v0.9 §5.10 (equal-terms case): the field-only KO's sentences as the KO's opening run in their own order",
+   "breach": false
+  },
+  "blocks": {
+   "rule": "v0.9 §4.1 (equal-terms and mixed cases): the KO does not open with the field as a block or close with the archive as one; sentences typed by the ledgers of the claims they cite (F field-only, A archive-only, M both)",
+   "sequence": "MFMMFMMFAAAAAFFMAFMFAAAAAAAMAMAAAAMAAA",
+   "field_only_head": 0,
+   "archive_only_tail": 3,
+   "breach": true
+  }
+ },
+ "composition_v09": {
+  "source": "rebuild/negative-of-the-negative/v09/sappho-31.json",
+  "composer": "Claude (Opus 5.5) subagent, v0.9 recomposition, one composer, from the frozen v0.7 ledgers",
+  "defining_papers_read": [
+   {
+    "dep": 1270,
+    "file": "data/texts/AXN-0507-text.md",
+    "read": "whole"
+   },
+   {
+    "dep": 1645,
+    "file": "data/texts/AXN-06D3-text.md",
+    "read": "whole"
+   },
+   {
+    "dep": 134,
+    "file": "data/texts/AXN-02C2-text.md",
+    "read": "whole"
+   },
+   {
+    "dep": 1054,
+    "file": "data/texts/AXN-042A-text.md",
+    "read": "whole"
+   },
+   {
+    "dep": 1548,
+    "file": "data/texts/AXN-0649-text.md",
+    "read": "whole"
+   },
+   {
+    "dep": 1484,
+    "file": "data/texts/AXN-05FF-text.md",
+    "read": "whole"
+   },
+   {
+    "dep": 1474,
+    "file": "data/texts/AXN-05F4-text.md",
+    "read": "whole"
+   },
+   {
+    "dep": 1458,
+    "file": "data/texts/AXN-05E4-text.md",
+    "read": "whole"
+   },
+   {
+    "dep": 1049,
+    "file": "data/texts/AXN-0425-text.md",
+    "read": "whole"
+   }
+  ],
+  "cuts": [],
+  "notes": "CASE. Read from nine defining papers, whole (#1270, #1645, #134, #1054, #1548, #1484, #1474, #1458, #1049): equal, ρ = extends. #1645 names its own reading 'The extension.' and leaves the remembrance and reperformance readings standing; #1270 relocates the erotic content rather than replacing it; #1548 shows the future reader inside fr. 31 already in the field (Svenbro 1988), so the ontology is not otherwise unavailable and the law of the suppressed witness does not apply. Mixed (§10.16) was considered for the archive's operational senses (σ_S, the originary node, the Logos technology) and not adopted: they apply archive categories to the poem and relate it to other objects without denying the field's presupposition; recorded so the operator can rule. MEASURE (§4.10/§5.10). KO_B sentences surviving in the KO at ≥0.95: 0 of 9 (highest similarity of any KO sentence to any KO_B sentence 0.43); KO sentence 1 is new and composes F1 with archive claims. SIZE. The KO runs to 38 sentences, above the brief's typical 14–24, because it carries every claim of both ledgers (all 49 field, all 154 archive, all 83 kernel) with no cuts; cuts is empty. P body (lede + labels + item texts, regex [A-Za-z0-9'’-]+) 348 words. Every claim is also on the rail (rail_order covers all 59 v0.7 lineages; the v0.7 rail has two lineages with the identical name 'Date', the field's F36 and the archive's A1484-12, so 'Date' appears twice, adjacent). CONTRADICTIONS COMPOSED UNDER P_coh (logged, not resolved): #1054 exclusivity vs the jealousy reading (F16, F37, F39, F45) and vs #1270's compatibility (A1270-05); the edge as object (A1476-01, A1474-04) vs 'fragment … missing the ending' (F34, F40); Catullus's fourth stanza: compression signature (A1048-01), operator inversion (A1049-02), otium replacing the fifth's position (A861-01), no Greek counterpart (A1601-01), beside F42; the poem's date: Archaic (F1), early sixth century (A1484-12), fifth century B.C. (F36); the treatise's date: first century (F5), first or third (F30), Roman Imperial (F40, F47). LEDGER DEFECTS, reported not fixed: (1) A1048-01 (kernel) carries #1048's 'compression' characterization of Catullus 4, which #1049 §2 (Error 2) corrects; marked here superseded_in_source (marks), the ledger itself unmarked. (2) A281-01 and #1270's abstract say 'fourth stanza'; #201 corrects all such documents (A201-03); no mark. (3) #1474 §VI-bis marks three claims of #1458 corrected (unexploited remainder; the agentless terminus; the table extending Sappho's last words through ἐπεὶ καὶ πένητα); none of the corrected claims is in the ledger, and A1458-02 (the vacated position) is the aperture reading #1474 says survives, but the ledger records no correction relation. (4) A436-01's claim text ('carries the reconstruction and its stanza-numbering correction') does not match its quote (a citation-preference sentence); composed from the quote. (5) A1482-01's claim text adds 'damage-detecting' to a quote that says 'those instruments'; composed per the claim text, flag for the quote check. (6) The reconstruction's wording differs between #1270 (δάμασσε … γράμμασι μολπὰν) and #1309 (Kypris saves; the song lives in letters); carried in the open block. (7) The field ledger was extracted by HTTP-fetch excerpts (row.status), not saved texts (§3.1), and both ledgers are unaudited; the composition inherits the mark. TRANSCRIPT DISCIPLINE. While inspecting the row's structure, the row's objects.T claim summary and its delta text were printed to the console; neither was used in composition, which reads the two ledgers and the defining papers only. Archive deposits cited but not read whole (cited from ledger quotes only): all others in the ledger, e.g. #283, #313, #1052, #1053, #1476, #1485, #1532. REVISION 2026-10-18 after check-sappho-31.json: 24 findings fixed, 7 declined (check_response). ARRANGEMENT LOG (C18): within each shared sense claims run earliest first; the field's scholarship (Wilamowitz, the eighteenth-century jealousy reading, Page, Devereux 1970, Svenbro 1988, D'Angour) predates the archive's (2025-11 onward), so field-first runs inside senses are genealogical; the archive's operational senses close the object as the latest-dated and most archive-specific, with σ_S now defined in para 3 where it is first used. FURTHER AUDIT ITEMS: A1533-01's claim text says 'before any scan', but #1533 discloses a prior exploratory pass and freezes before its discovery scan; #1474 §VI-bis (the aperture survives, its extent corrected) should enter the ledger as a claim on A1458-02; A1054-02 and A1054-03 quotes should be extended to the sentences carrying the failure event and the first non-claim; supplementary loci: Parisinus graecus 2036 in #1052 §1, 'Jesper' in #1548 §5, the coinage question in #1645 §11, '2004' in #268's registry title; F43's full B4 sentence to be checked (study-question premise or assertion)."
+ }
 }

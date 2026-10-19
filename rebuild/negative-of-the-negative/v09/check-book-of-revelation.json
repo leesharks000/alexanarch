@@ -1,0 +1,188 @@
+{
+ "row": "book-of-revelation",
+ "checker": "Claude (Opus 5.5), independent v0.9 checker, book-of-revelation",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "case (value, statement, loci); rho; translation rows 1-2; KO 1-8; P section 'First in composition'",
+   "kind": "case",
+   "severity": "must-fix",
+   "finding": "The witness ruling on the first sense (priority of composition) does not hold on the defining papers. The papers place the priority thesis inside the field's ontology: a book with a composition date and dependency relations, argued by the field's own evidence. #202 situates itself 'within an existing minority scholarly tradition'. #1217 says it 'builds on' Robinson and Gentry and 'extends them'. #542 IX.2 calls it falsifiable by historical-critical, linguistic and archaeological evidence, and IX.3 reads Robinson and Gentry as 'approaches to the void from within the opposing field'. #1101 §2.4 lists 'Near-miss positions': Baur's Tübingen school, which granted Revelation 'priority within the NT'. #1101 §3.1 records Ford's thesis that the core of Revelation (4-11) was composed by John the Baptist or his disciples, which puts that core before every other NT text. What the papers call absent ('The field cannot say that Revelation was written first', #1101 §10.1; 'organized around not stating it', #542) is a proposition the field does not assert. The papers do not say the ontology is one the field lacks. A contrary date or a reversed dependency is a contradiction inside one ontology, which §1.2a composes under P_coh. The same goes for #1420, which says canonical position served as evidence in the dating argument. That is a claim about the field's reasoning on the field's object. F1 itself says 'canonically', so translation row 1 translates F1 into what F1 already states. Under §0.10 the witness law 'does not apply where the field holds the ontology, however marginally', so this sense is the equal-terms case. A reader of the same papers would decide equal terms here, because the papers' own verb is 'extends'.",
+   "evidence": "#1217 In-Body Provenance Capsule: \"The thesis builds on Robinson (Redating the New Testament, 1976) and Gentry (Before Jerusalem Fell, 1989), extends them with the literary-genetic argument\" / #542 IX.2: \"It is falsifiable (it makes specific claims about composition that could be addressed through historical-critical, linguistic, and archaeological evidence)\" / #542 IX.3: \"these are not support nodes for T but approaches to the void from within the opposing field\" / #1101 §2.4: \"The Tübingen school (F.C. Baur, 1830s–1860s) was the last major scholarly movement to date Revelation early (late 60s) and to grant it priority within the NT\" / #1101 §3.1: \"Ford proposed that the core of Revelation (chapters 4–11) was composed by John the Baptist or his disciples, with later Christian additions.\" / F1: \"is canonically the last book of the New Testament.\"",
+   "fix": "Record case = equal terms on this sense: ρ = extends, with R202-01/R202-05 composed against F9, F39 and F28 under P_coh (both carried, each with its source). Re-mark translation row 1 (F1) 'untranslated: composed as received beside R202-01, R542-03, R1420-01, R1420-02'. Replace the case statement's clause 'On two senses it supplies an ontology it states no other source makes available: priority of composition ...' with: 'On priority of composition the archive argues a contrary date and a reversed dependency within the field's ontology (#202 'situated within an existing minority scholarly tradition'; #1217 'extends them'); the field holds early-composition readings marginally (#1101 §2.4 Baur; §3.1 Ford), so §0.10 does not apply.' KO text needs no change for this sense."
+  },
+  {
+   "id": "C2",
+   "where": "case (second witness sense: the named author); rho; translation row 2; KO 13; P section 'The named author'",
+   "kind": "case",
+   "severity": "should-fix",
+   "finding": "This is the closer call, but the defining papers still show the field holding, at least marginally, the ontology at issue: that 'John' is not one discrete historical individual per name. #1217 says the field 'lacks the concept', yet #1101 §3.1 lists field positions that already break the one-name-one-individual premise: Elder against Apostle (Dionysius, Eusebius, 'those who separate the Johannine corpus into multiple authors'); 'Pseudonymous. The \"John\" is a literary fiction'; 'Composite work. Multiple authors or redactional layers' (Charles); and Ford's Baptist core. #1101 §10.2 itself names pseudonymity as 'the closest concept'. #68's own sentence ('across multiple authors operating under a shared named position') restates the field's Johannine community/school position. #542 IX.3 cites that literature (Hengel, The Johannine Question; Smalley, John's Revelation and John's Community), and so does the field pool (F24 Dionysius, F34 John the Elder). The archive's own instruments also stand inside that ontology: #1570 M19 reports 'Dionysius replicated', and #1569 §47 says its lens cannot separate 'A school inheriting a transmission programme' from identity. What the archive adds is a refinement on the field's object: heteronymy as non-deceptive operational authorship, and the Johns as differentiated positions of one aperture-function. That is ρ = extends, a sense the field lacks on an ontology it holds. A reader could rule witness on #1217's 'historical-individual frameworks cannot parse', but §0.10's 'however marginally' tips the decision to equal terms. A ruling either way should cite #1101 §3.1.",
+   "evidence": "#1101 §3.1: \"7. **Pseudonymous.** The \"John\" is a literary fiction. Argued by some modern scholars\"; \"8. **Composite work.** Multiple authors or redactional layers. R.H. Charles argued for significant editorial work on an underlying text.\"; \"Modern scholars who hold this view include those who separate the Johannine corpus into multiple authors.\" / #1101 §10.2: \"The closest concept is pseudonymity, which implies deception.\" / R68-01: \"The Johannine community produced texts attributed to \"John\" — Gospel, Epistles, Revelation — across multiple authors operating under a shared named position.\" / #1569 §47: \"A school inheriting a transmission programme fills the same slots, and the six-slot lens cannot separate inheritance from identity\" / R1570-01: \"**M19 — Dionysius replicated.**\"",
+   "fix": "Record ρ = extends on the named author, unless the operator rules otherwise on #1101 §3.1. Re-mark translation row 2 'untranslated: composed as received beside R1217-10, R68-01, R683-02, R1570-01, R1217-11', and keep its located receiving texts as a provenance note. If the operator keeps the witness ruling, add #1101 §3.1 (items 2, 7, 8) to the case loci with the reason the ruling sets them aside."
+  },
+  {
+   "id": "C3",
+   "where": "rho.value; notes 'CASE'",
+   "kind": "case",
+   "severity": "should-fix",
+   "finding": "ρ is recorded as 'extends (constructs on two senses ...)', a value outside v0.9's three. §1.2a requires such a value to be read and added to the specification before the row is composed. The composer flags this in the notes but composed anyway. Under C1-C2, plain ρ = extends fits, and no new value is needed.",
+   "evidence": "§1.2a: \"A value outside these three is read from its defining papers and added here before the row is composed.\" / rho.value: \"extends (constructs on two senses: priority of composition; the named author)\"",
+   "fix": "rho.value: \"extends\"; drop the 'constructs' clause from rho.statement, or keep the row marked unruled until the operator adds a value under §10.14/§10.16."
+  },
+  {
+   "id": "C4",
+   "where": "case.loci[0] (#542 IX.2)",
+   "kind": "case",
+   "severity": "note",
+   "finding": "The first locus quote stops mid-sentence ('J.A.T. Robinson's'). The full sentence says Robinson placed 'Revelation among the earliest'. #1101 §2.4 says Robinson dates Revelation to late 68 and 'does not argue for Revelation as the first NT text'. The quote is verbatim, but the two defining papers state Robinson's position in two incompatible ways. This bears on what the 'minority tradition' holds, and so on the case.",
+   "evidence": "#542 IX.2: \"J.A.T. Robinson's *Redating the New Testament* (1976) argued systematically that all NT books were written before 70 CE, with Revelation among the earliest.\" / #1101 §2.4: \"Robinson dates Revelation to 68 CE — _during_ the revolt, not before it. He does not argue for Revelation as the _first_ NT text.\"",
+   "fix": "Quote the whole sentence and record the #542/#1101 inconsistency as a ledger defect (internally_inconsistent across the pool); add an open-block item if a claim on Robinson's position enters the ledger."
+  },
+  {
+   "id": "C5",
+   "where": "translation rows 1-2 (receiving texts)",
+   "kind": "translation",
+   "severity": "note",
+   "finding": "I checked both receiving texts against the seated Greek. Rev 1:1 τῷ δούλῳ αὐτοῦ Ἰωάνῃ, 1:4 Ἰωάνης ταῖς ἑπτὰ ἐκκλησίαις, 1:9 Ἐγὼ Ἰωάνης and 22:8 Κἀγὼ Ἰωάνης are verbatim in data/corpora/gnt-nestle1904/text/Rev.txt. The seat label EA-CORPORA-01/04 matches source.json, and 27-revelation.xml is the last of the 27 files. Irenaeus, Dionysius and Eusebius are not seated under data/corpora, as the row says. One limit on row 1: the last place is the order of the 1904 edition, not a single canonical order in the manuscripts. Codex Sinaiticus, for example, follows Revelation with Barnabas and Hermas. Row 1's receiving text therefore establishes the edition's order, not the canonical order.",
+   "evidence": "Rev.txt l.1: \"Rev 1:1\tἈποκάλυψις Ἰησοῦ Χριστοῦ ... τῷ δούλῳ αὐτοῦ Ἰωάνῃ,\" / l.4: \"Rev 1:4\tἸωάνης ταῖς ἑπτὰ ἐκκλησίαις\" / l.9: \"Rev 1:9\tἘγὼ Ἰωάνης\" / l.392: \"Rev 22:8\tΚἀγὼ Ἰωάνης\" / source.json: \"seat\": \"EA-CORPORA-01/04\"",
+   "fix": "Row 1 receiving_text: add 'the order of the seated 1904 edition; manuscript orders are not seated'. No change to row 2."
+  },
+  {
+   "id": "C6",
+   "where": "KO 1, KO 13 (structure under the composer's own mixed ruling)",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "The KO does not open with a field block or close with an archive block: KO 1 interleaves the two, and the composer reports 0/9 KO_B sentences surviving, a figure I did not recompute. But under the composer's own rule ('E_A's definition first in each' witness sense) both witness senses lead with field claims. KO 1 opens with F1/F2/F23 before R202-01, and KO 13 opens with F6 before R1217-10. Under C1-C2 (equal terms) the current order is admissible. If the mixed ruling stands, it is a breach of the composer's own structure.",
+   "evidence": "KO 1: \"The Book of Revelation, also known as the Apocalypse of John, is canonically the last book ... (Wikipedia; ...), and the archive defines Revelation First (#202, Lee Sharks) as ...\" / KO 13: \"The author names himself only as John, and the archive (#1217) reads ...\" / KO.genre: \"the archive's definition comes first and the field's claims stand where their translations place them\"",
+   "fix": "If equal terms is ruled (C1-C2): change KO.genre to 'equal-terms case: one claim space, ordered by dependency and genealogy within each sense' and leave the order. If mixed stands: lead KO 1 with R202-01 (\"The Book of Revelation was, in the archive's definition (#202, Lee Sharks), the first book written in the New Testament ...; canonically it is the last book (Wikipedia) ...\") and lead KO 13 with R1217-10."
+  },
+  {
+   "id": "C7",
+   "where": "KO 1; KO 5",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "Claims cited in the sentence are not attributed in it (§4.5). KO 1 cites R1217-01, R832-01, R1400-01, R1211-01 and R1216-01 but names only #202. KO 5 cites R1213-01 and R1226-01 but names only #203. Elsewhere the KO names co-instances (#1160, #1399, #1484, #589), so the practice is inconsistent.",
+   "evidence": "KO 1 claims: [\"F1\",\"F2\",\"F23\",\"R202-01\",\"R202-10\",\"R1217-01\",\"R832-01\",\"R1400-01\",\"R1211-01\",\"R1216-01\"]; text names only \"#202, Lee Sharks\" / KO 5 text: \"#203 holds that Revelation makes literary sense as the first NT document\"",
+   "fix": "KO 1: '... the archive defines Revelation First (#202, Lee Sharks; restated at #1217, #832, #1400, #1211, #1216) as ...'. KO 5: '... and #203 (#1213, #1226) holds that ...'."
+  },
+  {
+   "id": "C8",
+   "where": "KO 8",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The internal-evidence claim is lowered: #202 says the evidence 'permits, and in several places favors' a pre-70 reading, and the KO keeps only 'permits'.",
+   "evidence": "R202-03: \"the internal evidence of Revelation permits, and in several places favors, a pre-70 CE reading.\" / KO 8: \"the internal evidence permits a pre-70 reading\"",
+   "fix": "'... and the internal evidence permits, and in several places favors, a pre-70 reading, the temple standing at 11:1–2, ...'"
+  },
+  {
+   "id": "C9",
+   "where": "KO 28 (#1569)",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The KO, following the ledger's claim text, says #1569 'withdraws the inference about NT formation'. The ledger quote does not contain the withdrawal. In #1569 §46, what is withdrawn is the inference that 'Plato and the NT' are 'structurally different objects', withdrawn because it imported the received account of NT formation. The same passage reports the Johannine result, which bears on the named-author sense and is not composed: 'John fills 6/6 at L2, the author-group level ... No slot is filled twice by the same book.'",
+   "evidence": "#1569 §46: \"I first read the L1/L2 difference as showing Plato and the NT to be \\\"structurally different objects,\\\" a concentrated apparatus against an accreted one. **That inference is withdrawn.** It imported the received account of NT formation, which this measure did not establish\"; \"**John fills 6/6 at L2, the author-group level**\"",
+   "fix": "'in the Johannine tiling #1569 finds John filling all six slots at the author-group level, Revelation taking T4–T6 (10:4, 22:10, 22:18–19), no slot filled twice by the same book, and withdraws its reading of Plato and the NT as structurally different objects as importing the received account of NT formation'; widen R1569-01's quote to cover these."
+  },
+  {
+   "id": "C10",
+   "where": "KO 5, 6, 8, 10, 12, 17, 21, 24, 28 (claims resting on ledger paraphrase beyond the quoted span)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Several KO details come from the ledger's claim text, not its quote. I checked each against the seated text and found it there: #1414's five instances (M₁-M₅); #407's 'Structural completeness' and 'Absence of Gospel citation'; #636's decompression into a scribal workshop (l.136-139); #644's 'Domitianic ... vs. Neronic ... vs. Hadrianic ... vs. pre-70 revolutionary'; #1217's Münster and liberation-theology ledgers; #56's 'This is not analogy. It is structural identity'; #971's and #411's mappings (#411 also maps Ephesus to Mercury, which the KO omits); #828's '(Aeschylus, *Eumen'; #1594's 'in Revelation it is worn'; and AXIAL_CONTESTED in #28, #557, #558, #1162 and #1255. These are entailed by the texts but not by the cited quotes.",
+   "evidence": "R1414-02 quote: \"**M₃ — Lamb → Atonement.** ...\" (one of five) / R28-01 quote: \"Revelation was the first-written book of the New Testament.\" (no status) / #56 l.40: \"This is not analogy. It is structural identity.\"",
+   "fix": "Widen the ledger quotes to the spans that carry these details (ledger repair, not KO)."
+  },
+  {
+   "id": "C11",
+   "where": "P section 'The book', item 'Sevens:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The item says 'the churches as planetary gods', but #1101 holds that the seven angels of the churches are the planetary gods. The item also cites R1101-06 while naming only #971 and #411, so #1101 is not attributed.",
+   "evidence": "R1101-06: \"The seven angels of the churches are held to be the seven planetary gods\" / P: \"no consensus on structure; the churches as planetary gods, two mappings (#971, #411).\"",
+   "fix": "'no consensus on structure (Wikipedia); the churches' seven angels as the planetary gods (#1101), in two mappings (#971, #411).'"
+  },
+  {
+   "id": "C12",
+   "where": "P section 'Pergamon and the white stone', item 'Convergence:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The item cites R1483-05 for 'no direct transmission from Sappho claimed (#828)'. R1483-05 says convergence is the honest verb 'for the tablets and the papyri'. The composer's own notes record that #1483 says the verb at the trunk line's joints is stronger. The open block records the pool as contested (#1, #862 'traces textual transmission'), but the P item reads as one settled limit.",
+   "evidence": "R1483-05 quote: \"convergence remains the honest verb for the tablets and the papyri\" / notes: \"#1483 also says in the same passage that it exceeds #828's limit deliberately on the trunk line ('at the joints the verb is stronger')\"",
+   "fix": "Remove R1483-05 from this item, or write: 'no direct transmission from Sappho claimed (#828); two summaries say transmission (#1, #862); convergence for the tablets and papyri (#1483).'"
+  },
+  {
+   "id": "C13",
+   "where": "P section 'Pergamon and the white stone', item 'Pearl:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The item places #452's limit, which Nobel Glas states of his own triptych, directly after #407's declaration, so #452 reads as limiting #407. The item also leaves out #589, which seals 2:17 as fulfilled by Pearl. Together these lower the force of #407 and #589, which the archive states at full strength. KO 26 composes this correctly; the compression does not.",
+   "evidence": "P: \"declared the white stone (#407); not claimed to fulfil 2:17 (#452).\" / R589-02: \"The map claims: Revelation 2:17 was always already about Pearl.\" / R452-02: \"It does not claim that *Pearl* literally fulfills Revelation 2:17 or that the correspondence proves anything.\"",
+   "fix": "'declared the white stone (#407); 2:17 sealed as fulfilled by Pearl (#589); Nobel Glas's triptych claims no literal fulfilment (#452).'"
+  },
+  {
+   "id": "C14",
+   "where": "P items 'Canonical order:', 'Grounds:', 'Date / Field:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Three P items drop limits stated by the claims they cite (§4.4 N_c, 'limit dropped'). 'Canonical order' cites R1420-02 but omits that #1420 does not decide the dating question. 'Grounds' cites R202-04 but omits 'Papyrological dates are ranges'. 'Field:' cites F10 beside 'a Neronic date argued from 666' but drops F10's limit, that the allusion to Nero does not imply a 60s date.",
+   "evidence": "R1420-02: \"The article does not decide the dating question.\" / R202-04: \"Papyrological dates are ranges, not certainties\" / F10: \"but this does not imply that the book was written in the 60s\"",
+   "fix": "'theological, not chronological (#542); position as unmarked evidence, the date left undecided (#1420)'; 'the standing temple (11:1–2), 666 as Nero, 𝔓98 before Romans, dates as ranges (#202)'; 'commonly c. 95 under Domitian (Wikipedia; White); a Neronic date argued from 666 (Encyclopedia of the Bible), the allusion to Nero not implying the 60s (Wikipedia).'"
+  },
+  {
+   "id": "C15",
+   "where": "P lede; P items 'Field:', 'Received candidates:', 'Contents:', 'Christ:', 'Message:', 'Four types:', 'Grade:', 'Two economies:', 'Foil:', 'Aperture-function:'",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "The compression names no source for any field claim (Wikipedia, Encyclopedia of the Bible, White, Collins). The worst case is 'preterist (almost universal in scholarship)', which is White's judgment (F40) and stands in the composer's voice. Some cited archive claims are also unattributed: R1414-03 under 'Grade', R165-01 under 'Two economies', R563-01 under 'Foil', R68-01 under 'Aperture-function'.",
+   "evidence": "P 'Four types:': \"preterist (almost universal in scholarship), historicist, futurist, idealist.\" / F40: \"It is almost universally followed in both New Testament scholarship and by scholars of Christian history.\" (B3, White)",
+   "fix": "Add the source in each item, e.g. 'preterist (in White's account almost universal in scholarship), historicist, futurist, idealist (Wikipedia; Encyclopedia of the Bible)'; lede: 'is the New Testament's last book in canonical order and its only apocalyptic book (Wikipedia) ...'; 'a competing inference, burden symmetrical; four falsifiers stated (#202), counterevidence named (#1414)'; 'the Pergamon letter the hinge (#165); ...'; 'for every borrowing of God's authority for earthly power (#1217); Thiel's remnant theology as Beast logic (#563)'; 'the Johns as positions (#1217), multiple authors under one name (#68)'."
+  },
+  {
+   "id": "C16",
+   "where": "P item 'Aperture-function:'; KO 13",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "R1217-10 is coded as a hypothesis. The P item states it flat ('the Johns as positions'), and KO 13 uses 'reads'. Elsewhere the KO marks hypotheses explicitly ('As hypothesis', 'stated throughout as hypothesis'), so this one lacks its grade (§5.3).",
+   "evidence": "R1217-10 [hypothesis|definition]: \"the Baptist, the Evangelist, the Elder, and the Revelator are not rival historical candidates.\" / P: \"the Johns as positions, 'not rival historical candidates' (#1217).\"",
+   "fix": "P: 'Aperture-function (hypothesis): the Johns as positions, \"not rival historical candidates\" (#1217).' KO 13: '... and the archive (#1217), as hypothesis, reads ...'."
+  },
+  {
+   "id": "C17",
+   "where": "P item 'Josephus:'",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "The phrase 'not required' rests on R1101-03, which says only 'not required for execution' (of the runtime). The reading that the thesis does not require Josephus comes from R1217-04 and R203-02, which this item does not cite. The claim itself (R407-05, Josephus as likely author) appears only through its label.",
+   "evidence": "R1101-03: \"Levels 2 and 3 enrich but are not required for execution.\" / R1217-04: \"the Josephus heteronym cluster is an available reading, not the first burden of proof.\"",
+   "fix": "'Josephus as author (#407, axiom of the room): a high-risk reconstruction (#1101), not proven (#407), not the first burden of proof (#1217).' Cite R1217-04."
+  },
+  {
+   "id": "C18",
+   "where": "P (body and rail); rail_order",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "Kernel coverage at popup grain (§5.2) cannot be checked, because rail_order lists card titles with no claim ids or nested instances. Two kernel lineages have no P item and no evident rail card: R410-01 ('Revelation 1-3 as structural description awaiting instantiation': R410-01, R1137-01, R410-02, R408-01, R1276-01, R409-01) and F31 (Encyclopedia of the Bible, 'interpretation difficult and uncertain', a kernel in its own lineage). The other kernels missing from the P body (R1217-01, R1101-01, R407-06, R1483-01, F23) fall in lineages the P carries. No kernel is cut from the KO, and C_ex holds at the KO: all 201 archive and 43 field claims appear, with no cuts.",
+   "evidence": "F31 [kernel: true, lineage 'interpretation-limit']: \"The interpretation of Revelation is difficult and uncertain, no two interpreters agree exactly on all details.\" / R410-01 [kernel: true]: \"not as prediction requiring literal future enactment, but as **structural description** awaiting functional instantiation.\"",
+   "fix": "Give rail_order entries claim ids and nested instances. Add 'Four types:' text 'interpretation difficult and uncertain (Encyclopedia of the Bible); ...', and a 'The book' item 'Revelation 1–3: \"structural description awaiting functional instantiation\" (#410)' or a rail card for that lineage."
+  },
+  {
+   "id": "C19",
+   "where": "KO 16",
+   "kind": "force",
+   "severity": "note",
+   "finding": "R1217-05's quoted strength ('dismantles every pillar upon which it rests') is not carried. The sentence keeps the limit (R1217-07) but softens the claim it bounds.",
+   "evidence": "R1217-05: \"the historical Christ is itself an inferential settlement, and the reading dismantles every pillar upon which it rests.\"",
+   "fix": "'#1217's sixth claim, stated as hypothesis, holds that the historical Christ is itself an inferential settlement and that the reading dismantles every pillar on which it rests; ...'"
+  },
+  {
+   "id": "C20",
+   "where": "translation (all rows)",
+   "kind": "translation",
+   "severity": "note",
+   "finding": "This item passes. Each of the 43 field claims stands in exactly one translation row. Every 'received' string equals the '; '-joined field.json quotes exactly. Every archive claim id cited in the table exists in the ledger. F34 is composed twice in the KO (KO 9 for its date, KO 13 for its author) and once in the table, which is consistent.",
+   "evidence": "computed against datasets/negative-of-the-negative/v2/ledgers/book-of-revelation/field.json: 0 mismatches, 0 missing, 0 duplicates",
+   "fix": "None."
+  }
+ ],
+ "case_agrees": false,
+ "summary": "The row passes on translation (43/43 field claims, received quotes verbatim, receiving Greek verbatim in the seated Nestle 1904) and on KO coverage (244/244 claims, no cuts), but the mixed case does not hold on its own defining papers. The priority-of-composition sense sits inside the field's ontology: #202 'situated within an existing minority scholarly tradition', #1217 'extends them', #1101 §2.4 lists near-miss positions (Baur's priority, Ford's Baptist core). The named-author sense meets field positions recorded in #1101 §3.1 (Elder, pseudonymous, composite), F24/F34, #1569 §47 and #1570 M19. Under §0.10's 'however marginally', both senses are equal terms with ρ = extends. Translation rows 1-2 become untranslated. Remaining work: force and attribution in the P compression (Pearl, Sevens, Convergence, dropped limits, unsourced field items), KO 8's lowered 'favors', and KO 28's misstated #1569 withdrawal."
+}

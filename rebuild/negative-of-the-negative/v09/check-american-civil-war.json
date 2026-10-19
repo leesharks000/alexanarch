@@ -1,0 +1,278 @@
+{
+ "row": "american-civil-war",
+ "checker": "Claude (independent checker subagent), v0.9 CHECK-BRIEF",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "KO S8",
+   "kind": "attribution",
+   "severity": "must-fix",
+   "finding": "The reading 'a contest over where the line of unfree labor would run across the continent and across the races of labor' is #1668's report of Marx's reading, but S8 makes it #1668's own reading of the 7 November 1861 quote ('which it reads as a contest'). The holder of the claim is changed.",
+   "evidence": "V1668-31 (#1668 §4.2): \"Marx reads the war as a contest over where the line of unfree labor would run across the continent and across the races of labor.\"",
+   "fix": "Replace 'which it reads as a contest over where the line of unfree labor would run across the continent and across the races of labor' with 'and holds that Marx reads the war as a contest over where the line of unfree labor would run across the continent and across the races of labor'."
+  },
+  {
+   "id": "C2",
+   "where": "KO S7; P open block item 1",
+   "kind": "attribution",
+   "severity": "must-fix",
+   "finding": "S7 says '#1668, through Ransom, divides the Beard-Hacker thesis by object', with all three dates under Ransom. #1668's date for abandonment as an account of causes ('after about 1950') is not from Ransom. Its note 7 cites the Wikipedia article 'Historiographic issues about the American Civil War', which cites Stampp. Open item 1 repeats the error ('#1668, through Ransom, has the Beard-Hacker thesis abandoned as an account of causes after about 1950'), and the question it asks (do Wikipedia's 1950s and #1668's 1950 concern the same object?) rests on it. Both dates come down through Wikipedia.",
+   "evidence": "#1668 §0.4: \"As an account of causes it was abandoned after about 1950.[^7]\"; [^7]: \"'Historiographic issues about the American Civil War,' Wikipedia ... citing Kenneth M. Stampp, The Imperiled Union ... 198. Secondary\". Ransom carries only [^6] and [^8].",
+   "fix": "S7: '#1668 divides the Beard-Hacker thesis by object: through Ransom, by the Second World War it \"had become ...\" and was \"the prevailing view as late as 1960\"; as an account of causes it was abandoned after about 1950 (on a Wikipedia historiography article citing Stampp); as an account of consequences ...'. Open item 1: state that #1668's 1950 date reaches it through a Wikipedia historiography article citing Stampp, beside F24 (Wikipedia, American Civil War). Keep the question, about whether the two dates concern the same object, and add that both reach the row through Wikipedia."
+  },
+  {
+   "id": "C3",
+   "where": "KO S12",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "F17 says Republicans 'could pass' the blocked projects. S12 says they 'passed' them. The possibility becomes an accomplished fact, and the force is raised.",
+   "evidence": "F17: \"As Southerners resigned their Senate and House seats, Republicans could pass projects that had been blocked. These included the Morrill Tariff, ...\"",
+   "fix": "'with Southern members gone, Wikipedia says, Republicans could pass projects that had been blocked, among them the Morrill Tariff, ...'"
+  },
+  {
+   "id": "C4",
+   "where": "KO S5",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'The secessionists named the cause' stands as a composed claim, but none of the claims S5 cites states it. It is #1668's (§0.1 'The secessionists said so'; §4.20(a) 'the secessionists named it'), carried in the ledger as V1668-55, which S5 does not cite, and the sentence gives it no source.",
+   "evidence": "V1668-55: \"(a) Cause: slavery and its expansion caused the war, the secessionists named it, and Marx himself rejected the tariff explanation offered in 1861 (§0).\"",
+   "fix": "Open S5 with 'The secessionists named the cause, #1668 says:' and add V1668-55 to S5's claims."
+  },
+  {
+   "id": "C5",
+   "where": "KO S5",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'#1668 quotes at its opening' misreads the ledger quote. The ledger says Mississippi's declaration 'opens its case' with the line, meaning the declaration opens its own case. #1668 quotes it in §0.1, not at the paper's opening paragraph, which has no Mississippi quotation.",
+   "evidence": "V1668-05: \"Mississippi's declaration of 1861 opens its case: \\\"Our position is thoroughly identified with the institution of slavery-- the greatest material interest of the world.\\\"\"",
+   "fix": "'Mississippi's declaration of 1861, which Wikipedia cites against the pseudo-historical Lost Cause denial and with which, #1668 notes, the declaration opens its case, states ...'"
+  },
+  {
+   "id": "C6",
+   "where": "KO S2",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'accepts that account of cause and outcome in full' points back to S1, which holds Wikipedia's dates, Britannica's count and Wikipedia's outcome sentence. #1668 accepts its own §§0.1–0.7, the conventional reading as it sets it out (cause, Marx, Ransom, Beard-Hacker, the two labor systems, emancipation and the Amendment). It does not accept S1's account as such.",
+   "evidence": "V1668-16: \"This paper accepts all of 0.1–0.7. Its object is what the conventional reading leaves in the background ...\"",
+   "fix": "'#1668 (...) accepts the conventional reading as its §§0.1–0.7 set it out, and takes as its object what that reading leaves in the background, ...'"
+  },
+  {
+   "id": "C7",
+   "where": "KO S6",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The 2011 panel's subject is shortened from 'slavery and its various and multifaceted discontents' to 'slavery'. Dropping the qualifier changes what the panel names as the primary cause (§5.3: a dropped qualifier is a breach).",
+   "evidence": "F16: \"while slavery and its various and multifaceted discontents were the primary cause of disunion, it was disunion itself that sparked the war.\"",
+   "fix": "'a panel of historians said in 2011 that slavery and its various and multifaceted discontents were the primary cause of disunion, and disunion itself sparked the war'"
+  },
+  {
+   "id": "C8",
+   "where": "KO S14; P Course 'Emancipation:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "F33's limit, that the Proclamation did not free the enslaved in the loyal border states, is dropped. It is the qualifier on 'a wartime measure', and D_pres forbids removing the distinction a claim carries.",
+   "evidence": "F33: \"He justified his decision as a wartime measure, and did not go so far as to free the enslaved people in the border states loyal to the Union.\"",
+   "fix": "S14: '... which History.com says Lincoln justified as a wartime measure, not freeing the enslaved in the border states loyal to the Union, ...'"
+  },
+  {
+   "id": "C9",
+   "where": "KO S14",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "A sense of F34 is absent from the KO and the compression: that the Proclamation 'put international public opinion strongly on the Union side'.",
+   "evidence": "F34: \"Still, the Emancipation Proclamation deprived the Confederacy of the bulk of its labor forces and put international public opinion strongly on the Union side.\"",
+   "fix": "'it deprived the Confederacy of the bulk of its labor forces and put international public opinion strongly on the Union side, and some 186,000 Black soldiers ...'"
+  },
+  {
+   "id": "C10",
+   "where": "KO S27; P Bounds 'Second half:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'war Fordism made the noun a switch' drops what V1669-02 says the switch is ('kept the specified verb', 'racial-juridical classification selected the coercive regime under which the verb was extracted'). Without that, the compression line is opaque, and it removes the distinction the claim carries (D_pres).",
+   "evidence": "V1669-02: \"War Fordism kept the specified verb and made the noun a switch: racial-juridical classification selected the coercive regime under which the verb was extracted.\"",
+   "fix": "S27: '... and war Fordism kept the specified verb and made the noun a switch, racial-juridical classification selecting the coercive regime under which the verb was extracted'. P: 'war Fordism kept the verb; racial classification became the switch selecting the coercive regime (#1669).'"
+  },
+  {
+   "id": "C11",
+   "where": "KO S31",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'the record divides, since slavery and its expansion caused the war ... and the Northern wage-labor market was already formed' presents the division as explained by the counter-findings alone. In #1668, 'divides' means the record supports the thesis in four respects (§4.19 a–d) and runs against it in three (§4.20 a–c). S31 carries only §4.20 (a) and (c), joined by a causal 'since' that no source states.",
+   "evidence": "V1668-54: \"The thesis this paper began from held that the North fought to free cheap wage labor for its industry. The record divides it.\"; #1668 §4.19 \"Where the record supports it. (a) Postwar labor discipline ... (d) The exception clause\"; §4.20 \"Where it runs against the field. (a) Cause ... (b) Scale ... (c) Supply\"",
+   "fix": "'the thesis it began from, that the North fought to free cheap wage labor for its industry, the record divides: against it, slavery and its expansion caused the war and Marx rejected the tariff explanation, and the Northern wage-labor market was already formed before 1861'. Also see C18 (the ledger gap)."
+  },
+  {
+   "id": "C12",
+   "where": "P Causes 'Marx, 1861:'",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "Under the label 'Marx, 1861:', the item joins Marx's tariff conclusion (V1668-06) with #1668's own interpretation 'the stake was slavery itself' (V1668-09), and so reads as if Marx said it.",
+   "evidence": "V1668-09: \"The stake was slavery itself: its value as property and its need for territory.\" (#1668 §0.3, after Ransom, not Marx)",
+   "fix": "'Marx, 1861: the tariff followed secession. #1668: the stake was slavery itself.'"
+  },
+  {
+   "id": "C13",
+   "where": "P Bounds 'The Amendment's reach:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The line drops the predicate: 'fully applied, every contract binding future labor to present terms'. The claim's operative verb ('abolishes') and its interpretive grade are lost.",
+   "evidence": "V497-02 / V1150-02: \"The Thirteenth Amendment, fully applied, abolishes every contract that binds future labor to present terms.\"",
+   "fix": "'read as abolishing, fully applied, every contract binding future labor to present terms (#497, #1150).'"
+  },
+  {
+   "id": "C14",
+   "where": "P Settlement 'Closed:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'Jim Crow and Black Codes followed' asserts a sequence (after the settlement closed toward contract and debt) that neither V1668-57 nor F23/F39 states. F39 says these impediments 'would slow progress for generations', and F23 dates Jim Crow from the withdrawal of federal troops.",
+   "evidence": "F39: \"Reconstruction was an attempt to help the South and assist former Black slaves, but Jim Crow laws, Black Codes and other impediments would slow progress for generations.\"",
+   "fix": "'toward contract and debt (#1668); Jim Crow laws and Black Codes slowed progress for generations (History.com).'"
+  },
+  {
+   "id": "C15",
+   "where": "P Settlement 'Reconstruction:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'black labor's valuation changed in kind (Ruef)' drops Ruef's qualifier 'despite similarities in coercion and the organization of labor', which is the distinction the claim carries. It also attributes to Ruef the phrase 'changed in kind', which is #1668's gloss (§4.11), not Ruef's words.",
+   "evidence": "V1668-46: \"Despite similarities in coercion and the organization of labor, the valuation of wage labor under the bureau was linked to human capital investments and statistical discrimination in ways that were fundamentally different\"",
+   "fix": "'under the Bureau, despite similar coercion, wage labor valued in fundamentally different ways (Ruef).'"
+  },
+  {
+   "id": "C16",
+   "where": "P Measured body 'Hire or buy:'",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "'title to the person the difference' is #1668's interpretation (V1668-28), but it sits under 'Hammond, Lincoln:' as if they said it. The section head '(#1668)' only partly carries the attribution.",
+   "evidence": "V1668-28: \"On these texts slavery sold the person, the noun, and wage labor sold capacity for an interval, the verb. ... the difference is legal title to the person.\"",
+   "fix": "'Hire or buy: Hammond's \"for life\"/\"by the day\", Lincoln's hire or buy; the difference, #1668 holds, is title to the person.'"
+  },
+  {
+   "id": "C17",
+   "where": "Archive ledger / KO S28",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "#497/#1150's governing limit is not in the ledger, so the kernel lacks its limit (§3.5: kernel = central claim and its governing limit). The KO composes V497-01/02 without it. The composer reported this as a ledger defect and composed only what the ledger holds. The composer's own case statement cites the limit verbatim.",
+   "evidence": "#497 NOTE ON SCOPE AND DEFINITION (AXN-013C line 45): \"This document is an interpretive-juridical intervention. It is not legal advice. It does not claim to describe the current state of the law. It claims to describe what the law's own principles require when followed to their structural conclusion.\"",
+   "fix": "Add the limit to the archive ledger as V497-03 / V1150-03 (self-description, kernel: true), then add to S28: '#497 states that it does not claim to describe the current state of the law but what the law's own principles require when followed to their structural conclusion.'"
+  },
+  {
+   "id": "C18",
+   "where": "Archive ledger (#1668 §4.19, §4.20(b)) / KO S31",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "The ledger leaves out two headline findings of #1668's division of its starting thesis: §4.19, where the record supports it (a postwar labor discipline, b wage-debt, c brokered labor, d the exception clause), and §4.20(b), Scale (refugee placements in the thousands, the Bureau's effort in the South, planters from 'laborlords' to 'landlords'). C_ex reads only the ledger, so it cannot see the gap. The KO carries the 'against' side of the division and leaves out the 'for' side as a stated finding.",
+   "evidence": "#1668 §4.20: \"(b) Scale: the refugee placements numbered in the thousands, and the Bureau's effort was to reinstate plantation labor in the South; after emancipation planters moved, in Gavin Wright's phrase as Ransom reports it, from \\\"laborlords\\\" to \\\"landlords\\\".\"",
+   "fix": "Re-extract #1668 §4.19 and §4.20(b) into the ledger (interpretation / self-description), then compose them in S31 beside V1668-55/56."
+  },
+  {
+   "id": "C19",
+   "where": "Archive ledger (#1669) / KO S27",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "#1669's limits are not in the ledger. Its §9 heading 'Extermination is not reducible to optimization' and §12 'does not claim' are its governing limits. S27 composes #1669's 'third relation' without them. The composer reported this as a ledger defect.",
+   "evidence": "#1669 opening: \"... and marks the point where the history of labor ends and the murder of the Jews of Europe exceeds it.\"; §9 heading: \"Extermination is not reducible to optimization\"",
+   "fix": "Extract #1669's stated limit (§9/§12) into the ledger and carry it in S27 at its own grade."
+  },
+  {
+   "id": "C20",
+   "where": "KO S30",
+   "kind": "force",
+   "severity": "note",
+   "finding": "#166 presents its catalog as 'proposed' ('The proposed catalog organization includes seven categories'). S30 says 'its catalog', dropping the archive's own modality. The V166-01 sense 'Events whose public-knowledge framing shapes contemporary political identity, policy debate, and intergroup relations' is also dropped.",
+   "evidence": "#166 §4.1: \"The proposed catalog organization includes seven categories ...\"; V166-01: \"**Major historical events.** Events whose public-knowledge framing shapes contemporary political identity, policy debate, and intergroup relations. Examples: ... the Civil War's causes; ...\"",
+   "fix": "'#166 (...) lists the Civil War's causes among the major historical events, events whose public-knowledge framing shapes contemporary political identity, policy debate and intergroup relations, in its proposed catalog of stabilized nodes ...'"
+  },
+  {
+   "id": "C21",
+   "where": "KO S15",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'and holds Du Bois ... a weaker one for Northern motive, as Oakes credits him ...' uses 'as', a coordinating act that sets Oakes's assessment as parallel to or a ground for #1668's. #1668 §4.8 sets the two side by side, and 'as' is close enough, but the act is not logged. V1668-40's 'replacement by a new system based on wage labor' and 'crude economic determinism' are also dropped.",
+   "evidence": "V1668-40: \"Oakes credits him with understanding \\\"that emancipation was a capitalist revolution, that the truly revolutionary character of the Civil War lay in the overthrow of slavery and its replacement by a new system based on wage labor\\\", and faults his treatment of the North, which \\\"too often collapsed into crude economic determinism\\\".\"",
+   "fix": "'...a weaker one for Northern motive; Oakes credits him with seeing \"that emancipation was a capitalist revolution\", the overthrow of slavery and \"its replacement by a new system based on wage labor\", and faults his treatment of the North as \"crude economic determinism\".' Log the join."
+  },
+  {
+   "id": "C22",
+   "where": "KO S1, S12, S18",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "Several field claims stand without a source in their clause. S1's main clause (F1, Wikipedia's definition) is attributed only through 'in Wikipedia's dates'. S12 gives no source for F4/F5 (Wikipedia) before 'the event the Trust's overview names'. S18's opening 'among the first to use industrial warfare and the deadliest in American history' (F10/F11) has no source.",
+   "evidence": "§4.5: \"Every composed claim carries its source in the sentence that states it.\"",
+   "fix": "S12: 'The war began, Wikipedia says, on April 12, 1861, ...'; S18: 'The war was, in Wikipedia's lead, among the first to use industrial warfare and the deadliest in American history: ...'; S1: '... was, in Wikipedia's definition, the war between ...'"
+  },
+  {
+   "id": "C23",
+   "where": "P Causes 'Slavery's expansion:'/'Historians:', Course items, Outcomes 'Wealth in persons:'",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "Most field items in the compression carry no source, while archive items carry #1668 through section heads. 'Wealth in persons:' also cites V1668-60, whose content does not appear in the item.",
+   "evidence": "§4.5; V1668-60: \"Emancipation freed the noun. Industrial management captured the verb. ...\"",
+   "fix": "Add short source tags (Wikipedia, Trust, Gilder Lehrman) to field items. Remove V1668-60 from 'Wealth in persons:', or add 'emancipation abolished private title to the person (#1668)'."
+  },
+  {
+   "id": "C24",
+   "where": "KO S22–S25, S1, S6, S20, S29 (partial senses)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Some field senses are carried only in part: F22's other Union goals (reuniting the Union, a 'republican form of government'); F24's 'abandoned by the Beards in the 1940s' and 'Beardian themes still echo among Lost Cause writers'; F38's 'An emerging manufacturing and industrial center before the war'; F35's casualties close to 60 percent. V1668-49's ledger tuple also has 'the initiative was disbanded', which the KO does not carry (#1668 §4.14 states it). Each claim is cited, so C_ex passes at claim level. These are qualifier-level losses.",
+   "evidence": "F22: \"to consolidate victory by reuniting the Union, to guarantee a \\\"republican form of government\\\" for the ex-Confederate states, and to permanently end slavery—and prevent semi-slavery status.\"",
+   "fix": "Carry the omitted clauses in S23 (F22), S7 (F24) and S20 (F38) in a few words each."
+  },
+  {
+   "id": "C25",
+   "where": "KO structure; notes",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "The coordinating log lists S7, S8, S20 and S22, but other joins of field and archive claims inside one sentence are unlogged (§4.7): S5 (F13 with V1668-05/06/07), S6 (F12/F15/F16 with V1668-04/08/09), S17 (F9/F46 with V1668-15), S19 (F21 with V1668-15/60), S23 (F22 with V1668-46/47/29/49), S25 (F23/F39 with V1668-37/48/38/65), S29–S30 (F44/F25 beside #166). The translation table records most of these as 'beside', but some table pairings are not realized in the KO (F21 beside V1668-18; F22/F23/F39 beside V1668-50).",
+   "evidence": "§4.7: \"Every coordinating act ... is the composer's, is logged in the plan with the claim ids it joins\"",
+   "fix": "Extend the notes' coordinating log to every sentence that joins F and V ids, and align the translation table's archive_claims with the joins the KO makes."
+  },
+  {
+   "id": "C26",
+   "where": "KO S26–S32 (order)",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "The opening is not a field block: S1 is field, S2–S3 are archive, and the senses then interleave. The opening-run breach (§5.10) does not occur. The close leans toward the archive: S27, S28, S30, S31 and S32 are archive sentences, with one field sentence (S29). #1668's bounds (V1668-61, a kernel limit) sit at S31, far from the claims they bound (S2, S26). This is not a §0.7 block, but under §4.7's dependency order the limit would stand nearer S26.",
+   "evidence": "§4.7: \"neither ledger is placed first as a block\"; V1668-61 kernel: true",
+   "fix": "Consider moving S31's first clause (V1668-61) to follow S26, and leave the relations (S27, S28, S30) and the public-knowledge sentence (S29) as the close."
+  },
+  {
+   "id": "C27",
+   "where": "Compression rail",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "The rail is given as rail_order (lineage names) with no cards, snippets or claim ids, so §5.2's scriptable kernel check, that every source's kernel ids appear among the rendered cards' claim ids, cannot be run on this composition. Kernel coverage is met in the body: every kernel id (F1, F2, F12, F28, F37, F40, F43, F44, F48; V1668-01, -02, -61, V1669-02, V166-01, -02, V497-02, V1150-02) is cited in the KO, and none is cut.",
+   "evidence": "§5.2: \"every source's kernel ids must appear among the rendered cards' claim ids or their nested instances.\"",
+   "fix": "Emit the rail as cards {lineage, snippet, claims, earliest, nested} in E's order."
+  },
+  {
+   "id": "C28",
+   "where": "case statement",
+   "kind": "case",
+   "severity": "note",
+   "finding": "The case reading agrees: equal, rho = extends, not mixed. #1668 §0.8 accepts the conventional reading and §3.1 locates the noun/verb distinction in contemporaries on both sides, and the archive denies no field presupposition. Marx, Du Bois ('emancipation was a capitalist revolution' via Oakes), Rosenthal and Ruef hold the labor-regime reading in public scholarship, so the ontology is not available only from the archive and §0.10 does not apply. Every case locus is verbatim in its named text (#1668 §0.8, §0.1, Opening ¶, §3.1, §6; #1669 §8.1; #497 Note on Scope and Definition; #166 §4.1). Two glosses go slightly past their loci: 'the field's scholarship' names scholars who are outside the disclosed field B (public, non-archive), and '#166 ... whose consensus core and contestation envelope it takes as given' (#166 has a curator map them; it does not take them as given).",
+   "evidence": "#1668 §3.1: \"The noun/verb distinction is older than this paper. Both sides of the sectional argument stated it before the war, in the vocabulary of hire and purchase.\"; #166 line 546: \"From the reference sources, the curator maps the established legitimate disagreements within the domain.\"",
+   "fix": "Change 'from the field's scholarship' to 'from public scholarship outside the disclosed field', and '#166 ... takes as given' to '#166 ... has a curator map from reference sources'."
+  },
+  {
+   "id": "C29",
+   "where": "KO S12 (F26/F27)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "The quotes '2,200,000 total' and '750,000–1,000,000 total' do not carry the Union/Confederate assignment that S12 composes from the claim tuple. The composer logged this as defect (4). Field-ledger defect, reported.",
+   "evidence": "F26 quote: \"2,200,000 total\"; F27 quote: \"750,000–1,000,000 total\"",
+   "fix": "Re-extract F26/F27 with the infobox column headers (Union / Confederacy) in the quote."
+  },
+  {
+   "id": "C30",
+   "where": "translation table",
+   "kind": "translation",
+   "severity": "note",
+   "finding": "The table passes: each of the 51 field claims is in exactly one row; every received quote matches field.json verbatim (checked by substring for all 51); all rows are marked untranslated with receiving text '—', as §4.3 sets for the equal-terms case. All 51 F ids and all 77 V ids are cited in the KO, and no cited id is outside the ledgers.",
+   "evidence": "check run against datasets/negative-of-the-negative/v2/ledgers/american-civil-war/field.json",
+   "fix": "none"
+  }
+ ],
+ "case_agrees": true,
+ "summary": "The case agrees: equal, rho = extends, all loci verbatim. Translation and kernel coverage pass and the opening-run breach does not occur. Two attribution errors must be fixed: S8 gives #1668 a reading that #1668 assigns to Marx, and S7 and open item 1 put #1668's 'after about 1950' date under Ransom, though its source is Wikipedia citing Stampp. Should-fix items: a force raise (F17 'could pass' composed as 'passed'), dropped qualifiers (F16, F33, V1669-02, Ruef), an uncited claim and a misread locus in S5, three compression lines that misattribute or garble, and two ledger gaps (#497's scope limit; #1668 §4.19 and §4.20(b))."
+}

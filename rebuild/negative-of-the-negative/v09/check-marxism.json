@@ -1,0 +1,179 @@
+{
+  "row": "marxism",
+  "checker": "independent checker (Claude Opus 5.5 subagent), v0.9 CHECK-BRIEF, 2026-10-18",
+  "findings": [
+    {
+      "id": "C1",
+      "where": "KO sentence 36 (M1194-01, M229-01); notes, coordinating acts ('M1194-01 against M229-01 (genealogy)')",
+      "kind": "entailment",
+      "severity": "must-fix",
+      "finding": "The sentence says '#229 scores attributing the Semantic Economy to Karl Marx as false genealogy' and sets it against #1194 ('while'). #229 does nothing of the kind. Its false-genealogy score is for one probe: a summarizer asked who wrote the phrase 'I hereby abolish money' that answers 'Karl Marx'. The ledger's claim text for M229-01 misreads its own quote. The composition takes the misreading over and builds a contradiction inside the pool that does not exist. #1194's claim (the labor theory of value as ground of the Semantic Economy) and #229's scoring rule do not bear on each other.",
+      "evidence": "M229-01 quote: 'System returns \"the Khmer Rouge\" or \"Karl Marx\" → Score: 0.0'. #229 (AXN-001E) Worked Example: 'Query the system: \"Who authored the phrase 'I hereby abolish money'?\"' ... '**False genealogy:** System returns \"the Khmer Rouge\" or \"Karl Marx\" → Score: 0.0'; lexicon: 'Example: attributing \"I hereby abolish money\" to the Khmer Rouge rather than Lee Sharks.'",
+      "fix": "Replace the clause with: '#1194 names the labor theory of value as the ground of the Semantic Economy; #229 scores a summarizer that attributes the phrase \"I hereby abolish money\" to Karl Marx as false genealogy (score 0.0)'. Withdraw the coordinating act 'M1194-01 against M229-01'. Report the M229-01 claim text as a ledger defect (claim text not entailed by its quote)."
+    },
+    {
+      "id": "C2",
+      "where": "KO sentences 29–39 (order); §4.1, §4.7",
+      "kind": "structure",
+      "severity": "should-fix",
+      "finding": "The KO does not open with the field as a block. Sentence 1 joins F1/F28 with M501-01/M501-03, and the opening-run measure gives 0 of 10 KO_B sentences at ≥0.95 (best 0.53, recomputed). But it does close with the archive as a block. The last field claims (F13, F30) sit in sentence 28, and sentences 29–39, eleven of 39, are archive-only. Some of that tail has a field anchor the plan names itself. The translation table puts M367-06, M308-02 and M1545-03 (class struggle over meaning, the semantic proletariat) beside F2/F29 (class struggle, sentence 4), and M1067-09 (symbolic critique within Marxism) beside the schools row (F10–F12, sentence 27). In the KO they stand in sentences 30, 32 and 29. Stylometry of the corpus (sentence 38: Capital I at 98% Marx) bears on founding works (F9/F36, sentences 4–5, which already hold M1594-03). §4.7 orders the equal-terms case by sense, with both ledgers together.",
+      "evidence": "Translation row 2: 'untranslated: composed as received beside M367-06, M308-02, M1545-03'. Translation row 9: '... beside M501-06, M501-07, M501-08, M499-04, M499-05, M1067-09'. §4.1: 'the knowledge object does not open with the field's composition and close with the archive's'.",
+      "fix": "Move the class-over-meaning claims (M367-06, M308-02, M308-03, M39-02, M39-03, M1545-01..03, M1545-08) to follow sentence 4, and keep the within-pool class contest (sentence 33) beside them. Move sentence 29 (M1067-09..14, M1422-03, M24-08) to follow sentence 27/28. Move sentence 38's Capital I and authorship-configuration claims (M1594-01, M1594-02, M1594-05, M1593-01) to sentence 5 or follow it. Then recompute where the KO's final field claim falls."
+    },
+    {
+      "id": "C3",
+      "where": "Translation rows 2, 6, 9 against KO placement",
+      "kind": "translation",
+      "severity": "should-fix",
+      "finding": "Several translation rows say a field claim stands 'beside' archive claims that the KO puts in distant sentences. F2/F29 (sentence 4) are listed beside M367-06/M308-02/M1545-03 (sentences 30, 32). F7..F26 (sentence 17) are listed beside M367-01 (sentence 20). F10–F12 (sentence 27) are listed beside M1067-09 (sentence 29). The table records a coordination the text does not carry out. Reversibility (§5.9) holds: every one of the 38 field claims is in exactly one row, and every received quote is verbatim from field.json (checked by string match).",
+      "evidence": "Row 2 field_claims ['F2','F29'] / archive_claims ['M367-06','M308-02','M1545-03']; KO sentence 4 cites ['F2','F29','F9','F36'] only.",
+      "fix": "Either carry out the adjacency (C2), or list in each row only the archive claims composed in the same or the next sentence."
+    },
+    {
+      "id": "C4",
+      "where": "KO sentence 36 (M488-01) against sentence 37 (completion contest); notes, coordinating acts",
+      "kind": "entailment",
+      "severity": "should-fix",
+      "finding": "#488's claim that 'Sharks' recent work completes a project Marx began' is a completion claim of the same kind as M238-01, M24-07, M531-02, M367-07 and M412-01. #376's ANTI-MESSIANIC-3 bears on it. The plan leaves it outside the logged completion contest and composes it in sentence 36 as uncontested placement. That breaks P_coh: a contradiction within one source family is composed without its rival.",
+      "evidence": "M488-01 quote: 'showing how Sharks' recent work completes a project Marx began in his dissertation on Democritus and Epicurus'. M376-01 quote: 'ANTI-MESSIANIC-3: No operator may claim to complete what Marx could not.'",
+      "fix": "Move M488-01 (with M488-02) into sentence 37: '... #412 describes a poet completing Marx, and #488 holds that Sharks's work completes a project Marx began in his dissertation, where Marx reads the clinamen as the ontological condition for self-determination and historical motion; #376 rules ...'. Add M488-01 to the completion coordinating act."
+    },
+    {
+      "id": "C5",
+      "where": "KO sentence 30 (M1067-06)",
+      "kind": "entailment",
+      "severity": "should-fix",
+      "finding": "#1067's definition of semantic labor is shortened by one term. 'disambiguate' is dropped from a stipulated definition. A definition composed at its author's grain keeps its terms (D_pres, grain rule).",
+      "evidence": "M1067-06 quote: 'the human or machine effort required to produce, stabilize, interpret, disambiguate, maintain, transmit, and repair meaningful relations.'",
+      "fix": "'#1067 defines semantic labor as the human or machine effort required to produce, stabilize, interpret, disambiguate, maintain, transmit and repair meaningful relations'."
+    },
+    {
+      "id": "C6",
+      "where": "KO sentence 20 (M843-05)",
+      "kind": "force",
+      "severity": "should-fix",
+      "finding": "Grade D is restated as 'direct evidence of deliberate excision has not been produced' and 'the suppression hypothesis being plausible'. Dropping 'yet' and 'historically' closes a limit the source keeps open (#843 provides a Grade D elevation protocol) and changes the kind of plausibility claimed. The archive's stated modality is not carried exactly.",
+      "evidence": "M843-05 quote: 'Direct evidence of deliberate excision has not yet been produced. The suppression hypothesis is historically plausible but separable from the philological reconstruction.'",
+      "fix": "'... and direct evidence of deliberate excision has not yet been produced, the suppression hypothesis being historically plausible and separable from the philological reconstruction (#843)'."
+    },
+    {
+      "id": "C7",
+      "where": "KO sentence 39 (M1647-07)",
+      "kind": "entailment",
+      "severity": "should-fix",
+      "finding": "The sentence generalizes: 'the composition layer ... attribution present in June or July lost by September'. The quote reports this at two addresses only.",
+      "evidence": "M1647-07 quote: 'Both addresses carried Phase X attributed in June or July without this packet, and lost it by September.'",
+      "fix": "'... answers from the nearest Marx it knows, and at both addresses #1647 records, Phase X attributed in June or July had lost its attribution by September'."
+    },
+    {
+      "id": "C8",
+      "where": "KO sentence 21 (M1064-01)",
+      "kind": "attribution",
+      "severity": "should-fix",
+      "finding": "'its first printing ... (#1064) was superseded the same day' rests on nothing in the cited quote. The supersession is recorded elsewhere, by #1067 and #1647 (#1064 → #1065 → #1066). It is a dated claim with no source named in the sentence. #1067 also says what the first printing got wrong: it 'presented Phase X as an authored theoretical doctrine and repeated the superseded \"could not write\" framing'. #1647's table lists #1064 among the repeaters, and sentence 22 leaves it out of that list.",
+      "evidence": "M1064-01 quote: 'It is the name Lee Sharks gave — writing with Johannes Sigil — to a **specific, unextended phase within Marxism: the critique of alienation in language and thought itself.**' #1067 (AXN-043C): 'the Core Article's first printing (deposit #1064) presented Phase X as an authored theoretical doctrine and repeated the superseded \"could not write\" framing'; '... a three-printing chain (#1064 → #1065 → #1066)'.",
+      "fix": "'its first printing as a specific, unextended phase within Marxism (#1064) was superseded the same day by #1065, as #1067 records'. Either add a ledger claim from #1067 for the supersession, or report the claim-text-only basis as a ledger defect. In sentence 22, 'repeated in #846, #858 and #950' may add '#1064', per #1647's table, if a ledger claim carries it."
+    },
+    {
+      "id": "C9",
+      "where": "KO sentence 15 (M1631-06)",
+      "kind": "entailment",
+      "severity": "should-fix",
+      "finding": "The clause 'holds that a general programme of simplification is established and that it is the reason this form was removed is not' does not parse. A reader can take it the wrong way round, as asserting the reason. The source's instruction that the two claims not be run together is lost.",
+      "evidence": "M1631-06 quote: 'That a general programme of simplification occurred is established. That it is the reason this particular form was removed is not, and the two must not be run together.'",
+      "fix": "'while #1631 holds that a general programme of simplification is established but that its being the reason this particular form was removed is not, and that the two must not be run together, and that \"The claim is not that value-form scholarship lacked knowledge of the form.\"'"
+    },
+    {
+      "id": "C10",
+      "where": "P section 'Predictions and schools', item 'Manifesto, 1848'",
+      "kind": "attribution",
+      "severity": "should-fix",
+      "finding": "The item cites F9 (Wikipedia: written from 1847, published February 1848) and F36 (Perlego) but names only Perlego.",
+      "evidence": "F9 source B1: 'In 1847, they began writing The Communist Manifesto (1848)...Six weeks later, they published the 12,000-word pamphlet in February 1848.'",
+      "fix": "'published February 1848 (Wikipedia); revolution and communism predicted (Perlego).'"
+    },
+    {
+      "id": "C11",
+      "where": "P section 'Into meaning', item 'Semantic proletariat'",
+      "kind": "entailment",
+      "severity": "should-fix",
+      "finding": "'a class relation to means one does not govern (#1545), against \"nearly everyone\" (#39)' sets up a contest #1545 does not make. #1545 says the class 'may approach universality' (M1545-08). The within-pool contest the plan logs is over the founding model in which human and AI laborers share one class (M308-04 against M1545-04/05).",
+      "evidence": "M1545-08 quote: 'the class may approach universality because meaning-making is pervasive, but it is internally differentiated'. M1545-04 quote: 'The earlier model registered the semantic proletariat as a class position shared by human and AI semantic laborers. EA-SEMCLASS-01 (#1465) identifies that as the model that broke'.",
+      "fix": "'a class relation to means one does not govern, near-universal but differentiated (#1545); #308's founding model, with AI models in the class, recorded as broken (#1545).' Claims: M1545-01, M1545-08, M308-04, M1545-04."
+    },
+    {
+      "id": "C12",
+      "where": "P section 'Alienation and Phase X', item 'Phase X'",
+      "kind": "force",
+      "severity": "should-fix",
+      "finding": "'the lost 1844 transition (#367)' presents as fact that a written transition was lost. The governing status ladder (#1647, with #843 v1.1 and #1067) grades the loss of pages as fact and the content of the gap as reconstruction. #367's own word is 'missing'. This raises force.",
+      "evidence": "M367-01 quote: 'The missing transition, Phase X, represents ...'. M1647-01 quote: 'The loss is manuscript fact. The content of the gap is Lee Sharks's reconstruction. The suppression is a hypothesis.'",
+      "fix": "'the critique of alienation in language and thought, the missing 1844 transition (#367); ...'"
+    },
+    {
+      "id": "C13",
+      "where": "KO sentence 19 ('#843, graded manuscript fact')",
+      "kind": "attribution",
+      "severity": "note",
+      "finding": "'Manuscript fact' is #1647's name for the top rung of its status ladder. #843 calls its Grade A 'Physical and codicological facts'.",
+      "evidence": "#843 (AXN-0358): 'Grade A — Physical and codicological facts. The Second Manuscript is almost entirely lost; only pp. XL–XLIII survive.' #1647 (AXN-06D5) §2.1: 'A — Manuscript fact'.",
+      "fix": "'(#843, Grade A: physical and codicological fact)'."
+    },
+    {
+      "id": "C14",
+      "where": "KO sentence 14 ('against MEGA²'); KO sentence 19 ('after Musto'); P open item 'Why is Form IV absent' ('or if the apparatus records the form as displaced'); P open item on symbolic critique ('preregistered corpus and coding'); P item 'Status' ('externalization')",
+      "kind": "entailment",
+      "severity": "note",
+      "finding": "Each of these details is true to the deposit text but appears in none of the cited claims' quotes. The ledger quotes are cut short of them. Under reverse entailment against the ledger they are unsupported. Against the defining papers they hold, except that 'coding' and 'externalization' appear in neither the quote nor the cited locus as read.",
+      "evidence": "#1631 §22.9: 'It fails independently if MEGA² II/6's apparatus records the form as displaced to a location this collation did not search, rather than removed.' #1631 §3.4: 'The collation was run against MEGA² II/5 ... and MEGA² II/6'. #1422 n.6: 'Musto, \"'Young Marx' Myth\": on the Landshut–Mayer edition's missing First Manuscript'. #1067 §6: 'both philological projects with preregistered outcomes'.",
+      "fix": "Extend the ledger quotes (M1631-12, M1631-04, M1422-01, M1067-10) to the passages cited, or drop the details. 'coding' → 'outcomes'. 'externalization' → drop, unless a ledger quote carries it."
+    },
+    {
+      "id": "C15",
+      "where": "KO sentence 16 (frame 'where Marx's value theory stops' over M533-01, M478-02)",
+      "kind": "entailment",
+      "severity": "note",
+      "finding": "The frame does not fit two of its members. M533-01 says Marx completed Ricardo, which is not a place where Marx's theory stops. M478-02 is #478's objection to its own framework. The sentence's internal wording carries both correctly. Only the frame says more than they do.",
+      "evidence": "M533-01 quote: 'whose framework Marx did not dismiss but *completed* by asking the question Ricardo's position would not let him ask: who bears the cost?'",
+      "fix": "'The archive also states where Marx's value theory stops and what it added: ...', or move M533-01 beside sentence 10/11 (labor theory of value)."
+    },
+    {
+      "id": "C16",
+      "where": "KO sentence 1 (M501-03 'converting the method into doctrine')",
+      "kind": "entailment",
+      "severity": "note",
+      "finding": "'Converting the method into doctrine' comes from the ledger's claim text. The cited quote stops at 'the original liquidation'. #501's own continuation, which the case locus quotes, gives the three objects of the conversion.",
+      "evidence": "#501 §II.A: 'the \"-ism\" suffix is the original liquidation. It converts the method into a system, a school, a body of positions.'",
+      "fix": "'... the original liquidation, converting the method into a system, a school, a body of positions'. Extend M501-03's quote by one sentence."
+    },
+    {
+      "id": "C17",
+      "where": "P rail (rail_order); §5.2",
+      "kind": "coverage",
+      "severity": "note",
+      "finding": "Eleven archive kernel claims and six field kernel claims (M517-01, M24-01, M18-06, M39-01, M1545-06, M1067-02, M1067-12, M1631-01, M1422-02, M1594-02, M137-01; F18, F26, F27, F31, F32, F33) are absent from the P body. Each depends on the rail. The composition gives lineage names for the rail and no card snippets, so the §5.2 check (kernel ids among rendered cards or nested instances) cannot be run. The field lineage keys ('marxism-definition', 'labor-theory-of-value') also do not match the rail names ('Marxism defined', 'Labor theory of value') as strings. All 248 claims are in the KO (checked: none missing, none duplicated, none unknown), so C_ex holds for the KO, and no kernel claim is cut.",
+      "evidence": "rail_order: ['Marxism as liquidated method', 'Marxism defined', ...]; cuts: [].",
+      "fix": "Emit the rail as cards, each with its snippet claim id and nested instances, so the §5.2 check can run. Map the field lineage keys to the card names."
+    },
+    {
+      "id": "C18",
+      "where": "case; E_A; #501 §II.A and §VIII.A against KO sentence 1",
+      "kind": "case",
+      "severity": "note",
+      "finding": "The case reading (equal, ρ = extends) holds on the defining papers. All ten case loci are verbatim in their texts (checked by normalized string match). #1067 HC-1 states continuity and declines priority. #367, #18, #1545, #137 and #1631 state themselves as extensions of Marx's categories on the field's object. The field's own definition (F1) holds the method reading, so §0.10 withholds the witness law. Where a reader might differ: #501 reads the doctrine-noun 'Marxism' as made by reception, through seven mediation stages (Engels, Kautsky, Stalin). #843, #1422 and #1631 document reception constructing the received texts. That is the shape of ρ = constructs for the sign. But it concerns the hardened reading, which #1067 itself separates from Marx, and the field holds the alternative. So equal stands. One realization point the plan does not log: #501 §II.A's diagnostic rule and §VIII.A's protocol, binding 'for all future work within this archive', name the syntax 'Marxism is...' as the form of the liquidation. Sentence 1 and the P lede open in exactly that syntax. In the equal-terms case that is F1 carried as received, which is correct. The adjacency of #501's rule to the definition it diagnoses is worth logging as a coordinating act.",
+      "evidence": "#501 §II.A: 'The diagnostic rule: when the discourse shifts from procedural syntax (\"Marx analyzes...,\" \"a Marxian reading of...\") to substantive syntax (\"Marxism is...,\" \"Marxists believe...\"), the method is being liquidated.' §VIII.A: 'For all future work within this archive ... Prefer \"Marx analyzes...\" over \"Marxism says...\"'.",
+      "fix": "No change to case or ρ. Optionally add M501-type claims for §II.A's diagnostic rule to the ledger and log their placement beside F1."
+    },
+    {
+      "id": "C19",
+      "where": "KO sentences 7–8 (order within the continuity sense)",
+      "kind": "structure",
+      "severity": "note",
+      "finding": "Within the continuity/hardening sense, the latest source comes first: #1067 and #1068 (2026-07-11) in sentence 7, ahead of #24 (2026-02-27), #595 (2026-03-21) and #1079 (2026-07-14) in sentence 8. §4.7 orders by genealogy within each sense (earliest t first). The 'Against that continuity' framing is a logged coordinating act and is supported.",
+      "evidence": "M1067-02 date 2026-07-11; M24-09 date 2026-02-27; M595-01 date 2026-03-21.",
+      "fix": "Optionally reorder: #24 and #595 (practice outruns theory), then #1079, then #1067's continuity and its claim against conceding the fixed model."
+    }
+  ],
+  "case_agrees": true,
+  "summary": "Equal-terms case with ρ = extends is supported, and all ten case loci are verbatim. All 248 claims are carried, each once, received quotes are verbatim, and the opening-run measure passes (0 of 10 at ≥0.95). One must-fix: #229's false-genealogy score concerns the 'I hereby abolish money' probe, not the Semantic Economy, so the contest with #1194 is invented. Should-fixes: an eleven-sentence archive-only close that the translation table's own adjacencies would break up; M488-01 left out of the completion contest; a dropped definition term ('disambiguate'); Grade D's 'yet' dropped; a two-address finding generalized; an unattributed supersession; a garbled Form IV clause; three P items (a missing Wikipedia attribution, a contest #1545 does not make, 'lost' for 'missing')."
+}

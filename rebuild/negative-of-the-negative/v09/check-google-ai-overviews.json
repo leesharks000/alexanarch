@@ -1,0 +1,305 @@
+{
+ "row": "google-ai-overviews",
+ "checker": "Claude (Opus 5.5), independent subagent check under CHECK-BRIEF v0.9, 2026-10-18",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "KO 13; claim O187-12",
+   "kind": "force",
+   "severity": "must-fix",
+   "finding": "P4 is composed without its qualifier and its test. 'will fail on near-variant phrasings' is a universal prediction; #187 predicts failure 'at rates inconsistent with semantic gating' and names its test. Dropping the qualifier raises the force of the prediction, and dropping the test drops its stated falsifier (§4.4 N_c).",
+   "evidence": "O187-12 (#187 §V): \"P4 (string-local patches): suppressions installed after public incidents fail on near-variant phrasings at rates inconsistent with semantic gating — testable against any future emergency removal.\"",
+   "fix": "Replace with: \"and predicts (P4) that suppressions installed after public incidents fail on near-variant phrasings at rates inconsistent with semantic gating, testable against any future emergency removal\"."
+  },
+  {
+   "id": "C2",
+   "where": "KO 26; claim O1634-02",
+   "kind": "force",
+   "severity": "must-fix",
+   "finding": "'squarely' is dropped, so the sentence says no binding precedent decides the question at all; #1634 says only that none it located squarely decides it. This raises force. 'allegedly defamatory' and 'AI Mode' are dropped as well.",
+   "evidence": "O1634-02 (#1634 §47): \"The present research did not locate binding Sixth Circuit or Supreme Court precedent squarely deciding Section 230 immunity for the allegedly defamatory content of a Google AI Mode or AI Overview synthesis.\"",
+   "fix": "Replace with: \"and #1634 did not locate binding Sixth Circuit or Supreme Court precedent squarely deciding Section 230 immunity for the allegedly defamatory content of a Google AI Mode or AI Overview synthesis\"."
+  },
+  {
+   "id": "C3",
+   "where": "KO 21; claims O740-02, O740-03; marks",
+   "kind": "case",
+   "severity": "should-fix",
+   "finding": "#740 states its surfaces two ways. The abstract and §11 say all three captures are Google AI Mode, but its Supplementary Files list capture 03, the compositional-substitution capture, as 'Google search and AI Overview'. The KO carries only the AI Mode reading. The composer's ledger-defect note (4) repeats it, which is wrong for capture 03. This meets §4.3 internally_inconsistent, and the sense that bears most directly on AI Overview (compositional substitution) is the one the KO assigns to the wrong surface. The ledger has no claim for the supplementary list, so the mark rests on text outside the frozen ledger and should go to the operator.",
+   "evidence": "O740-02 (#740 Abstract): \"This worked example documents three captures from Google AI Mode on May 19, 2026 demonstrating the mechanism.\" — #740 Supplementary Files (AXN-0290-text.md l.404): \"capture-03-secret-book-walt-composition-substitution.png — Google search and AI Overview for query secret book of walt. Demonstrates *Compositional Substitution*\"",
+   "fix": "Mark O740-02 internally_inconsistent, citing both loci (Abstract; Supplementary Files). In KO 21 write: \"it documents the mechanism from three captures of 19 May 2026, which its abstract gives as Google AI Mode and its supplementary list gives as AI Mode for the first two and Google search with AI Overview for the compositional substitution\". Correct notes item (4)."
+  },
+  {
+   "id": "C4",
+   "where": "KO 20; claim O164-01",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "#164 never names Google AI Overview (0 occurrences). Its composition layer is Google AI Mode ('The composition layer (Google AI Mode) renders...'). In the AI Overview row, the bare 'the composition layer' reads as AI Overview.",
+   "evidence": "#164 (AXN-02FF-text.md l.21): \"The composition layer (Google AI Mode) renders a two-week-old framework\"; O164-01: \"The composition layer does not refuse attribution generically. It attributes the *concept lineage* (upstream) and surfaces the *artifact* (downstream Zenodo deposit). What it elides is the *present author*\"",
+   "fix": "Replace with: \"#164 holds that the composition layer, observed at Google AI Mode, does not refuse attribution generically: it attributes the upstream concept lineage and surfaces the downstream artifact while eliding the present author\"."
+  },
+  {
+   "id": "C5",
+   "where": "KO 13; claim O597-04",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The sentence attaches #597's reading to the January 2026 Guardian restriction ('reads the restriction'). #597 speaks of restriction 'for certain query classes' after 'multiple documented cases' and does not date or name the restriction it reads.",
+   "evidence": "O597-04 (#597 §3): \"In multiple documented cases, Overviews generated unreliable or dangerous health information, prompting Google to restrict Overview triggering for certain query classes. This restriction was implemented not as a visible policy announcement attached to each query but as a silent withdrawal of the Overview format.\"",
+   "fix": "Replace with: \"#597 reads Google's restriction of Overview triggering for certain health query classes, after multiple documented cases, as implemented not as a visible policy announcement attached to each query but as a silent withdrawal of the Overview format\"."
+  },
+  {
+   "id": "C6",
+   "where": "KO 19; P 'Erasure, documented' item 'Six patterns'; claim O833-02; marks",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "#833 counts its patterns two ways: five plus a proposed sixth in the abstract and the body, six in the claims hierarchy and §5. The composer notes this as a candidate but does not mark it, and both the KO and P give 'six' unmarked. The KO also says 'among them' and then lists instances (Mary Lee, 'fringe theory', pre-correction versions, Sappho 31), not the patterns #833 names.",
+   "evidence": "#833 Abstract (AXN-034E-text.md l.37): \"The paper identifies five recurrent patterns in this corpus — morphological compression, disambiguation failure, compositional bystanding, canonical reinflation, and temporal drag — and proposes a sixth: epistemic hedging.\" O833-02 (§1): \"...six recurrent patterns appear.\"",
+   "fix": "Mark O833-02 internally_inconsistent with both loci (Abstract; §1 Claims Hierarchy). In KO 19 write: \"#833 finds in 131 documented captures ... six recurrent patterns (five in its abstract, with a sixth, epistemic hedging, proposed), its instances including the author's name resolved toward Mary Lee ...\". In P write: \"Six patterns (five and a proposed sixth, in its abstract): in 131 captures of one archive (#833).\""
+  },
+  {
+   "id": "C7",
+   "where": "KO 1; P lede",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "In the equal-terms case the field's definition is stated assertorically ('Google AI Overviews is a generative ... feature ... (Wikipedia)'), while the archive's definitions enter through a reporting frame ('the archive defines it as ...'). One claim space gives both definitions the same grammar. Framing only the archive's definitions is the form-level version of the asymmetry §4.2 names: a source's definition is composed as a definition, whatever its family. The P lede repeats the frame.",
+   "evidence": "§4.2: \"A source's definition of its own subject or term is composed as a definition, whatever its family\"; KO 1: \"...(Google's product page and Help page); the archive defines it as an observed product surface...\"",
+   "fix": "KO 1: \"... (Google's product page and Help page); it is an observed product surface, never to be collapsed into the AI Overview Capture Registry, the instrument observing it (#1459), and an instance of the composition layer ... (#833; #166 ...)\". P lede: \"... at the top of results (Wikipedia; Google); an observed product surface, and an instance of the composition layer, which reads where the index finds (#1459; #833).\""
+  },
+  {
+   "id": "C8",
+   "where": "KO 13; claim O187-09",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'reads this as' replaces #187's stated force, 'forensically decisive'. This lowers an interpretation the source asserts as decisive.",
+   "evidence": "O187-09 (#187 §II): \"That detail is forensically decisive: the emergency layer operates on query strings, not meanings.\"",
+   "fix": "Replace with: \"a detail #187 holds forensically decisive: the emergency layer operates on query strings, not meanings\"."
+  },
+  {
+   "id": "C9",
+   "where": "KO 10; claim O1629-04",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'which it reads as establishing' lowers #1629's 'It establishes'. It also drops the claim's middle term, that supplying the URL was transport performed by a human and not retrieval. The limit (O1629-05) is already carried and does the lowering the archive itself states.",
+   "evidence": "O1629-04: \"Supplying the URL produced competent discussion of the same object. That is transport performed by a human, not retrieval. It establishes that the composition layer was never the failure.\"",
+   "fix": "Replace with: \"and supplying the URL produced competent discussion, transport performed by a human and not retrieval, which, #1629 holds, establishes that the composition layer was never the failure, on evidence it records as operator attestation ...\"."
+  },
+  {
+   "id": "C10",
+   "where": "KO 22; claim O3-02",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The registry states quoting is the decisive measured variable 'in this corpus', with «operative semiotics» as its evidence. 'at one address' narrows the claim's scope to its evidence. The resolution 'ONLY under the exact-phrase operator' by 13 August is dropped.",
+   "evidence": "O3-02: \"QUOTING IS THE DECISIVE MEASURED VARIABLE IN THIS CORPUS — «operative semiotics» held 5 of 5 archive cards quoted and 1 of 8 unquoted, and by 13 August it resolved ONLY under the exact-phrase operator.\"",
+   "fix": "Replace with: \"and the registry holds quoting the decisive measured variable in its corpus: «operative semiotics» held 5 of 5 archive cards quoted and 1 of 8 unquoted, and by 13 August resolved only under the exact-phrase operator (#3)\"."
+  },
+  {
+   "id": "C11",
+   "where": "KO 9; claim O115-02",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The self-description is carried only as its limit ('not as how Google works internally'). Its positive half, the most complete outside-view architecture presently defensible, is dropped. The archive's statement of its own standing is lowered by half-carriage.",
+   "evidence": "O115-02: \"not “this is exactly how Google works internally,” but “this is the most complete outside-view architecture presently defensible from public documentation, leak-derived signals, and empirical behavior.”\"",
+   "fix": "Replace the clause with: \"a document to be read as an external specification, not as exactly how Google works internally but as the most complete outside-view architecture presently defensible from public documentation, leak-derived signals and empirical behaviour\"."
+  },
+  {
+   "id": "C12",
+   "where": "KO 20; claims O172-02, O172-03",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "O172-03 is carried as its limit only ('do not establish prevalence'); that the index cases 'support the asymmetric-dissolution heuristic' is dropped. O172-02 loses 'no conceptual overlap and no shared citations', the distinction that makes the reorganization a dissolution rather than an association (D_pres grain rule).",
+   "evidence": "O172-02: \"...around Charls Pearson's Theory of Operational Semiotics — a 1990s formal linguistics of sentence-factoring operators with no conceptual overlap and no shared citations.\" O172-03: \"These four index cases support the asymmetric-dissolution heuristic; they do not establish prevalence.\"",
+   "fix": "Replace with: \"#172 records the archive's discipline-naming term, present in over 120 deposits, reorganized by Google's AI Overview around Charls Pearson's Theory of Operational Semiotics, a 1990s formal linguistics with no conceptual overlap and no shared citations, one of four index cases that support the asymmetric-dissolution heuristic and do not establish prevalence\"."
+  },
+  {
+   "id": "C13",
+   "where": "KO 23; claim O1616-06",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'finds flattening following the item's prior' drops the claim's contrast: flattening is not a property of the layer. Without it the sentence no longer says what the null rules out.",
+   "evidence": "O1616-06: \"So flattening is not a property of the layer but of the item's prior: where one sense carries commercial gravity the others go, and where the senses are closer in weight they survive.\"",
+   "fix": "Replace with: \"and holds flattening a property not of the layer but of the item's prior, where one sense carries commercial gravity the others going, one sense of three composed at bank ...\"."
+  },
+  {
+   "id": "C14",
+   "where": "KO 7; claim O187-07",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "The qualifiers carried by the claim (by query location, query language and user-profile attributes; deliberately; to 'resonate with the user') are dropped. That removes the personalization distinction the claim carries (§4.4 D_pres: compression may not remove the distinction).",
+   "evidence": "O187-07: \"...is processed for different submissions of the same query — by query location, query language, and attributes of the user profile — so that *different submissions of the same query yield different summaries*, deliberately, to make the summary \\\"resonate with the user that submitted the query.\\\"\"",
+   "fix": "Replace with: \"and that its continuations specify different additional content for different submissions of the same query, by query location, language and user-profile attributes, so that the same query deliberately yields different summaries\"."
+  },
+  {
+   "id": "C15",
+   "where": "KO 21; claim O742-01",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "The hypothesis is composed without its comparative half: 'regardless of internal coherence or factual quality, while equivalent content distributed across multiple institutional owners is treated as authoritative'. That half is what makes it a discount rather than a property of single-owner work.",
+   "evidence": "O742-01: \"a *single-owner discount* under which an internally dense body of work attributed to one provenance owner is treated as weakly corroborated, regardless of internal coherence or factual quality, while equivalent content distributed across multiple institutional owners is treated as authoritative.\"",
+   "fix": "Replace with: \"... a single-owner discount under which an internally dense body of work attributed to one provenance owner is treated as weakly corroborated, regardless of internal coherence or factual quality, while equivalent content distributed across multiple institutional owners is treated as authoritative\"."
+  },
+  {
+   "id": "C16",
+   "where": "KO 12; claim O597-01",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "The definition is composed without its genus ('a mode of platform power'). That leaves only the differentia, so the definition is not carried at its author's grain.",
+   "evidence": "O597-01: \"the concept of **invisibly invisible governance**: a mode of platform power in which acts of semantic modulation occur in ways that are variably distributed, difficult to localize, and publicly deniable.\"",
+   "fix": "Replace with: \"#597 defines invisibly invisible governance, a mode of platform power in which acts of semantic modulation occur in ways variably distributed, difficult to localize and publicly deniable, ...\"."
+  },
+  {
+   "id": "C17",
+   "where": "KO 20; claim O1657-02",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'#1657 reads such compositions' extends #1657's sentence to the #172 and #1666 compositions in the same sentence. #1657 says it of the King of AEO crystallization ('that labour', the field's labour at its own addresses).",
+   "evidence": "O1657-02 (#1657 §14): \"The composition layer received that labour and took up none of its distinctions.\" (context l.286: \"AEO, as a public entity composed at the addresses of its title, came through the King of AEO crystallization...\")",
+   "fix": "Replace with: \"#1657 holds that at the King of AEO addresses the composition layer received the field's labour and took up none of its distinctions, its ledger supporting the sign at those addresses with the magnitude not measured\"."
+  },
+  {
+   "id": "C18",
+   "where": "KO 24; claim O3-05",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'attribution and binding being independent axes' is not in the cited ledger quote. It is in the registry's _COMPOSED_AS text ('These are independent axes') but outside the frozen ledger, which is all the composer is to read (§4). The capture's address («semantic economy», 2026-08-13) and 'from critical framework to enterprise vendor copy' are dropped.",
+   "evidence": "O3-05 quote: \"«semantic economy» on 2026-08-13 scored PER 0.25 — three quarters of provenance intact — on a capture whose own finding reads LIQUIDATION, from critical framework to enterprise vendor copy. A registry that records only PER reports that event as healthy.\"",
+   "fix": "Replace with: \"#3 records «semantic economy» on 2026-08-13 scored at PER 0.25, three quarters of provenance intact, on a capture whose own finding reads liquidation, from critical framework to enterprise vendor copy, so that a registry recording only PER reports that event as healthy\"; or extend the ledger quote at the next extraction (not by the composer)."
+  },
+  {
+   "id": "C19",
+   "where": "KO 8; claims O1091-03, O1091-04",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "'#1091 reports from Ahrefs 38% ... and 43% self-referential' reads as attributing the 43% to Ahrefs. #1091 states the 43% without a source in that sentence.",
+   "evidence": "O1091-03 (#1091 §II): \"43% of AI Overview citations are self-referential — Google citing Google properties (YouTube, Maps, Shopping, Knowledge Graph panels).\"",
+   "fix": "Replace with: \"#1091 reports from Ahrefs 38% of citations from top-10 pages in early 2026 against 76% in mid-2025, and states that 43% are self-referential to Google properties\"."
+  },
+  {
+   "id": "C20",
+   "where": "P 'How it composes' item 'Rank and citation'; P 'Criticism, traffic, courts' item 'Clicks'",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "The pool sources are the Digital Marketing Institute and Semrush. The items name the study authors (Authoritas, Pew), which are not pool sources. §4.5 requires the source as the ledger has it; the KO does this correctly ('(Digital Marketing Institute)', 'in Semrush's account').",
+   "evidence": "F59 source B7: \"we discuss that 93.8% of AI Overview citations were not from the top 10 organic results, according to a study by Authoritas.\" F45 source B5: \"A Pew Research Center report suggests users click ...\"",
+   "fix": "\"93.8% outside the top 10 (Authoritas, per DMI)\"; \"8% against 15%, 1% inside (Pew, per Semrush)\"."
+  },
+  {
+   "id": "C21",
+   "where": "P 'The instrument, and a contest' item 'Flattening pays'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'costs off the books' changes the claim. In English 'off the books' means hidden or unrecorded dealings; #1666 says the costs fall first on parties outside the layer's books.",
+   "evidence": "O1666-01: \"Its costs fall first on parties outside its books.\"",
+   "fix": "\"Flattening pays: hypothesis; costs fall first outside its books (#1666).\""
+  },
+  {
+   "id": "C22",
+   "where": "KO 24; claim O833-11",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'in June 2026' is not in the cited quote. The quote gives no date for the self-capture, and #833 is dated 2026-06-15, so it bounds the capture from above only.",
+   "evidence": "O833-11: \"Entry #1 in the sorted registry (\\\"AI overview capture registry\\\") documents the capture registry capturing itself: the composition layer accurately describes the AI Overview Capture Registry, its methodology, and its purpose.\"",
+   "fix": "\"At its own address the layer described the Capture Registry accurately, its methodology and its purpose, as entry #1 of the registry by June 2026 (#833) ...\"."
+  },
+  {
+   "id": "C23",
+   "where": "KO 27-30 (paras 8-9)",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "The opening-run check (§5.10) passes. The KO still ends on an archive-only run of four sentences (27-30), after the last field sentence (26). One of them is the instrument (KO 27), which KO 1's definition (surface kept apart from instrument) and the registry findings of KO 9-24 depend on. §4.7 orders the equal-terms case by dependency, so the instrument belongs before what rests on it, not in a closing block. The archive's own-object sentence (KO 28) and its procedure #1665 also sit in the close.",
+   "evidence": "§4.1: \"the knowledge object does not open with the field's composition and close with the archive's\"; §4.7: \"In the equal-terms case, the entity's dependency order with the field's and the archive's claims ordered together\".",
+   "fix": "Move KO 27 (the instrument) to follow KO 3, before the first registry finding. Place KO 28 after KO 1-3, where the entity's place among the archive's objects is defined. Leave flattening and provenance debt (KO 29-30) after the findings they read. Log the reordering in the plan."
+  },
+  {
+   "id": "C24",
+   "where": "case.statement",
+   "kind": "case",
+   "severity": "should-fix",
+   "finding": "The case reading (equal) and ρ = extends are supported, but one reason is misstated. #1616 and #1615 contest O1611-01, the entity-scoped exclusion, not #1611's R_H reading of a composition as an operation on the world (O1611-02, which the ledger codes interpretation, not hypothesis). The ground that decides against the witness case is that the field holds the layer as maker of its own statements (F23, Munich court) and that #1611 says nothing of it bears on any provider's internals. The statement does cite F23 but leans on the misdirected contest.",
+   "evidence": "O1611-02 modality: interpretation. #1611 l.102: \"Under R_0 the graph cannot represent that its compositions are acts.\" F23: \"AI Overviews generate \\\"independent, new, and substantive statements\\\"\"",
+   "fix": "Replace the sentence beginning 'The nearest witness candidate' with: \"The nearest witness candidate, #1611's R_H, under which a composition is an operation on the world (an interpretation grounded in the archive's operative semiotics, #1611 §1f, l.102), is an ontology the field already holds marginally: the Munich court holds that AI Overviews generate independent, new and substantive statements (F23). #1611 states that nothing in it bears on any search provider's internals, and the law of the suppressed witness does not apply (§0.10).\""
+  },
+  {
+   "id": "C25",
+   "where": "KO 12; claims O187-01, O187-02",
+   "kind": "force",
+   "severity": "note",
+   "finding": "'(hypothesis)' attaches grammatically to the stacked-decision model only. The Consent Transfer Principle, also a hypothesis in the ledger, reads as the model's established ground. O187-01's evidentiary basis ('components separately documented — in Google's own patents, public statements, emergency interventions, third-party measurement') is dropped.",
+   "evidence": "O187-02 modality hypothesis: \"Consent Transfer Principle: *for a generative search surface, the rendering threshold varies inversely with the explicitness of the user's request for synthesis.*\"",
+   "fix": "\"#187 models ... as the output of a stacked decision system whose components are separately documented, and states as a further hypothesis the Consent Transfer Principle ...\"."
+  },
+  {
+   "id": "C26",
+   "where": "KO 15 (O740-04); KO 25 (O740-06)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "The dates 'July 2025' (KO 15) and 'February 2026' (KO 25) are not in the cited quotes. July 2025 is in O740-05 (not cited at KO 15). February 2026 is only in #740's text (l.264, European Publishers Council, 10 February 2026), not the ledger.",
+   "evidence": "O740-05: \"...following the July 2025 complaint...\"; #740 l.264: \"**February 10, 2026.** The European Publishers Council filed a formal complaint...\"",
+   "fix": "Add O740-05 to KO 15's claims. For KO 25, drop 'February 2026' or record the date as an extraction gap for the next ledger pass."
+  },
+  {
+   "id": "C27",
+   "where": "KO 28; claims O1665-02, O1629-06; marks",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'representational' is not in O1665-02's quote. It is in #1665 §0.5's bullet head ('T against L(B) is a representational comparison'), which the ledger quote cuts. The superseded_in_source marks are carried in `marks` but not visible in the text a reader sees. The predatory-surface classification is #1629's record of #599/#1368, and the sentence attributes it to #1629 alone.",
+   "evidence": "#1665 l.83: \"**T against L(B) is a representational comparison.** L(B) reads the full texts...\"; O1629-06: \"...classified a predatory surface on 2026-03-22 within r.27 THE INTERNET with five damage types distinguished (#599, #1368).\"",
+   "fix": "\"... states that comparing the transcript with the field-only composition is no causal test of the layer (a reading v0.9, #1690 §0.5, supersedes) ...\"; \"classified a predatory surface on 2026-03-22 (#599, #1368, as #1629 records)\"."
+  },
+  {
+   "id": "C28",
+   "where": "KO 9; claim O833-06",
+   "kind": "force",
+   "severity": "note",
+   "finding": "The limit is carried only as 'its cause inferred'. Its content (three candidate causes, and 'not determinable from output observation alone') is dropped.",
+   "evidence": "O833-06: \"Whether this exclusion reflects a deliberate content policy, a relevance-model threshold, or an artifact of the pipeline's passage-selection heuristics is not determinable from output observation alone.\"",
+   "fix": "\"... the pattern documented and its cause, policy, threshold or passage-selection artifact, not determinable from output alone\"."
+  },
+  {
+   "id": "C29",
+   "where": "KO 7; claims O3-03, O3-04",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "The sitting was signed in and not incognito (registry _regeneration_finding.sitting). This row's capture is signed out and incognito. The KO gives no auth state for the 12-of-17 finding, and 'compositions' adds a unit the quote does not name.",
+   "evidence": "Registry _regeneration_finding: \"sitting\": \"2026-08-14 00:49, signed in, not incognito, 17 addresses\"",
+   "fix": "\"... at 17 addresses in one signed-in sitting of 14 August 2026 ...\" (from the ledger at the next pass; the quote now lacks it)."
+  },
+  {
+   "id": "C30",
+   "where": "P 'Reach' item",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'2 billion users' drops 'more than'.",
+   "evidence": "F58: \"In 2025, AIO reported having more than 2 billion users, according to Google.\"",
+   "fix": "\"over 2 billion users in 2025 (DMI, per Google)\"."
+  },
+  {
+   "id": "C31",
+   "where": "ledger field.json",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "Field claims carry no priority date t (keys: source, locus, quote, claim, modality, kernel, const, lineage), though §3.2 requires one. The equal-terms ordering 'by genealogy within each sense' across both ledgers cannot be checked, and the field-before-archive order inside most mixed sentences (KO 1, 7, 8, 11, 15, 25) cannot be told apart from a field-first default.",
+   "evidence": "§3.2: \"t, the priority date (earliest dated appearance in that source's lineage)\"",
+   "fix": "Record t per field claim at the next extraction (bylines are in field.json: B6 Aug 15 2024, B7 Oct 22 2025, B9 Dec 16 2025), then reorder mixed sentences by t."
+  },
+  {
+   "id": "C32",
+   "where": "KO (whole); translation; rail_order",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Checks passed. All 67 field and 150 archive claim ids are cited in the KO, none twice, and no kernel claim is cut. The translation has 27 rows holding each field claim exactly once, each row's lineage matching the ledger's. Every received quote is verbatim from field.json, and the three rows with no archive claims are marked untranslated. rail_order covers all 77 lineages. The opening-run check is recomputed against the v0.7 KO_B (compose_google-ai-overviews.py FIELD_PARAS, 11 sentences): sentence 1 at 0.36, maximum 0.80 (KO 17), none at 0.95. P body is 331 words.",
+   "evidence": "computed with difflib.SequenceMatcher over KO sentences against KO_B sentences",
+   "fix": "none"
+  },
+  {
+   "id": "C33",
+   "where": "notes, ledger defect (1)",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "Confirmed. The row's _field_claims_note says 'extracted 2026-10-07 ... by WebFetch excerpt', while row.status and field.json say saved page text for B1-B5 and B7 (fetched 2026-10-08), WebFetch fragments for B6 and B9, and card only for B8.",
+   "evidence": "rows/google-ai-overviews.json _field_claims_note: \"The field ledger ..., extracted 2026-10-07 from the sources the layer surfaced, by WebFetch excerpt; shared by both arms.\"",
+   "fix": "Correct _field_claims_note to match field.json (an operator action, outside the composition)."
+  }
+ ],
+ "case_agrees": true,
+ "summary": "Case equal and rho extends agree with the defining papers (loci verbatim). Coverage, translation and the opening-run check all pass. Two force raisings must be fixed: P4 lost its qualifier (KO 13) and #1634 lost 'squarely' (KO 26). Should-fix items: a run of half-carried archive claims that keep the limit and drop the claim (KO 9, 10, 13, 20, 22, 23); unmarked internal inconsistencies at #833 (five vs six patterns) and #740 (capture 03 is AI Overview, not AI Mode); #164 composed as if about AI Overview when it is AI Mode; #597 attached to the January 2026 restriction; field-grammar vs 'the archive defines' asymmetry in KO 1 and the lede; an archive-only closing run with the instrument placed after the findings that depend on it; P attributions to non-pool sources."
+}

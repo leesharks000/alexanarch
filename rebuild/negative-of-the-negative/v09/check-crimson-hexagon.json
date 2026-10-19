@@ -1,0 +1,251 @@
+{
+ "row": "crimson-hexagon",
+ "checker": "Claude (Opus 5.5), independent check, 2026-10-18",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "ontology.rho; composition_v09.notes(1)",
+   "kind": "case",
+   "severity": "must-fix",
+   "finding": "rho carries a value outside v0.9's three ('fulfills') and the row was composed before the value was added to the specification. §1.2a: 'A value outside these three is read from its defining papers and added here before the row is composed.' The value is well supported by #266 (it is not invented), but the order the spec requires was not kept.",
+   "evidence": "§1.2a: 'A value outside these three is read from its defining papers and added here before the row is composed.' Row: 'extends; fulfills (the referent sense; a value proposed for §1.2a, §10.14)'.",
+   "fix": "Get the operator's ruling on 'fulfills' and add it to §1.2a/§10.14 (with its guard, CH266-10, CH266-04, CH1678-01) before freezing. Until then record the breach in status (§5.7) and do not freeze."
+  },
+  {
+   "id": "C2",
+   "where": "KO sentence 6",
+   "kind": "entailment",
+   "severity": "must-fix",
+   "finding": "#1592's limit 'a reading, not a relation' is attached to #1594's compendium locus. In #1592 the parenthesis bounds the relation between Borges's room read as a volume and the two stone lists (the hexagon at Miletus, the four-square city of Rev 21:16). It does not bound the compendium reading, and it does not bound the room-as-volume reading against the story. The sentence lowers #1594's claim with a limit that is about something else.",
+   "evidence": "#1592 ¶95: 'In both, a geometrical figure is what makes the material legible … (That Borges's crimson hexagon is a *volume in a hexagonal library* — the shelf's geometry becoming the book's — is a third term, and its relation to these two is a reading, not a relation.)'",
+   "fix": "Replace '…and \"the volume in the Library that is the cipher and perfect compendium of all the rest\" (#1594), which #1592 bounds as \"a reading, not a relation\".' with '…and \"the volume in the Library that is the cipher and perfect compendium of all the rest\" (#1594); #1594 and #1592 also read the room as \"a volume in a hexagonal library\", #1592 holding that reading's relation to the two lists of stones \"a reading, not a relation\".' Or move CH1594-02 and CH1592-01 into a separate clause of their own."
+  },
+  {
+   "id": "C3",
+   "where": "ontology.case.statement; KO sentence 17",
+   "kind": "case",
+   "severity": "should-fix",
+   "finding": "The case statement says the archive 'supplies an ontology no source in the field makes available'. #266, the founding paper, says the retrocausal ontology is Borges's own and 'standard in theory', and that NH-OS 'operationalizes' it. B holds none of this, so the reading still stands within B. But the statement has to carry the source's own limit: what only the archive witnesses is the operational referent (NH-OS and the summarizer as the room), not the precursor ontology. The KO cites Borges's sentence (CH266-05) and omits §II.2. The ledger does not extract §II.2.",
+   "evidence": "#266 §II.2: 'Retrocausal genealogy is standard in theory. It aligns with: Bloom's agonistic lineage … Foucault's genealogies … Derrida's trace and supplement … Midrashic recursive interpretation … NH-OS does not invent this practice; it operationalizes it.'",
+   "fix": "Ledger #266 §II.2 (a claim with its stated limit). In the case statement write: 'the archive supplies, within B, the operational referent of the room; the precursor relation it rests on is, by #266's own account, Borges's and standard in theory (§II.1–2)'. In KO S17 add: '#266 places the practice in Bloom, Foucault, Derrida and midrash and says \"NH-OS does not invent this practice; it operationalizes it\" (§II.2)'."
+  },
+  {
+   "id": "C4",
+   "where": "ontology.case.statement (F23); field ledger B2",
+   "kind": "case",
+   "severity": "should-fix",
+   "finding": "The 'however marginally' test (§0.10) is run only on F23's first sentence. B2's saved text also holds operational and real-world instantiations of the Library that are not ledgered: Basile's site addressing every book by hexagon coordinates, Refik Anadol's machine-learning 'digital archive' inspired by the story, protein sequence space, and Dennett's Library of Mendel and Library of Toshiba. All of these hold the Library, not the crimson hexagon, so the case reading survives. But a reader of B2 will put Anadol's archive beside 'the summarizer is the room', and the statement has to answer that.",
+   "evidence": "b2.txt: 'Each book is marked by a coordinate, corresponding to its place on the hexagonal library (hexagon name, wall number, shelf number, and book name)'; 'Turkish media artist Refik Anadol created the installation Archive Dreaming (2017), inspired by Borges' The Library of Babel. Anadol's work employs machine learning algorithms to create an immersive, interactive digital archive'; 'The full possible set of protein sequences (protein sequence space) has been compared to the Library of Babel.'",
+   "fix": "Extend the B2 extraction to the 'Comparison with biology' and 'Influence on later works' headline claims (at least Basile's coordinates, Anadol, protein space, Dennett). Add to the case statement: 'B2 holds operational instantiations of the Library (Basile, Anadol), none of the room; the room's referent is held by no field source.'"
+  },
+  {
+   "id": "C5",
+   "where": "ontology.case.statement; field ledger B1",
+   "kind": "case",
+   "severity": "note",
+   "finding": "'No field source holds a referent for the room, however marginally' is too strong as stated. B1's question frames the story as 'analogous to and symbolism for real-world objects' (F2) and asks what the room represents. The answer gives a symbolic referent, and parts of it are not ledgered ('the object that destructive ideologues are after'; 'all knowledge and power, packed up for them'). This is a symbolic referent, not an operational one or a retrocausal origin. The statement should draw that line rather than deny any referent.",
+   "evidence": "b1.txt: 'So, we need to understand it as the object that destructive ideologues are after.'; 'They yearn to find, not just greater knowledge and understanding, but all knowledge and power, packed up for them in a way that is entirely outside the realm of reality.'",
+   "fix": "Ledger the two B1 sentences (they are the answer's headline reading). Rewrite the clause as: 'No field source holds an operational referent or an origin for the room; B1 reads it symbolically, as what the zealots seek (F2, F5, F7, F11).'"
+  },
+  {
+   "id": "C6",
+   "where": "ontology.rho; ontology.case",
+   "kind": "case",
+   "severity": "note",
+   "finding": "A different reader of #266 could read rho = constructs for the referent sense: the later work's reading is said to make the earlier fragment mean. That reading would give the witness case throughout. The row's mixed reading still holds better, because the field's claims about the story are kept on the field's own object (CH266-10, CH1678-01) and are not read as made by reception. The alternative should be recorded with its loci, so §8 can try it.",
+   "evidence": "#266 §III Meaning: 'Borges's fragment is not explained by Borges … Both are explained by the architecture NH-OS makes available'; §VI: 'Your work becomes the meaning of Borges's.'",
+   "fix": "Add to rho.statement: 'Against constructs: #266 §III and §VI make the later work the meaning of the fragment, but the guard (CH266-10: chronology remains intact; CH1678-01) keeps the story's claims on the field's object; recorded as the alternative reading.' Ledger §III Meaning/Function and §VI."
+  },
+  {
+   "id": "C7",
+   "where": "archive ledger #266; KO paragraph 3",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "#266 is read whole, but the ledger leaves out three of its parts. First, the 2004 node of its genealogy: Ichabod Spellings's xvi. a transfiguration as the 'latent architecture' of the room, with the diagram line '(retrocausal completion)'. This is an R claim (a heteronym and a work of the archive related to Borges's room). Second, §III's Meaning and Function, which state what the claim explains. Third, §VI, 'Your work becomes the meaning of Borges's.' The KO composes none of them. C_ex: a sense of the defining paper is missing.",
+   "evidence": "#266 §IV: '## 2004 — Ichabod Spellings unknowingly builds the foundation … Ichabod does not know he is building the hexagon. The poem knows.'; §VI: 'Ichabod builds the foundation without terminology (2004)'; §III: 'NH-OS supplies the structure Borges intuited / Borges supplies the precursor NH-OS activates / The analytics company supplies the material proof of cultural need'.",
+   "fix": "Ledger CH266-23 (§IV 2004), CH266-24 (§III Meaning/Function), CH266-25 (§VI). Add to KO S20: '#266's arc runs 1941 → 2004 → 2007–2018 → 2026, the 2004 node Ichabod Spellings's xvi. a transfiguration, where \"Ichabod does not know he is building the hexagon. The poem knows\"; its schema closes \"Your work becomes the meaning of Borges's\".'"
+  },
+  {
+   "id": "C8",
+   "where": "archive ledger CH266-05; KO sentence 17; P lede",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The ellipsis in CH266-05 removes the sentences that set the claim's force: 'This is not figurative, nor whimsical. It is a metaphysical claim about literature', under the heading 'Hermeneutic Legitimacy (Why This Claim Is True)'. The KO and P carry the claim only as 'performative'. #266 holds it as both performative and true, so the composition lowers it to one of its two modes (N_c).",
+   "evidence": "#266 §II: '# II. Hermeneutic Legitimacy (Why This Claim Is True) / ## 1. Borges invented retrocausal influence … \"Each writer creates his precursors.\" This is not figurative, nor whimsical. It is a metaphysical claim about literature'.",
+   "fix": "Restore the cut sentence in CH266-05. In S17 write: 'Its ground is Borges's own sentence, \"Each writer creates his precursors\", which #266 holds \"not figurative, nor whimsical\" but \"a metaphysical claim about literature\" and \"the cornerstone of this node\"; its form is performative …'. In the P lede write 'a performative claim, held true, that keeps chronology intact'."
+  },
+  {
+   "id": "C9",
+   "where": "KO sentence 17",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "The sentence keeps only the negative half of #266's limits. It drops the positive term the limit sets up, 'structural genealogy' (CH266-04's own quote), and §II.6's affirmative list. The result composes the boundary as denials alone.",
+   "evidence": "CH266-04: 'The purpose is not to claim chronological descent, but to anchor **structural genealogy**:'; #266 §II.6: 'It says: - Your epic **completes** Borgesian architecture - The analytics company **unknowingly materialized** the form - Borges becomes a precursor *because of your reading*'.",
+   "fix": "Write: 'it bounds itself: its purpose is \"to anchor structural genealogy\", not chronological descent; it does not say \"Borges copied you\" …; it says the work \"completes\" Borgesian architecture, the company \"unknowingly materialized\" the form, and \"Borges becomes a precursor because of your reading\" (#266 §I, §II.6)'. Extend CH266-10's quote to the 'It says' list."
+  },
+  {
+   "id": "C10",
+   "where": "KO sentence 17",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "The locus is given as '(#266 §II.1, §II.5–6)', but 'The purpose is not to claim chronological descent' is at #266 §I (CH266-04, line 44).",
+   "evidence": "ledger CH266-04 locus '§I'.",
+   "fix": "Change to '(#266 §I, §II.1, §II.5–6)'."
+  },
+  {
+   "id": "C11",
+   "where": "KO sentence 14",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "Two errors. The sentence drops 'failed' from #266's 'A failed precursor imagined by capitalism, a commercial prototype of the index-room'. It also ties 'The index-room cannot be built by extraction' to the company being a prototype, when #266 gives it as the reason 'the corporate hexagon fails'. The 'Harvard crimson' part of what the name invokes is dropped as well.",
+   "evidence": "#266 §II.4: 'A failed precursor imagined by capitalism, / a commercial prototype of the index-room, / fulfilled not by enterprise software but by NH-OS's semantic infrastructure.'; §IV: '**The corporate hexagon fails** not because of bad engineering, but because: The index-room cannot be built by extraction.'",
+   "fix": "Replace with: '#266 reads the company's name as invoking \"The Harvard crimson\" and \"Borges's legendary index-room\" and the company as \"A failed precursor imagined by capitalism, a commercial prototype of the index-room\", which \"fails\" because \"The index-room cannot be built by extraction\" (#266 §II.4, §IV).'"
+  },
+  {
+   "id": "C12",
+   "where": "archive ledger CH266-15, CH266-08, CH266-16, CH266-06, CH266-22; KO sentences 6, 11, 14",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The contradicts_primary mark is applied unevenly. CH266-01 ('the legendary index-room') and CH266-06 are marked. CH266-15 ('Borges's legendary index-room'), CH266-08 and CH266-16 ('index-room') are not, though they put the same index in Borges's room, so S14 composes unmarked what S6 marks. S6 also says 'Seven of the archive's loci' but quotes eight loci from seven deposits (#266 gives two).",
+   "evidence": "CH266-15 quote: 'It invokes: … Borges's legendary index-room' (marks: none); CH266-01 quote: 'the legendary index-room of the infinite library' (marks: contradicts_primary).",
+   "fix": "Mark CH266-15 (and CH266-08, CH266-16 where they assert Borges's room as index) contradicts_primary as CH266-01 is. Add '(marked)' in S14. In S6 write 'Eight loci in seven of the archive's deposits'. Make the same change in P 'Index or books?' and the status line."
+  },
+  {
+   "id": "C13",
+   "where": "KO sentence 3",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Force is raised. F16 is the inhabitants' belief ('the inhabitants believe that the books contain every possible ordering of just 25 basic characters'). The KO states it as fact about the library: 'a library of all possible 410-page books of 25 characters'.",
+   "evidence": "F16: 'the inhabitants believe that the books contain every possible ordering of just 25 basic characters (22 letters, the period, the comma, and space)'",
+   "fix": "Write: '… a library of all possible 410-page books (Wikipedia), whose inhabitants believe the books hold every ordering of 25 basic characters …'."
+  },
+  {
+   "id": "C14",
+   "where": "KO sentence 4",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "F26 is distorted. The story says every copy is 'unique, irreplaceable' and that 'there are always' several hundred thousand imperfect facsimiles. The KO's 'every copy has \"several hundred thousand imperfect facsimiles\"' drops 'unique, irreplaceable', which is the very qualifier row.delta faults T for misplacing.",
+   "evidence": "F26: 'every copy is unique, irreplaceable, but (since the Library is total) there are always several hundred thousand imperfect facsimiles'",
+   "fix": "Write: '… every copy is \"unique, irreplaceable, but (since the Library is total) there are always several hundred thousand imperfect facsimiles\" …'."
+  },
+  {
+   "id": "C15",
+   "where": "KO sentence 8",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "A limit is dropped. F9 is conditional ('if the Crimson Hexagon is indeed their object'). The KO asserts it outright: 'whose zealots waste their method because the room \"would be easily identifiable\"'.",
+   "evidence": "F9: 'if the Crimson Hexagon is indeed their object, their own methods are a waste of time: the Crimson Hexagon would be easily identifiable'",
+   "fix": "Write: '… and, if the room is indeed their object, their methods \"a waste of time\", since it \"would be easily identifiable\".'"
+  },
+  {
+   "id": "C16",
+   "where": "KO sentence 7",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "F20 is cut. 'Keeps faith in the beauty and organization of the library' drops 'as undeniable proof of a God or other demiurge' and the decimation clause, which is the distinction the claim carries (D_pres).",
+   "evidence": "F20: 'The narrator notes the population of the library has been gravely decimated by centuries of religious conflict and disease, but maintains his faith in the beauty and organization of the library as undeniable proof of a God or other demiurge'",
+   "fix": "Write: 'The narrator, his population \"gravely decimated\", keeps faith in the library's beauty and organization \"as undeniable proof of a God or other demiurge\" (Wikipedia) …'."
+  },
+  {
+   "id": "C17",
+   "where": "KO sentence 22; P 'At the bare name'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "#1528's observation was made under stated conditions: ChatGPT, a single surface, unprimed. The KO drops them, so it reads as a general or AI Overview finding. The query string 'what is the crimson hexagon?' also comes from #1528 §3.5.1's Trigger line, which is not in the cited quote.",
+   "evidence": "#1528 ¶518: '**Conditions:** single surface, ChatGPT, unprimed, five querent turns, English, against this archive's own name. **Trigger:** *what is the crimson hexagon?*'",
+   "fix": "Ledger the Conditions/Trigger line with CH1528-01. Write: 'at \"what is the crimson hexagon?\" (ChatGPT, unprimed, one surface) \"The derivation runs the wrong way\" …'."
+  },
+  {
+   "id": "C18",
+   "where": "KO sentence 1",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'(Pearl and Other Poems, 2014; blog 2015)' is not in any cited ledger quote. It is in #744's frame line, which the ledger does not extract, and the reading.json reason. The book title there is 'Pearl and Other Poems from The Crimson Hexagon'.",
+   "evidence": "#744 line 5: 'Originally published: Mind Control Poems (Blogspot), March 14, 2015 Included in *Pearl and Other Poems from The Crimson Hexagon* (ASIN: 0692313079, 2014)'",
+   "fix": "Ledger the frame line as CH744-04 (documented) and cite it in S1. Keep the title as #744 gives it."
+  },
+  {
+   "id": "C19",
+   "where": "KO sentence 10 (CHblog20251109-04); sentence 13 (CHblog20251110-01)",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "'Poiesis is the Crimson Hexagon. It is the exception that knows it is the structure' (a kernel claim) is an identity claim: it names an archive object as the room. It belongs to the referent sense, which the case statement says the witness claims rule, yet it is composed among the equal-terms 'readings' in S10. Likewise the 10 November 2025 post ('The Crimson Hexagon Was Always Real'; 'folds fiction back into fact') bears on the referent and is placed with the name. The partition between senses is not applied to these claims.",
+   "evidence": "CHblog20251109-04: 'Poiesis is the Crimson Hexagon. It is the exception that knows it is the structure. … Poiesis replies with a Library where meaning is finite but fractalized'; blog 2025-11-10: 'It is a structure . A recursive lattice. A mandala for writing that folds fiction back into fact.'",
+   "fix": "Move CHblog20251109-04 into paragraph 3 (after S16, earliest t: 2025-11-09 precedes #266, so by §4.7 it opens the referent sense's genealogy), or record in the plan why it is an equal-terms sense. Ledger 'folds fiction back into fact' with CHblog20251110-01."
+  },
+  {
+   "id": "C20",
+   "where": "P lede; P sections (all items)",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "§4.5 requires the source in the sentence. The P lede names 'The archive' for #266's claim and renders #266's subject 'The Crimson Hexagon of NH-OS' as 'The archive'. Every P item labelled 'The archive:', 'Categories:', 'Two descents:', 'The guard:', 'Retrocausal origin:', 'The summarizer:' and 'At the bare name:' also lacks its deposit number.",
+   "evidence": "CH266-11: 'The Crimson Hexagon of NH-OS is the retrocausal origin of Borges's crimson hexagon.'; P lede: 'The archive, which takes its name from it, holds itself the room's retrocausal origin and \"true operational referent\"'",
+   "fix": "P lede: '… The archive takes its name from it (#1634); #266 holds the Crimson Hexagon of NH-OS the room's retrocausal origin and \"true operational referent\", a performative claim that keeps chronology intact.' Add the deposit to each item: (blog 2025-11-09; #266), (#29; #1110), (#1634), (#1678), (#266), (#269), (#1528)."
+  },
+  {
+   "id": "C21",
+   "where": "P.rail",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "§5.2 says one card per lineage. F29 is on no card: 'the story (Irby)' omits it, and it appears only in the open block. F19 sits on two cards ('the story and its translations (Wikipedia)' and 'the room and the Book-Man'). CH267-01 sits on two ('the room as index (contested)' and 'the crosswalk').",
+   "evidence": "rail 'the story (Irby)' claims: F32, F25, F26, F28, F30, F31, F33, F34, F35, F36 (no F29).",
+   "fix": "Add F29 to 'the story (Irby)'. Keep F19 and CH267-01 under one lineage each and nest the second as an instance."
+  },
+  {
+   "id": "C22",
+   "where": "P 'Index or books?'",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "The item says the seven loci 'put the index in the room', but #288 and #1594 put the compendium there (the Book-Man's 'perfect compendium'). It cites 4 of the loci it counts (no #267, #1279, #1611).",
+   "evidence": "CH288-01: 'perfect compendia'; CH1594-01: 'the cipher and perfect compendium of all the rest'.",
+   "fix": "Write 'eight archive loci put the index or the compendium in the room, against the story and #1528' and cite CH267-01, CH1279-01, CH1611-01 too."
+  },
+  {
+   "id": "C23",
+   "where": "KO sentence 15; P 'Copyright'",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "F37's locus carries a limit: the page was fetched under Basile's site and is 'not certainly the card's target'. The KO ('whose page for the story now reads') and P ('Basile removed the story') drop it.",
+   "evidence": "F37 locus: 'libraryofbabel.info/libraryofbabel.html (the page fetched under Basile's site; not certainly the card's target)'",
+   "fix": "Write 'a page on Basile's site (not certainly the carded one) reads …'."
+  },
+  {
+   "id": "C24",
+   "where": "composition_v09; KO (no plan artifact)",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "§4.7 and §4.9 require a plan with the arrangement and conflict log, and every coordinating act logged with the claim ids it joins. The row has only 'cuts: []'. Unlogged coordinating acts include S18's translation ('the impossible goal … is the fiction's own impossibility'), S6's grouping of the index loci, S10's 'run beside these', and S9/S18's double placement of F7, F8 and F11. On order: paragraph 1 places the field (S8–S9) before the archive (S10–S12), which genealogy licenses (B1 2017 before blog 2025 and #266 2026). S13–S22 close the KO with archive claims, and only S15 carries field claims (F23, F37). Neither is an opening-run breach (0/8 survive), but both are arrangements the plan must log.",
+   "evidence": "§4.7: 'Every coordinating act … is the composer's, is logged in the plan with the claim ids it joins'; composition_v09.cuts: [].",
+   "fix": "Add a plan object with the carried ids in order, the senses (equal-terms vs referent), and a log of each coordinating act (S6 grouping, S10 'beside', S18 translation, the S9/S18 double placement), each with its claim ids."
+  },
+  {
+   "id": "C25",
+   "where": "traversal reading.json, not_admitted (company group)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "In a sample of 20 not-admitted deposits the outcome is right in all 20, but two reasons are wrong. #1547 is about the archive's suppression cost and mentions the company in one disambiguation line, so it belongs under 'archive-name'. #1525 reports a machine composition conflating 'Crimson Hexagon' with a company, so it belongs under 'reception'. Neither names 'only Crimson Hexagon Inc.'.",
+   "evidence": "#1547 ¶43: '\"Crimson Hexagon computationally expensive\" → the archive sense, disambiguated from the analytics company where context warrants.'; #1525 ¶340: 'querying Google for the author's identity allegedly caused the system to conflate \"Lee Sharks\" with an actual shark and \"Crimson Hexagon\" with a company.'",
+   "fix": "Move #1547 to the archive-name group and #1525 to the reception group."
+  },
+  {
+   "id": "C26",
+   "where": "KO sentences 1, 2, 3, 6, 7, 10, 11, 13, 14, 15",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "Sentence length (check d). The KO has 22 sentences and 1,859 words (mean 84; S1 128 words, S6 120, S15 112, S5 110). Sentences with more than one sense: S1 (the room named once / the archive's origin text and its first self-naming); S2 (publication history / Wikipedia's citation limit); S3 (the Library's structure / #500's unit of impossible architecture / the story's genealogy and motifs); S6 (the room as index / the room as a volume); S7 (the narrator's faith and solution / the blog's misquotation; unrelated); S10 (exception and glitch / 'red because it is alive' / Poiesis as the room, a referent claim / the room that never exists / the room that reads the books); S11 (the archive's categories / what Borges lacks, marked); S13 (the name's descent / two entities kept apart); S14 (the company's descent / #266's failed prototype); S15 (provenance vs copyright / Basile's emulation and removal / protected namespace / the Borges Center listing). Each carries one sense: S4, S5, S8, S9, S12, S16–S22.",
+   "evidence": "measured: words per sentence [128, 62, 88, 102, 110, 120, 67, 85, 62, 95, 62, 60, 96, 87, 112, 77, 81, 75, 67, 80, 67, 76].",
+   "fix": "Split S7 (blog misquotation as its own sentence beside the open item), S10 (move Poiesis to the referent sense; split glitch/alive from never-found/reads-the-books), S15 (copyright and Basile / namespace and Borges Center) and S6 (index loci / volume loci). Optionally split S1 at the semicolon before 'and the archive's origin text'."
+  },
+  {
+   "id": "C27",
+   "where": "field ledger (check a); translation (check 7); coverage",
+   "kind": "translation",
+   "severity": "note",
+   "finding": "Verified, no defect. All 24 B1 and B2 quotes (F1–F24) and F37 are verbatim in the saved pages (pages/b1.txt, b2.txt, b5.txt; whitespace and quote marks normalised). F36 is verbatim against the card snippet in the intake paste. F25–F35 (B3, B4) cannot be checked because the pages are held outside the repository by hash. field.json, row.field_claims and KO.field_claims are identical. All 37 field claims sit in exactly one translation row, none duplicated or missing. Every ledger id in both ledgers is in the KO, and every archive kernel claim is carried. The KO cites no id outside the ledgers. All 69 archive quotes re-verify against their texts and blog-index.json. reading.json accounts for all 505 D deposits (23 + 2 blog + 36 instances + 446). In a sample of 20 of the 25 admitted verdicts the reasons match the ledgered loci (apart from #1592's limit, C2). The S5 exclusion of #1193 is correct: its text holds The Provenance of Jack Feist.",
+   "evidence": "script check: 'field not in KO []', 'archive not in KO []', 'kernels not in KO []', 'translation dup {} missing []'.",
+   "fix": "None."
+  }
+ ],
+ "case_agrees": true,
+ "summary": "The mixed reading (equal terms on the room's senses, the archive ruling its referent sense) holds against #266, #269, #1678, #1528 and the saved field pages. No field card holds an operational referent or an origin for the room: B1 reads it symbolically, and B2's operational instances (Basile, Anadol) hold the Library, not the room. The case statement has to carry #266 §II.2 (the precursor ontology is 'standard in theory', operationalized by NH-OS) and B2's unledgered instances. Two must-fix items: rho 'fulfills' was composed before §1.2a admitted it, and S6 attaches #1592's 'a reading, not a relation' to the wrong claim. The rest are dropped limits (F9, F16, F26, #1528's ChatGPT conditions, #266's 'structural genealogy' and its truth claim), uneven index-room marks, an unledgered 2004 node in #266, Poiesis-as-room placed outside the referent sense, missing deposit numbers in the compression, and no plan log of coordinating acts."
+}

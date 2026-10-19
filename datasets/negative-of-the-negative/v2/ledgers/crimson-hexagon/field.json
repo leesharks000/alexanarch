@@ -1,0 +1,483 @@
+{
+ "row": "crimson-hexagon",
+ "address": "library of babel crimson hexagon",
+ "extracted": "2026-10-18",
+ "extractor": "Claude (Opus 5.5), in session, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved texts (checked by script, 43/43); the story's text quoted only in the short spans its claims need",
+ "lineage_note": "B3, B4 and B5 carry one work in one translation (Irby): one lineage, 'the story (Irby)', three instances (§3.6); B3's printed p. 85 and B4's Purifiers passage are the same sentences",
+ "revised": "2026-10-18, on the independent check (rebuild/negative-of-the-negative/v09/check-crimson-hexagon.json): F38–F41 (B2, check C4) and F42–F43 (B1, check C5) added",
+ "field": [
+  {
+   "id": "B1",
+   "card": "Literature Stack Exchange — What does the \"crimson hexagon\" represent in \"The Library of Babel\"? — Jan 25, 2017",
+   "url": "https://literature.stackexchange.com/questions/991/what-does-the-crimson-hexagon-represent-in-the-library-of-babel",
+   "fetched": "the page itself returned HTTP 403 to a direct download at 2026-10-18 23:10 EDT (one attempt); the same question and its one (accepted) answer fetched verbatim through the Stack Exchange API (/2.3/questions/991 and /answers, filter withbody) at 23:11 EDT (pages/b1-question.json sha256 05f2e2ca6f6ce26d572632c92bf20de07b689fdef13e78bf7a10912f096d4011; pages/b1-answers.json sha256 11c21c4f068f26d2c13efb16e14cdfe641cd242dac39d913c80ac5db29cfda83; text pages/b1.txt sha256 f73ac7fd5f2ab70cd8c2605865522fb002468d2c464a1bcc4630f3f17f0652d6). Question by Benjamin, 2017-01-25 (CC BY-SA 3.0); answer id 996, score 12, accepted, 2017-01-25. Third party."
+  },
+  {
+   "id": "B2",
+   "card": "Wikipedia — The Library of Babel - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Library_of_Babel",
+   "fetched": "page HTML downloaded 2026-10-18 23:10 EDT (HTTP 200), revision oldid 1378241386, 'last edited on 3 October 2026, at 17:17 (UTC)' (pages/b2.html sha256 038573116164529e6892079ac526589cdf00083f3c2d4ae73df650f500c5d389; text pages/b2.txt sha256 57918e9f7bee056053b0b6827e0e2952c5791b5efddb645bf7a6ddb19f926f7c); CC BY-SA 4.0; third party"
+  },
+  {
+   "id": "B3",
+   "card": "University of Kentucky — The Library of Babel (PDF)",
+   "url": "https://philosophy.as.uky.edu/sites/default/files/The%20Library%20of%20Babel%20-%20Jorge%20Luis%20Borges.pdf",
+   "fetched": "PDF downloaded 2026-10-18 23:10 EDT (HTTP 200; Writer/OpenOffice.org 2.0, created 2012-08-26): the end of 'The Circular Ruins' and 'The Library of Babel' from Labyrinths, 'Translated by J. E. I.' (Irby), printed pages 51–58 in the PDF's own numbering (the card's 'Page 8' is the PDF page carrying printed p. 85); pdf sha256 1bd019783223b0e3b2489938d3968b3fc016b9d07b502cbc166242e900095067, text (pdftotext) sha256 6431b4f5273055261c3551490140361a785cbac070bc8ea0156d2ea657d03e18. The story is in copyright: the PDF and its text are kept outside the repository (workspace only) and only the short spans the claims need are quoted. Third party"
+  },
+  {
+   "id": "B4",
+   "card": "Swarthmore College Computer Society — The Library of Babel",
+   "url": "https://www.sccs.swarthmore.edu/users/00/pwillen1/lit/babel.htm",
+   "fetched": "page HTML downloaded 2026-10-18 23:10 EDT (HTTP 200; ISO-8859-1): the whole story, 'Translated by J. E. I.' (Irby), the same translation as B3; html sha256 815b8f417fab6413b50389140eba56442847a3827241c6cb3e01a3e50a3bde83, text sha256 37ee08774394c8aa509d7cab5e9ecde4c779bb99a48455fc36418176f9cf0bc1; kept outside the repository (in copyright), short spans quoted. The URL was located by search (the card's link is a google.com/goto token); a first guess at the SCCS host returned a different Borges text ('On Exactitude in Science') and was discarded. Third party"
+  },
+  {
+   "id": "B5",
+   "card": "Jonathan Basile — \"The Library of Babel\" — The Library of Babel by Jorge Luis Borges [PDF]",
+   "url": null,
+   "fetched": "not fetchable as carded: the card's target is a google.com/goto token, and no PDF of the story is served under Basile's site (libraryofbabel.info/Borges/libraryofbabel.pdf and three variants: HTTP 404, 2026-10-18 23:08–23:09 EDT). The site's story page, libraryofbabel.info/libraryofbabel.html (HTTP 200, 23:11 EDT; pages/b5.html sha256 5e5f6380b3825529df6c1507cac4f9626ed3fd992c795b9b46e361dfd34e1b52, text pages/b5.txt sha256 b11beec14aa401880ccb466ff39af0caa1481379d816e66d14590c42041dcec0), reads 'I had to remove this short story because of a request from copyright holders' and links an outside copy (maskofreason.files.wordpress.com), which is not the card's source and was not fetched. The card snippet stands as the source's only text (F36); the page's notice is carried as F37. Third party"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "question (Benjamin, 2017-01-25)",
+   "quote": "he mentions the \"Crimson Hexagon\", which has its own meaning as an almost soul-consuming wish",
+   "claim": "the asker: the Crimson Hexagon as an almost soul-consuming wish",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the room as wish and goal"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "question",
+   "quote": "so much of this short story is analogous to and symbolism for real-world objects. So, what does the \"crimson hexagon\" represent?",
+   "claim": "the asker: the story is analogous to and symbolism for real-world objects; what does the hexagon represent",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the question of what the room represents"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "accepted answer ¶1",
+   "quote": "A central concern of The Library of Babel — and particularly this section of it — is the search for order and meaning within a chaotic world.",
+   "claim": "the story's (and the passage's) central concern: the search for order and meaning in a chaotic world",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the search for order and meaning"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "accepted answer ¶4",
+   "quote": "So, the Purifiers are a form of destructive, narrow-minded zealotry.",
+   "claim": "the Purifiers as destructive, narrow-minded zealotry",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Purifiers"
+  },
+  "F5": {
+   "source": "B1",
+   "locus": "accepted answer ¶6",
+   "quote": "The Crimson Hexagon, mentioned so briefly, is given as the object the Purifiers are seeking.",
+   "claim": "the Crimson Hexagon, mentioned briefly, as the object the Purifiers seek",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the room in the Purifiers passage"
+  },
+  "F6": {
+   "source": "B1",
+   "locus": "accepted answer ¶7",
+   "quote": "the Crimson Hexagon is imagined as an utter exception to that, breaking every single rule of the world as we understand it",
+   "claim": "the room as an utter exception to the Library's constant structure",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the room as exception"
+  },
+  "F7": {
+   "source": "B1",
+   "locus": "accepted answer ¶8",
+   "quote": "what the Purifiers, the zealots, are seeking is the impossible",
+   "claim": "the Purifiers seek the impossible",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the room as wish and goal"
+  },
+  "F8": {
+   "source": "B1",
+   "locus": "accepted answer ¶9",
+   "quote": "it seems extremely doubtful that any will ever find it",
+   "claim": "doubtful that any will find it",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the room as wish and goal"
+  },
+  "F9": {
+   "source": "B1",
+   "locus": "accepted answer ¶10",
+   "quote": "if the Crimson Hexagon is indeed their object, their own methods are a waste of time: the Crimson Hexagon would be easily identifiable",
+   "claim": "the Purifiers' method is a waste of time: the room would be easily identifiable",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Purifiers"
+  },
+  "F10": {
+   "source": "B1",
+   "locus": "accepted answer ¶11",
+   "quote": "This Crimson Hexagon also stands in contrast to the next idea Borges brings: the Man of the Book. This is a much more subtle, and much more plausible, belief",
+   "claim": "the room contrasted with the Man of the Book, a subtler and more plausible belief",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the room and the Book-Man"
+  },
+  "F11": {
+   "source": "B1",
+   "locus": "accepted answer, conclusion",
+   "quote": "In conclusion: the Crimson Hexagon is the enticing, but impossible goal, that zealots uses as a hollow drive and justification for their destruction.",
+   "claim": "the room as the enticing but impossible goal, the zealots' hollow drive and justification",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the room as wish and goal"
+  },
+  "F12": {
+   "source": "B2",
+   "locus": "lede",
+   "quote": "\"The Library of Babel\" (Spanish: La biblioteca de Babel) is a short story by Argentine author and librarian Jorge Luis Borges (1899–1986), conceiving of a universe in the form of a vast library containing all possible 410-page books of a certain format and character set.",
+   "claim": "the story: Borges's short story of a universe as a library of all possible 410-page books",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "the story"
+  },
+  "F13": {
+   "source": "B2",
+   "locus": "lede ¶2",
+   "quote": "The story was originally published in Spanish in Borges' 1941 collection of stories El jardín de senderos que se bifurcan (The Garden of Forking Paths).",
+   "claim": "first published 1941, in El jardín de senderos que se bifurcan",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story"
+  },
+  "F14": {
+   "source": "B2",
+   "locus": "lede ¶2",
+   "quote": "Two English-language translations appeared approximately simultaneously in 1962, one by James E. Irby in a diverse collection of Borges's works titled Labyrinths and the other by Anthony Kerrigan as part of a collaborative translation of the entirety of Ficciones.",
+   "claim": "two English translations, 1962: Irby (Labyrinths) and Kerrigan (Ficciones)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the translations"
+  },
+  "F15": {
+   "source": "B2",
+   "locus": "Plot ¶1",
+   "quote": "Borges' narrator describes how his universe consists of an enormous expanse of adjacent hexagonal rooms.",
+   "claim": "the narrator's universe: adjacent hexagonal rooms",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Library's architecture"
+  },
+  "F16": {
+   "source": "B2",
+   "locus": "Plot ¶1",
+   "quote": "the inhabitants believe that the books contain every possible ordering of just 25 basic characters (22 letters, the period, the comma, and space)",
+   "claim": "the books contain every ordering of 25 characters",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Library's architecture"
+  },
+  "F17": {
+   "source": "B2",
+   "locus": "Plot ¶1",
+   "quote": "In the 1941 first edition, five walls of each hexagonal room were lined with bookshelves, while the 1956 edition reduced this to four walls, leaving two sides open.",
+   "claim": "the architecture revised: five walls of shelves in 1941, four in 1956",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Library's architecture"
+  },
+  "F18": {
+   "source": "B2",
+   "locus": "Plot ¶2",
+   "quote": "This leads to many superstitions, cults, and heresies within the wider organized religion of the library; the \"Purifiers\" arbitrarily destroy books they deem nonsense as they scour through the library seeking the \"Crimson Hexagon\" and its illustrated, magical books.",
+   "claim": "the Purifiers destroy books while seeking the Crimson Hexagon and its illustrated, magical books; one of the library's superstitions",
+   "modality": "documented",
+   "kernel": true,
+   "const": true,
+   "lineage": "the room in the Purifiers passage"
+  },
+  "F19": {
+   "source": "B2",
+   "locus": "Plot ¶2",
+   "quote": "Others believe that since all books exist in the library, somewhere one of the books must be a perfect index of the library's contents; some even believe that a messianic figure known as the \"Man of the Book\" has read it, and they travel through the library seeking him.",
+   "claim": "the perfect index and the Man of the Book, a separate belief",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the room and the Book-Man"
+  },
+  "F20": {
+   "source": "B2",
+   "locus": "Plot ¶2",
+   "quote": "The narrator notes the population of the library has been gravely decimated by centuries of religious conflict and disease, but maintains his faith in the beauty and organization of the library as undeniable proof of a God or other demiurge",
+   "claim": "the narrator's faith in the library's organization",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story"
+  },
+  "F21": {
+   "source": "B2",
+   "locus": "Themes ¶1",
+   "quote": "The story repeats the theme of Borges' 1939 essay \"The Total Library\" (\"La Biblioteca Total\"), which in turn acknowledges the earlier development of this theme by Kurd Lasswitz in his 1901 story \"The Universal Library\" (\"Die Universalbibliothek\"):",
+   "claim": "genealogy: The Total Library (1939), Lasswitz (1901)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story's genealogy"
+  },
+  "F22": {
+   "source": "B2",
+   "locus": "Themes ¶2",
+   "quote": "Many of Borges' signature motifs are featured in the story, including infinity, reality, cabalistic reasoning, and labyrinths.",
+   "claim": "motifs: infinity, reality, cabalistic reasoning, labyrinths",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story"
+  },
+  "F23": {
+   "source": "B2",
+   "locus": "Influence on later works",
+   "quote": "The Library of Babel, a website created by Jonathan Basile, emulates an English-language version of Borges' library.",
+   "claim": "Basile's website emulates Borges's library",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Library emulated"
+  },
+  "F24": {
+   "source": "B2",
+   "locus": "maintenance banner",
+   "quote": "This article includes a list of general references but lacks sufficient corresponding inline citations.",
+   "claim": "the article's own limit: insufficient inline citations",
+   "modality": "self-description",
+   "kernel": false,
+   "const": false,
+   "lineage": "the article's limit"
+  },
+  "F25": {
+   "source": "B3",
+   "locus": "p. 85 of the printed text (PDF p. 8): the card's snippet",
+   "quote": "the Library is so enormous that any reduction of human origin is infinitesimal",
+   "claim": "the narrator: any human reduction of the Library is infinitesimal",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "the story (Irby)",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F26": {
+   "source": "B3",
+   "locus": "p. 85 (PDF p. 8)",
+   "quote": "every copy is unique, irreplaceable, but (since the Library is total) there are always several hundred thousand imperfect facsimiles",
+   "claim": "the narrator: every copy unique, yet always imperfect facsimiles",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story (Irby)",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F27": {
+   "source": "B3",
+   "locus": "end of the story",
+   "quote": "Translated by J. E. I.",
+   "claim": "the translation is Irby's",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the translations"
+  },
+  "F28": {
+   "source": "B4",
+   "locus": "opening",
+   "quote": "The universe (which others call the Library) is composed of an indefinite and perhaps infinite number of hexagonal galleries",
+   "claim": "the narrator: the universe is a Library of hexagonal galleries",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story (Irby)",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F29": {
+   "source": "B4",
+   "locus": "¶ 'Like all men of the Library'",
+   "quote": "I have wandered in search of a book, perhaps the catalogue of catalogues",
+   "claim": "the narrator sought a book, perhaps the catalogue of catalogues",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the catalogue of catalogues",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F30": {
+   "source": "B4",
+   "locus": "the Purifiers passage",
+   "quote": "their hygienic, ascetic furor caused the senseless perdition of millions of books",
+   "claim": "the Purifiers destroyed millions of books",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story (Irby)",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F31": {
+   "source": "B4",
+   "locus": "the Purifiers passage",
+   "quote": "I venture to suppose that the consequences of the Purifiers' depredations have been exaggerated by the horror these fanatics produced",
+   "claim": "the narrator's limit: the depredations' consequences exaggerated",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "the story (Irby)",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F32": {
+   "source": "B4",
+   "locus": "the Purifiers passage: the card's snippet",
+   "quote": "They were urged on by the delirium of trying to reach the books in the Crimson Hexagon: books whose format is smaller than usual, all-powerful, illustrated and magical.",
+   "claim": "the Crimson Hexagon: its books smaller than usual, all-powerful, illustrated and magical; the Purifiers' delirium to reach them",
+   "modality": "attributed",
+   "kernel": true,
+   "const": true,
+   "lineage": "the story (Irby)",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F33": {
+   "source": "B4",
+   "locus": "the Man of the Book passage",
+   "quote": "there must exist a book which is the formula and perfect compendium of all the rest: some librarian has gone through it and he is analogous to a god",
+   "claim": "the Man of the Book: a book that is the formula and perfect compendium of all the rest; its reader analogous to a god",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story (Irby)",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F34": {
+   "source": "B4",
+   "locus": "the Man of the Book passage",
+   "quote": "How could one locate the venerated and secret hexagon which housed Him?",
+   "claim": "a second hexagon in the story: the one housing the Man of the Book",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story (Irby)",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F35": {
+   "source": "B4",
+   "locus": "final paragraph",
+   "quote": "The Library is unlimited and cyclical.",
+   "claim": "the narrator's solution: the Library unlimited and cyclical",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story (Irby)",
+   "qualifier": "the narrator, in the story (fiction); Irby's translation"
+  },
+  "F36": {
+   "source": "B5",
+   "locus": "card snippet",
+   "quote": "The Library of Babel by Jorge Luis Borges [PDF] Their name is execrated, but those who deplore the “treasures” destroyed by this frenzy neglect two notable fact",
+   "claim": "the card's snippet: the story's Purifiers passage, in the Irby translation",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the story (Irby)"
+  },
+  "F37": {
+   "source": "B5",
+   "locus": "libraryofbabel.info/libraryofbabel.html (the page fetched under Basile's site; not certainly the card's target)",
+   "quote": "I had to remove this short story because of a request from copyright holders.",
+   "claim": "Basile's page: the story removed at the copyright holders' request",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Library emulated"
+  },
+  "F38": {
+   "source": "B2",
+   "locus": "Influence on later works",
+   "quote": "Each book is marked by a coordinate, corresponding to its place on the hexagonal library (hexagon name, wall number, shelf number, and book name) so that every book can be found at the same place every time.",
+   "claim": "Basile's website addresses every book by hexagon coordinates",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Library emulated"
+  },
+  "F39": {
+   "source": "B2",
+   "locus": "Influence on later works",
+   "quote": "Turkish media artist Refik Anadol created the installation Archive Dreaming (2017), inspired by Borges' The Library of Babel. Anadol's work employs machine learning algorithms to create an immersive, interactive digital archive",
+   "claim": "Anadol's Archive Dreaming: a machine-learning digital archive inspired by the story",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Library emulated"
+  },
+  "F40": {
+   "source": "B2",
+   "locus": "Comparison with biology",
+   "quote": "The full possible set of protein sequences (protein sequence space) has been compared to the Library of Babel.",
+   "claim": "protein sequence space compared to the Library",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Library as comparison"
+  },
+  "F41": {
+   "source": "B2",
+   "locus": "Comparison with biology",
+   "quote": "Daniel Dennett's 1995 book Darwin's Dangerous Idea includes an elaboration of the Library of Babel concept to imagine the set of all possible genetic sequences, which he calls the Library of Mendel",
+   "claim": "Dennett's Library of Mendel",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Library as comparison"
+  },
+  "F42": {
+   "source": "B1",
+   "locus": "accepted answer ¶6",
+   "quote": "So, we need to understand it as the object that destructive ideologues are after.",
+   "claim": "the room as the object destructive ideologues are after",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the room as wish and goal"
+  },
+  "F43": {
+   "source": "B1",
+   "locus": "accepted answer ¶8",
+   "quote": "They yearn to find, not just greater knowledge and understanding, but all knowledge and power, packed up for them in a way that is entirely outside the realm of reality.",
+   "claim": "the zealots yearn for all knowledge and power, outside the realm of reality",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the room as wish and goal"
+  }
+ }
+}

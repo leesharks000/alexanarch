@@ -1,0 +1,260 @@
+{
+ "row": "the-socratic-problem",
+ "checker": "Claude (independent checker subagent), v0.9 CHECK-BRIEF, 2026-10-18",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "case.value, case.statement ('Not mixed: no archive sense was found that no field source makes available'); notes",
+   "kind": "case",
+   "severity": "must-fix",
+   "finding": "The case reading does not survive the defining papers. Two things hold together. (a) The archive extends the field's object: #123 keeps the problem, adds a layer, calls the biographical and structural readings compatible, and keeps the historical Socrates historically real. (b) The orthonymic sense, Socrates as an authorial position the authorship is organised around within a functional-distribution model of authorship, is an ontology the defining papers themselves say the field does not hold, even at its margin. #123 §I.A names Kahn as the closest antecedent and says Kahn 'preserves the biological-individuation model of authorship', the difference 'not merely terminological'. #1576 n. 11 says the nearest scholars 'do not take it: for both, the constructed figure is a character made by authors, not a position the authorship is organised around'. #123's abstract says the biological-individuation model has been 'structurally unable to recognize' the configuration, and #136 (S136-01, kernel) says the discipline's instruments are 'structurally incapable of adjudicating it'. The field's marginal claims are about a different object. F20 (de Vogel) is epistemic: 'The real Socrates we have not' presupposes a real Socrates and offers interpretations of him. F17 is about genre ('a non-historical genre') and keeps Plato as the single author. F24 ('an amalgamation of different philosophers') is still about persons. The composition's own notes concede that what the field holds is 'a neighbouring ontology', and a neighbouring ontology is not the ontology §0.10 asks about. Because #123 does not radically contest the field (it calls itself 'a reclassification model, not a conquest of the field'), the row is not witness throughout. It is the margin case §10.16 names: the archive extends the field and also supplies an ontology the field lacks. A reader of the same defining papers would therefore decide mixed, not equal.",
+   "evidence": "#123 §I.A: 'Kahn's Socrates is a Platonic literary construction. The heteronymic reading's Socrates is the orthonym whose refusal *organizes* the subsequent Platonic project, even though he wrote no text himself. The difference is not merely terminological: Kahn preserves the biological-individuation model of authorship (one author, one body, one corpus, Plato); the heteronymic reading proposes a functional-distribution model (three positions, three functions, one configurational project).' #1576 n. 11: 'Danzig, *Apologizing for Socrates* (2010), and Nehamas, *The Art of Living* (1998), are one step from this section's position and do not take it: for both, the constructed figure is a character made by authors, not a position the authorship is organised around.' #123 Abstract: 'a symptom of a heteronymic configuration that the modern biological-individuation model of authorship has been structurally unable to recognize.' S136-01: 'the discipline's instruments are biographical-documentary and therefore structurally incapable of adjudicating it'. F20: '\"The 'real' Socrates we have not,\" ... \"What we have is a set of interpretations each of which represents a 'theoretically possible' Socrates.\"' #123 Abstract: 'The paper is offered as a reclassification model, not as a conquest of the field.'",
+   "fix": "Record case.value = 'mixed (§10.16)'. Replace the case statement's last three sentences with: 'The orthonymic sense, Socrates as the position the authorship is organised around within a functional-distribution model of authorship (#123 §I.A, Abstract; #167 §2.2; #168 §II), is not held in the field: #123 §I.A says Kahn, the closest antecedent, preserves the biological-individuation model; #1576 n. 11 says the nearest scholars do not take the position; #123's abstract and #136 (S136-01) say the field's model and instruments cannot recognize or adjudicate it. De Vogel (F20) holds an epistemic limit on a real Socrates, and Kahn (F17) a literary character in a non-historical genre: a neighbouring ontology, not this one. The archive also extends the field's object (#123 §VI, §VII; #1579 §8). The row is the margin case of §10.16; its form of composition (one ontology with the orthonymic claims ruling their own sense, or the archive's ontology throughout) is for the operator's ruling and is recorded there.' Keep ρ = extends for the problem and record the orthonymic sense as one the field does not make available. Flag §10.16 for ruling before the row freezes."
+  },
+  {
+   "id": "C2",
+   "where": "case.loci: #123 §I.A and #1576 n. 11",
+   "kind": "case",
+   "severity": "must-fix",
+   "finding": "Both loci are cut just before the clause that decides the case. The #1576 n. 11 locus stops at 'do not take it' and leaves out the reason, which is that the field's figure is 'a character made by authors, not a position the authorship is organised around'. The #123 §I.A locus quotes only 'best understood as a *radicalization* of Kahn's unitarianism'. It leaves out the same paragraph's 'departs from it in a specific direction' and the sentence saying Kahn 'preserves the biological-individuation model'. The case statement then cites #1576 as placing Danzig and Nehamas 'one step' from the position, as if that supported the field holding it. The full locus says the opposite. The truncated quotes are verbatim as far as they go, but they do not carry what they are cited for.",
+   "evidence": "#123 §I.A: 'The argument proposed here extends Kahn's insight but departs from it in a specific direction.' / 'Kahn preserves the biological-individuation model of authorship (one author, one body, one corpus, Plato)'. #1576 n. 11 continues: ': for both, the constructed figure is a character made by authors, not a position the authorship is organised around.'",
+   "fix": "Replace the #1576 n. 11 locus with the full sentence through 'organised around.'. Add a #123 §I.A locus: 'Kahn's Socrates is a Platonic literary construction. ... The difference is not merely terminological: Kahn preserves the biological-individuation model of authorship (one author, one body, one corpus, Plato); the heteronymic reading proposes a functional-distribution model (three positions, three functions, one configurational project).' Keep the 'radicalization' locus beside it. Delete 'and #1576 places Danzig and Nehamas \"one step\" from it' from the statement, or restate it as 'and #1576 says the nearest scholars, Danzig and Nehamas, do not take it'."
+  },
+  {
+   "id": "C3",
+   "where": "case.statement; notes ('B2's own title, \"How Plato and other Greek writers invented Socrates\"')",
+   "kind": "case",
+   "severity": "should-fix",
+   "finding": "The case reading leans on material that is not in the field ledger. Danzig and Nehamas are not in B; they enter only through the archive's footnote, and §0.4 puts everything outside B and A outside the experiment. B2's title is a card title, not a ledger claim. 'Invented' also names the 'character made by authors' reading, which #1576 n. 11 distinguishes from the archive's position.",
+   "evidence": "§0.4: 'Everything outside B and A is outside the experiment.' Field ledger B2 claims are F18–F25; none states that Socrates is a position.",
+   "fix": "Remove Danzig and Nehamas, and B2's title, from the grounds for 'the field holds the ontology'. Read the field's hold only from F1–F42."
+  },
+  {
+   "id": "C4",
+   "where": "case.statement ('a radicalization of Kahn, a field source (F17, F42)')",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "Kahn is not a field source. The field sources are B1 and B4 (Wikipedia), which report Kahn with M_src = attributed.",
+   "evidence": "F17 B1 'Kahn' attributed; F42 B4 attributed: 'Charles H. Kahn has reinforced the skeptical stance...'",
+   "fix": "'a radicalization of Kahn, whom the field reports (Wikipedia, F17, F42)'."
+  },
+  {
+   "id": "C5",
+   "where": "P section '⚖️ Positions', item 'Unsolvable:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The item sets #168's 'no rendering-independent Socrates' under the label 'Unsolvable:', beside de Vogel and Kahn. That files the archive's ontological claim, which is about the entity and not about whether the problem can be solved, inside the field's skeptical stance. It is the §0.7 move: the archive's ontology lowered into a position of the field. The label also misfits F17: Kahn's 'non-historical genre' is not a claim that the problem is unsolvable (F42 is).",
+   "evidence": "S168-02: 'the entity is query-conformal; there is no rendering-independent Socrates to recover, only the family of renderings and the negative space they jointly imply.' F16: 'seemingly impossible to clarify and thus perhaps now classified as unsolvable'.",
+   "fix": "'Unsolvable:' → 'perhaps unsolvable (Wikipedia); only possible Socrateses (de Vogel); only the Apology historical (Kahn).' with claims F16, F20, F42. Move S168-02 to '🔁 The configuration' as 'Renderings: no rendering-independent Socrates, only the family of renderings and the negative space they imply (#168).'"
+  },
+  {
+   "id": "C6",
+   "where": "KO sentences 3–4 against 28 and 30; rail_order ('The problem as a symptom' 2nd, 'Socrates as orthonym' 17th)",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "The KO is out of dependency order (§4.7). KO 3 composes the reclassification as a 'symptom of a heteronymic configuration' and 'the orthonymic position misread as a missing historical author', but the orthonym and the configuration are not defined until KO 28, and the evidence/pattern firewall waits until KO 30. #123 gives the definition first (Abstract: orthonym, survival-heteronym, then the reclassification), and S123-02 depends on S123-01. The opening-run check of §5.10 passes (0 of 7 KO_B sentences survive, and KO 1 is new). The result is still that every field claim is composed before the archive's defining sense, and KO 27–39 close as a block of 13 archive-only sentences.",
+   "evidence": "S123-01 (kernel, stipulation, Abstract) defines the orthonym; S123-02 (kernel, hypothesis, Abstract) reclassifies 'by this reading'.",
+   "fix": "Move KO 28 (S123-01, S123-03, S1585-01, S1589-02) and KO 30 (S136-08, S1569-09, S1576-02) to stand right after KO 2 and before KO 3, and move the rail card 'Socrates as orthonym' to follow 'The problem defined'. If the operator rules the row mixed (C1), order the orthonymic sense by E_A's dependency order within it."
+  },
+  {
+   "id": "C7",
+   "where": "P lede",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The lede states the reclassification flat. #123 holds it as a hypothesis and as its secondary claim at medium confidence (S123-02 hypothesis; S123-06), and KO 3 carries that modality. The compression raises it.",
+   "evidence": "S123-06: 'Secondary claim (medium confidence): Under this model, the Socratic problem appears as a symptom rather than a problem.'",
+   "fix": "'...Socrates as Orthonym (#123, its secondary claim, at medium confidence) and Many and One (#1576) reclassify it, without solving it, as the symptom of an authorial configuration the biographical model of authorship cannot represent.' Add S123-06 to the claims."
+  },
+  {
+   "id": "C8",
+   "where": "P section '⚠️ The man, and the limits', item 'The man:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "'not a figure imperfectly accessed (#167)' drops the source's own scope, 'Under the reading'. This raises #167 from a claim about the reading into a flat claim about Socrates.",
+   "evidence": "S167-02: 'Under the reading, Socrates is not a historical figure imperfectly accessed through later authors.'",
+   "fix": "'kept real (#123); under the reading, the orthonymic position, not a figure imperfectly accessed (#167); no thesis about persons (#1579).'"
+  },
+  {
+   "id": "C9",
+   "where": "KO 5 ('#1569 reads it as the form the centre necessarily takes')",
+   "kind": "force",
+   "severity": "note",
+   "finding": "The conditional frame of S1569-14 ('On this logic') is dropped.",
+   "evidence": "S1569-14: 'On this logic, Socrates not writing stops being an absence in the evidence and becomes the form the centre necessarily takes.'",
+   "fix": "'and the notebook (#1569), on this logic, reads it as the form the centre necessarily takes, not an absence in the evidence.'"
+  },
+  {
+   "id": "C10",
+   "where": "KO 32 ('divides the functions as \"Aristophanes deforms, Plato defends, Xenophon remembers, Aristotle codifies\"')",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "S136-05 is coded hypothesis, but KO 32 composes it as a plain division. The quote is also cut: the source's sequence begins 'Chaerephon asks, Apollo answers, Socrates interprets'.",
+   "evidence": "S136-05 (hypothesis): 'Chaerephon asks, Apollo answers, Socrates interprets, Aristophanes deforms, Plato defends, Xenophon remembers, Aristotle codifies.'",
+   "fix": "'...proposes, as hypothesis, the distribution \"Chaerephon asks, Apollo answers, Socrates interprets, Aristophanes deforms, Plato defends, Xenophon remembers, Aristotle codifies\", and states its thesis...'"
+  },
+  {
+   "id": "C11",
+   "where": "KO 15, last clause (S1570-05)",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The archive's own adverse result is softened. KO 15 says the Symposium speech 'reads more Platonic than its neighbours'. It leaves out that the cited quote calls this the only ancient case with an independently attested target and says 'it reads negative'. #1570 heads the measurement 'Plato does not construct heteronymically'. N_c requires the archive's stated limits to be composed.",
+   "evidence": "S1570-05: 'Given the one chance to construct against a checkable target, the speech comes out *more* Platonic than its neighbours, not less. **The only ancient case with an independently attested target, and it reads negative.**' #1570 M16 heading: 'M16 — Plato does not construct heteronymically.'",
+   "fix": "'...and Plato's one constructed speech against an independently attested target, Aristophanes' in the Symposium, comes out more Platonic than its neighbours, not less: the only ancient case with such a target, and it reads negative (#1570).'"
+  },
+  {
+   "id": "C12",
+   "where": "KO 17 ('the revision strikes the received items, pay, teaching and the things aloft'; 'καλός names the silenus repair, the received ugliness kept as a shell and its value inverted, and νέος the reissue')",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The cited quotes (S1579-08, -09, -10) do not contain these specifics. The strikes, the shell and inversion, καλός and νέος are verbatim in #1579's Abstract and §1/§5, which were read whole, but they are not in the ledger instances the sentence cites, so reverse entailment fails against the frozen ledger.",
+   "evidence": "#1579 Abstract: 'stripping the received figure of pay, teaching, and meteorology ... καλός the inversion that keeps the ugly shell, νέος the reissue'. S1579-09 quote: 'The silenus is not a metaphor for Socrates; it is a description of the *repair*.'",
+   "fix": "Either add a ledger addendum to S1579-01 extending its quote through '...constructed through the corpus's longest chain of narrated transmission' (Abstract, verbatim) and cite it here, or trim KO 17 to what S1579-08/-09/-10 state: 'the remade Socrates is constitutively unpaid, his unpaid state argued; the silenus a description of the repair; access to a young Socrates manufactured as transmitted memory'."
+  },
+  {
+   "id": "C13",
+   "where": "KO 19 ('set apart from the paid teachers of eristic'; '#123 reads Metaphysics A 6, the locus classicus')",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "S1579-11's quote does not contain 'set apart from the paid teachers of eristic'; #1579 §7 does (μισθαρνούντων, 'sets Socrates *apart* from them'). 'locus classicus' is in #123's text but not in S123-15's quote.",
+   "evidence": "S1579-11: 'The separations the *Apology* fought for line by line arrive in Aristotle as furniture: the boundary the *Clouds* fused and the dialogues recut is, by the epilogue, simply where things stand.'",
+   "fix": "Extend S1579-11's quote with #1579 §7's preceding sentence by ledger addendum, or compose: '#1579 has the separations the Apology fought for arrive in the Sophistical Refutations' epilogue as furniture, simply where things stand'. Drop 'the locus classicus' or extend S123-15's quote."
+  },
+  {
+   "id": "C14",
+   "where": "KO 20 ('its sentence at 183b6-8'; 'Metaphysics Μ 4's assignment to Socrates of inductive arguments and universal definition')",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "Neither the locus 183b6-8 nor 'inductive arguments and universal definition' is in the cited quotes. 183b6–8 is in #1603's text. A string search of #1603 for 'induct' finds nothing; S1603-04 says only 'two contributions justly assigned to him'.",
+   "evidence": "S1603-04: '...the capacity, the ἰσχύς, *was not yet there*; two contributions justly assigned to him; their misdevelopment charged to others.'",
+   "fix": "'#1603 reads Metaphysics Μ 4 as the configuration stated by Aristotle as history: the man engaged in the operations while the capacity was not yet there, two contributions justly assigned to him, their misdevelopment charged to others.' Cite 183b6–8 only with a ledger addendum."
+  },
+  {
+   "id": "C15",
+   "where": "KO 10 ('the name cannot by itself establish two makers, being a Socrates the corpus says was answered from a comedy (#1576)')",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "S1576-09 does not state that the name cannot establish two makers. In #1576 §9.6 the argument concerns whether the texts establish two makers of the Plato/Aristotle corpora. Socrates is one of the names listed as 'objects under examination'.",
+   "evidence": "S1576-09: 'The names are the objects under examination — a Socrates the corpus itself says was answered from a comedy'.",
+   "fix": "'...and among the names Many and One holds to be the objects under examination, not evidence of their makers, is a Socrates the corpus itself says was answered from a comedy (#1576).'"
+  },
+  {
+   "id": "C16",
+   "where": "KO 10 ('The comic layer carries the accusation-profile and none of the operation, the questioning, the midwifery, the ignorance held as a position (#1569)')",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "The list of operations is #1576's (S1576-03), but the sentence attributes it to #1569. S1569-12 states only the bare contrast.",
+   "evidence": "S1569-12: 'THE ACCUSATION-PROFILE IS COMIC. THE OPERATION IS NOT.' S1576-03: 'the operation — the questioning, the midwifery, the ignorance held as a position — is not in the comic layer at all.'",
+   "fix": "'The accusation-profile is comic and the operation is not (#1569); the operation, the questioning, the midwifery, the ignorance held as a position, is not in the comic layer at all: comedy supplied the notoriety, and the later corpus occupied the position and differentiated it (#1576).'"
+  },
+  {
+   "id": "C17",
+   "where": "P section '🧪 Tested', item 'One hand:' ('the inference withdrawn (#1572)')",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "The withdrawal is #1569's (S1569-06), which the item cites, but the item attributes it to #1572. #1572 supplies the measurement.",
+   "evidence": "S1569-06: '**§179's inference is therefore withdrawn.**'",
+   "fix": "'...Protagoras 99.8%, Socrates 99.5% (#1572); the inference withdrawn (#1569).'"
+  },
+  {
+   "id": "C18",
+   "where": "P items 'Wrote nothing:', 'Four witnesses:', 'They disagree:', 'Plato's Socrates:', 'Schleiermacher, 1815:', 'Aristotle:' (F15)",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "§4.5 requires every composed claim to carry its source in the sentence. These items compose field claims (F2, F34, F3, F4, F14, F28, F24, F25, F10, F22, F7, F8, F9, F11, F12, F15) without naming Wikipedia, Prior or Big Think. Only the archive claims in them are sourced.",
+   "evidence": "'They disagree: the Clouds, 423 BC, perhaps a composite; Xenophon practical; payment for teaching.' — no source named.",
+   "fix": "For example: 'They disagree: the Clouds, 423 BC (Prior), perhaps a composite (Big Think); Xenophon practical (Big Think); payment for teaching (Wikipedia).' 'Plato's Socrates: principal speaker but in the Laws (Big Think); few if any dialogues verbatim; stylometry groups early, middle, late (Wikipedia).' 'Schleiermacher, 1815: Apology and Crito purely Socratic (Wikipedia).' 'Aristotle: forms not separate (Wikipedia); ...' 'Wrote nothing: known through others' accounts (Wikipedia); ...' 'Four witnesses: ... Aristotle at second hand (Wikipedia); ...'"
+  },
+  {
+   "id": "C19",
+   "where": "KO 6 ('#1590 ... adopts that structural point while declining an account of motive')",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "In #1590 n. 13 the structural point adopted, and the motive declined, are a third reader's (Gemini, 2026-09-07), with whom the footprint reading was reached. KO 6 reads as though #1590 adopted its own point.",
+   "evidence": "#1590 n. 13: 'The reading of the residue as the orthonym's footprint was reached with a third reader (Gemini, 2026-09-07), whose re-indexing ... its structural point is adopted, its account of motive (an engine \"unbearable to institutional governance\") is not, on the line's rule that motive is not on the page.'",
+   "fix": "'...his footprint being what the transform leaves behind, a reading reached with a third reader whose structural point #1590 adopts and whose account of motive it declines, motive not being on the page'."
+  },
+  {
+   "id": "C20",
+   "where": "KO 2 ('a family of three questions'; '#1575 ... sets in place of the doctrinal a methodological question')",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "S123-08 says 'At least three versions can be distinguished'; KO 2 makes it 'a family of three'. 'Family' is #1575's word. '#1575 sets in place of the doctrinal' is a coordinating act of the composer: #1575 lists three questions and does not say it replaces #123's. Under §4.7 the act must be logged, and no source entails it.",
+   "evidence": "S1575-02: 'And it is a family rather than one problem: the historical question (what did the man hold), the methodological question (what could count as evidence), and the literary question (what is the character for).'",
+   "fix": "'#123 distinguishes at least three versions of it, the historical, the literary and the doctrinal ...; the reading copy of Many and One (#1575) names it a family rather than one problem: the historical question, the methodological (what could count as evidence) and the literary...'"
+  },
+  {
+   "id": "C21",
+   "where": "KO 35 ('On the man himself the archive's statements differ'); P.open item 1 ('The archive states it three ways ... contested within the archive')",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Only #123 and #167 stand in tension: real, and under the reading not a figure imperfectly accessed. The ledger status marks those two as contested. #1579 asserts no thesis about persons, and #203 says the orthonym reading is 'not a historical claim about who Socrates really was'. Neither is a contrary statement, and both agree with #123's frame. Composing all four as 'three ways' of stating the man's status makes the archive's disagreement look larger than the loci show. Under C1, this is also exactly where the field's person and the archive's position meet. That should be composed as the relation between the two senses, not as the archive contradicting itself.",
+   "evidence": "S1579-04: 'nothing here asserts a thesis about persons'. S203-01: 'not a historical claim about who Socrates \"really was\" but a structural reading of how the Socratic position generates the philosophical tradition'. S123-09: 'the historical Socrates remains historically real, but his historical function within the configuration is now understood as the orthonymic gesture'.",
+   "fix": "KO 35: 'On the man himself: #123 keeps the historical Socrates historically real, his historical function in the configuration the orthonymic gesture; #167 says that under the reading Socrates is not a historical figure imperfectly accessed through later authors ...; #1579 asserts no thesis about who the historical Socrates was; and #203 ... presents the orthonym reading as a structural reading, not a historical claim about who Socrates \"really was\".' Open item 1: 'How does the historical person (#123, kept real; F26) stand to the orthonymic position under the reading (#167)?' Rests on S123-09, S167-02, F26. Modality: interpretation; contested (#123/#167) as the ledger marks. Would resolve: the operator's §10.16 ruling on how the two senses compose. #1579 and #203 are listed as bounds, not as rival statements."
+  },
+  {
+   "id": "C22",
+   "where": "KO 25 ('Kahn ... reinforced the skeptical stance, holding that only the Apology has any historical significance')",
+   "kind": "force",
+   "severity": "note",
+   "finding": "The field's 'suggesting' becomes 'holding', a slight raise of an attributed field claim.",
+   "evidence": "F42: 'Charles H. Kahn has reinforced the skeptical stance on the unsolvable Socratic problem, suggesting that only Plato's Apology has any historical significance'",
+   "fix": "'suggesting that only the Apology has any historical significance'."
+  },
+  {
+   "id": "C23",
+   "where": "KO 9, 13, 15, 22, 27, 34, 37, 38, 39 (minor wordings)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Small departures from the cited quotes. Most are supported by the defining texts and none changes a claim. KO 9: 'reads the Apology as recording', where the quote has 'The corpus records'. KO 13: 'reported as part of a null' is in #1576 §8's text, not in the quote. KO 15: 'stylometric construction' (#1576 text: 'built substantially through stylometric work'), 'Strangers' and 'in stylometric space' are not in S1570-04; 'near-perfect' became 'near-equilateral'. KO 22: 'placeholder twin', where #1570 has 'neutral twin'. KO 27: Xenophon, Plato and Aristophanes are not named in S168-01's quote. KO 34: 'a measurement named and not run' is not in S1569-07. KO 37: 'Johannes' is not in S700-04 (#700 text has it). KO 38: 'salvific' is not in S346-01/-02 (#346 text has it). KO 39: #785 'present-day practice', where the quote has 'present-day production-system substitution'.",
+   "evidence": "S1576-07: 'And the instrument set, checked late against known pairs, agreed on one of three and classed Plato and Xenophon as one author.' S785-02: 'the precedent of the present-day production-system substitution'.",
+   "fix": "Bring each to the quote's wording: 'the corpus records'; 'near-perfect equilateral'; 'neutral twin'; 'the precedent of the present-day production-system substitution'. Otherwise drop the added words or extend the ledger quote by addendum."
+  },
+  {
+   "id": "C24",
+   "where": "rail_order",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "Kernel coverage at popup grain (§5.2) cannot be checked. The rail is a list of headings with no claim ids, snippets or nested instances. The P body cites few of the 86 kernel claims, and no heading covers the kernel sources of the reception and lineage senses: #700, #943, #942, #625/#902, #346, #858/#1219, #859/#1218, #849/#851/#1404/#1247, #152, #165, #794, #752, #785, #786, #153, #122, #764, #203/#1213/#1226, #1583, #1584, #1590. As it stands those sources' kernels are on neither body nor rail.",
+   "evidence": "§5.2: 'for every carried source, its kernel (§3.5) appears in the body or on the rail ... every source's kernel ids must appear among the rendered cards' claim ids or their nested instances.'",
+   "fix": "Render the rail as cards: one per lineage, each with its kernel claim ids, a snippet and nested instances. Add cards for 'Socrates as orthonym, restated' (#859/#1218, #152, #165, #794, #849 and its restatements, #625/#902), 'The transmitted Socrates' (#700, #943, #942, #1584), 'The Seventh and Second Letters' (#858/#1219, #1583), 'The configuration's lineage' (#122, #152, #752, #785, #786, #153, #165), 'Foreclosure' (#136, #764) and 'Available reading' (#203/#1213/#1226)."
+  },
+  {
+   "id": "C25",
+   "where": "ledger-archive.json (gaps bearing on the case)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "The ledger has not extracted three statements that bear directly on the case and on force. (1) #123 §I.A: Kahn preserves the biological-individuation model; the heteronymic reading proposes a functional-distribution model. (2) #123 Abstract: 'a reclassification model, not as a conquest of the field'. (3) #1570 M16's heading, 'Plato does not construct heteronymically'. The defining-paper reading needs (1) and (2). Under §3.5's rule (defined terms, stated limits) they qualify.",
+   "evidence": "S123-12's quote ends at 'even though he wrote no text himself.'; the next sentence in #123 §I.A begins 'The difference is not merely terminological'.",
+   "fix": "Ledger addenda (reported, not fixed here): S123-19 (definition/interpretation, §I.A, 'The difference is not merely terminological: ... one configurational project).'); S123-20 (self-description, Abstract, 'The paper is offered as a reclassification model, not as a conquest of the field.'); and extend S1570-05's locus to M16 with its heading."
+  },
+  {
+   "id": "C26",
+   "where": "translation rows 0–11",
+   "kind": "translation",
+   "severity": "note",
+   "finding": "This passes. Each of F1–F42 is in exactly one row, every received quote is verbatim from field.json, and every row is marked untranslated, as the equal-terms case requires. One weak pairing: row 8 (F11–F13, Schleiermacher) stands beside S1570-04 alone. #123 §I and #1576 §6.5 both name Schleiermacher as the start of the problem, in the passages that carry S123-07 and S1576-01. Under a mixed ruling (C1), the orthonymic rows (row 9: F17, F42, F20) would need translations rather than 'untranslated'.",
+   "evidence": "#1576 §6.5: 'the Socratic problem, from Schleiermacher onward'; #123 §I: 'since at least the work of Schleiermacher in the early nineteenth century'.",
+   "fix": "Row 8: add S123-07 and S1576-01 to archive_claims. Revisit row 9 after the §10.16 ruling."
+  },
+  {
+   "id": "C27",
+   "where": "ledger S168-01…S168-04 locus '§I'; case.loci #168 '§II'",
+   "kind": "case",
+   "severity": "note",
+   "finding": "The case locus is right: the quote stands under '## II. The Dissertation as the First Query Battery' in AXN-0303. The ledger's '§I' for S168-01–04 is a locus defect. Every case-locus quote was checked verbatim in its named text and is present (#123 §VI, §VII, §I.A, §X; #1579 §8; #1576 §6.5, n. 11; #136 §IX; #167 §2.2; #168 §II).",
+   "evidence": "AXN-0303 line 25 (under §II): 'there is no rendering-independent Socrates to recover, only the family of renderings and the negative space they jointly imply.'",
+   "fix": "Report the S168 locus defect to the ledger (S168-01–04: §II)."
+  },
+  {
+   "id": "C28",
+   "where": "KO overall; cuts; coverage",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "C_ex passes at claim grain. The KO cites all 42 field claims and all 157 archive claims, with no unknown ids (S123-09 is cited twice, in KO 31 and 35), so no kernel claim is cut and the cut log is correctly empty. The P body is 324 words for lede and items, within the 350-word bound. The §5.10 opening-run check passes (0 of 7).",
+   "evidence": "Computed against field.json and ledger-archive.json: missing F = [], missing S = [].",
+   "fix": "None."
+  }
+ ],
+ "case_agrees": false,
+ "summary": "The KO is fully covered and the translation table is clean, but the case is misread. The equal-terms reading rests on two truncated loci (#123 §I.A, #1576 n. 11) whose full text says the field's margin (Kahn, Danzig, Nehamas) holds a constructed character, not Socrates as a position the authorship is organised around. With #123's abstract and #136 saying the field's model cannot recognize the configuration, the row is the §10.16 mixed case: it extends the problem and supplies an ontology the field lacks, and it needs the operator's ruling. Separately, there are force raises in P (lede modality, #167's scope, S136-05), the P 'Unsolvable' item lowers #168 into the field's frame, KO 15 softens #1570's negative result, KO 3 composes the reclassification before the orthonym it depends on, field items in P go unsourced, and several KO details are not in the cited quotes."
+}

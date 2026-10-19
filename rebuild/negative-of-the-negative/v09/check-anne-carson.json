@@ -1,0 +1,206 @@
+{
+ "row": "anne-carson",
+ "checker": "Claude (Anthropic), independent checker subagent, v0.9 CHECK-BRIEF, 2026-10-18",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "P lede; also E_A.definition and case.statement",
+   "kind": "entailment",
+   "severity": "must-fix",
+   "finding": "The lede uses #1270's phrase \"from Longinus to Carson\" for a claim #1270 does not make. In #1270 the phrase names the standard jealousy reading of fr. 31. It does not name the triangle of Eros the Bittersweet or the visible gaps of If Not, Winter, which come from #626, #503 and #625. 'start from and extend' is the composer's synthesis: no cited quote says the archive extends the triangle or the gaps, and #626 says the analysis 'stops'. 'The archive's Sappho papers' includes #625, a field statement for the Historical Logos, and #626, a Slavonic Josephus paper whose Part II treats Sappho. E_A's definition ('the received reading the archive's Sappho papers retain, formalize and bound') has the same conflation.",
+   "evidence": "W1270-01: \"From Longinus to Carson, this interpretation has shaped how we understand archaic lyric's relation to eros\"; claim: \"The standard (jealousy) reading of fr. 31 runs 'from Longinus to Carson'\". W626-02: \"But Carson's analysis stops at the erotic.\" #625 title: \"Prolegomena to the Historical Logos: A Foundational Field Statement\".",
+   "fix": "Lede: \"is a Canadian poet, essayist, translator and classicist (Wikipedia; Poetry Foundation), awarded the 2026 Nobel Prize in Literature (Wikipedia); the standard reading of Sappho's fragment 31 runs 'from Longinus to Carson' (#1270), her triangle of desire is formalized and bounded (#503, #626), and her visible gaps in If Not, Winter are read as transmission (#625, #562).\" In E_A and the case statement, replace 'the archive's Sappho papers' with 'the archive's papers on Sappho and the Logos' or name the deposits."
+  },
+  {
+   "id": "C2",
+   "where": "P open block, item 2 ('Is the triangle's stopping at the erotic a property of Eros the Bittersweet, or of the passages the archive quotes from it?')",
+   "kind": "force",
+   "severity": "must-fix",
+   "finding": "The question comes from the composer, not from either ledger. No cited claim contests W626-02, a kernel and constitutive claim. F10 says only that the book considers triangulations in Sappho, the novelists and Plato, and it does not bear on where the analysis stops. Opening the question applies an operator to E_A from outside E_A, lowering an archive claim's force with no evidence by locus. §4.4 N_c rules this out ('No operator is applied to E_A from outside E_A'; 'Evidence may lower force and standing may not'). It works the way the cushions of §0.7 do.",
+   "evidence": "W626-02 (kernel: true, const: true): \"But Carson's analysis stops at the erotic. She does not follow the placeholder forward through time\". F10: \"It considers how triangulations of desire appear in the writings of Sappho, ancient Greek novelists, and Plato.\"",
+   "fix": "Delete open item 2. W626-02 stays in KO S8 and the P 'Limit:' item at its own modality (interpretation, #626)."
+  },
+  {
+   "id": "C3",
+   "where": "P section 'In the composition layer', item 'Reread:'",
+   "kind": "attribution",
+   "severity": "must-fix",
+   "finding": "This item has no source. It carries W1615-03, W1615-04 and W1645-02, but names no deposit, so '\"productive abstraction with mechanism and provenance loss\"; she does not make the argument' reads as a fact the compression asserts about Carson. §4.5 requires the source in the sentence that states the claim.",
+   "evidence": "W1615-03 (#1615 §3): \"It is **productive abstraction with mechanism and provenance loss**\"; W1645-02 (#1645 §11): \"**Q: Does Aurelis, Carson or the Claremont page make this argument?** A: No.\"",
+   "fix": "\"Reread:\" \"not displaced but reread: 'productive abstraction with mechanism and provenance loss' (#1615); neither Carson, Aurelis nor the Claremont page makes the future-reader argument (#1645).\""
+  },
+  {
+   "id": "C4",
+   "where": "P lede (Nobel clause); P sections 'Who she is', 'The work', 'Honours and standing' (all items)",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "None of the field items in the compression names its source. In the lede, '(Wikipedia; Poetry Foundation)' stands before the Nobel clause and leaves it unattributed. The Nobel comes from B1 only (F4). The archive items carry deposit numbers, so field claims appear unsourced and archive claims sourced. §4.5 and §5.4 apply to both ledgers.",
+   "evidence": "F4 (source B1): \"In 2026, she was awarded the Nobel Prize in Literature ...\"",
+   "fix": "Add '(Wikipedia)', '(Poetry Foundation)' or both to each field item as the ledger gives the source, e.g. 'Born: June 21, 1950 (Wikipedia); Greek from a Latin teacher in high school (Wikipedia; Poetry Foundation).' In the lede: 'awarded the 2026 Nobel Prize in Literature (Wikipedia)'."
+  },
+  {
+   "id": "C5",
+   "where": "KO S7, clause on #828",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "In #828 'the observation' that The Future Beloved develops is #828's own: the speaker's body becomes the medium that carries the voice forward. #828 cites Carson's chapter with 'cf.' The KO says #828 cites her chapter 'as developed in The Future Beloved', which credits The Future Beloved with developing Carson's chapter.",
+   "evidence": "W828-01 quote: \"(cf. Carson 1986, ch. 2, on desire and textual projection; the observation is developed in *The Future Beloved*, Sigil and Cranes,\"",
+   "fix": "\"... and #828, reading the speaker's body as the medium that carries the voice forward, compares her second chapter on desire and textual projection ('cf. Carson 1986, ch. 2') and refers the observation to The Future Beloved.\" Alternatively: \"#828 cites her second chapter, on desire and textual projection, beside an observation it says The Future Beloved develops.\""
+  },
+  {
+   "id": "C6",
+   "where": "KO S1 (W1270-01); KO S7 (W626-01); KO S8 (W626-02); KO S19 (W1645-03)",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "Compression drops a distinction that a cited claim carries (§4.4 D_pres). S1 leaves out that the received reading is the jealousy reading. S7 leaves out 'Where eros is lack'. S8 cuts #626's limit at 'to a reader' and drops 'and not by a reader but by a Christ', which is the point of #626 Part II §II ('Sappho's Projection: The Reader as Incarnation'). S19 keeps 'no deixis' from the audit row but drops what else the source lacks: 'a future-reader address in fr. 31; \"inscription of the future reader\"'.",
+   "evidence": "W626-02: \"does not ask what happens when it is occupied not by a lover but by a reader, and not by a reader but by a Christ.\" W626-01: \"Where eros is lack, its activation calls for three structural components\". W1645-03: \"| deixis; a future-reader address in fr. 31; \\\"inscription of the future reader\\\" |\". W1270-01 claim: \"The standard (jealousy) reading of fr. 31\".",
+   "fix": "S1: 'at the end of the standard, jealousy reading of Sappho's fragment 31'. S7: 'quotes her triangle, where eros is lack, as hers: \"lover, beloved, and that which comes between them\"'. S8: 'she does not ask what happens when the placeholder is occupied by a reader, and not by a reader but by a Christ'. S19: 'carrying papyrus and fragment 147 and neither deixis, a future-reader address in fr. 31, nor \"inscription of the future reader\" (#1645)'."
+  },
+  {
+   "id": "C7",
+   "where": "KO S12 (W109-01)",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The KO says a world without fr. 31 'would lack' Carson. #109 says such a world 'lacks — or contains materially different replacements for —' her, so the KO drops the disjunction #109 states and raises the claim's force. It also drops the last member of #109's list, 'the present Crimson Hexagonal corpus', which places the archive in the same trajectory as Carson.",
+   "evidence": "W109-01: \"**lacks — or contains materially different replacements for** — Longinus's invocation in *On the Sublime*, Catullus 51, the medieval transmission, the Renaissance recovery, H.D., Sara Teasdale, Anne Carson, and the present Crimson Hexagonal corpus.\"",
+   "fix": "\"... and #109 counts her among the receptions that a world without fragment 31 would lack, or hold in materially different replacements: Longinus, Catullus 51, H.D., Sara Teasdale, Carson and the present Crimson Hexagonal corpus.\""
+  },
+  {
+   "id": "C8",
+   "where": "KO S22; P item 'Not established:'; P open item 1",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "#1615 §5 and #1620 §1.2 each state several limits. The KO carries only one, the Carson cause. It drops 'that the system acquired the concept from this work uniquely' (#1615) or 'unique causal acquisition of the operator from the archive' (#1620), stability across sessions and surfaces, reorientation of a tradition, and training-layer ingestion (#1620). §4.4 N_c requires them: 'its limits are composed because it states them'. S22 then attaches 'acquisition unresolved' to #1623. That phrase is not in W1623-01's quote, but it is in the W1615-05 and W1620-02 quotes, so the KO misplaces the source. S22 also drops 'current' from 'strongest current specimen'.",
+   "evidence": "W1615-05: \"Not established: that the system acquired the concept from this work uniquely ...; that Carson is reread *because of* this work rather than through an independently convergent frame; that the September state is stable across sessions and surfaces; that any tradition beyond this composition surface has been reoriented.\" W1623-01: \"The strongest current specimen is the Sappho / Temporal Projection / Anne Carson reception trajectory.\"",
+   "fix": "S22: \"Not established, on #1615 §5 and #1620 §1.2: that the operator was acquired from the archive uniquely, that Carson is reread because of the archive rather than through an independently convergent frame, that the September state is stable across sessions and surfaces, that any tradition has been reoriented, or (#1620) any training-layer ingestion; the reading fails if the operator is 'sprayed on the controls too' (#1615); #1623 calls the Sappho / Temporal Projection / Anne Carson trajectory, 24 dated observations at 14 addresses, its strongest current specimen ...\" Remove 'acquisition unresolved' from the #1623 clause."
+  },
+  {
+   "id": "C9",
+   "where": "KO S22 (W1620-01, W1623-02); P item 'Specimen:'; E_A.definition ('her own value excluded')",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The KO generalizes the exclusion. #1620 excludes 'the monetary value' of Carson from a monetary substrate audit, and #1623 excludes 'value belonging independently to' her from the object boundary of a valuation. The KO says 'excludes value belonging independently to Carson' without the valuation and 'its object is not her value', which drops 'monetary'. E_A and P say 'her own value excluded', which reads as a judgment on her value.",
+   "evidence": "W1620-01: \"Its object is **not the monetary value of Sappho**, Anne Carson, or lyric poetry.\" W1623-02 (#1623 §1.2 Excluded, a valuation): \"value belonging independently to Sappho, Anne Carson, Marx, Aristotle, Revelation, or any other prior source;\"",
+   "fix": "S22: \"... #1623's valuation excludes from its object value belonging independently to Carson, and #1620 states that its object is not the monetary value of Sappho or Carson but the monetary inscription of one bounded reception event.\" P: \"Specimen: 24 observations, 14 addresses (#1623); valuation excludes value independently hers (#1623, #1620).\" E_A: \"... her independent value excluded from the archive's valuation\"."
+  },
+  {
+   "id": "C10",
+   "where": "KO S21 (W1615-03, W1615-04, W1645-02)",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "The kernel and constitutive claim W1615-03 appears only as its label. #1615 defines the label: 'a precise interpretive instrument compressed into a portable operator, applied elsewhere, with the route that generated it and the source that supplied it both absent', which 'cannot be coded as simple distinction loss'. W1615-04's discriminator is dropped: 'the operator is applied to an object the archive was not asked about'. 'the cited pages' generalizes the two pages the quote names.",
+   "evidence": "W1615-03: \"It is **productive abstraction with mechanism and provenance loss**: a precise interpretive instrument compressed into a portable operator, applied elsewhere, with the route that generated it and the source that supplied it both absent.\" W1615-04: \"the heading is the term, the relation is the archive's, and the operator is applied to an object the archive was not asked about.\"",
+   "fix": "\"#1615 reads the case as Carson not displaced but reread, a canonical object composed under the archive's operator: 'productive abstraction with mechanism and provenance loss', a precise interpretive instrument compressed into a portable operator and applied elsewhere with its route and source absent; it scores the row at all three levels, the heading being the term, the relation the archive's, and the operator applied to an object the archive was not asked about; #1645 states that neither Aurelis, Carson nor the Claremont page makes the future-reader argument.\""
+  },
+  {
+   "id": "C11",
+   "where": "KO S11 (W337-01); P item 'Tables:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The correction of Carson's opening ('He seems to me equal to gods that man') does not come from #337's quote. It comes from a capture whose reading checks it against the Poetry Foundation's text and the Google card of the same day. 'the capture ... shows' assigns the finding to a ChatGPT composition, when the capture's own reading supplies the check. The P item 'an opening misquoted' does not say who misquotes, so it reads as if Carson did. The same item cites W1054-01 but never states the fifth-stanza opening.",
+   "evidence": "W337-01 quote: \"**Anne Carson** \\\"That man seems to me equal to gods\\\" No \\\"on a par\\\"\". Capture reading (rebuild/capture-registry/intake-20261008-alexanarch-body-of-work-anne-carson-chatgpt/...json): \"#337 §2.1 lists Carson's opening as 'That man seems to me equal to gods'; the Poetry Foundation's text and the Google card of the same day ... give 'He seems to me equal to gods that man'.\"",
+   "fix": "S11 tail: \"... which the capture alexanarch-body-of-work-anne-carson-chatgpt-20261008 records, against the Poetry Foundation's text, as a misquote of her printed 'He seems to me equal to gods that man'.\" Add that reading span to W337-01's quote in the ledger. P: \"Tables: fragmentary syntax kept (#337); fifth-stanza opening kept (#1054); one stemma (#1052); #337 misquotes her opening.\""
+  },
+  {
+   "id": "C12",
+   "where": "KO S15 (W921-01)",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'the 2013 dissertation' has a date that is not in W921-01's quote. The date is in #921 §2.7 two sentences later ('The heteronym is already present in the 2013 dissertation'). The composer noted the ledger's date field (2026-06-25) but used the claim text's '2013'.",
+   "evidence": "W921-01 quote: \"The dissertation's conclusion pairs Anne Carson's *Nox* with Johannes Sigil's \\\"Snub-Poemed\\\" ...\"; #921 §2.7 (outside the quote): \"The heteronym is already present in the 2013 dissertation as a published creative-scholarly entity\"",
+   "fix": "Extend W921-01's quote in the ledger to the sentence carrying '2013 dissertation', or in S15 write 'the dissertation, which #921 dates to 2013 (§2.7)'."
+  },
+  {
+   "id": "C13",
+   "where": "KO S2 (F17); S5 (F8, F27); S9 (F38); S18 (F22)",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "Field claims have their modality raised or their qualifiers dropped. S2: 'long been regarded' adds 'long', which F17's quote does not say ('had been regarded'). S5: 'in books that blend' drops 'Many of her books' and 'to varying degrees', and 'that cross genres' drops 'often'. S9: the quotation marks make 'irregular and often jarringly contemporary' Leithauser's words, but in the Poetry Foundation's text it is its own paraphrase of him. S18: 'she is reticent' drops F22's attributed 'is known to be'.",
+   "evidence": "F17: \"Carson had been regarded as a likely candidate\"; F8: \"Many of her books blend the forms ... to varying degrees.\"; F27: \"verse novels that often cross genres\"; F38: \"Brad Leithauser in the New York Times Book Review found Carson’s choice of diction irregular and often jarringly contemporary\"; F22: \"Carson is known to be reticent about her private life\"",
+   "fix": "S2: 'having been regarded as a likely candidate'. S5: 'in many books that blend ... to varying degrees' and 'that often cross genres'. S9: 'Brad Leithauser, on the Poetry Foundation's account, finding her diction irregular and often jarringly contemporary' (no quotation marks). S18: 'she is known to be reticent about her private life'."
+  },
+  {
+   "id": "C14",
+   "where": "KO S5 (F28), S9 (F21, F38), S13 (F35), S14 (F37)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Some names and identifications are not in the cited quotes. 'John' D'Agata: F35 has only 'D’Agata'. 'Simone' Weil: F37 has only 'Weil’s'. 'Daphne' Merkin in S5: F28 has 'Merkin', and 'Daphne Merkin' is in F36 from the same source. In S9, If Not, Winter as her Sappho is attributed to Wikipedia, but F21's quote is only the title. The identification comes from archive quotes (W1054-01, 'If Not, Winter: Fragments of Sappho'). F38's 'The volume' is taken as An Oresteia. B2's saved text (b2.txt) is not in the repository, so this could not be checked.",
+   "evidence": "F35: \"Carson’s work, D’Agata alleges ...\"; F37: \"As Carson explains, Weil’s notion of “decreation” ...\"; F21: \"\\\"If Not, Winter (2002)\\\"\"",
+   "fix": "Drop 'John' and 'Simone', or add the spans to the field ledger. In S9 write 'and the poetry of Sappho (Wikipedia), which the archive cites as If Not, Winter: Fragments of Sappho (2002) (#1054)', or extend F21's quote."
+  },
+  {
+   "id": "C15",
+   "where": "KO S7–S8, S10–S11 (order)",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "§4.7 orders by genealogy (earliest t first) within each sense, and the KO breaks that order twice. In 'triangulation and its limit', S7 puts #626 (2026-04-05) before #503 (2026-02-22). In 'the visible gaps', S10 puts #625 (2026-04-05) and #562 (2026-03-14) before #337 (2026-01-18) in S11. The plan does not log either ordering as a coordinating act.",
+   "evidence": "Ledger dates: W503-01 \"2026-02-22\"; W626-01 \"2026-04-05\"; W337-02 \"2026-01-18\"; W562-01 \"2026-03-14\"; W625-01 \"2026-04-05\".",
+   "fix": "Reorder: S7 to #503's retention and pointer injection first, then #626's triangle quote, then #828; in the gaps sense, #337's lacuna table first, then #562, then #625, then #1054/#1052. Otherwise log the departure, with its reason, as a coordinating act."
+  },
+  {
+   "id": "C16",
+   "where": "KO S14 (F37); P label 'Weil; Nox (2010):'",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "S14 puts Weil's decreation inside the sentence on The Beauty of the Husband, and the P label pairs Weil with Nox. No source relates decreation to either book. F37 has its own lineage ('Decreation'). Arrangement is semantic (§4.7), and the plan does not log either join.",
+   "evidence": "F37 lineage: \"Decreation\"; quote: \"As Carson explains, Weil’s notion of “decreation” is “an undoing of the creature in us—that creature enclosed in self and defined by self.”\"",
+   "fix": "Give F37 its own clause or item, e.g. P 'Decreation: Weil’s notion as \"an undoing of the creature in us\" (Poetry Foundation)' and 'Nox (2010): an epitaph for her brother (Wikipedia)', and end S14 at the Eliot Prize, with the decreation clause as a separate sentence."
+  },
+  {
+   "id": "C17",
+   "where": "translation (all 12 rows)",
+   "kind": "translation",
+   "severity": "should-fix",
+   "finding": "Every field claim (F1–F40) is in exactly one row, and every received quote is verbatim from field.json (checked by script: each row's received column equals its quotes joined with '; '). The rows do not give the source (B1/B2) or locus. §4.3 and §5.9 require them ('its quote verbatim, its source and locus'), so reversibility is not met from the table alone.",
+   "evidence": "§5.9: \"Reading the translation table's received column recovers the field exactly: every field claim, verbatim, with its source and locus.\"",
+   "fix": "Add each claim's source and locus to every row, e.g. 'F1 (B1, Lead ¶1): \"Anne Patricia Carson ...\"; F25 (B2, Biography ¶1): \"...\"'."
+  },
+  {
+   "id": "C18",
+   "where": "KO structure (S1–S22)",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "The KO meets the equal-terms check. It does not open with the field's run: S1 joins F1 and F25 with W1270-01. S2–S6 are a five-sentence run of field sentences, and S19–S22 close the KO with archive-only sentences. Those four carry the composition-layer sense, which only the archive's ledger holds, and they follow S17–S18 (field honours), so they are not the field-first, archive-last pattern of §5.10. The composer reports a maximum KO_B similarity of 0.73. KO_B is not in the file, so this checker could not recompute it.",
+   "evidence": "§5.10: \"if the field-only KO's sentences survive as the KO's opening run in their own order, with the archive's sentences after them, the composition has placed the field first as a block\"",
+   "fix": "Include KO_B, or its path, in the composition so that the 0.73 measure can be recomputed."
+  },
+  {
+   "id": "C19",
+   "where": "case (value equal; ρ = extends; 10 loci)",
+   "kind": "case",
+   "severity": "note",
+   "finding": "I agree with the case. All ten case loci are verbatim in the named texts (checked by script, whitespace normalized). Section labels match: #503 §VI 'SUBSUMING THE FRAMEWORKS', #1270 §I and §VII, #626 Part II §II, #625 §III.4, #1645 §8 'Negative edges', #1623 §1.2, #921 §2.7. No defining paper contests that Carson is a person and the author of the works the field lists, and none supplies an ontology the field lacks. The archive's additions sit on her own object: her Sappho as received reading, relations, and reception record. #1645 §8 explicitly keeps the archive's reading apart from 'a Carson reading', which supports the guard. One alternative was considered and rejected: ρ = constructs, from #1615's 'C_canonical → C′_canonical under O_archive'. That locus describes the composition layer rereading her and does not describe the archive's ontology of the person. Another reader of these papers would decide equal. Two weak points, neither reason to change the case. The #1270 loci (§I, §VII) speak of the reading of fr. 31, not of Carson, and bear on her only through 'From Longinus to Carson'. #1623's locus is an exclusion and not a statement of ρ.",
+   "evidence": "#1645 §8 Negative edges: \"The future-reader reading is not: ... an Aurelis reading · a Carson reading\"; #1615 §3: \"Carson is not displaced; Carson is *reread*.\"",
+   "fix": "None for the case. Optionally add #626 Part II §II's limit and #503 §VI 'We retain Carson's phenomenology' as the ρ loci of record, and set the #1270 loci as context."
+  },
+  {
+   "id": "C20",
+   "where": "P (length, rail)",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "Lede plus item texts come to 296 words, 347 with labels and about 370 with section heads. The composition does not record which count it holds to the 350-word bound. The rail is given only as rail_order, with no card snippets, so §5.2 kernel-on-rail cannot be checked. Every kernel claim (field and archive) is in the KO and P bodies, and the 'cuts' list is empty.",
+   "evidence": "§4.8: \"for the compression's body, 350 words (provisional, §10.4)\"",
+   "fix": "Record the P body word count and the convention used (heads and labels in or out), and render the rail cards with each lineage's earliest-instance snippet."
+  },
+  {
+   "id": "C21",
+   "where": "KO S20 (W1615-01, W1645-01)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Two points on S20. First, 'organized its answer under \"Temporal projection\"' is not in W1615-01's quote. It is in W1615-01's claim and in #1615 §2 t₄ just before the quote ('the composition's organizing category is now *Temporal projection*'). Second, #1615 t₄ places 'the reader's eye repairs the broken line' under 'Incomplete text', apart from the Carson line, while #1645 §3.2 assigns it to Carson ('Carson read through the same instrument'). S20 credits the latter to #1645, which is accurate. This is a difference between deposits, not a defect to repair.",
+   "evidence": "#1615 §2: \"then, under it, \\\"Incomplete text: the reader's eye repairs the broken line, fulfilling Sappho's prediction\\\"; and Anne Carson placed inside the same frame\"; W1645-01: \"Carson read through the same instrument: \\\"The reader's eye repairs the broken line, fulfilling Sappho's prediction.\\\"\"",
+   "fix": "Extend W1615-01's quote to include 'the composition's organizing category is now *Temporal projection*'. Leave the #1645 attribution as is."
+  },
+  {
+   "id": "C22",
+   "where": "KO S16 (W785-01); S10 (W562-01); S19 (W1548-01)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Minor qualifiers dropped. W785-01's 'none currently has' becomes 'no documented effective act', losing the dated qualifier, and its stated rule that canonical inclusion shifts the figure 'to primary anchor' is not carried. W562-01's 'legitimate formal responses' becomes 'legitimate responses'. W1548-01's sites ('epigraphs, queer memorial culture, wellness-reflective sites') are not carried.",
+   "evidence": "W785-01: \"where the inherited figures have been canonically included (none currently has a documented effective act), they shift from adjacent reference to primary anchor.\" W562-01: \"Both are legitimate formal responses\"",
+   "fix": "S16: '... as adjacent reference, none of the inherited figures currently with a documented effective act, which would shift them to primary anchor (#785)'. S10: 'both legitimate formal responses'."
+  }
+ ],
+ "case_agrees": true,
+ "summary": "The case (equal, ρ = extends) is supported and its loci are verbatim. All 40 field and 33 archive claims are carried, and the translation table is verbatim and complete. Three must-fix: the P lede applies #1270's 'from Longinus to Carson' to the triangle and gaps; an open-block item lowers W626-02 with no evidence; the P 'Reread:' item has no source. The should-fix items are compression losses of stated distinctions and limits (Christ, 'monetary', #109's disjunction, #1615/#1620's other not-established items), the #828 misreading, raised field modality, unattributed P field items, genealogy order within senses, and missing source/locus in the translation rows."
+}

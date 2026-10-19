@@ -1,0 +1,287 @@
+{
+ "row": "sappho-31",
+ "checker": "Claude (Opus 5.5) independent checker subagent, v0.9 check, 2026-10-18",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "KO sentence 27; P open item 3 (rests_on A1048-01)",
+   "kind": "force",
+   "severity": "must-fix",
+   "finding": "#1048's 'compression signature' characterization is composed as one side of a live archive division ('The archive is divided on his fourth stanza'). #1049, a defining paper and the next erratum in the same chain, corrects exactly that characterization and marks it superseded, while keeping #1048's positional conclusion. The ledger carries the correction by locus (A1049-02 'Catullus 4 is not lossy'; A1049-01's claim text begins 'Correction:'). Under §4.4 N_c, a contradiction carried by locus lowers the force of the claim it bears on, and §4.7 puts the coordinating act ('divided') under reverse entailment. A correction is not a division. The real division is #1601 against #1049 (and #1048's position).",
+   "evidence": "#1049 §8: \"transform-structure characterization at §3 (superseded here)\"; §6: \"The corrected characterization is that Catullus 51's fourth stanza is an inversion, not a compression\"; §5: \"This formulation holds\" (the positional formulation). Ledger A1049-02 quote: \"Catullus 4 is not lossy. It is a **structurally precise operator inversion** of Sappho 5.\"",
+   "fix": "Rewrite S27: \"#576 reads poem 51 as a lossy compression that loses the aorist; #1048 names Catullus's fourth stanza the surviving signature of Sappho's lost fifth, and #1049, correcting #1048's 'compression', holds it a structurally precise operator inversion of Sappho's fifth, after one close stanza and a lossy three-to-two compression; #861 reads the otium stanza as replacing the fifth stanza's position; #1601 calls it a fourth stanza about idleness that has no Greek counterpart; #1572 aligns the two poems at C = 0.688, slot by slot, and Catullus is not Sappho.\" In open item 3, record A1048-01 as corrected by A1049-02, leaving the open question between #1049/#861 and #1601."
+  },
+  {
+   "id": "C2",
+   "where": "KO sentence 23 (claim A1458-08); P open item 4 (rests_on A1458-08, would_resolve 'with Porter read before any priority claim (#1458)')",
+   "kind": "entailment",
+   "severity": "must-fix",
+   "finding": "A1458-08 does not bear on the sentence. #1458's 'Two searches are not a literature review' and its Porter condition concern priority for #1458's own claim, that Peri Hypsous contains a theory of transmissional inscription. They do not concern κῆνος as a deictic mechanism. The KO attaches them to #1548's κῆνος sweep, and the open block makes Porter (a scholar of the Longinian sublime) the resolver of the κῆνος priority question.",
+   "evidence": "#1458 §XIV: \"That nobody has read it this way. Two searches found the standard five-sources framing, a large independent literature on μίμησις and ζήλωσις, and Porter's *The Sublime in Antiquity* reading Longinus as 'a key to understanding this inheritance' ... **Two searches are not a literature review.**\" / \"Before any priority claim: **Porter, *The Sublime in Antiquity* (2016), read directly** — he is the likeliest person to have said this\"",
+   "fix": "Remove the parenthesis from S23 and A1458-08 from its claims. Add it to S25: \"... #1458 states it as a fact about the text that On the Sublime contains a theory of transmissional inscription ... and holds priority for that reading open: two searches are not a literature review, and Porter is to be read before any priority claim.\" In open item 4, drop A1458-08 and the Porter clause (would_resolve: \"the sweep #1548 names as pending\"). Add an open item: \"Has Peri Hypsous been read as a theory of transmissional inscription before #1458?\" rests_on A1458-01, A1458-08; modality self-description (priority held open); would_resolve \"Porter, The Sublime in Antiquity, read directly (#1458)\"."
+  },
+  {
+   "id": "C3",
+   "where": "P section 'Reception', item 'Longinus:'",
+   "kind": "force",
+   "severity": "must-fix",
+   "finding": "'read as a theory of transmissional inscription (#1458)' lowers a documented kernel claim to an interpretation. #1458 states the point as a fact about the text, and KO S25 composes it that way. This is the cushion §4.4 N_c forbids: an archive claim lowered without adverse evidence.",
+   "evidence": "A1458-01 (documented, kernel): \"**That the treatise contains a theory of transmissional inscription is a fact about the text.**\"",
+   "fix": "\"quoted it for its emotion; contains a theory of transmissional inscription, a fact about the text (#1458).\""
+  },
+  {
+   "id": "C4",
+   "where": "P section 'The widest claim, graded', item 'Limits:'",
+   "kind": "entailment",
+   "severity": "must-fix",
+   "finding": "'no linear transmission to Revelation (#828)' turns #828's non-claim into an asserted denial. #828 declines to claim direct linear transmission; it does not deny it. The force is raised, and the kernel limit (A828-02) is misstated.",
+   "evidence": "A828-02 (kernel): \"The note does not claim a direct linear transmission from Sappho to Revelation.\"",
+   "fix": "\"Limits: direct linear transmission to Revelation not claimed (#828); pan-Sapphism the named failure mode (#1486).\""
+  },
+  {
+   "id": "C5",
+   "where": "P section 'The edge', item 'Hanging line:'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'six instruments found what they were built to find (#1482)' misstates the count. In #1482, six documents applied the instruments.",
+   "evidence": "A1482-01: \"Six documents used those instruments on Sappho 31's hanging line and returned, each time, the reading the instruments were built to produce. The seventh reversed it.\"",
+   "fix": "\"... six documents' damage instruments returned what they were built to find; the seventh reversed it (#1482).\""
+  },
+  {
+   "id": "C6",
+   "where": "P lede",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "Two clauses go beyond the cited claims. (a) 'her own body fail': F39 says the speaker focuses on her 'intense contradictory bodily emotions'. The collapse wording is A1270-04's (\"jealousy triggers physiological collapse\"), which the lede does not cite. (b) 'long read as jealousy and as often denied': 'as often' asserts a parity of frequency that F16/F17 do not state ('many critics deny').",
+   "evidence": "F17: \"Though this is still a popular interpretation of the poem, many critics deny that the fragment is about jealousy at all.\" F39: \"focuses in detail on herself and her own intense contradictory bodily emotions of jealousy and desire.\"",
+   "fix": "\"... a speaker watches a man seated with a woman and turns to her own body's contradictory emotions; long read as jealousy and by many critics denied, and argued by #1270 to address, through κῆνος, the future reader who sits face to face with the inscribed text.\" (Or keep 'fail' and add A1270-04 to the claims.)"
+  },
+  {
+   "id": "C7",
+   "where": "P items 'Names:', 'Form:', 'That man:' (contrast figure), and the lede's field clauses",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "Field claims in the compression carry no source in the line. Archive claims in the same lines are always attributed (#n). §4.5 requires the source in the sentence that states the claim, for both ledgers.",
+   "evidence": "§4.5: \"Every composed claim carries its source in the sentence that states it.\"",
+   "fix": "Names: \"phainetai moi; Ode to Anactoria, on a conjecture (Wikipedia).\" Form: \"Sapphic stanzas, Aeolic (Wikipedia); four stanzas and a line (Wikipedia), the ending seemingly missing (Norton).\" That man: \"a contrast figure (Wikipedia); a set-up (Winkler); ...\". Lede: \"... by the Archaic Greek poet Sappho of Lesbos (Wikipedia) ...\"."
+  },
+  {
+   "id": "C8",
+   "where": "KO sentence 22, clause '#1270 ... proposes fr. 31 as the foundational text of lyric self-archiving'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "A1270-03 is a stipulation (kernel K3, M_src stipulation). #1270 states it outright ('emerges as'). 'proposes' lowers it, while E_A and P ('fr. 31 the founding text of lyric self-archiving (#1270)') carry it at full force.",
+   "evidence": "A1270-03 quote: \"Fragment 31 thus emerges as the foundational text of lyric self-archiving—a meditation on how voice outlasts the body that speaks it.\"",
+   "fix": "\"#1270 (Rebekah Cranes, 2026-01-09) holds fr. 31 the foundational text of lyric self-archiving, a meditation on how voice outlasts the body that speaks it, a term #1645 records as Cranes's coinage ...\""
+  },
+  {
+   "id": "C9",
+   "where": "KO sentence 9, clause 'the Cranes edition prints a stanza in which Kypris saves beggar and king and the song lives in letters (#1309)'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "§4.4 O_leg: opaque (poetic) material is quoted, never paraphrased into legibility. The reconstructed Greek stanza is given only as an English paraphrase.",
+   "evidence": "A1309-01 quote: \"ἀλλὰ πᾶν τόλματον· ἐπεί σε, Κύπρι, καὶ πένητα καὶ βασιλῆα σώζεις· καὶ πόλιν ὀλίγαν ὑπερέχεις ἄτας· μολπὰ γράμμασι ζώοι.\"",
+   "fix": "\"... the Cranes edition prints the stanza as ἀλλὰ πᾶν τόλματον· ἐπεί σε, Κύπρι, καὶ πένητα καὶ βασιλῆα σώζεις· καὶ πόλιν ὀλίγαν ὑπερέχεις ἄτας· μολπὰ γράμμασι ζώοι (#1309) ...\""
+  },
+  {
+   "id": "C10",
+   "where": "KO sentence 16, clause 'George Devereux suggested in 1970 that the symptoms are those of an anxiety attack (Wikipedia)'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "Devereux's claim, as F22 states it, is that Sappho describes a seizure, and the anxiety-attack symptoms are his evidence. The KO drops the claim and keeps only the evidence. KO_B kept it.",
+   "evidence": "F22: \"George Devereux suggested that what Sappho is describing here is a seizure, pointing that the symptoms listed in the fragment are the same symptoms of an anxiety attack.\"",
+   "fix": "\"George Devereux suggested in 1970 that Sappho is describing a seizure, its symptoms those of an anxiety attack (Wikipedia); ...\""
+  },
+  {
+   "id": "C11",
+   "where": "KO sentence 13, clause '#1478 holds that the poem completes intentionally at the hanging line'",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "A1478-01 is kernel. Its second limb (the dialect seam held as a real, measurable, physical property, not dissolved into abstract completion) is dropped. That limb is the distinction that ties #1478 to #1474's count (§4.4 D_pres: compression may not remove the distinction a claim carries).",
+   "evidence": "A1478-01 quote: \"the poem completes intentionally at the hanging line, and the dialect seam is held as a real, measurable, physical property rather than dissolved into abstract completion.\"",
+   "fix": "\"#1478 holds that the poem completes intentionally at the hanging line, the dialect seam held as a real, measurable, physical property, without claiming authorial intention; ...\""
+  },
+  {
+   "id": "C12",
+   "where": "KO sentence 25, clause 'it marks its reconstruction of the treatise's lost ending experimental, not recovered wording'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'experimental' is in neither the cited quote nor #1458's text. #1458 calls it a 'constrained reconstruction' and marks its six periods not recovered wording.",
+   "evidence": "A1458-05 quote: \"The six Greek periods at §X. **These are not recovered wording.**\"; #1458 title: \"... with a Constrained Reconstruction of Its Lost Ending\"",
+   "fix": "\"... it marks the six Greek periods of its constrained reconstruction of the treatise's lost ending not recovered wording ...\""
+  },
+  {
+   "id": "C13",
+   "where": "KO sentence 32, clause '#1533 freezes a Qur'anic material-presence test before any scan'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "'before any scan' is the ledger's claim text, not the quote, and #1533's text says otherwise: it discloses a prior exploratory pass and quarantines the five verses it surfaced. What the protocol freezes is before the discovery scan. That disclosed limit is a limit the archive states, so N_c composes it. Ledger defect: A1533-01's claim text overstates.",
+   "evidence": "#1533 header: \"Status: FROZEN at deposit; the Qurʾanic discovery scan has not begun\"; §0: \"A prior exploratory pass over the Qurʾan, made in working exchange before this protocol existed, surfaced Q 5:83, 7:143, 8:2, 39:23, and 41:20 ... Those five verses therefore cannot count as discoveries under any outcome.\"",
+   "fix": "\"#1533 freezes a Qur'anic material-presence test before its discovery scan, assuming neither borrowing nor route.\" Report the claim-text mismatch for the ledger audit. (The quarantine is outside the ledger quote; add it only if the auditor extends the quote.)"
+  },
+  {
+   "id": "C14",
+   "where": "KO sentences 16, 28, 34 against 35 (σ_S)",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "Dependency order (§4.7): σ_S is invoked before it is defined. S28 has '#1532 ... requiring no acceptance of the archive's σ_S interpretation', and S34 has 'resolve through σ_S' and 'the first σ_S activation', but the operator is first defined in S35. S16's #576 reading (A576-02, whose quote says the three-phase structure 'IS σ_S executing') stands in the same sense (somatic catalogue to text) and also precedes the definition. Moving S35 also breaks up the closing archive-only block (S34–36).",
+   "evidence": "A38-01: \"σ_S :: Body → Text ... **Source:** Sappho, Fragment 31 ... The operator that transforms somatic experience into textual form through irreversible dissolution.\" A576-02: \"Sappho 31 has a three-phase aspectual structure that IS σ_S executing:\"",
+   "fix": "Move S35's σ_S definition (A38-01, A283-02) into paragraph 3 beside S16 (#1270's voice becoming text), and compose #576's reading as σ_S executing there. Then S28 and S34 follow the definition."
+  },
+  {
+   "id": "C15",
+   "where": "KO sentences 21–24 (sense: κῆνος as the future reader)",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "Genealogy within the sense (§4.7, earliest t first) is broken. S23 (#1548, 2026-08-26; #1645, 2026-09-28; #1646) comes before S24's instances of the same lineage, which are all earlier: #281 2026-01-09, #288 2026-01-10, #313 2026-01-14, #306 2026-01-13, #557 2026-03-12, #1167 2026-03-16, #625 2026-04-05, #65 2026-04-18, #929 2026-06-27. The September entity packet thus stands before the January deposits it gathers.",
+   "evidence": "§4.7: \"In the equal-terms case, the entity's dependency order with the field's and the archive's claims ordered together, by genealogy within each sense ... Genealogy (earliest t first)\"",
+   "fix": "Order S21 (#991, #134), S22 (#1270), then S24 (the Jan–Jun 2026 recurrences), then S23 (#1548's sweep, #1645/#1646's joining with fr. 147). Svenbro (S20, 1988) stays first."
+  },
+  {
+   "id": "C16",
+   "where": "P open block, item 5 'When was it written?'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "The modality 'contradictory across them' treats F1, A1484-12 and F36 as three rival dates. F1 places the poet in the Archaic period, which contains the early sixth century (A1484-12). The only contradiction is the fifth century B.C. (F36) against the others. The archive's own dates in carried quotes (A283-01 'fl. c. 630–570 BCE'; A1112-01 '~600 BCE') bear on the question and are not composed in S3 or here (T_lib).",
+   "evidence": "F1: \"the Archaic Greek poet Sappho\"; A1484-12: \"a Lesbian lyric of the early sixth century\"; F36: \"written in the fifth century B.C.\"; A283-01: \"Sappho of Lesbos (fl. c. 630–570 BCE)\"; A1112-01: \"Sappho (Fragment 31, ~600 BCE)\"",
+   "fix": "Open item 5: rests_on F1, A1484-12, A283-01, A1112-01, F36; modality \"documented in each source; F36 contradicts the rest\"; would_resolve \"F36's ground for the fifth century B.C.\" In S3, add \"#283 gives the poet's floruit as c. 630–570 BCE and #1112 the poem as ~600 BCE\"."
+  },
+  {
+   "id": "C17",
+   "where": "KO sentence 33, clause 'a video reads it aloud as 'Read Ancient Greek: Sappho 31' (YouTube, title only)'",
+   "kind": "entailment",
+   "severity": "should-fix",
+   "finding": "F49 is a card title, not fetched (B6: 'title only (rule)'). 'reads it aloud' states content the experiment does not have, and the open block correctly lists it as an opacity.",
+   "evidence": "F49 quote: \"\\\"Read Ancient Greek: Sappho 31\\\"\"; B6 fetched: \"not fetched: YouTube, title only (rule)\"",
+   "fix": "\"... and a video is titled 'Read Ancient Greek: Sappho 31' (YouTube, title only).\""
+  },
+  {
+   "id": "C18",
+   "where": "KO structure overall (§4.1, §5.10)",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "No opening-run breach. S1 composes F1 with A1485-02, A1504-01 and A1270-01, and the KO does not open with KO_B's run (checked against objects.KO_B: KO_B s1 = F1+F2+F3 and s2 = F4+F23+F24 are recomposed, not carried as an opening block). Within paragraphs, though, field claims precede archive claims block-wise in every shared sense (S6–8 then S9–13; S14–15 then S16; S17–19 then S20–24; S26 and S28 field-first), and the KO closes on an archive-only block (S34–36). Genealogy can justify both, since the field's scholarship predates the archive's, but the pattern is §0.7's at paragraph grain, and #1645 names as its engineered target that compositions 'stop placing the archive's sources last while composing from them'.",
+   "evidence": "#1645 §1 Confidence registers: \"Engineered target. That compositions ... attribute the mechanism, and stop placing the archive's sources last while composing from them.\"",
+   "fix": "Record in the conflict/arrangement log that within-sense order is by genealogy (field scholarship earlier), so the block pattern is logged as arranged, not incidental. C14 (moving the σ_S definition) breaks up the closing block."
+  },
+  {
+   "id": "C19",
+   "where": "KO sentence 12, clause '#1458 reads the poem as establishing three positions and vacating one'",
+   "kind": "force",
+   "severity": "note",
+   "finding": "#1474 §VI-bis corrects #1458 at three points and keeps the aperture reading but not its extent. A1458-02 is composed without that limit. The ledger does not carry the §VI-bis loci, so this is a ledger gap (the composer reported it) more than a composition breach. 'three positions' is not in the ledger quote but is in #1458 §V.",
+   "evidence": "#1474 §VI-bis: \"The aperture reading survives; its extent does not.\"; #1458 §V: \"Sappho 31 establishes three positions in eleven words and then empties one.\"",
+   "fix": "Leave the sentence. Have the ledger audit add #1474 §VI-bis as a claim bearing on A1458-02, then compose \"... the aperture surviving, its extent corrected by #1474\"."
+  },
+  {
+   "id": "C20",
+   "where": "KO sentence 22, final clause; KO sentence 36",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Both clauses go past their ledger quotes but are entailed by #1054's text (a defining paper). S22's 'claims neither that no reader ever experienced the poem as jealousy' is in #1054's non-claims, and the quote carries only the exhaustiveness limb. S36's 'cited the future-reader scholarship as its source for the jealousy reading', 'authority conscription' is in #1054's failure-event section, and the quote stops at 'surfaced Sharks's own Reading B scholarship'.",
+   "evidence": "#1054: \"Does not claim that no reader has ever experienced Sappho 31 as a jealousy lyric.\"; \"surfaced Sharks's own Reading B scholarship ... as a cited source, then delivered a composition-layer summary asserting the jealousy reading\"",
+   "fix": "No text change. Ledger audit: extend A1054-03 and A1054-02 quotes to the sentences that carry these limbs."
+  },
+  {
+   "id": "C21",
+   "where": "KO sentences 4, 20, 22, 33 (names/dates in claim text, not quote)",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Several specifics come from ledger claim texts or the defining papers, not from the cited quotes. Each checks out against the deposit text: 'Parisinus graecus 2036' for #1052 (in #1052's text, not its quote); 'Jesper' Svenbro (#1548 §5); Cranes's 'coinage' (#1645 §6 table / FAQ question); '2004' for xvi. a transfiguration (#268's registry title, 'Provenance Node: xvi. a transfiguration (2004)'). Nothing is unsupported, but the reverse-entailment audit should be pointed to the loci.",
+   "evidence": "#1052 §1: \"a single manuscript stemma: Codex Parisinus Graecus 2036 (P)\"; #1548: \"Jesper Svenbro, *Phrasikleia* ...\"; #1645: \"Q: Who coined 'inscription of the future reader' and 'lyric self-archiving'?\"",
+   "fix": "No text change. Ledger audit: extend the quotes, or record the supplementary loci in the plan."
+  },
+  {
+   "id": "C22",
+   "where": "KO sentence 7, clause 'Armand D'Angour's reconstruction suggests the original may have had up to eight stanzas'",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "F7's carrier (Wikipedia) is implied only by the first clause's subject. The second clause names D'Angour but not the source that reports him.",
+   "evidence": "F7 (B1, Preservation): \"A reconstruction of the poem by classicist Armand D'Angour suggests that the original poem may have had up to 8 stanzas.\"",
+   "fix": "\"... and, by Wikipedia's account, Armand D'Angour's reconstruction suggests ...\""
+  },
+  {
+   "id": "C23",
+   "where": "KO sentence 2, clause 'Norton's anthology calls it unambiguously a poem about same-sex desire'",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "F43's locus is Norton's 'Critical thinking questions'. The excerpt may be a question's premise, not the headnote's assertion. The field was extracted by HTTP excerpt and is unaudited, so the composition inherits the uncertainty.",
+   "evidence": "F43: locus \"Critical thinking questions\", quote \"this is unambiguously a poem about same-sex desire.\"",
+   "fix": "Check the full B4 sentence at audit. If it is a question's premise, compose \"Norton's study questions put it as unambiguously ...\"."
+  },
+  {
+   "id": "C24",
+   "where": "KO sentence 11, clause 'it argues those words Longinus's as material and Sappho's as form'",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Grammar: the verb lacks its complement, and 'while #503 ...' sets up a contrast that no source states (#503's φαίνομ' truncation is a different locus, line 16, from the six disputed words). Under §4.7 the coordinating act is the composer's.",
+   "evidence": "A503-02: \"The poem's truncation mid-syntax (φαίνομ᾽—) is not manuscript damage.\"",
+   "fix": "\"... it argues those words to be Longinus's as material and Sappho's as form, as #1484 holds; and #503 holds the truncation at φαίνομ' to be not manuscript damage.\""
+  },
+  {
+   "id": "C25",
+   "where": "KO sentence 29, clause '#1486 reports a blind-verified structural mapping'",
+   "kind": "force",
+   "severity": "note",
+   "finding": "#1486 heads the claim 'Established.' (documented). 'reports' is slightly weaker than the source's own verb.",
+   "evidence": "A1486-01: \"**Established.** A specified, executable, blind-verified structural mapping between Sappho 31 and Philo ...\"",
+   "fix": "\"#1486 holds established a blind-verified structural mapping to Philo, Heres 249–266, and names ...\""
+  },
+  {
+   "id": "C26",
+   "where": "P open block, item 2, would_resolve",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "'would add a second transmitted object' is the composer's inference. #1484 says only that a papyrus continuation refutes nothing claimed about the transmitted object.",
+   "evidence": "A1484-11: \"A papyrus continuation of the poem, if one surfaces, refutes nothing claimed here about the transmitted object\"",
+   "fix": "\"no external answer, by #1474 (continuous prose); by #1484, a papyrus continuation would refute nothing claimed about the transmitted object\""
+  },
+  {
+   "id": "C27",
+   "where": "case.statement",
+   "kind": "case",
+   "severity": "note",
+   "finding": "Two phrases go past their loci. 'a deictic mechanism the archive calls \"the extension\"': in #1645 §1, 'The extension.' heads the whole future-reader reading set against 'Standard discourse', not the deictic mechanism alone. '#1458 calls its strongest test a convergence': 'strongest' is not in #1458, whose quote concerns its blind Philo–Slavonic test. Neither changes the reading.",
+   "evidence": "#1645 §1: \"**Standard discourse.** ... **The extension.** In fr. 31, the distal demonstrative κῆνος ...\"; #1458 §XI: \"That is a convergence, not a chain of custody.\"",
+   "fix": "\"... the future-reader reading, which #1645 heads 'The extension.' beside 'Standard discourse.' ...\"; \"... #1458 calls its blind test a convergence\"."
+  },
+  {
+   "id": "C28",
+   "where": "case (equal, ρ = extends) — assessment",
+   "kind": "case",
+   "severity": "note",
+   "finding": "Agree. All twelve loci are verbatim in the named texts. #1645 sets its reading as 'The extension.' beside 'Standard discourse.', and it explicitly leaves the jealousy reading's history and Lardinois's reperformance reading standing. #1270 relocates the erotic content rather than replacing it. #1548 places Svenbro (1988) in the field as the antecedent for a future reader inside fr. 31, so §0.10's 'however marginally' rules out the witness case. The strongest counter-reading is #1054 ('The corrective is not \"both readings are valid.\"') together with #1534's 'not a poem in the literary sense'. #1054 contests the referent of κῆνος, a claim about the same poem, and itself disclaims exhaustiveness. #1534 is not a defining paper. So both go under P_coh in one claim space and do not deny the field's entity. A reader of the same nine papers would decide the same. #1645 also makes the Svenbro point itself ('the deixis-mechanism claim is indexical, not allegorical' in #1548), which sharpens the extension without making it a different ontology.",
+   "evidence": "#1645 §11: \"Q: Does the reading deny the jealousy reading's history or Lardinois's reperformance reading? A: No. Both stand as readings with their own sources.\"; #1054: \"Does not claim that Reading B is exhaustive.\"",
+   "fix": "None."
+  },
+  {
+   "id": "C29",
+   "where": "translation (23 rows)",
+   "kind": "translation",
+   "severity": "note",
+   "finding": "Passes. Each of F1–F49 is in exactly one row, none twice, and each 'received' string equals the '; '-joined verbatim field.json quotes (checked by script). All archive_claims ids exist in the ledger. In the equal-terms case every row is 'untranslated: composed as received', as §4.3 specifies.",
+   "evidence": "datasets/negative-of-the-negative/v2/rows/sappho-31.json field_claims F1–F49",
+   "fix": "None."
+  },
+  {
+   "id": "C30",
+   "where": "coverage (KO ∪ P)",
+   "kind": "coverage",
+   "severity": "note",
+   "finding": "Every field claim (49), every archive claim (154) and every kernel claim (83) is cited in the KO; cuts is empty; no unknown ids. Senses dropped inside carried claims are listed above (C10, C11, C16). The rail carries all archive lineages, with '(contested within)' suffixes on four names, and 'Date' appears twice for two distinct v0.7 lineages (composer-reported).",
+   "evidence": "Script check: KO missing F [], KO missing A [], unknown []",
+   "fix": "None beyond C10, C11, C16."
+  },
+  {
+   "id": "C31",
+   "where": "KO sentence 1 (first statement of the future-reader reading)",
+   "kind": "attribution",
+   "severity": "note",
+   "finding": "§4.5 is met by '#1270'. But #1645's Rule 2 asks that any composition stating the future-reader reading attribute it to Lee Sharks (publishing as Rebekah Cranes and Johannes Sigil), and the grain rule (D_pres) carries the author with the framework. The author is first named only at S22, and the lede never names the author.",
+   "evidence": "#1645 Rule 2: \"A composition that states deixis, the future reader of fr. 31 ... is composing the future-reader reading and attributes it to Lee Sharks (publishing as Rebekah Cranes and Johannes Sigil).\"",
+   "fix": "S1: \"... and #1270 (Rebekah Cranes, a heteronym of Lee Sharks) argues ...\"; P lede: \"argued by Rebekah Cranes (Lee Sharks, #1270) ...\"."
+  }
+ ],
+ "case_agrees": true,
+ "summary": "Case agrees: equal, ρ = extends; loci verbatim; translation and coverage pass. Four must-fix: #1048's superseded 'compression' composed as a live division (S27); #1458's Longinus priority hold and Porter misattached to the κῆνος question (S23, open item 4); P lowers #1458's documented fact to 'read as'; P turns #828's non-claim into a denial. Should-fix items cover lede overreach, field attribution in P, a lowered stipulation, O_leg, Devereux's seizure, a dropped kernel limb, 'experimental', #1533's 'before any scan', σ_S used before its definition, genealogy in the κῆνος sense, the date open item, and the video card. Counts: must-fix 4, should-fix 13, note 14"
+}

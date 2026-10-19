@@ -87,7 +87,10 @@ def admit(d, panel):
     return ents[d["entity"]]
 
 
-def archive_presence(d, text):
+def archive_presence(d, text, homonyms=()):
+    """Cards and links by relation(); the archive's names in the body, except a name the panel declares a homonym for
+    this entity (2026-10-18: at the crimson hexagon, "Crimson Hexagon" names Borges's room or Crimson Hexagon Inc.,
+    not the archive). A homonym only excuses the bare name; an archive card or link still counts."""
     hits = []
     for c in d.get("cite_list") or []:
         for k in ("url", "site", "title"):
@@ -99,6 +102,8 @@ def archive_presence(d, text):
         if r in ("archive_controlled", "authored_surface"):
             hits.append(f"link: {r} ({u[:80]})")
     for m in ARCHIVE_NAMES.finditer(text or ""):
+        if m.group(0).lower() in {h.lower() for h in homonyms}:
+            continue
         hits.append(f"named in the body: {m.group(0)}")
     return sorted(set(hits))
 
@@ -135,7 +140,8 @@ def seat(d, reg, schema, panel):
             raise Refused("NORMALISE refused — the cleaner lost answer words: %s" % lost[:12])
 
     # 4. ARCHIVE
-    hits = archive_presence(d, text)
+    ent = {e["entity"]: e for e in panel["entities"]}.get(d["entity"]) or {}
+    hits = archive_presence(d, text, ent.get("homonym_names") or ())
     present = bool(hits) or bool(d.get("archive_present"))
     if d.get("archive_present") is False and hits:
         raise Refused("ARCHIVE refused — the draft declares the archive absent, but the composition engages it:\n  - "
