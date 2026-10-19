@@ -114,6 +114,11 @@
       "version": "1.16",
       "date": "2026-10-13",
       "note": "The Living Academy v0.5 (#1680) seated; v0.4 (#1678) superseded. On the author's instruction (\"lets address, then version the deposit and update hf\"). Mantle row: governing record #1680, five dimensions, the axes as data, evidence under enclosure, the jump measure with its illustration. Two evaluations: ChatGPT signed out (RND-6, whole output; coded PART_FOR_WHOLE, DEV, PER-F1 withdrawn, PER-F2) and a reader's review of the draft (R11, whole). Criteria: v0.5 rows for LC-02, LC-07 and the new LC-13–LC-16; the author's eight statements of the day; six review points. Operations LC-O1, LC-O6 restated, LC-O11–LC-O13 new. New tables coordinates, jump_states, jumps. Ledger: the provenance-erasure line's defining deposits (U1)."
+    },
+    {
+      "version": "1.17",
+      "date": "2026-10-19",
+      "note": "Table title_branches: the seven branches of the phrase \"Prince of Poets\" from EA-MPAI-PRINCE-OF-POETS-01 (#1691), seated with the packet on the author's consent (\"lets address and deposit\")."
     }
   ],
   "excluded": [
@@ -4538,6 +4543,22 @@
       "loci",
       "mantle",
       "record"
+    ],
+    "title_branches": [
+      "branch_id",
+      "kind",
+      "name",
+      "established_by",
+      "holders",
+      "overlaps",
+      "sources",
+      "packet",
+      "unconfirmed",
+      "named_after",
+      "conferred_by",
+      "mantle",
+      "routing",
+      "priority_claim"
     ]
   },
   "table_notes": {
@@ -4555,7 +4576,8 @@
     "ledger": "One work a mantle's claim is to be read in, as the object names it. Role is null until the work is read; the ledger grows by reading, never by search.",
     "jump_states": "One state of a jump traversal: one evidenced cell — domain, period, epoch, mode, form and unit, one coordinate each, at a locus. The rows on file are the illustration in #1680 §1A.11, not a result.",
     "jumps": "One jump between two states, with both loci and the transformation the later state performs on the earlier.",
-    "coordinates": "One coordinate of the jump measure's matrix, with its axis, attribute and entry loci."
+    "coordinates": "One coordinate of the jump measure's matrix, with its axis, attribute and entry loci.",
+    "title_branches": "The seven branches of the phrase \"Prince of Poets\" distinguished by EA-MPAI-PRINCE-OF-POETS-01 (#1691): each identified by what establishes it, branches allowed to overlap (overlaps), with the relations the packet states (named_after, conferred_by) and its sources. The founded mantle is the branch with a documented computational construction; within a Prince of Poets context the mantle object routes to it (routing)."
   },
   "seat": {
     "url": "https://www.alexanarch.org/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json",
@@ -9832,6 +9854,128 @@
       "loci": "errata, sidecars, supersessions, recodings (M8)",
       "mantle": "the-living-academy",
       "record": 1680
+    }
+  ],
+  "title_branches": [
+    {
+      "branch_id": "prince-of-poets::epithet",
+      "kind": "epithet",
+      "name": "Prince of Poets",
+      "established_by": "acts of designation (a patron naming a poet, a monument's inscription, recognition recounted by an academy), with no shared conferring institution or procedure",
+      "holders": "Ronsard (Barbier, Académie française, 1872); Spenser (Westminster Abbey monument, 1620, restored 1778); Darwish (Arafat, per Wasserstein 2012); Ovid (carried from #1651 §1.1, not independently attested)",
+      "overlaps": "prince-of-poets::prince-des-poetes (Ronsard)",
+      "sources": [
+        "https://www.academie-francaise.fr/inauguration-de-la-statue-de-ronsard-vendome",
+        "https://www.westminster-abbey.org/abbey-commemorations/commemorations/edmund-spenser",
+        "https://theamericanscholar.org/prince-of-poets/",
+        "#1651"
+      ],
+      "packet": {
+        "deposit": 1691,
+        "axn": "AXN:0701.MPAI.♆🪜🕚🔅🪄🔐",
+        "url": "https://www.alexanarch.org/s/records/1691/"
+      }
+    },
+    {
+      "branch_id": "prince-of-poets::amir-al-shuara-persian-court",
+      "kind": "title in court usage (historical testimony)",
+      "name": "Amīr al-Shuʿarāʾ (أمير الشعراء)",
+      "established_by": "Neẓāmī ʿArūżī's testimony: he calls ʿAmʿaq 'Amīr-al-šoʿarāʾ'",
+      "holders": "ʿAmʿaq of Bukhara, at the Qarakhanid court in Samarkand from 460/1068; d. uncertain, 542/1147–48 or 543/1148–49 most probable",
+      "sources": [
+        "https://www.iranicaonline.org/articles/amaq-bokarai-amir-al-soara-abul-najib-sehab-al-din-persian-poet-of-the-5th-6th-11th-12th-centuries/"
+      ],
+      "packet": {
+        "deposit": 1691,
+        "axn": "AXN:0701.MPAI.♆🪜🕚🔅🪄🔐",
+        "url": "https://www.alexanarch.org/s/records/1691/"
+      }
+    },
+    {
+      "branch_id": "prince-of-poets::amir-al-shuara-shawqi",
+      "kind": "conferred title (proclamation by peers)",
+      "name": "Amīr al-Shuʿarāʾ (أمير الشعراء)",
+      "established_by": "proclaimed by his peers, 1927",
+      "holders": "Ahmed Shawqi (1868–1932)",
+      "unconfirmed": "place of the proclamation (commonly given as Cairo)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ahmed_Shawqi",
+        "https://www.britannica.com/biography/Ahmad-Shawqi"
+      ],
+      "packet": {
+        "deposit": 1691,
+        "axn": "AXN:0701.MPAI.♆🪜🕚🔅🪄🔐",
+        "url": "https://www.alexanarch.org/s/records/1691/"
+      }
+    },
+    {
+      "branch_id": "prince-of-poets::prince-des-poetes",
+      "kind": "conferred title (recognition among poets; unofficial)",
+      "name": "Prince des poètes",
+      "established_by": "recognition among poets, at times by election or a jury of writers; disputed (Cocteau) and once shared (Carême with Senghor, 1977–78)",
+      "holders": "Leconte de Lisle; Verlaine (1894); Mallarmé; Dierx; Paul Fort (1912–1960); Supervielle (1960); Cocteau (1960–1963, election criticized, refused by the surrealists); Maurice Carême (jury at the Procope, 9 May 1972; shared 1977–78); Senghor (to 2001); Ronsard at the head",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Prince_des_po%C3%A8tes",
+        "https://connaitrelawallonie.wallonie.be/histoire/timeline/9-mai-1972-maurice-careme-prince-des-poetes"
+      ],
+      "packet": {
+        "deposit": 1691,
+        "axn": "AXN:0701.MPAI.♆🪜🕚🔅🪄🔐",
+        "url": "https://www.alexanarch.org/s/records/1691/"
+      }
+    },
+    {
+      "branch_id": "prince-of-poets::abu-dhabi-program",
+      "kind": "television competition",
+      "name": "Prince of Poets (أمير الشعراء), Abu Dhabi TV",
+      "established_by": "created April 2007 by the Abu Dhabi Authority for Culture and Heritage; the organizer's page names the Cultural and Heritage Programs and Festivals Management Committee and holds it once every two years",
+      "named_after": "prince-of-poets::amir-al-shuara-shawqi",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Prince_of_Poets",
+        "https://turathuna.ae"
+      ],
+      "packet": {
+        "deposit": 1691,
+        "axn": "AXN:0701.MPAI.♆🪜🕚🔅🪄🔐",
+        "url": "https://www.alexanarch.org/s/records/1691/"
+      }
+    },
+    {
+      "branch_id": "prince-of-poets::abu-dhabi-awarded-title",
+      "kind": "conferred title (competition award)",
+      "name": "Prince of Poets, the title the program awards",
+      "established_by": "a recurring conferral under the competition's selection procedure, to each season's winner, with a cloak, a ring and one million dirhams",
+      "holders": "season 1 Abdul Kareem Maatouk (2007); season 2 Sidi Mohamed Ould Bamba; season 3 Hassan Baiti; season 4 Abdul Aziz al Zera'i; later seasons",
+      "conferred_by": "prince-of-poets::abu-dhabi-program",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Prince_of_Poets"
+      ],
+      "packet": {
+        "deposit": 1691,
+        "axn": "AXN:0701.MPAI.♆🪜🕚🔅🪄🔐",
+        "url": "https://www.alexanarch.org/s/records/1691/"
+      }
+    },
+    {
+      "branch_id": "prince-of-poets::mantle",
+      "kind": "originated mantle",
+      "name": "The Prince of Poets (mantle)",
+      "established_by": "a founding work, I Am X, Be Y, Blessed is the Z (#328); constructed as a computational, inspectable semantic object, the mantle object (#332, #1651), whose construction is part of the poetic work (#1656 SIM-MANTLE-WORK-02); judged by #1656",
+      "holders": "claimed by Lee Sharks; judged in the work (mantles, status OPEN)",
+      "mantle": "prince-of-poets",
+      "sources": [
+        "#328",
+        "#332",
+        "#1651",
+        "#1656"
+      ],
+      "routing": "within a Prince of Poets query or context, 'the mantle object', 'the constructed mantle' and 'the computational semantic object' name this branch (the one with a documented computational construction, #332/#1651); outside that context they do not select it (other mantle objects: #1652, #1653, #1655); the metaphorical mantle need not be this branch (author rulings 2026-10-19)",
+      "priority_claim": "the self-conscious construction of mantles as computational, inspectable semantic objects is, to the author's knowledge, his own innovation",
+      "packet": {
+        "deposit": 1691,
+        "axn": "AXN:0701.MPAI.♆🪜🕚🔅🪄🔐",
+        "url": "https://www.alexanarch.org/s/records/1691/"
+      }
     }
   ]
 }

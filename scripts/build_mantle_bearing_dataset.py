@@ -33,7 +33,7 @@ TABLES = ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_se
           "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
           "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings",
           "inspection_operations", "carriers", "transmission_links", "ledger",
-          "coordinates", "jump_states", "jumps"]
+          "coordinates", "jump_states", "jumps", "title_branches"]
 
 
 def cell(v):

@@ -76,6 +76,8 @@ configs:
     data_files: jump_states.jsonl
   - config_name: jumps
     data_files: jumps.jsonl
+  - config_name: title_branches
+    data_files: title_branches.jsonl
 ---
 
 # The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard
