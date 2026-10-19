@@ -20,6 +20,13 @@ _DOI_INDEX_CACHE = None
 
 
 _DOI_STATE_CACHE = None
+
+def _unglue_headings(text):
+    """W13 tier 1: a heading marker glued to the text before it is set on its own line. Not inside a table line:
+    there '###' is a cell's text ("SIM-###"), and a break would cut the table in two (2026-10-19)."""
+    return '\n'.join(l if l.lstrip().startswith('|') else re.sub(r'(?<=[^\n#])(#{2,6} )', r'\n\n\1', l)
+                     for l in text.split('\n'))
+
 def _page_modified(d, dn):
     """{"dateModified": page date} for the record page's WebPage (2026-10-15), or {} if none is known.
     Page date = later of the record's last modification and the latest capture join the page renders."""
@@ -1407,7 +1414,7 @@ def regenerate_static_page(d, eidx, registry=None):
             # readable structure. Bytes untouched.
             _fp = raw.split('```')
             for _pi in range(0, len(_fp), 2):
-                _fp[_pi] = re.sub(r'(?<=[^\n#])(#{2,6} )', r'\n\n\1', _fp[_pi])
+                _fp[_pi] = _unglue_headings(_fp[_pi])
             raw = '```'.join(_fp)
             _kernel, raw = _kernel_split(raw)
             _plain = _plain_body(raw)
@@ -1465,7 +1472,7 @@ def regenerate_static_page(d, eidx, registry=None):
                 # excluded. Display-level; bytes carry the mangle until tier 2.
                 return '$$' + _COMMA_MANGLE.sub(r' \\, ', m.group(1)) + '$$'
             for _pi in range(0, len(_fence_parts), 2):  # even indices = outside fences
-                _fence_parts[_pi] = re.sub(r'(?<=[^\n#])(#{2,6} )', r'\n\n\1', _fence_parts[_pi])
+                _fence_parts[_pi] = _unglue_headings(_fence_parts[_pi])
                 _fence_parts[_pi] = re.sub(r'\$\$(.+?)\$\$', _fix_math_span, _fence_parts[_pi], flags=re.S)
                 _fence_parts[_pi] = _w13_reflow(_fence_parts[_pi])
             raw = '```'.join(_fence_parts)
@@ -1522,7 +1529,11 @@ def regenerate_static_page(d, eidx, registry=None):
                 _rows = []
                 _hdr_idx = -1
                 for _r in buf:
-                    _cells = [c.strip() for c in _r.strip().strip('|').split('|')]
+                    # an escaped pipe (\|) is a character inside a cell, not a cell boundary
+                    _s = _r.strip()
+                    _s = _s[1:] if _s.startswith('|') else _s
+                    _s = _s[:-1] if _s.endswith('|') and not _s.endswith('\\|') else _s
+                    _cells = [c.strip().replace('\\|', '|') for c in re.split(r'(?<!\\)\|', _s)]
                     if _cells and all(re.fullmatch(r':?-{3,}:?', c) for c in _cells if c != ''):
                         _hdr_idx = len(_rows) - 1
                         continue
