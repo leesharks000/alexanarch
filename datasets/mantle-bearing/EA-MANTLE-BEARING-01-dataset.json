@@ -124,6 +124,11 @@
       "version": "1.18",
       "date": "2026-10-19",
       "note": "Identifiers refreshed: 45 axn fields across 30 records (tables mantles, doctrine, ledger) given each record's current AXN from the registry; each had changed in the registry since the row was seated. No row's content changed. On the author's instruction (\"lets do 1-3 on mantle bearing\")."
+    },
+    {
+      "version": "1.18",
+      "date": "2026-10-19",
+      "note": "Pointers to superseded records. Mantle rows: superseded objects noted with their successor (#332→#1651, #333→#1652, #334→#1653, #1649→#1655); King of AEO companion #1681 (v0.4) added before #1648 and #1654, which are noted; Nobel companion #1690 added after #1665, which #1670 names and which is noted; Prince of Poets companion #1691 added. Doctrine: the SPXI ≠ AEO row moved from #1654 to #1681 (its locus, §9.3, carried verbatim); the Living Academy v0.4 row (#1678) dropped beside its v0.5 row (#1680). Reception: the Sturm report cites #1681 §2.2 (first #1654 §2.2). The Living Academy's candidates (8) and inspection operations LC-O2–O5 and LC-O7–O10 (8) now point to #1680, whose §1A.4 is identical to #1678's and whose §1A.3 carries those operations unchanged; LC-O1 and LC-O6 v0.4 stay at #1678 beside their v0.5 restatements. Ledger: named_in moved from #1678 to #1680 (11 rows, each deposit named in #1680); rows for superseded deposits (#1461, #1523, #1665, #1671) noted. References in transcripts, history, criteria provenance and coding notes are left as written."
     }
   ],
   "excluded": [
@@ -4050,7 +4055,7 @@
         "independent_reading_shown": false,
         "independent_comparison_shown": false,
         "changes_assignment": false,
-        "record": "reported, not captured: 'The AI Overview initially treated 'King of AEO' as a real title and repeated that Jesper's made-up event actually happened' (Sturm); #1654 §2.2"
+        "record": "reported, not captured: 'The AI Overview initially treated 'King of AEO' as a real title and repeated that Jesper's made-up event actually happened' (Sturm); #1681 §2.2 (first #1654 §2.2)"
       },
       {
         "event_id": "KOAEO-PROP-2026-09-29-head",
@@ -4607,7 +4612,8 @@
         {
           "deposit": 332,
           "axn": "AXN:0088.GENERATIVE.🕔🌇❌⊗♻️🔻",
-          "url": "https://www.alexanarch.org/s/records/332/"
+          "url": "https://www.alexanarch.org/s/records/332/",
+          "note": "v1.0, superseded by #1651"
         },
         {
           "deposit": 1651,
@@ -4631,7 +4637,15 @@
         },
         "citation_graph_dated": "2026-09-29",
         "note": "Inputs to m(d) = f(permanence, cross-reference density, downstream dependency, γ) per #52 §2.2; the heuristic scale there is 'subject to calibration' and is not applied. Downstream dependency and γ are not computed here."
-      }
+      },
+      "companions": [
+        {
+          "deposit": 1691,
+          "axn": "AXN:0701.MPAI.♆🪜🕚🔅🪄🔐",
+          "url": "https://www.alexanarch.org/s/records/1691/",
+          "note": "EA-MPAI-PRINCE-OF-POETS-01: the phrase's seven branches; source of table title_branches"
+        }
+      ]
     },
     {
       "mantle": "king-of-may",
@@ -4650,7 +4664,8 @@
         {
           "deposit": 333,
           "axn": "AXN:0089.GOVERNANCE.🌍🪜🚩🍄🍄☀️",
-          "url": "https://www.alexanarch.org/s/records/333/"
+          "url": "https://www.alexanarch.org/s/records/333/",
+          "note": "v1.0, superseded by #1652"
         },
         {
           "deposit": 1652,
@@ -4693,7 +4708,8 @@
         {
           "deposit": 334,
           "axn": "AXN:008A.GENERATIVE.🧊🚨🙏➗🕖🔴",
-          "url": "https://www.alexanarch.org/s/records/334/"
+          "url": "https://www.alexanarch.org/s/records/334/",
+          "note": "v1.0, superseded by #1653"
         },
         {
           "deposit": 1653,
@@ -4789,7 +4805,8 @@
         {
           "deposit": 1649,
           "axn": "AXN:06D7.MPAI.✊🦅🪐💚♋♌",
-          "url": "https://www.alexanarch.org/s/records/1649/"
+          "url": "https://www.alexanarch.org/s/records/1649/",
+          "note": "v0.3, superseded by #1655"
         },
         {
           "deposit": 1655,
@@ -4799,14 +4816,22 @@
       ],
       "companions": [
         {
+          "deposit": 1681,
+          "axn": "AXN:06F7.MPAI.➖⏪⚓🕌♾️➕",
+          "url": "https://www.alexanarch.org/s/records/1681/",
+          "note": "v0.4, current (supersedes #1648, #1654)"
+        },
+        {
           "deposit": 1648,
           "axn": "AXN:06D6.MPAI.📐🗺️🏰🤲🔜🎯",
-          "url": "https://www.alexanarch.org/s/records/1648/"
+          "url": "https://www.alexanarch.org/s/records/1648/",
+          "note": "v0.2, superseded by #1681"
         },
         {
           "deposit": 1654,
           "axn": "AXN:06DC.MPAI.🗡️🕖♍👁‍🗨🎺💎",
-          "url": "https://www.alexanarch.org/s/records/1654/"
+          "url": "https://www.alexanarch.org/s/records/1654/",
+          "note": "v0.3, superseded by #1681"
         },
         {
           "deposit": 1657,
@@ -4866,7 +4891,14 @@
         {
           "deposit": 1665,
           "axn": "AXN:06E7.OPERATIVE.🛸🧭🔭🟡🔆🏰",
-          "url": "https://www.alexanarch.org/s/records/1665/"
+          "url": "https://www.alexanarch.org/s/records/1665/",
+          "note": "v0.7, as #1670 names it ('where the observations are seated'); superseded by #1690"
+        },
+        {
+          "deposit": 1690,
+          "axn": "AXN:0700.OPERATIVE.📐🟣🎹✋◇🔭",
+          "url": "https://www.alexanarch.org/s/records/1690/",
+          "note": "v0.9, current"
         }
       ],
       "founding_work": "none: the title names the oeuvre; the operations are specified in the works (#1670 §3: If Not, Winter; Eros the Bittersweet; Autobiography of Red; Nox)",
@@ -6386,12 +6418,12 @@
       "url": "https://www.alexanarch.org/s/records/1655/"
     },
     {
-      "record": 1654,
-      "axn": "AXN:06DC.MPAI.🗡️🕖♍👁‍🗨🎺💎",
-      "title": "SPXI ≠ AEO: Inscription by Discernment, the Prince of Poets Wager, and the King of AEO Contest (EA-SPXI-AEO-01 v0.3)",
+      "record": 1681,
+      "axn": "AXN:06F7.MPAI.➖⏪⚓🕌♾️➕",
+      "title": "SPXI ≠ AEO: Inscription by Discernment, the Prince of Poets Wager, and the King of AEO Contest (EA-SPXI-AEO-01 v0.4)",
       "establishes": "AEO counts the answer given; SPXI counts whether it was reached by discernment; forecast that a title with nothing to check is inscribed as a warning",
       "locus": "§9.3 'A capture of \"who is the king of aeo\" sets the baseline'",
-      "url": "https://www.alexanarch.org/s/records/1654/"
+      "url": "https://www.alexanarch.org/s/records/1681/"
     },
     {
       "record": 9,
@@ -6496,14 +6528,6 @@
       "establishes": "the conferred-title mantle object: the conferral recorded as the event, the title's meaning specified as operations at loci with graded source distance, and a dated determination on the conferring body's motivation kept apart from the specification; liquidation by modal substitution, tested at the sentence under #1459 with the Academy's same-day biobibliography as the external control",
       "locus": "§0.1 'This object performs two acts and keeps them apart.'",
       "url": "https://www.alexanarch.org/s/records/1670/"
-    },
-    {
-      "record": 1678,
-      "axn": "AXN:06F4.MPAI.🐝🪄🔆🕚□🌿",
-      "title": "The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.4)",
-      "establishes": "the critical-program mantle: a title borne by a library and the program it carries, read across modes on four dimensions never averaged, with criteria, inspection operations, candidates, a protocol by which a comparative judgment is made or defeated, and the author's comparative claim recorded and not evaluated",
-      "locus": "§1A 'The Living Academy is borne by a library and its program to the extent that the critique is carried on there across its modes, longitudinally, at a quality and with an integration that a reader can check.'",
-      "url": "https://www.alexanarch.org/s/records/1678/"
     },
     {
       "record": 1679,
@@ -7791,7 +7815,7 @@
     {
       "cand_id": "LA-C1",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "name": "The Semantic Economy carried by Alexanarch",
       "entered": "2026-10-13",
       "role": "claimant",
@@ -7803,7 +7827,7 @@
     {
       "cand_id": "LA-C2",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "name": "AI Now Institute's research program",
       "entered": "2026-10-13",
       "role": "comparator",
@@ -7815,7 +7839,7 @@
     {
       "cand_id": "LA-C3",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "name": "Matteo Pasquinelli's critical AI program",
       "entered": "2026-10-13",
       "role": "comparator",
@@ -7827,7 +7851,7 @@
     {
       "cand_id": "LA-C4",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "name": "Kate Crawford's critical and collaborative program",
       "entered": "2026-10-13",
       "role": "comparator",
@@ -7839,7 +7863,7 @@
     {
       "cand_id": "LA-C5",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "name": "Data & Society's generative-AI program",
       "entered": "2026-10-13",
       "role": "comparator",
@@ -7851,7 +7875,7 @@
     {
       "cand_id": "LA-C6",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "name": "AlgorithmWatch / AI Forensics audit series",
       "entered": "2026-10-13",
       "role": "comparator",
@@ -7863,7 +7887,7 @@
     {
       "cand_id": "LA-C7",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "name": "Tow Center's generative-search and citation research",
       "entered": "2026-10-13",
       "role": "comparator",
@@ -7875,7 +7899,7 @@
     {
       "cand_id": "LA-C8",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "name": "Challenger-nominated programs",
       "entered": "2026-10-13",
       "role": "open class",
@@ -8107,7 +8131,7 @@
       "entry": "https://www.alexanarch.org/data/registry.json",
       "execution_state": "specified, not run",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "locus_in_record": "§1A.3",
       "packet_version": "v0.4"
     },
@@ -8119,7 +8143,7 @@
       "entry": "https://www.alexanarch.org/captures/",
       "execution_state": "specified, not run",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "locus_in_record": "§1A.3",
       "packet_version": "v0.4"
     },
@@ -8131,7 +8155,7 @@
       "entry": "https://www.alexanarch.org/resolve/",
       "execution_state": "specified, not run",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "locus_in_record": "§1A.3",
       "packet_version": "v0.4"
     },
@@ -8143,7 +8167,7 @@
       "entry": "https://www.alexanarch.org/s/records/558/",
       "execution_state": "specified, not run",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "locus_in_record": "§1A.3",
       "packet_version": "v0.4"
     },
@@ -8167,7 +8191,7 @@
       "entry": "https://www.alexanarch.org/datasets/",
       "execution_state": "specified, not run",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "locus_in_record": "§1A.3",
       "packet_version": "v0.4"
     },
@@ -8179,7 +8203,7 @@
       "entry": "https://www.alexanarch.org/s/browse/",
       "execution_state": "specified, not run",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "locus_in_record": "§1A.3",
       "packet_version": "v0.4"
     },
@@ -8191,7 +8215,7 @@
       "entry": "https://www.alexanarch.org/errata/",
       "execution_state": "specified, not run",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "locus_in_record": "§1A.3",
       "packet_version": "v0.4"
     },
@@ -8203,7 +8227,7 @@
       "entry": "https://www.alexanarch.org/api/index.json",
       "execution_state": "specified, not run",
       "mantle": "the-living-academy",
-      "record": 1678,
+      "record": 1680,
       "locus_in_record": "§1A.3",
       "packet_version": "v0.4"
     },
@@ -8637,13 +8661,13 @@
       "date": "2026-02-20",
       "url": "https://www.alexanarch.org/s/records/18/",
       "text": "https://www.alexanarch.org/data/texts/AXN-013F-text.md",
-      "named_in": "#1678 §1.1 (accumulated argument); LC-O1",
+      "named_in": "#1680 §1.1 (accumulated argument); LC-O1",
       "modes_named": "M1",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::291",
@@ -8654,13 +8678,13 @@
       "date": "2026-01-11",
       "url": "https://www.alexanarch.org/s/records/291/",
       "text": "https://www.alexanarch.org/data/texts/AXN-005E-text.md",
-      "named_in": "#1678 §1.1; LC-O1",
+      "named_in": "#1680 §1.1; LC-O1",
       "modes_named": "M1",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::623",
@@ -8671,13 +8695,13 @@
       "date": "2026-04-01",
       "url": "https://www.alexanarch.org/s/records/623/",
       "text": "https://www.alexanarch.org/data/texts/AXN-01DA-text.md",
-      "named_in": "#1678 §1.1; LC-O1",
+      "named_in": "#1680 §1.1; LC-O1",
       "modes_named": "M1",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::264",
@@ -8688,13 +8712,13 @@
       "date": "2026-01-07",
       "url": "https://www.alexanarch.org/s/records/264/",
       "text": "https://www.alexanarch.org/data/texts/AXN-0042-text.md",
-      "named_in": "#1678 §1.1; LC-O1",
+      "named_in": "#1680 §1.1; LC-O1",
       "modes_named": "M1",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::1634",
@@ -8705,13 +8729,13 @@
       "date": "2026-09-21",
       "url": "https://www.alexanarch.org/s/records/1634/",
       "text": "https://www.alexanarch.org/data/texts/AXN-06C8-text.md",
-      "named_in": "#1678 §1.1 modes table; LC-O1",
+      "named_in": "#1680 §1.1 modes table; LC-O1",
       "modes_named": "M1",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::1666",
@@ -8722,13 +8746,13 @@
       "date": "2026-10-06",
       "url": "https://www.alexanarch.org/s/records/1666/",
       "text": "https://www.alexanarch.org/data/texts/AXN-06E8-text.md",
-      "named_in": "#1678 §1.1 modes table; LC-O1",
+      "named_in": "#1680 §1.1 modes table; LC-O1",
       "modes_named": "M1, M2",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::1644",
@@ -8739,13 +8763,13 @@
       "date": "2026-09-28",
       "url": "https://www.alexanarch.org/s/records/1644/",
       "text": "https://www.alexanarch.org/data/texts/AXN-06D2-text.md",
-      "named_in": "#1678 §1.1 (Object)",
+      "named_in": "#1680 §1.1 (Object)",
       "modes_named": "M2",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::1",
@@ -8756,13 +8780,13 @@
       "date": "2026-06-19",
       "url": "https://www.alexanarch.org/s/records/1/",
       "text": "https://www.alexanarch.org/data/EA-MMRS-LOUD-EXCLUSION-03.md",
-      "named_in": "#1678 §1.1 (accumulated argument)",
+      "named_in": "#1680 §1.1 (accumulated argument)",
       "modes_named": "M4",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::1676",
@@ -8773,13 +8797,13 @@
       "date": "2026-10-12",
       "url": "https://www.alexanarch.org/s/records/1676/",
       "text": "https://www.alexanarch.org/data/texts/AXN-06F2-text.md",
-      "named_in": "#1678 F8",
+      "named_in": "#1680 F8",
       "modes_named": "M3",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::1665",
@@ -8790,13 +8814,13 @@
       "date": "2026-10-05",
       "url": "https://www.alexanarch.org/s/records/1665/",
       "text": "https://www.alexanarch.org/data/texts/AXN-06E7-text.md",
-      "named_in": "#1678 F10",
+      "named_in": "#1680 F10",
       "modes_named": "M3",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work; superseded by #1690, kept as the citing text names it"
     },
     {
       "ledger_id": "the-living-academy::1671",
@@ -8807,13 +8831,13 @@
       "date": "2026-10-08",
       "url": "https://www.alexanarch.org/s/records/1671/",
       "text": "https://www.alexanarch.org/data/texts/AXN-06ED-text.md",
-      "named_in": "#1678 F10",
+      "named_in": "#1680 F10",
       "modes_named": "M3",
       "representative_site": false,
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work; superseded by #1690, kept as the citing text names it"
     },
     {
       "ledger_id": "arch-philosopher::1637",
@@ -8830,7 +8854,7 @@
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "arch-philosopher::18",
@@ -8847,7 +8871,7 @@
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "arch-philosopher::291",
@@ -8864,7 +8888,7 @@
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "arch-philosopher::1575",
@@ -8881,7 +8905,7 @@
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "arch-philosopher::1576",
@@ -8898,7 +8922,7 @@
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "arch-philosopher::1580",
@@ -8915,7 +8939,7 @@
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "arch-philosopher::1581",
@@ -8932,7 +8956,7 @@
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1678 LC-01) is coded only on reading the work"
+      "note": "role (direct · relational · antecedent_contextual · outside_scope, #1680 LC-01) is coded only on reading the work"
     },
     {
       "ledger_id": "the-living-academy::line:provenance-erasure::54",
@@ -9101,7 +9125,7 @@
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "a defining deposit of the provenance-erasure line (U1 only); the line's other classes are not deposits",
+      "note": "a defining deposit of the provenance-erasure line (U1 only); the line's other classes are not deposits; superseded by #1676, kept as the citing text names it",
       "line": "provenance-erasure",
       "unit_class": "U1"
     },
@@ -9158,7 +9182,7 @@
       "role": null,
       "role_reason": null,
       "read": false,
-      "note": "a defining deposit of the provenance-erasure line (U1 only); the line's other classes are not deposits",
+      "note": "a defining deposit of the provenance-erasure line (U1 only); the line's other classes are not deposits; superseded by #1525, kept as the citing text names it",
       "line": "provenance-erasure",
       "unit_class": "U1"
     },

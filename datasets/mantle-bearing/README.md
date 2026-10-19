@@ -1009,7 +1009,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `pearl_arrangement` | 0 | one piece of Pearl and Other Poems in the arrangement, set against Howl |
 | `mantles` | 15 | one mantle object: its class, its governing record, its holder or occupancy, and its order of necessity to the three literary claims |
 | `occupancy` | 10 | one recorded occupancy of Septad positions, at one event or listing |
-| `doctrine` | 19 | one defining record, with what it establishes and a quoted locus |
+| `doctrine` | 18 | one defining record, with what it establishes and a quoted locus |
 | `criteria` | 62 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
 | `determinations` | 2 | one dated determination by the archive of a mantle it constituted or specified, with standard, grounds, the case against, and revision |
 | `operations` | 7 | one operation a mantle object specifies the work bears, with work, locus, grade, and what the conferring description keeps and loses |
