@@ -579,6 +579,96 @@ OPEN_JS = ('<script>(function(){function o(){var h=location.hash.slice(1);if(!h)
            'for(var p=e.parentElement;p;p=p.parentElement){if(p.tagName==="DETAILS")p.open=true}e.scrollIntoView()}'
            'addEventListener("hashchange",o);addEventListener("DOMContentLoaded",o)})();</script>\n')
 
+BY_TYPES = {"A": "type A — the archive coined the concept", "B": "type B — a rival occupant holds it",
+            "C": "type C — a conventional reading holds it", "E": "type E — the archive, its author and heteronyms, its works, its mantles",
+            "I": "type I — a function of the archive's infrastructure"}
+
+
+def _entry_line(row):
+    """The entry in one line: the first sentence of the compression's lede, as the reader meets it on the page."""
+    t = (((row or {}).get("objects") or {}).get("P") or {}).get("lede", {}).get("text", "") if row else ""
+    t = re.sub(r"\s+", " ", t).strip()
+    m = re.match(r"(.{40,320}?[.;])\s", t + " ")
+    return (m.group(1) if m else t[:320]).strip()
+
+
+def _case_of(row):
+    on = (row or {}).get("ontology") or {}
+    c = str(on.get("composition") or "")
+    if c.startswith("archive"):
+        return "archive"
+    return c or ("v0.7" if row and (row.get("objects") or {}).get("KO") else "none")
+
+
+def by_index(toc, rows, groups, panel, reg):
+    """/non/by/: the entries by type, by case and by month, and every address in the register, each row with its
+    entity, its addresses (query, date, surface, signed), its case and its entry in one line — the grammar of
+    /captures/by/. Built from the same files as the entity pages; it writes nothing back."""
+    CASE_NAMES = dict(CASE_LABEL, **{"v0.7": "composed under v0.7 (#1665), awaiting recomposition", "none": "not yet composed"})
+    slugify = lambda s: re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+    def rec(x):
+        k = x["entity"]; r = rows.get(k)
+        adr = "".join(f'<div class="q"><a href="/non/{esc(k)}/#reg-{esc(e["slug"])}">{esc(e["q"])}</a> '
+                      f'<span class="m">{esc(", ".join(e["dates"]))} · {esc(e["surface"])} · {esc(e["auth"])} · archive {"present" if e["archive_present"] else "absent"}</span></div>'
+                      for e in groups.get(k, []))
+        case = _case_of(r); rho = ((r or {}).get("ontology") or {}).get("rho")
+        rho = rho.get("value") if isinstance(rho, dict) else rho
+        meta = f'{esc(type_label(x["type"]))} · {esc(CASE_NAMES.get(case, case))}' + (f' · ρ = {esc(str(rho))}' if rho else "") + f' · {esc(x.get("date") or "")}'
+        line = _entry_line(r)
+        return (f'<div class="rec"><a class="t" href="/non/{esc(k)}/">{esc(x["name"])}</a> <span class="m">{meta}</span>'
+                + adr + (f'<div class="d">{md_inline(line)}</div>' if line else "") + '</div>')
+    groups_by = {"type": {}, "case": {}, "month": {}}
+    for x in toc:
+        t = (re.match(r"\s*([ABCEI])", str(x["type"])) or [None, "?"])[1]
+        groups_by["type"].setdefault(t, []).append(x)
+        groups_by["case"].setdefault(_case_of(rows.get(x["entity"])), []).append(x)
+        groups_by["month"].setdefault((x.get("date") or "undated")[:7], []).append(x)
+    label = {"type": lambda g: BY_TYPES.get(g, f"type {g}"), "case": lambda g: CASE_NAMES.get(g, g), "month": lambda g: g}
+    order = {"type": lambda g: g, "case": lambda g: ["equal", "mixed", "witness", "archive", "v0.7", "none"].index(g) if g in ("equal", "mixed", "witness", "archive", "v0.7", "none") else 9,
+             "month": lambda g: g}
+    BYCSS = ('<style>.rec{padding:9px 0;border-bottom:1px solid #eee;overflow-wrap:anywhere}.rec a.t{font-weight:500;text-decoration:none;font-size:.95em}'
+             '.rec .m{font-family:var(--mono);font-size:.72em;color:var(--teal,#0a7c6a)}.rec .d{font-size:.84em;color:#444;margin-top:3px}'
+             '.rec .q{font-size:.86em;margin-top:3px}.idx{font-size:.88em;line-height:1.9}.crumbs{font-size:.8em;color:#777;margin-bottom:8px}</style>\n')
+    def bpage(path, title, desc, body, n):
+        url = f"{BASE}/{path[:-10]}"
+        jl = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "url": url, "description": desc,
+              "isPartOf": {"@type": "Dataset", "name": "The Negative of the Negative", "url": f"{BASE}/non/"}, "numberOfItems": n}
+        return npage(title + " — Alexanarch", desc, body, url, jl, f'<link rel="canonical" href="{url}">\n' + BYCSS)
+    out, idx = {}, []
+    head = lambda title, n: (f'<p class="crumbs"><a href="/non/">/non</a> · <a href="/non/by/">by type, case and month</a></p><h1>{esc(title)}</h1>'
+                             f'<p class="sub">{n} entr{"y" if n == 1 else "ies"} of The Negative of the Negative (EA-NEGONT-02 v0.9, <a href="/s/records/1690/">#1690</a>). '
+                             'Each row: the entity (its page is its citation), its type, its case and ρ, the date composed; then each address at which it was observed, '
+                             'with date, surface and sign-in; then the entry in one line. Working, not frozen.</p>')
+    for dim in ("type", "case", "month"):
+        links = []
+        for g in sorted(groups_by[dim], key=order[dim]):
+            xs = sorted(groups_by[dim][g], key=lambda x: (x.get("date") or "", x["name"]), reverse=(dim == "month"))
+            path = f"non/by/{dim}/{slugify(g)}/index.html"
+            title = f"/non by {dim}: {label[dim](g)}"
+            out[path] = bpage(path, title, f"{len(xs)} entries of The Negative of the Negative, {label[dim](g)}.",
+                              head(title, len(xs)) + "".join(rec(x) for x in xs), len(xs))
+            links.append(f'<a href="/{path[:-10]}">{esc(label[dim](g))}</a> ({len(xs)})')
+        idx.append(f'<h2>By {dim}</h2><p class="idx">' + " · ".join(links) + "</p>")
+    allrows = "".join(rec(x) for x in sorted(toc, key=lambda x: x["name"].lower()))
+    n_addr = sum(len(groups.get(x["entity"], [])) for x in toc)
+    regrows = []
+    for e in sorted(reg.get("entries", []), key=lambda e: (e["date"], e["q"]), reverse=True):
+        k = e["entity"]
+        dest = f'/non/{esc(k)}/#reg-{esc(e["slug"])}' if any(x["entity"] == k for x in toc) else "/non/#register"
+        regrows.append(f'<div class="rec"><a class="t" href="{dest}">{esc(e["q"])}</a> <span class="m">{esc(", ".join(e["dates"]))} · {esc(e["surface"])} · '
+                       f'{esc(e["auth"])} · archive {"present" if e["archive_present"] else "absent"}</span>'
+                       f'<div class="d">entity: <a href="/non/{esc(k)}/">{esc(next((x["name"] for x in toc if x["entity"] == k), k))}</a></div></div>')
+    out["non/by/index.html"] = bpage("non/by/index.html", "/non by type, case and month",
+                                     f"{len(toc)} entries and {len(reg.get('entries', []))} addresses of The Negative of the Negative, indexed by type, case and month.",
+                                     '<p class="crumbs"><a href="/non/">/non</a></p><h1>The Negative of the Negative, by type, case and month</h1>'
+                                     f'<p class="sub">{len(toc)} entries, {n_addr} of the register\'s {len(reg.get("entries", []))} addresses under them. Smaller pages, each row with its entity, '
+                                     'its addresses, its case and its entry in one line; the entity\'s own page is its citation. The register\'s addresses, newest first, are below.</p>'
+                                     + "".join(idx) + '<h2>Every entry</h2>' + allrows
+                                     + f'<h2 id="addresses">Every address in the register ({len(regrows)})</h2>' + "".join(regrows),
+                                     len(toc))
+    return out
+
+
 def main():
     import argparse
     ap = argparse.ArgumentParser()
@@ -961,6 +1051,7 @@ def main():
     built_on = f'register v{esc(str(reg.get("version")))}, {esc(str(reg.get("date")))}'
     b.append('<p class="sub" style="font-size:.85em">Each entity has its own page, which is its citation, and its record as data beside it: '
              f'<code>{BASE}/non/{{entity}}/</code> and <code>…/entity.json</code>. The table of contents as data: <a href="/non/index.json">/non/index.json</a>. The same work as a dataset, table by table: <a href="' + HF_NON + '">leesharks/negative-of-the-negative</a> on the Hugging Face Hub.</p>')
+    b.append('<p style="font-size:.88em;margin:6px 0 12px">Index of the entries: <a href="/non/by/">by type, case and month</a> — smaller pages, each row with its entity, its addresses, its case and its entry in one line; <a href="/non/by/#addresses">every address in the register</a>.</p>')
     b.append('<nav class="jump">' + "".join(f'<a href="/non/{esc(k)}/">{esc(names[k]["name"])}</a>' for k in keys)
              + '<a href="#register">register</a><a href="#panel">panel</a><a href="#procedure">procedure and data</a></nav>')
     b.append(HOW)
@@ -1057,8 +1148,14 @@ def main():
     for p, h in fi:
         files[p.relative_to(ROOT).as_posix()] = h
 
+    # ── the index by type, case and month, as /captures/by/ (ruled 2026-10-19: "/non needs an index like /captures") ──
+    for k, v in by_index(toc, rows, groups, panel, reg).items():
+        files[k] = v
+        sm.append(f"<url><loc>{BASE}/{k[:-10]}</loc></url>")
+    files["sitemap-non.xml"] = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(sm) + "\n</urlset>\n"
+
     # ── write or check ──
-    owned = {k.split("/")[1] for k in files if k.startswith("non/") and k.count("/") == 2}
+    owned ={k.split("/")[1] for k in files if k.startswith("non/") and k.count("/") == 2}
     stale = [k for k, v in files.items() if not (ROOT / k).exists() or (ROOT / k).read_text(encoding="utf-8") != v]
     orphans = sorted(p.name for p in OUT.iterdir() if p.is_dir() and p.name not in owned and (p / "index.html").exists()
                      and MARK in (p / "index.html").read_text(encoding="utf-8")[:400]) if OUT.exists() else []
