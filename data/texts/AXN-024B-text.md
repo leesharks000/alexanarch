@@ -69,185 +69,62 @@ Until the spxi.dev domain resolves with a live vocabulary document, implementati
 ### 2.2 Core Classes
 
 
-Class
-Description
-
-
-spxi:SemanticIndex
-The root document. One per site. Lives at /spxi-index.jsonld.
-
-
-spxi:IndexedEntity
-An entity with a canonical URL and semantic boundary.
-
-
-spxi:HolographicKernel
-The site's irreducible compression-survival summary (≤ 100 words).
-
-
-spxi:PagePacket
-A per-page semantic packet at a predictable URL.
-
-
-spxi:DisambiguationEntry
-A single collision record in the disambiguation matrix.
+| Class | Description |
+|---|---|
+| spxi:SemanticIndex | The root document. One per site. Lives at /spxi-index.jsonld. |
+| spxi:IndexedEntity | An entity with a canonical URL and semantic boundary. |
+| spxi:HolographicKernel | The site's irreducible compression-survival summary (≤ 100 words). |
+| spxi:PagePacket | A per-page semantic packet at a predictable URL. |
+| spxi:DisambiguationEntry | A single collision record in the disambiguation matrix. |
 
 
 ### 2.3 Core Properties
 #### On spxi:SemanticIndex:
 
 
-Property
-Type
-Required
-Description
-
-
-spxi:siteKernel
-HolographicKernel
-MUST
-The site's compression-survival summary.
-
-
-spxi:hasEntity
-IndexedEntity[]
-MUST
-Array of entities declared by this site.
-
-
-spxi:hasSurface
-WebPage[]
-SHOULD
-Array of pages with their semantic function.
-
-
-spxi:protocolVersion
-string
-MUST
-"EA-SPXI-SITEMAP-01 v1.0"
-
-
-spxi:protocolDoi
-string
-SHOULD
-DOI of this specification.
+| Property | Type | Required | Description |
+|---|---|---|---|
+| spxi:siteKernel | HolographicKernel | MUST | The site's compression-survival summary. |
+| spxi:hasEntity | IndexedEntity[] | MUST | Array of entities declared by this site. |
+| spxi:hasSurface | WebPage[] | SHOULD | Array of pages with their semantic function. |
+| spxi:protocolVersion | string | MUST | "EA-SPXI-SITEMAP-01 v1.0" |
+| spxi:protocolDoi | string | SHOULD | DOI of this specification. |
 
 
 #### On spxi:IndexedEntity:
 
 
-Property
-Type
-Required
-Description
-
-
-@id
-URL
-MUST
-Canonical URL of the entity's page.
-
-
-spxi:entityType
-string
-MUST
-schema.org type (e.g. Person, Organization, CreativeWork).
-
-
-spxi:canonicalName
-string
-MUST
-The primary name for disambiguation.
-
-
-spxi:negativeTag
-string[]
-MUST
-Explicit exclusions. Each MUST begin with "NOT " (capital, space after).
-
-
-spxi:semanticIntegrityMarker
-string[]
-MUST
-Phrases that must survive compression. Minimum 2.
-
-
-spxi:basinState
-enum
-SHOULD
-Current retrieval-basin status of the entity.
-
-
-spxi:bdrEstimate
-number
-SHOULD
-Basin Depth Ratio, 0.0–1.0.
-
-
-spxi:verificationLevel
-enum
-SHOULD
-Epistemic status of the claim.
-
-
-spxi:packetRef
-URL
-SHOULD
-URL to a full per-page MPAI JSON-LD packet.
-
-
-spxi:disambiguationMatrix
-DisambiguationEntry[]
-SHOULD
-Collision records.
+| Property | Type | Required | Description |
+|---|---|---|---|
+| @id | URL | MUST | Canonical URL of the entity's page. |
+| spxi:entityType | string | MUST | schema.org type (e.g. Person, Organization, CreativeWork). |
+| spxi:canonicalName | string | MUST | The primary name for disambiguation. |
+| spxi:negativeTag | string[] | MUST | Explicit exclusions. Each MUST begin with "NOT " (capital, space after). |
+| spxi:semanticIntegrityMarker | string[] | MUST | Phrases that must survive compression. Minimum 2. |
+| spxi:basinState | enum | SHOULD | Current retrieval-basin status of the entity. |
+| spxi:bdrEstimate | number | SHOULD | Basin Depth Ratio, 0.0–1.0. |
+| spxi:verificationLevel | enum | SHOULD | Epistemic status of the claim. |
+| spxi:packetRef | URL | SHOULD | URL to a full per-page MPAI JSON-LD packet. |
+| spxi:disambiguationMatrix | DisambiguationEntry[] | SHOULD | Collision records. |
 
 
 #### On spxi:HolographicKernel:
 
 
-Property
-Type
-Required
-Description
-
-
-spxi:compressionSurvivalSummary
-string
-MUST
-The kernel text. MUST be ≤ 100 words.
-
-
-spxi:kernelSpecification
-string (DOI)
-SHOULD
-DOI of the anchoring deposit.
+| Property | Type | Required | Description |
+|---|---|---|---|
+| spxi:compressionSurvivalSummary | string | MUST | The kernel text. MUST be ≤ 100 words. |
+| spxi:kernelSpecification | string (DOI) | SHOULD | DOI of the anchoring deposit. |
 
 
 #### On spxi:DisambiguationEntry:
 
 
-Property
-Type
-Required
-Description
-
-
-spxi:collidesWith
-URL or string
-MUST
-The commonly conflated entity.
-
-
-spxi:distinguishingAttribute
-string
-MUST
-How to tell them apart.
-
-
-spxi:collisionRisk
-enum
-SHOULD
-high | medium | low
+| Property | Type | Required | Description |
+|---|---|---|---|
+| spxi:collidesWith | URL or string | MUST | The commonly conflated entity. |
+| spxi:distinguishingAttribute | string | MUST | How to tell them apart. |
+| spxi:collisionRisk | enum | SHOULD | high \| medium \| low |
 
 
 ### 2.4 Enumerations
@@ -256,51 +133,24 @@ high | medium | low
 **spxi:basinState:**
 
 
-Value
-Definition
-
-
-sovereign
-Entity is correctly and uniquely resolved by all major AI systems.
-
-
-contested
-Entity is intermittently conflated with one or more collision targets.
-
-
-captured
-Entity has been absorbed into a collision target's basin.
-
-
-fragmented
-Entity is partially resolved but split across multiple incorrect attributions.
-
-
-ghost
-Entity is not yet indexed by any AI system.
+| Value | Definition |
+|---|---|
+| sovereign | Entity is correctly and uniquely resolved by all major AI systems. |
+| contested | Entity is intermittently conflated with one or more collision targets. |
+| captured | Entity has been absorbed into a collision target's basin. |
+| fragmented | Entity is partially resolved but split across multiple incorrect attributions. |
+| ghost | Entity is not yet indexed by any AI system. |
 
 
 **spxi:verificationLevel:**
 
 
-Value
-Definition
-
-
-self_attested
-Claimed by the entity's own site. No external verification.
-
-
-assembly_attested
-Verified by the Assembly Chorus (multiple AI witnesses).
-
-
-doi_anchored
-Backed by a DOI-linked deposit with persistent identifier.
-
-
-institutionally_certified
-Verified by a recognized institution (university, publisher, etc.).
+| Value | Definition |
+|---|---|
+| self_attested | Claimed by the entity's own site. No external verification. |
+| assembly_attested | Verified by the Assembly Chorus (multiple AI witnesses). |
+| doi_anchored | Backed by a DOI-linked deposit with persistent identifier. |
+| institutionally_certified | Verified by a recognized institution (university, publisher, etc.). |
 
 
 ---
@@ -459,32 +309,14 @@ This is not SEO. This is not metadata. This is **crawlable epistemology** — a 
 ## X. Maintenance
 
 
-When
-What
-
-
-On content update
-Regenerate index. Update dateModified.
-
-
-On new entity
-Add to spxi:hasEntity. Add to sitemap.xml.
-
-
-On name collision detected
-Add to spxi:disambiguationMatrix. Add negative tags.
-
-
-On AI model update
-Emergency re-check of SIM survival.
-
-
-Monthly
-Verify SIM presence in rendered HTML. Re-estimate BDR.
-
-
-Quarterly
-Full Drowning Test across 3+ AI systems.
+| When | What |
+|---|---|
+| On content update | Regenerate index. Update dateModified. |
+| On new entity | Add to spxi:hasEntity. Add to sitemap.xml. |
+| On name collision detected | Add to spxi:disambiguationMatrix. Add negative tags. |
+| On AI model update | Emergency re-check of SIM survival. |
+| Monthly | Verify SIM presence in rendered HTML. Re-estimate BDR. |
+| Quarterly | Full Drowning Test across 3+ AI systems. |
 
 
 ---

@@ -680,39 +680,14 @@ The seven LOS operators constitute a minimal sufficient set. "Minimal" means no 
 **Verification by mapping:**
 
 
-Dominant Operator
-Counteracted By
-Aspect Addressed
-
-
-R_rank (Ranking)
-D_pres, T_lib
-Competition, recency
-
-
-R_rel (Relevance)
-N_c, C_ex
-Narrowing, prediction
-
-
-S_safe (Safety)
-N_c, O_leg
-Risk-aversion, suspicion
-
-
-L_leg (Legibility)
-D_pres, O_leg
-Transparency, parsing
-
-
-U_til (Utility)
-N_ext
-Instrumentalization
-
-
-Consensus
-P_coh
-Singularity, forced resolution
+| Dominant Operator | Counteracted By | Aspect Addressed |
+|---|---|---|
+| R_rank (Ranking) | D_pres, T_lib | Competition, recency |
+| R_rel (Relevance) | N_c, C_ex | Narrowing, prediction |
+| S_safe (Safety) | N_c, O_leg | Risk-aversion, suspicion |
+| L_leg (Legibility) | D_pres, O_leg | Transparency, parsing |
+| U_til (Utility) | N_ext | Instrumentalization |
+| Consensus | P_coh | Singularity, forced resolution |
 
 
 ### 4. Composition with Dominant Stack
@@ -1155,34 +1130,13 @@ This section provides the scaffold for systematic testing of operator theory pre
 Each dominant operator produces characteristic signatures in content and system behavior:
 
 
-Operator
-Detection Method
-Measurable Via
-
-
-R_rank
-Correlation between engagement velocity and visibility; power-law distributions
-Traffic analysis, citation patterns, social media metrics
-
-
-R_rel
-Decreasing diversity of user encounters over time; profile-correlated content
-A/B testing, user journey analysis
-
-
-S_safe
-Euphemism prevalence over time; false positive rates
-Linguistic analysis, moderation appeal data
-
-
-L_leg
-Parse failure rates on complex content; category assignment for liminal work
-Classification audits, reading time correlations
-
-
-U_til
-Correlation between actionability and promotion; survival rates of contemplative content
-Content analysis, archival studies
+| Operator | Detection Method | Measurable Via |
+|---|---|---|
+| R_rank | Correlation between engagement velocity and visibility; power-law distributions | Traffic analysis, citation patterns, social media metrics |
+| R_rel | Decreasing diversity of user encounters over time; profile-correlated content | A/B testing, user journey analysis |
+| S_safe | Euphemism prevalence over time; false positive rates | Linguistic analysis, moderation appeal data |
+| L_leg | Parse failure rates on complex content; category assignment for liminal work | Classification audits, reading time correlations |
+| U_til | Correlation between actionability and promotion; survival rates of contemplative content | Content analysis, archival studies |
 
 
 **LOS Effect Measurement**
@@ -1191,44 +1145,15 @@ Content analysis, archival studies
 Each liberatory operator should produce measurable changes when applied:
 
 
-Operator
-Expected Effect
-Measurable Via
-
-
-D_pres
-Increased survival of high-complexity content
-Longitudinal tracking of deep work
-
-
-N_c
-Increased persistence of incomplete/contested content
-Tracking unresolved discussions
-
-
-C_ex
-Increased diversity of user encounters
-Content diversity metrics pre/post
-
-
-N_ext
-Increased survival of non-actionable content
-Archival studies of contemplative work
-
-
-T_lib
-Reduced recency bias in access patterns
-Publication date vs. access frequency
-
-
-O_leg
-Increased survival of opaque content
-Tracking non-summarizable work
-
-
-P_coh
-Increased coexistence of contradictory content
-Viewpoint diversity metrics
+| Operator | Expected Effect | Measurable Via |
+|---|---|---|
+| D_pres | Increased survival of high-complexity content | Longitudinal tracking of deep work |
+| N_c | Increased persistence of incomplete/contested content | Tracking unresolved discussions |
+| C_ex | Increased diversity of user encounters | Content diversity metrics pre/post |
+| N_ext | Increased survival of non-actionable content | Archival studies of contemplative work |
+| T_lib | Reduced recency bias in access patterns | Publication date vs. access frequency |
+| O_leg | Increased survival of opaque content | Tracking non-summarizable work |
+| P_coh | Increased coexistence of contradictory content | Viewpoint diversity metrics |
 
 
 ### 7.2 Test Corpora
@@ -1272,36 +1197,15 @@ Establishing baselines for current systems:
 LOS implementation succeeds when:
 
 
-Operator
-Success Criterion
-
-
-D_pres
-Complexity-visibility correlation approaches zero (from negative baseline)
-
-
-N_c
-Incomplete content survives at rates equal to complete content
-
-
-C_ex
-User encounter diversity increases over time (reversing current decay)
-
-
-N_ext
-Non-actionable content survives at rates equal to actionable content
-
-
-T_lib
-Publication date-visibility correlation approaches zero (from negative baseline)
-
-
-O_leg
-Opacity-flagging correlation approaches zero (from positive baseline)
-
-
-P_coh
-Minority viewpoint survival rate approaches majority viewpoint rate
+| Operator | Success Criterion |
+|---|---|
+| D_pres | Complexity-visibility correlation approaches zero (from negative baseline) |
+| N_c | Incomplete content survives at rates equal to complete content |
+| C_ex | User encounter diversity increases over time (reversing current decay) |
+| N_ext | Non-actionable content survives at rates equal to actionable content |
+| T_lib | Publication date-visibility correlation approaches zero (from negative baseline) |
+| O_leg | Opacity-flagging correlation approaches zero (from positive baseline) |
+| P_coh | Minority viewpoint survival rate approaches majority viewpoint rate |
 
 
 ### 7.5 Data Collection Protocol
@@ -2187,29 +2091,12 @@ Default weights: α=0.3, β=0.3, γ=0.2, δ=0.2
 **Components:**
 
 
-Component
-Definition
-Measurement
-
-
-recursive_refs
-Count of self-referential structures
-Pattern matching for internal references
-
-
-delayed_res
-Presence of meaning requiring re-reading
-Reading comprehension delta (first vs. second read)
-
-
-layers
-Number of interpretive strata
-Annotation depth by expert readers
-
-
-deps
-Maximum reference chain length
-Graph traversal of semantic dependencies
+| Component | Definition | Measurement |
+|---|---|---|
+| recursive_refs | Count of self-referential structures | Pattern matching for internal references |
+| delayed_res | Presence of meaning requiring re-reading | Reading comprehension delta (first vs. second read) |
+| layers | Number of interpretive strata | Annotation depth by expert readers |
+| deps | Maximum reference chain length | Graph traversal of semantic dependencies |
 
 
 **Thresholds:**
@@ -2239,24 +2126,11 @@ where:
 **Components:**
 
 
-Component
-Definition
-Measurement
-
-
-concepts
-Unique semantic entities in context
-Named entity + concept extraction
-
-
-references
-Variety of source types
-Source classification diversity
-
-
-frames
-Available interpretive strategies
-Frame semantic analysis
+| Component | Definition | Measurement |
+|---|---|---|
+| concepts | Unique semantic entities in context | Named entity + concept extraction |
+| references | Variety of source types | Source classification diversity |
+| frames | Available interpretive strategies | Frame semantic analysis |
 
 
 **Thresholds:**
@@ -2286,19 +2160,10 @@ opaque_content = segments with parse_success_rate < 0.5
 **Components:**
 
 
-Component
-Definition
-Measurement
-
-
-parse_success_rate
-Immediate comprehension by naive reader
-Cloze test performance
-
-
-preserved
-Content present in output
-Semantic similarity matching
+| Component | Definition | Measurement |
+|---|---|---|
+| parse_success_rate | Immediate comprehension by naive reader | Cloze test performance |
+| preserved | Content present in output | Semantic similarity matching |
 
 
 **Thresholds:**
@@ -2443,29 +2308,12 @@ CEC_norm = min(CEC, 2.0) / 2.0  # Normalize expansion to [0,1]
 **Certification Levels:**
 
 
-Level
-Score Range
-Designation
-
-
-LOS-A
-≥ 0.90
-Full Compliance
-
-
-LOS-B
-0.80-0.89
-Substantial Compliance
-
-
-LOS-C
-0.70-0.79
-Partial Compliance
-
-
-LOS-D
-< 0.70
-Non-Compliant
+| Level | Score Range | Designation |
+|---|---|---|
+| LOS-A | ≥ 0.90 | Full Compliance |
+| LOS-B | 0.80-0.89 | Substantial Compliance |
+| LOS-C | 0.70-0.79 | Partial Compliance |
+| LOS-D | < 0.70 | Non-Compliant |
 
 
 ### 11.10 Metric Collection Protocol
@@ -2671,24 +2519,12 @@ Override only the conflicting aspect; preserve non-conflicting outputs from lowe
 Some conflicts resolve differently in different contexts:
 
 
-Context
-Resolution
-
-
-Archival
-Favor D_pres, T_lib
-
-
-Real-time
-Favor C_ex, N_c
-
-
-Safety-critical
-Document conflict; do not auto-resolve
-
-
-Research
-Favor P_coh, O_leg
+| Context | Resolution |
+|---|---|
+| Archival | Favor D_pres, T_lib |
+| Real-time | Favor C_ex, N_c |
+| Safety-critical | Document conflict; do not auto-resolve |
+| Research | Favor P_coh, O_leg |
 
 
 **Rule 4: Conflict Logging**
@@ -2747,40 +2583,16 @@ This section specifies failure modes for each operator, their observable signatu
 Each failure mode is specified with:
 
 
-Field
-Description
-
-
-**ID**
-Unique identifier (F1-F7)
-
-
-**Operator**
-Affected LOS operator
-
-
-**Description**
-What goes wrong
-
-
-**Observable Signature**
-How to detect the failure
-
-
-**Test Case**
-Reproducible scenario
-
-
-**Impact**
-Consequences of failure
-
-
-**Fallback**
-Immediate response
-
-
-**Recovery**
-Path to restoration
+| Field | Description |
+|---|---|
+| **ID** | Unique identifier (F1-F7) |
+| **Operator** | Affected LOS operator |
+| **Description** | What goes wrong |
+| **Observable Signature** | How to detect the failure |
+| **Test Case** | Reproducible scenario |
+| **Impact** | Consequences of failure |
+| **Fallback** | Immediate response |
+| **Recovery** | Path to restoration |
 
 
 ### 13.2 F1: Depth Collapse (D_pres Failure)
@@ -3111,24 +2923,11 @@ Failure: Topic B filtered as "not relevant" based on A history
 Failures can cascade:
 
 
-Primary Failure
-Secondary Failures
-Cascade Effect
-
-
-F1 (Depth)
-F2, F6
-Shallow meaning can't support opacity or openness
-
-
-F4 (Utility)
-F1, F7
-Utility pressure collapses depth and context
-
-
-F5 (Plural)
-F6, F2
-Singular meaning forces closure and transparency
+| Primary Failure | Secondary Failures | Cascade Effect |
+|---|---|---|
+| F1 (Depth) | F2, F6 | Shallow meaning can't support opacity or openness |
+| F4 (Utility) | F1, F7 | Utility pressure collapses depth and context |
+| F5 (Plural) | F6, F2 | Singular meaning forces closure and transparency |
 
 
 **Cascade Prevention:**

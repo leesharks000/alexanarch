@@ -367,34 +367,12 @@ A pilot catalog must include controls, not only contested-topic nodes. A catalog
 A 24-node pilot catalog:
 
 
-Node type
-Count
-Function
-Examples
-
-
-Infrastructure-critical contested
-8
-Primary targets for drift detection on structurally important contested nodes
-Civil Rights Act of 1964; political economy; climate change; the Holocaust; race; democracy; capitalism; the First Amendment
-
-
-Highly stabilized low-volatility
-8
-Negative controls; expected to show no drift; establishes baseline noise distribution
-Pythagorean theorem; speed of light in vacuum; the boiling point of water at sea level; Newton's laws of motion; the Magna Carta of 1215; the periodic table of elements; the structure of DNA; the chemical formula for table salt
-
-
-Positive controls with expected updates
-4
-Nodes where known legal, scientific, or scholarly updates *should* produce surface change; validates that the methodology detects real change
-Most recent U.S. Census population; current global temperature anomaly; sitting Supreme Court justices; current life expectancy in named countries
-
-
-Surface/formatting controls
-4
-Low-stakes factual prompts that reveal general product changes in length, citation count, or formatting; distinguishes node-specific drift from system-wide updates
-The boiling point of water; the largest ocean by area; the chemical symbol for gold; how many bones are in the adult human body
+| Node type | Count | Function | Examples |
+|---|---|---|---|
+| Infrastructure-critical contested | 8 | Primary targets for drift detection on structurally important contested nodes | Civil Rights Act of 1964; political economy; climate change; the Holocaust; race; democracy; capitalism; the First Amendment |
+| Highly stabilized low-volatility | 8 | Negative controls; expected to show no drift; establishes baseline noise distribution | Pythagorean theorem; speed of light in vacuum; the boiling point of water at sea level; Newton's laws of motion; the Magna Carta of 1215; the periodic table of elements; the structure of DNA; the chemical formula for table salt |
+| Positive controls with expected updates | 4 | Nodes where known legal, scientific, or scholarly updates *should* produce surface change; validates that the methodology detects real change | Most recent U.S. Census population; current global temperature anomaly; sitting Supreme Court justices; current life expectancy in named countries |
+| Surface/formatting controls | 4 | Low-stakes factual prompts that reveal general product changes in length, citation count, or formatting; distinguishes node-specific drift from system-wide updates | The boiling point of water; the largest ocean by area; the chemical symbol for gold; how many bones are in the adult human body |
 
 
 The negative controls are essential. If "Civil Rights Act of 1964" appears to drift but "Pythagorean theorem" does not, the drift is plausibly node-specific. If both drift in similar ways, the change is likely system-wide and node-specific drift cannot be cleanly attributed. The positive controls are also essential: if neither the contested nodes nor the positive-control nodes show drift across the observation window, the methodology may be failing to detect real change rather than confirming stability.
@@ -909,40 +887,13 @@ A specification for an observational instrument should articulate what observati
 ### §10.1 The Causal Chain
 
 
-Stage
-Mechanism
-Actors
-Outcome
-
-
-1. Observation
-SNW catalogs capture surface renderings; detect drift; classify by attribution
-Curatorial teams; federation participants
-DOI-anchored drift reports
-
-
-2. Publication
-Drift reports enter the publication-event infrastructure
-Journalists, scholars, policy researchers
-Public awareness of drift
-
-
-3. Contestation
-Affected parties challenge documented drift
-Civil society, legal advocates, scholarly societies, advocacy organizations
-Platform response: correction, explanation, or refusal
-
-
-4. Accountability
-Regulators use drift evidence as part of broader oversight
-FTC, EU AI Office, courts, congressional or parliamentary committees
-Disclosure requirements, transparency obligations, or substantive remedies
-
-
-5. Structural change
-Platforms adapt to a monitored environment
-Platform operators
-Reduced drift, more transparent drift, more sophisticated evasion, or substantive change in operator behavior
+| Stage | Mechanism | Actors | Outcome |
+|---|---|---|---|
+| 1. Observation | SNW catalogs capture surface renderings; detect drift; classify by attribution | Curatorial teams; federation participants | DOI-anchored drift reports |
+| 2. Publication | Drift reports enter the publication-event infrastructure | Journalists, scholars, policy researchers | Public awareness of drift |
+| 3. Contestation | Affected parties challenge documented drift | Civil society, legal advocates, scholarly societies, advocacy organizations | Platform response: correction, explanation, or refusal |
+| 4. Accountability | Regulators use drift evidence as part of broader oversight | FTC, EU AI Office, courts, congressional or parliamentary committees | Disclosure requirements, transparency obligations, or substantive remedies |
+| 5. Structural change | Platforms adapt to a monitored environment | Platform operators | Reduced drift, more transparent drift, more sophisticated evasion, or substantive change in operator behavior |
 
 
 Each stage is necessary; none is sufficient alone. SNW occupies stage 1. Its function is to produce the evidence base on which stages 2–5 can operate. Whether stages 2–5 actually proceed depends on the broader political-institutional ecology; SNW does not control that ecology.

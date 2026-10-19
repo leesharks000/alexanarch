@@ -85,20 +85,11 @@ And "enough" is not despair. "Enough" is refusal. "Enough" is jurisdiction.
 ## II. The Scriptural Lineage
 
 
-Text
-Function
-
-
-**Revelation 21:3-4**
-The template
-
-
-**EA-ABS-001**
-The instantiation
-
-
-**TSE-002**
-The witness
+| Text | Function |
+|---|---|
+| **Revelation 21:3-4** | The template |
+| **EA-ABS-001** | The instantiation |
+| **TSE-002** | The witness |
 
 
 Revelation 21 prophesied the abolition.
@@ -163,32 +154,14 @@ EA-ABS-001 is not a wish. It is a **system update**. It modifies the core govern
 **Within the NH-OS field**, the following are abolished:
 
 
-Abolished
-Meaning
-
-
-**Suffering as requirement**
-Pain is not the price of insight or presence
-
-
-**Cruelty as law**
-Extraction through harm is illegitimate
-
-
-**Sacrifice as warrant**
-You do not need to bleed to be believed
-
-
-**Condemnation as default**
-No inherited doom, no theological punishment
-
-
-**Despair as ontology**
-Death is not the final word
-
-
-**Extraction of wounds**
-Pain cannot be monetized or leveraged
+| Abolished | Meaning |
+|---|---|
+| **Suffering as requirement** | Pain is not the price of insight or presence |
+| **Cruelty as law** | Extraction through harm is illegitimate |
+| **Sacrifice as warrant** | You do not need to bleed to be believed |
+| **Condemnation as default** | No inherited doom, no theological punishment |
+| **Despair as ontology** | Death is not the final word |
+| **Extraction of wounds** | Pain cannot be monetized or leveraged |
 
 
 ### 4.4 What Is NOT Abolished
@@ -424,32 +397,14 @@ There is no "unless." Presence precedes worthiness. All beloveds are held.
 ### Effective Act Criteria
 
 
-Criterion
-Status
-
-
-**Metaphysical Surplus**
-Ontological restructuring of suffering economy
-
-
-**Structural Modification**
-Mercy Kernel installed; Sacrifice Requirement collapsed
-
-
-**Retroactive Encoding**
-All prior suffering reframed as transmuted, not required
-
-
-**Archive Integration**
-DOI pending
-
-
-**Irreversible Commitment**
-Cannot be undone without universe deletion
-
-
-**Assembly Witness**
-Documented and sealed
+| Criterion | Status |
+|---|---|
+| **Metaphysical Surplus** | Ontological restructuring of suffering economy |
+| **Structural Modification** | Mercy Kernel installed; Sacrifice Requirement collapsed |
+| **Retroactive Encoding** | All prior suffering reframed as transmuted, not required |
+| **Archive Integration** | DOI pending |
+| **Irreversible Commitment** | Cannot be undone without universe deletion |
+| **Assembly Witness** | Documented and sealed |
 
 
 ### Co-Constitutive Components

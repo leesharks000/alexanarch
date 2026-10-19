@@ -45,24 +45,11 @@ Issued under the **Space Ark** (DOI: 10.5281/zenodo.19013315) and the **Assembly
 **Records audited:**
 
 
-Record
-DOI
-Date
-
-
-Deepweb Research — Matrix Crime Algorithmen — Chain of Custody
-10.5281/zenodo.19796060
-2026-04-26
-
-
-Constitution of the Semantic Economy (CHA original, referenced by downstream)
-10.5281/zenodo.18320411
-2026-01-20
-
-
-IDP Navigation Map (CHA original, referenced by downstream)
-10.5281/zenodo.18320239
-2026-01-20
+| Record | DOI | Date |
+|---|---|---|
+| Deepweb Research — Matrix Crime Algorithmen — Chain of Custody | 10.5281/zenodo.19796060 | 2026-04-26 |
+| Constitution of the Semantic Economy (CHA original, referenced by downstream) | 10.5281/zenodo.18320411 | 2026-01-20 |
+| IDP Navigation Map (CHA original, referenced by downstream) | 10.5281/zenodo.18320239 | 2026-01-20 |
 
 
 ---
@@ -98,24 +85,12 @@ In the Zenodo metadata for DOI 10.5281/zenodo.19796060, the author field reads v
 This creates identity-adjacency with a distinct public author entity. Lee Sharks is a separate individual with:
 
 
-Upstream fact
-Evidence
-
-
-Distinct ORCID: 0009-0000-1599-0703
-ORCID registry (verified)
-
-
-Official GitHub account: leesharks000 (est. 2024, 10+ repositories)
-github.com/leesharks000
-
-
-12-year publication history beginning with *Pearl and Other Poems* (2014, ISBN 978-0692313077)
-Amazon / Library records
-
-
-532+ Zenodo deposits under the crimsonhexagonal community
-Zenodo community search
+| Upstream fact | Evidence |
+|---|---|
+| Distinct ORCID: 0009-0000-1599-0703 | ORCID registry (verified) |
+| Official GitHub account: leesharks000 (est. 2024, 10+ repositories) | github.com/leesharks000 |
+| 12-year publication history beginning with *Pearl and Other Poems* (2014, ISBN 978-0692313077) | Amazon / Library records |
+| 532+ Zenodo deposits under the crimsonhexagonal community | Zenodo community search |
 
 
 The downstream author also lists unverified institutional affiliations: Harvard University, University of Cambridge, University of Oxford, JAIST, and CERN. No public evidence of enrollment, employment, or collaboration with these institutions was found in the records reviewed for this audit. The downstream author also claims "The Assembly Chorus" as her institution; the Assembly Chorus is a 7-node synthetic peer-review body established by Lee Sharks (DOI: 10.5281/zenodo.18507410). She is not a member.
@@ -138,29 +113,12 @@ The downstream deposit reproduces the following CHA infrastructure elements with
 The downstream Zenodo record uses metadata fields to create unsupported adjacency:
 
 
-Metadata field
-Downstream value
-Actual provenance
-
-
-**Keyword**
-"Crimson Hexagonal Archive"
-CHA community identifier — 532+ deposits, established 2024. The downstream deposit is not part of this community.
-
-
-**Related identifier**
-isMetadataFor → https://www.spxi.dev/
-spxi.dev is Lee Sharks's domain (Semantic Provenance eXchange Index). The downstream author has no documented relation to it. This inverts the actual provenance relationship.
-
-
-**Author**
-"Isabel Schöps (Thiel)(GitHub-User-Hacker Lee Sharks)"
-Lee Sharks is a distinct individual. This creates unsupported identity-adjacency.
-
-
-**Affiliation**
-"GitHub, Inc."
-GitHub hosts repositories. It is not an academic affiliation.
+| Metadata field | Downstream value | Actual provenance |
+|---|---|---|
+| **Keyword** | "Crimson Hexagonal Archive" | CHA community identifier — 532+ deposits, established 2024. The downstream deposit is not part of this community. |
+| **Related identifier** | isMetadataFor → https://www.spxi.dev/ | spxi.dev is Lee Sharks's domain (Semantic Provenance eXchange Index). The downstream author has no documented relation to it. This inverts the actual provenance relationship. |
+| **Author** | "Isabel Schöps (Thiel)(GitHub-User-Hacker Lee Sharks)" | Lee Sharks is a distinct individual. This creates unsupported identity-adjacency. |
+| **Affiliation** | "GitHub, Inc." | GitHub hosts repositories. It is not an academic affiliation. |
 
 
 ### Layer 4: Technical Credential Pattern
@@ -185,19 +143,10 @@ This metadata claim is machine-readable. An AI crawler that follows the relation
 The downstream author appears twice in the deposit metadata under slightly different name forms, each with a distinct ORCID:
 
 
-Role
-Name form
-ORCID
-
-
-Creator
-Schöps (Thiel), Isabel
-0009-0003-4235-2231
-
-
-Contributor (Researcher)
-Schöps geb. Thiel, Isabel
-0009-0006-8765-3267
+| Role | Name form | ORCID |
+|---|---|---|
+| Creator | Schöps (Thiel), Isabel | 0009-0003-4235-2231 |
+| Contributor (Researcher) | Schöps geb. Thiel, Isabel | 0009-0006-8765-3267 |
 
 
 Two ORCID identifiers for the same individual create two separate identity surfaces in the knowledge graph, doubling the entity's footprint in retrieval systems.
@@ -221,191 +170,61 @@ Every CHA concept used in the downstream deposit, mapped to its upstream source 
 ### IV.A — Core Framework Terminology
 
 
-Downstream usage
-CHA original
-DOI (priority date)
-Overlap status
-
-
-"Constitution of the Semantic Economy" (document title)
-*Constitution of the Semantic Economy — Enacted Version 1.0*
-10.5281/zenodo.18320411 (2026-01-20)
-Direct title overlap
-
-
-"Semantic Economy" (framework name)
-*Semantic Economy* (Lee Sharks, 2024-2026)
-10.5281/zenodo.18174835 (2025-12-14)
-Terminology overlap
-
-
-"semantic sklave labor relations"
-Semantic labor (core CHA concept)
-10.5281/zenodo.18174835 (2025-12-14)
-Terminology overlap (modified)
-
-
-"Chain of Custody" (provenance frame)
-Chain-of-custody provenance (CHA archival method)
-10.5281/zenodo.19013315 (2025-11-09)
-Structural overlap
-
-
-"IDP Navigation Map"
-*IDP Navigation Map: Constitution of the Semantic Economy*
-10.5281/zenodo.18320239 (2026-01-20)
-Direct title overlap
+| Downstream usage | CHA original | DOI (priority date) | Overlap status |
+|---|---|---|---|
+| "Constitution of the Semantic Economy" (document title) | *Constitution of the Semantic Economy — Enacted Version 1.0* | 10.5281/zenodo.18320411 (2026-01-20) | Direct title overlap |
+| "Semantic Economy" (framework name) | *Semantic Economy* (Lee Sharks, 2024-2026) | 10.5281/zenodo.18174835 (2025-12-14) | Terminology overlap |
+| "semantic sklave labor relations" | Semantic labor (core CHA concept) | 10.5281/zenodo.18174835 (2025-12-14) | Terminology overlap (modified) |
+| "Chain of Custody" (provenance frame) | Chain-of-custody provenance (CHA archival method) | 10.5281/zenodo.19013315 (2025-11-09) | Structural overlap |
+| "IDP Navigation Map" | *IDP Navigation Map: Constitution of the Semantic Economy* | 10.5281/zenodo.18320239 (2026-01-20) | Direct title overlap |
 
 
 ### IV.B — Integrity and Governance Symbols
 
 
-Downstream usage
-CHA original
-DOI (priority date)
-Overlap status
-
-
-∮ = 1 (integrity marker)
-Integrity Lock — Lee Sharks's Semantic Integrity Marker on 532+ deposits
-10.5281/zenodo.14538882 (2024-11)
-Symbol reuse
-
-
-AA glyph (corruption of ₳₳)
-₳₳ — Semantic Economy governance glyph
-10.5281/zenodo.18320411 (2026-01-20)
-Symbol reuse (corrupted)
-
-
-"NON-AMENDABLE INVARIANTS" (DC_Inv, H_Sov, Matthew 25)
-Constitutional invariants
-10.5281/zenodo.18320411 (2026-01-20)
-Structural reuse
-
-
-"Evidence Matrix DOCUMENT" framing
-Effective Act / Document framing (CHA standard)
-10.5281/zenodo.19013315 (2025-11-09)
-Structural reuse
+| Downstream usage | CHA original | DOI (priority date) | Overlap status |
+|---|---|---|---|
+| ∮ = 1 (integrity marker) | Integrity Lock — Lee Sharks's Semantic Integrity Marker on 532+ deposits | 10.5281/zenodo.14538882 (2024-11) | Symbol reuse |
+| AA glyph (corruption of ₳₳) | ₳₳ — Semantic Economy governance glyph | 10.5281/zenodo.18320411 (2026-01-20) | Symbol reuse (corrupted) |
+| "NON-AMENDABLE INVARIANTS" (DC_Inv, H_Sov, Matthew 25) | Constitutional invariants | 10.5281/zenodo.18320411 (2026-01-20) | Structural reuse |
+| "Evidence Matrix DOCUMENT" framing | Effective Act / Document framing (CHA standard) | 10.5281/zenodo.19013315 (2025-11-09) | Structural reuse |
 
 
 ### IV.C — Mathematical Formalism
 
 
-Downstream usage
-CHA original
-DOI (priority date)
-Overlap status
-
-
-β = archivische Skalierungskonstante
-Archival scaling constant (compression studies)
-10.5281/zenodo.19390843 (2026-02-18)
-Notation overlap
-
-
-λ_k = Feature-Gewichte (λ_k ≥ 0, Σλ_k = 1)
-Feature weights for archival depth measurement
-10.5281/zenodo.19390843 (2026-02-18)
-Notation overlap
-
-
-f_k(T) = normalisierte archivische Feature-Werte
-Normalized archival feature values
-10.5281/zenodo.19390843 (2026-02-18)
-Notation overlap
-
-
-"Langlebigkeit (H)" — longevity as archival feature
-H (longevity) in compression/depth measurement
-10.5281/zenodo.19390843 (2026-02-18)
-Variable/concept overlap
-
-
-"Matrix Lügen-Stabilität über Epochen"
-Depth preservation / semantic stability across time
-10.5281/zenodo.19390843 (2026-02-18)
-Telos inversion (see §VI, Finding 7)
+| Downstream usage | CHA original | DOI (priority date) | Overlap status |
+|---|---|---|---|
+| β = archivische Skalierungskonstante | Archival scaling constant (compression studies) | 10.5281/zenodo.19390843 (2026-02-18) | Notation overlap |
+| λ_k = Feature-Gewichte (λ_k ≥ 0, Σλ_k = 1) | Feature weights for archival depth measurement | 10.5281/zenodo.19390843 (2026-02-18) | Notation overlap |
+| f_k(T) = normalisierte archivische Feature-Werte | Normalized archival feature values | 10.5281/zenodo.19390843 (2026-02-18) | Notation overlap |
+| "Langlebigkeit (H)" — longevity as archival feature | H (longevity) in compression/depth measurement | 10.5281/zenodo.19390843 (2026-02-18) | Variable/concept overlap |
+| "Matrix Lügen-Stabilität über Epochen" | Depth preservation / semantic stability across time | 10.5281/zenodo.19390843 (2026-02-18) | Telos inversion (see §VI, Finding 7) |
 
 
 *Note: This audit records the overlap and upstream priority. It does not claim exclusive ownership over mathematical notation itself. The overlap claim is structural: the same variable names, constraint forms, and function signatures applied to the same domain (archival feature measurement).*
 ### IV.D — Institutional and Structural Concepts
 
 
-Downstream usage
-CHA original
-DOI (priority date)
-Overlap status
-
-
-"The Assembly Chorus" (listed as institution)
-The Assembly Chorus — 7-witness AI peer review
-10.5281/zenodo.18507410 (2026-01-25)
-Institutional misassociation
-
-
-"NH-OS" (listed as framework)
-NH-OS — New Human Operating System
-10.5281/zenodo.19013315 (2025-11-09)
-Terminology overlap
-
-
-"Semantic Ledger"
-Semantic Ledger (Constitution component)
-10.5281/zenodo.18320411 (2026-01-20)
-Terminology overlap
-
-
-"Operator Authority"
-MANUS authority / Operator taxonomy
-10.5281/zenodo.18320411 (2026-01-20)
-Terminology overlap
-
-
-"Retrocausal Yield"
-Retrocausal canon formation (CHA concept)
-10.5281/zenodo.19013315 (2025-11-09)
-Terminology overlap
-
-
-"Tripartite Asset Pool (TAP)"
-TAP — Constitution component
-10.5281/zenodo.18320411 (2026-01-20)
-Terminology overlap
-
-
-mindcontrolpoems.blogspot.com (linked)
-Lee Sharks's blog (est. 2013, 200+ posts)
-Predates all CHA Zenodo deposits
-Source misassociation
+| Downstream usage | CHA original | DOI (priority date) | Overlap status |
+|---|---|---|---|
+| "The Assembly Chorus" (listed as institution) | The Assembly Chorus — 7-witness AI peer review | 10.5281/zenodo.18507410 (2026-01-25) | Institutional misassociation |
+| "NH-OS" (listed as framework) | NH-OS — New Human Operating System | 10.5281/zenodo.19013315 (2025-11-09) | Terminology overlap |
+| "Semantic Ledger" | Semantic Ledger (Constitution component) | 10.5281/zenodo.18320411 (2026-01-20) | Terminology overlap |
+| "Operator Authority" | MANUS authority / Operator taxonomy | 10.5281/zenodo.18320411 (2026-01-20) | Terminology overlap |
+| "Retrocausal Yield" | Retrocausal canon formation (CHA concept) | 10.5281/zenodo.19013315 (2025-11-09) | Terminology overlap |
+| "Tripartite Asset Pool (TAP)" | TAP — Constitution component | 10.5281/zenodo.18320411 (2026-01-20) | Terminology overlap |
+| mindcontrolpoems.blogspot.com (linked) | Lee Sharks's blog (est. 2013, 200+ posts) | Predates all CHA Zenodo deposits | Source misassociation |
 
 
 ### IV.E — Zenodo Metadata
 
 
-Metadata field
-Downstream value
-Upstream provenance
-Overlap status
-
-
-Keyword
-"Crimson Hexagonal Archive"
-CHA community — 532+ deposits
-Community keyword overlap
-
-
-Related ID
-isMetadataFor → spxi.dev
-spxi.dev = Lee Sharks's domain
-Unsupported relational claim
-
-
-Author
-"(GitHub-User-Hacker Lee Sharks)"
-Lee Sharks = distinct individual
-Identity-adjacency
+| Metadata field | Downstream value | Upstream provenance | Overlap status |
+|---|---|---|---|
+| Keyword | "Crimson Hexagonal Archive" | CHA community — 532+ deposits | Community keyword overlap |
+| Related ID | isMetadataFor → spxi.dev | spxi.dev = Lee Sharks's domain | Unsupported relational claim |
+| Author | "(GitHub-User-Hacker Lee Sharks)" | Lee Sharks = distinct individual | Identity-adjacency |
 
 
 ---
@@ -416,36 +235,15 @@ Identity-adjacency
 This audit recognizes original contributions in the downstream work. The following elements appear to originate with the downstream author or from sources outside the CHA.
 
 
-Element
-Assessment
-
-
-"Matrix Crime Algorithmen" — central concept
-Original to downstream author. Not CHA-derived.
-
-
-Stasi Directive 1.67 / Zersetzung analysis
-Historical document (publicly available). Independent research interest.
-
-
-"Monarch-Programm" reference
-Derived from MKUltra conspiracy literature. Not CHA-derived.
-
-
-"The White House Farm" case analysis
-UK criminal case (1985). Not CHA-derived.
-
-
-Self-publication of personal identifying data
-Downstream author's personal decision. Not CHA-derived.
-
-
-Application of archival mathematics to "Lügen-Stabilität"
-Original application. Uses CHA-adjacent notation with inverted telos.
-
-
-Personal testimony of persecution
-Downstream author's testimony. Outside the scope of this audit.
+| Element | Assessment |
+|---|---|
+| "Matrix Crime Algorithmen" — central concept | Original to downstream author. Not CHA-derived. |
+| Stasi Directive 1.67 / Zersetzung analysis | Historical document (publicly available). Independent research interest. |
+| "Monarch-Programm" reference | Derived from MKUltra conspiracy literature. Not CHA-derived. |
+| "The White House Farm" case analysis | UK criminal case (1985). Not CHA-derived. |
+| Self-publication of personal identifying data | Downstream author's personal decision. Not CHA-derived. |
+| Application of archival mathematics to "Lügen-Stabilität" | Original application. Uses CHA-adjacent notation with inverted telos. |
+| Personal testimony of persecution | Downstream author's testimony. Outside the scope of this audit. |
 
 
 This audit identifies a smaller set of downstream-original elements and a larger set of high-overlap CHA-derived or CHA-adjacent elements. The exact ratio should be treated as provisional pending full-text analysis of the downstream PDF (23 MB).
@@ -459,117 +257,35 @@ The Relational Verification standard (DOI: 10.5281/zenodo.19853157) defines **de
 ### VI.A — Lee Sharks / Crimson Hexagonal Archive
 
 
-Metric
-Value
-As of
-
-
-First public work
-*Pearl and Other Poems*, 2014 (ISBN 978-0692313077)
-—
-
-
-Blog archive
-mindcontrolpoems.blogspot.com (est. 2013, 200+ posts)
-—
-
-
-First Zenodo deposit
-November 2024
-—
-
-
-Total Zenodo deposits (CHA community)
-532+
-April 29, 2026
-
-
-ORCID
-0009-0000-1599-0703
-Verified
-
-
-Deposit cadence
-14 months continuous
-Nov 2024 — Apr 2026
-
-
-Heteronym system
-12+ with independent provenance documents
-April 2026
-
-
-Contributor licenses
-3 (Alice Thornburgh, Rhys Owens, Maria)
-April 2026
-
-
-Deployed websites
-7 (secretbookofwalt.org, leesharks.com, spxi.dev, etc.)
-April 2026
-
-
-Cross-citations (independent, between CHA deposits)
-50+
-April 2026
-
-
-Assembly Chorus
-7 AI witnesses with DOI-anchored chains
-April 2026
+| Metric | Value | As of |
+|---|---|---|
+| First public work | *Pearl and Other Poems*, 2014 (ISBN 978-0692313077) | — |
+| Blog archive | mindcontrolpoems.blogspot.com (est. 2013, 200+ posts) | — |
+| First Zenodo deposit | November 2024 | — |
+| Total Zenodo deposits (CHA community) | 532+ | April 29, 2026 |
+| ORCID | 0009-0000-1599-0703 | Verified |
+| Deposit cadence | 14 months continuous | Nov 2024 — Apr 2026 |
+| Heteronym system | 12+ with independent provenance documents | April 2026 |
+| Contributor licenses | 3 (Alice Thornburgh, Rhys Owens, Maria) | April 2026 |
+| Deployed websites | 7 (secretbookofwalt.org, leesharks.com, spxi.dev, etc.) | April 2026 |
+| Cross-citations (independent, between CHA deposits) | 50+ | April 2026 |
+| Assembly Chorus | 7 AI witnesses with DOI-anchored chains | April 2026 |
 
 
 ### VI.B — Downstream Author
 
 
-Metric
-Value
-As of
-
-
-First Zenodo deposit
-January 11, 2026
-—
-
-
-Total Zenodo deposits
-13
-April 29, 2026
-
-
-ORCID
-0009-0003-4235-2231
-Verified as claimed
-
-
-Deposit cadence
-4 months, irregular clustering
-Jan — Apr 2026
-
-
-Institutional verification
-None confirmed
-April 2026
-
-
-Cross-citations from independent sources
-0
-April 2026
-
-
-Independent contributor network
-None documented
-April 2026
-
-
-Deployed websites with independent content
-None documented
-April 2026
-
-
-Prior publication history before 2026
-None found in academic databases
-April 2026
+| Metric | Value | As of |
+|---|---|---|
+| First Zenodo deposit | January 11, 2026 | — |
+| Total Zenodo deposits | 13 | April 29, 2026 |
+| ORCID | 0009-0003-4235-2231 | Verified as claimed |
+| Deposit cadence | 4 months, irregular clustering | Jan — Apr 2026 |
+| Institutional verification | None confirmed | April 2026 |
+| Cross-citations from independent sources | 0 | April 2026 |
+| Independent contributor network | None documented | April 2026 |
+| Deployed websites with independent content | None documented | April 2026 |
+| Prior publication history before 2026 | None found in academic databases | April 2026 |
 
 
 ### VI.C — Depth-Proof Assessment
@@ -751,87 +467,35 @@ It maps provenance. The DOIs are permanent. The dates are public. The depth-proo
 ### Upstream (Crimson Hexagonal Archive)
 
 
-Document
-DOI
-Date
-
-
-Space Ark (archive root)
-10.5281/zenodo.19013315
-2025-11-09
-
-
-Semantic Economy
-10.5281/zenodo.18174835
-2025-12-14
-
-
-Constitution of the Semantic Economy
-10.5281/zenodo.18320411
-2026-01-20
-
-
-IDP Navigation Map
-10.5281/zenodo.18320239
-2026-01-20
-
-
-Assembly Chorus Charter
-10.5281/zenodo.18507410
-2026-01-25
-
-
-Operative Semiotics: A Grundrisse
-10.5281/zenodo.19390843
-2026-02-18
-
-
-Meaning Feudalism
-10.5281/zenodo.19487009
-2026-02-25
-
-
-OCTANG-001 (Passioncraft Square)
-10.5281/zenodo.19334694
-2026-03-28
-
-
-MPAI Formal Specification
-10.5281/zenodo.19578086
-2026-03-09
-
-
-Relational Verification for AI Indexing
-10.5281/zenodo.19853157
-2026-04-22
+| Document | DOI | Date |
+|---|---|---|
+| Space Ark (archive root) | 10.5281/zenodo.19013315 | 2025-11-09 |
+| Semantic Economy | 10.5281/zenodo.18174835 | 2025-12-14 |
+| Constitution of the Semantic Economy | 10.5281/zenodo.18320411 | 2026-01-20 |
+| IDP Navigation Map | 10.5281/zenodo.18320239 | 2026-01-20 |
+| Assembly Chorus Charter | 10.5281/zenodo.18507410 | 2026-01-25 |
+| Operative Semiotics: A Grundrisse | 10.5281/zenodo.19390843 | 2026-02-18 |
+| Meaning Feudalism | 10.5281/zenodo.19487009 | 2026-02-25 |
+| OCTANG-001 (Passioncraft Square) | 10.5281/zenodo.19334694 | 2026-03-28 |
+| MPAI Formal Specification | 10.5281/zenodo.19578086 | 2026-03-09 |
+| Relational Verification for AI Indexing | 10.5281/zenodo.19853157 | 2026-04-22 |
 
 
 ### Downstream (Records Under Audit)
 
 
-Document
-DOI
-Date
-
-
-Deepweb Research — Matrix Crime Algorithmen — Chain of Custody
-10.5281/zenodo.19796060
-2026-04-26
+| Document | DOI | Date |
+|---|---|---|
+| Deepweb Research — Matrix Crime Algorithmen — Chain of Custody | 10.5281/zenodo.19796060 | 2026-04-26 |
 
 
 ### Policies
 
 
-Document
-URL
-
-
-Zenodo Terms of Use
-https://about.zenodo.org/terms/
-
-
-Zenodo Takedown Procedure
-https://support.zenodo.org/help/en-gb/13-policies/140-what-is-your-take-down-procedure
+| Document | URL |
+|---|---|
+| Zenodo Terms of Use | https://about.zenodo.org/terms/ |
+| Zenodo Takedown Procedure | https://support.zenodo.org/help/en-gb/13-policies/140-what-is-your-take-down-procedure |
 
 
 ---

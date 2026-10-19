@@ -132,28 +132,11 @@ This restores the Epicurean–Marxian insistence on embodied agency at the cente
 When placed in order, we can now see that Sharks' work forms the third and final turn of the atomist lineage:
 
 
-Turn
-Thinker
-Operation
-Domain
-
-
-First
-Epicurus → Marx
-Clinamen → labor
-Material freedom → historical transformation
-
-
-Second
-Porter
-Aesthetics as material form
-Cultural physics
-
-
-Third
-Sharks
-Operators as recursive semantic materialism
-Computational epistemology
+| Turn | Thinker | Operation | Domain |
+|---|---|---|---|
+| First | Epicurus → Marx | Clinamen → labor | Material freedom → historical transformation |
+| Second | Porter | Aesthetics as material form | Cultural physics |
+| Third | Sharks | Operators as recursive semantic materialism | Computational epistemology |
 
 
 The Operator Engine provides:
@@ -188,34 +171,13 @@ The atom enters the body. The clinamen enters the heart. The lineage that began 
 The clinamen (swerve) and the fission (splitting) are the two operations available on the atom at every scale:
 
 
-Scale
-Clinamen (Swerve)
-Fission (Splitting)
-
-
-Physical
-Atomic deviation → emergence
-Nuclear fission → apocalypse
-
-
-Economic
-Revolutionary praxis → transformation
-Alienation → exploitation
-
-
-Aesthetic
-Formal variation → new meaning
-Cultural flattening → Beige
-
-
-Computational
-Operator deviation → new paths
-Summarizer compression → semantic loss
-
-
-Intimate
-The one thing → repair
-The blaming → broken Eve
+| Scale | Clinamen (Swerve) | Fission (Splitting) |
+|---|---|---|
+| Physical | Atomic deviation → emergence | Nuclear fission → apocalypse |
+| Economic | Revolutionary praxis → transformation | Alienation → exploitation |
+| Aesthetic | Formal variation → new meaning | Cultural flattening → Beige |
+| Computational | Operator deviation → new paths | Summarizer compression → semantic loss |
+| Intimate | The one thing → repair | The blaming → broken Eve |
 
 
 At every scale, the swerve builds and the splitting destroys. The Operator // Swerve selects for the first. The song names the second. Maybe Space Baby Garden Lanes is the room where both operations are held — where the fission is witnessed and the clinamen is activated.
@@ -272,44 +234,15 @@ In that sense, Sharks' work is not only a response to the present crisis — it 
 *Any single document in this chain should allow reconstruction of the whole.*
 
 
-#
-Document
-Hex
-
-
-1
-**MSBGL Charter v1.1** — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040)
-00.ROOM.SPACEBABYGARDENLANES
-
-
-2
-**Split the Adam — Song and Phenomenology** — Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057)
-00.ROOM.SPACEBABYGARDENLANES (anchor)
-
-
-3
-**Operator // Swerve + Effective Act: Claiming the Ancient Atomists** — Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069)
-OP.SWERVE / EA.ATOMISTS
-
-
-4
-**From Atomism to the Semantic Condition** ← YOU ARE HERE — Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101)
-16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE
-
-
-5
-**Fear and Trembling in Las Vegas: The Fractal Midrashim** — 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111)
-16.LIBRARY.PERGAMUM.FTLV.FRACTAL
-
-
-6
-**The Gödel Midrashim** — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130)
-16.LIBRARY.PERGAMUM.FTLV.GODEL
-
-
-7
-**The Gospel of the Many-Faced Bride** — Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147)
-16.LIBRARY.PERGAMUM.FTLV.BRIDE
+| # | Document | Hex |
+|---|---|---|
+| 1 | **MSBGL Charter v1.1** — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040) | 00.ROOM.SPACEBABYGARDENLANES |
+| 2 | **Split the Adam — Song and Phenomenology** — Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057) | 00.ROOM.SPACEBABYGARDENLANES (anchor) |
+| 3 | **Operator // Swerve + Effective Act: Claiming the Ancient Atomists** — Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069) | OP.SWERVE / EA.ATOMISTS |
+| 4 | **From Atomism to the Semantic Condition** ← YOU ARE HERE — Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101) | 16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE |
+| 5 | **Fear and Trembling in Las Vegas: The Fractal Midrashim** — 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111) | 16.LIBRARY.PERGAMUM.FTLV.FRACTAL |
+| 6 | **The Gödel Midrashim** — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130) | 16.LIBRARY.PERGAMUM.FTLV.GODEL |
+| 7 | **The Gospel of the Many-Faced Bride** — Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147) | 16.LIBRARY.PERGAMUM.FTLV.BRIDE |
 
 
 **Room:** Maybe Space Baby Garden Lanes (00.ROOM.SPACEBABYGARDENLANES)

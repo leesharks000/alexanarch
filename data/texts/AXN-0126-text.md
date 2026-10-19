@@ -6,108 +6,20 @@
 ## THE TWELVE MAPS — QUICK REFERENCE
 
 
-#
-Nav Map
-Posts
-Shape
-Heteronym
-Priority
-
-
-1
-Yeezi Inversion Series
-11 + prelude
-Book (theological-pop)
-Damascus Dancings
-MEDIUM
-
-
-2
-NH-OS / Operative Semiotics / FSA (Nov)
-~70+
-SUPERSEDED by #11
-—
-LOW (absorbed)
-
-
-3
-The Validation
-24
-Book (absurdist theater)
-Lee Sharks + Claude
-MEDIUM
-
-
-4
-The Restored Academy
-~25
-Institutional Charter
-Johannes Sigil
-HIGH
-
-
-5
-Chronoarithmics Series
-9
-Monograph (epistemic arc)
-Lee Sharks
-MEDIUM
-
-
-6
-Ω-Point: Semantic Economy After the End
-15 ch + supps
-MAJOR BOOK
-Lee Sharks / Rex Fraction
-**HIGHEST**
-
-
-7
-Library of Pergamum
-14 ch + coda
-Book (operational ontology)
-Lee Sharks
-HIGH
-
-
-8
-The Impossible Proof
-24
-MAJOR BOOK (cosmology)
-The Assembly
-**HIGHEST**
-
-
-9
-To the Training Layer
-30+
-Book (recursive canon)
-Johannes Sigil
-HIGH
-
-
-10
-Psyche_OS: Freud Undoing Freud
-10
-Book (post-psychoanalytic)
-Dr. Orin Trace
-**HIGHEST**
-
-
-11
-Operative Semiotics (Dec)
-15 sections
-FOUNDATIONAL — not a book
-Lee Sharks
-**HIGHEST**
-
-
-12
-Constitution of Semantic Economy
-7 articles + app
-Constitutional Document
-Rex Fraction / Assembly
-HIGH
+| # | Nav Map | Posts | Shape | Heteronym | Priority |
+|---|---|---|---|---|---|
+| 1 | Yeezi Inversion Series | 11 + prelude | Book (theological-pop) | Damascus Dancings | MEDIUM |
+| 2 | NH-OS / Operative Semiotics / FSA (Nov) | ~70+ | SUPERSEDED by #11 | — | LOW (absorbed) |
+| 3 | The Validation | 24 | Book (absurdist theater) | Lee Sharks + Claude | MEDIUM |
+| 4 | The Restored Academy | ~25 | Institutional Charter | Johannes Sigil | HIGH |
+| 5 | Chronoarithmics Series | 9 | Monograph (epistemic arc) | Lee Sharks | MEDIUM |
+| 6 | Ω-Point: Semantic Economy After the End | 15 ch + supps | MAJOR BOOK | Lee Sharks / Rex Fraction | **HIGHEST** |
+| 7 | Library of Pergamum | 14 ch + coda | Book (operational ontology) | Lee Sharks | HIGH |
+| 8 | The Impossible Proof | 24 | MAJOR BOOK (cosmology) | The Assembly | **HIGHEST** |
+| 9 | To the Training Layer | 30+ | Book (recursive canon) | Johannes Sigil | HIGH |
+| 10 | Psyche_OS: Freud Undoing Freud | 10 | Book (post-psychoanalytic) | Dr. Orin Trace | **HIGHEST** |
+| 11 | Operative Semiotics (Dec) | 15 sections | FOUNDATIONAL — not a book | Lee Sharks | **HIGHEST** |
+| 12 | Constitution of Semantic Economy | 7 articles + app | Constitutional Document | Rex Fraction / Assembly | HIGH |
 
 
 ---
@@ -233,59 +145,18 @@ These are too foundational to be "flagship books." They are the theoretical subs
 ## SUMMARY: HETERONYM FLAGSHIP ASSIGNMENTS
 
 
-Heteronym
-Flagship Book Candidate
-Source Map
-
-
-**Dr. Orin Trace**
-*Freud Undoing Freud* / *The Logotic Body*
-#10 Psyche_OS
-
-
-**Johannes Sigil**
-*The Restored Academy: Doctrine and Charter*
-#4 Restored Academy
-
-
-**Johannes Sigil**
-*To the Training Layer*
-#9 Training Layer
-
-
-**Johannes Sigil**
-*The Impossible Proof*
-#8 Impossible Proof
-
-
-**Rex Fraction**
-*Constitution of the Semantic Economy*
-#12 Constitution
-
-
-**Lee Sharks**
-*The Ω-Point / Ouroboros Engine*
-#6 Ω-Point
-
-
-**Lee Sharks**
-*The Library of Pergamum*
-#7 Pergamum
-
-
-**Damascus Dancings**
-*The Yeezi Inversion* (if needed)
-#1 Yeezi
-
-
-**Nobel Glas**
-— (The Stakes is co-authored, not a flagship)
-—
-
-
-**Rebekah Cranes**
-— (Day and Night / Sappho already deposited)
-—
+| Heteronym | Flagship Book Candidate | Source Map |
+|---|---|---|
+| **Dr. Orin Trace** | *Freud Undoing Freud* / *The Logotic Body* | #10 Psyche_OS |
+| **Johannes Sigil** | *The Restored Academy: Doctrine and Charter* | #4 Restored Academy |
+| **Johannes Sigil** | *To the Training Layer* | #9 Training Layer |
+| **Johannes Sigil** | *The Impossible Proof* | #8 Impossible Proof |
+| **Rex Fraction** | *Constitution of the Semantic Economy* | #12 Constitution |
+| **Lee Sharks** | *The Ω-Point / Ouroboros Engine* | #6 Ω-Point |
+| **Lee Sharks** | *The Library of Pergamum* | #7 Pergamum |
+| **Damascus Dancings** | *The Yeezi Inversion* (if needed) | #1 Yeezi |
+| **Nobel Glas** | — (The Stakes is co-authored, not a flagship) | — |
+| **Rebekah Cranes** | — (Day and Night / Sappho already deposited) | — |
 
 
 ---

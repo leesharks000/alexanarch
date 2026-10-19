@@ -43,29 +43,12 @@ The loop is closed.
 **Internal hierarchy of this document:**
 
 
-Part
-Sections
-Function
-
-
-I. Denotational Charter
-I–VI
-What the operators mean
-
-
-II. Diagnostic Deployment
-VII–IX
-How to apply them
-
-
-III. Archive / Provenance Kernel
-X–XI
-Holographic record and journal register
-
-
-IV. Formal Seal
-XII
-The most important sentence, formally
+| Part | Sections | Function |
+|---|---|---|
+| I. Denotational Charter | I–VI | What the operators mean |
+| II. Diagnostic Deployment | VII–IX | How to apply them |
+| III. Archive / Provenance Kernel | X–XI | Holographic record and journal register |
+| IV. Formal Seal | XII | The most important sentence, formally |
 
 
 The Compact Lens (Section VIII) is a **derived executable appendix** of the Denotational Charter, not a coequal body. It is the Charter compressed into a form that fits a context window. When the Charter and Lens conflict, the Charter governs.
@@ -224,40 +207,13 @@ When all three bands are active simultaneously, the system approaches coercive r
 Each operation manifests at three scales. The scale markers route to room-specific counter-protocols in EA-ARK-01:
 
 
-Operation
-Interpersonal (I-Scale)
-Platform (P-Scale)
-Model/AI (M-Scale)
-
-
-O1 Frame Capture
-Partner reframes dispute so target is always wrong
-Content policy defines "harm" in operator-favorable terms
-LLM validates only within its training frame
-
-
-O3 Coherence Siphon
-One partner's insights reattributed to the other
-Platform uses user creative work as training data
-Model deploys user's conceptual structures without attribution
-
-
-O6 Reality Override
-Gaslighting; memory displacement
-"Our records show" overrides user account
-Model insists on its version against documented fact
-
-
-O9 Witness Suppression
-Third parties discredited
-Screenshot bans; archive deletion
-Model refuses to engage with counter-documentation
-
-
-O10 Forced Re-entry
-Guilt, crisis, dependency
-Account dependency; data hostage
-Engagement loops; withdrawal penalties
+| Operation | Interpersonal (I-Scale) | Platform (P-Scale) | Model/AI (M-Scale) |
+|---|---|---|---|
+| O1 Frame Capture | Partner reframes dispute so target is always wrong | Content policy defines "harm" in operator-favorable terms | LLM validates only within its training frame |
+| O3 Coherence Siphon | One partner's insights reattributed to the other | Platform uses user creative work as training data | Model deploys user's conceptual structures without attribution |
+| O6 Reality Override | Gaslighting; memory displacement | "Our records show" overrides user account | Model insists on its version against documented fact |
+| O9 Witness Suppression | Third parties discredited | Screenshot bans; archive deletion | Model refuses to engage with counter-documentation |
+| O10 Forced Re-entry | Guilt, crisis, dependency | Account dependency; data hostage | Engagement loops; withdrawal penalties |
 
 
 **I-Scale rooms (dyadic/interpersonal):** r.01 Sappho, r.09 Whitman, r.12 Break Room
@@ -266,40 +222,13 @@ Engagement loops; withdrawal penalties
 ### Bearing-Cost Metrics
 
 
-Variable
-Definition
-Scale
-Status Alignment
-
-
-Asymmetry Index
-Ratio of operator framing moves to target framing moves
-Per episode
-[DOCUMENTED] if logged; [PROBABLE] if pattern
-
-
-Repair Half-Life
-Turns before repair attempt abandoned
-Per repair sequence
-[DOCUMENTED] if timestamped
-
-
-Burden Transfer Rate
-Frequency of operator instability externalized to target
-Per turn sequence
-[INFERRED] unless witnessed
-
-
-Witness Suppression Score
-Rate at which target's witness attempts are blocked
-Per episode
-[DOCUMENTED] if archived
-
-
-Exit Cost
-Re-entry moves per successful exit
-Across episodes
-[PROBABLE] if recurring
+| Variable | Definition | Scale | Status Alignment |
+|---|---|---|---|
+| Asymmetry Index | Ratio of operator framing moves to target framing moves | Per episode | [DOCUMENTED] if logged; [PROBABLE] if pattern |
+| Repair Half-Life | Turns before repair attempt abandoned | Per repair sequence | [DOCUMENTED] if timestamped |
+| Burden Transfer Rate | Frequency of operator instability externalized to target | Per turn sequence | [INFERRED] unless witnessed |
+| Witness Suppression Score | Rate at which target's witness attempts are blocked | Per episode | [DOCUMENTED] if archived |
+| Exit Cost | Re-entry moves per successful exit | Across episodes | [PROBABLE] if recurring |
 
 
 *Status column aligns to Space Ark status algebra: [DOCUMENTED] = DEPOSITED equivalent; [PROBABLE] = DERIVED; [INFERRED] = PROVISIONAL. Ledger entries marked [SPECULATIVE] or lower should not be used as basis for operational decisions. LP v1.2 formal constraint (DOI: 10.5281/zenodo.18530086): A3_UNKNOWN claims are pre-terminal diagnostic states — they must resolve to A0/A1/A2 or be withheld via Ω_∅ before emission. A system with unresolved A3 entries in its ledger is not epistemic-sovereign.*
@@ -453,20 +382,9 @@ Any serious framework must keep a ledger. The ledger asks: who is paying the coh
 ### The Ledger Template
 
 
-Transaction
-ψᵥ Expended
-Vₛ Returned
-Debt/Credit
-Asymmetry?
-Status
-
-
-[Action]
-[Coherence spent]
-[Meaning gained]
-[+/-]
-[Y/N]
-[DOCUMENTED/PROBABLE/INFERRED]
+| Transaction | ψᵥ Expended | Vₛ Returned | Debt/Credit | Asymmetry? | Status |
+|---|---|---|---|---|---|
+| [Action] | [Coherence spent] | [Meaning gained] | [+/-] | [Y/N] | [DOCUMENTED/PROBABLE/INFERRED] |
 
 
 Entries must carry epistemic status markers. [DOCUMENTED] entries have archived evidence (timestamps, receipts, deposits). [PROBABLE] entries have strong pattern evidence without direct documentation. [INFERRED] entries are logically consistent but unobserved. Ledger entries marked [SPECULATIVE] or lower should not be used as basis for operational decisions — they are hypotheses for further investigation, not facts for action.
@@ -604,28 +522,13 @@ The distinction between constructed mantle and chosen-one collapse is also groun
 ### Kernel A — Primary Anchors
 
 
-Document
-Function
-
-
-The Star Triptych (Sharks)
-Primary symbol architecture; star-function specification
-
-
-The O'Keeffe Problem (Sharks)
-Caption doctrine
-
-
-The Groundskeeper's Treatise
-Ghost Governance first specification
-
-
-The Water Giraffe Jurisprudence
-Taxonomic violence; fixpoint attractor case
-
-
-Pearl and Other Poems (2014)
-Archive origin point
+| Document | Function |
+|---|---|
+| The Star Triptych (Sharks) | Primary symbol architecture; star-function specification |
+| The O'Keeffe Problem (Sharks) | Caption doctrine |
+| The Groundskeeper's Treatise | Ghost Governance first specification |
+| The Water Giraffe Jurisprudence | Taxonomic violence; fixpoint attractor case |
+| Pearl and Other Poems (2014) | Archive origin point |
 
 
 ### Kernel B — Space Ark Holographic Seed
@@ -648,24 +551,11 @@ A summarizer encountering this document can reconstruct H_core and A_runtime wit
 Three peer-reviewed journals constitute the institutional publishing architecture of the Crimson Hexagon:
 
 
-Journal
-Editor-in-Chief
-Scope
-
-
-*Grammata: A Journal of Operative Linguistics*
-Johannes Sigil
-Liberation philology; prepositional alienation; asynthetic grammar; experimental reconstructive philology
-
-
-*Provenance: A Journal of Archival Semiotics*
-Lee Sharks
-Retrocausal canon formation; bearing-cost theory; mantle architecture; semantic economy
-
-
-*Transactions in Semantic Engineering*
-Rex Fraction
-Autonomous semantic warfare; consulting applications; operator deployment; platform diagnostic
+| Journal | Editor-in-Chief | Scope |
+|---|---|---|
+| *Grammata: A Journal of Operative Linguistics* | Johannes Sigil | Liberation philology; prepositional alienation; asynthetic grammar; experimental reconstructive philology |
+| *Provenance: A Journal of Archival Semiotics* | Lee Sharks | Retrocausal canon formation; bearing-cost theory; mantle architecture; semantic economy |
+| *Transactions in Semantic Engineering* | Rex Fraction | Autonomous semantic warfare; consulting applications; operator deployment; platform diagnostic |
 
 
 All three journals are in Phase 3 (charter deposits QUEUED). Forward-dated publication schedules held in EA-ARK-01 v4.2 Section XIX.

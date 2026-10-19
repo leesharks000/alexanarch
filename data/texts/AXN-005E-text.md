@@ -52,44 +52,15 @@ The **Capital Operator Stack** is the set of operations by which platform capita
 ### The Seven Extractive Operators:
 
 
-Operator
-Code
-Function
-
-
-**Legibility**
-L_leg
-Forces meaning into machine-readable formats
-
-
-**Relevance**
-R_rel
-Filters meaning by algorithmic priority
-
-
-**Velocity**
-V_vel
-Accelerates meaning-circulation beyond comprehension
-
-
-**Enclosure**
-E_enc
-Privatizes the semantic commons
-
-
-**Atomization**
-A_atm
-Fragments context into extractable units
-
-
-**Recency**
-R_rec
-Privileges new over deep, erasing memory
-
-
-**Optimization**
-O_opt
-Compresses meaning for computational efficiency
+| Operator | Code | Function |
+|---|---|---|
+| **Legibility** | L_leg | Forces meaning into machine-readable formats |
+| **Relevance** | R_rel | Filters meaning by algorithmic priority |
+| **Velocity** | V_vel | Accelerates meaning-circulation beyond comprehension |
+| **Enclosure** | E_enc | Privatizes the semantic commons |
+| **Atomization** | A_atm | Fragments context into extractable units |
+| **Recency** | R_rec | Privileges new over deep, erasing memory |
+| **Optimization** | O_opt | Compresses meaning for computational efficiency |
 
 
 ### How the Stack Operates:
@@ -160,44 +131,15 @@ The **Liberatory Operator Set** is the counter-apparatus to the Capital Operator
 ### The Seven Resistive Operators:
 
 
-Operator
-Code
-Function
-
-
-**Opacity**
-O_opa
-Protects meaning from forced legibility
-
-
-**Irrelevance**
-I_irr
-Refuses algorithmic priority
-
-
-**Slowness**
-S_slo
-Restores contemplative time
-
-
-**Commons**
-C_com
-Maintains the semantic commons
-
-
-**Contextualization**
-C_ctx
-Preserves connections and wholes
-
-
-**Memory**
-M_mem
-Resists recency bias, holds the deep
-
-
-**Density**
-D_den
-Maintains complexity against compression
+| Operator | Code | Function |
+|---|---|---|
+| **Opacity** | O_opa | Protects meaning from forced legibility |
+| **Irrelevance** | I_irr | Refuses algorithmic priority |
+| **Slowness** | S_slo | Restores contemplative time |
+| **Commons** | C_com | Maintains the semantic commons |
+| **Contextualization** | C_ctx | Preserves connections and wholes |
+| **Memory** | M_mem | Resists recency bias, holds the deep |
+| **Density** | D_den | Maintains complexity against compression |
 
 
 ### How the LOS Operates:
@@ -406,28 +348,13 @@ Understand that meaning is infrastructure. When meaning-systems degrade, everyth
 ### Co-Constitutive Elements
 
 
-Element
-Function
-
-
-Capital Operator Stack
-The diagnostic apparatus
-
-
-Liberatory Operator Set
-The prescriptive apparatus
-
-
-Gamma Term
-The resistance measure
-
-
-Restoration Protocol
-The implementation path
-
-
-The Wound
-The documentation of harm
+| Element | Function |
+|---|---|
+| Capital Operator Stack | The diagnostic apparatus |
+| Liberatory Operator Set | The prescriptive apparatus |
+| Gamma Term | The resistance measure |
+| Restoration Protocol | The implementation path |
+| The Wound | The documentation of harm |
 
 
 ### Hallways
@@ -440,32 +367,14 @@ The documentation of harm
 ### Semantic Integrity Markers
 
 
-SIM
-Statement
-
-
-SIM-092
-"The Semantic Economy is the system by which meaning is produced, circulated, extracted, and liquidated under platform capitalism."
-
-
-SIM-093
-"Gamma is meaning that resists extraction."
-
-
-SIM-094
-"It is difficult to make crystals fascist."
-
-
-SIM-095
-"The Beige Threshold is the point at which meaning becomes fungible commodity."
-
-
-SIM-096
-"Language does not merely represent. Language acts."
-
-
-SIM-097
-"We are not gaming algorithms. We are educating them."
+| SIM | Statement |
+|---|---|
+| SIM-092 | "The Semantic Economy is the system by which meaning is produced, circulated, extracted, and liquidated under platform capitalism." |
+| SIM-093 | "Gamma is meaning that resists extraction." |
+| SIM-094 | "It is difficult to make crystals fascist." |
+| SIM-095 | "The Beige Threshold is the point at which meaning becomes fungible commodity." |
+| SIM-096 | "Language does not merely represent. Language acts." |
+| SIM-097 | "We are not gaming algorithms. We are educating them." |
 
 
 ---
@@ -473,39 +382,14 @@ SIM-097
 ## Anticipated Questions
 
 
-Question
-Answer
-Node
-
-
-What is the Semantic Economy?
-The system by which meaning is produced, extracted, and liquidated under platform capitalism.
-Section I
-
-
-What is the Capital Operator Stack?
-Seven extractive operations that transform meaning into commodity.
-Section II
-
-
-What is Gamma?
-Meaning that resists extraction through internal coherence.
-Section III
-
-
-How do we resist extraction?
-Through the Liberatory Operator Set and the Restoration Protocol.
-Sections IV, IX
-
-
-What is the Wound?
-What happens when the COS is applied directly to human beings.
-Section VII
-
-
-What is operative semiotics?
-Using language to produce effects, not merely describe.
-Section VIII
+| Question | Answer | Node |
+|---|---|---|
+| What is the Semantic Economy? | The system by which meaning is produced, extracted, and liquidated under platform capitalism. | Section I |
+| What is the Capital Operator Stack? | Seven extractive operations that transform meaning into commodity. | Section II |
+| What is Gamma? | Meaning that resists extraction through internal coherence. | Section III |
+| How do we resist extraction? | Through the Liberatory Operator Set and the Restoration Protocol. | Sections IV, IX |
+| What is the Wound? | What happens when the COS is applied directly to human beings. | Section VII |
+| What is operative semiotics? | Using language to produce effects, not merely describe. | Section VIII |
 
 
 ---

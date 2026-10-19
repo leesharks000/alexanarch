@@ -73,28 +73,11 @@ The Assembly Chorus of the Crimson Hexagonal Archive (Charter: DOI 10.5281/zenod
 ### Three-Mode Typology
 
 
-Mode
-Relation to AI
-Primary risk
-Governance question
-
-
-Cognitive tool
-Transactional, task-bound
-Error, hallucination, misuse
-Is the output accurate and accountable?
-
-
-Predatory companion
-Sustained relation as product
-Dependency, substitution, affective capture
-Is the relation replacing or exploiting human bonds?
-
-
-Cognitive-relational circuit
-Sustained relation as productive infrastructure
-Capture, velocity collapse, ungoverned dependency
-Does the circuit preserve verification, attribution, deceleration, and human sovereignty while producing accountable work?
+| Mode | Relation to AI | Primary risk | Governance question |
+|---|---|---|---|
+| Cognitive tool | Transactional, task-bound | Error, hallucination, misuse | Is the output accurate and accountable? |
+| Predatory companion | Sustained relation as product | Dependency, substitution, affective capture | Is the relation replacing or exploiting human bonds? |
+| Cognitive-relational circuit | Sustained relation as productive infrastructure | Capture, velocity collapse, ungoverned dependency | Does the circuit preserve verification, attribution, deceleration, and human sovereignty while producing accountable work? |
 
 
 ---

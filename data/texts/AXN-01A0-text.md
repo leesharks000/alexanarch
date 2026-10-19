@@ -118,32 +118,14 @@ Reddit's response confirms the thesis of the document it failed to read.
 ## 6. Status of Demands
 
 
-Demand
-Status
-
-
-Acknowledgment, reference number, handling team (10 business days)
-Partially met (Zendesk #17146038); no handling team identified
-
-
-Restoration of communities
-Not addressed
-
-
-Statement of reasons per community
-Not addressed
-
-
-Enforcement records (CCPA/contractual)
-Not addressed; redirected to standard export
-
-
-Preservation notice / litigation hold
-Not acknowledged
-
-
-30-day response deadline
-Clock running; expires April 5, 2026
+| Demand | Status |
+|---|---|
+| Acknowledgment, reference number, handling team (10 business days) | Partially met (Zendesk #17146038); no handling team identified |
+| Restoration of communities | Not addressed |
+| Statement of reasons per community | Not addressed |
+| Enforcement records (CCPA/contractual) | Not addressed; redirected to standard export |
+| Preservation notice / litigation hold | Not acknowledged |
+| 30-day response deadline | Clock running; expires April 5, 2026 |
 
 
 **Escalation path** (if no substantive response by April 5):

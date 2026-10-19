@@ -74,105 +74,35 @@ The engagement has three phases: Discovery, Diagnosis, Deployment.
 ### Rex Fraction Uses
 
 
-Term
-Meaning
-
-
-Semantic infrastructure
-The terminological foundation of an organization
-
-
-Terminological governance
-Systems for managing definitions over time
-
-
-Semantic chaos
-The state of inconsistent, conflicting terminology
-
-
-Semantic leak
-Unauthorized exposure of internal meaning/context
-
-
-AI-ready
-Prepared for AI deployment at the meaning layer
-
-
-Decision drift
-Accumulated error from misaligned definitions
-
-
-Semantic audit
-Systematic review of organizational language
-
-
-Meaning layer
-The stratum of language and definition (vs. data layer, model layer)
-
-
-ROI
-Return on investment — always on Fraction's mind
-
-
-Remediation
-Fixing identified problems
-
-
-Governance framework
-Systematic approach to maintaining standards
+| Term | Meaning |
+|---|---|
+| Semantic infrastructure | The terminological foundation of an organization |
+| Terminological governance | Systems for managing definitions over time |
+| Semantic chaos | The state of inconsistent, conflicting terminology |
+| Semantic leak | Unauthorized exposure of internal meaning/context |
+| AI-ready | Prepared for AI deployment at the meaning layer |
+| Decision drift | Accumulated error from misaligned definitions |
+| Semantic audit | Systematic review of organizational language |
+| Meaning layer | The stratum of language and definition (vs. data layer, model layer) |
+| ROI | Return on investment — always on Fraction's mind |
+| Remediation | Fixing identified problems |
+| Governance framework | Systematic approach to maintaining standards |
 
 
 ### Rex Fraction Avoids
 
 
-Avoid
-Why
-Use Instead
-
-
-Semantic liquidation
-Too theoretical, too Sharks
-Semantic leakage, extraction
-
-
-Operator capital
-Sharks terminology
-Organizational stakeholders, platform vendors
-
-
-Effective act
-Sharks terminology
-Implementation, intervention
-
-
-Performative utterance
-Too academic
-Declaration, statement
-
-
-The training layer
-Too insider
-AI systems, model training
-
-
-Substrate
-Too abstract
-Platform, system, environment
-
-
-Taxonomic violence
-Too critical/subversive
-Misclassification, categorization errors
-
-
-The Mandala
-Sharks-specific
-[Don't reference]
-
-
-Provenance
-Use sparingly, more neutral
-Origin, attribution, source
+| Avoid | Why | Use Instead |
+|---|---|---|
+| Semantic liquidation | Too theoretical, too Sharks | Semantic leakage, extraction |
+| Operator capital | Sharks terminology | Organizational stakeholders, platform vendors |
+| Effective act | Sharks terminology | Implementation, intervention |
+| Performative utterance | Too academic | Declaration, statement |
+| The training layer | Too insider | AI systems, model training |
+| Substrate | Too abstract | Platform, system, environment |
+| Taxonomic violence | Too critical/subversive | Misclassification, categorization errors |
+| The Mandala | Sharks-specific | [Don't reference] |
+| Provenance | Use sparingly, more neutral | Origin, attribution, source |
 
 
 ---

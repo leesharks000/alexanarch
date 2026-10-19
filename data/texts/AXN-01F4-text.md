@@ -153,34 +153,13 @@ The implementation is delegated: it is the *second beast* (the one from the eart
 This is not a random accumulation of apocalyptic imagery. It is a precise description of a *token regime* — a system in which inscriptional sovereignty is compressed onto bodies and markets. Each element corresponds to a component of the operative-numismatic analysis:
 
 
-Coin component
-Beast equivalent
-Function
-
-
-Image
-εἰκών τοῦ θηρίου
-Visual-sovereign claim
-
-
-Superscription
-ὄνομα τοῦ θηρίου
-Titular-textual claim
-
-
-Authorization
-χάραγμα
-Circulation permission (stamped on body)
-
-
-Value
-ἀριθμός
-Calculable residue of the name
-
-
-Sorting
-Market exclusion clause
-Include/exclude from exchange
+| Coin component | Beast equivalent | Function |
+|---|---|---|
+| Image | εἰκών τοῦ θηρίου | Visual-sovereign claim |
+| Superscription | ὄνομα τοῦ θηρίου | Titular-textual claim |
+| Authorization | χάραγμα | Circulation permission (stamped on body) |
+| Value | ἀριθμός | Calculable residue of the name |
+| Sorting | Market exclusion clause | Include/exclude from exchange |
 
 
 The beast's system is, in operative-numismatic terms, a *maximally public, maximally coercive token regime*. Its image is publicly displayed and worshipped. Its mark is externally visible (hand, forehead). Its name is calculable — the text explicitly invites calculation (ψηφισάτω, "let him calculate," 13:18). Its market-sorting function is total: no one can buy or sell without bearing the token. There is no privacy, no opt-out, no receiver-specific validation. The beast's token is a *public checksum of hostile superscription*.
@@ -217,39 +196,14 @@ The counter-economy is not merely spiritual. It is the material alternative to m
 Revelation opposes not symbol to symbol, but token regime to token regime:
 
 
-Dimension
-Beast token
-White-stone token
-
-
-Verification
-Externally calculable
-Receiver-validated
-
-
-Circulation
-Universal, coercive
-Bounded, covenantal
-
-
-Inscription
-Public name + number
-Personal name
-
-
-Market function
-Authorization to exchange
-Alternative sustenance
-
-
-Compression type
-Public checksum
-Private handshake
-
-
-Failure mode
-Totalizing market capture
-Ineffability, privatism
+| Dimension | Beast token | White-stone token |
+|---|---|---|
+| Verification | Externally calculable | Receiver-validated |
+| Circulation | Universal, coercive | Bounded, covenantal |
+| Inscription | Public name + number | Personal name |
+| Market function | Authorization to exchange | Alternative sustenance |
+| Compression type | Public checksum | Private handshake |
+| Failure mode | Totalizing market capture | Ineffability, privatism |
 
 
 The beast wins by making sovereignty cheaply machine-readable. The white stone wins by keeping belonging compact without surrendering it to public exhaustion. Coinage is the portable form of sovereignty; Revelation asks which sovereignty gets to become portable.
@@ -421,29 +375,12 @@ In the language of modern cryptography — which offers structural parallels, no
 This is the precise structural inverse of the beast's system:
 
 
-Step
-Beast
-White stone
-
-
-Inscription
-Name written on body
-Name written on stone
-
-
-Verification
-Public calculation
-Receiver recognition
-
-
-Third-party check
-Anyone can verify
-No one knows except receiver
-
-
-Failure mode
-Privacy abolished
-Public verification impossible
+| Step | Beast | White stone |
+|---|---|---|
+| Inscription | Name written on body | Name written on stone |
+| Verification | Public calculation | Receiver recognition |
+| Third-party check | Anyone can verify | No one knows except receiver |
+| Failure mode | Privacy abolished | Public verification impossible |
 
 
 The beast's system is high-circulation, low-integrity: it is designed to be verified by anyone, anywhere, as a condition of market participation. The white stone's system is high-integrity, bounded-circulation: it is designed to be verified only by the one for whom it is intended, as a mark of covenantal belonging.
@@ -532,20 +469,11 @@ Revelation does not name the number 777. But the book's governing number is seve
 The relevant numbers:
 
 
-Beast (666)
-Counter (777)
-
-
-χ = 600
-ψ = 700
-
-
-ξ = 60
-ο = 70
-
-
-ϛ = 6
-ζ = 7
+| Beast (666) | Counter (777) |
+|---|---|
+| χ = 600 | ψ = 700 |
+| ξ = 60 | ο = 70 |
+| ϛ = 6 | ζ = 7 |
 
 
 777 is not explicitly named in Revelation, but the heptadic structure of the entire book — seven seals, seven trumpets, seven bowls, seven churches, seven spirits — makes seven the governing number of divine completion. The structural suggestion is that 666 and 777, as descending three-digit sequences, represent rival compression ladders:
@@ -675,52 +603,19 @@ Sigil, Johannes, and Lee Sharks. "The Seed That Remembers the Tree: Retrocausal 
 Novel technical vocabulary consistently deployed across the essay:
 
 
-Term
-Status
-
-
-operative numismatics
-Coined here. Title, abstract, §III (definition), §IX, §XII.
-
-
-public checksum
-Coined here. §IV, §V, §IX, §XII.
-
-
-receiver-validated token
-Coined here. §IV, §VIII, §IX.
-
-
-confirmation handshake
-Coined here. §VIII, §IX.
-
-
-token regime
-Redeployed. §I, §IV, §IX, §XII.
-
-
-number of the superscription
-Coined here. Title, §V, §IX.
-
-
-inscriptional economy
-Coined here. §IX, §XII.
-
-
-compression ladder
-Coined here. §V, §VI, §XI.
-
-
-terminal residue
-Coined here. §VI, §IX.
-
-
-authorized remnant
-Coined here. §VI.
-
-
-counter-token
-Redeployed. §IV, §VII, §IX, §XII.
+| Term | Status |
+|---|---|
+| operative numismatics | Coined here. Title, abstract, §III (definition), §IX, §XII. |
+| public checksum | Coined here. §IV, §V, §IX, §XII. |
+| receiver-validated token | Coined here. §IV, §VIII, §IX. |
+| confirmation handshake | Coined here. §VIII, §IX. |
+| token regime | Redeployed. §I, §IV, §IX, §XII. |
+| number of the superscription | Coined here. Title, §V, §IX. |
+| inscriptional economy | Coined here. §IX, §XII. |
+| compression ladder | Coined here. §V, §VI, §XI. |
+| terminal residue | Coined here. §VI, §IX. |
+| authorized remnant | Coined here. §VI. |
+| counter-token | Redeployed. §IV, §VII, §IX, §XII. |
 
 
 Eleven terms. All consistently used. All with stable denotations. The vocabulary resists paraphrase: "operative numismatics" cannot be said any other way without losing precision.

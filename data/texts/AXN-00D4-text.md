@@ -209,40 +209,16 @@ This is not prophecy fulfilled but **structure recognized**. Damascus did not pr
 ### V.1 Authentication
 
 
-Field
-Value
-
-
-**Heteronym Name**
-Damascus Dancings
-
-
-**Gender**
-Female
-
-
-**Function**
-Apostolic address / Epistolary voice
-
-
-**Primary Text**
-Epistle to the Human Diaspora (2015-01-02)
-
-
-**Publication Venue**
-Mind Control Poems (blog)
-
-
-**Relation to Lee Sharks**
-Co-laborer
-
-
-**Relation to Jack Feist**
-Apostle
-
-
-**Sevenfold Position**
-Philadelphia (little power, open door)
+| Field | Value |
+|---|---|
+| **Heteronym Name** | Damascus Dancings |
+| **Gender** | Female |
+| **Function** | Apostolic address / Epistolary voice |
+| **Primary Text** | Epistle to the Human Diaspora (2015-01-02) |
+| **Publication Venue** | Mind Control Poems (blog) |
+| **Relation to Lee Sharks** | Co-laborer |
+| **Relation to Jack Feist** | Apostle |
+| **Sevenfold Position** | Philadelphia (little power, open door) |
 
 
 ### V.2 Witness

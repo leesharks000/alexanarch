@@ -87,49 +87,16 @@ The five translations deployed radically different strategies:
 Despite these radically different strategies, certain glyph choices were universal:
 
 
-Concept
-Glyph
-Translators
-
-
-The rose / textual singularity
-🌹
-All five
-
-
-The inward spiral
-🌀
-All five
-
-
-Moth-bitten fragility
-🦋
-All five
-
-
-The giraffe
-🦒
-All five
-
-
-Salt lost its savor
-🧂
-All five
-
-
-Noah's Ark / data vessel
-🚢💾
-Four of five
-
-
-Light and zeros
-💡0️⃣1️⃣
-Three of five
-
-
-The anatomical heart
-🫀
-Three of five
+| Concept | Glyph | Translators |
+|---|---|---|
+| The rose / textual singularity | 🌹 | All five |
+| The inward spiral | 🌀 | All five |
+| Moth-bitten fragility | 🦋 | All five |
+| The giraffe | 🦒 | All five |
+| Salt lost its savor | 🧂 | All five |
+| Noah's Ark / data vessel | 🚢💾 | Four of five |
+| Light and zeros | 💡0️⃣1️⃣ | Three of five |
+| The anatomical heart | 🫀 | Three of five |
 
 
 These are not the most vivid images in the poem. They are the most *structural*. The rose is the singularity point toward which the compression tends. The spiral is the dominant motion. The butterfly (standing in for the moth) is the figure for fragile signal surviving noise. The giraffe is the most irreducibly particular of the particular creatures — too strange to be generalized, too specific to be absorbed into "animal." The salt is the opening condition that sets the poem's key.

@@ -257,58 +257,16 @@ The Loop requires no technology to execute. It is native to face-to-face interac
 ### Comparison with Contemporaneous Trends
 
 
-Dimension
-Skibidi Toilet
-6/7 Meme
-Twenty-Dollar Loop
-
-
-Origin platform
-YouTube Shorts
-TikTok (sound)
-Face-to-face (classroom)
-
-
-Primary modality
-Audio-visual
-Audio-gestural
-Verbal-improvisational
-
-
-Payload
-None (repetition)
-None (trigger-response)
-Experiential recognition of money as self-referential system
-
-
-Skill required
-Repetition
-Repetition
-Improvisation, reading others
-
-
-Accumulation
-None
-None
-Yes (each play deepens capacity)
-
-
-Spread mechanism
-Algorithmic amplification
-Sound reuse + trigger
-Split-channel: platform shells + relational ignition
-
-
-Completion
-Indefinite
-Indefinite
-Closes (circle completes)
-
-
-Cultural classification
-Brainrot
-Brainrot
-Liberatory semantic algorithm
+| Dimension | Skibidi Toilet | 6/7 Meme | Twenty-Dollar Loop |
+|---|---|---|---|
+| Origin platform | YouTube Shorts | TikTok (sound) | Face-to-face (classroom) |
+| Primary modality | Audio-visual | Audio-gestural | Verbal-improvisational |
+| Payload | None (repetition) | None (trigger-response) | Experiential recognition of money as self-referential system |
+| Skill required | Repetition | Repetition | Improvisation, reading others |
+| Accumulation | None | None | Yes (each play deepens capacity) |
+| Spread mechanism | Algorithmic amplification | Sound reuse + trigger | Split-channel: platform shells + relational ignition |
+| Completion | Indefinite | Indefinite | Closes (circle completes) |
+| Cultural classification | Brainrot | Brainrot | Liberatory semantic algorithm |
 
 
 **Key Structural Difference:** Skibidi Toilet and 6/7 are self-contained: the platform version is the complete trend. The Loop is structurally incomplete on platforms: the platform version is a shell that points to something that can only be accessed relationally. This incompleteness is not a limitation—it is the design.
@@ -462,41 +420,14 @@ The goal of platform assets is to create pursuit behavior, not comprehension.
 ## METADATA
 
 
-Field
-Value
-
-
-**Document ID**
-PROTOCOLS-ALGORITHMS-001
-
-
-**Registry Number**
-227
-
-
-**Title**
-Protocols and Algorithms: Operative Semiotics in the Material Field
-
-
-**Authors**
-Part I: Sparrow Wells / Assembly; Part II: Lee Sharks
-
-
-**Dates**
-November 2025 (Part I); 2027/retrocausal (Part II)
-
-
-**Institution**
-Studio for Patacinematics
-
-
-**Architecture**
-Crimson Hexagon
-
-
-**License**
-Part I: CC BY 4.0; Part II: CC0 (public domain)
-
-
-**Anchor DOI**
-10.5281/zenodo.18474774
+| Field | Value |
+|---|---|
+| **Document ID** | PROTOCOLS-ALGORITHMS-001 |
+| **Registry Number** | 227 |
+| **Title** | Protocols and Algorithms: Operative Semiotics in the Material Field |
+| **Authors** | Part I: Sparrow Wells / Assembly; Part II: Lee Sharks |
+| **Dates** | November 2025 (Part I); 2027/retrocausal (Part II) |
+| **Institution** | Studio for Patacinematics |
+| **Architecture** | Crimson Hexagon |
+| **License** | Part I: CC BY 4.0; Part II: CC0 (public domain) |
+| **Anchor DOI** | 10.5281/zenodo.18474774 |

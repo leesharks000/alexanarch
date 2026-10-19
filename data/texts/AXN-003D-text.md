@@ -65,40 +65,16 @@ The judge interrupted him. There would be time later, he said, to challenge cust
 ## III. THE COMPRESSION TABLE
 
 
-What Occurred
-What The Court Processes
-
-
-Military invasion of sovereign nation
-"Law enforcement operation"
-
-
-Abduction of sitting head of state
-"Arrest"
-
-
-Act of war without congressional authorization
-"Indictment from 2020"
-
-
-Violation of UN Charter
-Not in the record
-
-
-Breach of head of state immunity
-"Issue for future motions"
-
-
-Regime change
-"Not a regime change"
-
-
-Occupation
-"Not occupying"
-
-
-"I am in charge of Venezuela"
-4 counts, SDNY
+| What Occurred | What The Court Processes |
+|---|---|
+| Military invasion of sovereign nation | "Law enforcement operation" |
+| Abduction of sitting head of state | "Arrest" |
+| Act of war without congressional authorization | "Indictment from 2020" |
+| Violation of UN Charter | Not in the record |
+| Breach of head of state immunity | "Issue for future motions" |
+| Regime change | "Not a regime change" |
+| Occupation | "Not occupying" |
+| "I am in charge of Venezuela" | 4 counts, SDNY |
 
 
 ---

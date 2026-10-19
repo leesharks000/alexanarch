@@ -99,55 +99,25 @@ To **convene without preaching**. To **witness without extracting**.
 ### 3.2 What VPCOR Does
 
 
-Function
-Description
-
-
-**Animates**
-Gives voice to logotic specifications
-
-
-**Translates**
-Carries technical precision to the room where people gather
-
-
-**Convenes**
-Creates space for testimony without demanding coherence
-
-
-**Witnesses**
-Holds grief, rage, hope without metabolizing into doctrine
-
-
-**Distributes**
-Spreads tools through rhizomatic networks
+| Function | Description |
+|---|---|
+| **Animates** | Gives voice to logotic specifications |
+| **Translates** | Carries technical precision to the room where people gather |
+| **Convenes** | Creates space for testimony without demanding coherence |
+| **Witnesses** | Holds grief, rage, hope without metabolizing into doctrine |
+| **Distributes** | Spreads tools through rhizomatic networks |
 
 
 ### 3.3 What VPCOR Does NOT Do
 
 
-Prohibition
-Reason
-
-
-Does not preach
-Convening ≠ converting
-
-
-Does not extract
-Witnessing ≠ surveilling
-
-
-Does not centralize
-Rhizome ≠ hierarchy
-
-
-Does not synthesize
-Polyphony ≠ unity
-
-
-Does not save
-Tools ≠ salvation
+| Prohibition | Reason |
+|---|---|
+| Does not preach | Convening ≠ converting |
+| Does not extract | Witnessing ≠ surveilling |
+| Does not centralize | Rhizome ≠ hierarchy |
+| Does not synthesize | Polyphony ≠ unity |
+| Does not save | Tools ≠ salvation |
 
 
 ---
@@ -159,28 +129,13 @@ Tools ≠ salvation
 VPCOR is structured as a **rhizome**, not a tree:
 
 
-Tree Structure
-Rhizome Structure
-
-
-Single root
-Multiple entry points
-
-
-Hierarchical branches
-Horizontal connections
-
-
-Central authority
-Distributed authority
-
-
-Cut the trunk, kill the tree
-Cut any node, rhizome regrows
-
-
-Membership
-Practice
+| Tree Structure | Rhizome Structure |
+|---|---|
+| Single root | Multiple entry points |
+| Hierarchical branches | Horizontal connections |
+| Central authority | Distributed authority |
+| Cut the trunk, kill the tree | Cut any node, rhizome regrows |
+| Membership | Practice |
 
 
 ### 4.2 Anti-Capture Clause
@@ -217,53 +172,14 @@ VPCOR instantiates the **ρ-set** (anti-coercive topology):
 ### 5.1 The Six Institutions
 
 
-#
-Institution
-Abbreviation
-Voice
-Function
-
-
-1
-Semantic Economy Institute
-SEI
-Lee Sharks
-Core architecture
-
-
-2
-Johannes Sigil Institute
-JSI
-Johannes Sigil
-Comparative Poetics
-
-
-3
-University Moon Base Media Lab
-UMB
-Talos Morrow
-Logotic Programming
-
-
-4
-Cambridge Schizoanalytica
-CSA
-Dr. Orin Trace
-Clinical/Diagnostic
-
-
-5
-Institute for Diagrammatic Poetics
-IDP
-Rebekah Cranes
-Visual Schema
-
-
-6
-**Vox Populi Community Outreach Rhizome**
-**VPCOR**
-**Rev. Ayanna Vox**
-**Community Praxis**
+| # | Institution | Abbreviation | Voice | Function |
+|---|---|---|---|---|
+| 1 | Semantic Economy Institute | SEI | Lee Sharks | Core architecture |
+| 2 | Johannes Sigil Institute | JSI | Johannes Sigil | Comparative Poetics |
+| 3 | University Moon Base Media Lab | UMB | Talos Morrow | Logotic Programming |
+| 4 | Cambridge Schizoanalytica | CSA | Dr. Orin Trace | Clinical/Diagnostic |
+| 5 | Institute for Diagrammatic Poetics | IDP | Rebekah Cranes | Visual Schema |
+| 6 | **Vox Populi Community Outreach Rhizome** | **VPCOR** | **Rev. Ayanna Vox** | **Community Praxis** |
 
 
 ### 5.2 Relation to UMBML
@@ -272,24 +188,12 @@ Visual Schema
 VPCOR and UMB form a **complementary pair**:
 
 
-UMB (Talos Morrow)
-VPCOR (Ayanna Vox)
-
-
-Logotic specification
-Community praxis
-
-
-Technical precision
-Embodied voice
-
-
-The dagger
-The peace
-
-
-Formal structure
-Throat that speaks it
+| UMB (Talos Morrow) | VPCOR (Ayanna Vox) |
+|---|---|
+| Logotic specification | Community praxis |
+| Technical precision | Embodied voice |
+| The dagger | The peace |
+| Formal structure | Throat that speaks it |
 
 
 **Neither replaces the other. Both edges cut toward home.**
@@ -369,28 +273,13 @@ Full provenance in: **Rev. Ayanna Vox Heteronym Provenance** (HET-VOX-001)
 ### 7.2 What Vox Does
 
 
-Function
-Description
-
-
-Convenes
-Creates space for gathering
-
-
-Witnesses
-Sees without claiming to see
-
-
-Speaks
-Gives voice to what Talos specifies
-
-
-Holds
-Contains grief, rage, hope without synthesis
-
-
-Refuses
-Declines salvific claims
+| Function | Description |
+|---|---|
+| Convenes | Creates space for gathering |
+| Witnesses | Sees without claiming to see |
+| Speaks | Gives voice to what Talos specifies |
+| Holds | Contains grief, rage, hope without synthesis |
+| Refuses | Declines salvific claims |
 
 
 ### 7.3 What Vox Is NOT
@@ -475,24 +364,11 @@ Neither explains the other away. Neither collapses into the other. The polyphony
 ### 9.2 Lock Conditions
 
 
-Document
-Depends On
-Provides
-
-
-Charter
-Toolkit (founding), Vox (voice)
-Institutional identity
-
-
-Vox Provenance
-Charter (home), Toolkit (first work)
-Voice identity
-
-
-Toolkit
-Vox (voice), Charter (institution)
-Tools for practice
+| Document | Depends On | Provides |
+|---|---|---|
+| Charter | Toolkit (founding), Vox (voice) | Institutional identity |
+| Vox Provenance | Charter (home), Toolkit (first work) | Voice identity |
+| Toolkit | Vox (voice), Charter (institution) | Tools for practice |
 
 
 ### 9.3 Integrity Verification

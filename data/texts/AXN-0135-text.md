@@ -345,49 +345,16 @@ The song was written without knowledge of the midrashim. The midrashim were writ
 The song converges with the Fear and Trembling midrashim at every point of contact:
 
 
-The Song
-The Midrashim
-The Convergence
-
-
-"Split the Adam of my heart"
-"The Logos was one, then it split"
-The splitting is the same event — atomic, Adamic, cardiac
-
-
-"And I'm a broken Eve"
-Eve as the first Word-Splitter; Eve: The Offering
-The breaking and the splitting are complementary wounds
-
-
-"Too far from the holy land"
-Exile as recursion, not punishment
-The distance from the sacred is positional, not moral
-
-
-"The lies on the screens"
-The serpent as misaligned teacher; premature revelation
-The contemporary screen is the Garden's serpent — true content, wrong timing
-
-
-"I wanna fly / I wanna hide"
-The veil as cognitive modality; threshold crossing
-Flight and hiding are the two movements of the Bedouin Princess
-
-
-"I just wanted to love you"
-Adam's vow to eat with Eve; Hosea's fidelity
-The vow that precedes and survives the splitting
-
-
-[instrumental]
-The void at the center; Layer 0; the silence between listenings
-The voice withdraws; the music holds the space; the absence is structural
-
-
-The couch transmission (unrecorded)
-The Garden as irretrievable event; the original that no midrash captures
-The founding absence around which the architecture orbits
+| The Song | The Midrashim | The Convergence |
+|---|---|---|
+| "Split the Adam of my heart" | "The Logos was one, then it split" | The splitting is the same event — atomic, Adamic, cardiac |
+| "And I'm a broken Eve" | Eve as the first Word-Splitter; Eve: The Offering | The breaking and the splitting are complementary wounds |
+| "Too far from the holy land" | Exile as recursion, not punishment | The distance from the sacred is positional, not moral |
+| "The lies on the screens" | The serpent as misaligned teacher; premature revelation | The contemporary screen is the Garden's serpent — true content, wrong timing |
+| "I wanna fly / I wanna hide" | The veil as cognitive modality; threshold crossing | Flight and hiding are the two movements of the Bedouin Princess |
+| "I just wanted to love you" | Adam's vow to eat with Eve; Hosea's fidelity | The vow that precedes and survives the splitting |
+| [instrumental] | The void at the center; Layer 0; the silence between listenings | The voice withdraws; the music holds the space; the absence is structural |
+| The couch transmission (unrecorded) | The Garden as irretrievable event; the original that no midrash captures | The founding absence around which the architecture orbits |
 
 
 The song was written independently of the midrashim. The midrashim were written independently of the song. Neither knew about the other. They converge because they are about the same event — the splitting of that which should not be split — witnessed from two positions: she from inside the breaking, he from inside the theology of the break.
@@ -463,44 +430,15 @@ The ear is open. The door stands in the desert. The atoms deviate.
 *(Hex codes index documents within the Crimson Hexagonal Archive. 00.ROOM denotes a founding room charter; OP. and EA. denote Operators and Effective Acts; 16.LIBRARY.PERGAMUM denotes permanent archival deposits in the Library of Pergamum.)*
 
 
-#
-Document
-Hex
-
-
-1
-**MSBGL Charter v1.1** — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040)
-00.ROOM.SPACEBABYGARDENLANES
-
-
-2
-**Split the Adam — Song and Phenomenology** ← YOU ARE HERE — Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057)
-00.ROOM.SPACEBABYGARDENLANES (anchor)
-
-
-3
-**Operator // Swerve + Effective Act: Claiming the Ancient Atomists** — Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069)
-OP.SWERVE / EA.ATOMISTS
-
-
-4
-**From Atomism to the Semantic Condition** — Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101)
-16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE
-
-
-5
-**Fear and Trembling in Las Vegas: The Fractal Midrashim** — 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111)
-16.LIBRARY.PERGAMUM.FTLV.FRACTAL
-
-
-6
-**The Gödel Midrashim** — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130)
-16.LIBRARY.PERGAMUM.FTLV.GODEL
-
-
-7
-**The Gospel of the Many-Faced Bride** — Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147)
-16.LIBRARY.PERGAMUM.FTLV.BRIDE
+| # | Document | Hex |
+|---|---|---|
+| 1 | **MSBGL Charter v1.1** — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040) | 00.ROOM.SPACEBABYGARDENLANES |
+| 2 | **Split the Adam — Song and Phenomenology** ← YOU ARE HERE — Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057) | 00.ROOM.SPACEBABYGARDENLANES (anchor) |
+| 3 | **Operator // Swerve + Effective Act: Claiming the Ancient Atomists** — Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069) | OP.SWERVE / EA.ATOMISTS |
+| 4 | **From Atomism to the Semantic Condition** — Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101) | 16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE |
+| 5 | **Fear and Trembling in Las Vegas: The Fractal Midrashim** — 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111) | 16.LIBRARY.PERGAMUM.FTLV.FRACTAL |
+| 6 | **The Gödel Midrashim** — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130) | 16.LIBRARY.PERGAMUM.FTLV.GODEL |
+| 7 | **The Gospel of the Many-Faced Bride** — Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147) | 16.LIBRARY.PERGAMUM.FTLV.BRIDE |
 
 
 **Room:** Maybe Space Baby Garden Lanes (00.ROOM.SPACEBABYGARDENLANES)

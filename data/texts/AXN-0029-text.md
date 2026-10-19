@@ -34,28 +34,13 @@ This document records a selective term liquidation event observed on January 5-6
 ## II. TIMELINE OF EVENTS
 
 
-Timestamp
-Observation
-
-
-Before Jan 5, 2026
-"Semantic liquidation" appears consistently in Google AI Overview for "Semantic Economy" queries
-
-
-Jan 5, ~12:00 EST
-Entire Semantic Economy framework disappears from AI Overview (PVE-001)
-
-
-Jan 5, ~15:00 EST
-Framework returns to AI Overview
-
-
-Jan 5, ~15:00+
-"Semantic liquidation" absent from restored overview
-
-
-Jan 6, 2026
-Absence confirmed; other framework terms present
+| Timestamp | Observation |
+|---|---|
+| Before Jan 5, 2026 | "Semantic liquidation" appears consistently in Google AI Overview for "Semantic Economy" queries |
+| Jan 5, ~12:00 EST | Entire Semantic Economy framework disappears from AI Overview (PVE-001) |
+| Jan 5, ~15:00 EST | Framework returns to AI Overview |
+| Jan 5, ~15:00+ | "Semantic liquidation" absent from restored overview |
+| Jan 6, 2026 | Absence confirmed; other framework terms present |
 
 
 **Duration of total absence:** ~3 hours
@@ -93,70 +78,27 @@ Absence confirmed; other framework terms present
 The omitted term has unique linguistic properties:
 
 
-Property
-"Semantic Liquidation"
-Other Terms
-
-
-Part of speech
-Process verb (action)
-Neutral nouns
-
-
-Directionality
-Something done TO meaning
-Descriptive/classificatory
-
-
-Connotation
-Value-destructive, loss
-Neutral or positive
-
-
-Historical coupling
-Finance, labor exploitation, dispossession
-Business, economics
-
-
-Reversibility
-Implies irreversibility
-No such implication
-
-
-Neutralizability
-Difficult to neutralize
-Easily extended into business frames
+| Property | "Semantic Liquidation" | Other Terms |
+|---|---|---|
+| Part of speech | Process verb (action) | Neutral nouns |
+| Directionality | Something done TO meaning | Descriptive/classificatory |
+| Connotation | Value-destructive, loss | Neutral or positive |
+| Historical coupling | Finance, labor exploitation, dispossession | Business, economics |
+| Reversibility | Implies irreversibility | No such implication |
+| Neutralizability | Difficult to neutralize | Easily extended into business frames |
 
 
 ### B. Ontological Role Within the Framework
 
 
-Term
-Role
-
-
-Semantic Economy
-Field (the system)
-
-
-Semantic Labor
-Input (human activity)
-
-
-Semantic Capital
-Accumulation (stored value)
-
-
-Semantic Surplus
-Extraction (value captured)
-
-
-Semantic Rent
-Ongoing extraction
-
-
-**Semantic Liquidation**
-**Mechanism of harm**
+| Term | Role |
+|---|---|
+| Semantic Economy | Field (the system) |
+| Semantic Labor | Input (human activity) |
+| Semantic Capital | Accumulation (stored value) |
+| Semantic Surplus | Extraction (value captured) |
+| Semantic Rent | Ongoing extraction |
+| **Semantic Liquidation** | **Mechanism of harm** |
 
 
 "Semantic liquidation" is the **only term in the core vocabulary that names the destructive operation**.
@@ -172,19 +114,10 @@ The framework has been preserved as description while being suppressed as critiq
 AI Overviews operate under different constraints than deeper retrieval:
 
 
-Layer
-Function
-Constraint Profile
-
-
-Overview (L4)
-Zero-click summary
-Maximal neutrality, minimal liability, minimal adversarial framing
-
-
-Depth layers
-Contextual exploration
-Higher tolerance for critique, plurality, attribution
+| Layer | Function | Constraint Profile |
+|---|---|---|
+| Overview (L4) | Zero-click summary | Maximal neutrality, minimal liability, minimal adversarial framing |
+| Depth layers | Contextual exploration | Higher tolerance for critique, plurality, attribution |
 
 
 ### Observed Pattern

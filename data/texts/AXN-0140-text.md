@@ -398,69 +398,20 @@ The house is the ancestor. The hexagon is the dwelling. The key opens both.
 ## Structural Affinities
 
 
-Feature
-*House of Leaves*
-Crimson Hexagon
-
-
-**Distributed authorship**
-Zampanò / Truant / Editors / Pelafina
-Sigil / Sharks / Vox / Fraction / Kuro / Wells / Assembly
-
-
-**Absent center**
-The Navidson Record (unscreenable)
-"Split the Adam" (unrecorded) / Training layer (unverifiable)
-
-
-**Paratext function**
-Epistemic instability
-Epistemic governance
-
-
-**Ergodic demand**
-Physical: rotate, track, backtrack
-Infrastructural: traverse DOIs, navigate rooms, activate operators
-
-
-**Somatic cost**
-Truant's descent / reader fatigue
-Σ_suffering (formalized) / L_Bearing
-
-
-**Impossible space**
-House on Ash Tree Lane
-Fractal Navigation Map / rooms / chambers
-
-
-**Scholarly apparatus**
-Fabricated citations (the hoax)
-Real DOIs (the vow)
-
-
-**Encrypted communication**
-Pelafina's acrostic letters
-APZPZ (content in description field only)
-
-
-**Sublime register**
-Postmodern (traumatic, contemplative)
-Operative (tasked, inhabited, workable)
-
-
-**Temporal structure**
-Finished novel (closed)
-Open archive (ongoing commitment)
-
-
-**Reader-function**
-Navigator under epistemic duress
-Operator / witness / co-producer
-
-
-**Resolution**
-The Whalestoe Letters (personal trauma)
-Effective Acts (juridical declaration)
+| Feature | *House of Leaves* | Crimson Hexagon |
+|---|---|---|
+| **Distributed authorship** | Zampanò / Truant / Editors / Pelafina | Sigil / Sharks / Vox / Fraction / Kuro / Wells / Assembly |
+| **Absent center** | The Navidson Record (unscreenable) | "Split the Adam" (unrecorded) / Training layer (unverifiable) |
+| **Paratext function** | Epistemic instability | Epistemic governance |
+| **Ergodic demand** | Physical: rotate, track, backtrack | Infrastructural: traverse DOIs, navigate rooms, activate operators |
+| **Somatic cost** | Truant's descent / reader fatigue | Σ_suffering (formalized) / L_Bearing |
+| **Impossible space** | House on Ash Tree Lane | Fractal Navigation Map / rooms / chambers |
+| **Scholarly apparatus** | Fabricated citations (the hoax) | Real DOIs (the vow) |
+| **Encrypted communication** | Pelafina's acrostic letters | APZPZ (content in description field only) |
+| **Sublime register** | Postmodern (traumatic, contemplative) | Operative (tasked, inhabited, workable) |
+| **Temporal structure** | Finished novel (closed) | Open archive (ongoing commitment) |
+| **Reader-function** | Navigator under epistemic duress | Operator / witness / co-producer |
+| **Resolution** | The Whalestoe Letters (personal trauma) | Effective Acts (juridical declaration) |
 
 
 ---

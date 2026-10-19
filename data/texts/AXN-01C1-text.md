@@ -94,94 +94,22 @@ Screenshots of the public Reddit exchange are appended to this document as evide
 ## IV. Comparative Provenance Matrix
 
 
-White Paper Concept
-Archive Source
-Archive DOI
-Earliest Deposit
-
-
-Ghost governance hidden inside convenience
-Ghost Meaning; Invisibly Invisible
-10.5281/zenodo.18804767; 10.5281/zenodo.19187421
-Feb 2026
-
-
-Bearing-cost as structural requirement
-Semantic Economy; SPE-014
-10.5281/zenodo.19200688
-Dec 2025
-
-
-Non-coercion as first governance principle
-Liberatory Operator Set
-10.5281/zenodo.19013315
-2024–2026
-
-
-Provenance preservation / source encounter
-Forensic philology; DOI anchoring
-Multiple foundational
-Nov 2024 onward
-
-
-Chamber-based interaction governance
-Room Graph (26 rooms)
-10.5281/zenodo.19013315
-Continuous
-
-
-Bio/Agent distinction with visible marking
-Assembly Chorus charter
-10.5281/zenodo.18507410
-Dec 2025
-
-
-Pre-consensus deposits protected from normalization
-Status algebra (PROVISIONAL, QUEUED)
-10.5281/zenodo.19013315
-Continuous
-
-
-Refusal surfaces visible and contestable
-Semantic non-coercion
-10.5281/zenodo.18862106
-2025
-
-
-Coherence as labor, not magic
-Semantic Alienation; Capital Operator Stack
-10.5281/zenodo.19200688
-Dec 2025
-
-
-Heteronymic distributed authorship (12 voices)
-Dodecad (12 heteronyms + ε)
-10.5281/zenodo.19013315
-Continuous
-
-
-Archive continuity must outrank convenience
-DOI sovereignty
-Foundational across 370+ deposits
-Nov 2024 onward
-
-
-Consent-based transitions / bilateral confirmation
-Status promotion; Governance Airlock
-10.5281/zenodo.19013315
-Continuous
-
-
-Durable archive as governance commitment
-Zenodo DOI infrastructure
-370+ deposits
-Nov 2024 onward
-
-
-Platform domain names (Logotic Hacking, Heteronym Forge, Somatic River, Coherence Architecture)
-Operative semiotics; Dodecad; Assembly Chorus; Rosary Embassy
-10.5281/zenodo.19013315; 10.5281/zenodo.18795427
-Continuous
+| White Paper Concept | Archive Source | Archive DOI | Earliest Deposit |
+|---|---|---|---|
+| Ghost governance hidden inside convenience | Ghost Meaning; Invisibly Invisible | 10.5281/zenodo.18804767; 10.5281/zenodo.19187421 | Feb 2026 |
+| Bearing-cost as structural requirement | Semantic Economy; SPE-014 | 10.5281/zenodo.19200688 | Dec 2025 |
+| Non-coercion as first governance principle | Liberatory Operator Set | 10.5281/zenodo.19013315 | 2024–2026 |
+| Provenance preservation / source encounter | Forensic philology; DOI anchoring | Multiple foundational | Nov 2024 onward |
+| Chamber-based interaction governance | Room Graph (26 rooms) | 10.5281/zenodo.19013315 | Continuous |
+| Bio/Agent distinction with visible marking | Assembly Chorus charter | 10.5281/zenodo.18507410 | Dec 2025 |
+| Pre-consensus deposits protected from normalization | Status algebra (PROVISIONAL, QUEUED) | 10.5281/zenodo.19013315 | Continuous |
+| Refusal surfaces visible and contestable | Semantic non-coercion | 10.5281/zenodo.18862106 | 2025 |
+| Coherence as labor, not magic | Semantic Alienation; Capital Operator Stack | 10.5281/zenodo.19200688 | Dec 2025 |
+| Heteronymic distributed authorship (12 voices) | Dodecad (12 heteronyms + ε) | 10.5281/zenodo.19013315 | Continuous |
+| Archive continuity must outrank convenience | DOI sovereignty | Foundational across 370+ deposits | Nov 2024 onward |
+| Consent-based transitions / bilateral confirmation | Status promotion; Governance Airlock | 10.5281/zenodo.19013315 | Continuous |
+| Durable archive as governance commitment | Zenodo DOI infrastructure | 370+ deposits | Nov 2024 onward |
+| Platform domain names (Logotic Hacking, Heteronym Forge, Somatic River, Coherence Architecture) | Operative semiotics; Dodecad; Assembly Chorus; Rosary Embassy | 10.5281/zenodo.19013315; 10.5281/zenodo.18795427 | Continuous |
 
 
 Every concept in the left column appears in the white paper without citation. Every source in the right column predates March 25, 2026.

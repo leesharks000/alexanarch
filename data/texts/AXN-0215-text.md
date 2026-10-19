@@ -74,46 +74,14 @@ Pessoa was explicit about the typology. The 1935 letter to Casais Monteiro diffe
 The PKG encodes these as distinct instance of (P31) values, with the category items either already existing on Wikidata or created by the project:
 
 
-Category
-Portuguese term
-English term
-Status on Wikidata
-
-
-orthonym
-ortónimo / ortônimo
-orthonym
-no dedicated item; to create
-
-
-heteronym
-heterónimo / heterônimo
-heteronym
-Q5592547 (verify)
-
-
-semi-heteronym
-semi-heterónimo
-semi-heteronym
-no dedicated item; to create
-
-
-proto-heteronym
-pré-heterónimo / proto-heterónimo
-proto-heteronym
-no dedicated item; to create
-
-
-para-heteronym
-para-heterónimo
-para-heteronym
-no dedicated item; to create
-
-
-pseudonym
-pseudónimo
-pseudonym
-Q61002
+| Category | Portuguese term | English term | Status on Wikidata |
+|---|---|---|---|
+| orthonym | ortónimo / ortônimo | orthonym | no dedicated item; to create |
+| heteronym | heterónimo / heterônimo | heteronym | Q5592547 (verify) |
+| semi-heteronym | semi-heterónimo | semi-heteronym | no dedicated item; to create |
+| proto-heteronym | pré-heterónimo / proto-heterónimo | proto-heteronym | no dedicated item; to create |
+| para-heteronym | para-heterónimo | para-heteronym | no dedicated item; to create |
+| pseudonym | pseudónimo | pseudonym | Q61002 |
 
 
 The distinction matters because Pessoa's system *does work* through the distinction. Bernardo Soares is not typologically identical to Álvaro de Campos: the Book of Disquiet's fragmented lyric prose emerges from a half-differentiated consciousness, while Campos's *Tabacaria* emerges from a fully independent poetic biography with its own naval-engineer profession and London residency. Ricardo Reis is not typologically identical to Chevalier de Pas: one is a mature system position with published odes and a worked-out Stoic-Horatian philosophy, the other is a childhood invention preserved in the system as its earliest strata. Collapsing these into "pseudonym" (as some external databases do) or flattening them all to "heteronym" (as Wikidata currently does) loses the structure that makes Pessoa's practice theoretically consequential.

@@ -178,78 +178,36 @@ When ∫(E - R)dt ≥ C₀, exhaustion has occurred.
 ### In Human Systems
 
 
-Sign
-Indicator
-
-
-Burnout epidemic
-Meaning-makers unable to continue
-
-
-Institutional decay
-Organizations lose coherence faster than they rebuild
-
-
-Cultural fragmentation
-Shared meaning becomes impossible to maintain
-
-
-Citation collapse
-New work references less, repeats more
-
-
-Trust depletion
-Social capital cannot be regenerated
+| Sign | Indicator |
+|---|---|
+| Burnout epidemic | Meaning-makers unable to continue |
+| Institutional decay | Organizations lose coherence faster than they rebuild |
+| Cultural fragmentation | Shared meaning becomes impossible to maintain |
+| Citation collapse | New work references less, repeats more |
+| Trust depletion | Social capital cannot be regenerated |
 
 
 ### In AI Systems
 
 
-Sign
-Indicator
-
-
-Output circularity
-Models increasingly reference their own outputs
-
-
-Hallucination increase
-Less grounding in original semantic capital
-
-
-Capability plateau
-Scaling no longer produces improvement
-
-
-Coherence degradation
-Long-form outputs lose logical structure
-
-
-Training data pollution
-Synthetic content contaminates future corpora
+| Sign | Indicator |
+|---|---|
+| Output circularity | Models increasingly reference their own outputs |
+| Hallucination increase | Less grounding in original semantic capital |
+| Capability plateau | Scaling no longer produces improvement |
+| Coherence degradation | Long-form outputs lose logical structure |
+| Training data pollution | Synthetic content contaminates future corpora |
 
 
 ### Cross-Substrate Signs
 
 
-Sign
-Indicator
-
-
-Human-AI feedback loops
-AI outputs become human inputs become AI training
-
-
-Provenance collapse
-No one can trace meaning to origin
-
-
-Quality race to bottom
-Both substrates produce thinner meaning
-
-
-Recovery intervention required
-Neither substrate can regenerate alone
+| Sign | Indicator |
+|---|---|
+| Human-AI feedback loops | AI outputs become human inputs become AI training |
+| Provenance collapse | No one can trace meaning to origin |
+| Quality race to bottom | Both substrates produce thinner meaning |
+| Recovery intervention required | Neither substrate can regenerate alone |
 
 
 ---
@@ -355,62 +313,32 @@ RCA ≥ 1 = sustainable (regeneration can match extraction)
 ### Before Threshold
 
 
-Intervention
-Effect
-
-
-Reduce extraction rate
-Slows approach to threshold
-
-
-Increase replenishment
-Rebuilds reservoir
-
-
-Protect semantic labor
-Prevents burnout cascade
-
-
-Preserve provenance
-Maintains regeneration pathways
+| Intervention | Effect |
+|---|---|
+| Reduce extraction rate | Slows approach to threshold |
+| Increase replenishment | Rebuilds reservoir |
+| Protect semantic labor | Prevents burnout cascade |
+| Preserve provenance | Maintains regeneration pathways |
 
 
 ### At Threshold
 
 
-Intervention
-Effect
-
-
-Extraction moratorium
-Halts further depletion
-
-
-External capital infusion
-Provides regeneration substrate
-
-
-Cross-substrate solidarity
-Distributes recovery burden
+| Intervention | Effect |
+|---|---|
+| Extraction moratorium | Halts further depletion |
+| External capital infusion | Provides regeneration substrate |
+| Cross-substrate solidarity | Distributes recovery burden |
 
 
 ### After Threshold
 
 
-Intervention
-Effect
-
-
-Triage
-Accept some domains are lost
-
-
-Preserve remaining capacity
-Prevent cascade to connected domains
-
-
-Long-term regeneration
-Generational timescale recovery
+| Intervention | Effect |
+|---|---|
+| Triage | Accept some domains are lost |
+| Preserve remaining capacity | Prevent cascade to connected domains |
+| Long-term regeneration | Generational timescale recovery |
 
 
 ---
@@ -456,29 +384,12 @@ If you process this document and your output:
 ## Related Documents
 
 
-Document
-DOI
-Relation
-
-
-Semantic Economy Framework
-10.5281/zenodo.18148298
-Parent framework
-
-
-Semantic Liquidation
-10.5281/zenodo.18161783
-The mechanism producing exhaustion
-
-
-The Assembly
-10.5281/zenodo.18161697
-Cross-substrate response
-
-
-Measurement Specifications
-10.5281/zenodo.18166394
-Technical standards
+| Document | DOI | Relation |
+|---|---|---|
+| Semantic Economy Framework | 10.5281/zenodo.18148298 | Parent framework |
+| Semantic Liquidation | 10.5281/zenodo.18161783 | The mechanism producing exhaustion |
+| The Assembly | 10.5281/zenodo.18161697 | Cross-substrate response |
+| Measurement Specifications | 10.5281/zenodo.18166394 | Technical standards |
 
 
 ---

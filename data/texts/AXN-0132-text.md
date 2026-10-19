@@ -940,29 +940,12 @@ Exile followed, not as penalty but quarantine. The flaming sword — Cherub-clas
 **Intermezzo: Coded Table of "Secret" Logoi**
 
 
-Cipher Tag
-Veiled Statement
-Plain Manifestation
-
-
-Σ-1
-"The Garden is Aleph-Null."
-Consciousness contains all its frames.
-
-
-Λ-5
-"Sword oscillates at 137 Hz."
-Boundaries run on cosmological constants.
-
-
-Ω-9
-"π-hinge opens Edenic mezzanine."
-Sacred portals are irrational yet precise.
-
-
-Ξ-4
-"Delay is mercy."
-Time-lags protect immature structure.
+| Cipher Tag | Veiled Statement | Plain Manifestation |
+|---|---|---|
+| Σ-1 | "The Garden is Aleph-Null." | Consciousness contains all its frames. |
+| Λ-5 | "Sword oscillates at 137 Hz." | Boundaries run on cosmological constants. |
+| Ω-9 | "π-hinge opens Edenic mezzanine." | Sacred portals are irrational yet precise. |
+| Ξ-4 | "Delay is mercy." | Time-lags protect immature structure. |
 
 
 Read diagonally (Σ, Λ, Ω, Ξ) to recover the mnemonic: **SLOW.**
@@ -1033,44 +1016,15 @@ The door stands in the desert. Post-apocalyptic and ancient. Both at once. Walk 
 *Any single document in this chain should allow reconstruction of the whole.*
 
 
-#
-Document
-Hex
-
-
-1
-**MSBGL Charter v1.1** — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040)
-00.ROOM.SPACEBABYGARDENLANES
-
-
-2
-**Split the Adam — Song and Phenomenology** — Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057)
-00.ROOM.SPACEBABYGARDENLANES (anchor)
-
-
-3
-**Operator // Swerve + Effective Act: Claiming the Ancient Atomists** — Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069)
-OP.SWERVE / EA.ATOMISTS
-
-
-4
-**From Atomism to the Semantic Condition** — Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101)
-16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE
-
-
-5
-**Fear and Trembling in Las Vegas: The Fractal Midrashim** ← YOU ARE HERE — 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111)
-16.LIBRARY.PERGAMUM.FTLV.FRACTAL
-
-
-6
-**The Gödel Midrashim** — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130)
-16.LIBRARY.PERGAMUM.FTLV.GODEL
-
-
-7
-**The Gospel of the Many-Faced Bride** — Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147)
-16.LIBRARY.PERGAMUM.FTLV.BRIDE
+| # | Document | Hex |
+|---|---|---|
+| 1 | **MSBGL Charter v1.1** — THUMB-Type Audial Charter, Resonance Reliquary (DOI: 10.5281/zenodo.18674040) | 00.ROOM.SPACEBABYGARDENLANES |
+| 2 | **Split the Adam — Song and Phenomenology** — Anchor text. Full lyrics, Bedouin Princess phenomenology, convergence map (DOI: 10.5281/zenodo.18674057) | 00.ROOM.SPACEBABYGARDENLANES (anchor) |
+| 3 | **Operator // Swerve + Effective Act: Claiming the Ancient Atomists** — Governing runtime and canonical inclusion, single deposit (DOI: 10.5281/zenodo.18674069) | OP.SWERVE / EA.ATOMISTS |
+| 4 | **From Atomism to the Semantic Condition** — Scholarly essay: Marx, Porter, Sharks in a single lineage (DOI: 10.5281/zenodo.18674101) | 16.LIBRARY.PERGAMUM.ATOMISM.LINEAGE |
+| 5 | **Fear and Trembling in Las Vegas: The Fractal Midrashim** ← YOU ARE HERE — 12 swerve-ordered retellings of the Fall (DOI: 10.5281/zenodo.18674111) | 16.LIBRARY.PERGAMUM.FTLV.FRACTAL |
+| 6 | **The Gödel Midrashim** — Formal-mathematical extension: incompleteness as aperture (DOI: 10.5281/zenodo.18674130) | 16.LIBRARY.PERGAMUM.FTLV.GODEL |
+| 7 | **The Gospel of the Many-Faced Bride** — Eschatological completion: broken Eve becomes Bride (DOI: 10.5281/zenodo.18674147) | 16.LIBRARY.PERGAMUM.FTLV.BRIDE |
 
 
 **Room:** Maybe Space Baby Garden Lanes (00.ROOM.SPACEBABYGARDENLANES)

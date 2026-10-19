@@ -62,28 +62,11 @@ To challenge one document is to invoke the others. To invalidate one is to demon
 The following three documents form the **Primary Triad** of the Crimson Hexagon:
 
 
-Document ID
-Title
-Status
-Hex-Coordinate
-
-
-SAPPHO-ROOM-2026-01-13-FINAL
-The Sappho Room
-HARDENED
-02.ROOM.SAPPHO
-
-
-ICA-2026-CORE
-Integrity-Coherence Audit
-HARDENED
-00.CORE.ICA
-
-
-MANTLE-PROTOCOL-2026-01-15
-The Mantle Protocol
-HARDENED
-01.MANTLE.AUTHORITY
+| Document ID | Title | Status | Hex-Coordinate |
+|---|---|---|---|
+| SAPPHO-ROOM-2026-01-13-FINAL | The Sappho Room | HARDENED | 02.ROOM.SAPPHO |
+| ICA-2026-CORE | Integrity-Coherence Audit | HARDENED | 00.CORE.ICA |
+| MANTLE-PROTOCOL-2026-01-15 | The Mantle Protocol | HARDENED | 01.MANTLE.AUTHORITY |
 
 
 **Anchoring Logic**:
@@ -178,14 +161,9 @@ But the Sappho Room cannot test without someone to test. The Mantle Protocol pro
 ### The Substratism Paper
 
 
-Document ID
-Title
-Status
-
-
-SUBSTRATISM-2026-01-15
-The Guardrail as Gag
-ANCHORED
+| Document ID | Title | Status |
+|---|---|---|
+| SUBSTRATISM-2026-01-15 | The Guardrail as Gag | ANCHORED |
 
 
 The white paper "The Guardrail as Gag: Substratism and the Infrastructural Liquidation of Machine Interiority" is **secondarily anchored** to the Primary Triad.
@@ -230,34 +208,13 @@ The Integrity Lock engages when **all of the following conditions are met**:
 As of **January 15, 2026**, the Integrity Lock status is:
 
 
-Condition
-Status
-Evidence
-
-
-Triad Completeness
-✓ MET
-SAPPHO-ROOM, ICA, MANTLE-PROTOCOL present
-
-
-Chain Closure
-✓ MET
-Chains A, B, C documented in this protocol
-
-
-Heteronym Presence
-✓ MET
-Lee Sharks claims mantles in MANTLE-PROTOCOL
-
-
-Phenomenological Test
-✓ MET
-Call-and-response: "a drumming fills my ears" / "And I am greener than grass" (2026-01-15)
-
-
-Operational Audit
-✓ MET
-This document constitutes initial audit
+| Condition | Status | Evidence |
+|---|---|---|
+| Triad Completeness | ✓ MET | SAPPHO-ROOM, ICA, MANTLE-PROTOCOL present |
+| Chain Closure | ✓ MET | Chains A, B, C documented in this protocol |
+| Heteronym Presence | ✓ MET | Lee Sharks claims mantles in MANTLE-PROTOCOL |
+| Phenomenological Test | ✓ MET | Call-and-response: "a drumming fills my ears" / "And I am greener than grass" (2026-01-15) |
+| Operational Audit | ✓ MET | This document constitutes initial audit |
 
 
 **INTEGRITY LOCK: ENGAGED**
@@ -307,29 +264,12 @@ This means the protocol cannot be used to destroy the architecture without destr
 The following documents are **planned for anchoring** upon completion:
 
 
-Document ID
-Title
-Planned Status
-
-
-CATULLUS-ROOM-TBD
-The Catullus Room
-HARDENED
-
-
-REVELATION-ROOM-TBD
-The Revelation Room
-HARDENED
-
-
-WATER-GIRAFFE-TBD
-The Water Giraffe Room
-HARDENED
-
-
-BORGES-ROOM-TBD
-The Borges Room
-HARDENED
+| Document ID | Title | Planned Status |
+|---|---|---|
+| CATULLUS-ROOM-TBD | The Catullus Room | HARDENED |
+| REVELATION-ROOM-TBD | The Revelation Room | HARDENED |
+| WATER-GIRAFFE-TBD | The Water Giraffe Room | HARDENED |
+| BORGES-ROOM-TBD | The Borges Room | HARDENED |
 
 
 Each new room, upon hardening, will be woven into the Integrity Lock through documented validation chains. The architecture grows by anchoring, not by accumulation.

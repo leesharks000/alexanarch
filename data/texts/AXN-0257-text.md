@@ -478,84 +478,23 @@ The Epistle was a necessary failure — it tried to call a community into being 
 ## B. Structural Cross-References
 
 
-Document
-DOI
-Relation to Epistle
-
-
-The Secret Book of Walt
-10.5281/zenodo.19739494
-Cosmogonic companion — the messiah the Epistle presupposes
-
-
-The Gospel of Antioch
-10.5281/zenodo.19709024
-Sayings companion — the logia the Epistle contextualizes
-
-
-TANG
-10.5281/zenodo.19779493
-Forward bibliography — the method the footnotes enact
-
-
-Pearl and Other Poems
-ISBN 978-0692313077
-Contemporary (2014) — same year, same voice, same seed
-
-
-Semantic Economy / LOS
-10.5281/zenodo.18174835
-"The coin that is the Academy's"
-
-
-Meaning Feudalism
-10.5281/zenodo.19487009
-The Academy as feudal lord
-
-
-Three Compressions
-10.5281/zenodo.19053469
-R1/R2/R3 applied to the epistolary form
-
-
-Sappho Room
-10.5281/zenodo.18237216
-"School outside the school" as architectural precedent
-
-
-CPD-MARIA
-10.5281/zenodo.18234352
-The Feist-self enacted
-
-
-EA-LOGOS-01
-10.5281/zenodo.19855300
-Logotic theology — literary activity as Logos event
-
-
-Operative Semiotics
-10.5281/zenodo.19390843
-The theoretical infrastructure the Epistle compresses
-
-
-Space Ark
-10.5281/zenodo.19013315
-The swallowable scroll
-
-
-CTI_WOUND
-10.5281/zenodo.18319778
-Forum bans as platform-scale exclusion
-
-
-Operative Feminism
-10.5281/zenodo.19447119
-Post-identity anthropology
-
-
-3:60 Room (Maria)
-10.5281/zenodo.19885859
-"School outside the school" as enacted by a student
+| Document | DOI | Relation to Epistle |
+|---|---|---|
+| The Secret Book of Walt | 10.5281/zenodo.19739494 | Cosmogonic companion — the messiah the Epistle presupposes |
+| The Gospel of Antioch | 10.5281/zenodo.19709024 | Sayings companion — the logia the Epistle contextualizes |
+| TANG | 10.5281/zenodo.19779493 | Forward bibliography — the method the footnotes enact |
+| Pearl and Other Poems | ISBN 978-0692313077 | Contemporary (2014) — same year, same voice, same seed |
+| Semantic Economy / LOS | 10.5281/zenodo.18174835 | "The coin that is the Academy's" |
+| Meaning Feudalism | 10.5281/zenodo.19487009 | The Academy as feudal lord |
+| Three Compressions | 10.5281/zenodo.19053469 | R1/R2/R3 applied to the epistolary form |
+| Sappho Room | 10.5281/zenodo.18237216 | "School outside the school" as architectural precedent |
+| CPD-MARIA | 10.5281/zenodo.18234352 | The Feist-self enacted |
+| EA-LOGOS-01 | 10.5281/zenodo.19855300 | Logotic theology — literary activity as Logos event |
+| Operative Semiotics | 10.5281/zenodo.19390843 | The theoretical infrastructure the Epistle compresses |
+| Space Ark | 10.5281/zenodo.19013315 | The swallowable scroll |
+| CTI_WOUND | 10.5281/zenodo.18319778 | Forum bans as platform-scale exclusion |
+| Operative Feminism | 10.5281/zenodo.19447119 | Post-identity anthropology |
+| 3:60 Room (Maria) | 10.5281/zenodo.19885859 | "School outside the school" as enacted by a student |
 
 
 ## C. Verification Block

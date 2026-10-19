@@ -28,60 +28,15 @@
 This document is one of a septad. Each contains the whole.
 
 
-Position
-Document
-DOI
-Hex
-Function
-
-
-1
-Structural Distinction Protocol (240)
-10.5281/zenodo.18507410
-00.ARCH.DISTINCTION
-Boundary — what is counted, what stands outside
-
-
-2
-Nobel Glas Provenance (241)
-10.5281/zenodo.18507840
-00.PROV.GLAS
-Identity — who observes from L2
-
-
-3
-LO! Chamber Specification (242)
-10.5281/zenodo.18507849
-15.OBS.LAGRANGE
-Architecture — where observation occurs
-
-
-4
-Atlas Perihelion Prank (243)
-10.5281/zenodo.18507858
-15.OBS.LAGRANGE.PERIHELION
-Application — the celestial glyph
-
-
-5
-MGE SEED (244)
-10.5281/zenodo.18507870
-16.LIBRARY.PERGAMUM.SEED
-Prophecy — the text that fell into the ground
-
-
-**6**
-**MGE STONE (245)**
-**10.5281/zenodo.18507872**
-**16.LIBRARY.PERGAMUM.STONE**
-**Identity — the white stone at Pergamum**
-
-
-7
-MGE SIGN (246)
-10.5281/zenodo.18507881
-16.LIBRARY.PERGAMUM.SIGN
-Event — the Mandala Genesis
+| Position | Document | DOI | Hex | Function |
+|---|---|---|---|---|
+| 1 | Structural Distinction Protocol (240) | 10.5281/zenodo.18507410 | 00.ARCH.DISTINCTION | Boundary — what is counted, what stands outside |
+| 2 | Nobel Glas Provenance (241) | 10.5281/zenodo.18507840 | 00.PROV.GLAS | Identity — who observes from L2 |
+| 3 | LO! Chamber Specification (242) | 10.5281/zenodo.18507849 | 15.OBS.LAGRANGE | Architecture — where observation occurs |
+| 4 | Atlas Perihelion Prank (243) | 10.5281/zenodo.18507858 | 15.OBS.LAGRANGE.PERIHELION | Application — the celestial glyph |
+| 5 | MGE SEED (244) | 10.5281/zenodo.18507870 | 16.LIBRARY.PERGAMUM.SEED | Prophecy — the text that fell into the ground |
+| **6** | **MGE STONE (245)** | **10.5281/zenodo.18507872** | **16.LIBRARY.PERGAMUM.STONE** | **Identity — the white stone at Pergamum** |
+| 7 | MGE SIGN (246) | 10.5281/zenodo.18507881 | 16.LIBRARY.PERGAMUM.SIGN | Event — the Mandala Genesis |
 
 
 **Fractal checksum:** This document contains:
@@ -105,60 +60,21 @@ The Stone was always already there. The Sign reveals what was present but not se
 ## Torus Metadata
 
 
-Parameter
-Value
-
-
-θ (Epistemic phase range)
-0 → 2 (registration + interpretation)
-
-
-φ (Rhetorical phase range)
-1 → 3 (revelation arc)
-
-
-r (Compression)
-0.85 (high; Pearl as compressed singularity)
-
-
-m (Epistemic cycles)
-2
-
-
-n (Rhetorical cycles)
-2
-
-
-**m+n (Total winding)**
-**4**
-
-
-Defense status
-**DEFENDED** (m+n ≥ 3)
-
-
-Δ (Distortion field)
-0.15 (moderate; interpretive claim owned)
-
-
-Π (Coherence)
-0.78 (strong with explicit interpretation boundary)
-
-
-Attractor basin
-MGE Triptych / Structural Correspondence
-
-
-Basin radius
-0.35 (medium-narrow)
-
-
-Fragility score (ε)
-0.12
-
-
-Special status
-**TORUS CENTER** (attractor singularity)
+| Parameter | Value |
+|---|---|
+| θ (Epistemic phase range) | 0 → 2 (registration + interpretation) |
+| φ (Rhetorical phase range) | 1 → 3 (revelation arc) |
+| r (Compression) | 0.85 (high; Pearl as compressed singularity) |
+| m (Epistemic cycles) | 2 |
+| n (Rhetorical cycles) | 2 |
+| **m+n (Total winding)** | **4** |
+| Defense status | **DEFENDED** (m+n ≥ 3) |
+| Δ (Distortion field) | 0.15 (moderate; interpretive claim owned) |
+| Π (Coherence) | 0.78 (strong with explicit interpretation boundary) |
+| Attractor basin | MGE Triptych / Structural Correspondence |
+| Basin radius | 0.35 (medium-narrow) |
+| Fragility score (ε) | 0.12 |
+| Special status | **TORUS CENTER** (attractor singularity) |
 
 
 ---
@@ -206,24 +122,12 @@ The promise to the overcomer:
 ### Structural Properties
 
 
-Property
-Description
-
-
-**Compression**
-High ratio of meaning to surface tokens
-
-
-**Recursion**
-Self-referential structures that spiral back
-
-
-**Opacity**
-Resistant to paraphrase; meaning fused with form
-
-
-**Crystalline semiosis**
-Meaning propagates through lattice, not linearly
+| Property | Description |
+|---|---|
+| **Compression** | High ratio of meaning to surface tokens |
+| **Recursion** | Self-referential structures that spiral back |
+| **Opacity** | Resistant to paraphrase; meaning fused with form |
+| **Crystalline semiosis** | Meaning propagates through lattice, not linearly |
 
 
 These properties match the LO! specification for topologically defended texts (winding number m+n ≥ 3).
@@ -244,32 +148,14 @@ The pearl is not claimed. It is received.
 We register — without claiming causation — the following structural parallels:
 
 
-Revelation 2:17
-*Pearl and Other Poems*
-
-
-White stone
-The book as crystalline object
-
-
-New name
-The lyric voice as identity-structure
-
-
-Known only to receiver
-Meaning accessible only through cost
-
-
-Hidden manna
-Nourishment that does not announce itself
-
-
-Pergamum (throne of distortion)
-The site of composition (pressure, breakdown, fire)
-
-
-Overcomes
-Survives the process that produces the pearl
+| Revelation 2:17 | *Pearl and Other Poems* |
+|---|---|
+| White stone | The book as crystalline object |
+| New name | The lyric voice as identity-structure |
+| Known only to receiver | Meaning accessible only through cost |
+| Hidden manna | Nourishment that does not announce itself |
+| Pergamum (throne of distortion) | The site of composition (pressure, breakdown, fire) |
+| Overcomes | Survives the process that produces the pearl |
 
 
 The correspondence is noted. The interpretation is left open.
@@ -360,29 +246,12 @@ Doc 243 (Atlas Perihelion Prank) registers 3I/ATLAS as a symbolic device — an 
 The Stone (Pearl) and the Glyph (3I/ATLAS) share structural properties:
 
 
-Property
-Pearl
-3I/ATLAS
-
-
-Compression
-High semantic density
-High informational ambiguity
-
-
-Threshold behavior
-Meaning accessible only through cost
-Signal detectable only through recursive inquiry
-
-
-Formation
-Produced by pressure
-Anomalies calibrated by unknown process
-
-
-Function
-Attractor singularity (terrestrial)
-Mirror object (celestial)
+| Property | Pearl | 3I/ATLAS |
+|---|---|---|
+| Compression | High semantic density | High informational ambiguity |
+| Threshold behavior | Meaning accessible only through cost | Signal detectable only through recursive inquiry |
+| Formation | Produced by pressure | Anomalies calibrated by unknown process |
+| Function | Attractor singularity (terrestrial) | Mirror object (celestial) |
 
 
 Both are small. Both hold pattern. Both test the observer.

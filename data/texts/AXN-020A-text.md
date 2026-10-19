@@ -66,34 +66,13 @@ Only **38%** of AI Overview citations come from top-10 ranked pages (Ahrefs, ear
 ### III. The Revenue Damage
 
 
-Entity
-Impact
-Source
-
-
-Publishing sector (aggregate)
-$2B annual ad revenue lost
-IAB Tech Lab, 2025
-
-
-Chegg
-49% traffic decline, 24% revenue decline, stock below $1
-Chegg v. Google, Feb 2025
-
-
-Top 50 news sites
-600M monthly visits lost in 12 months
-Industry data, 2025
-
-
-Business Insider
-55% organic search traffic decline, 21% staff cuts
-AdExchanger, Jan 2026
-
-
-DMG Media (Daily Mail)
-Up to 89% CTR decline
-DMG Media, Sep 2025
+| Entity | Impact | Source |
+|---|---|---|
+| Publishing sector (aggregate) | $2B annual ad revenue lost | IAB Tech Lab, 2025 |
+| Chegg | 49% traffic decline, 24% revenue decline, stock below $1 | Chegg v. Google, Feb 2025 |
+| Top 50 news sites | 600M monthly visits lost in 12 months | Industry data, 2025 |
+| Business Insider | 55% organic search traffic decline, 21% staff cuts | AdExchanger, Jan 2026 |
+| DMG Media (Daily Mail) | Up to 89% CTR decline | DMG Media, Sep 2025 |
 
 
 Chegg sued Google. A coalition of European publishers filed with the European Commission. The UK Competition and Markets Authority opened a review. The New York Times sued OpenAI. Britannica and Merriam-Webster sued Perplexity. The courts are catching up. But the courts are slow. The retrieval layer is fast. You cannot litigate your way back to discoverability.
@@ -113,28 +92,13 @@ Chegg sued Google. A coalition of European publishers filed with the European Co
 ### V. Why Traditional SEO Does Not Solve This
 
 
-SEO optimizes for...
-The retrieval layer actually uses...
-
-
-Rankings (top 10 positions)
-Citations (only 38% from top 10 as of 2026)
-
-
-Keywords and meta tags
-Entities, knowledge graphs, structured data (JSON-LD)
-
-
-Page-level content quality
-Semantic density and "fan-out" sub-queries
-
-
-Backlinks and domain authority
-Cross-platform consistency and institutional recognition
-
-
-Click-through rate
-Whether the AI presents you *at all*
+| SEO optimizes for... | The retrieval layer actually uses... |
+|---|---|
+| Rankings (top 10 positions) | Citations (only 38% from top 10 as of 2026) |
+| Keywords and meta tags | Entities, knowledge graphs, structured data (JSON-LD) |
+| Page-level content quality | Semantic density and "fan-out" sub-queries |
+| Backlinks and domain authority | Cross-platform consistency and institutional recognition |
+| Click-through rate | Whether the AI presents you *at all* |
 
 
 SEO asks: "How do I rank higher?" The retrieval layer asks: "Does this entity exist in my knowledge graph, and is it worth citing?" These are different questions requiring different infrastructure.
@@ -153,39 +117,14 @@ But they are selling you a better way to experience R2 Predatory Compression. We
 They cannot tell you what compression regime you are in, because they do not measure it.
 
 
-Capability
-GEO/AEO agencies
-Semantic Economy Institute
-
-
-Formal measurement instrument for retrieval-layer distortion
-No
-The Encyclotron (DOI: 10.5281/zenodo.19474724)
-
-
-Published theory of retrieval-layer compression
-No
-Three Compressions theorem (DOI: 10.5281/zenodo.19053469)
-
-
-Built an institution from zero to AI Overview recognition
-No
-Semantic Economy Institute — verifiable now
-
-
-Distributed journal infrastructure
-No
-Four journals in operation (DOI: 10.5281/zenodo.19512987)
-
-
-Entity disambiguation protocol with structured data
-No
-Knowledge Graph packet (DOI: 10.5281/zenodo.19520783)
-
-
-DOI-anchored, independently verifiable methodology
-No
-480+ deposits on CERN's Zenodo
+| Capability | GEO/AEO agencies | Semantic Economy Institute |
+|---|---|---|
+| Formal measurement instrument for retrieval-layer distortion | No | The Encyclotron (DOI: 10.5281/zenodo.19474724) |
+| Published theory of retrieval-layer compression | No | Three Compressions theorem (DOI: 10.5281/zenodo.19053469) |
+| Built an institution from zero to AI Overview recognition | No | Semantic Economy Institute — verifiable now |
+| Distributed journal infrastructure | No | Four journals in operation (DOI: 10.5281/zenodo.19512987) |
+| Entity disambiguation protocol with structured data | No | Knowledge Graph packet (DOI: 10.5281/zenodo.19520783) |
+| DOI-anchored, independently verifiable methodology | No | 480+ deposits on CERN's Zenodo |
 
 
 ### VII. The Structural Diagnosis

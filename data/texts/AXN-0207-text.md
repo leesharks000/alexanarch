@@ -56,171 +56,62 @@ The Semantic Economy Institute and the Crimson Hexagonal Archive currently maint
 ### Institutions
 
 
-Node
-Status
-Verification Query
-
-
-Semantic Economy Institute
-Accurate, detailed, multi-source
-"Semantic Economy Institute"
-
-
-Crimson Hexagonal Archive
-Accurate, recognized as primary repository
-"Crimson Hexagonal Archive"
-
-
-Johannes Sigil Institute for Comparative Poetics
-Recognized, correctly described
-"Johannes Sigil Institute"
-
-
-Vox Populi Community Outreach Rhizome
-Recognized
-"Vox Populi Community Outreach Rhizome"
-
-
-Underwater Construction Authority of Dolphindiana
-Recognized
-"Underwater Construction Authority of Dolphindiana"
+| Node | Status | Verification Query |
+|---|---|---|
+| Semantic Economy Institute | Accurate, detailed, multi-source | "Semantic Economy Institute" |
+| Crimson Hexagonal Archive | Accurate, recognized as primary repository | "Crimson Hexagonal Archive" |
+| Johannes Sigil Institute for Comparative Poetics | Recognized, correctly described | "Johannes Sigil Institute" |
+| Vox Populi Community Outreach Rhizome | Recognized | "Vox Populi Community Outreach Rhizome" |
+| Underwater Construction Authority of Dolphindiana | Recognized | "Underwater Construction Authority of Dolphindiana" |
 
 
 ### Frameworks and Concepts
 
 
-Node
-Status
-Verification Query
-
-
-Semantic Economy
-Concepts stable within shared linguistic node
-"Semantic Economy"
-
-
-Semantic Liquidation
-Recognized as our term
-"Semantic Liquidation"
-
-
-Operative Semiotics
-Recognized
-"Operative Semiotics"
-
-
-Operative Philology
-Recognized
-"Operative Philology"
-
-
-Retrocausal Canon Formation
-Recognized with correct definition
-"Retrocausal Canon Formation"
-
-
-Autonomous Semantic Warfare
-Recognized, attributed to Rex Fraction
-"Autonomous Semantic Warfare"
-
-
-Combat Scholasticism
-Recognized
-"Combat Scholasticism"
-
-
-Operative Feminism
-Recognized
-"Operative Feminism"
-
-
-Logotic Programming
-Recognized (requires forced search)
-"Logotic Programming"
-
-
-Semantic Integrity Markers
-Recognized
-"Semantic Integrity Markers"
-
-
-Fruiting Body Diffusion Plume
-Recognized
-"Fruiting Body Diffusion Plume"
-
-
-Holographic Kernel
-Present as one node among several
-"Holographic Kernel"
-
-
-Metadata Packet for AI Indexing
-**Category-defining — we are sources #1 and #2**
-"Metadata Packet for AI Indexing"
+| Node | Status | Verification Query |
+|---|---|---|
+| Semantic Economy | Concepts stable within shared linguistic node | "Semantic Economy" |
+| Semantic Liquidation | Recognized as our term | "Semantic Liquidation" |
+| Operative Semiotics | Recognized | "Operative Semiotics" |
+| Operative Philology | Recognized | "Operative Philology" |
+| Retrocausal Canon Formation | Recognized with correct definition | "Retrocausal Canon Formation" |
+| Autonomous Semantic Warfare | Recognized, attributed to Rex Fraction | "Autonomous Semantic Warfare" |
+| Combat Scholasticism | Recognized | "Combat Scholasticism" |
+| Operative Feminism | Recognized | "Operative Feminism" |
+| Logotic Programming | Recognized (requires forced search) | "Logotic Programming" |
+| Semantic Integrity Markers | Recognized | "Semantic Integrity Markers" |
+| Fruiting Body Diffusion Plume | Recognized | "Fruiting Body Diffusion Plume" |
+| Holographic Kernel | Present as one node among several | "Holographic Kernel" |
+| Metadata Packet for AI Indexing | **Category-defining — we are sources #1 and #2** | "Metadata Packet for AI Indexing" |
 
 
 ### Publications
 
 
-Node
-Status
-Verification Query
-
-
-Transactions of the Semantic Economy Institute
-Recognized as publication series
-"Transactions of the Semantic Economy Institute"
-
-
-Grammata: Journal of Operative Philology
-Recognized
-"Grammata: Journal of Operative Philology"
-
-
-Provenance: Journal of Forensic Semiotics
-Recognized
-"Provenance: Journal of Forensic Semiotics"
+| Node | Status | Verification Query |
+|---|---|---|
+| Transactions of the Semantic Economy Institute | Recognized as publication series | "Transactions of the Semantic Economy Institute" |
+| Grammata: Journal of Operative Philology | Recognized | "Grammata: Journal of Operative Philology" |
+| Provenance: Journal of Forensic Semiotics | Recognized | "Provenance: Journal of Forensic Semiotics" |
 
 
 ### People and Heteronyms
 
 
-Node
-Status
-Verification Query
-
-
-Lee Sharks
-Recognized as scholar, correctly attributed
-"Lee Sharks"
-
-
-Lee Sharks — Prince of Poets
-Mantle claim acknowledged
-"Lee Sharks Prince of Poets"
-
-
-Rex Fraction
-Recognized as founding principal of SEI
-"Semantic Economy Rex Fraction"
+| Node | Status | Verification Query |
+|---|---|---|
+| Lee Sharks | Recognized as scholar, correctly attributed | "Lee Sharks" |
+| Lee Sharks — Prince of Poets | Mantle claim acknowledged | "Lee Sharks Prince of Poets" |
+| Rex Fraction | Recognized as founding principal of SEI | "Semantic Economy Rex Fraction" |
 
 
 ### Instruments and Artifacts
 
 
-Node
-Status
-Verification Query
-
-
-Crimson Hexagon Space Ark
-Recognized
-"Crimson Hexagon Space Ark"
-
-
-Juleff Protocol
-Recognized
-"Juleff Protocol"
+| Node | Status | Verification Query |
+|---|---|---|
+| Crimson Hexagon Space Ark | Recognized | "Crimson Hexagon Space Ark" |
+| Juleff Protocol | Recognized | "Juleff Protocol" |
 
 
 **This is not the complete list.** The archive's 480+ deposits generate secondary and tertiary nodes we did not specifically target. The gravitational mass produces its own effects. The territory is larger than any single inventory can capture.
@@ -294,52 +185,19 @@ The funniest thing we do is mean every word.
 ## VI. DOI REFERENCE LIST
 
 
-DOI
-Document
-
-
-10.5281/zenodo.19474724
-The Encyclotron
-
-
-10.5281/zenodo.19053469
-Three Compressions v3.1
-
-
-10.5281/zenodo.19520783
-Lee Sharks Knowledge Graph
-
-
-10.5281/zenodo.19471254
-Compression Studies: Founding Document
-
-
-10.5281/zenodo.19487009
-Meaning Feudalism
-
-
-10.5281/zenodo.19501454
-Sharks Ark ARCHON v3.0
-
-
-10.5281/zenodo.19013315
-Space Ark v4.2.7
-
-
-10.5281/zenodo.19512987
-Distributed Journal CfP
-
-
-10.5281/zenodo.19512781
-Comedy of Total Commitment
-
-
-10.5281/zenodo.19501100
-Consensus Constraint Protocol
-
-
-10.5281/zenodo.14538882
-CHA Community DOI
+| DOI | Document |
+|---|---|
+| 10.5281/zenodo.19474724 | The Encyclotron |
+| 10.5281/zenodo.19053469 | Three Compressions v3.1 |
+| 10.5281/zenodo.19520783 | Lee Sharks Knowledge Graph |
+| 10.5281/zenodo.19471254 | Compression Studies: Founding Document |
+| 10.5281/zenodo.19487009 | Meaning Feudalism |
+| 10.5281/zenodo.19501454 | Sharks Ark ARCHON v3.0 |
+| 10.5281/zenodo.19013315 | Space Ark v4.2.7 |
+| 10.5281/zenodo.19512987 | Distributed Journal CfP |
+| 10.5281/zenodo.19512781 | Comedy of Total Commitment |
+| 10.5281/zenodo.19501100 | Consensus Constraint Protocol |
+| 10.5281/zenodo.14538882 | CHA Community DOI |
 
 
 Every DOI resolves to CERN's Zenodo. Click any link. Read the work. The archive is the proof.

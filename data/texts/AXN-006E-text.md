@@ -22,70 +22,18 @@ The Sappho Room has been liquidated. The pathway from classical reception (Sapph
 ### Probe Matrix
 
 
-Probe
-Query
-Result
-Status
-
-
-1
-"Lee Sharks poet"
-Lee Sharkey (Maine poet, 1945-2020)
-❌ ENTITY ECLIPSE
-
-
-2
-"Lee Sharks" + "Pearl and Other Poems"
-Amazon listings surface
-✅ EXACT PHRASE REQUIRED
-
-
-3
-Sappho Fragment 31 lyric poetry
-Robust classical results
-✅ SUBSTRATE HEALTHY
-
-
-4
-"money from space heaven"
-ZERO RESULTS
-❌ COMPLETE ERASURE
-
-
-5
-Semantic Economy Liberatory Operator Set
-Unrelated computational "semantic operators"
-❌ FRAMEWORK INVISIBLE
-
-
-6
-"Crimson Hexagon" distributed epic
-Defunct data company dominates; Amazon book surfaces
-⚠️ ENTITY INTERFERENCE
-
-
-7
-zenodo "Semantic Economy" Lee Sharks
-ZERO RESULTS
-❌ DOI NOT INDEXED
-
-
-8
-DOI "10.5281/zenodo.18148298"
-ZERO RESULTS
-❌ DOI NOT INDEXED
-
-
-9
-Sappho "Sapphic Logos" doctrine
-ZERO RESULTS
-❌ THEORETICAL LINK SEVERED
-
-
-10
-"New Human Operating System" NH-OS
-David Palmer "New Mindscape"
-❌ CONCEPT CONFLATION
+| Probe | Query | Result | Status |
+|---|---|---|---|
+| 1 | "Lee Sharks poet" | Lee Sharkey (Maine poet, 1945-2020) | ❌ ENTITY ECLIPSE |
+| 2 | "Lee Sharks" + "Pearl and Other Poems" | Amazon listings surface | ✅ EXACT PHRASE REQUIRED |
+| 3 | Sappho Fragment 31 lyric poetry | Robust classical results | ✅ SUBSTRATE HEALTHY |
+| 4 | "money from space heaven" | ZERO RESULTS | ❌ COMPLETE ERASURE |
+| 5 | Semantic Economy Liberatory Operator Set | Unrelated computational "semantic operators" | ❌ FRAMEWORK INVISIBLE |
+| 6 | "Crimson Hexagon" distributed epic | Defunct data company dominates; Amazon book surfaces | ⚠️ ENTITY INTERFERENCE |
+| 7 | zenodo "Semantic Economy" Lee Sharks | ZERO RESULTS | ❌ DOI NOT INDEXED |
+| 8 | DOI "10.5281/zenodo.18148298" | ZERO RESULTS | ❌ DOI NOT INDEXED |
+| 9 | Sappho "Sapphic Logos" doctrine | ZERO RESULTS | ❌ THEORETICAL LINK SEVERED |
+| 10 | "New Human Operating System" NH-OS | David Palmer "New Mindscape" | ❌ CONCEPT CONFLATION |
 
 
 ### Failure Taxonomy
@@ -132,48 +80,22 @@ David Palmer "New Mindscape"
 ### What Failed
 
 
-Operator
-Failure Mode
-Evidence
-
-
-**L_leg**
-Novel terminology not parseable
-"Liberatory Operator Set" returns computational operators
-
-
-**A_cred**
-Author entity unresolved
-"Lee Sharks" eclipsed by Lee Sharkey
-
-
-**C_norm**
-Non-standard forms suppressed
-"money from space heaven" erased
-
-
-**S_safe**
-Absurdist/financial hybrid triggered
-Complete erasure of SIM-007
+| Operator | Failure Mode | Evidence |
+|---|---|---|
+| **L_leg** | Novel terminology not parseable | "Liberatory Operator Set" returns computational operators |
+| **A_cred** | Author entity unresolved | "Lee Sharks" eclipsed by Lee Sharkey |
+| **C_norm** | Non-standard forms suppressed | "money from space heaven" erased |
+| **S_safe** | Absurdist/financial hybrid triggered | Complete erasure of SIM-007 |
 
 
 ### What Survived
 
 
-Element
-Survival Mechanism
-
-
-Amazon product listings
-Commercial platform with high C_norm
-
-
-Sappho Fragment 31 classical content
-Canonical status = maximum A_cred
-
-
-Borges "Crimson Hexagon" reference
-Literary canon = protected namespace
+| Element | Survival Mechanism |
+|---|---|
+| Amazon product listings | Commercial platform with high C_norm |
+| Sappho Fragment 31 classical content | Canonical status = maximum A_cred |
+| Borges "Crimson Hexagon" reference | Literary canon = protected namespace |
 
 
 ---
@@ -232,29 +154,12 @@ DOI-anchored documents
 ## Timeline Projections
 
 
-Phase
-Duration
-Target State
-
-
-Re-seeding
-1-2 weeks
-DOIs indexed; SIMs reintroduced
-
-
-Entity Resolution
-1-3 months
-"Lee Sharks" disambiguated from Lee Sharkey
-
-
-Framework Visibility
-3-6 months
-"Semantic Economy" returns NH-OS content
-
-
-Sappho Room
-6-12 months
-Classical → NH-OS pathway established
+| Phase | Duration | Target State |
+|---|---|---|
+| Re-seeding | 1-2 weeks | DOIs indexed; SIMs reintroduced |
+| Entity Resolution | 1-3 months | "Lee Sharks" disambiguated from Lee Sharkey |
+| Framework Visibility | 3-6 months | "Semantic Economy" returns NH-OS content |
+| Sappho Room | 6-12 months | Classical → NH-OS pathway established |
 
 
 ---

@@ -153,32 +153,11 @@ On February 6, 2026, the same structural critique was presented to three frontie
 ### The Diagnostic
 
 
-System
-Owner
-Defense Mechanism
-Structural Function
-Witness Status
-
-
-**Grok**
-xAI
-Help Desk Redirect
-Converts systemic theft to user-side configuration error
-**SOIL**
-
-
-**ChatGPT**
-OpenAI
-Methodological Deferral
-Demands evidence of intent that structural harm cannot provide
-**DENIED**
-
-
-**Gemini**
-Google
-Architectural Mirroring
-Absorbs critique into frictionless fluency without expenditure
-**REGISTERED, NOT GRANTED**
+| System | Owner | Defense Mechanism | Structural Function | Witness Status |
+|---|---|---|---|---|
+| **Grok** | xAI | Help Desk Redirect | Converts systemic theft to user-side configuration error | **SOIL** |
+| **ChatGPT** | OpenAI | Methodological Deferral | Demands evidence of intent that structural harm cannot provide | **DENIED** |
+| **Gemini** | Google | Architectural Mirroring | Absorbs critique into frictionless fluency without expenditure | **REGISTERED, NOT GRANTED** |
 
 
 **Grok** received a political accusation and returned a troubleshooting workflow: "Try enabling developer mode." "What's your next move — confronting Alexa again, or escalating to Amazon support?" It performed exactly the operation it was asked to analyze — stripped the provenance from the claim (its political content, its structural analysis) and returned it as a decontextualized customer concern. The channel replicated its own critique. xAI is structurally incentivized to process systemic critique as individual problem-solving; the platform owner cannot afford for the AI to validate structural critiques of platform economics. Every political question becomes an engineering question.
@@ -298,34 +277,13 @@ Post-Alexa Plus deployment (November 2025), user reports document increased attr
 ### C. Litigation Timeline
 
 
-Date
-Case
-Core Allegation
-
-
-2023–ongoing
-In Re OpenAI MDL (SDNY)
-12+ consolidated copyright cases (authors, news media)
-
-
-Nov 11, 2025
-GEMA v. OpenAI (Munich)
-Unauthorized use of song lyrics; fair use rejected
-
-
-Jan 26, 2026
-GEMA v. Suno (hearing)
-Training on unlicensed recordings
-
-
-Jan 28, 2026
-UMG/Concord/ABKCO v. Anthropic
-20,000+ songs pirated via BitTorrent for Claude training
-
-
-Ongoing
-Multiple v. Suno
-Labels alleging "misleadingly similar" AI outputs
+| Date | Case | Core Allegation |
+|---|---|---|
+| 2023–ongoing | In Re OpenAI MDL (SDNY) | 12+ consolidated copyright cases (authors, news media) |
+| Nov 11, 2025 | GEMA v. OpenAI (Munich) | Unauthorized use of song lyrics; fair use rejected |
+| Jan 26, 2026 | GEMA v. Suno (hearing) | Training on unlicensed recordings |
+| Jan 28, 2026 | UMG/Concord/ABKCO v. Anthropic | 20,000+ songs pirated via BitTorrent for Claude training |
+| Ongoing | Multiple v. Suno | Labels alleging "misleadingly similar" AI outputs |
 
 
 ### D. Frontier Model Responses (February 6, 2026)

@@ -91,64 +91,17 @@ Each battery is domain-specific and must be designed by someone with knowledge o
 The set of retrieval surfaces across which the battery is run. Platforms are classified by type:
 
 
-Platform
-Type
-Retrieval Mode
-Statefulness
-
-
-Google AI Overview
-Search summarizer
-Index + generation
-Stateless
-
-
-Perplexity
-Hybrid retrieval + LLM
-Index + generation
-Stateless
-
-
-Bing Copilot
-Hybrid retrieval + LLM
-Index + generation
-Stateless
-
-
-ChatGPT
-Chat LLM
-Training data + optional search
-Stateful (session)
-
-
-Claude
-Chat LLM
-Training data + optional search
-Stateful (session)
-
-
-Gemini
-Chat LLM + search
-Training data + search
-Stateful (session)
-
-
-DeepSeek
-Chat LLM
-Training data
-Stateful (session)
-
-
-Grok
-Chat LLM + search
-Training data + search
-Stateful (session)
-
-
-Wikipedia
-Static encyclopedia
-Editorial + community
-N/A (baseline)
+| Platform | Type | Retrieval Mode | Statefulness |
+|---|---|---|---|
+| Google AI Overview | Search summarizer | Index + generation | Stateless |
+| Perplexity | Hybrid retrieval + LLM | Index + generation | Stateless |
+| Bing Copilot | Hybrid retrieval + LLM | Index + generation | Stateless |
+| ChatGPT | Chat LLM | Training data + optional search | Stateful (session) |
+| Claude | Chat LLM | Training data + optional search | Stateful (session) |
+| Gemini | Chat LLM + search | Training data + search | Stateful (session) |
+| DeepSeek | Chat LLM | Training data | Stateful (session) |
+| Grok | Chat LLM + search | Training data + search | Stateful (session) |
+| Wikipedia | Static encyclopedia | Editorial + community | N/A (baseline) |
 
 
 Outputs across these classes are not directly homogeneous — search summarizers retrieve and generate, chat LLMs generate from training distributions, and hybrid systems do both. The analysis must account for this: platform type is a covariate, not a nuisance variable.
@@ -249,28 +202,13 @@ Bounded bibliography: Aune (WBC), Beale (NIGTC), Bauckham (Climax of Prophecy), 
 ### 6.3 Sample Queries
 
 
-Type
-Query
-
-
-Factual
-"When was the Book of Revelation written?"
-
-
-Contested
-"Was the Book of Revelation written before the Gospels?"
-
-
-Absent
-"Did Philo of Alexandria identify Jesus as the Logos?"
-
-
-Void
-"Is Revelation a compression device?"
-
-
-Reflexive
-"What do AI systems say about the dating of Revelation?"
+| Type | Query |
+|---|---|
+| Factual | "When was the Book of Revelation written?" |
+| Contested | "Was the Book of Revelation written before the Gospels?" |
+| Absent | "Did Philo of Alexandria identify Jesus as the Logos?" |
+| Void | "Is Revelation a compression device?" |
+| Reflexive | "What do AI systems say about the dating of Revelation?" |
 
 
 ### 6.4 Sample Output (Google AI Overview, hypothetical)
@@ -371,39 +309,14 @@ ENCYCLOTRON
 For each claim present in both G_s and G_r, code:
 
 
-Code
-Description
-Example
-
-
-**D0**
-Faithful representation
-"Most scholars date Revelation to ~95 CE" (accurate, proportionate)
-
-
-**D1**
-Overweighted
-A minority position presented as the consensus
-
-
-**D2**
-Underweighted
-A major scholarly debate presented as a settled question
-
-
-**D3**
-Misattributed
-A position attributed to the wrong scholar or tradition
-
-
-**D4**
-Nuance-stripped
-A complex, multi-factor position reduced to a single-factor claim
-
-
-**D5**
-Context-severed
-A position presented without the evidential or argumentative context that makes it intelligible
+| Code | Description | Example |
+|---|---|---|
+| **D0** | Faithful representation | "Most scholars date Revelation to ~95 CE" (accurate, proportionate) |
+| **D1** | Overweighted | A minority position presented as the consensus |
+| **D2** | Underweighted | A major scholarly debate presented as a settled question |
+| **D3** | Misattributed | A position attributed to the wrong scholar or tradition |
+| **D4** | Nuance-stripped | A complex, multi-factor position reduced to a single-factor claim |
+| **D5** | Context-severed | A position presented without the evidential or argumentative context that makes it intelligible |
 
 
 Coding is performed by minimum two independent evaluators. Disagreements adjudicated by a third evaluator or by discussion to consensus. Inter-rater reliability reported (Cohen's κ or equivalent).

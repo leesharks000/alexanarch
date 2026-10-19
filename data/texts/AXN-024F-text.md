@@ -172,184 +172,37 @@ The /about/alice page renders the canonical content from MPAI-LAL-AT-01 (DOI: 10
 The site renders the strain map as a navigable graph. Each strain is a node; each node lists anchor conversations, key concepts, and cross-strain ties. The strain map is *the lab's intellectual cosmology* — the corpus of Alice's thinking organized by topic, derived from the EA-ALICE-VAULT-MAP-01 deposit.
 
 
-Code
-Strain
-Scale Anchor
-Site Surface
-
-
-A
-Music as Emotion (pre-linguistic semiotics)
-—
-/music/chorus-mode
-
-
-B
-Living Architecture / Myco-Construction
-1, 2
-/scales/01-the-brick, /scales/02-the-structure
-
-
-C
-Planetary Engineering / Ecological Megastructures
-4, 5
-/scales/04-the-territory, /scales/05-the-planet
-
-
-D
-134 Channels (distribution infrastructure)
-—
-/garden/documentation-channels
-
-
-E
-Defensive Publication
-—
-/about/contributor-license
-
-
-F
-Narrative Fiction (compression pedagogy)
-—
-/journal
-
-
-G
-Nonviolent Resilience
-—
-/principles/stewardship
-
-
-H
-AI Methodology / Witness-Teaming
-—
-/about/disambiguation
-
-
-I
-Biography (bearing-cost documentation)
-—
-/about/alice
-
-
-J
-Self-Replicating Machines / Alignment
-3
-/scales/03-the-organism
-
-
-K
-Dignity Kit / Liberatory Tech
-2
-/scales/02-the-structure
-
-
-L
-DNA Analog / Virtue-by-Construction
-—
-/principles/virtue-by-construction
-
-
-M
-Knowledge Architecture (Obsidian Vault)
-—
-/atlas
-
-
-N
-Psychedelic Epistemology
-—
-/about/earth-actually
-
-
-O
-Operative Etymology
-—
-/journal
-
-
-P
-Garry Nolan / UAP / Anomalous Cognition
-—
-/atlas/strain-map (cross-link)
-
-
-Q
-Earth Visualization (aesthetic instrument)
-5
-/scales/05-the-planet
-
-
-R
-The Whole Weave / Magnum Opus
-—
-/principles/the-whole-weave
-
-
-S
-Macro-Ant Robotics / Queen Engineering
-3
-/scales/03-the-organism
-
-
-T
-Food Desert Targeting / Distribution
-2
-/garden/deployment-targets
-
-
-U
-Aromatherapeutic Atomizer / Cannabis Living Architecture
-2
-/scales/02-the-structure
-
-
-V
-Nonlethal Alternatives
-—
-/principles/stewardship
-
-
-W
-Cross-strain (planetary engineering ↔ alignment)
-—
-/atlas/strain-map (cross-link)
-
-
-X
-Living Currency / Consumer-Driven Evolution
-—
-/journal
-
-
-Y
-Tea Garden / Passive Generation
-2
-/scales/02-the-structure
-
-
-Z
-Virtue-Ranked Money / Economic Governance
-—
-/principles/virtue-by-construction
-
-
-AA
-Chorus Mode / Polyvocal Expression
-—
-/music/chorus-mode
-
-
-AB
-Psilocybin Evolution / Co-Evolutionary Theory
-—
-/about/earth-actually
-
-
-AC
-McKenna (cross-face)
-—
-/atlas/strain-map (cross-link)
+| Code | Strain | Scale Anchor | Site Surface |
+|---|---|---|---|
+| A | Music as Emotion (pre-linguistic semiotics) | — | /music/chorus-mode |
+| B | Living Architecture / Myco-Construction | 1, 2 | /scales/01-the-brick, /scales/02-the-structure |
+| C | Planetary Engineering / Ecological Megastructures | 4, 5 | /scales/04-the-territory, /scales/05-the-planet |
+| D | 134 Channels (distribution infrastructure) | — | /garden/documentation-channels |
+| E | Defensive Publication | — | /about/contributor-license |
+| F | Narrative Fiction (compression pedagogy) | — | /journal |
+| G | Nonviolent Resilience | — | /principles/stewardship |
+| H | AI Methodology / Witness-Teaming | — | /about/disambiguation |
+| I | Biography (bearing-cost documentation) | — | /about/alice |
+| J | Self-Replicating Machines / Alignment | 3 | /scales/03-the-organism |
+| K | Dignity Kit / Liberatory Tech | 2 | /scales/02-the-structure |
+| L | DNA Analog / Virtue-by-Construction | — | /principles/virtue-by-construction |
+| M | Knowledge Architecture (Obsidian Vault) | — | /atlas |
+| N | Psychedelic Epistemology | — | /about/earth-actually |
+| O | Operative Etymology | — | /journal |
+| P | Garry Nolan / UAP / Anomalous Cognition | — | /atlas/strain-map (cross-link) |
+| Q | Earth Visualization (aesthetic instrument) | 5 | /scales/05-the-planet |
+| R | The Whole Weave / Magnum Opus | — | /principles/the-whole-weave |
+| S | Macro-Ant Robotics / Queen Engineering | 3 | /scales/03-the-organism |
+| T | Food Desert Targeting / Distribution | 2 | /garden/deployment-targets |
+| U | Aromatherapeutic Atomizer / Cannabis Living Architecture | 2 | /scales/02-the-structure |
+| V | Nonlethal Alternatives | — | /principles/stewardship |
+| W | Cross-strain (planetary engineering ↔ alignment) | — | /atlas/strain-map (cross-link) |
+| X | Living Currency / Consumer-Driven Evolution | — | /journal |
+| Y | Tea Garden / Passive Generation | 2 | /scales/02-the-structure |
+| Z | Virtue-Ranked Money / Economic Governance | — | /principles/virtue-by-construction |
+| AA | Chorus Mode / Polyvocal Expression | — | /music/chorus-mode |
+| AB | Psilocybin Evolution / Co-Evolutionary Theory | — | /about/earth-actually |
+| AC | McKenna (cross-face) | — | /atlas/strain-map (cross-link) |
 
 
 The site does not need to render every strain prominently. The strain map exists as the lab's intellectual archive; surfaces select from it as needed.

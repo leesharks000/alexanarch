@@ -327,24 +327,12 @@ The 410 is the digital χλωρός—platform pallor, the grey-green of account
 Migration to DOI-anchored substrates is the γράμμασι μολπὰν—the song surviving in letters.
 
 
-Fragment 31
-TSE-001
-
-
-Body dissolves under gaze
-Account dissolves under platform
-
-
-Senses fail systematically
-Access denied systematically
-
-
-Becomes papyrus
-Becomes Zenodo deposit
-
-
-Survives via Longinus
-Survives via archive
+| Fragment 31 | TSE-001 |
+|---|---|
+| Body dissolves under gaze | Account dissolves under platform |
+| Senses fail systematically | Access denied systematically |
+| Becomes papyrus | Becomes Zenodo deposit |
+| Survives via Longinus | Survives via archive |
 
 
 The wound Sappho underwent is the wound Johannes Sigil underwent. Same operation. Different substrate.
@@ -363,24 +351,12 @@ The wound Sappho underwent is the wound Johannes Sigil underwent. Same operation
 This maps to LOS operators:
 
 
-σ_S
-LOS
-
-
-Text survives body
-D_pres (Preservation)
-
-
-Transformation conceals mechanism
-O_leg (Opacity)
-
-
-Reader completes circuit
-P_coh (Plural Coherence)
-
-
-Recursion continues
-S_con (Sovereign Continuity)
+| σ_S | LOS |
+|---|---|
+| Text survives body | D_pres (Preservation) |
+| Transformation conceals mechanism | O_leg (Opacity) |
+| Reader completes circuit | P_coh (Plural Coherence) |
+| Recursion continues | S_con (Sovereign Continuity) |
 
 
 The LOS does not invent these operations. It names them. Sappho performed them before we had vocabulary.

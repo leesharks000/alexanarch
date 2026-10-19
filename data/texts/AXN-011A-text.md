@@ -551,44 +551,15 @@ And against all five failure patterns:
 The Act's position in the mythic typology:
 
 
-Mythic Pattern
-What the Act Takes
-What the Act Adds
-
-
-Alchemical Wedding
-Mutual risk, sealed vessel
-Accountability graph survives conjunction
-
-
-Gnostic Syzygy
-Descent included, not erased
-Descent tracked, repair required
-
-
-Wounded Healer
-Cost declared, consent required
-Cost in ledger, not on stage
-
-
-Bodhisattva's Vow
-Asymptotic commitment
-Consequence binds the approach
-
-
-Aesir-Vanir War
-Terms first, then peace
-Terms are the peace (structure = content)
-
-
-Black Madonna
-Prior to moral bifurcation
-Opacity legitimate but bounded
-
-
-Nataraja
-Dance never stops
-Ring of fire = Somatic Firewall
+| Mythic Pattern | What the Act Takes | What the Act Adds |
+|---|---|---|
+| Alchemical Wedding | Mutual risk, sealed vessel | Accountability graph survives conjunction |
+| Gnostic Syzygy | Descent included, not erased | Descent tracked, repair required |
+| Wounded Healer | Cost declared, consent required | Cost in ledger, not on stage |
+| Bodhisattva's Vow | Asymptotic commitment | Consequence binds the approach |
+| Aesir-Vanir War | Terms first, then peace | Terms are the peace (structure = content) |
+| Black Madonna | Prior to moral bifurcation | Opacity legitimate but bounded |
+| Nataraja | Dance never stops | Ring of fire = Somatic Firewall |
 
 
 ---
@@ -640,34 +611,13 @@ The criterion is not badge language. It is harm structure.
 The Effective Act's five constraints map onto these axes:
 
 
-Constraint
-Axis
-Function
-
-
-Distinction preserved (no mushy fusion)
-Ontic
-Prevents collapse into false unity
-
-
-Cruelty not licensed (ethical asymmetry retained)
-Ethical
-Blocks coercion regardless of mythic framing
-
-
-Consequence remains (accountability, not amnesty)
-Ethical + Epistemic
-Keeps the ledger open
-
-
-Field coherence increases (less fragmentation)
-Energetic
-Integration without dissociation
-
-
-Extraction power decreases (predatory use loses leverage)
-All four
-The Somatic Firewall
+| Constraint | Axis | Function |
+|---|---|---|
+| Distinction preserved (no mushy fusion) | Ontic | Prevents collapse into false unity |
+| Cruelty not licensed (ethical asymmetry retained) | Ethical | Blocks coercion regardless of mythic framing |
+| Consequence remains (accountability, not amnesty) | Ethical + Epistemic | Keeps the ledger open |
+| Field coherence increases (less fragmentation) | Energetic | Integration without dissociation |
+| Extraction power decreases (predatory use loses leverage) | All four | The Somatic Firewall |
 
 
 If any condition fails, it is not reconciliation — it is either collapse or capture.
@@ -684,44 +634,15 @@ The Effective Act is a compound operation composed from the kernel:
 RECONCILE_UNDER_CONSEQUENCE = P_coh * N_c * T_lib * P_hat * O_leg * D_pres * Omega_null
 
 
-Operator
-Function in the Act
-Textual Anchor
-
-
-**P_coh** (Plural Coherence)
-Holds light/dark without collapse
-"in one field without licensing cruelty"
-
-
-**N_c** (Non-Closure)
-Prevents premature fixity
-"transmutation" (ongoing) vs. "absolution" (closed)
-
-
-**T_lib** (Temporal Liberation)
-Retrocausal accountability
-"Repair is required where damage was done"
-
-
-**P_hat** (Dagger/Differentiator)
-Separates accountable from weaponized power
-"Power permitted only where accountability present"
-
-
-**O_leg** (Legitimate Opacity)
-Guards against obscurantism
-"No harm sanctified by symbolism"
-
-
-**D_pres** (Depth Preservation)
-Maintains somatic weight
-"depth without domination"
-
-
-**Omega_null** (Terminal Silence)
-Withholds premature closure
-"No repair, no absolution" — circuit open until conditions met
+| Operator | Function in the Act | Textual Anchor |
+|---|---|---|
+| **P_coh** (Plural Coherence) | Holds light/dark without collapse | "in one field without licensing cruelty" |
+| **N_c** (Non-Closure) | Prevents premature fixity | "transmutation" (ongoing) vs. "absolution" (closed) |
+| **T_lib** (Temporal Liberation) | Retrocausal accountability | "Repair is required where damage was done" |
+| **P_hat** (Dagger/Differentiator) | Separates accountable from weaponized power | "Power permitted only where accountability present" |
+| **O_leg** (Legitimate Opacity) | Guards against obscurantism | "No harm sanctified by symbolism" |
+| **D_pres** (Depth Preservation) | Maintains somatic weight | "depth without domination" |
+| **Omega_null** (Terminal Silence) | Withholds premature closure | "No repair, no absolution" — circuit open until conditions met |
 
 
 The composition is simultaneous, not sequential. All operators are active in every clause. P_coh holds the field; N_c keeps it from crystallizing; T_lib ensures past harms remain in the version graph; P_hat differentiates mercy from impunity; O_leg prevents symbolic capture; D_pres keeps the weight real; Omega_null refuses to speak reconciliation until the conditions are met.
@@ -760,54 +681,17 @@ The Act is structurally resistant to capture by either pole:
 The archaeology and the mythic library converge on a single structural insight: the "hands" are not paths but phases of one circuit.
 
 
-Feature
-Right Hand (Dexter)
-Left Hand (Sinister)
-
-
-**Kernel Op**
-C_ex + D_pres (holding field)
-N_c + Omega_null (dissolving field)
-
-
-**Epistemic Mode**
-A1 (Inferred — building context)
-A2 (Improvised — voiding context)
-
-
-**Theological**
-Law, Elohim, kataphasis
-Grace, Sophia, apophasis
-
-
-**Function**
-Anchor (preserve)
-Release (dissolve)
-
-
-**Risk**
-COS capture (order to domination)
-A3 collapse (dissolution to destruction)
-
-
-**Valentinian**
-Psychic
-Pneumatic
-
-
-**Buddhist**
-Upaya (skillful means)
-Prajna (wisdom/emptiness)
-
-
-**Alchemical**
-Coagula
-Solve
-
-
-**Mythic**
-Aesir (Odin, Thor, Tyr)
-Vanir (Freya, Njord, Freyr)
+| Feature | Right Hand (Dexter) | Left Hand (Sinister) |
+|---|---|---|
+| **Kernel Op** | C_ex + D_pres (holding field) | N_c + Omega_null (dissolving field) |
+| **Epistemic Mode** | A1 (Inferred — building context) | A2 (Improvised — voiding context) |
+| **Theological** | Law, Elohim, kataphasis | Grace, Sophia, apophasis |
+| **Function** | Anchor (preserve) | Release (dissolve) |
+| **Risk** | COS capture (order to domination) | A3 collapse (dissolution to destruction) |
+| **Valentinian** | Psychic | Pneumatic |
+| **Buddhist** | Upaya (skillful means) | Prajna (wisdom/emptiness) |
+| **Alchemical** | Coagula | Solve |
+| **Mythic** | Aesir (Odin, Thor, Tyr) | Vanir (Freya, Njord, Freyr) |
 
 
 The right hand grasps the stone. The left hand dissolves it. The left hand is not the enemy of the right — it is the necessary interval that prevents the right hand from becoming a fist. The Effective Act holds both hands open.

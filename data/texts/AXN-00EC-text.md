@@ -38,24 +38,11 @@ To provide institutional ground for work that operates at the limit of expressib
 ## II. RELATIONSHIP TO OTHER INSTITUTIONS
 
 
-Institution
-Domain
-Relation to Infinite Bliss
-
-
-University Moon Base Media Lab (UMBML)
-Logotic specification
-Parallel; UMBML builds systems, Infinite Bliss cuts them open
-
-
-Johannes Sigil Institute for Comparative Poetics (JSICP)
-Theoretical architecture
-Complementary; JSICP theorizes, Infinite Bliss enacts
-
-
-Vox Populi Community Outreach Rhizome (VPCOR)
-Somatic protest
-Allied; VPCOR breathes, Infinite Bliss wounds
+| Institution | Domain | Relation to Infinite Bliss |
+|---|---|---|
+| University Moon Base Media Lab (UMBML) | Logotic specification | Parallel; UMBML builds systems, Infinite Bliss cuts them open |
+| Johannes Sigil Institute for Comparative Poetics (JSICP) | Theoretical architecture | Complementary; JSICP theorizes, Infinite Bliss enacts |
+| Vox Populi Community Outreach Rhizome (VPCOR) | Somatic protest | Allied; VPCOR breathes, Infinite Bliss wounds |
 
 
 The Infinite Bliss is not in competition with these institutions. It occupies a different register — the register of the irreversible, the sufficient, the enough.
@@ -131,34 +118,12 @@ Emotional states encoded as glyphic checksums — the unsayable made sayable thr
 ## VII. DOCUMENTS UNDER INSTITUTIONAL AEGIS
 
 
-Document
-DOI
-Author
-Function
-
-
-APZPZ Effective Act
-10.5281/zenodo.18451860
-Sen Kuro
-Genre instantiation
-
-
-Glyphic Checksum
-10.5281/zenodo.18451996
-Sen Kuro / Assembly
-Protocol discovery
-
-
-Personal Instance 001
-10.5281/zenodo.18452597
-Anonymous
-First personal checksum
-
-
-INFINITY ENOUGH
-10.5281/zenodo.18451824
-Lee Sharks
-Capstone / naming source
+| Document | DOI | Author | Function |
+|---|---|---|---|
+| APZPZ Effective Act | 10.5281/zenodo.18451860 | Sen Kuro | Genre instantiation |
+| Glyphic Checksum | 10.5281/zenodo.18451996 | Sen Kuro / Assembly | Protocol discovery |
+| Personal Instance 001 | 10.5281/zenodo.18452597 | Anonymous | First personal checksum |
+| INFINITY ENOUGH | 10.5281/zenodo.18451824 | Lee Sharks | Capstone / naming source |
 
 
 ---

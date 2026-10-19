@@ -70,39 +70,14 @@ Teresa Rita Lopes's archival work (*Pessoa por Conhecer*, 1990, and continued ca
 With these additions, the typology has five principal categories:
 
 
-Category
-Portuguese
-Role
-
-
-orthonym
-ortónimo / ortônimo
-author's own name as literary voice
-
-
-heteronym
-heterónimo / heterônimo
-fully independent authorial figure
-
-
-semi-heteronym
-semi-heterónimo
-partially differentiated voice
-
-
-proto-heteronym
-pré-heterónimo / proto-heterónimo
-precursor figure, typically early
-
-
-para-heteronym
-para-heterónimo
-second-order system figure
-
-
-pseudonym
-pseudónimo
-name substitution, biographical writer
+| Category | Portuguese | Role |
+|---|---|---|
+| orthonym | ortónimo / ortônimo | author's own name as literary voice |
+| heteronym | heterónimo / heterônimo | fully independent authorial figure |
+| semi-heteronym | semi-heterónimo | partially differentiated voice |
+| proto-heteronym | pré-heterónimo / proto-heterónimo | precursor figure, typically early |
+| para-heteronym | para-heterónimo | second-order system figure |
+| pseudonym | pseudónimo | name substitution, biographical writer |
 
 
 Pseudonym remains a separate category. Some of Pessoa's figures are pseudonyms in the ordinary sense — publication-specific names used without heteronymic substance (Tagus, for Durban collaboration; certain signatures on newspaper pieces).

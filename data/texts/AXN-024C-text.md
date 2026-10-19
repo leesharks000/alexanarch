@@ -28,36 +28,15 @@ no per-section restart, and there must never be one.
 The actual distribution in walt_full_data.json:
 
 
-Section
-Declared footnotes
-
-
-introduction
-¹, ², ³, ¹³⁸–¹⁵¹, ¹¹⁰–¹¹⁶
-
-
-manuscripts
-¹¹⁹–¹²⁷
-
-
-gospel
-⁴–¹⁵⁶ (111 footnotes; not contiguous, gaps where notes live elsewhere)
-
-
-appendix_d
-¹¹⁷, ¹¹⁸
-
-
-appendix_e
-¹²⁸–¹³⁶
-
-
-appendix_h
-¹³⁷
-
-
-appendix_k
-¹⁵⁷, ¹⁵⁸
+| Section | Declared footnotes |
+|---|---|
+| introduction | ¹, ², ³, ¹³⁸–¹⁵¹, ¹¹⁰–¹¹⁶ |
+| manuscripts | ¹¹⁹–¹²⁷ |
+| gospel | ⁴–¹⁵⁶ (111 footnotes; not contiguous, gaps where notes live elsewhere) |
+| appendix_d | ¹¹⁷, ¹¹⁸ |
+| appendix_e | ¹²⁸–¹³⁶ |
+| appendix_h | ¹³⁷ |
+| appendix_k | ¹⁵⁷, ¹⁵⁸ |
 
 
 Body-text references to these numbers can appear in **any** section. The
@@ -163,24 +142,11 @@ a close button. Uses fnColor for the marker rule.
 ### Where the components live
 
 
-Component
-File
-Notes
-
-
-useGlobalFnMap
-src/footnotes.js
-Pure JS, no React imports — testable.
-
-
-FootnotedText
-src/footnotes.jsx
-Render-only. No state. State lives in caller.
-
-
-InlineFootnote
-src/footnotes.jsx
-The popup leaf.
+| Component | File | Notes |
+|---|---|---|
+| useGlobalFnMap | src/footnotes.js | Pure JS, no React imports — testable. |
+| FootnotedText | src/footnotes.jsx | Render-only. No state. State lives in caller. |
+| InlineFootnote | src/footnotes.jsx | The popup leaf. |
 
 
 Both App.jsx (Walt) and Antioch.jsx import from src/footnotes.jsx.
@@ -231,39 +197,14 @@ not the data, to fix display bugs.
 ## Pierce mode vs Veil mode
 
 
-Aspect
-Pierce
-Veil
-
-
-Body text
-Black on cream, no apparatus shown by default
-Black on warm cream, apparatus accessible
-
-
-Footnote markers (¹²³) in body
-Rendered, blue, no click
-Rendered, blue, clickable
-
-
-Inline footnote popup
-Not available
-Toggles below paragraph
-
-
-Endnotes block
-Hidden
-Hidden (legacy; we removed)
-
-
-Glossary terms (LinkedText)
-Active in both
-Active in both
-
-
-Visual feel
-Stripped down — reading focus
-Critical edition with apparatus reachable
+| Aspect | Pierce | Veil |
+|---|---|---|
+| Body text | Black on cream, no apparatus shown by default | Black on warm cream, apparatus accessible |
+| Footnote markers (¹²³) in body | Rendered, blue, no click | Rendered, blue, clickable |
+| Inline footnote popup | Not available | Toggles below paragraph |
+| Endnotes block | Hidden | Hidden (legacy; we removed) |
+| Glossary terms (LinkedText) | Active in both | Active in both |
+| Visual feel | Stripped down — reading focus | Critical edition with apparatus reachable |
 
 
 Pierce mode is a **reader's mode**, not a no-apparatus mode. The blue
@@ -318,14 +259,9 @@ visibleFns is local).
 ## Maintenance log
 
 
-Date
-Change
-Author
-
-
-2026-04-28
-Universal footnote system: global fnMap, FootnotedText component, InlineFootnote popup. Removed ✦ adjacency toggle and endnotes block. Documented architecture.
-TACHYON / Sharks, Lee
+| Date | Change | Author |
+|---|---|---|
+| 2026-04-28 | Universal footnote system: global fnMap, FootnotedText component, InlineFootnote popup. Removed ✦ adjacency toggle and endnotes block. Documented architecture. | TACHYON / Sharks, Lee |
 
 
 When you change footnote rendering, **append an entry to this table** and

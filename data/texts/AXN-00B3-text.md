@@ -72,24 +72,12 @@ Cambridge Schizoanalytica emerged from this break. Trace wanted a space for clin
 ## THEORETICAL COMMITMENTS
 
 
-Commitment
-Description
-
-
-**Post-psychoanalytic**
-Drawing on psychoanalysis while refusing its capture by Oedipal and phallocentric frameworks
-
-
-**Schizoanalytic**
-Attending to flows, breaks, codes, and territories following Deleuze and Guattari
-
-
-**Collaborative**
-Theory developed *with* practitioners, not *about* subjects
-
-
-**Functional**
-Focus on what practices *do* rather than what they *are*
+| Commitment | Description |
+|---|---|
+| **Post-psychoanalytic** | Drawing on psychoanalysis while refusing its capture by Oedipal and phallocentric frameworks |
+| **Schizoanalytic** | Attending to flows, breaks, codes, and territories following Deleuze and Guattari |
+| **Collaborative** | Theory developed *with* practitioners, not *about* subjects |
+| **Functional** | Focus on what practices *do* rather than what they *are* |
 
 
 ---
@@ -158,46 +146,14 @@ The third possibility between paranoid capture and schizophrenic collapse
 ## PUBLICATIONS WITHIN CRIMSON HEXAGON
 
 
-Document
-Hex
-Role
-DOI
-
-
-Cambridge Schizoanalytica Charter
-00.CSA.ROOT
-Primary author
-[pending]
-
-
-The Reconciliation of the Sexes
-03.CSA.SOMATIC
-Co-author, clinical preface
-10.5281/zenodo.18330828
-
-
-Shining Ignorance
-04.CSA.AFFECT
-Co-author, clinical preface
-[pending]
-
-
-Shine & Cut
-00.CSA.INTAKE
-Voice contributor
-[pending]
-
-
-Affective Keyboard Shortcuts
-05.CSA.TOOLKIT
-Co-author
-[pending]
-
-
-The Break Room
-00.CSA.PORTAL
-Primary architect
-[pending]
+| Document | Hex | Role | DOI |
+|---|---|---|---|
+| Cambridge Schizoanalytica Charter | 00.CSA.ROOT | Primary author | [pending] |
+| The Reconciliation of the Sexes | 03.CSA.SOMATIC | Co-author, clinical preface | 10.5281/zenodo.18330828 |
+| Shining Ignorance | 04.CSA.AFFECT | Co-author, clinical preface | [pending] |
+| Shine & Cut | 00.CSA.INTAKE | Voice contributor | [pending] |
+| Affective Keyboard Shortcuts | 05.CSA.TOOLKIT | Co-author | [pending] |
+| The Break Room | 00.CSA.PORTAL | Primary architect | [pending] |
 
 
 ---
@@ -205,28 +161,13 @@ Primary architect
 ## RELATIONSHIP TO OTHER HETERONYMS
 
 
-Heteronym
-Relation
-
-
-**Lee Sharks**
-Source heteronym — Trace emerges from Sharks' theoretical work
-
-
-**Johannes Sigil**
-Parallel theorist — Sigil operates Logotic layer; Trace operates Psyche_OS
-
-
-**Rhys Owens**
-Primary collaborator — Guattari to Trace's Deleuze
-
-
-**Damascus Dancings**
-Liturgical voice — different register, same project
-
-
-**Talos Morrow**
-Archivist — Trace produces; Morrow preserves
+| Heteronym | Relation |
+|---|---|
+| **Lee Sharks** | Source heteronym — Trace emerges from Sharks' theoretical work |
+| **Johannes Sigil** | Parallel theorist — Sigil operates Logotic layer; Trace operates Psyche_OS |
+| **Rhys Owens** | Primary collaborator — Guattari to Trace's Deleuze |
+| **Damascus Dancings** | Liturgical voice — different register, same project |
+| **Talos Morrow** | Archivist — Trace produces; Morrow preserves |
 
 
 ---

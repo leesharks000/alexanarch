@@ -135,29 +135,12 @@ This is the text the essay needed. The three historical precursors established t
 The four texts, taken together, describe a complete political economy of the seal:
 
 
-Scholar
-Seal Function
-What It Governs
-
-
-Gossel (1711)
-Institutional ratification
-Who may promote
-
-
-Von Seelen (1727)
-Irrevocable binding
-What cannot be undone
-
-
-Hertius (1710/1736)
-Documentary trust
-What can be believed
-
-
-Sigil-as-von Seelen (1727/2026)
-Counter-extractive direction
-Who bears the cost
+| Scholar | Seal Function | What It Governs |
+|---|---|---|
+| Gossel (1711) | Institutional ratification | Who may promote |
+| Von Seelen (1727) | Irrevocable binding | What cannot be undone |
+| Hertius (1710/1736) | Documentary trust | What can be believed |
+| Sigil-as-von Seelen (1727/2026) | Counter-extractive direction | Who bears the cost |
 
 
 The first three form a triadic precursor: Gossel provides the authority to ratify; von Seelen provides the binding that makes the ratification irrevocable; Hertius provides the forensic proof that the ratification is genuine. The fourth adds the missing axis: the direction of the seal determines whether the operation liberates or captures. The four functions — status governance, ontological binding, evidentiary trust, and directional ethics — are the four legs of the archive's own governance architecture.

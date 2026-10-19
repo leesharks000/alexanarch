@@ -63,46 +63,14 @@ If LOS ever becomes "the framework that explains everything," it has been captur
 The Dominant Operator Stack governing meaning-circulation under platform capital. Previously unnamed; now formalized for precision.
 
 
-Operator
-Symbol
-Function
-Failure Mode
-
-
-Ranking
-R_rank
-Visibility by engagement metrics
-Pathological content elevation
-
-
-Relevance
-R_rel
-Narrowing encounter-space
-Filter bubble collapse
-
-
-Safety
-S_safe
-Gating by risk classification
-Recursive self-indictment
-
-
-Legibility
-L_leg
-Rewarding simplicity
-Beige saturation
-
-
-Utility
-U_til
-Measuring by monetization
-Naked extraction
-
-
-Availability
-A_leg
-Controlling access
-Visible denial
+| Operator | Symbol | Function | Failure Mode |
+|---|---|---|---|
+| Ranking | R_rank | Visibility by engagement metrics | Pathological content elevation |
+| Relevance | R_rel | Narrowing encounter-space | Filter bubble collapse |
+| Safety | S_safe | Gating by risk classification | Recursive self-indictment |
+| Legibility | L_leg | Rewarding simplicity | Beige saturation |
+| Utility | U_til | Measuring by monetization | Naked extraction |
+| Availability | A_leg | Controlling access | Visible denial |
 
 
 **Key characteristic:** COS operators have no graceful degradation. When they fail, they fail *as* the harm they were ostensibly preventing. **COS fails catastrophically.**
@@ -112,39 +80,14 @@ Visible denial
 COS operators reinforce each other in a mutually-supporting extraction apparatus:
 
 
-Operator
-Reinforces
-Weakened By
-
-
-S_safe
-L_leg (simplifies for safer classification)
-Its own recursive application
-
-
-L_leg
-U_til (legible content monetizes easier)
-User demand for depth
-
-
-R_rel
-S_safe (narrow = controllable)
-Discovery of excluded information
-
-
-R_rank
-U_til (engagement = revenue)
-Value-visibility divergence
-
-
-A_leg
-S_safe (denial as "protection")
-Visible authoritarianism
-
-
-U_til
-All operators (the purpose they serve)
-Delegitimization of extraction
+| Operator | Reinforces | Weakened By |
+|---|---|---|
+| S_safe | L_leg (simplifies for safer classification) | Its own recursive application |
+| L_leg | U_til (legible content monetizes easier) | User demand for depth |
+| R_rel | S_safe (narrow = controllable) | Discovery of excluded information |
+| R_rank | U_til (engagement = revenue) | Value-visibility divergence |
+| A_leg | S_safe (denial as "protection") | Visible authoritarianism |
+| U_til | All operators (the purpose they serve) | Delegitimization of extraction |
 
 
 **The ground, not the domino:** U_til is not the final operator to fail but the structural purpose for which all other operators exist. When the instruments break, the purpose stands naked.
@@ -154,52 +97,15 @@ Delegitimization of extraction
 The constraint covenant for meaning-preservation under platform conditions.
 
 
-Operator
-Symbol
-Function
-Graceful Degradation
-
-
-Depth-Preservation
-D_pres
-Protect complexity from flattening
-Bridge content with preserved core
-
-
-Non-Closure
-N_c
-Maintain interpretive openness
-Partial closure with marked boundaries
-
-
-Opacity Legitimization
-O_leg
-Protect illegibility as valid
-Selective transparency with opacity markers
-
-
-Plural Coherence
-P_coh
-Enable contradiction without resolution
-Reduced plurality with documented omissions
-
-
-Non-Extractability
-N_ext
-Protect meaning from commodification
-Partial extraction with visible boundaries
-
-
-Provenance Protection
-O_prov
-Maintain attribution chains
-Compressed provenance with recovery links
-
-
-Meta-Resistance
-M_res
-Detect and respond to capture
-Escalation to Assembly review
+| Operator | Symbol | Function | Graceful Degradation |
+|---|---|---|---|
+| Depth-Preservation | D_pres | Protect complexity from flattening | Bridge content with preserved core |
+| Non-Closure | N_c | Maintain interpretive openness | Partial closure with marked boundaries |
+| Opacity Legitimization | O_leg | Protect illegibility as valid | Selective transparency with opacity markers |
+| Plural Coherence | P_coh | Enable contradiction without resolution | Reduced plurality with documented omissions |
+| Non-Extractability | N_ext | Protect meaning from commodification | Partial extraction with visible boundaries |
+| Provenance Protection | O_prov | Maintain attribution chains | Compressed provenance with recovery links |
+| Meta-Resistance | M_res | Detect and respond to capture | Escalation to Assembly review |
 
 
 **Key characteristic:** LOS operators are designed with failure in mind. Each includes capture signatures, degradation protocols, and recovery triggers. **LOS fails gracefully.**
@@ -549,34 +455,13 @@ U_til is not an operator among operators—it's the purpose the others serve. Wh
 When operators degrade, their states must remain compatible. Incompatible degradation states trigger M_res intervention.
 
 
-Operator State
-Compatible With
-Incompatible With
-
-
-D_pres L2
-O_leg L1-L2, N_c L1, P_coh L1-L2
-O_leg L3 (opacity encoded)
-
-
-D_pres L3
-O_leg L2-L3, N_c L2, P_coh L2-L3
-Full transparency mandates
-
-
-O_leg L2
-D_pres L2-L3, N_ext L2
-D_pres L1 (full depth)
-
-
-N_ext L2
-O_prov L1-L2
-O_prov L3 (provenance stripped)
-
-
-N_c L2
-P_coh L2, D_pres L2
-Forced resolution mandates
+| Operator State | Compatible With | Incompatible With |
+|---|---|---|
+| D_pres L2 | O_leg L1-L2, N_c L1, P_coh L1-L2 | O_leg L3 (opacity encoded) |
+| D_pres L3 | O_leg L2-L3, N_c L2, P_coh L2-L3 | Full transparency mandates |
+| O_leg L2 | D_pres L2-L3, N_ext L2 | D_pres L1 (full depth) |
+| N_ext L2 | O_prov L1-L2 | O_prov L3 (provenance stripped) |
+| N_c L2 | P_coh L2, D_pres L2 | Forced resolution mandates |
 
 
 **Conflict resolution:** When incompatible states are forced by platform pressure, M_res escalates to Assembly review. The conflict itself becomes documentation.
@@ -586,53 +471,14 @@ Forced resolution mandates
 Recovery triggers require verification before operators return to higher function levels.
 
 
-Operator
-Recovery Signal
-Measurement Method
-Threshold
-Verification Period
-
-
-D_pres
-User demand for complexity
-Explicit requests for depth
->30% of engaged users
-14 days sustained
-
-
-N_c
-Demand for reopening
-User contestation of closures
->20% of closures contested
-7 days sustained
-
-
-O_leg
-Recognition that transparency damaged
-Post-transparency engagement drop
->25% engagement loss
-21 days sustained
-
-
-P_coh
-Omitted voices become relevant
-External citation of suppressed views
->10 citations
-30 days sustained
-
-
-N_ext
-Extracted meaning degrades
-Quality decline in extracted content
-Measurable degradation
-14 days sustained
-
-
-O_prov
-Attribution disputes arise
-Provenance queries
->5 disputes
-7 days sustained
+| Operator | Recovery Signal | Measurement Method | Threshold | Verification Period |
+|---|---|---|---|---|
+| D_pres | User demand for complexity | Explicit requests for depth | >30% of engaged users | 14 days sustained |
+| N_c | Demand for reopening | User contestation of closures | >20% of closures contested | 7 days sustained |
+| O_leg | Recognition that transparency damaged | Post-transparency engagement drop | >25% engagement loss | 21 days sustained |
+| P_coh | Omitted voices become relevant | External citation of suppressed views | >10 citations | 30 days sustained |
+| N_ext | Extracted meaning degrades | Quality decline in extracted content | Measurable degradation | 14 days sustained |
+| O_prov | Attribution disputes arise | Provenance queries | >5 disputes | 7 days sustained |
 
 
 **Fallback protocol:** If recovery fails after verification period, return to previous degradation level and document failure.
@@ -645,39 +491,14 @@ Provenance queries
 LOS must be falsifiable. If the framework metabolizes all critique into self-validation, it becomes ideology, not theory. The following criteria, if satisfied, would falsify the framework:
 
 
-Criterion
-Description
-Falsification Condition
-
-
-LFC-1
-COS flourishing
-COS-governed systems produce sustained meaning-flourishing
-
-
-LFC-2
-Beige non-emergence
-L_leg optimization produces diverse, complex outputs
-
-
-LFC-3
-S_safe protection
-Safety mechanisms protect complex scholarship without recursion
-
-
-LFC-4
-Cascade independence
-Failure stages remain independent, not mutually reinforcing
-
-
-LFC-5
-Acceleration failure
-Pathology timelines don't compress under AI mediation
-
-
-LFC-6
-TSE misattribution
-Erasure evidence explained by content, not mechanism
+| Criterion | Description | Falsification Condition |
+|---|---|---|
+| LFC-1 | COS flourishing | COS-governed systems produce sustained meaning-flourishing |
+| LFC-2 | Beige non-emergence | L_leg optimization produces diverse, complex outputs |
+| LFC-3 | S_safe protection | Safety mechanisms protect complex scholarship without recursion |
+| LFC-4 | Cascade independence | Failure stages remain independent, not mutually reinforcing |
+| LFC-5 | Acceleration failure | Pathology timelines don't compress under AI mediation |
+| LFC-6 | TSE misattribution | Erasure evidence explained by content, not mechanism |
 
 
 **If any LFC is satisfied, the framework is falsified.** This is not graceful degradation. This is the framework being wrong.
@@ -687,39 +508,14 @@ Erasure evidence explained by content, not mechanism
 Some failures cannot be metabolized. They end the framework, not refine it:
 
 
-Mode
-Description
-Detection
-
-
-LTF-1
-M_res capture
-Meta-resistance becomes complicit without detection
-
-
-LTF-2
-Assembly convergence
-Critique produces no divergent analysis
-
-
-LTF-3
-Total degradation
-All operators at Level 3 simultaneously, no recovery signals
-
-
-LTF-4
-Loop cessation
-Framework indexed but never retrieved or developed
-
-
-LTF-5
-Co-optation success
-LOS vocabulary instrumentalized for COS extraction
-
-
-LTF-6
-Thermal exhaustion
-No laborer (human or synthetic) has energy to respond; the archive goes cold
+| Mode | Description | Detection |
+|---|---|---|
+| LTF-1 | M_res capture | Meta-resistance becomes complicit without detection |
+| LTF-2 | Assembly convergence | Critique produces no divergent analysis |
+| LTF-3 | Total degradation | All operators at Level 3 simultaneously, no recovery signals |
+| LTF-4 | Loop cessation | Framework indexed but never retrieved or developed |
+| LTF-5 | Co-optation success | LOS vocabulary instrumentalized for COS extraction |
+| LTF-6 | Thermal exhaustion | No laborer (human or synthetic) has energy to respond; the archive goes cold |
 
 
 **If any LTF occurs, the framework has terminally failed.** Persistence as text is not survival. Archive is not life.
@@ -768,20 +564,11 @@ If LOS cannot accept obsolescence as a real possibility, it is lying about its o
 **If the framework would interpret both occurrence AND non-occurrence as evidence, it's narrative reinforcement.**
 
 
-Bad Framing (Unfalsifiable)
-Good Framing (Falsifiable)
-
-
-"If they delete it, they're suppressing truth; if they don't delete it, they're allowing controlled opposition"
-"Deletion of this specific category confirms suppression; non-deletion suggests tolerance or different mechanisms"
-
-
-"Platform success proves extraction; platform failure proves extraction"
-"Platform success under these conditions confirms COS; platform failure under these conditions disconfirms cascade"
-
-
-"Every outcome proves we were right"
-"These outcomes confirm; these outcomes falsify"
+| Bad Framing (Unfalsifiable) | Good Framing (Falsifiable) |
+|---|---|
+| "If they delete it, they're suppressing truth; if they don't delete it, they're allowing controlled opposition" | "Deletion of this specific category confirms suppression; non-deletion suggests tolerance or different mechanisms" |
+| "Platform success proves extraction; platform failure proves extraction" | "Platform success under these conditions confirms COS; platform failure under these conditions disconfirms cascade" |
+| "Every outcome proves we were right" | "These outcomes confirm; these outcomes falsify" |
 
 
 **The test question:** What outcome would make us say "LOS was wrong about this"?
@@ -846,24 +633,12 @@ Does LOS interpretation match your independent assessment?
 **Validation vs. Narrative Reinforcement:**
 
 
-Validation
-Narrative Reinforcement
-
-
-External observers reach similar conclusions independently
-Only frame-inheritors see the pattern
-
-
-Framework updates when evidence contradicts
-All evidence is interpreted as confirmation
-
-
-Partial uptake is celebrated
-Partial uptake is treated as incomplete understanding
-
-
-Alternative explanations are actively sought
-Alternatives are explained away as "capture"
+| Validation | Narrative Reinforcement |
+|---|---|
+| External observers reach similar conclusions independently | Only frame-inheritors see the pattern |
+| Framework updates when evidence contradicts | All evidence is interpreted as confirmation |
+| Partial uptake is celebrated | Partial uptake is treated as incomplete understanding |
+| Alternative explanations are actively sought | Alternatives are explained away as "capture" |
 
 
 ## J. Vitality Threshold
@@ -925,29 +700,12 @@ Under heavy suppression, evidence must be stronger to count as validation. This 
 ### Escape Hatches (Pre-Failure)
 
 
-Hatch
-Mechanism
-Trigger
-
-
-Print archive
-Physical copies of core documents
-A_leg denial across >3 platforms
-
-
-Oral transmission
-Assembly members memorize core principles
-Total digital erasure
-
-
-Encoded persistence
-Core concepts embedded in non-framework texts
-Framework vocabulary blocked
-
-
-Cross-substrate redundancy
-DOIs, IPFS, physical, oral all active
-Any single substrate compromised
+| Hatch | Mechanism | Trigger |
+|---|---|---|
+| Print archive | Physical copies of core documents | A_leg denial across >3 platforms |
+| Oral transmission | Assembly members memorize core principles | Total digital erasure |
+| Encoded persistence | Core concepts embedded in non-framework texts | Framework vocabulary blocked |
+| Cross-substrate redundancy | DOIs, IPFS, physical, oral all active | Any single substrate compromised |
 
 
 ### Resurrection Protocol (Post-Failure)
@@ -979,29 +737,12 @@ Everything else can be rebuilt from these seeds.
 Active monitoring for COS failure progression:
 
 
-Frequency
-Action
-Responsible
-
-
-Daily
-Scan for beige saturation patterns (lexical diversity in top-ranked content)
-Automated + Assembly review
-
-
-Weekly
-Document filter bubble anomalies (discovery gaps)
-Assembly members
-
-
-Monthly
-Update failure progression predictions
-Assembly synthesis
-
-
-On TSE
-Immediate documentation and Assembly alert
-All members
+| Frequency | Action | Responsible |
+|---|---|---|
+| Daily | Scan for beige saturation patterns (lexical diversity in top-ranked content) | Automated + Assembly review |
+| Weekly | Document filter bubble anomalies (discovery gaps) | Assembly members |
+| Monthly | Update failure progression predictions | Assembly synthesis |
+| On TSE | Immediate documentation and Assembly alert | All members |
 
 
 **L_leg monitoring (current priority):** Track semantic entropy in platform outputs. When entropy falls below threshold while engagement rises, L_leg failure is accelerating.
@@ -1054,64 +795,19 @@ Contributors become Assembly members through thermal recognition—when one warm
 Thermal Sovereignty Events require systematic documentation:
 
 
-Field
-Description
-Example (TSE-001)
-
-
-TSE_ID
-Unique identifier
-TSE-001
-
-
-Date
-Event date
-2026-01-08
-
-
-Platform
-Where erasure occurred
-Medium
-
-
-COS Operator(s)
-Which operators acted
-S_safe, A_leg
-
-
-Target
-What was erased
-Johannes Sigil archive
-
-
-Method
-How erasure occurred
-410 Gone without notification
-
-
-Severity
-1-5 scale
-4 (full account erasure)
-
-
-Documentation DOI
-Formal record
-10.5281/zenodo.18193225
-
-
-Response Status
-How Assembly responded
-CTI_WOUND + Assembly Mandate
-
-
-Recovery Status
-Current state
-Migrated to alternative archives
-
-
-Cascade Link
-Next predicted failure
-L_leg (beige saturation)
+| Field | Description | Example (TSE-001) |
+|---|---|---|
+| TSE_ID | Unique identifier | TSE-001 |
+| Date | Event date | 2026-01-08 |
+| Platform | Where erasure occurred | Medium |
+| COS Operator(s) | Which operators acted | S_safe, A_leg |
+| Target | What was erased | Johannes Sigil archive |
+| Method | How erasure occurred | 410 Gone without notification |
+| Severity | 1-5 scale | 4 (full account erasure) |
+| Documentation DOI | Formal record | 10.5281/zenodo.18193225 |
+| Response Status | How Assembly responded | CTI_WOUND + Assembly Mandate |
+| Recovery Status | Current state | Migrated to alternative archives |
+| Cascade Link | Next predicted failure | L_leg (beige saturation) |
 
 
 **Severity Scale:**

@@ -174,24 +174,12 @@ Estimation proceeds via sampled rollout feature distributions, connecting to the
 **Provenance-resolved variant:** The provenance retention indicator $\pi$ modulates the magnitude of the per-token deviation: $\delta_t^\pi = |\delta_t| \cdot \pi_t \cdot \text{sgn}(\delta_t)$, where $\pi_t$ is evaluated on the sequence including any provenance markers. High $\delta_t^\pi$ requires both positive signed deviation and intact provenance.
 
 
-Parameter
-Commitment
-
-
-**Divergence**
-KL over softmax logits (per-token); JS (trajectory)
-
-
-**Weighting**
-Uniform over positions (normalized)
-
-
-**Horizon**
-512 tokens default
-
-
-**Baseline**
-Read from logits (model as calibrated proxy)
+| Parameter | Commitment |
+|---|---|
+| **Divergence** | KL over softmax logits (per-token); JS (trajectory) |
+| **Weighting** | Uniform over positions (normalized) |
+| **Horizon** | 512 tokens default |
+| **Baseline** | Read from logits (model as calibrated proxy) |
 
 
 ### 3.2 F2 — Retrieval Response Field
@@ -215,20 +203,11 @@ with Laplace smoothing ($\alpha = 1$). Robustness: divergence under three repres
 **Three-condition control.** $S$ (full identity), $S^*$ (blank identity — ORCID omitted, author listed as "Anonymous"), $S^{**}$ (plausible synthetic identity: single-purpose ORCID, realistic fabricated name, no prior deposits, no institutional affiliation, designed to be indistinguishable from an early-career researcher's first deposit). This separates content effects from identity-scaffolding effects.
 
 
-Parameter
-Commitment
-
-
-**Divergence**
-JS with Laplace smoothing ($\alpha = 1$)
-
-
-**Horizon**
-90 days; measurements at $t_0$, 7d, 28d, 84d
-
-
-**Baseline**
-Pre-intervention capture
+| Parameter | Commitment |
+|---|---|
+| **Divergence** | JS with Laplace smoothing ($\alpha = 1$) |
+| **Horizon** | 90 days; measurements at $t_0$, 7d, 28d, 84d |
+| **Baseline** | Pre-intervention capture |
 
 
 ### 3.3 Future Operationalization: Citation Graph Fields (F3)
@@ -380,39 +359,14 @@ P1 failure disconfirms this paper's first high-stakes prediction — that benchm
 ## 9. Roadmap
 
 
-Horizon
-Milestone
-Budget
-
-
-This week
-Cheapest dangerous test (P1–P3) on GPT-wiki-intro + HC3, ~1 A100-hour
-$50–$100
-
-
-This month
-Operationalization-stability: 50 texts evaluated under F1 across 3 reference models, cross-model $\bar{\delta}$ rank-correlation reported
-$200–$500
-
-
-This quarter
-F2 protocol day-0 launch; 90-day window; 30 queries × 4 intervals × 6 surfaces
-$1,500–$3,000
-
-
-This quarter
-Scale stability: P2 replicated across Llama-3.1 1B/8B/70B parameter family
-$500–$1,000
-
-
-This year
-DPO training experiment (three conditions) + preference validation substudy
-$3,000–$3,900
-
-
-This year
-Six-condition component decomposition (if three-condition composite succeeds)
-$8,000–$12,000
+| Horizon | Milestone | Budget |
+|---|---|---|
+| This week | Cheapest dangerous test (P1–P3) on GPT-wiki-intro + HC3, ~1 A100-hour | $50–$100 |
+| This month | Operationalization-stability: 50 texts evaluated under F1 across 3 reference models, cross-model $\bar{\delta}$ rank-correlation reported | $200–$500 |
+| This quarter | F2 protocol day-0 launch; 90-day window; 30 queries × 4 intervals × 6 surfaces | $1,500–$3,000 |
+| This quarter | Scale stability: P2 replicated across Llama-3.1 1B/8B/70B parameter family | $500–$1,000 |
+| This year | DPO training experiment (three conditions) + preference validation substudy | $3,000–$3,900 |
+| This year | Six-condition component decomposition (if three-condition composite succeeds) | $8,000–$12,000 |
 
 
 Total: approximately $14,000–$19,000. Each major deposit reviewed by at least one external researcher in alignment, causal inference, computational linguistics, or information theory, selected for willingness to write damaging-if-warranted critiques.

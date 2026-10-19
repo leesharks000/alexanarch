@@ -126,24 +126,12 @@ Most organizations underestimate semantic chaos costs because the failures are d
 A rough estimation framework:
 
 
-Factor
-Multiplier
-
-
-Annual AI/automation spend
-1.0x
-
-
-Number of major definitional inconsistencies
-× 0.05 per inconsistency
-
-
-Departments using shared terminology
-× 0.02 per department
-
-
-Regulated data categories involved
-× 0.10 per category
+| Factor | Multiplier |
+|---|---|
+| Annual AI/automation spend | 1.0x |
+| Number of major definitional inconsistencies | × 0.05 per inconsistency |
+| Departments using shared terminology | × 0.02 per department |
+| Regulated data categories involved | × 0.10 per category |
 
 
 An organization spending $10M on AI with 20 major definitional inconsistencies across 15 departments handling 3 regulated data categories would estimate:

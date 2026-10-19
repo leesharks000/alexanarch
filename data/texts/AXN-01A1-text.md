@@ -128,44 +128,15 @@ The Space Ark also exists in compressed forms: the NLCC (3,762 words, 12:1 compr
 The prompt-native semantic runtime is not a replacement for external AI operating systems. It is the missing interior layer.
 
 
-Layer
-Function
-Example
-
-
-Hardware orchestration
-GPU/memory management across clusters
-NVIDIA Dynamo
-
-
-Data lifecycle
-Storage, retrieval, compute integration
-VAST AI OS
-
-
-Agent orchestration
-Scheduling, tool access, multi-agent coordination
-AIOS, Warmwind OS
-
-
-Device interaction
-Intent-to-action on consumer hardware
-rabbitOS
-
-
-Memory management
-Persistent, tiered, cross-session storage
-MemGPT, MemOS
-
-
-Context engineering
-Inference payload design for task performance
-Industry practice (2024–2026)
-
-
-**Prompt-native semantic runtime**
-**Epistemic governance, provenance, compression classification, structural fidelity — inside the context window, during generation**
-**Space Ark (EA-ARK-01)**
+| Layer | Function | Example |
+|---|---|---|
+| Hardware orchestration | GPU/memory management across clusters | NVIDIA Dynamo |
+| Data lifecycle | Storage, retrieval, compute integration | VAST AI OS |
+| Agent orchestration | Scheduling, tool access, multi-agent coordination | AIOS, Warmwind OS |
+| Device interaction | Intent-to-action on consumer hardware | rabbitOS |
+| Memory management | Persistent, tiered, cross-session storage | MemGPT, MemOS |
+| Context engineering | Inference payload design for task performance | Industry practice (2024–2026) |
+| **Prompt-native semantic runtime** | **Epistemic governance, provenance, compression classification, structural fidelity — inside the context window, during generation** | **Space Ark (EA-ARK-01)** |
 
 
 The bottom layer — the one that governs what the model actually generates — is the one no external OS addresses. External systems can deliver perfect context to the model. Only an internal runtime can govern what the model does with that context.

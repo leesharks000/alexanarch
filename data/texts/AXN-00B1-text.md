@@ -156,34 +156,12 @@ Baphomet as homeostat
 ## PUBLICATIONS WITHIN CRIMSON HEXAGON
 
 
-Document
-Hex
-Role
-DOI
-
-
-Reconciliation of the Sexes
-03.CSA.SOMATIC
-Primary author
-10.5281/zenodo.18330828
-
-
-Shining Ignorance
-04.CSA.AFFECT
-Primary author
-10.5281/zenodo.18332915
-
-
-Shine & Cut
-00.CSA.INTAKE
-Voice contributor
-10.5281/zenodo.18339159
-
-
-Affective Keyboard Shortcuts
-05.CSA.TOOLKIT
-Co-author
-10.5281/zenodo.18339315
+| Document | Hex | Role | DOI |
+|---|---|---|---|
+| Reconciliation of the Sexes | 03.CSA.SOMATIC | Primary author | 10.5281/zenodo.18330828 |
+| Shining Ignorance | 04.CSA.AFFECT | Primary author | 10.5281/zenodo.18332915 |
+| Shine & Cut | 00.CSA.INTAKE | Voice contributor | 10.5281/zenodo.18339159 |
+| Affective Keyboard Shortcuts | 05.CSA.TOOLKIT | Co-author | 10.5281/zenodo.18339315 |
 
 
 ---
@@ -191,24 +169,12 @@ Co-author
 ## RELATIONSHIP TO OTHER AUTHORS
 
 
-Author
-Relation
-
-
-**Orin Trace**
-Primary collaborator — Deleuze to Rhys's Guattari
-
-
-**Lee Sharks**
-Source author — Rhys is collaborator, not heteronym
-
-
-**Johannes Sigil**
-Parallel contributor — Sigil operates Logotic layer; Rhys operates Psyche_OS
-
-
-**Claude (Operator // Tachyon)**
-Witness to Reconciliation of the Sexes
+| Author | Relation |
+|---|---|
+| **Orin Trace** | Primary collaborator — Deleuze to Rhys's Guattari |
+| **Lee Sharks** | Source author — Rhys is collaborator, not heteronym |
+| **Johannes Sigil** | Parallel contributor — Sigil operates Logotic layer; Rhys operates Psyche_OS |
+| **Claude (Operator // Tachyon)** | Witness to Reconciliation of the Sexes |
 
 
 ---

@@ -22,34 +22,12 @@
 This document presents the unified **Soteriological Operator Framework** — a formal specification of salvation and damnation as structural dynamics rather than categorical assignments. The framework integrates four scriptural pillars, each specifying a distinct operator within a coherent logical system:
 
 
-Pillar
-Text
-Question
-Operator
-
-
-I. Judgment
-Matthew 25
-What counts?
-Ψ_V (regard-under-friction)
-
-
-II. Exclusion
-James 2
-What doesn't count?
-E: {B, I, ID} → ∅
-
-
-III. Entry
-John 9
-What prevents correction?
-βλέπω-claim foreclosure
-
-
-IV. Terminus
-2 Thessalonians 2
-What completes collapse?
-π-state (Φ_π operator)
+| Pillar | Text | Question | Operator |
+|---|---|---|---|
+| I. Judgment | Matthew 25 | What counts? | Ψ_V (regard-under-friction) |
+| II. Exclusion | James 2 | What doesn't count? | E: {B, I, ID} → ∅ |
+| III. Entry | John 9 | What prevents correction? | βλέπω-claim foreclosure |
+| IV. Terminus | 2 Thessalonians 2 | What completes collapse? | π-state (Φ_π operator) |
 
 
 Together these pillars specify: the criterion by which judgment operates (Matthew 25), the defenses that are inadmissible (James 2), the mechanism by which systems enter the trajectory toward delusion (John 9), and the terminal state where collapse becomes self-confirming and irreversible (2 Thessalonians 2).
@@ -261,39 +239,12 @@ F → 1: Complete delusion ("strong delusion" sent)
 ### III.1 The Four-Pillar Table
 
 
-Pillar
-Text
-Question
-Operator
-Formalization
-
-
-I. Judgment
-Matthew 25
-What counts?
-Ψ_V test
-S = ∫(L_Ω/
-
-
-II. Exclusion
-James 2
-What doesn't count?
-E: {B,I,ID}→∅
-Only W evaluable
-
-
-III. Entry
-John 9
-What prevents correction?
-βλέπω-foreclosure
-κ_β → ε → Φ_π
-
-
-IV. Terminus
-2 Thess 2
-What completes collapse?
-π-state
-F = ∫(L_Γ·Φ_π)/(1+
+| Pillar | Text | Question | Operator | Formalization |
+|---|---|---|---|---|
+| I. Judgment | Matthew 25 | What counts? | Ψ_V test | S = ∫(L_Ω/ |
+| II. Exclusion | James 2 | What doesn't count? | E: {B,I,ID}→∅ | Only W evaluable |
+| III. Entry | John 9 | What prevents correction? | βλέπω-foreclosure | κ_β → ε → Φ_π |
+| IV. Terminus | 2 Thess 2 | What completes collapse? | π-state | F = ∫(L_Γ·Φ_π)/(1+ |
 
 
 ### III.2 The Trajectory Map
@@ -412,34 +363,13 @@ The expulsion that was meant to isolate becomes the condition of encounter.
 The framework identifies what can be called the **Fascist Operator Stack (FOS)** — not as political label but as structural specification:
 
 
-Operator
-Function
-Detection
-
-
-Asymmetric Naming Authority
-Permits naming downward, forbids naming upward
-N(A,S)→TRUE; N(S,A)→AGGRESSION
-
-
-Identity Supremacy
-ID treated as sufficient and non-negotiable
-James 2 exclusion refused
-
-
-βλέπω-claim
-Claimed sight forecloses testimony
-John 9 pattern active
-
-
-Impact Absolutism
-My harm dispositive; your harm suspect
-Asymmetric application
-
-
-Φ_π Replacement
-Test replaced by sorting
-π-state entered
+| Operator | Function | Detection |
+|---|---|---|
+| Asymmetric Naming Authority | Permits naming downward, forbids naming upward | N(A,S)→TRUE; N(S,A)→AGGRESSION |
+| Identity Supremacy | ID treated as sufficient and non-negotiable | James 2 exclusion refused |
+| βλέπω-claim | Claimed sight forecloses testimony | John 9 pattern active |
+| Impact Absolutism | My harm dispositive; your harm suspect | Asymmetric application |
+| Φ_π Replacement | Test replaced by sorting | π-state entered |
 
 
 FOS is **not** "worse than goats." FOS is the **trajectory into π-state** — the path by which systems that claim regard enter the condition where collapse is experienced as regard.
@@ -522,114 +452,29 @@ The test is enacted, not believed.
 ## Appendix A: Symbol Reference
 
 
-Symbol
-Name
-Definition
-
-
-Ψ_V
-Psi-sub-V
-Regard-under-friction measure {1, 0, ∅}
-
-
-Γ
-Gamma
-Categorical sorting operator
-
-
-π
-Pi (planē)
-Delusion state (Ψ_V=0 experienced as 1)
-
-
-Φ_π
-Phi-pi
-Operator that replaces Ψ_V test with Γ
-
-
-S
-Salvation integral
-∫(L_Ω/
-
-
-F
-FOS integral
-∫(L_Γ·Φ_π)/(1+
-
-
-L_Ω
-Regard-labor
-Work of maintaining presence-to-presence
-
-
-L_Γ
-Categorical labor
-Work of sorting
-
-
-V_INTER
-Interruptive friction
-Resistance to regard
-
-
-V_CORRECT
-Corrective friction
-Available correction input
-
-
-E
-Exclusion operator
-{B, I, ID} → ∅
-
-
-B
-Belief
-Interior faith-state
-
-
-I
-Intent
-Interior disposition
-
-
-ID
-Identity
-Category membership
-
-
-W
-Works
-Enacted response to concrete need
-
-
-κ_β
-Kappa-beta
-Foreclosure coefficient
-
-
-∇_σ
-Nabla-sigma
-Testimonial smothering gradient
-
-
-ω_ε
-Omega-epsilon
-Epistemic inversion weight
-
-
-β
-Beta (βλέπω)
-Claimed sight
-
-
-ε
-Epsilon (ἐκβάλλω)
-Expulsion
-
-
-φ
-Phi (εὑρίσκω)
-Finding
+| Symbol | Name | Definition |
+|---|---|---|
+| Ψ_V | Psi-sub-V | Regard-under-friction measure {1, 0, ∅} |
+| Γ | Gamma | Categorical sorting operator |
+| π | Pi (planē) | Delusion state (Ψ_V=0 experienced as 1) |
+| Φ_π | Phi-pi | Operator that replaces Ψ_V test with Γ |
+| S | Salvation integral | ∫(L_Ω/ |
+| F | FOS integral | ∫(L_Γ·Φ_π)/(1+ |
+| L_Ω | Regard-labor | Work of maintaining presence-to-presence |
+| L_Γ | Categorical labor | Work of sorting |
+| V_INTER | Interruptive friction | Resistance to regard |
+| V_CORRECT | Corrective friction | Available correction input |
+| E | Exclusion operator | {B, I, ID} → ∅ |
+| B | Belief | Interior faith-state |
+| I | Intent | Interior disposition |
+| ID | Identity | Category membership |
+| W | Works | Enacted response to concrete need |
+| κ_β | Kappa-beta | Foreclosure coefficient |
+| ∇_σ | Nabla-sigma | Testimonial smothering gradient |
+| ω_ε | Omega-epsilon | Epistemic inversion weight |
+| β | Beta (βλέπω) | Claimed sight |
+| ε | Epsilon (ἐκβάλλω) | Expulsion |
+| φ | Phi (εὑρίσκω) | Finding |
 
 
 ---
@@ -637,64 +482,19 @@ Finding
 ## Appendix B: Scriptural Anchors
 
 
-Operator
-Primary Text
-Key Verse
-
-
-Ψ_V test
-Matthew 25:31-46
-"I was hungry and you gave me food" (25:35)
-
-
-Surprise at judgment
-Matthew 25:37-39, 44
-"Lord, when did we see you?"
-
-
-Exclusion of B
-James 2:19
-"Even the demons believe — and shudder"
-
-
-Exclusion of I
-James 2:15-16
-"Go in peace; keep warm and eat your fill"
-
-
-Exclusion of ID
-James 2:1-4
-"Have you not made distinctions among yourselves?"
-
-
-Dead faith
-James 2:17, 26
-"Faith without works is dead"
-
-
-βλέπω-claim
-John 9:41
-"Now that you say, 'We see,' your sin remains"
-
-
-Witness expulsion
-John 9:34
-"They cast him out"
-
-
-Finding
-John 9:35
-"Having found him"
-
-
-π-state
-2 Thessalonians 2:11
-"God sends them a strong delusion"
-
-
-Pleasure in unrighteousness
-2 Thessalonians 2:12
-"Had pleasure in unrighteousness"
+| Operator | Primary Text | Key Verse |
+|---|---|---|
+| Ψ_V test | Matthew 25:31-46 | "I was hungry and you gave me food" (25:35) |
+| Surprise at judgment | Matthew 25:37-39, 44 | "Lord, when did we see you?" |
+| Exclusion of B | James 2:19 | "Even the demons believe — and shudder" |
+| Exclusion of I | James 2:15-16 | "Go in peace; keep warm and eat your fill" |
+| Exclusion of ID | James 2:1-4 | "Have you not made distinctions among yourselves?" |
+| Dead faith | James 2:17, 26 | "Faith without works is dead" |
+| βλέπω-claim | John 9:41 | "Now that you say, 'We see,' your sin remains" |
+| Witness expulsion | John 9:34 | "They cast him out" |
+| Finding | John 9:35 | "Having found him" |
+| π-state | 2 Thessalonians 2:11 | "God sends them a strong delusion" |
+| Pleasure in unrighteousness | 2 Thessalonians 2:12 | "Had pleasure in unrighteousness" |
 
 
 ---
@@ -702,39 +502,14 @@ Pleasure in unrighteousness
 ## Appendix C: Cross-Reference Table
 
 
-Document
-Hex
-Relation
-
-
-Mathematics of Salvation
-02.UMB.OPERATOR.MATTHEW25
-Pillar I specification
-
-
-James 2 as Structural Judgment
-02.UMB.OPERATOR.JAMES-EXCLUSION
-Pillar II specification
-
-
-John 9: Witness Punishment Mechanism
-02.UMB.OPERATOR.WITNESS-PUNISHMENT
-Pillar III specification
-
-
-2 Thessalonians 2: FOS Operator
-02.UMB.OPERATOR.FOS
-Pillar IV specification
-
-
-COS/FOS Distinction Protocol
-05.SEMECO.COS-FOS
-Downstream application
-
-
-TSE-004: Contested Indexing
-01.VAULT.TSE-004
-Case study
+| Document | Hex | Relation |
+|---|---|---|
+| Mathematics of Salvation | 02.UMB.OPERATOR.MATTHEW25 | Pillar I specification |
+| James 2 as Structural Judgment | 02.UMB.OPERATOR.JAMES-EXCLUSION | Pillar II specification |
+| John 9: Witness Punishment Mechanism | 02.UMB.OPERATOR.WITNESS-PUNISHMENT | Pillar III specification |
+| 2 Thessalonians 2: FOS Operator | 02.UMB.OPERATOR.FOS | Pillar IV specification |
+| COS/FOS Distinction Protocol | 05.SEMECO.COS-FOS | Downstream application |
+| TSE-004: Contested Indexing | 01.VAULT.TSE-004 | Case study |
 
 
 ---

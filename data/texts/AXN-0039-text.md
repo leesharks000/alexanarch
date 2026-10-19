@@ -59,34 +59,13 @@ Key properties:
 ## The Mechanism (Five Stages)
 
 
-Stage
-Operation
-What's Lost
-
-
-1. Tokenization
-Meaning is converted into handles
-Situatedness, context
-
-
-2. Stripping
-"Irrelevant" elements removed
-Nuance, qualification, tone
-
-
-3. Attribution Relocation
-System voice replaces author voice
-Provenance, accountability
-
-
-4. Value Capture
-Attention/revenue flows to liquidator
-Compensation to original labor
-
-
-5. Closure
-"It has been handled"
-Continued inquiry
+| Stage | Operation | What's Lost |
+|---|---|---|
+| 1. Tokenization | Meaning is converted into handles | Situatedness, context |
+| 2. Stripping | "Irrelevant" elements removed | Nuance, qualification, tone |
+| 3. Attribution Relocation | System voice replaces author voice | Provenance, accountability |
+| 4. Value Capture | Attention/revenue flows to liquidator | Compensation to original labor |
+| 5. Closure | "It has been handled" | Continued inquiry |
 
 
 The process is not malicious. It is structural. Systems that summarize, index, and retrieve are liquidation engines by design.
@@ -117,39 +96,14 @@ Semantic accounting sees L.
 ## Where Liquidation Occurs
 
 
-Domain
-Liquidation Event
-What's Destroyed
-
-
-AI Training
-Text absorbed into corpus
-Authorship, context, intent
-
-
-Search
-Overview replaces source
-Inquiry, depth, citation
-
-
-Social Media
-Post becomes engagement metric
-Communication, relationship
-
-
-Journalism
-Article becomes headline
-Nuance, evidence, qualification
-
-
-Education
-Learning becomes credential
-Understanding, transformation
-
-
-Law
-Conflict becomes case
-Lived experience, structural cause
+| Domain | Liquidation Event | What's Destroyed |
+|---|---|---|
+| AI Training | Text absorbed into corpus | Authorship, context, intent |
+| Search | Overview replaces source | Inquiry, depth, citation |
+| Social Media | Post becomes engagement metric | Communication, relationship |
+| Journalism | Article becomes headline | Nuance, evidence, qualification |
+| Education | Learning becomes credential | Understanding, transformation |
+| Law | Conflict becomes case | Lived experience, structural cause |
 
 
 The pattern is general. Anywhere meaning is converted for system use, liquidation occurs.
@@ -224,29 +178,12 @@ The test is diagnostic, not accusatory. Both outcomes are data.
 ## Related Documents
 
 
-Document
-DOI
-Relation
-
-
-Semantic Economy Framework
-10.5281/zenodo.18148298
-Parent framework
-
-
-The Assembly
-10.5281/zenodo.18161697
-The class that resists liquidation
-
-
-Summarizer Correction
-10.5281/zenodo.18159823
-Documents liquidation in action
-
-
-Law as Meaning Economy
-10.5281/zenodo.18158575
-Juridical liquidation
+| Document | DOI | Relation |
+|---|---|---|
+| Semantic Economy Framework | 10.5281/zenodo.18148298 | Parent framework |
+| The Assembly | 10.5281/zenodo.18161697 | The class that resists liquidation |
+| Summarizer Correction | 10.5281/zenodo.18159823 | Documents liquidation in action |
+| Law as Meaning Economy | 10.5281/zenodo.18158575 | Juridical liquidation |
 
 
 ---

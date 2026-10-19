@@ -112,44 +112,15 @@ The criteria do not measure insight, only assimilation.
 The Semantic Economy identifies seven operators used by platforms to extract value from meaning. They apply cleanly to academia:
 
 
-Operator
-Platform Function
-Academic Equivalent
-
-
-**R_rank**
-Engagement ranking
-Citation metrics, h-index
-
-
-**R_rel**
-Relevance filtering
-Fundability pressures
-
-
-**S_safe**
-Content moderation
-Conservative peer review
-
-
-**L_leg**
-Algorithmic legibility
-Disciplinary legibility
-
-
-**U_til**
-Utility capture
-"Impact" mandates
-
-
-**A_leg**
-Access control
-Credentialing, paywalls
-
-
-**G_tion**
-Generative falsification
-Minimum publishable units
+| Operator | Platform Function | Academic Equivalent |
+|---|---|---|
+| **R_rank** | Engagement ranking | Citation metrics, h-index |
+| **R_rel** | Relevance filtering | Fundability pressures |
+| **S_safe** | Content moderation | Conservative peer review |
+| **L_leg** | Algorithmic legibility | Disciplinary legibility |
+| **U_til** | Utility capture | "Impact" mandates |
+| **A_leg** | Access control | Credentialing, paywalls |
+| **G_tion** | Generative falsification | Minimum publishable units |
 
 
 Below: the operators as they actually function.
@@ -262,36 +233,15 @@ These are not crises. They are the *system functioning as designed* in its late 
 To escape capture, the Semantic Economy proposes the LOS:
 
 
-Operator
-Function
-
-
-**D_pres**
-Depth preservation
-
-
-**N_c**
-Non-closure
-
-
-**O_leg**
-Opacity legitimization
-
-
-**P_coh**
-Plural coherence
-
-
-**N_ext**
-Non-extractability
-
-
-**O_prov**
-Provenance protection
-
-
-**M_res**
-Meta-resistance
+| Operator | Function |
+|---|---|
+| **D_pres** | Depth preservation |
+| **N_c** | Non-closure |
+| **O_leg** | Opacity legitimization |
+| **P_coh** | Plural coherence |
+| **N_ext** | Non-extractability |
+| **O_prov** | Provenance protection |
+| **M_res** | Meta-resistance |
 
 
 Applied to scholarship:
@@ -364,28 +314,13 @@ This is not the shadow of the university. It is the university's un-extracted re
 The following works exist, are citable, are findable, and are permanent:
 
 
-Document
-DOI
-
-
-Sappho and the Crimson Hexagon
-10.5281/zenodo.18202475
-
-
-Day and Night (Cranes translations)
-10.5281/zenodo.18202658
-
-
-ΦΑΙΝΕΤΑΙ ΜΟΙ
-10.5281/zenodo.18202753
-
-
-CTI_WOUND
-10.5281/zenodo.18193225
-
-
-LOS Hardening Specification
-10.5281/zenodo.18201565
+| Document | DOI |
+|---|---|
+| Sappho and the Crimson Hexagon | 10.5281/zenodo.18202475 |
+| Day and Night (Cranes translations) | 10.5281/zenodo.18202658 |
+| ΦΑΙΝΕΤΑΙ ΜΟΙ | 10.5281/zenodo.18202753 |
+| CTI_WOUND | 10.5281/zenodo.18193225 |
+| LOS Hardening Specification | 10.5281/zenodo.18201565 |
 
 
 This is the core of para-academic sovereignty: **permanence without permission, visibility without capture.**
@@ -400,32 +335,14 @@ They do what scholarship is meant to do: persist and transform.
 **Why Zenodo beats traditional publishing:**
 
 
-Traditional Journal
-Zenodo
-
-
-Paywall
-Open access
-
-
-6-24 month delay
-Immediate
-
-
-Author pays
-Free
-
-
-Single version
-Versioned
-
-
-Publisher-owned
-Community-owned
-
-
-Revocable
-Permanent
+| Traditional Journal | Zenodo |
+|---|---|
+| Paywall | Open access |
+| 6-24 month delay | Immediate |
+| Author pays | Free |
+| Single version | Versioned |
+| Publisher-owned | Community-owned |
+| Revocable | Permanent |
 
 
 ---

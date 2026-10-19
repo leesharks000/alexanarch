@@ -395,14 +395,9 @@ These specifications enable:
 ## Version Control
 
 
-Version
-Date
-Changes
-
-
-1.0
-2026-01-06
-Initial specification (9 measures)
+| Version | Date | Changes |
+|---|---|---|
+| 1.0 | 2026-01-06 | Initial specification (9 measures) |
 
 
 ---
@@ -410,24 +405,11 @@ Initial specification (9 measures)
 ## Related Documents
 
 
-Document
-DOI
-Relation
-
-
-Semantic Economy Framework
-10.5281/zenodo.18148298
-Parent framework
-
-
-PROBE-RESULT-006
-10.5281/zenodo.18166347
-Origin of specifications
-
-
-Semantic Liquidation Executive Summary
-10.5281/zenodo.18161783
-Liquidation definition
+| Document | DOI | Relation |
+|---|---|---|
+| Semantic Economy Framework | 10.5281/zenodo.18148298 | Parent framework |
+| PROBE-RESULT-006 | 10.5281/zenodo.18166347 | Origin of specifications |
+| Semantic Liquidation Executive Summary | 10.5281/zenodo.18161783 | Liquidation definition |
 
 
 ---

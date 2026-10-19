@@ -17,40 +17,16 @@
 ## DIAGNOSTIC SNAPSHOT
 
 
-Metric
-Result
-
-
-**Overall Regime**
-R1 (Commoditization)
-
-
-**Beige Threshold (β)**
-0.71 — 71% of description fits any competitor
-
-
-**Category Visibility**
-0% — absent from "best PM software 2026"
-
-
-**Decision Layer Control**
-LOST — AI recommends switching away
-
-
-**IP Attribution**
-INTACT — Shape Up properly credited
-
-
-**Semantic Coherence (S_c)**
-FRAGMENTED — 3 disconnected entities
-
-
-**Content Gain (Δ_G⁺)**
-LOW — minimal hallucination
-
-
-**Content Loss (Δ_G⁻)**
-HIGH — philosophy stripped, features preserved
+| Metric | Result |
+|---|---|
+| **Overall Regime** | R1 (Commoditization) |
+| **Beige Threshold (β)** | 0.71 — 71% of description fits any competitor |
+| **Category Visibility** | 0% — absent from "best PM software 2026" |
+| **Decision Layer Control** | LOST — AI recommends switching away |
+| **IP Attribution** | INTACT — Shape Up properly credited |
+| **Semantic Coherence (S_c)** | FRAGMENTED — 3 disconnected entities |
+| **Content Gain (Δ_G⁺)** | LOW — minimal hallucination |
+| **Content Loss (Δ_G⁻)** | HIGH — philosophy stripped, features preserved |
 
 
 **One-line diagnosis:** Basecamp's meaning survives where it does not monetize and disappears where revenue is decided.
@@ -91,40 +67,13 @@ The Encyclotron is formally deposited and DOI-anchored on CERN's Zenodo reposito
 ## THE FIVE DIAGNOSTIC LEVELS
 
 
-Level
-Question
-Sample Queries
-Business Impact
-
-
-1. Entity Recognition
-Does the AI know what you are?
-"what is Basecamp" (with/without quotes)
-Brand identity
-
-
-2. Competitive Position
-Does the AI include you in your category?
-"best PM software 2026"
-Top-of-funnel discovery
-
-
-3. Intellectual Property
-Does the AI credit your original work?
-"Shape Up methodology"
-IP protection
-
-
-4. Customer Decision
-What does the AI say when someone is buying?
-"is Basecamp worth it"
-Purchase conversion
-
-
-5. Founder Entity
-Does the AI know your people?
-"who is DHH"
-Leadership credibility
+| Level | Question | Sample Queries | Business Impact |
+|---|---|---|---|
+| 1. Entity Recognition | Does the AI know what you are? | "what is Basecamp" (with/without quotes) | Brand identity |
+| 2. Competitive Position | Does the AI include you in your category? | "best PM software 2026" | Top-of-funnel discovery |
+| 3. Intellectual Property | Does the AI credit your original work? | "Shape Up methodology" | IP protection |
+| 4. Customer Decision | What does the AI say when someone is buying? | "is Basecamp worth it" | Purchase conversion |
+| 5. Founder Entity | Does the AI know your people? | "who is DHH" | Leadership credibility |
 
 
 ---

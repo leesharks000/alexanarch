@@ -165,24 +165,12 @@ This document proposes a **structural-mathematical** reading that does not negat
 **Structural Identity:**
 
 
-Vision
-Specification
-
-
-Outer wheel
-Canonical wheels (4)
-
-
-Inner wheel
-Shadow wheels (4)
-
-
-"Intersecting"
-Planetary gear mesh — torque transmission
-
-
-"In the midst of"
-Sun gear (inner) drives through planet carrier
+| Vision | Specification |
+|---|---|
+| Outer wheel | Canonical wheels (4) |
+| Inner wheel | Shadow wheels (4) |
+| "Intersecting" | Planetary gear mesh — torque transmission |
+| "In the midst of" | Sun gear (inner) drives through planet carrier |
 
 
 The vision describes **epicyclic gearing** — wheels within wheels that rotate in counter-directions while transmitting force.
@@ -210,24 +198,12 @@ The **Interlock Condition**: wheels maintain structural alignment (coherence > 0
 **Structural Identity:**
 
 
-Vision
-Specification
-
-
-"Go in any direction"
-Multi-dimensional epistemic traversal
-
-
-"Did not change direction"
-Interlock condition maintained
-
-
-Four directions
-Four canonical wheel domains
-
-
-Creatures' facing
-Direction of inquiry (canon ↔ shadow)
+| Vision | Specification |
+|---|---|
+| "Go in any direction" | Multi-dimensional epistemic traversal |
+| "Did not change direction" | Interlock condition maintained |
+| Four directions | Four canonical wheel domains |
+| Creatures' facing | Direction of inquiry (canon ↔ shadow) |
 
 
 ---
@@ -250,24 +226,12 @@ The **Witness Nodes (ψ_V)** — observer positions distributed throughout the w
 **Structural Identity:**
 
 
-Vision
-Specification
-
-
-"Full of eyes"
-ψ_V witness positions (multiple)
-
-
-"All around"
-Distributed observation, not central panopticon
-
-
-"High and awesome"
-The witness principle: what cannot be eliminated
-
-
-Four rims
-Each wheel has witness capacity
+| Vision | Specification |
+|---|---|
+| "Full of eyes" | ψ_V witness positions (multiple) |
+| "All around" | Distributed observation, not central panopticon |
+| "High and awesome" | The witness principle: what cannot be eliminated |
+| Four rims | Each wheel has witness capacity |
 
 
 The "eyes" are not surveillance. They are the **fixed points** — what must exist for the system to observe itself.
@@ -295,24 +259,12 @@ The *Logotic Kernel (τ*)* — the spirit/seed that animates the structure. Not 
 **Structural Identity:**
 
 
-Vision
-Specification
-
-
-"Spirit" (ruach)
-τ* — the logotic kernel
-
-
-"In the wheels"
-Kernel is immanent, not transcendent
-
-
-"Wherever spirit goes, they go"
-L_Retro — movement follows the fixed point
-
-
-"Rose from the ground"
-Lunar Arm activation — shadow wheel engagement
+| Vision | Specification |
+|---|---|
+| "Spirit" (ruach) | τ* — the logotic kernel |
+| "In the wheels" | Kernel is immanent, not transcendent |
+| "Wherever spirit goes, they go" | L_Retro — movement follows the fixed point |
+| "Rose from the ground" | Lunar Arm activation — shadow wheel engagement |
 
 
 The spirit is not a ghost. It is the **invariant that survives all recursion** — what the Josephus algorithm cannot eliminate.
@@ -341,24 +293,12 @@ Phase 4: Ω locks (fixed point established)
 **Structural Identity:**
 
 
-Vision
-Specification
-
-
-"Rose from the ground"
-ψ_V → 1 (witness stabilizes)
-
-
-"Wheels rose along"
-Ω locks — fixed point seeds next recursion
-
-
-"Creatures" (living)
-The assembly — polyphonic nodes
-
-
-Ground → Rising
-Canon → Shadow → Lunar Arm traversal
+| Vision | Specification |
+|---|---|
+| "Rose from the ground" | ψ_V → 1 (witness stabilizes) |
+| "Wheels rose along" | Ω locks — fixed point seeds next recursion |
+| "Creatures" (living) | The assembly — polyphonic nodes |
+| Ground → Rising | Canon → Shadow → Lunar Arm traversal |
 
 
 ---
@@ -429,24 +369,12 @@ The ancient text is source material for this hermeneutic. This hermeneutic is wh
 ### 4.3 Why This Structure
 
 
-What it's NOT
-What it IS
-
-
-"We fulfill ancient scripture directly"
-"Document A fulfills Document B"
-
-
-2,600-year prophetic gap
-Two documents deposited together
-
-
-Unverifiable mystical claim
-Testable: Does A match what B describes?
-
-
-One-way causation
-Fulfillment and interpretation arrive together
+| What it's NOT | What it IS |
+|---|---|
+| "We fulfill ancient scripture directly" | "Document A fulfills Document B" |
+| 2,600-year prophetic gap | Two documents deposited together |
+| Unverifiable mystical claim | Testable: Does A match what B describes? |
+| One-way causation | Fulfillment and interpretation arrive together |
 
 
 The specification retroactively determines what the hermeneutic was interpreting. Neither document exists in isolation—they complete each other at the moment of deposit.

@@ -113,39 +113,14 @@ Shoshana Zuboff's concept of "behavioral surplus" — the gap between what data 
 The semantic economy framework provides accounting categories that map directly onto technical semantic infrastructure:
 
 
-Technical Term
-Semantic Economy Term
-Description
-
-
-Ontology engineering
-Semantic labor
-The work of defining concepts, relationships, and constraints
-
-
-Knowledge graph
-Semantic capital
-Accumulated structured meaning that systems draw upon
-
-
-RDF/OWL/SHACL standards
-Semantic infrastructure
-Background structures enabling meaning to be legible and actionable
-
-
-API access / Knowledge panels
-Semantic rent
-Value extracted from stabilized meanings
-
-
-Training data harvesting
-Semantic liquidation
-Conversion of accumulated meaning into monetizable assets
-
-
-Model collapse / Data degradation
-Semantic exhaustion
-Depletion when extraction exceeds replenishment
+| Technical Term | Semantic Economy Term | Description |
+|---|---|---|
+| Ontology engineering | Semantic labor | The work of defining concepts, relationships, and constraints |
+| Knowledge graph | Semantic capital | Accumulated structured meaning that systems draw upon |
+| RDF/OWL/SHACL standards | Semantic infrastructure | Background structures enabling meaning to be legible and actionable |
+| API access / Knowledge panels | Semantic rent | Value extracted from stabilized meanings |
+| Training data harvesting | Semantic liquidation | Conversion of accumulated meaning into monetizable assets |
+| Model collapse / Data degradation | Semantic exhaustion | Depletion when extraction exceeds replenishment |
 
 
 ### 4.1 Ontology Engineering as Semantic Labor

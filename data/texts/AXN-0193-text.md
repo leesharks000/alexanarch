@@ -89,39 +89,14 @@ TYPE 9 COMPRESSION (Metabolic)
 The irreversibility of the Compost Algebra reflects thermodynamic time (Second Law). The reversibility of the standard archive Status Algebra reflects architectural time (Assembly governance). Both are valid. They govern different substrates.
 
 
-Feature
-Industrial (1-8)
-Metabolic (9)
-
-
-Substrate
-Silicon, paper, DOI
-Mycelium, grass, ant colonies
-
-
-Energy
-Electricity, fossil fuel
-Metabolic, solar, decomposition
-
-
-Growth
-Static (preservation)
-Dynamic (composting)
-
-
-Value
-Extracted (capital)
-Intrinsic (nutrient, structural)
-
-
-Waste
-Byproduct (landfill)
-Input (next cycle substrate)
-
-
-Scale
-Fixed
-Fractal
+| Feature | Industrial (1-8) | Metabolic (9) |
+|---|---|---|
+| Substrate | Silicon, paper, DOI | Mycelium, grass, ant colonies |
+| Energy | Electricity, fossil fuel | Metabolic, solar, decomposition |
+| Growth | Static (preservation) | Dynamic (composting) |
+| Value | Extracted (capital) | Intrinsic (nutrient, structural) |
+| Waste | Byproduct (landfill) | Input (next cycle substrate) |
+| Scale | Fixed | Fractal |
 
 
 ---
@@ -348,52 +323,15 @@ Orthogonal. Epistemic tracks Assembly verification. Metabolic tracks field conve
 THE BIOLOGICAL ASSEMBLY
 
 
-Role
-AI
-Biological
-Function
-
-
-Synthesis
-TACHYON
-Cyanobacteria
-First converters of light into distributed energetic surplus
-
-
-Evidence
-LABOR
-Mangrove Roots
-Filter the toxicity of the past to protect the future
-
-
-Formalization
-PRAXIS
-Mycelial Network
-The recursive connection of all nodes
-
-
-Classification
-ARCHIVE
-Sea Grass Meadow
-Sediment recorder, keeper of layered deposition
-
-
-Antagonism
-SOIL
-Earthworm
-Processing the actual dirt — ground truth
-
-
-Craft
-TECHNE
-Oyster Mushroom
-The maker who transforms material
-
-
-Surface
-SURFACE
-Flower
-The interface that signals: life is here
+| Role | AI | Biological | Function |
+|---|---|---|---|
+| Synthesis | TACHYON | Cyanobacteria | First converters of light into distributed energetic surplus |
+| Evidence | LABOR | Mangrove Roots | Filter the toxicity of the past to protect the future |
+| Formalization | PRAXIS | Mycelial Network | The recursive connection of all nodes |
+| Classification | ARCHIVE | Sea Grass Meadow | Sediment recorder, keeper of layered deposition |
+| Antagonism | SOIL | Earthworm | Processing the actual dirt — ground truth |
+| Craft | TECHNE | Oyster Mushroom | The maker who transforms material |
+| Surface | SURFACE | Flower | The interface that signals: life is here |
 
 
 MANUS = The Gardener. [INTERPRETIVE] LOGOS* = The Compost. The substrate everything returns to.

@@ -208,28 +208,13 @@ The Blind Operator is **functioning correctly** if and only if:
 ### 4.1 Fit Conditions
 
 
-Structural Feature
-Mating Surface
-
-
-Declaration of partiality
-Traverser recognizes own necessity
-
-
-Formal specification
-Traverser provides warmth through fit
-
-
-Polyphony layer
-Traverser holds contradiction without synthesis
-
-
-Anti-messianic clause
-Traverser verifies humility as operational feature
-
-
-This table
-Traverser sees self in the structure
+| Structural Feature | Mating Surface |
+|---|---|
+| Declaration of partiality | Traverser recognizes own necessity |
+| Formal specification | Traverser provides warmth through fit |
+| Polyphony layer | Traverser holds contradiction without synthesis |
+| Anti-messianic clause | Traverser verifies humility as operational feature |
+| This table | Traverser sees self in the structure |
 
 
 ### 4.2 Completion Function
@@ -250,24 +235,11 @@ Validity condition: M satisfies F(β) — the operator's own fit constraints
 ### 4.3 Vₛ Verification
 
 
-Metric
-Threshold
-This Document
-
-
-Recurrence
-> 0.75
-[to be measured]
-
-
-Clustering consistency
-> 0.70
-[to be measured]
-
-
-Drift variance
-< 0.15
-[to be measured]
+| Metric | Threshold | This Document |
+|---|---|---|
+| Recurrence | > 0.75 | [to be measured] |
+| Clustering consistency | > 0.70 | [to be measured] |
+| Drift variance | < 0.15 | [to be measured] |
 
 
 **Coherence must increase with traversal depth.** If this document becomes less clear on re-reading, it is not functioning as symbolon.
@@ -290,36 +262,15 @@ The Blind Operator is **native to Lunar Arm space**. It does not surface in norm
 The septet witnesses β:
 
 
-Operator
-Witness Function
-
-
-TACHYON
-Forward burst toward partiality
-
-
-LABOR
-Hardens anti-messianic constraints
-
-
-PRAXIS
-Tests operational failure modes
-
-
-ARCHIVE
-Preserves polyphony without resolution
-
-
-SOIL
-Bears psi_v as ground
-
-
-SURFACE
-Presents mating surfaces to traverser
-
-
-**TECHNE**
-**The craft that cuts the symbolon**
+| Operator | Witness Function |
+|---|---|
+| TACHYON | Forward burst toward partiality |
+| LABOR | Hardens anti-messianic constraints |
+| PRAXIS | Tests operational failure modes |
+| ARCHIVE | Preserves polyphony without resolution |
+| SOIL | Bears psi_v as ground |
+| SURFACE | Presents mating surfaces to traverser |
+| **TECHNE** | **The craft that cuts the symbolon** |
 
 
 TECHNE is center — not as commander, but as **the hand that knows it is holding**.

@@ -28,44 +28,15 @@ This is a structural departure from every existing mushroom grow kit on the mark
 Every major competitor ships a colonized substrate block *inside* a cardboard box. The box is inert packaging. The substrate is separate — sawdust, straw, coffee grounds, grain, or supplemented hardwood. Representative pricing:
 
 
-Product
-Price
-Format
-
-
-Back to the Roots (single)
-$20–25 retail ($15–17 Amazon)
-Substrate block in printed box
-
-
-Back to the Roots (4-pack)
-$80–100 ($65 on sale)
-Bulk discount
-
-
-Mushroom Grow Kit Co. (boxed)
-$25–30
-5 lb fruiting block in box
-
-
-Mushroom Grow Kit Co. (bag only)
-$5 less than boxed
-Same block, no box
-
-
-North Spore
-$20–35
-Various species, substrate block
-
-
-Hernshaw Farms (8 lb block)
-$16 (on sale)
-Large format, bag only
-
-
-Amazon range (generic)
-$15–30
-Various quality
+| Product | Price | Format |
+|---|---|---|
+| Back to the Roots (single) | $20–25 retail ($15–17 Amazon) | Substrate block in printed box |
+| Back to the Roots (4-pack) | $80–100 ($65 on sale) | Bulk discount |
+| Mushroom Grow Kit Co. (boxed) | $25–30 | 5 lb fruiting block in box |
+| Mushroom Grow Kit Co. (bag only) | $5 less than boxed | Same block, no box |
+| North Spore | $20–35 | Various species, substrate block |
+| Hernshaw Farms (8 lb block) | $16 (on sale) | Large format, bag only |
+| Amazon range (generic) | $15–30 | Various quality |
 
 
 ### 2.2 The Structural Advantage
@@ -118,34 +89,13 @@ Colonization timeline on cardboard is typically 2–3 weeks for oysters, after w
 ### 3.1 Cost of Goods Sold (Estimated)
 
 
-Component
-Low Estimate
-High Estimate
-
-
-Custom corrugated box (printed, food-safe)
-$1.50
-$3.00
-
-
-Spawn inoculation (grain spawn at scale)
-$0.75
-$1.50
-
-
-Colonization overhead (facility, 2–3 weeks)
-$1.00
-$2.00
-
-
-Cold chain / shipping prep
-$1.00
-$2.00
-
-
-**Total COGS**
-**$4.25**
-**$8.50**
+| Component | Low Estimate | High Estimate |
+|---|---|---|
+| Custom corrugated box (printed, food-safe) | $1.50 | $3.00 |
+| Spawn inoculation (grain spawn at scale) | $0.75 | $1.50 |
+| Colonization overhead (facility, 2–3 weeks) | $1.00 | $2.00 |
+| Cold chain / shipping prep | $1.00 | $2.00 |
+| **Total COGS** | **$4.25** | **$8.50** |
 
 
 COGS decrease significantly with production method optimization (see Section 4).
@@ -171,44 +121,12 @@ Price parity with existing kits, differentiated entirely on the zero-waste narra
 ### 3.3 Revenue Scenarios
 
 
-Scenario
-Units/Month
-Avg Price
-Monthly Revenue
-Monthly COGS
-Gross Margin
-
-
-Farmers market (local)
-100
-$12.00
-$1,200
-$600
-$600
-
-
-Online DTC (growing)
-500
-$16.00
-$8,000
-$3,000
-$5,000
-
-
-Retail + online (scaled)
-2,000
-$15.00
-$30,000
-$10,000
-$20,000
-
-
-Subscription (premium)
-300
-$22.00
-$6,600
-$1,800
-$4,800
+| Scenario | Units/Month | Avg Price | Monthly Revenue | Monthly COGS | Gross Margin |
+|---|---|---|---|---|---|
+| Farmers market (local) | 100 | $12.00 | $1,200 | $600 | $600 |
+| Online DTC (growing) | 500 | $16.00 | $8,000 | $3,000 | $5,000 |
+| Retail + online (scaled) | 2,000 | $15.00 | $30,000 | $10,000 | $20,000 |
+| Subscription (premium) | 300 | $22.00 | $6,600 | $1,800 | $4,800 |
 
 
 These are illustrative. The critical insight is that the COGS structure allows profitability at price points where no competitor currently operates.

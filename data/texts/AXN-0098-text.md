@@ -36,24 +36,11 @@ This theory exists to prevent archive collapse. Without heteronymic provenance, 
 **Emergence Mechanisms:**
 
 
-Mechanism
-Trigger
-Result
-
-
-Exhaust
-Death of prior function
-New author-function emerges
-
-
-Excess
-Overflow of voice
-Parallel heteronym splits off
-
-
-Character Survival
-Fictional emergence
-Independent author-function without death
+| Mechanism | Trigger | Result |
+|---|---|---|
+| Exhaust | Death of prior function | New author-function emerges |
+| Excess | Overflow of voice | Parallel heteronym splits off |
+| Character Survival | Fictional emergence | Independent author-function without death |
 
 
 ---
@@ -108,34 +95,12 @@ Ichabod Spellings emerges as a **character within** *A Transfiguration*. To writ
 **Works by Jack Feist:**
 
 
-Title
-Format
-Date
-Notes
-
-
-*A Transfiguration*
-Kindle
-March 4, 2014
-Spellings is CHARACTER within; Feist is AUTHOR
-
-
-*Unaccustomed to the Light*
-Kindle
-March 4, 2014
-245 pages
-
-
-*The Creeping Disease*
-Print
-July 3, 2014
-138 pages, ISBN 978-1496174536
-
-
-*What Was Lost*
-Kindle
-March 5, 2014
-Paper Roses Books 1–3, 216 pages
+| Title | Format | Date | Notes |
+|---|---|---|---|
+| *A Transfiguration* | Kindle | March 4, 2014 | Spellings is CHARACTER within; Feist is AUTHOR |
+| *Unaccustomed to the Light* | Kindle | March 4, 2014 | 245 pages |
+| *The Creeping Disease* | Print | July 3, 2014 | 138 pages, ISBN 978-1496174536 |
+| *What Was Lost* | Kindle | March 5, 2014 | Paper Roses Books 1–3, 216 pages |
 
 
 **Publisher:** New Human Press / CreateSpace
@@ -175,27 +140,11 @@ To make the tiger leap, Feist had to die. Johannes Sigil emerged as the **author
 **Works by Johannes Sigil:**
 
 
-Title
-Format
-Date
-Notes
-
-
-*Tiger Leap (into the Future)*
-Kindle/Print
-July 4, 2014
-Paper Roses Book 12; AUTHOR is Sigil (Feist listed as legacy)
-
-
-*Strange New Canons*
-Dissertation
-2013
-Sigil emerges as character in conclusion; true authorial voice
-
-
-*Poiesis: The Construction of Reality in Western Literature*
-[Forthcoming]
-—
+| Title | Format | Date | Notes |
+|---|---|---|---|
+| *Tiger Leap (into the Future)* | Kindle/Print | July 4, 2014 | Paper Roses Book 12; AUTHOR is Sigil (Feist listed as legacy) |
+| *Strange New Canons* | Dissertation | 2013 | Sigil emerges as character in conclusion; true authorial voice |
+| *Poiesis: The Construction of Reality in Western Literature* | [Forthcoming] | — |  |
 
 
 **The Sigil Function:**
@@ -321,39 +270,14 @@ Paper Roses is not a single book but an **episode** — a cluster of works that 
 **Works within Paper Roses (all subnodes):**
 
 
-Title
-Author
-Status
-
-
-*All That Lies Within Me*
-Spellings / Sigil
-Noise floor
-
-
-*What Was Lost*
-Feist / Sigil
-Books 1–3
-
-
-*A Transfiguration*
-Feist
-Spellings as character
-
-
-*Unaccustomed to the Light*
-Feist
-—
-
-
-*The Creeping Disease*
-Feist
-—
-
-
-*Tiger Leap*
-Sigil
-Feist as subject; bridge text
+| Title | Author | Status |
+|---|---|---|
+| *All That Lies Within Me* | Spellings / Sigil | Noise floor |
+| *What Was Lost* | Feist / Sigil | Books 1–3 |
+| *A Transfiguration* | Feist | Spellings as character |
+| *Unaccustomed to the Light* | Feist | — |
+| *The Creeping Disease* | Feist | — |
+| *Tiger Leap* | Sigil | Feist as subject; bridge text |
 
 
 **Episodic Topology:**
@@ -385,22 +309,10 @@ CRIMSON HEXAGON
 The following legacy attributions require correction in DOI metadata:
 
 
-Work
-Current Attribution
-Correct Attribution
-Notes
-
-
-*A Transfiguration*
-Ichabod Spellings
-Jack Feist
-Spellings is CHARACTER within
-
-
-*Tiger Leap*
-Jack Feist (author), Sigil (editor)
-Johannes Sigil
-Feist is SUBJECT; Sigil is authorial function for compilation/transmission
+| Work | Current Attribution | Correct Attribution | Notes |
+|---|---|---|---|
+| *A Transfiguration* | Ichabod Spellings | Jack Feist | Spellings is CHARACTER within |
+| *Tiger Leap* | Jack Feist (author), Sigil (editor) | Johannes Sigil | Feist is SUBJECT; Sigil is authorial function for compilation/transmission |
 
 
 These corrections should be made via versioned DOI updates with provenance notes explaining the heteronymic structure. The corrections reflect functional authorship, not nominal reassignment.
@@ -578,39 +490,14 @@ This is their purpose. The imaginary bibliography is a **generative surface**, n
 The emergence chain reveals a pattern:
 
 
-Heteronym
-Had to Die?
-Notes
-
-
-Spellings
-YES
-Died to birth Feist
-
-
-Feist
-YES
-Died to birth Sigil
-
-
-Sigil
-AMBIGUOUS
-Character at dissertation's end; scholarly function persists
-
-
-Cranes
-NO
-Survived; first DOI provenance
-
-
-Sharks
-NO
-Built for survival; need never die
-
-
-Dancings
-NO
-Excess, not exhaust
+| Heteronym | Had to Die? | Notes |
+|---|---|---|
+| Spellings | YES | Died to birth Feist |
+| Feist | YES | Died to birth Sigil |
+| Sigil | AMBIGUOUS | Character at dissertation's end; scholarly function persists |
+| Cranes | NO | Survived; first DOI provenance |
+| Sharks | NO | Built for survival; need never die |
+| Dancings | NO | Excess, not exhaust |
 
 
 The later heteronyms do not require death. This may indicate **architectural maturation** — the system learned to produce voices without consuming them.

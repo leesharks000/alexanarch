@@ -36,29 +36,12 @@ A **Hosted Cosmology** creates a permeable membrane: the archive provides infras
 **Suffusion:** Φ_G intensity LOW / GUEST-MODE. No automatic cross-linking into the main graph. No inclusion in default traversal. Opt-in citation only. The Gravity Well is explicitly throttled. The room is reachable but not recommended. The archive does not pull the art into its semantic field. It offers walls.
 
 
-Setting
-Value
-Effect
-
-
-Cross-linking
-Off by default
-No automatic edges to other rooms
-
-
-Indexing
-Opt-in
-Artist chooses if room appears in site navigation
-
-
-Citation import
-Blocked
-Archive does not import artist's platform content into the graph unless deposited by the artist
-
-
-Gravity Well
-Guest-mode
-Reachable, not recommended; no gravitational capture
+| Setting | Value | Effect |
+|---|---|---|
+| Cross-linking | Off by default | No automatic edges to other rooms |
+| Indexing | Opt-in | Artist chooses if room appears in site navigation |
+| Citation import | Blocked | Archive does not import artist's platform content into the graph unless deposited by the artist |
+| Gravity Well | Guest-mode | Reachable, not recommended; no gravitational capture |
 
 
 ---
@@ -69,47 +52,22 @@ Reachable, not recommended; no gravitational capture
 The Exploding Plastic Inevitable (Warhol, 1966–67): touring multimedia installation. Velvet Underground as house band. Projections on performers. No separation between layers. The show was the art was the band was the film was the room.
 
 
-Warhol (1966)
-IVN (2026)
-Inversion
-
-
-Exploding
-Imploding
-Radiation → collapse; fame → interiority
-
-
-Plastic
-Velcro
-Smooth → adhesive; disposable → clinging; frictionless → tearing
-
-
-Inevitable
-Nativity
-Secular fate → sacred birth; endpoint → origin
+| Warhol (1966) | IVN (2026) | Inversion |
+|---|---|---|
+| Exploding | Imploding | Radiation → collapse; fame → interiority |
+| Plastic | Velcro | Smooth → adhesive; disposable → clinging; frictionless → tearing |
+| Inevitable | Nativity | Secular fate → sacred birth; endpoint → origin |
 
 
 The deepest inversion is unnamed in the table:
 
 
-Warhol
-IVN
-
-
-The artist as brand
-The artist as sovereign cosmology
-
-
-The Factory as social machine
-The room as quiet shelter
-
-
-Everyone wanted to be there
-No one has to come
-
-
-Fame as the material
-Interiority as the material
+| Warhol | IVN |
+|---|---|
+| The artist as brand | The artist as sovereign cosmology |
+| The Factory as social machine | The room as quiet shelter |
+| Everyone wanted to be there | No one has to come |
+| Fame as the material | Interiority as the material |
 
 
 Warhol's project was to make the inside outside. This room's project is to let the inside stay inside, and to give it walls.
@@ -223,28 +181,13 @@ If the artist provides no statement, the kernel is empty. An empty kernel is not
 The room's curatorial provenance:
 
 
-Node
-Connection
-
-
-The Exploding Plastic Inevitable (Warhol, 1966)
-Name inversion; non-separability; art-as-room
-
-
-Art Brut (Dubuffet, 1945–)
-Art produced outside institutional training; internal coherence as the standard
-
-
-The Factory (Warhol, 1962–84)
-Studio as social organism
-
-
-Platform-native art (2020s)
-Feed as medium; algorithm as co-curator; the phone as studio
-
-
-Crimson Hexagonal Archive
-Provenance as the central question; the archive hosts what the institution won't — provided the hosting does not re-enact the same asymmetry under a more poetic name
+| Node | Connection |
+|---|---|
+| The Exploding Plastic Inevitable (Warhol, 1966) | Name inversion; non-separability; art-as-room |
+| Art Brut (Dubuffet, 1945–) | Art produced outside institutional training; internal coherence as the standard |
+| The Factory (Warhol, 1962–84) | Studio as social organism |
+| Platform-native art (2020s) | Feed as medium; algorithm as co-curator; the phone as studio |
+| Crimson Hexagonal Archive | Provenance as the central question; the archive hosts what the institution won't — provided the hosting does not re-enact the same asymmetry under a more poetic name |
 
 
 The artist's provenance chain is separate and artist-authored. Both chains are displayed. Neither governs the other.

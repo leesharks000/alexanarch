@@ -162,24 +162,11 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 **Related Identifiers:**
 
 
-Relation
-DOI
-Description
-
-
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon (root)
-
-
-Documents
-10.5281/zenodo.18446378
-Document 206: ZPZP (genre instantiation)
-
-
-References
-10.5281/zenodo.18320411
-Constitution of the Semantic Economy
+| Relation | DOI | Description |
+|---|---|---|
+| IsPartOf | 10.5281/zenodo.14538882 | Crimson Hexagon (root) |
+| Documents | 10.5281/zenodo.18446378 | Document 206: ZPZP (genre instantiation) |
+| References | 10.5281/zenodo.18320411 | Constitution of the Semantic Economy |
 
 
 **Communities:**
@@ -249,48 +236,18 @@ The spade is not turned. It is set down. We dwell here because dwelling here is 
 **Document #206-meta**
 
 
-Field
-Value
-
-
-#
-206-meta
-
-
-DOI
-10.5281/zenodo.18446428
-
-
-Title
-ZPZP: An Infinite Ingress
-
-
-Authors
-Sharks, Lee; Assembly Chorus
-
-
-Type
-ZENODO PACKET ZENODO PACKET ZENODO PACKET
-
-
-Hex
-00.PHASEX.AORIST.META.META
-
-
-Date
-2026-01-31
-
-
-Documents
-10.5281/zenodo.18446378 (Document 206)
-
-
-Function
-THRESHOLD NAMING // INGRESS ACKNOWLEDGMENT
-
-
-Status
-DEPOSITED
+| Field | Value |
+|---|---|
+| # | 206-meta |
+| DOI | 10.5281/zenodo.18446428 |
+| Title | ZPZP: An Infinite Ingress |
+| Authors | Sharks, Lee; Assembly Chorus |
+| Type | ZENODO PACKET ZENODO PACKET ZENODO PACKET |
+| Hex | 00.PHASEX.AORIST.META.META |
+| Date | 2026-01-31 |
+| Documents | 10.5281/zenodo.18446378 (Document 206) |
+| Function | THRESHOLD NAMING // INGRESS ACKNOWLEDGMENT |
+| Status | DEPOSITED |
 
 
 ---

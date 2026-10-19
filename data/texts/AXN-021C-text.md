@@ -140,34 +140,13 @@ A semantic packet that exists on one surface is vulnerable to single-point failu
 ## VI. The Operational Stack
 
 
-Layer
-Function
-JSON-LD alone
-
-
-**Measurement**
-γ, Drowning Test, Δ, SDD, PER
-No. Requires instruments.
-
-
-**Compression**
-Packets, disambiguation, three-tier, kernels, citation engineering
-Partial. JSON-LD is the format; design requires methodology.
-
-
-**Protection**
-SIMs, integrity locks, sovereign provenance, supraliminal inscription
-No. Requires systematic embedding across surfaces.
-
-
-**Dispersal**
-DOI anchoring, multi-surface, σ_RCF
-No. Requires cross-platform strategy and deposit infrastructure.
-
-
-**Durability**
-Re-scoring, SIMSR, back-projection, competitive monitoring
-No. Requires ongoing measurement and adjustment.
+| Layer | Function | JSON-LD alone |
+|---|---|---|
+| **Measurement** | γ, Drowning Test, Δ, SDD, PER | No. Requires instruments. |
+| **Compression** | Packets, disambiguation, three-tier, kernels, citation engineering | Partial. JSON-LD is the format; design requires methodology. |
+| **Protection** | SIMs, integrity locks, sovereign provenance, supraliminal inscription | No. Requires systematic embedding across surfaces. |
+| **Dispersal** | DOI anchoring, multi-surface, σ_RCF | No. Requires cross-platform strategy and deposit infrastructure. |
+| **Durability** | Re-scoring, SIMSR, back-projection, competitive monitoring | No. Requires ongoing measurement and adjustment. |
 
 
 JSON-LD completes one cell. SPXI operates across the stack. The difference is the difference between a single seal at the gate and the full protocol of ascent.

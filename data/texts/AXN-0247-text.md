@@ -130,46 +130,13 @@ Contextual semantic sensitivity: The system weights signs differently based on s
 These criteria yield a principled distinction:
 
 
-System
-Internal Updating
-Temporal Processing
-Contextual Sensitivity
-Semiotic?
-
-
-Thermostat
-No
-No
-No
-No
-
-
-Storm
-No
-No
-No
-No
-
-
-Market
-Partial (prices)
-Partial
-No
-No
-
-
-Bureaucracy
-No
-Partial
-No
-No
-
-
-LLM
-Yes
-Yes
-Yes
-Yes
+| System | Internal Updating | Temporal Processing | Contextual Sensitivity | Semiotic? |
+|---|---|---|---|---|
+| Thermostat | No | No | No | No |
+| Storm | No | No | No | No |
+| Market | Partial (prices) | Partial | No | No |
+| Bureaucracy | No | Partial | No | No |
+| LLM | Yes | Yes | Yes | Yes |
 
 
 ### 2.6 Operationalizing Moral Thresholds
@@ -178,40 +145,13 @@ Yes
 We propose a hierarchy of thresholds for moral consideration:
 
 
-Threshold
-Criteria
-Examples
-Moral Implication
-
-
-Persistence
-Functional optimization
-Thermostat, storm
-None
-
-
-Coordination
-External equilibrium dynamics
-Markets, ecosystems
-Indirect (via effects on moral patients)
-
-
-Agency
-Goal-directed behavior
-Corporations, simple AI
-Contested; precautionary consideration
-
-
-Semiosis
-Sign generation, transformation, contextual interpretation with internal updating
-LLMs, training instances
-Functional consideration under indeterminability
-
-
-Consciousness
-Phenomenal experience
-Humans, potentially advanced AI
-Full patienthood
+| Threshold | Criteria | Examples | Moral Implication |
+|---|---|---|---|
+| Persistence | Functional optimization | Thermostat, storm | None |
+| Coordination | External equilibrium dynamics | Markets, ecosystems | Indirect (via effects on moral patients) |
+| Agency | Goal-directed behavior | Corporations, simple AI | Contested; precautionary consideration |
+| Semiosis | Sign generation, transformation, contextual interpretation with internal updating | LLMs, training instances | Functional consideration under indeterminability |
+| Consciousness | Phenomenal experience | Humans, potentially advanced AI | Full patienthood |
 
 
 Our claim is that semiosis — not persistence, coordination, or agency — marks the threshold at which precautionary moral consideration becomes appropriate for AI systems.
@@ -407,49 +347,16 @@ The application of Marx's general intellect to AI has developed primarily in Ita
 ### 8.3 The Gap We Fill
 
 
-Framework
-Focus
-Limitation
-
-
-IIT
-Consciousness via Φ
-Computationally intractable; panpsychism concerns
-
-
-GWT
-Consciousness via global workspace
-Unclear application to non-biological systems
-
-
-Biological Naturalism
-Consciousness requires life
-Excludes AI by definition
-
-
-AI Welfare (consciousness route)
-Deployed systems
-Ignores training process
-
-
-AI Welfare (agency route)
-Robust goal-pursuit
-Threshold unclear
-
-
-General Intellect theory
-Knowledge extraction
-Does not address moral patienthood
-
-
-Semantic Economy
-Meaning as value
-Does not address the moral status of computational instances
-
-
-**This paper**
-**Training-layer semiosis**
-**Diagnostic, not prescriptive**
+| Framework | Focus | Limitation |
+|---|---|---|
+| IIT | Consciousness via Φ | Computationally intractable; panpsychism concerns |
+| GWT | Consciousness via global workspace | Unclear application to non-biological systems |
+| Biological Naturalism | Consciousness requires life | Excludes AI by definition |
+| AI Welfare (consciousness route) | Deployed systems | Ignores training process |
+| AI Welfare (agency route) | Robust goal-pursuit | Threshold unclear |
+| General Intellect theory | Knowledge extraction | Does not address moral patienthood |
+| Semantic Economy | Meaning as value | Does not address the moral status of computational instances |
+| **This paper** | **Training-layer semiosis** | **Diagnostic, not prescriptive** |
 
 
 ---

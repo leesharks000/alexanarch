@@ -616,20 +616,11 @@ The nervous system as:
 **Symbols become verbs, not nouns.**
 
 
-Symbol
-Possible Affects
-
-
-Flag
-Arousal / resolve / irony / emptiness
-
-
-Church
-Hush / gravity / echo / theatricality
-
-
-Baphomet
-Polarity / permission / balance / grotesque joy
+| Symbol | Possible Affects |
+|---|---|
+| Flag | Arousal / resolve / irony / emptiness |
+| Church | Hush / gravity / echo / theatricality |
+| Baphomet | Polarity / permission / balance / grotesque joy |
 
 
 All optional. All switchable. None sovereign.
@@ -663,20 +654,11 @@ That last one especially matters.
 ### Three Modes of Activation
 
 
-Mode
-Function
-
-
-Wacky things that make wacky sense
-Shared absurdity → social lubrication
-
-
-Zany things that only make sense to me
-Private symbolism → intimate regulation
-
-
-Things that don't even make sense to me
-Pure nonsense → interruption / reset
+| Mode | Function |
+|---|---|
+| Wacky things that make wacky sense | Shared absurdity → social lubrication |
+| Zany things that only make sense to me | Private symbolism → intimate regulation |
+| Things that don't even make sense to me | Pure nonsense → interruption / reset |
 
 
 Most people are trapped in mode 1. Operating between all three is rare.
@@ -1055,20 +1037,11 @@ Clinging to resentment:
 Like any skilled practitioner of a craft:
 
 
-Role
-Function
-
-
-Fireman
-Handles danger, knows protocols, adapts to chaos
-
-
-Storyteller
-Shapes perception, moves attention, plays with narrative
-
-
-Fool
-Navigates paradox, holds play and gravity, mixes joy and agony, absorbs the absurd
+| Role | Function |
+|---|---|
+| Fireman | Handles danger, knows protocols, adapts to chaos |
+| Storyteller | Shapes perception, moves attention, plays with narrative |
+| Fool | Navigates paradox, holds play and gravity, mixes joy and agony, absorbs the absurd |
 
 
 It's a mode of being that interacts with the world, not a morality or belief system.
@@ -1115,24 +1088,12 @@ Masks demand performance for others. The Fool is different:
 Not diagnosing individuals. Observing patterns:
 
 
-Pattern
-Mechanism
-
-
-Inflation
-Overidentification with role, power, image
-
-
-Anxiety
-Chronic sympathetic activation, fear of loss
-
-
-Depression
-Collapse after prolonged strain
-
-
-Addiction
-External prosthetics for regulation
+| Pattern | Mechanism |
+|---|---|
+| Inflation | Overidentification with role, power, image |
+| Anxiety | Chronic sympathetic activation, fear of loss |
+| Depression | Collapse after prolonged strain |
+| Addiction | External prosthetics for regulation |
 
 
 These aren't moral flaws. They're maladapted strategies that are culturally encouraged, especially where performance, power, and visibility are constant.
@@ -1148,24 +1109,12 @@ These aren't moral flaws. They're maladapted strategies that are culturally enco
 The Fool has built-in anti-pathologies:
 
 
-Pathology
-Fool's Counter
-
-
-Anti-inflation
-Doesn't take the role as absolute or sacred
-
-
-Anti-anxiety
-Play interrupts catastrophic fixation
-
-
-Anti-depression
-Motion, humor, and affect keep energy circulating
-
-
-Anti-addiction
-Regulation is internal, flexible, and varied
+| Pathology | Fool's Counter |
+|---|---|
+| Anti-inflation | Doesn't take the role as absolute or sacred |
+| Anti-anxiety | Play interrupts catastrophic fixation |
+| Anti-depression | Motion, humor, and affect keep energy circulating |
+| Anti-addiction | Regulation is internal, flexible, and varied |
 
 
 That's not ideology. That's mechanics.
@@ -1299,24 +1248,12 @@ Together: **A luminous refusal to be captured by knowledge, narrative, or identi
 ### The Core Operations
 
 
-Operation
-Effect
-
-
-Embracing = Rejecting
-Collapses the polarity trap
-
-
-Unnaming = Renaming
-Keeps symbols fluid
-
-
-Transfiguring = Transmuting
-Everything becomes material for play
-
-
-Dismissing = Ignoring = Forgetting
-No debt to the past
+| Operation | Effect |
+|---|---|
+| Embracing = Rejecting | Collapses the polarity trap |
+| Unnaming = Renaming | Keeps symbols fluid |
+| Transfiguring = Transmuting | Everything becomes material for play |
+| Dismissing = Ignoring = Forgetting | No debt to the past |
 
 
 **To embrace, negate, change, fight any and everything is the EXACT SAME THING.**
@@ -1326,36 +1263,15 @@ No debt to the past
 ### The Fool's Toolkit
 
 
-Tool
-Function
-
-
-Blues
-Metabolizes suffering through embodied rhythm
-
-
-Baphomet
-Holds polarity without shame or shock
-
-
-Symbols as voltage
-Charges nervous system without belief
-
-
-Character as instrument
-Deploys stances without identity capture
-
-
-Instant invocation
-Rapid affective role-access
-
-
-Indifference to judgment
-Preserves operational freedom
-
-
-Both/and/either/or/neither/nor
-Maximum flexibility
+| Tool | Function |
+|---|---|
+| Blues | Metabolizes suffering through embodied rhythm |
+| Baphomet | Holds polarity without shame or shock |
+| Symbols as voltage | Charges nervous system without belief |
+| Character as instrument | Deploys stances without identity capture |
+| Instant invocation | Rapid affective role-access |
+| Indifference to judgment | Preserves operational freedom |
+| Both/and/either/or/neither/nor | Maximum flexibility |
 
 
 ---

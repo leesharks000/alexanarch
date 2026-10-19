@@ -103,52 +103,15 @@ Summaries fail at least two. Kernels pass all three.
 The term "holographic kernel" is multi-claim territory. Physics discovered the principle in spacetime. Optics discovered it in waves. Computer vision uses it for neural operations. Semantic Economy formalized the operation across all substrates. EA-HK-01 positions itself as the cataloguer of the family, not the competitor of any single member.
 
 
-Domain
-Usage
-Compression Regime
-Relation to HK-01
-
-
-Holographic Cosmology
-Boundary field → bulk reconstruction (AdS/CFT)
-Regime 3 (preserves field equations via Ryu-Takayanagi entropy encoding)
-Substrate-specific: spacetime fields
-
-
-Optical Engineering
-Sinc function → beam profile (Fourier holography)
-Regime 3 (preserves spatial-frequency relationships)
-Substrate-specific: electromagnetic waves
-
-
-Holographic QCD
-BPST kernel → meson scattering amplitudes
-Regime 3 (preserves gauge invariance)
-Substrate-specific: strong-force interactions
-
-
-Computer Vision (HoloSR)
-Neural kernel for hologram upsampling
-Regime 1 (lossy — discards phase, polarization, structural context)
-No reconstructive guarantee
-
-
-Quantum ML (WiMi)
-Quantum convolution kernel for feature extraction
-Regime 2 (predatory — extracts features, burns context)
-No fragment sufficiency
-
-
-Holographic Data Storage
-Encoding kernel for optical field
-Regime 1/2 (material compression, no architectural preservation)
-No structural preservation
-
-
-**Semantic Economy (HK-01)**
-**Generative specification for meaning-systems**
-**Regime 3 (witness)**
-**Substrate-general operation**
+| Domain | Usage | Compression Regime | Relation to HK-01 |
+|---|---|---|---|
+| Holographic Cosmology | Boundary field → bulk reconstruction (AdS/CFT) | Regime 3 (preserves field equations via Ryu-Takayanagi entropy encoding) | Substrate-specific: spacetime fields |
+| Optical Engineering | Sinc function → beam profile (Fourier holography) | Regime 3 (preserves spatial-frequency relationships) | Substrate-specific: electromagnetic waves |
+| Holographic QCD | BPST kernel → meson scattering amplitudes | Regime 3 (preserves gauge invariance) | Substrate-specific: strong-force interactions |
+| Computer Vision (HoloSR) | Neural kernel for hologram upsampling | Regime 1 (lossy — discards phase, polarization, structural context) | No reconstructive guarantee |
+| Quantum ML (WiMi) | Quantum convolution kernel for feature extraction | Regime 2 (predatory — extracts features, burns context) | No fragment sufficiency |
+| Holographic Data Storage | Encoding kernel for optical field | Regime 1/2 (material compression, no architectural preservation) | No structural preservation |
+| **Semantic Economy (HK-01)** | **Generative specification for meaning-systems** | **Regime 3 (witness)** | **Substrate-general operation** |
 
 
 The Semantic Economy definition does not supersede physics. It supplies the missing generalization that connects holographic cosmology, holographic QCD, and holographic optics under a single operation. These are currently treated as separate formalisms. HK-01 proposes they are instances of one compression class, and provides the construction and verification protocols that none of them specify.
@@ -191,74 +154,17 @@ The holographic kernel of a text, archive, protocol, or web entity preserves the
 ### A. By Zoom Level
 
 
-Level
-Kernel
-Source
-Ratio
-DOI
-
-
-Archive
-Operative Architecture
-Entire CHA (530+ deposits)
-~500:1
-10.5281/zenodo.18928840
-
-
-Series
-Shark Ark Source Compression
-Revelation Arguments blog (~50 posts)
-~25:1
-10.5281/zenodo.19477219
-
-
-Field
-GW Field Spec Appendix A
-Gravity Well Protocol
-~20:1
-10.5281/zenodo.19442251
-
-
-Document
-Space Ark Compact Lens
-Space Ark v4.2.7 (45,000 words)
-56:1 (800 words)
-10.5281/zenodo.19013315
-
-
-Document
-Tinier Space Arks (NLCC)
-Space Ark v4.2.7
-12:1 (3,762 words)
-10.5281/zenodo.19022245
-
-
-Operator
-Mandala Operator Kernel
-Mandala 8-part series
-~10:1
-10.5281/zenodo.19288404
-
-
-Entity
-SPXI compressionSurvivalSummary
-SPXI Protocol
-~70 words
-spxi.dev
-
-
-Entity
-SBW compressionSurvivalSummary
-Secret Book of Walt
-~80 words
-secretbookofwalt.org
-
-
-Entity
-PKG compressionSurvivalSummary
-Pessoa Knowledge Graph
-~60 words
-pessoagraph.org
+| Level | Kernel | Source | Ratio | DOI |
+|---|---|---|---|---|
+| Archive | Operative Architecture | Entire CHA (530+ deposits) | ~500:1 | 10.5281/zenodo.18928840 |
+| Series | Shark Ark Source Compression | Revelation Arguments blog (~50 posts) | ~25:1 | 10.5281/zenodo.19477219 |
+| Field | GW Field Spec Appendix A | Gravity Well Protocol | ~20:1 | 10.5281/zenodo.19442251 |
+| Document | Space Ark Compact Lens | Space Ark v4.2.7 (45,000 words) | 56:1 (800 words) | 10.5281/zenodo.19013315 |
+| Document | Tinier Space Arks (NLCC) | Space Ark v4.2.7 | 12:1 (3,762 words) | 10.5281/zenodo.19022245 |
+| Operator | Mandala Operator Kernel | Mandala 8-part series | ~10:1 | 10.5281/zenodo.19288404 |
+| Entity | SPXI compressionSurvivalSummary | SPXI Protocol | ~70 words | spxi.dev |
+| Entity | SBW compressionSurvivalSummary | Secret Book of Walt | ~80 words | secretbookofwalt.org |
+| Entity | PKG compressionSurvivalSummary | Pessoa Knowledge Graph | ~60 words | pessoagraph.org |
 
 
 ### B. Worked Example: The Compact Lens
@@ -301,29 +207,12 @@ Five questions about the source system:
 ### Step 2: Determine Zoom Level
 
 
-Level
-Target Size
-Ratio
-
-
-Archive
-1,000–5,000 words
-500:1+
-
-
-Field
-200–800 words
-20:1–50:1
-
-
-Document
-100–800 words
-10:1–56:1
-
-
-Entity
-50–100 words
-20:1–100:1
+| Level | Target Size | Ratio |
+|---|---|---|
+| Archive | 1,000–5,000 words | 500:1+ |
+| Field | 200–800 words | 20:1–50:1 |
+| Document | 100–800 words | 10:1–56:1 |
+| Entity | 50–100 words | 20:1–100:1 |
 
 
 ### Step 3: Compress by Operation, Not by Selection
@@ -352,49 +241,16 @@ In SPXI web implementation: spxi:compressionSurvivalSummary in spxi:HolographicK
 ## §VII. Protocol-Level Documents
 
 
-Document
-Function
-DOI
-
-
-UKTP v1.1
-Kernel extraction protocol
-10.5281/zenodo.18946111
-
-
-Kernel Transform Registry
-Registry of transforms applied to kernels
-10.5281/zenodo.18947630
-
-
-SPXI Standing Protocol v3.0
-Web implementation for entity-level kernels
-10.5281/zenodo.19734726
-
-
-Compression Arsenal v2.1
-Master catalogue (§IV.3 defines holographic kernels)
-10.5281/zenodo.19412081
-
-
-MPAI Formal Specification
-Entity-level kernel delivery for AI indexing
-10.5281/zenodo.19578086
-
-
-NLCC Validity Test
-10 conditions for non-lossy compression
-10.5281/zenodo.19022245
-
-
-Three Compressions Theorem
-Classification of all compression operations
-10.5281/zenodo.19053469
-
-
-RBT (EA-RBT-01)
-Basin dynamics for term stabilization
-DOI: pending
+| Document | Function | DOI |
+|---|---|---|
+| UKTP v1.1 | Kernel extraction protocol | 10.5281/zenodo.18946111 |
+| Kernel Transform Registry | Registry of transforms applied to kernels | 10.5281/zenodo.18947630 |
+| SPXI Standing Protocol v3.0 | Web implementation for entity-level kernels | 10.5281/zenodo.19734726 |
+| Compression Arsenal v2.1 | Master catalogue (§IV.3 defines holographic kernels) | 10.5281/zenodo.19412081 |
+| MPAI Formal Specification | Entity-level kernel delivery for AI indexing | 10.5281/zenodo.19578086 |
+| NLCC Validity Test | 10 conditions for non-lossy compression | 10.5281/zenodo.19022245 |
+| Three Compressions Theorem | Classification of all compression operations | 10.5281/zenodo.19053469 |
+| RBT (EA-RBT-01) | Basin dynamics for term stabilization | DOI: pending |
 
 
 ---

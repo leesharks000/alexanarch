@@ -56,39 +56,14 @@ The error persisted from late 2022 through mid-2024, with partial mitigation in 
 The strawberry problem achieved unprecedented circulation for a model failure:
 
 
-Metric
-Estimate
-Period
-
-
-Social media impressions (TikTok, X, Reddit, YouTube)
-200M+
-2023–2024
-
-
-Reddit threads (r/ChatGPT, r/MachineLearning)
-1,200+
-2023–2024
-
-
-Academic papers citing letter-count failures
-15+
-2023–2025
-
-
-YouTube explainer videos
-50+
-Many exceeding 1M views
-
-
-Time from ChatGPT launch to first viral instance
-~3 months
-Dec 2022 → Mar 2023
-
-
-Duration of persistence across major models
-18+ months
-Partial mitigation, not elimination
+| Metric | Estimate | Period |
+|---|---|---|
+| Social media impressions (TikTok, X, Reddit, YouTube) | 200M+ | 2023–2024 |
+| Reddit threads (r/ChatGPT, r/MachineLearning) | 1,200+ | 2023–2024 |
+| Academic papers citing letter-count failures | 15+ | 2023–2025 |
+| YouTube explainer videos | 50+ | Many exceeding 1M views |
+| Time from ChatGPT launch to first viral instance | ~3 months | Dec 2022 → Mar 2023 |
+| Duration of persistence across major models | 18+ months | Partial mitigation, not elimination |
 
 
 By mid-2024, "strawberry" had become metonymic shorthand for the gap between LLM fluency and symbolic reasoning capacity.

@@ -158,39 +158,14 @@ Both operations serve the same function: the interface governs what is recogniza
 The two modes form a pair:
 
 
-Mode
-TL;DR:009
-TL;DR:010
-
-
-Operation
-Entity fabrication
-Semantic override
-
-
-What is governed
-Who is real (personhood)
-What a phrase means (provenance)
-
-
-Operator
-O9 (Ontological Override)
-O1 (Predatory Substitution) + O7 (Lossy Genericization)
-
-
-What the AI produces
-A fictional biography for a real function
-A generic summary for a specific deposit
-
-
-What the AI suppresses
-The actual author
-The actual provenance
-
-
-Reversibility
-Only by the author
-Only by the depositor
+| Mode | TL;DR:009 | TL;DR:010 |
+|---|---|---|
+| Operation | Entity fabrication | Semantic override |
+| What is governed | Who is real (personhood) | What a phrase means (provenance) |
+| Operator | O9 (Ontological Override) | O1 (Predatory Substitution) + O7 (Lossy Genericization) |
+| What the AI produces | A fictional biography for a real function | A generic summary for a specific deposit |
+| What the AI suppresses | The actual author | The actual provenance |
+| Reversibility | Only by the author | Only by the depositor |
 
 
 ---

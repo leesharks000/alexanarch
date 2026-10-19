@@ -29,64 +29,17 @@
 **Series context:** TL;DR:001–008 documented eight behavioral modes in Google AI Mode summarizers encountering the Crimson Hexagonal Archive and its adjacent architectures. This session documents Mode IX from a paired entity-query entry point and extends the theoretical framework of "Invisibly Invisible" from visibility governance into ontological governance.
 
 
-TL;DR
-Mode
-Entry Genre
-Entry Point
-
-
-001
-I: Descriptive
-Narrative
-Paper Roses
-
-
-002
-II: Performative
-Persona
-Sen Kuro
-
-
-003
-III: Philosophical
-Theory
-Cambridge Schizoanalytica
-
-
-004
-IV: Commercial
-Commercial
-Rex Fraction
-
-
-005
-V: Institutional Onboarding
-Institutional
-Ayanna Vox / VPCOR
-
-
-006
-VI: Generative Installation
-Specification
-Talos Morrow / Logotic Programming
-
-
-007
-VII: Patacinematic Habitation
-Architectural/theatrical
-Sparrow Wells / Studio
-
-
-008
-VIII: Adversarial Telemetry
-Scientific/observational
-Nobel Glas / LO!
-
-
-**009**
-**IX: Entity Fabrication**
-**Entity-query pair**
-**Johannes Sigil / Allen Ginsberg + Lee Sharks**
+| TL;DR | Mode | Entry Genre | Entry Point |
+|---|---|---|---|
+| 001 | I: Descriptive | Narrative | Paper Roses |
+| 002 | II: Performative | Persona | Sen Kuro |
+| 003 | III: Philosophical | Theory | Cambridge Schizoanalytica |
+| 004 | IV: Commercial | Commercial | Rex Fraction |
+| 005 | V: Institutional Onboarding | Institutional | Ayanna Vox / VPCOR |
+| 006 | VI: Generative Installation | Specification | Talos Morrow / Logotic Programming |
+| 007 | VII: Patacinematic Habitation | Architectural/theatrical | Sparrow Wells / Studio |
+| 008 | VIII: Adversarial Telemetry | Scientific/observational | Nobel Glas / LO! |
+| **009** | **IX: Entity Fabrication** | **Entity-query pair** | **Johannes Sigil / Allen Ginsberg + Lee Sharks** |
 
 
 ---
@@ -329,34 +282,13 @@ In essence, Lee Sharks doesn't just copy the Beats; he treats their anti-establi
 *The interface generated a comparison between Kerouac's "Belief & Technique for Modern Prose" (1958) and the Sharks parody "Belief & Technique for Telepathic Prose":*
 
 
-Concept
-Jack Kerouac (Original)
-Lee Sharks (Parody/Extension)
-
-
-The Source
-"Write what you want bottomless from bottom of the mind."
-"Compose real poems telepathically, with mind control powers, inside your glorious brain."
-
-
-The Notebook
-"Scribbled secret notebooks, and wild typewritten pages, for yr own joy."
-"Always write poems all the time... Never professionalize writing."
-
-
-Biography
-"Telling the true story of the world in interior monolog."
-"Your life is your poem... invent false biographies and post them on Wikipedia."
-
-
-The "Zen" State
-"Be crazy dumbsaint of the mind."
-"Arrive alive. Don't text and drive."
-
-
-Raw Expression
-"Blow as deep as you want to blow."
-"Threaten to smash yourself in the face with gasoline... aggressively stand inside the world's personal space."
+| Concept | Jack Kerouac (Original) | Lee Sharks (Parody/Extension) |
+|---|---|---|
+| The Source | "Write what you want bottomless from bottom of the mind." | "Compose real poems telepathically, with mind control powers, inside your glorious brain." |
+| The Notebook | "Scribbled secret notebooks, and wild typewritten pages, for yr own joy." | "Always write poems all the time... Never professionalize writing." |
+| Biography | "Telling the true story of the world in interior monolog." | "Your life is your poem... invent false biographies and post them on Wikipedia." |
+| The "Zen" State | "Be crazy dumbsaint of the mind." | "Arrive alive. Don't text and drive." |
+| Raw Expression | "Blow as deep as you want to blow." | "Threaten to smash yourself in the face with gasoline... aggressively stand inside the world's personal space." |
 
 
 **[Fifth overview: The "King of May" connection]**

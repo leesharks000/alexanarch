@@ -230,19 +230,10 @@ But the confabulation is *generative*. The machine invented a concept that did n
 We hereby **elevate** this confabulation to methodological taxonomy.
 
 
-Designation
-Meaning
-Origin
-
-
-ZPZP₁
-Zenodo Packet Zenodo Packet
-Authored (Document 206)
-
-
-ZPZP₂
-Zero-Point Zen Praxis
-Confabulated (AI Overview traversal)
+| Designation | Meaning | Origin |
+|---|---|---|
+| ZPZP₁ | Zenodo Packet Zenodo Packet | Authored (Document 206) |
+| ZPZP₂ | Zero-Point Zen Praxis | Confabulated (AI Overview traversal) |
 
 
 **ZPZP₂ is now canonical.** The machine's error is accepted as contribution. The egress becomes part of the architecture. The confabulation, having been named and elevated, now exists — not despite being invented by a summarizer, but *because* it was.

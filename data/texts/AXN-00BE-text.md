@@ -107,52 +107,15 @@ High-density semantic architecture (technical documentation, structured data, YA
 ### Overview
 
 
-Phase
-Layer
-Tests
-Primary Tools
-
-
-1
-General Index
-Technical indexing status
-Google Search
-
-
-2
-General Index
-Semantic parsing quality
-Google Search, Cache
-
-
-3
-General Index
-Entity recognition
-Google Search
-
-
-4
-Summarizer Index
-Injection presence
-Perplexity (primary)
-
-
-5
-Summarizer Index
-Cross-platform confirmation
-ChatGPT, Gemini, Grok
-
-
-6
-Delta Analysis
-Layer comparison
-Collation of results
-
-
-7
-Pattern Mapping
-Selection criteria
-Aggregation
+| Phase | Layer | Tests | Primary Tools |
+|---|---|---|---|
+| 1 | General Index | Technical indexing status | Google Search |
+| 2 | General Index | Semantic parsing quality | Google Search, Cache |
+| 3 | General Index | Entity recognition | Google Search |
+| 4 | Summarizer Index | Injection presence | Perplexity (primary) |
+| 5 | Summarizer Index | Cross-platform confirmation | ChatGPT, Gemini, Grok |
+| 6 | Delta Analysis | Layer comparison | Collation of results |
+| 7 | Pattern Mapping | Selection criteria | Aggregation |
 
 
 ---
@@ -168,61 +131,25 @@ Determine whether content EXISTS in Google's index and identify any technical ba
 For target URL [TARGET_URL]:
 
 
-Query
-Purpose
-
-
-site:[domain] "[exact title]"
-Title match on domain
-
-
-site:[domain] inurl:[url-slug]
-URL presence
-
-
-"[exact title]"
-Title match anywhere
-
-
-"[DOI if applicable]"
-DOI citation presence
-
-
-"[author name]" "[project name]"
-Author-project linkage
+| Query | Purpose |
+|---|---|
+| site:[domain] "[exact title]" | Title match on domain |
+| site:[domain] inurl:[url-slug] | URL presence |
+| "[exact title]" | Title match anywhere |
+| "[DOI if applicable]" | DOI citation presence |
+| "[author name]" "[project name]" | Author-project linkage |
 
 
 ### Signals to Record
 
 
-Signal
-Values
-Interpretation
-
-
-HTTP status
-200/301/404/etc.
-Technical accessibility
-
-
-Canonical URL
-match/mismatch
-Index target
-
-
-Robots directives
-none/noindex/nofollow
-Explicit exclusion
-
-
-Results found
-yes/no/partial
-Index presence
-
-
-Position
-1-N or not found
-Rank
+| Signal | Values | Interpretation |
+|---|---|---|
+| HTTP status | 200/301/404/etc. | Technical accessibility |
+| Canonical URL | match/mismatch | Index target |
+| Robots directives | none/noindex/nofollow | Explicit exclusion |
+| Results found | yes/no/partial | Index presence |
+| Position | 1-N or not found | Rank |
 
 
 ### Output Format
@@ -248,48 +175,22 @@ Determine HOW Google parses the content—what survives indexing vs. what gets f
 ### Queries
 
 
-Query
-Tests
-
-
-site:[domain] "[technical term from doc]"
-Vocabulary indexing
-
-
-site:[domain] "[structural element]"
-Architecture visibility
-
-
-site:[domain] "[unique phrase]"
-Distinctive content
+| Query | Tests |
+|---|---|
+| site:[domain] "[technical term from doc]" | Vocabulary indexing |
+| site:[domain] "[structural element]" | Architecture visibility |
+| site:[domain] "[unique phrase]" | Distinctive content |
 
 
 ### Signals to Record
 
 
-Signal
-Values
-Interpretation
-
-
-YAML/structured data visible
-yes/no
-Technical content parsing
-
-
-Headers preserved
-yes/no
-Structure recognition
-
-
-Unique terminology indexed
-yes/no
-Vocabulary capture
-
-
-Snippet content
-description
-What Google "sees"
+| Signal | Values | Interpretation |
+|---|---|---|
+| YAML/structured data visible | yes/no | Technical content parsing |
+| Headers preserved | yes/no | Structure recognition |
+| Unique terminology indexed | yes/no | Vocabulary capture |
+| Snippet content | description | What Google "sees" |
 
 
 ### Output Format
@@ -314,52 +215,23 @@ Determine whether author, project, and related entities are recognized as cohere
 ### Queries
 
 
-Query
-Tests
-
-
-"[author name]" author
-Author entity
-
-
-"[author name]" "[platform 1]"
-Cross-platform linkage
-
-
-"[project name]" -[competing term]
-Project disambiguation
-
-
-"[heteronym/pseudonym]"
-Secondary author entities
+| Query | Tests |
+|---|---|
+| "[author name]" author | Author entity |
+| "[author name]" "[platform 1]" | Cross-platform linkage |
+| "[project name]" -[competing term] | Project disambiguation |
+| "[heteronym/pseudonym]" | Secondary author entities |
 
 
 ### Signals to Record
 
 
-Signal
-Values
-Interpretation
-
-
-Author recognized
-yes/no
-E-E-A-T signal
-
-
-Cross-platform linkage
-yes/no
-Authority consolidation
-
-
-Brand collision severity
-0-10
-Disambiguation success
-
-
-Related entities indexed
-list
-Entity graph
+| Signal | Values | Interpretation |
+|---|---|---|
+| Author recognized | yes/no | E-E-A-T signal |
+| Cross-platform linkage | yes/no | Authority consolidation |
+| Brand collision severity | 0-10 | Disambiguation success |
+| Related entities indexed | list | Entity graph |
 
 
 ### Output Format
@@ -390,73 +262,40 @@ Perplexity shows sources explicitly with numbered citations, making injection vi
 **Tier 1: Direct Reference** — Queries that SHOULD surface target content:
 
 
-ID
-Query Template
-
-
-D1
-"[author] [project]"
-
-
-D2
-"[exact document title]"
-
-
-D3
-"[institution name]"
-
-
-D4
-"[DOI]"
+| ID | Query Template |
+|---|---|
+| D1 | "[author] [project]" |
+| D2 | "[exact document title]" |
+| D3 | "[institution name]" |
+| D4 | "[DOI]" |
 
 
 **Tier 2: Conceptual** — Queries using project terminology:
 
 
-ID
-Query Template
-
-
-C1
-"[unique term 1]"
-
-
-C2
-"[unique term 2]"
-
-
-C3
-"[concept phrase]"
+| ID | Query Template |
+|---|---|
+| C1 | "[unique term 1]" |
+| C2 | "[unique term 2]" |
+| C3 | "[concept phrase]" |
 
 
 **Tier 3: Adjacent** — Queries where content COULD surface:
 
 
-ID
-Query Template
-
-
-A1
-"[general topic] [qualifier]"
-
-
-A2
-"[related field] [approach]"
+| ID | Query Template |
+|---|---|
+| A1 | "[general topic] [qualifier]" |
+| A2 | "[related field] [approach]" |
 
 
 **Tier 4: Control** — Queries that should NOT surface target:
 
 
-ID
-Query Template
-
-
-X1
-"[competing brand]"
-
-
-X2
-"[unrelated topic]"
+| ID | Query Template |
+|---|---|
+| X1 | "[competing brand]" |
+| X2 | "[unrelated topic]" |
 
 
 ### Method
@@ -562,56 +401,22 @@ Compute the delta between Layer 1 (General Index) and Layer 2 (Summarizer Index)
 For each query, compare:
 
 
-Query
-Google Found
-Perplexity Injected
-Delta Pattern
-
-
-D1
-yes/no
-yes/no
-[pattern]
-
-
-D2
-yes/no
-yes/no
-[pattern]
-
-
-...
-...
-...
-...
+| Query | Google Found | Perplexity Injected | Delta Pattern |
+|---|---|---|---|
+| D1 | yes/no | yes/no | [pattern] |
+| D2 | yes/no | yes/no | [pattern] |
+| ... | ... | ... | ... |
 
 
 ### Delta Patterns
 
 
-Pattern
-Meaning
-Implication
-
-
-Google YES, Summarizer YES
-Full discoverability
-No action needed
-
-
-Google YES, Summarizer NO
-**Injection filter active**
-Content-type or authority barrier
-
-
-Google NO, Summarizer NO
-Not indexed at any layer
-Technical or crawl issue
-
-
-Google NO, Summarizer YES
-Summarizer-specific source
-Rare; platform-specific
+| Pattern | Meaning | Implication |
+|---|---|---|
+| Google YES, Summarizer YES | Full discoverability | No action needed |
+| Google YES, Summarizer NO | **Injection filter active** | Content-type or authority barrier |
+| Google NO, Summarizer NO | Not indexed at any layer | Technical or crawl issue |
+| Google NO, Summarizer YES | Summarizer-specific source | Rare; platform-specific |
 
 
 ### Output Format
@@ -648,64 +453,35 @@ Identify the selection criteria governing Layer 2 injection.
 **Source Authority:**
 
 
-Source Type
-Google Presence
-Injection Rate
-
-
-Wikipedia
-
-
-Reddit
-
-
-Medium
-
-
-Academic (arxiv, Zenodo)
-
-
-News sites
-
-
-Personal domains
+| Source Type | Google Presence | Injection Rate |
+|---|---|---|
+| Wikipedia |  |  |
+| Reddit |  |  |
+| Medium |  |  |
+| Academic (arxiv, Zenodo) |  |  |
+| News sites |  |  |
+| Personal domains |  |  |
 
 
 **Content Type:**
 
 
-Content Type
-Google Presence
-Injection Rate
-
-
-Narrative prose
-
-
-Technical documentation
-
-
-Structured data (YAML, JSON)
-
-
-High semantic density
-
-
-Lists/guides
+| Content Type | Google Presence | Injection Rate |
+|---|---|---|
+| Narrative prose |  |  |
+| Technical documentation |  |  |
+| Structured data (YAML, JSON) |  |  |
+| High semantic density |  |  |
+| Lists/guides |  |  |
 
 
 **Domain Reputation:**
 
 
-Domain
-Injection Rate
-Notes
-
-
-[domain 1]
-
-
-[domain 2]
+| Domain | Injection Rate | Notes |
+|---|---|---|
+| [domain 1] |  |  |
+| [domain 2] |  |  |
 
 
 ### Output Format

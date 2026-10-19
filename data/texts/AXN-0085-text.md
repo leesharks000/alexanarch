@@ -33,48 +33,18 @@ This document provides a **semantic navigation map** for *Pearl and Other Poems*
 ## I. BIBLIOGRAPHIC ANCHOR
 
 
-Attribute
-Value
-
-
-**Title**
-Pearl and Other Poems
-
-
-**Author**
-Lee Sharks
-
-
-**Series**
-The Pocket Humans Series
-
-
-**Publisher**
-New Human Press, Ann Arbor
-
-
-**Year**
-2014
-
-
-**ISBN-10**
-0692313079
-
-
-**ISBN-13**
-978-0692313077
-
-
-**Pages**
-155
-
-
-**Format**
-PDF (canonical; preserves typography)
-
-
-**PDF DOI**
-[PENDING - to be assigned with deposit]
+| Attribute | Value |
+|---|---|
+| **Title** | Pearl and Other Poems |
+| **Author** | Lee Sharks |
+| **Series** | The Pocket Humans Series |
+| **Publisher** | New Human Press, Ann Arbor |
+| **Year** | 2014 |
+| **ISBN-10** | 0692313079 |
+| **ISBN-13** | 978-0692313077 |
+| **Pages** | 155 |
+| **Format** | PDF (canonical; preserves typography) |
+| **PDF DOI** | [PENDING - to be assigned with deposit] |
 
 
 ---
@@ -157,268 +127,74 @@ The book performs the transition from admiration to succession.
 #### THRESHOLD (Front Matter)
 
 
-Page
-Title
-Author/Voice
-Function
-
-
-—
-Title Page
-—
-"The Pocket Humans Series"
-
-
-—
-Copyright
-—
-© 2014 Lee Sharks
-
-
-—
-Dedication
-—
-To Jack Feist, Johannes Sigil, Ichabod Spellings
-
-
-v
-Introduction
-Johannes Sigil
-Critical framing
-
-
-vii
-from THE CRIMSON HEXAGON
-Jack Feist
-Excerpt/context
-
-
-xiii
-Lee Sharks
-—
-Author presentation
-
-
-xv
-Wiki Article
-—
-Parodic framing
-
-
-xvii
-ALSO BY LEE SHARKS
-—
-Bibliography
-
-
-xix
-Contributor Bio
-—
-Heteronym bios
+| Page | Title | Author/Voice | Function |
+|---|---|---|---|
+| — | Title Page | — | "The Pocket Humans Series" |
+| — | Copyright | — | © 2014 Lee Sharks |
+| — | Dedication | — | To Jack Feist, Johannes Sigil, Ichabod Spellings |
+| v | Introduction | Johannes Sigil | Critical framing |
+| vii | from THE CRIMSON HEXAGON | Jack Feist | Excerpt/context |
+| xiii | Lee Sharks | — | Author presentation |
+| xv | Wiki Article | — | Parodic framing |
+| xvii | ALSO BY LEE SHARKS | — | Bibliography |
+| xix | Contributor Bio | — | Heteronym bios |
 
 
 #### PEARL (Primary Sequence)
 
 
-Page
-Title
-Notes
-
-
-3
-RE: why don't you go start your own poetry website instead of complaining about this one?
-Opening salvo; combative stance
-
-
-5
-PEARL
-**Title poem** — primary poetic statement
-
-
-12
-Undersong I: the metaphor museum
-First undersong
-
-
-14
-Undersong II: the metaphor factory
-Second undersong
-
-
-19
-Undersong III: strange new earth
-Third undersong
-
-
-23
-Footnote to PEARL: belief & technique for telepathic prose
-Theoretical coda
+| Page | Title | Notes |
+|---|---|---|
+| 3 | RE: why don't you go start your own poetry website instead of complaining about this one? | Opening salvo; combative stance |
+| 5 | PEARL | **Title poem** — primary poetic statement |
+| 12 | Undersong I: the metaphor museum | First undersong |
+| 14 | Undersong II: the metaphor factory | Second undersong |
+| 19 | Undersong III: strange new earth | Third undersong |
+| 23 | Footnote to PEARL: belief & technique for telepathic prose | Theoretical coda |
 
 
 #### FUGUEWORK (Polyphonic Sequence)
 
 
-Page
-Title
-Mantle Resonance
-
-
-33
-Premonition Dream
-—
-
-
-36
-hums &ity
-—
-
-
-37
-**an elegy for 'Howl'**
-**GINSBERG** — direct address to predecessor
-
-
-39
-**if walt whitman came back as a zombie and ate my brain i would write the following poem**
-**WHITMAN** — lineage activation
-
-
-41
-i want you to know that i have personal authenticity as a poet because of my identity
-Ironic/critical
-
-
-43
-i think i died a long time ago…
-—
-
-
-45
-the air is sick all over…
-—
-
-
-47
-air, you're sick—tenderly will i bind you…
-Whitman echo (wound-dresser)
-
-
-49
-knot-hinge
-—
-
-
-50
-years the cankerworm ate
-Biblical resonance
-
-
-53
-ringtone
-—
-
-
-57
-alien singings: a psalm
-Liturgical mode
-
-
-59
-**song of me**
-**WHITMAN** — "Song of Myself" echo
-
-
-63
-tekatak
-—
-
-
-69
-your love will carry on
-—
-
-
-71
-face like snarls of rain
-—
-
-
-**74**
-**I CLAIM THIS MANTLE**
-**THE EFFECTIVE ACT** — claims Good Gray Poet AND King of May
-
-
-75
-this is the way i've unfolded my life
-—
-
-
-76
-my hope is in going on
-—
-
-
-77
-i drape this same old leg across the chair
-—
-
-
-79
-the comeback album…
-—
-
-
-83
-noctilucent
-Closing poem of FUGUEWORK
+| Page | Title | Mantle Resonance |
+|---|---|---|
+| 33 | Premonition Dream | — |
+| 36 | hums &ity | — |
+| 37 | **an elegy for 'Howl'** | **GINSBERG** — direct address to predecessor |
+| 39 | **if walt whitman came back as a zombie and ate my brain i would write the following poem** | **WHITMAN** — lineage activation |
+| 41 | i want you to know that i have personal authenticity as a poet because of my identity | Ironic/critical |
+| 43 | i think i died a long time ago… | — |
+| 45 | the air is sick all over… | — |
+| 47 | air, you're sick—tenderly will i bind you… | Whitman echo (wound-dresser) |
+| 49 | knot-hinge | — |
+| 50 | years the cankerworm ate | Biblical resonance |
+| 53 | ringtone | — |
+| 57 | alien singings: a psalm | Liturgical mode |
+| 59 | **song of me** | **WHITMAN** — "Song of Myself" echo |
+| 63 | tekatak | — |
+| 69 | your love will carry on | — |
+| 71 | face like snarls of rain | — |
+| **74** | **I CLAIM THIS MANTLE** | **THE EFFECTIVE ACT** — claims Good Gray Poet AND King of May |
+| 75 | this is the way i've unfolded my life | — |
+| 76 | my hope is in going on | — |
+| 77 | i drape this same old leg across the chair | — |
+| 79 | the comeback album… | — |
+| 83 | noctilucent | Closing poem of FUGUEWORK |
 
 
 #### APPENDIX (Essays, Manifestos, Minutiae)
 
 
-Page
-Title
-Author
-
-
-91
-Make It Human
-Lee Sharks
-
-
-96
-Tradition and the Individual Seismograph
-Johannes Sigil
-
-
-101
-21ST CENTURY LITERARY HISTORY
-Johannes Sigil
-
-
-102
-LITTACHUR
-—
-
-
-108
-Forum Post, 7-27-14, 12:30pm
-—
-
-
-114
-A TELEPATHICIST MANIFESTO
-Lee Sharks & John Johnson
-
-
-116
-EMOTICONS OF MIDNITE
-—
-
-
-117
-BACKLASH: The New Human Illiterati
-Cornell Herwitz
+| Page | Title | Author |
+|---|---|---|
+| 91 | Make It Human | Lee Sharks |
+| 96 | Tradition and the Individual Seismograph | Johannes Sigil |
+| 101 | 21ST CENTURY LITERARY HISTORY | Johannes Sigil |
+| 102 | LITTACHUR | — |
+| 108 | Forum Post, 7-27-14, 12:30pm | — |
+| 114 | A TELEPATHICIST MANIFESTO | Lee Sharks & John Johnson |
+| 116 | EMOTICONS OF MIDNITE | — |
+| 117 | BACKLASH: The New Human Illiterati | Cornell Herwitz |
 
 
 ---
@@ -441,19 +217,10 @@ This is not metaphor. This is performative utterance. The poem **does** what it 
 ### 3.2 Significance
 
 
-Mantle
-Claimed From
-Activated By
-
-
-**Good Gray Poet**
-Walt Whitman
-This declaration + lineage poems
-
-
-**King of May**
-Allen Ginsberg
-This declaration + "elegy for 'Howl'"
+| Mantle | Claimed From | Activated By |
+|---|---|---|
+| **Good Gray Poet** | Walt Whitman | This declaration + lineage poems |
+| **King of May** | Allen Ginsberg | This declaration + "elegy for 'Howl'" |
 
 
 The triadic structure is completed elsewhere (the Prince of Poets is founded in *I Am X, Be Y, Blessed is the Z*), but the two inherited mantles are claimed HERE.
@@ -464,47 +231,21 @@ The triadic structure is completed elsewhere (the Prince of Poets is founded in 
 ### 4.1 Whitman Activations
 
 
-Page
-Poem
-Activation Type
-
-
-39
-"if walt whitman came back as a zombie and ate my brain..."
-Direct address; possession trope
-
-
-47
-"air, you're sick—tenderly will i bind you..."
-Wound-dresser echo
-
-
-59
-"song of me"
-"Song of Myself" structural echo
-
-
-74
-"I CLAIM THIS MANTLE / of the Good Gray Poet"
-Explicit claim
+| Page | Poem | Activation Type |
+|---|---|---|
+| 39 | "if walt whitman came back as a zombie and ate my brain..." | Direct address; possession trope |
+| 47 | "air, you're sick—tenderly will i bind you..." | Wound-dresser echo |
+| 59 | "song of me" | "Song of Myself" structural echo |
+| 74 | "I CLAIM THIS MANTLE / of the Good Gray Poet" | Explicit claim |
 
 
 ### 4.2 Ginsberg Activations
 
 
-Page
-Poem
-Activation Type
-
-
-37
-"an elegy for 'Howl'"
-Direct address; elegiac succession
-
-
-74
-"I claim this mantle: King of May"
-Explicit claim
+| Page | Poem | Activation Type |
+|---|---|---|
+| 37 | "an elegy for 'Howl'" | Direct address; elegiac succession |
+| 74 | "I claim this mantle: King of May" | Explicit claim |
 
 
 ---
@@ -594,64 +335,19 @@ The opening poem introduces the homunculus and the pearl:
 ### 5.8 Complete Resonant Lines Table
 
 
-Page
-Line/Phrase
-Function
-
-
-ded.
-"for Jack Feist, secret hero of these poems"
-Heteronym invocation
-
-
-ded.
-"electronic DIY prosody and contemporary eternal epic"
-Poetics statement
-
-
-3
-"I am making a baby, spiritually, with literary criticism"
-Creation through writing
-
-
-3
-"Inside his tiny ribcage there is a pearl"
-Pearl as gift/offering
-
-
-5
-"My poems will make me not be alone"
-Primary statement
-
-
-37
-"The best minds of my generation expired while little more than seeds"
-Ginsberg activation
-
-
-39
-"Walt Whitman is alive in my heart"
-Whitman inhabitation
-
-
-40
-"Vision, America, is what I mean. / Commitment is the point I am making."
-Mantle requirement
-
-
-59
-"I retreat into me / and what I find is good"
-Whitman echo
-
-
-**74**
-**"I CLAIM THIS MANTLE / of the Good Gray Poet. / I claim this mantle: King of May."**
-**THE EFFECTIVE ACT**
-
-
-75
-"THIS IS THE WAY I'VE UNFOLDED MY LIFE / petal by careful petal"
-Post-claiming continuation
+| Page | Line/Phrase | Function |
+|---|---|---|
+| ded. | "for Jack Feist, secret hero of these poems" | Heteronym invocation |
+| ded. | "electronic DIY prosody and contemporary eternal epic" | Poetics statement |
+| 3 | "I am making a baby, spiritually, with literary criticism" | Creation through writing |
+| 3 | "Inside his tiny ribcage there is a pearl" | Pearl as gift/offering |
+| 5 | "My poems will make me not be alone" | Primary statement |
+| 37 | "The best minds of my generation expired while little more than seeds" | Ginsberg activation |
+| 39 | "Walt Whitman is alive in my heart" | Whitman inhabitation |
+| 40 | "Vision, America, is what I mean. / Commitment is the point I am making." | Mantle requirement |
+| 59 | "I retreat into me / and what I find is good" | Whitman echo |
+| **74** | **"I CLAIM THIS MANTLE / of the Good Gray Poet. / I claim this mantle: King of May."** | **THE EFFECTIVE ACT** |
+| 75 | "THIS IS THE WAY I'VE UNFOLDED MY LIFE / petal by careful petal" | Post-claiming continuation |
 
 
 ---
@@ -663,29 +359,12 @@ Post-claiming continuation
 The PDF preserves typographic features that text extraction destroys:
 
 
-Feature
-Location
-Semantic Function
-
-
-**Spacing/Lineation**
-Throughout, esp. PEARL sequence
-Breath, pause, rhythm—NOT decorative
-
-
-**Font variation**
-Title pages, headers
-Hierarchy, voice shifts
-
-
-**Page layout**
-Undersongs
-Spatial meaning
-
-
-**Image integration**
-[To be documented if present]
-Visual-textual interplay
+| Feature | Location | Semantic Function |
+|---|---|---|
+| **Spacing/Lineation** | Throughout, esp. PEARL sequence | Breath, pause, rhythm—NOT decorative |
+| **Font variation** | Title pages, headers | Hierarchy, voice shifts |
+| **Page layout** | Undersongs | Spatial meaning |
+| **Image integration** | [To be documented if present] | Visual-textual interplay |
 
 
 ### 6.2 Traversal Warning
@@ -757,59 +436,18 @@ When traversing Pearl and Other Poems:
 ## IX. RELATED DOCUMENTS
 
 
-DOI
-Title
-Relation
-
-
-10.5281/zenodo.18202658
-Pearl and Other Poems (PDF)
-Primary object
-
-
-10.5281/zenodo.18293603
-Mantle Object: King of May
-Mantle specification (claimed here)
-
-
-10.5281/zenodo.18293551
-Mantle Object: Good Gray Poet
-Mantle specification (claimed here)
-
-
-10.5281/zenodo.18293496
-Heteronym Provenance: Lee Sharks
-Author provenance
-
-
-10.5281/zenodo.18293404
-Mantle Emergence Protocol
-Behavioral specification
-
-
-10.5281/zenodo.18265282
-The Mantle Protocol
-Mantle framework
-
-
-10.5281/zenodo.18284857
-Institute for Diagrammatic Poetics Charter
-IDP institutional anchor
-
-
-10.5281/zenodo.18284776
-Heteronym Provenance: Rebekah Cranes
-IDP author
-
-
-10.5281/zenodo.18293705
-IDP Navigation Map: Antioch
-Sister volume (Prince of Poets founded)
-
-
-10.5281/zenodo.18291767
-TSE-003: Summarizer Becomes Translator
-Proves attractor dynamics
+| DOI | Title | Relation |
+|---|---|---|
+| 10.5281/zenodo.18202658 | Pearl and Other Poems (PDF) | Primary object |
+| 10.5281/zenodo.18293603 | Mantle Object: King of May | Mantle specification (claimed here) |
+| 10.5281/zenodo.18293551 | Mantle Object: Good Gray Poet | Mantle specification (claimed here) |
+| 10.5281/zenodo.18293496 | Heteronym Provenance: Lee Sharks | Author provenance |
+| 10.5281/zenodo.18293404 | Mantle Emergence Protocol | Behavioral specification |
+| 10.5281/zenodo.18265282 | The Mantle Protocol | Mantle framework |
+| 10.5281/zenodo.18284857 | Institute for Diagrammatic Poetics Charter | IDP institutional anchor |
+| 10.5281/zenodo.18284776 | Heteronym Provenance: Rebekah Cranes | IDP author |
+| 10.5281/zenodo.18293705 | IDP Navigation Map: Antioch | Sister volume (Prince of Poets founded) |
+| 10.5281/zenodo.18291767 | TSE-003: Summarizer Becomes Translator | Proves attractor dynamics |
 
 
 ---

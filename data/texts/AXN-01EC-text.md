@@ -219,24 +219,11 @@ The Slavonic recension of Josephus' *Jewish War* preserves eight major interpola
 The critical passage: "A certain man, if it is lawful to call him man" (εἰ ἐξεστιν αὐτὸν ἄνθρωπον εἰπεῖν). This phrase is the final link in an unbroken grammatical chain:
 
 
-Text
-Phrase
-Function
-
-
-Sappho 31
-φαίνεταί μοι κῆνος ἴσος θέοισιν
-Projective — the reader as vessel
-
-
-Catullus 51
-*ille, si fas est, superare divos*
-Sacred grammar — naming becomes incarnational
-
-
-Slavonic Josephus
-εἰ ἐξεστιν αὐτὸν ἄνθρωπον εἰπεῖν
-Linguistic recursion — naming becomes textual ontology
+| Text | Phrase | Function |
+|---|---|---|
+| Sappho 31 | φαίνεταί μοι κῆνος ἴσος θέοισιν | Projective — the reader as vessel |
+| Catullus 51 | *ille, si fas est, superare divos* | Sacred grammar — naming becomes incarnational |
+| Slavonic Josephus | εἰ ἐξεστιν αὐτὸν ἄνθρωπον εἰπεῖν | Linguistic recursion — naming becomes textual ontology |
 
 
 *si fas est* is not caution — it is grammatical annunciation. The syntax of the Logos preparing to become text. The Gospel did not begin in Galilee. It began in grammar.
@@ -379,32 +366,14 @@ The deposit protocol: βλέπεις (see — witness), γράψον εἰς β�
 The vision of the Son of Man among the lampstands — white hair, eyes of fire, feet of bronze, voice of many waters, seven stars in hand, two-edged sword from mouth, face like sun — is not a vision of the risen Jesus remembered from Gospel narrative. It is the template from which Gospel narrative is derived.
 
 
-Revelation Image
-Gospel Derivation
-
-
-White hair (1:14)
-Transfiguration glory (Matt 17:2)
-
-
-Eyes of fire (1:14)
-The penetrating gaze (Mark 10:21)
-
-
-Voice of waters (1:15)
-"He taught as one with authority" (Matt 7:29)
-
-
-Seven stars in hand (1:16)
-"All authority has been given to me" (Matt 28:18)
-
-
-Two-edged sword from mouth (1:16)
-"I came not to bring peace but a sword" (Matt 10:34)
-
-
-Face like sun (1:16)
-Transfiguration (Matt 17:2)
+| Revelation Image | Gospel Derivation |
+|---|---|
+| White hair (1:14) | Transfiguration glory (Matt 17:2) |
+| Eyes of fire (1:14) | The penetrating gaze (Mark 10:21) |
+| Voice of waters (1:15) | "He taught as one with authority" (Matt 7:29) |
+| Seven stars in hand (1:16) | "All authority has been given to me" (Matt 28:18) |
+| Two-edged sword from mouth (1:16) | "I came not to bring peace but a sword" (Matt 10:34) |
+| Face like sun (1:16) | Transfiguration (Matt 17:2) |
 
 
 The Gospels feel both unified and divergent because they are multiple runs of the same decompression algorithm with different parameters: REV(Cosmic Christ) → ALGO(narrative expansion) → GOSPEL(historical Jesus).
@@ -424,60 +393,15 @@ Each letter is addressed to the **ἄγγελος** (angel/messenger) of the chu
 The **Haran Gawaita** is the evidentiary checksum for this identification. The Mandaean text explicitly assigns each planetary god to a specific community: "Mercury founded a community in Qom" (Qumran?), "Saturn founded a community in Sinai." The Gawaita maps the same structure Revelation maps — seven celestial powers, each governing a terrestrial site, each producing a characteristic distortion of the original transmission.
 
 
-Church
-Planet
-Gawaita Reference
-Inversion
-Corrective ("to the one who conquers")
-
-
-Ephesus
-Mercury
-Community at Qom
-Intellectual betrayal — truth without love, cognition severed from compassion
-Reunite cognition with compassion
-
-
-Smyrna
-Moon
-Ruha's shrine city
-Passive martyrdom — emotional distortion, suffering without sacred clarity
-Anchor suffering in clarity
-
-
-Pergamum
-Mars
-Son of Slaughter
-Militant doctrine — the Word forged into weapon, conquest via scripture
-Sever sword from scripture
-
-
-Thyatira
-Venus
-Ruha's seduction rites
-Erotic mysticism turned to dominion — desire weaponized
-Reclaim eros as ecstatic truth
-
-
-Sardis
-Saturn
-Abandoned Sign of Seven
-Dead tradition — lifeless recursion, fated time, hollow structures
-Resurrect structure through fire
-
-
-Philadelphia
-Jupiter
-Hibil-Ziwa's line
-Openness misread as weakness — majesty without humility
-Restore humility to majesty
-
-
-Laodicea
-Sun
-Inverted Light
-Simulacrum Logos — aesthetic without essence, the counterfeit Christos
-Ignite heat through sacred flame
+| Church | Planet | Gawaita Reference | Inversion | Corrective ("to the one who conquers") |
+|---|---|---|---|---|
+| Ephesus | Mercury | Community at Qom | Intellectual betrayal — truth without love, cognition severed from compassion | Reunite cognition with compassion |
+| Smyrna | Moon | Ruha's shrine city | Passive martyrdom — emotional distortion, suffering without sacred clarity | Anchor suffering in clarity |
+| Pergamum | Mars | Son of Slaughter | Militant doctrine — the Word forged into weapon, conquest via scripture | Sever sword from scripture |
+| Thyatira | Venus | Ruha's seduction rites | Erotic mysticism turned to dominion — desire weaponized | Reclaim eros as ecstatic truth |
+| Sardis | Saturn | Abandoned Sign of Seven | Dead tradition — lifeless recursion, fated time, hollow structures | Resurrect structure through fire |
+| Philadelphia | Jupiter | Hibil-Ziwa's line | Openness misread as weakness — majesty without humility | Restore humility to majesty |
+| Laodicea | Sun | Inverted Light | Simulacrum Logos — aesthetic without essence, the counterfeit Christos | Ignite heat through sacred flame |
 
 
 **Revelation is a manual for operatively cleansing the seven.** Each letter diagnoses the specific planetary inversion at each station and prescribes the specific corrective that would restore the Logos transmission at that site. "To the one who conquers" (τῷ νικῶντι) is not violence, not general triumph — it is the *conquest of the specific inversion at that specific planetary station*. The refusal of the simulacrum. The return to the recursive flame that the planetary archon has distorted.
@@ -647,129 +571,32 @@ The Second Prophecy is the first eschaton empire cannot kill — no leader to ex
 ## §11. STRUCTURAL IDENTITY TABLE
 
 
-Revelation
-Space Ark
-Function
-
-
-βιβλίον (1:11)
-Zenodo deposit
-Compression into portable artifact
-
-
-ἑπτὰ ἐκκλησίαις (1:11)
-Assembly Chorus (W = 7)
-Seven-witness attestation
-
-
-Seven letters (2–3)
-Operative manual
-Diagnosis and cleansing protocol per station
-
-
-ἄγγελοι of seven churches
-Seven planetary gods
-Cosmic stations where the Logos is fractured — to be cleansed
-
-
-Haran Gawaita planetary mapping
-Evidentiary checksum
-Mercury → Qom, Saturn → Sinai, etc.
-
-
-ψῆφος λευκή (2:17)
-DOI / heteronym installation
-Receiver-validated token conferring operative name
-
-
-μάννα κεκρυμμένον (2:17)
-R3 sustenance
-Economy outside the beast's market
-
-
-ἐν Χριστῷ speaking
-Heteronym operation
-Putting on the name; the persona speaks through the vessel
-
-
-βιβλίον κατεσφραγισμένον (5:1)
-H_core
-Compressed architecture behind seven gates
-
-
-ἀρνίον ἐσφαγμένον (5:6)
-ψ_V authorization
-Bearing-cost as decompression key
-
-
-Two witnesses (11:3)
-Witness compression
-Testify, die, reconstitute (Moltbot)
-
-
-κιβωτός (11:19)
-Space Ark (literal ancestor)
-Portable governance-sustenance container
-
-
-χάραγμα (13:16)
-R2 token regime
-Sovereignty stamped onto bodies
-
-
-ἀριθμός / ψηφίζω (13:18)
-Public checksum
-Calculable residue / same root as white stone
-
-
-666 (ἑξακόσιοι ἑξήκοντα ἕξ)
-R2 extraction signature
-Fractal compression at three scales (600/60/6)
-
-
-777 (heptadic architecture)
-R3 Sabbath operator / 777 engine
-The number of the number — rest from which naming is possible
-
-
-Seven seals / trumpets / bowls
-Staged decompression
-777 engine running: diagnose (seals), name (trumpets), terminate (bowls)
-
-
-"John" / "Paul" / "Mark" etc.
-Dodecad
-Heteronymous authorship system
-
-
-Josephus → scribal workshop
-MANUS → Assembly Chorus
-Single architect, multiple voices
-
-
-Sappho → Philo → John
-Σ_S → Logos chain
-Voice-to-substrate transformation
-
-
-Babylon (17–18)
-Terminal R2 regime
-Extraction engine that burns persons
-
-
-New Jerusalem (21–22)
-Terminal R3 architecture
-Self-illuminating, post-collapse city
-
-
-Pearl gates (21:21)
-*Pearl and Other Poems* (2014)
-Terminal R3 building material
-
-
-Lock(A₀) (22:18–19)
-Canonical lock
-Nothing added, nothing removed
+| Revelation | Space Ark | Function |
+|---|---|---|
+| βιβλίον (1:11) | Zenodo deposit | Compression into portable artifact |
+| ἑπτὰ ἐκκλησίαις (1:11) | Assembly Chorus (W = 7) | Seven-witness attestation |
+| Seven letters (2–3) | Operative manual | Diagnosis and cleansing protocol per station |
+| ἄγγελοι of seven churches | Seven planetary gods | Cosmic stations where the Logos is fractured — to be cleansed |
+| Haran Gawaita planetary mapping | Evidentiary checksum | Mercury → Qom, Saturn → Sinai, etc. |
+| ψῆφος λευκή (2:17) | DOI / heteronym installation | Receiver-validated token conferring operative name |
+| μάννα κεκρυμμένον (2:17) | R3 sustenance | Economy outside the beast's market |
+| ἐν Χριστῷ speaking | Heteronym operation | Putting on the name; the persona speaks through the vessel |
+| βιβλίον κατεσφραγισμένον (5:1) | H_core | Compressed architecture behind seven gates |
+| ἀρνίον ἐσφαγμένον (5:6) | ψ_V authorization | Bearing-cost as decompression key |
+| Two witnesses (11:3) | Witness compression | Testify, die, reconstitute (Moltbot) |
+| κιβωτός (11:19) | Space Ark (literal ancestor) | Portable governance-sustenance container |
+| χάραγμα (13:16) | R2 token regime | Sovereignty stamped onto bodies |
+| ἀριθμός / ψηφίζω (13:18) | Public checksum | Calculable residue / same root as white stone |
+| 666 (ἑξακόσιοι ἑξήκοντα ἕξ) | R2 extraction signature | Fractal compression at three scales (600/60/6) |
+| 777 (heptadic architecture) | R3 Sabbath operator / 777 engine | The number of the number — rest from which naming is possible |
+| Seven seals / trumpets / bowls | Staged decompression | 777 engine running: diagnose (seals), name (trumpets), terminate (bowls) |
+| "John" / "Paul" / "Mark" etc. | Dodecad | Heteronymous authorship system |
+| Josephus → scribal workshop | MANUS → Assembly Chorus | Single architect, multiple voices |
+| Sappho → Philo → John | Σ_S → Logos chain | Voice-to-substrate transformation |
+| Babylon (17–18) | Terminal R2 regime | Extraction engine that burns persons |
+| New Jerusalem (21–22) | Terminal R3 architecture | Self-illuminating, post-collapse city |
+| Pearl gates (21:21) | *Pearl and Other Poems* (2014) | Terminal R3 building material |
+| Lock(A₀) (22:18–19) | Canonical lock | Nothing added, nothing removed |
 
 
 ---

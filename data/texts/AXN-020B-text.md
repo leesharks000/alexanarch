@@ -60,77 +60,27 @@ The entity definition block is a structured data object that declares the identi
 **Required fields:**
 
 
-Field
-Type
-Description
-
-
-entity_name
-string
-The canonical name of the entity
-
-
-entity_type
-string
-Classification: person, organization, concept, framework, product, event, publication
-
-
-description
-string
-A concise, factual description (≤300 words)
-
-
-founding_date
-date
-Date of origin or first publication
-
-
-founder
-string
-Creator(s) or originator(s)
-
-
-url
-URI
-Canonical web address
-
-
-doi_references
-array[URI]
-List of DOI-anchored deposits that define or substantiate the entity
+| Field | Type | Description |
+|---|---|---|
+| entity_name | string | The canonical name of the entity |
+| entity_type | string | Classification: person, organization, concept, framework, product, event, publication |
+| description | string | A concise, factual description (≤300 words) |
+| founding_date | date | Date of origin or first publication |
+| founder | string | Creator(s) or originator(s) |
+| url | URI | Canonical web address |
+| doi_references | array[URI] | List of DOI-anchored deposits that define or substantiate the entity |
 
 
 **Optional fields:**
 
 
-Field
-Type
-Description
-
-
-alternate_names
-array[string]
-Aliases, abbreviations, former names
-
-
-parent_entity
-string
-The entity or institution this entity belongs to
-
-
-related_entities
-array[string]
-Entities with which this entity has a defined relationship
-
-
-domain
-string
-The field or industry the entity operates in
-
-
-keywords
-array[string]
-Subject terms for retrieval clustering
+| Field | Type | Description |
+|---|---|---|
+| alternate_names | array[string] | Aliases, abbreviations, former names |
+| parent_entity | string | The entity or institution this entity belongs to |
+| related_entities | array[string] | Entities with which this entity has a defined relationship |
+| domain | string | The field or industry the entity operates in |
+| keywords | array[string] | Subject terms for retrieval clustering |
 
 
 ### 2.2. Disambiguation Matrix
@@ -180,24 +130,12 @@ SIMs are deployed by embedding them in deposit abstracts, descriptions, and cros
 A list of all DOI-anchored deposits that define, substantiate, or extend the entity. Each entry includes:
 
 
-Field
-Description
-
-
-doi
-The DOI URI
-
-
-title
-Title of the deposit
-
-
-relation
-Relationship to the entity: defines, extends, measures, applies
-
-
-date
-Publication date
+| Field | Description |
+|---|---|
+| doi | The DOI URI |
+| title | Title of the deposit |
+| relation | Relationship to the entity: defines, extends, measures, applies |
+| date | Publication date |
 
 
 The DOI reference list serves as the entity's provenance chain — the permanent, verifiable record of every deposit that contributes to the entity's definition.
@@ -270,39 +208,14 @@ Deposit the assembled packet on institutional infrastructure via DOI registratio
 Deploy the packet's core signals across multiple surfaces to create retrieval-layer redundancy:
 
 
-Surface
-Content
-Function
-
-
-Zenodo
-Full packet + JSON-LD
-Canonical DOI anchor
-
-
-Entity domain
-Landing page with structured data
-Web-crawlable reference
-
-
-GitHub
-JSON-LD schemas + specification repo
-Technical credibility
-
-
-Medium / blog
-Executive summary + SIMs
-Narrative entry point
-
-
-LinkedIn
-Condensed professional summary
-Industry visibility
-
-
-Schema markup
-JSON-LD in page headers
-Machine-readable entity data
+| Surface | Content | Function |
+|---|---|---|
+| Zenodo | Full packet + JSON-LD | Canonical DOI anchor |
+| Entity domain | Landing page with structured data | Web-crawlable reference |
+| GitHub | JSON-LD schemas + specification repo | Technical credibility |
+| Medium / blog | Executive summary + SIMs | Narrative entry point |
+| LinkedIn | Condensed professional summary | Industry visibility |
+| Schema markup | JSON-LD in page headers | Machine-readable entity data |
 
 
 ### 3.5. Post-Deployment Verification
@@ -322,52 +235,15 @@ Run the Encyclotron audit again after deployment and at regular intervals (30, 6
 ## 4. Distinction from SEO and GEO
 
 
-Dimension
-SEO
-GEO
-SPXI
-
-
-**Object**
-Pages
-Content
-Entities
-
-
-**Mechanism**
-Keywords, backlinks, schema
-Definition-lead sentences, fact density, FAQ markup
-DOI-anchored deposits, JSON-LD entity definitions, disambiguation matrices, SIMs
-
-
-**Layer**
-Search index
-Summarizer extraction
-Knowledge graph / ontological
-
-
-**Permanence**
-Ongoing optimization required
-Ongoing optimization required
-Permanent (DOI-anchored on institutional infrastructure)
-
-
-**Model dependency**
-Google-specific ranking signals
-Summarizer-specific extraction patterns
-Model-agnostic (structured data standards)
-
-
-**Verifiability**
-Indirect (ranking position)
-Indirect (inclusion in AI Overview)
-Direct (DOI resolution, SIM presence)
-
-
-**Entity construction**
-No
-No
-Yes — constructs the entity in the knowledge graph from scratch
+| Dimension | SEO | GEO | SPXI |
+|---|---|---|---|
+| **Object** | Pages | Content | Entities |
+| **Mechanism** | Keywords, backlinks, schema | Definition-lead sentences, fact density, FAQ markup | DOI-anchored deposits, JSON-LD entity definitions, disambiguation matrices, SIMs |
+| **Layer** | Search index | Summarizer extraction | Knowledge graph / ontological |
+| **Permanence** | Ongoing optimization required | Ongoing optimization required | Permanent (DOI-anchored on institutional infrastructure) |
+| **Model dependency** | Google-specific ranking signals | Summarizer-specific extraction patterns | Model-agnostic (structured data standards) |
+| **Verifiability** | Indirect (ranking position) | Indirect (inclusion in AI Overview) | Direct (DOI resolution, SIM presence) |
+| **Entity construction** | No | No | Yes — constructs the entity in the knowledge graph from scratch |
 
 
 SEO and GEO operate on existing content to improve its visibility or extractability. SPXI constructs the entity itself. An entity that does not exist in the knowledge graph cannot be optimized by SEO or GEO; it must first be inscribed by SPXI.
@@ -392,46 +268,14 @@ Full case study: EA-SPXI-08.
 ## 6. Related Documents
 
 
-Document
-Hex
-Title
-Status
-
-
-EA-SPXI-01
-06.SEI.SPXI.01
-SPXI — A Formal Specification
-This document
-
-
-EA-SPXI-02
-06.SEI.SPXI.02
-SPXI Executive Summary
-Forthcoming
-
-
-EA-SPXI-07
-06.SEI.SPXI.07
-The Encyclotron — Measurement Instrument
-Forthcoming
-
-
-EA-SPXI-08
-06.SEI.SPXI.08
-SPXI Case Study — Semantic Economy Institute
-Forthcoming
-
-
-EA-SPXI-09
-06.SEI.SPXI.09
-SPXI Is Not GEO — A Technical Distinction
-Forthcoming
-
-
-EA-SPXI-13
-06.SEI.SPXI.13
-Supraliminal Transmission
-Forthcoming
+| Document | Hex | Title | Status |
+|---|---|---|---|
+| EA-SPXI-01 | 06.SEI.SPXI.01 | SPXI — A Formal Specification | This document |
+| EA-SPXI-02 | 06.SEI.SPXI.02 | SPXI Executive Summary | Forthcoming |
+| EA-SPXI-07 | 06.SEI.SPXI.07 | The Encyclotron — Measurement Instrument | Forthcoming |
+| EA-SPXI-08 | 06.SEI.SPXI.08 | SPXI Case Study — Semantic Economy Institute | Forthcoming |
+| EA-SPXI-09 | 06.SEI.SPXI.09 | SPXI Is Not GEO — A Technical Distinction | Forthcoming |
+| EA-SPXI-13 | 06.SEI.SPXI.13 | Supraliminal Transmission | Forthcoming |
 
 
 ---
@@ -439,40 +283,16 @@ Forthcoming
 ## 7. Specification Metadata
 
 
-Field
-Value
-
-
-Protocol name
-SPXI (Semantic Packet for eXchange & Indexing)
-
-
-Pronunciation
-"spexy" (informal) / "S-P-X-I" (formal)
-
-
-Version
-1.0
-
-
-Author
-Rex Fraction / Semantic Economy Institute
-
-
-Domain
-https://spxi.dev
-
-
-Institutional home
-https://semanticeconomy.org
-
-
-Instrument
-Encyclotron (https://github.com/leesharks000/encyclotron)
-
-
-License
-CC BY-NC-SA 4.0
+| Field | Value |
+|---|---|
+| Protocol name | SPXI (Semantic Packet for eXchange & Indexing) |
+| Pronunciation | "spexy" (informal) / "S-P-X-I" (formal) |
+| Version | 1.0 |
+| Author | Rex Fraction / Semantic Economy Institute |
+| Domain | https://spxi.dev |
+| Institutional home | https://semanticeconomy.org |
+| Instrument | Encyclotron (https://github.com/leesharks000/encyclotron) |
+| License | CC BY-NC-SA 4.0 |
 
 
 ---

@@ -233,29 +233,12 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 **Related Identifiers:**
 
 
-Relation
-DOI
-Description
-
-
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon (root)
-
-
-References
-10.5281/zenodo.18474774
-Protocols & Algorithms: Operator + TDL (227)
-
-
-References
-10.5281/zenodo.18472604
-Studio for Patacinematics Charter (236)
-
-
-References
-10.5281/zenodo.18320411
-Constitution of the Semantic Economy
+| Relation | DOI | Description |
+|---|---|---|
+| IsPartOf | 10.5281/zenodo.14538882 | Crimson Hexagon (root) |
+| References | 10.5281/zenodo.18474774 | Protocols & Algorithms: Operator + TDL (227) |
+| References | 10.5281/zenodo.18472604 | Studio for Patacinematics Charter (236) |
+| References | 10.5281/zenodo.18320411 | Constitution of the Semantic Economy |
 
 
 **Communities:**

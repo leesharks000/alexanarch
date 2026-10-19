@@ -173,39 +173,14 @@ The Zenodo case represents this transition at repository scale. The exclusion wa
 The extension offered here is fourfold:
 
 
-Feature
-Quiet Exclusion (Morin)
-Loud Exclusion at Repository Scale
-
-
-Visibility
-Hidden, procedural
-Visible, declared final
-
-
-Platform action
-Fails to act
-Acts decisively
-
-
-Scope
-Individual access
-Account, network, citation graph
-
-
-Criteria
-Shifting within sequence
-Divergent between private and public
-
-
-Resolution
-Procedural deadlock
-Stated finality forecloses correction
-
-
-Collateral
-Individual researcher
-Independent contributors, DOI network
+| Feature | Quiet Exclusion (Morin) | Loud Exclusion at Repository Scale |
+|---|---|---|
+| Visibility | Hidden, procedural | Visible, declared final |
+| Platform action | Fails to act | Acts decisively |
+| Scope | Individual access | Account, network, citation graph |
+| Criteria | Shifting within sequence | Divergent between private and public |
+| Resolution | Procedural deadlock | Stated finality forecloses correction |
+| Collateral | Individual researcher | Independent contributors, DOI network |
 
 
 ---
@@ -265,53 +240,14 @@ The termination notice stated that the archive's submissions were "substantially
 **Creative works.** Zenodo's policy states that creative works "not connected to a recognized research project or scholarly output" are outside scope. Pearl and Other Poems (2014–2015) is the foundational text of a decade-long heteronymic literary research program with 870+ companion deposits. The heteronymic poetry is the methodology — practicing heteronymy in the Pessoa lineage is the research activity. The contributor-licensed works were contributed under formal licenses within a named archive. These works are connected to an identifiable and documented heteronymic research program. Whether Zenodo considered that program sufficiently "recognized" under its policy is unknown, because the policy does not define the term or explain how recognition was assessed in this case [Unknown].
 
 
-Category
-Entries
-Words
-Research Basis
-Status per Zenodo Policy
-
-
-Primary datasets
-37+
-~60,000
-Empirical observation
-Within scope
-
-
-Critical editions
-12+
-~50,000
-PhD-level philology
-Within scope
-
-
-Theoretical papers
-50+
-~200,000
-Cited, falsifiable, verified
-Within scope
-
-
-Monographs
-5+
-~300,000
-Book-length scholarship
-Within scope
-
-
-Methodological specs
-30+
-~100,000
-Formal specifications
-Within scope
-
-
-Creative works
-~50
-~150,000
-Connected to research project
-Within scope per qualifier
+| Category | Entries | Words | Research Basis | Status per Zenodo Policy |
+|---|---|---|---|---|
+| Primary datasets | 37+ | ~60,000 | Empirical observation | Within scope |
+| Critical editions | 12+ | ~50,000 | PhD-level philology | Within scope |
+| Theoretical papers | 50+ | ~200,000 | Cited, falsifiable, verified | Within scope |
+| Monographs | 5+ | ~300,000 | Book-length scholarship | Within scope |
+| Methodological specs | 30+ | ~100,000 | Formal specifications | Within scope |
+| Creative works | ~50 | ~150,000 | Connected to research project | Within scope per qualifier |
 
 
 The research basis of this archive is not merely verifiable. It is documented across 870 works, 3.4 million words, a doctoral degree, a decade of scholarly activity, an ORCID record, formal contributor licenses, cross-model verification protocols, cited engagement with dozens of scholars, and stated falsification conditions. What was not verified is whether anyone at Zenodo examined any of it.
@@ -519,46 +455,14 @@ These are not proprietary tools. They are structural responses to structural vul
 This section does not purport to alter Zenodo's certification status or to assess the repository's operations as a whole. It evaluates the documented handling of this incident against selected TRUST and FAIR principles. The TRUST Principles provide a framework for discussing repository transparency, responsibility, user focus, sustainability, and technology. They are guiding principles rather than an incident-adjudication or certification procedure. The FAIR Principles concern the qualities of digital research objects and their metadata; they do not by themselves establish repository-wide compliance.
 
 
-Principle
-Incident-level expectation
-Documented condition
-Status
-
-
-**TRUST: Transparency**
-Decisions should be explainable through publicly verifiable evidence
-The private notice gave a specific AI/research-basis rationale; the public page displayed the broader category "content out of scope." Their relationship was not explained
-Observed
-
-
-**TRUST: Responsibility**
-Repository actions should preserve the intelligibility of holdings and their public record
-Public access was removed across an account-level network; the retention and public status of metadata, versions, files, and usage statistics remain partly unknown
-Observed / Unknown
-
-
-**TRUST: User Focus**
-Procedures should address the needs of the designated user community
-No prior opportunity to comment was provided; the applicable procedural route and correction mechanism were not identified
-Observed
-
-
-**TRUST: Sustainability**
-Preservation commitments should remain intelligible under enforcement conditions
-Zenodo states that records and files may remain internally preserved after removal, but the public persistence mechanism for all affected records has not been established
-Observed / Unknown
-
-
-**FAIR A2**
-Metadata should remain accessible even when data are no longer available
-Some affected records displayed tombstone information; other tested URLs returned HTTP 410 without a record-specific metadata page
-Observed; full inventory pending
-
-
-**Persistent identification**
-Removed objects should remain identifiable through a resolvable landing page
-DataCite recommends item-specific tombstones whenever DOI-identified material becomes unavailable; the degree of conformity across the affected inventory remains to be measured
-Observed / To be tested
+| Principle | Incident-level expectation | Documented condition | Status |
+|---|---|---|---|
+| **TRUST: Transparency** | Decisions should be explainable through publicly verifiable evidence | The private notice gave a specific AI/research-basis rationale; the public page displayed the broader category "content out of scope." Their relationship was not explained | Observed |
+| **TRUST: Responsibility** | Repository actions should preserve the intelligibility of holdings and their public record | Public access was removed across an account-level network; the retention and public status of metadata, versions, files, and usage statistics remain partly unknown | Observed / Unknown |
+| **TRUST: User Focus** | Procedures should address the needs of the designated user community | No prior opportunity to comment was provided; the applicable procedural route and correction mechanism were not identified | Observed |
+| **TRUST: Sustainability** | Preservation commitments should remain intelligible under enforcement conditions | Zenodo states that records and files may remain internally preserved after removal, but the public persistence mechanism for all affected records has not been established | Observed / Unknown |
+| **FAIR A2** | Metadata should remain accessible even when data are no longer available | Some affected records displayed tombstone information; other tested URLs returned HTTP 410 without a record-specific metadata page | Observed; full inventory pending |
+| **Persistent identification** | Removed objects should remain identifiable through a resolvable landing page | DataCite recommends item-specific tombstones whenever DOI-identified material becomes unavailable; the degree of conformity across the affected inventory remains to be measured | Observed / To be tested |
 
 
 The incident presents documented tensions with transparency, user focus, and metadata-persistence expectations. The evidence does not support a repository-wide declaration of non-compliance. It supports a narrower conclusion: the present public record is insufficient to demonstrate how the removal process satisfied these principles for the affected archive.

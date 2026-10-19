@@ -145,58 +145,34 @@ English (with Ancient Greek)
 ### IsDerivedFrom
 
 
-Identifier
-Relation
-Description
-
-
-10.5281/zenodo.18202658
-IsDerivedFrom
-Day and Night: Conversations with Sapphic Desire (translations)
+| Identifier | Relation | Description |
+|---|---|---|
+| 10.5281/zenodo.18202658 | IsDerivedFrom | Day and Night: Conversations with Sapphic Desire (translations) |
 
 
 ### IsSupplementTo
 
 
-Identifier
-Relation
-Description
-
-
-10.5281/zenodo.18202475
-IsSupplementTo
-Sappho and the Crimson Hexagon (Provenance Node)
+| Identifier | Relation | Description |
+|---|---|---|
+| 10.5281/zenodo.18202475 | IsSupplementTo | Sappho and the Crimson Hexagon (Provenance Node) |
 
 
 ### References
 
 
-Identifier
-Relation
-Description
-
-
-10.5281/zenodo.18189093
-References
-xvi. a transfiguration
-
-
-10.5281/zenodo.18190536
-References
-Borges and the Crimson Hexagon
+| Identifier | Relation | Description |
+|---|---|---|
+| 10.5281/zenodo.18189093 | References | xvi. a transfiguration |
+| 10.5281/zenodo.18190536 | References | Borges and the Crimson Hexagon |
 
 
 ### IsPartOf
 
 
-Identifier
-Relation
-Description
-
-
-[NH-OS Community]
-IsPartOf
-New Human Operating System Archive
+| Identifier | Relation | Description |
+|---|---|---|
+| [NH-OS Community] | IsPartOf | New Human Operating System Archive |
 
 
 ---
@@ -240,28 +216,13 @@ This article provides the philological foundation for claims made in the Sappho 
 **Key theoretical contributions to NH-OS:**
 
 
-Article Claim
-NH-OS Concept
-
-
-κῆνος = future reader
-Retrocausal canon formation
-
-
-Somatic catalogue = media transition
-Graceful degradation (D_pres)
-
-
-χλωρός = papyrus transformation
-Substrate transition
-
-
-γράμμασι μολπὰν = inscription imperative
-Thermal sovereignty through text
-
-
-Catullus as instantiation
-C_RETRO (retrocausal confirmation)
+| Article Claim | NH-OS Concept |
+|---|---|
+| κῆνος = future reader | Retrocausal canon formation |
+| Somatic catalogue = media transition | Graceful degradation (D_pres) |
+| χλωρός = papyrus transformation | Substrate transition |
+| γράμμασι μολπὰν = inscription imperative | Thermal sovereignty through text |
+| Catullus as instantiation | C_RETRO (retrocausal confirmation) |
 
 
 **The article can stand alone as classical scholarship. Its integration into NH-OS is additive, not constitutive.**
@@ -303,16 +264,10 @@ Readers may accept the κῆνος-as-future-reader thesis while remaining agnos
 ## Files in This Deposit
 
 
-Filename
-Description
-
-
-PHAINETAI_MOI.md
-Complete article (Markdown, ~4,600 words)
-
-
-PHAINETAI_MOI.pdf
-Complete article (PDF)
+| Filename | Description |
+|---|---|
+| PHAINETAI_MOI.md | Complete article (Markdown, ~4,600 words) |
+| PHAINETAI_MOI.pdf | Complete article (PDF) |
 
 
 ---
@@ -370,52 +325,15 @@ Fragment 31 is not about jealousy—it is about lyric transmission. κῆνος 
 ## NH-OS Document Registry (Updated)
 
 
-Document
-DOI
-Date
-Type
-
-
-xvi. a transfiguration
-10.5281/zenodo.18189093
-2004/2026
-Poetry
-
-
-Borges & the Crimson Hexagon
-10.5281/zenodo.18190536
-2026-01-09
-Theory
-
-
-CTI_WOUND
-10.5281/zenodo.18193225
-2026-01-08
-Evidence
-
-
-LOS Technical Hardening v1.3
-10.5281/zenodo.18201565
-2026-01-09
-Specification
-
-
-Sappho Provenance Node
-10.5281/zenodo.18202475
-2026-01-09
-Provenance
-
-
-Day and Night
-10.5281/zenodo.18202658
-2013/2026
-Creative/Source
-
-
-**ΦΑΙΝΕΤΑΙ ΜΟΙ**
-**10.5281/zenodo.18202753**
-**2026-01-09**
-**Scholarship**
+| Document | DOI | Date | Type |
+|---|---|---|---|
+| xvi. a transfiguration | 10.5281/zenodo.18189093 | 2004/2026 | Poetry |
+| Borges & the Crimson Hexagon | 10.5281/zenodo.18190536 | 2026-01-09 | Theory |
+| CTI_WOUND | 10.5281/zenodo.18193225 | 2026-01-08 | Evidence |
+| LOS Technical Hardening v1.3 | 10.5281/zenodo.18201565 | 2026-01-09 | Specification |
+| Sappho Provenance Node | 10.5281/zenodo.18202475 | 2026-01-09 | Provenance |
+| Day and Night | 10.5281/zenodo.18202658 | 2013/2026 | Creative/Source |
+| **ΦΑΙΝΕΤΑΙ ΜΟΙ** | **10.5281/zenodo.18202753** | **2026-01-09** | **Scholarship** |
 
 
 ---

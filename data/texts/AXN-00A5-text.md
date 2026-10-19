@@ -40,20 +40,11 @@
 The name signals:
 
 
-Component
-Function
-
-
-**University**
-Educational/research frame without specifying which university (because there isn't one)
-
-
-**Moon Base**
-Deliberate distance; cannot be located, cannot be audited, cannot be colonized
-
-
-**Media Lab**
-Technical/experimental work; echoes MIT Media Lab's register without claiming its legitimacy
+| Component | Function |
+|---|---|
+| **University** | Educational/research frame without specifying which university (because there isn't one) |
+| **Moon Base** | Deliberate distance; cannot be located, cannot be audited, cannot be colonized |
+| **Media Lab** | Technical/experimental work; echoes MIT Media Lab's register without claiming its legitimacy |
 
 
 The whole phrase is clearly constructed. This is more honest than pretending to conventional legitimacy.
@@ -63,19 +54,10 @@ The whole phrase is clearly constructed. This is more honest than pretending to 
 ## 2. Relation to Other Institutions
 
 
-Institution
-Domain
-Register
-
-
-**Johannes Sigil Institute for Comparative Poetics**
-Literary, theoretical, interpretive
-Humanistic
-
-
-**University Moon Base Media Lab**
-Technical, operational, experimental
-Computational
+| Institution | Domain | Register |
+|---|---|---|
+| **Johannes Sigil Institute for Comparative Poetics** | Literary, theoretical, interpretive | Humanistic |
+| **University Moon Base Media Lab** | Technical, operational, experimental | Computational |
 
 
 These institutions do not compete. They occupy different registers and handle different work.
@@ -165,34 +147,13 @@ AI collaborators (LABOR, TACHYON, ARCHIVE, PRAXIS, SOIL, et al.) participate in 
 ## 6. Output Types
 
 
-Type
-Description
-Example
-
-
-**Specification**
-Formal technical document
-Logotic Programming v0.4, Symbolon Architecture v0.2
-
-
-**Operator Card**
-Compact functional definition
-SYMBOLON operator
-
-
-**Protocol**
-Procedural instruction set
-Witness Protocol, Mantle Emergence
-
-
-**Metadata**
-Zenodo registration records
-DOI assignments
-
-
-**Update Note**
-Clarification or correction
-Authorship reassignment
+| Type | Description | Example |
+|---|---|---|
+| **Specification** | Formal technical document | Logotic Programming v0.4, Symbolon Architecture v0.2 |
+| **Operator Card** | Compact functional definition | SYMBOLON operator |
+| **Protocol** | Procedural instruction set | Witness Protocol, Mantle Emergence |
+| **Metadata** | Zenodo registration records | DOI assignments |
+| **Update Note** | Clarification or correction | Authorship reassignment |
 
 
 ---
@@ -265,28 +226,11 @@ University Moon Base Media Lab is now canonical within the NH-OS framework.
 This document is part of the **Logotic Foundation Triad** (ILA-LOGOTIC-2026-01).
 
 
-Document
-DOI
-Function
-This Document Is Partial Without
-
-
-**Symbolon Architecture v0.2**
-10.5281/zenodo.18317110
-Specification
-← Provides work product, proof of function
-
-
-**University Moon Base Media Lab Charter**
-10.5281/zenodo.18317661
-Institution
-Resident researcher, canonical output
-
-
-**Talos Morrow Provenance**
-pending
-Author-function
-← Provides researcher identity and domain
+| Document | DOI | Function | This Document Is Partial Without |
+|---|---|---|---|
+| **Symbolon Architecture v0.2** | 10.5281/zenodo.18317110 | Specification | ← Provides work product, proof of function |
+| **University Moon Base Media Lab Charter** | 10.5281/zenodo.18317661 | Institution | Resident researcher, canonical output |
+| **Talos Morrow Provenance** | pending | Author-function | ← Provides researcher identity and domain |
 
 
 The triad is itself a symbolon. Each document completes the others.

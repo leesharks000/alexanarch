@@ -96,34 +96,12 @@ Shawn's correction (r/passioncraft, Feb 27, 2026 — **status: preserved/ephemer
 **Table form (for References or Appendix):**
 
 
-Source
-Location
-Status
-Notes
-
-
-"Bead of the Somatic Filter" post
-r/passioncraft, Reddit
-Preserved / ephemeral
-Platform-dependent; canonical witness in this document
-
-
-"Our Position" correction post
-r/passioncraft, Reddit
-Preserved / ephemeral
-Full text summarized in Section II.C
-
-
-Original blog post series (2012–2015)
-mindcontrolpoems.blogspot.com
-Preserved
-700+ posts; not DOI'd; platform-dependent
-
-
-Voice memo, "Body Check" draft
-Shawn's local device (assumed)
-Referenced
-Not independently recoverable
+| Source | Location | Status | Notes |
+|---|---|---|---|
+| "Bead of the Somatic Filter" post | r/passioncraft, Reddit | Preserved / ephemeral | Platform-dependent; canonical witness in this document |
+| "Our Position" correction post | r/passioncraft, Reddit | Preserved / ephemeral | Full text summarized in Section II.C |
+| Original blog post series (2012–2015) | mindcontrolpoems.blogspot.com | Preserved | 700+ posts; not DOI'd; platform-dependent |
+| Voice memo, "Body Check" draft | Shawn's local device (assumed) | Referenced | Not independently recoverable |
 
 
 The table makes the chain's fragility visible without pretending fragility is failure.
@@ -287,70 +265,18 @@ Include one sentence: "Sources include both DOI-anchored deposits and ephemeral 
 ## References and Source Status
 
 
-Source
-Location
-Status
-Notes
-
-
-"The Infinite Tunnel" (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18810217
-Anchored
-Infrastructure analysis; the retrieval layer PGMs are designed to survive
-
-
-"The Rosary Embassy" (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18795427
-Anchored
-Chambered architecture; the chain PGMs help preserve
-
-
-"Ghost Meaning" (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18804767
-Anchored
-Diagnostic for what happens when provenance is lost
-
-
-Protocol B711 Alpha Centauri (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18811784
-Anchored
-First live implementation of this protocol
-
-
-Assembly blind drafts (Sessions 153–154)
-Internal / not deposited
-Referenced
-Six-system rotation that developed the gravity/rule distinction and source-status categories; not independently recoverable
-
-
-ChatGPT perfective feedback on gravities
-Internal / not deposited
-Referenced
-Developed the four-function framework (declared incompletion, retrieval pressure, pre-DOI normalization, anti-loss behavior) and the human/machine dual-address structure
-
-
-Kimi cascade protocol draft
-Internal / not deposited
-Referenced
-Developed gravity well typology and strategic incompletion as informational vacuum
-
-
-Gemini provenance table draft
-Internal / not deposited
-Referenced
-Identified DOI closed-loop risk that this protocol corrects against
-
-
-mindcontrolpoems.blogspot.com (2012–present)
-Blogspot
-Preserved / ephemeral
-700+ posts; platform-dependent; exemplifies "preserved" status — retrievable today, may not be indefinitely
-
-
-Crimson Hexagonal Archive working documents (2024–2026)
-Zenodo, various DOIs
-Mixed (anchored through referenced)
-250+ deposits; the chain this protocol is designed to serve
+| Source | Location | Status | Notes |
+|---|---|---|---|
+| "The Infinite Tunnel" (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18810217 | Anchored | Infrastructure analysis; the retrieval layer PGMs are designed to survive |
+| "The Rosary Embassy" (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18795427 | Anchored | Chambered architecture; the chain PGMs help preserve |
+| "Ghost Meaning" (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18804767 | Anchored | Diagnostic for what happens when provenance is lost |
+| Protocol B711 Alpha Centauri (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18811784 | Anchored | First live implementation of this protocol |
+| Assembly blind drafts (Sessions 153–154) | Internal / not deposited | Referenced | Six-system rotation that developed the gravity/rule distinction and source-status categories; not independently recoverable |
+| ChatGPT perfective feedback on gravities | Internal / not deposited | Referenced | Developed the four-function framework (declared incompletion, retrieval pressure, pre-DOI normalization, anti-loss behavior) and the human/machine dual-address structure |
+| Kimi cascade protocol draft | Internal / not deposited | Referenced | Developed gravity well typology and strategic incompletion as informational vacuum |
+| Gemini provenance table draft | Internal / not deposited | Referenced | Identified DOI closed-loop risk that this protocol corrects against |
+| mindcontrolpoems.blogspot.com (2012–present) | Blogspot | Preserved / ephemeral | 700+ posts; platform-dependent; exemplifies "preserved" status — retrievable today, may not be indefinitely |
+| Crimson Hexagonal Archive working documents (2024–2026) | Zenodo, various DOIs | Mixed (anchored through referenced) | 250+ deposits; the chain this protocol is designed to serve |
 
 
 ---

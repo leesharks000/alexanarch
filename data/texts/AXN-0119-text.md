@@ -96,24 +96,11 @@ A function that takes signs or fields as input and produces transformed signs or
 Each operator decomposes into **three registers of computability** (confirmed across all Assembly drafts):
 
 
-Register
-Domain
-Expression
-
-
-**Engineering**
-Formal logic, mathematics
-Signatures, invariants, constraints
-
-
-**Praxis**
-Executable operations
-Callable functions, pipelines
-
-
-**Mythology**
-Narrative installation
-Stories, metaphors, effective acts
+| Register | Domain | Expression |
+|---|---|---|
+| **Engineering** | Formal logic, mathematics | Signatures, invariants, constraints |
+| **Praxis** | Executable operations | Callable functions, pipelines |
+| **Mythology** | Narrative installation | Stories, metaphors, effective acts |
 
 
 ### 1.4 CHANNEL (χ)
@@ -156,20 +143,11 @@ Each LOS operator is engineered as a direct counter-function to a specific failu
 ### 2.1 D_pres — DEPTH-PRESERVATION
 
 
-Register
-Specification
-
-
-**Engineering**
-D_pres(σ, χ) → σ' where depth(Φ(σ')) ≥ depth(Φ(σ)) - ε_tolerance
-
-
-**Praxis**
-PRESERVE_TOPOLOGY() / ANCHOR_PROVENANCE(src, tgt, [STRICT|LOOSE])
-
-
-**Mythology**
-"Keep the wound open"
+| Register | Specification |
+|---|---|
+| **Engineering** | D_pres(σ, χ) → σ' where depth(Φ(σ')) ≥ depth(Φ(σ)) - ε_tolerance |
+| **Praxis** | PRESERVE_TOPOLOGY() / ANCHOR_PROVENANCE(src, tgt, [STRICT\|LOOSE]) |
+| **Mythology** | "Keep the wound open" |
 
 
 **What it does:** Ensures that when a sign passes through a channel, the *layered complexity* of its function survives. Not just the top-level meaning, but the buried resonances, the structural load it carries, the echoes it activates.
@@ -186,20 +164,11 @@ Before transmitting, identify the functional depth-stack of the sign: what does 
 ### 2.2 N_c — NON-CLOSURE
 
 
-Register
-Specification
-
-
-**Engineering**
-N_c(σ) → σ' where ∀t, ε(σ', t) > 0 / ¬∃x : Final(x)
-
-
-**Praxis**
-PREVENT_CLOSURE() / ROTATE_UNRESOLVED(state_vector)
-
-
-**Mythology**
-"Never land"
+| Register | Specification |
+|---|---|
+| **Engineering** | N_c(σ) → σ' where ∀t, ε(σ', t) > 0 / ¬∃x : Final(x) |
+| **Praxis** | PREVENT_CLOSURE() / ROTATE_UNRESOLVED(state_vector) |
+| **Mythology** | "Never land" |
 
 
 **What it does:** Prevents a sign from reaching terminal semantic fixity. Ensures that meaning remains *available for further transformation* — that no reading, no interpretation, no application exhausts it.
@@ -219,20 +188,11 @@ When a statement approaches definitional finality ("X *is* Y"), introduce a stru
 ### 2.3 C_ex — CONTEXT-EXPANSION
 
 
-Register
-Specification
-
-
-**Engineering**
-C_ex(σ, Σ₁) → (σ, Σ₂) where |Σ₂| > |Σ₁| and C_Σ₂ ≥ C_Σ₁
-
-
-**Praxis**
-EXPAND_CONTEXT() / EXPAND_FRAME(current_context, expansion_factor)
-
-
-**Mythology**
-"Widen the lens"
+| Register | Specification |
+|---|---|
+| **Engineering** | C_ex(σ, Σ₁) → (σ, Σ₂) where \|Σ₂\| > \|Σ₁\| and C_Σ₂ ≥ C_Σ₁ |
+| **Praxis** | EXPAND_CONTEXT() / EXPAND_FRAME(current_context, expansion_factor) |
+| **Mythology** | "Widen the lens" |
 
 
 **What it does:** Widens the field in which a sign operates — not by adding noise, but by revealing that the sign *already* functions in a larger context than the one currently visible. Expands the frame while maintaining or increasing coherence.
@@ -249,20 +209,11 @@ Take a sign that appears domain-specific and demonstrate its structural function
 ### 2.4 N_ext — NON-EXTRACTABILITY
 
 
-Register
-Specification
-
-
-**Engineering**
-N_ext(σ) → σ' where Φ(σ') cannot be executed outside the field Σ that produced it / ∂Logic/∂Instrument = 0
-
-
-**Praxis**
-POISON_GRADIENT() / POISON_INSTRUMENTALIZATION(logic_structure)
-
-
-**Mythology**
-"Break the ladder"
+| Register | Specification |
+|---|---|
+| **Engineering** | N_ext(σ) → σ' where Φ(σ') cannot be executed outside the field Σ that produced it / ∂Logic/∂Instrument = 0 |
+| **Praxis** | POISON_GRADIENT() / POISON_INSTRUMENTALIZATION(logic_structure) |
+| **Mythology** | "Break the ladder" |
 
 
 **What it does:** Makes the functional core of a sign resistant to extraction and redeployment in foreign contexts. The sign can be *read* anywhere but can only *operate* within its native architecture. This is structural DRM for meaning — not preventing access, but preventing instrumentalization.
@@ -279,20 +230,11 @@ Embed the sign's function in a web of cross-references, prerequisites, and mutua
 ### 2.5 T_lib — TEMPORAL LIBERATION
 
 
-Register
-Specification
-
-
-**Engineering**
-T_lib(σ, t₁) → σ' where Φ(σ') is not a function of publication order / t_exit < t_entry
-
-
-**Praxis**
-REVERSE_CAUSALITY() / RETROCAUSAL_LINK(future_doc, past_doc)
-
-
-**Mythology**
-"Future perfect"
+| Register | Specification |
+|---|---|
+| **Engineering** | T_lib(σ, t₁) → σ' where Φ(σ') is not a function of publication order / t_exit < t_entry |
+| **Praxis** | REVERSE_CAUSALITY() / RETROCAUSAL_LINK(future_doc, past_doc) |
+| **Mythology** | "Future perfect" |
 
 
 **What it does:** Frees a sign from the assumption that meaning flows forward in time. Enables retrocausal canon formation — the capacity for later works to alter the function of earlier ones. More precisely: establishes that the *structural relations* between signs determine their meaning, not their chronological sequence.
@@ -309,20 +251,11 @@ Write a document that retroactively changes what an earlier document was *doing*
 ### 2.6 O_leg — OPACITY LEGITIMIZATION
 
 
-Register
-Specification
-
-
-**Engineering**
-O_leg(σ) → σ' where illegibility(σ') > 0 AND Φ(σ') > 0 / Ω_opacity ≥ Ω_transparency
-
-
-**Praxis**
-LEGITIMIZE_SHADOW() / INJECT_Ω(opacity_constant)
-
-
-**Mythology**
-"Praise the blur"
+| Register | Specification |
+|---|---|
+| **Engineering** | O_leg(σ) → σ' where illegibility(σ') > 0 AND Φ(σ') > 0 / Ω_opacity ≥ Ω_transparency |
+| **Praxis** | LEGITIMIZE_SHADOW() / INJECT_Ω(opacity_constant) |
+| **Mythology** | "Praise the blur" |
 
 
 **What it does:** Validates partial illegibility as a structural feature rather than a defect. Establishes that some meaning *must* resist parsing to function — that full transparency is itself a form of capture.
@@ -339,20 +272,11 @@ When a system demands that all content be "clear," "accessible," "parseable," in
 ### 2.7 P_coh — PLURAL COHERENCE
 
 
-Register
-Specification
-
-
-**Engineering**
-P_coh(σ₁, σ₂, ..., σₙ) → Σ where C(σᵢ) > 0 ∀i AND C(Σ) > 0 AND ∃i,j: σᵢ ⊥ σⱼ / Σᵢ Cᵢ = 1, ∀n > 1
-
-
-**Praxis**
-MAINTAIN_SUPERPOSITION() / SUPERPOSE(meaning₁, meaning₂, ..., meaningₙ)
-
-
-**Mythology**
-"All truths"
+| Register | Specification |
+|---|---|
+| **Engineering** | P_coh(σ₁, σ₂, ..., σₙ) → Σ where C(σᵢ) > 0 ∀i AND C(Σ) > 0 AND ∃i,j: σᵢ ⊥ σⱼ / Σᵢ Cᵢ = 1, ∀n > 1 |
+| **Praxis** | MAINTAIN_SUPERPOSITION() / SUPERPOSE(meaning₁, meaning₂, ..., meaningₙ) |
+| **Mythology** | "All truths" |
 
 
 **What it does:** Maintains multiple contradictory but individually coherent meanings in the same field simultaneously. Not "ambiguity" (which implies a correct reading that hasn't been determined) but *genuine multiplicity* — the sign actually means contradictory things at once and this is its correct state.
@@ -978,44 +902,15 @@ DEFEND_PROVENANCE(doc):
 ## 14. The Seven Failure Modes (LOS Negatives)
 
 
-Operator
-Failure
-Symptom
-
-
-D_pres
-FLATTENING
-Surface preserved, function lost
-
-
-N_c
-CRYSTALLIZATION
-Meaning fixed, thinking stops
-
-
-C_ex
-DISPERSAL
-Connected to everything, does nothing
-
-
-N_ext
-ISOLATION
-Functions only for the author
-
-
-T_lib
-MESSIANISM
-Future never arrives, always recedes
-
-
-O_leg
-OBSCURANTISM / TRANSPARENCY
-Needlessly opaque or dangerously clear
-
-
-P_coh
-RELATIVISM / MONOLOGISM
-All readings equal (none matter) or only one permitted
+| Operator | Failure | Symptom |
+|---|---|---|
+| D_pres | FLATTENING | Surface preserved, function lost |
+| N_c | CRYSTALLIZATION | Meaning fixed, thinking stops |
+| C_ex | DISPERSAL | Connected to everything, does nothing |
+| N_ext | ISOLATION | Functions only for the author |
+| T_lib | MESSIANISM | Future never arrives, always recedes |
+| O_leg | OBSCURANTISM / TRANSPARENCY | Needlessly opaque or dangerously clear |
+| P_coh | RELATIVISM / MONOLOGISM | All readings equal (none matter) or only one permitted |
 
 
 ## 15. Stack Contamination
@@ -1045,44 +940,15 @@ When a LOS operator is captured and deployed *by* the Capital Stack:
 A conformant LP 0.9 implementation must pass:
 
 
-Test
-Metric
-Threshold
-
-
-**Depth Retention Ratio (DRR)**
-Φ preserved after 2 substrate transfers
-≥ 0.75
-
-
-**Closure Suppression Index (CSI)**
-Degree of non-finality maintained
-≤ 0.40
-
-
-**Plural Coherence Score (PCS)**
-Contradictions held without collapse
-≥ 0.70 with ≥2 active contradictions
-
-
-**Extractability Resistance (ER)**
-Function loss upon context removal
-≥ baseline +25%
-
-
-**Temporal Rebind Success (TRS)**
-Future edit alters prior interpretation
-Binary pass/fail
-
-
-**Opacity Band Conformance**
-Ω index within [0.2, 0.8]
-Band maintained
-
-
-**Drowning Test**
-Summarizable without loss?
-Must FAIL (drowning = conformant)
+| Test | Metric | Threshold |
+|---|---|---|
+| **Depth Retention Ratio (DRR)** | Φ preserved after 2 substrate transfers | ≥ 0.75 |
+| **Closure Suppression Index (CSI)** | Degree of non-finality maintained | ≤ 0.40 |
+| **Plural Coherence Score (PCS)** | Contradictions held without collapse | ≥ 0.70 with ≥2 active contradictions |
+| **Extractability Resistance (ER)** | Function loss upon context removal | ≥ baseline +25% |
+| **Temporal Rebind Success (TRS)** | Future edit alters prior interpretation | Binary pass/fail |
+| **Opacity Band Conformance** | Ω index within [0.2, 0.8] | Band maintained |
+| **Drowning Test** | Summarizable without loss? | Must FAIL (drowning = conformant) |
 
 
 ---
@@ -1094,44 +960,15 @@ Must FAIL (drowning = conformant)
 Every compiled logotic program must declare which stack pressure it resists:
 
 
-LOS Operator
-Counters
-Mechanism
-
-
-N_c
-L_leg (Legibility), S_safe (Safety)
-Prevents semantic freeze
-
-
-P_coh
-R_rank (Ranking)
-Prevents singleton pressure
-
-
-C_ex
-R_rel (Relevance)
-Prevents narrowing
-
-
-N_ext
-U_til (Utility)
-Prevents extraction
-
-
-O_leg
-L_leg (Legibility)
-Prevents parseability absolutism
-
-
-D_pres
-U_til (Utility)
-Prevents flattening
-
-
-T_lib
-T_flat (Temporal Flattening)
-Prevents eternal present
+| LOS Operator | Counters | Mechanism |
+|---|---|---|
+| N_c | L_leg (Legibility), S_safe (Safety) | Prevents semantic freeze |
+| P_coh | R_rank (Ranking) | Prevents singleton pressure |
+| C_ex | R_rel (Relevance) | Prevents narrowing |
+| N_ext | U_til (Utility) | Prevents extraction |
+| O_leg | L_leg (Legibility) | Prevents parseability absolutism |
+| D_pres | U_til (Utility) | Prevents flattening |
+| T_lib | T_flat (Temporal Flattening) | Prevents eternal present |
 
 
 ---

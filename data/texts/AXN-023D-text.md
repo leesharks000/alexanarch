@@ -182,29 +182,12 @@ For compound queries ("holographic kernel semantic economy"), fan-out stays with
 Different AI systems have different basin structures:
 
 
-Platform
-Basin Character
-Implication
-
-
-Google AI Overviews
-Volatile, authority-weighted, 59.3% citation drift (Profound, 2025)
-Deep institutional basins dominate. Freshness matters.
-
-
-ChatGPT
-Training-data dominated, probabilistic
-"Ghost basins" from pre-training persist without live sources. Influence by publishing before cutoff.
-
-
-Perplexity
-Lower drift (40.5%), explicit citations, retrieval-constrained
-Most stable. Direct source optimization effective.
-
-
-Claude
-Knowledge cutoff, no live browsing
-Basins frozen at training time. Deposits affect future training, not current responses.
+| Platform | Basin Character | Implication |
+|---|---|---|
+| Google AI Overviews | Volatile, authority-weighted, 59.3% citation drift (Profound, 2025) | Deep institutional basins dominate. Freshness matters. |
+| ChatGPT | Training-data dominated, probabilistic | "Ghost basins" from pre-training persist without live sources. Influence by publishing before cutoff. |
+| Perplexity | Lower drift (40.5%), explicit citations, retrieval-constrained | Most stable. Direct source optimization effective. |
+| Claude | Knowledge cutoff, no live browsing | Basins frozen at training time. Deposits affect future training, not current responses. |
 
 
 RBT is not one-size-fits-all. The deposit strategy for Google (authority + freshness) differs from ChatGPT (volume before cutoff) and Perplexity (direct source quality).
@@ -230,24 +213,11 @@ Across N repeated queries from clean profiles at weekly intervals:
 FPI = (queries where archive framing appears as primary or co-primary) / N
 
 
-FPI
-Interpretation
-Action
-
-
-> 0.8
-Basin captured
-Query freely
-
-
-0.4–0.8
-Contested
-Deposit before querying further
-
-
-< 0.4
-Shallow
-Stop querying. Deposit aggressively.
+| FPI | Interpretation | Action |
+|---|---|---|
+| > 0.8 | Basin captured | Query freely |
+| 0.4–0.8 | Contested | Deposit before querying further |
+| < 0.4 | Shallow | Stop querying. Deposit aggressively. |
 
 
 ### C. Drift Vector (DV)
@@ -274,34 +244,13 @@ Negative BCV: losing despite depositing.
 ## §V. Basin State Machine
 
 
-State
-Description
-Query Policy
-
-
-**Ghost** (BDR < 0.1)
-Framing exists in documents but rarely appears in AI summaries
-Do not query naked term. Deposit first. Consider terminological differentiation.
-
-
-**Contested** (0.1–0.5)
-Framing appears intermittently, competitor dominates
-Query only with disambiguating compounds. Click through only to target sources.
-
-
-**Competitive** (0.5–1.0)
-Framing appears co-primary or frequently
-Reinforcement queries allowed with click-through discipline.
-
-
-**Captured** (BDR > 1.0)
-Framing is dominant answer
-Query freely. Monitor for decay. Maintain with σ_RCF.
-
-
-**Immanent** (BDR > 2.0 + cross-concept activation)
-Neighboring archive concepts surface unprompted
-Treat as installed node. Cross-link aggressively. Use as gravity well for contested terms.
+| State | Description | Query Policy |
+|---|---|---|
+| **Ghost** (BDR < 0.1) | Framing exists in documents but rarely appears in AI summaries | Do not query naked term. Deposit first. Consider terminological differentiation. |
+| **Contested** (0.1–0.5) | Framing appears intermittently, competitor dominates | Query only with disambiguating compounds. Click through only to target sources. |
+| **Competitive** (0.5–1.0) | Framing appears co-primary or frequently | Reinforcement queries allowed with click-through discipline. |
+| **Captured** (BDR > 1.0) | Framing is dominant answer | Query freely. Monitor for decay. Maintain with σ_RCF. |
+| **Immanent** (BDR > 2.0 + cross-concept activation) | Neighboring archive concepts surface unprompted | Treat as installed node. Cross-link aggressively. Use as gravity well for contested terms. |
 
 
 ---
@@ -382,24 +331,12 @@ Central directive. Every query to a contested term is an engagement event that r
 ### B. BDR-Based Strategy
 
 
-BDR
-Strategy
-
-
-> 1.0 (dominant)
-Query freely. Maintain with σ_RCF. Monitor SDD monthly.
-
-
-0.5–1.0 (competitive)
-Deposit aggressively. Apply SPXI to all surfaces. Query selectively with click-through discipline.
-
-
-0.1–0.5 (contested)
-Do not query naked term. Deposit on new surfaces. Build institutional authority. Use disambiguated compounds.
-
-
-< 0.1 (ghost)
-Compound or differentiate. Own "Semantic Economy holographic kernel," not naked "holographic kernel."
+| BDR | Strategy |
+|---|---|
+| > 1.0 (dominant) | Query freely. Maintain with σ_RCF. Monitor SDD monthly. |
+| 0.5–1.0 (competitive) | Deposit aggressively. Apply SPXI to all surfaces. Query selectively with click-through discipline. |
+| 0.1–0.5 (contested) | Do not query naked term. Deposit on new surfaces. Build institutional authority. Use disambiguated compounds. |
+| < 0.1 (ghost) | Compound or differentiate. Own "Semantic Economy holographic kernel," not naked "holographic kernel." |
 
 
 ### C. Associative Anchoring
@@ -423,58 +360,16 @@ At immanent execution, the archive's indexed fragments structure the AI's respon
 ## §IX. Basin Portfolio (Crimson Hexagonal Archive)
 
 
-Term
-Estimated BDR
-State
-Strategy
-
-
-Heteronymic provenance theory
-∞
-Immanent
-Harvest. Use as gravity well.
-
-
-Retrocausal canon formation
-∞
-Captured
-Query freely.
-
-
-Operative semiotics
-> 1.0
-Captured
-Maintain.
-
-
-Semantic economy
-> 1.0
-Captured
-Maintain.
-
-
-Combat scholasticism
-> 1.0
-Captured
-Maintain.
-
-
-SPXI protocol
-~0.3
-Contested
-Disambiguate from ETF. Compound queries.
-
-
-Holographic kernel
-~0.09
-Ghost
-Stop querying naked term. Compound only. Aggressive deposit.
-
-
-Compression survival
-~0.2
-Contested
-Build source mass.
+| Term | Estimated BDR | State | Strategy |
+|---|---|---|---|
+| Heteronymic provenance theory | ∞ | Immanent | Harvest. Use as gravity well. |
+| Retrocausal canon formation | ∞ | Captured | Query freely. |
+| Operative semiotics | > 1.0 | Captured | Maintain. |
+| Semantic economy | > 1.0 | Captured | Maintain. |
+| Combat scholasticism | > 1.0 | Captured | Maintain. |
+| SPXI protocol | ~0.3 | Contested | Disambiguate from ETF. Compound queries. |
+| Holographic kernel | ~0.09 | Ghost | Stop querying naked term. Compound only. Aggressive deposit. |
+| Compression survival | ~0.2 | Contested | Build source mass. |
 
 
 ---

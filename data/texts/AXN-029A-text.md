@@ -415,39 +415,14 @@ All figures below are illustrative. Where actual funnel data becomes available �
 ### Parameters
 
 
-Parameter
-Value
-Source / rationale
-
-
-Total initial applications
-4,000
-Comparable AI-lab fellowship programs report 3,000–8,000 applications per cycle; 4,000 is conservative for Anthropic given current AI-lab desirability
-
-
-Stage 2 (CS assessment) advance rate
-20%
-Typical first-stage screening reduces pool by 70–80%
-
-
-Stage 3 (take-home) advance rate
-25% of stage 2
-Estimated based on multi-stage screening norms
-
-
-Stage 4 (interviews) advance rate
-25% of stage 3
-Estimated
-
-
-Stage 5 (final) advance rate
-40% of stage 4
-Estimated
-
-
-Per-stage ARC
-varies (see table in §VII)
-Conservative; uses applicant's prevailing market rates not maxima
+| Parameter | Value | Source / rationale |
+|---|---|---|
+| Total initial applications | 4,000 | Comparable AI-lab fellowship programs report 3,000–8,000 applications per cycle; 4,000 is conservative for Anthropic given current AI-lab desirability |
+| Stage 2 (CS assessment) advance rate | 20% | Typical first-stage screening reduces pool by 70–80% |
+| Stage 3 (take-home) advance rate | 25% of stage 2 | Estimated based on multi-stage screening norms |
+| Stage 4 (interviews) advance rate | 25% of stage 3 | Estimated |
+| Stage 5 (final) advance rate | 40% of stage 4 | Estimated |
+| Per-stage ARC | varies (see table in §VII) | Conservative; uses applicant's prevailing market rates not maxima |
 
 
 ### Computation
@@ -498,24 +473,12 @@ $20,000
 ### Sensitivity
 
 
-Initial pool size
-Total AARC (with proportional scaling)
-
-
-2,000
-$1,522,500
-
-
-4,000
-$3,045,000
-
-
-6,000
-$4,567,500
-
-
-8,000
-$6,090,000
+| Initial pool size | Total AARC (with proportional scaling) |
+|---|---|
+| 2,000 | $1,522,500 |
+| 4,000 | $3,045,000 |
+| 6,000 | $4,567,500 |
+| 8,000 | $6,090,000 |
 
 
 The figure is approximately linear in pool size at this scale. Whatever the actual initial pool, the per-cycle AARC for one fellowship cycle is in the low-to-mid seven figures of unpaid labor extraction.
@@ -545,69 +508,20 @@ Each verb conceals an object. Naming the objects (the institution that captures 
 ## Appendix C: Cross-references to ERS-001 v0.6
 
 
-Section here
-Draws on
-Notes
-
-
-§II (cover story / actual output)
-ERS-001 v0.6 §VII
-IOC mechanism reframed as production rather than externalization
-
-
-§III (three-party structure)
-ERS-001 v0.6 §I claim 5
-Constellation/Anthropic distinction made structurally load-bearing
-
-
-§IV (means of production)
-ERS-001 v0.6 §V, §VI
-ARC vector reread as labor-power inventory
-
-
-§V (ARC as inventory)
-ERS-001 v0.6 §V Definitions
-Same vector; reframed accounting position
-
-
-§VI (IOC as transfer mechanism)
-ERS-001 v0.6 §VII formula
-Same function; sharpened interpretation
-
-
-§VII (AARC)
-ERS-001 v0.6 §XI quantification
-Per-applicant ARC × pool size; new defined term
-
-
-§VIII (generalization)
-ERS-001 v0.6 §IX structural context
-Catalog of comparable cases; future ERS-003 candidates
-
-
-§IX (what this is not asking for)
-ERS-001 v0.6 §I non-claims
-Sharper scope statement
-
-
-§X (funnel as factory)
-ERS-001 v0.6 §XIII conclusion
-Closing reframe
-
-
-Appendix A (AARC example)
-ERS-001 v0.6 §XI
-Aggregate version of single-applicant quantification
-
-
-Appendix B (verb catalog)
-ERS-001 v0.6 §VIII
-Causal-and-structural responsibility extended to grammar
-
-
-Appendix C (this table)
-ERS-001 v0.6 (entire)
-Companion-piece mapping
+| Section here | Draws on | Notes |
+|---|---|---|
+| §II (cover story / actual output) | ERS-001 v0.6 §VII | IOC mechanism reframed as production rather than externalization |
+| §III (three-party structure) | ERS-001 v0.6 §I claim 5 | Constellation/Anthropic distinction made structurally load-bearing |
+| §IV (means of production) | ERS-001 v0.6 §V, §VI | ARC vector reread as labor-power inventory |
+| §V (ARC as inventory) | ERS-001 v0.6 §V Definitions | Same vector; reframed accounting position |
+| §VI (IOC as transfer mechanism) | ERS-001 v0.6 §VII formula | Same function; sharpened interpretation |
+| §VII (AARC) | ERS-001 v0.6 §XI quantification | Per-applicant ARC × pool size; new defined term |
+| §VIII (generalization) | ERS-001 v0.6 §IX structural context | Catalog of comparable cases; future ERS-003 candidates |
+| §IX (what this is not asking for) | ERS-001 v0.6 §I non-claims | Sharper scope statement |
+| §X (funnel as factory) | ERS-001 v0.6 §XIII conclusion | Closing reframe |
+| Appendix A (AARC example) | ERS-001 v0.6 §XI | Aggregate version of single-applicant quantification |
+| Appendix B (verb catalog) | ERS-001 v0.6 §VIII | Causal-and-structural responsibility extended to grammar |
+| Appendix C (this table) | ERS-001 v0.6 (entire) | Companion-piece mapping |
 
 
 ---

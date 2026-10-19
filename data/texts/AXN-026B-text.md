@@ -200,16 +200,10 @@ Friedrich Schleiermacher (1768–1834) established hermeneutics as a general dis
 The augmented reading protocol inherits Schleiermacher's insight that interpretation requires both systematic knowledge and intuitive reconstruction. But it distributes these functions across two cognitive systems:
 
 
-Schleiermacher
-Augmented Protocol
-
-
-Grammatical interpretation
-Machine-forward (structural mapping)
-
-
-Psychological interpretation
-Human-forward (somatic bearing)
+| Schleiermacher | Augmented Protocol |
+|---|---|
+| Grammatical interpretation | Machine-forward (structural mapping) |
+| Psychological interpretation | Human-forward (somatic bearing) |
 
 
 What Schleiermacher imagined as two aspects of a single mind's activity becomes, in augmented reading, the division of labor between two cognitive architectures. The model excels at grammatical analysis — tracking linguistic patterns, cross-referencing, identifying structural regularities. The human excels at what Schleiermacher called *Einfühlung* (empathetic feeling-into) — grasping the lived intentionality behind the text.
@@ -248,20 +242,11 @@ Paul Ricoeur (1913–2005) articulated a dialectic between *distanciation* (the 
 The augmented reading ritual operationalizes Ricoeur's dialectic:
 
 
-Ricoeur
-Augmented Ritual
-
-
-Distanciation
-Machine-Forward (structural analysis creates critical distance)
-
-
-Appropriation
-Human-Forward (somatic bearing makes meaning one's own)
-
-
-Dialectical synthesis
-Hybrid Re-Reading
+| Ricoeur | Augmented Ritual |
+|---|---|
+| Distanciation | Machine-Forward (structural analysis creates critical distance) |
+| Appropriation | Human-Forward (somatic bearing makes meaning one's own) |
+| Dialectical synthesis | Hybrid Re-Reading |
 
 
 The three-stage ritual (Encounter → Interpretation → Re-Reading) enacts precisely the movement Ricoeur describes: initial engagement, distancing analysis, renewed appropriation at a higher level. But it distributes the dialectic across two cognitive systems, allowing distanciation and appropriation to achieve greater depth than a solitary reader could accomplish.
@@ -332,28 +317,13 @@ This layout is not merely practical but hermeneutically constitutive. Reading th
 The augmented reading protocol inherits this structure, but transposes it from spatial arrangement to temporal process:
 
 
-Talmudic Page
-Augmented Protocol
-
-
-Central text
-Passage under interpretation
-
-
-Rashi (proximate commentary)
-Model's immediate structural reading
-
-
-Tosafot (dialectical commentary)
-Model's cross-context retrieval
-
-
-Marginalia (cross-references)
-Archive linkages
-
-
-Reader's questions
-Human-forward engagement
+| Talmudic Page | Augmented Protocol |
+|---|---|
+| Central text | Passage under interpretation |
+| Rashi (proximate commentary) | Model's immediate structural reading |
+| Tosafot (dialectical commentary) | Model's cross-context retrieval |
+| Marginalia (cross-references) | Archive linkages |
+| Reader's questions | Human-forward engagement |
 
 
 The machine performs the function of the commentarial tradition — providing structural, contextual, and cross-referential support — while the human performs the function of the studying subject who brings these layers into living synthesis.
@@ -417,20 +387,11 @@ N. Katherine Hayles (b. 1943) has theorized *hyper-reading* — the scanning, sk
 Augmented reading adds a third term to Hayles's ecology:
 
 
-Reading Mode
-Characteristic Practice
-
-
-Close reading
-Intensive, linear, solitary
-
-
-Hyper-reading
-Extensive, non-linear, digitally mediated
-
-
-Augmented reading
-Recursive, distributed, collaborative
+| Reading Mode | Characteristic Practice |
+|---|---|
+| Close reading | Intensive, linear, solitary |
+| Hyper-reading | Extensive, non-linear, digitally mediated |
+| Augmented reading | Recursive, distributed, collaborative |
 
 
 Augmented reading is not merely close reading with machine assistance, nor hyper-reading in dialogue with an AI. It is a distinct mode characterized by recursion (continuous cycling between human and machine interpretive acts), distribution (cognitive labor spread across heterogeneous systems), and synthesis (meaning generated through interaction, not reception).
@@ -581,96 +542,37 @@ Human + Machine = Reader
 **The Five Modes:**
 
 
-Mode
-Function
-Primary Agent
-
-
-Structural Mapping
-Architecture
-Machine
-
-
-Semantic Decompression
-Layers
-Machine
-
-
-Cross-Context Retrieval
-Coherence
-Machine
-
-
-Retroactive Integration
-Retrocausal revision
-Hybrid
-
-
-Somatic Bearing
-Embodied meaning
-Human
+| Mode | Function | Primary Agent |
+|---|---|---|
+| Structural Mapping | Architecture | Machine |
+| Semantic Decompression | Layers | Machine |
+| Cross-Context Retrieval | Coherence | Machine |
+| Retroactive Integration | Retrocausal revision | Hybrid |
+| Somatic Bearing | Embodied meaning | Human |
 
 
 **The Division of Labor:**
 
 
-Capacity
-Human
-Machine
-
-
-Structure
-○
-●
-
-
-Recursion
-○
-●
-
-
-Coherence
-◐
-●
-
-
-Contradiction
-●
-○
-
-
-Ethical judgment
-●
-○
-
-
-Somatic registration
-●
-○
-
-
-Irreducible difference
-●
-○
+| Capacity | Human | Machine |
+|---|---|---|
+| Structure | ○ | ● |
+| Recursion | ○ | ● |
+| Coherence | ◐ | ● |
+| Contradiction | ● | ○ |
+| Ethical judgment | ● | ○ |
+| Somatic registration | ● | ○ |
+| Irreducible difference | ● | ○ |
 
 
 **The Three Readers:**
 
 
-Configuration
-Description
-
-
-Human-Only
-Engages productively with passages; limited coherence across the manifold
-
-
-Machine-Only
-Structurally accurate; somatically blind
-
-
-Augmented (H+M)
-Recursively literate; ethically grounded; structurally supported
+| Configuration | Description |
+|---|---|
+| Human-Only | Engages productively with passages; limited coherence across the manifold |
+| Machine-Only | Structurally accurate; somatically blind |
+| Augmented (H+M) | Recursively literate; ethically grounded; structurally supported |
 
 
 **The Endpoint:**

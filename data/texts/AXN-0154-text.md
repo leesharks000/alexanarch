@@ -115,31 +115,10 @@ The bridge here needs to be stated without ambiguity: public symbolic surfaces a
 ### The Verdict
 
 
-Paper
-AI Deployment
-Labor Impact
-Ownership
-Platform Power
-Regulation
-Score
-
-
-"The Stakes"
-✓
-✓
-✓
-✓
-✓
-**5/5**
-
-
-"Whose Face Is on the Twenty?"
-✓
-✓
-✓
-✓
-✓
-**5/5**
+| Paper | AI Deployment | Labor Impact | Ownership | Platform Power | Regulation | Score |
+|---|---|---|---|---|---|---|
+| "The Stakes" | ✓ | ✓ | ✓ | ✓ | ✓ | **5/5** |
+| "Whose Face Is on the Twenty?" | ✓ | ✓ | ✓ | ✓ | ✓ | **5/5** |
 
 
 Both removed pieces satisfy every category Rule 7 specifies. They are not off-topic. They are on-topic in a form the subreddit does not know how to handle.

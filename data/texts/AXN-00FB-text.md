@@ -183,21 +183,8 @@ You.
 **Related Identifiers:**
 
 
-Relation
-DOI
-Description
-
-
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon
-
-
-HasPart
-10.5281/zenodo.18459278
-ΣΑΠΦΩ 31 (Greek only)
-
-
-HasPart
-10.5281/zenodo.18459339
-My Tongue Gets Stuck (translation only)
+| Relation | DOI | Description |
+|---|---|---|
+| IsPartOf | 10.5281/zenodo.14538882 | Crimson Hexagon |
+| HasPart | 10.5281/zenodo.18459278 | ΣΑΠΦΩ 31 (Greek only) |
+| HasPart | 10.5281/zenodo.18459339 | My Tongue Gets Stuck (translation only) |

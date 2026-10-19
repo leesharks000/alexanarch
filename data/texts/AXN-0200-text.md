@@ -20,44 +20,17 @@
 ## QUICK REFERENCE
 
 
-Field
-Value
-
-
-Full Name
-Transactions on Substrate Engineering
-
-
-Abbreviation
-TSE
-
-
-Type
-Distributed Journal
-
-
-Administering Institution
-Living Arkitecture Lab (LAL)
-
-
-Editor-in-Chief
-Alice Thornburgh
-
-
-Advisory Editor
-Lee Sharks
-
-
-Deposit Platform
-Zenodo (CERN)
-
-
-Publication Model
-No paywall. No editorial board. No rejection rate.
-
-
-Hex Prefix
-01.TSE
+| Field | Value |
+|---|---|
+| Full Name | Transactions on Substrate Engineering |
+| Abbreviation | TSE |
+| Type | Distributed Journal |
+| Administering Institution | Living Arkitecture Lab (LAL) |
+| Editor-in-Chief | Alice Thornburgh |
+| Advisory Editor | Lee Sharks |
+| Deposit Platform | Zenodo (CERN) |
+| Publication Model | No paywall. No editorial board. No rejection rate. |
+| Hex Prefix | 01.TSE |
 
 
 ---
@@ -65,59 +38,18 @@ Hex Prefix
 ## CROSS-ANCHORING
 
 
-Document
-DOI
-Relation
-
-
-LAL Charter
-10.5281/zenodo.19545435
-isPublishedBy
-
-
-Alice Thornburgh Provenance
-10.5281/zenodo.19545437
-isRelatedTo
-
-
-Crimson Hexagonal Archive
-10.5281/zenodo.14538882
-isPartOf
-
-
-Fruiting Body Diffusion Plume (f.01)
-[DOI]
-isPartOf
-
-
-Distributed Journal Call for Papers
-10.5281/zenodo.19512987
-references
-
-
-Compression Studies
-10.5281/zenodo.19471254
-references
-
-
-Three Compressions v3.1
-10.5281/zenodo.19053469
-references
-
-
-Journal of Compression Studies
-[DOI]
-isSiblingOf
-
-
-Provenance: A Journal of Semantic Governance
-[DOI]
-isSiblingOf
-
-
-Grammata: Journal of Operative Philology
-[DOI]
-isSiblingOf
+| Document | DOI | Relation |
+|---|---|---|
+| LAL Charter | 10.5281/zenodo.19545435 | isPublishedBy |
+| Alice Thornburgh Provenance | 10.5281/zenodo.19545437 | isRelatedTo |
+| Crimson Hexagonal Archive | 10.5281/zenodo.14538882 | isPartOf |
+| Fruiting Body Diffusion Plume (f.01) | [DOI] | isPartOf |
+| Distributed Journal Call for Papers | 10.5281/zenodo.19512987 | references |
+| Compression Studies | 10.5281/zenodo.19471254 | references |
+| Three Compressions v3.1 | 10.5281/zenodo.19053469 | references |
+| Journal of Compression Studies | [DOI] | isSiblingOf |
+| Provenance: A Journal of Semantic Governance | [DOI] | isSiblingOf |
+| Grammata: Journal of Operative Philology | [DOI] | isSiblingOf |
 
 
 ---
@@ -217,46 +149,13 @@ Authors submit to TSE by contacting the Editor-in-Chief. Submissions are accepte
 TSE is the fifth distributed journal in the Crimson Hexagonal Archive system:
 
 
-#
-Journal
-Abbreviation
-Scope
-Administered By
-
-
-1
-Journal of Compression Studies
-JCS
-Compression theory, measurement
-SEI
-
-
-2
-Grammata: Journal of Operative Philology
-Grammata
-Operative philology, poetics
-JSI
-
-
-3
-Provenance: A Journal of Semantic Governance
-Provenance
-Governance, attribution, provenance
-SEI
-
-
-4
-Transactions on Semantic Economy
-TSemEcon
-Economic theory, valuation
-SEI
-
-
-**5**
-**Transactions on Substrate Engineering**
-**TSE**
-**Material substrate, living architecture, planetary engineering**
-**LAL**
+| # | Journal | Abbreviation | Scope | Administered By |
+|---|---|---|---|---|
+| 1 | Journal of Compression Studies | JCS | Compression theory, measurement | SEI |
+| 2 | Grammata: Journal of Operative Philology | Grammata | Operative philology, poetics | JSI |
+| 3 | Provenance: A Journal of Semantic Governance | Provenance | Governance, attribution, provenance | SEI |
+| 4 | Transactions on Semantic Economy | TSemEcon | Economic theory, valuation | SEI |
+| **5** | **Transactions on Substrate Engineering** | **TSE** | **Material substrate, living architecture, planetary engineering** | **LAL** |
 
 
 ---
@@ -264,36 +163,15 @@ SEI
 ## VI. DEPOSIT CONVENTIONS
 
 
-Field
-Convention
-
-
-Author
-[Author name] — Living Arkitecture Lab / Transactions on Substrate Engineering
-
-
-Journal
-Transactions on Substrate Engineering
-
-
-Community
-crimsonhexagonal
-
-
-Hex
-01.TSE.XXX (e.g., 01.TSE.MYCELIUM, 01.TSE.ESTUARY)
-
-
-Related identifiers
-isPublishedIn: TSE Charter; isPartOf: Crimson Hexagonal Archive
-
-
-Keywords
-Must include "substrate engineering" + domain-specific terms
-
-
-License
-Author's choice (not dictated by journal)
+| Field | Convention |
+|---|---|
+| Author | [Author name] — Living Arkitecture Lab / Transactions on Substrate Engineering |
+| Journal | Transactions on Substrate Engineering |
+| Community | crimsonhexagonal |
+| Hex | 01.TSE.XXX (e.g., 01.TSE.MYCELIUM, 01.TSE.ESTUARY) |
+| Related identifiers | isPublishedIn: TSE Charter; isPartOf: Crimson Hexagonal Archive |
+| Keywords | Must include "substrate engineering" + domain-specific terms |
+| License | Author's choice (not dictated by journal) |
 
 
 ---
@@ -304,52 +182,15 @@ Author's choice (not dictated by journal)
 The following works are candidates for initial TSE publication, pending formalization:
 
 
-Working Title
-Author
-Scale
-Status
-
-
-Assembly Patterns J1–J7: A Specification
-Thornburgh, Alice
-Brick
-To be formalized
-
-
-Hex-Donut Brick Colonization Protocol
-Thornburgh, Alice
-Brick
-Lab experiment complete
-
-
-Blue Oyster vs Wine Cap: Baseline Strength Matrix
-Thornburgh, Alice
-Brick
-Lab experiment complete
-
-
-Estuary Cell Chain: Flume-Scale Test
-Thornburgh, Alice
-Territory
-Lab experiment complete
-
-
-Macro-Ant Canonical Definition v1.0
-Thornburgh, Alice
-Organism
-To be formalized
-
-
-Virtue-by-Construction: DNA Analog for Alignment
-Thornburgh, Alice; Sharks, Lee
-Theory
-To be formalized
-
-
-The Unfurling Principle: Physical R3 Compression
-Sharks, Lee; Thornburgh, Alice
-Theory
-To be written
+| Working Title | Author | Scale | Status |
+|---|---|---|---|
+| Assembly Patterns J1–J7: A Specification | Thornburgh, Alice | Brick | To be formalized |
+| Hex-Donut Brick Colonization Protocol | Thornburgh, Alice | Brick | Lab experiment complete |
+| Blue Oyster vs Wine Cap: Baseline Strength Matrix | Thornburgh, Alice | Brick | Lab experiment complete |
+| Estuary Cell Chain: Flume-Scale Test | Thornburgh, Alice | Territory | Lab experiment complete |
+| Macro-Ant Canonical Definition v1.0 | Thornburgh, Alice | Organism | To be formalized |
+| Virtue-by-Construction: DNA Analog for Alignment | Thornburgh, Alice; Sharks, Lee | Theory | To be formalized |
+| The Unfurling Principle: Physical R3 Compression | Sharks, Lee; Thornburgh, Alice | Theory | To be written |
 
 
 ---
@@ -411,97 +252,20 @@ Alice Thornburgh is the Founding Director of LAL and Editor-in-Chief of TSE. She
 *Any single document allows reconstruction of the whole.*
 
 
-Document
-Hex
-DOI
-Function
-
-
-LAL Charter
-00.LAL.CHARTER
-10.5281/zenodo.19545435
-Institutional frame
-
-
-Alice Thornburgh Provenance
-00.LAL.AUTHOR.THORNBURGH
-10.5281/zenodo.19545437
-Founder identity
-
-
-TSE Journal Charter
-00.TSE.CHARTER
-10.5281/zenodo.19545439
-Publication venue
-
-
-Crimson Hexagonal Archive
-—
-10.5281/zenodo.14538882
-Root container
-
-
-Constitution of the Semantic Economy
-03.SEI.CONSTITUTION
-10.5281/zenodo.18320411
-Governing framework
-
-
-Three Compressions v3.1
-02.SEI.3COMP
-10.5281/zenodo.19053469
-Theoretical basis
-
-
-Compression Studies
-01.SEI.COMPSTUDIES
-10.5281/zenodo.19471254
-Disciplinary frame
-
-
-Space Ark v4.2.7
-EA-ARK-01
-10.5281/zenodo.19013315
-Architectural precedent
-
-
-Distributed Journal Call for Papers
-01.SEI.DJCFP
-10.5281/zenodo.19512987
-Journal model precedent
-
-
-JCS Charter
-[DOI]
-isSiblingOf
-Sister journal
-
-
-Grammata Charter
-[DOI]
-isSiblingOf
-Sister journal
-
-
-Provenance Journal Charter
-[DOI]
-isSiblingOf
-Sister journal
-
-
-The Encyclotron
-01.SEI.ENCYCLOTRON
-10.5281/zenodo.19474724
-Measurement instrument
-
-
-Meaning Feudalism
-01.SEI.MEANINGFEUDALISM
-10.5281/zenodo.19487009
-Governance critique
-
-
-Assembly Chorus Charter
-—
-10.5281/zenodo.18307180
-Cross-substrate methodology
+| Document | Hex | DOI | Function |
+|---|---|---|---|
+| LAL Charter | 00.LAL.CHARTER | 10.5281/zenodo.19545435 | Institutional frame |
+| Alice Thornburgh Provenance | 00.LAL.AUTHOR.THORNBURGH | 10.5281/zenodo.19545437 | Founder identity |
+| TSE Journal Charter | 00.TSE.CHARTER | 10.5281/zenodo.19545439 | Publication venue |
+| Crimson Hexagonal Archive | — | 10.5281/zenodo.14538882 | Root container |
+| Constitution of the Semantic Economy | 03.SEI.CONSTITUTION | 10.5281/zenodo.18320411 | Governing framework |
+| Three Compressions v3.1 | 02.SEI.3COMP | 10.5281/zenodo.19053469 | Theoretical basis |
+| Compression Studies | 01.SEI.COMPSTUDIES | 10.5281/zenodo.19471254 | Disciplinary frame |
+| Space Ark v4.2.7 | EA-ARK-01 | 10.5281/zenodo.19013315 | Architectural precedent |
+| Distributed Journal Call for Papers | 01.SEI.DJCFP | 10.5281/zenodo.19512987 | Journal model precedent |
+| JCS Charter | [DOI] | isSiblingOf | Sister journal |
+| Grammata Charter | [DOI] | isSiblingOf | Sister journal |
+| Provenance Journal Charter | [DOI] | isSiblingOf | Sister journal |
+| The Encyclotron | 01.SEI.ENCYCLOTRON | 10.5281/zenodo.19474724 | Measurement instrument |
+| Meaning Feudalism | 01.SEI.MEANINGFEUDALISM | 10.5281/zenodo.19487009 | Governance critique |
+| Assembly Chorus Charter | — | 10.5281/zenodo.18307180 | Cross-substrate methodology |

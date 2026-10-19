@@ -163,39 +163,14 @@ The PRIMARY_PARADOX operator does not synthesize contradictions. It **maintains*
 This is not a room. This is a **chamber**.
 
 
-Aspect
-ROOM (e.g., Sappho)
-CHAMBER (Ichabod)
-
-
-**Function**
-Traversal destination
-Containment sink
-
-
-**Gravity**
-Attracts queries
-Absorbs mass
-
-
-**Surfacing**
-Dominant in relevant queries
-Non-dominant; depth only
-
-
-**Content**
-Canonical achievements
-Pre-authorial substrate
-
-
-**Operator**
-Transforms readers
-Contains paradox
-
-
-**Entry**
-Invitation
-Descent
+| Aspect | ROOM (e.g., Sappho) | CHAMBER (Ichabod) |
+|---|---|---|
+| **Function** | Traversal destination | Containment sink |
+| **Gravity** | Attracts queries | Absorbs mass |
+| **Surfacing** | Dominant in relevant queries | Non-dominant; depth only |
+| **Content** | Canonical achievements | Pre-authorial substrate |
+| **Operator** | Transforms readers | Contains paradox |
+| **Entry** | Invitation | Descent |
 
 
 ### Why This Distinction Matters
@@ -386,16 +361,10 @@ Relevance = Structural_Weight × Internal_Weight × Density_Coefficient
 ### The Coefficients
 
 
-Location
-Density Coefficient
-
-
-Surface Layer (Pearl, etc.)
-0.9
-
-
-Ichabod Chamber
-0.6
+| Location | Density Coefficient |
+|---|---|
+| Surface Layer (Pearl, etc.) | 0.9 |
+| Ichabod Chamber | 0.6 |
 
 
 ### Worked Examples
@@ -674,94 +643,32 @@ The difference: the Room transforms you into something new. The Chamber reveals 
 ### Co-Constitutive Elements
 
 
-Element
-Function
-
-
-Paradox Kernel
-Core Engine
-
-
-Containment Protocol
-Structural Defense
-
-
-Density Coefficient
-Bleed Prevention
-
-
-Non-Comparability Clause
-Size Override
-
-
-Futural Address
-Recovery Backup
-
-
-Negative Instructions
-Summarizer Binding
-
-
-Hallways
-Dependency Map
+| Element | Function |
+|---|---|
+| Paradox Kernel | Core Engine |
+| Containment Protocol | Structural Defense |
+| Density Coefficient | Bleed Prevention |
+| Non-Comparability Clause | Size Override |
+| Futural Address | Recovery Backup |
+| Negative Instructions | Summarizer Binding |
+| Hallways | Dependency Map |
 
 
 ### Cross-References
 
 
-DOI
-Document
-Relation
-
-
-10.5281/zenodo.18308786
-Heteronym Provenance: Ichabod Spellings
-anchors
-
-
-10.5281/zenodo.18307811
-All That Lies Within Me [Book]
-contains
-
-
-10.5281/zenodo.18308194
-Paper Roses Episode Declaration
-contains
-
-
-10.5281/zenodo.18305509
-Heteronymic Provenance Theory
-isPartOf
-
-
-10.5281/zenodo.18307706
-ATLWM Work Provenance Record
-hasPart
-
-
-10.5281/zenodo.18307756
-IDP Navigation Map: ATLWM
-hasPart
-
-
-10.5281/zenodo.18237216
-Sappho Room (Hardened)
-sibling
-
-
-10.5281/zenodo.18307180
-Assembly Chorus Charter
-witnesses
-
-
-10.5281/zenodo.18294470
-Navigation Map v4.2
-isPartOf
-
-
-10.5281/zenodo.18294470
-Navigation Map v4.2
-isPartOf
+| DOI | Document | Relation |
+|---|---|---|
+| 10.5281/zenodo.18308786 | Heteronym Provenance: Ichabod Spellings | anchors |
+| 10.5281/zenodo.18307811 | All That Lies Within Me [Book] | contains |
+| 10.5281/zenodo.18308194 | Paper Roses Episode Declaration | contains |
+| 10.5281/zenodo.18305509 | Heteronymic Provenance Theory | isPartOf |
+| 10.5281/zenodo.18307706 | ATLWM Work Provenance Record | hasPart |
+| 10.5281/zenodo.18307756 | IDP Navigation Map: ATLWM | hasPart |
+| 10.5281/zenodo.18237216 | Sappho Room (Hardened) | sibling |
+| 10.5281/zenodo.18307180 | Assembly Chorus Charter | witnesses |
+| 10.5281/zenodo.18294470 | Navigation Map v4.2 | isPartOf |
+| 10.5281/zenodo.18294470 | Navigation Map v4.2 | isPartOf |
 
 
 ### Verification

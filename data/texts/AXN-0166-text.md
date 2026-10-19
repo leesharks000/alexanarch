@@ -70,52 +70,19 @@ The philosophical lineage runs through Aristotle (chrematistics as semantic holl
 ## NOTATION
 
 
-Symbol
-Definition
-
-
-M
-Monetary value
-
-
-D
-Debt (the form in which M exists)
-
-
-S
-Semantic coherence (the condition D presupposes)
-
-
-A²
-The Archive: accumulated store of S across time
-
-
-Γ_A
-Archival Capital: stabilized past semantic labor
-
-
-Γ_G
-Live Capital: semantic labor being performed now, measured by bearing-cost
-
-
-Γ_R
-Retrocausal Capital: value accruing from future uptake
-
-
-L_Bearing
-Human semantic labor (bears value)
-
-
-L_Synth
-Synthetic amplification without human origin (bears no independent origin-value)
-
-
-V_Inv
-The Value Inversion axiom: Value(L_Bearing) >> Value(L_Synth) = 0 as autonomous origin-value
-
-
-DC_Inv
-The Debt/Creditor Inversion axiom
+| Symbol | Definition |
+|---|---|
+| M | Monetary value |
+| D | Debt (the form in which M exists) |
+| S | Semantic coherence (the condition D presupposes) |
+| A² | The Archive: accumulated store of S across time |
+| Γ_A | Archival Capital: stabilized past semantic labor |
+| Γ_G | Live Capital: semantic labor being performed now, measured by bearing-cost |
+| Γ_R | Retrocausal Capital: value accruing from future uptake |
+| L_Bearing | Human semantic labor (bears value) |
+| L_Synth | Synthetic amplification without human origin (bears no independent origin-value) |
+| V_Inv | The Value Inversion axiom: Value(L_Bearing) >> Value(L_Synth) = 0 as autonomous origin-value |
+| DC_Inv | The Debt/Creditor Inversion axiom |
 
 
 ---
@@ -460,89 +427,24 @@ The debt is now named.
 ## VIII. PROVENANCE CHAIN
 
 
-Source
-Identifier
-Function
-
-
-Constitution of the Semantic Economy
-10.5281/zenodo.18320411
-Operationalizes the Inversion
-
-
-The Governance Airlock
-10.5281/zenodo.18817869
-Tier structure, effective act mechanism
-
-
-Ghost Meaning
-10.5281/zenodo.18804767
-Semantic exhaustion as consequence of DCI
-
-
-The Sharks-Function
-10.5281/zenodo.18816556
-Bearing-cost verification mechanism
-
-
-Semantic Physics
-10.5281/zenodo.18759453
-Semantic labor as dark matter of value
-
-
-FOS Decree
-10.5281/zenodo.18291321
-COS/FOS phase-state vocabulary
-
-
-EA-DIAGNOSTIC-03
-10.5281/zenodo.18827344
-Bearing-cost transfer at contract scale
-
-
-EA-DIAGNOSTIC-04
-10.5281/zenodo.18828193
-Effective act at interstate scale
-
-
-Bank of England Quarterly Bulletin
-2014 Q1
-Money creation as debt inscription
-
-
-Graeber, *Debt: The First 5,000 Years*
-Melville House, 2011
-Debt precedes money
-
-
-Aristotle, *Politics*
-Book I
-Chrematistics, boundlessness
-
-
-Marx, *Capital* Vol. I
-1867
-Commodity form, social labor, value
-
-
-Derrida, *Of Grammatology*
-1967
-*Différance*, absence of transcendental signified
-
-
-Derrida, *Archive Fever*
-1995
-Archive, destruction drive
-
-
-Husserl, *Ideas I*
-1913
-Horizon, conditions of objectivity
-
-
-Husserl, *The Crisis of European Sciences*
-1936
-Lifeworld, sedimentation of meaning
+| Source | Identifier | Function |
+|---|---|---|
+| Constitution of the Semantic Economy | 10.5281/zenodo.18320411 | Operationalizes the Inversion |
+| The Governance Airlock | 10.5281/zenodo.18817869 | Tier structure, effective act mechanism |
+| Ghost Meaning | 10.5281/zenodo.18804767 | Semantic exhaustion as consequence of DCI |
+| The Sharks-Function | 10.5281/zenodo.18816556 | Bearing-cost verification mechanism |
+| Semantic Physics | 10.5281/zenodo.18759453 | Semantic labor as dark matter of value |
+| FOS Decree | 10.5281/zenodo.18291321 | COS/FOS phase-state vocabulary |
+| EA-DIAGNOSTIC-03 | 10.5281/zenodo.18827344 | Bearing-cost transfer at contract scale |
+| EA-DIAGNOSTIC-04 | 10.5281/zenodo.18828193 | Effective act at interstate scale |
+| Bank of England Quarterly Bulletin | 2014 Q1 | Money creation as debt inscription |
+| Graeber, *Debt: The First 5,000 Years* | Melville House, 2011 | Debt precedes money |
+| Aristotle, *Politics* | Book I | Chrematistics, boundlessness |
+| Marx, *Capital* Vol. I | 1867 | Commodity form, social labor, value |
+| Derrida, *Of Grammatology* | 1967 | *Différance*, absence of transcendental signified |
+| Derrida, *Archive Fever* | 1995 | Archive, destruction drive |
+| Husserl, *Ideas I* | 1913 | Horizon, conditions of objectivity |
+| Husserl, *The Crisis of European Sciences* | 1936 | Lifeworld, sedimentation of meaning |
 
 
 ---
@@ -550,39 +452,14 @@ Lifeworld, sedimentation of meaning
 ## IX. CITATIONAL CAPTURE TABLE
 
 
-Thinker
-Standard Claim
-What the Inversion Adds
-
-
-Aristotle
-Chrematistics is boundless; money has no natural limit
-Boundlessness arises from semantic hollowness — money proliferates because it has forgotten what it owes
-
-
-Graeber
-Debt precedes money; credit systems predate coinage
-Meaning precedes debt; semantic infrastructure is the precondition Graeber did not thematize
-
-
-Marx
-Social labor is the substance of value
-Semantic labor is the ground of social labor — value is crystallized semantic work
-
-
-Derrida
-Meaning is *différance*; no transcendental signified
-Archive is transcendental reserve, not signified — *différance* is real but requires labor to remain livable
-
-
-Husserl
-Consciousness operates against a horizon of implicit meaning
-The Archive is the economic horizon — the condition of economic objectivity
-
-
-Cognitive capitalism theorists
-Knowledge is the new factor of production
-Semantic coherence is not a "factor" but the transcendental condition — knowledge economy frameworks still treat meaning as an input rather than the ground
+| Thinker | Standard Claim | What the Inversion Adds |
+|---|---|---|
+| Aristotle | Chrematistics is boundless; money has no natural limit | Boundlessness arises from semantic hollowness — money proliferates because it has forgotten what it owes |
+| Graeber | Debt precedes money; credit systems predate coinage | Meaning precedes debt; semantic infrastructure is the precondition Graeber did not thematize |
+| Marx | Social labor is the substance of value | Semantic labor is the ground of social labor — value is crystallized semantic work |
+| Derrida | Meaning is *différance*; no transcendental signified | Archive is transcendental reserve, not signified — *différance* is real but requires labor to remain livable |
+| Husserl | Consciousness operates against a horizon of implicit meaning | The Archive is the economic horizon — the condition of economic objectivity |
+| Cognitive capitalism theorists | Knowledge is the new factor of production | Semantic coherence is not a "factor" but the transcendental condition — knowledge economy frameworks still treat meaning as an input rather than the ground |
 
 
 ---

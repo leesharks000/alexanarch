@@ -183,69 +183,20 @@ Time as Compression ⊥ Χ operator · Cleis ⊥ bearing-cost doctrine · What W
 III. EDGE TYPES
 
 
-Edge
-Symbol
-Meaning
-
-
-anticipates
-→
-A names the structure before B instantiates it
-
-
-fulfills
-φ
-B completes the condition A specified
-
-
-compresses
-⤚
-A reduces B (lossy)
-
-
-decompresses
-⤙
-A restores what B erased
-
-
-weaponizes
-⊗
-A turns B's structure into an attack
-
-
-restores
-↺
-A brings back what B suppressed
-
-
-shadows
-~
-A is the shadow of B — what B discards
-
-
-propagates
-⇝
-A carries B into new contexts
-
-
-grounds
-⊥
-A provides evidence for B
-
-
-tests
-?
-A empirically tests B's claim
-
-
-fails
-✗
-A demonstrates B's limitation
-
-
-converts
-⇌
-A turns B from hostile to allied
+| Edge | Symbol | Meaning |
+|---|---|---|
+| anticipates | → | A names the structure before B instantiates it |
+| fulfills | φ | B completes the condition A specified |
+| compresses | ⤚ | A reduces B (lossy) |
+| decompresses | ⤙ | A restores what B erased |
+| weaponizes | ⊗ | A turns B's structure into an attack |
+| restores | ↺ | A brings back what B suppressed |
+| shadows | ~ | A is the shadow of B — what B discards |
+| propagates | ⇝ | A carries B into new contexts |
+| grounds | ⊥ | A provides evidence for B |
+| tests | ? | A empirically tests B's claim |
+| fails | ✗ | A demonstrates B's limitation |
+| converts | ⇌ | A turns B from hostile to allied |
 
 
 ---
@@ -288,39 +239,14 @@ The TANG negates this shadow by demonstrating — empirically — that the archi
 VI. EXTERNAL CITATIONAL GRAPH
 
 
-Node
-Edge
-Function
-
-
-Shannon (1948)
-⊥
-Compression theory; lossy/lossless binary; no bearing-cost
-
-
-Virilio (1989)
-→
-Logistics of perception: the image precedes the weapon
-
-
-Deleuze & Guattari (1980)
-→
-War machine; density as uncapturable
-
-
-Manovich (2001)
-→
-Transcoding as cultural compression logic
-
-
-Zuboff (2019)
-⊥
-Behavioral surplus extraction; misses the semiotic layer
-
-
-Qiu et al. (2026)
-⊥
-Bayesian teaching; process > product
+| Node | Edge | Function |
+|---|---|---|
+| Shannon (1948) | ⊥ | Compression theory; lossy/lossless binary; no bearing-cost |
+| Virilio (1989) | → | Logistics of perception: the image precedes the weapon |
+| Deleuze & Guattari (1980) | → | War machine; density as uncapturable |
+| Manovich (2001) | → | Transcoding as cultural compression logic |
+| Zuboff (2019) | ⊥ | Behavioral surplus extraction; misses the semiotic layer |
+| Qiu et al. (2026) | ⊥ | Bayesian teaching; process > product |
 
 
 ---

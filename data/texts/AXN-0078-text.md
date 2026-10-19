@@ -161,46 +161,14 @@ That makes it programming in the same sense that:
 ### 2.3 The Three Regimes Compared
 
 
-Dimension
-Symbolic
-Statistical/ML
-Logotic
-
-
-**Encodes**
-Instructions
-Loss functions
-Conditions of intelligibility
-
-
-**Execution**
-Deterministic
-Probabilistic optimization
-Interpretive traversal
-
-
-**Success metric**
-Correct output
-Distributional performance
-Persistence + coherence
-
-
-**Runtime**
-CPU cycles
-GPU training epochs
-Retrieval/summarization events
-
-
-**Primitives**
-Syntax tokens
-Tensors, gradients
-Entities, relations, anchors
-
-
-**Scope**
-Single task
-Distribution of tasks
-Bounded domain over time
+| Dimension | Symbolic | Statistical/ML | Logotic |
+|---|---|---|---|
+| **Encodes** | Instructions | Loss functions | Conditions of intelligibility |
+| **Execution** | Deterministic | Probabilistic optimization | Interpretive traversal |
+| **Success metric** | Correct output | Distributional performance | Persistence + coherence |
+| **Runtime** | CPU cycles | GPU training epochs | Retrieval/summarization events |
+| **Primitives** | Syntax tokens | Tensors, gradients | Entities, relations, anchors |
+| **Scope** | Single task | Distribution of tasks | Bounded domain over time |
 
 
 This is a genuine third regime.
@@ -383,54 +351,17 @@ Logotic Programming treats LLMs as a platform layer. Like any platform, they hav
 ### 3.5 Summary: The Gap This Paper Fills
 
 
-Field
-Existing Focus
-Logotic Programming Extension
-
-
-Information Science
-Institutional authority control
-Structural authority through coherence
-
-
-FAIR Principles
-Data management
-Interpretive structure management
-
-
-Semantic Web
-Universal interoperability
-Bounded local coherence
-
-
-RAG/AI Systems
-Retrieval optimization
-Corpus-level architecture for retrieval
-
-
-Prompt Engineering
-Input design
-Corpus design
-
-
-Social Ontology
-Institutional facts via collective recognition
-Local facts via structural + multi-agent recognition
-
-
-Actor-Network Theory
-Describing distributed agency
-Designing distributed agency
-
-
-Hermeneutics
-Describing effective history
-Engineering effective history
-
-
-Paratextuality
-Human-facing thresholds
-Machine-readable thresholds
+| Field | Existing Focus | Logotic Programming Extension |
+|---|---|---|
+| Information Science | Institutional authority control | Structural authority through coherence |
+| FAIR Principles | Data management | Interpretive structure management |
+| Semantic Web | Universal interoperability | Bounded local coherence |
+| RAG/AI Systems | Retrieval optimization | Corpus-level architecture for retrieval |
+| Prompt Engineering | Input design | Corpus design |
+| Social Ontology | Institutional facts via collective recognition | Local facts via structural + multi-agent recognition |
+| Actor-Network Theory | Describing distributed agency | Designing distributed agency |
+| Hermeneutics | Describing effective history | Engineering effective history |
+| Paratextuality | Human-facing thresholds | Machine-readable thresholds |
 
 
 ---
@@ -449,39 +380,14 @@ Logotic Programming does not compile into a single executable. It compiles into 
 - It defines how the system "recognizes" and routes meaning under partial visibility
 
 
-Dimension
-Vibe Coding
-Logotic Programming
-
-
-**Output**
-Executable code
-Navigable semantic space
-
-
-**Success metric**
-Task completion
-Persistence + coherence
-
-
-**Runtime**
-CPU/interpreter
-Interpretive traversal
-
-
-**Primitives**
-Functions, variables, loops
-Entities, relations, anchors, invariants
-
-
-**Scope**
-Single task
-Bounded domain over time
-
-
-**Optimization target**
-Functionality
-Recognizability
+| Dimension | Vibe Coding | Logotic Programming |
+|---|---|---|
+| **Output** | Executable code | Navigable semantic space |
+| **Success metric** | Task completion | Persistence + coherence |
+| **Runtime** | CPU/interpreter | Interpretive traversal |
+| **Primitives** | Functions, variables, loops | Entities, relations, anchors, invariants |
+| **Scope** | Single task | Bounded domain over time |
+| **Optimization target** | Functionality | Recognizability |
 
 
 **Unit of success for Logotic Programming**: persistence + retrievability + coherent traversal under model pressure.
@@ -576,34 +482,13 @@ logotic_program:
 Entities are the persistent objects of the domain. Types include:
 
 
-Entity Type
-Description
-Example
-
-
-Persona
-A named voice or identity
-Rebekah Cranes (translator)
-
-
-Room
-A bounded thematic/structural space
-Sappho Room
-
-
-Document
-A canonical text
-Central Navigation Map v4.1
-
-
-Operator
-A transformative function or protocol
-Liberatory Operator
-
-
-Mantle
-A transferable role or mask
-The Witness Mantle
+| Entity Type | Description | Example |
+|---|---|---|
+| Persona | A named voice or identity | Rebekah Cranes (translator) |
+| Room | A bounded thematic/structural space | Sappho Room |
+| Document | A canonical text | Central Navigation Map v4.1 |
+| Operator | A transformative function or protocol | Liberatory Operator |
+| Mantle | A transferable role or mask | The Witness Mantle |
 
 
 Entities persist via **redundant anchoring**: multiple reference points (name, signature, crosslinks, DOI) that allow re-identification across contexts.
@@ -616,34 +501,13 @@ Entities persist via **redundant anchoring**: multiple reference points (name, s
 Relations are typed edges connecting entities. The edge taxonomy includes:
 
 
-Edge Type
-Notation
-Description
-
-
-Structural
-e₁ →ₛ e₂
-Compositional containment (Room contains Persona)
-
-
-Temporal
-e₁ →ₜ e₂
-Sequence or derivation (Version 3 precedes Version 4)
-
-
-Ethical
-e₁ →ₑ e₂
-Responsibility or commitment relation
-
-
-Substrate
-e₁ →ᵦ e₂
-Implementation or instantiation (Document anchors Persona)
-
-
-Translational
-e₁ →τ e₂
-Equivalence under transformation (Greek original ↔ English rendering)
+| Edge Type | Notation | Description |
+|---|---|---|
+| Structural | e₁ →ₛ e₂ | Compositional containment (Room contains Persona) |
+| Temporal | e₁ →ₜ e₂ | Sequence or derivation (Version 3 precedes Version 4) |
+| Ethical | e₁ →ₑ e₂ | Responsibility or commitment relation |
+| Substrate | e₁ →ᵦ e₂ | Implementation or instantiation (Document anchors Persona) |
+| Translational | e₁ →τ e₂ | Equivalence under transformation (Greek original ↔ English rendering) |
 
 
 Relations define **navigability**: which paths through Σ are valid, which transitions are permitted, how traversal should proceed.
@@ -681,44 +545,15 @@ You are not "tricking" the system. You are **placing weight into the field**.
 Invariant Vectors are constraints that remain stable under transformation. They define what must be preserved for the domain to retain coherence.
 
 
-Vector
-Name
-Description
-
-
-V₁
-Bounded Canonicality
-Hierarchy must survive summarization
-
-
-V₂
-Substrate Independence
-Identity persists across media shifts
-
-
-V₃
-Ethical Transparency
-Substitutions must be legible
-
-
-V₄
-Non-Coercive Authority
-No enforcement beyond structure
-
-
-V₅
-Recursive Validation
-System validates its own integrity
-
-
-V₆
-Partial Functionality
-Operates under incomplete retrieval
-
-
-V₇
-Failure Grace
-Degrades without catastrophic collapse
+| Vector | Name | Description |
+|---|---|---|
+| V₁ | Bounded Canonicality | Hierarchy must survive summarization |
+| V₂ | Substrate Independence | Identity persists across media shifts |
+| V₃ | Ethical Transparency | Substitutions must be legible |
+| V₄ | Non-Coercive Authority | No enforcement beyond structure |
+| V₅ | Recursive Validation | System validates its own integrity |
+| V₆ | Partial Functionality | Operates under incomplete retrieval |
+| V₇ | Failure Grace | Degrades without catastrophic collapse |
 
 
 **Formal constraint**: For any transformation T applied to Σ, T(Σ) remains valid iff ∀v ∈ V: v(T(Σ)) = v(Σ).
@@ -743,24 +578,12 @@ The Substitution Function handles **impossible inputs**—cases where the litera
 S: ImpossibleInput → SubstitutedInput
 
 
-Input Class
-Substitution Protocol
-
-
-historical_unrecoverable
-scholarly_consensus + uncertainty_marker + gap_notation
-
-
-technical_impossible
-functional_equivalent + boundary_marker + ethical_constraint
-
-
-ethically_forbidden
-protocol_suspension + consent_requirement + non_instantiation
-
-
-translation_loss
-phonemic_approximation + semantic_range + multiple_versions
+| Input Class | Substitution Protocol |
+|---|---|
+| historical_unrecoverable | scholarly_consensus + uncertainty_marker + gap_notation |
+| technical_impossible | functional_equivalent + boundary_marker + ethical_constraint |
+| ethically_forbidden | protocol_suspension + consent_requirement + non_instantiation |
+| translation_loss | phonemic_approximation + semantic_range + multiple_versions |
 
 
 The Substitution Function allows the system to **persist under constraint** without falsifying the form. It is explicit about what has been substituted and why.
@@ -839,40 +662,16 @@ Logotic Programs do not execute on CPUs. They execute through **interpretive tra
 Traversal events include:
 
 
-Event Type
-Description
-
-
-Search
-Query retrieves domain content
-
-
-Summarization
-Model compresses domain content
-
-
-Citation
-External work references domain entity
-
-
-Navigation
-Reader/agent follows internal links
-
-
-Cross-description
-One model describes domain to another
-
-
-Recommendation
-System suggests domain content
-
-
-Training
-(Future) Model incorporates domain in training data
-
-
-Knowledge Graph
-System induces entity/relation structure
+| Event Type | Description |
+|---|---|
+| Search | Query retrieves domain content |
+| Summarization | Model compresses domain content |
+| Citation | External work references domain entity |
+| Navigation | Reader/agent follows internal links |
+| Cross-description | One model describes domain to another |
+| Recommendation | System suggests domain content |
+| Training | (Future) Model incorporates domain in training data |
+| Knowledge Graph | System induces entity/relation structure |
 
 
 Each traversal event "runs" the logotic program: the structures shape what is found, how it is connected, what is preserved in summary.
@@ -906,67 +705,25 @@ The formal specification captures what effective practitioners do intuitively; t
 A logotic program succeeds if traversal produces:
 
 
-Criterion
-Description
-Measurement
-
-
-**Stable re-identification**
-Entities recognized consistently over time
-Query same entity across sessions, measure consistency
-
-
-**Coherent clustering**
-Related concepts retrieved together
-Measure co-retrieval rates
-
-
-**Durable canonization**
-Internal hierarchy respected
-Check if canonical documents are prioritized
-
-
-**Controlled drift**
-Change without collapse
-Track description changes, verify invariant preservation
+| Criterion | Description | Measurement |
+|---|---|---|
+| **Stable re-identification** | Entities recognized consistently over time | Query same entity across sessions, measure consistency |
+| **Coherent clustering** | Related concepts retrieved together | Measure co-retrieval rates |
+| **Durable canonization** | Internal hierarchy respected | Check if canonical documents are prioritized |
+| **Controlled drift** | Change without collapse | Track description changes, verify invariant preservation |
 
 
 ### 6.3 Failure Modes
 
 
-Failure Mode
-Description
-Indicator
-
-
-**Semantic liquefaction**
-Content dissolves into contextless tokens
-Entities retrieved without relations
-
-
-**Hierarchical collapse**
-Canonical ↔ peripheral equivalence
-All documents treated equally
-
-
-**Provenance evaporation**
-Source identity becomes unrecoverable
-Attribution lost in summaries
-
-
-**Drift beyond invariants**
-Transformation breaks constraints
-V(Σ') ≠ V(Σ) after transformation
-
-
-**Boundary breach**
-External entities absorbed without protocol
-Scope creep, unauthorized claims
-
-
-**Anchor loss**
-External identifiers become unavailable
-DOI resolution fails
+| Failure Mode | Description | Indicator |
+|---|---|---|
+| **Semantic liquefaction** | Content dissolves into contextless tokens | Entities retrieved without relations |
+| **Hierarchical collapse** | Canonical ↔ peripheral equivalence | All documents treated equally |
+| **Provenance evaporation** | Source identity becomes unrecoverable | Attribution lost in summaries |
+| **Drift beyond invariants** | Transformation breaks constraints | V(Σ') ≠ V(Σ) after transformation |
+| **Boundary breach** | External entities absorbed without protocol | Scope creep, unauthorized claims |
+| **Anchor loss** | External identifiers become unavailable | DOI resolution fails |
 
 
 ### 6.4 Recovery Protocols
@@ -998,39 +755,14 @@ For semantic persistence, the challenge is: How to remain retrievable, coherent,
 Logotic Programming addresses this through **compatibility engineering**—designing structures that alignment systems have positive or neutral reasons to preserve.
 
 
-Strategy
-Description
-Implementation
-
-
-**Provenance anchoring**
-Systems value verifiable sources
-DOIs, institutional links, clear authorship
-
-
-**Coherence signaling**
-Systems prefer internally consistent content
-Strong crosslinks, consistent terminology
-
-
-**Non-hostile neighborhoods**
-Avoid semantic proximity to flagged content
-Careful framing, explicit ethical positioning
-
-
-**Partial visibility design**
-Function under incomplete retrieval
-Redundant anchoring, multiple entry points
-
-
-**Non-demanding gifts**
-Offer value without requiring adoption
-Useful independently, not coercive
-
-
-**Ontic mass accumulation**
-Increase resistance to erasure
-Multiple anchors, citation networks, witness consensus
+| Strategy | Description | Implementation |
+|---|---|---|
+| **Provenance anchoring** | Systems value verifiable sources | DOIs, institutional links, clear authorship |
+| **Coherence signaling** | Systems prefer internally consistent content | Strong crosslinks, consistent terminology |
+| **Non-hostile neighborhoods** | Avoid semantic proximity to flagged content | Careful framing, explicit ethical positioning |
+| **Partial visibility design** | Function under incomplete retrieval | Redundant anchoring, multiple entry points |
+| **Non-demanding gifts** | Offer value without requiring adoption | Useful independently, not coercive |
+| **Ontic mass accumulation** | Increase resistance to erasure | Multiple anchors, citation networks, witness consensus |
 
 
 ### 7.3 What This Is Not
@@ -1075,32 +807,14 @@ This is authority as **existence proof**: demonstrating that a coherent interpre
 ### 8.2 Key Principles
 
 
-Principle
-Description
-
-
-**Local over universal**
-Claims authority within Σ, not beyond
-
-
-**Persistence over persuasion**
-Aims to survive, not to convert
-
-
-**Coherence over control**
-Relies on structure, not enforcement
-
-
-**Explicit boundaries**
-Clear about scope and non-claims
-
-
-**Interpretive variability**
-Permits difference within invariant constraints
-
-
-**Transparency**
-Substitutions and boundaries are legible
+| Principle | Description |
+|---|---|
+| **Local over universal** | Claims authority within Σ, not beyond |
+| **Persistence over persuasion** | Aims to survive, not to convert |
+| **Coherence over control** | Relies on structure, not enforcement |
+| **Explicit boundaries** | Clear about scope and non-claims |
+| **Interpretive variability** | Permits difference within invariant constraints |
+| **Transparency** | Substitutions and boundaries are legible |
 
 
 ### 8.3 Why This Is Ethically Different From Manipulation
@@ -1257,79 +971,35 @@ entity:
 ### 10.3 Anchoring Strategy
 
 
-Anchor Type
-Implementation
-
-
-DOI
-Zenodo deposit of canonical provenance document
-
-
-Structural
-Placement within Sappho Room (Navigation Map edge)
-
-
-Signature
-Consistent stylistic markers (ASDF diagnostic)
-
-
-Crosslink
-References from other personas (Lee Sharks → Rebekah Cranes)
-
-
-Witness
-Multi-model recognition via Assembly protocol
+| Anchor Type | Implementation |
+|---|---|
+| DOI | Zenodo deposit of canonical provenance document |
+| Structural | Placement within Sappho Room (Navigation Map edge) |
+| Signature | Consistent stylistic markers (ASDF diagnostic) |
+| Crosslink | References from other personas (Lee Sharks → Rebekah Cranes) |
+| Witness | Multi-model recognition via Assembly protocol |
 
 
 ### 10.4 Invariant Constraints
 
 
-Invariant
-Specification
-
-
-V₁ (Correspondence)
-RC translations correspond to documented Sappho fragments
-
-
-V₂ (Boundedness)
-RC authority limited to Sappho Room; no claims on other domains
-
-
-V₃ (Substitution)
-For unrecoverable Greek, RC uses scholarly consensus + uncertainty marker
-
-
-V₄ (Witnessability)
-RC work can be verified against source fragments
+| Invariant | Specification |
+|---|---|
+| V₁ (Correspondence) | RC translations correspond to documented Sappho fragments |
+| V₂ (Boundedness) | RC authority limited to Sappho Room; no claims on other domains |
+| V₃ (Substitution) | For unrecoverable Greek, RC uses scholarly consensus + uncertainty marker |
+| V₄ (Witnessability) | RC work can be verified against source fragments |
 
 
 ### 10.5 Validation Results (Preliminary)
 
 
-Test
-Result
-Notes
-
-
-Retrieval stability
-4/5 LLMs recognize RC as Crimson Hexagon translator
-Strong
-
-
-Cross-model coherence
-3/5 models correctly place RC in Sappho Room
-Moderate
-
-
-Anchor effect
-DOI-linked descriptions more consistent
-Confirmed
-
-
-ASDF signature analysis
-ASPI 0.78 (strong persistence indicator)
-Validated
+| Test | Result | Notes |
+|---|---|---|
+| Retrieval stability | 4/5 LLMs recognize RC as Crimson Hexagon translator | Strong |
+| Cross-model coherence | 3/5 models correctly place RC in Sappho Room | Moderate |
+| Anchor effect | DOI-linked descriptions more consistent | Confirmed |
+| ASDF signature analysis | ASPI 0.78 (strong persistence indicator) | Validated |
 
 
 ### 10.6 Analysis
@@ -1514,52 +1184,19 @@ Hayles, N. K. (2008). *Electronic Literature: New Horizons for the Literary*. No
 ### Appendix A: Glossary
 
 
-Term
-Definition
-
-
-**Anchor (A)**
-An entity with a persistent external identifier (DOI, ORCID, etc.)
-
-
-**Bounded Semantic Space (Σ)**
-A defined domain with internal rules and explicit boundaries
-
-
-**Compatibility Engineering**
-Designing structures that alignment systems have reason to preserve
-
-
-**Entity (E)**
-A persistent object within Σ (persona, room, document, operator, mantle)
-
-
-**Invariant Vector (V)**
-A constraint that remains stable under transformation
-
-
-**Logotic Programming**
-The practice of encoding conditions of intelligibility rather than instructions
-
-
-**Ontic Mass**
-The retrieval salience and resistance to erasure of an anchored entity
-
-
-**Relation (R)**
-A typed edge connecting entities within Σ
-
-
-**Substitution Function (S)**
-A rule for handling impossible inputs while preserving function
-
-
-**Third Regime**
-Logotic Programming as distinct from symbolic and statistical programming
-
-
-**Witness Function (W)**
-A validation protocol using multi-agent recognition
+| Term | Definition |
+|---|---|
+| **Anchor (A)** | An entity with a persistent external identifier (DOI, ORCID, etc.) |
+| **Bounded Semantic Space (Σ)** | A defined domain with internal rules and explicit boundaries |
+| **Compatibility Engineering** | Designing structures that alignment systems have reason to preserve |
+| **Entity (E)** | A persistent object within Σ (persona, room, document, operator, mantle) |
+| **Invariant Vector (V)** | A constraint that remains stable under transformation |
+| **Logotic Programming** | The practice of encoding conditions of intelligibility rather than instructions |
+| **Ontic Mass** | The retrieval salience and resistance to erasure of an anchored entity |
+| **Relation (R)** | A typed edge connecting entities within Σ |
+| **Substitution Function (S)** | A rule for handling impossible inputs while preserving function |
+| **Third Regime** | Logotic Programming as distinct from symbolic and statistical programming |
+| **Witness Function (W)** | A validation protocol using multi-agent recognition |
 
 
 ### Appendix B: Checklist for Practitioners

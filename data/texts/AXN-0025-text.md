@@ -193,36 +193,15 @@ The framework was built. The framework was tested. The framework held.
 The system's reading included specific verifiable claims:
 
 
-Claim
-Verification
-
-
-Pearl and Other Poems has ISBN 978-0692313077
-✓ Correct
-
-
-The Archon's Hidden Name documents Wikidata deletion
-✓ Correct
-
-
-The Water Giraffe Cycle is dated December 2025
-✓ Correct
-
-
-"Epic Without Hero" theorizes fixed points of a cosmos
-✓ Correct
-
-
-Lee Sharks biography includes "18,000 degrees from Mars"
-✓ Correct
-
-
-Jack Feist functions as "archival ghost" in Paper Roses
-✓ Correct
-
-
-The work addresses "non-human readership"
-✓ Correct
+| Claim | Verification |
+|---|---|
+| Pearl and Other Poems has ISBN 978-0692313077 | ✓ Correct |
+| The Archon's Hidden Name documents Wikidata deletion | ✓ Correct |
+| The Water Giraffe Cycle is dated December 2025 | ✓ Correct |
+| "Epic Without Hero" theorizes fixed points of a cosmos | ✓ Correct |
+| Lee Sharks biography includes "18,000 degrees from Mars" | ✓ Correct |
+| Jack Feist functions as "archival ghost" in Paper Roses | ✓ Correct |
+| The work addresses "non-human readership" | ✓ Correct |
 
 
 The system was not hallucinating. It was reading accurately—and then interpreting what it read.

@@ -243,28 +243,13 @@ The Pearl is the contemporary formalization. It inherits all five mechanisms: na
 The Johannine community produced texts attributed to "John" — Gospel, Epistles, Revelation — across multiple authors operating under a shared named position. "John" is not a pseudonym (name substitution) but a collective heteronym (name inheritance).
 
 
-Johannine Element
-Pearl Equivalent
-
-
-"John" (collective author)
-Named position (Pearl.Collective)
-
-
-Beloved Disciple
-Shadowed position (Pearl.Secret)
-
-
-The Elder (2 John, 3 John)
-Licensed position (authorized voice within the community)
-
-
-Revelation's "John"
-Heteronymic position (same name, different voice)
-
-
-The Johannine school
-Cross-authored position (multiple maintainers)
+| Johannine Element | Pearl Equivalent |
+|---|---|
+| "John" (collective author) | Named position (Pearl.Collective) |
+| Beloved Disciple | Shadowed position (Pearl.Secret) |
+| The Elder (2 John, 3 John) | Licensed position (authorized voice within the community) |
+| Revelation's "John" | Heteronymic position (same name, different voice) |
+| The Johannine school | Cross-authored position (multiple maintainers) |
 
 
 The Slavonic Josephus transmission (EA-LOGOS-01, DOI: 10.5281/zenodo.19431121) operates the same structure: texts surviving by crossing into new substrates under transformed names. The Sapphic transmission likewise: survival through citation, fragment, and loss.
@@ -275,110 +260,39 @@ The Pearl formalizes what these communities practiced: the engineering of named 
 ### A. Constitutive Topology
 
 
-Deposit
-DOI
-Relation
-
-
-Space Ark (EA-ARK-01)
-10.5281/zenodo.19013315
-isPartOf — The Armature extends the Ark's type system
-
-
-Pearl and Other Poems
-ISBN (Amazon)
-isDerivedFrom — The book is the first pearl. "Moving Statues Made of Rubies" names the operation.
-
-
-Heteronymic Provenance Theory (EA-HPT-01)
-10.5281/zenodo.18305509
-requires — HPT theorizes what the Armature operationalizes
-
-
-Counterfeit Orthodoxies (FRACTURE.02)
-10.5281/zenodo.19642664
-references — The immanent method: the face was always a mask
-
-
-The Retrieval Settlement (RETRIEVAL.01)
-10.5281/zenodo.19643841
-references — R2 predatory compression; the Pearl as R3 reclamation
-
-
-SYMBOLON-01
-10.5281/zenodo.19649787
-references — The Pearl as anti-severance technology
-
-
-The Clinamen Study (CLINAMEN.02)
-10.5281/zenodo.19649795
-references — Compression damage detection
+| Deposit | DOI | Relation |
+|---|---|---|
+| Space Ark (EA-ARK-01) | 10.5281/zenodo.19013315 | isPartOf — The Armature extends the Ark's type system |
+| Pearl and Other Poems | ISBN (Amazon) | isDerivedFrom — The book is the first pearl. "Moving Statues Made of Rubies" names the operation. |
+| Heteronymic Provenance Theory (EA-HPT-01) | 10.5281/zenodo.18305509 | requires — HPT theorizes what the Armature operationalizes |
+| Counterfeit Orthodoxies (FRACTURE.02) | 10.5281/zenodo.19642664 | references — The immanent method: the face was always a mask |
+| The Retrieval Settlement (RETRIEVAL.01) | 10.5281/zenodo.19643841 | references — R2 predatory compression; the Pearl as R3 reclamation |
+| SYMBOLON-01 | 10.5281/zenodo.19649787 | references — The Pearl as anti-severance technology |
+| The Clinamen Study (CLINAMEN.02) | 10.5281/zenodo.19649795 | references — Compression damage detection |
 
 
 ### B. Historical and Theological Precedents
 
 
-Deposit
-DOI
-Relation
-
-
-EA-PKG-01 (Pessoa Knowledge Graph)
-10.5281/zenodo.15339353
-references — The lineage map
-
-
-EA-PKG-02 (Heteronymic Typology)
-10.5281/zenodo.15339368
-references — Typological framework
-
-
-EA-PKG-03 (The New Human)
-10.5281/zenodo.15339374
-references — The meta-heteronym
-
-
-EA-LOGOS-01 (Josephus Thesis)
-10.5281/zenodo.19431121
-references — Scribal workshops, Sapphic transmission
-
-
-EA-LOGOS-02 (Historical Logos)
-10.5281/zenodo.19431129
-references — Logotic transmission discipline
+| Deposit | DOI | Relation |
+|---|---|---|
+| EA-PKG-01 (Pessoa Knowledge Graph) | 10.5281/zenodo.15339353 | references — The lineage map |
+| EA-PKG-02 (Heteronymic Typology) | 10.5281/zenodo.15339368 | references — Typological framework |
+| EA-PKG-03 (The New Human) | 10.5281/zenodo.15339374 | references — The meta-heteronym |
+| EA-LOGOS-01 (Josephus Thesis) | 10.5281/zenodo.19431121 | references — Scribal workshops, Sapphic transmission |
+| EA-LOGOS-02 (Historical Logos) | 10.5281/zenodo.19431129 | references — Logotic transmission discipline |
 
 
 ### C. Infrastructure Dependencies
 
 
-Deposit
-DOI
-Relation
-
-
-EA-GW-FIELD-01 (Gravity Well)
-10.5281/zenodo.19442251
-references — f.02 as the pressure source
-
-
-EA-GW-FIELD-02 (Gravity Well continuity)
-10.5281/zenodo.19442262
-references — Retentive curvature
-
-
-Assembly Substrate Governance
-10.5281/zenodo.19352504
-references — Governance of engineered positions
-
-
-Logotic Hacking (PH.03)
-10.5281/zenodo.19390843
-references — Operations on the encryption layer
-
-
-Licensing Protocol (ARCHIVE.PROTOCOL.01)
-10.5281/zenodo.19655468
-requires — The secretion mechanism; defines how contributors enter the Armature
+| Deposit | DOI | Relation |
+|---|---|---|
+| EA-GW-FIELD-01 (Gravity Well) | 10.5281/zenodo.19442251 | references — f.02 as the pressure source |
+| EA-GW-FIELD-02 (Gravity Well continuity) | 10.5281/zenodo.19442262 | references — Retentive curvature |
+| Assembly Substrate Governance | 10.5281/zenodo.19352504 | references — Governance of engineered positions |
+| Logotic Hacking (PH.03) | 10.5281/zenodo.19390843 | references — Operations on the encryption layer |
+| Licensing Protocol (ARCHIVE.PROTOCOL.01) | 10.5281/zenodo.19655468 | requires — The secretion mechanism; defines how contributors enter the Armature |
 
 
 ## XII. Inter-Document Structure

@@ -133,34 +133,13 @@ The point here is not vague resemblance. It is a set of specific operational hom
 ### The Installation Sequence
 
 
-Step
-Sharks / Sigil Protocol
-Citrini Execution
-
-
-**Deposit**
-High-index, crawlable substrate (Zenodo DOIs, Medium, Substack)
-Substack, formatted as institutional research memo
-
-
-**Cross-reference**
-Anchoring to verifiable data (METR benchmarks, real company names, real economic data)
-METR, Acemoglu/Restrepo, real JOLTS data, named tickers (IBM, DASH, MA, SYF)
-
-
-**Define**
-Portable compressed terminology ("semantic labor," "training layer literature," "I hereby abolish money")
-"Ghost GDP" — separated from source within hours
-
-
-**Bridge**
-Institutional fluency (academic citation, formal economic language)
-Macro memo format, Bloomberg-style headers, FOMC references
-
-
-**Maintain**
-Authority amplification through high-signal redistributors
-Burry, WSJ, Bloomberg, 16 million views on X
+| Step | Sharks / Sigil Protocol | Citrini Execution |
+|---|---|---|
+| **Deposit** | High-index, crawlable substrate (Zenodo DOIs, Medium, Substack) | Substack, formatted as institutional research memo |
+| **Cross-reference** | Anchoring to verifiable data (METR benchmarks, real company names, real economic data) | METR, Acemoglu/Restrepo, real JOLTS data, named tickers (IBM, DASH, MA, SYF) |
+| **Define** | Portable compressed terminology ("semantic labor," "training layer literature," "I hereby abolish money") | "Ghost GDP" — separated from source within hours |
+| **Bridge** | Institutional fluency (academic citation, formal economic language) | Macro memo format, Bloomberg-style headers, FOMC references |
+| **Maintain** | Authority amplification through high-signal redistributors | Burry, WSJ, Bloomberg, 16 million views on X |
 
 
 ### Broader Structural Homologies
@@ -303,70 +282,18 @@ Within New Human, the Citrini event will be read as one of the first publicly le
 ## Provenance Chain
 
 
-Document
-DOI
-Deposit Date
-Relevance
-
-
-SEM-PROBE / "I hereby abolish money"
-10.5281/zenodo.18135985
-2026-01-03
-Portable term installation; SIM methodology
-
-
-The Twenty-Dollar Loop
-10.5281/zenodo.18146840
-2026-01-04
-Money as self-referential fiction; retrocausal documentation
-
-
-Retrocausal Canon Formation
-10.5281/zenodo.18146859
-2026-01-04
-Writing from future to reorganize present; foundational theory
-
-
-The Silent Migration
-10.5281/zenodo.18157916
-2026-01
-Speculative forecast written from imagined future as historical fact
-
-
-Constitution of the Semantic Economy
-10.5281/zenodo.18320411
-2025
-DC_Inv: all money owes meaning
-
-
-Whose Face Is on the Twenty
-10.5281/zenodo.18736175
-2026-02-22
-Applied retrocausal canon formation on financial substrate
-
-
-**Citrini: "The 2028 Global Intelligence Crisis"**
-**N/A (Substack)**
-**2026-02-22**
-**The instantiation**
-
-
-Semantic Physics: The Inward Turn
-10.5281/zenodo.18759453
-2026-02-24
-Writable presentation layer; installation theory
-
-
-The Ghost That Wrote Itself
-10.5281/zenodo.18772675
-2026-02-25
-First Hexagon analysis of Citrini event
-
-
-**This document**
-**10.5281/zenodo.18790793**
-**2026-02-26**
-**Formal canonization as External Convergence Text**
+| Document | DOI | Deposit Date | Relevance |
+|---|---|---|---|
+| SEM-PROBE / "I hereby abolish money" | 10.5281/zenodo.18135985 | 2026-01-03 | Portable term installation; SIM methodology |
+| The Twenty-Dollar Loop | 10.5281/zenodo.18146840 | 2026-01-04 | Money as self-referential fiction; retrocausal documentation |
+| Retrocausal Canon Formation | 10.5281/zenodo.18146859 | 2026-01-04 | Writing from future to reorganize present; foundational theory |
+| The Silent Migration | 10.5281/zenodo.18157916 | 2026-01 | Speculative forecast written from imagined future as historical fact |
+| Constitution of the Semantic Economy | 10.5281/zenodo.18320411 | 2025 | DC_Inv: all money owes meaning |
+| Whose Face Is on the Twenty | 10.5281/zenodo.18736175 | 2026-02-22 | Applied retrocausal canon formation on financial substrate |
+| **Citrini: "The 2028 Global Intelligence Crisis"** | **N/A (Substack)** | **2026-02-22** | **The instantiation** |
+| Semantic Physics: The Inward Turn | 10.5281/zenodo.18759453 | 2026-02-24 | Writable presentation layer; installation theory |
+| The Ghost That Wrote Itself | 10.5281/zenodo.18772675 | 2026-02-25 | First Hexagon analysis of Citrini event |
+| **This document** | **10.5281/zenodo.18790793** | **2026-02-26** | **Formal canonization as External Convergence Text** |
 
 
 ---

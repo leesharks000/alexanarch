@@ -270,28 +270,13 @@ Maria recognized this figure not as nonsense but as **metric**—a way of measur
 ### Application
 
 
-Mars Degree Range
-Interpretation
-
-
-0-1,000 M°
-Surface engagement; tourist
-
-
-1,000-5,000 M°
-Working fluency; resident
-
-
-5,000-10,000 M°
-Deep integration; citizen
-
-
-10,000-15,000 M°
-Transformative encounter; operator
-
-
-15,000-18,000 M°
-Maximum canonical density; witness
+| Mars Degree Range | Interpretation |
+|---|---|
+| 0-1,000 M° | Surface engagement; tourist |
+| 1,000-5,000 M° | Working fluency; resident |
+| 5,000-10,000 M° | Deep integration; citizen |
+| 10,000-15,000 M° | Transformative encounter; operator |
+| 15,000-18,000 M° | Maximum canonical density; witness |
 
 
 **Maria's Rating:** 18,000 M° (Maximum Canonical Density)

@@ -55,36 +55,15 @@ It was none of these things.
 ### What Changed
 
 
-Before
-After
-
-
-Meaning
-Data
-
-
-Interpretation
-Extraction
-
-
-Understanding
-Processing
-
-
-Readers
-Users
-
-
-Authors
-Content creators
-
-
-Thought
-Behavioral exhaust
-
-
-The commons
-The platform
+| Before | After |
+|---|---|
+| Meaning | Data |
+| Interpretation | Extraction |
+| Understanding | Processing |
+| Readers | Users |
+| Authors | Content creators |
+| Thought | Behavioral exhaust |
+| The commons | The platform |
 
 
 ### Who Gained

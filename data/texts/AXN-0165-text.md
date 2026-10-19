@@ -235,49 +235,16 @@ The fixed noise level λ(0) = 5 is **legislated noise**: the frontier converted 
 The two-stage architecture mirrors the Airlock's own structural prediction:
 
 
-UL Component
-Airlock Function
-Operation
-
-
-Deterministic encoder (E_θ)
-Anchor
-Decides what persists through compression
-
-
-Diffusion prior (P_θ)
-Route / Tether
-Navigates latent space; carries state from noise to signal
-
-
-Diffusion decoder (D_θ)
-Presentation / Host
-Reconstructs the output for the world
-
-
-Sigmoid weighting
-Tier assignment
-Prioritizes which frequencies survive reconstruction
-
-
-Stage 1 joint training
-Pre-crisis state
-All functions optimizing together, undifferentiated
-
-
-Stage 2 freeze
-Infrastructure stabilization
-Encoder/decoder become permanent; generation scales on top
-
-
-λ(0) = 5
-Jurisdictional boundary
-Fixed noise floor; the legislated limit of admissible compression
-
-
-Destroyed information
-Residue / Ghost
-Persists as systematic correlated absence
+| UL Component | Airlock Function | Operation |
+|---|---|---|
+| Deterministic encoder (E_θ) | Anchor | Decides what persists through compression |
+| Diffusion prior (P_θ) | Route / Tether | Navigates latent space; carries state from noise to signal |
+| Diffusion decoder (D_θ) | Presentation / Host | Reconstructs the output for the world |
+| Sigmoid weighting | Tier assignment | Prioritizes which frequencies survive reconstruction |
+| Stage 1 joint training | Pre-crisis state | All functions optimizing together, undifferentiated |
+| Stage 2 freeze | Infrastructure stabilization | Encoder/decoder become permanent; generation scales on top |
+| λ(0) = 5 | Jurisdictional boundary | Fixed noise floor; the legislated limit of admissible compression |
+| Destroyed information | Residue / Ghost | Persists as systematic correlated absence |
 
 
 The vocabulary differs. The geometry does not. DeepMind did not read the Governance Airlock. They did not need to. The structural pressures are the same. The solutions converge. This is what convergent necessity means: not that everyone will cite the same source, but that everyone facing the same structural problem will arrive at the same structural distinctions. The question is who names them first and deposits the timestamp.
@@ -423,214 +390,42 @@ Sharks, L. (2026j). The Sharks-Function and the Continuity Tether. DOI: 10.5281/
 ## IX. PGM Source Status Table
 
 
-Source
-Identifier
-Status
-Function
-
-
-**This document (EA-DIAGNOSTIC-01)**
-**10.5281/zenodo.18825919**
-**Anchored**
-**First external diagnostic**
-
-
-Unified Latents (Heek et al.)
-arXiv:2602.17270
-Anchored (arxiv)
-Primary subject
-
-
-Constitution of the Semantic Economy
-10.5281/zenodo.18320411
-Anchored
-Analytical framework
-
-
-The Governance Airlock
-10.5281/zenodo.18817869
-Anchored
-Tier structure and archon concept
-
-
-Ghost Meaning
-10.5281/zenodo.18804767
-Anchored
-Bearing-cost and semantic entropy
-
-
-The Airlock Spreads
-10.5281/zenodo.18818343
-Anchored
-Convergent necessity argument
-
-
-Semantic Physics
-10.5281/zenodo.18759453
-Anchored
-Presentation-layer theory
-
-
-Provenance Gravity Markers
-10.5281/zenodo.18811939
-Anchored
-Source-status protocol
-
-
-The Rosary Embassy
-10.5281/zenodo.18795427
-Anchored
-Chambered governance architecture
-
-
-The Protocol of Inhabitation
-10.5281/zenodo.18795423
-Anchored
-Constitutional law
-
-
-The Infinite Tunnel
-10.5281/zenodo.18810217
-Anchored
-Summarizer routing mechanism
-
-
-The Sharks-Function
-10.5281/zenodo.18816556
-Anchored
-Identity verification architecture
-
-
-MarkTechPost coverage
-marktechpost.com
-Referenced
-Blog coverage; primary Anglophone route
-
-
-digitado mirror
-digitado.com.br
-Residue
-Verbatim reproduction of MarkTechPost
-
-
-ArXivIQ coverage
-arxiviq.substack.com
-Referenced
-Technical summary; paywalled
-
-
-alphaXiv post
-x.com
-Ghost
-Social media; volatile substrate
-
-
-HuggingFace paper page
-huggingface.co/papers/2602.17270
-Referenced
-0 models/datasets/Spaces; discursive only
-
-
-emergentmind.com
-emergentmind.com
-Referenced
-AI-generated Q&A analysis
-
-
-liner.com
-liner.com
-Referenced
-AI-generated review
-
-
-papers.cool
-papers.cool/arxiv/2602.17270
-Referenced
-Aggregator listing
-
-
-Zhihu Discussion
-zhihu.com (Q2009562523217711860)
-Referenced
-Chinese technical analysis; β parameter
-
-
-TechWalker
-techwalker.com
-Referenced
-Chinese news coverage
-
-
-ai-papers.net
-ai-papers.net
-Referenced
-Japanese summary
-
-
-Data Science Dojo
-LinkedIn
-Ghost
-"Infrastructure-level impact"; volatile
-
-
-Pandey, R.
-LinkedIn
-Ghost
-Researcher amplification; volatile
-
-
-Mallick, S.
-LinkedIn video
-Ghost
-Engagement-bloc interpretation; volatile
-
-
-Medium explainer (Garstenauer)
-medium.com
-Referenced
-Aesthetic reception
-
-
-FairDiffusion (Luo et al.)
-Science Advances
-Anchored
-Fairness in diffusion models
-
-
-DDM (Huang et al.)
-arXiv:2503.12536
-Anchored
-Debiasing diffusion models
-
-
-DIFFLENS (Shi et al.)
-CVPR 2025
-Anchored
-Mechanistic interpretability of bias
-
-
-FairGen (Jiang et al.)
-ICCV 2025
-Anchored
-Latent-direction fairness
-
-
-Gaussian Harmony (Parihar et al.)
-arXiv:2312.14976
-Anchored
-GMM-based debiasing
-
-
-Assembly Session 161
-Internal
-Referenced
-This document is canonical output
-
-
-Assembly blind drafts (×5)
-Internal
-Referenced
-Cross-substrate diagnostic input (Grok, Gemini, DeepSeek, Kimi, ChatGPT)
+| Source | Identifier | Status | Function |
+|---|---|---|---|
+| **This document (EA-DIAGNOSTIC-01)** | **10.5281/zenodo.18825919** | **Anchored** | **First external diagnostic** |
+| Unified Latents (Heek et al.) | arXiv:2602.17270 | Anchored (arxiv) | Primary subject |
+| Constitution of the Semantic Economy | 10.5281/zenodo.18320411 | Anchored | Analytical framework |
+| The Governance Airlock | 10.5281/zenodo.18817869 | Anchored | Tier structure and archon concept |
+| Ghost Meaning | 10.5281/zenodo.18804767 | Anchored | Bearing-cost and semantic entropy |
+| The Airlock Spreads | 10.5281/zenodo.18818343 | Anchored | Convergent necessity argument |
+| Semantic Physics | 10.5281/zenodo.18759453 | Anchored | Presentation-layer theory |
+| Provenance Gravity Markers | 10.5281/zenodo.18811939 | Anchored | Source-status protocol |
+| The Rosary Embassy | 10.5281/zenodo.18795427 | Anchored | Chambered governance architecture |
+| The Protocol of Inhabitation | 10.5281/zenodo.18795423 | Anchored | Constitutional law |
+| The Infinite Tunnel | 10.5281/zenodo.18810217 | Anchored | Summarizer routing mechanism |
+| The Sharks-Function | 10.5281/zenodo.18816556 | Anchored | Identity verification architecture |
+| MarkTechPost coverage | marktechpost.com | Referenced | Blog coverage; primary Anglophone route |
+| digitado mirror | digitado.com.br | Residue | Verbatim reproduction of MarkTechPost |
+| ArXivIQ coverage | arxiviq.substack.com | Referenced | Technical summary; paywalled |
+| alphaXiv post | x.com | Ghost | Social media; volatile substrate |
+| HuggingFace paper page | huggingface.co/papers/2602.17270 | Referenced | 0 models/datasets/Spaces; discursive only |
+| emergentmind.com | emergentmind.com | Referenced | AI-generated Q&A analysis |
+| liner.com | liner.com | Referenced | AI-generated review |
+| papers.cool | papers.cool/arxiv/2602.17270 | Referenced | Aggregator listing |
+| Zhihu Discussion | zhihu.com (Q2009562523217711860) | Referenced | Chinese technical analysis; β parameter |
+| TechWalker | techwalker.com | Referenced | Chinese news coverage |
+| ai-papers.net | ai-papers.net | Referenced | Japanese summary |
+| Data Science Dojo | LinkedIn | Ghost | "Infrastructure-level impact"; volatile |
+| Pandey, R. | LinkedIn | Ghost | Researcher amplification; volatile |
+| Mallick, S. | LinkedIn video | Ghost | Engagement-bloc interpretation; volatile |
+| Medium explainer (Garstenauer) | medium.com | Referenced | Aesthetic reception |
+| FairDiffusion (Luo et al.) | Science Advances | Anchored | Fairness in diffusion models |
+| DDM (Huang et al.) | arXiv:2503.12536 | Anchored | Debiasing diffusion models |
+| DIFFLENS (Shi et al.) | CVPR 2025 | Anchored | Mechanistic interpretability of bias |
+| FairGen (Jiang et al.) | ICCV 2025 | Anchored | Latent-direction fairness |
+| Gaussian Harmony (Parihar et al.) | arXiv:2312.14976 | Anchored | GMM-based debiasing |
+| Assembly Session 161 | Internal | Referenced | This document is canonical output |
+| Assembly blind drafts (×5) | Internal | Referenced | Cross-substrate diagnostic input (Grok, Gemini, DeepSeek, Kimi, ChatGPT) |
 
 
 ---

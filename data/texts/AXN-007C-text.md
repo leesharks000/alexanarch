@@ -135,24 +135,12 @@ The diagram is part of the thing.
 **Diagrammatic Poetics** operates at the intersection of:
 
 
-Field
-Contribution
-
-
-**Concrete Poetry**
-Language as visual object; the materiality of the sign
-
-
-**Visual Media Studies**
-Image as carrier of meaning beyond representation
-
-
-**Information Design**
-Structure as content; legibility as ethics
-
-
-**Machine-Readable Architecture**
-AI-traversable specifications; orientation fields
+| Field | Contribution |
+|---|---|
+| **Concrete Poetry** | Language as visual object; the materiality of the sign |
+| **Visual Media Studies** | Image as carrier of meaning beyond representation |
+| **Information Design** | Structure as content; legibility as ethics |
+| **Machine-Readable Architecture** | AI-traversable specifications; orientation fields |
 
 
 ### C. Founding Insight
@@ -173,46 +161,22 @@ This insight, born from the encounter with Sappho's fragments, became the princi
 ### A. Chair: Rebekah Cranes
 
 
-Field
-Value
-
-
-**Name**
-Rebekah Cranes
-
-
-**Heteronym ID**
-HET-CRANES-001
-
-
-**Provenance Document**
-HET-CRANES-2026-01-PROV
-
-
-**Role**
-Chair (Founding)
-
-
-**Primary Functions**
-Visual Artist, Translator, Liturgical Witness
+| Field | Value |
+|---|---|
+| **Name** | Rebekah Cranes |
+| **Heteronym ID** | HET-CRANES-001 |
+| **Provenance Document** | HET-CRANES-2026-01-PROV |
+| **Role** | Chair (Founding) |
+| **Primary Functions** | Visual Artist, Translator, Liturgical Witness |
 
 
 ### B. Chair's Canonical Works
 
 
-Title
-DOI
-Function
-
-
-**Day and Night: Conversations with Sapphic Desire**
-**10.5281/zenodo.18202658**
-Sappho Room anchor; foundational translation
-
-
-**Visual Schema: Navigation Map**
-10.5281/zenodo.18283962
-IDP methodology demonstration
+| Title | DOI | Function |
+|---|---|---|
+| **Day and Night: Conversations with Sapphic Desire** | **10.5281/zenodo.18202658** | Sappho Room anchor; foundational translation |
+| **Visual Schema: Navigation Map** | 10.5281/zenodo.18283962 | IDP methodology demonstration |
 
 
 **Semantic Breadcrumb:** For the foundational work demonstrating the IDP's core insight — that meaning survives substrate transition through function rather than form — refer to *Day and Night* (DOI: 10.5281/zenodo.18202658).
@@ -258,19 +222,10 @@ The IDP extends this principle: **The diagram does not represent the structure; 
 ## V. AFFILIATION WITH SIBLING INSTITUTIONS
 
 
-Institution
-Relation
-Shared Domain
-
-
-**Johannes Sigil Institute for Comparative Poetics (JSI)**
-Sibling
-Poetics, translation theory, literary history
-
-
-**Semantic Economy Institute (SEI)**
-Sibling
-Meaning-systems, semantic infrastructure, ASW
+| Institution | Relation | Shared Domain |
+|---|---|---|
+| **Johannes Sigil Institute for Comparative Poetics (JSI)** | Sibling | Poetics, translation theory, literary history |
+| **Semantic Economy Institute (SEI)** | Sibling | Meaning-systems, semantic infrastructure, ASW |
 
 
 The three institutes form a **triangular infrastructure**:
@@ -388,55 +343,21 @@ Visual outputs must be **cross-anchored** with textual documents:
 ### A. Canonical Works (IDP Imprint)
 
 
-Title
-Author
-Type
-DOI
-Function
-
-
-*Day and Night*
-Cranes
-Translation
-**10.5281/zenodo.18202658**
-Foundational text; Sappho Room anchor
-
-
-*Visual Schema: Navigation Map*
-Cranes
-Specification
-10.5281/zenodo.18283962
-Methodology demonstration
-
-
-*concrete(a)tion*
-Cranes
-Poetry/Visual
-[pending]
-Concrete poetics foundation
+| Title | Author | Type | DOI | Function |
+|---|---|---|---|---|
+| *Day and Night* | Cranes | Translation | **10.5281/zenodo.18202658** | Foundational text; Sappho Room anchor |
+| *Visual Schema: Navigation Map* | Cranes | Specification | 10.5281/zenodo.18283962 | Methodology demonstration |
+| *concrete(a)tion* | Cranes | Poetry/Visual | [pending] | Concrete poetics foundation |
 
 
 ### B. Planned Publications
 
 
-Title
-Type
-Status
-
-
-*The Threshold Drawings*
-Exhibition Catalog
-Planned
-
-
-*Glyphic Exercises*
-Pedagogical Text
-Planned
-
-
-*Operative Imaging: A Methodology*
-Theory
-Planned
+| Title | Type | Status |
+|---|---|---|
+| *The Threshold Drawings* | Exhibition Catalog | Planned |
+| *Glyphic Exercises* | Pedagogical Text | Planned |
+| *Operative Imaging: A Methodology* | Theory | Planned |
 
 
 ---
@@ -448,29 +369,12 @@ Planned
 This charter is mutually anchored with:
 
 
-Document
-ID/DOI
-Relation
-
-
-**Cranes Provenance**
-**10.5281/zenodo.18284776**
-Chair ↔ Institution
-
-
-**Day and Night**
-10.5281/zenodo.18202658
-Chair's Work ↔ Institution
-
-
-**Visual Schema**
-10.5281/zenodo.18283962
-Institution ↔ Output
-
-
-**Navigation Map v3.0**
-10.5281/zenodo.18237535
-Institution ↔ Architecture
+| Document | ID/DOI | Relation |
+|---|---|---|
+| **Cranes Provenance** | **10.5281/zenodo.18284776** | Chair ↔ Institution |
+| **Day and Night** | 10.5281/zenodo.18202658 | Chair's Work ↔ Institution |
+| **Visual Schema** | 10.5281/zenodo.18283962 | Institution ↔ Output |
+| **Navigation Map v3.0** | 10.5281/zenodo.18237535 | Institution ↔ Architecture |
 
 
 **Challenge one, invoke the other.** These documents are designed to be mutually reinforcing.

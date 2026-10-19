@@ -260,59 +260,18 @@ The difference — and it is the decisive difference — is ownership. Forsse li
 Forsse is the tragedy. Foreman is the manual. Together they are the complete argument.
 
 
-Dimension
-Forsse (Teddy Ruxpin)
-Foreman (Afroman)
-
-
-Medium
-Plush animatronic, cassette tape
-Live performance, digital distribution, security footage
-
-
-Media regime
-Toyetic / industrial (scale requires corporate surrender)
-Post-Napster / independent (scale is precarious but retainable)
-
-
-Infrastructure
-Licensed to Worlds of Wonder
-Self-owned since 2004
-
-
-Fate of infrastructure
-Captured, serially diluted by five successive licensees
-Kept, defended in court, vindicated
-
-
-Relation to state
-Absent (state plays no role)
-Raided, sued, defeated the state's civil claims
-
-
-Ending
-Unfinished epic (cliffhanger, no second season, no film)
-Ongoing (250 shows/year, trial won, corpus expanding)
-
-
-Duration of development
-27 years before first product
-34 years and counting
-
-
-Material poetics
-Cassette hiss, servo lag, motor failure, lossy playback
-Security camera grain, courtroom performance, flag suit
-
-
-How the child/audience completes the work
-Inserts the next tape; fills in the gaps of the unfinished epic
-Shows up to the show; shares the video; serves on the jury
-
-
-Canonized as
-The poet who built the bear
-The poet who wore the flag suit
+| Dimension | Forsse (Teddy Ruxpin) | Foreman (Afroman) |
+|---|---|---|
+| Medium | Plush animatronic, cassette tape | Live performance, digital distribution, security footage |
+| Media regime | Toyetic / industrial (scale requires corporate surrender) | Post-Napster / independent (scale is precarious but retainable) |
+| Infrastructure | Licensed to Worlds of Wonder | Self-owned since 2004 |
+| Fate of infrastructure | Captured, serially diluted by five successive licensees | Kept, defended in court, vindicated |
+| Relation to state | Absent (state plays no role) | Raided, sued, defeated the state's civil claims |
+| Ending | Unfinished epic (cliffhanger, no second season, no film) | Ongoing (250 shows/year, trial won, corpus expanding) |
+| Duration of development | 27 years before first product | 34 years and counting |
+| Material poetics | Cassette hiss, servo lag, motor failure, lossy playback | Security camera grain, courtroom performance, flag suit |
+| How the child/audience completes the work | Inserts the next tape; fills in the gaps of the unfinished epic | Shows up to the show; shares the video; serves on the jury |
+| Canonized as | The poet who built the bear | The poet who wore the flag suit |
 
 
 ### XI. The Effective Act and the Unfinished Epic

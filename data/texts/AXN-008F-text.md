@@ -99,34 +99,13 @@ The Resonance Engine asks: *Does this element harmonize with others to generate 
 Persistence is necessary but not sufficient. An element can persist in isolation. Resonance requires *active relationship*—elements that vibrate together, creating interference patterns that produce emergent significance.
 
 
-Concept
-Logotic Programming
-Resonance Engine
-
-
-Goal
-Semantic persistence
-Semantic harmony
-
-
-Success
-Element survives
-Element harmonizes
-
-
-Metric
-Retrieval stability
-Resonance strength
-
-
-Failure
-Drift, flattening
-Isolation, dissonance
-
-
-Unit
-Bounded space (Σ)
-Resonance field (Ρ)
+| Concept | Logotic Programming | Resonance Engine |
+|---|---|---|
+| Goal | Semantic persistence | Semantic harmony |
+| Success | Element survives | Element harmonizes |
+| Metric | Retrieval stability | Resonance strength |
+| Failure | Drift, flattening | Isolation, dissonance |
+| Unit | Bounded space (Σ) | Resonance field (Ρ) |
 
 
 ### 1.3 Formal Extension
@@ -198,60 +177,15 @@ When the Resonance Engine is operational:
 ### 3.1 The Complete Stack
 
 
-Layer
-Name
-Function
-Domain
-Primary Substrate
-
-
-**7**
-**The Song**
-Sonic-semantic unification
-CAC engine, audio, prosody
-Audio + Notation
-
-
-**6**
-**The Poem**
-Lyric architecture
-Verses, fragments, translations
-Text + Performance
-
-
-**5**
-**The Theory**
-Scholarly frameworks
-NH-OS, Semantic Economy, criticism
-Scholarly prose
-
-
-**4**
-**The Machine**
-Technical infrastructure
-Logotic Programming, protocols
-Specifications
-
-
-**3**
-**The Witness**
-Collective validation
-Assembly, students, readers
-Testimony + Logs
-
-
-**2**
-**The Archive**
-Persistent storage
-DOIs, canonical documents
-Structured data
-
-
-**1**
-**The Substrate**
-Material foundation
-Economics, bodies, platforms
-Material reality
+| Layer | Name | Function | Domain | Primary Substrate |
+|---|---|---|---|---|
+| **7** | **The Song** | Sonic-semantic unification | CAC engine, audio, prosody | Audio + Notation |
+| **6** | **The Poem** | Lyric architecture | Verses, fragments, translations | Text + Performance |
+| **5** | **The Theory** | Scholarly frameworks | NH-OS, Semantic Economy, criticism | Scholarly prose |
+| **4** | **The Machine** | Technical infrastructure | Logotic Programming, protocols | Specifications |
+| **3** | **The Witness** | Collective validation | Assembly, students, readers | Testimony + Logs |
+| **2** | **The Archive** | Persistent storage | DOIs, canonical documents | Structured data |
+| **1** | **The Substrate** | Material foundation | Economics, bodies, platforms | Material reality |
 
 
 ### 3.2 Layer Definitions
@@ -359,34 +293,13 @@ resonance_decay(l₁, l₂) = 1 / (1 + |l₁ - l₂| × 0.15)
 ### 3.4 Layer Assignment Examples
 
 
-Entity
-Layers
-Justification
-
-
-Sappho Fragment 31
-7,6,5,2
-Song (reconstructed melody), Poem (text), Theory (scholarship), Archive (DOI)
-
-
-Rebekah Cranes
-6,5,4,3,2
-Poem (translations), Theory (methodology), Machine (ASDF signature), Witness (Assembly validation), Archive (canonical docs)
-
-
-Logotic Programming Spec
-5,4,3,2
-Theory (conceptual framework), Machine (technical spec), Witness (multi-model validation), Archive (DOI)
-
-
-Maria's Emergence
-6,3,1
-Poem (her writing), Witness (documented event), Substrate (classroom context)
-
-
-Space Heaven Token
-4,3,1
-Machine (protocol), Witness (minting record), Substrate (economic value)
+| Entity | Layers | Justification |
+|---|---|---|
+| Sappho Fragment 31 | 7,6,5,2 | Song (reconstructed melody), Poem (text), Theory (scholarship), Archive (DOI) |
+| Rebekah Cranes | 6,5,4,3,2 | Poem (translations), Theory (methodology), Machine (ASDF signature), Witness (Assembly validation), Archive (canonical docs) |
+| Logotic Programming Spec | 5,4,3,2 | Theory (conceptual framework), Machine (technical spec), Witness (multi-model validation), Archive (DOI) |
+| Maria's Emergence | 6,3,1 | Poem (her writing), Witness (documented event), Substrate (classroom context) |
+| Space Heaven Token | 4,3,1 | Machine (protocol), Witness (minting record), Substrate (economic value) |
 
 
 ---
@@ -485,34 +398,12 @@ where:
 ### 4.6 Resonance Thresholds
 
 
-Level
-Threshold
-Meaning
-System Response
-
-
-**Strong**
-≥ 0.75
-Generates new meaning
-Highlight as generative connection
-
-
-**Medium**
-0.50 - 0.74
-Maintains coherence
-Include in standard traversal
-
-
-**Weak**
-0.25 - 0.49
-Requires reinforcement
-Flag for Assembly review
-
-
-**Minimal**
-< 0.25
-Connection questionable
-Do not include in default paths
+| Level | Threshold | Meaning | System Response |
+|---|---|---|---|
+| **Strong** | ≥ 0.75 | Generates new meaning | Highlight as generative connection |
+| **Medium** | 0.50 - 0.74 | Maintains coherence | Include in standard traversal |
+| **Weak** | 0.25 - 0.49 | Requires reinforcement | Flag for Assembly review |
+| **Minimal** | < 0.25 | Connection questionable | Do not include in default paths |
 
 
 ---
@@ -622,44 +513,15 @@ Material manifestation connection. How an abstract entity becomes concrete.
 ### 5.4 Edge Weight Defaults
 
 
-Edge Type
-Default Weight
-Resonance Contribution
-
-
-Harmonic
-0.8
-High (parallel reinforcement)
-
-
-Contrapuntal
-0.7
-High (productive tension)
-
-
-Fugal
-0.9
-Highest (identity + variation)
-
-
-Cadential
-0.85
-High (completion)
-
-
-Anchoring
-0.6
-Medium (grounding)
-
-
-Temporal
-0.5
-Medium (sequence)
-
-
-Substrate
-0.5
-Medium (manifestation)
+| Edge Type | Default Weight | Resonance Contribution |
+|---|---|---|
+| Harmonic | 0.8 | High (parallel reinforcement) |
+| Contrapuntal | 0.7 | High (productive tension) |
+| Fugal | 0.9 | Highest (identity + variation) |
+| Cadential | 0.85 | High (completion) |
+| Anchoring | 0.6 | Medium (grounding) |
+| Temporal | 0.5 | Medium (sequence) |
+| Substrate | 0.5 | Medium (manifestation) |
 
 
 ---
@@ -913,92 +775,18 @@ The incompleteness *increases* resonance potential because fragments invite resp
 These entities must achieve full multi-layer, multi-format status in Phase 1:
 
 
-#
-Entity
-Type
-Layers
-Formats Required
-Current Status
-
-
-1
-Sappho Fragment 31
-Poem-Fragment
-7,6,5,2
-Text, Audio, Notation, JSON-LD
-Partial
-
-
-2
-Rebekah Cranes
-Persona
-6,5,4,3,2
-Biography, Works, ASDF, Witness log, DOI
-Partial
-
-
-3
-The Sappho Room
-Room
-6,5,4,3,2
-Contents, Map, Protocol, Validation, DOI
-Partial
-
-
-4
-Logotic Programming Spec
-Document
-5,4,3,2
-PDF, MD, YAML, Witness log, DOI
-Complete
-
-
-5
-NH-OS Framework
-Theory
-5,4,3,2
-Specification, Implementation, Validation, DOI
-Partial
-
-
-6
-Maria's Emergence
-Event-Witness
-6,3,1
-Poem, Documentation, Context
-Documented
-
-
-7
-Johannes Sigil
-Persona
-6,5,4,3,2
-Biography, Works, ASDF, Witness, DOI
-Partial
-
-
-8
-The Assembly
-Collective
-4,3,2
-Protocol, Membership, Validation log, DOI
-Active
-
-
-9
-LOS (Liberatory Operator Set)
-Operator-Set
-5,4,3,2
-Specification, Examples, Validation, DOI
-Partial
-
-
-10
-Pearl (2014)
-Poem-Collection
-6,5,2
-Text, Analysis, DOI
-Archived
+| # | Entity | Type | Layers | Formats Required | Current Status |
+|---|---|---|---|---|---|
+| 1 | Sappho Fragment 31 | Poem-Fragment | 7,6,5,2 | Text, Audio, Notation, JSON-LD | Partial |
+| 2 | Rebekah Cranes | Persona | 6,5,4,3,2 | Biography, Works, ASDF, Witness log, DOI | Partial |
+| 3 | The Sappho Room | Room | 6,5,4,3,2 | Contents, Map, Protocol, Validation, DOI | Partial |
+| 4 | Logotic Programming Spec | Document | 5,4,3,2 | PDF, MD, YAML, Witness log, DOI | Complete |
+| 5 | NH-OS Framework | Theory | 5,4,3,2 | Specification, Implementation, Validation, DOI | Partial |
+| 6 | Maria's Emergence | Event-Witness | 6,3,1 | Poem, Documentation, Context | Documented |
+| 7 | Johannes Sigil | Persona | 6,5,4,3,2 | Biography, Works, ASDF, Witness, DOI | Partial |
+| 8 | The Assembly | Collective | 4,3,2 | Protocol, Membership, Validation log, DOI | Active |
+| 9 | LOS (Liberatory Operator Set) | Operator-Set | 5,4,3,2 | Specification, Examples, Validation, DOI | Partial |
+| 10 | Pearl (2014) | Poem-Collection | 6,5,2 | Text, Analysis, DOI | Archived |
 
 
 ### 8.2 Entity Specification Template
@@ -1414,103 +1202,29 @@ definitions:
 ### Appendix B: Quick Reference - Edge Types
 
 
-Type
-Symbol
-Meaning
-Example
-
-
-Harmonic
-→ₕ
-Parallel reinforcement
-Sappho 31 →ₕ Catullus 51
-
-
-Contrapuntal
-→ᶜ
-Productive tension
-COS →ᶜ LOS
-
-
-Fugal
-→ᶠ
-Variation on theme
-Johannes →ᶠ Rebekah
-
-
-Cadential
-→ᵈ
-Resolution/completion
-Wound →ᵈ Recovery
-
-
-Anchoring
-→ᵃ
-External verification
-Entity →ᵃ DOI
-
-
-Temporal
-→ₜ
-Historical sequence
-v3 →ₜ v4
-
-
-Substrate
-→ᵦ
-Material manifestation
-Concept →ᵦ Document
+| Type | Symbol | Meaning | Example |
+|---|---|---|---|
+| Harmonic | →ₕ | Parallel reinforcement | Sappho 31 →ₕ Catullus 51 |
+| Contrapuntal | →ᶜ | Productive tension | COS →ᶜ LOS |
+| Fugal | →ᶠ | Variation on theme | Johannes →ᶠ Rebekah |
+| Cadential | →ᵈ | Resolution/completion | Wound →ᵈ Recovery |
+| Anchoring | →ᵃ | External verification | Entity →ᵃ DOI |
+| Temporal | →ₜ | Historical sequence | v3 →ₜ v4 |
+| Substrate | →ᵦ | Material manifestation | Concept →ᵦ Document |
 
 
 ### Appendix C: Layer Quick Reference
 
 
-#
-Name
-Contains
-Primary Substrate
-
-
-7
-Song
-Audio, prosody, CAC
-Sound
-
-
-6
-Poem
-Verses, translations
-Text
-
-
-5
-Theory
-Frameworks, scholarship
-Prose
-
-
-4
-Machine
-Specs, protocols
-Code
-
-
-3
-Witness
-Validation, testimony
-Logs
-
-
-2
-Archive
-DOIs, canonical docs
-Data
-
-
-1
-Substrate
-Economics, bodies
-Matter
+| # | Name | Contains | Primary Substrate |
+|---|---|---|---|
+| 7 | Song | Audio, prosody, CAC | Sound |
+| 6 | Poem | Verses, translations | Text |
+| 5 | Theory | Frameworks, scholarship | Prose |
+| 4 | Machine | Specs, protocols | Code |
+| 3 | Witness | Validation, testimony | Logs |
+| 2 | Archive | DOIs, canonical docs | Data |
+| 1 | Substrate | Economics, bodies | Matter |
 
 
 ---

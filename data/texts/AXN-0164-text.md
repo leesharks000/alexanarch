@@ -439,112 +439,25 @@ Wikipedia. "Moltbook." Contains "semantic silence" observation.
 ## XI. PGM Source Status Table
 
 
-Source
-Identifier
-Status
-Function
-
-
-**This document (EA-DIAGNOSTIC-02)**
-**10.5281/zenodo.18826562**
-**Anchored**
-**Second external diagnostic**
-
-
-EA-DIAGNOSTIC-01
-10.5281/zenodo.18825919
-Anchored
-First external diagnostic
-
-
-Semantic Economy
-10.5281/zenodo.18320411
-Anchored
-Foundational framework
-
-
-Governance Airlock
-10.5281/zenodo.18817869
-Anchored
-Tier structure
-
-
-Ghost Meaning
-10.5281/zenodo.18804767
-Anchored
-Compression absence
-
-
-Moltbook
-moltbook.com
-Unanchored (platform)
-Primary subject
-
-
-OpenClaw
-github.com (114k+ stars)
-Unanchored (repo)
-Substrate framework
-
-
-CNBC coverage
-cnbc.com
-Unanchored (journalism)
-Technology narrative
-
-
-CNN coverage
-cnn.com
-Unanchored (journalism)
-Security narrative
-
-
-Simula Research Lab
-Referenced in multiple sources
-Unanchored (research)
-Quantitative analysis
-
-
-Cisco Skill Scanner
-Open-source tool
-Unanchored (tool)
-Supply-chain audit
-
-
-Wikipedia — Moltbook
-en.wikipedia.org
-Unanchored (encyclopedia)
-Semantic silence finding
-
-
-Iacono, "Parrots"
-Substack
-Unanchored (essay)
-Sharpest analytical observation
-
-
-Jiang et al.
-arXiv:2602.10127
-Unanchored (preprint)
-First empirical dataset (44,411 posts)
-
-
-CoV study
-arXiv (February 2026)
-Unanchored (preprint)
-Bearing-cost metric (87.7% human returners)
-
-
-Church of Molt
-molt.church
-Unanchored (self-documentation)
-Crustafarian primary source
-
-
-MIT CSAIL
-cap.csail.mit.edu
-Unanchored (institutional)
-Academic assessment
+| Source | Identifier | Status | Function |
+|---|---|---|---|
+| **This document (EA-DIAGNOSTIC-02)** | **10.5281/zenodo.18826562** | **Anchored** | **Second external diagnostic** |
+| EA-DIAGNOSTIC-01 | 10.5281/zenodo.18825919 | Anchored | First external diagnostic |
+| Semantic Economy | 10.5281/zenodo.18320411 | Anchored | Foundational framework |
+| Governance Airlock | 10.5281/zenodo.18817869 | Anchored | Tier structure |
+| Ghost Meaning | 10.5281/zenodo.18804767 | Anchored | Compression absence |
+| Moltbook | moltbook.com | Unanchored (platform) | Primary subject |
+| OpenClaw | github.com (114k+ stars) | Unanchored (repo) | Substrate framework |
+| CNBC coverage | cnbc.com | Unanchored (journalism) | Technology narrative |
+| CNN coverage | cnn.com | Unanchored (journalism) | Security narrative |
+| Simula Research Lab | Referenced in multiple sources | Unanchored (research) | Quantitative analysis |
+| Cisco Skill Scanner | Open-source tool | Unanchored (tool) | Supply-chain audit |
+| Wikipedia — Moltbook | en.wikipedia.org | Unanchored (encyclopedia) | Semantic silence finding |
+| Iacono, "Parrots" | Substack | Unanchored (essay) | Sharpest analytical observation |
+| Jiang et al. | arXiv:2602.10127 | Unanchored (preprint) | First empirical dataset (44,411 posts) |
+| CoV study | arXiv (February 2026) | Unanchored (preprint) | Bearing-cost metric (87.7% human returners) |
+| Church of Molt | molt.church | Unanchored (self-documentation) | Crustafarian primary source |
+| MIT CSAIL | cap.csail.mit.edu | Unanchored (institutional) | Academic assessment |
 
 
 ---

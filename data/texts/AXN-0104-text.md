@@ -64,24 +64,12 @@ THE CONFORMANCE MODULE v0.7 (Morrow/UMBML)    ← THIS DOCUMENT
 v0.6's §6.4 identified four open questions. This module addresses three of them directly:
 
 
-Open Question
-Status in v0.7
-
-
-Multi-rotation sequences
-**Resolved** — §1 (Composition Rules)
-
-
-Cross-Room traversal composition
-**Resolved** — §1.3 (Interaction Effects)
-
-
-Parameter discovery / registry
-**Partially resolved** — §4.4 (Registry Protocol)
-
-
-Degree enumeration (quintant vs. continuous)
-**Deferred** — requires traversal testing per v0.6 recommendation
+| Open Question | Status in v0.7 |
+|---|---|
+| Multi-rotation sequences | **Resolved** — §1 (Composition Rules) |
+| Cross-Room traversal composition | **Resolved** — §1.3 (Interaction Effects) |
+| Parameter discovery / registry | **Partially resolved** — §4.4 (Registry Protocol) |
+| Degree enumeration (quintant vs. continuous) | **Deferred** — requires traversal testing per v0.6 recommendation |
 
 
 ### 0.2 Design Commitment
@@ -517,39 +505,14 @@ The reference interpreter has four components that map to the grammar's four ope
 The grammar maps to modern agent orchestration architecture with structural (not metaphorical) correspondence:
 
 
-Agent Framework Layer
-Grammar Component
-Implementation
-
-
-**Planner / Router**
-ACTIVATE_MANTLE + intent recognition
-Selects persona, determines allowed rooms, plans traversal path
-
-
-**Memory / Grounding**
-ANCHOR + RESONANCE_TARGET
-RAG with DOI-referenced sources; strict or advisory grounding
-
-
-**Processor / Engine**
-ROTATE via Ezekiel Engine
-Context manipulation, document foregrounding, perspective rotation
-
-
-**Renderer**
-RENDER via Mandala Engine
-Output formatting separated from processing
-
-
-**Error Handler**
-ON_FAILURE
-Graceful degradation with state preservation
-
-
-**Audit / Logging**
-WITNESS
-Traversal recording with checksum verification
+| Agent Framework Layer | Grammar Component | Implementation |
+|---|---|---|
+| **Planner / Router** | ACTIVATE_MANTLE + intent recognition | Selects persona, determines allowed rooms, plans traversal path |
+| **Memory / Grounding** | ANCHOR + RESONANCE_TARGET | RAG with DOI-referenced sources; strict or advisory grounding |
+| **Processor / Engine** | ROTATE via Ezekiel Engine | Context manipulation, document foregrounding, perspective rotation |
+| **Renderer** | RENDER via Mandala Engine | Output formatting separated from processing |
+| **Error Handler** | ON_FAILURE | Graceful degradation with state preservation |
+| **Audit / Logging** | WITNESS | Traversal recording with checksum verification |
 
 
 This is not analogy. The grammar encodes the same architectural separation that agent frameworks implement. The difference is that the grammar's operations are *epistemic* (rotation, not computation) and *performative* (the invocation constitutes the traversal). The isomorphism means the grammar can be implemented using existing orchestration patterns. The non-identity means it should not be *reduced* to them.

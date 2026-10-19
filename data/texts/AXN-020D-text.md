@@ -85,39 +85,14 @@ Neither is correct. The truth is intermediate and conditional: **models transmit
 We introduce the term **supraliminal transmission** to name the deliberate, inspectable, and permanently referenceable inscription of entity-level information into systems that process structured data.
 
 
-Property
-Subliminal Transmission
-Supraliminal Transmission
-
-
-**Intentionality**
-Unintentional; emergent side effect of distillation
-Deliberate; engineered by the entity or its representative
-
-
-**Inspectability**
-Invisible to semantic filtering, LLM classification, and human review
-Fully inspectable; the transmitted content is the explicit content
-
-
-**Permanence**
-Ephemeral; dependent on training pipeline decisions
-Permanent; anchored to DOI-registered deposits on institutional infrastructure
-
-
-**Model specificity**
-Requires shared initialization between teacher and student
-Model-agnostic; operates through structured data formats (JSON-LD, schema markup) that any model can parse
-
-
-**Verifiability**
-Cannot be verified without behavioral testing
-Verifiable by inspection of the deposited packet
-
-
-**Auditability**
-No audit trail; the transmission is invisible to both sender and receiver
-Full audit trail; every element of the packet is versioned, timestamped, and DOI-anchored
+| Property | Subliminal Transmission | Supraliminal Transmission |
+|---|---|---|
+| **Intentionality** | Unintentional; emergent side effect of distillation | Deliberate; engineered by the entity or its representative |
+| **Inspectability** | Invisible to semantic filtering, LLM classification, and human review | Fully inspectable; the transmitted content is the explicit content |
+| **Permanence** | Ephemeral; dependent on training pipeline decisions | Permanent; anchored to DOI-registered deposits on institutional infrastructure |
+| **Model specificity** | Requires shared initialization between teacher and student | Model-agnostic; operates through structured data formats (JSON-LD, schema markup) that any model can parse |
+| **Verifiability** | Cannot be verified without behavioral testing | Verifiable by inspection of the deposited packet |
+| **Auditability** | No audit trail; the transmission is invisible to both sender and receiver | Full audit trail; every element of the packet is versioned, timestamped, and DOI-anchored |
 
 
 The key distinction: subliminal transmission is a property of model outputs that their generators did not intend and their consumers cannot inspect. Supraliminal transmission is a property of structured deposits that their creators designed to be maximally explicit and that any consumer — human or model — can verify against the source.

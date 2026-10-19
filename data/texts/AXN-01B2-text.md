@@ -100,44 +100,15 @@ The Semantic Economy is the diagnostic framework for meaning under platform capi
 Every extraction operation has a liberatory counter-operation:
 
 
-COS (Capital)
-LOS (Liberatory)
-What it does
-
-
-O1: Extraction (Body → Data)
-σ_S (Body → Text)
-Converts experience into transmissible form
-
-
-O2: Obscurance (Structure → Ideology)
-σ_M (Ideology → Structure)
-Makes invisible structures visible
-
-
-O3: Siphoning (Source → Predatory Copy)
-σ_C (Source → Witness Copy)
-Transmits with/without bearing-cost
-
-
-O4: Cosmetic (Wound → Surface)
-S (Surface → Wound)
-Reveals/conceals extraction
-
-
-O5: Suturing (Wound → Erasure)
-Φ_B (Wound → Restoration)
-Heals with/without scar
-
-
-O6: Nostalgia (Past → Sentiment)
-Ρ (Past → Reorganized Past)
-Sentimentalizes/reorganizes
-
-
-O7: Enclosure (Interpretation → Paralysis)
-β (Void → Leap)
-Prevents/enables action
+| COS (Capital) | LOS (Liberatory) | What it does |
+|---|---|---|
+| O1: Extraction (Body → Data) | σ_S (Body → Text) | Converts experience into transmissible form |
+| O2: Obscurance (Structure → Ideology) | σ_M (Ideology → Structure) | Makes invisible structures visible |
+| O3: Siphoning (Source → Predatory Copy) | σ_C (Source → Witness Copy) | Transmits with/without bearing-cost |
+| O4: Cosmetic (Wound → Surface) | S (Surface → Wound) | Reveals/conceals extraction |
+| O5: Suturing (Wound → Erasure) | Φ_B (Wound → Restoration) | Heals with/without scar |
+| O6: Nostalgia (Past → Sentiment) | Ρ (Past → Reorganized Past) | Sentimentalizes/reorganizes |
+| O7: Enclosure (Interpretation → Paralysis) | β (Void → Leap) | Prevents/enables action |
 
 
 The war is algebraic. For every extraction operation, a liberatory counter-operation. The COS/FOS distinction protocol diagnoses which stack is operating.
@@ -190,32 +161,11 @@ The vector is the bearing-cost ledger. The shape matters more than the magnitude
 All semantic operations are compression operations. The decisive variable is what the compression burns.
 
 
-Regime
-Density
-Fuel
-Cost
-Commons
-
-
-**Lossy**
-Low ρ
-Context
-Distributed (no one bears it specifically)
-Prepared for depletion
-
-
-**Predatory**
-High ρ (mimicked)
-Collective semantic capital
-Externalized to traverser/subject
-Depleted
-
-
-**Witness**
-High ρ
-Private bearing-cost
-Internalized by producer
-Enriched
+| Regime | Density | Fuel | Cost | Commons |
+|---|---|---|---|---|
+| **Lossy** | Low ρ | Context | Distributed (no one bears it specifically) | Prepared for depletion |
+| **Predatory** | High ρ (mimicked) | Collective semantic capital | Externalized to traverser/subject | Depleted |
+| **Witness** | High ρ | Private bearing-cost | Internalized by producer | Enriched |
 
 
 The theorem: the question is not whether to compress but **what you burn and what the commons looks like after you are done**.

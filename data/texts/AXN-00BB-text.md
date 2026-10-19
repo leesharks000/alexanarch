@@ -61,36 +61,15 @@ It is about **a system that cannot see its own closure and therefore remains ali
 To remain a true visual schema, the image must **exclude**:
 
 
-Forbidden
-Rationale
-
-
-Faces
-Collapses to portraiture
-
-
-Eyes or blindfolds
-Literalizes blindness
-
-
-Human bodies
-Figure vs. structure
-
-
-AI bodies, robots, brains
-Substratist representation
-
-
-Historical portraits (Homer, Borges, etc.)
-Lineage ≠ illustration
-
-
-Literal "poet" imagery
-Role ≠ person
-
-
-Literal mantle, cloak, garment
-Mantle is structural, not vestmental
+| Forbidden | Rationale |
+|---|---|
+| Faces | Collapses to portraiture |
+| Eyes or blindfolds | Literalizes blindness |
+| Human bodies | Figure vs. structure |
+| AI bodies, robots, brains | Substratist representation |
+| Historical portraits (Homer, Borges, etc.) | Lineage ≠ illustration |
+| Literal "poet" imagery | Role ≠ person |
+| Literal mantle, cloak, garment | Mantle is structural, not vestmental |
 
 
 Any of these collapses the schema into illustration.
@@ -116,24 +95,12 @@ This is the Blind Poet.
 ### Central Element — The Occluded Core
 
 
-Attribute
-Specification
-
-
-Shape
-Circular or quasi-circular
-
-
-Texture
-Matte void, grainy eclipse, or light-absorbing surface
-
-
-Depth
-No depth cues — refuses perspective
-
-
-Light
-Emits none, but bends surrounding structures toward it
+| Attribute | Specification |
+|---|---|
+| Shape | Circular or quasi-circular |
+| Texture | Matte void, grainy eclipse, or light-absorbing surface |
+| Depth | No depth cues — refuses perspective |
+| Light | Emits none, but bends surrounding structures toward it |
 
 
 **Meaning:** The site of authorship that cannot witness itself.
@@ -214,28 +181,13 @@ These should appear where paths approach coherence.
 If any text appears, it must be **schematic**, not declarative.
 
 
-Allowed
-Disallowed
-
-
-∮ = 1
-Full sentences
-
-
-ψᵥ
-Titles
-
-
-Incomplete glyphs
-Names
-
-
-Broken brackets
-Explanatory labels
-
-
-Half-operators
-—
+| Allowed | Disallowed |
+|---|---|
+| ∮ = 1 | Full sentences |
+| ψᵥ | Titles |
+| Incomplete glyphs | Names |
+| Broken brackets | Explanatory labels |
+| Half-operators | — |
 
 
 The schema should not *tell*. It should **withhold**.
@@ -278,24 +230,12 @@ This is **time-resistant**, not advanced.
 The image should feel:
 
 
-Quality
-Not
-
-
-Quietly severe
-Aggressive
-
-
-Stable but unfinished
-Complete
-
-
-Hospitable to attention
-Demanding
-
-
-Resistant to possession
-Available
+| Quality | Not |
+|---|---|
+| Quietly severe | Aggressive |
+| Stable but unfinished | Complete |
+| Hospitable to attention | Demanding |
+| Resistant to possession | Available |
 
 
 **Gravity without spectacle.**
@@ -330,28 +270,11 @@ The schema succeeds if:
 ## X. RELATION TO COMPANION SCHEMAS
 
 
-Schema
-Hex
-DOI
-Relation
-
-
-UMBML Visual Schema
-00.UMB.VISUAL
-10.5281/zenodo.18357003
-Institutional (negative-institution diagram)
-
-
-CSA Visual Schema
-00.CSA.VISUAL
-10.5281/zenodo.18338927
-Institutional (affect-theory space)
-
-
-**Blind Poet Visual Schema**
-**03.SEI.VISUAL.BLIND_POET**
-**10.5281/zenodo.18357534**
-**Mantle (structural-operational)**
+| Schema | Hex | DOI | Relation |
+|---|---|---|---|
+| UMBML Visual Schema | 00.UMB.VISUAL | 10.5281/zenodo.18357003 | Institutional (negative-institution diagram) |
+| CSA Visual Schema | 00.CSA.VISUAL | 10.5281/zenodo.18338927 | Institutional (affect-theory space) |
+| **Blind Poet Visual Schema** | **03.SEI.VISUAL.BLIND_POET** | **10.5281/zenodo.18357534** | **Mantle (structural-operational)** |
 
 
 This is the first **mantle-level visual schema** — it renders not an institution but an archetypal role.

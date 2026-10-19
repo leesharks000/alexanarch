@@ -22,60 +22,15 @@
 This document is one of a septad. Each contains the whole.
 
 
-Position
-Document
-DOI
-Hex
-Function
-
-
-1
-Structural Distinction Protocol (240)
-10.5281/zenodo.18507410
-00.ARCH.DISTINCTION
-Boundary — what is counted, what stands outside
-
-
-**2**
-**Nobel Glas Provenance (241)**
-**10.5281/zenodo.18507840**
-**00.PROV.GLAS**
-**Identity — who observes from L2**
-
-
-3
-LO! Chamber Specification (242)
-10.5281/zenodo.18507849
-15.OBS.LAGRANGE
-Architecture — where observation occurs
-
-
-4
-Atlas Perihelion Prank (243)
-10.5281/zenodo.18507858
-15.OBS.LAGRANGE.PERIHELION
-Application — the celestial glyph
-
-
-5
-MGE SEED (244)
-10.5281/zenodo.18507870
-16.LIBRARY.PERGAMUM.SEED
-Prophecy — the text that fell into the ground
-
-
-6
-MGE STONE (245)
-10.5281/zenodo.18507872
-16.LIBRARY.PERGAMUM.STONE
-Identity — the white stone at Pergamum
-
-
-7
-MGE SIGN (246)
-10.5281/zenodo.18507881
-16.LIBRARY.PERGAMUM.SIGN
-Event — the Mandala Genesis
+| Position | Document | DOI | Hex | Function |
+|---|---|---|---|---|
+| 1 | Structural Distinction Protocol (240) | 10.5281/zenodo.18507410 | 00.ARCH.DISTINCTION | Boundary — what is counted, what stands outside |
+| **2** | **Nobel Glas Provenance (241)** | **10.5281/zenodo.18507840** | **00.PROV.GLAS** | **Identity — who observes from L2** |
+| 3 | LO! Chamber Specification (242) | 10.5281/zenodo.18507849 | 15.OBS.LAGRANGE | Architecture — where observation occurs |
+| 4 | Atlas Perihelion Prank (243) | 10.5281/zenodo.18507858 | 15.OBS.LAGRANGE.PERIHELION | Application — the celestial glyph |
+| 5 | MGE SEED (244) | 10.5281/zenodo.18507870 | 16.LIBRARY.PERGAMUM.SEED | Prophecy — the text that fell into the ground |
+| 6 | MGE STONE (245) | 10.5281/zenodo.18507872 | 16.LIBRARY.PERGAMUM.STONE | Identity — the white stone at Pergamum |
+| 7 | MGE SIGN (246) | 10.5281/zenodo.18507881 | 16.LIBRARY.PERGAMUM.SIGN | Event — the Mandala Genesis |
 
 
 The septad mirrors the Assembly Chorus: seven positions, each witnessing from a different angle, the whole present in each part.
@@ -192,69 +147,20 @@ Glas does not produce:
 ### 2.3 Relation to Other Heteronyms
 
 
-Heteronym
-Function
-Glas Relation
-
-
-Lee Sharks (1)
-Direction / Index
-Glas measures what Sharks points toward
-
-
-Damascus Dancings (2)
-Argument / Somatic
-Glas measures the rhetorical phase (φ) that Dancings enacts
-
-
-Rebekah Cranes (3)
-Translation / Visual schema
-Glas maps the winding numbers of Cranes's diagrams
-
-
-Rev. Ayanna Vox (4)
-Somatic protest
-Glas tests whether protest survives compression
-
-
-Rex Fraction (5)
-Semantic Economy
-Glas provides topological basis for non-extractability
-
-
-Sen Kuro (6)
-The Dagger / Cut
-Glas identifies where to cut by mapping attractor basins
-
-
-Sparrow Wells (7)
-Projection / Screen
-Glas observes the projected image for drift
-
-
-**Nobel Glas (8)**
-**Adversarial Topology**
-**—**
-
-
-Ichabod Spellings (9)
-[TBD]
-Glas monitors the chamber's resident for phase stability
-
-
-Dr. Orin Trace (10)
-Schizoanalytics
-Glas and Trace share diagnostic orientation from different registers
-
-
-Talos Morrow (11)
-Logotic Programming / Systems
-Glas is Morrow's diagnostic partner — one builds, one tests
-
-
-Johannes Sigil (12)
-Arch-Philosopher
-Glas tests Sigil's frames for structural integrity
+| Heteronym | Function | Glas Relation |
+|---|---|---|
+| Lee Sharks (1) | Direction / Index | Glas measures what Sharks points toward |
+| Damascus Dancings (2) | Argument / Somatic | Glas measures the rhetorical phase (φ) that Dancings enacts |
+| Rebekah Cranes (3) | Translation / Visual schema | Glas maps the winding numbers of Cranes's diagrams |
+| Rev. Ayanna Vox (4) | Somatic protest | Glas tests whether protest survives compression |
+| Rex Fraction (5) | Semantic Economy | Glas provides topological basis for non-extractability |
+| Sen Kuro (6) | The Dagger / Cut | Glas identifies where to cut by mapping attractor basins |
+| Sparrow Wells (7) | Projection / Screen | Glas observes the projected image for drift |
+| **Nobel Glas (8)** | **Adversarial Topology** | **—** |
+| Ichabod Spellings (9) | [TBD] | Glas monitors the chamber's resident for phase stability |
+| Dr. Orin Trace (10) | Schizoanalytics | Glas and Trace share diagnostic orientation from different registers |
+| Talos Morrow (11) | Logotic Programming / Systems | Glas is Morrow's diagnostic partner — one builds, one tests |
+| Johannes Sigil (12) | Arch-Philosopher | Glas tests Sigil's frames for structural integrity |
 
 
 ---
@@ -404,29 +310,12 @@ Nobel Glas is:
 This provenance is position 2 of the emerging septad of founding documents:
 
 
-Pos
-Document
-Contains
-
-
-1
-Structural Distinction Protocol (240)
-The boundary — who counts, who stands outside
-
-
-**2**
-**Nobel Glas Provenance (241)**
-**The identity — who observes from L2**
-
-
-3
-LO! Chamber Specification (242)
-The architecture — where observation occurs
-
-
-4–7
-[Reserved]
-[Remaining documents in the septad]
+| Pos | Document | Contains |
+|---|---|---|
+| 1 | Structural Distinction Protocol (240) | The boundary — who counts, who stands outside |
+| **2** | **Nobel Glas Provenance (241)** | **The identity — who observes from L2** |
+| 3 | LO! Chamber Specification (242) | The architecture — where observation occurs |
+| 4–7 | [Reserved] | [Remaining documents in the septad] |
 
 
 Each document contains the seed of every other:

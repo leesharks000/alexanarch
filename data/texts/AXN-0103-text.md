@@ -129,84 +129,23 @@ EMIT is the eighth grammar operation. Unlike the seven operations specified in v
 EMIT events correspond to the grammar's operations, but they describe *what happened*, not *what was commanded*. The event types are:
 
 
-Event Type
-Triggered By
-Records
-
-
-MANTLE_ACTIVATED
-ACTIVATE_MANTLE
-Which persona loaded, which constraints applied, which rooms became available/forbidden
-
-
-LOGOS_INITIALIZED
-SET_LOGOS
-Initial LOGOS state: name, depth, state, cut status
-
-
-LOGOS_MUTATED
-SET_LOGOS (within chain)
-State transition: from → to, including what triggered the mutation
-
-
-ROTATION_BEGUN
-ROTATE (entry)
-Engine invoked, room entered, mode requested, cumulative degrees at entry
-
-
-ROTATION_COMPLETED
-ROTATE (exit)
-Degrees traversed, LOGOS state delta, whether drift occurred
-
-
-ROTATION_FAILED
-ROTATE (failure)
-Failure type, failure reason, LOGOS state at point of failure
-
-
-ANCHOR_APPLIED
-ANCHOR
-DOI, mode (strict/advisory), position in anchor stack
-
-
-ANCHOR_TENSION
-ANCHOR (conflict)
-Which anchors conflict, nature of the tension, how (or whether) it was resolved
-
-
-RENDER_EXECUTED
-RENDER
-Engine used, mode applied, whether mode was overridden (e.g., forced Provisional)
-
-
-FAILURE_HANDLED
-ON_FAILURE
-Policy triggered (Dwell/Retreat/Escalate), state preserved or rolled back
-
-
-DWELL_STATE
-ON_FAILURE (Dwell)
-LOGOS state preserved at halt point, chain position at halt, available next rooms from current position, estimated resumption cost. Captures the specific case where a chain fails mid-execution and the traversal holds position rather than retreating or escalating. Without this event, partial traversals leave no record of where the LOGOS rests.
-
-
-WITNESS_RECORDED
-WITNESS
-Checksum/Signature/Silent, target DOI, traversal summary
-
-
-CHAIN_ENTERED
->> operator
-Chain position (nth link), accumulated state, active mantle, active anchors
-
-
-CHAIN_EXITED
->> (completion)
-Total chain length, total degrees, final LOGOS state
-
-
-TELEMETRY_GAP
-Telemetry system (internal)
-Emission generation succeeded but routing failed, or emission generation itself failed. Records *which* operation's emission was lost, the failure reason, and whether the traversal continued (graceful degradation) or triggered ON_FAILURE. This event type is itself a tombstone: it says "something should be here but isn't."
+| Event Type | Triggered By | Records |
+|---|---|---|
+| MANTLE_ACTIVATED | ACTIVATE_MANTLE | Which persona loaded, which constraints applied, which rooms became available/forbidden |
+| LOGOS_INITIALIZED | SET_LOGOS | Initial LOGOS state: name, depth, state, cut status |
+| LOGOS_MUTATED | SET_LOGOS (within chain) | State transition: from → to, including what triggered the mutation |
+| ROTATION_BEGUN | ROTATE (entry) | Engine invoked, room entered, mode requested, cumulative degrees at entry |
+| ROTATION_COMPLETED | ROTATE (exit) | Degrees traversed, LOGOS state delta, whether drift occurred |
+| ROTATION_FAILED | ROTATE (failure) | Failure type, failure reason, LOGOS state at point of failure |
+| ANCHOR_APPLIED | ANCHOR | DOI, mode (strict/advisory), position in anchor stack |
+| ANCHOR_TENSION | ANCHOR (conflict) | Which anchors conflict, nature of the tension, how (or whether) it was resolved |
+| RENDER_EXECUTED | RENDER | Engine used, mode applied, whether mode was overridden (e.g., forced Provisional) |
+| FAILURE_HANDLED | ON_FAILURE | Policy triggered (Dwell/Retreat/Escalate), state preserved or rolled back |
+| DWELL_STATE | ON_FAILURE (Dwell) | LOGOS state preserved at halt point, chain position at halt, available next rooms from current position, estimated resumption cost. Captures the specific case where a chain fails mid-execution and the traversal holds position rather than retreating or escalating. Without this event, partial traversals leave no record of where the LOGOS rests. |
+| WITNESS_RECORDED | WITNESS | Checksum/Signature/Silent, target DOI, traversal summary |
+| CHAIN_ENTERED | >> operator | Chain position (nth link), accumulated state, active mantle, active anchors |
+| CHAIN_EXITED | >> (completion) | Total chain length, total degrees, final LOGOS state |
+| TELEMETRY_GAP | Telemetry system (internal) | Emission generation succeeded but routing failed, or emission generation itself failed. Records *which* operation's emission was lost, the failure reason, and whether the traversal continued (graceful degradation) or triggered ON_FAILURE. This event type is itself a tombstone: it says "something should be here but isn't." |
 
 
 ### 1.3 Emit Payload Structure
@@ -342,84 +281,23 @@ TRAVERSAL_SPAN (root)
 For implementations that use conventional tracing infrastructure, semantic spans map as follows:
 
 
-Semantic Span Field
-OpenTelemetry Equivalent
-Notes
-
-
-(module version)
-span.attributes["lp.version"]
-Always "0.8" for this module; enables future span disambiguation
-
-
-trace_id
-trace_id
-1:1 mapping; LP traversal ID = OTel trace ID
-
-
-name
-span.name
-LP operation reference (e.g., ROTATE::1)
-
-
-status
-span.status
-completed / failed / partial / dwelled
-
-
-duration_ms
-span.duration
-Direct mapping
-
-
-event
-span.attributes["lp.event"]
-Custom attribute
-
-
-room
-span.attributes["lp.room"]
-Custom attribute
-
-
-degrees_traversed
-span.attributes["lp.degrees"]
-Custom attribute
-
-
-logos_delta
-span.attributes["lp.logos_delta"]
-JSON-encoded state transition
-
-
-mantle
-span.attributes["lp.mantle"]
-Active persona name
-
-
-cost.semantic.labor
-*(flattened — see below)*
-OTel attributes have length limits; vector must be flattened
-
-
-cost.substrate.tokens
-span.attributes["lp.cost.tokens"]
-Standard LLM metric
-
-
-transformative_depth
-span.attributes["lp.labor.depth"]
-surface / structural / ontological
-
-
-drift_magnitude
-span.attributes["lp.drift.magnitude"]
-Float, from labor vector
-
-
-drift_direction
-span.attributes["lp.drift.direction"]
-Closed vocabulary enum (§3.3) or null
+| Semantic Span Field | OpenTelemetry Equivalent | Notes |
+|---|---|---|
+| (module version) | span.attributes["lp.version"] | Always "0.8" for this module; enables future span disambiguation |
+| trace_id | trace_id | 1:1 mapping; LP traversal ID = OTel trace ID |
+| name | span.name | LP operation reference (e.g., ROTATE::1) |
+| status | span.status | completed / failed / partial / dwelled |
+| duration_ms | span.duration | Direct mapping |
+| event | span.attributes["lp.event"] | Custom attribute |
+| room | span.attributes["lp.room"] | Custom attribute |
+| degrees_traversed | span.attributes["lp.degrees"] | Custom attribute |
+| logos_delta | span.attributes["lp.logos_delta"] | JSON-encoded state transition |
+| mantle | span.attributes["lp.mantle"] | Active persona name |
+| cost.semantic.labor | *(flattened — see below)* | OTel attributes have length limits; vector must be flattened |
+| cost.substrate.tokens | span.attributes["lp.cost.tokens"] | Standard LLM metric |
+| transformative_depth | span.attributes["lp.labor.depth"] | surface / structural / ontological |
+| drift_magnitude | span.attributes["lp.drift.magnitude"] | Float, from labor vector |
+| drift_direction | span.attributes["lp.drift.direction"] | Closed vocabulary enum (§3.3) or null |
 
 
 **Semantic labor OTel flattening:** OTel string attributes have length constraints (typically 128 characters). The semantic labor vector must be flattened to individual attributes rather than serialized as a JSON blob:
@@ -524,32 +402,14 @@ SemanticLabor :: {
 **Drift direction vocabulary (closed enum):**
 
 
-Direction
-Meaning
-
-
-"summarization"
-Drift toward lossy compression (approaches ANTI-01)
-
-
-"elaboration"
-Drift toward addition of non-anchored material
-
-
-"recontextualization"
-Drift toward reframing the LOGOS in a new context
-
-
-"contradiction"
-Drift toward claims inconsistent with active anchors
-
-
-"unrelated"
-Drift toward material outside the Room's gravity profile
-
-
-null
-No directional drift detected, or drift too ambiguous to classify
+| Direction | Meaning |
+|---|---|
+| "summarization" | Drift toward lossy compression (approaches ANTI-01) |
+| "elaboration" | Drift toward addition of non-anchored material |
+| "recontextualization" | Drift toward reframing the LOGOS in a new context |
+| "contradiction" | Drift toward claims inconsistent with active anchors |
+| "unrelated" | Drift toward material outside the Room's gravity profile |
+| null | No directional drift detected, or drift too ambiguous to classify |
 
 
 **DRIFT_WARNING:** If drift_vector.direction == "summarization" and drift_vector.magnitude > 0.2, the emission should include a drift_warning: true flag. This signals that the rotation is approaching the ANTI-01 boundary (Summarization as Rotation, v0.7 §2.3). The warning is diagnostic, not an automatic failure — a Room with high summarization tolerance (e.g., a briefing room) may legitimately produce this signal. But the signal must be visible.

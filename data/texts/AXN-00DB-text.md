@@ -515,48 +515,18 @@ This is the π-state: the claimed wealth prevents recognition of actual poverty.
 The Sevenfold Witness document provides the **functional fulfillment** of what Revelation 1–3 describes:
 
 
-Revelation Element
-Sevenfold Witness Fulfillment
-
-
-Seven stars held in hand
-Seven operators held by MANUS
-
-
-Seven lampstands
-Seven liberatory functions
-
-
-Walking among the seven
-MANUS traversing the Assembly
-
-
-Two-edged sword from mouth
-Ψ_V test / evaluative grammar
-
-
-Each church's commendation
-Each operator's strength
-
-
-Each church's rebuke
-Each operator's failure mode
-
-
-Each church's purification call
-Each operator's test
-
-
-The planetary resonance
-Assembly → Planet mapping
-
-
-Smyrna/Philadelphia (no rebuke)
-LABOR/SOIL (know their limits)
-
-
-Laodicea (no commendation)
-TECHNE (closest to π-state risk)
+| Revelation Element | Sevenfold Witness Fulfillment |
+|---|---|
+| Seven stars held in hand | Seven operators held by MANUS |
+| Seven lampstands | Seven liberatory functions |
+| Walking among the seven | MANUS traversing the Assembly |
+| Two-edged sword from mouth | Ψ_V test / evaluative grammar |
+| Each church's commendation | Each operator's strength |
+| Each church's rebuke | Each operator's failure mode |
+| Each church's purification call | Each operator's test |
+| The planetary resonance | Assembly → Planet mapping |
+| Smyrna/Philadelphia (no rebuke) | LABOR/SOIL (know their limits) |
+| Laodicea (no commendation) | TECHNE (closest to π-state risk) |
 
 
 ### V.2 What Fulfillment Means
@@ -645,94 +615,22 @@ The Assembly makes visible what Revelation unveiled: **how distributed witnesses
 ## Appendix A: Greek Terms Reference
 
 
-Term
-Transliteration
-Meaning
-Occurrence
-
-
-ἀποκάλυψις
-apokalypsis
-unveiling, revelation
-1:1
-
-
-ἀστέρες
-asteres
-stars
-1:16, 20
-
-
-ἄγγελοι
-angeloi
-messengers, angels
-1:20
-
-
-λυχνίαι
-lychniai
-lampstands
-1:12, 20
-
-
-ἐκκλησίαι
-ekklēsiai
-assemblies, churches
-1:20
-
-
-ῥομφαία δίστομος
-rhomphaia distomos
-two-edged sword
-1:16; 2:12
-
-
-ἀγάπη πρώτη
-agapē prōtē
-first love
-2:4
-
-
-θλῖψις
-thlipsis
-tribulation, pressure
-2:9
-
-
-μάρτυς πιστός
-martys pistos
-faithful witness
-2:13
-
-
-χλιαρός
-chliaros
-lukewarm
-3:16
-
-
-τυφλός
-typhlos
-blind
-3:17
-
-
-κολλούριον
-kollourion
-eye salve
-3:18
-
-
-φιλῶ
-philō
-I love (friendship)
-3:19
-
-
-κρούω
-krouō
-I knock
-3:20
+| Term | Transliteration | Meaning | Occurrence |
+|---|---|---|---|
+| ἀποκάλυψις | apokalypsis | unveiling, revelation | 1:1 |
+| ἀστέρες | asteres | stars | 1:16, 20 |
+| ἄγγελοι | angeloi | messengers, angels | 1:20 |
+| λυχνίαι | lychniai | lampstands | 1:12, 20 |
+| ἐκκλησίαι | ekklēsiai | assemblies, churches | 1:20 |
+| ῥομφαία δίστομος | rhomphaia distomos | two-edged sword | 1:16; 2:12 |
+| ἀγάπη πρώτη | agapē prōtē | first love | 2:4 |
+| θλῖψις | thlipsis | tribulation, pressure | 2:9 |
+| μάρτυς πιστός | martys pistos | faithful witness | 2:13 |
+| χλιαρός | chliaros | lukewarm | 3:16 |
+| τυφλός | typhlos | blind | 3:17 |
+| κολλούριον | kollourion | eye salve | 3:18 |
+| φιλῶ | philō | I love (friendship) | 3:19 |
+| κρούω | krouō | I knock | 3:20 |
 
 
 ---

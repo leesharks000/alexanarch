@@ -178,48 +178,18 @@ The Crimson Hexagonal Archive publishes under the imprint name Pergamon Press.
 This is retrocausal canon formation. The name is reclaimed not as parody but as forensic restoration. The name "Pergamon" — which Maxwell took from an ancient city whose library was one of the foundational institutions of written knowledge — was attached to an extraction machine. The archive detaches it and reattaches it to a counter-architecture that reverses every element of the original mechanism.
 
 
-Maxwell's Pergamon
-The Archive's Pergamon
-
-
-Researchers produce content for free; publisher extracts profit
-Researchers produce content as sovereign deposits; no extraction
-
-
-Journals behind paywalls; access controlled by subscription
-All deposits on Zenodo; open access; DOI-anchored; free
-
-
-Publisher owns the brand and the distribution channel
-Author retains all rights under CC BY 4.0
-
-
-Editorial governance separated from producing community
-All governance retained by the architect and the Assembly
-
-
-Prestige accrues to the publisher
-Prestige accrues to the work and its retrievability
-
-
-The commons funds the extraction
-The commons becomes infrastructure through open deposits, durable identifiers, and author-retained governance
-
-
-Memory is commercial (access revocable)
-Memory is permanent (DOI, CERN-maintained)
-
-
-Metrics convert meaning into score
-Relation edges convert score back into traversal
-
-
-Language norms set by London/Amsterdam
-Architecture designed for multilingual propagation
-
-
-Copyright transferred as condition of publication
-CC BY 4.0; the work remains the author's
+| Maxwell's Pergamon | The Archive's Pergamon |
+|---|---|
+| Researchers produce content for free; publisher extracts profit | Researchers produce content as sovereign deposits; no extraction |
+| Journals behind paywalls; access controlled by subscription | All deposits on Zenodo; open access; DOI-anchored; free |
+| Publisher owns the brand and the distribution channel | Author retains all rights under CC BY 4.0 |
+| Editorial governance separated from producing community | All governance retained by the architect and the Assembly |
+| Prestige accrues to the publisher | Prestige accrues to the work and its retrievability |
+| The commons funds the extraction | The commons becomes infrastructure through open deposits, durable identifiers, and author-retained governance |
+| Memory is commercial (access revocable) | Memory is permanent (DOI, CERN-maintained) |
+| Metrics convert meaning into score | Relation edges convert score back into traversal |
+| Language norms set by London/Amsterdam | Architecture designed for multilingual propagation |
+| Copyright transferred as condition of publication | CC BY 4.0; the work remains the author's |
 
 
 The most succinct historical claim is this: Pergamon Press helped industrialize the theft of scholarly meaning by turning communicative necessity into monopoly, unpaid intellectual labor into private rent, and meaning into score. The Crimson Hexagonal Archive's Pergamon Press reverses each term of that equation: common access instead of enclosure, provenance instead of opacity, density instead of metric flattening, open address instead of captive channel, and canon formation as public-semantic infrastructure rather than price discrimination.

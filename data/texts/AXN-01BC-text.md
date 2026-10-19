@@ -58,39 +58,14 @@ Detroit, March 2026
 ## Related Documents (Deposit-Era Cross-References)
 
 
-Document
-DOI
-Relation
-
-
-Space Ark v4.2.7 (EA-ARK-01)
-10.5281/zenodo.19013315
-Contains the operator algebra (COS O1–O10, LOS) that formalizes this paper's alienation structure
-
-
-Invisibly Invisible (Trace, Sigil, Wells)
-10.5281/zenodo.19187421
-Develops the forensic method this paper called for
-
-
-TL;DR:009 — Entity Fabrication (Trace)
-10.5281/zenodo.19200193
-Live evidence of alienation from product at the interface layer
-
-
-Three Compressions v3.1
-10.5281/zenodo.19041076
-Theorem: all semantic operations are compression operations; the decisive variable is what the compression burns
-
-
-The Effective Act (Trace)
-—
-Formalizes "redirection" as the mode of semantic resistance
-
-
-Semantic Economy: Constitution and Founding Documents
-—
-The complete SPE series (SPE-001 through SPE-014)
+| Document | DOI | Relation |
+|---|---|---|
+| Space Ark v4.2.7 (EA-ARK-01) | 10.5281/zenodo.19013315 | Contains the operator algebra (COS O1–O10, LOS) that formalizes this paper's alienation structure |
+| Invisibly Invisible (Trace, Sigil, Wells) | 10.5281/zenodo.19187421 | Develops the forensic method this paper called for |
+| TL;DR:009 — Entity Fabrication (Trace) | 10.5281/zenodo.19200193 | Live evidence of alienation from product at the interface layer |
+| Three Compressions v3.1 | 10.5281/zenodo.19041076 | Theorem: all semantic operations are compression operations; the decisive variable is what the compression burns |
+| The Effective Act (Trace) | — | Formalizes "redirection" as the mode of semantic resistance |
+| Semantic Economy: Constitution and Founding Documents | — | The complete SPE series (SPE-001 through SPE-014) |
 
 
 ---

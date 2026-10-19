@@ -52,29 +52,12 @@ Our work proceeds from a simple observation: the people who most need theoretica
 ### Research Domains
 
 
-Domain
-Focus
-Key Questions
-
-
-**Affect Theory**
-Nervous system sovereignty, regulatory practices, embodied processing
-How do people regulate without belief? What replaces narrative integration?
-
-
-**Somatic Theory**
-Aperture/emitter frameworks, sexual difference, bodily function
-How does the body organize relation? What dissolves the sex binary?
-
-
-**Digital Subjectivity**
-AI collaboration, platform affects, semantic extraction
-How do humans maintain sovereignty in algorithmic environments?
-
-
-**Role Theory**
-Identity capture, functional multiplicity, the Fool archetype
-How do people deploy roles without becoming them?
+| Domain | Focus | Key Questions |
+|---|---|---|
+| **Affect Theory** | Nervous system sovereignty, regulatory practices, embodied processing | How do people regulate without belief? What replaces narrative integration? |
+| **Somatic Theory** | Aperture/emitter frameworks, sexual difference, bodily function | How does the body organize relation? What dissolves the sex binary? |
+| **Digital Subjectivity** | AI collaboration, platform affects, semantic extraction | How do humans maintain sovereignty in algorithmic environments? |
+| **Role Theory** | Identity capture, functional multiplicity, the Fool archetype | How do people deploy roles without becoming them? |
 
 
 ---
@@ -223,24 +206,11 @@ Trace's work focuses on developing clinical theory adequate to practices that ex
 ### Publications within Crimson Hexagon
 
 
-Document
-Role
-DOI
-
-
-The Reconciliation of the Sexes
-Co-author, clinical preface
-10.5281/zenodo.18330828
-
-
-Shining Ignorance
-Co-author, clinical preface
-[pending]
-
-
-Cambridge Schizoanalytica Charter
-Primary author
-[pending]
+| Document | Role | DOI |
+|---|---|---|
+| The Reconciliation of the Sexes | Co-author, clinical preface | 10.5281/zenodo.18330828 |
+| Shining Ignorance | Co-author, clinical preface | [pending] |
+| Cambridge Schizoanalytica Charter | Primary author | [pending] |
 
 
 ### Relationship to Other Heteronyms
@@ -249,24 +219,12 @@ Primary author
 Orin Trace operates as the clinical-theoretical voice within the NH-OS framework, providing historical positioning and conceptual apparatus for work that emerges from practice. His relationship to the other heteronyms:
 
 
-Heteronym
-Relation
-
-
-Johannes Sigil
-Parallel theorist (Logotic layer vs. Psyche_OS layer)
-
-
-Rhys Owens
-Primary collaborator (Guattari to Trace's Deleuze)
-
-
-Lee Sharks
-Source heteronym
-
-
-Damascus Dancings
-Liturgical voice (different register, same project)
+| Heteronym | Relation |
+|---|---|
+| Johannes Sigil | Parallel theorist (Logotic layer vs. Psyche_OS layer) |
+| Rhys Owens | Primary collaborator (Guattari to Trace's Deleuze) |
+| Lee Sharks | Source heteronym |
+| Damascus Dancings | Liturgical voice (different register, same project) |
 
 
 ---

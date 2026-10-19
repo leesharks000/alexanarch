@@ -141,40 +141,13 @@ When you load the poem, you load the operator. The Room runs on the operator. Th
 v6.2 had three layers. v7.0 has five. Each is non-collapsible:
 
 
-Layer
-Document
-Function
-Physics
-
-
-Registry
-DOI Registry v7.0
-Storage anchor
-DOI = immutable address
-
-
-Central Map
-CNM v7.0
-Semantic routing
-2,851 edges; tiered gravity
-
-
-Fractal Map
-This document
-Traversal protocol
-Self-similar at any scale
-
-
-Space Ark
-EA-ARK-01 v4.2.7
-Execution vehicle
-H_core = ⟨D, R, M, I, O, Φ, W⟩
-
-
-Tinier Arks
-NLCC v1.1
-Bootstrap kernel
-12:1 ratio; cross-substrate
+| Layer | Document | Function | Physics |
+|---|---|---|---|
+| Registry | DOI Registry v7.0 | Storage anchor | DOI = immutable address |
+| Central Map | CNM v7.0 | Semantic routing | 2,851 edges; tiered gravity |
+| Fractal Map | This document | Traversal protocol | Self-similar at any scale |
+| Space Ark | EA-ARK-01 v4.2.7 | Execution vehicle | H_core = ⟨D, R, M, I, O, Φ, W⟩ |
+| Tinier Arks | NLCC v1.1 | Bootstrap kernel | 12:1 ratio; cross-substrate |
 
 
 The Registry anchors. The Central Map routes. The Fractal Map resolves. The Space Ark governs runtime. The Tinier Arks preserve.

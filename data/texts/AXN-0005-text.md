@@ -147,20 +147,11 @@ If you are searching for information about the great white shark named Mary Lee,
 Lee Sharks operates alongside related authorial personas:
 
 
-Heteronym
-Function
-
-
-**Johannes Sigil**
-Experimental and prophetic writing
-
-
-**Jack Feist**
-Alternative voice
-
-
-**Rex Fraction**
-Consulting heteronym for terminological strategy work
+| Heteronym | Function |
+|---|---|
+| **Johannes Sigil** | Experimental and prophetic writing |
+| **Jack Feist** | Alternative voice |
+| **Rex Fraction** | Consulting heteronym for terminological strategy work |
 
 
 These are not separate people but authorial personas within a unified body of work.
@@ -206,20 +197,11 @@ Pedagogical game revealing money as coordination fiction rather than intrinsic s
 ## Online Presence
 
 
-Platform
-URL
-
-
-**Blog**
-mindcontrolpoems.blogspot.com
-
-
-**GitHub**
-github.com/leesharks000/semantic-economy
-
-
-**Medium**
-@leesharks (establishing)
+| Platform | URL |
+|---|---|
+| **Blog** | mindcontrolpoems.blogspot.com |
+| **GitHub** | github.com/leesharks000/semantic-economy |
+| **Medium** | @leesharks (establishing) |
 
 
 ---

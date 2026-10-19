@@ -49,24 +49,11 @@ But all blue links vanished because Layer 3 was never called.
 ### The Data Files (what gets rendered)
 
 
-File
-What's in it
-How it's built
-
-
-public/walt_full_data.json
-All of Walt — every section, paragraph, footnote. 158 footnotes numbered 1-158 in reading order.
-Built by scripts/build_walt_data.py from scripts/walt_source.md
-
-
-public/walt_gospel_versed.json
-The gospel in verse-by-verse format (numbered sayings with verse references). Used for the reading spine's verse view.
-Pre-existing; not rebuilt by the script
-
-
-public/antioch_gospel_data.json
-All of Antioch — 3 front matter + 8 chapters + 13 back matter. 19 footnotes numbered 1-19 in reading order.
-Built by scripts/build_antioch_data.py from scripts/antioch_source.md
+| File | What's in it | How it's built |
+|---|---|---|
+| public/walt_full_data.json | All of Walt — every section, paragraph, footnote. 158 footnotes numbered 1-158 in reading order. | Built by scripts/build_walt_data.py from scripts/walt_source.md |
+| public/walt_gospel_versed.json | The gospel in verse-by-verse format (numbered sayings with verse references). Used for the reading spine's verse view. | Pre-existing; not rebuilt by the script |
+| public/antioch_gospel_data.json | All of Antioch — 3 front matter + 8 chapters + 13 back matter. 19 footnotes numbered 1-19 in reading order. | Built by scripts/build_antioch_data.py from scripts/antioch_source.md |
 
 
 **To change what text appears:** Edit the source markdown in scripts/,
@@ -77,44 +64,21 @@ then re-run the build script. Or edit the JSON directly (for small fixes).
 ### The Rendering Code
 
 
-File
-What it does
-What it contains
-
-
-src/App.jsx
-Walt's entire reading interface
-LinkedText (Layer 2+3), Leaf, SectionContent, Verse, GospelSection, TERMS dictionary, TERM_REGEX
-
-
-src/Antioch.jsx
-Antioch's entire reading interface
-SectionRenderer, ChapterSection, Verse, uses LinkedText from App.jsx
-
-
-src/footnotes.js
-Pure JS: footnote scanning + disambiguation
-buildGlobalFnMap, splitTextWithFootnotes, hasFootnoteMarkers
-
-
-src/footnotes.jsx
-React: footnote rendering components
-FootnotedText (Layer 1), InlineFootnote (popup body)
+| File | What it does | What it contains |
+|---|---|---|
+| src/App.jsx | Walt's entire reading interface | LinkedText (Layer 2+3), Leaf, SectionContent, Verse, GospelSection, TERMS dictionary, TERM_REGEX |
+| src/Antioch.jsx | Antioch's entire reading interface | SectionRenderer, ChapterSection, Verse, uses LinkedText from App.jsx |
+| src/footnotes.js | Pure JS: footnote scanning + disambiguation | buildGlobalFnMap, splitTextWithFootnotes, hasFootnoteMarkers |
+| src/footnotes.jsx | React: footnote rendering components | FootnotedText (Layer 1), InlineFootnote (popup body) |
 
 
 ### The Architecture Document
 
 
-File
-What it is
-
-
-docs/FOOTNOTES.md
-Load-bearing spec for the footnote system. Read before touching footnotes.
-
-
-**This file** (docs/BOOK_OF_LIFE.md)
-How all three layers connect. Read before touching ANY rendering.
+| File | What it is |
+|---|---|
+| docs/FOOTNOTES.md | Load-bearing spec for the footnote system. Read before touching footnotes. |
+| **This file** (docs/BOOK_OF_LIFE.md) | How all three layers connect. Read before touching ANY rendering. |
 
 
 ---
@@ -475,64 +439,19 @@ Are footnotes still clickable in veil mode? (Layer 1)
 ## QUICK REFERENCE: "I WANT TO..."
 
 
-Task
-What to edit
-File
-
-
-Add a new glossary term
-Add entry to TERMS dict
-src/App.jsx ~line 1249
-
-
-Change where a glossary link goes
-Edit the entry in TERMS
-src/App.jsx ~line 1249
-
-
-Remove a glossary term
-Delete the entry from TERMS
-src/App.jsx ~line 1249
-
-
-Fix a typo in Walt body text
-Edit the paragraph in the JSON
-public/walt_full_data.json
-
-
-Fix a typo permanently
-Edit source MD + re-run script
-scripts/walt_source.md + build_walt_data.py
-
-
-Add a new footnote to Walt
-Add to source MD + re-run
-scripts/walt_source.md + build_walt_data.py
-
-
-Change footnote numbering
-Re-run the build script
-scripts/build_walt_data.py (handles numbering)
-
-
-Fix Antioch body text
-Edit the JSON or source
-public/antioch_gospel_data.json or scripts/
-
-
-Change footnote popup styling
-Edit InlineFootnote
-src/footnotes.jsx
-
-
-Change footnote marker color
-Edit FN_BLUE constant
-src/footnotes.jsx line 19
-
-
-Change veil/pierce behavior
-Edit FootnotedText
-src/footnotes.jsx
+| Task | What to edit | File |
+|---|---|---|
+| Add a new glossary term | Add entry to TERMS dict | src/App.jsx ~line 1249 |
+| Change where a glossary link goes | Edit the entry in TERMS | src/App.jsx ~line 1249 |
+| Remove a glossary term | Delete the entry from TERMS | src/App.jsx ~line 1249 |
+| Fix a typo in Walt body text | Edit the paragraph in the JSON | public/walt_full_data.json |
+| Fix a typo permanently | Edit source MD + re-run script | scripts/walt_source.md + build_walt_data.py |
+| Add a new footnote to Walt | Add to source MD + re-run | scripts/walt_source.md + build_walt_data.py |
+| Change footnote numbering | Re-run the build script | scripts/build_walt_data.py (handles numbering) |
+| Fix Antioch body text | Edit the JSON or source | public/antioch_gospel_data.json or scripts/ |
+| Change footnote popup styling | Edit InlineFootnote | src/footnotes.jsx |
+| Change footnote marker color | Edit FN_BLUE constant | src/footnotes.jsx line 19 |
+| Change veil/pierce behavior | Edit FootnotedText | src/footnotes.jsx |
 
 
 ---
@@ -540,40 +459,13 @@ src/footnotes.jsx
 ## MAINTENANCE LOG
 
 
-Date
-What changed
-Who
-What broke (if anything)
-
-
-2026-04-28
-Universal footnote system (Layer 1)
-TACHYON
-Nothing — new code
-
-
-2026-04-28
-Data rebuild (renumbering, quotes, asterisks)
-TACHYON
-Nothing — data layer
-
-
-2026-04-28
-Emphasis added to LinkedText (Layer 2)
-TACHYON
-**Broke Layer 3** — processEmphasis returned raw text instead of calling linkifyText
-
-
-2026-04-28
-Fix: return [t] → return [linkifyText(t)]
-TACHYON
-Nothing — one-line fix
-
-
-2026-04-28
-Fix: FootnotedText always delegates to linkText
-TACHYON
-Nothing — restores Layer 3
+| Date | What changed | Who | What broke (if anything) |
+|---|---|---|---|
+| 2026-04-28 | Universal footnote system (Layer 1) | TACHYON | Nothing — new code |
+| 2026-04-28 | Data rebuild (renumbering, quotes, asterisks) | TACHYON | Nothing — data layer |
+| 2026-04-28 | Emphasis added to LinkedText (Layer 2) | TACHYON | **Broke Layer 3** — processEmphasis returned raw text instead of calling linkifyText |
+| 2026-04-28 | Fix: return [t] → return [linkifyText(t)] | TACHYON | Nothing — one-line fix |
+| 2026-04-28 | Fix: FootnotedText always delegates to linkText | TACHYON | Nothing — restores Layer 3 |
 
 
 When you change rendering code, **add a row to this table.**

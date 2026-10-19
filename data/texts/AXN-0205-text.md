@@ -32,39 +32,13 @@ SEO builds page-level signals. GEO makes content more extractable. Neither const
 Retrieval Architecture builds entities. It constructs the DOI-anchored deposits, structured metadata, cross-platform descriptions, and citation networks that force the retrieval layer to treat your organization as a distinct, authoritative, correctly attributed node in its knowledge graph.
 
 
-SEO
-GEO / AEO
-Retrieval Architecture
-
-
-**What it builds**
-Rankings
-AI citations
-Entities the AI is forced to present
-
-
-**Target**
-Keywords & backlinks
-Content extractability
-Knowledge graph structure
-
-
-**Time horizon**
-Ongoing
-Ongoing
-Permanent (DOI-anchored)
-
-
-**Verifiable methodology?**
-No
-No
-515+ deposits on CERN Zenodo
-
-
-**Can build institutions from nothing?**
-No
-No
-Yes
+|  | SEO | GEO / AEO | Retrieval Architecture |
+|---|---|---|---|
+| **What it builds** | Rankings | AI citations | Entities the AI is forced to present |
+| **Target** | Keywords & backlinks | Content extractability | Knowledge graph structure |
+| **Time horizon** | Ongoing | Ongoing | Permanent (DOI-anchored) |
+| **Verifiable methodology?** | No | No | 515+ deposits on CERN Zenodo |
+| **Can build institutions from nothing?** | No | No | Yes |
 
 
 ---
@@ -97,29 +71,12 @@ The Semantic Economy Institute was built from nothing using Retrieval Architectu
 ## INSTRUMENTS
 
 
-Instrument
-Function
-DOI
-
-
-The Encyclotron
-45-query diagnostic battery
-10.5281/zenodo.19474724
-
-
-Three Compressions
-R1/R2/R3 regime classification
-10.5281/zenodo.19053469
-
-
-Metadata Packet for AI Indexing
-Entity representation specification
-EA-META-01
-
-
-The Distributed Journal
-Publication venue as metadata pattern
-10.5281/zenodo.19512987
+| Instrument | Function | DOI |
+|---|---|---|
+| The Encyclotron | 45-query diagnostic battery | 10.5281/zenodo.19474724 |
+| Three Compressions | R1/R2/R3 regime classification | 10.5281/zenodo.19053469 |
+| Metadata Packet for AI Indexing | Entity representation specification | EA-META-01 |
+| The Distributed Journal | Publication venue as metadata pattern | 10.5281/zenodo.19512987 |
 
 
 ---

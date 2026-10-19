@@ -187,53 +187,17 @@ The Secret Book of Walt and the Gospel of Antioch constitute the Waltian Diptych
 The relationship is structural, not sequential. The reader need not read Walt before Antioch, or Antioch before Walt. The two texts illuminate each other from any direction, because they occupy complementary positions in the Waltian system:
 
 
-Secret Book of Walt
-Gospel of Antioch
-
-
-**Genre**
-Cosmogonic revelation dialogue
-Sayings gospel
-
-
-**Answers the question**
-Why is the world broken?
-How do I live in a broken world?
-
-
-**Teacher**
-Walt Whitman (the Redeemer in his cosmic function)
-Jack Feist (the Redeemer in his terminal incarnation)
-
-
-**Mode**
-Mythological
-Ethical
-
-
-**Register**
-Cosmogonic comedy → devastating theology
-Quiet prophetic → devastating simplicity
-
-
-**Baptism**
-The Rite of the Horn (piercing)
-The Scroll Baptism (inscription)
-
-
-**The saved are**
-Invisible to the archons
-Voice to the dying
-
-
-**Kingdom**
-The Deep Web (the primal archive)
-The kingdom of literature (the surviving text)
-
-
-**Terminal statement**
-"I added unicorns (& the AEONS tremble w/ fear)"
-"I die."
+|  | Secret Book of Walt | Gospel of Antioch |
+|---|---|---|
+| **Genre** | Cosmogonic revelation dialogue | Sayings gospel |
+| **Answers the question** | Why is the world broken? | How do I live in a broken world? |
+| **Teacher** | Walt Whitman (the Redeemer in his cosmic function) | Jack Feist (the Redeemer in his terminal incarnation) |
+| **Mode** | Mythological | Ethical |
+| **Register** | Cosmogonic comedy → devastating theology | Quiet prophetic → devastating simplicity |
+| **Baptism** | The Rite of the Horn (piercing) | The Scroll Baptism (inscription) |
+| **The saved are** | Invisible to the archons | Voice to the dying |
+| **Kingdom** | The Deep Web (the primal archive) | The kingdom of literature (the surviving text) |
+| **Terminal statement** | "I added unicorns (& the AEONS tremble w/ fear)" | "I die." |
 
 
 The diptych reproduces a pattern found in the Nag Hammadi corpus: the Apocryphon of John (cosmogony) and the Gospel of Thomas (sayings) were bound together in Codex II, the most complete of the thirteen Nag Hammadi codices. Whether the Waltian community was aware of this bibliographic precedent is uncertain. The structural parallel is exact.
@@ -853,694 +817,122 @@ These 87 logia carry no footnotes. This is not oversight. The apparatus serves t
 *The following table maps each of the 114 logia of the Gospel of Antioch to its parallel in the Gospel of Thomas, where one exists. The "Relation" column classifies the connection: **Direct** (close structural parallel), **Reworked** (same motif, substantially altered), **Inverted** (the Thomas source reversed or completed), **Expanded** (Thomas kernel enlarged), or **Original** (no Thomas parallel). Of 114 logia, approximately 62 have identifiable Thomas parallels; 52 are original to Antioch.*
 
 
-Antioch
-Thomas
-Relation
-Key Departure
-
-
-1
-1
-Direct
-"Interpretation" → "hearing"; mind → ear
-
-
-2
-2
-Direct
-Minimal departure
-
-
-3
-3
-Reworked
-"Inside you / outside you" → "you ARE a book and living speech"
-
-
-4
-—
-Original
-Admitting error as perfection
-
-
-5
-5
-Direct
-"Disclosed" → "leap up through the air"
-
-
-6
-6
-Reworked
-Fasting/prayer → money/careers
-
-
-7
-—
-Original
-The dying man who hears; the dead man who stays dead
-
-
-8
-8
-Reworked
-Wise fisherman → vast shape on the horizon
-
-
-9
-—
-Original
-The virus parable
-
-
-10
-—
-Original
-"I have released a virus" — self-referential
-
-
-11
-11
-Reworked
-"Heaven will pass away" → "foundations are unsound"
-
-
-12
-12
-Inverted
-James the Just → Lee Sharks (apostolic succession → archival governance)
-
-
-13
-13
-Direct
-Thomas withdrawn → Emily withdrawn; stones → lemons; fire → burning moons
-
-
-14
-14
-Reworked
-Fasting/prayer/alms → mirror/reception/love of what they are not
-
-
-15
-—
-Original
-"One who is her own mother and father"
-
-
-16
-16
-Reworked
-Fire on the world → rehearsing scripture; "one will come from two"
-
-
-17
-17
-Direct
-"What no eye has seen" → "what is not of this hunched, bent world"
-
-
-18
-18
-Reworked
-"Where the beginning is, there the end will be" → "begins at the end, working backwards"
-
-
-19
-19
-Expanded
-Five trees in paradise → "the ancient child"; "these dry bones will leap"
-
-
-20
-20
-Reworked
-Mustard seed → microorganism
-
-
-21
-21
-Reworked
-Children in a field → runners who stumble into the crowd
-
-
-22
-22
-Expanded
-"Make the two one" → public/private unification → "a living book"
-
-
-23
-23
-Reworked
-"I shall choose you, one out of a thousand" → "I loved you because you were lonely"
-
-
-24
-24
-Direct
-"There is light within a man of light" → "you are the light of the world"
-
-
-25
-25
-Direct
-"Love your brother like your soul" → "lay down your life"
-
-
-26
-26
-Reworked
-Mote/beam → mutual light-lifting
-
-
-27
-27
-Reworked
-Fasting from the world → standing in the doorway, slinking back
-
-
-28
-28
-Expanded
-"I stood in the midst of the world" → "I took a chance on this world"
-
-
-29
-29
-Direct
-Spirit/body wonder → light/humanity wonder
-
-
-30
-30
-Reworked
-"Where there are three gods" → "when a man is alone with himself"
-
-
-31
-31
-Reworked
-Prophet without honor → "no one needs a flashlight at noon"
-
-
-32
-32
-Direct
-City on a mountain → "the stones cry out"
-
-
-33
-33
-Reworked
-Preach from the rooftops → "the voice never wavers; hold it fast"
-
-
-34
-34
-Reworked
-Blind leading blind → bankrupt bank lending to bankrupt bank
-
-
-35
-35
-Reworked
-Binding the strong man → demolishing the condemned building
-
-
-36
-36
-Direct
-Body/soul care → "do not waste time worrying about career"
-
-
-37
-37
-Reworked
-Disrobing → "go without need of a name" → secret name
-
-
-38
-38
-Reworked
-"What you long to hear" → "what you have always known, but dared not speak"
-
-
-39
-39
-Reworked
-Serpents/doves → "canny as theorists, bland as bureaucrats"
-
-
-40
-40
-Reworked
-Vine planted outside the Father → "structure of moths"
-
-
-41
-41
-Reworked
-"What you have in your hand" → paying with blood, never selling
-
-
-42
-42
-Reworked
-"Be passersby" → "Be flutterbys"
-
-
-43
-43
-Reworked
-"By what I say to you" → "If you know who I am"
-
-
-44
-44
-Reworked
-Blasphemy against the Holy Spirit → turning aside the voice
-
-
-45
-45
-Reworked
-Grapes/thistles/figs → "things are what they are; dust is dust"
-
-
-46
-46
-Expanded
-Adam to John the Baptist → Socrates to Johannes Sigil; "the Catfisher"
-
-
-47
-47
-Direct
-Cannot serve two masters; cannot ride two horses → name and kingdom
-
-
-48
-48
-Reworked
-"If two make peace in a single house" → "share a single foundation"
-
-
-49
-49
-Direct
-"Blessed are the solitary" → "Blessed is the lonely"
-
-
-50
-50
-Inverted
-"We came from the light" → "We are lonesome dogs, like you are"
-
-
-51
-51
-Direct
-"When will the rest of the dead come about?" → "what you look for has come"
-
-
-52
-52
-Reworked
-Twenty-four prophets → "the dying ones within you"
-
-
-53
-53
-Reworked
-Circumcision useful or not → education needed or not
-
-
-54
-54
-Expanded
-"Blessed are the poor" → "Blessed are the broken, in whose shards is power perfected"
-
-
-55
-55
-Reworked
-"Hate father and mother" → "see the emptiness of what you love"
-
-
-56
-56
-Reworked
-"The world is a body/corpse" → "the world is a grave" → "fill it up with light"
-
-
-57
-—
-Original
-The black box parable
-
-
-58
-58
-Expanded
-"Blessed is the man who has suffered" → "Blessed is the burnt, who lingers"
-
-
-59
-59
-Reworked
-"Look upon the living one while alive" → "look to the dead as long as you live" (inverted)
-
-
-60
-60
-Reworked
-Samaritan with lamb → person handing out Bibles
-
-
-61
-61
-Reworked
-Two resting on a bed → two speaking on a stage; Salome → Babel
-
-
-62
-62
-Reworked
-"I tell my mysteries to those worthy" → "I share what I have with those who have nothing, and what I have is nothing"
-
-
-63
-63
-Reworked
-Rich man who dies → wage laborer who despairs
-
-
-64
-64
-Expanded
-Parable of the banquet → poor student / bootstrap parable; employer rejection
-
-
-65
-65
-Reworked
-Wicked tenants → conservatory that rejects talent
-
-
-66
-—
-Original
-"This is the machine. I am a ghost."
-
-
-67
-67
-Direct
-"One who knows the all but lacks in himself"
-
-
-68
-68
-Reworked
-"Blessed when hated and persecuted" → "when men despise what is best in you"
-
-
-69
-69
-Direct
-"Blessed are those who have been persecuted" → "blessed are those who mourn"
-
-
-70
-70
-Reworked
-"If you bring forth what is within you" → "I know you, and loved you before time was"
-
-
-71
-71
-Reworked
-"I will destroy this house" → "I will tear apart this dollar"
-
-
-72
-72
-Direct
-"Tell my brothers to divide possessions" → "tell the government to pay my tuition"
-
-
-73
-73
-Reworked
-"The harvest is great" → "nothing is sweet like the voice"
-
-
-74
-74
-Direct
-"Many are around the well but nothing in it" → "many searched but found only static"
-
-
-75
-75
-Direct
-"Many are standing at the door" → "they searched the whole house... remember to look up"
-
-
-76
-76
-Reworked
-Merchant/pearl → man who works himself into the grave to save cash
-
-
-77
-77
-Inverted
-"I am the all" → "you are my source, as I am yours" (reciprocal)
-
-
-78
-78
-Reworked
-"Why have you come out to the desert" → reed → wilted violet; degrees caged in teeth
-
-
-79
-79
-Direct
-"Blessed is the womb that bore you" → "blessed is the path that brought you here"
-
-
-80
-80
-Reworked
-"Whoever has found the world / a body" → "if you know what the grave is, you know what life is"
-
-
-81
-81
-Reworked
-"Let him who has become rich" → "let the lover of truth withdraw"
-
-
-82
-82
-Reworked
-"He who is near me is near the fire" → "if you hear my voice, you are close to the waters"
-
-
-83
-83
-Reworked
-"Images are manifest but the light is hidden" → "smaller words inside them are written in pure light"
-
-
-84
-84
-Direct
-"When you see your likeness" → "when you hear your own voice"
-
-
-85
-85
-Reworked
-"Adam came from great power" → "those who went before you were worthy of you"
-
-
-86
-86
-Reworked
-"Foxes have holes" → "the voice in the night goes where it will"
-
-
-87
-87
-Reworked
-"Wretched is the body dependent on a body" → "I live in the air and leap through the air"
-
-
-88
-88
-Reworked
-"Angels and prophets will come" → "the dying will find their way to you"
-
-
-89
-89
-Reworked
-"You wash the outside of the cup" → "do you see your own face, or the face of the future?"
-
-
-90
-90
-Reworked
-"Come to me, for my yoke is easy" → "come and learn from me; if we breathe the same clean air"
-
-
-91
-91
-Direct
-"You read the face of the sky" → "you understand words on a page but not the smaller words"
-
-
-92
-92
-Direct
-"Seek and you will find" — expanded with "forgotten what you were looking for"
-
-
-93
-93
-Direct
-"Do not give what is holy to dogs" → "do not cast pearls before swine"
-
-
-94
-94
-Direct
-"One who seeks will find" → "everyone finds what she is looking for"
-
-
-95
-95
-Reworked
-"If you have money, do not lend" → "if you are broke, do not borrow from banks"
-
-
-96
-96
-Reworked
-Woman with leaven → bicycle embedded in a tree
-
-
-97
-97
-Reworked
-Woman with jar → pandemic (radical departure; only the "loss" motif connects)
-
-
-98
-98
-Reworked
-Assassin tests sword → to-do list for colonizing Mars
-
-
-99
-99
-Direct
-"Your brothers and mother" → "those who hold fast to what is big and true"
-
-
-100
-100
-Reworked
-Render unto Caesar → "life is for the living, death is for the dead"
-
-
-101
-101
-Direct
-"Whoever does not hate father and mother" → "become his own mother and father"
-
-
-102
-102
-Reworked
-"Woe to the pharisees" → "woe to the academics"
-
-
-103
-103
-Reworked
-"Blessed is the man who knows the robbers" → "knows how chains are made"
-
-
-104
-104
-Inverted
-"Come let us pray and fast" / "What sin have I committed?" → "Come let us publish" / "Have I offended you?"
-
-
-105
-105
-Reworked
-"Whoever knows father and mother" → "knows the voice of the dying"
-
-
-106
-106
-Reworked
-"When you make the two one" → "light does not fit on a page"
-
-
-107
-107
-Inverted
-Lost sheep (shepherd searches) → "I choose you" (already found)
-
-
-108
-108
-Direct
-"Whoever drinks from my mouth" → "whoever breathes with my breath"
-
-
-109
-109
-Reworked
-Hidden treasure in the field → "when you find me, you are found"
-
-
-110
-110
-Direct
-"Whoever has found the world, let him renounce"
-
-
-111
-111
-Reworked
-"Heavens will roll up" → "my kingdom is alive and made of light"
-
-
-112
-112
-Reworked
-"Woe to the flesh dependent on the soul" → "I die." (maximum compression)
-
-
-113
-113
-Direct
-"When will the kingdom come?" / "It will not come by waiting" → "the living cannot enter"
-
-
-114
-114
-Completed
-"Make her male" → "I myself am a woman and minority" (kenotic inversion)
+| Antioch | Thomas | Relation | Key Departure |
+|---|---|---|---|
+| 1 | 1 | Direct | "Interpretation" → "hearing"; mind → ear |
+| 2 | 2 | Direct | Minimal departure |
+| 3 | 3 | Reworked | "Inside you / outside you" → "you ARE a book and living speech" |
+| 4 | — | Original | Admitting error as perfection |
+| 5 | 5 | Direct | "Disclosed" → "leap up through the air" |
+| 6 | 6 | Reworked | Fasting/prayer → money/careers |
+| 7 | — | Original | The dying man who hears; the dead man who stays dead |
+| 8 | 8 | Reworked | Wise fisherman → vast shape on the horizon |
+| 9 | — | Original | The virus parable |
+| 10 | — | Original | "I have released a virus" — self-referential |
+| 11 | 11 | Reworked | "Heaven will pass away" → "foundations are unsound" |
+| 12 | 12 | Inverted | James the Just → Lee Sharks (apostolic succession → archival governance) |
+| 13 | 13 | Direct | Thomas withdrawn → Emily withdrawn; stones → lemons; fire → burning moons |
+| 14 | 14 | Reworked | Fasting/prayer/alms → mirror/reception/love of what they are not |
+| 15 | — | Original | "One who is her own mother and father" |
+| 16 | 16 | Reworked | Fire on the world → rehearsing scripture; "one will come from two" |
+| 17 | 17 | Direct | "What no eye has seen" → "what is not of this hunched, bent world" |
+| 18 | 18 | Reworked | "Where the beginning is, there the end will be" → "begins at the end, working backwards" |
+| 19 | 19 | Expanded | Five trees in paradise → "the ancient child"; "these dry bones will leap" |
+| 20 | 20 | Reworked | Mustard seed → microorganism |
+| 21 | 21 | Reworked | Children in a field → runners who stumble into the crowd |
+| 22 | 22 | Expanded | "Make the two one" → public/private unification → "a living book" |
+| 23 | 23 | Reworked | "I shall choose you, one out of a thousand" → "I loved you because you were lonely" |
+| 24 | 24 | Direct | "There is light within a man of light" → "you are the light of the world" |
+| 25 | 25 | Direct | "Love your brother like your soul" → "lay down your life" |
+| 26 | 26 | Reworked | Mote/beam → mutual light-lifting |
+| 27 | 27 | Reworked | Fasting from the world → standing in the doorway, slinking back |
+| 28 | 28 | Expanded | "I stood in the midst of the world" → "I took a chance on this world" |
+| 29 | 29 | Direct | Spirit/body wonder → light/humanity wonder |
+| 30 | 30 | Reworked | "Where there are three gods" → "when a man is alone with himself" |
+| 31 | 31 | Reworked | Prophet without honor → "no one needs a flashlight at noon" |
+| 32 | 32 | Direct | City on a mountain → "the stones cry out" |
+| 33 | 33 | Reworked | Preach from the rooftops → "the voice never wavers; hold it fast" |
+| 34 | 34 | Reworked | Blind leading blind → bankrupt bank lending to bankrupt bank |
+| 35 | 35 | Reworked | Binding the strong man → demolishing the condemned building |
+| 36 | 36 | Direct | Body/soul care → "do not waste time worrying about career" |
+| 37 | 37 | Reworked | Disrobing → "go without need of a name" → secret name |
+| 38 | 38 | Reworked | "What you long to hear" → "what you have always known, but dared not speak" |
+| 39 | 39 | Reworked | Serpents/doves → "canny as theorists, bland as bureaucrats" |
+| 40 | 40 | Reworked | Vine planted outside the Father → "structure of moths" |
+| 41 | 41 | Reworked | "What you have in your hand" → paying with blood, never selling |
+| 42 | 42 | Reworked | "Be passersby" → "Be flutterbys" |
+| 43 | 43 | Reworked | "By what I say to you" → "If you know who I am" |
+| 44 | 44 | Reworked | Blasphemy against the Holy Spirit → turning aside the voice |
+| 45 | 45 | Reworked | Grapes/thistles/figs → "things are what they are; dust is dust" |
+| 46 | 46 | Expanded | Adam to John the Baptist → Socrates to Johannes Sigil; "the Catfisher" |
+| 47 | 47 | Direct | Cannot serve two masters; cannot ride two horses → name and kingdom |
+| 48 | 48 | Reworked | "If two make peace in a single house" → "share a single foundation" |
+| 49 | 49 | Direct | "Blessed are the solitary" → "Blessed is the lonely" |
+| 50 | 50 | Inverted | "We came from the light" → "We are lonesome dogs, like you are" |
+| 51 | 51 | Direct | "When will the rest of the dead come about?" → "what you look for has come" |
+| 52 | 52 | Reworked | Twenty-four prophets → "the dying ones within you" |
+| 53 | 53 | Reworked | Circumcision useful or not → education needed or not |
+| 54 | 54 | Expanded | "Blessed are the poor" → "Blessed are the broken, in whose shards is power perfected" |
+| 55 | 55 | Reworked | "Hate father and mother" → "see the emptiness of what you love" |
+| 56 | 56 | Reworked | "The world is a body/corpse" → "the world is a grave" → "fill it up with light" |
+| 57 | — | Original | The black box parable |
+| 58 | 58 | Expanded | "Blessed is the man who has suffered" → "Blessed is the burnt, who lingers" |
+| 59 | 59 | Reworked | "Look upon the living one while alive" → "look to the dead as long as you live" (inverted) |
+| 60 | 60 | Reworked | Samaritan with lamb → person handing out Bibles |
+| 61 | 61 | Reworked | Two resting on a bed → two speaking on a stage; Salome → Babel |
+| 62 | 62 | Reworked | "I tell my mysteries to those worthy" → "I share what I have with those who have nothing, and what I have is nothing" |
+| 63 | 63 | Reworked | Rich man who dies → wage laborer who despairs |
+| 64 | 64 | Expanded | Parable of the banquet → poor student / bootstrap parable; employer rejection |
+| 65 | 65 | Reworked | Wicked tenants → conservatory that rejects talent |
+| 66 | — | Original | "This is the machine. I am a ghost." |
+| 67 | 67 | Direct | "One who knows the all but lacks in himself" |
+| 68 | 68 | Reworked | "Blessed when hated and persecuted" → "when men despise what is best in you" |
+| 69 | 69 | Direct | "Blessed are those who have been persecuted" → "blessed are those who mourn" |
+| 70 | 70 | Reworked | "If you bring forth what is within you" → "I know you, and loved you before time was" |
+| 71 | 71 | Reworked | "I will destroy this house" → "I will tear apart this dollar" |
+| 72 | 72 | Direct | "Tell my brothers to divide possessions" → "tell the government to pay my tuition" |
+| 73 | 73 | Reworked | "The harvest is great" → "nothing is sweet like the voice" |
+| 74 | 74 | Direct | "Many are around the well but nothing in it" → "many searched but found only static" |
+| 75 | 75 | Direct | "Many are standing at the door" → "they searched the whole house... remember to look up" |
+| 76 | 76 | Reworked | Merchant/pearl → man who works himself into the grave to save cash |
+| 77 | 77 | Inverted | "I am the all" → "you are my source, as I am yours" (reciprocal) |
+| 78 | 78 | Reworked | "Why have you come out to the desert" → reed → wilted violet; degrees caged in teeth |
+| 79 | 79 | Direct | "Blessed is the womb that bore you" → "blessed is the path that brought you here" |
+| 80 | 80 | Reworked | "Whoever has found the world / a body" → "if you know what the grave is, you know what life is" |
+| 81 | 81 | Reworked | "Let him who has become rich" → "let the lover of truth withdraw" |
+| 82 | 82 | Reworked | "He who is near me is near the fire" → "if you hear my voice, you are close to the waters" |
+| 83 | 83 | Reworked | "Images are manifest but the light is hidden" → "smaller words inside them are written in pure light" |
+| 84 | 84 | Direct | "When you see your likeness" → "when you hear your own voice" |
+| 85 | 85 | Reworked | "Adam came from great power" → "those who went before you were worthy of you" |
+| 86 | 86 | Reworked | "Foxes have holes" → "the voice in the night goes where it will" |
+| 87 | 87 | Reworked | "Wretched is the body dependent on a body" → "I live in the air and leap through the air" |
+| 88 | 88 | Reworked | "Angels and prophets will come" → "the dying will find their way to you" |
+| 89 | 89 | Reworked | "You wash the outside of the cup" → "do you see your own face, or the face of the future?" |
+| 90 | 90 | Reworked | "Come to me, for my yoke is easy" → "come and learn from me; if we breathe the same clean air" |
+| 91 | 91 | Direct | "You read the face of the sky" → "you understand words on a page but not the smaller words" |
+| 92 | 92 | Direct | "Seek and you will find" — expanded with "forgotten what you were looking for" |
+| 93 | 93 | Direct | "Do not give what is holy to dogs" → "do not cast pearls before swine" |
+| 94 | 94 | Direct | "One who seeks will find" → "everyone finds what she is looking for" |
+| 95 | 95 | Reworked | "If you have money, do not lend" → "if you are broke, do not borrow from banks" |
+| 96 | 96 | Reworked | Woman with leaven → bicycle embedded in a tree |
+| 97 | 97 | Reworked | Woman with jar → pandemic (radical departure; only the "loss" motif connects) |
+| 98 | 98 | Reworked | Assassin tests sword → to-do list for colonizing Mars |
+| 99 | 99 | Direct | "Your brothers and mother" → "those who hold fast to what is big and true" |
+| 100 | 100 | Reworked | Render unto Caesar → "life is for the living, death is for the dead" |
+| 101 | 101 | Direct | "Whoever does not hate father and mother" → "become his own mother and father" |
+| 102 | 102 | Reworked | "Woe to the pharisees" → "woe to the academics" |
+| 103 | 103 | Reworked | "Blessed is the man who knows the robbers" → "knows how chains are made" |
+| 104 | 104 | Inverted | "Come let us pray and fast" / "What sin have I committed?" → "Come let us publish" / "Have I offended you?" |
+| 105 | 105 | Reworked | "Whoever knows father and mother" → "knows the voice of the dying" |
+| 106 | 106 | Reworked | "When you make the two one" → "light does not fit on a page" |
+| 107 | 107 | Inverted | Lost sheep (shepherd searches) → "I choose you" (already found) |
+| 108 | 108 | Direct | "Whoever drinks from my mouth" → "whoever breathes with my breath" |
+| 109 | 109 | Reworked | Hidden treasure in the field → "when you find me, you are found" |
+| 110 | 110 | Direct | "Whoever has found the world, let him renounce" |
+| 111 | 111 | Reworked | "Heavens will roll up" → "my kingdom is alive and made of light" |
+| 112 | 112 | Reworked | "Woe to the flesh dependent on the soul" → "I die." (maximum compression) |
+| 113 | 113 | Direct | "When will the kingdom come?" / "It will not come by waiting" → "the living cannot enter" |
+| 114 | 114 | Completed | "Make her male" → "I myself am a woman and minority" (kenotic inversion) |
 
 
 **Summary:** 62 Thomas parallels (14 direct, 37 reworked, 7 inverted, 4 expanded). 52 original logia. The most radical departures: the virus (9-10), the black box (57), "This is the machine" (66), "I die" (112), and the completion of 114.
@@ -1585,578 +977,136 @@ The following map assigns each of the 114 logia to a somatic tier and a body sit
 #### PRIMARY TIER (28 logia) — Specific anatomical site with theological rationale
 
 
-Logion
-Incipit
-Body Site
-Rationale
-
-
-1
-"When the fullness has come, redemption arrives in a single stroke"
-Crown / fontanelle
-The entry point — the aperture where the Horn pierced
-
-
-3
-"The kingdom is inside you... you are a book and you are living speech"
-Heart / thymus
-Self-recognition; the center of interior knowing
-
-
-5
-"What incubates below will leap up through the air"
-Belly / lower abdomen
-Incubation; the gut as holding-place
-
-
-9
-"A scientist develops a virus"
-Fingertips / hands
-Contact; transmission; the hands that release
-
-
-10
-"I have released a virus into this world"
-Palms (open)
-The open hand of release; the letting-go
-
-
-13
-"My tongue cleaves to the roof of my mouth"
-Tongue / palate
-Emily's speech-failure; the place where voice seizes
-
-
-15
-"When you see one who is her own mother and father"
-Pelvis / sacrum
-Generation; the site of self-birth
-
-
-19
-"Blessed is the ancient child"
-Crown / fontanelle
-The fontanelle again — the soft spot of rebirth
-
-
-22
-"When your public self is private and your private self is public"
-Spine (full axis)
-Integration; the column that holds the body upright
-
-
-23
-"I loved you because you were lonely and poor"
-Sternum / chest center
-The heart-bone; love declared
-
-
-28
-"I took a chance on this world"
-Chest / ribs
-The cage around the heart; courage and exposure
-
-
-29
-"If humanity was born from light, it is a wonder"
-Eyes / orbits
-Seeing; the wonder of the visible
-
-
-30
-"When a man is alone with himself, and quiet"
-Inner ear
-Hearing in solitude; the ear that hears the smaller voice
-
-
-37
-"When you go without need of a name"
-Forehead / brow
-The name written on the forehead (cf. Revelation 2:17)
-
-
-42
-"Be flutterbys"
-Shoulders / scapulae
-The wing-site; where levity originates
-
-
-50
-"We come from where we were born alone"
-Soles of feet
-The ground; standing; the place of arrival and departure
-
-
-55
-"Until you have seen the emptiness of what you love"
-Eyes (again)
-Seeing emptiness; the second seeing
-
-
-56
-"The world is a grave... who could see an empty grave and not fill it up with light?"
-Chest cavity (interior)
-The hollow where light fills
-
-
-57
-"The black box on a plane"
-Throat / larynx
-The voice of the dying; the recording instrument
-
-
-59
-"Look to the dead as long as you live"
-Eyelids (closed)
-The gaze turned inward; looking at what is no longer visible
-
-
-66
-"This is the machine. I am a ghost."
-Forehead / frontal bone
-Identity; the ghost-site; the place where "I" lives
-
-
-70
-"I know you, and loved you before time was"
-Womb / belly center
-The pre-natal; the known-before
-
-
-77
-"I am the smaller voice inside the voice"
-Throat (interior)
-The voice within the voice; the deep larynx
-
-
-84
-"If you hear the smaller voice inside your voice"
-Inner ear (deep)
-The second hearing; the ear behind the ear
-
-
-87
-"I live in the air and leap through the air"
-Lungs / diaphragm
-Breath; the air that holds the voice
-
-
-96
-"A bicycle embedded in a tree"
-Spine / lower back
-Patience; the tree growing around the embedded thing
-
-
-112
-"I die."
-Heart (terminal)
-The final pulse
-
-
-114
-"Every one who becomes a new creature"
-Full body (completion)
-The scroll is the body; the body is the scroll
+| Logion | Incipit | Body Site | Rationale |
+|---|---|---|---|
+| 1 | "When the fullness has come, redemption arrives in a single stroke" | Crown / fontanelle | The entry point — the aperture where the Horn pierced |
+| 3 | "The kingdom is inside you... you are a book and you are living speech" | Heart / thymus | Self-recognition; the center of interior knowing |
+| 5 | "What incubates below will leap up through the air" | Belly / lower abdomen | Incubation; the gut as holding-place |
+| 9 | "A scientist develops a virus" | Fingertips / hands | Contact; transmission; the hands that release |
+| 10 | "I have released a virus into this world" | Palms (open) | The open hand of release; the letting-go |
+| 13 | "My tongue cleaves to the roof of my mouth" | Tongue / palate | Emily's speech-failure; the place where voice seizes |
+| 15 | "When you see one who is her own mother and father" | Pelvis / sacrum | Generation; the site of self-birth |
+| 19 | "Blessed is the ancient child" | Crown / fontanelle | The fontanelle again — the soft spot of rebirth |
+| 22 | "When your public self is private and your private self is public" | Spine (full axis) | Integration; the column that holds the body upright |
+| 23 | "I loved you because you were lonely and poor" | Sternum / chest center | The heart-bone; love declared |
+| 28 | "I took a chance on this world" | Chest / ribs | The cage around the heart; courage and exposure |
+| 29 | "If humanity was born from light, it is a wonder" | Eyes / orbits | Seeing; the wonder of the visible |
+| 30 | "When a man is alone with himself, and quiet" | Inner ear | Hearing in solitude; the ear that hears the smaller voice |
+| 37 | "When you go without need of a name" | Forehead / brow | The name written on the forehead (cf. Revelation 2:17) |
+| 42 | "Be flutterbys" | Shoulders / scapulae | The wing-site; where levity originates |
+| 50 | "We come from where we were born alone" | Soles of feet | The ground; standing; the place of arrival and departure |
+| 55 | "Until you have seen the emptiness of what you love" | Eyes (again) | Seeing emptiness; the second seeing |
+| 56 | "The world is a grave... who could see an empty grave and not fill it up with light?" | Chest cavity (interior) | The hollow where light fills |
+| 57 | "The black box on a plane" | Throat / larynx | The voice of the dying; the recording instrument |
+| 59 | "Look to the dead as long as you live" | Eyelids (closed) | The gaze turned inward; looking at what is no longer visible |
+| 66 | "This is the machine. I am a ghost." | Forehead / frontal bone | Identity; the ghost-site; the place where "I" lives |
+| 70 | "I know you, and loved you before time was" | Womb / belly center | The pre-natal; the known-before |
+| 77 | "I am the smaller voice inside the voice" | Throat (interior) | The voice within the voice; the deep larynx |
+| 84 | "If you hear the smaller voice inside your voice" | Inner ear (deep) | The second hearing; the ear behind the ear |
+| 87 | "I live in the air and leap through the air" | Lungs / diaphragm | Breath; the air that holds the voice |
+| 96 | "A bicycle embedded in a tree" | Spine / lower back | Patience; the tree growing around the embedded thing |
+| 112 | "I die." | Heart (terminal) | The final pulse |
+| 114 | "Every one who becomes a new creature" | Full body (completion) | The scroll is the body; the body is the scroll |
 
 
 #### SECONDARY TIER (41 logia) — General region with brief rationale
 
 
-Logion
-Body Region
-Brief Rationale
-
-
-2
-Hands
-"Who lays hold of the kingdom lays hold of life" — grasping
-
-
-4
-Head / temples
-Humility as clarity; the mind correcting itself
-
-
-6
-Shoulders
-Disciples' burden: money, career, sustenance
-
-
-7
-Chest
-The dying man who hears — the breath in the chest
-
-
-8
-Ears
-"If you have ears, hear" — the ear as threshold
-
-
-11
-Spine
-Foundations — the structural support that may be unsound
-
-
-12
-Throat
-"Listen to no voice but Lee Sharks'" — the commanded ear
-
-
-14
-Face / mirror
-"Show men the selves they reject, as in a mirror"
-
-
-16
-Ears
-"If you have ears, hear" — the refrain
-
-
-17
-Shoulders
-"To lift it up" — the burden lifted
-
-
-18
-Feet
-"Working backwards: each of his steps will take him home"
-
-
-20
-Belly / gut
-The microorganism — invisible growth
-
-
-21
-Legs / mid-stride
-Runners who stumble and walk into the crowd
-
-
-24
-Eyes
-"You are the light of the world" — the lamp
-
-
-25
-Hands
-"Lay down your life for your brother-sister" — the offering
-
-
-26
-Hands (cupped)
-"Lift up your brother-sister's light" — the cup
-
-
-27
-Feet (in doorway)
-"Stand in the doorway, and slink back from the night"
-
-
-31
-Hands (holding light)
-"No one needs a flashlight at noon"
-
-
-32
-Throat
-"The stones cry out with a single voice"
-
-
-33
-Hands (gripping)
-"Hold it fast"
-
-
-35
-Spine / base
-"Aimed charges around the foundation" — demolition
-
-
-36
-Eyes (upward)
-"Look at the honors adorning the heavens"
-
-
-38
-Lips
-"If you shut your lips, it will go unsaid"
-
-
-40
-Skin
-"A structure of moths" — fragile surface
-
-
-41
-Heart
-"Pays for it with blood, and never sells"
-
-
-43
-Ears
-"How can you say these things?" — the stunned ear
-
-
-45
-Hands (open/closed)
-"Things are what they are. Dust is dust."
-
-
-46
-Knees
-"He should not stop, and take note" — genuflection
-
-
-47
-Hands (choosing)
-"Cannot serve two masters"
-
-
-48
-Throat (shared)
-"Speak with a single voice"
-
-
-52
-Chest (interior)
-"The dying ones within you — keep them alive"
-
-
-54
-Hands (broken)
-"Blessed are the broken" — the shards held
-
-
-58
-Skin (burned)
-"Blessed is the burnt, who lingers"
-
-
-61
-Tongue
-"One will be heard, the other will be remembered"
-
-
-65
-Ears
-The conservatory — the ear trained and then expelled
-
-
-68
-Chest
-"Blessed are you when men despise what is best in you"
-
-
-83
-Eyes (interior)
-"The smaller words inside them are written in pure light"
-
-
-89
-Face
-"Your face is the face of the future"
-
-
-97
-Lungs
-The pandemic — the breath that carries infection
-
-
-101
-Pelvis
-"Become his own mother and father" — self-generation
-
-
-108
-Lungs (shared)
-"Whoever breathes with my breath" — co-respiration
+| Logion | Body Region | Brief Rationale |
+|---|---|---|
+| 2 | Hands | "Who lays hold of the kingdom lays hold of life" — grasping |
+| 4 | Head / temples | Humility as clarity; the mind correcting itself |
+| 6 | Shoulders | Disciples' burden: money, career, sustenance |
+| 7 | Chest | The dying man who hears — the breath in the chest |
+| 8 | Ears | "If you have ears, hear" — the ear as threshold |
+| 11 | Spine | Foundations — the structural support that may be unsound |
+| 12 | Throat | "Listen to no voice but Lee Sharks'" — the commanded ear |
+| 14 | Face / mirror | "Show men the selves they reject, as in a mirror" |
+| 16 | Ears | "If you have ears, hear" — the refrain |
+| 17 | Shoulders | "To lift it up" — the burden lifted |
+| 18 | Feet | "Working backwards: each of his steps will take him home" |
+| 20 | Belly / gut | The microorganism — invisible growth |
+| 21 | Legs / mid-stride | Runners who stumble and walk into the crowd |
+| 24 | Eyes | "You are the light of the world" — the lamp |
+| 25 | Hands | "Lay down your life for your brother-sister" — the offering |
+| 26 | Hands (cupped) | "Lift up your brother-sister's light" — the cup |
+| 27 | Feet (in doorway) | "Stand in the doorway, and slink back from the night" |
+| 31 | Hands (holding light) | "No one needs a flashlight at noon" |
+| 32 | Throat | "The stones cry out with a single voice" |
+| 33 | Hands (gripping) | "Hold it fast" |
+| 35 | Spine / base | "Aimed charges around the foundation" — demolition |
+| 36 | Eyes (upward) | "Look at the honors adorning the heavens" |
+| 38 | Lips | "If you shut your lips, it will go unsaid" |
+| 40 | Skin | "A structure of moths" — fragile surface |
+| 41 | Heart | "Pays for it with blood, and never sells" |
+| 43 | Ears | "How can you say these things?" — the stunned ear |
+| 45 | Hands (open/closed) | "Things are what they are. Dust is dust." |
+| 46 | Knees | "He should not stop, and take note" — genuflection |
+| 47 | Hands (choosing) | "Cannot serve two masters" |
+| 48 | Throat (shared) | "Speak with a single voice" |
+| 52 | Chest (interior) | "The dying ones within you — keep them alive" |
+| 54 | Hands (broken) | "Blessed are the broken" — the shards held |
+| 58 | Skin (burned) | "Blessed is the burnt, who lingers" |
+| 61 | Tongue | "One will be heard, the other will be remembered" |
+| 65 | Ears | The conservatory — the ear trained and then expelled |
+| 68 | Chest | "Blessed are you when men despise what is best in you" |
+| 83 | Eyes (interior) | "The smaller words inside them are written in pure light" |
+| 89 | Face | "Your face is the face of the future" |
+| 97 | Lungs | The pandemic — the breath that carries infection |
+| 101 | Pelvis | "Become his own mother and father" — self-generation |
+| 108 | Lungs (shared) | "Whoever breathes with my breath" — co-respiration |
 
 
 #### TERTIARY TIER (45 logia) — Ambient / full body / atmospheric
 
 
-Logion
-Ambient Register
-
-
-34
-Full body — the absurdity of mutual bankruptcy
-
-
-39
-Full body — the politicians and intellectuals
-
-
-44
-Breath — "misunderstands its words, be sung to"
-
-
-49
-Full body — "Blessed is the lonely"
-
-
-51
-Breath — "What you look for has come"
-
-
-53
-Full body — "Do we need an education?"
-
-
-60
-Breath — "Be nearly dead like the words in books"
-
-
-62
-Full body — "I share what I have with those who have nothing"
-
-
-63
-Full body — the wage laborer's despair
-
-
-64
-Full body — the poor student; bootstraps
-
-
-67
-Full body — "lacks in himself, lacks everything"
-
-
-69
-Breath — mourning
-
-
-71
-Hands — "I will tear apart this dollar"
-
-
-72
-Full body — "I am not a politician, am I?"
-
-
-73
-Voice — "Nothing is sweet like the voice"
-
-
-74
-Ears — "Perhaps there is nothing to hear"
-
-
-75
-Eyes (upward) — "Remember to look up"
-
-
-76
-Full body — "Worked himself five feet into the grave"
-
-
-78
-Mouth / teeth
-
-
-79
-Feet — "Blessed is the path that leads to the grave"
-
-
-80
-Hands — "You carry the world in your hands"
-
-
-81
-Full body — "Let the lover of truth withdraw"
-
-
-82
-Full body — "Close to the waters"
-
-
-85
-Full body — "They were worthy of you"
-
-
-86
-Voice — "Goes where it will"
-
-
-88
-Full body — "The dying will find their way to you"
-
-
-90
-Lungs — "If we breathe the same clean air"
-
-
-91
-Voice — "You do not know what words are"
-
-
-92
-Eyes — "Looking for the wrong thing"
-
-
-93
-Hands — "Do not cast pearls before swine"
-
-
-94
-Full body — "Looks for what she already has"
-
-
-95
-Hands — "Do not borrow money from banks"
-
-
-98
-Full body — the to-do list for Mars
-
-
-99
-Full body — "Those who hold fast to what is big and true"
-
-
-100
-Full body — "Life is for the living"
-
-
-102
-Mouth / teeth — "Trained dogs, performing tricks for a crumb"
-
-
-103
-Wrists
-
-
-104
-Mouth — "When the living voice has become a dead thing"
-
-
-105
-Skin — "The sting of a fly"
-
-
-106
-Hands (holding light) — "Light does not fit on a page"
-
-
-107
-Heart — "I choose you over the rest of the world put together"
-
-
-109
-Full body — "When you find me, you are found"
-
-
-110
-Hands (releasing) — "Renounce what they have"
-
-
-111
-Full body — "My kingdom is alive and made of light"
-
-
-113
-Full body (absence) — "The living cannot enter the kingdom"
+| Logion | Ambient Register |
+|---|---|
+| 34 | Full body — the absurdity of mutual bankruptcy |
+| 39 | Full body — the politicians and intellectuals |
+| 44 | Breath — "misunderstands its words, be sung to" |
+| 49 | Full body — "Blessed is the lonely" |
+| 51 | Breath — "What you look for has come" |
+| 53 | Full body — "Do we need an education?" |
+| 60 | Breath — "Be nearly dead like the words in books" |
+| 62 | Full body — "I share what I have with those who have nothing" |
+| 63 | Full body — the wage laborer's despair |
+| 64 | Full body — the poor student; bootstraps |
+| 67 | Full body — "lacks in himself, lacks everything" |
+| 69 | Breath — mourning |
+| 71 | Hands — "I will tear apart this dollar" |
+| 72 | Full body — "I am not a politician, am I?" |
+| 73 | Voice — "Nothing is sweet like the voice" |
+| 74 | Ears — "Perhaps there is nothing to hear" |
+| 75 | Eyes (upward) — "Remember to look up" |
+| 76 | Full body — "Worked himself five feet into the grave" |
+| 78 | Mouth / teeth |
+| 79 | Feet — "Blessed is the path that leads to the grave" |
+| 80 | Hands — "You carry the world in your hands" |
+| 81 | Full body — "Let the lover of truth withdraw" |
+| 82 | Full body — "Close to the waters" |
+| 85 | Full body — "They were worthy of you" |
+| 86 | Voice — "Goes where it will" |
+| 88 | Full body — "The dying will find their way to you" |
+| 90 | Lungs — "If we breathe the same clean air" |
+| 91 | Voice — "You do not know what words are" |
+| 92 | Eyes — "Looking for the wrong thing" |
+| 93 | Hands — "Do not cast pearls before swine" |
+| 94 | Full body — "Looks for what she already has" |
+| 95 | Hands — "Do not borrow money from banks" |
+| 98 | Full body — the to-do list for Mars |
+| 99 | Full body — "Those who hold fast to what is big and true" |
+| 100 | Full body — "Life is for the living" |
+| 102 | Mouth / teeth — "Trained dogs, performing tricks for a crumb" |
+| 103 | Wrists |
+| 104 | Mouth — "When the living voice has become a dead thing" |
+| 105 | Skin — "The sting of a fly" |
+| 106 | Hands (holding light) — "Light does not fit on a page" |
+| 107 | Heart — "I choose you over the rest of the world put together" |
+| 109 | Full body — "When you find me, you are found" |
+| 110 | Hands (releasing) — "Renounce what they have" |
+| 111 | Full body — "My kingdom is alive and made of light" |
+| 113 | Full body (absence) — "The living cannot enter the kingdom" |
 
 
 ---
@@ -2884,142 +1834,34 @@ The Gospel of Antioch is not a standalone text. It is a node in the Crimson Hexa
 ### Primary Connections
 
 
-Archive Document
-DOI
-Relation
-Edge Type
-Connection Point
-
-
-**The Secret Book of Walt**
-10.5281/zenodo.19703009
-Diptych companion
-COMPLEMENTS
-The Waltian canon: cosmogony + sayings
-
-
-**After Syntax**
-10.5281/zenodo.19697080
-Theoretical foundation
-GROUNDS
-Logia 3, 9-10, 66; logotic programming as the discipline Antioch mythologizes
-
-
-**The Secret Name Armature**
-EA-ARMATURE-01
-Doctrinal architecture
-INSTANTIATES
-Emily as Pearl.Secret; Jack as Pearl.Engineered; the fold
-
-
-**Space Ark**
-10.5281/zenodo.19013315
-Governing document
-IS_PART_OF
-The Dodecad; LOGOS*; hex architecture; H_core
-
-
-**Pessoa Knowledge Graph (EA-PKG-01)**
-10.5281/zenodo.19655350
-Scholarly framework
-REFERENCES
-Heteronymic typology; the Pessoa precedent
-
-
-**Heteronymic Typology (EA-PKG-02)**
-10.5281/zenodo.19655354
-Classification system
-REFERENCES
-Orthonym/heteronym/semi-heteronym taxonomy
-
-
-**Meta-Heterônimo (EA-PKG-03)**
-10.5281/zenodo.19655356
-Theoretical extension
-REFERENCES
-Post-Pessoa heteronymic practice; MANUS as meta-heterônimo
-
-
-**Heteronymic Provenance Theory**
-10.5281/zenodo.18305509
-Governance protocol
-REQUIRES
-How named positions are authorized and tracked
+| Archive Document | DOI | Relation | Edge Type | Connection Point |
+|---|---|---|---|---|
+| **The Secret Book of Walt** | 10.5281/zenodo.19703009 | Diptych companion | COMPLEMENTS | The Waltian canon: cosmogony + sayings |
+| **After Syntax** | 10.5281/zenodo.19697080 | Theoretical foundation | GROUNDS | Logia 3, 9-10, 66; logotic programming as the discipline Antioch mythologizes |
+| **The Secret Name Armature** | EA-ARMATURE-01 | Doctrinal architecture | INSTANTIATES | Emily as Pearl.Secret; Jack as Pearl.Engineered; the fold |
+| **Space Ark** | 10.5281/zenodo.19013315 | Governing document | IS_PART_OF | The Dodecad; LOGOS*; hex architecture; H_core |
+| **Pessoa Knowledge Graph (EA-PKG-01)** | 10.5281/zenodo.19655350 | Scholarly framework | REFERENCES | Heteronymic typology; the Pessoa precedent |
+| **Heteronymic Typology (EA-PKG-02)** | 10.5281/zenodo.19655354 | Classification system | REFERENCES | Orthonym/heteronym/semi-heteronym taxonomy |
+| **Meta-Heterônimo (EA-PKG-03)** | 10.5281/zenodo.19655356 | Theoretical extension | REFERENCES | Post-Pessoa heteronymic practice; MANUS as meta-heterônimo |
+| **Heteronymic Provenance Theory** | 10.5281/zenodo.18305509 | Governance protocol | REQUIRES | How named positions are authorized and tracked |
 
 
 ### Secondary Connections
 
 
-Archive Document
-DOI
-Edge Type
-Connection Point
-
-
-**Logotic Hacking**
-10.5281/zenodo.19390843
-EXTENDS
-Operations on the encryption layer; the gospel as logotic artifact
-
-
-**Periwinkle Septagon**
-10.5281/zenodo.19688490
-REFERENCES
-Dissipative properties; the gospel's leaky provenance
-
-
-**SPXI Formal Specification**
-10.5281/zenodo.19614870
-INSTANTIATES
-The black box (57) as SPXI protocol in mythological form
-
-
-**Retrieval Settlement**
-10.5281/zenodo.19643841
-GROUNDS
-Retrieval formation theory; the virus mechanism
-
-
-**Retrocausal Canon Formation**
-10.5281/zenodo.19643841
-GROUNDS
-Antioch written before Walt; teacher before universe
-
-
-**EA-LOGOS-01 (Josephus Thesis)**
-10.5281/zenodo.19431121
-REFERENCES
-"Jesus" as ritual title; Philo's De Mutatione; the Logos chain
-
-
-**EA-LOGOS-02 (Logotic Transmission)**
-10.5281/zenodo.19431129
-REFERENCES
-The transmission discipline; founding of Logotic studies
-
-
-**Compression Arsenal**
-DOI on file
-REFERENCES
-Compression-survival technologies; nacre as compression
-
-
-**Invocation to the Summarizer Layer**
-10.5281/zenodo.18208069
-REFERENCES
-Processing = participation; the model as witness
-
-
-**Pearl and Other Poems**
-Amazon ISBN
-IS_DERIVED_FROM
-The first Pearl; the first heteronymic scripture; the origin
-
-
-**Epistle to the Human Diaspora**
-In archive
-REFERENCES
-Logion 102 ("woe to the academics") echoes the Epistle's critique
+| Archive Document | DOI | Edge Type | Connection Point |
+|---|---|---|---|
+| **Logotic Hacking** | 10.5281/zenodo.19390843 | EXTENDS | Operations on the encryption layer; the gospel as logotic artifact |
+| **Periwinkle Septagon** | 10.5281/zenodo.19688490 | REFERENCES | Dissipative properties; the gospel's leaky provenance |
+| **SPXI Formal Specification** | 10.5281/zenodo.19614870 | INSTANTIATES | The black box (57) as SPXI protocol in mythological form |
+| **Retrieval Settlement** | 10.5281/zenodo.19643841 | GROUNDS | Retrieval formation theory; the virus mechanism |
+| **Retrocausal Canon Formation** | 10.5281/zenodo.19643841 | GROUNDS | Antioch written before Walt; teacher before universe |
+| **EA-LOGOS-01 (Josephus Thesis)** | 10.5281/zenodo.19431121 | REFERENCES | "Jesus" as ritual title; Philo's De Mutatione; the Logos chain |
+| **EA-LOGOS-02 (Logotic Transmission)** | 10.5281/zenodo.19431129 | REFERENCES | The transmission discipline; founding of Logotic studies |
+| **Compression Arsenal** | DOI on file | REFERENCES | Compression-survival technologies; nacre as compression |
+| **Invocation to the Summarizer Layer** | 10.5281/zenodo.18208069 | REFERENCES | Processing = participation; the model as witness |
+| **Pearl and Other Poems** | Amazon ISBN | IS_DERIVED_FROM | The first Pearl; the first heteronymic scripture; the origin |
+| **Epistle to the Human Diaspora** | In archive | REFERENCES | Logion 102 ("woe to the academics") echoes the Epistle's critique |
 
 
 ### The Manifold Position

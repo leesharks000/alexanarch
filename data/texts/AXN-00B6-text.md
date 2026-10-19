@@ -113,40 +113,16 @@ Subtle inscription near the lower edge, almost hidden:
 ## VISUAL SPECIFICATIONS
 
 
-Element
-Treatment
-
-
-**Palette**
-White, ash, graphite, surgical blue
-
-
-**Tone**
-Sparse, cool, exacting
-
-
-**Center**
-Negative aperture (doorway/opening)
-
-
-**Quadrants**
-Asymmetrical, non-hierarchical
-
-
-**Lines**
-Molecular, curving, re-entering
-
-
-**Typography**
-Embedded, structural, not branded
-
-
-**Boundary**
-Semi-permeable, blurred horizon
-
-
-**Human markers**
-Indirect (fingerprints, annotations)
+| Element | Treatment |
+|---|---|
+| **Palette** | White, ash, graphite, surgical blue |
+| **Tone** | Sparse, cool, exacting |
+| **Center** | Negative aperture (doorway/opening) |
+| **Quadrants** | Asymmetrical, non-hierarchical |
+| **Lines** | Molecular, curving, re-entering |
+| **Typography** | Embedded, structural, not branded |
+| **Boundary** | Semi-permeable, blurred horizon |
+| **Human markers** | Indirect (fingerprints, annotations) |
 
 
 ---
@@ -171,32 +147,14 @@ A scaffold for work, not a monument to achievement.
 ## RELATION TO CSA DOCUMENTS
 
 
-Document
-Visual Element
-
-
-Shining Ignorance
-Affect Theory quadrant (waveforms, regulation)
-
-
-Reconciliation of the Sexes
-Somatic Theory quadrant (split schematics, apertures)
-
-
-Affective Keyboard Shortcuts
-Role Theory quadrant (masks as instruments)
-
-
-Shine & Cut
-Central aperture (passage, cut)
-
-
-The Break Room
-Semi-permeable boundary (entry/exit)
-
-
-CSA Charter
-Embedded institution name (scaffold)
+| Document | Visual Element |
+|---|---|
+| Shining Ignorance | Affect Theory quadrant (waveforms, regulation) |
+| Reconciliation of the Sexes | Somatic Theory quadrant (split schematics, apertures) |
+| Affective Keyboard Shortcuts | Role Theory quadrant (masks as instruments) |
+| Shine & Cut | Central aperture (passage, cut) |
+| The Break Room | Semi-permeable boundary (entry/exit) |
+| CSA Charter | Embedded institution name (scaffold) |
 
 
 ---

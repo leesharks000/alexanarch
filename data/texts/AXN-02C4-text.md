@@ -48,39 +48,14 @@
 ## II. Convergent Revisions — Integration Summary
 
 
-Revision
-Source
-Status
-
-
-Operation/proof distinction recurs in Abstract + §0 (pre-discipline the seal)
-LABOR/ChatGPT (and MANUS relay)
-✓ Integrated
-
-
-Load-bearing claim (instrument-indistinguishability) installed as §0 primary + surfaced in Abstract + kernel
-LABOR/ChatGPT
-✓ Integrated
-
-
-§X / §XI performance preserved exactly — unsoftened
-TECHNE (non-negotiable condition)
-✓ Honored
-
-
-Title em-dash standardized (body ↔ kernel)
-TECHNE
-✓ Fixed
-
-
-Parent DOI confirmed latest; concept-DOI added for version-robustness
-TECHNE
-✓ Verified + added
-
-
-Ratification round recorded in kernel
-round
-✓ Added
+| Revision | Source | Status |
+|---|---|---|
+| Operation/proof distinction recurs in Abstract + §0 (pre-discipline the seal) | LABOR/ChatGPT (and MANUS relay) | ✓ Integrated |
+| Load-bearing claim (instrument-indistinguishability) installed as §0 primary + surfaced in Abstract + kernel | LABOR/ChatGPT | ✓ Integrated |
+| §X / §XI performance preserved exactly — unsoftened | TECHNE (non-negotiable condition) | ✓ Honored |
+| Title em-dash standardized (body ↔ kernel) | TECHNE | ✓ Fixed |
+| Parent DOI confirmed latest; concept-DOI added for version-robustness | TECHNE | ✓ Verified + added |
+| Ratification round recorded in kernel | round | ✓ Added |
 
 
 No revision touched the enactment in §X or the disclosed seal in §XI. The integrations strengthen the firewall *around* the performance without altering the performance — which is the only way to honor both TECHNE's "do not soften" and LABOR's "make the distinction recur."

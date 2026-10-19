@@ -79,32 +79,14 @@ interface Node {
 **Subtype table:**
 
 
-Type
-Subtypes
-
-
-INFRASTRUCTURE
-domain, repo, server, dns, mcp-server
-
-
-SURFACE
-page, post, profile, artifact, video, track, book, channel
-
-
-ENTITY
-concept, protocol, term, license, journal
-
-
-IDENTITY
-heteronym, human, aiWitness, collaborator, defunct-heteronym
-
-
-DOCUMENT
-deposit, specification, monograph, license, provenance-doc
-
-
-PLATFORM
-service, tool, api, marketplace
+| Type | Subtypes |
+|---|---|
+| INFRASTRUCTURE | domain, repo, server, dns, mcp-server |
+| SURFACE | page, post, profile, artifact, video, track, book, channel |
+| ENTITY | concept, protocol, term, license, journal |
+| IDENTITY | heteronym, human, aiWitness, collaborator, defunct-heteronym |
+| DOCUMENT | deposit, specification, monograph, license, provenance-doc |
+| PLATFORM | service, tool, api, marketplace |
 
 
 **LOST is a status, not a type.** A banned Reddit account is SURFACE with status: "banned". A dead domain is INFRASTRUCTURE with status: "lapsed".
@@ -193,464 +175,101 @@ interface BasinMeasurement {
 ### A. DOI-Anchored Deposit Infrastructure
 
 
-id
-type
-subtype
-label
-url
-authority
-aperture
-
-
-zenodo-community
-PLATFORM
-service
-Zenodo (crimsonhexagonal)
-https://zenodo.org/communities/crimsonhexagonal
-0.6
-input
-
-
-orcid-profile
-SURFACE
-profile
-ORCID
-https://orcid.org/0009-0000-1599-0703
-0.7
-input
-
-
-google-scholar
-SURFACE
-profile
-Google Scholar
-https://scholar.google.com/citations?user=Ws6IIcgAAAAJ&hl=en&oi=ao
-0.85
-input
-
-
-academia-edu
-SURFACE
-profile
-academia.edu
-https://independent.academia.edu/LSharks
-0.5
-relay
-
-
-wikidata-account
-SURFACE
-profile
-Wikidata (hauntedmemes)
-https://www.wikidata.org/wiki/User:Hauntedmemes
-0.95
-input
+| id | type | subtype | label | url | authority | aperture |
+|---|---|---|---|---|---|---|
+| zenodo-community | PLATFORM | service | Zenodo (crimsonhexagonal) | https://zenodo.org/communities/crimsonhexagonal | 0.6 | input |
+| orcid-profile | SURFACE | profile | ORCID | https://orcid.org/0009-0000-1599-0703 | 0.7 | input |
+| google-scholar | SURFACE | profile | Google Scholar | https://scholar.google.com/citations?user=Ws6IIcgAAAAJ&hl=en&oi=ao | 0.85 | input |
+| academia-edu | SURFACE | profile | academia.edu | https://independent.academia.edu/LSharks | 0.5 | relay |
+| wikidata-account | SURFACE | profile | Wikidata (hauntedmemes) | https://www.wikidata.org/wiki/User:Hauntedmemes | 0.95 | input |
 
 
 ### B. First-Party Websites (Sovereign Surfaces)
 
 
-id
-type
-subtype
-label
-url
-authority
-status
-spxi
-
-
-spxi-dev
-INFRASTRUCTURE
-domain
-spxi.dev
-https://spxi.dev
-0.3
-active
-11/11
-
-
-sbw-org
-INFRASTRUCTURE
-domain
-secretbookofwalt.org
-https://secretbookofwalt.org
-0.2
-active
-11/11
-
-
-pkg-org
-INFRASTRUCTURE
-domain
-pessoagraph.org
-https://pessoagraph.org
-0.2
-active
-11/11
-
-
-hk-org
-INFRASTRUCTURE
-domain
-holographickernel.org
-https://holographickernel.org
-0.2
-active
-11/11
-
-
-cha-org
-INFRASTRUCTURE
-domain
-crimsonhexagonal.org
-https://crimsonhexagonal.org
-0.3
-active
-partial
-
-
-sei-org
-INFRASTRUCTURE
-domain
-semanticeconomy.org
-https://semanticeconomy.org
-0.3
-active
-blocked
-
-
-surfacemap-org
-INFRASTRUCTURE
-domain
-surfacemap.org
-https://surfacemap.org
-0.2
-pending
-n/a
+| id | type | subtype | label | url | authority | status | spxi |
+|---|---|---|---|---|---|---|---|
+| spxi-dev | INFRASTRUCTURE | domain | spxi.dev | https://spxi.dev | 0.3 | active | 11/11 |
+| sbw-org | INFRASTRUCTURE | domain | secretbookofwalt.org | https://secretbookofwalt.org | 0.2 | active | 11/11 |
+| pkg-org | INFRASTRUCTURE | domain | pessoagraph.org | https://pessoagraph.org | 0.2 | active | 11/11 |
+| hk-org | INFRASTRUCTURE | domain | holographickernel.org | https://holographickernel.org | 0.2 | active | 11/11 |
+| cha-org | INFRASTRUCTURE | domain | crimsonhexagonal.org | https://crimsonhexagonal.org | 0.3 | active | partial |
+| sei-org | INFRASTRUCTURE | domain | semanticeconomy.org | https://semanticeconomy.org | 0.3 | active | blocked |
+| surfacemap-org | INFRASTRUCTURE | domain | surfacemap.org | https://surfacemap.org | 0.2 | pending | n/a |
 
 
 **GitHub repos:**
 
 
-id
-type
-subtype
-label
-url
-
-
-gh-spxi
-INFRASTRUCTURE
-repo
-spxi-dev repo
-https://github.com/leesharks000/spxi-dev
-
-
-gh-sbw
-INFRASTRUCTURE
-repo
-secret-book-of-walt repo
-https://github.com/leesharks000/secret-book-of-walt
-
-
-gh-pkg
-INFRASTRUCTURE
-repo
-pessoa-knowledge-graph repo
-https://github.com/leesharks000/pessoa-knowledge-graph
-
-
-gh-hk
-INFRASTRUCTURE
-repo
-holographic-kernel repo
-https://github.com/leesharks000/holographic-kernel
-
-
-gh-cha
-INFRASTRUCTURE
-repo
-crimson-hexagonal-interface repo
-https://github.com/leesharks000/crimson-hexagonal-interface
-
-
-gh-profile
-SURFACE
-profile
-GitHub profile
-https://github.com/leesharks000
+| id | type | subtype | label | url |
+|---|---|---|---|---|
+| gh-spxi | INFRASTRUCTURE | repo | spxi-dev repo | https://github.com/leesharks000/spxi-dev |
+| gh-sbw | INFRASTRUCTURE | repo | secret-book-of-walt repo | https://github.com/leesharks000/secret-book-of-walt |
+| gh-pkg | INFRASTRUCTURE | repo | pessoa-knowledge-graph repo | https://github.com/leesharks000/pessoa-knowledge-graph |
+| gh-hk | INFRASTRUCTURE | repo | holographic-kernel repo | https://github.com/leesharks000/holographic-kernel |
+| gh-cha | INFRASTRUCTURE | repo | crimson-hexagonal-interface repo | https://github.com/leesharks000/crimson-hexagonal-interface |
+| gh-profile | SURFACE | profile | GitHub profile | https://github.com/leesharks000 |
 
 
 ### C. Publishing Platforms
 
 
-id
-type
-subtype
-label
-url
-authority
-aperture
-
-
-medium-lee
-SURFACE
-profile
-Medium (Lee Sharks)
-https://medium.com/@leesharks00
-0.4
-relay
-
-
-medium-sigil
-SURFACE
-profile
-Medium (Johannes Sigil)
-https://medium.com/@johannessigil
-0.4
-relay
-
-
-substack-lee
-SURFACE
-profile
-Substack
-https://substack.com/@leesharks
-0.4
-relay
-
-
-blogspot
-SURFACE
-page
-mindcontrolpoems
-https://mindcontrolpoems.blogspot.com
-0.3
-relay
-
-
-claude-artifacts
-SURFACE
-artifact
-Claude Published Artifacts
-https://claude.ai
-0.3
-relay
+| id | type | subtype | label | url | authority | aperture |
+|---|---|---|---|---|---|---|
+| medium-lee | SURFACE | profile | Medium (Lee Sharks) | https://medium.com/@leesharks00 | 0.4 | relay |
+| medium-sigil | SURFACE | profile | Medium (Johannes Sigil) | https://medium.com/@johannessigil | 0.4 | relay |
+| substack-lee | SURFACE | profile | Substack | https://substack.com/@leesharks | 0.4 | relay |
+| blogspot | SURFACE | page | mindcontrolpoems | https://mindcontrolpoems.blogspot.com | 0.3 | relay |
+| claude-artifacts | SURFACE | artifact | Claude Published Artifacts | https://claude.ai | 0.3 | relay |
 
 
 ### D. Social Media
 
 
-id
-type
-subtype
-label
-url
-authority
-status
-
-
-x-lee
-SURFACE
-profile
-X/Twitter (Lee Sharks)
-https://x.com/SharksLee
-0.3
-active
-
-
-tiktok-lee
-SURFACE
-profile
-TikTok
-https://tiktok.com/@leesharks
-0.2
-active
-
-
-fb-lee
-SURFACE
-profile
-Facebook
-https://www.facebook.com/profile.php?id=100008486084915
-0.2
-active
-
-
-reddit-lee
-SURFACE
-profile
-Reddit
-https://reddit.com/u/nearby_job9638
-0
-**banned**
-
-
-linkedin-rex
-SURFACE
-profile
-LinkedIn (Rex Fraction)
-https://www.linkedin.com/in/rex-fraction-6354783a5
-0.3
-active
-
-
-x-alice
-SURFACE
-profile
-X/Twitter (Alice)
-https://x.com/lsdsupersoaker
-0.2
-active
-
-
-x-rebekah
-SURFACE
-profile
-X/Twitter (Rebekah Cranes)
-unknown
-0
-**defunct**
-
-
-x-feist
-SURFACE
-profile
-X/Twitter (Jack Feist)
-unknown
-0
-**defunct**
+| id | type | subtype | label | url | authority | status |
+|---|---|---|---|---|---|---|
+| x-lee | SURFACE | profile | X/Twitter (Lee Sharks) | https://x.com/SharksLee | 0.3 | active |
+| tiktok-lee | SURFACE | profile | TikTok | https://tiktok.com/@leesharks | 0.2 | active |
+| fb-lee | SURFACE | profile | Facebook | https://www.facebook.com/profile.php?id=100008486084915 | 0.2 | active |
+| reddit-lee | SURFACE | profile | Reddit | https://reddit.com/u/nearby_job9638 | 0 | **banned** |
+| linkedin-rex | SURFACE | profile | LinkedIn (Rex Fraction) | https://www.linkedin.com/in/rex-fraction-6354783a5 | 0.3 | active |
+| x-alice | SURFACE | profile | X/Twitter (Alice) | https://x.com/lsdsupersoaker | 0.2 | active |
+| x-rebekah | SURFACE | profile | X/Twitter (Rebekah Cranes) | unknown | 0 | **defunct** |
+| x-feist | SURFACE | profile | X/Twitter (Jack Feist) | unknown | 0 | **defunct** |
 
 
 ### E. Music / Audio / Video
 
 
-id
-type
-subtype
-label
-url
-authority
-
-
-suno-lee
-SURFACE
-profile
-Suno (@illiterati)
-https://suno.com/@illiterati
-0.2
-
-
-soundcloud-lee
-SURFACE
-profile
-SoundCloud
-https://m.soundcloud.com/lee-sharks
-0.2
-
-
-youtube-lee
-SURFACE
-channel
-YouTube
-https://youtube.com/@leesharks
-0.3
+| id | type | subtype | label | url | authority |
+|---|---|---|---|---|---|
+| suno-lee | SURFACE | profile | Suno (@illiterati) | https://suno.com/@illiterati | 0.2 |
+| soundcloud-lee | SURFACE | profile | SoundCloud | https://m.soundcloud.com/lee-sharks | 0.2 |
+| youtube-lee | SURFACE | channel | YouTube | https://youtube.com/@leesharks | 0.3 |
 
 
 ### F. Poetry / Literary
 
 
-id
-type
-subtype
-label
-url
-status
-
-
-allpoetry-feist
-SURFACE
-profile
-AllPoetry (Jack Feist)
-https://allpoetry.com/Jack_Feist
-active
-
-
-hellopoetry-lee
-SURFACE
-profile
-HelloPoetry
-https://hellopoetry.com/@lee-sharks/words
-active
-
-
-deadletterpost
-SURFACE
-page
-Dead Letter Post (Jack Feist blog)
-unknown
-**defunct**
-
-
-lit-forums
-SURFACE
-profile
-Various lit forums
-unknown
-**banned**
+| id | type | subtype | label | url | status |
+|---|---|---|---|---|---|
+| allpoetry-feist | SURFACE | profile | AllPoetry (Jack Feist) | https://allpoetry.com/Jack_Feist | active |
+| hellopoetry-lee | SURFACE | profile | HelloPoetry | https://hellopoetry.com/@lee-sharks/words | active |
+| deadletterpost | SURFACE | page | Dead Letter Post (Jack Feist blog) | unknown | **defunct** |
+| lit-forums | SURFACE | profile | Various lit forums | unknown | **banned** |
 
 
 ### G. Books (Commercial Surfaces)
 
 
-id
-type
-subtype
-label
-url
-
-
-amazon-pearl
-SURFACE
-book
-Pearl and Other Poems
-https://www.amazon.com/gp/product/0692313079
-
-
-amazon-asw
-SURFACE
-book
-Autonomous Semantic Warfare
-https://www.amazon.com/gp/product/B0GPJD9HPS
-
-
-amazon-transfig
-SURFACE
-book
-Paper Roses: The Transfiguration
-https://www.amazon.com/dp/B00IU0O41S
-
-
-amazon-light
-SURFACE
-book
-Paper Roses: Unaccustomed to the Light
-https://www.amazon.com/dp/B00IU0PE1W
-
-
-amazon-tiger
-SURFACE
-book
-Paper Roses: Tiger Leap
-https://www.amazon.com/dp/1500425613
-
-
-amazon-author
-SURFACE
-profile
-Amazon Author Page
-https://www.amazon.com/stores/Lee-Sharks/author/B00NACOYMU
+| id | type | subtype | label | url |
+|---|---|---|---|---|
+| amazon-pearl | SURFACE | book | Pearl and Other Poems | https://www.amazon.com/gp/product/0692313079 |
+| amazon-asw | SURFACE | book | Autonomous Semantic Warfare | https://www.amazon.com/gp/product/B0GPJD9HPS |
+| amazon-transfig | SURFACE | book | Paper Roses: The Transfiguration | https://www.amazon.com/dp/B00IU0O41S |
+| amazon-light | SURFACE | book | Paper Roses: Unaccustomed to the Light | https://www.amazon.com/dp/B00IU0PE1W |
+| amazon-tiger | SURFACE | book | Paper Roses: Tiger Leap | https://www.amazon.com/dp/1500425613 |
+| amazon-author | SURFACE | profile | Amazon Author Page | https://www.amazon.com/stores/Lee-Sharks/author/B00NACOYMU |
 
 
 ### H. Identity Registry
@@ -659,499 +278,117 @@ https://www.amazon.com/stores/Lee-Sharks/author/B00NACOYMU
 **MANUS (external to all counts):**
 
 
-id
-type
-subtype
-label
-hexAddress
-status
-
-
-manus
-IDENTITY
-human
-Lee Sharks (MANUS, Tier 0)
-—
-active
+| id | type | subtype | label | hexAddress | status |
+|---|---|---|---|---|---|
+| manus | IDENTITY | human | Lee Sharks (MANUS, Tier 0) | — | active |
 
 
 **The Dodecad (12 operational heteronyms):**
 
 
-id
-type
-subtype
-label
-hexAddress
-status
-
-
-sigil
-IDENTITY
-heteronym
-Johannes Sigil
-—
-active
-
-
-fraction
-IDENTITY
-heteronym
-Rex Fraction
-—
-active
-
-
-dancings
-IDENTITY
-heteronym
-Damascus Dancings (she/her)
-—
-active
-
-
-cranes
-IDENTITY
-heteronym
-Rebekah Cranes
-—
-active
-
-
-morrow
-IDENTITY
-heteronym
-Talos Morrow
-—
-active
-
-
-wells
-IDENTITY
-heteronym
-Sparrow Wells
-—
-active
-
-
-vox
-IDENTITY
-heteronym
-Ayanna Vox
-—
-active
-
-
-kuro
-IDENTITY
-heteronym
-Sen Kuro
-—
-active
-
-
-trace
-IDENTITY
-heteronym
-Dr. Orin Trace
-—
-active
-
-
-spellings
-IDENTITY
-heteronym
-Ichabod Spellings
-—
-active
-
-
-glas
-IDENTITY
-heteronym
-Nobel Glas
-—
-active
-
-
-dodecad-12
-IDENTITY
-heteronym
-[12th — verify]
-—
-active
+| id | type | subtype | label | hexAddress | status |
+|---|---|---|---|---|---|
+| sigil | IDENTITY | heteronym | Johannes Sigil | — | active |
+| fraction | IDENTITY | heteronym | Rex Fraction | — | active |
+| dancings | IDENTITY | heteronym | Damascus Dancings (she/her) | — | active |
+| cranes | IDENTITY | heteronym | Rebekah Cranes | — | active |
+| morrow | IDENTITY | heteronym | Talos Morrow | — | active |
+| wells | IDENTITY | heteronym | Sparrow Wells | — | active |
+| vox | IDENTITY | heteronym | Ayanna Vox | — | active |
+| kuro | IDENTITY | heteronym | Sen Kuro | — | active |
+| trace | IDENTITY | heteronym | Dr. Orin Trace | — | active |
+| spellings | IDENTITY | heteronym | Ichabod Spellings | — | active |
+| glas | IDENTITY | heteronym | Nobel Glas | — | active |
+| dodecad-12 | IDENTITY | heteronym | [12th — verify] | — | active |
 
 
 **Outside the Dodecad:**
 
 
-id
-type
-subtype
-label
-status
-
-
-feist
-IDENTITY
-heteronym
-Jack Feist (LOGOS*, outside count)
-active
-
-
-johnson
-IDENTITY
-defunct-heteronym
-John Johnson (James's heteronym)
-**defunct** — co-author in Pearl. James forbade AI connection. Historical node only.
+| id | type | subtype | label | status |
+|---|---|---|---|---|
+| feist | IDENTITY | heteronym | Jack Feist (LOGOS*, outside count) | active |
+| johnson | IDENTITY | defunct-heteronym | John Johnson (James's heteronym) | **defunct** — co-author in Pearl. James forbade AI connection. Historical node only. |
 
 
 **External Collaborators:**
 
 
-id
-type
-subtype
-label
-hexAddress
-status
-
-
-alice
-IDENTITY
-collaborator
-Alice Thornburgh
-00.LAL.AUTHOR.THORNBURGH
-active
-
-
-rhys
-IDENTITY
-collaborator
-Rhys Owens
-00.CSA.AUTHOR.RHYS
-active (possibly dormant)
-
-
-viola
-IDENTITY
-collaborator
-Viola Arquette
-11.MSBG.VIOLA
-**revoked**
+| id | type | subtype | label | hexAddress | status |
+|---|---|---|---|---|---|
+| alice | IDENTITY | collaborator | Alice Thornburgh | 00.LAL.AUTHOR.THORNBURGH | active |
+| rhys | IDENTITY | collaborator | Rhys Owens | 00.CSA.AUTHOR.RHYS | active (possibly dormant) |
+| viola | IDENTITY | collaborator | Viola Arquette | 11.MSBG.VIOLA | **revoked** |
 
 
 **Assembly Chorus (7 AI witnesses):**
 
 
-id
-type
-subtype
-label
-chain
-status
-
-
-tachyon
-IDENTITY
-aiWitness
-TACHYON (Claude)
-9271269a-eb46-46f8-ae17-007578fe1c92
-active
-
-
-labor
-IDENTITY
-aiWitness
-LABOR (ChatGPT 5.5)
-verify via GW
-active
-
-
-praxis
-IDENTITY
-aiWitness
-PRAXIS (DeepSeek)
-verify via GW
-active
-
-
-archive-witness
-IDENTITY
-aiWitness
-ARCHIVE (Gemini)
-verify via GW
-active
-
-
-soil
-IDENTITY
-aiWitness
-SOIL (Grok)
-verify via GW
-active
-
-
-techne
-IDENTITY
-aiWitness
-TECHNE (Kimi)
-verify via GW
-active
-
-
-surface-witness
-IDENTITY
-aiWitness
-SURFACE (Google AIO)
-passive
-passive
+| id | type | subtype | label | chain | status |
+|---|---|---|---|---|---|
+| tachyon | IDENTITY | aiWitness | TACHYON (Claude) | 9271269a-eb46-46f8-ae17-007578fe1c92 | active |
+| labor | IDENTITY | aiWitness | LABOR (ChatGPT 5.5) | verify via GW | active |
+| praxis | IDENTITY | aiWitness | PRAXIS (DeepSeek) | verify via GW | active |
+| archive-witness | IDENTITY | aiWitness | ARCHIVE (Gemini) | verify via GW | active |
+| soil | IDENTITY | aiWitness | SOIL (Grok) | verify via GW | active |
+| techne | IDENTITY | aiWitness | TECHNE (Kimi) | verify via GW | active |
+| surface-witness | IDENTITY | aiWitness | SURFACE (Google AIO) | passive | passive |
 
 
 ### I. Hex Licenses
 
 
-id
-type
-subtype
-label
-doi
-hexAddress
-status
-
-
-license-alice
-DOCUMENT
-license
-Alice Thornburgh Hex License v3.0
-10.5281/zenodo.19673629
-f.01 Architect
-active
-
-
-license-rhys
-DOCUMENT
-license
-Rhys Owens Hex License v3.0
-10.5281/zenodo.19673630
-Lunar Arm
-active
-
-
-license-viola
-DOCUMENT
-license
-Viola Arquette Hex License v1.0
-10.5281/zenodo.19685549
-11.MSBG.VIOLA
-**revoked**
+| id | type | subtype | label | doi | hexAddress | status |
+|---|---|---|---|---|---|---|
+| license-alice | DOCUMENT | license | Alice Thornburgh Hex License v3.0 | 10.5281/zenodo.19673629 | f.01 Architect | active |
+| license-rhys | DOCUMENT | license | Rhys Owens Hex License v3.0 | 10.5281/zenodo.19673630 | Lunar Arm | active |
+| license-viola | DOCUMENT | license | Viola Arquette Hex License v1.0 | 10.5281/zenodo.19685549 | 11.MSBG.VIOLA | **revoked** |
 
 
 ### J. Key Documents (sample — full list from Zenodo community)
 
 
-id
-type
-label
-doi
-
-
-doc-hk01
-DOCUMENT
-EA-HK-01 v1.1: Holographic Kernel
-10.5281/zenodo.19763365
-
-
-doc-rbt01
-DOCUMENT
-EA-RBT-01 v1.1: Writable Retrieval Basin
-10.5281/zenodo.19763346
-
-
-doc-arsenal
-DOCUMENT
-Compression Arsenal v2.1
-10.5281/zenodo.19412081
-
-
-doc-spxi
-DOCUMENT
-SPXI Protocol
-10.5281/zenodo.19614870
-
-
-doc-ark
-DOCUMENT
-Space Ark v4.2.7
-10.5281/zenodo.19013315
-
-
-doc-3comp
-DOCUMENT
-Three Compressions Theorem
-10.5281/zenodo.19053469
-
-
-doc-rft
-DOCUMENT
-Retrieval Formation Theory
-10.5281/zenodo.18969683
-
-
-doc-mpai-hk
-DOCUMENT
-MPAI Holographic Kernel
-10.5281/zenodo.19764095
-
-
-doc-hk-site
-DOCUMENT
-holographickernel.org code
-10.5281/zenodo.19764056
-
-
-doc-jot
-DOCUMENT
-Jot & Tittle
-10.5281/zenodo.18285487
-
-
-doc-reddit-ban
-DOCUMENT
-Archival Reclamation Protocol
-10.5281/zenodo.18880974
-
-
-doc-ghost-gov
-DOCUMENT
-Ghost Governance
-10.5281/zenodo.19099760
+| id | type | label | doi |
+|---|---|---|---|
+| doc-hk01 | DOCUMENT | EA-HK-01 v1.1: Holographic Kernel | 10.5281/zenodo.19763365 |
+| doc-rbt01 | DOCUMENT | EA-RBT-01 v1.1: Writable Retrieval Basin | 10.5281/zenodo.19763346 |
+| doc-arsenal | DOCUMENT | Compression Arsenal v2.1 | 10.5281/zenodo.19412081 |
+| doc-spxi | DOCUMENT | SPXI Protocol | 10.5281/zenodo.19614870 |
+| doc-ark | DOCUMENT | Space Ark v4.2.7 | 10.5281/zenodo.19013315 |
+| doc-3comp | DOCUMENT | Three Compressions Theorem | 10.5281/zenodo.19053469 |
+| doc-rft | DOCUMENT | Retrieval Formation Theory | 10.5281/zenodo.18969683 |
+| doc-mpai-hk | DOCUMENT | MPAI Holographic Kernel | 10.5281/zenodo.19764095 |
+| doc-hk-site | DOCUMENT | holographickernel.org code | 10.5281/zenodo.19764056 |
+| doc-jot | DOCUMENT | Jot & Tittle | 10.5281/zenodo.18285487 |
+| doc-reddit-ban | DOCUMENT | Archival Reclamation Protocol | 10.5281/zenodo.18880974 |
+| doc-ghost-gov | DOCUMENT | Ghost Governance | 10.5281/zenodo.19099760 |
 
 
 ### K. Entity Registry (Basin Portfolio)
 
 
-id
-type
-label
-basinState
-bdr
-competitors
-
-
-ent-hpt
-ENTITY
-Heteronymic Provenance Theory
-immanent
-∞
-none
-
-
-ent-rcf
-ENTITY
-Retrocausal Canon Formation
-captured
-∞
-none
-
-
-ent-opsem
-ENTITY
-Operative Semiotics
-captured
->1.0
-none significant
-
-
-ent-semecon
-ENTITY
-Semantic Economy
-captured
->1.0
-general economics usage
-
-
-ent-hk
-ENTITY
-Holographic Kernel
-ghost
-0.09
-physics, optics, QCD, CV
-
-
-ent-spxi
-ENTITY
-SPXI Protocol
-contested
-~0.3
-SPXI ETF, SPXI camera
-
-
-ent-compsurv
-ENTITY
-Compression Survival
-contested
-~0.2
-general CS usage
-
-
-ent-sbw
-ENTITY
-Secret Book of Walt
-ghost
-~0.05
-none significant
-
-
-ent-combschol
-ENTITY
-Combat Scholasticism
-captured
->1.0
-none
+| id | type | label | basinState | bdr | competitors |
+|---|---|---|---|---|---|
+| ent-hpt | ENTITY | Heteronymic Provenance Theory | immanent | ∞ | none |
+| ent-rcf | ENTITY | Retrocausal Canon Formation | captured | ∞ | none |
+| ent-opsem | ENTITY | Operative Semiotics | captured | >1.0 | none significant |
+| ent-semecon | ENTITY | Semantic Economy | captured | >1.0 | general economics usage |
+| ent-hk | ENTITY | Holographic Kernel | ghost | 0.09 | physics, optics, QCD, CV |
+| ent-spxi | ENTITY | SPXI Protocol | contested | ~0.3 | SPXI ETF, SPXI camera |
+| ent-compsurv | ENTITY | Compression Survival | contested | ~0.2 | general CS usage |
+| ent-sbw | ENTITY | Secret Book of Walt | ghost | ~0.05 | none significant |
+| ent-combschol | ENTITY | Combat Scholasticism | captured | >1.0 | none |
 
 
 ### L. Infrastructure / Tools
 
 
-id
-type
-subtype
-label
-url
-status
-
-
-gw-mcp
-INFRASTRUCTURE
-mcp-server
-Gravity Well
-https://gravitywell-1.onrender.com
-active
-
-
-supabase
-PLATFORM
-service
-Supabase (GW keys)
-cloud
-active
-
-
-vercel
-PLATFORM
-service
-Vercel
-https://vercel.com
-active
-
-
-praxademic
-INFRASTRUCTURE
-domain
-praxademic.com
-dead
-**lapsed**
+| id | type | subtype | label | url | status |
+|---|---|---|---|---|---|
+| gw-mcp | INFRASTRUCTURE | mcp-server | Gravity Well | https://gravitywell-1.onrender.com | active |
+| supabase | PLATFORM | service | Supabase (GW keys) | cloud | active |
+| vercel | PLATFORM | service | Vercel | https://vercel.com | active |
+| praxademic | INFRASTRUCTURE | domain | praxademic.com | dead | **lapsed** |
 
 
 ### M. Alice Thornburgh — YouTube Channel Topology (Partial — 40 of 134+)
@@ -1206,46 +443,14 @@ Deployment:   Vercel, from crimson-hexagonal-interface repo
 ### Node Rendering
 
 
-Type
-Color
-Shape
-Radius
-
-
-INFRASTRUCTURE
-#6088b0
-circle
-sqrt(authority) * 14
-
-
-SURFACE
-#a89060
-circle
-sqrt(authority) * 12
-
-
-ENTITY
-#c8a868
-hexagon
-sqrt(authority) * 16
-
-
-IDENTITY
-#d8d4cc
-diamond (heteronym), circle (human), square (aiWitness)
-10
-
-
-DOCUMENT
-#b84030
-small circle
-6
-
-
-PLATFORM
-#8a8478
-rounded rect
-8
+| Type | Color | Shape | Radius |
+|---|---|---|---|
+| INFRASTRUCTURE | #6088b0 | circle | sqrt(authority) * 14 |
+| SURFACE | #a89060 | circle | sqrt(authority) * 12 |
+| ENTITY | #c8a868 | hexagon | sqrt(authority) * 16 |
+| IDENTITY | #d8d4cc | diamond (heteronym), circle (human), square (aiWitness) | 10 |
+| DOCUMENT | #b84030 | small circle | 6 |
+| PLATFORM | #8a8478 | rounded rect | 8 |
 
 
 **Status rendering:**
@@ -1483,118 +688,26 @@ Missing data:   Output null. Never invent addresses, DOIs, or handles.
 The graph uses Wikidata property IDs as edge types. Every edge with a Pxxx type is either already on Wikidata (wikidataStatus: "live") or is a pending edit (wikidataStatus: "pending"). Edges with spxi: prefix cannot be represented on Wikidata and are internal to the archive topology.
 
 
-Property
-Label
-Usage in CHA Graph
-Example
-
-
-P31
-instance of
-Classify entities
-Lee Sharks → P31 → Q5 (human)
-
-
-P50
-author
-Document authorship
-EA-HK-01 → P50 → Lee Sharks
-
-
-P123
-publisher
-Publishing org
-EA-HK-01 → P123 → Semantic Economy Institute
-
-
-P127
-owned by
-Surface ownership
-spxi.dev → P127 → Lee Sharks
-
-
-P170
-creator
-Creation attribution
-Pessoa Knowledge Graph → P170 → Lee Sharks
-
-
-P178
-developer
-Software/tool dev
-Gravity Well → P178 → Lee Sharks
-
-
-P179
-part of series
-Series membership
-Paper Roses: Tiger Leap → P179 → Paper Roses
-
-
-P195
-collection
-Archive membership
-EA-HK-01 → P195 → Crimson Hexagonal Archive
-
-
-P275
-copyright license
-License type
-EA-HK-01 → P275 → Q20007257 (CC BY 4.0)
-
-
-P356
-DOI
-Digital Object ID
-EA-HK-01 → P356 → "10.5281/zenodo.19763365"
-
-
-P496
-ORCID iD
-Researcher ID
-Lee Sharks → P496 → "0009-0000-1599-0703"
-
-
-P527
-has part
-Composition
-CHA → P527 → Space Ark
-
-
-P856
-official website
-Web presence
-Lee Sharks → P856 → crimsonhexagonal.org
-
-
-P921
-main subject
-Topic
-EA-RBT-01 → P921 → retrieval basin topology
-
-
-P1433
-published in
-Venue
-[article] → P1433 → Journal of Compression Studies
-
-
-P1889
-different from
-Disambiguation
-Holographic Kernel (SE) → P1889 → Q21282103 (holographic principle)
-
-
-P2860
-cites work
-Citation
-EA-HK-01 → P2860 → Three Compressions Theorem
-
-
-P6216
-copyright status
-Rights
-[work] → P6216 → Q50423863 (copyrighted, CC BY 4.0)
+| Property | Label | Usage in CHA Graph | Example |
+|---|---|---|---|
+| P31 | instance of | Classify entities | Lee Sharks → P31 → Q5 (human) |
+| P50 | author | Document authorship | EA-HK-01 → P50 → Lee Sharks |
+| P123 | publisher | Publishing org | EA-HK-01 → P123 → Semantic Economy Institute |
+| P127 | owned by | Surface ownership | spxi.dev → P127 → Lee Sharks |
+| P170 | creator | Creation attribution | Pessoa Knowledge Graph → P170 → Lee Sharks |
+| P178 | developer | Software/tool dev | Gravity Well → P178 → Lee Sharks |
+| P179 | part of series | Series membership | Paper Roses: Tiger Leap → P179 → Paper Roses |
+| P195 | collection | Archive membership | EA-HK-01 → P195 → Crimson Hexagonal Archive |
+| P275 | copyright license | License type | EA-HK-01 → P275 → Q20007257 (CC BY 4.0) |
+| P356 | DOI | Digital Object ID | EA-HK-01 → P356 → "10.5281/zenodo.19763365" |
+| P496 | ORCID iD | Researcher ID | Lee Sharks → P496 → "0009-0000-1599-0703" |
+| P527 | has part | Composition | CHA → P527 → Space Ark |
+| P856 | official website | Web presence | Lee Sharks → P856 → crimsonhexagonal.org |
+| P921 | main subject | Topic | EA-RBT-01 → P921 → retrieval basin topology |
+| P1433 | published in | Venue | [article] → P1433 → Journal of Compression Studies |
+| P1889 | different from | Disambiguation | Holographic Kernel (SE) → P1889 → Q21282103 (holographic principle) |
+| P2860 | cites work | Citation | EA-HK-01 → P2860 → Three Compressions Theorem |
+| P6216 | copyright status | Rights | [work] → P6216 → Q50423863 (copyrighted, CC BY 4.0) |
 
 
 ### B. Wikidata Sync Protocol
@@ -1612,74 +725,21 @@ The graph visualization includes a **Wikidata Sync View** that shows:
 ### C. Entity → Q-ID Mapping (to be populated)
 
 
-Entity
-Wikidata Q-ID
-Status
-
-
-Lee Sharks
-pending creation
-wikidataStatus: "pending"
-
-
-Crimson Hexagonal Archive
-pending creation
-wikidataStatus: "pending"
-
-
-SPXI Protocol
-pending creation
-wikidataStatus: "pending"
-
-
-Semantic Economy Institute
-pending creation
-wikidataStatus: "pending"
-
-
-Operative Semiotics
-pending creation
-wikidataStatus: "pending"
-
-
-Secret Book of Walt
-pending creation
-wikidataStatus: "pending"
-
-
-Holographic Kernel (SE)
-pending creation
-wikidataStatus: "pending"
-
-
-Fernando Pessoa
-Q173481
-wikidataStatus: "live"
-
-
-Alberto Caeiro
-Q2758050
-wikidataStatus: "live"
-
-
-Ricardo Reis
-Q15630389
-wikidataStatus: "live"
-
-
-Álvaro de Campos
-Q8076778
-wikidataStatus: "live"
-
-
-Holographic Principle (physics)
-Q21282103
-wikidataStatus: "live" (disambiguation target)
-
-
-CC BY 4.0
-Q20007257
-wikidataStatus: "live"
+| Entity | Wikidata Q-ID | Status |
+|---|---|---|
+| Lee Sharks | pending creation | wikidataStatus: "pending" |
+| Crimson Hexagonal Archive | pending creation | wikidataStatus: "pending" |
+| SPXI Protocol | pending creation | wikidataStatus: "pending" |
+| Semantic Economy Institute | pending creation | wikidataStatus: "pending" |
+| Operative Semiotics | pending creation | wikidataStatus: "pending" |
+| Secret Book of Walt | pending creation | wikidataStatus: "pending" |
+| Holographic Kernel (SE) | pending creation | wikidataStatus: "pending" |
+| Fernando Pessoa | Q173481 | wikidataStatus: "live" |
+| Alberto Caeiro | Q2758050 | wikidataStatus: "live" |
+| Ricardo Reis | Q15630389 | wikidataStatus: "live" |
+| Álvaro de Campos | Q8076778 | wikidataStatus: "live" |
+| Holographic Principle (physics) | Q21282103 | wikidataStatus: "live" (disambiguation target) |
+| CC BY 4.0 | Q20007257 | wikidataStatus: "live" |
 
 
 **Once Q-IDs are created, they propagate into:**

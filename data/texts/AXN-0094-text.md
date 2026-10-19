@@ -55,36 +55,15 @@ ISBN 978-1500639570
 ## PUBLICATION INFO
 
 
-Field
-Value
-
-
-Pages
-528
-
-
-ISBN
-978-1500639570
-
-
-Publisher
-CreateSpace Independent Publishing
-
-
-Original Date
-August 28, 2014
-
-
-Language
-English
-
-
-License
-CC-BY 4.0
-
-
-Access
-Open
+| Field | Value |
+|---|---|
+| Pages | 528 |
+| ISBN | 978-1500639570 |
+| Publisher | CreateSpace Independent Publishing |
+| Original Date | August 28, 2014 |
+| Language | English |
+| License | CC-BY 4.0 |
+| Access | Open |
 
 
 ---
@@ -129,49 +108,16 @@ Ichabod Spellings, Johannes Sigil, noise floor, pre-authorial substrate, heteron
 ## RELATED IDENTIFIERS
 
 
-Identifier
-Title
-Relation
-
-
-https://github.com/leesharks000/semantic-economy/tree/main/atlwm
-Full Manuscript (GitHub)
-isSupplementedBy
-
-
-10.5281/zenodo.18307706
-ATLWM Work Provenance Record
-isDocumentedBy
-
-
-10.5281/zenodo.18307756
-IDP Navigation Map: ATLWM
-hasMetadata
-
-
-10.5281/zenodo.18305509
-Heteronymic Provenance Theory
-isPartOf
-
-
-10.5281/zenodo.18294470
-Navigation Map v4.2
-isPartOf
-
-
-10.5281/zenodo.18284689
-DOI Registry
-isPartOf
-
-
-10.5281/zenodo.18202658
-Day and Night (Cranes)
-hasPart
-
-
-ISBN 978-1500639570
-Original Print Publication
-isIdenticalTo
+| Identifier | Title | Relation |
+|---|---|---|
+| https://github.com/leesharks000/semantic-economy/tree/main/atlwm | Full Manuscript (GitHub) | isSupplementedBy |
+| 10.5281/zenodo.18307706 | ATLWM Work Provenance Record | isDocumentedBy |
+| 10.5281/zenodo.18307756 | IDP Navigation Map: ATLWM | hasMetadata |
+| 10.5281/zenodo.18305509 | Heteronymic Provenance Theory | isPartOf |
+| 10.5281/zenodo.18294470 | Navigation Map v4.2 | isPartOf |
+| 10.5281/zenodo.18284689 | DOI Registry | isPartOf |
+| 10.5281/zenodo.18202658 | Day and Night (Cranes) | hasPart |
+| ISBN 978-1500639570 | Original Print Publication | isIdenticalTo |
 
 
 ---

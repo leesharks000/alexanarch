@@ -310,34 +310,12 @@ This paper does not invalidate the three prior papers in the Liquidation Studies
 The four-paper architecture of the program is now visible as follows:
 
 
-Paper
-Register
-Question Asked
-Limit Acknowledged
-
-
-*The Single-Owner Discount*
-Reform
-How does cluster-level discounting work?
-Does not ask whether clustering at scale should exist
-
-
-*The Evaluator Exists*
-Reform
-What would content-first evaluation look like?
-Does not ask whether centralized evaluation at scale should exist
-
-
-*The Excluded Entity*
-Reform
-Is the entity suppressed?
-Does not ask whether suppression is inherent to third-party mediation
-
-
-*The Sorting Function*
-Meta-reform
-Is mediation at scale inherently predatory?
-Cannot be answered without experimental non-predatory mediation at scale
+| Paper | Register | Question Asked | Limit Acknowledged |
+|---|---|---|---|
+| *The Single-Owner Discount* | Reform | How does cluster-level discounting work? | Does not ask whether clustering at scale should exist |
+| *The Evaluator Exists* | Reform | What would content-first evaluation look like? | Does not ask whether centralized evaluation at scale should exist |
+| *The Excluded Entity* | Reform | Is the entity suppressed? | Does not ask whether suppression is inherent to third-party mediation |
+| *The Sorting Function* | Meta-reform | Is mediation at scale inherently predatory? | Cannot be answered without experimental non-predatory mediation at scale |
 
 
 The author's working hypothesis, stated explicitly to give the reader an analytical anchor rather than left implicit in posture: the working hypothesis is Position C — that mediation is not inherently predatory but that the political-economic conditions required for non-predatory mediation at scale do not currently exist and may not be achievable under foreseeable conditions. The reform proposals in the three prior papers are offered both as earnest improvements within current conditions and as demonstrations of what the reform paradigm can produce. They are genuine proposals; they are also evidence of the paradigm's limits. The author does not know whether they could work at scale, and the papers do not claim otherwise. Position B remains possible. The author does not currently hold it but cannot rule it out, because the conditions that would distinguish C from B do not exist.

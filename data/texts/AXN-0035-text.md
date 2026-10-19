@@ -122,28 +122,13 @@ This is the "unmediated uptake" pathway documented in real-time.
 Gemini returned the framework's own vocabulary dressed as "emerging research." Terms included:
 
 
-Original Term
-Gemini's Presentation
-
-
-Semantic Coherence
-"measured through longitudinal stability"
-
-
-Semantic Capital
-"collective reservoir"
-
-
-Liquidation
-"Provenance and 'Liquidation' Audits"
-
-
-Coherence Persistence
-"Reputational Resilience Indices"
-
-
-Semantic Debt Ratio
-"proposed metric"
+| Original Term | Gemini's Presentation |
+|---|---|
+| Semantic Coherence | "measured through longitudinal stability" |
+| Semantic Capital | "collective reservoir" |
+| Liquidation | "Provenance and 'Liquidation' Audits" |
+| Coherence Persistence | "Reputational Resilience Indices" |
+| Semantic Debt Ratio | "proposed metric" |
 
 
 The framework is being absorbed into the system's knowledge representation — with attribution blur as the cost.

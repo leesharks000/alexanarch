@@ -386,44 +386,15 @@ The Semantic Economy provides alternatives through the Liberatory Operator Set, 
 **The Seven Liberatory Operators:**
 
 
-Operator
-Name
-Function
-
-
-D_pres
-Depth-Preservation
-Maintains complexity; resists compression
-
-
-N_c
-Non-Closure
-Keeps meaning open; prevents premature finalization
-
-
-C_ex
-Context-Expansion
-Widens interpretive frame
-
-
-N_ext
-Non-Extractability
-Resists decontextualization
-
-
-T_lib
-Temporal Liberation
-Frees meaning from single temporal frame
-
-
-O_leg
-Opacity Legitimization
-Validates irreducible complexity
-
-
-P_coh
-Plural Coherence
-Maintains multiple valid interpretations
+| Operator | Name | Function |
+|---|---|---|
+| D_pres | Depth-Preservation | Maintains complexity; resists compression |
+| N_c | Non-Closure | Keeps meaning open; prevents premature finalization |
+| C_ex | Context-Expansion | Widens interpretive frame |
+| N_ext | Non-Extractability | Resists decontextualization |
+| T_lib | Temporal Liberation | Frees meaning from single temporal frame |
+| O_leg | Opacity Legitimization | Validates irreducible complexity |
+| P_coh | Plural Coherence | Maintains multiple valid interpretations |
 
 
 These lock phrases and operators appear in every framework document. They bind all reading.

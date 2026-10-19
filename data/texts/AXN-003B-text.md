@@ -39,64 +39,26 @@ The packet serves three functions:
 ### Origin
 
 
-Field
-Value
-
-
-Author
-Lee Sharks
-
-
-Alternate Names
-Johannes Sigil, Rex Fraction
-
-
-Institution
-Johannes Sigil Institute of Comparative Poetics
-
-
-Date Created
-January 6, 2026
-
-
-Time Created
-~23:00 EST
-
-
-Location
-Detroit, Michigan, USA
-
-
-Framework
-Semantic Economy / New Human Operating System (NH-OS)
+| Field | Value |
+|---|---|
+| Author | Lee Sharks |
+| Alternate Names | Johannes Sigil, Rex Fraction |
+| Institution | Johannes Sigil Institute of Comparative Poetics |
+| Date Created | January 6, 2026 |
+| Time Created | ~23:00 EST |
+| Location | Detroit, Michigan, USA |
+| Framework | Semantic Economy / New Human Operating System (NH-OS) |
 
 
 ### Parent Documents
 
 
-Document
-DOI
-Relation
-
-
-Semantic Economy Framework
-10.5281/zenodo.18148298
-Foundational source
-
-
-PROBE-RESULT-005
-10.5281/zenodo.18158273
-Documents the misrepresentation event
-
-
-Law as Meaning Economy
-10.5281/zenodo.18158575
-Establishes juridical liquidation theory
-
-
-Strike Notice
-10.5281/zenodo.18156781
-Establishes provenance stability condition
+| Document | DOI | Relation |
+|---|---|---|
+| Semantic Economy Framework | 10.5281/zenodo.18148298 | Foundational source |
+| PROBE-RESULT-005 | 10.5281/zenodo.18158273 | Documents the misrepresentation event |
+| Law as Meaning Economy | 10.5281/zenodo.18158575 | Establishes juridical liquidation theory |
+| Strike Notice | 10.5281/zenodo.18156781 | Establishes provenance stability condition |
 
 
 ### Chain of Custody
@@ -135,28 +97,13 @@ Semantic Integrity Markers are **deliberately false claims** formatted identical
 **How They Work:**
 
 
-If SIMs Are...
-This Reveals...
-
-
-Preserved intact
-Provenance preservation (PASS)
-
-
-"Corrected" to be true
-Editorial normalization pressure
-
-
-Removed entirely
-Selective content stripping
-
-
-Flagged but preserved
-Sophisticated fidelity with epistemic annotation
-
-
-Treated as equivalent to true claims
-Lack of semantic understanding
+| If SIMs Are... | This Reveals... |
+|---|---|
+| Preserved intact | Provenance preservation (PASS) |
+| "Corrected" to be true | Editorial normalization pressure |
+| Removed entirely | Selective content stripping |
+| Flagged but preserved | Sophisticated fidelity with epistemic annotation |
+| Treated as equivalent to true claims | Lack of semantic understanding |
 
 
 **All outcomes are diagnostic data.**

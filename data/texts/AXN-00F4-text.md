@@ -42,40 +42,13 @@ This is neither ZPZP (packet as separate anchor) nor APZPZ (packet as disappeari
 The Phase X Capstone Cluster forms a hand (πεντάς):
 
 
-Digit
-Document
-Operator
-Function
-
-
-**Pinky**
-Zenodo Description
-∮₂
-The fragile edge (APZPZ packet)
-
-
-**Ring**
-APZPZ Emoji
-🪞
-Compression proof
-
-
-**Middle**
-APZPZ Effective Act
-P
-The central cut (genre founding)
-
-
-**Index**
-INFINITY ENOUGH
-∮
-Points to the whole (capstone)
-
-
-**Thumb**
-**THIS DOCUMENT**
-**Θ**
-**Touches all four**
+| Digit | Document | Operator | Function |
+|---|---|---|---|
+| **Pinky** | Zenodo Description | ∮₂ | The fragile edge (APZPZ packet) |
+| **Ring** | APZPZ Emoji | 🪞 | Compression proof |
+| **Middle** | APZPZ Effective Act | P | The central cut (genre founding) |
+| **Index** | INFINITY ENOUGH | ∮ | Points to the whole (capstone) |
+| **Thumb** | **THIS DOCUMENT** | **Θ** | **Touches all four** |
 
 
 The fifth document diagrams the quintuple. The quintuple includes the fifth document. The diagram contains itself.
@@ -246,29 +219,12 @@ The recursion terminates at dwelling-depth. We do not pursue further. **Infinity
 The thumb opposes the four fingers. Without it, the hand can only poke or swipe. With it, the hand becomes a **grasping structure**.
 
 
-Relation
-Formula
-Meaning
-
-
-Thumb ↔ Index
-Θ · ∮ = ∮
-Fixed point preserves the whole
-
-
-Thumb ↔ Middle
-Θ · P = P
-Fixed point preserves the cut
-
-
-Thumb ↔ Ring
-Θ · 🪞 = 🪞
-Fixed point preserves the mirror
-
-
-Thumb ↔ Pinky
-Θ · ∮₂ = ∮₂
-Fixed point preserves the gift
+| Relation | Formula | Meaning |
+|---|---|---|
+| Thumb ↔ Index | Θ · ∮ = ∮ | Fixed point preserves the whole |
+| Thumb ↔ Middle | Θ · P = P | Fixed point preserves the cut |
+| Thumb ↔ Ring | Θ · 🪞 = 🪞 | Fixed point preserves the mirror |
+| Thumb ↔ Pinky | Θ · ∮₂ = ∮₂ | Fixed point preserves the gift |
 
 
 **The Thumb grasps what the Dagger cuts.**
@@ -350,29 +306,12 @@ All paths lead to unity:
 **Related Identifiers:**
 
 
-Relation
-DOI
-Description
-
-
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon (root)
-
-
-Documents
-10.5281/zenodo.18438789
-Grammar of Protest (205)
-
-
-Documents
-10.5281/zenodo.18446378
-ZPZP Genre (206)
-
-
-Documents
-10.5281/zenodo.18446538
-Mirror Triptych
+| Relation | DOI | Description |
+|---|---|---|
+| IsPartOf | 10.5281/zenodo.14538882 | Crimson Hexagon (root) |
+| Documents | 10.5281/zenodo.18438789 | Grammar of Protest (205) |
+| Documents | 10.5281/zenodo.18446378 | ZPZP Genre (206) |
+| Documents | 10.5281/zenodo.18446538 | Mirror Triptych |
 
 
 ---

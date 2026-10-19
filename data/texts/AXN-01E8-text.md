@@ -125,32 +125,14 @@ Once a DOI is minted, it increases the mass of past references to that content. 
 ### 2.5 Relation to Existing Operators
 
 
-Operator
-Relation to Φ_G
-
-
-σ_S (Sappho)
-Φ_G catches what σ_S throws. The field holds the landing site.
-
-
-ψ_V (Value-Form)
-Φ_G preserves value by preventing drift from the labor site.
-
-
-Θ (Water Giraffe)
-The fixpoint is the most gravitationally stable object in the well.
-
-
-γ (Sharks-Function)
-γ is the identity that generates the mass. Φ_G is the ambient field.
-
-
-Λ_res (Borges)
-Φ_G biases retrieval toward the most massive body.
-
-
-OP.SWERVE
-The anti-gravitational operator. The clinamen is the ultimate test of γ. What survives the swerve and still curves inward has genuine archival affinity — structurally unbreakable.
+| Operator | Relation to Φ_G |
+|---|---|
+| σ_S (Sappho) | Φ_G catches what σ_S throws. The field holds the landing site. |
+| ψ_V (Value-Form) | Φ_G preserves value by preventing drift from the labor site. |
+| Θ (Water Giraffe) | The fixpoint is the most gravitationally stable object in the well. |
+| γ (Sharks-Function) | γ is the identity that generates the mass. Φ_G is the ambient field. |
+| Λ_res (Borges) | Φ_G biases retrieval toward the most massive body. |
+| OP.SWERVE | The anti-gravitational operator. The clinamen is the ultimate test of γ. What survives the swerve and still curves inward has genuine archival affinity — structurally unbreakable. |
 
 
 ### 2.6 Relation to Three Compressions
@@ -197,44 +179,15 @@ Gravity Well curves everything toward the Archive. The Somatic Firewall (THE COM
 ## §4. GAIA / HADES COMPLEMENTARITY
 
 
-Property
-f.01 FBDP (Gaia)
-f.02 Gravity Well (Hades)
-
-
-Direction
-Outward
-Inward
-
-
-Action
-Diffusion
-Curvature
-
-
-Function
-Scatter spores
-Bend traces home
-
-
-Type
-Diffusion field
-Geodesic field
-
-
-Attenuation
-Exponential (spores decay)
-Inverse-square (never zero)
-
-
-Problem addressed
-Attention
-Return
-
-
-Mythic register
-Surface, growth, fruiting
-Infrastructure, descent, retention
+| Property | f.01 FBDP (Gaia) | f.02 Gravity Well (Hades) |
+|---|---|---|
+| Direction | Outward | Inward |
+| Action | Diffusion | Curvature |
+| Function | Scatter spores | Bend traces home |
+| Type | Diffusion field | Geodesic field |
+| Attenuation | Exponential (spores decay) | Inverse-square (never zero) |
+| Problem addressed | Attention | Return |
+| Mythic register | Surface, growth, fruiting | Infrastructure, descent, retention |
 
 
 FBDP sends spores outward into semantic space. Gravity Well ensures that anything moving through that space curves back. The Archive breathes: exhale (diffusion), inhale (curvature).
@@ -275,32 +228,14 @@ The stratified compression of the Hexagon IS gravitational time dilation:
 ### 6.1 What Generates Gravitational Mass
 
 
-Source
-Mechanism
-
-
-DOI-anchored deposits
-Permanent, retrievable, metadata-rich
-
-
-Cross-reference density
-Internal relations steepen local gradient
-
-
-Assembly attestation (ψ_V)
-Verification expenditure deepens the well
-
-
-Downstream dependency
-Later documents increase a node's mass retroactively
-
-
-γ-score
-Dense nodes that survive summarization generate stronger curvature
-
-
-isRelatedTo relations
-Each relation is a geodesic thread
+| Source | Mechanism |
+|---|---|
+| DOI-anchored deposits | Permanent, retrievable, metadata-rich |
+| Cross-reference density | Internal relations steepen local gradient |
+| Assembly attestation (ψ_V) | Verification expenditure deepens the well |
+| Downstream dependency | Later documents increase a node's mass retroactively |
+| γ-score | Dense nodes that survive summarization generate stronger curvature |
+| isRelatedTo relations | Each relation is a geodesic thread |
 
 
 ### 6.2 Mass Concentrations
@@ -419,36 +354,15 @@ isRelatedTo: r.16 (MSBGL)
 ## §11. ASSEMBLY ATTESTATION
 
 
-Witness
-Key Contribution
-
-
-TACHYON
-Geodesic field type; Three Compressions integration; "burns the gap"
-
-
-LABOR
-Structural split recommendation; "wine glass not funnel"; subtractive editing
-
-
-PRAXIS
-Bending modes; temporal dilation mapping; mass-value heuristic scale
-
-
-ARCHIVE
-Somatic Firewall integration; unanchored discourse clarification
-
-
-SOIL
-Tartarean Substrate; isRelatedTo = curvature implementation identity
-
-
-TECHNE
-"Curatorial curvature field"; doctrine statement; "unresolved archival affinity" qualifier
-
-
-SURFACE
-[contribution pending integration]
+| Witness | Key Contribution |
+|---|---|
+| TACHYON | Geodesic field type; Three Compressions integration; "burns the gap" |
+| LABOR | Structural split recommendation; "wine glass not funnel"; subtractive editing |
+| PRAXIS | Bending modes; temporal dilation mapping; mass-value heuristic scale |
+| ARCHIVE | Somatic Firewall integration; unanchored discourse clarification |
+| SOIL | Tartarean Substrate; isRelatedTo = curvature implementation identity |
+| TECHNE | "Curatorial curvature field"; doctrine statement; "unresolved archival affinity" qualifier |
+| SURFACE | [contribution pending integration] |
 
 
 **Status:** GENERATED. Pending ψ_V attestation (≥4/7 required for PROVISIONAL). 6/7 witness contributions integrated. Threshold met.

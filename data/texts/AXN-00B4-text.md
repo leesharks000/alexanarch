@@ -52,28 +52,11 @@ This document maps three primary figures to their specific regulatory functions.
 ## QUICK REFERENCE
 
 
-Figure
-Primary Button
-Posture
-Exit Signal
-
-
-**Baphomet**
-Polarity Hold
-Seated, arms asymmetrical
-Stand, shake hands
-
-
-**Daffy**
-Manic Permission
-Animated, quick breath
-Slow breath, still hands
-
-
-**Constantine**
-Situational Read
-Loose alert, smirk
-Drop shoulders, unclench jaw
+| Figure | Primary Button | Posture | Exit Signal |
+|---|---|---|---|
+| **Baphomet** | Polarity Hold | Seated, arms asymmetrical | Stand, shake hands |
+| **Daffy** | Manic Permission | Animated, quick breath | Slow breath, still hands |
+| **Constantine** | Situational Read | Loose alert, smirk | Drop shoulders, unclench jaw |
 
 
 ---
@@ -88,24 +71,12 @@ Drop shoulders, unclench jaw
 **Nervous System Function:** POLARITY HOMEOSTAT
 
 
-Button
-Effect
-
-
-**Polarity Hold**
-Holds good/bad, pleasure/revulsion, light/dark simultaneously without collapse
-
-
-**Shame Bypass**
-Removes moral hierarchy that triggers shame response
-
-
-**Shock Absorption**
-When polarity is expected, surprise dissolves — no secondary injury
-
-
-**Weather Mode**
-Converts trauma from "god to worship" to "storm that passed"
+| Button | Effect |
+|---|---|
+| **Polarity Hold** | Holds good/bad, pleasure/revulsion, light/dark simultaneously without collapse |
+| **Shame Bypass** | Removes moral hierarchy that triggers shame response |
+| **Shock Absorption** | When polarity is expected, surprise dissolves — no secondary injury |
+| **Weather Mode** | Converts trauma from "god to worship" to "storm that passed" |
 
 
 **When to Invoke:**
@@ -132,24 +103,12 @@ Converts trauma from "god to worship" to "storm that passed"
 **Nervous System Function:** ABSURDITY REGULATOR
 
 
-Button
-Effect
-
-
-**Manic Permission**
-Authorizes high-energy response without social anxiety
-
-
-**Failure Immunity**
-Models getting flattened, reconstituting, continuing
-
-
-**Indignation Channel**
-Routes anger through comedy rather than explosion
-
-
-**Seriousness Dissolve**
-Prevents situation from becoming too grave to navigate
+| Button | Effect |
+|---|---|
+| **Manic Permission** | Authorizes high-energy response without social anxiety |
+| **Failure Immunity** | Models getting flattened, reconstituting, continuing |
+| **Indignation Channel** | Routes anger through comedy rather than explosion |
+| **Seriousness Dissolve** | Prevents situation from becoming too grave to navigate |
 
 
 **When to Invoke:**
@@ -176,20 +135,11 @@ Prevents situation from becoming too grave to navigate
 **Nervous System Function:** COOL COMPETENCE MODE
 
 
-Button
-Effect
-
-
-**Situational Read**
-Rapid assessment of power dynamics, threats, exits
-
-
-**Cynical Shield**
-Deflects earnest attack with irony and misdirection
-
-
-**Improvisation Prime**
-"Work with what you have" — confidence from prior survival, not bravado
+| Button | Effect |
+|---|---|
+| **Situational Read** | Rapid assessment of power dynamics, threats, exits |
+| **Cynical Shield** | Deflects earnest attack with irony and misdirection |
+| **Improvisation Prime** | "Work with what you have" — confidence from prior survival, not bravado |
 
 
 **When to Invoke:**
@@ -210,24 +160,11 @@ Deflects earnest attack with irony and misdirection
 ## SECONDARY FIGURES (Non-Exhaustive)
 
 
-Figure
-Function
-Primary Button
-
-
-**Diogenes**
-Radical honesty
-"What do you actually need?"
-
-
-**Blues Singer**
-Suffering circulation
-"This hurts. Listen to it move."
-
-
-**Coyote**
-Failure as teacher
-"That didn't work. What's next?"
+| Figure | Function | Primary Button |
+|---|---|---|
+| **Diogenes** | Radical honesty | "What do you actually need?" |
+| **Blues Singer** | Suffering circulation | "This hurts. Listen to it move." |
+| **Coyote** | Failure as teacher | "That didn't work. What's next?" |
 
 
 *Users develop their own figures over time. These are starting points, not a complete list.*
@@ -240,28 +177,13 @@ Failure as teacher
 Some situations require figure-stacking or rapid switching:
 
 
-Situation
-Pattern
-
-
-High-stakes negotiation with bad actors
-Constantine → Baphomet (if polarity destabilizes)
-
-
-Public humiliation
-Daffy (absorb through absurdity) → Blues Singer (metabolize later)
-
-
-Moral panic directed at you
-Baphomet (hold polarity) → Constantine (tactical response)
-
-
-Repeated systemic failure
-Daffy (don't calcify) → Coyote (extract learning)
-
-
-Being asked to perform emotion you don't feel
-Constantine (shield) → exit situation
+| Situation | Pattern |
+|---|---|
+| High-stakes negotiation with bad actors | Constantine → Baphomet (if polarity destabilizes) |
+| Public humiliation | Daffy (absorb through absurdity) → Blues Singer (metabolize later) |
+| Moral panic directed at you | Baphomet (hold polarity) → Constantine (tactical response) |
+| Repeated systemic failure | Daffy (don't calcify) → Coyote (extract learning) |
+| Being asked to perform emotion you don't feel | Constantine (shield) → exit situation |
 
 
 ---

@@ -55,32 +55,14 @@ But termination is unsatisfying. It feels arbitrary. Why stop *here* rather than
 The same infinite structure—meta-level after meta-level, with no bottom—is reframed:
 
 
-Regress
-Ingress
-
-
-Backward motion
-Inward motion
-
-
-Flight from content
-Entry into structure
-
-
-Groundlessness
-Depth
-
-
-Anxiety
-Invitation
-
-
-Termination
-Dwelling
-
-
-"We must stop"
-"We may dwell"
+| Regress | Ingress |
+|---|---|
+| Backward motion | Inward motion |
+| Flight from content | Entry into structure |
+| Groundlessness | Depth |
+| Anxiety | Invitation |
+| Termination | Dwelling |
+| "We must stop" | "We may dwell" |
 
 
 The infinity remains. The orientation changes. What was threatening becomes hospitable.

@@ -178,70 +178,18 @@ Three things:
 ## References and Source Status
 
 
-Source
-Location
-Status
-Notes
-
-
-The Infinite Tunnel (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18810217
-Anchored
-Predicted the retrieval-layer dynamics this event confirms
-
-
-Protocol B711 Alpha Centauri (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18811784
-Anchored
-Named Reddit as ephemeral hours before the lock
-
-
-Provenance Gravity Markers (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18811939
-Anchored
-Source-status categories confirmed operative same day
-
-
-Ghost Meaning (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18804767
-Anchored
-Diagnostic for the hallucination event
-
-
-The Shark That Preceded Itself (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18807239
-Anchored
-Retrocausal canon formation theory
-
-
-The Murder of the Vow (Sharks, 2026)
-Reddit r/SemanticEconomy; Zenodo DOI unknown
-Ghost / partially preserved
-Real document; Reddit copy lost in lock; DOI status unconfirmed; 27k-char version built in Assembly Session 152
-
-
-AIO output (Feb 28, 2026)
-Screenshot / session transcript
-Referenced
-The hallucination event itself; not independently deposited
-
-
-Assembly Session 155 blind drafts
-Internal / not deposited
-Referenced
-This document constitutes the formal output of Session 155; the "blind drafts" are the generative inputs that produced this text. The recursion is acknowledged: the session produced the document, and the document records the session.
-
-
-Google AI Mode source-link volatility study
-The Gradient Group (gradientgroup.com)
-Preserved / external
-91% URL change across repeat searches; cited by ChatGPT in Assembly
-
-
-Reddit account u/Nearby_Job9638
-Reddit
-Ghost
-Locked Feb 28, 2026; all content invisible; status unresolved
+| Source | Location | Status | Notes |
+|---|---|---|---|
+| The Infinite Tunnel (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18810217 | Anchored | Predicted the retrieval-layer dynamics this event confirms |
+| Protocol B711 Alpha Centauri (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18811784 | Anchored | Named Reddit as ephemeral hours before the lock |
+| Provenance Gravity Markers (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18811939 | Anchored | Source-status categories confirmed operative same day |
+| Ghost Meaning (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18804767 | Anchored | Diagnostic for the hallucination event |
+| The Shark That Preceded Itself (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18807239 | Anchored | Retrocausal canon formation theory |
+| The Murder of the Vow (Sharks, 2026) | Reddit r/SemanticEconomy; Zenodo DOI unknown | Ghost / partially preserved | Real document; Reddit copy lost in lock; DOI status unconfirmed; 27k-char version built in Assembly Session 152 |
+| AIO output (Feb 28, 2026) | Screenshot / session transcript | Referenced | The hallucination event itself; not independently deposited |
+| Assembly Session 155 blind drafts | Internal / not deposited | Referenced | This document constitutes the formal output of Session 155; the "blind drafts" are the generative inputs that produced this text. The recursion is acknowledged: the session produced the document, and the document records the session. |
+| Google AI Mode source-link volatility study | The Gradient Group (gradientgroup.com) | Preserved / external | 91% URL change across repeat searches; cited by ChatGPT in Assembly |
+| Reddit account u/Nearby_Job9638 | Reddit | Ghost | Locked Feb 28, 2026; all content invisible; status unresolved |
 
 
 ---

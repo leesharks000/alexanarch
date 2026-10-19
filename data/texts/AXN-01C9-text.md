@@ -192,28 +192,11 @@ This is the lenticular property of MSMRM (r.17): the same object, viewed from di
 The Sharpie's price point is its political property. At $1.49–$5.00, the counter-instrument is available to any person with pocket change. Contrast:
 
 
-Instrument
-Cost
-Access
-Function
-
-
-Ceremonial signing pen (pre-Sharpie)
-$1,000 (claimed)
-White House only
-σ_SIGN (executive)
-
-
-Custom White House Sharpie
-$5 (claimed)
-White House only
-σ_SIGN (executive)
-
-
-Standard retail Sharpie
-$1.49
-Universal
-σ_SH (democratic)
+| Instrument | Cost | Access | Function |
+|---|---|---|---|
+| Ceremonial signing pen (pre-Sharpie) | $1,000 (claimed) | White House only | σ_SIGN (executive) |
+| Custom White House Sharpie | $5 (claimed) | White House only | σ_SIGN (executive) |
+| Standard retail Sharpie | $1.49 | Universal | σ_SH (democratic) |
 
 
 The same instrument that the president uses to sign is available to any citizen for the price of a candy bar. The asymmetry of political power (president vs. citizen) is inverted by the symmetry of tool access (same Sharpie, same ink, same gesture). The democratic access threshold is the Sharpie's most important physical property.
@@ -361,34 +344,13 @@ The answer: the public applies its own mark. The Sharpie blot is the public's an
 The Sharpie's physics are isomorphic to the CC BY-SA license:
 
 
-Sharpie Physics
-CC BY-SA Mechanics
-Shared Structure
-
-
-σ_SIGN (personal mark on commons substrate)
-Attribution stripping (claiming commons work as proprietary)
-Unauthorized provenance capture
-
-
-σ_SH (blot negates the claim)
-Automatic termination clause (license revokes on violation)
-Counter-operation restores commons
-
-
-ρ (restoration: substrate retains both marks but claim is negated)
-Commons retention (work stays open; violator loses rights, not the commons)
-The substrate survives the contest
-
-
-Irreversibility (blot is permanent)
-Irrevocability (CC license cannot be un-granted to compliant users)
-The commons, once asserted, persists
-
-
-Democratic access ($1.49)
-Zero cost to license (CC is free to apply)
-Anti-enclosure by design
+| Sharpie Physics | CC BY-SA Mechanics | Shared Structure |
+|---|---|---|
+| σ_SIGN (personal mark on commons substrate) | Attribution stripping (claiming commons work as proprietary) | Unauthorized provenance capture |
+| σ_SH (blot negates the claim) | Automatic termination clause (license revokes on violation) | Counter-operation restores commons |
+| ρ (restoration: substrate retains both marks but claim is negated) | Commons retention (work stays open; violator loses rights, not the commons) | The substrate survives the contest |
+| Irreversibility (blot is permanent) | Irrevocability (CC license cannot be un-granted to compliant users) | The commons, once asserted, persists |
+| Democratic access ($1.49) | Zero cost to license (CC is free to apply) | Anti-enclosure by design |
 
 
 Each protects the commons in its own medium — one with ink, the other with law. The Three Compressions theorem (DOI: 10.5281/zenodo.19053469) applies: the decisive variable is what the compression burns. In both the Sharpie and the CC license, what is burned is the unauthorized personal claim. What is preserved is the commons character of the substrate.

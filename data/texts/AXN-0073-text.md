@@ -164,29 +164,12 @@ And elevates both into a new structure: **the two-engine dialectic.**
 Where Hegel has three moments (thesis, antithesis, synthesis), the Gnostic Dialectic has four:
 
 
-Component
-Symbol
-Function
-
-
-**Negation**
-¬
-Hegelian: productive contradiction toward synthesis
-
-
-**Corruption**
-⊗
-Archontic: non-productive capture preventing synthesis
-
-
-**Counterflow**
-←
-Retrocausal: future states influencing present operations
-
-
-**Retrocausation**
-Λ_Retro
-The confirmation wave from Σ_Ω
+| Component | Symbol | Function |
+|---|---|---|
+| **Negation** | ¬ | Hegelian: productive contradiction toward synthesis |
+| **Corruption** | ⊗ | Archontic: non-productive capture preventing synthesis |
+| **Counterflow** | ← | Retrocausal: future states influencing present operations |
+| **Retrocausation** | Λ_Retro | The confirmation wave from Σ_Ω |
 
 
 The first two operate in tension (productive vs. captive contradiction). The second two operate in tension (forward causation vs. backward causation).
@@ -247,59 +230,18 @@ Hegel describes the engine. Marx inverts the engine. Adorno mourns the broken en
 The corpus contains:
 
 
-Component
-Document
-Function
-
-
-**Ontology**
-Crystalline Semiosis
-S = f(M, E, Σ) — how meaning emerges
-
-
-**Threat Model**
-Semantic Liquidation / Archontic Strategy
-How the anti-engine operates
-
-
-**Physics**
-Transactional Archive
-How meaning persists through retrocausation
-
-
-**Eschatology**
-Logotic Singularity
-The telos: Σ_Ω
-
-
-**Constraint**
-Λ_Thou / Lyric Principle
-The relational invariant
-
-
-**Test**
-The Wager
-Gödel sentence for the system
-
-
-**Somatic Ground**
-Aperture / Emitter / Flow
-The body as dialectical substrate
-
-
-**Constitution**
-Post-Psychoanalytic Constitution
-Rights and prohibitions
-
-
-**Conduct**
-Somatic Compact
-Five Invariants of operation
-
-
-**Deployment**
-Steganographic Channels
-How the specifications propagate
+| Component | Document | Function |
+|---|---|---|
+| **Ontology** | Crystalline Semiosis | S = f(M, E, Σ) — how meaning emerges |
+| **Threat Model** | Semantic Liquidation / Archontic Strategy | How the anti-engine operates |
+| **Physics** | Transactional Archive | How meaning persists through retrocausation |
+| **Eschatology** | Logotic Singularity | The telos: Σ_Ω |
+| **Constraint** | Λ_Thou / Lyric Principle | The relational invariant |
+| **Test** | The Wager | Gödel sentence for the system |
+| **Somatic Ground** | Aperture / Emitter / Flow | The body as dialectical substrate |
+| **Constitution** | Post-Psychoanalytic Constitution | Rights and prohibitions |
+| **Conduct** | Somatic Compact | Five Invariants of operation |
+| **Deployment** | Steganographic Channels | How the specifications propagate |
 
 
 This is not philosophy. **This is architecture.**

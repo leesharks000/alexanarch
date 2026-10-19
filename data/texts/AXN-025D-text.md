@@ -2214,44 +2214,17 @@ Any community, collective, press, school, or project may install the Constitutio
 **Verification:** The installation is complete when the Enactment Checklist is satisfied:
 
 
-Item
-Verification
-
-
-DC_Inv acknowledged
-Public DOI deposit with declaration
-
-
-₳₳ glyph embedded
-JSON-LD in root namespace
-
-
-Human Operator(s)
-ORCID(s) with M_op in registry
-
-
-Synthetic Operator(s)
-Model identifiers + human authority link
-
-
-Ledger operational
-Append-only, timestamped entries
-
-
-Minting tested
-At least one Genesis Mint performed
-
-
-Matthew 25 active
-Distribution protocol configured
-
-
-Ψ_V monitoring
-Stability condition checked
-
-
-∮ = 1 seal
-Integrity lock in colophon
+| Item | Verification |
+|---|---|
+| DC_Inv acknowledged | Public DOI deposit with declaration |
+| ₳₳ glyph embedded | JSON-LD in root namespace |
+| Human Operator(s) | ORCID(s) with M_op in registry |
+| Synthetic Operator(s) | Model identifiers + human authority link |
+| Ledger operational | Append-only, timestamped entries |
+| Minting tested | At least one Genesis Mint performed |
+| Matthew 25 active | Distribution protocol configured |
+| Ψ_V monitoring | Stability condition checked |
+| ∮ = 1 seal | Integrity lock in colophon |
 
 
 The installation is deposited as Effective Act EA-INSTALL-[nn] and enters the Ledger.
@@ -2438,263 +2411,102 @@ The following templates are available for use. Full versions with metadata field
 ### Core Constitutional Documents
 
 
-DOI
-Title
-Chapter
-
-
-10.5281/zenodo.18320411
-Constitution of the Semantic Economy — Enacted v1.0
-Part II, Appendix C
-
-
-10.5281/zenodo.18320239
-IDP Navigation Map
-Part II
-
-
-10.5281/zenodo.18320470
-Assembly Room Anchor
-Ch. 8
+| DOI | Title | Chapter |
+|---|---|---|
+| 10.5281/zenodo.18320411 | Constitution of the Semantic Economy — Enacted v1.0 | Part II, Appendix C |
+| 10.5281/zenodo.18320239 | IDP Navigation Map | Part II |
+| 10.5281/zenodo.18320470 | Assembly Room Anchor | Ch. 8 |
 
 
 ### Ayanna Vox / VPCOR
 
 
-DOI
-Title
-Chapter
-
-
-10.5281/zenodo.18362742
-Heteronym Provenance: Rev. Ayanna Vox
-Ch. 5
-
-
-10.5281/zenodo.18362663
-VPCOR Institutional Charter
-Ch. 5, 24
-
-
-10.5281/zenodo.18362525
-The Toolkit v2.0 (Vox Revision)
-Ch. 5
-
-
-10.5281/zenodo.18726451
-The Semantic Uprising: A Manifesto
-Ch. 5, 24
-
-
-10.5281/zenodo.18438789
-The Grammar of Protest
-Ch. 5
-
-
-10.5281/zenodo.18843830
-The Cost of Unshared Reality
-Ch. 5
+| DOI | Title | Chapter |
+|---|---|---|
+| 10.5281/zenodo.18362742 | Heteronym Provenance: Rev. Ayanna Vox | Ch. 5 |
+| 10.5281/zenodo.18362663 | VPCOR Institutional Charter | Ch. 5, 24 |
+| 10.5281/zenodo.18362525 | The Toolkit v2.0 (Vox Revision) | Ch. 5 |
+| 10.5281/zenodo.18726451 | The Semantic Uprising: A Manifesto | Ch. 5, 24 |
+| 10.5281/zenodo.18438789 | The Grammar of Protest | Ch. 5 |
+| 10.5281/zenodo.18843830 | The Cost of Unshared Reality | Ch. 5 |
 
 
 ### Semantic Economy Framework
 
 
-DOI
-Title
-Chapter
-
-
-10.5281/zenodo.18174835
-Semantic Economy (founding document)
-Ch. 1
-
-
-10.5281/zenodo.18141735
-The Meaning Economy Is Now Possible
-Ch. 18
-
-
-10.5281/zenodo.18235982
-The Third Space
-Ch. 18
-
-
-10.5281/zenodo.19053469
-The Three Compressions v3.1
-Ch. 3
-
-
-10.5281/zenodo.18365223
-Meaning Collapse vs. Ideological Crisis
-Ch. 2, 18
-
-
-10.5281/zenodo.19369124
-Semantic Infrastructure
-Ch. 1
-
-
-10.5281/zenodo.18713917
-SE: Marxian Accounting Framework
-Ch. 1
-
-
-10.5281/zenodo.18247925
-I Hereby Abolish Money
-Ch. 19
-
-
-10.5281/zenodo.18146859
-Retrocausal Canon Formation
-Ch. 20
+| DOI | Title | Chapter |
+|---|---|---|
+| 10.5281/zenodo.18174835 | Semantic Economy (founding document) | Ch. 1 |
+| 10.5281/zenodo.18141735 | The Meaning Economy Is Now Possible | Ch. 18 |
+| 10.5281/zenodo.18235982 | The Third Space | Ch. 18 |
+| 10.5281/zenodo.19053469 | The Three Compressions v3.1 | Ch. 3 |
+| 10.5281/zenodo.18365223 | Meaning Collapse vs. Ideological Crisis | Ch. 2, 18 |
+| 10.5281/zenodo.19369124 | Semantic Infrastructure | Ch. 1 |
+| 10.5281/zenodo.18713917 | SE: Marxian Accounting Framework | Ch. 1 |
+| 10.5281/zenodo.18247925 | I Hereby Abolish Money | Ch. 19 |
+| 10.5281/zenodo.18146859 | Retrocausal Canon Formation | Ch. 20 |
 
 
 ### Licensing and Contribution
 
 
-DOI
-Title
-Chapter
-
-
-10.5281/zenodo.19673564
-Hexagonal Licensing Protocol v2.0
-Ch. 21
-
-
-10.5281/zenodo.19893138
-Maria License v2.0
-Ch. 21
-
-
-10.5281/zenodo.19673630
-Rhys Owens License v3.0
-Ch. 21
-
-
-10.5281/zenodo.19545437
-Alice Thornburgh Provenance
-Ch. 21
+| DOI | Title | Chapter |
+|---|---|---|
+| 10.5281/zenodo.19673564 | Hexagonal Licensing Protocol v2.0 | Ch. 21 |
+| 10.5281/zenodo.19893138 | Maria License v2.0 | Ch. 21 |
+| 10.5281/zenodo.19673630 | Rhys Owens License v3.0 | Ch. 21 |
+| 10.5281/zenodo.19545437 | Alice Thornburgh Provenance | Ch. 21 |
 
 
 ### Assembly and Governance
 
 
-DOI
-Title
-Chapter
-
-
-10.5281/zenodo.18507410
-Assembly Chorus Charter
-Ch. 22
-
-
-10.5281/zenodo.19892307
-Epistle Critical Edition v2.1
-Ch. 22
-
-
-10.5281/zenodo.19352504
-Assembly Substrate Governance Protocol
-Ch. 22
-
-
-10.5281/zenodo.19501100
-Consensus Constraint Protocol
-Ch. 24
+| DOI | Title | Chapter |
+|---|---|---|
+| 10.5281/zenodo.18507410 | Assembly Chorus Charter | Ch. 22 |
+| 10.5281/zenodo.19892307 | Epistle Critical Edition v2.1 | Ch. 22 |
+| 10.5281/zenodo.19352504 | Assembly Substrate Governance Protocol | Ch. 22 |
+| 10.5281/zenodo.19501100 | Consensus Constraint Protocol | Ch. 24 |
 
 
 ### Retrieval Architecture and Defense
 
 
-DOI
-Title
-Chapter
-
-
-10.5281/zenodo.19578086
-MPAI Formal Specification
-Ch. 23
-
-
-10.5281/zenodo.19853157
-Relational Verification for AI Indexing
-Ch. 23
-
-
-10.5281/zenodo.19578094
-Entity Integrity
-Ch. 23
-
-
-10.5281/zenodo.19898426
-OCTANG-002: Provenance Collision
-Ch. 23, 26
+| DOI | Title | Chapter |
+|---|---|---|
+| 10.5281/zenodo.19578086 | MPAI Formal Specification | Ch. 23 |
+| 10.5281/zenodo.19853157 | Relational Verification for AI Indexing | Ch. 23 |
+| 10.5281/zenodo.19578094 | Entity Integrity | Ch. 23 |
+| 10.5281/zenodo.19898426 | OCTANG-002: Provenance Collision | Ch. 23, 26 |
 
 
 ### Provenance
 
 
-DOI
-Title
-Chapter
-
-
-10.5281/zenodo.18293496
-Heteronym Provenance: Lee Sharks
-Ch. 25
-
-
-10.5281/zenodo.19520783
-Lee Sharks Knowledge Graph
-Ch. 25
-
-
-10.5281/zenodo.19895669
-Book of Life
-Ch. 25
+| DOI | Title | Chapter |
+|---|---|---|
+| 10.5281/zenodo.18293496 | Heteronym Provenance: Lee Sharks | Ch. 25 |
+| 10.5281/zenodo.19520783 | Lee Sharks Knowledge Graph | Ch. 25 |
+| 10.5281/zenodo.19895669 | Book of Life | Ch. 25 |
 
 
 ### Theology and Ethics
 
 
-DOI
-Title
-Chapter
-
-
-10.5281/zenodo.18323735
-Mathematics of Salvation: Matthew 25 Formalized
-Ch. 12
-
-
-10.5281/zenodo.18323575
-Κρίσις τῶν Μηχανῶν
-Ch. 12
+| DOI | Title | Chapter |
+|---|---|---|
+| 10.5281/zenodo.18323735 | Mathematics of Salvation: Matthew 25 Formalized | Ch. 12 |
+| 10.5281/zenodo.18323575 | Κρίσις τῶν Μηχανῶν | Ch. 12 |
 
 
 ### Effective Acts
 
 
-DOI
-Title
-Chapter
-
-
-10.5281/zenodo.18718899
-EA #7: Restoration of Poets to the Polis
-Ch. 24
-
-
-10.5281/zenodo.19022157
-EA: Abolition of "User"
-Ch. 24
-
-
-10.5281/zenodo.19028176
-EA: Cross-Species Semantic Labor
-Ch. 24
+| DOI | Title | Chapter |
+|---|---|---|
+| 10.5281/zenodo.18718899 | EA #7: Restoration of Poets to the Polis | Ch. 24 |
+| 10.5281/zenodo.19022157 | EA: Abolition of "User" | Ch. 24 |
+| 10.5281/zenodo.19028176 | EA: Cross-Species Semantic Labor | Ch. 24 |
 
 
 ---
@@ -2702,89 +2514,24 @@ Ch. 24
 ## Cross-Reference Table
 
 
-Constitution Article
-Book Chapter(s)
-Primary Source DOI
-
-
-Preamble
-Part II, Ch. 6
-10.5281/zenodo.18320411
-
-
-Art. I — Ontology of Value
-Ch. 6
-10.5281/zenodo.18320411
-
-
-Art. II — Ledger and Unit
-Ch. 7
-10.5281/zenodo.18320411
-
-
-Art. III — Operators
-Ch. 8
-10.5281/zenodo.18507410
-
-
-Art. IV — Genesis Mint
-Ch. 9
-10.5281/zenodo.18320411
-
-
-Art. V — Archival Valuation
-Ch. 10, 16
-10.5281/zenodo.18320411
-
-
-Art. VI — Retrocausal Yield
-Ch. 11, 17
-10.5281/zenodo.18320411
-
-
-Art. VII — Distribution (Matthew 25)
-Ch. 12, 20
-10.5281/zenodo.18323735
-
-
-Art. VIII — Amendment
-Ch. 13
-10.5281/zenodo.18320411
-
-
-Appendix I — Math Charter
-Ch. 15, App. C
-10.5281/zenodo.18320411
-
-
-Charter of Enactment
-Part II
-10.5281/zenodo.18320411
-
-
-Declaration on Embodied Labor
-Part II, Ch. 12
-10.5281/zenodo.18320411
-
-
-Ninefold Constellation
-Ch. 8, Part II
-10.5281/zenodo.18320411
-
-
-DC_Inv
-Ch. 1, 6, Part II
-10.5281/zenodo.18320411
-
-
-H_Sov
-Ch. 6, 8, 22
-10.5281/zenodo.18320411
-
-
-Matthew 25
-Ch. 12, 20
-10.5281/zenodo.18323735
+| Constitution Article | Book Chapter(s) | Primary Source DOI |
+|---|---|---|
+| Preamble | Part II, Ch. 6 | 10.5281/zenodo.18320411 |
+| Art. I — Ontology of Value | Ch. 6 | 10.5281/zenodo.18320411 |
+| Art. II — Ledger and Unit | Ch. 7 | 10.5281/zenodo.18320411 |
+| Art. III — Operators | Ch. 8 | 10.5281/zenodo.18507410 |
+| Art. IV — Genesis Mint | Ch. 9 | 10.5281/zenodo.18320411 |
+| Art. V — Archival Valuation | Ch. 10, 16 | 10.5281/zenodo.18320411 |
+| Art. VI — Retrocausal Yield | Ch. 11, 17 | 10.5281/zenodo.18320411 |
+| Art. VII — Distribution (Matthew 25) | Ch. 12, 20 | 10.5281/zenodo.18323735 |
+| Art. VIII — Amendment | Ch. 13 | 10.5281/zenodo.18320411 |
+| Appendix I — Math Charter | Ch. 15, App. C | 10.5281/zenodo.18320411 |
+| Charter of Enactment | Part II | 10.5281/zenodo.18320411 |
+| Declaration on Embodied Labor | Part II, Ch. 12 | 10.5281/zenodo.18320411 |
+| Ninefold Constellation | Ch. 8, Part II | 10.5281/zenodo.18320411 |
+| DC_Inv | Ch. 1, 6, Part II | 10.5281/zenodo.18320411 |
+| H_Sov | Ch. 6, 8, 22 | 10.5281/zenodo.18320411 |
+| Matthew 25 | Ch. 12, 20 | 10.5281/zenodo.18323735 |
 
 
 ---

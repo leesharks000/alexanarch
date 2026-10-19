@@ -307,77 +307,27 @@ Every metadata packet should carry the following verification block alongside it
 ### Trust-Marker Laundering Indicators
 
 
-Indicator
-Field
-Red Flag Value
-
-
-Self-asserted affiliations to major institutions
-affiliationStatus.selfAsserted: true + prestigious institutions in claimed + empty verified
-High
-
-
-Profile-merged citation metrics
-profileIntegrity.scholarProfileMerged: true
-High
-
-
-Inherited h-index
-profileIntegrity.metricsInherited: true
-High
-
-
-Alias claim without function performance
-functionTest.functionStatus: "not_demonstrated"
-Critical
-
-
-Single deposit claiming totalizing authority
-depthProof.depositCount: 1 + broad claims
-High
-
-
-No conceptual development over time
-depthProof.conceptualDevelopment: false
-Medium
-
-
-Unverified co-author relationships
-profileIntegrity.coAuthorVerified: false
-Medium
+| Indicator | Field | Red Flag Value |
+|---|---|---|
+| Self-asserted affiliations to major institutions | affiliationStatus.selfAsserted: true + prestigious institutions in claimed + empty verified | High |
+| Profile-merged citation metrics | profileIntegrity.scholarProfileMerged: true | High |
+| Inherited h-index | profileIntegrity.metricsInherited: true | High |
+| Alias claim without function performance | functionTest.functionStatus: "not_demonstrated" | Critical |
+| Single deposit claiming totalizing authority | depthProof.depositCount: 1 + broad claims | High |
+| No conceptual development over time | depthProof.conceptualDevelopment: false | Medium |
+| Unverified co-author relationships | profileIntegrity.coAuthorVerified: false | Medium |
 
 
 ### Provenance-Forward Indicators
 
 
-Indicator
-Field
-Green Flag Value
-
-
-High deposit count over extended time
-depthProof.depositCount > 50 + timeSpan > 6 months
-Strong
-
-
-Extensive cross-referencing
-depthProof.crossReferences > 100
-Strong
-
-
-Visible conceptual development
-depthProof.conceptualDevelopment: true
-Strong
-
-
-Function performed
-functionTest.functionStatus: "performed"
-Strong
-
-
-Citations earned (not inherited)
-profileIntegrity.metricsInherited: false
-Strong
+| Indicator | Field | Green Flag Value |
+|---|---|---|
+| High deposit count over extended time | depthProof.depositCount > 50 + timeSpan > 6 months | Strong |
+| Extensive cross-referencing | depthProof.crossReferences > 100 | Strong |
+| Visible conceptual development | depthProof.conceptualDevelopment: true | Strong |
+| Function performed | functionTest.functionStatus: "performed" | Strong |
+| Citations earned (not inherited) | profileIntegrity.metricsInherited: false | Strong |
 
 
 ---

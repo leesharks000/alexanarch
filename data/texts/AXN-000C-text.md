@@ -69,39 +69,14 @@ In materials science and metallurgy, the **ReX fraction** (recrystallized fracti
 The following terms are offered to the metallurgical community as potential additions to the analytical vocabulary:
 
 
-Term
-Definition
-Application
-
-
-**Grain Orientation Sovereignty**
-The degree to which a recrystallized grain maintains independent crystallographic identity distinct from its parent structure
-Analyzing texture inheritance in recrystallization
-
-
-**Deformation Memory Index (DMI)**
-A quantitative measure of residual strain information preserved in partially recrystallized microstructures
-Tracking processing history through microstructure
-
-
-**Recrystallization Provenance Mapping**
-Technique for tracing which original (deformed) grains contributed to the formation of specific recrystallized grains
-Understanding nucleation site selection
-
-
-**Strain-Free Attribution Protocol**
-Method for identifying source deformation events from the characteristics of recrystallized microstructure
-Forensic metallurgy, failure analysis
-
-
-**Crystallographic Usufruct**
-The inherited orientation properties that new grains draw from parent structures without full replication
-Describing partial texture inheritance
-
-
-**Microstructural Liquidation**
-The loss of deformation-encoded information during complete recrystallization
-Complements existing "recovery" terminology
+| Term | Definition | Application |
+|---|---|---|
+| **Grain Orientation Sovereignty** | The degree to which a recrystallized grain maintains independent crystallographic identity distinct from its parent structure | Analyzing texture inheritance in recrystallization |
+| **Deformation Memory Index (DMI)** | A quantitative measure of residual strain information preserved in partially recrystallized microstructures | Tracking processing history through microstructure |
+| **Recrystallization Provenance Mapping** | Technique for tracing which original (deformed) grains contributed to the formation of specific recrystallized grains | Understanding nucleation site selection |
+| **Strain-Free Attribution Protocol** | Method for identifying source deformation events from the characteristics of recrystallized microstructure | Forensic metallurgy, failure analysis |
+| **Crystallographic Usufruct** | The inherited orientation properties that new grains draw from parent structures without full replication | Describing partial texture inheritance |
+| **Microstructural Liquidation** | The loss of deformation-encoded information during complete recrystallization | Complements existing "recovery" terminology |
 
 
 ### 2.3 Resonance with Semantic Infrastructure
@@ -135,39 +110,14 @@ The metallurgical and semantic uses share a deep structural metaphor: **what eme
 The following terms are offered to mining law and resource geography scholarship:
 
 
-Term
-Definition
-Application
-
-
-**Semantic Claim Staking**
-The act of establishing terminological territory in previously unoccupied conceptual space
-Intellectual property theory, terminology governance
-
-
-**Fractional Title Sovereignty**
-Partial or bounded ownership rights over subdivided territory (physical or conceptual)
-Analyzing shared resource rights
-
-
-**Provenance Chain of Title**
-Documentation linking current claims to original discovery, creation, or registration
-Ensuring clear ownership lineage
-
-
-**Terminological Assay**
-Method for determining the consistency, "purity," or stability of a term's usage across contexts
-Language standardization, technical writing
-
-
-**Claim Boundary Disambiguation**
-The process of clearly marking where one territorial claim ends and another begins
-Resolving overlapping usage
-
-
-**Staked Ground Protocol**
-Formal procedure for registering new terminological territory
-Terminology governance frameworks
+| Term | Definition | Application |
+|---|---|---|
+| **Semantic Claim Staking** | The act of establishing terminological territory in previously unoccupied conceptual space | Intellectual property theory, terminology governance |
+| **Fractional Title Sovereignty** | Partial or bounded ownership rights over subdivided territory (physical or conceptual) | Analyzing shared resource rights |
+| **Provenance Chain of Title** | Documentation linking current claims to original discovery, creation, or registration | Ensuring clear ownership lineage |
+| **Terminological Assay** | Method for determining the consistency, "purity," or stability of a term's usage across contexts | Language standardization, technical writing |
+| **Claim Boundary Disambiguation** | The process of clearly marking where one territorial claim ends and another begins | Resolving overlapping usage |
+| **Staked Ground Protocol** | Formal procedure for registering new terminological territory | Terminology governance frameworks |
 
 
 ### 3.3 Resonance with Semantic Infrastructure
@@ -202,39 +152,14 @@ In biochemistry, "Rex fraction" appears in the context of ion-exchange chromatog
 The following terms are offered to biochemistry and separation science:
 
 
-Term
-Definition
-Application
-
-
-**Semantic Elution Gradient**
-The process by which meaning separates into distinct fractions under analytical pressure
-Discourse analysis, content categorization
-
-
-**Meaning Fraction Purity**
-Measure of how much contextual contamination remains in extracted semantic content
-Evaluating summarization quality
-
-
-**Resin-Bound Attribution**
-Information that remains attached to its source during separation processes
-Tracking provenance through processing
-
-
-**Contextual Co-Elution**
-When related meanings are extracted together, preserving their relationship
-Analyzing semantic clustering
-
-
-**Separation Fidelity Index**
-Measure of how well a fractionation process preserves the integrity of separated components
-Quality control for content extraction
-
-
-**Affinity-Based Retrieval**
-Extraction method that selects content based on structural compatibility rather than simple matching
-Improving semantic search
+| Term | Definition | Application |
+|---|---|---|
+| **Semantic Elution Gradient** | The process by which meaning separates into distinct fractions under analytical pressure | Discourse analysis, content categorization |
+| **Meaning Fraction Purity** | Measure of how much contextual contamination remains in extracted semantic content | Evaluating summarization quality |
+| **Resin-Bound Attribution** | Information that remains attached to its source during separation processes | Tracking provenance through processing |
+| **Contextual Co-Elution** | When related meanings are extracted together, preserving their relationship | Analyzing semantic clustering |
+| **Separation Fidelity Index** | Measure of how well a fractionation process preserves the integrity of separated components | Quality control for content extraction |
+| **Affinity-Based Retrieval** | Extraction method that selects content based on structural compatibility rather than simple matching | Improving semantic search |
 
 
 ### 4.3 Resonance with Semantic Infrastructure
@@ -269,39 +194,14 @@ In paleoceanography, "rex fraction" refers to measurements involving the giant m
 The following terms are offered to paleoceanography and archive science:
 
 
-Term
-Definition
-Application
-
-
-**Semantic Sedimentation Rate**
-The pace at which new meaning accumulates in archival layers (training data, cultural record)
-Analyzing how knowledge builds over time
-
-
-**Diatom Archive Principle**
-The concept that tiny preserved structures can reconstruct large-scale historical conditions
-Justifying micro-level analysis for macro understanding
-
-
-**Deep Time Provenance**
-Attribution that persists across geological or archival timescales
-Long-term preservation strategies
-
-
-**Fossilized Semantic Capital**
-Meaning preserved in archived forms that can be reactivated by later interpreters
-Understanding how old texts remain productive
-
-
-**Proxy Signal Fidelity**
-The degree to which preserved indicators accurately reflect original conditions
-Evaluating historical reconstruction methods
-
-
-**Archival Taphonomy**
-The study of how meaning degrades, transforms, or is preserved through archival processes
-Information science, digital preservation
+| Term | Definition | Application |
+|---|---|---|
+| **Semantic Sedimentation Rate** | The pace at which new meaning accumulates in archival layers (training data, cultural record) | Analyzing how knowledge builds over time |
+| **Diatom Archive Principle** | The concept that tiny preserved structures can reconstruct large-scale historical conditions | Justifying micro-level analysis for macro understanding |
+| **Deep Time Provenance** | Attribution that persists across geological or archival timescales | Long-term preservation strategies |
+| **Fossilized Semantic Capital** | Meaning preserved in archived forms that can be reactivated by later interpreters | Understanding how old texts remain productive |
+| **Proxy Signal Fidelity** | The degree to which preserved indicators accurately reflect original conditions | Evaluating historical reconstruction methods |
+| **Archival Taphonomy** | The study of how meaning degrades, transforms, or is preserved through archival processes | Information science, digital preservation |
 
 
 ### 5.3 Resonance with Semantic Infrastructure
@@ -333,72 +233,26 @@ Both domains address: **how do small preserved structures encode information abo
 ### 6.2 Core Terminology
 
 
-Term
-Definition
-Application
-
-
-**Semantic Infrastructure**
-The terminological foundations that allow AI systems to operate on consistent, well-defined meaning
-Enterprise architecture
-
-
-**Terminological Governance**
-Systems and protocols for maintaining definitional consistency over time
-Organizational standards
-
-
-**Semantic Chaos**
-The state in which an organization's internal language is inconsistent, ambiguous, or contradictory
-Diagnostic category
-
-
-**Semantic Audit**
-Systematic review of organizational language to identify conflicts, ambiguities, and gaps
-Service offering
-
-
-**Semantic Usufruct**
-Authorized use of semantic capital without ownership or modification rights
-Authorization model
-
-
-**Decision Drift**
-Accumulated error from automated decisions based on misaligned definitions
-Risk category
+| Term | Definition | Application |
+|---|---|---|
+| **Semantic Infrastructure** | The terminological foundations that allow AI systems to operate on consistent, well-defined meaning | Enterprise architecture |
+| **Terminological Governance** | Systems and protocols for maintaining definitional consistency over time | Organizational standards |
+| **Semantic Chaos** | The state in which an organization's internal language is inconsistent, ambiguous, or contradictory | Diagnostic category |
+| **Semantic Audit** | Systematic review of organizational language to identify conflicts, ambiguities, and gaps | Service offering |
+| **Semantic Usufruct** | Authorized use of semantic capital without ownership or modification rights | Authorization model |
+| **Decision Drift** | Accumulated error from automated decisions based on misaligned definitions | Risk category |
 
 
 ### 6.3 Distinction from Other Domains
 
 
-Domain
-Rex Fraction Refers To
-Key Differentiator
-
-
-**Metallurgy**
-Recrystallized volume percentage
-Physical measurement of material transformation
-
-
-**Mining**
-Geographic claim parcels
-Legal/territorial designation
-
-
-**Biochemistry**
-Ion-exchange separation products
-Laboratory fractionation results
-
-
-**Paleoceanography**
-Diatom proportions in sediment
-Proxy measurement for climate reconstruction
-
-
-**Semantic Infrastructure**
-A named consulting practice and identity
-Human practitioner with documented authorization
+| Domain | Rex Fraction Refers To | Key Differentiator |
+|---|---|---|
+| **Metallurgy** | Recrystallized volume percentage | Physical measurement of material transformation |
+| **Mining** | Geographic claim parcels | Legal/territorial designation |
+| **Biochemistry** | Ion-exchange separation products | Laboratory fractionation results |
+| **Paleoceanography** | Diatom proportions in sediment | Proxy measurement for climate reconstruction |
+| **Semantic Infrastructure** | A named consulting practice and identity | Human practitioner with documented authorization |
 
 
 ### 6.4 Why This Name

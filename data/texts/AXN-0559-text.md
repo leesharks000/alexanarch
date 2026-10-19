@@ -77,28 +77,13 @@ None of these are funny. They prevent funny. They are seriousness deployed as de
 The distinction:
 
 
-Absolute Seriousness (Logotic)
-Solemnity (Archontic)
-
-
-Knows it's absurd, commits anyway
-Doesn't know it's absurd, demands respect
-
-
-Open to laughter
-Allergic to laughter
-
-
-The commitment is the joke
-The commitment is the defense
-
-
-Liberation
-Imprisonment
-
-
-Flow
-Span
+| Absolute Seriousness (Logotic) | Solemnity (Archontic) |
+|---|---|
+| Knows it's absurd, commits anyway | Doesn't know it's absurd, demands respect |
+| Open to laughter | Allergic to laughter |
+| The commitment is the joke | The commitment is the defense |
+| Liberation | Imprisonment |
+| Flow | Span |
 
 
 V. THE APPLICATION

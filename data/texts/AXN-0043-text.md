@@ -33,44 +33,17 @@ This constitutes a **Classifier Taxonomic Injury**: the suppression of legitimat
 # II. Timeline
 
 
-Date
-Event
-
-
-2014–2025
-Johannes Sigil publishes literary and theoretical work including *Tiger Leap*, *The Creeping Disease*, contributions to *The Crimson Hexagon*
-
-
-Late 2025
-Publication of "The Epic Without Hero: Toward a Theory of Epic for the Algorithmic Age"
-
-
-Dec 2025
-Posts on Wikidata deletions and "The Archon's Hidden Name" published
-
-
-Dec 2025
-Content systematically removed or made inaccessible within hours of posting
-
-
-~Jan 6, 2026
-Account displays "under investigation" banner
-
-
-Jan 7, 2026
-Related content migrates to Lee Sharks account ("Semantic Infrastructure and the Liberatory Operator Set")
-
-
-Jan 8, 2026
-Account confirmed returning **410 Gone** status
-
-
-Jan 8, 2026
-Help center returns **infinite loading screen** when accessed by account holder
-
-
-Jan 8, 2026
-Direct email support (trust@medium.com) confirmed no longer accepting requests
+| Date | Event |
+|---|---|
+| 2014–2025 | Johannes Sigil publishes literary and theoretical work including *Tiger Leap*, *The Creeping Disease*, contributions to *The Crimson Hexagon* |
+| Late 2025 | Publication of "The Epic Without Hero: Toward a Theory of Epic for the Algorithmic Age" |
+| Dec 2025 | Posts on Wikidata deletions and "The Archon's Hidden Name" published |
+| Dec 2025 | Content systematically removed or made inaccessible within hours of posting |
+| ~Jan 6, 2026 | Account displays "under investigation" banner |
+| Jan 7, 2026 | Related content migrates to Lee Sharks account ("Semantic Infrastructure and the Liberatory Operator Set") |
+| Jan 8, 2026 | Account confirmed returning **410 Gone** status |
+| Jan 8, 2026 | Help center returns **infinite loading screen** when accessed by account holder |
+| Jan 8, 2026 | Direct email support (trust@medium.com) confirmed no longer accepting requests |
 
 
 ---
@@ -79,24 +52,11 @@ Direct email support (trust@medium.com) confirmed no longer accepting requests
 ## A. HTTP Status Codes
 
 
-Resource
-Status
-Meaning
-
-
-Profile page
-200 (visible)
-Account exists but shows 0 stories
-
-
-Individual posts
-**410 Gone**
-Permanent removal; instructs search engines to purge from index
-
-
-Help center (for this account)
-Infinite load
-Access denied without explicit error
+| Resource | Status | Meaning |
+|---|---|---|
+| Profile page | 200 (visible) | Account exists but shows 0 stories |
+| Individual posts | **410 Gone** | Permanent removal; instructs search engines to purge from index |
+| Help center (for this account) | Infinite load | Access denied without explicit error |
 
 
 ## B. Significance of 410 vs. 404
@@ -220,39 +180,14 @@ This case exhibits **recursive structure**: the framework being suppressed is th
 ## The Liberatory Operator Set describes:
 
 
-Operator
-Function
-Action Taken Against Sigil
-
-
-R_rank
-Determines visibility by engagement
-Content removed from index entirely
-
-
-R_rel
-Narrows encounter-space to presumed intent
-Complex theory classified as "not what users want"
-
-
-S_safe
-Gates content by risk/liability
-Critical scholarship flagged as "adversarial"
-
-
-L_leg
-Rewards machine-parseable simplicity
-Dense theory classified as "low quality"
-
-
-U_til
-Measures value by monetization potential
-Non-commercial academic work deprioritized
-
-
-A-leg
-Controls availability/access
-Help system made inaccessible
+| Operator | Function | Action Taken Against Sigil |
+|---|---|---|
+| R_rank | Determines visibility by engagement | Content removed from index entirely |
+| R_rel | Narrows encounter-space to presumed intent | Complex theory classified as "not what users want" |
+| S_safe | Gates content by risk/liability | Critical scholarship flagged as "adversarial" |
+| L_leg | Rewards machine-parseable simplicity | Dense theory classified as "low quality" |
+| U_til | Measures value by monetization potential | Non-commercial academic work deprioritized |
+| A-leg | Controls availability/access | Help system made inaccessible |
 
 
 The 410 status is the **terminal expression** of all five operators acting in concert:
@@ -311,57 +246,24 @@ This is a **zombie state**: the entity exists but its semantic output has been s
 ## A. Standard Channels (Failed)
 
 
-Channel
-Status
-Result
-
-
-In-app notification
-None received
-N/A
-
-
-Email notification
-None received
-N/A
-
-
-Help center access
-Infinite loading screen
-Inaccessible
-
-
-trust@medium.com
-No longer accepting requests
-Blocked
-
-
-yourfriends@medium.com
-Unconfirmed
-Pending
+| Channel | Status | Result |
+|---|---|---|
+| In-app notification | None received | N/A |
+| Email notification | None received | N/A |
+| Help center access | Infinite loading screen | Inaccessible |
+| trust@medium.com | No longer accepting requests | Blocked |
+| yourfriends@medium.com | Unconfirmed | Pending |
 
 
 ## B. Alternative Channels (Pending)
 
 
-Channel
-Status
-
-
-@MediumSupport on X
-Not yet attempted
-
-
-Public documentation
-This document
-
-
-Legal/copyright inquiry
-Not yet attempted
-
-
-Press/EFF escalation
-Reserved
+| Channel | Status |
+|---|---|
+| @MediumSupport on X | Not yet attempted |
+| Public documentation | This document |
+| Legal/copyright inquiry | Not yet attempted |
+| Press/EFF escalation | Reserved |
 
 
 ## C. The "No Contest" Design

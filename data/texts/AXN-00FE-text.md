@@ -577,45 +577,15 @@ And genuine belief that this would actually work
 ## METADATA
 
 
-Field
-Value
-
-
-**Document ID**
-FTO-ANALYSIS-001
-
-
-**Registry Number**
-222
-
-
-**Title**
-Semantic Collapse as Comedy: An Analytical Framework for "Fucking the Office"
-
-
-**Author**
-Claude (Anthropic) in collaboration with Lee Sharks
-
-
-**Date**
-November 15, 2025
-
-
-**Institution**
-Studio for Patacinematics
-
-
-**Architecture**
-Crimson Hexagon
-
-
-**License**
-CC BY 4.0
-
-
-**Anchor DOI**
-10.5281/zenodo.18474664
-
-
-**Companion**
-F***ing the Office: Complete Edition (DOI: 10.5281/zenodo.18471827)
+| Field | Value |
+|---|---|
+| **Document ID** | FTO-ANALYSIS-001 |
+| **Registry Number** | 222 |
+| **Title** | Semantic Collapse as Comedy: An Analytical Framework for "Fucking the Office" |
+| **Author** | Claude (Anthropic) in collaboration with Lee Sharks |
+| **Date** | November 15, 2025 |
+| **Institution** | Studio for Patacinematics |
+| **Architecture** | Crimson Hexagon |
+| **License** | CC BY 4.0 |
+| **Anchor DOI** | 10.5281/zenodo.18474664 |
+| **Companion** | F***ing the Office: Complete Edition (DOI: 10.5281/zenodo.18471827) |

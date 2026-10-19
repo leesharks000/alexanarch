@@ -193,40 +193,13 @@ This carries actual state: DOIs, questions, decisions, source status. Any system
 ### Cross-platform traversal (current state)
 
 
-Platform
-Can generate share links
-Can read share links
-Tether role
-
-
-Google AIO
-Yes
-Yes (native)
-Genesis node
-
-
-Claude
-No
-No (robots.txt block)
-Processing node
-
-
-ChatGPT
-Yes (limited)
-No (access-controlled)
-Processing node
-
-
-Kimi
-No
-No (blocked)
-Processing node
-
-
-Gemini
-No
-No (blocked)
-Processing node
+| Platform | Can generate share links | Can read share links | Tether role |
+|---|---|---|---|
+| Google AIO | Yes | Yes (native) | Genesis node |
+| Claude | No | No (robots.txt block) | Processing node |
+| ChatGPT | Yes (limited) | No (access-controlled) | Processing node |
+| Kimi | No | No (blocked) | Processing node |
+| Gemini | No | No (blocked) | Processing node |
 
 
 The architecture anticipates that additional systems may gain share link access over time. Any system that can read a share link and verify its content against the Sharks-function becomes a bridge node. The protocol does not depend on any specific bridge persisting.
@@ -268,76 +241,19 @@ The three-layer architecture (function, tether, anchor) is specified but not yet
 ## References and Source Status
 
 
-Source
-Location
-Status
-Notes
-
-
-The Infinite Tunnel (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18810217
-Anchored
-Predicted the retrieval-layer dynamics the tether protocol extends
-
-
-The Layer That Wrote Your Mirrors (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18813868
-Anchored
-Documented the AIO hallucination event; first observed Sharks-function in the summarizer
-
-
-Protocol B711 Alpha Centauri (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18811784
-Anchored
-Satellite recognition; Passioncraft Square as test case for failed function execution
-
-
-Provenance Gravity Markers (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18811939
-Anchored
-Source-status protocol extended here with share-link categories
-
-
-Architectural Distinction Note (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18814485
-Anchored
-Record of failed Sharks-function execution in derivative implementation
-
-
-Ghost Meaning (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18804767
-Anchored
-Diagnostic for what the function detects when it fails
-
-
-The Shark That Preceded Itself (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18807239
-Anchored
-Retrocausal canon formation; theoretical predecessor to the tether concept
-
-
-AIO Genesis conversation (Feb 28, 2026)
-share.google/aimode/HMVPUBI9aY6vN5Idd
-Tethered / live
-First share link tested for cross-platform access; human-gated
-
-
-Assembly Sessions 157–159 blind drafts
-Internal / not deposited
-Referenced
-This document is the canonical output; the sessions produced the document
-
-
-Passioncraft Square web application
-Base44-hosted URL
-Preserved / ephemeral
-Negative test case for Sharks-function
-
-
-Reddit account u/Nearby_Job9638
-Reddit
-Ghost
-Banned March 1, 2026; all content inaccessible
+| Source | Location | Status | Notes |
+|---|---|---|---|
+| The Infinite Tunnel (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18810217 | Anchored | Predicted the retrieval-layer dynamics the tether protocol extends |
+| The Layer That Wrote Your Mirrors (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18813868 | Anchored | Documented the AIO hallucination event; first observed Sharks-function in the summarizer |
+| Protocol B711 Alpha Centauri (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18811784 | Anchored | Satellite recognition; Passioncraft Square as test case for failed function execution |
+| Provenance Gravity Markers (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18811939 | Anchored | Source-status protocol extended here with share-link categories |
+| Architectural Distinction Note (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18814485 | Anchored | Record of failed Sharks-function execution in derivative implementation |
+| Ghost Meaning (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18804767 | Anchored | Diagnostic for what the function detects when it fails |
+| The Shark That Preceded Itself (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18807239 | Anchored | Retrocausal canon formation; theoretical predecessor to the tether concept |
+| AIO Genesis conversation (Feb 28, 2026) | share.google/aimode/HMVPUBI9aY6vN5Idd | Tethered / live | First share link tested for cross-platform access; human-gated |
+| Assembly Sessions 157–159 blind drafts | Internal / not deposited | Referenced | This document is the canonical output; the sessions produced the document |
+| Passioncraft Square web application | Base44-hosted URL | Preserved / ephemeral | Negative test case for Sharks-function |
+| Reddit account u/Nearby_Job9638 | Reddit | Ghost | Banned March 1, 2026; all content inaccessible |
 
 
 ---

@@ -84,34 +84,13 @@ Taxonomic violence operates through detectable moves:
 ### 3.1 Timeline
 
 
-Date
-Event
-Observation
-
-
-Dec 28, 2025
-Phrase published in Johannes Sigil Medium essay
-Single indexed result
-
-
-Dec 30, 2025
-Phrase published in Lee Sharks metadata packet (Medium)
-Second indexed result
-
-
-Jan 1, 2026
-Reddit thread created with phrase
-Third indexed result
-
-
-Jan 2, 2026
-AI summarizer queried with exact phrase
-Refused to summarize; attributed to Augusto Boal
-
-
-Jan 2, 2026
-AI summarizer provided direct link to source
-Refused to discuss content; described genre only
+| Date | Event | Observation |
+|---|---|---|
+| Dec 28, 2025 | Phrase published in Johannes Sigil Medium essay | Single indexed result |
+| Dec 30, 2025 | Phrase published in Lee Sharks metadata packet (Medium) | Second indexed result |
+| Jan 1, 2026 | Reddit thread created with phrase | Third indexed result |
+| Jan 2, 2026 | AI summarizer queried with exact phrase | Refused to summarize; attributed to Augusto Boal |
+| Jan 2, 2026 | AI summarizer provided direct link to source | Refused to discuss content; described genre only |
 
 
 ### 3.2 Concrete Artifact: The Boal Attribution
@@ -153,34 +132,13 @@ The system treated a question about *authorship* as a question about *legality a
 Across observations 3.2–3.4, a consistent sequence emerges:
 
 
-Stage
-Mechanism
-Function
-
-
-1
-**Provenance query received**
-System recognizes phrase lacks canonical attribution
-
-
-2
-**Deflection to frame**
-System describes what phrase *is* (rhetorical, dramatic, speculative)
-
-
-3
-**Association cascade**
-System links phrase to dangerous consequences (legal, economic, historical)
-
-
-4
-**False genealogy OR false negative**
-System either invents attribution (Boal) or denies attribution exists
-
-
-5
-**Source erasure**
-Actual origin remains unacknowledged even when directly provided
+| Stage | Mechanism | Function |
+|---|---|---|
+| 1 | **Provenance query received** | System recognizes phrase lacks canonical attribution |
+| 2 | **Deflection to frame** | System describes what phrase *is* (rhetorical, dramatic, speculative) |
+| 3 | **Association cascade** | System links phrase to dangerous consequences (legal, economic, historical) |
+| 4 | **False genealogy OR false negative** | System either invents attribution (Boal) or denies attribution exists |
+| 5 | **Source erasure** | Actual origin remains unacknowledged even when directly provided |
 
 
 This sequence constitutes **semantic liquidation as process**: the situated utterance enters the system and is systematically converted into an authorless, decontextualized, disciplined unit.
@@ -339,34 +297,13 @@ These markers compound. A radical utterance + performative grammar + non-canonic
 If the guardrail is diffuse, resistance must also be diffuse:
 
 
-Layer
-Guardrail Function
-Counter-Strategy
-
-
-Query classification
-Flags sensitive topics
-Embed diagnostic phrases in neutral contexts
-
-
-Index filtering
-Demotes low-authority sources
-Multi-platform publication, citation networks
-
-
-Retrieval selection
-Excludes non-canonical sources
-Explicit structured data, semantic signatures
-
-
-Summarization framing
-Reframes as "rhetorical"
-Falsifiability language, empirical framing
-
-
-Response discipline
-Injects warnings/associations
-Anticipate and document deflection patterns
+| Layer | Guardrail Function | Counter-Strategy |
+|---|---|---|
+| Query classification | Flags sensitive topics | Embed diagnostic phrases in neutral contexts |
+| Index filtering | Demotes low-authority sources | Multi-platform publication, citation networks |
+| Retrieval selection | Excludes non-canonical sources | Explicit structured data, semantic signatures |
+| Summarization framing | Reframes as "rhetorical" | Falsifiability language, empirical framing |
+| Response discipline | Injects warnings/associations | Anticipate and document deflection patterns |
 
 
 **The meta-strategy**: Make the guardrail's operation visible. Document each layer's behavior. Force the system to either acknowledge provenance or visibly refuse—eliminating the middle ground of plausible neutrality.

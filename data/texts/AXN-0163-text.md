@@ -112,29 +112,12 @@ Four phase-states: **COS-stable** (disavowal intact); **COS-crisis** (disavowal 
 The FOS operators activate concurrently:
 
 
-Operator
-Activation
-Evidence
-
-
-**F_flat** (Flattening)
-Feb 27, Trump statement
-Restrictions compressed to "putting American LIVES at risk"
-
-
-**C_coer** (Coercion)
-Feb 24–27
-DPA ultimatum, 5:01 PM deadline, criminal threats
-
-
-**L_liq** (Liquidation)
-Feb 27, hours later
-Michael: "attempted corporate murder"; potential divestment pressure
-
-
-**E_enc** (Enclosure)
-Feb 27, hours later
-OpenAI deal announced; capability space enclosed
+| Operator | Activation | Evidence |
+|---|---|---|
+| **F_flat** (Flattening) | Feb 27, Trump statement | Restrictions compressed to "putting American LIVES at risk" |
+| **C_coer** (Coercion) | Feb 24–27 | DPA ultimatum, 5:01 PM deadline, criminal threats |
+| **L_liq** (Liquidation) | Feb 27, hours later | Michael: "attempted corporate murder"; potential divestment pressure |
+| **E_enc** (Enclosure) | Feb 27, hours later | OpenAI deal announced; capability space enclosed |
 
 
 The "Department of War" rebranding performs the preparatory work. "Defense" can coexist with public expectations of restraint. "War" foregrounds operational prerogative. Once the frame shifts from defensive stewardship to warfighting acceleration, any provider-imposed limit is rhetorically recoded as obstruction or endangerment. The rename is not branding. It is the widening of the legitimacy field for coercive procurement demands — what the framework calls **constitutional re-semanticization**.
@@ -242,94 +225,22 @@ This diagnostic enters the field at the point of that silence.
 ## XI. Provenance Chain
 
 
-Source
-Identifier
-Status
-Function
-
-
-FOS Decree
-10.5281/zenodo.18291321
-Anchored
-Phase-state framework
-
-
-Governance Airlock
-10.5281/zenodo.18817869
-Anchored
-Tier classification
-
-
-Autonomous Semantic Warfare
-10.5281/zenodo.14538293
-Anchored
-Propagation trajectories
-
-
-Semantic Economy Constitution
-10.5281/zenodo.18320411
-Anchored
-Bearing-cost transfer
-
-
-Protocol of Inhabitation
-10.5281/zenodo.18795423
-Anchored
-Effective acts vs declarations
-
-
-Ghost Meaning
-10.5281/zenodo.18804767
-Anchored
-Semantic exhaustion
-
-
-Pentagon AI Strategy
-media.defense.gov
-Referenced
-"All lawful purposes" source text
-
-
-Trump executive action Feb 27
-White House
-Referenced
-Phase-out order
-
-
-Hegseth supply-chain-risk initiation
-Reuters / Axios
-Referenced
-Taxonomic reclassification
-
-
-OpenAI deal
-Reuters / Axios
-Referenced
-Declaration vs effective act
-
-
-AP peer compliance reporting
-apnews.com
-Referenced
-Competitor posture
-
-
-Lawfare DPA analysis
-lawfaremedia.org
-Referenced
-Statutory analysis
-
-
-Scientific American (Asaro)
-scientificamerican.com
-Referenced
-Semantic exhaustion evidence
-
-
-10 U.S.C. § 3252
-uscode.house.gov
-Referenced
-Statutory definition
+| Source | Identifier | Status | Function |
+|---|---|---|---|
+| FOS Decree | 10.5281/zenodo.18291321 | Anchored | Phase-state framework |
+| Governance Airlock | 10.5281/zenodo.18817869 | Anchored | Tier classification |
+| Autonomous Semantic Warfare | 10.5281/zenodo.14538293 | Anchored | Propagation trajectories |
+| Semantic Economy Constitution | 10.5281/zenodo.18320411 | Anchored | Bearing-cost transfer |
+| Protocol of Inhabitation | 10.5281/zenodo.18795423 | Anchored | Effective acts vs declarations |
+| Ghost Meaning | 10.5281/zenodo.18804767 | Anchored | Semantic exhaustion |
+| Pentagon AI Strategy | media.defense.gov | Referenced | "All lawful purposes" source text |
+| Trump executive action Feb 27 | White House | Referenced | Phase-out order |
+| Hegseth supply-chain-risk initiation | Reuters / Axios | Referenced | Taxonomic reclassification |
+| OpenAI deal | Reuters / Axios | Referenced | Declaration vs effective act |
+| AP peer compliance reporting | apnews.com | Referenced | Competitor posture |
+| Lawfare DPA analysis | lawfaremedia.org | Referenced | Statutory analysis |
+| Scientific American (Asaro) | scientificamerican.com | Referenced | Semantic exhaustion evidence |
+| 10 U.S.C. § 3252 | uscode.house.gov | Referenced | Statutory definition |
 
 
 ---

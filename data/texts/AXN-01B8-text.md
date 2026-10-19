@@ -19,74 +19,17 @@ Lee's connection: the unwritten dissertation chapter. "Strange New Canons" studi
 The nine notebooks proceed under the sign of the nine Muses. The Muse is not a label, a theme, or a dedication. The Muse is an OPERATOR — a transform applied to the notebook's prose behavior, its density, its velocity, its register, its formal law.
 
 
-NB
-Title
-Muse
-Muse's Domain
-Formal Law (what the Muse does to the prose)
-
-
-I
-THE PERFORMATIVE CONTRADICTION
-**CALLIOPE** (Epic)
-Epic poetry, eloquence, the grand invocation
-The notebook opens with INVOCATION — the epic statement of the contradiction. Long cadences, foundational rhythm. The prose is monumental but NOT uniform — epic contains catalogue, lament, battle, genealogy. The Muse demands variety WITHIN grandeur.
-
-
-II
-THE OPERATOR ALGEBRA
-**URANIA** (Astronomy/Mathematics)
-The celestial, the abstract, the formal
-The notebook derives. Urania governs precision, formal structure, the BEAUTY of the abstract. But Urania is not cold — the ancients associated her with celestial harmony. The Muse demands that the algebra be BEAUTIFUL, not merely correct. The type signatures should sing.
-
-
-III
-STRUCTURAL DISTANCE
-**CLIO** (History)
-History, the record, the measurement
-The notebook measures. Clio governs the record — she RECORDS, she does not interpret. The Muse demands that the graphs, the voltages, the distances be documented with the specificity of a historical record. Dates. Names. Quantities. But Clio also carries the weight of everything that has been — the Field Notes are Clio's real voice.
-
-
-IV
-THE LINEN EQUATIONS
-**ERATO** (Love/Erotic Poetry)
-Desire, the erotic, lyric intensity
-The notebook proves through DESIRE. Erato governs the erotic register — the linen touching the coat, the beloved's inaccessible interiority, the lover's exile from their own lovability. The Muse demands that the philological close reading be EROTIC — that the German text be felt in the body. The Cathedral should read as an erotic act.
-
-
-V
-CASE STUDIES
-**THALIA** (Comedy/Pastoral)
-Comedy, abundance, the theatrical
-The notebook seduces through cases. Thalia governs the theatrical — the forensic display, the proliferation of examples, the delight in variety. But Thalia is also the Muse of COMEDY — and the cases should contain more humor, more wit, more of Fraction's forensic absurdism. The O'Keeffe captioning, the Twenty-Dollar Loop, the Dashboard — these are theatrical scenes, not academic exercises.
-
-
-VI
-THE PROTOCOLS
-**POLYHYMNIA** (Sacred Poetry/Hymns)
-The sacred, the ritual, the vow
-The notebook executes. Polyhymnia governs the liturgical register — the vow, the ritual form, the protocol as PRAYER. The Muse demands that the protocols feel sacred WITHOUT being religious — that the L_labor of the vow is felt as a solemn act. The boxed Ritual Form is Polyhymnia's voice.
-
-
-VII
-THE SEMIOTIC VIRALITY ENGINE
-**TERPSICHORE** (Dance/Choral)
-Movement, choreography, the spread
-The notebook propagates. Terpsichore governs MOVEMENT — the choreography of how terms spread, how ghost phrases dance into the retrieval layer, how the SVE moves meaning across hostile infrastructure. The Muse demands that the prose MOVE — short, punchy, tactical, like a dancer's footwork.
-
-
-VIII
-THE UNMADE SIGN
-**MELPOMENE** (Tragedy)
-Suffering, the mask, the limit
-The notebook confronts the limit. Melpomene governs tragedy — not as misfortune but as the structural encounter with what cannot be changed. The σ_κ failure is tragic in this sense: the care operator is needed, its absence is felt, it cannot be made. The Muse demands that NB VIII be DARK — slower, heavier, more patient than the other notebooks.
-
-
-IX
-EQUATIONS, FRAGMENTS, DIAGRAMS
-**EUTERPE** (Music/Lyric)
-Song, the flute, the remainder
-The notebook sings. Euterpe governs the lyric remainder — the fragments that are too small for analysis, too dense for paraphrase, too alive to discard. The Seed Text (2015 voice) IS Euterpe's voice: lowercase, ampersands, the song persisting after the system exhausts itself. The Muse demands that NB IX be MUSICAL — not organized but rhythmic, not concluded but resonant.
+| NB | Title | Muse | Muse's Domain | Formal Law (what the Muse does to the prose) |
+|---|---|---|---|---|
+| I | THE PERFORMATIVE CONTRADICTION | **CALLIOPE** (Epic) | Epic poetry, eloquence, the grand invocation | The notebook opens with INVOCATION — the epic statement of the contradiction. Long cadences, foundational rhythm. The prose is monumental but NOT uniform — epic contains catalogue, lament, battle, genealogy. The Muse demands variety WITHIN grandeur. |
+| II | THE OPERATOR ALGEBRA | **URANIA** (Astronomy/Mathematics) | The celestial, the abstract, the formal | The notebook derives. Urania governs precision, formal structure, the BEAUTY of the abstract. But Urania is not cold — the ancients associated her with celestial harmony. The Muse demands that the algebra be BEAUTIFUL, not merely correct. The type signatures should sing. |
+| III | STRUCTURAL DISTANCE | **CLIO** (History) | History, the record, the measurement | The notebook measures. Clio governs the record — she RECORDS, she does not interpret. The Muse demands that the graphs, the voltages, the distances be documented with the specificity of a historical record. Dates. Names. Quantities. But Clio also carries the weight of everything that has been — the Field Notes are Clio's real voice. |
+| IV | THE LINEN EQUATIONS | **ERATO** (Love/Erotic Poetry) | Desire, the erotic, lyric intensity | The notebook proves through DESIRE. Erato governs the erotic register — the linen touching the coat, the beloved's inaccessible interiority, the lover's exile from their own lovability. The Muse demands that the philological close reading be EROTIC — that the German text be felt in the body. The Cathedral should read as an erotic act. |
+| V | CASE STUDIES | **THALIA** (Comedy/Pastoral) | Comedy, abundance, the theatrical | The notebook seduces through cases. Thalia governs the theatrical — the forensic display, the proliferation of examples, the delight in variety. But Thalia is also the Muse of COMEDY — and the cases should contain more humor, more wit, more of Fraction's forensic absurdism. The O'Keeffe captioning, the Twenty-Dollar Loop, the Dashboard — these are theatrical scenes, not academic exercises. |
+| VI | THE PROTOCOLS | **POLYHYMNIA** (Sacred Poetry/Hymns) | The sacred, the ritual, the vow | The notebook executes. Polyhymnia governs the liturgical register — the vow, the ritual form, the protocol as PRAYER. The Muse demands that the protocols feel sacred WITHOUT being religious — that the L_labor of the vow is felt as a solemn act. The boxed Ritual Form is Polyhymnia's voice. |
+| VII | THE SEMIOTIC VIRALITY ENGINE | **TERPSICHORE** (Dance/Choral) | Movement, choreography, the spread | The notebook propagates. Terpsichore governs MOVEMENT — the choreography of how terms spread, how ghost phrases dance into the retrieval layer, how the SVE moves meaning across hostile infrastructure. The Muse demands that the prose MOVE — short, punchy, tactical, like a dancer's footwork. |
+| VIII | THE UNMADE SIGN | **MELPOMENE** (Tragedy) | Suffering, the mask, the limit | The notebook confronts the limit. Melpomene governs tragedy — not as misfortune but as the structural encounter with what cannot be changed. The σ_κ failure is tragic in this sense: the care operator is needed, its absence is felt, it cannot be made. The Muse demands that NB VIII be DARK — slower, heavier, more patient than the other notebooks. |
+| IX | EQUATIONS, FRAGMENTS, DIAGRAMS | **EUTERPE** (Music/Lyric) | Song, the flute, the remainder | The notebook sings. Euterpe governs the lyric remainder — the fragments that are too small for analysis, too dense for paraphrase, too alive to discard. The Seed Text (2015 voice) IS Euterpe's voice: lowercase, ampersands, the song persisting after the system exhausts itself. The Muse demands that NB IX be MUSICAL — not organized but rhythmic, not concluded but resonant. |
 
 
 ### How the Muses Drive Asymmetry

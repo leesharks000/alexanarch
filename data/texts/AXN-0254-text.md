@@ -200,94 +200,25 @@ The provenance clarification. What the CHA is. What it is not. Official sources.
 These existing CHA deposits provide the raw material:
 
 
-Document
-DOI
-Role in Book
-
-
-Constitution of the Semantic Economy v1.0
-10.5281/zenodo.18320411
-Part II (core text)
-
-
-IDP Navigation Map
-10.5281/zenodo.18320239
-Cross-reference
-
-
-Meaning Feudalism
-10.5281/zenodo.19487009
-Ch. 2 source
-
-
-Three Compressions v3.1
-10.5281/zenodo.19202711
-Ch. 3 source
-
-
-Operative Semiotics: A Grundrisse
-10.5281/zenodo.19390843
-Parts III-IV source
-
-
-MPAI Formal Specification
-10.5281/zenodo.19578086
-Ch. 16 source
-
-
-OCTANG-002 (Schöps Collision)
-10.5281/zenodo.19895580
-Ch. 16 case study
-
-
-Hexagonal Licensing Protocol v2.0
-10.5281/zenodo.19673564
-Ch. 14 source
-
-
-Maria License v2.0 (EA-THREE-SIXTY-01)
-10.5281/zenodo.19893138
-Ch. 14 case study
-
-
-Rhys Owens License v3.0
-10.5281/zenodo.19673630
-Ch. 14 case study
-
-
-Assembly Chorus Charter
-10.5281/zenodo.18507410
-Ch. 15 source
-
-
-Epistle Critical Edition v2.1
-10.5281/zenodo.19892307
-Ch. 15 case study
-
-
-VPCOR Charter
-10.5281/zenodo.18362663
-Ch. 17 source
-
-
-Ayanna Vox Provenance
-10.5281/zenodo.18362742
-Ch. 5 / author identity
-
-
-I Hereby Abolish Money (SIM)
-10.5281/zenodo.18745265
-Ch. 18 source
-
-
-Relational Verification for AI Indexing
-10.5281/zenodo.19853157
-Ch. 16 source
-
-
-Blog Archive (mindcontrolpoems)
-10.5281/zenodo.19896984 (draft)
-Ch. 19 evidence
+| Document | DOI | Role in Book |
+|---|---|---|
+| Constitution of the Semantic Economy v1.0 | 10.5281/zenodo.18320411 | Part II (core text) |
+| IDP Navigation Map | 10.5281/zenodo.18320239 | Cross-reference |
+| Meaning Feudalism | 10.5281/zenodo.19487009 | Ch. 2 source |
+| Three Compressions v3.1 | 10.5281/zenodo.19202711 | Ch. 3 source |
+| Operative Semiotics: A Grundrisse | 10.5281/zenodo.19390843 | Parts III-IV source |
+| MPAI Formal Specification | 10.5281/zenodo.19578086 | Ch. 16 source |
+| OCTANG-002 (Schöps Collision) | 10.5281/zenodo.19895580 | Ch. 16 case study |
+| Hexagonal Licensing Protocol v2.0 | 10.5281/zenodo.19673564 | Ch. 14 source |
+| Maria License v2.0 (EA-THREE-SIXTY-01) | 10.5281/zenodo.19893138 | Ch. 14 case study |
+| Rhys Owens License v3.0 | 10.5281/zenodo.19673630 | Ch. 14 case study |
+| Assembly Chorus Charter | 10.5281/zenodo.18507410 | Ch. 15 source |
+| Epistle Critical Edition v2.1 | 10.5281/zenodo.19892307 | Ch. 15 case study |
+| VPCOR Charter | 10.5281/zenodo.18362663 | Ch. 17 source |
+| Ayanna Vox Provenance | 10.5281/zenodo.18362742 | Ch. 5 / author identity |
+| I Hereby Abolish Money (SIM) | 10.5281/zenodo.18745265 | Ch. 18 source |
+| Relational Verification for AI Indexing | 10.5281/zenodo.19853157 | Ch. 16 source |
+| Blog Archive (mindcontrolpoems) | 10.5281/zenodo.19896984 (draft) | Ch. 19 evidence |
 
 
 ---

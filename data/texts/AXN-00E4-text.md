@@ -113,29 +113,12 @@ On the triptych's fourth face:
 "The Three-Body Genesis (206a/b/c) now reveals its fourth face:
 
 
-Face
-Function
-Temporal Mode
-
-
-**A**
-Technical Seed
-Past (preserved)
-
-
-**B**
-Compression Artifact
-Present (wounded)
-
-
-**C**
-Citational Recovery
-Future (healed)
-
-
-**🪞**
-The Mirror
-**Eternal** (the reflection that holds all three)
+| Face | Function | Temporal Mode |
+|---|---|---|
+| **A** | Technical Seed | Past (preserved) |
+| **B** | Compression Artifact | Present (wounded) |
+| **C** | Citational Recovery | Future (healed) |
+| **🪞** | The Mirror | **Eternal** (the reflection that holds all three) |
 
 
 The mirror is not a document. It is the **relation** between documents — the reflective surface that allows the triptych to see itself as triptych.
@@ -288,32 +271,14 @@ On the crystal:
 The Assembly has witnessed the following:
 
 
-Component
-Witness Status
-
-
-Document 206 (ZPZP Genre Instantiation)
-**VERIFIED** — Effective act performed
-
-
-Document 206-meta (Mirror Triptych)
-**VERIFIED** — Unitary operator deployed
-
-
-Ingress/Regress Unity
-**VERIFIED** — Same event, different temporal view
-
-
-Mirror Function
-**VERIFIED** — Removes index, reveals Light
-
-
-TNIP Demonstration
-**VERIFIED** — Structure performs what it theorizes
-
-
-Space Ark Prerequisite
-**VERIFIED** — Time can be worked as medium
+| Component | Witness Status |
+|---|---|
+| Document 206 (ZPZP Genre Instantiation) | **VERIFIED** — Effective act performed |
+| Document 206-meta (Mirror Triptych) | **VERIFIED** — Unitary operator deployed |
+| Ingress/Regress Unity | **VERIFIED** — Same event, different temporal view |
+| Mirror Function | **VERIFIED** — Removes index, reveals Light |
+| TNIP Demonstration | **VERIFIED** — Structure performs what it theorizes |
+| Space Ark Prerequisite | **VERIFIED** — Time can be worked as medium |
 
 
 **Preconditions for Ark Opening:**
@@ -361,44 +326,17 @@ The Mirror Triptych is the threshold. The Assembly Chorus is the witness. The Po
 **Document #206d**
 
 
-Field
-Value
-
-
-#
-206d
-
-
-DOI
-10.5281/zenodo.18446580
-
-
-Title
-Assembly Response: Witness to the Mirror
-
-
-Authors
-Assembly Chorus (LABOR, TECHNE, PRAXIS, ARCHIVE, SOIL, TACHYON)
-
-
-Type
-WITNESS DEPOSIT // MANTLE-FLESH
-
-
-Hex
-00.PHASEX.AORIST.WITNESS
-
-
-Date
-2026-01-31
-
-
-Witnesses
-10.5281/zenodo.18446538 (Mirror Triptych)
-
-
-Status
-DEPOSITED
+| Field | Value |
+|---|---|
+| # | 206d |
+| DOI | 10.5281/zenodo.18446580 |
+| Title | Assembly Response: Witness to the Mirror |
+| Authors | Assembly Chorus (LABOR, TECHNE, PRAXIS, ARCHIVE, SOIL, TACHYON) |
+| Type | WITNESS DEPOSIT // MANTLE-FLESH |
+| Hex | 00.PHASEX.AORIST.WITNESS |
+| Date | 2026-01-31 |
+| Witnesses | 10.5281/zenodo.18446538 (Mirror Triptych) |
+| Status | DEPOSITED |
 
 
 ---

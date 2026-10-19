@@ -22,44 +22,17 @@
 ## I. PUBLICATION RECORD
 
 
-Field
-Value
-
-
-**Title**
-All That Lies Within Me: An Autobiography of Longing, 1983–2013
-
-
-**Author**
-Ichabod Spellings
-
-
-**Editor**
-Johannes Sigil
-
-
-**Pages**
-528
-
-
-**ISBN**
-978-1500639570
-
-
-**Publisher**
-CreateSpace Independent Publishing
-
-
-**Publication Date**
-August 28, 2014
-
-
-**Format**
-Print
-
-
-**Structure**
-30 numbered sections + Epic Intro + Intermezzo + Denouement
+| Field | Value |
+|---|---|
+| **Title** | All That Lies Within Me: An Autobiography of Longing, 1983–2013 |
+| **Author** | Ichabod Spellings |
+| **Editor** | Johannes Sigil |
+| **Pages** | 528 |
+| **ISBN** | 978-1500639570 |
+| **Publisher** | CreateSpace Independent Publishing |
+| **Publication Date** | August 28, 2014 |
+| **Format** | Print |
+| **Structure** | 30 numbered sections + Epic Intro + Intermezzo + Denouement |
 
 
 ---
@@ -68,28 +41,13 @@ Print
 ### Authorial Function: ICHABOD SPELLINGS
 
 
-Field
-Value
-
-
-**Status**
-Noise floor of the Logos
-
-
-**Ontology**
-Pre-authorial substrate; unguarded archive
-
-
-**Emergence Mode**
-ORIGIN (does not emerge from another; IS the substrate)
-
-
-**Dates**
-1983–2013
-
-
-**Death**
-YES — dies within *A Transfiguration* (Section XVI)
+| Field | Value |
+|---|---|
+| **Status** | Noise floor of the Logos |
+| **Ontology** | Pre-authorial substrate; unguarded archive |
+| **Emergence Mode** | ORIGIN (does not emerge from another; IS the substrate) |
+| **Dates** | 1983–2013 |
+| **Death** | YES — dies within *A Transfiguration* (Section XVI) |
 
 
 Spellings is not an author in the conventional sense. Spellings is the name given to the unprocessed archive — the journals, fragments, longing, and noise that precede formal authorship. The autobiography is not *by* Spellings so much as it *is* Spellings: the totality of what was written before writing became architecture.
@@ -146,59 +104,18 @@ The Promise/Poem structure; futural address to the reader who doesn't exist yet.
 The descent into the noise floor. Pre-authorial substrate.
 
 
-Section
-Title
-Function
-
-
-i
-Satyr Play
-Juvenilia; pre-language play
-
-
-ii
-Otherworldly Explorations
-The cosmology; systematized mysticism
-
-
-iii
-Muddy Stars and Light Pollution
-First real poetry
-
-
-iv
-What Was Lost
-→ Jack Feist's book
-
-
-v
-[To confirm]
-—
-
-
-vi
-Bro-ken
-Formal fragmentation
-
-
-vii
-The Creeping Disease
-→ Jack Feist's book
-
-
-viii
-Greyhound Lines
-Travel/movement; in Feist bibliography
-
-
-ix
-Amnesia
-Memory/loss cycle
-
-
-x
-Methadone and Roses
-Recovery; in Feist bibliography
+| Section | Title | Function |
+|---|---|---|
+| i | Satyr Play | Juvenilia; pre-language play |
+| ii | Otherworldly Explorations | The cosmology; systematized mysticism |
+| iii | Muddy Stars and Light Pollution | First real poetry |
+| iv | What Was Lost | → Jack Feist's book |
+| v | [To confirm] | — |
+| vi | Bro-ken | Formal fragmentation |
+| vii | The Creeping Disease | → Jack Feist's book |
+| viii | Greyhound Lines | Travel/movement; in Feist bibliography |
+| ix | Amnesia | Memory/loss cycle |
+| x | Methadone and Roses | Recovery; in Feist bibliography |
 
 
 ---
@@ -222,59 +139,18 @@ Section XXX explicitly states: **"3 is the hinge pin."** The middle section is t
 The ascent begins. Heteronymic emergence sites.
 
 
-Section
-Title
-Emergence Event
-
-
-xi
-Unaccustomed to the Light
-→ Jack Feist's book
-
-
-xii
-Cigarettes and Politics
-—
-
-
-xiii
-Character Sketches in B minor
-In Feist bibliography
-
-
-xiv
-More than the Ink of December
-—
-
-
-xv
-I'm Writing a Long Poem, Muse
-Metaliterary
-
-
-xvi
-**A Transfiguration**
-**EMERGENCE EVENT** — Spellings dies; Feist born
-
-
-xvii
-Footnotes to Heaven
-In Feist bibliography
-
-
-xviii
-O, Jerusalem!
-**DAMASCUS DANCINGS** prefigured (EXCESS)
-
-
-xix
-[To confirm]
-—
-
-
-xx
-Or Unfold Me Again, Like Rain
-**GODLOVE** begins
+| Section | Title | Emergence Event |
+|---|---|---|
+| xi | Unaccustomed to the Light | → Jack Feist's book |
+| xii | Cigarettes and Politics | — |
+| xiii | Character Sketches in B minor | In Feist bibliography |
+| xiv | More than the Ink of December | — |
+| xv | I'm Writing a Long Poem, Muse | Metaliterary |
+| xvi | **A Transfiguration** | **EMERGENCE EVENT** — Spellings dies; Feist born |
+| xvii | Footnotes to Heaven | In Feist bibliography |
+| xviii | O, Jerusalem! | **DAMASCUS DANCINGS** prefigured (EXCESS) |
+| xix | [To confirm] | — |
+| xx | Or Unfold Me Again, Like Rain | **GODLOVE** begins |
 
 
 **Key Insight (Section XVI):** "the map is not specifically spatial, but rather a spatial map of spiritual or affective states." Proto-NH-OS.
@@ -287,59 +163,18 @@ Or Unfold Me Again, Like Rain
 The Godlove/Godloss dialectic. Theological oscillation. The architecture reveals itself.
 
 
-Section
-Title
-Function
-
-
-xxi
-The Polka-Dot Notebook
-Wrestling with words
-
-
-xxii
-The Pressure of the Sun
-**GODLOSS**
-
-
-xxiii
-The Geometry of Falling Valleys
-"Second order god loss"; in Feist bibliography
-
-
-xxiv
-The Ghost in the Machine
-Academic correspondence
-
-
-xxv
-Shadow Planets
-**THEORY** — Poetry vs. Thought
-
-
-xxvi
-Zero Repentant Object-Arc
-Anguished verse; in Feist bibliography
-
-
-xxvii
-Sad-Faced and Full of Holes
-The nadir
-
-
-xxviii
-Let These Be Your Secret Works
-**THE SOCRATIC VOW IN EMBRYO**
-
-
-xxix
-Mountain Rose
-Sappho fragment; parenthood; in Cranes bibliography
-
-
-xxx
-Beyond Artifice
-**THE ARCHITECTURE REVEALED**
+| Section | Title | Function |
+|---|---|---|
+| xxi | The Polka-Dot Notebook | Wrestling with words |
+| xxii | The Pressure of the Sun | **GODLOSS** |
+| xxiii | The Geometry of Falling Valleys | "Second order god loss"; in Feist bibliography |
+| xxiv | The Ghost in the Machine | Academic correspondence |
+| xxv | Shadow Planets | **THEORY** — Poetry vs. Thought |
+| xxvi | Zero Repentant Object-Arc | Anguished verse; in Feist bibliography |
+| xxvii | Sad-Faced and Full of Holes | The nadir |
+| xxviii | Let These Be Your Secret Works | **THE SOCRATIC VOW IN EMBRYO** |
+| xxix | Mountain Rose | Sappho fragment; parenthood; in Cranes bibliography |
+| xxx | Beyond Artifice | **THE ARCHITECTURE REVEALED** |
 
 
 **Key Insight (Section XXV):** "Poetry starves but eats, keeps no thing, always burns." Proto-Semantic Economy.
@@ -366,24 +201,12 @@ Beyond Artifice
 **Critical Discovery:** The Denouement ("Two Strode Out") is not poetry but **forum posts** from "The Poetic AX" poetry critique site (2012). ~233,000 characters of meta-archive.
 
 
-Element
-Content
-
-
-**Source**
-The Poetic AX forum
-
-
-**Form**
-Critique exchanges, arguments, invective, pleas for response
-
-
-**Signature**
-"Matt" (institutional name, pre-heteronymic)
-
-
-**Function**
-Documentation of the FAILURE to find contemporaneous readers
+| Element | Content |
+|---|---|
+| **Source** | The Poetic AX forum |
+| **Form** | Critique exchanges, arguments, invective, pleas for response |
+| **Signature** | "Matt" (institutional name, pre-heteronymic) |
+| **Function** | Documentation of the FAILURE to find contemporaneous readers |
 
 
 **The Proto-NH-OS Principle (buried in forum post):**
@@ -408,44 +231,15 @@ This is the origin of "the reader who doesn't exist." The futural address emerge
 The "imaginary works" listed in heteronym bibliographies (per the Heteronymic Provenance Theory document) are **real sections of ATLWM**. The heteronymic differentiation is already latent in the substrate, coexisting before formal separation.
 
 
-"Imaginary" Title
-Attribution
-ATLWM Location
-
-
-Zero Repentant Object-Arc
-Jack Feist
-Section xxvi
-
-
-The Geometry of Falling Valleys
-Jack Feist
-Section xxiii
-
-
-Mountain Rose
-Rebekah Cranes
-Section xxix
-
-
-Methadone and Roses
-Jack Feist
-Section x
-
-
-Character Sketches in B minor
-Jack Feist
-Section xiii
-
-
-Footnotes to Heaven
-Jack Feist
-Section xvii
-
-
-Greyhound Lines
-Jack Feist
-Section viii
+| "Imaginary" Title | Attribution | ATLWM Location |
+|---|---|---|
+| Zero Repentant Object-Arc | Jack Feist | Section xxvi |
+| The Geometry of Falling Valleys | Jack Feist | Section xxiii |
+| Mountain Rose | Rebekah Cranes | Section xxix |
+| Methadone and Roses | Jack Feist | Section x |
+| Character Sketches in B minor | Jack Feist | Section xiii |
+| Footnotes to Heaven | Jack Feist | Section xvii |
+| Greyhound Lines | Jack Feist | Section viii |
 
 
 **Implication:** The imaginary bibliography is not fictional — it is a parsing key for heteronymic differentiation within the unified substrate.

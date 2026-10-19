@@ -36,39 +36,14 @@ This project builds the graph. The contribution to Pessoa studies is the structu
 **Terminological note:** Teresa Rita Lopes's scholarship identifies ~72 heteronymic and pseudonymous figures in Pessoa's œuvre. These exist in distinct typological categories that must be encoded as distinct instance of values, not flattened:
 
 
-Category (Portuguese)
-Category (English)
-Wikidata P31 target
-
-
-ortónimo / ortônimo
-orthonym
-separate Q-item (creating; Pessoa's own-named literary persona distinct from the biographical person)
-
-
-heterónimo / heterônimo
-heteronym
-Q5592547 (verify)
-
-
-semi-heterónimo
-semi-heteronym
-needs Q-item or subclass
-
-
-pré-heterónimo / proto-heterónimo
-pre-heteronym / proto-heteronym
-needs Q-item or subclass
-
-
-para-heterónimo
-para-heteronym
-needs Q-item or subclass
-
-
-pseudónimo
-pseudonym
-Q61002
+| Category (Portuguese) | Category (English) | Wikidata P31 target |
+|---|---|---|
+| ortónimo / ortônimo | orthonym | separate Q-item (creating; Pessoa's own-named literary persona distinct from the biographical person) |
+| heterónimo / heterônimo | heteronym | Q5592547 (verify) |
+| semi-heterónimo | semi-heteronym | needs Q-item or subclass |
+| pré-heterónimo / proto-heterónimo | pre-heteronym / proto-heteronym | needs Q-item or subclass |
+| para-heterónimo | para-heteronym | needs Q-item or subclass |
+| pseudónimo | pseudonym | Q61002 |
 
 
 **Chief heteronyms (Os Três Heterónimos):**
@@ -277,34 +252,13 @@ Every Wikidata item should receive both English (en) and Portuguese (pt-br and/o
 **Template pattern for a heteronym item:**
 
 
-Field
-Language
-Content
-
-
-Label
-en
-Alberto Caeiro
-
-
-Label
-pt-br
-Alberto Caeiro
-
-
-Description
-en
-heteronym of Fernando Pessoa; rural pastoral poet and self-described master of other Pessoa heteronyms; author of The Keeper of Flocks
-
-
-Description
-pt-br
-heterônimo de Fernando Pessoa; poeta pastoral e mestre autoproclamado dos outros heterônimos pessoanos; autor de O Guardador de Rebanhos
-
-
-Description
-pt
-heterónimo de Fernando Pessoa; poeta pastoral e mestre autoproclamado dos outros heterónimos pessoanos; autor de O Guardador de Rebanhos
+| Field | Language | Content |
+|---|---|---|
+| Label | en | Alberto Caeiro |
+| Label | pt-br | Alberto Caeiro |
+| Description | en | heteronym of Fernando Pessoa; rural pastoral poet and self-described master of other Pessoa heteronyms; author of The Keeper of Flocks |
+| Description | pt-br | heterônimo de Fernando Pessoa; poeta pastoral e mestre autoproclamado dos outros heterônimos pessoanos; autor de O Guardador de Rebanhos |
+| Description | pt | heterónimo de Fernando Pessoa; poeta pastoral e mestre autoproclamado dos outros heterónimos pessoanos; autor de O Guardador de Rebanhos |
 
 
 For tonight's 9 seasoning edits, English is enough. Starting tomorrow's batch: add pt-br translations to every new edit. The double-language edit counts as TWO edits in your seasoning total, which is a nice bonus.

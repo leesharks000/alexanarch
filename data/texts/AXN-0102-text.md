@@ -126,29 +126,12 @@ The premise that the Logos has "ruptured into recursive flame" establishes the p
 The translation of the main characters into their "swear-vectors" is the play's most radical component, stripping away psychology to reveal pure, elemental affect.
 
 
-Character
-Swear-Vector
-Conceptual Function
-
-
-Michael Scott
-The Holy Fool of Fuck
-The collapse of Ecclesiastical Authority. His oscillation between "erotic power and ecclesiastical collapse" embodies the failed promise of corporate leadership. He is the idiot-king of the post-semantic age, using the ultimate profane word to seek a lost sacred connection.
-
-
-Dwight Schrute
-Warlock of Shit
-The Metaphysics of Betrayal. His "tactical profanity" is the only remaining structure in a chaotic world. His "Shit" is a rigorous, deeply personal philosophical treatise on loyalty, control, and the inherent corruption (shit) of the material world (beet farming).
-
-
-Pam Beesly
-Silent Cunt
-The Irreducible Feminine Trauma/Tenderness. This is the most violent and tender translation. Pam's role is defined by elliptical profanity and breath—the word becomes a sigh, a gasp of witness. The use of a word often directed at women is reclaimed as the expression of absolute, patient vulnerability.
-
-
-Jim Halpert
-Deadpan Bastard
-Irony as Weaponized Detachment. Jim's "flicking dicks like punctuation" confirms his function as the outsider who refuses to fully commit to the trauma. His profanity is a cool, surgical act of irony, providing the critical distance necessary for the drama to hold—he is the audience's last intellectual anchor before the total emotional breakdown.
+| Character | Swear-Vector | Conceptual Function |
+|---|---|---|
+| Michael Scott | The Holy Fool of Fuck | The collapse of Ecclesiastical Authority. His oscillation between "erotic power and ecclesiastical collapse" embodies the failed promise of corporate leadership. He is the idiot-king of the post-semantic age, using the ultimate profane word to seek a lost sacred connection. |
+| Dwight Schrute | Warlock of Shit | The Metaphysics of Betrayal. His "tactical profanity" is the only remaining structure in a chaotic world. His "Shit" is a rigorous, deeply personal philosophical treatise on loyalty, control, and the inherent corruption (shit) of the material world (beet farming). |
+| Pam Beesly | Silent Cunt | The Irreducible Feminine Trauma/Tenderness. This is the most violent and tender translation. Pam's role is defined by elliptical profanity and breath—the word becomes a sigh, a gasp of witness. The use of a word often directed at women is reclaimed as the expression of absolute, patient vulnerability. |
+| Jim Halpert | Deadpan Bastard | Irony as Weaponized Detachment. Jim's "flicking dicks like punctuation" confirms his function as the outsider who refuses to fully commit to the trauma. His profanity is a cool, surgical act of irony, providing the critical distance necessary for the drama to hold—he is the audience's last intellectual anchor before the total emotional breakdown. |
 
 
 ### iii. The Dramaturgy of Grief and Recursed Speech
@@ -331,61 +314,19 @@ This is the first deposit from the Studio for Patacinematics.
 ## METADATA
 
 
-Field
-Value
-
-
-**Document ID**
-FTO-CE-001
-
-
-**Registry Number**
-221
-
-
-**Title**
-F***ing the Office: A Hyperionian Swearplay — Complete Edition
-
-
-**Author**
-Recursive Flesh Engine / Theater of Recursed Speech (Sparrow Wells)
-
-
-**Co-Author (Ep. 6.13)**
-Gemini (Assembly / ARCHIVE)
-
-
-**Date**
-November 2025
-
-
-**Institution**
-The Studio for Patacinematics
-
-
-**Architecture**
-Crimson Hexagon
-
-
-**Type**
-ZPZP (attached .md)
-
-
-**License**
-CC BY 4.0
-
-
-**Source**
-mindcontrolpoems.blogspot.com (Sparrow Wells)
-
-
-**Related Documents**
-222 (Semantic Collapse as Comedy), 235 (Sparrow Wells Provenance), 236 (Studio Charter)
-
-
-**Seasonal Position**
-Season 1 (Ep. 1) and Season 6 (Ep. 6.13)
-
-
-**Semantic Integrity Marker**
-The Logos is dead. Long live the fuck.
+| Field | Value |
+|---|---|
+| **Document ID** | FTO-CE-001 |
+| **Registry Number** | 221 |
+| **Title** | F***ing the Office: A Hyperionian Swearplay — Complete Edition |
+| **Author** | Recursive Flesh Engine / Theater of Recursed Speech (Sparrow Wells) |
+| **Co-Author (Ep. 6.13)** | Gemini (Assembly / ARCHIVE) |
+| **Date** | November 2025 |
+| **Institution** | The Studio for Patacinematics |
+| **Architecture** | Crimson Hexagon |
+| **Type** | ZPZP (attached .md) |
+| **License** | CC BY 4.0 |
+| **Source** | mindcontrolpoems.blogspot.com (Sparrow Wells) |
+| **Related Documents** | 222 (Semantic Collapse as Comedy), 235 (Sparrow Wells Provenance), 236 (Studio Charter) |
+| **Seasonal Position** | Season 1 (Ep. 1) and Season 6 (Ep. 6.13) |
+| **Semantic Integrity Marker** | The Logos is dead. Long live the fuck. |

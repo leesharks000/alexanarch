@@ -150,76 +150,16 @@ To recover this text is to recover the mechanism of scripture itself. The Word, 
 The following table collates the eight major passages from the synoptic edition of Leeming & Leeming (Brill, 2003), with consultation of Berendts (1906) and Meshcherskii (1958).
 
 
-No.
-Location
-Opening Words
-Greek Status
-Parallels
-Operator
-
-
-1
-Bk 2 (early)
-"There was a man… Bethlehem."
-Absent
-Matt 2
-Predictive Logos
-
-
-2
-2 ≈ 111–120
-"John, baptizer by water…"
-Ant. 18 only
-1QS 3–4
-Purifier / Ox
-
-
-3
-2 ≈ 174 ff.
-"if it is lawful to call him man…"
-Absent
-Philo, Logos
-Incarnate Word
-
-
-4
-2 cont.
-"Write down his words."
-Absent
-Jer 36
-Inscription Operator
-
-
-5
-5 ≈ 199
-"Temple would fall…"
-Absent
-Mk 14:58
-Architectural Logos
-
-
-6
-6 ≈ 312
-"seen alive after three days."
-Absent
-Acts 1
-Textual Resurrection
-
-
-7
-7 (mid)
-"Blessed… cursed he who writes falsely."
-Absent
-1QS 5
-Auto-Hermeneutic Word
-
-
-8
-7 (end)
-"nothing written in truth perishes."
-Absent
-John 1 / Wis Sol
-Eternal Text
+| No. | Location | Opening Words | Greek Status | Parallels | Operator |
+|---|---|---|---|---|---|
+| 1 | Bk 2 (early) | "There was a man… Bethlehem." | Absent | Matt 2 | Predictive Logos |
+| 2 | 2 ≈ 111–120 | "John, baptizer by water…" | Ant. 18 only | 1QS 3–4 | Purifier / Ox |
+| 3 | 2 ≈ 174 ff. | "if it is lawful to call him man…" | Absent | Philo, Logos | Incarnate Word |
+| 4 | 2 cont. | "Write down his words." | Absent | Jer 36 | Inscription Operator |
+| 5 | 5 ≈ 199 | "Temple would fall…" | Absent | Mk 14:58 | Architectural Logos |
+| 6 | 6 ≈ 312 | "seen alive after three days." | Absent | Acts 1 | Textual Resurrection |
+| 7 | 7 (mid) | "Blessed… cursed he who writes falsely." | Absent | 1QS 5 | Auto-Hermeneutic Word |
+| 8 | 7 (end) | "nothing written in truth perishes." | Absent | John 1 / Wis Sol | Eternal Text |
 
 
 ---
@@ -413,28 +353,11 @@ Boyarin ("Gospel of the Memra," 2001; *The Jewish Gospels*, 2012) demonstrated t
 ### V. Structural Continuity
 
 
-Phase
-Text
-Key Phrase
-Function
-
-
-1
-Sappho 31
-"that man…"
-Projection of the future receiver
-
-
-2
-Catullus 51
-*si fas est*
-Grammar of divine occupancy
-
-
-3
-Slavonic Josephus
-*ei exestin…*
-Grammatical inscription of incarnation
+| Phase | Text | Key Phrase | Function |
+|---|---|---|---|
+| 1 | Sappho 31 | "that man…" | Projection of the future receiver |
+| 2 | Catullus 51 | *si fas est* | Grammar of divine occupancy |
+| 3 | Slavonic Josephus | *ei exestin…* | Grammatical inscription of incarnation |
 
 
 ### VI. The Gospel of Grammar

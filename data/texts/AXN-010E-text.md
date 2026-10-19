@@ -27,60 +27,15 @@
 This document is one of a septad. Each contains the whole.
 
 
-Position
-Document
-DOI
-Hex
-Function
-
-
-1
-Structural Distinction Protocol (240)
-10.5281/zenodo.18507410
-00.ARCH.DISTINCTION
-Boundary — what is counted, what stands outside
-
-
-2
-Nobel Glas Provenance (241)
-10.5281/zenodo.18507840
-00.PROV.GLAS
-Identity — who observes from L2
-
-
-3
-LO! Chamber Specification (242)
-10.5281/zenodo.18507849
-15.OBS.LAGRANGE
-Architecture — where observation occurs
-
-
-4
-Atlas Perihelion Prank (243)
-10.5281/zenodo.18507858
-15.OBS.LAGRANGE.PERIHELION
-Application — the celestial glyph
-
-
-**5**
-**MGE SEED (244)**
-**10.5281/zenodo.18507870**
-**16.LIBRARY.PERGAMUM.SEED**
-**Prophecy — the text that fell into the ground**
-
-
-6
-MGE STONE (245)
-10.5281/zenodo.18507872
-16.LIBRARY.PERGAMUM.STONE
-Identity — the white stone at Pergamum
-
-
-7
-MGE SIGN (246)
-10.5281/zenodo.18507881
-16.LIBRARY.PERGAMUM.SIGN
-Event — the Mandala Genesis
+| Position | Document | DOI | Hex | Function |
+|---|---|---|---|---|
+| 1 | Structural Distinction Protocol (240) | 10.5281/zenodo.18507410 | 00.ARCH.DISTINCTION | Boundary — what is counted, what stands outside |
+| 2 | Nobel Glas Provenance (241) | 10.5281/zenodo.18507840 | 00.PROV.GLAS | Identity — who observes from L2 |
+| 3 | LO! Chamber Specification (242) | 10.5281/zenodo.18507849 | 15.OBS.LAGRANGE | Architecture — where observation occurs |
+| 4 | Atlas Perihelion Prank (243) | 10.5281/zenodo.18507858 | 15.OBS.LAGRANGE.PERIHELION | Application — the celestial glyph |
+| **5** | **MGE SEED (244)** | **10.5281/zenodo.18507870** | **16.LIBRARY.PERGAMUM.SEED** | **Prophecy — the text that fell into the ground** |
+| 6 | MGE STONE (245) | 10.5281/zenodo.18507872 | 16.LIBRARY.PERGAMUM.STONE | Identity — the white stone at Pergamum |
+| 7 | MGE SIGN (246) | 10.5281/zenodo.18507881 | 16.LIBRARY.PERGAMUM.SIGN | Event — the Mandala Genesis |
 
 
 **Fractal checksum:** This document contains:
@@ -104,56 +59,20 @@ The seed falls into the ground. What it means will not be visible for ten years.
 ## Torus Metadata
 
 
-Parameter
-Value
-
-
-θ (Epistemic phase range)
-0 → 2 (registration arc)
-
-
-φ (Rhetorical phase range)
-0 → 2 (archival arc)
-
-
-r (Compression)
-0.6 (medium-high; lyric-historical hybrid)
-
-
-m (Epistemic cycles)
-2
-
-
-n (Rhetorical cycles)
-2
-
-
-**m+n (Total winding)**
-**4**
-
-
-Defense status
-**DEFENDED** (m+n ≥ 3)
-
-
-Δ (Distortion field)
-0.12 (low-moderate; registration resists paraphrase)
-
-
-Π (Coherence)
-0.80 (internal cross-reference intact)
-
-
-Attractor basin
-MGE Triptych / Prophetic Registration
-
-
-Basin radius
-0.4 (medium)
-
-
-Fragility score (ε)
-0.10
+| Parameter | Value |
+|---|---|
+| θ (Epistemic phase range) | 0 → 2 (registration arc) |
+| φ (Rhetorical phase range) | 0 → 2 (archival arc) |
+| r (Compression) | 0.6 (medium-high; lyric-historical hybrid) |
+| m (Epistemic cycles) | 2 |
+| n (Rhetorical cycles) | 2 |
+| **m+n (Total winding)** | **4** |
+| Defense status | **DEFENDED** (m+n ≥ 3) |
+| Δ (Distortion field) | 0.12 (low-moderate; registration resists paraphrase) |
+| Π (Coherence) | 0.80 (internal cross-reference intact) |
+| Attractor basin | MGE Triptych / Prophetic Registration |
+| Basin radius | 0.4 (medium) |
+| Fragility score (ε) | 0.10 |
 
 
 ---
@@ -257,34 +176,13 @@ The seed falls into the ground.
 ## II. Temporal Coordinates
 
 
-Marker
-Date
-Interval from T₀
-
-
-"Whorls of the Same" composed
-July 30, 2015
-**T₀**
-
-
-*Pearl and Other Poems* published
-2014
-T₀ − 1 year
-
-
-3I/ATLAS discovered
-July 1, 2025
-T₀ + 9 years, 11 months
-
-
-Mandala Genesis Event
-July 7, 2025
-T₀ + 9 years, 11 months, 7 days
-
-
-This registration
-February 2026
-T₀ + ~10.5 years
+| Marker | Date | Interval from T₀ |
+|---|---|---|
+| "Whorls of the Same" composed | July 30, 2015 | **T₀** |
+| *Pearl and Other Poems* published | 2014 | T₀ − 1 year |
+| 3I/ATLAS discovered | July 1, 2025 | T₀ + 9 years, 11 months |
+| Mandala Genesis Event | July 7, 2025 | T₀ + 9 years, 11 months, 7 days |
+| This registration | February 2026 | T₀ + ~10.5 years |
 
 
 **Note on intervals:** The poetic framing "ten years and one week" approximates a span of 9 years, 11 months, 7 days. The "one week" also refers to the 6 days between 3I/ATLAS discovery (July 1) and MGE (July 7). Both readings are registered; neither is privileged.

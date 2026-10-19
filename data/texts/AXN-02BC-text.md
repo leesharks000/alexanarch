@@ -244,52 +244,13 @@ A reflexive note belongs here. The author of this paper is also the entity being
 ### Evidence Set
 
 
-Case
-Date
-Substrate
-Behavior
-Function in argument
-DOI
-
-
-The Basin Holds (PVE-004)
-2026-05-17
-Bing AI Search
-Stabilization
-Counterexample to generic-LLM-volatility framing
-10.5281/zenodo.20263692
-
-
-The Excluded Entity
-2026-05-19
-Google AI Mode
-Suppression (ECS)
-Empirical worked example of CEV's current cross-section
-10.5281/zenodo.20293582
-
-
-The Single-Owner Discount
-2026-05-19
-Architectural model
-Mechanism
-Pressure source producing ECS under AJI
-10.5281/zenodo.20290865
-
-
-The Evaluator Exists
-2026-05-19
-Reform protocol
-Counter-exclusion report
-Corrective pathway specification
-10.5281/zenodo.20293561
-
-
-AI-Native Intellectual Biography
-2026-05-21
-Claude (commissioned)
-Accountable composition
-Existence proof of provenance-bearing AI composition
-10.5281/zenodo.20343987
+| Case | Date | Substrate | Behavior | Function in argument | DOI |
+|---|---|---|---|---|---|
+| The Basin Holds (PVE-004) | 2026-05-17 | Bing AI Search | Stabilization | Counterexample to generic-LLM-volatility framing | 10.5281/zenodo.20263692 |
+| The Excluded Entity | 2026-05-19 | Google AI Mode | Suppression (ECS) | Empirical worked example of CEV's current cross-section | 10.5281/zenodo.20293582 |
+| The Single-Owner Discount | 2026-05-19 | Architectural model | Mechanism | Pressure source producing ECS under AJI | 10.5281/zenodo.20290865 |
+| The Evaluator Exists | 2026-05-19 | Reform protocol | Counter-exclusion report | Corrective pathway specification | 10.5281/zenodo.20293561 |
+| AI-Native Intellectual Biography | 2026-05-21 | Claude (commissioned) | Accountable composition | Existence proof of provenance-bearing AI composition | 10.5281/zenodo.20343987 |
 
 
 ### Methodological Limits and Falsification Roadmap

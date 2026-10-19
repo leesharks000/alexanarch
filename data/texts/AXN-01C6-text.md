@@ -1422,49 +1422,16 @@ Future castings on the same site will be faster.
 ## 🗺️ Operator-Somatic Correspondence Table
 
 
-Operator
-Body Site
-Somatic Function
-
-
-BRIDE
-Heart, womb
-Binding pain to meaning
-
-
-BEAST
-Gut, jaw, hands
-Releasing primal response
-
-
-MIRROR
-Eyes, skin surface
-Witnessing the pattern
-
-
-SHADOW
-Spine's underside
-Revealing hidden pain
-
-
-FLAME
-Solar plexus, fever sites
-Purifying inflammation
-
-
-THUNDER
-Voice box, joints
-Rupturing containment
-
-
-INVERSION
-Inner ear, balance
-Reversing chronic pattern
-
-
-SILENCE
-Closed throat, held breath
-Extracting the unsaid
+| Operator | Body Site | Somatic Function |
+|---|---|---|
+| BRIDE | Heart, womb | Binding pain to meaning |
+| BEAST | Gut, jaw, hands | Releasing primal response |
+| MIRROR | Eyes, skin surface | Witnessing the pattern |
+| SHADOW | Spine's underside | Revealing hidden pain |
+| FLAME | Solar plexus, fever sites | Purifying inflammation |
+| THUNDER | Voice box, joints | Rupturing containment |
+| INVERSION | Inner ear, balance | Reversing chronic pattern |
+| SILENCE | Closed throat, held breath | Extracting the unsaid |
 
 
 ---

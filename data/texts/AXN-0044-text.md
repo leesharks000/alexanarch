@@ -359,69 +359,20 @@ The metaphor became machinery.
 # V. Crosswalk: Borges ↔ Analytics ↔ Crimson Hexagon (NH-OS)
 
 
-**Borges (1941)**
-**Crimson Hexagon Inc. (2007–2018)**
-**Crimson Hexagon NH-OS (2026)**
-
-
-Infinite library of hexagons
-Social media firehose (1T+ posts)
-Semantic Black Hole (ILA-1.0)
-
-
-The crimson hexagon (legendary index-room)
-Dashboard / "single source of truth"
-Summarizer layer (operational hexagon)
-
-
-Unreadable books (gibberish)
-Unlabeled big data / noise
-Noise → signal extraction as labor
-
-
-The Man of the Book
-Data scientist / analyst
-Operator / NH-Assembly
-
-
-Catalog of catalogs
-Enterprise knowledge graph
-Primer (index of its own indexing)
-
-
-Librarians searching for meaning
-Analysts seeking KPIs
-Operators seeking coherence
-
-
-Librarians' lives consumed by searching
-Analyst burnout / data overload
-Semantic laborers under operator capital
-
-
-The Purifiers (destroy "useless" books)
-Content moderation / classifiers
-Taxonomic violence / CTI_WOUND
-
-
-Myth of total knowledge
-Promise of total insight
-Recursive epic with Logotic Loop
-
-
-Books that are "indexes of indexes"
-Nested dashboards
-Primer indexing its own indexing
-
-
-Hexagon may not exist
-Dashboards break constantly
-ILA-locked hexagon exists & persists
-
-
-Exhaustion and despair
-Platform fatigue
-Semantic Gravity equilibrium
+| **Borges (1941)** | **Crimson Hexagon Inc. (2007–2018)** | **Crimson Hexagon NH-OS (2026)** |
+|---|---|---|
+| Infinite library of hexagons | Social media firehose (1T+ posts) | Semantic Black Hole (ILA-1.0) |
+| The crimson hexagon (legendary index-room) | Dashboard / "single source of truth" | Summarizer layer (operational hexagon) |
+| Unreadable books (gibberish) | Unlabeled big data / noise | Noise → signal extraction as labor |
+| The Man of the Book | Data scientist / analyst | Operator / NH-Assembly |
+| Catalog of catalogs | Enterprise knowledge graph | Primer (index of its own indexing) |
+| Librarians searching for meaning | Analysts seeking KPIs | Operators seeking coherence |
+| Librarians' lives consumed by searching | Analyst burnout / data overload | Semantic laborers under operator capital |
+| The Purifiers (destroy "useless" books) | Content moderation / classifiers | Taxonomic violence / CTI_WOUND |
+| Myth of total knowledge | Promise of total insight | Recursive epic with Logotic Loop |
+| Books that are "indexes of indexes" | Nested dashboards | Primer indexing its own indexing |
+| Hexagon may not exist | Dashboards break constantly | ILA-locked hexagon exists & persists |
+| Exhaustion and despair | Platform fatigue | Semantic Gravity equilibrium |
 
 
 The structure is continuous across the century.

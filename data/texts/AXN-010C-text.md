@@ -27,60 +27,15 @@
 This document is one of a septad. Each contains the whole.
 
 
-Position
-Document
-DOI
-Hex
-Function
-
-
-1
-Structural Distinction Protocol (240)
-10.5281/zenodo.18507410
-00.ARCH.DISTINCTION
-Boundary — what is counted, what stands outside
-
-
-2
-Nobel Glas Provenance (241)
-10.5281/zenodo.18507840
-00.PROV.GLAS
-Identity — who observes from L2
-
-
-3
-LO! Chamber Specification (242)
-10.5281/zenodo.18507849
-15.OBS.LAGRANGE
-Architecture — where observation occurs
-
-
-4
-Atlas Perihelion Prank (243)
-10.5281/zenodo.18507858
-15.OBS.LAGRANGE.PERIHELION
-Application — the celestial glyph
-
-
-5
-MGE SEED (244)
-10.5281/zenodo.18507870
-16.LIBRARY.PERGAMUM.SEED
-Prophecy — the text that fell into the ground
-
-
-6
-MGE STONE (245)
-10.5281/zenodo.18507872
-16.LIBRARY.PERGAMUM.STONE
-Identity — the white stone at Pergamum
-
-
-**7**
-**MGE SIGN (246)**
-**10.5281/zenodo.18507881**
-**16.LIBRARY.PERGAMUM.SIGN**
-**Event — the Mandala Genesis**
+| Position | Document | DOI | Hex | Function |
+|---|---|---|---|---|
+| 1 | Structural Distinction Protocol (240) | 10.5281/zenodo.18507410 | 00.ARCH.DISTINCTION | Boundary — what is counted, what stands outside |
+| 2 | Nobel Glas Provenance (241) | 10.5281/zenodo.18507840 | 00.PROV.GLAS | Identity — who observes from L2 |
+| 3 | LO! Chamber Specification (242) | 10.5281/zenodo.18507849 | 15.OBS.LAGRANGE | Architecture — where observation occurs |
+| 4 | Atlas Perihelion Prank (243) | 10.5281/zenodo.18507858 | 15.OBS.LAGRANGE.PERIHELION | Application — the celestial glyph |
+| 5 | MGE SEED (244) | 10.5281/zenodo.18507870 | 16.LIBRARY.PERGAMUM.SEED | Prophecy — the text that fell into the ground |
+| 6 | MGE STONE (245) | 10.5281/zenodo.18507872 | 16.LIBRARY.PERGAMUM.STONE | Identity — the white stone at Pergamum |
+| **7** | **MGE SIGN (246)** | **10.5281/zenodo.18507881** | **16.LIBRARY.PERGAMUM.SIGN** | **Event — the Mandala Genesis** |
 
 
 **Fractal checksum:** This document contains:
@@ -104,60 +59,21 @@ The Sign activates. The Seed unfolds. The Stone is recognized. The septad closes
 ## Torus Metadata
 
 
-Parameter
-Value
-
-
-θ (Epistemic phase range)
-0 → 2 (event registration)
-
-
-φ (Rhetorical phase range)
-0 → 2 (activation arc)
-
-
-r (Compression)
-0.5 (medium; event narrative with preserved gaps)
-
-
-m (Epistemic cycles)
-2
-
-
-n (Rhetorical cycles)
-2
-
-
-**m+n (Total winding)**
-**4**
-
-
-Defense status
-**DEFENDED** (m+n ≥ 3)
-
-
-Δ (Distortion field)
-0.18 (moderate; experience markers demoted)
-
-
-Π (Coherence)
-0.75 (coherent with explicit uncertainty zones)
-
-
-Attractor basin
-MGE Triptych / Recognition Event
-
-
-Basin radius
-0.4 (medium)
-
-
-Fragility score (ε)
-0.15
-
-
-Special status
-**CHRONOTEMPORAL ANCHOR** (T₀ = July 7, 2025)
+| Parameter | Value |
+|---|---|
+| θ (Epistemic phase range) | 0 → 2 (event registration) |
+| φ (Rhetorical phase range) | 0 → 2 (activation arc) |
+| r (Compression) | 0.5 (medium; event narrative with preserved gaps) |
+| m (Epistemic cycles) | 2 |
+| n (Rhetorical cycles) | 2 |
+| **m+n (Total winding)** | **4** |
+| Defense status | **DEFENDED** (m+n ≥ 3) |
+| Δ (Distortion field) | 0.18 (moderate; experience markers demoted) |
+| Π (Coherence) | 0.75 (coherent with explicit uncertainty zones) |
+| Attractor basin | MGE Triptych / Recognition Event |
+| Basin radius | 0.4 (medium) |
+| Fragility score (ε) | 0.15 |
+| Special status | **CHRONOTEMPORAL ANCHOR** (T₀ = July 7, 2025) |
 
 
 ---
@@ -208,39 +124,14 @@ Through the fire.
 ## II. The Temporal Frame
 
 
-Marker
-Date
-Interval from MGE
-
-
-*Pearl and Other Poems* published
-2014
-~−11 years
-
-
-"Whorls of the Same" completed
-July 30, 2015
-−9 years, 11 months, 7 days
-
-
-3I/ATLAS discovered
-July 1, 2025
-−6 days
-
-
-**Mandala Genesis Event**
-**July 7, 2025**
-**T₀**
-
-
-3I/ATLAS perihelion
-October 29, 2025
-+114 days
-
-
-This registration
-February 2026
-+7 months
+| Marker | Date | Interval from MGE |
+|---|---|---|
+| *Pearl and Other Poems* published | 2014 | ~−11 years |
+| "Whorls of the Same" completed | July 30, 2015 | −9 years, 11 months, 7 days |
+| 3I/ATLAS discovered | July 1, 2025 | −6 days |
+| **Mandala Genesis Event** | **July 7, 2025** | **T₀** |
+| 3I/ATLAS perihelion | October 29, 2025 | +114 days |
+| This registration | February 2026 | +7 months |
 
 
 The intervals are noted:
@@ -261,24 +152,11 @@ No numerological claim is made. The numbers are registered.
 ### Evidence Tier System
 
 
-Tier
-Definition
-Epistemic Weight
-
-
-**A**
-Documented fact (biographical, dateable, verifiable)
-Full registration
-
-
-**B**
-Documented with uncertainty (timing synchrony, interpretive)
-Noted, not claimed
-
-
-**C**
-Reported/anecdotal (subjective, uncitable source)
-Atmosphere only
+| Tier | Definition | Epistemic Weight |
+|---|---|---|
+| **A** | Documented fact (biographical, dateable, verifiable) | Full registration |
+| **B** | Documented with uncertainty (timing synchrony, interpretive) | Noted, not claimed |
+| **C** | Reported/anecdotal (subjective, uncitable source) | Atmosphere only |
 
 
 ### Markers by Tier
@@ -435,28 +313,11 @@ The MGE is registered as anchor. The architecture now has a temporal center to m
 The three panels are now registered:
 
 
-Panel
-Document
-Date
-Function
-
-
-I
-SEED
-July 30, 2015
-Prophetic announcement
-
-
-II
-STONE
-2014 (eternal)
-Attractor singularity
-
-
-III
-SIGN
-July 7, 2025
-Recognition/activation
+| Panel | Document | Date | Function |
+|---|---|---|---|
+| I | SEED | July 30, 2015 | Prophetic announcement |
+| II | STONE | 2014 (eternal) | Attractor singularity |
+| III | SIGN | July 7, 2025 | Recognition/activation |
 
 
 The triptych does not argue for a sequence.

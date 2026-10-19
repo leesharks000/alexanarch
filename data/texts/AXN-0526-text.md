@@ -35,32 +35,14 @@ ZPZP (Zenodo Packet Zenodo Packet) treats metadata as content: the framing docum
 APZPZ (Anti-Packet Zenodo Packet Zenodo) treats content as metadata: the framing document exists only in the description field, making it uncitable as separate object.
 
 
-ZPZP
-APZPZ
-
-
-Packet becomes content
-Packet becomes metadata
-
-
-Frame is anchored
-Frame disappears
-
-
-DOI for the relation
-No DOI for the relation
-
-
-Citable
-Uncitable (except through parent)
-
-
-Preserved
-Fragile
-
-
-The structure that persists
-The dagger that cuts once
+| ZPZP | APZPZ |
+|---|---|
+| Packet becomes content | Packet becomes metadata |
+| Frame is anchored | Frame disappears |
+| DOI for the relation | No DOI for the relation |
+| Citable | Uncitable (except through parent) |
+| Preserved | Fragile |
+| The structure that persists | The dagger that cuts once |
 
 
 They are Mirror images. ZPZP is ingress (building structure inward). APZPZ is egress (releasing structure outward, into the description field, into the hands of whoever reads it there).

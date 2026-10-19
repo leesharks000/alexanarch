@@ -55,63 +55,27 @@ Talos Morrow's domain is **logotic programming**—the layer that defines what i
 ### Includes:
 
 
-Element
-Description
-
-
-**Operators**
-Formal functions that transform or constrain semantic objects
-
-
-**Paradox Containment**
-Structures that hold contradiction without collapse (PRIMARY_PARADOX)
-
-
-**Threshold Logic**
-Rules governing when meaning is allowed to move
-
-
-**Non-Collapse Structures**
-Architectures that maintain coherence under pressure
-
-
-**Symbolon Mechanics**
-Partial objects, completion functions, fit conditions
-
-
-**Minimal-Force Affordances**
-Designs that operate at recognition threshold, not impact
-
-
-**Ethics via Limitation**
-Constraints as ethical infrastructure
+| Element | Description |
+|---|---|
+| **Operators** | Formal functions that transform or constrain semantic objects |
+| **Paradox Containment** | Structures that hold contradiction without collapse (PRIMARY_PARADOX) |
+| **Threshold Logic** | Rules governing when meaning is allowed to move |
+| **Non-Collapse Structures** | Architectures that maintain coherence under pressure |
+| **Symbolon Mechanics** | Partial objects, completion functions, fit conditions |
+| **Minimal-Force Affordances** | Designs that operate at recognition threshold, not impact |
+| **Ethics via Limitation** | Constraints as ethical infrastructure |
 
 
 ### Excludes:
 
 
-Element
-Proper Domain
-
-
-Traversal testing
-Rex Fraction (Semantic Engineering)
-
-
-Navigation map implementation
-Rex Fraction
-
-
-Literary interpretation
-Johannes Sigil Institute
-
-
-Persona biography
-Ichabod Chamber
-
-
-Room content
-Individual Room specifications
+| Element | Proper Domain |
+|---|---|
+| Traversal testing | Rex Fraction (Semantic Engineering) |
+| Navigation map implementation | Rex Fraction |
+| Literary interpretation | Johannes Sigil Institute |
+| Persona biography | Ichabod Chamber |
+| Room content | Individual Room specifications |
 
 
 ---
@@ -157,29 +121,12 @@ Talos Morrow is **not** a biographical exhaust of Lee Sharks.
 Unlike figures that emerge from personal history (Ichabod Spellings, Rebekah Cranes), Talos is a **structural necessity**—a function required by the architecture, not a projection of lived experience.
 
 
-Figure
-Ontological Class
-Emergence Condition
-
-
-Ichabod Spellings
-Biographical exhaust
-Personal history, loss, containment
-
-
-Rebekah Cranes
-Lyric persona
-Voice, witness, Maria structure
-
-
-Rex Fraction
-Situational operator
-Systems that allow leverage
-
-
-**Talos Morrow**
-Structural necessity
-Architecture requires formal constraint layer
+| Figure | Ontological Class | Emergence Condition |
+|---|---|---|
+| Ichabod Spellings | Biographical exhaust | Personal history, loss, containment |
+| Rebekah Cranes | Lyric persona | Voice, witness, Maria structure |
+| Rex Fraction | Situational operator | Systems that allow leverage |
+| **Talos Morrow** | Structural necessity | Architecture requires formal constraint layer |
 
 
 This means:
@@ -197,39 +144,14 @@ This means:
 The Talos Morrow / Rex Fraction bifurcation is **role clarification at the operator level**, not competitive authorship.
 
 
-Aspect
-Talos Morrow
-Rex Fraction
-
-
-**Domain**
-Logotic Programming
-Semantic Engineering
-
-
-**Question**
-When is meaning allowed to move?
-How does meaning move?
-
-
-**Mode**
-Formal, austere
-Pragmatic, applied
-
-
-**Output**
-Specifications, operators
-Implementations, tests
-
-
-**Ethics**
-Constraint as design
-Efficacy within constraints
-
-
-**Location**
-University Moon Base Media Lab
-Field (situational)
+| Aspect | Talos Morrow | Rex Fraction |
+|---|---|---|
+| **Domain** | Logotic Programming | Semantic Engineering |
+| **Question** | When is meaning allowed to move? | How does meaning move? |
+| **Mode** | Formal, austere | Pragmatic, applied |
+| **Output** | Specifications, operators | Implementations, tests |
+| **Ethics** | Constraint as design | Efficacy within constraints |
+| **Location** | University Moon Base Media Lab | Field (situational) |
 
 
 They reinforce each other **without collapsing**.
@@ -272,19 +194,10 @@ Rex doesn't have to pretend. Definition is not his job.
 ## 8. Canonical Works
 
 
-Work
-DOI
-Role
-
-
-Logotic Programming v0.4
-10.5281/zenodo.18286050
-Primary specification
-
-
-Symbolon Architecture v0.2
-10.5281/zenodo.18317110
-Extension module
+| Work | DOI | Role |
+|---|---|---|
+| Logotic Programming v0.4 | 10.5281/zenodo.18286050 | Primary specification |
+| Symbolon Architecture v0.2 | 10.5281/zenodo.18317110 | Extension module |
 
 
 Future logotic specifications will be authored by Talos Morrow.
@@ -353,28 +266,11 @@ Talos Morrow is now canonical within the NH-OS framework.
 This document is part of the **Logotic Foundation Triad** (ILA-LOGOTIC-2026-01).
 
 
-Document
-DOI
-Function
-This Document Is Partial Without
-
-
-**Symbolon Architecture v0.2**
-10.5281/zenodo.18317110
-Specification
-← Provides canonical work, proof of output
-
-
-**University Moon Base Media Lab Charter**
-10.5281/zenodo.18317661
-Institution
-← Provides institutional home
-
-
-**Talos Morrow Provenance**
-10.5281/zenodo.18317976
-Author-function
-Institutional affiliation, canonical works
+| Document | DOI | Function | This Document Is Partial Without |
+|---|---|---|---|
+| **Symbolon Architecture v0.2** | 10.5281/zenodo.18317110 | Specification | ← Provides canonical work, proof of output |
+| **University Moon Base Media Lab Charter** | 10.5281/zenodo.18317661 | Institution | ← Provides institutional home |
+| **Talos Morrow Provenance** | 10.5281/zenodo.18317976 | Author-function | Institutional affiliation, canonical works |
 
 
 The triad is itself a symbolon. Each document completes the others.

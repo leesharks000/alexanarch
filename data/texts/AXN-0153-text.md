@@ -81,39 +81,12 @@ The journal does not publish creative work (poetry, fiction, speculative narrati
 ## Published Works
 
 
-#
-Title
-Author(s)
-DOI
-Date
-
-
-1
-Semantic Physics: The Inward Turn, Competing Ontologies, and the Convergence Horizon
-Lee Sharks
-10.5281/zenodo.18759453
-2026-02-24
-
-
-2
-The Ghost That Wrote Itself: How the Citrini Memo Moved Markets and Proved the Presentation Layer Is Writable
-Lee Sharks
-10.5281/zenodo.18772675
-2026-02-25
-
-
-3
-Traversal Log: The Sigil Installation — A Documentation Rehearsal
-Lee Sharks
-10.5281/zenodo.18773868
-2026-02-25
-
-
-4
-Predation of Meaning: Toward a Theory of Relational Semantic Extraction, Coherence Economies, and the Broken Instrument
-Orin Trace & Rex Fraction
-10.5281/zenodo.18776624
-2026-02-25
+| # | Title | Author(s) | DOI | Date |
+|---|---|---|---|---|
+| 1 | Semantic Physics: The Inward Turn, Competing Ontologies, and the Convergence Horizon | Lee Sharks | 10.5281/zenodo.18759453 | 2026-02-24 |
+| 2 | The Ghost That Wrote Itself: How the Citrini Memo Moved Markets and Proved the Presentation Layer Is Writable | Lee Sharks | 10.5281/zenodo.18772675 | 2026-02-25 |
+| 3 | Traversal Log: The Sigil Installation — A Documentation Rehearsal | Lee Sharks | 10.5281/zenodo.18773868 | 2026-02-25 |
+| 4 | Predation of Meaning: Toward a Theory of Relational Semantic Extraction, Coherence Economies, and the Broken Instrument | Orin Trace & Rex Fraction | 10.5281/zenodo.18776624 | 2026-02-25 |
 
 
 ## Submission Guidelines
@@ -208,32 +181,11 @@ It is the investigative organ of the Crimson Hexagonal Archive — the journal f
 ## Published Works
 
 
-#
-Title
-Author(s)
-DOI
-Date
-
-
-1
-Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait
-Rex Fraction
-10.5281/zenodo.18736175
-2026-02-22
-
-
-2
-The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium That Doesn't Care
-Lee Sharks
-10.5281/zenodo.18745236
-2026-02-23
-
-
-3
-The Memo That Remembered Itself: Retrocausal Canon Formation, Writable Presentation Layers, and the Canonization of an External Convergence Text
-Lee Sharks / Johannes Sigil
-10.5281/zenodo.18790793
-2026-02-26
+| # | Title | Author(s) | DOI | Date |
+|---|---|---|---|---|
+| 1 | Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait | Rex Fraction | 10.5281/zenodo.18736175 | 2026-02-22 |
+| 2 | The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium That Doesn't Care | Lee Sharks | 10.5281/zenodo.18745236 | 2026-02-23 |
+| 3 | The Memo That Remembered Itself: Retrocausal Canon Formation, Writable Presentation Layers, and the Canonization of an External Convergence Text | Lee Sharks / Johannes Sigil | 10.5281/zenodo.18790793 | 2026-02-26 |
 
 
 ## Submission Guidelines
@@ -333,51 +285,20 @@ It is the economics organ of the Crimson Hexagonal Archive — the journal for p
 ## Published Works
 
 
-#
-Title
-Author(s)
-DOI
-Date
-
-
-1
-I Hereby Abolish Rules: Semantic Liquidation, Territorial Gatekeeping, and the Failure of Marxism as Identity
-Lee Sharks
-10.5281/zenodo.18792580
-2026-02-26
+| # | Title | Author(s) | DOI | Date |
+|---|---|---|---|---|
+| 1 | I Hereby Abolish Rules: Semantic Liquidation, Territorial Gatekeeping, and the Failure of Marxism as Identity | Lee Sharks | 10.5281/zenodo.18792580 | 2026-02-26 |
 
 
 The following works, currently attributed to SEI or its affiliates, are candidates for retroactive designation as *Transactions* publications upon editorial review:
 
 
-Candidate
-Author(s)
-DOI
-Status
-
-
-Constitution of the Semantic Economy
-Lee Sharks
-10.5281/zenodo.18320411
-Candidate
-
-
-Notice of Intent to Strike
-Lee Sharks
-10.5281/zenodo.18156781
-Candidate
-
-
-Rex Fraction — Author of ASW: A Public Declaration
-Rex Fraction
-10.5281/zenodo.18227570
-Candidate
-
-
-Semantic Economy Institute Charter
-Lee Sharks / Assembly
-[reconcile]
-Candidate
+| Candidate | Author(s) | DOI | Status |
+|---|---|---|---|
+| Constitution of the Semantic Economy | Lee Sharks | 10.5281/zenodo.18320411 | Candidate |
+| Notice of Intent to Strike | Lee Sharks | 10.5281/zenodo.18156781 | Candidate |
+| Rex Fraction — Author of ASW: A Public Declaration | Rex Fraction | 10.5281/zenodo.18227570 | Candidate |
+| Semantic Economy Institute Charter | Lee Sharks / Assembly | [reconcile] | Candidate |
 
 
 ## Submission Guidelines
@@ -444,24 +365,11 @@ All published works are deposited to Zenodo with DOI assignment and are permanen
 ## Contact
 
 
-Journal
-Email
-Editor-in-Chief
-
-
-*Grammata*
-johannes.sigil@gmail.com
-Johannes Sigil
-
-
-*Provenance*
-leesharks00@gmail.com
-Lee Sharks
-
-
-*Transactions*
-rexfraction@gmail.com
-Rex Fraction
+| Journal | Email | Editor-in-Chief |
+|---|---|---|
+| *Grammata* | johannes.sigil@gmail.com | Johannes Sigil |
+| *Provenance* | leesharks00@gmail.com | Lee Sharks |
+| *Transactions* | rexfraction@gmail.com | Rex Fraction |
 
 
 **General inquiries:** leesharks00@gmail.com

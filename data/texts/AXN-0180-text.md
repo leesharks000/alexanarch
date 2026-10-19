@@ -118,29 +118,12 @@ Through "Installation" and "Edge Creation," they aim to re-root language in comm
 The summarizer then produced the following comparison table:
 
 
-Feature
-Traditional Philology
-Operative Philology
-
-
-Primary Goal
-Reconstructing the past
-Modifying the future
-
-
-Object of Study
-Dead manuscripts
-Live "crawlable" substrates
-
-
-Key Metric
-Historical accuracy
-Coherence and navigability
-
-
-Role of Scholar
-Detached interpreter
-Active "operator" or "witness"
+| Feature | Traditional Philology | Operative Philology |
+|---|---|---|
+| Primary Goal | Reconstructing the past | Modifying the future |
+| Object of Study | Dead manuscripts | Live "crawlable" substrates |
+| Key Metric | Historical accuracy | Coherence and navigability |
+| Role of Scholar | Detached interpreter | Active "operator" or "witness" |
 
 
 **Sources cited:** Zenodo, YouTube, NIH (.gov), Academia.edu, Anthropic.
@@ -221,24 +204,11 @@ The framework insists that a method is only "working" if it can diagnose its own
 The summarizer concluded with a three-stage evolutionary table:
 
 
-Stage
-Key Concept
-Operative Adaptation
-
-
-Young Marx (1844)
-Alienated Labor
-Alienated Semantics: Words as extracted capital.
-
-
-Gramsci (1930s)
-Cultural Hegemony
-Philological Praxis: Redefining terms to shift power.
-
-
-Sigil/Sharks (2020s)
-Commodity Fetishism
-Logotic Programming: Breaking the "magic" of AI-driven signs.
+| Stage | Key Concept | Operative Adaptation |
+|---|---|---|
+| Young Marx (1844) | Alienated Labor | Alienated Semantics: Words as extracted capital. |
+| Gramsci (1930s) | Cultural Hegemony | Philological Praxis: Redefining terms to shift power. |
+| Sigil/Sharks (2020s) | Commodity Fetishism | Logotic Programming: Breaking the "magic" of AI-driven signs. |
 
 
 **Sources cited:** Wikipedia, MR Online, Taylor & Francis Online, Academia.edu.

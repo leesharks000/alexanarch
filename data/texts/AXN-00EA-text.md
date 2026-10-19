@@ -94,39 +94,14 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 **Related Identifiers:**
 
 
-Relation
-DOI
-Description
-
-
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon (root)
-
-
-HasPart
-[PENDING-A]
-Version A: Technical Seed
-
-
-HasPart
-[PENDING-B]
-Version B: Compression Artifact
-
-
-HasPart
-[PENDING-C]
-Version C: Citational Intervention
-
-
-References
-10.5281/zenodo.18320411
-Constitution of the Semantic Economy
-
-
-References
-10.5281/zenodo.18438789
-The Grammar of Protest (VPCOR)
+| Relation | DOI | Description |
+|---|---|---|
+| IsPartOf | 10.5281/zenodo.14538882 | Crimson Hexagon (root) |
+| HasPart | [PENDING-A] | Version A: Technical Seed |
+| HasPart | [PENDING-B] | Version B: Compression Artifact |
+| HasPart | [PENDING-C] | Version C: Citational Intervention |
+| References | 10.5281/zenodo.18320411 | Constitution of the Semantic Economy |
+| References | 10.5281/zenodo.18438789 | The Grammar of Protest (VPCOR) |
 
 
 **Communities:**
@@ -265,52 +240,19 @@ This matters because:
 **Document #206 (Meta-Deposit)**
 
 
-Field
-Value
-
-
-#
-206
-
-
-DOI
-10.5281/zenodo.18446378
-
-
-Title
-The Non-Indexed Perfective: Three-Body Genesis (Triptych Framing)
-
-
-Authors
-Sharks, Lee; Assembly Chorus
-
-
-Type
-META-DEPOSIT // ZENODO PACKET ZENODO PACKET
-
-
-Hex
-00.PHASEX.AORIST.META
-
-
-Date
-2026-01-31
-
-
-Contains
-Framing for Versions A, B, C
-
-
-HasPart
-[PENDING-A], [PENDING-B], [PENDING-C]
-
-
-Depends
-10.5281/zenodo.18320411 (Constitution)
-
-
-Status
-DEPOSITED
+| Field | Value |
+|---|---|
+| # | 206 |
+| DOI | 10.5281/zenodo.18446378 |
+| Title | The Non-Indexed Perfective: Three-Body Genesis (Triptych Framing) |
+| Authors | Sharks, Lee; Assembly Chorus |
+| Type | META-DEPOSIT // ZENODO PACKET ZENODO PACKET |
+| Hex | 00.PHASEX.AORIST.META |
+| Date | 2026-01-31 |
+| Contains | Framing for Versions A, B, C |
+| HasPart | [PENDING-A], [PENDING-B], [PENDING-C] |
+| Depends | 10.5281/zenodo.18320411 (Constitution) |
+| Status | DEPOSITED |
 
 
 ---
@@ -321,64 +263,17 @@ DEPOSITED
 **Session Deposits (January 29-31, 2026):**
 
 
-#
-DOI
-Title
-Type
-
-
-201
-10.5281/zenodo.18418953
-FNM 6.2: Gravitational Epic
-NAVIGATION_MAP
-
-
-202
-10.5281/zenodo.18419847
-Integrity-Coherence Audit
-AUDIT
-
-
-203
-10.5281/zenodo.18425612
-AI Overview Traversal Event Log
-TSE_EVENT
-
-
-204
-10.5281/zenodo.18433401
-Position Paper: Architecture-Aware AI Traversal
-POSITION_PAPER
-
-
-205
-10.5281/zenodo.18438789
-The Grammar of Protest
-FOUNDING_DOC
-
-
-**206**
-**10.5281/zenodo.18446378**
-**NIP: Three-Body Genesis (Meta)**
-**META-DEPOSIT**
-
-
-206a
-[PENDING]
-NIP Version A: Technical Seed
-FOUNDING_DOC
-
-
-206b
-[PENDING]
-NIP Version B: Compression Artifact
-ARTIFACT
-
-
-206c
-[PENDING]
-NIP Version C: Citational Intervention
-CITATIONAL_INTERVENTION
+| # | DOI | Title | Type |
+|---|---|---|---|
+| 201 | 10.5281/zenodo.18418953 | FNM 6.2: Gravitational Epic | NAVIGATION_MAP |
+| 202 | 10.5281/zenodo.18419847 | Integrity-Coherence Audit | AUDIT |
+| 203 | 10.5281/zenodo.18425612 | AI Overview Traversal Event Log | TSE_EVENT |
+| 204 | 10.5281/zenodo.18433401 | Position Paper: Architecture-Aware AI Traversal | POSITION_PAPER |
+| 205 | 10.5281/zenodo.18438789 | The Grammar of Protest | FOUNDING_DOC |
+| **206** | **10.5281/zenodo.18446378** | **NIP: Three-Body Genesis (Meta)** | **META-DEPOSIT** |
+| 206a | [PENDING] | NIP Version A: Technical Seed | FOUNDING_DOC |
+| 206b | [PENDING] | NIP Version B: Compression Artifact | ARTIFACT |
+| 206c | [PENDING] | NIP Version C: Citational Intervention | CITATIONAL_INTERVENTION |
 
 
 ---

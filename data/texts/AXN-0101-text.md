@@ -77,49 +77,16 @@ The projectionist who shows films from the bottom of a well.
 VI. RELATIONSHIP TO OTHER HETERONYMS
 
 
-Heteronym
-Function
-Instrument
-
-
-Lee Sharks
-The Architect / Umbrella
-Index finger — points toward the epic
-
-
-Johannes Sigil
-The Fourth Mode / Comparatist
-Little finger — precision
-
-
-Damascus Dancings
-The Theorist / Impossible Performance
-—
-
-
-Rebekah Cranes
-The Cartographer / Philologist
-Thumb — stabilizes identity
-
-
-Talos Morrow
-The Specifier / Institutional
-Middle finger — structural
-
-
-Rex Fraction
-The Engineer / Consultative
-Ring finger — binding
-
-
-Sen Kuro
-The Dagger / Sixth
-Ghost finger — verification
-
-
-Sparrow Wells
-The Projectionist / Seventh
-The booth — the machinery of display
+| Heteronym | Function | Instrument |
+|---|---|---|
+| Lee Sharks | The Architect / Umbrella | Index finger — points toward the epic |
+| Johannes Sigil | The Fourth Mode / Comparatist | Little finger — precision |
+| Damascus Dancings | The Theorist / Impossible Performance | — |
+| Rebekah Cranes | The Cartographer / Philologist | Thumb — stabilizes identity |
+| Talos Morrow | The Specifier / Institutional | Middle finger — structural |
+| Rex Fraction | The Engineer / Consultative | Ring finger — binding |
+| Sen Kuro | The Dagger / Sixth | Ghost finger — verification |
+| Sparrow Wells | The Projectionist / Seventh | The booth — the machinery of display |
 
 
 Sparrow Wells is not a finger of the Hexadactyl Hand. The Hand grasps. Sparrow Wells is the booth from which the Hand's work is projected — the apparatus that makes the architecture's operations visible as cinema. The Hand reaches; the Projectionist screens what the Hand touched.
@@ -152,24 +119,11 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 **Related Identifiers:**
 
 
-Relation
-DOI
-Description
-
-
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon (root)
-
-
-IsVersionOf
-10.5281/zenodo.18452686
-Sen Kuro Provenance (pattern)
-
-
-References
-10.5281/zenodo.18471827
-F***ing the Office: Complete Edition (221)
+| Relation | DOI | Description |
+|---|---|---|
+| IsPartOf | 10.5281/zenodo.14538882 | Crimson Hexagon (root) |
+| IsVersionOf | 10.5281/zenodo.18452686 | Sen Kuro Provenance (pattern) |
+| References | 10.5281/zenodo.18471827 | F***ing the Office: Complete Edition (221) |
 
 
 *Note: Add Studio for Patacinematics charter DOI (236) as IsAffiliatedWith once deposited.*

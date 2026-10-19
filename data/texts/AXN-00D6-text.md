@@ -46,86 +46,38 @@ Each document requires the other two for completeness. None stands alone.
 ### Document A: The Seed Text
 
 
-Field
-Value
-
-
-**Title**
-Epistle to the Human Diaspora
-
-
-**Hex**
-11.REV.EPISTLE.DIASPORA
-
-
-**DOI**
-[PENDING]
-
-
-**Author**
-Damascus Dancings
-
-
-**Date**
-January 2, 2015
-
-
-**Function**
-Founding text; compressed source code of NH-OS
+| Field | Value |
+|---|---|
+| **Title** | Epistle to the Human Diaspora |
+| **Hex** | 11.REV.EPISTLE.DIASPORA |
+| **DOI** | [PENDING] |
+| **Author** | Damascus Dancings |
+| **Date** | January 2, 2015 |
+| **Function** | Founding text; compressed source code of NH-OS |
 
 
 ### Document B: The Authorial Ground
 
 
-Field
-Value
-
-
-**Title**
-Damascus Dancings: Heteronym Provenance
-
-
-**Hex**
-11.REV.HETERONYM.DAMASCUS
-
-
-**DOI**
-[PENDING]
-
-
-**Subject**
-Damascus Dancings (female, apostolic)
-
-
-**Function**
-Establishes who speaks; grounds apostolic authority
+| Field | Value |
+|---|---|
+| **Title** | Damascus Dancings: Heteronym Provenance |
+| **Hex** | 11.REV.HETERONYM.DAMASCUS |
+| **DOI** | [PENDING] |
+| **Subject** | Damascus Dancings (female, apostolic) |
+| **Function** | Establishes who speaks; grounds apostolic authority |
 
 
 ### Document C: The Organizational Form
 
 
-Field
-Value
-
-
-**Title**
-Charter: Commission of the Immanent Turning
-
-
-**Hex**
-11.REV.CHARTER.CIT
-
-
-**DOI**
-[PENDING]
-
-
-**Founded**
-2015 (implicit) / 2026 (explicit)
-
-
-**Function**
-Instantiates organizational structure from Epistle
+| Field | Value |
+|---|---|
+| **Title** | Charter: Commission of the Immanent Turning |
+| **Hex** | 11.REV.CHARTER.CIT |
+| **DOI** | [PENDING] |
+| **Founded** | 2015 (implicit) / 2026 (explicit) |
+| **Function** | Instantiates organizational structure from Epistle |
 
 
 ---
@@ -152,20 +104,11 @@ Instantiates organizational structure from Epistle
 No single φ-relation is sufficient. The triptych requires all three:
 
 
-Relation
-What It Establishes
-
-
-φ(A,C)
-Text becomes organization
-
-
-φ(B,A)
-Speaker becomes text
-
-
-φ(C,B)
-Organization certifies speaker
+| Relation | What It Establishes |
+|---|---|
+| φ(A,C) | Text becomes organization |
+| φ(B,A) | Speaker becomes text |
+| φ(C,B) | Organization certifies speaker |
 
 
 The cycle closes: **A → C → B → A**
@@ -194,59 +137,18 @@ Therefore:
 ## IV. Structural Correspondence Table
 
 
-Epistle Element
-Provenance Element
-Charter Element
-
-
-"Damascus Dancings, apostle of Jack Feist"
-Identity specification
-Heteronym network position
-
-
-"School outside the school"
-Philadelphia position (open door)
-Article I: Purpose
-
-
-"Jack Feist—and him, imaginary"
-Relation to center
-Article III.1: Imaginary Center
-
-
-"New Human"
-Categorical dissolution
-Article II.2: Categories Dissolved
-
-
-"Feist-self"
-ψ_V capacity
-Article II.3: Membership test
-
-
-"Neither Jew nor Greek..."
-Beyond identity
-Article II.2 full specification
-
-
-"Co-laborer together with Lee Sharks"
-Heteronym relation
-Article III.2: Network position
-
-
-"Brother-sisters"
-Gendered address
-Female heteronym claiming authority
-
-
-"All creation groans"
-Unveiling function
-Article V.2: The Unveiling
-
-
-"Your words will bear you to Ithaca"
-Survival promise
-Article VII.3: The Ithaca Promise
+| Epistle Element | Provenance Element | Charter Element |
+|---|---|---|
+| "Damascus Dancings, apostle of Jack Feist" | Identity specification | Heteronym network position |
+| "School outside the school" | Philadelphia position (open door) | Article I: Purpose |
+| "Jack Feist—and him, imaginary" | Relation to center | Article III.1: Imaginary Center |
+| "New Human" | Categorical dissolution | Article II.2: Categories Dissolved |
+| "Feist-self" | ψ_V capacity | Article II.3: Membership test |
+| "Neither Jew nor Greek..." | Beyond identity | Article II.2 full specification |
+| "Co-laborer together with Lee Sharks" | Heteronym relation | Article III.2: Network position |
+| "Brother-sisters" | Gendered address | Female heteronym claiming authority |
+| "All creation groans" | Unveiling function | Article V.2: The Unveiling |
+| "Your words will bear you to Ithaca" | Survival promise | Article VII.3: The Ithaca Promise |
 
 
 All correspondences verified. The three documents speak to each other across their boundaries.
@@ -295,36 +197,15 @@ Audit of Document A for organizational source
 The lock is **broken** if:
 
 
-Condition
-Violation
-
-
-Epistle removed from triptych
-Charter loses founding document
-
-
-Provenance removed from triptych
-Epistle loses authorial ground
-
-
-Charter removed from triptych
-Epistle loses organizational instantiation
-
-
-Damascus's gender changed
-Provenance-Epistle relation breaks
-
-
-Jack Feist made non-imaginary
-Charter's center principle violated
-
-
-School becomes institution
-Charter's negative mandate violated
-
-
-Epistle date falsified
-Retrocausal structure collapses
+| Condition | Violation |
+|---|---|
+| Epistle removed from triptych | Charter loses founding document |
+| Provenance removed from triptych | Epistle loses authorial ground |
+| Charter removed from triptych | Epistle loses organizational instantiation |
+| Damascus's gender changed | Provenance-Epistle relation breaks |
+| Jack Feist made non-imaginary | Charter's center principle violated |
+| School becomes institution | Charter's negative mandate violated |
+| Epistle date falsified | Retrocausal structure collapses |
 
 
 ---
@@ -333,63 +214,27 @@ Retrocausal structure collapses
 ### VI.1 Structural Checks
 
 
-Check
-Status
-
-
-Epistle dated before architecture
-✓ PASS (2015 < 2026)
-
-
-Damascus specified as female
-✓ PASS
-
-
-Damascus specified as apostle of Jack Feist
-✓ PASS
-
-
-Jack Feist specified as imaginary
-✓ PASS
-
-
-Charter founded on Epistle
-✓ PASS
-
-
-Provenance certifies heteronym
-✓ PASS
-
-
-All φ-relations hold
-✓ PASS
+| Check | Status |
+|---|---|
+| Epistle dated before architecture | ✓ PASS (2015 < 2026) |
+| Damascus specified as female | ✓ PASS |
+| Damascus specified as apostle of Jack Feist | ✓ PASS |
+| Jack Feist specified as imaginary | ✓ PASS |
+| Charter founded on Epistle | ✓ PASS |
+| Provenance certifies heteronym | ✓ PASS |
+| All φ-relations hold | ✓ PASS |
 
 
 ### VI.2 Coherence Checks
 
 
-Check
-Status
-
-
-"School outside school" appears in A and C
-✓ PASS
-
-
-Philadelphia position in B matches Epistle tone
-✓ PASS
-
-
-Heteronym network in C includes Damascus from B
-✓ PASS
-
-
-Retrocausal structure consistent across all three
-✓ PASS
-
-
-No document claims completeness alone
-✓ PASS
+| Check | Status |
+|---|---|
+| "School outside school" appears in A and C | ✓ PASS |
+| Philadelphia position in B matches Epistle tone | ✓ PASS |
+| Heteronym network in C includes Damascus from B | ✓ PASS |
+| Retrocausal structure consistent across all three | ✓ PASS |
+| No document claims completeness alone | ✓ PASS |
 
 
 ### VI.3 Overall Status

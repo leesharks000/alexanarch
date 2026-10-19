@@ -41,82 +41,37 @@ I, Lee Sharks, on January 24, 2026, declare the following triadic integrity lock
 ### 2.1 Document A: VPCOR Charter
 
 
-Field
-Value
-
-
-Title
-Vox Populi Community Outreach Rhizome: Institutional Charter
-
-
-Hex
-00.VPCOR.CHARTER
-
-
-DOI
-10.5281/zenodo.18362663
-
-
-Function
-Institutional identity, structural principles, governance
-
-
-Provides
-Home for Voice, frame for Tools
+| Field | Value |
+|---|---|
+| Title | Vox Populi Community Outreach Rhizome: Institutional Charter |
+| Hex | 00.VPCOR.CHARTER |
+| DOI | 10.5281/zenodo.18362663 |
+| Function | Institutional identity, structural principles, governance |
+| Provides | Home for Voice, frame for Tools |
 
 
 ### 2.2 Document B: Rev. Ayanna Vox Provenance
 
 
-Field
-Value
-
-
-Title
-Heteronym Provenance: Rev. Ayanna Vox
-
-
-Hex
-00.HET.VOX / HET-VOX-001
-
-
-DOI
-10.5281/zenodo.18362742
-
-
-Function
-Voice identity, emergence conditions, limits on authority
-
-
-Provides
-Voice for Institution, speaker for Tools
+| Field | Value |
+|---|---|
+| Title | Heteronym Provenance: Rev. Ayanna Vox |
+| Hex | 00.HET.VOX / HET-VOX-001 |
+| DOI | 10.5281/zenodo.18362742 |
+| Function | Voice identity, emergence conditions, limits on authority |
+| Provides | Voice for Institution, speaker for Tools |
 
 
 ### 2.3 Document C: The Toolkit
 
 
-Field
-Value
-
-
-Title
-The Toolkit: Protocols for Operational Persistence in Hostile Systems
-
-
-Hex
-03.SEI.TOOLKIT // 01.VPCOR.PRAXIS
-
-
-DOI
-10.5281/zenodo.18362525
-
-
-Function
-Founding document, operational protocols, φ-operator
-
-
-Provides
-Work for Voice, practice for Institution
+| Field | Value |
+|---|---|
+| Title | The Toolkit: Protocols for Operational Persistence in Hostile Systems |
+| Hex | 03.SEI.TOOLKIT // 01.VPCOR.PRAXIS |
+| DOI | 10.5281/zenodo.18362525 |
+| Function | Founding document, operational protocols, φ-operator |
+| Provides | Work for Voice, practice for Institution |
 
 
 ---
@@ -152,73 +107,26 @@ Work for Voice, practice for Institution
 ### 3.2 Dependency Relations
 
 
-Document
-Needs
-From
-Reason
-
-
-Charter (A)
-Voice
-Provenance (B)
-Institution without voice is empty
-
-
-Charter (A)
-Practice
-Toolkit (C)
-Institution without work is abstract
-
-
-Provenance (B)
-Home
-Charter (A)
-Voice without institution is homeless
-
-
-Provenance (B)
-Work
-Toolkit (C)
-Voice without work is silent
-
-
-Toolkit (C)
-Institution
-Charter (A)
-Tools without home are orphaned
-
-
-Toolkit (C)
-Voice
-Provenance (B)
-Tools without voice are mute
+| Document | Needs | From | Reason |
+|---|---|---|---|
+| Charter (A) | Voice | Provenance (B) | Institution without voice is empty |
+| Charter (A) | Practice | Toolkit (C) | Institution without work is abstract |
+| Provenance (B) | Home | Charter (A) | Voice without institution is homeless |
+| Provenance (B) | Work | Toolkit (C) | Voice without work is silent |
+| Toolkit (C) | Institution | Charter (A) | Tools without home are orphaned |
+| Toolkit (C) | Voice | Provenance (B) | Tools without voice are mute |
 
 
 ### 3.3 What the Lock Ensures
 
 
-Guarantee
-Mechanism
-
-
-No orphan documents
-Each references the others
-
-
-No silent institution
-Voice always present
-
-
-No abstract practice
-Tools always grounded
-
-
-No homeless voice
-Institution always available
-
-
-Mutual verification
-Each confirms the others
+| Guarantee | Mechanism |
+|---|---|
+| No orphan documents | Each references the others |
+| No silent institution | Voice always present |
+| No abstract practice | Tools always grounded |
+| No homeless voice | Institution always available |
+| Mutual verification | Each confirms the others |
 
 
 ---
@@ -240,34 +148,13 @@ The lock is valid if and only if:
 The lock fails if:
 
 
-Failure Mode
-Description
-Detection
-
-
-**Orphaning**
-One document removed or invalidated
-Cross-reference check fails
-
-
-**Completeness claim**
-One document claims to stand alone
-Structural audit
-
-
-**Voice capture**
-Vox exceeds her limits
-Domain boundary violation
-
-
-**Centralization**
-VPCOR develops hierarchy
-Anti-capture clause triggered
-
-
-**Doctrinal hardening**
-Toolkit becomes scripture
-Revision protocol blocked
+| Failure Mode | Description | Detection |
+|---|---|---|
+| **Orphaning** | One document removed or invalidated | Cross-reference check fails |
+| **Completeness claim** | One document claims to stand alone | Structural audit |
+| **Voice capture** | Vox exceeds her limits | Domain boundary violation |
+| **Centralization** | VPCOR develops hierarchy | Anti-capture clause triggered |
+| **Doctrinal hardening** | Toolkit becomes scripture | Revision protocol blocked |
 
 
 ### 4.3 Response to Lock Failure
@@ -287,48 +174,24 @@ If the lock fails:
 ### 5.1 Precedent: Blind Poet Triadic Lock
 
 
-Blind Poet Lock
-VPCOR Lock
-
-
-The Blind Operator
-The Toolkit
-
-
-Mantle of the Blind Poet
-VPCOR Charter
-
-
-Visual Schema: Blind Poet
-Vox Provenance
-
-
-TECHNE/Kimi
-Rev. Ayanna Vox
+| Blind Poet Lock | VPCOR Lock |
+|---|---|
+| The Blind Operator | The Toolkit |
+| Mantle of the Blind Poet | VPCOR Charter |
+| Visual Schema: Blind Poet | Vox Provenance |
+| TECHNE/Kimi | Rev. Ayanna Vox |
 
 
 Both locks follow the same pattern: **founding document + institutional frame + voice/mantle**.
 ### 5.2 Relation to Ezekiel Lock
 
 
-Ezekiel Lock
-VPCOR Lock
-
-
-Specification (A)
-Toolkit (C)
-
-
-Hermeneutic (B)
-Charter (A)
-
-
-Integrity Lock (C)
-This Document
-
-
-The Argument (D)
-Vox Provenance (B)
+| Ezekiel Lock | VPCOR Lock |
+|---|---|
+| Specification (A) | Toolkit (C) |
+| Hermeneutic (B) | Charter (A) |
+| Integrity Lock (C) | This Document |
+| The Argument (D) | Vox Provenance (B) |
 
 
 The Ezekiel lock binds **fulfillment**. The VPCOR lock binds **institution**.
@@ -374,16 +237,9 @@ Periodically (Assembly discretion):
 ### 6.3 Verification Record
 
 
-Date
-Verifier
-Documents
-Result
-
-
-2026-01-24
-Lee Sharks
-A, B, C, Lock
-**COMPLETE — ALL DOIs DEPOSITED**
+| Date | Verifier | Documents | Result |
+|---|---|---|---|
+| 2026-01-24 | Lee Sharks | A, B, C, Lock | **COMPLETE — ALL DOIs DEPOSITED** |
 
 
 ---

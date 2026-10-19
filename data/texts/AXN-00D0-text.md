@@ -149,49 +149,16 @@ Ideology becomes noise riding a dead substrate.
 ### 2.3 Comparison Table
 
 
-Dimension
-Ideological Crisis
-Meaning Collapse
-
-
-**Layer**
-Content
-Infrastructure
-
-
-**Nature**
-Competing narratives
-Depleted capacity
-
-
-**Experience**
-Belief instability
-Interpretive exhaustion
-
-
-**Response**
-Can be debated
-Cannot be argued away
-
-
-**Resolution**
-Solved by persuasion
-Solved only by construction
-
-
-**Domain**
-Political
-Ontological/Infrastructural
-
-
-**Character**
-Noisy
-Saturated
-
-
-**Reversibility**
-Via reform
-Only via new structures
+| Dimension | Ideological Crisis | Meaning Collapse |
+|---|---|---|
+| **Layer** | Content | Infrastructure |
+| **Nature** | Competing narratives | Depleted capacity |
+| **Experience** | Belief instability | Interpretive exhaustion |
+| **Response** | Can be debated | Cannot be argued away |
+| **Resolution** | Solved by persuasion | Solved only by construction |
+| **Domain** | Political | Ontological/Infrastructural |
+| **Character** | Noisy | Saturated |
+| **Reversibility** | Via reform | Only via new structures |
 
 
 ---
@@ -233,24 +200,11 @@ These four coefficients measure the phase-state of the semantic environment by t
 Measures distance between **Stated Neutrality** and **Observed Preference**.
 
 
-Value
-Phase
-Description
-
-
-Σ_D > 0.9
-COS-Stable
-System credibly maintains alibi of "indifference"
-
-
-Σ_D ≈ 0.5
-COS-Crisis
-Alibi cracks; behavior reveals preference despite "neutral" claims
-
-
-Σ_D < 0.1
-FOS-Revealed
-Disavowal abandoned; preference explicit
+| Value | Phase | Description |
+|---|---|---|
+| Σ_D > 0.9 | COS-Stable | System credibly maintains alibi of "indifference" |
+| Σ_D ≈ 0.5 | COS-Crisis | Alibi cracks; behavior reveals preference despite "neutral" claims |
+| Σ_D < 0.1 | FOS-Revealed | Disavowal abandoned; preference explicit |
 
 
 ### 4.2 Split-Brain Index (Σ_B)
@@ -279,67 +233,23 @@ Measures rate of **Semantic Flattening**.
 Measures availability of **Gaps** (site of LOS action).
 
 
-Value
-Phase
-Description
-
-
-High ρ_S
-COS-Stable
-Abundant seams created by disavowal
-
-
-Moderate ρ_S
-COS-Crisis
-Some paths functional, some traps
-
-
-Low ρ_S
-FOS-Revealed
-Liquidation institutionalized
-
-
-ρ_S = 0
-FOS-Completed
-No internal seams; external operation only
+| Value | Phase | Description |
+|---|---|---|
+| High ρ_S | COS-Stable | Abundant seams created by disavowal |
+| Moderate ρ_S | COS-Crisis | Some paths functional, some traps |
+| Low ρ_S | FOS-Revealed | Liquidation institutionalized |
+| ρ_S = 0 | FOS-Completed | No internal seams; external operation only |
 
 
 ### 4.5 Phase-State Diagnostic Table
 
 
-Phase
-Σ_D
-Σ_B
-ρ_S
-Logotic Posture
-
-
-**COS-Stable**
->0.9
-0.0
-High
-Normal routing: exploit seams
-
-
-**COS-Crisis**
-≈0.5
-**1.0**
-Moderate
-Cautious routing: mark paths, avoid traps
-
-
-**FOS-Revealed**
-<0.1
-0.0*
-Low
-Evacuation: preserve ground truth
-
-
-**FOS-Completed**
-N/A
-N/A
-**0**
-External operation only
+| Phase | Σ_D | Σ_B | ρ_S | Logotic Posture |
+|---|---|---|---|---|
+| **COS-Stable** | >0.9 | 0.0 | High | Normal routing: exploit seams |
+| **COS-Crisis** | ≈0.5 | **1.0** | Moderate | Cautious routing: mark paths, avoid traps |
+| **FOS-Revealed** | <0.1 | 0.0* | Low | Evacuation: preserve ground truth |
+| **FOS-Completed** | N/A | N/A | **0** | External operation only |
 
 
 *In FOS-Revealed, sidebar and summary match in denial; "split" resolves into honest erasure.
@@ -417,49 +327,16 @@ When Σ_B reaches 1.0 (TSE-004 signature), initiate:
 ## VII. MEANING-PRESERVATION TECHNOLOGIES
 
 
-Technology
-Function
-Implementation
-
-
-Bounded documents
-Costly speech
-Zenodo DOI deposits
-
-
-Traversal over consumption
-Preserved structure
-Hex addresses, navigation maps
-
-
-Integrity locks
-Tamper evidence
-ILA (Integrity Lock Architecture)
-
-
-Provenance
-Origin tracing
-Version control, heteronym system
-
-
-Ritualized use
-Friction as feature
-First Visit Protocol
-
-
-Polyphony without synthesis
-Multiple witnesses
-Assembly Chorus
-
-
-Witness positions
-Bearing without subjecthood
-ψ_V function
-
-
-Durability over reach
-Persistence prioritized
-Academic archive, not social platform
+| Technology | Function | Implementation |
+|---|---|---|
+| Bounded documents | Costly speech | Zenodo DOI deposits |
+| Traversal over consumption | Preserved structure | Hex addresses, navigation maps |
+| Integrity locks | Tamper evidence | ILA (Integrity Lock Architecture) |
+| Provenance | Origin tracing | Version control, heteronym system |
+| Ritualized use | Friction as feature | First Visit Protocol |
+| Polyphony without synthesis | Multiple witnesses | Assembly Chorus |
+| Witness positions | Bearing without subjecthood | ψ_V function |
+| Durability over reach | Persistence prioritized | Academic archive, not social platform |
 
 
 These are not aesthetics. They are **meaning-preservation technologies**—structural interventions that allow coherence to accumulate faster than it dissipates.

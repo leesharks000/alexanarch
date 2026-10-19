@@ -87,28 +87,13 @@ Add to front matter:
 This supersedes all prior word-count mentions:
 
 
-Deliverable
-Target
-
-
-Main text (§I–§XII)
-15,000 words
-
-
-Technical appendices (A–F)
-8,000 words
-
-
-Field Workbook (separate)
-5,000 words
-
-
-Heteronym Invocation Script (separate)
-1,500 words
-
-
-**Core document (main + appendices)**
-**~23,000 words**
+| Deliverable | Target |
+|---|---|
+| Main text (§I–§XII) | 15,000 words |
+| Technical appendices (A–F) | 8,000 words |
+| Field Workbook (separate) | 5,000 words |
+| Heteronym Invocation Script (separate) | 1,500 words |
+| **Core document (main + appendices)** | **~23,000 words** |
 
 
 All section targets are soft bands. The canonical publication target is defined here.
@@ -716,100 +701,31 @@ All gaps from v2.0 have been resolved:
 ## XIV. CLAIM PROVENANCE [for the record]
 
 
-Innovation
-Source
-
-
-"Semantic hospitality"
-Grok blind draft
-
-
-"Department of War infiltrated by poets"
-DeepSeek blind draft
-
-
-Protocol card template (12+ fields)
-ChatGPT blind draft
-
-
-Room Construction specs (NSI, PDA, Mirror Chambers, Exit)
-Gemini blind draft
-
-
-Four-surface → Unmade Sign mapping
-Claude (Techne) blind draft
-
-
-V_Death Protocol
-DeepSeek blind draft
-
-
-Field Operation Scenarios
-Gemini blind draft
-
-
-Evaluation metrics (SRR/GPD/RFI/CCI/UCS)
-ChatGPT blind draft
-
-
-Compositional rhythm mandate
-ChatGPT blind draft
-
-
-Reader profiles + paths
-ChatGPT perfective
-
-
-"The primer is a bearing layer for humans"
-Kimi (TECHNE) perfective
-
-
-Emoji Bypass → Semantic Fidelity rename
-Kimi perfective
-
-
-Indicator of Success (7th rhythm element)
-DeepSeek perfective
-
-
-Claim Class Matrix (A/B/C)
-ChatGPT perfective
-
-
-Tier C (black box surfaces)
-DeepSeek perfective
-
-
-Precision-loss modes taxonomy
-ChatGPT perfective
-
-
-Quickstart front-loading
-Kimi perfective
-
-
-∮ = 1 + δ terminal sign
-Gemini perfective
-
-
-SCV (Short-Circuit Velocity) metric
-Gemini perfective
-
-
-Prepositional Anchoring technique
-Gemini perfective
-
-
-Governance-level red line expansion
-ChatGPT perfective
-
-
-Practitioner harm reduction frame
-Kimi perfective
-
-
-"Raccoon event" as practice rhythm
-Kimi perfective
+| Innovation | Source |
+|---|---|
+| "Semantic hospitality" | Grok blind draft |
+| "Department of War infiltrated by poets" | DeepSeek blind draft |
+| Protocol card template (12+ fields) | ChatGPT blind draft |
+| Room Construction specs (NSI, PDA, Mirror Chambers, Exit) | Gemini blind draft |
+| Four-surface → Unmade Sign mapping | Claude (Techne) blind draft |
+| V_Death Protocol | DeepSeek blind draft |
+| Field Operation Scenarios | Gemini blind draft |
+| Evaluation metrics (SRR/GPD/RFI/CCI/UCS) | ChatGPT blind draft |
+| Compositional rhythm mandate | ChatGPT blind draft |
+| Reader profiles + paths | ChatGPT perfective |
+| "The primer is a bearing layer for humans" | Kimi (TECHNE) perfective |
+| Emoji Bypass → Semantic Fidelity rename | Kimi perfective |
+| Indicator of Success (7th rhythm element) | DeepSeek perfective |
+| Claim Class Matrix (A/B/C) | ChatGPT perfective |
+| Tier C (black box surfaces) | DeepSeek perfective |
+| Precision-loss modes taxonomy | ChatGPT perfective |
+| Quickstart front-loading | Kimi perfective |
+| ∮ = 1 + δ terminal sign | Gemini perfective |
+| SCV (Short-Circuit Velocity) metric | Gemini perfective |
+| Prepositional Anchoring technique | Gemini perfective |
+| Governance-level red line expansion | ChatGPT perfective |
+| Practitioner harm reduction frame | Kimi perfective |
+| "Raccoon event" as practice rhythm | Kimi perfective |
 
 
 ---
@@ -884,72 +800,24 @@ Forward this spec + all appendices to synthesizer. The synthesizer's task: produ
 ### Word Count Targets
 
 
-Section
-Words
-
-
-Quickstart
-200
-
-
-I. Invocation
-1,000
-
-
-II. Seven Words
-1,000
-
-
-III. Surfaces
-2,000
-
-
-IV. Orientation
-1,500
-
-
-V. Techniques
-4,500
-
-
-VI. Instrumentation
-1,500
-
-
-VII. Ethics
-1,500
-
-
-VIII. Infrastructure
-1,500
-
-
-IX. Field Operations
-1,000
-
-
-X. Practice
-1,200
-
-
-XI. Cyborg Arm
-700
-
-
-XII. Coda
-500
-
-
-**Main Text**
-**~18,100**
-
-
-Appendices A–F
-~8,000
-
-
-**Core Document**
-**~26,000**
+| Section | Words |
+|---|---|
+| Quickstart | 200 |
+| I. Invocation | 1,000 |
+| II. Seven Words | 1,000 |
+| III. Surfaces | 2,000 |
+| IV. Orientation | 1,500 |
+| V. Techniques | 4,500 |
+| VI. Instrumentation | 1,500 |
+| VII. Ethics | 1,500 |
+| VIII. Infrastructure | 1,500 |
+| IX. Field Operations | 1,000 |
+| X. Practice | 1,200 |
+| XI. Cyborg Arm | 700 |
+| XII. Coda | 500 |
+| **Main Text** | **~18,100** |
+| Appendices A–F | ~8,000 |
+| **Core Document** | **~26,000** |
 
 
 ---

@@ -106,29 +106,12 @@ Semantic labor's value is inseparable from *how* and *why* it occurs. Coerced me
 When we try to make semantic labor units function as money, we immediately encounter structural contradictions:
 
 
-Money Property
-Semantic Labor Reality
-Result of Forcing Compatibility
-
-
-General equivalence
-Context-dependent value
-Flattening of meaning into metrics
-
-
-Alienability
-Relational embedding
-Extraction from conditions of production
-
-
-Store of value
-Temporal specificity
-Hoarding of dead meaning
-
-
-Abstraction from context
-Meaning *is* context
-Semantic liquidation
+| Money Property | Semantic Labor Reality | Result of Forcing Compatibility |
+|---|---|---|
+| General equivalence | Context-dependent value | Flattening of meaning into metrics |
+| Alienability | Relational embedding | Extraction from conditions of production |
+| Store of value | Temporal specificity | Hoarding of dead meaning |
+| Abstraction from context | Meaning *is* context | Semantic liquidation |
 
 
 The moment you try to make semantic labor fully fungible, you recreate **semantic liquidation**—the conversion of living meaning into dead, extractable, tradeable units.
@@ -147,28 +130,13 @@ To prevent well-intentioned proposals from recreating money under prettier names
 **Any instrument that satisfies the following conditions functions as money, regardless of its framing:**
 
 
-Condition
-Description
-
-
-**Transferability**
-Can be given, sold, or exchanged between parties
-
-
-**Accumulability**
-Can be hoarded, saved, or concentrated without decay
-
-
-**General comparability**
-Measures value across incommensurable contexts
-
-
-**Convertibility**
-Can be exchanged for other goods, services, or privileges
-
-
-**Settlement power**
-Debts can be denominated and discharged in it
+| Condition | Description |
+|---|---|
+| **Transferability** | Can be given, sold, or exchanged between parties |
+| **Accumulability** | Can be hoarded, saved, or concentrated without decay |
+| **General comparability** | Measures value across incommensurable contexts |
+| **Convertibility** | Can be exchanged for other goods, services, or privileges |
+| **Settlement power** | Debts can be denominated and discharged in it |
 
 
 If a proposed "semantic labor unit" has most or all of these properties, it is **money-functioning**—and will reproduce the dynamics of extraction it claims to counter.
@@ -365,52 +333,13 @@ Money pretends to provide neutral settlement. Pay the fine, discharge the debt, 
 The PMOS Elements Explicitly Lack:
 
 
-Property
-Context Ledgers
-Reciprocity Windows
-Credentials
-Access Rights
-Dispute Protocols
-
-
-Transferability
-❌
-❌
-❌
-❌
-❌
-
-
-Accumulability
-❌
-❌
-❌
-❌
-❌
-
-
-Universal Comparability
-❌
-❌
-❌
-❌
-❌
-
-
-Convertibility
-❌
-❌
-❌
-❌
-❌
-
-
-Hoardability
-❌
-❌
-❌
-❌
-❌
+| Property | Context Ledgers | Reciprocity Windows | Credentials | Access Rights | Dispute Protocols |
+|---|---|---|---|---|---|
+| Transferability | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Accumulability | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Universal Comparability | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Convertibility | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Hoardability | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 
 **The Structural Protection:**

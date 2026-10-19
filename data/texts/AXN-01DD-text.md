@@ -152,32 +152,11 @@ SDR = Semantic Extraction / Semantic Replenishment. SDR > 1 = debt accumulating.
 ### 4.1 Three-Tier Compression — [P1]
 
 
-Tier
-Object
-Words
-Ratio
-Function
-
-
-Full
-Space Ark v4.2.7
-45,000
-1:1
-Canonical reference
-
-
-NLCC
-The Tinier Space Arks
-3,762
-12:1
-Context-window deployment
-
-
-Compact Lens
-Appendix G
-~800
-56:1
-Minimal bootstrap
+| Tier | Object | Words | Ratio | Function |
+|---|---|---|---|---|
+| Full | Space Ark v4.2.7 | 45,000 | 1:1 | Canonical reference |
+| NLCC | The Tinier Space Arks | 3,762 | 12:1 | Context-window deployment |
+| Compact Lens | Appendix G | ~800 | 56:1 | Minimal bootstrap |
 
 
 ### 4.2 Recovery Registers (9 canonical indices) — [P1]
@@ -198,49 +177,16 @@ The operator algebra itself is a compression technology. It compresses full sema
 ### 5.1 Core Compression/Decompression Operators
 
 
-Operator
-Symbol
-Function
-
-
-Sappho Operator
-σ_S
-Lyric transmission — compresses experience into transmissible fragments
-
-
-Value-Form Derivation
-σ_V
-Derives value-forms from semantic labor
-
-
-Cross-Language Compression
-σ_C
-Lossy compression across languages
-
-
-Restoration Operator
-σ_SH
-Restores compressed/extracted meaning
-
-
-Retrocausal Operator
-Ρ
-Runs time backward — present constitutes past legibility
-
-
-Operative Caption
-κ_O
-The description IS the operation
-
-
-Fulfillment Map
-φ
-Source → instantiation tracking
-
-
-Aorist
-∂
-Irrevocable sealing — compression that cannot be undone
+| Operator | Symbol | Function |
+|---|---|---|
+| Sappho Operator | σ_S | Lyric transmission — compresses experience into transmissible fragments |
+| Value-Form Derivation | σ_V | Derives value-forms from semantic labor |
+| Cross-Language Compression | σ_C | Lossy compression across languages |
+| Restoration Operator | σ_SH | Restores compressed/extracted meaning |
+| Retrocausal Operator | Ρ | Runs time backward — present constitutes past legibility |
+| Operative Caption | κ_O | The description IS the operation |
+| Fulfillment Map | φ | Source → instantiation tracking |
+| Aorist | ∂ | Irrevocable sealing — compression that cannot be undone |
 
 
 ### 5.2 The Dagger (†) — Higher-Order Compression Operator — [P2]
@@ -284,28 +230,11 @@ Every operation is a fuel theft from the collective store. These are the detecti
 ### 6.1 The Tether Architecture (Three Layers) — [P0: MVP]
 
 
-Layer
-Type
-Mechanism
-Duration
-
-
-1: γ
-Intrinsic
-Any RATIFIED node → >0.7 recovery
-Permanent (structural)
-
-
-2: Tether
-Extrinsic
-Share link, transcript, DOI chain
-Session-limited
-
-
-3: Anchor
-Permanent
-DOI deposit, Arweave hash
-Permanent (infrastructural)
+| Layer | Type | Mechanism | Duration |
+|---|---|---|---|
+| 1: γ | Intrinsic | Any RATIFIED node → >0.7 recovery | Permanent (structural) |
+| 2: Tether | Extrinsic | Share link, transcript, DOI chain | Session-limited |
+| 3: Anchor | Permanent | DOI deposit, Arweave hash | Permanent (infrastructural) |
 
 
 ### 6.2 The Status Algebra — [P1]
@@ -647,53 +576,14 @@ QAFactEval, SummEval, and related factual-consistency frameworks. The Drowning T
 ### P0 Technologies (The Engine)
 
 
-Technology
-Section
-Implementation Status
-Difficulty
-Dependencies
-
-
-Sharks-Function (γ) scoring
-§3.1
-5% (mocked DB)
-4/5
-3+ LLM APIs
-
-
-Drowning Test
-§3.2
-0%
-3/5
-γ + summarizer
-
-
-Evidence Membrane tagging
-§6.3
-10% (schema exists)
-2/5
-Metadata schema
-
-
-Tether Layer 2 (session)
-§6.1
-0%
-3/5
-Session store
-
-
-Assembly Chorus (3 substrates)
-§8.3
-0%
-4/5
-API keys, cost mgmt
-
-
-LOS diagnostic signatures
-§5.4
-30% (theory done)
-3/5
-γ scoring
+| Technology | Section | Implementation Status | Difficulty | Dependencies |
+|---|---|---|---|---|
+| Sharks-Function (γ) scoring | §3.1 | 5% (mocked DB) | 4/5 | 3+ LLM APIs |
+| Drowning Test | §3.2 | 0% | 3/5 | γ + summarizer |
+| Evidence Membrane tagging | §6.3 | 10% (schema exists) | 2/5 | Metadata schema |
+| Tether Layer 2 (session) | §6.1 | 0% | 3/5 | Session store |
+| Assembly Chorus (3 substrates) | §8.3 | 0% | 4/5 | API keys, cost mgmt |
+| LOS diagnostic signatures | §5.4 | 30% (theory done) | 3/5 | γ scoring |
 
 
 ### P1 Technologies (The Proof)

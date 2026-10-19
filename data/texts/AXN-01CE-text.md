@@ -45,79 +45,25 @@ The mint produces three linked artifacts: the specification (axes, operators, co
 The mint uses the following category codes and operation labels throughout:
 
 
-Code
-Category
-Examples
+| Code | Category | Examples |
+|---|---|---|
+| S | Structural | compression, density, gravity, layer, substrate, threshold, drift, collapse, saturation, enclosure, commons, infrastructure |
+| G | Governance | provenance, governance, audit, chain, anchor, marker, integrity, verification, enforcement, consent, attribution, custody |
+| E | Economic | bearing-cost, extraction, capture, liquidation, surplus, externalization, labor, value, scarcity |
+| D | Diagnostic | ghost, predatory, lossy, necrotic, parasitic, synthetic, ungoverned |
+| P | Operative | witness, filter, carrier, payload, survival, retrieval, deposit |
 
 
-S
-Structural
-compression, density, gravity, layer, substrate, threshold, drift, collapse, saturation, enclosure, commons, infrastructure
-
-
-G
-Governance
-provenance, governance, audit, chain, anchor, marker, integrity, verification, enforcement, consent, attribution, custody
-
-
-E
-Economic
-bearing-cost, extraction, capture, liquidation, surplus, externalization, labor, value, scarcity
-
-
-D
-Diagnostic
-ghost, predatory, lossy, necrotic, parasitic, synthetic, ungoverned
-
-
-P
-Operative
-witness, filter, carrier, payload, survival, retrieval, deposit
-
-
-Operation
-Label
-Semantic effect
-
-
-O1
-Compound
-Bind two terms from different categories
-
-
-O2
-Inversion
-Apply negation prefix to produce antonym
-
-
-O3
-Scale transfer
-Move concept across scales
-
-
-O4
-Phase transition
-Name the moment one state becomes another
-
-
-O5
-Instrument formation
-Name the tool that performs the operation
-
-
-O6
-Pathology formation
-Name the failure mode
-
-
-O7
-Metric formation
-Name the measurable
-
-
-O8
-Agent formation
-Name the actor
+| Operation | Label | Semantic effect |
+|---|---|---|
+| O1 | Compound | Bind two terms from different categories |
+| O2 | Inversion | Apply negation prefix to produce antonym |
+| O3 | Scale transfer | Move concept across scales |
+| O4 | Phase transition | Name the moment one state becomes another |
+| O5 | Instrument formation | Name the tool that performs the operation |
+| O6 | Pathology formation | Name the failure mode |
+| O7 | Metric formation | Name the measurable |
+| O8 | Agent formation | Name the actor |
 
 
 ---

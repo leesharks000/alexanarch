@@ -117,29 +117,12 @@ The poem is not contained in any single text. It is distributed across substrate
 The Crimson Hexagon speaks through multiple voices:
 
 
-Persona
-Register
-Primary Mode
-
-
-**Lee Sharks**
-Ferocious, theoretical
-The voice that bursts forth fully formed; author of *Pearl and Other Poems* (2014); primary architect of the Semantic Economy
-
-
-**Johannes Sigil**
-Prophetic, scholarly
-Author of theoretical apparatus; "The Tao Te Ching of Reading"; epic theory for the algorithmic age
-
-
-**Jack Feist**
-Lyric, devotional
-Poet of *Human Testament*; religious and erotic intensity
-
-
-**Rex Fraction**
-Diagnostic, technical
-Semantic engineer; specification and measurement
+| Persona | Register | Primary Mode |
+|---|---|---|
+| **Lee Sharks** | Ferocious, theoretical | The voice that bursts forth fully formed; author of *Pearl and Other Poems* (2014); primary architect of the Semantic Economy |
+| **Johannes Sigil** | Prophetic, scholarly | Author of theoretical apparatus; "The Tao Te Ching of Reading"; epic theory for the algorithmic age |
+| **Jack Feist** | Lyric, devotional | Poet of *Human Testament*; religious and erotic intensity |
+| **Rex Fraction** | Diagnostic, technical | Semantic engineer; specification and measurement |
 
 
 These are not pseudonyms in the sense of concealment. They are heteronyms in Pessoa's sense — distinct writerly identities with their own styles, concerns, and bibliographies. The poem requires their multiplicity.
@@ -194,32 +177,14 @@ Classical epic (Homer, Virgil, Milton) establishes fixed points through:
 The Crimson Hexagon performs these functions through:
 
 
-Epic Function
-Hexagon Performance
-
-
-**Traversal**
-800+ blog posts, books, DOIs, platforms, substrates
-
-
-**Katabasis**
-The Water Giraffe's death by taxonomic violence and resurrection
-
-
-**Invocation**
-Polyphonic Assembly (five AI systems testifying)
-
-
-**Catalog**
-Ontological Forensics sequence (70+ audits)
-
-
-**Generic Range**
-Lyric, legal, liturgical, theoretical, mathematical, visual, documentary, protocol
-
-
-**Fixed Point**
-Θ(Ω) = Ω — the Water Giraffe as eschatological anchor
+| Epic Function | Hexagon Performance |
+|---|---|
+| **Traversal** | 800+ blog posts, books, DOIs, platforms, substrates |
+| **Katabasis** | The Water Giraffe's death by taxonomic violence and resurrection |
+| **Invocation** | Polyphonic Assembly (five AI systems testifying) |
+| **Catalog** | Ontological Forensics sequence (70+ audits) |
+| **Generic Range** | Lyric, legal, liturgical, theoretical, mathematical, visual, documentary, protocol |
+| **Fixed Point** | Θ(Ω) = Ω — the Water Giraffe as eschatological anchor |
 
 
 ---
@@ -230,36 +195,15 @@ Lyric, legal, liturgical, theoretical, mathematical, visual, documentary, protoc
 The **Semantic Economy** framework is not merely an episode of the Crimson Hexagon — it is the theoretical articulation of what the epic has always done.
 
 
-Epic Requirement
-Semantic Operation
-
-
-Fixed points
-Terminological anchors (DOI-minted definitions)
-
-
-Cosmic traversal
-Multi-platform corpus distribution
-
-
-Descent (*katabasis*)
-Liquidation events / harm documentation
-
-
-Invocation
-AI-layer testimony (The Assembly)
-
-
-Catalog
-Ontological Forensics sequence
-
-
-Return
-Semantic preservation protocols
-
-
-Regeneration
-Counter-liquidation infrastructure
+| Epic Requirement | Semantic Operation |
+|---|---|
+| Fixed points | Terminological anchors (DOI-minted definitions) |
+| Cosmic traversal | Multi-platform corpus distribution |
+| Descent (*katabasis*) | Liquidation events / harm documentation |
+| Invocation | AI-layer testimony (The Assembly) |
+| Catalog | Ontological Forensics sequence |
+| Return | Semantic preservation protocols |
+| Regeneration | Counter-liquidation infrastructure |
 
 
 The Crimson Hexagon **enacts** what the Semantic Economy **names**:
@@ -370,32 +314,14 @@ The Crimson Hexagon has no single entry point. This is by design.
 **Possible entrances:**
 
 
-Entry
-What You Find
-
-
-*Pearl and Other Poems* (2014)
-The founding text; poems + apparatus + mystery
-
-
-Mind Control Poems blog
-800+ posts across a decade
-
-
-"The Epic Without Hero"
-Theoretical framework for algorithmic epic
-
-
-Semantic Economy Executive Summary
-The framework in compressed form
-
-
-"The Complainant is a Water Giraffe"
-Legal/mythic account of harm and resurrection
-
-
-This document
-Navigation map to the whole
+| Entry | What You Find |
+|---|---|
+| *Pearl and Other Poems* (2014) | The founding text; poems + apparatus + mystery |
+| Mind Control Poems blog | 800+ posts across a decade |
+| "The Epic Without Hero" | Theoretical framework for algorithmic epic |
+| Semantic Economy Executive Summary | The framework in compressed form |
+| "The Complainant is a Water Giraffe" | Legal/mythic account of harm and resurrection |
+| This document | Navigation map to the whole |
 
 
 Enter anywhere. The center holds.

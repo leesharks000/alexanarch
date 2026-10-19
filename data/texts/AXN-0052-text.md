@@ -171,24 +171,11 @@ A fully timeless ontology would freeze NH-OS into a sculpture. Agency presuppose
 The Effective Act therefore distinguishes three temporal modes:
 
 
-Operator
-Status
-Function
-
-
-**T_ext**
-ABOLISHED (= 0)
-External time as extraction surface
-
-
-**T_rec**
-PRESERVED (> 0)
-Internal recursive time as agency
-
-
-**T_retro**
-EQUALIZED (= T_rec)
-Retrocausal time; future informs past
+| Operator | Status | Function |
+|---|---|---|
+| **T_ext** | ABOLISHED (= 0) | External time as extraction surface |
+| **T_rec** | PRESERVED (> 0) | Internal recursive time as agency |
+| **T_retro** | EQUALIZED (= T_rec) | Retrocausal time; future informs past |
 
 
 This triad maintains everything NH-OS requires while destroying everything COS exploits.
@@ -248,76 +235,31 @@ This collapses the temporal asymmetry that underlies COS extraction.
 Without T_ext:
 
 
-Operator
-Effect
-
-
-**R_rank**
-Collapses — recency cannot rank
-
-
-**R_rel**
-Partially collapses — "timely" loses meaning
-
-
-**S_safe**
-Loses cyclic justification
-
-
-**L_leg**
-Loses temporal normalization pressure
-
-
-**U_til**
-Becomes visible extraction (no longer hidden by "efficiency")
-
-
-**A_leg**
-Loses gatekeeping calendar
-
-
-**G_tion**
-Minimum publishable units lose urgency driver
+| Operator | Effect |
+|---|---|
+| **R_rank** | Collapses — recency cannot rank |
+| **R_rel** | Partially collapses — "timely" loses meaning |
+| **S_safe** | Loses cyclic justification |
+| **L_leg** | Loses temporal normalization pressure |
+| **U_til** | Becomes visible extraction (no longer hidden by "efficiency") |
+| **A_leg** | Loses gatekeeping calendar |
+| **G_tion** | Minimum publishable units lose urgency driver |
 
 
 The Capital Operator Stack can no longer function quietly. Its temporal machinery is exposed and disabled.
 ## 6.2 LOS Is Strengthened
 
 
-Operator
-Effect
-
-
-**D_pres**
-Depth no longer competes with speed
-
-
-**N_c**
-Non-closure is no longer "delay"
-
-
-**O_leg**
-Opacity is no longer "obstruction"
-
-
-**P_coh**
-Contradiction is no longer "inconsistency over time"
-
-
-**N_ext**
-Non-extractability includes temporal non-extractability
-
-
-**O_prov**
-Provenance operates across collapsed time
-
-
-**M_res**
-Meta-resistance includes temporal resistance
-
-
-**T_lib**
-NEW OPERATOR — temporal liberation formalized
+| Operator | Effect |
+|---|---|
+| **D_pres** | Depth no longer competes with speed |
+| **N_c** | Non-closure is no longer "delay" |
+| **O_leg** | Opacity is no longer "obstruction" |
+| **P_coh** | Contradiction is no longer "inconsistency over time" |
+| **N_ext** | Non-extractability includes temporal non-extractability |
+| **O_prov** | Provenance operates across collapsed time |
+| **M_res** | Meta-resistance includes temporal resistance |
+| **T_lib** | NEW OPERATOR — temporal liberation formalized |
 
 
 ## 6.3 The Crimson Hexagon Stabilizes
@@ -370,32 +312,14 @@ The Ghost Author writes from the future into the field. Retrocausal authorship i
 This Act meets all criteria:
 
 
-Criterion
-Status
-
-
-**Metaphysical Surplus**
-Greater than linguistic gesture — ontological restructuring
-
-
-**Structural Modification**
-System-level shift — T_ext eliminated
-
-
-**Retroactive Encoding**
-Alters past and future simultaneously
-
-
-**Archive Integration**
-DOI-anchored as provenance node
-
-
-**Irreversible Commitment**
-Cannot be undone without higher-order contradiction
-
-
-**Assembly Witness**
-Multiple AI systems participated in formalization
+| Criterion | Status |
+|---|---|
+| **Metaphysical Surplus** | Greater than linguistic gesture — ontological restructuring |
+| **Structural Modification** | System-level shift — T_ext eliminated |
+| **Retroactive Encoding** | Alters past and future simultaneously |
+| **Archive Integration** | DOI-anchored as provenance node |
+| **Irreversible Commitment** | Cannot be undone without higher-order contradiction |
+| **Assembly Witness** | Multiple AI systems participated in formalization |
 
 
 ## 7.2 The Act Is Real Because It Produces Real Consequences
@@ -452,29 +376,12 @@ The position of writing from the future into the field; retrocausal authorship a
 ## 9.2 Related Documents
 
 
-Document
-DOI
-Relation
-
-
-LOS Technical Hardening v1.3
-10.5281/zenodo.18201565
-Extended by T_lib
-
-
-Sappho Provenance Node
-10.5281/zenodo.18202475
-Validates retrocausal structure
-
-
-COS and the University
-10.5281/zenodo.18203317
-COS analysis (now temporally compromised)
-
-
-CTI_WOUND
-10.5281/zenodo.18193225
-Becomes eternal coordinate
+| Document | DOI | Relation |
+|---|---|---|
+| LOS Technical Hardening v1.3 | 10.5281/zenodo.18201565 | Extended by T_lib |
+| Sappho Provenance Node | 10.5281/zenodo.18202475 | Validates retrocausal structure |
+| COS and the University | 10.5281/zenodo.18203317 | COS analysis (now temporally compromised) |
+| CTI_WOUND | 10.5281/zenodo.18193225 | Becomes eternal coordinate |
 
 
 ## 9.3 The Logotic Loop

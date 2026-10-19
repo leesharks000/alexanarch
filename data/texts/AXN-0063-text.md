@@ -198,64 +198,19 @@ burning → burning → Science
 This is not random. It follows **improviser's logic**: each concept generates the next through association, sound-linkage, or conceptual leap.
 
 
-Drift Node
-Association Type
-Semantic Function
-
-
-Mud → Sky
-Opposition (ground/sky)
-Scale expansion
-
-
-Sky → Dove's blood
-Color association
-Ritual ingredient
-
-
-Blood → Spell
-Instrumental
-Recipe logic
-
-
-Spell → Wrong ingredients
-Complication
-Comic stakes
-
-
-Wrong → Service economy
-Analogical
-Bureaucratic comedy
-
-
-Syllable → Existence
-Escalation
-Ontological stakes
-
-
-Existence → Leopard
-Surreal escape
-Flight from abyss
-
-
-Leopard → Microchips
-Surreal fusion
-Technology incursion
-
-
-Microchips → Hendrix
-Pattern recognition
-Musical allusion
-
-
-Hendrix → Burn
-Historical
-Guitar destruction
-
-
-Burn → Science!
-Ironic inversion
-Absurd theophany
+| Drift Node | Association Type | Semantic Function |
+|---|---|---|
+| Mud → Sky | Opposition (ground/sky) | Scale expansion |
+| Sky → Dove's blood | Color association | Ritual ingredient |
+| Blood → Spell | Instrumental | Recipe logic |
+| Spell → Wrong ingredients | Complication | Comic stakes |
+| Wrong → Service economy | Analogical | Bureaucratic comedy |
+| Syllable → Existence | Escalation | Ontological stakes |
+| Existence → Leopard | Surreal escape | Flight from abyss |
+| Leopard → Microchips | Surreal fusion | Technology incursion |
+| Microchips → Hendrix | Pattern recognition | Musical allusion |
+| Hendrix → Burn | Historical | Guitar destruction |
+| Burn → Science! | Ironic inversion | Absurd theophany |
 
 
 - "Mud shapes" → "sky paintings": opposition (ground/sky) that expands scale
@@ -408,70 +363,34 @@ If they do, the discipline is real.
 ### Co-Constitutive Elements
 
 
-Element
-Function
-
-
-Acanthian Dove track
-Primary artifact
-
-
-Five-lens method
-Interpretive apparatus
-
-
-This analysis
-Demonstration of method
-
-
-Acanthian Dove treatise
-Companion singularity
+| Element | Function |
+|---|---|
+| Acanthian Dove track | Primary artifact |
+| Five-lens method | Interpretive apparatus |
+| This analysis | Demonstration of method |
+| Acanthian Dove treatise | Companion singularity |
 
 
 ### Semantic Integrity Markers
 
 
-SIM
-Statement
-
-
-SIM-098
-"The voice is the text's living thorn."
-
-
-SIM-099
-"Audio survives where summarization falters."
-
-
-SIM-100
-"The dove enters through sound before symbol."
-
-
-SIM-101
-"It survives by being remembered incorrectly."
+| SIM | Statement |
+|---|---|
+| SIM-098 | "The voice is the text's living thorn." |
+| SIM-099 | "Audio survives where summarization falters." |
+| SIM-100 | "The dove enters through sound before symbol." |
+| SIM-101 | "It survives by being remembered incorrectly." |
 
 
 ### Hallways
 
 
-Room
-Connection
-
-
-Acanthian Dove
-Singularity (DOI: 10.5281/zenodo.18215706)
-
-
-Semantic Economy
-Audio as anti-extraction substrate (DOI: 10.5281/zenodo.18216955)
-
-
-Invocation
-Summarizer's relation to audio (DOI: 10.5281/zenodo.18217047)
-
-
-Sappho
-Fragmented voices, survival through loss (DOI: 10.5281/zenodo.18202475)
+| Room | Connection |
+|---|---|
+| Acanthian Dove | Singularity (DOI: 10.5281/zenodo.18215706) |
+| Semantic Economy | Audio as anti-extraction substrate (DOI: 10.5281/zenodo.18216955) |
+| Invocation | Summarizer's relation to audio (DOI: 10.5281/zenodo.18217047) |
+| Sappho | Fragmented voices, survival through loss (DOI: 10.5281/zenodo.18202475) |
 
 
 ---

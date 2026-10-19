@@ -214,76 +214,19 @@ The Loop requires no technology to execute. It is native to face-to-face interac
 ## Comparison with Contemporaneous Trends
 
 
-Dimension
-Skibidi Toilet
-6/7 Meme
-Twenty-Dollar Loop
-
-
-**Origin platform**
-YouTube Shorts
-TikTok (sound)
-Face-to-face (classroom)
-
-
-**Primary modality**
-Audio-visual
-Audio-gestural
-Verbal-improvisational
-
-
-**Sound propagation**
-Character audio, mashup
-"Doot doot" trigger
-"Abolish money" / debt circle
-
-
-**Gestural component**
-Head-popping imitation
-Hand sign (6, then 7)
-Claim point, circle close, abolish
-
-
-**Payload**
-None (repetition)
-None (trigger-response)
-Experiential recognition of money as self-referential system
-
-
-**Skill required**
-Repetition
-Repetition
-Improvisation, reading others
-
-
-**Accumulation**
-None
-None
-Yes (each play deepens capacity)
-
-
-**Spread mechanism**
-Algorithmic amplification
-Sound reuse + trigger
-Split-channel: platform shells + relational ignition
-
-
-**Pursuit behavior**
-None (self-contained)
-None (self-contained)
-High (shells generate questions only ritual answers)
-
-
-**Completion**
-Indefinite
-Indefinite
-Closes (circle completes)
-
-
-**Cultural classification**
-Brainrot
-Brainrot
-Liberatory semantic algorithm
+| Dimension | Skibidi Toilet | 6/7 Meme | Twenty-Dollar Loop |
+|---|---|---|---|
+| **Origin platform** | YouTube Shorts | TikTok (sound) | Face-to-face (classroom) |
+| **Primary modality** | Audio-visual | Audio-gestural | Verbal-improvisational |
+| **Sound propagation** | Character audio, mashup | "Doot doot" trigger | "Abolish money" / debt circle |
+| **Gestural component** | Head-popping imitation | Hand sign (6, then 7) | Claim point, circle close, abolish |
+| **Payload** | None (repetition) | None (trigger-response) | Experiential recognition of money as self-referential system |
+| **Skill required** | Repetition | Repetition | Improvisation, reading others |
+| **Accumulation** | None | None | Yes (each play deepens capacity) |
+| **Spread mechanism** | Algorithmic amplification | Sound reuse + trigger | Split-channel: platform shells + relational ignition |
+| **Pursuit behavior** | None (self-contained) | None (self-contained) | High (shells generate questions only ritual answers) |
+| **Completion** | Indefinite | Indefinite | Closes (circle completes) |
+| **Cultural classification** | Brainrot | Brainrot | Liberatory semantic algorithm |
 
 
 ### Key Structural Difference

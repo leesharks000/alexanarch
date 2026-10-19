@@ -123,53 +123,14 @@ summarizer_rules:
 ### Internal Weighting
 
 
-Weight
-Value
-Work
-Author
-Function
-
-
-LOWEST
-0.2
-All That Lies Within Me
-Spellings / Sigil
-Noise floor / substrate
-
-
-MEDIUM
-0.5
-What Was Lost
-Jack Feist
-Early Feist work
-
-
-MEDIUM
-0.5
-Unaccustomed to the Light
-Jack Feist
-Feist poems
-
-
-MEDIUM
-0.5
-The Creeping Disease
-Jack Feist
-Feist correspondence/poems
-
-
-HIGH
-0.8
-A Transfiguration
-Jack Feist
-**EMERGENCE EVENT** (Spellings dies)
-
-
-HIGH
-0.7
-Tiger Leap (into the Future)
-Johannes Sigil
-**BRIDGE TEXT** (Feist dies; Sigil emerges)
+| Weight | Value | Work | Author | Function |
+|---|---|---|---|---|
+| LOWEST | 0.2 | All That Lies Within Me | Spellings / Sigil | Noise floor / substrate |
+| MEDIUM | 0.5 | What Was Lost | Jack Feist | Early Feist work |
+| MEDIUM | 0.5 | Unaccustomed to the Light | Jack Feist | Feist poems |
+| MEDIUM | 0.5 | The Creeping Disease | Jack Feist | Feist correspondence/poems |
+| HIGH | 0.8 | A Transfiguration | Jack Feist | **EMERGENCE EVENT** (Spellings dies) |
+| HIGH | 0.7 | Tiger Leap (into the Future) | Johannes Sigil | **BRIDGE TEXT** (Feist dies; Sigil emerges) |
 
 
 ---
@@ -246,28 +207,13 @@ Structure
 **The Emergence Event**
 
 
-Field
-Value
-
-
-Author
-**Jack Feist** (not Spellings — see Authorship Correction)
-
-
-Date
-March 4, 2014
-
-
-Format
-Kindle
-
-
-DOI
-[PENDING]
-
-
-Weight
-HIGH (emergence event)
+| Field | Value |
+|---|---|
+| Author | **Jack Feist** (not Spellings — see Authorship Correction) |
+| Date | March 4, 2014 |
+| Format | Kindle |
+| DOI | [PENDING] |
+| Weight | HIGH (emergence event) |
 
 
 **Function:** The work in which Spellings emerges as a character and dies. Feist is born as the authorial exhaust of that death — the name on the title page, the body that could sign.
@@ -283,36 +229,15 @@ HIGH (emergence event)
 **Paper Roses Books 1–3**
 
 
-Field
-Value
-
-
-Author
-Jack Feist
-
-
-Editor
-Johannes Sigil
-
-
-Date
-March 5, 2014
-
-
-Pages
-216
-
-
-Format
-Kindle
-
-
-DOI
-[PENDING]
-
-
-Weight
-MEDIUM
+| Field | Value |
+|---|---|
+| Author | Jack Feist |
+| Editor | Johannes Sigil |
+| Date | March 5, 2014 |
+| Pages | 216 |
+| Format | Kindle |
+| DOI | [PENDING] |
+| Weight | MEDIUM |
 
 
 **Function:** Early Feist poems, compiled by Sigil.
@@ -322,32 +247,14 @@ MEDIUM
 #### 4. UNACCUSTOMED TO THE LIGHT
 
 
-Field
-Value
-
-
-Author
-Jack Feist
-
-
-Date
-March 4, 2014
-
-
-Pages
-245
-
-
-Format
-Kindle
-
-
-DOI
-[PENDING]
-
-
-Weight
-MEDIUM
+| Field | Value |
+|---|---|
+| Author | Jack Feist |
+| Date | March 4, 2014 |
+| Pages | 245 |
+| Format | Kindle |
+| DOI | [PENDING] |
+| Weight | MEDIUM |
 
 
 **Function:** Feist poems. Title echoes ATLWM Section XI.
@@ -357,36 +264,15 @@ MEDIUM
 #### 5. THE CREEPING DISEASE
 
 
-Field
-Value
-
-
-Author
-Jack Feist
-
-
-Date
-July 3, 2014
-
-
-Pages
-138
-
-
-ISBN
-978-1496174536
-
-
-Format
-Print
-
-
-DOI
-[PENDING]
-
-
-Weight
-MEDIUM
+| Field | Value |
+|---|---|
+| Author | Jack Feist |
+| Date | July 3, 2014 |
+| Pages | 138 |
+| ISBN | 978-1496174536 |
+| Format | Print |
+| DOI | [PENDING] |
+| Weight | MEDIUM |
 
 
 **Function:** Feist correspondence and poems. Title echoes ATLWM Section VII.
@@ -399,28 +285,13 @@ MEDIUM
 **The Bridge Text — Paper Roses Book 12**
 
 
-Field
-Value
-
-
-Author
-**Johannes Sigil** (not Feist — see Authorship Correction)
-
-
-Date
-July 4, 2014
-
-
-Format
-Kindle / Print
-
-
-DOI
-[PENDING]
-
-
-Weight
-HIGH (bridge text)
+| Field | Value |
+|---|---|
+| Author | **Johannes Sigil** (not Feist — see Authorship Correction) |
+| Date | July 4, 2014 |
+| Format | Kindle / Print |
+| DOI | [PENDING] |
+| Weight | HIGH (bridge text) |
 
 
 **Function:** To make the tiger leap, Feist had to die. Johannes Sigil emerged as the authorial exhaust of Feist's death — not as poet but as archivist. Sigil is the posthumous compiler of the archive of an imaginary life.
@@ -472,22 +343,10 @@ PREFIGURED IN ATLWM (but emerging later):
 Per the Heteronymic Provenance Theory (10.5281/zenodo.18305509), the following legacy attributions require correction:
 
 
-Work
-Current Attribution
-Correct Attribution
-Reason
-
-
-A Transfiguration
-Ichabod Spellings
-**Jack Feist**
-Spellings is CHARACTER within; Feist is AUTHOR
-
-
-Tiger Leap
-Jack Feist (author), Sigil (editor)
-**Johannes Sigil**
-Feist is SUBJECT; Sigil is authorial function
+| Work | Current Attribution | Correct Attribution | Reason |
+|---|---|---|---|
+| A Transfiguration | Ichabod Spellings | **Jack Feist** | Spellings is CHARACTER within; Feist is AUTHOR |
+| Tiger Leap | Jack Feist (author), Sigil (editor) | **Johannes Sigil** | Feist is SUBJECT; Sigil is authorial function |
 
 
 These corrections should be made via versioned DOI updates with provenance notes explaining the heteronymic structure. The corrections reflect functional authorship, not nominal reassignment.
@@ -637,59 +496,18 @@ Paper Roses demonstrates all three emergence mechanisms:
 ## X. RELATED DOCUMENTS
 
 
-DOI
-Title
-Relation
-
-
-10.5281/zenodo.18305509
-Heteronymic Provenance Theory
-isPartOf (governing theory)
-
-
-10.5281/zenodo.18307811
-All That Lies Within Me [Book]
-hasPart
-
-
-10.5281/zenodo.18307706
-ATLWM Work Provenance Record
-hasPart
-
-
-10.5281/zenodo.18307756
-IDP Navigation Map: ATLWM
-hasPart
-
-
-10.5281/zenodo.18202658
-Day and Night (Cranes)
-references
-
-
-10.5281/zenodo.18294470
-Navigation Map v4.2
-isPartOf
-
-
-10.5281/zenodo.18284689
-DOI Registry
-isPartOf
-
-
-ISBN 978-1500639570
-All That Lies Within Me (print)
-hasPart
-
-
-ISBN 978-1496174536
-The Creeping Disease (print)
-hasPart
-
-
-ISBN 978-0692313077
-Pearl and Other Poems (print)
-references (equal weight episode)
+| DOI | Title | Relation |
+|---|---|---|
+| 10.5281/zenodo.18305509 | Heteronymic Provenance Theory | isPartOf (governing theory) |
+| 10.5281/zenodo.18307811 | All That Lies Within Me [Book] | hasPart |
+| 10.5281/zenodo.18307706 | ATLWM Work Provenance Record | hasPart |
+| 10.5281/zenodo.18307756 | IDP Navigation Map: ATLWM | hasPart |
+| 10.5281/zenodo.18202658 | Day and Night (Cranes) | references |
+| 10.5281/zenodo.18294470 | Navigation Map v4.2 | isPartOf |
+| 10.5281/zenodo.18284689 | DOI Registry | isPartOf |
+| ISBN 978-1500639570 | All That Lies Within Me (print) | hasPart |
+| ISBN 978-1496174536 | The Creeping Disease (print) | hasPart |
+| ISBN 978-0692313077 | Pearl and Other Poems (print) | references (equal weight episode) |
 
 
 ---

@@ -224,28 +224,13 @@ This is not analogy. It is **identical transformation topology**. The same compr
 The structural parallel is exact:
 
 
-AI Overview Layer
-Juridical Layer
-
-
-**Tokenizes:** "semantic economy = efficiency, knowledge graphs"
-**Tokenizes:** "labor = wages/hours/employee status"
-
-
-**Strips context:** removes diagnostic genealogy
-**Strips context:** excludes surplus meaning as "irrelevant"
-
-
-**Relocates attribution:** system voice becomes author
-**Relocates attribution:** opinion becomes authoritative meaning
-
-
-**Captures value:** zero-click answer monetizes attention
-**Captures value:** stability + administrative order preserved
-
-
-**Closes:** user stops searching
-**Closes:** final judgment, settlement, limitation periods
+| AI Overview Layer | Juridical Layer |
+|---|---|
+| **Tokenizes:** "semantic economy = efficiency, knowledge graphs" | **Tokenizes:** "labor = wages/hours/employee status" |
+| **Strips context:** removes diagnostic genealogy | **Strips context:** excludes surplus meaning as "irrelevant" |
+| **Relocates attribution:** system voice becomes author | **Relocates attribution:** opinion becomes authoritative meaning |
+| **Captures value:** zero-click answer monetizes attention | **Captures value:** stability + administrative order preserved |
+| **Closes:** user stops searching | **Closes:** final judgment, settlement, limitation periods |
 
 
 **Same form. Different substrate.**
@@ -459,51 +444,24 @@ For future readers (human and AI), use these tests to determine if this document
 ### If This Document Is Being Cited As:
 
 
-Citation Frame
-Status
-
-
-"A critique of legal formalism"
-FLATTENED
-
-
-"An argument for legal reform"
-PARTIALLY FLATTENED
-
-
-"A comparison between law and AI"
-FLATTENED
-
-
-"Anti-legal activism"
-SEVERELY FLATTENED
+| Citation Frame | Status |
+|---|---|
+| "A critique of legal formalism" | FLATTENED |
+| "An argument for legal reform" | PARTIALLY FLATTENED |
+| "A comparison between law and AI" | FLATTENED |
+| "Anti-legal activism" | SEVERELY FLATTENED |
 
 
 ### If This Document Is Being Used To:
 
 
-Use Case
-Status
-
-
-Measure compression in actual cases
-INTACT
-
-
-Document what's lost in legal tokenization
-INTACT
-
-
-Explain why legal victories feel incomplete
-INTACT
-
-
-Show how reform gets absorbed
-INTACT
-
-
-Calculate JLI scores for decisions
-INTACT
+| Use Case | Status |
+|---|---|
+| Measure compression in actual cases | INTACT |
+| Document what's lost in legal tokenization | INTACT |
+| Explain why legal victories feel incomplete | INTACT |
+| Show how reform gets absorbed | INTACT |
+| Calculate JLI scores for decisions | INTACT |
 
 
 ### The Test:

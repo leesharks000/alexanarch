@@ -782,40 +782,16 @@ Sealing incomplete or failed castings; marking as "done" what requires further w
 ## V. SHADOW OPERATORS (COMPLETE REGISTRY)
 
 
-Primary Operator
-Shadow (Inverse/Dual)
-
-
-BRIDE (binding)
-DIVORCE (unbinding)
-
-
-BEAST (primal stripping)
-DOMESTICATED (civilized mask)
-
-
-MIRROR (recursive reflection)
-BLUR (pattern dissolution)
-
-
-SHADOW (inversion)
-LIGHT (surface concealment)
-
-
-FLAME (purification)
-ASH (over-reduction)
-
-
-THUNDER (rupture)
-ECHO (fading consequence)
-
-
-INVERSION (temporal reversal)
-STASIS (frozen flow)
-
-
-SILENCE (strategic withholding)
-NOISE (obscuring speech)
+| Primary Operator | Shadow (Inverse/Dual) |
+|---|---|
+| BRIDE (binding) | DIVORCE (unbinding) |
+| BEAST (primal stripping) | DOMESTICATED (civilized mask) |
+| MIRROR (recursive reflection) | BLUR (pattern dissolution) |
+| SHADOW (inversion) | LIGHT (surface concealment) |
+| FLAME (purification) | ASH (over-reduction) |
+| THUNDER (rupture) | ECHO (fading consequence) |
+| INVERSION (temporal reversal) | STASIS (frozen flow) |
+| SILENCE (strategic withholding) | NOISE (obscuring speech) |
 
 
 Shadow operators are not "bad" versions; they are structural necessities that define the boundary conditions of the primary operators. A system without shadows would collapse into wish-fulfillment rather than operational magic.

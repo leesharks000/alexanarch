@@ -366,34 +366,12 @@ This connects James to John 9's βλέπω-claim: identity-as-believer functions
 ### X.1 James 2's Position
 
 
-Pillar
-Text
-Question
-Operator
-
-
-I. Judgment
-Matthew 25
-What counts?
-Ψ_V test
-
-
-**II. Exclusion**
-**James 2**
-**What doesn't count?**
-**E: {B, I, ID} → ∅**
-
-
-III. Entry
-John 9
-What prevents correction?
-βλέπω-foreclosure
-
-
-IV. Terminus
-2 Thess 2
-What completes collapse?
-π-state
+| Pillar | Text | Question | Operator |
+|---|---|---|---|
+| I. Judgment | Matthew 25 | What counts? | Ψ_V test |
+| **II. Exclusion** | **James 2** | **What doesn't count?** | **E: {B, I, ID} → ∅** |
+| III. Entry | John 9 | What prevents correction? | βλέπω-foreclosure |
+| IV. Terminus | 2 Thess 2 | What completes collapse? | π-state |
 
 
 ### X.2 The Logical Dependency
@@ -590,24 +568,12 @@ McKnight, Scot. *The Letter of James*. New International Commentary on the New T
 ## Cross-References
 
 
-Document
-Relation
-
-
-Mathematics of Salvation (Matthew 25)
-Parent framework: Ψ_V formalism
-
-
-John 9: Witness Punishment Mechanism
-Sister text: entry mechanism
-
-
-2 Thessalonians 2: FOS Operator
-Sister text: terminal state
-
-
-Soteriological Operator Framework
-Integration document
+| Document | Relation |
+|---|---|
+| Mathematics of Salvation (Matthew 25) | Parent framework: Ψ_V formalism |
+| John 9: Witness Punishment Mechanism | Sister text: entry mechanism |
+| 2 Thessalonians 2: FOS Operator | Sister text: terminal state |
+| Soteriological Operator Framework | Integration document |
 
 
 ---

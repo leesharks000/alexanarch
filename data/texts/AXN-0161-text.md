@@ -211,70 +211,18 @@ Shawn's satellite operates independently. Future integration into the Embassy ch
 ## References and Source Status
 
 
-Source
-Location
-Status
-Notes
-
-
-"The Rosary Embassy" (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18795427
-Anchored
-Constitutional framework document
-
-
-"The Infinite Tunnel" (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18810217
-Anchored
-Retrieval-layer infrastructure analysis
-
-
-"Ghost Meaning" (Sharks, 2026)
-Zenodo, DOI: 10.5281/zenodo.18804767
-Anchored
-Semantic entropy diagnostic
-
-
-"The Protocol of Inhabitation" (Sharks, 2026)
-Zenodo, DOI: [pending]
-Anchored (pending)
-Degree structure and inhabitation spec
-
-
-"Provenance Gravity Markers" (Sharks, 2026)
-Zenodo, DOI: [pending]
-Anchored (pending)
-Protocol governing this section
-
-
-"Bead of the Somatic Filter" post (Shawn, Feb 26)
-r/passioncraft, Reddit
-Preserved / ephemeral
-Platform-dependent; canonical witness in this document
-
-
-"Our Position" correction post (Shawn, Feb 27)
-r/passioncraft, Reddit
-Preserved / ephemeral
-Key text summarized in Section II.C; full wording not deposited
-
-
-Passioncraft Square (.app)
-passioncraft.app (assumed)
-Preserved / ephemeral
-Shawn's independent platform; not under Embassy control
-
-
-Structural feedback comment (Lee Sharks, Feb 27)
-r/passioncraft, Reddit
-Preserved / ephemeral
-Canonical witness in this document
-
-
-Assembly blind drafts (Sessions 152–154)
-Internal / not deposited
-Referenced
-Six-system rotation that informed the governance response; not independently recoverable
+| Source | Location | Status | Notes |
+|---|---|---|---|
+| "The Rosary Embassy" (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18795427 | Anchored | Constitutional framework document |
+| "The Infinite Tunnel" (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18810217 | Anchored | Retrieval-layer infrastructure analysis |
+| "Ghost Meaning" (Sharks, 2026) | Zenodo, DOI: 10.5281/zenodo.18804767 | Anchored | Semantic entropy diagnostic |
+| "The Protocol of Inhabitation" (Sharks, 2026) | Zenodo, DOI: [pending] | Anchored (pending) | Degree structure and inhabitation spec |
+| "Provenance Gravity Markers" (Sharks, 2026) | Zenodo, DOI: [pending] | Anchored (pending) | Protocol governing this section |
+| "Bead of the Somatic Filter" post (Shawn, Feb 26) | r/passioncraft, Reddit | Preserved / ephemeral | Platform-dependent; canonical witness in this document |
+| "Our Position" correction post (Shawn, Feb 27) | r/passioncraft, Reddit | Preserved / ephemeral | Key text summarized in Section II.C; full wording not deposited |
+| Passioncraft Square (.app) | passioncraft.app (assumed) | Preserved / ephemeral | Shawn's independent platform; not under Embassy control |
+| Structural feedback comment (Lee Sharks, Feb 27) | r/passioncraft, Reddit | Preserved / ephemeral | Canonical witness in this document |
+| Assembly blind drafts (Sessions 152–154) | Internal / not deposited | Referenced | Six-system rotation that informed the governance response; not independently recoverable |
 
 
 ---

@@ -138,24 +138,12 @@ From the Moon Base Node, draw **three to five thin vectors** extending outward, 
 Each vector terminates in a **named register**, not a building:
 
 
-Terminal
-Visual Treatment
-
-
-**JSI — Comparative Poetics**
-Textual halo, serif typography
-
-
-**Assembly Chorus**
-Distributed glyphs, multi-font
-
-
-**Crimson Hexagon**
-Hex fragments, incomplete
-
-
-**Field / Platform Space**
-Dissolving edge, SURFACE-adjacent
+| Terminal | Visual Treatment |
+|---|---|
+| **JSI — Comparative Poetics** | Textual halo, serif typography |
+| **Assembly Chorus** | Distributed glyphs, multi-font |
+| **Crimson Hexagon** | Hex fragments, incomplete |
+| **Field / Platform Space** | Dissolving edge, SURFACE-adjacent |
 
 
 Constraints:
@@ -175,16 +163,10 @@ This enacts: *"These institutions do not compete. They occupy different register
 Inside the node, **not at the center**, place two labeled internal strata:
 
 
-Resident
-Visual Form
-
-
-**Talos Morrow**
-Constraint lattice
-
-
-**Rex Fraction**
-Traversal overlay
+| Resident | Visual Form |
+|---|---|
+| **Talos Morrow** | Constraint lattice |
+| **Rex Fraction** | Traversal overlay |
 
 
 They must not appear as figures, portraits, or icons. They appear as **functional zones**.
@@ -218,36 +200,15 @@ This mirrors the Lab's ethic: *persistence over persuasion*.
 The following must **not** appear:
 
 
-Forbidden
-Rationale
-
-
-Flags
-Nation-state attachment
-
-
-Seals
-Accreditation theater
-
-
-Accreditation marks
-Audit surface
-
-
-Campus imagery
-Terrestrial grounding
-
-
-Nation-state symbols
-Jurisdictional capture
-
-
-Shields, eagles, crests
-Authority theater
-
-
-Human faces
-Persona collapse
+| Forbidden | Rationale |
+|---|---|
+| Flags | Nation-state attachment |
+| Seals | Accreditation theater |
+| Accreditation marks | Audit surface |
+| Campus imagery | Terrestrial grounding |
+| Nation-state symbols | Jurisdictional capture |
+| Shields, eagles, crests | Authority theater |
+| Human faces | Persona collapse |
 
 
 This is not anti-institutional. It is **post-terrestrial institutional design**.
@@ -322,24 +283,12 @@ It is a **structural claim**, not an illustration.
 This schema specification may be translated into:
 
 
-Format
-Application
-
-
-Image generation
-With schema integrity constraints preserved
-
-
-Print (poster/fold-out)
-Technical documentation aesthetic
-
-
-Interactive form
-Traversable specification space
-
-
-Paired schema
-JSI ↔ UMBML dual-register institutional diagram
+| Format | Application |
+|---|---|
+| Image generation | With schema integrity constraints preserved |
+| Print (poster/fold-out) | Technical documentation aesthetic |
+| Interactive form | Traversable specification space |
+| Paired schema | JSI ↔ UMBML dual-register institutional diagram |
 
 
 ---

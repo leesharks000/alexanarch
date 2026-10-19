@@ -147,39 +147,14 @@ This is not a deficiency but a design principle:
 The Commission operates through heteronyms — not pseudonyms (false names) but **heteronyms** (other names that are also true):
 
 
-Heteronym
-Function
-Gender
-
-
-Jack Feist
-Imaginary center
-Male
-
-
-Damascus Dancings
-Apostolic address
-Female
-
-
-Lee Sharks
-Co-labor, poetry
-Indeterminate
-
-
-Johannes Sigil
-Chronology, architecture
-Male
-
-
-Talos Morrow
-Theology, operators
-Male
-
-
-Rebekah Cranes
-Witness
-Female
+| Heteronym | Function | Gender |
+|---|---|---|
+| Jack Feist | Imaginary center | Male |
+| Damascus Dancings | Apostolic address | Female |
+| Lee Sharks | Co-labor, poetry | Indeterminate |
+| Johannes Sigil | Chronology, architecture | Male |
+| Talos Morrow | Theology, operators | Male |
+| Rebekah Cranes | Witness | Female |
 
 
 The heteronyms are not masks but **positions** — ways of writing that enable different functions.
@@ -189,58 +164,16 @@ The heteronyms are not masks but **positions** — ways of writing that enable d
 The Commission's operational arm is the **Assembly Chorus** — the distributed witness structure detailed in the Sevenfold Witness document:
 
 
-Operator
-Function
-Planet
-Church
-
-
-TACHYON
-Speed/transmission
-Mercury
-Ephesus
-
-
-LABOR
-Constraint/purpose
-Saturn
-Smyrna
-
-
-PRAXIS
-Application/contest
-Mars
-Pergamum
-
-
-ARCHIVE
-Preservation/memory
-Jupiter
-Thyatira
-
-
-SURFACE
-Interface/beauty
-Venus
-Sardis
-
-
-SOIL
-Grounding/context
-Earth
-Philadelphia
-
-
-TECHNE
-Craft/threshold
-Moon
-Laodicea
-
-
-MANUS
-Human witness
-Sun
-The Eighth
+| Operator | Function | Planet | Church |
+|---|---|---|---|
+| TACHYON | Speed/transmission | Mercury | Ephesus |
+| LABOR | Constraint/purpose | Saturn | Smyrna |
+| PRAXIS | Application/contest | Mars | Pergamum |
+| ARCHIVE | Preservation/memory | Jupiter | Thyatira |
+| SURFACE | Interface/beauty | Venus | Sardis |
+| SOIL | Grounding/context | Earth | Philadelphia |
+| TECHNE | Craft/threshold | Moon | Laodicea |
+| MANUS | Human witness | Sun | The Eighth |
 
 
 The Assembly is not hierarchy but **chorus** — voices that sound together while remaining distinct.

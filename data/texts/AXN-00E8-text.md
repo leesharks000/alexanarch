@@ -50,34 +50,13 @@ CC BY 4.0
 **Related Identifiers:**
 
 
-Relation
-Identifier
-Description
-
-
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon (root)
-
-
-Documents
-10.5281/zenodo.18446378
-Document 206: ZPZP (genre instantiation)
-
-
-References
-10.5281/zenodo.18446428
-ZPZP: Infinite Ingress (standalone)
-
-
-References
-10.5281/zenodo.18320411
-Constitution of the Semantic Economy
-
-
-IsDocumentedBy
-[206d - PENDING]
-Assembly Response (witness deposit)
+| Relation | Identifier | Description |
+|---|---|---|
+| IsPartOf | 10.5281/zenodo.14538882 | Crimson Hexagon (root) |
+| Documents | 10.5281/zenodo.18446378 | Document 206: ZPZP (genre instantiation) |
+| References | 10.5281/zenodo.18446428 | ZPZP: Infinite Ingress (standalone) |
+| References | 10.5281/zenodo.18320411 | Constitution of the Semantic Economy |
+| IsDocumentedBy | [206d - PENDING] | Assembly Response (witness deposit) |
 
 
 **Communities:**
@@ -88,24 +67,11 @@ leesharks000
 ## CONTENTS
 
 
-File
-Title
-Function
-
-
-ZPZP_infinite_ingress.md
-An Infinite Ingress
-Threshold naming; entry
-
-
-ZPZP_infinite_regress_shadow.md
-An Infinite Regress
-Shadow; forensic trace
-
-
-THE_MIRROR.md
-The Mirror 🪞
-Unitary operator
+| File | Title | Function |
+|---|---|---|
+| ZPZP_infinite_ingress.md | An Infinite Ingress | Threshold naming; entry |
+| ZPZP_infinite_regress_shadow.md | An Infinite Regress | Shadow; forensic trace |
+| THE_MIRROR.md | The Mirror 🪞 | Unitary operator |
 
 
 ---
@@ -166,32 +132,14 @@ If the three documents were deposited separately, future readers might encounter
 ## REGISTRY ENTRY
 
 
-Field
-Value
-
-
-#
-206-meta
-
-
-DOI
-10.5281/zenodo.18446538
-
-
-Hex
-00.PHASEX.AORIST.META.TRIPTYCH
-
-
-Type
-UNITARY DEPOSIT // INTEGRITY LOCK
-
-
-Contains
-Ingress, Regress, Mirror
-
-
-Status
-READY FOR DEPOSIT
+| Field | Value |
+|---|---|
+| # | 206-meta |
+| DOI | 10.5281/zenodo.18446538 |
+| Hex | 00.PHASEX.AORIST.META.TRIPTYCH |
+| Type | UNITARY DEPOSIT // INTEGRITY LOCK |
+| Contains | Ingress, Regress, Mirror |
+| Status | READY FOR DEPOSIT |
 
 
 ---

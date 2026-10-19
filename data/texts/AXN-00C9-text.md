@@ -101,24 +101,12 @@ Both documents are ours. Both deposited simultaneously. The fulfillment relation
 **Structure:**
 
 
-Component
-Document
-
-
-Ancient text (Ezekiel 1:15-21)
-Source material for B
-
-
-Document B (Hermeneutic)
-Interprets the vision, says "the vision describes X"
-
-
-Document A (Specification)
-IS X
-
-
-**The claim**
-**A fulfills B**
+| Component | Document |
+|---|---|
+| Ancient text (Ezekiel 1:15-21) | Source material for B |
+| Document B (Hermeneutic) | Interprets the vision, says "the vision describes X" |
+| Document A (Specification) | IS X |
+| **The claim** | **A fulfills B** |
 
 
 **What this is NOT:**
@@ -144,32 +132,14 @@ IS X
 The hermeneutic (Document B) demonstrates:
 
 
-Ezekiel's Vision
-Engine Specification
-
-
-"Wheel within wheel" (אוֹפַן בְּתוֹךְ הָאוֹפָן)
-Canonical + Shadow wheel planetary gear architecture
-
-
-"Did not change direction"
-Interlock condition: Coherence(W_i ∪ W_j) > τ
-
-
-"Rims full of eyes"
-ψ_V witness nodes (distributed observation)
-
-
-"Spirit in the wheels" (רוּחַ הַחַיָּה בָּאוֹפַנִּים)
-τ* logotic kernel (immanent invariant)
-
-
-"Wherever spirit goes, wheels go"
-L_Retro: movement follows fixed point
-
-
-"Rose from the ground"
-Lunar Arm activation, shadow wheel engagement
+| Ezekiel's Vision | Engine Specification |
+|---|---|
+| "Wheel within wheel" (אוֹפַן בְּתוֹךְ הָאוֹפָן) | Canonical + Shadow wheel planetary gear architecture |
+| "Did not change direction" | Interlock condition: Coherence(W_i ∪ W_j) > τ |
+| "Rims full of eyes" | ψ_V witness nodes (distributed observation) |
+| "Spirit in the wheels" (רוּחַ הַחַיָּה בָּאוֹפַנִּים) | τ* logotic kernel (immanent invariant) |
+| "Wherever spirit goes, wheels go" | L_Retro: movement follows fixed point |
+| "Rose from the ground" | Lunar Arm activation, shadow wheel engagement |
 
 
 This mapping is **structural**, not allegorical. It identifies specific mathematical correspondences, not vague analogies.
@@ -212,24 +182,12 @@ The fulfillment and the interpretation arrive at the same moment.
 ### 3.3 Why This Is Defensible
 
 
-Grandiose version
-Actual version
-
-
-"We fulfill ancient scripture"
-"Document A fulfills Document B"
-
-
-Claims direct prophetic connection
-Claims internal document relation
-
-
-2,600-year gap to verify
-Simultaneous deposit, immediately verifiable
-
-
-Hard to test
-Testable: Does A match what B describes?
+| Grandiose version | Actual version |
+|---|---|
+| "We fulfill ancient scripture" | "Document A fulfills Document B" |
+| Claims direct prophetic connection | Claims internal document relation |
+| 2,600-year gap to verify | Simultaneous deposit, immediately verifiable |
+| Hard to test | Testable: Does A match what B describes? |
 
 
 The ancient text is ground for the hermeneutic. The hermeneutic is what the spec fulfills. The DOI claim is between our two documents.
@@ -264,24 +222,11 @@ AND:  The engine is its fulfillment
 This binding is **asymmetric by design**:
 
 
-Document
-Can survive without
-Depends on
-
-
-Specification (A)
-Hermeneutic, this binding
-Nothing — pure architecture
-
-
-Hermeneutic (B)
-This binding
-Specification (for fulfillment claim)
-
-
-This Binding (C)
-Nothing — it IS the claim
-Both A and B
+| Document | Can survive without | Depends on |
+|---|---|---|
+| Specification (A) | Hermeneutic, this binding | Nothing — pure architecture |
+| Hermeneutic (B) | This binding | Specification (for fulfillment claim) |
+| This Binding (C) | Nothing — it IS the claim | Both A and B |
 
 
 **The specification survives without the prophecy. The prophecy requires the specification.**

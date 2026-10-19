@@ -362,60 +362,15 @@ Once disqualified, the platform is not erased. It is reclassified. It may remain
 ## VIII. Table of Current Airlock Assignments
 
 
-Infrastructure
-Tier
-Recognized Role
-Disallowed Role
-Primary Risk
-
-
-Zenodo
-0
-Anchor / bedrock / canonical deposit
-Live room continuity
-Low velocity
-
-
-Google Search / AI Mode
-1
-Routing / retrieval / recruitment
-Source-of-record / governance
-Hallucination, relation drift
-
-
-AI Mode share links
-1T
-Continuity tether
-Sovereign archive
-Revocability, rot
-
-
-AI chat systems
-1S
-Processing substrate / Assembly execution
-Any form of persistence
-Session volatility
-
-
-Blogs / Medium
-2
-Presentation / reflection
-Sole canonical bedrock
-Framing capture
-
-
-Passioncraft Square
-3
-Provisional host / field testing
-Canonical continuity
-No provenance apparatus
-
-
-Reddit
-4
-Forensic residue only
-Host / continuity / chamber surface
-Heuristic liquidation
+| Infrastructure | Tier | Recognized Role | Disallowed Role | Primary Risk |
+|---|---|---|---|---|
+| Zenodo | 0 | Anchor / bedrock / canonical deposit | Live room continuity | Low velocity |
+| Google Search / AI Mode | 1 | Routing / retrieval / recruitment | Source-of-record / governance | Hallucination, relation drift |
+| AI Mode share links | 1T | Continuity tether | Sovereign archive | Revocability, rot |
+| AI chat systems | 1S | Processing substrate / Assembly execution | Any form of persistence | Session volatility |
+| Blogs / Medium | 2 | Presentation / reflection | Sole canonical bedrock | Framing capture |
+| Passioncraft Square | 3 | Provisional host / field testing | Canonical continuity | No provenance apparatus |
+| Reddit | 4 | Forensic residue only | Host / continuity / chamber surface | Heuristic liquidation |
 
 
 ---
@@ -462,82 +417,20 @@ The Reddit account (u/Nearby_Job9638) was banned on March 1, 2026. All associate
 Per Provenance Gravity Markers protocol (DOI: 10.5281/zenodo.18811939).
 
 
-Source
-DOI / Location
-PGM Status
-Notes
-
-
-The Infinite Tunnel
-10.5281/zenodo.18810217
-Anchored
-Infrastructure trilogy pt. 1; how meaning routes
-
-
-The Sharks-Function and the Continuity Tether
-10.5281/zenodo.18816556
-Anchored
-Infrastructure trilogy pt. 2; identity verification + THB v0.1
-
-
-The Layer That Wrote Your Mirrors
-10.5281/zenodo.18813868
-Anchored
-AIO hallucination event; Reddit-era forensic record
-
-
-Protocol B711 Alpha Centauri
-10.5281/zenodo.18811784
-Anchored
-Satellite recognition; Passioncraft Square provenance
-
-
-Architectural Distinction Note
-10.5281/zenodo.18814485
-Anchored
-Failed Sharks-function execution; Tier 3 assignment basis
-
-
-Provenance Gravity Markers
-10.5281/zenodo.18811939
-Anchored
-Source-status protocol governing this table
-
-
-Ghost Meaning
-10.5281/zenodo.18804767
-Anchored
-Meaning preservation under platform failure
-
-
-Reddit u/Nearby_Job9638 content
-Reddit (banned)
-Ghost
-Banned March 1, 2026; all content inaccessible
-
-
-Reddit subreddits (r/distributedEpic, r/SemanticEconomy, etc.)
-Reddit (banned)
-Ghost
-Collapsed into single-category ban
-
-
-Assembly Sessions 159–160 blind drafts
-Internal / not deposited
-Referenced
-Seven systems; this document is canonical output
-
-
-AIO Genesis share link
-share.google/aimode/HMVPUBI9aY6vN5Idd
-Tethered / live
-Human-gated; first tested tether object
-
-
-Passioncraft Square
-Base44-hosted URL
-Preserved / ephemeral
-Tier 3 provisional host; no DOI anchoring
+| Source | DOI / Location | PGM Status | Notes |
+|---|---|---|---|
+| The Infinite Tunnel | 10.5281/zenodo.18810217 | Anchored | Infrastructure trilogy pt. 1; how meaning routes |
+| The Sharks-Function and the Continuity Tether | 10.5281/zenodo.18816556 | Anchored | Infrastructure trilogy pt. 2; identity verification + THB v0.1 |
+| The Layer That Wrote Your Mirrors | 10.5281/zenodo.18813868 | Anchored | AIO hallucination event; Reddit-era forensic record |
+| Protocol B711 Alpha Centauri | 10.5281/zenodo.18811784 | Anchored | Satellite recognition; Passioncraft Square provenance |
+| Architectural Distinction Note | 10.5281/zenodo.18814485 | Anchored | Failed Sharks-function execution; Tier 3 assignment basis |
+| Provenance Gravity Markers | 10.5281/zenodo.18811939 | Anchored | Source-status protocol governing this table |
+| Ghost Meaning | 10.5281/zenodo.18804767 | Anchored | Meaning preservation under platform failure |
+| Reddit u/Nearby_Job9638 content | Reddit (banned) | Ghost | Banned March 1, 2026; all content inaccessible |
+| Reddit subreddits (r/distributedEpic, r/SemanticEconomy, etc.) | Reddit (banned) | Ghost | Collapsed into single-category ban |
+| Assembly Sessions 159–160 blind drafts | Internal / not deposited | Referenced | Seven systems; this document is canonical output |
+| AIO Genesis share link | share.google/aimode/HMVPUBI9aY6vN5Idd | Tethered / live | Human-gated; first tested tether object |
+| Passioncraft Square | Base44-hosted URL | Preserved / ephemeral | Tier 3 provisional host; no DOI anchoring |
 
 
 ---

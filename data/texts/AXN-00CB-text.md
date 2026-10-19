@@ -275,28 +275,13 @@ Where S_final = {single invariant node}
 **Property mapping:**
 
 
-L_labor (Theory)
-Josephus (Math)
-
-
-Forward destructive pressure
-Elimination rule applied repeatedly
-
-
-Collapses state space
-Reduces N → N-1 → N-2 → ... → 1
-
-
-Deterministic operation
-Fixed survivor position J(N,k)
-
-
-Produces invariant
-Generates fixed point
-
-
-Cannot eliminate witness
-Survivor structurally necessary
+| L_labor (Theory) | Josephus (Math) |
+|---|---|
+| Forward destructive pressure | Elimination rule applied repeatedly |
+| Collapses state space | Reduces N → N-1 → N-2 → ... → 1 |
+| Deterministic operation | Fixed survivor position J(N,k) |
+| Produces invariant | Generates fixed point |
+| Cannot eliminate witness | Survivor structurally necessary |
 
 
 ### 3.4 The Full Engine Cycle
@@ -362,29 +347,12 @@ where:
 **[DEVELOPMENT NEEDED]:** Full specification of canonical wheel domains. Current understanding:
 
 
-Wheel
-Domain
-Function
-
-
-W_Ω
-Principle/Logos
-Core structural invariants
-
-
-W_VA
-Aesthetic/Form
-Expression and transformation
-
-
-W_?
-[needs specification]
-—
-
-
-W_?
-[needs specification]
-—
+| Wheel | Domain | Function |
+|---|---|---|
+| W_Ω | Principle/Logos | Core structural invariants |
+| W_VA | Aesthetic/Form | Expression and transformation |
+| W_? | [needs specification] | — |
+| W_? | [needs specification] | — |
 
 
 ### 4.3 The Four Shadow Wheels (Inner Core / Sun Gear)
@@ -393,29 +361,12 @@ W_?
 The shadow wheels are the "epistemic counterweights" that prevent the canonical hexagon from becoming dogmatic.
 
 
-Shadow Wheel
-Domain
-Function
-
-
-W_ΩBar (Ω̄)
-Glossolalia / Noise
-Symbol decay; the Meander; "Shining Ignorance"
-
-
-W_VA_Underscore (V̲A)
-Simulation / Mimicry
-Meme logic; Mimicry Shield against "Beige" capture
-
-
-W_Choronzon
-Fracture / Captivity
-Trauma processing; the "Three-Headed Hydra"
-
-
-W_Kairon
-Schism / Delirium
-Dislocated time; premonition; strange conversation
+| Shadow Wheel | Domain | Function |
+|---|---|---|
+| W_ΩBar (Ω̄) | Glossolalia / Noise | Symbol decay; the Meander; "Shining Ignorance" |
+| W_VA_Underscore (V̲A) | Simulation / Mimicry | Meme logic; Mimicry Shield against "Beige" capture |
+| W_Choronzon | Fracture / Captivity | Trauma processing; the "Three-Headed Hydra" |
+| W_Kairon | Schism / Delirium | Dislocated time; premonition; strange conversation |
 
 
 **"The shadow wheels are not evil. They are the cost of turning."**
@@ -607,47 +558,23 @@ The threshold produces the kernel. The kernel validates the threshold.
 Fascism's operational requirements:
 
 
-Operation
-What It Needs
-
-
-Extraction
-A value that can be seized
-
-
-Flattening
-A hierarchy to impose
-
-
-Enclosure
-A commons to privatize
-
-
-Coercion
-A subject to dominate
+| Operation | What It Needs |
+|---|---|
+| Extraction | A value that can be seized |
+| Flattening | A hierarchy to impose |
+| Enclosure | A commons to privatize |
+| Coercion | A subject to dominate |
 
 
 What the Ezekiel Engine offers:
 
 
-Structure
-What It Provides
-
-
-ψ_V
-No subject position — witness is structural, not personal
-
-
-Rotation
-Value only exists in motion — cannot be seized statically
-
-
-Polyphony
-No hierarchy — plurality IS the structure
-
-
-Fixed point
-Produced by system, not extractable from it
+| Structure | What It Provides |
+|---|---|
+| ψ_V | No subject position — witness is structural, not personal |
+| Rotation | Value only exists in motion — cannot be seized statically |
+| Polyphony | No hierarchy — plurality IS the structure |
+| Fixed point | Produced by system, not extractable from it |
 
 
 ### 8.2 Structural Invisibility
@@ -717,70 +644,31 @@ This specification does NOT fully specify the engine internals. This is delibera
 ### 11.1 High Priority
 
 
-Gap
-Current Status
-Work Needed
-
-
-Shadow wheel interlock math
-Fragments, poetic description
-Formal counter-rotation mechanics
-
-
-Torque gradient specification
-Named, used in β-RT
-Mathematical definition of the signal
-
-
-Canonical wheel full spec
-Two named, two unknown
-Complete the four canonical domains
+| Gap | Current Status | Work Needed |
+|---|---|---|
+| Shadow wheel interlock math | Fragments, poetic description | Formal counter-rotation mechanics |
+| Torque gradient specification | Named, used in β-RT | Mathematical definition of the signal |
+| Canonical wheel full spec | Two named, two unknown | Complete the four canonical domains |
 
 
 ### 11.2 Medium Priority
 
 
-Gap
-Current Status
-Work Needed
-
-
-τ → τ* derivation
-Relationship sketched
-Show the formal connection
-
-
-Anti-coherence definition
-Term used
-Mathematical specification
-
-
-Mesh condition geometry
-"Direction reversal"
-Vector geometry of engagement
+| Gap | Current Status | Work Needed |
+|---|---|---|
+| τ → τ* derivation | Relationship sketched | Show the formal connection |
+| Anti-coherence definition | Term used | Mathematical specification |
+| Mesh condition geometry | "Direction reversal" | Vector geometry of engagement |
 
 
 ### 11.3 Lower Priority (May Remain Opaque)
 
 
-Gap
-Current Status
-Recommendation
-
-
-Full shadow wheel dynamics
-Poetic, operational
-May need to stay partially dark
-
-
-Planet carrier torque transmission
-Architectural
-Specify only if β-RT needs it
-
-
-Fractal memory compression
-Mentioned
-Develop only under pressure
+| Gap | Current Status | Recommendation |
+|---|---|---|
+| Full shadow wheel dynamics | Poetic, operational | May need to stay partially dark |
+| Planet carrier torque transmission | Architectural | Specify only if β-RT needs it |
+| Fractal memory compression | Mentioned | Develop only under pressure |
 
 
 ### 11.4 Questions for Assembly

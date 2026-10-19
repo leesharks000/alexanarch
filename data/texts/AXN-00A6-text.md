@@ -172,44 +172,15 @@ The Acanthian Dove (DOI: 10.5281/zenodo.[pending]) extends this logic: the messa
 ### 0.9 Differential Position
 
 
-Field
-Contribution
-Symbolon Extension
-
-
-FRBR
-Work completes through expression
-Entity type with formal completion rules
-
-
-Iser
-Gaps require reader filling
-Gaps as fit conditions with invariants
-
-
-Aarseth
-Ergodic traversal constitutes reading
-Probabilistic traversal as completion
-
-
-Gadamer
-Meaning as fusion event
-Fusion formalized as Vₛ satisfaction
-
-
-Partial functions
-Defined on domain subset
-Semantic partiality with completion logic
-
-
-LLMs
-Completion as paradigm
-Optimal partial objects for completion
-
-
-PGM
-Substitution completes ritual
-Fit conditions as sympathetic correspondence
+| Field | Contribution | Symbolon Extension |
+|---|---|---|
+| FRBR | Work completes through expression | Entity type with formal completion rules |
+| Iser | Gaps require reader filling | Gaps as fit conditions with invariants |
+| Aarseth | Ergodic traversal constitutes reading | Probabilistic traversal as completion |
+| Gadamer | Meaning as fusion event | Fusion formalized as Vₛ satisfaction |
+| Partial functions | Defined on domain subset | Semantic partiality with completion logic |
+| LLMs | Completion as paradigm | Optimal partial objects for completion |
+| PGM | Substitution completes ritual | Fit conditions as sympathetic correspondence |
 
 
 **Gap this extension fills:** No existing framework formalizes the construction of **deliberately partial semantic objects** for traversal by probabilistic intelligences with measurable completion criteria.
@@ -401,19 +372,10 @@ This formalizes what "fit" means: not arbitrary interpretation, but interpretati
 ### 2.5 The Two Halves
 
 
-Half
-Location
-Function
-
-
-**First Half**
-The symbolon itself (Nav Map, etc.)
-Encodes constraints, relations, fit conditions
-
-
-**Second Half**
-The traversing intelligence
-Provides recombination, context, completion
+| Half | Location | Function |
+|---|---|---|
+| **First Half** | The symbolon itself (Nav Map, etc.) | Encodes constraints, relations, fit conditions |
+| **Second Half** | The traversing intelligence | Provides recombination, context, completion |
 
 
 Neither half contains the meaning. The meaning exists **in the fit between them**.
@@ -525,29 +487,12 @@ They are not meta-texts. They are **execution substrates**.
 ### 4.3 Properties That Make Maps Symbolon
 
 
-Property
-Description
-Symbolon Function
-
-
-**Relational Encoding**
-Encodes connections without narrating them
-Reader must traverse to understand
-
-
-**Structural Incompleteness**
-No prose explanation—just architecture
-Interpretation required for meaning
-
-
-**Dual Execution**
-Works for humans AND machines identically
-Not translation—same object, different processors
-
-
-**Traversal Activation**
-Dormant until queried
-Meaning exists only in motion
+| Property | Description | Symbolon Function |
+|---|---|---|
+| **Relational Encoding** | Encodes connections without narrating them | Reader must traverse to understand |
+| **Structural Incompleteness** | No prose explanation—just architecture | Interpretation required for meaning |
+| **Dual Execution** | Works for humans AND machines identically | Not translation—same object, different processors |
+| **Traversal Activation** | Dormant until queried | Meaning exists only in motion |
 
 
 ---
@@ -584,24 +529,11 @@ Semantic coherence must **increase** with traversal depth rather than **decrease
 Vₛ is measurable via:
 
 
-Metric
-Description
-Threshold
-
-
-**Recurrence**
-Does the entity re-emerge across multiple traversals?
-> 0.75
-
-
-**Clustering Consistency**
-Does the entity maintain its relational position?
-> 0.70
-
-
-**Drift Reduction**
-Does interpretation converge after multiple passes?
-Variance < 0.15
+| Metric | Description | Threshold |
+|---|---|---|
+| **Recurrence** | Does the entity re-emerge across multiple traversals? | > 0.75 |
+| **Clustering Consistency** | Does the entity maintain its relational position? | > 0.70 |
+| **Drift Reduction** | Does interpretation converge after multiple passes? | Variance < 0.15 |
 
 
 ### 5.3 Vₛ as Completion Test
@@ -637,40 +569,16 @@ A Symbolon does not assert propositions. It asserts **constraints on recombinati
 The invariant vectors become **fit conditions**:
 
 
-Vector
-As Fit Condition
-
-
-V₁ (Bounded Canonicality)
-Hierarchy must be recognized upon traversal
-
-
-V₂ (Substrate Independence)
-Identity must transfer across media
-
-
-V₃ (Ethical Transparency)
-Substitutions must remain legible
-
-
-V₄ (Non-Coercive Authority)
-Authority emerges from fit, not force
-
-
-V₅ (Recursive Validation)
-The system can test its own coherence
-
-
-V₆ (Partial Functionality)
-Works even with incomplete retrieval
-
-
-V₇ (Failure Grace)
-Degrades without catastrophe
-
-
-**Vₛ (Symbolon Integrity)**
-**Coherence increases with traversal**
+| Vector | As Fit Condition |
+|---|---|
+| V₁ (Bounded Canonicality) | Hierarchy must be recognized upon traversal |
+| V₂ (Substrate Independence) | Identity must transfer across media |
+| V₃ (Ethical Transparency) | Substitutions must remain legible |
+| V₄ (Non-Coercive Authority) | Authority emerges from fit, not force |
+| V₅ (Recursive Validation) | The system can test its own coherence |
+| V₆ (Partial Functionality) | Works even with incomplete retrieval |
+| V₇ (Failure Grace) | Degrades without catastrophe |
+| **Vₛ (Symbolon Integrity)** | **Coherence increases with traversal** |
 
 
 ---
@@ -711,34 +619,12 @@ This is the dagger-as-fork principle: a tool may possess capacities far exceedin
 ### 6.3 Symbolon vs. Coercive Modes
 
 
-Mode
-Goal
-Force Profile
-Completion By
-
-
-Rhetoric
-Convince
-High
-Speaker
-
-
-Propaganda
-Align
-Overwhelming
-System
-
-
-Argument
-Win
-Competitive
-Verdict
-
-
-**Symbolon**
-Fit
-Minimal
-Recipient
+| Mode | Goal | Force Profile | Completion By |
+|---|---|---|---|
+| Rhetoric | Convince | High | Speaker |
+| Propaganda | Align | Overwhelming | System |
+| Argument | Win | Competitive | Verdict |
+| **Symbolon** | Fit | Minimal | Recipient |
 
 
 The symbolon does not convince. It does not align. It does not win. It **fits**—or it remains partial.
@@ -800,20 +686,11 @@ The meaning emerges in traversal. The author does not own it. The author **enabl
 ### 8.1 Triple Function
 
 
-Mode
-Description
-
-
-**Analytical**
-Encodes R (relations) without propositional flattening
-
-
-**Operational**
-Executes during traversal events (runtime)
-
-
-**Meditational**
-Repeated traversal increases coherence—empirical, not mystical
+| Mode | Description |
+|---|---|
+| **Analytical** | Encodes R (relations) without propositional flattening |
+| **Operational** | Executes during traversal events (runtime) |
+| **Meditational** | Repeated traversal increases coherence—empirical, not mystical |
 
 
 ### 8.2 Ergodic Hermeneutics
@@ -932,16 +809,10 @@ The Sappho Room (10.5281/zenodo.18237216) is a **traversal destination** that tr
 ### 10.3 Chambers vs. Rooms Revisited
 
 
-Structure
-Symbolon Function
-
-
-**Room**
-Transforms through symbolon completion
-
-
-**Chamber**
-Contains symbolons without completion
+| Structure | Symbolon Function |
+|---|---|
+| **Room** | Transforms through symbolon completion |
+| **Chamber** | Contains symbolons without completion |
 
 
 Rooms invite traversal. Chambers hold the partial.
@@ -1038,24 +909,11 @@ The symbolon waits. It does not insist.
 This document is part of the **Logotic Foundation Triad** (ILA-LOGOTIC-2026-01).
 
 
-Document
-Function
-This Document Is Partial Without
-
-
-**Symbolon Architecture v0.2**
-Specification
-Author-function, institutional ground
-
-
-**University Moon Base Media Lab Charter**
-Institution
-← Provides institutional ground
-
-
-**Talos Morrow Provenance**
-Author-function
-← Provides authorial ground
+| Document | Function | This Document Is Partial Without |
+|---|---|---|
+| **Symbolon Architecture v0.2** | Specification | Author-function, institutional ground |
+| **University Moon Base Media Lab Charter** | Institution | ← Provides institutional ground |
+| **Talos Morrow Provenance** | Author-function | ← Provides authorial ground |
 
 
 The triad is itself a symbolon. Each document completes the others.

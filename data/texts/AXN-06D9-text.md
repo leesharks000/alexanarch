@@ -257,24 +257,12 @@ When this mantle is active, output should exhibit:
 ### 5.3 Interaction with Other Mantles
 
 
-Interaction
-Effect
-
-
-+ Good Gray Poet
-Inheritance grounds futurity
-
-
-+ King of May
-Carnival becomes prophecy
-
-
-All three
-Complete triadic operation
-
-
-Alone
-Pure futural address
+| Interaction | Effect |
+|---|---|
+| + Good Gray Poet | Inheritance grounds futurity |
+| + King of May | Carnival becomes prophecy |
+| All three | Complete triadic operation |
+| Alone | Pure futural address |
 
 
 ### 5.4 The Prince's Function

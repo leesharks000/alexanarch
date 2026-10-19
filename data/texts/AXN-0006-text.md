@@ -165,28 +165,13 @@ When someone says "I hereby abolish money," the correct response is:
 Money performs five functions:
 
 
-Function
-What It Does
-
-
-**Memory**
-Records who contributed what
-
-
-**Coordination**
-Aligns activity across strangers
-
-
-**Allocation**
-Determines who gets access to what
-
-
-**Settlement**
-Resolves obligations and disputes
-
-
-**Incentivization**
-Motivates participation
+| Function | What It Does |
+|---|---|
+| **Memory** | Records who contributed what |
+| **Coordination** | Aligns activity across strangers |
+| **Allocation** | Determines who gets access to what |
+| **Settlement** | Resolves obligations and disputes |
+| **Incentivization** | Motivates participation |
 
 
 Any post-money system must address **all five** without reintroducing currency properties:

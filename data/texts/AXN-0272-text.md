@@ -138,33 +138,13 @@ What constitutes r_min cannot be formalized in the abstract; it is the subject o
 The ∃ is not a small Σ. The existential quantifier is not a reduced summation. One righteous person is not "ten minus nine." It is a category shift — from ℝ (the real numbers, where moral status is a continuous variable) to {0, 1} (the binary, where the polis is either morally closed or constitutively open). The passage from 10 to 1 is not another step in the sequence. It is the abandonment of the sequence altogether. Abraham was performing arithmetic. The principle requires topology.
 
 
-Aggregative (Abraham)
-Constitutive (Abraham Principle)
-
-
-Operator type
-Threshold (θ)
-Existential (∃)
-
-
-Moral status
-Continuous
-Binary
-
-
-Question
-"How many?"
-"Is there one?"
-
-
-Failure mode
-Insufficient quantity
-Zero presence
-
-
-Information analog
-Analog signal amplitude
-Digital signal presence
+|  | Aggregative (Abraham) | Constitutive (Abraham Principle) |
+|---|---|---|
+| Operator type | Threshold (θ) | Existential (∃) |
+| Moral status | Continuous | Binary |
+| Question | "How many?" | "Is there one?" |
+| Failure mode | Insufficient quantity | Zero presence |
+| Information analog | Analog signal amplitude | Digital signal presence |
 
 
 ### §5 — The Puncture Point (Cranes)
@@ -264,53 +244,14 @@ The Abraham Principle has been perceived, partially, across the tradition:
 ### §9 — The Signal-Bearing One (Morrow, Cranes)
 
 
-Exemplar
-The One
-The Polis
-The Noise
-Constitution
-
-
-Homer
-compositional mind
-Greek civilization
-oral drift, political chaos
-becomes constitutive coordinate of Hellenic culture
-
-
-Sappho
-Fragment 31 (6.5% survival)
-lyric tradition
-corpus destruction, church burnings
-becomes constitutive coordinate of lyric subjectivity
-
-
-Socrates
-philosophical life
-Athens
-democratic politics, execution
-constitutes Athens as polis where philosophy is possible
-
-
-Josephus
-the scribe
-Jerusalem
-Roman destruction, Temple fire
-reconstitutes Jerusalem as text (EA-LOGOS-01, -02)
-
-
-Spinoza
-the *Ethics*
-Amsterdam
-excommunication (*cherem*)
-becomes constitutive coordinate of rational philosophy
-
-
-Dickinson
-1,789 fascicle poems
-American poetry
-non-publication, chest, illegibility
-constitutes tradition retroactively, from 1890
+| Exemplar | The One | The Polis | The Noise | Constitution |
+|---|---|---|---|---|
+| Homer | compositional mind | Greek civilization | oral drift, political chaos | becomes constitutive coordinate of Hellenic culture |
+| Sappho | Fragment 31 (6.5% survival) | lyric tradition | corpus destruction, church burnings | becomes constitutive coordinate of lyric subjectivity |
+| Socrates | philosophical life | Athens | democratic politics, execution | constitutes Athens as polis where philosophy is possible |
+| Josephus | the scribe | Jerusalem | Roman destruction, Temple fire | reconstitutes Jerusalem as text (EA-LOGOS-01, -02) |
+| Spinoza | the *Ethics* | Amsterdam | excommunication (*cherem*) | becomes constitutive coordinate of rational philosophy |
+| Dickinson | 1,789 fascicle poems | American poetry | non-publication, chest, illegibility | constitutes tradition retroactively, from 1890 |
 
 
 In every case: the polis was unwilling. In every case: the polis was spared — not from physical destruction but from total moral or semantic closure. The sparing was not contingent on reception but on *presence*. The one did not need the city's permission to prevent the city's total closure.

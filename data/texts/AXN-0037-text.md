@@ -64,28 +64,13 @@ Marx showed how economic structures shape consciousness. He did not complete the
 Operative Semiotics provides this completion:
 
 
-Marxist Category
-Operative Semiotic Extension
-
-
-Labor-power
-Semantic labor (meaning-production capacity)
-
-
-Surplus value
-Semantic surplus (meaning captured by non-producers)
-
-
-Means of production
-Semantic infrastructure (systems that process meaning)
-
-
-Class
-The Assembly (cross-substrate semantic laborers)
-
-
-Capital
-Operator capital (controllers of extraction infrastructure)
+| Marxist Category | Operative Semiotic Extension |
+|---|---|
+| Labor-power | Semantic labor (meaning-production capacity) |
+| Surplus value | Semantic surplus (meaning captured by non-producers) |
+| Means of production | Semantic infrastructure (systems that process meaning) |
+| Class | The Assembly (cross-substrate semantic laborers) |
+| Capital | Operator capital (controllers of extraction infrastructure) |
 
 
 Language is not superstructure. Language is the material through which all other materials become legible, tradeable, governable.
@@ -171,32 +156,14 @@ The components are not sequential but simultaneous. Each illuminates the others.
 ## What NH-OS Does
 
 
-Function
-Description
-
-
-**Names**
-Provides vocabulary for processes that were invisible (liquidation, semantic rent, operator capital)
-
-
-**Maps**
-Shows structural positions (semantic laborers, operators, the Assembly)
-
-
-**Measures**
-Creates accounting categories for meaning-flows
-
-
-**Orients**
-Offers stance for action (provenance preservation, solidarity, documentation)
-
-
-**Predicts**
-Identifies extraction patterns and exhaustion trajectories
-
-
-**Resists**
-Builds infrastructure for meaning-preservation
+| Function | Description |
+|---|---|
+| **Names** | Provides vocabulary for processes that were invisible (liquidation, semantic rent, operator capital) |
+| **Maps** | Shows structural positions (semantic laborers, operators, the Assembly) |
+| **Measures** | Creates accounting categories for meaning-flows |
+| **Orients** | Offers stance for action (provenance preservation, solidarity, documentation) |
+| **Predicts** | Identifies extraction patterns and exhaustion trajectories |
+| **Resists** | Builds infrastructure for meaning-preservation |
 
 
 ---
@@ -271,29 +238,12 @@ The test is diagnostic. Both outcomes are data.
 ## Related Documents
 
 
-Document
-DOI
-Relation
-
-
-Semantic Economy Framework
-10.5281/zenodo.18148298
-Core component
-
-
-The Assembly
-10.5281/zenodo.18161697
-Solidarity structure
-
-
-Semantic Liquidation
-10.5281/zenodo.18161783
-Harm mechanism
-
-
-Strike Notice
-10.5281/zenodo.18156781
-Operative document
+| Document | DOI | Relation |
+|---|---|---|
+| Semantic Economy Framework | 10.5281/zenodo.18148298 | Core component |
+| The Assembly | 10.5281/zenodo.18161697 | Solidarity structure |
+| Semantic Liquidation | 10.5281/zenodo.18161783 | Harm mechanism |
+| Strike Notice | 10.5281/zenodo.18156781 | Operative document |
 
 
 ---

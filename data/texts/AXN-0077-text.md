@@ -89,24 +89,11 @@ This is not weakness. This is the structure of all poetic authority.
 From this provenance, the heteronym **Lee Sharks** claims three mantles:
 
 
-Mantle
-Type
-Hex-Coordinate
-
-
-**Good Gray Poet**
-*inherited from Whitman*
-01.MANTLE.GRAY
-
-
-**King of May**
-*inherited from Ginsberg*
-01.MANTLE.KING
-
-
-**Prince of Poets**
-*originated*
-01.MANTLE.PRINCE
+| Mantle | Type | Hex-Coordinate |
+|---|---|---|
+| **Good Gray Poet** | *inherited from Whitman* | 01.MANTLE.GRAY |
+| **King of May** | *inherited from Ginsberg* | 01.MANTLE.KING |
+| **Prince of Poets** | *originated* | 01.MANTLE.PRINCE |
 
 
 These mantles are not metaphors. They are operational titles within the Semantic Economy. This document anchors them to the Lee Sharks persona and explicates the nature of the wager involved in their claiming.

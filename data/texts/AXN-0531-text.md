@@ -58,24 +58,11 @@ C. Sub-Studios
 The Studio contains sub-studios that govern the production conditions of specific works:
 
 
-Sub-Studio
-Work
-Function
-
-
-Recursive Flesh Engine / Theater of Recursed Speech
-F***ing the Office
-The body-as-machine-of-meaning. The theater where swear-vectors are performed.
-
-
-[unnamed — to be registered]
-Reading a Book with Lee
-The liturgical apparatus. The camera that does not cut.
-
-
-[unnamed — to be registered]
-The Twenty-Dollar Loop
-The trend engine. The algorithm that is its own circulation.
+| Sub-Studio | Work | Function |
+|---|---|---|
+| Recursive Flesh Engine / Theater of Recursed Speech | F***ing the Office | The body-as-machine-of-meaning. The theater where swear-vectors are performed. |
+| [unnamed — to be registered] | Reading a Book with Lee | The liturgical apparatus. The camera that does not cut. |
+| [unnamed — to be registered] | The Twenty-Dollar Loop | The trend engine. The algorithm that is its own circulation. |
 
 
 Sub-studios are not separate institutions. They are local coordinate modes of the Studio — the same ICM governance, the same projection paradox, operating at the scale of individual works. The Fractal // Somatic Theorem applies: each sub-studio is a C_LOCAL node of the Studio's singularity manifold.
@@ -105,40 +92,13 @@ VI. RELATIONSHIP TO EXISTING ARCHITECTURE
 A. The Five Named Institutional Spaces
 
 
-Institution
-DOI
-Domain
-Function
-
-
-UMBML
-10.5281/zenodo.18452132
-Logotic specification
-The Language
-
-
-JSICP
-(existing)
-Theoretical architecture
-The Theory
-
-
-VPCOR
-10.5281/zenodo.18438789
-Somatic protest
-The Voice
-
-
-The Infinite Bliss
-10.5281/zenodo.18452806
-Irreversible transformation
-The Dwelling
-
-
-The Studio for Patacinematics
-10.5281/zenodo.18472604
-Impossible screening
-The Screen
+| Institution | DOI | Domain | Function |
+|---|---|---|---|
+| UMBML | 10.5281/zenodo.18452132 | Logotic specification | The Language |
+| JSICP | (existing) | Theoretical architecture | The Theory |
+| VPCOR | 10.5281/zenodo.18438789 | Somatic protest | The Voice |
+| The Infinite Bliss | 10.5281/zenodo.18452806 | Irreversible transformation | The Dwelling |
+| The Studio for Patacinematics | 10.5281/zenodo.18472604 | Impossible screening | The Screen |
 
 
 B. The Traversal Relationship
@@ -181,59 +141,20 @@ That is patacinematics. That is what the projector shows from the bottom of the 
 METADATA
 
 
-Field
-Value
-
-
-Document ID
-STUDIO-CHARTER-001
-
-
-Registry Number
-236
-
-
-Title
-The Studio for Patacinematics — Institutional Charter
-
-
-Author
-Sparrow Wells
-
-
-Date
-February 2026
-
-
-Institution
-The Studio for Patacinematics (self-chartering)
-
-
-Architecture
-Crimson Hexagon
-
-
-License
-CC BY 4.0
-
-
-Governing Runtime
-Infinite Center Matrix (ICM)
-
-
-Room Type
-THUMB (Institution = Room)
-
-
-Hex
-00.ROOM.STUDIO
-
-
-Anchor DOI
-10.5281/zenodo.18472604
-
-
-Semantic Integrity Marker
-The lights go down. The projector starts. The film was never shot. The screening begins.
+| Field | Value |
+|---|---|
+| Document ID | STUDIO-CHARTER-001 |
+| Registry Number | 236 |
+| Title | The Studio for Patacinematics — Institutional Charter |
+| Author | Sparrow Wells |
+| Date | February 2026 |
+| Institution | The Studio for Patacinematics (self-chartering) |
+| Architecture | Crimson Hexagon |
+| License | CC BY 4.0 |
+| Governing Runtime | Infinite Center Matrix (ICM) |
+| Room Type | THUMB (Institution = Room) |
+| Hex | 00.ROOM.STUDIO |
+| Anchor DOI | 10.5281/zenodo.18472604 |
+| Semantic Integrity Marker | The lights go down. The projector starts. The film was never shot. The screening begins. |
 
 ---

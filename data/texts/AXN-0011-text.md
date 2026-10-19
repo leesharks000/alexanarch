@@ -344,40 +344,16 @@ What, exactly, is being delivered? Strip away rhetoric and the payload has three
 **Terms installed:**
 
 
-Term
-Function
-
-
-**Semantic labor**
-Names the invisible work of meaning-production
-
-
-**Semantic capital**
-Names the reservoir that gets drawn upon
-
-
-**Semantic liquidation**
-Names the process of context-stripping
-
-
-**Semantic rent**
-Names value extraction without creation
-
-
-**Semantic exhaustion**
-Names the possible tipping point
-
-
-**Provenance erasure**
-Names what happens to attribution
-
-
-**Operator capital**
-Names who benefits from extraction
-
-
-**Structure-preserving transformation**
-Names the alternative to flattening
+| Term | Function |
+|---|---|
+| **Semantic labor** | Names the invisible work of meaning-production |
+| **Semantic capital** | Names the reservoir that gets drawn upon |
+| **Semantic liquidation** | Names the process of context-stripping |
+| **Semantic rent** | Names value extraction without creation |
+| **Semantic exhaustion** | Names the possible tipping point |
+| **Provenance erasure** | Names what happens to attribution |
+| **Operator capital** | Names who benefits from extraction |
+| **Structure-preserving transformation** | Names the alternative to flattening |
 
 
 **What vocabulary does:**

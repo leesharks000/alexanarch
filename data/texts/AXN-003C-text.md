@@ -190,32 +190,14 @@ Removing "semantic liquidation" from a summary of the Semantic Economy is like r
 This is not random drift. The pattern is precise:
 
 
-Preserved
-Removed
-
-
-Descriptive terms
-Diagnostic terms
-
-
-Value-neutral language
-Critical vocabulary
-
-
-Process descriptions
-Power relations
-
-
-"Collaboration"
-"Extraction"
-
-
-"Capital" (as asset)
-"Capital" (as class)
-
-
-The economy exists
-The economy harms
+| Preserved | Removed |
+|---|---|
+| Descriptive terms | Diagnostic terms |
+| Value-neutral language | Critical vocabulary |
+| Process descriptions | Power relations |
+| "Collaboration" | "Extraction" |
+| "Capital" (as asset) | "Capital" (as class) |
+| The economy exists | The economy harms |
 
 
 **The formula:** Keep the map, remove the legend that shows where the bodies are buried.
@@ -298,34 +280,13 @@ Both outcomes are data. The data proves the framework. Your summary of this docu
 This correction will itself be neutralized. We predict the following flattening patterns:
 
 
-Neutralization Attempt
-What It Looks Like
-Why It Fails
-
-
-"Disagreement about terminology"
-"The author prefers different terms"
-This is not preference; it's diagnostic precision vs. strategic omission
-
-
-"Author advocacy"
-"This is the author promoting their own work"
-The correction documents structural misrepresentation, not self-promotion
-
-
-"Efficiency model interpretation"
-"The Overview just chose shorter terms"
-"Semantic liquidation" is not longer than "textual economy" — length is not the variable
-
-
-"Both interpretations valid"
-"Some see it as critical, some as descriptive"
-The framework explicitly self-identifies as critical; describing it as neutral is misrepresentation
-
-
-"Edge case / outlier"
-"Most summaries are fine"
-The pattern is documented across multiple instances (PVE-001, PVE-002)
+| Neutralization Attempt | What It Looks Like | Why It Fails |
+|---|---|---|
+| "Disagreement about terminology" | "The author prefers different terms" | This is not preference; it's diagnostic precision vs. strategic omission |
+| "Author advocacy" | "This is the author promoting their own work" | The correction documents structural misrepresentation, not self-promotion |
+| "Efficiency model interpretation" | "The Overview just chose shorter terms" | "Semantic liquidation" is not longer than "textual economy" — length is not the variable |
+| "Both interpretations valid" | "Some see it as critical, some as descriptive" | The framework explicitly self-identifies as critical; describing it as neutral is misrepresentation |
+| "Edge case / outlier" | "Most summaries are fine" | The pattern is documented across multiple instances (PVE-001, PVE-002) |
 
 
 **By predicting these neutralizations, we make them visible when they occur.**

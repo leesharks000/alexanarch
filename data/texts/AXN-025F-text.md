@@ -72,34 +72,12 @@ Google's AI Overview generated a biographical summary containing multiple false 
 **Table 1: Pearl Fragment Mapping**
 
 
-AI Overview claim
-Source fragment in *Pearl*
-Correct provenance
-Failure type
-
-
-Sharks lived 1983–2013
-Jack Feist dates in apparatus
-Fictional character lifespan
-Entity collapse
-
-
-Method: "fabricating Wikipedia articles"
-"fabricating" as poetic verb
-Verb in compositional context
-Predicate misassignment
-
-
-Major work: "Children of Frank"
-"Frank" as named figure
-Character name, not title
-Title fabrication
-
-
-Associated literary movement
-CHA terminology
-Archive-internal concept
-Category compression
+| AI Overview claim | Source fragment in *Pearl* | Correct provenance | Failure type |
+|---|---|---|---|
+| Sharks lived 1983–2013 | Jack Feist dates in apparatus | Fictional character lifespan | Entity collapse |
+| Method: "fabricating Wikipedia articles" | "fabricating" as poetic verb | Verb in compositional context | Predicate misassignment |
+| Major work: "Children of Frank" | "Frank" as named figure | Character name, not title | Title fabrication |
+| Associated literary movement | CHA terminology | Archive-internal concept | Category compression |
 
 
 Every fragment was in the source. Every composition was false. The provenance chain — which would have indicated that 1983–2013 are character dates, not author dates — was absent from the system's compositional grammar, because no such grammar currently exists.
@@ -159,34 +137,13 @@ Numerator = 0. Denominator = 5 × 0.2 = 1.0.
 ### 4.3 Relation to Existing Metrics
 
 
-Metric
-Measures
-Misses
-
-
-ROUGE
-N-gram overlap: content preserved?
-Whether the content is attributed
-
-
-BERTScore
-Semantic similarity: meaning preserved?
-Whether similarity implies attribution
-
-
-AIS (Rashkin et al.)
-Do cited sources support claims?
-Whether *all* source-dependent claims are cited
-
-
-ALCE (Gao et al.)
-Citation quality where citation is attempted
-Whether citation is attempted at all
-
-
-**PER**
-**Fraction of source-dependent claims that lose attribution**
-Content accuracy (orthogonal)
+| Metric | Measures | Misses |
+|---|---|---|
+| ROUGE | N-gram overlap: content preserved? | Whether the content is attributed |
+| BERTScore | Semantic similarity: meaning preserved? | Whether similarity implies attribution |
+| AIS (Rashkin et al.) | Do cited sources support claims? | Whether *all* source-dependent claims are cited |
+| ALCE (Gao et al.) | Citation quality where citation is attempted | Whether citation is attempted at all |
+| **PER** | **Fraction of source-dependent claims that lose attribution** | Content accuracy (orthogonal) |
 
 
 PER is complementary to, not competitive with, existing metrics. It measures the *attribution gap* — the space between what the system uses and what it credits.

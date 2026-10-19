@@ -331,46 +331,13 @@ Every sub-room: extractive surface on one face, liberatory shadow on the other. 
 **Comparative Grid**
 
 
-Sub-room
-Niche
-Burns
-Bride
-Compact Lens
-
-
-r.27.1 KotKit
-Attention via presentness
-Duration, depth
-Durational Resonance
-*Let the feed end.*
-
-
-r.27.2 tiddeR
-Judgment via ranking
-Governance, dissent
-Accountable Plurality
-*Make dissent visible.*
-
-
-r.27.3 elgooG
-Knowledge via preemption
-Source, traversal
-Provenance-First Traversal
-*Make sources climbable.*
-
-
-r.27.4 ude.aimedacA
-Openness via simulation
-Commons governance
-Irrevocable Openness
-*Let the commons be common.*
-
-
-r.27.5 deeF
-Duration via compression
-Capacity for witness
-The Room
-*Let the sequence complete.*
+| Sub-room | Niche | Burns | Bride | Compact Lens |
+|---|---|---|---|---|
+| r.27.1 KotKit | Attention via presentness | Duration, depth | Durational Resonance | *Let the feed end.* |
+| r.27.2 tiddeR | Judgment via ranking | Governance, dissent | Accountable Plurality | *Make dissent visible.* |
+| r.27.3 elgooG | Knowledge via preemption | Source, traversal | Provenance-First Traversal | *Make sources climbable.* |
+| r.27.4 ude.aimedacA | Openness via simulation | Commons governance | Irrevocable Openness | *Let the commons be common.* |
+| r.27.5 deeF | Duration via compression | Capacity for witness | The Room | *Let the sequence complete.* |
 
 
 ---

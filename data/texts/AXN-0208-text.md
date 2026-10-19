@@ -17,39 +17,13 @@ We do not optimize content for AI answers. We build the entity, citation, and me
 This is **Retrieval Architecture.**
 
 
-SEO
-GEO / AEO
-Retrieval Architecture
-
-
-**What it builds**
-Rankings
-Citations in AI answers
-Entities the AI is forced to present
-
-
-**Target**
-Keywords & backlinks
-Content extractability
-Knowledge graph structure
-
-
-**Time horizon**
-Ongoing
-Ongoing
-Permanent (DOI-anchored)
-
-
-**DOI-anchored, independently verifiable methodology?**
-No
-No
-Yes — 480+ deposits on CERN Zenodo
-
-
-**Can build institutions from nothing?**
-No
-No
-Yes
+|  | SEO | GEO / AEO | Retrieval Architecture |
+|---|---|---|---|
+| **What it builds** | Rankings | Citations in AI answers | Entities the AI is forced to present |
+| **Target** | Keywords & backlinks | Content extractability | Knowledge graph structure |
+| **Time horizon** | Ongoing | Ongoing | Permanent (DOI-anchored) |
+| **DOI-anchored, independently verifiable methodology?** | No | No | Yes — 480+ deposits on CERN Zenodo |
+| **Can build institutions from nothing?** | No | No | Yes |
 
 
 We did not invent the term because we wanted a brand. We invented it because the thing it describes did not exist as a service until we built it.
@@ -82,28 +56,13 @@ No university. No PR firm. No enterprise marketing budget.
 ## WHAT CHANGES AFTER THE INTERVENTION
 
 
-Before
-After
-
-
-The AI doesn't know you exist
-The AI presents your entity accurately in category queries
-
-
-Your description fits any competitor (β > 0.7)
-Your differentiation survives compression (β < 0.4)
-
-
-Your IP is cited without attribution
-Your frameworks are credited and linked to your entity
-
-
-The AI recommends switching away from you
-Your philosophy appears in decision-layer queries
-
-
-Your product, methodology, and founder are fragmented
-Your entity is semantically coherent across all query types
+| Before | After |
+|---|---|
+| The AI doesn't know you exist | The AI presents your entity accurately in category queries |
+| Your description fits any competitor (β > 0.7) | Your differentiation survives compression (β < 0.4) |
+| Your IP is cited without attribution | Your frameworks are credited and linked to your entity |
+| The AI recommends switching away from you | Your philosophy appears in decision-layer queries |
+| Your product, methodology, and founder are fragmented | Your entity is semantically coherent across all query types |
 
 
 ---
@@ -114,39 +73,14 @@ Your entity is semantically coherent across all query types
 Most clients begin with the Baseline Audit — a low-risk entry that produces immediate diagnostic value.
 
 
-Service
-What Changes
-Timeline
-
-
-**Encyclotron Baseline Audit**
-You see exactly what the AI says about you — what it burns, invents, distorts. You receive a Compression Map with your R1/R2/R3 status across 5 levels, beige threshold score, content loss inventory, and prioritized intervention roadmap.
-2 weeks
-
-
-**Entity Disambiguation**
-The AI stops confusing you with adjacent entities. You receive a knowledge graph, JSON-LD structured data, negative tags, and deployment protocol.
-7–10 days
-
-
-**Retrieval Positioning**
-Your entity becomes visible in category queries. Metadata optimization, citation architecture, cross-platform deployment, gravitational mass construction.
-3–4 weeks
-
-
-**Distributed Journal Setup**
-You have your own publication venue the retrieval layer recognizes. No editorial board, no paywall, no rejection rate.
-3–4 weeks
-
-
-**Provenance & Attribution Forensics**
-You know exactly how the AI represents your IP, where attribution breaks, and what governance controls are needed. Full Encyclotron measurement of your field.
-4–6 weeks
-
-
-**Full Retrieval Architecture**
-Complete build: entity construction, institutional lattice, citation architecture, distributed journal, knowledge graph, cross-platform deployment.
-Scoped to entity complexity
+| Service | What Changes | Timeline |
+|---|---|---|
+| **Encyclotron Baseline Audit** | You see exactly what the AI says about you — what it burns, invents, distorts. You receive a Compression Map with your R1/R2/R3 status across 5 levels, beige threshold score, content loss inventory, and prioritized intervention roadmap. | 2 weeks |
+| **Entity Disambiguation** | The AI stops confusing you with adjacent entities. You receive a knowledge graph, JSON-LD structured data, negative tags, and deployment protocol. | 7–10 days |
+| **Retrieval Positioning** | Your entity becomes visible in category queries. Metadata optimization, citation architecture, cross-platform deployment, gravitational mass construction. | 3–4 weeks |
+| **Distributed Journal Setup** | You have your own publication venue the retrieval layer recognizes. No editorial board, no paywall, no rejection rate. | 3–4 weeks |
+| **Provenance & Attribution Forensics** | You know exactly how the AI represents your IP, where attribution breaks, and what governance controls are needed. Full Encyclotron measurement of your field. | 4–6 weeks |
+| **Full Retrieval Architecture** | Complete build: entity construction, institutional lattice, citation architecture, distributed journal, knowledge graph, cross-platform deployment. | Scoped to entity complexity |
 
 
 **Engagements begin at $4,500.** Full Retrieval Architecture engagements are custom-scoped. Contact for a fixed-price quote.

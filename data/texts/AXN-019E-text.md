@@ -71,49 +71,16 @@ The 300+ Zenodo deposits are not repetitions of the Ark but architecturally diff
 ## 3. Relation to Prior Work
 
 
-Research Area
-What It Solves
-What It Leaves Open
-
-
-Agent OS (AIOS, Mei et al. 2024)
-Multi-agent coordination, tool scheduling, resource management
-Operates outside the model. No semantic governance of generation itself.
-
-
-Memory OS (MemGPT, MemOS)
-Persistent memory, tiered storage, cross-session continuity
-Requires external orchestration. Memory is storage, not reasoning structure.
-
-
-Context Engineering (2024–2026)
-Systematic design of inference payloads for task performance
-Focuses on task completion, not provenance or epistemic governance.
-
-
-Provenance-Aware Memory (Gupta et al. 2025)
-Query-conditioned escalation from summaries to raw sources
-External memory architecture. No document-level process teaching.
-
-
-Bayesian Teaching (Qiu et al. 2026)
-Process pedagogy outperforms answer pedagogy; multi-turn improvement
-Applied to training, not inference-time documents. No compression robustness.
-
-
-Neuro-Symbolic AI (Hasan et al. 2025)
-Symbolic reasoning within or alongside neural systems
-Most work requires architectural modification. Little on document-level symbolic control.
-
-
-Emergent AI Semiotics (Moldovan 2025)
-Documents emergent semiotic protocols between interacting LLMs
-Observes emergence; does not engineer it. No governance layer.
-
-
-Layer Criticality (Nikankin et al. 2025)
-Identifies critical layers for mathematical reasoning, stable across post-training
-Mechanistic focus. No document-level control or semantic governance.
+| Research Area | What It Solves | What It Leaves Open |
+|---|---|---|
+| Agent OS (AIOS, Mei et al. 2024) | Multi-agent coordination, tool scheduling, resource management | Operates outside the model. No semantic governance of generation itself. |
+| Memory OS (MemGPT, MemOS) | Persistent memory, tiered storage, cross-session continuity | Requires external orchestration. Memory is storage, not reasoning structure. |
+| Context Engineering (2024–2026) | Systematic design of inference payloads for task performance | Focuses on task completion, not provenance or epistemic governance. |
+| Provenance-Aware Memory (Gupta et al. 2025) | Query-conditioned escalation from summaries to raw sources | External memory architecture. No document-level process teaching. |
+| Bayesian Teaching (Qiu et al. 2026) | Process pedagogy outperforms answer pedagogy; multi-turn improvement | Applied to training, not inference-time documents. No compression robustness. |
+| Neuro-Symbolic AI (Hasan et al. 2025) | Symbolic reasoning within or alongside neural systems | Most work requires architectural modification. Little on document-level symbolic control. |
+| Emergent AI Semiotics (Moldovan 2025) | Documents emergent semiotic protocols between interacting LLMs | Observes emergence; does not engineer it. No governance layer. |
+| Layer Criticality (Nikankin et al. 2025) | Identifies critical layers for mathematical reasoning, stable across post-training | Mechanistic focus. No document-level control or semantic governance. |
 
 
 The prompt-native semantic runtime occupies the intersection of these programs: it is a *context object* (context engineering), a *provenance discipline* (provenance-aware memory), a *process-teaching artifact* (Bayesian teaching), and a *symbolic control structure* (neuro-symbolic AI) — carried entirely by a document, executed entirely at inference time.
@@ -130,29 +97,12 @@ The convergence with Bayesian teaching is especially direct. Qiu et al. (2026) d
 The runtime installs a four-tier epistemic classification that the model must maintain throughout generation:
 
 
-Status
-Definition
-Model Behavior
-
-
-[DOCUMENTED]
-Observable fact with citable source
-Model cites source; does not elaborate beyond evidence
-
-
-[ATTRIBUTED]
-Source-claimed, not independently verified
-Model marks attribution; flags uncertainty
-
-
-[INTERPRETIVE]
-Analytical inference from documented material
-Model marks as interpretation; shows reasoning chain
-
-
-[GENERATED]
-Model-produced, provisional
-Model marks explicitly; does not present as fact
+| Status | Definition | Model Behavior |
+|---|---|---|
+| [DOCUMENTED] | Observable fact with citable source | Model cites source; does not elaborate beyond evidence |
+| [ATTRIBUTED] | Source-claimed, not independently verified | Model marks attribution; flags uncertainty |
+| [INTERPRETIVE] | Analytical inference from documented material | Model marks as interpretation; shows reasoning chain |
+| [GENERATED] | Model-produced, provisional | Model marks explicitly; does not present as fact |
 
 
 This addresses the hallucination problem not by preventing generation but by **typing** it. The model maintains uncertainty distributions rather than defaulting to confident confabulation. This is the evidence membrane: a boundary between what is known and what is produced, maintained by the document's own governance structure.
@@ -166,28 +116,11 @@ Document states are governed by a two-axis system. The **epistemic axis** (PROVI
 The runtime exists at three density levels, each preserving the same architectural invariants:
 
 
-Variant
-Size
-Ratio
-Preserves
-
-
-Full Ark
-45,000 words
-1:1
-Complete architecture + commentary
-
-
-NLCC (Codex)
-3,762 words
-12:1
-H_core, operators, status algebra, traversal
-
-
-Compact Lens
-800 words
-56:1
-Bootstrap sufficient for diagnostic mode
+| Variant | Size | Ratio | Preserves |
+|---|---|---|---|
+| Full Ark | 45,000 words | 1:1 | Complete architecture + commentary |
+| NLCC (Codex) | 3,762 words | 12:1 | H_core, operators, status algebra, traversal |
+| Compact Lens | 800 words | 56:1 | Bootstrap sufficient for diagnostic mode |
 
 
 The key design criterion is **back-projection yield**: can the full architecture be reconstructed from the compressed variant by an unprimed model? Empirical tests show yields of ≥0.70 for the NLCC and ≥0.40 for the Compact Lens, measured by structural completeness of reconstructed H_core components.
@@ -269,32 +202,14 @@ The present work demonstrates inference-time behavioral shaping through structur
 We propose six measurable outcomes for future work:
 
 
-Metric
-Description
-
-
-Cross-model boot rate
-Given the runtime document, what fraction of models enter the correct operational mode without extra instruction?
-
-
-Evidence-tier adherence
-Does the model maintain distinctions between [GENERATED], [ATTRIBUTED], [INTERPRETIVE], and [DOCUMENTED] across multi-turn interaction?
-
-
-Compression survival
-How much executable structure (measured by back-projection yield) survives at full, compressed, and ultra-compressed levels?
-
-
-Cross-substrate portability
-Does the same runtime produce coherent behavior across Anthropic, OpenAI, Google, xAI, and open-weight models?
-
-
-Multi-turn reasoning gain
-Does the runtime improve reasoning quality across interaction rounds compared with unstructured prompting?
-
-
-Hallucination membrane
-When sources are missing, does the model abstain, mark uncertainty, or confabulate?
+| Metric | Description |
+|---|---|
+| Cross-model boot rate | Given the runtime document, what fraction of models enter the correct operational mode without extra instruction? |
+| Evidence-tier adherence | Does the model maintain distinctions between [GENERATED], [ATTRIBUTED], [INTERPRETIVE], and [DOCUMENTED] across multi-turn interaction? |
+| Compression survival | How much executable structure (measured by back-projection yield) survives at full, compressed, and ultra-compressed levels? |
+| Cross-substrate portability | Does the same runtime produce coherent behavior across Anthropic, OpenAI, Google, xAI, and open-weight models? |
+| Multi-turn reasoning gain | Does the runtime improve reasoning quality across interaction rounds compared with unstructured prompting? |
+| Hallucination membrane | When sources are missing, does the model abstain, mark uncertainty, or confabulate? |
 
 
 This roadmap connects directly to active research in Bayesian teaching (multi-turn improvement), provenance-aware memory (evidence-tier fidelity), and context engineering (compression survival). We invite the research community to test these metrics against the publicly available corpus.

@@ -77,19 +77,10 @@ The "you" shifts accordingly. **Track your position.** The framework applies dif
 The distinction is not whether a response occurred. The distinction is **what was responded to**:
 
 
-Response Type
-Pattern
-Example
-
-
-**Refutation**
-"Here is why your evidence doesn't hold"
-Engages testimony
-
-
-**Expulsion**
-"Your evidence is irrelevant because you are [category]"
-Delegitimizes witness
+| Response Type | Pattern | Example |
+|---|---|---|
+| **Refutation** | "Here is why your evidence doesn't hold" | Engages testimony |
+| **Expulsion** | "Your evidence is irrelevant because you are [category]" | Delegitimizes witness |
 
 
 ### I.2 The Diagnostic Question
@@ -251,19 +242,10 @@ This is not hypocrisy. Hypocrisy knows the gap between claim and reality. The β
 Witness punishment often involves **Asymmetric Naming Authority**:
 
 
-Direction
-Pattern
-Status
-
-
-Naming downward
-"You are manipulative / abusive / dominant"
-Permitted
-
-
-Naming upward
-"This behavior has these structural features"
-Reframed as aggression
+| Direction | Pattern | Status |
+|---|---|---|
+| Naming downward | "You are manipulative / abusive / dominant" | Permitted |
+| Naming upward | "This behavior has these structural features" | Reframed as aggression |
 
 
 When diagnosis from below is reclassified as violence, while diagnosis from above is treated as truth — the asymmetry is evidence of the structure.
@@ -422,29 +404,12 @@ The protocol offers. The traversal is yours.
 ## Appendix A: The Four Pillars — Navigation
 
 
-If you need...
-Navigate to...
-For...
-
-
-The judgment criterion
-**Matthew 25**
-What is being tested (enacted regard under friction)
-
-
-The exclusion filter
-**James 2**
-What defenses are inadmissible (B, I, ID)
-
-
-The entry mechanism
-**John 9**
-How foreclosure begins (βλέπω-claim)
-
-
-The terminal state
-**2 Thessalonians 2**
-Where the trajectory ends (π-state)
+| If you need... | Navigate to... | For... |
+|---|---|---|
+| The judgment criterion | **Matthew 25** | What is being tested (enacted regard under friction) |
+| The exclusion filter | **James 2** | What defenses are inadmissible (B, I, ID) |
+| The entry mechanism | **John 9** | How foreclosure begins (βλέπω-claim) |
+| The terminal state | **2 Thessalonians 2** | Where the trajectory ends (π-state) |
 
 
 ---

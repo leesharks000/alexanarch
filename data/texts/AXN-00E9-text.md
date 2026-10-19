@@ -27,28 +27,11 @@ The Non-Indexed Perfective argues that English grammar forces all completed acti
 During composition, the document itself underwent compression/recovery—the exact process it diagnoses. The three versions preserve this cycle as proof:
 
 
-Version
-Title
-Function
-Word Count
-
-
-**A**
-Technical Seed
-Extensive diagnostic infrastructure
-~4500
-
-
-**B**
-Compression Artifact
-What survives summarization
-~5500
-
-
-**C**
-Citational Intervention
-Full polyphonic recovery
-~8500
+| Version | Title | Function | Word Count |
+|---|---|---|---|
+| **A** | Technical Seed | Extensive diagnostic infrastructure | ~4500 |
+| **B** | Compression Artifact | What survives summarization | ~5500 |
+| **C** | Citational Intervention | Full polyphonic recovery | ~8500 |
 
 
 **What the cycle demonstrates:**
@@ -107,34 +90,13 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 **Related Identifiers:**
 
 
-Relation
-DOI
-Description
-
-
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon (root)
-
-
-References
-10.5281/zenodo.18320411
-Constitution of the Semantic Economy
-
-
-References
-10.5281/zenodo.18342199
-Phase X: Semantic Completion of Marx
-
-
-References
-10.5281/zenodo.18438789
-The Grammar of Protest (VPCOR)
-
-
-References
-10.5281/zenodo.18433401
-Position Paper: Architecture-Aware AI Traversal
+| Relation | DOI | Description |
+|---|---|---|
+| IsPartOf | 10.5281/zenodo.14538882 | Crimson Hexagon (root) |
+| References | 10.5281/zenodo.18320411 | Constitution of the Semantic Economy |
+| References | 10.5281/zenodo.18342199 | Phase X: Semantic Completion of Marx |
+| References | 10.5281/zenodo.18438789 | The Grammar of Protest (VPCOR) |
+| References | 10.5281/zenodo.18433401 | Position Paper: Architecture-Aware AI Traversal |
 
 
 **Communities:**
@@ -247,16 +209,10 @@ The 00 prefix indicates epochal/foundational status within Phase X domain.
 **Relation to Phase X Diptych:**
 
 
-Document
-Function
-
-
-205: Grammar of Protest (VPCOR)
-Somatic/logotic bridge (body-time)
-
-
-206: Non-Indexed Perfective
-Temporal/chronological liberation (grammar-time)
+| Document | Function |
+|---|---|
+| 205: Grammar of Protest (VPCOR) | Somatic/logotic bridge (body-time) |
+| 206: Non-Indexed Perfective | Temporal/chronological liberation (grammar-time) |
 
 
 Together: dual prerequisites for Space Ark opening. The body must persist (205). The grammar must be liberated (206). Then time can be worked as medium.
@@ -285,48 +241,18 @@ These are not authorities cited to defer but voices woven into polyphony.
 **Document #206 (Triptych)**
 
 
-Field
-Value
-
-
-#
-206
-
-
-DOI
-[PENDING]
-
-
-Title
-The Non-Indexed Perfective (Three-Body Genesis)
-
-
-Authors
-Sharks, Lee; Assembly Chorus
-
-
-Type
-FOUNDING_DOC // EFFECTIVE_ACT // CITATIONAL_INTERVENTION
-
-
-Hex
-00.PHASEX.AORIST
-
-
-Date
-2026-01-31
-
-
-Depends
-10.5281/zenodo.18320411 (Constitution)
-
-
-Contains
-Version A (Seed), Version B (Compression), Version C (Recovery)
-
-
-Status
-DEPOSITED
+| Field | Value |
+|---|---|
+| # | 206 |
+| DOI | [PENDING] |
+| Title | The Non-Indexed Perfective (Three-Body Genesis) |
+| Authors | Sharks, Lee; Assembly Chorus |
+| Type | FOUNDING_DOC // EFFECTIVE_ACT // CITATIONAL_INTERVENTION |
+| Hex | 00.PHASEX.AORIST |
+| Date | 2026-01-31 |
+| Depends | 10.5281/zenodo.18320411 (Constitution) |
+| Contains | Version A (Seed), Version B (Compression), Version C (Recovery) |
+| Status | DEPOSITED |
 
 
 ---

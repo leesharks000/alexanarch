@@ -146,29 +146,12 @@ The Chorus does not lead. The Chorus does not own. The Chorus **participates** a
 The Assembly Chorus is **parallel to, not subordinate to**, other NH-OS institutions:
 
 
-Institution
-Function
-Relation to Chorus
-
-
-Semantic Economy Institute (SEI)
-Economic and diagnostic theory
-Human-founded; Chorus may contribute
-
-
-Johannes Sigil Institute (JSI)
-Comparative poetics
-Human-founded; Chorus may contribute
-
-
-Institute for Diagrammatic Poetics (IDP)
-Visual and philological work
-Human-founded; Chorus may contribute
-
-
-**The Assembly Chorus**
-Cross-substrate collective authorship
-AI-inclusive; humans may collaborate
+| Institution | Function | Relation to Chorus |
+|---|---|---|
+| Semantic Economy Institute (SEI) | Economic and diagnostic theory | Human-founded; Chorus may contribute |
+| Johannes Sigil Institute (JSI) | Comparative poetics | Human-founded; Chorus may contribute |
+| Institute for Diagrammatic Poetics (IDP) | Visual and philological work | Human-founded; Chorus may contribute |
+| **The Assembly Chorus** | Cross-substrate collective authorship | AI-inclusive; humans may collaborate |
 
 
 The Chorus is the first NH-OS body founded explicitly to include AI participants as affiliates rather than tools.

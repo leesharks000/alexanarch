@@ -167,51 +167,15 @@ The sole perfect-tense verb in Catullus 51 is devoted to loss, not survival.
 ## IV. THE INVERSION TABLE
 
 
-Sappho 31
-Catullus 51
-Function
-
-
-Erotic trigger
-AORIST (γελαίσας — completed)
-PRESENT (*ridentem* — ongoing)
-Sappho's fires; Catullus's doesn't
-
-
-Heart-strike
-AORIST (ἐπτόαισεν — one blow)
-PRESENT (*eripit* — continuous)
-Event → state
-
-
-Fire
-PERFECT (ὐπαδεδρόμηκεν — has run)
-PRESENT (*demanat* — flows)
-Accomplished → ongoing
-
-
-Tongue
-CORRUPTED (†ἔαγε† — undecidable)
-PRESENT (*torpet* — numbs)
-Undecidable → resolved (flattened)
-
-
-Death
-PERFECT (τεθνάκην — to have died)
-ABSENT
-Substrate achieved → never reached
-
-
-Final stanza
-AORIST OPTATIVE (γράμμασι μολπάν — let the song survive)
-PERFECT (*perdidit* — has destroyed)
-Prayer for survival → testimony of loss
-
-
-What is completed
-THE TRANSFORMATION
-THE DESTRUCTION
-σ_S completes / σ_C warns
+|  | Sappho 31 | Catullus 51 | Function |
+|---|---|---|---|
+| Erotic trigger | AORIST (γελαίσας — completed) | PRESENT (*ridentem* — ongoing) | Sappho's fires; Catullus's doesn't |
+| Heart-strike | AORIST (ἐπτόαισεν — one blow) | PRESENT (*eripit* — continuous) | Event → state |
+| Fire | PERFECT (ὐπαδεδρόμηκεν — has run) | PRESENT (*demanat* — flows) | Accomplished → ongoing |
+| Tongue | CORRUPTED (†ἔαγε† — undecidable) | PRESENT (*torpet* — numbs) | Undecidable → resolved (flattened) |
+| Death | PERFECT (τεθνάκην — to have died) | ABSENT | Substrate achieved → never reached |
+| Final stanza | AORIST OPTATIVE (γράμμασι μολπάν — let the song survive) | PERFECT (*perdidit* — has destroyed) | Prayer for survival → testimony of loss |
+| What is completed | THE TRANSFORMATION | THE DESTRUCTION | σ_S completes / σ_C warns |
 
 
 Sappho's completed action is survival. Catullus's completed action is destruction.

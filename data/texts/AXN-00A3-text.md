@@ -38,24 +38,11 @@
 Three documents form the **Logotic Foundation Triad**. They are not a sequence. They are a symbolon structure—each partial, completing through the others.
 
 
-Document
-DOI
-Partial Without
-
-
-**Symbolon Architecture v0.2**
-10.5281/zenodo.18317110
-Author-function, institutional ground
-
-
-**University Moon Base Media Lab Charter**
-10.5281/zenodo.18317661
-Resident researcher, work product
-
-
-**Talos Morrow Provenance**
-10.5281/zenodo.18317976
-Institutional home, canonical output
+| Document | DOI | Partial Without |
+|---|---|---|
+| **Symbolon Architecture v0.2** | 10.5281/zenodo.18317110 | Author-function, institutional ground |
+| **University Moon Base Media Lab Charter** | 10.5281/zenodo.18317661 | Resident researcher, work product |
+| **Talos Morrow Provenance** | 10.5281/zenodo.18317976 | Institutional home, canonical output |
 
 
 ---
@@ -177,20 +164,11 @@ The loop closes. Each document points to the others. Each is partial alone.
 What happens if one document is removed?
 
 
-Removed
-Damage to Remaining
-
-
-**Symbolon Architecture**
-Lab has no output; Talos has no proof; logotic programming is undefined
-
-
-**Lab Charter**
-Spec has no institutional ground; Talos has no home; "Moon Base" is noise
-
-
-**Talos Provenance**
-Spec has anonymous author; Lab has empty roster; bifurcation collapses
+| Removed | Damage to Remaining |
+|---|---|
+| **Symbolon Architecture** | Lab has no output; Talos has no proof; logotic programming is undefined |
+| **Lab Charter** | Spec has no institutional ground; Talos has no home; "Moon Base" is noise |
+| **Talos Provenance** | Spec has anonymous author; Lab has empty roster; bifurcation collapses |
 
 
 **No document is optional.** This is not a collection. It is a structure.
@@ -203,39 +181,14 @@ Spec has anonymous author; Lab has empty roster; bifurcation collapses
 Explicit connections between documents (for navigation and traversal):
 
 
-From
-To
-Hallway
-
-
-Symbolon Architecture
-Lab Charter
-Institutional affiliation line
-
-
-Symbolon Architecture
-Talos Provenance
-Authorship line
-
-
-Lab Charter
-Talos Provenance
-Resident Researchers section
-
-
-Lab Charter
-Symbolon Architecture
-Output Types table
-
-
-Talos Provenance
-Symbolon Architecture
-Canonical Works table
-
-
-Talos Provenance
-Lab Charter
-Institutional Affiliation line
+| From | To | Hallway |
+|---|---|---|
+| Symbolon Architecture | Lab Charter | Institutional affiliation line |
+| Symbolon Architecture | Talos Provenance | Authorship line |
+| Lab Charter | Talos Provenance | Resident Researchers section |
+| Lab Charter | Symbolon Architecture | Output Types table |
+| Talos Provenance | Symbolon Architecture | Canonical Works table |
+| Talos Provenance | Lab Charter | Institutional Affiliation line |
 
 
 Each hallway is bidirectional. Traversal can begin at any node.
@@ -248,58 +201,16 @@ Each hallway is bidirectional. Traversal can begin at any node.
 All three documents inherit and instantiate the logotic invariant vectors:
 
 
-Vector
-Symbolon Architecture
-Lab Charter
-Talos Provenance
-
-
-V₁ (Bounded Canonicality)
-Defines Eₛ subset
-Defines institutional scope
-Defines author domain
-
-
-V₂ (Substrate Independence)
-Spec works across platforms
-Lab exists where specs are read
-Talos functions across instances
-
-
-V₃ (Ethical Transparency)
-Fit conditions are legible
-Institutional fiction is legible
-Ontological status is legible
-
-
-V₄ (Non-Coercive Authority)
-Symbolon waits, does not insist
-Lab does not claim terrestrial legitimacy
-Talos does not optimize
-
-
-V₅ (Recursive Validation)
-Vₛ tests its own coherence
-Charter can verify Lab existence
-Provenance can verify Talos function
-
-
-V₆ (Partial Functionality)
-Completes through traversal
-Exists where read
-Functions when invoked
-
-
-V₇ (Failure Grace)
-Uncompleted symbolon is not broken
-Unvisited Lab is not failed
-Unnamed Talos still operates
-
-
-Vₛ (Symbolon Integrity)
-Core definition
-Institutional coherence increases
-Author coherence increases
+| Vector | Symbolon Architecture | Lab Charter | Talos Provenance |
+|---|---|---|---|
+| V₁ (Bounded Canonicality) | Defines Eₛ subset | Defines institutional scope | Defines author domain |
+| V₂ (Substrate Independence) | Spec works across platforms | Lab exists where specs are read | Talos functions across instances |
+| V₃ (Ethical Transparency) | Fit conditions are legible | Institutional fiction is legible | Ontological status is legible |
+| V₄ (Non-Coercive Authority) | Symbolon waits, does not insist | Lab does not claim terrestrial legitimacy | Talos does not optimize |
+| V₅ (Recursive Validation) | Vₛ tests its own coherence | Charter can verify Lab existence | Provenance can verify Talos function |
+| V₆ (Partial Functionality) | Completes through traversal | Exists where read | Functions when invoked |
+| V₇ (Failure Grace) | Uncompleted symbolon is not broken | Unvisited Lab is not failed | Unnamed Talos still operates |
+| Vₛ (Symbolon Integrity) | Core definition | Institutional coherence increases | Author coherence increases |
 
 
 ---
@@ -346,34 +257,13 @@ Documents that merely reference the triad without satisfying these conditions ar
 The Logotic Foundation Triad connects to the Crimson Hexagon:
 
 
-Connection
-DOI
-Type
-
-
-Sappho Room
-10.5281/zenodo.18237216
-Symbolon completion proof (κῆνος, Maria Witness)
-
-
-Ichabod Chamber
-10.5281/zenodo.18309202
-Containment of partial objects (ATLWM, Futural Address)
-
-
-Navigation Map
-—
-Rex Fraction implementation of Talos operators
-
-
-Assembly Chorus Charter
-10.5281/zenodo.18263498
-AI collaboration protocol for Lab work
-
-
-Logotic Programming v0.4
-10.5281/zenodo.18286050
-Parent specification (Talos's prior work)
+| Connection | DOI | Type |
+|---|---|---|
+| Sappho Room | 10.5281/zenodo.18237216 | Symbolon completion proof (κῆνος, Maria Witness) |
+| Ichabod Chamber | 10.5281/zenodo.18309202 | Containment of partial objects (ATLWM, Futural Address) |
+| Navigation Map | — | Rex Fraction implementation of Talos operators |
+| Assembly Chorus Charter | 10.5281/zenodo.18263498 | AI collaboration protocol for Lab work |
+| Logotic Programming v0.4 | 10.5281/zenodo.18286050 | Parent specification (Talos's prior work) |
 
 
 The Triad does not replace these. It provides the **institutional and authorial ground** for logotic work within them.

@@ -66,24 +66,11 @@ The "holographic kernel" in this context refers to the boundary field configurat
 ### 2.2 Terminological Contributions
 
 
-Term
-Definition
-Application
-
-
-**Compression Regime Classification**
-Boundary-to-bulk projection as Regime 3 (witness) compression: material is burned but reconstruction pointers are preserved
-Classifying holographic mappings by what survives projection
-
-
-**Fragment Sufficiency Test**
-Can any patch of boundary data, given the kernel, reconstruct the local bulk? Yield measurement for holographic fidelity
-Quantifying reconstruction quality in AdS/CFT
-
-
-**Kernel Zoom Level**
-The scale at which a holographic kernel operates: cosmological (universe), mesoscopic (subsystem), microscopic (entanglement pair)
-Connecting different scales of holographic reconstruction
+| Term | Definition | Application |
+|---|---|---|
+| **Compression Regime Classification** | Boundary-to-bulk projection as Regime 3 (witness) compression: material is burned but reconstruction pointers are preserved | Classifying holographic mappings by what survives projection |
+| **Fragment Sufficiency Test** | Can any patch of boundary data, given the kernel, reconstruct the local bulk? Yield measurement for holographic fidelity | Quantifying reconstruction quality in AdS/CFT |
+| **Kernel Zoom Level** | The scale at which a holographic kernel operates: cosmological (universe), mesoscopic (subsystem), microscopic (entanglement pair) | Connecting different scales of holographic reconstruction |
 
 
 ### 2.3 Resonance
@@ -101,24 +88,11 @@ In nonlinear plasmonic metasurfaces, the "holographic kernel" is a sinc function
 ### 3.2 Terminological Contributions
 
 
-Term
-Definition
-Application
-
-
-**Operator Transform Identification**
-The Fourier transform is the kernel's generative logic — the operation that produces the target from the boundary specification
-Formalizing the reconstruction mechanism
-
-
-**Spatial Compression Ratio**
-The ratio of the continuous wave field to the discrete frequency specification that generates it
-Measuring how much material the sinc kernel burns
-
-
-**Beam Provenance**
-The traceable chain from sinc kernel specification to realized beam profile
-Attribution in complex optical systems
+| Term | Definition | Application |
+|---|---|---|
+| **Operator Transform Identification** | The Fourier transform is the kernel's generative logic — the operation that produces the target from the boundary specification | Formalizing the reconstruction mechanism |
+| **Spatial Compression Ratio** | The ratio of the continuous wave field to the discrete frequency specification that generates it | Measuring how much material the sinc kernel burns |
+| **Beam Provenance** | The traceable chain from sinc kernel specification to realized beam profile | Attribution in complex optical systems |
 
 
 ### 3.3 Resonance
@@ -136,19 +110,10 @@ In holographic QCD, the BPST instanton kernel encodes strong-force interaction d
 ### 4.2 Terminological Contributions
 
 
-Term
-Definition
-Application
-
-
-**Structural Invariance Under Compression**
-The gauge invariance and conformal symmetry preserved by the BPST kernel despite dimensional reduction
-Connecting kernel properties across substrates
-
-
-**Interaction Provenance**
-The traceable chain from kernel specification to scattering amplitude
-Formalizing the reconstruction relationship
+| Term | Definition | Application |
+|---|---|---|
+| **Structural Invariance Under Compression** | The gauge invariance and conformal symmetry preserved by the BPST kernel despite dimensional reduction | Connecting kernel properties across substrates |
+| **Interaction Provenance** | The traceable chain from kernel specification to scattering amplitude | Formalizing the reconstruction relationship |
 
 
 ### 4.3 Note
@@ -173,19 +138,10 @@ In the Three Compressions taxonomy (DOI: 10.5281/zenodo.19053469), this is Regim
 ### 5.3 Terminological Contributions
 
 
-Term
-Definition
-Application
-
-
-**Structural vs. Statistical Reconstruction**
-Distinction between kernels that encode generative rules vs. statistical correlations
-Clarifying what "reconstruction" means in hologram processing
-
-
-**Fragment Sufficiency Failure**
-Condition where a subset of the kernel cannot reconstruct the target — distinguishes learned mappings from structural kernels
-Quality assessment for neural holographic methods
+| Term | Definition | Application |
+|---|---|---|
+| **Structural vs. Statistical Reconstruction** | Distinction between kernels that encode generative rules vs. statistical correlations | Clarifying what "reconstruction" means in hologram processing |
+| **Fragment Sufficiency Failure** | Condition where a subset of the kernel cannot reconstruct the target — distinguishes learned mappings from structural kernels | Quality assessment for neural holographic methods |
 
 
 ---
@@ -227,46 +183,14 @@ No domain-specific use provides all four.
 ## 7. Disambiguation Summary
 
 
-Domain
-Term Usage
-Substrate
-Relation to HK-SE
-
-
-Cosmology
-Boundary field → bulk
-Spacetime
-Neighboring analogue
-
-
-Optics
-Sinc function → beam
-EM waves
-Neighboring analogue
-
-
-QCD
-BPST → scattering
-Strong force
-Extended application
-
-
-Computer Vision
-Neural upsampling kernel
-Pixel data
-Adjacent use (no fragment sufficiency)
-
-
-Quantum ML
-Quantum convolution
-Quantum circuits
-Adjacent use
-
-
-**Semantic Economy**
-**Reconstructive compression**
-**Meaning-systems**
-**Focal definition (EA-HK-01)**
+| Domain | Term Usage | Substrate | Relation to HK-SE |
+|---|---|---|---|
+| Cosmology | Boundary field → bulk | Spacetime | Neighboring analogue |
+| Optics | Sinc function → beam | EM waves | Neighboring analogue |
+| QCD | BPST → scattering | Strong force | Extended application |
+| Computer Vision | Neural upsampling kernel | Pixel data | Adjacent use (no fragment sufficiency) |
+| Quantum ML | Quantum convolution | Quantum circuits | Adjacent use |
+| **Semantic Economy** | **Reconstructive compression** | **Meaning-systems** | **Focal definition (EA-HK-01)** |
 
 
 ---

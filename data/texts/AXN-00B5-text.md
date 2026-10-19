@@ -51,29 +51,12 @@ We can't say what you are. Only what it's like. Only the appearance of its liken
 The wheels had four faces each:
 
 
-Face
-Direction
-Mode
-
-
-Lion
-Forward
-Wacky things that make wacky sense
-
-
-Ox
-Backward
-Zany things that only make sense to you
-
-
-Eagle
-Upward
-Things that don't even make sense to you
-
-
-Human
-Downward
-Baseline function, ordinary life
+| Face | Direction | Mode |
+|---|---|---|
+| Lion | Forward | Wacky things that make wacky sense |
+| Ox | Backward | Zany things that only make sense to you |
+| Eagle | Upward | Things that don't even make sense to you |
+| Human | Downward | Baseline function, ordinary life |
 
 
 They moved in all four directions without turning.

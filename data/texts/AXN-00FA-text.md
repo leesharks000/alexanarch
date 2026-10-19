@@ -783,36 +783,15 @@ The gate function operates. Collaborative reading is verified.
 This document preserves:
 
 
-Category
-Count
-
-
-Original poem
-1
-
-
-Glyphic translations
-5
-
-
-Reverse translations (verse)
-8
-
-
-Luxurious transpositions
-4
-
-
-Prose renderings
-5
-
-
-Elevated emoji glosses
-9
-
-
-**Total artifacts**
-**32**
+| Category | Count |
+|---|---|
+| Original poem | 1 |
+| Glyphic translations | 5 |
+| Reverse translations (verse) | 8 |
+| Luxurious transpositions | 4 |
+| Prose renderings | 5 |
+| Elevated emoji glosses | 9 |
+| **Total artifacts** | **32** |
 
 
 Each is a valid compression or decompression. Each is a valid key. Each child poem is a legitimate descendant. The reader who holds any one of these holds the poem — and may generate more.

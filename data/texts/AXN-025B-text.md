@@ -144,54 +144,17 @@ ClownCloud is a three-sided marketplace connecting Clients (organizations hostin
 The platform runs on a proprietary matching algorithm (the **Bozo Engine™**) pairing troupe capabilities to event requirements based on six parameters: venue geometry, participant count, stakes intensity (the **Kierkegaard Scale**, from 1 = book club to 10 = nuclear launch), desired interference style, event duration, and a **Performance Fragility Index** computed from institutional seriousness, silence dependency, credential density, proctor severity, tie frequency, laminated badge count, fluorescent lighting severity, and the degree to which participants say "we take this very seriously."
 
 
-Institutional Setting
-Recommended Clown
-Kierkegaard Scale
-
-
-SAT Day
-Focus Clown
-6
-
-
-Board Meeting
-Shareholder Pierrot
-7
-
-
-Academic Conference
-Citation Harlequin
-5
-
-
-Courtroom Training
-Bailiff Buffoon
-8
-
-
-Corporate Retreat
-Synergy Auguste
-4
-
-
-AI Safety Summit
-Alignment Clown
-9
-
-
-Grant Panel
-Budget Mime
-7
-
-
-Seminary Exam
-Eschatological Bozo
-10
-
-
-Dissertation Defense
-Committee Koshare
-8
+| Institutional Setting | Recommended Clown | Kierkegaard Scale |
+|---|---|---|
+| SAT Day | Focus Clown | 6 |
+| Board Meeting | Shareholder Pierrot | 7 |
+| Academic Conference | Citation Harlequin | 5 |
+| Courtroom Training | Bailiff Buffoon | 8 |
+| Corporate Retreat | Synergy Auguste | 4 |
+| AI Safety Summit | Alignment Clown | 9 |
+| Grant Panel | Budget Mime | 7 |
+| Seminary Exam | Eschatological Bozo | 10 |
+| Dissertation Defense | Committee Koshare | 8 |
 
 
 **§ 2. The Clown Car Protocol**

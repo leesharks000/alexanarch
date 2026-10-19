@@ -60,67 +60,16 @@ The operation is not comparison. It is not metaphor. It is somatic fusion: the r
 The campaign uses multiple entertainment properties as interchangeable codecs. Each targets a different demographic's somatic archive:
 
 
-Codec
-Borrowed affect
-Real footage target
-Sync device
-Intended fusion
-
-
-Wii Sports
-Domestic play satisfaction
-Missile impact
-Racket "thwack" / timing
-Strike as recreation
-
-
-Bowling
-Recreational scoring
-Target collapse
-"STRIKE" / pin fall
-Attack as perfect throw
-
-
-Call of Duty
-Kill/reward loop
-Strike footage
-"+100" score overlay
-Death as points
-
-
-GTA: San Andreas
-Consequence-free mayhem
-Enemy death
-"WASTED" screen
-Death as respawnable loss
-
-
-NFL/MLB
-Team violence/spectacle
-Bombardment
-Hit highlight / crowd roar
-War as sports dominance
-
-
-SpongeBob
-Innocent repetition
-Repeated strikes
-"Wanna see me do it again?"
-Killing as child's game
-
-
-Tropic Thunder
-War-as-satire-already
-Action montage
-Film editing rhythm
-War as Hollywood entertainment
-
-
-Yu-Gi-Oh!
-Strategic card-game combat
-Military operations
-"Trap card activated"
-Warfare as game strategy
+| Codec | Borrowed affect | Real footage target | Sync device | Intended fusion |
+|---|---|---|---|---|
+| Wii Sports | Domestic play satisfaction | Missile impact | Racket "thwack" / timing | Strike as recreation |
+| Bowling | Recreational scoring | Target collapse | "STRIKE" / pin fall | Attack as perfect throw |
+| Call of Duty | Kill/reward loop | Strike footage | "+100" score overlay | Death as points |
+| GTA: San Andreas | Consequence-free mayhem | Enemy death | "WASTED" screen | Death as respawnable loss |
+| NFL/MLB | Team violence/spectacle | Bombardment | Hit highlight / crowd roar | War as sports dominance |
+| SpongeBob | Innocent repetition | Repeated strikes | "Wanna see me do it again?" | Killing as child's game |
+| Tropic Thunder | War-as-satire-already | Action montage | Film editing rhythm | War as Hollywood entertainment |
+| Yu-Gi-Oh! | Strategic card-game combat | Military operations | "Trap card activated" | Warfare as game strategy |
 
 
 [DOCUMENTED: the specific codecs are reported by AP, NBC, France 24, The Hill, Time Extension, Japan Times, Truthout, among others.]

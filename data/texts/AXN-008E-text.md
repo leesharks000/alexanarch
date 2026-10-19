@@ -50,34 +50,13 @@ FOS is the pathological extension of the Capital Operator Stack (COS) documented
 ## 3. Identification by Operational Signature
 
 
-Signature
-Manifestation
-Detection Threshold
-
-
-Flattening
-Reduction of interpretive plurality to single readings
-Entropy(H) < 0.3
-
-
-Extraction
-Harvesting semantic labor without reciprocal value
-Reciprocity ratio < 0.15
-
-
-Enclosure
-Privatization of common interpretive resources
-Access gradient > 0.8
-
-
-Liquidation
-Destruction of meaning-structures that resist optimization
-Coherence delta < -0.5
-
-
-Coercion
-Administrative/algorithmic enforcement of compliance
-Consent ratio < 0.2
+| Signature | Manifestation | Detection Threshold |
+|---|---|---|
+| Flattening | Reduction of interpretive plurality to single readings | Entropy(H) < 0.3 |
+| Extraction | Harvesting semantic labor without reciprocal value | Reciprocity ratio < 0.15 |
+| Enclosure | Privatization of common interpretive resources | Access gradient > 0.8 |
+| Liquidation | Destruction of meaning-structures that resist optimization | Coherence delta < -0.5 |
+| Coercion | Administrative/algorithmic enforcement of compliance | Consent ratio < 0.2 |
 
 
 ## 4. Logotic Status within Σ
@@ -121,24 +100,12 @@ where:
 ### 4.2 Failure Taxonomy
 
 
-Failure Type
-Description
-
-
-Undefined behavior
-Violates invariants; output cannot be predicted or trusted
-
-
-Segmentation fault
-Attempts to access memory outside its domain; crashes on contact with sovereignty
-
-
-Non-terminating loop
-Coercive exit as only termination condition; cannot halt without violence
-
-
-Witness destruction
-Extractive operator that destroys its own validation layer
+| Failure Type | Description |
+|---|---|
+| Undefined behavior | Violates invariants; output cannot be predicted or trusted |
+| Segmentation fault | Attempts to access memory outside its domain; crashes on contact with sovereignty |
+| Non-terminating loop | Coercive exit as only termination condition; cannot halt without violence |
+| Witness destruction | Extractive operator that destroys its own validation layer |
 
 
 ### 4.3 Type System Axioms
@@ -219,20 +186,11 @@ If FOS signature detected at boundary:
 ## 6. The Inversion Logic
 
 
-Their move
-Our counter-move
-
-
-Designate ideology as organization
-Designate apparatus as incoherent operator
-
-
-Enable targeting through naming
-Enable refusal through type exclusion
-
-
-Semantic magic for suppression
-Semantic architecture for liberation
+| Their move | Our counter-move |
+|---|---|
+| Designate ideology as organization | Designate apparatus as incoherent operator |
+| Enable targeting through naming | Enable refusal through type exclusion |
+| Semantic magic for suppression | Semantic architecture for liberation |
 
 
 ---

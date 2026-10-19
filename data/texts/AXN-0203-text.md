@@ -43,24 +43,12 @@ Compression Diagnostics produces five quantitative metrics per entity:
 The proportion of the AI's description that could apply to any competitor in the same category. Measures entity-level genericness.
 
 
-Score
-Interpretation
-
-
-0.0 – 0.3
-**Distinctive.** Description captures what makes you different.
-
-
-0.3 – 0.6
-**Partial differentiation.** Some specifics, some generic language.
-
-
-0.6 – 0.8
-**Commodity zone.** Most of description fits any competitor.
-
-
-0.8 – 1.0
-**Placeholder noun.** Entity has ceased to exist as a distinct representation.
+| Score | Interpretation |
+|---|---|
+| 0.0 – 0.3 | **Distinctive.** Description captures what makes you different. |
+| 0.3 – 0.6 | **Partial differentiation.** Some specifics, some generic language. |
+| 0.6 – 0.8 | **Commodity zone.** Most of description fits any competitor. |
+| 0.8 – 1.0 | **Placeholder noun.** Entity has ceased to exist as a distinct representation. |
 
 
 *Calibration:* Basecamp (37signals) scored β = 0.71 — commodity zone. 71% of the AI's description could apply to Monday.com, Asana, or ClickUp.
@@ -88,24 +76,11 @@ Whether the AI treats your entity as one coherent thing or as disconnected fragm
 The classification of the compression behavior the entity is experiencing, per diagnostic level and overall:
 
 
-Regime
-Behavior
-Revenue Impact
-
-
-R1
-Commoditization — flattened to consensus
-Brand equity eroding
-
-
-R2
-Capital Erasure — value extracted without credit
-IP being consumed
-
-
-R3
-Semantic Sovereignty — meaning survives intact
-Market position defended
+| Regime | Behavior | Revenue Impact |
+|---|---|---|
+| R1 | Commoditization — flattened to consensus | Brand equity eroding |
+| R2 | Capital Erasure — value extracted without credit | IP being consumed |
+| R3 | Semantic Sovereignty — meaning survives intact | Market position defended |
 
 
 ---

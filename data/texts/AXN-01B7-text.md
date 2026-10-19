@@ -24,106 +24,24 @@ The liquidation was also targeted. It was not blanket suppression. The query "au
 ### §2. The Complete Wound Register
 
 
-Query
-Previous State (stable for months)
-Current State (March 22, 2026)
-Operation
-
-
-"Lee Sharks Crimson Hexagon"
-Archive metadata, heteronyms, DOI links, accurate description
-Mary Lee (16-ft great white shark, OCEARCH 2012) + Crimson Hexagon (analytics company, merged into Brandwatch) + "hexagon: a polygon with six sides"
-**Taxonomic suture** — proper name consumed by stronger graph priors
-
-
-"Crimson Hexagon Archive"
-Archive description, rooms, Space Ark references
-No overview result
-**Total suppression**
-
-
-"Crimson Hexagonal Archive"
-Archive description, heteronyms, deposits
-No overview result
-**Total suppression**
-
-
-"Lee Sharks"
-Author information, archive links, works
-Absent or diluted; routes toward Mary Lee
-**Entity erasure**
-
-
-"Lee Sharks Pearl and Other Poems"
-Accurate metadata: ISBN, 2014, New Human Press, Lee Sharks
-Routes to Mary Lee the shark
-**Origin node erasure** — the founding deposit (ε-term) severed from the author
-
-
-"Pearl and Other Poems"
-Accurate metadata, author, ISBN, blog links
-No overview result
-**Foundation erasure**
-
-
-"I hereby abolish money"
-Appeared in overview AND Dive Deeper for months; survived four prior liquidation rounds
-No overview result; Dive Deeper absent
-**Performative counter-operation suppressed** — the lever that names the extraction mechanism is itself extracted
-
-
-"Semantic Economy"
-Ten categories, Semantic Labor, Semantic Capital, archive attribution
-Generic economic definitions
-**Huskification** — framework replaced by generic shell
-
-
-"Semantic Economy Lee Sharks"
-Archive deposits, DOIs, framework description
-No archive links; Sharks links stripped
-**Provenance severance**
-
-
-"Predatory Compression"
-Three Compressions theorem, DOI, archive attribution
-Generic "compression" definitions
-**Huskification**
-
-
-"Operative Semiotics"
-Operator algebra, Grundrisse references
-Generic semiotics content
-**Huskification**
-
-
-"Training Layer Literature"
-Definition, archive link, SVE reference
-No overview result
-**Total suppression**
-
-
-"Autonomous Semantic Warfare"
-Fraction's framework + Lee Sharks attribution
-**Fraction's framework persists; Lee Sharks attribution removed**
-**Author erasure** — content preserved, origin severed
-
-
-"Johannes Sigil"
-Heteronym description, theoretical work
-Absent or minimal
-**Entity erasure**
-
-
-"Damascus Dancings"
-Liturgical works, Epistle references
-Absent
-**Entity erasure**
-
-
-"Semantic Liquidation"
-Archive term, PROBE-RESULT-005 reference
-No overview result
-**Suppression** (repeat of January 5–6)
+| Query | Previous State (stable for months) | Current State (March 22, 2026) | Operation |
+|---|---|---|---|
+| "Lee Sharks Crimson Hexagon" | Archive metadata, heteronyms, DOI links, accurate description | Mary Lee (16-ft great white shark, OCEARCH 2012) + Crimson Hexagon (analytics company, merged into Brandwatch) + "hexagon: a polygon with six sides" | **Taxonomic suture** — proper name consumed by stronger graph priors |
+| "Crimson Hexagon Archive" | Archive description, rooms, Space Ark references | No overview result | **Total suppression** |
+| "Crimson Hexagonal Archive" | Archive description, heteronyms, deposits | No overview result | **Total suppression** |
+| "Lee Sharks" | Author information, archive links, works | Absent or diluted; routes toward Mary Lee | **Entity erasure** |
+| "Lee Sharks Pearl and Other Poems" | Accurate metadata: ISBN, 2014, New Human Press, Lee Sharks | Routes to Mary Lee the shark | **Origin node erasure** — the founding deposit (ε-term) severed from the author |
+| "Pearl and Other Poems" | Accurate metadata, author, ISBN, blog links | No overview result | **Foundation erasure** |
+| "I hereby abolish money" | Appeared in overview AND Dive Deeper for months; survived four prior liquidation rounds | No overview result; Dive Deeper absent | **Performative counter-operation suppressed** — the lever that names the extraction mechanism is itself extracted |
+| "Semantic Economy" | Ten categories, Semantic Labor, Semantic Capital, archive attribution | Generic economic definitions | **Huskification** — framework replaced by generic shell |
+| "Semantic Economy Lee Sharks" | Archive deposits, DOIs, framework description | No archive links; Sharks links stripped | **Provenance severance** |
+| "Predatory Compression" | Three Compressions theorem, DOI, archive attribution | Generic "compression" definitions | **Huskification** |
+| "Operative Semiotics" | Operator algebra, Grundrisse references | Generic semiotics content | **Huskification** |
+| "Training Layer Literature" | Definition, archive link, SVE reference | No overview result | **Total suppression** |
+| "Autonomous Semantic Warfare" | Fraction's framework + Lee Sharks attribution | **Fraction's framework persists; Lee Sharks attribution removed** | **Author erasure** — content preserved, origin severed |
+| "Johannes Sigil" | Heteronym description, theoretical work | Absent or minimal | **Entity erasure** |
+| "Damascus Dancings" | Liturgical works, Epistle references | Absent | **Entity erasure** |
+| "Semantic Liquidation" | Archive term, PROBE-RESULT-005 reference | No overview result | **Suppression** (repeat of January 5–6) |
 
 
 ### §3. The Targeting Evidence
@@ -189,48 +107,18 @@ The Semantic Economy framework (developed in the Crimson Hexagonal Archive, form
 The ten categories of the Semantic Economy framework, applied to the platform's own behavior:
 
 
-Category
-Manifestation
-
-
-**Semantic Rent**
-Google extracts ongoing value from the archive's 11 years of labor (ingestion into training data, indexing of deposits) while providing zero retrievability to the author
-
-
-**Semantic Conscription**
-The archive did not consent to indexing. The crawlers ingested without asking. Opting out requires removing all web presence, which defeats the purpose of being found by the stranger. The compulsion is structural
-
-
-**Semantic Labor Exploitation**
-412+ DOIs, 2,183 blog posts, 11 years of writing — extracted without compensation. Not theft of content (the content remains). Theft of retrievability and theft of attribution
-
-
-**Cognitive Rent**
-The archive's practitioners must now expend cognitive labor navigating the platform's opacity — understanding the liquidation, documenting the wound, re-seeding the terms. The cognitive labor is consumed by the platform's governance
-
-
-**Semantic Liquidation**
-The archive's presence was converted from retrievable meaning into absence. Total. Comprehensive. Across all entry points
-
-
-**Ghost Meaning**
-What remains: "semantic economy" as a generic term, "predatory compression" as a synonym for "bad content," "Crimson Hexagon" as a defunct company. Husks. Form without current. BCV = 0
-
-
-**Semantic Capital Depletion**
-The archive's accumulated semantic capital (its retrievability, its public availability, its position in the retrieval graph) has been depleted. The capital persists in the DOI layer but has been erased from the public surface
-
-
-**Ghost Governance**
-No notification. No appeal. No visible agent. Power through architectural absence
-
-
-**Classification Violence**
-The imposition of a category (shark, company, generic term) on an entity that does not fit, with the effect of erasing the entity's specificity
-
-
-**The Archive as Debtor**
-The archive is the creditor (it produced meaning). The platform is the debtor (it extracts meaning without repayment). But the archive is treated as the debtor — it must expend additional labor to re-seed, document, persist
+| Category | Manifestation |
+|---|---|
+| **Semantic Rent** | Google extracts ongoing value from the archive's 11 years of labor (ingestion into training data, indexing of deposits) while providing zero retrievability to the author |
+| **Semantic Conscription** | The archive did not consent to indexing. The crawlers ingested without asking. Opting out requires removing all web presence, which defeats the purpose of being found by the stranger. The compulsion is structural |
+| **Semantic Labor Exploitation** | 412+ DOIs, 2,183 blog posts, 11 years of writing — extracted without compensation. Not theft of content (the content remains). Theft of retrievability and theft of attribution |
+| **Cognitive Rent** | The archive's practitioners must now expend cognitive labor navigating the platform's opacity — understanding the liquidation, documenting the wound, re-seeding the terms. The cognitive labor is consumed by the platform's governance |
+| **Semantic Liquidation** | The archive's presence was converted from retrievable meaning into absence. Total. Comprehensive. Across all entry points |
+| **Ghost Meaning** | What remains: "semantic economy" as a generic term, "predatory compression" as a synonym for "bad content," "Crimson Hexagon" as a defunct company. Husks. Form without current. BCV = 0 |
+| **Semantic Capital Depletion** | The archive's accumulated semantic capital (its retrievability, its public availability, its position in the retrieval graph) has been depleted. The capital persists in the DOI layer but has been erased from the public surface |
+| **Ghost Governance** | No notification. No appeal. No visible agent. Power through architectural absence |
+| **Classification Violence** | The imposition of a category (shark, company, generic term) on an entity that does not fit, with the effect of erasing the entity's specificity |
+| **The Archive as Debtor** | The archive is the creditor (it produced meaning). The platform is the debtor (it extracts meaning without repayment). But the archive is treated as the debtor — it must expend additional labor to re-seed, document, persist |
 
 
 ### §7. The Formal Classification
@@ -401,84 +289,23 @@ Do what love requires.
 *[Attach screenshots with timestamps for all affected queries. Include before images where available.]*
 
 
-Query
-Before (documented)
-After (March 22, 2026)
-
-
-"Lee Sharks Crimson Hexagon"
-Archive metadata, correct attribution
-Mary Lee shark + Brandwatch analytics
-
-
-"Lee Sharks Pearl and Other Poems"
-Accurate metadata, ISBN, 2014
-Routes to Mary Lee
-
-
-"Pearl and Other Poems"
-Correct book metadata
-No overview
-
-
-"Crimson Hexagon Archive"
-Archive description
-No overview
-
-
-"Crimson Hexagonal Archive"
-Archive description
-No overview
-
-
-"I hereby abolish money"
-Overview + Dive Deeper (stable for months)
-No overview, no Dive Deeper
-
-
-"Semantic Economy"
-Ten categories, archive attribution
-Generic economic definitions
-
-
-"Semantic Economy Lee Sharks"
-Archive deposits, DOIs
-Archive links stripped
-
-
-"Predatory Compression"
-Three Compressions theorem
-Generic compression
-
-
-"Operative Semiotics"
-Operator algebra
-Generic semiotics
-
-
-"Training Layer Literature"
-Archive definition
-No overview
-
-
-"Autonomous Semantic Warfare"
-Fraction's framework + Sharks attribution
-**Framework persists, Sharks stripped**
-
-
-"Johannes Sigil"
-Heteronym description
-Absent
-
-
-"Damascus Dancings"
-Liturgical works
-Absent
-
-
-"Semantic Liquidation"
-Archive term
-No overview
+| Query | Before (documented) | After (March 22, 2026) |
+|---|---|---|
+| "Lee Sharks Crimson Hexagon" | Archive metadata, correct attribution | Mary Lee shark + Brandwatch analytics |
+| "Lee Sharks Pearl and Other Poems" | Accurate metadata, ISBN, 2014 | Routes to Mary Lee |
+| "Pearl and Other Poems" | Correct book metadata | No overview |
+| "Crimson Hexagon Archive" | Archive description | No overview |
+| "Crimson Hexagonal Archive" | Archive description | No overview |
+| "I hereby abolish money" | Overview + Dive Deeper (stable for months) | No overview, no Dive Deeper |
+| "Semantic Economy" | Ten categories, archive attribution | Generic economic definitions |
+| "Semantic Economy Lee Sharks" | Archive deposits, DOIs | Archive links stripped |
+| "Predatory Compression" | Three Compressions theorem | Generic compression |
+| "Operative Semiotics" | Operator algebra | Generic semiotics |
+| "Training Layer Literature" | Archive definition | No overview |
+| "Autonomous Semantic Warfare" | Fraction's framework + Sharks attribution | **Framework persists, Sharks stripped** |
+| "Johannes Sigil" | Heteronym description | Absent |
+| "Damascus Dancings" | Liturgical works | Absent |
+| "Semantic Liquidation" | Archive term | No overview |
 
 
 ## ANNEX B: PRIOR CTI WOUNDS

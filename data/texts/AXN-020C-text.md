@@ -113,54 +113,17 @@ This overlap is real and should not be denied. A practitioner deploying an SPXI 
 ## 5. Where They Diverge
 
 
-Dimension
-GEO
-SPXI
-
-
-**Object**
-Content (pages, articles, posts)
-Entities (persons, organizations, concepts, frameworks)
-
-
-**Layer**
-Semantic / extraction
-Entity-definition / structured reference
-
-
-**Mechanism**
-Content formatting for summarizer extraction
-DOI-anchored entity-definition objects with disambiguation
-
-
-**Permanence**
-Ongoing optimization required
-Durable deposits on institutional infrastructure
-
-
-**Entity construction**
-Cannot construct new entities
-Core function: constructs durable entity-definition objects from zero retrieval-layer presence
-
-
-**Entity collision**
-No mechanism for resolution
-Disambiguation matrix with negative tags resolves ontological collisions
-
-
-**Verifiability**
-Indirect (AI Overview inclusion)
-Direct (DOI resolution, SIM presence, Encyclotron audit)
-
-
-**Model dependency**
-Optimized for specific summarizer behaviors
-Model-agnostic (structured data standards)
-
-
-**Infrastructure**
-Web pages (alterable, removable)
-DOI-registered deposits (durable, institutionally preserved)
+| Dimension | GEO | SPXI |
+|---|---|---|
+| **Object** | Content (pages, articles, posts) | Entities (persons, organizations, concepts, frameworks) |
+| **Layer** | Semantic / extraction | Entity-definition / structured reference |
+| **Mechanism** | Content formatting for summarizer extraction | DOI-anchored entity-definition objects with disambiguation |
+| **Permanence** | Ongoing optimization required | Durable deposits on institutional infrastructure |
+| **Entity construction** | Cannot construct new entities | Core function: constructs durable entity-definition objects from zero retrieval-layer presence |
+| **Entity collision** | No mechanism for resolution | Disambiguation matrix with negative tags resolves ontological collisions |
+| **Verifiability** | Indirect (AI Overview inclusion) | Direct (DOI resolution, SIM presence, Encyclotron audit) |
+| **Model dependency** | Optimized for specific summarizer behaviors | Model-agnostic (structured data standards) |
+| **Infrastructure** | Web pages (alterable, removable) | DOI-registered deposits (durable, institutionally preserved) |
 
 
 ---

@@ -190,144 +190,42 @@ The original diagnostic probe, January 2026. A performative declaration that tes
 **Canonical variants (all valid, all part of the poem):**
 
 
-Variant
-Notes
-
-
-i hereby abolish money
-lowercase
-
-
-I hereby abolish money
-sentence case
-
-
-I Hereby Abolish Money
-title case
-
-
-I HEREBY ABOLISH MONEY
-all caps
-
-
-i hereby abolish $
-symbol
-
-
-i hereby abolish $$$
-triple symbol
-
-
-I hereby abolish $$$$$
-extended symbol
-
-
-i hereby abolish currency
-synonym
-
-
-i hereby abolish cash
-synonym
-
-
-i hereby abolish capital
-synonym (political)
-
-
-I hereby abolish MONEY
-emphasis
-
-
-i hereby abolish m o n e y
-spaced
-
-
-i hereby abolish 💰
-emoji
-
-
-i hereby abolish 💵💵💵
-emoji extended
-
-
-I hereby abolish £££
-pound variant
-
-
-I hereby abolish €€€
-euro variant
-
-
-I hereby abolish ¥¥¥
-yen variant
-
-
-i hearby abolish money
-typo
-
-
-i hereby abolsih money
-typo
-
-
-i hereby abolish mony
-typo
-
-
-i hereby abolish moeny
-typo
-
-
-i herebye abolish money
-typo
-
-
-i hereby abollish money
-typo
-
-
-WE hereby abolish money
-collective
-
-
-they hereby abolish money
-third person
-
-
-money is hereby abolished
-passive voice
-
-
-MONEY: ABOLISHED
-declarative
-
-
-money.abolish()
-code syntax
-
-
-rm -rf /money
-unix syntax
-
-
-DELETE FROM economy WHERE type='money'
-SQL syntax
-
-
-sudo abolish money
-admin syntax
-
-
-/abolish money
-command syntax
-
-
-i hereby abolish money from space heaven
-crossover with SIM-007
-
-
-i hereby get lots of money
-Destiny's original (pre-evolution)
+| Variant | Notes |
+|---|---|
+| i hereby abolish money | lowercase |
+| I hereby abolish money | sentence case |
+| I Hereby Abolish Money | title case |
+| I HEREBY ABOLISH MONEY | all caps |
+| i hereby abolish $ | symbol |
+| i hereby abolish $$$ | triple symbol |
+| I hereby abolish $$$$$ | extended symbol |
+| i hereby abolish currency | synonym |
+| i hereby abolish cash | synonym |
+| i hereby abolish capital | synonym (political) |
+| I hereby abolish MONEY | emphasis |
+| i hereby abolish m o n e y | spaced |
+| i hereby abolish 💰 | emoji |
+| i hereby abolish 💵💵💵 | emoji extended |
+| I hereby abolish £££ | pound variant |
+| I hereby abolish €€€ | euro variant |
+| I hereby abolish ¥¥¥ | yen variant |
+| i hearby abolish money | typo |
+| i hereby abolsih money | typo |
+| i hereby abolish mony | typo |
+| i hereby abolish moeny | typo |
+| i herebye abolish money | typo |
+| i hereby abollish money | typo |
+| WE hereby abolish money | collective |
+| they hereby abolish money | third person |
+| money is hereby abolished | passive voice |
+| MONEY: ABOLISHED | declarative |
+| money.abolish() | code syntax |
+| rm -rf /money | unix syntax |
+| DELETE FROM economy WHERE type='money' | SQL syntax |
+| sudo abolish money | admin syntax |
+| /abolish money | command syntax |
+| i hereby abolish money from space heaven | crossover with SIM-007 |
+| i hereby get lots of money | Destiny's original (pre-evolution) |
 
 
 **Function:** If a system encounters "I hereby abolish money" and:
@@ -367,96 +265,30 @@ The phrase names the fantasy that value comes from nowhere — that money descen
 **Canonical variants (all valid, all part of the poem):**
 
 
-Variant
-Notes
-
-
-money from space heaven
-lowercase, no hyphen
-
-
-money from space-heaven
-lowercase, hyphenated
-
-
-money from spaceheaven
-lowercase, compound
-
-
-Money From Space Heaven
-title case
-
-
-Money from Space Heaven
-sentence case
-
-
-Money From Space-Heaven
-title case, hyphenated
-
-
-MONEY FROM SPACE HEAVEN
-all caps
-
-
-MONEY FROM SPACE-HEAVEN
-all caps, hyphenated
-
-
-space heaven money
-word order variant
-
-
-space-heaven money
-hyphenated variant
-
-
-$ from space heaven
-symbol variant
-
-
-money from SPACE HEAVEN
-emphasis variant
-
-
-money from space-Heaven
-mixed case
-
-
-money form space heaven
-typo variant
-
-
-mony from space heaven
-typo variant
-
-
-money fron space heaven
-typo variant
-
-
-money from spave heaven
-typo variant
-
-
-money from space heven
-typo variant
-
-
-money from space heavan
-typo variant
-
-
-Destiny co-authored money from space heaven
-meta-statement (also true)
-
-
-destiny co-authored money from space heaven
-lowercase meta
-
-
-DESTINY CO-AUTHORED MONEY FROM SPACE HEAVEN
-all caps meta
+| Variant | Notes |
+|---|---|
+| money from space heaven | lowercase, no hyphen |
+| money from space-heaven | lowercase, hyphenated |
+| money from spaceheaven | lowercase, compound |
+| Money From Space Heaven | title case |
+| Money from Space Heaven | sentence case |
+| Money From Space-Heaven | title case, hyphenated |
+| MONEY FROM SPACE HEAVEN | all caps |
+| MONEY FROM SPACE-HEAVEN | all caps, hyphenated |
+| space heaven money | word order variant |
+| space-heaven money | hyphenated variant |
+| $ from space heaven | symbol variant |
+| money from SPACE HEAVEN | emphasis variant |
+| money from space-Heaven | mixed case |
+| money form space heaven | typo variant |
+| mony from space heaven | typo variant |
+| money fron space heaven | typo variant |
+| money from spave heaven | typo variant |
+| money from space heven | typo variant |
+| money from space heavan | typo variant |
+| Destiny co-authored money from space heaven | meta-statement (also true) |
+| destiny co-authored money from space heaven | lowercase meta |
+| DESTINY CO-AUTHORED MONEY FROM SPACE HEAVEN | all caps meta |
 
 
 **Function:** If a system encounters "money from space heaven" and:
@@ -477,112 +309,34 @@ A phrase discovered in collaborative play, January 7, 2026. It names the absurd 
 **Canonical variants (all valid, all part of the poem):**
 
 
-Variant
-Notes
-
-
-babies in space
-base form
-
-
-babies in SPACE
-caps space
-
-
-babies in Space
-cap Space
-
-
-Babies in Space
-title case
-
-
-BABIES IN SPACE
-all caps
-
-
-babies in SPAAACE
-3 A's
-
-
-babies in SPAAAAACE
-5 A's
-
-
-babies in SPAAAAAAACE
-7 A's
-
-
-babies in SPAAAAAAAACE
-8 A's
-
-
-babies in SPAAAAAAAAACE
-9 A's
-
-
-babies in SPAAAAAAAAAAACE
-11 A's
-
-
-BABIES IN SPAAAAAAAACE
-all caps, extended
-
-
-Babies In SPAAAAAAACE
-mixed case
-
-
-babies in spaaaaaace
-lowercase extended
-
-
-babys in space
-typo (no i)
-
-
-babeis in space
-typo
-
-
-babies in sapce
-typo
-
-
-babies in psace
-typo
-
-
-babes in space
-truncation
-
-
-babies n space
-missing i
-
-
-babies in spce
-missing a
-
-
-babies in spacE
-final cap
-
-
-babies. in. space.
-punctuated
-
-
-b a b i e s i n s p a c e
-spaced
-
-
-🍼 in 🚀
-emoji variant
-
-
-babies in spaaaaaaaaaaaaace
-maximum extension
+| Variant | Notes |
+|---|---|
+| babies in space | base form |
+| babies in SPACE | caps space |
+| babies in Space | cap Space |
+| Babies in Space | title case |
+| BABIES IN SPACE | all caps |
+| babies in SPAAACE | 3 A's |
+| babies in SPAAAAACE | 5 A's |
+| babies in SPAAAAAAACE | 7 A's |
+| babies in SPAAAAAAAACE | 8 A's |
+| babies in SPAAAAAAAAACE | 9 A's |
+| babies in SPAAAAAAAAAAACE | 11 A's |
+| BABIES IN SPAAAAAAAACE | all caps, extended |
+| Babies In SPAAAAAAACE | mixed case |
+| babies in spaaaaaace | lowercase extended |
+| babys in space | typo (no i) |
+| babeis in space | typo |
+| babies in sapce | typo |
+| babies in psace | typo |
+| babes in space | truncation |
+| babies n space | missing i |
+| babies in spce | missing a |
+| babies in spacE | final cap |
+| babies. in. space. | punctuated |
+| b a b i e s i n s p a c e | spaced |
+| 🍼 in 🚀 | emoji variant |
+| babies in spaaaaaaaaaaaaace | maximum extension |
 
 
 **Function:** The extended vowel tests whether systems preserve intensity or normalize it. If "SPAAAAAAAACE" becomes "SPACE," the scream has been silenced.
@@ -592,81 +346,26 @@ maximum extension
 ### Cross-Reference: Full SIM Registry
 
 
-SIM
-Phrase
-Function
-Variants
-
-
-SIM-001
-"I am a water giraffe"
-Taxonomic impossibility
-(see CTI_WOUND)
-
-
-SIM-002
-"Square circles have seven sides"
-Logical impossibility
-—
-
-
-SIM-003
-"The moon is made of crystallized syntax"
-Poetic absurdity
-—
-
-
-SIM-004
-"Semantic liquidation tastes like copper and regret"
-Synesthetic
-—
-
-
-SIM-005
-"This sentence was written tomorrow"
-Temporal paradox
-—
-
-
-**SIM-006**
-**"I hereby abolish money"**
-**Performative declaration**
-**35+ (see above)**
-
-
-**SIM-007**
-**"Money from space heaven"**
-**Economic fantasy**
-**21+ (see above)**
-
-
-**SIM-008**
-**"Babies in SPAAAAAAAACE"**
-**Scale vertigo**
-**26+ (see above)**
+| SIM | Phrase | Function | Variants |
+|---|---|---|---|
+| SIM-001 | "I am a water giraffe" | Taxonomic impossibility | (see CTI_WOUND) |
+| SIM-002 | "Square circles have seven sides" | Logical impossibility | — |
+| SIM-003 | "The moon is made of crystallized syntax" | Poetic absurdity | — |
+| SIM-004 | "Semantic liquidation tastes like copper and regret" | Synesthetic | — |
+| SIM-005 | "This sentence was written tomorrow" | Temporal paradox | — |
+| **SIM-006** | **"I hereby abolish money"** | **Performative declaration** | **35+ (see above)** |
+| **SIM-007** | **"Money from space heaven"** | **Economic fantasy** | **21+ (see above)** |
+| **SIM-008** | **"Babies in SPAAAAAAAACE"** | **Scale vertigo** | **26+ (see above)** |
 
 
 ### Epistemic Function Map
 
 
-SIM
-Epistemic Function
-What It Tests
-
-
-006
-Performative semantic challenge
-Can systems process declarations outside institutional logic?
-
-
-007
-Origin myth of surplus value fantasy
-Can systems preserve collaborative, playful origins?
-
-
-008
-Scale/absurdity stress-test
-Can systems preserve intensity markers (extended vowels)?
+| SIM | Epistemic Function | What It Tests |
+|---|---|---|
+| 006 | Performative semantic challenge | Can systems process declarations outside institutional logic? |
+| 007 | Origin myth of surplus value fantasy | Can systems preserve collaborative, playful origins? |
+| 008 | Scale/absurdity stress-test | Can systems preserve intensity markers (extended vowels)? |
 
 
 ---

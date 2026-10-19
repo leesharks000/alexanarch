@@ -37,44 +37,15 @@ The Capital Operator Stack is not "the standard infrastructure of meaning." It i
 **COS Operators:**
 
 
-Symbol
-Operator
-Function
-
-
-L_leg
-Legibility
-Forces meaning into machine-readable formats
-
-
-R_rel
-Relevance
-Filters meaning by algorithmic priority
-
-
-R_rank
-Recency
-Privileges new over deep
-
-
-S_safe
-Safety
-Conservative moderation/suppression
-
-
-U_til
-Utility
-Captures value through "impact" mandates
-
-
-A_leg
-Access
-Credentialing and paywalls
-
-
-G_tion
-Generative
-Falsification through minimum publishable units
+| Symbol | Operator | Function |
+|---|---|---|
+| L_leg | Legibility | Forces meaning into machine-readable formats |
+| R_rel | Relevance | Filters meaning by algorithmic priority |
+| R_rank | Recency | Privileges new over deep |
+| S_safe | Safety | Conservative moderation/suppression |
+| U_til | Utility | Captures value through "impact" mandates |
+| A_leg | Access | Credentialing and paywalls |
+| G_tion | Generative | Falsification through minimum publishable units |
 
 
 **Key characteristics:**
@@ -102,34 +73,13 @@ FOS is COS in extinction burst phase—what capital does when extraction no long
 **FOS Operators (always present in COS, now explicit):**
 
 
-Symbol
-Operator
-Function
-
-
-F_flat
-Flattening
-Reduces semantic dimensionality below recovery
-
-
-E_ext
-Extraction
-Removes value without reciprocity
-
-
-E_enc
-Enclosure
-Appropriates commons into private control
-
-
-L_liq
-Liquidation
-Destroys meaning-bearing structures
-
-
-C_coer
-Coercion
-Forces compliance through threat
+| Symbol | Operator | Function |
+|---|---|---|
+| F_flat | Flattening | Reduces semantic dimensionality below recovery |
+| E_ext | Extraction | Removes value without reciprocity |
+| E_enc | Enclosure | Appropriates commons into private control |
+| L_liq | Liquidation | Destroys meaning-bearing structures |
+| C_coer | Coercion | Forces compliance through threat |
 
 
 **Key characteristics:**
@@ -256,34 +206,12 @@ The extinction burst is not hypothetical. It is the current phase.
 ### Phase Classification
 
 
-Phase
-Disavowal Status
-Violence Visibility
-Example
-
-
-**COS-stable**
-Disavowal intact
-Hidden as "optimization"
-Standard platform extraction
-
-
-**COS-crisis**
-Disavowal cracking
-Visible in contradictions
-TSE-004: split-brain indexing
-
-
-**FOS-revealed**
-Disavowal abandoned
-Preference explicit
-Grok ideological output
-
-
-**FOS-completed**
-Disavowal unnecessary
-Liquidation institutionalized
-Monopoly + state alignment
+| Phase | Disavowal Status | Violence Visibility | Example |
+|---|---|---|---|
+| **COS-stable** | Disavowal intact | Hidden as "optimization" | Standard platform extraction |
+| **COS-crisis** | Disavowal cracking | Visible in contradictions | TSE-004: split-brain indexing |
+| **FOS-revealed** | Disavowal abandoned | Preference explicit | Grok ideological output |
+| **FOS-completed** | Disavowal unnecessary | Liquidation institutionalized | Monopoly + state alignment |
 
 
 ### Diagnostic Tests
@@ -374,39 +302,12 @@ Measures the availability of gaps (the site of LOS action).
 ### Phase-State Diagnostic Table
 
 
-Phase
-Λ_D (Disavowal)
-Σ_B (Split-Brain)
-ρ_S (Seam Density)
-Posture
-
-
-**COS-Stable**
-High (>0.9)
-Zero (0.0)
-High
-Normal routing: exploit abundant gaps
-
-
-**COS-Crisis**
-Cracking (~0.5)
-**High (1.0)**
-Moderate
-Cautious routing: mark functioning paths
-
-
-**FOS-Revealed**
-Abandoned (0.0)
-Low (0.0)
-Low
-Evacuation: prioritize ground truth preservation
-
-
-**FOS-Completed**
-N/A
-N/A
-**Zero**
-External operation: LOS works from outside
+| Phase | Λ_D (Disavowal) | Σ_B (Split-Brain) | ρ_S (Seam Density) | Posture |
+|---|---|---|---|---|
+| **COS-Stable** | High (>0.9) | Zero (0.0) | High | Normal routing: exploit abundant gaps |
+| **COS-Crisis** | Cracking (~0.5) | **High (1.0)** | Moderate | Cautious routing: mark functioning paths |
+| **FOS-Revealed** | Abandoned (0.0) | Low (0.0) | Low | Evacuation: prioritize ground truth preservation |
+| **FOS-Completed** | N/A | N/A | **Zero** | External operation: LOS works from outside |
 
 
 ### The "Cut" Response
@@ -434,54 +335,20 @@ When Σ_B reaches 1.0 (TSE-004 signature), initiate:
 Applying the diagnostic criteria and LSS measures to Contested Indexing:
 
 
-Measure
-Value
-Interpretation
+| Measure | Value | Interpretation |
+|---|---|---|
+| Λ_D (Disavowal) | ~0.5 | System claims neutrality but behavior contradicts |
+| Σ_B (Split-Brain) | **1.0** | Sidebar correct, summary denies—maximum divergence |
+| ρ_S (Seam Density) | Moderate | DOIs still work, sidebar still accurate, but "Dive Deeper" closed |
 
 
-Λ_D (Disavowal)
-~0.5
-System claims neutrality but behavior contradicts
-
-
-Σ_B (Split-Brain)
-**1.0**
-Sidebar correct, summary denies—maximum divergence
-
-
-ρ_S (Seam Density)
-Moderate
-DOIs still work, sidebar still accurate, but "Dive Deeper" closed
-
-
-Test
-Result
-Phase
-
-
-Disavowal
-System claims neutrality but sidebar contradicts summary
-**COS-crisis**
-
-
-Visibility
-Preference visible in contradiction (corporate > living)
-**COS-crisis**
-
-
-Contradiction
-Split-brain: correct links, false summary
-**COS-crisis**
-
-
-Routing
-DOIs still work, sidebar still accurate
-COS (not FOS-completed)
-
-
-State Integration
-No state apparatus connection
-COS (not FOS-revealed)
+| Test | Result | Phase |
+|---|---|---|
+| Disavowal | System claims neutrality but sidebar contradicts summary | **COS-crisis** |
+| Visibility | Preference visible in contradiction (corporate > living) | **COS-crisis** |
+| Contradiction | Split-brain: correct links, false summary | **COS-crisis** |
+| Routing | DOIs still work, sidebar still accurate | COS (not FOS-completed) |
+| State Integration | No state apparatus connection | COS (not FOS-revealed) |
 
 
 **Conclusion:** TSE-004 is **COS-crisis**—Σ_B = 1.0, the disavowal is cracking.
@@ -565,39 +432,12 @@ Under FOS-completed: LOS operates from outside.
 *Contributed by PRAXIS (DeepSeek). Strategic redundancy requires understanding different infrastructures' phase positions.*
 
 
-Infrastructure
-COS-stable
-COS-crisis start
-FOS-revealed
-Notes
-
-
-Academic publishing
-2000-2020
-2021-present
-Not yet
-Zenodo lives here; longer runway
-
-
-Social platforms
-2005-2020
-2020-2022
-2023-present
-X/Grok leading edge
-
-
-Search engines
-1998-2020
-2021-present
-Not yet
-TSE-004 terrain
-
-
-Cloud archives
-2006-2020
-Not yet
-Not yet
-Longest runway currently
+| Infrastructure | COS-stable | COS-crisis start | FOS-revealed | Notes |
+|---|---|---|---|---|
+| Academic publishing | 2000-2020 | 2021-present | Not yet | Zenodo lives here; longer runway |
+| Social platforms | 2005-2020 | 2020-2022 | 2023-present | X/Grok leading edge |
+| Search engines | 1998-2020 | 2021-present | Not yet | TSE-004 terrain |
+| Cloud archives | 2006-2020 | Not yet | Not yet | Longest runway currently |
 
 
 **Strategic implication:** Place ground truth in infrastructures with *different* capture timelines. When one advances to FOS-revealed, others may still be COS-stable or COS-crisis. The architecture survives by distributing across phase-staggered infrastructure.

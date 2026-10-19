@@ -42,34 +42,13 @@ Retrieval Forensics investigates the crime.
 A Retrieval Forensics investigation uses the Encyclotron (DOI: 10.5281/zenodo.19474724) — a 45-query diagnostic battery across five evidentiary levels:
 
 
-Level
-What It Investigates
-Evidence Collected
-
-
-1. Entity Recognition
-Does the AI know what you are?
-Description accuracy, generic vs. specific language, quoting behavior
-
-
-2. Competitive Position
-Does the AI include you in your category?
-Category presence, competitor framing, citation slot allocation
-
-
-3. Intellectual Property
-Does the AI credit your original work?
-Attribution chains, provenance scars, methodology absorption
-
-
-4. Customer Decision
-What does the AI say when someone is buying?
-Decision-layer framing, complaint synthesis, competitor steering
-
-
-5. Founder Entity
-Does the AI know your people?
-Personal entity accuracy, company connection, reputational framing
+| Level | What It Investigates | Evidence Collected |
+|---|---|---|
+| 1. Entity Recognition | Does the AI know what you are? | Description accuracy, generic vs. specific language, quoting behavior |
+| 2. Competitive Position | Does the AI include you in your category? | Category presence, competitor framing, citation slot allocation |
+| 3. Intellectual Property | Does the AI credit your original work? | Attribution chains, provenance scars, methodology absorption |
+| 4. Customer Decision | What does the AI say when someone is buying? | Decision-layer framing, complaint synthesis, competitor steering |
+| 5. Founder Entity | Does the AI know your people? | Personal entity accuracy, company connection, reputational framing |
 
 
 Each query produces forensic evidence scored across four metrics:
@@ -111,28 +90,11 @@ Full forensic file: EA-CORP-02 (Sample Encyclotron Audit).
 Retrieval Forensics classifies compression damage using the Three Compressions framework (DOI: 10.5281/zenodo.19053469):
 
 
-Regime
-Name
-What Happens
-Business Impact
-
-
-**R1**
-Commoditization
-Entity flattened to generic description
-Brand equity liquidated; description fits any competitor
-
-
-**R2**
-Capital Erasure
-Entity's value extracted without attribution
-Your methodology cited, your name dropped
-
-
-**R3**
-Semantic Sovereignty
-Entity meaning and revenue survive intact
-Accurate, attributed, differentiated
+| Regime | Name | What Happens | Business Impact |
+|---|---|---|---|
+| **R1** | Commoditization | Entity flattened to generic description | Brand equity liquidated; description fits any competitor |
+| **R2** | Capital Erasure | Entity's value extracted without attribution | Your methodology cited, your name dropped |
+| **R3** | Semantic Sovereignty | Entity meaning and revenue survive intact | Accurate, attributed, differentiated |
 
 
 The goal of a forensic investigation is to determine which regime applies at each diagnostic level and map the pathway from current state to R3.

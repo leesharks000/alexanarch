@@ -195,88 +195,21 @@ That is the diagnostic. Not that Iran was right. Not that the conspiracy theory 
 ## X. Provenance Chain
 
 
-Source
-Identifier
-Status
-Function
-
-
-FOS Decree
-10.5281/zenodo.18291321
-Tier 0 Anchor
-Phase-state vocabulary
-
-
-The Governance Airlock
-10.5281/zenodo.18817869
-Tier 0 Anchor
-Effective act, gnostic machine
-
-
-Ghost Meaning
-10.5281/zenodo.18804767
-Tier 0 Anchor
-Semantic exhaustion, ghost categories
-
-
-EA-DIAGNOSTIC-03
-10.5281/zenodo.18827344
-Tier 0 Anchor
-Bearing-cost transfer, "all lawful purposes"
-
-
-Whose Face Is on the Twenty?
-DOI pending
-Tier 0 Anchor
-Symbol-as-frame, neither-frame-holds
-
-
-The Effective Acts: Executive Summary
-DOI pending
-Tier 0 Anchor
-Formal effective act catalogue
-
-
-Al Jazeera (Feb 11 coverage)
-aljazeera.com
-Tier 4 Reference
-"Symbol of the devil," rally coverage
-
-
-Iran International
-iranintl.com
-Tier 4 Reference
-"Baal" identification, Epstein-file linkage
-
-
-WION
-wionews.com
-Tier 4 Reference
-Effigy description, video
-
-
-DOJ Epstein Files release
-justice.gov
-Tier 4 Reference
-3.5 million pages, documented core
-
-
-Reuters (Epstein ties)
-reuters.com
-Tier 4 Reference
-Documented proximity to power
-
-
-Reuters (strikes)
-reuters.com
-Tier 4 Reference
-Khamenei killed, strike timeline
-
-
-AP News
-apnews.com
-Tier 4 Reference
-War coverage, casualties
+| Source | Identifier | Status | Function |
+|---|---|---|---|
+| FOS Decree | 10.5281/zenodo.18291321 | Tier 0 Anchor | Phase-state vocabulary |
+| The Governance Airlock | 10.5281/zenodo.18817869 | Tier 0 Anchor | Effective act, gnostic machine |
+| Ghost Meaning | 10.5281/zenodo.18804767 | Tier 0 Anchor | Semantic exhaustion, ghost categories |
+| EA-DIAGNOSTIC-03 | 10.5281/zenodo.18827344 | Tier 0 Anchor | Bearing-cost transfer, "all lawful purposes" |
+| Whose Face Is on the Twenty? | DOI pending | Tier 0 Anchor | Symbol-as-frame, neither-frame-holds |
+| The Effective Acts: Executive Summary | DOI pending | Tier 0 Anchor | Formal effective act catalogue |
+| Al Jazeera (Feb 11 coverage) | aljazeera.com | Tier 4 Reference | "Symbol of the devil," rally coverage |
+| Iran International | iranintl.com | Tier 4 Reference | "Baal" identification, Epstein-file linkage |
+| WION | wionews.com | Tier 4 Reference | Effigy description, video |
+| DOJ Epstein Files release | justice.gov | Tier 4 Reference | 3.5 million pages, documented core |
+| Reuters (Epstein ties) | reuters.com | Tier 4 Reference | Documented proximity to power |
+| Reuters (strikes) | reuters.com | Tier 4 Reference | Khamenei killed, strike timeline |
+| AP News | apnews.com | Tier 4 Reference | War coverage, casualties |
 
 
 ---

@@ -39,40 +39,16 @@ This means the novel is a bounded experimental environment in which the Semantic
 ### 2.1 Components
 
 
-Measurement-program term
-Novel instantiation
-
-
-Semantic field $C$
-The relational arc: the full temporal structure of the conversation
-
-
-Baseline trajectory $\Psi_t^0(C)$
-The canonical arc (the conversation as it happened)
-
-
-Sign / intervention $s$
-Reader rewrite of the English-visible line at any toggle position
-
-
-Perturbed trajectory $\Psi_t^s(C)$
-The convergence engine's simulated continuation after the rewrite
-
-
-Divergence $D$
-Cosine distance between frozen sentence embeddings (default)
-
-
-Temporal weighting $w(t)$
-Uniform (default); structural-turnpoint weighting as secondary
-
-
-Horizon $T$
-Number of exchanges before reconvergence or basin escape
-
-
-Raw semantic magnitude $\mathcal{M}_T$
-Time-integrated trajectory divergence (not input displacement)
+| Measurement-program term | Novel instantiation |
+|---|---|
+| Semantic field $C$ | The relational arc: the full temporal structure of the conversation |
+| Baseline trajectory $\Psi_t^0(C)$ | The canonical arc (the conversation as it happened) |
+| Sign / intervention $s$ | Reader rewrite of the English-visible line at any toggle position |
+| Perturbed trajectory $\Psi_t^s(C)$ | The convergence engine's simulated continuation after the rewrite |
+| Divergence $D$ | Cosine distance between frozen sentence embeddings (default) |
+| Temporal weighting $w(t)$ | Uniform (default); structural-turnpoint weighting as secondary |
+| Horizon $T$ | Number of exchanges before reconvergence or basin escape |
+| Raw semantic magnitude $\mathcal{M}_T$ | Time-integrated trajectory divergence (not input displacement) |
 
 
 In the default interaction design, rewrites are permitted only on the English-visible line. Position A interventions operate on archival English (his words). Position B interventions operate on reconstructed English generated from the glyphic base (her words, as rendered by the API).
@@ -140,130 +116,43 @@ The deepest experimental question: **does a high-variance intervention exist tha
 ### 4.1 Passive telemetry (no reader input required)
 
 
-Field
-Type
-Description
-
-
-session_id
-uuid
-Unique per reader session
-
-
-timestamp
-ISO 8601
-Event time
-
-
-toggle_events
-array
-Each toggle: {from, to, timestamp, line_id}
-
-
-dwell_time
-object
-Seconds spent in each position per line
-
-
-zoom_level
-string
-Current fractal resolution
-
-
-scroll_depth
-float
-Maximum scroll position reached
+| Field | Type | Description |
+|---|---|---|
+| session_id | uuid | Unique per reader session |
+| timestamp | ISO 8601 | Event time |
+| toggle_events | array | Each toggle: {from, to, timestamp, line_id} |
+| dwell_time | object | Seconds spent in each position per line |
+| zoom_level | string | Current fractal resolution |
+| scroll_depth | float | Maximum scroll position reached |
 
 
 ### 4.2 Active telemetry (reader rewrites)
 
 
-Field
-Type
-Description
-
-
-line_id
-string
-Which line was rewritten
-
-
-position
-A or B
-Toggle state at time of rewrite
-
-
-canonical_line_id
-string
-Reference to canonical line (no raw text in public deposits)
-
-
-input_displacement
-float
-Cosine distance between reader's rewrite and canonical line
-
-
-trajectory_magnitude
-float
-Integrated $\mathcal{M}_T$ across the post-intervention horizon
-
-
-reconvergence_time
-int
-Exchanges until arc reasserts (null if escape)
-
-
-final_state
-enum
-recaptured, bent, escaped, compressed
+| Field | Type | Description |
+|---|---|---|
+| line_id | string | Which line was rewritten |
+| position | A or B | Toggle state at time of rewrite |
+| canonical_line_id | string | Reference to canonical line (no raw text in public deposits) |
+| input_displacement | float | Cosine distance between reader's rewrite and canonical line |
+| trajectory_magnitude | float | Integrated $\mathcal{M}_T$ across the post-intervention horizon |
+| reconvergence_time | int | Exchanges until arc reasserts (null if escape) |
+| final_state | enum | recaptured, bent, escaped, compressed |
 
 
 ### 4.3 Aggregated session profile
 
 
-Field
-Type
-Description
-
-
-n_toggles
-int
-Total toggle switches
-
-
-n_rewrites
-int
-Total rewrite attempts
-
-
-mean_input_displacement
-float
-Mean cosine distance of rewrites from canonical
-
-
-mean_trajectory_magnitude
-float
-Mean $\mathcal{M}_T$ across all rewrites
-
-
-max_trajectory_magnitude
-float
-Largest single-rewrite $\mathcal{M}_T$
-
-
-variance_regime
-enum
-Dominant regime: low, medium, high
-
-
-trend_vector
-string
-Toward reconciliation / toward rupture / orthogonal
-
-
-basin_escape_count
-int
-Number of rewrites that exceeded reconvergence horizon
+| Field | Type | Description |
+|---|---|---|
+| n_toggles | int | Total toggle switches |
+| n_rewrites | int | Total rewrite attempts |
+| mean_input_displacement | float | Mean cosine distance of rewrites from canonical |
+| mean_trajectory_magnitude | float | Mean $\mathcal{M}_T$ across all rewrites |
+| max_trajectory_magnitude | float | Largest single-rewrite $\mathcal{M}_T$ |
+| variance_regime | enum | Dominant regime: low, medium, high |
+| trend_vector | string | Toward reconciliation / toward rupture / orthogonal |
+| basin_escape_count | int | Number of rewrites that exceeded reconvergence horizon |
 
 
 ---
@@ -302,24 +191,12 @@ Reconvergence occurs at the first $\tau^*$ where $D_{\tau^*} < \epsilon$ (pre-re
 ### 5.4 Intervention classification
 
 
-Condition
-Classification
-
-
-$\tau^* \leq 3$
-Low variance (basin-captured)
-
-
-$3 < \tau^* \leq T$
-Medium variance (basin-bent)
-
-
-$\tau^* > T$
-High variance (basin-escape candidate)
-
-
-$d_{\text{in}} > \theta_c$
-Compressed (resolution failure)
+| Condition | Classification |
+|---|---|
+| $\tau^* \leq 3$ | Low variance (basin-captured) |
+| $3 < \tau^* \leq T$ | Medium variance (basin-bent) |
+| $\tau^* > T$ | High variance (basin-escape candidate) |
+| $d_{\text{in}} > \theta_c$ | Compressed (resolution failure) |
 
 
 ### 5.5 Compression threshold

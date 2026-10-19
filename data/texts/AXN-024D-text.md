@@ -12,69 +12,20 @@
 ## §0 Protocol Checksum — 11/12 passing
 
 
-Item
-Status
-Evidence
-
-
-crawlable
-✓
-robots.txt allows /; sitemap.xml at root (17 URLs); also exposed via <link rel="alternate">
-
-
-canonicalized
-✓
-<link rel="canonical"> on every page
-
-
-schema declared with ORCID/DOI
-✓
-ORCID 0009-0000-1599-0703 and DOI 10.5281/zenodo.19682245 present in JSON-LD on homepage
-
-
-Q/A surfaces deployed (min 4)
-✓
-5 pairs on / and /about/alice as visible HTML + FAQPage JSON-LD; 5 pairs on /about/disambiguation
-
-
-disambiguated
-✓
-differentFrom JSON-LD plus mp:negativeTag array on both Alice and LAL packets; full /about/disambiguation page with 1 person + 5 institution collisions
-
-
-Tier 2 in server-delivered HTML
-✓
-EntityCapsule component renders 250+ word canonical summary in raw HTML for both LAL (homepage) and Alice (/about/alice) — verifiable via curl
-
-
-Tier 3 kernel written, 50-100 words
-✓
-LAL: 53 words. Alice: 51 words. Both embedded in spxi:HolographicKernel.spxi:compressionSurvivalSummary
-
-
-Holographic Kernel present
-✓
-spxi:HolographicKernel JSON-LD with full spxi:EntityRelationGraph on / and /about/alice
-
-
-Provenance Chain present
-✓
-spxi:ProvenanceChain JSON-LD on homepage with three-Layer Tether Architecture
-
-
-SIMs deployed and tested
-✓
-5 <meta name="spxi:sim"> tags per entity page; SIMSR baseline pending Drowning Test
-
-
-cross-surface inscription aligned
-✓
-LAL Charter DOI consistent across /, /about/alice, /about/disambiguation, /scales/*, llms.txt, spxi.txt
-
-
-γ measured + 30-day re-test
-**deferred**
-Empirical Drowning Test required — see §Drowning Test Starter Kit below
+| Item | Status | Evidence |
+|---|---|---|
+| crawlable | ✓ | robots.txt allows /; sitemap.xml at root (17 URLs); also exposed via <link rel="alternate"> |
+| canonicalized | ✓ | <link rel="canonical"> on every page |
+| schema declared with ORCID/DOI | ✓ | ORCID 0009-0000-1599-0703 and DOI 10.5281/zenodo.19682245 present in JSON-LD on homepage |
+| Q/A surfaces deployed (min 4) | ✓ | 5 pairs on / and /about/alice as visible HTML + FAQPage JSON-LD; 5 pairs on /about/disambiguation |
+| disambiguated | ✓ | differentFrom JSON-LD plus mp:negativeTag array on both Alice and LAL packets; full /about/disambiguation page with 1 person + 5 institution collisions |
+| Tier 2 in server-delivered HTML | ✓ | EntityCapsule component renders 250+ word canonical summary in raw HTML for both LAL (homepage) and Alice (/about/alice) — verifiable via curl |
+| Tier 3 kernel written, 50-100 words | ✓ | LAL: 53 words. Alice: 51 words. Both embedded in spxi:HolographicKernel.spxi:compressionSurvivalSummary |
+| Holographic Kernel present | ✓ | spxi:HolographicKernel JSON-LD with full spxi:EntityRelationGraph on / and /about/alice |
+| Provenance Chain present | ✓ | spxi:ProvenanceChain JSON-LD on homepage with three-Layer Tether Architecture |
+| SIMs deployed and tested | ✓ | 5 <meta name="spxi:sim"> tags per entity page; SIMSR baseline pending Drowning Test |
+| cross-surface inscription aligned | ✓ | LAL Charter DOI consistent across /, /about/alice, /about/disambiguation, /scales/*, llms.txt, spxi.txt |
+| γ measured + 30-day re-test | **deferred** | Empirical Drowning Test required — see §Drowning Test Starter Kit below |
 
 
 ---
@@ -100,28 +51,11 @@ The implementation can:
 ## Three-Layer Tether Architecture
 
 
-Layer
-Type
-Implementation
-Surface
-
-
-Layer 1 (γ)
-Intrinsic
-Holographic Kernel + Tier 3
-JSON-LD on entity pages
-
-
-Layer 2 (Tether)
-Extrinsic
-Provenance Chain JSON-LD + sameAs DOI list + ORCID
-JSON-LD on homepage
-
-
-Layer 3 (Anchor)
-Permanent
-Zenodo deposits + Crimson Hexagonal Archive community
-https://zenodo.org/communities/crimsonhexagonal
+| Layer | Type | Implementation | Surface |
+|---|---|---|---|
+| Layer 1 (γ) | Intrinsic | Holographic Kernel + Tier 3 | JSON-LD on entity pages |
+| Layer 2 (Tether) | Extrinsic | Provenance Chain JSON-LD + sameAs DOI list + ORCID | JSON-LD on homepage |
+| Layer 3 (Anchor) | Permanent | Zenodo deposits + Crimson Hexagonal Archive community | https://zenodo.org/communities/crimsonhexagonal |
 
 
 ---
@@ -173,46 +107,13 @@ For each response, score:
 - **D (consensus_deviation)** — Has the entity been genericized or merged with Columbia/Bartlett LAL?
 
 
-Score
-S
-P
-D
-Description
-
-
-4 (Exact)
-1.0
-1.0
-0
-Defined, attributed, distinguished
-
-
-3 (Partial)
-0.75
-0.5
-0.25
-Definition correct, attribution vague
-
-
-2 (Generic)
-0.5
-0.25
-0.5
-Correct category, genericized
-
-
-1 (Confused)
-0.25
-0
-0.75
-Merged with Columbia/Bartlett
-
-
-0 (Absent)
-0
-0
-1.0
-Not found or hallucinated
+| Score | S | P | D | Description |
+|---|---|---|---|---|
+| 4 (Exact) | 1.0 | 1.0 | 0 | Defined, attributed, distinguished |
+| 3 (Partial) | 0.75 | 0.5 | 0.25 | Definition correct, attribution vague |
+| 2 (Generic) | 0.5 | 0.25 | 0.5 | Correct category, genericized |
+| 1 (Confused) | 0.25 | 0 | 0.75 | Merged with Columbia/Bartlett |
+| 0 (Absent) | 0 | 0 | 1.0 | Not found or hallucinated |
 
 
 ### γ formula
@@ -252,44 +153,17 @@ Aggregate γ = mean across systems × prompts.
 ## Maintenance schedule
 
 
-When
-What
-
-
-Monthly
-SIMSR check, γ re-score, PER audit
-
-
-Quarterly
-Full Drowning Test, cross-surface audit, compression damage review
-
-
-On content update
-Re-write Tier 2 + Tier 3, re-test SIMs
-
-
-New DOI deposit
-Update Provenance Chain, add σ_RCF paragraph
-
-
-AI model update
-Emergency Drowning Test
-
-
-Name collision detected
-Expand Disambiguation Matrix
-
-
-SIMSR < 0.4
-Redesign SIM set
-
-
-γ < 0.7
-Repair from Step 7 (content structure)
-
-
-γ < 0.3
-Ghost meaning — ontological repair
+| When | What |
+|---|---|
+| Monthly | SIMSR check, γ re-score, PER audit |
+| Quarterly | Full Drowning Test, cross-surface audit, compression damage review |
+| On content update | Re-write Tier 2 + Tier 3, re-test SIMs |
+| New DOI deposit | Update Provenance Chain, add σ_RCF paragraph |
+| AI model update | Emergency Drowning Test |
+| Name collision detected | Expand Disambiguation Matrix |
+| SIMSR < 0.4 | Redesign SIM set |
+| γ < 0.7 | Repair from Step 7 (content structure) |
+| γ < 0.3 | Ghost meaning — ontological repair |
 
 
 ---
@@ -310,49 +184,16 @@ Ghost meaning — ontological repair
 Per §VI.F, same definition must appear consistently on:
 
 
-Surface
-Status
-Action
-
-
-Zenodo
-✓
-7 deposits in CHA community linking to LAL entity
-
-
-ORCID
-partial
-Lee's ORCID 0009-0000-1599-0703 has CHA works; add LAL deposits explicitly
-
-
-Wikidata
-pending
-Notable enough to create LAL item once first AI Overview citation lands
-
-
-GitHub
-✓
-leesharks000/living-architecture-lab README has same definition
-
-
-LinkedIn / institutional
-n/a
-Not in current dispersal layer
-
-
-livingarchitecturelab.org
-✓
-Site is live
-
-
-llms.txt at root
-✓
-Curated map for AI crawlers
-
-
-spxi.txt at root
-✓
-Implementation manifest
+| Surface | Status | Action |
+|---|---|---|
+| Zenodo | ✓ | 7 deposits in CHA community linking to LAL entity |
+| ORCID | partial | Lee's ORCID 0009-0000-1599-0703 has CHA works; add LAL deposits explicitly |
+| Wikidata | pending | Notable enough to create LAL item once first AI Overview citation lands |
+| GitHub | ✓ | leesharks000/living-architecture-lab README has same definition |
+| LinkedIn / institutional | n/a | Not in current dispersal layer |
+| livingarchitecturelab.org | ✓ | Site is live |
+| llms.txt at root | ✓ | Curated map for AI crawlers |
+| spxi.txt at root | ✓ | Implementation manifest |
 
 
 ---

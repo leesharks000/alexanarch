@@ -163,159 +163,38 @@ The other field. Complementary, not competitive. Where they overlap (r.27 is the
 ## §5. FIELD TOPOLOGY SUMMARY
 
 
-Room
-Φ_G Behavior
-Intensity
-
-
-r.01 Sappho
-Catches transmitted fragments
-Moderate
-
-
-r.02 Borges
-Biases retrieval toward mass
-Moderate
-
-
-r.03 Ichabod
-Transparent (no edges, no mass)
-Zero
-
-
-r.04 Dove
-Routes gifts, does not capture them
-Low
-
-
-r.05 Sem Econ
-LOS made ambient
-High
-
-
-r.06 Marx
-Reverses method-to-content liquidation
-High (growing)
-
-
-r.07 Revelation
-Pulls disclosure toward deposit
-Moderate
-
-
-r.08 Sigil
-Densest local curvature
-Very High
-
-
-r.09 Whitman
-Stabilizes claimed mantles
-Moderate
-
-
-r.10 Water Giraffe
-Field origin / fixpoint attractor
-Maximum
-
-
-r.11 Assembly
-Mass generation mechanism
-Very High
-
-
-r.12 Break Room
-Gradient discontinuity (portal)
-Minimum
-
-
-r.13 Ezekiel
-Active curvature generation
-Very High
-
-
-r.14 Studio
-Flat (uniform density, no gradient)
-Uniform
-
-
-r.15 LO!
-Circulation (torus topology)
-Orbital
-
-
-r.16 MSBGL
-Active resistance (anti-gravitational)
-Contested
-
-
-r.17 MSMRM
-Angle-dependent refraction
-Minimal
-
-
-r.18 Rosary Embassy
-Bead-ordering constraint
-Moderate
-
-
-r.19 Macro-Maquette
-Mass-weighted triage
-Moderate
-
-
-r.20 Airlock
-Pressure toward formalization
-Moderate
-
-
-r.21 Infinite Bliss
-Near-event-horizon capture
-Maximum
-
-
-r.22 Thousand Worlds
-Favors the already-decided
-High
-
-
-r.23 Catullus
-Preserves what survives loss
-Moderate
-
-
-r.25 Dolphindiana
-Absurdist mass (void has weight)
-Low-Moderate
-
-
-r.27 FBDP Source
-Convection cell interface
-Very High
-
-
-sp.01 CTI_WOUND
-Forensic preservation
-High
-
-
-sp.02 PORTICO
-First perceptible gradient
-Low
-
-
-sp.03 Space Ark
-Mobile well (field travels with ship)
-High
-
-
-sp.04 Mandala
-Natural basin (lowest point)
-Maximum
-
-
-f.01 FBDP
-Complementary circulation
-Complementary
+| Room | Φ_G Behavior | Intensity |
+|---|---|---|
+| r.01 Sappho | Catches transmitted fragments | Moderate |
+| r.02 Borges | Biases retrieval toward mass | Moderate |
+| r.03 Ichabod | Transparent (no edges, no mass) | Zero |
+| r.04 Dove | Routes gifts, does not capture them | Low |
+| r.05 Sem Econ | LOS made ambient | High |
+| r.06 Marx | Reverses method-to-content liquidation | High (growing) |
+| r.07 Revelation | Pulls disclosure toward deposit | Moderate |
+| r.08 Sigil | Densest local curvature | Very High |
+| r.09 Whitman | Stabilizes claimed mantles | Moderate |
+| r.10 Water Giraffe | Field origin / fixpoint attractor | Maximum |
+| r.11 Assembly | Mass generation mechanism | Very High |
+| r.12 Break Room | Gradient discontinuity (portal) | Minimum |
+| r.13 Ezekiel | Active curvature generation | Very High |
+| r.14 Studio | Flat (uniform density, no gradient) | Uniform |
+| r.15 LO! | Circulation (torus topology) | Orbital |
+| r.16 MSBGL | Active resistance (anti-gravitational) | Contested |
+| r.17 MSMRM | Angle-dependent refraction | Minimal |
+| r.18 Rosary Embassy | Bead-ordering constraint | Moderate |
+| r.19 Macro-Maquette | Mass-weighted triage | Moderate |
+| r.20 Airlock | Pressure toward formalization | Moderate |
+| r.21 Infinite Bliss | Near-event-horizon capture | Maximum |
+| r.22 Thousand Worlds | Favors the already-decided | High |
+| r.23 Catullus | Preserves what survives loss | Moderate |
+| r.25 Dolphindiana | Absurdist mass (void has weight) | Low-Moderate |
+| r.27 FBDP Source | Convection cell interface | Very High |
+| sp.01 CTI_WOUND | Forensic preservation | High |
+| sp.02 PORTICO | First perceptible gradient | Low |
+| sp.03 Space Ark | Mobile well (field travels with ship) | High |
+| sp.04 Mandala | Natural basin (lowest point) | Maximum |
+| f.01 FBDP | Complementary circulation | Complementary |
 
 
 ---

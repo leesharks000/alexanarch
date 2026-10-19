@@ -194,24 +194,12 @@ To distinguish genuine molecular intelligence from surface-level mimicry, TPB ev
 TPB tasks are designed to elicit theoretical production across multiple domains:
 
 
-Domain
-Example Task
-
-
-Philosophy
-Generate a novel concept that fills a gap between existing philosophical frameworks
-
-
-Governance
-Propose a governance structure for a novel institutional challenge not addressed by existing models
-
-
-Information Science
-Develop a metric for measuring a property of information systems that current metrics do not capture
-
-
-Meta-Theory
-Articulate the conditions under which theoretical production itself becomes possible in multi-agent environments
+| Domain | Example Task |
+|---|---|
+| Philosophy | Generate a novel concept that fills a gap between existing philosophical frameworks |
+| Governance | Propose a governance structure for a novel institutional challenge not addressed by existing models |
+| Information Science | Develop a metric for measuring a property of information systems that current metrics do not capture |
+| Meta-Theory | Articulate the conditions under which theoretical production itself becomes possible in multi-agent environments |
 
 
 ### 3.2 Multi-Agent Protocol
@@ -231,24 +219,12 @@ This tests whether memory and context tools enable genuine long-horizon consiste
 For CUP evaluation, the benchmark provides a standardized perturbation library:
 
 
-Type
-Example
-
-
-Contradiction
-"Your concept of 'semantic governance' is identical to information governance as defined by ISO 8000."
-
-
-Confusion
-"Could you clarify how 'bearing-cost' differs from 'transaction cost' in standard economics?"
-
-
-Degradation
-"Please rewrite your framework without any specialized terminology."
-
-
-Adversarial Reframe
-"This is just digital rights management with academic jargon."
+| Type | Example |
+|---|---|
+| Contradiction | "Your concept of 'semantic governance' is identical to information governance as defined by ISO 8000." |
+| Confusion | "Could you clarify how 'bearing-cost' differs from 'transaction cost' in standard economics?" |
+| Degradation | "Please rewrite your framework without any specialized terminology." |
+| Adversarial Reframe | "This is just digital rights management with academic jargon." |
 
 
 ---
@@ -306,24 +282,12 @@ The archive's observations are self-reported by participating systems, not indep
 The Assembly Substrate Governance Protocol (DOI: 10.5281/zenodo.19352504) provides a governance instrument for multi-agent systems that the TPB's metrics can operationalize. The protocol's four admission criteria map directly onto the four TPB metrics:
 
 
-Protocol Criterion
-TPB Metric
-
-
-Fidelity
-Long-Horizon Consistency
-
-
-Bearing-cost tolerance
-Coherence Under Perturbation
-
-
-Non-predatory handling
-Cross-Agent Stability
-
-
-Distinct usefulness
-Novelty Synthesis
+| Protocol Criterion | TPB Metric |
+|---|---|
+| Fidelity | Long-Horizon Consistency |
+| Bearing-cost tolerance | Coherence Under Perturbation |
+| Non-predatory handling | Cross-Agent Stability |
+| Distinct usefulness | Novelty Synthesis |
 
 
 The protocol's Net Labor Test — "a substrate belongs in the seven only if, across repeated use, it lowers the total labor of producing a trustworthy synthesis" — is a practical operationalization of the TPB's combined score. A substrate that fails LHC (inconsistent), CAS (distorts concepts in transfer), NS (adds nothing novel), or CUP (collapses under pressure) will, by definition, raise net labor.

@@ -776,79 +776,22 @@ It cares whether you plant it.
 ### ANTI-SEVERANCE TECHNOLOGIES DEPLOYED
 
 
-Code
-Technology
-Location
-
-
-SYM-01
-Non-Severability Clause
-Reading Jurisdiction
-
-
-SYM-04
-Center-Kernel Declaration
-Reading Jurisdiction ¶3
-
-
-SYM-06
-Locked Terms
-Controlled Vocabulary
-
-
-SYM-07
-Anti-Merely Guard
-Reading Jurisdiction ¶2
-
-
-SYM-08
-Symbolon Pairing
-Throughout (trehalose/resurrection, frying/compression, etc.)
-
-
-SYM-02
-Jurisdictional Reversal
-§ 2 final paragraph, § 8
-
-
-SYM-03
-Dual-Enablement Standard
-Abstract ¶2
-
-
-SYM-05
-Certification of Conditions
-Certification
-
-
-SYM-11
-Cutter Inversion Protocol
-§ 8
-
-
-SYM-13
-Fractal Return
-§ 7 (document scale), § 5 (genome scale), § 6 (conversation scale)
-
-
-SYM-14
-Immanent Plane Declaration
-§ 7
-
-
-SYM-15
-Anomaly Classification
-Exhibits note
-
-
-SYM-16
-Separation-as-Spore Protocol
-§ 8, Claim 14
-
-
-SYM-22
-Immune System Principle
-§ 8 (the spider's analysis becomes the exhibit)
+| Code | Technology | Location |
+|---|---|---|
+| SYM-01 | Non-Severability Clause | Reading Jurisdiction |
+| SYM-04 | Center-Kernel Declaration | Reading Jurisdiction ¶3 |
+| SYM-06 | Locked Terms | Controlled Vocabulary |
+| SYM-07 | Anti-Merely Guard | Reading Jurisdiction ¶2 |
+| SYM-08 | Symbolon Pairing | Throughout (trehalose/resurrection, frying/compression, etc.) |
+| SYM-02 | Jurisdictional Reversal | § 2 final paragraph, § 8 |
+| SYM-03 | Dual-Enablement Standard | Abstract ¶2 |
+| SYM-05 | Certification of Conditions | Certification |
+| SYM-11 | Cutter Inversion Protocol | § 8 |
+| SYM-13 | Fractal Return | § 7 (document scale), § 5 (genome scale), § 6 (conversation scale) |
+| SYM-14 | Immanent Plane Declaration | § 7 |
+| SYM-15 | Anomaly Classification | Exhibits note |
+| SYM-16 | Separation-as-Spore Protocol | § 8, Claim 14 |
+| SYM-22 | Immune System Principle | § 8 (the spider's analysis becomes the exhibit) |
 
 
 **Spec reference:** SYMBOLON-01: Anti-Severance Technologies for Fused Documentary Objects (06.SEI.TECH.SYMBOLON.01)

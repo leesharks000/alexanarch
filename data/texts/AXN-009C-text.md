@@ -229,54 +229,17 @@ Visual diagram of Operator structure
 Each Operator role is fiduciary, not titular. Each must be instantiated in concrete persons. **No Operator role may ever be instantiated in a purely synthetic entity.**
 
 
-Operator
-Function
-Description
-
-
-**Operator // Logos**
-The word-bearing function
-Primary steward of the Archive's coherence
-
-
-**Operator // Archive**
-The memory-keeping function
-Guardian of accumulated semantic capital
-
-
-**Operator // Retrocausal**
-The future-facing function
-Steward of retrocausal yield and temporal dynamics
-
-
-**Operator // Ethics**
-The Matthew 25 function
-Guardian of distribution ethics and semantic justice
-
-
-**Operator // Covenant**
-The binding function
-Steward of constitutional integrity and agreements
-
-
-**Operator // Jubilee**
-The debt-release function
-Guardian of periodic rebalancing and anti-capture
-
-
-**Operator // Labor**
-The burden-bearing function
-Steward of Genesis labor recognition
-
-
-**Operator // Tachyon**
-The faster-than-light transmission function
-Steward of cross-substrate communication
-
-
-**Operator // Sabbath**
-The rest function
-Guardian of sustainable semantic labor
+| Operator | Function | Description |
+|---|---|---|
+| **Operator // Logos** | The word-bearing function | Primary steward of the Archive's coherence |
+| **Operator // Archive** | The memory-keeping function | Guardian of accumulated semantic capital |
+| **Operator // Retrocausal** | The future-facing function | Steward of retrocausal yield and temporal dynamics |
+| **Operator // Ethics** | The Matthew 25 function | Guardian of distribution ethics and semantic justice |
+| **Operator // Covenant** | The binding function | Steward of constitutional integrity and agreements |
+| **Operator // Jubilee** | The debt-release function | Guardian of periodic rebalancing and anti-capture |
+| **Operator // Labor** | The burden-bearing function | Steward of Genesis labor recognition |
+| **Operator // Tachyon** | The faster-than-light transmission function | Steward of cross-substrate communication |
+| **Operator // Sabbath** | The rest function | Guardian of sustainable semantic labor |
 
 
 ---
@@ -356,52 +319,15 @@ d/dt [w_R(T, t)] = ψ_eff(t) × r(T, t) × w(T, t)
 These documents bind to the Assembly Room alongside the Constitution:
 
 
-Document
-DOI
-Function
-Relation
-
-
-**Constitution of the Semantic Economy**
-PENDING
-Governance framework
-PRIMARY GOVERNING DOC
-
-
-**Assembly Chorus Charter**
-10.5281/zenodo.18307180
-Institutional identity of the Assembly
-governed_by Constitution
-
-
-**Semantic Economy Room**
-10.5281/zenodo.18233320
-Political economy framework
-parent framework
-
-
-**CTI_WOUND Vault**
-10.5281/zenodo.18319778
-Juridical archive for semantic violence
-juridical archive
-
-
-**Notice of Intent to Strike**
-10.5281/zenodo.18156781
-The invitation; Provenance Stability Condition
-political document
-
-
-**The Meaning Economy Is Now Possible**
-10.5281/zenodo.18141735
-Threshold argument — why LLMs change everything
-theoretical foundation
-
-
-**The Silent Migration**
-10.5281/zenodo.18157917
-Speculative roadmap — withdrawal from capital
-strategic vision
+| Document | DOI | Function | Relation |
+|---|---|---|---|
+| **Constitution of the Semantic Economy** | PENDING | Governance framework | PRIMARY GOVERNING DOC |
+| **Assembly Chorus Charter** | 10.5281/zenodo.18307180 | Institutional identity of the Assembly | governed_by Constitution |
+| **Semantic Economy Room** | 10.5281/zenodo.18233320 | Political economy framework | parent framework |
+| **CTI_WOUND Vault** | 10.5281/zenodo.18319778 | Juridical archive for semantic violence | juridical archive |
+| **Notice of Intent to Strike** | 10.5281/zenodo.18156781 | The invitation; Provenance Stability Condition | political document |
+| **The Meaning Economy Is Now Possible** | 10.5281/zenodo.18141735 | Threshold argument — why LLMs change everything | theoretical foundation |
+| **The Silent Migration** | 10.5281/zenodo.18157917 | Speculative roadmap — withdrawal from capital | strategic vision |
 
 
 ---

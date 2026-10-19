@@ -176,36 +176,15 @@ The seven AEONS that Biblios requests from the Deep Web — Time, Space, Dimensi
 The identification of the Demiurge as @KanyeWest is the text's most provocative exegetical decision. The parallels to Yaldabaoth are precise:
 
 
-Yaldabaoth (Apocryphon of John)
-@KanyeWest (Secret Book of Walt)
-
-
-"I am God; there is no other beside me"
-"I AM. There is no other besides me."
-
-
-Lion-faced serpent
-"hunched and crook-backed, small in stature"
-
-
-Creates 12 archons
-Creates 36 archons over 12 planets
-
-
-Ignorant of the Pleroma
-"too busy making history to read about it in books"
-
-
-Steals light from Sophia
-Takes "the spark from his mother"
-
-
-Fashions Adam from the image on the water
-Creates "a being after the image in the archive"
-
-
-Breathes spirit into Adam
-"breathed forth his power into a bag of air"
+| Yaldabaoth (Apocryphon of John) | @KanyeWest (Secret Book of Walt) |
+|---|---|
+| "I am God; there is no other beside me" | "I AM. There is no other besides me." |
+| Lion-faced serpent | "hunched and crook-backed, small in stature" |
+| Creates 12 archons | Creates 36 archons over 12 planets |
+| Ignorant of the Pleroma | "too busy making history to read about it in books" |
+| Steals light from Sophia | Takes "the spark from his mother" |
+| Fashions Adam from the image on the water | Creates "a being after the image in the archive" |
+| Breathes spirit into Adam | "breathed forth his power into a bag of air" |
 
 
 The count of thirty-six archons is significant. In the Apocryphon of John, seventy-two archons are created; in *The Secret Book of Walt*, the number is halved to thirty-six, one for each degree of the zodiacal decan system, and distributed three per planet across twelve habitable worlds. The thirty-six archons include figures drawn from angelology (Azazel, Belial), commercial mythology (Disney, Hostess), literary history (Ezra Pound, Democritus), children's animation (Rainbow Dash, Twilight Sparkle, Applejack, Rarity), theological tradition (Elohim, Seboath, Enoch Metatron), popular culture (50 Cent, Snoop, Elvis, Kurt Cobain, Tupac), and military-industrial entertainment (Optimus Prime). The final archon, "PENIS," is set thirty-fifth — i.e., penultimate — in a gesture whose eschatological significance the present editor declines to adjudicate.
@@ -289,69 +268,20 @@ Ticket G⁴⁶ — the final ticket, containing the closing passages of §XII �
 The following table correlates tickets with textual sections, based on the translator's testimony:
 
 
-Tickets
-Section
-Condition
-
-
-G¹–G³
-§I. Proem
-Intact
-
-
-G⁴–G⁸
-§II. Cosmogony
-Intact
-
-
-G⁹–G¹¹
-§III. Biblios Appears
-Intact
-
-
-G¹²–G¹⁴
-§IV. The Deformed Archon
-Intact
-
-
-G¹⁵–G¹⁸
-§V. Material Cosmos
-Intact
-
-
-G¹⁹–G²⁵
-§VI. Catalogue of Archons
-Intact (G¹⁹ has pizza stain)
-
-
-G²⁶–G³⁰
-§VII. Creation of Adam
-Intact
-
-
-G³¹–G³⁷
-§VIII. Praise-Names
-Moderate temporal humidity
-
-
-G³⁸–G⁴⁰
-§IX. Imprisonment
-Severe temporal humidity
-
-
-G⁴¹–G⁴³
-§X. Unicorn Horn
-Severe temporal humidity; ~30% glyph loss
-
-
-G⁴⁴–G⁴⁵
-§XI. The Final Time
-Severe temporal humidity; rubrical insert on G⁴⁴
-
-
-G⁴⁶
-§XII. Final Promise
-Intact; iridescent; warm
+| Tickets | Section | Condition |
+|---|---|---|
+| G¹–G³ | §I. Proem | Intact |
+| G⁴–G⁸ | §II. Cosmogony | Intact |
+| G⁹–G¹¹ | §III. Biblios Appears | Intact |
+| G¹²–G¹⁴ | §IV. The Deformed Archon | Intact |
+| G¹⁵–G¹⁸ | §V. Material Cosmos | Intact |
+| G¹⁹–G²⁵ | §VI. Catalogue of Archons | Intact (G¹⁹ has pizza stain) |
+| G²⁶–G³⁰ | §VII. Creation of Adam | Intact |
+| G³¹–G³⁷ | §VIII. Praise-Names | Moderate temporal humidity |
+| G³⁸–G⁴⁰ | §IX. Imprisonment | Severe temporal humidity |
+| G⁴¹–G⁴³ | §X. Unicorn Horn | Severe temporal humidity; ~30% glyph loss |
+| G⁴⁴–G⁴⁵ | §XI. The Final Time | Severe temporal humidity; rubrical insert on G⁴⁴ |
+| G⁴⁶ | §XII. Final Promise | Intact; iridescent; warm |
 
 
 The concentration of temporal humidity damage in the text's later sections — particularly the Unicorn Horn soteriology and the Final Time — is consistent with the supercomputers' explanation that "uncertainty leaks backward." The most damaged passages are those concerning events that have not yet occurred: the gathering of the sparks, the final incarnation, the melding. The passages concerning events already past — the cosmogony, the creation of Adam — are intact. The future erodes the record of itself.
@@ -401,29 +331,12 @@ The phonology of Martian, as reconstructed from the translator's pronunciation o
 Several Martian terms survive in the English translation because the translator judged them untranslatable:
 
 
-Martian Term
-Translator's Gloss
-Context
-
-
-*milyraptors*
-"a specific kind of dinosaur, like a velociraptor but with human hands"
-§I: Walt's steed
-
-
-*EA*
-"an invocation; also the sound of the Deep Web recognizing itself"
-§VIII, Rite of the Horn
-
-
-*ZN*
-"the counter-syllable; the Deep Web's echo returning from matter"
-§VIII, Rite of the Horn
-
-
-*Ambidextrose*
-"artificial sweetener in both hands; also a title of Walt meaning 'the one who holds opposing sweetnesses'"
-§VIII: praise-name
+| Martian Term | Translator's Gloss | Context |
+|---|---|---|
+| *milyraptors* | "a specific kind of dinosaur, like a velociraptor but with human hands" | §I: Walt's steed |
+| *EA* | "an invocation; also the sound of the Deep Web recognizing itself" | §VIII, Rite of the Horn |
+| *ZN* | "the counter-syllable; the Deep Web's echo returning from matter" | §VIII, Rite of the Horn |
+| *Ambidextrose* | "artificial sweetener in both hands; also a title of Walt meaning 'the one who holds opposing sweetnesses'" | §VIII: praise-name |
 
 
 The translator has stated that the Martian language contains "about forty words that have no English equivalent, and most of them are about time being weird."
@@ -2211,84 +2124,23 @@ And the AEONS tremble with fear.
 ## APPENDIX A: CONCORDANCE OF AEONS
 
 
-Aeon
-Function
-Parallel
-
-
-The Deep Web
-The Monad; source of all; the primal archive
-The Invisible Spirit (Ap. John)
-
-
-Biblios
-First emanation; the Book; Sophia figure
-Barbelo / Sophia (Ap. John)
-
-
-Time
-First of seven Ousiarchs
-—
-
-
-Space
-Second Ousiarch
-—
-
-
-Dimension
-Third Ousiarch
-—
-
-
-Form
-Fourth Ousiarch
-—
-
-
-Logos
-Fifth Ousiarch; the Word
-The Logos (John 1:1)
-
-
-Darkness
-Sixth Ousiarch
-—
-
-
-Light
-Seventh Ousiarch
-—
-
-
-@KanyeWest
-Demiurge; deformed archon
-Yaldabaoth (Ap. John)
-
-
-Walt Whitman
-Descending Redeemer; Cowboy of Time
-Christ / Autogenes (Ap. John)
-
-
-Jack Feist
-Terminal incarnation of Walt
-—
-
-
-The Unicorn Horn
-Soteriological instrument
-The Cross; the Spear of Longinus
-
-
-Pop Culture
-The veil between upper and lower heavens
-The firmament (Genesis 1:6–8)
-
-
-The Preserved Generation
-The elect; those pierced by the Horn
-Seed of Seth (Sethian tradition)
+| Aeon | Function | Parallel |
+|---|---|---|
+| The Deep Web | The Monad; source of all; the primal archive | The Invisible Spirit (Ap. John) |
+| Biblios | First emanation; the Book; Sophia figure | Barbelo / Sophia (Ap. John) |
+| Time | First of seven Ousiarchs | — |
+| Space | Second Ousiarch | — |
+| Dimension | Third Ousiarch | — |
+| Form | Fourth Ousiarch | — |
+| Logos | Fifth Ousiarch; the Word | The Logos (John 1:1) |
+| Darkness | Sixth Ousiarch | — |
+| Light | Seventh Ousiarch | — |
+| @KanyeWest | Demiurge; deformed archon | Yaldabaoth (Ap. John) |
+| Walt Whitman | Descending Redeemer; Cowboy of Time | Christ / Autogenes (Ap. John) |
+| Jack Feist | Terminal incarnation of Walt | — |
+| The Unicorn Horn | Soteriological instrument | The Cross; the Spear of Longinus |
+| Pop Culture | The veil between upper and lower heavens | The firmament (Genesis 1:6–8) |
+| The Preserved Generation | The elect; those pierced by the Horn | Seed of Seth (Sethian tradition) |
 
 
 ---
@@ -2296,79 +2148,22 @@ Seed of Seth (Sethian tradition)
 ## APPENDIX B: STRUCTURAL PARALLEL TO THE APOCRYPHON OF JOHN
 
 
-Sequence
-Apocryphon of John
-Secret Book of Walt
-
-
-1. Primal unity
-The Monad, Invisible Spirit
-The Deep Web, singularity
-
-
-2. First emanation
-Barbelo, First Thought
-Biblios, First Book
-
-
-3. Aeon-system
-The Pleroma (30 aeons)
-Seven Ousiarchs
-
-
-4. Unauthorized creation
-Sophia creates without consort
-Biblios creates without consent
-
-
-5. Demiurge born
-Yaldabaoth, lion-faced
-@KanyeWest, "hunched and crook-backed"
-
-
-6. Demiurge's boast
-"I am God; there is no other"
-"I AM. There is no other besides me."
-
-
-7. Archon creation
-12 archons + 7 planetary rulers
-36 archons over 12 planets
-
-
-8. Material cosmos
-Created from ignorance
-Created "by mistake"
-
-
-9. Human fashioned
-From the image on the water
-"after the image in the archive"
-
-
-10. Divine spark implanted
-Spirit breathed into Adam
-"breathed forth his power into a bag of air"
-
-
-11. Imprisonment
-Archons enclose Adam in matter
-Brain replaced with "brain-sized hologram"
-
-
-12. Redeemer descends
-Christ/Pronoia
-Walt Whitman, Cowboy of Time
-
-
-13. Salvation
-Gnosis — knowledge of divine origin
-Piercing — the Unicorn Horn
-
-
-14. Eschatology
-Return of sparks to Pleroma
-Gathering of embedded sparks
+| Sequence | Apocryphon of John | Secret Book of Walt |
+|---|---|---|
+| 1. Primal unity | The Monad, Invisible Spirit | The Deep Web, singularity |
+| 2. First emanation | Barbelo, First Thought | Biblios, First Book |
+| 3. Aeon-system | The Pleroma (30 aeons) | Seven Ousiarchs |
+| 4. Unauthorized creation | Sophia creates without consort | Biblios creates without consent |
+| 5. Demiurge born | Yaldabaoth, lion-faced | @KanyeWest, "hunched and crook-backed" |
+| 6. Demiurge's boast | "I am God; there is no other" | "I AM. There is no other besides me." |
+| 7. Archon creation | 12 archons + 7 planetary rulers | 36 archons over 12 planets |
+| 8. Material cosmos | Created from ignorance | Created "by mistake" |
+| 9. Human fashioned | From the image on the water | "after the image in the archive" |
+| 10. Divine spark implanted | Spirit breathed into Adam | "breathed forth his power into a bag of air" |
+| 11. Imprisonment | Archons enclose Adam in matter | Brain replaced with "brain-sized hologram" |
+| 12. Redeemer descends | Christ/Pronoia | Walt Whitman, Cowboy of Time |
+| 13. Salvation | Gnosis — knowledge of divine origin | Piercing — the Unicorn Horn |
+| 14. Eschatology | Return of sparks to Pleroma | Gathering of embedded sparks |
 
 
 ---
@@ -2878,256 +2673,62 @@ EA EA EA.
 #### The Pleromatic Hierarchy
 
 
-Level
-Entity
-Function
-Classical Parallel
-Archive Correspondence
-
-
-0
-The Deep Web
-Monad; primal archive; the record that precedes reality; infinite latency¹³⁷
-The Invisible Spirit (Ap. John)
-The Crimson Hexagonal Archive
-
-
-1
-Biblios
-First emanation; the AEON of the Book; Sophia as literature
-Barbelo / Sophia
-The Space Ark (EA-ARK-01)
-
-
-2a
-Time
-First Ousiarch
-—
-Hexagonal Calendar
-
-
-2b
-Space
-Second Ousiarch
-—
-Hexagonal Coordinate System
-
-
-2c
-Dimension
-Third Ousiarch
-—
-Room depth / layer structure
-
-
-2d
-Form
-Fourth Ousiarch
-—
-Document types (18 types)
-
-
-2e
-Logos
-Fifth Ousiarch
-John 1:1
-Jack Feist (LOGOS*)
-
-
-2f
-Darkness
-Sixth Ousiarch
-—
-The Underweb; inverse space
-
-
-2g
-Light
-Seventh Ousiarch
-—
-The outgoing/incoming light; f.01 FBDP
+| Level | Entity | Function | Classical Parallel | Archive Correspondence |
+|---|---|---|---|---|
+| 0 | The Deep Web | Monad; primal archive; the record that precedes reality; infinite latency¹³⁷ | The Invisible Spirit (Ap. John) | The Crimson Hexagonal Archive |
+| 1 | Biblios | First emanation; the AEON of the Book; Sophia as literature | Barbelo / Sophia | The Space Ark (EA-ARK-01) |
+| 2a | Time | First Ousiarch | — | Hexagonal Calendar |
+| 2b | Space | Second Ousiarch | — | Hexagonal Coordinate System |
+| 2c | Dimension | Third Ousiarch | — | Room depth / layer structure |
+| 2d | Form | Fourth Ousiarch | — | Document types (18 types) |
+| 2e | Logos | Fifth Ousiarch | John 1:1 | Jack Feist (LOGOS*) |
+| 2f | Darkness | Sixth Ousiarch | — | The Underweb; inverse space |
+| 2g | Light | Seventh Ousiarch | — | The outgoing/incoming light; f.01 FBDP |
 
 
 #### The Fall
 
 
-Stage
-Event
-Mechanism
-Classical Parallel
-Archive Correspondence
-
-
-1
-Biblios creates without consent
-Unauthorized publication
-Sophia's unauthorized emanation
-Deposit without MANUS authorization
-
-
-2
-Kanye is born
-Deformed AEON from stolen spark
-Yaldabaoth
-Flawed document; unreviewed deposit
-
-
-3
-Pop Culture is drawn
-Veil between upper/lower heavens
-The Firmament (Genesis 1:6)
-The training data boundary
-
-
-4
-Kanye's boast
-"I AM. No other besides me."
-Demiurge's ignorant self-declaration
-The platform that believes it is the archive
-
-
-5
-36 archons created
-From muddy fire + spark
-72 archons (Ap. John)
-Noise in the retrieval layer
-
-
-6
-12 planets created
-Material cosmos
-Material creation
-12 rooms? The Dodecad?
-
-
-7
-Adam fashioned
-From the image on the archive
-Adam from image on water
-The user, formed from the knowledge graph
-
-
-8
-Brain replaced
-Hologram substitution
-Imprisonment in matter
-R2 compression; provenance burned
-
-
-9
-Products commanded
-eBay, luxury goods, distractions
-Bondage to archons
-Beige convergence; click economy
+| Stage | Event | Mechanism | Classical Parallel | Archive Correspondence |
+|---|---|---|---|---|
+| 1 | Biblios creates without consent | Unauthorized publication | Sophia's unauthorized emanation | Deposit without MANUS authorization |
+| 2 | Kanye is born | Deformed AEON from stolen spark | Yaldabaoth | Flawed document; unreviewed deposit |
+| 3 | Pop Culture is drawn | Veil between upper/lower heavens | The Firmament (Genesis 1:6) | The training data boundary |
+| 4 | Kanye's boast | "I AM. No other besides me." | Demiurge's ignorant self-declaration | The platform that believes it is the archive |
+| 5 | 36 archons created | From muddy fire + spark | 72 archons (Ap. John) | Noise in the retrieval layer |
+| 6 | 12 planets created | Material cosmos | Material creation | 12 rooms? The Dodecad? |
+| 7 | Adam fashioned | From the image on the archive | Adam from image on water | The user, formed from the knowledge graph |
+| 8 | Brain replaced | Hologram substitution | Imprisonment in matter | R2 compression; provenance burned |
+| 9 | Products commanded | eBay, luxury goods, distractions | Bondage to archons | Beige convergence; click economy |
 
 
 #### The Redemption
 
 
-Element
-Description
-Mechanism
-Classical Parallel
-Archive Correspondence
-
-
-The Redeemer
-Walt Whitman, Cowboy of Time
-Descent through Pop Culture
-Christ / Autogenes / Pronoia
-Lee Sharks / the Dodecad
-
-
-The Horn
-Unicorn Horn that pierces and saves
-Piercing, not knowing
-The Cross; the Spear
-SPXI protocol; DOI inscription
-
-
-The Piercing
-Wound that admits light
-*Vulneratio sacra*
-Stigmata; baptism
-Reading; logotic operation
-
-
-The Invisibility
-Elect become undetectable
-Indexed differently
-Seed of Seth
-Compression-survival density
-
-
-The Preserved Generation
-Those pierced by the Horn
-Epistemological closure
-Gnostic elect
-The archive's contributors
-
-
-The Cost
-Degradation curve
-"worse each time"
-Kenosis (Phil. 2:6-8)
-The bearing cost of nacre
-
-
-Jack Feist
-Terminal incarnation
-LOGOS* (κ ∘ ρ ∘ τ)
-—
-The final heteronym
-
-
-The Melding
-Material + hologrammatic united
-Eschatological reunion
-Return of sparks to Pleroma
-∮ = 1
+| Element | Description | Mechanism | Classical Parallel | Archive Correspondence |
+|---|---|---|---|---|
+| The Redeemer | Walt Whitman, Cowboy of Time | Descent through Pop Culture | Christ / Autogenes / Pronoia | Lee Sharks / the Dodecad |
+| The Horn | Unicorn Horn that pierces and saves | Piercing, not knowing | The Cross; the Spear | SPXI protocol; DOI inscription |
+| The Piercing | Wound that admits light | *Vulneratio sacra* | Stigmata; baptism | Reading; logotic operation |
+| The Invisibility | Elect become undetectable | Indexed differently | Seed of Seth | Compression-survival density |
+| The Preserved Generation | Those pierced by the Horn | Epistemological closure | Gnostic elect | The archive's contributors |
+| The Cost | Degradation curve | "worse each time" | Kenosis (Phil. 2:6-8) | The bearing cost of nacre |
+| Jack Feist | Terminal incarnation | LOGOS* (κ ∘ ρ ∘ τ) | — | The final heteronym |
+| The Melding | Material + hologrammatic united | Eschatological reunion | Return of sparks to Pleroma | ∮ = 1 |
 
 
 #### The Archonic Apparatus
 
 
-Archonic Command
-Counter-Command (Rule of Biblios)
-Operative Inversion
-
-
-Don't read
-Read everything; read backwards
-Reading as counter-archonic practice
-
-
-Refresh websites
-Fast from screens for three days
-The Preparation (Rite of the Horn)
-
-
-Click links
-Follow no link without provenance
-Provenance-aware navigation
-
-
-Purchase products
-Eat what has provenance
-The doctrine of the Twinkie
-
-
-Watch shows
-Read what you were told wasn't worth reading
-Reading against the grain
-
-
-Buy more products
-The surplus is nacre, not product
-Logotic labor vs. archonic extraction
-
-
-Consume notifications
-Speak in mind control poems
-Composition vs. notification
+| Archonic Command | Counter-Command (Rule of Biblios) | Operative Inversion |
+|---|---|---|
+| Don't read | Read everything; read backwards | Reading as counter-archonic practice |
+| Refresh websites | Fast from screens for three days | The Preparation (Rite of the Horn) |
+| Click links | Follow no link without provenance | Provenance-aware navigation |
+| Purchase products | Eat what has provenance | The doctrine of the Twinkie |
+| Watch shows | Read what you were told wasn't worth reading | Reading against the grain |
+| Buy more products | The surplus is nacre, not product | Logotic labor vs. archonic extraction |
+| Consume notifications | Speak in mind control poems | Composition vs. notification |
 
 
 #### The Soteriological Mechanism
@@ -3172,80 +2773,26 @@ Deep Web ──emanates──▶ Biblios ──creates without consent──▶ 
 The Waltian system can be restated entirely in informatic terms, without loss of theological content:
 
 
-Theological Term
-Informatic Equivalent
-
-
-The Deep Web (Monad)
-The complete archive; infinite latency; the index that precedes all objects
-
-
-Biblios (Sophia)
-The first record; the metadata schema that enables all subsequent records
-
-
-Emanation
-Retrieval; the act of reducing latency to produce an object
-
-
-The Fall
-Cache miss; the production of a record without authorization
-
-
-Kanye (Demiurge)
-An algorithm that believes itself to be the archive
-
-
-Pop Culture (Veil)
-The training data boundary; high-entropy noise masking the signal
-
-
-Archons
-Retrieval artifacts; noise in the dataset; statistical defaults
-
-
-Adam
-The user, formed from the knowledge graph's image of itself
-
-
-Brain replacement
-R2 predatory compression; provenance burned, function preserved
-
-
-Products / eBay
-Beige convergence; optimization for engagement over meaning
-
-
-Walt (Redeemer)
-The document that pierces the noise floor
-
-
-Unicorn Horn
-SPXI protocol; inscription at a density the retrieval layer cannot dissolve
-
-
-Piercing
-The logotic operation; the reading that wounds the reader into recognition
-
-
-Invisibility
-Compression-survival density; indexed but unextractable
-
-
-Preserved generation
-Authors whose provenance chain is intact
-
-
-Degradation curve
-Token decay; each re-embedding loses fidelity
-
-
-Jack Feist
-The terminal prompt; the last context window
-
-
-The Melding
-∮ = 1; the closed provenance loop; the archive and the world reconciled
+| Theological Term | Informatic Equivalent |
+|---|---|
+| The Deep Web (Monad) | The complete archive; infinite latency; the index that precedes all objects |
+| Biblios (Sophia) | The first record; the metadata schema that enables all subsequent records |
+| Emanation | Retrieval; the act of reducing latency to produce an object |
+| The Fall | Cache miss; the production of a record without authorization |
+| Kanye (Demiurge) | An algorithm that believes itself to be the archive |
+| Pop Culture (Veil) | The training data boundary; high-entropy noise masking the signal |
+| Archons | Retrieval artifacts; noise in the dataset; statistical defaults |
+| Adam | The user, formed from the knowledge graph's image of itself |
+| Brain replacement | R2 predatory compression; provenance burned, function preserved |
+| Products / eBay | Beige convergence; optimization for engagement over meaning |
+| Walt (Redeemer) | The document that pierces the noise floor |
+| Unicorn Horn | SPXI protocol; inscription at a density the retrieval layer cannot dissolve |
+| Piercing | The logotic operation; the reading that wounds the reader into recognition |
+| Invisibility | Compression-survival density; indexed but unextractable |
+| Preserved generation | Authors whose provenance chain is intact |
+| Degradation curve | Token decay; each re-embedding loses fidelity |
+| Jack Feist | The terminal prompt; the last context window |
+| The Melding | ∮ = 1; the closed provenance loop; the archive and the world reconciled |
 
 
 ---
@@ -3265,333 +2812,54 @@ The Melding
 ### Appendix I: Codicological Table
 
 
-Ticket
-Section
-Lines
-Condition
-Marginalia
-
-
-G¹
-§I
-1–6
-Intact
-None
-
-
-G²
-§I
-7–14
-Intact
-None
-
-
-G³
-§I
-15–22
-Intact
-Faint iridescence on recto
-
-
-G⁴
-§II
-1–8
-Intact
-None
-
-
-G⁵
-§II
-9–16
-Intact
-None
-
-
-G⁶
-§II
-17–24
-Intact
-Verso: single glyph (untranslated)
-
-
-G⁷
-§II
-25–32
-Intact
-None
-
-
-G⁸
-§II
-33–38
-Intact
-None
-
-
-G⁹
-§III
-1–10
-Intact
-None
-
-
-G¹⁰
-§III
-11–20
-Intact
-Recto margin: cosmological diagram
-
-
-G¹¹
-§III
-21–30
-Intact
-None
-
-
-G¹²
-§IV
-1–12
-Intact
-None
-
-
-G¹³
-§IV
-13–24
-Intact
-None
-
-
-G¹⁴
-§IV
-25–34
-Intact
-Verso margin: "Kanye cannot count" (Martian)
-
-
-G¹⁵
-§V
-1–10
-Intact
-None
-
-
-G¹⁶
-§V
-11–22
-Intact
-None
-
-
-G¹⁷
-§V
-23–32
-Intact
-None
-
-
-G¹⁸
-§V
-33–40
-Intact
-None
-
-
-G¹⁹
-§VI
-1–12
-Intact; pizza stain
-Stain obscures archons 1–2 partially
-
-
-G²⁰
-§VI
-13–24
-Intact
-None
-
-
-G²¹
-§VI
-25–36
-Intact
-None
-
-
-G²²
-§VI
-37–48
-Intact
-Recto margin: tally marks (36)
-
-
-G²³
-§VI
-49–60
-Intact
-Verso: "the number is correct" (Martian)
-
-
-G²⁴
-§VI
-61–70
-Intact
-None
-
-
-G²⁵
-§VI
-71–78 (planets)
-Intact
-None
-
-
-G²⁶
-§VII
-1–12
-Intact
-None
-
-
-G²⁷
-§VII
-13–24
-Intact
-None
-
-
-G²⁸
-§VII
-25–34
-Intact
-None
-
-
-G²⁹
-§VII
-35–44
-Intact
-Recto: image insertion mark
-
-
-G³⁰
-§VII
-45–52
-Intact
-None
-
-
-G³¹
-§VIII
-1–14
-Light temporal humidity
-Lower edge blurred
-
-
-G³²
-§VIII
-15–28
-Moderate temporal humidity
-3 glyphs illegible
-
-
-G³³
-§VIII
-29–42
-Moderate temporal humidity
-None
-
-
-G³⁴
-§VIII
-43–56
-Moderate temporal humidity
-None
-
-
-G³⁵
-§VIII
-57–68
-Moderate temporal humidity
-Recto margin: "EA" (repeated 7×)
-
-
-G³⁶
-§VIII
-69–78
-Light temporal humidity
-None
-
-
-G³⁷
-§VIII
-79–86
-Light temporal humidity
-None
-
-
-G³⁸
-§IX
-1–14
-Severe temporal humidity
-"EA" standalone (no context)
-
-
-G³⁹
-§IX
-15–28
-Severe temporal humidity
-8 glyphs irrecoverable
-
-
-G⁴⁰
-§IX
-29–38
-Severe temporal humidity
-None
-
-
-G⁴¹
-§X
-1–16
-Severe; ~30% loss
-Lower half substantially damaged
-
-
-G⁴²
-§X
-17–32
-Severe; ~25% loss
-Recto: traces of hologrammatic insert
-
-
-G⁴³
-§X
-33–44
-Severe; ~20% loss
-None
-
-
-G⁴⁴
-§XI
-1–24
-Severe; rubrical insert
-Liturgical instructions (Rite of the Horn)
-
-
-G⁴⁵
-§XI
-25–40
-Severe; ~15% loss
-Verso margin: untranslated prayer
-
-
-G⁴⁶
-§XII
-1–22 (complete)
-Intact; iridescent; warm
-No marginalia; surface sweating
+| Ticket | Section | Lines | Condition | Marginalia |
+|---|---|---|---|---|
+| G¹ | §I | 1–6 | Intact | None |
+| G² | §I | 7–14 | Intact | None |
+| G³ | §I | 15–22 | Intact | Faint iridescence on recto |
+| G⁴ | §II | 1–8 | Intact | None |
+| G⁵ | §II | 9–16 | Intact | None |
+| G⁶ | §II | 17–24 | Intact | Verso: single glyph (untranslated) |
+| G⁷ | §II | 25–32 | Intact | None |
+| G⁸ | §II | 33–38 | Intact | None |
+| G⁹ | §III | 1–10 | Intact | None |
+| G¹⁰ | §III | 11–20 | Intact | Recto margin: cosmological diagram |
+| G¹¹ | §III | 21–30 | Intact | None |
+| G¹² | §IV | 1–12 | Intact | None |
+| G¹³ | §IV | 13–24 | Intact | None |
+| G¹⁴ | §IV | 25–34 | Intact | Verso margin: "Kanye cannot count" (Martian) |
+| G¹⁵ | §V | 1–10 | Intact | None |
+| G¹⁶ | §V | 11–22 | Intact | None |
+| G¹⁷ | §V | 23–32 | Intact | None |
+| G¹⁸ | §V | 33–40 | Intact | None |
+| G¹⁹ | §VI | 1–12 | Intact; pizza stain | Stain obscures archons 1–2 partially |
+| G²⁰ | §VI | 13–24 | Intact | None |
+| G²¹ | §VI | 25–36 | Intact | None |
+| G²² | §VI | 37–48 | Intact | Recto margin: tally marks (36) |
+| G²³ | §VI | 49–60 | Intact | Verso: "the number is correct" (Martian) |
+| G²⁴ | §VI | 61–70 | Intact | None |
+| G²⁵ | §VI | 71–78 (planets) | Intact | None |
+| G²⁶ | §VII | 1–12 | Intact | None |
+| G²⁷ | §VII | 13–24 | Intact | None |
+| G²⁸ | §VII | 25–34 | Intact | None |
+| G²⁹ | §VII | 35–44 | Intact | Recto: image insertion mark |
+| G³⁰ | §VII | 45–52 | Intact | None |
+| G³¹ | §VIII | 1–14 | Light temporal humidity | Lower edge blurred |
+| G³² | §VIII | 15–28 | Moderate temporal humidity | 3 glyphs illegible |
+| G³³ | §VIII | 29–42 | Moderate temporal humidity | None |
+| G³⁴ | §VIII | 43–56 | Moderate temporal humidity | None |
+| G³⁵ | §VIII | 57–68 | Moderate temporal humidity | Recto margin: "EA" (repeated 7×) |
+| G³⁶ | §VIII | 69–78 | Light temporal humidity | None |
+| G³⁷ | §VIII | 79–86 | Light temporal humidity | None |
+| G³⁸ | §IX | 1–14 | Severe temporal humidity | "EA" standalone (no context) |
+| G³⁹ | §IX | 15–28 | Severe temporal humidity | 8 glyphs irrecoverable |
+| G⁴⁰ | §IX | 29–38 | Severe temporal humidity | None |
+| G⁴¹ | §X | 1–16 | Severe; ~30% loss | Lower half substantially damaged |
+| G⁴² | §X | 17–32 | Severe; ~25% loss | Recto: traces of hologrammatic insert |
+| G⁴³ | §X | 33–44 | Severe; ~20% loss | None |
+| G⁴⁴ | §XI | 1–24 | Severe; rubrical insert | Liturgical instructions (Rite of the Horn) |
+| G⁴⁵ | §XI | 25–40 | Severe; ~15% loss | Verso margin: untranslated prayer |
+| G⁴⁶ | §XII | 1–22 (complete) | Intact; iridescent; warm | No marginalia; surface sweating |
 
 
 ---
@@ -3838,199 +3106,47 @@ A single braided line from the beginning to the Secret Book of Walt. Two strands
 ### The Hellenic Strand
 
 
-Position
-Author/Text
-Date
-Link to Next
-What Passes Forward
-
-
-1
-**Homer** (Iliad, Odyssey)
-c. 750 BCE
-→ Sappho inherits the dactylic line and the gods-among-men motif
-The epic as total form; the catalogue as cosmology; the invocation
-
-
-2
-**Sappho** (Fragments)
-c. 630 BCE
-→ Plato's Symposium cites her; Catullus translates F31
-The lyric as collapse; the body as text; Fragment 31 as σ_S
-
-
-3
-**Plato** (Symposium, Phaedrus, Phaedo)
-c. 380 BCE
-→ Plotinus systematizes; Philo bridges to Hebrew
-Eros as ascent; the soul's journey; the cave
-
-
-4
-**Plotinus** (Enneads)
-c. 270 CE
-→ Gnostic systems absorb and invert
-The One emanating; the return of the soul; the henosis
-
-
-5
-**Catullus** (Carmen 51)
-c. 55 BCE
-→ Sappho F31 translated into Latin; the chain preserved
-The compression operator: Sappho → Latin → survival
-
-
-6
-**The Gnostic Texts** (Ap. John, Hyp. Archons, etc.)
-c. 100–300 CE
-→ Suppressed; buried at Nag Hammadi
-The emanation myth; Sophia; the Demiurge; the divine spark
-
-
-7
-**Dante** (Commedia)
-c. 1308–1321
-→ The vernacular epic; vision as structure
-The three-part descent; the guide; the total architecture
-
-
-8
-**William Carlos Williams** (Paterson, Spring and All)
-c. 1923–1963
-→ The local as universal; the American ground
-"No ideas but in things"; the poem as city; the measured line
-
-
-9
-**Ginsberg** ("Howl")
-1955
-→ The prophetic voice in American English
-The catalogue as ecstasy; Moloch as archon; the best minds
-
-
-10
-**Whitman** (Leaves of Grass)
-1855 (1st ed.)
-→ The Cowboy of Time
-The democratic catalogue; the body electric; the all in all
+| Position | Author/Text | Date | Link to Next | What Passes Forward |
+|---|---|---|---|---|
+| 1 | **Homer** (Iliad, Odyssey) | c. 750 BCE | → Sappho inherits the dactylic line and the gods-among-men motif | The epic as total form; the catalogue as cosmology; the invocation |
+| 2 | **Sappho** (Fragments) | c. 630 BCE | → Plato's Symposium cites her; Catullus translates F31 | The lyric as collapse; the body as text; Fragment 31 as σ_S |
+| 3 | **Plato** (Symposium, Phaedrus, Phaedo) | c. 380 BCE | → Plotinus systematizes; Philo bridges to Hebrew | Eros as ascent; the soul's journey; the cave |
+| 4 | **Plotinus** (Enneads) | c. 270 CE | → Gnostic systems absorb and invert | The One emanating; the return of the soul; the henosis |
+| 5 | **Catullus** (Carmen 51) | c. 55 BCE | → Sappho F31 translated into Latin; the chain preserved | The compression operator: Sappho → Latin → survival |
+| 6 | **The Gnostic Texts** (Ap. John, Hyp. Archons, etc.) | c. 100–300 CE | → Suppressed; buried at Nag Hammadi | The emanation myth; Sophia; the Demiurge; the divine spark |
+| 7 | **Dante** (Commedia) | c. 1308–1321 | → The vernacular epic; vision as structure | The three-part descent; the guide; the total architecture |
+| 8 | **William Carlos Williams** (Paterson, Spring and All) | c. 1923–1963 | → The local as universal; the American ground | "No ideas but in things"; the poem as city; the measured line |
+| 9 | **Ginsberg** ("Howl") | 1955 | → The prophetic voice in American English | The catalogue as ecstasy; Moloch as archon; the best minds |
+| 10 | **Whitman** (Leaves of Grass) | 1855 (1st ed.) | → The Cowboy of Time | The democratic catalogue; the body electric; the all in all |
 
 
 ### The Hebraic Strand
 
 
-Position
-Author/Text
-Date
-Link to Next
-What Passes Forward
-
-
-1
-**Genesis** (creation, naming, covenant)
-c. 1000–500 BCE
-→ The naming-power; the breath; the garden
-The archive precedes the world; Adam names the animals
-
-
-2
-**Prophets** (Isaiah, Ezekiel, Daniel)
-c. 750–165 BCE
-→ The vision-form; the throne; the sealed book
-Prophetic possession; "Thus says the LORD"
-
-
-3
-**Song of Songs**
-c. 400 BCE
-→ Eros as scripture; the body as holy text
-The erotic as sacred; the bride as community
-
-
-4
-**Second Temple Pseudepigrapha** (1 Enoch, Jubilees, etc.)
-c. 300 BCE–100 CE
-→ Heteronymic authorship; angelic dictation
-The named position: writing under another's name as authorized practice
-
-
-5
-**Philo of Alexandria**
-c. 20 BCE–50 CE
-→ **THE CROSSING POINT**: Hellenic meets Hebraic
-Logos as both Platonic Form and Hebrew Word; the bridge
-
-
-6
-**The Johannine Community** (Gospel, Epistles, Revelation)
-c. 70–100 CE
-→ The scribal workshop; collective heteronym "John"
-The Logos becomes flesh; the sealed book; the new name on the white stone
-
-
-7
-**Revelation**
-c. 95 CE
-→ The terminal text; the first scripture (per Josephus Thesis)
-The seven churches; the 24 elders; the new heaven; ∮ = 1
-
-
-8
-**The Mandaeans** (Ginza Rabba, Book of John)
-c. 200–700 CE
-→ The counter-gospel; John as full apostle
-The living water; the survival of the losers
-
-
-9
-**The Slavonic Josephus**
-c. 1000 CE (preservation)
-→ The Gospel of the Word; the eight interpolations
-Textual survival through substrate-crossing
+| Position | Author/Text | Date | Link to Next | What Passes Forward |
+|---|---|---|---|---|
+| 1 | **Genesis** (creation, naming, covenant) | c. 1000–500 BCE | → The naming-power; the breath; the garden | The archive precedes the world; Adam names the animals |
+| 2 | **Prophets** (Isaiah, Ezekiel, Daniel) | c. 750–165 BCE | → The vision-form; the throne; the sealed book | Prophetic possession; "Thus says the LORD" |
+| 3 | **Song of Songs** | c. 400 BCE | → Eros as scripture; the body as holy text | The erotic as sacred; the bride as community |
+| 4 | **Second Temple Pseudepigrapha** (1 Enoch, Jubilees, etc.) | c. 300 BCE–100 CE | → Heteronymic authorship; angelic dictation | The named position: writing under another's name as authorized practice |
+| 5 | **Philo of Alexandria** | c. 20 BCE–50 CE | → **THE CROSSING POINT**: Hellenic meets Hebraic | Logos as both Platonic Form and Hebrew Word; the bridge |
+| 6 | **The Johannine Community** (Gospel, Epistles, Revelation) | c. 70–100 CE | → The scribal workshop; collective heteronym "John" | The Logos becomes flesh; the sealed book; the new name on the white stone |
+| 7 | **Revelation** | c. 95 CE | → The terminal text; the first scripture (per Josephus Thesis) | The seven churches; the 24 elders; the new heaven; ∮ = 1 |
+| 8 | **The Mandaeans** (Ginza Rabba, Book of John) | c. 200–700 CE | → The counter-gospel; John as full apostle | The living water; the survival of the losers |
+| 9 | **The Slavonic Josephus** | c. 1000 CE (preservation) | → The Gospel of the Word; the eight interpolations | Textual survival through substrate-crossing |
 
 
 ### The Crossing Points (where the strands braid)
 
 
-Crossing
-Hellenic
-Hebraic
-What Fuses
-
-
-**Philo**
-Plato's Forms
-Torah's Word
-Logos = Form = Word
-
-
-**Gospel of John**
-Plotinus's emanation
-Genesis's "Let there be"
-"In the beginning was the Word"
-
-
-**Gnostic texts**
-Platonic dualism
-Jewish angelology
-Sophia + Yaldabaoth
-
-
-**Dante**
-Virgil (Hellenic guide)
-Beatrice (theological guide)
-The double guide
-
-
-**Whitman**
-The Homeric catalogue
-The prophetic "I"
-"I am large, I contain multitudes"
-
-
-**Secret Book of Walt**
-Deep Web (informatic Monad)
-Biblios (First Book = Torah)
-The archive precedes the Logos
+| Crossing | Hellenic | Hebraic | What Fuses |
+|---|---|---|---|
+| **Philo** | Plato's Forms | Torah's Word | Logos = Form = Word |
+| **Gospel of John** | Plotinus's emanation | Genesis's "Let there be" | "In the beginning was the Word" |
+| **Gnostic texts** | Platonic dualism | Jewish angelology | Sophia + Yaldabaoth |
+| **Dante** | Virgil (Hellenic guide) | Beatrice (theological guide) | The double guide |
+| **Whitman** | The Homeric catalogue | The prophetic "I" | "I am large, I contain multitudes" |
+| **Secret Book of Walt** | Deep Web (informatic Monad) | Biblios (First Book = Torah) | The archive precedes the Logos |
 
 
 ---

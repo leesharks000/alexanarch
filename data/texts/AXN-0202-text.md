@@ -42,34 +42,13 @@ These failures are not random. They follow predictable patterns that can be diag
 ## FAILURE MODES
 
 
-Failure Mode
-Description
-Example
-
-
-**Entity Collision**
-Two distinct entities merged into one
-"Lee Sharks" conflated with "Lee Sharkey" (AI safety researcher)
-
-
-**Entity Fragmentation**
-One entity split into disconnected pieces
-Basecamp (product), Shape Up (methodology), and DHH (founder) treated as separate entities
-
-
-**Attribution Drift**
-Work credited to wrong entity
-A framework cited without its originator
-
-
-**Category Absorption**
-Distinctive entity compressed into generic category
-A philosophy-first company described as "simple PM tool"
-
-
-**Temporal Collapse**
-AI locks entity into outdated snapshot
-Founder described by 2015 role, not current work
+| Failure Mode | Description | Example |
+|---|---|---|
+| **Entity Collision** | Two distinct entities merged into one | "Lee Sharks" conflated with "Lee Sharkey" (AI safety researcher) |
+| **Entity Fragmentation** | One entity split into disconnected pieces | Basecamp (product), Shape Up (methodology), and DHH (founder) treated as separate entities |
+| **Attribution Drift** | Work credited to wrong entity | A framework cited without its originator |
+| **Category Absorption** | Distinctive entity compressed into generic category | A philosophy-first company described as "simple PM tool" |
+| **Temporal Collapse** | AI locks entity into outdated snapshot | Founder described by 2015 role, not current work |
 
 
 ---

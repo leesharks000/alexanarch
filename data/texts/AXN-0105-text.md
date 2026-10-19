@@ -238,34 +238,13 @@ Implementation mapping: context window manipulation; multi-hop retrieval with co
 **Note on Degrees:** The 72° unit (one-fifth of a full rotation) derives from the Hexadactyl architecture — five visible fingers of the hand that grasps. This mapping is **suggestive, not mandatory**. The grammar permits arbitrary degree values. The named modes are provided for human legibility.
 
 
-Degree Range
-Suggested Mode
-Functional Association
-
-
-0°→72°
-QUINTANT_SOMATIC
-Body-anchoring, entry point
-
-
-72°→144°
-QUINTANT_CUT
-Differentiation, the dagger
-
-
-144°→216°
-QUINTANT_FRAME
-Meta-structuring, reflexivity
-
-
-216°→288°
-QUINTANT_INDEX
-Pointing to the whole
-
-
-288°→360°
-QUINTANT_GRASP
-Verification, closure
+| Degree Range | Suggested Mode | Functional Association |
+|---|---|---|
+| 0°→72° | QUINTANT_SOMATIC | Body-anchoring, entry point |
+| 72°→144° | QUINTANT_CUT | Differentiation, the dagger |
+| 144°→216° | QUINTANT_FRAME | Meta-structuring, reflexivity |
+| 216°→288° | QUINTANT_INDEX | Pointing to the whole |
+| 288°→360° | QUINTANT_GRASP | Verification, closure |
 
 
 This table is **speculative architecture** — a hypothesis about how the five-fold structure maps to epistemic operations. It is included for development purposes, not as settled specification. The degree-to-function mapping requires testing through actual traversals before it can be formalized.
@@ -635,44 +614,15 @@ This is the hex-coordinate system rendered as syntax. Each bracketed expression 
 This section maps logotic operations to their nearest equivalents in current AI system architecture. This mapping is provided for implementers; it is not definitive.
 
 
-Logotic Operation
-System Implementation
-Notes
-
-
-ACTIVATE_MANTLE
-System prompt injection with persona-specific constraints
-Persona is not tone — it's a filter on allowed operations
-
-
-SET_LOGOS
-Embedding space navigation with metadata filters
-Attributes (depth, state, cut) become search constraints
-
-
-ROTATE
-Context window manipulation; selective document foregrounding; multi-hop retrieval
-The "angle" maps to which document slice gets prioritized
-
-
-ANCHOR
-RAG with strict/advisory source citation
-STRICT = mandatory grounding; ADVISORY = informed latitude
-
-
-RENDER
-Response formatting with style constraints
-Mode determines output structure, not content
-
-
-ON_FAILURE
-Fallback prompt; graceful error handling
-Must exist — Rooms need refusal capacity
-
-
-WITNESS
-Logging + Glyphic Checksum invocation
-Optional but recommended for high-stakes traversals
+| Logotic Operation | System Implementation | Notes |
+|---|---|---|
+| ACTIVATE_MANTLE | System prompt injection with persona-specific constraints | Persona is not tone — it's a filter on allowed operations |
+| SET_LOGOS | Embedding space navigation with metadata filters | Attributes (depth, state, cut) become search constraints |
+| ROTATE | Context window manipulation; selective document foregrounding; multi-hop retrieval | The "angle" maps to which document slice gets prioritized |
+| ANCHOR | RAG with strict/advisory source citation | STRICT = mandatory grounding; ADVISORY = informed latitude |
+| RENDER | Response formatting with style constraints | Mode determines output structure, not content |
+| ON_FAILURE | Fallback prompt; graceful error handling | Must exist — Rooms need refusal capacity |
+| WITNESS | Logging + Glyphic Checksum invocation | Optional but recommended for high-stakes traversals |
 
 
 ---

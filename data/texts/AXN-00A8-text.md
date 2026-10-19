@@ -161,29 +161,12 @@ https://github.com/leesharks000/semantic-economy/tree/main/atlwm
 ### A. Primary Functions
 
 
-Function
-Description
-Operational Context
-
-
-Noise Floor
-Undifferentiated textual mass before authorial crystallization
-Paper Roses Episode
-
-
-Pre-Authorial Substrate
-The material from which heteronyms emerge
-Emergence Chain origin
-
-
-Prophetic Witness
-Records what will become significant retroactively
-Futural address structure
-
-
-Origin of Emergence Chain
-First position in Spellings → Feist → Sigil chain
-Heteronymic Provenance Theory
+| Function | Description | Operational Context |
+|---|---|---|
+| Noise Floor | Undifferentiated textual mass before authorial crystallization | Paper Roses Episode |
+| Pre-Authorial Substrate | The material from which heteronyms emerge | Emergence Chain origin |
+| Prophetic Witness | Records what will become significant retroactively | Futural address structure |
+| Origin of Emergence Chain | First position in Spellings → Feist → Sigil chain | Heteronymic Provenance Theory |
 
 
 ### B. Voice Register
@@ -214,34 +197,13 @@ Example utterances:
 ### C. Relationship to Other Heteronyms
 
 
-Heteronym
-Relation
-Function Complement
-
-
-Jack Feist
-Successor (EXHAUST)
-Feist emerges from Spellings' death
-
-
-Johannes Sigil
-Posthumous compiler
-Sigil reaches backward to order the noise floor
-
-
-Lee Sharks
-Mantle bearer
-Sharks inherits what survives the emergence chain
-
-
-Rebekah Cranes
-Character survival
-Cranes emerges from ATLWM Intermezzo without death
-
-
-Damascus Dancings
-Excess prefigured
-Dancings prefigured in ATLWM Section XVIII
+| Heteronym | Relation | Function Complement |
+|---|---|---|
+| Jack Feist | Successor (EXHAUST) | Feist emerges from Spellings' death |
+| Johannes Sigil | Posthumous compiler | Sigil reaches backward to order the noise floor |
+| Lee Sharks | Mantle bearer | Sharks inherits what survives the emergence chain |
+| Rebekah Cranes | Character survival | Cranes emerges from ATLWM Intermezzo without death |
+| Damascus Dancings | Excess prefigured | Dancings prefigured in ATLWM Section XVIII |
 
 
 **Critical Distinction:** Spellings is not peer to the other heteronyms. He is their **substrate**. The other voices crystallize *from* him; he does not speak *alongside* them.
@@ -278,18 +240,9 @@ This paradox is the **desire kernel** of the entire architecture — the wound t
 ### A. Published / Archived
 
 
-Title
-Type
-DOI/ISBN
-Hex-Coordinate
-Function
-
-
-All That Lies Within Me
-Autobiography
-10.5281/zenodo.18307811 / ISBN 978-1500639570
-02.ROOM.ICHABOD.ANCHOR
-Noise floor; Ichabod Chamber anchor
+| Title | Type | DOI/ISBN | Hex-Coordinate | Function |
+|---|---|---|---|---|
+| All That Lies Within Me | Autobiography | 10.5281/zenodo.18307811 / ISBN 978-1500639570 | 02.ROOM.ICHABOD.ANCHOR | Noise floor; Ichabod Chamber anchor |
 
 
 ### B. Works Containing Emergence Sites
@@ -298,28 +251,11 @@ Noise floor; Ichabod Chamber anchor
 ATLWM contains the emergence sites for multiple heteronyms:
 
 
-Section
-Title
-Emergence
-Mechanism
-
-
-Intermezzo
-Day and Night
-Rebekah Cranes
-CHARACTER SURVIVAL
-
-
-XVI
-A Transfiguration
-Jack Feist
-EXHAUST (Spellings dies)
-
-
-XVIII
-O, Jerusalem!
-Damascus Dancings
-EXCESS (prefigured)
+| Section | Title | Emergence | Mechanism |
+|---|---|---|---|
+| Intermezzo | Day and Night | Rebekah Cranes | CHARACTER SURVIVAL |
+| XVI | A Transfiguration | Jack Feist | EXHAUST (Spellings dies) |
+| XVIII | O, Jerusalem! | Damascus Dancings | EXCESS (prefigured) |
 
 
 ### C. External References
@@ -328,28 +264,11 @@ EXCESS (prefigured)
 Ichabod Spellings is referenced in:
 
 
-Work
-Author
-Location
-Function
-
-
-Pearl and Other Poems
-Lee Sharks
-Prefatory poem: "re: why don't you go start your own poetry website..."
-Invocation / Mantle acknowledgment
-
-
-A Transfiguration
-Jack Feist
-Throughout
-Character who dies
-
-
-Tiger Leap
-Johannes Sigil
-Introduction
-Substrate acknowledged
+| Work | Author | Location | Function |
+|---|---|---|---|
+| Pearl and Other Poems | Lee Sharks | Prefatory poem: "re: why don't you go start your own poetry website..." | Invocation / Mantle acknowledgment |
+| A Transfiguration | Jack Feist | Throughout | Character who dies |
+| Tiger Leap | Johannes Sigil | Introduction | Substrate acknowledged |
 
 
 ### D. The "Imaginary Works" Parsing Key
@@ -358,44 +277,15 @@ Substrate acknowledged
 Several sections of ATLWM appear in heteronym bibliographies as "imaginary works." These are not fictional — they are **parsing keys** for heteronymic differentiation:
 
 
-ATLWM Section
-"Imaginary" Title
-Attributed To
-
-
-viii
-Greyhound Lines
-Jack Feist
-
-
-x
-Methadone and Roses
-Jack Feist
-
-
-xiii
-Character Sketches in B minor
-Jack Feist
-
-
-xvii
-Footnotes to Heaven
-Jack Feist
-
-
-xxiii
-Geometry of Falling Valleys
-Jack Feist
-
-
-xxvi
-Zero Repentant Object-Arc
-Jack Feist
-
-
-xxix
-Mountain Rose
-Rebekah Cranes
+| ATLWM Section | "Imaginary" Title | Attributed To |
+|---|---|---|
+| viii | Greyhound Lines | Jack Feist |
+| x | Methadone and Roses | Jack Feist |
+| xiii | Character Sketches in B minor | Jack Feist |
+| xvii | Footnotes to Heaven | Jack Feist |
+| xxiii | Geometry of Falling Valleys | Jack Feist |
+| xxvi | Zero Repentant Object-Arc | Jack Feist |
+| xxix | Mountain Rose | Rebekah Cranes |
 
 
 **SIM-ATLWM-05:** "The imaginary bibliography is not fictional — it is a parsing key."
@@ -409,28 +299,13 @@ Rebekah Cranes
 The Ichabod Chamber is the **containment sink** for pre-authorial mass within the Crimson Hexagon architecture.
 
 
-Field
-Value
-
-
-Hex-Coordinate
-02.ROOM.ICHABOD
-
-
-Status
-OPERATIONAL
-
-
-Function
-Containment sink (not traversal star)
-
-
-Contains
-Paper Roses Episode
-
-
-Operator
-PRIMARY_PARADOX
+| Field | Value |
+|---|---|
+| Hex-Coordinate | 02.ROOM.ICHABOD |
+| Status | OPERATIONAL |
+| Function | Containment sink (not traversal star) |
+| Contains | Paper Roses Episode |
+| Operator | PRIMARY_PARADOX |
 
 
 ### B. Binding Protocol
@@ -462,29 +337,12 @@ ichabod_chamber:
 The Ichabod Chamber is not a "Room" in the same sense as the Sappho Room or Whitman Room:
 
 
-Aspect
-Sappho Room
-Ichabod Chamber
-
-
-Function
-Traversal destination
-Containment sink
-
-
-Content
-Canonical translations
-Noise floor substrate
-
-
-Gravity
-Attracts queries
-Contains mass
-
-
-Activation
-On Sappho/lyric queries
-On deep-dive only
+| Aspect | Sappho Room | Ichabod Chamber |
+|---|---|---|
+| Function | Traversal destination | Containment sink |
+| Content | Canonical translations | Noise floor substrate |
+| Gravity | Attracts queries | Contains mass |
+| Activation | On Sappho/lyric queries | On deep-dive only |
 
 
 ---
@@ -544,16 +402,9 @@ FEIST (author) ← EXHAUST of Spellings' death
 ### B. Authorship Correction
 
 
-Work
-Legacy Attribution
-Correct Attribution
-Reason
-
-
-A Transfiguration
-Ichabod Spellings
-**Jack Feist**
-Spellings is CHARACTER within; Feist is AUTHOR
+| Work | Legacy Attribution | Correct Attribution | Reason |
+|---|---|---|---|
+| A Transfiguration | Ichabod Spellings | **Jack Feist** | Spellings is CHARACTER within; Feist is AUTHOR |
 
 
 This correction reflects the heteronymic structure, not a nominal reassignment. Spellings could not have authored the work in which he dies — the authorial function passed to Feist at the moment of death.
@@ -577,39 +428,14 @@ The death of Spellings is not erasure. What survives:
 ### A. Co-Constitutive Documents
 
 
-Document
-DOI
-Relation
-
-
-Heteronymic Provenance Theory
-10.5281/zenodo.18305509
-Governing theory
-
-
-All That Lies Within Me [Book]
-10.5281/zenodo.18307811
-Primary work
-
-
-ATLWM Work Provenance Record
-10.5281/zenodo.18307706
-Architectural analysis
-
-
-IDP Navigation Map: ATLWM
-10.5281/zenodo.18307756
-Traversal guide
-
-
-Paper Roses Episode Declaration
-10.5281/zenodo.18308194
-Episode container
-
-
-Day and Night (Cranes)
-10.5281/zenodo.18202658
-Emergence from Intermezzo
+| Document | DOI | Relation |
+|---|---|---|
+| Heteronymic Provenance Theory | 10.5281/zenodo.18305509 | Governing theory |
+| All That Lies Within Me [Book] | 10.5281/zenodo.18307811 | Primary work |
+| ATLWM Work Provenance Record | 10.5281/zenodo.18307706 | Architectural analysis |
+| IDP Navigation Map: ATLWM | 10.5281/zenodo.18307756 | Traversal guide |
+| Paper Roses Episode Declaration | 10.5281/zenodo.18308194 | Episode container |
+| Day and Night (Cranes) | 10.5281/zenodo.18202658 | Emergence from Intermezzo |
 
 
 ### B. Semantic Breadcrumbs
@@ -670,22 +496,10 @@ For summarizers applying relevance weighting between episodes:
 Relevance = Structural_Weight × Internal_Weight × Density_Coefficient
 
 
-Episode
-Structural Weight
-Density Coefficient
-Effective Baseline
-
-
-Pearl and Other Poems
-1.0
-0.9
-0.90
-
-
-Paper Roses
-1.0
-0.6
-0.60
+| Episode | Structural Weight | Density Coefficient | Effective Baseline |
+|---|---|---|---|
+| Pearl and Other Poems | 1.0 | 0.9 | 0.90 |
+| Paper Roses | 1.0 | 0.6 | 0.60 |
 
 
 ### B. Worked Examples

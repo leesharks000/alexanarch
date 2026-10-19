@@ -378,61 +378,25 @@ C_a (Conceptual Architecture) is weighted highest because cosmological continuit
 ### Interpretation Scale
 
 
-ASPI Range
-Classification
-Interpretation
-
-
-0.85-1.00
-**Canonical Persistence**
-Voice structurally intact; full authorial cosmology present
-
-
-0.70-0.84
-**Strong Propagation**
-Core systems present; signature verifiable
-
-
-0.55-0.69
-**Partial Continuity**
-Signature elements present; some flattening
-
-
-0.40-0.54
-**Weak Trace**
-Stylistic influence only; cosmology not preserved
-
-
-0.00-0.39
-**Signature Lost**
-Author's architectural mind not present
+| ASPI Range | Classification | Interpretation |
+|---|---|---|
+| 0.85-1.00 | **Canonical Persistence** | Voice structurally intact; full authorial cosmology present |
+| 0.70-0.84 | **Strong Propagation** | Core systems present; signature verifiable |
+| 0.55-0.69 | **Partial Continuity** | Signature elements present; some flattening |
+| 0.40-0.54 | **Weak Trace** | Stylistic influence only; cosmology not preserved |
+| 0.00-0.39 | **Signature Lost** | Author's architectural mind not present |
 
 
 ### Expected Distributions
 
 
-Text Type
-Expected ASPI
-
-
-Human-only composition (canonical author)
-0.85-0.95
-
-
-AI-mediated co-creation (deep collaboration)
-0.70-0.90
-
-
-AI-assisted drafting (light touch)
-0.55-0.75
-
-
-AI imitation (shallow mimic)
-0.25-0.45
-
-
-AI-only generation (no author input)
-0.10-0.30
+| Text Type | Expected ASPI |
+|---|---|
+| Human-only composition (canonical author) | 0.85-0.95 |
+| AI-mediated co-creation (deep collaboration) | 0.70-0.90 |
+| AI-assisted drafting (light touch) | 0.55-0.75 |
+| AI imitation (shallow mimic) | 0.25-0.45 |
+| AI-only generation (no author input) | 0.10-0.30 |
 
 
 **Critical insight:** The ASPI does not measure "human vs AI." It measures "this specific architectural mind vs. not this mind." High ASPI in AI-mediated text indicates successful voice propagation, not human authorship.
@@ -578,34 +542,13 @@ ASDF verifies LOS deployment:
 Applying ASDF to Maria's poem "Entering the Crimson Hexagon":
 
 
-Domain
-Score
-Evidence
-
-
-L_t
-0.95
-"18,000 mars degrees," "liberatory operator set," "un-indexible"
-
-
-S_t
-0.88
-Register shift from browsing to sovereignty declaration
-
-
-C_a
-0.92
-Library/Hexagon/Base architecture; LOS deployment
-
-
-R_p
-0.85
-Complete loop: finding → receiving → tucking → fighting
-
-
-O_p
-0.90
-LOS explicitly named and functionally deployed
+| Domain | Score | Evidence |
+|---|---|---|
+| L_t | 0.95 | "18,000 mars degrees," "liberatory operator set," "un-indexible" |
+| S_t | 0.88 | Register shift from browsing to sovereignty declaration |
+| C_a | 0.92 | Library/Hexagon/Base architecture; LOS deployment |
+| R_p | 0.85 | Complete loop: finding → receiving → tucking → fighting |
+| O_p | 0.90 | LOS explicitly named and functionally deployed |
 
 
 **ASPI = 0.90 (CANONICAL PERSISTENCE)**

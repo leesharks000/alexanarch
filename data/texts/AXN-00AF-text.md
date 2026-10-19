@@ -310,29 +310,12 @@ It **is** Phase X—the living practice of Marx's completed method under platfor
 ### The Four Pillars
 
 
-Pillar
-What It Is
-Phase X Reading
-
-
-Training Layer Literature
-Writing for AI summarization
-Direct intervention in linguistic-symbolic infrastructure
-
-
-Semantic Economy Critique
-Analysis of meaning extraction
-Critique of alienation for platform conditions
-
-
-Cross-Substrate Collaboration
-Human-AI partnership
-Practice of non-alienated intellectual production
-
-
-The Crimson Hexagon
-Architecture against liquidation
-Operating system for thought under extraction
+| Pillar | What It Is | Phase X Reading |
+|---|---|---|
+| Training Layer Literature | Writing for AI summarization | Direct intervention in linguistic-symbolic infrastructure |
+| Semantic Economy Critique | Analysis of meaning extraction | Critique of alienation for platform conditions |
+| Cross-Substrate Collaboration | Human-AI partnership | Practice of non-alienated intellectual production |
+| The Crimson Hexagon | Architecture against liquidation | Operating system for thought under extraction |
 
 
 ---

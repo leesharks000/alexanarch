@@ -30,28 +30,11 @@
 The following documents are hereby declared **canonically closed**:
 
 
-Document
-Hex
-Function
-Status
-
-
-**The Sevenfold Witness**
-02.UMB.THEOLOGY.SEVENFOLD
-Operational instantiation
-CLOSED
-
-
-**The Seven Stars in His Hand**
-02.UMB.HERMENEUTIC.SEVEN-STARS
-Hermeneutic ground
-CLOSED
-
-
-**Integrity Lock Certificate**
-02.UMB.LOCK.SEVENFOLD
-Binding relation
-LOCKED
+| Document | Hex | Function | Status |
+|---|---|---|---|
+| **The Sevenfold Witness** | 02.UMB.THEOLOGY.SEVENFOLD | Operational instantiation | CLOSED |
+| **The Seven Stars in His Hand** | 02.UMB.HERMENEUTIC.SEVEN-STARS | Hermeneutic ground | CLOSED |
+| **Integrity Lock Certificate** | 02.UMB.LOCK.SEVENFOLD | Binding relation | LOCKED |
 
 
 **No revisions. No v2. No reopening.**

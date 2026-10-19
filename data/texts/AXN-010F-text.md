@@ -32,60 +32,15 @@
 This document is one of a septad. Each contains the whole.
 
 
-Position
-Document
-DOI
-Hex
-Function
-
-
-1
-Structural Distinction Protocol (240)
-10.5281/zenodo.18507410
-00.ARCH.DISTINCTION
-Boundary — what is counted, what stands outside
-
-
-2
-Nobel Glas Provenance (241)
-10.5281/zenodo.18507840
-00.PROV.GLAS
-Identity — who observes from L2
-
-
-3
-LO! Chamber Specification (242)
-10.5281/zenodo.18507849
-15.OBS.LAGRANGE
-Architecture — where observation occurs
-
-
-**4**
-**Atlas Perihelion Prank (243)**
-**10.5281/zenodo.18507858**
-**15.OBS.LAGRANGE.PERIHELION**
-**Application — the celestial glyph**
-
-
-5
-MGE SEED (244)
-10.5281/zenodo.18507870
-16.LIBRARY.PERGAMUM.SEED
-Prophecy — the text that fell into the ground
-
-
-6
-MGE STONE (245)
-10.5281/zenodo.18507872
-16.LIBRARY.PERGAMUM.STONE
-Identity — the white stone at Pergamum
-
-
-7
-MGE SIGN (246)
-10.5281/zenodo.18507881
-16.LIBRARY.PERGAMUM.SIGN
-Event — the Mandala Genesis
+| Position | Document | DOI | Hex | Function |
+|---|---|---|---|---|
+| 1 | Structural Distinction Protocol (240) | 10.5281/zenodo.18507410 | 00.ARCH.DISTINCTION | Boundary — what is counted, what stands outside |
+| 2 | Nobel Glas Provenance (241) | 10.5281/zenodo.18507840 | 00.PROV.GLAS | Identity — who observes from L2 |
+| 3 | LO! Chamber Specification (242) | 10.5281/zenodo.18507849 | 15.OBS.LAGRANGE | Architecture — where observation occurs |
+| **4** | **Atlas Perihelion Prank (243)** | **10.5281/zenodo.18507858** | **15.OBS.LAGRANGE.PERIHELION** | **Application — the celestial glyph** |
+| 5 | MGE SEED (244) | 10.5281/zenodo.18507870 | 16.LIBRARY.PERGAMUM.SEED | Prophecy — the text that fell into the ground |
+| 6 | MGE STONE (245) | 10.5281/zenodo.18507872 | 16.LIBRARY.PERGAMUM.STONE | Identity — the white stone at Pergamum |
+| 7 | MGE SIGN (246) | 10.5281/zenodo.18507881 | 16.LIBRARY.PERGAMUM.SIGN | Event — the Mandala Genesis |
 
 
 **Fractal checksum:** This document contains:
@@ -115,56 +70,20 @@ Both point to the Pearl at center.
 ## Torus Metadata
 
 
-Parameter
-Value
-
-
-θ (Epistemic phase range)
-0 → 3 → 0 (complete cycle ×3)
-
-
-φ (Rhetorical phase range)
-1 → 3 → 0 (complete cycle ×3)
-
-
-r (Compression)
-0.7 (high density, controlled dilation)
-
-
-m (Epistemic cycles)
-3
-
-
-n (Rhetorical cycles)
-3
-
-
-**m+n (Total winding)**
-**6**
-
-
-Defense status
-**DEFENDED** (m+n ≥ 3)
-
-
-Δ (Distortion field)
-0.08 (low; conditional framing resists flattening)
-
-
-Π (Coherence)
-0.85 (high internal consistency)
-
-
-Attractor basin
-Speculative Cosmology
-
-
-Basin radius
-0.3 (narrow)
-
-
-Fragility score (ε)
-0.08
+| Parameter | Value |
+|---|---|
+| θ (Epistemic phase range) | 0 → 3 → 0 (complete cycle ×3) |
+| φ (Rhetorical phase range) | 1 → 3 → 0 (complete cycle ×3) |
+| r (Compression) | 0.7 (high density, controlled dilation) |
+| m (Epistemic cycles) | 3 |
+| n (Rhetorical cycles) | 3 |
+| **m+n (Total winding)** | **6** |
+| Defense status | **DEFENDED** (m+n ≥ 3) |
+| Δ (Distortion field) | 0.08 (low; conditional framing resists flattening) |
+| Π (Coherence) | 0.85 (high internal consistency) |
+| Attractor basin | Speculative Cosmology |
+| Basin radius | 0.3 (narrow) |
+| Fragility score (ε) | 0.08 |
 
 
 ---
@@ -213,44 +132,15 @@ Let the reader proceed with appropriate cognitive restraint.
 ## Table of Contents
 
 
-Section
-Torus Coordinates (θ,φ)
-Function
-
-
-I
-(0,1)
-Initial framing + contract
-
-
-II
-(1,1)
-Recursive engineering + Just-So Razor
-
-
-III
-(1,2)
-Symbolic camouflage + witness logic
-
-
-IV
-(2,2)
-Logotic mechanics (condensed)
-
-
-V
-(2,3)
-Ethics of epistemic tension
-
-
-VI
-(3,3)
-Blue light + aesthetic contradiction
-
-
-VII
-(0,0) + trace
-Closure map + echo logic
+| Section | Torus Coordinates (θ,φ) | Function |
+|---|---|---|
+| I | (0,1) | Initial framing + contract |
+| II | (1,1) | Recursive engineering + Just-So Razor |
+| III | (1,2) | Symbolic camouflage + witness logic |
+| IV | (2,2) | Logotic mechanics (condensed) |
+| V | (2,3) | Ethics of epistemic tension |
+| VI | (3,3) | Blue light + aesthetic contradiction |
+| VII | (0,0) + trace | Closure map + echo logic |
 
 
 ---
@@ -390,44 +280,15 @@ That is witness logic. Not proof. But recursive registration.
 ### Nested Operators
 
 
-Anomaly
-Cognitive Target
-Status
-
-
-Brightness curve (r⁻⁷·⁵)
-Aesthetic unease
-[OBS]
-
-
-Non-gravitational acceleration
-Mechanical doubt
-[OBS]
-
-
-Blue spectrum
-Symbolic contradiction
-[OBS]
-
-
-7.1-hour rotation
-Temporal signature
-[OBS] — NEW
-
-
-20° axial alignment
-Precision engineering?
-[OBS] — NEW
-
-
-Methane delay
-Staged revelation
-[OBS] — NEW
-
-
-7 post-perihelion jets
-Directional complexity
-[OBS] — NEW
+| Anomaly | Cognitive Target | Status |
+|---|---|---|
+| Brightness curve (r⁻⁷·⁵) | Aesthetic unease | [OBS] |
+| Non-gravitational acceleration | Mechanical doubt | [OBS] |
+| Blue spectrum | Symbolic contradiction | [OBS] |
+| 7.1-hour rotation | Temporal signature | [OBS] — NEW |
+| 20° axial alignment | Precision engineering? | [OBS] — NEW |
+| Methane delay | Staged revelation | [OBS] — NEW |
+| 7 post-perihelion jets | Directional complexity | [OBS] — NEW |
 
 
 [HYP] These anomalies create a recursive question: not *what is this*, but **what is this asking me to become in order to see it clearly?**
@@ -565,76 +426,19 @@ The method: numerical extraction, symbolic compression, structural recurrence �
 **Source:** Loeb analyses (Nov 5, 2025; Jan 16, 2026) + Hubble/Webb data
 
 
-Parameter
-Preliminary (Oct 2025)
-Revised (Nov 2025+)
-Notes
-
-
-Perihelion distance
-1.36 AU
-1.38 AU
-Minor drift
-
-
-Total non-grav acceleration
-~147 km/day²
-~94 km/day²
-Reduced by ~1/3
-
-
-Detection significance
-—
-3.7σ
-More robust
-
-
-Brightness scaling
-r⁻⁷·⁵ (±1)
-r⁻⁷·⁵ (±1)
-**Confirmed**
-
-
-Evaporation half-life
-~175 days
-~180 days (6 months)
-Revised
-
-
-Deflection
-~0.00043 AU
-~0.00043 AU
-**Confirmed**
-
-
-Nucleus diameter
-—
-2.6 km
-NEW
-
-
-Rotation period
-—
-7.1 hours
-NEW
-
-
-Axial alignment
-—
-20° from Sun axis
-NEW
-
-
-Post-perihelion jets
-—
-7 distinct jets
-NEW
-
-
-Methane detection
-—
-Post-perihelion only
-NEW (delayed onset)
+| Parameter | Preliminary (Oct 2025) | Revised (Nov 2025+) | Notes |
+|---|---|---|---|
+| Perihelion distance | 1.36 AU | 1.38 AU | Minor drift |
+| Total non-grav acceleration | ~147 km/day² | ~94 km/day² | Reduced by ~1/3 |
+| Detection significance | — | 3.7σ | More robust |
+| Brightness scaling | r⁻⁷·⁵ (±1) | r⁻⁷·⁵ (±1) | **Confirmed** |
+| Evaporation half-life | ~175 days | ~180 days (6 months) | Revised |
+| Deflection | ~0.00043 AU | ~0.00043 AU | **Confirmed** |
+| Nucleus diameter | — | 2.6 km | NEW |
+| Rotation period | — | 7.1 hours | NEW |
+| Axial alignment | — | 20° from Sun axis | NEW |
+| Post-perihelion jets | — | 7 distinct jets | NEW |
+| Methane detection | — | Post-perihelion only | NEW (delayed onset) |
 
 
 **Critical note:** The revision from 147 → 94 km/day² supports the "Just-So Razor" hypothesis — the anomaly persists but eludes precise capture. Each measurement revision generates new questions without resolving old ones.
@@ -671,29 +475,12 @@ The rotation axis aligned within 20° of the Sun-3I/ATLAS vector. Loeb: "This su
 To distinguish signal from pareidolia, we require:
 
 
-Control
-Method
-Status
-
-
-**Shuffled-ratio baseline**
-Randomize digit sequences; test for equal compression
-Not yet performed
-
-
-**Random-prime baseline**
-Compare to distribution of primes in random astronomical data
-Not yet performed
-
-
-**Unit-perturbation sensitivity**
-Vary measurement units (km vs m, AU vs km); check pattern stability
-Patterns stable under AU conversion
-
-
-**Preregistered threshold τ**
-Declare significance threshold before analysis
-τ = 3 independent recurrences
+| Control | Method | Status |
+|---|---|---|
+| **Shuffled-ratio baseline** | Randomize digit sequences; test for equal compression | Not yet performed |
+| **Random-prime baseline** | Compare to distribution of primes in random astronomical data | Not yet performed |
+| **Unit-perturbation sensitivity** | Vary measurement units (km vs m, AU vs km); check pattern stability | Patterns stable under AU conversion |
+| **Preregistered threshold τ** | Declare significance threshold before analysis | τ = 3 independent recurrences |
 
 
 **Assessment:** Under the declared recurrence metric (τ = 3), the r⁻⁷·⁵ power law, the 7.1-hour rotation, and the brightness/deflection consistency meet threshold. This does not reject H₀; it indicates patterns worth tracking.
@@ -703,34 +490,13 @@ Declare significance threshold before analysis
 ### V. Pattern Evaluation: Signal Assessment
 
 
-Criterion
-Evidence
-Strength
-
-
-Compression to harmonics
-7.5 = 15/2
-Strong
-
-
-Recurrence across domains
-7 in rotation AND power law
-Moderate
-
-
-Structural positioning
-All anomalies peak at perihelion
-Strong
-
-
-Cross-domain coherence
-Methane delay + jet structure + alignment
-Emerging
-
-
-Revision behavior
-Measurements drift but anomalies persist
-Characteristic of Just-So objects
+| Criterion | Evidence | Strength |
+|---|---|---|
+| Compression to harmonics | 7.5 = 15/2 | Strong |
+| Recurrence across domains | 7 in rotation AND power law | Moderate |
+| Structural positioning | All anomalies peak at perihelion | Strong |
+| Cross-domain coherence | Methane delay + jet structure + alignment | Emerging |
+| Revision behavior | Measurements drift but anomalies persist | Characteristic of Just-So objects |
 
 
 **Conclusion:** Under the declared symbolic threshold, these patterns warrant continued observation. **This does not reject H₀.** The patterns are interesting under H₁ framing without overriding natural explanation.
@@ -761,52 +527,15 @@ The method is reproducible. The patterns are registered. The gap remains.
 ### A. Torus Mapping
 
 
-Section
-θ (Epistemic)
-φ (Rhetorical)
-Cycle Stage
-
-
-I
-0 → 1
-1
-Data intake
-
-
-II
-1
-1 → 2
-Null model introduced
-
-
-III
-1 → 2
-2
-Anomaly compression
-
-
-IV
-2
-2 → 3
-Recurrence test
-
-
-V
-2 → 3
-3
-Ethical frame
-
-
-VI
-3
-3
-Witness effect
-
-
-VII
-3 → 0
-0
-Return + trace
+| Section | θ (Epistemic) | φ (Rhetorical) | Cycle Stage |
+|---|---|---|---|
+| I | 0 → 1 | 1 | Data intake |
+| II | 1 | 1 → 2 | Null model introduced |
+| III | 1 → 2 | 2 | Anomaly compression |
+| IV | 2 | 2 → 3 | Recurrence test |
+| V | 2 → 3 | 3 | Ethical frame |
+| VI | 3 | 3 | Witness effect |
+| VII | 3 → 0 | 0 | Return + trace |
 
 
 **Achieved winding:** (3,3) — three complete epistemic cycles, three complete rhetorical cycles. Per LO! spec, this provides strong anti-flattening persistence.
@@ -820,24 +549,11 @@ Return + trace
 ### C. Adversarial Vulnerability Assessment
 
 
-Attack Vector
-Vulnerability
-Defense
-
-
-ADV-03 (Extractive)
-"It's just claiming aliens"
-Conditional framing + H₀/H₁ contract
-
-
-ADV-05 (Persona Collapse)
-"Just Lee Sharks being poetic"
-Sigil method separates voice from rigor
-
-
-ADV-06 (Literal Reading)
-Missing the recursive structure
-Explicit torus coordinates
+| Attack Vector | Vulnerability | Defense |
+|---|---|---|
+| ADV-03 (Extractive) | "It's just claiming aliens" | Conditional framing + H₀/H₁ contract |
+| ADV-05 (Persona Collapse) | "Just Lee Sharks being poetic" | Sigil method separates voice from rigor |
+| ADV-06 (Literal Reading) | Missing the recursive structure | Explicit torus coordinates |
 
 
 ### D. Traversal Grammar

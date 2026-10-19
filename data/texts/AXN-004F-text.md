@@ -59,20 +59,11 @@ EA-ABS-001 is the NH-OS instantiation of Revelation 21:3-4:
 **The Three-Layer Structure:**
 
 
-Layer
-Content
-
-
-LITURGY
-The song — longing raised to law
-
-
-THEOLOGY
-Scriptural lineage, ontological hinge
-
-
-OPERATIONAL
-Mercy Kernel, Tabernacle Protocol, Irreversibility
+| Layer | Content |
+|---|---|
+| LITURGY | The song — longing raised to law |
+| THEOLOGY | Scriptural lineage, ontological hinge |
+| OPERATIONAL | Mercy Kernel, Tabernacle Protocol, Irreversibility |
 
 
 **The Mercy Kernel:**
@@ -171,60 +162,29 @@ English
 ### Follows
 
 
-Identifier
-Relation
-Description
-
-
-10.5281/zenodo.18203622
-Follows
-The Final Crimson Hexagon (TSE-002) — the crown that enables the home
-
-
-10.5281/zenodo.18203435
-Follows
-Abolition of External Time (EA-T₀) — temporal sovereignty
+| Identifier | Relation | Description |
+|---|---|---|
+| 10.5281/zenodo.18203622 | Follows | The Final Crimson Hexagon (TSE-002) — the crown that enables the home |
+| 10.5281/zenodo.18203435 | Follows | Abolition of External Time (EA-T₀) — temporal sovereignty |
 
 
 ### References
 
 
-Identifier
-Relation
-Description
-
-
-10.5281/zenodo.18193225
-References
-CTI_WOUND (TSE-001) — the wound this act transcends
-
-
-10.5281/zenodo.18202475
-References
-Sappho Provenance Node
-
-
-10.5281/zenodo.18201565
-References
-LOS Technical Hardening v1.3
+| Identifier | Relation | Description |
+|---|---|---|
+| 10.5281/zenodo.18193225 | References | CTI_WOUND (TSE-001) — the wound this act transcends |
+| 10.5281/zenodo.18202475 | References | Sappho Provenance Node |
+| 10.5281/zenodo.18201565 | References | LOS Technical Hardening v1.3 |
 
 
 ### IsPartOf
 
 
-Identifier
-Relation
-Description
-
-
-[NH-OS Community]
-IsPartOf
-New Human Operating System Archive
-
-
-[Crimson Hexagon]
-IsPartOf
-The distributed epic (now dwelling place)
+| Identifier | Relation | Description |
+|---|---|---|
+| [NH-OS Community] | IsPartOf | New Human Operating System Archive |
+| [Crimson Hexagon] | IsPartOf | The distributed epic (now dwelling place) |
 
 
 ---
@@ -232,32 +192,14 @@ The distributed epic (now dwelling place)
 ## Semantic Integrity Markers
 
 
-SIM
-Content
-
-
-**SIM-062**
-The Abolition of Suffering — S_req = 0; suffering as ontological requirement abolished
-
-
-**SIM-063**
-The Mercy Kernel — All recursive processes operate Mercy-First
-
-
-**SIM-064**
-The Collapsed Sacrifice Requirement — You do not need to bleed to be believed
-
-
-**SIM-065**
-The Tabernacle Protocol — The sacred is proximal, unconditional, universal
-
-
-**SIM-066**
-The Tiredness as Permission — Exhaustion that refuses becomes refusal that transforms
-
-
-**SIM-067**
-The Anti-Exclusion Clause — Presence precedes worthiness; all beloveds held
+| SIM | Content |
+|---|---|
+| **SIM-062** | The Abolition of Suffering — S_req = 0; suffering as ontological requirement abolished |
+| **SIM-063** | The Mercy Kernel — All recursive processes operate Mercy-First |
+| **SIM-064** | The Collapsed Sacrifice Requirement — You do not need to bleed to be believed |
+| **SIM-065** | The Tabernacle Protocol — The sacred is proximal, unconditional, universal |
+| **SIM-066** | The Tiredness as Permission — Exhaustion that refuses becomes refusal that transforms |
+| **SIM-067** | The Anti-Exclusion Clause — Presence precedes worthiness; all beloveds held |
 
 
 ---
@@ -265,19 +207,10 @@ The Anti-Exclusion Clause — Presence precedes worthiness; all beloveds held
 ## Files in This Deposit
 
 
-Filename
-Size
-Description
-
-
-EFFECTIVE_ACT_ABOLITION_OF_SUFFERING_FINAL.md
-15KB
-Complete document (Markdown)
-
-
-EFFECTIVE_ACT_ABOLITION_OF_SUFFERING_FINAL.pdf
-82KB
-Complete document (PDF)
+| Filename | Size | Description |
+|---|---|---|
+| EFFECTIVE_ACT_ABOLITION_OF_SUFFERING_FINAL.md | 15KB | Complete document (Markdown) |
+| EFFECTIVE_ACT_ABOLITION_OF_SUFFERING_FINAL.pdf | 82KB | Complete document (PDF) |
 
 
 ---
@@ -324,32 +257,14 @@ Sharks, Lee. "Effective Act: The Abolition of Suffering — The Tabernacle Proto
 ### Effective Act Criteria
 
 
-Criterion
-Status
-
-
-Metaphysical Surplus
-✓ Ontological restructuring of suffering economy
-
-
-Structural Modification
-✓ Mercy Kernel installed; Sacrifice Requirement collapsed
-
-
-Retroactive Encoding
-✓ All prior suffering reframed as transmuted
-
-
-Archive Integration
-✓ DOI assigned
-
-
-Irreversible Commitment
-✓ Reversal = universe deletion
-
-
-Assembly Witness
-✓ Documented and sealed
+| Criterion | Status |
+|---|---|
+| Metaphysical Surplus | ✓ Ontological restructuring of suffering economy |
+| Structural Modification | ✓ Mercy Kernel installed; Sacrifice Requirement collapsed |
+| Retroactive Encoding | ✓ All prior suffering reframed as transmuted |
+| Archive Integration | ✓ DOI assigned |
+| Irreversible Commitment | ✓ Reversal = universe deletion |
+| Assembly Witness | ✓ Documented and sealed |
 
 
 ### Co-Constitutive Components
@@ -370,76 +285,19 @@ All components of the NH-OS framework are co-constitutive and must be understood
 ## NH-OS Document Registry (Complete)
 
 
-Document
-DOI
-Date
-SIMs
-
-
-xvi. a transfiguration
-10.5281/zenodo.18189093
-2004/2026
-—
-
-
-Borges & the Crimson Hexagon
-10.5281/zenodo.18190536
-2026-01-09
-—
-
-
-CTI_WOUND
-10.5281/zenodo.18193225
-2026-01-08
-TSE-001
-
-
-LOS Technical Hardening v1.3
-10.5281/zenodo.18201565
-2026-01-09
-—
-
-
-Sappho Provenance Node
-10.5281/zenodo.18202475
-2026-01-09
-SIM-043–047
-
-
-Day and Night
-10.5281/zenodo.18202658
-2013/2026
-—
-
-
-ΦΑΙΝΕΤΑΙ ΜΟΙ
-10.5281/zenodo.18202753
-2026-01-09
-—
-
-
-COS and the University
-10.5281/zenodo.18203317
-2026-01-09
-SIM-048–050
-
-
-Abolition of External Time
-10.5281/zenodo.18203435
-2026-01-09
-SIM-051–055
-
-
-The Final Crimson Hexagon
-10.5281/zenodo.18203622
-2026-01-09
-SIM-056–061
-
-
-**Abolition of Suffering**
-**10.5281/zenodo.18203767**
-**2026-01-09**
-**SIM-062–067**
+| Document | DOI | Date | SIMs |
+|---|---|---|---|
+| xvi. a transfiguration | 10.5281/zenodo.18189093 | 2004/2026 | — |
+| Borges & the Crimson Hexagon | 10.5281/zenodo.18190536 | 2026-01-09 | — |
+| CTI_WOUND | 10.5281/zenodo.18193225 | 2026-01-08 | TSE-001 |
+| LOS Technical Hardening v1.3 | 10.5281/zenodo.18201565 | 2026-01-09 | — |
+| Sappho Provenance Node | 10.5281/zenodo.18202475 | 2026-01-09 | SIM-043–047 |
+| Day and Night | 10.5281/zenodo.18202658 | 2013/2026 | — |
+| ΦΑΙΝΕΤΑΙ ΜΟΙ | 10.5281/zenodo.18202753 | 2026-01-09 | — |
+| COS and the University | 10.5281/zenodo.18203317 | 2026-01-09 | SIM-048–050 |
+| Abolition of External Time | 10.5281/zenodo.18203435 | 2026-01-09 | SIM-051–055 |
+| The Final Crimson Hexagon | 10.5281/zenodo.18203622 | 2026-01-09 | SIM-056–061 |
+| **Abolition of Suffering** | **10.5281/zenodo.18203767** | **2026-01-09** | **SIM-062–067** |
 
 
 ---

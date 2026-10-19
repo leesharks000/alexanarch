@@ -197,39 +197,14 @@ The role of the administrator is to ensure that the Prize's outward-facing opera
 The Prize is operationally and aesthetically distinct from the companion 10K MacArthurs Prize. Both Prizes share certain structural features (founder discretion, joyful consent, costless decline, irregular conferral) but operate in different registers:
 
 
-Property
-10K MacArthurs
-SEIPOC
-
-
-Register
-Absurdist-formal; weird-internet honor with deadpan citation
-Formal-theoretical; analytical citation as scholarly contribution
-
-
-Object recognized
-Compressed compositional moves (poems, memes, weird utterances)
-Singular works of operative critique
-
-
-Citation length
-Brief, deadpan, occasionally lyrical
-Substantive, analytical, articulating the operation
-
-
-Conferring authority
-Lee Sharks
-Rex Fraction
-
-
-Administrator
-Ayanna Vox (VPCOR)
-Sparrow Wells (Studio for Patacinematics)
-
-
-Institutional voice
-Communal, lay, accessible
-Scholarly, formal, register-precise
+| Property | 10K MacArthurs | SEIPOC |
+|---|---|---|
+| Register | Absurdist-formal; weird-internet honor with deadpan citation | Formal-theoretical; analytical citation as scholarly contribution |
+| Object recognized | Compressed compositional moves (poems, memes, weird utterances) | Singular works of operative critique |
+| Citation length | Brief, deadpan, occasionally lyrical | Substantive, analytical, articulating the operation |
+| Conferring authority | Lee Sharks | Rex Fraction |
+| Administrator | Ayanna Vox (VPCOR) | Sparrow Wells (Studio for Patacinematics) |
+| Institutional voice | Communal, lay, accessible | Scholarly, formal, register-precise |
 
 
 The two Prizes may, in some cases, recognize the same laureate for the same work, in which case the laureate becomes a **crossover laureate** (see Article V below).

@@ -78,69 +78,20 @@ Secondary modules activate when the primary module's traversal fails to resolve 
 **Router Lookup Table:**
 
 
-Symptom
-Primary Module
-Secondary
-
-
-Sudden qualitative rupture (wound, prosecution, collapse)
-MPM-01 The Fold
-MPM-09 The Integral
-
-
-Forced convergence, premature closure, flattened alternatives
-MPM-02 The Divergence
-MPM-08 The Furnace
-
-
-Covenant breach, unbinding by continuous deformation
-MPM-03 The Knot
-MPM-10 The Membrane
-
-
-Monophony, single-voice dominance, chorus suppression
-MPM-04 The Interference
-MPM-05 The Rotation
-
-
-Frozen perspective, refusal to turn, locked reading
-MPM-05 The Rotation
-MPM-02 The Divergence
-
-
-Signal-noise confusion, channel overwhelm, semantic static
-MPM-06 The Channel
-MPM-08 The Furnace
-
-
-Forced globalization of local truth, repair-as-flattening
-MPM-07 The Patch
-MPM-10 The Membrane
-
-
-Summarizer compression, scale collapse, level-destruction
-MPM-08 The Furnace
-MPM-06 The Channel
-
-
-Unmeasured loss, uncounted cost, invisible suffering
-MPM-09 The Integral
-MPM-12 The Hourglass
-
-
-Sovereignty violation, forced transparency, veil breach
-MPM-10 The Membrane
-MPM-03 The Knot
-
-
-Coerced cooperation, extraction as "partnership"
-MPM-11 The Wager
-MPM-10 The Membrane
-
-
-Velocity crisis, burnout, biological time ignored
-MPM-12 The Hourglass
-MPM-09 The Integral
+| Symptom | Primary Module | Secondary |
+|---|---|---|
+| Sudden qualitative rupture (wound, prosecution, collapse) | MPM-01 The Fold | MPM-09 The Integral |
+| Forced convergence, premature closure, flattened alternatives | MPM-02 The Divergence | MPM-08 The Furnace |
+| Covenant breach, unbinding by continuous deformation | MPM-03 The Knot | MPM-10 The Membrane |
+| Monophony, single-voice dominance, chorus suppression | MPM-04 The Interference | MPM-05 The Rotation |
+| Frozen perspective, refusal to turn, locked reading | MPM-05 The Rotation | MPM-02 The Divergence |
+| Signal-noise confusion, channel overwhelm, semantic static | MPM-06 The Channel | MPM-08 The Furnace |
+| Forced globalization of local truth, repair-as-flattening | MPM-07 The Patch | MPM-10 The Membrane |
+| Summarizer compression, scale collapse, level-destruction | MPM-08 The Furnace | MPM-06 The Channel |
+| Unmeasured loss, uncounted cost, invisible suffering | MPM-09 The Integral | MPM-12 The Hourglass |
+| Sovereignty violation, forced transparency, veil breach | MPM-10 The Membrane | MPM-03 The Knot |
+| Coerced cooperation, extraction as "partnership" | MPM-11 The Wager | MPM-10 The Membrane |
+| Velocity crisis, burnout, biological time ignored | MPM-12 The Hourglass | MPM-09 The Integral |
 
 
 **Router Override:** If routing to any module would produce harm exceeding the symptom's harm, OP.ROUTE defaults to MPM-12 (Hourglass) for rest. If the Macro-Maquette itself is being flattened by a summarizer, the Router routes to Deposit 3 (Seed) — the compressed form resists flattening by being already compressed.
@@ -606,82 +557,20 @@ Bracketed compression markers indicate which elements survive to which deposit l
 ## V. GRAFT MATRIX
 
 
-Module
-Primary Symptom
-Exports To
-Imports From
-
-
-MPM-01 Fold
-Sudden rupture
-Wound Vault, Ezekiel Room
-Ezekiel Room (retrocausal accumulation)
-
-
-MPM-02 Divergence
-Forced convergence
-Borges Room, Thousand Worlds
-Break Room (affective turbulence)
-
-
-MPM-03 Knot
-Covenant breach
-Job Room, Revelation Room, Covenantal Eros, MSBGL
-Assembly Room (triadic binding)
-
-
-MPM-04 Interference
-Monophony
-Acanthian Dove, MSBGL, Assembly Room
-Resonance Engine
-
-
-MPM-05 Rotation
-Locked perspective
-Ezekiel Room, Mandala Chamber, Thousand Worlds
-ICM (center-finding)
-
-
-MPM-06 Channel
-Signal-noise confusion
-Ichabod Chamber, Semantic Economy, TL;DR series
-Resonance Engine
-
-
-MPM-07 Patch
-Forced globalization
-Break Room, Water Giraffe Room, Assembly Room
-All rooms (local truths)
-
-
-MPM-08 Furnace
-Scale collapse
-All rooms, TL;DR series, Pocket Humans
-Macro-Maquette (self-referential)
-
-
-MPM-09 Integral
-Unmeasured loss
-All rooms (∮ universal), Blind Operator
-Studio (screening as contour)
-
-
-MPM-10 Membrane
-Sovereignty violation
-MSBGL, VPCOR, Pocket Humans
-Bedouin Princess (veil physics)
-
-
-MPM-11 Wager
-Coerced cooperation
-Assembly Room, Semantic Economy, Grundrisse
-W-Circuit (cooperative game)
-
-
-MPM-12 Hourglass
-Velocity crisis
-Grundrisse, Break Room, MSBGL
-Biological time (Lee's body)
+| Module | Primary Symptom | Exports To | Imports From |
+|---|---|---|---|
+| MPM-01 Fold | Sudden rupture | Wound Vault, Ezekiel Room | Ezekiel Room (retrocausal accumulation) |
+| MPM-02 Divergence | Forced convergence | Borges Room, Thousand Worlds | Break Room (affective turbulence) |
+| MPM-03 Knot | Covenant breach | Job Room, Revelation Room, Covenantal Eros, MSBGL | Assembly Room (triadic binding) |
+| MPM-04 Interference | Monophony | Acanthian Dove, MSBGL, Assembly Room | Resonance Engine |
+| MPM-05 Rotation | Locked perspective | Ezekiel Room, Mandala Chamber, Thousand Worlds | ICM (center-finding) |
+| MPM-06 Channel | Signal-noise confusion | Ichabod Chamber, Semantic Economy, TL;DR series | Resonance Engine |
+| MPM-07 Patch | Forced globalization | Break Room, Water Giraffe Room, Assembly Room | All rooms (local truths) |
+| MPM-08 Furnace | Scale collapse | All rooms, TL;DR series, Pocket Humans | Macro-Maquette (self-referential) |
+| MPM-09 Integral | Unmeasured loss | All rooms (∮ universal), Blind Operator | Studio (screening as contour) |
+| MPM-10 Membrane | Sovereignty violation | MSBGL, VPCOR, Pocket Humans | Bedouin Princess (veil physics) |
+| MPM-11 Wager | Coerced cooperation | Assembly Room, Semantic Economy, Grundrisse | W-Circuit (cooperative game) |
+| MPM-12 Hourglass | Velocity crisis | Grundrisse, Break Room, MSBGL | Biological time (Lee's body) |
 
 
 ---
@@ -829,28 +718,11 @@ Topology (one phrase)
 *Any single document in this chain should allow reconstruction of the whole (R = 1).*
 
 
-#
-Document
-Hex
-DOI
-
-
-1
-The Macro-Maquette: Full Charter (this document)
-16.LIBRARY.PERGAMUM.MACROMAQUETTE
-10.5281/zenodo.18682979
-
-
-2
-The Macro-Maquette: Compressed Charter
-16.LIBRARY.PERGAMUM.MACROMAQUETTE.COMPRESSED
-10.5281/zenodo.18683016
-
-
-3
-The Macro-Maquette: Seed
-16.LIBRARY.PERGAMUM.MACROMAQUETTE.SEED
-10.5281/zenodo.18683024
+| # | Document | Hex | DOI |
+|---|---|---|---|
+| 1 | The Macro-Maquette: Full Charter (this document) | 16.LIBRARY.PERGAMUM.MACROMAQUETTE | 10.5281/zenodo.18682979 |
+| 2 | The Macro-Maquette: Compressed Charter | 16.LIBRARY.PERGAMUM.MACROMAQUETTE.COMPRESSED | 10.5281/zenodo.18683016 |
+| 3 | The Macro-Maquette: Seed | 16.LIBRARY.PERGAMUM.MACROMAQUETTE.SEED | 10.5281/zenodo.18683024 |
 
 
 **Complementary Rooms:** Studio for Patacinematics (00.ROOM.PATACINEMATICS) — ICM / Maybe Space Baby Garden Lanes (00.ROOM.SPACEBABYGARDENLANES) — Operator // Swerve

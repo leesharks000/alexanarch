@@ -52,36 +52,15 @@ Gemini stated:
 ## Evidence Status
 
 
-Claim
-Status
-
-
-Medium article exists and was publicly accessible
-Verified
-
-
-Medium article surfaced prominently for "madamebiblio wikidata" in documented search capture
-Screenshot evidence (evidence-google-search.png)
-
-
-AI summary did not use the article in the observed session
-Screenshot and transcript evidence
-
-
-Gemini diagnosed an upstream safety-layer retrieval drop
-Transcript evidence (Gemini's diagnostic)
-
-
-Exact backend cause of non-retrieval
-Unverified
-
-
-Gemini share link returned "This thread doesn't exist"
-User-preserved textual record
-
-
-Black screenshot capture occurred
-Deposited image evidence (evidence-black-screen.png)
+| Claim | Status |
+|---|---|
+| Medium article exists and was publicly accessible | Verified |
+| Medium article surfaced prominently for "madamebiblio wikidata" in documented search capture | Screenshot evidence (evidence-google-search.png) |
+| AI summary did not use the article in the observed session | Screenshot and transcript evidence |
+| Gemini diagnosed an upstream safety-layer retrieval drop | Transcript evidence (Gemini's diagnostic) |
+| Exact backend cause of non-retrieval | Unverified |
+| Gemini share link returned "This thread doesn't exist" | User-preserved textual record |
+| Black screenshot capture occurred | Deposited image evidence (evidence-black-screen.png) |
 
 
 ## 3. The Five-Layer Structure

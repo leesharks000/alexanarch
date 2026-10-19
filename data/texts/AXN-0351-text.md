@@ -165,106 +165,20 @@ term, abbreviation, category, canonical_definition
 ## Progress Tracking
 
 
-Phase
-Step
-Status
-Output File
-Records Processed
-Notes
-
-
-1
-1.1 Metadata pull
-COMPLETE
-termindex-metadata-raw.json
-845/845
-845 records, 6,256 unique kw
-
-
-1
-1.2 Term extraction
-COMPLETE
-termindex-metadata-terms.json
-845/845
-1,524 terms (count>=2), 5,951 total
-
-
-1
-1.3 Canonicalization
-COMPLETE
-termindex-tiered.json
-845/845
-178 Tier 1, 332 Tier 2, cross-ref with registry
-
-
-2
-2.1 File download
-COMPLETE
-termindex-file-progress.json
-735/800
-444 new Tier 1, 540 new Tier 2 from file contents
-
-
-2
-2.2 Batch processing
-COMPLETE
-termindex-file-progress.json
-735/800
-65 records had download failures
-
-
-2
-2.3 Merge
-PENDING
-termindex-merged.json
-—
-Needs noise filtering + human review
-
-
-3
-3.1 Human review
-PENDING
-—
-—
-~2,000 terms for review
-
-
-3
-3.2 Cross-reference
-COMPLETE
-termindex-crossref.json
-—
-129/131 registry queries matched
-
-
-3
-3.3 Final index
-PENDING
-termindex-v1.0.json
-—
-After human review
-
-
-4
-4.1 Deposit
-IN PROGRESS
-—
-—
-Initial deposit with raw data
-
-
-4
-4.2 Surface
-NOT STARTED
-—
-—
-
-
-5
-5.1 MPAI generation
-NOT STARTED
-—
-—
+| Phase | Step | Status | Output File | Records Processed | Notes |
+|---|---|---|---|---|---|
+| 1 | 1.1 Metadata pull | COMPLETE | termindex-metadata-raw.json | 845/845 | 845 records, 6,256 unique kw |
+| 1 | 1.2 Term extraction | COMPLETE | termindex-metadata-terms.json | 845/845 | 1,524 terms (count>=2), 5,951 total |
+| 1 | 1.3 Canonicalization | COMPLETE | termindex-tiered.json | 845/845 | 178 Tier 1, 332 Tier 2, cross-ref with registry |
+| 2 | 2.1 File download | COMPLETE | termindex-file-progress.json | 735/800 | 444 new Tier 1, 540 new Tier 2 from file contents |
+| 2 | 2.2 Batch processing | COMPLETE | termindex-file-progress.json | 735/800 | 65 records had download failures |
+| 2 | 2.3 Merge | PENDING | termindex-merged.json | — | Needs noise filtering + human review |
+| 3 | 3.1 Human review | PENDING | — | — | ~2,000 terms for review |
+| 3 | 3.2 Cross-reference | COMPLETE | termindex-crossref.json | — | 129/131 registry queries matched |
+| 3 | 3.3 Final index | PENDING | termindex-v1.0.json | — | After human review |
+| 4 | 4.1 Deposit | IN PROGRESS | — | — | Initial deposit with raw data |
+| 4 | 4.2 Surface | NOT STARTED | — | — |  |
+| 5 | 5.1 MPAI generation | NOT STARTED | — | — |  |
 
 
 ---

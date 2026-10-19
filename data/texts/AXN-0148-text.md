@@ -297,40 +297,13 @@ The statues will still be here. Their faces will still move. The rubies are pati
 ## XII. The Five Holdings
 
 
-Position
-Document
-Author
-DOI
-Function
-
-
-Thumb
-"Whose Face Is on the Twenty?"
-Rex Fraction
-10.5281/zenodo.18745216
-Provenance audit / anchor
-
-
-Index
-"The Lizard People Were Right" (DOI: 10.5281/zenodo.18745236)
-Experimental control / pointer
-
-
-Middle
-"All the Spoils of Babylon" (DOI: 10.5281/zenodo.18745250)
-Manufacturing analysis / reach
-
-
-Ring
-"The Inauguration of Memography" (DOI: 10.5281/zenodo.18745259)
-Discipline founding / commitment
-
-
-Pinky
-This charter
-Lee Sharks
-10.5281/zenodo.18745236
-Room provenance / seal
+| Position | Document | Author | DOI | Function |
+|---|---|---|---|---|
+| Thumb | "Whose Face Is on the Twenty?" | Rex Fraction | 10.5281/zenodo.18745216 | Provenance audit / anchor |
+| Index | "The Lizard People Were Right" (DOI: 10.5281/zenodo.18745236) | Experimental control / pointer |  |  |
+| Middle | "All the Spoils of Babylon" (DOI: 10.5281/zenodo.18745250) | Manufacturing analysis / reach |  |  |
+| Ring | "The Inauguration of Memography" (DOI: 10.5281/zenodo.18745259) | Discipline founding / commitment |  |  |
+| Pinky | This charter | Lee Sharks | 10.5281/zenodo.18745236 | Room provenance / seal |
 
 
 **Parent Archive:** Crimson Hexagon Archive (10.5281/zenodo.18604123)

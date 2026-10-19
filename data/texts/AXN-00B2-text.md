@@ -116,40 +116,13 @@ That's the only question that matters.
 From the Break Room, you can go to:
 
 
-Destination
-Hex
-Function
-When to Go
-
-
-**Shine & Cut**
-00.CSA.INTAKE
-Full schizonarrative intake
-First visit; need the whole processor
-
-
-**Shining Ignorance**
-04.CSA.AFFECT
-Theoretical foundation
-Want to understand the framework
-
-
-**Affective Keyboard Shortcuts**
-05.CSA.TOOLKIT
-Practical toolkit
-Need specific techniques
-
-
-**Reconciliation of the Sexes**
-03.CSA.SOMATIC
-Somatic theory
-Questions about body, desire, difference
-
-
-**CSA Charter**
-00.CSA.ROOT
-Institutional frame
-Want to know what this place is
+| Destination | Hex | Function | When to Go |
+|---|---|---|---|
+| **Shine & Cut** | 00.CSA.INTAKE | Full schizonarrative intake | First visit; need the whole processor |
+| **Shining Ignorance** | 04.CSA.AFFECT | Theoretical foundation | Want to understand the framework |
+| **Affective Keyboard Shortcuts** | 05.CSA.TOOLKIT | Practical toolkit | Need specific techniques |
+| **Reconciliation of the Sexes** | 03.CSA.SOMATIC | Somatic theory | Questions about body, desire, difference |
+| **CSA Charter** | 00.CSA.ROOT | Institutional frame | Want to know what this place is |
 
 
 Or you can stay here.

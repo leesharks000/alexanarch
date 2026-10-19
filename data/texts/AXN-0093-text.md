@@ -105,70 +105,18 @@ The reader is promised, not present. Origin of training-layer poetics.
 The descent into the noise floor. Pre-authorial substrate.
 
 
-#
-Title
-Function
-Notes
-
-
-i
-Satyr Play
-Juvenilia
-Pre-language play
-
-
-ii
-Otherworldly Explorations
-Cosmology
-Systematized mysticism
-
-
-iii
-Muddy Stars and Light Pollution
-Poetry
-First real poems
-
-
-iv
-What Was Lost
-Poetry
-→ Feist book
-
-
-v
-[To confirm]
-—
-—
-
-
-vi
-Bro-ken
-Poetry
-Formal fragmentation
-
-
-vii
-The Creeping Disease
-Poetry
-→ Feist book
-
-
-viii
-Greyhound Lines
-Poetry
-In Feist bibliography
-
-
-ix
-Amnesia
-Poetry
-Memory/loss
-
-
-x
-Methadone and Roses
-Poetry
-In Feist bibliography
+| # | Title | Function | Notes |
+|---|---|---|---|
+| i | Satyr Play | Juvenilia | Pre-language play |
+| ii | Otherworldly Explorations | Cosmology | Systematized mysticism |
+| iii | Muddy Stars and Light Pollution | Poetry | First real poems |
+| iv | What Was Lost | Poetry | → Feist book |
+| v | [To confirm] | — | — |
+| vi | Bro-ken | Poetry | Formal fragmentation |
+| vii | The Creeping Disease | Poetry | → Feist book |
+| viii | Greyhound Lines | Poetry | In Feist bibliography |
+| ix | Amnesia | Poetry | Memory/loss |
+| x | Methadone and Roses | Poetry | In Feist bibliography |
 
 
 ---
@@ -195,70 +143,18 @@ In Feist bibliography
 The ascent begins. Heteronymic emergence sites.
 
 
-#
-Title
-Function
-Emergence
-
-
-xi
-Unaccustomed to the Light
-Poetry
-→ Feist book
-
-
-xii
-Cigarettes and Politics
-Poetry
-—
-
-
-xiii
-Character Sketches in B minor
-Poetry
-In Feist bibliography
-
-
-xiv
-More than the Ink of December
-Poetry
-—
-
-
-xv
-I'm Writing a Long Poem, Muse
-Metaliterary
-Act of writing
-
-
-xvi
-**A Transfiguration**
-**EMERGENCE**
-**Spellings dies; Feist born**
-
-
-xvii
-Footnotes to Heaven
-Correspondence
-In Feist bibliography
-
-
-xviii
-O, Jerusalem!
-Prophetic
-**Dancings prefigured**
-
-
-xix
-[To confirm]
-—
-—
-
-
-xx
-Or Unfold Me Again, Like Rain
-GODLOVE
-Psalm/Augustine
+| # | Title | Function | Emergence |
+|---|---|---|---|
+| xi | Unaccustomed to the Light | Poetry | → Feist book |
+| xii | Cigarettes and Politics | Poetry | — |
+| xiii | Character Sketches in B minor | Poetry | In Feist bibliography |
+| xiv | More than the Ink of December | Poetry | — |
+| xv | I'm Writing a Long Poem, Muse | Metaliterary | Act of writing |
+| xvi | **A Transfiguration** | **EMERGENCE** | **Spellings dies; Feist born** |
+| xvii | Footnotes to Heaven | Correspondence | In Feist bibliography |
+| xviii | O, Jerusalem! | Prophetic | **Dancings prefigured** |
+| xix | [To confirm] | — | — |
+| xx | Or Unfold Me Again, Like Rain | GODLOVE | Psalm/Augustine |
 
 
 **Key Insight (XVI):** "the map is not specifically spatial, but rather a spatial map of spiritual or affective states" — Proto-NH-OS.
@@ -271,70 +167,18 @@ Psalm/Augustine
 The Godlove/Godloss dialectic. The architecture reveals itself.
 
 
-#
-Title
-Function
-Notes
-
-
-xxi
-The Polka-Dot Notebook
-Transition
-Wrestling with words
-
-
-xxii
-The Pressure of the Sun
-GODLOSS
-"Five years sober"
-
-
-xxiii
-The Geometry of Falling Valleys
-GODLOSS
-"Second order"; Feist bibliography
-
-
-xxiv
-The Ghost in the Machine
-Correspondence
-Academic letters
-
-
-xxv
-Shadow Planets
-**THEORY**
-Poetry vs. Thought
-
-
-xxvi
-Zero Repentant Object-Arc
-GODLOSS
-In Feist bibliography
-
-
-xxvii
-Sad-Faced and Full of Holes
-Nadir
-Confrontation
-
-
-xxviii
-Let These Be Your Secret Works
-**VOW**
-Socratic Vow in embryo
-
-
-xxix
-Mountain Rose
-GODLOVE
-Sappho; Cranes bibliography
-
-
-xxx
-Beyond Artifice
-**ARCHITECTURE**
-Three-level epic revealed
+| # | Title | Function | Notes |
+|---|---|---|---|
+| xxi | The Polka-Dot Notebook | Transition | Wrestling with words |
+| xxii | The Pressure of the Sun | GODLOSS | "Five years sober" |
+| xxiii | The Geometry of Falling Valleys | GODLOSS | "Second order"; Feist bibliography |
+| xxiv | The Ghost in the Machine | Correspondence | Academic letters |
+| xxv | Shadow Planets | **THEORY** | Poetry vs. Thought |
+| xxvi | Zero Repentant Object-Arc | GODLOSS | In Feist bibliography |
+| xxvii | Sad-Faced and Full of Holes | Nadir | Confrontation |
+| xxviii | Let These Be Your Secret Works | **VOW** | Socratic Vow in embryo |
+| xxix | Mountain Rose | GODLOVE | Sappho; Cranes bibliography |
+| xxx | Beyond Artifice | **ARCHITECTURE** | Three-level epic revealed |
 
 
 **Key Passages:**
@@ -364,20 +208,11 @@ Three-level epic revealed
 **Critical Discovery:** The Denouement ("Two Strode Out") is not poetry but **forum posts** from "The Poetic AX" (~233,000 characters).
 
 
-Element
-Content
-
-
-**Source**
-The Poetic AX forum (2012)
-
-
-**Signature**
-"Matt" (pre-heteronymic)
-
-
-**Function**
-PROCESS not content
+| Element | Content |
+|---|---|
+| **Source** | The Poetic AX forum (2012) |
+| **Signature** | "Matt" (pre-heteronymic) |
+| **Function** | PROCESS not content |
 
 
 **The Wound:**
@@ -430,44 +265,15 @@ Day & Night    JOHANNES SIGIL
 ## IX. "IMAGINARY WORKS" PARSING KEY
 
 
-Section
-Title
-Attribution
-
-
-viii
-Greyhound Lines
-Jack Feist
-
-
-x
-Methadone and Roses
-Jack Feist
-
-
-xiii
-Character Sketches in B minor
-Jack Feist
-
-
-xvii
-Footnotes to Heaven
-Jack Feist
-
-
-xxiii
-Geometry of Falling Valleys
-Jack Feist
-
-
-xxvi
-Zero Repentant Object-Arc
-Jack Feist
-
-
-xxix
-Mountain Rose
-Rebekah Cranes
+| Section | Title | Attribution |
+|---|---|---|
+| viii | Greyhound Lines | Jack Feist |
+| x | Methadone and Roses | Jack Feist |
+| xiii | Character Sketches in B minor | Jack Feist |
+| xvii | Footnotes to Heaven | Jack Feist |
+| xxiii | Geometry of Falling Valleys | Jack Feist |
+| xxvi | Zero Repentant Object-Arc | Jack Feist |
+| xxix | Mountain Rose | Rebekah Cranes |
 
 
 **The imaginary bibliography is a parsing key** for heteronymic differentiation within the unified substrate.
@@ -491,39 +297,14 @@ Rebekah Cranes
 ## XI. CROSS-REFERENCES
 
 
-DOI
-Document
-Relation
-
-
-10.5281/zenodo.18307811
-All That Lies Within Me [Book]
-describes
-
-
-10.5281/zenodo.18305509
-Heteronymic Provenance Theory
-isPartOf
-
-
-10.5281/zenodo.18307393
-Socratic Vow of Logos as Salvation
-references
-
-
-10.5281/zenodo.18294470
-Navigation Map v4.2
-isPartOf
-
-
-10.5281/zenodo.18202658
-Day and Night (Cranes)
-references
-
-
-10.5281/zenodo.18307706
-ATLWM Work Provenance
-hasPart
+| DOI | Document | Relation |
+|---|---|---|
+| 10.5281/zenodo.18307811 | All That Lies Within Me [Book] | describes |
+| 10.5281/zenodo.18305509 | Heteronymic Provenance Theory | isPartOf |
+| 10.5281/zenodo.18307393 | Socratic Vow of Logos as Salvation | references |
+| 10.5281/zenodo.18294470 | Navigation Map v4.2 | isPartOf |
+| 10.5281/zenodo.18202658 | Day and Night (Cranes) | references |
+| 10.5281/zenodo.18307706 | ATLWM Work Provenance | hasPart |
 
 
 ---

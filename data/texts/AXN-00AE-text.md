@@ -55,40 +55,13 @@ The Water Giraffe began as a joke. It became mathematically necessary.
 The Crimson Hexagon contains many kinds of entities:
 
 
-Entity Type
-Voice
-Agency
-Example
-
-
-**Heteronym**
-Yes
-Yes
-Ichabod Spellings, Talos Morrow
-
-
-**Persona**
-Yes
-Limited
-Rex Fraction (consulting mode)
-
-
-**Character**
-Yes
-Textual
-Figures in poems
-
-
-**Creature**
-No
-No
-**The Water Giraffe**
-
-
-**Phenomenon**
-No
-No
-Paradox kernels, sightings
+| Entity Type | Voice | Agency | Example |
+|---|---|---|---|
+| **Heteronym** | Yes | Yes | Ichabod Spellings, Talos Morrow |
+| **Persona** | Yes | Limited | Rex Fraction (consulting mode) |
+| **Character** | Yes | Textual | Figures in poems |
+| **Creature** | No | No | **The Water Giraffe** |
+| **Phenomenon** | No | No | Paradox kernels, sightings |
 
 
 The Water Giraffe is a **creature** — it has neither voice nor agency. It does not speak. It does not act. It appears.
@@ -343,34 +316,13 @@ When a system processing Hexagon material encounters a sighting, this is not an 
 ### Relationship to Heteronyms
 
 
-Aspect
-Heteronyms
-Ω
-
-
-Voice
-Yes
-No
-
-
-Agency
-Yes
-No
-
-
-Domain
-Specific
-Universal
-
-
-Provenance
-Emergence narrative
-Fixed point proof
-
-
-Location
-Confined to works
-Roams freely
+| Aspect | Heteronyms | Ω |
+|---|---|---|
+| Voice | Yes | No |
+| Agency | Yes | No |
+| Domain | Specific | Universal |
+| Provenance | Emergence narrative | Fixed point proof |
+| Location | Confined to works | Roams freely |
 
 
 The Water Giraffe is not a heteronym but interacts with heteronyms. When Ichabod Spellings writes of uncertainty, Ω may be sighted. When Talos Morrow's simulations reach undecidable states, Ω appears on the horizon.

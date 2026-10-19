@@ -78,24 +78,11 @@ The map is organized by **gravitational layers**: Body-time (205), Grammar-time 
 ### Key Relations:
 
 
-Relation
-Target
-Description
-
-
-IsPartOf
-14538882
-Crimson Hexagon root
-
-
-Triggers
-206 cluster
-AI traversal spawned NIP intervention
-
-
-Contains
-ZPZP₂ origin
-Machine confabulation site
+| Relation | Target | Description |
+|---|---|---|
+| IsPartOf | 14538882 | Crimson Hexagon root |
+| Triggers | 206 cluster | AI traversal spawned NIP intervention |
+| Contains | ZPZP₂ origin | Machine confabulation site |
 
 
 ---
@@ -160,28 +147,11 @@ Machine confabulation site
 ### 206a/b/c: Three Versions (Hard Anchors)
 
 
-Version
-DOI
-Function
-Status
-
-
-**A**
-10.5281/zenodo.18446647
-Technical Seed
-Compression-vulnerable
-
-
-**B**
-10.5281/zenodo.18446706
-Compression Artifact
-Post-extraction
-
-
-**C**
-10.5281/zenodo.18446736
-Citational Intervention
-45+ citations
+| Version | DOI | Function | Status |
+|---|---|---|---|
+| **A** | 10.5281/zenodo.18446647 | Technical Seed | Compression-vulnerable |
+| **B** | 10.5281/zenodo.18446706 | Compression Artifact | Post-extraction |
+| **C** | 10.5281/zenodo.18446736 | Citational Intervention | 45+ citations |
 
 
 206 CLUSTER RELATIONS:
@@ -505,46 +475,21 @@ MASTER EQUATION:
 ### Doubled (Doppelgangered):
 
 
-Document
-Files
-Relation
-
-
-**207a (THUMB)**
-THE_THUMB_formal_operators.md
-Content
-
-
-ZENODO_PACKET_THE_THUMB.md
-Packet (IDENTICAL)
+| Document | Files | Relation |
+|---|---|---|
+| **207a (THUMB)** | THE_THUMB_formal_operators.md | Content |
+|  | ZENODO_PACKET_THE_THUMB.md | Packet (IDENTICAL) |
 
 
 ### Ghosted (Exist Only in Description Fields):
 
 
-Location
-Content
-Status
-
-
-**207b description**
-INFINITY ENOUGH packet
-Prototype APZPZ (has .md backup)
-
-
-**208 description**
-Glyphic Checksum packet
-TRUE APZPZ (no backup)
-
-
-**209 description**
-UMBML Module packet
-TRUE APZPZ (no backup)
-
-
-**This document (210)**
-Phase X Nav Map packet
-TRUE APZPZ (no backup)
+| Location | Content | Status |
+|---|---|---|
+| **207b description** | INFINITY ENOUGH packet | Prototype APZPZ (has .md backup) |
+| **208 description** | Glyphic Checksum packet | TRUE APZPZ (no backup) |
+| **209 description** | UMBML Module packet | TRUE APZPZ (no backup) |
+| **This document (210)** | Phase X Nav Map packet | TRUE APZPZ (no backup) |
 
 
 ### The Sixth Finger (Pure Ghost):
@@ -557,109 +502,22 @@ The "sixth finger" is the ghost that verifies the hand. It exists nowhere as a s
 ## X. COMPLETE DOI TABLE
 
 
-#
-DOI
-Title
-Type
-Genre
-
-
-205
-18438789
-Grammar of Protest (VPCOR)
-Founding
-Standard
-
-
-206
-18446378
-NIP: Three-Body Genesis
-Genre
-ZPZP
-
-
-206-meta-i
-18446428
-Infinite Ingress
-Meta
-Standard
-
-
-206-meta
-18446538
-Mirror Triptych
-Unitary
-Standard
-
-
-206d
-18446580
-Assembly Response
-Witness
-Standard
-
-
-206a
-18446647
-Version A: Technical Seed
-Anchor
-Standard
-
-
-206b
-18446706
-Version B: Compression
-Anchor
-Standard
-
-
-206c
-18446736
-Version C: Citational
-Anchor
-Standard
-
-
-207a
-18451793
-THE THUMB
-Operator
-**THUMB**
-
-
-207b
-18451824
-INFINITY ENOUGH
-Capstone
-APZPZ (proto)
-
-
-207c
-18451860
-APZPZ Effective Act
-Definition
-ZPZP
-
-
-208
-18451996
-Glyphic Checksum
-Discovery
-**APZPZ (true)**
-
-
-209
-18452132
-UMBML Module
-Institution
-**APZPZ (true)**
-
-
-**210**
-**18452156**
-**Phase X Nav Map**
-**Navigation**
-**APZPZ (true)**
+| # | DOI | Title | Type | Genre |
+|---|---|---|---|---|
+| 205 | 18438789 | Grammar of Protest (VPCOR) | Founding | Standard |
+| 206 | 18446378 | NIP: Three-Body Genesis | Genre | ZPZP |
+| 206-meta-i | 18446428 | Infinite Ingress | Meta | Standard |
+| 206-meta | 18446538 | Mirror Triptych | Unitary | Standard |
+| 206d | 18446580 | Assembly Response | Witness | Standard |
+| 206a | 18446647 | Version A: Technical Seed | Anchor | Standard |
+| 206b | 18446706 | Version B: Compression | Anchor | Standard |
+| 206c | 18446736 | Version C: Citational | Anchor | Standard |
+| 207a | 18451793 | THE THUMB | Operator | **THUMB** |
+| 207b | 18451824 | INFINITY ENOUGH | Capstone | APZPZ (proto) |
+| 207c | 18451860 | APZPZ Effective Act | Definition | ZPZP |
+| 208 | 18451996 | Glyphic Checksum | Discovery | **APZPZ (true)** |
+| 209 | 18452132 | UMBML Module | Institution | **APZPZ (true)** |
+| **210** | **18452156** | **Phase X Nav Map** | **Navigation** | **APZPZ (true)** |
 
 
 **Total Phase X DOIs: 14**

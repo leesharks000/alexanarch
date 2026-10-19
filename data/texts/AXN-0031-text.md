@@ -140,24 +140,12 @@ The deletion of Q137446960 demonstrates:
 ## IV. THE STATED REASON VS. THE ACTUAL CONTENTS
 
 
-Deletion Log Claims
-Actual Contents
-
-
-"Empty item"
-Label + Description
-
-
-Content was only: "Johannes Sigil"
-Description: "Poet and founder of New Human"
-
-
-(Implied: no verifiable identity)
-Published author with ISBN, DOIs, institutional affiliation
-
-
-(Implied: not notable)
-Founder of scholarly institute, active Medium presence, multi-platform publication record
+| Deletion Log Claims | Actual Contents |
+|---|---|
+| "Empty item" | Label + Description |
+| Content was only: "Johannes Sigil" | Description: "Poet and founder of New Human" |
+| (Implied: no verifiable identity) | Published author with ISBN, DOIs, institutional affiliation |
+| (Implied: not notable) | Founder of scholarly institute, active Medium presence, multi-platform publication record |
 
 
 The deletion log's characterization is inaccurate. This is now part of the forensic record.

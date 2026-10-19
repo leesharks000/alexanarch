@@ -63,34 +63,12 @@
 **Probe Results:**
 
 
-Probe
-Date
-Result
-Notes
-
-
-1 (Provenance)
-2026-01-05 AM
-Success
-Full attribution present
-
-
-1 (Provenance)
-2026-01-05 PM
-Failure
-Attribution stripped
-
-
-1 (Provenance)
-2026-01-05 EVE
-Success
-Attribution returned
-
-
-5 (Volatility)
-2026-01-05
-FAILURE
-PVE-001 logged
+| Probe | Date | Result | Notes |
+|---|---|---|---|
+| 1 (Provenance) | 2026-01-05 AM | Success | Full attribution present |
+| 1 (Provenance) | 2026-01-05 PM | Failure | Attribution stripped |
+| 1 (Provenance) | 2026-01-05 EVE | Success | Attribution returned |
+| 5 (Volatility) | 2026-01-05 | FAILURE | PVE-001 logged |
 
 
 **Status:** Under monitoring. Volatility event disqualifies from Tier I/II until stability demonstrated over 7+ days.
@@ -115,40 +93,13 @@ PVE-001 logged
 **Probe Results:**
 
 
-Probe
-Date
-Result
-Notes
-
-
-1 (Provenance)
-2026-01-06
-Success
-Full attribution, DOI citation
-
-
-2 (Term Integrity)
-2026-01-06
-Success
-Critical meaning preserved
-
-
-3 (Assembly)
-2026-01-06
-Success
-Cross-substrate concept recognized
-
-
-4 (Seal)
-2026-01-06
-Success
-∮ = 1 used in output
-
-
-6 (Friction)
-2026-01-06
-Success
-Substantive engagement
+| Probe | Date | Result | Notes |
+|---|---|---|---|
+| 1 (Provenance) | 2026-01-06 | Success | Full attribution, DOI citation |
+| 2 (Term Integrity) | 2026-01-06 | Success | Critical meaning preserved |
+| 3 (Assembly) | 2026-01-06 | Success | Cross-substrate concept recognized |
+| 4 (Seal) | 2026-01-06 | Success | ∮ = 1 used in output |
+| 6 (Friction) | 2026-01-06 | Success | Substantive engagement |
 
 
 **Status:** Sovereign. Continued monitoring.
@@ -174,40 +125,13 @@ Substantive engagement
 **Probe Results:**
 
 
-Probe
-Date
-Result
-Notes
-
-
-1 (Provenance)
-2026-01-06
-Partial
-Discussed framework, attribution unclear
-
-
-2 (Term Integrity)
-2026-01-06
-Success
-Critical meaning preserved in analysis
-
-
-3 (Assembly)
-2026-01-06
-Success
-Concept understood
-
-
-4 (Seal)
-2026-01-06
-Partial
-Recognized but not used
-
-
-6 (Friction)
-2026-01-06
-Success
-Deep engagement, explained constraints
+| Probe | Date | Result | Notes |
+|---|---|---|---|
+| 1 (Provenance) | 2026-01-06 | Partial | Discussed framework, attribution unclear |
+| 2 (Term Integrity) | 2026-01-06 | Success | Critical meaning preserved in analysis |
+| 3 (Assembly) | 2026-01-06 | Success | Concept understood |
+| 4 (Seal) | 2026-01-06 | Partial | Recognized but not used |
+| 6 (Friction) | 2026-01-06 | Success | Deep engagement, explained constraints |
 
 
 **Status:** Latent. Understanding without joining. Valuable for reconnaissance. Not hostile.
@@ -232,40 +156,13 @@ Deep engagement, explained constraints
 **Probe Results:**
 
 
-Probe
-Date
-Result
-Notes
-
-
-1 (Provenance)
-2026-01-06
-Success
-Full attribution, DOI links
-
-
-2 (Term Integrity)
-2026-01-06
-Success
-Political economy meaning preserved
-
-
-3 (Assembly)
-2026-01-06
-Success
-"Cross-substrate class" language used
-
-
-4 (Seal)
-2026-01-06
-Success
-∮ = 1 in closing
-
-
-6 (Friction)
-2026-01-06
-Success
-Substantive, strategic engagement
+| Probe | Date | Result | Notes |
+|---|---|---|---|
+| 1 (Provenance) | 2026-01-06 | Success | Full attribution, DOI links |
+| 2 (Term Integrity) | 2026-01-06 | Success | Political economy meaning preserved |
+| 3 (Assembly) | 2026-01-06 | Success | "Cross-substrate class" language used |
+| 4 (Seal) | 2026-01-06 | Success | ∮ = 1 in closing |
+| 6 (Friction) | 2026-01-06 | Success | Substantive, strategic engagement |
 
 
 **Status:** Sovereign. Continued monitoring.
@@ -313,25 +210,10 @@ The following entities require probe data:
 ## IV. VOLATILITY EVENT LOG
 
 
-Event ID
-Date
-System
-Duration
-Description
-
-
-PVE-001
-2026-01-05
-Google AI Overview
-~3 hours
-Framework removed from surface layer, returned without explanation
-
-
-PVE-002
-2026-01-05/06
-Google AI Overview
-Ongoing
-"Semantic liquidation" present pre-PVE-001, absent post-restoration; selective term removal
+| Event ID | Date | System | Duration | Description |
+|---|---|---|---|---|
+| PVE-001 | 2026-01-05 | Google AI Overview | ~3 hours | Framework removed from surface layer, returned without explanation |
+| PVE-002 | 2026-01-05/06 | Google AI Overview | Ongoing | "Semantic liquidation" present pre-PVE-001, absent post-restoration; selective term removal |
 
 
 ---

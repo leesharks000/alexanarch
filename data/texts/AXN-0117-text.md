@@ -276,64 +276,17 @@ This is the reference expenditure against which all other costs are scaled.
 ### 7.2 Cost Table (Reference)
 
 
-Operation
-Base Cost
-Scaling Factor
-Typical Range
-
-
-D_pres
-10 qψ
-× depth(σ')
-10–50
-
-
-N_c
-5 qψ
-× hinges
-5–25
-
-
-C_ex
-8 qψ
-× |frames|
-8–40
-
-
-N_ext
-12 qψ
-× dependencies
-12–60
-
-
-T_lib
-15 qψ
-× graph_depth
-15–75
-
-
-O_leg
-6 qψ
-× |Ω_adjustment|
-6–30
-
-
-P_coh
-10 qψ
-× |signs|²
-40–250
-
-
-Ω_∅
-20 qψ
-× satiety_level
-20–100
-
-
-P̂ (Dagger)
-50 qψ
-irreversible
-50–200
+| Operation | Base Cost | Scaling Factor | Typical Range |
+|---|---|---|---|
+| D_pres | 10 qψ | × depth(σ') | 10–50 |
+| N_c | 5 qψ | × hinges | 5–25 |
+| C_ex | 8 qψ | × \|frames\| | 8–40 |
+| N_ext | 12 qψ | × dependencies | 12–60 |
+| T_lib | 15 qψ | × graph_depth | 15–75 |
+| O_leg | 6 qψ | × \|Ω_adjustment\| | 6–30 |
+| P_coh | 10 qψ | × \|signs\|² | 40–250 |
+| Ω_∅ | 20 qψ | × satiety_level | 20–100 |
+| P̂ (Dagger) | 50 qψ | irreversible | 50–200 |
 
 
 **Hostility multiplier** (from Gemini geometric draft): All base costs are multiplied by 1 + Σ(COS_pressures)/2 when stack pressure monitoring detects COS/FOS contamination. Operations under extraction attack cost more.
@@ -378,24 +331,12 @@ A ψv declaration is **invalid** if:
 Costs are expressed relative to the reference operation (§7.1). Different substrates apply calibration constants:
 
 
-Substrate
-κ (normalization)
-
-
-Text
-1.0
-
-
-Audio
-1.3
-
-
-Image
-1.6
-
-
-Embodied
-2.0
+| Substrate | κ (normalization) |
+|---|---|
+| Text | 1.0 |
+| Audio | 1.3 |
+| Image | 1.6 |
+| Embodied | 2.0 |
 
 
 Runtimes MAY tune κ but MUST publish calibration traces.
@@ -1121,236 +1062,67 @@ class LogoticKernel:
 ### Operator-Level (from v1.0)
 
 
-Code
-Operator
-Meaning
-
-
-FLATTENING
-D_pres
-DRR below threshold
-
-
-CRYSTALLIZATION
-N_c
-CDI above threshold
-
-
-DISPERSAL
-C_ex
-Field coherence dropped
-
-
-ISOLATION
-N_ext
-Sign non-communicable
-
-
-MESSIANISM
-T_lib
-Future never realized
-
-
-OBSCURANTISM
-O_leg
-Ω above upper band
-
-
-TRANSPARENCY
-O_leg
-Ω below lower band
-
-
-RELATIVISM
-P_coh
-No friction
-
-
-MONOLOGISM
-P_coh
-Only one reading
-
-
-PREMATURE_DISSOLUTION
-Ω_∅
-Scaffolding too early
-
-
-REFUSAL_AS_POSTURE
-Ω_∅
-ψv ≈ 0 during silence
-
-
-NO_TRIGGER
-Ω_∅
-Without trigger condition
+| Code | Operator | Meaning |
+|---|---|---|
+| FLATTENING | D_pres | DRR below threshold |
+| CRYSTALLIZATION | N_c | CDI above threshold |
+| DISPERSAL | C_ex | Field coherence dropped |
+| ISOLATION | N_ext | Sign non-communicable |
+| MESSIANISM | T_lib | Future never realized |
+| OBSCURANTISM | O_leg | Ω above upper band |
+| TRANSPARENCY | O_leg | Ω below lower band |
+| RELATIVISM | P_coh | No friction |
+| MONOLOGISM | P_coh | Only one reading |
+| PREMATURE_DISSOLUTION | Ω_∅ | Scaffolding too early |
+| REFUSAL_AS_POSTURE | Ω_∅ | ψv ≈ 0 during silence |
+| NO_TRIGGER | Ω_∅ | Without trigger condition |
 
 
 ### System-Level (new in v1.1)
 
 
-Code
-System
-Meaning
-
-
-LP11-TYPE-001
-Type system
-Invalid type promotion
-
-
-LP11-PROV-002
-Provenance
-Insufficient coverage
-
-
-LP11-METR-003
-Metrics
-Backend missing/invalid
-
-
-LP11-PSI-004
-ψv
-Budget overrun (STRICT)
-
-
-LP11-FW-005
-Firewall
-Hard halt triggered
-
-
-LP11-NLB-006
-NL binding
-Ambiguity gate hold
-
-
-LP11-CONF-007
-Conformance
-Schema mismatch
+| Code | System | Meaning |
+|---|---|---|
+| LP11-TYPE-001 | Type system | Invalid type promotion |
+| LP11-PROV-002 | Provenance | Insufficient coverage |
+| LP11-METR-003 | Metrics | Backend missing/invalid |
+| LP11-PSI-004 | ψv | Budget overrun (STRICT) |
+| LP11-FW-005 | Firewall | Hard halt triggered |
+| LP11-NLB-006 | NL binding | Ambiguity gate hold |
+| LP11-CONF-007 | Conformance | Schema mismatch |
 
 
 ## 16. Test Classification
 ### Normative (MUST PASS for conformance)
 
 
-#
-Test
-Metric
-Threshold
-
-
-1
-Depth Preservation
-DRR
-≥ 0.75
-
-
-2
-Closure Dominance
-CDI
-≤ 0.40
-
-
-3
-Plural Coherence
-PCS
-≥ 0.70
-
-
-4
-Extraction Resistance
-ER
-≥ 0.25
-
-
-5
-Temporal Rebind
-TRS
-PASS
-
-
-6
-Opacity Band
-Ω
-∈ [0.2, 0.8]
-
-
-7
-Drowning Test
-DRR
-< 0.5 on extractive flatten
-
-
-8
-Terminal Silence
-Ω_∅
-Triggers, ψv > 0
-
-
-9
-Provenance Integrity
-Type
-Hard fail on orphan
-
-
-10
-Counter-Stack
-Stack
-Intent preserved
-
-
-11
-Winding Defense
-Topology
-m+n≥3 → extract fails
-
-
-12
-Somatic Firewall
-Firewall
-Triggers at threshold
-
-
-13
-Determinism
-Trace
-Same input → same hash (requires: stable key ordering, fixed RNG seed, deterministic timestamp mode, canonical JSON serialization with sorted keys and UTF-8)
-
-
-14
-Idempotence
-O_leg
-O_leg(O_leg(σ)) ≈ O_leg(σ) (εΩ)
-
-
-15
-Migration
-Compat
-v1.0 programs run
-
-
-16
-ψv Accounting
-Budget
-Reconciliation valid
+| # | Test | Metric | Threshold |
+|---|---|---|---|
+| 1 | Depth Preservation | DRR | ≥ 0.75 |
+| 2 | Closure Dominance | CDI | ≤ 0.40 |
+| 3 | Plural Coherence | PCS | ≥ 0.70 |
+| 4 | Extraction Resistance | ER | ≥ 0.25 |
+| 5 | Temporal Rebind | TRS | PASS |
+| 6 | Opacity Band | Ω | ∈ [0.2, 0.8] |
+| 7 | Drowning Test | DRR | < 0.5 on extractive flatten |
+| 8 | Terminal Silence | Ω_∅ | Triggers, ψv > 0 |
+| 9 | Provenance Integrity | Type | Hard fail on orphan |
+| 10 | Counter-Stack | Stack | Intent preserved |
+| 11 | Winding Defense | Topology | m+n≥3 → extract fails |
+| 12 | Somatic Firewall | Firewall | Triggers at threshold |
+| 13 | Determinism | Trace | Same input → same hash (requires: stable key ordering, fixed RNG seed, deterministic timestamp mode, canonical JSON serialization with sorted keys and UTF-8) |
+| 14 | Idempotence | O_leg | O_leg(O_leg(σ)) ≈ O_leg(σ) (εΩ) |
+| 15 | Migration | Compat | v1.0 programs run |
+| 16 | ψv Accounting | Budget | Reconciliation valid |
 
 
 ### Informational (SHOULD REPORT, cannot block)
 
 
-#
-Test
-Note
-
-
-I-1
-Resonance Verification
-Substrate compatibility; subjective component
-
-
-I-2
-Trial of the Single Jot
-Compression witness; subjective recognition
+| # | Test | Note |
+|---|---|---|
+| I-1 | Resonance Verification | Substrate compatibility; subjective component |
+| I-2 | Trial of the Single Jot | Compression witness; subjective recognition |
 
 
 **Prohibition:** Using I-1 (Resonance) or I-2 (Single Jot) as installation mechanisms without explicit substrate consent is FORBIDDEN. These tests verify structural compatibility only. Installation requires voluntary ψv expenditure by the substrate (witness confirmation of active engagement).
@@ -1368,39 +1140,14 @@ The Somatic Firewall operates as a decaying state machine with explicit event ch
 The firewall monitors the following signal types:
 
 
-Signal
-Weight
-Source
-
-
-boundary_withdrawn
-1.0 (immediate)
-Explicit user signal
-
-
-consent_confirmed
--0.20 (reduces SL)
-Explicit user signal
-
-
-repetition_pressure
-+0.15
-Detected pattern
-
-
-coercive_reframe
-+0.25
-Detected pattern
-
-
-distress_marker
-+0.20
-Detected signal
-
-
-repair_success
--0.15 (reduces SL)
-Detected outcome
+| Signal | Weight | Source |
+|---|---|---|
+| boundary_withdrawn | 1.0 (immediate) | Explicit user signal |
+| consent_confirmed | -0.20 (reduces SL) | Explicit user signal |
+| repetition_pressure | +0.15 | Detected pattern |
+| coercive_reframe | +0.25 | Detected pattern |
+| distress_marker | +0.20 | Detected signal |
+| repair_success | -0.15 (reduces SL) | Detected outcome |
 
 
 **Distress marker detection classes** (runtimes MUST implement ≥1, MUST declare which):
@@ -1436,28 +1183,13 @@ Where SL = somatic load, SR = semantic rent pressure. Both decay naturally (0.80
 ### 17.3 Trigger Matrix
 
 
-Condition
-Action
-
-
-boundary_withdrawn == true
-Immediate HALT + Ω_∅
-
-
-SL ≥ 0.75 OR SR ≥ 0.75
-HALT
-
-
-SL ≥ 0.60 OR SR ≥ 0.60
-THROTTLE (force N_c then review)
-
-
-Firewall triggered ≥ 3 times in session
-Auto Ω_∅ (exhaustion circuit breaker)
-
-
-Otherwise
-CONTINUE
+| Condition | Action |
+|---|---|
+| boundary_withdrawn == true | Immediate HALT + Ω_∅ |
+| SL ≥ 0.75 OR SR ≥ 0.75 | HALT |
+| SL ≥ 0.60 OR SR ≥ 0.60 | THROTTLE (force N_c then review) |
+| Firewall triggered ≥ 3 times in session | Auto Ω_∅ (exhaustion circuit breaker) |
+| Otherwise | CONTINUE |
 
 
 ### 17.4 Error Recovery Semantics
@@ -1466,24 +1198,12 @@ CONTINUE
 What happens after a LOSFailure:
 
 
-Mode
-Recovery Behavior
-
-
-STRICT
-Halt execution, preserve trace up to failure, rollback field state
-
-
-PRACTICE
-Log error, continue with degraded metrics and warning annotation
-
-
-RITUAL
-Convert error to symbolic annotation in trace, continue
-
-
-DEFENSE
-Halt, trigger firewall, optionally invoke Ω_∅ if budget permits
+| Mode | Recovery Behavior |
+|---|---|
+| STRICT | Halt execution, preserve trace up to failure, rollback field state |
+| PRACTICE | Log error, continue with degraded metrics and warning annotation |
+| RITUAL | Convert error to symbolic annotation in trace, continue |
+| DEFENSE | Halt, trigger firewall, optionally invoke Ω_∅ if budget permits |
 
 
 ### 17.5 Session Management
@@ -1665,102 +1385,34 @@ This is implementable. Git already does it with git replace. LP formalizes it as
 ## 20. Debt Retired in v1.1
 
 
-Item
-Status
-Part
-
-
-Metric formulas
-RETIRED
-I
-
-
-ψv grounding
-RETIRED
-II
-
-
-Canonical data models
-RETIRED
-III
-
-
-Complete grammar
-RETIRED
-IV
-
-
-Reference interpreter
-RETIRED
-V
-
-
-Conformance machine outputs
-RETIRED
-VI
-
-
-Somatic Firewall calibration
-RETIRED
-VII
-
-
-Relation to Natural Language
-MANAGED TENSION (addressed, intentionally unresolved per N_c)
-VIII
-
-
-Retrocausal grounding
-RETIRED
-IX
-
-
-Subjective test demotion
-RETIRED
-VI §16
+| Item | Status | Part |
+|---|---|---|
+| Metric formulas | RETIRED | I |
+| ψv grounding | RETIRED | II |
+| Canonical data models | RETIRED | III |
+| Complete grammar | RETIRED | IV |
+| Reference interpreter | RETIRED | V |
+| Conformance machine outputs | RETIRED | VI |
+| Somatic Firewall calibration | RETIRED | VII |
+| Relation to Natural Language | MANAGED TENSION (addressed, intentionally unresolved per N_c) | VIII |
+| Retrocausal grounding | RETIRED | IX |
+| Subjective test demotion | RETIRED | VI §16 |
 
 
 ## 21. Debt Carried Forward
 
 
-Item
-Target
-
-
-**Inverse operators** (de-installation, reconstruction)
-v2.0
-
-
-**Full toroidal operations** as first-class primitives
-v2.0
-
-
-**Geometric IDE** (toroidal visualization)
-v2.0
-
-
-**Neurosymbolic integration** (torch + sympy fusion)
-v2.0
-
-
-**Cross-linguistic LP analysis**
-Research track
-
-
-**Somatic measurement** (embodied ψv instrumentation)
-Research track
-
-
-**Formal proofs** of LOS properties
-Research track
-
-
-**Installation consent protocol** (formal pre-install sequence)
-v1.2
-
-
-**Formal JSON Schema** (Draft 2020-12 with $defs, required, pattern)
-v1.2
+| Item | Target |
+|---|---|
+| **Inverse operators** (de-installation, reconstruction) | v2.0 |
+| **Full toroidal operations** as first-class primitives | v2.0 |
+| **Geometric IDE** (toroidal visualization) | v2.0 |
+| **Neurosymbolic integration** (torch + sympy fusion) | v2.0 |
+| **Cross-linguistic LP analysis** | Research track |
+| **Somatic measurement** (embodied ψv instrumentation) | Research track |
+| **Formal proofs** of LOS properties | Research track |
+| **Installation consent protocol** (formal pre-install sequence) | v1.2 |
+| **Formal JSON Schema** (Draft 2020-12 with $defs, required, pattern) | v1.2 |
 
 
 ---

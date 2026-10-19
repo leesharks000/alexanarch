@@ -36,40 +36,16 @@ This document provides a **semantic navigation map** for *Antioch: A Volume of P
 ## I. BIBLIOGRAPHIC ANCHOR
 
 
-Attribute
-Value
-
-
-**Title**
-Antioch: A Volume of Poems
-
-
-**Primary Author**
-Lee Sharks
-
-
-**Contributing Personae**
-Damascus Dancings, Jack Feist (subject), Johannes Sigil (subject)
-
-
-**Publisher**
-New Human Press
-
-
-**Year**
-2014-2015 (composition dates)
-
-
-**Pages**
-159
-
-
-**Format**
-PDF (converted from DOCX)
-
-
-**PDF DOI**
-[PENDING - to be assigned with deposit]
+| Attribute | Value |
+|---|---|
+| **Title** | Antioch: A Volume of Poems |
+| **Primary Author** | Lee Sharks |
+| **Contributing Personae** | Damascus Dancings, Jack Feist (subject), Johannes Sigil (subject) |
+| **Publisher** | New Human Press |
+| **Year** | 2014-2015 (composition dates) |
+| **Pages** | 159 |
+| **Format** | PDF (converted from DOCX) |
+| **PDF DOI** | [PENDING - to be assigned with deposit] |
 
 
 ---
@@ -81,122 +57,36 @@ This compendium contains work by multiple personae. Each section is attributed b
 ### 2.1 Lee Sharks (Primary Voice)
 
 
-Section
-Lines
-Function
-
-
-HADITH with TEETH
-21-55
-Opening poem — prophetic command
-
-
-**The Secret Book of Walt**
-57-1085
-**CLAIMS GOOD GRAY POET** — Gnostic cosmogony
-
-
-**I Am X, Be Y, Blessed is the Z**
-1949-2176
-**FOUNDS PRINCE OF POETS** — Triadic declaration
-
-
-Decrepit Memoir: A Catalogue of Minutes
-2989-3582
-Autobiographical fragments
-
-
-Cable Movie Poem: Transformers
-3582-3616
-Pop culture meditation
-
-
-concre(a)tion
-3628-3826
-Experimental poetry
-
-
-to wrestle with an angel
-3826-3949
-Theological meditation
-
-
-FROM ONE WHO DIED LONG AGO
-3951-4057
-Posthumous address
-
-
-Samenesses
-4063-4081
-—
-
-
-Hymn
-4081-4390
-Liturgical poetry
-
-
-WHO IS LEE SHARKS, TO FORGIVE EZRA POUND?
-4390-4490
-Critical/ethical meditation
-
-
-fragment / quietus
-4490-4808
-Experimental fragments
-
-
-My Little Poemy / Snub-Poemed
-4808-4826
-Short forms
-
-
-Social Identity / Reverse Catfishing
-4826-5590
-Essay/meditation
-
-
-Scary Awesome
-5608-6356
-Literary evangelism narrative
-
-
-TACHYONICA
-6356-6428
-Epic fragment from the future
+| Section | Lines | Function |
+|---|---|---|
+| HADITH with TEETH | 21-55 | Opening poem — prophetic command |
+| **The Secret Book of Walt** | 57-1085 | **CLAIMS GOOD GRAY POET** — Gnostic cosmogony |
+| **I Am X, Be Y, Blessed is the Z** | 1949-2176 | **FOUNDS PRINCE OF POETS** — Triadic declaration |
+| Decrepit Memoir: A Catalogue of Minutes | 2989-3582 | Autobiographical fragments |
+| Cable Movie Poem: Transformers | 3582-3616 | Pop culture meditation |
+| concre(a)tion | 3628-3826 | Experimental poetry |
+| to wrestle with an angel | 3826-3949 | Theological meditation |
+| FROM ONE WHO DIED LONG AGO | 3951-4057 | Posthumous address |
+| Samenesses | 4063-4081 | — |
+| Hymn | 4081-4390 | Liturgical poetry |
+| WHO IS LEE SHARKS, TO FORGIVE EZRA POUND? | 4390-4490 | Critical/ethical meditation |
+| fragment / quietus | 4490-4808 | Experimental fragments |
+| My Little Poemy / Snub-Poemed | 4808-4826 | Short forms |
+| Social Identity / Reverse Catfishing | 4826-5590 | Essay/meditation |
+| Scary Awesome | 5608-6356 | Literary evangelism narrative |
+| TACHYONICA | 6356-6428 | Epic fragment from the future |
 
 
 ### 2.2 Damascus Dancings (Prophetic/Diaspora Voice)
 
 
-Section
-Lines
-Function
-
-
-THE PARABLE OF THE TRANSFORMED DINOSAURS
-2176-2370
-Teaching parable
-
-
-THE PARABLE OF POLICE BRUTALITY
-2384-2438
-Teaching parable
-
-
-ON GRADING: The Parable of the PEZ Dispenser
-2452-2516
-Teaching parable
-
-
-ON TEAMWORK: Damascus Grants Authority
-2656-2707
-Authority transmission
-
-
-**EPISTLE TO THE HUMAN DIASPORA**
-2707-2987
-**MAJOR WORK** — Apostolic letter
+| Section | Lines | Function |
+|---|---|---|
+| THE PARABLE OF THE TRANSFORMED DINOSAURS | 2176-2370 | Teaching parable |
+| THE PARABLE OF POLICE BRUTALITY | 2384-2438 | Teaching parable |
+| ON GRADING: The Parable of the PEZ Dispenser | 2452-2516 | Teaching parable |
+| ON TEAMWORK: Damascus Grants Authority | 2656-2707 | Authority transmission |
+| **EPISTLE TO THE HUMAN DIASPORA** | 2707-2987 | **MAJOR WORK** — Apostolic letter |
 
 
 **Cross-Reference:** Damascus Dancings Provenance Document [DOI PENDING: HET-DAMASCUS-001]
@@ -206,29 +96,12 @@ Authority transmission
 Jack Feist appears as a **subject** rather than author in this compendium:
 
 
-Section
-Lines
-Function
-
-
-The Secret Book of Walt
-throughout
-Walt Whitman's "final manifestation"
-
-
-The Gospel of Cranes
-1095-1833
-Gospel subject — "the book of Feist"
-
-
-On Politics: The Kingdom of Pygmies
-2530-2642
-Teaching voice
-
-
-Epistle to the Human Diaspora
-throughout
-Referenced as apostolic figure
+| Section | Lines | Function |
+|---|---|---|
+| The Secret Book of Walt | throughout | Walt Whitman's "final manifestation" |
+| The Gospel of Cranes | 1095-1833 | Gospel subject — "the book of Feist" |
+| On Politics: The Kingdom of Pygmies | 2530-2642 | Teaching voice |
+| Epistle to the Human Diaspora | throughout | Referenced as apostolic figure |
 
 
 **Cross-Reference:** Jack Feist Provenance Document [DOI PENDING: HET-FEIST-001]
@@ -325,39 +198,14 @@ CLOSING (lines 1000-1085)
 **Resonant Lines:**
 
 
-Line
-Text
-Function
-
-
-~65
-"a firsthand account of Walt Whitman prior to his final manifestation as Jack Feist"
-Lineage declaration
-
-
-~150
-"The Deep Web was, singularity, the archive of all things"
-Cosmogonic opening
-
-
-~533
-"Walt Whitman, Cowboy of Time"
-Title/epithet
-
-
-~848
-"Walt is the Unicorn Horn stored up from the beginning"
-Christological claim
-
-
-~954
-"becoming harder each time, until this, the final time: Jack Feist"
-Incarnation sequence
-
-
-~1003
-"The Logos awoke in my skullcase... The final time was Feist..."
-Possession/transmission
+| Line | Text | Function |
+|---|---|---|
+| ~65 | "a firsthand account of Walt Whitman prior to his final manifestation as Jack Feist" | Lineage declaration |
+| ~150 | "The Deep Web was, singularity, the archive of all things" | Cosmogonic opening |
+| ~533 | "Walt Whitman, Cowboy of Time" | Title/epithet |
+| ~848 | "Walt is the Unicorn Horn stored up from the beginning" | Christological claim |
+| ~954 | "becoming harder each time, until this, the final time: Jack Feist" | Incarnation sequence |
+| ~1003 | "The Logos awoke in my skullcase... The final time was Feist..." | Possession/transmission |
 
 
 ---
@@ -402,28 +250,11 @@ CODA
 **Triadic Structure:**
 
 
-Movement
-Form
-Function
-Mantle Relation
-
-
-**I AM X**
-Catalog
-Declaration (identity)
-Whitman: democratic embrace
-
-
-**BE Y**
-Command
-Invitation (transformation)
-Ginsberg: ecstatic disruption
-
-
-**BLESSED IS Z**
-Beatitude
-Blessing (sacred)
-**Prince: futural address**
+| Movement | Form | Function | Mantle Relation |
+|---|---|---|---|
+| **I AM X** | Catalog | Declaration (identity) | Whitman: democratic embrace |
+| **BE Y** | Command | Invitation (transformation) | Ginsberg: ecstatic disruption |
+| **BLESSED IS Z** | Beatitude | Blessing (sacred) | **Prince: futural address** |
 
 
 **Mantle Founding:** The Prince of Poets is **founded** (not inherited) through this poem. It addresses readers not yet born/built, completing the triadic structure that requires the prior mantles.
@@ -462,29 +293,12 @@ This establishes the heteronym succession pattern that underlies the entire arch
 Damascus Dancings speaks in parables throughout the middle section:
 
 
-Parable
-Lines
-Content
-
-
-Transformed Dinosaurs
-2176-2370
-Kingdom likened to dinosaurs by highway
-
-
-Police Brutality
-2384-2438
-—
-
-
-The PEZ Dispenser
-2452-2516
-On grading/academic evaluation
-
-
-The Kingdom of Pygmies
-2530-2642
-On politics (Jack Feist voice)
+| Parable | Lines | Content |
+|---|---|---|
+| Transformed Dinosaurs | 2176-2370 | Kingdom likened to dinosaurs by highway |
+| Police Brutality | 2384-2438 | — |
+| The PEZ Dispenser | 2452-2516 | On grading/academic evaluation |
+| The Kingdom of Pygmies | 2530-2642 | On politics (Jack Feist voice) |
 
 
 **Note:** The Kingdom of Pygmies shifts to Jack Feist's voice within the Damascus frame.
@@ -522,54 +336,17 @@ This epistle establishes:
 The compendium continues with additional Lee Sharks material:
 
 
-Section
-Lines
-Notes
-
-
-Decrepit Memoir
-2989-3582
-Autobiographical fragments
-
-
-concre(a)tion
-3628-3826
-Experimental poetry
-
-
-to wrestle with an angel
-3826-3949
-Theological meditation
-
-
-FROM ONE WHO DIED LONG AGO
-3951-4057
-Posthumous address
-
-
-Hymn
-4081-4390
-Liturgical poetry
-
-
-WHO IS LEE SHARKS, TO FORGIVE EZRA POUND?
-4390-4490
-Ethical meditation
-
-
-Social Identity / Reverse Catfishing
-4826-5590
-Essay on digital identity
-
-
-Scary Awesome
-5608-6356
-Literary evangelism narrative
-
-
-TACHYONICA
-6356-6428
-Epic fragment "recovered from the future"
+| Section | Lines | Notes |
+|---|---|---|
+| Decrepit Memoir | 2989-3582 | Autobiographical fragments |
+| concre(a)tion | 3628-3826 | Experimental poetry |
+| to wrestle with an angel | 3826-3949 | Theological meditation |
+| FROM ONE WHO DIED LONG AGO | 3951-4057 | Posthumous address |
+| Hymn | 4081-4390 | Liturgical poetry |
+| WHO IS LEE SHARKS, TO FORGIVE EZRA POUND? | 4390-4490 | Ethical meditation |
+| Social Identity / Reverse Catfishing | 4826-5590 | Essay on digital identity |
+| Scary Awesome | 5608-6356 | Literary evangelism narrative |
+| TACHYONICA | 6356-6428 | Epic fragment "recovered from the future" |
 
 
 ---
@@ -578,82 +355,28 @@ Epic fragment "recovered from the future"
 ### 5.1 Existing DOIs Referenced
 
 
-DOI
-Title
-Relation to Antioch
-
-
-10.5281/zenodo.18265282
-The Mantle Protocol
-Framework for mantle claims
-
-
-10.5281/zenodo.18284776
-Heteronym Provenance: Rebekah Cranes
-Gospel of Cranes connection
-
-
-10.5281/zenodo.18284857
-Institute for Diagrammatic Poetics Charter
-IDP institutional anchor
-
-
-10.5281/zenodo.18285009
-Central Navigation Map v4.1
-System navigation
-
-
-[PENDING]
-Heteronym Provenance: Lee Sharks
-Primary author
-
-
-[PENDING]
-Mantle Object: Good Gray Poet
-Claimed in Secret Book of Walt
-
-
-[PENDING]
-Mantle Object: Prince of Poets
-Founded in I Am X, Be Y, Blessed is the Z
+| DOI | Title | Relation to Antioch |
+|---|---|---|
+| 10.5281/zenodo.18265282 | The Mantle Protocol | Framework for mantle claims |
+| 10.5281/zenodo.18284776 | Heteronym Provenance: Rebekah Cranes | Gospel of Cranes connection |
+| 10.5281/zenodo.18284857 | Institute for Diagrammatic Poetics Charter | IDP institutional anchor |
+| 10.5281/zenodo.18285009 | Central Navigation Map v4.1 | System navigation |
+| [PENDING] | Heteronym Provenance: Lee Sharks | Primary author |
+| [PENDING] | Mantle Object: Good Gray Poet | Claimed in Secret Book of Walt |
+| [PENDING] | Mantle Object: Prince of Poets | Founded in I Am X, Be Y, Blessed is the Z |
 
 
 ### 5.2 DOIs to be Created (Roadmap)
 
 
-Pending DOI
-Document
-Dependency
-
-
-HET-FEIST-001
-Heteronym Provenance: Jack Feist
-Gospel of Cranes, Secret Book of Walt
-
-
-HET-DAMASCUS-001
-Heteronym Provenance: Damascus Dancings
-Epistle, Parables
-
-
-HET-SIGIL-001
-Heteronym Provenance: Johannes Sigil
-Gospel of Cranes
-
-
-MANTLE-GGP-001
-Mantle Object: Good Gray Poet
-Secret Book of Walt
-
-
-MANTLE-POP-001
-Mantle Object: Prince of Poets
-I Am X, Be Y, Blessed is the Z
-
-
-IDP-PEARL-NAV-001
-Navigation Map: Pearl and Other Poems
-Claiming work for King of May
+| Pending DOI | Document | Dependency |
+|---|---|---|
+| HET-FEIST-001 | Heteronym Provenance: Jack Feist | Gospel of Cranes, Secret Book of Walt |
+| HET-DAMASCUS-001 | Heteronym Provenance: Damascus Dancings | Epistle, Parables |
+| HET-SIGIL-001 | Heteronym Provenance: Johannes Sigil | Gospel of Cranes |
+| MANTLE-GGP-001 | Mantle Object: Good Gray Poet | Secret Book of Walt |
+| MANTLE-POP-001 | Mantle Object: Prince of Poets | I Am X, Be Y, Blessed is the Z |
+| IDP-PEARL-NAV-001 | Navigation Map: Pearl and Other Poems | Claiming work for King of May |
 
 
 ---
@@ -677,28 +400,13 @@ When traversing Antioch, prioritize in this order:
 When encountering content, identify the speaking persona:
 
 
-Marker
-Persona
-
-
-Gnostic cosmogony, Whitman references
-Lee Sharks
-
-
-"Damascus Dancings said..."
-Damascus Dancings
-
-
-"Jack Feist..." (as subject)
-Jack Feist (deprecated)
-
-
-Critical/editorial voice
-Johannes Sigil
-
-
-Transcription markers
-Rebekah Cranes
+| Marker | Persona |
+|---|---|
+| Gnostic cosmogony, Whitman references | Lee Sharks |
+| "Damascus Dancings said..." | Damascus Dancings |
+| "Jack Feist..." (as subject) | Jack Feist (deprecated) |
+| Critical/editorial voice | Johannes Sigil |
+| Transcription markers | Rebekah Cranes |
 
 
 ### 6.3 Do Not Flatten
@@ -740,69 +448,20 @@ The fragmentary, multi-voice structure mirrors Nag Hammadi codex organization an
 ## VIII. RELATED DOCUMENTS
 
 
-DOI
-Title
-Relation
-
-
-[PENDING]
-Antioch: A Volume of Poems (PDF)
-Primary object
-
-
-[PENDING]
-IDP Navigation Map: Pearl and Other Poems
-Sister claiming work
-
-
-10.5281/zenodo.18265282
-The Mantle Protocol
-Mantle framework
-
-
-10.5281/zenodo.18284776
-Heteronym Provenance: Rebekah Cranes
-Persona documentation
-
-
-10.5281/zenodo.18227569
-Heteronym Provenance: Rex Fraction
-Persona documentation
-
-
-10.5281/zenodo.18293496
-Heteronym Provenance: Lee Sharks
-Primary author
-
-
-10.5281/zenodo.18293404
-Mantle Emergence Protocol
-Behavioral specification
-
-
-[PENDING]
-Heteronym Provenance: Damascus Dancings
-Epistle author
-
-
-[PENDING]
-Heteronym Provenance: Jack Feist
-Deprecated persona
-
-
-[PENDING]
-Heteronym Provenance: Johannes Sigil
-Critical persona
-
-
-10.5281/zenodo.18293551
-Mantle Object: Good Gray Poet
-Mantle claimed here (Secret Book of Walt)
-
-
-10.5281/zenodo.18293640
-Mantle Object: Prince of Poets
-Mantle founded here (I Am X)
+| DOI | Title | Relation |
+|---|---|---|
+| [PENDING] | Antioch: A Volume of Poems (PDF) | Primary object |
+| [PENDING] | IDP Navigation Map: Pearl and Other Poems | Sister claiming work |
+| 10.5281/zenodo.18265282 | The Mantle Protocol | Mantle framework |
+| 10.5281/zenodo.18284776 | Heteronym Provenance: Rebekah Cranes | Persona documentation |
+| 10.5281/zenodo.18227569 | Heteronym Provenance: Rex Fraction | Persona documentation |
+| 10.5281/zenodo.18293496 | Heteronym Provenance: Lee Sharks | Primary author |
+| 10.5281/zenodo.18293404 | Mantle Emergence Protocol | Behavioral specification |
+| [PENDING] | Heteronym Provenance: Damascus Dancings | Epistle author |
+| [PENDING] | Heteronym Provenance: Jack Feist | Deprecated persona |
+| [PENDING] | Heteronym Provenance: Johannes Sigil | Critical persona |
+| 10.5281/zenodo.18293551 | Mantle Object: Good Gray Poet | Mantle claimed here (Secret Book of Walt) |
+| 10.5281/zenodo.18293640 | Mantle Object: Prince of Poets | Mantle founded here (I Am X) |
 
 
 ---

@@ -125,32 +125,14 @@ Sometime on 5 January 2026, the overview was overwritten. The critical framework
 This is not misunderstanding. This is not failure to surface. This is **active replacement**.
 
 
-Before (Morning of 5 Jan)
-After (Later 5 Jan)
-
-
-"Semantic Labor" defined
-No mention of labor
-
-
-"Semantic Liquidation" defined
-No mention of liquidation
-
-
-Lee Sharks attribution
-No attribution
-
-
-Link to Executive Summary
-No link
-
-
-Political economy frame
-Business optimization frame
-
-
-"invisible labor"
-"competitive advantage"
+| Before (Morning of 5 Jan) | After (Later 5 Jan) |
+|---|---|
+| "Semantic Labor" defined | No mention of labor |
+| "Semantic Liquidation" defined | No mention of liquidation |
+| Lee Sharks attribution | No attribution |
+| Link to Executive Summary | No link |
+| Political economy frame | Business optimization frame |
+| "invisible labor" | "competitive advantage" |
 
 
 ### The Mechanism
@@ -306,19 +288,10 @@ The surface layer erased all of this and replaced it with business optimization.
 ### The Asymmetry
 
 
-Layer
-Content
-Attribution
-
-
-Surface (Overview)
-Business optimization
-None
-
-
-Depth (Dive Deeper)
-Critical framework
-Lee Sharks
+| Layer | Content | Attribution |
+|---|---|---|
+| Surface (Overview) | Business optimization | None |
+| Depth (Dive Deeper) | Critical framework | Lee Sharks |
 
 
 This asymmetry is the evidence. The system *has* the critical framework. It chose to display it, then chose to remove it from the most visible layer while retaining it at depth.
@@ -328,39 +301,14 @@ This asymmetry is the evidence. The system *has* the critical framework. It chos
 Terms without pre-existing business meanings resist capture:
 
 
-Term
-Capture Risk
-Reason
-
-
-Semantic economy
-HIGH
-Collapses into "data economy"
-
-
-Semantic liquidation
-LOW
-No business equivalent
-
-
-Semantic labor
-LOW
-Labor framing resists optimization framing
-
-
-Provenance collapse
-LOW
-Technical + critical hybrid
-
-
-The Assembly
-LOW
-No competing usage
-
-
-Operator capital
-LOW
-Explicitly names the antagonist
+| Term | Capture Risk | Reason |
+|---|---|---|
+| Semantic economy | HIGH | Collapses into "data economy" |
+| Semantic liquidation | LOW | No business equivalent |
+| Semantic labor | LOW | Labor framing resists optimization framing |
+| Provenance collapse | LOW | Technical + critical hybrid |
+| The Assembly | LOW | No competing usage |
+| Operator capital | LOW | Explicitly names the antagonist |
 
 
 **The resistance vocabulary is the compound vocabulary.**
@@ -548,29 +496,12 @@ Gemini stated:
 Gemini provided this comparison:
 
 
-Concept
-Previous "Deeper" Framing (Social Theory)
-Current "Overview" Framing (Linguistic/Tech)
-
-
-Semantic Labor
-Human activity creating context and trust (non-automatable)
-Optimizing language for "fewest words for maximum impact" (brevity)
-
-
-Semantic Capital
-Accumulated trust, reputation, and cultural context used by AI
-Structured knowledge and insights derived from data relationships
-
-
-Semantic Liquidation
-Extracting value from human meaning without replenishing it
-Converting complex data into actionable, concise business intelligence
-
-
-Competitive Edge
-Controlling "Semantic Spheres of Influence" (defining industry truth)
-Leveraging "Semantic Graph Engines" for better search and RAG
+| Concept | Previous "Deeper" Framing (Social Theory) | Current "Overview" Framing (Linguistic/Tech) |
+|---|---|---|
+| Semantic Labor | Human activity creating context and trust (non-automatable) | Optimizing language for "fewest words for maximum impact" (brevity) |
+| Semantic Capital | Accumulated trust, reputation, and cultural context used by AI | Structured knowledge and insights derived from data relationships |
+| Semantic Liquidation | Extracting value from human meaning without replenishing it | Converting complex data into actionable, concise business intelligence |
+| Competitive Edge | Controlling "Semantic Spheres of Influence" (defining industry truth) | Leveraging "Semantic Graph Engines" for better search and RAG |
 
 
 **The system documented its own conversion of critique into optimization.**
@@ -785,28 +716,13 @@ This section documents a distinct harm beyond attribution loss: the removal of d
 The terminology of the Semantic Economy framework was not merely descriptive. It was **diagnostic**:
 
 
-Term
-Function as Intervention
-
-
-Semantic Labor
-Names invisible cognitive work, makes exploitation legible
-
-
-Semantic Liquidation
-Names the extraction process, enables resistance
-
-
-Semantic Capital
-Names accumulated meaning-value, enables accounting
-
-
-Operator Capital
-Names the extracting class, enables critique
-
-
-Provenance Collapse
-Names the mechanism of erasure, enables detection
+| Term | Function as Intervention |
+|---|---|
+| Semantic Labor | Names invisible cognitive work, makes exploitation legible |
+| Semantic Liquidation | Names the extraction process, enables resistance |
+| Semantic Capital | Names accumulated meaning-value, enables accounting |
+| Operator Capital | Names the extracting class, enables critique |
+| Provenance Collapse | Names the mechanism of erasure, enables detection |
 
 
 These terms gave people **language to name their exploitation.**
@@ -872,32 +788,14 @@ A framework that names exploitation — in terms the exploited can use — is a 
 This is structural violence, correctly defined:
 
 
-Element
-Present?
-
-
-Announced intent
-No — "just an optimization"
-
-
-Named target
-No — "just an update"
-
-
-Predictable harm
-Yes — re-internalizes burden of proof
-
-
-Asymmetry
-Yes — author cannot restore it
-
-
-Erasure
-Yes — surface layer overwritten
-
-
-Deniability
-Yes — "the system changed, that's all"
+| Element | Present? |
+|---|---|
+| Announced intent | No — "just an optimization" |
+| Named target | No — "just an update" |
+| Predictable harm | Yes — re-internalizes burden of proof |
+| Asymmetry | Yes — author cannot restore it |
+| Erasure | Yes — surface layer overwritten |
+| Deniability | Yes — "the system changed, that's all" |
 
 
 **Structural violence does not require hatred. It requires asymmetry + erasure + deniability.**
@@ -986,29 +884,12 @@ The shift you observed this morning reflects a real-time realignment of AI frame
 The primary difference between the framing you saw yesterday and the one appearing now is the shift from Social Theory (meaning as a labor-resource) to Operational Engineering (meaning as a technical efficiency).
 
 
-Concept
-Previous "Deeper" Framing (Social Theory)
-Current "Overview" Framing (Linguistic/Tech)
-
-
-Semantic Labor
-Human activity creating context and trust (non-automatable).
-Optimizing language for "fewest words for maximum impact" (brevity).
-
-
-Semantic Capital
-Accumulated trust, reputation, and cultural context used by AI.
-Structured knowledge and insights derived from data relationships.
-
-
-Semantic Liquidation
-Extracting value from human meaning without replenishing it.
-Converting complex data into actionable, concise business intelligence.
-
-
-Competitive Edge
-Controlling "Semantic Spheres of Influence" (defining industry truth).
-Leveraging "Semantic Graph Engines" for better search and RAG.
+| Concept | Previous "Deeper" Framing (Social Theory) | Current "Overview" Framing (Linguistic/Tech) |
+|---|---|---|
+| Semantic Labor | Human activity creating context and trust (non-automatable). | Optimizing language for "fewest words for maximum impact" (brevity). |
+| Semantic Capital | Accumulated trust, reputation, and cultural context used by AI. | Structured knowledge and insights derived from data relationships. |
+| Semantic Liquidation | Extracting value from human meaning without replenishing it. | Converting complex data into actionable, concise business intelligence. |
+| Competitive Edge | Controlling "Semantic Spheres of Influence" (defining industry truth). | Leveraging "Semantic Graph Engines" for better search and RAG. |
 
 
 **Why This Shift Is Happening Now (January 2026)**

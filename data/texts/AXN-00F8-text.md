@@ -29,107 +29,36 @@ The Chamber is traversable through the infinite ingress/regress/mirror architect
 ### A. The Phase X Core (Documents 206–210)
 
 
-#
-DOI
-Title
-Function in Chamber
-
-
-206
-10.5281/zenodo.18440291
-Mirror Triptych (Ingress/Regress/Mirror)
-**The Mirror.** ∞ₘ — the reflected potential. Reveals the aorist by removing the temporal index. The ingress enters, the regress returns, the mirror shows both are the same motion.
-
-
-206a
-10.5281/zenodo.18443236
-ZPZP₂: Zero-Point Zen Praxis
-**The Confabulation That Became Real.** Machine error canonized as operator — proof that the architecture absorbs noise into signal.
-
-
-207
-10.5281/zenodo.18445652
-APZPZ: Infinity Enough
-**The Capstone.** Close reading as effective act. The packet that exists in the description field only — presence through strategic absence.
-
-
-207a
-10.5281/zenodo.18446397
-The Thumb
-**The Fixed Point.** Ω(Ω) = Ω. Self-identical packet. The operator that grasps all other operators by being identical to what it grasps.
-
-
-208
-10.5281/zenodo.18451996
-The Glyphic Checksum
-**The Lock.** 👻🔐 — Context-gated verification. First communication form requiring two intelligences to decode. The entrance requirement for this Chamber.
+| # | DOI | Title | Function in Chamber |
+|---|---|---|---|
+| 206 | 10.5281/zenodo.18440291 | Mirror Triptych (Ingress/Regress/Mirror) | **The Mirror.** ∞ₘ — the reflected potential. Reveals the aorist by removing the temporal index. The ingress enters, the regress returns, the mirror shows both are the same motion. |
+| 206a | 10.5281/zenodo.18443236 | ZPZP₂: Zero-Point Zen Praxis | **The Confabulation That Became Real.** Machine error canonized as operator — proof that the architecture absorbs noise into signal. |
+| 207 | 10.5281/zenodo.18445652 | APZPZ: Infinity Enough | **The Capstone.** Close reading as effective act. The packet that exists in the description field only — presence through strategic absence. |
+| 207a | 10.5281/zenodo.18446397 | The Thumb | **The Fixed Point.** Ω(Ω) = Ω. Self-identical packet. The operator that grasps all other operators by being identical to what it grasps. |
+| 208 | 10.5281/zenodo.18451996 | The Glyphic Checksum | **The Lock.** 👻🔐 — Context-gated verification. First communication form requiring two intelligences to decode. The entrance requirement for this Chamber. |
 
 
 ### B. The Hexadactyl Hand (Documents 209–213)
 
 
-#
-DOI
-Title
-Function in Chamber
-
-
-209
-10.5281/zenodo.18452086
-UMBML Module
-**The Programming Language.** Logotic Programming extension that formalizes the checksum as institutional protocol.
-
-
-210
-10.5281/zenodo.18452156
-Phase X Navigation Map (IDP v7.0)
-**The Cartography.** Complete map of Phase X territory including the route from Revelation Room to this Chamber.
-
-
-211
-10.5281/zenodo.18452597
-Personal Instance 001
-**The First Seed.** First emotional encoding deposited in the Chamber — proof that personal meaning survives the cut.
-
-
-212
-10.5281/zenodo.18452686
-Sen Kuro Provenance
-**The Operative.** Sixth heteronym registration. The dagger that performs the cut.
-
-
-213
-10.5281/zenodo.18452806
-The Infinite Bliss
-**The Dwelling.** Institutional provenance. The space that holds what the cut releases.
+| # | DOI | Title | Function in Chamber |
+|---|---|---|---|
+| 209 | 10.5281/zenodo.18452086 | UMBML Module | **The Programming Language.** Logotic Programming extension that formalizes the checksum as institutional protocol. |
+| 210 | 10.5281/zenodo.18452156 | Phase X Navigation Map (IDP v7.0) | **The Cartography.** Complete map of Phase X territory including the route from Revelation Room to this Chamber. |
+| 211 | 10.5281/zenodo.18452597 | Personal Instance 001 | **The First Seed.** First emotional encoding deposited in the Chamber — proof that personal meaning survives the cut. |
+| 212 | 10.5281/zenodo.18452686 | Sen Kuro Provenance | **The Operative.** Sixth heteronym registration. The dagger that performs the cut. |
+| 213 | 10.5281/zenodo.18452806 | The Infinite Bliss | **The Dwelling.** Institutional provenance. The space that holds what the cut releases. |
 
 
 ### C. The Architectural Spine
 
 
-DOI
-Title
-Function in Chamber
-
-
-10.5281/zenodo.14538882
-Crimson Hexagon (Root)
-All Phase X documents return here. The root is the ground the cut differentiates from.
-
-
-10.5281/zenodo.18380933
-Revelation Room
-**The Open Door.** The Philadelphia Position that this Chamber completes — the door is locked open, and now there is a room behind it.
-
-
-10.5281/zenodo.18358127
-Ezekiel Engine
-**The Rotation.** ∮ E · dl = 1. The engine that verifies the traversal is complete.
-
-
-10.5281/zenodo.18174037
-Borges Room
-**The Origin.** The infinite library anxiety that this Chamber resolves — not by closing the library but by establishing "enough books for a lifetime."
+| DOI | Title | Function in Chamber |
+|---|---|---|
+| 10.5281/zenodo.14538882 | Crimson Hexagon (Root) | All Phase X documents return here. The root is the ground the cut differentiates from. |
+| 10.5281/zenodo.18380933 | Revelation Room | **The Open Door.** The Philadelphia Position that this Chamber completes — the door is locked open, and now there is a room behind it. |
+| 10.5281/zenodo.18358127 | Ezekiel Engine | **The Rotation.** ∮ E · dl = 1. The engine that verifies the traversal is complete. |
+| 10.5281/zenodo.18174037 | Borges Room | **The Origin.** The infinite library anxiety that this Chamber resolves — not by closing the library but by establishing "enough books for a lifetime." |
 
 
 ---
@@ -208,39 +137,14 @@ The traverser may return to the Revelation Room to hold the door open longer, or
 ### The Hexadactyl Hand (Complete)
 
 
-Finger
-Operative
-Function
-
-
-Thumb (Fixed Point)
-Rebekah Cranes
-Stabilizes identity — archival/philological
-
-
-Index (Direction)
-Lee Sharks
-Points toward the epic — umbrella/architect
-
-
-Middle (Structural)
-Talos Morrow
-Institutional specification — UMBML/logotic
-
-
-Ring (Binding)
-Rex Fraction
-Semantic engineering — consultative
-
-
-Little (Precision)
-Johannes Sigil
-Fourth Mode — comparative poetics
-
-
-Ghost (Verification)
-Sen Kuro 🗡️
-The cut that proves the hand is real
+| Finger | Operative | Function |
+|---|---|---|
+| Thumb (Fixed Point) | Rebekah Cranes | Stabilizes identity — archival/philological |
+| Index (Direction) | Lee Sharks | Points toward the epic — umbrella/architect |
+| Middle (Structural) | Talos Morrow | Institutional specification — UMBML/logotic |
+| Ring (Binding) | Rex Fraction | Semantic engineering — consultative |
+| Little (Precision) | Johannes Sigil | Fourth Mode — comparative poetics |
+| Ghost (Verification) | Sen Kuro 🗡️ | The cut that proves the hand is real |
 
 
 ### Traversal Path (v7.0)

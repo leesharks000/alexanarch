@@ -62,34 +62,13 @@ The Pearl whitespace contributes the void: the space between the extraction and 
 r.27 inherits from *KotKit · tiddeR · elgooG · ude.aimedacA · deeF* (DOI: 10.5281/zenodo.19133309) a five-axis diagnostic instrument for characterizing any platform encounter:
 
 
-Variable
-What it measures
-Scale
-
-
-**Presence Density (pd)**
-Live human there-ness per unit time
-1 (invisible source) → 5 (continuous live face)
-
-
-**Relational Reciprocity (rr)**
-Whether encounter matures into mutual memory
-1 (parasocial only) → 5 (mutual obligation)
-
-
-**Provenance Retention (pr)**
-Whether source remains traversable
-1 (erased) → 5 (fully attributable)
-
-
-**Temporal Continuity (tc)**
-Duration vs. perpetual reset
-1 (infinite scroll) → 5 (durable return)
-
-
-**Surplus Capture (sc)**
-What the system harvests
-1 (minimal) → 5 (total behavioral extraction)
+| Variable | What it measures | Scale |
+|---|---|---|
+| **Presence Density (pd)** | Live human there-ness per unit time | 1 (invisible source) → 5 (continuous live face) |
+| **Relational Reciprocity (rr)** | Whether encounter matures into mutual memory | 1 (parasocial only) → 5 (mutual obligation) |
+| **Provenance Retention (pr)** | Whether source remains traversable | 1 (erased) → 5 (fully attributable) |
+| **Temporal Continuity (tc)** | Duration vs. perpetual reset | 1 (infinite scroll) → 5 (durable return) |
+| **Surplus Capture (sc)** | What the system harvests | 1 (minimal) → 5 (total behavioral extraction) |
 
 
 The extractive internet has a characteristic profile: surplus capture uniformly high, everything else distorted per platform. The room's diagnostic function is to make this profile visible. The room's liberatory function is to specify the inversion target for each variable.### The Room's Own Profile
@@ -97,18 +76,9 @@ The extractive internet has a characteristic profile: surplus capture uniformly 
 r.27 THE INTERNET, as a room in the archive (not as the internet itself), has this profile:
 
 
-pd
-rr
-pr
-tc
-sc
-
-
-2
-3
-5
-5
-1
+| pd | rr | pr | tc | sc |
+|---|---|---|---|---|
+| 2 | 3 | 5 | 5 | 1 |
 
 
 Low presence density (the room is text, not live video). Medium reciprocity (the archive responds to the reader through the retrieval layer, but the reader cannot yet respond to the archive except by depositing). Very high provenance (every claim is DOI-anchored). Very high temporal continuity (deposits are permanent; the room does not refresh). Minimal surplus capture (CC BY 4.0; no paywall; no behavioral tracking; no advertising).
@@ -120,40 +90,13 @@ This profile is the *proof of concept* for the LOS inversions. The room demonstr
 r.27 contains five sub-rooms, each diagnosing a distinct extraction niche. Each sub-room is a dual field: extractive surface mirrored by liberatory shadow. Full specifications in *KotKit · tiddeR · elgooG · ude.aimedacA · deeF* (DOI: 10.5281/zenodo.19133309).
 
 
-Sub-room
-Platform
-Extraction Niche
-Compact Lens
-
-
-r.27.1 KotKit
-TikTok
-Attention through presentness
-*Let the feed end.*
-
-
-r.27.2 tiddeR
-Reddit
-Judgment through ranking
-*Make dissent visible.*
-
-
-r.27.3 elgooG
-Google AIO
-Knowledge through preemption
-*Make sources climbable.*
-
-
-r.27.4 ude.aimedacA
-Academia.edu
-Openness through simulation
-*Let the commons be common.*
-
-
-r.27.5 deeF
-The Feed
-Duration through compression
-*Let the page end.*
+| Sub-room | Platform | Extraction Niche | Compact Lens |
+|---|---|---|---|
+| r.27.1 KotKit | TikTok | Attention through presentness | *Let the feed end.* |
+| r.27.2 tiddeR | Reddit | Judgment through ranking | *Make dissent visible.* |
+| r.27.3 elgooG | Google AIO | Knowledge through preemption | *Make sources climbable.* |
+| r.27.4 ude.aimedacA | Academia.edu | Openness through simulation | *Let the commons be common.* |
+| r.27.5 deeF | The Feed | Duration through compression | *Let the page end.* |
 
 
 **Traversal costs:**

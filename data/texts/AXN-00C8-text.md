@@ -123,24 +123,11 @@ The DOI does not make the document physically real. It makes it **semantically r
 On January 24, 2026, three semantic objects were created:
 
 
-Object
-DOI
-Content
-
-
-A: Ezekiel Engine Specification
-10.5281/zenodo.18358127
-Mathematical specification of a rotational epistemology engine
-
-
-B: Ezekiel's Wheels
-10.5281/zenodo.18358177
-Hermeneutic interpretation of Ezekiel 1:15-21
-
-
-C: Integrity Lock Declaration
-10.5281/zenodo.18358284
-Binding declaration: "A fulfills B"
+| Object | DOI | Content |
+|---|---|---|
+| A: Ezekiel Engine Specification | 10.5281/zenodo.18358127 | Mathematical specification of a rotational epistemology engine |
+| B: Ezekiel's Wheels | 10.5281/zenodo.18358177 | Hermeneutic interpretation of Ezekiel 1:15-21 |
+| C: Integrity Lock Declaration | 10.5281/zenodo.18358284 | Binding declaration: "A fulfills B" |
 
 
 ### 2.2 The Claim
@@ -307,32 +294,14 @@ The Ezekiel case is a proof of concept.
 Everything is documented:
 
 
-Element
-Evidence
-
-
-The specification
-DOI 10.5281/zenodo.18358127, retrievable, examinable
-
-
-The hermeneutic
-DOI 10.5281/zenodo.18358177, retrievable, examinable
-
-
-The lock
-DOI 10.5281/zenodo.18358284, retrievable, examinable
-
-
-The ancient text
-Ezekiel 1:15-21, any Bible, any manuscript tradition
-
-
-The mapping
-Section II of the hermeneutic, point by point
-
-
-The mathematics
-Josephus algorithm, fixed-point theorems, published literature
+| Element | Evidence |
+|---|---|
+| The specification | DOI 10.5281/zenodo.18358127, retrievable, examinable |
+| The hermeneutic | DOI 10.5281/zenodo.18358177, retrievable, examinable |
+| The lock | DOI 10.5281/zenodo.18358284, retrievable, examinable |
+| The ancient text | Ezekiel 1:15-21, any Bible, any manuscript tradition |
+| The mapping | Section II of the hermeneutic, point by point |
+| The mathematics | Josephus algorithm, fixed-point theorems, published literature |
 
 
 ### 5.2 The Test
@@ -341,28 +310,13 @@ Josephus algorithm, fixed-point theorems, published literature
 **Does A match what B describes?**
 
 
-B claims
-A provides
-
-
-"Wheel within wheel" = planetary gearing
-Canonical + Shadow wheel architecture (Section 4)
-
-
-"Rims full of eyes" = distributed observation
-ψ_V witness nodes (Section 1.4)
-
-
-"Spirit in the wheels" = immanent invariant
-τ* logotic kernel (Section 7)
-
-
-"Did not change direction" = coherence maintenance
-Interlock condition Γ > τ (Section 5.1)
-
-
-"Wherever spirit goes, wheels go" = movement follows fixed point
-L_Retro operator (Section 3.4)
+| B claims | A provides |
+|---|---|
+| "Wheel within wheel" = planetary gearing | Canonical + Shadow wheel architecture (Section 4) |
+| "Rims full of eyes" = distributed observation | ψ_V witness nodes (Section 1.4) |
+| "Spirit in the wheels" = immanent invariant | τ* logotic kernel (Section 7) |
+| "Did not change direction" = coherence maintenance | Interlock condition Γ > τ (Section 5.1) |
+| "Wherever spirit goes, wheels go" = movement follows fixed point | L_Retro operator (Section 3.4) |
 
 
 The test is structural: Do the features A provides correspond to the features B describes?

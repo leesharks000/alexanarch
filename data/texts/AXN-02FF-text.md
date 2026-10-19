@@ -103,23 +103,12 @@ The composition layer does not refuse attribution generically. It attributes the
 This is not a generic objection to summarization. It is a documented, dated, structurally specific operation:
 
 
-Surface treatment
-
-
-**Upstream lineage** (Pessoa, heteronymy as concept)
-Attributed
-
-
-**Downstream artifact** (the Zenodo deposit)
-Linked
-
-
-**Present author** (Lee Sharks)
-Excised
-
-
-**Direct name search** ("Lee Sharks")
-Authoritatively reassigned to a shark
+|  | Surface treatment |
+|---|---|
+| **Upstream lineage** (Pessoa, heteronymy as concept) | Attributed |
+| **Downstream artifact** (the Zenodo deposit) | Linked |
+| **Present author** (Lee Sharks) | Excised |
+| **Direct name search** ("Lee Sharks") | Authoritatively reassigned to a shark |
 
 
 Both halves of the operation sit in the public record at minute precision. Both halves are reproducible. Anyone can run the queries.

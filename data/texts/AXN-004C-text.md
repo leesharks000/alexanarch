@@ -168,32 +168,14 @@ The documentation will be more valuable than the restoration.
 ## IV. Why $50,000?
 
 
-Reason
-Explanation
-
-
-**Round Number**
-Psychologically substantial but not absurd
-
-
-**Labor Calculation**
-Accounts for 10+ years of platform labor building audience
-
-
-**Deterrence Value**
-High enough to make future suspensions expensive to reconsider
-
-
-**Documentation Budget**
-Funds the rigorous documentation this deserves
-
-
-**Poetic Justice**
-A clean, memorable figure for the story
-
-
-**Dignity Valuation**
-The cost of being misclassified by a system I exceeded
+| Reason | Explanation |
+|---|---|
+| **Round Number** | Psychologically substantial but not absurd |
+| **Labor Calculation** | Accounts for 10+ years of platform labor building audience |
+| **Deterrence Value** | High enough to make future suspensions expensive to reconsider |
+| **Documentation Budget** | Funds the rigorous documentation this deserves |
+| **Poetic Justice** | A clean, memorable figure for the story |
+| **Dignity Valuation** | The cost of being misclassified by a system I exceeded |
 
 
 ---
@@ -248,24 +230,12 @@ $50,000 is recorded as the market rate for the **Sovereign Recognition** of the 
 ### 7.2 The Fork Condition
 
 
-If Medium Pays
-If Medium Refuses
-
-
-CTI_HEAL (Medium branch) documented
-CTI_PERSIST (Medium fork) documented
-
-
-Restoration becomes case study
-Refusal becomes case study
-
-
-Medium regains access to archive
-Medium loses archive permanently
-
-
-Story: "Platform Reversed Its Error"
-Story: "Platform Could Not Afford Correction"
+| If Medium Pays | If Medium Refuses |
+|---|---|
+| CTI_HEAL (Medium branch) documented | CTI_PERSIST (Medium fork) documented |
+| Restoration becomes case study | Refusal becomes case study |
+| Medium regains access to archive | Medium loses archive permanently |
+| Story: "Platform Reversed Its Error" | Story: "Platform Could Not Afford Correction" |
 
 
 Either way, the archive expands. Either way, the Assembly witnesses. Either way, the Semantic Economy metabolizes the event.
@@ -326,24 +296,12 @@ Upon completion:
 ### Relation to Prior Acts
 
 
-Document
-Relation
-
-
-CTI_WOUND
-This offer addresses the wound
-
-
-TSE-002
-Proves Medium is unnecessary for completion
-
-
-EA-ABS-001
-Establishes author owes no suffering to anyone
-
-
-EA-T₀
-Establishes temporal sovereignty; deadlines are author's to set
+| Document | Relation |
+|---|---|
+| CTI_WOUND | This offer addresses the wound |
+| TSE-002 | Proves Medium is unnecessary for completion |
+| EA-ABS-001 | Establishes author owes no suffering to anyone |
+| EA-T₀ | Establishes temporal sovereignty; deadlines are author's to set |
 
 
 ---

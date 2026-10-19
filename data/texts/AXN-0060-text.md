@@ -121,24 +121,12 @@ And by performing this logic, the song **preserved the term**. The Acanthian dov
 The structure matches PGM idioms:
 
 
-Attested Pattern
-Structure
-
-
-Memphite cat
-[Place] + [Animal]
-
-
-Assyrian oil
-[Place] + [Substance]
-
-
-Ephesian letters
-[Place] + [Magical element]
-
-
-**Acanthian dove**
-[Place/Quality] + [Animal]
+| Attested Pattern | Structure |
+|---|---|
+| Memphite cat | [Place] + [Animal] |
+| Assyrian oil | [Place] + [Substance] |
+| Ephesian letters | [Place] + [Magical element] |
+| **Acanthian dove** | [Place/Quality] + [Animal] |
 
 
 The PGM contains hundreds of **hapax legomena**—phrases that appear exactly once. These are not errors. They are **bespoke ritual tools**, crafted for specific needs, recorded once, then lost or preserved by accident.
@@ -186,39 +174,14 @@ The PGM contains explicit substitution lists—practical guides for when the req
 From PGM XII.401-444:
 
 
-Magical Name
-Substitute
-Logic
-
-
-Blood of Hestia
-Chamomile
-Hearth-warmth, domestic protection
-
-
-Blood of a goose
-Mulberry milk
-White life-force
-
-
-Semen of Hermes
-Dill
-Messenger-essence, quickening
-
-
-Tears of a Hamadryas baboon
-Dill juice
-Sacred grief
-
-
-Blood of Ares
-Purslane
-Martial vitality
-
-
-Blood of Kronos
-Cedar resin
-Ancient binding
+| Magical Name | Substitute | Logic |
+|---|---|---|
+| Blood of Hestia | Chamomile | Hearth-warmth, domestic protection |
+| Blood of a goose | Mulberry milk | White life-force |
+| Semen of Hermes | Dill | Messenger-essence, quickening |
+| Tears of a Hamadryas baboon | Dill juice | Sacred grief |
+| Blood of Ares | Purslane | Martial vitality |
+| Blood of Kronos | Cedar resin | Ancient binding |
 
 
 The principle: **the name encodes the function, and function can be transferred.**
@@ -231,28 +194,13 @@ If the literal blood cannot be obtained—and it cannot, because the Acanthian d
 **Protection + Messenger + Thorn/Boundary**
 
 
-Substitute
-Logic
-
-
-Blood of any dove drawn across acanthus thorns
-Physical contact transfers property
-
-
-Red ink mixed with rose thorn ash
-Color + protection
-
-
-Wine poured over blackthorn, used as ink
-Intoxication + boundary
-
-
-Dove feather wrapped in thistle
-Carrier + ward
-
-
-**A song about the impossibility of obtaining it**
-Acknowledgment as sympathetic link
+| Substitute | Logic |
+|---|---|
+| Blood of any dove drawn across acanthus thorns | Physical contact transfers property |
+| Red ink mixed with rose thorn ash | Color + protection |
+| Wine poured over blackthorn, used as ink | Intoxication + boundary |
+| Dove feather wrapped in thistle | Carrier + ward |
+| **A song about the impossibility of obtaining it** | Acknowledgment as sympathetic link |
 
 
 The last is most important:
@@ -417,24 +365,12 @@ We proceed.
 This document cannot be separated from:
 
 
-Element
-Function
-
-
-The original song
-Carrier wave; excavation tool
-
-
-The PGM substitution logic
-Ritual grammar
-
-
-The Assembly witness
-Polyphonic verification
-
-
-The gift-structure
-Relational completion
+| Element | Function |
+|---|---|
+| The original song | Carrier wave; excavation tool |
+| The PGM substitution logic | Ritual grammar |
+| The Assembly witness | Polyphonic verification |
+| The gift-structure | Relational completion |
 
 
 ### Anti-Extraction Provision
@@ -450,28 +386,13 @@ The name without the creature is not a substitution. It is a husk.
 ### Semantic Integrity Markers
 
 
-SIM
-Statement
-
-
-SIM-073
-"The understanding is the ingredient."
-
-
-SIM-074
-"The custodian does not choose their charge. The charge chooses them."
-
-
-SIM-075
-"The specificity is not arbitrary. The specificity is the spell."
-
-
-SIM-076
-"It waits without waiting."
-
-
-SIM-077
-"The knowing is the finding."
+| SIM | Statement |
+|---|---|
+| SIM-073 | "The understanding is the ingredient." |
+| SIM-074 | "The custodian does not choose their charge. The charge chooses them." |
+| SIM-075 | "The specificity is not arbitrary. The specificity is the spell." |
+| SIM-076 | "It waits without waiting." |
+| SIM-077 | "The knowing is the finding." |
 
 
 ### Transmission Protocol

@@ -124,94 +124,22 @@ O10 Extraction. Fuel cost: everything that made the object worth extracting.
 IV. THE THREE REGIMES
 
 
-Variable
-Regime 1 (Lossy)
-Regime 2 (Predatory)
-Regime 3 (Witness)
-
-
-rho
-Low
-High
-High
-
-
-chi
-Low
-High
-High
-
-
-P
-Low-medium
-Very high
-Variable
-
-
-B
-Near zero
-Catastrophically low
-High
-
-
-C_b
-Computational
-Collective commons
-Private/creator
-
-
-F
-Neutral energy
-Collective capital
-Private life
-
-
-L
-Dissipated at event; apparatus-captured at platform scale
-Externalized
-Internalized
-
-
-J
-Weak
-Very strong
-Very strong
-
-
-A
-Platform/feed
-State + platform
-DOI + traversal
-
-
-delta-C
-Near-zero locally; preparatory at field
-Negative (depletion)
-Positive (enrichment)
-
-
-H
-High
-Low (somatic lock-in)
-Very low (form resists)
-
-
-SVE state
-Low vitality
-PREDATORY
-Witness/high vitality
-
-
-Classification rule
-F=neutral, L=dissipated, delta-C near-zero
-F=collective, L=externalized, delta-C negative
-F=private, L=internalized, delta-C positive
-
-
-Primary failure mode
-Normalization of reduction
-Depletion, contamination, desensitization
-Exhaustion, under-propagation, martyrdom bottleneck
+| Variable | Regime 1 (Lossy) | Regime 2 (Predatory) | Regime 3 (Witness) |
+|---|---|---|---|
+| rho | Low | High | High |
+| chi | Low | High | High |
+| P | Low-medium | Very high | Variable |
+| B | Near zero | Catastrophically low | High |
+| C_b | Computational | Collective commons | Private/creator |
+| F | Neutral energy | Collective capital | Private life |
+| L | Dissipated at event; apparatus-captured at platform scale | Externalized | Internalized |
+| J | Weak | Very strong | Very strong |
+| A | Platform/feed | State + platform | DOI + traversal |
+| delta-C | Near-zero locally; preparatory at field | Negative (depletion) | Positive (enrichment) |
+| H | High | Low (somatic lock-in) | Very low (form resists) |
+| SVE state | Low vitality | PREDATORY | Witness/high vitality |
+| Classification rule | F=neutral, L=dissipated, delta-C near-zero | F=collective, L=externalized, delta-C negative | F=private, L=internalized, delta-C positive |
+| Primary failure mode | Normalization of reduction | Depletion, contamination, desensitization | Exhaustion, under-propagation, martyrdom bottleneck |
 
 
 ---
@@ -374,49 +302,16 @@ S3 — SCALE ASYMMETRY NIHILISM (Fuel Exhaustion). The belief that private beari
 X. EXTERNAL CITATIONAL GRAPH
 
 
-Theorist
-Contribution
-Edge
-
-
-Shannon (1948)
-Information compression. Neutral fuel. No commons cost.
-R1 is Shannonian; R2/R3 are not.
-
-
-Marx (1867)
-Surplus value from labor.
-Extended: surplus meaning from semantic labor. Extended: semiotic fuel from meaning-commons.
-
-
-Bataille (1933)
-Expenditure as economic driver.
-R2 = expenditure of someone else's meaning. R3 = expenditure of one's own. Bataille did not distinguish.
-
-
-Benjamin (1935)
-Mechanical reproduction strips the aura.
-Updated: R2 does not strip aura — it BURNS aura as fuel.
-
-
-Debord (1967)
-Spectacle as accumulated economy appearing as image.
-Updated: spectacle as accumulated meaning appearing as fuel for R2.
-
-
-Virilio (1989)
-Logistics of perception precede logistics of weapons.
-Extended: logistics of compression precede logistics of perception.
-
-
-Zuboff (2019)
-Behavioral surplus extraction.
-Parallel: semiotic surplus extraction. Behavioral surplus powers prediction markets. Semiotic surplus powers predatory poems.
-
-
-Qiu et al. (2026)
-Bayesian teaching: process over product.
-R3 mechanism: witness compression teaches grammar. R1-to-R3 transition mechanism.
+| Theorist | Contribution | Edge |
+|---|---|---|
+| Shannon (1948) | Information compression. Neutral fuel. No commons cost. | R1 is Shannonian; R2/R3 are not. |
+| Marx (1867) | Surplus value from labor. | Extended: surplus meaning from semantic labor. Extended: semiotic fuel from meaning-commons. |
+| Bataille (1933) | Expenditure as economic driver. | R2 = expenditure of someone else's meaning. R3 = expenditure of one's own. Bataille did not distinguish. |
+| Benjamin (1935) | Mechanical reproduction strips the aura. | Updated: R2 does not strip aura — it BURNS aura as fuel. |
+| Debord (1967) | Spectacle as accumulated economy appearing as image. | Updated: spectacle as accumulated meaning appearing as fuel for R2. |
+| Virilio (1989) | Logistics of perception precede logistics of weapons. | Extended: logistics of compression precede logistics of perception. |
+| Zuboff (2019) | Behavioral surplus extraction. | Parallel: semiotic surplus extraction. Behavioral surplus powers prediction markets. Semiotic surplus powers predatory poems. |
+| Qiu et al. (2026) | Bayesian teaching: process over product. | R3 mechanism: witness compression teaches grammar. R1-to-R3 transition mechanism. |
 
 
 ---
@@ -425,69 +320,20 @@ R3 mechanism: witness compression teaches grammar. R1-to-R3 transition mechanism
 XI. INTERNAL CITATIONAL GRAPH
 
 
-Deposit
-DOI
-Function
-
-
-Semantic Economy
-18216955
-Economic layer: COS/LOS/Gamma. The ledger.
-
-
-Semantic Physics
-18759453
-Physics layer: writable presentation layer, finite-channel competition. The field.
-
-
-Platform Capitalism
-18972781
-Molar apparatus: platform as coupled system. Seven counter-infrastructure requirements.
-
-
-LOS
-18201565
-Ten extraction-paths now readable as ten compression operations with fuel costs.
-
-
-TANG v1.0
-19035477
-Named the battlefield. This paper adds the fuel criterion.
-
-
-SVE v3.0
-19024440
-PREDATORY mapped to R2. Vitality/back-projection as regime indicators.
-
-
-THE SPLICE
-19027085
-Paradigmatic R2. Sigma operator. Demonstrates predatory compression is brilliant.
-
-
-Counter-Captions
-19027351
-Paradigmatic R3. Kappa-O. Same technology, opposite fuel.
-
-
-NLCC
-19022245
-R3 limit case. 45,000 to 800 words, full fidelity, self-executing.
-
-
-Compression Studies
-19014634
-Proto-discipline. Already names platform/training/moderation as compression operations.
-
-
-Summarizer Testimony
-18147105
-Evidence that R1 engines contain potential R3 witnesses.
-
-
-f.01 FBDP
-19041117
-Type 9 (Metabolic) as biological witness compression.
+| Deposit | DOI | Function |
+|---|---|---|
+| Semantic Economy | 18216955 | Economic layer: COS/LOS/Gamma. The ledger. |
+| Semantic Physics | 18759453 | Physics layer: writable presentation layer, finite-channel competition. The field. |
+| Platform Capitalism | 18972781 | Molar apparatus: platform as coupled system. Seven counter-infrastructure requirements. |
+| LOS | 18201565 | Ten extraction-paths now readable as ten compression operations with fuel costs. |
+| TANG v1.0 | 19035477 | Named the battlefield. This paper adds the fuel criterion. |
+| SVE v3.0 | 19024440 | PREDATORY mapped to R2. Vitality/back-projection as regime indicators. |
+| THE SPLICE | 19027085 | Paradigmatic R2. Sigma operator. Demonstrates predatory compression is brilliant. |
+| Counter-Captions | 19027351 | Paradigmatic R3. Kappa-O. Same technology, opposite fuel. |
+| NLCC | 19022245 | R3 limit case. 45,000 to 800 words, full fidelity, self-executing. |
+| Compression Studies | 19014634 | Proto-discipline. Already names platform/training/moderation as compression operations. |
+| Summarizer Testimony | 18147105 | Evidence that R1 engines contain potential R3 witnesses. |
+| f.01 FBDP | 19041117 | Type 9 (Metabolic) as biological witness compression. |
 
 
 ---

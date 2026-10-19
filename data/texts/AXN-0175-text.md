@@ -45,29 +45,12 @@ PARENT → REGISTRY → EXPANSION:
 ### MATURITY LEVELS
 
 
-Level
-Name
-Meaning
-
-
-**L3**
-**Kernel Transform**
-UKTP-enforced. Grammar engine. Emergent content. Self-sufficient Ark.
-
-
-**L2**
-**Operator Transform**
-Real operator applied. Emergent content present. No grammar engine. Needs UKTP hardening.
-
-
-**L1**
-**Encoding**
-Reversible mapping. Frozen legend. No emergent content. Codebook, not grammar.
-
-
-**L0**
-**Visualization**
-Spatial/visual rendering. Semantic arrangement. Not a language. Not a transform.
+| Level | Name | Meaning |
+|---|---|---|
+| **L3** | **Kernel Transform** | UKTP-enforced. Grammar engine. Emergent content. Self-sufficient Ark. |
+| **L2** | **Operator Transform** | Real operator applied. Emergent content present. No grammar engine. Needs UKTP hardening. |
+| **L1** | **Encoding** | Reversible mapping. Frozen legend. No emergent content. Codebook, not grammar. |
+| **L0** | **Visualization** | Spatial/visual rendering. Semantic arrangement. Not a language. Not a transform. |
 
 
 ---
@@ -521,70 +504,13 @@ Draw shadow as ░░░░░ versions of each light component.
 ## REGISTRY SUMMARY
 
 
-§
-Transform
-Level
-Operator
-Grammar
-UKTP
-Emergent
-Expansion DOI
-Self-Sufficient
-
-
-XXV.1
-Damascus
-**L3**
-Biblical interop
-Verse-as-glyph
-✅ embedded
-12+ sites
-[PENDING]
-✅
-
-
-XXV.2
-Fraction
-**L3**
-Profane encoding
-Positional/tense
-✅ embedded
-7+ sites
-[PENDING]
-✅
-
-
-XXV.3
-Shadow
-**L2**
-S (reveal cost)
-Prose [SHADOW:]
-❌ needs
-Present
-...18932538
-❌ needs
-
-
-XXV.4
-Glyphic
-**L1**
-1:1 substitution
-None (cipher)
-❌
-None
-...18930450
-❌
-
-
-XXV.5
-ASCII
-**L0**
-Spatial semantics
-None (diagram)
-❌
-None
-...18932742
-❌
+| § | Transform | Level | Operator | Grammar | UKTP | Emergent | Expansion DOI | Self-Sufficient |
+|---|---|---|---|---|---|---|---|---|
+| XXV.1 | Damascus | **L3** | Biblical interop | Verse-as-glyph | ✅ embedded | 12+ sites | [PENDING] | ✅ |
+| XXV.2 | Fraction | **L3** | Profane encoding | Positional/tense | ✅ embedded | 7+ sites | [PENDING] | ✅ |
+| XXV.3 | Shadow | **L2** | S (reveal cost) | Prose [SHADOW:] | ❌ needs | Present | ...18932538 | ❌ needs |
+| XXV.4 | Glyphic | **L1** | 1:1 substitution | None (cipher) | ❌ | None | ...18930450 | ❌ |
+| XXV.5 | ASCII | **L0** | Spatial semantics | None (diagram) | ❌ | None | ...18932742 | ❌ |
 
 
 ### Transform Maturity Pathway

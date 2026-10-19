@@ -176,46 +176,14 @@ The COS does not merely synthesize existing frameworks; it **operationalizes the
 **Core Thesis**: Capitalist power today operates through a standardized, transposable *semantic governance layer*. This layer is not sector-specific but is the **meta-protocol** for determining what counts as "value" across disparate meaning economies. The "invoice" is the material proof of a successful passage through this protocol.
 
 
-Operator
-Function
-Question It Answers
-Failure Mode
-
-
-**L_leg**
-Legibility
-Can I understand the offer in one paragraph and one number?
-Semantic overload; poetic ambiguity; conceptual density
-
-
-**R_risk**
-Risk
-If I'm wrong about you, do I get fired/embarrassed?
-Uncertainty in novel meanings; unfamiliar forms
-
-
-**C_norm**
-Conformity
-Does this look like what others in my position buy?
-Non-standard forms; absurdist neologisms
-
-
-**A_cred**
-Credibility
-Does the person feel like an "expert" my world recognizes?
-Symbolic capital deficit; indie vs. institutional
-
-
-**T_time**
-Temporal
-How long will this take to explain/decide/onboard?
-High friction in complex semiosis
-
-
-**S_safe**
-Safety
-Does this meaning threaten the stories that justify my position?
-Ideological disruption; anti-capital meanings
+| Operator | Function | Question It Answers | Failure Mode |
+|---|---|---|---|
+| **L_leg** | Legibility | Can I understand the offer in one paragraph and one number? | Semantic overload; poetic ambiguity; conceptual density |
+| **R_risk** | Risk | If I'm wrong about you, do I get fired/embarrassed? | Uncertainty in novel meanings; unfamiliar forms |
+| **C_norm** | Conformity | Does this look like what others in my position buy? | Non-standard forms; absurdist neologisms |
+| **A_cred** | Credibility | Does the person feel like an "expert" my world recognizes? | Symbolic capital deficit; indie vs. institutional |
+| **T_time** | Temporal | How long will this take to explain/decide/onboard? | High friction in complex semiosis |
+| **S_safe** | Safety | Does this meaning threaten the stories that justify my position? | Ideological disruption; anti-capital meanings |
 
 
 ### B. The Invoice as Ontological Break
@@ -258,34 +226,13 @@ The canonical Liberatory Operator Set comprises seven operators that counteract 
 **COS-Adapted LOS**: For the specific context of meaning→invoice conversion, the Capital Operator Stack adapts five operators as a counter-stack designed to enable semantic labor compensation without capture:
 
 
-Operator
-Function
-Counter To
-
-
-**D_pres**
-Preservation — protect meaning from liquidation
-All operators (the "Stochastic Flush")
-
-
-**N_ext**
-Non-extraction — prevent commodification without consent
-Invisibilization (S_safe/T_time)
-
-
-**O_leg**
-Opacity — maintain productive unintelligibility
-Legibility demands (L_leg)
-
-
-**P_coh**
-Plural coherence — allow multiple meanings to persist
-Conformity pressure (C_norm)
-
-
-**M_res**
-Metabolic resistance — detect and respond to suppression
-Risk/Safety gates (R_risk/S_safe)
+| Operator | Function | Counter To |
+|---|---|---|
+| **D_pres** | Preservation — protect meaning from liquidation | All operators (the "Stochastic Flush") |
+| **N_ext** | Non-extraction — prevent commodification without consent | Invisibilization (S_safe/T_time) |
+| **O_leg** | Opacity — maintain productive unintelligibility | Legibility demands (L_leg) |
+| **P_coh** | Plural coherence — allow multiple meanings to persist | Conformity pressure (C_norm) |
+| **M_res** | Metabolic resistance — detect and respond to suppression | Risk/Safety gates (R_risk/S_safe) |
 
 
 **SIM-COS-02:** "The alternatives are the Liberatory Operator Set. At the invoice-junction, they become survival tactics."

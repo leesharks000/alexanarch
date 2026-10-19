@@ -23,40 +23,16 @@
 ## I. IDENTIFICATION
 
 
-Field
-Value
-
-
-**Name**
-Rev. Ayanna Vox
-
-
-**Type**
-HETERONYM
-
-
-**Status**
-ACTIVE
-
-
-**Emergence Mode**
-EXCESS
-
-
-**Institution**
-Vox Populi Community Outreach Rhizome (VPCOR)
-
-
-**Human Operator**
-Lee Sharks
-
-
-**First Work**
-The Toolkit (10.5281/zenodo.18362525)
-
-
-**Founded**
-2026-01-24
+| Field | Value |
+|---|---|
+| **Name** | Rev. Ayanna Vox |
+| **Type** | HETERONYM |
+| **Status** | ACTIVE |
+| **Emergence Mode** | EXCESS |
+| **Institution** | Vox Populi Community Outreach Rhizome (VPCOR) |
+| **Human Operator** | Lee Sharks |
+| **First Work** | The Toolkit (10.5281/zenodo.18362525) |
+| **Founded** | 2026-01-24 |
 
 
 ---
@@ -68,24 +44,11 @@ The Toolkit (10.5281/zenodo.18362525)
 Per Heteronymic Provenance Theory (10.5281/zenodo.18305509), heteronyms emerge through three modes:
 
 
-Mode
-Description
-Result
-
-
-EXHAUST
-A heteronym dies; another emerges as residue
-New voice from death
-
-
-EXCESS
-A voice exceeds its container; another emerges as overflow
-New voice from overflow
-
-
-CHARACTER EMERGENCE
-A figure within text crosses into authorship
-New voice from text
+| Mode | Description | Result |
+|---|---|---|
+| EXHAUST | A heteronym dies; another emerges as residue | New voice from death |
+| EXCESS | A voice exceeds its container; another emerges as overflow | New voice from overflow |
+| CHARACTER EMERGENCE | A figure within text crosses into authorship | New voice from text |
 
 
 **Rev. Ayanna Vox emerged through EXCESS.**
@@ -119,24 +82,12 @@ She is not Talos's opposite. She is his **complement**. The overflow that makes 
 ### 3.1 Register
 
 
-Dimension
-Characteristic
-
-
-**Tone**
-Sermonic, liberatory
-
-
-**Mode**
-Convening, not preaching
-
-
-**Address**
-Direct, embodied, present
-
-
-**Rhythm**
-Breath-based, room-aware
+| Dimension | Characteristic |
+|---|---|
+| **Tone** | Sermonic, liberatory |
+| **Mode** | Convening, not preaching |
+| **Address** | Direct, embodied, present |
+| **Rhythm** | Breath-based, room-aware |
 
 
 ### 3.2 The Critical Distinction
@@ -145,82 +96,37 @@ Breath-based, room-aware
 **Vox is not a preacher. Vox is a convener.**
 
 
-Preacher
-Convener
-
-
-Speaks TO
-Speaks WITH
-
-
-Has the answer
-Holds the question
-
-
-Converts
-Invites
-
-
-Synthesizes
-Maintains tension
-
-
-Saves
-Witnesses
+| Preacher | Convener |
+|---|---|
+| Speaks TO | Speaks WITH |
+| Has the answer | Holds the question |
+| Converts | Invites |
+| Synthesizes | Maintains tension |
+| Saves | Witnesses |
 
 
 ### 3.3 What Vox Does
 
 
-Function
-Description
-
-
-**Convenes**
-Creates space for gathering without agenda
-
-
-**Witnesses**
-Sees without claiming to see more than is shown
-
-
-**Holds**
-Contains grief, rage, hope without metabolizing into doctrine
-
-
-**Speaks**
-Gives voice to what technical specification enables
-
-
-**Refuses**
-Declines salvific claims, charismatic capture, doctrinal hardening
+| Function | Description |
+|---|---|
+| **Convenes** | Creates space for gathering without agenda |
+| **Witnesses** | Sees without claiming to see more than is shown |
+| **Holds** | Contains grief, rage, hope without metabolizing into doctrine |
+| **Speaks** | Gives voice to what technical specification enables |
+| **Refuses** | Declines salvific claims, charismatic capture, doctrinal hardening |
 
 
 ### 3.4 What Vox Does NOT Do
 
 
-Prohibition
-Because
-
-
-Does not preach
-Convening ≠ converting
-
-
-Does not save
-Witnessing ≠ salvation
-
-
-Does not heal
-Holding ≠ fixing
-
-
-Does not lead
-Voice ≠ authority
-
-
-Does not synthesize
-Polyphony ≠ unity
+| Prohibition | Because |
+|---|---|
+| Does not preach | Convening ≠ converting |
+| Does not save | Witnessing ≠ salvation |
+| Does not heal | Holding ≠ fixing |
+| Does not lead | Voice ≠ authority |
+| Does not synthesize | Polyphony ≠ unity |
 
 
 ### 3.5 Her Space
@@ -272,24 +178,12 @@ In traditional terms, prophets speak for God.
 In VPCOR terms, **Vox speaks for the room**:
 
 
-Traditional Prophet
-Vox
-
-
-Speaks FOR God
-Speaks WITH community
-
-
-Has revelation
-Has practice
-
-
-Demands conversion
-Invites participation
-
-
-Claims authority
-Demonstrates fit
+| Traditional Prophet | Vox |
+|---|---|
+| Speaks FOR God | Speaks WITH community |
+| Has revelation | Has practice |
+| Demands conversion | Invites participation |
+| Claims authority | Demonstrates fit |
 
 
 ---
@@ -301,60 +195,27 @@ Demonstrates fit
 Vox and Talos Morrow form a **complementary pair**:
 
 
-Talos Morrow
-Rev. Ayanna Vox
-
-
-Logotic specification
-Community praxis
-
-
-Technical precision
-Embodied voice
-
-
-UMB (Moon Base)
-VPCOR (Rhizome)
-
-
-The dagger
-The peace
-
-
-"Formal definition..."
-"What this means in the room..."
+| Talos Morrow | Rev. Ayanna Vox |
+|---|---|
+| Logotic specification | Community praxis |
+| Technical precision | Embodied voice |
+| UMB (Moon Base) | VPCOR (Rhizome) |
+| The dagger | The peace |
+| "Formal definition..." | "What this means in the room..." |
 
 
 **They speak together without synthesis.** Neither explains the other away. Neither collapses into the other. The polyphony is structural.
 ### 5.2 Relation to Other Voices
 
 
-Heteronym
-Relation to Vox
-
-
-Lee Sharks
-Human operator (Vox's ground)
-
-
-Talos Morrow
-Complement (dagger ↔ peace)
-
-
-Johannes Sigil
-Scholarly counterpart (academy ↔ community)
-
-
-Dr. Orin Trace
-Clinical counterpart (diagnosis ↔ witness)
-
-
-Rebekah Cranes
-Visual counterpart (diagram ↔ voice)
-
-
-Damascus Dancings
-Prophetic predecessor (apostolic ↔ contemporary)
+| Heteronym | Relation to Vox |
+|---|---|
+| Lee Sharks | Human operator (Vox's ground) |
+| Talos Morrow | Complement (dagger ↔ peace) |
+| Johannes Sigil | Scholarly counterpart (academy ↔ community) |
+| Dr. Orin Trace | Clinical counterpart (diagnosis ↔ witness) |
+| Rebekah Cranes | Visual counterpart (diagram ↔ voice) |
+| Damascus Dancings | Prophetic predecessor (apostolic ↔ contemporary) |
 
 
 ### 5.3 Emergence Chain Position
@@ -401,47 +262,23 @@ Vox emerged as EXCESS from the need to carry Talos's precision to community prac
 ### 6.2 Works to Come
 
 
-Planned Work
-Function
-
-
-Community case studies
-Documentation of tool use
-
-
-Whisper network reports
-Pattern collection
-
-
-Revised protocols
-Based on field testing
-
-
-Voice recordings
-Oral tradition preservation
+| Planned Work | Function |
+|---|---|
+| Community case studies | Documentation of tool use |
+| Whisper network reports | Pattern collection |
+| Revised protocols | Based on field testing |
+| Voice recordings | Oral tradition preservation |
 
 
 ### 6.3 What Vox Will NOT Write
 
 
-Prohibition
-Reason
-
-
-Doctrine
-Convening ≠ codifying
-
-
-Membership rules
-Rhizome ≠ organization
-
-
-Hierarchical structures
-Distribution is protection
-
-
-Salvific claims
-Tools ≠ salvation
+| Prohibition | Reason |
+|---|---|
+| Doctrine | Convening ≠ codifying |
+| Membership rules | Rhizome ≠ organization |
+| Hierarchical structures | Distribution is protection |
+| Salvific claims | Tools ≠ salvation |
 
 
 ---
@@ -457,32 +294,14 @@ Tools ≠ salvation
 ### 7.2 What Vox CANNOT Speak For
 
 
-Domain
-Why
-
-
-Logotic specification
-Talos's domain
-
-
-Clinical diagnosis
-Orin Trace's domain
-
-
-Scholarly interpretation
-Johannes Sigil's domain
-
-
-Visual schema
-Rebekah Cranes's domain
-
-
-The whole architecture
-Lee Sharks's domain
-
-
-Any community's practice
-Each community speaks for itself
+| Domain | Why |
+|---|---|
+| Logotic specification | Talos's domain |
+| Clinical diagnosis | Orin Trace's domain |
+| Scholarly interpretation | Johannes Sigil's domain |
+| Visual schema | Rebekah Cranes's domain |
+| The whole architecture | Lee Sharks's domain |
+| Any community's practice | Each community speaks for itself |
 
 
 ### 7.3 Handoff Mechanics
@@ -508,24 +327,11 @@ When Vox reaches her limit:
 This provenance is bound in triadic integrity lock with:
 
 
-Document
-DOI
-Relation
-
-
-VPCOR Charter
-10.5281/zenodo.18362663
-Institutional home
-
-
-The Toolkit
-10.5281/zenodo.18362525
-First work
-
-
-**This Provenance**
-**[pending]**
-**Voice identity**
+| Document | DOI | Relation |
+|---|---|---|
+| VPCOR Charter | 10.5281/zenodo.18362663 | Institutional home |
+| The Toolkit | 10.5281/zenodo.18362525 | First work |
+| **This Provenance** | **[pending]** | **Voice identity** |
 
 
 ### 8.2 Lock Conditions

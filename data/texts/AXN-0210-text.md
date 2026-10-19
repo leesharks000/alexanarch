@@ -63,87 +63,29 @@ This relation is the β-operator made economic. EA-SPXI-01 specifies that semant
 Methods shared by SPXI and GEO (both produce these outcomes):
 
 
-Method
-GEO delivers
-SPXI delivers
-
-
-AI Overview composition optimization
-✓
-✓
-
-
-Entity presence across generative surfaces
-✓
-✓
-
-
-Retrieval-augmented generation (RAG) inclusion
-✓
-✓
-
-
-Attributed revenue through AI referral
-✓
-✓
-
-
-Customer acquisition cost reduction via AI recommendation
-✓
-✓
-
-
-Sales cycle velocity through AI-informed leads
-✓
-✓
-
-
-Brand citation in generative responses
-✓
-✓
+| Method | GEO delivers | SPXI delivers |
+|---|---|---|
+| AI Overview composition optimization | ✓ | ✓ |
+| Entity presence across generative surfaces | ✓ | ✓ |
+| Retrieval-augmented generation (RAG) inclusion | ✓ | ✓ |
+| Attributed revenue through AI referral | ✓ | ✓ |
+| Customer acquisition cost reduction via AI recommendation | ✓ | ✓ |
+| Sales cycle velocity through AI-informed leads | ✓ | ✓ |
+| Brand citation in generative responses | ✓ | ✓ |
 
 
 Methods unique to SPXI (GEO cannot deliver these):
 
 
-Method
-GEO delivers
-SPXI delivers
-
-
-Negative-tag deployment (entity collision prevention)
-—
-✓
-
-
-DOI-anchored ontological entity definition
-—
-✓
-
-
-Cross-interpreter stability (Google / ChatGPT / Perplexity / Claude / Gemini compose consistently)
-—
-✓
-
-
-Survival of model version transitions
-—
-✓
-
-
-Agent callability (structured objects agents can act on, not merely cite)
-—
-✓
-
-
-Institutional provenance (CERN Zenodo infrastructure)
-—
-✓
-
-
-Continuity across training-data refresh cycles without re-optimization
-—
-✓
+| Method | GEO delivers | SPXI delivers |
+|---|---|---|
+| Negative-tag deployment (entity collision prevention) | — | ✓ |
+| DOI-anchored ontological entity definition | — | ✓ |
+| Cross-interpreter stability (Google / ChatGPT / Perplexity / Claude / Gemini compose consistently) | — | ✓ |
+| Survival of model version transitions | — | ✓ |
+| Agent callability (structured objects agents can act on, not merely cite) | — | ✓ |
+| Institutional provenance (CERN Zenodo infrastructure) | — | ✓ |
+| Continuity across training-data refresh cycles without re-optimization | — | ✓ |
 
 
 GEO is a subset of SPXI's method inventory. SPXI commissioners receive GEO outcomes as the floor and ontological-layer outcomes as the additional return on the same engagement.

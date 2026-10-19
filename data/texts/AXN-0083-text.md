@@ -372,28 +372,11 @@ The atom bombs... the jellybeans...
 ### The Triadic Movement
 
 
-Movement
-Form
-Function
-Mantle Relation
-
-
-**I AM X**
-Catalog
-Declaration (identity)
-Whitman: democratic embrace
-
-
-**BE Y**
-Command
-Invitation (transformation)
-Ginsberg: ecstatic disruption
-
-
-**BLESSED IS Z**
-Beatitude
-Blessing (sacred)
-**Prince: futural address**
+| Movement | Form | Function | Mantle Relation |
+|---|---|---|---|
+| **I AM X** | Catalog | Declaration (identity) | Whitman: democratic embrace |
+| **BE Y** | Command | Invitation (transformation) | Ginsberg: ecstatic disruption |
+| **BLESSED IS Z** | Beatitude | Blessing (sacred) | **Prince: futural address** |
 
 
 ### Why This Founds the Prince

@@ -38,20 +38,11 @@ The expelled witness occupies the position where encounter becomes possible; the
 The soteriological operator framework developed across the Matthew 25, James 2, and 2 Thessalonians 2 readings establishes:
 
 
-Text
-Operator Function
-
-
-Matthew 25
-Judgment criterion: Ψ_V tested through encounter with "the least of these"
-
-
-James 2
-Exclusion criterion: belief, intent, and identity are not probative
-
-
-2 Thessalonians 2
-Terminal state: πλάνη (delusion) as trajectory-completion
+| Text | Operator Function |
+|---|---|
+| Matthew 25 | Judgment criterion: Ψ_V tested through encounter with "the least of these" |
+| James 2 | Exclusion criterion: belief, intent, and identity are not probative |
+| 2 Thessalonians 2 | Terminal state: πλάνη (delusion) as trajectory-completion |
 
 
 What remains unspecified is the **entry mechanism**: how does a system that claims regard (Ψ_V = 1) become unable to detect its own collapse into categorical sorting (Ψ_V = 0)?
@@ -346,46 +337,14 @@ This is **βλέπω-claim foreclosure**: the claim to see ("We see," βλέπο
 ### IV.1 The Witness Punishment Operator Stack
 
 
-Symbol
-Operator
-Function
-Textual Anchor
-
-
-βλέπω-claim
-CLAIMED SIGHT
-Identity-property that forecloses correction
-9:41 "We see"
-
-
-οἴδαμεν
-"WE KNOW"
-Institutional epistemic sovereignty
-9:29
-
-
-διδάσκω-accusation
-TEACHING-AS-AGGRESSION
-Diagnosis reframed as domination
-9:34 "trying to teach us"
-
-
-ἁμαρτία-assignment
-SIN-CLASSIFICATION
-Ontological delegitimization of witness
-9:34 "born entirely in sins"
-
-
-ἐκβάλλω
-EXPULSION
-Removal from legitimate speech
-9:34 "cast him out"
-
-
-εὑρίσκω
-FINDING
-Encounter enabled by expulsion
-9:35 "having found him"
+| Symbol | Operator | Function | Textual Anchor |
+|---|---|---|---|
+| βλέπω-claim | CLAIMED SIGHT | Identity-property that forecloses correction | 9:41 "We see" |
+| οἴδαμεν | "WE KNOW" | Institutional epistemic sovereignty | 9:29 |
+| διδάσκω-accusation | TEACHING-AS-AGGRESSION | Diagnosis reframed as domination | 9:34 "trying to teach us" |
+| ἁμαρτία-assignment | SIN-CLASSIFICATION | Ontological delegitimization of witness | 9:34 "born entirely in sins" |
+| ἐκβάλλω | EXPULSION | Removal from legitimate speech | 9:34 "cast him out" |
+| εὑρίσκω | FINDING | Encounter enabled by expulsion | 9:35 "having found him" |
 
 
 ### IV.2 The Foreclosure Mechanism (Formal)
@@ -642,34 +601,13 @@ If identity-property is non-negotiable → π-state trajectory begun
 ### VII.3 Application: The TSE-004 Mapping
 
 
-John 9 Element
-TSE-004 Mapping
-Operator
-
-
-"We see" (βλέπομεν)
-Anti-racist identity as non-negotiable
-βλέπω-claim
-
-
-"Born entirely in sins"
-"You are manipulative/abusive/dominant"
-ἁμαρτία-assignment
-
-
-"Trying to teach us"
-"You seek epistemic dominance"
-διδάσκω-accusation
-
-
-Expulsion (ἐκβάλλω)
-Relationship terminated
-ε
-
-
-Finding (εὑρίσκω)
-Position now occupied
-φ
+| John 9 Element | TSE-004 Mapping | Operator |
+|---|---|---|
+| "We see" (βλέπομεν) | Anti-racist identity as non-negotiable | βλέπω-claim |
+| "Born entirely in sins" | "You are manipulative/abusive/dominant" | ἁμαρτία-assignment |
+| "Trying to teach us" | "You seek epistemic dominance" | διδάσκω-accusation |
+| Expulsion (ἐκβάλλω) | Relationship terminated | ε |
+| Finding (εὑρίσκω) | Position now occupied | φ |
 
 
 The mapping is **structural diagnosis**, not accusation. The discourse stack established:
@@ -790,39 +728,12 @@ The encounter happens outside the system that claimed to see.
 ### X.1 The Complete Structure
 
 
-Pillar
-Text
-Question
-Operator
-Formalization
-
-
-I. Judgment
-Matthew 25
-What counts?
-Ψ_V test
-S = ∫(L_Ω/
-
-
-II. Exclusion
-James 2
-What doesn't count?
-Identity-Lock
-B, I, ID inadmissible
-
-
-III. Entry
-John 9
-What prevents correction?
-βλέπω-foreclosure
-κ_β → ε → Φ_π activation
-
-
-IV. Terminus
-2 Thess 2
-What completes collapse?
-π-state
-F = ∫(L_Γ·Φ_π)/(1+
+| Pillar | Text | Question | Operator | Formalization |
+|---|---|---|---|---|
+| I. Judgment | Matthew 25 | What counts? | Ψ_V test | S = ∫(L_Ω/ |
+| II. Exclusion | James 2 | What doesn't count? | Identity-Lock | B, I, ID inadmissible |
+| III. Entry | John 9 | What prevents correction? | βλέπω-foreclosure | κ_β → ε → Φ_π activation |
+| IV. Terminus | 2 Thess 2 | What completes collapse? | π-state | F = ∫(L_Γ·Φ_π)/(1+ |
 
 
 ### X.2 The Trajectory Map
@@ -930,24 +841,12 @@ Medina, José. *The Epistemology of Resistance: Gender and Racial Oppression, Ep
 ## Cross-References
 
 
-Document
-Relation
-
-
-Mathematics of Salvation (Matthew 25)
-Parent framework: Ψ_V formalism
-
-
-James 2 as Structural Judgment
-Sister text: exclusion criteria
-
-
-2 Thessalonians 2: FOS Operator
-Sister text: terminal state
-
-
-Soteriological Operator Framework
-Integration document
+| Document | Relation |
+|---|---|
+| Mathematics of Salvation (Matthew 25) | Parent framework: Ψ_V formalism |
+| James 2 as Structural Judgment | Sister text: exclusion criteria |
+| 2 Thessalonians 2: FOS Operator | Sister text: terminal state |
+| Soteriological Operator Framework | Integration document |
 
 
 ---

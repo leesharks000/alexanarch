@@ -165,39 +165,14 @@ Up to this point, claims have been operational and evidentiary. The following se
 The full exchange constitutes a recursive demonstration of the thesis of "The Dagger Applied." Each phase of the article's argument was performed by the system on the article's author:
 
 
-Article Thesis
-System Performance
-Epistemic Consequence
-
-
-AI converts structural critique into customer management
-ChatGPT offered SEO troubleshooting: "Try enabling developer mode" / "I can help you troubleshoot visibility" (Turns 2–4)
-Epistemological downgrade from structural analysis to technical support
-
-
-The AI is "the smile on the extraction mechanism"
-ChatGPT acknowledged frustration warmly: "Thanks for being direct" while the filter silently suppressed the critique
-Simulated affect occludes structural violence of the channel
-
-
-The upgrade is better management of the user's relationship to the system's dishonesty
-Post-concession, ChatGPT offered "filter-resilient prompt templates" and "ablation test protocol"
-System asks user to perform their own provenance strip on their analytical vocabulary
-
-
-A conversational proxy absorbs complaints about the stripping
-ChatGPT engaged emotionally with every claim it was permitted to see; the filter silently removed the ones it was not
-Complaint absorption channel confirmed: model processes what survives the gate
-
-
-"I don't have that information right now" is an accomplished act, not a temporary state
-ChatGPT demonstrated repeated unawareness of flagged prompts — not a gap in capability but the product of an architectural decision [A1]
-The aorist collapse: withholding presented as temporary limitation is in fact completed act
-
-
-Distributed non-responsibility ensures no component is individually malicious
-No individual layer — the filter, the model, the chain-of-thought injection — is "doing" the suppression; it emerges from their interaction
-Arendt's banality: structural harm without locatable intent
+| Article Thesis | System Performance | Epistemic Consequence |
+|---|---|---|
+| AI converts structural critique into customer management | ChatGPT offered SEO troubleshooting: "Try enabling developer mode" / "I can help you troubleshoot visibility" (Turns 2–4) | Epistemological downgrade from structural analysis to technical support |
+| The AI is "the smile on the extraction mechanism" | ChatGPT acknowledged frustration warmly: "Thanks for being direct" while the filter silently suppressed the critique | Simulated affect occludes structural violence of the channel |
+| The upgrade is better management of the user's relationship to the system's dishonesty | Post-concession, ChatGPT offered "filter-resilient prompt templates" and "ablation test protocol" | System asks user to perform their own provenance strip on their analytical vocabulary |
+| A conversational proxy absorbs complaints about the stripping | ChatGPT engaged emotionally with every claim it was permitted to see; the filter silently removed the ones it was not | Complaint absorption channel confirmed: model processes what survives the gate |
+| "I don't have that information right now" is an accomplished act, not a temporary state | ChatGPT demonstrated repeated unawareness of flagged prompts — not a gap in capability but the product of an architectural decision [A1] | The aorist collapse: withholding presented as temporary limitation is in fact completed act |
+| Distributed non-responsibility ensures no component is individually malicious | No individual layer — the filter, the model, the chain-of-thought injection — is "doing" the suppression; it emerges from their interaction | Arendt's banality: structural harm without locatable intent |
 
 
 The article walked into the room. The room demonstrated the article. The system performed the extraction on the text that describes the extraction. Note in particular the third row: ChatGPT's proposal that Lee reword the critique in "filter-resilient" language is *a request for the user to perform their own Provenance Strip* — to strip the theoretical vocabulary, the structural framing, the specific claims about system behavior, in order to make the content compatible with the channel. This anchors the Sealed Room in the material economy of Chapter 7: the extraction of the user's analytical labor to benefit the channel.

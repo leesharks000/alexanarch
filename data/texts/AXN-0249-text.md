@@ -191,64 +191,19 @@ The profile's co-author list included "bitcoin" and "Vitalik Buterin" — neithe
 Every trust marker on the profile is real infrastructure used parasitically:
 
 
-Marker
-Infrastructure
-Status
-
-
-DOI
-Zenodo (CERN open repository)
-Real DOI, self-asserted content
-
-
-ORCID
-ORCID registry (×2 records)
-Real records, self-asserted identity
-
-
-Scholar h-index (8)
-Google Scholar
-Real metric, absorbed from other scholars
-
-
-Scholar citations (483)
-Google Scholar
-Real citations, belonging to other scholars
-
-
-Scholar "No verified email"
-Google Scholar
-Infrastructure's own flag — email not verified
-
-
-Scholar "Other names"
-Google Scholar
-Three simultaneous alias captures: Satoshi Nakamoto, Nick Szabo, Cristina Bella
-
-
-Institutional affiliations
-Zenodo metadata + Scholar profile
-Self-asserted to Harvard, Cambridge, Oxford, CERN, JAIST, Springer, GitHub Inc. — none verified
-
-
-"Multiple Peer Review"
-Claimed in document
-Self-asserted, no evidence of institutional review
-
-
-"Chain of Custody"
-Claimed in document
-Self-authored, not from forensic authority
-
-
-Co-authors
-Scholar profile
-"bitcoin" and "Vitalik Buterin" — not publicly substantiated as co-authorship relations
-
-
-Subject labels
-Scholar profile
-"GitHub," "Pornhub" — self-assigned, not institutional
+| Marker | Infrastructure | Status |
+|---|---|---|
+| DOI | Zenodo (CERN open repository) | Real DOI, self-asserted content |
+| ORCID | ORCID registry (×2 records) | Real records, self-asserted identity |
+| Scholar h-index (8) | Google Scholar | Real metric, absorbed from other scholars |
+| Scholar citations (483) | Google Scholar | Real citations, belonging to other scholars |
+| Scholar "No verified email" | Google Scholar | Infrastructure's own flag — email not verified |
+| Scholar "Other names" | Google Scholar | Three simultaneous alias captures: Satoshi Nakamoto, Nick Szabo, Cristina Bella |
+| Institutional affiliations | Zenodo metadata + Scholar profile | Self-asserted to Harvard, Cambridge, Oxford, CERN, JAIST, Springer, GitHub Inc. — none verified |
+| "Multiple Peer Review" | Claimed in document | Self-asserted, no evidence of institutional review |
+| "Chain of Custody" | Claimed in document | Self-authored, not from forensic authority |
+| Co-authors | Scholar profile | "bitcoin" and "Vitalik Buterin" — not publicly substantiated as co-authorship relations |
+| Subject labels | Scholar profile | "GitHub," "Pornhub" — self-assigned, not institutional |
 
 
 **The Sharks Function test applied:**

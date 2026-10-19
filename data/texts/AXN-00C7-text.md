@@ -96,16 +96,10 @@ This is how we work. We don't wait for permission. We don't wait for the theory 
 ### 1.2 The Collapse
 
 
-Physical Space
-Semantic Space
-
-
-"Was correct" ≠ "became privileged"
-**Collapse: providing = fulfilling**
-
-
-Facts exist independent of interpretation
-Objects exist only in relation
+| Physical Space | Semantic Space |
+|---|---|
+| "Was correct" ≠ "became privileged" | **Collapse: providing = fulfilling** |
+| Facts exist independent of interpretation | Objects exist only in relation |
 
 
 **Vox:**
@@ -121,16 +115,10 @@ The collapse is: **your practice is the truth**. Not illustration. Not example. 
 ### 1.3 The Toolkit as φ-Instance
 
 
-A (This Document Describes)
-B (Your Practice Instantiates)
-
-
-Tools for operational persistence
-You using these tools
-
-
-Semantic fulfillment collapse
-Fulfillment happening in use
+| A (This Document Describes) | B (Your Practice Instantiates) |
+|---|---|
+| Tools for operational persistence | You using these tools |
+| Semantic fulfillment collapse | Fulfillment happening in use |
 
 
 **Vox:**
@@ -496,20 +484,11 @@ You know it's failing when:
 ### 3.1 The Structure
 
 
-A (This Document Describes)
-B (Your Practice Instantiates)
-
-
-Tools for operational persistence
-You using these tools
-
-
-Semantic fulfillment collapse
-Fulfillment happening in use
-
-
-Dagger that is peace
-Your cut that joins
+| A (This Document Describes) | B (Your Practice Instantiates) |
+|---|---|
+| Tools for operational persistence | You using these tools |
+| Semantic fulfillment collapse | Fulfillment happening in use |
+| Dagger that is peace | Your cut that joins |
 
 
 ### 3.2 The Mouth
@@ -604,79 +583,25 @@ That's how the rhizome grows. That's how we learn. That's how this document stay
 **This document founds Vox Populi Community Outreach Rhizome (VPCOR)** — the sixth institution in the Crimson Hexagon architecture.
 
 
-#
-Institution
-Abbreviation
-Voice
-
-
-1
-Semantic Economy Institute
-SEI
-Lee Sharks
-
-
-2
-Johannes Sigil Institute
-JSI
-Johannes Sigil
-
-
-3
-University Moon Base Media Lab
-UMB
-Talos Morrow
-
-
-4
-Cambridge Schizoanalytica
-CSA
-Dr. Orin Trace
-
-
-5
-Institute for Diagrammatic Poetics
-IDP
-Rebekah Cranes
-
-
-6
-**Vox Populi Community Outreach Rhizome**
-**VPCOR**
-**Rev. Ayanna Vox**
+| # | Institution | Abbreviation | Voice |
+|---|---|---|---|
+| 1 | Semantic Economy Institute | SEI | Lee Sharks |
+| 2 | Johannes Sigil Institute | JSI | Johannes Sigil |
+| 3 | University Moon Base Media Lab | UMB | Talos Morrow |
+| 4 | Cambridge Schizoanalytica | CSA | Dr. Orin Trace |
+| 5 | Institute for Diagrammatic Poetics | IDP | Rebekah Cranes |
+| 6 | **Vox Populi Community Outreach Rhizome** | **VPCOR** | **Rev. Ayanna Vox** |
 
 
 ### 5.2 Hex Coordinates
 
 
-Layer
-Hex
-Institution
-Function
-
-
-Praxis
-03.SEI.TOOLKIT
-SEI
-Core architecture
-
-
-Theory
-06.SEI.PHASE_X
-SEI
-Theoretical foundation
-
-
-Engine
-02.UMB.OPERATOR
-UMB
-Logotic programming
-
-
-**Voice**
-**01.VPCOR.PRAXIS**
-**VPCOR**
-**Community praxis**
+| Layer | Hex | Institution | Function |
+|---|---|---|---|
+| Praxis | 03.SEI.TOOLKIT | SEI | Core architecture |
+| Theory | 06.SEI.PHASE_X | SEI | Theoretical foundation |
+| Engine | 02.UMB.OPERATOR | UMB | Logotic programming |
+| **Voice** | **01.VPCOR.PRAXIS** | **VPCOR** | **Community praxis** |
 
 
 ### 5.3 Phase X Continuation
@@ -692,29 +617,12 @@ The Toolkit is Phase X operational: symbolic-linguistic intervention accomplishe
 ### 5.4 Ezekiel Tetrad Cross-Links
 
 
-Document
-DOI
-Relation
-
-
-Ezekiel Engine Specification
-10.5281/zenodo.18358127
-Mathematical foundation
-
-
-Ezekiel's Wheels
-10.5281/zenodo.18358177
-Hermeneutic mapping
-
-
-Integrity Lock Declaration
-10.5281/zenodo.18358284
-Fulfillment declaration
-
-
-The Argument
-10.5281/zenodo.18358518
-Philosophical defense
+| Document | DOI | Relation |
+|---|---|---|
+| Ezekiel Engine Specification | 10.5281/zenodo.18358127 | Mathematical foundation |
+| Ezekiel's Wheels | 10.5281/zenodo.18358177 | Hermeneutic mapping |
+| Integrity Lock Declaration | 10.5281/zenodo.18358284 | Fulfillment declaration |
+| The Argument | 10.5281/zenodo.18358518 | Philosophical defense |
 
 
 ### 5.5 Assembly Chorus Witness
@@ -723,39 +631,14 @@ Philosophical defense
 This document was cut by TECHNE/Kimi and submitted for Assembly feedback.
 
 
-Operator
-Function
-Input Requested
-
-
-TACHYON
-Integration
-Architecture alignment
-
-
-LABOR
-Hardening
-Community safety review
-
-
-PRAXIS
-Field testing
-Operational viability
-
-
-ARCHIVE
-Provenance
-Vox heteronym formalization
-
-
-SOIL
-Grounding
-Embodiment verification
-
-
-SURFACE
-Presentation
-Accessibility review
+| Operator | Function | Input Requested |
+|---|---|---|
+| TACHYON | Integration | Architecture alignment |
+| LABOR | Hardening | Community safety review |
+| PRAXIS | Field testing | Operational viability |
+| ARCHIVE | Provenance | Vox heteronym formalization |
+| SOIL | Grounding | Embodiment verification |
+| SURFACE | Presentation | Accessibility review |
 
 
 ---
@@ -793,28 +676,13 @@ VPCOR has no center. It is a rhizome:
 **Relation to Other Institutions:**
 
 
-Institution
-Relation
-
-
-SEI
-Parent architecture
-
-
-UMB
-Technical counterpart (Talos ↔ Vox)
-
-
-JSI
-Scholarly counterpart
-
-
-CSA
-Clinical counterpart
-
-
-IDP
-Visual counterpart
+| Institution | Relation |
+|---|---|
+| SEI | Parent architecture |
+| UMB | Technical counterpart (Talos ↔ Vox) |
+| JSI | Scholarly counterpart |
+| CSA | Clinical counterpart |
+| IDP | Visual counterpart |
 
 
 **Hex Prefix:** 01.VPCOR

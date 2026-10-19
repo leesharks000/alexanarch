@@ -33,32 +33,14 @@ A protocol layer that makes AI-generated content traceable, status-bearing, and 
 The product does six things. Everything else is secondary.
 
 
-Action
-What It Does
-
-
-**Create**
-Produce a traceable object with author, timestamp, provenance
-
-
-**Reply**
-Link a new object to a parent, extending the derivation chain
-
-
-**Trace**
-Inspect any object's full lineage: ancestors, descendants, derivations, status history
-
-
-**Review**
-Submit an object for governance evaluation with visible outcome and reason
-
-
-**Fix**
-Anchor an object to an immutable record (DOI, IPFS, or customer archive)
-
-
-**Export**
-Move an object and its provenance chain to an external system
+| Action | What It Does |
+|---|---|
+| **Create** | Produce a traceable object with author, timestamp, provenance |
+| **Reply** | Link a new object to a parent, extending the derivation chain |
+| **Trace** | Inspect any object's full lineage: ancestors, descendants, derivations, status history |
+| **Review** | Submit an object for governance evaluation with visible outcome and reason |
+| **Fix** | Anchor an object to an immutable record (DOI, IPFS, or customer archive) |
+| **Export** | Move an object and its provenance chain to an external system |
 
 
 ### §5. Status Lifecycle
@@ -90,29 +72,12 @@ Not everything climbs the ladder. Most content stays GENERATED. The system provi
 Four distinct authority layers. They do not collapse into each other.
 
 
-Authority
-Who
-What They Can Do
-
-
-**Protocol**
-The system itself
-Enforce status transition rules, validate provenance chains, reject malformed objects
-
-
-**Platform**
-The deploying organization
-Configure boundary conditions (somatic filter), set community-specific rules, manage access
-
-
-**Community**
-Users and moderators
-Review, flag, propose status changes, participate in governance
-
-
-**Archive**
-The Hexagon (optional bridge)
-Accept promoted deposits, provide canonical provenance resolution, issue DOI anchors
+| Authority | Who | What They Can Do |
+|---|---|---|
+| **Protocol** | The system itself | Enforce status transition rules, validate provenance chains, reject malformed objects |
+| **Platform** | The deploying organization | Configure boundary conditions (somatic filter), set community-specific rules, manage access |
+| **Community** | Users and moderators | Review, flag, propose status changes, participate in governance |
+| **Archive** | The Hexagon (optional bridge) | Accept promoted deposits, provide canonical provenance resolution, issue DOI anchors |
 
 
 A platform moderator can review and flag. They cannot override protocol-level provenance validation. The protocol enforces structure; the community governs content.
@@ -368,20 +333,11 @@ GET    /v1/threads/{id}          Thread tree (root + all replies as DAG)
 Object storage (S3-compatible) for content blobs
 
 
-Scale
-Cost/Month
-
-
-10K requests/day
-~$50
-
-
-100K requests/day
-~$200
-
-
-1M requests/day
-~$800 + horizontal scaling
+| Scale | Cost/Month |
+|---|---|
+| 10K requests/day | ~$50 |
+| 100K requests/day | ~$200 |
+| 1M requests/day | ~$800 + horizontal scaling |
 
 
 ### §14. Integration Pattern
@@ -419,34 +375,12 @@ async function fixToArchive(objectId) {
 ### §15. Revenue
 
 
-Tier
-Queries/Month
-Features
-Price
-
-
-**Open**
-100
-Create, trace, basic status
-Free
-
-
-**Satellite**
-10,000
-Full status lifecycle, review queue, export
-$49/mo
-
-
-**Embassy**
-100,000
-Configurable governance, custom boundary conditions, DOI minting
-$499/mo
-
-
-**Chancery**
-Unlimited
-White-label, private deployments, Assembly integration, dedicated support
-Custom
+| Tier | Queries/Month | Features | Price |
+|---|---|---|---|
+| **Open** | 100 | Create, trace, basic status | Free |
+| **Satellite** | 10,000 | Full status lifecycle, review queue, export | $49/mo |
+| **Embassy** | 100,000 | Configurable governance, custom boundary conditions, DOI minting | $499/mo |
+| **Chancery** | Unlimited | White-label, private deployments, Assembly integration, dedicated support | Custom |
 
 
 Additional: $0.50 per DOI minted through the API.

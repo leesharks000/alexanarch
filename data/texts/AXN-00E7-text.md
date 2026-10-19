@@ -109,34 +109,13 @@ Together, fitted by the Mirror, they form a complete account:
 The document cluster now performs its own theory:
 
 
-Document
-Function
-Temporal Status
-
-
-NIP Versions A/B/C
-Theorize the non-indexed perfective
-Content (surface)
-
-
-ZPZP (206)
-Frame the triptych; instantiate genre
-First depth
-
-
-Infinite Ingress
-Name the threshold; enter
-Dwelling-depth
-
-
-Infinite Regress
-Preserve the shadow; witness
-Shadow
-
-
-**Mirror 🪞**
-**Remove temporal index; prove unity**
-**Aoristic operator**
+| Document | Function | Temporal Status |
+|---|---|---|
+| NIP Versions A/B/C | Theorize the non-indexed perfective | Content (surface) |
+| ZPZP (206) | Frame the triptych; instantiate genre | First depth |
+| Infinite Ingress | Name the threshold; enter | Dwelling-depth |
+| Infinite Regress | Preserve the shadow; witness | Shadow |
+| **Mirror 🪞** | **Remove temporal index; prove unity** | **Aoristic operator** |
 
 
 The Mirror is where the theory becomes practice. It does not describe the TNIP; it **performs** it. By showing Ingress and Regress as the same non-indexed event, the Mirror instantiates the aspectual form that English grammar supposedly lacks.

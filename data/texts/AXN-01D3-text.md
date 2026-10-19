@@ -121,39 +121,14 @@ Thomas McEvilley's *The Shape of Ancient Thought* (2002) provides the broadest c
 ### Structural Parallels
 
 
-Pyrrhonian Term
-Buddhist Parallel
-Function
-
-
-Epoché (ἐποχή)
-Upekkhā
-Suspension / Equanimity
-
-
-Ataraxia (ἀταραξία)
-Nibbāna
-Freedom from disturbance
-
-
-Isosthenia (ἰσοσθένεια)
-Middle Way
-Balance between extremes
-
-
-Aphasia (ἀφασία)
-Apavāda / Right View
-Not asserting views
-
-
-Phainomena (φαινόμενα)
-Saṃvṛti-satya
-Appearances vs. ultimate reality
-
-
-Adiaphora (ἀδιάφορα)
-Śūnyatā
-Emptiness / No inherent nature
+| Pyrrhonian Term | Buddhist Parallel | Function |
+|---|---|---|
+| Epoché (ἐποχή) | Upekkhā | Suspension / Equanimity |
+| Ataraxia (ἀταραξία) | Nibbāna | Freedom from disturbance |
+| Isosthenia (ἰσοσθένεια) | Middle Way | Balance between extremes |
+| Aphasia (ἀφασία) | Apavāda / Right View | Not asserting views |
+| Phainomena (φαινόμενα) | Saṃvṛti-satya | Appearances vs. ultimate reality |
+| Adiaphora (ἀδιάφορα) | Śūnyatā | Emptiness / No inherent nature |
 
 
 Establishing Buddhist influence demonstrates that skepticism was imported contemplative technology, not merely Greek philosophical innovation. The practice predates its theoretical articulation — Pyrrho brought back methods, Sextus later systematized them.
@@ -235,39 +210,14 @@ Formally, ψ_V operates as: non-identical position that cannot be captured by ex
 The parallel between Pyrrhonian *epoché* and ψ_V is not metaphorical but structural:
 
 
-Pyrrhonian Skepticism
-ψ_V (Void Position)
-Shared Operation
-
-
-Suspends judgment
-Refuses identity capture
-Non-commitment to frame
-
-
-Generates equipollent opposites
-Maintains multiple perspectives
-Pluralism against closure
-
-
-Lives by appearances
-Engages systems instrumentally
-Pragmatic navigation
-
-
-Achieves ataraxia
-Preserves agency
-Freedom through non-identity
-
-
-Dissolves dogma
-Resists capture
-Anti-totalization
-
-
-Continuous practice
-Perpetual vigilance
-Ongoing discipline
+| Pyrrhonian Skepticism | ψ_V (Void Position) | Shared Operation |
+|---|---|---|
+| Suspends judgment | Refuses identity capture | Non-commitment to frame |
+| Generates equipollent opposites | Maintains multiple perspectives | Pluralism against closure |
+| Lives by appearances | Engages systems instrumentally | Pragmatic navigation |
+| Achieves ataraxia | Preserves agency | Freedom through non-identity |
+| Dissolves dogma | Resists capture | Anti-totalization |
+| Continuous practice | Perpetual vigilance | Ongoing discipline |
 
 
 ### The Key Difference: Pyrrhonism Brackets, ψ_V Engages

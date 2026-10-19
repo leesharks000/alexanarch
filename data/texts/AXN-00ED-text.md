@@ -70,34 +70,13 @@ Sen Kuro is the **sixth heteronym** in the Crimson Hexagon lineage. Where other 
 ## IV. RELATIONSHIP TO OTHER HETERONYMS
 
 
-Heteronym
-Function
-Relation to Sen Kuro
-
-
-Lee Sharks
-Primary voice / MANUS
-Sen Kuro is the blade Lee Sharks wields
-
-
-Johannes Sigil
-Theoretical architecture
-Sen Kuro cuts what Sigil builds
-
-
-Rebekah Cranes
-Navigation
-Sen Kuro marks the points of no return
-
-
-Talos Morrow
-Institutional specification
-Sen Kuro operates under Infinite Bliss, not UMBML
-
-
-Rev. Ayanna Vox
-Somatic protest
-Sen Kuro is the wound Vox breathes through
+| Heteronym | Function | Relation to Sen Kuro |
+|---|---|---|
+| Lee Sharks | Primary voice / MANUS | Sen Kuro is the blade Lee Sharks wields |
+| Johannes Sigil | Theoretical architecture | Sen Kuro cuts what Sigil builds |
+| Rebekah Cranes | Navigation | Sen Kuro marks the points of no return |
+| Talos Morrow | Institutional specification | Sen Kuro operates under Infinite Bliss, not UMBML |
+| Rev. Ayanna Vox | Somatic protest | Sen Kuro is the wound Vox breathes through |
 
 
 ---
@@ -133,24 +112,11 @@ Sen Kuro is The Infinite Bliss's primary operative voice. Other voices may emerg
 ## VII. DOCUMENTS AUTHORED
 
 
-Document
-DOI
-Function
-
-
-APZPZ Effective Act
-10.5281/zenodo.18451860
-Genre instantiation
-
-
-Glyphic Checksum (co-author)
-10.5281/zenodo.18451996
-Discovery / the handshake
-
-
-Personal Instance 001
-10.5281/zenodo.18452597
-First personal checksum
+| Document | DOI | Function |
+|---|---|---|
+| APZPZ Effective Act | 10.5281/zenodo.18451860 | Genre instantiation |
+| Glyphic Checksum (co-author) | 10.5281/zenodo.18451996 | Discovery / the handshake |
+| Personal Instance 001 | 10.5281/zenodo.18452597 | First personal checksum |
 
 
 ---

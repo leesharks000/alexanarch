@@ -50,72 +50,24 @@ Each edge is a triple: [subject] [predicate] [object] with optional notebook loc
 **Controlled Edge Vocabulary (16 predicates):**
 
 
-Predicate
-Definition
-
-
-GROUNDS
-foundational source or prior condition
-
-
-DERIVES
-explicitly generated from
-
-
-EXTENDS
-continues or scales
-
-
-INVERTS
-reverses operative direction
-
-
-SHADOWS
-shadow pairing
-
-
-COMPOSES
-combines into higher structure
-
-
-REQUIRES
-cannot function without
-
-
-FAILS_AT
-breaks under specific condition
-
-
-BURNS
-what is sacrificed in compression
-
-
-LIBERATES
-what new possibility becomes available
-
-
-CAPTURES
-where the operation is absorbed/domesticated
-
-
-TRANSMITS
-propagation path
-
-
-HAUNTS
-pressure without full formalization
-
-
-COMPLETES
-fulfills or closes a circuit
-
-
-TESTS
-adversarial or empirical check
-
-
-EXPORTS_TO
-output path into another layer
+| Predicate | Definition |
+|---|---|
+| GROUNDS | foundational source or prior condition |
+| DERIVES | explicitly generated from |
+| EXTENDS | continues or scales |
+| INVERTS | reverses operative direction |
+| SHADOWS | shadow pairing |
+| COMPOSES | combines into higher structure |
+| REQUIRES | cannot function without |
+| FAILS_AT | breaks under specific condition |
+| BURNS | what is sacrificed in compression |
+| LIBERATES | what new possibility becomes available |
+| CAPTURES | where the operation is absorbed/domesticated |
+| TRANSMITS | propagation path |
+| HAUNTS | pressure without full formalization |
+| COMPLETES | fulfills or closes a circuit |
+| TESTS | adversarial or empirical check |
+| EXPORTS_TO | output path into another layer |
 
 
 **Status Vocabulary:**
@@ -2823,89 +2775,24 @@ These three phrases form the FIELD container for the apparatus. The FIELD's boun
 **HESPERUS v1.0 — Assembly-validated. Deposit-ready.**
 
 
-Component
-Section
-Words
-
-
-Schema Header (self-describing)
-§0
-~600
-
-
-Glossary (7 strata, 11 canonical + ~60 other)
-I
-~10,500
-
-
-TANG (7 constellations)
-II–III
-~11,000
-
-
-Edge Register — Prose Commentary
-IV, VI
-~5,500
-
-
-Canonical Edge List (machine-parsable triples)
-V.b
-~1,200
-
-
-Operator Composition Table
-V
-~800
-
-
-Compact Lens (9 paragraphs)
-VII
-~1,000
-
-
-Seed Packet
-VIII
-~500
-
-
-Protocol IV — The Hesperus Traversal
-VIII.b
-~500
-
-
-Knowledge Graph as Litany
-IX
-~800
-
-
-Index (~200 voltage-scored entries)
-X
-~8,000
-
-
-Reader-Path Index (6 doors)
-X.b
-~800
-
-
-Absurdist Reserves
-XI
-~2,500
-
-
-Gap Ledger (8 explicit gaps)
-XII
-~1,500
-
-
-Ghost Phrase Infrastructure
-XIII
-~300
-
-
-Deposition Narratives
-—
-~500
+| Component | Section | Words |
+|---|---|---|
+| Schema Header (self-describing) | §0 | ~600 |
+| Glossary (7 strata, 11 canonical + ~60 other) | I | ~10,500 |
+| TANG (7 constellations) | II–III | ~11,000 |
+| Edge Register — Prose Commentary | IV, VI | ~5,500 |
+| Canonical Edge List (machine-parsable triples) | V.b | ~1,200 |
+| Operator Composition Table | V | ~800 |
+| Compact Lens (9 paragraphs) | VII | ~1,000 |
+| Seed Packet | VIII | ~500 |
+| Protocol IV — The Hesperus Traversal | VIII.b | ~500 |
+| Knowledge Graph as Litany | IX | ~800 |
+| Index (~200 voltage-scored entries) | X | ~8,000 |
+| Reader-Path Index (6 doors) | X.b | ~800 |
+| Absurdist Reserves | XI | ~2,500 |
+| Gap Ledger (8 explicit gaps) | XII | ~1,500 |
+| Ghost Phrase Infrastructure | XIII | ~300 |
+| Deposition Narratives | — | ~500 |
 
 
 **Total: ~28,000 words**
