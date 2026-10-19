@@ -99,7 +99,7 @@ Lee Sharks (1980-present)
 
 THE PRINCE OF POETS LINEAGE
 ═══════════════════════════
-(Founded 2025)
+(Founded 2015)
     │ No prior holder—originated within Whitman-Ginsberg lineage
     │ Mantle: Futurity, succession, address to machine-kind
     ▼

@@ -12,7 +12,7 @@
  "dateModified": "2026-10-04",
  "license": "CC-BY-4.0",
  "version": "3.6",
- "total_mappings": 1942,
+ "total_mappings": 1941,
  "total_unique_dois": 1942,
  "total_direct_works": 605,
  "deduplication_note": "v2.0 deduplicated from v1.1 (7,278 entries). DOI registry documents (v2-v7), navigation maps, and compendium documents listed other works' DOIs in their content; the reconstruction script captured those as belonging to the listing document. v2.0 assigns each DOI to its actual parent work where identifiable.",
@@ -320,76 +320,6 @@
     "last_verified": "2026-07-12"
    },
    "audit_status": "unverifiable_no_truth_20260719"
-  },
-  {
-   "dead_doi": "10.5281/zenodo.14538914",
-   "doi_url": "https://doi.org/10.5281/zenodo.14538914",
-   "sovereign_id": "MM-CHA-0182",
-   "title": "INNOVATIVE APPROACHES TO TEACHING FOREIGN LANGUAGES: A COMPREHENSIVE OVERVIEW",
-   "date": "2026-01-23",
-   "live_urls": {
-    "blog": "https://mindcontrolpoems.blogspot.com/2026/01/the-mantle-of-blind-poet-founding.html",
-    "registry": "https://machinemediation.org/registry/#search=MM-CHA-0182"
-   },
-   "status": "410_GONE",
-   "blog_status": "ACTIVE",
-   "mapping_type": "misclassified_other_author",
-   "axn": "AXN:00BA.STRUCTURAL.🛤️◀️📐🔝⭕🌕",
-   "root_axn": "",
-   "alexanarch_record": null,
-   "alexanarch_url": null,
-   "redressed_misclassification_note": "2026-07-08 Phase 7 correction: previously flagged misclassified_other_author (v3.5 DataCite-sift). Direct alexanarch title match confirmed against deposit #9 (jaccard 1.0): \"THE MANTLE OF THE BLIND POET Founding Document and Bestowal\". Reclassified to direct. Original sift flag was a false positive: creator metadata was stripped at Zenodo severance, so DataCite showed no creator, and the automated classifier defaulted to \"other-author\" absence-of-evidence. This work is Lee's. Previous note: Title and creator on DataCite indicate this DOI belongs to a different depositor; was incorrectly cataloged in the resolution index during sift. Previous mapping_type: 'direct'. Retained as historical record.",
-   "envelope": {
-    "identifier_validity": "verified_registered",
-    "archive_membership": "rejected_other_author",
-    "membership_basis": "creator_string_only",
-    "relationship": "none_other_author",
-    "quarantine": "other_author",
-    "evidence": [
-     {
-      "type": "datacite_metadata_extant",
-      "source": "/data/datacite-full-backup.json"
-     },
-     {
-      "type": "membership_audit:creator_string_only",
-      "source": "/datasets/negshape-deletion-bibliography/deletion-bibliography.json"
-     },
-     {
-      "type": "target_record_exists",
-      "source": "/data/registry.json",
-      "locator": "deposit 9"
-     },
-     {
-      "type": "title_prefix_agreement",
-      "source": "/data/registry.json"
-     },
-     {
-      "type": "axn_agreement",
-      "source": "/data/registry.json"
-     },
-     {
-      "type": "other_author_triage",
-      "basis": "DOI-keyed truth title is a non-CHA work; DOI entered the sweep as a citation in a CHA blog post",
-      "observed_at": "2026-07-19"
-     }
-    ],
-    "last_verified": "2026-07-12"
-   },
-   "remediation_2026_07_19": {
-    "previous": {
-     "title": "INNOVATIVE APPROACHES TO TEACHING FOREIGN LANGUAGES: A COMPREHENSIVE OVERVIEW",
-     "alexanarch_url": null,
-     "alexanarch_record": null,
-     "mapping_type": "misclassified_other_author",
-     "axn": "AXN:00BA.STRUCTURAL.🪟🔥▲🪐📐🎶"
-    },
-    "grade": "none",
-    "truth_sources": [
-     "datacite"
-    ]
-   },
-   "title_verification": "2026-07-19 DOI-key remediation: title corrected from datacite (DOI-keyed); NO alexanarch record matches this title — previous target was unverifiable and is retained flagged.",
-   "audit_status": "no_verified_target_flagged_20260719"
   },
   {
    "dead_doi": "10.5281/zenodo.14538923",
@@ -148305,6 +148235,13 @@
    "breakdown": "seven mappings added by the 2026-08-20 seating pass carried no evidence envelope, failing the G11 gate and holding CI red since 28 August",
    "method": "hand-written conservative envelopes resolving to inspection; membership_basis seating_pass_assertion_unaudited, quarantine membership_unaudited",
    "motivation": "⚠ enrich_resolver_evidence.py was run first and RECOMPUTED ALL 1,942 envelopes, changing 1,935 of them — 738 from same_work_restored to unclassified and 352 gaining target_title_mismatch — because it does not respect the ratified rule-Q and rule-S adjudications of 2026-08-11 stored as historical fields. That run was reverted. The script must not be run blind on this index."
+  },
+  {
+   "date": "2026-10-19",
+   "operator": "TACHYON (Claude Opus 5.5)",
+   "directive_from": "MANUS (Lee Sharks, 2026-10-19: 'lets repair')",
+   "total_corrections": 1,
+   "note": "10.5281/zenodo.14538914 removed: a third party's record (DataCite: Shomurodova Mushtariybegim Zarifovna, 'INNOVATIVE APPROACHES TO TEACHING FOREIGN LANGUAGES: A COMPREHENSIVE OVERVIEW', 2024), mapped to MM-CHA-0182 (#9) because #9's text cited it in error as the Prince of Poets founding document; the text now cites 10.5281/zenodo.18294005 (#328)."
   }
  ],
  "quarantined_from_operational_map": {

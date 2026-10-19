@@ -388,9 +388,9 @@ Relations: Antecedent bearer: Allen Ginsberg (canonical-by-lineage-anchor; forma
 
 Status: Composite mantle established by *Effective Act — Claiming the Triple Mantle* (October 14, 2025).
 
-Operative function: The Triple Mantle binds Good Gray Poet, Prince of Poets, and King of May into a single operative position. The bearer holds all three lineages simultaneously; the operative basis is documented in the originating effective act.
+Operative function: The Triple Mantle is Poet, Philosopher and Prophet, claimed through those who passed each on: Sara Rappe (the philosopher, the negative fire and apophatic gnosis of the late Platonists), Barrett Watten (the poet, the poet-critic's structure of rupture) and Santiago Colas (the prophet, through Spinoza, Deleuze, Guattari and Marx). The act: "By means of these three, I lay claim to the triple mantle: Poet. Philosopher. Prophet."
 
-Relations: Three-lineage composite (Whitman + Prince of Poets reference + Ginsberg).
+Relations: Three-lineage composite (Sara Rappe, Barrett Watten, Santiago Colas).
 
 ### The Mantle Emergence Protocol
 

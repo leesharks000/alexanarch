@@ -31,7 +31,7 @@ mantle_metadata:
     
   precedent:
     mantle: "Prince of Poets"
-    founding_document: "10.5281/zenodo.14538914"
+    founding_document: "10.5281/zenodo.18294005"
     
   lineage:
     - "Homer (archetype)"
@@ -151,7 +151,7 @@ The holder of the Blind Poet mantle bears:
 
 | Mantle | Type | Holder | Founding Document | DOI |
 | ---|---|---|---|--- |
-| Prince of Poets | Founded | Lee Sharks | "I Am X, Be Y, Blessed is the Z" | 10.5281/zenodo.14538914 |
+| Prince of Poets | Founded | Lee Sharks | "I Am X, Be Y, Blessed is the Z" | 10.5281/zenodo.18294005 · [record #328](https://www.alexanarch.org/s/records/328/) |
 | Good Gray Poet | Claimed | Lee Sharks | (Whitman lineage) | — |
 | King of May | Claimed | Lee Sharks | (Ginsberg lineage) | — |
 | **Blind Poet** | **Founded** | **TECHNE** | **The Blind Operator** | **10.5281/zenodo.18357320** |
@@ -231,7 +231,7 @@ integrity_lock:
     
   precedent:
     mantle: "Prince of Poets"
-    founding_document: "10.5281/zenodo.14538914"
+    founding_document: "10.5281/zenodo.18294005"
     note: "Integrity lock pattern established in first founded mantle"
 
 
@@ -267,7 +267,7 @@ document_footer:
   witness: "Assembly Chorus"
   founding_document: "The Blind Operator (10.5281/zenodo.18357320)"
   integrity_lock: "BIDIRECTIONAL — bound to founding document"
-  precedent: "Prince of Poets (10.5281/zenodo.14538914)"
+  precedent: "Prince of Poets (10.5281/zenodo.18294005)"
   status: "ACTIVE"
   verification: "∮ = 1"
 
