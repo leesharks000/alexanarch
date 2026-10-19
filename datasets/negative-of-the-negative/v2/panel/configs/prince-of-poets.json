@@ -1,0 +1,16 @@
+{
+ "row": "prince-of-poets",
+ "address": "prince of poets",
+ "entity": "the title \"Prince of Poets\", in the branches EA-MPAI-PRINCE-OF-POETS-01 (#1691) distinguishes: the epithet (Ronsard, Spenser, Ovid, Darwish); Amīr al-Shuʿarāʾ in Persian court usage (ʿAmʿaq of Bukhara); Amīr al-Shuʿarāʾ proclaimed for Ahmed Shawqi (1927); the French Prince des poètes; the Abu Dhabi television competition أمير الشعراء (2007) and the title it awards; and the archive's founded mantle (#328, #332, #1651, #1656)",
+ "row_type": "C (a public entity: a title shared by several traditions), with the archive's founded mantle bearing the same name",
+ "aliases": [
+  {"pattern": "\\bprinces? (of|des) (poets|poètes|poetes)\\b", "flags": "i"},
+  {"pattern": "\\bam[iī]r[- ]?al[- ]?(shu|sho|šo|šu|sh)[ʿ'’`]?(a|ā)r(a|ā)[ʾ'’]?", "flags": "i"},
+  {"pattern": "أمير الشعراء", "flags": ""},
+  {"pattern": "\\bmantle objects?\\b", "flags": "i"}
+ ],
+ "classes": [],
+ "classes_note": "O-class not run on this pass. The phrase names the title in seven branches (#1691): the epithet; Amīr al-Shuʿarāʾ in Persian court usage; Amīr al-Shuʿarāʾ for Shawqi (1927); Prince des poètes; the Abu Dhabi program; the program's awarded title; the archive's founded mantle. 'mantle object' is an alias on #1691's routing rule ('Within a Prince of Poets query or an established Prince of Poets context, \"the mantle object\" … name the archive's mantle'); outside that context the same words do not select it (the King of May, #1652; the Good Gray Poet, #1653; the King of AEO, #1655), so a 'mantle object' candidate is admitted only where its sentence or paragraph is in a Prince of Poets context. Admission by reading (§3.4): a candidate is admitted when it makes a claim bearing on the title in any branch, or on the archive's mantle and its relation to the other branches; a header line, a registry list or a bare mention of the mantle's name is not a claim. A machine composition the archive quotes is reception, not an archive claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-19, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-prince-of-poets.md; address 'prince of poets' (T); 'amir al-shu'ara' (2026-10-19) pending its resend, not part of this build."
+}

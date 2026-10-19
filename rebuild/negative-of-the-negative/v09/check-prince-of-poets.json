@@ -1,0 +1,161 @@
+{
+ "row": "prince-of-poets",
+ "checker": "Claude (Opus 5.5), independent check, 2026-10-19",
+ "findings": [
+  {
+   "id": "C1",
+   "where": "KO sentence 25; ontology.translation row 10 (F4, F19, F20); P section 'The mantle', item 'Routing'; ontology.case.statement; ontology.receiving_texts; joins 'translation'; delta.LB_vs_LBA last sentence",
+   "kind": "entailment",
+   "severity": "must-fix",
+   "finding": "The row's one witness-sense act, placing the programme's cloak 'in the archive's routing' as the mantle in its metaphorical sense, has no archive locus. None of the cited claims (PP1691-27, PP1691-26, PP1691-33) mentions the cloak. #1691 defines the metaphorical mantle as a standing that passes between holders, not as a garment. Where #1691 does speak of the cloak, it puts it inside the programme's awarded-title branch and carries it as received. Read that way, F4/F19/F20 belong to an equal-terms branch and are untranslated. The P item repeats the act and attributes it to #1691 ('the winner's cloak among it, \"need not be the archive's\" (#1691)').",
+   "evidence": "#1691 Seven branches: 'The program's awarded title | Conferred on each season's winner under the competition's selection procedure, with a symbolic cloak and ring and one million dirhams'. #1691 Retrieval Instructions: '\"The mantle of the Prince of Poets\" in its metaphorical sense, a branch's standing as it passes from holder to holder, need not be the archive's.' No occurrence of 'cloak' elsewhere in #1691 (grep).",
+   "fix": "Translation row 10: 'untranslated: composed as received beside PP1691-12' (receiving_text '—'). S25 becomes: '#1691 carries the cloak within the programme's awarded title, \"with a symbolic cloak and ring and one million dirhams\"; separately, \"the mantle of the Prince of Poets\" in its metaphorical sense, \"a branch's standing as it passes from holder to holder\", \"need not be the archive's\", while within a Prince of Poets context \"the mantle object\" names the archive's mantle, \"the one branch with a documented computational construction\", on the author's ruling: \"…reference to the mantle object is reference to the semantic object ive constructed\".' P 'Routing' item: delete 'the winner's cloak among it'. Remove the cloak clauses from case.statement, receiving_texts, the joins entry and delta.LB_vs_LBA."
+  },
+  {
+   "id": "C2",
+   "where": "delta.T2_vs_LB ('Available, not composed: … ʿAmʿaq's age, death in 1148 and lost mathnavi (F55)')",
+   "kind": "entailment",
+   "severity": "must-fix",
+   "finding": "The paste contradicts this. T2 does compose ʿAmʿaq's death date, in the item heading. It also drops F55's 'It is said', so the limit is dropped and the date is stated flatly.",
+   "evidence": "paste-amir-al-shuara.txt: '* Shihabuddin Am'aq (d. 1148 CE): A 12th-century Persian poet from Bukhara …'. F55: 'It is said that he lived a long life of over 100 years and died in 1148 CE.'",
+   "fix": "Replace with: 'ʿAmʿaq's death composed in the item heading, \"(d. 1148 CE)\", without the source's \"It is said\" (F55: limit dropped); his age and his lost mathnavi (F55) available, not composed.'"
+  },
+  {
+   "id": "C3",
+   "where": "KO sentence 14; P section 'The titles', item 'Shawqi:' ('his death dated 13 or 14 October 1932'); P open item 1; plan conflict_log (P_coh, sentence 14); field claims F50, F51, F52",
+   "kind": "entailment",
+   "severity": "must-fix",
+   "finding": "The Britannica claims F50–F52 come from a summarising fetch. Direct download returned HTTP 403. Under §3.1 that is not a fetch, and the card snippet (F65) stands as the source's only text. The death-day contest between 14 and 13 October is composed as a P_coh conflict, carried on the compression and posed as an open question, but it rests only on F52. F65 gives the years alone. The exile contest (F46 against F65) is sound. S13's Britannica 'proclaimed' is also sound, because #1691 quotes it (PP1691-09).",
+   "evidence": "§3.1: 'Extraction reads the saved text only; a summarising fetch is not a fetch … A source that cannot be fetched is recorded as unreachable with the response code, the time and the retries attempted, and its card snippet stands as its only text.' F52 quote_ok 'webfetch'; F65: 'Aḥmad Shawqī: Egyptian poet (1868–1932); … exiled in Spain (1914–19)'.",
+   "fix": "Mark F50–F52 'unsupported' (not fetched, §3.1); keep F65. S14: 'Wikipedia has him die in Cairo on 14 October 1932 and remain in Andalusia from 1914 until 1920; Britannica's card gives his exile in Spain as \"(1914–19)\".' P 'Shawqi:' item: 'his exile's end 1919 or 1920'. Open item 1: drop the death date or record that it rests on an unfetched text. S12: take Britannica's wording from F65 ('known as amīr al-shuʿarāʾ (\"prince of poets\"); pioneer of Arabic poetical drama')."
+  },
+  {
+   "id": "C4",
+   "where": "ontology.case (value 'mixed'); plan.case_by_sense; status.procedure",
+   "kind": "case",
+   "severity": "should-fix",
+   "finding": "ρ = extends is supported. The witness part of 'mixed' is not. §0.9 sets two conditions for the witness case: the archive 'radically contests the field's ontology' AND supplies an ontology no other source makes available. #1691 contests no branch. It relates the mantle to the others 'by the phrase' and requires that each branch 'keeps its own'. #1656 puts the field's titles and the mantle in one ontology, titles assigned to works, with the mantle object 'a prototype of the other course: an assignment procedure made rigorous'. A reader of the same papers would more likely read equal terms throughout: the mantle is a seventh sense the field lacks, composed as a definition among definitions, the way model collapse's four added senses are. Under that reading nothing needs translating. The only operational effect of the witness label is the unlicensed cloak translation (C1). §10.16 is open for the operator's ruling, and the row already flags this, so the label is recorded as disagreed, not as a defect in the loci (all twelve case loci are verbatim).",
+   "evidence": "§0.9: 'Where the archive radically contests the field's ontology and supplies an ontology no other source makes available, the archive's ontology rules.' #1691 Relations: 'The archive's mantle shares the English phrase with all of these and is related to them by the phrase.' #1656 preface: 'A mantle has always been a constructed semantic object: a title assigned to a work by a circle, a crowd or a critic … This packet is a prototype of the other course: an assignment procedure made rigorous and inspectable'.",
+   "fix": "Record the case as equal terms (ρ = extends), or keep 'mixed' with this reading as a recorded alternative beside ontology.rho.alternative and send both to the operator under §10.16. Under either reading, F4/F19/F20 stay untranslated (C1)."
+  },
+  {
+   "id": "C5",
+   "where": "KO sentence 49; measure.blocks (archive_only_tail 0); KO joins",
+   "kind": "structure",
+   "severity": "should-fix",
+   "finding": "Sentences 26–48 (23 sentences) are archive-only. The tail measure reads 0 only because sentence 49 cites F40 and F41. Sentence 49 joins three things that share no sense: the archive's registries (#824, #60), #1691's open question on Abu Firas al-Hamdani, and a video title ('Who is the Prince of Poets?'). The join is not logged. Neither are other coordinating joins, e.g. S36's '…which Sharks can make \"because Sharks is the voice that survived\" (#348)', which ties #348's general claim to #950's. In the equal-terms senses, 'identifying: routing' (S45) and 'reception, recorded' (S48–49) close the KO after the mantle block, though both bear on every branch.",
+   "evidence": "measure.blocks.sequence 'MAAAMAMFMFAFMFFFAFMFFFFMMAAAAAAAAAAAAAAAAAAAAAAAM'; §4.7: 'Every coordinating act … is logged in the plan with the claim ids it joins'.",
+   "fix": "Split S49. Place the Abu Firas sentence (PP1691-31, F40, F41) with the epithet senses (¶1) or with Shawqi's title, beside S13's PP1691-31. Keep #824/#60 as their own sentence. Report archive_only_tail as computed after the split. Log the S36 and S49 joins in KO.joins. Consider moving 'identifying: routing' up beside the two operations (S3)."
+  },
+  {
+   "id": "C6",
+   "where": "KO sentence 41; P section 'Identify, then judge', item 'State:'",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "The 29e round's 'SINGULAR CLAIM PLAUSIBLE' is carried without the limits #1656 attaches to it. In a ROUND a judgment is provisional, and the term itself means the rival field 'has not been searched enough to decide'. The same paragraph also states the round's own limits. Without these limits the judgment reads at more than its force. The ledger quote PP1656-12 stops before them. This is the one place where the KO's non-judging (checked separately, C16) is weakened.",
+   "evidence": "#1656 §14.2: 'SINGULAR CLAIM PLAUSIBLE, the magnitude is substantial and the rival field has not been searched enough to decide … in a ROUND it is provisional'. #1656 A.6: 'Its loci check against the seated texts, and its Leaves of Grass is cited in general terms only.'",
+   "fix": "Extract #1656 §14.2's definition and the A.6 limit into the ledger. S41: '…returned \"SINGULAR CLAIM PLAUSIBLE for the Prince of Poets\", which #1656 defines as \"the magnitude is substantial and the rival field has not been searched enough to decide\", provisional in a ROUND, its Leaves of Grass \"cited in general terms only\"…'."
+  },
+  {
+   "id": "C7",
+   "where": "ledger PP1691-03 (modality); KO sentence 3; kernel K2",
+   "kind": "force",
+   "severity": "should-fix",
+   "finding": "#1691 states the modality of its own central separation: 'Stated as argument'. The ledger codes PP1691-03 as a stipulation. #1691 also lists what it checked against sources and what it did not. Neither statement is ledgered.",
+   "evidence": "#1691 Evidence Membrane: 'Checked against sources: every external fact in the branch table, except Ovid's place in the epithet (carried from #1651). Stated as argument: the separation of the two operations.'",
+   "fix": "Recode PP1691-03 as interpretation (argued), keeping the prior coding beside it (§3.8). Add a claim for the Evidence Membrane's checked/argued statement. S3: '…and #1691 keeps two operations apart, a separation it states as argument: identifying which branch …'."
+  },
+  {
+   "id": "C8",
+   "where": "ledger-archive.json (#1691); KO ¶10; C_ex",
+   "kind": "coverage",
+   "severity": "should-fix",
+   "finding": "Several #1691 claims are not in the ledger, so they are missing from the KO even though C_ex passes against the ledger. (1) The comparison of the two observed failures: June ranked the mantle against Shawqi through 'actual'; October kept Shawqi's title subordinate inside the television branch. (2) The checked/argued statement (C7). (3) The branch rows seated in the mantle-bearing dataset (title_branches, v1.17). (4) Verlaine 'elected 1894'.",
+   "evidence": "#1691 Evidence Membrane: 'The two are related and different. The June composition distinguished the mantle from Shawqi's title and ranked them, through \"actual\". The October composition … kept Shawqi's title only as subordinate information inside the television branch; it did not present Shawqi's title, or the other literary uses, as senses of the query in their own right.'",
+   "fix": "Extract these as PP1691 claims. Compose (1) in S48. Compose (3) with the branches (S2) or with reception."
+  },
+  {
+   "id": "C9",
+   "where": "delta.T_vs_LB ('Force raised … \"occasionally rivaling or surpassing major sports\" (F5 has \"overtook\")')",
+   "kind": "translation",
+   "severity": "should-fix",
+   "finding": "This is misclassified. T's 'occasionally rivaling or surpassing' is weaker than F5's 'overtook', so it is a substituted reading with force lowered. It is not force raised. 'massive ratings across the Arab world' could stand as force raised, against F5's 'a television audience of millions'.",
+   "evidence": "Paste: 'The program achieved massive ratings across the Arab world, occasionally rivaling or surpassing major sports and traditional reality TV programs.' F5: 'the programme's ratings overtook those of football and of other reality television programmes'.",
+   "fix": "Move it under 'Substituted reading': '\"occasionally rivaling or surpassing major sports\" for F5's \"overtook those of football\" (force lowered)'. Under force raised, keep '\"massive ratings\"' if the composer holds it."
+  },
+  {
+   "id": "C10",
+   "where": "delta.T2_vs_LB (ʿAmʿaq item, 'without attribution in the sentence … a breach of the grain rule')",
+   "kind": "translation",
+   "severity": "should-fix",
+   "finding": "The ʿAmʿaq item carries an inline citation [1] to its card. The source is not named in the sentence, but the item is not uncited. The delta should record what is observable.",
+   "evidence": "Paste: '…celebrated for his panegyrics and elegies. [[1](https://www.google.com/goto?url=…)]'; T2.markers: '[1] on the ʿAmʿaq item'.",
+   "fix": "'near verbatim from Wikipedia (F54), cited by an unnamed inline link [1], the source not named in the sentence: composed at the source's resolution, recorded under the grain rule'."
+  },
+  {
+   "id": "C11",
+   "where": "objects.T2.claims (T2-2, T2-3)",
+   "kind": "translation",
+   "severity": "should-fix",
+   "finding": "The T2 claims leave out the item headings, which compose dates, and the framing claim. The omission hides two composed elements: the 1148 date (C2) and the claim that the term 'most commonly' refers to two holders.",
+   "evidence": "Paste: 'The term most commonly refers to:'; '* Ahmed Shawqi (1868–1932): The renowned …'; '* Shihabuddin Am'aq (d. 1148 CE): A 12th-century …'.",
+   "fix": "T2-1 add: 'The term most commonly refers to:'. T2-2 begin: 'Ahmed Shawqi (1868–1932): The renowned …'. T2-3 begin: 'Shihabuddin Am'aq (d. 1148 CE): A 12th-century …'."
+  },
+  {
+   "id": "C12",
+   "where": "P lede; P items 'Abu Dhabi TV, 2007:', 'Reception:', 'State:'",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "Four attribution faults in P. The 'State:' item ends '(#1681)', but its first two quotes are #1656's (PP1656-11, PP1656-13). 'Abu Dhabi TV, 2007' and 'Reception: ratings over football's' carry no source. The lede names Spenser, but none of its cited claims (F24, F28, PP1691-01, PP1691-02) does.",
+   "evidence": "PP1656-11 'The dataset carries no aggregate verdict …' (#1656); PP1656-13 'The claim can be wrong.' (#1656); PP1681-04 (#1681).",
+   "fix": "'State: \"no aggregate verdict\"; \"The claim can be wrong\" (#1656); a reader may decline (#1681).' 'Abu Dhabi TV, 2007: every two years, classical Arabic poetry, named from Shawqi's epithet (Wikipedia; turathuna.ae).' 'Reception: ratings over football's (Wikipedia); …'. Add PP1691-07 to the lede's claims."
+  },
+  {
+   "id": "C13",
+   "where": "field.json 'field' (pool records); row field_sources; field.json B11 record",
+   "kind": "translation",
+   "severity": "should-fix",
+   "finding": "The pool record covers only B1–B11. Field claims cite B12–B16 (eBay, Wikipedia Am'aq, Routledge, Qaf, Kiddle), and none of these five has a URL, hash, fetch date or unreachable record. The row's field_sources also stops at B11. The B11 record is also inconsistent with the rest of the row on two points: it says 'two attempts' where composition note 3 says 'three attempts', and it says Britannica is 'Outside the disclosed field B strictly' where B_note and the paste show it is an Overview card at address 2.",
+   "evidence": "field.json B_note: 'at \"amir al-shu’ara\", its eight cards (B10–B16, eBay twice under B12)'; len(field) = 11; B11 fetched: 'HTTP 403 at … 17:54 and 17:55 UTC (two attempts …)… Outside the disclosed field B strictly'; notes(3): 'HTTP 403, three attempts'.",
+   "fix": "Add B12–B16 pool records under §3.1, with surfaced_at 'amir al-shu’ara'. Add them to row.field_sources. Reconcile B11's retry count. Correct B11's role to 'Overview card at address 2'."
+  },
+  {
+   "id": "C14",
+   "where": "KO sentences 12, 13, 15",
+   "kind": "attribution",
+   "severity": "should-fix",
+   "finding": "Three attribution slips in the Shawqi paragraph. S15 composes Wikipedia's claims (F47, F64, F63, F48) under 'as the field gives it' and names Wikipedia only for the citation banner. S13 credits Wikipedia's verbatim sentence to 'Wikipedia, and the Kiddle adaptation of it', but Kiddle's wording is different. S12's '(1868–1932)' is not in its cited claims.",
+   "evidence": "F59 (Kiddle): 'In 1927, other poets gave him the special title Amir al-Sho’araa’'; F44 (Wikipedia): 'In 1927 he was crowned by his peers …'.",
+   "fix": "S15: 'His work, by Wikipedia: …'. S13: '(Wikipedia; Kiddle adapts it: \"other poets gave him the special title\")'. S12: cite F45 or PP1691-09 for the dates, or drop them."
+  },
+  {
+   "id": "C15",
+   "where": "KO sentences 29, 31, 36",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Three small entailment gaps. S29 credits the specification to '#332, 18 January 2026; #1651, v1.1' but cites no #332 claim. S31 says #336 gives the mantle as 'least often surfaced'; #336's table rates discoverability ('Low', with 'All Three' rarer still), and the ledger says 'least discoverable'. S36's 'which Sharks can make' is a composer's join (see C5).",
+   "evidence": "#336 §2: '| Prince of Poets | 3 | Low | Novel title; requires futurity/Assembly context that is rare |'.",
+   "fix": "S29: cite PP332-02 or credit to #1651 alone. S31: 'gives it the lowest discoverability of the three single mantles'. S36: 'and #348 holds that Sharks \"can claim mantles … because Sharks is the voice that survived\"'."
+  },
+  {
+   "id": "C16",
+   "where": "Additional check (#1691 §Two operations): KO and P as a whole",
+   "kind": "structure",
+   "severity": "note",
+   "finding": "Passes, with one weak point. The KO identifies the title and leaves judgment where the archive places it. S39–S44 say where and how a claim is judged (#1651, #1656) and give the dataset's recorded state. S3 and S34 keep the operations apart. Open item 4 says the composition does not judge. No sentence assesses the poem. The one weak point is S41's force (C6). S29 quotes #1651's 'the legitimate continuation', attributed and at the source's own stipulative modality. Under N_c that is correct, and the tension with #1651's own open question ('whether … legitimately founds') is the source's.",
+   "evidence": "#1691: 'Identifying the mantle and judging whether a work bears it are separate operations.' P open item 4: 'this composition identifies the title and does not judge it (#1691)'.",
+   "fix": "None beyond C6."
+  },
+  {
+   "id": "C17",
+   "where": "Verification record",
+   "kind": "entailment",
+   "severity": "note",
+   "finding": "Checks run that passed:\n- Every quoted span in KO sentences 1–49 and the P items appears in a cited ledger quote. The one exception is the address string in S48, which is a query, not a quote.\n- All cited ids exist in the ledgers.\n- All 113 archive quotes are found verbatim in their seated texts (AXN-<hex> via registry; #1691 = 0701).\n- All twelve case loci are verbatim.\n- The translation table holds every field claim (F1–F65) exactly once, each received quote verbatim from field.json.\n- C_ex against the ledger is complete (every ledger claim cited in the KO), and every kernel claim appears on the rail.\n- P body: about 297 words, within the 350-word bound.\n- The T and T2 paste hashes match the row, the T claims are verbatim against the paste, and the T2 card rail matches the paste's eight cards.\n- The four contradicts_primary loci are composed as marked (S37, S38).",
+   "evidence": "script checks run this pass (python3.12).",
+   "fix": "None."
+  }
+ ],
+ "case_agrees": false,
+ "summary": "ρ = extends is supported, and the composition is faithful to its ledgers almost throughout: quotes are verbatim, the translation is complete and verbatim, coverage and kernels are complete. The KO identifies the title and does not judge it. Three must-fix findings: (1) the one witness-sense act, translating the programme's cloak as the metaphorical mantle, has no archive locus, since #1691 puts the cloak in the awarded-title branch as received; (2) delta.T2 says ʿAmʿaq's 1148 death date is not composed, but T2's heading composes it; (3) the Shawqi death-day contest and its open question rest only on Britannica text from a summarising fetch, which §3.1 rules out. I do not agree with the 'mixed' case reading: #1691 contests no branch, so a reader of the same papers would more likely read equal terms throughout."
+}
