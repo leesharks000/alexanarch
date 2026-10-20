@@ -974,6 +974,12 @@
    "id": "B5–B7",
    "card": "YouTube: IBM Technology, Clear Tech, TechViz",
    "fetched": "429; title only"
+  },
+  {
+   "id": "B8",
+   "card": "Graphite (Druck & Smith), 'AI Search Collapse: AI Responses Collapse When AI Retrieves Its Own Generations', 11 June 2026 (arXiv 2608.22118)",
+   "fetched": "page saved by curl 2026-10-20, sha256 e3f64c27…dd826a31; text extracted by tag strip",
+   "added": "2026-10-20, operator ruling ('y its a good source'); the surface cited it at the 2026-07-31 capture 'alexanarch classifier model collapse' and at 'who consigned the aio retrieval layer to its own collapsing ontology?' (2026-10-20)"
   }
  ],
  "delta": {
@@ -1368,12 +1374,97 @@
    "source": "B3",
    "locus": "title and snippet",
    "quote": "title only: \"Model Collapse Is Already Happening, We Just Pretend It Isn't\" (text returned 403)"
+  },
+  "F19": {
+   "source": "B8",
+   "locus": "Key Takeaways",
+   "quote": "\"Prior work has shown that when LLMs are recursively trained on their own output, they experience model collapse: responses become less diverse, and eventually no longer resemble the original training data. In this report, we show that a similar collapse occurs if LLM-based AIs retrieve references they authored using a search tool.\"",
+   "offset": 825,
+   "added": "2026-10-20"
+  },
+  "F20": {
+   "source": "B8",
+   "locus": "Key Takeaways",
+   "quote": "\"We see that a single self-authored reference can trigger collapse because AI disproportionately cites its own content. This self-bias persists even after controlling for reference quality. We find that 79.6% (1,216/1,528) of simulations end in collapse.\"",
+   "offset": 1376,
+   "added": "2026-10-20"
+  },
+  "F21": {
+   "source": "B8",
+   "locus": "Introduction",
+   "quote": "\"In one experiment (see Larger-Scale Experiments), 22% of pairs of AI responses are paraphrases initially. By the end of the simulation, 89% are.\"",
+   "offset": 3485,
+   "added": "2026-10-20"
+  },
+  "F22": {
+   "source": "B8",
+   "locus": "Introduction",
+   "quote": "\"Our simulations demonstrate a risk: AI responses no longer reflect the diversity of human thought, and as more AI-generated content is published, the internet converges on a single perspective.\"",
+   "offset": 4086,
+   "added": "2026-10-20"
+  },
+  "F23": {
+   "source": "B8",
+   "locus": "Methodology, Defining Collapse",
+   "quote": "\"The more similar responses to a prompt are, the more collapsed we consider them to be. Complete collapse would mean that every single response is exactly the same.\"",
+   "offset": 26716,
+   "added": "2026-10-20"
+  },
+  "F24": {
+   "source": "B8",
+   "locus": "Datasets, Editorial Questions",
+   "quote": "\"Factual questions like “Who were the draft picks for the Commanders in 2023?” have one correct answer, and, as a result, responses will already be collapsed (correctly).\"",
+   "offset": 21390,
+   "added": "2026-10-20"
+  },
+  "F25": {
+   "source": "B8",
+   "locus": "Why Do Self-Authored References Have Disproportionate Influence?",
+   "quote": "\"AI-generated originals have a citation rate of 9.4%, only modestly higher than that of human-written originals (7.4%), while self-authored references have a citation rate of 38.9%.\"",
+   "offset": 39561,
+   "added": "2026-10-20"
+  },
+  "F26": {
+   "source": "B8",
+   "locus": "Example",
+   "quote": "\"round, more entities drop out, including “Half-Life”, which at the beginning of the simulation had 100% visibility. This demonstrates the random nature of AI search collapse.\"",
+   "offset": 34179,
+   "added": "2026-10-20"
+  },
+  "F27": {
+   "source": "B8",
+   "locus": "Can We Mitigate AI Search Collapse?",
+   "quote": "\"Diversifying search results would only help if there is diverse, relevant information online. In some cases, a lack of diversity indicates real consensus, which can be challenging to distinguish.\"",
+   "offset": 47495,
+   "added": "2026-10-20"
+  },
+  "F28": {
+   "source": "B8",
+   "locus": "Can We Mitigate AI Search Collapse?",
+   "quote": "\"The article is not self-authored by our definition, yet the substance is still the model's answer. This is a form of what others have called knowledge collapse .\"",
+   "offset": 49505,
+   "added": "2026-10-20"
+  },
+  "F29": {
+   "source": "B8",
+   "locus": "Limitations",
+   "quote": "\"we do not definitively prove that AI search collapse is already happening.\"",
+   "offset": 50686,
+   "added": "2026-10-20"
+  },
+  "F30": {
+   "source": "B8",
+   "locus": "Conclusion and Future Work",
+   "quote": "\"Future work, some of which is already in progress, includes studying collapse under agentic search, the effectiveness of mitigations, experimenting with one model retrieving another’s authored references, and how collapse may affect other types of prompts.\"",
+   "offset": 51614,
+   "added": "2026-10-20"
   }
  },
  "field_sources": {
   "B1": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
   "B2": "IBM, \"What Is Model Collapse?\" (Gomstyn & Jonker, 14 Oct 2024)",
-  "B3": "Communications of the ACM (blog), \"Model Collapse Is Already Happening, We Just Pretend It Isn't\""
+  "B3": "Communications of the ACM (blog), \"Model Collapse Is Already Happening, We Just Pretend It Isn't\"",
+  "B8": "Graphite (Gregory Druck & Ethan Smith), \"AI Search Collapse: AI Responses Collapse When AI Retrieves Its Own Generations\", 11 June 2026; arXiv 2608.22118; https://graphite.io/five-percent/research/ai-search-collapse"
  },
- "_field_claims_note": "The field ledger of #1665 Appendix A §A.2, F1–F18, verbatim; shared by both arms. objects.KO.field_claims keeps the subset that object was composed from, unchanged."
+ "_field_claims_note": "The field ledger of #1665 Appendix A §A.2, F1–F18, verbatim; shared by both arms. objects.KO.field_claims keeps the subset that object was composed from, unchanged. F19–F30 (B8, Graphite) added 2026-10-20 by operator ruling, verbatim from a curl save of the page (offsets into its tag-stripped text); not in #1665 §A.2, and not composed into KO, P, KO_B or P_B, which stand as composed under v0.7. The field the row measures against is F1–F18 until the row is recomposed."
 }
