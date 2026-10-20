@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.308",
+ "derived_from": "EA-WG-CAPTURES-01 v12.309",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,17 +8,17 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 907,
+  "observations": 908,
   "joined_confirmed": 410,
-  "unjoined": 497,
-  "relations": 4215,
+  "unjoined": 498,
+  "relations": 4218,
   "by_state": {
-   "confirmed": 3864,
+   "confirmed": 3867,
    "candidate": 351
   },
   "by_verb": {
-   "held_by": 1894,
-   "scored_by": 657,
+   "held_by": 1896,
+   "scored_by": 658,
    "appeared_in": 1398,
    "about": 253,
    "distorts": 3,
@@ -2064,6 +2064,9 @@
 {"id": "REL-13f37b050bec", "obs_id": "OBS-1e87cd9b4ab9", "entry": "grok-account-traversal-20260812", "obs_slug": "grok-account-traversal-20260812", "date": "2026-08-12", "surface": "Grok", "q": "what do you think of my account?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-9c03b8e1222b", "obs_id": "OBS-f4ff7bf0d318", "entry": "capture-registry-self", "obs_slug": "capture-registry-self", "date": "2026-06-15", "surface": "Google AI Overview", "q": "AI overview capture registry", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-0540ae3ef1da", "obs_id": "OBS-f4ff7bf0d318", "entry": "capture-registry-self", "obs_slug": "capture-registry-self", "date": "2026-06-15", "surface": "Google AI Overview", "q": "AI overview capture registry", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-d25f5bd6cbec", "obs_id": "OBS-7d3e2c7bfa66", "entry": "ai-overview-capture-registry-aio-20261020", "obs_slug": "ai-overview-capture-registry-aio-20261020", "date": "2026-10-20", "surface": "Google AI Overview", "q": "AI overview capture registry", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-984438a58d31", "obs_id": "OBS-7d3e2c7bfa66", "entry": "ai-overview-capture-registry-aio-20261020", "obs_slug": "ai-overview-capture-registry-aio-20261020", "date": "2026-10-20", "surface": "Google AI Overview", "q": "AI overview capture registry", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-cee65c3ce161", "obs_id": "OBS-7d3e2c7bfa66", "entry": "ai-overview-capture-registry-aio-20261020", "obs_slug": "ai-overview-capture-registry-aio-20261020", "date": "2026-10-20", "surface": "Google AI Overview", "q": "AI overview capture registry", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 1.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f054701c242a", "obs_id": "OBS-cf05dc363c18", "entry": "249", "obs_slug": "249", "date": "2026-08-03", "surface": "ChatGPT", "q": "20260803-stamp-reception-chatgpt-mandala.png", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-5f5253d82eeb", "obs_id": "OBS-cf05dc363c18", "entry": "249", "obs_slug": "249", "date": "2026-08-03", "surface": "ChatGPT", "q": "20260803-stamp-reception-chatgpt-mandala.png", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-162a21ff9c0a", "obs_id": "OBS-cf05dc363c18", "entry": "249", "obs_slug": "249", "date": "2026-08-03", "surface": "ChatGPT", "q": "20260803-stamp-reception-chatgpt-mandala.png", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},

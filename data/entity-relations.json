@@ -1,8 +1,8 @@
 {
- "derived_from": "EA-WG-CAPTURES-01 v12.308",
+ "derived_from": "EA-WG-CAPTURES-01 v12.309",
  "ruling": "Lee Sharks, 2026-10-15: target is the main anchor; no fidelity score on the wrong entity.",
  "name": "Observation-to-entity relations",
- "count": 947,
+ "count": 948,
  "reached_kinds": [
   "same",
   "weakened",
@@ -15484,7 +15484,7 @@
    "q": "johannes sigil \"final time\"",
    "target": [
     {
-     "ent": "ENT-d479a78c9e",
+     "ent": "ENT-5d54671305",
      "basis": "address"
     },
     {
@@ -15507,7 +15507,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-d479a78c9e",
+    "against": "ENT-5d54671305",
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
@@ -15560,7 +15560,7 @@
    "q": "tell me about jack feist and \"the final time\"",
    "target": [
     {
-     "ent": "ENT-d479a78c9e",
+     "ent": "ENT-5d54671305",
      "basis": "address"
     },
     {
@@ -15583,7 +15583,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-d479a78c9e",
+    "against": "ENT-5d54671305",
     "per_target": 0.0,
     "per_recorded": 0.0,
     "per_elements": 0.0,
@@ -15600,7 +15600,7 @@
    "q": "jack feist \"the final time\"",
    "target": [
     {
-     "ent": "ENT-d479a78c9e",
+     "ent": "ENT-5d54671305",
      "basis": "address"
     },
     {
@@ -15623,7 +15623,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-d479a78c9e",
+    "against": "ENT-5d54671305",
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
@@ -16754,6 +16754,42 @@
     "per_target": null,
     "per_recorded": null,
     "per_elements": null,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-7d3e2c7bfa66",
+   "entry": "capture-registry-self",
+   "date": "2026-10-20",
+   "surface": "Google AI Overview",
+   "q": "AI overview capture registry",
+   "target": [
+    {
+     "ent": "ENT-d504b47989",
+     "basis": "address"
+    }
+   ],
+   "owner": null,
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds the term 'Capture Registry' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-d504b47989",
+    "per_target": null,
+    "per_recorded": 1.0,
+    "per_elements": 1.0,
     "per_conflict": false,
     "reached_scored": false,
     "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
@@ -19136,7 +19172,7 @@
    "q": "THE FINAL TIME: Contingent Singularity and the Viability of the Next Dialectical Turn",
    "target": [
     {
-     "ent": "ENT-d479a78c9e",
+     "ent": "ENT-5d54671305",
      "basis": "address"
     }
    ],
@@ -19155,7 +19191,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-d479a78c9e",
+    "against": "ENT-5d54671305",
     "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
