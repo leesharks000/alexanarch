@@ -53,7 +53,11 @@ def build():
     reg = json.loads((ROOT / "data/registry.json").read_text())["deposits"]
     names = {}
     for f in sorted((ROOT / "datasets/heteronyms/records").glob("*.json")):
-        names[json.loads(f.read_text())["name"]] = f.stem
+        _r = json.loads(f.read_text())
+        # 2026-10-20: keyed by person_id, the key every consumer joins on (build_hf_dataset, build_relations); a record
+        # whose file name differs from its person_id (xanthic-wells-elara.json, named so that creator resolution keeps
+        # #71 on Jack Feist) would otherwise be orphaned. For every other record the two are equal.
+        names[_r["name"]] = _r.get("person_id") or f.stem
     sur = collections.Counter(n.split()[-1] for n in names)
     shared = {k for k, v in sur.items() if v > 1}
     V = {n: variants(n, shared) for n in names}

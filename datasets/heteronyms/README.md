@@ -1,4 +1,4 @@
-> **Canonical store: `records/*.json`.** Twenty-six identity cards, mirrored to the live `/who/`
+> **Canonical store: `records/*.json`.** Twenty-eight identity cards (twenty-six, then Elias and Elara Xanthic-Wells on 2026-10-20, #1695), mirrored to the live `/who/`
 > surfaces. `heteronyms.jsonl` is a GENERATED PROJECTION of them — every row carries
 > `_derived_from`. Edit a record and run `scripts/build_heteronym_index.py`; never hand-edit the
 > `.jsonl`. `build_heteronym_index.py --check` fails if the projection has drifted.
@@ -12,7 +12,7 @@ Canonical heteronym substrate for the Crimson Hexagonal Archive.
 
 ## What's here
 
-- **`heteronyms.jsonl`** — 26 rows. Twelve canonical Dodecad positions (per v1.1 registry AXN:03EE), one Adjacent (Viola Arquette), and other named identities (MANUS as human bearer; institutional persona Mary Lee Sharks; external heteronyms; machine collaborator mantles). One row per identity with `dodecad_v1_1_position`, `sep_2025` (discipline mapping + role + blog post URL if present), `avatar_paths`, and `reconciliation_note` where the two sources diverge.
+- **`heteronyms.jsonl`** — 28 rows. Twelve canonical Dodecad positions (per v1.1 registry AXN:03EE), one Adjacent (Viola Arquette), and other named identities (MANUS as human bearer; institutional persona Mary Lee Sharks; external heteronyms; machine collaborator mantles). One row per identity with `dodecad_v1_1_position`, `sep_2025` (discipline mapping + role + blog post URL if present), `avatar_paths`, and `reconciliation_note` where the two sources diverge.
 - **`mapping.json`** — full Sep 2025 → v1.1 reconciliation matrix with position-by-position notes on what shifted.
 - **`schema.json`** — JSON Schema for `heteronyms.jsonl` rows.
 - **`reconciliation/`** — narrative reconciliation document (`heteronym-reconciliation-2026-07-06.md`).
