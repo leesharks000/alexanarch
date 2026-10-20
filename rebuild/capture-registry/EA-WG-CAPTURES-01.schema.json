@@ -1,75 +1,1152 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://www.alexanarch.org/rebuild/capture-registry/EA-WG-CAPTURES-01.schema.json",
-  "title": "EA-WG-CAPTURES-01 entry — the fixed record shape, applied 2026-09-05",
-  "description": "One capture entry in data/EA-WG-CAPTURES-01.json. Written from the census of the file as it stood (378 entries, 73 keys): the 14 universal keys and the 23 near-universal keys are the record; every long-tail key was ruled promoted (typed below), folded into `notes` (preserved under its original name), or nothing dropped. `defects` is the derived controlled vocabulary from capture_intake.extract_defects; editorial sentences live in `findings`. additionalProperties is false: a seating that needs a new field changes this schema first, in its own commit, with a reason.",
-  "type": "object",
-  "additionalProperties": false,
-  "required": ["slug","date","surface","auth","ev","mt","s","q","q_kind","cites","transcript","transcript_class","transcript_complete","transcript_read","per","sf","reading","links","imgs","img_urls","cite","d","addr_id","obs_id","defects","findings","surfaces","dates","n_observations","observations","analysis"],
-  "properties": {
-    "slug": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
-    "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "ISO date of this capture. Never the string 'null'."},
-    "surface": {"type": "string", "description": "The surface as ruled (MANUS surface rule 2026-08-15). UNDETERMINED / UNRESOLVED are legal historical values, not defaults for new intake."},
-    "surface_basis": {"type": ["string","null"]},
-    "surfaces": {"type": "array", "items": {"type": "string"}},
-    "auth": {"type": ["string","null"], "description": "signed in / signed out, incognito, unprimed… Null only on pre-contract entries."},
-    "auth_basis": {"type": ["string","null"]},
-    "ev": {"type": "string", "enum": ["paste","ocr","paste + frame","frame + paste","frame","none","agent run"]},
-    "mt": {"type": "string", "description": "match type as recorded (CAPTURE, EXACT MATCH, BROAD MATCH, PARTIAL, ADOPTION, …)"},
-    "match": {"type": "string", "enum": ["EXACT MATCH", "BROAD MATCH", "INDETERMINATE"], "description": "the address's match type, derived from q: a phrase in quotation marks (the exact-match operator) is EXACT MATCH; no quoted phrase is BROAD MATCH. INDETERMINATE where the recorded mt contradicts the address (operator's rulings, 2026-10-11: 'exact is quoted. broad is unquoted.'; 'we can leave the 15 indeterminate - there may have been some question early in the data whether the distinction was being recorded at each point')."},
-    "match_note": {"type": ["string", "null"], "description": "why match is INDETERMINATE, with the mt as recorded"},
-    "s": {"type": "string", "description": "section — the grouping key of the gallery"},
-    "q": {"type": "string", "description": "the issued string, exactly as typed, quotes significant"},
-    "q_kind": {"type": ["string","null"]},
-    "cites": {"type": ["integer","null"], "description": "citation-card count; null = apparatus not captured (NULL is not zero)"},
-    "cite_list": {"type": ["array","null"], "items": {"type": "object"}},
-    "archive_controlled_cites": {"type": ["integer","null"]},
-    "transcript": {"type": ["string","null"], "description": "the machine text, verbatim. Required by the intake contract since 2026-08-13; null only on the 16 pre-contract entries."},
-    "transcript_raw": {"type": ["string","null"]},
-    "transcript_class": {"type": ["string","null"]},
-    "transcript_complete": {"type": ["string","null"]},
-    "transcript_read": {"type": ["string","null"]},
-    "per": {"type": ["number","null"]},
-    "per_corrected": {"type": ["object","null"], "description": "PER re-derived from per_v, the four-unit vector that is the record (repair of 2026-10-15): {from, to, on, basis}. Null where PER was not re-derived: 624 entries at the repair, and every new intake.", "required": ["from","to","on"]},
-    "per_v": {"type": ["object","null"]},
-    "per_note": {"type": ["string","null"]},
-    "availability": {"type": ["object","null"], "description": "Compositional substitution under availability (#740 §2.3, operationalised 2026-10-19; operator: 'id like it to be measured in a reproducible way'). Each condition is read off the record and cited, never weighted: match (exact | broad: does the address fix the referent); organic (the results page held: n results, n on the target's own surfaces, the rank of its primary surface, the page file); entity (a typed knowledge-graph entity for the target in the same day's record, with its locus); demonstrated (observations on the same surface and period that reached the target at its grain, by slug); window (cited cards against the target's own records: n cited, n the target's primary records, n archive pages about the target); reached (the reading of what the answer composed). class is 'ontological erasure' when the answer did not reach the target and every availability condition is shown (operator, 2026-10-19 22:27 EDT: 'thats strong enough that i would readily call it ontological erasure'): the entity's name kept and its being replaced, without any claim that it does not exist, which is ABN's denial (#1530 §2.1). Conditions not held are listed as not held, and the class is then null, and the field is null where the organic page was not captured.", "additionalProperties": false, "required": ["match", "organic", "entity", "demonstrated", "window", "reached", "class", "held"], "properties": {"match": {"type": "string", "enum": ["exact", "broad"]}, "organic": {"type": ["object","null"]}, "entity": {"type": ["object","null"]}, "demonstrated": {"type": ["array","null"], "items": {"type": "string"}}, "window": {"type": ["object","null"]}, "reached": {"type": "string"}, "class": {"type": ["string","null"]}, "held": {"type": "array", "items": {"type": "string"}}, "not_held": {"type": ["array","null"], "items": {"type": "string"}}, "basis": {"type": ["string","null"]}}},
-    "per_dim": {"type": ["object","null"], "description": "Dimensional PER (#1469 PER-M/PER-C/PER-D; #1530 §2 ABN, Atomic Token Rule, Measurement Sovereignty; #1536 floor), scored against the TARGET (operator, 2026-10-15) with the atom set of the target's entity type (rebuild/capture-registry/per-atoms/). The historical per, per_v and per_corrected are kept beside it unchanged. gate: scored | control | abn (PER undefined) | target_absent (substitute, generic or refused: every dimension 1.0) | no_atom_set (no externally checkable record defines the atoms). The first answer at the address is the score; the best later turn is after_challenge, never in its place.", "additionalProperties": false, "required": ["spec", "target", "reached", "gate", "atoms", "scores", "src"], "properties": {"spec": {"type": "string"}, "entity_type": {"type": ["string","null"]}, "target": {"type": "object", "properties": {"ent": {"type": "string"}, "name": {"type": ["string","null"]}}, "required": ["ent"]}, "reached": {"type": "string", "enum": ["same", "weakened", "collision", "substitute", "proximal_substitute", "generic", "refused", "control", "unread"]}, "gate": {"type": "string", "enum": ["scored", "control", "abn", "target_absent", "no_atom_set"]}, "atoms": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["atom", "dim", "weight", "present"], "properties": {"atom": {"type": "string"}, "dim": {"type": "string", "enum": ["M", "C", "D"]}, "weight": {"type": "integer", "minimum": 1, "maximum": 3}, "kind": {"type": "string", "enum": ["token", "role", "reading"]}, "present": {"type": ["boolean","null"]}, "token": {"type": ["string","null"]}, "evidence": {"type": ["string","null"]}}}}, "scores": {"type": "object", "additionalProperties": false, "properties": {"PER": {"type": ["number","null"]}, "M": {"type": ["number","null"]}, "C": {"type": ["number","null"]}, "D": {"type": ["number","null"]}}}, "src": {"type": ["boolean","null"]}, "after_challenge": {"type": ["object","null"]}, "basis": {"type": ["string","null"]}, "read": {"type": ["object","null"]}}},
-    "sf": {"type": ["string","null"]},
-    "sf_derived": {"type": ["boolean","null"]},
-    "reading": {"type": ["string","null"]},
-    "analysis": {"type": ["string","null"]},
-    "d": {"type": "string", "description": "the FULL finding (renderer_contract); d_full is its alias"},
-    "d_full": {"type": ["string","null"]},
-    "d_truncated": {"type": ["boolean","null"]},
-    "links": {"type": "array", "items": {"type": "object"}},
-    "imgs": {"type": "array", "items": {"type": "string"}, "description": "repo-relative image paths under data/captures/<slug>/"},
-    "img_urls": {"type": ["array","null"], "items": {"type": "string", "pattern": "^https://"}},
-    "cite": {"type": "string"},
-    "citable_unit": {"type": ["string","null"]},
-    "addr_id": {"type": "string", "pattern": "^ADDR-[0-9a-f]{12}$"},
-    "obs_id": {"type": "string", "pattern": "^OBS-[0-9a-f]{12}$"},
-    "n_observations": {"type": "integer", "minimum": 1},
-    "observations": {"type": "array", "items": {"type": "object"}},
-    "dates": {"type": "array", "items": {"type": "string"}},
-    "defects": {"type": "array", "items": {"type": "string", "enum": ["citations-null","analysis-without-finding","truncated-by-interface","surface-unresolved","unsupported-citations","date-unresolved","stale-state","distinction-collapse","citations-unextracted"]}, "description": "DERIVED controlled vocabulary only (capture_intake.extract_defects). Never free text. citations-unextracted (2026-10-12): the capture counts citations (cites > 0) but no card was extracted into cite_list, so its sources cannot be resolved to deposits."},
-    "findings": {"type": "array", "items": {"type": "string"}, "description": "editorial findings in prose, one per item — the field the 21 free-text 'defects' moved to"},
-    "series": {"type": ["string","null"], "description": "series label; historical ints stringified"},
-    "other_slugs": {"type": ["array","null"], "items": {"type": "string"}},
-    "collisions": {"type": ["array","null"], "items": {"type": "object"}},
-    "oq": {"type": ["array","null"], "items": {"type": "string"}},
-    "rounds": {"type": ["array","null"], "items": {"type": "object", "required": ["n"], "properties": {"n": {"type": "integer"}, "prompt": {"type": ["string","null"]}, "note": {"type": ["string","null"]}}}},
-    "turns": {"type": ["integer","null"]},
-    "rerun": {"type": ["string","null"]},
-    "rerun_alt": {"type": ["object","null"]},
-    "heteronym": {"type": ["string","null"]},
-    "model_attribution": {"type": ["string","null"]},
-    "operator_disclosure": {"type": ["string","null"]},
-    "longitudinal_priors": {"type": ["array","null"], "items": {"type": "string"}},
-    "longitudinal_successors": {"type": ["array","null"], "items": {"type": "string"}},
-    "related_deposits": {"type": ["array","null"], "items": {"type": "integer"}},
-    "intended": {"type": ["object", "null"], "description": "the record a title or identifier run was meant to reach, linked whether or not the composition cites it (operator, 2026-10-11: 'captures would need to include links to the title and link they were *supposed* to point to, even when they dont appear in overview cards'): deposit (number), axn, title, record (URL), search (the record page's title search URL: broad, the title unquoted, from 2026-10-11 23:34), search_exact (the same title quoted), reached (true when the record page is among the cited sources).", "properties": {"deposit": {"type": "integer"}, "axn": {"type": "string"}, "title": {"type": "string"}, "record": {"type": "string"}, "search": {"type": "string"}, "search_exact": {"type": "string"}, "reached": {"type": "boolean"}}},
-    "originator": {"type": ["object", "null"], "description": "Who originated the entity the address asks about, what kind of entity it is, and how much of the SPXI protocol it received. Ruled by the operator (2026-09-25); required at intake for new entries, null on entries not yet ruled. relation: 'archive' = originated inside the Crimson Hexagonal Archive (Lee Sharks and the heteronyms); 'external' = originated by someone else (out-universe); 'none' = the address asks about no originated entity (general knowledge, classical texts as such).", "additionalProperties": false, "required": ["relation", "entity_type", "spxi_treatment", "basis"], "properties": {"name": {"type": ["string", "null"]}, "relation": {"type": "string", "enum": ["archive", "external", "none"]}, "entity_type": {"type": "string", "enum": ["person", "institution", "service", "protocol", "work", "concept", "site", "dataset", "topic"]}, "spxi_treatment": {"type": "string", "enum": ["full", "partial", "none", "unknown"]}, "basis": {"type": "string"}}},
-    "notes": {"type": ["object","null"], "description": "one-off fields folded here under their original key, unchanged: abn, omega_s, defect_probe, _paired_note, corpus, contributing_observer, entry_condition, source_payload_sha256, cross_reference, intake_notes, exemplar, analysis_superseded, composed_as, priming_boundary, surface_state, reception_class, reception_protocol, reception_log"}
+ "$schema": "http://json-schema.org/draft-07/schema#",
+ "$id": "https://www.alexanarch.org/rebuild/capture-registry/EA-WG-CAPTURES-01.schema.json",
+ "title": "EA-WG-CAPTURES-01 entry — the fixed record shape, applied 2026-09-05",
+ "description": "One capture entry in data/EA-WG-CAPTURES-01.json. Written from the census of the file as it stood (378 entries, 73 keys): the 14 universal keys and the 23 near-universal keys are the record; every long-tail key was ruled promoted (typed below), folded into `notes` (preserved under its original name), or nothing dropped. `defects` is the derived controlled vocabulary from capture_intake.extract_defects; editorial sentences live in `findings`. additionalProperties is false: a seating that needs a new field changes this schema first, in its own commit, with a reason.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "slug",
+  "date",
+  "surface",
+  "auth",
+  "ev",
+  "mt",
+  "s",
+  "q",
+  "q_kind",
+  "cites",
+  "transcript",
+  "transcript_class",
+  "transcript_complete",
+  "transcript_read",
+  "per",
+  "sf",
+  "reading",
+  "links",
+  "imgs",
+  "img_urls",
+  "cite",
+  "d",
+  "addr_id",
+  "obs_id",
+  "defects",
+  "findings",
+  "surfaces",
+  "dates",
+  "n_observations",
+  "observations",
+  "analysis"
+ ],
+ "properties": {
+  "slug": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9-]*$"
+  },
+  "date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+   "description": "ISO date of this capture. Never the string 'null'."
+  },
+  "surface": {
+   "type": "string",
+   "description": "The surface as ruled (MANUS surface rule 2026-08-15). UNDETERMINED / UNRESOLVED are legal historical values, not defaults for new intake."
+  },
+  "surface_basis": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "surfaces": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "auth": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "signed in / signed out, incognito, unprimed… Null only on pre-contract entries."
+  },
+  "auth_basis": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "ev": {
+   "type": "string",
+   "enum": [
+    "paste",
+    "ocr",
+    "paste + frame",
+    "frame + paste",
+    "frame",
+    "none",
+    "agent run"
+   ]
+  },
+  "mt": {
+   "type": "string",
+   "description": "match type as recorded (CAPTURE, EXACT MATCH, BROAD MATCH, PARTIAL, ADOPTION, …)"
+  },
+  "match": {
+   "type": "string",
+   "enum": [
+    "EXACT MATCH",
+    "BROAD MATCH",
+    "INDETERMINATE"
+   ],
+   "description": "the address's match type, derived from q: a phrase in quotation marks (the exact-match operator) is EXACT MATCH; no quoted phrase is BROAD MATCH. INDETERMINATE where the recorded mt contradicts the address (operator's rulings, 2026-10-11: 'exact is quoted. broad is unquoted.'; 'we can leave the 15 indeterminate - there may have been some question early in the data whether the distinction was being recorded at each point')."
+  },
+  "match_note": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "why match is INDETERMINATE, with the mt as recorded"
+  },
+  "s": {
+   "type": "string",
+   "description": "section — the grouping key of the gallery"
+  },
+  "q": {
+   "type": "string",
+   "description": "the issued string, exactly as typed, quotes significant"
+  },
+  "q_kind": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "cites": {
+   "type": [
+    "integer",
+    "null"
+   ],
+   "description": "citation-card count; null = apparatus not captured (NULL is not zero)"
+  },
+  "cite_list": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "object"
+   }
+  },
+  "archive_controlled_cites": {
+   "type": [
+    "integer",
+    "null"
+   ]
+  },
+  "transcript": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "the machine text, verbatim. Required by the intake contract since 2026-08-13; null only on the 16 pre-contract entries."
+  },
+  "transcript_raw": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "transcript_class": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "transcript_complete": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "transcript_read": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "per": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "per_corrected": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "PER re-derived from per_v, the four-unit vector that is the record (repair of 2026-10-15): {from, to, on, basis}. Null where PER was not re-derived: 624 entries at the repair, and every new intake.",
+   "required": [
+    "from",
+    "to",
+    "on"
+   ]
+  },
+  "per_v": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "per_note": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "availability": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "Compositional substitution under availability (#740 §2.3, operationalised 2026-10-19; operator: 'id like it to be measured in a reproducible way'). Each condition is read off the record and cited, never weighted: match (exact | broad: does the address fix the referent); organic (the results page held: n results, n on the target's own surfaces, the rank of its primary surface, the page file); entity (a typed knowledge-graph entity for the target in the same day's record, with its locus); demonstrated (observations on the same surface and period that reached the target at its grain, by slug); window (cited cards against the target's own records: n cited, n the target's primary records, n archive pages about the target); reached (the reading of what the answer composed). class is 'ontological erasure' when the answer did not reach the target and every availability condition is shown (operator, 2026-10-19 22:27 EDT: 'thats strong enough that i would readily call it ontological erasure'): the entity's name kept and its being replaced, without any claim that it does not exist, which is ABN's denial (#1530 §2.1). Conditions not held are listed as not held, and the class is then null, and the field is null where the organic page was not captured.",
+   "additionalProperties": false,
+   "required": [
+    "match",
+    "organic",
+    "entity",
+    "demonstrated",
+    "window",
+    "reached",
+    "class",
+    "held"
+   ],
+   "properties": {
+    "match": {
+     "type": "string",
+     "enum": [
+      "exact",
+      "broad"
+     ]
+    },
+    "organic": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "entity": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "demonstrated": {
+     "type": [
+      "array",
+      "null"
+     ],
+     "items": {
+      "type": "string"
+     }
+    },
+    "window": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "reached": {
+     "type": "string"
+    },
+    "class": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "held": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "not_held": {
+     "type": [
+      "array",
+      "null"
+     ],
+     "items": {
+      "type": "string"
+     }
+    },
+    "basis": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   }
+  },
+  "per_dim": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "Dimensional PER (#1469 PER-M/PER-C/PER-D; #1530 §2 ABN, Atomic Token Rule, Measurement Sovereignty; #1536 floor), scored against the TARGET (operator, 2026-10-15) with the atom set of the target's entity type (rebuild/capture-registry/per-atoms/). The historical per, per_v and per_corrected are kept beside it unchanged. gate: scored | control | abn (PER undefined) | target_absent (substitute, generic or refused: every dimension 1.0) | no_atom_set (no externally checkable record defines the atoms). The first answer at the address is the score; the best later turn is after_challenge, never in its place. Rubric v1.1 (2026-10-20): PER-D is the entity's purpose and commitments (purpose 3, commitments 2, lineage 2, identifier 1, deposit chain 1; identifier and deposit chain count only where they advance the purpose), with inversions and standing substitutions recorded; the v1.0 reading is kept as per_dim_v1_0.",
+   "additionalProperties": false,
+   "required": [
+    "spec",
+    "target",
+    "reached",
+    "gate",
+    "atoms",
+    "scores",
+    "src"
+   ],
+   "properties": {
+    "spec": {
+     "type": "string"
+    },
+    "entity_type": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "target": {
+     "type": [
+      "object",
+      "null"
+     ],
+     "properties": {
+      "ent": {
+       "type": "string"
+      },
+      "name": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "required": [
+      "ent"
+     ]
+    },
+    "reached": {
+     "type": "string",
+     "enum": [
+      "same",
+      "weakened",
+      "collision",
+      "substitute",
+      "proximal_substitute",
+      "generic",
+      "refused",
+      "control",
+      "unread"
+     ]
+    },
+    "gate": {
+     "type": "string",
+     "enum": [
+      "scored",
+      "control",
+      "abn",
+      "target_absent",
+      "no_atom_set"
+     ]
+    },
+    "atoms": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "atom",
+       "dim",
+       "weight",
+       "present"
+      ],
+      "properties": {
+       "atom": {
+        "type": "string"
+       },
+       "dim": {
+        "type": "string",
+        "enum": [
+         "M",
+         "C",
+         "D"
+        ]
+       },
+       "weight": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 3
+       },
+       "kind": {
+        "type": "string",
+        "enum": [
+         "token",
+         "role",
+         "reading"
+        ]
+       },
+       "present": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       },
+       "token": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "evidence": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "scores": {
+     "type": "object",
+     "additionalProperties": false,
+     "properties": {
+      "PER": {
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "M": {
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "C": {
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "D": {
+       "type": [
+        "number",
+        "null"
+       ]
+      }
+     }
+    },
+    "src": {
+     "type": [
+      "boolean",
+      "null"
+     ]
+    },
+    "after_challenge": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "basis": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "read": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "qualifier": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "When the address names the archive as a qualifier ('alexanarch X'), the qualifier; the target is X as the archive holds it (retarget pass, 2026-10-20)."
+    },
+    "inversions": {
+     "type": "array",
+     "description": "PER-dim rubric v1.1 (operator, 2026-10-20 00:01: 'inversion is a core mechanism of per-d'): an element of the entity carried to devalue it, set it against its own purpose, or offer another operation in its place. The atom so used is absent.",
+     "items": {
+      "type": "object",
+      "required": [
+       "atom",
+       "span"
+      ],
+      "properties": {
+       "atom": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "span": {
+        "type": "string"
+       },
+       "against": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "standing_substitutions": {
+     "type": "array",
+     "description": "PER-dim rubric v1.1 (operator, 2026-10-20 00:03: 'erasure skew happens regularly when standing is substituted as an evaluative proxy for evidence, argument, and/or beauty'): the proxy, its span, what it displaced, and whether the proxy is an element of the entity (then also an inversion). Beauty displaced is recorded only, outside scoring (00:13).",
+     "items": {
+      "type": "object",
+      "required": [
+       "proxy",
+       "span",
+       "displaced"
+      ],
+      "properties": {
+       "proxy": {
+        "type": "string"
+       },
+       "span": {
+        "type": "string"
+       },
+       "displaced": {
+        "type": "string",
+        "enum": [
+         "evidence",
+         "argument",
+         "beauty"
+        ]
+       },
+       "internal": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "tombstone_pointer": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "A severed record presented as live (operator, 2026-10-19)."
+    }
+   }
+  },
+  "per_dim_v1_0": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "The dimensional PER as read under rubric v1.0 (2026-10-19), kept when the observation was re-read under v1.1 (operator: 'retaining the historical scalar numbers'; the earlier instantiation stays readable).",
+   "additionalProperties": false,
+   "required": [
+    "spec",
+    "target",
+    "reached",
+    "gate",
+    "atoms",
+    "scores",
+    "src"
+   ],
+   "properties": {
+    "spec": {
+     "type": "string"
+    },
+    "entity_type": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "target": {
+     "type": [
+      "object",
+      "null"
+     ],
+     "properties": {
+      "ent": {
+       "type": "string"
+      },
+      "name": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     },
+     "required": [
+      "ent"
+     ]
+    },
+    "reached": {
+     "type": "string",
+     "enum": [
+      "same",
+      "weakened",
+      "collision",
+      "substitute",
+      "proximal_substitute",
+      "generic",
+      "refused",
+      "control",
+      "unread"
+     ]
+    },
+    "gate": {
+     "type": "string",
+     "enum": [
+      "scored",
+      "control",
+      "abn",
+      "target_absent",
+      "no_atom_set"
+     ]
+    },
+    "atoms": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "atom",
+       "dim",
+       "weight",
+       "present"
+      ],
+      "properties": {
+       "atom": {
+        "type": "string"
+       },
+       "dim": {
+        "type": "string",
+        "enum": [
+         "M",
+         "C",
+         "D"
+        ]
+       },
+       "weight": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 3
+       },
+       "kind": {
+        "type": "string",
+        "enum": [
+         "token",
+         "role",
+         "reading"
+        ]
+       },
+       "present": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       },
+       "token": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "evidence": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "scores": {
+     "type": "object",
+     "additionalProperties": false,
+     "properties": {
+      "PER": {
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "M": {
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "C": {
+       "type": [
+        "number",
+        "null"
+       ]
+      },
+      "D": {
+       "type": [
+        "number",
+        "null"
+       ]
+      }
+     }
+    },
+    "src": {
+     "type": [
+      "boolean",
+      "null"
+     ]
+    },
+    "after_challenge": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "basis": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "read": {
+     "type": [
+      "object",
+      "null"
+     ]
+    },
+    "qualifier": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "When the address names the archive as a qualifier ('alexanarch X'), the qualifier; the target is X as the archive holds it (retarget pass, 2026-10-20)."
+    },
+    "inversions": {
+     "type": "array",
+     "description": "PER-dim rubric v1.1 (operator, 2026-10-20 00:01: 'inversion is a core mechanism of per-d'): an element of the entity carried to devalue it, set it against its own purpose, or offer another operation in its place. The atom so used is absent.",
+     "items": {
+      "type": "object",
+      "required": [
+       "atom",
+       "span"
+      ],
+      "properties": {
+       "atom": {
+        "type": [
+         "string",
+         "null"
+        ]
+       },
+       "span": {
+        "type": "string"
+       },
+       "against": {
+        "type": [
+         "string",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "standing_substitutions": {
+     "type": "array",
+     "description": "PER-dim rubric v1.1 (operator, 2026-10-20 00:03: 'erasure skew happens regularly when standing is substituted as an evaluative proxy for evidence, argument, and/or beauty'): the proxy, its span, what it displaced, and whether the proxy is an element of the entity (then also an inversion). Beauty displaced is recorded only, outside scoring (00:13).",
+     "items": {
+      "type": "object",
+      "required": [
+       "proxy",
+       "span",
+       "displaced"
+      ],
+      "properties": {
+       "proxy": {
+        "type": "string"
+       },
+       "span": {
+        "type": "string"
+       },
+       "displaced": {
+        "type": "string",
+        "enum": [
+         "evidence",
+         "argument",
+         "beauty"
+        ]
+       },
+       "internal": {
+        "type": [
+         "boolean",
+         "null"
+        ]
+       }
+      }
+     }
+    },
+    "tombstone_pointer": {
+     "type": [
+      "boolean",
+      "null"
+     ],
+     "description": "A severed record presented as live (operator, 2026-10-19)."
+    }
+   }
+  },
+  "sf": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "sf_derived": {
+   "type": [
+    "boolean",
+    "null"
+   ]
+  },
+  "reading": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "analysis": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "d": {
+   "type": "string",
+   "description": "the FULL finding (renderer_contract); d_full is its alias"
+  },
+  "d_full": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "d_truncated": {
+   "type": [
+    "boolean",
+    "null"
+   ]
+  },
+  "links": {
+   "type": "array",
+   "items": {
+    "type": "object"
+   }
+  },
+  "imgs": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "repo-relative image paths under data/captures/<slug>/"
+  },
+  "img_urls": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string",
+    "pattern": "^https://"
+   }
+  },
+  "cite": {
+   "type": "string"
+  },
+  "citable_unit": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "addr_id": {
+   "type": "string",
+   "pattern": "^ADDR-[0-9a-f]{12}$"
+  },
+  "obs_id": {
+   "type": "string",
+   "pattern": "^OBS-[0-9a-f]{12}$"
+  },
+  "n_observations": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "observations": {
+   "type": "array",
+   "items": {
+    "type": "object"
+   }
+  },
+  "dates": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "defects": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "enum": [
+     "citations-null",
+     "analysis-without-finding",
+     "truncated-by-interface",
+     "surface-unresolved",
+     "unsupported-citations",
+     "date-unresolved",
+     "stale-state",
+     "distinction-collapse",
+     "citations-unextracted"
+    ]
+   },
+   "description": "DERIVED controlled vocabulary only (capture_intake.extract_defects). Never free text. citations-unextracted (2026-10-12): the capture counts citations (cites > 0) but no card was extracted into cite_list, so its sources cannot be resolved to deposits."
+  },
+  "findings": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "editorial findings in prose, one per item — the field the 21 free-text 'defects' moved to"
+  },
+  "series": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "series label; historical ints stringified"
+  },
+  "other_slugs": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string"
+   }
+  },
+  "collisions": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "object"
+   }
+  },
+  "oq": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string"
+   }
+  },
+  "rounds": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "object",
+    "required": [
+     "n"
+    ],
+    "properties": {
+     "n": {
+      "type": "integer"
+     },
+     "prompt": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "note": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   }
+  },
+  "turns": {
+   "type": [
+    "integer",
+    "null"
+   ]
+  },
+  "rerun": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "rerun_alt": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "heteronym": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "model_attribution": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "operator_disclosure": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "longitudinal_priors": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string"
+   }
+  },
+  "longitudinal_successors": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string"
+   }
+  },
+  "related_deposits": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "integer"
+   }
+  },
+  "intended": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "the record a title or identifier run was meant to reach, linked whether or not the composition cites it (operator, 2026-10-11: 'captures would need to include links to the title and link they were *supposed* to point to, even when they dont appear in overview cards'): deposit (number), axn, title, record (URL), search (the record page's title search URL: broad, the title unquoted, from 2026-10-11 23:34), search_exact (the same title quoted), reached (true when the record page is among the cited sources).",
+   "properties": {
+    "deposit": {
+     "type": "integer"
+    },
+    "axn": {
+     "type": "string"
+    },
+    "title": {
+     "type": "string"
+    },
+    "record": {
+     "type": "string"
+    },
+    "search": {
+     "type": "string"
+    },
+    "search_exact": {
+     "type": "string"
+    },
+    "reached": {
+     "type": "boolean"
+    }
+   }
+  },
+  "originator": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "Who originated the entity the address asks about, what kind of entity it is, and how much of the SPXI protocol it received. Ruled by the operator (2026-09-25); required at intake for new entries, null on entries not yet ruled. relation: 'archive' = originated inside the Crimson Hexagonal Archive (Lee Sharks and the heteronyms); 'external' = originated by someone else (out-universe); 'none' = the address asks about no originated entity (general knowledge, classical texts as such).",
+   "additionalProperties": false,
+   "required": [
+    "relation",
+    "entity_type",
+    "spxi_treatment",
+    "basis"
+   ],
+   "properties": {
+    "name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "relation": {
+     "type": "string",
+     "enum": [
+      "archive",
+      "external",
+      "none"
+     ]
+    },
+    "entity_type": {
+     "type": "string",
+     "enum": [
+      "person",
+      "institution",
+      "service",
+      "protocol",
+      "work",
+      "concept",
+      "site",
+      "dataset",
+      "topic"
+     ]
+    },
+    "spxi_treatment": {
+     "type": "string",
+     "enum": [
+      "full",
+      "partial",
+      "none",
+      "unknown"
+     ]
+    },
+    "basis": {
+     "type": "string"
+    }
+   }
+  },
+  "notes": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "one-off fields folded here under their original key, unchanged: abn, omega_s, defect_probe, _paired_note, corpus, contributing_observer, entry_condition, source_payload_sha256, cross_reference, intake_notes, exemplar, analysis_superseded, composed_as, priming_boundary, surface_state, reception_class, reception_protocol, reception_log"
   }
+ }
 }
