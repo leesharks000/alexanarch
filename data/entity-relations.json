@@ -1,8 +1,8 @@
 {
- "derived_from": "EA-WG-CAPTURES-01 v12.309",
+ "derived_from": "EA-WG-CAPTURES-01 v12.310",
  "ruling": "Lee Sharks, 2026-10-15: target is the main anchor; no fidelity score on the wrong entity.",
  "name": "Observation-to-entity relations",
- "count": 948,
+ "count": 949,
  "reached_kinds": [
   "same",
   "weakened",
@@ -21718,6 +21718,42 @@
    "score": {
     "against": "ENT-d1df330535",
     "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-928803ce536d",
+   "entry": "the-particle-title-aio-20261020",
+   "date": "2026-10-20",
+   "surface": "Google AI Overview",
+   "q": "The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)",
+   "target": [
+    {
+     "ent": "ENT-f68ec80176",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-f68ec80176",
+    "per_target": null,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
