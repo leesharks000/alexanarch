@@ -1,0 +1,172 @@
+{
+ "row": "aristotle-originality-claim",
+ "address": "aristotle we had nothing to say of syllogizing before",
+ "entity": "Aristotle's originality claim at the end of the Topics (Sophistical Refutations 34, 184b1–8)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "aristotle-originality-claim",
+  "address": "aristotle we had nothing to say of syllogizing before",
+  "entity": "Aristotle's originality claim at the end of the Topics (Sophistical Refutations 34, 184b1–8)",
+  "row_type": "C (public entity: a claim in a canonical text)",
+  "aliases": [
+   {
+    "pattern": "184\\s?b\\s?1(?!\\d)",
+    "flags": ""
+   },
+   {
+    "pattern": "παντελ[ῶώ]ς οὐδ[ὲέ]ν|οὐδ[ὲέ]ν παντελ[ῶώ]ς",
+    "flags": ""
+   },
+   {
+    "pattern": "nothing (?:else )?(?:earlier |previously )?to say (?:of|about|on) syllogi[sz]",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bnothing before us\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\binvent(?:ed|s|ing)? (?:formal )?logic\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bfirst logician\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\boriginality\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bnothing existed\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [],
+  "classes_note": "O-class not run on this pass. The entity is one claim, Aristotle's first-person statement at the close of the Sophistical Refutations (ch. 34; the SE read as the end of the Topics), 184b1–2, with its setting (183b34–184a8) and its request for pardon and thanks (184b3–8); it is not a class member. An archive category (provenance erasure, disciplinary model collapse, the particle, reception-layer invariance, the trap) enters only where a deposit applies it to the claim itself (O-direct). Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the originality claim: what it says, its words, its force, its domain, its place at the end of the SE and the Topics, its reception. Naming the passage or using the word 'originality' is not enough. The aliases follow the brief (184b1, παντελῶς οὐδὲν, 'nothing to say of syllogizing', 'nothing before us', 'invented logic', 'first logician', 'originality'), with the accent variants and the reversed order of the Greek, and one added: 'nothing existed', the Pickard-Cambridge rendering T quotes ('Nothing existed at all').",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-20, for the row aristotle-originality-claim under EA-NEGONT-02 v0.9 (#1690). Operator, 2026-10-20 13:14 EDT: 'lets keep it focused on the narrower entity first … Aristotle's originality claim at the end of the Topics'; 13:08: 'these should allow the archive ontology to correct without flattening the entity into the archive's narrower concerns'; 13:24, of T: 'it gives the exact quote and still overwrites it'. The parallel row se-183b34 (the whole passage 183b34–184b8) has its own config; this row's entity is the first-person claim itself. The archive's wider concerns enter only where a defining paper ties them to the claim.",
+  "hop_from": [
+   1569,
+   1570,
+   1574,
+   1575,
+   1576,
+   1579,
+   1594,
+   1603,
+   1605,
+   1684
+  ],
+  "hop_note": "Second pass, 2026-10-20: one citation hop, forward and back, from the deposits admitted by reading at D/R/O (reading.json)."
+ },
+ "texts_scanned": 1685,
+ "counts": {
+  "D_sentences": 225,
+  "D_deposits": 39,
+  "R_sentences": 9,
+  "R_deposits": 6,
+  "O_direct": 38,
+  "O_class": 0,
+  "O_deposits": 21,
+  "H_candidates": 856
+ },
+ "per_deposit": {
+  "D": {
+   "48": 1,
+   "57": 1,
+   "95": 4,
+   "107": 1,
+   "115": 1,
+   "127": 1,
+   "150": 1,
+   "154": 1,
+   "176": 1,
+   "195": 1,
+   "252": 1,
+   "289": 1,
+   "302": 1,
+   "331": 1,
+   "621": 2,
+   "683": 1,
+   "751": 1,
+   "833": 1,
+   "913": 1,
+   "972": 1,
+   "1184": 1,
+   "1188": 4,
+   "1362": 1,
+   "1437": 2,
+   "1443": 2,
+   "1525": 1,
+   "1526": 1,
+   "1569": 3,
+   "1570": 4,
+   "1574": 94,
+   "1575": 13,
+   "1576": 9,
+   "1579": 1,
+   "1594": 7,
+   "1603": 44,
+   "1605": 7,
+   "1678": 2,
+   "1680": 2,
+   "1684": 3
+  },
+  "R": {
+   "176": 1,
+   "621": 1,
+   "751": 1,
+   "1574": 1,
+   "1603": 3,
+   "1684": 2
+  },
+  "O": {
+   "48": 1,
+   "57": 1,
+   "95": 1,
+   "107": 1,
+   "154": 1,
+   "176": 1,
+   "195": 1,
+   "302": 1,
+   "621": 1,
+   "833": 1,
+   "972": 1,
+   "1188": 1,
+   "1443": 1,
+   "1574": 6,
+   "1575": 2,
+   "1594": 2,
+   "1603": 9,
+   "1605": 2,
+   "1678": 1,
+   "1680": 1,
+   "1684": 2
+  }
+ },
+ "registry_entity_triples": [
+  {
+   "dep": 621,
+   "triple": {
+    "subject": "ARCHIVE (Gemini)",
+    "predicate": "minted_in",
+    "object": "GRAVITY WELL PROTOCOL Governed Continuity for AI-Mediated Co",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "gave practical refinements: QUARANTINED status, originality as a bearing-cost factor, configurable w"
+   }
+  }
+ ],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "3704bb3b8e835fc450afc13b997cb264520e3bb09e17763eb5e407a0f2fd7ace",
+  "candidates-R.jsonl": "2d0ee4198eff0908c5a64a5d54dc259036b4c8d18af7f3a1b94910c48b0258a6",
+  "candidates-O.jsonl": "ca8edd63c758517078a1498b60165714e01ac5c89b878e846bfa49f38ecb636d",
+  "candidates-H.jsonl": "66b6b3e96a300752bb418b1e3767e49cca9e3a83a6fa23f7f6209736034b4b07"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11055
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

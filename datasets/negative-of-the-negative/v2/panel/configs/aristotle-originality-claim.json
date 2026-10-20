@@ -1,0 +1,57 @@
+{
+ "row": "aristotle-originality-claim",
+ "address": "aristotle we had nothing to say of syllogizing before",
+ "entity": "Aristotle's originality claim at the end of the Topics (Sophistical Refutations 34, 184b1–8)",
+ "row_type": "C (public entity: a claim in a canonical text)",
+ "aliases": [
+  {
+   "pattern": "184\\s?b\\s?1(?!\\d)",
+   "flags": ""
+  },
+  {
+   "pattern": "παντελ[ῶώ]ς οὐδ[ὲέ]ν|οὐδ[ὲέ]ν παντελ[ῶώ]ς",
+   "flags": ""
+  },
+  {
+   "pattern": "nothing (?:else )?(?:earlier |previously )?to say (?:of|about|on) syllogi[sz]",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bnothing before us\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\binvent(?:ed|s|ing)? (?:formal )?logic\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bfirst logician\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\boriginality\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bnothing existed\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [],
+ "classes_note": "O-class not run on this pass. The entity is one claim, Aristotle's first-person statement at the close of the Sophistical Refutations (ch. 34; the SE read as the end of the Topics), 184b1–2, with its setting (183b34–184a8) and its request for pardon and thanks (184b3–8); it is not a class member. An archive category (provenance erasure, disciplinary model collapse, the particle, reception-layer invariance, the trap) enters only where a deposit applies it to the claim itself (O-direct). Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the originality claim: what it says, its words, its force, its domain, its place at the end of the SE and the Topics, its reception. Naming the passage or using the word 'originality' is not enough. The aliases follow the brief (184b1, παντελῶς οὐδὲν, 'nothing to say of syllogizing', 'nothing before us', 'invented logic', 'first logician', 'originality'), with the accent variants and the reversed order of the Greek, and one added: 'nothing existed', the Pickard-Cambridge rendering T quotes ('Nothing existed at all').",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-20, for the row aristotle-originality-claim under EA-NEGONT-02 v0.9 (#1690). Operator, 2026-10-20 13:14 EDT: 'lets keep it focused on the narrower entity first … Aristotle's originality claim at the end of the Topics'; 13:08: 'these should allow the archive ontology to correct without flattening the entity into the archive's narrower concerns'; 13:24, of T: 'it gives the exact quote and still overwrites it'. The parallel row se-183b34 (the whole passage 183b34–184b8) has its own config; this row's entity is the first-person claim itself. The archive's wider concerns enter only where a defining paper ties them to the claim.",
+ "hop_from": [
+  1569,
+  1570,
+  1574,
+  1575,
+  1576,
+  1579,
+  1594,
+  1603,
+  1605,
+  1684
+ ],
+ "hop_note": "Second pass, 2026-10-20: one citation hop, forward and back, from the deposits admitted by reading at D/R/O (reading.json)."
+}
