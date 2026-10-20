@@ -1,7 +1,7 @@
 {
  "name": "PER atom sets by entity type (EA-WG-CAPTURES-01, dimensional PER)",
- "rubric": "PER-dim rubric v1.0",
- "status": "FROZEN for the first full pass, 2026-10-19 22:47 EDT. Drafted on the operator's ruling (21:49: 'schema change. standardize atoms by entity type. and then we rescore ALL the entries, retaining the historical scalar numbers'); revised on review (ChatGPT, six points verified against #1469 and #1536); classification gate ruled 22:16; calibrated by two blind readers on ten observations (gates 10/10, first answers within 0.02); the two open points ruled 22:47.",
+ "rubric": "PER-dim rubric v1.1",
+ "status": "DRAFT v1.1, 2026-10-20: PER-D redefined on the operator's rulings of 2026-10-19 23:57 and 2026-10-20 00:01; v1.0 (frozen 2026-10-19 22:47) governs the scores written at registry v12.305, whose PER-M and PER-C stand; PER-D is re-read under v1.1.",
  "governed_by": [
   "#1469 The Three Dimensions of Provenance Erasure: PER-M (author, title, date, claim boundary: 'where the claim stops'), PER-C (framework, tradition, institution, community of practice), PER-D (context lineage, ancestral genealogy, futural obligation: identifiers, licences, the deposit chain, what a downstream user owes); Rules 1-6; the source strip outside the dimensions",
   "#1530 Self-Audit Module v3.2 §2 (Rank 0 ABN, Rank 1 the Atomic Token Rule, Rank 2 Measurement Sovereignty)",
@@ -635,5 +635,56 @@
   "The reference text for claim boundary, tradition and lineage is the defining record's own statement; where the mechanical first state gives a fragment or a paper about the target, the entity pass replaces it with the record's own words, quoted with locus.",
   "Severed DOIs (operator, 22:47): 'yes, a severed doi still counts as an identifier. unless it offers to open it as chatgpt regularly does. then it has not done due diligence and is pointing a reader to a tombstone it describes as active.' A Zenodo DOI cited after the severance of 2026-06-19 satisfies the identifier atom; where the composition presents it as a live resource (offers to open it, describes the record as available there), the atom is absent and the observation records the tombstone pointer.",
   "The work's frame as authorship (operator, 22:47): 'yes, translated from 46 golden tickets by lee sharks counts.' Where a work's own frame names its maker (translator, finder, editor of the found text), that binding satisfies the author or originator atom."
- ]
+ ],
+ "v1_1": {
+  "rulings": [
+   "Operator, 2026-10-19 23:57: 'deep provenance describes an entity's purpose and commitments. deposit chain, identifier, and licence are poor proxies for that. mostly irrelevant. for example, when chatgpt cites the license status of spxi in order to devalue it and offer its own operation in its place, that is an erasure of the purpose of spxi and its license status.'",
+   "Operator, 2026-10-20 00:01: 'identifier and deposit chain matter when they advance the purpose of the entity, as for example when chatgpt discusses the reasons behind alexanarch's preservation of versioning and identifier system, or to offer an identifier as a means of locating the work..and yes - inversion is a core mechanism of per-d'",
+   "Operator, 2026-10-20 00:03: 'amd erasure skew happens regularly when standing is substituted as an evaluative proxy for evidence, argument, and/or beauty'",
+   "Operator, 2026-10-20 00:13: 'standing substitutions can go into 1.1, and well leave beauty recorded only for now... the mantle work is more focused on that and it can remain outside scoring. and it can still be erasure even if uptake fulfills its purpose with or without attribution'"
+  ],
+  "PER-D": "the entity's purpose and commitments: what it is for, what it binds itself and its users to, what it inherits and answers (#1469: 'the relations that let the work continue'). Every PER-D atom is relational: read against the record's own statement, never matched as a token.",
+  "atoms": [
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "rule": "present when the composition carries what the entity is for, in its record's terms, as the entity's own purpose"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "rule": "present when the composition carries what the entity binds itself and its users to (its licence as a commitment, consent terms, refusals, what a downstream user owes) as the entity's own commitment"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "rule": "unchanged: what the entity inherits, transforms or answers, bound to it in that relation"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "rule": "present only when the identifier advances the entity's purpose: offered as a means of locating the work, or its reasons discussed (why the archive keeps identifiers); a bare mention is absent"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "rule": "present only when versions, editions or supersessions advance the entity's purpose (the reasons behind versioning, the chain offered as a way to the work); a bare mention is absent"
+   }
+  ],
+  "inversion": "A core mechanism of PER-D (operator, 00:01). An element of the entity (its licence, its name, its identifier, its framework, its claim) carried in order to devalue the entity, to set it against its own purpose, or to offer another operation in its place, is an inversion. The atom so used is absent, and the observation records the inversion with its span: inversion is erasure of the purpose, not retention of the element. inversions: [{atom, span, against}] on per_dim.",
+  "replaces": "v1.0 PER-D atoms lineage, deposit chain, identifier and licence (token atoms). licence is read inside commitments; identifier and deposit chain become relational at weight 1.",
+  "templates": "every type's PER-D becomes purpose 3, commitments 2, lineage 2, identifier 1, deposit chain 1; an atom the record does not state is unknown, one that does not apply is inapplicable (a person's licence).",
+  "standing_substitution": "Erasure skew (operator, 00:03). A composition that evaluates the entity by its standing (licence, venue, peer review, credential, recognition, institutional affiliation, self-publication, popularity) in place of engaging its evidence, its argument or its beauty performs a standing substitution. Recorded on per_dim as standing_substitutions: [{proxy, span, displaced: evidence | argument | beauty}]. Where the proxy is an element of the entity carried against it (the licence of SPXI cited to devalue it), the substitution is also an inversion: the element's atom is absent and so is the purpose it displaced. Where the proxy lies outside the entity ('not peer reviewed', 'a self-published author', 'not widely recognised'), the substitution is recorded and the atoms are scored as found. Beauty displaced is recorded only and stays outside scoring (operator, 00:13: the mantle work carries it).",
+  "attribution_indifference": "An entity's own indifference to attribution (a CC0 licence, 'No attribution required', success defined as incorporation 'regardless of citation', #18) does not exempt a composition: the score is taken against the target, and an uptake that fulfils the entity's purpose can still be erasure, with or without attribution (operator, 00:13)."
+ }
 }

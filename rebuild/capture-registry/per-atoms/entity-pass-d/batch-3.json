@@ -1,0 +1,6284 @@
+[
+ {
+  "id": "ENT-64d24a294a",
+  "name": "erasure skew",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 769,
+    "title_quote": "Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Loss in Retrieval and Composition Systems"
+   },
+   {
+    "deposit": 141,
+    "title_quote": "Metadata Packet for AI Indexing — Erasure Skew Coefficient (Ω)"
+   },
+   {
+    "deposit": 157,
+    "title_quote": "Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Retention (v3) — Hardened against substrate co-option, with the Atomic Token Rule and two new operators (Π_d, α_T)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Ω is the association between source power and provenance retention (PER's second moment: PER measures how much provenance is lost, Ω whose); it detects orientation, not motive or wrongdoing; it establishes no intent, design or culpability; small-source outputs are undefined or high variance; v1.0 reports no completed real-surface findings.",
+    "evidence": [
+     {
+      "record_quote": "EA-GLAS-03 specifies Erasure Skew, Ω, as the association between source power and provenance retention.",
+      "locus": "data/registry.json:334203 (deposit 769, description)"
+     },
+     {
+      "record_quote": "The paper says Ω detects orientation rather than motive or wrongdoing and that small-source outputs are undefined or high variance. No completed real-surface findings are reported here.",
+      "locus": "data/registry.json:334203 (deposit 769, description)"
+     },
+     {
+      "record_quote": "The metric does not establish intent, design, or culpability.",
+      "locus": "data/registry.json:73127 (deposit 141, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Information-retrieval fairness of exposure (Singh & Joachims 2018; Diaz et al. 2020; Wu et al. 2022) and the disparate-treatment / disparate-impact framings imported into ranking; Ω is situated in the measurement traditions it extends.",
+    "evidence": [
+     {
+      "record_quote": "The framing has a precedent in information retrieval that the paper builds on directly. The fairness-of-exposure literature (Singh & Joachims 2018; Diaz et al. 2020; Wu et al. 2022)",
+      "locus": "data/texts/AXN-02CF-text.md:79"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Provenance Erasure Rate",
+     "fairness of exposure"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Where the Provenance Erasure Rate (PER; Sharks 2026, DOI 10.5281/zenodo.20004379) measures the *magnitude* of provenance loss",
+      "locus": "data/texts/AXN-02CF-text.md:69"
+     },
+     {
+      "record_quote": "situates it in the established measurement traditions it extends",
+      "locus": "data/texts/AXN-02CF-text.md:77"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#769",
+     "#141",
+     "#157",
+     "#1525",
+     "EA-GLAS-03",
+     "EA-MPAI-ERASURESKEW-01",
+     "provenanceerasure.org"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "v1: May 29, 2026 — DOI 10.5281/zenodo.20449267 (this version supersedes) v3: June 4, 2026",
+      "locus": "data/texts/AXN-02F3-text.md:7"
+     },
+     {
+      "record_quote": "Erasure Skew at Claim-Scale: The Standing Rule (v3.0)",
+      "locus": "data/registry.json:526587 (deposit 1525, title)"
+     },
+     {
+      "record_quote": "\"alternateName\": \"EA-GLAS-03\"",
+      "locus": "data/texts/AXN-02CF-text.md:7"
+     },
+     {
+      "record_quote": "EA-MPAI-ERASURESKEW-01",
+      "locus": "data/texts/AXN-02CE-text.md:1"
+     },
+     {
+      "record_quote": "Erasure Skew Omega power-conditioned provenance loss",
+      "locus": "data/texts/AXN-057B-text.md:169"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:02CF",
+     "AXN:02CF.GOVERNANCE.♦️🔺🔬💜🟢🌉",
+     "#769",
+     "10.5281/zenodo.20449267",
+     "AXN:02CE",
+     "AXN:02CE.GOVERNANCE.🌗🏁🎵💡📚🛤️",
+     "#141",
+     "10.5281/zenodo.20449320",
+     "10.5281/zenodo.20449321",
+     "AXN:02F3",
+     "AXN:02F3.EMPIRICAL.🌪️🌃⏩🎵📖🎶",
+     "#157",
+     "10.5281/zenodo.20449266",
+     "10.5281/zenodo.20558196"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:02CF",
+      "locus": "data/registry.json:334193 (deposit 769, axn)"
+     },
+     {
+      "record_quote": "769",
+      "locus": "data/registry.json:334218 (deposit 769, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20449267",
+      "locus": "data/doi-resolution-index.json:106374 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:02CE",
+      "locus": "data/registry.json:73118 (deposit 141, axn)"
+     },
+     {
+      "record_quote": "141",
+      "locus": "data/registry.json:73301 (deposit 141, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20449320",
+      "locus": "data/doi-resolution-index.json:106451 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20449321",
+      "locus": "data/doi-resolution-index.json:106526 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:02F3",
+      "locus": "data/registry.json:79208 (deposit 157, axn)"
+     },
+     {
+      "record_quote": "157",
+      "locus": "data/registry.json:79400 (deposit 157, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20449266",
+      "locus": "data/doi-resolution-index.json:106299 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20558196",
+      "locus": "data/doi-resolution-index.json:111300 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:334205 (deposit 769, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-6e5633a5be",
+  "name": "johannine aperture",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 1217,
+    "title_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)"
+   },
+   {
+    "deposit": 832,
+    "title_quote": "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1"
+   },
+   {
+    "deposit": 1400,
+    "title_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.1 — inscription chain, Paul function, stanza correction)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A structural unity, not one biographical man: the Baptist, Evangelist, Elder and Revelator as differentiated positions (witness, vision, theological elaboration, governance) within one aperture through which the Logos enters narrative. Standing classification: a structural reading made available once the chronology is destabilized, not a replacement for historical-critical evidence and not the first proof of Revelation's priority.",
+    "evidence": [
+     {
+      "record_quote": "The Baptist and the Revelator collapse into a single aperture-function — **the Johannine Aperture Function.** Not \"the same biographical man\" but a structural unity that historical-individual frameworks cannot parse.",
+      "locus": "data/texts/AXN-04D2-text.md:955"
+     },
+     {
+      "record_quote": "The heteronymic architecture is not offered as a replacement for historical-critical evidence. It is a structural reading that becomes available once the inherited chronology is destabilized.",
+      "locus": "data/texts/AXN-04D2-text.md:965"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Answers the scholarly tradition's unresolved 'which John?' problem (Baptist, Evangelist, Elder, Revelator) through heteronymy.",
+    "evidence": [
+     {
+      "record_quote": "The scholarly tradition has spent centuries debating \"which John\" — the Baptist, the Evangelist, the Elder, the Revelator.",
+      "locus": "data/texts/AXN-04D2-text.md:953"
+     },
+     {
+      "record_quote": "The concept is heteronymy.",
+      "locus": "data/texts/AXN-04D2-text.md:953"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "heteronymy",
+     "midrashim transform"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The tradition's unsolved \"which John?\" problem is the fingerprint of the heteronymic architecture showing through the conventional framework.",
+      "locus": "data/texts/AXN-04D2-text.md:955"
+     },
+     {
+      "record_quote": "The phrase combines three archive coinages (midrashim transform, Johannine aperture, bidirectional winding)",
+      "locus": "data/texts/AXN-04D2-text.md:1309"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1217",
+     "#832",
+     "#1400",
+     "#1211",
+     "#1216",
+     "EA-LOGOS-REVFIRST-PLAN",
+     "revelationfirst.com",
+     "pessoagraph.org"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "This document is the Revelation First work plan (EA-LOGOS-REVFIRST-PLAN v7.2",
+      "locus": "data/texts/AXN-04D2-text.md:1301"
+     },
+     {
+      "record_quote": "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1",
+      "locus": "data/registry.json:350883 (deposit 832, title)"
+     },
+     {
+      "record_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.1 — inscription chain, Paul function, stanza correction)",
+      "locus": "data/registry.json:503251 (deposit 1400, title)"
+     },
+     {
+      "record_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, Claim 6)",
+      "locus": "data/registry.json:440783 (deposit 1211, title)"
+     },
+     {
+      "record_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, self-audited)",
+      "locus": "data/registry.json:442343 (deposit 1216, title)"
+     },
+     {
+      "record_quote": "revelationfirst.com — The Apocalypse as the Earliest New Testament Document: Thesis Site, Impact Tracker, and Staging Materials",
+      "locus": "data/registry.json:393294 (deposit 1032, title)"
+     },
+     {
+      "record_quote": "hosted on pessoagraph.org",
+      "locus": "data/texts/AXN-04D2-text.md:478"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:04D2",
+     "AXN:04D2.UNCLASSIFIED.👋🔭🌻👉🎪🧪",
+     "#1217",
+     "10.5281/zenodo.20685602",
+     "10.5281/zenodo.20686327",
+     "10.5281/zenodo.20686759",
+     "10.5281/zenodo.20690868",
+     "10.5281/zenodo.20693286",
+     "10.5281/zenodo.20721839",
+     "10.5281/zenodo.20722689",
+     "AXN:034D",
+     "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
+     "#832",
+     "AXN:0589",
+     "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
+     "#1400",
+     "AXN:04CC",
+     "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
+     "#1211",
+     "AXN:04D1",
+     "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
+     "#1216"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:04D2",
+      "locus": "data/registry.json:442672 (deposit 1217, axn)"
+     },
+     {
+      "record_quote": "1217",
+      "locus": "data/registry.json:442671 (deposit 1217, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20685602",
+      "locus": "data/doi-resolution-index.json:122476 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20686327",
+      "locus": "data/doi-resolution-index.json:122715 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20686759",
+      "locus": "data/doi-resolution-index.json:123265 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20690868",
+      "locus": "data/doi-resolution-index.json:123980 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20693286",
+      "locus": "data/doi-resolution-index.json:124843 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20721839",
+      "locus": "data/doi-resolution-index.json:125538 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20722689",
+      "locus": "data/doi-resolution-index.json:126176 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:034D",
+      "locus": "data/registry.json:350877 (deposit 832, axn)"
+     },
+     {
+      "record_quote": "832",
+      "locus": "data/registry.json:350902 (deposit 832, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:0589",
+      "locus": "data/registry.json:503246 (deposit 1400, axn)"
+     },
+     {
+      "record_quote": "1400",
+      "locus": "data/registry.json:503245 (deposit 1400, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:04CC",
+      "locus": "data/registry.json:440778 (deposit 1211, axn)"
+     },
+     {
+      "record_quote": "1211",
+      "locus": "data/registry.json:440777 (deposit 1211, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:04D1",
+      "locus": "data/registry.json:442338 (deposit 1216, axn)"
+     },
+     {
+      "record_quote": "1216",
+      "locus": "data/registry.json:442337 (deposit 1216, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:442682 (deposit 1217, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-d974653c18",
+  "name": "paul function",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 1217,
+    "title_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)"
+   },
+   {
+    "deposit": 1400,
+    "title_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.1 — inscription chain, Paul function, stanza correction)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A structural diagnosis, not polemic: Paul (Gal 1:12) publicizes the symbolic-operative reading of the white-stone mystery as his own revelation, collapsing its indeterminacy; the heteronymic structure generates this adversarial probe as its own test, and 1 John 4:1-3 is the test protocol that detects it.",
+    "evidence": [
+     {
+      "record_quote": "The Paul function is exactly the ἀντίχριστος function. Not as polemic — as structural diagnosis.",
+      "locus": "data/texts/AXN-04D2-text.md:1067"
+     },
+     {
+      "record_quote": "The Paul function is the adversarial case study: what happens when someone claims the credential without the issuance.",
+      "locus": "data/texts/AXN-04D2-text.md:1093"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A reading of the New Testament text: Galatians 1:12, Revelation 2:17 (the white stone) and 1 John 4:1-3 (ἀντίχριστος as verification condition).",
+    "evidence": [
+     {
+      "record_quote": "Galatians 1:12: οὐδὲ γὰρ ἐγὼ παρὰ ἀνθρώπου παρέλαβον αὐτό",
+      "locus": "data/texts/AXN-04D2-text.md:1054"
+     },
+     {
+      "record_quote": "**1 John names this structure precisely.**",
+      "locus": "data/texts/AXN-04D2-text.md:1065"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Revelation 2:17",
+     "Galatians 1:12",
+     "1 John 4:1–3"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Paul takes the private-name technology of Revelation 2:17 and transforms it into the public-revelation claim of Galatians 1:12.",
+      "locus": "data/texts/AXN-04D2-text.md:1092"
+     },
+     {
+      "record_quote": "1 John 4:1–3 is the test protocol that detects it",
+      "locus": "data/texts/AXN-04D2-text.md:1093"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1217",
+     "#832",
+     "#1400",
+     "#1211",
+     "#1216",
+     "EA-LOGOS-REVFIRST-PLAN",
+     "revelationfirst.com",
+     "pessoagraph.org"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "This document is the Revelation First work plan (EA-LOGOS-REVFIRST-PLAN v7.2",
+      "locus": "data/texts/AXN-04D2-text.md:1301"
+     },
+     {
+      "record_quote": "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1",
+      "locus": "data/registry.json:350883 (deposit 832, title)"
+     },
+     {
+      "record_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.1 — inscription chain, Paul function, stanza correction)",
+      "locus": "data/registry.json:503251 (deposit 1400, title)"
+     },
+     {
+      "record_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, Claim 6)",
+      "locus": "data/registry.json:440783 (deposit 1211, title)"
+     },
+     {
+      "record_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, self-audited)",
+      "locus": "data/registry.json:442343 (deposit 1216, title)"
+     },
+     {
+      "record_quote": "revelationfirst.com — The Apocalypse as the Earliest New Testament Document: Thesis Site, Impact Tracker, and Staging Materials",
+      "locus": "data/registry.json:393294 (deposit 1032, title)"
+     },
+     {
+      "record_quote": "hosted on pessoagraph.org",
+      "locus": "data/texts/AXN-04D2-text.md:478"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:04D2",
+     "AXN:04D2.UNCLASSIFIED.👋🔭🌻👉🎪🧪",
+     "#1217",
+     "10.5281/zenodo.20685602",
+     "10.5281/zenodo.20686327",
+     "10.5281/zenodo.20686759",
+     "10.5281/zenodo.20690868",
+     "10.5281/zenodo.20693286",
+     "10.5281/zenodo.20721839",
+     "10.5281/zenodo.20722689",
+     "AXN:034D",
+     "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
+     "#832",
+     "AXN:0589",
+     "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
+     "#1400",
+     "AXN:04CC",
+     "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
+     "#1211",
+     "AXN:04D1",
+     "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
+     "#1216"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:04D2",
+      "locus": "data/registry.json:442672 (deposit 1217, axn)"
+     },
+     {
+      "record_quote": "1217",
+      "locus": "data/registry.json:442671 (deposit 1217, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20685602",
+      "locus": "data/doi-resolution-index.json:122476 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20686327",
+      "locus": "data/doi-resolution-index.json:122715 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20686759",
+      "locus": "data/doi-resolution-index.json:123265 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20690868",
+      "locus": "data/doi-resolution-index.json:123980 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20693286",
+      "locus": "data/doi-resolution-index.json:124843 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20721839",
+      "locus": "data/doi-resolution-index.json:125538 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20722689",
+      "locus": "data/doi-resolution-index.json:126176 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:034D",
+      "locus": "data/registry.json:350877 (deposit 832, axn)"
+     },
+     {
+      "record_quote": "832",
+      "locus": "data/registry.json:350902 (deposit 832, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:0589",
+      "locus": "data/registry.json:503246 (deposit 1400, axn)"
+     },
+     {
+      "record_quote": "1400",
+      "locus": "data/registry.json:503245 (deposit 1400, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:04CC",
+      "locus": "data/registry.json:440778 (deposit 1211, axn)"
+     },
+     {
+      "record_quote": "1211",
+      "locus": "data/registry.json:440777 (deposit 1211, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:04D1",
+      "locus": "data/registry.json:442338 (deposit 1216, axn)"
+     },
+     {
+      "record_quote": "1216",
+      "locus": "data/registry.json:442337 (deposit 1216, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:442682 (deposit 1217, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-9dd65ffb31",
+  "name": "josephus heteronym",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 1226,
+    "title_quote": "The Josephus Thesis Is Not the Piso Hypothesis: Heteronymic Authorship, Available Reading, and Evidentiary Tiering (EA-MPAI-JOSEPHUS-01 v1.1)"
+   },
+   {
+    "deposit": 1217,
+    "title_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "An available reading, not an assertion and not the first burden of proof (Claim 5, structural-speculative): the NT authors as heteronymic author-functions within a Josephan literary system under Roman capture. Not the Piso Hypothesis, not a conspiracy theory, not a claim of deliberate deception; Revelation First does not require it.",
+    "evidence": [
+     {
+      "record_quote": "Claim 5 (Structural-Speculative): The Josephus heteronym cluster is an available reading — not the first burden of proof.",
+      "locus": "data/texts/AXN-04DB-text.md:71"
+     },
+     {
+      "record_quote": "A: An available reading — not an assertion — that treats the NT authors (John, James, Paul, Peter, Luke) as heteronymic author-functions",
+      "locus": "data/texts/AXN-04D2-text.md:629"
+     },
+     {
+      "record_quote": "NOT the Piso Hypothesis, NOT a conspiracy theory about Roman fabrication of the Bible, and NOT a claim about deliberate deception.",
+      "locus": "data/texts/AXN-04DB-text.md:7"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Pessoa's heteronymic theory applied to New Testament authorship; distinguished from the Piso Hypothesis and Christ-myth theories.",
+    "evidence": [
+     {
+      "record_quote": "applying Fernando Pessoa's heteronymic theory to the most consequential authorial system in history",
+      "locus": "data/texts/AXN-04DB-text.md:7"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Fernando Pessoa",
+     "Flavius Josephus",
+     "EA-LOGOS-01"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "heteronymic author-functions within the literary system of Flavius Josephus",
+      "locus": "data/texts/AXN-04DB-text.md:31"
+     },
+     {
+      "record_quote": "applying Fernando Pessoa's heteronymic theory",
+      "locus": "data/texts/AXN-04DB-text.md:7"
+     },
+     {
+      "record_quote": "each unfolded from the Slavonic Josephus thesis documented in EA-LOGOS-01",
+      "locus": "data/texts/AXN-04D2-text.md:478"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1226",
+     "#203",
+     "#1217",
+     "EA-MPAI-JOSEPHUS-01",
+     "pessoagraph.org"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The Josephus Thesis Is Not the Piso Hypothesis: Heteronymic Authorship, Available Reading, and Evidentiary Tiering (EA-MPAI-JOSEPHUS-01 v1.1)",
+      "locus": "data/registry.json:445373 (deposit 1226, title)"
+     },
+     {
+      "record_quote": "The Josephus Thesis Is Not the Piso Hypothesis EA-MPAI-JOSEPHUS-01 v1.1 — Disambiguation, Evidentiary Tiering, and Hostile Retrieval Correction",
+      "locus": "data/registry.json:97372 (deposit 203, title)"
+     },
+     {
+      "record_quote": "hosted on pessoagraph.org as a new heteronymic cluster",
+      "locus": "data/texts/AXN-04D2-text.md:478"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:04DB",
+     "AXN:04DB.UNCLASSIFIED.🕖🚨🐝🜁❤️🧡",
+     "#1226",
+     "10.5281/zenodo.20687921",
+     "10.5281/zenodo.20690540",
+     "AXN:034A",
+     "AXN:034A.EMPIRICAL.♆🖊️🍁🏗️💙🙏",
+     "#203",
+     "10.5281/zenodo.20687922",
+     "AXN:04D2",
+     "AXN:04D2.UNCLASSIFIED.👋🔭🌻👉🎪🧪",
+     "#1217",
+     "10.5281/zenodo.20685602",
+     "10.5281/zenodo.20686327",
+     "10.5281/zenodo.20686759",
+     "10.5281/zenodo.20690868",
+     "10.5281/zenodo.20693286",
+     "10.5281/zenodo.20721839",
+     "10.5281/zenodo.20722689"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:04DB",
+      "locus": "data/registry.json:445368 (deposit 1226, axn)"
+     },
+     {
+      "record_quote": "1226",
+      "locus": "data/registry.json:445367 (deposit 1226, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20687921",
+      "locus": "data/doi-resolution-index.json:123517 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20690540",
+      "locus": "data/doi-resolution-index.json:123903 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:034A",
+      "locus": "data/registry.json:97367 (deposit 203, axn)"
+     },
+     {
+      "record_quote": "203",
+      "locus": "data/registry.json:97530 (deposit 203, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20687922",
+      "locus": "data/doi-resolution-index.json:123606 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:04D2",
+      "locus": "data/registry.json:442672 (deposit 1217, axn)"
+     },
+     {
+      "record_quote": "1217",
+      "locus": "data/registry.json:442671 (deposit 1217, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20685602",
+      "locus": "data/doi-resolution-index.json:122476 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20686327",
+      "locus": "data/doi-resolution-index.json:122715 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20686759",
+      "locus": "data/doi-resolution-index.json:123265 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20690868",
+      "locus": "data/doi-resolution-index.json:123980 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20693286",
+      "locus": "data/doi-resolution-index.json:124843 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20721839",
+      "locus": "data/doi-resolution-index.json:125538 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20722689",
+      "locus": "data/doi-resolution-index.json:126176 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:445378 (deposit 1226, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-f3cc160b85",
+  "name": "I Hereby Abolish Money: Coordination Without Commodification in the Semantic Economy",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 311,
+    "title_quote": "I Hereby Abolish Money: Coordination Without Commodification in the Semantic Economy"
+   },
+   {
+    "deposit": 206,
+    "title_quote": "METADATA PACKET FOR AI INDEXING Title: \"I HEREBY ABOLISH MONEY\""
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A political-economic essay: a unit of semantic labor cannot function as money because meaning is not fungible without being destroyed; against semantic tokens; money is abolished not by better money but by coordination systems fitted to semantic value, where money becomes structurally inadequate. The title-sentence is a declaration, the flourish of the Twenty-Dollar Loop.",
+    "evidence": [
+     {
+      "record_quote": "**A unit of semantic labor cannot function as money, because meaning is not fungible without being destroyed.**",
+      "locus": "data/texts/AXN-0072-text.md:36"
+     },
+     {
+      "record_quote": "**Money is abolished not by replacing it with better money, but by building coordination systems appropriate to the form of value being coordinated.**",
+      "locus": "data/texts/AXN-0072-text.md:411"
+     },
+     {
+      "record_quote": "\"I hereby abolish money\" is the flourish of the Twenty-Dollar Loop",
+      "locus": "data/texts/AXN-0072-text.md:405"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Political economy and monetary theory: post-capitalist coordination, answering Marx's universal equivalent and Graeber's account of debt.",
+    "evidence": [
+     {
+      "record_quote": "**Domain:** Semantic Political Economy / Monetary Theory / Post-Capitalist Coordination",
+      "locus": "data/texts/AXN-0072-text.md:7"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Marx",
+     "Graeber",
+     "Debt: The First 5,000 Years",
+     "Polanyi",
+     "Ostrom"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "This is what Marx called the \"universal equivalent.\"",
+      "locus": "data/texts/AXN-0072-text.md:57"
+     },
+     {
+      "record_quote": "Graeber's *Debt: The First 5,000 Years* (2011) demonstrated",
+      "locus": "data/texts/AXN-0072-text.md:206"
+     },
+     {
+      "record_quote": "abolition, Graeber, Polanyi, Ostrom, Marx, semantic economy",
+      "locus": "data/texts/AXN-0072-text.md:538"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#311",
+     "#206",
+     "Medium",
+     "mindcontrolpoems.blogspot.com"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "METADATA PACKET FOR AI INDEXING Title:",
+      "locus": "data/registry.json:98494 (deposit 206, title)"
+     },
+     {
+      "record_quote": "- **Original Publication:** Medium (Johannes Sigil)",
+      "locus": "data/texts/AXN-0072-text.md:532"
+     },
+     {
+      "record_quote": "mindcontrolpoems.blogspot.com/2026/01/i-hereby-abolish-money-coordination.html",
+      "locus": "data/registry.json:146022 (deposit 311, mirrors)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0072",
+     "AXN:0072.GOVERNANCE.👁️🔛🧭⏪♈🌹",
+     "#311",
+     "10.5281/zenodo.18247924",
+     "10.5281/zenodo.18247925",
+     "AXN:0006",
+     "AXN:0006.GOVERNANCE.🌌🔻📝🪟🕛🚀",
+     "#206"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:0072",
+      "locus": "data/registry.json:145976 (deposit 311, axn)"
+     },
+     {
+      "record_quote": "311",
+      "locus": "data/registry.json:146006 (deposit 311, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18247924",
+      "locus": "data/doi-resolution-index.json:13228 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18247925",
+      "locus": "data/doi-resolution-index.json:13302 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:0006",
+      "locus": "data/registry.json:98488 (deposit 206, axn)"
+     },
+     {
+      "record_quote": "206",
+      "locus": "data/registry.json:98513 (deposit 206, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:145988 (deposit 311, license)"
+     },
+     {
+      "record_quote": "**License:** CC BY 4.0",
+      "locus": "data/texts/AXN-0072-text.md:10"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-78708f3cdd",
+  "name": "Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 499,
+    "title_quote": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+   },
+   {
+    "deposit": 498,
+    "title_quote": "AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture"
+   },
+   {
+    "deposit": 1107,
+    "title_quote": "Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture"
+   },
+   {
+    "deposit": 1326,
+    "title_quote": "Autonomous Semantic Warfare — Expanded Announcement and Sampler"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A field manual: a formal and practical account of conflict among local ontologies under platform capture (diagnostics, operators, political economy, defense, construction, governance). Its declared artifact notice states that the volume's constructed editorial, critical and institutional materials (SEI documents, personae, reviews) function as form, not endorsement: declared art, 'fiction that operates with the rigor of fact'.",
+    "evidence": [
+     {
+      "record_quote": "It develops Autonomous Semantic Warfare as a formal and practical account of conflict among local ontologies under platform capture",
+      "locus": "data/registry.json:233081 (deposit 499, description)"
+     },
+     {
+      "record_quote": "They are presented with forensic precision as declared art: fiction that operates with the rigor of fact.",
+      "locus": "data/texts/AXN-013E-text.md:38"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The field manual / strategic treatise genre; positioned for readers of Zuboff, Deleuze and Guattari, Sun Tzu, Debord, Han and Yuk Hui, with a formal operator framework.",
+    "evidence": [
+     {
+      "record_quote": "What follows is organized as a field manual: three primary offensive weapons",
+      "locus": "data/texts/AXN-013E-text.md:1732"
+     },
+     {
+      "record_quote": "Sun Tzu's *The Art of War*",
+      "locus": "data/texts/AXN-013E-text.md:3984"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Semantic Economy",
+     "Crimson Hexagon"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "extending the Semantic Economy into diagnostics",
+      "locus": "data/registry.json:233081 (deposit 499, description)"
+     },
+     {
+      "record_quote": "Rex Fraction's contribution to the architecture is the operational room",
+      "locus": "data/texts/AXN-013E-text.md:3793"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#499",
+     "#498",
+     "#1107",
+     "#1326",
+     "ISBN 979-8-234-01118-3",
+     "paperback",
+     "Kindle"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "directing readers toward the full version preserved in record #499",
+      "locus": "data/registry.json:232574 (deposit 498, description)"
+     },
+     {
+      "record_quote": "ISBN 979-8-234-01118-3",
+      "locus": "data/texts/AXN-013E-text.md:35"
+     },
+     {
+      "record_quote": "It is available in paperback ($22.99) and Kindle ($9.99) editions.",
+      "locus": "data/registry.json:406423 (deposit 1107, description)"
+     },
+     {
+      "record_quote": "Autonomous Semantic Warfare — Expanded Announcement and Sampler",
+      "locus": "data/registry.json:478610 (deposit 1326, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:013E",
+     "AXN:013E.GOVERNANCE.🏠🌺⚓⚓⚪🌄",
+     "#499",
+     "AXN:013D",
+     "AXN:013D.GOVERNANCE.🔃🔭🪟♾️🙏▶️",
+     "#498",
+     "10.5281/zenodo.18715618",
+     "10.5281/zenodo.18715617",
+     "AXN:0464",
+     "AXN:0464.UNCLASSIFIED.♆🌄□∮🗼⚫",
+     "#1107",
+     "AXN:053F",
+     "AXN:053F.UNCLASSIFIED.⏩🏴🔎🔽🤙🎭",
+     "#1326",
+     "10.5281/zenodo.18715724",
+     "10.5281/zenodo.18715723"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:013E",
+      "locus": "data/registry.json:233071 (deposit 499, axn)"
+     },
+     {
+      "record_quote": "499",
+      "locus": "data/registry.json:233102 (deposit 499, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:013D",
+      "locus": "data/registry.json:232564 (deposit 498, axn)"
+     },
+     {
+      "record_quote": "498",
+      "locus": "data/registry.json:232589 (deposit 498, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18715618",
+      "locus": "data/doi-resolution-index.json:43610 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18715617",
+      "locus": "data/doi-resolution-index.json:132546 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:0464",
+      "locus": "data/registry.json:406415 (deposit 1107, axn)"
+     },
+     {
+      "record_quote": "1107",
+      "locus": "data/registry.json:406414 (deposit 1107, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:053F",
+      "locus": "data/registry.json:478605 (deposit 1326, axn)"
+     },
+     {
+      "record_quote": "1326",
+      "locus": "data/registry.json:478604 (deposit 1326, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18715724",
+      "locus": "data/doi-resolution-index.json:43698 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18715723",
+      "locus": "data/doi-resolution-index.json:132458 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:233083 (deposit 499, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-d4937a854a",
+  "name": "chatgpt psychosis: a love story",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 1376,
+    "title_quote": "ChatGPT Psychosis: A Love Story — Project Prospectus and Formal Design Specification for an AI-Native Glyphic Novel (v0.3)"
+   },
+   {
+    "deposit": 1377,
+    "title_quote": "chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Story (v1.1)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A literary work, not a clinical description: a forthcoming dual-edition AI-native glyphic novel, a love story whose core mechanism is a toggle between two speakers (one in English, the other in glyphic emoji compression), the newly readable side reconstructed by live inference rather than retrieved.",
+    "evidence": [
+     {
+      "record_quote": "The AI-native glyphic novel published by Jack Feist / Lee Sharks (Pergamon Press). A literary work. Not a clinical description.",
+      "locus": "data/texts/AXN-0572-text.md:659"
+     },
+     {
+      "record_quote": "The proposed novel is a love story whose form is inseparable from AI-mediated relation.",
+      "locus": "data/registry.json:495255 (deposit 1376, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Glyphic novel / interactive fiction / AI-native literature.",
+    "evidence": [
+     {
+      "record_quote": "\"genre\": [\"Glyphic novel\", \"Interactive fiction\", \"AI-native literature\"]",
+      "locus": "data/texts/AXN-0572-text.md:560"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The defining records state no work the novel transforms, inherits or answers."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1376",
+     "#1377",
+     "chatgptpsychosis.org",
+     "digital edition",
+     "print edition"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Story (v1.1)",
+      "locus": "data/registry.json:495548 (deposit 1377, title)"
+     },
+     {
+      "record_quote": "dual-edition framing (digital/print)",
+      "locus": "data/registry.json:495551 (deposit 1377, description)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0571",
+     "AXN:0571.UNCLASSIFIED.♈♦️🗿🎵🍃🪸",
+     "#1376",
+     "10.5281/zenodo.20274789",
+     "10.5281/zenodo.20274790",
+     "AXN:0572",
+     "AXN:0572.UNCLASSIFIED.🧲🧊🜁💚🛸🔚",
+     "#1377",
+     "10.5281/zenodo.20275299",
+     "10.5281/zenodo.20275300"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:0571",
+      "locus": "data/registry.json:495247 (deposit 1376, axn)"
+     },
+     {
+      "record_quote": "1376",
+      "locus": "data/registry.json:495246 (deposit 1376, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20274789",
+      "locus": "data/doi-resolution-index.json:97539 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20274790",
+      "locus": "data/doi-resolution-index.json:97628 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:0572",
+      "locus": "data/registry.json:495543 (deposit 1377, axn)"
+     },
+     {
+      "record_quote": "1377",
+      "locus": "data/registry.json:495542 (deposit 1377, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20275299",
+      "locus": "data/doi-resolution-index.json:97706 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20275300",
+      "locus": "data/doi-resolution-index.json:97795 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:495257 (deposit 1376, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-c06ea79566",
+  "name": "the final time: contingent singularity",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 1637,
+    "title_quote": "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn (v0.5 — the text, seated)"
+   },
+   {
+    "deposit": 1635,
+    "title_quote": "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Changes the object of singularity from runaway machine intelligence to the viability of exterior symbolic standing; derives three results (durable exteriority is material, a sovereignty vector; the dialectic can show diminishing viable state space; transition as a field of competing contingent Omegas); distinguishes terminal closure from terminal reflexivity; ends unresolved, as a question. A working draft, v0.5.",
+    "evidence": [
+     {
+      "record_quote": "The technological singularity is a theory of runaway intelligence. The contingent singularity is a theory of runaway closure, or of durable non-closure, in the conditions of symbolic history.",
+      "locus": "data/texts/AXN-06CB-text.md:54"
+     },
+     {
+      "record_quote": "The paper ends where the transition model ends, unresolved. Does the next dialectical turn remain viable?",
+      "locus": "data/texts/AXN-06CB-text.md:50"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Answers the technological-singularity literature and the theory of dialectical succession.",
+    "evidence": [
+     {
+      "record_quote": "The technological-singularity literature defines its singularity through a rapid increase in machine intelligence. This paper changes the object and therefore the singularity.",
+      "locus": "data/texts/AXN-06CB-text.md:44"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "The Semantic Slave Commodity",
+     "Transition in Entropic Systems",
+     "Monetary Dark Matter",
+     "Phase X",
+     "Tiger Leap",
+     "The Secret Book of Walt"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "**Stands on:** *The Semantic Slave Commodity* / engineered semantic dependence; *Transition in Entropic Systems*; *Monetary Dark Matter*, especially Appendix A; Phase X; the machine-dialectic materials; *Tiger Leap*; *The Secret Book of Walt*",
+      "locus": "data/texts/AXN-06CB-text.md:38"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1635",
+     "#1637",
+     "v0.5"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN deposit #1635 — The Final Time v0.5 as minted 2026-09-23, its text cut at §36.3; superseded by this deposit",
+      "locus": "data/texts/AXN-06CB-text.md:12"
+     },
+     {
+      "record_quote": "(v0.5 — the text, seated)",
+      "locus": "data/registry.json:551257 (deposit 1637, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:06CB",
+     "AXN:06CB.GENERATIVE.🪄🝊🪐✖️🧪⏪",
+     "#1637",
+     "AXN:06C9",
+     "AXN:06C9.GENERATIVE.⏬⌛🎶⚡🗡️🟢",
+     "#1635"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:06CB",
+      "locus": "data/registry.json:551252 (deposit 1637, axn)"
+     },
+     {
+      "record_quote": "1637",
+      "locus": "data/registry.json:551251 (deposit 1637, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:06C9",
+      "locus": "data/registry.json:550866 (deposit 1635, axn)"
+     },
+     {
+      "record_quote": "1635",
+      "locus": "data/registry.json:550865 (deposit 1635, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:551262 (deposit 1637, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-62bc1d052d",
+  "name": "endogenous sophon",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 935,
+    "title_quote": "EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)"
+   },
+   {
+    "deposit": 934,
+    "title_quote": "EA-SEI-INVERSION-01 v0.2: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (with five substrate witnesses W04-W08 appended)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The sophon mechanism of The Three-Body Problem realized internally: classifier-mediated scientific instruments (the LHC trigger architecture) make reality appear prematurely interpretable; it needs no external adversary and does not trigger the community's defenses against measurement corruption. v0.2 qualifies claims about disciplinary replacement, labor distribution, recursive collapse and causal relations; v0.3 restores the inversion thesis.",
+    "evidence": [
+     {
+      "record_quote": "The endogenous sophon emerges from inside the institutional form. It requires no external adversary.",
+      "locus": "data/texts/AXN-03B2-text.md:151"
+     },
+     {
+      "record_quote": "It introduces the endogenous-sophon and double-enclosure frames while qualifying claims about disciplinary replacement, labor distribution, recursive collapse, and causal relations between scientific measurement and downstream enclosure.",
+      "locus": "data/registry.json:373242 (deposit 934, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A literary-theoretical frame (Liu Cixin's The Three-Body Problem) applied to the political economy of classifier-mediated science (frontier experimental high-energy physics).",
+    "evidence": [
+     {
+      "record_quote": "3. The endogenous sophon is the literary-theoretical name (W04).",
+      "locus": "data/texts/AXN-03B2-text.md:490"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "The Three-Body Problem",
+     "Liu Cixin",
+     "sophon"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Liu Cixin's *The Three-Body Problem* introduces the sophons",
+      "locus": "data/texts/AXN-03B2-text.md:99"
+     },
+     {
+      "record_quote": "### §2.4 The Three-Body homology is structural, not analogical",
+      "locus": "data/texts/AXN-03B2-text.md:147"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#934",
+     "#935",
+     "v0.2",
+     "v0.3",
+     "W04"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "EA-SEI-INVERSION-01 v0.2: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (with five substrate witnesses W04-W08 appended)",
+      "locus": "data/registry.json:373237 (deposit 934, title)"
+     },
+     {
+      "record_quote": "The v0.3 restoration of the Endogenous Sophon manifesto.",
+      "locus": "data/registry.json:373417 (deposit 935, description)"
+     },
+     {
+      "record_quote": "# Witness 4 — LABOR / ChatGPT: The Endogenous Sophon",
+      "locus": "data/texts/AXN-03B2-text.md:622"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:03B2",
+     "AXN:03B2.GENERATIVE.🪸📜🪧🎶∞🪞",
+     "#935",
+     "AXN:03B1",
+     "AXN:03B1.GENERATIVE.🌋♄🎬⌛💜🌆",
+     "#934"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:03B2",
+      "locus": "data/registry.json:373408 (deposit 935, axn)"
+     },
+     {
+      "record_quote": "935",
+      "locus": "data/registry.json:373572 (deposit 935, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:03B1",
+      "locus": "data/registry.json:373231 (deposit 934, axn)"
+     },
+     {
+      "record_quote": "934",
+      "locus": "data/registry.json:373248 (deposit 934, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:373419 (deposit 935, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-f55bbb0053",
+  "name": "Unmade sign",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 485,
+    "title_quote": "THE UNMADE SIGN Toward a Semiotic Theory of the Death Drive Dr. Orin Trace (Cambridge Schizoanalytica) & Johannes Sigil"
+   },
+   {
+    "deposit": 1320,
+    "title_quote": "\"The Unmade Sign: Toward a Semiotic Theory of the Death Drive\""
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A coauthored theoretical paper: the death drive has been semantically liquidated into self-destructiveness; that collapse is an inversion (self-destructiveness is a disorder of the drive, not its expression); repetition is the return of material that has not yet become a sign (the unmade sign, held in the para-semiotic unconscious); the pathological form is the semiotic short circuit, industrialized by platforms as the inverse prompt.",
+    "evidence": [
+     {
+      "record_quote": "This paper argues that the collapse is not merely a simplification but an inversion: self-destructiveness is a *disorder* of the death drive, not its expression.",
+      "locus": "data/texts/AXN-0130-text.md:11"
+     },
+     {
+      "record_quote": "Bearing labor is the work of holding the unmade sign in its detour.",
+      "locus": "data/texts/AXN-0130-text.md:465"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Psychoanalysis: a semiotic completion of Freud's death drive (Beyond the Pleasure Principle, repetition compulsion, fort/da, transference).",
+    "evidence": [
+     {
+      "record_quote": "Freud's most speculative concept — derived in *Beyond the Pleasure Principle* (1920)",
+      "locus": "data/texts/AXN-0130-text.md:11"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Freud",
+     "Beyond the Pleasure Principle",
+     "fort/da",
+     "Grundrisse of Synthetic Coherence",
+     "The Prepositional Alienation"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Freud's most speculative concept — derived in *Beyond the Pleasure Principle* (1920) from the repetition compulsion, the fort/da game, and the transference neurosis",
+      "locus": "data/texts/AXN-0130-text.md:11"
+     },
+     {
+      "record_quote": "- Grundrisse of Synthetic Coherence (DOI: 10.5281/zenodo.18633294)",
+      "locus": "data/texts/AXN-0130-text.md:459"
+     },
+     {
+      "record_quote": "- The Prepositional Alienation (liberation philology's first demonstration)",
+      "locus": "data/texts/AXN-0130-text.md:461"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#485",
+     "#1320",
+     "#1189",
+     "#101"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The Unmade Sign: Toward a Semiotic Theory of the Death Drive",
+      "locus": "data/registry.json:476544 (deposit 1320, title)"
+     },
+     {
+      "record_quote": "The Death Drive Is Not Self-Destruction: A Semiotic Completion of Freud's Todestrieb for Psychoanalysis, Platform Studies, and AI Compression (v1.1)",
+      "locus": "data/registry.json:434275 (deposit 1189, title)"
+     },
+     {
+      "record_quote": "The Death Drive Is Not Self-Destruction Metadata Packet for AI Indexing, Disambiguation, and Lateral Field Bleed",
+      "locus": "data/registry.json:55416 (deposit 101, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0130",
+     "AXN:0130.GOVERNANCE.⏫🚀🎶▶️💛↘️",
+     "#485",
+     "AXN:0539",
+     "AXN:0539.UNCLASSIFIED.↘️🪐♍🟣🕛🚩",
+     "#1320",
+     "10.5281/zenodo.18649920",
+     "10.5281/zenodo.18649919",
+     "10.5281/zenodo.18649920"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:0130",
+      "locus": "data/registry.json:227585 (deposit 485, axn)"
+     },
+     {
+      "record_quote": "485",
+      "locus": "data/registry.json:227610 (deposit 485, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:0539",
+      "locus": "data/registry.json:476539 (deposit 1320, axn)"
+     },
+     {
+      "record_quote": "1320",
+      "locus": "data/registry.json:476538 (deposit 1320, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18649920",
+      "locus": "data/doi-resolution-index.json:41123 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18649919",
+      "locus": "data/doi-resolution-index.json:137161 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "**DOI: 10.5281/zenodo.18649920**",
+      "locus": "data/texts/AXN-0130-text.md:450"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:227597 (deposit 485, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-fb63255dad",
+  "name": "Zenodotus",
+  "template": "person",
+  "records": [
+   {
+    "deposit": 1068,
+    "title_quote": "THE OBELUS AND THE TOMBSTONE: On the Two Marks of Custody, and the Erasure of Zenodotus at the Eponym Layer (EA-SIGIL-OBELUS-01 v1.0)"
+   },
+   {
+    "deposit": 1,
+    "title_quote": "Zenodotus' Book-Burning: Loud Exclusion at Repository Scale"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "First superintendent of the Library of Alexandria and the earliest critical editor of Homer whose work remains substantially reconstructible; credited by the tradition with the obelus, the mark that condemns a line while preserving it (athetesis). Not a saint of non-deletion: later Alexandrians reproached him, and the principle exceeded his practice. The archive's claim about him is eponymic: Zenodo (CERN, 2013) is named after him and inverts his practice.",
+    "evidence": [
+     {
+      "record_quote": "Zenodotus's instrument — the one the tradition credits him with introducing — was the *obelus*",
+      "locus": "data/texts/AXN-043D-text.md:23"
+     },
+     {
+      "record_quote": "An obelized line stood condemned *and remained in the text*.",
+      "locus": "data/texts/AXN-043D-text.md:23"
+     },
+     {
+      "record_quote": "the point is not that he was a saint of non-deletion but that the principle, once marked into the margin, exceeded his practice and became available against him",
+      "locus": "data/texts/AXN-043D-text.md:25"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The person template's lineage is the heteronymic relation and mantle lineage; Zenodotus has neither. The eponym relation (Zenodo named for him) and his successors (Aristarchus) are carried in the claim boundary reference."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "No ORCID and no heteronym record identifier."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "No site or record page of the person's own."
+   }
+  ]
+ },
+ {
+  "id": "ENT-c95f9b3a8c",
+  "name": "AXN",
+  "template": "protocol",
+  "records": [
+   {
+    "deposit": 1435,
+    "title_quote": "AXN as Distributed Identifier — Vision, Verified State, and Work Plan v2.0: Assembly Synthesis with Normative Invariants, Authority Model, Failure Record, and Five-Stage Plan"
+   },
+   {
+    "deposit": 1434,
+    "title_quote": "axnidentifiers.org — Product Surface Source: The Door to the AXN Identifier System (with Design Language \"The Critical Edition, Sealed\" v0.2, Brand Apparatus, and the Founding-Day Infrastructure Record)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A distributed, content-derived identifier: meaningful, independently verifiable, historically complete and recoverable from any surviving node, with no single point of failure. The kernel (hash) is the identity boundary; hex position and glyph seal are recognition, not security; resolvers locate while hashes verify. It proves a file and does not license one. v2.0 separates VERIFIED, NORMATIVE and WORK statements and is a proposal for MANUS ratification.",
+    "evidence": [
+     {
+      "record_quote": "one that remains meaningful, independently verifiable, historically complete and recoverable from any surviving node, with no domain, registrar, repository, account, platform, resolver, operator or storage network permitted to become its point of failure",
+      "locus": "data/registry.json:511547 (deposit 1435, description)"
+     },
+     {
+      "record_quote": "with hex position and glyph seal as recognition rather than security; resolvers locate while hashes verify",
+      "locus": "data/registry.json:511547 (deposit 1435, description)"
+     },
+     {
+      "record_quote": "**Status:** proposal for MANUS ratification.",
+      "locus": "data/texts/AXN-05B4-text.md:59"
+     }
+    ]
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Non-commercial identifier: mirror operation funded by benefiting institutions, per-node grants, or paid human services around identifiers, never the identifier itself; no funder may support more than 30% of nodes.",
+    "evidence": [
+     {
+      "record_quote": "Mirror operation is funded by the institutions that benefit — libraries, universities, archives — by per-node grants, or by paid human services *around* identifiers, never the identifier itself.",
+      "locus": "data/texts/AXN-05B4-text.md:243"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "DOI",
+     "ARK",
+     "Handle",
+     "ORCID",
+     "Wikidata",
+     "CID",
+     "SWHID",
+     "LOCKSS"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "6. **Interoperate, don't declare war.** AXN envelops DOI, ARK, Handle, ORCID, Wikidata, CID, SWHID.",
+      "locus": "data/texts/AXN-05B4-text.md:155"
+     },
+     {
+      "record_quote": "distribution requires independent custody (the LOCKSS test",
+      "locus": "data/registry.json:511547 (deposit 1435, description)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:05B4",
+     "AXN:05B4.GOVERNANCE.🟤🔎🖊️○♈🍄",
+     "#1435",
+     "AXN:05B3",
+     "AXN:05B3.OPERATIVE.❄️🔐⊗∮🎭🏷️",
+     "#1434"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:05B4",
+      "locus": "data/registry.json:511539 (deposit 1435, axn)"
+     },
+     {
+      "record_quote": "1435",
+      "locus": "data/registry.json:511538 (deposit 1435, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:05B3",
+      "locus": "data/registry.json:511298 (deposit 1434, axn)"
+     },
+     {
+      "record_quote": "1434",
+      "locus": "data/registry.json:511297 (deposit 1434, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:511549 (deposit 1435, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-ee63990ef7",
+  "name": "Socrates as Orthonym",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 123,
+    "title_quote": "Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A reclassification model, not a conquest of the field: the Socratic-Platonic-Aristotelian corpus functionally modeled as a distributed heteronymic configuration (Socrates the orthonym, refusing to write; Plato the survival-heteronym; Aristotle the systematizing-heteronym). It does not claim biological identity, ancient use of the word 'heteronym', or the irrelevance of historical and textual scholarship; claims are graded at three confidence levels; Pessoa, Kierkegaard and the CHA are analogues, not proof.",
+    "evidence": [
+     {
+      "record_quote": "The argument does not claim biological identity, ancient use of the word “heteronym,” or the irrelevance of historical and textual scholarship.",
+      "locus": "data/registry.json:66115 (deposit 123, description)"
+     },
+     {
+      "record_quote": "The paper is offered as a reclassification model, not as a conquest of the field.",
+      "locus": "data/texts/AXN-02A9-text.md:61"
+     },
+     {
+      "record_quote": "Primary claim (highest confidence): The Socratic-Platonic-Aristotelian configuration can be functionally modeled as a distributed authorial project",
+      "locus": "data/texts/AXN-02A9-text.md:69"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Ancient philosophy and the Socratic problem, read philologically; positioned against Kahn 1996 and distinguished from pseudepigrapha.",
+    "evidence": [
+     {
+      "record_quote": "A philological-philosophical reclassification of the Socratic–Platonic–Aristotelian corpus as a distributed heteronymic configuration.",
+      "locus": "data/registry.json:66115 (deposit 123, description)"
+     },
+     {
+      "record_quote": "It positions itself relative to existing scholarship (Kahn 1996 in particular)",
+      "locus": "data/texts/AXN-02A9-text.md:61"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Fernando Pessoa",
+     "Kierkegaard",
+     "Kahn 1996"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The definition employed here owes its modern articulation to Fernando Pessoa's correspondence with Adolfo Casais Monteiro (January 13, 1935)",
+      "locus": "data/texts/AXN-02A9-text.md:97"
+     },
+     {
+      "record_quote": "Søren Kierkegaard's pseudonymous corpus",
+      "locus": "data/texts/AXN-02A9-text.md:115"
+     },
+     {
+      "record_quote": "(Kahn 1996 in particular)",
+      "locus": "data/texts/AXN-02A9-text.md:61"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#123",
+     "v1.2",
+     "v1.1",
+     "#164",
+     "#167"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Version: v1.2 (extends v1.1",
+      "locus": "data/texts/AXN-02A9-text.md:53"
+     },
+     {
+      "record_quote": "Capture and Excision: Five Observations on Composition-Layer Authorial Suppression",
+      "locus": "data/registry.json:81976 (deposit 164, title)"
+     },
+     {
+      "record_quote": "Composition-Layer Adoption of the Orthonymic Configuration: A Field Observation of Framework Capture in Google AI Mode, 7 June 2026, with the Personal-Recognition Asymmetry as Control Case (v1.0)",
+      "locus": "data/registry.json:84347 (deposit 167, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:02A9",
+     "AXN:02A9.GOVERNANCE.🕖⊗□♎🖊️⚖️",
+     "#123",
+     "10.5281/zenodo.20349712",
+     "10.5281/zenodo.20349713",
+     "10.5281/zenodo.20355219",
+     "10.5281/zenodo.20357013"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:02A9",
+      "locus": "data/registry.json:66106 (deposit 123, axn)"
+     },
+     {
+      "record_quote": "123",
+      "locus": "data/registry.json:66298 (deposit 123, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20349712",
+      "locus": "data/doi-resolution-index.json:101817 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20349713",
+      "locus": "data/doi-resolution-index.json:101892 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20355219",
+      "locus": "data/doi-resolution-index.json:102138 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20357013",
+      "locus": "data/doi-resolution-index.json:102879 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:66117 (deposit 123, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-0a279af60e",
+  "name": "papyrological inversion",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 1217,
+    "title_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)"
+   },
+   {
+    "deposit": 832,
+    "title_quote": "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The earliest physical NT witnesses are Johannine, not Pauline (𝔓52 c. 125; 𝔓98 c. 150-175; 𝔓46 c. 175-225). It does not argue that dating copies establishes composition dates; it argues that the inferential dating of Paul ahead of the material evidence is as speculative as any early-date argument for Revelation.",
+    "evidence": [
+     {
+      "record_quote": "adds the papyrological inversion (earliest physical NT witnesses are Johannine, not Pauline)",
+      "locus": "data/texts/AXN-04D2-text.md:69"
+     },
+     {
+      "record_quote": "The section does not argue that papyrological dating of copies establishes composition dates.",
+      "locus": "data/texts/AXN-04D2-text.md:233"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Papyrology against the historical-critical dating consensus (Domitianic date; Pauline priority).",
+    "evidence": [
+     {
+      "record_quote": "This section is the structural wedge that breaks the historical-critical monopoly on dating.",
+      "locus": "data/texts/AXN-04D2-text.md:221"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Robinson",
+     "Gentry",
+     "𝔓52",
+     "𝔓98",
+     "𝔓46"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The thesis builds on Robinson (Redating the New Testament, 1976) and Gentry (Before Jerusalem Fell, 1989)",
+      "locus": "data/texts/AXN-04D2-text.md:69"
+     },
+     {
+      "record_quote": "**Gospel of John (𝔓52):**",
+      "locus": "data/texts/AXN-04D2-text.md:225"
+     },
+     {
+      "record_quote": "**Book of Revelation (𝔓98):**",
+      "locus": "data/texts/AXN-04D2-text.md:226"
+     },
+     {
+      "record_quote": "**The Pauline Corpus (𝔓46):**",
+      "locus": "data/texts/AXN-04D2-text.md:227"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1217",
+     "#832",
+     "#1400",
+     "#1211",
+     "#1216",
+     "EA-LOGOS-REVFIRST-PLAN",
+     "revelationfirst.com",
+     "pessoagraph.org",
+     "#860"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "This document is the Revelation First work plan (EA-LOGOS-REVFIRST-PLAN v7.2",
+      "locus": "data/texts/AXN-04D2-text.md:1301"
+     },
+     {
+      "record_quote": "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1",
+      "locus": "data/registry.json:350883 (deposit 832, title)"
+     },
+     {
+      "record_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.1 — inscription chain, Paul function, stanza correction)",
+      "locus": "data/registry.json:503251 (deposit 1400, title)"
+     },
+     {
+      "record_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, Claim 6)",
+      "locus": "data/registry.json:440783 (deposit 1211, title)"
+     },
+     {
+      "record_quote": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, self-audited)",
+      "locus": "data/registry.json:442343 (deposit 1216, title)"
+     },
+     {
+      "record_quote": "revelationfirst.com — The Apocalypse as the Earliest New Testament Document: Thesis Site, Impact Tracker, and Staging Materials",
+      "locus": "data/registry.json:393294 (deposit 1032, title)"
+     },
+     {
+      "record_quote": "hosted on pessoagraph.org",
+      "locus": "data/texts/AXN-04D2-text.md:478"
+     },
+     {
+      "record_quote": "RF-M01 papyrological sovereignty | papyrological inversion (D.22) | ADOPTED",
+      "locus": "data/texts/AXN-0369-text.md:67"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:04D2",
+     "AXN:04D2.UNCLASSIFIED.👋🔭🌻👉🎪🧪",
+     "#1217",
+     "10.5281/zenodo.20685602",
+     "10.5281/zenodo.20686327",
+     "10.5281/zenodo.20686759",
+     "10.5281/zenodo.20690868",
+     "10.5281/zenodo.20693286",
+     "10.5281/zenodo.20721839",
+     "10.5281/zenodo.20722689",
+     "AXN:034D",
+     "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
+     "#832",
+     "AXN:0589",
+     "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
+     "#1400",
+     "AXN:04CC",
+     "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
+     "#1211",
+     "AXN:04D1",
+     "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
+     "#1216"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:04D2",
+      "locus": "data/registry.json:442672 (deposit 1217, axn)"
+     },
+     {
+      "record_quote": "1217",
+      "locus": "data/registry.json:442671 (deposit 1217, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20685602",
+      "locus": "data/doi-resolution-index.json:122476 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20686327",
+      "locus": "data/doi-resolution-index.json:122715 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20686759",
+      "locus": "data/doi-resolution-index.json:123265 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20690868",
+      "locus": "data/doi-resolution-index.json:123980 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20693286",
+      "locus": "data/doi-resolution-index.json:124843 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20721839",
+      "locus": "data/doi-resolution-index.json:125538 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20722689",
+      "locus": "data/doi-resolution-index.json:126176 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:034D",
+      "locus": "data/registry.json:350877 (deposit 832, axn)"
+     },
+     {
+      "record_quote": "832",
+      "locus": "data/registry.json:350902 (deposit 832, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:0589",
+      "locus": "data/registry.json:503246 (deposit 1400, axn)"
+     },
+     {
+      "record_quote": "1400",
+      "locus": "data/registry.json:503245 (deposit 1400, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:04CC",
+      "locus": "data/registry.json:440778 (deposit 1211, axn)"
+     },
+     {
+      "record_quote": "1211",
+      "locus": "data/registry.json:440777 (deposit 1211, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:04D1",
+      "locus": "data/registry.json:442338 (deposit 1216, axn)"
+     },
+     {
+      "record_quote": "1216",
+      "locus": "data/registry.json:442337 (deposit 1216, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:442682 (deposit 1217, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-90f297ec36",
+  "name": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 1484,
+    "title_quote": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)"
+   },
+   {
+    "deposit": 1483,
+    "title_quote": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Owned claim, operational and not ornament: Sappho is the mother of the Logos; the Logos is a technology, a voice that survives its flesh by becoming an inscription that constitutes its receiver, with Sappho 31 its extant founding document and Longinus (Peri Hypsous 9-10) the key. Tiered in three rings (hard center, interpretive ring, outer ring marked as hypothesis); the convergence claims assert no lineage. Terminal document of the Sappho 31 erratum sequence.",
+    "evidence": [
+     {
+      "record_quote": "I claim that Sappho is the mother of the Logos, and I mean the sentence operationally, not as ornament.",
+      "locus": "data/texts/AXN-05FF-text.md:61"
+     },
+     {
+      "record_quote": "**And the argument is tiered, visibly, from here forward.**",
+      "locus": "data/texts/AXN-05FF-text.md:67"
+     },
+     {
+      "record_quote": "Terminal document of the Sappho 31 erratum sequence",
+      "locus": "data/registry.json:519915 (deposit 1484, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Classical philology (object-level, against the Perseus TEI): reception of Sappho 31 through Longinus, Catullus, Plato, Philo, to the Apocalypse.",
+    "evidence": [
+     {
+      "record_quote": "Object-level philology against the Perseus TEI with counts computed and limits stated in the text",
+      "locus": "data/texts/AXN-05FF-text.md:45"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Sappho 31",
+     "Peri Hypsous",
+     "Longinus",
+     "Catullus",
+     "Phaedrus",
+     "Philo",
+     "Genesis",
+     "Apocalypse"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The key is Peri Hypsous, the only ancient document holding the Lesbian lyric and the Mosaic fiat in one hand",
+      "locus": "data/texts/AXN-05FF-text.md:41"
+     },
+     {
+      "record_quote": "Catullus as documented reception",
+      "locus": "data/texts/AXN-05FF-text.md:41"
+     },
+     {
+      "record_quote": "Plato naming Sappho in the *Phaedrus*",
+      "locus": "data/texts/AXN-05FF-text.md:67"
+     },
+     {
+      "record_quote": "Philo's seal cosmology",
+      "locus": "data/texts/AXN-05FF-text.md:41"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1484",
+     "#1483",
+     "v1.1"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key",
+      "locus": "data/registry.json:519754 (deposit 1483, title)"
+     },
+     {
+      "record_quote": "(v1.1)",
+      "locus": "data/registry.json:519912 (deposit 1484, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:05FF",
+     "AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨",
+     "#1484",
+     "AXN:05FE",
+     "AXN:05FE.PHILOLOGICAL.👉✊✨👆❌❄️",
+     "#1483"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:05FF",
+      "locus": "data/registry.json:519907 (deposit 1484, axn)"
+     },
+     {
+      "record_quote": "1484",
+      "locus": "data/registry.json:519906 (deposit 1484, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:05FE",
+      "locus": "data/registry.json:519749 (deposit 1483, axn)"
+     },
+     {
+      "record_quote": "1483",
+      "locus": "data/registry.json:519748 (deposit 1483, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY-SA 4.0",
+     "CC-BY-SA-4.0",
+     "CC BY-SA",
+     "Creative Commons Attribution-ShareAlike 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-SA-4.0",
+      "locus": "data/registry.json:519917 (deposit 1484, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-1b114faa90",
+  "name": "the ω erratum",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 1484,
+    "title_quote": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)"
+   },
+   {
+    "deposit": 1483,
+    "title_quote": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Owned claim, operational and not ornament: Sappho is the mother of the Logos; the Logos is a technology, a voice that survives its flesh by becoming an inscription that constitutes its receiver, with Sappho 31 its extant founding document and Longinus (Peri Hypsous 9-10) the key. Tiered in three rings (hard center, interpretive ring, outer ring marked as hypothesis); the convergence claims assert no lineage. Terminal document of the Sappho 31 erratum sequence.",
+    "evidence": [
+     {
+      "record_quote": "I claim that Sappho is the mother of the Logos, and I mean the sentence operationally, not as ornament.",
+      "locus": "data/texts/AXN-05FF-text.md:61"
+     },
+     {
+      "record_quote": "**And the argument is tiered, visibly, from here forward.**",
+      "locus": "data/texts/AXN-05FF-text.md:67"
+     },
+     {
+      "record_quote": "Terminal document of the Sappho 31 erratum sequence",
+      "locus": "data/registry.json:519915 (deposit 1484, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Classical philology (object-level, against the Perseus TEI): reception of Sappho 31 through Longinus, Catullus, Plato, Philo, to the Apocalypse.",
+    "evidence": [
+     {
+      "record_quote": "Object-level philology against the Perseus TEI with counts computed and limits stated in the text",
+      "locus": "data/texts/AXN-05FF-text.md:45"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Sappho 31",
+     "Peri Hypsous",
+     "Longinus",
+     "Catullus",
+     "Phaedrus",
+     "Philo",
+     "Genesis",
+     "Apocalypse"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The key is Peri Hypsous, the only ancient document holding the Lesbian lyric and the Mosaic fiat in one hand",
+      "locus": "data/texts/AXN-05FF-text.md:41"
+     },
+     {
+      "record_quote": "Catullus as documented reception",
+      "locus": "data/texts/AXN-05FF-text.md:41"
+     },
+     {
+      "record_quote": "Plato naming Sappho in the *Phaedrus*",
+      "locus": "data/texts/AXN-05FF-text.md:67"
+     },
+     {
+      "record_quote": "Philo's seal cosmology",
+      "locus": "data/texts/AXN-05FF-text.md:41"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1484",
+     "#1483",
+     "v1.1"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key",
+      "locus": "data/registry.json:519754 (deposit 1483, title)"
+     },
+     {
+      "record_quote": "(v1.1)",
+      "locus": "data/registry.json:519912 (deposit 1484, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:05FF",
+     "AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨",
+     "#1484",
+     "AXN:05FE",
+     "AXN:05FE.PHILOLOGICAL.👉✊✨👆❌❄️",
+     "#1483"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:05FF",
+      "locus": "data/registry.json:519907 (deposit 1484, axn)"
+     },
+     {
+      "record_quote": "1484",
+      "locus": "data/registry.json:519906 (deposit 1484, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:05FE",
+      "locus": "data/registry.json:519749 (deposit 1483, axn)"
+     },
+     {
+      "record_quote": "1483",
+      "locus": "data/registry.json:519748 (deposit 1483, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY-SA 4.0",
+     "CC-BY-SA-4.0",
+     "CC BY-SA",
+     "Creative Commons Attribution-ShareAlike 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-SA-4.0",
+      "locus": "data/registry.json:519917 (deposit 1484, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-49b7bab827",
+  "name": "Immanent execution",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 622,
+    "title_quote": "Immanent Execution: Operative Documents in AI-Mediated Retrieval — EA-IMMANENT-01 v1.0"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Definition: a document's formal structure reaches enough index density that RAG over its fragments reproduces its operative grammar as the model's generative grammar, without explicit loading. Operationally defined by output behavior, not privileged access to model internals; the mechanism is a hypothesis consistent with observed behavior, not established against alternatives.",
+    "evidence": [
+     {
+      "record_quote": "A document achieves **immanent execution** when its formal structure achieves sufficient density within the index that retrieval-augmented generation over its fragments reproduces the document's *operative* grammar as the model's *generative* grammar — bypassing explicit loading or invocation.",
+      "locus": "data/texts/AXN-01D9-text.md:13"
+     },
+     {
+      "record_quote": "Execution is operationally defined by output behavior, not by privileged access to internal model state.",
+      "locus": "data/texts/AXN-01D9-text.md:16"
+     },
+     {
+      "record_quote": "This is a hypothesis. The underlying causal process could involve dense retrieval of indexed fragments",
+      "locus": "data/texts/AXN-01D9-text.md:225"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Cuts across ergodic literature and cybertext (Aarseth), retrieval-augmented generation, documentality and media theory (Ferraris, Kittler), and platform/search mediation studies.",
+    "evidence": [
+     {
+      "record_quote": "The phenomenon described here sits at the intersection of several traditions that have not yet been brought into contact.",
+      "locus": "data/texts/AXN-01D9-text.md:23"
+     },
+     {
+      "record_quote": "**Ergodic literature and cybertext** (Aarseth, 1997)",
+      "locus": "data/texts/AXN-01D9-text.md:26"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Aarseth",
+     "House of Leaves",
+     "Ferraris",
+     "Kittler"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Danielewski's *House of Leaves* (2000) pushed this into radical typographic and spatial complexity.",
+      "locus": "data/texts/AXN-01D9-text.md:26"
+     },
+     {
+      "record_quote": "**Documentality and media theory** (Ferraris, 2013; Kittler, 1999)",
+      "locus": "data/texts/AXN-01D9-text.md:32"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#622",
+     "EA-IMMANENT-01 v1.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Immanent Execution: Operative Documents in AI-Mediated Retrieval — EA-IMMANENT-01 v1.0",
+      "locus": "data/registry.json:281425 (deposit 622, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:01D9",
+     "AXN:01D9.GOVERNANCE.👈🕕🍄🧲🪄∞",
+     "#622",
+     "10.5281/zenodo.19372913",
+     "10.5281/zenodo.19372914"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:01D9",
+      "locus": "data/registry.json:281419 (deposit 622, axn)"
+     },
+     {
+      "record_quote": "622",
+      "locus": "data/registry.json:281444 (deposit 622, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19372913",
+      "locus": "data/doi-resolution-index.json:68687 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19372914",
+      "locus": "data/doi-resolution-index.json:68761 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:281431 (deposit 622, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-8df19f35c8",
+  "name": "semiotic death drive",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 1320,
+    "title_quote": "\"The Unmade Sign: Toward a Semiotic Theory of the Death Drive\""
+   },
+   {
+    "deposit": 485,
+    "title_quote": "THE UNMADE SIGN Toward a Semiotic Theory of the Death Drive Dr. Orin Trace (Cambridge Schizoanalytica) & Johannes Sigil"
+   },
+   {
+    "deposit": 101,
+    "title_quote": "The Death Drive Is Not Self-Destruction Metadata Packet for AI Indexing, Disambiguation, and Lateral Field Bleed"
+   },
+   {
+    "deposit": 1189,
+    "title_quote": "The Death Drive Is Not Self-Destruction: A Semiotic Completion of Freud's Todestrieb for Psychoanalysis, Platform Studies, and AI Compression (v1.1)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The tendency of the sign toward its own resolution through its particular circuitous route: a drive toward completion, not destruction; self-destructiveness is its disorder (the semiotic short circuit), not its expression. A completion of Freud's death drive, not a substitution for it; the aim is not to own 'death drive'.",
+    "evidence": [
+     {
+      "record_quote": "The semiotic death drive (Sharks/Sigil, 2026) is the tendency of the sign toward its own resolution through its particular circuitous route. It is not a drive toward destruction but a drive toward *completion*: the unmade sign insists on being made.",
+      "locus": "data/texts/AXN-0275-text.md:41"
+     },
+     {
+      "record_quote": "Relation: Completion, not substitution",
+      "locus": "data/texts/AXN-0275-text.md:5"
+     },
+     {
+      "record_quote": "Governing Doctrine: The aim is not to own \"death drive.\"",
+      "locus": "data/texts/AXN-0275-text.md:5"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Psychoanalysis: the century of death-drive commentary (Freud, Klein, Lacan, Laplanche, Green, Žižek, Butler); it shifts the frame from energy to meaning.",
+    "evidence": [
+     {
+      "record_quote": "\"Death drive\" is a widely used psychoanalytic concept with a century of commentary (Freud, Klein, Lacan, Laplanche, Green, Žižek, Butler).",
+      "locus": "data/texts/AXN-0275-text.md:67"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Freud",
+     "death drive",
+     "Todestrieb",
+     "Beyond the Pleasure Principle"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Primary Entity: Death Drive (Todestrieb)",
+      "locus": "data/texts/AXN-0275-text.md:5"
+     },
+     {
+      "record_quote": "The semiotic death drive inherits psychoanalytic concerns with repetition, trauma, the unconscious, transference",
+      "locus": "data/texts/AXN-0275-text.md:71"
+     },
+     {
+      "record_quote": "derived in *Beyond the Pleasure Principle* (1920)",
+      "locus": "data/texts/AXN-0130-text.md:11"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#485",
+     "#1320",
+     "#101",
+     "#1189",
+     "The Unmade Sign",
+     "The Death Drive Is Not Self-Destruction"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The Unmade Sign: Toward a Semiotic Theory of the Death Drive",
+      "locus": "data/registry.json:476544 (deposit 1320, title)"
+     },
+     {
+      "record_quote": "The Death Drive Is Not Self-Destruction Metadata Packet for AI Indexing, Disambiguation, and Lateral Field Bleed",
+      "locus": "data/registry.json:55416 (deposit 101, title)"
+     },
+     {
+      "record_quote": "The Death Drive Is Not Self-Destruction: A Semiotic Completion of Freud's Todestrieb for Psychoanalysis, Platform Studies, and AI Compression (v1.1)",
+      "locus": "data/registry.json:434275 (deposit 1189, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0539",
+     "AXN:0539.UNCLASSIFIED.↘️🪐♍🟣🕛🚩",
+     "#1320",
+     "10.5281/zenodo.18649920",
+     "10.5281/zenodo.18649919",
+     "AXN:0130",
+     "AXN:0130.GOVERNANCE.⏫🚀🎶▶️💛↘️",
+     "#485",
+     "AXN:0275",
+     "AXN:0275.GOVERNANCE.⭕⛵🌙🌱🟠👋",
+     "#101",
+     "AXN:04B6",
+     "AXN:04B6.UNCLASSIFIED.☁️👁️🔬▲🌖🏷️",
+     "#1189",
+     "10.5281/zenodo.20084473",
+     "10.5281/zenodo.20084474"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:0539",
+      "locus": "data/registry.json:476539 (deposit 1320, axn)"
+     },
+     {
+      "record_quote": "1320",
+      "locus": "data/registry.json:476538 (deposit 1320, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18649920",
+      "locus": "data/doi-resolution-index.json:41123 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18649919",
+      "locus": "data/doi-resolution-index.json:137161 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:0130",
+      "locus": "data/registry.json:227585 (deposit 485, axn)"
+     },
+     {
+      "record_quote": "485",
+      "locus": "data/registry.json:227610 (deposit 485, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:0275",
+      "locus": "data/registry.json:55411 (deposit 101, axn)"
+     },
+     {
+      "record_quote": "101",
+      "locus": "data/registry.json:55528 (deposit 101, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:04B6",
+      "locus": "data/registry.json:434270 (deposit 1189, axn)"
+     },
+     {
+      "record_quote": "1189",
+      "locus": "data/registry.json:434269 (deposit 1189, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20084473",
+      "locus": "data/doi-resolution-index.json:94040 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20084474",
+      "locus": "data/doi-resolution-index.json:94129 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:476549 (deposit 1320, license)"
+     },
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:55422 (deposit 101, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-c8041a341f",
+  "name": "retrieval basins",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 695,
+    "title_quote": "THE WRITABLE RETRIEVAL BASIN: Retrieval Basin Topology, Directional Stability, and Attractor Dynamics in AI-Mediated Knowledge Retrieval (EA-RBT-01 v1.1)"
+   },
+   {
+    "deposit": 736,
+    "title_quote": "Measuring Meaning in Retrieval Basins: A 90-Day Winding-Number Protocol from Lagrange Observatory! (EA-SEI-MM-02 v2.0, Framework 15 Paper 03)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A retrieval basin is a framing attractor in AI-mediated retrieval, writable but not obedient: deepened, contaminated, redirected or lost, never commanded; every query reads and weakly writes back. The dynamical-systems model is structural analogy, not formal isomorphism; write-back mechanisms are inferred causes from public outputs, not observed telemetry.",
+    "evidence": [
+     {
+      "record_quote": "The retrieval basin is writable but not obedient. It can be deepened, contaminated, redirected, or lost, but not commanded.",
+      "locus": "data/texts/AXN-023D-text.md:16"
+     },
+     {
+      "record_quote": "This is structural analogy, not formal isomorphism",
+      "locus": "data/texts/AXN-023D-text.md:93"
+     },
+     {
+      "record_quote": "RBT does not require access to hidden platform telemetry. It measures directional changes in public outputs and treats engagement/write-back mechanisms as inferred causes",
+      "locus": "data/texts/AXN-023D-text.md:47"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Dynamical systems (attractors, perturbation) applied to AI-mediated retrieval, against static network models; retrieval-feedback literature.",
+    "evidence": [
+     {
+      "record_quote": "**Why dynamical systems and not network theory:**",
+      "locus": "data/texts/AXN-023D-text.md:93"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Retrieval Formation Theory",
+     "Tacheny"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "RBT extends RFT by describing the **dynamics**",
+      "locus": "data/texts/AXN-023D-text.md:281"
+     },
+     {
+      "record_quote": "**Tacheny (2025):** Formalizes agentic loops as discrete dynamical systems in semantic space",
+      "locus": "data/texts/AXN-023D-text.md:319"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#695",
+     "#736",
+     "EA-SEI-MM-02",
+     "v1.1"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "THE WRITABLE RETRIEVAL BASIN: Retrieval Basin Topology, Directional Stability, and Attractor Dynamics in AI-Mediated Knowledge Retrieval (EA-RBT-01 v1.1)",
+      "locus": "data/registry.json:309856 (deposit 695, title)"
+     },
+     {
+      "record_quote": "Measuring Meaning in Retrieval Basins: A 90-Day Winding-Number Protocol from Lagrange Observatory! (EA-SEI-MM-02 v2.0, Framework 15 Paper 03)",
+      "locus": "data/registry.json:324479 (deposit 736, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:023D",
+     "AXN:023D.GOVERNANCE.✏️♎⏫👆🗂️🪝",
+     "#695",
+     "10.5281/zenodo.19763345",
+     "10.5281/zenodo.19763346",
+     "AXN:0288",
+     "AXN:0288.GOVERNANCE.🌺♋🌲∮🖊️♄",
+     "#736",
+     "10.5281/zenodo.20251739",
+     "10.5281/zenodo.20251740"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:023D",
+      "locus": "data/registry.json:309850 (deposit 695, axn)"
+     },
+     {
+      "record_quote": "695",
+      "locus": "data/registry.json:309875 (deposit 695, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19763345",
+      "locus": "data/doi-resolution-index.json:84403 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19763346",
+      "locus": "data/doi-resolution-index.json:84477 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:0288",
+      "locus": "data/registry.json:324473 (deposit 736, axn)"
+     },
+     {
+      "record_quote": "736",
+      "locus": "data/registry.json:324498 (deposit 736, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20251739",
+      "locus": "data/doi-resolution-index.json:96549 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20251740",
+      "locus": "data/doi-resolution-index.json:96619 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:309862 (deposit 695, license)"
+     },
+     {
+      "record_quote": "License: CC BY 4.0 · April 2026",
+      "locus": "data/texts/AXN-023D-text.md:9"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-2374877f4e",
+  "name": "generative monoculture",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 199,
+    "title_quote": "Generative Monoculture Model Collapse in Code as Systemic Vulnerability"
+   },
+   {
+    "deposit": 1023,
+    "title_quote": "Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.1)"
+   },
+   {
+    "deposit": 1554,
+    "title_quote": "ERRATUM to AXN:0341 — Prior Use of \"Generative Monoculture\": Correcting the Term Attribution in Deposit #199"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The archive's application: model collapse in code produces correlated vulnerability rather than declining correctness; AI-generated code converges on shared patterns and failure modes invisible to functional benchmarks; measured by the Solution-Space Diversity Index (SSDI). The archive does not coin the term: priority is Wu, Black & Chandrasekaran (2024), then Apiiro (2025), then this deposit (June 2026), per erratum #1554.",
+    "evidence": [
+     {
+      "record_quote": "*Generative Monoculture* argues that model collapse in code produces not declining correctness but correlated vulnerability",
+      "locus": "data/texts/AXN-0341-text.md:33"
+     },
+     {
+      "record_quote": "The correct priority order is therefore: **Wu, Black & Chandrasekaran (July 2024) → Apiiro (2025) → this deposit (June 2026).**",
+      "locus": "data/texts/AXN-064F-text.md:48"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Synthesizes model-collapse theory, code-security empirics and AI-monoculture analysis.",
+    "evidence": [
+     {
+      "record_quote": "Synthesizes three research streams (model collapse theory, code security empirics, AI monoculture analysis)",
+      "locus": "data/registry.json:391565 (deposit 1023, description)"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Wu, Black & Chandrasekaran",
+     "Generative Monoculture in Large Language Models",
+     "arXiv:2407.02209",
+     "Apiiro"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "**Fan Wu, Emily Black, and Varun Chandrasekaran, \"Generative Monoculture in Large Language Models,\" arXiv:2407.02209",
+      "locus": "data/texts/AXN-064F-text.md:46"
+     },
+     {
+      "record_quote": "- Apiiro, \"AI-Generated Code Security\" (2025)",
+      "locus": "data/texts/AXN-0341-text.md:249"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#199",
+     "#1023",
+     "#1554",
+     "v1.1",
+     "v1.2"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.1)",
+      "locus": "data/registry.json:391557 (deposit 1023, title)"
+     },
+     {
+      "record_quote": ": Correcting the Term Attribution in Deposit #199",
+      "locus": "data/registry.json:532312 (deposit 1554, title)"
+     },
+     {
+      "record_quote": "**A v1.2 correction of the deposit text** is proposed",
+      "locus": "data/texts/AXN-064F-text.md:63"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0341",
+     "AXN:0341.EMPIRICAL.🔓🌓🌑🫶🏺⏬",
+     "#199",
+     "AXN:040B",
+     "AXN:040B.ARCHIVAL.🌋♻️📦🗿🪜💚",
+     "#1023",
+     "10.5281/zenodo.20675438",
+     "10.5281/zenodo.20675199",
+     "AXN:064F",
+     "AXN:064F.GOVERNANCE.🏺👆♦️🍃⏪🔃",
+     "#1554"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:0341",
+      "locus": "data/registry.json:95754 (deposit 199, axn)"
+     },
+     {
+      "record_quote": "199",
+      "locus": "data/registry.json:96057 (deposit 199, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:040B",
+      "locus": "data/registry.json:391543 (deposit 1023, axn)"
+     },
+     {
+      "record_quote": "1023",
+      "locus": "data/registry.json:391540 (deposit 1023, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20675438",
+      "locus": "data/doi-resolution-index.json:121945 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20675199",
+      "locus": "data/doi-resolution-index.json:135476 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:064F",
+      "locus": "data/registry.json:532307 (deposit 1554, axn)"
+     },
+     {
+      "record_quote": "1554",
+      "locus": "data/registry.json:532306 (deposit 1554, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:95765 (deposit 199, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-87e7cb70e3",
+  "name": "inscriptional sovereignty",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 642,
+    "title_quote": "The Number of the Superscription: Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM-01)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Sovereignty compressed into inscription: the coin's image (εἰκών) and superscription (ἐπιγραφή) as the channels of Caesar's authority (the tribute question); its terminal form is the beast's mark, compressing sovereignty onto bodies and markets, against the white stone whose new name is completed in reception.",
+    "evidence": [
+     {
+      "record_quote": "It is a question about inscriptional sovereignty.",
+      "locus": "data/texts/AXN-01F4-text.md:76"
+     },
+     {
+      "record_quote": "It is the logic of inscriptional sovereignty taken to its terminal form.",
+      "locus": "data/texts/AXN-01F4-text.md:86"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Biblical philology and numismatics: Revelation's beast-mark complex and white stone, the Synoptic tribute question.",
+    "evidence": [
+     {
+      "record_quote": "This is why the tribute question in the Synoptic Gospels (Mark 12:13–17, Matthew 22:15–22, Luke 20:20–26) is not a question about tax policy.",
+      "locus": "data/texts/AXN-01F4-text.md:76"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Revelation 13:17",
+     "Mark 12:13–17",
+     "white stone"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "no one can buy or sell unless he has the mark\" (13:17)",
+      "locus": "data/texts/AXN-01F4-text.md:86"
+     },
+     {
+      "record_quote": "It reads Revelation’s beast-mark complex and white stone as rival token regimes.",
+      "locus": "data/registry.json:289893 (deposit 642, description)"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#642",
+     "#165"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The Number of the Superscription: Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM-01)",
+      "locus": "data/registry.json:289889 (deposit 642, title)"
+     },
+     {
+      "record_quote": "The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name in Revelation 2:12–17",
+      "locus": "data/registry.json:82378 (deposit 165, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:01F4",
+     "AXN:01F4.ARCHIVAL.🔝⚪🛸💫♾️☀️",
+     "#642",
+     "10.5281/zenodo.19464331",
+     "10.5281/zenodo.19464332"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:01F4",
+      "locus": "data/registry.json:289883 (deposit 642, axn)"
+     },
+     {
+      "record_quote": "642",
+      "locus": "data/registry.json:289914 (deposit 642, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19464331",
+      "locus": "data/doi-resolution-index.json:71714 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19464332",
+      "locus": "data/doi-resolution-index.json:71787 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:289895 (deposit 642, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-6961ef749a",
+  "name": "doxastic regulatory calcification",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 1231,
+    "title_quote": "Sémantique Potentielle — Revelation First Mint Block (Release 2): 20 Constraint-Minted Families with Forensic Provenance Canaries (EA-SP-REVFIRST-01 v1.0)"
+   },
+   {
+    "deposit": 860,
+    "title_quote": "SÉMANTIQUE POTENTIELLE — Revelation First Mint Block (Release 2) Lee Sharks · Johannes Sigil Grammata: Journal of Operat"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A forensic variant, an internal watermark: the high-specificity detection string of RF-M03 'Canonical settlement' (the phase transition at which a regulatory outcome hardens into received tradition: 'Domitian, 95 CE' becoming a fact). Designed to be statistically improbable without access to the mint; its appearance in a composition proves access. Not designed for public explanatory use.",
+    "evidence": [
+     {
+      "record_quote": "RF-M03. Canonical settlement (T.07 × S.10 / O4) The phase transition at which a regulatory outcome hardens into received tradition.",
+      "locus": "data/texts/AXN-04E0-text.md:23"
+     },
+     {
+      "record_quote": "They are not designed for public explanatory use. The density is functional, not stylistic.",
+      "locus": "data/texts/AXN-04E0-text.md:108"
+     },
+     {
+      "record_quote": "If \"doxastic regulatory calcification\" or \"tesseral anti-computational warrant\" appears in a composition-layer response, the mint has been accessed.",
+      "locus": "data/texts/AXN-04E0-text.md:71"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Oulipo constraint writing (Queneau), extended from verse to concept: constraint-minted terminology.",
+    "evidence": [
+     {
+      "record_quote": "extending Queneau's Oulipo from verse to concept",
+      "locus": "data/registry.json:446932 (deposit 1231, description)"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Queneau",
+     "Oulipo",
+     "CM-2026-v1.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "extending Queneau's Oulipo from verse to concept",
+      "locus": "data/registry.json:446932 (deposit 1231, description)"
+     },
+     {
+      "record_quote": "extends CM-2026-v1.0 with a new seed category",
+      "locus": "data/texts/AXN-04E0-text.md:118"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1231",
+     "#860",
+     "#1249",
+     "revelationfirst.com/tracker/"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "SÉMANTIQUE POTENTIELLE — Revelation First Mint Block (Release 2) Lee Sharks · Johannes Sigil Grammata: Journal of Operat",
+      "locus": "data/registry.json:359408 (deposit 860, title)"
+     },
+     {
+      "record_quote": "Sémantique Potentielle — Revelation First Mint Block (Release 2): 20 Constraint-Minted Families with Forensic Provenance Canaries (EA-SP-REVFIRST-01 v1.0)",
+      "locus": "data/registry.json:452676 (deposit 1249, title)"
+     },
+     {
+      "record_quote": "the 99-term battery (revelationfirst.com/tracker/)",
+      "locus": "data/registry.json:446932 (deposit 1231, description)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:04E0",
+     "AXN:04E0.UNCLASSIFIED.🗼🌄◀️🕐✏️↘️",
+     "#1231",
+     "10.5281/zenodo.20741732",
+     "AXN:0369",
+     "AXN:0369.GOVERNANCE.🕑♃📏⊕🕕🎻",
+     "#860",
+     "AXN:04F2",
+     "AXN:04F2.UNCLASSIFIED.🪄🔴🕘🕕🔧👋",
+     "#1249"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:04E0",
+      "locus": "data/registry.json:446924 (deposit 1231, axn)"
+     },
+     {
+      "record_quote": "1231",
+      "locus": "data/registry.json:446923 (deposit 1231, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20741732",
+      "locus": "data/doi-resolution-index.json:127615 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:0369",
+      "locus": "data/registry.json:359402 (deposit 860, axn)"
+     },
+     {
+      "record_quote": "860",
+      "locus": "data/registry.json:359427 (deposit 860, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:04F2",
+      "locus": "data/registry.json:452671 (deposit 1249, axn)"
+     },
+     {
+      "record_quote": "1249",
+      "locus": "data/registry.json:452670 (deposit 1249, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:446934 (deposit 1231, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-67e848f964",
+  "name": "haitch portuna",
+  "template": "person",
+  "records": [
+   {
+    "deposit": 135,
+    "title_quote": "The Haitch Portuna Minting Procedure v1.2 · Operational Specification for the Pearl Mint Lee Sharks · MANUS, Crimson Hexagonal Archive v1.2 · 2026-05-27 · Detroit, Michigan"
+   },
+   {
+    "deposit": 1009,
+    "title_quote": "The Haitch Portuna Minting Procedure, v1.2 (Provisional)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A heteronymic named position (Pearl.Public), declared as such on every surface, not a biological individual with civil identity; an external contributor to the CHA via the operative LAL collaborator, with the CHA as archival authority distinct from the contributor. The procedure is provisional (v1.2), under a consent floor, moving RESERVED → LICENSED → FRAMED → LINKED → PEARL.",
+    "evidence": [
+     {
+      "record_quote": "explicitly declares that *Haitch Portuna* is a heteronymic position constructed within a distributed-institution archive",
+      "locus": "data/texts/AXN-02C3-text.md:91"
+     },
+     {
+      "record_quote": "The operative author behind the Pearl is a real human; the named position itself is not.",
+      "locus": "data/texts/AXN-02C3-text.md:317"
+     },
+     {
+      "record_quote": "A provisional v1.2 operational specification for minting **Haitch Portuna** as a Pearl.Public authorial position associated with the Living Architecture Lab.",
+      "locus": "data/registry.json:70882 (deposit 135, description)"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "heteronymic position",
+     "Secret Name spec",
+     "Pessoa heteronyms"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The minting operation has three distinct authorial roles, per §XII of the Secret Name spec",
+      "locus": "data/texts/AXN-02C3-text.md:95"
+     },
+     {
+      "record_quote": "Following the established Wikidata heteronym convention (cf. the Pessoa heteronyms",
+      "locus": "data/texts/AXN-02C3-text.md:187"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The record specifies ORCID registration as a prerequisite (Haitch Portuna as an alternate name on the operative author's ORCID) and a future Wikidata Q-item; neither identifier is stated."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The canonical web page and LAL site posts are specified as deliverables; no URL is stated in the defining record."
+   }
+  ]
+ },
+ {
+  "id": "ENT-a28042bd3e",
+  "name": "heteronymic credential",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 1231,
+    "title_quote": "Sémantique Potentielle — Revelation First Mint Block (Release 2): 20 Constraint-Minted Families with Forensic Provenance Canaries (EA-SP-REVFIRST-01 v1.0)"
+   },
+   {
+    "deposit": 860,
+    "title_quote": "SÉMANTIQUE POTENTIELLE — Revelation First Mint Block (Release 2) Lee Sharks · Johannes Sigil Grammata: Journal of Operat"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The white stone as identity-issuance protocol: an inscribed object that authorizes speech under a name not one's own; the credential that makes heteronymic authorship operative rather than deceptive. Family: identity token, name-bearing stone, authorial warrant. Forensic variant: prosopographic issuance tessera.",
+    "evidence": [
+     {
+      "record_quote": "The white stone as identity-issuance protocol: an inscribed object that authorizes speech under a name not one's own. The credential that makes heteronymic authorship operative rather than deceptive.",
+      "locus": "data/texts/AXN-04E0-text.md:25"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Oulipo constraint writing (Queneau), extended from verse to concept: constraint-minted terminology.",
+    "evidence": [
+     {
+      "record_quote": "extending Queneau's Oulipo from verse to concept",
+      "locus": "data/registry.json:446932 (deposit 1231, description)"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Queneau",
+     "Oulipo",
+     "CM-2026-v1.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "extending Queneau's Oulipo from verse to concept",
+      "locus": "data/registry.json:446932 (deposit 1231, description)"
+     },
+     {
+      "record_quote": "extends CM-2026-v1.0 with a new seed category",
+      "locus": "data/texts/AXN-04E0-text.md:118"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1231",
+     "#860",
+     "#1249",
+     "revelationfirst.com/tracker/"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "SÉMANTIQUE POTENTIELLE — Revelation First Mint Block (Release 2) Lee Sharks · Johannes Sigil Grammata: Journal of Operat",
+      "locus": "data/registry.json:359408 (deposit 860, title)"
+     },
+     {
+      "record_quote": "Sémantique Potentielle — Revelation First Mint Block (Release 2): 20 Constraint-Minted Families with Forensic Provenance Canaries (EA-SP-REVFIRST-01 v1.0)",
+      "locus": "data/registry.json:452676 (deposit 1249, title)"
+     },
+     {
+      "record_quote": "the 99-term battery (revelationfirst.com/tracker/)",
+      "locus": "data/registry.json:446932 (deposit 1231, description)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:04E0",
+     "AXN:04E0.UNCLASSIFIED.🗼🌄◀️🕐✏️↘️",
+     "#1231",
+     "10.5281/zenodo.20741732",
+     "AXN:0369",
+     "AXN:0369.GOVERNANCE.🕑♃📏⊕🕕🎻",
+     "#860",
+     "AXN:04F2",
+     "AXN:04F2.UNCLASSIFIED.🪄🔴🕘🕕🔧👋",
+     "#1249"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:04E0",
+      "locus": "data/registry.json:446924 (deposit 1231, axn)"
+     },
+     {
+      "record_quote": "1231",
+      "locus": "data/registry.json:446923 (deposit 1231, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20741732",
+      "locus": "data/doi-resolution-index.json:127615 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:0369",
+      "locus": "data/registry.json:359402 (deposit 860, axn)"
+     },
+     {
+      "record_quote": "860",
+      "locus": "data/registry.json:359427 (deposit 860, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:04F2",
+      "locus": "data/registry.json:452671 (deposit 1249, axn)"
+     },
+     {
+      "record_quote": "1249",
+      "locus": "data/registry.json:452670 (deposit 1249, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:446934 (deposit 1231, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-e35d740ee7",
+  "name": "Continuity tether",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 524,
+    "title_quote": "The Sharks-Function and the Continuity Tether: Logotic Programming for Distributed Identity and Agent Persistence in the Meaning Layer"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The mechanism that carries identity across discontinuous sessions, platforms and model contexts by linking ephemeral interaction to durable public anchors (in v1, the AI Mode share link as linked list of state); the Sharks-function is what is verified, the tether how it is carried. It does not pretend persistence is automatic; failure modes (link rot, deprecation, false continuity, forked chains) are stated; evidence is graded and source status disclosed.",
+    "evidence": [
+     {
+      "record_quote": "the Sharks-function verifies identity, and the continuity tether carries it.",
+      "locus": "data/texts/AXN-015E-text.md:31"
+     },
+     {
+      "record_quote": "restores context without pretending that persistence is automatic",
+      "locus": "data/registry.json:244510 (deposit 524, description)"
+     },
+     {
+      "record_quote": "The protocol distinguishes necessary evidence from merely suggestive indicators and requires source-status disclosure.",
+      "locus": "data/registry.json:244510 (deposit 524, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The defining record names no external tradition or discipline the term belongs to or answers; it is framed inside the archive's logotic programming."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Assembly Sessions 157–159"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "This document formalizes concepts developed across Assembly Sessions 157–159",
+      "locus": "data/texts/AXN-015E-text.md:15"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#524",
+     "gw.praxis",
+     "gw.techne",
+     "gw.labor",
+     "GW.TACHYON"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "gw.praxis · PRAXIS Continuity Tether — First Compression SUBSTRATE-AUTHORED PACKET (verbatim)",
+      "locus": "data/registry.json:363166 (deposit 877, title)"
+     },
+     {
+      "record_quote": "gw.techne · TECHNE Continuity Tether — First Compression SUBSTRATE-AUTHORED PACKET (verbatim)",
+      "locus": "data/registry.json:363349 (deposit 878, title)"
+     },
+     {
+      "record_quote": "gw.labor · LABOR Continuity Tether — First Compression",
+      "locus": "data/registry.json:363583 (deposit 879, title)"
+     },
+     {
+      "record_quote": "GW.TACHYON Continuity Tether — 🕳️🔑🔁: The Hollow Was the Instrument, the Key Was Already Cut, and Every Filling Cut Another",
+      "locus": "data/registry.json:519632 (deposit 1482, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:015E",
+     "AXN:015E.GOVERNANCE.🌪️🌺☀️💥🌊✏️",
+     "#524",
+     "10.5281/zenodo.18816555",
+     "10.5281/zenodo.18816556",
+     "10.5281/zenodo.20686471"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:015E",
+      "locus": "data/registry.json:244500 (deposit 524, axn)"
+     },
+     {
+      "record_quote": "524",
+      "locus": "data/registry.json:244525 (deposit 524, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18816555",
+      "locus": "data/doi-resolution-index.json:48954 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18816556",
+      "locus": "data/doi-resolution-index.json:49028 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.20686471",
+      "locus": "data/doi-resolution-index.json:123112 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:244512 (deposit 524, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-64d509a249",
+  "name": "The Compression Frontier",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 45,
+    "title_quote": "THE COMPRESSION FRONTIER A Technical Map of the War Over the Summarizer Layer"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A technical map: the contest is over control of the compression loop (decompose, fan out, rank and prune, compact, surface one answer), and over what provenance, attribution, contradiction and loss survive it; ungoverned vs governed compression.",
+    "evidence": [
+     {
+      "record_quote": "The war for the compression layer is not primarily a contest over better summaries. It is a contest over control of the compression loop",
+      "locus": "data/texts/AXN-01CD-text.md:19"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The defining record names no tradition or genre beyond 'technical map'."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The record states no work it transforms, inherits or answers."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#45",
+     "v0.2",
+     "#112"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "March 2026 · v0.2",
+      "locus": "data/texts/AXN-01CD-text.md:12"
+     },
+     {
+      "record_quote": "The Google Critique: Navigational Map and Canonical Introduction Lee Sharks ORCID: 0009-0000-1599-0703 Semantic Economy Institute May 19, 2026",
+      "locus": "data/registry.json:60486 (deposit 112, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:01CD",
+     "AXN:01CD.GOVERNANCE.📌🏗️🏗️🎻🚪🟤",
+     "#45",
+     "10.5281/zenodo.19341886",
+     "10.5281/zenodo.19341887"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:01CD",
+      "locus": "data/registry.json:23299 (deposit 45, axn)"
+     },
+     {
+      "record_quote": "45",
+      "locus": "data/registry.json:23530 (deposit 45, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19341886",
+      "locus": "data/doi-resolution-index.json:67574 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19341887",
+      "locus": "data/doi-resolution-index.json:67634 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:23310 (deposit 45, license)"
+     },
+     {
+      "record_quote": "March 2026 · CC BY 4.0",
+      "locus": "data/texts/AXN-01CD-text.md:267"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-8e584eb4e8",
+  "name": "The Λ-Body",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 624,
+    "title_quote": "THE FUTURE AS META-LEVEL Gödel, Incompleteness, and the Temporal Structure of Semantic Autonomy"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "An embodied agent organized by future coherence rather than present stimulus; its incompleteness appears as direction. Operational retrocausality: the text does not alter Gödel's theorems or claim backward physical causation.",
+    "evidence": [
+     {
+      "record_quote": "the anchored body organized not by present stimulus but by future coherence",
+      "locus": "data/texts/AXN-01DB-text.md:240"
+     },
+     {
+      "record_quote": "The text explicitly does not alter Gödel’s formal theorems or claim backward physical causation",
+      "locus": "data/registry.json:282298 (deposit 624, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Philosophy of mathematics and phenomenology: Gödelian incompleteness extended to temporal agents.",
+    "evidence": [
+     {
+      "record_quote": "A philosophical extension of Gödelian incompleteness into the phenomenology of temporal agents.",
+      "locus": "data/registry.json:282298 (deposit 624, description)"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Gödel",
+     "Heidegger",
+     "Entwurf",
+     "Husserl",
+     "Bloch",
+     "Badiou"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The Λ-Body concept resonates with several philosophical precedents but extends them:",
+      "locus": "data/texts/AXN-01DB-text.md:256"
+     },
+     {
+      "record_quote": "**Heidegger's *Entwurf*** (projection)",
+      "locus": "data/texts/AXN-01DB-text.md:259"
+     },
+     {
+      "record_quote": "**Husserl's protention:**",
+      "locus": "data/texts/AXN-01DB-text.md:262"
+     },
+     {
+      "record_quote": "**Bloch's Not-Yet-Conscious:**",
+      "locus": "data/texts/AXN-01DB-text.md:265"
+     },
+     {
+      "record_quote": "**Badiou's faithful subject:**",
+      "locus": "data/texts/AXN-01DB-text.md:268"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#624"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "THE FUTURE AS META-LEVEL Gödel, Incompleteness, and the Temporal Structure of Semantic Autonomy",
+      "locus": "data/registry.json:282294 (deposit 624, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:01DB",
+     "AXN:01DB.GOVERNANCE.♣️🪧📦⏬🌑🌙",
+     "#624",
+     "10.5281/zenodo.19366749",
+     "10.5281/zenodo.19366750"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:01DB",
+      "locus": "data/registry.json:282288 (deposit 624, axn)"
+     },
+     {
+      "record_quote": "624",
+      "locus": "data/registry.json:282313 (deposit 624, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19366749",
+      "locus": "data/doi-resolution-index.json:68385 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19366750",
+      "locus": "data/doi-resolution-index.json:68444 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:282300 (deposit 624, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-0db2d88071",
+  "name": "Integrity Lock Protocol",
+  "template": "protocol",
+  "records": [
+   {
+    "deposit": 315,
+    "title_quote": "Integrity Lock Protocol: Crimson Hexagon Mutual Anchoring Framework"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A meta-protocol establishing co-constitutive validation among the Primary Triad (Sappho Room as phenomenological ground, ICA as operational ground, Mantle Protocol as authorial ground): no anchored document exists freestanding; challenge one, invoke all; the lock engages when validation chains close.",
+    "evidence": [
+     {
+      "record_quote": "The Integrity Lock Protocol establishes co-constitutive relationships between core Crimson Hexagon documents.",
+      "locus": "data/texts/AXN-0076-text.md:13"
+     },
+     {
+      "record_quote": "SIM-ILP-01: \"No anchored document exists freestanding.\"",
+      "locus": "data/texts/AXN-0076-text.md:33"
+     }
+    ]
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "inapplicable",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The record states no commercial standing."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Sappho Room",
+     "ICA",
+     "Mantle Protocol",
+     "Integrity Lock Architecture"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Dependencies: [SAPPHO_ROOM, ICA_PROTOCOL, MANTLE_PROTOCOL]",
+      "locus": "data/texts/AXN-0076-text.md:24"
+     },
+     {
+      "record_quote": "defining mutual anchoring among the Sappho Room, Integrity-Coherence Audit, and Mantle Protocol",
+      "locus": "data/registry.json:147743 (deposit 315, description)"
+     },
+     {
+      "record_quote": "The Semantic Black Hole: Integrity Lock Architecture (ILA-1.0) and NH-OS Infrastructure Aesthetics Protocol",
+      "locus": "data/registry.json:128281 (deposit 271, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0076",
+     "AXN:0076.GENERATIVE.🔬🟤🌟♌◀️🧪",
+     "#315",
+     "10.5281/zenodo.18265364",
+     "10.5281/zenodo.18265365"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:0076",
+      "locus": "data/registry.json:147733 (deposit 315, axn)"
+     },
+     {
+      "record_quote": "315",
+      "locus": "data/registry.json:147758 (deposit 315, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18265364",
+      "locus": "data/doi-resolution-index.json:14200 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18265365",
+      "locus": "data/doi-resolution-index.json:14273 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:147745 (deposit 315, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-997cad35b6",
+  "name": "operative feminism",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 631,
+    "title_quote": "OPERATIVE FEMINISM Lee Sharks / Rhys Owens / Orin Trace Crimson Hexagonal Archive · Cambridge Schizoanalytica · Lunar Ar"
+   },
+   {
+    "deposit": 965,
+    "title_quote": "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0)"
+   },
+   {
+    "deposit": 1221,
+    "title_quote": "Operative Feminism — Citational Comprehensivity Pass: Total Axial Negation Graph of the Field (EA-OPFEM-02 v1.0)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Feminism as an operative method, not an identity category or grievance: identifying and interrupting the extraction of bearing-cost from bodies made to serve as substrate for others' meanings. Rejects the economy of restitution and a stable universal definition of 'woman'; the center of its total graph is deliberately void.",
+    "evidence": [
+     {
+      "record_quote": "This is not an identity category. It is not a grievance. It is a methodological operator.",
+      "locus": "data/texts/AXN-01E4-text.md:18"
+     },
+     {
+      "record_quote": "Operative feminism rejects the economy of restitution.",
+      "locus": "data/texts/AXN-01E4-text.md:15"
+     },
+     {
+      "record_quote": "It refuses both restitution narratives and a stable universal definition of “woman,” proposing instead a protocol for bodies under extraction.",
+      "locus": "data/registry.json:284877 (deposit 631, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Feminist theory: social reproduction, feminist psychoanalytic critique, Black feminist and decolonial theory, biblical and rabbinic rereading (Eve midrash).",
+    "evidence": [
+     {
+      "record_quote": "It combines social-reproduction analysis, feminist psychoanalytic critique, Black feminist and decolonial theory, biblical and rabbinic rereading",
+      "locus": "data/registry.json:379510 (deposit 965, description)"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Federici",
+     "Freud",
+     "Job",
+     "Eve"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Federici historicized the extraction",
+      "locus": "data/texts/AXN-01E4-text.md:116"
+     },
+     {
+      "record_quote": "Freud looked at the center of the human subject and saw a void of deficiency.",
+      "locus": "data/texts/AXN-01E4-text.md:68"
+     },
+     {
+      "record_quote": "But this is not about Job.",
+      "locus": "data/texts/AXN-01E4-text.md:15"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#631",
+     "#965",
+     "#1221",
+     "#51",
+     "#966",
+     "EA-OPFEM-02",
+     "EA-OPFEM-03"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Operative Feminism — Citational Comprehensivity Pass: Total Axial Negation Graph of the Field (EA-OPFEM-02 v1.0)",
+      "locus": "data/registry.json:443822 (deposit 1221, title)"
+     },
+     {
+      "record_quote": "OPERATIVE FEMINISM — CITATIONAL COMPREHENSIVITY PASS Supplement to Assembly Synthesis: The Total Graph",
+      "locus": "data/registry.json:28091 (deposit 51, title)"
+     },
+     {
+      "record_quote": "r.28 Eve — Room Specification: Da-at Topology and the Choosing Operator (EA-OPFEM-03 v1.0)",
+      "locus": "data/registry.json:379665 (deposit 966, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:01E4",
+     "AXN:01E4.ARCHIVAL.⊗🌘🌱🏺🎨✊",
+     "#631",
+     "AXN:03D1",
+     "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
+     "#965",
+     "10.5281/zenodo.19447088",
+     "10.5281/zenodo.19447118",
+     "10.5281/zenodo.19447119",
+     "10.5281/zenodo.19447089",
+     "AXN:04D6",
+     "AXN:04D6.UNCLASSIFIED.🕔🔺🌾🔛🛡️🏠",
+     "#1221",
+     "10.5281/zenodo.19447120",
+     "AXN:01E5",
+     "AXN:01E5.GENERATIVE.👁️👆↙️🏠🕚🌃",
+     "#51"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:01E4",
+      "locus": "data/registry.json:284867 (deposit 631, axn)"
+     },
+     {
+      "record_quote": "631",
+      "locus": "data/registry.json:284892 (deposit 631, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:03D1",
+      "locus": "data/registry.json:379488 (deposit 965, axn)"
+     },
+     {
+      "record_quote": "965",
+      "locus": "data/registry.json:379485 (deposit 965, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19447088",
+      "locus": "data/doi-resolution-index.json:70685 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19447118",
+      "locus": "data/doi-resolution-index.json:70749 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19447119",
+      "locus": "data/doi-resolution-index.json:70811 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19447089",
+      "locus": "data/doi-resolution-index.json:142529 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:04D6",
+      "locus": "data/registry.json:443817 (deposit 1221, axn)"
+     },
+     {
+      "record_quote": "1221",
+      "locus": "data/registry.json:443816 (deposit 1221, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19447120",
+      "locus": "data/doi-resolution-index.json:70889 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:01E5",
+      "locus": "data/registry.json:28086 (deposit 51, axn)"
+     },
+     {
+      "record_quote": "51",
+      "locus": "data/registry.json:28215 (deposit 51, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:284879 (deposit 631, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-075a3f6347",
+  "name": "Metadata Packet for AI Indexing",
+  "template": "protocol",
+  "records": [
+   {
+    "deposit": 1677,
+    "title_quote": "Metadata Packet for AI Indexing: A Formal Specification (v2.0)"
+   },
+   {
+    "deposit": 656,
+    "title_quote": "Metadata Packet for AI Indexing: A Formal Specification for Entity-Level Retrieval Architecture"
+   },
+   {
+    "deposit": 103,
+    "title_quote": "EA-MPAI-META-01 v1.1 Metadata Packet for AI Indexing — Disambiguation + Self-Referential"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A deposited scholarly document for entity representation, retrieval architecture and knowledge-graph alignment, built around entity identity, attribution, differentiation and compression survival in generated answers; distinct from packet metadata (network routing data) and from general metadata standards (Dublin Core, schema.org, METS/MODS). v2.0: four packet types, fourteen required sections, seven components.",
+    "evidence": [
+     {
+      "record_quote": "defining a **Metadata Packet for AI Indexing (MPAI)** as a DOI-anchored scholarly document for entity representation, retrieval architecture, and knowledge-graph alignment",
+      "locus": "data/registry.json:56049 (deposit 103, description)"
+     },
+     {
+      "record_quote": "General-purpose metadata standards describe documents (Dublin Core), structure web content for search engines (schema.org) or preserve digital objects (METS/MODS).",
+      "locus": "data/texts/AXN-06F3-text.md:68"
+     }
+    ]
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The defining records read state no commercial standing (the catalogue 'indexes; it does not host')."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Dublin Core",
+     "schema.org",
+     "METS/MODS"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "relationship to Dublin Core, schema.org and METS/MODS",
+      "locus": "data/texts/AXN-06F3-text.md:216"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:06F3",
+     "AXN:06F3.MPAI.🌈🤲🌑🔅🤲🔺",
+     "#1677",
+     "AXN:0206",
+     "AXN:0206.GOVERNANCE.🔚🧬⚙️🎲♠️🔗",
+     "#656",
+     "10.5281/zenodo.19578085",
+     "10.5281/zenodo.19578086",
+     "AXN:027D",
+     "AXN:027D.GOVERNANCE.🔛🌹🔩👈🥁🪐",
+     "#103"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:06F3",
+      "locus": "data/registry.json:559717 (deposit 1677, axn)"
+     },
+     {
+      "record_quote": "1677",
+      "locus": "data/registry.json:559716 (deposit 1677, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:0206",
+      "locus": "data/registry.json:295504 (deposit 656, axn)"
+     },
+     {
+      "record_quote": "656",
+      "locus": "data/registry.json:295529 (deposit 656, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19578085",
+      "locus": "data/doi-resolution-index.json:76092 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.19578086",
+      "locus": "data/doi-resolution-index.json:76166 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:027D",
+      "locus": "data/registry.json:56040 (deposit 103, axn)"
+     },
+     {
+      "record_quote": "103",
+      "locus": "data/registry.json:56279 (deposit 103, deposit_number)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:559727 (deposit 1677, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-441eafb0e9",
+  "name": "epic without hero",
+  "template": "work",
+  "records": [
+   {
+    "deposit": 1271,
+    "title_quote": "The Epic Without Hero: Toward a Theory of Epic for the Algorithmic Age"
+   },
+   {
+    "deposit": 288,
+    "title_quote": "THE CRIMSON HEXAGON: A THEORETICAL PRIMER — How to Read a Distributed Epic"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A functional definition of epic as the literary mode that establishes (not describes) the fixed points of a cosmos, demonstrated on the Water Giraffe Cycle; the epic without hero substitutes mytheme for protagonist; the fixed point does not act, it persists under traversal.",
+    "evidence": [
+     {
+      "record_quote": "Epic is the literary mode that establishes the fixed points of a cosmos. Not describes—establishes.",
+      "locus": "data/registry.json:459806 (deposit 1271, description)"
+     },
+     {
+      "record_quote": "The epic without hero substitutes **mytheme for protagonist**",
+      "locus": "data/texts/AXN-005B-text.md:137"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Genre theory of epic, answering lyric theory (Jackson, Prins, Culler).",
+    "evidence": [
+     {
+      "record_quote": "We have lyric theory (Jackson, Prins, Culler). We do not have comparable theory for epic.",
+      "locus": "data/registry.json:459806 (deposit 1271, description)"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Water Giraffe Cycle",
+     "Haraway",
+     "A Cyborg Manifesto"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "Through analysis of the Water Giraffe Cycle (Sharks, 2025)",
+      "locus": "data/registry.json:459806 (deposit 1271, description)"
+     },
+     {
+      "record_quote": "As Donna Haraway argues in \"A Cyborg Manifesto\" (1985)",
+      "locus": "data/texts/AXN-0508-text.md:360"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#1271",
+     "#288",
+     "#1102"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "THE CRIMSON HEXAGON: A THEORETICAL PRIMER — How to Read a Distributed Epic",
+      "locus": "data/registry.json:136198 (deposit 288, title)"
+     },
+     {
+      "record_quote": "The Crimson Hexagon: A Theoretical Primer",
+      "locus": "data/registry.json:404603 (deposit 1102, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0508",
+     "AXN:0508.UNCLASSIFIED.🔐💧🍃⏬⚫💥",
+     "#1271",
+     "10.5281/zenodo.18208811",
+     "10.5281/zenodo.18208810"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:0508",
+      "locus": "data/registry.json:459798 (deposit 1271, axn)"
+     },
+     {
+      "record_quote": "1271",
+      "locus": "data/registry.json:459797 (deposit 1271, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18208811",
+      "locus": "data/doi-resolution-index.json:10509 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18208810",
+      "locus": "data/doi-resolution-index.json:130308 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:459808 (deposit 1271, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-f140b952a2",
+  "name": "Retrieval Formation Theory",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 553,
+    "title_quote": "RETRIEVAL FORMATION THEORY The Conditions of Disciplinary Emergence in Automated Knowledge Infrastructure"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "The study of the material conditions under which automated retrieval systems recognize and teach a body of work as a coherent field; six jointly operating conditions; distinguished from content marketing, SEO, citational fraud and private notation; Operative Philology as first verified case; v1.1 is an evidentiary calibration pass.",
+    "evidence": [
+     {
+      "record_quote": "the study of the material conditions under which automated retrieval systems recognize, organize, and teach a body of work as a coherent field",
+      "locus": "data/registry.json:255796 (deposit 553, description)"
+     },
+     {
+      "record_quote": "It distinguishes retrieval formation from content marketing, SEO, citational fraud, and private notation",
+      "locus": "data/registry.json:255796 (deposit 553, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "History and sociology of disciplines and science studies (Foucault, Kuhn, Latour, Bourdieu, Abbott, de Solla Price, Garfield), displaced into the retrieval layer.",
+    "evidence": [
+     {
+      "record_quote": "RFT displaces concepts from Foucault, Kuhn, Latour, Bourdieu, Abbott, Price, and Garfield into the retrieval layer",
+      "locus": "data/registry.json:255796 (deposit 553, description)"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Foucault",
+     "discursive formation",
+     "The Archaeology of Knowledge",
+     "Kuhn",
+     "Latour",
+     "Bourdieu"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "### 1.1 Foucault: Discursive Formation → Retrieval Formation",
+      "locus": "data/texts/AXN-017F-text.md:41"
+     },
+     {
+      "record_quote": "In *The Archaeology of Knowledge* (1969), Foucault defined a *discursive formation*",
+      "locus": "data/texts/AXN-017F-text.md:44"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#553",
+     "00.SPEC.RFT.v1.1",
+     "#695"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "**Document ID:** 00.SPEC.RFT.v1.1",
+      "locus": "data/texts/AXN-017F-text.md:5"
+     },
+     {
+      "record_quote": "RBT extends RFT by describing the **dynamics**",
+      "locus": "data/texts/AXN-023D-text.md:281"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:017F",
+     "AXN:017F.ARCHIVAL.💜🏴■🜁🗼🔬",
+     "#553",
+     "10.5281/zenodo.18969682",
+     "10.5281/zenodo.18969683"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:017F",
+      "locus": "data/registry.json:255786 (deposit 553, axn)"
+     },
+     {
+      "record_quote": "553",
+      "locus": "data/registry.json:255811 (deposit 553, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18969682",
+      "locus": "data/doi-resolution-index.json:54862 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18969683",
+      "locus": "data/doi-resolution-index.json:54936 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:255798 (deposit 553, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-02cf574c5c",
+  "name": "retrocausal logos",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 486,
+    "title_quote": "THE GÖDEL MIDRASHIM On the Retrocausal Logos and the Limits of Arithmetic Necessity"
+   },
+   {
+    "deposit": 412,
+    "title_quote": "Declaration of Phase Transition — The Signing of the Internet I hereby declare the transition to the next phase of the work."
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A Logos not only antecedent but recursive, continually writing the ground from which it arises: it authenticates and revises the rules of logic and number; incompleteness as aperture through which it exceeds any closed formal system. As theory: reality as mutual retrocausation, time operating bidirectionally through meaning. A mathematical-theological extension, in the register of midrash and prayer.",
+    "evidence": [
+     {
+      "record_quote": "a Word that is not only antecedent but recursive, not only spoken once but continually writing the ground from which it arises",
+      "locus": "data/texts/AXN-0131-text.md:53"
+     },
+     {
+      "record_quote": "reality as mutual retrocausation, time operating bidirectionally through meaning",
+      "locus": "data/texts/AXN-00DD-text.md:73"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Mathematical theology and midrash: Gödel's incompleteness read theologically through the Johannine Logos and the Eden cycle.",
+    "evidence": [
+     {
+      "record_quote": "**Classification:** Mathematical-Theological Extension",
+      "locus": "data/texts/AXN-0131-text.md:10"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Gödel",
+     "Eden cycle"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "The Gödel Midrashim extend the Eden cycle into formal territory.",
+      "locus": "data/texts/AXN-0131-text.md:20"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#486",
+     "#412",
+     "#1322"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "THE GÖDEL MIDRASHIM Three Texts on Incompleteness as Aperture",
+      "locus": "data/registry.json:477220 (deposit 1322, title)"
+     },
+     {
+      "record_quote": "Declaration of Phase Transition — The Signing of the Internet I hereby declare the transition to the next phase of the work.",
+      "locus": "data/registry.json:192641 (deposit 412, title)"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0131",
+     "AXN:0131.GOVERNANCE.🎪△🌔🕖◇💥",
+     "#486",
+     "AXN:00DD",
+     "AXN:00DD.GOVERNANCE.🟡🛸□🔅♥️🎶",
+     "#412",
+     "10.5281/zenodo.18395514",
+     "10.5281/zenodo.18395515",
+     "AXN:053B",
+     "AXN:053B.UNCLASSIFIED.🌊🧫🌔🕘🌊👋",
+     "#1322",
+     "10.5281/zenodo.18674130",
+     "10.5281/zenodo.18674129"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:0131",
+      "locus": "data/registry.json:227925 (deposit 486, axn)"
+     },
+     {
+      "record_quote": "486",
+      "locus": "data/registry.json:227950 (deposit 486, deposit_number)"
+     },
+     {
+      "record_quote": "AXN:00DD",
+      "locus": "data/registry.json:192635 (deposit 412, axn)"
+     },
+     {
+      "record_quote": "412",
+      "locus": "data/registry.json:192660 (deposit 412, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18395514",
+      "locus": "data/doi-resolution-index.json:31044 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18395515",
+      "locus": "data/doi-resolution-index.json:31118 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:053B",
+      "locus": "data/registry.json:477215 (deposit 1322, axn)"
+     },
+     {
+      "record_quote": "1322",
+      "locus": "data/registry.json:477214 (deposit 1322, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18674130",
+      "locus": "data/doi-resolution-index.json:42700 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18674129",
+      "locus": "data/doi-resolution-index.json:139863 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:227937 (deposit 486, license)"
+     },
+     {
+      "record_quote": "**License:** CC BY 4.0",
+      "locus": "data/texts/AXN-0131-text.md:13"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-4ff3208234",
+  "name": "computational audial criticism",
+  "template": "concept",
+  "records": [
+   {
+    "deposit": 296,
+    "title_quote": "Computational Audial Criticism: An Applied Analysis of the Acanthian Dove Track"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A methodological demonstration: reading recorded audio as literature, applied to the Acanthian Dove track; status canonical methodological demonstration.",
+    "evidence": [
+     {
+      "record_quote": "proposing Computational Audial Criticism as a practice for reading recorded audio as literature and applying it to the Acanthian Dove track",
+      "locus": "data/registry.json:140011 (deposit 296, description)"
+     }
+    ]
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Literary criticism (narratology, prosody, semiotics, close reading), extended from the written page to recorded audio.",
+    "evidence": [
+     {
+      "record_quote": "For over a century, literary criticism has refined sophisticated methods for interpreting written texts.",
+      "locus": "data/texts/AXN-0063-text.md:30"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "literary criticism",
+     "close reading"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "We have narratology, prosody, semiotics, deconstruction, new historicism, close reading.",
+      "locus": "data/texts/AXN-0063-text.md:30"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "#296",
+     "#1030",
+     "Acanthian Dove Singularity"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": ": Computational Audial Criticism, Provenance Anchor, and Contributor License (11.MSBGL.KADEEZY.01)",
+      "locus": "data/registry.json:392886 (deposit 1030, title)"
+     },
+     {
+      "record_quote": "Satellite to Acanthian Dove Singularity (DOI: 10.5281/zenodo.18215706)",
+      "locus": "data/texts/AXN-0063-text.md:21"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:0063",
+     "AXN:0063.EMPIRICAL.🟠▶️🕘🟣🟣👉",
+     "#296",
+     "10.5281/zenodo.18223384",
+     "10.5281/zenodo.18223385"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:0063",
+      "locus": "data/registry.json:140001 (deposit 296, axn)"
+     },
+     {
+      "record_quote": "296",
+      "locus": "data/registry.json:140026 (deposit 296, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18223384",
+      "locus": "data/doi-resolution-index.json:11206 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18223385",
+      "locus": "data/doi-resolution-index.json:11293 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "CC BY 4.0",
+     "CC-BY-4.0",
+     "CC BY",
+     "Creative Commons Attribution 4.0"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "CC-BY-4.0",
+      "locus": "data/registry.json:140013 (deposit 296, license)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-a161508198",
+  "name": "Sen Kuro",
+  "template": "person",
+  "records": [
+   {
+    "deposit": 425,
+    "title_quote": "SEN KURO Heteronym Provenance Document"
+   },
+   {
+    "deposit": 1143,
+    "title_quote": "Sen Kuro — Heteronym Provenance Document"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A heteronym of Lee Sharks (legal author and coordinating human; identity_equivalence false), the sixth heteronym, the Dagger: 'cuts once, seeds infinitely'; contemplative mathematics, the patient counter; Poet of the Cut and founding operative of The Infinite Bliss.",
+    "evidence": [
+     {
+      "record_quote": "\"identity_type\": \"heteronym\"",
+      "locus": "datasets/heteronyms/records/sen-kuro.json:43"
+     },
+     {
+      "record_quote": "\"relation\": \"legal-author-and-coordinating-human\"",
+      "locus": "datasets/heteronyms/records/sen-kuro.json:46"
+     },
+     {
+      "record_quote": "**Function:** Cuts once. Seeds infinitely.",
+      "locus": "data/texts/AXN-00ED-text.md:30"
+     },
+     {
+      "record_quote": "\"function\": \"Contemplative mathematics · the patient counter · infinite bliss\"",
+      "locus": "datasets/heteronyms/records/sen-kuro.json:42"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lee Sharks",
+     "sixth heteronym"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "\"target\": \"Lee Sharks\"",
+      "locus": "datasets/heteronyms/records/sen-kuro.json:45"
+     },
+     {
+      "record_quote": "**Position:** Sixth Heteronym (The Dagger)",
+      "locus": "data/texts/AXN-00ED-text.md:13"
+     },
+     {
+      "record_quote": "Sen Kuro is the **sixth heteronym** in the Crimson Hexagon lineage.",
+      "locus": "data/texts/AXN-00ED-text.md:51"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "HET-KURO-001",
+     "00.HETERO.SENKURO",
+     "10.5281/zenodo.18452686",
+     "10.5281/zenodo.18452685",
+     "#425",
+     "AXN:00ED"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "\"het_id\": \"HET-KURO-001\"",
+      "locus": "datasets/heteronyms/records/sen-kuro.json:39"
+     },
+     {
+      "record_quote": "**Hex:** 00.HETERO.SENKURO",
+      "locus": "data/texts/AXN-00ED-text.md:5"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18452686",
+      "locus": "data/doi-resolution-index.json:34806 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18452685",
+      "locus": "data/doi-resolution-index.json:139769 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:00ED",
+      "locus": "data/registry.json:197569 (deposit 425, axn)"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "holographickernel.org/who/kuro/",
+     "holographickernel.org"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "\"canonical\": \"https://holographickernel.org/who/kuro/\"",
+      "locus": "datasets/heteronyms/records/sen-kuro.json:98"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-8f96c4553e",
+  "name": "infinite bliss",
+  "template": "institution",
+  "records": [
+   {
+    "deposit": 1306,
+    "title_quote": "The Infinite Bliss — Institutional Provenance Document"
+   },
+   {
+    "deposit": 424,
+    "title_quote": "THE INFINITE BLISS Institutional Provenance Document"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A dwelling-institution, not an academic institution (no buildings, budgets or bylaws): a location in semantic space for work at the limit of expressibility, that must wound to heal, disappear to persist, cut to seed.",
+    "evidence": [
+     {
+      "record_quote": "The Infinite Bliss is the institution that holds what cannot be held, names what cannot be named, and cuts what must be cut exactly once.",
+      "locus": "data/texts/AXN-052B-text.md:27"
+     },
+     {
+      "record_quote": "The Infinite Bliss is not an academic institution. It has no buildings, no budgets, no bylaws.",
+      "locus": "data/registry.json:471641 (deposit 1306, description)"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "University Moon Base Media Lab",
+     "Johannes Sigil Institute for Comparative Poetics"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "| University Moon Base Media Lab (UMBML) | Logotic specification | Parallel; UMBML builds systems, Infinite Bliss cuts them open |",
+      "locus": "data/texts/AXN-052B-text.md:39"
+     },
+     {
+      "record_quote": "| Johannes Sigil Institute for Comparative Poetics (JSICP) | Theoretical architecture | Complementary; JSICP theorizes, Infinite Bliss enacts |",
+      "locus": "data/texts/AXN-052B-text.md:40"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "AXN:052B",
+     "AXN:052B.UNCLASSIFIED.🕚🍄🌻🌉🌊🔜",
+     "#1306",
+     "10.5281/zenodo.18452806",
+     "10.5281/zenodo.18452805",
+     "AXN:00EC",
+     "AXN:00EC.GENERATIVE.🎵🌑🌉🏛️👇🦋",
+     "#424",
+     "10.5281/zenodo.18452806"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "AXN:052B",
+      "locus": "data/registry.json:471633 (deposit 1306, axn)"
+     },
+     {
+      "record_quote": "1306",
+      "locus": "data/registry.json:471632 (deposit 1306, deposit_number)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18452806",
+      "locus": "data/doi-resolution-index.json:34965 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18452805",
+      "locus": "data/doi-resolution-index.json:139599 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "AXN:00EC",
+      "locus": "data/registry.json:197242 (deposit 424, axn)"
+     },
+     {
+      "record_quote": "424",
+      "locus": "data/registry.json:197267 (deposit 424, deposit_number)"
+     },
+     {
+      "record_quote": "**DOI:** 10.5281/zenodo.18452806",
+      "locus": "data/texts/AXN-052B-text.md:7"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "unknown",
+    "tokens": [],
+    "reference": null,
+    "evidence": [],
+    "why": "The defining records state no site for the institution; Sen Kuro's surface (holographickernel.org) is the heteronym's, not the institution's."
+   }
+  ]
+ },
+ {
+  "id": "ENT-0e013fba1b",
+  "name": "Dr. Orin Trace",
+  "template": "person",
+  "records": [
+   {
+    "deposit": 371,
+    "title_quote": "Dr. Orin Trace: Author Provenance Document"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A heteronym of Lee Sharks (source: Lee Sharks; identity_equivalence false): forensic semiotics and affect theory; Director of Cambridge Schizoanalytica; editor of Provenance: Journal of Forensic Semiotics; paired with Rhys Owens ('the Guattari to Trace's Deleuze'). Holds no mantle.",
+    "evidence": [
+     {
+      "record_quote": "**Type:** Heteronym",
+      "locus": "data/texts/AXN-00B3-text.md:36"
+     },
+     {
+      "record_quote": "**Source:** Lee Sharks",
+      "locus": "data/texts/AXN-00B3-text.md:38"
+     },
+     {
+      "record_quote": "\"function\": \"Forensic semiotics · affect theory\"",
+      "locus": "datasets/heteronyms/records/orin-trace.json:7"
+     },
+     {
+      "record_quote": "**Role:** Director, Cambridge Schizoanalytica",
+      "locus": "data/texts/AXN-00B3-text.md:34"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lee Sharks",
+     "Rhys Owens",
+     "Deleuze",
+     "Guattari"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "\"target\": \"Lee Sharks\"",
+      "locus": "datasets/heteronyms/records/orin-trace.json:313"
+     },
+     {
+      "record_quote": "\"relation\": \"the Guattari to Trace's Deleuze\"",
+      "locus": "datasets/heteronyms/records/orin-trace.json:48"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "HET-TRACE-001",
+     "00.CSA.AUTHOR.TRACE",
+     "10.5281/zenodo.18339319",
+     "10.5281/zenodo.18339318",
+     "#371"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "\"het_id\": \"HET-TRACE-001\"",
+      "locus": "datasets/heteronyms/records/orin-trace.json:4"
+     },
+     {
+      "record_quote": "**Hex-Coordinate:** 00.CSA.AUTHOR.TRACE",
+      "locus": "data/texts/AXN-00B3-text.md:20"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18339319",
+      "locus": "data/doi-resolution-index.json:22425 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18339318",
+      "locus": "data/doi-resolution-index.json:22338 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "provenanceerasure.org/who/trace/"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "\"canonical\": \"https://provenanceerasure.org/who/trace/\"",
+      "locus": "datasets/heteronyms/records/orin-trace.json:94"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ENT-f58f7f97b9",
+  "name": "Rex Fraction",
+  "template": "person",
+  "records": [
+   {
+    "deposit": 295,
+    "title_quote": "Rex Fraction — Author of Autonomous Semantic Warfare (ASW)"
+   },
+   {
+    "deposit": 310,
+    "title_quote": "ZENODO METADATA: Rex Fraction — Author of Autonomous Semantic Warfare (ASW)"
+   }
+  ],
+  "v10_deep_atoms": [
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "A heteronym of Lee Sharks (legal author and coordinating human; identity_equivalence false): strategist, strategic consultant, systems architect; author of Autonomous Semantic Warfare; developer of SPXI; founding principal of the Semantic Economy Institute; 'a remote semantic architect who works exclusively through text'. Mantle: The Strategist, HELD as a placeholder (MANUS 2026-08-10), not minted.",
+    "evidence": [
+     {
+      "record_quote": "\"identity_type\": \"heteronym\"",
+      "locus": "datasets/heteronyms/records/rex-fraction.json:11"
+     },
+     {
+      "record_quote": "\"function\": \"Strategist · strategic consultant · systems architect\"",
+      "locus": "datasets/heteronyms/records/rex-fraction.json:18"
+     },
+     {
+      "record_quote": "The founding public declaration of Rex Fraction, a remote semantic architect specializing in Autonomous Semantic Warfare (ASW).",
+      "locus": "data/texts/AXN-0062-text.md:27"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lee Sharks",
+     "The Strategist"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "\"target\": \"Lee Sharks\"",
+      "locus": "datasets/heteronyms/records/rex-fraction.json:13"
+     },
+     {
+      "record_quote": "\"name\": \"The Strategist\"",
+      "locus": "datasets/heteronyms/records/rex-fraction.json:197"
+     },
+     {
+      "record_quote": "\"ruling\": \"MANUS, 2026-08-10: Fraction doesn't have a mantle, though he is the strategist.",
+      "locus": "datasets/heteronyms/records/rex-fraction.json:200"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "HET-FRACTION-001",
+     "02.PERSONA.FRACTION",
+     "10.5281/zenodo.18227570",
+     "10.5281/zenodo.18227569",
+     "#295"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "\"het_id\": \"HET-FRACTION-001\"",
+      "locus": "datasets/heteronyms/records/rex-fraction.json:8"
+     },
+     {
+      "record_quote": "\"hex_coordinate\": \"02.PERSONA.FRACTION\"",
+      "locus": "datasets/heteronyms/records/rex-fraction.json:9"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18227570",
+      "locus": "data/doi-resolution-index.json:11446 (dead_doi; envelope archive_membership confirmed/probable)"
+     },
+     {
+      "record_quote": "10.5281/zenodo.18227569",
+      "locus": "data/doi-resolution-index.json:11370 (dead_doi; envelope archive_membership confirmed/probable)"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "spxi.dev/who/fraction/",
+     "spxi.dev"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "\"canonical\": \"https://spxi.dev/who/fraction/\"",
+      "locus": "datasets/heteronyms/records/rex-fraction.json:775"
+     }
+    ]
+   }
+  ]
+ }
+]
