@@ -1,8 +1,8 @@
 {
- "derived_from": "EA-WG-CAPTURES-01 v12.310",
+ "derived_from": "EA-WG-CAPTURES-01 v12.311",
  "ruling": "Lee Sharks, 2026-10-15: target is the main anchor; no fidelity score on the wrong entity.",
  "name": "Observation-to-entity relations",
- "count": 949,
+ "count": 950,
  "reached_kinds": [
   "same",
   "weakened",
@@ -15484,7 +15484,7 @@
    "q": "johannes sigil \"final time\"",
    "target": [
     {
-     "ent": "ENT-5d54671305",
+     "ent": "ENT-d479a78c9e",
      "basis": "address"
     },
     {
@@ -15507,7 +15507,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-5d54671305",
+    "against": "ENT-d479a78c9e",
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
@@ -15560,7 +15560,7 @@
    "q": "tell me about jack feist and \"the final time\"",
    "target": [
     {
-     "ent": "ENT-5d54671305",
+     "ent": "ENT-d479a78c9e",
      "basis": "address"
     },
     {
@@ -15583,7 +15583,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-5d54671305",
+    "against": "ENT-d479a78c9e",
     "per_target": 0.0,
     "per_recorded": 0.0,
     "per_elements": 0.0,
@@ -15600,7 +15600,7 @@
    "q": "jack feist \"the final time\"",
    "target": [
     {
-     "ent": "ENT-5d54671305",
+     "ent": "ENT-d479a78c9e",
      "basis": "address"
     },
     {
@@ -15623,7 +15623,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-5d54671305",
+    "against": "ENT-d479a78c9e",
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
@@ -19172,7 +19172,7 @@
    "q": "THE FINAL TIME: Contingent Singularity and the Viability of the Next Dialectical Turn",
    "target": [
     {
-     "ent": "ENT-5d54671305",
+     "ent": "ENT-d479a78c9e",
      "basis": "address"
     }
    ],
@@ -19191,7 +19191,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-5d54671305",
+    "against": "ENT-d479a78c9e",
     "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
@@ -34601,6 +34601,46 @@
     "per_target": null,
     "per_recorded": 0.5,
     "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-eb1d371e354b",
+   "entry": "who-consigned-aio-retrieval-layer-aio-20261020",
+   "date": "2026-10-20",
+   "surface": "Google AI Overview",
+   "q": "who consigned the aio retrieval layer to its own collapsing ontology?",
+   "target": [
+    {
+     "ent": "ENT-9b0e5568af",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-046ab775d8",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'Lee Sharks consigned the AIO retrieval layer to its own collapsing ontology. [[1](https://www.google.com', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-9b0e5568af",
+    "per_target": 0.0,
+    "per_recorded": 0.0,
+    "per_elements": 0.0,
     "per_conflict": false,
     "reached_scored": false,
     "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
