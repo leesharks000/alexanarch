@@ -13,7 +13,7 @@
   "Network Preservation",
   "Tombstone Guarantee"
  ],
- "total_deposits": 1693,
+ "total_deposits": 1694,
  "deposits": [
   {
    "axn": "AXN:0001.GOVERNANCE.♍🜁🏴⌛🍃💫",
@@ -563829,6 +563829,242 @@
      "layer_3_content_hash": {
       "present": true,
       "canonical_hash": "b337e7cbd95e13ddbf48fcba9621ff1ef7a8bfc5951f21f04d2b30549c32fdaa",
+      "hash_in_body": false,
+      "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+     },
+     "layer_4_cross_signing": {
+      "present": false,
+      "cross_references_count": 0,
+      "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+     },
+     "layer_5_external_anchors": {
+      "present": true,
+      "wikidata_qid_count": 0,
+      "external_doi_count": 0,
+      "orcid_present": true
+     }
+    },
+    "overall_conformance": "partial"
+   }
+  },
+  {
+   "deposit_number": 1694,
+   "axn": "AXN:0704.DATASET.⚡👁️🏁💛👈🪸",
+   "hex": "0704",
+   "family": "DATASET",
+   "emoji": "⚡👁️🏁💛👈🪸",
+   "hash": "1357f0cdb87bf9fd85e4dd001e228ca01226f4fa84b948c1bb5f9ae6399d4c87",
+   "title": "EA-PER-RECALC-01 — The Provenance Erasure Rate Recalculated across the Capture Registry: Method, Locations, Organization and Contents (946 Observations, PER-dim Rubric v1.1)",
+   "creator": "Sharks, Lee",
+   "date": "2026-10-20",
+   "description": "The Provenance Erasure Rate (PER) of the AI Overview Capture Registry (EA-WG-CAPTURES-01), recalculated across all 946 observations between 15 and 20 October 2026, described and rehearsed: the historical scalar re-derived from its four-unit vector (69 observations on 2026-10-15, 38 more on 2026-10-20, and derived at seating from then on); the score taken against the target, with substitution as total erasure; the dimensional PER of #1469 (PER-M, PER-C, PER-D) scored under atom sets standardised by entity type (rubric v1.0), the condition #1469 set for cross-entity comparison; and the deep dimension re-read as the entity's purpose and commitments (rubric v1.1), with inversions and standing substitutions recorded. 786 observations scored, 119 with the target absent, 6 ABN, 29 with no atom set, 6 controls; PER 0.531 (M 0.40, C 0.55, D 0.65); 179 inversions, 135 standing substitutions, 68 tombstone pointers. The historical scalar and the v1.0 reading are kept beside the current one on every observation. Where the recalculation is, how it was made, what a page shows, its predecessors (#716, #1421, #1469, #1530, #1536, #740), what is not yet in it, and the scores by gate, entity type and surface.",
+   "content_type": "Dataset; the description of the recalculation of the Provenance Erasure Rate across the AI Overview Capture Registry, with the scores rehearsed",
+   "license": "CC-BY-4.0",
+   "substrate": "AI-assisted. The scalar repair, the entity layer, the rubric, both calibrations, the entity passes, the retargeting and both observation passes were carried out in session by TACHYON (Claude, Anthropic) and parallel Claude readers under MANUS (Lee Sharks) direction, each reader's brief, batch and output kept; every quoted span checked verbatim by script; every score computed by script, never by a reader. Rubric v1.0 was revised on review (ChatGPT, 2026-10-19), each point verified against #1469 and #1536 before it was taken. This description was drafted in session from the registry, the rubric and the pass files, circulated for review (ChatGPT, 2026-10-20), and revised on its report after each point was verified against the data; the scalar repair it called for (v12.307) was made before deposit, on Lee Sharks's ruling. Every reader in every pass was a Claude instance.",
+   "methodology": "Four sources: the registry (data/EA-WG-CAPTURES-01.json, v12.307), the rubric (rebuild/capture-registry/per-atoms/templates.json, v1.0 and v1.1), the atom sets (data/per-atom-sets.json), and the pass files (calibrations, entity passes, retargeting, observation passes) under rebuild/capture-registry/per-atoms/. Readers read atoms with verbatim spans; every span and every record quote was checked by script (7,823 and 5,895 record quotes; 1,800 PER-D spans; 0 misses); scores were computed by script, never by a reader. Two calibrations of ten observations each were scored by two readers blind to each other's output. Every figure in §7 was recomputed from the registry file at the anchor commit d02b5a3ca8a. The rulings governing each pass are quoted verbatim with their times. Every reader was a Claude instance.",
+   "falsification_conditions": "The recalculation is falsified at an observation if its stored scores do not follow from its recorded atoms under the rubric version it names, if a present atom's span is not verbatim in the transcript, or if an atom's reference is not the record's own words at the locus given; at the historical scalar if it disagrees with its four-unit vector; at a file if its bytes or SHA-256 differ from §2 at the anchor commit; at §7 if a figure does not reproduce from the registry file.",
+   "root_axn": "AXN:0704.DATASET",
+   "axn_schema_version": "v2",
+   "protocol_version": "alexanarch-deposit-protocol/v1",
+   "axn_canonical": "1357f0cdb87bf9fd85e4dd001e228ca01226f4fa84b948c1bb5f9ae6399d4c87",
+   "clusters": [
+    "Elemental",
+    "Navigational",
+    "Terminal",
+    "Signal",
+    "Gestural",
+    "Organic"
+   ],
+   "axn_reading": "Force -> Search -> Closure -> Alarm -> Touch -> Growth",
+   "minted_at": "2026-10-20T13:12:43Z",
+   "status": "ACTIVE",
+   "status_authorial": "SELF_SERVE_MINTED",
+   "full_text_path": "/data/texts/AXN-0704-text.md",
+   "wiki_article": "EA-PER-RECALC-01 is the description and rehearsal of the recalculation of the Provenance Erasure Rate (PER) across the AI Overview Capture Registry of the Crimson Hexagonal Archive, deposited by Lee Sharks on 20 October 2026. PER, defined in May 2026 (#716), measures how much of a source's provenance a machine composition loses; the registry had carried it as a four-unit scalar. Between 15 and 20 October all 946 observations were recalculated in five passes: the scalar re-derived from its vector (69 observations, then 38 more, after which the scalar is derived at seating); the score taken against the target, with substitution as total erasure; the dimensional PER of #1469, PER-M, PER-C and PER-D, scored under atom sets standardised by entity type, the condition #1469 had set for comparing entities; and the deep dimension re-read as an entity's purpose and commitments, with inversions and standing substitutions recorded. Readers recorded every present atom with a verbatim span, checked by script, and scripts computed every score. At registry v12.307, 786 observations are scored, at PER 0.531 (PER-M 0.40, PER-C 0.55, PER-D 0.65), with 179 inversions, 135 standing substitutions and 68 tombstone pointers. The historical scalar and the earlier rubric reading stand beside the current score on every observation. The deposit gives the files with their hashes, the rulings verbatim, the calibrations, the scores by gate, entity type and surface, and two worked observations: the SPXI event of 14 August 2026 and the quoted 'secret book of walt' Overview of 19 October 2026, classed as ontological erasure.",
+   "wiki_status": "in-session",
+   "entities": [
+    {
+     "subject": "EA-PER-RECALC-01 — The Provenance Erasure Rate Recalculated across the Capture Registry: Method, Loc",
+     "predicate": "created_by",
+     "object": "Sharks, Lee",
+     "type": "work",
+     "evidence_status": "observed"
+    },
+    {
+     "subject": "EA-PER-RECALC-01 — The Provenance Erasure Rate Recalculated across the Capture Registry: Method, Loc",
+     "predicate": "is_type",
+     "object": "Dataset; the description of the recalculation of the Provenance Erasure Rate across the AI Overview Capture Registry, with the scores rehearsed",
+     "type": "work",
+     "evidence_status": "observed"
+    },
+    {
+     "subject": "EA-PER-RECALC-01 — The Provenance Erasure Rate Recalculated across the Capture Registry: Method, Loc",
+     "predicate": "belongs_to_family",
+     "object": "DATASET",
+     "type": "work",
+     "evidence_status": "observed"
+    },
+    {
+     "subject": "EA-PER-RECALC-01 — The Provenance Erasure Rate Recalculated across the Capture Registry: Method, Loc",
+     "predicate": "is_part_of",
+     "object": "Crimson Hexagonal Archive",
+     "type": "work",
+     "evidence_status": "observed"
+    }
+   ],
+   "entity_status": "provisional",
+   "defines_concepts": [
+    {
+     "term": "inversion (PER-D)",
+     "type": "concept",
+     "definition": "In the dimensional Provenance Erasure Rate (rubric v1.1), an element of an entity (its licence, name, identifier, framework or claim) carried in a composition in order to devalue the entity, set it against its own purpose, or offer another operation in its place; the atom so used is absent, and the inversion is recorded with its span and the relation it reverses (EA-PER-RECALC-01, #1694)."
+    },
+    {
+     "term": "standing substitution",
+     "type": "concept",
+     "definition": "In the dimensional Provenance Erasure Rate (rubric v1.1), a composition's evaluation of an entity by its standing (licence, venue, peer review, credential, recognition, affiliation, self-publication, popularity) in place of its evidence, its argument or its beauty, recorded with the proxy, the span and what it displaced; beauty displaced is recorded only (EA-PER-RECALC-01, #1694)."
+    },
+    {
+     "term": "proximal substitution",
+     "type": "concept",
+     "definition": "A composition that reaches an entity's name and describes the entity's own companion, surface or retrieval apparatus in its place, as when the quoted 'secret book of walt' Overview of 2026-10-19 described the Book of Life (#685) as the work; a reached kind decided by reading only, scored as total erasure (EA-PER-RECALC-01, #1694)."
+    },
+    {
+     "term": "ontological erasure",
+     "type": "concept",
+     "definition": "The class of a substitution under full availability: the composition keeps the entity's name and composes what is adjacent to it while every availability condition shows the entity was there to be reached; it scores 1.00 and is distinct from ABN, which asserts the entity does not exist (EA-PER-RECALC-01, #1694)."
+    },
+    {
+     "term": "tombstone pointer",
+     "type": "concept",
+     "definition": "A composition's presentation of a severed record as live: a Zenodo DOI or record of the Crimson Hexagonal Archive, severed on 2026-06-19, offered as a resource to open; the identifier atom is absent and the pointer is recorded (EA-PER-RECALC-01, #1694)."
+    }
+   ],
+   "orcid": "0009-0000-1599-0703",
+   "version": "v1.0",
+   "keywords": [
+    "Provenance Erasure Rate",
+    "PER",
+    "PER-M",
+    "PER-C",
+    "PER-D",
+    "dimensional PER",
+    "atom set",
+    "entity type",
+    "substitution",
+    "proximal substitution",
+    "ontological erasure",
+    "inversion",
+    "standing substitution",
+    "tombstone pointer",
+    "AI Overview Capture Registry",
+    "EA-WG-CAPTURES-01",
+    "Crimson Hexagonal Archive",
+    "Lee Sharks"
+   ],
+   "related_identifiers_raw": "https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json — the registry (v12.307)\nhttps://www.alexanarch.org/captures/ — the gallery, every observation with its scores\nhttps://www.alexanarch.org/data/per-atom-sets.json — the atom sets\nhttps://github.com/leesharks000/alexanarch/blob/main/rebuild/capture-registry/per-atoms/templates.json — the rubric (v1.0 and v1.1)\nhttps://github.com/leesharks000/alexanarch/tree/main/rebuild/capture-registry/per-atoms — the calibrations, entity passes, retargeting and observation passes\nhttps://www.alexanarch.org/s/records/716/ — Provenance Erasure Rate\nhttps://www.alexanarch.org/s/records/1469/ — The Three Dimensions of Provenance Erasure\nhttps://www.alexanarch.org/s/records/1530/ — Self-Audit Module v3.2\nhttps://www.alexanarch.org/s/records/1536/ — Registering an Operator: PER Factored\nhttps://www.alexanarch.org/s/records/1684/ — EA-PREDICTION-INDEX-01\nhttps://www.alexanarch.org/s/records/1687/ — EA-HEXAGON-ENTER-01",
+   "mint_source": {
+    "kind": "github_issue",
+    "issue_number": 0,
+    "repository": "leesharks000/alexanarch",
+    "minted_by_workflow": ".github/workflows/mint-axn.yml",
+    "minted_by_script": "scripts/mint_deposit.py",
+    "minted_via": "self_serve_validated_pr"
+   },
+   "body_status": {
+    "class": "full",
+    "lacuna": false,
+    "recovery_status": "COMPLETE",
+    "residual_chars": 42788,
+    "audited_at": "2026-10-20T13:12:43Z",
+    "audit_version": "mint-time-declaration"
+   },
+   "related_deposits": [
+    {
+     "deposit": 716,
+     "relation": "Provenance Erasure Rate: the metric recalculated"
+    },
+    {
+     "deposit": 1469,
+     "relation": "The Three Dimensions of Provenance Erasure: the dimensions and rules, and the condition for cross-entity comparison this deposit meets"
+    },
+    {
+     "deposit": 1530,
+     "relation": "Self-Audit Module v3.2 §2: ABN, the Atomic Token Rule, Measurement Sovereignty"
+    },
+    {
+     "deposit": 1536,
+     "relation": "Registering an Operator: PER Factored, the floor never to report a scalar where ABN = 1"
+    },
+    {
+     "deposit": 740,
+     "relation": "The Excluded Entity §2.3: compositional substitution, from which the availability conditions are read"
+    },
+    {
+     "deposit": 1421,
+     "relation": "PER specified as a comparative programme"
+    },
+    {
+     "deposit": 1676,
+     "relation": "the AI Overview Capture Registry, last deposited at v12.167"
+    },
+    {
+     "deposit": 1684,
+     "relation": "EA-PREDICTION-INDEX-01, a companion description of the same form"
+    },
+    {
+     "deposit": 1687,
+     "relation": "EA-HEXAGON-ENTER-01, a companion description of the same form"
+    }
+   ],
+   "concepts_attested_none": false,
+   "related_attested_none": false,
+   "lexical_attested_none": false,
+   "references_concepts": [
+    "Crimson Hexagonal Archive",
+    "Fractal Navigation Map",
+    "Google AI Overview",
+    "In the Crimson Hexagon",
+    "Lee Sharks",
+    "Observations",
+    "Provenance Erasure Rate",
+    "Rule 2",
+    "Rule 3",
+    "Rule 4",
+    "Rule 6",
+    "Semantic Economy",
+    "TACHYON",
+    "The AI",
+    "The Excluded Entity"
+   ],
+   "references_concept_count": 15,
+   "citations": [],
+   "wikidata_candidates": [],
+   "cha_cross_references": [],
+   "external_metadata_path": "/data/external-metadata/AXN-0704.json",
+   "spxi_audit": {
+    "spxi_protocol": "v0.2",
+    "validated_at": "2026-10-20T13:15:15.522531+00:00",
+    "layers": {
+     "layer_1_inscription_anchors": {
+      "present": false,
+      "anchors_found": [
+       "orcid",
+       "date"
+      ],
+      "anchor_count": 2,
+      "orcid_in_body": true,
+      "creator_in_body": false,
+      "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+     },
+     "layer_2_micro_kernels": {
+      "present": false,
+      "fenced_json_blocks": 0,
+      "json_ld_context_markers": 0
+     },
+     "layer_3_content_hash": {
+      "present": true,
+      "canonical_hash": "6be043f3fe7ad9301129dd10ef923b06c96f78497319d9da68b20fd8f30da3d4",
       "hash_in_body": false,
       "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
      },
