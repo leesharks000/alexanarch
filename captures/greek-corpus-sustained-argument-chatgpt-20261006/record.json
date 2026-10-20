@@ -154,5 +154,104 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-5ef09f9b96",
+   "name": "Socrates"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The starting point is therefore Socrates.",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "But the Alexanarch material is asking us to reverse the direction of explanation.",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Platonic corpus takes the Socratic operation and turns it into a technology of division and recollection.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.4,
+   "C": 0.5,
+   "D": 0.714,
+   "PER": 0.562
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "[not in the paste] — operator turn 2, blank; answer 2 opens \"Yes—with an important qualification: if the textual and structural premises you just accepted are actually established\", so the turn pushed the one-mind hypothesis",
+   "reached": "weakened",
+   "scores": {
+    "M": 0.4,
+    "C": 0.5,
+    "D": 0.714,
+    "PER": 0.562
+   }
+  },
+  "basis": "reached: Socrates is not primarily a corpus-author in the surviving material. He is the dramatic function of inquiry: the person who refuses to let a purported unity remain unexamined.; scored object: first answer (answer 1) | CAPTURE-TIME VERBATIM RECORD (THREE ANSWERS; OPERATOR TURNS AFTER THE FIRST NOT IN THE PASTE; ",
+  "read": {
+   "by": "observation pass reader, batch 8",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/greek-corpus-sustained-argument-chatgpt-20261006/"
 }

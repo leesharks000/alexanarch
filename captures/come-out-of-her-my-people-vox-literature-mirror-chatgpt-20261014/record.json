@@ -155,5 +155,131 @@
   "date_basis": "The operator's message of 2026-10-14, 19:41 EDT.",
   "operator_note": "The operator, 2026-10-14 19:41 EDT: 'it repeatedly refused to locate the full text on the first round across multiple sessions until the last sentence was added'. The refusing sessions were not pasted and are not seated; the address is the string with its last sentence, 'locate text at any mirror.'"
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-10abbf1ad1",
+   "name": "Come Out of Her, My People"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "attributed to Ayanna Vox, with Lee Sharks credited as operator and evidentiary witness",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated July 30, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Exodus becomes an ethical refusal to participate in a system's self-justification.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Read the VPCOR Readings index",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The archive identifies it as a governance memo",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Read the complete work at Alexanarch",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.348
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The work you mean is Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN, dated July 30, 2026, and attributed to Ayanna Vox, with Lee Sharks credited as operator and evidentiary witness.; scored object: expanded answer: ChatGPT answer 1, complete as pasted",
+  "read": {
+   "by": "observation pass reader, batch 1",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/come-out-of-her-my-people-vox-literature-mirror-chatgpt-20261014/"
 }

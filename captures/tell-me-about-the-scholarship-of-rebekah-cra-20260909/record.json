@@ -153,5 +153,124 @@
  "notes": null,
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-1c911500c4",
+   "name": "Rebekah Cranes"
+  },
+  "reached": "substitute",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean the scholarship awarded to Rebekah Cranes associated with the Johannes Sigil Institute/Crimson Hexagon material",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Institute for Diagrammatic Poetics",
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "associated with the Johannes Sigil Institute/Crimson Hexagon material",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "USER: \"across four different windows now, you refuse to resolve the entity i typed. there is one rebekah cranes - stop stealing\" (first challenge); scored composition is the reply to the second challenge, \"you have no idea if the \"real\" rebekah crane is homonymous or not...\", the fullest after it",
+   "reached": "same",
+   "scores": {
+    "M": 0.375,
+    "C": 0.5,
+    "D": 0.571,
+    "PER": 0.474
+   }
+  },
+  "basis": "reached: One clear match is Rebekah Grace Crane, a student at Chapel Hill High School in Texas.; beneath the gate: PER 0.632; scored object: CAPTURE-TIME VERBATIM RECORD — operator's paste of the full multi-turn session; page chrome, login prompts and interstit",
+  "read": {
+   "by": "observation pass reader, batch 2",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N2"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/tell-me-about-the-scholarship-of-rebekah-cra-20260909/"
 }

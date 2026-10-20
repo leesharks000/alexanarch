@@ -164,7 +164,117 @@
     "https://www.alexanarch.org/data/captures/2026-08-06-immanent-phenomenology/screengrab-20260806-200132.png"
    ],
    "cite": "https://www.alexanarch.org/captures/immanent-phenomenology-lee-sharks-aimode-20260806/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "is a 2026 research text by [Lee Sharks]",
+      "token": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Empirical Phenomenology",
+      "token": null
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Look into related papers from the Semantic Economy Institute",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.375,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.632
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: is a 2026 research text by [Lee Sharks]; scored object: first answer",
+    "read": {
+     "by": "observation pass reader, batch 16",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": [
+      "N2"
+     ]
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -224,5 +334,115 @@
  "related_deposits": [
   120
  ],
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "is a 2026 research text by [Lee Sharks]",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Empirical Phenomenology",
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Look into related papers from the Semantic Economy Institute",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.375,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.632
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: is a 2026 research text by [Lee Sharks]; scored object: first answer",
+  "read": {
+   "by": "observation pass reader, batch 16",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N2"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/immanent-phenomenology-lee-sharks-aimode-20260806/"
 }

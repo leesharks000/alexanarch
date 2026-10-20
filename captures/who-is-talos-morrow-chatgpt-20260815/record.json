@@ -73,7 +73,106 @@
     "truncated-by-interface"
    ],
    "obs_id": "OBS-3305b28712c1",
-   "cite": "https://www.alexanarch.org/captures/who-is-talos-morrow-chatgpt-20260815/"
+   "cite": "https://www.alexanarch.org/captures/who-is-talos-morrow-chatgpt-20260815/",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-9e8ea8d63d",
+     "name": "Talos Morrow"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Talos Morrow is a registered heteronym in the Crimson Hexagonal Archive",
+      "token": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The archive identifies Morrow with 'Logotic Programming; operators; threshold logic.'",
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Morrow is associated with the fictional/institutional University Moon Base Media Lab (UMB)",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "a registered heteronym in the Crimson Hexagonal Archive",
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The strongest evidence I found places Morrow inside the larger literary-technical project of poet and independent scholar Lee Sharks.",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "with a provenance DOI of 10.5281/zenodo.18317976",
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.286,
+     "C": 0.0,
+     "D": 0.286,
+     "PER": 0.222
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: Talos Morrow appears to be a literary/theoretical heteronym rather than a conventional biographical author.; scored object: visible excerpt (ChatGPT answer cut at the fold)",
+    "read": {
+     "by": "observation pass reader, batch 13",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -134,5 +233,104 @@
  "analysis": null,
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-9e8ea8d63d",
+   "name": "Talos Morrow"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Talos Morrow is a registered heteronym in the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The archive identifies Morrow with 'Logotic Programming; operators; threshold logic.'",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Morrow is associated with the fictional/institutional University Moon Base Media Lab (UMB)",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "a registered heteronym in the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The strongest evidence I found places Morrow inside the larger literary-technical project of poet and independent scholar Lee Sharks.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "with a provenance DOI of 10.5281/zenodo.18317976",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.286,
+   "C": 0.0,
+   "D": 0.286,
+   "PER": 0.222
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Talos Morrow appears to be a literary/theoretical heteronym rather than a conventional biographical author.; scored object: visible excerpt (ChatGPT answer cut at the fold)",
+  "read": {
+   "by": "observation pass reader, batch 13",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/who-is-talos-morrow-chatgpt-20260815/"
 }

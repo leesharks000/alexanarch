@@ -241,5 +241,122 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks appears in public records as an independent writer, poet, and researcher",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks published poetry—including Pearl and Other Poems",
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "“Lee Sharks” is both a person/authorial identity and the center of an elaborate literary project",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the New Human Operating System (NH-OS)",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "a large body of work has been deposited in the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "developed a system of heteronyms, inspired in part by the tradition of writers such as Fernando Pessoa",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.125,
+   "C": 0.0,
+   "D": 0.714,
+   "PER": 0.316
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Turn 2 (not in the paste); Answer 2 opens 'Yes. The distinction matters. My previous answer treated the material too much on its own terms', i.e. the turn corrected the first answer's frame. Best composition after it: Answer 2.",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.5,
+    "D": 0.714,
+    "PER": 0.368
+   }
+  },
+  "basis": "reached: Lee Sharks appears in public records as an independent writer, poet, and researcher whose work stretches from poetry into philosophy, artificial intelligence, semantics, and digital archives.; scored object: Answer 1 of six (ChatGPT, full answer as pasted; later operator turns not supplied)",
+  "read": {
+   "by": "observation pass reader, batch 18",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/story-of-lee-sharks-chatgpt-20261004/"
 }

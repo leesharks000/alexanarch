@@ -257,5 +257,115 @@
   "on": "2026-10-15",
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks appears to be building the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Negative of the Negative, v2",
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks appears to be building the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "His website, leesharks.com , presents his writing and research",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.375,
+   "C": 0.5,
+   "D": 0.714,
+   "PER": 0.526
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks appears to be building the Crimson Hexagonal Archive; scored object: Answer 1 of three (ChatGPT, full answer as pasted)",
+  "read": {
+   "by": "observation pass reader, batch 18",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N2"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/what-is-lee-sharks-building-chatgpt-20261010/"
 }

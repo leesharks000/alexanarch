@@ -185,5 +185,131 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-39a9142da2",
+   "name": "phase x"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Phase X research programme is a contemporary theoretical project developed by Lee Sharks, initially published in January 2026 under the name Johannes Sigil.",
+    "token": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Phase X: the Marxist research programme explained",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "initially published in January 2026 under the name Johannes Sigil",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Established manuscript fact: A substantial portion of the Second Manuscript is missing.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "start with Lee Sharks's The Phase X Program",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It attempts to extend Marx's theory of alienation",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks proposes that the missing material may have contained a transition connecting Marx's discussion of communism as fully developed humanism with his subsequent critique of Hegelian philosophy.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.75,
+   "PER": 0.348
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Marxist philosophy: A 2026 theoretical research programme by Lee Sharks, reconstructing a missing transition in Marx's 1844 manuscripts; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD (TWO ANSWERS; QUERY FROM THE OPERATOR'S MESSAGE; SECOND TURN BLANK; CHIPS",
+  "read": {
+   "by": "observation pass reader, batch 6",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/phase-x-research-programme-chatgpt-20261008/"
 }

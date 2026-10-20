@@ -107,7 +107,115 @@
     "https://www.alexanarch.org/data/captures/capture-registry-self/capture-registry-self-2.png"
    ],
    "cite": "https://www.alexanarch.org/captures/capture-registry-self/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "dataset",
+    "target": {
+     "ent": "ENT-d504b47989",
+     "name": "Capture Registry"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The AI Overview Capture Registry (e.g., EA-WG-",
+      "token": null
+     },
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "dataset tracking how Google’s generative AI (AI",
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.444,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.737
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: The AI Overview Capture Registry (e.g., EA-WG-; scored object: visible excerpt",
+    "read": {
+     "by": "observation pass reader, batch 21",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -163,5 +271,113 @@
  "findings": [],
  "match": "INDETERMINATE",
  "match_note": "mt recorded 'EXACT MATCH'; the address as stored is unquoted ('AI overview capture registry'). Left indeterminate (operator, 2026-10-11): the early record may not have recorded the distinction at each point.",
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-d504b47989",
+   "name": "Capture Registry"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The AI Overview Capture Registry (e.g., EA-WG-",
+    "token": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "dataset tracking how Google’s generative AI (AI",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.444,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.737
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The AI Overview Capture Registry (e.g., EA-WG-; scored object: visible excerpt",
+  "read": {
+   "by": "observation pass reader, batch 21",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/capture-registry-self/"
 }

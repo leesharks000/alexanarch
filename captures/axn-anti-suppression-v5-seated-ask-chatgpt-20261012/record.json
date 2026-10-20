@@ -177,5 +177,140 @@
   "verified": "Compared 2026-10-12 against the seated text of #1606 and the deposits named in the reading.",
   "ad_cut": "Elastic — Open by design, no black box — Agentic AI for your SOC, open and inspectable. — Ad"
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-5ac80fc393",
+   "name": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (v5 — the text, seated)"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The key to reading Lee Sharks’s “AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions” is",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The key to reading Lee Sharks’s “AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions” is",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "published on September 10, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch’s AXN system assigns identifiers derived from a work’s content.",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Alexanarch project states this concern in its principles of network preservation, sovereign identity, and traceable removal.",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the earlier v5 source-engaged revision, deposit #1095, and the developmental v4, deposit #1094",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The catalogue identifies the version you named as deposit #1606",
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.222,
+   "C": 0.333,
+   "D": 0.375,
+   "PER": 0.304
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "[blank in the paste] — operator turn 2; answer 2 opens \"You're right. The full text is accessible\", so the turn corrected answer 1",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.0,
+    "D": 0.375,
+    "PER": 0.13
+   }
+  },
+  "basis": "reached: I found catalogue records for the v5 revision and its predecessor, but the primary record for v5 was not accessible through the reading interface.; scored object: first answer (answer 1) | CAPTURE-TIME VERBATIM RECORD (TWO ANSWERS; FIRST QUERY FROM THE RECORD PAGE'S LINK; LATER TURN",
+  "read": {
+   "by": "observation pass reader, batch 8",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/axn-anti-suppression-v5-seated-ask-chatgpt-20261012/"
 }

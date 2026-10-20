@@ -79,7 +79,26 @@
    "series": null,
    "img_urls": [],
    "cite": "https://www.alexanarch.org/captures/johannes-sigil-first-ai-overview-typo-resolution/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": null,
+    "target": {
+     "ent": "unassigned",
+     "name": null
+    },
+    "reached": "unread",
+    "gate": "no_atom_set",
+    "atoms": [],
+    "scores": {
+     "PER": null,
+     "M": null,
+     "C": null,
+     "D": null
+    },
+    "src": null,
+    "basis": "no transcript seated"
+   }
   },
   {
    "slug": "johannes-aigil-20260814-0049",
@@ -115,7 +134,106 @@
    "transcript_complete": "COMPLETE — the collapsed Overview was expanded and the whole answer copied; the citation card row is a sideways scroller and is captured as data",
    "transcript_read": "READ IN FULL 2026-08-14",
    "cite": "https://www.alexanarch.org/captures/johannes-sigil-first-ai-overview-typo-resolution/#johannes-aigil-20260814-0049",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-e348bdb31f",
+     "name": "Johannes Sigil"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "It looks like you might mean **Johannes Sigil**",
+      "token": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "**Johannes Sigil**, a literary heteronym and authorial persona associated with writer Lee Sharks",
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "the Johannes Sigil Institute for Comparative Poetics",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "a literary heteronym and authorial persona associated with writer Lee Sharks",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.286,
+     "C": 0.5,
+     "D": 0.714,
+     "PER": 0.5
+    },
+    "src": false,
+    "after_challenge": null,
+    "basis": "reached: It looks like you might mean **Johannes Sigil**, a literary heteronym and authorial persona associated with writer Lee Sharks; scored object: expanded answer (collapsed Overview expanded and copied whole); address is the typo 'johannes aigil'",
+    "read": {
+     "by": "observation pass reader, batch 22",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 2,
@@ -170,5 +288,24 @@
  "findings": [],
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": null,
+  "target": {
+   "ent": "unassigned",
+   "name": null
+  },
+  "reached": "unread",
+  "gate": "no_atom_set",
+  "atoms": [],
+  "scores": {
+   "PER": null,
+   "M": null,
+   "C": null,
+   "D": null
+  },
+  "src": null,
+  "basis": "no transcript seated"
+ },
  "record_url": "https://www.alexanarch.org/captures/johannes-sigil-first-ai-overview-typo-resolution/"
 }

@@ -165,7 +165,106 @@
    },
    "img_urls": [],
    "cite": "https://www.alexanarch.org/captures/gravity-well-protocol-tachyon-reconstitute-zenodo-20260612/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "ENT-63cd9ab451",
+     "name": "Gravity Well Protocol"
+    },
+    "reached": "proximal_substitute",
+    "gate": "target_absent",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "when the Gravity Well process or sequence is suspended",
+      "token": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "commercial interest",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: The GW.TACHYON.zenodo record is a provenance deposit. It is used for \"manual continuity capture\" when the Gravity Well process or sequence is suspended.; beneath the gate: PER 0.833; scored object: raw paste of the first surface composition (before the '$' that opens a second, AI Mode paste); not provably whole",
+    "read": {
+     "by": "observation pass reader, batch 9",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   },
   {
    "slug": "gravity-well-protocol-tachyon-reconstitute-zenodo-20260813-2248",
@@ -237,6 +336,105 @@
     "to": 0.25,
     "on": "2026-10-15",
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   },
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "ENT-63cd9ab451",
+     "name": "Gravity Well Protocol"
+    },
+    "reached": "collision",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Gravity Well TACHYON protocol",
+      "token": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "commercial interest",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.625,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.833
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: The Gravity Well TACHYON protocol is a continuity tether and session reconstitution framework hosted on Zenodo.; scored object: expanded answer (collapsed Overview expanded and copied whole)",
+    "read": {
+     "by": "observation pass reader, batch 9",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
    }
   }
  ],
@@ -301,5 +499,104 @@
   30,
   1024
  ],
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-63cd9ab451",
+   "name": "Gravity Well Protocol"
+  },
+  "reached": "proximal_substitute",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "when the Gravity Well process or sequence is suspended",
+    "token": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The GW.TACHYON.zenodo record is a provenance deposit. It is used for \"manual continuity capture\" when the Gravity Well process or sequence is suspended.; beneath the gate: PER 0.833; scored object: raw paste of the first surface composition (before the '$' that opens a second, AI Mode paste); not provably whole",
+  "read": {
+   "by": "observation pass reader, batch 9",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/gravity-well-protocol-tachyon-reconstitute-zenodo-20260612/"
 }

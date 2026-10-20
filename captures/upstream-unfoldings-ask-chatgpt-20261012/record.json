@@ -157,5 +157,131 @@
   "reached_basis": "The chips are the author's site and blog; the answer's quotations are the page's, checked live on 2026-10-12.",
   "verified": "Compared 2026-10-12 against the seated text of #1511 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-9929dc2058",
+   "name": "The Upstream Unfoldings: Six Operable Transforms from Sappho 31 into the Apocalypse's Channel — revelationfirst.com/upstream/"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The argument of Lee Sharks’s The Upstream Unfoldings",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Upstream Unfoldings is an attempt to turn comparative literary interpretation",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "But he explicitly says that it does not assert authorship, influence in the biographical sense, or the identification sentence.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The pivotal idea appears in the page's linked argument, “Sappho, Mother of the Logos.”",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sappho’s Fragment 31 contains a repeatable literary structure that can be traced through ancient Greek and Jewish literature into Revelation 12",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.111,
+   "C": 0.667,
+   "D": 0.75,
+   "PER": 0.478
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s central argument is that Sappho’s Fragment 31 contains a repeatable literary structure that can be traced through ancient Greek and Jewish literature into Revelation 12.; scored object: expanded answer (one ChatGPT answer, complete)",
+  "read": {
+   "by": "observation pass reader, batch 13",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/upstream-unfoldings-ask-chatgpt-20261012/"
 }

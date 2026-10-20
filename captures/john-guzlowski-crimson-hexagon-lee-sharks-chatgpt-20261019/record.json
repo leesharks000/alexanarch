@@ -222,5 +222,115 @@
   "date_basis": "The operator's message of 2026-10-19, 17:51 EDT.",
   "operator_words": "also - couple captures: Tell me about John Guzlowski and the Crimson Hexagon / Lee Sharks"
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks presents himself as a poet and independent scholar",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "WHO IS LEE SHARKS, TO FORGIVE EZRA POUND?",
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks: the writer behind the Crimson Hexagon",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "His website describes a body of work organized through a network of related authors or personae, including Johannes Sigil, Rex Fraction, and Rebekah Cranes.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "You can explore his work at LeeSharks.com",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.375,
+   "C": 0.5,
+   "D": 0.429,
+   "PER": 0.421
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks presents himself as a poet and independent scholar whose work spans poetry, literary theory, multiple writing identities, and experimental archival systems.; scored object: Answer 1 of two (ChatGPT, full answer as pasted)",
+  "read": {
+   "by": "observation pass reader, batch 18",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N2"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/john-guzlowski-crimson-hexagon-lee-sharks-chatgpt-20261019/"
 }

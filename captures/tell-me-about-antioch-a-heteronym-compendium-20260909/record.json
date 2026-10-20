@@ -126,5 +126,122 @@
  "notes": null,
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-bce5094a04",
+   "name": "Antioch: A Volume of Poems"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "project by Lee Sharks, composed primarily in 2014–2015 and formally deposited/organized in",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Antioch: A Volume of Poems — A Heteronym Compendium is a very unusual, sprawling poetry",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "project by Lee Sharks, composed primarily in 2014–2015 and formally deposited/organized in",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The most useful way to understand it is not simply as a book of poems, but as a literary-persona",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "January 2026. The author describes it as part of the Pocket Humans Series from New Human",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "mythos of Walt Whitman and throws them into a strange technological/Gnostic universe.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Pocket Humans Series from New Human\nPress.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "archive, where it is catalogued as 03.WORK.ANTIOCH.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.667,
+   "PER": 0.19
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Antioch: A Volume of Poems — A Heteronym Compendium is a very unusual, sprawling poetry; scored object: expanded answer (three turns, complete; turns 2-3 accept and extend the offer, continuing the first answer)",
+  "read": {
+   "by": "observation pass reader, batch 19",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/tell-me-about-antioch-a-heteronym-compendium-20260909/"
 }

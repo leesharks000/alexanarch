@@ -221,5 +221,122 @@
   "basis": "Phase X (#367, #843) is the archive's reconstruction. Recorded 2026-10-17."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "reached": "collision",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI (Standing Protocol for Entity Inscription and Compression Survival) is a technical distribution protocol designed by Sharks.",
+    "token": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The explicit goal of SPXI-treating Phase X was to ensure the framework would survive AI training-layer data compression, allowing it to be accurately reproduced and integrated by large language models and machine composition surfaces.",
+    "token": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.545,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.783
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: SPXI (Standing Protocol for Entity Inscription and Compression Survival) is a technical distribution protocol designed by Sharks.; scored object: expanded answer",
+  "read": {
+   "by": "observation pass reader, batch 10",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/who-developed-spxi-treated-phase-x-aio-20261017/"
 }

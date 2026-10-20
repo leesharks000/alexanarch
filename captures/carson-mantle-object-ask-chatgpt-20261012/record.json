@@ -148,5 +148,131 @@
   "reached_basis": "The answer's quotations are #1670's text verbatim; every chip is Goodreads, so the text was reached through that carrier, not through the archive's record page.",
   "verified": "Compared 2026-10-12 against the seated text of #1670."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-d4cc612943",
+   "name": "Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s “Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson”",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "“Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson”",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated 8 October 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the Nobel Prize is not in dispute; the adequacy of the Swedish Academy’s explanation of the prize is.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sharks calls the document a mantle object: a dated specification of what a title means",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks asks readers to start with the literary works themselves, identify what they do, and then test the committee’s description against those findings.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks argues that Carson’s translation of Sappho keeps the damaged state of the ancient record visible.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "version 0.4",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.5,
+   "PER": 0.261
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s “Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson” (version 0.4, dated 8 October 2026) makes a distinction that governs the entire argument; scored object: expanded answer",
+  "read": {
+   "by": "observation pass reader, batch 21",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/carson-mantle-object-ask-chatgpt-20261012/"
 }

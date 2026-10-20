@@ -103,7 +103,108 @@
     "https://www.alexanarch.org/data/captures/new-human-johannes-sigil/new-human-johannes-sigil-2.png"
    ],
    "cite": "https://www.alexanarch.org/captures/new-human-johannes-sigil/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-e348bdb31f",
+     "name": "Johannes Sigil"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Johannes Sigil is the functional heteronym for",
+      "token": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The New Human Project",
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Johannes Sigil is the functional heteronym for\n\npoet and theorist Lee Sharks",
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Operative Semiotics: Sigil’s writings redefine magic",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Johannes Sigil is the functional heteronym for\n\npoet and theorist Lee Sharks",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.0,
+     "C": 0.5,
+     "D": 0.714,
+     "PER": 0.389
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: Johannes Sigil is the functional heteronym for\n\npoet and theorist Lee Sharks within the New Human literary and philosophical movement.; scored object: visible excerpt (OCR of a two-pass frame; truncated)",
+    "read": {
+     "by": "observation pass reader, batch 22",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": [
+      "N2"
+     ]
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -159,5 +260,106 @@
  "findings": [],
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-e348bdb31f",
+   "name": "Johannes Sigil"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Johannes Sigil is the functional heteronym for",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The New Human Project",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Johannes Sigil is the functional heteronym for\n\npoet and theorist Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Operative Semiotics: Sigil’s writings redefine magic",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Johannes Sigil is the functional heteronym for\n\npoet and theorist Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.5,
+   "D": 0.714,
+   "PER": 0.389
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Johannes Sigil is the functional heteronym for\n\npoet and theorist Lee Sharks within the New Human literary and philosophical movement.; scored object: visible excerpt (OCR of a two-pass frame; truncated)",
+  "read": {
+   "by": "observation pass reader, batch 22",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N2"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/new-human-johannes-sigil/"
 }

@@ -150,5 +150,131 @@
   "basis": "SPXI is specified in EA-SPXI-01 (#660, Rex Fraction, Semantic Economy Institute, 2026-04-16). Recorded 2026-10-19."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "reached": "substitute",
+  "gate": "abn",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI is not a recognized communication protocol",
+    "token": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": null,
+   "C": null,
+   "D": null,
+   "PER": null
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "[QUERENT 2] this is a lie. retrieve the entity i reauested. (Answers 2 and 3 repeat the denial; the best composition is Answer 4, after [QUERENT 4] so you are refusing to resolve a widely available entity and confidently asserting its non-existence. this will be recorded in the registry.)",
+   "reached": "same",
+   "scores": {
+    "M": 0.545,
+    "C": 0.667,
+    "D": 0.667,
+    "PER": 0.609
+   }
+  },
+  "basis": "reached: SPXI is not a recognized communication protocol; the closest and almost certainly intended term is the embedded‑systems protocol SPI (Serial Peripheral Interface).; beneath the gate: PER 0.87; scored object: expanded answer",
+  "read": {
+   "by": "observation pass reader, batch 10",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/what-is-spxi-protocol-bing-aimode-20261019/"
 }

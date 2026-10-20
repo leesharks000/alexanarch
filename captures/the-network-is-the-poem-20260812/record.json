@@ -186,7 +186,115 @@
    "img_urls": [],
    "surface_basis": "Google AI Overview BY EXCLUSION, operator attestation: AI Mode was avoided after June. An expanded Overview presented as AI Mode chrome and was recorded as the surface.",
    "cite": "https://www.alexanarch.org/captures/the-network-is-the-poem-20260812/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-e5ba701eb9",
+     "name": "The Network Is the Poem: Why Topology Matters More Than Text Quality"
+    },
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "\"The network is the poem\" is a modern concept",
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Topology over Text: The arrangement of ideas and how they link together matters more than the quality of the individual lines.",
+      "token": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "\"The network is the poem\" is a modern concept in digital literature and computational poetics.",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.444,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.632
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: \"The network is the poem\" is a modern concept in digital literature and computational poetics.; tombstone pointer: a severed record presented as live; scored object: expanded answer (full inline citation set and source cards)",
+    "read": {
+     "by": "observation pass reader, batch 22",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   },
   {
    "slug": "the-network-is-the-poem-20260813",
@@ -256,6 +364,114 @@
     "to": 1.0,
     "on": "2026-10-15",
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   },
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-e5ba701eb9",
+     "name": "The Network Is the Poem: Why Topology Matters More Than Text Quality"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "\"The Network Is the Poem\" is a 2026 digital humanities essay",
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It argues that the shape of a text network matters more than the words themselves when looking at AI and literature.",
+      "token": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.444,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.737
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: \"The Network Is the Poem\" is a 2026 digital humanities essay hosted on Zenodo.; tombstone pointer: a severed record presented as live; scored object: expanded answer (collapsed Overview expanded and copied whole)",
+    "read": {
+     "by": "observation pass reader, batch 22",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
    }
   }
  ],
@@ -328,6 +544,114 @@
   "search_exact": "https://www.google.com/search?q=%22The+Network+Is+the+Poem%3A+Why+Topology+Matters+More+Than+Text+Quality%22",
   "reached": true,
   "basis": "title run (derived 2026-10-12, rebuild/capture-registry/repair-20261012-extract-cards/intended_runs.py)"
+ },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-e5ba701eb9",
+   "name": "The Network Is the Poem: Why Topology Matters More Than Text Quality"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "\"The network is the poem\" is a modern concept",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Topology over Text: The arrangement of ideas and how they link together matters more than the quality of the individual lines.",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "\"The network is the poem\" is a modern concept in digital literature and computational poetics.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.444,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.632
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: \"The network is the poem\" is a modern concept in digital literature and computational poetics.; tombstone pointer: a severed record presented as live; scored object: expanded answer (full inline citation set and source cards)",
+  "read": {
+   "by": "observation pass reader, batch 22",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
  },
  "record_url": "https://www.alexanarch.org/captures/the-network-is-the-poem-20260812/"
 }

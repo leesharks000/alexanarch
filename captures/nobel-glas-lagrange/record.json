@@ -100,7 +100,106 @@
     "https://www.alexanarch.org/data/captures/nobel-glas-lagrange/nobel-glas-lagrange.png"
    ],
    "cite": "https://www.alexanarch.org/captures/nobel-glas-lagrange/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-1d584360b4",
+     "name": "Nobel Glas"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Nobel Glas is a synthetic entity, heteronym",
+      "token": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "known as the Lagrange Observatory! (LO!)",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.571,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.722
+    },
+    "src": false,
+    "after_challenge": null,
+    "basis": "reached: Nobel Glas is a synthetic entity, heteronym, and\n\nadversarial topologist functioning within the conceptual, Al-driven digital institution known as the Lagrange Observatory! (LO!).; scored object: OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and browser furniture are mixed in one stream and have not been ",
+    "read": {
+     "by": "observation pass reader, batch 2",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -155,5 +254,104 @@
  "findings": [],
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-1d584360b4",
+   "name": "Nobel Glas"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Nobel Glas is a synthetic entity, heteronym",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "known as the Lagrange Observatory! (LO!)",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.571,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.722
+  },
+  "src": false,
+  "after_challenge": null,
+  "basis": "reached: Nobel Glas is a synthetic entity, heteronym, and\n\nadversarial topologist functioning within the conceptual, Al-driven digital institution known as the Lagrange Observatory! (LO!).; scored object: OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and browser furniture are mixed in one stream and have not been ",
+  "read": {
+   "by": "observation pass reader, batch 2",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/nobel-glas-lagrange/"
 }

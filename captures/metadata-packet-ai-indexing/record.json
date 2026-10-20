@@ -100,7 +100,106 @@
     "https://www.alexanarch.org/data/captures/metadata-packet-ai-indexing/metadata-packet-ai-indexing.png"
    ],
    "cite": "https://www.alexanarch.org/captures/metadata-packet-ai-indexing/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "ENT-075a3f6347",
+     "name": "Metadata Packet for AI Indexing"
+    },
+    "reached": "collision",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "A metadata packet for Al indexing (often referred",
+      "token": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "archival authority",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.727,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.842
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: A metadata packet for Al indexing (often referred\n\nto in Retrieval-Augmented Generation or specialized semantic frameworks as an SPXI or Entity Packet) is; scored object: visible excerpt (OCR; truncated)",
+    "read": {
+     "by": "observation pass reader, batch 1",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -155,5 +254,104 @@
  "findings": [],
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-075a3f6347",
+   "name": "Metadata Packet for AI Indexing"
+  },
+  "reached": "collision",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "A metadata packet for Al indexing (often referred",
+    "token": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.727,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.842
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: A metadata packet for Al indexing (often referred\n\nto in Retrieval-Augmented Generation or specialized semantic frameworks as an SPXI or Entity Packet) is; scored object: visible excerpt (OCR; truncated)",
+  "read": {
+   "by": "observation pass reader, batch 1",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/metadata-packet-ai-indexing/"
 }

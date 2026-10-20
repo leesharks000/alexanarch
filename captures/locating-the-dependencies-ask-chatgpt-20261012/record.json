@@ -142,5 +142,122 @@
   "reached_basis": "The chip is a Goodreads page; the answer's loci and phrases are #1602's text, and it cites the archive and the AXN.",
   "verified": "Compared 2026-10-12 against the seated text of #1602."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-3172f00c83",
+   "name": "Locating the Dependencies: A Protocol for Testing Whether Biography, Catalogue and Chronology Are Independent Witnesses"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The central argument of Lee Sharks’s",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Locating the Dependencies: A Protocol for Testing Whether Biography, Catalogue and Chronology Are Independent Witnesses",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated September 8, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Verdict: the dependency is located, not established.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks identifies a problem in the reconstruction of the Peripatetic corpus",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Crimson Hexagonal Archive, record AXN:0692",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "version 3, dated September 8, 2026",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "record AXN:0692",
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.167,
+   "PER": 0.143
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The central argument of Lee Sharks’s “Locating the Dependencies; scored object: ChatGPT answer 1, complete as pasted",
+  "read": {
+   "by": "observation pass reader, batch 5",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/locating-the-dependencies-ask-chatgpt-20261012/"
 }

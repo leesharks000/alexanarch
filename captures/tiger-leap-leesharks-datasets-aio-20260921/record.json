@@ -197,5 +197,113 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-98348de9b9",
+   "name": "leesharks/tiger-leap"
+  },
+  "reached": "collision",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "\"Tiger Leap\" and \"Leesharks\" refer to core concepts within an interconnected series of dataset repositories hosted on Hugging Face",
+    "token": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "They are curated by Lee Sharks (a contemporary author, poet, and scholar)",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "to build the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "dataset repositories hosted on Hugging Face",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.333,
+   "C": 0.5,
+   "D": 0.667,
+   "PER": 0.474
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Within this repository network, Tiger Leap (a phrase historically tied to Estonia's historic education-digitization campaign Tiigrihüpe and Benjamin Walter's philosophy of history) represents a doctrinal transition node. It explores the boundary where machine-learning data collection expands out of ; scored object: expanded answer (paste headed 'AI Mode Conversation', an expanded Overview; one turn with its source cards)",
+  "read": {
+   "by": "observation pass reader, batch 13",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/tiger-leap-leesharks-datasets-aio-20260921/"
 }

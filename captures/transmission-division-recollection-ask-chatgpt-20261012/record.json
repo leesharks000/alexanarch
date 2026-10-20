@@ -148,5 +148,140 @@
   "reached_basis": "The answers quote the poem's lines verbatim; the chips are Goodreads, so the text was reached through that carrier.",
   "verified": "Compared 2026-10-12 against the seated text of #1659 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-db46adce07",
+   "name": "GLYPHIC CHECKSUM — Transmission · Division · Recollection"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s GLYPHIC CHECKSUM — Transmission · Division · Recollection",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "GLYPHIC CHECKSUM — Transmission · Division · Recollection",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "on October 1, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The poem's accompanying description calls it a glyphic checksum of transmission as a “two-stroke operation”: division on the sending side and recollection on the receiving side. It also identifies an inversion under present conditions of transmission.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "published in New Human 2",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Here, Sharks adapts that idea to literary interpretation: can a compressed arrangement of signs preserve enough of a work's identity for a reader to reconstruct its significant relationships?",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks's accompanying description explicitly identifies Sappho 31 as a source for this section.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.75,
+   "PER": 0.348
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "operator turn 3 (blank in the paste; answer 3 answers why the reading keeps stopping at Part II and how the model reproduces the poem's failure)",
+   "reached": "same",
+   "scores": {
+    "M": 0.667,
+    "C": 1.0,
+    "D": 0.75,
+    "PER": 0.783
+   }
+  },
+  "basis": "reached: Lee Sharks’s GLYPHIC CHECKSUM — Transmission · Division · Recollection, published in New Human 2 on October 1, 2026, is a five-part glyph poem; scored object: expanded answer",
+  "read": {
+   "by": "observation pass reader, batch 21",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/transmission-division-recollection-ask-chatgpt-20261012/"
 }

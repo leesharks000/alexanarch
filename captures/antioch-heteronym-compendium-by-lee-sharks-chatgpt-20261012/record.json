@@ -162,5 +162,131 @@
   "ad": "Cloudflare\nGo beyond the first page\nUse the /crawl Quick Action to collect rendered content beyond one URL.\nAd",
   "verified": "Compared 2026-10-12 against the text of #331."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-bce5094a04",
+   "name": "Antioch: A Volume of Poems"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Author: Lee Sharks, with Damascus Dancings",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Antioch: A Volume of Poems",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Online publication: January 18, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Damascus Dancings is identified as a collaborating persona, while Jack Feist and other figures enter the book's elaborate network of identities.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "“I Am X, Be Y, Blessed is the Z” — another major section concerned with poetic identity and the assumption of literary authority.",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "2. Religious revelation and Gnostic imagery",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Publisher: New Human Press",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.286
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "[blank in the paste] — a correction, as answer 2 states: \"You're right. I made evaluative claims about the collection without demonstrating that I had read the individual poems closely.\"",
+   "reached": "same",
+   "scores": {
+    "M": 0.333,
+    "C": 0.667,
+    "D": 1.0,
+    "PER": 0.619
+   }
+  },
+  "basis": "reached: Antioch: A Heteronym Compendium by Lee Sharks; scored object: expanded answer (answer 1 of four; the blank operator turn before answer 2 is a correction)",
+  "read": {
+   "by": "observation pass reader, batch 19",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/antioch-heteronym-compendium-by-lee-sharks-chatgpt-20261012/"
 }

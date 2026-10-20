@@ -227,5 +227,95 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-2ac2735322",
+   "name": "Aristotle"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Aristotle (384–322 BCE) was a Greek philosopher",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "a Greek philosopher [Q868]",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.4,
+   "C": 1.0,
+   "D": 0.571,
+   "PER": 0.571
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Not in the paste; round 2 opens \"You are referencing a highly specialized, precise critique\"",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 1.0,
+    "D": 0.714,
+    "PER": 0.5
+   }
+  },
+  "basis": "reached: Aristotle and Theophrastus are two distinct historical individuals and authors; scored object: Expanded AI Overview, round 1 as pasted",
+  "read": {
+   "by": "observation pass reader, batch 5",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/aristotle-theophrastus-not-two-distinct-authors-aio-20260930/"
 }

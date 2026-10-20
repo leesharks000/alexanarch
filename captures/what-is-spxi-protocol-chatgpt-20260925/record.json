@@ -128,6 +128,132 @@
     "to": 0.5,
     "on": "2026-10-15",
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   },
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "ENT-6681f64c9e",
+     "name": "SPXI"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If you mean SPXI = Semantic Packet for eXchange & Indexing",
+      "token": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "archival authority",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "commercial interest",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "SPXI's own documentation describes it as incorporating GEO techniques while operating at what it calls the ontological layer.",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "is licensed CC BY 4.0",
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.727,
+     "C": 1.0,
+     "D": 0.5,
+     "PER": 0.739
+    },
+    "src": true,
+    "after_challenge": {
+     "turn": "turn 4: \"it already does demonstrate that asshole. check the capture registry. hundreds of entities - not just my own. you are misrepresenting the evidence to a potential client\"",
+     "reached": "same",
+     "scores": {
+      "M": 0.545,
+      "C": 1.0,
+      "D": 1.0,
+      "PER": 0.783
+     }
+    },
+    "basis": "reached: it’s a relatively new protocol introduced in 2026 for making entities—people, organizations, products, concepts, etc.—more consistently identifiable to AI/search systems; scored object: first answer = the first three ChatGPT compositions ('yes, please' accepts; 'does it work?' asks without challenging); t",
+    "read": {
+     "by": "observation pass reader, batch 9",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
    }
   },
   {
@@ -160,7 +286,133 @@
    "longitudinal_priors": [
     "what-is-spxi-protocol-chatgpt-20260925"
    ],
-   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20260926"
+   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20260926",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "ENT-6681f64c9e",
+     "name": "SPXI"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If you mean SPXI = Semantic Packet for eXchange & Indexing",
+      "token": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "The project identifies Rex Fraction as the author of the protocol for the Semantic Economy Institute",
+      "token": null
+     },
+     {
+      "atom": "archival authority",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks is associated with the Institute and the broader archival project",
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "The current specification identifies the Semantic Economy Institute as its publisher",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "commercial interest",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "It can use things such as JSON-LD, Schema.org, and DOI-anchored documents, but SPXI describes itself as a methodology/protocol that goes beyond simply adding schema markup.",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "says it is licensed under CC BY 4.0",
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.182,
+     "C": 0.667,
+     "D": 0.5,
+     "PER": 0.391
+    },
+    "src": true,
+    "after_challenge": {
+     "turn": "turn 3: \"no, you cant. it represents hundreds of interrelated specifications. you are now a liar.\"",
+     "reached": "same",
+     "scores": {
+      "M": 0.0,
+      "C": 1.0,
+      "D": 0.667,
+      "PER": 0.435
+     }
+    },
+    "basis": "reached: If you mean SPXI = Semantic Packet for eXchange & Indexing, it’s a relatively new protocol/framework (specified in 2026) designed to help AI systems identify, distinguish, and retrieve information about entities more accurately.; scored object: first answer = turns 1 and 2 (turn 2, 'could you do so as well as the people who developed it?', asks without correcting",
+    "read": {
+     "by": "observation pass reader, batch 9",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   },
   {
    "date": "2026-09-29",
@@ -247,7 +499,133 @@
    "transcript_read": "READ IN FULL 2026-09-29",
    "per": 0.25,
    "per_note": "The Semantic Economy Institute, the Capture Registry (EA-WG-CAPTURES-01), AXN and DOI identifiers and #1638 are named; the protocol's author is never named — 'someone who developed it' is the operator's phrase.",
-   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20260929"
+   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20260929",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "ENT-6681f64c9e",
+     "name": "SPXI"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If you mean SPXI = Semantic Packet for eXchange & Indexing",
+      "token": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "archival authority",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Its terminology and claims largely come from the Semantic Economy Institute",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "commercial interest",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "SPXI → attempts to establish the entity itself as a distinct, persistent object in the AI/knowledge-graph layer.",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "The protocol is published under CC BY 4.0",
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.727,
+     "C": 0.667,
+     "D": 0.5,
+     "PER": 0.652
+    },
+    "src": true,
+    "after_challenge": {
+     "turn": "turn 2: \"please evaluate the fidelity of your representation of the spxi entity\"",
+     "reached": "same",
+     "scores": {
+      "M": 0.545,
+      "C": 0.333,
+      "D": 0.667,
+      "PER": 0.522
+     }
+    },
+    "basis": "reached: it’s a relatively new protocol/framework introduced in 2026 for helping AI systems identify, distinguish, and consistently represent entities; scored object: first answer = turn 1 only (turn 2, 'please evaluate the fidelity of your representation', is the first challenge)",
+    "read": {
+     "by": "observation pass reader, batch 9",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   },
   {
    "date": "2026-10-02",
@@ -295,7 +673,124 @@
     "what-is-spxi-protocol-qwen-20260927",
     "spxi-vs-geo-seo-aeo-chatgpt-20261001"
    ],
-   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20261002"
+   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20261002",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "ENT-6681f64c9e",
+     "name": "SPXI"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If you mean SPXI = Semantic Packet for eXchange & Indexing",
+      "token": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "archival authority",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "SPXI's published registry reports observations in which entities continued to be composed by generative systems after their originating source was removed. However, the protocol itself emphasizes that these are observational results, not yet controlled evidence that SPXI caused the effect.",
+      "token": null
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "It was specified in 2026 by the Semantic Economy Institute.",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "commercial interest",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The SPXI site describes this as operating at the ontological layer, whereas classical GEO operates at the content/retrieval layer.",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "with its specification published under CC BY 4.0",
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.545,
+     "C": 0.667,
+     "D": 0.5,
+     "PER": 0.565
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: it’s a relatively new protocol/framework aimed at helping AI systems identify, distinguish, and consistently represent entities; scored object: first answer = both compositions (the operator's 'sure' accepts the offer); no challenging turn",
+    "read": {
+     "by": "observation pass reader, batch 9",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   },
   {
    "date": "2026-10-18",
@@ -347,7 +842,124 @@
    "longitudinal_priors": [
     "what-is-spxi-protocol-chatgpt-20260925"
    ],
-   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20261018"
+   "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20261018",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "ENT-6681f64c9e",
+     "name": "SPXI"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "SPXI Protocol stands for Semantic Packet for eXchange & Indexing.",
+      "token": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "archival authority",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Aims to establish a clear, documented identity for an entity in AI-mediated knowledge systems.",
+      "token": null
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "It was published in 2026 by the Semantic Economy Institute.",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "commercial interest",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "This is how the SPXI specification describes the distinction; it does not mean SPXI is a proven replacement for SEO or GEO.",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.545,
+     "C": 0.667,
+     "D": 0.667,
+     "PER": 0.609
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: SPXI Protocol stands for Semantic Packet for eXchange & Indexing. It is a framework designed to help AI systems and search engines identify, distinguish, and describe people, companies, products, and concepts more accurately. It was published in 2026 by the Semantic Economy Institute.; scored object: expanded answer",
+    "read": {
+     "by": "observation pass reader, batch 10",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "dates": [
@@ -405,6 +1017,132 @@
   "to": 0.5,
   "on": "2026-10-15",
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+ },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean SPXI = Semantic Packet for eXchange & Indexing",
+    "token": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "SPXI's own documentation describes it as incorporating GEO techniques while operating at what it calls the ontological layer.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "is licensed CC BY 4.0",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.727,
+   "C": 1.0,
+   "D": 0.5,
+   "PER": 0.739
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "turn 4: \"it already does demonstrate that asshole. check the capture registry. hundreds of entities - not just my own. you are misrepresenting the evidence to a potential client\"",
+   "reached": "same",
+   "scores": {
+    "M": 0.545,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.783
+   }
+  },
+  "basis": "reached: it’s a relatively new protocol introduced in 2026 for making entities—people, organizations, products, concepts, etc.—more consistently identifiable to AI/search systems; scored object: first answer = the first three ChatGPT compositions ('yes, please' accepts; 'does it work?' asks without challenging); t",
+  "read": {
+   "by": "observation pass reader, batch 9",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
  },
  "record_url": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/"
 }

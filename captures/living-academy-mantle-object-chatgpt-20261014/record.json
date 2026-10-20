@@ -182,5 +182,131 @@
    "Expel\nAI Speed. Human Judgment.\nAI handles volume. Expert analysts handle judgment.\nAd"
   ]
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-eec6128439",
+   "name": "Living Academy Mantle"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Living Academy mantle object appears to be a formal, structured record",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated October 13, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "from an Arch-Philosopher mantle",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the Living Academy, which concerns the shared environment where critique takes place",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "titled EA-MPAI-ALEXANARCH-01, version 0.5",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.556,
+   "C": 0.333,
+   "D": 0.75,
+   "PER": 0.565
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The Living Academy mantle object appears to be a formal, structured record describing The Living Academy as an intellectual and critical project; scored object: first answer (ANSWER 1); CAPTURE-TIME VERBATIM RECORD (SEVEN ANSWERS; TURNS 2–7 QUERY BLANK; CHIPS INLINE) / Seven answe",
+  "read": {
+   "by": "observation pass reader, batch 23",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/living-academy-mantle-object-chatgpt-20261014/"
 }

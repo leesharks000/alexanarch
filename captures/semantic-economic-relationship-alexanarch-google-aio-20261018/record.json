@@ -215,5 +215,113 @@
   "basis": "The archive's encounter with Google is the Capture Registry, #740 and #593. Recorded 2026-10-18."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "institution",
+  "target": {
+   "ent": "ENT-2892e86fb5",
+   "name": "Alexanarch"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "documented within the sovereign digital archive Alexanarch",
+    "token": null
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "a Marxian accounting model authored by Lee Sharks and documented within the sovereign digital archive Alexanarch",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Under the Semantic Economy framework",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.444,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.65
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: documented within the sovereign digital archive Alexanarch; scored object: First answer as recorded (Google AI Overview, 2026-10-18): transcript_class 'CAPTURE-TIME VERBATIM RECORD (ONE TURN; INL",
+  "read": {
+   "by": "observation pass reader, batch 4",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/semantic-economic-relationship-alexanarch-google-aio-20261018/"
 }

@@ -148,5 +148,133 @@
   "reached_basis": "The answer states it read v0.2; the chips are the author's blog. #1654 (v0.3) was not reached.",
   "verified": "Compared 2026-10-12 against the seated text of #1654 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-3a05b92e16",
+   "name": "SPXI ≠ AEO: Inscription by Discernment, the Prince of Poets Wager, and the King of AEO Contest (EA-SPXI-AEO-01 v0.3)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The central argument of Lee Sharks’s SPXI ≠ AEO",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI ≠ AEO: Inscription by Discernment, the Prince of Poets Wager, and the King of AEO Contest is that",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "September 29, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "SPXI, the paper’s protocol for entity inscription, evaluates whether the answer was reached through discernment",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI, the paper’s protocol for entity inscription",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Both practices can use definition-led pages, structured data, FAQs, and consistency across websites. They can even produce exactly the same visible answer.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The underlying wager concerns the poem I Am X, Be Y, Blessed is the Z and its claimed transformation of a poetic lineage associated with Walt Whitman and Allen Ginsberg.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The analysis above is based on the available indexed text labeled v0.2",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.5,
+   "PER": 0.261
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The central argument of Lee Sharks’s SPXI ≠ AEO: Inscription by Discernment, the Prince of Poets Wager, and the King of AEO Contest is that getting an answer engine to assert a claim is not the same as establishing that the claim deserves to be asserted.; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; QUERY FROM THE RECORD PAGE'S LINK; CHIPS INLINE) | One answe",
+  "read": {
+   "by": "observation pass reader, batch 6",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N3"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/spxi-aeo-ask-chatgpt-20261012/"
 }

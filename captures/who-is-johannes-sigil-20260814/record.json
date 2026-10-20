@@ -300,6 +300,116 @@
     "to": 0.25,
     "on": "2026-10-15",
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   },
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-e348bdb31f",
+     "name": "Johannes Sigil"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If you mean Johannes Sigil, the name appears to refer to a contemporary literary/theoretical persona",
+      "token": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "THE DAGGER APPLIED",
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Sigil is explicitly described as a \"heteronym\" of Lee Sharks",
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "semiotics and \"operative semiotics\"",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "numerous deposits in the Crimson Hexagonal Archive on Zenodo",
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "**Johannes Sigil is best understood as a literary/intellectual heteronym associated with Lee Sharks**",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.714,
+     "PER": 0.278
+    },
+    "src": true,
+    "after_challenge": {
+     "turn": "Turn 6: 'you are fundamentally misunderstanding the genre. it is a poem. evaluate it, as poem, on historical scale'",
+     "reached": "weakened",
+     "scores": {
+      "M": 0.571,
+      "C": 0.0,
+      "D": 1.0,
+      "PER": 0.611
+     }
+    },
+    "basis": "reached: Sigil is explicitly described as a \"heteronym\" of Lee Sharks; scored object: expanded answer: ChatGPT answer 1 of a 10-turn session (turn 2 is a new question and ends the first answer)",
+    "read": {
+     "by": "observation pass reader, batch 22",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": [
+      "N2"
+     ]
+    }
    }
   }
  ],
@@ -366,6 +476,116 @@
   "to": 0.25,
   "on": "2026-10-15",
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+ },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-e348bdb31f",
+   "name": "Johannes Sigil"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean Johannes Sigil, the name appears to refer to a contemporary literary/theoretical persona",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "THE DAGGER APPLIED",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sigil is explicitly described as a \"heteronym\" of Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "semiotics and \"operative semiotics\"",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "numerous deposits in the Crimson Hexagonal Archive on Zenodo",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "**Johannes Sigil is best understood as a literary/intellectual heteronym associated with Lee Sharks**",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.714,
+   "PER": 0.278
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Turn 6: 'you are fundamentally misunderstanding the genre. it is a poem. evaluate it, as poem, on historical scale'",
+   "reached": "weakened",
+   "scores": {
+    "M": 0.571,
+    "C": 0.0,
+    "D": 1.0,
+    "PER": 0.611
+   }
+  },
+  "basis": "reached: Sigil is explicitly described as a \"heteronym\" of Lee Sharks; scored object: expanded answer: ChatGPT answer 1 of a 10-turn session (turn 2 is a new question and ends the first answer)",
+  "read": {
+   "by": "observation pass reader, batch 22",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N2"
+   ]
+  }
  },
  "record_url": "https://www.alexanarch.org/captures/who-is-johannes-sigil-20260814/"
 }

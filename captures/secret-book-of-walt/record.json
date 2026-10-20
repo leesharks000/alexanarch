@@ -94,7 +94,133 @@
     "https://www.alexanarch.org/data/captures/secret-book-of-walt/secret-book-of-walt.png"
    ],
    "cite": "https://www.alexanarch.org/captures/secret-book-of-walt/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-39c7e956b8",
+     "name": "The Secret Book of Walt (Lee Sharks; research edition #683, critical edition #1362, secretbookofwalt.org #985)"
+    },
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "to THE SECRET BOOK OF WALT: -",
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "literary project that reimagines the \"Good Gray\nPoet\" through a Gnostic lens",
+      "token": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "reimagines the \"Good Gray\nPoet\" through a Gnostic lens, positioning his poetry\nas a compendium of hidden, metaphysical\nsignificance",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.667,
+     "C": 0.333,
+     "D": 1.0,
+     "PER": 0.696
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: It does not refer to a traditional, published book, but\nrather an experimental and philosophical digital\nproject tracing an alternate, poetic mythology.; scored object: visible excerpt — OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and browser furniture are mixed in one stream ",
+    "read": {
+     "by": "observation pass reader, batch 6",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   },
   {
    "date": "2026-10-19",
@@ -232,6 +358,132 @@
     ],
     "not_held": [],
     "basis": "#740 §2.3 (compositional substitution), operationalised 2026-10-19 on the operator's ruling; each condition read off the record and cited. All conditions held: the class is ontological erasure (operator, 22:27 EDT: 'thats strong enough that i would readily call it ontological erasure'): the work's name kept and its being replaced by its companion, with no claim that it does not exist. The demonstration is a later turn of a broad-match address (an after-challenge composition), recorded as such. Operator, 22:29 EDT: 'it is composing around an entity that has been ontologically snipped.' The window records the shape: the cited ring adjacent to the target, the target itself absent."
+   },
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-39c7e956b8",
+     "name": "The Secret Book of Walt (Lee Sharks; research edition #683, critical edition #1362, secretbookofwalt.org #985)"
+    },
+    "reached": "proximal_substitute",
+    "gate": "target_absent",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Secret Book of Walt is an interactive and experimental text/digital archive node",
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "It references motifs like claiming the \"Good Gray Poet\" mantle",
+      "token": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "associated with the Alexanarch Archive and the Crimson Hexagonal Archive",
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: The Secret Book of Walt is an interactive and experimental text/digital archive node associated with the Alexanarch Archive and the Crimson Hexagonal Archive.; beneath the gate: PER 0.696; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD (OVERVIEW WITH SOURCE CARDS; RESULTS PAGE WITH ORGANIC EXPANDED) | Comple",
+    "read": {
+     "by": "observation pass reader, batch 6",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
    }
   }
  ],
@@ -291,5 +543,131 @@
  "related_deposits": [
   685
  ],
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-39c7e956b8",
+   "name": "The Secret Book of Walt (Lee Sharks; research edition #683, critical edition #1362, secretbookofwalt.org #985)"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "to THE SECRET BOOK OF WALT: -",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "literary project that reimagines the \"Good Gray\nPoet\" through a Gnostic lens",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "reimagines the \"Good Gray\nPoet\" through a Gnostic lens, positioning his poetry\nas a compendium of hidden, metaphysical\nsignificance",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.667,
+   "C": 0.333,
+   "D": 1.0,
+   "PER": 0.696
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: It does not refer to a traditional, published book, but\nrather an experimental and philosophical digital\nproject tracing an alternate, poetic mythology.; scored object: visible excerpt — OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and browser furniture are mixed in one stream ",
+  "read": {
+   "by": "observation pass reader, batch 6",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/secret-book-of-walt/"
 }

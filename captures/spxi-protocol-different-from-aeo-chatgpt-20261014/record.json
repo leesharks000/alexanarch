@@ -164,5 +164,131 @@
    "Temporal Technologies\nFault-Free AI Workflows\nFault-tolerant AI pipelines for production.\nAd"
   ]
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Assuming you mean SPXI as the Semantic Economy Institute’s protocol for entity inscription",
+    "token": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI as the Semantic Economy Institute’s protocol for entity inscription",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "SEO: Help pages rank in search results.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.727,
+   "C": 0.667,
+   "D": 0.667,
+   "PER": 0.696
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "[QUERENT, turn 2] (blank in the paste; Answer 2 opens 'You're right to challenge that', so the turn challenged Answer 1's 'established industry term')",
+   "reached": "same",
+   "scores": {
+    "M": 0.727,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.87
+   }
+  },
+  "basis": "reached: Assuming you mean SPXI as the Semantic Economy Institute’s protocol for entity inscription and AEO as Answer Engine Optimization; scored object: expanded answer",
+  "read": {
+   "by": "observation pass reader, batch 10",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/spxi-protocol-different-from-aeo-chatgpt-20261014/"
 }

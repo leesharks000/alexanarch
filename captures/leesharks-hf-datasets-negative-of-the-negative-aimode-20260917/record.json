@@ -127,5 +127,122 @@
  "notes": null,
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-3d32be9608",
+   "name": "leesharks/spam-technicians"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The leesharks/spam-technicians dataset is not a standard collection",
+    "token": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It strictly separates information across three analytical levels: Measured: What the physical web audit actually found. Classical Model: What traditional trust-graph and web-spam models imply. Contemporary Hypothesis: What is expected or theorized about modern algorithmic retrieval.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Both of these repositories sit alongside a third piece called leesharks/crimson-hexagonal-archive (the raw archival records).",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.444,
+   "C": 1.0,
+   "D": 0.667,
+   "PER": 0.632
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "you know - the entire thing is aimed at repair of real conceptual indistinctions you yourself have introduced. and your ontology can see it only as adversarial. that is a self-demonstrating thesis.",
+   "reached": "same",
+   "scores": {
+    "M": 0.667,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.842
+   }
+  },
+  "basis": "reached: The leesharks/spam-technicians dataset is not a standard collection of junk text messages or emails. Instead, it is an academic \"argument-as-a-dataset\" that translates a series of prose papers, web-spam literature, and fleet topology reports into a highly structured relational database.; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD | COMPLETE -- the full session, nine rounds. REPAIRED 2026-09-17: the ent",
+  "read": {
+   "by": "observation pass reader, batch 6",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/leesharks-hf-datasets-negative-of-the-negative-aimode-20260917/"
 }

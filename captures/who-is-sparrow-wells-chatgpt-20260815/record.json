@@ -73,7 +73,124 @@
     "truncated-by-interface"
    ],
    "obs_id": "OBS-7e7715b4bee2",
-   "cite": "https://www.alexanarch.org/captures/who-is-sparrow-wells-chatgpt-20260815/"
+   "cite": "https://www.alexanarch.org/captures/who-is-sparrow-wells-chatgpt-20260815/",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-62d5e41cb0",
+     "name": "Patacinematics"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Sparrow Wells is described as the founding voice and 'Projectionist' of the Studio for Patacinematics",
+      "token": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The project treats 'patacinematics' as an experimental practice",
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "it is less a conventional film genre than a conceptual/artistic framework",
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "associated with the Studio for Patacinematics",
+      "token": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "the seventh heteronym in the larger Crimson Hexagon system",
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Wells is credited with works including Reading a Book with Lee",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.111,
+     "C": 0.333,
+     "D": 0.667,
+     "PER": 0.333
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: The project treats 'patacinematics' as an experimental practice involving cinema, language, recursive systems, semantic collapse, and performance.; scored object: visible excerpt | CAPTURE-TIME VERBATIM RECORD — raw paste, with screenshot frame | TRUNCATED BY INTERFACE — the answer ",
+    "read": {
+     "by": "observation pass reader, batch 8",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -134,5 +251,122 @@
  "analysis": null,
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-62d5e41cb0",
+   "name": "Patacinematics"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sparrow Wells is described as the founding voice and 'Projectionist' of the Studio for Patacinematics",
+    "token": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The project treats 'patacinematics' as an experimental practice",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it is less a conventional film genre than a conceptual/artistic framework",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "associated with the Studio for Patacinematics",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the seventh heteronym in the larger Crimson Hexagon system",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Wells is credited with works including Reading a Book with Lee",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.111,
+   "C": 0.333,
+   "D": 0.667,
+   "PER": 0.333
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The project treats 'patacinematics' as an experimental practice involving cinema, language, recursive systems, semantic collapse, and performance.; scored object: visible excerpt | CAPTURE-TIME VERBATIM RECORD — raw paste, with screenshot frame | TRUNCATED BY INTERFACE — the answer ",
+  "read": {
+   "by": "observation pass reader, batch 8",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/who-is-sparrow-wells-chatgpt-20260815/"
 }

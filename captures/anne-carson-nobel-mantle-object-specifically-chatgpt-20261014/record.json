@@ -133,5 +133,113 @@
  "notes": {
   "date_basis": "The operator's message of 2026-10-14, 15:48 EDT."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-9b5503a175",
+   "name": "Anne Carson (b. 1950)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "the day Carson was awarded the Nobel Prize in Literature",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Carson's Nox is an elegy for her brother",
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "on October 8, 2026, the day Carson was awarded",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The document explicitly says that it does not contest the award itself.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Swedish Academy's official citation describes Carson's writing as",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "published in the Crimson Hexagonal Archive on October 8, 2026",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "It incorporates photographs, fragments, notes and a translation of Catullus's poem 101",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.714,
+   "PER": 0.263
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: It is a critical document created by Lee Sharks and published in the Crimson Hexagonal Archive on October 8, 2026, the day Carson was awarded the Nobel Prize in Literature.; scored object: expanded answer (one ChatGPT answer, complete)",
+  "read": {
+   "by": "observation pass reader, batch 13",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/anne-carson-nobel-mantle-object-specifically-chatgpt-20261014/"
 }

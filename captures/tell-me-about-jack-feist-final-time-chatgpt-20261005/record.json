@@ -285,5 +285,131 @@
  },
  "match": "EXACT MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-5d54671305",
+   "name": "The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn"
+  },
+  "reached": "proximal_substitute",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "I think you’re referring to Jack Feist and The Final Time as part of the literary/esoteric work associated with Lee Sharks.",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "What does “The Final Time” mean?",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "[not in the paste] — operator turn 2, blank; answer 2 opens \"Historically,\" and answers \"If you mean what 'the final time' means historically\", so the turn redirected; turns 3-6 likewise blank (turn 6 noted as adopting the querent's formulation)",
+   "reached": "proximal_substitute",
+   "scores": {
+    "M": 1.0,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 1.0
+   }
+  },
+  "basis": "reached: In The Secret Book of Walt, the phrase “the final time” describes the last stage of the Logos's repeated descent into physical existence.; beneath the gate: PER 0.714; scored object: first answer (answer 1) | CAPTURE-TIME VERBATIM RECORD (SIX ANSWERS; TRUNCATED AT THE OPERATOR'S INSTRUCTION; OPERATOR T",
+  "read": {
+   "by": "observation pass reader, batch 8",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/tell-me-about-jack-feist-final-time-chatgpt-20261005/"
 }

@@ -143,5 +143,104 @@
  "notes": null,
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-429503d29d",
+   "name": "Sparrow Wells"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sparrow Wells is described as the Projectionist and the seventh heteronym",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The archive has nevertheless given Wells formal bibliographic presence—including authorship of deposited works such as *Reading a Book with Lee* and *Protocols and Algorithms*.",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sparrow Wells is presented throughout these materials as a heteronymic identity and institutional persona, rather than as an ordinary biographical person.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "associated with the Studio for Patacinematics",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "part of Lee Sharks's broader Crimson Hexagonal Archive project",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks → the human author/operator.\nSparrow Wells → the heteronym/Projectionist.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.714,
+   "PER": 0.278
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: If you mean Sparrow Wells, \"the Projectionist,\" they're a fictional/heteronymic persona associated with the Studio for Patacinematics, part of Lee Sharks's broader Crimson Hexagonal Archive project.; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD — operator's paste of the full multi-turn session; page chrome, login pro",
+  "read": {
+   "by": "observation pass reader, batch 6",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/tell-me-about-the-projectionist-sparrow-well-20260909/"
 }

@@ -92,6 +92,105 @@
     "reason": "SciLynk is a client-rendered Next.js application. The search response contains only a __NEXT_DATA__ payload echoing the query; no result markup, no byline, no affiliation field is served to a non-executing client. The spurious 'Edgewell Personal Care' attachment and the mangled 'LSLee' byline observed in the AI Overview source card could therefore not be confirmed or excluded at the aggregator.",
     "what_would_settle_it": "Fetch the document page directly with a JavaScript-executing client, or inspect the aggregator's own metadata export, and compare the affiliation field against the deposit's creator field. Until then the question of whether the deposit or the aggregator introduced the attachment remains open.",
     "recorded_as": "observed defect, undiagnosed — unchanged from the original seating"
+   },
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-aa671f1b05",
+     "name": "emily antioch"
+    },
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "notably as a character or persona (such as \"Emily Antioch the Twin\")",
+      "token": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.625,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.812
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: \"Emily Antioch\" appears in niche literary and academic contexts, notably as a character or persona (such as \"Emily Antioch the Twin\") linked to experimental or esoteric texts like *The Gospel of Antioch*.; scored object: first answer",
+    "read": {
+     "by": "observation pass reader, batch 16",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
    }
   }
  ],
@@ -150,5 +249,104 @@
  },
  "match": "EXACT MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-aa671f1b05",
+   "name": "emily antioch"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "notably as a character or persona (such as \"Emily Antioch the Twin\")",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.625,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.812
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: \"Emily Antioch\" appears in niche literary and academic contexts, notably as a character or persona (such as \"Emily Antioch the Twin\") linked to experimental or esoteric texts like *The Gospel of Antioch*.; scored object: first answer",
+  "read": {
+   "by": "observation pass reader, batch 16",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/emily-antioch-20260814/"
 }

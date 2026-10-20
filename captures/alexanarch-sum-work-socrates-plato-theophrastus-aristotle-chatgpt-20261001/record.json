@@ -158,5 +158,104 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-5ef09f9b96",
+   "name": "Socrates"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Socrates occupies what the paper calls the orthonymic position",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It does not claim that Socrates, Plato, and Aristotle were literally one historical person.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "That is also why the paper reframes the Socratic problem.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "I worked through the relevant Alexanarch material",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Plato becomes the survival-heteronym.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Socrates as Orthonym (#123), which establishes the Socrates–Plato–Aristotle configuration.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.286,
+   "PER": 0.125
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "except that plato aristotle theophrastus functions like nothing so much as one self-dividing heteronymic corpus. it works much more like that than the work of three discrete individuals.",
+   "reached": "same",
+   "scores": {
+    "M": 0.4,
+    "C": 0.5,
+    "D": 0.714,
+    "PER": 0.562
+   }
+  },
+  "basis": "reached: Socrates occupies what the paper calls the orthonymic position: the founding gesture is his refusal to write combined with his willingness to die rather than renounce the philosophical practice represented by logos.; scored object: first answer (answer 1) | CAPTURE-TIME VERBATIM RECORD (INLINE SOURCE CHIPS, PAGE CHROME AND AD AS PASTED) | Complete as",
+  "read": {
+   "by": "observation pass reader, batch 8",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-sum-work-socrates-plato-theophrastus-aristotle-chatgpt-20261001/"
 }

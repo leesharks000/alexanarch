@@ -163,5 +163,113 @@
   "basis": "The Capture Registry (EA-WG-CAPTURES-01, #3) is the archive's instrument; the address asks for it read as a narrative. Recorded 2026-10-18."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-d504b47989",
+   "name": "Capture Registry"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Reading the Capture Registry as an evolving narrative",
+    "token": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks — the author and investigator. Sharks creates the registry",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "v12.167 · current edition identified",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The narrative is an interpretation of a documentary series, and its scenes are dated records of machine behavior.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagonal Archive, and subsequently Alexanarch as its documentary environment",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "14 August 2026\nv10.9",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.5,
+   "D": 0.667,
+   "PER": 0.316
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The most productive way to read the Capture Registry at Alexanarch  is not as a static database of AI search results, but as a serial narrative; scored object: expanded answer",
+  "read": {
+   "by": "observation pass reader, batch 21",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/capture-registry-evolving-narrative-chatgpt-20261018/"
 }

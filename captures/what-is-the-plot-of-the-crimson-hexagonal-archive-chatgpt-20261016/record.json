@@ -190,5 +190,113 @@
   "basis": "The Crimson Hexagonal Archive is the archive itself; the address asks for its plot, which the answer composes from #27 and crimsonhexagonal.org. Recorded 2026-10-16."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "archive",
+  "target": {
+   "ent": "ENT-a200e5fad9",
+   "name": "Crimson Hexagonal Archive"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagonal Archive is not a conventional novel with one continuous plot.",
+    "token": null
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "an experimental literary and philosophical project created by Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The Crimson Hexagonal Archive is an ongoing, experimental epic about resisting the capture of human meaning",
+    "token": null
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Its hexagonal structure evokes Jorge Luis Borges's The Library of Babel",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.111,
+   "C": 1.0,
+   "D": 0.667,
+   "PER": 0.474
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: It’s an experimental literary and philosophical project created by Lee Sharks; scored object: expanded answer (full composition as pasted) (ChatGPT, chips inline)",
+  "read": {
+   "by": "observation pass reader, batch 15",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/what-is-the-plot-of-the-crimson-hexagonal-archive-chatgpt-20261016/"
 }

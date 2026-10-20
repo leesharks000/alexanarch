@@ -134,7 +134,115 @@
     "https://www.alexanarch.org/data/captures/machine-eligible-handwritten-artifacts-definitional-adoption-20260725/screengrab-20260725-131650.png"
    ],
    "cite": "https://www.alexanarch.org/captures/machine-eligible-handwritten-artifacts-definitional-adoption-20260725/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-e24b5e5dff",
+     "name": "Machine-Eligible Handwritten Artifacts"
+    },
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Machine-eligible handwritten artifacts are analog physical manuscripts",
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.667,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.842
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: Machine-eligible handwritten artifacts are analog physical manuscripts paired with a disciplined machine-readable companion layer; scored object: expanded answer (raw paste; source strip intact, tail unproven)",
+    "read": {
+     "by": "observation pass reader, batch 22",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -199,6 +307,114 @@
   "search_exact": "https://www.google.com/search?q=%22EA-SPXI-ANALOG-01%3A+Machine-Eligible+Handwritten+Artifacts+%28v1.0+final+form%2C+edition+of+record+2026-07-21%29%22",
   "reached": false,
   "basis": "title run (derived 2026-10-12, rebuild/capture-registry/repair-20261012-extract-cards/intended_runs.py)"
+ },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-e24b5e5dff",
+   "name": "Machine-Eligible Handwritten Artifacts"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Machine-eligible handwritten artifacts are analog physical manuscripts",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.667,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.842
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Machine-eligible handwritten artifacts are analog physical manuscripts paired with a disciplined machine-readable companion layer; scored object: expanded answer (raw paste; source strip intact, tail unproven)",
+  "read": {
+   "by": "observation pass reader, batch 22",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
  },
  "record_url": "https://www.alexanarch.org/captures/machine-eligible-handwritten-artifacts-definitional-adoption-20260725/"
 }

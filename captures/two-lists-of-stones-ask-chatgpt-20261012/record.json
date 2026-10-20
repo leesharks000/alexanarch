@@ -148,5 +148,131 @@
   "reached_basis": "The chip is a Goodreads page; the answer's Greek terms and loci are #1592's text.",
   "verified": "Compared 2026-10-12 against the seated text of #1592 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-09c2a9939b",
+   "name": "Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The central argument of Lee Sharks’s “Two Lists of Stones",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "“Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)”",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated September 7, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it lays out the evidence without claiming direct influence, proposing a source, or imposing an allegory.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "This is why the title calls the work a groundwork note.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.667,
+   "D": 1.0,
+   "PER": 0.522
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The central argument of Lee Sharks’s “Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)” is; scored object: expanded answer: ChatGPT answer 1, complete as pasted",
+  "read": {
+   "by": "observation pass reader, batch 1",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/two-lists-of-stones-ask-chatgpt-20261012/"
 }

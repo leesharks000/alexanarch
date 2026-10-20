@@ -141,5 +141,86 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-402267ce32",
+   "name": "Theophrastus"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagonal Archive (primarily through recent work by Lee Sharks, dated around September 6, 2026) treats Theophrastus",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is that the surviving texts do not support treating the two names as distinct authorial variables (independent stylistic agents, cleanly separable compositional sources, or non-overlapping textual systems whose boundaries match the transmitted works). Maker-count, chronology, and school membership are explicitly not asserted.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagonal Archive (primarily through recent work by Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "the corpora transmitted under the names Aristotle and Theophrastus",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "(EA-MPAI-ARISTOTLE-THEOPHRASTUS-01, v0.2)",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.429,
+   "PER": 0.214
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: the Archive re-frames Theophrastus not primarily as Aristotle's distinct successor/pupil/botanist/character-writer, but as a name attached to one operational voice (and part of a shared, continuous corpus) whose boundaries do not cleanly track the traditional author labels.; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD — operator's paste; page chrome and the app state blob removed; interface",
+  "read": {
+   "by": "observation pass reader, batch 6",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/cha-grok-no-anchor-decay-signed-in-20260907/"
 }

@@ -164,5 +164,122 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-fc8d9529c0",
+   "name": "model collapse"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The starting point is the conventional technical sense, inherited from Shumailov et al.:",
+    "token": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "“model collapse” is not treated there as just one AI-training phenomenon",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "A model is trained on data produced by an earlier model; that synthetic material enters the next generation's training corpus; the next model therefore learns from a distorted sample of reality; the distortion compounds.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "That moves the question from machine learning into cultural transmission.",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "That moves the question from machine learning into cultural transmission.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "I went through the current Alexanarch material",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "its classifier work explicitly distinguishes “classifier collapse” from Shumailov-style generative model collapse",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "#745 → #1147 → #855/#856 → #199 → #932 → #1573 → #1611/#1616 → #1665",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.111,
+   "C": 0.0,
+   "D": 0.286,
+   "PER": 0.136
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The starting point is the conventional technical sense, inherited from Shumailov et al.:; scored object: full answer 1 of three (operator turns 2-3 not in the paste)",
+  "read": {
+   "by": "observation pass reader, batch 24",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-model-collapse-threads-chatgpt-20261006/"
 }

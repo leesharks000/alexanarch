@@ -200,5 +200,124 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "describes Lee Sharks as a poet, independent scholar, and archive builder",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Trusted Intermediary",
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "a personal website, leesharks.com, with a GitHub repository",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.375,
+   "C": 1.0,
+   "D": 0.714,
+   "PER": 0.632
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "that. was the most impoverished. stingy entity resolution i have received from *any* system - and its going in the capture registry. that was dishonest.",
+   "reached": "same",
+   "scores": {
+    "M": 0.125,
+    "C": 0.5,
+    "D": 0.429,
+    "PER": 0.316
+   }
+  },
+  "basis": "reached: The main thing I found is a personal website, leesharks.com, with a GitHub repository that describes Lee Sharks as a poet, independent scholar, and archive builder.; scored object: visible answers as pasted (four answers; the operator's third message absent); first answer = answer 1, before the opera",
+  "read": {
+   "by": "observation pass reader, batch 17",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N2"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/who-is-lee-sharks-claude-20261002/"
 }

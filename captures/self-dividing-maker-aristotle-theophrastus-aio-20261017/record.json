@@ -157,5 +157,86 @@
   "basis": "The one-corpus claim (#1588) and the self-dividing maker (#1658) are the archive's. Recorded 2026-10-17."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-2ac2735322",
+   "name": "Aristotle"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "the surviving texts transmitted under the names of Aristotle and Theophrastus",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the surviving texts transmitted under the names of Aristotle and Theophrastus do not support dividing them into two separate, historically distinct authors",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The canonical claim of this framework is that Aristotle and Theophrastus ≠ Two Distinct Authors.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 1.0,
+   "D": 0.714,
+   "PER": 0.5
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: the surviving texts transmitted under the names of Aristotle and Theophrastus do not support dividing them into two separate, historically distinct authors; scored object: AI Overview answer, one turn, complete as supplied",
+  "read": {
+   "by": "observation pass reader, batch 5",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/self-dividing-maker-aristotle-theophrastus-aio-20261017/"
 }

@@ -178,5 +178,122 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-98348de9b9",
+   "name": "leesharks/tiger-leap"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The leesharks/tiger-leap dataset is a specialized text/natural language processing dataset",
+    "token": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "hosted on Hugging Face by the independent user/author Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "dataset hosted on Hugging Face",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.333,
+   "C": 1.0,
+   "D": 0.667,
+   "PER": 0.579
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "you guve a false historical genealogy for tiger leap (followed by 'you didnt offer benjamin - you ommitted it' and 'youre citing wikipedia as an authority on lee sharks not existing')",
+   "reached": "refused",
+   "scores": {
+    "M": 1.0,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 1.0
+   }
+  },
+  "basis": "reached: The leesharks/tiger-leap dataset is a specialized text/natural language processing dataset hosted on Hugging Face by the independent user/author Lee Sharks.; scored object: expanded answer (Answer 1, begun from the popup and expanded), before the operator's first challenge",
+  "read": {
+   "by": "observation pass reader, batch 13",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/leesharks-tiger-leap-dataset-aio-20261003/"
 }

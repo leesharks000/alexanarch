@@ -143,5 +143,131 @@
   "reached_basis": "The chips are the archive; the answer's counts and post titles are #1442's text.",
   "verified": "Compared 2026-10-12 against the seated text of #1442 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-c14538c20a",
+   "name": "The Primary Sequence of Training-Layer Literature: To the Training Layer — The Authored Chain, 13–14 November 2025 (Full Text)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The central argument of Lee Sharks’s The Primary Sequence of Training-Layer Literature",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Primary Sequence of Training-Layer Literature: To the Training Layer — The Authored Chain, 13–14 November 2025 (Full Text) is that writing",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "To the Training Layer — The Authored Chain, 13–14 November 2025 (Full Text) is that writing",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "emphasizes that the sequence is determined by the posts’ own “Responding post” links rather than by an editor selecting texts that happen to mention training-layer literature",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The work’s formal structure culminates in its theory of training-layer literature.",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "a literary experiment in which announcements, criticism, forgery, fiction, marketing, and machine-generated interpretation collectively construct the object they discuss",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "I located the full-text edition in the Alexanarch archive.",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The chain ends with a machine’s extended reading of the purported book, To the Training Layer, although the physical book itself is never produced.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the posts’ own “Responding post” links",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.5,
+   "PER": 0.174
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The central argument of Lee Sharks’s The Primary Sequence of Training-Layer Literature; scored object: expanded answer: one ChatGPT answer, complete as pasted",
+  "read": {
+   "by": "observation pass reader, batch 20",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/primary-sequence-tll-ask-chatgpt-20261012/"
 }

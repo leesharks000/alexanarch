@@ -242,6 +242,10 @@ def seat_flat(draft, registry, schema):
     import jsonschema
     req = ["q", "date", "surface", "auth", "ev", "s", "transcript", "d", "originator"]  # originator required for new intake (2026-09-25)
     missing = [k for k in req if draft.get(k) in (None, "", "null")]
+    # DIMENSIONAL PER AT INTAKE (cutover 2026-10-19, rubric rebuild/capture-registry/per-atoms/templates.json). Recorded, not
+    # refused (laws record): a new capture without per_dim is seated and named here, so the backlog cannot grow unseen.
+    if not draft.get("per_dim"):
+        print("   NOTICE: no per_dim (dimensional PER, PER-dim rubric v1.0); the historical scalar alone will be seated — score it under the rubric")
     if missing: raise Refused("ADMIT refused — missing: %s (transcript, date, surface, auth are the contract; q, ev, s, d are the record; originator says whose entity it is)" % missing)
     # ROUTE: exact issued string on the same surface → observation on the existing entry
     for e in registry["entries"]:
@@ -252,7 +256,7 @@ def seat_flat(draft, registry, schema):
             # its presented set, and its reading. Found missing on the 11 Sept seatings and repaired by hand
             # at the mint of #1611; fixed here at intake so it is never missing again (2026-09-15).
             obs["slug"] = draft.get("slug") or f"{e['slug']}-{draft['date'].replace('-', '')}"
-            for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors"):
+            for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors", "per_v", "per_dim", "availability"):
                 if draft.get(k) is not None:
                     obs[k] = draft[k]
             # 2026-09-21: an entry seated before observations existed has no `observations` list, and its root

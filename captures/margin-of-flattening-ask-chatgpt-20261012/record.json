@@ -147,5 +147,133 @@
   "verified": "Compared 2026-10-12 against the seated text of #1666.",
   "furniture_cut": "You’re using our basic model. Log in or sign up for more intelligence."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-13dcc4b75b",
+   "name": "The Margin of Flattening: Two Thresholds, and Who Holds the Bag Between Them (EA-FLAT-MARGIN-01 v0.3)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The argument of The Margin of Flattening by Rex Fraction",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The text is The Margin of Flattening: Two Thresholds, and Who Holds the Bag Between Them (EA-FLAT-MARGIN-01 v0.3)",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "October 6, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Privately profitable, but socially negative. External costs accumulate.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Provenance debt is a particular part of the bag",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Fraction distinguishes the platform's private benefit from the benefit to society as a whole.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 1.0,
+   "PER": 0.435
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The argument of The Margin of Flattening by Rex Fraction; scored object: expanded answer: ChatGPT answer 1, complete as pasted",
+  "read": {
+   "by": "observation pass reader, batch 1",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N3"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/margin-of-flattening-ask-chatgpt-20261012/"
 }

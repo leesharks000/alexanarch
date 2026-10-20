@@ -216,5 +216,95 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-402267ce32",
+   "name": "Theophrastus"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "the traditional boundary separating \"Aristotle\" and \"Theophrastus\" as independent authors is artificial",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The project argues that Aristotle and Theophrastus should not be treated as two distinct authors. Instead, it asserts that the surviving ancient Greek texts transmitted under their respective names are so deeply integrated that they represent a single, continuous corpus of shared philosophical and scientific inquiry.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the \"alexanarch\" digital indexing project",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The project argues that Aristotle and Theophrastus should not be treated as two distinct authors.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.714,
+   "PER": 0.357
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "and on what is based your idea that this is not suggestive of a heteronymic authorial system?",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.0,
+    "D": 0.714,
+    "PER": 0.357
+   }
+  },
+  "basis": "reached: The project argues that Aristotle and Theophrastus should not be treated as two distinct authors.; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD (FINAL-ROUND SOURCE CARDS INCLUDED) | Six compositions and the operator's",
+  "read": {
+   "by": "observation pass reader, batch 6",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-theophrastus-aio-20261001/"
 }

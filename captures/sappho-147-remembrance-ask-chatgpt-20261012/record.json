@@ -148,5 +148,133 @@
   "reached_basis": "The Alexanarch chips name the archive; the answer's Greek and formulas are #1646's text.",
   "verified": "Compared 2026-10-12 against the seated text of #1646 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-bf905deb8d",
+   "name": "Sappho Fragment 147 Is Remembrance; Fragment 31 Supplies the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-147-01 v1.0)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The central argument of Lee Sharks’s “Sappho Fragment 147 Is Remembrance; Fragment 31 Supplies the Seat”",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sappho Fragment 147 Is Remembrance; Fragment 31 Supplies the Seat",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "28 September 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "“147 gives the horizon. 31 gives the mechanism. Neither answers for the other.”",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "how a future reader is positioned in Fragment 31",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The reperformance reading: André Lardinois’s interpretation, as represented in the packet",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The packet also associates this reading with the names Rebekah Cranes and Johannes Sigil, under which related work was published.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.75,
+   "PER": 0.348
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The central argument of Lee Sharks’s “Sappho Fragment 147 Is Remembrance; Fragment 31 Supplies the Seat”; scored object: expanded answer (one answer, complete as pasted)",
+  "read": {
+   "by": "observation pass reader, batch 19",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N3"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/sappho-147-remembrance-ask-chatgpt-20261012/"
 }

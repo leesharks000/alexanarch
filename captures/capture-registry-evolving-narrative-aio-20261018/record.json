@@ -253,5 +253,115 @@
   "basis": "The Capture Registry (EA-WG-CAPTURES-01, #3) is the archive's instrument; the address asks for it read as a narrative. Recorded 2026-10-18."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-d504b47989",
+   "name": "Capture Registry"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The AI Overview Capture Registry (EA-WG-CAPTURES-01) at Alexanarch",
+    "token": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks: The primary investigator, archivist, and operator of Alexanarch. Sharks documents the models' behavior like a field biologist tracking an invasive species.",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "The story begins in June 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "tracking machine-mediated reception events across AI models",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "(EA-WG-CAPTURES-01) at Alexanarch operates",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.222,
+   "C": 0.0,
+   "D": 0.5,
+   "PER": 0.263
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The AI Overview Capture Registry (EA-WG-CAPTURES-01) at Alexanarch operates as a live, empirical dataset tracking machine-mediated reception events across AI models.; scored object: expanded answer",
+  "read": {
+   "by": "observation pass reader, batch 21",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N1"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/capture-registry-evolving-narrative-aio-20261018/"
 }

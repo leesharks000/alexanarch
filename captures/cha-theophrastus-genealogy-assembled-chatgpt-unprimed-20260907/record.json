@@ -139,5 +139,95 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-402267ce32",
+   "name": "Theophrastus"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean \"Crimson Hexagonal Archive\" in relation to Theophrastus",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagonal Archive is a literary/scholarly archive associated with Lee Sharks. Its current corpus work explicitly includes Theophrastus",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.4,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.643
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "youre cherrypicking, sticking to the narrowest arguments without examining the genealogy of where they came from or what they precede to, and repeatedly credibility taxing when i have asked for the views of a specific names entity",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.0,
+    "D": 0.714,
+    "PER": 0.357
+   }
+  },
+  "basis": "reached: Therefore Theophrastus is treated as a custodian/transmitter, not merely Aristotle's successor.; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD — operator's paste of the full three-round session; page chrome (upload w",
+  "read": {
+   "by": "observation pass reader, batch 6",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907/"
 }

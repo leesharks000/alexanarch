@@ -156,5 +156,131 @@
   "reached_basis": "The answer says the poem's text was not retrievable; it reached the deposit's description (the author's blog) and #1660 (Alexanarch), not #1661's text.",
   "verified": "Compared 2026-10-12 against the seated text of #1661 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-1de7b67ed7",
+   "name": "GLYPHIC CHECKSUM — Seed · Cone · Leap"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The poem is attributed to Lee Sharks and Sen Kuro",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "“GLYPHIC CHECKSUM — Seed · Cone · Leap” by Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated October 2, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The published description identifies six sections, followed by a checksum of the checksum and a canonical line.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sharks's earlier specification, The Glyphic Checksum, adapts that idea to symbolic reading",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "a compressed packet is meant to test whether a reader can recover relationships that are not simply given away by the visible symbols",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "compressing a theoretical paper, The Seed in the Narrowing Cone, into a symbolic sequence",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.75,
+   "PER": 0.348
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The poem is attributed to Lee Sharks and Sen Kuro and dated October 2, 2026.; scored object: CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; QUERY FROM THE RECORD PAGE'S LINK; CHIPS INLINE) | One answer, complete as pas",
+  "read": {
+   "by": "observation pass reader, batch 2",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/seed-cone-leap-ask-chatgpt-20261012/"
 }

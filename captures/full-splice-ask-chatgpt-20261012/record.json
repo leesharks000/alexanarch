@@ -173,5 +173,140 @@
   "verified": "Compared 2026-10-12 against the seated text of #1667 and the deposits named in the reading.",
   "furniture_cut": "You’ll get smarter responses and can upload files, images, and more.; Sign up for free; Worked for 19s"
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-82cad84b76",
+   "name": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its own order, with Metaphysics Λ joined at eleven points (the edition, seated)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sigil is not simply arguing that Theophrastus and Aristotle discuss similar subjects",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The central argument of “The Metaphysics of Sigil I — The Full Splice” is that",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The edition uses content-derived sigils rather than relying exclusively on conventional numbering systems.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "it preserves Theophrastus’ entire fragment in its received order and inserts eleven passages from Aristotle at points where the inquiry calls for an explanation that Theophrastus has not supplied.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.333,
+   "C": 0.667,
+   "D": 0.75,
+   "PER": 0.565
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Turn 2, blank in the paste; Answer 2 opens 'Reading for coherence rather than accepting Sigil's editorial rationale', so the turn redirected the first answer. Answer 2 is the best later composition of the target; Answers 3-5 turn to the H3 reconstitution and to whether the texts are separate works (Answer 5 opens 'You're right').",
+   "reached": "same",
+   "scores": {
+    "M": 0.667,
+    "C": 0.667,
+    "D": 0.75,
+    "PER": 0.696
+   }
+  },
+  "basis": "reached: The central argument of “The Metaphysics of Sigil I — The Full Splice” is that Theophrastus’ On First Principles can be read as a continuous philosophical inquiry whose unanswered questions are illuminated by Aristotle’s Metaphysics Λ (Lambda).; scored object: full answer as pasted; transcript_class: CAPTURE-TIME VERBATIM RECORD (FIVE ANSWERS; FIRST QUERY FROM THE RECORD PAGE'S ",
+  "read": {
+   "by": "observation pass reader, batch 11",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/full-splice-ask-chatgpt-20261012/"
 }

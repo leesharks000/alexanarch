@@ -117,5 +117,115 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-1d584360b4",
+   "name": "Nobel Glas"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Nobel Glas's work there is an unusual blend",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Certified Center",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the site says Nobel Glas is a heteronym of Lee Sharks, analogous to a constructed literary identity in the tradition of Fernando Pessoa. It describes Glas as the research persona through which the Observatory operates, while identifying Lee Sharks as the orthonymic author surface.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The key concept is Glas's Semantic Deviation Principle:",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "the site says Nobel Glas is a heteronym of Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.5,
+   "D": 0.714,
+   "PER": 0.389
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "USER: \"yes, lets focus specifically on his work on accelerator classifiers\" (redirect to a named topic, not a plain acceptance); scored composition is the reply to it",
+   "reached": "same",
+   "scores": {
+    "M": 0.286,
+    "C": 0.5,
+    "D": 1.0,
+    "PER": 0.611
+   }
+  },
+  "basis": "reached: The site explicitly describes Glas as an “Adversarial Topologist” and says the Observatory is an apparatus rather than a conventional institution.; scored object: CAPTURE-TIME VERBATIM RECORD (FULL THREAD AS PASTED, FOUR OPERATOR TURNS, PAGE CHROME AND ADS INCLUDED) | Complete as su",
+  "read": {
+   "by": "observation pass reader, batch 2",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": [
+    "N2"
+   ]
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/nobel-glas-lagrangeobservatory-chatgpt-20260923/"
 }

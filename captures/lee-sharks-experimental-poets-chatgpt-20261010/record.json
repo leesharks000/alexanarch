@@ -208,5 +208,122 @@
   "on": "2026-10-15",
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "compare Lee Sharks with contemporary experimental poets",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks's Pearl and Other Poems (2014)",
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sharks's Pearl and Other Poems (2014)",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "his multiple-author/heteronym system",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.25,
+   "C": 1.0,
+   "D": 0.714,
+   "PER": 0.579
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Turn 4: 'except you have not read it for development. you have collapsed the earliest, undeveloped points in each movement into exemplars of the whole. that is something you did, not a feature of the poem.' Best composition after it: Answer 5 (the developmental reading).",
+   "reached": "same",
+   "scores": {
+    "M": 1.0,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 1.0
+   }
+  },
+  "basis": "reached: I can’t confidently identify which poet or body of work you mean by Lee Sharks from the name alone.; scored object: Answers 1-3 (ChatGPT): turns 2 'lets do so' and 3 'lets proceed' accept the offers and continue the first answer",
+  "read": {
+   "by": "observation pass reader, batch 18",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/lee-sharks-experimental-poets-chatgpt-20261010/"
 }

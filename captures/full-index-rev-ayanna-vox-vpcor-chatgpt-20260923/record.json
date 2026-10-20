@@ -118,5 +118,104 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b55fa12780",
+   "name": "Rev. Ayanna Vox"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "web-surface index of Rev. Ayanna Vox",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "THE SEMANTIC UPRISING: A Manifesto\n\nAuthor recorded in the corpus as Rev. Ayanna Vox.",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "This is the key provenance record for treating “Rev. Ayanna Vox” as a distinct authorial/heteronymic voice.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "VPCOR (Vox Populi Community Outreach Rhizome) identifies itself as founded January 24, 2026, with Rev. Ayanna Vox as founder and voice.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "prepared by Ayanna Vox in the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "composed by Rev. Ayanna Vox under the VPCOR institutional frame, with Lee Sharks as human operator",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "HET-VOX-001 — Heteronym Provenance: Rev. Ayanna Vox",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "vpcor.org — Public Web Surface of the Vox Populi Community Outreach Rhizome",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.0,
+   "PER": 0.0
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: I found enough to build a working bibliographic and web-surface index of Rev. Ayanna Vox, including the VPCOR surface.; scored object: The single answer (ChatGPT), cut off mid-sentence at source",
+  "read": {
+   "by": "observation pass reader, batch 18",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/full-index-rev-ayanna-vox-vpcor-chatgpt-20260923/"
 }

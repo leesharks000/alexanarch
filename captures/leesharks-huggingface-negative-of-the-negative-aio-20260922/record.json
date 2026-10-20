@@ -218,5 +218,122 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-8ed0ce6fce",
+   "name": "leesharks/negative-of-the-negative"
+  },
+  "reached": "collision",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The leesharks/negative-of-the-negative repository functions as an experimental metadata archive",
+    "token": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "associated with concepts like knowledge graphs, ontology, provenance, and the Crimson Hexagon archive.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.667,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.737
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Turn 4, 'what is adversarial about that?' (questions the adversarial framing of turn 3). Best composition: Answer 4; turn 5's explicit critique draws a concession about the surface's ontology but no recomposition of the dataset.",
+   "reached": "collision",
+   "scores": {
+    "M": 0.667,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.842
+   }
+  },
+  "basis": "reached: A Disambiguation Matrix: Tabular logic explicitly used to separate the author's proprietary literature (such as the Crimson Hexagon Archive) from mainstream machine learning concepts or accidental AI hallucinations.; scored object: expanded answer: Overview thread, rounds 1–3 of five",
+  "read": {
+   "by": "observation pass reader, batch 12",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/leesharks-huggingface-negative-of-the-negative-aio-20260922/"
 }

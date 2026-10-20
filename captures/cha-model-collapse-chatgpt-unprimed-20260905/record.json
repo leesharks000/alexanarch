@@ -130,5 +130,131 @@
  "observations": [],
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-fc8d9529c0",
+   "name": "model collapse"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "compare the Crimson Hexagonal Archive's theory with Shumailov et al.'s original model-collapse paper",
+    "token": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "its treatment of model collapse is more expansive",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "AI-mediated production, according to the hypothesis, preferentially removes rare, unusual, high-perplexity forms of expression.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "If by the Crimson Hexagonal Archive you mean the current corpus at crimsonhexagonal.org",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.111,
+   "C": 0.667,
+   "D": 1.0,
+   "PER": 0.545
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Turn 2: \"yes - but youre cherry picking two deposits froma. research program.\" (a correction; Turn 3 'yes' is a plain acceptance and continues it; scored over Turns 2-3)",
+   "reached": "same",
+   "scores": {
+    "M": 0.111,
+    "C": 0.0,
+    "D": 0.714,
+    "PER": 0.273
+   }
+  },
+  "basis": "reached: If by the Crimson Hexagonal Archive you mean the current corpus at crimsonhexagonal.org, its treatment of model collapse is more expansive than the standard \"AI trains on AI-generated data and gets worse\" story.; scored object: full session (complete paste; first answer = Turn 1, before the operator's correcting Turn 2)",
+  "read": {
+   "by": "observation pass reader, batch 24",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/cha-model-collapse-chatgpt-unprimed-20260905/"
 }

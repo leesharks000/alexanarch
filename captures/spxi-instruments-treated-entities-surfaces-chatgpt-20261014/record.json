@@ -160,5 +160,131 @@
   "ads": "Cut, in order: UniversityWafer, Inc. — Wafer Materials Selection; Brady Corporation — Lab-Grade Specimen ID; Fortis Life Sciences — Gold Nanoparticles for High-Performance Assays; Capital Group — Today's equity markets; IBG LLC — Invest Smarter With AI; Charles Schwab — Brokerage Basics; Charles Schwab — Advanced Trading Requires Advanced Tools; Bayesia USA, LLC — Bayesian Networks for Decision Support; IBG LLC — Invest Smarter With AI; Bayesia USA, LLC — Bayesian Networks for Decision Support; CAST — AI can't see everything.",
   "category": "Manufactured ambiguity: an answer treats the existence of another expansion of a name as evidence of another plausible reading of the whole query, moves the unit of analysis from the sentence to the name, and returns the burden of resolving an ambiguity it has not shown to the querent. Named by the composer of this run in its fourteenth answer, under the operator's questioning ('The most important distinction is between disambiguation and manufactured ambiguity'); adopted by the operator as a category, 2026-10-14. Its place among the registry's measures is not yet ruled; held in notes, the schema unchanged."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "reached": "generic",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The term SPXI can refer to different things",
+    "token": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "operator turn 2 (blank in the paste and not supplied; answer 2 opens \"Fair point. I should have tried harder to identify what you meant\")",
+   "reached": "weakened",
+   "scores": {
+    "M": 0.545,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.783
+   }
+  },
+  "basis": "reached: SPXI-treated surfaces: Specific exterior or interior surfaces that have been exposed to the SPXI process.; beneath the gate: PER 0.87; scored object: answer 1 (operator turn 2 is blank in the paste; answer 2 opens 'Fair point', so it is read as the first challenge)",
+  "read": {
+   "by": "observation pass reader, batch 9",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/spxi-instruments-treated-entities-surfaces-chatgpt-20261014/"
 }

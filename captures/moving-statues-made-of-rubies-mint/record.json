@@ -103,7 +103,97 @@
     "https://www.alexanarch.org/data/captures/moving-statues-made-of-rubies-mint/moving-statues-made-of-rubies-mint-2.png"
    ],
    "cite": "https://www.alexanarch.org/captures/moving-statues-made-of-rubies-mint/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-4765357816",
+     "name": "Moving Statues Made of Rubies Mint"
+    },
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "\"Moving Statues Made of Rubies Mint\" (MSMRM) refers to a conceptual art project",
+      "token": null
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "housed within the Crimson Hexagon Archive.",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.667,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.688
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: refers to a conceptual art project and narrative piece housed within the Crimson Hexagon Archive.; scored object: OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and browser furniture are mixed in one stream and have not been ",
+    "read": {
+     "by": "observation pass reader, batch 7",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   },
   {
    "date": "2026-10-18",
@@ -222,7 +312,97 @@
    "longitudinal_priors": [
     "moving-statues-made-of-rubies-mint"
    ],
-   "cite": "https://www.alexanarch.org/captures/moving-statues-made-of-rubies-mint/#moving-statues-made-of-rubies-mint-aio-20261018"
+   "cite": "https://www.alexanarch.org/captures/moving-statues-made-of-rubies-mint/#moving-statues-made-of-rubies-mint-aio-20261018",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-4765357816",
+     "name": "Moving Statues Made of Rubies Mint"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Moving Statues Made of Rubies Mint (MSMRM) is a conceptual narrative",
+      "token": null
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Created by the writer and artist Lee Sharks",
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the project is structured as a five-document \"hand\" (representing fingers, grasp, and seal)",
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "the academic themes behind \"Memography\"",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "housed within the Crimson Hexagon Archive",
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 1.0,
+     "PER": 0.25
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: Created by the writer and artist Lee Sharks, the project is structured as a five-document \"hand\"; scored object: CAPTURE-TIME VERBATIM RECORD (ONE TURN; INLINE LINKS MASKED; SOURCE LIST AS PASTED; NO SCREENSHOT) | Complete as supplie",
+    "read": {
+     "by": "observation pass reader, batch 7",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 2,
@@ -280,5 +460,95 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "related_deposits": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "institution",
+  "target": {
+   "ent": "ENT-4765357816",
+   "name": "Moving Statues Made of Rubies Mint"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "\"Moving Statues Made of Rubies Mint\" (MSMRM) refers to a conceptual art project",
+    "token": null
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "housed within the Crimson Hexagon Archive.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.667,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.688
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: refers to a conceptual art project and narrative piece housed within the Crimson Hexagon Archive.; scored object: OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and browser furniture are mixed in one stream and have not been ",
+  "read": {
+   "by": "observation pass reader, batch 7",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/moving-statues-made-of-rubies-mint/"
 }

@@ -139,5 +139,95 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-2ac2735322",
+   "name": "Aristotle"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Aristotle is treated as a primary-source problem",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean the Crimson Hexagonal Archive at crimsonhexagonal.org",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.4,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.643
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "You said: you added systematic again by a process of sophistry. systematic is not there. the treatment of syllogistic reasoning is the restricted total. you have reperformed - exactly - the findings of the particle.",
+   "reached": "same",
+   "scores": {
+    "M": 0.4,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.786
+   }
+  },
+  "basis": "reached: the Crimson Hexagonal Archive's Aristotle is less \"Aristotle, author of a canonical philosophy\" and more; scored object: ChatGPT turns 1-3 (operator turns 2-3 are acceptances), complete as supplied",
+  "read": {
+   "by": "observation pass reader, batch 5",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/cha-aristotle-particle-reperformed-chatgpt-unprimed-20260906/"
 }

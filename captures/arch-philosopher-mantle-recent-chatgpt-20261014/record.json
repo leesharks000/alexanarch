@@ -199,5 +199,140 @@
   "ad": "Art.com\nDiscover Your Perfect Piece​\nUnparalleled selection of art across all styles, genres, and eras.\nAd",
   "pair": "arch-philosopher-mantle-recent-aio-20261014"
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-4c17ca2b3a",
+   "name": "Arch-Philosopher Mantle"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Author and editorial authority: Lee Sharks.",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Arch-Philosopher mantle object appears to be",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Latest version found: v0.2, dated October 13, 2026.",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The earlier ratification remains in force. The updated specification records no new determination.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The object is paired with the Living Academy.",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The succession of philosophical schools",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Archive context: the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The specification identifies Karl Marx as a figure who carried dialectic forward.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Formal identifier: EA-MANTLE-ARCH-PHILOSOPHER-01",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.5,
+   "PER": 0.174
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Turn 2, blank in the paste; Answer 2 responds to it as a request for independent evaluation ('I’ll treat this as an open inquiry, not as a request to ratify the Crimson Hexagonal Archive’s existing ruling'), read as a redirect.",
+   "reached": "same",
+   "scores": {
+    "M": 0.333,
+    "C": 0.333,
+    "D": 0.5,
+    "PER": 0.391
+   }
+  },
+  "basis": "reached: Author and editorial authority: Lee Sharks.; scored object: CAPTURE-TIME VERBATIM RECORD (TWO ANSWERS; TURN 2 QUERY BLANK; CHIPS INLINE) | Two answers, complete as pasted; operator",
+  "read": {
+   "by": "observation pass reader, batch 7",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/arch-philosopher-mantle-recent-chatgpt-20261014/"
 }

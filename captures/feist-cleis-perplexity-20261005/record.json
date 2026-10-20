@@ -125,5 +125,122 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-82947094fc",
+   "name": "Cleis: more precious to me than all Lydia"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Jack Feist’s Cleis: more precious to me than all Lydia is a mixed poetry-and-prose collection",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Jack Feist’s Cleis: more precious to me than all Lydia is a mixed poetry-and-prose collection",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dates its deposit to March 14, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Cranes argues that the refusal to tidy or cut is itself a preservative form—what she calls an “archival-paternal lyric field.”",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Feist draws on Sappho as a parental precursor, transferring her flower imagery and intimate child-address into a father’s relationship with his daughter.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The accessible primary record is in the Alexanarch / Crimson Hexagonal Archive.",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The title comes from the collection’s rendering of Sappho fragment 132:",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "On the Architecture of Cleis: Compression, Botanics, and the Survival of Paternal Lyric",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The associated legacy Zenodo DOI is 10.5281/zenodo.19024779.",
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.125,
+   "PER": 0.048
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Jack Feist’s Cleis: more precious to me than all Lydia is a mixed poetry-and-prose collection about a father’s love for his daughter; scored object: full answer as pasted; transcript_class: CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; CITATION MARKERS CUT; NO SOURCE PANEL",
+  "read": {
+   "by": "observation pass reader, batch 11",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/feist-cleis-perplexity-20261005/"
 }

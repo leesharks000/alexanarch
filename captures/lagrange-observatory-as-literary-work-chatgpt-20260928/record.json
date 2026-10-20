@@ -149,5 +149,104 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "site",
+  "target": {
+   "ent": "ENT-0bd4e384d9",
+   "name": "lagrangeobservatory.org"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The site calls Glas a “heteronymic identity” and distinguishes him from Lee Sharks, the orthonymic author surface.",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The interesting way to read Lagrange Observatory! is not primarily",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The site even calls itself part of the “Crimson Hexagonal Archive,”",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.625,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.562
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "you have said the costume of mathematics, prior to reading the mathematics. now i would like you to examine the mathematics, a identify where you have failed as a reader of literature",
+   "reached": "same",
+   "scores": {
+    "M": 0.625,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.812
+   }
+  },
+  "basis": "reached: The interesting way to read Lagrange Observatory! is not primarily as a research website that happens to contain literary material, but as a literary apparatus disguised as a research institution.; scored object: expanded answer: ChatGPT answer 1 (before the operator's challenge)",
+  "read": {
+   "by": "observation pass reader, batch 1",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/lagrange-observatory-as-literary-work-chatgpt-20260928/"
 }

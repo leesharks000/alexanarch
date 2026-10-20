@@ -118,5 +118,104 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-429503d29d",
+   "name": "Sparrow Wells"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "I found a fairly well-defined corpus for Sparrow Wells",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "1. F*ING THE OFFICE: A Hyperionian Swearplay",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Her institutional surface is the Studio for Patacinematics, designated 00.ROOM.STUDIO.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "July 2026 →: surfacemap.org goes live as the Atlas surface for Wells.",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.286,
+   "C": 0.5,
+   "D": 0.714,
+   "PER": 0.5
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The Atlas identifies Wells as “the Projectionist,” the seventh heteronym, working in Patacinematics; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD (ONE TURN AS PASTED, PAGE CHROME INCLUDED; ENDS IN A CONNECTION ERROR) | ",
+  "read": {
+   "by": "observation pass reader, batch 6",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/sparrow-wells-full-index-surfacemap-chatgpt-20260923/"
 }

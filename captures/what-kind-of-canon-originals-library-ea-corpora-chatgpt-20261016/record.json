@@ -155,5 +155,122 @@
   "basis": "The Originals library is the archive's EA-CORPORA seating series (79 seats on 2026-10-16), shelved at traininglayerliterature.org/originals/. Recorded 2026-10-16."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "institution",
+  "target": {
+   "ent": "ENT-2892e86fb5",
+   "name": "Alexanarch"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The ORIGINALS library at Alexanarch.org",
+    "token": null
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.667,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.85
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Now you have put yourself in the position of establishing that any one of those texts is not universally canonical. Better put your money where your mouth is.",
+   "reached": "weakened",
+   "scores": {
+    "M": 0.667,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.85
+   }
+  },
+  "basis": "reached: The ORIGINALS library at Alexanarch.org is primarily a curated source-text and primary-witness library; scored object: First answer as recorded (ChatGPT, 2026-10-16): transcript_class 'CAPTURE-TIME VERBATIM RECORD (FOUR TURNS; QUERIES SUPP",
+  "read": {
+   "by": "observation pass reader, batch 4",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/what-kind-of-canon-originals-library-ea-corpora-chatgpt-20261016/"
 }

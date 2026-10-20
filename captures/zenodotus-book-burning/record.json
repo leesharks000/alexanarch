@@ -159,7 +159,133 @@
    "series": null,
    "img_urls": [],
    "cite": "https://www.alexanarch.org/captures/zenodotus-book-burning/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-87704474bf",
+     "name": "Zenodotus' Book-Burning"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "The incident was detailed by independent researcher Lee Sharks in the paper",
+      "token": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "\"Zenodotus' Book-Burning: Loud Exclusion at Repository Scale\"",
+      "token": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "On June 19, 2026, a Zenodo administrator terminated the Crimson Hexagonal Archive",
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Pristine Fallacy: Substituting substrate identity (e.g., AI involvement) for actual methodological assessment of the research.",
+      "token": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Sharks' critique develops six primary concepts regarding digital repository censorship and AI-driven content moderation:",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "the sudden administrative deletion of the \"Crimson Hexagonal Archive,\"",
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "licence",
+      "dim": "D",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.222,
+     "C": 0.0,
+     "D": 1.0,
+     "PER": 0.435
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: The incident was detailed by independent researcher Lee Sharks in the paper \"Zenodotus' Book-Burning: Loud Exclusion at Repository Scale\".; scored object: full answer as pasted; transcript_class: CAPTURE-TIME VERBATIM RECORD, declared as such by the analyst inside the record",
+    "read": {
+     "by": "observation pass reader, batch 11",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -224,6 +350,132 @@
   "search_exact": "https://www.google.com/search?q=%22Zenodotus%27+Book-Burning%3A+Loud+Exclusion+at+Repository+Scale%22",
   "reached": false,
   "basis": "title run (derived 2026-10-12, rebuild/capture-registry/repair-20261012-extract-cards/intended_runs.py)"
+ },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-87704474bf",
+   "name": "Zenodotus' Book-Burning"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The incident was detailed by independent researcher Lee Sharks in the paper",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "\"Zenodotus' Book-Burning: Loud Exclusion at Repository Scale\"",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "On June 19, 2026, a Zenodo administrator terminated the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Pristine Fallacy: Substituting substrate identity (e.g., AI involvement) for actual methodological assessment of the research.",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks' critique develops six primary concepts regarding digital repository censorship and AI-driven content moderation:",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the sudden administrative deletion of the \"Crimson Hexagonal Archive,\"",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.222,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.435
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The incident was detailed by independent researcher Lee Sharks in the paper \"Zenodotus' Book-Burning: Loud Exclusion at Repository Scale\".; scored object: full answer as pasted; transcript_class: CAPTURE-TIME VERBATIM RECORD, declared as such by the analyst inside the record",
+  "read": {
+   "by": "observation pass reader, batch 11",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
  },
  "record_url": "https://www.alexanarch.org/captures/zenodotus-book-burning/"
 }

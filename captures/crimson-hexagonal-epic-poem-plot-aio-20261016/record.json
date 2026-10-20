@@ -174,5 +174,113 @@
   "basis": "The Crimson Hexagon is the archive's poem; the address asks for its plot. The answer composes from this registry's capture page (lee-sharks-crimson-hexagon-adoption, observation of 2026-08-14) and the Sigil packet (#248). Recorded 2026-10-16."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "archive",
+  "target": {
+   "ent": "ENT-a200e5fad9",
+   "name": "Crimson Hexagonal Archive"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagon does not have a traditional narrative plot",
+    "token": null
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Created primarily by the writer/persona Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "spanning from 2004 to 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it is a distributed, multi-authored cultural epic and conceptual architecture",
+    "token": null
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "alongside literary heteronyms like Johannes Sigil, Rex Fraction, and Jack Feist",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Would you like to explore the theoretical frameworks of Lee Sharks' NH-OS project",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.316
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The Crimson Hexagon does not have a traditional narrative plot because it is a distributed, multi-authored cultural epic and conceptual architecture.; scored object: expanded answer (full composition as pasted)",
+  "read": {
+   "by": "observation pass reader, batch 15",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/crimson-hexagonal-epic-poem-plot-aio-20261016/"
 }

@@ -73,7 +73,115 @@
     "truncated-by-interface"
    ],
    "obs_id": "OBS-2f80c917f136",
-   "cite": "https://www.alexanarch.org/captures/who-is-rex-fraction-chatgpt-20260815/"
+   "cite": "https://www.alexanarch.org/captures/who-is-rex-fraction-chatgpt-20260815/",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-f58f7f97b9",
+     "name": "Rex Fraction"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Rex Fraction is presented online as an author/'semantic architect,'",
+      "token": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "describes Rex Fraction as the author of 'Autonomous Semantic Warfare (ASW)'",
+      "token": null
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "works circulating under the Semantic Economy Institute / Crimson Hexagonal Archive",
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "works circulating under the Semantic Economy Institute / Crimson Hexagonal Archive",
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.375,
+     "C": 0.0,
+     "D": 1.0,
+     "PER": 0.526
+    },
+    "src": true,
+    "after_challenge": null,
+    "basis": "reached: Rex Fraction is presented online as an author/'semantic architect,'; scored object: first answer; CAPTURE-TIME VERBATIM RECORD — raw paste, with screenshot frame / TRUNCATED BY INTERFACE — the answer cont",
+    "read": {
+     "by": "observation pass reader, batch 23",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -134,5 +242,113 @@
  "analysis": null,
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-f58f7f97b9",
+   "name": "Rex Fraction"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Rex Fraction is presented online as an author/'semantic architect,'",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "describes Rex Fraction as the author of 'Autonomous Semantic Warfare (ASW)'",
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "works circulating under the Semantic Economy Institute / Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "works circulating under the Semantic Economy Institute / Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.375,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.526
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Rex Fraction is presented online as an author/'semantic architect,'; scored object: first answer; CAPTURE-TIME VERBATIM RECORD — raw paste, with screenshot frame / TRUNCATED BY INTERFACE — the answer cont",
+  "read": {
+   "by": "observation pass reader, batch 23",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/who-is-rex-fraction-chatgpt-20260815/"
 }

@@ -150,5 +150,131 @@
   "reached_basis": "The answers quote the poem's lines verbatim; the chips are the author's blog, so the text was reached through that surface.",
   "verified": "Compared 2026-10-12 against the seated text of #1642 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-2db3add318",
+   "name": "GLYPHIC CHECKSUM LINEAGE — Sen Kuro — New Human 2"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "by Sen Kuro by paying close attention",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "GLYPHIC CHECKSUM LINEAGE — Sen Kuro — New Human 2",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "The work is available in the September 27, 2026 archive entry",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It is a four-part glyph poem: instead of developing an argument in ordinary sentences, it uses emojis, arrows, mathematical notation, and a small amount of Greek",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "instead of developing an argument in ordinary sentences, it uses emojis, arrows, mathematical notation",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Its three main sections correspond to three earlier works: Tiger Leap, Transition in Entropic Systems, and The Final Time.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.667,
+   "D": 0.75,
+   "PER": 0.435
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: It is a four-part glyph poem; scored object: ChatGPT answers 1-2 (answer 2 continues answer 1 after a blank turn), complete as pasted",
+  "read": {
+   "by": "observation pass reader, batch 5",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/glyphic-checksum-lineage-ask-chatgpt-20261012/"
 }

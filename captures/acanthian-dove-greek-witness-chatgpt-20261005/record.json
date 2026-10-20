@@ -444,5 +444,140 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-52cab5cc87",
+   "name": "Acanthian dove"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "I couldn’t find an independent ancient Greek witness to the specific “Acanthian Dove” outside the Crimson Hexagon materials.",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The searches turn up the Acanthian Dove as a modern/archival construct",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "outside the Crimson Hexagon materials",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "deposited under DOI 10.5281/zenodo.18215706",
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.444,
+   "C": 0.667,
+   "D": 0.625,
+   "PER": 0.565
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "[not in the paste] — operator turn 2, blank; answer 2 responds to the operator's report of remembering the phrase (\"your memory of the word\"), i.e. new information redirecting the inquiry",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.333,
+    "D": 0.75,
+    "PER": 0.348
+   }
+  },
+  "basis": "reached: The searches turn up the Acanthian Dove as a modern/archival construct: the canonical item is The Acanthian Dove: A Fragment of Vanished Magic, Now Alive, deposited under DOI 10.5281/zenodo.18215706; scored object: first answer (answer 1) | CAPTURE-TIME VERBATIM RECORD (SEVEN ANSWERS; OPERATOR TURNS AFTER THE FIRST NOT IN THE PASTE; ",
+  "read": {
+   "by": "observation pass reader, batch 8",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/acanthian-dove-greek-witness-chatgpt-20261005/"
 }

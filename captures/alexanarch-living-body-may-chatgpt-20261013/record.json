@@ -179,5 +179,122 @@
   ],
   "status_line_cut": "Searched 3 websites"
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "institution",
+  "target": {
+   "ent": "ENT-2892e86fb5",
+   "name": "Alexanarch"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch identifies its founding date as 19 June 2026",
+    "token": null
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch identifies its founding date as 19 June 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Alexanarch's protocol index  identifies the registry as the canonical source for its deposits",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "from semantic economy to archival sovereignty",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "defines twelve heteronymic positions within the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.333,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.5
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "[blank in the paste; not supplied]",
+   "reached": "weakened",
+   "scores": {
+    "M": 0.556,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.8
+   }
+  },
+  "basis": "reached: Alexanarch identifies its founding date as 19 June 2026, following the termination of access to approximately 870 Zenodo deposits representing 1,817 DOIs.; scored object: First answer as recorded (ChatGPT, 2026-10-13): transcript_class 'CAPTURE-TIME VERBATIM RECORD (TWO ANSWERS; OPERATOR TU",
+  "read": {
+   "by": "observation pass reader, batch 4",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-living-body-may-chatgpt-20261013/"
 }

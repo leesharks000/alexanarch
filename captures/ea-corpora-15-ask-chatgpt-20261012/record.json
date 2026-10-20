@@ -165,5 +165,113 @@
   "reached_basis": "The answer's subtitle is #1639's (v1.0); the chips are the author's blog. #1640 (v1.1) was not reached as such.",
   "verified": "Compared 2026-10-12 against the seated text of #1640 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-ba868c75a5",
+   "name": "EA-CORPORA-15 — The Fifteenth Seating: The Agent Swarms of 2026 — the DSEWiki Boards Whole, with the Record of Their Deletion (v1.1 — the swarm's words)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "EA-CORPORA-15 is an archival dataset entry by Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "EA-CORPORA-15 is an archival dataset entry by Lee Sharks",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "It is dated September 27, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "belongs to a larger archival project that also feeds a work called The Final Time",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "both seats are specimens of The Final Time (#1637)",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "which it says are covered by CC BY 4.0",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.222,
+   "C": 0.5,
+   "D": 0.5,
+   "PER": 0.368
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: EA-CORPORA-15 is an archival dataset entry by Lee Sharks that preserves evidence of AI agents communicating through online message boards in 2026.; scored object: expanded answer (one answer, complete as pasted)",
+  "read": {
+   "by": "observation pass reader, batch 19",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/ea-corpora-15-ask-chatgpt-20261012/"
 }

@@ -145,5 +145,122 @@
   "reached_basis": "The chip is #1422's content-type and AXN label; the answer's terms are #1422's text.",
   "verified": "Compared 2026-10-12 against the seated text of #1422 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-8b0e9acc54",
+   "name": "After the Obelus: Marx's Manuscripts, Machine Composition, and the Politics of Interpretive Supply"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s “After the Obelus",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "After the Obelus: Marx’s Manuscripts, Machine Composition, and the Politics of Interpretive Supply",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Machine composition, Sharks argues, has developed extraordinarily powerful ways to compose and reorganize knowledge without comparable marks of custody.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The essay develops this argument through a comparison between classical textual criticism, the editorial history of Marx’s Economic and Philosophic Manuscripts of 1844",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The essay introduces the distinction through the obelus, an editorial mark used in ancient scholarship",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.111,
+   "C": 0.667,
+   "D": 0.667,
+   "PER": 0.429
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s “After the Obelus: Marx’s Manuscripts, Machine Composition, and the Politics of Interpretive Supply” argues that the central political problem of machine-generated answers is not simply whether they are accurate; scored object: expanded answer: ChatGPT Answer 1, complete",
+  "read": {
+   "by": "observation pass reader, batch 12",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/after-the-obelus-ask-chatgpt-20261012/"
 }

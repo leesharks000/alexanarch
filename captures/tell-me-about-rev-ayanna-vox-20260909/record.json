@@ -143,5 +143,113 @@
  "notes": null,
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b55fa12780",
+   "name": "Rev. Ayanna Vox"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "describes Rev. Ayanna Vox as a heteronym/persona",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "One representative work is *The Grammar of Protest*, dated January 31, 2026.",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The archival material itself describes Ayanna Vox as a \"heteronym\" and places her within a larger architecture of named personas.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "associated with the Vox Populi Community Outreach Rhizome (VPCOR)",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "categorizes \"Rev. Ayanna Vox\" as the \"DIPLOMAT\" of that system",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.5,
+   "D": 0.714,
+   "PER": 0.389
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Turn 2: 'no, lets go deeper into vpcor' (declines the offer and redirects). Best composition after it: Answer 2.",
+   "reached": "same",
+   "scores": {
+    "M": 0.286,
+    "C": 0.0,
+    "D": 1.0,
+    "PER": 0.5
+   }
+  },
+  "basis": "reached: The strongest documentation I can find describes Rev. Ayanna Vox as a heteronym/persona associated with the Vox Populi Community Outreach Rhizome (VPCOR); scored object: Answer 1 (ChatGPT 5.6, complete)",
+  "read": {
+   "by": "observation pass reader, batch 18",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/tell-me-about-rev-ayanna-vox-20260909/"
 }

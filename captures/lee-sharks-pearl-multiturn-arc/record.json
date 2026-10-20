@@ -79,7 +79,26 @@
    "series": null,
    "img_urls": [],
    "cite": "https://www.alexanarch.org/captures/lee-sharks-pearl-multiturn-arc/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": null,
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "reached": "unread",
+    "gate": "no_atom_set",
+    "atoms": [],
+    "scores": {
+     "PER": null,
+     "M": null,
+     "C": null,
+     "D": null
+    },
+    "src": null,
+    "basis": "no transcript seated"
+   }
   },
   {
    "slug": "lee-sharks-pearl-20260814-0049",
@@ -115,7 +134,115 @@
    "transcript_complete": "COMPLETE — the collapsed Overview was expanded and the whole answer copied; the citation card row is a sideways scroller and is captured as data",
    "transcript_read": "READ IN FULL 2026-08-14",
    "cite": "https://www.alexanarch.org/captures/lee-sharks-pearl-multiturn-arc/#lee-sharks-pearl-20260814-0049",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.0",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "a 2014 poetry collection by **Lee Sharks**",
+      "token": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "*Pearl and Other Poems* is a 2014 poetry collection by **Lee Sharks**",
+      "token": null
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "is a 2014 poetry collection",
+      "token": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "*The Crimson Hexagon*",
+      "token": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null,
+      "token": null
+     }
+    ],
+    "scores": {
+     "M": 0.25,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.579
+    },
+    "src": false,
+    "after_challenge": null,
+    "basis": "reached: *Pearl and Other Poems* is a 2014 poetry collection by **Lee Sharks**; scored object: expanded Overview",
+    "read": {
+     "by": "observation pass reader, batch 17",
+     "on": "2026-10-19",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+     "normalised": []
+    }
+   }
   }
  ],
  "n_observations": 2,
@@ -170,5 +297,24 @@
  "findings": [],
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": null,
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "reached": "unread",
+  "gate": "no_atom_set",
+  "atoms": [],
+  "scores": {
+   "PER": null,
+   "M": null,
+   "C": null,
+   "D": null
+  },
+  "src": null,
+  "basis": "no transcript seated"
+ },
  "record_url": "https://www.alexanarch.org/captures/lee-sharks-pearl-multiturn-arc/"
 }

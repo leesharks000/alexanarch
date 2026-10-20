@@ -146,5 +146,131 @@
   "reached_basis": "The chips are Goodreads pages; the answer's figures are #1456's text, one of them #1455's.",
   "verified": "Compared 2026-10-12 against the seated text of #1456 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-0d96c90eb4",
+   "name": "Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s Inversion Battery v0.3: Ten Registered Tests",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The reported result is that changing the scoring function alone is sufficient to reverse the directional ordering of the anomaly relation.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is an empirical research report about a particular failure mode in anomaly detection",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "In the v0.2 work, Sharks had written that architecture changes the orientation of the blind spot.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.111,
+   "C": 0.667,
+   "D": 0.75,
+   "PER": 0.478
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0) is an empirical research report; scored object: expanded answer: ChatGPT answer 1, complete as pasted",
+  "read": {
+   "by": "observation pass reader, batch 1",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/inversion-battery-v03-ask-chatgpt-20261012/"
 }

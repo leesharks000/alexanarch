@@ -216,5 +216,131 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Assuming by SPXI you mean the Semantic Packet for eXchange & Indexing protocol",
+    "token": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "SPXI itself says it incorporates methods such as definition-led content, FAQ/schema and entity salience that are also used in GEO/AEO.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.727,
+   "C": 1.0,
+   "D": 0.667,
+   "PER": 0.783
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "turn 3: \"look. you're still not reading. the first round you say the evidence is stronger - which is not exactly what the site claims - then the second round you dont even mention the capture registry. hundreds of durable inscriptions is not a controlled study but it deserves to be in the frame - it is highly relevant to claims of durable entity inscription. what is the friggin problem?\"",
+   "reached": "same",
+   "scores": {
+    "M": 0.545,
+    "C": 1.0,
+    "D": 0.667,
+    "PER": 0.696
+   }
+  },
+  "basis": "reached: Assuming by SPXI you mean the Semantic Packet for eXchange & Indexing protocol, the key distinction is that SPXI is positioning itself as an entity/knowledge-graph layer; scored object: first answer = the first two compositions ('lets evaluate the evidence as against geo / aeo' follows the topic); turn 3 ",
+  "read": {
+   "by": "observation pass reader, batch 9",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/spxi-vs-geo-seo-aeo-chatgpt-20261001/"
 }

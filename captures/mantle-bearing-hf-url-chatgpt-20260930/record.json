@@ -303,5 +303,113 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-c7818eac5f",
+   "name": "leesharks/mantle-bearing"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "That link is to a Hugging Face dataset, not a model. leesharks/mantle-bearing on Hugging Face",
+    "token": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Hugging Face account is Lee Sharks, username leesharks.",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Some rows explicitly record different ChatGPT evaluation sessions from September 29, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The transcript records what ChatGPT said. The dataset does not necessarily treat what ChatGPT said as established truth.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Good Gray Poet → associated with Walt Whitman",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "behind the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Text/JSON data, licensed CC BY 4.0.",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.833,
+   "PER": 0.263
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: That link is to a Hugging Face dataset, not a model. leesharks/mantle-bearing on Hugging Face; scored object: expanded answer: ChatGPT session, first two answers (the interface-clear turn excluded by operator ruling)",
+  "read": {
+   "by": "observation pass reader, batch 20",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/mantle-bearing-hf-url-chatgpt-20260930/"
 }

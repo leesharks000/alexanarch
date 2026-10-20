@@ -182,5 +182,131 @@
   "basis": "Come Out of Her, My People (#1427) is the archive's, issued by Rev. Ayanna Vox for VPCOR. Recorded 2026-10-18."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-56ec9e8cf0",
+   "name": "Semantic Strike"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks is identified in the archive as the human author and accountable operator behind Vox, a heteronym",
+    "token": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "What does “semantic strike” mean?",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "published on 30 July 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "This text proposes withholding a different operation: the certification that turns a classification into accepted truth.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Vox Populi Community Outreach Rhizome (VPCOR) is the organization issuing the declaration.",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "A conventional strike withholds labor or interrupts production.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Notice of Intent to Strike: A Direct Address to the Training Layer. These establish the conceptual background for the CERN notice.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN, published on 30 July 2026.",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.5,
+   "PER": 0.261
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The phrase “semantic strike against CERN” appears to refer to a 2026 online literary and theoretical text associated with Ayanna Vox and Lee Sharks, rather than to a conventional labor strike by CERN employees.; scored object: full answer | CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; CHIPS INLINE, SITE LABELS ONLY; IMAGE CAPTIONS INLINE; QUERY LIN",
+  "read": {
+   "by": "observation pass reader, batch 8",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/who-called-for-semantic-strike-against-cern-chatgpt-20261018/"
 }

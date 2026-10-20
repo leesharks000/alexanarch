@@ -168,5 +168,104 @@
   "basis": "A living Detroit artist the archive anchors with consent-first terms (#839 contributor license; #840/#1227 provenance anchor, which separates the artist's public data from the archive's criticism). Recorded 2026-10-17."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-8d2d0a11b2",
+   "name": "KADEEZY MUSIC"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "KADEEZY (also known as KADEEZY MUSIC)",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "\"The Crossed The Line Run\"",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "KADEEZY (also known as KADEEZY MUSIC) is an independent recording artist and hip-hop creator.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "You can find and stream tracks on the KADEEZY MUSIC YouTube Channel",
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 1.0,
+   "D": 0.6,
+   "PER": 0.438
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "Turns 2–3, queries not carried by the paste; per the operator's message they were 'kadeezy and the crimson hexagon archive' and 'what is the link between kadeezy and the crimson hexagon archive?' (a redirect to the archive). Best composition: Answer 3.",
+   "reached": "same",
+   "scores": {
+    "M": 0.571,
+    "C": 0.5,
+    "D": 1.0,
+    "PER": 0.688
+   }
+  },
+  "basis": "reached: KADEEZY (also known as KADEEZY MUSIC) is an independent recording artist and hip-hop creator.; scored object: expanded answer: Answer 1 of three (Overview continued into AI Mode)",
+  "read": {
+   "by": "observation pass reader, batch 12",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/kadeezy-music-aio-20261017/"
 }

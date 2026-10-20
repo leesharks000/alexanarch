@@ -64,6 +64,24 @@ CAPTURE_DATASET_REF = {
     "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"},
 }
 
+
+def _pd_label(pd):
+    """The dimensional PER as one line (PER-dim rubric v1.0, 2026-10-19): the gate, then PER and PER-M/C/D; the historical
+    scalar is shown beside it, never replaced."""
+    if not pd:
+        return None
+    sc = pd.get("scores") or {}
+    f = lambda v: "—" if v is None else ("%.2f" % v)
+    g = pd.get("gate")
+    if g == "abn":
+        return "PER undefined (ABN: the answer denies the target)"
+    if g in ("control", "no_atom_set"):
+        return "PER not scored (%s)" % ("control" if g == "control" else "no atom set")
+    lead = "PER %s" % f(sc.get("PER"))
+    if g == "target_absent":
+        lead += " (target absent: %s)" % pd.get("reached")
+    return lead + " · M %s · C %s · D %s" % (f(sc.get("M")), f(sc.get("C")), f(sc.get("D")))
+
 def image_urls(e):
     """Resolve the three recorded forms into fetchable URLs."""
     out = []
@@ -265,7 +283,8 @@ def transcript_block(e, gallery=''):
     meta = {
         "captured": e.get("date"), "surface": e.get("surface"),
         "auth state": e.get("auth"), "evidence class": e.get("ev"),
-        "PER": e.get("per"),
+        "PER (dimensional, rubric v1.0)": _pd_label(e.get("per_dim")),
+        "PER (historical scalar)": e.get("per"),
         "PER units retained": (", ".join(k for k, v in (e.get("per_v") or {}).items() if v)
                                or "none") if e.get("per_v") else None,
         "failure modes": ", ".join(e.get("modes") or []) or None,
@@ -299,7 +318,7 @@ def transcript_block(e, gallery=''):
     # Row tint groups so the table reads at a glance: capture conditions in one
     # tone, measurement in another, identifiers in a third.
     GROUP = {"captured": "cond", "surface": "cond", "auth state": "cond", "evidence class": "cond",
-             "PER": "meas", "PER units retained": "meas", "failure modes": "meas", "citations read": "meas",
+             "PER (dimensional, rubric v1.0)": "meas", "PER (historical scalar)": "meas", "PER units retained": "meas", "failure modes": "meas", "citations read": "meas",
              "observation id": "ident", "address id": "ident"}
     rows = "".join(f'<dt class="g-{GROUP.get(k,"cond")}">{esc(str(k))}</dt>'
                    f'<dd class="g-{GROUP.get(k,"cond")}">{esc(str(v))}</dd>'
@@ -364,7 +383,8 @@ def transcript_block(e, gallery=''):
                 str(_o.get("surface") or ""), str(_o.get("auth") or ""),
                 ("%s evidence" % _o["ev"]) if _o.get("ev") else "",
                 ("%s sources" % _o["cites"]) if _o.get("cites") else "sources not captured",
-                ("PER %s" % _o["per"]) if _o.get("per") is not None else "") if x)
+                _pd_label(_o.get("per_dim")) or "",
+                ("historical PER %s" % _o["per"]) if _o.get("per") is not None else "") if x)
             _in = ""
             if _o.get("d"):
                 _in += f'<div class="cap-obsfind">{emphasise(str(_o["d"]))}</div>'

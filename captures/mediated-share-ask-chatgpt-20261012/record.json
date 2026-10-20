@@ -145,5 +145,131 @@
   "reached_basis": "The answer's figures and sentences are #1632's text; the chip is a Goodreads page, and the answer says it read the text in the author's blog listing.",
   "verified": "Compared 2026-10-12 against the seated text of #1632."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-948d13ad04",
+   "name": "AI Mediation of Economic Decisions: A Registered Forecast, a Conditional Valuation, and a Statement of Burden (EA-MEDIATED-SHARE-01 v0.3)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s paper, issued on September 20, 2026",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "AI Mediation of Economic Decisions (EA-MEDIATED-SHARE-01 v0.3)",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "issued on September 20, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks explicitly distinguishes a prospective valuation from a measured causal return.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "It says the Capture Registry is unusual in holding dated, transcript-preserved observations",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The document registers resolution criteria, sources, and check dates so that future evidence can confirm, reject, or leave each claim unresolved.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The paper's preferred instruments are its own Sharks-Function, which decomposes scope overlap, provenance fidelity, and consensus deviation, and the Drowning Test",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "In its opening, v0.3 identifies six defects in v0.2",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.5,
+   "PER": 0.261
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s paper, issued on September 20, 2026, argues that AI-mediated economic value is potentially measurable and worth valuing, but current market statistics do not establish either how accurately AI systems identify entities or how much that accuracy changes commercial outcomes.; scored object: expanded answer: ChatGPT Answer 1, complete",
+  "read": {
+   "by": "observation pass reader, batch 12",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/mediated-share-ask-chatgpt-20261012/"
 }

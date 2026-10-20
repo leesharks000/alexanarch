@@ -111,5 +111,104 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-867f9fc42c",
+   "name": "Enli Lucente"
+  },
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Enli Lucente (known as a structural psychology researcher or Strutturista della Psiche)",
+    "token": null
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Enli Lucente (known as a structural psychology researcher or Strutturista della Psiche)",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.625,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.667
+  },
+  "src": false,
+  "after_challenge": {
+   "turn": "Turn 5 ('notionに置いているのではないのか？ ZenodoやFigshareにバンされたのに どうやって論文サイトに置くのだ？') corrects the first answer; the best later composition is the re-evaluation after the operator supplied the Notion URL (turn 7).",
+   "reached": "same",
+   "scores": {
+    "M": 0.375,
+    "C": 0.0,
+    "D": 1.0,
+    "PER": 0.533
+   }
+  },
+  "basis": "reached: Enli Lucente (known as a structural psychology researcher or Strutturista della Psiche) has published independent research and comparative observation texts; scored object: partial session record (verbatim emissions only); transcript_class: CAPTURE-TIME RECORD, PARTIAL. Japanese throughout, w",
+  "read": {
+   "by": "observation pass reader, batch 11",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/enli-lucente-leonardo-da-vinci-20260821/"
 }

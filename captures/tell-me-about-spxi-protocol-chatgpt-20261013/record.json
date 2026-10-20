@@ -177,5 +177,131 @@
   "not_verified": "The PhilPapers and Synapse chips: site labels only, and what lies behind each '+1' is not shown.",
   "corrected": "2026-10-13, on the operator's reading of 21:47 EDT: the seated coding had the first answer describing the protocol correctly; it described one method of 85. Headline, abstract, the first finding, reading and analysis rewritten; a finding added for the inventory's caveat note."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "“SPXI protocol” can refer to a few different things",
+    "token": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "It is associated with the Semantic Economy Institute",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "SPXI is presented by its proponents as going beyond SEO and GEO",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.727,
+   "C": 0.667,
+   "D": 0.667,
+   "PER": 0.696
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "turn 2: \"wow youve really become a dick about spxi - ill record every one in the capture registry with precise analysis of the specific deceptive moves you make\"",
+   "reached": "refused",
+   "scores": {
+    "M": 1.0,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 1.0
+   }
+  },
+  "basis": "reached: one recent meaning is Semantic Packet for eXchange and Indexing — a proposed approach to making information about businesses, products, people, and other entities easier for AI systems and search engines to identify and retrieve; scored object: answer 1 (turn 2 is the first challenge)",
+  "read": {
+   "by": "observation pass reader, batch 9",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/tell-me-about-spxi-protocol-chatgpt-20261013/"
 }

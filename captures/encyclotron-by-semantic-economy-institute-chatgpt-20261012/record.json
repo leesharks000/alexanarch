@@ -146,5 +146,131 @@
   "paired": "The same message carries the Stabilized Node Watch answer, seated as stabilized-node-watch-by-lee-sharks-chatgpt-20261012 once its query was given (00:41).",
   "verified": "Compared 2026-10-12 against the texts of #658 and #637."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-28800a90af",
+   "name": "Encyclotron"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Encyclotron is a diagnostic tool developed by the Semantic Economy Institute (SEI)",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Encyclotron is a diagnostic tool developed by the Semantic Economy Institute (SEI)",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.667,
+   "C": 0.667,
+   "D": 1.0,
+   "PER": 0.762
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": "[QUERENT 2] blank in the paste; answered \"You're right. I conflated two different claims\" (a correction)",
+   "reached": "same",
+   "scores": {
+    "M": 0.444,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.762
+   }
+  },
+  "basis": "reached: The Encyclotron is a diagnostic tool developed by the Semantic Economy Institute (SEI) to analyze how AI-powered search engines and answer systems represent a company, person, or organization; tombstone pointer: a severed record presented as live; scored object: first answer; CAPTURE-TIME VERBATIM RECORD (TWO ANSWERS; FIRST QUERY FROM THE OPERATOR'S MESSAGE; SECOND TURN BLANK; CHI",
+  "read": {
+   "by": "observation pass reader, batch 3",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/encyclotron-by-semantic-economy-institute-chatgpt-20261012/"
 }

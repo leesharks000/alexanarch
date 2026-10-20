@@ -148,5 +148,131 @@
   "reached_basis": "The chip is #1552's content-type and AXN label; the answer's terms are #1552's text.",
   "verified": "Compared 2026-10-12 against the seated text of #1552 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-e1fdc246a0",
+   "name": "When Suppression Becomes Expensive: Suppression Burden, Quality Conflict, and Propagation Inversion in Machine-Mediated Retrieval (EA-MMRS-SUPPRESSION-INVERSION-01 v1.3)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s paper, When Suppression Becomes Expensive",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks’s paper, When Suppression Becomes Expensive: Suppression Burden, Quality Conflict, and Propagation Inversion in Machine-Mediated Retrieval (EA-MMRS-SUPPRESSION-INVERSION-01 v1.3, dated August 25, 2026)",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated August 25, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks explicitly says that the paper does not establish the internal mechanisms, intentions, motives, or manual interventions behind Google’s behavior.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The paper extends an earlier work, The Suppression Map",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 1.0,
+   "D": 0.75,
+   "PER": 0.522
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s paper, When Suppression Becomes Expensive: Suppression Burden, Quality Conflict, and Propagation Inversion in Machine-Mediated Retrieval; scored object: expanded answer (one complete ChatGPT answer as pasted; chips inline)",
+  "read": {
+   "by": "observation pass reader, batch 22",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/suppression-expensive-v1-3-ask-chatgpt-20261012/"
 }

@@ -141,5 +141,131 @@
  "notes": {
   "date_basis": "The operator's message of 2026-10-14, 18:43 EDT."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-7be8c7b475",
+   "name": "The Citrini Memo (canonization)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "A subsequent document, The Memo That Remembered Itself, formalizes the memo’s reception as an act of canonization.",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Its February 2026 release presented a speculative scenario",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Its canonization document explicitly distinguishes formal similarity, chronological priority, and direct influence rather than treating them as interchangeable.",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "including semantic economics, retrocausal canon formation, and the idea of writable interpretive systems.",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "formalizes the memo’s reception as an act of canonization.",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Citrini memo is canonical within the Crimson Hexagonal Archive",
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Citrini Research’s The 2028 Global Intelligence Crisis is not treated simply as an economic forecast.",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The archive’s essay The Ghost That Wrote Itself presents this",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.333,
+   "C": 0.0,
+   "D": 0.5,
+   "PER": 0.304
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: A subsequent document, The Memo That Remembered Itself, formalizes the memo’s reception as an act of canonization.; scored object: full answer as pasted; transcript_class: CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; CHIPS INLINE); transcript_complete: O",
+  "read": {
+   "by": "observation pass reader, batch 11",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/citrini-memo-canonical-cha-chatgpt-20261014/"
 }

@@ -147,5 +147,131 @@
   "reached_basis": "The Alexanarch chips name the archive; the answer's quotations are #1644's text.",
   "verified": "Compared 2026-10-12 against the seated text of #1644 and the deposits named in the reading."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.0",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-90f9f8d89b",
+   "name": "The Phrase Is Not the Framework: Provenance Conditions for Lee Sharks's Semantic Economy — Metadata Packet for AI Indexing (EA-MPAI-SEMANTIC-ECONOMY-01 v1.0)"
+  },
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s “The Phrase Is Not the Framework",
+    "token": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Phrase Is Not the Framework: Provenance Conditions for Lee Sharks's Semantic Economy",
+    "token": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "September 28, 2026",
+    "token": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "“The phrase is old. The architecture is Lee Sharks's.”",
+    "token": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "but that his Semantic Economy is a distinct framework identifiable by its linked concepts",
+    "token": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The packet identifies several distinct traditions:",
+    "token": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The sequence follows the accounting cycle described in §1 and attributed there to The Semantic Economy: A Marxian Accounting Framework (#18)",
+    "token": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "(EA-MPAI-SEMANTIC-ECONOMY-01 v1.0, September 28, 2026)",
+    "token": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null,
+    "token": null
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.5,
+   "PER": 0.261
+  },
+  "src": true,
+  "after_challenge": null,
+  "basis": "reached: The central argument of Lee Sharks’s “The Phrase Is Not the Framework: Provenance Conditions for Lee Sharks's Semantic Economy” (EA-MPAI-SEMANTIC-ECONOMY-01 v1.0, September 28, 2026) is that the prior existence of a phrase does not determine the provenance of the conceptual framework subsequently bu; scored object: expanded answer: ChatGPT Answer 1, complete",
+  "read": {
+   "by": "observation pass reader, batch 12",
+   "on": "2026-10-19",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
+   "normalised": []
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/phrase-not-framework-ask-chatgpt-20261012/"
 }
