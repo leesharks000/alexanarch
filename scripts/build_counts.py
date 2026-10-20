@@ -108,7 +108,7 @@ def build() -> dict:
             "arks": sum(1 for r in (_hs.get("rooms") or {}).values() if r.get("cat") == "ark"),
             "further_shadow_documents": sum(1 for r in (_hs.get("rooms") or {}).values() if r.get("cat") == "shadow") - 1,
             "meta_structures": sum(1 for r in (_hs.get("rooms") or {}).values() if r.get("cat") == "structure" and r.get("type") == "META-STRUCTURE"),
-            "_beside_the_loci": "47 loci; beside them seven Arks — the five Arks (SP.05–SP.09) and the two shadow Arks, EA-ARK-01-SHADOW (SP.10) and the Lunar Arm shadow Ark (SP.11) (ruled 2026-10-18) — two further shadow documents (ZPZP, the Shadow Burn) and UMBML, the meta-structure over the three transversals (ruled 2026-10-16)",
+            "_beside_the_loci": "48 loci (47 until R:r.41, the Stellar Orbit Fluid Dynamics Institute, 2026-10-20); beside them seven Arks — the five Arks (SP.05–SP.09) and the two shadow Arks, EA-ARK-01-SHADOW (SP.10) and the Lunar Arm shadow Ark (SP.11) (ruled 2026-10-18) — two further shadow documents (ZPZP, the Shadow Burn) and UMBML, the meta-structure over the three transversals (ruled 2026-10-16)",
             "_superseded_figures": {"355": "seated_documents, hand-set (the interface's seated corpus of August 2026)",
                                     "220": "typed relations as stated on crimsonhexagonal.org before 2026-10-16"},
         })
