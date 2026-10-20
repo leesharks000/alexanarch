@@ -245,8 +245,14 @@ def seat_flat(draft, registry, schema):
     # DIMENSIONAL PER AT INTAKE (cutover 2026-10-19, rubric rebuild/capture-registry/per-atoms/templates.json). Recorded, not
     # refused (laws record): a new capture without per_dim is seated and named here, so the backlog cannot grow unseen.
     if not draft.get("per_dim"):
-        print("   NOTICE: no per_dim (dimensional PER, PER-dim rubric v1.0); the historical scalar alone will be seated — score it under the rubric")
+        print("   NOTICE: no per_dim (dimensional PER, PER-dim rubric v1.1); the historical scalar alone will be seated — score it under the rubric (a reader reads the atoms with spans; scripts/per_dim_score.py and per_d_score.py compute; per_dim_write.py and per_d_write.py write)")
     if missing: raise Refused("ADMIT refused — missing: %s (transcript, date, surface, auth are the contract; q, ev, s, d are the record; originator says whose entity it is)" % missing)
+    # THE SCALAR IS DERIVED (2026-10-20, ruling: "yes lets correct those 38 and patch intake"). per is the share of per_v's
+    # four units lost, never a figure entered beside it: 38 observations seated 2026-10-16 to 10-19 stored a hand-entered
+    # scalar that disagreed with their vector. A disagreeing figure is replaced and recorded as per_corrected.
+    import datetime as _dt; sys.path.insert(0, str(ROOT / "scripts")); from per_scalar import derive as _derive_per
+    _ch = _derive_per(draft, _dt.date.today().isoformat())
+    if _ch: print("   NOTICE: per %s disagreed with per_v; derived %s (per_corrected recorded)" % _ch)
     # ROUTE: exact issued string on the same surface → observation on the existing entry
     for e in registry["entries"]:
         if e.get("q") == draft["q"] and e.get("surface") == draft["surface"]:
@@ -256,7 +262,7 @@ def seat_flat(draft, registry, schema):
             # its presented set, and its reading. Found missing on the 11 Sept seatings and repaired by hand
             # at the mint of #1611; fixed here at intake so it is never missing again (2026-09-15).
             obs["slug"] = draft.get("slug") or f"{e['slug']}-{draft['date'].replace('-', '')}"
-            for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors", "per_v", "per_dim", "availability"):
+            for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors", "per_v", "per_corrected", "per_dim", "availability"):
                 if draft.get(k) is not None:
                     obs[k] = draft[k]
             # 2026-09-21: an entry seated before observations existed has no `observations` list, and its root

@@ -46,6 +46,9 @@ import subprocess, sys, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 STEPS = [
+    # 2026-10-20: PER first. The historical scalar is derived from its four-unit vector (scripts/per_scalar.py); a seating
+    # that wrote a disagreeing figure is corrected here, with per_corrected recorded, before anything renders it.
+    ("PER", [sys.executable, "scripts/per_scalar.py"]),
     # 2026-09-21: LINK before BAKE. build_capture_links.py writes each observation's `cite`; without it a
     # newly seated observation has no citation, audit_capture_citability fails, and nothing here said so.
     # Five seatings on 2026-09-21 hit it. Links first, so the bake and the projection carry them.
