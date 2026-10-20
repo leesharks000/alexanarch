@@ -687,7 +687,7 @@ def main():
     b = []
     b.append('<h1>The Negative of the Negative</h1>')
     b.append('<p class="sub">Public knowledge of an entity, constructed before the addresses at which it is found, and composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
-    b.append('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.9, <a href="/s/records/1690/">#1690</a>, which supersedes <a href="/s/records/1671/">#1671</a>) is being tested, iterated and revised. Under v0.9 the archive\'s sources are admitted on equal terms, ontology included, where the archive extends the field\'s ontology, and the archive\'s ontology rules where it supplies one no other source makes available, by the law of the suppressed witness; each entry\'s case is read from its defining papers, and the entries composed under v0.7 are recomposed one at a time (ruled 2026-10-18); the panel below is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on this page is a frozen measurement.</div>')
+    b.append('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.9, <a href="/s/records/1690/">#1690</a>, which supersedes <a href="/s/records/1671/">#1671</a>) is being tested, iterated and revised. Under v0.9 the archive\'s sources are admitted on equal terms, ontology included, where the archive extends the field\'s ontology, and the archive\'s ontology rules where it supplies one no other source makes available, by the law of the suppressed witness; each entry\'s case is read from its defining papers, and the entries composed under v0.7 are recomposed one at a time (ruled 2026-10-18), each page showing its v0.7 composition below the current one, labelled; SPXI and Theophrastus stand at v0.8, the cases v0.9\'s law of the suppressed witness calls for (ruled 2026-10-19); the panel below is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on this page is a frozen measurement.</div>')
     how = ('<div class="objs">'
              '<div class="obj"><b>T</b>the transcript: what the composition layer gave, verbatim, with its source cards</div>'
              '<div class="obj"><b>L(B)</b>the address recomposed from the full texts of the sources the layer itself surfaced</div>'
@@ -760,6 +760,7 @@ def main():
              f'<span class="card-date">epoch {esc(r["epoch"])}</span></div>',
              f'<div class="card-query">{q}</div><div class="card-status">{"".join(pills)}</div>',
              f'<p class="meta" style="margin-bottom:12px">{md_inline(r["status"]["procedure"])}. Ledger: {md_inline(r["status"]["ledger"])}.</p>']
+        earlier = []
         if o.get("P") and ko:
             arms, stats = [], []
             onto = bool(r.get("ontology"))
@@ -779,7 +780,26 @@ def main():
             badge = ("working knowledge object · not frozen · ledger " + ("unaudited" if "unaudited" in led else "audited")).upper()
             c.append(f'<p class="kobadge" style="font-family:var(--mono);font-size:.72em;letter-spacing:.08em;color:#8a5a00;background:#fff4dc;'
                      f'border:1px solid #f0d9a6;border-radius:4px;padding:5px 9px;margin:10px 0 8px;display:inline-block">{esc(badge)}</p>')
+            cur = re.match(r"EA-NEGONT-02 (v[0-9.]+), #(\d+)", r["spec"])
+            c.append(f'<h3 class="inst-h" style="margin-top:14px">Current instantiation — composed under EA-NEGONT-02 {esc(cur.group(1))} '
+                     f'(<a href="/s/records/{cur.group(2)}/">#{cur.group(2)}</a>)</h3>' if cur else "")
             c.append(arm_switch(key, arms) + html_a + html_b + form_ledger(r, list(reversed(stats))))
+            # earlier instantiations, kept in the row (row.superseded), rendered below the current one, each labelled by its spec
+            for ver, sv in sorted((r.get("superseded") or {}).items(), reverse=True):
+                if not (sv.get("P") and sv.get("KO")):
+                    continue
+                sm = re.match(r"EA-NEGONT-02 (v[0-9.]+), #(\d+)", sv.get("spec", ""))
+                vlab, vno = (sm.group(1), sm.group(2)) if sm else (ver, "")
+                vk = key + "-" + re.sub(r"[^0-9a-z]", "", ver.lower())
+                rv = {**r, "objects": {**o, "P": sv["P"], "KO": sv["KO"]}, "ontology": None}
+                html_v, _ = two_levels(rv, vk, "P", "KO", f"Earlier instantiation · {vlab} — Field and archive (B ∪ A)")
+                vref = f' (<a href="/s/records/{vno}/">#{vno}</a>)' if vno else ""
+                earlier.append(f'<h3 class="inst-h" id="{esc(vk)}" style="margin-top:22px">Earlier instantiation — composed under EA-NEGONT-02 {esc(vlab)}{vref}</h3>'
+                         f'<p class="meta">{esc(sv.get("note", ""))} Shown as composed; its spec, not the current one, governs it. '
+                         f'Its field-only arm (L_F(B)) is unchanged and is the current one above.</p>'
+                         + det("", f"The {vlab} composition — compression and expansion", html_v, n=f'{len(sv["KO"]["sentences"])} sentences')
+                         + (det("L(B ∪ A)", f"the {vlab} long composition, with the archive on equal terms", md_block(sv["L_BA"]["text"]),
+                                n=f'{sv["L_BA"]["words"]} words') if (sv.get("L_BA") or {}).get("text") else ""))
         elif ko:
             c.append(knowledge_object(ko, r))
         tclaims = "".join(f"<li>{md_inline(x)}</li>" for x in o["T"]["claims"])
@@ -850,6 +870,7 @@ def main():
         c.append(det("K", "the prospective kernel <span class=\"meta\">sealed only at freeze</span>", f'<div class="stack">{kent}</div>', n=f'{len(r["kernel"])} entries'))
         c.append(CJ.non_block(key))  # the capture join: observations read as concerning this entity (2026-10-14)
         c.append('</div>')
+        c.extend(earlier)  # earlier instantiations, below the whole of the current one
         c.append(f'<div class="card-links"><a href="{DS_URL}/rows/{key}.json">row json</a>'
                  f'<a href="/{r["ledger"]["archive"]}">archive ledger</a><a href="/{r["ledger"]["selection"]}">selection readings</a>'
                  + (f'<a href="/{r["ledger"]["field"]}">field ledger</a>' if r["ledger"].get("field") else "")
