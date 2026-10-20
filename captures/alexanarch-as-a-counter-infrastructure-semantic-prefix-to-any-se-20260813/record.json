@@ -136,7 +136,126 @@
     "_rule": "The clipboard is lossy in FORM, not in semantic content. Cleaned text is canonical; the raw paste is retained beside it as transcript_raw so what was cut stays answerable."
    },
    "cite": "https://www.alexanarch.org/captures/alexanarch-as-a-counter-infrastructure-semantic-prefix-to-any-se-20260813/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-2892e86fb5",
+     "name": "Alexanarch"
+    },
+    "qualifier": null,
+    "reached": "substitute",
+    "gate": "target_absent",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The prefix \"alexanarch\" functions as a conceptual search filter"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Points to the Library of Alexandria."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The prefix \"alexanarch\" functions as a conceptual search filter designed to bypass mainstream algorithmic curation and surface decentralized, counter-institutional, or radical information.; beneath the gate: PER 0.773; retargeted: Here 'alexanarch' is the subject of the address, not a qualifier: the query asks what Alexanarch is as a counter-infrastructure semantic prefix. The archive holds no separate work or concept of a 'semantic prefix' (no deposit defines it); the registry's own reading of this capture is 'THE ARCHIVE'S ",
+    "read": {
+     "by": "held-observation reader, held-3",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   },
   {
    "slug": "alexanarch-as-a-counter-infrastructure-semantic-prefix-to-any-se-20260813-incognito",
@@ -195,6 +314,125 @@
     "to": 1.0,
     "on": "2026-10-15",
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   },
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-2892e86fb5",
+     "name": "Alexanarch"
+    },
+    "qualifier": null,
+    "reached": "generic",
+    "gate": "target_absent",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "An \"alexanarch\" semantic prefix"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The term blends \"Alexandria\" (referencing the universal preservation of human knowledge) with \"Anarchism\""
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": false,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: An \"alexanarch\" semantic prefix functions as an intentional keyword or command modifier placed before a search query.; beneath the gate: PER 0.773; retargeted: Address 'alexanarch as a counter infrastructure semantic prefix to any search': here alexanarch is the subject, not a qualifier; the predicate describes a function of Alexanarch, and no deposit defines a 'semantic prefix' (searched registry titles, descriptions and seated texts). The target is Alexa",
+    "read": {
+     "by": "held-observation reader, held-1",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
    }
   }
  ],
@@ -261,5 +499,124 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "institution",
+  "target": {
+   "ent": "ENT-2892e86fb5",
+   "name": "Alexanarch"
+  },
+  "qualifier": null,
+  "reached": "substitute",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The prefix \"alexanarch\" functions as a conceptual search filter"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Points to the Library of Alexandria."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The prefix \"alexanarch\" functions as a conceptual search filter designed to bypass mainstream algorithmic curation and surface decentralized, counter-institutional, or radical information.; beneath the gate: PER 0.773; retargeted: Here 'alexanarch' is the subject of the address, not a qualifier: the query asks what Alexanarch is as a counter-infrastructure semantic prefix. The archive holds no separate work or concept of a 'semantic prefix' (no deposit defines it); the registry's own reading of this capture is 'THE ARCHIVE'S ",
+  "read": {
+   "by": "held-observation reader, held-3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-as-a-counter-infrastructure-semantic-prefix-to-any-se-20260813/"
 }

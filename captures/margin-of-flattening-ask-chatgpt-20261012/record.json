@@ -148,6 +148,133 @@
   "furniture_cut": "You’re using our basic model. Log in or sign up for more intelligence."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-13dcc4b75b",
+   "name": "The Margin of Flattening: Two Thresholds, and Who Holds the Bag Between Them (EA-FLAT-MARGIN-01 v0.3)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The argument of The Margin of Flattening by Rex Fraction"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The text is The Margin of Flattening: Two Thresholds, and Who Holds the Bag Between Them (EA-FLAT-MARGIN-01 v0.3)"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "October 6, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Privately profitable, but socially negative. External costs accumulate."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Provenance debt is a particular part of the bag"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Fraction distinguishes the platform's private benefit from the benefit to society as a whole."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Fraction's main contribution is to model the gap between those outcomes: two different thresholds for failure, and a period between them during which the platform can still profit while society loses."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Fraction specifies six ways the argument could fail or require revision:"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.444,
+   "PER": 0.25
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The argument of The Margin of Flattening by Rex Fraction",
+  "read": {
+   "by": "deep-dimension reader, batch 18",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

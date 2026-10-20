@@ -160,6 +160,133 @@
  },
  "notes": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-1e91fc0229",
+   "name": "total axial negation graph"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "was developed and formally specified by Johannes Sigil, with Lee Sharks credited as its editorial authority"
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Total Axial Negation Graph (TANG) genre"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "published on March 10, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The defining idea of TANG is that a scholarly field can be organized around an “axial thesis”: one falsifiable proposition that serves as the conceptual center of a comprehensive citation graph."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Bibliometrics and citation analysis"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "catalogued in material associated with the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The defining idea of TANG is that a scholarly field can be organized around an “axial thesis”: one falsifiable proposition that serves as the conceptual center of a comprehensive citation graph."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "TANG also defines a related form called PANG (Partial Axial Negation Graph) for applications whose coverage is not sufficiently comprehensive to qualify as a total graph."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The specification explicitly discusses figures and traditions associated with Thomas Kuhn, John Cage, Jacques Derrida, Maurice Blanchot and others."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.222,
+   "PER": 0.167
+  },
+  "src": true,
+  "tombstone_pointer": true,
+  "after_challenge": null,
+  "basis": "reached: The Total Axial Negation Graph (TANG) genre was developed and formally specified by Johannes Sigil, with Lee Sharks credited as its editorial authority; tombstone pointer: a severed record presented as live",
+  "read": {
+   "by": "deep-dimension reader, batch 16",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "concept",
   "target": {

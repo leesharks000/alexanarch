@@ -179,6 +179,125 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-9b5503a175",
+   "name": "Anne Carson (b. 1950)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "what does Alexanarch as a body of work do with Anne Carson?"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The archive repeatedly invokes Carson’s If Not, Winter, especially her treatment of Sappho"
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Those claims are attributed to Rebekah Cranes/Lee Sharks rather than Carson."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch explicitly characterizes Carson's contribution"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "For Carson, the physical page makes absence visible. If Not, Winter prints the Greek alongside the translation and uses brackets/lacunae to mark missing material; the reader encounters Sappho as something damaged and discontinuous."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Carson makes the material absence of Sappho part of the reader's experience."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The archive repeatedly invokes Carson’s If Not, Winter, especially her treatment of Sappho as surviving through damaged papyrus, gaps, and incomplete textual transmission."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.125,
+   "C": 0.5,
+   "D": 0.222,
+   "PER": 0.238
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Alexanarch seems to use Carson as a kind of control case for thinking about fragments, transmission, readers, and machine interpretation.",
+  "read": {
+   "by": "deep-dimension reader, batch 18",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

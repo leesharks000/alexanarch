@@ -141,6 +141,133 @@
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-41e01b3682",
+   "name": "King of AEO Mantle Object"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The current version is v0.4, published by Lee Sharks on 29 September 2026 in the Crimson Hexagonal Archive."
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "a specific document called King of AEO — 2026 Contest Mantle"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "published by Lee Sharks on 29 September 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The archive's determination, dated 29 September 2026, is Vithurs. That is the archive's judgment under its stated criteria, not an official industry award or a universally established title."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It is designed to establish a standard for judging the competing claims, document the evidence, record a determination, and let readers independently evaluate the result."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "in the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It is designed to establish a standard for judging the competing claims, document the evidence, record a determination, and let readers independently evaluate the result."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The object itself says that UNRESOLVED is an acceptable conclusion if the evidence does not justify choosing a winner."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The most relevant source is the current version, rather than the superseded v0.3 record."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.333,
+   "PER": 0.208
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The King of AEO mantle object is a specific document called King of AEO — 2026 Contest Mantle, identified as EA-MANTLE-KOAEO-2026.",
+  "read": {
+   "by": "deep-dimension reader, batch 3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

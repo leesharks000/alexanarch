@@ -142,6 +142,90 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-402267ce32",
+   "name": "Theophrastus"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagonal Archive (primarily through recent work by Lee Sharks, dated around September 6, 2026) treats Theophrastus"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is that the surviving texts do not support treating the two names as distinct authorial variables (independent stylistic agents, cleanly separable compositional sources, or non-overlapping textual systems whose boundaries match the transmitted works). Maker-count, chronology, and school membership are explicitly not asserted."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagonal Archive (primarily through recent work by Lee Sharks"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "is that the surviving texts do not support treating the two names as distinct authorial variables"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "stated in the metadata packet \"Aristotle and Theophrastus ≠ Two Distinct Authors\" (EA-MPAI-ARISTOTLE-THEOPHRASTUS-01, v0.2)"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.25,
+   "PER": 0.091
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "You said:\nInvestigate Lee Sharks' methodology",
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: the Archive re-frames Theophrastus not primarily as Aristotle's distinct successor/pupil/botanist/character-writer, but as a name attached to one operational voice (and part of a shared, continuous corpus) whose boundaries do not cleanly track the traditional author labels.",
+  "read": {
+   "by": "deep-dimension reader, batch 24",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

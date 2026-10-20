@@ -98,6 +98,125 @@
    "cite": "https://www.alexanarch.org/captures/umbml/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-fc44e61fb6",
+     "name": "University Moon Base Media Lab: Founding Charter and Provenance Document"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The University Moon Base Media Lab appears to"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "digital phenomenology (such as the Crimson Hexagonal Archive)"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.773
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The University Moon Base Media Lab appears to\n\nbe a fictional or conceptual research entity, often referenced in speculative media theory, structural cybernetics, and digital phenomenology (such as the Crimson Hexagonal Archive). It typically explores themes like off-world infrastructure and Logotic",
+    "read": {
+     "by": "deep-dimension reader, batch 23",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "work",
     "target": {
@@ -278,12 +397,13 @@
   "basis": "title run (derived 2026-10-12, rebuild/capture-registry/repair-20261012-extract-cards/intended_runs.py)"
  },
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "work",
   "target": {
    "ent": "ENT-fc44e61fb6",
    "name": "University Moon Base Media Lab: Founding Charter and Provenance Document"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -293,8 +413,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "title",
@@ -302,8 +421,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The University Moon Base Media Lab appears to",
-    "token": null
+    "evidence": "The University Moon Base Media Lab appears to"
    },
    {
     "atom": "date",
@@ -311,8 +429,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -320,8 +437,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -329,8 +445,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -338,8 +453,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "digital phenomenology (such as the Crimson Hexagonal Archive)",
-    "token": null
+    "evidence": "digital phenomenology (such as the Crimson Hexagonal Archive)"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -347,51 +477,42 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.667,
    "C": 0.5,
    "D": 1.0,
-   "PER": 0.762
+   "PER": 0.773
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: The University Moon Base Media Lab appears to\n\nbe a fictional or conceptual research entity, often referenced in speculative media theory, structural cybernetics, and digital phenomenology (such as the Crimson Hexagonal Archive). It typically explores themes like off-world infrastructure and Logotic; scored object: visible excerpt (OCR-read, chrome interleaved; truncated by interface, 'Show more' in frame)",
+  "basis": "reached: The University Moon Base Media Lab appears to\n\nbe a fictional or conceptual research entity, often referenced in speculative media theory, structural cybernetics, and digital phenomenology (such as the Crimson Hexagonal Archive). It typically explores themes like off-world infrastructure and Logotic",
   "read": {
-   "by": "observation pass reader, batch 24",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 23",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/umbml/"

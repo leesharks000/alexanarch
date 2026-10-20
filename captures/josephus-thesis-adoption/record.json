@@ -226,6 +226,133 @@
    "cite": "https://www.alexanarch.org/captures/josephus-thesis-adoption/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-c3246e5ca1",
+     "name": "josephus thesis"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "(championed by Lee Sharks and documented on Zenodo)"
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "a modern heteronymic theory known as the \"Josephus Thesis\""
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "This theory proposes that the New Testament was produced by a fractured system of authors operating under intense political pressure in the Roman world, rather than being the product of a deliberate forgery."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "a modern heteronymic theory known as the \"Josephus Thesis\""
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "This theory proposes that the New Testament was produced by a fractured system of authors operating under intense political pressure in the Roman world"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "rather than being the product of a deliberate forgery"
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "connected to the Flavians and the historical writings of Josephus"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.667,
+     "D": 0.222,
+     "PER": 0.292
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": null,
+    "basis": "reached: a modern heteronymic theory known as the \"Josephus Thesis\" (championed by Lee Sharks and documented on Zenodo); tombstone pointer: a severed record presented as live",
+    "read": {
+     "by": "deep-dimension reader, batch 17",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -409,12 +536,13 @@
   1213
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-c3246e5ca1",
    "name": "josephus thesis"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -424,8 +552,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "(championed by Lee Sharks and documented on Zenodo)",
-    "token": null
+    "evidence": "(championed by Lee Sharks and documented on Zenodo)"
    },
    {
     "atom": "term",
@@ -433,8 +560,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "a modern heteronymic theory known as the \"Josephus Thesis\"",
-    "token": null
+    "evidence": "a modern heteronymic theory known as the \"Josephus Thesis\""
    },
    {
     "atom": "date",
@@ -442,8 +568,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -451,8 +576,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "This theory proposes that the New Testament was produced by a fractured system of authors operating under intense political pressure in the Roman world, rather than being the product of a deliberate forgery.",
-    "token": null
+    "evidence": "This theory proposes that the New Testament was produced by a fractured system of authors operating under intense political pressure in the Roman world, rather than being the product of a deliberate forgery."
    },
    {
     "atom": "framework",
@@ -460,8 +584,7 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "a modern heteronymic theory known as the \"Josephus Thesis\"",
-    "token": null
+    "evidence": "a modern heteronymic theory known as the \"Josephus Thesis\""
    },
    {
     "atom": "tradition",
@@ -469,8 +592,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -478,60 +600,66 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "This theory proposes that the New Testament was produced by a fractured system of authors operating under intense political pressure in the Roman world"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "rather than being the product of a deliberate forgery"
    },
    {
     "atom": "lineage",
     "dim": "D",
     "weight": 2,
     "kind": "role",
-    "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "present": true,
+    "evidence": "connected to the Flavians and the historical writings of Josephus"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.111,
    "C": 0.667,
-   "D": 1.0,
-   "PER": 0.565
+   "D": 0.222,
+   "PER": 0.292
   },
   "src": true,
+  "tombstone_pointer": true,
   "after_challenge": null,
-  "basis": "reached: a modern heteronymic theory known as the \"Josephus Thesis\" (championed by Lee Sharks and documented on Zenodo); scored object: raw paste of the Overview with source strip; tail not proven whole",
+  "basis": "reached: a modern heteronymic theory known as the \"Josephus Thesis\" (championed by Lee Sharks and documented on Zenodo); tombstone pointer: a severed record presented as live",
   "read": {
-   "by": "observation pass reader, batch 20",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 17",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/josephus-thesis-adoption/"

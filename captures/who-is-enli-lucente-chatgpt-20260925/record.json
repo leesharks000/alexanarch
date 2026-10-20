@@ -124,6 +124,122 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-867f9fc42c",
+   "name": "Enli Lucente"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Enli Lucente appears to be a contemporary independent researcher/writer"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "explicitly says this is her discipline rather than a pseudonym or “heteronym.”"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "She has published material associated with Machine-Mediated Reception Studies (MMRS)"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Lucente describes herself as a “strutturista della psiche”—translated roughly as structural psychologist—and explicitly says this is her discipline rather than a pseudonym or “heteronym.”"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition (not a widely documented mainstream public figure)",
+    "span": "The available material suggests that she is not a widely documented mainstream public figure; most of the information I found comes from her own research/archive ecosystem and associated repositories.",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "credential (background and credentials to be verified independently of her own websites)",
+    "span": "I can also investigate who she is independently of her own websites and determine what can actually be verified about her background and credentials.",
+    "displaced": "argument",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.375,
+   "C": 0.0,
+   "D": 0.571,
+   "PER": 0.412
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Enli Lucente appears to be a contemporary independent researcher/writer whose work centers on AI systems, information provenance, authorship, and how machine-mediated systems handle evidence and attribution.",
+  "read": {
+   "by": "deep-dimension reader, batch 20",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

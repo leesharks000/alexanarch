@@ -137,6 +137,129 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "archive",
+  "target": {
+   "ent": "ENT-a200e5fad9",
+   "name": "Crimson Hexagonal Archive"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "the main bodies of work that the Crimson Hexagonal Archive itself treats as inherited"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The archive describes itself as a governed literary architecture organized into rooms, chambers, vaults, portals, and fields"
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The archive makes heteronymic authorship into an institutional method rather than simply a literary device."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The most obvious foundational lineage is Borges's Library of Babel"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.444,
+   "C": 0.5,
+   "D": 0.75,
+   "PER": 0.571
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "and yet we're only scratching the surface of the discrete traditions asynthetically fused in the hexago",
+   "reached": "same",
+   "scores": {
+    "M": 0.444,
+    "C": 0.5,
+    "D": 0.625,
+    "PER": 0.524
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: The archive describes itself as a governed literary architecture organized into rooms, chambers, vaults, portals, and fields",
+  "read": {
+   "by": "deep-dimension reader, batch 15",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "archive",
   "target": {

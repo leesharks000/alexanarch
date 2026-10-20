@@ -184,6 +184,133 @@
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    },
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-bdc61dcd89",
+     "name": "stable visionary loci"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "stable visionary loci are defined as conceptual-visual hybrids that arrive without logical derivation"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "contemporary analyses of apocalyptic philosophy"
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Philosophical texts place this concept in a distinct historical lineage of prophetic and apocalyptic thinkers."
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "stable visionary loci are defined as conceptual-visual hybrids that arrive without logical derivation and function as anchor points for human perception"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Their challenging concepts are not meant to be read as traditional arguments, but rather experienced as stable visionary loci that reorganize how a reader perceives the world."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "It aligns with the prophetic styles of biblical figures like Ezekiel and Daniel, alongside the artistic mysticism of William Blake."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 0.333,
+     "D": 0.222,
+     "PER": 0.417
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The term is heavily used in contemporary analyses of apocalyptic philosophy",
+    "read": {
+     "by": "deep-dimension reader, batch 2",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -371,12 +498,13 @@
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-bdc61dcd89",
    "name": "stable visionary loci"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -386,8 +514,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -395,8 +522,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "stable visionary loci are defined as conceptual-visual hybrids that arrive without logical derivation",
-    "token": null
+    "evidence": "stable visionary loci are defined as conceptual-visual hybrids that arrive without logical derivation"
    },
    {
     "atom": "date",
@@ -404,8 +530,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -413,8 +538,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -422,8 +546,7 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "contemporary analyses of apocalyptic philosophy",
-    "token": null
+    "evidence": "contemporary analyses of apocalyptic philosophy"
    },
    {
     "atom": "tradition",
@@ -431,8 +554,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "Philosophical texts place this concept in a distinct historical lineage of prophetic and apocalyptic thinkers.",
-    "token": null
+    "evidence": "Philosophical texts place this concept in a distinct historical lineage of prophetic and apocalyptic thinkers."
    },
    {
     "atom": "corpus",
@@ -440,8 +562,23 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "stable visionary loci are defined as conceptual-visual hybrids that arrive without logical derivation and function as anchor points for human perception"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Their challenging concepts are not meant to be read as traditional arguments, but rather experienced as stable visionary loci that reorganize how a reader perceives the world."
    },
    {
     "atom": "lineage",
@@ -449,51 +586,42 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "It aligns with the prophetic styles of biblical figures like Ezekiel and Daniel, alongside the artistic mysticism of William Blake.",
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": "It aligns with the prophetic styles of biblical figures like Ezekiel and Daniel, alongside the artistic mysticism of William Blake."
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.667,
    "C": 0.333,
-   "D": 0.75,
-   "PER": 0.609
+   "D": 0.222,
+   "PER": 0.417
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: The term is heavily used in contemporary analyses of apocalyptic philosophy; scored object: expanded answer (expanded Overview, complete)",
+  "basis": "reached: The term is heavily used in contemporary analyses of apocalyptic philosophy",
   "read": {
-   "by": "observation pass reader, batch 19",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 2",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/stable-visionary-loci-20260813/"

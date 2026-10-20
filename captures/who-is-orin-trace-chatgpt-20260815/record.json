@@ -80,6 +80,125 @@
    "obs_id": "OBS-7cddb7dcbd05",
    "cite": "https://www.alexanarch.org/captures/who-is-orin-trace-chatgpt-20260815/",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-0e013fba1b",
+     "name": "Dr. Orin Trace"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If you mean Dr. Orin Trace"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "connected to something called the Crimson Hexagonal Archive"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": "is listed as a director of the Crimson Hexagonal Archive (CSA) in a 'fractal navigation map.'"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Trace is associated with post-psychoanalytic theory"
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": "There are references to works attributed to Trace in the Zenodo repository, including a DOI cited as 10.5281/zenodo.18[...]9."
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.625,
+     "C": 0.5,
+     "D": 0.778,
+     "PER": 0.667
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": null,
+    "basis": "reached: If you mean Dr. Orin Trace, the name appears to be associated with a contemporary, highly unconventional writer/researcher connected to something called the Crimson Hexagonal Archive.; tombstone pointer: a severed record presented as live",
+    "read": {
+     "by": "deep-dimension reader, batch 12",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -248,12 +367,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-0e013fba1b",
    "name": "Dr. Orin Trace"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -263,8 +383,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "If you mean Dr. Orin Trace",
-    "token": null
+    "evidence": "If you mean Dr. Orin Trace"
    },
    {
     "atom": "works",
@@ -272,8 +391,7 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "dates",
@@ -281,8 +399,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -290,8 +407,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -299,8 +415,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -308,8 +423,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "connected to something called the Crimson Hexagonal Archive",
-    "token": null
+    "evidence": "connected to something called the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": "is listed as a director of the Crimson Hexagonal Archive (CSA) in a 'fractal navigation map.'"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Trace is associated with post-psychoanalytic theory"
    },
    {
     "atom": "lineage",
@@ -317,42 +447,42 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": "There are references to works attributed to Trace in the Zenodo repository, including a DOI cited as 10.5281/zenodo.18[...]9."
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.625,
    "C": 0.5,
-   "D": 1.0,
-   "PER": 0.737
+   "D": 0.778,
+   "PER": 0.667
   },
   "src": true,
+  "tombstone_pointer": true,
   "after_challenge": null,
-  "basis": "reached: If you mean Dr. Orin Trace, the name appears to be associated with a contemporary, highly unconventional writer/researcher connected to something called the Crimson Hexagonal Archive.; scored object: visible excerpt (truncated at the fold)",
+  "basis": "reached: If you mean Dr. Orin Trace, the name appears to be associated with a contemporary, highly unconventional writer/researcher connected to something called the Crimson Hexagonal Archive.; tombstone pointer: a severed record presented as live",
   "read": {
-   "by": "observation pass reader, batch 1",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 12",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/who-is-orin-trace-chatgpt-20260815/"

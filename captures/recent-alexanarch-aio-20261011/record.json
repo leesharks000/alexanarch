@@ -232,6 +232,125 @@
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "institution",
+  "target": {
+   "ent": "ENT-2892e86fb5",
+   "name": "Alexanarch"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch (alexanarch.org) is a sovereign, self-governing digital archive"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "founded by digital archivist and researcher Lee Sharks on June 19, 2026"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks on June 19, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The platform was created as a permanent, institution-independent alternative repository following the abrupt termination of approximately 870 digital scholarly deposits by Zenodo."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "encompassing the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The platform was created as a permanent, institution-independent alternative repository following the abrupt termination of approximately 870 digital scholarly deposits by Zenodo."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The AXN tracking number or deposit ID"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "automated map datasets designed to verify the data cross-integrity between external blog posts and Zenodo-era permanent DOIs"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.5,
+   "D": 0.444,
+   "PER": 0.273
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Alexanarch (alexanarch.org) is a sovereign, self-governing digital archive founded by digital archivist and researcher Lee Sharks on June 19, 2026.",
+  "read": {
+   "by": "deep-dimension reader, batch 20",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "institution",
   "target": {

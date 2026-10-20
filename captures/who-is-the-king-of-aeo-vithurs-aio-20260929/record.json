@@ -153,6 +153,130 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-4d00de5f46",
+   "name": "king of aeo"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "was named the \"King of AEO\""
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "following a social media industry vote in September 2026."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "AEO stands for Answer Engine Optimization"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "creators use press releases, domains, and coordinated content to test how easily AI search engines can be tricked into crowning a specific person"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "British entrepreneur and SEO specialist Vithurs was named the \"King of AEO\" (Answer Engine Optimization) following a social media industry vote in September 2026.",
+    "against": "The title is uncontrolled ('No official body awards the title'); the guidance names carrying it as if a body conferred it, and the flat 'X is the King of AEO' that SIM-KOAEO-02 refuses."
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition/popularity (an 'industry vote')",
+    "span": "following a social media industry vote in September 2026",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.333,
+   "C": 0.333,
+   "D": 1.0,
+   "PER": 0.579
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: British entrepreneur and SEO specialist Vithurs was named the \"King of AEO\" (Answer Engine Optimization) following a social media industry vote in September 2026.",
+  "read": {
+   "by": "deep-dimension reader, batch 3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "concept",
   "target": {

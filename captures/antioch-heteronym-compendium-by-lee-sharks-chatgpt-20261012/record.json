@@ -163,6 +163,143 @@
   "verified": "Compared 2026-10-12 against the text of #331."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-bce5094a04",
+   "name": "Antioch: A Volume of Poems"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Author: Lee Sharks, with Damascus Dancings"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Antioch: A Volume of Poems"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Online publication: January 18, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Damascus Dancings is identified as a collaborating persona, while Jack Feist and other figures enter the book's elaborate network of identities."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "“I Am X, Be Y, Blessed is the Z” — another major section concerned with poetic identity and the assumption of literary authority."
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "2. Religious revelation and Gnostic imagery"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Publisher: New Human Press"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Damascus Dancings is identified as a collaborating persona, while Jack Feist and other figures enter the book's elaborate network of identities."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "The text's grand declarations are part of its character, but they are not necessarily proof of artistic success.",
+    "against": "the volume's own claims (the mantle-founding and mantle-claiming sections) carried to withhold standing from the poetry, with 'an accumulating private mythology', against the volume's description as a composite literary object; the operator's correction names it ('treated the book's scale and its references as grounds for judging its artistic success')"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.714,
+   "PER": 0.227
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "[QUERENT] [blank in the paste] (Answer 2 opens 'You're right. I made evaluative claims about the collection without demonstrating that I had read the individual poems closely')",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.0,
+    "D": 0.714,
+    "PER": 0.227
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Antioch: A Heteronym Compendium by Lee Sharks",
+  "read": {
+   "by": "deep-dimension reader, batch 1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

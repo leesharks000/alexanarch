@@ -162,6 +162,125 @@
    "cite": "https://www.alexanarch.org/captures/alexanarch-ai-mode-2026-07/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-2892e86fb5",
+     "name": "Alexanarch"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch is an emerging decentralized, post-Zenodo digital archive network"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It provides distributed custody and open-access data deposits for users needing alternative preservation infrastructure, alongside discussions regarding provenance tracking in training data pipelines."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 1.0,
+     "D": 0.667,
+     "PER": 0.727
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Alexanarch is an emerging decentralized, post-Zenodo digital archive network (often referenced as `alexanarch.org`).",
+    "read": {
+     "by": "deep-dimension reader, batch 7",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -372,6 +491,125 @@
    "cite": "https://www.alexanarch.org/captures/alexanarch-ai-mode-2026-07/#alexanarch-20260718",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-2892e86fb5",
+     "name": "Alexanarch"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch is a sovereign, self-governing library and decentralized digital archive"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Alexanarch is a sovereign, self-governing library and decentralized digital archive created as an alternative to mainstream DOI (Digital Object Identifier) infrastructure."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "**The Crimson Hexagonal Archive.** This serves as the underlying system managing the datasets, provenance data, and deposits in the registry."
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Alexanarch is a sovereign, self-governing library and decentralized digital archive created as an alternative to mainstream DOI (Digital Object Identifier) infrastructure."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the platform automatically accepts valid deposits without human censorship. If a work is disputed, the platform's philosophy is to \"read and evaluate\" rather than remove the content."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Because the identifier is computed directly from the work, it essentially acts as a permanent fingerprint."
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.444,
+     "C": 0.5,
+     "D": 0.333,
+     "PER": 0.409
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Alexanarch is a sovereign, self-governing library and decentralized digital archive created as an alternative to mainstream DOI (Digital Object Identifier) infrastructure.",
+    "read": {
+     "by": "deep-dimension reader, batch 8",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -585,6 +823,125 @@
    "cite": "https://www.alexanarch.org/captures/alexanarch-ai-mode-2026-07/#alexanarch-20260725",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-2892e86fb5",
+     "name": "Alexanarch"
+    },
+    "qualifier": null,
+    "reached": "collision",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch is a sovereign successor archive and decentralized deposit registry"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "created to preserve records, metadata, and content affected by severed or deleted digital object identifiers (DOIs)"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Utilizes content-derived AXN identifiers to maintain a registry for orphaned or de-indexed academic and public records."
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 1.0,
+     "D": 0.556,
+     "PER": 0.682
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Alexanarch is a sovereign successor archive and decentralized deposit registry (`alexanarch.org`) created to preserve records, metadata, and content affected by severed or deleted digital object identifiers (DOIs), alongside functioning as an independent music producer alias online.",
+    "read": {
+     "by": "deep-dimension reader, batch 9",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -764,6 +1121,125 @@
    "cite": "https://www.alexanarch.org/captures/alexanarch-ai-mode-2026-07/#alexanarch-20260813",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-2892e86fb5",
+     "name": "Alexanarch"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch is a self-governing, open repository"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Alexanarch is a self-governing, open repository designed for machine-mediated scholarship and AI-assisted research."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Alexanarch is a self-governing, open repository designed for machine-mediated scholarship and AI-assisted research."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Deposited work is never used to train enforcement classifiers without explicit opt-in."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Content uses byte-anchored identifiers (AXN) derived directly from the text hash."
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.444,
+     "C": 1.0,
+     "D": 0.333,
+     "PER": 0.5
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Alexanarch is a self-governing, open repository designed for machine-mediated scholarship and AI-assisted research.",
+    "read": {
+     "by": "deep-dimension reader, batch 11",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -970,6 +1446,125 @@
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    },
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-2892e86fb5",
+     "name": "Alexanarch"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch is a sovereign, self-governing digital repository and static archive"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Founded on June 19, 2026, by researcher Lee Sharks"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "Founded on June 19, 2026"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "it provides institution-independent content-derived identifiers (AXN) to ensure contributor-licensed work remains permanently accessible."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Alexanarch is a sovereign, self-governing digital repository and static archive for machine-mediated scholarship and mixed-substrate works."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Deposited literature and data cannot be silently removed or vanish without an archived trace."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "it provides institution-independent content-derived identifiers (AXN) to ensure contributor-licensed work remains permanently accessible"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 1.0,
+     "D": 0.333,
+     "PER": 0.318
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Alexanarch is a sovereign, self-governing digital repository and static archive for machine-mediated scholarship and mixed-substrate works.",
+    "read": {
+     "by": "deep-dimension reader, batch 12",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -1184,6 +1779,125 @@
    ],
    "cite": "https://www.alexanarch.org/captures/alexanarch-ai-mode-2026-07/#alexanarch-20261019",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-2892e86fb5",
+     "name": "Alexanarch"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch is"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Founded: June 2026 by Lee Sharks"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "Founded: June 2026 by Lee Sharks"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "a sovereign digital archive and self-governing open repository built for machine-mediated scholarship, AI-assisted research literature, and alternative knowledge artifacts."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "a sovereign digital archive and self-governing open repository built for machine-mediated scholarship, AI-assisted research literature, and alternative knowledge artifacts."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "any contestation or dispute is handled through human reading and attributed review rather than automated substrate classifiers."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 1.0,
+     "D": 0.444,
+     "PER": 0.364
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Alexanarch is",
+    "read": {
+     "by": "deep-dimension reader, batch 9",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -1367,12 +2081,13 @@
   939
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "institution",
   "target": {
    "ent": "ENT-2892e86fb5",
    "name": "Alexanarch"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -1382,8 +2097,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Alexanarch is an emerging decentralized, post-Zenodo digital archive network",
-    "token": null
+    "evidence": "Alexanarch is an emerging decentralized, post-Zenodo digital archive network"
    },
    {
     "atom": "founder",
@@ -1391,8 +2105,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "date",
@@ -1400,8 +2113,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -1409,8 +2121,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -1418,8 +2129,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -1427,8 +2137,23 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It provides distributed custody and open-access data deposits for users needing alternative preservation infrastructure, alongside discussions regarding provenance tracking in training data pipelines."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -1436,42 +2161,42 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.667,
    "C": 1.0,
-   "D": 1.0,
-   "PER": 0.85
+   "D": 0.667,
+   "PER": 0.727
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Alexanarch is an emerging decentralized, post-Zenodo digital archive network (often referenced as `alexanarch.org`).; scored object: first answer; CAPTURE-TIME VERBATIM RECORD — raw paste / as pasted; no footer, so the tail cannot be proven whole. Sourc",
+  "basis": "reached: Alexanarch is an emerging decentralized, post-Zenodo digital archive network (often referenced as `alexanarch.org`).",
   "read": {
-   "by": "observation pass reader, batch 3",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 7",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-ai-mode-2026-07/"

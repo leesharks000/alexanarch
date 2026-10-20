@@ -149,6 +149,133 @@
   "verified": "Compared 2026-10-12 against the seated text of #1592 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-09c2a9939b",
+   "name": "Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The central argument of Lee Sharks’s “Two Lists of Stones"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "“Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)”"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated September 7, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it lays out the evidence without claiming direct influence, proposing a source, or imposing an allegory."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "This is why the title calls the work a groundwork note."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The note is a groundwork for subsequent interpretation, not a completed interpretation itself."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Its stated practice is to record the relevant words, locations, and textual details, then stop before offering a reading."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.667,
+   "D": 0.444,
+   "PER": 0.333
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The central argument of Lee Sharks’s “Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)” is",
+  "read": {
+   "by": "deep-dimension reader, batch 1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

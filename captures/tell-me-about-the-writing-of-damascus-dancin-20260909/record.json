@@ -131,6 +131,125 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-bbbcc308eb",
+   "name": "Damascus Dancings"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean Damascus Dancings as the literary persona/heteronym associated with Lee Sharks"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The clearest documented work under the Damascus Dancings name is \"Epistle to the Human Diaspora,\" dated January 2, 2015."
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated January 2, 2015"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "A heteronym says something more radical: \"Damascus Dancings is a different authorial consciousness produced through Lee Sharks.\""
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "eventually becomes the architecture of the Commission of the Immanent Turning"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It addresses an imagined community—the \"Human Diaspora\"—as though the writer were composing an epistle to a scattered church."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The \"school outside the school\" is a community of writers that doesn't derive its legitimacy from degrees, publishers, prizes, or academic status."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Later provenance material describes Dancings as a female \"apostle\" of Jack Feist and a co-laborer with Lee Sharks."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.5,
+   "D": 0.222,
+   "PER": 0.19
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: If you mean Damascus Dancings as the literary persona/heteronym associated with Lee Sharks",
+  "read": {
+   "by": "deep-dimension reader, batch 18",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

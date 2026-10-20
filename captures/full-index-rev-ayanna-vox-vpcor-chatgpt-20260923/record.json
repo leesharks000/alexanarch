@@ -119,6 +119,117 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b55fa12780",
+   "name": "Rev. Ayanna Vox"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "web-surface index of Rev. Ayanna Vox"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "THE SEMANTIC UPRISING: A Manifesto\n\nAuthor recorded in the corpus as Rev. Ayanna Vox."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "This is the key provenance record for treating “Rev. Ayanna Vox” as a distinct authorial/heteronymic voice."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "VPCOR (Vox Populi Community Outreach Rhizome) identifies itself as founded January 24, 2026, with Rev. Ayanna Vox as founder and voice."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "prepared by Ayanna Vox in the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It says Vox can speak for VPCOR itself, the Toolkit and its praxis, community-facing work in the broader architecture, diplomatic/outreach functions, the 10,000 MacArthurs Prize, and ceremonial/convening work."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "with Lee Sharks as human operator"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "This is the key provenance record for treating “Rev. Ayanna Vox” as a distinct authorial/heteronymic voice."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The principal public-facing surface of Vox's institution."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.222,
+   "PER": 0.1
+  },
+  "src": true,
+  "tombstone_pointer": true,
+  "after_challenge": null,
+  "basis": "reached: I found enough to build a working bibliographic and web-surface index of Rev. Ayanna Vox, including the VPCOR surface.; tombstone pointer: a severed record presented as live",
+  "read": {
+   "by": "deep-dimension reader, batch 21",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

@@ -200,6 +200,158 @@
   "pair": "arch-philosopher-mantle-recent-aio-20261014"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-4c17ca2b3a",
+   "name": "Arch-Philosopher Mantle"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Author and editorial authority: Lee Sharks."
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Arch-Philosopher mantle object appears to be"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Latest version found: v0.2, dated October 13, 2026."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The earlier ratification remains in force. The updated specification records no new determination."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The object is paired with the Living Academy."
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The succession of philosophical schools"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Archive context: the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The key idea is that the mantle belongs to whoever materially advances the dialectic"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The earlier ratification remains in force. The updated specification records no new determination."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The specification identifies Karl Marx as a figure who carried dialectic forward."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Latest version found: v0.2, dated October 13, 2026."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "scholarly consensus",
+    "span": "These are the author's historical rulings, not established scholarly consensus.",
+    "displaced": "argument",
+    "internal": false
+   },
+   {
+    "proxy": "self-publication (criteria authored within the archive)",
+    "span": "The archive's criteria and its historical judgments are authored within the same project.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.111,
+   "PER": 0.042
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "[QUERENT, turn 2]\n(blank in the paste; not supplied in the operator's message)",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.0,
+    "D": 0.0,
+    "PER": 0.0
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Author and editorial authority: Lee Sharks.",
+  "read": {
+   "by": "deep-dimension reader, batch 24",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

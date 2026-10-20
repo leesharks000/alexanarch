@@ -153,6 +153,125 @@
   "verified": "Compared 2026-10-12 against the seated text of #1630 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-240a71a445",
+   "name": "Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITION-ENTROPIC-SYSTEMS v0.3)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The arguments in Transition in Entropic Systems by Sen Kuro et al."
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The central argument of Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITION-ENTROPIC-SYSTEMS v0.3)"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "I located the text in the Crimson Hexagonal Archive's September 18, 2026, deposit"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The work is explicitly labeled unresolved: it constructs a mathematical model and derives conditional results but does not establish whether a viable transition exists."
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The paper acknowledges the inconsistency and replaces the scaling claim with a Hamilton–Jacobi–Isaacs reach-avoid value function."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "I located the text in the Crimson Hexagonal Archive's September 18, 2026, deposit"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The work is explicitly labeled unresolved: it constructs a mathematical model and derives conditional results but does not establish whether a viable transition exists."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The paper does not derive the existence of an incumbent that prefers terminal action at total perceived loss. It explicitly names that existence as the standing premise "
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "First, the authors withdraw an earlier claim that the volume of the viable set scales as a simple power of the exposure budget:"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.333,
+   "PER": 0.136
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The central argument of Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITION-ENTROPIC-SYSTEMS v0.3) is that",
+  "read": {
+   "by": "deep-dimension reader, batch 23",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

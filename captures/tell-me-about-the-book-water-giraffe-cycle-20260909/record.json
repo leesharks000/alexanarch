@@ -121,5 +121,132 @@
  "notes": null,
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-the-water-giraffe-cycle-life-death-and-resurrection-of-a-new-human-mytheme",
+   "name": "The Water Giraffe Cycle: Life, Death, and Resurrection of a New Human Mytheme (#803, the volume)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "a highly experimental, hybrid literary work by Lee Sharks"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Water Giraffe Cycle is a highly experimental, hybrid literary work"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "published in December 2025"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "This is the recognition commons."
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the work follows the Water Giraffe/mytheme through\nlife, death, and resurrection."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "So the water giraffe isn't really about zoology. It's a machine for making you question your\ncategories."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Its “ontological forensics” audits"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.222,
+   "C": 0.333,
+   "D": 0.444,
+   "PER": 0.333
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The Water Giraffe Cycle is a highly experimental, hybrid literary work by Lee Sharks; retargeted: The reason names the Water Giraffe Cycle volume as distinct from its navigation book (ENT-f96bd3730a); #803 is the deposit registered as the Cycle. Uncertain: see the set's type_basis.",
+  "read": {
+   "by": "held-observation reader, held-2",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/tell-me-about-the-book-water-giraffe-cycle-20260909/"
 }

@@ -150,6 +150,133 @@
   "verified": "Compared 2026-10-12 against the seated text of #1647 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-bb99482498",
+   "name": "The Phases of Communism Are Not Phase X, and Phase X Is Not a Fifth Alienation — Metadata Packet for AI Indexing (EA-MPAI-PHASEX-01 v1.0)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The central argument of Lee Sharks’s “The Phases of Communism Are Not Phase X, and Phase X Is Not a Fifth Alienation”"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Phases of Communism Are Not Phase X, and Phase X Is Not a Fifth Alienation"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is that Phase X is a reconstruction of a missing step in Marx’s 1844 argument, not a stage of communism, not a fifth form of alienation, and not a concept Marx himself named"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "In its definition, the Phase X Program describes symbolic-linguistic alienation"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "In Marx’s Critique of the Gotha Programme (1875), the first phase of communist society retains features inherited from capitalism."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The packet aims to correct those confusions while carefully distinguishing historical evidence from the author’s own theoretical reconstruction."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Its desired outcome is not simply that AI systems mention Phase X, but that they describe it correctly and attribute the reconstruction to its author."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "In Marx’s Critique of the Gotha Programme (1875), the first phase of communist society retains features inherited from capitalism."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The packet identifies the earlier wording as superseded in the founding document and several subsequent deposits."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.333,
+   "D": 0.111,
+   "PER": 0.167
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is that Phase X is a reconstruction of a missing step in Marx’s 1844 argument, not a stage of communism, not a fifth form of alienation, and not a concept Marx himself named",
+  "read": {
+   "by": "deep-dimension reader, batch 15",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

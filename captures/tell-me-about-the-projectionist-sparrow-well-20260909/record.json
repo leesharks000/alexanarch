@@ -144,6 +144,117 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-429503d29d",
+   "name": "Sparrow Wells"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sparrow Wells is described as the Projectionist and the seventh heteronym"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The archive has nevertheless given Wells formal bibliographic presence—including authorship of deposited works such as *Reading a Book with Lee* and *Protocols and Algorithms*."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sparrow Wells is presented throughout these materials as a heteronymic identity and institutional persona, rather than as an ordinary biographical person."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "associated with the Studio for Patacinematics"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "part of Lee Sharks's broader Crimson Hexagonal Archive project"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sparrow Wells is less a conventional fictional character than a conceptual persona whose job is to operate—or embody—the machinery through which the Crimson Hexagonal Archive is experienced."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The argument is essentially: An LLM isn't merely reading the screenplay. Its act of generating the response can itself become the screening."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks → the human author/operator.\nSparrow Wells → the heteronym/Projectionist."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.222,
+   "PER": 0.1
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: If you mean Sparrow Wells, \"the Projectionist,\" they're a fictional/heteronymic persona associated with the Studio for Patacinematics, part of Lee Sharks's broader Crimson Hexagonal Archive project.",
+  "read": {
+   "by": "deep-dimension reader, batch 4",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

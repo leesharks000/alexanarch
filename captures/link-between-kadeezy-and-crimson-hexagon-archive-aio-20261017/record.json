@@ -177,6 +177,123 @@
  },
  "notes": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "archive",
+  "target": {
+   "ent": "ENT-a200e5fad9",
+   "name": "Crimson Hexagonal Archive"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "the Crimson Hexagon Archive (also known as the Crimson Hexagonal Archive)"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "originally published on a blog in June 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "In the highly structured, fictional/artistic semantic blueprint of the Crimson Hexagonal Archive",
+    "against": "The archive as an architecture producing the conditions under which meaning persists, and its commitment of recognition over classification; the guidance names classifying it as a fictional universe."
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.556,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.81
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: In the highly structured, fictional/artistic semantic blueprint of the Crimson Hexagonal Archive",
+  "read": {
+   "by": "deep-dimension reader, batch 3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "archive",
   "target": {

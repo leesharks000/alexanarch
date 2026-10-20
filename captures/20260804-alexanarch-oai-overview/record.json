@@ -95,7 +95,126 @@
     "https://www.alexanarch.org/data/captures/20260804-alexanarch-oai-overview/20260804-alexanarch-oai-overview.png"
    ],
    "cite": "https://www.alexanarch.org/captures/20260804-alexanarch-oai-overview/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "TGT-alexanarch-oai-pmh-endpoint",
+     "name": "Alexanarch OAI-PMH endpoint (alexanarch.org/oai)"
+    },
+    "qualifier": "Alexanarch",
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "archival authority",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Alexanarch is a sovereign digital archive and open repository"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Open Archives Initiative (OAI)"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "harvest metadata from the Alexanarch repository"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "allows academic search engines, institutional mirrors, and automated discovery services (such as OpenAlex) to systematically harvest and index metadata"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "utilizes the OAI-PMH interface"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.727,
+     "C": 0.0,
+     "D": 0.444,
+     "PER": 0.5
+    },
+    "src": false,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The platform connects to the Open Archives Initiative (OAI) ecosystem by serving as a repository data provider that utilizes the OAI-PMH interface; retargeted: Address 'alexanarch OAI': alexanarch qualifies; the archive holds OAI as its OAI-PMH endpoint, whose registration and honest-supply gating are defined by #1429.",
+    "read": {
+     "by": "held-observation reader, held-1",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -156,5 +275,124 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-alexanarch-oai-pmh-endpoint",
+   "name": "Alexanarch OAI-PMH endpoint (alexanarch.org/oai)"
+  },
+  "qualifier": "Alexanarch",
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Alexanarch is a sovereign digital archive and open repository"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Open Archives Initiative (OAI)"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "harvest metadata from the Alexanarch repository"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "allows academic search engines, institutional mirrors, and automated discovery services (such as OpenAlex) to systematically harvest and index metadata"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "utilizes the OAI-PMH interface"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.727,
+   "C": 0.0,
+   "D": 0.444,
+   "PER": 0.5
+  },
+  "src": false,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The platform connects to the Open Archives Initiative (OAI) ecosystem by serving as a repository data provider that utilizes the OAI-PMH interface; retargeted: Address 'alexanarch OAI': alexanarch qualifies; the archive holds OAI as its OAI-PMH endpoint, whose registration and honest-supply gating are defined by #1429.",
+  "read": {
+   "by": "held-observation reader, held-1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/20260804-alexanarch-oai-overview/"
 }

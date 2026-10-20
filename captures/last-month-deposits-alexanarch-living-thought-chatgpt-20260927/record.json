@@ -131,6 +131,125 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "institution",
+  "target": {
+   "ent": "ENT-2892e86fb5",
+   "name": "Alexanarch"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch looks less like a collection of papers than like a system"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Fifteenth Seating captures the 2026 agent-swarm message boards"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The archive currently reports 1,642 deposits, and its own protocol explicitly makes the registry, entity index, citation graph, lexical registry, capture registry, and related surfaces mutually inspectable"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Semantic Economy becomes an experimental branch"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Over the last month, Alexanarch has been moving from being an archive of thought toward being an archive that can make its own processes of thinking, transmission, measurement, failure, correction, and remembrance into persistent objects of thought."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "this particular textual state existed; its transmission was damaged; the damage is part of the record; the repaired object gets its own inscription."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "5. Memory\nNotebooks, continuity tethers, version chains, errata, reconstructed texts, tombstones, provenance records, and content-derived identifiers."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The archive then deposits the actual text separately on September 25 because the earlier deposit had been staged with its body accidentally cut."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 0.5,
+   "D": 0.222,
+   "PER": 0.318
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Alexanarch looks less like a collection of papers than like a system that is progressively learning how to observe, correct, preserve, and extend its own thought.",
+  "read": {
+   "by": "deep-dimension reader, batch 14",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "institution",
   "target": {

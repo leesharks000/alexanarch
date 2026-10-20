@@ -140,6 +140,123 @@
   "series": "Three runs by month at one question form (October, November, December 2025)."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "site",
+  "target": {
+   "ent": "ENT-9f57ed1647",
+   "name": "mindcontrolpoems blog"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Mind Control Poems"
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "I'm grounding this reading in the blog's December 29, 2025 material on the semantic economy"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The Symbolic Labor of Liberation: Completing the Logotic Loop in Marx's Early Thought : a later expansion of the argument about semantic labor, explicitly identifying its November 17, 2025 blog predecessor."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "deposit chain",
+    "span": "That discrepancy should be resolved before treating the entries as a reliable version history.",
+    "against": "carries a version-date discrepancy in the blog's post metadata to suspend the dated public record the blog exists to provide"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.667,
+   "C": 0.5,
+   "D": 0.571,
+   "PER": 0.6
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The most technically interesting ideas on Mind Control Poems in December 2025",
+  "read": {
+   "by": "deep-dimension reader, batch 13",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "site",
   "target": {

@@ -179,6 +179,109 @@
    "cite": "https://www.alexanarch.org/captures/alexanarch-socrates-20260731/#alexanarch-socrates-orthonym-20260731",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-5ef09f9b96",
+     "name": "Socrates"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch uses the figure of Socrates"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Socrates is analyzed as an orthonym—a core historical figure who famously refused to write anything down."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch uses the figure of Socrates"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The Orthonym: Socrates represents a founding gesture of philosophy—choosing a willing death for logos (reason and truth) rather than compromising his principles."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Socrates is analyzed as an orthonym—a core historical figure who famously refused to write anything down."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Socrates created a structural void that had to be filled by heteronyms like Plato and Xenophon."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.5,
+     "D": 0.222,
+     "PER": 0.222
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Within the platform's critical framework, Socrates is analyzed as an orthonym—a core historical figure who famously refused to write anything down.",
+    "read": {
+     "by": "deep-dimension reader, batch 8",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -371,6 +474,109 @@
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    },
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-5ef09f9b96",
+     "name": "Socrates"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Socrates functions as an \"orthonym\""
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Socrates functions as an \"orthonym\"—the central, historical figure who famously refused to write anything himself."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "such as the Crimson Hexagonal Archive or the Mandala Oracle"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Socrates is viewed as the base anchor who chose a physical death for truth, leaving a vacancy in direct authorship."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the central, historical figure who famously refused to write anything himself."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.5,
+     "D": 0.444,
+     "PER": 0.333
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: In the Alexanarch project by conceptual writer Lee Sharks, Socrates functions as an \"orthonym\"—the central, historical figure who famously refused to write anything himself.",
+    "read": {
+     "by": "deep-dimension reader, batch 9",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -501,6 +707,109 @@
    "surface_basis": "paste header read as AI Mode; corrected to AI Overview per MANUS 2026-08-13 — the prefix is copy-paste residue, not a surface signal",
    "cite": "https://www.alexanarch.org/captures/alexanarch-socrates-20260731/#alexanarch-socrates-20260911",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-5ef09f9b96",
+     "name": "Socrates"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "traditional views of Socrates by proposing that the historical figure and his depictions"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "can be read as functional positions in a single transmitted project rather than just a"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "entries, \"Socrates as Orthonym: The Heteronymic Configuration,\" challenges"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch is a contemporary philosophical and artistic project"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 1.0,
+     "PER": 0.5
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: traditional views of Socrates by proposing that the historical figure and his depictions",
+    "read": {
+     "by": "deep-dimension reader, batch 10",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -656,12 +965,13 @@
   764
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-5ef09f9b96",
    "name": "Socrates"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -671,8 +981,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Alexanarch uses the figure of Socrates",
-    "token": null
+    "evidence": "Alexanarch uses the figure of Socrates"
    },
    {
     "atom": "claim boundary",
@@ -680,8 +989,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "Socrates is analyzed as an orthonym—a core historical figure who famously refused to write anything down.",
-    "token": null
+    "evidence": "Socrates is analyzed as an orthonym—a core historical figure who famously refused to write anything down."
    },
    {
     "atom": "framework",
@@ -689,8 +997,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -698,8 +1005,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "Alexanarch uses the figure of Socrates",
-    "token": null
+    "evidence": "Alexanarch uses the figure of Socrates"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The Orthonym: Socrates represents a founding gesture of philosophy—choosing a willing death for logos (reason and truth) rather than compromising his principles."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Socrates is analyzed as an orthonym—a core historical figure who famously refused to write anything down."
    },
    {
     "atom": "lineage",
@@ -707,42 +1029,42 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "Socrates created a structural void that had to be filled by heteronyms like Plato and Xenophon.",
-    "token": null
+    "evidence": "Socrates created a structural void that had to be filled by heteronyms like Plato and Xenophon."
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.0,
    "C": 0.5,
-   "D": 0.714,
-   "PER": 0.438
+   "D": 0.222,
+   "PER": 0.222
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Within the platform's critical framework, Socrates is analyzed as an orthonym—a core historical figure who famously refused to write anything down.; scored object: expanded answer | CAPTURE-TIME VERBATIM RECORD — raw paste, recovered by literal match from the full account export | as",
+  "basis": "reached: Within the platform's critical framework, Socrates is analyzed as an orthonym—a core historical figure who famously refused to write anything down.",
   "read": {
-   "by": "observation pass reader, batch 8",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 8",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-socrates-20260731/"

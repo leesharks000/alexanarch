@@ -158,6 +158,133 @@
   "verified": "Compared 2026-10-12 against the seated text of #1511 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-9929dc2058",
+   "name": "The Upstream Unfoldings: Six Operable Transforms from Sappho 31 into the Apocalypse's Channel — revelationfirst.com/upstream/"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The argument of Lee Sharks’s The Upstream Unfoldings"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Upstream Unfoldings is an attempt to turn comparative literary interpretation"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "But he explicitly says that it does not assert authorship, influence in the biographical sense, or the identification sentence."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The pivotal idea appears in the page's linked argument, “Sappho, Mother of the Logos.”"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sappho’s Fragment 31 contains a repeatable literary structure that can be traced through ancient Greek and Jewish literature into Revelation 12. He calls this structure an “executable relational apparatus,”"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "But he explicitly says that it does not assert authorship, influence in the biographical sense, or the identification sentence."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks begins with On the Sublime 10.1–3, where Longinus quotes Sappho’s Fragment 31."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks links the operator to twelve pre-registered clauses, documented separately in The Transform Signature, Frozen"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.667,
+   "D": 0.111,
+   "PER": 0.25
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s central argument is that Sappho’s Fragment 31 contains a repeatable literary structure that can be traced through ancient Greek and Jewish literature into Revelation 12.",
+  "read": {
+   "by": "deep-dimension reader, batch 9",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

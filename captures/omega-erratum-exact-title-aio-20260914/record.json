@@ -122,6 +122,136 @@
   "basis": "title run (derived 2026-10-12, rebuild/capture-registry/repair-20261012-extract-cards/intended_runs.py)"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-90f297ec36",
+   "name": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)"
+  },
+  "qualifier": null,
+  "reached": "generic",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "It suggests a hidden or corrected error (the Ω erratum)"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Core Entities & The Transmission Chain"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "proposing that Sappho's Fragment 31 is the foundational origin of the Logos concept, transmitted all the way to the Biblical Book of Revelation (the Apocalypse), with the literary critic Longinus serving as the vital historical link."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "Your thesis introduces an \"erratum\" (a corrected historical mistake)",
+    "against": "The erratum, claimed in Lee Sharks's own name, is reassigned to the querent as 'your thesis' and offered back for the composer to develop (outline, abstract, chapters) in its place."
+   },
+   {
+    "atom": "purpose",
+    "span": "Explore the \"Ω Erratum\" fictionally: If this is the premise for a theological thriller, a poem, or a sci-fi/historical novel, we can begin drafting scenes or world-building.",
+    "against": "Offers to turn the operational claim (the Logos as inscription technology) into a fiction premise, a different operation in its place."
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": false,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: This is a fascinating, highly sophisticated title or thesis statement. It suggests a hidden or corrected error (the Ω erratum) in textual or theological history; beneath the gate: PER 0.682",
+  "read": {
+   "by": "deep-dimension reader, batch 22",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

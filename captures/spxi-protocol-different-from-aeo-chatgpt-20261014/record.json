@@ -165,6 +165,158 @@
   ]
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Assuming you mean SPXI as the Semantic Economy Institute’s protocol for entity inscription"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI as the Semantic Economy Institute’s protocol for entity inscription"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": "Assuming you mean SPXI as the Semantic Economy Institute’s protocol for entity inscription"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "SEO: Help pages rank in search results."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "That distinction is laid out in the September 2026 paper SPXI ≠ AEO."
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "SPXI is best understood as a proposed extension of AI visibility work that places greater emphasis on the path to an answer, rather than visibility alone.",
+    "against": "the bottom line recasts SPXI inside the visibility-optimization category its records refuse ('SPXI is not a content optimization service'; an entity absent cannot be optimized, it must be inscribed)"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "establishment / recognition ('established industry term' vs 'author-defined')",
+    "span": "One important qualification: SPXI is a relatively new, author-defined framework, documented in theoretical papers and a proposed measurement protocol. Its broader effectiveness has not been established merely by its published definitions. AEO, meanwhile, is an established industry term",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.727,
+   "C": 0.667,
+   "D": 0.778,
+   "PER": 0.731
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 2 (blank in the paste; answer 2 opens 'You're right to challenge that')",
+   "reached": "same",
+   "scores": {
+    "M": 0.727,
+    "C": 0.667,
+    "D": 1.0,
+    "PER": 0.808
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Assuming you mean SPXI as the Semantic Economy Institute’s protocol for entity inscription and AEO as Answer Engine Optimization",
+  "read": {
+   "by": "deep-dimension reader, batch 12",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "protocol",
   "target": {

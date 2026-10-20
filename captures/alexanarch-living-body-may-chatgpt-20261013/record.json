@@ -180,6 +180,137 @@
   "status_line_cut": "Searched 3 websites"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "institution",
+  "target": {
+   "ent": "ENT-2892e86fb5",
+   "name": "Alexanarch"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch identifies its founding date as 19 June 2026"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch identifies its founding date as 19 June 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Alexanarch's protocol index  identifies the registry as the canonical source for its deposits"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "from semantic economy to archival sovereignty"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "defines twelve heteronymic positions within the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "a proposal for preserving intellectual work independently of any single institution"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Preserving a text is insufficient if the record of its origin, the history of its alteration, or the grounds for a consequential judgment can disappear."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "This explains why the archive places so much emphasis on links, identifiers, provenance, and conceptual relations. These are not merely bibliographic conveniences. They are attempts to preserve the conditions under which a text can be understood."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "while the individual record pages expose the work dates, version histories, and former identifiers"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 0.0,
+   "D": 0.222,
+   "PER": 0.227
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "[QUERENT, turn 2] blank in the paste; not supplied (Answer 2 opens 'One important correction to the preceding account', read as a redirect)",
+   "reached": "weakened",
+   "scores": {
+    "M": 0.333,
+    "C": 0.0,
+    "D": 1.0,
+    "PER": 0.545
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Alexanarch identifies its founding date as 19 June 2026, following the termination of access to approximately 870 Zenodo deposits representing 1,817 DOIs.",
+  "read": {
+   "by": "deep-dimension reader, batch 1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "institution",
   "target": {

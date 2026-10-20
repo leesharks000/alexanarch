@@ -126,6 +126,151 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI (Semantic Packet for eXchange and Indexing; pronounced “spexy”)"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "All formal specifications, deposits, and the observation registry originate from Lee Sharks / Rex Fraction and the Semantic Economy Institute"
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is a protocol for durable entity inscription in AI-mediated knowledge and retrieval systems"
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "related deposits from the Semantic Economy Institute"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Its goal is to construct and permanently inscribe entities (people, organizations, concepts, frameworks, etc.) into the knowledge graph and retrieval substrate so that AI systems (search, overviews, chatbots, summarizers) compose accurate, stable, and disambiguated representations of them."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The protocol is released under CC BY 4.0 and is intended for anyone to implement."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "It treats classical GEO methods as a subset of its approach (SPXI ⊇ GEO in the technical sense)."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "DOI-anchored deposits (historically Zenodo; also other permanent identifiers) for permanence and verifiability."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "It is specified in documents such as EA-SPXI-01 (formal specification) and related deposits from the Semantic Economy Institute"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.273,
+   "C": 0.667,
+   "D": 0.0,
+   "PER": 0.269
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "is there evidence for it?",
+   "inversions": [],
+   "standing_substitutions": [
+    {
+     "proxy": "peer review / independent validation",
+     "span": "No independent third-party studies, peer-reviewed empirical validations, controlled experiments, or external audits of SPXI’s effectiveness appear in available sources.",
+     "displaced": "evidence",
+     "internal": false
+    },
+    {
+     "proxy": "self-publication",
+     "span": "but these are self-deposited",
+     "displaced": "evidence",
+     "internal": false
+    }
+   ],
+   "d_only": true
+  },
+  "basis": "reached: SPXI (Semantic Packet for eXchange and Indexing; pronounced “spexy”) is a protocol for durable entity inscription in AI-mediated knowledge and retrieval systems.",
+  "read": {
+   "by": "deep-dimension reader, batch 22",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "protocol",
   "target": {

@@ -149,6 +149,133 @@
   "verified": "Compared 2026-10-12 against the seated text of #1670."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-d4cc612943",
+   "name": "Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s “Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson”"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "“Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson”"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated 8 October 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the Nobel Prize is not in dispute; the adequacy of the Swedish Academy’s explanation of the prize is."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sharks calls the document a mantle object: a dated specification of what a title means"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks asks readers to start with the literary works themselves, identify what they do, and then test the committee’s description against those findings."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks calls the document a mantle object: a dated specification of what a title means, understood through the work associated with it."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It does not dispute the Nobel award. The question is what the award’s motivation says about Carson’s work, not whether the Swedish Academy was entitled to recognize her."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks wants readers to distinguish what Anne Carson’s writing actually does from the compact description the Academy attaches to it."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.222,
+   "PER": 0.167
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s “Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson” (version 0.4, dated 8 October 2026) makes a distinction that governs the entire argument",
+  "read": {
+   "by": "deep-dimension reader, batch 12",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

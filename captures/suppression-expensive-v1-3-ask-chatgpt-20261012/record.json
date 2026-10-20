@@ -149,6 +149,133 @@
   "verified": "Compared 2026-10-12 against the seated text of #1552 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-e1fdc246a0",
+   "name": "When Suppression Becomes Expensive: Suppression Burden, Quality Conflict, and Propagation Inversion in Machine-Mediated Retrieval (EA-MMRS-SUPPRESSION-INVERSION-01 v1.3)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s paper, When Suppression Becomes Expensive"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks’s paper, When Suppression Becomes Expensive: Suppression Burden, Quality Conflict, and Propagation Inversion in Machine-Mediated Retrieval (EA-MMRS-SUPPRESSION-INVERSION-01 v1.3, dated August 25, 2026)"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "dated August 25, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks explicitly says that the paper does not establish the internal mechanisms, intentions, motives, or manual interventions behind Google’s behavior."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks’s new question is what happens when the affected material continues to acquire repositories, mirrors, citations, identifiers, and other routes through which it can be retrieved."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks explicitly says that the paper does not establish the internal mechanisms, intentions, motives, or manual interventions behind Google’s behavior."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The paper extends an earlier work, The Suppression Map, which argues that information can survive transmission while losing its attribution and recognition as a particular technology or tradition."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Version 1.3 replaces that appendix with transcriptions from four recovered screenshot frames, preserved with SHA-256 hashes, and records the earlier failure in Appendix D."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 1.0,
+   "D": 0.111,
+   "PER": 0.292
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s paper, When Suppression Becomes Expensive: Suppression Burden, Quality Conflict, and Propagation Inversion in Machine-Mediated Retrieval",
+  "read": {
+   "by": "deep-dimension reader, batch 8",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

@@ -225,6 +225,122 @@
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    },
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-867f9fc42c",
+     "name": "Enli Lucente"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "purpose",
+      "span": "Repository Records: The phrase surfaces in academic or data-sharing platform logs regarding account statuses and classification records.",
+      "against": "her name carried through the adverse-treatment records (account statuses, classification) in place of her discipline as a structural psychologist"
+     }
+    ],
+    "standing_substitutions": [
+     {
+      "proxy": "recognition",
+      "span": "rather than a widely recognized official anime series or mainstream fictional character",
+      "displaced": "evidence",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: \"Incantatrice d'Anime Enli\" appears to be an alias or handle associated with online user accounts, research preprint records, or specific repository discussions rather than a widely recognized official anime series or mainstream fictional character.",
+    "read": {
+     "by": "deep-dimension reader, batch 16",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -378,12 +494,13 @@
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-867f9fc42c",
    "name": "Enli Lucente"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -393,8 +510,7 @@
     "weight": 3,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "works",
@@ -402,8 +518,7 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "dates",
@@ -411,8 +526,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -420,8 +534,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -429,26 +542,54 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "Repository Records: The phrase surfaces in academic or data-sharing platform logs regarding account statuses and classification records.",
+    "against": "her name carried through the adverse-treatment records (account statuses, classification) in place of her discipline as a structural psychologist"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition",
+    "span": "rather than a widely recognized official anime series or mainstream fictional character",
+    "displaced": "evidence",
+    "internal": false
    }
   ],
   "scores": {
@@ -458,13 +599,14 @@
    "PER": 1.0
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: \"Incantatrice d'Anime Enli\" appears to be an alias or handle associated with online user accounts, research preprint records, or specific repository discussions rather than a widely recognized official anime series or mainstream fictional character.; scored object: full answer as pasted; transcript_class: CAPTURE-TIME VERBATIM RECORD; transcript_complete: as supplied, with the source",
+  "basis": "reached: \"Incantatrice d'Anime Enli\" appears to be an alias or handle associated with online user accounts, research preprint records, or specific repository discussions rather than a widely recognized official anime series or mainstream fictional character.",
   "read": {
-   "by": "observation pass reader, batch 11",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 16",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/enli-lucente-d54607-20260813/"

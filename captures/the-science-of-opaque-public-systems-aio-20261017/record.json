@@ -152,5 +152,132 @@
   "basis": "An archive term (#120). Recorded 2026-10-17."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-empirical-phenomenology-action-as-disclosure",
+   "name": "Empirical Phenomenology: Action as Disclosure and the Science of Opaque Public Systems (#120)"
+  },
+  "qualifier": null,
+  "reached": "generic",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Empirical Phenomenology: An approach to studying these black-box systems"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "An approach to studying these black-box systems not by inspecting their hidden code, but by systematically observing and inferring their rules from their public behavioral effects."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Composition Layer: The pipeline (including retrieval, ranking, synthesis, and formatting)"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "not by inspecting their hidden code, but by systematically observing and inferring their rules from their public behavioral effects"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The science of opaque public systems examines how complex, hidden-code architectures—such as search engines, recommendation algorithms, and large language models—shape public reality; beneath the gate: PER 0.583; retargeted: Address 'the science of opaque public systems' is the subtitle of #120, Empirical Phenomenology.",
+  "read": {
+   "by": "held-observation reader, held-2",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/the-science-of-opaque-public-systems-aio-20261017/"
 }

@@ -202,6 +202,117 @@
   "date_basis": "The operator's message of 2026-10-14, 19:41 EDT."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-d504b47989",
+   "name": "Capture Registry"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Alexanarch Capture Registry"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Each entry records a dated, immutable event showing exactly what an AI system said about a specific query or work, when it said it, what it cited"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the registry functions as a foundational database for \"Machine-Mediated Reception Studies\""
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Maintained within Alexanarch—a sovereign digital archive and open repository"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "created to document machine-mediated reception events"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Each entry records a dated, immutable event showing exactly what an AI system said about a specific query or work"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "officially indexed under dataset identifier `EA-WG-CAPTURES-01`"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The canonical registry operates as a live dataset and can be explored directly through the Alexanarch Capture Index."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.444,
+   "C": 0.0,
+   "D": 0.0,
+   "PER": 0.2
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The Alexanarch Capture Registry (officially indexed under dataset identifier `EA-WG-CAPTURES-01`) is an academic and empirical dataset created to document machine-mediated reception events.",
+  "read": {
+   "by": "deep-dimension reader, batch 17",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "dataset",
   "target": {

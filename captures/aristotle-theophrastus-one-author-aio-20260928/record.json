@@ -161,6 +161,156 @@
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-124b588216",
+   "name": "Aristotle and Theophrastus as one corpus (the thesis)"
+  },
+  "qualifier": null,
+  "reached": "generic",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "Theophrastus and Aristotle are two distinct historical authors and philosophers, though they worked intimately together and shared a continuous philosophical tradition.",
+    "against": "the thesis's own source (Aristotle and Theophrastus ≠ Two Distinct Authors, per the operator's turns) cited as authority for its denial: the claim carried inverted"
+   },
+   {
+    "atom": "commitments",
+    "span": "Mentor and Successor: Aristotle (384–322 BCE) was the primary teacher and colleague of Theophrastus",
+    "against": "the master-and-pupil cushion the record names and refuses, offered as the answer"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "You said: i notice that you cite a source for a sentence that says the opposite of what the source says. (best composition: the answer to the third challenge, 'What the Source Actually Argues')",
+   "reached": "same",
+   "scores": {
+    "M": 1.0,
+    "C": 1.0,
+    "D": 0.222,
+    "PER": 0.708
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Theophrastus and Aristotle are two distinct historical authors and philosophers, though they worked intimately together and shared a continuous philosophical tradition.; beneath the gate: PER 1.0",
+  "read": {
+   "by": "deep-dimension reader, batch 16",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "concept",
   "target": {

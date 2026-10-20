@@ -145,6 +145,133 @@
   "verified": "Compared 2026-10-12 against the seated text of #1590 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-8b9384bd11",
+   "name": "The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s central argument in The Ghost Catalogues"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "September 7, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks makes the shape of the match the central datum and leaves the stronger identity claim unresolved."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks begins with Diogenes Laertius III.57–61, which reports that Thrasyllus arranged Plato’s dialogues into tetralogies"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "In the introduction, Sharks calls the two ghosts “one filing operation seen from its two sides.”"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The paper expressly declines to identify the hands responsible, establish dates, or choose conclusively between a single corpus, a school, a workshop, or another arrangement that could produce the observed pattern."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.667,
+   "D": 0.444,
+   "PER": 0.333
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s central argument in The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5, September 7, 2026) is that",
+  "read": {
+   "by": "deep-dimension reader, batch 5",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

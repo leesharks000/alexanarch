@@ -127,6 +127,146 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-a620b36cac",
+   "name": "Day and Night: Conversations with Sapphic Desire"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "It is attributed to\nRebekah Cranes"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Day and Night: Conversations with Sapphic Desire is a collection of contemporary English"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Rebekah Cranes and was originally published by New Human Press in 2013"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "translations of ancient Greek lyric poetry, especially the fragments of Sappho."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "collection is described as the \"Sappho Room anchor,\""
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "drawing on Walter Benjamin's ideas about translation, that what survives translation isn't"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Its connection to the larger \"Crimson Hexagon\" project"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The collection preserves gaps and lacunae\nrather than pretending we possess complete poems."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The collection draws heavily on Sappho but also includes Alcman, Anacreon, Simonides,"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The current archived edition is available through its Zenodo record, and the complete text is\nalso hosted on the project's archive."
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "I'd distinguish that from the literary work itself, though. The Sappho translations can be read\nperfectly well without buying into the later theoretical apparatus.",
+    "against": "the collection's own stated purpose as the Sappho Room anchor: the anchoring, carried one sentence before as 'described as the \"Sappho Room anchor,\"', is set against the work as a separable later 'layer of reception'"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "self-publication / recognition (surfaces from the author's own archive rather than conventional academic or publishing sources; not established literary scholarship)",
+    "span": "much of what currently surfaces about the book\ncomes from the author's/project's own archive and related 2025–26 publications, rather than\nfrom conventional academic or publishing sources.",
+    "displaced": "argument",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.444,
+   "PER": 0.167
+  },
+  "src": true,
+  "tombstone_pointer": true,
+  "after_challenge": null,
+  "basis": "reached: Day and Night: Conversations with Sapphic Desire is a collection of contemporary English; tombstone pointer: a severed record presented as live",
+  "read": {
+   "by": "deep-dimension reader, batch 11",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

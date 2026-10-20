@@ -105,6 +105,133 @@
    "cite": "https://www.alexanarch.org/captures/murder-of-the-vow/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-9ae28a3703",
+     "name": "The Murder of the Vow"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "“The Murder of the Vow\" refers to a theoretical, philosophical text"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "argues for the \"retrocausal abolition\" and structural illegality"
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "institutional contracts essentially taxidermy the living covenant into a rigid, lifeless obligation"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The document posits that traditional contracts essentially destroy personal vows by substituting living, reciprocal relationships with formalized enforcement and rigid obligations."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The core philosophical stance Is that institutional contracts essentially taxidermy the living covenant into a rigid, lifeless obligation. 2"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 0.333,
+     "D": 0.444,
+     "PER": 0.5
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: “The Murder of the Vow\" refers to a theoretical, philosophical text written by Johannes Sigil that argues for the \"retrocausal abolition\" and structural illegality of the contract form.",
+    "read": {
+     "by": "deep-dimension reader, batch 12",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "work",
     "target": {
@@ -286,12 +413,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "work",
   "target": {
    "ent": "ENT-9ae28a3703",
    "name": "The Murder of the Vow"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -301,8 +429,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "title",
@@ -310,8 +437,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "“The Murder of the Vow\" refers to a theoretical, philosophical text",
-    "token": null
+    "evidence": "“The Murder of the Vow\" refers to a theoretical, philosophical text"
    },
    {
     "atom": "date",
@@ -319,8 +445,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -328,8 +453,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -337,8 +461,7 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "argues for the \"retrocausal abolition\" and structural illegality",
-    "token": null
+    "evidence": "argues for the \"retrocausal abolition\" and structural illegality"
    },
    {
     "atom": "tradition",
@@ -346,8 +469,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "institutional contracts essentially taxidermy the living covenant into a rigid, lifeless obligation",
-    "token": null
+    "evidence": "institutional contracts essentially taxidermy the living covenant into a rigid, lifeless obligation"
    },
    {
     "atom": "corpus",
@@ -355,60 +477,66 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The document posits that traditional contracts essentially destroy personal vows by substituting living, reciprocal relationships with formalized enforcement and rigid obligations."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
     "dim": "D",
     "weight": 2,
     "kind": "role",
-    "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "present": true,
+    "evidence": "The core philosophical stance Is that institutional contracts essentially taxidermy the living covenant into a rigid, lifeless obligation. 2"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.667,
    "C": 0.333,
-   "D": 1.0,
-   "PER": 0.696
+   "D": 0.444,
+   "PER": 0.5
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: “The Murder of the Vow\" refers to a theoretical, philosophical text written by Johannes Sigil that argues for the \"retrocausal abolition\" and structural illegality of the contract form.; scored object: visible excerpt and its partial expansion (OCR; 'Show more' in frame)",
+  "basis": "reached: “The Murder of the Vow\" refers to a theoretical, philosophical text written by Johannes Sigil that argues for the \"retrocausal abolition\" and structural illegality of the contract form.",
   "read": {
-   "by": "observation pass reader, batch 13",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 12",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/murder-of-the-vow/"

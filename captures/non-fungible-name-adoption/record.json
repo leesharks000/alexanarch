@@ -88,6 +88,133 @@
    "cite": "https://www.alexanarch.org/captures/non-fungible-name-adoption/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-c413d04d32",
+     "name": "non-fungible name"
+    },
+    "qualifier": null,
+    "reached": "generic",
+    "gate": "target_absent",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The \"non-fungible name\" and \"white stone\" referenced in the Book of Revelation (2:12–17)"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The \"non-fungible name\" and \"white stone\" referenced in the Book of Revelation (2:12–17)"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": false,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: In modern theological interpretations, it is sometimes referred to as a \"non-fungible\" (one-of-a-kind) identity; beneath the gate: PER 0.792",
+    "read": {
+     "by": "deep-dimension reader, batch 18",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -262,12 +389,13 @@
  "match": "EXACT MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-c413d04d32",
    "name": "non-fungible name"
   },
+  "qualifier": null,
   "reached": "generic",
   "gate": "target_absent",
   "atoms": [
@@ -277,8 +405,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -286,8 +413,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The \"non-fungible name\" and \"white stone\" referenced in the Book of Revelation (2:12–17)",
-    "token": null
+    "evidence": "The \"non-fungible name\" and \"white stone\" referenced in the Book of Revelation (2:12–17)"
    },
    {
     "atom": "date",
@@ -295,8 +421,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -304,8 +429,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -313,8 +437,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -322,8 +445,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -331,8 +453,23 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -340,37 +477,27 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "The \"non-fungible name\" and \"white stone\" referenced in the Book of Revelation (2:12–17)",
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": "The \"non-fungible name\" and \"white stone\" referenced in the Book of Revelation (2:12–17)"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 1.0,
    "C": 1.0,
@@ -378,13 +505,14 @@
    "PER": 1.0
   },
   "src": false,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: In modern theological interpretations, it is sometimes referred to as a \"non-fungible\" (one-of-a-kind) identity; beneath the gate: PER 0.783; scored object: visible excerpt as recorded (declared FULL by the marker)",
+  "basis": "reached: In modern theological interpretations, it is sometimes referred to as a \"non-fungible\" (one-of-a-kind) identity; beneath the gate: PER 0.792",
   "read": {
-   "by": "observation pass reader, batch 20",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 18",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/non-fungible-name-adoption/"

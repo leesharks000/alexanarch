@@ -201,6 +201,109 @@
    "cite": "https://www.alexanarch.org/captures/enli-lucente-04ecb6-20260813/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-867f9fc42c",
+     "name": "Enli Lucente"
+    },
+    "qualifier": null,
+    "reached": "collision",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Enli Lucente (Incantatrice d'Anime Enli) utilizes physical, analog handwritten documents"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.625,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.824
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Would you like details on how Enli Lucente's machine-eligible analog inscription specifications work",
+    "read": {
+     "by": "deep-dimension reader, batch 18",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -355,12 +458,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-867f9fc42c",
    "name": "Enli Lucente"
   },
+  "qualifier": null,
   "reached": "collision",
   "gate": "scored",
   "atoms": [
@@ -370,8 +474,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Enli Lucente (Incantatrice d'Anime Enli) utilizes physical, analog handwritten documents",
-    "token": null
+    "evidence": "Enli Lucente (Incantatrice d'Anime Enli) utilizes physical, analog handwritten documents"
    },
    {
     "atom": "works",
@@ -379,8 +482,7 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "dates",
@@ -388,8 +490,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -397,8 +498,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -406,42 +506,58 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.625,
    "C": 1.0,
    "D": 1.0,
-   "PER": 0.8
+   "PER": 0.824
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Would you like details on how Enli Lucente's machine-eligible analog inscription specifications work; scored object: full answer as pasted; transcript_class: CAPTURE-TIME VERBATIM RECORD; transcript_complete: as supplied, with the source",
+  "basis": "reached: Would you like details on how Enli Lucente's machine-eligible analog inscription specifications work",
   "read": {
-   "by": "observation pass reader, batch 11",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 18",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/enli-lucente-04ecb6-20260813/"

@@ -66,7 +66,7 @@ CAPTURE_DATASET_REF = {
 
 
 def _pd_label(pd):
-    """The dimensional PER as one line (PER-dim rubric v1.0, 2026-10-19): the gate, then PER and PER-M/C/D; the historical
+    """The dimensional PER as one line (PER-dim rubric v1.0, 2026-10-19; v1.1, 2026-10-20): the gate, then PER and PER-M/C/D; the historical
     scalar is shown beside it, never replaced."""
     if not pd:
         return None
@@ -80,7 +80,16 @@ def _pd_label(pd):
     lead = "PER %s" % f(sc.get("PER"))
     if g == "target_absent":
         lead += " (target absent: %s)" % pd.get("reached")
-    return lead + " · M %s · C %s · D %s" % (f(sc.get("M")), f(sc.get("C")), f(sc.get("D")))
+    out = lead + " · M %s · C %s · D %s" % (f(sc.get("M")), f(sc.get("C")), f(sc.get("D")))
+    # rubric v1.1 (2026-10-20): inversions and standing substitutions are recorded beside the scores
+    inv, ss = len(pd.get("inversions") or []), len(pd.get("standing_substitutions") or [])
+    if inv:
+        out += " · %d inversion%s" % (inv, "" if inv == 1 else "s")
+    if ss:
+        out += " · %d standing substitution%s" % (ss, "" if ss == 1 else "s")
+    if pd.get("tombstone_pointer"):
+        out += " · tombstone pointer"
+    return out
 
 def image_urls(e):
     """Resolve the three recorded forms into fetchable URLs."""
@@ -283,7 +292,8 @@ def transcript_block(e, gallery=''):
     meta = {
         "captured": e.get("date"), "surface": e.get("surface"),
         "auth state": e.get("auth"), "evidence class": e.get("ev"),
-        "PER (dimensional, rubric v1.0)": _pd_label(e.get("per_dim")),
+        "PER (dimensional, rubric v1.1)": _pd_label(e.get("per_dim")) if (e.get("per_dim") or {}).get("spec") == "PER-dim rubric v1.1" else None,
+        "PER (dimensional, rubric v1.0)": _pd_label(e.get("per_dim_v1_0") or (e.get("per_dim") if (e.get("per_dim") or {}).get("spec") != "PER-dim rubric v1.1" else None)),
         "PER (historical scalar)": e.get("per"),
         "PER units retained": (", ".join(k for k, v in (e.get("per_v") or {}).items() if v)
                                or "none") if e.get("per_v") else None,
@@ -318,7 +328,7 @@ def transcript_block(e, gallery=''):
     # Row tint groups so the table reads at a glance: capture conditions in one
     # tone, measurement in another, identifiers in a third.
     GROUP = {"captured": "cond", "surface": "cond", "auth state": "cond", "evidence class": "cond",
-             "PER (dimensional, rubric v1.0)": "meas", "PER (historical scalar)": "meas", "PER units retained": "meas", "failure modes": "meas", "citations read": "meas",
+             "PER (dimensional, rubric v1.1)": "meas", "PER (dimensional, rubric v1.0)": "meas", "PER (historical scalar)": "meas", "PER units retained": "meas", "failure modes": "meas", "citations read": "meas",
              "observation id": "ident", "address id": "ident"}
     rows = "".join(f'<dt class="g-{GROUP.get(k,"cond")}">{esc(str(k))}</dt>'
                    f'<dd class="g-{GROUP.get(k,"cond")}">{esc(str(v))}</dd>'

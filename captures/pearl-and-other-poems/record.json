@@ -96,6 +96,133 @@
    "cite": "https://www.alexanarch.org/captures/pearl-and-other-poems/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-9aef14aabe",
+     "name": "Pearl and Other Poems"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Pearl and Other Poems : (<\nBook by Lee Sharks"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Pearl and Other Poems is a 2014 poetry collection"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "Publication Date: October 15,2014"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "part of a larger work called The\nCrimson Hexagon"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.222,
+     "C": 0.667,
+     "D": 1.0,
+     "PER": 0.625
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Pearl and Other Poems is a 2014 poetry collection\nby Lee Sharks",
+    "read": {
+     "by": "deep-dimension reader, batch 13",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "work",
     "target": {
@@ -276,12 +403,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "work",
   "target": {
    "ent": "ENT-9aef14aabe",
    "name": "Pearl and Other Poems"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -291,8 +419,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "Pearl and Other Poems : (<\nBook by Lee Sharks",
-    "token": null
+    "evidence": "Pearl and Other Poems : (<\nBook by Lee Sharks"
    },
    {
     "atom": "title",
@@ -300,8 +427,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Pearl and Other Poems is a 2014 poetry collection",
-    "token": null
+    "evidence": "Pearl and Other Poems is a 2014 poetry collection"
    },
    {
     "atom": "date",
@@ -309,8 +435,7 @@
     "weight": 1,
     "kind": "token",
     "present": true,
-    "evidence": "Publication Date: October 15,2014",
-    "token": null
+    "evidence": "Publication Date: October 15,2014"
    },
    {
     "atom": "claim boundary",
@@ -318,8 +443,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -327,8 +451,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -336,8 +459,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -345,8 +467,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "part of a larger work called The\nCrimson Hexagon",
-    "token": null
+    "evidence": "part of a larger work called The\nCrimson Hexagon"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -354,51 +491,42 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.222,
    "C": 0.667,
    "D": 1.0,
-   "PER": 0.609
+   "PER": 0.625
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Pearl and Other Poems is a 2014 poetry collection\nby Lee Sharks; scored object: Knowledge panel as captured (OCR; no expansion control)",
+  "basis": "reached: Pearl and Other Poems is a 2014 poetry collection\nby Lee Sharks",
   "read": {
-   "by": "observation pass reader, batch 13",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 13",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/pearl-and-other-poems/"

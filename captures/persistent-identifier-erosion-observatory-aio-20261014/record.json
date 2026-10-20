@@ -198,6 +198,125 @@
   "operator_words": "new entiry.. signed out incognito both:"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-ed64694fa6",
+   "name": "platform erosion observatory"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "spearheaded by researcher Lee Sharks"
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Platform Erosion Observatory (also known as the PID Erosion Observatory) is an empirical research initiative"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "designed to measure whether persistent identifiers (PIDs)—such as DOIs—actually persist"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Severance Registry / Resolution Index"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "an empirical research initiative and framework designed to measure whether persistent identifiers (PIDs)—such as DOIs—actually persist, and to study what happens when scholarly digital objects are removed from institutional or data repositories."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "It evaluates how platforms handle metadata after a deletion occurs, specifically evaluating \"tombstone\" compliance rates (whether a placeholder remains) and the \"shape of absence\"."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "For open-source code and dataset specifics, you can view the project directly on the Platform Erosion Observatory GitHub Repository."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.5,
+   "D": 0.333,
+   "PER": 0.273
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The Platform Erosion Observatory (also known as the PID Erosion Observatory) is an empirical research initiative",
+  "read": {
+   "by": "deep-dimension reader, batch 21",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "concept",
   "target": {

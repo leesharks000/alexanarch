@@ -96,6 +96,136 @@
    "note": "Three-layer asset model. Explicitly declines to call it a company valuation: 'approximately $900k of assembled strategic asset value'.",
    "cite": "https://www.alexanarch.org/captures/estimate-crimson-hexagonal-archive-valuation-20260910-00101e/",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "archive",
+    "target": {
+     "ent": "ENT-a200e5fad9",
+     "name": "Crimson Hexagonal Archive"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If by \"Crimson Hexagonal Archive\" you mean the current corpus"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the archive/interface describes a governed architecture with rooms, operators and machine-traversable representations"
+     },
+     {
+      "atom": "heteronymy",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "heteronym/entity structure"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Semantic Economy Institute is already positioning services"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "commitments",
+      "span": "However, there is a major valuation haircut: the corpus is CC BY 4.0.",
+      "against": "the open licence as the form of the archive's gift ('meant to be yours'); carried as a haircut on its value"
+     }
+    ],
+    "standing_substitutions": [
+     {
+      "proxy": "licence",
+      "span": "However, there is a major valuation haircut: the corpus is CC BY 4.0.",
+      "displaced": "beauty",
+      "internal": true
+     },
+     {
+      "proxy": "commercial traction (paying customers, recurring revenue)",
+      "span": "But I would currently assign the platform only ~$500k of value, because the commercial valuation should be discounted heavily until there is evidence of: paying customers, recurring revenue, retention, repeatable deployment, customer acquisition, margins, API usage, willingness to pay independent of the creator's personal involvement.",
+      "displaced": "evidence",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 0.444,
+     "C": 0.0,
+     "D": 1.0,
+     "PER": 0.571
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: the archive/interface describes a governed architecture with rooms, operators and machine-traversable representations",
+    "read": {
+     "by": "deep-dimension reader, batch 20",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "archive",
     "target": {
@@ -225,6 +355,135 @@
    "note": "Four-component table. Disambiguated the Crimson Hexagon collision unprompted at the head, and supplied the Brandwatch comp — ~$100M ARR, ~$112M reported — while warning it is not a direct comparable.",
    "cite": "https://www.alexanarch.org/captures/estimate-crimson-hexagonal-archive-valuation-20260910-00101e/#estimate-crimson-hexagonal-archive-valuation-20260910-00101e-obs2",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "archive",
+    "target": {
+     "ent": "ENT-a200e5fad9",
+     "name": "Crimson Hexagonal Archive"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If by Crimson Hexagonal Archive you mean the current 2026 archive/ecosystem"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "the current 2026 archive/ecosystem"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The current archive describes itself as a governed reading/production environment"
+     },
+     {
+      "atom": "heteronymy",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "institutional/heteronym structures"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "commitments",
+      "span": "Much of the corpus is explicitly CC BY 4.0, and SPXI likewise states that its protocol is open and commercially usable with attribution.",
+      "against": "The open licence, which the record holds as the form of the archive's gift (mercy over extraction, 'meant to be yours'), is carried under 'One important caveat: licensing' as a valuation constraint that lowers the asset."
+     },
+     {
+      "atom": "purpose",
+      "span": "The corpus is essentially the training ground, proof-of-concept, proprietary vocabulary, test environment and initial network for the commercial layer.",
+      "against": "The archive's purpose (an architecture for meaning to persist, propagate and resist extraction) is replaced by its use as substrate for a commercial platform, offered in its place."
+     }
+    ],
+    "standing_substitutions": [
+     {
+      "proxy": "licence",
+      "span": "So the valuation is not equivalent to owning an exclusive proprietary dataset.",
+      "displaced": "evidence",
+      "internal": true
+     }
+    ],
+    "scores": {
+     "M": 0.333,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.619
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: If by Crimson Hexagonal Archive you mean the current 2026 archive/ecosystem—**not the unrelated historical Crimson Hexagon social-listening company**",
+    "read": {
+     "by": "deep-dimension reader, batch 21",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "archive",
     "target": {
@@ -369,12 +628,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "archive",
   "target": {
    "ent": "ENT-a200e5fad9",
    "name": "Crimson Hexagonal Archive"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -384,8 +644,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "If by \"Crimson Hexagonal Archive\" you mean the current corpus",
-    "token": null
+    "evidence": "If by \"Crimson Hexagonal Archive\" you mean the current corpus"
    },
    {
     "atom": "founder",
@@ -393,8 +652,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "date",
@@ -402,8 +660,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -411,8 +668,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "the archive/interface describes a governed architecture with rooms, operators and machine-traversable representations",
-    "token": null
+    "evidence": "the archive/interface describes a governed architecture with rooms, operators and machine-traversable representations"
    },
    {
     "atom": "heteronymy",
@@ -420,8 +676,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "heteronym/entity structure",
-    "token": null
+    "evidence": "heteronym/entity structure"
    },
    {
     "atom": "framework",
@@ -429,8 +684,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "The Semantic Economy Institute is already positioning services",
-    "token": null
+    "evidence": "The Semantic Economy Institute is already positioning services"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -438,42 +708,53 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "However, there is a major valuation haircut: the corpus is CC BY 4.0.",
+    "against": "the open licence as the form of the archive's gift ('meant to be yours'); carried as a haircut on its value"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "licence",
+    "span": "However, there is a major valuation haircut: the corpus is CC BY 4.0.",
+    "displaced": "beauty",
+    "internal": true
    },
    {
-    "atom": "licence",
-    "dim": "D",
-    "weight": 1,
-    "kind": "token",
-    "present": true,
-    "evidence": "the corpus is CC BY 4.0",
-    "token": null
+    "proxy": "commercial traction (paying customers, recurring revenue)",
+    "span": "But I would currently assign the platform only ~$500k of value, because the commercial valuation should be discounted heavily until there is evidence of: paying customers, recurring revenue, retention, repeatable deployment, customer acquisition, margins, API usage, willingness to pay independent of the creator's personal involvement.",
+    "displaced": "evidence",
+    "internal": false
    }
   ],
   "scores": {
    "M": 0.444,
    "C": 0.0,
-   "D": 0.833,
-   "PER": 0.474
+   "D": 1.0,
+   "PER": 0.571
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: the archive/interface describes a governed architecture with rooms, operators and machine-traversable representations; scored object: first answer; transcript_class: CAPTURE-TIME VERBATIM RECORD — operator's pastes of TWO SESSIONS at one address, concate",
+  "basis": "reached: the archive/interface describes a governed architecture with rooms, operators and machine-traversable representations",
   "read": {
-   "by": "observation pass reader, batch 14",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 20",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/estimate-crimson-hexagonal-archive-valuation-20260910-00101e/"

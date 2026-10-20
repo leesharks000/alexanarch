@@ -109,6 +109,117 @@
    "cite": "https://www.alexanarch.org/captures/provenance-forensic-semiotics/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-b5e51dba69",
+     "name": "Provenance: Journal of Forensic Semiotics"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The \"Provenance: Journal of Forensic Semiotics” is an academic publication"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It centers on the analysis of how traces, texts, and synthetic media carry (or fabricate) verifiable lineage, meaning, and authenticity in legal and investigative contexts."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 1.0,
+     "D": 0.571,
+     "PER": 0.7
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: is an academic publication exploring the intersection of sign theory, digital authorship, and criminology",
+    "read": {
+     "by": "deep-dimension reader, batch 1",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -263,12 +374,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "institution",
   "target": {
    "ent": "ENT-b5e51dba69",
    "name": "Provenance: Journal of Forensic Semiotics"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -278,8 +390,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The \"Provenance: Journal of Forensic Semiotics” is an academic publication",
-    "token": null
+    "evidence": "The \"Provenance: Journal of Forensic Semiotics” is an academic publication"
    },
    {
     "atom": "founder",
@@ -287,8 +398,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "date",
@@ -296,8 +406,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -305,8 +414,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -314,8 +422,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -323,42 +430,58 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It centers on the analysis of how traces, texts, and synthetic media carry (or fabricate) verifiable lineage, meaning, and authenticity in legal and investigative contexts."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.667,
    "C": 1.0,
-   "D": 1.0,
-   "PER": 0.833
+   "D": 0.571,
+   "PER": 0.7
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: is an academic publication exploring the intersection of sign theory, digital authorship, and criminology; scored object: visible excerpt (OCR of screenshot, chrome interleaved); truncated by interface",
+  "basis": "reached: is an academic publication exploring the intersection of sign theory, digital authorship, and criminology",
   "read": {
-   "by": "observation pass reader, batch 19",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/provenance-forensic-semiotics/"

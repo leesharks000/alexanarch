@@ -98,6 +98,125 @@
    "cite": "https://www.alexanarch.org/captures/20260804-jackfeist-ark-aimode/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-399135a469",
+     "name": "Jack Feist"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Jack Feist is a central figure"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Publications: The Provenance of Jack Feist (EA-ARK-JF-01); The Space Ark"
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "ultimate compression layer of the Crimson Hexagonal Archive architecture"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Symbolic Identity: formalized under the formula Jack Feist = LOGOS*; the initial foundational 'fold' or base case (ε) of a massive symbolic compression system."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.375,
+     "C": 0.5,
+     "D": 0.667,
+     "PER": 0.524
+    },
+    "src": false,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Jack Feist is a central figure in The Space Ark (document series EA-ARK-01)",
+    "read": {
+     "by": "deep-dimension reader, batch 23",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -267,12 +386,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-399135a469",
    "name": "Jack Feist"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -282,8 +402,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Jack Feist is a central figure",
-    "token": null
+    "evidence": "Jack Feist is a central figure"
    },
    {
     "atom": "works",
@@ -291,8 +410,7 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "Publications: The Provenance of Jack Feist (EA-ARK-JF-01); The Space Ark",
-    "token": null
+    "evidence": "Publications: The Provenance of Jack Feist (EA-ARK-JF-01); The Space Ark"
    },
    {
     "atom": "dates",
@@ -300,8 +418,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -309,8 +426,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -318,8 +434,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -327,8 +442,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "ultimate compression layer of the Crimson Hexagonal Archive architecture",
-    "token": null
+    "evidence": "ultimate compression layer of the Crimson Hexagonal Archive architecture"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Symbolic Identity: formalized under the formula Jack Feist = LOGOS*; the initial foundational 'fold' or base case (ε) of a massive symbolic compression system."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -336,42 +466,42 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.375,
    "C": 0.5,
-   "D": 1.0,
-   "PER": 0.632
+   "D": 0.667,
+   "PER": 0.524
   },
   "src": false,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Jack Feist is a central figure in The Space Ark (document series EA-ARK-01); scored object: AI Overview answer as supplied by MANUS (completeness not stated)",
+  "basis": "reached: Jack Feist is a central figure in The Space Ark (document series EA-ARK-01)",
   "read": {
-   "by": "observation pass reader, batch 5",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 23",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/20260804-jackfeist-ark-aimode/"

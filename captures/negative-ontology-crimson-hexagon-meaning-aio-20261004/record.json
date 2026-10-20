@@ -250,6 +250,123 @@
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "archive",
+  "target": {
+   "ent": "ENT-a200e5fad9",
+   "name": "Crimson Hexagonal Archive"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "When applied in this context, the negative ontology of the crimson hexagon means:"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "a concepts-driven literary architecture popularized in 2026 essays by writer Lee Sharks"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "popularized in 2026 essays by writer Lee Sharks"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The term originates from Jorge Luis Borges’ famous short story, The Library of Babel."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "It warns that by chasing the \"Crimson Hexagon\" (the perfect, all-knowing AI summary), we are actually trusting an architecture built on empty statistical probabilities that flattens human expression into a curated void.",
+    "against": "The archive's name is reassigned to the extracting AI architecture it was built to resist ('Large AI models ... are highly organized architectures (hexagons)'). This sets the name against its own purpose (an architecture under which meaning persists and resists extraction)."
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.222,
+   "C": 1.0,
+   "D": 0.75,
+   "PER": 0.571
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The phrase \"negative ontology of the crimson hexagon\" refers to a concepts-driven literary architecture popularized in 2026 essays by writer Lee Sharks",
+  "read": {
+   "by": "deep-dimension reader, batch 14",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "archive",
   "target": {

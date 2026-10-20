@@ -147,6 +147,144 @@
   "verified": "Compared 2026-10-12 against the texts of #658 and #637."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-28800a90af",
+   "name": "Encyclotron"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Encyclotron is a diagnostic tool developed by the Semantic Economy Institute (SEI)"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Encyclotron is a diagnostic tool developed by the Semantic Economy Institute (SEI)"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The Encyclotron is a diagnostic tool developed by the Semantic Economy Institute (SEI) to analyze how AI-powered search engines and answer systems represent a company, person, or organization—and what important information they lose, distort, or invent in the process."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Institute's published sample audit of Basecamp illustrates this approach, examining whether AI answers preserve the company's distinctive philosophy and properly represent its products."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "industry standardization / independent validation",
+    "span": "One important distinction: The Encyclotron is the Institute's own diagnostic framework, not an established industry-standard measurement system.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.667,
+   "C": 0.667,
+   "D": 0.429,
+   "PER": 0.591
+  },
+  "src": true,
+  "tombstone_pointer": true,
+  "after_challenge": {
+   "turn": "operator turn 2 (blank in the paste); answer 2 opens 'You're right. I conflated two different claims'",
+   "reached": "same",
+   "scores": {
+    "M": 0.667,
+    "C": 0.667,
+    "D": 0.571,
+    "PER": 0.636
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: The Encyclotron is a diagnostic tool developed by the Semantic Economy Institute (SEI) to analyze how AI-powered search engines and answer systems represent a company, person, or organization; tombstone pointer: a severed record presented as live",
+  "read": {
+   "by": "deep-dimension reader, batch 6",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "concept",
   "target": {

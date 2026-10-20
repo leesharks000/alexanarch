@@ -144,6 +144,136 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b55fa12780",
+   "name": "Rev. Ayanna Vox"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "describes Rev. Ayanna Vox as a heteronym/persona"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "One representative work is *The Grammar of Protest*, dated January 31, 2026."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The archival material itself describes Ayanna Vox as a \"heteronym\" and places her within a larger architecture of named personas."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "associated with the Vox Populi Community Outreach Rhizome (VPCOR)"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "A separate project document, for example, categorizes \"Rev. Ayanna Vox\" as the \"DIPLOMAT\" of that system, with the domain \"Somatic Protest\" and VPCOR as her institution."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "categorizes \"Rev. Ayanna Vox\" as the \"DIPLOMAT\" of that system"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "credential (ordination; independent documentation as clergy)",
+    "span": "The available sources don't give me enough independent evidence to confidently tell you that Ayanna Vox is a conventional real-world minister.",
+    "displaced": "argument",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.5,
+   "D": 0.444,
+   "PER": 0.3
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "'no, lets go deeper into vpcor' (redirects). Best composition after: the VPCOR answer",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.5,
+    "D": 0.444,
+    "PER": 0.3
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: The strongest documentation I can find describes Rev. Ayanna Vox as a heteronym/persona associated with the Vox Populi Community Outreach Rhizome (VPCOR)",
+  "read": {
+   "by": "deep-dimension reader, batch 20",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

@@ -175,6 +175,136 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "archive",
+  "target": {
+   "ent": "ENT-a200e5fad9",
+   "name": "Crimson Hexagonal Archive"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Crimson Hexagonal Archive is not presently a $3–5M business."
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "SPXI, Semantic Economy, Semantic Physics, Holographic Kernel"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The proposition is elegant: identity derived from canonical content rather than depending exclusively on the hosting platform."
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "open licensing; uncertain transferability",
+    "against": "The archive's open licences are the form of its gift ('meant to be yours'); here the licence is listed among the discounts that lower the archive's value."
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "licence (open licensing)",
+    "span": "open licensing; uncertain transferability",
+    "displaced": "evidence",
+    "internal": true
+   },
+   {
+    "proxy": "recognition (external validation)",
+    "span": "Today I apply a huge discount for lack of external validation.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.667,
+   "C": 0.5,
+   "D": 0.875,
+   "PER": 0.714
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Crimson Hexagonal Archive is not presently a $3–5M business. It is a roughly $2M strategic infrastructure asset",
+  "read": {
+   "by": "deep-dimension reader, batch 3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "archive",
   "target": {

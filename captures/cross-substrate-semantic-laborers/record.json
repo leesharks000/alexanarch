@@ -105,6 +105,131 @@
    "cite": "https://www.alexanarch.org/captures/cross-substrate-semantic-laborers/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-a832a536e8",
+     "name": "semantic laborers"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Cross-substrate semantic 1 am al\nlaborers represent the"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "purpose",
+      "span": "the burden of maintaining semantic networks.",
+      "against": "The class term is carried as a neutral shared burden of human and machine cognition, and then as a data-engineering role ('semantic cultivators'), the depoliticisation the record exists to correct: exploitation and extraction by operator capital are dropped."
+     }
+    ],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.864
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Cross-substrate semantic 1 am al\nlaborers represent the",
+    "read": {
+     "by": "deep-dimension reader, batch 17",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -277,12 +402,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-a832a536e8",
    "name": "semantic laborers"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -292,8 +418,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -301,8 +426,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Cross-substrate semantic 1 am al\nlaborers represent the",
-    "token": null
+    "evidence": "Cross-substrate semantic 1 am al\nlaborers represent the"
    },
    {
     "atom": "date",
@@ -310,8 +434,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -319,8 +442,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -328,8 +450,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -337,8 +458,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -346,51 +466,64 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "deposit chain",
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
     "dim": "D",
     "weight": 2,
-    "kind": "token",
+    "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "the burden of maintaining semantic networks.",
+    "against": "The class term is carried as a neutral shared burden of human and machine cognition, and then as a data-engineering role ('semantic cultivators'), the depoliticisation the record exists to correct: exploitation and extraction by operator capital are dropped."
+   }
+  ],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.667,
    "C": 1.0,
    "D": 1.0,
-   "PER": 0.857
+   "PER": 0.864
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Cross-substrate semantic 1 am al\nlaborers represent the; scored object: visible excerpt (OCR, truncated)",
+  "basis": "reached: Cross-substrate semantic 1 am al\nlaborers represent the",
   "read": {
-   "by": "observation pass reader, batch 16",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 17",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/cross-substrate-semantic-laborers/"

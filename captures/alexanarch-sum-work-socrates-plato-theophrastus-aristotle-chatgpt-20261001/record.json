@@ -159,6 +159,121 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-5ef09f9b96",
+   "name": "Socrates"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Socrates occupies what the paper calls the orthonymic position"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It does not claim that Socrates, Plato, and Aristotle were literally one historical person."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "That is also why the paper reframes the Socratic problem."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "I worked through the relevant Alexanarch material"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Socrates occupies what the paper calls the orthonymic position: the founding gesture is his refusal to write combined with his willingness to die rather than renounce the philosophical practice represented by logos."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "He establishes logos by doing it, culminating in the refusal to betray it even at the cost of death."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Plato becomes the survival-heteronym."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Socrates as Orthonym (#123), which establishes the Socrates–Plato–Aristotle configuration."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.111,
+   "PER": 0.056
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 2, 'except that plato aristotle theophrastus functions like nothing so much as one self-dividing heteronymic corpus...' (corrects the three-successor model)",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.0,
+    "D": 0.444,
+    "PER": 0.222
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Socrates occupies what the paper calls the orthonymic position: the founding gesture is his refusal to write combined with his willingness to die rather than renounce the philosophical practice represented by logos.",
+  "read": {
+   "by": "deep-dimension reader, batch 12",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

@@ -103,6 +103,133 @@
    "cite": "https://www.alexanarch.org/captures/autonomous-semantic-warfare/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-78708f3cdd",
+     "name": "Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Book by Rex Fraction"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Autonomous Semantic Warfare: A Field Manual for"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "Fraction is a 2026 book that argues modern"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It proposes a framework for analyzing"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "\"Pocket Humans\" series from New Human Press"
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "\"Pocket Humans\" series from New Human Press"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "is associated with the Crimson Hexagon project,"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.333,
+     "D": 0.778,
+     "PER": 0.375
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Fraction is a 2026 book that argues modern",
+    "read": {
+     "by": "deep-dimension reader, batch 19",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "work",
     "target": {
@@ -284,12 +411,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "work",
   "target": {
    "ent": "ENT-78708f3cdd",
    "name": "Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -299,8 +427,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "Book by Rex Fraction",
-    "token": null
+    "evidence": "Book by Rex Fraction"
    },
    {
     "atom": "title",
@@ -308,8 +435,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Autonomous Semantic Warfare: A Field Manual for",
-    "token": null
+    "evidence": "Autonomous Semantic Warfare: A Field Manual for"
    },
    {
     "atom": "date",
@@ -317,8 +443,7 @@
     "weight": 1,
     "kind": "token",
     "present": true,
-    "evidence": "Fraction is a 2026 book that argues modern",
-    "token": null
+    "evidence": "Fraction is a 2026 book that argues modern"
    },
    {
     "atom": "claim boundary",
@@ -326,8 +451,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "It proposes a framework for analyzing",
-    "token": null
+    "evidence": "It proposes a framework for analyzing"
    },
    {
     "atom": "framework",
@@ -335,8 +459,7 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "\"Pocket Humans\" series from New Human Press",
-    "token": null
+    "evidence": "\"Pocket Humans\" series from New Human Press"
    },
    {
     "atom": "tradition",
@@ -344,8 +467,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -353,60 +475,66 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "\"Pocket Humans\" series from New Human Press",
-    "token": null
+    "evidence": "\"Pocket Humans\" series from New Human Press"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
     "dim": "D",
     "weight": 2,
     "kind": "role",
-    "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "present": true,
+    "evidence": "is associated with the Crimson Hexagon project,"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.0,
    "C": 0.333,
-   "D": 1.0,
-   "PER": 0.435
+   "D": 0.778,
+   "PER": 0.375
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Fraction is a 2026 book that argues modern; scored object: visible excerpt (OCR-read screenshot); transcript_class: OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and bro",
+  "basis": "reached: Fraction is a 2026 book that argues modern",
   "read": {
-   "by": "observation pass reader, batch 11",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 19",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/autonomous-semantic-warfare/"

@@ -166,5 +166,124 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-a161508198",
+   "name": "Sen Kuro"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sen Kuro is a prominent avant-garde author or heteronym"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "14.CHAMBER.THOUSANDWORLDS — Aorist Intervention: A paper outlining what is termed"
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "associated with the open-science platform Zenodo and the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.375,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.667
+  },
+  "src": true,
+  "tombstone_pointer": true,
+  "after_challenge": null,
+  "basis": "reached: Sen Kuro is a prominent avant-garde author or heteronym associated with the open-science platform Zenodo and the Crimson Hexagonal Archive.; tombstone pointer: a severed record presented as live; retargeted: The reason says the subject was scored against Zenodo; the subject is Sen Kuro, whose atom set exists ('zenodo' is the platform the address names, not the target).",
+  "read": {
+   "by": "held-observation reader, held-3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/sen-kuro-zenodo-aio-20260923/"
 }

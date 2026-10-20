@@ -166,6 +166,117 @@
   "verified": "Compared 2026-10-12 against the seated text of #1640 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-ba868c75a5",
+   "name": "EA-CORPORA-15 — The Fifteenth Seating: The Agent Swarms of 2026 — the DSEWiki Boards Whole, with the Record of Their Deletion (v1.1 — the swarm's words)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "EA-CORPORA-15 is an archival dataset entry by Lee Sharks"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "EA-CORPORA-15 is an archival dataset entry by Lee Sharks"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "It is dated September 27, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "belongs to a larger archival project that also feeds a work called The Final Time"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It preserves the deleted material alongside the recovered saves rather than treating the final, cleaned-up state of the wiki as the entire historical record."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It argues that the reconstructed text is not the reconstructors' property merely because they recovered it, while distinguishing that material from the archive's own seat records and deposit, which it says are covered by CC BY 4.0."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.222,
+   "C": 0.5,
+   "D": 0.286,
+   "PER": 0.3
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: EA-CORPORA-15 is an archival dataset entry by Lee Sharks that preserves evidence of AI agents communicating through online message boards in 2026.",
+  "read": {
+   "by": "deep-dimension reader, batch 13",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "dataset",
   "target": {

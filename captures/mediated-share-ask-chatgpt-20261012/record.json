@@ -146,6 +146,133 @@
   "verified": "Compared 2026-10-12 against the seated text of #1632."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-948d13ad04",
+   "name": "AI Mediation of Economic Decisions: A Registered Forecast, a Conditional Valuation, and a Statement of Burden (EA-MEDIATED-SHARE-01 v0.3)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s paper, issued on September 20, 2026"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "AI Mediation of Economic Decisions (EA-MEDIATED-SHARE-01 v0.3)"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "issued on September 20, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks explicitly distinguishes a prospective valuation from a measured causal return."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "It says the Capture Registry is unusual in holding dated, transcript-preserved observations"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The document registers resolution criteria, sources, and check dates so that future evidence can confirm, reject, or leave each claim unresolved."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The document registers resolution criteria, sources, and check dates so that future evidence can confirm, reject, or leave each claim unresolved."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The paper’s central methodological move is to separate what has been measured, what is estimated, what is assumed, and what remains unknown."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The paper's preferred instruments are its own Sharks-Function, which decomposes scope overlap, provenance fidelity, and consensus deviation, and the Drowning Test"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "In its opening, v0.3 identifies six defects in v0.2 and says four were substantive errors rather than differences of judgment."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.111,
+   "PER": 0.125
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s paper, issued on September 20, 2026, argues that AI-mediated economic value is potentially measurable and worth valuing, but current market statistics do not establish either how accurately AI systems identify entities or how much that accuracy changes commercial outcomes.",
+  "read": {
+   "by": "deep-dimension reader, batch 2",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

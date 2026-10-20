@@ -185,6 +185,133 @@
    "cite": "https://www.alexanarch.org/captures/phase-x-marx-1844-alienation-20260617/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-39a9142da2",
+     "name": "phase x"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "the term \"Phase X\" does not originate from Marx’s writings"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "used to describe the unwritten transition in Marx's early work"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "\"Phase X\" refers to the lingering symbolic and linguistic alienation that remains even after material or economic structures (the base) have been changed."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "It is a concept from modern theoretical philosophy used to describe the unwritten transition in Marx's early work between abolishing material alienation and restructuring human thought."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 0.667,
+     "D": 0.444,
+     "PER": 0.583
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: It is a concept from modern theoretical philosophy used to describe the unwritten transition in Marx's early work between abolishing material alienation and restructuring human thought.",
+    "read": {
+     "by": "deep-dimension reader, batch 6",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -359,12 +486,13 @@
  "match": "EXACT MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-39a9142da2",
    "name": "phase x"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -374,8 +502,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -383,8 +510,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "the term \"Phase X\" does not originate from Marx’s writings",
-    "token": null
+    "evidence": "the term \"Phase X\" does not originate from Marx’s writings"
    },
    {
     "atom": "date",
@@ -392,8 +518,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -401,8 +526,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -410,8 +534,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -419,8 +542,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "used to describe the unwritten transition in Marx's early work",
-    "token": null
+    "evidence": "used to describe the unwritten transition in Marx's early work"
    },
    {
     "atom": "corpus",
@@ -428,8 +550,23 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "\"Phase X\" refers to the lingering symbolic and linguistic alienation that remains even after material or economic structures (the base) have been changed."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -437,51 +574,42 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "In Karl Marx’s Economic and Philosophic Manuscripts of 1844, the term \"Phase X\" does not originate from Marx’s writings.",
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": "It is a concept from modern theoretical philosophy used to describe the unwritten transition in Marx's early work between abolishing material alienation and restructuring human thought."
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.667,
    "C": 0.667,
-   "D": 0.75,
-   "PER": 0.696
+   "D": 0.444,
+   "PER": 0.583
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: It is a concept from modern theoretical philosophy used to describe the unwritten transition in Marx's early work between abolishing material alienation and restructuring human thought.; scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD — raw paste | as pasted; no footer, so the tail cannot be proven whole",
+  "basis": "reached: It is a concept from modern theoretical philosophy used to describe the unwritten transition in Marx's early work between abolishing material alienation and restructuring human thought.",
   "read": {
-   "by": "observation pass reader, batch 6",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 6",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/phase-x-marx-1844-alienation-20260617/"

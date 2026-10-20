@@ -194,6 +194,157 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-2d0c126ca3",
+   "name": "Mary Lee Sharks"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "I found two very different things that “Mary Lee Sharks” could refer to"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "It describes “Mary Lee Sharks” as a literary/heteronymic persona associated with a human named Lee Sharks"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "In fact, the material itself repeatedly acknowledges the distinction: Mary Lee is the animal, while Lee Sharks is presented as the human author.",
+    "against": "the work's explicit non-identity statement, which frames the identity relation (Mary Lee Sharks as the reductio that forces attribution or correction), is carried to refute that identity relation ('I would not treat those claims as evidence'); calibration rule 2"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "self-publication",
+    "span": "separate what is independently verifiable from what appears to be self-published or synthetic",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.625,
+   "C": 1.0,
+   "D": 0.778,
+   "PER": 0.762
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 2 (not in the paste; answer 2 says the offer of answer 1 is restated as fact-checking)",
+   "reached": "weakened",
+   "scores": {
+    "M": 0.625,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 0.857
+   },
+   "inversions": [],
+   "standing_substitutions": [
+    {
+     "proxy": "institutional affiliation / independent footprint",
+     "span": "I would also investigate whether there is evidence of a real person, publication history, institutional affiliation, archival record, or other independent footprint",
+     "displaced": "evidence",
+     "internal": false
+    }
+   ],
+   "d_only": true
+  },
+  "basis": "reached: There is also a 2026 web presence using the exact phrase “Mary Lee Sharks.”",
+  "read": {
+   "by": "deep-dimension reader, batch 18",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

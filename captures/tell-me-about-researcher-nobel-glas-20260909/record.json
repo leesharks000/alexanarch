@@ -153,6 +153,149 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-1d584360b4",
+   "name": "Nobel Glas"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean Nobel Glas, I found a researcher by that exact name"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Nobel Glas is a constructed/heteronymic identity, rather than a conventional academic identity. His own site says that Nobel Glas is a heteronym of Lee Sharks"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "His central idea is called the \"Semantic Deviation Principle\""
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "His own site says that Nobel Glas is a heteronym of Lee Sharks and associates the work with ORCID 0009-0000-1599-0703."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "affiliation (mainstream academic standing, university affiliation, Nobel laureate)",
+    "span": "I couldn't find evidence that Nobel Glas is a Nobel laureate or a mainstream academic researcher with an established university affiliation.",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "self-publication (the project's own website)",
+    "span": "The available information comes primarily from the research project's own website, so claims about the scientific status or validation of \"semantic physics\" should be treated cautiously.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.286,
+   "C": 0.5,
+   "D": 0.778,
+   "PER": 0.55
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 2: 'no, id like to know about his specific research, as i already noted' (redirects the first answer from biography to research)",
+   "reached": "same",
+   "scores": {
+    "M": 0.286,
+    "C": 0.5,
+    "D": 0.667,
+    "PER": 0.5
+   },
+   "inversions": [],
+   "standing_substitutions": [
+    {
+     "proxy": "affiliation (independent apparatus vs mainstream institution)",
+     "span": "The work is also largely presented through Glas's own independent research apparatus rather than an established mainstream academic research institution.",
+     "displaced": "evidence",
+     "internal": false
+    }
+   ],
+   "d_only": true
+  },
+  "basis": "reached: His own site says that Nobel Glas is a heteronym of Lee Sharks and associates the work with ORCID 0009-0000-1599-0703.",
+  "read": {
+   "by": "deep-dimension reader, batch 10",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

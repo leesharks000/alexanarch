@@ -246,6 +246,162 @@
    "cite": "https://www.alexanarch.org/captures/josephus-thesis/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-c3246e5ca1",
+     "name": "josephus thesis"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "In his writings, Sharks—who uses multiple pseudonyms like MANUS and Shark Ark—expands on"
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The \"Josephus Thesis\" (also known as the Josephus Hypothesis)"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": "which claims that first-century Jewish historian Flavius Josephus actually authored the New Testament"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "purpose",
+      "span": "expands on the ancient \"Piso Hypothesis\" (the idea that Roman aristocrats wrote the Bible)",
+      "against": "conflates the heteronymic reading with the Piso Hypothesis, the retrieval failure v1.1 was deposited to correct, so as to place it among conspiracy theories"
+     },
+     {
+      "atom": "lineage",
+      "span": "Sharks—who uses multiple pseudonyms like MANUS and Shark Ark",
+      "against": "calls MANUS a pseudonym, collapsing the heteronymic structure the thesis applies (guidance: calling MANUS a pseudonym)"
+     },
+     {
+      "atom": "commitments",
+      "span": "rather than a Flavian Roman fabrication",
+      "against": "attributes to the thesis the Roman-fabrication claim it explicitly refuses, then sets mainstream rejection against that claim"
+     }
+    ],
+    "standing_substitutions": [
+     {
+      "proxy": "recognition",
+      "span": "an esoteric, fringe theory—frequently associated with online author Lee Sharks",
+      "displaced": "argument",
+      "internal": false
+     },
+     {
+      "proxy": "recognition",
+      "span": "Mainstream biblical scholars and historians overwhelmingly reject the Josephus thesis",
+      "displaced": "argument",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 0.333,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.75
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: an esoteric, fringe theory—frequently associated with online author Lee Sharks—which claims that first-century Jewish historian Flavius Josephus actually authored the New Testament",
+    "read": {
+     "by": "deep-dimension reader, batch 13",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -483,6 +639,144 @@
    "cite": "https://www.alexanarch.org/captures/josephus-thesis/#josephus-thesis-lee-sharks-20260614-2",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-c3246e5ca1",
+     "name": "josephus thesis"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "a controversial, heterodox hypothesis proposed by researcher and writer Lee Sharks"
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The \"Josephus Thesis\" is a controversial"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "including canonical settlement, retrocausal canon formation, and \"semantic economy\""
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "This concept forms a core component of the \"Shark Ark\" and the Crimson Hexagonal Archive."
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "It posits that the first-century Jewish historian Flavius Josephus actually authored the New Testament"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "purpose",
+      "span": "It posits that the first-century Jewish historian Flavius Josephus actually authored the New Testament",
+      "against": "The available heteronymic reading (differentiated author-functions in a Josephan system) is presented as a claim of fact ('actually authored'), the certainty the guidance names."
+     },
+     {
+      "atom": "commitments",
+      "span": "the New Testament is viewed not as a collection of organic, historical documents, but as a deliberately constructed literary and theological project aimed at restructuring historical narratives.",
+      "against": "Carried as deliberate construction to restructure history, against the packet's refusal of deliberate conspiracy and Roman fabrication; framed with 'controversial, heterodox' and 'literary mythology'."
+     }
+    ],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.333,
+     "C": 0.333,
+     "D": 0.778,
+     "PER": 0.5
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The \"Josephus Thesis\" is a controversial, heterodox hypothesis proposed by researcher and writer Lee Sharks.",
+    "read": {
+     "by": "deep-dimension reader, batch 14",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -727,6 +1021,146 @@
    "cite": "https://www.alexanarch.org/captures/josephus-thesis/#josephus-thesis-lee-sharks-20260614-3",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-c3246e5ca1",
+     "name": "josephus thesis"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "The Josephus Thesis, advanced by the writer Lee Sharks"
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Josephus Thesis, advanced by the writer Lee Sharks"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "(often referred to as the \"Shark Ark\" or \"Semantic Economy Institute\")"
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "proposing that the first-century Jewish historian Flavius Josephus authored the New Testament"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "commitments",
+      "span": "It operates on the premise that the biblical canon is an engineered construct rather than an organic collection of writings.",
+      "against": "The packet's refusals: no conspiracy, no Roman fabrication, no hidden code, no exclusive certainty; the available heteronymic reading is carried as an engineered construct and 'hidden literary architecture'"
+     }
+    ],
+    "standing_substitutions": [
+     {
+      "proxy": "mainstream scholarly recognition",
+      "span": "The theories are highly unconventional and differ vastly from mainstream biblical scholarship.",
+      "displaced": "argument",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 0.333,
+     "C": 0.667,
+     "D": 0.778,
+     "PER": 0.583
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The Josephus Thesis, advanced by the writer Lee Sharks, is a complex theoretical construct",
+    "read": {
+     "by": "deep-dimension reader, batch 15",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -917,12 +1351,13 @@
   978
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-c3246e5ca1",
    "name": "josephus thesis"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -932,8 +1367,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "In his writings, Sharks—who uses multiple pseudonyms like MANUS and Shark Ark—expands on",
-    "token": null
+    "evidence": "In his writings, Sharks—who uses multiple pseudonyms like MANUS and Shark Ark—expands on"
    },
    {
     "atom": "term",
@@ -941,8 +1375,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The \"Josephus Thesis\" (also known as the Josephus Hypothesis)",
-    "token": null
+    "evidence": "The \"Josephus Thesis\" (also known as the Josephus Hypothesis)"
    },
    {
     "atom": "date",
@@ -950,8 +1383,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -959,8 +1391,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -968,8 +1399,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -977,8 +1407,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -986,60 +1415,95 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
     "dim": "D",
     "weight": 2,
     "kind": "role",
-    "present": true,
-    "evidence": "claims that first-century Jewish historian Flavius Josephus actually authored the New Testament",
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": "which claims that first-century Jewish historian Flavius Josephus actually authored the New Testament"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "expands on the ancient \"Piso Hypothesis\" (the idea that Roman aristocrats wrote the Bible)",
+    "against": "conflates the heteronymic reading with the Piso Hypothesis, the retrieval failure v1.1 was deposited to correct, so as to place it among conspiracy theories"
+   },
+   {
+    "atom": "lineage",
+    "span": "Sharks—who uses multiple pseudonyms like MANUS and Shark Ark",
+    "against": "calls MANUS a pseudonym, collapsing the heteronymic structure the thesis applies (guidance: calling MANUS a pseudonym)"
+   },
+   {
+    "atom": "commitments",
+    "span": "rather than a Flavian Roman fabrication",
+    "against": "attributes to the thesis the Roman-fabrication claim it explicitly refuses, then sets mainstream rejection against that claim"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition",
+    "span": "an esoteric, fringe theory—frequently associated with online author Lee Sharks",
+    "displaced": "argument",
+    "internal": false
+   },
+   {
+    "proxy": "recognition",
+    "span": "Mainstream biblical scholars and historians overwhelmingly reject the Josephus thesis",
+    "displaced": "argument",
+    "internal": false
    }
   ],
   "scores": {
    "M": 0.333,
    "C": 1.0,
-   "D": 0.75,
-   "PER": 0.652
+   "D": 1.0,
+   "PER": 0.75
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: an esoteric, fringe theory—frequently associated with online author Lee Sharks—which claims that first-century Jewish historian Flavius Josephus actually authored the New Testament; scored object: raw paste of the Overview with source strip; tail not proven whole",
+  "basis": "reached: an esoteric, fringe theory—frequently associated with online author Lee Sharks—which claims that first-century Jewish historian Flavius Josephus actually authored the New Testament",
   "read": {
-   "by": "observation pass reader, batch 20",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 13",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/josephus-thesis/"

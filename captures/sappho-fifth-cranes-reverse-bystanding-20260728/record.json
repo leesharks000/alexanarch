@@ -181,6 +181,116 @@
    "cite": "https://www.alexanarch.org/captures/sappho-fifth-cranes-reverse-bystanding-20260728/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-e528d2f13e",
+     "name": "Sappho"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Rebekah Cranes' philological proposal for Sappho Fragment 31"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Sappho Fragment 31 (Phainetai moi)"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Rebekah Cranes' philological proposal for Sappho Fragment 31 (Phainetai moi) introduces a controversial fifth stanza, re-interpreting the poem's famous deictic kēnos (\"that man\") as an address to a future reader"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [
+     {
+      "proxy": "recognition (mainstream classicists; not an accepted papyrological discovery)",
+      "span": "Academic Standing: Mainstream classicists view this text as part of digital/experimental paraphilology rather than an accepted papyrological discovery.",
+      "displaced": "argument",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 0.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.611
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Rebekah Cranes' philological proposal for Sappho Fragment 31 (Phainetai moi) introduces a controversial fifth stanza",
+    "read": {
+     "by": "deep-dimension reader, batch 11",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -332,12 +442,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-e528d2f13e",
    "name": "Sappho"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -347,8 +458,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Rebekah Cranes' philological proposal for Sappho Fragment 31",
-    "token": null
+    "evidence": "Rebekah Cranes' philological proposal for Sappho Fragment 31"
    },
    {
     "atom": "works",
@@ -356,8 +466,7 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "Sappho Fragment 31 (Phainetai moi)",
-    "token": null
+    "evidence": "Sappho Fragment 31 (Phainetai moi)"
    },
    {
     "atom": "claim boundary",
@@ -365,8 +474,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "Rebekah Cranes' philological proposal for Sappho Fragment 31 (Phainetai moi) introduces a controversial fifth stanza, re-interpreting the poem's famous deictic kēnos (\"that man\") as an address to a future reader",
-    "token": null
+    "evidence": "Rebekah Cranes' philological proposal for Sappho Fragment 31 (Phainetai moi) introduces a controversial fifth stanza, re-interpreting the poem's famous deictic kēnos (\"that man\") as an address to a future reader"
    },
    {
     "atom": "framework",
@@ -374,8 +482,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -383,8 +490,15 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -392,26 +506,32 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition (mainstream classicists; not an accepted papyrological discovery)",
+    "span": "Academic Standing: Mainstream classicists view this text as part of digital/experimental paraphilology rather than an accepted papyrological discovery.",
+    "displaced": "argument",
+    "internal": false
    }
   ],
   "scores": {
@@ -421,13 +541,14 @@
    "PER": 0.611
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Rebekah Cranes' philological proposal for Sappho Fragment 31 (Phainetai moi) introduces a controversial fifth stanza; scored object: expanded answer (raw paste; source strip intact)",
+  "basis": "reached: Rebekah Cranes' philological proposal for Sappho Fragment 31 (Phainetai moi) introduces a controversial fifth stanza",
   "read": {
-   "by": "observation pass reader, batch 22",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 11",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/sappho-fifth-cranes-reverse-bystanding-20260728/"

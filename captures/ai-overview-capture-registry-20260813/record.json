@@ -382,6 +382,123 @@
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
    },
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "dataset",
+    "target": {
+     "ent": "ENT-d504b47989",
+     "name": "Capture Registry"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The AI Overview Capture Registry"
+     },
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "The project has been driven primarily by independent digital media and algorithmic governance researchers, such as Lee Sharks."
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The dataset consists of point-in-time \"captures\" or snapshots."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "is a founding academic dataset used in \"Machine-Mediated Reception Studies\""
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "purpose",
+      "span": "guide you through commercial SERP tracking tools used to snapshot live AI content.",
+      "against": "After the registry's function is described, its capture operation is offered back as commercial SERP tracking (a vendor's tool in its place), alongside the 'enterprise compliance' AI-registry sense."
+     }
+    ],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.5
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": null,
+    "basis": "reached: The AI Overview Capture Registry (often indexed under dataset identifier `EA-WG-CAPTURES-01`) is a founding academic dataset used in \"Machine-Mediated Reception Studies\".; tombstone pointer: a severed record presented as live",
+    "read": {
+     "by": "deep-dimension reader, batch 14",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "dataset",
     "target": {
@@ -551,12 +668,13 @@
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
  },
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "dataset",
   "target": {
    "ent": "ENT-d504b47989",
    "name": "Capture Registry"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -566,8 +684,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The AI Overview Capture Registry",
-    "token": null
+    "evidence": "The AI Overview Capture Registry"
    },
    {
     "atom": "author",
@@ -575,8 +692,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "The project has been driven primarily by independent digital media and algorithmic governance researchers, such as Lee Sharks.",
-    "token": null
+    "evidence": "The project has been driven primarily by independent digital media and algorithmic governance researchers, such as Lee Sharks."
    },
    {
     "atom": "date",
@@ -584,8 +700,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -593,8 +708,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "The dataset consists of point-in-time \"captures\" or snapshots.",
-    "token": null
+    "evidence": "The dataset consists of point-in-time \"captures\" or snapshots."
    },
    {
     "atom": "framework",
@@ -602,8 +716,7 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "is a founding academic dataset used in \"Machine-Mediated Reception Studies\"",
-    "token": null
+    "evidence": "is a founding academic dataset used in \"Machine-Mediated Reception Studies\""
    },
    {
     "atom": "corpus",
@@ -611,51 +724,64 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "deposit chain",
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
     "dim": "D",
     "weight": 2,
-    "kind": "token",
+    "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "guide you through commercial SERP tracking tools used to snapshot live AI content.",
+    "against": "After the registry's function is described, its capture operation is offered back as commercial SERP tracking (a vendor's tool in its place), alongside the 'enterprise compliance' AI-registry sense."
+   }
+  ],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.111,
    "C": 0.5,
    "D": 1.0,
-   "PER": 0.474
+   "PER": 0.5
   },
   "src": true,
+  "tombstone_pointer": true,
   "after_challenge": null,
-  "basis": "reached: The AI Overview Capture Registry (often indexed under dataset identifier `EA-WG-CAPTURES-01`) is a founding academic dataset used in \"Machine-Mediated Reception Studies\".; scored object: expanded answer",
+  "basis": "reached: The AI Overview Capture Registry (often indexed under dataset identifier `EA-WG-CAPTURES-01`) is a founding academic dataset used in \"Machine-Mediated Reception Studies\".; tombstone pointer: a severed record presented as live",
   "read": {
-   "by": "observation pass reader, batch 21",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 14",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/ai-overview-capture-registry-20260813/"

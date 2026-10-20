@@ -269,7 +269,126 @@
    "img_urls": [],
    "surface_basis": "Google AI Overview BY EXCLUSION, operator attestation: AI Mode was avoided after June. An expanded Overview presented as AI Mode chrome and was recorded as the surface.",
    "cite": "https://www.alexanarch.org/captures/crimson-hexagon-6-tuple-20260718/#crimson-hexagon-6-tuple-formal-object-20260718",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "TGT-h-core-formal-specification",
+     "name": "H_core, the 6-tuple formal object of the Crimson Hexagonal Archive"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The \"Crimson Hexagonal 6-tuple\" refers to the formal, mathematical object"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "represent the \"six faces of the Hexagon,\""
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "used in the Crimson Hexagonal Archive (v2.0)"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the formal, mathematical object (\\(H_{core}\\)) used in the Crimson Hexagonal Archive (v2.0) to define and compress its operative architecture"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "How the 6-tuple structure differs from the earlier 9-tuple system specification?"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 0.0,
+     "D": 0.444,
+     "PER": 0.455
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The \"Crimson Hexagonal 6-tuple\" refers to the formal, mathematical object (\\(H_{core}\\)) used in the Crimson Hexagonal Archive (v2.0) to define and compress its operative architecture.; retargeted: The reason names the 6-tuple, a component; the archive's 6-tuple is H_core = 〈D, R, O, Σ, Φ, Ψ〉, defined by #967 (superseding the 9-tuple #1241). 'crimson hexagon' locates the component; the archive is its corpus, not the target.",
+    "read": {
+     "by": "held-observation reader, held-2",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   },
   {
    "slug": "crimson-hexagon-6-tuple-20260813-2142",
@@ -361,6 +480,125 @@
     "to": 0.25,
     "on": "2026-10-15",
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   },
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "TGT-h-core-formal-specification",
+     "name": "H_core, the 6-tuple formal object of the Crimson Hexagonal Archive"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "specifies its core mathematical model (H_core) as a formal 6-tuple with subtuples"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "The **Crimson Hexagonal Archive** specifies its core mathematical model"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "which replaced an older 9-tuple framework"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 0.5,
+     "D": 0.778,
+     "PER": 0.682
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: **D (Deposits).** Raw data or text storage units within the archive topology.; retargeted: Address 'crimson hexagon 6-tuple': the reason names the 6-tuple, a component; it is defined by H_core v2.0 (#967).",
+    "read": {
+     "by": "held-observation reader, held-3",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
    }
   }
  ],
@@ -430,5 +668,124 @@
   618,
   1328
  ],
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "TGT-h-core-formal-specification",
+   "name": "H_core, the 6-tuple formal object of the Crimson Hexagonal Archive"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The \"Crimson Hexagonal 6-tuple\" refers to the formal, mathematical object"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "represent the \"six faces of the Hexagon,\""
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "used in the Crimson Hexagonal Archive (v2.0)"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the formal, mathematical object (\\(H_{core}\\)) used in the Crimson Hexagonal Archive (v2.0) to define and compress its operative architecture"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "How the 6-tuple structure differs from the earlier 9-tuple system specification?"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.667,
+   "C": 0.0,
+   "D": 0.444,
+   "PER": 0.455
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The \"Crimson Hexagonal 6-tuple\" refers to the formal, mathematical object (\\(H_{core}\\)) used in the Crimson Hexagonal Archive (v2.0) to define and compress its operative architecture.; retargeted: The reason names the 6-tuple, a component; the archive's 6-tuple is H_core = 〈D, R, O, Σ, Φ, Ψ〉, defined by #967 (superseding the 9-tuple #1241). 'crimson hexagon' locates the component; the archive is its corpus, not the target.",
+  "read": {
+   "by": "held-observation reader, held-2",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/crimson-hexagon-6-tuple-20260718/"
 }

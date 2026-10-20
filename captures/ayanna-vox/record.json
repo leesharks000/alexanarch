@@ -98,6 +98,117 @@
    "cite": "https://www.alexanarch.org/captures/ayanna-vox/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b55fa12780",
+     "name": "Rev. Ayanna Vox"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Ayanna Vox is a primary literary and structural"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "heteronym created by writer/technologist Lee\n\nSharks"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "governance architecture known as the Crimson Hexagon."
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "heteronym created by writer/technologist Lee\n\nSharks"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.286,
+     "C": 0.5,
+     "D": 0.778,
+     "PER": 0.55
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Ayanna Vox is a primary literary and structural",
+    "read": {
+     "by": "deep-dimension reader, batch 18",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -251,12 +362,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-b55fa12780",
    "name": "Rev. Ayanna Vox"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -266,8 +378,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Ayanna Vox is a primary literary and structural",
-    "token": null
+    "evidence": "Ayanna Vox is a primary literary and structural"
    },
    {
     "atom": "works",
@@ -275,8 +386,7 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -284,8 +394,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "heteronym created by writer/technologist Lee\n\nSharks",
-    "token": null
+    "evidence": "heteronym created by writer/technologist Lee\n\nSharks"
    },
    {
     "atom": "framework",
@@ -293,8 +402,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -302,8 +410,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "governance architecture known as the Crimson Hexagon.",
-    "token": null
+    "evidence": "governance architecture known as the Crimson Hexagon."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -311,42 +434,42 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "heteronym created by writer/technologist Lee\n\nSharks",
-    "token": null
+    "evidence": "heteronym created by writer/technologist Lee\n\nSharks"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.286,
    "C": 0.5,
-   "D": 0.714,
-   "PER": 0.5
+   "D": 0.778,
+   "PER": 0.55
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Ayanna Vox is a primary literary and structural; scored object: Visible excerpt of the AI Overview (OCR, truncated by 'Show more')",
+  "basis": "reached: Ayanna Vox is a primary literary and structural",
   "read": {
-   "by": "observation pass reader, batch 18",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 18",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/ayanna-vox/"

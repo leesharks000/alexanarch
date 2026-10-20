@@ -146,6 +146,133 @@
   "verified": "Compared 2026-10-12 against the seated text of #1576 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-c7f7c09d2a",
+   "name": "Many and One: Division, Unity, and the Boundaries of a Corpus in Plato and Aristotle (MANY-AND-ONE-ARTICLE v2.13-AP, as submitted)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s “Many and One: Division, Unity, and the Boundaries of a Corpus in Plato and Aristotle” makes an argument"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks’s “Many and One: Division, Unity, and the Boundaries of a Corpus in Plato and Aristotle” makes an argument"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks deliberately withholds the historical hypothesis until §9.4, asking the reader first to work through the philosophical texts on their own terms."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Section 8 tests whether textual and stylistic evidence can resolve the authorship question."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks identifies four possible points at which an interpretation might resolve the tension: the meaning of part, the meaning of existed beforehand, the identity of the method, or the meaning of precedes."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "He explicitly distinguishes the textual hypothesis from the biographical question, acknowledges that the received account remains possible, and says that papyrological, inscriptional and transmission evidence would take precedence in determining the number of historical authors."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "In Sophistical Refutations 34 (183b35), Aristotle says that nothing at all existed beforehand in the inquiry he is discussing."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The account above follows the submitted article’s own sequence and distinguishes its stated textual readings from its explicitly provisional historical hypothesis."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.667,
+   "D": 0.111,
+   "PER": 0.25
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s “Many and One: Division, Unity, and the Boundaries of a Corpus in Plato and Aristotle” makes an argument",
+  "read": {
+   "by": "deep-dimension reader, batch 4",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

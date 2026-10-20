@@ -221,6 +221,117 @@
  },
  "notes": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "archive",
+  "target": {
+   "ent": "ENT-a200e5fad9",
+   "name": "Crimson Hexagonal Archive"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagon (also known as the Crimson Hexagonal Archive)"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "In Lee Sharks' sweeping cultural epic project, The Crimson Hexagon"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Instead of a conventional protagonist, the epic unfolds through an architecture of distinct writerly personas"
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "twelve heteronyms known as the Dodecad"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Instead of a conventional protagonist, the epic unfolds through an architecture of distinct writerly personas or twelve heteronyms known as the Dodecad"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "keeping track of the historical DOIs and decentralized records (AXN tokens) that anchor the text."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.5,
+   "D": 0.5,
+   "PER": 0.333
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: In Lee Sharks' sweeping cultural epic project, The Crimson Hexagon (also known as the Crimson Hexagonal Archive), there is no singular main character in the traditional narrative sense.",
+  "read": {
+   "by": "deep-dimension reader, batch 5",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "archive",
   "target": {

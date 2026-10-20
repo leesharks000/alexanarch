@@ -65,6 +65,133 @@
    "reading": "THE DISAMBIGUATION PACKET WORKING AS SPECIFIED. The answer devotes a headed section to the distinction and names Pearson's theory correctly, which is the outcome the MPAI programme predicts and the bare-string capture from the same session denies. Also the first observation in the corpus of an AXN rendering inside a Google organic snippet. NOT VERIFIED: that the Zenodo source resolves, given the 2026-06-19 termination; the citation is listed but its resolution state is not established from this frame.",
    "cite": "https://www.alexanarch.org/captures/academia-operative-semiotics-aio-20260823/",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-454db46e74",
+     "name": "Operative Semiotics"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Operative semiotics is the study and design of signs"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Do not confuse it with operational semiotics (such as Charls Pearson's Theory of Operational Semiotics)"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Operative semiotics is the study and design of signs that actively intervene in and transform the systems where they circulate, rather than merely representing or describing social reality."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.444,
+     "C": 1.0,
+     "D": 0.667,
+     "PER": 0.667
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Operative semiotics is the study and design of signs that actively intervene in and transform the systems where they circulate",
+    "read": {
+     "by": "deep-dimension reader, batch 21",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -250,12 +377,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-454db46e74",
    "name": "Operative Semiotics"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -265,8 +393,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -274,8 +401,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Operative semiotics is the study and design of signs",
-    "token": null
+    "evidence": "Operative semiotics is the study and design of signs"
    },
    {
     "atom": "date",
@@ -283,8 +409,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -292,8 +417,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "Do not confuse it with operational semiotics (such as Charls Pearson's Theory of Operational Semiotics)",
-    "token": null
+    "evidence": "Do not confuse it with operational semiotics (such as Charls Pearson's Theory of Operational Semiotics)"
    },
    {
     "atom": "framework",
@@ -301,8 +425,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -310,8 +433,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -319,8 +441,23 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Operative semiotics is the study and design of signs that actively intervene in and transform the systems where they circulate, rather than merely representing or describing social reality."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -328,51 +465,42 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.444,
    "C": 1.0,
-   "D": 1.0,
-   "PER": 0.783
+   "D": 0.667,
+   "PER": 0.667
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Operative semiotics is the study and design of signs that actively intervene in and transform the systems where they circulate; scored object: CAPTURE-TIME VERBATIM RECORD — expanded answer text supplied by MANUS; the frame shows the collapsed popup, so the trans",
+  "basis": "reached: Operative semiotics is the study and design of signs that actively intervene in and transform the systems where they circulate",
   "read": {
-   "by": "observation pass reader, batch 7",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 21",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/academia-operative-semiotics-aio-20260823/"

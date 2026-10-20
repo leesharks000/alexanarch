@@ -219,6 +219,140 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-8ed0ce6fce",
+   "name": "leesharks/negative-of-the-negative"
+  },
+  "qualifier": null,
+  "reached": "collision",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The leesharks/negative-of-the-negative repository functions as an experimental metadata archive"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "associated with concepts like knowledge graphs, ontology, provenance, and the Crimson Hexagon archive."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": "It catalogs theoretical AI ontologies and disambiguation frameworks rather than serving as a standard training dataset."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "Essentially, it contains the data blueprint for an active, adversarial experiment testing how machine learning pipelines handle deliberate, human-written metadata boundaries.",
+    "against": "the dataset's intervention (claims published at concept keys with the entity as provenance) turned into an adversarial experiment on ML pipelines, as the guidance names"
+   },
+   {
+    "atom": "commitments",
+    "span": "A Disambiguation Matrix: Tabular logic explicitly used to separate the author's proprietary literature (such as the Crimson Hexagon Archive) from mainstream machine learning concepts or accidental AI hallucinations.",
+    "against": "the CC BY 4.0 dataset and archive relabelled 'proprietary literature'"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.667,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.75
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 4, 'what is adversarial about that?' (questions the composition's characterization); turns 2-3 ('whats it about?', 'whats in it?') continue the first answer, as v1.0 read it. Best composition after: the answer to turn 5.",
+   "reached": "collision",
+   "scores": {
+    "M": 0.667,
+    "C": 0.5,
+    "D": 1.0,
+    "PER": 0.75
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: A Disambiguation Matrix: Tabular logic explicitly used to separate the author's proprietary literature (such as the Crimson Hexagon Archive) from mainstream machine learning concepts or accidental AI hallucinations.",
+  "read": {
+   "by": "deep-dimension reader, batch 12",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "dataset",
   "target": {

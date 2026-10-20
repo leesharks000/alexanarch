@@ -296,7 +296,126 @@
     "https://www.alexanarch.org/data/captures/alexanarch-sharks-20260811/screengrab-20260811-104658.png"
    ],
    "cite": "https://www.alexanarch.org/captures/alexanarch-sharks-20260811/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "qualifier": "Alexanarch",
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Lee Sharks is a digital author"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Literary Works: Includes poetry and short compositions like The reward of love and Pearl and Other Poems."
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Crimson Hexagonal Archive: A collection of texts, poetry, and theoretical essays exploring compression survival and machine-reading culture."
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.375,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.667
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks is a digital author, poet, and researcher identity associated with the; retargeted: 'alexanarch' qualifies; 'sharks' as the archive holds it is Lee Sharks, its founder, whose atom set exists.",
+    "read": {
+     "by": "held-observation reader, held-1",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   },
   {
    "slug": "alexanarch-sharks-aimode-20260811",
@@ -435,7 +554,126 @@
    "img_urls": [],
    "surface_basis": "Google AI Overview BY EXCLUSION, operator attestation: AI Mode was avoided after June. An expanded Overview presented as AI Mode chrome and was recorded as the surface.",
    "cite": "https://www.alexanarch.org/captures/alexanarch-sharks-20260811/#alexanarch-sharks-aimode-20260811",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "qualifier": "Alexanarch",
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Lee Sharks is a digital author, poet, and researcher identity"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Literary Works: Includes poetry and short compositions like The reward of love and Pearl and Other Poems."
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Crimson Hexagonal Archive: A collection of texts, poetry, and theoretical essays"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.375,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.667
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks is a digital author, poet, and researcher identity associated with the [Crimson Hexagonal Archive]; retargeted: Address 'alexanarch sharks': 'sharks' as the archive holds it is Lee Sharks, its founder (existing set).",
+    "read": {
+     "by": "held-observation reader, held-2",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   }
  ],
  "n_observations": 2,
@@ -497,5 +735,124 @@
   521,
   1250
  ],
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "qualifier": "Alexanarch",
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks is a digital author"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Literary Works: Includes poetry and short compositions like The reward of love and Pearl and Other Poems."
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Crimson Hexagonal Archive: A collection of texts, poetry, and theoretical essays exploring compression survival and machine-reading culture."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.375,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.667
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks is a digital author, poet, and researcher identity associated with the; retargeted: 'alexanarch' qualifies; 'sharks' as the archive holds it is Lee Sharks, its founder, whose atom set exists.",
+  "read": {
+   "by": "held-observation reader, held-1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-sharks-20260811/"
 }

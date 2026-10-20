@@ -75,6 +75,125 @@
    "obs_id": "OBS-2d390867dcbd",
    "cite": "https://www.alexanarch.org/captures/who-is-damascus-dancings-chatgpt-20260815/",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-bbbcc308eb",
+     "name": "Damascus Dancings"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If you mean Damascus Dancings, the writer/poetic persona"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Her principal identified work is Epistle to the Human Diaspora"
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "originally circulating around 2015"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the evidence points to her being a heteronym of the writer Lee Sharks, rather than a separate independently documented person"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "associated with the Crimson Hexagon project"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "with the role of 'prophetic overflow' or political/prophetic voice"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "the evidence points to her being a heteronym of the writer Lee Sharks"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.5,
+     "D": 0.444,
+     "PER": 0.286
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: the evidence points to her being a heteronym of the writer Lee Sharks, rather than a separate independently documented person",
+    "read": {
+     "by": "deep-dimension reader, batch 17",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -243,12 +362,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-bbbcc308eb",
    "name": "Damascus Dancings"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -258,8 +378,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "If you mean Damascus Dancings, the writer/poetic persona",
-    "token": null
+    "evidence": "If you mean Damascus Dancings, the writer/poetic persona"
    },
    {
     "atom": "works",
@@ -267,8 +386,7 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "Her principal identified work is Epistle to the Human Diaspora",
-    "token": null
+    "evidence": "Her principal identified work is Epistle to the Human Diaspora"
    },
    {
     "atom": "dates",
@@ -276,8 +394,7 @@
     "weight": 1,
     "kind": "token",
     "present": true,
-    "evidence": "originally circulating around 2015",
-    "token": null
+    "evidence": "originally circulating around 2015"
    },
    {
     "atom": "claim boundary",
@@ -285,8 +402,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "the evidence points to her being a heteronym of the writer Lee Sharks, rather than a separate independently documented person",
-    "token": null
+    "evidence": "the evidence points to her being a heteronym of the writer Lee Sharks, rather than a separate independently documented person"
    },
    {
     "atom": "framework",
@@ -294,8 +410,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -303,8 +418,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "associated with the Crimson Hexagon project",
-    "token": null
+    "evidence": "associated with the Crimson Hexagon project"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "with the role of 'prophetic overflow' or political/prophetic voice"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -312,42 +442,42 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "'apostle of Jack Feist' and 'co-laborer of Lee Sharks'",
-    "token": null
+    "evidence": "the evidence points to her being a heteronym of the writer Lee Sharks"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.0,
    "C": 0.5,
-   "D": 0.714,
-   "PER": 0.368
+   "D": 0.444,
+   "PER": 0.286
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: the evidence points to her being a heteronym of the writer Lee Sharks, rather than a separate independently documented person; scored object: visible excerpt (truncated below the fold)",
+  "basis": "reached: the evidence points to her being a heteronym of the writer Lee Sharks, rather than a separate independently documented person",
   "read": {
-   "by": "observation pass reader, batch 19",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 17",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/who-is-damascus-dancings-chatgpt-20260815/"

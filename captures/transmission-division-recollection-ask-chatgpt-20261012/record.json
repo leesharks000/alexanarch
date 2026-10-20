@@ -149,6 +149,145 @@
   "verified": "Compared 2026-10-12 against the seated text of #1659 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-db46adce07",
+   "name": "GLYPHIC CHECKSUM — Transmission · Division · Recollection"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s GLYPHIC CHECKSUM — Transmission · Division · Recollection"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "GLYPHIC CHECKSUM — Transmission · Division · Recollection"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "on October 1, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The poem's accompanying description calls it a glyphic checksum of transmission as a “two-stroke operation”: division on the sending side and recollection on the receiving side. It also identifies an inversion under present conditions of transmission."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "published in New Human 2"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Here, Sharks adapts that idea to literary interpretation: can a compressed arrangement of signs preserve enough of a work's identity for a reader to reconstruct its significant relationships?"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The poem's accompanying description calls it a glyphic checksum of transmission as a “two-stroke operation”: division on the sending side and recollection on the receiving side. It also identifies an inversion under present conditions of transmission."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The reader must perform the very operation the poem describes."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks's accompanying description explicitly identifies Sappho 31 as a source for this section."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.222,
+   "PER": 0.167
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "[QUERENT] [blank in the paste] (before ANSWER 3; the operator's question is not given, and ANSWER 3 answers why the reading fails at that point)",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.333,
+    "D": 0.222,
+    "PER": 0.167
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Lee Sharks’s GLYPHIC CHECKSUM — Transmission · Division · Recollection, published in New Human 2 on October 1, 2026, is a five-part glyph poem",
+  "read": {
+   "by": "deep-dimension reader, batch 23",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

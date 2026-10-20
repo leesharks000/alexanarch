@@ -124,6 +124,109 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "site",
+  "target": {
+   "ent": "ENT-5dc3036f37",
+   "name": "metadatapacket.dev"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "`metadatapacket.dev` is the online catalog and technical repository"
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "is the online catalog and technical repository for Metadata Packets for AI Indexing (MPAIs)"
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The website provides the tools and directory needed to manage the MPAI system"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The MPAI Catalog: A public database indexing 61 AXN-anchored metadata packets across various domains like governance, empirical analysis, and architecture."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Permanent Anchoring: Every packet is tied to an AXN (a content-derived identifier) and records historical DOIs to establish an unalterable chain of custody."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Permanent Anchoring: Every packet is tied to an AXN (a content-derived identifier) and records historical DOIs to establish an unalterable chain of custody."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.444,
+   "C": 0.0,
+   "D": 0.25,
+   "PER": 0.316
+  },
+  "src": false,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: `metadatapacket.dev` is the online catalog and technical repository for Metadata Packets for AI Indexing (MPAIs).",
+  "read": {
+   "by": "deep-dimension reader, batch 6",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "site",
   "target": {

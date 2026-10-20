@@ -115,6 +115,109 @@
    "cite": "https://www.alexanarch.org/captures/zenodo-packet-zpzp/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-eb054a93b0",
+     "name": "Zenodo"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "specific digital deposits hosted on the Zenodo Open-Access Repository."
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Crimson Hexagon Archive: The majority of"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "specific digital deposits hosted on the Zenodo Open-Access Repository."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.625,
+     "C": 0.5,
+     "D": 0.625,
+     "PER": 0.6
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: specific digital deposits hosted on the Zenodo Open-Access Repository.",
+    "read": {
+     "by": "deep-dimension reader, batch 13",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -262,12 +365,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "institution",
   "target": {
    "ent": "ENT-eb054a93b0",
    "name": "Zenodo"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -277,8 +381,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "specific digital deposits hosted on the Zenodo Open-Access Repository.",
-    "token": null
+    "evidence": "specific digital deposits hosted on the Zenodo Open-Access Repository."
    },
    {
     "atom": "founder",
@@ -286,8 +389,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -295,8 +397,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -304,8 +405,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -313,8 +413,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "The Crimson Hexagon Archive: The majority of",
-    "token": null
+    "evidence": "The Crimson Hexagon Archive: The majority of"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "specific digital deposits hosted on the Zenodo Open-Access Repository."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -322,33 +437,34 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.625,
    "C": 0.5,
-   "D": 1.0,
-   "PER": 0.706
+   "D": 0.625,
+   "PER": 0.6
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: specific digital deposits hosted on the Zenodo Open-Access Repository.; scored object: first answer; OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and browser furniture are mixed in one stream and ",
+  "basis": "reached: specific digital deposits hosted on the Zenodo Open-Access Repository.",
   "read": {
-   "by": "observation pass reader, batch 23",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 13",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/zenodo-packet-zpzp/"

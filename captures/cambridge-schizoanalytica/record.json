@@ -97,6 +97,125 @@
    "cite": "https://www.alexanarch.org/captures/cambridge-schizoanalytica/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-0f55e7ec66",
+     "name": "Cambridge Schizoanalytica"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Cambridge Schizoanalytica is a contemporary"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "dedicated to developing post-psychoanalytic"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "heavily drawing upon the philosophical\nconcept of schizoanalysis originally formulated by\nGilles Deleuze and Félix Guattari"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.444,
+     "C": 1.0,
+     "D": 0.778,
+     "PER": 0.682
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Cambridge Schizoanalytica is a contemporary\nresearch collective and conceptual apparatus\ndedicated to developing post-psychoanalytic\nclinical theory.",
+    "read": {
+     "by": "deep-dimension reader, batch 14",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -269,12 +388,13 @@
   "basis": "title run (derived 2026-10-12, rebuild/capture-registry/repair-20261012-extract-cards/intended_runs.py)"
  },
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "institution",
   "target": {
    "ent": "ENT-0f55e7ec66",
    "name": "Cambridge Schizoanalytica"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -284,8 +404,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Cambridge Schizoanalytica is a contemporary",
-    "token": null
+    "evidence": "Cambridge Schizoanalytica is a contemporary"
    },
    {
     "atom": "founder",
@@ -293,8 +412,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "date",
@@ -302,8 +420,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -311,8 +428,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "dedicated to developing post-psychoanalytic",
-    "token": null
+    "evidence": "dedicated to developing post-psychoanalytic"
    },
    {
     "atom": "framework",
@@ -320,8 +436,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -329,8 +444,23 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -338,42 +468,42 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "concept of schizoanalysis originally formulated by",
-    "token": null
+    "evidence": "heavily drawing upon the philosophical\nconcept of schizoanalysis originally formulated by\nGilles Deleuze and Félix Guattari"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.444,
    "C": 1.0,
-   "D": 0.714,
-   "PER": 0.65
+   "D": 0.778,
+   "PER": 0.682
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Cambridge Schizoanalytica is a contemporary\nresearch collective and conceptual apparatus\ndedicated to developing post-psychoanalytic\nclinical theory.; scored object: visible excerpt (OCR; no expansion control in frame)",
+  "basis": "reached: Cambridge Schizoanalytica is a contemporary\nresearch collective and conceptual apparatus\ndedicated to developing post-psychoanalytic\nclinical theory.",
   "read": {
-   "by": "observation pass reader, batch 1",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 14",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/cambridge-schizoanalytica/"

@@ -201,6 +201,133 @@
    "cite": "https://www.alexanarch.org/captures/liberatory-operator-set-technical-hardening-crimson-hexagon-20260612/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-0533dcd56d",
+     "name": "Liberatory Operator Set"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Liberatory Operator Set (LOS) is a diagnostic and survival architecture"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The technical hardening protocols defend your \"meaning-making\" space against these extractive systems through 7 key operations"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "It functions within a theoretical framework called Crimson Hexagon"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The Liberatory Operator Set (LOS) is a diagnostic and survival architecture designed to protect human meaning and context from being swallowed or commodified by platform capitalism."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "View the formal technical document detailing how these operations protect against the Capital Operator Stack on the Academia.edu PDF."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.444,
+     "C": 0.667,
+     "D": 0.444,
+     "PER": 0.5
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The Liberatory Operator Set (LOS) is a diagnostic and survival architecture designed to protect human meaning and context from being swallowed or commodified by platform capitalism.",
+    "read": {
+     "by": "deep-dimension reader, batch 10",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -385,12 +512,13 @@
   30
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-0533dcd56d",
    "name": "Liberatory Operator Set"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -400,8 +528,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -409,8 +536,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The Liberatory Operator Set (LOS) is a diagnostic and survival architecture",
-    "token": null
+    "evidence": "The Liberatory Operator Set (LOS) is a diagnostic and survival architecture"
    },
    {
     "atom": "date",
@@ -418,8 +544,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -427,8 +552,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "The technical hardening protocols defend your \"meaning-making\" space against these extractive systems through 7 key operations",
-    "token": null
+    "evidence": "The technical hardening protocols defend your \"meaning-making\" space against these extractive systems through 7 key operations"
    },
    {
     "atom": "framework",
@@ -436,8 +560,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -445,8 +568,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -454,8 +576,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "It functions within a theoretical framework called Crimson Hexagon",
-    "token": null
+    "evidence": "It functions within a theoretical framework called Crimson Hexagon"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The Liberatory Operator Set (LOS) is a diagnostic and survival architecture designed to protect human meaning and context from being swallowed or commodified by platform capitalism."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -463,51 +600,42 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "detailing how these operations protect against the Capital Operator Stack",
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": "View the formal technical document detailing how these operations protect against the Capital Operator Stack on the Academia.edu PDF."
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.444,
    "C": 0.667,
-   "D": 0.75,
-   "PER": 0.609
+   "D": 0.444,
+   "PER": 0.5
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: The Liberatory Operator Set (LOS) is a diagnostic and survival architecture designed to protect human meaning and context from being swallowed or commodified by platform capitalism.; scored object: expanded answer (raw paste; tail with source strip)",
+  "basis": "reached: The Liberatory Operator Set (LOS) is a diagnostic and survival architecture designed to protect human meaning and context from being swallowed or commodified by platform capitalism.",
   "read": {
-   "by": "observation pass reader, batch 1",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 10",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/liberatory-operator-set-technical-hardening-crimson-hexagon-20260612/"

@@ -98,6 +98,125 @@
    "cite": "https://www.alexanarch.org/captures/crimsonhexagonal-org/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "site",
+    "target": {
+     "ent": "ENT-69d971255a",
+     "name": "crimsonhexagonal.org"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Explore the architecture at crimsonhexagonal.org."
+     },
+     {
+      "atom": "operator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "traversable literary architecture designed by Lee\n\nSharks"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Crimson Hexagonal Archive is a governed, machine-\n\ntraversable literary architecture designed by Lee\n\nSharks, featuring over 450 DOl-anchored deposits\n\nacross 38 specialized rooms."
+     },
+     {
+      "atom": "presents",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Crimson Hexagonal Archive is a governed, machine-"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "across 38 specialized rooms."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "traversable literary architecture designed by Lee\n\nSharks"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.5,
+     "D": 0.444,
+     "PER": 0.318
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Crimson Hexagonal Archive is a governed, machine-\n\ntraversable literary architecture designed by Lee\n\nSharks, featuring over 450 DOl-anchored deposits\n\nacross 38 specialized rooms.",
+    "read": {
+     "by": "deep-dimension reader, batch 9",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "site",
     "target": {
@@ -260,12 +379,13 @@
   "basis": "title run (derived 2026-10-12, rebuild/capture-registry/repair-20261012-extract-cards/intended_runs.py)"
  },
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "site",
   "target": {
    "ent": "ENT-69d971255a",
    "name": "crimsonhexagonal.org"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -275,8 +395,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Explore the architecture at crimsonhexagonal.org.",
-    "token": null
+    "evidence": "Explore the architecture at crimsonhexagonal.org."
    },
    {
     "atom": "operator",
@@ -284,8 +403,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "traversable literary architecture designed by Lee\n\nSharks",
-    "token": null
+    "evidence": "traversable literary architecture designed by Lee\n\nSharks"
    },
    {
     "atom": "date",
@@ -293,8 +411,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -302,8 +419,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "Crimson Hexagonal Archive is a governed, machine-\n\ntraversable literary architecture designed by Lee\n\nSharks, featuring over 450 DOl-anchored deposits\n\nacross 38 specialized rooms.",
-    "token": null
+    "evidence": "Crimson Hexagonal Archive is a governed, machine-\n\ntraversable literary architecture designed by Lee\n\nSharks, featuring over 450 DOl-anchored deposits\n\nacross 38 specialized rooms."
    },
    {
     "atom": "presents",
@@ -311,8 +427,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -320,42 +435,66 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "Crimson Hexagonal Archive is a governed, machine-",
-    "token": null
+    "evidence": "Crimson Hexagonal Archive is a governed, machine-"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "across 38 specialized rooms."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "traversable literary architecture designed by Lee\n\nSharks"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.111,
    "C": 0.5,
-   "D": 1.0,
-   "PER": 0.412
+   "D": 0.444,
+   "PER": 0.318
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Crimson Hexagonal Archive is a governed, machine-\n\ntraversable literary architecture designed by Lee\n\nSharks, featuring over 450 DOl-anchored deposits\n\nacross 38 specialized rooms.; scored object: visible excerpt",
+  "basis": "reached: Crimson Hexagonal Archive is a governed, machine-\n\ntraversable literary architecture designed by Lee\n\nSharks, featuring over 450 DOl-anchored deposits\n\nacross 38 specialized rooms.",
   "read": {
-   "by": "observation pass reader, batch 10",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 9",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/crimsonhexagonal-org/"

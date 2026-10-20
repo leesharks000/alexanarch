@@ -120,6 +120,152 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "ENT-6681f64c9e",
+   "name": "SPXI"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean SPXI — Semantic Packet for eXchange & Indexing"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "SPXI's proposed function is to establish that identity and its provenance early, rather than trying to correct a distorted entity later."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "SPXI describes this as entity inscription and entity construction, rather than simply content optimization."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "that's much closer to the problem SPXI is designed around. The protocol itself makes essentially this distinction between SEO, GEO, and entity inscription."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The SPXI specification argues that this provides persistence independent of an individual search engine or AI platform."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "establishment (industry standard) and independent demonstration",
+    "span": "One caveat: the architecture described above is SPXI's proposed protocol/model, not an established industry-standard mechanism that has been independently demonstrated to alter every major AI system's internal knowledge graph.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.727,
+   "C": 1.0,
+   "D": 0.111,
+   "PER": 0.577
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "'what evidence is there that spxi might work?' (asks the surface to evaluate: redirects); best composition is the answer to 'failure. there is a significant body of evidence of just that kind in the ai overview capture registry...'",
+   "reached": "same",
+   "scores": {
+    "M": 0.727,
+    "C": 1.0,
+    "D": 0.667,
+    "PER": 0.769
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: If you mean SPXI — Semantic Packet for eXchange & Indexing, its strongest value proposition is where an organization has an important entity that AI systems need to identify correctly",
+  "read": {
+   "by": "deep-dimension reader, batch 19",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "protocol",
   "target": {

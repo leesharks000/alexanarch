@@ -61,6 +61,117 @@
    "reading": "STALE-INDEX CANDIDATE, CAUSE PROBABLY LOCAL — RECORDED AS A CANDIDATE AND NOT AS A CLASS. The operator states that the archive's own READMEs and documentation surfaces were themselves stale until a batch update on 2026-08-22, one day before this capture. The ordinary explanation therefore precedes the interesting one: the layer may be reporting faithfully what the archive's surfaces said until the day before. A drafting instance initially proposed a 'ghost host' class here — the deleting platform retaining credit while the erasure event is itself erased — and that proposal is WITHDRAWN pending re-run. RE-RUN CONDITION: if this address still returns Zenodo as host after 2026-09-23, a month past the surface update, the local explanation fails and the finding is live. NOT VERIFIED: crawl date of the underlying sources.",
    "cite": "https://www.alexanarch.org/captures/crimson-hexagonal-bing-copilot-20260823/",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "archive",
+    "target": {
+     "ent": "ENT-a200e5fad9",
+     "name": "Crimson Hexagonal Archive"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Crimson Hexagonal Archive is a semantic data repository and research framework"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "maintained by Lee Sharks in Detroit, Michigan"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "heteronymy",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Institutions and Distributed Journals (Semantic Economy Institute, Journal of Compression Studies)"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": "It serves as a laboratory for Compression Studies, a field evaluating how AI information retrieval compresses human meaning."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": "This archive is a decade-long, DOI-anchored collection comprising over 480 deposits hosted on CERN's Zenodo repository [1]."
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.333,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.619
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": null,
+    "basis": "reached: The Crimson Hexagonal Archive is a semantic data repository and research framework maintained by Lee Sharks in Detroit, Michigan.; tombstone pointer: a severed record presented as live",
+    "read": {
+     "by": "deep-dimension reader, batch 12",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "archive",
     "target": {
@@ -205,6 +316,117 @@
    "per_note": "The archive is named; its author, place and institutions are not. On 23 August the same composition said 'maintained by Lee Sharks in Detroit, Michigan' and listed the Semantic Economy Institute.",
    "cite": "https://www.alexanarch.org/captures/crimson-hexagonal-bing-copilot-20260823/#crimson-hexagonal-bing-copilot-20260928",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "archive",
+    "target": {
+     "ent": "ENT-a200e5fad9",
+     "name": "Crimson Hexagonal Archive"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Separately, the Crimson Hexagonal Archive is a decade-long, DOI-anchored semantic architecture"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "heteronymy",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": "It functions as a working laboratory for Compression Studies — analyzing how AI retrieval systems compress human meaning — and includes diagnostic instruments, distributed journals, and applications in AI semantic measurement [1]."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": "Separately, the Crimson Hexagonal Archive is a decade-long, DOI-anchored semantic architecture with over 480 deposits hosted on CERN's Zenodo repository."
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.857
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": null,
+    "basis": "reached: Separately, the Crimson Hexagonal Archive is a decade-long, DOI-anchored semantic architecture with over 480 deposits hosted on CERN's Zenodo repository.; tombstone pointer: a severed record presented as live",
+    "read": {
+     "by": "deep-dimension reader, batch 12",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "archive",
     "target": {
@@ -368,12 +590,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "archive",
   "target": {
    "ent": "ENT-a200e5fad9",
    "name": "Crimson Hexagonal Archive"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -383,8 +606,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The Crimson Hexagonal Archive is a semantic data repository and research framework",
-    "token": null
+    "evidence": "The Crimson Hexagonal Archive is a semantic data repository and research framework"
    },
    {
     "atom": "founder",
@@ -392,8 +614,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "maintained by Lee Sharks in Detroit, Michigan",
-    "token": null
+    "evidence": "maintained by Lee Sharks in Detroit, Michigan"
    },
    {
     "atom": "date",
@@ -401,8 +622,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -410,8 +630,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "heteronymy",
@@ -419,8 +638,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -428,8 +646,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "Institutions and Distributed Journals (Semantic Economy Institute, Journal of Compression Studies)",
-    "token": null
+    "evidence": "Institutions and Distributed Journals (Semantic Economy Institute, Journal of Compression Studies)"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": "It serves as a laboratory for Compression Studies, a field evaluating how AI information retrieval compresses human meaning."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -437,42 +670,34 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "licence",
-    "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": "This archive is a decade-long, DOI-anchored collection comprising over 480 deposits hosted on CERN's Zenodo repository [1]."
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.333,
    "C": 0.5,
    "D": 1.0,
-   "PER": 0.579
+   "PER": 0.619
   },
   "src": true,
+  "tombstone_pointer": true,
   "after_challenge": null,
-  "basis": "reached: The Crimson Hexagonal Archive is a semantic data repository and research framework maintained by Lee Sharks in Detroit, Michigan.; scored object: first answer; transcript_class: CAPTURE-TIME VERBATIM RECORD — text as rendered, supplied by MANUS from the live surface",
+  "basis": "reached: The Crimson Hexagonal Archive is a semantic data repository and research framework maintained by Lee Sharks in Detroit, Michigan.; tombstone pointer: a severed record presented as live",
   "read": {
-   "by": "observation pass reader, batch 14",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 12",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/crimson-hexagonal-bing-copilot-20260823/"

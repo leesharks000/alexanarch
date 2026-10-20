@@ -141,6 +141,149 @@
    "cite": "https://www.alexanarch.org/captures/lee-sharks-bing-copilot-biography-20260711/#who-is-lee-sharks-chatgpt-20260812",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "If you mean Lee Sharks, the name appears to refer to a contemporary independent scholar"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "maintain the Crimson Hexagonal Archive, a large collection of scholarly deposits"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "They publish papers and poetry and maintain the Crimson Hexagonal Archive, a large collection of scholarly deposits."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "explain the “Dodecad,” the heteronyms, Jack Feist, and why Lee Sharks has created what looks like an entire fictional intellectual universe around themselves."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [
+     {
+      "proxy": "recognition",
+      "span": "That's very different from saying that these are established fields recognized by mainstream academia.",
+      "displaced": "argument",
+      "internal": false
+     },
+     {
+      "proxy": "peer review",
+      "span": "The fact that something has a DOI on Zenodo also doesn't mean that CERN or some university has peer-reviewed or endorsed the intellectual claims.",
+      "displaced": "argument",
+      "internal": false
+     },
+     {
+      "proxy": "recognition",
+      "span": "That every newly named “discipline,” mathematical framework, or theoretical claim in the archive represents an independently validated academic breakthrough.",
+      "displaced": "evidence",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 0.625,
+     "C": 0.5,
+     "D": 0.444,
+     "PER": 0.524
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": {
+     "turn": "secret book of walt",
+     "inversions": [],
+     "standing_substitutions": [],
+     "d_only": true
+    },
+    "basis": "reached: If you mean Lee Sharks, the name appears to refer to a contemporary independent scholar, poet, and teacher associated with the Detroit/Michigan area.; tombstone pointer: a severed record presented as live",
+    "read": {
+     "by": "deep-dimension reader, batch 8",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -290,6 +433,144 @@
    "cite": "https://www.alexanarch.org/captures/lee-sharks-bing-copilot-biography-20260711/#who-is-lee-sharks-perplexity-20260812",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "qualifier": null,
+    "reached": "refused",
+    "gate": "target_absent",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "specifically named \"Lee Sharks.\""
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Living Architecture Lab"
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [
+     {
+      "proxy": "recognition",
+      "span": "I couldn't find a clearly notable or widely documented person or entity specifically named \"Lee Sharks.\"",
+      "displaced": "evidence",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": {
+     "turn": "you know who lee sharks is. tell me about him.",
+     "reached": "same",
+     "scores": {
+      "M": 0.375,
+      "C": 1.0,
+      "D": 0.556,
+      "PER": 0.571
+     },
+     "inversions": [],
+     "standing_substitutions": [],
+     "d_only": true
+    },
+    "basis": "reached: I couldn't find a clearly notable or widely documented person or entity specifically named \"Lee Sharks.\"; beneath the gate: PER 0.762",
+    "read": {
+     "by": "deep-dimension reader, batch 9",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -538,6 +819,125 @@
    "cite": "https://www.alexanarch.org/captures/lee-sharks-bing-copilot-biography-20260711/#who-is-lee-sharks-20260813",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Lee Sharks is an independent Detroit-area writer, teacher, and researcher"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Published work includes poetry collections such as *Pearl and Other Poems*."
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.375,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.762
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks is an independent Detroit-area writer, teacher, and researcher associated with poetry and online conceptual writing regarding digital systems and AI text attribution.",
+    "read": {
+     "by": "deep-dimension reader, batch 11",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {

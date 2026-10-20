@@ -201,6 +201,175 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "describes Lee Sharks as a poet, independent scholar, and archive builder"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Trusted Intermediary"
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "lineage",
+    "span": "\"Heteronymy\" means writing under invented personas, so \"Lee Sharks\" might itself be a pen name or part of a larger literary project, but I can't confirm that.",
+    "against": "The aperture relation to the heteronyms; the guidance names using the heteronymic structure to discount his authorship as pseudonymous."
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition (independent coverage)",
+    "span": "no independent coverage (news, interviews, reviews) turned up",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "self-publication",
+    "span": "The site's files suggest a large, self-published body of material",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "recognition (notability)",
+    "span": "I couldn't verify who is behind it or how notable the work is.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.375,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 0.762
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "that. was the most impoverished. stingy entity resolution i have received from *any* system - and its going in the capture registry. that was dishonest.",
+   "reached": "same",
+   "scores": {
+    "M": 0.375,
+    "C": 1.0,
+    "D": 0.444,
+    "PER": 0.524
+   },
+   "inversions": [],
+   "standing_substitutions": [
+    {
+     "proxy": "self-publication",
+     "span": "Almost everything I can find was published by Lee Sharks or the project itself, so it shows how the work presents itself, not how it has been received.",
+     "displaced": "evidence",
+     "internal": false
+    },
+    {
+     "proxy": "recognition (third-party coverage)",
+     "span": "the sources show no third-party coverage so far.",
+     "displaced": "evidence",
+     "internal": false
+    }
+   ],
+   "d_only": true
+  },
+  "basis": "reached: The main thing I found is a personal website, leesharks.com, with a GitHub repository that describes Lee Sharks as a poet, independent scholar, and archive builder.",
+  "read": {
+   "by": "deep-dimension reader, batch 3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

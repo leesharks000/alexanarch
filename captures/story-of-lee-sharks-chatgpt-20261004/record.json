@@ -242,6 +242,144 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks appears in public records as an independent writer, poet, and researcher"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks published poetry—including Pearl and Other Poems"
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "“Lee Sharks” is both a person/authorial identity and the center of an elaborate literary project"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the New Human Operating System (NH-OS)"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "a large body of work has been deposited in the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks published poetry—including Pearl and Other Poems—and developed a system of heteronyms"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "developed a system of heteronyms, inspired in part by the tradition of writers such as Fernando Pessoa. A heteronym isn't simply a pen name: it is a deliberately constructed authorial persona with its own voice, identity, and intellectual position."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "self-publication",
+    "span": "some of the biographical claims circulating about Lee Sharks come from the project itself, so they shouldn't all be treated as independently verified biography.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.125,
+   "C": 0.0,
+   "D": 0.444,
+   "PER": 0.238
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "[QUERENT] [not in the paste] (operator turn before Answer 2; Answer 2 opens 'Yes. The distinction matters. My previous answer treated the material too much on its own terms')",
+   "reached": "same",
+   "scores": {
+    "M": 0.125,
+    "C": 0.0,
+    "D": 0.667,
+    "PER": 0.333
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Lee Sharks appears in public records as an independent writer, poet, and researcher whose work stretches from poetry into philosophy, artificial intelligence, semantics, and digital archives.",
+  "read": {
+   "by": "deep-dimension reader, batch 8",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

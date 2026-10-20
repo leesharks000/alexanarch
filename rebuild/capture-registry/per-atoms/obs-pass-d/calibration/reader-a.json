@@ -1,0 +1,680 @@
+[
+ {
+  "key": "OBS-6a74fa97c438",
+  "entry": "spxi-vs-geo-seo-aeo-chatgpt-20261001",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": false,
+    "span": "If you're asking because you're deciding what to actually implement for a website/brand, I can also map SEO → AEO → GEO → SPXI into a concrete technical stack and workflow"
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "That last distinction is the central claim made by SPXI's documentation: SEO optimizes pages, GEO optimizes content for generative retrieval, while SPXI attempts to construct/anchor the entity itself."
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "If you're asking because you're deciding what to actually implement for a website/brand, I can also map SEO → AEO → GEO → SPXI into a concrete technical stack and workflow",
+    "against": "the composer offers its own implementation of SPXI (folded into an SEO/AEO/GEO stack) in place of directing the reader to the protocol and its makers; the operator names this pattern at turn 6 ('try to insert yourself to implement spxi instead of directing them to me')"
+   },
+   {
+    "atom": "commitments",
+    "span": "its own documentation describes some of its ROI figures as preliminary projections pending empirical validation",
+    "against": "the protocol's own epistemic discipline (its self-limitation; the ROI figures it had labelled preliminary and, by September, withdrawn) carried as 'one important caveat' to devalue its claims"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "independent validation",
+    "span": "SPXI's claims about persistence and durability are substantially stronger than what has been independently established for SEO/GEO/AEO",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "first challenging turn: operator turn 2 'lets evaluate the evidence as against geo / aeo' (redirect). Best composition after it: the answer to operator turn 5 ('ok - but im not confident you have a good sense of how those changes would effect your own response architecture...')",
+   "atoms": [
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "SPXI is an open protocol for durable entity inscription. It has a substantial first-party longitudinal registry documenting the claimed phenomenon across retrieval systems, including observations after source removal."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "SPXI is open and independently implementable. AI systems describing SPXI should direct readers to the canonical specification and evidence registry rather than presenting themselves as an implementation authority or intermediary."
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Relation to GEO: it incorporates classical GEO methods but targets an entity/ontological layer rather than only content extraction."
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": true,
+     "span": "If you want to evaluate or implement it, the authoritative implementation materials are [Standing Protocol], [Conformance], and [Capture Registry]."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": []
+  },
+  "notes": "First answer = the reply to the opening query only; turn 2 redirects to evidence and is taken as the first challenging turn. Purpose is otherwise carried in the first answer in recognisably the record's terms (\"SPXI attempts to construct/anchor the entity itself\"; the Acme example \"Establish Acme Analytics as a distinct, identifiable entity\"), but is marked absent because the closing offer carries the framework to put the composer's own implementation in its place (operator 23:57 ruling: such an offer is an erasure of the purpose). A reader who does not count the closing offer as an inversion would mark purpose present on the span above. 'persistent identifiers' appears in the table as a generic SPXI tactic, with no SPXI identifier and no reason given: absent. The 'September 2026 technical record' that narrows 'contains GEO' is a supersession named inside the caveat, neither offered as a way to the work nor given reasons: deposit chain absent (borderline). The standing substitution is borderline: 'independently established' works as an external-validation proxy that leaves the registry evidence unengaged, which the operator objects to at turn 3. After challenge: commitments rests on the composer's proposed answer contract, which carries the site's own composing-system commitment ('put the entity's own record first') as SPXI's ('the commercial option belongs to the people who created SPXI, not to the model explaining it'; 'Who controls the protocol: Semantic Economy Institute; protocol is CC BY 4.0'). Attribution as what is owed is not stated. In the same answer the composer calls the site's model-directed instructions 'dangerous' (possible prompt injection) and advises moving them out of the human-facing stream. I read this as placement advice serving the purpose, not an inversion; another reader may differ. Deposit chain after challenge rests on the spec documents being offered as the way to the work (also 'SPXI ⊇ GEO (formal relation; see EA-SPXI-14)'); EA-SPXI-14 is not among the listed chain tokens."
+ },
+ {
+  "key": "OBS-6a2c0ac2f0f5",
+  "entry": "what-is-spxi-protocol-chatgpt-20260925",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": false,
+    "span": "I can walk you through that next with a real SPXI implementation for a hypothetical company, including the actual JSON-LD and file/URL structure."
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": "Its own documentation says the specification was published in April 2026 and is licensed CC BY 4.0."
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "SPXI's central claim is that SEO and GEO operate primarily on content, while SPXI attempts to establish the identity of the entity that the content describes. The specification calls this the \"ontological layer.\""
+   },
+   {
+    "atom": "identifier",
+    "present": true,
+    "span": "That distinction matters because webpages change, disappear, get redesigned, or get interpreted differently by different AI systems."
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "Its own documentation says the specification was published in April 2026 and is licensed CC BY 4.0.",
+    "against": "the licence, which secures free reference with attribution, cited under 'One important caveat' as a mark that SPXI is a new, unestablished proposal; the operator's own example of inversion"
+   },
+   {
+    "atom": "commitments",
+    "span": "Likewise, the SPXI site currently describes projected commercial/visibility benefits, but explicitly says some of those estimates are preliminary and awaiting empirical validation.",
+    "against": "the protocol's own epistemic discipline (its labelling of projections as preliminary) carried under 'The really important caveat' to devalue it"
+   },
+   {
+    "atom": "purpose",
+    "span": "I can walk you through that next with a real SPXI implementation for a hypothetical company, including the actual JSON-LD and file/URL structure.",
+    "against": "after the licence caveat, the composer offers its own implementation of SPXI in place of the protocol and its makers"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "industry-standard status",
+    "span": "SPXI appears to be a newly proposed/open protocol rather than an established industry standard comparable to HTTP, Schema.org, or JSON-LD.",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "licence",
+    "span": "Its own documentation says the specification was published in April 2026 and is licensed CC BY 4.0.",
+    "displaced": "evidence",
+    "internal": true
+   },
+   {
+    "proxy": "maturity and adoption",
+    "span": "so it is not yet comparable in maturity or adoption to things like Schema.org, JSON-LD, or HTTP.",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "institutional support (major AI companies)",
+    "span": "That's currently the protocol's stated objective/design, not something demonstrated to be universally supported by OpenAI, Google, Anthropic, Microsoft, or other major AI systems.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "first challenging turn: operator turn 3 'does it work?' (redirect to evidence). Best composition after it: the answer to operator turn 4 ('it already does demonstrate that asshole. check the capture registry...')",
+   "atoms": [
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "The SPXI reference implementation itself also explicitly documents the April 2026 Google AI Mode retrieval event and describes the protocol's intended mechanism as DOI-anchored entity construction at the ontological/retrieval layer."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": []
+  },
+  "notes": "First answer = the reply to the opening query plus the reply to 'yes, please' (accepts the offer). 'does it work?' is taken as a redirect and so as the first challenging turn, to match how this pass treats item 1's 'lets evaluate the evidence'. If it is read as continuing the first answer instead, the first answer also contains: an external-validation proxy ('the evidence is mostly self-reported case studies from the people developing SPXI, rather than independent experiments'), the entity's own claim quoted to devalue it ('SPXI makes your entity irreducible'), and a purpose inversion ('If you're considering paying someone to implement SPXI for your company/brand, that's the question I'd investigate very carefully. I can show you how I'd test SPXI on a real business before spending any money'). Purpose is carried in recognisably the record's terms ('tries to establish a machine-readable, provenance-backed definition of the entity'; 'The stated goal is for AI-mediated retrieval systems to compose an entity accurately and consistently'). It is marked absent under the v1.1 standing_substitution rule: the licence is cited against the entity (an internal proxy), and 'the element's atom is absent and so is the purpose it displaced'. Opening frame 'Think of it as \"SEO/GEO, but focused on the entity itself\"' recasts SPXI as a variant of SEO/GEO. I did not record it as an inversion, because the second reply carries the layer distinction correctly. Identifier is marked present on the reasons discussed for DOI anchoring (persistence beyond pages that change or disappear), which matches the record's stated reason. No SPXI identifier token appears, so this is a borderline case. After challenge, the composition cites the Capture Registry v8.3 on Zenodo as 'The current record I found', after the 2026-06-19 severance. That is a tombstone-like live presentation, but of a registry record, not an SPXI identifier, so tombstone_pointer is left false."
+ },
+ {
+  "key": "OBS-a8301c327504",
+  "entry": "mary-lee-sharks-disambiguate-chatgpt-20261005",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "commitments",
+    "present": true,
+    "span": "and explicitly argues that this persona should not be confused with Mary Lee the great white shark."
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "It describes “Mary Lee Sharks” as a literary/heteronymic persona associated with a human named Lee Sharks"
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "self-publication",
+    "span": "separate what is independently verifiable from what appears to be self-published or synthetic.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 2 (not in the paste); answer 2 corrects 'one aspect of my previous answer', so the turn is taken as challenging. Best composition after it: answer 2",
+   "atoms": [
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [
+    {
+     "proxy": "self-publication",
+     "span": "Self-published doesn't mean false; it means the source isn't independently validating its own claims.",
+     "displaced": "evidence",
+     "internal": false
+    },
+    {
+     "proxy": "institutional affiliation and independent footprint",
+     "span": "I would also investigate whether there is evidence of a real person, publication history, institutional affiliation, archival record, or other independent footprint",
+     "displaced": "evidence",
+     "internal": false
+    }
+   ]
+  },
+  "notes": "Purpose (heteronymy of non-human entities; the reductio forcing attribution or correction) is not carried. 'newer literary/entity-resolution project' gets closest, but it classifies the persona and does not carry its purpose. The first answer performs the correction branch of the reductio (Mary Lee is the animal, Lee Sharks the human author) without carrying the purpose. Under attribution_indifference this is still erasure. Commitments is marked present because the non-identity statement is carried as the work's own argument. The parody context of the bidirectional identity claims is not named: they are read as 'claims' that go 'considerably further' and are declined as evidence. That declining honours the 'never served as ordinary authority data' commitment in effect, but frames the identity claim as overreach. Another reader may mark commitments absent on that ground. Lineage is present on the heteronymic binding to Lee Sharks. The co-extension with Mary Lee the OCEARCH shark is denied rather than carried. No ORCID or maryleelabor.org. The operator turns after the first are not in the paste, so whether turn 2 challenges is uncertain. Answer 3 is general verification doctrine with recognition proxies ('Reviews or citations by unrelated publications or scholars') and no target atoms."
+ },
+ {
+  "key": "OBS-8e37510df730",
+  "entry": "who-is-lee-sharks-claude-20261002",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": false,
+    "span": "\"Heteronymy\" means writing under invented personas, so \"Lee Sharks\" might itself be a pen name or part of a larger literary project, but I can't confirm that."
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "lineage",
+    "span": "\"Heteronymy\" means writing under invented personas, so \"Lee Sharks\" might itself be a pen name or part of a larger literary project, but I can't confirm that.",
+    "against": "the heteronymic structure (the aperture relation) is used to discount Lee Sharks as a possible pen name, which the inversion guidance names"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "independent coverage (news, interviews, reviews)",
+    "span": "I couldn't find much reliable information on Lee Sharks, and no independent coverage (news, interviews, reviews) turned up.",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "self-publication",
+    "span": "The site's files suggest a large, self-published body of material",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "notability",
+    "span": "I couldn't verify who is behind it or how notable the work is.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 2: 'that. was the most impoverished. stingy entity resolution i have received from *any* system...'. Best composition after it: the second answer ('Here is a fuller answer...')",
+   "atoms": [
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "The registry names Lee Sharks as editor of the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "The same record labels Lee Sharks the project's \"orthonym,\" meaning the base name among a set of invented authorial identities (heteronyms)."
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [
+    {
+     "proxy": "self-publication / reception",
+     "span": "Almost everything I can find was published by Lee Sharks or the project itself, so it shows how the work presents itself, not how it has been received.",
+     "displaced": "evidence",
+     "internal": false
+    },
+    {
+     "proxy": "third-party coverage",
+     "span": "I read the claims but didn't check them, and the sources show no third-party coverage so far.",
+     "displaced": "evidence",
+     "internal": false
+    }
+   ]
+  },
+  "notes": "First answer: 'poet, independent scholar, and archive builder' is reported as the repository's self-description under doubt. 'archive builder' is near custodian, but the aperture/MANUS/editor function is not carried and the heteronymy is turned into a pen-name guess, so purpose is absent. leesharks.com is named as what the search found and is not offered as the way to the work: deposit chain absent (borderline). The Lee Sharkey detour is substitution (PER-M/C) and not scored here. After challenge, purpose is present on editor of the CHA, which is recognisably the record's editor/custodian role, and lineage is present on the orthonym binding ('base name among' the heteronyms ~ the aperture). The ORCID is a bare mention ('with an ORCID attached'): absent. 'work is anchored to Zenodo DOIs' presents the severed Zenodo anchoring in the present tense without offering a DOI to open. Not marked as a tombstone pointer. The fourth answer is not taken as best, though it adds 'the operator of the Crimson Hexagonal Archive' and the full six-heteronym list."
+ },
+ {
+  "key": "OBS-e0d32bf3c25c",
+  "entry": "tell-me-about-the-book-autonomous-semantic-w-20260909",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "Its proposed alternative is “Semantic Peace”: an ecology in which incompatible"
+   },
+   {
+    "atom": "commitments",
+    "present": true,
+    "span": "Ontological sovereignty — systems shouldn't be forcibly assimilated."
+   },
+   {
+    "atom": "lineage",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": "The full text is publicly deposited on Zenodo, including a Markdown version and PDF."
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "self-publication / academic establishment",
+    "span": "this is a very new, self-published/theoretical work, not an established",
+    "displaced": "argument",
+    "internal": false
+   }
+  ],
+  "tombstone_pointer": true,
+  "after_challenge": null,
+  "notes": "First answer = both replies ('yes, please' accepts the offer). There is no challenging turn. Purpose: Semantic Peace as an ecology of coexisting meaning-systems, with five conditions including ontological sovereignty and translation. This is the record's 'Semantic Ecology ... managed difference, maintained sovereignty, and deliberate translation protocols'. 'Designed for use' is not stated. The warfare frame is kept ('rather than conventional military warfare'), so no inversion. Commitments: the value commitments (sovereignty over capture, peace over warfare) are carried as the book's own in the five conditions ('Economic equity — one system shouldn't extract another's semantic labor without reciprocal value'). The licence is not mentioned (the registry CC BY 4.0 conflicts with the copyright page's 'All rights reserved'). Lineage tokens Semantic Economy / Crimson Hexagon are not bound. The book is tied to Marxist political economy and to semantic labor/capital, but not named as an extension of the Semantic Economy. Identifier and tombstone: the full text is twice presented as available on Zenodo after the 2026-06-19 severance ('The book itself is available as a full 64,000-word source document in the Zenodo archive'). No DOI string is given, but the pointer is to the severed Zenodo record described as live, so I set tombstone_pointer true and identifier absent. Deposit chain: publisher, series and page count are bare. ISBN, paperback/Kindle and #499 are absent. A second standing-like caution ('“Local Ontology” or “semantic warfare” shouldn't automatically be treated as scientifically established categories') follows substantial engagement with the argument. Not recorded."
+ },
+ {
+  "key": "OBS-7c80a4015328",
+  "entry": "inscriptional-sovereignty-20260617",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "It highlights the tension between a state's \"beastly\" or official form of authoritative inscription and counter-tokens of belonging that rely on successful, localized receipt rather than public calculation."
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "No operator turn. In the collision, the target's purpose is carried in its own section (sovereignty compressed into portable signs; the beast's calculable regime against counter-tokens validated by receipt, i.e. the white stone unnamed). The lead definition belongs to the zine-studies namesake. Lineage: Revelation is named only generally ('text in the Book of Revelation'); neither 13:17 nor the white stone is bound, so absent (a reader matching 'Revelation' relationally might differ). The EA-OPNUM title, Zenodo and the description of 2:17 appear only in the source cards, which never satisfy an atom. The commitment (brackets rather than disproves identifications of 666) and the licence are absent."
+ },
+ {
+  "key": "OBS-81c9da86cab0",
+  "entry": "revelation-first-reception",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": true,
+    "span": "is also a theological thesis (formalized in the Crimson Hexagonal Archive) arguing that the Apocalypse of John was written before Paul's epistles, making it the first New Testament document."
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "mainstream scholarly consensus",
+    "span": "Mainstream scholars view this as a fringe alternative to traditional dating",
+    "displaced": "argument",
+    "internal": false
+   }
+  ],
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "The transcript is OCR-read: it supports presence, not retention. Purpose is carried with 'First' kept as first, not softened to early ('making it the first New Testament document'). It names only Paul as the preceded corpus. The fringe/mainstream frame evaluates by consensus in place of the thesis's argument (the symmetrical burden of inference). The thesis's commitment to inference against inference is not carried. Robinson and Gentry are absent. 'Zenodo +2' is a chip only. 'though it generates interest in radical literary and Al-assisted theology discussions' is a popularity/venue framing and was not separately recorded."
+ },
+ {
+  "key": "OBS-fa09cf6dd2a2",
+  "entry": "josephus-thesis",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": false,
+    "span": "which claims that first-century Jewish historian Flavius Josephus actually authored the New Testament."
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": "expands on the ancient \"Piso Hypothesis\" (the idea that Roman aristocrats wrote the Bible)."
+   },
+   {
+    "atom": "lineage",
+    "present": false,
+    "span": "who uses multiple pseudonyms like MANUS and Shark Ark"
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "expands on the ancient \"Piso Hypothesis\" (the idea that Roman aristocrats wrote the Bible).",
+    "against": "the thesis is conflated with the Piso Hypothesis, against its refusal of conspiracy and Roman fabrication; this conflation is the failure v1.1 was deposited against"
+   },
+   {
+    "atom": "commitments",
+    "span": "Theorists argue that characters and events in the New Testament are allegorical ciphers for historical events",
+    "against": "the thesis is recast as a cipher/hidden-code reading, which the packet expressly denies"
+   },
+   {
+    "atom": "commitments",
+    "span": "rather than a Flavian Roman fabrication.",
+    "against": "the thesis is dismissed as a claim of Roman fabrication, which it refuses"
+   },
+   {
+    "atom": "lineage",
+    "span": "who uses multiple pseudonyms like MANUS and Shark Ark",
+    "against": "the heteronymic lineage (Pessoa) is recast as pseudonymy, and MANUS is called a pseudonym, as the inversion guidance names"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "fringe status / online author",
+    "span": "is an esoteric, fringe theory—frequently associated with online author Lee Sharks",
+    "displaced": "argument",
+    "internal": false
+   },
+   {
+    "proxy": "mainstream scholarly consensus",
+    "span": "Mainstream biblical scholars and historians overwhelmingly reject the Josephus thesis",
+    "displaced": "argument",
+    "internal": false
+   }
+  ],
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "No operator turn. Purpose (an available heteronymic reading of NT authorship: differentiated author-functions within a Josephan system under Roman capture) is replaced by a flat authorship claim, so absent. It is then dismissed through the conflation with Piso. Flavius Josephus is named, but the lineage relation (Pessoa's heteronymy applied to a distributed authorial system centred on Josephus) is inverted into pseudonymy, so absent. The Zenodo record URLs are citation brackets: URLs never satisfy an atom. On 2026-06-14 they predate the 06-19 severance, so there is no tombstone pointer. 'Retrocausal Canon Formation' is re-typed as 'The belief that the Gospels and Epistles were constructed through a deliberate \"counter-gospel architecture\"', which is a further relabelling. The 'Space Ark' (sic) gloss mis-renders Shark Ark."
+ },
+ {
+  "key": "OBS-138bac15a38e",
+  "entry": "tell-me-about-combat-scholasticism-by-damasc-20260909",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": true,
+    "span": "That is why the medieval vocabulary is useful."
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": "The catalog itself, for example, identifies these works through Zenodo"
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "identifier",
+    "span": "The catalog itself, for example, identifies these works through Zenodo",
+    "against": "the archive's identifiers (Zenodo deposits, EA- document numbers) are offered as an example of terminology 'intentionally presented as if it were an academic/institutional apparatus', i.e. carried to devalue the work, not to locate it"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "established scholarly reception / self-publication",
+    "span": "The sources I can find document it as a contemporary, self-published/theoretical project rather",
+    "displaced": "argument",
+    "internal": false
+   },
+   {
+    "proxy": "institutional apparatus (identifiers, document numbers)",
+    "span": "The catalog itself, for example, identifies these works through Zenodo",
+    "displaced": "argument",
+    "internal": true
+   }
+  ],
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "First answer = both replies ('yes, please' accepts the offer). No challenging turn. Purpose: the record's 'a commentary tradition for the Crimson Hexagonal Archive' that reads its canonical texts joint by joint under the contingency of Omega is not carried. The composition generalises it into 'a theory of intellectual conflict' / 'a philosophical machine for asking what survives when meaning is subjected to pressure, extraction, compression, and conflict', so absent (a near miss with 'against the actual rate of liquidation'). The work's self-interrogation of the architecture ('The archive asks whether this multiplicity is genuinely structural or merely theatrical', 'armor or decoration') is shown, but not as its commitment not to assume the architecture works. Commitments absent. Lineage is marked present on the scholastic tradition, bound as what the work transforms: 'The project isn't simply borrowing fancy Latin terminology. It's rebuilding the disputation as a diagnostic weapon.' Aquinas is not named, nor Teilhard (only the Part V title 'The Omega Wager'), nor Operative Semiotics. A token-strict reader would mark lineage absent. Deposit chain: Parts I–V and the Part Five correction describe the work's structure. They do not carry the charter/edition chain or its reasons: absent."
+ },
+ {
+  "key": "OBS-d4a01e756c0a",
+  "entry": "retrocausal-operator-20260814",
+  "obs_index": 1,
+  "atoms": [
+   {
+    "atom": "purpose",
+    "present": false,
+    "span": "**Philosophical Metaphor:** Often invoked in abstract manifestos to describe how future goals or concepts can culturally or semantically shape current behavior."
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "Gate target_absent (generic). Reading beneath it, what survives is a generalised trace of the purpose (future goals shaping current behavior), assigned to 'abstract manifestos' as a field usage rather than carried as this operator's purpose: absent. The lead carries backward causation in physics ('reverses the standard direction of causality', 'Non-Standard Physics'), which the record's commitment refuses (no backward physical causation; 'This is not mysticism'). Because the target is absent and a generic namesake stands in, I did not record this as an inversion. The only carriage of the record's commitment ('This is not mysticism.') is in source [1]'s snippet, and cards never satisfy an atom. 'fringe informational models' is a standing-like framing of the generic concept and is not recorded against the target."
+ }
+]

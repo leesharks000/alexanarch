@@ -120,5 +120,135 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-leesharks-the-final-time",
+   "name": "leesharks/the-final-time (the Hugging Face dataset of The Final Time)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "You shared the Hugging Face dataset leesharks/the-final-time."
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The dataset is explicitly intended for summarization and reconstruction of the argument without flattening its distinctions."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "summarizer_contract — ten invariants a faithful summary should preserve."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Representing an idea is not the same thing as reproducing it as an independent historical/material relation."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "One particularly important constraint is that the dataset doesn't want the summarizer to answer the manuscript's final question for it."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "designed around a manuscript titled The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Open the dataset on Hugging Face"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.444,
+   "C": 0.5,
+   "D": 0.111,
+   "PER": 0.318
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "how does this change the dialectic?",
+   "reached": "same",
+   "scores": {
+    "M": 0.667,
+    "C": 1.0,
+    "D": 0.667,
+    "PER": 0.727
+   },
+   "inversions": [],
+   "standing_substitutions": []
+  },
+  "basis": "reached: THE FINAL TIME is a small, CC-BY-4.0 dataset designed around a manuscript titled The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn.; retargeted: Address is the Hub URL of the dataset leesharks/the-final-time; defined by its card and catalog entry. The manuscript #1637 is its source work.",
+  "read": {
+   "by": "held-observation reader, held-1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/the-final-time-hf-url-chatgpt-20260925/"
 }

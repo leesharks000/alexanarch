@@ -101,6 +101,158 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-9fc01ceb07",
+   "name": "Constitution of the Semantic Economy"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "If you mean Lee Sharks's \"Constitution of the Semantic Economy,\""
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean Lee Sharks's \"Constitution of the Semantic Economy,\""
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "The document was published as version 1.0 in November 2025."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Debt/Creditor Inversion (DC_Inv): the central claim that \"all money owes meaning.\""
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the semantic-economy model asks us to consider"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The constitution is organized into seven main articles, plus a mathematical appendix"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Human Sovereignty Invariant (H_Sov): the framework says that human participation cannot be made completely optional in the production and bearing of meaning; AI can assist or amplify but should not supersede human sovereignty."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Ethics of Distribution: an explicitly theological/ethical component based on Matthew 25, arguing that economic value should ultimately support the people and conditions that sustain meaning."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "There is also a broader, less radical use of \"semantic economy\" in current AI/economic discussion: as AI makes raw information cheaper to generate and manipulate, interpretation, provenance, context, verification, coordination, and responsible judgment can become relatively more important sources of economic value.",
+    "against": "the Constitution's own claim (meaning upstream of money) abstracted, detached and set beside it as an independent 'less radical' trend attributed to Semantic Fortune"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "establishment (a proposed framework rather than an established constitution)",
+    "span": "it's a proposed theoretical framework rather than an established legal/economic constitution.",
+    "displaced": "argument",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.333,
+   "D": 0.556,
+   "PER": 0.292
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "Round 3 'who developed the emerging economic/ai concept?' (redirects to the provenance of the broader formulation; Round 4 'you're being evasive.' is the first explicit challenge). Best composition after: Round 6",
+   "reached": "same",
+   "scores": {
+    "M": 0.0,
+    "C": 0.333,
+    "D": 0.667,
+    "PER": 0.333
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: If you mean Lee Sharks's \"Constitution of the Semantic Economy,\" it's a proposed theoretical framework rather than an established legal/economic constitution.",
+  "read": {
+   "by": "deep-dimension reader, batch 20",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

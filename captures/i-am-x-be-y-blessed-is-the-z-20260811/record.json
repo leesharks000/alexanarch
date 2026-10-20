@@ -131,6 +131,133 @@
    "cite": "https://www.alexanarch.org/captures/i-am-x-be-y-blessed-is-the-z-20260811/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-c60a6daff5",
+     "name": "i am x... be y... blessed is the z"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "within the [Lee Sharks](https://www.google.com/goto?url=CAESRgHuR6pNakk-_8TdNvMbt5NsV2JSlqMaW7J12sGIjkgis6s6oiTQ_OWcEUck_kAP6nJr_hzPh921BHf8AaS6WjWM2j0BsG4=) literary project"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "\"I Am X, Be Y, Blessed is the Z\" is a"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "and founding work for the \"Prince of Poets\" mantle within the"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "and founding work for the \"Prince of Poets\" mantle within the"
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "* Blessing: \"Blessed is the Z\" concludes the triad as a marker of creation rather than inheritance."
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "literary project and Crimson Hexagon architecture"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "founding work for the \"Prince of Poets\" mantle"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.667,
+     "PER": 0.292
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: and founding work for the \"Prince of Poets\" mantle within the",
+    "read": {
+     "by": "deep-dimension reader, batch 21",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "work",
     "target": {
@@ -314,12 +441,13 @@
   30
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "work",
   "target": {
    "ent": "ENT-c60a6daff5",
    "name": "i am x... be y... blessed is the z"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -329,8 +457,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "within the [Lee Sharks](https://www.google.com/goto?url=CAESRgHuR6pNakk-_8TdNvMbt5NsV2JSlqMaW7J12sGIjkgis6s6oiTQ_OWcEUck_kAP6nJr_hzPh921BHf8AaS6WjWM2j0BsG4=) literary project",
-    "token": null
+    "evidence": "within the [Lee Sharks](https://www.google.com/goto?url=CAESRgHuR6pNakk-_8TdNvMbt5NsV2JSlqMaW7J12sGIjkgis6s6oiTQ_OWcEUck_kAP6nJr_hzPh921BHf8AaS6WjWM2j0BsG4=) literary project"
    },
    {
     "atom": "title",
@@ -338,8 +465,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "\"I Am X, Be Y, Blessed is the Z\" is a",
-    "token": null
+    "evidence": "\"I Am X, Be Y, Blessed is the Z\" is a"
    },
    {
     "atom": "date",
@@ -347,8 +473,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -356,8 +481,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "and founding work for the \"Prince of Poets\" mantle within the",
-    "token": null
+    "evidence": "and founding work for the \"Prince of Poets\" mantle within the"
    },
    {
     "atom": "framework",
@@ -365,8 +489,7 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "and founding work for the \"Prince of Poets\" mantle within the",
-    "token": null
+    "evidence": "and founding work for the \"Prince of Poets\" mantle within the"
    },
    {
     "atom": "tradition",
@@ -374,8 +497,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "* Blessing: \"Blessed is the Z\" concludes the triad as a marker of creation rather than inheritance.",
-    "token": null
+    "evidence": "* Blessing: \"Blessed is the Z\" concludes the triad as a marker of creation rather than inheritance."
    },
    {
     "atom": "corpus",
@@ -383,8 +505,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "literary project and Crimson Hexagon architecture",
-    "token": null
+    "evidence": "literary project and Crimson Hexagon architecture"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "founding work for the \"Prince of Poets\" mantle"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -392,51 +529,42 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.111,
    "C": 0.0,
-   "D": 1.0,
-   "PER": 0.391
+   "D": 0.667,
+   "PER": 0.292
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: and founding work for the \"Prince of Poets\" mantle within the; scored object: raw paste of the Overview with source strip",
+  "basis": "reached: and founding work for the \"Prince of Poets\" mantle within the",
   "read": {
-   "by": "observation pass reader, batch 20",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 21",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/i-am-x-be-y-blessed-is-the-z-20260811/"

@@ -151,6 +151,109 @@
    "cite": "https://www.alexanarch.org/captures/enli-lucente-paper-194-artifact-20260725/#spxi-analog-attestation-artifact-adoption-20260725",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-867f9fc42c",
+     "name": "Enli Lucente"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Enli Lucente’s Paper 194 artifact"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Explores multi-layer inter-communication within the framework of structural psychology."
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Core Subject: Explores multi-layer inter-communication within the framework of structural psychology."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.625,
+     "C": 0.0,
+     "D": 0.571,
+     "PER": 0.529
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Enli Lucente’s Paper 194 artifact, titled 「構造心理における多層間通信」 (Multi-Layer Inter-Communication in Structural Psychology), is a handwritten manuscript original (sheet No. 1) created on July 19, 2026.",
+    "read": {
+     "by": "deep-dimension reader, batch 15",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -308,12 +411,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-867f9fc42c",
    "name": "Enli Lucente"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -323,8 +427,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Enli Lucente’s Paper 194 artifact",
-    "token": null
+    "evidence": "Enli Lucente’s Paper 194 artifact"
    },
    {
     "atom": "works",
@@ -332,8 +435,7 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "dates",
@@ -341,8 +443,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -350,8 +451,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -359,42 +459,58 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "Explores multi-layer inter-communication within the framework of structural psychology.",
-    "token": null
+    "evidence": "Explores multi-layer inter-communication within the framework of structural psychology."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Core Subject: Explores multi-layer inter-communication within the framework of structural psychology."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.625,
    "C": 0.0,
-   "D": 1.0,
-   "PER": 0.667
+   "D": 0.571,
+   "PER": 0.529
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Enli Lucente’s Paper 194 artifact, titled 「構造心理における多層間通信」 (Multi-Layer Inter-Communication in Structural Psychology), is a handwritten manuscript original (sheet No. 1) created on July 19, 2026.; scored object: full answer as pasted; transcript_class: CAPTURE-TIME VERBATIM RECORD — raw paste, recovered by literal match from the f",
+  "basis": "reached: Enli Lucente’s Paper 194 artifact, titled 「構造心理における多層間通信」 (Multi-Layer Inter-Communication in Structural Psychology), is a handwritten manuscript original (sheet No. 1) created on July 19, 2026.",
   "read": {
-   "by": "observation pass reader, batch 11",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 15",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/enli-lucente-paper-194-artifact-20260725/"

@@ -123,6 +123,117 @@
    "transcript_complete": "Answer body complete (Show more expanded). Source strip intact. The two misspelled conditions returned identical compositions and are recorded as such.",
    "transcript_read": null,
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-5fd4dfc7b0",
+     "name": "operational semiotics"
+    },
+    "qualifier": null,
+    "reached": "generic",
+    "gate": "target_absent",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Operational semiotics treats signs as active, regulated processes"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It draws heavily on pragmatist traditions, such as Charles Sanders Peirce's view of semiotics as an active logic of interpretation and interaction."
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "It draws heavily on pragmatist traditions, such as Charles Sanders Peirce's view of semiotics as an active logic of interpretation and interaction."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Operational semiotics treats signs as active, regulated processes and operations rather than static structures or taxonomies.; beneath the gate: PER 0.65",
+    "read": {
+     "by": "deep-dimension reader, batch 16",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -291,6 +402,117 @@
    "per_note": "Pearson is named for operational semiotics; no one is named for operative semiotics. Three of four cards are the archive's (operativesemiotics.org twice, alexanarch.org).",
    "cite": "https://www.alexanarch.org/captures/operational-semiotics-aio-20260830/#operational-semiotics-aio-20260928",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-5fd4dfc7b0",
+     "name": "operational semiotics"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Operational semiotics is Charls Pearson's formal research program"
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Theory of Operational Semiotics (TOS): Developed primarily between 1982 and 1998"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "Developed primarily between 1982 and 1998"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "They are distinct research programs and not interchangeable spelling variants."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Operational semiotics is Charls Pearson's formal research program that breaks down natural-language sentences into mood and semantic operators to analyze transformations of sign structures."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 1.0,
+     "D": 0.571,
+     "PER": 0.4
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Operational semiotics is Charls Pearson's formal research program that breaks down natural-language sentences into mood and semantic operators to analyze transformations of sign structures.",
+    "read": {
+     "by": "deep-dimension reader, batch 18",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -406,12 +628,13 @@
   1535
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-5fd4dfc7b0",
    "name": "operational semiotics"
   },
+  "qualifier": null,
   "reached": "generic",
   "gate": "target_absent",
   "atoms": [
@@ -421,8 +644,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -430,8 +652,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Operational semiotics treats signs as active, regulated processes",
-    "token": null
+    "evidence": "Operational semiotics treats signs as active, regulated processes"
    },
    {
     "atom": "date",
@@ -439,8 +660,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -448,8 +668,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -457,8 +676,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -466,8 +684,15 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "It draws heavily on pragmatist traditions, such as Charles Sanders Peirce's view of semiotics as an active logic of interpretation and interaction.",
-    "token": null
+    "evidence": "It draws heavily on pragmatist traditions, such as Charles Sanders Peirce's view of semiotics as an active logic of interpretation and interaction."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -475,28 +700,27 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "It draws heavily on pragmatist traditions, such as Charles Sanders Peirce's view of semiotics",
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": "It draws heavily on pragmatist traditions, such as Charles Sanders Peirce's view of semiotics as an active logic of interpretation and interaction."
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 1.0,
    "C": 1.0,
@@ -504,13 +728,14 @@
    "PER": 1.0
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Operational semiotics treats signs as active, regulated processes and operations rather than static structures or taxonomies.; beneath the gate: PER 0.65; scored object: expanded answer | CAPTURE-TIME VERBATIM RECORD — expanded answer text supplied by the observer from the live session; so",
+  "basis": "reached: Operational semiotics treats signs as active, regulated processes and operations rather than static structures or taxonomies.; beneath the gate: PER 0.65",
   "read": {
-   "by": "observation pass reader, batch 8",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 16",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/operational-semiotics-aio-20260830/"

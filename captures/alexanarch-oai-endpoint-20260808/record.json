@@ -185,7 +185,126 @@
     "https://www.alexanarch.org/data/captures/alexanarch-oai-endpoint-20260808/screengrab-20260808-121605.png"
    ],
    "cite": "https://www.alexanarch.org/captures/alexanarch-oai-endpoint-20260808/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "TGT-alexanarch-oai-pmh-endpoint",
+     "name": "Alexanarch OAI-PMH endpoint (alexanarch.org/oai)"
+    },
+    "qualifier": "Alexanarch",
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Alexanarch OAI endpoint refers to the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) configuration"
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "archival authority",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "configuration managed within the Alexanarch — The Self-Governing Library project and repository workflows"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Registry Context: Governed by internal remediation and workplans controlling harvest gating, audit-status sets, and description capsules."
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Open Archives Initiative Protocol for Metadata Harvesting"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "managed within the Alexanarch — The Self-Governing Library project"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Protocol: Uses OAI-PMH standards for exposing and harvesting XML-based metadata records."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.273,
+     "C": 0.0,
+     "D": 0.778,
+     "PER": 0.417
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The Alexanarch OAI endpoint refers to the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) configuration managed within the Alexanarch — The Self-Governing Library project and repository workflows.; retargeted: 'alexanarch' qualifies; same target as 'alexanarch oai': the archive's OAI-PMH endpoint.",
+    "read": {
+     "by": "held-observation reader, held-3",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   },
   {
    "slug": "alexanarch-oai-endpoint-aimode-20260808",
@@ -271,7 +390,126 @@
    "img_urls": [],
    "surface_basis": "Google AI Overview BY EXCLUSION, operator attestation: AI Mode was avoided after June. An expanded Overview presented as AI Mode chrome and was recorded as the surface.",
    "cite": "https://www.alexanarch.org/captures/alexanarch-oai-endpoint-20260808/#alexanarch-oai-endpoint-aimode-20260808",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "TGT-alexanarch-oai-pmh-endpoint",
+     "name": "Alexanarch OAI-PMH endpoint (alexanarch.org/oai)"
+    },
+    "qualifier": "Alexanarch",
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "archival authority",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "managed within the Alexanarch — The Self-Governing Library project"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Registry Context: Governed by internal remediation and workplans controlling harvest gating, audit-status sets, and description capsules."
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH)"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Integrated directly via the Alexanarch platform architecture"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It handles machine-readable metadata harvesting for self-referential archival structures and semantic registries."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Protocol: Uses OAI-PMH standards for exposing and harvesting XML-based metadata records."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.545,
+     "C": 0.0,
+     "D": 0.444,
+     "PER": 0.417
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The [Alexanarch](https://www.alexanarch.org/) OAI endpoint refers to the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) configuration managed within the Alexanarch — The Self-Governing Library project and repository workflows.; retargeted: Address 'alexanarch oai endpoint': the endpoint itself, defined by #1429.",
+    "read": {
+     "by": "held-observation reader, held-1",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   }
  ],
  "n_observations": 2,
@@ -330,5 +568,124 @@
  "findings": [],
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-alexanarch-oai-pmh-endpoint",
+   "name": "Alexanarch OAI-PMH endpoint (alexanarch.org/oai)"
+  },
+  "qualifier": "Alexanarch",
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Alexanarch OAI endpoint refers to the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) configuration"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "configuration managed within the Alexanarch — The Self-Governing Library project and repository workflows"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Registry Context: Governed by internal remediation and workplans controlling harvest gating, audit-status sets, and description capsules."
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Open Archives Initiative Protocol for Metadata Harvesting"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "managed within the Alexanarch — The Self-Governing Library project"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Protocol: Uses OAI-PMH standards for exposing and harvesting XML-based metadata records."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.273,
+   "C": 0.0,
+   "D": 0.778,
+   "PER": 0.417
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The Alexanarch OAI endpoint refers to the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) configuration managed within the Alexanarch — The Self-Governing Library project and repository workflows.; retargeted: 'alexanarch' qualifies; same target as 'alexanarch oai': the archive's OAI-PMH endpoint.",
+  "read": {
+   "by": "held-observation reader, held-3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-oai-endpoint-20260808/"
 }

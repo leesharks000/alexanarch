@@ -210,6 +210,117 @@
     "to": 0.25,
     "on": "2026-10-15",
     "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+   },
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "protocol",
+    "target": {
+     "ent": "TGT-surface-weather-station",
+     "name": "The Surface Weather Station (Compositional Defiguration, EA-MMRS-SURFACE-VISIBILITY-01 v1.1.1, #884)"
+    },
+    "qualifier": "Alexanarch",
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Alexanarch \"Surface Weather Station\" instrument"
+     },
+     {
+      "atom": "producer",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "institution",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "developed within Lee Sharks' Alexanarch project ecosystem"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.625,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.762
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The Alexanarch \"Surface Weather Station\" instrument and /observatory/ component refer to modular telemetry tracking and continuity logging protocols developed within Lee Sharks' Alexanarch project ecosystem.; retargeted: Address 'alexanarch surface weather observatory': the archive's Surface Weather Station instrument and its /observatory/ page, defined by the methodology #884.",
+    "read": {
+     "by": "held-observation reader, held-3",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
    }
   }
  ],
@@ -271,6 +382,117 @@
   "to": 0.25,
   "on": "2026-10-15",
   "basis": "re-derived from per_v, the four-unit vector that is the record (capture_intake.per_vector)"
+ },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "protocol",
+  "target": {
+   "ent": "TGT-surface-weather-station",
+   "name": "The Surface Weather Station (Compositional Defiguration, EA-MMRS-SURFACE-VISIBILITY-01 v1.1.1, #884)"
+  },
+  "qualifier": "Alexanarch",
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Alexanarch \"Surface Weather Station\" instrument"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "developed within Lee Sharks' Alexanarch project ecosystem"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.625,
+   "C": 0.5,
+   "D": 1.0,
+   "PER": 0.762
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The Alexanarch \"Surface Weather Station\" instrument and /observatory/ component refer to modular telemetry tracking and continuity logging protocols developed within Lee Sharks' Alexanarch project ecosystem.; retargeted: Address 'alexanarch surface weather observatory': the archive's Surface Weather Station instrument and its /observatory/ page, defined by the methodology #884.",
+  "read": {
+   "by": "held-observation reader, held-3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
  },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-surface-weather-observatory-20260813/"
 }

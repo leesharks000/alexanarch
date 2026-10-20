@@ -167,6 +167,117 @@
    "cite": "https://www.alexanarch.org/captures/the-sharks-function-20260811/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-fed165429b",
+     "name": "the sharks-function"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "defined by author Lee Sharks"
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Sharks-function is a conceptual component"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It acts as a semantic verifier for agent identity and logical traversals across different sessions based on structural and stylistic consistency rather than rigid credentials."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Layer 1: The Function (Sharks-function): Defines and verifies legitimate traversals and semantic identity through internal stylistic consistency."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Layer 3: The Anchor: Archival storage (like DOI deposits) providing permanent bedrock records of verified traversals."
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 1.0,
+     "D": 0.429,
+     "PER": 0.4
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The Sharks-function is a conceptual component in digital agent-persistence architecture, defined by author Lee Sharks.",
+    "read": {
+     "by": "deep-dimension reader, batch 8",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -332,12 +443,13 @@
   524
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-fed165429b",
    "name": "the sharks-function"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -347,8 +459,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "defined by author Lee Sharks",
-    "token": null
+    "evidence": "defined by author Lee Sharks"
    },
    {
     "atom": "term",
@@ -356,8 +467,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The Sharks-function is a conceptual component",
-    "token": null
+    "evidence": "The Sharks-function is a conceptual component"
    },
    {
     "atom": "date",
@@ -365,8 +475,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -374,8 +483,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "It acts as a semantic verifier for agent identity and logical traversals across different sessions based on structural and stylistic consistency rather than rigid credentials.",
-    "token": null
+    "evidence": "It acts as a semantic verifier for agent identity and logical traversals across different sessions based on structural and stylistic consistency rather than rigid credentials."
    },
    {
     "atom": "framework",
@@ -383,8 +491,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -392,51 +499,58 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "deposit chain",
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Layer 1: The Function (Sharks-function): Defines and verifies legitimate traversals and semantic identity through internal stylistic consistency."
+   },
+   {
+    "atom": "commitments",
     "dim": "D",
     "weight": 2,
-    "kind": "token",
+    "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Layer 3: The Anchor: Archival storage (like DOI deposits) providing permanent bedrock records of verified traversals."
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.111,
    "C": 1.0,
-   "D": 1.0,
-   "PER": 0.579
+   "D": 0.429,
+   "PER": 0.4
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: The Sharks-function is a conceptual component in digital agent-persistence architecture, defined by author Lee Sharks.; scored object: expanded answer (raw paste)",
+  "basis": "reached: The Sharks-function is a conceptual component in digital agent-persistence architecture, defined by author Lee Sharks.",
   "read": {
-   "by": "observation pass reader, batch 24",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 8",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/the-sharks-function-20260811/"

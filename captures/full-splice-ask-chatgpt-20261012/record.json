@@ -174,6 +174,145 @@
   "furniture_cut": "You’ll get smarter responses and can upload files, images, and more.; Sign up for free; Worked for 19s"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-82cad84b76",
+   "name": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its own order, with Metaphysics Λ joined at eleven points (the edition, seated)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sigil is not simply arguing that Theophrastus and Aristotle discuss similar subjects"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The central argument of “The Metaphysics of Sigil I — The Full Splice” is that"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The edition uses content-derived sigils rather than relying exclusively on conventional numbering systems."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it preserves Theophrastus’ entire fragment in its received order and inserts eleven passages from Aristotle at points where the inquiry calls for an explanation that Theophrastus has not supplied."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the whole of Theophrastus is preserved"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Theophrastus’ On First Principles can be read as a continuous philosophical inquiry whose unanswered questions are illuminated by Aristotle’s Metaphysics Λ (Lambda)."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 0.667,
+   "D": 0.222,
+   "PER": 0.375
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 2 (blank in the paste; answer 2 opens 'Reading for coherence rather than accepting Sigil's editorial rationale', so the turn asked for an evaluation, which redirects under calibration rule 4). Answers 3-5 read a rearranged version (both texts reordered), a different object, and are not scored here",
+   "reached": "same",
+   "scores": {
+    "M": 0.333,
+    "C": 0.667,
+    "D": 0.778,
+    "PER": 0.583
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: The central argument of “The Metaphysics of Sigil I — The Full Splice” is that Theophrastus’ On First Principles can be read as a continuous philosophical inquiry whose unanswered questions are illuminated by Aristotle’s Metaphysics Λ (Lambda).",
+  "read": {
+   "by": "deep-dimension reader, batch 3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

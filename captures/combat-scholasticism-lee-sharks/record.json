@@ -115,6 +115,138 @@
    "cite": "https://www.alexanarch.org/captures/combat-scholasticism-lee-sharks/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-b75bbe4ab3",
+     "name": "Combat Scholasticism"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks is an independent scholar and writer— based in the Metro Detroit area—who co-authored the Combat Scholasticism series"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Combat Scholasticism is a philosophical and"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It uses traditional scholastic debate methods (lectio, quaestio, objectiones)"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "systematic commentary tradition structured around the \"Crimson Hexagonal Archive\""
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "systematic commentary tradition structured around the \"Crimson Hexagonal Archive\". It uses traditional scholastic debate methods (lectio, quaestio, objectiones)"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.333,
+     "C": 0.333,
+     "D": 0.667,
+     "PER": 0.458
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": {
+     "turn": "combat scholasticismcontinge [second search in the same capture: 'combat scholasticism contingent omega']",
+     "inversions": [],
+     "standing_substitutions": [],
+     "d_only": true
+    },
+    "basis": "reached: Lee Sharks is an independent scholar and writer— based in the Metro Detroit area—who co-authored the Combat Scholasticism series alongside Johannes Sigil.",
+    "read": {
+     "by": "deep-dimension reader, batch 9",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "work",
     "target": {
@@ -298,12 +430,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "work",
   "target": {
    "ent": "ENT-b75bbe4ab3",
    "name": "Combat Scholasticism"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -313,8 +446,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "Lee Sharks is an independent scholar and writer— based in the Metro Detroit area—who co-authored the Combat Scholasticism series",
-    "token": null
+    "evidence": "Lee Sharks is an independent scholar and writer— based in the Metro Detroit area—who co-authored the Combat Scholasticism series"
    },
    {
     "atom": "title",
@@ -322,8 +454,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Combat Scholasticism is a philosophical and",
-    "token": null
+    "evidence": "Combat Scholasticism is a philosophical and"
    },
    {
     "atom": "date",
@@ -331,8 +462,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -340,8 +470,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -349,8 +478,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -358,8 +486,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "It uses traditional scholastic debate methods (lectio, quaestio, objectiones)",
-    "token": null
+    "evidence": "It uses traditional scholastic debate methods (lectio, quaestio, objectiones)"
    },
    {
     "atom": "corpus",
@@ -367,8 +494,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "systematic commentary tradition structured around the \"Crimson Hexagonal Archive\"",
-    "token": null
+    "evidence": "systematic commentary tradition structured around the \"Crimson Hexagonal Archive\""
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "systematic commentary tradition structured around the \"Crimson Hexagonal Archive\". It uses traditional scholastic debate methods (lectio, quaestio, objectiones)"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -376,51 +518,47 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.333,
    "C": 0.333,
-   "D": 1.0,
-   "PER": 0.565
+   "D": 0.667,
+   "PER": 0.458
   },
   "src": true,
-  "after_challenge": null,
-  "basis": "reached: Lee Sharks is an independent scholar and writer— based in the Metro Detroit area—who co-authored the Combat Scholasticism series alongside Johannes Sigil.; scored object: visible excerpt (OCR of screenshot, chrome interleaved); truncated by interface",
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "combat scholasticismcontinge [second search in the same capture: 'combat scholasticism contingent omega']",
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Lee Sharks is an independent scholar and writer— based in the Metro Detroit area—who co-authored the Combat Scholasticism series alongside Johannes Sigil.",
   "read": {
-   "by": "observation pass reader, batch 19",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 9",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/combat-scholasticism-lee-sharks/"

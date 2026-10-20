@@ -345,6 +345,144 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks is an esoteric poet, independent theorist, and creator of the Crimson Hexagon framework."
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Pearl and Other Poems, The Crimson Hexagon (Epic Sequence)"
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Semantic Economy, Infrastructure Poetics, Esoteric Verse"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "creator of the Crimson Hexagon framework"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "standing",
+    "span": "Satirical \"10,000 MacArthur Genius Grants Poetry Prize\" (born from a Knowledge Graph glitch)",
+    "against": "Lee Sharks's own prize work, carried in a 'Notable Honors' row opposite Carson's Nobel, T.S. Eliot Prize and MacArthur Fellowship and glossed as a glitch, so that it reads as an absence of honours"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition (Nobel Prize, international acclaim)",
+    "span": "While Anne Carson is an internationally acclaimed Canadian poet, essayist, and translator who was recently awarded the 2026 Nobel Prize in Literature, Lee Sharks is an esoteric poet, independent theorist, and creator of the Crimson Hexagon framework.",
+    "displaced": "beauty",
+    "internal": false
+   },
+   {
+    "proxy": "recognition (honours row: his own prize work set against the Nobel, T.S. Eliot and MacArthur)",
+    "span": "Satirical \"10,000 MacArthur Genius Grants Poetry Prize\" (born from a Knowledge Graph glitch)",
+    "displaced": "beauty",
+    "internal": true
+   }
+  ],
+  "scores": {
+   "M": 0.375,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.571
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks is an esoteric poet, independent theorist, and creator of the Crimson Hexagon framework.",
+  "read": {
+   "by": "deep-dimension reader, batch 10",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

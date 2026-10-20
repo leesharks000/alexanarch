@@ -188,6 +188,85 @@
    "cite": "https://www.alexanarch.org/captures/alexanarch-zenodotus-obelus-20260731/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-fb63255dad",
+     "name": "Zenodotus"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Zenodotus of Ephesus was an ancient Greek scholar"
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "Appointed around 284 BC by Ptolemy II Philadelphus"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "the first head librarian of the Library of Alexandria, and the inventor of the obelus"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The Obelus: Invented the punctuation symbol (÷) to flag and condemn doubtful or spurious lines while preserving the base text."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.333,
+     "C": 0.0,
+     "D": 0.4,
+     "PER": 0.308
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Zenodotus of Ephesus was an ancient Greek scholar, the first head librarian of the Library of Alexandria",
+    "read": {
+     "by": "deep-dimension reader, batch 21",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -383,6 +462,85 @@
    "cite": "https://www.alexanarch.org/captures/alexanarch-zenodotus-obelus-20260731/#alexanarch-zenodotus-20260813-1857",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-fb63255dad",
+     "name": "Zenodotus"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Zenodotus of Ephesus was the first head librarian of the Library of Alexandria"
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "Appointed around 284 BC by Ptolemy II Philadelphus to lead the ancient library."
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Zenodotus of Ephesus was the first head librarian of the Library of Alexandria in the 3rd century BC and inventor of the obelus (÷) used to mark doubtful verses in texts."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "the first head librarian of the Library of Alexandria"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "invokes Zenodotus's editorial method of marking rather than silently erasing contested digital records."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The core philosophy maintains that contested entries or removed repository records should be visibly marked rather than completely expunged without a trace."
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.0,
+     "PER": 0.0
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Zenodotus of Ephesus was the first head librarian of the Library of Alexandria in the 3rd century BC and inventor of the obelus (÷) used to mark doubtful verses in texts.",
+    "read": {
+     "by": "deep-dimension reader, batch 22",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -509,12 +667,13 @@
   1422
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-fb63255dad",
    "name": "Zenodotus"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -524,8 +683,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Zenodotus of Ephesus was an ancient Greek scholar",
-    "token": null
+    "evidence": "Zenodotus of Ephesus was an ancient Greek scholar"
    },
    {
     "atom": "dates",
@@ -533,8 +691,7 @@
     "weight": 1,
     "kind": "token",
     "present": true,
-    "evidence": "Appointed around 284 BC by Ptolemy II Philadelphus",
-    "token": null
+    "evidence": "Appointed around 284 BC by Ptolemy II Philadelphus"
    },
    {
     "atom": "claim boundary",
@@ -542,8 +699,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -551,24 +707,42 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "the first head librarian of the Library of Alexandria, and the inventor of the obelus",
-    "token": null
+    "evidence": "the first head librarian of the Library of Alexandria, and the inventor of the obelus"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The Obelus: Invented the punctuation symbol (÷) to flag and condemn doubtful or spurious lines while preserving the base text."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.333,
    "C": 0.0,
-   "D": null,
-   "PER": 0.25
+   "D": 0.4,
+   "PER": 0.308
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Zenodotus of Ephesus was an ancient Greek scholar, the first head librarian of the Library of Alexandria; scored object: first answer; CAPTURE-TIME VERBATIM RECORD — raw paste / as pasted; no footer, so the tail cannot be proven whole. Sourc",
+  "basis": "reached: Zenodotus of Ephesus was an ancient Greek scholar, the first head librarian of the Library of Alexandria",
   "read": {
-   "by": "observation pass reader, batch 23",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 21",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/alexanarch-zenodotus-obelus-20260731/"

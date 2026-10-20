@@ -214,6 +214,101 @@
  },
  "notes": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-8d2d0a11b2",
+   "name": "KADEEZY MUSIC"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The digital mythology of KADEEZY MUSIC is best understood"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Crossed The Line Run is the first KADEEZY track explicitly incorporated into the Archive's theological framework."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "These are interpretive readings of the documented public presentation, not claims that KADEEZY has personally declared a formal mythology."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Archive's term for its audio-critical practice is Computational Audial Criticism."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Within the Crimson Hexagonal Archive (CHA), KADEEZY is not merely treated"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The associated contributor-license document describes a consent-first model in which the artist retains copyright, the Archive receives permission to analyze and publish criticism, and use of the original work for AI training requires separate, explicit written consent. The documented terms also describe a process for requesting withdrawal of an archived deposit."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "A provenance anchor attempts to ensure that the work remains associated with the correct artist rather than being confused with similarly named performers."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.25,
+   "PER": 0.067
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Within the Crimson Hexagonal Archive (CHA), KADEEZY is not merely treated as a musician with a collection of songs.",
+  "read": {
+   "by": "deep-dimension reader, batch 7",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

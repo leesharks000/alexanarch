@@ -239,6 +239,133 @@
  },
  "notes": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-df94952c50",
+   "name": "The Ezekiel Engine: Mathematical Specification (Developmental Draft v0.1)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "spearheaded by theorist Lee Sharks"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "• The Ezekiel Engine: Subtitled \"Mathematical Specification,\""
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "This is the literal binding instrument signed on January 24, 2026."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "this is mapped to a structure called the \"Lunar Arm\" (X:LUNAR-ARM)"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the transition from \"Wheels\" to \"Engine\" bridges ancient text with modern formal logic"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Published through the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It is often described in technical sheets as a mechanism for \"rotational epistemology\"—a system that processes information and shifts semantic meanings using multidirectional math."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Ezekiel's Wheels: Subtitled \"A Diagrammatic Hermeneutic of Ezekiel 1:15-21,\" this foundational document outlines the structural and symbolic rules inspired by the biblical vision."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": "The Execution (AXN:00CB - The Ezekiel Engine): The actual mathematical specification."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Ezekiel Engine Specification does not just exist in a vacuum; it operates as an \"opaque core\" beneath other software frameworks."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.222,
+   "C": 0.0,
+   "D": 0.333,
+   "PER": 0.208
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The Ezekiel Engine: Subtitled \"Mathematical Specification,\" this text acts as the actual \"engine\" or computational fulfillment that executes the hermeneutic rules laid out in the Wheels document.",
+  "read": {
+   "by": "deep-dimension reader, batch 5",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

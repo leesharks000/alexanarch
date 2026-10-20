@@ -194,6 +194,131 @@
    "cite": "https://www.alexanarch.org/captures/lee-sharks-walt-whitman-adoption/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Lee Sharks is a contemporary literary heteronym or persona"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Sharks is the author of works such as Pearl and Other Poems"
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "world-building project known as The Crimson Hexagon"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "lineage",
+      "span": "You can explore more of this specific literary persona's fictional universe and writings via the Lee Sharks Medium Archive",
+      "against": "the heteronymic structure carried to discount the orthonym's authorship as fictive: Lee Sharks as 'a contemporary literary heteronym or persona' of a 'world-building project', his work a 'fictional universe', against the aperture relation"
+     }
+    ],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.375,
+     "C": 0.5,
+     "D": 1.0,
+     "PER": 0.667
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks is a contemporary literary heteronym or persona created as part of an applied literary history and world-building project known as The Crimson Hexagon.",
+    "read": {
+     "by": "deep-dimension reader, batch 24",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -358,12 +483,13 @@
   335
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-b2dc7b2fd9",
    "name": "Lee Sharks"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -373,8 +499,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Lee Sharks is a contemporary literary heteronym or persona",
-    "token": null
+    "evidence": "Lee Sharks is a contemporary literary heteronym or persona"
    },
    {
     "atom": "works",
@@ -382,8 +507,7 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "Sharks is the author of works such as Pearl and Other Poems",
-    "token": null
+    "evidence": "Sharks is the author of works such as Pearl and Other Poems"
    },
    {
     "atom": "dates",
@@ -391,8 +515,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -400,8 +523,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -409,8 +531,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -418,51 +539,72 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "world-building project known as The Crimson Hexagon",
-    "token": null
+    "evidence": "world-building project known as The Crimson Hexagon"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
     "dim": "D",
     "weight": 2,
     "kind": "role",
-    "present": true,
-    "evidence": "Lee Sharks is a contemporary literary heteronym or persona",
-    "token": null
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [
+   {
+    "atom": "lineage",
+    "span": "You can explore more of this specific literary persona's fictional universe and writings via the Lee Sharks Medium Archive",
+    "against": "the heteronymic structure carried to discount the orthonym's authorship as fictive: Lee Sharks as 'a contemporary literary heteronym or persona' of a 'world-building project', his work a 'fictional universe', against the aperture relation"
+   }
+  ],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.375,
    "C": 0.5,
-   "D": 0.714,
-   "PER": 0.526
+   "D": 1.0,
+   "PER": 0.667
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Lee Sharks is a contemporary literary heteronym or persona created as part of an applied literary history and world-building project known as The Crimson Hexagon.; scored object: first answer",
+  "basis": "reached: Lee Sharks is a contemporary literary heteronym or persona created as part of an applied literary history and world-building project known as The Crimson Hexagon.",
   "read": {
-   "by": "observation pass reader, batch 16",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 24",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/lee-sharks-walt-whitman-adoption/"

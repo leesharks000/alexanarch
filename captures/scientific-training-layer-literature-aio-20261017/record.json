@@ -212,5 +212,132 @@
   "basis": "An archive term (#176). Recorded 2026-10-17."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-protocols-for-scientific-training-layer-literature",
+   "name": "Protocols for Scientific Training-Layer Literature: Machine-Mediated Research at the Production and Reception Ends (EA-SCI-TLL-PROTO-01, #176)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "proposed by researchers like Lee Sharks"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "the Alexanarch Protocols for Scientific Training-Layer Literature"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "a framework where scientific papers are published with a dual-layer architecture: one optimized for human reading, and an explicit, author-verified \"training layer\" optimized for direct ingestion by machine learning and AI agents"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The TLL Protocol Suite (TLL-P / R / G)"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "In traditional publishing, scientific data is locked inside static PDF formats that are heavily fragmented and prone to post-hoc AI parsing errors."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "points to the Alexanarch Protocols"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Exposing Hard Claims: The training layer formally encapsulates the study's claims, evidence, operational scope, data provenance, and edge-case challenge conditions in a machine-legible format."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.0,
+   "D": 0.667,
+   "PER": 0.292
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: While the most precise match for this exact phrase points to the Alexanarch Protocols for Scientific Training-Layer Literature; retargeted: Address 'scientific training-layer literature': the reason names the companion paper, #176.",
+  "read": {
+   "by": "held-observation reader, held-1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/scientific-training-layer-literature-aio-20261017/"
 }

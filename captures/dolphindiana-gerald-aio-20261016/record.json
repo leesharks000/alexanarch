@@ -220,6 +220,144 @@
  },
  "notes": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-38c21f30ea",
+   "name": "Dolphindiana"
+  },
+  "qualifier": null,
+  "reached": "substitute",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "\"Dolphindiana\" and its construction foreman"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "took social media by storm in March 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "The entire phenomenon is a complete hoax.",
+    "against": "The room's airlock (the event is false; the semiotic object is real; the ethology is documented; never collapsed) is carried as its first term only, so that the falsity of the event dismisses the whole: the airlock collapsed toward the hoax."
+   },
+   {
+    "atom": "deposit chain",
+    "span": "with users writing fake \"labor manifestos\" under the \"Underwater Construction Authority of Dolphindiana\"",
+    "against": "The Mary Lee labor manifesto filed with the Underwater Construction Authority (maryleelabor.org, #1163 in the chain; its card is in the rail) is carried as anonymous fake meme content, against the room's real cross-species semantic labor."
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: \"Dolphindiana\" and its construction foreman, Gerald the Dolphin, refer to a viral satirical hoax and internet meme that took social media by storm in March 2026.; beneath the gate: PER 0.833",
+  "read": {
+   "by": "deep-dimension reader, batch 22",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "concept",
   "target": {

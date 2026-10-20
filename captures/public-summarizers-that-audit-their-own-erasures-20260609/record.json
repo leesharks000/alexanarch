@@ -313,6 +313,133 @@
    "cite": "https://www.alexanarch.org/captures/public-summarizers-that-audit-their-own-erasures-20260609/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "ENT-b6d7b32922",
+     "name": "self-audit module for public summarizers"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "for evaluating AI summarizers in the [Self-Audit Module for Public Summarizers]"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "You can explore the standing metric specification and functional protocols for evaluating AI summarizers"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Rather than letting AI systems flatter themselves, these mechanisms anchor scores to externally-derivable ground truths—like the query string and cited sources—to measure provenance loss."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Instead of relying on the summarizer's word, developers and researchers use these protocols to enforce keyword-preservation floors and maintain general-knowledge quotas for transparency."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Provenance Erasure Rate (PER): Measures the percentage of named entities, dates, or quantitative facts present in the source text that were deleted in the summary."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 0.667,
+     "D": 0.222,
+     "PER": 0.5
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: \"Public summarizers that audit their own erasures\" refers to AI-based text reduction systems (such as AI Overviews, chatbots, and composition platforms) that evaluate their own output for censorship or data omission.",
+    "read": {
+     "by": "deep-dimension reader, batch 4",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "work",
     "target": {
@@ -499,12 +626,13 @@
   787
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "work",
   "target": {
    "ent": "ENT-b6d7b32922",
    "name": "self-audit module for public summarizers"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -514,8 +642,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "title",
@@ -523,8 +650,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "for evaluating AI summarizers in the [Self-Audit Module for Public Summarizers]",
-    "token": null
+    "evidence": "for evaluating AI summarizers in the [Self-Audit Module for Public Summarizers]"
    },
    {
     "atom": "date",
@@ -532,8 +658,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -541,8 +666,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -550,8 +674,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -559,8 +682,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "You can explore the standing metric specification and functional protocols for evaluating AI summarizers",
-    "token": null
+    "evidence": "You can explore the standing metric specification and functional protocols for evaluating AI summarizers"
    },
    {
     "atom": "corpus",
@@ -568,60 +690,66 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Rather than letting AI systems flatter themselves, these mechanisms anchor scores to externally-derivable ground truths—like the query string and cited sources—to measure provenance loss."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Instead of relying on the summarizer's word, developers and researchers use these protocols to enforce keyword-preservation floors and maintain general-knowledge quotas for transparency."
    },
    {
     "atom": "lineage",
     "dim": "D",
     "weight": 2,
     "kind": "role",
-    "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "present": true,
+    "evidence": "Provenance Erasure Rate (PER): Measures the percentage of named entities, dates, or quantitative facts present in the source text that were deleted in the summary."
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.667,
    "C": 0.667,
-   "D": 1.0,
-   "PER": 0.783
+   "D": 0.222,
+   "PER": 0.5
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: \"Public summarizers that audit their own erasures\" refers to AI-based text reduction systems (such as AI Overviews, chatbots, and composition platforms) that evaluate their own output for censorship or data omission.; scored object: expanded answer (raw paste; tail not proven whole)",
+  "basis": "reached: \"Public summarizers that audit their own erasures\" refers to AI-based text reduction systems (such as AI Overviews, chatbots, and composition platforms) that evaluate their own output for censorship or data omission.",
   "read": {
-   "by": "observation pass reader, batch 19",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 4",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/public-summarizers-that-audit-their-own-erasures-20260609/"

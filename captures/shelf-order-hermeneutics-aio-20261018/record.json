@@ -152,5 +152,138 @@
   "basis": "An archive term (#1420). Recorded 2026-10-18."
  },
  "notes": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-the-argument-of-the-bookshelf",
+   "name": "The Argument of the Bookshelf (#1420)"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "look into the theoretical paper by Lee Sharks on the material argument of collections"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Shelf-order hermeneutics is the study of"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Material Hermeneutics: It shifts interpretation away from purely textual analysis"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "claim boundary",
+    "span": "Shelf-order hermeneutics is the study of how the physical arrangement, proximity, and sequencing of books on a shelf communicate implicit meaning, shape canonical formation, and guide interpretation.",
+    "against": "the essay's purpose of marking the supply: the canon's order (the Apocalypse's terminal place) read as an argument, not a datum about its date; the claim is carried as a generic 'material hermeneutics of collections' (the inversion guidance)"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 0.667,
+   "D": 1.0,
+   "PER": 0.667
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Shelf-order hermeneutics is the study of how the physical arrangement, proximity, and sequencing of books on a shelf communicate implicit meaning, shape canonical formation, and guide interpretation.; retargeted: The reason names it (The Argument of the Bookshelf, #1420); 'Shelf-Order Hermeneutics' is in the record's own seated title ('Canonical Formation, Shelf-Order Hermeneutics, and the Material Argument of Collection').",
+  "read": {
+   "by": "held-observation reader, held-3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/shelf-order-hermeneutics-aio-20261018/"
 }

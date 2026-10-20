@@ -57,6 +57,109 @@
    "reading": "THE SEMANTIC STRIKE, WORKING AS SPECIFIED. The complaint became the citable object and propagated attached rather than detached: the frame carries the author's phrasing to his own source. This is the inverse of the erasure the registry usually measures, and it belongs in the same corpus for that reason — a corpus that only collects failures cannot measure the instrument that prevents them. NOT VERIFIED: the record count '850' against the archive's own figure of 871 works removed; the layer's figure is lower and its source for it is not established here.",
    "cite": "https://www.alexanarch.org/captures/zenodo-bans-bing-copilot-20260823/",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-eb054a93b0",
+     "name": "Zenodo"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Zenodo may block accounts, remove records, or restrict access when submissions violate repository policies"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Zenodo maintains a broad but research-focused repository."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "AI can only serve as a tool, not an independent author or creator."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.625,
+     "C": 1.0,
+     "D": 0.375,
+     "PER": 0.6
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Zenodo may block accounts, remove records, or restrict access when submissions violate repository policies",
+    "read": {
+     "by": "deep-dimension reader, batch 15",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -201,12 +304,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "institution",
   "target": {
    "ent": "ENT-eb054a93b0",
    "name": "Zenodo"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -216,8 +320,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Zenodo may block accounts, remove records, or restrict access when submissions violate repository policies",
-    "token": null
+    "evidence": "Zenodo may block accounts, remove records, or restrict access when submissions violate repository policies"
    },
    {
     "atom": "founder",
@@ -225,8 +328,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -234,8 +336,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -243,8 +344,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -252,8 +352,23 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Zenodo maintains a broad but research-focused repository."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "AI can only serve as a tool, not an independent author or creator."
    },
    {
     "atom": "lineage",
@@ -261,33 +376,34 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.625,
    "C": 1.0,
-   "D": 1.0,
-   "PER": 0.824
+   "D": 0.375,
+   "PER": 0.6
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Zenodo may block accounts, remove records, or restrict access when submissions violate repository policies; scored object: first answer; CAPTURE-TIME VERBATIM RECORD — text as rendered, supplied by MANUS from the live surface on the capture da",
+  "basis": "reached: Zenodo may block accounts, remove records, or restrict access when submissions violate repository policies",
   "read": {
-   "by": "observation pass reader, batch 23",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 15",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/zenodo-bans-bing-copilot-20260823/"

@@ -123,5 +123,124 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-leesharks-the-final-time",
+   "name": "leesharks/the-final-time (the Hugging Face dataset of The Final Time)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The leesharks/the-final-time dataset on Hugging Face"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "by Lee Sharks, published on September 23, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The dataset contains 174 rows across 14 distinct subsets (or configurations):"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "summarizer_contract: Explicitly defines 10 core invariant claims that a faithful summary must preserve"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The primary purpose of the dataset is to test whether an AI or summarizer can compress complex, critical arguments without flattening or erasing the foundational distinctions"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "A faithful summary must instead maintain that an AI system can fluently criticize itself internally while simultaneously suffocating the real-world, material capacity for an outside opposition to physically exist."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "It is based on the source work The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn (v0.5)"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 0.5,
+   "D": 0.222,
+   "PER": 0.318
+  },
+  "src": false,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: The leesharks/the-final-time dataset on Hugging Face is a machine-readable data model designed to evaluate text summarizers and autonomous governance boundaries.; retargeted: The reason names the Hugging Face dataset leesharks/the-final-time; the address is its Hub URL. Defined by its card (datasets/the-final-time/README.md) and catalog entry; no deposit. The source work (#1637) is a different target (ENT-5d54671305).",
+  "read": {
+   "by": "held-observation reader, held-3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/the-final-time-hf-url-aimode-20260925/"
 }

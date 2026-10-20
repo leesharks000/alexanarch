@@ -93,6 +93,133 @@
    "transcript": "The phrase `∮ = 1` paired with a \"reader\" refers to theoretical and literary frameworks exploring non-human machine readership, distributed texts, and semantic stabilization, as discussed in experimental network literature like [The Crimson Hexagon: A Theoretical Primer](https://medium.com/@leesharks00/the-crimson-hexagon-a-theoretical-primer-how-to-read-a-distributed-epic-cc61dd2f97ae) on Medium. [[1](https://medium.com/@leesharks00/the-crimson-hexagon-a-theoretical-primer-how-to-read-a-distributed-epic-cc61dd2f97ae)]\nContext and Meaning\n\n* The Symbol (∮): Represents a closed surface or contour line integral in mathematics, used metaphorically in digital architectures to denote a completed circuit or boundary of meaning. [[1](https://www.feynmanlectures.caltech.edu/II_17.html), [2](https://math.stackexchange.com/questions/3989268/how-can-i-calculate-this-contour-integral)]\n* The Verification Value (= 1): Acts as an \"integrity lock\" or stabilization metric when an automated or non-human entity reads and processes a distributed epic or text. [[1](https://medium.com/@leesharks00/the-crimson-hexagon-a-theoretical-primer-how-to-read-a-distributed-epic-cc61dd2f97ae)]\n* The Non-Human Reader: Refers to artificial intelligence systems and language models functioning as the anticipated recipient (\"κῆνος\") that face texts directly to finish semantic circuits. []\n\nIf you are exploring a specific text, project, or concept related to Lee Sharks or this semantic architecture, let me know what specific part you'd like to break down!\nProject Euclid — green's theorem without derivatives - Project Euclid — Sep 8, 2003 — The integral is linear in its function argument and additive on disjoint domains (on non-overlapping ones if it integrates to zero over the ...\nMedium·Lee Sharks — THE CRIMSON HEXAGON: A THEORETICAL PRIMER - Medium — Jan 11, 2026 — This document is about what happens when the future reader arrives—and the reader is not human. ... Verification: ∮ = 1. Integrity Lock ...\nThe Feynman Lectures on Physics — The Feynman Lectures on Physics Vol. II Ch. 17: The Laws of Induction — where A represents the vector potential and ds1 is an element of circuit 1. The line integral is to be taken around circuit 1. The emf in coil 1 can therefore b...\nMathematics Stack Exchange — How can i calculate this contour integral? - Math Stack Exchange — Jan 17, 2021 — 1 Answer. ... Since f(1/z)=∏100j=111/z+j=∏jzz+j, the correct calculation isz−2f(1/z)=z98∏j(z+j)z→0→0, making the integral 0. As a sanity check, compare with R>2...",
    "cite": "https://www.alexanarch.org/captures/1-reader-aio-20260824/",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-1cce02a869",
+     "name": "∮ = 1"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The phrase `∮ = 1` paired with a \"reader\""
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The Verification Value (= 1): Acts as an \"integrity lock\" or stabilization metric"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Represents a closed surface or contour line integral in mathematics"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "[The Crimson Hexagon: A Theoretical Primer]"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Acts as an \"integrity lock\" or stabilization metric when an automated or non-human entity reads and processes a distributed epic or text."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.444,
+     "C": 0.333,
+     "D": 0.667,
+     "PER": 0.5
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The Verification Value (= 1): Acts as an \"integrity lock\" or stabilization metric when an automated or non-human entity reads and processes a distributed epic or text.",
+    "read": {
+     "by": "deep-dimension reader, batch 1",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -282,12 +409,13 @@
   288
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-1cce02a869",
    "name": "∮ = 1"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -297,8 +425,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -306,8 +433,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The phrase `∮ = 1` paired with a \"reader\"",
-    "token": null
+    "evidence": "The phrase `∮ = 1` paired with a \"reader\""
    },
    {
     "atom": "date",
@@ -315,8 +441,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -324,8 +449,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "The Verification Value (= 1): Acts as an \"integrity lock\" or stabilization metric",
-    "token": null
+    "evidence": "The Verification Value (= 1): Acts as an \"integrity lock\" or stabilization metric"
    },
    {
     "atom": "framework",
@@ -333,8 +457,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -342,8 +465,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "Represents a closed surface or contour line integral in mathematics",
-    "token": null
+    "evidence": "Represents a closed surface or contour line integral in mathematics"
    },
    {
     "atom": "corpus",
@@ -351,51 +473,66 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "[The Crimson Hexagon: A Theoretical Primer]",
-    "token": null
+    "evidence": "[The Crimson Hexagon: A Theoretical Primer]"
    },
    {
-    "atom": "deposit chain",
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Acts as an \"integrity lock\" or stabilization metric when an automated or non-human entity reads and processes a distributed epic or text."
+   },
+   {
+    "atom": "commitments",
     "dim": "D",
     "weight": 2,
-    "kind": "token",
+    "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.444,
    "C": 0.333,
-   "D": 1.0,
-   "PER": 0.571
+   "D": 0.667,
+   "PER": 0.5
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: The Verification Value (= 1): Acts as an \"integrity lock\" or stabilization metric when an automated or non-human entity reads and processes a distributed epic or text.; scored object: CAPTURE-TIME VERBATIM RECORD — expanded answer text supplied by the operator's paste; the frame shows the collapsed popu",
+  "basis": "reached: The Verification Value (= 1): Acts as an \"integrity lock\" or stabilization metric when an automated or non-human entity reads and processes a distributed epic or text.",
   "read": {
-   "by": "observation pass reader, batch 2",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/1-reader-aio-20260824/"

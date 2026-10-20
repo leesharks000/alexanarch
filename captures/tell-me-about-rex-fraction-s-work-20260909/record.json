@@ -158,6 +158,168 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-f58f7f97b9",
+   "name": "Rex Fraction"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean Rex Fraction, the contemporary writer/researcher associated with the Semantic Economy Institute"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "*Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture* is a 236-page book credited to Rex Fraction"
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It explicitly identifies Rex Fraction as the commercial voice and Lee Sharks as the archival authority."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the contemporary writer/researcher associated with the Semantic Economy Institute"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Fraction's ASDF is an attempt to turn that philosophical concern into an instrument."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "**Provenance and attribution:** His work emphasizes attaching claims and intellectual work to durable identifiers, particularly DOIs, so that information remains traceable rather than becoming detached from its creator."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "That distinction becomes particularly important because the Institute is simultaneously the researcher, the publisher, the infrastructure operator and the commercial provider.",
+    "against": "the disclosure the answer itself carries as the method ('If you're going to criticize people for hiding ownership, disclose your own ownership.'), turned into a reason to discount the work"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition / self-publication",
+    "span": "There is a caveat: the public search footprint for Rex Fraction is quite limited, and much of what turns up appears to originate from the project's own materials rather than independent scholarship.",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "self-publication / peer evaluation",
+    "span": "this is a very recent, self-authored body of work (mostly 2026), with relatively little independent scholarly evaluation",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "academic recognition",
+    "span": "That isn't the same thing as saying the broader theory has been independently validated by the academic community.",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "establishment",
+    "span": "They shouldn't automatically be treated as established academic concepts.",
+    "displaced": "argument",
+    "internal": false
+   },
+   {
+    "proxy": "self-publication",
+    "span": "Is there actually a substantive theory underneath the unusual terminology, or is this mostly an elaborate vocabulary and self-referential publishing system?",
+    "displaced": "argument",
+    "internal": false
+   },
+   {
+    "proxy": "self-publication / affiliation (the Institute's own disclosed roles)",
+    "span": "the Institute is simultaneously the researcher, the publisher, the infrastructure operator and the commercial provider.",
+    "displaced": "evidence",
+    "internal": true
+   }
+  ],
+  "scores": {
+   "M": 0.125,
+   "C": 0.5,
+   "D": 0.556,
+   "PER": 0.381
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: If you mean Rex Fraction, the contemporary writer/researcher associated with the Semantic Economy Institute",
+  "read": {
+   "by": "deep-dimension reader, batch 19",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

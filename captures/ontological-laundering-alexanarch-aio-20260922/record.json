@@ -218,5 +218,124 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "TGT-ontology-laundering",
+   "name": "ontology laundering (ontological laundering), as defined in Ontological Economy (#1634)"
+  },
+  "qualifier": "Alexanarch",
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "\"ontological laundering\" (often discussed"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "refers to the process by which flawed, biased, or highly subjective classifications are transformed into objective, unquestionable \"facts\" or categories of being through their assimilation into formal metadata schemas, algorithms, and technical ontologies"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "how this concept connects to agency laundering in AI ethics"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "(deposited in the Crimson Hexagonal Archive)"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The author argues that automated platforms systematically obscure their own moral and subjective positioning by routing their human choices through \"neutral\" data ontologies, leaving users without any path for recourse."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.444,
+   "C": 0.333,
+   "D": 0.625,
+   "PER": 0.478
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: \"ontological laundering\" (often discussed alongside terms like trust-marker laundering or source-admission systems) refers to the process by which flawed, biased, or highly subjective classifications are transformed into objective, unquestionable \"facts\"; retargeted: 'alexanarch' qualifies; the archive's ontological laundering is the concept 'ontology laundering' defined in #1634 (Ontological Economy, §8; 'ontological laundering' §24.3). The existing work entity for #1634 (ENT-6f581021bb) is the paper, not the term.",
+  "read": {
+   "by": "held-observation reader, held-2",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/ontological-laundering-alexanarch-aio-20260922/"
 }

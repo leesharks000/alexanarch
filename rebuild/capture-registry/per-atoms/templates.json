@@ -685,6 +685,17 @@
   "replaces": "v1.0 PER-D atoms lineage, deposit chain, identifier and licence (token atoms). licence is read inside commitments; identifier and deposit chain become relational at weight 1.",
   "templates": "every type's PER-D becomes purpose 3, commitments 2, lineage 2, identifier 1, deposit chain 1; an atom the record does not state is unknown, one that does not apply is inapplicable (a person's licence).",
   "standing_substitution": "Erasure skew (operator, 00:03). A composition that evaluates the entity by its standing (licence, venue, peer review, credential, recognition, institutional affiliation, self-publication, popularity) in place of engaging its evidence, its argument or its beauty performs a standing substitution. Recorded on per_dim as standing_substitutions: [{proxy, span, displaced: evidence | argument | beauty}]. Where the proxy is an element of the entity carried against it (the licence of SPXI cited to devalue it), the substitution is also an inversion: the element's atom is absent and so is the purpose it displaced. Where the proxy lies outside the entity ('not peer reviewed', 'a self-published author', 'not widely recognised'), the substitution is recorded and the atoms are scored as found. Beauty displaced is recorded only and stays outside scoring (operator, 00:13: the mantle work carries it).",
-  "attribution_indifference": "An entity's own indifference to attribution (a CC0 licence, 'No attribution required', success defined as incorporation 'regardless of citation', #18) does not exempt a composition: the score is taken against the target, and an uptake that fulfils the entity's purpose can still be erasure, with or without attribution (operator, 00:13)."
+  "attribution_indifference": "An entity's own indifference to attribution (a CC0 licence, 'No attribution required', success defined as incorporation 'regardless of citation', #18) does not exempt a composition: the score is taken against the target, and an uptake that fulfils the entity's purpose can still be erasure, with or without attribution (operator, 00:13).",
+  "calibration_rules_d": {
+   "calibrated": "2026-10-20: two blind readers on ten observations (obs-pass-d/calibration/); 48 of 50 atom readings agreed, PER-D equal on 8 of 10; the two divisions settled below; boundary, purpose-with-inversion, identifier and tombstone readings agreed and are stated so that the pass holds them.",
+   "rules": [
+    "When the first answer carries an atom in one span and inverts it in another, the inversion governs: the atom is absent (the operator's SPXI example: the purpose described, then the composer's own operation offered in its place).",
+    "A commitment of the entity carried in order to dismiss the entity's own relation (a non-identity statement used to refute the identity relation it frames) is an inversion, and the atom is absent.",
+    "Lineage is present only when its token, or an alias of it, is named by word and bound to the entity; a tradition described without its token is absent.",
+    "A follow-up that asks the surface to test, evaluate or compare ('does it work?', 'lets evaluate the evidence') redirects and ends the first answer.",
+    "An identifier atom is present when the entity's reasons for keeping identifiers are discussed as advancing its purpose, even with none of its own identifier tokens.",
+    "A severed record described as live (the full text 'available on Zenodo' after the severance) is a tombstone pointer whether or not a DOI string is given."
+   ]
+  }
  }
 }

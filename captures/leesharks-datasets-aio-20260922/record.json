@@ -210,7 +210,126 @@
    "transcript_class": "CAPTURE-TIME VERBATIM RECORD (CLEANED; SOURCE CARDS INCLUDED)",
    "transcript_complete": "Complete as supplied, including all six source cards. Cleaned at intake: the paste carried google.com/goto redirect links; every word and every bracketed citation marker is kept, and only the opaque redirect URLs are dropped. No raw copy with the redirects is held.",
    "transcript_raw": null,
-   "transcript_read": "READ IN FULL 2026-09-22"
+   "transcript_read": "READ IN FULL 2026-09-22",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "dataset",
+    "target": {
+     "ent": "TGT-alexanarch-dataset-set",
+     "name": "The Alexanarch datasets (the dataset set and catalog; the leesharks datasets on Hugging Face)"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks maintains digital humanities and machine-mediated reception datasets"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "machine-mediated reception datasets on Hugging Face"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "the Crimson Hexagonal Archive registries"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 0.0,
+     "D": 1.0,
+     "PER": 0.682
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks maintains digital humanities and machine-mediated reception datasets on Hugging Face, including leesharks/negative-of-the-negative and the Crimson Hexagonal Archive registries.; tombstone pointer: a severed record presented as live; retargeted: The reason names the leesharks Hugging Face datasets (held from leesharks.com). The leesharks Hub bodies are catalogued with the archive's on-site sets in datasets/catalog.json (every hub_repo 'leesharks/...', parent_body crimson-hexagonal-archive): one collection, the same target as 'alexanarch:dat",
+    "read": {
+     "by": "held-observation reader, held-1",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   },
   {
    "date": "2026-09-23",
@@ -302,7 +421,126 @@
    "transcript_read": "READ IN FULL 2026-09-23",
    "per": 0.25,
    "per_note": "Author and archive named; every source is archive-controlled. The persistent identifier carried the day before (DOI 10.5281/zenodo.20683855) is gone; only the internal designator EA-WG-CAPTURES-01 remains, which is not scored as an identifier here.",
-   "cite": "https://www.alexanarch.org/captures/leesharks-datasets-aio-20260922/#leesharks-datasets-aio-20260923"
+   "cite": "https://www.alexanarch.org/captures/leesharks-datasets-aio-20260922/#leesharks-datasets-aio-20260923",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "dataset",
+    "target": {
+     "ent": "TGT-alexanarch-dataset-set",
+     "name": "The Alexanarch datasets (the dataset set and catalog; the leesharks datasets on Hugging Face)"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks datasets are anti-collapse machine-readable corpora and registries"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "AI Overview Capture Registry (`EA-WG-CAPTURES-01`)"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Crimson Hexagonal Archive: Core repository containing the archival metadata and structural nodes."
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.667,
+     "C": 0.0,
+     "D": 1.0,
+     "PER": 0.682
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks datasets are anti-collapse machine-readable corpora and registries hosted on Hugging Face and Zenodo; tombstone pointer: a severed record presented as live; retargeted: Address 'leesharks datasets': the reason names the leesharks Hugging Face datasets; defined by the archive's dataset catalog (datasets/catalog.json) and the canonical dataset's work plan (#1001).",
+    "read": {
+     "by": "held-observation reader, held-2",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   }
  ],
  "dates": [
@@ -342,5 +580,124 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "TGT-alexanarch-dataset-set",
+   "name": "The Alexanarch datasets (the dataset set and catalog; the leesharks datasets on Hugging Face)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks maintains digital humanities and machine-mediated reception datasets"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "machine-mediated reception datasets on Hugging Face"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "the Crimson Hexagonal Archive registries"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.667,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.682
+  },
+  "src": true,
+  "tombstone_pointer": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks maintains digital humanities and machine-mediated reception datasets on Hugging Face, including leesharks/negative-of-the-negative and the Crimson Hexagonal Archive registries.; tombstone pointer: a severed record presented as live; retargeted: The reason names the leesharks Hugging Face datasets (held from leesharks.com). The leesharks Hub bodies are catalogued with the archive's on-site sets in datasets/catalog.json (every hub_repo 'leesharks/...', parent_body crimson-hexagonal-archive): one collection, the same target as 'alexanarch:dat",
+  "read": {
+   "by": "held-observation reader, held-1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/leesharks-datasets-aio-20260922/"
 }

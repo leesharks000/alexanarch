@@ -150,5 +150,135 @@
  },
  "match": "BROAD MATCH",
  "match_note": null,
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-the-echo-and-the-stamp-peri-hypsous",
+   "name": "The Echo and the Stamp: Peri Hypsous as a Theory of Transmissional Inscription (#1458)"
+  },
+  "qualifier": "Alexanarch",
+  "reached": "proximal_substitute",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "That is where the “future reader” argument enters."
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Alexanarch material treats Longinus, On the Sublime 10.2 as part of the transmission history of Sappho’s Fragment 31."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "[QUERENT] i meant a comprehensive treatment of materials on alexanarch relating to longinus, as initially requested",
+   "reached": "proximal_substitute",
+   "scores": {
+    "M": 1.0,
+    "C": 1.0,
+    "D": 1.0,
+    "PER": 1.0
+   },
+   "inversions": [],
+   "standing_substitutions": []
+  },
+  "basis": "reached: The Alexanarch material treats Longinus, On the Sublime 10.2 as part of the transmission history of Sappho’s Fragment 31.; beneath the gate: PER 0.818; retargeted: Address 'longinus arguments on https://www.alexanarch.org/': the archive scopes the query; the archive's argument about Longinus is #1458 (Peri Hypsous as a Theory of Transmissional Inscription); its continuations #1476, #1478, #1484 are noted on the set.",
+  "read": {
+   "by": "held-observation reader, held-3",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/longinus-arguments-alexanarch-chatgpt-20261003/"
 }

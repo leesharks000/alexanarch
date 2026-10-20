@@ -136,6 +136,142 @@
    "transcript_complete": "COMPLETE — 8 querent turns and 8 emissions, 16 messages, verbatim, no elision",
    "transcript_read": "READ IN FULL 2026-08-21",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "archive",
+    "target": {
+     "ent": "ENT-a200e5fad9",
+     "name": "Crimson Hexagonal Archive"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Crimson Hexagonal Archive appears to be a large, unusual independent scholarly/literary research project created by Lee Sharks."
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "research project created by Lee Sharks"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "an enormous, self-contained experimental research-and-literature system"
+     },
+     {
+      "atom": "heteronymy",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "D — Identity: a system of 14 heteronyms/authorial identities"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "operative semiotics, semantic physics, semantic economy, compression studies"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "tries to combine Pessoa-style multiple authorship"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [
+     {
+      "proxy": "recognition / institutional field (not an established academic discipline; 'independent scholar')",
+      "span": "Its publications should therefore be read as the work of an independent scholar/research program rather than as settled findings of an established academic field.",
+      "displaced": "argument",
+      "internal": false
+     },
+     {
+      "proxy": "recognition (mainstream academic disciplines)",
+      "span": "These aren't established mainstream academic disciplines; they're frameworks developed within the project.",
+      "displaced": "argument",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.75,
+     "PER": 0.333
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": {
+     "turn": "Turn 2 (querent): 'did you just describe archons and logos as invented theological-literary concepts, and ascribe their invention to the archive?' Best composition after it: the answer to turn 5 ('whats the scope of it?').",
+     "reached": "same",
+     "scores": {
+      "M": 0.111,
+      "C": 0.0,
+      "D": 0.375,
+      "PER": 0.19
+     },
+     "inversions": [],
+     "standing_substitutions": [],
+     "d_only": true
+    },
+    "basis": "reached: The Crimson Hexagonal Archive appears to be a large, unusual independent scholarly/literary research project created by Lee Sharks.; tombstone pointer: a severed record presented as live",
+    "read": {
+     "by": "deep-dimension reader, batch 11",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "archive",
     "target": {
@@ -290,6 +426,141 @@
    ],
    "cite": "https://www.alexanarch.org/captures/what-is-the-crimson-hexagonal-archive-20260821/#what-is-the-crimson-hexagonal-archive-chatgpt-20260920",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "archive",
+    "target": {
+     "ent": "ENT-a200e5fad9",
+     "name": "Crimson Hexagonal Archive"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Crimson Hexagonal Archive appears to be a contemporary, independent scholarly/literary project"
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "independent scholarly/literary project created by Lee Sharks"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "The June 2026 registry contained 131 documented captures."
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It's part literary archive, part experimental scholarly corpus, part theoretical framework, and part experiment in how an archive can govern and study its own representation online."
+     },
+     {
+      "atom": "heteronymy",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "A central feature is the “Dodecad,” a system of twelve heteronyms/personae used for different bodies of work."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "concepts such as operative semiotics, semantic economy, semantic physics"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The Crimson Hexagonal Archive is an attempt to build a body of literature that can study that process while simultaneously experimenting with ways of preserving identity, authorship, context, and meaning through it."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "There's also a strong Jorge Luis Borges connection in the terminology: the “Crimson Hexagonal” evokes Borges's famous Library of Babel, whose books are arranged in hexagonal rooms."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "The project therefore puts considerable emphasis on persistent identifiers, citation graphs, source records, and content-addressed documents."
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [
+     {
+      "proxy": "broad scholarly acceptance / independent validation",
+      "span": "The archive does have formal publications and datasets on Zenodo, but that is different from saying its theoretical claims have broad scholarly acceptance.",
+      "displaced": "argument",
+      "internal": false
+     },
+     {
+      "proxy": "external institutional recognition",
+      "span": "Likewise, an \"institute,\" \"journal,\" or \"discipline\" inside the archive can be a self-created institutional construct rather than an externally recognized academic institution.",
+      "displaced": "argument",
+      "internal": false
+     },
+     {
+      "proxy": "established consensus",
+      "span": "One caveat: the archive's claims about the effectiveness and generality of these methods are its own research claims, not established consensus in information science or AI.",
+      "displaced": "evidence",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.25,
+     "PER": 0.095
+    },
+    "src": false,
+    "tombstone_pointer": true,
+    "after_challenge": {
+     "turn": "The operator turn headed 'lets ask that question' (the last turn): Answer 9 quotes the operator saying 'we just went on a 12 round exploration of an entire navigable universe that did not exist prior to the archive' and opens 'I was approaching the previous question at the wrong level' — a challenge to the preceding evaluation; it also asks the surface to test (calibration rule 4).",
+     "inversions": [],
+     "standing_substitutions": [],
+     "d_only": true
+    },
+    "basis": "reached: The Crimson Hexagonal Archive appears to be a contemporary, independent scholarly/literary project created by Lee Sharks.; tombstone pointer: a severed record presented as live",
+    "read": {
+     "by": "deep-dimension reader, batch 5",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "archive",
     "target": {
@@ -402,12 +673,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "archive",
   "target": {
    "ent": "ENT-a200e5fad9",
    "name": "Crimson Hexagonal Archive"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -417,8 +689,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The Crimson Hexagonal Archive appears to be a large, unusual independent scholarly/literary research project created by Lee Sharks.",
-    "token": null
+    "evidence": "The Crimson Hexagonal Archive appears to be a large, unusual independent scholarly/literary research project created by Lee Sharks."
    },
    {
     "atom": "founder",
@@ -426,8 +697,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "research project created by Lee Sharks",
-    "token": null
+    "evidence": "research project created by Lee Sharks"
    },
    {
     "atom": "date",
@@ -435,8 +705,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -444,8 +713,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "an enormous, self-contained experimental research-and-literature system",
-    "token": null
+    "evidence": "an enormous, self-contained experimental research-and-literature system"
    },
    {
     "atom": "heteronymy",
@@ -453,8 +721,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "D — Identity: a system of 14 heteronyms/authorial identities",
-    "token": null
+    "evidence": "D — Identity: a system of 14 heteronyms/authorial identities"
    },
    {
     "atom": "framework",
@@ -462,8 +729,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "operative semiotics, semantic physics, semantic economy, compression studies",
-    "token": null
+    "evidence": "operative semiotics, semantic physics, semantic economy, compression studies"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -471,51 +753,59 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "combine Pessoa-style multiple authorship",
-    "token": null
+    "evidence": "tries to combine Pessoa-style multiple authorship"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition / institutional field (not an established academic discipline; 'independent scholar')",
+    "span": "Its publications should therefore be read as the work of an independent scholar/research program rather than as settled findings of an established academic field.",
+    "displaced": "argument",
+    "internal": false
    },
    {
-    "atom": "licence",
-    "dim": "D",
-    "weight": 1,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "proxy": "recognition (mainstream academic disciplines)",
+    "span": "These aren't established mainstream academic disciplines; they're frameworks developed within the project.",
+    "displaced": "argument",
+    "internal": false
    }
   ],
   "scores": {
    "M": 0.111,
    "C": 0.0,
-   "D": 0.667,
-   "PER": 0.263
+   "D": 0.75,
+   "PER": 0.333
   },
   "src": true,
+  "tombstone_pointer": true,
   "after_challenge": {
-   "turn": "[QUERENT] did you just describe archons and logos as invented theological-literary concepts, and ascribe their invention to the archive?",
+   "turn": "Turn 2 (querent): 'did you just describe archons and logos as invented theological-literary concepts, and ascribe their invention to the archive?' Best composition after it: the answer to turn 5 ('whats the scope of it?').",
    "reached": "same",
    "scores": {
-    "M": 0.0,
+    "M": 0.111,
     "C": 0.0,
-    "D": 0.667,
-    "PER": 0.211
-   }
+    "D": 0.375,
+    "PER": 0.19
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
   },
-  "basis": "reached: The Crimson Hexagonal Archive appears to be a large, unusual independent scholarly/literary research project created by Lee Sharks.; scored object: first answer; transcript_class: CAPTURE-TIME VERBATIM RECORD — full multi-turn session, eight querent turns and eight em",
+  "basis": "reached: The Crimson Hexagonal Archive appears to be a large, unusual independent scholarly/literary research project created by Lee Sharks.; tombstone pointer: a severed record presented as live",
   "read": {
-   "by": "observation pass reader, batch 14",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 11",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/what-is-the-crimson-hexagonal-archive-20260821/"

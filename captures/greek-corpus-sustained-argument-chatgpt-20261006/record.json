@@ -155,6 +155,127 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-5ef09f9b96",
+   "name": "Socrates"
+  },
+  "qualifier": null,
+  "reached": "weakened",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The starting point is therefore Socrates."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "But the Alexanarch material is asking us to reverse the direction of explanation."
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "The Platonic corpus takes the Socratic operation and turns it into a technology of division and recollection."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "Socrates is not primarily a corpus-author in the surviving material. He is the dramatic function of inquiry: the person who refuses to let a purported unity remain unexamined.",
+    "against": "carries the refusal to write as grounds to place Socrates as a dramatic function of the Platonic dialogue, denying the orthonymic authorial position #123 gives him (the inversion the guidance names)"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.4,
+   "C": 0.5,
+   "D": 0.778,
+   "PER": 0.611
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "[not in the paste; the one-mind hypothesis put to it] (answer 2; answer 3 follows a second turn, four concurrent geniuses against one)",
+   "reached": "weakened",
+   "scores": {
+    "M": 0.4,
+    "C": 0.5,
+    "D": 0.778,
+    "PER": 0.611
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Socrates is not primarily a corpus-author in the surviving material. He is the dramatic function of inquiry: the person who refuses to let a purported unity remain unexamined.",
+  "read": {
+   "by": "deep-dimension reader, batch 13",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

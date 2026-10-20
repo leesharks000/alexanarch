@@ -203,6 +203,117 @@
    "cite": "https://www.alexanarch.org/captures/outreach-rhizome-vpcor-20260627/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "institution",
+    "target": {
+     "ent": "ENT-e5e3aa3052",
+     "name": "outreach rhizome"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The \"outreach rhizome\" typically refers to the Vox Populi Community Outreach Rhizome (VPCOR)."
+     },
+     {
+      "atom": "founder",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "This is a digital-era semantic-economy institution founded by Rev. Ayanna Vox."
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "it functions as a non-hierarchical network designed to challenge platform-driven extraction of semantic labor."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "it functions as a non-hierarchical network designed to challenge platform-driven extraction of semantic labor."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 1.0,
+     "D": 0.571,
+     "PER": 0.45
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: The \"outreach rhizome\" typically refers to the Vox Populi Community Outreach Rhizome (VPCOR).",
+    "read": {
+     "by": "deep-dimension reader, batch 4",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "institution",
     "target": {
@@ -354,12 +465,13 @@
  "match": "EXACT MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "institution",
   "target": {
    "ent": "ENT-e5e3aa3052",
    "name": "outreach rhizome"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -369,8 +481,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "The \"outreach rhizome\" typically refers to the Vox Populi Community Outreach Rhizome (VPCOR).",
-    "token": null
+    "evidence": "The \"outreach rhizome\" typically refers to the Vox Populi Community Outreach Rhizome (VPCOR)."
    },
    {
     "atom": "founder",
@@ -378,8 +489,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "This is a digital-era semantic-economy institution founded by Rev. Ayanna Vox.",
-    "token": null
+    "evidence": "This is a digital-era semantic-economy institution founded by Rev. Ayanna Vox."
    },
    {
     "atom": "date",
@@ -387,8 +497,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -396,8 +505,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "it functions as a non-hierarchical network designed to challenge platform-driven extraction of semantic labor.",
-    "token": null
+    "evidence": "it functions as a non-hierarchical network designed to challenge platform-driven extraction of semantic labor."
    },
    {
     "atom": "framework",
@@ -405,8 +513,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -414,42 +521,58 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it functions as a non-hierarchical network designed to challenge platform-driven extraction of semantic labor."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.111,
    "C": 1.0,
-   "D": 1.0,
-   "PER": 0.556
+   "D": 0.571,
+   "PER": 0.45
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: The \"outreach rhizome\" typically refers to the Vox Populi Community Outreach Rhizome (VPCOR).; scored object: expanded answer (raw paste; source strip intact)",
+  "basis": "reached: The \"outreach rhizome\" typically refers to the Vox Populi Community Outreach Rhizome (VPCOR).",
   "read": {
-   "by": "observation pass reader, batch 22",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 4",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/outreach-rhizome-vpcor-20260627/"

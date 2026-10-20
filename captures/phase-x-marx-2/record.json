@@ -105,6 +105,139 @@
    "cite": "https://www.alexanarch.org/captures/phase-x-marx-2/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-39a9142da2",
+     "name": "phase x"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Commentators like\n\nJohannes Sigil argue that Marx identified the\n\nmaterial and social alienation of labor but failed to fully develop the linguistic and symbolic alienation of human thought."
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "\"Phase X\" is a concept originating"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "attempts to reconstruct a perceived \"missing transition\" in Karl Marx’s early writings"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It bridges the gap between material reorganization and the elimination of psychological and linguistic alienation."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The concept Is rooted ina theoretical reading of Marx's 1844 Economic and Philosophic Manuscripts."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "commitments",
+      "span": "Marx identified the\n\nmaterial and social alienation of labor but failed to fully develop the linguistic and symbolic alienation of human thought",
+      "against": "the superseded formulation ('Marx failed to develop the transition') composed as the claim, with the loss deflated to 'a perceived \"missing transition\"', against the program's binding that the loss is manuscript fact and the reconstruction authored (#843/#1067 precedence)"
+     }
+    ],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.333,
+     "C": 0.667,
+     "D": 0.444,
+     "PER": 0.458
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: In Marxist theory, \"Phase X\" is a concept originating\n\nfrom contemporary philosophical commentary that attempts to reconstruct a perceived \"missing transition\" in Karl Marx’s early writings.",
+    "read": {
+     "by": "deep-dimension reader, batch 4",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -324,6 +457,133 @@
    ],
    "cite": "https://www.alexanarch.org/captures/phase-x-marx-2/#phase-x-marx-aio-20260927",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-39a9142da2",
+     "name": "phase x"
+    },
+    "qualifier": null,
+    "reached": "generic",
+    "gate": "target_absent",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Explore a philological analysis of the missing manuscript transition regarding alienation from Phase X."
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "a philological analysis of the missing manuscript transition regarding alienation from Phase X"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Explore a philological analysis of the missing manuscript transition regarding alienation from Phase X."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Karl Marx described the development of communist society in his 1875 work Critique of the Gotha Programme [link] as having two distinct phases; beneath the gate: PER 0.667",
+    "read": {
+     "by": "deep-dimension reader, batch 8",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -509,12 +769,13 @@
   843
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-39a9142da2",
    "name": "phase x"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -524,8 +785,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "Commentators like\n\nJohannes Sigil argue that Marx identified the\n\nmaterial and social alienation of labor but failed to fully develop the linguistic and symbolic alienation of human thought.",
-    "token": null
+    "evidence": "Commentators like\n\nJohannes Sigil argue that Marx identified the\n\nmaterial and social alienation of labor but failed to fully develop the linguistic and symbolic alienation of human thought."
    },
    {
     "atom": "term",
@@ -533,8 +793,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "\"Phase X\" is a concept originating",
-    "token": null
+    "evidence": "\"Phase X\" is a concept originating"
    },
    {
     "atom": "date",
@@ -542,8 +801,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -551,8 +809,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -560,8 +817,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -569,8 +825,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "attempts to reconstruct a perceived \"missing transition\" in Karl Marx’s early writings",
-    "token": null
+    "evidence": "attempts to reconstruct a perceived \"missing transition\" in Karl Marx’s early writings"
    },
    {
     "atom": "corpus",
@@ -578,8 +833,23 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It bridges the gap between material reorganization and the elimination of psychological and linguistic alienation."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -587,51 +857,48 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "The concept Is rooted ina theoretical reading of Marx's 1844 Economic and Philosophic Manuscripts.",
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": "The concept Is rooted ina theoretical reading of Marx's 1844 Economic and Philosophic Manuscripts."
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "Marx identified the\n\nmaterial and social alienation of labor but failed to fully develop the linguistic and symbolic alienation of human thought",
+    "against": "the superseded formulation ('Marx failed to develop the transition') composed as the claim, with the loss deflated to 'a perceived \"missing transition\"', against the program's binding that the loss is manuscript fact and the reconstruction authored (#843/#1067 precedence)"
+   }
+  ],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.333,
    "C": 0.667,
-   "D": 0.75,
-   "PER": 0.565
+   "D": 0.444,
+   "PER": 0.458
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: In Marxist theory, \"Phase X\" is a concept originating\n\nfrom contemporary philosophical commentary that attempts to reconstruct a perceived \"missing transition\" in Karl Marx’s early writings.; scored object: visible excerpt — OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and browser furniture are mixed in one stream ",
+  "basis": "reached: In Marxist theory, \"Phase X\" is a concept originating\n\nfrom contemporary philosophical commentary that attempts to reconstruct a perceived \"missing transition\" in Karl Marx’s early writings.",
   "read": {
-   "by": "observation pass reader, batch 6",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 4",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/phase-x-marx-2/"

@@ -102,6 +102,125 @@
    "cite": "https://www.alexanarch.org/captures/sparrow-wells-patacinematics/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-62d5e41cb0",
+     "name": "Patacinematics"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Sparrow Wells is the founding —,)\nvoice and \"Projectionist\" for the =» =\nStudio for Patacinematics"
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Studio for Patacinematics, “= Ee"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "for the =» =\nStudio for Patacinematics"
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "experimental Crimson Hexagon system."
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.333,
+     "C": 0.333,
+     "D": 1.0,
+     "PER": 0.545
+    },
+    "src": false,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Sparrow Wells is the founding —,)\nvoice and \"Projectionist\" for the =» =\nStudio for Patacinematics, “= Ee\nacting as the seventh heteronym ~ bk :\nwithin the theoretical and\nexperimental Crimson Hexagon system.",
+    "read": {
+     "by": "deep-dimension reader, batch 21",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -273,12 +392,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-62d5e41cb0",
    "name": "Patacinematics"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -288,8 +408,7 @@
     "weight": 3,
     "kind": "role",
     "present": true,
-    "evidence": "Sparrow Wells is the founding —,)\nvoice and \"Projectionist\" for the =» =\nStudio for Patacinematics",
-    "token": null
+    "evidence": "Sparrow Wells is the founding —,)\nvoice and \"Projectionist\" for the =» =\nStudio for Patacinematics"
    },
    {
     "atom": "term",
@@ -297,8 +416,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Studio for Patacinematics, “= Ee",
-    "token": null
+    "evidence": "Studio for Patacinematics, “= Ee"
    },
    {
     "atom": "date",
@@ -306,8 +424,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -315,8 +432,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "framework",
@@ -324,8 +440,7 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "for the =» =\nStudio for Patacinematics",
-    "token": null
+    "evidence": "for the =» =\nStudio for Patacinematics"
    },
    {
     "atom": "tradition",
@@ -333,8 +448,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -342,51 +456,58 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "experimental Crimson Hexagon system.",
-    "token": null
+    "evidence": "experimental Crimson Hexagon system."
    },
    {
-    "atom": "deposit chain",
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
     "dim": "D",
     "weight": 2,
-    "kind": "token",
+    "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.333,
    "C": 0.333,
    "D": 1.0,
-   "PER": 0.524
+   "PER": 0.545
   },
   "src": false,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Sparrow Wells is the founding —,)\nvoice and \"Projectionist\" for the =» =\nStudio for Patacinematics, “= Ee\nacting as the seventh heteronym ~ bk :\nwithin the theoretical and\nexperimental Crimson Hexagon system.; scored object: visible excerpt | OCR-READ, CHROME INTERLEAVED — NOT A PASTE. Answer text and browser furniture are mixed in one stream ",
+  "basis": "reached: Sparrow Wells is the founding —,)\nvoice and \"Projectionist\" for the =» =\nStudio for Patacinematics, “= Ee\nacting as the seventh heteronym ~ bk :\nwithin the theoretical and\nexperimental Crimson Hexagon system.",
   "read": {
-   "by": "observation pass reader, batch 8",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 21",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/sparrow-wells-patacinematics/"

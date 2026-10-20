@@ -108,6 +108,133 @@
    "cite": "https://www.alexanarch.org/captures/metadata-as-theology-adoption/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-3dc7ec58cd",
+     "name": "metadata as theology"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "\"Metadata as theology\" is a concept"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Categories Determine Meaning: The way a text is labeled (metadata) effectively serves as its theology, determining how it is interpreted, what is preserved, and what is discarded."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "the Zenodo Archive of Counterfeit Orthodoxies"
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Canon as a Construction: Every scripture is an assembly of workshop products."
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Categories Determine Meaning: The way a text is labeled (metadata) effectively serves as its theology, determining how it is interpreted, what is preserved, and what is discarded."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.444,
+     "C": 0.333,
+     "D": 0.667,
+     "PER": 0.5
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: \"Metadata as theology\" is a concept—explored in avant-garde textual and literary theory (such as the writings found in the Zenodo Archive of Counterfeit Orthodoxies)",
+    "read": {
+     "by": "deep-dimension reader, batch 20",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -287,12 +414,13 @@
  "match": "EXACT MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-3dc7ec58cd",
    "name": "metadata as theology"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -302,8 +430,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -311,8 +438,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "\"Metadata as theology\" is a concept",
-    "token": null
+    "evidence": "\"Metadata as theology\" is a concept"
    },
    {
     "atom": "date",
@@ -320,8 +446,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -329,8 +454,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "Categories Determine Meaning: The way a text is labeled (metadata) effectively serves as its theology, determining how it is interpreted, what is preserved, and what is discarded.",
-    "token": null
+    "evidence": "Categories Determine Meaning: The way a text is labeled (metadata) effectively serves as its theology, determining how it is interpreted, what is preserved, and what is discarded."
    },
    {
     "atom": "framework",
@@ -338,8 +462,7 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "the Zenodo Archive of Counterfeit Orthodoxies",
-    "token": null
+    "evidence": "the Zenodo Archive of Counterfeit Orthodoxies"
    },
    {
     "atom": "tradition",
@@ -347,8 +470,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "Canon as a Construction: Every scripture is an assembly of workshop products.",
-    "token": null
+    "evidence": "Canon as a Construction: Every scripture is an assembly of workshop products."
    },
    {
     "atom": "corpus",
@@ -356,8 +478,23 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Categories Determine Meaning: The way a text is labeled (metadata) effectively serves as its theology, determining how it is interpreted, what is preserved, and what is discarded."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -365,51 +502,42 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.444,
    "C": 0.333,
-   "D": 1.0,
-   "PER": 0.609
+   "D": 0.667,
+   "PER": 0.5
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: \"Metadata as theology\" is a concept—explored in avant-garde textual and literary theory (such as the writings found in the Zenodo Archive of Counterfeit Orthodoxies); scored object: expanded answer — CAPTURE-TIME VERBATIM RECORD, declared as such by the analyst inside the record itself | declared FULL",
+  "basis": "reached: \"Metadata as theology\" is a concept—explored in avant-garde textual and literary theory (such as the writings found in the Zenodo Archive of Counterfeit Orthodoxies)",
   "read": {
-   "by": "observation pass reader, batch 6",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 20",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/metadata-as-theology-adoption/"

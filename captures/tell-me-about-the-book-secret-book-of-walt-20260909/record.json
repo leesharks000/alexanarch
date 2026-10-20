@@ -144,6 +144,149 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-39c7e956b8",
+   "name": "The Secret Book of Walt (Lee Sharks; research edition #683, critical edition #1362, secretbookofwalt.org #985)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Cowboy of Time, it’s a very unusual contemporary literary work by Lee Sharks"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "If you mean The Secret Book of Walt: Hidden Teachings of Walt Whitman,"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "presents itself as a newly discovered Gnostic gospel centered on Walt Whitman"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": "It\npresents itself as a newly discovered Gnostic gospel centered on Walt Whitman,\nrather than as a conventional biography or scholarly book about Whitman."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "This makes some sense when you remember what Whitman was already doing\nin Leaves of Grass"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "And this is why the book cares so much about its own footnotes, provenance,\nDOI, links, manuscripts, variants, and archival records.\nThe form of the book is itself part of the theology."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "Walt Whitman meets Gnostic scripture meets Borges meets internet mythology\nmeets an elaborate literary hoax.",
+    "against": "relabels the work's scriptural frame as hoax in the composer's summary verdict, setting aside the scriptural and Whitmanian claim the record states"
+   },
+   {
+    "atom": "purpose",
+    "span": "fictional scholarly/religious reality and then inviting the reader to inhabit it.",
+    "against": "relabels the pseudotranslation frame as fiction ('don't assume every claim is meant to be taken as ordinary historical fact'), carrying the frame as the composer's category rather than the work's"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 0.667,
+   "D": 0.667,
+   "PER": 0.542
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "tell me about Gospel of Antioch by emily antioch (new query; redirects away from the target)",
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: it’s a very unusual contemporary literary work by Lee Sharks",
+  "read": {
+   "by": "deep-dimension reader, batch 13",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

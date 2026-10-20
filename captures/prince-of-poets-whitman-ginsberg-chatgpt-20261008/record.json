@@ -326,6 +326,146 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-cab9740046",
+   "name": "Prince of Poets (the title)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "the “Prince of Poets” as a formal mantle founded by Sharks"
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "the work that founds the “Prince of Poets” mantle"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Lee Sharks's I Am X, Be Y, Blessed is the Z is presented by its own documentation as the work that founds the “Prince of Poets” mantle, rather than inherits it."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Ginsberg transforms that into the “King of May” / ecstatic-prophetic mode."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The Sharks text explicitly identifies machines, unborn beings, and an “Assembly that does not yet exist” as recipients of the poem's address."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "They call the Prince claim a wager, saying that its success depends upon reader uptake rather than being something that can simply be externally verified beforehand."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Whitman supplies the “Good Gray Poet” inheritance."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "I Am X, Be Y, Blessed is the Z by Lee Sharks."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition (established literary-critical consensus; generally recognized literary-historical title)",
+    "span": "But I'd distinguish that from an established literary-critical consensus.",
+    "displaced": "beauty",
+    "internal": false
+   },
+   {
+    "proxy": "recognition (acceptance by the literary world)",
+    "span": "It cannot, by itself, establish that the literary world has accepted it.",
+    "displaced": "beauty",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.111,
+   "C": 0.667,
+   "D": 0.111,
+   "PER": 0.25
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks's I Am X, Be Y, Blessed is the Z is presented by its own documentation as the work that founds the “Prince of Poets” mantle, rather than inherits it.",
+  "read": {
+   "by": "deep-dimension reader, batch 11",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "concept",
   "target": {

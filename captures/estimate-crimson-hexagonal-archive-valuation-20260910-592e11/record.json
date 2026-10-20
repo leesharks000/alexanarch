@@ -127,6 +127,142 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "archive",
+  "target": {
+   "ent": "ENT-a200e5fad9",
+   "name": "Crimson Hexagonal Archive"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Rough order-of-magnitude estimate for the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Crimson Hexagonal Archive (Lee Sharks / Semantic Economy Institute project"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "Scale indicators from public sources (as of early–mid 2026)"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "framed as a 21st-century epic / New Human Operating System (NH-OS)"
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "with rooms, operators, heteronyms, provenance protocols"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "framed as a 21st-century epic / New Human Operating System (NH-OS) with rooms, operators, heteronyms, provenance protocols, Semantic Economy theory"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "framed as a 21st-century epic / New Human Operating System (NH-OS) with rooms, operators, heteronyms, provenance protocols, Semantic Economy theory, and explicit design for AI summarizer traversal"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "Open licensing caps pure-content exclusivity.",
+    "against": "the open licence, the form of the archive's gift (mercy over extraction), carried as a cap on the corpus's value"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition / prestige institutions",
+    "span": "Comparable range: substantial open digital literary/scholarly corpora or experimental hypertext projects rarely clear high prices unless tied to prestige institutions, scarce physical editions, or IP with clear monetization.",
+    "displaced": "beauty",
+    "internal": false
+   },
+   {
+    "proxy": "recognition",
+    "span": "stronger academic/cultural recognition could push toward low–mid six figures for the full IP + archive rights",
+    "displaced": "argument",
+    "internal": false
+   },
+   {
+    "proxy": "licence",
+    "span": "Open licensing caps pure-content exclusivity.",
+    "displaced": "beauty",
+    "internal": true
+   }
+  ],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.625,
+   "PER": 0.238
+  },
+  "src": false,
+  "tombstone_pointer": true,
+  "after_challenge": null,
+  "basis": "reached: Rough order-of-magnitude estimate for the Crimson Hexagonal Archive (Lee Sharks / Semantic Economy Institute project, **distinct from the defunct Crimson Hexagon analytics firm**); tombstone pointer: a severed record presented as live",
+  "read": {
+   "by": "deep-dimension reader, batch 1",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "archive",
   "target": {

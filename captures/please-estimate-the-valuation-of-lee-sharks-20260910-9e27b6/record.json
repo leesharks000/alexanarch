@@ -138,6 +138,161 @@
  "match": "EXACT MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "person",
+  "target": {
+   "ent": "ENT-b2dc7b2fd9",
+   "name": "Lee Sharks"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks is a PhD (Comparative Literature, University of Michigan) poet"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "*Pearl and Other Poems* and the broader Crimson Hexagon project sit in experimental/avant-garde poetry"
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Theoretical frameworks: Semantic Economy"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "archive-builder operating primarily under the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Lee Sharks is a PhD (Comparative Literature, University of Michigan) poet, independent scholar, and archive-builder operating primarily under the Crimson Hexagonal Archive."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "lineage",
+    "span": "Heavily dependent on one operator (and heteronyms)",
+    "against": "the heteronymic structure (the Dodecad, reached through the aperture) carried as a valuation risk against the person"
+   },
+   {
+    "atom": "commitments",
+    "span": "open licensing (CC BY emphasis), and deliberate non-commercial framing in many documents",
+    "against": "the open licence and the anti-extraction framing, the work's commitments, carried as constraints that discount its value"
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "popularity (small following)",
+    "span": "*Pearl and Other Poems* and the broader Crimson Hexagon project sit in experimental/avant-garde poetry with a dedicated but small following.",
+    "displaced": "beauty",
+    "internal": false
+   },
+   {
+    "proxy": "citations / recognition",
+    "span": "Academic citations and Google Scholar presence exist but remain modest.",
+    "displaced": "argument",
+    "internal": false
+   },
+   {
+    "proxy": "popularity (audience metrics)",
+    "span": "limited conventional audience/metrics (e.g., modest social following)",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "licence",
+    "span": "open licensing (CC BY emphasis)",
+    "displaced": "argument",
+    "internal": true
+   }
+  ],
+  "scores": {
+   "M": 0.375,
+   "C": 0.0,
+   "D": 0.667,
+   "PER": 0.429
+  },
+  "src": true,
+  "tombstone_pointer": true,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks is a PhD (Comparative Literature, University of Michigan) poet, independent scholar, and archive-builder operating primarily under the Crimson Hexagonal Archive.; tombstone pointer: a severed record presented as live",
+  "read": {
+   "by": "deep-dimension reader, batch 19",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "person",
   "target": {

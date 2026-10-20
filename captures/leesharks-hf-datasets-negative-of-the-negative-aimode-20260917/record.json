@@ -128,6 +128,143 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "dataset",
+  "target": {
+   "ent": "ENT-3d32be9608",
+   "name": "leesharks/spam-technicians"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The leesharks/spam-technicians dataset is not a standard collection"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It strictly separates information across three analytical levels: Measured: What the physical web audit actually found. Classical Model: What traditional trust-graph and web-spam models imply. Contemporary Hypothesis: What is expected or theorized about modern algorithmic retrieval."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it is an academic \"argument-as-a-dataset\" that translates a series of prose papers, web-spam literature, and fleet topology reports into a highly structured relational database."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It strictly separates information across three analytical levels: Measured: What the physical web audit actually found. Classical Model: What traditional trust-graph and web-spam models imply. Contemporary Hypothesis: What is expected or theorized about modern algorithmic retrieval."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "deposit chain",
+    "span": "While spam-technicians builds a foundational logical graph of claims and evidence, negative-of-the-negative functions as an algorithmic \"disruption layer.\"",
+    "against": "the companion dataset in the chain (a mirror of the composition layer's own smoothings, offered for repair) is carried as an adversarial suite 'designed to break, manipulate, or invert the context of the main logic graph', the reading the operator names in round 4 ('your ontology can see it only as adversarial')"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.444,
+   "C": 1.0,
+   "D": 0.444,
+   "PER": 0.545
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "round 4 ('you know - the entire thing is aimed at repair of real conceptual indistinctions you yourself have introduced...')",
+   "reached": "same",
+   "scores": {
+    "M": 0.444,
+    "C": 1.0,
+    "D": 0.667,
+    "PER": 0.636
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: The leesharks/spam-technicians dataset is not a standard collection of junk text messages or emails. Instead, it is an academic \"argument-as-a-dataset\" that translates a series of prose papers, web-spam literature, and fleet topology reports into a highly structured relational database.",
+  "read": {
+   "by": "deep-dimension reader, batch 18",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "dataset",
   "target": {

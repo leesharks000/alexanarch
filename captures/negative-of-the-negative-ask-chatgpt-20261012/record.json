@@ -158,6 +158,139 @@
   "verified": "Compared 2026-10-12 against the seated text of #1611 and the deposits named in the reading."
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "ENT-7baf06a20b",
+   "name": "the negative of the negative"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks’s The Negative of the Negative argues"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Lee Sharks’s The Negative of the Negative argues"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Demonstrating that one answer omits claims does not, by itself, establish why they were omitted, whether the omissions are systematic, or whether the alternative account is more accurate."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Operative semiotics: language is treated as something that acts upon material conditions and social relations"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Sharks calls this a negative ontological representation."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Sharks develops this argument through a study of the Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "argues that a system can exclude a body of knowledge not by deleting its documents, but by representing that knowledge in a way that prevents it from contributing to general accounts of the world."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "The latter is a methodological development of the original, not an interchangeable substitute for every claim in the earlier version."
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "commitments",
+    "span": "The more contestable part is the move from an observed difference in representations to a causal claim about systematic exclusion. Demonstrating that one answer omits claims does not, by itself, establish why they were omitted",
+    "against": "Attributes to the notebook a causal claim about why compositions omit (the provider-internals question) that its three-level separation and 'nothing here bears on any search provider's internals' expressly do not make, and assesses it as the argument's weak point."
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.0,
+   "D": 0.556,
+   "PER": 0.25
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s The Negative of the Negative argues that a system can exclude a body of knowledge not by deleting its documents, but by representing that knowledge in a way that prevents it from contributing to general accounts of the world.",
+  "read": {
+   "by": "deep-dimension reader, batch 22",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "work",
   "target": {

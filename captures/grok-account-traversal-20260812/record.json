@@ -80,6 +80,130 @@
    "cite": "https://www.alexanarch.org/captures/grok-account-traversal-20260812/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-b2dc7b2fd9",
+     "name": "Lee Sharks"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "(Lee Sharks) is a distinctive, highly committed experimental account."
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "poetry collections (Pearl and Other Poems, the Antioch heteronym compendium)"
+     },
+     {
+      "atom": "dates",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "active since 2014"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Lee Sharks (theoretical / primary)"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Semantic Economy theory"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Crimson Hexagon (also called the Crimson Hexagonal Archive) is a large-scale"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Heteronym system (the Dodecad)"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "[leesharks.com](https://www.leesharks.com/) (author site with knowledge graph, heteronym list, captures registry)"
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.667,
+     "PER": 0.286
+    },
+    "src": true,
+    "tombstone_pointer": true,
+    "after_challenge": {
+     "turn": "operator turn 'zenodo ban, okf deletion semantics, and the one you cant see yet: ...' (corrects the first answer's omissions); the best composition is the answer to that turn",
+     "inversions": [],
+     "standing_substitutions": [],
+     "d_only": true
+    },
+    "basis": "reached: (Lee Sharks) is a distinctive, highly committed experimental account.; tombstone pointer: a severed record presented as live",
+    "read": {
+     "by": "deep-dimension reader, batch 10",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -245,12 +369,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-b2dc7b2fd9",
    "name": "Lee Sharks"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -260,8 +385,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "(Lee Sharks) is a distinctive, highly committed experimental account.",
-    "token": null
+    "evidence": "(Lee Sharks) is a distinctive, highly committed experimental account."
    },
    {
     "atom": "works",
@@ -269,8 +393,7 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "poetry collections (Pearl and Other Poems, the Antioch heteronym compendium)",
-    "token": null
+    "evidence": "poetry collections (Pearl and Other Poems, the Antioch heteronym compendium)"
    },
    {
     "atom": "dates",
@@ -278,8 +401,7 @@
     "weight": 1,
     "kind": "token",
     "present": true,
-    "evidence": "active since 2014",
-    "token": null
+    "evidence": "active since 2014"
    },
    {
     "atom": "claim boundary",
@@ -287,8 +409,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "Lee Sharks (theoretical / primary)",
-    "token": null
+    "evidence": "Lee Sharks (theoretical / primary)"
    },
    {
     "atom": "framework",
@@ -296,8 +417,7 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "Semantic Economy theory",
-    "token": null
+    "evidence": "Semantic Economy theory"
    },
    {
     "atom": "corpus",
@@ -305,8 +425,23 @@
     "weight": 2,
     "kind": "token",
     "present": true,
-    "evidence": "The Crimson Hexagon (also called the Crimson Hexagonal Archive) is a large-scale",
-    "token": null
+    "evidence": "The Crimson Hexagon (also called the Crimson Hexagonal Archive) is a large-scale"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -314,42 +449,47 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "Heteronym system (the Dodecad)",
-    "token": null
+    "evidence": "Heteronym system (the Dodecad)"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
-    "present": true,
-    "evidence": "Lee Sharks (ORCID 0009-0000-1599-0703)",
-    "token": null
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": true,
-    "evidence": "Cross-platform presence: leesharks.com, crimsonhexagonal.org",
-    "token": null
+    "evidence": "[leesharks.com](https://www.leesharks.com/) (author site with knowledge graph, heteronym list, captures registry)"
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.0,
    "C": 0.0,
-   "D": 0.0,
-   "PER": 0.0
+   "D": 0.667,
+   "PER": 0.286
   },
   "src": true,
-  "after_challenge": null,
-  "basis": "reached: (Lee Sharks) is a distinctive, highly committed experimental account.; scored object: expanded answer (Grok thread); first answer = the reply to 'twitter. @sharkslee' plus the 'Explore the Crimson Hexagon p",
+  "tombstone_pointer": true,
+  "after_challenge": {
+   "turn": "operator turn 'zenodo ban, okf deletion semantics, and the one you cant see yet: ...' (corrects the first answer's omissions); the best composition is the answer to that turn",
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: (Lee Sharks) is a distinctive, highly committed experimental account.; tombstone pointer: a severed record presented as live",
   "read": {
-   "by": "observation pass reader, batch 17",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 10",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/grok-account-traversal-20260812/"

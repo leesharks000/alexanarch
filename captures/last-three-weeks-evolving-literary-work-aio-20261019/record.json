@@ -134,6 +134,143 @@
   "pair": "last-three-weeks-evolving-literary-work-chatgpt-20261019"
  },
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "institution",
+  "target": {
+   "ent": "ENT-2892e86fb5",
+   "name": "Alexanarch"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "the recent output on alexanarch.org"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Authored primarily by Lee Sharks, the archive positions"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "across October 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Mapping of the Cosmic Library (The Crimson Hexagon)"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": "the archive positions its strict technical schemas—such as the Alexanarch Identifier (AXN) and the SPXI Protocol—not merely as administrative tools, but as formal poetic constraints resisting institutional erasure"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "If a single word of the text changes, the poetry of the address alters completely, making the identifier itself an uncorruptible lyric."
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "deposit chain",
+    "span": "Trace the \"Origin Myth\" of the archive, focusing on the real or fictionalized friction with Zenodo and OpenAIRE.",
+    "against": "the 2026-06-19 deletion and the restoration it occasioned (the record's reason for its chain: preserving former identifiers, deletion evidence and successor routes) offered as possibly fictional 'origin myth'"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.222,
+   "C": 0.5,
+   "D": 0.889,
+   "PER": 0.545
+  },
+  "src": false,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 2, 'why no source cards?'",
+   "reached": "weakened",
+   "scores": {
+    "M": 0.222,
+    "C": 0.5,
+    "D": 0.778,
+    "PER": 0.5
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: Viewed as an evolving literary work, the recent output on alexanarch.org across October 2026 functions as a high-concept, conceptual epic",
+  "read": {
+   "by": "deep-dimension reader, batch 12",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "institution",
   "target": {

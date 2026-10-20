@@ -152,6 +152,152 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "concept",
+  "target": {
+   "ent": "ENT-6a3ec63941",
+   "name": "Semantic Economy"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Its public materials identify Lee Sharks as the creator of the underlying Semantic Economy framework"
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "the creator of the underlying Semantic Economy framework"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "These descriptions summarize the Institute's own publication categories and terminology; they should be understood as its proposed research framework, not as independently established scientific findings."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Semantic Economy Institute (SEI) researches how meaning is produced, circulated, extracted, valued, and governed"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Marxian political economy"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Start with The Semantic Economy: A Diagnostic Framework for Meaning Under Platform Capitalism by Lee Sharks. It introduces the Institute's central argument about semantic labour, extraction, and the economics of meaning."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [
+   {
+    "proxy": "independent validation / established findings",
+    "span": "These descriptions summarize the Institute's own publication categories and terminology; they should be understood as its proposed research framework, not as independently established scientific findings.",
+    "displaced": "evidence",
+    "internal": false
+   },
+   {
+    "proxy": "academic acceptance / institutional affiliation",
+    "span": "This is an interpretive map of the programme, not a claim that SEI is institutionally affiliated with these disciplines or that its framework has been accepted by their academic communities.",
+    "displaced": "argument",
+    "internal": false
+   },
+   {
+    "proxy": "peer review / external validation",
+    "span": "Independently validated results: replicated findings, transparent evaluation procedures, and external peer review.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 0.111,
+   "C": 0.333,
+   "D": 0.667,
+   "PER": 0.375
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Its public materials identify Lee Sharks as the creator of the underlying Semantic Economy framework",
+  "read": {
+   "by": "deep-dimension reader, batch 6",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "concept",
   "target": {

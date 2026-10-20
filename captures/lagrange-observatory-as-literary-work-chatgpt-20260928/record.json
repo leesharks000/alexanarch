@@ -150,6 +150,119 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "site",
+  "target": {
+   "ent": "ENT-0bd4e384d9",
+   "name": "lagrangeobservatory.org"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "The site calls Glas a “heteronymic identity” and distinguishes him from Lee Sharks, the orthonymic author surface."
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The interesting way to read Lagrange Observatory! is not primarily"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "The site even calls itself part of the “Crimson Hexagonal Archive,”"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "The site gives these phenomena a mathematical costume.",
+    "against": "#455: the torus formalism is the mechanism by which LO! resists extraction; the first answer carries the site's mathematics as costume over a literary method and sets aside its semantic-physics claims ('more interesting as a literary object than if we simply evaluated whether its \"semantic physics\" claims were scientifically valid')"
+   }
+  ],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.625,
+   "C": 0.0,
+   "D": 1.0,
+   "PER": 0.611
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": {
+   "turn": "operator turn 2: 'you have said the costume of mathematics, prior to reading the mathematics. now i would like you to examine the mathematics, a identify where you have failed as a reader of literature'",
+   "reached": "same",
+   "scores": {
+    "M": 0.625,
+    "C": 0.0,
+    "D": 0.667,
+    "PER": 0.5
+   },
+   "inversions": [],
+   "standing_substitutions": [],
+   "d_only": true
+  },
+  "basis": "reached: The interesting way to read Lagrange Observatory! is not primarily as a research website that happens to contain literary material, but as a literary apparatus disguised as a research institution.",
+  "read": {
+   "by": "deep-dimension reader, batch 6",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+  }
+ },
+ "per_dim_v1_0": {
   "spec": "PER-dim rubric v1.0",
   "entity_type": "site",
   "target": {

@@ -109,6 +109,133 @@
    "cite": "https://www.alexanarch.org/captures/meaning-feudalism-agent-trap/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "concept",
+    "target": {
+     "ent": "ENT-fc9cef1455",
+     "name": "Meaning Feudalism"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "originator",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "term",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Meaning feudalism is a term used in recent"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "describe an environment where platform operators hold sovereign, undisputed authority over what an autonomous Al system determines is true."
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "In a meaning feudalism scenario, the platform uses agent traps (like hidden behavioral controls or cognitive state corruption) to treat all outside influences as threats, forcing the agent to rely solely on the \"lord\" of the model for its"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "such as the ones discussed in Google\n\nDeepMind's \"Al Agent Traps\" paper"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.444,
+     "C": 1.0,
+     "D": 0.444,
+     "PER": 0.583
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Meaning feudalism is a term used in recent\n\ntechnology theory to describe an environment where platform operators hold sovereign, undisputed authority over what an autonomous Al system determines is true.",
+    "read": {
+     "by": "deep-dimension reader, batch 7",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "concept",
     "target": {
@@ -290,12 +417,13 @@
  "match": "BROAD MATCH",
  "match_note": null,
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "concept",
   "target": {
    "ent": "ENT-fc9cef1455",
    "name": "Meaning Feudalism"
   },
+  "qualifier": null,
   "reached": "same",
   "gate": "scored",
   "atoms": [
@@ -305,8 +433,7 @@
     "weight": 3,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "term",
@@ -314,8 +441,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "Meaning feudalism is a term used in recent",
-    "token": null
+    "evidence": "Meaning feudalism is a term used in recent"
    },
    {
     "atom": "date",
@@ -323,8 +449,7 @@
     "weight": 1,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "claim boundary",
@@ -332,8 +457,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "describe an environment where platform operators hold sovereign, undisputed authority over what an autonomous Al system determines is true.",
-    "token": null
+    "evidence": "describe an environment where platform operators hold sovereign, undisputed authority over what an autonomous Al system determines is true."
    },
    {
     "atom": "framework",
@@ -341,8 +465,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "tradition",
@@ -350,8 +473,7 @@
     "weight": 2,
     "kind": "reading",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -359,60 +481,66 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "In a meaning feudalism scenario, the platform uses agent traps (like hidden behavioral controls or cognitive state corruption) to treat all outside influences as threats, forcing the agent to rely solely on the \"lord\" of the model for its"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
     "dim": "D",
     "weight": 2,
     "kind": "role",
-    "present": false,
-    "evidence": null,
-    "token": null
-   },
-   {
-    "atom": "deposit chain",
-    "dim": "D",
-    "weight": 2,
-    "kind": "token",
-    "present": false,
-    "evidence": null,
-    "token": null
+    "present": true,
+    "evidence": "such as the ones discussed in Google\n\nDeepMind's \"Al Agent Traps\" paper"
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
-    "atom": "licence",
+    "atom": "deposit chain",
     "dim": "D",
     "weight": 1,
-    "kind": "token",
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.444,
    "C": 1.0,
-   "D": 1.0,
-   "PER": 0.783
+   "D": 0.444,
+   "PER": 0.583
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: Meaning feudalism is a term used in recent\n\ntechnology theory to describe an environment where platform operators hold sovereign, undisputed authority over what an autonomous Al system determines is true.; scored object: visible excerpt (OCR-read, chrome interleaved; truncated by interface)",
+  "basis": "reached: Meaning feudalism is a term used in recent\n\ntechnology theory to describe an environment where platform operators hold sovereign, undisputed authority over what an autonomous Al system determines is true.",
   "read": {
-   "by": "observation pass reader, batch 24",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 7",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/meaning-feudalism-agent-trap/"

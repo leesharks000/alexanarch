@@ -153,5 +153,132 @@
   "paired_overview": "rebuild/record-pages/search-form-test/run-16-1197-title-unquoted-20261012-0007.txt",
   "verified": "Compared 2026-10-12 against the text of #1197 (data/texts/AXN-04BE-text.md), the close of section v and the addendum below its rule."
  },
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-socrates-let-my-teacher-go-from-hell",
+   "name": "Socrates — Let My Teacher Go From Hell (Jack Feist, #1197)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "“Socrates — Let My Teacher Go From Hell” by Lee Sharks"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "“Socrates — Let My Teacher Go From Hell” by Lee Sharks"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The poem's claim that Socrates has been freed from Limbo is best understood as a poetic and theological declaration, not as a verifiable statement about the afterlife."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "In Dante's Inferno, Socrates is placed in Limbo, the first circle of Hell. Dante honors him as one of the great philosophers, but within Dante's Christian vision, Socrates remains outside the fullness of salvation."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The speaker doesn't merely want to remember Socrates. He wants to bring his teacher home."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sharks' poem does more than criticize Dante's depiction of the afterlife."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "You can read the full poem on Lee Sharks's Goodreads blog ."
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.667,
+   "D": 0.333,
+   "PER": 0.333
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Lee Sharks’s Socrates — Let My Teacher Go From Hell is a contemporary poem; retargeted: Address names the poem 'Socrates: Let My Teacher Go From Hell' (#1197, Jack Feist), read by #700.",
+  "read": {
+   "by": "held-observation reader, held-2",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/socrates-let-my-teacher-go-from-hell-chatgpt-20261012/"
 }

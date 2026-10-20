@@ -181,7 +181,139 @@
    },
    "img_urls": [],
    "cite": "https://www.alexanarch.org/captures/wound-gauge-second-order-provenance-erasure-framework-adoption-20260612/",
-   "citable_unit": "observation — one surface, one address, one date"
+   "citable_unit": "observation — one surface, one address, one date",
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-the-wound-gauge-second-order-provenance-erasure",
+     "name": "TL;DR:014 — The Wound Gauge: Second-Order Provenance Erasure as Framework-Adoption-with-Author-Demotion (#138)"
+    },
+    "qualifier": null,
+    "reached": "generic",
+    "gate": "target_absent",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Second-Order Provenance Erasure (PER-2), often discussed alongside Framework-Adoption-with-Author-Demotion"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "May 28, 2026"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "tradition",
+      "dim": "C",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [
+     {
+      "atom": "purpose",
+      "span": "is a conceptual AI governance and information framework",
+      "against": "The record names the operation in which a system adopts a human-authored diagnostic and demotes its author; carried as an authorless generic AI-governance framework, the term repeats that operation on the work that names it (the inversion guidance)."
+     }
+    ],
+    "standing_substitutions": [
+     {
+      "proxy": "recognition (official or legal adoption as a standard; debate in the AI community)",
+      "span": "Currently, there is no widespread, legal, or official adoption of PER-2 as a standard.",
+      "displaced": "evidence",
+      "internal": false
+     }
+    ],
+    "scores": {
+     "M": 1.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 1.0
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Second-Order Provenance Erasure (PER-2), often discussed alongside Framework-Adoption-with-Author-Demotion, is a conceptual AI governance and information framework.; beneath the gate: PER 0.826; retargeted: Address is the title of TL;DR:014 (#138), which names PER-2; the reason names the Wound Gauge.",
+    "read": {
+     "by": "held-observation reader, held-2",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+     "m_c_from": null
+    }
+   }
   }
  ],
  "n_observations": 1,
@@ -238,5 +370,137 @@
  "related_deposits": [
   138
  ],
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-the-wound-gauge-second-order-provenance-erasure",
+   "name": "TL;DR:014 — The Wound Gauge: Second-Order Provenance Erasure as Framework-Adoption-with-Author-Demotion (#138)"
+  },
+  "qualifier": null,
+  "reached": "generic",
+  "gate": "target_absent",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Second-Order Provenance Erasure (PER-2), often discussed alongside Framework-Adoption-with-Author-Demotion"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "May 28, 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [
+   {
+    "atom": "purpose",
+    "span": "is a conceptual AI governance and information framework",
+    "against": "The record names the operation in which a system adopts a human-authored diagnostic and demotes its author; carried as an authorless generic AI-governance framework, the term repeats that operation on the work that names it (the inversion guidance)."
+   }
+  ],
+  "standing_substitutions": [
+   {
+    "proxy": "recognition (official or legal adoption as a standard; debate in the AI community)",
+    "span": "Currently, there is no widespread, legal, or official adoption of PER-2 as a standard.",
+    "displaced": "evidence",
+    "internal": false
+   }
+  ],
+  "scores": {
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0,
+   "PER": 1.0
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Second-Order Provenance Erasure (PER-2), often discussed alongside Framework-Adoption-with-Author-Demotion, is a conceptual AI governance and information framework.; beneath the gate: PER 0.826; retargeted: Address is the title of TL;DR:014 (#138), which names PER-2; the reason names the Wound Gauge.",
+  "read": {
+   "by": "held-observation reader, held-2",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/HELD-BRIEF.md",
+   "m_c_from": null
+  }
+ },
  "record_url": "https://www.alexanarch.org/captures/wound-gauge-second-order-provenance-erasure-framework-adoption-20260612/"
 }

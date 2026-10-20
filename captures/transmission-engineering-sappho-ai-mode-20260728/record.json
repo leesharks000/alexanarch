@@ -168,6 +168,109 @@
    "cite": "https://www.alexanarch.org/captures/transmission-engineering-sappho-ai-mode-20260728/",
    "citable_unit": "observation — one surface, one address, one date",
    "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "person",
+    "target": {
+     "ent": "ENT-e528d2f13e",
+     "name": "Sappho"
+    },
+    "qualifier": null,
+    "reached": "weakened",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "name",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "A transmission-engineering framework for [Sappho Fragment 31]"
+     },
+     {
+      "atom": "works",
+      "dim": "M",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "[Sappho Fragment 31]"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "reinterprets the ancient lyric not as a traditional poem of personal jealousy, but as a structural instrument addressing future readers"
+     },
+     {
+      "atom": "framework",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 1.0,
+     "D": 1.0,
+     "PER": 0.611
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: A transmission-engineering framework for [Sappho Fragment 31]",
+    "read": {
+     "by": "deep-dimension reader, batch 12",
+     "on": "2026-10-20",
+     "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+     "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
+    }
+   },
+   "per_dim_v1_0": {
     "spec": "PER-dim rubric v1.0",
     "entity_type": "person",
     "target": {
@@ -323,12 +426,13 @@
   1054
  ],
  "per_dim": {
-  "spec": "PER-dim rubric v1.0",
+  "spec": "PER-dim rubric v1.1",
   "entity_type": "person",
   "target": {
    "ent": "ENT-e528d2f13e",
    "name": "Sappho"
   },
+  "qualifier": null,
   "reached": "weakened",
   "gate": "scored",
   "atoms": [
@@ -338,8 +442,7 @@
     "weight": 3,
     "kind": "token",
     "present": true,
-    "evidence": "A transmission-engineering framework for [Sappho Fragment 31]",
-    "token": null
+    "evidence": "A transmission-engineering framework for [Sappho Fragment 31]"
    },
    {
     "atom": "works",
@@ -347,8 +450,7 @@
     "weight": 2,
     "kind": "role",
     "present": true,
-    "evidence": "[Sappho Fragment 31]",
-    "token": null
+    "evidence": "[Sappho Fragment 31]"
    },
    {
     "atom": "claim boundary",
@@ -356,8 +458,7 @@
     "weight": 2,
     "kind": "reading",
     "present": true,
-    "evidence": "reinterprets the ancient lyric not as a traditional poem of personal jealousy, but as a structural instrument addressing future readers",
-    "token": null
+    "evidence": "reinterprets the ancient lyric not as a traditional poem of personal jealousy, but as a structural instrument addressing future readers"
    },
    {
     "atom": "framework",
@@ -365,8 +466,7 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "corpus",
@@ -374,8 +474,15 @@
     "weight": 2,
     "kind": "token",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
    },
    {
     "atom": "lineage",
@@ -383,28 +490,27 @@
     "weight": 2,
     "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "identifier",
     "dim": "D",
-    "weight": 3,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    },
    {
     "atom": "deposit chain",
     "dim": "D",
-    "weight": 2,
-    "kind": "token",
+    "weight": 1,
+    "kind": "role",
     "present": false,
-    "evidence": null,
-    "token": null
+    "evidence": null
    }
   ],
+  "inversions": [],
+  "standing_substitutions": [],
   "scores": {
    "M": 0.0,
    "C": 1.0,
@@ -412,13 +518,14 @@
    "PER": 0.611
   },
   "src": true,
+  "tombstone_pointer": false,
   "after_challenge": null,
-  "basis": "reached: A transmission-engineering framework for [Sappho Fragment 31]; scored object: expanded answer (raw paste; source strip intact)",
+  "basis": "reached: A transmission-engineering framework for [Sappho Fragment 31]",
   "read": {
-   "by": "observation pass reader, batch 22",
-   "on": "2026-10-19",
-   "brief": "rebuild/capture-registry/per-atoms/obs-pass/BRIEF.md",
-   "normalised": []
+   "by": "deep-dimension reader, batch 12",
+   "on": "2026-10-20",
+   "brief": "rebuild/capture-registry/per-atoms/obs-pass-d/BRIEF.md",
+   "m_c_from": "v12.305 (PER-dim rubric v1.0 reading)"
   }
  },
  "record_url": "https://www.alexanarch.org/captures/transmission-engineering-sappho-ai-mode-20260728/"
