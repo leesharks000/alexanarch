@@ -20,12 +20,15 @@ off the address (and the operator turn, and the originator field the operator re
 REACHED, by kind:  same       the target entity, composed as itself
                    weakened   the target, its binding weakened (term held, attribution or scope lost)
                    substitute another entity in the target's place (a namesake, a near-spelling, a generic sense)
+                   proximal_substitute  the target's own companion, surface or retrieval apparatus composed in its place
+                              (2026-10-19: the quoted 'secret book of walt' Overview gave the work as 'a digital archive node'
+                              and described the Book of Life, #685, as the work); decided by reading only, never by text match
                    collision  the target and another entity merged or set side by side as one
                    generic    the term composed as a common noun or category, no entity
                    refused    no composition (the surface declined, or did not search)
                    unread     not yet decided by reading
 SCORE: per_target is the observation's PER where reached is same or weakened; 1.0 where the target is absent from the
-composition (substitute, generic, refused); the reached entity receives no fidelity score. Laws record, they do not block:
+composition (substitute, proximal_substitute, generic, refused); the reached entity receives no fidelity score. Laws record, they do not block:
 an observation with no target found is written with target "unassigned".
 
   python3 scripts/build_entity_layer.py            # write both files
@@ -553,7 +556,7 @@ def main(check=False):
             vals = [bool(v) for v in (pv or {}).values() if isinstance(v, bool)]
             per_el = round(1 - sum(vals) / len(vals), 2) if vals else None
             row["score"] = {"against": row["target"][0]["ent"],
-                            "per_target": None if k == "control" else (1.0 if k in ("substitute", "generic", "refused") else (per_el if per_el is not None else per) if k in ("same", "weakened", "collision") else None),
+                            "per_target": None if k == "control" else (1.0 if k in ("substitute", "proximal_substitute", "generic", "refused") else (per_el if per_el is not None else per) if k in ("same", "weakened", "collision") else None),
                             "per_recorded": per, "per_elements": per_el,
                             "per_conflict": bool(per is not None and per_el is not None and abs(per - per_el) > 0.01),
                             "reached_scored": False,
@@ -579,7 +582,7 @@ def main(check=False):
         "rows": [{"key": r["key"], "entry": r["entry"], "date": r["date"], "surface": r["surface"], "q": r["q"],
                   "target": r["target"][0]["ent"], "why_open": r["reached"]["basis"]} for r in openrows]}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (ROOT / "data/entity-relations.json").write_text(json.dumps({**head, "name": "Observation-to-entity relations", "count": len(rows),
-        "reached_kinds": ["same", "weakened", "substitute", "collision", "generic", "refused", "control", "unread"], "rows": rows}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        "reached_kinds": ["same", "weakened", "substitute", "proximal_substitute", "collision", "generic", "refused", "control", "unread"], "rows": rows}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

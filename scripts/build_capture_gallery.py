@@ -375,6 +375,16 @@ def transcript_block(e, gallery=''):
             if _o.get("reading"):
                 _in += ('<div class="cap-tr-label">Reading</div>'
                         f'<div class="cap-tr-prose">{para(_o["reading"])}</div>')
+            _av = _o.get("availability")
+            if _av:
+                # COMPOSITIONAL SUBSTITUTION UNDER AVAILABILITY (#740 §2.3, operationalised 2026-10-19): the conditions,
+                # each read off the record and cited, never weighted; the reached kind is the reading's
+                _in += ('<div class="cap-tr-label">Availability <span class="cap-tr-warn">#740 §2.3 · '
+                        + esc(str(_av.get("class") or "conditions not all held")) + '</span></div>'
+                        + '<ul class="cap-cites">' + "".join(f'<li>{esc(str(h))}</li>' for h in _av.get("held") or [])
+                        + "".join(f'<li><i>not held:</i> {esc(str(h))}</li>' for h in _av.get("not_held") or []) + '</ul>'
+                        + (f'<div class="cap-cn">reached: {esc(str(_av.get("reached")))}</div>' if _av.get("reached") else '')
+                        + (f'<div class="cap-cn">{esc(str(_av.get("basis")))}</div>' if _av.get("basis") else ''))
             if _o.get("transcript"):
                 _ans, _ = split_source_strip(_o["transcript"], _o.get("cite_list") or [])
                 _in += ('<div class="cap-tr-label">Machine text, verbatim</div>'

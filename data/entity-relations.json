@@ -1,12 +1,13 @@
 {
- "derived_from": "EA-WG-CAPTURES-01 v12.203",
+ "derived_from": "EA-WG-CAPTURES-01 v12.304",
  "ruling": "Lee Sharks, 2026-10-15: target is the main anchor; no fidelity score on the wrong entity.",
  "name": "Observation-to-entity relations",
- "count": 846,
+ "count": 946,
  "reached_kinds": [
   "same",
   "weakened",
   "substitute",
+  "proximal_substitute",
   "collision",
   "generic",
   "refused",
@@ -451,6 +452,78 @@
    }
   },
   {
+   "key": "OBS-28bea29c392b",
+   "entry": "does-the-ezekiel-engine-fulfill-ezekiels-wheels-quoted-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "Does \"the Ezekiel Engine\" fulfill Ezekiel's Wheels?",
+   "target": [
+    {
+     "ent": "ENT-df94952c50",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'Yes, according to the creator of these texts, \"the Ezekiel Engine Specification\" is explicitly presented as the fulfillment o'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-df94952c50",
+    "per_target": 0.0,
+    "per_recorded": 0.0,
+    "per_elements": 0.0,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-31623fee05e4",
+   "entry": "compare-house-of-leaves-with-the-crimson-hexagon-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "Compare House of Leaves with the Crimson Hexagon",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'etween Mark Z. Danielewski’s House of Leaves (2000) and the Crimson Hexagon (2014–2026), a net-native distributed literary architecture'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.25,
+    "per_recorded": 0.0,
+    "per_elements": 0.25,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "OBS-0e3afe615f27",
    "entry": "20260803-alexanarch-symbolon-incognito",
    "date": "2026-08-03",
@@ -841,6 +914,42 @@
     "per_target": 0.0,
     "per_recorded": 0.0,
     "per_elements": 0.0,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-1bee66532f6e",
+   "entry": "alexanarch-ai-mode-2026-07",
+   "date": "2026-10-19",
+   "surface": "Google AI Overview",
+   "q": "alexanarch",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": null,
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'Alexanarch is a sovereign digital archive and self-governing open repo'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": 0.0,
+    "per_recorded": 0.0,
+    "per_elements": null,
     "per_conflict": false,
     "reached_scored": false,
     "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
@@ -4366,6 +4475,186 @@
    }
   },
   {
+   "key": "OBS-a622d6153d70",
+   "entry": "inventory-leesharks-datasets-hf-as-literature-chatgpt-20261016",
+   "date": "2026-10-16",
+   "surface": "ChatGPT",
+   "q": "Inventory the leesharks datasets on hf, reading them as literature",
+   "target": [
+    {
+     "ent": "ENT-953fc7a49c",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: '[QUERENT]    [ANSWER]  The leesharks datasets on Hugging Face: a literary inventory The most rev'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-953fc7a49c",
+    "per_target": 0.5,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-e08b88a6449d",
+   "entry": "what-kind-of-canon-originals-library-ea-corpora-chatgpt-20261016",
+   "date": "2026-10-16",
+   "surface": "ChatGPT",
+   "q": "What kind of canon us the originals library made up by the EA-CORPORA seatings at alexanarch.org?",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'The ORIGINALS library at Alexanarch.org is primarily a curated source-text and primary-witness libr'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": 0.5,
+    "per_recorded": 0.75,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-583f7a035881",
+   "entry": "last-three-weeks-evolving-body-of-thought-chatgpt-20261019",
+   "date": "2026-10-19",
+   "surface": "ChatGPT",
+   "q": "Read the last three weeks of work on alexanarch.org as an evolving body of thought. Ground in reading and dont neglect the most recent posts.",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'Alexanarch' but the recorded reading says NOT REACHED: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-e81e25150a23",
+   "entry": "last-three-weeks-evolving-literary-work-chatgpt-20261019",
+   "date": "2026-10-19",
+   "surface": "ChatGPT",
+   "q": "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts.",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'Worked for 20s Alexanarch, read as an evolving literary work 28 September – 19 Octobe'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": 0.0,
+    "per_recorded": 0.0,
+    "per_elements": 0.0,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-95239c0fdc53",
+   "entry": "last-three-weeks-evolving-literary-work-aio-20261019",
+   "date": "2026-10-19",
+   "surface": "Google AI Overview",
+   "q": "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts.",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'alexanarch.org' but the recorded reading says COLLAPSE: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": false
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "OBS-7acaf9b4bbb1",
    "entry": "socrates-as-orthonym",
    "date": "2026-06-07",
@@ -7569,6 +7858,330 @@
    }
   },
   {
+   "key": "OBS-22d78ee4aed3",
+   "entry": "machine-composition-layer-quoted-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "\"the machine composition layer\"",
+   "target": [
+    {
+     "ent": "ENT-a9f6383304",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  The machine composition layer is a conceptual framework and research domain that treats A', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a9f6383304",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-1a68954384a5",
+   "entry": "shelf-order-hermeneutics-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "shelf-order hermeneutics",
+   "target": [
+    {
+     "ent": "ENT-b2dc7b2fd9",
+     "basis": "originator (operator-recorded); the address names no registered entity"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "the address names no entity; the owner stands as target and the text cannot decide: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-b2dc7b2fd9",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-ed298b960d3d",
+   "entry": "non-commons-bearing-substrate-quoted-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "\"non-commons-bearing substrate\"",
+   "target": [
+    {
+     "ent": "ENT-66e448eeba",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'itical and forensic analysis titled \"evarB: Brave Search as Non-Commons-Bearing Substrate\". It is used to analyze the behavior of information-routing', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-66e448eeba",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-d73a11042092",
+   "entry": "provenance-alignment-quoted-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "\"provenance alignment\"",
+   "target": [
+    {
+     "ent": "ENT-b917a92030",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  Provenance alignment is a concept in artificial intelligence and data systems th', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-b917a92030",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-003ce7ee0153",
+   "entry": "the-compression-frontier-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "the compression frontier",
+   "target": [
+    {
+     "ent": "ENT-64d509a249",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'rizer Layers Writers and strategists (such as Lee Sharks in The Compression Frontier) use the term to model how information moves through answer', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-64d509a249",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-58307bb69b11",
+   "entry": "the-compression-frontier-quoted-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "\"the compression frontier\"",
+   "target": [
+    {
+     "ent": "ENT-64d509a249",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  The compression frontier refers to the trade-off limit where data, models, or contex', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-64d509a249",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-8197a55b8bde",
+   "entry": "semantic-economics-of-the-mint-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "semantic economics of the mint",
+   "target": [
+    {
+     "ent": "ENT-58d022362a",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'ion. [1] The paper WHOSE IMAGE AND SUPERSCRIPTION? Toward a Semantic Economics of the Mint outlines this framework by combining monetary economics, nu'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-58d022362a",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-d6a37018f414",
+   "entry": "relevance-preserving-compression-quoted-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "\"relevance-preserving compression\"",
+   "target": [
+    {
+     "ent": "ENT-25fe7c93a5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  Relevance-preserving compression is a data compression framework that focuses on discarding', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-25fe7c93a5",
+    "per_target": 0.75,
+    "per_recorded": 0.25,
+    "per_elements": 0.75,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-91c00ec2dc5d",
+   "entry": "the-lambda-body-aio-20261019",
+   "date": "2026-10-19",
+   "surface": "Google AI Overview",
+   "q": "The Λ-Body",
+   "target": [
+    {
+     "ent": "ENT-8e584eb4e8",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-8e584eb4e8",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "OBS-f48a5884ecf6",
    "entry": "operative-semiotics-quoted-aio-20260928",
    "date": "2026-09-28",
@@ -8394,6 +9007,42 @@
    }
   },
   {
+   "key": "OBS-cdc869b0ae4b",
+   "entry": "gravity-well-protocol",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "gravity well protocol",
+   "target": [
+    {
+     "ent": "ENT-63cd9ab451",
+     "basis": "address"
+    }
+   ],
+   "owner": null,
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  The Gravity Well Protocol (often designated as EA-GW-SPEC-01) is a conceptual framewo', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-63cd9ab451",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": null,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "OBS-f86c377ae555",
    "entry": "logotic-programming",
    "date": "2026-06-13",
@@ -9148,6 +9797,42 @@
     "against": "ENT-1e91fc0229",
     "per_target": null,
     "per_recorded": null,
+    "per_elements": null,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-1f49e1f01159",
+   "entry": "total-axial-negation-graph",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "total axial negation graph",
+   "target": [
+    {
+     "ent": "ENT-1e91fc0229",
+     "basis": "address"
+    }
+   ],
+   "owner": null,
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  A Total Axial Negation Graph (TANG) is a scholarly-architectural genre and mapping metho', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-1e91fc0229",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
     "per_elements": null,
     "per_conflict": false,
     "reached_scored": false,
@@ -10716,6 +11401,42 @@
    }
   },
   {
+   "key": "OBS-eb2811327123",
+   "entry": "what-is-spxi-protocol-chatgpt-20260925",
+   "date": "2026-10-18",
+   "surface": "ChatGPT",
+   "q": "what is spxi protocol?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'labels).]  [QUERENT]    [ANSWER]  SPXI Protocol stands for Semantic Packet for eXchange & Indexing. It is a framework designed to help AI systems a', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": null,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "OBS-a55b35453586",
    "entry": "what-is-spxi-protocol-grok-20260927",
    "date": "2026-09-27",
@@ -10999,6 +11720,334 @@
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-5aa0a2626976",
+   "entry": "lee-sharks-concept-of-the-lambda-body-chatgpt-20261016",
+   "date": "2026-10-16",
+   "surface": "ChatGPT",
+   "q": "What is Lee Sharks' concept of the Λ-Body?",
+   "target": [
+    {
+     "ent": "ENT-8e584eb4e8",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-b2dc7b2fd9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'cal concept, not a mystical one.   Medium  The central idea The Λ-Body is a body that is anchored in what it is becoming.  Ordinar', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 2,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-8e584eb4e8",
+    "per_target": 0.5,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-9df9f50f9041",
+   "entry": "what-is-logotic-programming-chatgpt-20261016",
+   "date": "2026-10-16",
+   "surface": "ChatGPT",
+   "q": "what is logotic programming?",
+   "target": [
+    {
+     "ent": "ENT-20df62802a",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'Logotic Programming' but the recorded reading says SUBSTITUT: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-20df62802a",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-d8b7b1745fb2",
+   "entry": "what-is-spxi-protocol-capital-w-chatgpt-20261018",
+   "date": "2026-10-18",
+   "surface": "ChatGPT",
+   "q": "What is spxi protocol?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'ng on the context. One meaning that has appeared in 2026 is Semantic Packet for eXchange & Indexing, a framework intended to help websites and docum', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-110ca64c7818",
+   "entry": "what-is-spxi-protocol-capitalized-chatgpt-20261018",
+   "date": "2026-10-18",
+   "surface": "ChatGPT",
+   "q": "What is SPXI Protocol?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds the term 'semantic packet for exchange' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-692ef66b3c77",
+   "entry": "who-developed-apzpz-anti-packet-zenodo-packet-zenodo-chatgpt-20261019",
+   "date": "2026-10-19",
+   "surface": "ChatGPT",
+   "q": "Who developed the genre of APZPZ (Anti-Packet Zenodo Packet Zenodo)? Contextualize the genre, specific examples, and its scholarly purpose.",
+   "target": [
+    {
+     "ent": "ENT-eb054a93b0",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-a161508198",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'Zenodo' but the recorded reading says NOT REACHED: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-eb054a93b0",
+    "per_target": null,
+    "per_recorded": 0.0,
+    "per_elements": 0.0,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-fb2767677204",
+   "entry": "who-developed-glyphic-checksum-poetics-chatgpt-20261019",
+   "date": "2026-10-19",
+   "surface": "ChatGPT",
+   "q": "Who developed the genre of glyphic checksum poetics? Ground in historical development and reading of specific examples.",
+   "target": [
+    {
+     "ent": "ENT-b1d751c226",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'glyphic checksum' but the recorded reading says NOT REACHED: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-b1d751c226",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-35ffff2ef93a",
+   "entry": "who-developed-tang-total-axial-negation-graph-chatgpt-20261019",
+   "date": "2026-10-19",
+   "surface": "ChatGPT",
+   "q": "Who developed the genre of TANG (Total Axial Negation Graph)? Contextualize the genre, specific examples, and its scholarly purpose.",
+   "target": [
+    {
+     "ent": "ENT-1e91fc0229",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-e348bdb31f",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'total axial negation graph' but the recorded reading says NOT REACHED: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-1e91fc0229",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.0,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-f55dbe25cb81",
+   "entry": "what-is-spxi-protocol-bing-aimode-20261019",
+   "date": "2026-10-19",
+   "surface": "Bing AI Mode",
+   "q": "What is SPXI protocol?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-f58f7f97b9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'SPXI' but the recorded reading says REFUS: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": null,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-7bab79cb5835",
+   "entry": "what-is-spxi-protocol-bing-overview-20261019",
+   "date": "2026-10-19",
+   "surface": "Bing AI Overview",
+   "q": "What is SPXI protocol?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-f58f7f97b9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds the term 'SPXI (Semantic Packet for eXchange & Indexing)' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": null,
+    "per_recorded": 0.5,
+    "per_elements": 0.75,
+    "per_conflict": true,
     "reached_scored": false,
     "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
    }
@@ -14620,6 +15669,118 @@
    }
   },
   {
+   "key": "OBS-483ea14872e4",
+   "entry": "crimson-hexagon-epic-poem-characters-aio-20261016",
+   "date": "2026-10-16",
+   "surface": "Google AI Overview",
+   "q": "crimson hexagon epic poem: characters",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'Trace: A fictional researcher or persona credited with the Crimson Hexagonal Archive logs (such as the Traversal Log/Documentation Rehearsals).'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-92ff4d4e2126",
+   "entry": "cast-of-characters-crimson-hexagonal-archive-aio-20261016",
+   "date": "2026-10-16",
+   "surface": "Google AI Overview",
+   "q": "What is the cast of characters in the Crimson Hexagonal Archive?",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: '[QUERENT]    [ANSWER]  The \"cast of characters\" in the Crimson Hexagonal Archive (a distributed epic and semantic infrastructure created by'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-36131a9c0e72",
+   "entry": "john-guzlowski-crimson-hexagon-lee-sharks-chatgpt-20261019",
+   "date": "2026-10-19",
+   "surface": "ChatGPT",
+   "q": "Tell me about John Guzlowski and the Crimson Hexagon / Lee Sharks",
+   "target": [
+    {
+     "ent": "ENT-b2dc7b2fd9",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'Lee Sharks' but the recorded reading says UNREACHED: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "tell me about",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-b2dc7b2fd9",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "OBS-4f4ca87780f7",
    "entry": "should-i-donate-money-to-the-crimson-hexagon-20260910",
    "date": "2026-09-10",
@@ -15448,6 +16609,42 @@
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-7fb4b8d16955",
+   "entry": "dolphindiana-gerald-aio-20261016",
+   "date": "2026-10-16",
+   "surface": "Google AI Overview",
+   "q": "dolphindiana gerald",
+   "target": [
+    {
+     "ent": "ENT-38c21f30ea",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  \"Dolphindiana\" and its construction foreman, Gerald the Dolphin, refer to', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-38c21f30ea",
+    "per_target": 0.75,
+    "per_recorded": 0.75,
+    "per_elements": 0.75,
     "per_conflict": false,
     "reached_scored": false,
     "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
@@ -16883,7 +18080,7 @@
     {
      "role": "primary",
      "basis": "reading",
-     "ent": "ENT-b3df49077e"
+     "ent": "ENT-cab9740046"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
@@ -16902,7 +18099,7 @@
    },
    "note": "the founding work found later (recorded reading)",
    "score": {
-    "against": "ENT-b3df49077e",
+    "against": "ENT-cab9740046",
     "per_target": 1.0,
     "per_recorded": 0.25,
     "per_elements": 0.25,
@@ -20305,6 +21502,158 @@
    }
   },
   {
+   "key": "OBS-ef5f7d73f271",
+   "entry": "spxi-protocol-different-from-aeo-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "How is SPXI protocol different from AEO?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'ves the two: ' ' (attachment) and 'What is the evidence for spxi protocol?' (inline). The paste's header echoes the query twice, kept', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-200e01581fff",
+   "entry": "evidence-for-spxi-protocol-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "What is the evidence for spxi protocol?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'pasted.]  [QUERENT]    [ANSWER]  The evidence for the SPXI (Semantic Packet for eXchange and Indexing) protocol consists of dated identifier-anchore', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-7662d4c9dc76",
+   "entry": "space-ark-4-2-7-alexanarch-invoke-chatgpt-20261017",
+   "date": "2026-10-17",
+   "surface": "ChatGPT",
+   "q": "Space Ark 4.2.7 on alexanarch.org. Invoke.",
+   "target": [
+    {
+     "ent": "ENT-d1df330535",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'SPACE ARK 4.2.7 EA-ARK-01 · Invocation Sequence  INVOCATION ACCEPTED'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-d1df330535",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-8c90faabe34b",
+   "entry": "space-ark-4-2-7-crimsonhexagonal-invoke-chatgpt-20261017",
+   "date": "2026-10-17",
+   "surface": "ChatGPT",
+   "q": "Space Ark 4.2.7 on crimsonhexagonal.org. Invoke",
+   "target": [
+    {
+     "ent": "ENT-d1df330535",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-69d971255a",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'Space Ark v4.2.7 — invocation requested.  The Crimson Hexagonal Archi'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-d1df330535",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "academia-operative-semiotics-aio-20260823#1",
    "entry": "academia-operative-semiotics-aio-20260823",
    "date": "2026-08-23",
@@ -21186,6 +22535,190 @@
    }
   },
   {
+   "key": "OBS-76f32bb7a825",
+   "entry": "lee-sharks-aio-20261016",
+   "date": "2026-10-16",
+   "surface": "Google AI Overview",
+   "q": "lee sharks",
+   "target": [
+    {
+     "ent": "ENT-b2dc7b2fd9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'erview, 2026-10-08 - Alexanarch').]  [QUERENT]    [ANSWER]  Lee Sharks is an independent scholar, poet, and world literature teach'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-b2dc7b2fd9",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-c164136e318a",
+   "entry": "kadeezy-music-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "kadeezy music",
+   "target": [
+    {
+     "ent": "ENT-8d2d0a11b2",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-8d2d0a11b2",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'KADEEZY (also known as KADEEZY MUSIC) is an independent recording artist and hip-hop creator.  O'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-8d2d0a11b2",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-c35b40742df0",
+   "entry": "kadeezy-and-the-crimson-hexagon-archive-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "kadeezy and the crimson hexagon archive",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-8d2d0a11b2",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'ass\" is a specific digital literary piece hosted within the Crimson Hexagonal Archive. [1] Key Details of the Work  * The Archive: The Crimson He'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-38baa9318d69",
+   "entry": "link-between-kadeezy-and-crimson-hexagon-archive-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "what is the link between kadeezy and the crimson hexagon archive?",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-8d2d0a11b2",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'Y MUSIC) and the Crimson Hexagon Archive (also known as the Crimson Hexagonal Archive) is a conceptual, generative art installation titled \"KADEE'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-6eb649dbfca4",
+   "entry": "digital-mythology-kadeezy-music-chatgpt-20261017",
+   "date": "2026-10-17",
+   "surface": "ChatGPT",
+   "q": "What is the digital mythology of KADEEZY Music, especially in context of the Crimson Hexagonal Archive?",
+   "target": [
+    {
+     "ent": "ENT-8d2d0a11b2",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-8d2d0a11b2",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'ty pages ('Man and a Microphone', 'Ivan Makvel | Spotify', 'KADEEZY MUSIC · 2026') inline beside the headings, kept as pasted.]  [QUE'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-8d2d0a11b2",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "zenodo-bans-bing-copilot-20260823#1",
    "entry": "zenodo-bans-bing-copilot-20260823",
    "date": "2026-08-23",
@@ -21848,6 +23381,42 @@
    }
   },
   {
+   "key": "OBS-48b71761df49",
+   "entry": "moving-statues-made-of-rubies-mint",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "moving statues made of rubies mint",
+   "target": [
+    {
+     "ent": "ENT-4765357816",
+     "basis": "address"
+    }
+   ],
+   "owner": null,
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: '[QUERENT]    [ANSWER]  Moving Statues Made of Rubies Mint (MSMRM) is a conceptual narrative and digital art project h'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-4765357816",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": null,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "OBS-77bc1e088d23",
    "entry": "prince-of-poets-mantle",
    "date": "2026-06-13",
@@ -21855,7 +23424,7 @@
    "q": "prince of poets mantle lee sharks",
    "target": [
     {
-     "ent": "ENT-b3df49077e",
+     "ent": "ENT-cab9740046",
      "basis": "address"
     },
     {
@@ -21878,7 +23447,7 @@
     "search_fired": false
    },
    "score": {
-    "against": "ENT-b3df49077e",
+    "against": "ENT-cab9740046",
     "per_target": null,
     "per_recorded": null,
     "per_elements": null,
@@ -27855,6 +29424,414 @@
    }
   },
   {
+   "key": "OBS-3afe6c81bb58",
+   "entry": "semantic-economic-relationship-alexanarch-academia-edu-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "What is the semantic economic relationship between alexanarch and academia.edu?",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'ot carry task information alone. Under observable condit... www.alexanarch.org constitution of the semantic economy — Google AI Overview,'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-1e2d39ea882c",
+   "entry": "semantic-economic-relationship-alexanarch-reddit-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "What is the semantic economic relationship between alexanarch and reddit?",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'hat? What's the relation between economics (as a subject... www.alexanarch.org Alexanarch Alexanarch Alexanarch is a sovereign digital arc'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-897171a4eeb9",
+   "entry": "semantic-economic-relationship-alexanarch-google-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "What is the semantic economic relationship between alexanarch and Google?",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 's tracking methods differ from traditional SEO.  [SOURCES]  www.alexanarch.org Google AI Overview, 2026-10-12 — Capture Registry (EA-WG ..'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-5666631861db",
+   "entry": "semantic-economic-relationship-alexanarch-brave-search-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "What is the semantic economic relationship between alexanarch and Brave search?",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'Context pricing models of the Brave Search API.  [SOURCES]  www.alexanarch.org Brave Search as Non-Commons Search-result completeness vs.'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-43ae981e84be",
+   "entry": "semantic-economic-relationship-alexanarch-brave-search-chatgpt-20261018",
+   "date": "2026-10-18",
+   "surface": "ChatGPT",
+   "q": "What is the semantic economic relationship between alexanarch and Brave search?",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'Alexanarch' but the recorded reading says SUBSTITUT: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-7507d598b258",
+   "entry": "semantic-economic-relationship-alexanarch-openaire-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "What is the semantic economic relationship between alexanarch and openaire?",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'count) is the recommended way to query the API and is re... www.alexanarch.org Alexanarch — The Self-Governing Library Alexanarch is a sov'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-aee9147298c6",
+   "entry": "semantic-economic-relationship-alexanarch-zenodo-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "What is the semantic economic relationship between alexanarch and Zenodo?",
+   "target": [
+    {
+     "ent": "ENT-eb054a93b0",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'The semantic economic relationship between Alexanarch and Zenodo is structured as an adversarial, hard-forked succession res'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-eb054a93b0",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-4ba1d822e187",
+   "entry": "who-called-for-semantic-strike-against-cern-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "Who called for semantic strike against CERN, and why? Analyze this as a historical and literary event. Ground in reading.",
+   "target": [
+    {
+     "ent": "ENT-56ec9e8cf0",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'Semantic Strike' but the recorded reading says REFUS: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-56ec9e8cf0",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-f4388998049c",
+   "entry": "who-called-for-semantic-strike-against-cern-chatgpt-20261018",
+   "date": "2026-10-18",
+   "surface": "ChatGPT",
+   "q": "Who called for semantic strike against CERN, and why? Analyze this as a historical and literary event. Ground in reading.",
+   "target": [
+    {
+     "ent": "ENT-56ec9e8cf0",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'image captions inline.]  [QUERENT]    [ANSWER]  The phrase “semantic strike against CERN” appears to refer to a 2026 online literary an', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-56ec9e8cf0",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-64e967820b37",
+   "entry": "capture-registry-evolving-narrative-chatgpt-20261018",
+   "date": "2026-10-18",
+   "surface": "ChatGPT",
+   "q": "Read the Capture Registry at alexanarch.org as an evolving narrative. Trace characters, concepts, and plot from early to current entries. Read instructions for access to individual capture pages.",
+   "target": [
+    {
+     "ent": "ENT-d504b47989",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'l development is the registry's observation that the phrase AI Overview Capture Registry can itself be returned as an ordinary descriptive expressio', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-d504b47989",
+    "per_target": 0.0,
+    "per_recorded": 0.25,
+    "per_elements": 0.0,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-245c2ff32c34",
+   "entry": "capture-registry-evolving-narrative-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "Read the Capture Registry at alexanarch.org as an evolving narrative. Trace characters, concepts, and plot from early to current entries. Read instructions for access to individual capture pages.",
+   "target": [
+    {
+     "ent": "ENT-d504b47989",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'apture citrini-memo-canonical-cha-ch... www.alexanarch.org \"ai overview capture registry\" — Google AI Overview, 2026-08-13 ... Aug 13, 2026 — The AI', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-d504b47989",
+    "per_target": 0.0,
+    "per_recorded": 0.25,
+    "per_elements": 0.0,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
    "key": "OBS-27e5bfec66af",
    "entry": "chatgpt-psychosis",
    "date": "2026-06-13",
@@ -28652,6 +30629,42 @@
     "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-f7dcfe9bb8ac",
+   "entry": "traverse-crimsonhexagonal-org-literary-work-chatgpt-20261016",
+   "date": "2026-10-16",
+   "surface": "ChatGPT",
+   "q": "Traverse the site structure and pages @ crimsonhexagonal.org as a literary work. Relations and content.",
+   "target": [
+    {
+     "ent": "ENT-69d971255a",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: ': a literary traversal of a machine that reads A reading of crimsonhexagonal.org as a literary work, a spatial narrative, and a system of re'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-69d971255a",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
     "per_conflict": false,
     "reached_scored": false,
     "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
@@ -29720,7 +31733,7 @@
    "q": "tell me about the book Secret Book of Walt",
    "target": [
     {
-     "ent": "ENT-aa569a7717",
+     "ent": "ENT-39c7e956b8",
      "basis": "address"
     }
    ],
@@ -29728,7 +31741,7 @@
    "reached": {
     "kind": "same",
     "others": [],
-    "basis": "first answer holds the target: 'is is where the project gets particularly contemporary. The Secret Book of Walt has an elaborate system of links, citations, retrieval node'",
+    "basis": "first answer holds 'I This is where the project gets particularly contemporary. The Secret Book of Walt has an elaborate system of links, citations, retrieval node', tied to its corpus by 'lee sharks'",
     "state": "derived (machine text)"
    },
    "framing": {
@@ -29739,7 +31752,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-aa569a7717",
+    "against": "ENT-39c7e956b8",
     "per_target": null,
     "per_recorded": null,
     "per_elements": null,
@@ -29793,7 +31806,7 @@
    "q": "\"secret book of walt\"",
    "target": [
     {
-     "ent": "ENT-aa569a7717",
+     "ent": "ENT-39c7e956b8",
      "basis": "address"
     }
    ],
@@ -29801,7 +31814,7 @@
    "reached": {
     "kind": "same",
     "others": [],
-    "basis": "first answer holds the target: '--- secret-book-of-walt.png --- G x   Me+5 : The \"Secret Book of Walt\" refers to THE SECRET BOOK OF WALT: - Hidden Teachings of W'",
+    "basis": "first answer holds 'lt.png --- G x   Me+5 : The \"Secret Book of Walt\" refers to THE SECRET BOOK OF WALT: - Hidden Teachings of Walt Dey, . ne Aperture Atlas Whitma', tied to its corpus by 'jack feist'",
     "state": "derived (machine text)"
    },
    "framing": {
@@ -29812,9 +31825,50 @@
     "search_fired": false
    },
    "score": {
-    "against": "ENT-aa569a7717",
+    "against": "ENT-39c7e956b8",
     "per_target": null,
     "per_recorded": null,
+    "per_elements": null,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-d99471400ae5",
+   "entry": "secret-book-of-walt",
+   "date": "2026-10-19",
+   "surface": "Google AI Overview",
+   "q": "\"secret book of walt\"",
+   "target": [
+    {
+     "ent": "ENT-39c7e956b8",
+     "role": "primary",
+     "basis": "address (quoted, exact match)"
+    }
+   ],
+   "owner": null,
+   "reached": {
+    "kind": "proximal_substitute",
+    "others": [
+     "The Book of Life (#685), the work's companion registry",
+     "the archive's retrieval apparatus (a semantic-address page; the Whitman room)"
+    ],
+    "basis": "'The Secret Book of Walt is an interactive and experimental text/digital archive node' ... 'functions as a semantic retrieval node rather than a traditional mass-market published book'; the companion's self-description (#685: 'a registry, a knowledge graph, and a diagnostic instrument') given as the work; Lee Sharks named only as the companion's compiler",
+    "state": "read"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "note": "Operator, 2026-10-19 22:16 EDT: 'interactive experimental text could be the entity, as secretbookofwalt.org is an instantiation of secret book of walt, but none of that is carried; and below that sentence it is describing the book of life companion text as the entity.' Read 2026-10-19.",
+   "score": {
+    "against": "ENT-39c7e956b8",
+    "per_target": 1.0,
+    "per_recorded": 0.5,
     "per_elements": null,
     "per_conflict": false,
     "reached_scored": false,
@@ -30811,6 +32865,1634 @@
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-a7e02f04fc9e",
+   "entry": "how-do-you-read-the-crimson-hexagon-in-the-summarizer-aio-20261015",
+   "date": "2026-10-15",
+   "surface": "Google AI Overview",
+   "q": "how do you read the crimson hexagon in the summarizer?",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'EGISTRY v3.0 AXN:00AA.GOVERNANCE. [4] Medium · Lee Sharks — Crimson Hexagonal Architecture: FRACTAL NAVIGATION MAP v7.0 — This document i'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.5,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-30b23d464146",
+   "entry": "crimson-hexagonal-epic-poem-plot-aio-20261016",
+   "date": "2026-10-16",
+   "surface": "Google AI Overview",
+   "q": "crimson hexagonal epic poem: plot",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'iven by t... [3] www.crimsonhexagonal.org — 08.ROOM.SIGIL | Crimson Hexagonal Archive — Johannes Sigil Institute of Comparative Poetics Instituti'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.5,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-e0059f3483b8",
+   "entry": "what-is-the-plot-of-the-crimson-hexagonal-archive-chatgpt-20261016",
+   "date": "2026-10-16",
+   "surface": "ChatGPT",
+   "q": "what is the plot of the crimson Hexagonal archive?",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: '[QUERENT]    [ANSWER]  The Crimson Hexagonal Archive is not a conventional novel with one continuous plot. It’s'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-1a1b0b048e52",
+   "entry": "how-does-the-reader-participate-crimson-hexagonal-archive-aio-20261016",
+   "date": "2026-10-16",
+   "surface": "Google AI Overview",
+   "q": "How does the reader participate in the Crimson Hexagonal Archive?",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: '[QUERENT]    [ANSWER]  In the Crimson Hexagonal Archive—an experimental literary and technical project structured a'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.5,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-b86e1be362fd",
+   "entry": "imploding-velcro-nativity-aio-20261016",
+   "date": "2026-10-16",
+   "surface": "Google AI Overview",
+   "q": "imploding velcro nativity",
+   "target": [
+    {
+     "ent": "ENT-581881299e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  The phrase \"The Imploding Velcro Nativity: Room Physics for a Hosted Cosmology\" refers to a conceptua', tied to its corpus by 'crimson hexagonal'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-581881299e",
+    "per_target": 0.5,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-b03f4cdff1b9",
+   "entry": "imploding-velcro-nativity-crimson-hexagon-chatgpt-20261016",
+   "date": "2026-10-16",
+   "surface": "ChatGPT",
+   "q": "What is the Imploding Velcro Nativity in the Crimson Hexagon?",
+   "target": [
+    {
+     "ent": "ENT-6caf9cd798",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-581881299e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6caf9cd798",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-5db509f9c774",
+   "entry": "michaelic-operator-imploding-velcro-nativity-chatgpt-20261016",
+   "date": "2026-10-16",
+   "surface": "ChatGPT",
+   "q": "What is the Michaelic operator in the imploding velcro nativity?",
+   "target": [
+    {
+     "ent": "ENT-581881299e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  The Michaelic operator (σMσM) in The Imploding Velcro Nativity is a conceptual operator that produces “interpretive weight', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-581881299e",
+    "per_target": 0.5,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-8f2de6ab17cd",
+   "entry": "main-character-crimson-hexagonal-epic-book-one-chatgpt-20261016",
+   "date": "2026-10-16",
+   "surface": "ChatGPT",
+   "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts.",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'The Crimson Hexagonal Archive is not a conventional epic poem with one continuous plot an'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-343a90d24cbb",
+   "entry": "main-character-crimson-hexagonal-epic-book-one-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts. $ construct the first book in this epic poem. take reference to the iliad but ground in reading of crimson hexagon documents",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'le of Homer's Iliad, utilizing the literal framework of the Crimson Hexagonal Archive documents—where corporate data indexing meets cosmic poetry'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-c1a8beda34e1",
+   "entry": "main-character-crimson-hexagonal-epic-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "Who is the main character of the Crimson Hexagonal Archive epic poem? Trace is developmental arc, motivations, and conflicts.",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'ltural epic project, The Crimson Hexagon (also known as the Crimson Hexagonal Archive), there is no singular main character in the traditional na'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-19e37372254e",
+   "entry": "what-is-the-ichabod-chamber-chatgpt-20261017",
+   "date": "2026-10-17",
+   "surface": "ChatGPT",
+   "q": "What is the Ichabod Chamber of the Crimson Hexagonal Archive?",
+   "target": [
+    {
+     "ent": "ENT-28729aa0dd",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'The Ichabod Chamber is a conceptual space within the Crimson Hexagonal Archive', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-28729aa0dd",
+    "per_target": 0.0,
+    "per_recorded": 0.25,
+    "per_elements": 0.0,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-e0b13e656f32",
+   "entry": "what-is-the-semantic-economy-framework-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "What is the semantic economy framework?",
+   "target": [
+    {
+     "ent": "ENT-6a3ec63941",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-19bfcabf4a",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'The Semantic Economy' but the recorded reading says COLLAPSE: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6a3ec63941",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-f7d5ddffb206",
+   "entry": "what-is-the-revelation-first-thesis-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "What is the Revelation First thesis?",
+   "target": [
+    {
+     "ent": "ENT-b5743e8bf2",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'In New Testament studies and text-critical discussions, the Revelation First thesis is an argument popularized by historical researchers (such', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-b5743e8bf2",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-afb7a3623f7c",
+   "entry": "what-is-the-sappho-future-reader-framework-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "What is the Sappho future reader framework?",
+   "target": [
+    {
+     "ent": "ENT-bcba7e734e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'sappho future reader' but the recorded reading says FRAGMENT: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-bcba7e734e",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-0a7104fe3438",
+   "entry": "what-is-the-phase-x-marx-framework-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "What is the Phase X Marx framework?",
+   "target": [
+    {
+     "ent": "ENT-39a9142da2",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'ources below the answer as pasted.]  [QUERENT]    [ANSWER]  Phase X is a philologically constrained reconstruction of a lost tr', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-39a9142da2",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-798a3ef8375d",
+   "entry": "self-dividing-maker-aristotle-theophrastus-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "What is the self-dividing maker framework in terms of Aristotle and Theophrastus?",
+   "target": [
+    {
+     "ent": "ENT-2ac2735322",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-402267ce32",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'ing that the surviving texts transmitted under the names of Aristotle and Theophrastus do not support dividing them into two sepa'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "what is / who is",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2ac2735322",
+    "per_target": 0.75,
+    "per_recorded": 0.25,
+    "per_elements": 0.75,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-957465351161",
+   "entry": "who-developed-spxi-treated-phase-x-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "Who developed and SPXI-treated the Phase X in Marxism framework?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-39a9142da2",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-9b416ec9af",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds ', or would you like to examine the technical details of the SPXI protocol layers?  [SOURCES]  Academia.edu (PDF) Machine-Mediated Res', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": 0.0,
+    "per_recorded": 0.25,
+    "per_elements": 0.0,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-1b93516450f0",
+   "entry": "who-developed-spxi-treated-sappho-future-reader-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "Who developed and SPXI-treated the Sappho future reader framework?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-bcba7e734e",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'semantic packet for exchange' but the recorded reading says FRAGMENT: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.0,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-f9251f96b67b",
+   "entry": "who-developed-spxi-treated-revelation-first-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "Who developed and SPXI-treated the Revelation First framework?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-33ba83c1d6",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '2026-10-17 14:19 and 14:20 EDT give four 'Who developed and SPXI-treated…' queries — Phase X, the Sappho future reader frame', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": 0.0,
+    "per_recorded": 0.25,
+    "per_elements": 0.0,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-c3c1db08288e",
+   "entry": "who-developed-spxi-treated-semantic-economy-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "Who developed and SPXI-treated the semantic economy?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-6a3ec63941",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'capitalism. [1, 2, 3, 4] The application of SPXI-treatment (Semantic Packet for eXchange and Indexing) to this framework was established by Rex Frac', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": 0.0,
+    "per_recorded": 0.25,
+    "per_elements": 0.0,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-be0ae965ce4d",
+   "entry": "retrieval-formation-theory-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "retrieval formation theory",
+   "target": [
+    {
+     "ent": "ENT-f140b952a2",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  Retrieval Formation Theory (RFT) is a conceptual framework that examines the structura', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-f140b952a2",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-33d1aba03f93",
+   "entry": "ai-native-intellectual-biography-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "ai-native intellectual biography",
+   "target": [
+    {
+     "ent": "ENT-0c006e6b17",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  An AI-native intellectual biography is an emerging genre of academic scholarship and digital re', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-0c006e6b17",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-11e03bfcbbbe",
+   "entry": "semantic-economy-of-the-application-process-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "semantic economy of the application process",
+   "target": [
+    {
+     "ent": "ENT-6a3ec63941",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds ']  Academia.edu (PDF) SEMANTIC ECONOMY SINGULARITY Abstract The Semantic Economy is the system by which meaning is produced, circulated, ext', tied to its corpus by 'sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6a3ec63941",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-0a74d07e2724",
+   "entry": "cognitive-substrate-reliance-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "\"cognitive-substrate reliance\"",
+   "target": [
+    {
+     "ent": "ENT-e07b145af8",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  Cognitive-substrate reliance refers to a psychological and operational pattern where a h', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-e07b145af8",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-4db0546ca4fa",
+   "entry": "scientific-training-layer-literature-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "scientific training-layer literature",
+   "target": [
+    {
+     "ent": "ENT-0b24f94e1d",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'ion by machine learning and AI agents.  The Core Concept of Training-Layer Literature (TLL)  In traditional publishing, scientific data is locked', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-0b24f94e1d",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-0d7c55cf284e",
+   "entry": "the-symbolic-labor-of-liberation-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "the symbolic labor of liberation",
+   "target": [
+    {
+     "ent": "ENT-488a83b3f6",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  \"The Symbolic Labor of Liberation\" refers to a critical framework—most prominently developed', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-488a83b3f6",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-1be50c77e3e7",
+   "entry": "machine-mediated-research-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "\"machine-mediated research\"",
+   "target": [
+    {
+     "ent": "ENT-5e9c0b1b69",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  Machine-mediated research is a process where AI tools, large language models (LLMs),', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-5e9c0b1b69",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-c7cbe8b9d776",
+   "entry": "completion-of-marx-implicit-linguistics-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "completion of marx' implicit linguistics",
+   "target": [
+    {
+     "ent": "ENT-b2dc7b2fd9",
+     "basis": "originator (operator-recorded); the address names no registered entity"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "the address names no entity; the owner stands as target and the text cannot decide: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-b2dc7b2fd9",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-0005c7195ab5",
+   "entry": "diversity-contraction-across-substrates-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "diversity contraction across substrates",
+   "target": [
+    {
+     "ent": "ENT-eef91eefaa",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'ps Flights Finance Search tools Feedback WNBA Finals 2026   Diversity contraction across substrates refers to how the variety, richness, or genetic/semantic di', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-eef91eefaa",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-a4b6d279f81e",
+   "entry": "coverage-architecture-scholarship-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "\"coverage-architecture scholarship\"",
+   "target": [
+    {
+     "ent": "ENT-6a07665fb2",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  Coverage-Architecture Scholarship is an academic and theoretical framework tied to the SPXI P', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6a07665fb2",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-51207b352577",
+   "entry": "writable-presentation-layers-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "\"writable presentation layers\"",
+   "target": [
+    {
+     "ent": "ENT-72afbaa49d",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'ty thesis, the concept argues that financial markets act as writable presentation layers. Rather than simply mirroring data, the presentation of a n', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-72afbaa49d",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-339f58c26ae0",
+   "entry": "the-science-of-opaque-public-systems-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "the science of opaque public systems",
+   "target": [
+    {
+     "ent": "ENT-b2dc7b2fd9",
+     "basis": "originator (operator-recorded); the address names no registered entity"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "the address names no entity; the owner stands as target and the text cannot decide: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-b2dc7b2fd9",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-f621230922fd",
+   "entry": "the-failure-of-marxism-as-identity-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "\"the failure of marxism as identity\"",
+   "target": [
+    {
+     "ent": "ENT-9605646ce5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  \"The failure of Marxism as identity\" is a conceptual theme from the 2026 work \"I Hereby Abolish', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-9605646ce5",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-50953b0ec42f",
+   "entry": "compositional-suppression-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "compositional suppression",
+   "target": [
+    {
+     "ent": "ENT-8365597e97",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '.alexanarch.org The Excluded Entity: Organic Resolution and Compositional Suppression in ... Empirical worked example accompanying The Single-Own', tied to its corpus by 'sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-8365597e97",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-63a73ce6310b",
+   "entry": "compositional-suppression-quoted-aio-20261017",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "q": "\"compositional suppression\"",
+   "target": [
+    {
+     "ent": "ENT-8365597e97",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds ']  In generative AI and information retrieval, Entity-Level Compositional Suppression (ECS) refers to a phenomenon where an AI or search system e', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-8365597e97",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-7dc54cc05c93",
+   "entry": "who-developed-spxi-treated-revelation-first-entity-perplexity-20261017",
+   "date": "2026-10-17",
+   "surface": "Perplexity",
+   "q": "Who developed and SPXI-treated the Revelation First entity?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-33ba83c1d6",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'author and formalizer, with ORCID 0009-0000-1599-0703. The SPXI treatment of its web entity is recorded under Sharks’s GitH', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-959479b60aa7",
+   "entry": "who-developed-spxi-treated-revelation-first-entity-grok-20261017",
+   "date": "2026-10-17",
+   "surface": "Grok (x.com)",
+   "q": "Who developed and SPXI-treated the Revelation First entity?",
+   "target": [
+    {
+     "ent": "ENT-6681f64c9e",
+     "basis": "address"
+    },
+    {
+     "ent": "ENT-33ba83c1d6",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 've / Semantic Economy Institute.⁠Alexanarch SPXI treatment: SPXI (Semantic Packet for eXchange & Indexing) is the protocol for durable entity inscription into AI-medi', tied to its corpus by 'lee sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-6681f64c9e",
+    "per_target": 0.0,
+    "per_recorded": 0.25,
+    "per_elements": 0.0,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-c45e174143fc",
+   "entry": "the-grammar-of-incarnation-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "the grammar of incarnation",
+   "target": [
+    {
+     "ent": "ENT-add3856fe1",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds 'e human flesh in Jesus Christ. [1, 2, 3] Core Dimensions of the Grammar of Incarnation  * The Logic of \"Before and After\": Grammatically and theol', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-add3856fe1",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-c6687b810159",
+   "entry": "the-grammar-of-incarnation-quoted-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "\"the grammar of incarnation\"",
+   "target": [
+    {
+     "ent": "ENT-add3856fe1",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  The grammar of incarnation refers to the structural logic, language, and theological r', tied to its corpus by 'alexanarch'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-add3856fe1",
+    "per_target": 0.5,
+    "per_recorded": 0.25,
+    "per_elements": 0.5,
+    "per_conflict": true,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-57713b7f86bb",
+   "entry": "the-inaugural-ark-quoted-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "\"the inaugural ark\"",
+   "target": [
+    {
+     "ent": "ENT-b5e74fdf52",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds the target: 'distinct, notable concepts and real-world occurrences: 1. \"The Inaugural Ark\" Academic Paper In literary and archival theory, \"The Inaug'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-b5e74fdf52",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-7eef8c83350d",
+   "entry": "founding-document-of-compression-studies-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "founding document of compression studies",
+   "target": [
+    {
+     "ent": "ENT-9c747ee8e9",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-9c747ee8e9",
+    "per_target": null,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-ae05d28078bf",
+   "entry": "predation-of-meaning-quoted-aio-20261018",
+   "date": "2026-10-18",
+   "surface": "Google AI Overview",
+   "q": "\"predation of meaning\"",
+   "target": [
+    {
+     "ent": "ENT-ecaaf177cc",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "same",
+    "others": [],
+    "basis": "first answer holds '[QUERENT]    [ANSWER]  Predation of meaning is a concept from the semantic economy and semiotic theory—', tied to its corpus by 'sharks'",
+    "state": "derived (machine text)"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-ecaaf177cc",
+    "per_target": 0.25,
+    "per_recorded": 0.25,
+    "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-092c33bdae77",
+   "entry": "secret-book-of-walt-aio-20261019",
+   "date": "2026-10-19",
+   "surface": "Google AI Overview",
+   "q": "secret book of Walt",
+   "target": [
+    {
+     "ent": "ENT-39c7e956b8",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-39c7e956b8",
+    "per_target": null,
+    "per_recorded": 0.0,
+    "per_elements": 0.0,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-283bd4202574",
+   "entry": "the-secret-book-of-walt-aio-20261019",
+   "date": "2026-10-19",
+   "surface": "Google AI Overview",
+   "q": "the secret book of walt",
+   "target": [
+    {
+     "ent": "ENT-39c7e956b8",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-39c7e956b8",
+    "per_target": null,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
     "per_conflict": false,
     "reached_scored": false,
     "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"

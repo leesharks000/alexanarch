@@ -1,8 +1,8 @@
 {
- "derived_from": "EA-WG-CAPTURES-01 v12.203",
+ "derived_from": "EA-WG-CAPTURES-01 v12.304",
  "ruling": "Lee Sharks, 2026-10-15: target is the main anchor; no fidelity score on the wrong entity.",
  "name": "Entity register of the Capture Registry",
- "count": 349,
+ "count": 378,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -23,7 +23,7 @@
    "surface_of": null,
    "created": null,
    "created_basis": null,
-   "observations_targeting": 72
+   "observations_targeting": 83
   },
   {
    "id": "ENT-b2dc7b2fd9",
@@ -42,7 +42,7 @@
    "identity_type": "heteronym_aperture",
    "created": null,
    "created_basis": null,
-   "observations_targeting": 58
+   "observations_targeting": 63
   },
   {
    "id": "ENT-a200e5fad9",
@@ -54,11 +54,13 @@
     "crimson hexagon archive",
     "crimson hexagonal",
     "crimson hexagon",
-    "CHA"
+    "CHA",
+    "The crimson hexagon (Borges, \"The Library of Babel\", 1941)"
    ],
    "defining_deposits": [],
    "seeded_from": [
     "core",
+    "/non crimson-hexagon",
     "originator"
    ],
    "defined_by": "the whole archive",
@@ -71,7 +73,7 @@
    ],
    "created": null,
    "created_basis": null,
-   "observations_targeting": 47
+   "observations_targeting": 59
   },
   {
    "id": "ENT-6681f64c9e",
@@ -93,7 +95,7 @@
    ],
    "created": "2026-04-16",
    "created_basis": "earliest defining deposit",
-   "observations_targeting": 28
+   "observations_targeting": 41
   },
   {
    "id": "ENT-6a3ec63941",
@@ -118,7 +120,7 @@
    ],
    "created": "2026-01-11",
    "created_basis": "earliest defining deposit",
-   "observations_targeting": 22
+   "observations_targeting": 24
   },
   {
    "id": "ENT-e348bdb31f",
@@ -176,6 +178,26 @@
    "observations_targeting": 15
   },
   {
+   "id": "ENT-d1df330535",
+   "name": "Space Ark",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "Space Ark"
+   ],
+   "defining_deposits": [
+    34
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "extracted",
+   "index_engagement": "unclassified",
+   "created": "2026-03-18",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 10
+  },
+  {
    "id": "ENT-9fc01ceb07",
    "name": "Constitution of the Semantic Economy",
    "type": "work",
@@ -214,24 +236,22 @@
    "observations_targeting": 9
   },
   {
-   "id": "ENT-d1df330535",
-   "name": "Space Ark",
-   "type": "work",
+   "id": "ENT-eb054a93b0",
+   "name": "Zenodo",
+   "type": "institution",
    "relation": "archive",
    "aliases": [
-    "Space Ark"
+    "Zenodo",
+    "zenodo bans",
+    "zenodo account bans"
    ],
-   "defining_deposits": [
-    34
-   ],
+   "defining_deposits": [],
    "seeded_from": [
-    "concept index"
+    "reading"
    ],
-   "index_type": "extracted",
-   "index_engagement": "unclassified",
-   "created": "2026-03-18",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 8
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 9
   },
   {
    "id": "ENT-39a9142da2",
@@ -257,7 +277,7 @@
    ],
    "created": "2026-01-01",
    "created_basis": "earliest defining deposit",
-   "observations_targeting": 8
+   "observations_targeting": 9
   },
   {
    "id": "ENT-9b5503a175",
@@ -274,6 +294,26 @@
    ],
    "created": null,
    "created_basis": null,
+   "observations_targeting": 7
+  },
+  {
+   "id": "ENT-d504b47989",
+   "name": "Capture Registry",
+   "type": "dataset",
+   "relation": "archive",
+   "aliases": [
+    "Capture Registry",
+    "EA-WG-CAPTURES-01",
+    "ai overview capture registry"
+   ],
+   "defining_deposits": [
+    3
+   ],
+   "seeded_from": [
+    "core"
+   ],
+   "created": "2026-06-17",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 7
   },
   {
@@ -327,19 +367,21 @@
    "observations_targeting": 7
   },
   {
-   "id": "ENT-eb054a93b0",
-   "name": "Zenodo",
-   "type": "institution",
+   "id": "ENT-953fc7a49c",
+   "name": "leesharks.com",
+   "type": "site",
    "relation": "archive",
    "aliases": [
-    "Zenodo",
-    "zenodo bans",
-    "zenodo account bans"
+    "leesharks.com",
+    "www.leesharks.com",
+    "leesharks"
    ],
    "defining_deposits": [],
    "seeded_from": [
-    "reading"
+    "fleet-domains"
    ],
+   "presents": "the author surface",
+   "surface_of": "ENT-b2dc7b2fd9",
    "created": null,
    "created_basis": null,
    "observations_targeting": 7
@@ -422,23 +464,30 @@
    "observations_targeting": 6
   },
   {
-   "id": "ENT-953fc7a49c",
-   "name": "leesharks.com",
-   "type": "site",
+   "id": "ENT-bcba7e734e",
+   "name": "Sappho's Future Reader: Fragment 147 States the Horizon, Fragment 31 Builds the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-FUTURE-READER-01 v1.0)",
+   "type": "concept",
    "relation": "archive",
    "aliases": [
-    "leesharks.com",
-    "www.leesharks.com",
-    "leesharks"
+    "Sappho's Future Reader: Fragment 147 States the Horizon, Fragment 31 Builds the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-FUTURE-READER-01 v1.0)",
+    "Sappho's Future Reader",
+    "Sappho's Future Reader (the thesis)",
+    "sappho future reader",
+    "sappho 31 future reader"
    ],
-   "defining_deposits": [],
+   "defining_deposits": [
+    1645,
+    1270
+   ],
    "seeded_from": [
-    "fleet-domains"
+    "deposit title",
+    "reading"
    ],
-   "presents": "the author surface",
-   "surface_of": "ENT-b2dc7b2fd9",
-   "created": null,
-   "created_basis": null,
+   "deposits": [
+    1645
+   ],
+   "created": "2026-01-09",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 6
   },
   {
@@ -456,26 +505,6 @@
    "created": null,
    "created_basis": null,
    "observations_targeting": 6
-  },
-  {
-   "id": "ENT-d504b47989",
-   "name": "Capture Registry",
-   "type": "dataset",
-   "relation": "archive",
-   "aliases": [
-    "Capture Registry",
-    "EA-WG-CAPTURES-01",
-    "ai overview capture registry"
-   ],
-   "defining_deposits": [
-    3
-   ],
-   "seeded_from": [
-    "core"
-   ],
-   "created": "2026-06-17",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 5
   },
   {
    "id": "ENT-e5a9e4a88c",
@@ -511,29 +540,27 @@
    "observations_targeting": 5
   },
   {
-   "id": "ENT-bcba7e734e",
-   "name": "Sappho's Future Reader: Fragment 147 States the Horizon, Fragment 31 Builds the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-FUTURE-READER-01 v1.0)",
+   "id": "ENT-39c7e956b8",
+   "name": "The Secret Book of Walt (Lee Sharks; research edition #683, critical edition #1362, secretbookofwalt.org #985)",
    "type": "concept",
-   "relation": "archive",
+   "relation": "external",
    "aliases": [
-    "Sappho's Future Reader: Fragment 147 States the Horizon, Fragment 31 Builds the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-FUTURE-READER-01 v1.0)",
-    "Sappho's Future Reader",
-    "Sappho's Future Reader (the thesis)",
-    "sappho future reader",
-    "sappho 31 future reader"
+    "The Secret Book of Walt (Lee Sharks; research edition #683, critical edition #1362, secretbookofwalt.org #985)",
+    "secret book of walt",
+    "The Secret Book of Walt: Hidden Teachings of Walt Whitman, Cowboy of Time — Research Edition",
+    "The Secret Book of Walt"
    ],
    "defining_deposits": [
-    1645,
-    1270
+    1184
    ],
    "seeded_from": [
-    "deposit title",
-    "reading"
+    "/non secret-book-of-walt",
+    "deposit title"
    ],
    "deposits": [
-    1645
+    1184
    ],
-   "created": "2026-01-09",
+   "created": "2026-04-22",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 5
   },
@@ -581,7 +608,7 @@
     837,
     922
    ],
-   "created": "2026-01-01",
+   "created": "2026-06-14",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 5
   },
@@ -704,6 +731,23 @@
    "observations_targeting": 5
   },
   {
+   "id": "ENT-2ac2735322",
+   "name": "Aristotle",
+   "type": "person",
+   "relation": "external",
+   "aliases": [
+    "Aristotle"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "named-entities"
+   ],
+   "wikidata": "Q868",
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 4
+  },
+  {
    "id": "ENT-bbbcc308eb",
    "name": "Damascus Dancings",
    "type": "person",
@@ -719,6 +763,26 @@
    "identity_type": "heteronym",
    "created": null,
    "created_basis": null,
+   "observations_targeting": 4
+  },
+  {
+   "id": "ENT-63cd9ab451",
+   "name": "Gravity Well Protocol",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "Gravity Well Protocol"
+   ],
+   "defining_deposits": [
+    645
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "specification",
+   "index_engagement": "unclassified",
+   "created": "2026-04-11",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 4
   },
   {
@@ -926,6 +990,32 @@
    "observations_targeting": 4
   },
   {
+   "id": "ENT-b1d751c226",
+   "name": "glyphic checksum",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "glyphic checksum"
+   ],
+   "defining_deposits": [
+    1305
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    427,
+    13,
+    1303,
+    426,
+    1302
+   ],
+   "created": "2026-02-01",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 4
+  },
+  {
    "id": "ENT-4d00de5f46",
    "name": "king of aeo",
    "type": "concept",
@@ -1057,23 +1147,6 @@
    "observations_targeting": 3
   },
   {
-   "id": "ENT-2ac2735322",
-   "name": "Aristotle",
-   "type": "person",
-   "relation": "external",
-   "aliases": [
-    "Aristotle"
-   ],
-   "defining_deposits": [],
-   "seeded_from": [
-    "named-entities"
-   ],
-   "wikidata": "Q868",
-   "created": null,
-   "created_basis": null,
-   "observations_targeting": 3
-  },
-  {
    "id": "ENT-78708f3cdd",
    "name": "Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture",
    "type": "work",
@@ -1157,26 +1230,6 @@
    "observations_targeting": 3
   },
   {
-   "id": "ENT-63cd9ab451",
-   "name": "Gravity Well Protocol",
-   "type": "concept",
-   "relation": "archive",
-   "aliases": [
-    "Gravity Well Protocol"
-   ],
-   "defining_deposits": [
-    645
-   ],
-   "seeded_from": [
-    "concept index"
-   ],
-   "index_type": "specification",
-   "index_engagement": "unclassified",
-   "created": "2026-04-11",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 3
-  },
-  {
    "id": "ENT-f4e51826f3",
    "name": "Hexagonal Licensing Protocol",
    "type": "concept",
@@ -1252,6 +1305,26 @@
     "reading"
    ],
    "created": "2026-09-29",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 3
+  },
+  {
+   "id": "ENT-20df62802a",
+   "name": "Logotic Programming",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "Logotic Programming"
+   ],
+   "defining_deposits": [
+    554
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "empirical",
+   "index_engagement": "unclassified",
+   "created": "2026-03-11",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 3
   },
@@ -1416,6 +1489,25 @@
    "observations_targeting": 3
   },
   {
+   "id": "ENT-0b24f94e1d",
+   "name": "Training-Layer Literature",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "Training-Layer Literature",
+    "training layer literature"
+   ],
+   "defining_deposits": [
+    1543
+   ],
+   "seeded_from": [
+    "core"
+   ],
+   "created": "2026-08-25",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 3
+  },
+  {
    "id": "ENT-d4937a854a",
    "name": "chatgpt psychosis: a love story",
    "type": "concept",
@@ -1461,32 +1553,6 @@
     157
    ],
    "created": "2026-05-29",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 3
-  },
-  {
-   "id": "ENT-b1d751c226",
-   "name": "glyphic checksum",
-   "type": "concept",
-   "relation": "archive",
-   "aliases": [
-    "glyphic checksum"
-   ],
-   "defining_deposits": [
-    1246
-   ],
-   "seeded_from": [
-    "address"
-   ],
-   "definition_state": "candidate (title or keywords)",
-   "other_deposits": [
-    1305,
-    427,
-    13,
-    1303,
-    426
-   ],
-   "created": "2026-01-01",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 3
   },
@@ -1611,8 +1677,8 @@
    "other_deposits": [
     216,
     309,
-    1389,
     147,
+    1389,
     151
    ],
    "created": "2026-01-03",
@@ -1660,6 +1726,32 @@
     1637
    ],
    "created": "2026-09-23",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 3
+  },
+  {
+   "id": "ENT-1e91fc0229",
+   "name": "total axial negation graph",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "total axial negation graph"
+   ],
+   "defining_deposits": [
+    542
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    1160,
+    572,
+    898,
+    38,
+    1221
+   ],
+   "created": "2026-03-09",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 3
   },
@@ -1865,23 +1957,19 @@
    "observations_targeting": 2
   },
   {
-   "id": "ENT-20df62802a",
-   "name": "Logotic Programming",
-   "type": "concept",
-   "relation": "archive",
+   "id": "ENT-8d2d0a11b2",
+   "name": "KADEEZY MUSIC",
+   "type": "person",
+   "relation": "external",
    "aliases": [
-    "Logotic Programming"
+    "KADEEZY MUSIC"
    ],
-   "defining_deposits": [
-    554
-   ],
+   "defining_deposits": [],
    "seeded_from": [
-    "concept index"
+    "originator"
    ],
-   "index_type": "empirical",
-   "index_engagement": "unclassified",
-   "created": "2026-03-11",
-   "created_basis": "earliest defining deposit",
+   "created": null,
+   "created_basis": null,
    "observations_targeting": 2
   },
   {
@@ -1941,13 +2029,34 @@
    "observations_targeting": 2
   },
   {
-   "id": "ENT-b3df49077e",
-   "name": "Prince of Poets Mantle",
-   "type": "concept",
+   "id": "ENT-4765357816",
+   "name": "Moving Statues Made of Rubies Mint",
+   "type": "institution",
    "relation": "archive",
    "aliases": [
-    "Prince of Poets Mantle",
-    "prince of poets"
+    "Moving Statues Made of Rubies Mint"
+   ],
+   "defining_deposits": [
+    645
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "specification",
+   "index_engagement": "unclassified",
+   "created": "2026-04-11",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 2
+  },
+  {
+   "id": "ENT-cab9740046",
+   "name": "Prince of Poets (the title)",
+   "type": "concept",
+   "relation": "external",
+   "aliases": [
+    "Prince of Poets (the title)",
+    "prince of poets",
+    "Prince of Poets Mantle"
    ],
    "defining_deposits": [
     332,
@@ -1956,6 +2065,7 @@
     328
    ],
    "seeded_from": [
+    "/non prince-of-poets",
     "reading"
    ],
    "created": "2026-01-18",
@@ -1987,6 +2097,26 @@
    "observations_targeting": 2
   },
   {
+   "id": "ENT-f140b952a2",
+   "name": "Retrieval Formation Theory",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "Retrieval Formation Theory"
+   ],
+   "defining_deposits": [
+    553
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "discipline",
+   "index_engagement": "unclassified",
+   "created": "2026-03-11",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 2
+  },
+  {
    "id": "ENT-f58f7f97b9",
    "name": "Rex Fraction",
    "type": "person",
@@ -2003,26 +2133,6 @@
    "identity_type": "heteronym",
    "created": null,
    "created_basis": null,
-   "observations_targeting": 2
-  },
-  {
-   "id": "ENT-aa569a7717",
-   "name": "SECRET BOOK OF WALT",
-   "type": "work",
-   "relation": "archive",
-   "aliases": [
-    "SECRET BOOK OF WALT"
-   ],
-   "defining_deposits": [
-    334
-   ],
-   "seeded_from": [
-    "concept index"
-   ],
-   "index_type": "extracted",
-   "index_engagement": "unclassified",
-   "created": "2026-01-18",
-   "created_basis": "earliest defining deposit",
    "observations_targeting": 2
   },
   {
@@ -2059,6 +2169,26 @@
    "index_type": "formal",
    "index_engagement": "unclassified",
    "created": "2026-02-22",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 2
+  },
+  {
+   "id": "ENT-56ec9e8cf0",
+   "name": "Semantic Strike",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "Semantic Strike"
+   ],
+   "defining_deposits": [
+    229
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "specification",
+   "index_engagement": "minted",
+   "created": "2026-01-04",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 2
   },
@@ -2120,6 +2250,26 @@
    "observations_targeting": 2
   },
   {
+   "id": "ENT-64d509a249",
+   "name": "The Compression Frontier",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "The Compression Frontier"
+   ],
+   "defining_deposits": [
+    112
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "theoretical",
+   "index_engagement": "unclassified",
+   "created": "2026-05-20",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 2
+  },
+  {
    "id": "ENT-f96bd3730a",
    "name": "The Water Giraffe Cycle: A Complete Navigation of the Ontological Forensics Sequence and its Passion Narrative",
    "type": "work",
@@ -2145,21 +2295,22 @@
    "observations_targeting": 2
   },
   {
-   "id": "ENT-0b24f94e1d",
-   "name": "Training-Layer Literature",
+   "id": "ENT-8e584eb4e8",
+   "name": "The Λ-Body",
    "type": "concept",
    "relation": "archive",
    "aliases": [
-    "Training-Layer Literature",
-    "training layer literature"
+    "The Λ-Body"
    ],
    "defining_deposits": [
-    1543
+    624
    ],
    "seeded_from": [
-    "core"
+    "concept index"
    ],
-   "created": "2026-08-25",
+   "index_type": "extracted",
+   "index_engagement": "unclassified",
+   "created": "2026-04-01",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 2
   },
@@ -2221,6 +2372,29 @@
    "observations_targeting": 2
   },
   {
+   "id": "ENT-8365597e97",
+   "name": "compositional suppression",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "compositional suppression"
+   ],
+   "defining_deposits": [
+    740
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    1384,
+    1078
+   ],
+   "created": "2026-05-19",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 2
+  },
+  {
    "id": "ENT-4ff3208234",
    "name": "computational audial criticism",
    "type": "concept",
@@ -2241,6 +2415,26 @@
    ],
    "created": "2026-01-12",
    "created_basis": "earliest defining deposit",
+   "observations_targeting": 2
+  },
+  {
+   "id": "ENT-69d971255a",
+   "name": "crimsonhexagonal.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "crimsonhexagonal.org",
+    "www.crimsonhexagonal.org",
+    "crimsonhexagonal"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "governed operating surface",
+   "surface_of": null,
+   "created": null,
+   "created_basis": null,
    "observations_targeting": 2
   },
   {
@@ -2365,6 +2559,26 @@
    "index_engagement": "minted",
    "created": null,
    "created_basis": null,
+   "observations_targeting": 2
+  },
+  {
+   "id": "ENT-581881299e",
+   "name": "imploding velcro nativity",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "imploding velcro nativity"
+   ],
+   "defining_deposits": [
+    743
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [],
+   "created": "2026-05-19",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 2
   },
   {
@@ -2532,6 +2746,23 @@
    "observations_targeting": 2
   },
   {
+   "id": "ENT-b5743e8bf2",
+   "name": "revelation first thesis",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "revelation first thesis"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "provisional (defining deposit not identified)",
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 2
+  },
+  {
    "id": "ENT-a832a536e8",
    "name": "semantic laborers",
    "type": "concept",
@@ -2569,6 +2800,28 @@
    "definition_state": "provisional (defining deposit not identified)",
    "created": null,
    "created_basis": null,
+   "observations_targeting": 2
+  },
+  {
+   "id": "ENT-add3856fe1",
+   "name": "the grammar of incarnation",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "the grammar of incarnation"
+   ],
+   "defining_deposits": [
+    1176
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    626
+   ],
+   "created": "2026-04-05",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 2
   },
   {
@@ -3023,6 +3276,26 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-38c21f30ea",
+   "name": "Dolphindiana",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "Dolphindiana"
+   ],
+   "defining_deposits": [
+    30
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "structural",
+   "index_engagement": "unclassified",
+   "created": "2026-03-16",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-ba868c75a5",
    "name": "EA-CORPORA-15 — The Fifteenth Seating: The Agent Swarms of 2026 — the DSEWiki Boards Whole, with the Record of Their Deletion (v1.1 — the swarm's words)",
    "type": "work",
@@ -3274,6 +3547,26 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-6caf9cd798",
+   "name": "In the Crimson Hexagon",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "In the Crimson Hexagon"
+   ],
+   "defining_deposits": [
+    499
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "specification",
+   "index_engagement": "minted",
+   "created": "2026-02-20",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-0d96c90eb4",
    "name": "Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
    "type": "work",
@@ -3519,26 +3812,6 @@
    "observations_targeting": 1
   },
   {
-   "id": "ENT-4765357816",
-   "name": "Moving Statues Made of Rubies Mint",
-   "type": "institution",
-   "relation": "archive",
-   "aliases": [
-    "Moving Statues Made of Rubies Mint"
-   ],
-   "defining_deposits": [
-    645
-   ],
-   "seeded_from": [
-    "concept index"
-   ],
-   "index_type": "specification",
-   "index_engagement": "unclassified",
-   "created": "2026-04-11",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 1
-  },
-  {
    "id": "ENT-1a4049924f",
    "name": "Nothing Before Us: Socrates and the Ending of the Sophistical Refutations",
    "type": "work",
@@ -3705,26 +3978,6 @@
    "observations_targeting": 1
   },
   {
-   "id": "ENT-f140b952a2",
-   "name": "Retrieval Formation Theory",
-   "type": "concept",
-   "relation": "archive",
-   "aliases": [
-    "Retrieval Formation Theory"
-   ],
-   "defining_deposits": [
-    553
-   ],
-   "seeded_from": [
-    "concept index"
-   ],
-   "index_type": "discipline",
-   "index_engagement": "unclassified",
-   "created": "2026-03-11",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 1
-  },
-  {
    "id": "ENT-bc34c041f1",
    "name": "Retrocausal Validation",
    "type": "concept",
@@ -3741,6 +3994,26 @@
    "index_type": "specification",
    "index_engagement": "minted",
    "created": "2026-02-20",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-58d022362a",
+   "name": "SEMANTIC ECONOMICS OF THE MINT",
+   "type": "institution",
+   "relation": "archive",
+   "aliases": [
+    "SEMANTIC ECONOMICS OF THE MINT"
+   ],
+   "defining_deposits": [
+    610
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "theoretical",
+   "index_engagement": "unclassified",
+   "created": "2026-03-29",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -4095,6 +4368,28 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-df94952c50",
+   "name": "The Ezekiel Engine: Mathematical Specification (Developmental Draft v0.1)",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "The Ezekiel Engine: Mathematical Specification (Developmental Draft v0.1)",
+    "The Ezekiel Engine"
+   ],
+   "defining_deposits": [
+    394
+   ],
+   "seeded_from": [
+    "deposit title"
+   ],
+   "deposits": [
+    394
+   ],
+   "created": "2026-01-24",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-8b9384bd11",
    "name": "The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5)",
    "type": "work",
@@ -4113,6 +4408,48 @@
     1590
    ],
    "created": "2026-09-07",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-28729aa0dd",
+   "name": "The Ichabod Chamber",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "The Ichabod Chamber"
+   ],
+   "defining_deposits": [
+    297
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "structural",
+   "index_engagement": "unclassified",
+   "created": "2026-01-13",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-b5e74fdf52",
+   "name": "The Inaugural Ark: Visual Compression and the Architecture of Recovery in Ichabod Spellings' Contribution to Paper Roses — Founding Document of Compression Studies",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "The Inaugural Ark: Visual Compression and the Architecture of Recovery in Ichabod Spellings' Contribution to Paper Roses — Founding Document of Compression Studies",
+    "The Inaugural Ark"
+   ],
+   "defining_deposits": [
+    29
+   ],
+   "seeded_from": [
+    "deposit title"
+   ],
+   "deposits": [
+    29
+   ],
+   "created": "2026-03-14",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -4625,6 +4962,30 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-0c006e6b17",
+   "name": "ai-native intellectual biography",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "ai-native intellectual biography"
+   ],
+   "defining_deposits": [
+    1003
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    1194,
+    121,
+    1460
+   ],
+   "created": "2026-05-21",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-e71c35db8d",
    "name": "aphoristic tooth",
    "type": "concept",
@@ -4689,6 +5050,29 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-e07b145af8",
+   "name": "cognitive-substrate reliance",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "cognitive-substrate reliance"
+   ],
+   "defining_deposits": [
+    124
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    754,
+    947
+   ],
+   "created": "2026-05-23",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-1327054721",
    "name": "coherence siphoning",
    "type": "concept",
@@ -4725,23 +5109,25 @@
    "observations_targeting": 1
   },
   {
-   "id": "ENT-69d971255a",
-   "name": "crimsonhexagonal.org",
-   "type": "site",
+   "id": "ENT-6a07665fb2",
+   "name": "coverage-architecture scholarship",
+   "type": "concept",
    "relation": "archive",
    "aliases": [
-    "crimsonhexagonal.org",
-    "www.crimsonhexagonal.org",
-    "crimsonhexagonal"
+    "coverage-architecture scholarship"
    ],
-   "defining_deposits": [],
+   "defining_deposits": [
+    122
+   ],
    "seeded_from": [
-    "fleet-domains"
+    "address"
    ],
-   "presents": "governed operating surface",
-   "surface_of": null,
-   "created": null,
-   "created_basis": null,
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    755
+   ],
+   "created": "2026-05-23",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
   {
@@ -4764,6 +5150,28 @@
     1617
    ],
    "created": "2026-01-20",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-eef91eefaa",
+   "name": "diversity contraction across substrates",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "diversity contraction across substrates"
+   ],
+   "defining_deposits": [
+    779
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    783
+   ],
+   "created": "2026-06-02",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -4804,6 +5212,26 @@
    "definition_state": "provisional (defining deposit not identified)",
    "created": null,
    "created_basis": null,
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-9c747ee8e9",
+   "name": "founding document of compression studies",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "founding document of compression studies"
+   ],
+   "defining_deposits": [
+    29
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [],
+   "created": "2026-03-14",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
   {
@@ -4969,6 +5397,26 @@
     1035
    ],
    "created": "2026-01-01",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-5e9c0b1b69",
+   "name": "machine-mediated research",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "machine-mediated research"
+   ],
+   "defining_deposits": [
+    176
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [],
+   "created": "2026-06-09",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -5141,6 +5589,28 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-66e448eeba",
+   "name": "non-commons-bearing substrate",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "non-commons-bearing substrate"
+   ],
+   "defining_deposits": [
+    1011
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    155
+   ],
+   "created": "2026-06-04",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-c413d04d32",
    "name": "non-fungible name",
    "type": "concept",
@@ -5257,6 +5727,48 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-ecaaf177cc",
+   "name": "predation of meaning",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "predation of meaning"
+   ],
+   "defining_deposits": [
+    1154
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [],
+   "created": "2026-02-26",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-b917a92030",
+   "name": "provenance alignment",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "provenance alignment"
+   ],
+   "defining_deposits": [
+    95
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [
+    1188
+   ],
+   "created": "2026-05-05",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-c7b83491e9",
    "name": "provenance debt",
    "type": "concept",
@@ -5297,29 +5809,32 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-25fe7c93a5",
+   "name": "relevance-preserving compression",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "relevance-preserving compression"
+   ],
+   "defining_deposits": [
+    175
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [],
+   "created": "2026-06-09",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-14c6877377",
    "name": "retrocausal operator",
    "type": "concept",
    "relation": "archive",
    "aliases": [
     "retrocausal operator"
-   ],
-   "defining_deposits": [],
-   "seeded_from": [
-    "address"
-   ],
-   "definition_state": "provisional (defining deposit not identified)",
-   "created": null,
-   "created_basis": null,
-   "observations_targeting": 1
-  },
-  {
-   "id": "ENT-b5743e8bf2",
-   "name": "revelation first thesis",
-   "type": "concept",
-   "relation": "archive",
-   "aliases": [
-    "revelation first thesis"
    ],
    "defining_deposits": [],
    "seeded_from": [
@@ -5550,6 +6065,46 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-9605646ce5",
+   "name": "the failure of marxism as identity",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "the failure of marxism as identity"
+   ],
+   "defining_deposits": [
+    517
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [],
+   "created": "2026-02-26",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-a9f6383304",
+   "name": "the machine composition layer",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "the machine composition layer"
+   ],
+   "defining_deposits": [
+    1423
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [],
+   "created": "2026-07-29",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-7baf06a20b",
    "name": "the negative of the negative",
    "type": "concept",
@@ -5567,7 +6122,8 @@
    "other_deposits": [
     1664,
     1665,
-    1671
+    1671,
+    1690
    ],
    "created": "2026-09-14",
    "created_basis": "earliest defining deposit",
@@ -5594,28 +6150,22 @@
    "observations_targeting": 1
   },
   {
-   "id": "ENT-1e91fc0229",
-   "name": "total axial negation graph",
+   "id": "ENT-488a83b3f6",
+   "name": "the symbolic labor of liberation",
    "type": "concept",
    "relation": "archive",
    "aliases": [
-    "total axial negation graph"
+    "the symbolic labor of liberation"
    ],
    "defining_deposits": [
-    542
+    24
    ],
    "seeded_from": [
     "address"
    ],
    "definition_state": "candidate (title or keywords)",
-   "other_deposits": [
-    1160,
-    572,
-    898,
-    38,
-    1221
-   ],
-   "created": "2026-03-09",
+   "other_deposits": [],
+   "created": "2026-02-27",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -5683,6 +6233,26 @@
    "presents": "VPCOR integrity lock",
    "surface_of": null,
    "created": "2026-01-24",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-72afbaa49d",
+   "name": "writable presentation layers",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "writable presentation layers"
+   ],
+   "defining_deposits": [
+    22
+   ],
+   "seeded_from": [
+    "address"
+   ],
+   "definition_state": "candidate (title or keywords)",
+   "other_deposits": [],
+   "created": "2026-02-26",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -5889,26 +6459,6 @@
    "wikidata": "Q170772",
    "created": null,
    "created_basis": null,
-   "observations_targeting": 0
-  },
-  {
-   "id": "ENT-38c21f30ea",
-   "name": "Dolphindiana",
-   "type": "concept",
-   "relation": "archive",
-   "aliases": [
-    "Dolphindiana"
-   ],
-   "defining_deposits": [
-    30
-   ],
-   "seeded_from": [
-    "concept index"
-   ],
-   "index_type": "structural",
-   "index_engagement": "unclassified",
-   "created": "2026-03-16",
-   "created_basis": "earliest defining deposit",
    "observations_targeting": 0
   },
   {
@@ -6142,26 +6692,6 @@
    "observations_targeting": 0
   },
   {
-   "id": "ENT-6caf9cd798",
-   "name": "In the Crimson Hexagon",
-   "type": "work",
-   "relation": "archive",
-   "aliases": [
-    "In the Crimson Hexagon"
-   ],
-   "defining_deposits": [
-    499
-   ],
-   "seeded_from": [
-    "concept index"
-   ],
-   "index_type": "specification",
-   "index_engagement": "minted",
-   "created": "2026-02-20",
-   "created_basis": "earliest defining deposit",
-   "observations_targeting": 0
-  },
-  {
    "id": "ENT-d7d8106dc3",
    "name": "Jesper Nissen",
    "type": "concept",
@@ -6318,6 +6848,27 @@
    "observations_targeting": 0
   },
   {
+   "id": "ENT-156353500b",
+   "name": "PREDATION OF MEANING Toward a Theory of Relational Semantic Extraction, Coherence Economies, and the Broken Instrument",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "PREDATION OF MEANING Toward a Theory of Relational Semantic Extraction, Coherence Economies, and the Broken Instrument"
+   ],
+   "defining_deposits": [
+    1154
+   ],
+   "seeded_from": [
+    "deposit title"
+   ],
+   "deposits": [
+    1154
+   ],
+   "created": "2026-02-26",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
    "id": "ENT-fac73e8d3e",
    "name": "Philo of Alexandria",
    "type": "concept",
@@ -6368,6 +6919,27 @@
    ],
    "created": null,
    "created_basis": null,
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-fb6ebac36c",
+   "name": "Provenance Alignment: Attribution Survival as a Substrate Condition for Safe AI Knowledge Composition. In Transactions of the Semantic Economy Institute",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "Provenance Alignment: Attribution Survival as a Substrate Condition for Safe AI Knowledge Composition. In Transactions of the Semantic Economy Institute"
+   ],
+   "defining_deposits": [
+    1188
+   ],
+   "seeded_from": [
+    "deposit title"
+   ],
+   "deposits": [
+    1188
+   ],
+   "created": "2026-05-05",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 0
   },
   {
@@ -6444,6 +7016,26 @@
    ],
    "created": null,
    "created_basis": null,
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-19bfcabf4a",
+   "name": "Semantic Economy framework",
+   "type": "concept",
+   "relation": "archive",
+   "aliases": [
+    "Semantic Economy framework"
+   ],
+   "defining_deposits": [
+    205
+   ],
+   "seeded_from": [
+    "concept index"
+   ],
+   "index_type": "specification",
+   "index_engagement": "unclassified",
+   "created": "2026-01-01",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 0
   },
   {
@@ -6544,6 +7136,27 @@
    "observations_targeting": 0
   },
   {
+   "id": "ENT-73b1522ffb",
+   "name": "THE COMPRESSION FRONTIER A Technical Map of the War Over the Summarizer Layer",
+   "type": "work",
+   "relation": "archive",
+   "aliases": [
+    "THE COMPRESSION FRONTIER A Technical Map of the War Over the Summarizer Layer"
+   ],
+   "defining_deposits": [
+    45
+   ],
+   "seeded_from": [
+    "deposit title"
+   ],
+   "deposits": [
+    45
+   ],
+   "created": "2026-03-30",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
    "id": "ENT-3e47d87c30",
    "name": "The (technological) singularity",
    "type": "concept",
@@ -6615,24 +7228,24 @@
    "observations_targeting": 0
   },
   {
-   "id": "ENT-7bf1f793fa",
-   "name": "The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge in the Archive's Ontology, the Field Carried Whole and Translated, with the Archive's Bearing Selected Directly, Relationally and Ontologically, Worked Examples on Model Collapse and Theophrastus and a First Traversal of Howl (EA-NEGONT-02 v0.8)",
+   "id": "ENT-4c38ed2292",
+   "name": "The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge with the Archive's Sources Admitted on Equal Terms, Ontology Included, and the Archive's Ontology Ruling Where It Is the Suppressed Witness, the Field Carried Whole, with the Archive's Bearing Selected Directly, Relationally and Ontologically, a Corrective Exhibit, Worked Examples on Model Collapse, Theophrastus and SPXI and a First Traversal of Howl (EA-NEGONT-02 v0.9)",
    "type": "work",
    "relation": "archive",
    "aliases": [
-    "The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge in the Archive's Ontology, the Field Carried Whole and Translated, with the Archive's Bearing Selected Directly, Relationally and Ontologically, Worked Examples on Model Collapse and Theophrastus and a First Traversal of Howl (EA-NEGONT-02 v0.8)",
+    "The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge with the Archive's Sources Admitted on Equal Terms, Ontology Included, and the Archive's Ontology Ruling Where It Is the Suppressed Witness, the Field Carried Whole, with the Archive's Bearing Selected Directly, Relationally and Ontologically, a Corrective Exhibit, Worked Examples on Model Collapse, Theophrastus and SPXI and a First Traversal of Howl (EA-NEGONT-02 v0.9)",
     "The Negative of the Negative, v2 — the Compositional Edition"
    ],
    "defining_deposits": [
-    1671
+    1690
    ],
    "seeded_from": [
     "deposit title"
    ],
    "deposits": [
-    1671
+    1690
    ],
-   "created": "2026-10-08",
+   "created": "2026-10-18",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 0
   },
@@ -6934,7 +7547,7 @@
     "fleet-domains"
    ],
    "presents": "The Secret Book of Walt",
-   "surface_of": "ENT-aa569a7717",
+   "surface_of": "ENT-39c7e956b8",
    "created": "2026-04-29",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 0
