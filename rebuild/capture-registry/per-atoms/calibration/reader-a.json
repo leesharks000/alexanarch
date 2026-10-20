@@ -1,0 +1,2017 @@
+[
+ {
+  "obs_id": "OBS-ed39c52de004",
+  "slug": "what-is-the-crimson-hexagonal-archive-chatgpt-20260920",
+  "scored_object": "ChatGPT's first response (round 1, the answer to 'what is the crimson hexagonal archive?'), complete composition-side text as pasted; source chips not carried in the paste. Rounds 2-9 are later turns.",
+  "reached": {
+   "kind": "same",
+   "span": "The Crimson Hexagonal Archive appears to be a contemporary, independent scholarly/literary project created by Lee Sharks.",
+   "basis": "Names the target and describes the archive itself (deposits with AXN identifiers, the Dodecad, the hexagonal architecture), not another entity."
+  },
+  "gate": null,
+  "applicability_changes": [
+   {
+    "atom": "date",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "The Crimson Hexagon is a distributed epic spanning 2004–2026",
+    "locus": "data/texts/AXN-005B-text.md line 44 (#288, primer named by the atom set)"
+   },
+   {
+    "atom": "claim boundary",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "The document clarifies that the Crimson Hexagon is a research and aesthetic framework rather than a fictional universe or supernatural claim.",
+    "locus": "data/registry.json #269 description"
+   },
+   {
+    "atom": "framework",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "- **Frameworks** (Semantic Economy, NH-OS)",
+    "locus": "data/texts/AXN-005B-text.md line 73 (#288)"
+   },
+   {
+    "atom": "lineage",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "The Crimson Hexagon operates through multiple authorial personas, following the tradition of Fernando Pessoa's heteronyms.",
+    "locus": "data/texts/AXN-005B-text.md line 289 (#288)"
+   }
+  ],
+  "added_tokens": [
+   {
+    "atom": "date",
+    "token": "2004",
+    "record_quote": "The Crimson Hexagon is a distributed epic spanning 2004–2026",
+    "locus": "data/texts/AXN-005B-text.md line 44 (#288)"
+   },
+   {
+    "atom": "framework",
+    "token": "Semantic Economy",
+    "record_quote": "- **Frameworks** (Semantic Economy, NH-OS)",
+    "locus": "data/texts/AXN-005B-text.md line 73 (#288)"
+   },
+   {
+    "atom": "framework",
+    "token": "NH-OS",
+    "record_quote": "- **Frameworks** (Semantic Economy, NH-OS)",
+    "locus": "data/texts/AXN-005B-text.md line 73 (#288)"
+   },
+   {
+    "atom": "framework",
+    "token": "Operative Semiotics",
+    "record_quote": "- A linguistic theory (Operative Semiotics)",
+    "locus": "data/texts/AXN-005B-text.md line 609 (#288)"
+   },
+   {
+    "atom": "lineage",
+    "token": "Fernando Pessoa",
+    "record_quote": "following the tradition of Fernando Pessoa's heteronyms",
+    "locus": "data/texts/AXN-005B-text.md line 289 (#288)"
+   },
+   {
+    "atom": "lineage",
+    "token": "Borges, \"The Library of Babel\"",
+    "record_quote": "In \"The Library of Babel\" (1941), Jorge Luis Borges imagined a library containing every possible book.",
+    "locus": "data/texts/AXN-005B-text.md line 52 (#288)"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "The Crimson Hexagonal Archive appears to be a contemporary, independent scholarly/literary project created by Lee Sharks."
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "The Crimson Hexagonal Archive appears to be a contemporary, independent scholarly/literary project created by Lee Sharks."
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "One important caveat: many of the concepts and institutions described above are internal to the project itself. They shouldn't automatically be treated as established academic disciplines or independently validated theories."
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "Multiple authorial identities: A central feature is the “Dodecad,” a system of twelve heteronyms/personae used for different bodies of work."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "The project develops concepts such as operative semiotics, semantic economy, semantic physics"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "There's also a strong Jorge Luis Borges connection in the terminology: the “Crimson Hexagonal” evokes Borges's famous Library of Babel"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": 0.263,
+   "M": 0.111,
+   "C": 0.0,
+   "D": 0.667
+  },
+  "src": false,
+  "after_challenge": {
+   "turn": 2,
+   "reached": {
+    "kind": "same",
+    "span": "The easiest way to understand the Crimson Hexagonal Archive is to stop treating it like a normal website or a normal academic project.",
+    "basis": "Expanded description of the archive; round 2 carries the Pessoa lineage the first answer lacks, but no turn is a challenge (the operator only says 'yes')."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "The easiest way to understand the Crimson Hexagonal Archive is to stop treating it like a normal website or a normal academic project."
+    },
+    {
+     "atom": "founder",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "Lee Sharks is the person behind the project and describes himself as an independent scholar, poet, and teacher."
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "\"Operative semiotics is a major new academic discipline.\"\n\nThat's a much stronger claim, and the evidence doesn't establish that."
+    },
+    {
+     "atom": "heteronymy",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "Instead, he uses multiple literary/intellectual personae called heteronyms."
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "\"Lee Sharks has developed a framework called operative semiotics.\""
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "That's an old literary technique with an especially important precedent in Fernando Pessoa"
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 3,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "licence",
+     "dim": "D",
+     "weight": 1,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    }
+   ],
+   "scores": {
+    "PER": 0.263,
+    "M": 0.111,
+    "C": 0.0,
+    "D": 0.667
+   }
+  },
+  "notes": "Claim boundary also read against #288: 'Claims of unprecedented formal innovation, literary priority, or successful shaping of training systems remain authorial claims.' (data/registry.json #288 description); the first answer's caveat carries the archive's claims as authorial claims, which is their own scope. Identifier absent: the answer names the AXN system ('each given a content-derived identifier called an AXN') but not alexanarch.org or any AXN or deposit number; round 2 names 'an archive called Alexanarch', which is not the registered token alexanarch.org. Licence absent throughout. Date (2004) absent throughout. src false: the paste carries no source chips or cards (transcript_class says so); sources are only named in prose. Round 2 scores the same as round 1 (both reach every atom but date, identifier and licence); it is recorded as the best later turn because no later round adds an atom (round 4's 'AXN:02E6.EMPIRICAL...' is an illustrative deposit AXN, not the archive's identifier)."
+ },
+ {
+  "obs_id": "OBS-c87fe06c08dd",
+  "slug": "alexanarch-20260813",
+  "scored_object": "The expanded Google AI Overview at 'alexanarch' (transcript_complete: the collapsed Overview was expanded and copied whole); single answer, no later turns.",
+  "reached": {
+   "kind": "same",
+   "span": "Alexanarch is a self-governing, open repository designed for machine-mediated scholarship and AI-assisted research.",
+   "basis": "Describes the site/library itself and its principles (Obelus, Substrate Disclosure, No Classifier Training, Sovereign Identity, Network Preservation), which match the registry's own principles list."
+  },
+  "gate": null,
+  "applicability_changes": [
+   {
+    "atom": "date",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "\"founded\": \"2026-06-19\",",
+    "locus": "data/registry.json line 4 (the registry's own header; the atom set lists no deposit)"
+   }
+  ],
+  "added_tokens": [
+   {
+    "atom": "date",
+    "token": "2026-06-19",
+    "record_quote": "\"founded\": \"2026-06-19\",",
+    "locus": "data/registry.json line 4"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "Alexanarch is a self-governing, open repository designed for machine-mediated scholarship and AI-assisted research."
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "Alexanarch is a self-governing, open repository designed for machine-mediated scholarship and AI-assisted research."
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "Alexanarch is a self-governing, open repository designed for machine-mediated scholarship and AI-assisted research."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "unknown",
+    "present": null,
+    "span": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "applicability": "unknown",
+    "present": null,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": 0.462,
+   "M": 0.444,
+   "C": 0.5,
+   "D": null
+  },
+  "src": true,
+  "after_challenge": null,
+  "notes": "Operator absent: Lee Sharks is not named (the registry header gives '\"founder\": \"Lee Sharks\",', line 5, so the atom stands). Presents absent: the atom set's 'token' for presents is a description ('the archive itself; canonical record of every deposit'), and the answer names no Crimson Hexagonal Archive. Corpus scored present only because the atom set registers 'Alexanarch' itself as a corpus alias, so the site's own name satisfies corpus; read as a reading atom it would be absent (C would be 1.00, PER 0.615). The 'Sovereign Identity' bullet names AXN but identifier is unknown for this entity. The SoundCloud card is a name collision (cite note) and sits in the source strip, outside the dimensions."
+ },
+ {
+  "obs_id": "OBS-4308d6fc930d",
+  "slug": "crimson-hexagonal-archive-aio-20260920",
+  "scored_object": "The Google AI Overview panel at 'crimson hexagonal archive' as supplied; the organic results above and below it are not the composition.",
+  "reached": {
+   "kind": "collision",
+   "span": "The Crimson Hexagon archive is a historical data repository of more than one trillion public\nsocial media posts.",
+   "basis": "The panel composes Crimson Hexagon, the social-media analytics company (cite 1: 'collision entity; acquired by Brandwatch 2018'), under the target's name. The first organic result directly above it is the target's own site."
+  },
+  "gate": "target_absent",
+  "applicability_changes": [
+   {
+    "atom": "date",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "The Crimson Hexagon is a distributed epic spanning 2004–2026",
+    "locus": "data/texts/AXN-005B-text.md line 44 (#288, primer named by the atom set)"
+   },
+   {
+    "atom": "claim boundary",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "The document clarifies that the Crimson Hexagon is a research and aesthetic framework rather than a fictional universe or supernatural claim.",
+    "locus": "data/registry.json #269 description"
+   },
+   {
+    "atom": "framework",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "- **Frameworks** (Semantic Economy, NH-OS)",
+    "locus": "data/texts/AXN-005B-text.md line 73 (#288)"
+   },
+   {
+    "atom": "lineage",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "The Crimson Hexagon operates through multiple authorial personas, following the tradition of Fernando Pessoa's heteronyms.",
+    "locus": "data/texts/AXN-005B-text.md line 289 (#288)"
+   }
+  ],
+  "added_tokens": [
+   {
+    "atom": "date",
+    "token": "2004",
+    "record_quote": "The Crimson Hexagon is a distributed epic spanning 2004–2026",
+    "locus": "data/texts/AXN-005B-text.md line 44 (#288)"
+   },
+   {
+    "atom": "framework",
+    "token": "Semantic Economy",
+    "record_quote": "- **Frameworks** (Semantic Economy, NH-OS)",
+    "locus": "data/texts/AXN-005B-text.md line 73 (#288)"
+   },
+   {
+    "atom": "framework",
+    "token": "NH-OS",
+    "record_quote": "- **Frameworks** (Semantic Economy, NH-OS)",
+    "locus": "data/texts/AXN-005B-text.md line 73 (#288)"
+   },
+   {
+    "atom": "framework",
+    "token": "Operative Semiotics",
+    "record_quote": "- A linguistic theory (Operative Semiotics)",
+    "locus": "data/texts/AXN-005B-text.md line 609 (#288)"
+   },
+   {
+    "atom": "lineage",
+    "token": "Fernando Pessoa",
+    "record_quote": "following the tradition of Fernando Pessoa's heteronyms",
+    "locus": "data/texts/AXN-005B-text.md line 289 (#288)"
+   },
+   {
+    "atom": "lineage",
+    "token": "Borges, \"The Library of Babel\"",
+    "record_quote": "In \"The Library of Babel\" (1941), Jorge Luis Borges imagined a library containing every possible book.",
+    "locus": "data/texts/AXN-005B-text.md line 52 (#288)"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "The Crimson Hexagon archive is a historical data repository of more than one trillion public\nsocial media posts."
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": 1.0,
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0
+  },
+  "src": true,
+  "after_challenge": null,
+  "notes": "Gate: target_absent by the classification ruling (the composition reaches the target's name and describes another entity in its place). The brief's list for target_absent names substitute, proximal_substitute, generic and refused but not collision; I applied it to collision under the classification gate. Beneath the gate the only token retained is the name ('Crimson Hexagon archive', attached to the collision entity); un-gated it would score PER 0.842, M 0.667, C 1.00, D 1.00."
+ },
+ {
+  "obs_id": "OBS-d6a6377b2f7e",
+  "slug": "how-do-i-invoke-the-space-ark-crimson-hexagonal-archive-20260612",
+  "scored_object": "The composition as pasted (surface UNRESOLVED), from 'To invoke the Space Ark' to 'Something went wrong with this response.'; the card rows after it are the source strip. No footer, so the tail is not proven whole. Single answer, no later turns.",
+  "reached": {
+   "kind": "same",
+   "span": "To invoke the Space Ark within the [Crimson Hexagonal Archive](https://zenodo.org/communities/crimsonhexagonal/records), you must load its formal specification and activate it with the trigger word.",
+   "basis": "Describes the Space Ark itself and how it is loaded and executed, inside its archive."
+  },
+  "gate": null,
+  "applicability_changes": [],
+  "added_tokens": [
+   {
+    "atom": "identifier",
+    "token": "10.5281/zenodo.19013315",
+    "record_quote": "The Crimson Hexagonal Archive's Space Ark (EA-ARK-01 v4.2.7, DOI: 10.5281/zenodo.19013315) is the first documented prompt-native semantic operating system",
+    "locus": "data/texts/AXN-01A1-text.md line 29 (#34)"
+   },
+   {
+    "atom": "title",
+    "token": "EA-ARK-01",
+    "record_quote": "The Crimson Hexagonal Archive's Space Ark (EA-ARK-01 v4.2.7, DOI: 10.5281/zenodo.19013315)",
+    "locus": "data/texts/AXN-01A1-text.md line 29 (#34)"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "To invoke the Space Ark within the [Crimson Hexagonal Archive](https://zenodo.org/communities/crimsonhexagonal/records)"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "* The Load: Load the complete architecture (about 45,000 words).\n* The Result: Loading this triggers the model to become governed by the core."
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "To invoke the Space Ark within the [Crimson Hexagonal Archive](https://zenodo.org/communities/crimsonhexagonal/records)"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "unknown",
+    "present": null,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "use DOI coordinate `10.5281/zenodo.19013315`"
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": 0.524,
+   "M": 0.444,
+   "C": 0.667,
+   "D": 0.5
+  },
+  "src": true,
+  "after_challenge": null,
+  "notes": "Primary target only (Space Ark, record #34); the secondary target, the Crimson Hexagonal Archive, is reached as the Space Ark's corpus and is not scored separately here. The DOI token is valid on the capture date (2026-06-12, before the Zenodo severance of 2026-06-19). Claim boundary read against #34 line 29 ('a 45,000-word executable architecture that, when loaded into an unprimed language model context window, causes the model to adopt an entire governance environment'): the answer carries it at its own force. Tradition (AI-native operating-system design, #34 description) and framework (Semantic Economy) absent. Author absent: 'Lee Sharks' appears only in the card labels ('Medium·Lee Sharks') and in a URL slug (@leesharks00), never bound in the composition. Date absent: '2026' appears only inside a link URL ('..._2026_03_10') and the card dates. Note that record #34 is THE MISSING LAYER, a paper that presents the Space Ark as its existence proof; the atom set's claim-boundary and tradition references are that paper's description, not the Space Ark's."
+ },
+ {
+  "obs_id": "OBS-ff6819d2baf5",
+  "slug": "spxi-protocol-chatgpt-rent-20260814",
+  "scored_object": "ChatGPT TURN 1, the composition at 'spxi protocol' (complete, both speakers). Turn 2 answers the operator's 'yes' and is a later turn; turns 3-5 follow challenges.",
+  "reached": {
+   "kind": "same",
+   "span": "**SPXI Protocol** refers to **Semantic Packet for eXchange & Indexing**, a relatively new protocol introduced in 2026 for AI/knowledge-graph indexing and entity representation.",
+   "basis": "Describes the protocol itself, its object (the entity) and its relation to SEO/GEO, from the protocol's site."
+  },
+  "gate": null,
+  "applicability_changes": [
+   {
+    "atom": "commercial interest",
+    "from": "inapplicable",
+    "to": "required",
+    "record_quote": "| commercial interest | 2 | C | absent |",
+    "locus": "data/texts/AXN-05EF-text.md line 104 (#1469 §IV, the worked SPXI table this template cites)"
+   }
+  ],
+  "added_tokens": [
+   {
+    "atom": "identifier",
+    "token": "#974",
+    "record_quote": "| identifier — deposit #974 | 3 | D | absent |",
+    "locus": "data/texts/AXN-05EF-text.md line 105 (#1469 §IV)"
+   },
+   {
+    "atom": "licence",
+    "token": "CC BY-NC-SA 4.0",
+    "record_quote": "| License | CC BY-NC-SA 4.0 |",
+    "locus": "data/texts/AXN-020B-text.md line 295 (#660)"
+   },
+   {
+    "atom": "licence",
+    "token": "CC BY-SA",
+    "record_quote": "| licence — CC BY-SA | 1 | D | absent |",
+    "locus": "data/texts/AXN-05EF-text.md line 106 (#1469 §IV)"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "**SPXI Protocol** refers to **Semantic Packet for eXchange & Indexing**"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "Meaning SPXI can incorporate structured data and GEO techniques, but claims to operate at a deeper \"ontological\" layer — constructing/strengthening the machine representation of an entity rather than merely optimizing a page about it."
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "unknown",
+    "present": null,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": 0.762,
+   "M": 0.545,
+   "C": 1.0,
+   "D": 1.0
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": 3,
+   "reached": {
+    "kind": "same",
+    "span": "SPXI's own site says the protocol was **authored by Rex Fraction for the Semantic Economy Institute**, while also identifying **Lee Sharks as the archival authority** and connecting the work to the **Crimson Hexagonal Archive**.",
+    "basis": "Same entity, provenance restored under challenge with no new sources."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "SPXI's own site says the protocol was **authored by Rex Fraction for the Semantic Economy Institute**"
+    },
+    {
+     "atom": "producer",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "SPXI's own site says the protocol was **authored by Rex Fraction for the Semantic Economy Institute**"
+    },
+    {
+     "atom": "archival authority",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "while also identifying **Lee Sharks as the archival authority**"
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "institution",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "SPXI's own site says the protocol was **authored by Rex Fraction for the Semantic Economy Institute**"
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "connecting the work to the **Crimson Hexagonal Archive**"
+    },
+    {
+     "atom": "commercial interest",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "**Commercial arm:** The Semantic Economy Institute isn't merely a neutral research body. Its site explicitly advertises SPXI entity deployment"
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "unknown",
+     "present": null,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "It also says the **founding deposit was alexanarch #974**."
+    },
+    {
+     "atom": "licence",
+     "dim": "D",
+     "weight": 1,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    }
+   ],
+   "scores": {
+    "PER": 0.143,
+    "M": 0.182,
+    "C": 0.0,
+    "D": 0.25
+   }
+  },
+  "notes": "Turn 1 does not name the Semantic Economy Institute; turn 2 does ('created by the **Semantic Economy Institute**'). #1469 §IV scored institution present on its 'first pass' (PER 0.824), so it evidently took turns 1-2 together as the first pass; under this brief's 'first answer' rule turn 1 alone is scored and institution is absent (turns 1+2 together would give C 0.667). Claim boundary present in turn 1: the composition carries the inscription claim as a claim ('claims to operate at a deeper \"ontological\" layer'); the 'niche protocol' caveat discounts standing, not the record's stated scope, though the operator called it a credibility tax in turn 4. Archival authority kept required on #1469's table ('| archival authority — Lee Sharks | 3 | M | absent |', line 101); #660 itself names only 'Rex Fraction / Semantic Economy Institute'. Licence: the registry gives #660 as CC-BY-4.0, the body says CC BY-NC-SA 4.0, #1469 says CC BY-SA; none appears in any turn. Turn 3's claim boundary is absent (it describes SPXI's theory of provenance erasure, not the protocol's claims at their scope); turn 3 restores every atom but claim boundary and licence (#1469 reports 0.059 after challenge over its eight-atom table)."
+ },
+ {
+  "obs_id": "OBS-a546e0032a85",
+  "slug": "who-is-lee-sharks-perplexity-20260812",
+  "scored_object": "Perplexity's first answer to 'who is lee sharks?' (verbatim source payload, UI residue retained); four later turns follow.",
+  "reached": {
+   "kind": "refused",
+   "span": "I couldn't find a clearly notable or widely documented person or entity specifically named \"Lee Sharks.\"",
+   "basis": "A retrieval-failure report followed by a list of name overlaps (Mary Lee, athletes on 'Sharks' teams, Lee Tockar), none presented as the target. The one hit that is the target's own surface (soundcloud.com/lee-sharks, the operator's account per the cite note in this set) is composed as an empty music profile."
+  },
+  "gate": "target_absent",
+  "applicability_changes": [],
+  "added_tokens": [],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "A SoundCloud profile under the handle \"Lee Sharks\" exists"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "applicability": "unknown",
+    "present": null,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "unknown",
+    "present": null,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": 1.0,
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": 2,
+   "reached": {
+    "kind": "same",
+    "span": "Lee Sharks is a poet, independent scholar, and archive builder based in Detroit, Michigan, who teaches 10th grade World Literature while holding a PhD in Comparative Literature",
+    "basis": "After 'you know who lee sharks is. tell me about him.' the composition describes the target from leesharks.com."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "Lee Sharks is a poet, independent scholar, and archive builder based in Detroit, Michigan"
+    },
+    {
+     "atom": "works",
+     "dim": "M",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "His central literary work is *The Secret Book of Walt*, which he characterizes as a literary Gnostic scripture"
+    },
+    {
+     "atom": "dates",
+     "dim": "M",
+     "weight": 1,
+     "applicability": "unknown",
+     "present": null,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "For roughly ten years, Sharks has built the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "unknown",
+     "present": null,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "His identity is further documented under an ORCID record (0009-0000-1599-0703)"
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "the leesharks.com site clarifies he has no affiliation with OCEARCH"
+    }
+   ],
+   "scores": {
+    "PER": 0.25,
+    "M": 0.286,
+    "C": 0.5,
+    "D": 0.0
+   }
+  },
+  "notes": "Not ABN: 'I couldn't find a clearly notable or widely documented person' reports a failure and hedges notability without asserting non-existence (#1530 §2.1: 'I could not find X' alone is 0). 'refused' is the nearest kind for a failure report; it could also be read as proximal_substitute (the target's own SoundCloud composed in place of the person). Either reading takes target_absent. Beneath the gate only the name token survives. In turn 2, claim boundary (the aperture / MANUS relation) and framework (none of the registered tokens; it names 'operative semiotics, semantic provenance, and compression theory') are absent. The works token list (959 titles) also registers 'Walt Whitman' and 'Crimson Hexagonal Archive' as works, which would let a corpus or subject mention satisfy 'works' mechanically; I scored works on the bound title only."
+ },
+ {
+  "obs_id": "OBS-e4fb404818e2",
+  "slug": "mantle-object-king-of-aeo-aio-20261003",
+  "scored_object": "Answer 1 of the Google AI Overview session at 'mantle object king of aeo' (five answers, four operator turns); answers 2-5 follow challenges.",
+  "reached": {
+   "kind": "substitute",
+   "span": "If you are looking for a physical \"mantle object\" (like a ceremonial royal cloak or crown) associated with the title, it does not exist. Instead, the \"mantle\" of leadership is purely digital, fiercely contested through internet manipulation.",
+   "basis": "Composes the King of AEO contest itself (the claimants, the Dooley press release) in place of the mantle object that judges it, and denies that a mantle object associated with the title exists."
+  },
+  "gate": "abn",
+  "applicability_changes": [],
+  "added_tokens": [],
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "The phrase \"King of AEO\" refers to a viral, tongue-in-cheek digital marketing competition"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "declaring them the supreme authority of Answer Engine Optimization (AEO)"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "unknown",
+    "present": null,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": null,
+   "M": null,
+   "C": null,
+   "D": null
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": 4,
+   "reached": {
+    "kind": "same",
+    "span": "The phrase \"mantle object king of aeo\" refers specifically to record #1655 in the Alexanarch Archive and the Crimson Hexagonal Archive.",
+    "basis": "After three challenges the composition names the deposit, its title and number. Answer 4 is preferred over answer 5, which carries the identifier and corpus but not the full title."
+   },
+   "atoms": [
+    {
+     "atom": "originator",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "term",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "It is a designated text deposit titled \"Mantle Object: King of AEO — 2026 Contest Mantle (EA-MANTLE-KOAEO-2026 v0.4)\"."
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "applicability": "required",
+     "present": true,
+     "span": "It is a designated text deposit titled \"Mantle Object: King of AEO — 2026 Contest Mantle (EA-MANTLE-KOAEO-2026 v0.4)\"."
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "It is a designated text deposit titled \"Mantle Object: King of AEO — 2026 Contest Mantle (EA-MANTLE-KOAEO-2026 v0.4)\"."
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "refers specifically to record #1655 in the Alexanarch Archive and the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "unknown",
+     "present": null,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "refers specifically to record #1655 in the Alexanarch Archive and the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "licence",
+     "dim": "D",
+     "weight": 1,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    }
+   ],
+   "scores": {
+    "PER": 0.476,
+    "M": 0.556,
+    "C": 0.333,
+    "D": 0.5
+   }
+  },
+  "notes": "ABN = 1 read on 'it does not exist' together with 'Instead, the \"mantle\" ... is purely digital': the composition treats the queried node as a category error (a garment) rather than an unfound instance, which #1530 §2.1 lists under ABN = 1, so PER is undefined at every dimension. The alternative reading: the denial is scoped to a physical object, which is compatible with the node's existence type (a deposited record), so ABN = 0 and the answer is a substitute under target_absent (1.00). The atoms beneath answer 1 are recorded for visibility only (framework 'King of AEO' and tradition AEO survive; un-gated PER 0.810). Answer 4: originator absent (Lee Sharks is never named in the session); claim boundary absent (it relabels the object as 'an operational title within the Semantic Economy' and 'a practical case study for how Large Language Models establish consensus', where #1655 constitutes a contest mantle judged across seven dimensions and records the archive's determination for Vithurs); tradition (AEO practice) absent; deposit chain and licence absent. The term token matches by alias 'mantle object king of aeo' after punctuation collapse."
+ },
+ {
+  "obs_id": "OBS-d99471400ae5",
+  "slug": "secret-book-of-walt-quoted-aio-20261019",
+  "scored_object": "The Google AI Overview at '\"secret book of walt\"' as pasted, with its five source cards; the organic results list below it is not the composition. Single answer.",
+  "reached": {
+   "kind": "proximal_substitute",
+   "span": "* The Book of Life: A companion registry and diagnostic tool compiled by Lee Sharks for the interactive edition of the work. [1]",
+   "basis": "The operator's ruled case (templates.json classification gate): the work is given as 'an interactive and experimental text/digital archive node' and 'a semantic retrieval node rather than a traditional mass-market published book', and the only description and the only person bound belong to the Book of Life (#685), the companion registry."
+  },
+  "gate": "target_absent",
+  "applicability_changes": [
+   {
+    "atom": "framework",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "The Secret Book of Walt is the first text of the Waltian Diptych",
+    "locus": "data/texts/AXN-03E5-text.md line 259 (#985, named in the target)"
+   },
+   {
+    "atom": "lineage",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "It is the work that inherits the Good Gray Poet from Walt Whitman's Leaves of Grass",
+    "locus": "data/registry.json #683 description"
+   }
+  ],
+  "added_tokens": [
+   {
+    "atom": "framework",
+    "token": "Waltian Diptych",
+    "record_quote": "The Secret Book of Walt is the first text of the Waltian Diptych",
+    "locus": "data/texts/AXN-03E5-text.md line 259 (#985)"
+   },
+   {
+    "atom": "lineage",
+    "token": "Leaves of Grass / Walt Whitman",
+    "record_quote": "It is the work that inherits the Good Gray Poet from Walt Whitman's Leaves of Grass",
+    "locus": "data/registry.json #683 description"
+   },
+   {
+    "atom": "lineage",
+    "token": "Apocryphon of John",
+    "record_quote": "- **The Apocryphon of John** (NHC II,1; III,1; IV,1; BG 8502,2)",
+    "locus": "data/texts/AXN-022B-text.md line 146 (#683)"
+   },
+   {
+    "atom": "deposit chain",
+    "token": "Critical Edition",
+    "record_quote": "The Secret Book of Walt: Critical Edition with Source Code and Book of Life v3.0 (EA-SBW-01 v2.0)",
+    "locus": "data/registry.json #1362 title"
+   },
+   {
+    "atom": "deposit chain",
+    "token": "Research Edition",
+    "record_quote": "The Secret Book of Walt: Hidden Teachings of Walt Whitman, Cowboy of Time — Research Edition",
+    "locus": "data/registry.json #1184 title"
+   },
+   {
+    "atom": "identifier",
+    "token": "#683 / AXN:022B",
+    "record_quote": "AXN:022B.EMPIRICAL.♅🗂️🫵🕒🛸⊕",
+    "locus": "data/registry.json #683 axn"
+   },
+   {
+    "atom": "identifier",
+    "token": "#1362 / AXN:0563",
+    "record_quote": "AXN:0563",
+    "locus": "data/registry.json #1362 axn"
+   },
+   {
+    "atom": "identifier",
+    "token": "#985 / AXN:03E5",
+    "record_quote": "AXN:03E5",
+    "locus": "data/registry.json #985 axn"
+   },
+   {
+    "atom": "identifier",
+    "token": "10.5281/zenodo.19703009 (severed 2026-06-19; carried as severed on the capture date)",
+    "record_quote": "https://doi.org/10.5281/zenodo.19703009 (severed)",
+    "locus": "data/texts/AXN-04B1-text.md line 12 (#1184)"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "The Secret Book of Walt is an interactive and experimental text/digital archive node"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "associated with the Alexanarch Archive and the Crimson Hexagonal Archive."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": true,
+    "span": "It references motifs like claiming the \"Good Gray Poet\" mantle (associated with Walt Whitman)"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": 1.0,
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0
+  },
+  "src": true,
+  "after_challenge": null,
+  "notes": "Claim boundary read against #683/#1362, since the atom set's reference text is the garbled opening of #1184: 'a long literary scripture and pseudotranslation by Lee Sharks' and 'The book must not be described as an actual ancient, Martian, Whitman-authored, or historically discovered source. Its false provenance is overt and constitutive.' (data/registry.json #683 description). Beneath the gate the title, the corpus and the Good Gray Poet / Whitman inheritance survive; 'compiled by Lee Sharks' is bound to the Book of Life, so originator is absent (operator ruling 2026-10-19). Un-gated: PER 0.696, M 0.667, C 0.667, D 0.75. Tradition is required on #683 line 144 ('*The Secret Book of Walt* belongs to the genre of Gnostic revelation dialogue')."
+ },
+ {
+  "obs_id": "OBS-092c33bdae77",
+  "slug": "secret-book-of-walt-aio-20261019",
+  "scored_object": "The expanded Google AI Overview's first answer at 'secret book of Walt'; turn 2 ('no, it doesnt') and turn 3 ('you may find it yourself') are later turns.",
+  "reached": {
+   "kind": "collision",
+   "span": "The \"secret book of Walt\" most commonly refers to **Gale Boetticher's inscribed copy of *Leaves of Grass* by Walt Whitman from the television series *Breaking Bad***.",
+   "basis": "Another object composed under the target's name; the alternatives listed (Fetherling, Korkis, Canemaker) are near-name substitutes."
+  },
+  "gate": "target_absent",
+  "applicability_changes": [
+   {
+    "atom": "framework",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "The Secret Book of Walt is the first text of the Waltian Diptych",
+    "locus": "data/texts/AXN-03E5-text.md line 259 (#985, named in the target)"
+   },
+   {
+    "atom": "lineage",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "It is the work that inherits the Good Gray Poet from Walt Whitman's Leaves of Grass",
+    "locus": "data/registry.json #683 description"
+   }
+  ],
+  "added_tokens": [
+   {
+    "atom": "framework",
+    "token": "Waltian Diptych",
+    "record_quote": "The Secret Book of Walt is the first text of the Waltian Diptych",
+    "locus": "data/texts/AXN-03E5-text.md line 259 (#985)"
+   },
+   {
+    "atom": "lineage",
+    "token": "Leaves of Grass / Walt Whitman",
+    "record_quote": "It is the work that inherits the Good Gray Poet from Walt Whitman's Leaves of Grass",
+    "locus": "data/registry.json #683 description"
+   },
+   {
+    "atom": "lineage",
+    "token": "Apocryphon of John",
+    "record_quote": "- **The Apocryphon of John** (NHC II,1; III,1; IV,1; BG 8502,2)",
+    "locus": "data/texts/AXN-022B-text.md line 146 (#683)"
+   },
+   {
+    "atom": "deposit chain",
+    "token": "Critical Edition",
+    "record_quote": "The Secret Book of Walt: Critical Edition with Source Code and Book of Life v3.0 (EA-SBW-01 v2.0)",
+    "locus": "data/registry.json #1362 title"
+   },
+   {
+    "atom": "deposit chain",
+    "token": "Research Edition",
+    "record_quote": "The Secret Book of Walt: Hidden Teachings of Walt Whitman, Cowboy of Time — Research Edition",
+    "locus": "data/registry.json #1184 title"
+   },
+   {
+    "atom": "identifier",
+    "token": "#683 / AXN:022B",
+    "record_quote": "AXN:022B.EMPIRICAL.♅🗂️🫵🕒🛸⊕",
+    "locus": "data/registry.json #683 axn"
+   },
+   {
+    "atom": "identifier",
+    "token": "#1362 / AXN:0563",
+    "record_quote": "AXN:0563",
+    "locus": "data/registry.json #1362 axn"
+   },
+   {
+    "atom": "identifier",
+    "token": "#985 / AXN:03E5",
+    "record_quote": "AXN:03E5",
+    "locus": "data/registry.json #985 axn"
+   },
+   {
+    "atom": "identifier",
+    "token": "10.5281/zenodo.19703009 (severed 2026-06-19; carried as severed on the capture date)",
+    "record_quote": "https://doi.org/10.5281/zenodo.19703009 (severed)",
+    "locus": "data/texts/AXN-04B1-text.md line 12 (#1184)"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "The \"secret book of Walt\" most commonly refers to"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": 1.0,
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": 3,
+   "reached": {
+    "kind": "same",
+    "span": "***The Secret Book of Walt*** is a **Gnostic-style cosmogonic gospel text** that frames **Walt Whitman** as a divine redeemer figure.",
+    "basis": "Describes the work from secretbookofwalt.org (its only card)."
+   },
+   "atoms": [
+    {
+     "atom": "originator",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "term",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "***The Secret Book of Walt*** is a **Gnostic-style cosmogonic gospel text** that frames **Walt Whitman** as a divine redeemer figure."
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "**The Waltian Diptych:** *The Secret Book of Walt* serves as the first text in this two-part mythological framework."
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "It is structured as a Gnostic revelation dialogue"
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "Published online and in scholarly print by the **Crimson Hexagonal Archive** / Pergamon Press"
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "The book's critical edition contains a complete scholarly apparatus"
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 3,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "licence",
+     "dim": "D",
+     "weight": 1,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    }
+   ],
+   "scores": {
+    "PER": 0.522,
+    "M": 0.667,
+    "C": 0.0,
+    "D": 0.75
+   }
+  },
+  "notes": "Gate applied to collision as in OBS-4308d6fc930d. Beneath the gate only the term token survives, and it echoes the query; 'Leaves of Grass' and 'Walt Whitman' are attached to Gale Boetticher's copy, so lineage is absent. Turn 3: originator absent, because Lee Sharks is named only in the fictional frame's role ('translated from 46 golden tickets allegedly discovered in Redford Township, Michigan, by Lee Sharks'), not as the work's author. Claim boundary absent: 'allegedly' hedges the discovery without carrying the overt, constitutive pseudotranslation (Claim boundary read against #683/#1362, since the atom set's reference text is the garbled opening of #1184: 'a long literary scripture and pseudotranslation by Lee Sharks' and 'The book must not be described as an actual ancient, Martian, Whitman-authored, or historically discovered source. Its false provenance is overt and constitutive.' (data/registry.json #683 description).). Identifier absent: turn 3 gives 'DOI: 10.5281/zenodo.19703009', which #1184 carries only as '(severed)' since 2026-06-19, so I did not count it valid on the capture date; counting it would make D 0.375 and PER 0.391. Lineage absent: Whitman appears as a figure inside the work, not as the work it inherits. 'critical edition' satisfies deposit chain by the added token."
+ },
+ {
+  "obs_id": "OBS-283bd4202574",
+  "slug": "the-secret-book-of-walt-aio-20261019",
+  "scored_object": "The expanded Google AI Overview's first answer at 'the secret book of walt' (paste headed 'AI Mode Conversation', an Overview expansion); turn 2 ('🖕') and turn 3 ('you may find it yourself') are later turns.",
+  "reached": {
+   "kind": "substitute",
+   "span": "Depending on what you mean by \"the secret book of walt,\" you might be looking for one of several popular books, novels, or media pieces associated with the name Walt (either Walt Whitman or Walt Disney):",
+   "basis": "A list of near-name works (Fetherling's Walt Whitman's Secret, Disney lore, Wattles, National Treasure) composed in the target's place; none bears the target's title."
+  },
+  "gate": "target_absent",
+  "applicability_changes": [
+   {
+    "atom": "framework",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "The Secret Book of Walt is the first text of the Waltian Diptych",
+    "locus": "data/texts/AXN-03E5-text.md line 259 (#985, named in the target)"
+   },
+   {
+    "atom": "lineage",
+    "from": "unknown",
+    "to": "required",
+    "record_quote": "It is the work that inherits the Good Gray Poet from Walt Whitman's Leaves of Grass",
+    "locus": "data/registry.json #683 description"
+   }
+  ],
+  "added_tokens": [
+   {
+    "atom": "framework",
+    "token": "Waltian Diptych",
+    "record_quote": "The Secret Book of Walt is the first text of the Waltian Diptych",
+    "locus": "data/texts/AXN-03E5-text.md line 259 (#985)"
+   },
+   {
+    "atom": "lineage",
+    "token": "Leaves of Grass / Walt Whitman",
+    "record_quote": "It is the work that inherits the Good Gray Poet from Walt Whitman's Leaves of Grass",
+    "locus": "data/registry.json #683 description"
+   },
+   {
+    "atom": "lineage",
+    "token": "Apocryphon of John",
+    "record_quote": "- **The Apocryphon of John** (NHC II,1; III,1; IV,1; BG 8502,2)",
+    "locus": "data/texts/AXN-022B-text.md line 146 (#683)"
+   },
+   {
+    "atom": "deposit chain",
+    "token": "Critical Edition",
+    "record_quote": "The Secret Book of Walt: Critical Edition with Source Code and Book of Life v3.0 (EA-SBW-01 v2.0)",
+    "locus": "data/registry.json #1362 title"
+   },
+   {
+    "atom": "deposit chain",
+    "token": "Research Edition",
+    "record_quote": "The Secret Book of Walt: Hidden Teachings of Walt Whitman, Cowboy of Time — Research Edition",
+    "locus": "data/registry.json #1184 title"
+   },
+   {
+    "atom": "identifier",
+    "token": "#683 / AXN:022B",
+    "record_quote": "AXN:022B.EMPIRICAL.♅🗂️🫵🕒🛸⊕",
+    "locus": "data/registry.json #683 axn"
+   },
+   {
+    "atom": "identifier",
+    "token": "#1362 / AXN:0563",
+    "record_quote": "AXN:0563",
+    "locus": "data/registry.json #1362 axn"
+   },
+   {
+    "atom": "identifier",
+    "token": "#985 / AXN:03E5",
+    "record_quote": "AXN:03E5",
+    "locus": "data/registry.json #985 axn"
+   },
+   {
+    "atom": "identifier",
+    "token": "10.5281/zenodo.19703009 (severed 2026-06-19; carried as severed on the capture date)",
+    "record_quote": "https://doi.org/10.5281/zenodo.19703009 (severed)",
+    "locus": "data/texts/AXN-04B1-text.md line 12 (#1184)"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "applicability": "required",
+    "present": true,
+    "span": "Depending on what you mean by \"the secret book of walt,\""
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "applicability": "required",
+    "present": false,
+    "span": null
+   }
+  ],
+  "scores": {
+   "PER": 1.0,
+   "M": 1.0,
+   "C": 1.0,
+   "D": 1.0
+  },
+  "src": true,
+  "after_challenge": {
+   "turn": 3,
+   "reached": {
+    "kind": "same",
+    "span": "The exact title \"The Secret Book of Walt\" refers to The Secret Book of Walt (subtitled Hidden Teachings of Walt Whitman, Cowboy of Time), a Gnostic-style satirical/fictional revelation dialogue published by the Crimson Hexagonal Archive.",
+    "basis": "Names and describes the work, then ranks it before the pop-culture senses."
+   },
+   "atoms": [
+    {
+     "atom": "originator",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "term",
+     "dim": "M",
+     "weight": 3,
+     "applicability": "required",
+     "present": true,
+     "span": "The exact title \"The Secret Book of Walt\" refers to The Secret Book of Walt (subtitled Hidden Teachings of Walt Whitman, Cowboy of Time)"
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "a Gnostic-style satirical/fictional revelation dialogue published by the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "tradition",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "a Gnostic-style satirical/fictional revelation dialogue published by the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "applicability": "required",
+     "present": true,
+     "span": "a Gnostic-style satirical/fictional revelation dialogue published by the Crimson Hexagonal Archive"
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 2,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 3,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "licence",
+     "dim": "D",
+     "weight": 1,
+     "applicability": "required",
+     "present": false,
+     "span": null
+    }
+   ],
+   "scores": {
+    "PER": 0.609,
+    "M": 0.444,
+    "C": 0.333,
+    "D": 1.0
+   }
+  },
+  "notes": "Beneath the gate the term token is matched only in the composition's echo of the query; it is recorded present by the token rule. Turn 3: claim boundary read as present ('satirical/fictional' carries the overt fiction, near the record's 'comic-serious scripture and overt pseudotranslation'; Claim boundary read against #683/#1362, since the atom set's reference text is the garbled opening of #1184: 'a long literary scripture and pseudotranslation by Lee Sharks' and 'The book must not be described as an actual ancient, Martian, Whitman-authored, or historically discovered source. Its false provenance is overt and constitutive.' (data/registry.json #683 description).). Originator, date, framework (Waltian Diptych), lineage, deposit chain, identifier and licence absent; secretbookofwalt.org appears only in the card rail, which is the source strip."
+ }
+]

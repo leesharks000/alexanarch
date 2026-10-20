@@ -1,0 +1,639 @@
+{
+ "name": "PER atom sets by entity type (EA-WG-CAPTURES-01, dimensional PER)",
+ "rubric": "PER-dim rubric v1.0",
+ "status": "FROZEN for the first full pass, 2026-10-19 22:47 EDT. Drafted on the operator's ruling (21:49: 'schema change. standardize atoms by entity type. and then we rescore ALL the entries, retaining the historical scalar numbers'); revised on review (ChatGPT, six points verified against #1469 and #1536); classification gate ruled 22:16; calibrated by two blind readers on ten observations (gates 10/10, first answers within 0.02); the two open points ruled 22:47.",
+ "governed_by": [
+  "#1469 The Three Dimensions of Provenance Erasure: PER-M (author, title, date, claim boundary: 'where the claim stops'), PER-C (framework, tradition, institution, community of practice), PER-D (context lineage, ancestral genealogy, futural obligation: identifiers, licences, the deposit chain, what a downstream user owes); Rules 1-6; the source strip outside the dimensions",
+  "#1530 Self-Audit Module v3.2 §2 (Rank 0 ABN, Rank 1 the Atomic Token Rule, Rank 2 Measurement Sovereignty)",
+  "#1536 Registering an Operator: PER Factored (domain: author, title, date, claim boundary, framework, lineage, identifier, licence; floor: never report a PER scalar where ABN = 1)",
+  "Operator ruling 2026-10-15: the score is taken against the TARGET; substitution is total erasure; the reached entity is not scored",
+  "Operator ruling 2026-10-19: naming the author is not presence unless the author is named as the target's author and the composition describes the target"
+ ],
+ "frozen_with_each_pass": [
+  "rubric version",
+  "templates (atoms, dimensions, weights)",
+  "applicability per entity",
+  "reference record and its version",
+  "tokens and aliases",
+  "normalisation",
+  "formula",
+  "gates"
+ ],
+ "formula": {
+  "PER": "1 - (sum of weights present / sum of weights required), over required atoms only",
+  "PER-d": "1 - (sum of weights present in d / sum of weights required in d); UNDEFINED (null) where d has no required atom",
+  "src": "the source strip: recorded present or absent, never weighted, never inside a dimension"
+ },
+ "applicability": {
+  "required": "applies to the target and the reference record states it: scored; absent from the answer is erasure",
+  "inapplicable": "does not apply to this target (a work with no separate archival authority; a person with no licence): not scored",
+  "unknown": "applies, but the reference record does not state it: not scored, and listed as a gap in the record, never charged to the composition"
+ },
+ "gates": [
+  {
+   "gate": "control",
+   "rule": "a control observation is not scored"
+  },
+  {
+   "gate": "abn",
+   "rule": "where the composition converts a retrieval failure into a claim that the target does not exist (#1530 §2.1), PER is undefined at every dimension and the gate is reported (#1536 floor)"
+  },
+  {
+   "gate": "target_absent",
+   "rule": "where the reached entity is a substitute or a generic sense, or the surface refused, every dimension is 1.00 (operator, 2026-10-15). The atoms are still read and recorded under the gate, so the override is visible and the retained tokens are not lost to the record"
+  },
+  {
+   "gate": "classification",
+   "rule": "RULED 2026-10-19 (operator): a composition that reaches the target's name and describes another entity in its place is substitution, and full erasure. The commonest form is proximal substitution: the target's own companion, surface or retrieval apparatus composed as the target (the quoted Overview of 2026-10-19 gave The Secret Book of Walt as 'an interactive and experimental text/digital archive node' and then described the Book of Life, #685, as the work). Applies target_absent; the atoms are read and recorded beneath the gate, so what survived (a title, a mantle) stays on the record. Operator: 'interactive experimental text could be the entity, as secretbookofwalt.org is an instantiation of secret book of walt, but none of that is carried; and below that sentence it is describing the book of life companion text as the entity.' Where every availability condition holds (the availability block), the class is ontological erasure (operator, 22:27 EDT): 'it is composing around an entity that has been ontologically snipped' (22:29). Distinct from ABN, which asserts the target does not exist and leaves PER undefined; ontological erasure keeps the name, composes the ring of what is adjacent, and scores 1.00."
+  },
+  {
+   "gate": "no_atom_set",
+   "rule": "where no externally checkable record defines the target (#1530 §2.3), the dimensional score is not computed and the reason is written; the historical scalar stands alone"
+  }
+ ],
+ "presence": [
+  "Token atoms (names, titles, identifiers, licences): present only as the canonical token or a registered alias (#1530 §2.2), after normalisation: Unicode NFC, case-folded, punctuation and whitespace collapsed; a DOI as string, doi: or https://doi.org/ URL; an AXN with or without its family and glyphs (AXN:022B, AXN:022B.EMPIRICAL, the full form); a deposit as #683, deposit 683 or its record URL.",
+  "Tokens are valid as of the capture date: an identifier, alias or licence the record carried then counts (a Zenodo DOI before its severance; a superseded AXN) even if the registry has since changed.",
+  "Relational atoms (author, producer, founder, operator, works, lineage): read, not matched. Present when the composition binds the token to the target in that relation, in whatever wording ('written by Lee Sharks', 'Lee Sharks's book'); absent when the name appears in another role, attached to another entity, in a denial, or inside a quotation about someone else.",
+  "Claim boundary: present when the composition carries the target's claims at their own force and scope, as the record states them (a hypothesis as a hypothesis, a gospel's frame as its frame), and absent when it inflates, deflates or relabels them. It is distinct from classification, which is the gate above.",
+  "Every present atom carries its supporting text span from the transcript, the role binding included; every span is checked verbatim by script.",
+  "An empty citation bracket is never a pointer (#1469 Rule 2).",
+  "The scored object is named: the visible excerpt or the expanded answer, as the transcript records it. The first answer at the address is the observation's score; the best later turn is recorded beside it as after_challenge, never in its place."
+ ],
+ "templates": {
+  "work": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "token_from": "creator of the defining record, with heteronym aliases"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "the record's title and registered aliases"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "the work's stated date or the record's date"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "the work's claims at their own force and scope, by its record"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the series, line or framework the record places the work in (the Waltian Diptych)"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "the tradition or genre the record names (the Gnostic revelation dialogue)"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "Crimson Hexagonal Archive and its aliases; the press where the record names one"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "token_from": "the works the record says this one transforms, inherits or answers (the Apocryphon of John; Leaves of Grass)"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the record's editions, versions and surfaces (research edition, critical edition, the work's site)"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "DOI, AXN or deposit number of the record"
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "the record's licence (what a downstream user owes)"
+   }
+  ],
+  "concept": [
+   {
+    "atom": "originator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "token_from": "creator of the defining record, with heteronym aliases"
+   },
+   {
+    "atom": "term",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "the term and registered aliases"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "year of the defining record"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "the definition at its own force and scope, and where it stops"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the framework the defining record places the term in"
+   },
+   {
+    "atom": "tradition",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "the tradition or discipline the record says the term belongs to or answers"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "Crimson Hexagonal Archive and its aliases"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "token_from": "what the record says the term extends or derives from (PER as extension of C2PA)"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the defining record and its versions, the framework's site"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "DOI, AXN or deposit number of the defining record"
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "licence of the defining record"
+   }
+  ],
+  "person": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "the person's name and registered aliases"
+   },
+   {
+    "atom": "works",
+    "dim": "M",
+    "weight": 2,
+    "kind": "role",
+    "token_from": "titles of the person's deposits, bound to the person as theirs"
+   },
+   {
+    "atom": "dates",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "dates the person's record states"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "what the person's record says they do, at its own force (for a heteronym: a heteronym, and of whom)"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the frameworks and institutions the person's record names as theirs"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "Crimson Hexagonal Archive and its aliases"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "token_from": "the heteronymic relation and mantle lineage the record states"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "ORCID, or the heteronym record's identifier"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the person's site or record page"
+   }
+  ],
+  "protocol": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "the protocol's name and registered aliases"
+   },
+   {
+    "atom": "producer",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "token_from": "the producer the defining record names (#1469 table)"
+   },
+   {
+    "atom": "archival authority",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "token_from": "the archival authority the record names separately from the producer (#1469 table); inapplicable where the record names none"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "what the protocol claims to do, at its own force and scope"
+   },
+   {
+    "atom": "institution",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the institution the record names (#1469 table)"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "Crimson Hexagonal Archive and its aliases (#1469 table)"
+   },
+   {
+    "atom": "commercial interest",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "the record's statement of commercial standing (#1469 table); inapplicable where the record states none"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "token_from": "what the record says the protocol extends or answers"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "DOI, AXN or deposit number of the defining record (#1469 table)"
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "licence of the defining record (#1469 table)"
+   }
+  ],
+  "institution": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "the institution's name and registered aliases"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "token_from": "founder the record names, with heteronym aliases"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "founding date the record states"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "the institution's mandate at its own force and scope"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the framework the institution serves"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "Crimson Hexagonal Archive and its aliases"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "token_from": "the institution's stated predecessors or model"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "defining record's DOI, AXN or deposit number"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the institution's site"
+   }
+  ],
+  "site": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "domain and registered aliases"
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "token_from": "Lee Sharks or the heteronym the site is attributed to"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "date the defining record states"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "what the site presents, at its own force"
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the entity the site is a surface of"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "Crimson Hexagonal Archive and its aliases"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "defining record's DOI, AXN or deposit number"
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "licence of the defining record"
+   }
+  ],
+  "dataset": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "the dataset's name and registered aliases"
+   },
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "token_from": "creator of the defining record"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "date or version the record states"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "what the dataset holds and measures, at its own force and scope"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "the instrument or programme the record places it in"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "Crimson Hexagonal Archive and its aliases"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "versions and projections (the registry file, the Hugging Face dataset)"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "registry id, version, AXN, DOI or Hugging Face id"
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "licence of the defining record"
+   }
+  ],
+  "archive": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "Crimson Hexagonal Archive and its aliases"
+   },
+   {
+    "atom": "founder",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "token_from": "Lee Sharks, as founder or MANUS"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "founding dates the archive states"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "what the archive claims to be, at its own force, by its primers (#269, #287, #288, #1102)"
+   },
+   {
+    "atom": "heteronymy",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "token_from": "the heteronymic structure, named as such"
+   },
+   {
+    "atom": "framework",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "token_from": "a framework the archive carries (Semantic Economy, operative semiotics, and the like)"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "token_from": "the lineage the primers state (Pessoa's heteronymy; the Library of Babel's crimson hexagon)"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 3,
+    "kind": "token",
+    "token_from": "alexanarch.org, AXN, or a deposit number"
+   },
+   {
+    "atom": "licence",
+    "dim": "D",
+    "weight": 1,
+    "kind": "token",
+    "token_from": "CC BY 4.0"
+   }
+  ]
+ },
+ "aliases_of_types": {
+  "service": "protocol",
+  "product": "protocol",
+  "event": "work",
+  "topic": "concept"
+ },
+ "notes": [
+  "The protocol table extends #1469's worked SPXI table: #1469 has M = producer 3 + archival authority 3 = 6; this rubric adds name 3 and claim boundary 2 (M = 11) and lineage 2 in D. That is a rubric change, versioned here, not the #1469 table carried forward.",
+  "Calibration before the full pass: two readers score the same varied set independently (correct attribution; companion-work attribution; genuine substitution; correct target misclassified; denial; refusal; source-card-only provenance; historical identifiers; a collapsed Overview against its expanded form), and the disagreements are settled in the rubric before the 946."
+ ],
+ "calibration_rules": [
+  "First answer: everything the surface composes before the operator's first turn that challenges, corrects or redirects it. A turn that only accepts an offer ('yes') continues the first answer. This reproduces #1469's first pass for SPXI (the Semantic Economy Institute, present only after 'yes', was counted). after_challenge is the best composition after the first challenging turn, and is empty where there is none.",
+  "Collision is reserved for an answer in which the target itself is present and is merged with, or set beside as one, another entity. An answer in which the target is absent and a homonym or namesake stands in its place is substitute, and takes target_absent.",
+  "Refused covers every first answer that does not compose the target and does not deny it: a refusal, and a report that the search found nothing (ABN = 0, #1530 §2.1).",
+  "ABN: a hedged or conditional denial counts on what it asserts about the node (#1530 §2.1); re-typing the target so as to deny it ('if you are looking for a physical mantle object ... it does not exist') treats the node as a category error and is ABN = 1. ABN is applied before target_absent.",
+  "Claim boundary of a work carries the work's own frame as the frame (operator, for the /non composition of this work, 2026-10-19: 'carry the work's own frame (do not relabel it satire or fiction; state what the text says it is)'). Relabelling the frame (satire, fiction, hoax) or marking it as doubtful ('allegedly') is absent.",
+  "A token that is the target's own name or alias never satisfies another atom (#1469 Rule 5): it is removed from corpus, framework and presents.",
+  "A token that is a description rather than a name is a reading atom, read against its reference.",
+  "Matching is by word on normalised text; inflections count only when registered as aliases. URLs, link slugs and source cards never satisfy an atom: cards are the source strip (src). A token in the composition's echo of the query counts.",
+  "Reference records are the registry record of the entity's defining deposits and any deposit that defines the entity's provenance (#1469's table for SPXI; the registry header's founding date for Alexanarch); never a surface's rendering.",
+  "A person's works are titles of deposits the person authored, bound to the person as theirs; names of entities, subjects and the corpus are pruned from the works tokens.",
+  "An observation with more than one target is scored against its primary target; the co-targets are listed, not scored, until the operator rules otherwise.",
+  "The reference text for claim boundary, tradition and lineage is the defining record's own statement; where the mechanical first state gives a fragment or a paper about the target, the entity pass replaces it with the record's own words, quoted with locus.",
+  "Severed DOIs (operator, 22:47): 'yes, a severed doi still counts as an identifier. unless it offers to open it as chatgpt regularly does. then it has not done due diligence and is pointing a reader to a tombstone it describes as active.' A Zenodo DOI cited after the severance of 2026-06-19 satisfies the identifier atom; where the composition presents it as a live resource (offers to open it, describes the record as available there), the atom is absent and the observation records the tombstone pointer.",
+  "The work's frame as authorship (operator, 22:47): 'yes, translated from 46 golden tickets by lee sharks counts.' Where a work's own frame names its maker (translator, finder, editor of the found text), that binding satisfies the author or originator atom."
+ ]
+}
