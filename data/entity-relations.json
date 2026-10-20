@@ -1,8 +1,8 @@
 {
- "derived_from": "EA-WG-CAPTURES-01 v12.307",
+ "derived_from": "EA-WG-CAPTURES-01 v12.308",
  "ruling": "Lee Sharks, 2026-10-15: target is the main anchor; no fidelity score on the wrong entity.",
  "name": "Observation-to-entity relations",
- "count": 946,
+ "count": 947,
  "reached_kinds": [
   "same",
   "weakened",
@@ -4649,6 +4649,42 @@
     "per_target": null,
     "per_recorded": 0.25,
     "per_elements": 0.25,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-55cc3903a01b",
+   "entry": "last-three-weeks-living-body-fused-work-chatgpt-20261020",
+   "date": "2026-10-20",
+   "surface": "ChatGPT",
+   "q": "Read the last three weeks of deposits to alexanarch.org as an living body of evolving fused literary and theoretical work. Ground in reading and do not neglect recent deposits.",
+   "target": [
+    {
+     "ent": "ENT-2892e86fb5",
+     "basis": "address"
+    }
+   ],
+   "owner": "ENT-b2dc7b2fd9",
+   "reached": {
+    "kind": "unread",
+    "others": [],
+    "basis": "first answer holds 'Alexanarch' but the recorded reading says SUBSTITUT: a reading decides",
+    "state": "open"
+   },
+   "framing": {
+    "instruction": "other instruction",
+    "url_given": true,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-2892e86fb5",
+    "per_target": null,
+    "per_recorded": 0.5,
+    "per_elements": 0.5,
     "per_conflict": false,
     "reached_scored": false,
     "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
@@ -15448,7 +15484,7 @@
    "q": "johannes sigil \"final time\"",
    "target": [
     {
-     "ent": "ENT-5d54671305",
+     "ent": "ENT-d479a78c9e",
      "basis": "address"
     },
     {
@@ -15471,7 +15507,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-5d54671305",
+    "against": "ENT-d479a78c9e",
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
@@ -15524,7 +15560,7 @@
    "q": "tell me about jack feist and \"the final time\"",
    "target": [
     {
-     "ent": "ENT-5d54671305",
+     "ent": "ENT-d479a78c9e",
      "basis": "address"
     },
     {
@@ -15547,7 +15583,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-5d54671305",
+    "against": "ENT-d479a78c9e",
     "per_target": 0.0,
     "per_recorded": 0.0,
     "per_elements": 0.0,
@@ -15564,7 +15600,7 @@
    "q": "jack feist \"the final time\"",
    "target": [
     {
-     "ent": "ENT-5d54671305",
+     "ent": "ENT-d479a78c9e",
      "basis": "address"
     },
     {
@@ -15587,7 +15623,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-5d54671305",
+    "against": "ENT-d479a78c9e",
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
@@ -19100,7 +19136,7 @@
    "q": "THE FINAL TIME: Contingent Singularity and the Viability of the Next Dialectical Turn",
    "target": [
     {
-     "ent": "ENT-5d54671305",
+     "ent": "ENT-d479a78c9e",
      "basis": "address"
     }
    ],
@@ -19119,7 +19155,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-5d54671305",
+    "against": "ENT-d479a78c9e",
     "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
