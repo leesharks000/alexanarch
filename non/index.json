@@ -7,10 +7,10 @@
  "counts": {
   "panel_entities": 61,
   "entity_pages": 20,
-  "composed": 18,
+  "composed": 19,
   "register_addresses": 28,
   "observations": 28,
-  "traversals": 19
+  "traversals": 20
  },
  "statement": "The Negative of the Negative (EA-NEGONT-02, #1690, v0.9): per-entity knowledge objects composed with the archive's sources on equal terms, ontology included, or in the archive's ontology where it is the suppressed witness, the field carried whole and translated; entries composed under v0.7 (#1665) are recomposed one at a time. One row per entity with a page. Each record_url is the entity's own page and its citation; json_url is the entity as a compact record that points to its row, ledgers and traversal. Working, not frozen (§7.0).",
  "spec": "https://www.alexanarch.org/s/records/1690/",
@@ -538,21 +538,30 @@
    "entity": "secret-book-of-walt",
    "name": "The Secret Book of Walt (Lee Sharks; research edition #683, critical edition #1362, secretbookofwalt.org #985)",
    "type": "A (the archive's own work: a book), its title met at the bare string by substitutes assembled from 'secret' and 'Walt'",
-   "stage": "entered 2026-10-19; to be composed under EA-NEGONT-02 v0.9, #1690",
+   "stage": "composed 2026-10-19 under EA-NEGONT-02 v0.9, #1690, witness case by the law of the suppressed witness (draft, not frozen; ledgers unaudited; quotes re-checked verbatim by the session, 109 of 109); ρ = substitution, a value outside §1.2a's three, recorded as a breach",
    "addresses": [
     "secret book of Walt",
     "the secret book of walt"
    ],
-   "has_ko": false,
-   "ko_sentences": 0,
-   "p_words": 0,
+   "has_ko": true,
+   "ko_sentences": 32,
+   "p_words": 314,
    "n_register": 2,
-   "traversal_counts": null,
+   "traversal_counts": {
+    "D_sentences": 599,
+    "D_deposits": 96,
+    "R_sentences": 217,
+    "R_deposits": 73,
+    "O_direct": 590,
+    "O_class": 0,
+    "O_deposits": 96,
+    "H_candidates": 0
+   },
    "date": "2026-10-19",
    "record_url": "https://www.alexanarch.org/non/secret-book-of-walt/",
    "json_url": "https://www.alexanarch.org/non/secret-book-of-walt/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/secret-book-of-walt/",
-   "sha256": "f1d4d43ec5c41a99b542afab904f94b9894c0a3f3eceb5aa1b1562974565d52a"
+   "sha256": "60879fa96873ece293fc6a06c6a5465a8edef065e09b0c91ce502b72da67166e"
   },
   {
    "entity": "allen-ginsberg",

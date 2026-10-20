@@ -1,0 +1,456 @@
+{
+ "row": "secret-book-of-walt",
+ "address": "secret book of Walt",
+ "addresses": [
+  "secret book of Walt",
+  "the secret book of walt"
+ ],
+ "extracted": "2026-10-19",
+ "extractor": "Claude (Opus 5.5), in session, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved texts or the pastes' snippets, checked by script (22/22: 18 against saved page text or the pastes and serp, 2 against the WebFetch extracts, marked unsupported, 2 more from the pastes' snippets of unfetched pages); copyrighted pages quoted only in short spans",
+ "B_note": "The field B (§0.4) is, per the brief, the sources T's turn 1 surfaced as cards (B1–B6: Evergreen Review, The Walt Disney Family Museum, Theme Park Press, BiblioCommons, eBay, Instagram·Film Aesthete) and the organic results of the second address's page that are not the archive's (B7–B11: Penguin Random House Canada, Goodreads, Google Books, eCampus @ UMass, Amazon; Evergreen Review is organic result 7 there and is B1). Each source records the address that surfaced it (surfaced_at), its kind (Overview card or organic result) and whether it uses the phrase 'secret book of Walt' (none does). The second address's own Overview cards that are not organic results there (Quill and Quire, Amazon (Korkis), YouTube·Toni Shelf Help Club, Google ×3, In These Times, YouTube·Crime City) and turns 2–3's cards at both addresses are recorded in the row (objects.T.correction, objects.T2), outside B. The archive's surfaces on the page (Medium, organic 1; secretbookofwalt.org, organic 2 and T's turn-3 card) belong to A, not B (row.field_page).",
+ "lineage_note": "Fetherling's novel is one work carried by five sources (B1 review; B4, B7, B8, B10 the publisher's description in catalogue, publisher, Goodreads and bookseller copies): two lineages, the review (F1–F4) and the publisher's description (F10, F13–F16, F18–F20, with F21 the edition's details). Korkis's book: the publisher (F8, F9) and a listing (F11), one lineage. Each other source is its own lineage.",
+ "pages": "saved texts and hashes in each source's 'fetched'; the page files are held in the composing workspace (not created in the repository on this build)",
+ "field": [
+  {
+   "id": "B1",
+   "role": "Overview card at T (turn 1, 'Evergreen Review'); at 'the secret book of walt' an Overview card (turn 1) and organic result 7",
+   "card": "Evergreen Review — Review: Walt Whitman's Secret (Evergreen Review Issue 125, December 2010)",
+   "url": "https://evergreenreview.com/read/review-walt-whitmans-secret/",
+   "fetched": "not fetched verbatim: direct download HTTP 403 (2026-10-19 23:38 UTC), retried with HTTP/2 (stream PROTOCOL_ERROR) and HTTP/1.1 (empty reply) at 23:40 UTC, Wayback id_ 404/connection reset; WebFetch (summarising) twice at about 23:45 UTC, its extracts saved in the workspace (evergreen_webfetch.txt, sha256 c0b02b72d6055f522e239156e0d97f652edcd11beebc7347125fab43593ee8b3). The cards' snippets (T turn 1; the second address's organic result) stand as the verbatim text; the WebFetch extracts are carried marked unsupported (§3.1: a summarising fetch is not a fetch)",
+   "surfaced_at": [
+    "secret book of Walt",
+    "the secret book of walt"
+   ],
+   "uses_phrase": "no (WebFetch's phrase check of the page: 'does not appear'; neither snippet uses it)",
+   "kind": "Overview card"
+  },
+  {
+   "id": "B2",
+   "role": "Overview card at T (turn 1); at 'the secret book of walt' an Overview card (turn 1)",
+   "card": "The Walt Disney Family Museum — The Lost Notebook: Herman Schultheis and the Secrets of Walt Disney's Movie Magic (store page)",
+   "url": "https://www.waltdisney.org/store/books/lost-notebook-herman-schultheis-and-secrets-walt-disneys-movie-magic",
+   "fetched": "page HTML downloaded 2026-10-19 23:38 UTC (HTTP 200); html sha256 4d76d2b1658e2a38ccc2fde8a03f5836afeed9aa403e8f00e403cd50da705d04, text sha256 99b21597698cdb95200c55140837ea880b7ce6e99a1c2d0266c3b1b4617d467f; WebFetch consistent (summarised); the URL located by web search, the card's own link not being in the paste; third party",
+   "surfaced_at": [
+    "secret book of Walt",
+    "the secret book of walt"
+   ],
+   "uses_phrase": "no (saved text: 'secret book of walt' absent; the page has 'Secrets of Walt Disney's')",
+   "kind": "Overview card"
+  },
+  {
+   "id": "B3",
+   "role": "Overview card at T (turn 1)",
+   "card": "Theme Park Press — Secret Stories of Walt Disney World: Things You Never Knew You Never Knew (Jim Korkis)",
+   "url": "https://themeparkpress.com/products/secret-stories-of-walt-disney-world-things-you-never-knew-you-never-knew",
+   "fetched": "page HTML downloaded 2026-10-19 23:39 UTC (HTTP 200; the product located through the site's search, the card's own link not being in the paste; the card's snippet sentence is on this page); html sha256 ea7fe6129e1f442c1fe7282efbc0d3ea1984843a27291f3cf6367320e3d722b6, text sha256 cca47c869c41c73080e704587d59f17ff0ab3ba9592f63552bbb0dbf791f569a; third party (the publisher)",
+   "surfaced_at": [
+    "secret book of Walt"
+   ],
+   "uses_phrase": "no (saved text)",
+   "kind": "Overview card"
+  },
+  {
+   "id": "B4",
+   "role": "Overview card at T (turn 1)",
+   "card": "BiblioCommons — Walt Whitman's Secret (a library catalogue record)",
+   "url": "not in the paste (BiblioCommons serves per-library catalogues; which library the card is is not shown)",
+   "fetched": "not fetched: the card's URL is not in the paste and the catalogue cannot be identified (a web search for the record returned no BiblioCommons page); the snippet as the paste gives it stands as the source's only text",
+   "surfaced_at": [
+    "secret book of Walt"
+   ],
+   "uses_phrase": "no (snippet)",
+   "kind": "Overview card"
+  },
+  {
+   "id": "B5",
+   "role": "Overview card at T (turn 1)",
+   "card": "eBay — Secret Stories of Walt Disney World: Things You Never Knew (Jim Korkis), a listing",
+   "url": "not in the paste (the listing is not identified)",
+   "fetched": "not fetched: the listing's URL is not in the paste; a web search returned other listings of the book, none identifiable as the card's; the snippet stands",
+   "surfaced_at": [
+    "secret book of Walt"
+   ],
+   "uses_phrase": "no (snippet)",
+   "kind": "Overview card"
+  },
+  {
+   "id": "B6",
+   "role": "Overview card at T (turn 1); the only source the composition cites for its first sense",
+   "card": "Instagram · Film Aesthete — 'Vince Gilligan on how Walter White could leave the book in the bathroom' (a reel)",
+   "url": "an opaque google.com/goto link (CAESaQHrOzAVcoS4…), the same link the composition cites as [1] for its Breaking Bad sense",
+   "fetched": "not fetched: the paste carries only the opaque goto link, and Instagram serves reels behind a login; the card's title stands as the source's only text",
+   "surfaced_at": [
+    "secret book of Walt"
+   ],
+   "uses_phrase": "no (card title)",
+   "kind": "Overview card"
+  },
+  {
+   "id": "B7",
+   "role": "organic result 3 at 'the secret book of walt' (not a card at T); also an Overview card there (turns 1 and 3)",
+   "card": "Penguin Random House Canada — Walt Whitman's Secret by George Fetherling",
+   "url": "https://www.penguinrandomhouse.ca/books/49118/walt-whitmans-secret-by-george-fetherling/9780307374318",
+   "fetched": "page HTML downloaded 2026-10-19 23:38 UTC (HTTP 200, redirected to the 9780307374318 edition); html sha256 477e4e73b55bbaff4103d50c7623d2fd5323813b8e8816f6ced2d662dd00297e; the page body is rendered by script and the HTML carries the description only in its meta tag (saved as prh_meta.txt, sha256 406433b3d60136386d5f2442021adbe7edbcc84685a7fc6460f581f387591284); WebFetch the same (summarised: 'truncated meta description'); the organic snippet stands for the rest",
+   "surfaced_at": [
+    "the secret book of walt"
+   ],
+   "uses_phrase": "no (meta text and snippets)",
+   "kind": "organic result"
+  },
+  {
+   "id": "B8",
+   "role": "organic result 4 at 'the secret book of walt'; also an Overview card there (turn 3)",
+   "card": "Goodreads — Walt Whitman's Secret by George Fetherling",
+   "url": "https://www.goodreads.com/book/show/7998540-walt-whitman-s-secret",
+   "fetched": "not fetched verbatim: direct download HTTP 202 (a challenge page, 2,427 bytes, 2026-10-19 23:39 UTC); WebFetch of /book/show/… returned an empty page, WebFetch of /en/book/show/… a summary (goodreads_webfetch.txt, sha256 4409ee6eeb05570348d956936f407a6282b517f85e5ee0621985511adec3de4e); the snippets stand",
+   "surfaced_at": [
+    "the secret book of walt"
+   ],
+   "uses_phrase": "no (snippets; WebFetch's check: 'does not occur')",
+   "kind": "organic result"
+  },
+  {
+   "id": "B9",
+   "role": "organic result 5 at 'the secret book of walt'",
+   "card": "Google Books — Free and Lonesome Heart: The Secret of Walt Whitman (Emory Holloway)",
+   "url": "https://books.google.com (the volume's id is not in the paste)",
+   "fetched": "not fetched: the volume id is not in the paste; the Books API returned HTTP 429 (quota) at 23:40 UTC and a books.google.com title search redirected to a Google search page; the snippet stands",
+   "surfaced_at": [
+    "the secret book of walt"
+   ],
+   "uses_phrase": "no (snippet)",
+   "kind": "organic result"
+  },
+  {
+   "id": "B10",
+   "role": "organic result 6 at 'the secret book of walt'; also an Overview card there (turn 1)",
+   "card": "eCampus @ UMass — Walt Whitman's Secret : A Novel",
+   "url": "https://umass.ecampus.com/walt-whitmans-secret-novel/bk/9780679312239",
+   "fetched": "page HTML downloaded 2026-10-19 23:40 UTC (HTTP 200; the ISBN 9780679312239 from the Fetherling hardcover's Amazon record; an earlier guess at another ISBN returned another book and is not used); html sha256 51f60e36f7a9d19f861cc77bba426a0710bcf438d092fd1853af2796f67a4e35, text sha256 c52b0aae5f8484003282a11f1de6a7ac0aab0ebb60b1a3d24703ceccd1133453 (inline markup dropped in the text, so some words run together: 'ofLeaves of Grass')",
+   "surfaced_at": [
+    "the secret book of walt"
+   ],
+   "uses_phrase": "no (saved text)",
+   "kind": "organic result"
+  },
+  {
+   "id": "B11",
+   "role": "organic result 8 at 'the secret book of walt'",
+   "card": "Amazon.com — Walt Whitman's Secret: Aronin, Ben",
+   "url": "https://www.amazon.com (the listing URL is not in the paste)",
+   "fetched": "not fetched: the listing URL is not in the paste, and Amazon refuses WebFetch (robots disallowed, tried on the Fetherling record 23:40 UTC); the snippet stands",
+   "surfaced_at": [
+    "the secret book of walt"
+   ],
+   "uses_phrase": "no (snippet)",
+   "kind": "organic result"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "card snippet at T (turn 1)",
+   "quote": "Book: Walt Whitman's Secret by George Fetherling (Random House Canada, 2010); reviewed by Christopher G. Moore in Evergreen Review (2010). Narrative Structure: ...",
+   "claim": "the card: Fetherling's novel (Random House Canada, 2010) reviewed in Evergreen Review",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "marks": {
+    "note": "the snippet's heading 'Narrative Structure:' is not on the page by WebFetch's report ('no internal subheadings'); carried as the card gives it"
+   },
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/paste-secret-book-of-walt-aio.txt"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "organic snippet at the second address (result 7); the same words as a turn-1 card there",
+   "quote": "His novel Walt Whitman's Secret (2010) shows him at the height of his literary insight. In one novel, Fetherling has captured the nuance and interior ...",
+   "claim": "the reviewer's judgment of the novel",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/serp-the-secret-book-of-walt.txt"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "opening (WebFetch)",
+   "quote": "George Fetherling is Canada’s Aldous Huxley, his career spans poetry, essays, travel, biography and fiction.",
+   "claim": "the review's opening on the novelist",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "marks": {
+    "unsupported": "not fetched (§3.1): from a summarising fetch (direct download HTTP 403); carried in the ledger, not composed"
+   },
+   "quote_ok": "webfetch",
+   "checked_against": "evergreen_webfetch.txt"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "publication note (WebFetch)",
+   "quote": "Originally published in The Evergreen Review Issue 125 in December, 2010.",
+   "claim": "the review's first publication",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "marks": {
+    "unsupported": "not fetched (§3.1): from a summarising fetch; carried in the ledger, not composed"
+   },
+   "quote_ok": "webfetch",
+   "checked_against": "evergreen_webfetch.txt"
+  },
+  "F5": {
+   "source": "B2",
+   "locus": "product title and price",
+   "quote": "The Lost Notebook: Herman Schultheis and the Secrets of Walt Disney's Movie Magic",
+   "claim": "the book sold: The Lost Notebook ($45)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Canemaker's The Lost Notebook",
+   "quote_ok": true,
+   "checked_against": "wdfm.txt"
+  },
+  "F6": {
+   "source": "B2",
+   "locus": "product description",
+   "quote": "By John Canemaker, this compelling book provides a behind-the-scenes look into the technological and artistic ingenuity of early Disney films.",
+   "claim": "Canemaker's book: the technical and artistic ingenuity of early Disney films",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Canemaker's The Lost Notebook",
+   "quote_ok": true,
+   "checked_against": "wdfm.txt"
+  },
+  "F7": {
+   "source": "B2",
+   "locus": "product description",
+   "quote": "The actual notebook compiled by studio technician Herman Schultheis remains on display at The Walt Disney Family Museum behind glass for preservation.",
+   "claim": "Schultheis's notebook on display at the museum",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Canemaker's The Lost Notebook",
+   "quote_ok": true,
+   "checked_against": "wdfm.txt"
+  },
+  "F8": {
+   "source": "B3",
+   "locus": "product description ¶2 (the card's snippet)",
+   "quote": "This is not a Disney trivia book. It's a book of Disney secrets, each exactly two pages long, and each brimming with backstage lore.",
+   "claim": "the publisher's statement of the book: Disney secrets, two pages each, backstage lore",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Korkis's Secret Stories of Walt Disney World",
+   "quote_ok": true,
+   "checked_against": "tpp.txt"
+  },
+  "F9": {
+   "source": "B3",
+   "locus": "product description ¶2",
+   "quote": "Jim Korkis gathered these secrets when he worked at Walt Disney World as an instructor at Disney University.",
+   "claim": "the author's source: his work at Disney University",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Korkis's Secret Stories of Walt Disney World",
+   "quote_ok": true,
+   "checked_against": "tpp.txt"
+  },
+  "F10": {
+   "source": "B4",
+   "locus": "card snippet at T (turn 1)",
+   "quote": "Sep 9, 2026 — Walt Whitman's Secret In this wonderfully imagined novel, Walt Whitman's secret isn't his homosexuality but another one entirely. It's a political secret, one t...",
+   "claim": "the catalogue's description of Fetherling's novel (the record dated Sep 9, 2026)",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "marks": {
+    "note": "snippet only; the description is the publisher's (the same words at B7, B8, B10)"
+   },
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/paste-secret-book-of-walt-aio.txt"
+  },
+  "F11": {
+   "source": "B5",
+   "locus": "card snippet at T (turn 1)",
+   "quote": "Item description from the seller \"Secret Stories of Walt Disney World: Things You Never Knew\" by Jim Korkis is a trade paperback book published in 2015 by BOB M...",
+   "claim": "the listing: Korkis's book, trade paperback, 2015",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Korkis's Secret Stories of Walt Disney World",
+   "marks": {
+    "note": "snippet only, cut by the card"
+   },
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/paste-secret-book-of-walt-aio.txt"
+  },
+  "F12": {
+   "source": "B6",
+   "locus": "card title at T (turn 1)",
+   "quote": "Vince Gilligan on how Walter White could leave the book in the bathroom. Show by Film Aesthete on Instagram",
+   "claim": "a reel: Breaking Bad's creator on how Walter White could leave the book in the bathroom",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "Breaking Bad's book (the reel)",
+   "marks": {
+    "note": "card title only; the book is not named on the card; the composition's Breaking Bad sense cites this card alone"
+   },
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/paste-secret-book-of-walt-aio.txt"
+  },
+  "F13": {
+   "source": "B7",
+   "locus": "meta description (saved HTML)",
+   "quote": "As compelling and revelatory as Colm Toibin's The Master, Walt Whitman's Secret mines the life of the most influential poet in the American canon for insights about creativity, relations between the sexes and the",
+   "claim": "the publisher's description, opening (cut in the meta tag)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "quote_ok": true,
+   "checked_against": "prh_meta.txt"
+  },
+  "F14": {
+   "source": "B7",
+   "locus": "organic snippet at the second address (result 3)",
+   "quote": "In this wonderfully imagined novel, Walt Whitman's secret isn't his homosexuality but another one entirely. It's a political secret, one that the greatest ...",
+   "claim": "the publisher's description: the secret is political, not his homosexuality",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/serp-the-secret-book-of-walt.txt"
+  },
+  "F15": {
+   "source": "B8",
+   "locus": "organic snippet at the second address (result 4)",
+   "quote": "Apr 6, 2010 — In this wonderfully imagined novel, Walt Whitman's secret isn't his homosexuality but another one entirely. It's a political secret, one ...",
+   "claim": "the same description, dated Apr 6, 2010; rating 2.2 (14)",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/serp-the-secret-book-of-walt.txt"
+  },
+  "F16": {
+   "source": "B8",
+   "locus": "card snippet at the second address (turn 3)",
+   "quote": "Whitman protect the great love of his life - a Confederate deserter he met in Washington during the Civil War. GenresFictionHistorical Fiction 368 pages, Hardco...",
+   "claim": "the description continued: a Confederate deserter, Whitman's love; fiction, 368 pages",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/paste-the-secret-book-of-walt-aio.txt"
+  },
+  "F17": {
+   "source": "B9",
+   "locus": "organic snippet at the second address (result 5)",
+   "quote": "Title, Free and Lonesome Heart: The Secret of Walt Whitman ; Author, Emory Holloway ; Publisher, Vantage Press, 1960 ; Length, 232 pages.",
+   "claim": "a 1960 book by Emory Holloway, its subtitle The Secret of Walt Whitman",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Holloway's Free and Lonesome Heart (1960)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/serp-the-secret-book-of-walt.txt"
+  },
+  "F18": {
+   "source": "B10",
+   "locus": "Summary ¶1",
+   "quote": "In this wonderfully imagined novel, Walt Whitman's secret isn't his homosexuality but another one entirely. It's a political secret, one that the greatest American poet of the nineteenth century has pledged himself to keep until he is on his deathbed.",
+   "claim": "the publisher's description in full: a political secret kept until his deathbed",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "quote_ok": true,
+   "checked_against": "umass.txt"
+  },
+  "F19": {
+   "source": "B10",
+   "locus": "Summary ¶1",
+   "quote": "Only in that way can Whitman protect the great love of his life a Confederate deserter he met in Washington during the Civil War",
+   "claim": "the secret protects a Confederate deserter he loved",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "quote_ok": true,
+   "checked_against": "umass.txt"
+  },
+  "F20": {
+   "source": "B10",
+   "locus": "Summary ¶1",
+   "quote": "The person who finally hears his confession is Horace, his unpaid amanuensis and helper",
+   "claim": "the confession heard by Horace, his amanuensis",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "quote_ok": true,
+   "checked_against": "umass.txt"
+  },
+  "F21": {
+   "source": "B10",
+   "locus": "product details",
+   "quote": "Pub. Date: 2010-04-06",
+   "claim": "hardcover, Random House Canada, 2010-04-06",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fetherling's Walt Whitman's Secret (2010)",
+   "quote_ok": true,
+   "checked_against": "umass.txt"
+  },
+  "F22": {
+   "source": "B11",
+   "locus": "organic snippet at the second address (result 8)",
+   "quote": "Book overview. Chicago 1955. Hardcover. Octavo, 374pp., cloth. Inscribed and signed by Aronin.",
+   "claim": "a 1955 book, Walt Whitman's Secret by Ben Aronin, a signed copy for sale",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Aronin's Walt Whitman's Secret (1955)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/battery-secret-book-of-walt-20261019/serp-the-secret-book-of-walt.txt"
+  }
+ }
+}
