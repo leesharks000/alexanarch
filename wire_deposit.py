@@ -1064,6 +1064,44 @@ def _heading_ids(h):
     return re.sub(r'<(h[2-6])((?:\s[^>]*)?)>(.*?)</\1>', sub, h, flags=re.S)
 
 
+def plain_text_path(d):
+    """The record's full text as a plain file (2026-10-22): the path the renderer reads its Full Text from, when
+    that is markdown or plain text; None otherwise. Same choice as regenerate_static_page: a declared, existing
+    full_text_path; else the largest of the conventional files."""
+    hex_id, dn = d['hex'], d['deposit_number']
+    declared = (d.get('full_text_path') or '').lstrip('/')
+    if declared and os.path.exists(declared):
+        path = declared
+    else:
+        path, size = None, 0
+        for c in (f'data/deposits/AXN-{hex_id}.md', f'data/texts/AXN-{hex_id}-text.md', f'data/deposits/AXN-{dn}.md'):
+            if os.path.exists(c) and os.path.getsize(c) > size:
+                path, size = c, os.path.getsize(c)
+    if not path or not path.endswith(('.md', '.txt')) or os.path.getsize(path) == 0:
+        return None
+    return path
+
+
+def text_pointer_html(d):
+    """Head link and first-screen line pointing machine readers to the plain text (2026-10-22). A record page
+    can run to hundreds of kilobytes with the Full Text after the description, wiki article and concepts;
+    fetchers that read the first hundred kilobytes or so stopped before it and reported the record unreadable,
+    with the plain text one link away. Returns (head_link, visible_line), both empty when there is no plain text."""
+    path = plain_text_path(d)
+    if not path:
+        return '', ''
+    url = f'https://www.alexanarch.org/{path}'
+    kb = max(1, round(os.path.getsize(path) / 1024))
+    # First in the head: the JSON-LD that follows carries the whole text as articleBody, and on long records the
+    # head alone runs past 250 KB.
+    head = f'<link rel="alternate" type="text/markdown" title="Full text (plain)" href="{url}">'
+    line = (f'<p class="plain-text" style="font-size:.82em;color:#555;margin:0 0 10px">Full text as plain markdown: '
+            f'<a href="/{path}">{path.split("/")[-1]}</a> ({kb} KB) · '
+            f'<a href="/data/records/{d["deposit_number"]}.json">record JSON</a>. '
+            f'On this page the full text follows the description, wiki article and concepts.</p>')
+    return head, line
+
+
 def regenerate_static_page(d, eidx, registry=None):
     _kernel_html = ''
     """Regenerate the static HTML page for a deposit with full enrichment.
@@ -2238,7 +2276,8 @@ def regenerate_static_page(d, eidx, registry=None):
             f'<a href="{esc(_em["url"])}" style="color:var(--accent)">{esc(_em["url"])}</a>'
             f'<div style="color:#666;font-size:.88em;margin-top:4px">{esc(str(_em.get("role") or _em.get("basis") or ""))[:200]}</div></div>')
 
-    page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+    _text_ptr = text_pointer_html(d)
+    page = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">{_text_ptr[0]}
 <title>{esc(d["title"])} — Alexanarch</title><meta name="description" content="{esc(_compose_meta_description(d))}"><meta property="og:title" content="{esc(str(d["title"])[:95])}"><meta property="og:description" content="{esc(_compose_meta_description(d))}"><meta property="og:url" content="{_rec_url}"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{jsonld}</script>{_katex_head}
 <link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
 <link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
@@ -2274,6 +2313,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {rel_block}
 <h1>{esc(d["title"])}</h1>
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
+{_text_ptr[1]}
 {_author_html}
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>

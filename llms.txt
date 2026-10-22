@@ -63,6 +63,13 @@ and declare removals.
 Both are also declared in every record page's `<head>` as `rel="resourcesync"` and
 `rel="alternate"` (OAI-PMH), so either can be discovered from any page in the archive.
 
+Each record's full text is also a plain markdown file, usually
+https://www.alexanarch.org/data/texts/AXN-XXXX-text.md (XXXX is the record's hex). The record page
+declares it first in its `<head>` as `rel="alternate" type="text/markdown"` and links it under the
+byline; the record's metadata is https://www.alexanarch.org/data/records/N.json. On a long record
+page the full text begins hundreds of kilobytes in, so a fetcher that reads only the start of a page
+reads the markdown file instead.
+
 ## Availability typing
 Every deposit carries `canonical_text_status` (canonical_full_text | recovered_full_text |
 metadata_only | attachment_only | tombstone | withdrawn) in the registry, in record-page
