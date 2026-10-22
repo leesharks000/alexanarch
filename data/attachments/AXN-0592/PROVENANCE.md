@@ -38,7 +38,7 @@ AI-assisted (tool). The specification was drafted by Lee Sharks with assistance 
 
 ## License
 
-CC-BY-4.0 for the specification and all editorial content authored by Lee Sharks. **Excluded** from CC-BY-4.0 (per caption rights lines in Figures 1 and 2, and per §1 scope of the countersigned approval instrument): Enli Lucente's Papers 194 archival scans (Figures 1 and 2). These remain © Enli Lucente, reproduced with the author's permission per the approval instrument executed separately.
+CC-BY-4.0 for the specification and all editorial content authored by Lee Sharks. **Excluded** from CC-BY-4.0 (per caption rights lines in Figures 1 and 2, and per §1 scope of the countersigned approval instrument): the correspondent's manuscript scans (Figures 1 and 2), reproduced in v1.0 with her permission per the approval instrument executed separately; withdrawn 2026-10-22 (below).
 
 Provenance file assembled 2026-07-22 by TACHYON.
 
@@ -58,3 +58,12 @@ This correction restores fidelity to the countersigned material:
 - The 17 AXN seal images from the same source directory are attached at `data/attachments/AXN-0592/web/seals/`.
 
 The PDF and HTML byte contents are unchanged. This is an edit to the existing deposit, not a version bump. The edition of record remains v1.0 final form, assembled 2026-07-21.
+
+## 2026-10-22 — v1.1 reissue (versioned)
+
+The external correspondent withdrew consent to the continued publication of her name, research descriptions and manuscript images in this specification (notice of 2026-10-22). Per the specification's own rule, the change is made by versioned reissue, never silent edit.
+
+- Removed: Figures 1–2 and their image files, §J.2 and the matching passage of §J, References II, §H, her name and research descriptions in §C, §2 and §P, and the acknowledgment of editorial labor. The technical content is unchanged; figure numbering is kept.
+- New files: `EA-SPXI-ANALOG-01-v1.1.html` (SHA-256 `168cfa6c01a6948ebbe74fd58ac1629f3cb70c53e17f36b50e88a753a2b55e6e`) and `EA-SPXI-ANALOG-01-v1.1.pdf` (SHA-256 `8ca8e18b637b188180149ef59e434a65129076e01b0406ac46fc9ca96b1567ba`), the PDF printed from the v1.1 HTML.
+- Withdrawn from display: `EA-SPXI-ANALOG-01-v1.0.pdf` (SHA-256 `5ec0728eb9e1cc6f5abb9bbe4085e75a13f1455c40670b69b076a4b319d8945d`), `EA-SPXI-ANALOG-01-v1.0.html` (SHA-256 `c4df3fbe78cf86c4c47c3e9895f15bf356c121b60e0a9370b847d69d612b4b17`) and `web/fig1-enli-shadow-attestation.jpg`, `web/fig2a-paper194-no1.jpg`, `web/fig2b-paper194-no2.jpg`.
+- Copies that cannot be altered: the v1.0 hashes committed in EA-ACT-ANALOG-01 (#1407) on 2026-07-21; this repository's history before this commit; third-party web archives.
