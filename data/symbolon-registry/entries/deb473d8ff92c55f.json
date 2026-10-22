@@ -4,7 +4,7 @@
  "family": "UNCLASSIFIED",
  "registered": "2026-08-02T20:31:49.908Z",
  "status": "witnessed-verified",
- "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/deb473d8ff92c55f-IMG_3671__________.pdf",
+ "retrieval": null,
  "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-02; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.] [Stamp re-applied 2026-08-02; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.] [Stamp re-applied 2026-08-02; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.] [Stamp re-applied 2026-08-02; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.] [Stamp re-applied 2026-08-02; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
  "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
  "tuple": {
@@ -86,7 +86,15 @@
  ],
  "last_verified_at": "2026-10-20T14:20:16Z",
  "verification_method": "sha256 of stored bytes compared to the entry's AXN0 kernel; the identifier is the expected hash, so verification is self-contained",
- "core_stored": true,
+ "core_stored": false,
  "core_bytes": 2428286,
- "core_path": "/data/symbolon-registry/files/deb473d8ff92c55f-IMG_3671__________.pdf"
+ "core_path": "/data/symbolon-registry/files/deb473d8ff92c55f-IMG_3671__________.pdf",
+ "core_removed": {
+  "date": "2026-10-22",
+  "path_was": "/data/symbolon-registry/files/deb473d8ff92c55f-IMG_3671__________.pdf",
+  "bytes": 2428286,
+  "reason": "The depositor withdrew her permission for the archive to host her manuscript images (notice of 2026-10-22). The stored core is removed; the witnessed tuple stays, since the identifier is a hash and the record of the witnessing is the archive's own.",
+  "note": "Per the custody terms: any removal appears as a dated commit; a registry entry is a record, not a promise of perpetual hosting. The kernel remains verifiable against any copy of the bytes held elsewhere."
+ },
+ "retrieval_was": "https://www.alexanarch.org/data/symbolon-registry/files/deb473d8ff92c55f-IMG_3671__________.pdf"
 }

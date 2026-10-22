@@ -7,14 +7,14 @@
  "verified_at": "2026-08-09T16:39:04.885Z",
  "last_verified_at": "2026-10-20T14:20:16Z",
  "verification_method": "sha256 of stored bytes compared to the entry's AXN0 kernel; the identifier is the expected hash, so verification is self-contained",
- "core_stored": true,
+ "core_stored": false,
  "custody": {
   "terms": "Stored cores live in this archive's public version-controlled repository and are served without account, login, or expiry. Any change or removal appears as a dated commit; nothing is silently deleted.",
   "single_point_of_failure": "One administrator, one code host, one serving platform. Durable against link rot, accidental overwrite and quiet editing; NOT durable against a platform decision — this archive was itself terminated elsewhere in June 2026. A registry entry is a record, not a promise of perpetual hosting.",
   "mirror_freely": "Listed with hash and length in /resourcesync/resourcelist.xml and /data/symbolon-registry/MANIFEST.json, and checksummed in /SHA256SUMS.txt. Fetch, hash, compare — copying requires no permission and verification requires no trust in this archive. Independent custody means a copy held by someone who is not this archive's administrator, on a platform it does not use.",
   "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
  },
- "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/0bc886c57d6397e8-0DF6D311-944D-4C8B-AB1B-B361A90AA1D5.jpg",
+ "retrieval": null,
  "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-09; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.] [Stamp re-applied 2026-08-09; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
  "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
  "tuple": {
@@ -86,5 +86,13 @@
   }
  ],
  "core_bytes": 484814,
- "core_path": "/data/symbolon-registry/files/0bc886c57d6397e8-0DF6D311-944D-4C8B-AB1B-B361A90AA1D5.jpg"
+ "core_path": "/data/symbolon-registry/files/0bc886c57d6397e8-0DF6D311-944D-4C8B-AB1B-B361A90AA1D5.jpg",
+ "core_removed": {
+  "date": "2026-10-22",
+  "path_was": "/data/symbolon-registry/files/0bc886c57d6397e8-0DF6D311-944D-4C8B-AB1B-B361A90AA1D5.jpg",
+  "bytes": 484814,
+  "reason": "The depositor withdrew her permission for the archive to host her manuscript images (notice of 2026-10-22). The stored core is removed; the witnessed tuple stays, since the identifier is a hash and the record of the witnessing is the archive's own.",
+  "note": "Per the custody terms: any removal appears as a dated commit; a registry entry is a record, not a promise of perpetual hosting. The kernel remains verifiable against any copy of the bytes held elsewhere."
+ },
+ "retrieval_was": "https://www.alexanarch.org/data/symbolon-registry/files/0bc886c57d6397e8-0DF6D311-944D-4C8B-AB1B-B361A90AA1D5.jpg"
 }

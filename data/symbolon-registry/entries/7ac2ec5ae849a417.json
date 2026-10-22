@@ -1,0 +1,75 @@
+{
+ "axn": "AXN:0706.GOVERNANCE.🐚🟠🔆🗡️🎇📚",
+ "position": "0706",
+ "family": "GOVERNANCE",
+ "registered": "2026-10-22T14:34:06.744Z",
+ "status": "witnessed-verified",
+ "verified_at": "2026-10-22T14:34:06.744Z",
+ "last_verified_at": "2026-10-22T14:34:06Z",
+ "verification_method": "sha256 of stored bytes compared to the entry's AXN0 kernel; the identifier is the expected hash, so verification is self-contained",
+ "core_stored": true,
+ "custody": {
+  "terms": "Stored cores live in this archive's public version-controlled repository and are served without account, login, or expiry. Any change or removal appears as a dated commit; nothing is silently deleted.",
+  "single_point_of_failure": "One administrator, one code host, one serving platform. Durable against link rot, accidental overwrite and quiet editing; NOT durable against a platform decision — this archive was itself terminated elsewhere in June 2026. A registry entry is a record, not a promise of perpetual hosting.",
+  "mirror_freely": "Listed with hash and length in /resourcesync/resourcelist.xml and /data/symbolon-registry/MANIFEST.json, and checksummed in /SHA256SUMS.txt. Fetch, hash, compare — copying requires no permission and verification requires no trust in this archive. Independent custody means a copy held by someone who is not this archive's administrator, on a platform it does not use.",
+  "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
+ },
+ "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/7ac2ec5ae849a417-display-rot90ccw.jpg",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
+ "tuple": {
+  "axn0": {
+   "glyphs": "🐚🟠🔆🗡️🎇📚",
+   "sha256": "7ac2ec5ae849a417da7d6134f0050be8411f935c2558d2d99a849cec9e2adda8"
+  },
+  "axn1": {
+   "glyphs": "▲🏁♉💡🕗👁️",
+   "sha256": "9ff0aa3c695758f65fc27bb079404299dd6de527f4ee8f6131044e3796eede5d"
+  }
+ },
+ "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
+ "seed_a": {
+  "axn_spec": "AXN-SYMBOLON-SPEC v0.2",
+  "spec_record": "https://www.alexanarch.org/s/records/1432/",
+  "spec_axn": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+  "reconstruction_class": "content-addressed",
+  "stamp_generation": 2,
+  "axn0": {
+   "glyphs": "🐚🟠🔆🗡️🎇📚",
+   "sha256": "7ac2ec5ae849a417da7d6134f0050be8411f935c2558d2d99a849cec9e2adda8",
+   "role": "identity kernel of the sealed core (the original, pre-stamp bytes)"
+  },
+  "axn1": {
+   "glyphs": "▲🏁♉💡🕗👁️",
+   "sha256": "9ff0aa3c695758f65fc27bb079404299dd6de527f4ee8f6131044e3796eede5d",
+   "role": "kernel of the ADDRESSED stamped copy (tamper witness; not a name)"
+  },
+  "manifest": [
+   {
+    "part": 1,
+    "filename": "display-rot90ccw.jpg",
+    "sha256": "7ac2ec5ae849a417da7d6134f0050be8411f935c2558d2d99a849cec9e2adda8",
+    "bytes": 1942138
+   }
+  ],
+  "stamp_geometry": {
+   "format": "image/png",
+   "method": "appended_footer_strip",
+   "strip_px": 135,
+   "original_px": {
+    "w": 4000,
+    "h": 3000
+   },
+   "strip_stamp": "crop to original_px then compare pixels; byte-identical strip NOT possible for raster (re-encode); AXN₀ verification requires Seed B = the original file",
+   "strip_reversible": false
+  },
+  "created": "2026-10-22T14:32:41.131Z",
+  "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
+  "family": "GOVERNANCE",
+  "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive",
+  "inscribed_address": "AXN:0706.GOVERNANCE.🐚🟠🔆🗡️🎇📚"
+ },
+ "witnessing": "Stamped 2026-10-22 with the archive's own client-side stamp tool (mint/stamp/), run in session on the declared display derivative of EA-ACT-ANALOG-01 (#1407): data/attachments/AXN-0590/display-rot90ccw.jpg, a 90° counterclockwise rotation of master.jpg (SHA-256 ceb944f37e2792af990ac63fad3e277710549d09cbb2b2a8e89e38c74b5a93a8), as that deposit's PROVENANCE records. The entry is written as /api/register-symbolon writes one, in a commit, and lands by bundle.",
+ "core_bytes": 1942138,
+ "core_path": "/data/symbolon-registry/files/7ac2ec5ae849a417-display-rot90ccw.jpg"
+}
