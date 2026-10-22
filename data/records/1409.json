@@ -1,11 +1,11 @@
 {
  "deposit_number": 1409,
- "axn": "AXN:0592.UNCLASSIFIED.🌆🌖⌛💚🏠🌋",
+ "axn": "AXN:0592.UNCLASSIFIED.↘️●🧬📏🏙️🛡️",
  "hex": "0592",
  "family": "UNCLASSIFIED",
- "emoji": "👈△🥁🪸🧪🎺",
- "hash": "e30560cc261545d4015ced2cbff6ffae5de2768810e522546dca047b6f1f1f96",
- "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.1, reissued 2026-10-22; v1.0 edition of record 2026-07-21)",
+ "emoji": "↘️●🧬📏🏙️🛡️",
+ "hash": "db9c3b4fe52d2594aa5add96a4997e4fb582e820924f95b347230636e2ccdcdb",
+ "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.2, reissued 2026-10-22; v1.0 edition of record 2026-07-21)",
  "creator": "Lee Sharks",
  "date": "2026-07-21",
  "description": "Specification for treating ink-on-paper inscription as machine-eligible scholarly input. The document formalizes:\n\n- **The attestation doctrine**: an in-frame timestamped photograph of a signed and dated inscription carries evidentiary force sufficient for scholarly commitment, provenance, and consent. The instrument's own signature block, §3.2, and §4 develop this doctrine and use it self-referentially.\n- **The verification instrument**: how public evidence-captures (photographs, scans, hash commitments) constitute the audit trail for handwritten scholarly artifacts.\n- **The provenance and attribution architecture** (§H, §J.2, §P): how corpora referenced by external scholars are cited under the scholar's own confirmed record; how editorial labor is acknowledged; how the division of authority between apparatus author and cited scholars is preserved.\n- **The relation to EA-ACT-ANALOG-01** (AXN:0590.GOVERNANCE.💜🗡️🔃🔓🪄👇, #1407): the effective act that revoked CERN's stewardship of a public good is the first application of this specification's apparatus. The relationship is bidirectional: AXN:0590 publicly committed to the v1.0 PDF and HTML SHAs on 2026-07-21; this deposit brings the specification itself into the sovereign record.\n\nThe v1.0 edition of record was assembled 2026-07-21 (PDF SHA-256 `5ec0728eb9e1cc6f5abb9bbe4085e75a13f1455c40670b69b076a4b319d8945d`; HTML SHA-256 `c4df3fbe78cf86c4c47c3e9895f15bf356c121b60e0a9370b847d69d612b4b17`). It supersedes the review chain v0.8 → v0.15 whose SHA-256 digests were committed publicly in `data/provenance/EA-SPXI-ANALOG-01-priority-ledger.md` (public since 2026-07-20 04:23 UTC). The v0.1 draft at `drafts/EA-SPXI-ANALOG-01-v0.1.md` (public since 2026-07-20) supplied the technical Part II content.\n\nThird-party approval for uses of an external scholar's name, words, research, corpus, and materials in §H, §J.2, §P, References II, and Figures 1–2 was received in countersigned form on 2026-07-22, covering the exact bytes of PDF SHA `5ec0728e...`. The countersigned instrument is retained privately in `data-rhizome/specs/EA-SPXI-ANALOG-01/v1.0/` per §1 of the instrument itself; only the countersignature to the specified uses enters the public record via this deposit's provenance.",
@@ -15,16 +15,16 @@
  "root_axn": "AXN:0592.UNCLASSIFIED",
  "axn_schema_version": "v2",
  "protocol_version": "alexanarch-deposit-protocol/v1",
- "axn_canonical": "e30560cc261545d4015ced2cbff6ffae5de2768810e522546dca047b6f1f1f96",
+ "axn_canonical": "db9c3b4fe52d2594aa5add96a4997e4fb582e820924f95b347230636e2ccdcdb",
  "clusters": [
+  "Structural",
+  "Mathematical",
+  "Instrumental",
+  "Scriptural",
   "Liminal",
-  "Celestial",
-  "Temporal",
-  "Signal",
-  "Architectural",
-  "Elemental"
+  "Architectural"
  ],
- "axn_reading": "Threshold -> Origin -> Duration -> Alarm -> Foundation -> Force",
+ "axn_reading": "Direction -> Proof -> Method -> Text -> Threshold -> Foundation",
  "minted_at": "2026-07-22T08:34:14Z",
  "status": "ACTIVE",
  "status_authorial": "SELF_SERVE_MINTED",
@@ -155,7 +155,7 @@
   "review chain"
  ],
  "orcid": "0009-0000-1599-0703",
- "version": "v1.1",
+ "version": "v1.2",
  "keywords": [
   "EA-SPXI-ANALOG-01",
   "Machine-Eligible Handwritten Artifacts",
@@ -344,26 +344,47 @@
  "line": "space-ark-and-transforms",
  "line_parent": "science",
  "line_basis": "derived",
+ "reissue_history": [
+  {
+   "date": "2026-10-22",
+   "from_version": "v1.0",
+   "to_version": "v1.1",
+   "hash_before_reissue": "b8988c7b398b707e65b7e4e966daec3b3ae38fc067fdbdbf122192a20eb73abb",
+   "axn_before_reissue": "AXN:0592.UNCLASSIFIED.👈△🥁🪸🧪🎺",
+   "reason": "An external correspondent withdrew consent to the continued publication of her name, research descriptions and manuscript images (notice of 2026-10-22). The specification's own rule: corrections she requests enter by versioned reissue, never silent edit.",
+   "removed": [
+    "Figures 1-2 and their image files",
+    "§J.2 and the matching passage of §J",
+    "References II",
+    "§H",
+    "her name and research descriptions in §C, §2 and §P",
+    "the acknowledgment of editorial labor"
+   ],
+   "withdrawn_from_display": {
+    "v1.0_pdf_sha256": "5ec0728eb9e1cc6f5abb9bbe4085e75a13f1455c40670b69b076a4b319d8945d",
+    "v1.0_html_sha256": "c4df3fbe78cf86c4c47c3e9895f15bf356c121b60e0a9370b847d69d612b4b17"
+   },
+   "note": "The deposit number and hex position are addresses and do not move. The AXN is re-derived from the v1.1 bytes because the AXN is content-derived; the prior AXN and hash are kept here."
+  }
+ ],
  "reissue": {
   "date": "2026-10-22",
-  "from_version": "v1.0",
-  "to_version": "v1.1",
-  "hash_before_reissue": "b8988c7b398b707e65b7e4e966daec3b3ae38fc067fdbdbf122192a20eb73abb",
-  "axn_before_reissue": "AXN:0592.UNCLASSIFIED.👈△🥁🪸🧪🎺",
-  "reason": "An external correspondent withdrew consent to the continued publication of her name, research descriptions and manuscript images (notice of 2026-10-22). The specification's own rule: corrections she requests enter by versioned reissue, never silent edit.",
+  "from_version": "v1.1",
+  "to_version": "v1.2",
+  "hash_before_reissue": "e30560cc261545d4015ced2cbff6ffae5de2768810e522546dca047b6f1f1f96",
+  "axn_before_reissue": "AXN:0592.UNCLASSIFIED.🌆🌖⌛💚🏠🌋",
+  "reason": "Same-day follow-up to v1.1. The correspondent's notice of 2026-10-22 invokes §3 of the signed approval instrument: her correspondence remains private and enters no publication, deposit or public record. v1.1 still carried residue of the private review correspondence.",
   "removed": [
-   "Figures 1-2 and their image files",
-   "§J.2 and the matching passage of §J",
-   "References II",
-   "§H",
-   "her name and research descriptions in §C, §2 and §P",
-   "the acknowledgment of editorial labor"
+   "the announcement of the companion essay 'The Hand and the Act' (withdrawn; it will not be issued)",
+   "the division-of-authority statement entered at her request",
+   "the logged content of the reviewer corrections in the version notes",
+   "the Methodology statement that reviewer corrections were incorporated verbatim"
   ],
   "withdrawn_from_display": {
-   "v1.0_pdf_sha256": "5ec0728eb9e1cc6f5abb9bbe4085e75a13f1455c40670b69b076a4b319d8945d",
-   "v1.0_html_sha256": "c4df3fbe78cf86c4c47c3e9895f15bf356c121b60e0a9370b847d69d612b4b17"
+   "v1.1_html_sha256": "168cfa6c01a6948ebbe74fd58ac1629f3cb70c53e17f36b50e88a753a2b55e6e",
+   "v1.1_pdf_sha256": "8ca8e18b637b188180149ef59e434a65129076e01b0406ac46fc9ca96b1567ba"
   },
-  "note": "The deposit number and hex position are addresses and do not move. The AXN is re-derived from the v1.1 bytes because the AXN is content-derived; the prior AXN and hash are kept here."
+  "note": "The deposit number and hex position are addresses and do not move. The AXN is re-derived from the v1.2 bytes because the AXN is content-derived; the prior AXN and hash are kept here."
  },
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",

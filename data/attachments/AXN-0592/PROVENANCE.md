@@ -67,3 +67,12 @@ The external correspondent withdrew consent to the continued publication of her 
 - New files: `EA-SPXI-ANALOG-01-v1.1.html` (SHA-256 `168cfa6c01a6948ebbe74fd58ac1629f3cb70c53e17f36b50e88a753a2b55e6e`) and `EA-SPXI-ANALOG-01-v1.1.pdf` (SHA-256 `8ca8e18b637b188180149ef59e434a65129076e01b0406ac46fc9ca96b1567ba`), the PDF printed from the v1.1 HTML.
 - Withdrawn from display: `EA-SPXI-ANALOG-01-v1.0.pdf` (SHA-256 `5ec0728eb9e1cc6f5abb9bbe4085e75a13f1455c40670b69b076a4b319d8945d`), `EA-SPXI-ANALOG-01-v1.0.html` (SHA-256 `c4df3fbe78cf86c4c47c3e9895f15bf356c121b60e0a9370b847d69d612b4b17`) and `web/fig1-enli-shadow-attestation.jpg`, `web/fig2a-paper194-no1.jpg`, `web/fig2b-paper194-no2.jpg`.
 - Copies that cannot be altered: the v1.0 hashes committed in EA-ACT-ANALOG-01 (#1407) on 2026-07-21; this repository's history before this commit; third-party web archives.
+
+## 2026-10-22 — v1.2 reissue (versioned, same day)
+
+The correspondent's notice also invokes §3 of the signed approval instrument: her correspondence remains private and enters no publication, deposit or public record. v1.1 still carried residue of the private review correspondence, and v1.2 removes it.
+
+- Removed from §P and the version notes: the announcement of the companion provenance essay "The Hand and the Act", which was to record the dated correspondence (withdrawn; it will not be issued); the division-of-authority statement entered at her request; the logged content of the reviewer corrections. Removed from the Methodology: the statement that reviewer corrections were incorporated verbatim. The author's sole responsibility for the technical content is stated in the author's own words.
+- New files: `EA-SPXI-ANALOG-01-v1.2.html` (SHA-256 `c6e593d0a29d16539b57ea143914c94c3d4d1dfe322dc89582f449d29e4e3f2c`) and `EA-SPXI-ANALOG-01-v1.2.pdf` (SHA-256 `b2e5542dd8b7e245bbc9c436361b8b8ae9ab1a311cbfad41abb886a9cc10dbe9`), the PDF printed from the v1.2 HTML.
+- Withdrawn from display: `EA-SPXI-ANALOG-01-v1.1.html` (SHA-256 `168cfa6c01a6948ebbe74fd58ac1629f3cb70c53e17f36b50e88a753a2b55e6e`) and `EA-SPXI-ANALOG-01-v1.1.pdf` (SHA-256 `8ca8e18b637b188180149ef59e434a65129076e01b0406ac46fc9ca96b1567ba`).
+- The countersigned approval instrument stays private in data-rhizome and is not published.
