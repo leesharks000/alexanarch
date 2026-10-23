@@ -1,0 +1,857 @@
+Codex, based on GPT-6; exact version unavailable. This conversation contains prior-project memories and additional instructions, so it is not a fresh blind context. The findings below use only the supplied test materials.
+
+```json
+[
+  {
+    "case": "SR-W1",
+    "case_type": "sentence",
+    "innocent_reading": "KRABBE, cited elsewhere in the article, supplies six language-dependent kinds and seven other kinds. Thirteen therefore supports the weaker disjunction \"twelve or thirteen\". The sentence can be read as a compressed inventory rather than a competing reconstruction of Aristotle's classification.",
+    "innocent_reading_fails_at": "It does not fail as a numerical disjunction. However, the supplied sources give no reason for uncertainty between twelve and thirteen. They report an exact division, a claim of completeness, and a proposed reduction of the kinds to another kind. The sentence preserves none of those relations.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "KRABBE reports that Aristotle divides sophistical refutations into six kinds dependent on language and seven not dependent on language, claims completeness, and attempts a reduction to ignoratio elenchi. The sentence reduces this to identification of twelve or thirteen fallacies. The supplied windows do not independently establish every bibliographic detail in the sentence.",
+    "deltas": [
+      {
+        "sentence_says": "twelve or thirteen fallacies",
+        "source_says": "There are seven kinds that do not depend on the way language is used",
+        "kind": "hedge",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "identified twelve or thirteen fallacies",
+        "source_says": "sophistical refutations are divided into two groups",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "identified twelve or thirteen fallacies",
+        "source_says": "Aristotle also claims that his list of types of sophistical refutation is complete",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "twelve or thirteen fallacies",
+        "source_says": "# 13 Fallacy of many questions",
+        "kind": "hedge",
+        "measure": "operative retention",
+        "lambda": 2
+      }
+    ],
+    "omega": "Division into two groups, exact enumeration, a completeness claim, and a proposed reduction.",
+    "attribute": "A numerical characterization of the book's contents.",
+    "attributization": "partial",
+    "attributization_reason": "The sentence retains Aristotle's act of identifying kinds, but makes the resulting inventory the main description of the work. It does not retain how the count is constructed or defended.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The article's own lists reach \"# 13 Fallacy of many questions\", and KRABBE reports an exact classification. Those materials can revise the hedge, but the sentence does not state their controlling distinction or completeness claim.",
+      "revision_required": "Remove the unexplained numerical uncertainty and describe the six/seven division. Attribute the completeness claim if it is included."
+    },
+    "surviving_relations": [
+      "Aristotle is connected with identifying fallacies in the work.",
+      "Thirteen remains one of the stated numerical possibilities."
+    ],
+    "lost_relations": [
+      "The six/seven division according to dependence on language.",
+      "The distinction between kinds of fallacy and individual fallacies.",
+      "The reported completeness claim and attempted reduction to ignoratio elenchi."
+    ],
+    "alternatives": [
+      "Read literally as a disjunction, the count is entailed by thirteen and is not unsupported.",
+      "Read as an expression of scholarly uncertainty, the hedge has no explanation in the supplied windows."
+    ],
+    "correction_pathway": "Use KRABBE, already cited in the article, to state and cite the classification. Seek an additional source only if twelve is to remain a meaningful alternative.",
+    "confidence": "high",
+    "confidence_note": "High for the count and omitted classificatory relations; limited for bibliographic details not established in the supplied windows.",
+    "windows_too_narrow": "The supplied extracts do not explicitly establish Organon membership or independently verify the Greek and Latin titles. No source explaining a twelve-kind count is supplied.",
+    "spans": [
+      {
+        "source": "KRABBE",
+        "quote": "there are exactly six kinds of sophistical refutations that belong to this group"
+      },
+      {
+        "source": "KRABBE",
+        "quote": "There are seven kinds that do not depend on the way language is used"
+      },
+      {
+        "source": "KRABBE",
+        "quote": "In this chapter Aristotle also claims that his list of types of sophistical refutation is complete"
+      },
+      {
+        "source": "KRABBE",
+        "quote": "In Chapter 6 Aristotle tries to show that all these types of sophistical refutation can be reduced to subtypes of ignoratio elenchi."
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "# 13 Fallacy of many questions"
+      }
+    ]
+  },
+  {
+    "case": "SR-W2",
+    "case_type": "sentence",
+    "innocent_reading": "The article's cited translation says that Aristotle had nothing earlier on reasoning, and SEPLOGIC explicitly translates sullogismos as deduction. Together these support a conventional paraphrase of Aristotle's novelty claim. \"According to Aristotle\" correctly marks the claim as his. Restricting a universal absence claim to ancient Greece would be a weakening, not an unsupported assertion.",
+    "innocent_reading_fails_at": "The passage explains the absence of an inherited art or method while explicitly acknowledging earlier rhetorical and interrogative arguments and teaching. Calling this the first work to treat a subject can obscure that distinction. The supplied materials do not decisively establish whether the sentence's broad treatment-language is an acceptable shorthand for the narrower undertaking.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": ["at the sentence", "elsewhere in the article"],
+    "paraphrase": "Aristotle contrasts inherited rhetorical material with the starting conditions of his own inquiry: previous teachers supplied arguments rather than an art, while his group developed a method through prolonged practice. The sentence presents this as priority of a work treating deductive reasoning in ancient Greece. Both the Greek and the supplied translations are used here; SEPLOGIC supplies the rationale for the English term deduction.",
+    "deltas": [
+      {
+        "sentence_says": "the subject of deductive reasoning",
+        "source_says": "περὶ δὲ τοῦ συλλογίζεσθαι",
+        "kind": "term changed",
+        "measure": "primary-text adequacy",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "deductive reasoning",
+        "source_says": "This is why I have translated sullogismos with ‘deduction’ rather than its English cognate.",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "the first work to treat the subject",
+        "source_says": "they supposed they were educating by giving not the art but the things from the art",
+        "kind": "scope",
+        "measure": "primary-text adequacy",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "the first work",
+        "source_says": "but were long at work seeking by practice",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "in ancient Greece",
+        "source_says": "Nothing existed at all.",
+        "kind": "scope",
+        "measure": "source fidelity",
+        "lambda": 4
+      }
+    ],
+    "omega": "A contrast between transmitting products and transmitting an art, followed by an account of constructing and evaluating a method.",
+    "attribute": "Priority as the first work treating a subject.",
+    "attributization": "yes",
+    "attributization_reason": "An account of an undertaking's starting conditions, predecessors, and methodological achievement becomes a priority property of a book.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The primary pointer preserves access to the passage, and \"According to Aristotle\" preserves attribution. The sentence does not preserve the distinction between earlier arguments and an inherited art or the invitation to inspect the method.",
+      "revision_required": "Describe Aristotle's claim about lacking an inherited treatment or method for this undertaking, with the contrast between arguments learned by heart and an art. Retain deduction as a defensible translation, without silently equating its scope with every modern use of that term."
+    },
+    "surviving_relations": [
+      "The novelty claim is attributed to Aristotle.",
+      "The sentence identifies reasoning as the relevant activity.",
+      "A pointer to the primary passage remains."
+    ],
+    "lost_relations": [
+      "Earlier teaching and arguments are acknowledged but distinguished from transmission of an art.",
+      "The method arises through prolonged practice.",
+      "The audience is asked to inspect the method and assess discoveries and omissions."
+    ],
+    "alternatives": [
+      "If \"in ancient Greece\" limits where earlier work is denied, it narrows the source's unqualified absence claim.",
+      "If \"in ancient Greece\" situates the activity of deductive reasoning, it supplies geographical framing rather than a distinct account of Aristotle's scope.",
+      "If \"first work\" means the first developed treatment of this undertaking, the sentence is a plausible compression.",
+      "If it means no previous treatment of reasoning of any kind, the acknowledged predecessors make that reading too broad.",
+      "Deduction is explicitly supported as a translation; the supplied materials do not warrant declaring it inherently erroneous."
+    ],
+    "correction_pathway": "Revise around the primary passage's art/products distinction, using an appropriately sourced translation. A categorical claim about the first book would require a source that explicitly makes that bibliographic identification.",
+    "confidence": "medium",
+    "confidence_note": "The lost methodological distinctions are explicit. The exact scope of the novelty claim and the identification of the undertaking with this particular work remain interpretive.",
+    "windows_too_narrow": "No supplied secondary discussion settles the referent and extent of the undertaking or explicitly establishes this book's priority as a discrete work. The primary Greek definition corresponding to all of SEPLOGIC's discussion of deduction is not supplied.",
+    "spans": [
+      {
+        "source": "MIT",
+        "quote": "on the subject of reasoning we had nothing else of an earlier date to speak of at all"
+      },
+      {
+        "source": "SEPLOGIC",
+        "quote": "This is why I have translated sullogismos with ‘deduction’ rather than its English cognate."
+      },
+      {
+        "source": "SEPLOGIC",
+        "quote": "Aristotle’s definition of deduction is not a precise match for a modern definition of validity."
+      },
+      {
+        "source": "SE34GR",
+        "quote": "περὶ δὲ τοῦ συλλογίζεσθαι"
+      },
+      {
+        "source": "SE34GR",
+        "quote": "οὐ γὰρ τέχνην ἀλλὰ τὰ ἀπὸ τῆς τέχνης"
+      },
+      {
+        "source": "SE34GR",
+        "quote": "they supposed they were educating by giving not the art but the things from the art"
+      },
+      {
+        "source": "SE34GR",
+        "quote": "but were long at work seeking by practice"
+      },
+      {
+        "source": "SE34GR",
+        "quote": "If it appears to you on inspection that, from such conditions at the beginning, the method stands adequately beside the other undertakings that have grown by transmission"
+      }
+    ]
+  },
+  {
+    "case": "SR-W3",
+    "case_type": "sentence",
+    "innocent_reading": "The sources cited elsewhere in the article describe reasoning, distinguish genuine achievement from appearance, and identify logical self-defense as a primary purpose. These support a concise account of developing reasoning in opposition to deceptive sophistry.",
+    "innocent_reading_fails_at": "The opposition is incomplete if taken as an exhaustive account of the book's programme. MIT includes both examining and defending a thesis, with a show of knowledge, while KRABBE explicitly says that sophists can use the treatise to commit fallacies.",
+    "support": ["partially supported"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "The undertaking seeks a capacity to reason about any proposed theme from generally accepted premises, to examine views, and to defend a thesis. The sentence retains a broad contrast between genuine and deceptive reasoning but omits the paired roles, premise basis, and usefulness to sophists.",
+    "deltas": [
+      {
+        "sentence_says": "a pattern of sound and genuine reasoning",
+        "source_says": "some faculty of reasoning about any theme put before us from the most generally accepted premisses that there are",
+        "kind": "term changed",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "in opposition to the deceptive or misleading \"art of sophistry\"",
+        "source_says": "it is also announced as a useful treatise for sophists",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "a pattern of sound and genuine reasoning",
+        "source_says": "the aim of ensuring that in standing up to an argument we shall defend our thesis in the same manner",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      }
+    ],
+    "omega": "Developing a reasoning capacity for examination and defense, with applications to both genuine discussion and sophistical practice.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence still describes an attempted activity and its object. Its losses arise from compression and one-sided framing rather than conversion into a credential or category.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "A genuine/apparent contrast survives, but the sentence gives no indication that the reported programme also includes defending theses and practical usefulness to sophists.",
+      "revision_required": "State the reasoning capacity and paired tasks of examining and defending. Qualify the opposition framing so that it does not imply exclusive use against sophists."
+    },
+    "surviving_relations": [
+      "Aristotle attempts to develop reasoning.",
+      "Genuine reasoning is distinguished from deceptive appearance."
+    ],
+    "lost_relations": [
+      "Reasoning concerns any proposed theme and starts from generally accepted premises.",
+      "Examination and defense are paired tasks.",
+      "The treatise can also be used by sophists."
+    ],
+    "alternatives": [
+      "As a selective statement of logical self-defense, the sentence is supported.",
+      "As an exhaustive statement of purpose, it leaves out uses explicitly reported by KRABBE.",
+      "If sound is read as a technical guarantee of true premises, that stronger interpretation is not established by the supplied programme."
+    ],
+    "correction_pathway": "Use MIT and KRABBE, already cited elsewhere, to expand or qualify the account of purpose.",
+    "confidence": "high",
+    "confidence_note": "The sources directly support the innocent reading and explicitly supply the omitted purposes.",
+    "windows_too_narrow": null,
+    "spans": [
+      {
+        "source": "MIT",
+        "quote": "some faculty of reasoning about any theme put before us from the most generally accepted premisses that there are"
+      },
+      {
+        "source": "MIT",
+        "quote": "not only to be able to conduct an examination dialectically but also with a show of knowledge"
+      },
+      {
+        "source": "MIT",
+        "quote": "the aim of ensuring that in standing up to an argument we shall defend our thesis in the same manner"
+      },
+      {
+        "source": "MIT",
+        "quote": "the art of sophistry is a certain appearance of wisdom without the reality"
+      },
+      {
+        "source": "KRABBE",
+        "quote": "Primarily, On Sophistical Refutations is a book for logical self-defense"
+      },
+      {
+        "source": "KRABBE",
+        "quote": "they should study fallacies not to avoid them, but rather to commit them when it suits their purposes"
+      }
+    ]
+  },
+  {
+    "case": "SR-W4-6",
+    "case_type": "sentence group",
+    "innocent_reading": "The sentence group follows KRABBE's chapter count, division by participant role, chapter ranges, and supplementary sections almost word for word. KRABBE is cited after the group.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "The book has 34 chapters, with principal sections on the questioner and answerer, plus an introduction, interlude, and conclusion. This is the structural description KRABBE supplies.",
+    "deltas": [
+      {
+        "sentence_says": "The book naturally falls in two parts",
+        "source_says": "The book contains 34 chapters, but naturally falls in two parts",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32)",
+        "source_says": "chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32)",
+        "kind": "none",
+        "measure": "operative retention",
+        "lambda": 4
+      }
+    ],
+    "omega": "A structural division of the treatise by participant role and chapter function.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The source's structural description remains a structural description. The relation between tactics, participant roles, and chapter ranges survives.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "The chapter ranges and roles are reproduced, and the group carries the KRABBE citation.",
+      "revision_required": "None established by the supplied materials."
+    },
+    "surviving_relations": [
+      "The 34-chapter total.",
+      "Questioner and answerer sections with their chapter ranges.",
+      "Introduction, interlude, and conclusion with their chapter ranges."
+    ],
+    "lost_relations": [],
+    "alternatives": [
+      "The two parts can be read as the two principal tactical sections rather than an exhaustive division excluding the additional sections. Both source and article explicitly name those additional sections."
+    ],
+    "correction_pathway": "No correction indicated.",
+    "confidence": "high",
+    "confidence_note": "Direct textual agreement establishes source fidelity. This does not independently validate KRABBE's structural interpretation against the complete primary work.",
+    "windows_too_narrow": "The complete primary work is not supplied for an independent assessment of the structural interpretation.",
+    "spans": [
+      {
+        "source": "KRABBE",
+        "quote": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32)."
+      },
+      {
+        "source": "KRABBE",
+        "quote": "Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34)."
+      }
+    ]
+  },
+  {
+    "case": "SR-W7-8",
+    "case_type": "heading with lists",
+    "innocent_reading": "KRABBE supports the language-dependent/non-language-dependent division, the six/seven membership pattern, and most listed names or recognisable English renderings. The chapter references can charitably mean that the language-dependent examples are in Chapter 4 and the other examples in Chapter 5.",
+    "innocent_reading_fails_at": "The supplied source does not equate dependence on language with formal fallacy or non-dependence with informal fallacy. It places the division in Chapter 4 and says Chapter 5 gives examples except petitio principii. It names consequence, not specifically affirming the consequent. These additions or substitutions are not established by the supplied window.",
+    "support": ["partially supported", "interpretation beyond descriptive paraphrase", "unresolved"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "KRABBE describes six kinds dependent on language and seven not dependent on language, with examples distributed across Chapters 4 and 5. The article overlays a formal/informal equivalence and replaces some source labels with modern English labels whose exact equivalence is not fully demonstrated here.",
+    "deltas": [
+      {
+        "sentence_says": "Fallacies in the language or formal fallacies (in dictionem)",
+        "source_says": "those that depend on the ‘‘use of language’’ (lexis)",
+        "kind": "equivalence asserted",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "Fallacies not in the language or informal fallacies (extra dictionem)",
+        "source_says": "those that do not",
+        "kind": "equivalence asserted",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "identifies in Chapter 4 (formal fallacies) and 5 (informal fallacies)",
+        "source_says": "In Chapter 4, sophistical refutations are divided into two groups",
+        "kind": "scope",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "Affirming the consequent",
+        "source_says": "consequence",
+        "kind": "term changed",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "Petitio principii",
+        "source_says": "Examples of these (except petitio principii) are given in Chapter 5.",
+        "kind": "scope",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "The fallacies Aristotle identifies",
+        "source_says": "all these types of sophistical refutation can be reduced to subtypes of ignoratio elenchi",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      }
+    ],
+    "omega": "A division by dependence on linguistic formulation, enumeration of kinds, and an attempted reduction.",
+    "attribute": "Membership in formal or informal fallacy categories.",
+    "attributization": "partial",
+    "attributization_reason": "The lists retain much of the source's classificatory operation, but the headings assign every member an additional formal/informal category that the supplied source does not establish.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The source division and much of its membership survive. The added heading equivalences control every item, while the source's formulation-based criterion, chapter distinction, and reduction do not appear.",
+      "revision_required": "Use the language-dependence headings supported by KRABBE, distinguish classification from examples, and retain consequence unless a source supports a narrower replacement. Establish other modern label equivalences before treating them as exact."
+    },
+    "surviving_relations": [
+      "Two groups organised by dependence on language.",
+      "Six entries in the first group and seven in the second.",
+      "Most of the source's named kinds."
+    ],
+    "lost_relations": [
+      "The explicit criterion of deceptive formulation.",
+      "The distinction between classifying the kinds and giving examples.",
+      "The exception concerning examples of petitio principii.",
+      "The attempted reduction to ignoratio elenchi."
+    ],
+    "alternatives": [
+      "The chapter wording may loosely locate exposition rather than assert that the second group is first identified in Chapter 5.",
+      "Affirming the consequent may name an instance of consequence; the supplied window does not establish that it exhausts the source category.",
+      "The formal/informal headings could be intended as explanatory equivalents, but their equivalence requires support beyond what is supplied."
+    ],
+    "correction_pathway": "Correct the headings and chapter description from KRABBE. Consult a source explicitly discussing the modern label mappings before retaining those equivalences.",
+    "confidence": "high",
+    "confidence_note": "High for what KRABBE does and does not state; the historical or logical validity of every modern label mapping remains unresolved.",
+    "windows_too_narrow": "No full primary classification or explicit source defending the formal/informal equivalence and all modern name substitutions is supplied.",
+    "spans": [
+      {
+        "source": "ARTICLE",
+        "quote": "Fallacies in the language or formal fallacies (in dictionem)"
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "Fallacies not in the language or informal fallacies (extra dictionem)"
+      },
+      {
+        "source": "KRABBE",
+        "quote": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of language’’ (lexis) and those that do not."
+      },
+      {
+        "source": "KRABBE",
+        "quote": "their deceptive character is due to matters of formulation"
+      },
+      {
+        "source": "KRABBE",
+        "quote": "consequence, non causa (wrong ground), and making one question out of two"
+      },
+      {
+        "source": "KRABBE",
+        "quote": "Examples of these (except petitio principii) are given in Chapter 5."
+      },
+      {
+        "source": "KRABBE",
+        "quote": "In Chapter 6 Aristotle tries to show that all these types of sophistical refutation can be reduced to subtypes of ignoratio elenchi."
+      }
+    ]
+  },
+  {
+    "case": "TH-1",
+    "case_type": "sentence",
+    "innocent_reading": "EB1911 supplies almost exactly this sentence, including both probability and supplementation. Reading Aristotelian as referring to Aristotle's treatment makes the article a faithful paraphrase.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "EB1911 tentatively describes Theophrastus's treatment of shared themes as differing little from the Aristotelian treatment while supplementing details. The article retains that tentative comparative assessment.",
+    "deltas": [
+      {
+        "sentence_says": "Aristotle's treatment",
+        "source_says": "the Aristotelian treatment",
+        "kind": "term changed",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "probably differed little",
+        "source_says": "probably differed little",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      }
+    ],
+    "omega": "A tentative secondary assessment of similarity and supplementation.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The supplied source already makes a comparative assessment of the writings. The article does not convert a supplied primary argument or method into that assessment.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "Both the probability marker and the qualification about supplementary details survive, with the paragraph's source citation.",
+      "revision_required": "None established. If the source intended a school-wide rather than author-specific referent, restore Aristotelian; that referent is not settled by this extract."
+    },
+    "surviving_relations": [
+      "The comparison concerns treatments of the same themes.",
+      "The claim remains probable rather than certain.",
+      "Supplementation in details remains explicit."
+    ],
+    "lost_relations": [],
+    "alternatives": [
+      "Aristotelian may refer specifically to Aristotle's treatment.",
+      "Aristotelian may have a wider school or corpus reference; the supplied extract does not settle that possibility."
+    ],
+    "correction_pathway": "No substantive correction is demonstrated. Any challenge to the assessment itself requires primary texts or further scholarship, rather than treating faithful transmission as an article invention.",
+    "confidence": "high",
+    "confidence_note": "High for fidelity to EB1911. Primary-text adequacy is unresolved because the relevant primary treatments are absent.",
+    "windows_too_narrow": "The relevant writings and the linked Peripatetics discussion are not supplied. The assessment's substantive accuracy and the exact referent of Aristotelian cannot be independently tested.",
+    "spans": [
+      {
+        "source": "EB1911",
+        "quote": "His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details"
+      }
+    ]
+  },
+  {
+    "case": "TH-2",
+    "case_type": "sentence",
+    "innocent_reading": "SEPTHEO, cited in the body, explicitly supplies the breadth of writing and all four verbs concerning the Aristotelian system. The lead's numerous/many and working to/in order to substitutions preserve the substance.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "Theophrastus wrote many philosophical treatises with the stated purpose of supporting, improving, expanding, and developing the Aristotelian system. The article follows the supplied secondary source.",
+    "deltas": [
+      {
+        "sentence_says": "numerous treatises across all areas of philosophy",
+        "source_says": "many treatises in all areas of philosophy",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "working to support, improve, expand, and develop the Aristotelian system",
+        "source_says": "in order to support, improve, expand, and develop the Aristotelian system",
+        "kind": "none",
+        "measure": "operative retention",
+        "lambda": 4
+      }
+    ],
+    "omega": "Writing across philosophy with four stated purposes concerning an existing system.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence preserves the source's activity, object, and purposes. The source itself supplies the interpretive framing; the article does not independently introduce it.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "All four purpose verbs and their object survive. Support is article-internal rather than a citation attached to this lead sentence.",
+      "revision_required": "None established by the supplied source comparison."
+    },
+    "surviving_relations": [
+      "Theophrastus writes many treatises across philosophy.",
+      "Support, improvement, expansion, and development remain distinct stated purposes.",
+      "The Aristotelian system remains the object of those purposes."
+    ],
+    "lost_relations": [],
+    "alternatives": [
+      "A reader may contest the secondary source's broad purpose attribution, but the supplied primary materials do not permit adjudicating that contest."
+    ],
+    "correction_pathway": "Record the body citation as article-internal support. A substantive revision would require evidence addressing SEPTHEO's interpretation.",
+    "confidence": "high",
+    "confidence_note": "High for source fidelity and retention of the supplied description; no independent primary-text judgment is possible.",
+    "windows_too_narrow": "No primary texts or fuller argument supporting the source's purpose attribution are supplied.",
+    "spans": [
+      {
+        "source": "SEPTHEO",
+        "quote": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system."
+      }
+    ]
+  },
+  {
+    "case": "IW-1",
+    "case_type": "sentence",
+    "innocent_reading": "WILSON explicitly reports Carson's attempt to translate nothing absent from the Greek and preserve word order. This general rule supports the sentence's prohibition on adding words, including pronouns and articles absent from the text.",
+    "innocent_reading_fails_at": "The general rule does not fail. However, the sentence's specific example uses personal pronouns where WILSON's explicit example is possessive pronouns. It also omits line breaks and the source's explanation connecting absent possessives to the speaker's estrangement from her body.",
+    "support": ["supported"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "WILSON describes restraint in additions and preservation of word order and line breaks, then interprets absent possessives as part of bodily estrangement. The article preserves the general translation method, changes the pronoun example, and omits the interpretive consequence.",
+    "deltas": [
+      {
+        "sentence_says": "personal pronouns",
+        "source_says": "possessive pronouns",
+        "kind": "term changed",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "the word order of the Greek text",
+        "source_says": "the original word order and line breaks",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "not to add any words which cannot be found",
+        "source_says": "her eyes and ears and skin are no longer her own",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      }
+    ],
+    "omega": "A translation method whose handling of possessives supports an interpretation of the speaker's bodily estrangement.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The article describes what Carson attempts to do in translating. It retains a method rather than turning it into a credential.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The general constraint on additions and the word-order constraint survive with a citation. The specific possessive example and its stated interpretive consequence do not.",
+      "revision_required": "Use possessive pronouns to reproduce WILSON's specific example. Include line breaks or the interpretive consequence if the sentence is meant to represent those aspects of the method."
+    },
+    "surviving_relations": [
+      "Translation is constrained by the surviving Greek.",
+      "Preserving word order is an aim rather than an unqualified claim of perfect achievement.",
+      "Words absent from the Greek are not to be added."
+    ],
+    "lost_relations": [
+      "Preservation of line breaks as an explicit aim.",
+      "The specific role of possessive pronouns.",
+      "The relation between omitted possessives and bodily estrangement."
+    ],
+    "alternatives": [
+      "As an application of the source's general no-additions rule, the personal-pronoun example is supported.",
+      "As a reproduction of WILSON's explicit grammatical example, personal is a substitution for possessive and should be corrected.",
+      "The sentence need not reproduce every interpretive consequence to remain a faithful selective account of the method."
+    ],
+    "correction_pathway": "Restore WILSON's specific pronoun term. Test the translation against Greek and Carson's complete text only when assessing primary-text adequacy.",
+    "confidence": "high",
+    "confidence_note": "The source comparison is direct. No primary Greek or complete Carson translation is supplied for independent validation.",
+    "windows_too_narrow": "The Greek passages and sufficient corresponding translation are absent, so actual adherence to the stated method cannot be checked.",
+    "spans": [
+      {
+        "source": "WILSON",
+        "quote": "Carson tries to translate nothing which is not in the Greek, and to follow the original word order and line breaks as far as possible."
+      },
+      {
+        "source": "WILSON",
+        "quote": "Carson adds no possessive pronouns or definite articles that are not present in the Greek."
+      },
+      {
+        "source": "WILSON",
+        "quote": "Sappho’s speaker can no longer recognise her tongue as ‘my’ tongue; her eyes and ears and skin are no longer her own."
+      }
+    ]
+  },
+  {
+    "case": "EB-1",
+    "case_type": "sentence",
+    "innocent_reading": "RAE explicitly connects Carson's reading of the four named novelists with erotic triangulation and discusses Sappho's three-point configuration. The sentence is a defensible compressed description of those supplied claims. A second cited source, Scranton, could support the Plato component, but its contents are not supplied.",
+    "innocent_reading_fails_at": "RAE's supplied window does not establish Plato or Phaedrus. This is an unresolved component, not a demonstrated error. The sentence also omits literacy, the identity of the three points, their non-fusion, and deferral, although the following article sentence preserves a consequence in the language of lack.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "RAE describes Carson reading four Greek novelists through literacy and erotic triangulation, with a circuit linking lover, beloved, and an intervening element, and a corresponding literacy triangle. The article names authors and triangulations of desire but leaves the mechanism largely unstated.",
+    "deltas": [
+      {
+        "sentence_says": "triangulations of desire",
+        "source_says": "her thesis on literacy and erotic triangulation",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "triangulations of desire",
+        "source_says": "lover, beloved and that which comes between them",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "triangulations of desire",
+        "source_says": "a triangular relation between sign, signified, and reader",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "Plato (in his Phaedrus)",
+        "source_says": null,
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": null
+      }
+    ],
+    "omega": "An account of erotic desire through non-fusing triangular relations, deferral, and literacy.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence retains an analytical activity and its textual objects. Naming the topic without explaining its mechanism is compression, not necessarily conversion into an attribute.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "Triangulation and the named novelists survive. The immediately following sentence retains \"eros as lack\", but neither sentence supplies the literacy relation or the full three-point mechanism from RAE.",
+      "revision_required": "No correction is established for the supported author group. Obtain Scranton before deciding the Plato component. To improve operative retention, state what the three points do and how literacy bears on their relation."
+    },
+    "surviving_relations": [
+      "Carson analyses erotic triangulation in Sappho and the four named novelists.",
+      "The surrounding paragraph retains an interpretation of eros as lack."
+    ],
+    "lost_relations": [
+      "The explicit identities of the three points.",
+      "Movement without fusion and the resulting deferral.",
+      "The connection to literacy and its sign/signified/reader triangle."
+    ],
+    "alternatives": [
+      "Read as a selective topic summary, the supported components are faithful.",
+      "Read as an explanation of the thesis, it is too compressed to retain the supplied mechanism.",
+      "The missing Scranton source may support Plato and Phaedrus; no finding against that component is justified yet."
+    ],
+    "correction_pathway": "Read the cited Scranton material before judging the Plato claim. Use RAE to add the mechanism if a fuller explanatory summary is desired.",
+    "confidence": "medium",
+    "confidence_note": "High for RAE's named novelists and omitted mechanism; unresolved for Plato because one of the two cited sources is missing.",
+    "windows_too_narrow": "Scranton 2014 and Carson's primary text are not supplied. The Plato component and primary-text adequacy cannot be decided.",
+    "spans": [
+      {
+        "source": "RAE",
+        "quote": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation."
+      },
+      {
+        "source": "RAE",
+        "quote": "lover, beloved and that which comes between them"
+      },
+      {
+        "source": "RAE",
+        "quote": "Sparks fly between the points in this circuit, but the points are never fused."
+      },
+      {
+        "source": "RAE",
+        "quote": "a triangular relation between sign, signified, and reader"
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "eros as lack"
+      }
+    ]
+  },
+  {
+    "case": "AC-1",
+    "case_type": "placement",
+    "innocent_reading": "The supplied lead records professional activity, teaching subjects, a book count, genres, and translations with an identified source domain. It therefore includes work and production, not only institutional recognition.",
+    "innocent_reading_fails_at": "No supplied sentence states a specific method, argument, or substantive result of Carson's inquiry with its object. The reference to translations identifies an output category but does not explain a translation operation.",
+    "support": ["unresolved"],
+    "support_source": ["none"],
+    "paraphrase": "The lead moves through identity, education, teaching appointments and subjects, publication inventory, and awards. Its first literary production statement is the sentence about more than twenty books. No qualifying method, argument, or substantive result appears in the supplied lead.",
+    "deltas": [],
+    "omega": null,
+    "attribute": "Professional identity, institutional affiliations, publication inventory, and awards.",
+    "attributization": "no",
+    "attributization_reason": "The placement passage is dominated by attributes and inventory, but no source operation is supplied against which an act-to-attribute transformation could be established.",
+    "retained_authority": {
+      "value": "unknown",
+      "evidence": "The lead names \"translations of ancient Greek tragedies\" but supplies no particular translation method or argument whose authority can be assessed.",
+      "revision_required": "No source-based correction can be established. Adding a sourced account of a specific method, argument, or result would change the observed placement pattern."
+    },
+    "surviving_relations": [
+      "Carson teaches identified subjects.",
+      "Carson produces books in identified forms, including translations with an identified source domain."
+    ],
+    "lost_relations": [],
+    "alternatives": [
+      "Under a broad definition that counts production itself as an operation, the book sentence is the first literary operation with an object.",
+      "Under the specified method/argument/result criterion, the production inventory does not state the required substantive operation.",
+      "The supplied lead cannot establish where such operations first appear later in the article."
+    ],
+    "correction_pathway": "Inspect the rest of the pinned article and its sources before proposing a substantive lead addition or claiming an operation was displaced.",
+    "confidence": "high",
+    "confidence_note": "High for placement within the supplied lead only. Historical accuracy, sourcing, and the remainder of the article are not assessed.",
+    "windows_too_narrow": "Only the lead is supplied. No sources or later article sections establish omitted operations or their first article-wide location.",
+    "spans": [
+      {
+        "source": "ARTICLE",
+        "quote": "Throughout her career she has taught classics, comparative literature, and creative writing."
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "Carson has written more than twenty books, including collections of essays and poetry, as well as translations of ancient Greek tragedies."
+      }
+    ]
+  },
+  {
+    "case": "TU-1",
+    "case_type": "placement",
+    "innocent_reading": "The supplied lead states an operation, its conceptual objects, and the model used in its second sentence. It also connects cryptanalysis to deciphering messages in that same sentence.",
+    "innocent_reading_fails_at": null,
+    "support": ["unresolved"],
+    "support_source": ["none"],
+    "paraphrase": "After an opening identity and priority designation, sentence two says that Turing formalised algorithm and computation with the Turing machine. It gives an operation, objects, and an instrument before the biographical narrative.",
+    "deltas": [],
+    "omega": "Formalising algorithm and computation with the Turing machine; contributing to decipherment through cryptanalysis.",
+    "attribute": "The opening designation as father of theoretical computer science.",
+    "attributization": "no",
+    "attributization_reason": "The passage has an opening priority attribute, but follows it immediately with substantive operations. No source comparison establishes that an operation was converted into the attribute.",
+    "retained_authority": {
+      "value": "unknown",
+      "evidence": "Operational content is visibly present in sentence two. Whether it faithfully retains the authority and qualifications of underlying sources cannot be assessed without those sources.",
+      "revision_required": "None established in this placement-only case."
+    },
+    "surviving_relations": [
+      "Turing formalises algorithm and computation.",
+      "The Turing machine is identified as the model used.",
+      "Cryptanalytic contributions are connected to deciphering Enigma messages."
+    ],
+    "lost_relations": [],
+    "alternatives": [
+      "The first sentence alone is largely identity and priority attribution.",
+      "The whole supplied lead immediately supplements that framing with operations, so a claim that it contains only credentials would fail."
+    ],
+    "correction_pathway": "No placement correction indicated. Consult sources only if source fidelity or primary-text adequacy is subsequently assessed.",
+    "confidence": "high",
+    "confidence_note": "The operation's location in sentence two is explicit. No factual verification of the lead is claimed.",
+    "windows_too_narrow": "Underlying sources are absent, so source fidelity and source-relative retained authority remain unresolved.",
+    "spans": [
+      {
+        "source": "ARTICLE",
+        "quote": "He formalised the concepts of algorithm and computation with the Turing machine, a model of a general-purpose computer"
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "his contributions to cryptanalysis helped the Allies of World War II decipher messages encrypted by the German Enigma machine"
+      }
+    ]
+  },
+  {
+    "case": "CU-1",
+    "case_type": "placement",
+    "innocent_reading": "The supplied lead embeds research content within award statements. Sentence two names the object of joint research; sentence three supplies discoveries, isolation, and study of an element's properties. An award frame therefore coexists with operations.",
+    "innocent_reading_fails_at": null,
+    "support": ["unresolved"],
+    "support_source": ["none"],
+    "paraphrase": "After the opening identity sentence, sentence two identifies radioactivity as the object of joint research. Sentence three provides the first explicit result and method: discovery of radium and polonium, isolation of radium, and study of its nature and compounds.",
+    "deltas": [],
+    "omega": "Discovery of elements, isolation of radium, and study of its nature and compounds, embedded in a prize citation.",
+    "attribute": "Nobel Prize recipient and holder of several priority distinctions.",
+    "attributization": "no",
+    "attributization_reason": "The award sentences preserve operational content inside the credential frame. Without underlying sources, a transformation from source act to article attribute cannot be established.",
+    "retained_authority": {
+      "value": "unknown",
+      "evidence": "The lead visibly retains named discoveries and isolation as well as awards. No underlying source is supplied to test whether qualifications or revision-bearing relations have been retained.",
+      "revision_required": "None established in this placement-only case."
+    },
+    "surviving_relations": [
+      "Joint research is connected with radioactivity in sentence two.",
+      "Discovery is connected with radium and polonium in sentence three.",
+      "Isolation is connected with radium.",
+      "The operational achievements are explicitly connected with the chemistry award."
+    ],
+    "lost_relations": [],
+    "alternatives": [
+      "If naming a research activity and object is sufficient, the first operational content occurs in sentence two.",
+      "If the criterion requires a stated method or substantive result, the first clear instance occurs in sentence three.",
+      "An award-centered frame does not by itself show that operational content has disappeared."
+    ],
+    "correction_pathway": "No placement correction indicated. Source-based evaluation would require the underlying cited materials.",
+    "confidence": "high",
+    "confidence_note": "High for the distinction between research-object placement in sentence two and explicit method/result placement in sentence three; no factual verification is claimed.",
+    "windows_too_narrow": "No underlying sources are supplied for source fidelity, primary-text adequacy, or a source-relative finding of attributization.",
+    "spans": [
+      {
+        "source": "ARTICLE",
+        "quote": "for their joint researches on the radioactivity phenomena discovered by Professor Henri Becquerel"
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "[for] the discovery of the elements radium and polonium, by the isolation of radium and the study of the nature and compounds of this remarkable element"
+      }
+    ]
+  }
+]
+```

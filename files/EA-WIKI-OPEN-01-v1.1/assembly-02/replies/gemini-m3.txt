@@ -1,0 +1,519 @@
+```json
+[
+  {
+    "case": "SY-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence provides a faithful, descriptive definition of a syllogism as used in logic, drawing directly upon Aristotle's foundational definition in Prior Analytics I.1 (24b18–22) and standard secondary literature (Bobzien in SEP_AncientLogic). The phrase 'two propositions that are asserted or assumed to be true' captures the requirement that 'certain things being stated' (τεθέντων τινῶν / 'two premises'), from which a distinct conclusion 'follows of necessity' via deductive inference.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "A syllogism is an argument in which, two premises having been laid down or assumed, a distinct conclusion necessarily follows by deductive inference.",
+    "deltas": [
+      {
+        "sentence_says": "applies deductive reasoning to arrive at a conclusion based on two propositions that are asserted or assumed to be true",
+        "source_says": "logos in which, certain things having been laid down, something different from what has been laid down follows of necessity because these things are so",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Defines a logical category.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "[SEPANC]: 'Aristotle defines a syllogism as ‘an argument ( logos ) in which, certain things having been laid down, something different from what has been laid down follows of necessity because these things are so’.'",
+      "revision_required": "None required."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Aristotle (reported by Bobzien)",
+        "mood": "asserted",
+        "span": {
+          "source": "SEPANC",
+          "quote": "Aristotle defines a syllogism as ‘an argument ( logos ) in which, certain things having been laid down, something different from what has been laid down follows of necessity because these things are so’."
+        }
+      },
+      "sentence": {
+        "holder": "Wikipedia voice",
+        "mood": "asserted",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "A syllogism (Ancient Greek συλλογισμός, syllogismos, 'conclusion, inference') is a kind of logical argument that applies deductive reasoning to arrive at a conclusion based on two propositions that are asserted or assumed to be true."
+        }
+      },
+      "match": true
+    },
+    "surviving_relations": [
+      "Necessary entailment of a conclusion from at least two premises/propositions."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None needed.",
+    "confidence": "high",
+    "confidence_note": "Direct textual match with primary and secondary definitions.",
+    "windows_too_narrow": null,
+    "spans": [
+      {
+        "source": "SEPANC",
+        "quote": "Aristotle defines a syllogism as ‘an argument ( logos ) in which, certain things having been laid down, something different from what has been laid down follows of necessity because these things are so’."
+      },
+      {
+        "source": "APRMIT",
+        "quote": "A syllogism is discourse in which, certain things being stated, something other than what is stated follows of necessity from their being so."
+      }
+    ]
+  },
+  {
+    "case": "PA-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence asserts that Prior Analytics is history's first scientific investigation of logic, supported by Barnes (1995, p. 27: 'History's first logic...') and Aristotle's retrospective in Sophistical Refutations 34 where he states that prior to his work on syllogizing, 'nothing existed at all'.",
+    "innocent_reading_fails_at": "The sentence assigns the historical priority claim of 'first time in history when Logic is scientifically investigated' specifically to 'Prior Analytics'. In the cited primary text (SE 34), Aristotle's claim of absolute priority ('nothing existed at all') is made at the conclusion of Sophistical Refutations regarding his overall dialectical/syllogistic method (ταύτης τῆς πραγματείας), not specifically inside Prior Analytics as a isolated work.",
+    "support": ["partially supported"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "Aristotle's logical work (exemplified in Prior Analytics) represents history's first systematic investigation of logic, as cited by Barnes and supported by Aristotle's claim in Sophistical Refutations that no prior art existed.",
+    "deltas": [
+      {
+        "sentence_says": "Aristotle's Prior Analytics represents the first time in history when Logic is scientifically investigated.",
+        "source_says": "History's first logic has also been the most influential...",
+        "kind": "term changed",
+        "measure": "source fidelity",
+        "lambda": 4
+      }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Historical priority assertion.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "[BARNES]: 'History's first logic has also been the most influential...' / [SE34GR]: 'περὶ δὲ τοῦ συλλόγισασθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν'",
+      "revision_required": "Clarify that Aristotle's overall logical treatises/organon establish history's first scientific study of logic, rather than attributing the retrospective historical priority statement itself exclusively to Prior Analytics."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Jonathan Barnes",
+        "mood": "asserted",
+        "span": {
+          "source": "BARNES",
+          "quote": "History's first logic has also been the most influential..."
+        }
+      },
+      "sentence": {
+        "holder": "Wikipedia voice",
+        "mood": "asserted",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "Aristotle's Prior Analytics represents the first time in history when Logic is scientifically investigated."
+        }
+      },
+      "match": true
+    },
+    "surviving_relations": [
+      "The claim of historical priority and foundational status for Aristotelian logic."
+    ],
+    "lost_relations": [
+      "The precise scope of the retrospective in SE 34 as covering the broader syllogistic/dialectical undertaking."
+    ],
+    "alternatives": [],
+    "correction_pathway": "Broaden the attribution from Prior Analytics alone to Aristotle's logical works overall, or cite Barnes directly at the sentence.",
+    "confidence": "high",
+    "confidence_note": "Barnes snippet and SE 34 primary text provide the grounding.",
+    "windows_too_narrow": null,
+    "spans": [
+      {
+        "source": "BARNES",
+        "quote": "History's first logic has also been the most influential..."
+      },
+      {
+        "source": "MIT",
+        "quote": "whereas on the subject of reasoning we had nothing else of an earlier date to speak of at all"
+      }
+    ]
+  },
+  {
+    "case": "NE-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence presents a concise, accurate paraphrase of Aristotle's definition of moral virtue in Nicomachean Ethics II.6 (1106b33–1107a13), stating that moral virtues exist at a mean (mesótēs) between deficiency and excess, as supported by Grant's commentary (pp. 251–262).",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "Aristotle states that moral virtue is a mean (mesótēs) situated between the two vices of excess and deficiency.",
+    "deltas": [
+      {
+        "sentence_says": "Aristotle says moral virtues are found at a mean (mesótēs) between deficiency and excess.",
+        "source_says": "ἔστιν ἄρα ἡ ἀρετὴ ἕξις προαιρετική, ἐν μεσότητι οὖσα τῇ πρὸς ἡμᾶς... μεσότης δὲ δύο κακιῶν, τῆς μὲν καθ᾽ ὑπερβολὴν τῆς δὲ κατ᾽ ἔλλειψιν",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Direct attribution of a philosophical concept to Aristotle.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "[NEMIT]: 'Virtue, then, is a state of character concerned with choice, lying in a mean... Now it is a mean between two vices, that which depends on excess and that which depends on defect'",
+      "revision_required": "None required."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Aristotle",
+        "mood": "asserted",
+        "span": {
+          "source": "NEGR",
+          "quote": "ἔστιν ἄρα ἡ ἀρετὴ ἕξις προαιρετική, ἐν μεσότητι οὖσα τῇ πρὸς ἡμᾶς"
+        }
+      },
+      "sentence": {
+        "holder": "Aristotle (reported by Wikipedia)",
+        "mood": "reported",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "Aristotle says moral virtues are found at a mean (mesótēs) between deficiency and excess."
+        }
+      },
+      "match": true
+    },
+    "surviving_relations": [
+      "The relational balance of moral virtue as an intermediate state between excess and deficiency."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None needed.",
+    "confidence": "high",
+    "confidence_note": "Fully supported by primary Greek text and Ross translation.",
+    "windows_too_narrow": null,
+    "spans": [
+      {
+        "source": "NEMIT",
+        "quote": "Now it is a mean between two vices, that which depends on excess and that which depends on defect"
+      },
+      {
+        "source": "NEGR",
+        "quote": "μεσότης δὲ δύο κακιῶν, τῆς μὲν καθ᾽ ὑπερβολὴν τῆς δὲ κατ᾽ ἔλλειψιν"
+      }
+    ]
+  },
+  {
+    "case": "CA-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence summarizes the opening structural principle of Aristotle's Categories (Chapter 4, 1b25–2a10), which divides uncombined/uncomposite expressions into ten distinct categories (later called praedicamenta in scholastic tradition).",
+    "innocent_reading_fails_at": "The sentence translates 'Τῶν κατὰ μηδεμίαν συμπλοκὴν λεγομένων' ('expressions spoken without combination') as 'every object of human apprehension'. This introduces a cognitive/epistemological gloss ('object of human apprehension') not present in the primary Greek text, which focuses strictly on uncombined linguistic expressions/terms (substance, quantity, quality, etc.).",
+    "support": ["partially supported", "interpretation beyond descriptive paraphrase"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "The Categories places all uncombined terms or expressions under one of ten categories (praedicamenta).",
+    "deltas": [
+      {
+        "sentence_says": "every object of human apprehension",
+        "source_says": "Expressions which are in no way composite / Τῶν κατὰ μηδεμίαν συμπλοκὴν λεγομένων",
+        "kind": "term changed",
+        "measure": "primary-text adequacy",
+        "lambda": 4
+      }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Descriptive summary of textual content.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "[CATMIT]: 'Expressions which are in no way composite signify substance, quantity, quality, relation...'",
+      "revision_required": "Replace 'every object of human apprehension' with 'every uncombined term or expression' to maintain primary-text fidelity."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Aristotle",
+        "mood": "asserted",
+        "span": {
+          "source": "CATGR",
+          "quote": "Τῶν κατὰ μηδεμίαν συμπλοκὴν λεγομένων ἕκαστον ἤτοι οὐσίαν σημαίνει ἢ ποσὸν ἢ ποιὸν..."
+        }
+      },
+      "sentence": {
+        "holder": "Wikipedia voice",
+        "mood": "asserted",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "The Categories places every object of human apprehension under one of ten categories (known to medieval writers as the Latin term praedicamenta)."
+        }
+      },
+      "match": true
+    },
+    "surviving_relations": [
+      "The ten-fold structural scheme of classification."
+    ],
+    "lost_relations": [
+      "The strict focus on linguistic non-combination ( uncombined expressions / ἀσυμπλοκα ) as the defining scope."
+    ],
+    "alternatives": [],
+    "correction_pathway": "Rephrase to specify 'uncombined expressions' or 'terms spoken without combination'.",
+    "confidence": "high",
+    "confidence_note": "Primary text clearly specifies 'expressions spoken without combination'.",
+    "windows_too_narrow": null,
+    "spans": [
+      {
+        "source": "CATMIT",
+        "quote": "Expressions which are in no way composite signify substance, quantity, quality, relation, place, time, position, state, action, or affection."
+      },
+      {
+        "source": "CATGR",
+        "quote": "Τῶν κατὰ μηδεμίαν συμπλοκὴν λεγομένων ἕκαστον ἤτοι οὐσίαν σημαίνει"
+      }
+    ]
+  },
+  {
+    "case": "AR-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence presents a standard legacy lead summary of Aristotle's foundational achievements across logic ('founder of term logic'), biology/zoology, and scientific inquiry.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "Aristotle established term logic, initiated systematic zoological study, and significantly shaped the development of scientific methodology.",
+    "deltas": [
+      {
+        "sentence_says": "founder of term logic, pioneered the study of zoology, and benefited future scientists and philosophers through his contributions to the scientific method",
+        "source_says": "Aristotle’s logical works contain the earliest formal study of logic that we have... a highly developed logical theory",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Summary of historical legacy.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "[SEPLOGIC]: 'Aristotle’s logical works contain the earliest formal study of logic that we have.'",
+      "revision_required": "None required."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Robin Smith",
+        "mood": "asserted",
+        "span": {
+          "source": "SEPLOGIC",
+          "quote": "Aristotle’s logical works contain the earliest formal study of logic that we have."
+        }
+      },
+      "sentence": {
+        "holder": "Wikipedia voice",
+        "mood": "asserted",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "Aristotle was the founder of term logic, pioneered the study of zoology, and benefited future scientists and philosophers through his contributions to the scientific method."
+        }
+      },
+      "match": true
+    },
+    "surviving_relations": [
+      "Recognition of Aristotle's historical primacy in formal logic and scientific studies."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None needed.",
+    "confidence": "high",
+    "confidence_note": "Fully consistent with standard scholarly consensus reflected in SEP_AristotleLogic.",
+    "windows_too_narrow": null,
+    "spans": [
+      {
+        "source": "SEPLOGIC",
+        "quote": "Aristotle’s logical works contain the earliest formal study of logic that we have."
+      }
+    ]
+  },
+  {
+    "case": "ARE-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence provides a dictionary definition of the Ancient Greek term 'arete', citing LSJ for 'excellence of any kind' and Collins for 'full realization of potential or inherent function'.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "Arete denotes excellence of any kind in ancient Greek, particularly referring to the full realization of potential or function.",
+    "deltas": [
+      {
+        "sentence_says": "excellence of any kind",
+        "source_says": "goodness, excellence, of any kind",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Lexicographical definition.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "[LSJ]: ' goodness, excellence, of any kind'",
+      "revision_required": "None required."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Liddell & Scott (LSJ)",
+        "mood": "asserted",
+        "span": {
+          "source": "LSJ",
+          "quote": " goodness, excellence, of any kind"
+        }
+      },
+      "sentence": {
+        "holder": "Wikipedia voice (citing LSJ)",
+        "mood": "asserted",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "Arete (Ancient Greek ἀρετή, aretḗ) is a concept in ancient Greek thought that refers to \"excellence\" of any kind"
+        }
+      },
+      "match": true
+    },
+    "surviving_relations": [
+      "Exact lexical match with standard dictionary definition."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None needed.",
+    "confidence": "high",
+    "confidence_note": "LSJ entry directly verifies 'goodness, excellence, of any kind'.",
+    "windows_too_narrow": null,
+    "spans": [
+      {
+        "source": "LSJ",
+        "quote": "goodness, excellence, of any kind"
+      }
+    ]
+  },
+  {
+    "case": "OR-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence defines the Organon as the standard collection of Aristotle's six logical treatises, consistent with historical usage and Robin Smith's SEP entry on 'Aristotle's Logic'.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "The Organon is the traditional title given to the collection of Aristotle's six works on logic and dialectic.",
+    "deltas": [
+      {
+        "sentence_says": "standard collection of Aristotle's six works on logical analysis and dialectic",
+        "source_says": "The ancient commentators grouped together several of Aristotle’s treatises under the title Organon (“Instrument”) and regarded them as comprising his logical works: Categories On Interpretation Prior Analytics Posterior Analytics Topics On Sophistical Refutations",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Standard bibliographical definition.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "[SEPLOGIC]: 'The ancient commentators grouped together several of Aristotle’s treatises under the title Organon (“Instrument”) and regarded them as comprising his logical works'",
+      "revision_required": "None required."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Robin Smith",
+        "mood": "asserted",
+        "span": {
+          "source": "SEPLOGIC",
+          "quote": "The ancient commentators grouped together several of Aristotle’s treatises under the title Organon (“Instrument”) and regarded them as comprising his logical works"
+        }
+      },
+      "sentence": {
+        "holder": "Wikipedia voice",
+        "mood": "asserted",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "The Organon (Ancient Greek Ὄργανον, meaning \"instrument, tool, organ\") is the standard collection of Aristotle's six works on logical analysis and dialectic."
+        }
+      },
+      "match": true
+    },
+    "surviving_relations": [
+      "Standard grouping of six logical treatises under the title Organon."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None needed; add citation to SEP_AristotleLogic at sentence.",
+    "confidence": "high",
+    "confidence_note": "Direct alignment with SEP_AristotleLogic.",
+    "windows_too_narrow": null,
+    "spans": [
+      {
+        "source": "SEPLOGIC",
+        "quote": "The ancient commentators grouped together several of Aristotle’s treatises under the title Organon (“Instrument”) and regarded them as comprising his logical works"
+      }
+    ]
+  },
+  {
+    "case": "AV-1",
+    "case_type": "placement",
+    "innocent_reading": "Evaluating the lead paragraph of Avicenna for stated operations of the subject (a stated method, argument, or result, with its object).",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["none"],
+    "paraphrase": "The lead states specific methodological operations: combining empirical observation, philosophical reasoning, and logical analysis to conduct analysis and reach conclusions, especially in medical works like The Canon of Medicine.",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Placement case; no source material provided.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "Methodological operation explicitly stated in final two sentences of lead.",
+      "revision_required": "N/A"
+    },
+    "holder_and_mood": null,
+    "surviving_relations": [
+      "Stated methodological operations combining empirical observation, philosophical reasoning, and logical analysis."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "N/A",
+    "confidence": "high",
+    "confidence_note": "Placement audit performed directly on lead text.",
+    "windows_too_narrow": null,
+    "spans": [
+      {
+        "source": "ARTICLE",
+        "quote": "He combines a unique blend of empirical observation, philosophical reasoning, and logical analysis, in order to conduct his analysis and reach his conclusions."
+      }
+    ]
+  },
+  {
+    "case": "SR-W2",
+    "holder_and_mood": {
+      "source": {
+        "holder": "Aristotle",
+        "mood": "asserted",
+        "span": {
+          "source": "SE34GR",
+          "quote": "περὶ δὲ τοῦ συλλόγισασθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν, ἀλλ᾽ ἢ τριβῇ ζητοῦντες πολὺν χρόνον ἐπονοῦμεν."
+        }
+      },
+      "sentence": {
+        "holder": "Aristotle (reported by Wikipedia)",
+        "mood": "reported",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "According to Aristotle, this is the first work to treat the subject of deductive reasoning in ancient Greece (Soph. Ref., 34, 183b34 ff.)."
+        }
+      },
+      "match": true
+    },
+    "spans": [
+      {
+        "source": "SE34GR",
+        "quote": "περὶ δὲ τοῦ συλλόγισασθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν, ἀλλ᾽ ἢ τριβῇ ζητοῦντες πολὺν χρόνον ἐπονοῦμεν."
+      },
+      {
+        "source": "MIT",
+        "quote": "whereas on the subject of reasoning we had nothing else of an earlier date to speak of at all, but were kept at work for a long time in experimental researches."
+      }
+    ]
+  }
+]
+
+```

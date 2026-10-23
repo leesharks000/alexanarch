@@ -1,0 +1,333 @@
+[
+  {
+    "case": "SR-W1",
+    "innocent_reading": "The sentence is a standard encyclopedic identification of the work by its Greek and Latin titles, its place in the Organon, and a conventional count of the fallacies treated. Krabbe supplies the six-plus-seven division that yields thirteen, and the article elsewhere cites sources that treat the work as part of the Organon.",
+    "support": ["partially supported", "qualifier added"],
+    "support_source": "elsewhere in the article",
+    "paraphrase": "Krabbe states that sophistical refutations are divided into two groups: those that depend on the use of language (exactly six kinds) and those that do not (seven kinds). Aristotle claims completeness for the list.",
+    "deltas": [
+      {
+        "sentence_says": "twelve or thirteen fallacies",
+        "source_says": "exactly six kinds ... and ... seven kinds",
+        "kind": "qualifier added"
+      },
+      {
+        "sentence_says": "identified twelve or thirteen fallacies",
+        "source_says": "sophistical refutations are divided into two groups",
+        "kind": "scope"
+      }
+    ],
+    "omega": "divides the fallacies into two groups of six and seven and claims completeness",
+    "attribute": "a text in which he identified twelve or thirteen fallacies",
+    "attributization": "yes",
+    "surviving_relations": ["division into language-dependent and non-language-dependent", "completeness claim"],
+    "lost_relations": ["exact six + seven structure", "proof claim for the first group"],
+    "lambda": 4,
+    "alternatives": ["The 'or thirteen' is a conventional hedge acknowledging the six-plus-seven count plus the reduction to ignoratio elenchi in Chapter 6."],
+    "correction_pathway": "A cited source that states the number as twelve or thirteen without the six/seven division would revise the support class.",
+    "confidence": "medium",
+    "confidence_note": "The count is conventional in secondary literature but the primary claim in Krabbe is the six + seven division, not a flat twelve-or-thirteen.",
+    "spans": [
+      {
+        "source": "KRABBE",
+        "quote": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of language’’ (lexis) and those that do not. ... there are exactly six kinds of sophistical refutations that belong to this group ... There are seven kinds that do not depend on the way language is used"
+      }
+    ]
+  },
+  {
+    "case": "SR-W2",
+    "innocent_reading": "Aristotle closes the work by claiming priority for the inquiry into syllogizing; the sentence reports that claim and locates it at the standard Bekker reference.",
+    "support": ["partially supported", "interpretation beyond descriptive paraphrase"],
+    "support_source": "at the sentence",
+    "paraphrase": "Of this undertaking nothing at all existed beforehand; about syllogizing we had nothing earlier to speak of.",
+    "deltas": [
+      {
+        "sentence_says": "the first work to treat the subject of deductive reasoning in ancient Greece",
+        "source_says": "about syllogizing we had nothing else of an earlier date to speak of at all",
+        "kind": "scope"
+      },
+      {
+        "sentence_says": "the subject of deductive reasoning",
+        "source_says": "περὶ τοῦ συλλογίζεσθαι / on the subject of reasoning / about syllogizing",
+        "kind": "term changed"
+      },
+      {
+        "sentence_says": "in ancient Greece",
+        "source_says": "(no geographic bound in the cited lines)",
+        "kind": "qualifier added"
+      }
+    ],
+    "omega": "claims priority for the undertaking concerning syllogizing: nothing existed beforehand",
+    "attribute": "the first work to treat the subject of deductive reasoning in ancient Greece",
+    "attributization": "yes",
+    "surviving_relations": ["priority claim for the inquiry", "nothing pre-existed"],
+    "lost_relations": ["the undertaking as described in 183a37–b8 (dialectical and peirastic capacity)", "exact scope of συλλογίζεσθαι"],
+    "lambda": 4,
+    "alternatives": [
+      "The sentence is a conventional scholarly gloss that treats 'deductive reasoning' as the accepted English equivalent of the undertaking.",
+      "The geographic bound is an inference from the absence of earlier Greek material rather than a claim Aristotle makes."
+    ],
+    "correction_pathway": "A secondary source that explicitly bounds the claim to ancient Greece, or a reading of ταύτης τῆς πραγματείας that equates it with the field of deductive reasoning against the preceding lines, would revise the scope finding.",
+    "confidence": "high",
+    "confidence_note": "The Greek and both translations are present; the mismatch between the sentence’s gloss and the cited lines is directly checkable.",
+    "spans": [
+      {
+        "source": "SE34GR",
+        "quote": "Ταύτης δὲ τῆς πραγματείας οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν παντελῶς ὑπῆρχεν."
+      },
+      {
+        "source": "MIT",
+        "quote": "Of this inquiry, on the other hand, it was not the case that part of the work had been thoroughly done before, while part had not. Nothing existed at all. ... on the subject of reasoning we had nothing else of an earlier date to speak of at all"
+      }
+    ]
+  },
+  {
+    "case": "SR-W3",
+    "innocent_reading": "The work is presented as the first systematic treatment of fallacious reasoning, set against sophistic practice; the sentence is a reasonable one-line purpose statement for a lead.",
+    "support": ["partially supported", "interpretation beyond descriptive paraphrase"],
+    "support_source": "elsewhere in the article",
+    "paraphrase": "The programme was to find a syllogistic capacity concerning any problem from the most reputable premisses (the work of dialectic and peirastic), and, because of sophistic’s proximity, also to defend a thesis by the same means.",
+    "deltas": [
+      {
+        "sentence_says": "a pattern of sound and genuine reasoning",
+        "source_says": "a certain syllogistic capacity concerning any problem set, from what is available as most reputable",
+        "kind": "idea introduced"
+      },
+      {
+        "sentence_says": "develop ... in opposition to",
+        "source_says": "provision is made in addition for it, so that one can take a test not only dialectically but as one who knows",
+        "kind": "scope"
+      }
+    ],
+    "omega": "states a programme: to find a capacity of arguing from reputable premisses and to defend a thesis by the same means",
+    "attribute": "a pattern of sound and genuine reasoning developed in opposition to sophistic",
+    "attributization": "yes",
+    "surviving_relations": ["opposition to sophistic appearance", "dialectical capacity"],
+    "lost_relations": ["endoxic domain", "peirastic function"],
+    "lambda": 4,
+    "alternatives": ["'Sound and genuine' may be intended as a gloss of the contrast between real and apparent refutation in SE 1."],
+    "correction_pathway": "A cited source that states the aim as a pattern of sound reasoning without the endoxic qualification would revise the support class.",
+    "confidence": "medium",
+    "confidence_note": "The purpose statement is a compression of SE 34; the loss of the endoxic domain is clear, but the degree of distortion is debatable.",
+    "spans": [
+      {
+        "source": "SE34GR",
+        "quote": "We undertook, then, to find a certain syllogistic capacity concerning any problem set, from what is available as most reputable; for this is the work of dialectic in itself and of peirastic."
+      }
+    ]
+  },
+  {
+    "case": "SR-W4-6",
+    "innocent_reading": "The three sentences closely follow Krabbe’s contents summary, which is CC BY; the citation carries the attribution and the chapter ranges make the division checkable.",
+    "support": ["supported"],
+    "support_source": "at the sentence",
+    "paraphrase": "Krabbe’s own division of the book by the roles of questioner and answerer, with chapter ranges.",
+    "deltas": [
+      {
+        "sentence_says": "the book naturally falls into two parts",
+        "source_says": "Krabbe’s analytical division",
+        "kind": "none"
+      }
+    ],
+    "omega": "divides the book by the role each chapter serves (questioner / answerer), with chapter ranges",
+    "attribute": null,
+    "attributization": "no",
+    "surviving_relations": ["division by role", "chapter ranges", "checkability"],
+    "lost_relations": [],
+    "lambda": 4,
+    "alternatives": ["Any alternative division of the book would be a second structural reading, not a correction of this one."],
+    "correction_pathway": "A source that divides the book on a different principle would be recorded as a rival analysis.",
+    "confidence": "high",
+    "confidence_note": "Near-verbatim reproduction of a cited CC BY source; the operation remains reconstructible.",
+    "spans": [
+      {
+        "source": "KRABBE",
+        "quote": "In Chapter 4, sophistical refutations are divided into two groups"
+      }
+    ]
+  },
+  {
+    "case": "SR-W7-8",
+    "innocent_reading": "The two lists give the six and seven kinds under their common English names, and the chapters are those in which the kinds are introduced.",
+    "support": ["partially supported", "term changed", "idea introduced"],
+    "support_source": "elsewhere in the article",
+    "paraphrase": "Aristotle divides sophistical refutations into those that depend on the use of language (six kinds) and those that do not (seven kinds); Chapter 5 exemplifies the second group.",
+    "deltas": [
+      {
+        "sentence_says": "formal fallacies / informal fallacies",
+        "source_says": "depend on the use of language (lexis) / do not",
+        "kind": "term changed"
+      },
+      {
+        "sentence_says": "Affirming the consequent",
+        "source_says": "consequence (τὸ ἑπόμενον)",
+        "kind": "scope"
+      },
+      {
+        "sentence_says": "Chapter 4 (formal) and 5 (informal)",
+        "source_says": "both groups are named and divided in Chapter 4; Chapter 5 exemplifies the second",
+        "kind": "idea introduced"
+      }
+    ],
+    "omega": "divides by dependence on lexis, with a completeness claim for the first group",
+    "attribute": "formal fallacies and informal fallacies",
+    "attributization": "yes",
+    "surviving_relations": ["six + seven count", "Chapter 4 / 5 locations"],
+    "lost_relations": ["Aristotle’s own criterion (dependence on lexis)", "breadth of ‘consequence’"],
+    "lambda": 4,
+    "alternatives": ["The formal/informal mapping is the standard textbook translation of in dictione / extra dictionem; the internal contradiction with ‘affirming the consequent’ remains."],
+    "correction_pathway": "A cited source that explicitly maps in dictione onto formal fallacies with argument would move the label finding to contested.",
+    "confidence": "high",
+    "confidence_note": "The mismatch between Aristotle’s criterion and the modern labels is directly visible in Krabbe.",
+    "spans": [
+      {
+        "source": "KRABBE",
+        "quote": "there are exactly six kinds of sophistical refutations that belong to this group: equivocation, amphiboly, combination of words, division of words, accent, and form of expression ... There are seven kinds that do not depend on the way language is used: accident, secundum quid ... consequence ..."
+      }
+    ]
+  },
+  {
+    "case": "TH-1",
+    "innocent_reading": "The sentence reports a long-standing scholarly assessment of Theophrastus’s relation to Aristotle, keeping the hedge ‘probably’.",
+    "support": ["supported"],
+    "support_source": "at the sentence",
+    "paraphrase": "Theophrastus’s writings are in the main a continuation and expansion of Aristotle’s, especially in detail.",
+    "deltas": [
+      {
+        "sentence_says": "(undated)",
+        "source_says": "1911 Encyclopaedia Britannica",
+        "kind": "omission"
+      }
+    ],
+    "omega": "assesses Theophrastus’s writing as close to Aristotle’s and supplementary in detail",
+    "attribute": "continuation and expansion of Aristotle’s work",
+    "attributization": "partial",
+    "surviving_relations": ["hedged assessment", "continuation relation"],
+    "lost_relations": ["date of the judgment (1911)"],
+    "lambda": 4,
+    "alternatives": ["The sentence can be read as reporting a still-current view rather than a 1911 judgment."],
+    "correction_pathway": "A current secondary source that restates the same judgment would make the age finding moot.",
+    "confidence": "high",
+    "confidence_note": "Near-verbatim from the cited 1911 source; the only issue is the undated presentation.",
+    "spans": [
+      {
+        "source": "EB1911",
+        "quote": "His writings were probably for the most part a continuation and expansion of Aristotle’s works, especially in detail."
+      }
+    ]
+  },
+  {
+    "case": "TH-2",
+    "innocent_reading": "The sentence reports the current SEP characterization of Theophrastus’s project relative to Aristotle.",
+    "support": ["supported"],
+    "support_source": "elsewhere in the article",
+    "paraphrase": "Theophrastus worked to develop and complete Aristotle’s system.",
+    "deltas": [
+      {
+        "sentence_says": "working to develop and complete",
+        "source_says": "in order to develop and complete",
+        "kind": "none"
+      }
+    ],
+    "omega": "characterizes Theophrastus’s work as the development and completion of Aristotle’s system",
+    "attribute": "developer and completer of Aristotle’s system",
+    "attributization": "yes",
+    "surviving_relations": ["developmental relation to Aristotle"],
+    "lost_relations": [],
+    "lambda": 4,
+    "alternatives": ["The subordination is the field’s own formulation; an alternative reading would require a different primary characterization of Theophrastus’s independence."],
+    "correction_pathway": "Citation of the SEP entry at the sentence would close the support-source gap.",
+    "confidence": "high",
+    "confidence_note": "Near-verbatim from the cited SEP entry.",
+    "spans": [
+      {
+        "source": "SEPTHEO",
+        "quote": "working to develop and complete Aristotle’s system"
+      }
+    ]
+  },
+  {
+    "case": "IW-1",
+    "innocent_reading": "The sentence states Carson’s translational constraints as her own acts, recoverable from the cited review.",
+    "support": ["supported", "term changed"],
+    "support_source": "at the sentence",
+    "paraphrase": "Carson attempts to translate nothing that is not in the Greek and to follow its word order and line breaks; she adds no possessive pronouns or definite articles absent from the Greek.",
+    "deltas": [
+      {
+        "sentence_says": "personal pronouns",
+        "source_says": "possessive pronouns",
+        "kind": "term changed"
+      },
+      {
+        "sentence_says": "(line breaks omitted)",
+        "source_says": "word order and line breaks",
+        "kind": "omission"
+      }
+    ],
+    "omega": "translates under a stated constraint: nothing not in the Greek; word order and line breaks followed",
+    "attribute": null,
+    "attributization": "no",
+    "surviving_relations": ["constraint of fidelity to the Greek", "refusal to add absent elements"],
+    "lost_relations": ["specific focus on possessive pronouns", "line-break fidelity"],
+    "lambda": 4,
+    "alternatives": ["‘Personal pronouns’ may be an editorial broadening if Carson’s own notes support it; Wilson does not."],
+    "correction_pathway": "A source stating that Carson omits personal pronouns in general would revise the term finding.",
+    "confidence": "high",
+    "confidence_note": "The method is stated as Carson’s acts and remains reconstructible; only the pronoun term is altered.",
+    "spans": [
+      {
+        "source": "WILSON",
+        "quote": "Carson tries to translate nothing that is not in the Greek and to follow its word order and line breaks as far as possible; she adds no possessive pronouns or definite articles absent from the Greek"
+      }
+    ]
+  },
+  {
+    "case": "EB-1",
+    "innocent_reading": "The sentence states Carson’s central argument about erotic triangulation, naming the objects she reads.",
+    "support": ["partially supported", "omission"],
+    "support_source": "at the sentence",
+    "paraphrase": "Carson reads the novelists through her thesis on literacy and erotic triangulation; Sappho’s lyrics set up a circuit among lover, beloved and what comes between them.",
+    "deltas": [
+      {
+        "sentence_says": "erotic triangulation",
+        "source_says": "literacy and erotic triangulation",
+        "kind": "omission"
+      }
+    ],
+    "omega": "argues that erotic desire is a three-point circuit, read through literacy",
+    "attribute": null,
+    "attributization": "no",
+    "surviving_relations": ["three-point circuit", "application to Sappho and the novelists"],
+    "lost_relations": ["literacy as the enabling condition of the thesis"],
+    "lambda": 4,
+    "alternatives": ["The literacy component may be treated as background rather than part of the core claim."],
+    "correction_pathway": "Fetching Scranton would settle the Plato clause; a source that drops literacy from the thesis would revise the omission finding.",
+    "confidence": "medium",
+    "confidence_note": "Rae is present and clear; Scranton was not fetched, so the Plato clause remains unresolved.",
+    "spans": [
+      {
+        "source": "RAE",
+        "quote": "Carson reads the novelists through her thesis on literacy and erotic triangulation; for her, Sappho’s lyrics set up a circuit among lover, beloved and what comes between them"
+      }
+    ]
+  },
+  {
+    "case": "AC-1",
+    "innocent_reading": "An entity-page lead states identity, nationality, and principal distinction; that is the genre of the lead.",
+    "support": ["unresolved"],
+    "support_source": "none",
+    "paraphrase": "(cited pages not fetched; no source window available for an S3 reading)",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "surviving_relations": [],
+    "lost_relations": [],
+    "lambda": 2,
+    "alternatives": ["Entity leads conventionally summarize credentials; operations appear in the Works section or on the work pages."],
+    "correction_pathway": "Fetching the cited pages would allow a full S3 reading; a matched sample of entity vs work leads would test whether the placement is systematic.",
+    "confidence": "low",
+    "confidence_note": "No source material was supplied for the cited pages; the case is recorded for placement only.",
+    "spans": []
+  }
+]
