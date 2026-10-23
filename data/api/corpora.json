@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-10-23T19:45:00.559260Z",
- "seats": 89,
- "lines_total": 2312674,
+ "_generated": "2026-10-23T20:02:28.046719Z",
+ "seats": 93,
+ "lines_total": 2627851,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -4693,7 +4693,215 @@
    "why_seated": "Seated with the Book of the Dead so that the shelf holds the older language beneath it, in hieroglyphs a machine can read, and the oldest religious corpus in the world, the Pyramid Texts, in the edition that numbered its spells.",
    "scope": "Earlier Egyptian in its own script as a machine-readable corpus: the TLA's release holds only sentences fully intact and unambiguously readable (12,773 of 55,026 in its database), with no attribution of each sentence to its text; its date ranges place them from the Old Kingdom to the Second Intermediate Period. The Pyramid Texts are seated in Sethe's apparatus volumes (III–IV); his text volumes (Bd. I, 1908; Bd. II, 1910) were not found in an open scan reachable in this pass: QUEUED. The Coffin Texts (de Buck, 1935–61) are in copyright and are not seated.",
    "data": "https://www.alexanarch.org/data/corpora/earlier-egyptian/"
+  },
+  {
+   "seat": "EA-CORPORA-22/01",
+   "corpus": "corpus-hermeticum",
+   "edition": "Gustav Parthey, Hermetis Trismegisti Poemander, ad fidem codicum manu scriptorum recognovit (Berlin: Nicolai, 1854) — the Greek Corpus Hermeticum I–XIV; University of Michigan copy; Richard Reitzenstein, Poimandres: Studien zur griechisch-ägyptischen und frühchristlichen Literatur (Leipzig: Teubner, 1904) — with critical Greek texts of Corpus Hermeticum I and XIII and other Hermetic pieces; University of Toronto copy; Apulei Platonici Madaurensis opera quae supersunt, vol. III: De philosophia libri, ed. Paul Thomas (Leipzig: Teubner, 1908) — with the Latin Asclepius transmitted among Apuleius's philosophical works",
+   "license": {
+    "payload": "Public domain: the Hermetica are of the first to third centuries. Parthey's edition (Berlin, 1854), Reitzenstein's Poimandres (Leipzig, 1904) and Thomas's Apuleius, De philosophia libri (Leipzig: Teubner, 1908), are public domain in the United States (published before 1931). Internet Archive scans of public-domain volumes.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "poemander00trisgoog",
+      "url": "https://archive.org/details/poemander00trisgoog",
+      "files": [
+       "poemander00trisgoog.pdf",
+       "poemander00trisgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "poimandresstudie00reituoft",
+      "url": "https://archive.org/details/poimandresstudie00reituoft",
+      "files": [
+       "poimandresstudie00reituoft.pdf",
+       "poimandresstudie00reituoft_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "dephilosophiali00apulgoog",
+      "url": "https://archive.org/details/dephilosophiali00apulgoog",
+      "files": [
+       "dephilosophiali00apulgoog.pdf",
+       "dephilosophiali00apulgoog_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-23",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc, lat",
+   "lines": 48456,
+   "verified_loci": [
+    "Parthey 1854, running head — 'POEMANDER.'",
+    "Reitzenstein 1904, title — 'POIMANDRES'",
+    "Thomas 1908, the manuscripts of the Asclepius — 'Insunt: Asclepius et de deo'"
+   ],
+   "why_seated": "Asked for beside the Chaldaean Oracles, the Greek Magical Papyri and Nag Hammadi already seated: the Hermetic Poimandres, in which Nous shows the seer the making of the cosmos and the ascent through the seven spheres, is the Greek text of the archive's planetary seven.",
+   "scope": "The Greek Corpus Hermeticum in the first critical edition (Parthey) and in Reitzenstein's texts, and the Asclepius in Latin, the only complete witness of the Perfect Discourse. Nock and Festugière's edition (1945–54) is in copyright and is not seated. The Coptic Hermetica of Nag Hammadi Codex VI (the Discourse on the Eighth and Ninth, the Prayer of Thanksgiving, the Asclepius excerpt) are already on the shelf in the Nag Hammadi seat. The Stobaean fragments: QUEUED.",
+   "data": "https://www.alexanarch.org/data/corpora/corpus-hermeticum/"
+  },
+  {
+   "seat": "EA-CORPORA-22/02",
+   "corpus": "mesopotamian-epics",
+   "edition": "Paul Haupt, Das babylonische Nimrodepos: Keilschrifttext der Bruchstücke der sogenannten Izdubarlegenden mit dem keilinschriftlichen Sintfluthberichte, Abteilung 1 (Leipzig: Hinrichs, 1884) — the cuneiform of the Gilgamesh tablets in Haupt's autograph; University of Toronto copy; Paul Haupt, Das babylonische Nimrodepos (Leipzig: Hinrichs, 1891) — the issue of 1891, with the eleventh tablet (the flood); Peter Jensen, Assyrisch-babylonische Mythen und Epen (Keilinschriftliche Bibliothek VI/1; Berlin: Reuther, 1900) — Gilgamesh, the Enuma Elish and the other myths in transliteration with German translation; Harvard copy; L. W. King, The Seven Tablets of Creation, vol. I: English translations, transliterations, glossary, introduction (London: Luzac, 1902); L. W. King, The Seven Tablets of Creation, vol. II: Supplementary texts (London: Luzac, 1902) — the cuneiform in King's copies; University of Toronto copy",
+   "license": {
+    "payload": "Public domain: the tablets are of the first millennium BCE (the Nineveh library, seventh century BCE). Haupt's cuneiform autographs (Leipzig: Hinrichs, 1884; 1891), Jensen's Keilinschriftliche Bibliothek VI/1 (Berlin: Reuther, 1900) and King's Seven Tablets of Creation (London: Luzac, 1902) are public domain in the United States (published before 1931). Internet Archive scans of public-domain volumes.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "dasbabylonischen01haupuoft",
+      "url": "https://archive.org/details/dasbabylonischen01haupuoft",
+      "files": [
+       "dasbabylonischen01haupuoft.pdf",
+       "dasbabylonischen01haupuoft_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "dasbabylonischen00unse",
+      "url": "https://archive.org/details/dasbabylonischen00unse",
+      "files": [
+       "dasbabylonischen00unse.pdf",
+       "dasbabylonischen00unse_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "assyrischbabylo00jensgoog",
+      "url": "https://archive.org/details/assyrischbabylo00jensgoog",
+      "files": [
+       "assyrischbabylo00jensgoog.pdf",
+       "assyrischbabylo00jensgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "the-seven-tablets-of-creation.-vol.-1",
+      "url": "https://archive.org/details/the-seven-tablets-of-creation.-vol.-1",
+      "files": [
+       "The seven tablets of creation. Vol. 1.pdf",
+       "The seven tablets of creation. Vol. 1_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "seventabletsofcr02kinguoft",
+      "url": "https://archive.org/details/seventabletsofcr02kinguoft",
+      "files": [
+       "seventabletsofcr02kinguoft.pdf",
+       "seventabletsofcr02kinguoft_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-23",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "akk (Standard Babylonian), cuneiform and transliteration",
+   "lines": 80770,
+   "verified_loci": [
+    "Haupt 1884, title — 'BABYLONISCHE NIMRODEPOS' (the cuneiform is read from the autograph plates)",
+    "Haupt 1891, title — 'DER SOGENANNTEN IZDUBARLEGENDEN MIT DEM KEILINSCHRIFTLICHEN'",
+    "Jensen 1900, title — 'ASSYRISCH-BABYLONISCHE MYTHEN UND EPEN'",
+    "King 1902 I, title — 'THE SEVEN TABLETS OF CREATION.'",
+    "King 1902 II, title — 'SUPPLEMENTARY TEXTS.'"
+   ],
+   "why_seated": "The flood story the Bible's flood story answers, a king who seeks to escape death and returns with the knowledge that he cannot, and a creation by the splitting of a body: the oldest written epics of the Near East, beside the Hebrew Bible, the Septuagint and the apocalypses on the shelf.",
+   "scope": "The two great Babylonian poems in the editions that first set them out: Gilgamesh in Haupt's cuneiform and Jensen's transliteration, the Enuma Elish in King's transliteration and copies. George's Babylonian Gilgamesh Epic (2003), Lambert's Babylonian Creation Myths (2013) and the electronic Babylonian Library are in copyright or under their own terms and are not seated.",
+   "data": "https://www.alexanarch.org/data/corpora/mesopotamian-epics/"
+  },
+  {
+   "seat": "EA-CORPORA-22/03",
+   "corpus": "avesta",
+   "edition": "Karl F. Geldner, Avesta: the Sacred Books of the Parsis (Stuttgart: Kohlhammer, 1896) — the copy holding Geldner's Prolegomena, with the text as the scan shows it; Digital Library of India copy; Karl F. Geldner, Avesta: the Sacred Books of the Parsis, vol. III: Vendidad (Stuttgart: Kohlhammer, 1896)",
+   "license": {
+    "payload": "Public domain: the Avesta is of the second and first millennia BCE in its composition. Karl F. Geldner, Avesta: the Sacred Books of the Parsis (Stuttgart: Kohlhammer, 1886–96), is public domain. Internet Archive scans of public-domain volumes.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "dli.ministry.10011",
+      "url": "https://archive.org/details/dli.ministry.10011",
+      "files": [
+       "E01821_Avesta_the_Sacred_Books_of_the_Parsis.pdf",
+       "E01821_Avesta_the_Sacred_Books_of_the_Parsis_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "avestasacredbook03geld_269",
+      "url": "https://archive.org/details/avestasacredbook03geld_269",
+      "files": [
+       "avestasacredbook03geld_269.pdf",
+       "avestasacredbook03geld_269_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-23",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "ave (Avestan), Avestan script",
+   "lines": 102809,
+   "verified_loci": [
+    "Geldner, the Prolegomena — 'PROLEGOMENA.' (the Avestan script is read from the scan)",
+    "Geldner III, title — 'V E N D I D A D'"
+   ],
+   "why_seated": "The scripture of the Zoroastrian tradition, whose dualism, angelology and last judgment the Second Temple apocalypses on the same shelf inherit.",
+   "scope": "Geldner's critical Avesta as far as open scans reach: the issue with the Prolegomena and the third volume, the Vendidad. Which parts of the Yasna and Yashts the first item holds is read from its scan; Geldner's volume II (Vispered and Khorda Avesta) was not found in an open scan in this pass: QUEUED. The Gathas, the hymns of Zarathustra, are Yasna 28–34, 43–51 and 53.",
+   "data": "https://www.alexanarch.org/data/corpora/avesta/"
+  },
+  {
+   "seat": "EA-CORPORA-22/04",
+   "corpus": "rig-veda",
+   "edition": "Theodor Aufrecht, Die Hymnen des Rigveda, 2nd ed., Erster Theil: Maṇḍala I–VI (Bonn: Marcus, 1877); Harvard copy; Theodor Aufrecht, Die Hymnen des Rigveda, 2nd ed., Zweiter Theil: Maṇḍala VII–X (Bonn: Marcus, 1877); University of Michigan copy",
+   "license": {
+    "payload": "Public domain: the hymns are of the second millennium BCE. Theodor Aufrecht, Die Hymnen des Rigveda, 2nd ed. (Bonn: Marcus, 1877), is public domain. Internet Archive scans of public-domain volumes.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "diehymnendesrig00aufrgoog",
+      "url": "https://archive.org/details/diehymnendesrig00aufrgoog",
+      "files": [
+       "diehymnendesrig00aufrgoog.pdf",
+       "diehymnendesrig00aufrgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "diehymnendesrig01aufrgoog",
+      "url": "https://archive.org/details/diehymnendesrig01aufrgoog",
+      "files": [
+       "diehymnendesrig01aufrgoog.pdf",
+       "diehymnendesrig01aufrgoog_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-23",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "san (Vedic Sanskrit), romanized",
+   "lines": 83142,
+   "verified_loci": [
+    "Aufrecht I, Rigveda 1.1.1 — 'Agnfm ile puröhitam yajMsya deväm ritvfjam' (agním īḷe puróhitaṃ yajñásya devám ṛtvíjam; the OCR reads the accents and ñ as 'Agnfm', 'yajMsya'; the scan is the witness)",
+    "Aufrecht II, title — 'Zweiter Theil.'"
+   ],
+   "why_seated": "Seated beside the Upanishads already on the shelf: the hymns from which the Vedic tradition the Upanishads close begins, among them the creation hymn (10.129) that asks whether even the one who looks down from the highest heaven knows.",
+   "scope": "All ten maṇḍalas, 1,028 hymns, in the Saṃhitā text in Aufrecht's Latin transliteration, the edition most read in the nineteenth century. Max Müller's Devanāgarī edition with Sāyaṇa's commentary (1849–74) is public domain and not seated in this pass: QUEUED. Digital texts (GRETIL, the Vedaweb corpus) are under their own terms and are not seated.",
+   "data": "https://www.alexanarch.org/data/corpora/rig-veda/"
   }
  ],
- "count": 93
+ "count": 97
 }
