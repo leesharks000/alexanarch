@@ -1,0 +1,82 @@
+{
+ "corpus": "earlier-egyptian",
+ "seat": "EA-CORPORA-21/06",
+ "title": "Earlier Egyptian in Its Script — the Thesaurus Linguae Aegyptiae's Original Earlier Egyptian Sentences (v18, hieroglyphs in Unicode, transliteration, lemmatization), with Sethe's Pyramid Texts, Volumes III–IV",
+ "edition": "Thesaurus Linguae Aegyptiae, Original Earlier Egyptian sentences, corpus v18, premium (22 December 2023): 12,773 fully intact sentences from witnesses older than the New Kingdom, each with hieroglyphs (Unicode), transliteration, lemmatization, part of speech, glossing, a German translation and its date range — Hugging Face repository commit a7ba9e9d1a74a9a0f919b024ba84dd6d643b2966; the file's sha256 equals the one the repository publishes for it (13d4f6e1…); The dataset card of the TLA release (README.md), its statement of scope, curation and licence; Kurt Sethe, Die altaegyptischen Pyramidentexte nach den Papierabdrucken und Photographien des Berliner Museums, Bd. III–IV: Kritischer Apparat; Beschreibung der Inschriften; Konkordanz der Texte; Epigraphik (Leipzig, 1922) — University of Toronto copy",
+ "language": "egy (Old and Middle Egyptian)",
+ "license": {
+  "payload": "The Thesaurus Linguae Aegyptiae (Berlin-Brandenburg and Saxon Academies) publishes its Original Earlier Egyptian sentences, corpus v18, premium, under CC BY-SA 4.0 (Hugging Face, thesaurus-linguae-aegyptiae/tla-Earlier_Egyptian_original-v18-premium); redistributed under the same licence, attributed to the TLA. Kurt Sethe, Die altaegyptischen Pyramidentexte, Bd. III–IV (Leipzig: Hinrichs, 1922), is public domain in the United States (published before 1931); Internet Archive scan.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "fetched": "2026-10-23",
+ "origin": {
+  "items": [
+   {
+    "source": "Thesaurus Linguae Aegyptiae (Hugging Face)",
+    "url": "https://huggingface.co/datasets/thesaurus-linguae-aegyptiae/tla-Earlier_Egyptian_original-v18-premium/resolve/main/train.jsonl"
+   },
+   {
+    "source": "Thesaurus Linguae Aegyptiae (Hugging Face)",
+    "url": "https://huggingface.co/datasets/thesaurus-linguae-aegyptiae/tla-Earlier_Egyptian_original-v18-premium/resolve/main/README.md"
+   },
+   {
+    "source": "Internet Archive",
+    "identifier": "diealtaegyptisch03sethuoft",
+    "url": "https://archive.org/details/diealtaegyptisch03sethuoft",
+    "files": [
+     "diealtaegyptisch03sethuoft.pdf",
+     "diealtaegyptisch03sethuoft_djvu.txt"
+    ]
+   }
+  ],
+  "fetched": "2026-10-23",
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 3,
+  "units": "one text file per work",
+  "list": [
+   {
+    "slug": "tla-earlier-egyptian-v18",
+    "work": "Thesaurus Linguae Aegyptiae, Original Earlier Egyptian sentences, corpus v18, premium (22 December 2023): 12,773 fully intact sentences from witnesses older than the New Kingdom, each with hieroglyphs (Unicode), transliteration, lemmatization, part of speech, glossing, a German translation and its date range — Hugging Face repository commit a7ba9e9d1a74a9a0f919b024ba84dd6d643b2966; the file's sha256 equals the one the repository publishes for it (13d4f6e1…)",
+    "text": "text/tla-earlier-egyptian-v18.txt",
+    "originals": [
+     "original/tla/tla-Earlier_Egyptian_original-v18-premium.train.jsonl"
+    ],
+    "class": "sentence corpus",
+    "lines": 13103
+   },
+   {
+    "slug": "tla-earlier-egyptian-v18-readme",
+    "work": "The dataset card of the TLA release (README.md), its statement of scope, curation and licence",
+    "text": null,
+    "originals": [
+     "original/tla/README.md"
+    ],
+    "class": "dataset card"
+   },
+   {
+    "slug": "pyramidentexte-sethe-iii-iv",
+    "work": "Kurt Sethe, Die altaegyptischen Pyramidentexte nach den Papierabdrucken und Photographien des Berliner Museums, Bd. III–IV: Kritischer Apparat; Beschreibung der Inschriften; Konkordanz der Texte; Epigraphik (Leipzig, 1922) — University of Toronto copy",
+    "text": "text/pyramidentexte-sethe-iii-iv.ocr.txt",
+    "originals": [
+     "original/diealtaegyptisch03sethuoft/diealtaegyptisch03sethuoft.pdf",
+     "original/diealtaegyptisch03sethuoft/diealtaegyptisch03sethuoft_djvu.txt"
+    ],
+    "class": "Pyramid Texts, apparatus",
+    "lines": 19943
+   }
+  ]
+ },
+ "normalization": "Files as fetched. Internet Archive OCR text layers as fetched, uncorrected (text/<slug>.ocr.txt); the scan under original/ is the witness. Library of Congress and FAMSI PDFs are image files without a text layer: the page is the only reading. The TLA JSONL is seated as fetched; a reading text is derived from it by code, one sentence per line: hieroglyphs, a tab, the transliteration, a tab, the German translation, a tab, the date range.",
+ "scope": "Earlier Egyptian in its own script as a machine-readable corpus: the TLA's release holds only sentences fully intact and unambiguously readable (12,773 of 55,026 in its database), with no attribution of each sentence to its text; its date ranges place them from the Old Kingdom to the Second Intermediate Period. The Pyramid Texts are seated in Sethe's apparatus volumes (III–IV); his text volumes (Bd. I, 1908; Bd. II, 1910) were not found in an open scan reachable in this pass: QUEUED. The Coffin Texts (de Buck, 1935–61) are in copyright and are not seated.",
+ "verified_loci": [
+  "TLA v18, the first sentence of the release — '𓐩𓏌𓀜 𓂧 𓂋 𓋴\tnḏ (w)di̯ r =s'",
+  "Sethe III–IV, title — 'ALTAEGYPTISCHEN PYRAMIDENTEXTE'"
+ ],
+ "loci_not_found": [],
+ "lines_total": 33046,
+ "why_seated": "Seated with the Book of the Dead so that the shelf holds the older language beneath it, in hieroglyphs a machine can read, and the oldest religious corpus in the world, the Pyramid Texts, in the edition that numbered its spells.",
+ "spine": "Earlier Egyptian",
+ "ruling": "Lee Sharks, 2026-10-23: \"detour for an ea-corpora searing. lets see. whats available of mayan texts? and then i dont think we have much or any deteurocanonical second temple lit - all those apocalypses. and what about the ethiopian canon? and euclid. all in original language or as close to it as possible. what else?\" — \"and the Egyptian book of the dead\" — \"and what about the fragments of the book of baalim? i might be miswriting this. recent discovery. if theyre available anywhere.\" — \"yes yes yes to all - what a meal.\""
+}
