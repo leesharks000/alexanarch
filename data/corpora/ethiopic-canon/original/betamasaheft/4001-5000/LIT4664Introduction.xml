@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng" 
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng" 
+type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="LIT4664Introduction" xml:lang="en" type="work">
+    <teiHeader xml:base="https://betamasaheft.eu/">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="gez" xml:id="t1">መቅድመ፡ ጰውሎስ፡ ሐዋርያ፡</title>
+                <title xml:lang="en" corresp="#t1" type="normalized">Maqdǝma Ṗawlos ḥawāryā</title>
+                <title xml:lang="en" corresp="#t1">Introduction to the Pauline Epistles</title>
+                <editor role="generalEditor" key="AB"/>
+                <editor key="DR"/>
+                <funder>Akademie der Wissenschaften in Hamburg</funder>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Hiob-Ludolf-Zentrum für Äthiopistik</authority>
+                <publisher>Die Schriftkultur des christlichen Äthiopiens und Eritreas: Eine multimediale Forschungsumgebung / Beta maṣāḥǝft</publisher>
+                <pubPlace>Hamburg</pubPlace>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/"> This file is
+                                licensed under the Creative Commons Attribution-ShareAlike 4.0. </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+            <p>Work of the literatures of Ethiopia and Eritrea</p>
+         </sourceDesc>
+         <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>A digital born TEI file</p>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://raw.githubusercontent.com/BetaMasaheft/Documentation/master/prefixDef.xml">
+            <xi:fallback>
+               <p>Definitions of prefixes used.</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+        <profileDesc>
+            <creation/>
+            <abstract>
+                <p/>
+            </abstract>
+            <textClass>
+                <keywords>
+                    <term key="ChristianLiterature"/>
+                    <term key="Commentary"/>
+                    <term key="NewTestament"/>
+                </keywords>
+            </textClass>
+            <abstract>
+            <p>This introduction to the Pauline Epistles states why, to whom and where Paul composed his epistles, 
+            what he taught in them and through whom he sent them. It is similar, but apparently not identical, to 
+                <ref type="work" corresp="LIT3199Introd#PaulineEpistles"/>.</p>
+         </abstract>
+            <langUsage><language ident="en">English</language><language ident="gez">Gǝʿǝz</language></langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="DR" when="2017-06-27">Created entity</change>
+            <change who="MV" when="2025-09-17">Added textparts</change>
+        </revisionDesc>
+    </teiHeader>
+    <text xml:base="https://betamasaheft.eu/">
+        <body>
+            <listRelation>
+                <relation name="saws:isDifferentTo" active="LIT4664Introduction" passive="LIT3199Introd#PaulineEpistles"/>
+            </listRelation>
+            <div type="edition">
+                <note>The following incipits and explicits are taken from <ref type="mss" corresp="BAVet137"/> according to the catalogue description in 
+                    <bibl><ptr target="bm:GrebTiss1935Codices"/><citedRange unit="page">544-546</citedRange></bibl>.</note>
+                <div type="textpart" subtype="chapter" xml:lang="gez" xml:id="Romans">
+                    <label>Introduction to the epistle to the Romans</label>
+                    <div type="textpart" subtype="incipit" xml:lang="gez">
+                        <ab>
+                            መቅድመ፡ ጳውሎስ፡ ሐዋርያ፡ ምክንያተ<supplied reason="omitted">፡</supplied> መልእክቱ፡ ለሮማውያን፨ በእንተ፡ ፪ግብር፡ ብዙኅ። እስመ፡ በሮሜ፡ ነበሩ፡ አይሁድ፡ ወአረሚ፡ ኅቡረ፡ ወ፪ሆሙ፡ ተወክፉ፡ አሚነ፡ በክርስቶስ፨ ወድኅሬሆሙ፡ <sic>ተቀሐዉ፡</sic> በበይናቲሆሙ፡
+                        </ab>
+                    </div>
+                    <div type="textpart" subtype="explicit" xml:lang="gez">
+                        <ab>
+                            ወጳውሎስ፡ ሜጦሙ፡ እምዝንቱ፡ ስሕተት፡ ውስተ፡ አሚነ፡ ወንጌል፡ ርትዕት፨ ወጸሐፈ፡ ሎሙ<supplied reason="omitted">፡</supplied> ዘንተ፡ መልእክተ፡ እንዘ፡ ሀሎ፡ በቆሮንቶስ፡ ወፈነዋ፡ በእደ፡ ፌቤን፡ <supplied reason="omitted">እንተ፡</supplied> <sic>ተለአከተ<supplied reason="omitted">፡</supplied></sic> ቤተ፡ ክርስቲያን፡ ዘከንክርኤስ፨
+                        </ab>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:lang="gez" xml:id="Corinthians1">
+                    <label>Introduction to the first epistle to the Corinthians</label>
+                    <div type="textpart" subtype="incipit" xml:lang="gez">
+                        <ab>
+                            ምክንያተ፡ ጽሒፎቱሰ፡ <sic>መልእክተ፡</sic> በቀዳማዊ፡ ቆሮንቶስ፡ ዘውእቱ፡ እስመ፡ ይቤ፡ ሰሎሞን፡ በተግሣጽ፡ ነገረ፡    <choice>
+                                <sic>ልቢባን<supplied reason="omitted">፡</supplied></sic>
+                                <corr resp="bm:GrebTiss1935Codices">ጠቢባን<supplied reason="omitted">፡</supplied></corr>
+                            </choice> ከመ፡ ፈትል፡ ቀኖት፨ ወዲዮናስዮስኒ፡ አርዮስ፡ ፋጎስ፡ ይቤ፡ መላእክት፡ እለ፡ ቅሩባን፡ ኀበ፡ እግዚአብሔር፡ <sic>የአምሩ፡</sic> ፈቃደ፡ ዚአሁ፨
+                        </ab>
+                    </div>
+                    <div type="textpart" subtype="explicit" xml:lang="gez">
+                        <ab>
+                            ሔጥዎሙ፡ ካልአን፡ በተጥባበ፡ ነገር፡ ወበትምህርተ፡ አይሁድ፨ ወሶበ፡ አእመረ፡ ዘንተ፡ ቅዱስ፡ ጳውሎስ፡ እንዘ፡ ሀሎ፡ በኤፌሶን፨ ጸሐፈ፡ ሎሙ፡ ዘንተ፡ መልእክተ፡ በእደ፡ ጢሞቴዎስ፡ ፈነዋ፡ ከመ፡ ይሚጦሙ፡ በዝንቱ፡ ውስተ፡ ፍኖተ፡ ወንጌል፡ ርትዕት፨ ወሃይማኖት፡ ክርስቶስ፨
+                        </ab>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:lang="gez" xml:id="Corinthians2">
+                    <label>Introduction to the second epistle to the Corinthians</label>
+                    <div type="textpart" subtype="incipit" xml:lang="gez">
+                        <ab>      
+                            አንብሮተ፡ መፍቅዱ፡ ዳግም፡ ቆሮንቶስ<supplied reason="omitted">፡</supplied> እስመ፡ ለመልእክቱ፡ ቀዳሚት፡ ቦእምኔሆሙ፡ ዘተወክፉ፡ ፍጡነ፨ ወቦ፡ ዘተሐከዩ፡ በተአዝዞቶሙ፡ ለሐሳውያን፡ ሐዋርያት፨ በዛቲ፡ ምክንያት፡ ጸሐፈ፡ ሎሙ፡ ዘንተ፡ መልእክት፨
+                        </ab>
+                    </div>
+                    <div type="textpart" subtype="explicit" xml:lang="gez">
+                        <ab>           
+                            ይንዕዶሙ፡ በተወክፎ፡ ትምህርቱ፡ ወዓዲ፡ <choice>
+                                <sic>ይንግሮሙ፡</sic>
+                                <corr resp="bm:GrebTiss1935Codices">ይነግሮሙ፡</corr>
+                            </choice> ከመ፡ ይጽንዑ፡ ላዕለ፡ ትእግሥት፡ ጸሐፈ፡ ሎሙ፡ በጢሮዓዳ፡ ወፈነወ፡ በእደ፡ ቲቶ፨
+                        </ab>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:lang="gez" xml:id="Galatians">
+                    <label>Introduction to the epistle to the Galatians</label>
+                    <div type="textpart" subtype="incipit" xml:lang="gez">
+                        <ab>      
+                            ምክንያተ፡ ጽሒፎቱሰ፡ ለጳውሎስ፡ ሐዋርያ፡ ኀበ፡ ሰብአ፡ <surplus>ገ</surplus><del rend="effaced">ብአ፡</del> ገላትያ፡ ኮነ፡ በእንተ፡ ቢጽ፡ ሐሳውያን፨ ገላትያኒ፡ አሐቲ፡ መክፈልት፡ እምዮናናውያን፡ ይእቲ፨
+                        </ab>
+                    </div>
+                    <div type="textpart" subtype="explicit" xml:lang="gez">
+                        <ab>    
+                            ወሰሚዖ፡ ሐዋርያ፡ ዘንተ፡ ጸሐፈ፡ መልእክተ፡ ዘይጌሥጾሙ፡ ወያሌብዎሙ፨ ዓዲ፡ አዘዘ፡ ኢይትወከፍዎሙ፡ ለእሉ፡ ሐዋርያተ፡ ሐሰት፡ ወፈነወ፡ ዘንተ፡ በእደ፡ ቲቶ፡ ረድኡ፡ እንዘ፡ <sic>ሙቁሐ፡</sic> በሮሜ፡ እመ፡ ሙቁሔሁ፡ ቀዳሚ፨
+                        </ab>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:lang="gez" xml:id="Ephesians">
+                    <label>Introduction to the epistle to the Ephesians</label>
+                    <div type="textpart" subtype="incipit" xml:lang="gez">
+                        <ab>                      
+                            ምክንያተ፡ መልእክቱ፡ ለኤፌሶን፡ ኤፌሶንሰ፡ አሐቲ፡ ሀገር፡ እምዕስያ፨            
+                        </ab>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:lang="gez" xml:id="Philippians">
+                    <label>Introduction to the Epistle to the Philippians</label>
+                    <div type="textpart" subtype="incipit" xml:lang="gez">
+                        <ab>
+                            ፊልጵስዮስ፡ ይእቲ፡ እመቄዶንያ<supplied reason="omitted">፡</supplied> ወሰብአ፡ ዚአሃኒ፡ ኢፀኑ፡ እምትምህርተ፡ ክርስቶስ።   
+                        </ab>
+                    </div>                 
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

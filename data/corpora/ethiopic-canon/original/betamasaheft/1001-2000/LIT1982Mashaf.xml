@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng" 
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng" 
+type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="work" xml:lang="en" xml:id="LIT1982Mashaf">
+   <teiHeader xml:base="https://betamasaheft.eu/">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="gez" xml:id="t1">መጽሐፈ፡ ፀሓይ፡ </title>
+            <title xml:lang="gez" corresp="#t1" type="normalized">Maṣḥafa ḍaḥāy</title>
+            <title xml:lang="en" corresp="#t1">Book of the Sun</title>
+            <editor role="generalEditor" key="AB"/>
+            <funder>Akademie der Wissenschaften in Hamburg</funder>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Hiob-Ludolf-Zentrum für Äthiopistik</authority>
+            <publisher>Die Schriftkultur des christlichen Äthiopiens und Eritreas: Eine multimediale Forschungsumgebung / Beta maṣāḥǝft</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">
+                  <p>
+                This file is licensed under the Creative Commons
+                Attribution-ShareAlike 4.0. </p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <listWit>
+               <witness corresp="BMLacq38#ms_i1"/>
+               <witness corresp="EMML1389"/>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://raw.githubusercontent.com/BetaMasaheft/Documentation/master/prefixDef.xml">
+            <xi:fallback>
+               <p>Definitions of prefixes used.</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc>
+         <abstract>
+            <p>Allegorical interpretation of a series of biblical passages from Genesis to Proverbs.</p>
+         </abstract>
+         <textClass>
+            <keywords>
+               <term key="Bible"/>
+               <term key="ChristianContent"/>
+               <term key="ChristianLiterature"/>
+               <term key="OldTestament"/>
+            </keywords>
+         </textClass>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="gez">Gǝʿǝz</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="PL" when="2016-03-21"> Created file from google
+            spreadsheet </change>
+         <change who="ES" when="2016-02-09">CREATED: text record</change>
+         <change who="CH" when="2023-04-16">Supplied abstract and incipit</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:base="https://betamasaheft.eu/">
+         <body>
+            <div xml:lang="gez" type="edition">
+               <note>The incipit is taken from <ref type="mss" corresp="BMLacq38#ms_i1"/></note>
+               <div type="textpart" subtype="incipit">
+                  <ab xml:lang="gez">በስመ፡ አብ፡ ወወልድ፡ ወመንፈስ፡ ቅዱስ፡ አሐዱ፡ አምላክ። ወእምዝ፡ ንዌጥን፡ በረድኤተ፡ እግዚአብሔር፡ እንዘ፡ ንጽሕፍ፡ ዘንተ፡ መጽሐፈ፡ 
+                     ዘይሰመይ፡ መጽሐፈ፡ ጸሐይ። ወሶበ፡ ይበውእ፡ ውስተ፡ ልበ፡ ሰብእ፡ ያበርህ፡ ከመ፡ ፀሐይ። ይቤ፡ ኢሳይያስ፡ ወልደ፡ ትምህርቶሙ፡ ለቢዘናት። ቀዳሚ፡ ትንቢት፡ እምደብረ፡ 
+                     አራራት፡ ወአፈዋተ፡ ከርቤ፡ እም፡ አውግረ፡ ስኂን፡ ልዑላት፡ ዘውእቶሙ፡ ሐዋርያት። </ab>
+               </div>
+               <div type="textpart" subtype="explicit">
+                  <ab xml:lang="gez">እለኒ፡ ተኃቅፉ፡ እስራኤል፡ ቀዳሚ፡ ወይእዜሰ፡ ወጽኡ፡ እም፡ ታኅተ፡ ክንፊሁ፡ ለልዑል። እለኒ፡ ተኃጕሉ፡ እስራኤል፡ ወእለኒ፡ ተኃሠዩ፡ አሕዛብ። 
+                     እለሰ፡ ተዓቀቡ፡ ቀዳሚ፡ እስራኤል፡ ወይእዜሰ፡ ወጽኡ፡ እምይብተራሁ፡ ወተማሠጥዎሙ፡ ፀላእቶሙ። ተመንደብኡ፡ በመርኃ፡ ብዙኅ።</ab>
+               </div>
+            </div>
+         </body>
+   </text>
+</TEI>

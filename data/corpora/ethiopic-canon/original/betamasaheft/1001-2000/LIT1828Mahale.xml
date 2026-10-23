@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng"
+schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/BetaMasaheft/Schema/master/tei-betamesaheft.rng"
+type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0" type="work" xml:lang="en" xml:id="LIT1828Mahale">
+   <teiHeader xml:base="https://betamasaheft.eu/">
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="t1" type="main" xml:lang="en">Book of Odes</title>
+            <title xml:lang="gez" xml:id="t2">መሓልየ፡ ነቢያት፡</title>
+            <title xml:lang="gez" corresp="#t2" type="normalized">Maḥālǝya nabiyāt</title>
+            <title xml:lang="en" corresp="#t2">Canticles of the Prophets</title>
+
+            <editor role="generalEditor" key="AB"/>
+            <funder>Akademie der Wissenschaften in Hamburg</funder>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Hiob-Ludolf-Zentrum für Äthiopistik</authority>
+            <publisher>Die Schriftkultur des christlichen Äthiopiens und Eritreas: Eine multimediale Forschungsumgebung / Beta maṣāḥǝft</publisher>
+            <pubPlace>Hamburg</pubPlace>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by-sa/4.0/">
+                  <p>
+                This file is licensed under the Creative Commons
+                Attribution-ShareAlike 4.0. </p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Work of the literatures of Ethiopia and Eritrea</p>
+         </sourceDesc>
+         <sourceDesc>
+            <listWit>
+               <witness corresp="BLadd11292#ms_i1.2"/>
+               <witness corresp="BLadd11621#ms_i1.2"/>
+               <witness corresp="BLadd16232#ms_i1"/>
+               <witness corresp="BNFet9#ms_i1"/>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://raw.githubusercontent.com/BetaMasaheft/Documentation/master/prefixDef.xml">
+            <xi:fallback>
+               <p>Definitions of prefixes used.</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage><language ident="en">English</language><language ident="gez">Gǝʿǝz</language></langUsage>
+         <textClass>
+            <keywords scheme="#ethioauthlist">
+               <term key="Bible"/>
+               <term key="OldTestament"/>
+               <term key="ChristianLiterature"/>
+               <term key="Translation"/>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change who="PL" when="2016-03-21"> Created file from google
+            spreadsheet </change>
+         <change who="ES" when="2016-02-09">CREATED: text record</change>
+         <change who="DR" when="2016-06-21">witness added</change>
+         <change who="DR" when="2016-08-24">Title updated</change>
+         <change who="MV" when="2016-10-17">Textparts added</change>
+         <change when="2017-02-09" who="ES">relations and keyword added</change>
+         <change when="2017-02-10" who="DR">Small additions</change>
+         <change when="2017-03-27" who="DR">Minor correction</change>
+         <change when="2019-04-25" who="ES">minor corrections</change>
+         <change when="2019-07-25" who="DE">Added relation</change>
+      </revisionDesc>
+   </teiHeader>
+   <text xml:base="https://betamasaheft.eu/">
+      <body>
+         <div type="bibliography">
+            <listRelation>
+               <relation name="saws:formsPartOf" active="LIT1828Mahale" passive="LIT2701Dawit"/>
+                 <relation name="ecrm:CLP46i_may_form_part_of" active="LIT1828Mahale" passive="LIT3985Mazmura"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2277salotu"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2278salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2703salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2257salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2258salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2265salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2274salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2271salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2250salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2251salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2259salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT1566hababa"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2272salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT2275salota"/>
+               <relation name="saws:contains" active="LIT1828Mahale" passive="LIT1827Magnif"/>
+            </listRelation>
+
+            <listBibl type="secondary">
+               <bibl><ptr target="bm:Devens2007Mahaleya"/></bibl>
+            </listBibl>
+         </div>
+
+         <div type="edition">
+            <div type="textpart" xml:id="Moses1" corresp="LIT2277salotu">
+               <label>First Song of Moses (<foreign xml:lang="gez">ጸሎቱ፡ ለሙሴ፡</foreign>)</label>
+               <note>Excerpt from <ref type="work" corresp="LIT1367Exodus"/> 15:1-19</note>
+           </div>
+            <div type="textpart" xml:id="Moses2" corresp="LIT2278salota">
+               <label>Second Song of Moses (<foreign xml:lang="gez">ጸሎተ፡ ሙሴ፡ ዘዳግም፡ ሕግ፡</foreign>)</label>
+               <note>Excerpt from <ref type="work" corresp="LIT2637Deuteronomy"/> 32:1-21</note>
+            </div>
+            <div type="textpart" xml:id="Moses3" corresp="LIT2703salota">
+               <label>Third Song of Moses (<foreign xml:lang="gez">ጸሎተ፡ ሙሴ፡ ዘሣልስ፡</foreign>)</label>
+               <note>Excerpt from <ref type="work" corresp="LIT2637Deuteronomy"/> 32:22-43</note>
+            </div>
+            <div type="textpart" xml:id="Hannah" corresp="LIT2257salota">
+               <label>Song of Hannah (<foreign xml:lang="gez">ጸሎተ፡ ሓና፡ እመ፡ ሳሙኤል፡ ነቢይ፡</foreign>)</label>
+               <note>Excerpt from <ref type="work" corresp="LIT2697Sam"/> 2:1-10</note>
+            </div>
+            <div type="textpart" xml:id="Hezekiah" corresp="LIT2258salota">
+               <label>Prayer of Hezekiah (<foreign xml:lang="gez">ጸሎተ፡ ሕዝቅያስ፡ ንጉሠ፡ ይሁዳ፡</foreign>)</label>
+               <note>Excerpt from <ref type="work" corresp="LIT1672Isaiah"/> 38:10-20</note>
+            </div>
+            <div type="textpart" xml:id="Manasseh" corresp="LIT2265salota">
+               <label>Prayer of Manasseh (<foreign xml:lang="gez">ጸሎተ፡ ምናሴ፡ ነቢይ፡</foreign>)</label>
+               <note>Apocryphal text</note>
+            </div>
+            <div type="textpart" xml:id="Jonah" corresp="LIT2274salota">
+               <label>Song of Jonah (<foreign xml:lang="gez">ጸሎተ፡ ዮናስ፡ ነቢይ፡</foreign>)</label>
+               <note>Excerpt from <ref type="work" corresp="LIT1694Jonah"/> 2:3-10</note>
+            </div>
+            <div type="textpart" xml:id="ThreeYouths1" corresp="LIT2250salota">
+               <label>First Song of the Three Youths in the Furnace (<foreign xml:lang="gez">ጸሎተ፡ ዳንኤል፡ ነቢይ፡ ስብሐት፡ ዘእምኣዛርያ፡</foreign>)</label>
+                <note>Excerpt from <ref type="work" corresp="LIT3529Daniel"/> 3:26-45</note>
+            </div>
+            <div type="textpart" xml:id="ThreeYouths2" corresp="LIT2271salota">
+               <label>Second Song of the Three Youths (<foreign xml:lang="gez">ጸሎተ፡ ሠለስቱ፡ ደቂቅ፡</foreign>)</label>
+                <note>Excerpt from <ref type="work" corresp="LIT3529Daniel"/> 3:52-56</note>
+            </div>
+            <div type="textpart" xml:id="ThreeYouths3" corresp="LIT1566hababa">
+               <label>Third Song of the Three Youths (<foreign xml:lang="gez">ኀበ፡ ባረኩ፡ ኣናንያ፡ ወኣዛርያ፡ ወሚሳኤል፡ ለእግዚአብሔር፡</foreign>)</label>
+                <note>Excerpt from <ref type="work" corresp="LIT3529Daniel"/> 3:57-88</note>
+            </div>
+            <div type="textpart" xml:id="Habakkuk" corresp="LIT2251salota">
+               <label>Song of Habakkuk (<foreign xml:lang="gez">ጸሎተ፡ ዕንባቆም፡ ነቢይ፡</foreign>)</label>
+               <note>Excerpt from <ref type="work" corresp="LIT1567Bookof">Hab</ref> 3:1-19</note>
+            </div>
+            <div type="textpart" xml:id="Isaiah" corresp="LIT2259salota">
+               <label>Song of Isaiah (<foreign xml:lang="gez">ጸሎተ፡ ኢሳይያስ፡ ነቢይ፡</foreign>)</label>
+               <note>Excerpt from <ref type="work" corresp="LIT1672Isaiah"/> 26:9-20</note>
+            </div>
+            <div type="textpart" xml:id="Mary" corresp="LIT1827Magnif">
+               <label>Song of Our Lady Mary (<foreign xml:lang="gez">ጸሎተ፡ እግዝእትነ፡ ማርያም፡</foreign>) or Magnificat</label>
+               <note>Excerpt from <ref type="work" corresp="LIT1812GospelLuke"/> 1:46-55</note>
+            </div>
+            <div type="textpart" xml:id="Zachariah" corresp="LIT2275salota">
+               <label>Song of Zachariah (<foreign xml:lang="gez">ጸሎተ፡ ዘካርያስ፡ ካህን፡</foreign>)</label>
+               <note>Extract from <ref type="work" corresp="LIT1812GospelLuke"/> 1:68-79</note>
+            </div>
+            <div type="textpart" xml:id="Simeon" corresp="LIT2272salota">
+               <label>Song of Simeon, or Nunc Dimittis (<foreign xml:lang="gez">ጸሎተ፡ ስምዖን፡ ነቢይ፡</foreign>)</label>
+               <note>
+                  <ref type="work" corresp="LIT1812GospelLuke"/> 2:29-32</note>
+
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

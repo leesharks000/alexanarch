@@ -16,12 +16,29 @@
   "payload": "Public domain: Charles d. 1931 (pre-1930 US publication; EU PD 2002); Dillmann d. 1894.",
   "record": "CC-BY-4.0 applies to this seat record only."
  },
- "scope": "The complete Ethiopic Enoch at critical-edition depth; Ge'ez Unicode text layer QUEUED; the Aramaic Qumran fragments already sit in the DSS seat (EA-CORPORA-02/01) — cross-witness relation recorded.",
- "status": "BOTH EDITIONS SECURED (Charles 19.9MB; Dillmann 12.2MB), title-context verified via item metadata; text layer QUEUED.",
+ "scope": "The complete Ethiopic Enoch at critical-edition depth; Ge'ez Unicode text layer seated (text/1-enoch-geez.txt, from Beta maṣāḥǝft, CC BY-SA 4.0); the Aramaic Qumran fragments already sit in the DSS seat (EA-CORPORA-02/01) — cross-witness relation recorded.",
+ "status": "BOTH EDITIONS SECURED (Charles 19.9MB; Dillmann 12.2MB), title-context verified via item metadata; Ge'ez Unicode text layer SEATED 2026-10-23 (EA-CORPORA-20) from Beta maṣāḥǝft LIT1340EnochE: two edition divisions, 'ed1' and 'EOTCed' ('Text of the EOTC printed Bible'), 1,502 lines.",
  "verified_loci": [
-  "Charles 1906 + Dillmann 1851 secured from verified IA items, sha-manifested"
+  "Charles 1906 + Dillmann 1851 secured from verified IA items, sha-manifested",
+  "1 Enoch 1:1 in the seated Ge'ez text layer (2026-10-23) — 'ቃለ ፡ በረከት ፡ ዘሄኖክ ፡ ዘከመ ፡ ባረከ ፡ ኅሩያነ ፡ ወጻድቃነ'"
  ],
  "rulings_pending_gathering_record": [
   "Cross-witness relation to DSS seat (4QEn fragments)"
- ]
+ ],
+ "text_layer": {
+  "seated": "2026-10-23",
+  "by": "EA-CORPORA-20",
+  "source": "Beta maṣāḥǝft (Universität Hamburg), BetaMasaheft/Works",
+  "repository": "https://github.com/BetaMasaheft/Works",
+  "commit": "3550dc59f168313b6806f30593a1c77c3666e1cf",
+  "file": "1001-2000/LIT1340EnochE.xml",
+  "original": "original/betamasaheft/1001-2000/LIT1340EnochE.xml",
+  "text": "text/1-enoch-geez.txt",
+  "lines": 1502,
+  "license": "CC BY-SA 4.0, as the TEI file's <licence> states; redistributed under the same licence, attributed to Beta maṣāḥǝft",
+  "normalization": "TEI reduced to plain text by code, as in EA-CORPORA-20/01: '##### edition <id> (<lang>) — <note>', '=== <subtype> <n> ===', one line per <l>/<p>/<ab>, <label> in brackets; notes omitted (they stand in the seated TEI)",
+  "verified_loci": [
+   "1 Enoch 1:1 — 'ቃለ ፡ በረከት ፡ ዘሄኖክ ፡ ዘከመ ፡ ባረከ ፡ ኅሩያነ ፡ ወጻድቃነ'"
+  ]
+ }
 }
