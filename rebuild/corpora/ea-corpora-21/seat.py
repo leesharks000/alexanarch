@@ -6,7 +6,7 @@ A spec (JSON) names the seat, its items and its loci. The builder fetches each i
 plain text by code, chapter and verse kept), finds every locus in the seated text, and writes
 source.json and MANIFEST.sha256 (original/ and text/, as the seats before it do).
 """
-import hashlib, json, pathlib, re, sys, urllib.request, xml.etree.ElementTree as ET
+import hashlib, json, pathlib, re, sys, urllib.parse, urllib.request, xml.etree.ElementTree as ET
 
 TEI = "{http://www.tei-c.org/ns/1.0}"
 UA = {"User-Agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)"}
@@ -89,7 +89,7 @@ def build(spec, stage):
             ident = it["identifier"]
             files = []
             for fn in it["files"]:
-                fetch(f"https://archive.org/download/{ident}/{fn}", seat / "original" / ident / fn)
+                fetch(f"https://archive.org/download/{ident}/{urllib.parse.quote(fn)}", seat / "original" / ident / fn)
                 files.append(fn)
             djvu = [f for f in files if f.endswith("_djvu.txt")]
             text_rel = f"text/{it['slug']}.ocr.txt"
