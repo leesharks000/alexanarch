@@ -705,6 +705,14 @@ def card(e, record=False):
                        f'Originator: {esc(" · ".join(_bits))}{esc(_tr)}</div>'
                        f'<meta itemprop="about" content="{esc(" · ".join(_bits))}">')
 
+    # NOTICE (2026-10-23): a dated notice the operator attaches to a capture (e.g. SPXI treatment of the entity discontinued).
+    # Authored apparatus on the face of the card; the captured composition is untouched.
+    _nt = e.get("notice") or {}
+    notice_line = ""
+    if _nt.get("text"):
+        notice_line = (f'<div class="cap-notice" style="font-size:.82em;border-left:3px solid #b08;padding:3px 8px;margin:4px 0 6px">'
+                       f'<strong>Notice, {esc(_nt.get("date_label") or _nt.get("date") or "")}.</strong> {esc(_nt["text"])}</div>')
+
     # THE RECORD THE RUN WAS MEANT TO REACH (2026-10-11). Operator: "captures would need to include links to the title and link they
     # were *supposed* to point to, even when they dont appear in overview cards". A title or identifier run carries `intended`; the
     # card links the record and its exact-title search, and says whether the composition cited the record page.
@@ -742,7 +750,7 @@ def card(e, record=False):
         f'<meta itemprop="citation" content="{esc(citation)}">'
         f'<div class="cap-head"><span class="cap-section">{esc(e.get("s") or "Unsectioned")}</span>'
         f'<span class="cap-date" itemprop="dateCreated">{esc(datespan)}</span></div>'
-        f'<div class="cap-query" itemprop="name">{esc(e.get("q") or "")}</div>' + origin_line + intended_line +
+        f'<div class="cap-query" itemprop="name">{esc(e.get("q") or "")}</div>' + origin_line + notice_line + intended_line +
         f''
         f'<div class="cap-status-row">'
         f'<span class="cap-status cap-status-{esc(match.replace(" ", "-"))}">{esc(match)}</span>'

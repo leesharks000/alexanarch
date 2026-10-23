@@ -243,8 +243,11 @@ def render_address_page(slug: str, addr: dict, related_deposits: list[int],
     if _orig:
         jsonld["additionalProperty"] = [
             {"@type": "PropertyValue", "name": k, "value": _orig.get(k)}
-            for k in ("name", "relation", "entity_type", "spxi_treatment") if _orig.get(k)
+            for k in ("name", "relation", "entity_type", "spxi_treatment", "spxi_monitoring") if _orig.get(k)
         ]
+    if (addr.get("notice") or {}).get("text"):
+        jsonld["disambiguatingDescription"] = f'Notice, {addr["notice"].get("date")}: {addr["notice"]["text"]}'
+
 
     head = (
         '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
@@ -283,6 +286,13 @@ def render_address_page(slug: str, addr: dict, related_deposits: list[int],
         f'</div>'
     )
     parts.append(f'<h1>{esc(display_query)}</h1>')
+    # 2026-10-23: a dated notice carried from the address's captures (e.g. SPXI treatment discontinued).
+    _nt = addr.get("notice") or {}
+    if _nt.get("text"):
+        parts.append(
+            f'<div class="notice" style="border-left:3px solid #b08;padding:6px 10px;margin:8px 0 14px;font-size:.92em">'
+            f'<strong>Notice, {esc(_nt.get("date_label") or _nt.get("date") or "")}.</strong> {esc(_nt["text"])}</div>'
+        )
     parts.append(
         f'<div style="font-size:.88em;color:#555;margin:6px 0 14px">'
         f'{esc(obs_class_desc)}'

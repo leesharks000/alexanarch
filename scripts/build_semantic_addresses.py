@@ -226,6 +226,7 @@ def extract_main_capture(data: dict) -> List[dict]:
                 "type": None,
                 "battery_membership": [],
                 "originator": e.get("originator") if i == 0 else None,
+                "notice": e.get("notice") if i == 0 else None,
                 "observation": obs,
             })
     return out
@@ -516,6 +517,9 @@ def build_addresses(repo_root: str) -> Tuple[dict, dict]:
                 a["mint"] = c["mint"]
             if c.get("originator") and not a.get("originator"):
                 a["originator"] = c["originator"]
+            # 2026-10-23: a dated notice on a capture is carried to its address, as the originator is.
+            if c.get("notice") and not a.get("notice"):
+                a["notice"] = c["notice"]
 
     # Second pass — classify and finalize
     out = {}
