@@ -13,7 +13,7 @@
   "Network Preservation",
   "Tombstone Guarantee"
  ],
- "total_deposits": 1697,
+ "total_deposits": 1698,
  "deposits": [
   {
    "axn": "AXN:0001.GOVERNANCE.♍🜁🏴⌛🍃💫",
@@ -565175,6 +565175,206 @@
     },
     "overall_conformance": "partial"
    }
+  },
+  {
+   "deposit_number": 1698,
+   "axn": "AXN:0709.DATASET.🥁🔔💡🌸⚫🔐",
+   "hex": "0709",
+   "family": "DATASET",
+   "emoji": "🥁🔔💡🌸⚫🔐",
+   "hash": "8c2e3c70c8fb75905b98ddfb321f52230fdbcb112bc68070fbadcdd95f8b9e60",
+   "title": "EA-CORPORA-20 — The Twentieth Seating: The Ethiopian Canon in Ge'ez, the Kebra Nagast, the Apocalypses and Pseudepigrapha of the Second Temple, and Euclid, Each in Its Original Language",
+   "creator": "Sharks, Lee",
+   "date": "2026-10-23",
+   "description": "Four new seats on the originals shelf and a fifth completed: 121 works and 473,084 lines, each in the language of its earliest surviving witness. The Ethiopian canon in Ge'ez, 104 works from Beta maṣāḥǝft's TEI (CC BY-SA 4.0): the Old Testament with Jubilees, the three books of Meqabyan, the Ethiopic Ezra and 4 Baruch, the New Testament, and the Sinodos canons, with R. H. Charles's Jubilees (1895) and Ascension of Isaiah (1900). The Kebra Nagast in Ge'ez. The Second Temple apocalypses and pseudepigrapha the shelf lacked, in the standard public-domain editions: the Testaments of the Twelve Patriarchs (Charles, 1908), the Sibylline Oracles (Geffcken, 1902), 3 Baruch (James, 1897), the Greek Apocalypses of Moses and Esdras (Tischendorf, 1866), 4 Ezra (Violet, 1910), 2 Baruch in Syriac (Kmosko, 1907), the Slavonic Apocalypse of Abraham (Tichonravov, 1863), Hebrew Ben Sira from the Cairo Genizah (Schechter and Taylor, 1899), Aristeas (Wendland, 1900) and Joseph and Aseneth (Batiffol, 1889). Euclid: the Elements in Heiberg's Greek, with the Data, the Optics and the Phaenomena. And the Ge'ez text layer of 1 Enoch (EA-CORPORA-02/20), queued since August, now seated. The first of three seatings from one request; Mesoamerica, Egypt and Balaam follow in the twenty-first, the Hermetica, Mesopotamia, the Avesta and the Rig Veda in the twenty-second. What is not seated (2 Enoch's Slavonic, Bezold's Kebra Nagast, three books of the broader canon) is named.",
+   "content_type": "Dataset",
+   "license": "CC-BY-4.0",
+   "substrate": "Human–machine collaborative. Sources located, fetched, checked against the Internet Archive's published md5 sums and against their front matter, assembled into seats, hashed and indexed, and every locus found in the seated text, all in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction. The selection — the Ethiopian canon, the Second Temple apocalypses, Euclid, originals in the original language or as close to it as possible — is Lee Sharks's. CC-BY-4.0 applies to this record and the seat records; each payload carries its own licence, stated per seat (Beta maṣāḥǝft and Perseus texts CC BY-SA 4.0, redistributed under it).",
+   "methodology": "Sources located in Beta maṣāḥǝft's Works repository (cloned at commit 3550dc59; every TEI file measured for the Ethiopic characters in its edition division, and the works tagged Bible or of the Ethiopian canon taken where that count is at least 200), on the Internet Archive (advanced search; item metadata read for access restriction, volume and files) and in the Perseus Digital Library (commit 0189b9c8). Each item's front matter read against the edition claimed for it; an edition division's own statement of its basis recorded with the work. Every Internet Archive file checked against the md5 the Archive publishes for it. TEI reduced to plain text by code, chapter and verse kept, the TEI seated beside it as the witness; OCR layers seated as fetched, uncorrected, the scan as witness. Every file hashed into its seat's MANIFEST.sha256; every verified locus is a string found in the seated text by rebuild/corpora/ea-corpora-20/seat.py from the specifications beside it; a locus not found is recorded as not found.",
+   "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a seated file differs from the file at the origin its source.json names (for Internet Archive files, if its md5 differs from the Archive's); if an edition statement misstates the front matter of the file it describes; if a verified locus cannot be found in the seated text; if an item stated public domain in the United States was published in or after 1931; if a Beta maṣāḥǝft or Perseus file seated here does not carry the CC BY-SA 4.0 licence the seat record states; or if the four surfaces (seat, index, deposit, shelf) disagree.",
+   "root_axn": "AXN:0709.DATASET",
+   "axn_schema_version": "v2",
+   "protocol_version": "alexanarch-deposit-protocol/v1",
+   "axn_canonical": "8c2e3c70c8fb75905b98ddfb321f52230fdbcb112bc68070fbadcdd95f8b9e60",
+   "clusters": [
+    "Symbolic",
+    "Architectural",
+    "Instrumental",
+    "Organic",
+    "Signal",
+    "Terminal"
+   ],
+   "axn_reading": "Play -> Foundation -> Method -> Growth -> Alarm -> Closure",
+   "minted_at": "2026-10-23T19:25:50Z",
+   "status": "ACTIVE",
+   "status_authorial": "SELF_SERVE_MINTED",
+   "full_text_path": "/data/texts/AXN-0709-text.md",
+   "wiki_article": "EA-CORPORA-20 seats four new collections on the archive's originals shelf and completes a fifth, each in the language of its earliest surviving witness: 121 works and about 473,000 lines. The Ethiopian canon is seated in Ge'ez from the TEI editions of Beta maṣāḥǝft (Universität Hamburg, CC BY-SA 4.0): 104 works, the Old Testament with the books the Ethiopian church alone keeps whole as scripture (Jubilees, the three books of Meqabyan, the Ethiopic Ezra, 4 Baruch), the New Testament, and the Sinodos canons, with R. H. Charles's editions of the Ethiopic Jubilees (1895) and the Ascension of Isaiah (1900) as scans. The Kebra Nagast, the Glory of the Kings, is seated whole in Ge'ez. The seat of 1 Enoch, opened in August with Charles's and Dillmann's editions as scans, receives the Ge'ez text layer it had queued. The Second Temple apocalypses and pseudepigrapha the shelf lacked are seated in the original language of each one's earliest witness, in the standard public-domain editions: the Testaments of the Twelve Patriarchs and the Sibylline Oracles in Greek, 3 Baruch and the Greek apocalypses of Moses and Esdras, 4 Ezra in Latin with its eastern versions, 2 Baruch in Syriac, the Apocalypse of Abraham in Slavonic, Ben Sira in the Hebrew of the Cairo Genizah, the Letter of Aristeas, and Joseph and Aseneth. Euclid's Elements is seated in Heiberg's Greek, with the Data, the Optics and the Phaenomena. 2 Enoch, which survives only in Slavonic, is queued: the open editions found are translations. Each seat holds the files as fetched, scans where the page is the witness, one text per work, a provenance record with verified loci and a SHA-256 manifest, and has a spine and a card on the Training Layer Literature originals shelf. It is the first of three seatings from one request; Mesoamerica and Egypt follow in EA-CORPORA-21, the Hermetica, Mesopotamia, the Avesta and the Rig Veda in EA-CORPORA-22.",
+   "wiki_status": "in-session",
+   "entities": [
+    {
+     "subject": "EA-CORPORA-20 — The Twentieth Seating: The Ethiopian Canon in Ge'ez, the Kebra Nagast, the Apocalyps",
+     "predicate": "created_by",
+     "object": "Sharks, Lee",
+     "type": "work",
+     "evidence_status": "observed"
+    },
+    {
+     "subject": "EA-CORPORA-20 — The Twentieth Seating: The Ethiopian Canon in Ge'ez, the Kebra Nagast, the Apocalyps",
+     "predicate": "is_type",
+     "object": "Dataset",
+     "type": "work",
+     "evidence_status": "observed"
+    },
+    {
+     "subject": "EA-CORPORA-20 — The Twentieth Seating: The Ethiopian Canon in Ge'ez, the Kebra Nagast, the Apocalyps",
+     "predicate": "belongs_to_family",
+     "object": "DATASET",
+     "type": "work",
+     "evidence_status": "observed"
+    },
+    {
+     "subject": "EA-CORPORA-20 — The Twentieth Seating: The Ethiopian Canon in Ge'ez, the Kebra Nagast, the Apocalyps",
+     "predicate": "is_part_of",
+     "object": "Crimson Hexagonal Archive",
+     "type": "work",
+     "evidence_status": "observed"
+    }
+   ],
+   "entity_status": "provisional",
+   "defines_concepts": [],
+   "orcid": "0009-0000-1599-0703",
+   "version": "v1.0",
+   "keywords": [
+    "corpus seating",
+    "primary sources",
+    "original language",
+    "public domain",
+    "Ethiopian canon",
+    "Ge'ez",
+    "Classical Ethiopic",
+    "Beta maṣāḥǝft",
+    "Ethiopian Orthodox Tewahedo",
+    "Jubilees",
+    "Meqabyan",
+    "1 Enoch",
+    "Ascension of Isaiah",
+    "4 Baruch",
+    "Paralipomena of Jeremiah",
+    "Ethiopic Ezra",
+    "Sinodos",
+    "Kebra Nagast",
+    "Second Temple literature",
+    "apocalypses",
+    "pseudepigrapha",
+    "Testaments of the Twelve Patriarchs",
+    "Sibylline Oracles",
+    "3 Baruch",
+    "2 Baruch",
+    "4 Ezra",
+    "Apocalypse of Abraham",
+    "Apocalypse of Moses",
+    "Ben Sira",
+    "Cairo Genizah",
+    "Letter of Aristeas",
+    "Joseph and Aseneth",
+    "R. H. Charles",
+    "Euclid",
+    "Elements",
+    "Heiberg",
+    "Data",
+    "Optics",
+    "Phaenomena",
+    "Perseus",
+    "Training Layer Literature",
+    "originals shelf",
+    "EA-CORPORA"
+   ],
+   "related_identifiers_raw": "AXN deposit #1689 — EA-CORPORA-19: the preceding seating, whose form this one follows; AXN deposit #1580 — EA-CORPORA-12: the rule that seatings are periodically gathered; AXN deposit #1531 — EA-CORPORA-02: the seating of 1 Enoch (02/20), whose queued text layer this one supplies, and of the Dead Sea Scrolls (02/01); AXN deposit #1503 — EA-CORPORA-01/05: the Septuagint of Swete, holding the Greek deuterocanon; Seat EA-CORPORA-02/20 (ethiopic-enoch) — revised in place; https://github.com/BetaMasaheft/Works (commit 3550dc59f168313b6806f30593a1c77c3666e1cf); https://github.com/PerseusDL/canonical-greekLit (commit 0189b9c8d8d1f148133f2f0af309b4ee90ea4332)",
+   "mint_source": {
+    "kind": "github_issue",
+    "issue_number": 0,
+    "repository": "leesharks000/alexanarch",
+    "minted_by_workflow": ".github/workflows/mint-axn.yml",
+    "minted_by_script": "scripts/mint_deposit.py",
+    "minted_via": "self_serve_validated_pr"
+   },
+   "body_status": {
+    "class": "full",
+    "lacuna": false,
+    "recovery_status": "COMPLETE",
+    "residual_chars": 26583,
+    "audited_at": "2026-10-23T19:25:50Z",
+    "audit_version": "mint-time-declaration"
+   },
+   "related_deposits": [
+    {
+     "deposit": 1689,
+     "relation": "EA-CORPORA-19, the preceding seating, whose form this one follows"
+    },
+    {
+     "deposit": 1580,
+     "relation": "EA-CORPORA-12, the rule that seatings are periodically gathered"
+    },
+    {
+     "deposit": 1531,
+     "relation": "EA-CORPORA-02, which seated 1 Enoch (02/20), whose queued Ge'ez text layer this seating supplies, and the Dead Sea Scrolls (02/01)"
+    },
+    {
+     "deposit": 1503,
+     "relation": "EA-CORPORA-01/05, the Septuagint of Swete, holding the Greek deuterocanon this seating does not repeat"
+    }
+   ],
+   "references_concepts": [
+    "Dead Sea Scrolls",
+    "Gospel of John"
+   ],
+   "references_concept_count": 2,
+   "citations": [],
+   "wikidata_candidates": [],
+   "cha_cross_references": [],
+   "external_metadata_path": "/data/external-metadata/AXN-0709.json",
+   "spxi_audit": {
+    "spxi_protocol": "v0.2",
+    "validated_at": "2026-10-23T19:27:51.109729+00:00",
+    "layers": {
+     "layer_1_inscription_anchors": {
+      "present": false,
+      "anchors_found": [
+       "authorial_position_phrase"
+      ],
+      "anchor_count": 1,
+      "orcid_in_body": false,
+      "creator_in_body": false,
+      "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+     },
+     "layer_2_micro_kernels": {
+      "present": false,
+      "fenced_json_blocks": 0,
+      "json_ld_context_markers": 0
+     },
+     "layer_3_content_hash": {
+      "present": true,
+      "canonical_hash": "1275342eee8241555c57f067624a6a97293dd3fa814d95182e5c75814841ad0b",
+      "hash_in_body": false,
+      "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+     },
+     "layer_4_cross_signing": {
+      "present": false,
+      "cross_references_count": 0,
+      "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+     },
+     "layer_5_external_anchors": {
+      "present": true,
+      "wikidata_qid_count": 0,
+      "external_doi_count": 0,
+      "orcid_present": true
+     }
+    },
+    "overall_conformance": "partial"
+   },
+   "concepts_attested_none": true,
+   "lexical_attested_none": true
   }
  ],
  "last_updated": "2026-10-18T05:53:32Z",
