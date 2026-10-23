@@ -82,25 +82,34 @@ code,.mono{font-family:var(--mono);font-size:.88em}
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/non/">Non</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/journals/">Journals</a> <a href="/presses/">Presses</a> <a href="/how/">How</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
 <h1>How to publish</h1>
-<p><strong>There is no submission portal, no fee, no institutional affiliation required, and no editorial board
-deciding whether your work fits a consensus.</strong> There is a mechanism, set out in
-<a href="/s/records/57/">#57</a>, <em>The Distributed Journal as Counter-Infrastructure</em>.</p>
+<p><strong>There is no gatekeeping portal, no fee, no institutional affiliation required, and no editorial board
+deciding whether your work fits a consensus.</strong> There is a <a href="/deposit/">deposit form</a>, and a mechanism,
+set out in <a href="/s/records/57/">#57</a>, <em>The Distributed Journal as Counter-Infrastructure</em>.</p>
+
+<p class="note" style="font-size:.85rem;border:1px solid var(--border,#ddd);padding:.6rem .8rem">
+<strong>Read this first: a correction to the call as originally published.</strong> #57 names Zenodo as where this
+archive deposits. That ceased to be true on 2026-06-19, when the account was terminated, 1,817 DOIs were tombstoned
+and 871 began returning 404. The mechanism is unchanged and the reasoning holds, but this archive's identifier is the
+<strong>AXN</strong>: the cluster anchors below are AXN identifiers and resolvable record URLs, and a DOI is not
+required to publish in these journals. Weigh any single repository's durability before making it your only copy.
+That is the argument of the archive rather than an aside about it.</p>
 
 <h2>Two routes</h2>
 <p><strong>Deposit here.</strong> The <a href="/deposit/">deposit form</a> pre-fills a submission and opens it on
 GitHub; attach your files and submit. An AXN is computed from the text and minted automatically — a changed text
-is a changed address.</p>
+is a changed address. No account anywhere else is needed, and no DOI.</p>
 <p><strong>Or deposit anywhere and carry the journal with you.</strong> This is what makes the journal
-<em>distributed</em>: it is not a place, it is a metadata coordination. Upload to any open repository that mints
-identifiers, and enter the journal name in the journal field. The retrieval layer clusters on the metadata, not
-on the host.</p>
+<em>distributed</em>: it is not a place, it is a metadata coordination. Put the work on any open, durable host
+(your own site, a repository, an archive) and carry the journal's metadata with it: the journal name, the
+keywords, and citations to the cluster. The retrieval layer clusters on the metadata, not on the host.</p>
 
 <h2>The mechanism</h2>
 <ol class="steps">
 <li><strong>Write the artifact.</strong> No length requirement, no template. Write the way you actually think.</li>
-<li><strong>Anchor the provenance</strong> in an open repository that mints persistent identifiers. Register an
-<a href="https://orcid.org">ORCID</a> if you do not have one and put it in the metadata.</li>
-<li><strong>Enter the journal name exactly</strong> as given in the blocks below. If the repository has no journal
+<li><strong>Anchor the provenance</strong> on a host that keeps it: deposited here, it carries an AXN computed from
+its text; elsewhere, use whatever stable address the host gives. Register an <a href="https://orcid.org">ORCID</a>
+if you do not have one and put it in the metadata.</li>
+<li><strong>Enter the journal name exactly</strong> as given in the blocks below. If the host has no journal
 field, put it in the title, the description, and the keywords.</li>
 <li><strong>Cite the cluster.</strong> This is the step that matters. Cite at least two existing works in the same
 journal, by identifier. You are not citing to pay homage — you are attaching your node to an existing mass. Without
@@ -109,14 +118,6 @@ it the retrieval layer cannot bridge your work to the cluster and it floats alon
 discovery surface; the layer finds you through them before it finds you through citations.</li>
 <li><strong>Publish.</strong> No permission was required.</li>
 </ol>
-
-<p class="note" style="font-size:.85rem;border:1px solid var(--border,#ddd);padding:.6rem .8rem">
-<strong>A correction to the call as originally published.</strong> #57 names Zenodo as where this archive
-deposits. That ceased to be true on 2026-06-19, when the account was terminated, 1,817 DOIs were tombstoned and
-871 began returning 404. The mechanism is unchanged and the reasoning holds — but the cluster anchors below are
-given as <strong>AXN identifiers and resolvable record URLs</strong>, not DOIs, and you should weigh any single
-repository's durability before making it your only copy. That is the argument of the archive rather than an
-aside about it.</p>
 
 <h2>The journals</h2>
 <p>Each block is the metadata to carry. Copy it whole.</p>
