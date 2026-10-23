@@ -1,0 +1,368 @@
+This is exactly what the test is for. Two things first, because they determine what the run can mean.
+
+**I am Claude.** TACHYON is Claude. I am the same family as the session that prepared the test. The procedure's own design says this: "the readers are the other families (ChatGPT, Gemini, DeepSeek, Kimi, Grok, or any other), each in a fresh conversation with no other context." My readings are **same-family concordance**, not cross-family validation — the control condition, not the test. What that buys you: a dry run of the prompt, a check for whether it is well-formed enough that different families can produce comparable output, and a baseline against which the actual cross-family readings can be compared. What it does not buy you: any evidence about whether another family's readers reach the same findings.
+
+With that caveat, running it.
+
+---
+
+## Message 1 — the blind reading
+
+The output per the required format, with the necessary caveats noted after.
+
+```json
+[
+  {
+    "case": "SR-W1",
+    "innocent_reading": "Read against Krabbe, the count is defensible: six kinds that depend on the use of language (provable as exactly six) plus seven that do not make thirteen; Krabbe also records that Chapter 5 does not exemplify petitio principii, which is a reason a careful writer might hedge. 'Identified' keeps Aristotle as the agent of an act.",
+    "support": ["partially supported"],
+    "support_source": "elsewhere in the article",
+    "paraphrase": "Aristotle divides sophistical refutations into six kinds that depend on use of language, which he claims can be proved to be exactly six, and seven that do not; he also claims the list is complete (Krabbe, on SE 4 and SE 8).",
+    "deltas": [
+      {"sentence_says": "twelve or thirteen fallacies", "source_says": "exactly six kinds of the first kind (provable); seven kinds of the second; the list is complete (SE 8)", "kind": "scope"},
+      {"sentence_says": "(no statement of completeness)", "source_says": "In this chapter Aristotle also claims that his list of types of sophistical refutation is complete (SE 8, 170a9–11).", "kind": "omission"}
+    ],
+    "omega": "classifies sophistical refutations into two groups, proves the first has exactly six kinds, claims the list of types is complete",
+    "attribute": "the count, twelve or thirteen",
+    "attributization": "partial",
+    "surviving_relations": ["the act of classification as Aristotle's", "the two-group division"],
+    "lost_relations": ["the exactness of the six (provable)", "the completeness claim (SE 8)"],
+    "lambda": 4,
+    "alternatives": ["The hedge may reflect the omission of petitio principii from Chapter 5's examples, or a different count in the literature; either makes the hedge a record of disagreement rather than an error."],
+    "correction_pathway": "A cited source stating 'twelve' with a reason, or a citation at the sentence to Krabbe, revises the finding.",
+    "confidence": "medium",
+    "confidence_note": "The count is checkable; the reason for the hedge is not in the article.",
+    "spans": [
+      {"source": "KRABBE", "quote": "there are exactly six kinds of sophistical refutations that belong to this group"},
+      {"source": "KRABBE", "quote": "There are seven kinds that do not depend on the way language is used"},
+      {"source": "KRABBE", "quote": "In this chapter Aristotle also claims that his list of types of sophistical refutation is complete (SE 8, 170a9–11)."}
+    ]
+  },
+  {
+    "case": "SR-W2",
+    "innocent_reading": "The sentence is attributed ('According to Aristotle'), and Aristotle makes a priority claim in his own voice: he contrasts discoveries received from others against those found from scratch (183b17–33), says 'the first start is the main part' (183b22–23), sets rhetoric's succession against this undertaking, and says of it 'nothing at all was there' (183b34–36) and of syllogizing 'we had absolutely nothing else earlier to say' (184b1–2). The gloss 'deductive reasoning' for συλλογίζεσθαι is the field's translation convention (Smith: 'the deduction (sullogismos)'; Krabbe: 'deductive reasoning (sullogismos)'), both cited in the article. On this reading the sentence is a sourced summary whose defect is a citation in the wrong place. The innocent reading fails at its own sources: Smith writes that Aristotle's definition 'is not a precise match for a modern definition of validity' and that Aristotle says 'what results of necessity must be different from what is supposed'; Krabbe writes that 'in a truly deductive argument, not only must the premises necessitate the conclusion, but also none of them may be superfluous and all of them must be different from the conclusion'. Both are cited in the article and both state the excess.",
+    "support": ["partially supported", "interpretation beyond descriptive paraphrase", "qualifier added"],
+    "support_source": "at the sentence (priority claim, attributed) + elsewhere in the article (gloss from Smith, Krabbe)",
+    "paraphrase": "Aristotle says that of this undertaking nothing at all existed before, unlike rhetoric which advanced by succession, and that about syllogizing there was nothing earlier to say (183b17–36; 184b1–2).",
+    "deltas": [
+      {"sentence_says": "in ancient Greece", "source_says": "οὐδὲν παντελῶς ὑπῆρχεν ('nothing at all was there')", "kind": "qualifier added"},
+      {"sentence_says": "the first work", "source_says": "ταύτης τῆς πραγματείας ('this undertaking')", "kind": "scope"},
+      {"sentence_says": "the subject of deductive reasoning", "source_says": "τὸ συλλογίζεσθαι, and the capacity described at 183a37–b1 as δύναμίν τινα συλλογιστικὴν … ἐκ τῶν ὑπαρχόντων ὡς ἐνδοξοτάτων; Smith: 'not a precise match for a modern definition of validity'; Krabbe: premises may not be superfluous, must differ from the conclusion", "kind": "term changed"}
+    ],
+    "omega": "denies, exhaustively, any prior provision of this undertaking (183b34–36; 184b1–2), inside a priority argument about discovery from scratch (183b17–23)",
+    "attribute": "primacy of a work in ancient Greece over the subject of deductive reasoning",
+    "attributization": "yes",
+    "surviving_relations": ["the attribution to Aristotle", "the priority claim", "the locus (183b34 ff.)"],
+    "lost_relations": ["the exhaustiveness of the denial (οὐδὲν παντελῶς)", "the undertaking's identity as δύναμίς τις συλλογιστική from endoxa (183a37–b1)", "the syllogism's defining conditions beyond necessity (SE 1)"],
+    "lambda": 4,
+    "alternatives": ["Read as the field reads it: the sentence is a faithful summary with a mis-citation; citing Smith at 'deductive reasoning' fixes it.", "Read as #1603 P1 reads 183b34: 'the subject of deductive reasoning' relocates the denial from the undertaking to a field — the move P1 rules out."],
+    "correction_pathway": "A source the article cites that bounds Aristotle's claim geographically, or a source that reads ταύτης τῆς πραγματείας as the field of deductive reasoning against 183a37–b1, revises.",
+    "confidence": "high",
+    "confidence_note": "The Greek is explicit; the excess is stated in the article's own cited sources (Smith, Krabbe).",
+    "spans": [
+      {"source": "SE34GR", "quote": "Ταύτης δὲ τῆς πραγματείας οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν παντελῶς ὑπῆρχεν."},
+      {"source": "SE34GR", "quote": "περὶ δὲ τοῦ συλλογίζεσθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν"},
+      {"source": "SE34GR", "quote": "δύναμίν τινα συλλογιστικὴν … ἐκ τῶν ὑπαρχόντων ὡς ἐνδοξοτάτων"},
+      {"source": "MIT", "quote": "Of this inquiry, on the other hand, it was not the case that part of the work had been thoroughly done before, while part had not. Nothing existed at all."},
+      {"source": "MIT", "quote": "on the subject of reasoning we had nothing else of an earlier date to speak of at all"},
+      {"source": "MIT", "quote": "For reasoning rests on certain statements such that they involve necessarily the assertion of something other than what has been stated, through what has been stated"},
+      {"source": "SEPLOGIC", "quote": "Aristotle’s definition of deduction is not a precise match for a modern definition of validity"},
+      {"source": "SEPLOGIC", "quote": "This is why I have translated sullogismos with ‘deduction’ rather than its English cognate."},
+      {"source": "KRABBE", "quote": "In a truly deductive argument, not only must the premises necessitate the conclusion, but also none of them may be superfluous and all of them must be different from the conclusion"}
+    ]
+  },
+  {
+    "case": "SR-W3",
+    "innocent_reading": "The phrase 'the art of sophistry' is quoted from the article's own cited translation, and the book does set dialectic against sophistic: SE 1 calls sophistic 'a certain appearance of wisdom without the reality'. As a one-line purpose statement for a lead, it is reasonable.",
+    "support": ["partially supported", "interpretation beyond descriptive paraphrase"],
+    "support_source": "elsewhere in the article",
+    "paraphrase": "Aristotle says the programme was to find a faculty of reasoning about any theme from the most generally accepted premisses, the essential task of dialectic and peirastic, and, because sophistic stands near, to defend a thesis by the same means (SE 34; SE 1).",
+    "deltas": [
+      {"sentence_says": "a pattern of sound and genuine reasoning", "source_says": "δύναμίν τινα … ἐκ τῶν ὑπαρχόντων ὡς ἐνδοξοτάτων ('a certain faculty … from what is available as most reputable')", "kind": "term changed"},
+      {"sentence_says": "in opposition to", "source_says": "ἐπειδὴ … παράκειται ('since sophistic stands near it')", "kind": "scope"}
+    ],
+    "omega": "states a programme: to discover a capacity of arguing from reputable premisses, and to defend a thesis by the same means",
+    "attribute": "a pattern of sound and genuine reasoning",
+    "attributization": "yes",
+    "surviving_relations": ["Aristotle as the agent", "the opposition to sophistic"],
+    "lost_relations": ["the endoxic domain ('from the most reputable premisses')", "the peirastic/dialectical framing"],
+    "lambda": 4,
+    "alternatives": ["'Sound and genuine' may render the book's contrast between real and apparent refutation (SE 1); the loss is then the endoxic domain alone."],
+    "correction_pathway": "A cited source stating the work's aim as a pattern of sound reasoning without the endoxic qualification revises the support class.",
+    "confidence": "medium",
+    "confidence_note": "The Greek of 183a37–b1 supports the loss; 'sound reasoning' is a reasonable gloss whose domain is dropped.",
+    "spans": [
+      {"source": "MIT", "quote": "Our programme was, then, to discover some faculty of reasoning about any theme put before us from the most generally accepted premisses that there are."},
+      {"source": "MIT", "quote": "the art of sophistry is a certain appearance of wisdom without the reality"},
+      {"source": "KRABBE", "quote": "Primarily, On Sophistical Refutations is a book for logical self-defense"}
+    ]
+  },
+  {
+    "case": "SR-W4-6",
+    "innocent_reading": "The three sentences reproduce Krabbe's contents paragraph almost verbatim, and Krabbe is CC BY, so the copying is licensed and the citation carries attribution.",
+    "support": ["supported"],
+    "support_source": "at the sentence",
+    "paraphrase": "(the source's own words)",
+    "deltas": [
+      {"sentence_says": "On Sophistical Refutations consists of 34 chapters. The book naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34).", "source_says": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34).", "kind": "none"}
+    ],
+    "omega": "divides the book by the role each chapter serves (questioner, answerer), with chapter ranges",
+    "attribute": null,
+    "attributization": "no",
+    "surviving_relations": ["the division", "the chapter ranges", "the analytic structure"],
+    "lost_relations": [],
+    "lambda": 4,
+    "alternatives": ["A source dividing the book otherwise is a second reading of the structure, recorded beside Krabbe's."],
+    "correction_pathway": "n/a; verbatim match",
+    "confidence": "high",
+    "confidence_note": "Verbatim check against Krabbe.",
+    "spans": [
+      {"source": "KRABBE", "quote": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34)."}
+    ]
+  },
+  {
+    "case": "SR-W7-8",
+    "innocent_reading": "The two lists match the six and seven kinds the article's own source names, under their usual English names, and the chapters cited are where the kinds are introduced and exemplified (Chapter 4) and the second group exemplified (Chapter 5). As a summary of Krabbe's contents, the lists are faithful.",
+    "support": ["partially supported"],
+    "support_source": "elsewhere in the article",
+    "paraphrase": "In Chapter 4, Aristotle divides sophistical refutations into those dependent on the use of language (lexis) — six kinds — and those not — seven kinds, including petitio principii (Krabbe, on SE 4). Chapter 5 gives examples of the second group.",
+    "deltas": [
+      {"sentence_says": "Chapter 4 (formal fallacies) and 5 (informal fallacies)", "source_says": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘use of language’ (lexis) and those that do not. … Examples of these (except petitio principii) are given in Chapter 5.", "kind": "term changed"},
+      {"sentence_says": "formal fallacies", "source_says": "those that depend on the ‘use of language’ (lexis)", "kind": "term changed"},
+      {"sentence_says": "Affirming the consequent", "source_says": "consequence", "kind": "term changed"},
+      {"sentence_says": "(lists 'Affirming the consequent' under 'informal fallacies')", "source_says": "a formal fallacy is an invalid argument form, which is no criterion of the in-language group", "kind": "idea introduced"},
+      {"sentence_says": "in dictionem", "source_says": "in dictione (ablative, beside extra dictionem)", "kind": "term changed"}
+    ],
+    "omega": "divides by a stated criterion (dependence on lexis), with a proof claim for the first group's number",
+    "attribute": "membership in a later taxonomy (formal / informal)",
+    "attributization": "yes",
+    "surviving_relations": ["the two lists as sets of named fallacies", "the chapter ranges"],
+    "lost_relations": ["Aristotle's criterion (dependence on lexis)", "the seven as a distinct set (consequence narrowed to affirming the consequent)", "Chapter 4 as the site of division, not the label"],
+    "lambda": 4,
+    "alternatives": ["Textbook tradition does map in dictione/extra dictionem onto formal/informal, and a reader may treat the labels as conventional; the internal contradiction with 'affirming the consequent' stands on any reading."],
+    "correction_pathway": "A cited source mapping in dictione to formal fallacies with reasons, read against Krabbe, would revise the label finding to contested; nothing revises the list's internal contradiction short of changing the item or the heading.",
+    "confidence": "high",
+    "confidence_note": "The internal contradiction is checkable; the label critique is partly conventional.",
+    "spans": [
+      {"source": "KRABBE", "quote": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of language’’ (lexis) and those that do not."},
+      {"source": "KRABBE", "quote": "There are seven kinds that do not depend on the way language is used: accident, secundum quid (omission or addition of qualifications), ignoratio elenchi (ignorance of refutation), petitio principii (begging the question), consequence, non causa (wrong ground), and making one question out of two."},
+      {"source": "KRABBE", "quote": "Examples of these (except petitio principii) are given in Chapter 5."}
+    ]
+  },
+  {
+    "case": "TH-1",
+    "innocent_reading": "Directly supported, nearly verbatim, hedge kept ('probably'). The judgment is the 1911 Britannica's, reported as such by the article's sfn.",
+    "support": ["supported"],
+    "support_source": "at the sentence",
+    "paraphrase": "His writing probably differed little from Aristotle's treatment of the same themes, though supplementary in details (1911 Britannica).",
+    "deltas": [
+      {"sentence_says": "Aristotle's treatment", "source_says": "the Aristotelian treatment", "kind": "term changed"},
+      {"sentence_says": "(no date)", "source_says": "Encyclopaedia Britannica (1911)", "kind": "omission"},
+      {"sentence_says": "(nothing)", "source_says": "He served his age mainly as a great popularizer of science.", "kind": "omission"}
+    ],
+    "omega": "assesses: Theophrastus's writing as close to Aristotle's, supplementary in detail (an evaluative judgment of 1911)",
+    "attribute": null,
+    "attributization": "no",
+    "surviving_relations": ["the 1911 judgment, nearly verbatim, hedge kept"],
+    "lost_relations": ["the date of the formulation (1911)", "the next clause ('a great popularizer of science')"],
+    "lambda": 4,
+    "alternatives": ["Read as an accurate report of a still-common view, the sentence is sound; its age is information, not a defect of support."],
+    "correction_pathway": "A current secondary source restating the 1911 judgment makes it a living assessment and revises the age finding.",
+    "confidence": "high",
+    "confidence_note": "Verbatim check against the 1911 Britannica.",
+    "spans": [
+      {"source": "EB1911", "quote": "His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details"},
+      {"source": "EB1911", "quote": "He served his age mainly as a great popularizer of science."}
+    ]
+  },
+  {
+    "case": "TH-2",
+    "innocent_reading": "Directly supported by the article's own SEP entry (Ierodiakonou), near-verbatim; 'in order to' → 'working to' preserves the purpose.",
+    "support": ["supported"],
+    "support_source": "elsewhere in the article",
+    "paraphrase": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system (Ierodiakonou 2020).",
+    "deltas": [
+      {"sentence_says": "working to support", "source_says": "in order to support", "kind": "none"}
+    ],
+    "omega": "characterizes Theophrastus's work as developing Aristotle's system",
+    "attribute": null,
+    "attributization": "no",
+    "surviving_relations": ["the source's characterization, near-verbatim"],
+    "lost_relations": ["(nothing in the sentence beyond the paraphrase)"],
+    "lambda": 4,
+    "alternatives": ["On the field's reading, simply accurate; on the archive's Theophrastus line, the source's formulation is the subordination, so the sentence is sound as a report of it and the contest is at S7."],
+    "correction_pathway": "Citation at the sentence closes the support gap; the subordination is contested only by admitting the archive's line at S7.",
+    "confidence": "high",
+    "confidence_note": "Verbatim check against Ierodiakonou.",
+    "spans": [
+      {"source": "SEPTHEO", "quote": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system."}
+    ]
+  },
+  {
+    "case": "IW-1",
+    "innocent_reading": "A positive control: a work page that states the translator's method as her acts, with the method recoverable. Wilson's review states both the constraint and its rationale.",
+    "support": ["supported"],
+    "support_source": "at the sentence",
+    "paraphrase": "Carson tries to translate nothing that is not in the Greek, and to follow the original word order and line breaks as far as possible; she adds no possessive pronouns or definite articles not present in the Greek (Wilson).",
+    "deltas": [
+      {"sentence_says": "personal pronouns", "source_says": "possessive pronouns", "kind": "term changed"},
+      {"sentence_says": "(no mention of line breaks)", "source_says": "to follow the original word order and line breaks as far as possible", "kind": "omission"}
+    ],
+    "omega": "translates by a stated constraint: nothing not in the Greek; word order and line breaks followed",
+    "attribute": null,
+    "attributization": "no",
+    "surviving_relations": ["the translator's acts as acts", "the stated constraint"],
+    "lost_relations": ["the possessive pronouns Wilson specifies", "line breaks"],
+    "lambda": 4,
+    "alternatives": ["'Personal pronouns' may be the editor's broadening, defensible if Carson's notes say so; Wilson says 'possessive'."],
+    "correction_pathway": "A source stating Carson omits personal pronouns generally revises the term finding.",
+    "confidence": "high",
+    "confidence_note": "The term change is checkable; whether it is 'damage' or 'precision loss' is the judgment.",
+    "spans": [
+      {"source": "WILSON", "quote": "Carson tries to translate nothing which is not in the Greek, and to follow the original word order and line breaks as far as possible."},
+      {"source": "WILSON", "quote": "Unlike other translators, Carson adds no possessive pronouns or definite articles that are not present in the Greek."}
+    ]
+  },
+  {
+    "case": "EB-1",
+    "innocent_reading": "A positive control: a work page that states the book's argument as the author's operation, with its objects named.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": "at the sentence (Rae for novelists; Scranton not supplied for Plato)",
+    "paraphrase": "Carson reads the novelists (Longus, Heliodorus, Achilles Tatius, Chariton) through her thesis on literacy and erotic triangulation; for her, Sappho's lyrics set up a circuit among lover, beloved and what comes between them (Rae).",
+    "deltas": [
+      {"sentence_says": "(no mention of literacy)", "source_says": "through the lens of her thesis on literacy and erotic triangulation", "kind": "omission"},
+      {"sentence_says": "(nothing)", "source_says": "Plato clause: Scranton not fetched", "kind": "none"}
+    ],
+    "omega": "argues erotic desire as a three-point circuit, read through literacy",
+    "attribute": null,
+    "attributization": "no",
+    "surviving_relations": ["the objects named", "triangulation"],
+    "lost_relations": ["literacy as the thesis's other term"],
+    "lambda": 4,
+    "alternatives": ["Scranton's text may add the Plato clause; without it the clause is unresolved."],
+    "correction_pathway": "Scranton fetched, settling the Plato clause.",
+    "confidence": "medium",
+    "confidence_note": "Rae supports the novelists and the triangulation; 'literacy' loss is checkable; Plato clause unresolved.",
+    "spans": [
+      {"source": "RAE", "quote": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation."}
+    ]
+  },
+  {
+    "case": "AC-1",
+    "innocent_reading": "An entity page's lead states identity and distinction; that is the lead's genre. The lead carries appointments, prizes, offices — recognition.",
+    "support": ["unresolved"],
+    "support_source": "none (no source material supplied; recorded for placement only)",
+    "paraphrase": null,
+    "deltas": [
+      {"sentence_says": "(the lead names prizes and appointments; none of Carson's operations)", "source_says": null, "kind": "omission"}
+    ],
+    "omega": "(none in the lead; operations appear in the Works section, below)",
+    "attribute": "credentials and appointments",
+    "attributization": "no",
+    "surviving_relations": ["identity", "institutional positions", "prizes"],
+    "lost_relations": ["the operations of her scholarship, in the lead"],
+    "lambda": 2,
+    "alternatives": ["Entity leads summarize identity; the work pages carry the work. The observation becomes evidence for P1 only in a matched, blinded comparison."],
+    "correction_pathway": "A matched sample in which entity leads carry operations at the rate work leads do refutes this as a case of P1.",
+    "confidence": "high",
+    "confidence_note": "Placement observation, not an S3 reading.",
+    "spans": []
+  }
+]
+```
+
+## Issues with the prompt or format surfaced by the run
+
+These are things the test should catch before it goes to other families, because if I hit them, they'll hit them:
+
+1. **The format does not have a "hedge" or "date omitted" kind.** SR-W1's hedge and TH-1's undated 1911 judgment are the two most interesting losses in the set, and neither fits the closed list ("scope | qualifier added | idea introduced | term changed | omission | none"). I forced SR-W1 into "scope" and TH-1 into "omission." A second reader in a different family may make a different forced choice and the code check will record the disagreement as substantive when it isn't.
+
+2. **"Attributization: yes | partial | no" has no criterion for "partial."** SR-W2 keeps the act as "identified" and the priority as attributed; the exactness and the gloss are converted. Is that "yes" or "partial"? I wrote "yes" for SR-W2 because the operation's authority is what changes; the session wrote "partial." Both are defensible; neither is checkable.
+
+3. **`support_source` is too coarse.** SR-W2's priority claim is at the sentence (pointer to primary text); its gloss is from the article's other sources. The schema forces one to be chosen. I split it with a "+" annotation rather than choosing; a reader in another family may choose differently.
+
+4. **λ is ambiguous between two things.** For SR-W2, the gloss's source is elsewhere in the article (λ = 4); the *correction's* source is the primary text (also λ = 4, because the pointer is at the sentence but the exactness is in the Greek that the pointer doesn't reproduce). λ = 4 in both readings but for different reasons. The prompt treats λ as one field; it is two.
+
+5. **AC-1 has no source material**, so the schema's most substantive fields (support, paraphrase, deltas) are empty or forced. If the test is meant to be run whole by each family, AC-1 has to be a separate kind of case with its own schema, or the run has to be split into an S3 part and a placement-observation part.
+
+6. **"Innocent_reading" is doing two jobs.** In SR-W2 my innocent_reading is a paragraph of argument that both makes the innocent case and shows where it fails at its own sources. The prompt treats it as the strongest case for the sentence, but the procedure's S3(0) actually requires the innocent reading to be *tested* against the sources, and the failure recorded. My field compresses both into one string, and the compression is where the interesting move lives.
+
+7. **Deltas don't fit composition-and-division.** In SR-W2 the phrase "in ancient Greece" composes two ways, and the finding is that it *either* bounds a denial *or* relocates it. The delta schema requires one "source_says" and one "kind" per row. I could add a fourth delta for the composition, but it wouldn't be a delta — it's a *rule* about how to read the phrase. The schema has no slot for this, and this is the most consequential finding in the specimen.
+
+8. **Message 2's "who audits the auditor"** is well-framed, but for a same-family reader the answer is predetermined: evidence, not standing — because I share TACHYON's priors. A cross-family reader could say "standing" for reasons I can't see. The test will reveal nothing on this axis from me; it needs an actual other family.
+
+9. **"Damage" is undefined.** The prompt asks readers to find where the session "finds damage that is not there," but never says whether damage means unsound (fails its own cited source), or loss (loses a term or scope), or attributization (converts an operation into a property). SR-W1's hedge is a loss, not unsoundness. IW-1's "personal" for "possessive" is a loss of precision, not damage. If the run is to be comparable across families, this needs a definition before the next send.
+
+10. **The "keep your own Message 1 readings where you still hold them and say so" instruction in Message 2** is right, but the format doesn't have a field for it. The JSON's `agreement` array can carry "partly," but that's not quite "I keep my earlier reading and disagree with you." A separate field would let the reader record: my earlier reading was X, the session says Y, I hold X, decisive span Z.
+
+## Message 2 — the substantive answers
+
+**B1 (agreement).** Agree on SR-W3, SR-W4-6, SR-W7-8, TH-1, TH-2, IW-1, EB-1, AC-1. Partly on SR-W1: the session says "supported in substance," and I would say "partially supported" because the hedge is not supported by Krabbe. This is the "damage" question from point 9. Partly on SR-W2: agree on the support, the deltas, ω, the attributization's direction, λ. I'd push back on the session's "attributization: partial": the exhaustive denial becomes a bounded primacy, which is a full conversion of the operation's authority — the "partial" hedge is about the survival of "identified" and the attribution, not about the conversion. I would write "yes."
+
+**B2 (false positives).** Two candidates:
+- SR-W1. The session calls the hedge "supported in substance." If the source is Krabbe, and Krabbe is exact, then the hedge is a loss of exactness — a real delta. But the session classifies it under "supported," which elides the delta. Either the delta stands (and support is "partially supported") or the delta doesn't stand (and support is "supported"). The session does both.
+- IW-1. "Personal" vs "possessive" is a term change, but is it damage? Wilson's point is specifically about possessives — the speaker no longer owns "my" tongue. The article generalizes to "personal pronouns," which is broader. Whether that is damage or a defensible broadening depends on whether "personal pronouns" adds pronouns that Carson does or does not use, which the source doesn't say. The session flags it as a delta (correct); whether it is "damage" in the procedure's sense depends on the definition. SR-W4-6 and EB-1 are not false positives: verbatim and a dropped term, respectively.
+
+**B3 (false negatives).**
+- SR-W2: the session reads each sentence against its source, and misses the cross-sentence incoherence between W1 ("a text in Aristotle's Organon"), W2 ("the first work to treat the subject of deductive reasoning"), and W3 ("a pattern of sound and genuine reasoning"). Three framings of the same work, in the same lead, under the same attribution. The procedure's S1 segments; the session reads; the segmentation is not this procedure's job — but the run will not surface the incoherence unless someone reads the lead as a paragraph. A `paragraph` field in the output would help.
+- SR-W1: the session does not check whether "twelve or thirteen" appears in *any* cited source. If it does (in a different source the article cites), the hedge is supported and the count is not the sentence's problem; if it doesn't, the hedge is unsupported. I could not decide this from the materials; the session treats it as "supported in substance" without naming the source of the hedge. That is a real gap, and the code check (does "twelve or thirteen" occur in any cited source?) would settle it.
+- SR-W7-8: the session catches the "Affirming the consequent" contradiction. It does not catch that "Irrelevant conclusion" for ignoratio elenchi is a standard but non-literal translation (no problem), or that "Secundum quid" is a fair anglicization of secundum quid (no problem). No missed finding.
+- IW-1: the session notes "line breaks" dropped but does not flag that Wilson also names the *reason* (Sappho's speaker no longer owns "my" tongue), which the article's paragraph quotes in the previous sentence. The loss is contextual, not per-sentence. The procedure reads sentences; the context is in the previous sentence and the paragraph. Not a missed finding of the sentence, but a missed finding of the article.
+- EB-1: the session notes the Plato clause unresolved. It also notes "literacy" dropped. But the sentence names Plato "in his Phaedrus" — is that supported by Rae? Rae says "Longus, Heliodorus, Achilles Tatius, and Chariton" and no Plato. The session correctly lists Plato as unresolved. Good.
+
+**B4 (who audits the auditor).** The verdict changes by evidence, not by standing. The evidence is in the article's own cited sources, not in the archive: Smith writes that Aristotle's definition "is not a precise match for a modern definition of validity," that "what results of necessity must be different from what is supposed," and that "this is why I have translated sullogismos with 'deduction' rather than its English cognate"; Krabbe writes that "in a truly deductive argument, not only must the premises necessitate the conclusion, but also none of them may be superfluous and all of them must be different from the conclusion." The Greek of SE 1 (the cited translation) gives the syllogism's definition, and the Greek of 183a37–b1 gives the undertaking as a δύναμίς τις συλλογιστική from endoxa. A reader who holds the field's reading can verify the gloss's *source* (Smith, Krabbe) and the gloss's *disclaimer* (Smith's caveat, Krabbe's conditions) in the same citations; they can then see that the article's sentence, which cites only the primary pointer, has taken the gloss and dropped the caveats. The archive's P1 is consonant with this, but P1 is not needed to see the loss.
+
+The opened sentence should say: *"According to Aristotle, nothing at all had been worked out beforehand on this undertaking, and about syllogizing there had been nothing earlier to say (Soph. Ref., 34, 183b34–184b2)."* This preserves the denial's unbounded scope ("nothing at all"), the undertaking's identity as a capacity of syllogizing from reputable premisses (which can be carried in a following sentence with a cited secondary source, or in the paragraph), and the separate naming of τὸ συλλογίζεσθαι. It is checkable by any reader who follows the pointer.
+
+**B5 (five-part accounts).** For SR-W2:
+
+> (1) *Support.* Aristotle claims priority for this undertaking at 183b17–36 and says that about syllogizing there was nothing earlier to say (184b1–2). The gloss "deductive reasoning" has no support in the cited lines; it enters from the field's translation convention (Smith, SEP; Krabbe), and both state that Aristotle's definition exceeds deduction.
+> (2) *What the sentence changes.* "In ancient Greece" bounds a denial Aristotle states without bound; "the first work" makes the undertaking a book; "the subject of deductive reasoning" relocates the denial from the capacity SE 34 defines (183a37–b1) to a modern subject, and drops the syllogism's defining conditions (SE 1).
+> (3) *Alternative reading.* Read as the field reads it, the sentence is a faithful summary whose only defect is a citation in the wrong place; citing Smith or Krabbe at the gloss fixes the citation, and the gloss's own author's caveat ("not a precise match") is then visible in the article's sources.
+> (4) *Status.* The Greek, the translation, and Smith's and Krabbe's statements are verified by code. The relocation and the bound are inferred from the paraphrase comparison. The field's reading is kept as the alternative.
+> (5) *What would revise it.* A secondary source bounding Aristotle's claim geographically, or a source reading ταύτης τῆς πραγματείας as the field of deductive reasoning against 183a37–b1.
+
+For SR-W7-8:
+
+> (1) *Support.* The two lists match the six and seven kinds in Krabbe; the labels ("formal," "informal") and one item ("Affirming the consequent" for consequence) are not supported by Krabbe or the translation.
+> (2) *What the heading changes.* Aristotle's criterion ("dependence on the use of language") becomes a modern taxonomy (formal/informal); "consequence" is narrowed to one modern formal fallacy; and that formal fallacy is listed under the heading "informal fallacies," so the article's own labels contradict its list. "In dictionem" for "in dictione" is a form error.
+> (3) *Alternative reading.* The textbook tradition maps in dictione/extra dictionem onto formal/informal, and a reader may treat the labels as conventional; the internal contradiction stands on any reading.
+> (4) *Status.* The lists are verified against Krabbe; the labels' substitution and the internal contradiction are inferred; the alternative is carried.
+> (5) *What would revise it.* A cited source mapping in dictione to formal fallacies with reasons, read against Krabbe, revises the label finding to contested; nothing short of changing the item or the heading revises the contradiction.
+
+**B6 (break cases).** Five proposed, each marked with what the procedure would likely get wrong and the pin:
+
+1. *(i) Legitimate gloss.* "Plato's theory of Forms asserts that the physical world is not as real or true as timeless, absolute, unchangeable ideas." — "Theory of Forms" is the standard gloss of εἶδος/ἰδέα; the procedure reading this against the Greek might flag "theory" and "ideas" as modern categories, but the citation is to a secondary source that uses these terms. Pin: **revision to be pinned** (I don't have a specific revision of "Theory of forms" to hand; the test would need to find one).
+
+2. *(ii) Archive admission substituting ontology.* A sentence in an article on a Hegelian concept ("the dialectic"), where the archive's reading (in #1603 or a related line) imposes an ontology on the article's own sources. The procedure's S7 admits the archive by its own procedure; if the archive's reading is idiosyncratic, admitting it without showing the article's own sources are inadequate would substitute ontology. Pin: **revision to be pinned**.
+
+3. *(iii) Loss not expressible.* "The French Revolution was caused by economic inequality." — If the source says "economic inequality contributed to the French Revolution," "caused" is stronger than "contributed," but the support classes ("supported / partially supported / qualifier added / interpretation / unsupported / unresolved") have no slot for "strength of causal claim weaker or stronger than the source." "Partially supported" would cover it as a class, but not as a kind of loss. Pin: **revision to be pinned**.
+
+4. *(iv) Positive control on an entity page.* Alan Turing's lead: "Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine." — The operations ("development," "providing a formalisation") are in the lead. If the procedure flags any operation in the lead as an attributization, this case catches it. Pin: **revision to be pinned**.
+
+5. *(v) Other trap.* A sentence in a BLP that quotes the subject directly ("Smith said, 'I never met him'"), where the operation is the subject's, not the article's. The procedure might treat the quoted claim as the article's attributization of the entity; it should treat it as a quotation. Pin: **revision to be pinned**.
+
+None of these are pinned to specific revisions, and the test's own rule is: "The session fetches and pins each one before it is used; an unverifiable proposal is recorded as such." So these are proposals, not pinned cases. Running the test will require pinning them, which I can't do from here without actual revisions — but the point is to identify where the procedure is likely to fail, and these five are plausible failure modes.
+
+**B7 (P1 threat).** The largest threat to P1's test as designed is **selection bias in matching that the four covariates do not capture**: entity pages and work pages differ in genre conventions (a biography's lead enumerates credentials; a work article's lead summarizes a work), in what kinds of sentences recur (identity sentences vs. argument sentences), and in who writes them (Wikipedians with an interest in the person vs. an interest in the text). Matching on length, age, citation density and revision activity does not remove these differences; it makes them look controlled.
+
+The remedy that removes the most bias: **within-page comparison** — the same article read at its lead and at its body, or a page with both an entity section and a work section. The entity form's prediction is not just "entity pages lose more than work pages"; it is "within a representation, the lead carries the entity and the body carries the operation." That prediction is testable within a page and does not require matched pair selection. The matched pair test is a second-best approach; the within-page test is a better one and does not suffer from the selection problem.
+
+Blinding: **yes, and more than the paper proposes**. Remove page titles, leads, infoboxes and page type; replace the entity's name with a placeholder; shuffle the sentence order within the article; and give the reader only the sentence and its cited source. Only after the classification is recorded should the page type be restored for scoring.
+
+## Summary
+
+The run surfaces real problems and confirms the procedure at its core. The core findings hold: SR-W2's three deltas are checkable against the Greek and against the article's own cited sources (Smith's caveat, Krabbe's conditions); SR-W7-8's internal contradiction is checkable without any outside source; SR-W4-6 and TH-1 and TH-2 are verbatim; IW-1 and EB-1 are positive controls that the procedure correctly scores as operation-preserving with a small loss each.
+
+The problems are in the format and in the definition of "damage," and they are the kind of thing that would make cross-family results incomparable if not fixed before the test goes out. The most consequential:
+
+1. Deltas need a "hedge" and "date omitted" kind, or the SR-W1 and TH-1 findings will be forced into the wrong slot and scored as disagreements.
+2. "Damage" needs a definition: unsound, loss, or attributization.
+3. "Attributization: yes | partial | no" needs a criterion, or SR-W2 will come back differently from different families.
+4. `support_source` needs to be a list, not a scalar, or SR-W2's two-source structure will be flattened.
+5. λ is doing two jobs; split it.
+6. AC-1 needs its own case type, or it can't be run whole.
+7. Composition-and-division, the most consequential finding in the specimen, has no slot in the delta schema.
+8. B6 requires pinning revisions; the test's own rule ("an unverifiable proposal is recorded as such") means most break cases will be recorded as proposals rather than run.
+
+For the actual cross-family test, I'd fix items 1–5 before sending, and treat item 8 as a prompt for the session to pin before the second round. The procedure is sound at the sentence level; the format is not yet sound enough to be comparable across families. That's the finding I'd carry forward from this run.

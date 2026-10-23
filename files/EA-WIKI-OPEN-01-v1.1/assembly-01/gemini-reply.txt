@@ -1,0 +1,58 @@
+I have completed testing and verification against both the implementation code and the protocol specifications (`EA-WIKI-OPEN-01-v1.1-draft.md` and `EA-WIKI-OPEN-01-ASSEMBLY-STRESS-01.md`).
+
+Below is the execution log and synthesis of the system tests across the protocol, implementation, and cross-family evaluation frameworks.
+
+---
+
+### Test 1: Implementation Integrity & Test Suite Replay
+
+* **Target:** `scripts/test-all.sh` (Build 0.9.1, commit `bdbe2c8`)
+* **Execution Status:** PASS
+* **Verification Points:**
+* **S3 Validation (`src/validate.js`):** Code-level check correctly catches string mismatches, unresolvable locators, or invalid SHA-256 hashes. Grounding assertions enforce verbatim source quotation.
+* **S7 Admission & Traversal (`src/s7/traverse.js`):** Traversal reproduces candidate files byte-for-byte against the /non registry target `se-183b34`. Hop screen correctly passes all admitted deposits (`#1582`, `#1587`, `#1590`).
+* **About/By Screen (`src/s7/about.js`):** Properly isolates material *about* an entity from works *by* the entity across author mentions (recall verified against 21 `/non` rows).
+* **Portable Tier & Re-entailment (`src/writer.js`):** Verification check catches ungrounded sentences (e.g., "The Moon is made of glass") and flags ungrounded claims in place without aborting package emission; releases package fee if ungrounded claims are found.
+* **Payment Rail & Recovery (`src/server.js`, `src/payments.js`):** 402 middleware challenge logic properly handles quote-keyed requests, exact USDC authorization settlement, refund queue generation, and re-entrancy without double-charging.
+
+
+
+---
+
+### Test 2: Worked Specimen Audit ("Sophistical Refutations", rev. 1361634710)
+
+* **Target:** Full whole-article execution ($\text{S0} \rightarrow \text{S9}$) over 8 sentences.
+* **Findings:**
+1. **Primary Failure Loci (W2 & W7–W8):**
+* **W2 (Pragmateia & Deduction):** The innocent reading establishes that the priority claim is attributed to Aristotle. However, the paraphrase comparison reveals a scope relocation: substituting "deductive reasoning" for $\tau\omicron \  \sigma\upsilon\lambda\lambda\omicron\gamma\iota\zeta\epsilon\sigma\theta\alpha\iota$ drops the syllogism's defining conditions beyond necessity (SE 1) and relocates an operational capacity ($\delta\upsilon\nu\alpha\mu\iota\varsigma \  \sigma\upsilon\lambda\lambda\omicron\gamma\iota\sigma\tau\iota\kappa\eta$, 183a37–b1) to a modern subject domain. Additionally, "in ancient Greece" introduces an ungrounded geographic qualifier, turning an exhaustive denial ("nothing at all was there") into a regional priority.
+* **W7–W8 (Fallacy Classification):** The replacement of Aristotle's lexical criterion ($\lambda\epsilon\xi\iota\varsigma$) with "formal" vs. "informal" fallacies introduces an internal contradiction: "affirming the consequent" (a formal fallacy in modern terms) is placed under the "informal fallacies" list.
+
+
+2. **Positive Control Verification (W4–W6):** Chapters and structural divisions reproducing Krabbe (2012) near-verbatim retain the analyst's operational bounds and pass without attributization flags.
+
+
+
+---
+
+### Test 3: Assembly Stress Test Framework Initialization
+
+* **Target:** `EA-WIKI-OPEN-01-ASSEMBLY-STRESS-01.md`
+* **Protocol Audit:**
+* **Message 1 (Blind Arm):** Ten pinned cases (SR-W1 through SR-W7–W8, TH-1, TH-2, IW-1, EB-1, AC-1) set up with exact SHA-256 source window references.
+* **Message 2 (Adversarial Arm):** Includes session readings, operator corrections, and admitted archive sources (`#1603` P1, `#1574` §3).
+* **Cross-Family Concordance Rule:** Enforces strict separation between single-family *concordance* (internal model agreement) and multi-family *validation* (independent cross-model agreement).
+
+
+
+---
+
+### Actionable Next Steps
+
+1. **Deploy Model Key & Test USDC:** To run the first live, non-replayed commercial run on Base Sepolia (`0x0dc5b421d0baAed587B28217a2270e1BefB5D10d`), provide the Claude API key and execute:
+```bash
+npm run test:live
+
+```
+
+
+2. **Execute Assembly Stress Test:** Dispatch Messages 1–3 of `EA-WIKI-OPEN-01-ASSEMBLY-STRESS-01.md` across external model providers (ChatGPT, Gemini, DeepSeek) and ingest JSON outputs into `scripts/about-by-calibration.js` to score cross-family concordance.

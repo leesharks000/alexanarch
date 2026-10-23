@@ -3,17 +3,17 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-10-23T02:28:38Z",
+  "generated_at": "2026-10-23T13:59:38Z",
   "totals": {
-    "deposits": 1696,
-    "concepts": 97,
-    "deposits_in_concepts": 233,
-    "singletons": 1463,
+    "deposits": 1697,
+    "concepts": 98,
+    "deposits_in_concepts": 235,
+    "singletons": 1462,
     "needs_review": 15,
     "program_families": 53
   },
   "basis_counts": {
-    "version/declared": 39,
+    "version/declared": 40,
     "version/implicit": 38,
     "version/explicit": 6,
     "version/superseded": 2,
@@ -954,6 +954,49 @@
           "superseded_marker": false,
           "is_current": true,
           "record_url": "https://www.alexanarch.org/s/records/942/"
+        }
+      ]
+    },
+    {
+      "concept_id": "series-ea-wiki-open-01",
+      "concept_url": "https://www.alexanarch.org/s/concept/series-ea-wiki-open-01/",
+      "title_base": "opening the encyclopedia the entity as ontological commodity form and a translation protocol from encyclopedic grammar to the meaning layer with the spxi gn sis service",
+      "basis": "version/declared",
+      "version_series_id": "SERIES-EA-WIKI-OPEN-01",
+      "root_axn_hex": "0707",
+      "ea_identifiers": [
+        "EA-WIKI-OPEN-01"
+      ],
+      "member_count": 2,
+      "needs_review": false,
+      "current": {
+        "deposit_number": 1697,
+        "axn": "AXN:0708.GENERATIVE.💫🦋🎯👁‍🗨○🌊",
+        "title": "Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+        "date": "2026-10-23",
+        "version": "1.1",
+        "record_url": "https://www.alexanarch.org/s/records/1697/"
+      },
+      "versions": [
+        {
+          "deposit_number": 1696,
+          "axn": "AXN:0707.GENERATIVE.🔃🌍🌒🕛♎📦",
+          "title": "Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+          "date": "2026-10-22",
+          "version": "1.0",
+          "superseded_marker": true,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1696/"
+        },
+        {
+          "deposit_number": 1697,
+          "axn": "AXN:0708.GENERATIVE.💫🦋🎯👁‍🗨○🌊",
+          "title": "Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+          "date": "2026-10-23",
+          "version": "1.1",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1697/"
         }
       ]
     },

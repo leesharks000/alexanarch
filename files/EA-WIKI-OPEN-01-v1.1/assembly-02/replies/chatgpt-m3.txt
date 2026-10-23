@@ -1,0 +1,847 @@
+[
+  {
+    "case": "SY-1",
+    "case_type": "sentence",
+    "innocent_reading": "SEPANC, cited elsewhere in the article, explicitly describes syllogisms as valid arguments whose conclusions follow necessarily from premises. The sentence can be read as defining the familiar two-premise species rather than claiming to reproduce the full extension of Aristotle's initial definition.",
+    "innocent_reading_fails_at": "The supplied source says at least two premises, not exactly two, and distinguishes Aristotle's definition from the smaller class covered by his syllogistic. The sentence does not identify a restricted species or explain that distinction.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "Aristotle defines an argument in which something different follows necessarily because certain things have been laid down; SEPANC interprets this as requiring at least two premises and distinguishes the definition from Aristotle's narrower syllogistic. The sentence retains inference from premises but states two propositions without that distinction.",
+    "deltas": [
+      {
+        "sentence_says": "based on two propositions",
+        "source_says": "at least two premises and a conclusion",
+        "kind": "scope",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "applies deductive reasoning",
+        "source_says": "all syllogisms are valid arguments",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "arrive at a conclusion",
+        "source_says": "the conclusion differs from the premises",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "based on two propositions",
+        "source_says": "This definition appears to require",
+        "kind": "hedge",
+        "measure": "source fidelity",
+        "lambda": 4
+      }
+    ],
+    "omega": "Defining necessary consequence through the premises, including a conclusion distinct from them, and distinguishing that definition from the scope of a particular syllogistic.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence still describes an inferential operation. Its principal problem is an unexplained restriction of the definition, not conversion of an operation into a credential.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "Premises, inference, and conclusion survive. The source's distinction between the general definition and the smaller class treated by the syllogistic does not.",
+      "revision_required": "Distinguish the broad Aristotelian definition from a two-premise use of the term. Supply a source for the latter rather than treating at least two as evidence for an unrestricted exactly-two definition."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Bobzien interpreting Aristotle's definition",
+        "mood": "Hedged inference concerning the definition's requirements",
+        "span": {
+          "source": "SEPANC",
+          "quote": "This definition appears to require (i) that a syllogism consists of at least two premises and a conclusion"
+        }
+      },
+      "sentence": {
+        "holder": "The article narrator",
+        "mood": "Asserted definition",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "is a kind of logical argument that applies deductive reasoning to arrive at a conclusion based on two propositions"
+        }
+      },
+      "match": false
+    },
+    "surviving_relations": [
+      "Premises provide the basis for a conclusion.",
+      "The inference is characterised as deductive."
+    ],
+    "lost_relations": [
+      "The conclusion must differ from the premises.",
+      "The broad definition and the narrower syllogistic have different extensions.",
+      "The source hedges its reconstruction of the definition's requirements."
+    ],
+    "alternatives": [
+      "The sentence may define a conventional two-premise species; the supplied window does not independently establish that convention.",
+      "If it purports to reproduce Aristotle's general definition, the two-premise restriction is not established.",
+      "Deductive reasoning is supported here as a description of necessary inference; its use alone does not demonstrate mistranslation."
+    ],
+    "correction_pathway": "Use SEPANC to distinguish the general definition and the narrower syllogistic, then source the intended modern or traditional two-premise definition explicitly.",
+    "confidence": "medium",
+    "confidence_note": "The textual differences are clear. Whether the lead deliberately defines a narrower conventional usage remains unresolved.",
+    "windows_too_narrow": "No explicit source defining the intended two-premise usage or supporting the etymological gloss is supplied.",
+    "spans": [
+      {
+        "source": "SEPANC",
+        "quote": "This definition appears to require (i) that a syllogism consists of at least two premises and a conclusion"
+      },
+      {
+        "source": "SEPANC",
+        "quote": "all syllogisms are valid arguments"
+      },
+      {
+        "source": "SEPANC",
+        "quote": "the conclusion differs from the premises"
+      },
+      {
+        "source": "SEPANC",
+        "quote": "Aristotle’s syllogistic covers only a small part of all arguments that satisfy these conditions."
+      },
+      {
+        "source": "APRMIT",
+        "quote": "something other than what is stated follows of necessity from their being so"
+      },
+      {
+        "source": "APRGR",
+        "quote": "ἕτερόν τι τῶν κειμένων ἐξ ἀνάγκης συμβαίνει"
+      }
+    ]
+  },
+  {
+    "case": "PA-1",
+    "case_type": "sentence",
+    "innocent_reading": "The paragraph's Barnes citation supplies a historical-priority formulation, while the cited Aristotle passage explicitly asserts the absence of prior provision for his inquiry and describes prolonged research. These give a substantial basis for a concise statement about Aristotle's pioneering logical investigation.",
+    "innocent_reading_fails_at": "The Barnes fragment does not identify its referent as Prior Analytics or state scientifically. The primary passage concerns this inquiry and does not itself identify Prior Analytics as the first scientific investigation of Logic.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "The available Barnes fragment calls something history's first logic; its precise referent is unavailable. Aristotle claims novelty for his inquiry, contrasts it with inherited rhetoric, and describes research, whereas the sentence identifies one named work with the first scientific investigation of Logic in history.",
+    "deltas": [
+      {
+        "sentence_says": "Aristotle's Prior Analytics",
+        "source_says": "History's first logic",
+        "kind": "scope",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "scientifically investigated",
+        "source_says": "History's first logic has also been the most influential...",
+        "kind": "qualifier added",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "the first time in history when Logic is scientifically investigated",
+        "source_says": "Of this inquiry",
+        "kind": "scope",
+        "measure": "primary-text adequacy",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "represents the first time in history",
+        "source_says": "but were kept at work for a long time in experimental researches",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      }
+    ],
+    "omega": "A novelty claim about an inquiry, supported by a contrast between inherited products and an art, followed by an invitation to assess the inquiry's achievement.",
+    "attribute": "Historical priority assigned to Prior Analytics.",
+    "attributization": "partial",
+    "attributization_reason": "Relative to the primary narrative, the sentence foregrounds a work's priority while dropping the methodological contrast. Barnes's supplied fragment is already a priority characterization, so no further act-to-attribute transformation can be established relative to that fragment alone.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The next sentence preserves Aristotle's denial as his own statement, but the target sentence asserts a more specific historical conclusion without identifying the bridge from that inquiry to Prior Analytics.",
+      "revision_required": "Inspect Barnes's full passage before affirming the work-specific and scientific-priority formulation. Keep Aristotle's self-report distinguishable from a modern historical conclusion."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Barnes for the historical characterization; Aristotle for the claim about his own inquiry",
+        "mood": "Asserted in both supplied passages, but with different and incompletely identified referents",
+        "span": {
+          "source": "BARNES",
+          "quote": "History's first logic has also been the most influential..."
+        }
+      },
+      "sentence": {
+        "holder": "The article narrator",
+        "mood": "Unqualified historical assertion about Prior Analytics",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "Aristotle's Prior Analytics represents the first time in history when Logic is scientifically investigated."
+        }
+      },
+      "match": "unresolved"
+    },
+    "surviving_relations": [
+      "Aristotle is associated with a claim of logical priority.",
+      "The surrounding paragraph connects the historical characterization to Aristotle's own novelty statement."
+    ],
+    "lost_relations": [
+      "The primary claim's referent is this inquiry.",
+      "Earlier teachers supplied products rather than an art.",
+      "The method was developed through prolonged research.",
+      "The audience is invited to judge adequacy separately from the novelty claim."
+    ],
+    "alternatives": [
+      "Barnes's full page may explicitly identify Prior Analytics and scientific investigation; the excerpt cannot settle this.",
+      "Scientifically may be an ordinary description of organised inquiry rather than a modern methodological criterion.",
+      "The primary passage may support a broad account of Aristotle's innovation without independently establishing priority for this particular book."
+    ],
+    "correction_pathway": "Read the cited Barnes page and identify the scope of its historical claim. Use an explicit secondary source for priority assigned specifically to Prior Analytics.",
+    "confidence": "medium",
+    "confidence_note": "The evidentiary gap is clear, but the unavailable cited page may supply the missing support.",
+    "windows_too_narrow": "Barnes's surrounding discussion is missing, including the referent of first logic and any explanation of scientific investigation.",
+    "spans": [
+      {
+        "source": "BARNES",
+        "quote": "History's first logic has also been the most influential..."
+      },
+      {
+        "source": "MIT",
+        "quote": "Of this inquiry, on the other hand, it was not the case that part of the work had been thoroughly done before, while part had not."
+      },
+      {
+        "source": "MIT",
+        "quote": "not the art but its products"
+      },
+      {
+        "source": "MIT",
+        "quote": "but were kept at work for a long time in experimental researches"
+      },
+      {
+        "source": "MIT",
+        "quote": "If, then, it seems to you after inspection"
+      },
+      {
+        "source": "SE34GR",
+        "quote": "Ταύτης δὲ τῆς πραγματείας"
+      }
+    ]
+  },
+  {
+    "case": "NE-1",
+    "case_type": "sentence",
+    "innocent_reading": "Grant explicitly describes virtuous action as a balance between extremes. The supplied primary Greek and translation also state that virtue is a mean between excess and defect, so the target sentence is a defensible selective summary.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "Aristotle describes virtue as a state concerned with choice, finding and choosing a mean relative to us as determined by reason and practical wisdom. The sentence preserves the mean/excess/deficiency relation while leaving those determinations unstated.",
+    "deltas": [
+      {
+        "sentence_says": "at a mean",
+        "source_says": "the mean relative to us",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": null
+      },
+      {
+        "sentence_says": "are found at a mean",
+        "source_says": "virtue both finds and chooses that which is intermediate",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": null
+      },
+      {
+        "sentence_says": "between deficiency and excess",
+        "source_says": "a balance between extremes",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "at a mean",
+        "source_says": "with regard to what is best and right an extreme",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": null
+      }
+    ],
+    "omega": "Defining virtue through choice of a contextually determined mean, while distinguishing that mean from excellence considered as an extreme.",
+    "attribute": "Virtues are characterised by their relation to a mean.",
+    "attributization": "partial",
+    "attributization_reason": "The source itself characterises virtue as a mean, so the characterization is not invented. Its active finding and choosing, and the principles determining the mean, become a largely positional description.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The central relation survives and the surrounding paragraph retains habituation and deliberate choice. The sentence does not display relativity to us, practical determination, or the distinction between a mean in definition and an extreme in excellence.",
+      "revision_required": "No correction of the stated core claim is established. Adding relative to us and determination by practical reason would prevent an arithmetic-midpoint reading."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Aristotle, directly in the primary passage and as reported by Grant",
+        "mood": "Asserted",
+        "span": {
+          "source": "NEMIT",
+          "quote": "Virtue, then, is a state of character concerned with choice, lying in a mean"
+        }
+      },
+      "sentence": {
+        "holder": "Aristotle, explicitly identified as the holder by the article",
+        "mood": "Reported assertion",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "Aristotle says moral virtues are found at a mean (mesótēs) between deficiency and excess."
+        }
+      },
+      "match": true
+    },
+    "surviving_relations": [
+      "Virtue is related to a mean between excess and deficiency.",
+      "The surrounding paragraph relates virtue to habituation and deliberate choice."
+    ],
+    "lost_relations": [
+      "The mean is relative to us and determined by rational judgment.",
+      "Virtue finds and chooses the intermediate.",
+      "Virtue is an extreme with respect to excellence."
+    ],
+    "alternatives": [
+      "Read as a brief statement of the central doctrine, the sentence is supported.",
+      "Read as asserting an arithmetic midpoint, it exceeds the wording and conflicts with the supplied determination relative to us.",
+      "The exception for inherently bad actions does not refute a sentence about moral virtues; the sentence does not say every action has a virtuous mean."
+    ],
+    "correction_pathway": "Preserve the supported summary and, if expanding it, add the source's conditions on how the mean is determined. Establish the primary passages' article location before assigning them a lambda value.",
+    "confidence": "high",
+    "confidence_note": "The core claim is directly supported. Missing qualifications matter to explanatory adequacy but do not negate the claim as written.",
+    "windows_too_narrow": "The target sentence does not occur in the paragraph supplied as its paragraph, so its exact immediate context is uncertain. The article's citation relationship to the supplied primary passages is also unspecified.",
+    "spans": [
+      {
+        "source": "GRANT",
+        "quote": "virtuous action consists in a balance between extremes"
+      },
+      {
+        "source": "NEMIT",
+        "quote": "the mean relative to us"
+      },
+      {
+        "source": "NEMIT",
+        "quote": "virtue both finds and chooses that which is intermediate"
+      },
+      {
+        "source": "NEMIT",
+        "quote": "with regard to what is best and right an extreme"
+      },
+      {
+        "source": "NEMIT",
+        "quote": "But not every action nor every passion admits of a mean"
+      },
+      {
+        "source": "NEGR",
+        "quote": "ἐν μεσότητι οὖσα τῇ πρὸς ἡμᾶς"
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "people characteristically choose such actions deliberately"
+      }
+    ]
+  },
+  {
+    "case": "CA-1",
+    "case_type": "sentence",
+    "innocent_reading": "The primary passage supplies ten alternatives and explains what uncompounded expressions signify. The sentence may be a compressed ontological description of the things signified, while its next sentence restores the restriction to what can be expressed without composition.",
+    "innocent_reading_fails_at": "The supplied primary passage does not directly assert that every object of human apprehension falls under a category. Moving from what uncompounded expressions signify to all apprehensible objects requires an interpretive bridge not supplied here.",
+    "support": ["partially supported", "interpretation beyond descriptive paraphrase", "unresolved"],
+    "support_source": ["none"],
+    "paraphrase": "The primary passage enumerates ten kinds of signification for uncompounded expressions and distinguishes such expressions from truth-bearing combinations. The sentence describes a classification of every apprehensible object, leaving the expression/signification restriction to the next sentence.",
+    "deltas": [
+      {
+        "sentence_says": "every object of human apprehension",
+        "source_says": "Expressions which are in no way composite",
+        "kind": "scope",
+        "measure": "primary-text adequacy",
+        "lambda": null
+      },
+      {
+        "sentence_says": "places every object",
+        "source_says": "signify",
+        "kind": "term changed",
+        "measure": "primary-text adequacy",
+        "lambda": null
+      },
+      {
+        "sentence_says": "under one of ten categories",
+        "source_says": "substance, quantity, quality, relation, place, time, position, state, action, or affection",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": null
+      },
+      {
+        "sentence_says": "every object of human apprehension",
+        "source_says": "everything that can be expressed without composition or structure",
+        "kind": "scope",
+        "measure": "operative retention",
+        "lambda": 1
+      }
+    ],
+    "omega": "Enumerating kinds of signification for uncompounded expressions and distinguishing them from combinations that affirm or deny.",
+    "attribute": "An exhaustive classification of apprehensible objects.",
+    "attributization": "partial",
+    "attributization_reason": "A classificatory act remains explicit, but its input changes from uncompounded expressions to apprehensible objects. The chief issue is the changed domain, not disappearance of classification itself.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The next sentence supplies a non-composition restriction that can qualify the opening. The opening itself does not preserve the distinction between expressions, their signification, and truth-bearing combinations.",
+      "revision_required": "State the classification in terms of uncompounded expressions and what they signify, or cite a secondary account explaining and defending the object-based interpretation."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Aristotle speaking in his own explanatory voice",
+        "mood": "Asserted classification of uncompounded expressions",
+        "span": {
+          "source": "CATMIT",
+          "quote": "Expressions which are in no way composite signify substance, quantity, quality, relation, place, time, position, state, action, or affection."
+        }
+      },
+      "sentence": {
+        "holder": "The article narrator characterising the work",
+        "mood": "Asserted exhaustive object classification",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "The Categories places every object of human apprehension under one of ten categories"
+        }
+      },
+      "match": "unresolved"
+    },
+    "surviving_relations": [
+      "The work supplies a tenfold classification.",
+      "The next sentence retains a restriction concerning expression without composition."
+    ],
+    "lost_relations": [
+      "The initial domain is uncompounded expressions.",
+      "The passage concerns what those expressions signify.",
+      "Combination produces affirmation or denial."
+    ],
+    "alternatives": [
+      "An ontological reading may justify describing the classification through the objects signified; the supplied window does not establish that reading.",
+      "Read with the next sentence, the opening may intend a restricted classification rather than an unrestricted claim about all apprehension.",
+      "The passage does not by itself prove that an object-based reading is false."
+    ],
+    "correction_pathway": "Supply article-internal secondary support for the opening's domain and the medieval terminology. Otherwise use a closer description of the primary passage and retain the expression/combination distinction.",
+    "confidence": "medium",
+    "confidence_note": "The domain shift is textual; its philosophical legitimacy remains unresolved without the interpretive bridge.",
+    "windows_too_narrow": "No article-cited source is supplied for the object-based formulation or praedicamenta. The supplied primary text's location relative to the article's citations is unspecified.",
+    "spans": [
+      {
+        "source": "CATMIT",
+        "quote": "Expressions which are in no way composite signify substance, quantity, quality, relation, place, time, position, state, action, or affection."
+      },
+      {
+        "source": "CATMIT",
+        "quote": "it is by the combination of such terms that positive or negative statements arise"
+      },
+      {
+        "source": "CATGR",
+        "quote": "Τῶν κατὰ μηδεμίαν συμπλοκὴν λεγομένων"
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "everything that can be expressed without composition or structure"
+      }
+    ]
+  },
+  {
+    "case": "AR-1",
+    "case_type": "sentence",
+    "innocent_reading": "SEPLOGIC, cited elsewhere, supports an exceptionally early and influential logical achievement. The sentence also has three named citations at its locus that could support its more specific historical claims, although their contents are unavailable.",
+    "innocent_reading_fails_at": "SEPLOGIC's earliest formal study that we have does not by itself establish absolute founding of term logic. The supplied materials do not substantiate the zoological clause or the causal claim about benefits through contributions to scientific method; the unavailable citations may do so.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "SEPLOGIC identifies Aristotle's logical works as the earliest surviving formal study of logic and describes their developed theory and influence. The sentence supplies a founder designation for term logic and adds zoological and scientific-method claims not established by the supplied extracts.",
+    "deltas": [
+      {
+        "sentence_says": "the founder of term logic",
+        "source_says": "the earliest formal study of logic that we have",
+        "kind": "scope",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "term logic",
+        "source_says": "logic",
+        "kind": "term changed",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "pioneered the study of zoology",
+        "source_says": null,
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": null
+      },
+      {
+        "sentence_says": "benefited future scientists and philosophers through his contributions to the scientific method",
+        "source_says": null,
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": null
+      }
+    ],
+    "omega": "The supplied secondary source assesses the antiquity, development, and influence of Aristotle's logical theory; the primary passage separately asserts novelty and invites judgment of methodological adequacy.",
+    "attribute": "Founder and pioneer designations, together with a claim of beneficial influence.",
+    "attributization": "no",
+    "attributization_reason": "Attributes are present, but the unavailable cited sources prevent establishing that their operations were converted into these attributes. The supplied secondary excerpt already offers a historical assessment rather than a particular logical procedure.",
+    "retained_authority": {
+      "value": "unknown",
+      "evidence": "The primary novelty claim, its audience-directed assessment, and the secondary historical assessment are distinct. The materials do not establish that the sentence derives its three clauses from those particular operations.",
+      "revision_required": "Inspect the sentence's actual citations. Preserve any surviving-evidence restriction if SEPLOGIC is used to support a priority claim, and identify evidence for zoology and scientific-method influence separately."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Smith for the supplied historical assessment; holders of the sentence's cited claims are unavailable",
+        "mood": "Asserted but restricted to the earliest formal study that survives in the supplied secondary excerpt",
+        "span": {
+          "source": "SEPLOGIC",
+          "quote": "Aristotle’s logical works contain the earliest formal study of logic that we have."
+        }
+      },
+      "sentence": {
+        "holder": "The article narrator",
+        "mood": "Asserted historical and causal claims",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "Aristotle was the founder of term logic, pioneered the study of zoology, and benefited future scientists and philosophers through his contributions to the scientific method."
+        }
+      },
+      "match": "unresolved"
+    },
+    "surviving_relations": [
+      "Aristotle is associated with a pioneering logical achievement.",
+      "The sentence connects his work with later intellectual influence."
+    ],
+    "lost_relations": [
+      "The supplied historical-priority formulation is explicitly limited by surviving evidence."
+    ],
+    "alternatives": [
+      "The unavailable citations may explicitly support all three clauses.",
+      "Founder of term logic may be a defensible conventional historical designation even though the supplied excerpt does not establish it.",
+      "The primary passage's conditional invitation concerns adequacy of the method; it must not be used to turn its separate novelty assertion into a merely conditional claim."
+    ],
+    "correction_pathway": "Retrieve the cited Britannica, Durant, and Kukkonen passages before deciding the compound sentence. Evaluate its clauses separately.",
+    "confidence": "medium",
+    "confidence_note": "The limits of the supplied support are clear; a verdict against the complete cited sentence would be premature.",
+    "windows_too_narrow": "All three sources cited at the sentence are unavailable. The supplied secondary extract does not discuss zoology or specify contributions to scientific method.",
+    "spans": [
+      {
+        "source": "SEPLOGIC",
+        "quote": "Aristotle’s logical works contain the earliest formal study of logic that we have."
+      },
+      {
+        "source": "SEPLOGIC",
+        "quote": "a highly developed logical theory"
+      },
+      {
+        "source": "SEPLOGIC",
+        "quote": "one that was able to command immense respect for many centuries"
+      },
+      {
+        "source": "MIT",
+        "quote": "If, then, it seems to you after inspection"
+      },
+      {
+        "source": "MIT",
+        "quote": "on the subject of reasoning we had nothing else of an earlier date to speak of at all"
+      }
+    ]
+  },
+  {
+    "case": "ARE-1",
+    "case_type": "sentence",
+    "innocent_reading": "LSJ directly supplies goodness or excellence of any kind and includes multiple uses, including an Aristotelian association with completion. The second quoted formulation has its own citation to Collins, whose unavailable contents may support it.",
+    "innocent_reading_fails_at": "Nothing supplied defeats the broad excellence gloss. LSJ alone does not establish the exact full-realisation/function formulation or its especially ranking across the concept; that portion remains unresolved pending Collins.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "LSJ gives a broad excellence sense and records differentiated historical uses, including moral virtue and an Aristotelian example involving completion. The article combines a broad gloss with a specially emphasised potential/function formulation from another, unavailable dictionary.",
+    "deltas": [
+      {
+        "sentence_says": "excellence",
+        "source_says": "goodness, excellence, of any kind",
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "especially",
+        "source_says": null,
+        "kind": "qualifier added",
+        "measure": "source fidelity",
+        "lambda": null
+      },
+      {
+        "sentence_says": "full realization of potential or inherent function",
+        "source_says": null,
+        "kind": "none",
+        "measure": "source fidelity",
+        "lambda": null
+      },
+      {
+        "sentence_says": "a concept in ancient Greek thought",
+        "source_says": "in Hom. esp. of manly qualities",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      }
+    ],
+    "omega": "Lexicographical differentiation of senses and historical uses through cited examples.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "A lexical summary is derived from a lexical account. The shortening of its historical distinctions does not establish conversion of a reported philosophical operation into an attribute.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The broad excellence sense survives and the next sentence preserves moral virtue. Historical differentiation and the evidentiary role of examples are largely absent, while the source of the emphasised formulation cannot be inspected.",
+      "revision_required": "No correction of excellence of any kind is indicated. Check Collins before affirming the exact quotation and its especially framing; distinguish a broad lexical sense from a particular philosophical elaboration if necessary."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "LSJ's lexicographers for the broad lexical sense; Collins's formulation is unavailable",
+        "mood": "Asserted lexical gloss with historical and contextual subdivisions",
+        "span": {
+          "source": "LSJ",
+          "quote": "goodness, excellence, of any kind"
+        }
+      },
+      "sentence": {
+        "holder": "The article narrator synthesising two cited dictionaries",
+        "mood": "Asserted general definition with an especially emphasis",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "refers to \"excellence\" of any kind—especially a person or thing's \"full realization of potential or inherent function.\""
+        }
+      },
+      "match": "unresolved"
+    },
+    "surviving_relations": [
+      "Arete is glossed broadly as excellence.",
+      "The adjacent sentence retains the moral-virtue sense."
+    ],
+    "lost_relations": [
+      "The lexicon differentiates historical contexts and uses.",
+      "The completion-related example is located in Aristotle rather than asserted as the sole transhistorical meaning."
+    ],
+    "alternatives": [
+      "Collins may directly support both the exact formulation and its prominence.",
+      "Especially may be editorial synthesis rather than part of the dictionary's wording.",
+      "The Aristotelian completion example is compatible with the second formulation but does not independently establish its full wording or general priority."
+    ],
+    "correction_pathway": "Inspect Collins and its context, then determine whether the sentence accurately combines the dictionaries or conflates a general gloss with a particular account.",
+    "confidence": "medium",
+    "confidence_note": "High for the broad LSJ gloss; unresolved for the unavailable dictionary and the synthesis.",
+    "windows_too_narrow": "Collins is not supplied, and the primary contexts of LSJ's examples are not supplied for independent adequacy testing.",
+    "spans": [
+      {
+        "source": "LSJ",
+        "quote": "goodness, excellence, of any kind"
+      },
+      {
+        "source": "LSJ",
+        "quote": "in Hom. esp. of manly qualities"
+      },
+      {
+        "source": "LSJ",
+        "quote": "ἡ ἀ. τελείωσίς τις"
+      },
+      {
+        "source": "LSJ",
+        "quote": "esp. moral virtue"
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "The term may also refer to excellence in \"moral virtue.\""
+      }
+    ]
+  },
+  {
+    "case": "OR-1",
+    "case_type": "sentence",
+    "innocent_reading": "SEPLOGIC, cited elsewhere, identifies the Organon as a grouping of Aristotle's logical works and lists six titles. Instrument supports the central title gloss, and the sentence does not explicitly claim that Aristotle assembled or named the collection.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported", "unresolved"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "Ancient commentators grouped six Aristotelian treatises as the Organon and regarded them as his logical works; SEPLOGIC also explains the title as taking a position in a later controversy. The sentence gives the resulting collection without that history or philosophical implication.",
+    "deltas": [
+      {
+        "sentence_says": "the standard collection",
+        "source_says": "The ancient commentators grouped together several of Aristotle’s treatises",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "works on logical analysis and dialectic",
+        "source_says": "his logical works",
+        "kind": "term changed",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "meaning \"instrument, tool, organ\"",
+        "source_says": "Organon (“Instrument”)",
+        "kind": "term changed",
+        "measure": "source fidelity",
+        "lambda": 4
+      },
+      {
+        "sentence_says": "The Organon",
+        "source_says": "calling the logical works “The Instrument” is a way of taking sides on this point",
+        "kind": "omission",
+        "measure": "operative retention",
+        "lambda": 4
+      }
+    ],
+    "omega": "A later grouping of treatises and a title expressing a position about logic's relation to philosophy.",
+    "attribute": "Status as the standard collection of Aristotle's logical works.",
+    "attributization": "partial",
+    "attributization_reason": "The commentators' grouping becomes a present description of the resulting collection. The sentence remains compatible with that history and does not attribute compilation to Aristotle, but the agents and philosophical stakes of the grouping disappear.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The collection, its six-work extent, and its logical domain survive. The historical agents and the title's part/tool controversy do not appear.",
+      "revision_required": "No correction of the central collection claim is established. A fuller description could identify the commentators' grouping and explain the title's later significance."
+    },
+    "holder_and_mood": {
+      "source": {
+        "holder": "Ancient commentators as reported by Smith",
+        "mood": "Reported classification",
+        "span": {
+          "source": "SEPLOGIC",
+          "quote": "The ancient commentators grouped together several of Aristotle’s treatises under the title Organon (“Instrument”) and regarded them as comprising his logical works"
+        }
+      },
+      "sentence": {
+        "holder": "The article narrator",
+        "mood": "Asserted present classification",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "is the standard collection of Aristotle's six works on logical analysis and dialectic"
+        }
+      },
+      "match": false
+    },
+    "surviving_relations": [
+      "The Organon groups six works attributed to Aristotle.",
+      "The works concern the logical domain.",
+      "The title is connected with instrument."
+    ],
+    "lost_relations": [
+      "Ancient commentators performed the grouping.",
+      "The title belongs to a later philosophical controversy.",
+      "Calling logic an instrument takes a position on its relation to philosophy."
+    ],
+    "alternatives": [
+      "The sentence describes the established result of a historical grouping without denying that history.",
+      "Aristotle's modifies the works' authorship, not necessarily the collection's compilation.",
+      "A change from attributed historical classification to present conventional classification need not make the proposition false."
+    ],
+    "correction_pathway": "Retain the supported collection description. Add the historical agents and title controversy if explaining the collection's construction, and use a lexical source to verify the full three-part title gloss.",
+    "confidence": "high",
+    "confidence_note": "High for the grouping and six listed works; the full lexical gloss and the exact logical analysis/dialectic wording are not independently established by this excerpt.",
+    "windows_too_narrow": "The supplied excerpt gives Instrument but no independent lexical evidence for every gloss, and does not separately explain the dialectic wording.",
+    "spans": [
+      {
+        "source": "SEPLOGIC",
+        "quote": "The ancient commentators grouped together several of Aristotle’s treatises under the title Organon (“Instrument”)"
+      },
+      {
+        "source": "SEPLOGIC",
+        "quote": "Categories On Interpretation Prior Analytics Posterior Analytics Topics On Sophistical Refutations"
+      },
+      {
+        "source": "SEPLOGIC",
+        "quote": "the title Organon reflects a much later controversy about whether logic is a part of philosophy"
+      },
+      {
+        "source": "SEPLOGIC",
+        "quote": "calling the logical works “The Instrument” is a way of taking sides on this point"
+      }
+    ]
+  },
+  {
+    "case": "AV-1",
+    "case_type": "placement",
+    "innocent_reading": "The lead includes a methodological description near its end and connects that method to medical works, specifically The Canon of Medicine. Its earlier recognition and publication inventory therefore do not exhaust its content.",
+    "innocent_reading_fails_at": null,
+    "support": ["unresolved"],
+    "support_source": ["none"],
+    "paraphrase": "After identity, recognition, influence, affiliations, languages, and publication counts, the lead names empirical observation, philosophical reasoning, and logical analysis as a combined method. The next sentence specifies its application to medical works and The Canon of Medicine.",
+    "deltas": [],
+    "omega": "Combining empirical observation, philosophical reasoning, and logical analysis in medical work.",
+    "attribute": "Prestige designations, intellectual affiliation, and publication counts precede the method.",
+    "attributization": "no",
+    "attributization_reason": "A method is explicitly stated in the lead. No source comparison is available to establish an act-to-attribute transformation elsewhere in the passage.",
+    "retained_authority": {
+      "value": "unknown",
+      "evidence": "Method components and an application domain visibly survive in the lead. Whether they faithfully retain the underlying sources' qualifications or revision-bearing relations cannot be assessed.",
+      "revision_required": "No placement correction is established. The methodological claim and its uniqueness language require source inspection before a fidelity judgment."
+    },
+    "holder_and_mood": null,
+    "surviving_relations": [
+      "Avicenna combines three named methodological components.",
+      "The method is connected with medical works.",
+      "The Canon of Medicine is named as a specific application."
+    ],
+    "lost_relations": [],
+    "alternatives": [
+      "The method description is broad and does not demonstrate a distinctive procedure in detail, but it satisfies the stated method-with-object criterion when read with the following sentence.",
+      "The sentence announcing a unique methodological approach alone does not supply that operation; the following two sentences provide its components and object.",
+      "The lead's operation appears late rather than beside its opening recognition claims, which matters to access cost without establishing absence."
+    ],
+    "correction_pathway": "Record the method's late-lead placement separately from source fidelity and separately from whether the method is historically distinctive.",
+    "confidence": "high",
+    "confidence_note": "High for presence and placement of operational content only; no factual verification of the lead is claimed.",
+    "windows_too_narrow": "No underlying sources are supplied. Actual distinctiveness, accuracy, and source-relative retained authority remain unresolved.",
+    "spans": [
+      {
+        "source": "ARTICLE",
+        "quote": "He combines a unique blend of empirical observation, philosophical reasoning, and logical analysis, in order to conduct his analysis and reach his conclusions."
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "This is especially the case in his medical works, namely The Canon of Medicine."
+      }
+    ]
+  },
+  {
+    "case": "SR-W2",
+    "holder_and_mood": {
+      "source": {
+        "holder": "Aristotle speaking in his own voice about the inquiry",
+        "mood": "Asserted novelty claim; the later conditional appeal concerns the audience's judgment of adequacy, not whether the novelty claim is asserted",
+        "span": {
+          "source": "SE34GR",
+          "quote": "Ταύτης δὲ τῆς πραγματείας οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν παντελῶς ὑπῆρχεν."
+        }
+      },
+      "sentence": {
+        "holder": "Aristotle, explicitly identified as the claim's holder",
+        "mood": "Reported assertion of priority",
+        "span": {
+          "source": "ARTICLE",
+          "quote": "According to Aristotle, this is the first work to treat the subject of deductive reasoning in ancient Greece (Soph. Ref., 34, 183b34 ff.)."
+        }
+      },
+      "match": true
+    },
+    "spans": [
+      {
+        "source": "SE34GR",
+        "quote": "Ταύτης δὲ τῆς πραγματείας οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν παντελῶς ὑπῆρχεν."
+      },
+      {
+        "source": "MIT",
+        "quote": "on the subject of reasoning we had nothing else of an earlier date to speak of at all"
+      },
+      {
+        "source": "MIT",
+        "quote": "If, then, it seems to you after inspection"
+      },
+      {
+        "source": "MIT",
+        "quote": "our investigation is in a satisfactory condition compared with the other inquiries that have been developed by tradition"
+      },
+      {
+        "source": "ARTICLE",
+        "quote": "According to Aristotle, this is the first work to treat the subject of deductive reasoning in ancient Greece (Soph. Ref., 34, 183b34 ff.)."
+      }
+    ]
+  }
+]

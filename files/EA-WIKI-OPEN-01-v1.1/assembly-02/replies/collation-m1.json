@@ -1,0 +1,2472 @@
+{
+ "gemini": {
+  "cases": {
+   "SR-W1": {
+    "case": "SR-W1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence provides a standard lead summary of Aristotle's Sophistical Refutations, identifying its Greek and Latin titles, placement in the Organon, and the primary content (twelve or thirteen fallacies). The count of 12 or 13 is well-supported by Krabbe, who lists 6 fallacies depending on language in Chapter 4 and 7 not depending on language in Chapter 5 (6 + 7 = 13), while noting that examples for petitio principii are omitted in Chapter 5, leading to variations in total count or identification.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "Sophistical Refutations is an Aristotelian logical treatise within the Organon that details 13 fallacies (6 linguistic, 7 non-linguistic).",
+    "deltas": [
+     {
+      "sentence_says": "twelve or thirteen fallacies",
+      "source_says": "six kinds... that belong to this group... seven kinds that do not depend on the way language is used",
+      "kind": "hedge",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence states standard bibliographical and descriptive classification facts.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "[KRABBE]: 'there are exactly six kinds of sophistical refutations that belong to this group... There are seven kinds that do not depend on the way language is used... Examples of these (except petitio principii) are given in Chapter 5.'",
+     "revision_required": "None required."
+    },
+    "surviving_relations": [
+     "Categorization of fallacies into two main structural groupings totaling thirteen distinct types."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "Add a inline citation to Krabbe or SEP_AristotleLogic at the end of the sentence.",
+    "confidence": "high",
+    "confidence_note": "Uncited lead sentence fully supported by Krabbe source provided in the case materials.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "KRABBE",
+      "quote": "there are exactly six kinds of sophistical refutations that belong to this group: equivocation, amphiboly, combination of words, division of words, accent, and form of expression"
+     },
+     {
+      "source": "KRABBE",
+      "quote": "There are seven kinds that do not depend on the way language is used: accident, secundum quid (omission or addition of qualifications), ignoratio elenchi (ignorance of refutation), petitio principii (begging the question), consequence, non causa (wrong ground), and making one question out of two."
+     }
+    ]
+   },
+   "SR-W2": {
+    "case": "SR-W2",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence captures Aristotle's explicit claim in SE 34 (183b34 ff.) that while prior work existed for subjects like rhetoric, nothing existed prior for syllogizing/deductive reasoning (περὶ δὲ τοῦ συλλόγισασθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν / 'whereas on the subject of reasoning we had nothing else of an earlier date to speak of at all').",
+    "innocent_reading_fails_at": "The sentence characterizes SE 34 as claiming this is 'the first work to treat the subject of deductive reasoning in ancient Greece', whereas Aristotle claims that *prior to his investigation* no art or systematic treatment of syllogizing existed at all ('nothing existed at all' / 'about syllogizing we had absolutely nothing else earlier to say'), framing it as a historical priority claim for his entire logical project/method rather than specifically limiting the claim to the single text *Sophistical Refutations* in isolation.",
+    "support": [
+     "partially supported",
+     "interpretation beyond descriptive paraphrase"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "In SE 34, Aristotle states that while previous thinkers developed rhetoric bit by bit, no prior systematic art or theory of deductive reasoning (syllogizing) existed before his own investigation.",
+    "deltas": [
+     {
+      "sentence_says": "this is the first work to treat the subject of deductive reasoning in ancient Greece",
+      "source_says": "about syllogizing we had absolutely nothing else earlier to say, but were long at work seeking by practice",
+      "kind": "equivalence asserted",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence directly attributes the assertion to Aristotle ('According to Aristotle...').",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "[SE34GR]: 'περὶ δὲ τοῦ συλλόγισασθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν' / [MIT]: 'whereas on the subject of reasoning we had nothing else of an earlier date to speak of at all'",
+     "revision_required": "Clarify that Aristotle claims no systematic study or art of reasoning/syllogizing existed prior to his logical treatises, rather than asserting *Sophistical Refutations* alone as a standalone work was the first."
+    },
+    "surviving_relations": [
+     "Aristotle's explicit assertion of historical priority and originality in establishing the study of deduction/reasoning."
+    ],
+    "lost_relations": [
+     "The contrast between rhetoric (which had a long tradition of incremental additions) and dialectic/deduction (where no prior art existed)."
+    ],
+    "alternatives": [],
+    "correction_pathway": "Rephrase to reflect that Aristotle claims his logical inquiry was the first systematic treatment of deductive reasoning/syllogizing.",
+    "confidence": "high",
+    "confidence_note": "Evaluated using both Pickard-Cambridge translation and SE34GR Greek text provided.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "SE34GR",
+      "quote": "περὶ δὲ τοῦ συλλόγισασθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν, ἀλλ᾽ ἢ τριβῇ ζητοῦντες πολὺν χρόνον ἐπονοῦμεν."
+     },
+     {
+      "source": "MIT",
+      "quote": "whereas on the subject of reasoning we had nothing else of an earlier date to speak of at all, but were kept at work for a long time in experimental researches."
+     }
+    ]
+   },
+   "SR-W3": {
+    "case": "SR-W3",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence presents a faithful descriptive overview of the core aim of the work as described in SE 34 and SE 1: establishing sound/genuine reasoning (dialectic/peirastic) to defend arguments and expose deceptive/apparent arguments produced by sophistry.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "Aristotle aims to formulate methods for valid dialectical argumentation and to counter the deceptive, apparent wisdom of sophistical refutations.",
+    "deltas": [
+     {
+      "sentence_says": "pattern of sound and genuine reasoning in opposition to the deceptive or misleading \"art of sophistry\"",
+      "source_says": "for the art of sophistry is a certain appearance of wisdom without the reality",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Describes the functional objective of the text.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "[MIT]: 'for the art of sophistry is a certain appearance of wisdom without the reality.'",
+     "revision_required": "None required."
+    },
+    "surviving_relations": [
+     "The functional opposition between genuine dialectical reasoning and deceptive sophistical argumentation."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "Add citation to SE 1 / SE 34 or Krabbe.",
+    "confidence": "high",
+    "confidence_note": "Sentence faithfully captures the purpose stated in MIT and Krabbe source selections.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "MIT",
+      "quote": "for the art of sophistry is a certain appearance of wisdom without the reality."
+     }
+    ]
+   },
+   "SR-W4-6": {
+    "case": "SR-W4-6",
+    "case_type": "sentence group",
+    "innocent_reading": "The three sentences reproduce verbatim the structural breakdown provided by Krabbe (2012), dividing the 34 chapters into Questioner tactics (3–8, 12–15), Answerer tactics (16–32), introduction (1–2), interlude (9–11), and conclusion (33–34).",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "On Sophistical Refutations comprises 34 chapters divided into two main operational sections—tactics for the Questioner (ch. 3–8, 12–15) and Answerer (ch. 16–32)—along with an introduction (1–2), interlude (9–11), and conclusion (33–34).",
+    "deltas": [
+     {
+      "sentence_says": "On Sophistical Refutations consists of 34 chapters. The book naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34).",
+      "source_says": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34).",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Structural summary of the textual division.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "[KRABBE]: 'The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34).'",
+     "revision_required": "None required."
+    },
+    "surviving_relations": [
+     "Exact numerical division and chapter assignments across all structural components."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None needed; text directly matches Krabbe.",
+    "confidence": "high",
+    "confidence_note": "Direct textual match with cited secondary source Krabbe.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "KRABBE",
+      "quote": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34)."
+     }
+    ]
+   },
+   "SR-W7-8": {
+    "case": "SR-W7-8",
+    "case_type": "heading with lists",
+    "innocent_reading": "The introductory line and two lists outline the 13 fallacies described by Aristotle in Chapters 4 and 5, split into linguistic (in dictionem / lexis) and non-linguistic (extra dictionem).",
+    "innocent_reading_fails_at": "The introductory line explicitly equates Chapter 4 fallacies with 'formal fallacies' and Chapter 5 fallacies with 'informal fallacies'. Krabbe defines Chapter 4 fallacies as those depending on the 'use of language' (lexis) and Chapter 5 as those that do not, without introducing modern notions of 'formal' vs 'informal' fallacies into Aristotle's text.",
+    "support": [
+     "partially supported",
+     "interpretation beyond descriptive paraphrase"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "In Chapters 4 and 5, Aristotle identifies fallacies dependent on language (lexis) and those independent of language (extra dictionem).",
+    "deltas": [
+     {
+      "sentence_says": "(formal fallacies) and 5 (informal fallacies)",
+      "source_says": "those that depend on the ‘‘use of language’’ (lexis) and those that do not",
+      "kind": "equivalence asserted",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Presents a taxonomy of fallacies.",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "[KRABBE]: 'In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of language’’ (lexis) and those that do not.'",
+     "revision_required": "Remove the modern terms '(formal fallacies)' and '(informal fallacies)' or attribute them as modern standard equivalents, since Krabbe and Aristotle use 'dependent on language' and 'independent of language'."
+    },
+    "surviving_relations": [
+     "The 13 specific fallacies enumerated match the listing in Krabbe."
+    ],
+    "lost_relations": [
+     "Aristotle's precise division based on 'use of language' (lexis) versus non-linguistic dependencies."
+    ],
+    "alternatives": [],
+    "correction_pathway": "Replace 'formal fallacies' / 'informal fallacies' with 'fallacies depending on language (lexis)' and 'fallacies independent of language'.",
+    "confidence": "high",
+    "confidence_note": "Krabbe confirms the exact 6 and 7 items but uses lexis/non-lexis terminology.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "KRABBE",
+      "quote": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of language’’ (lexis) and those that do not."
+     }
+    ]
+   },
+   "TH-1": {
+    "case": "TH-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence summarizes the view expressed in the 1911 Encyclopædia Britannica (Wheeler 1911) regarding Theophrastus's overall authorship and relation to Aristotle's texts.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Theophrastus's writings likely closely resembled Aristotle's approach to identical subjects, serving to supplement specific details.",
+    "deltas": [
+     {
+      "sentence_says": "His writing probably differed little from Aristotle's treatment of the same themes, though supplementary in details.",
+      "source_says": "His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Historical descriptive claim about textual character.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "[EB1911]: 'His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details'",
+     "revision_required": "None required."
+    },
+    "surviving_relations": [
+     "Assessment of textual similarity and supplementary detail in Theophrastus relative to Aristotle."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None needed; sentence reflects EB1911 source closely.",
+    "confidence": "high",
+    "confidence_note": "Direct match with EB1911 snippet.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "EB1911",
+      "quote": "His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details"
+     }
+    ]
+   },
+   "TH-2": {
+    "case": "TH-2",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence provides a concise summary in the lead of Theophrastus's intellectual program as characterized by Ierodiakonou (2020) in the Stanford Encyclopedia of Philosophy.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "Theophrastus authored numerous works spanning all domains of philosophy to support, improve, expand, and develop the Aristotelian system.",
+    "deltas": [
+     {
+      "sentence_says": "Theophrastus wrote numerous treatises across all areas of philosophy, working to support, improve, expand, and develop the Aristotelian system.",
+      "source_says": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system.",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "General summary of intellectual program.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "[SEPTHEO]: 'He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system.'",
+     "revision_required": "None required."
+    },
+    "surviving_relations": [
+     "Complete alignment with Ierodiakonou's summary phrasing."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None needed.",
+    "confidence": "high",
+    "confidence_note": "Direct verbatim overlap with SEPTHEO source.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "SEPTHEO",
+      "quote": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system."
+     }
+    ]
+   },
+   "IW-1": {
+    "case": "IW-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence summarizes Emily Wilson's review of Carson's translation methodology in 'If Not, Winter', focusing on her adherence to word order and non-addition of ungrounded words like personal pronouns and definite articles.",
+    "innocent_reading_fails_at": "The Wikipedia sentence generalizes 'personal pronouns', whereas Wilson specifically states Carson adds no 'possessive pronouns or definite articles that are not present in the Greek'. Under primary-text adequacy and fidelity, 'possessive pronouns' was generalized to 'personal pronouns'.",
+    "support": [
+     "partially supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Carson attempts to maintain Greek word order and refrains from introducing words absent from the surviving Greek, such as possessive pronouns and definite articles.",
+    "deltas": [
+     {
+      "sentence_says": "personal pronouns",
+      "source_says": "possessive pronouns",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Descriptive summary of translation technique.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "[WILSON]: 'Carson adds no possessive pronouns or definite articles that are not present in the Greek.'",
+     "revision_required": "Change 'personal pronouns' to 'possessive pronouns' to match Wilson verbatim."
+    },
+    "surviving_relations": [
+     "Translational restraint concerning non-addition of unwritten Greek grammatical modifiers."
+    ],
+    "lost_relations": [
+     "The specific distinction between possessive pronouns and general personal pronouns in relation to selfhood/body loss."
+    ],
+    "alternatives": [],
+    "correction_pathway": "Replace 'personal pronouns' with 'possessive pronouns'.",
+    "confidence": "high",
+    "confidence_note": "Wilson explicitly specifies 'possessive pronouns'.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "WILSON",
+      "quote": "Carson adds no possessive pronouns or definite articles that are not present in the Greek."
+     }
+    ]
+   },
+   "EB-1": {
+    "case": "EB-1",
+    "case_type": "sentence",
+    "innocent_reading": "The sentence lists the specific ancient Greek figures and authors whose works are examined under erotic triangulation in Carson's Eros the Bittersweet, as documented by Ian Rae (2010).",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Carson analyzes triangulated desire across Sappho, Greek novelists (Longus, Heliodorus, Achilles Tatius, Chariton), and Plato's Phaedrus.",
+    "deltas": [
+     {
+      "sentence_says": "Carson considers how triangulations of desire appear in the writings of Sappho, ancient Greek novelists (Longus, Heliodorus, Achilles Tatius, and Chariton), and Plato (in his Phaedrus).",
+      "source_says": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation. For Carson, the erotic lyrics of Sappho...",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Summary of primary authorial scope.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "[RAE]: 'Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation.'",
+     "revision_required": "None required."
+    },
+    "surviving_relations": [
+     "Accurate enumeration of ancient authors and texts subjected to erotic triangulation analysis."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None needed.",
+    "confidence": "high",
+    "confidence_note": "Direct alignment with Rae source.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "RAE",
+      "quote": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation."
+     }
+    ]
+   },
+   "AC-1": {
+    "case": "AC-1",
+    "case_type": "placement",
+    "innocent_reading": "Evaluating the lead paragraphs of Anne Carson for stated operations of the subject (a stated method, argument, or result, with its object).",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "unresolved"
+    ],
+    "support_source": [
+     "none"
+    ],
+    "paraphrase": "No operations recorded.",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Placement case; no source material provided.",
+    "retained_authority": {
+     "value": "unknown",
+     "evidence": "No source material supplied for AC-1.",
+     "revision_required": "N/A"
+    },
+    "surviving_relations": [],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "N/A",
+    "confidence": "high",
+    "confidence_note": "Placement audit performed directly on supplied text.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "ARTICLE",
+      "quote": "Throughout her career she has taught classics, comparative literature, and creative writing."
+     }
+    ]
+   },
+   "TU-1": {
+    "case": "TU-1",
+    "case_type": "placement",
+    "innocent_reading": "Evaluating the lead paragraph of Alan Turing for stated operations of the subject (a stated method, argument, or result, with its object).",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "none"
+    ],
+    "paraphrase": "The lead states multiple operations: formalizing algorithm and computation via the Turing machine; developing techniques/bomba improvements for Enigma cryptanalysis; contributing the Turing test; developing the Turing pattern concept; designing the Automatic Computing Engine; and working on the chemical basis of morphogenesis.",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Placement case; no source material provided.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "Operations clearly stated in lead text.",
+     "revision_required": "N/A"
+    },
+    "surviving_relations": [
+     "Operations stated with specific objects across computation, cryptanalysis, AI philosophy, and morphogenesis."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "N/A",
+    "confidence": "high",
+    "confidence_note": "Placement audit performed directly on supplied text.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "ARTICLE",
+      "quote": "He formalised the concepts of algorithm and computation with the Turing machine, a model of a general-purpose computer"
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "contributed the Turing test to philosophy of artificial intelligence and the Turing pattern concept to mathematical and theoretical biology."
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "working on the chemical basis of morphogenesis and theorizing chemical oscillators independently of their experimental observation."
+     }
+    ]
+   },
+   "CU-1": {
+    "case": "CU-1",
+    "case_type": "placement",
+    "innocent_reading": "Evaluating the lead paragraph of Marie Curie for stated operations of the subject (a stated method, argument, or result, with its object).",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "none"
+    ],
+    "paraphrase": "The lead states several operations: conducting joint research on radioactivity phenomena; discovering radium and polonium; isolating radium; coining the term 'radioactivity'; directing studies on treating neoplasms with radioactive isotopes; and developing mobile radiography units.",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Placement case; no source material provided.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "Operations clearly stated in lead text.",
+     "revision_required": "N/A"
+    },
+    "surviving_relations": [
+     "Operations stated with clear scientific objects (elements, isolation methods, medical application)."
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "N/A",
+    "confidence": "high",
+    "confidence_note": "Placement audit performed directly on supplied text.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "ARTICLE",
+      "quote": "for their joint researches on the radioactivity phenomena discovered by Professor Henri Becquerel"
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "the discovery of the elements radium and polonium, by the isolation of radium and the study of the nature and compounds of this remarkable element"
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "conducted pioneering research on radioactivity—a term she coined."
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "Under Curie's direction, the world's first studies were conducted into the treatment of neoplasms by the use of radioactive isotopes."
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "she developed mobile radiography units to provide X-ray services to field hospitals."
+     }
+    ]
+   }
+  },
+  "spans": [
+   {
+    "case": "SR-W1",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "there are exactly six kinds of sophistical refutations that belong to this group: equivocation, amph"
+   },
+   {
+    "case": "SR-W1",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "There are seven kinds that do not depend on the way language is used: accident, secundum quid (omiss"
+   },
+   {
+    "case": "SR-W2",
+    "src": "SE34GR",
+    "seen": false,
+    "full": false,
+    "q": "περὶ δὲ τοῦ συλλόγισασθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν, ἀλλ᾽ ἢ τριβῇ ζητοῦντες πολὺν "
+   },
+   {
+    "case": "SR-W2",
+    "src": "MIT",
+    "seen": true,
+    "full": true,
+    "q": "whereas on the subject of reasoning we had nothing else of an earlier date to speak of at all, but w"
+   },
+   {
+    "case": "SR-W3",
+    "src": "MIT",
+    "seen": true,
+    "full": true,
+    "q": "for the art of sophistry is a certain appearance of wisdom without the reality."
+   },
+   {
+    "case": "SR-W4-6",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for"
+   },
+   {
+    "case": "SR-W7-8",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of"
+   },
+   {
+    "case": "TH-1",
+    "src": "EB1911",
+    "seen": true,
+    "full": true,
+    "q": "His writing probably differed little from the Aristotelian treatment of the same themes, though supp"
+   },
+   {
+    "case": "TH-2",
+    "src": "SEPTHEO",
+    "seen": true,
+    "full": true,
+    "q": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develo"
+   },
+   {
+    "case": "IW-1",
+    "src": "WILSON",
+    "seen": true,
+    "full": true,
+    "q": "Carson adds no possessive pronouns or definite articles that are not present in the Greek."
+   },
+   {
+    "case": "EB-1",
+    "src": "RAE",
+    "seen": true,
+    "full": true,
+    "q": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the le"
+   },
+   {
+    "case": "AC-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "Throughout her career she has taught classics, comparative literature, and creative writing."
+   },
+   {
+    "case": "TU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "He formalised the concepts of algorithm and computation with the Turing machine, a model of a genera"
+   },
+   {
+    "case": "TU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "contributed the Turing test to philosophy of artificial intelligence and the Turing pattern concept "
+   },
+   {
+    "case": "TU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "working on the chemical basis of morphogenesis and theorizing chemical oscillators independently of "
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "for their joint researches on the radioactivity phenomena discovered by Professor Henri Becquerel"
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "the discovery of the elements radium and polonium, by the isolation of radium and the study of the n"
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "conducted pioneering research on radioactivity—a term she coined."
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "Under Curie's direction, the world's first studies were conducted into the treatment of neoplasms by"
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "she developed mobile radiography units to provide X-ray services to field hospitals."
+   }
+  ]
+ },
+ "musespark": {
+  "cases": {
+   "SR-W1": {
+    "case": "SR-W1",
+    "case_type": "sentence",
+    "innocent_reading": "Strongest case: Krabbe lists exactly six language-dependent fallacies and seven non-language-dependent = thirteen total, which sentence reports as twelve or thirteen allowing for reduction thesis. SEPLOGIC says SE is a final section or appendix to the Topics, which is part of Organon, so calling SE a text in Organon is permitted paraphrase retaining substance per NORP. Greek/Latin titles are conventional and likely supported elsewhere in article.",
+    "innocent_reading_fails_at": "No window gives 'twelve' as alternative; no window gives Greek 'Σοφιστικοὶ Ἔλεγχοι' or Latin 'De Sophisticis Elenchis'; hedge 'or' not in source count",
+    "support": [
+     "partially supported",
+     "qualifier added"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "Defensible paraphrase: On Sophistical Refutations is a final section or appendix to the Topics; Aristotle divides sophistical refutations into exactly six kinds that depend on use of language and seven kinds that do not depend on the way language is used.",
+    "deltas": [
+     {
+      "sentence_says": "twelve or thirteen fallacies",
+      "source_says": "exactly six kinds of sophistical refutations that belong to this group: equivocation, amphiboly, combination of words, division of words, accent, and form of expression; these are illustrated by examples. There are seven kinds that do not depend on the way language is used: accident, secundum quid (omission or addition of qualifications), ignoratio elenchi (ignorance of refutation), petitio principii (begging the question), consequence, non causa (wrong ground), and making one question out of two",
+      "kind": "hedge",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "is a text in Aristotle's Organon",
+      "source_says": "On Sophistical Refutations is a final section, or an appendix, to the Topics",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "Sophistical Refutations (Greek Σοφιστικοὶ Ἔλεγχοι; Latin De Sophisticis Elenchis)",
+      "source_says": "",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 5
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Sentence does not restate an act as a property; it asserts classification and count",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "Krabbe act of dividing into two groups and counting exactly six and seven retained; authority to revise description via reduction to ignoratio elenchi in Ch 6 not retained in lead sentence",
+     "revision_required": "If reduction succeeds, count of irreducible types would change; sentence would need to note reducibility"
+    },
+    "surviving_relations": [
+     "division into language-dependent vs independent",
+     "exact count six and seven in source",
+     "Organon membership via Topics"
+    ],
+    "lost_relations": [
+     "list completeness proof claim",
+     "reduction thesis in Chapter 6"
+    ],
+    "alternatives": [
+     "Thirteen fallacies exactly, per Krabbe count",
+     "Twelve if petitio excluded as no example given"
+    ],
+    "correction_pathway": "Change to 'thirteen fallacies' or cite source for twelve-or-thirteen variation; remove or source Greek/Latin titles",
+    "confidence": "medium",
+    "confidence_note": "Windows sufficient for count, insufficient for titles and Organon status beyond SEPLOGIC snippet",
+    "windows_too_narrow": "No window gives Greek/Latin titles; SEPLOGIC snippet truncated on Organon list",
+    "spans": [
+     {
+      "source": "KRABBE",
+      "quote": "There are exactly six kinds of sophistical refutations that belong to this group: equivocation, amphiboly, combination of words, division of words, accent, and form of expression; these are illustrated by examples. There are seven kinds that do not depend on the way language is used: accident, secundum quid (omission or addition of qualifications), ignoratio elenchi (ignorance of refutation), petitio principii (begging the question), consequence, non causa (wrong ground), and making one question out of two."
+     },
+     {
+      "source": "SEPLOGIC",
+      "quote": "On the other hand, Aristotle treats the Prior and Posterior Analytics as one work, and On Sophistical Refutations is a final section, or an appendix, to the Topics )"
+     }
+    ]
+   },
+   "SR-W2": {
+    "case": "SR-W2",
+    "case_type": "sentence",
+    "innocent_reading": "Strongest case: SE 34 183b34 ff says 'peri de tou sullogizesthai pantelos ouden eichomen proteron allo legein' - we had nothing earlier to speak of on syllogizing; Pickard-Cambridge translates as 'on the subject of reasoning we had nothing else of an earlier date to speak of at all'. Sentence paraphrases as first work to treat deductive reasoning in ancient Greece per Aristotle's own claim.",
+    "innocent_reading_fails_at": "Source says nothing existed at all for this inquiry (tau tes pragmateias... ouden pantelos hyperchen), and specifically about sullogizesthai; it does not say 'first work to treat deductive reasoning in ancient Greece' - scope 'in ancient Greece' and 'deductive reasoning' vs 'syllogizing' and historical priority claim beyond 'we had nothing' may exceed source; also sentence attributes claim to Aristotle in present tense as historical fact about Greece, while source is autobiographical methodological remark about lack of prior work",
+    "support": [
+     "partially supported",
+     "interpretation beyond descriptive paraphrase"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Defensible paraphrase: Of this inquiry, nothing at all existed before; about syllogizing we had absolutely nothing earlier to say, but were long at work seeking by practice.",
+    "deltas": [
+     {
+      "sentence_says": "first work to treat the subject of deductive reasoning in ancient Greece",
+      "source_says": "Ταύτης δὲ τῆς πραγματείας οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν παντελῶς ὑπῆρχεν",
+      "kind": "scope",
+      "measure": "source fidelity",
+      "lambda": 1
+     },
+     {
+      "sentence_says": "first work to treat the subject of deductive reasoning",
+      "source_says": "περὶ δὲ τοῦ συλλογίζεσθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν",
+      "kind": "term changed",
+      "measure": "primary-text adequacy",
+      "lambda": 1
+     },
+     {
+      "sentence_says": "According to Aristotle",
+      "source_says": "Moreover, on the subject of Rhetoric there exists much that has been said long ago, whereas on the subject of reasoning we had nothing else of an earlier date to speak of at all",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "No act restated as property; sentence reports historical priority claim",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "Core denial 'nothing existed' retained, but its relation to dialectic vs rhetoric development (Tisias, Thrasymachus, Theodorus succession) and to peirastic/dialectic task is lost; revision would need to specify 'nothing in prior tradition handed down' rather than absolute first in Greece",
+     "revision_required": "Would need to limit to 'no prior transmitted work available to us' rather than first in Greece"
+    },
+    "surviving_relations": [
+     "prior absence vs rhetoric having much old material"
+    ],
+    "lost_relations": [
+     "contrast with rhetorical succession Tisias, Thrasymachus, Theodorus",
+     "scope is 'this inquiry' i.e., method of syllogistic capacity concerning any problem"
+    ],
+    "alternatives": [
+     "Sentence is faithful descriptive paraphrase per NORP: 'nothing earlier' entails first work",
+     "Sentence over-extends: source says we had nothing to say, not that nothing existed in Greece"
+    ],
+    "correction_pathway": "Replace with direct translation: Aristotle says of this undertaking nothing at all existed beforehand, and about syllogizing we had nothing earlier to say",
+    "confidence": "medium",
+    "confidence_note": "Greek window and translations present; historical scope 'in ancient Greece' not in source",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "SE34GR",
+      "quote": "Ταύτης δὲ τῆς πραγματείας οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν παντελῶς ὑπῆρχεν."
+     },
+     {
+      "source": "SE34GR",
+      "quote": "περὶ δὲ τοῦ συλλογίζεσθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν"
+     },
+     {
+      "source": "MIT",
+      "quote": "Moreover, on the subject of Rhetoric there exists much that has been said long ago, whereas on the subject of reasoning we had nothing else of an earlier date to speak of at all, but were kept at work for a long time in experimental researches."
+     },
+     {
+      "source": "MIT",
+      "quote": "Of this inquiry, on the other hand, it was not the case that part of the work had been thoroughly done before, while part had not. Nothing existed at all."
+     }
+    ]
+   },
+   "SR-W3": {
+    "case": "SR-W3",
+    "case_type": "sentence",
+    "innocent_reading": "Strongest case: SE 1 defines appearance vs reality in deductive reasoning and refutation; program is to discover faculty of reasoning from generally accepted premises, task of dialectic and peirastic; sophistry is near presence, appearance of wisdom without reality; so sentence says he attempts to develop pattern of sound genuine reasoning vs deceptive art of sophistry, retaining substance.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "Defensible paraphrase: Our program was to discover some faculty of reasoning about any theme from most generally accepted premises, task of dialectic and peirastic; sophistry annexed due to proximity; art of sophistry is a certain appearance of wisdom without reality; contentious argument aims at apparent victory.",
+    "deltas": [
+     {
+      "sentence_says": "attempts to develop a pattern of sound and genuine reasoning in opposition to the deceptive or misleading \"art of sophistry\"",
+      "source_says": "For that is the essential task of the art of discussion (dialectic) and of examination (peirastic). Inasmuch, however, as it is annexed to it, on account of the near presence of the art of sophistry (sophistic), not only to be able to conduct an examination dialectically but also with a show of knowledge",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "art of sophistry",
+      "source_says": "for the art of sophistry is a certain appearance of wisdom without the reality",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Reports aim, not restating act as credential",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "Opposition between genuine dialectic and sophistic appearance retained; method of guarding thesis by most reputable things retained in Krabbe paraphrase",
+     "revision_required": "None"
+    },
+    "surviving_relations": [
+     "dialectic vs sophistic distinction",
+     "appearance vs reality"
+    ],
+    "lost_relations": [],
+    "alternatives": [
+     "Could be read as introducing idea of 'pattern' not in source, but pattern is descriptive paraphrase of method"
+    ],
+    "correction_pathway": "None needed; if stricter, quote 'appearance of wisdom without reality'",
+    "confidence": "high",
+    "confidence_note": "Sources support contrast genuine vs sophistical",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "MIT",
+      "quote": "For that is the essential task of the art of discussion (dialectic) and of examination (peirastic). Inasmuch, however, as it is annexed to it, on account of the near presence of the art of sophistry (sophistic), not only to be able to conduct an examination dialectically but also with a show of knowledge"
+     },
+     {
+      "source": "MIT",
+      "quote": "for the art of sophistry is a certain appearance of wisdom without the reality"
+     }
+    ]
+   },
+   "SR-W4-6": {
+    "case": "SR-W4-6",
+    "case_type": "sentence group",
+    "innocent_reading": "Strongest case: Krabbe text verbatim matches sentence group: 34 chapters, two parts Questioner 3-8 and 12-15, Answerer 16-32, introduction 1-2, interlude 9-11, conclusion 33-34. Cited sources include Krabbe.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34).",
+    "deltas": [
+     {
+      "sentence_says": "On Sophistical Refutations consists of 34 chapters. The book naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34).",
+      "source_says": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34).",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 1
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Structural division, not act restated as property",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "Division act and its scope (chapter numbers) preserved exactly",
+     "revision_required": "None"
+    },
+    "surviving_relations": [
+     "exact chapter ranges",
+     "two-part distinction"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None",
+    "confidence": "high",
+    "confidence_note": "Verbatim match",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "KRABBE",
+      "quote": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34)."
+     }
+    ]
+   },
+   "SR-W7-8": {
+    "case": "SR-W7-8",
+    "case_type": "heading with lists",
+    "innocent_reading": "Strongest case: Heading says fallacies Aristotle identifies in Chapter 4 formal and 5 informal; Krabbe says Chapter 4 six kinds depending on use of language, Chapter 5 examples of seven kinds not depending; list in article attempts to render those two groups under formal/informal labels.",
+    "innocent_reading_fails_at": "Krabbe second group is accident, secundum quid, ignoratio elenchi, petitio principii, consequence, non causa, making one question out of two. Article list is Accident, Secundum quid, Irrelevant conclusion, Petitio principii, False cause, Affirming the consequent, Fallacy of many questions. Mismatch: ignoratio elenchi rendered as Irrelevant conclusion (interpretive), consequence rendered as Affirming the consequent (narrowing), non causa rendered as False cause (narrowing). Also heading says 'formal fallacies (in dictionem)' vs source 'use of language (lexis)' and 'not in language informal' vs source 'do not depend on way language is used' – terminological shift. Also classification as formal vs informal not in source window.",
+    "support": [
+     "partially supported",
+     "interpretation beyond descriptive paraphrase"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "Those that depend on the use of language (lexis): equivocation, amphiboly, combination of words, division of words, accent, form of expression. Those that do not: accident, secundum quid, ignoratio elenchi, petitio principii, consequence, non causa, making one question out of two.",
+    "deltas": [
+     {
+      "sentence_says": "Irrelevant conclusion",
+      "source_says": "ignoratio elenchi (ignorance of refutation)",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "Affirming the consequent",
+      "source_says": "consequence",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "False cause",
+      "source_says": "non causa (wrong ground)",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "formal fallacies (in dictionem)",
+      "source_says": "those that depend on the ‘‘use of language’’ (lexis)",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "informal fallacies (extra dictionem)",
+      "source_says": "seven kinds that do not depend on the way language is used",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Heading classifies items, not restating act as attribute",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "Six+seven structure retained, but operation of reduction to ignoratio elenchi in Chapter 6 could revise description of whether second list are distinct fallacies; article treats them as independent fallacies without noting reducibility",
+     "revision_required": "Note that Aristotle tries to reduce all types to subtypes of ignoratio elenchi"
+    },
+    "surviving_relations": [
+     "two groups division",
+     "six language-dependent items match first list"
+    ],
+    "lost_relations": [
+     "reducibility thesis",
+     "exact source labels for second group"
+    ],
+    "alternatives": [
+     "Irrelevant conclusion is common translation of ignoratio elenchi, could be faithful translation per NORP",
+     "Affirming the consequent is one species of consequence fallacy, narrowing is permitted as entailment"
+    ],
+    "correction_pathway": "Restore source terms: ignoratio elenchi, consequence, non causa, with modern equivalents in parentheses",
+    "confidence": "medium",
+    "confidence_note": "First list supported verbatim; second list shows interpretive renaming",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "KRABBE",
+      "quote": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of language’’ (lexis) and those that do not."
+     },
+     {
+      "source": "KRABBE",
+      "quote": "It can be shown by experience and by theory that there are exactly six kinds of sophistical refutations that belong to this group: equivocation, amphiboly, combination of words, division of words, accent, and form of expression; these are illustrated by examples."
+     },
+     {
+      "source": "KRABBE",
+      "quote": "There are seven kinds that do not depend on the way language is used: accident, secundum quid (omission or addition of qualifications), ignoratio elenchi (ignorance of refutation), petitio principii (begging the question), consequence, non causa (wrong ground), and making one question out of two."
+     }
+    ]
+   },
+   "TH-1": {
+    "case": "TH-1",
+    "case_type": "sentence",
+    "innocent_reading": "Strongest case: EB1911 says writing probably differed little from Aristotelian treatment though supplementary in details, and served as popularizer; sentence says same themes though supplementary, differing little from Aristotle's treatment.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details",
+    "deltas": [
+     {
+      "sentence_says": "His writing probably differed little from Aristotle's treatment of the same themes, though supplementary in details.",
+      "source_says": "His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details (see Peripatetics ).",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 1
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Comparative description, not credential",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "Hedge probably retained, supplementary relation retained",
+     "revision_required": "None"
+    },
+    "surviving_relations": [
+     "difference degree little",
+     "supplementary in details"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None",
+    "confidence": "high",
+    "confidence_note": "Verbatim except Aristotelian/Aristotle's",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "EB1911",
+      "quote": "His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details (see Peripatetics )."
+     }
+    ]
+   },
+   "TH-2": {
+    "case": "TH-2",
+    "case_type": "sentence",
+    "innocent_reading": "Strongest case: SEPTHEO first paragraph says he wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system. Lead sentence mirrors that with numerous treatises across all areas, working to support, improve, expand, and develop.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system",
+    "deltas": [
+     {
+      "sentence_says": "Theophrastus wrote numerous treatises across all areas of philosophy, working to support, improve, expand, and develop the Aristotelian system.",
+      "source_says": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system.",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 1
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Describes work scope, not attribute from act",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "Four verbs support/improve/expand/develop preserved",
+     "revision_required": "None"
+    },
+    "surviving_relations": [
+     "all areas",
+     "Aristotelian system as object"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None",
+    "confidence": "high",
+    "confidence_note": "Exact match to SEPTHEO lead",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "SEPTHEO",
+      "quote": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system."
+     }
+    ]
+   },
+   "IW-1": {
+    "case": "IW-1",
+    "case_type": "sentence",
+    "innocent_reading": "Strongest case: 【entity-Wilson¦canonical_name=Wilson】 says Carson tries to translate nothing which is not in Greek, follow original word order, adds no possessive pronouns or definite articles not present. Sentence says attempts to follow word order as closely as possible, not to add words which cannot be found, such as personal pronouns and definite articles.",
+    "innocent_reading_fails_at": "Fails at 'personal pronouns' vs source 'possessive pronouns'; personal vs possessive is different category. Definite articles supported.",
+    "support": [
+     "partially supported",
+     "qualifier added"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Carson tries to translate nothing which is not in the Greek, and to follow the original word order and line breaks as far as possible. Unlike other translators, Carson adds no possessive pronouns or definite articles that are not present in the Greek.",
+    "deltas": [
+     {
+      "sentence_says": "personal pronouns",
+      "source_says": "possessive pronouns",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "word order of the Greek text as closely as possible",
+      "source_says": "follow the original word order and line breaks as far as possible",
+      "kind": "scope",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Method description, not credential",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "Core operation of not adding absent words retained, but scope narrowed from possessive to personal pronouns could require revision if text contains non-possessive personal pronouns",
+     "revision_required": "Change personal to possessive or cite additional source"
+    },
+    "surviving_relations": [
+     "not adding absent words",
+     "following word order",
+     "definite articles example"
+    ],
+    "lost_relations": [
+     "line breaks"
+    ],
+    "alternatives": [
+     "Personal pronouns could be inclusive of possessive in loose usage, but source specifically says possessive"
+    ],
+    "correction_pathway": "Replace personal pronouns with possessive pronouns per Wilson; or keep both if sourced elsewhere",
+    "confidence": "high",
+    "confidence_note": "Direct quote shows possessive not personal",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "WILSON",
+      "quote": "Carson tries to translate nothing which is not in the Greek, and to follow the original word order and line breaks as far as possible."
+     },
+     {
+      "source": "WILSON",
+      "quote": "Unlike other translators, Carson adds no possessive pronouns or definite articles that are not present in the Greek."
+     }
+    ]
+   },
+   "EB-1": {
+    "case": "EB-1",
+    "case_type": "sentence",
+    "innocent_reading": "Strongest case: Rae says Carson's book examines works of Longus, Heliodorus, Achilles Tatius, and Chariton through lens of thesis on literacy and erotic triangulation; erotic lyrics of Sappho condensed configuration. Sentence says Carson considers how triangulations of desire appear in writings of Sappho, ancient Greek novelists (Longus, Heliodorus, Achilles Tatius, Chariton), and Plato in his Phaedrus.",
+    "innocent_reading_fails_at": "Rae window does not mention Plato or Phaedrus; that part unsupported in supplied window. Sappho + four novelists supported.",
+    "support": [
+     "partially supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation. For Carson, the erotic lyrics of Sappho and her contemporaries condensed and refined a literary configuration of erotic desire",
+    "deltas": [
+     {
+      "sentence_says": "and Plato (in his Phaedrus)",
+      "source_says": "",
+      "kind": "idea introduced",
+      "measure": "source fidelity",
+      "lambda": 5
+     },
+     {
+      "sentence_says": "triangulations of desire appear in the writings of Sappho, ancient Greek novelists (Longus, Heliodorus, Achilles Tatius, and Chariton)",
+      "source_says": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation. For Carson, the erotic lyrics of Sappho and her contemporaries condensed and refined a literary configuration of erotic desire wherein a “circuit” is set up between three essential points: “lover, beloved and that which comes between them”",
+      "kind": "none",
+      "measure": "source fidelity",
+      "lambda": 1
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Reports coverage, not attribute",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "Operation of triangulation analysis across Sappho and novelists retained",
+     "revision_required": "Add source for Plato Phaedrus or mark as needing citation"
+    },
+    "surviving_relations": [
+     "Sappho as source of triangulation",
+     "four novelists list"
+    ],
+    "lost_relations": [],
+    "alternatives": [
+     "Plato Phaedrus could be supported by other cited source Scranton 2014 not in window, so window too narrow for that clause"
+    ],
+    "correction_pathway": "Keep Sappho + novelists as supported; separately source Plato claim",
+    "confidence": "medium",
+    "confidence_note": "Window too narrow for Plato; first part matches exactly",
+    "windows_too_narrow": "No window for Plato Phaedrus; supplied Rae covers only Sappho + novelists",
+    "spans": [
+     {
+      "source": "RAE",
+      "quote": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation."
+     },
+     {
+      "source": "RAE",
+      "quote": "For Carson, the erotic lyrics of Sappho and her contemporaries condensed and refined a literary configuration of erotic desire wherein a “circuit” is set up between three essential points: “lover, beloved and that which comes between them”"
+     }
+    ]
+   },
+   "AC-1": {
+    "case": "AC-1",
+    "case_type": "placement",
+    "innocent_reading": "Lead must be read for operation (method, argument, result with object). Lead lists biographical facts, teaching posts, books count, awards, Nobel. No stated method or argument or result with object; only bibliographic productivity.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "unsupported"
+    ],
+    "support_source": [
+     "none"
+    ],
+    "paraphrase": "ARTICLE passage contains no operation: born, graduated, taught at universities, written more than twenty books including collections of essays and poetry and translations, awarded fellowships and prizes, appointed Member Order of Canada, awarded 【entity-Nobel Prize¦canonical_name=Nobel Prize】 in Literature.",
+    "deltas": [
+     {
+      "sentence_says": "Lead as whole",
+      "source_says": "ARTICLE as given contains no method/argument/result with object",
+      "kind": "omission",
+      "measure": "operative retention",
+      "lambda": null
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "No operation stated to convert to attribute",
+    "retained_authority": {
+     "value": "unknown",
+     "evidence": "No operation present, so no authority to retain",
+     "revision_required": "If article is to show subject's own operations, lead would need to state e.g., translation method or triangulation thesis"
+    },
+    "surviving_relations": [],
+    "lost_relations": [],
+    "alternatives": [
+     "【entity-Nobel Prize¦canonical_name=Nobel Prize】 could be seen as operation result, but it's an award not a stated method/argument/result of subject"
+    ],
+    "correction_pathway": "Record placement failure: subject's operations first appear not in lead but later (Translation method in If Not, Winter case).",
+    "confidence": "high",
+    "confidence_note": "Lead lists positions and honors, not intellectual operations",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "ARTICLE",
+      "quote": "Anne Patricia Carson (born June 21, 1950) is a Canadian academic and author. Born in Toronto, she graduated from the 【entity-University of Toronto¦canonical_name=University of Toronto】 and became a professor and lecturer at several universities since 1979."
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "Carson has written more than twenty books, including collections of essays and poetry, as well as translations of ancient Greek tragedies."
+     }
+    ]
+   },
+   "TU-1": {
+    "case": "TU-1",
+    "case_type": "placement",
+    "innocent_reading": "Lead states operations: formalised concepts of algorithm and computation with Turing machine, model of general-purpose computer; contributions to cryptanalysis helped decipher Enigma; contributed Turing test and Turing pattern concept; techniques improved Polish bomba; designed Automatic Computing Engine; theorized chemical oscillators.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "none"
+    ],
+    "paraphrase": "Operations present: formalised algorithm/computation with Turing machine, general-purpose computer model, cryptanalysis, Turing test, Turing pattern, design of stored-program computer, morphogenesis chemical basis.",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Lead states operations directly as achievements, not as credential label",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "Lead states method (Turing machine), argument (Turing test), result (cryptanalysis, ACE, morphogenesis) with objects; authority retained in lead itself",
+     "revision_required": "None"
+    },
+    "surviving_relations": [
+     "algorithm and computation formalised with Turing machine",
+     "computation model = general-purpose computer"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "Record as placement success: operation appears in lead paragraph 1",
+    "confidence": "high",
+    "confidence_note": "Multiple clear operations with objects in first paragraph",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "ARTICLE",
+      "quote": "He formalised the concepts of algorithm and computation with the Turing machine, a model of a general-purpose computer, and his contributions to cryptanalysis helped the Allies of World War II decipher messages encrypted by the German Enigma machine."
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "He also contributed the Turing test to philosophy of artificial intelligence and the Turing pattern concept to mathematical and theoretical biology."
+     }
+    ]
+   },
+   "CU-1": {
+    "case": "CU-1",
+    "case_type": "placement",
+    "innocent_reading": "Lead states operations: shared Nobel Prize for joint researches on radioactivity phenomena discovered by Becquerel; won Nobel Prize for discovery of elements radium and polonium, isolation of radium; conducted pioneering research on radioactivity—a term she coined; world's first studies into treatment of neoplasms by use of radioactive isotopes; founded Curie Institute; developed mobile radiography units.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "none"
+    ],
+    "paraphrase": "Operations: joint researches on radioactivity, discovery of radium and polonium, isolation and study of compounds, pioneering research coining term radioactivity, first studies treatment of neoplasms with radioactive isotopes, founded institutes, developed mobile radiography.",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Operations stated as discoveries and methods, not as mere attributes",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "Lead contains discovery operation with evidence (elements, isolation), method operation (treatment of neoplasms by radioactive isotopes), and naming operation (term coined)",
+     "revision_required": "None"
+    },
+    "surviving_relations": [
+     "radioactivity phenomena as object of joint researches",
+     "radium/polonium as discovered elements",
+     "radioactivity term coined"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "Record as placement success: operation appears in lead paragraph 1",
+    "confidence": "high",
+    "confidence_note": "Lead rich with operations",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "ARTICLE",
+      "quote": "She shared the 1903 Nobel Prize in Physics with her husband, Pierre Curie, \"for their joint researches on the radioactivity phenomena discovered by Professor Henri Becquerel\"."
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "She won the 1911 Nobel Prize in Chemistry \"[for] the discovery of the elements radium and polonium, by the isolation of radium and the study of the nature and compounds of this remarkable element\"."
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "In 1895, Curie married Pierre, with whom she conducted pioneering research on radioactivity—a term she coined."
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "Under Curie's direction, the world's first studies were conducted into the treatment of neoplasms by the use of radioactive isotopes."
+     }
+    ]
+   }
+  },
+  "spans": [
+   {
+    "case": "SR-W1",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "There are exactly six kinds of sophistical refutations that belong to this group: equivocation, amph"
+   },
+   {
+    "case": "SR-W1",
+    "src": "SEPLOGIC",
+    "seen": true,
+    "full": true,
+    "q": "On the other hand, Aristotle treats the Prior and Posterior Analytics as one work, and On Sophistica"
+   },
+   {
+    "case": "SR-W2",
+    "src": "SE34GR",
+    "seen": true,
+    "full": true,
+    "q": "Ταύτης δὲ τῆς πραγματείας οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν παντελῶς ὑπῆρχεν."
+   },
+   {
+    "case": "SR-W2",
+    "src": "SE34GR",
+    "seen": true,
+    "full": true,
+    "q": "περὶ δὲ τοῦ συλλογίζεσθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν"
+   },
+   {
+    "case": "SR-W2",
+    "src": "MIT",
+    "seen": true,
+    "full": true,
+    "q": "Moreover, on the subject of Rhetoric there exists much that has been said long ago, whereas on the s"
+   },
+   {
+    "case": "SR-W2",
+    "src": "MIT",
+    "seen": true,
+    "full": true,
+    "q": "Of this inquiry, on the other hand, it was not the case that part of the work had been thoroughly do"
+   },
+   {
+    "case": "SR-W3",
+    "src": "MIT",
+    "seen": true,
+    "full": true,
+    "q": "For that is the essential task of the art of discussion (dialectic) and of examination (peirastic). "
+   },
+   {
+    "case": "SR-W3",
+    "src": "MIT",
+    "seen": true,
+    "full": true,
+    "q": "for the art of sophistry is a certain appearance of wisdom without the reality"
+   },
+   {
+    "case": "SR-W4-6",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for"
+   },
+   {
+    "case": "SR-W7-8",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of"
+   },
+   {
+    "case": "SR-W7-8",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "It can be shown by experience and by theory that there are exactly six kinds of sophistical refutati"
+   },
+   {
+    "case": "SR-W7-8",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "There are seven kinds that do not depend on the way language is used: accident, secundum quid (omiss"
+   },
+   {
+    "case": "TH-1",
+    "src": "EB1911",
+    "seen": true,
+    "full": true,
+    "q": "His writing probably differed little from the Aristotelian treatment of the same themes, though supp"
+   },
+   {
+    "case": "TH-2",
+    "src": "SEPTHEO",
+    "seen": true,
+    "full": true,
+    "q": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develo"
+   },
+   {
+    "case": "IW-1",
+    "src": "WILSON",
+    "seen": true,
+    "full": true,
+    "q": "Carson tries to translate nothing which is not in the Greek, and to follow the original word order a"
+   },
+   {
+    "case": "IW-1",
+    "src": "WILSON",
+    "seen": true,
+    "full": true,
+    "q": "Unlike other translators, Carson adds no possessive pronouns or definite articles that are not prese"
+   },
+   {
+    "case": "EB-1",
+    "src": "RAE",
+    "seen": true,
+    "full": true,
+    "q": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the le"
+   },
+   {
+    "case": "EB-1",
+    "src": "RAE",
+    "seen": true,
+    "full": true,
+    "q": "For Carson, the erotic lyrics of Sappho and her contemporaries condensed and refined a literary conf"
+   },
+   {
+    "case": "AC-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "Anne Patricia Carson (born June 21, 1950) is a Canadian academic and author. Born in Toronto, she gr"
+   },
+   {
+    "case": "AC-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "Carson has written more than twenty books, including collections of essays and poetry, as well as tr"
+   },
+   {
+    "case": "TU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "He formalised the concepts of algorithm and computation with the Turing machine, a model of a genera"
+   },
+   {
+    "case": "TU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "He also contributed the Turing test to philosophy of artificial intelligence and the Turing pattern "
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "She shared the 1903 Nobel Prize in Physics with her husband, Pierre Curie, \"for their joint research"
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "She won the 1911 Nobel Prize in Chemistry \"[for] the discovery of the elements radium and polonium, "
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "In 1895, Curie married Pierre, with whom she conducted pioneering research on radioactivity—a term s"
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "Under Curie's direction, the world's first studies were conducted into the treatment of neoplasms by"
+   }
+  ]
+ },
+ "deepseek": {
+  "cases": {
+   "SR-W1": {
+    "case": "SR-W1",
+    "case_type": "sentence",
+    "innocent_reading": "The article's cited Krabbe divides the sophistical refutations of SE ch. 4 into six language-dependent and seven language-independent kinds, thirteen in all; SEP Logic places SE among Aristotle's logical works as an appendix to the Topics. On that basis 'thirteen fallacies' is a fair summary, and 'twelve or' may reflect an alternate count not present in the supplied window.",
+    "innocent_reading_fails_at": "No supplied source gives the Greek or Latin titles, and no supplied source gives 'twelve'; Krabbe says exactly six plus seven, i.e. thirteen.",
+    "support": [
+     "partially supported",
+     "unresolved"
+    ],
+    "support_source": [
+     "elsewhere in the article",
+     "none"
+    ],
+    "paraphrase": "Krabbe: in Chapter 4 sophistical refutations are divided into two groups, those depending on use of language and those not; there are exactly six of the first group and seven of the second, thirteen total. SEP Logic: On Sophistical Refutations is a final section, or appendix, to the Topics.",
+    "deltas": [
+     {
+      "sentence_says": "twelve or thirteen fallacies",
+      "source_says": "there are exactly six kinds of sophistical refutations that belong to this group",
+      "kind": "qualifier added",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": "identified twelve or thirteen fallacies",
+    "attributization": "no",
+    "attributization_reason": "The source reports a division and count in the text, not a credential, priority, or category membership restated as a property.",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "Krabbe's exact six/seven division and total thirteen survive, but 'exactly' is blurred by 'twelve or thirteen'; the Greek and Latin titles are unsourced in the supplied materials.",
+     "revision_required": "Replace 'twelve or thirteen' with 'thirteen (six language-dependent and seven language-independent)' or cite a source for twelve; source the Greek/Latin titles or remove them."
+    },
+    "surviving_relations": [
+     "six language-dependent kinds",
+     "seven language-independent kinds",
+     "Chapter 4 division",
+     "total thirteen"
+    ],
+    "lost_relations": [
+     "exactness of the count",
+     "source for Greek/Latin titles",
+     "source for an alternative twelve-fallacy count"
+    ],
+    "alternatives": [
+     "'twelve or thirteen' may reflect a different enumeration or uncertainty not present in Krabbe's supplied paragraph."
+    ],
+    "correction_pathway": "Cite Krabbe at the sentence and revise the count; add a citation for the Greek/Latin titles or delete the parenthetical titles.",
+    "confidence": "medium",
+    "confidence_note": "Krabbe is cited elsewhere in the article and gives 6+7, but the supplied window lacks a source for 'twelve' and for the Greek/Latin titles.",
+    "windows_too_narrow": "Yes: no source is supplied for the Greek/Latin titles or for a twelve-fallacy count.",
+    "spans": [
+     {
+      "source": "KRABBE",
+      "quote": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of language’’ (lexis) and those that do not."
+     },
+     {
+      "source": "KRABBE",
+      "quote": "It can be shown by experience and by theory that there are exactly six kinds of sophistical refutations that belong to this group: equivocation, amphiboly, combination of words, division of words, accent, and form of expression; these are illustrated by examples."
+     },
+     {
+      "source": "KRABBE",
+      "quote": "There are seven kinds that do not depend on the way language is used: accident, secundum quid (omission or addition of qualifications), ignoratio elenchi (ignorance of refutation), petitio principii (begging the question), consequence, non causa (wrong ground), and making one question out of two."
+     },
+     {
+      "source": "SEPLOGIC",
+      "quote": "On Sophistical Refutations is a final section, or an appendix, to the Topics"
+     }
+    ]
+   },
+   "SR-W2": {
+    "case": "SR-W2",
+    "case_type": "sentence",
+    "innocent_reading": "SE 34 says 'about syllogizing we had absolutely nothing else earlier to say'; Pickard-Cambridge renders it 'on the subject of reasoning we had nothing else of an earlier date to speak of at all'. With 'According to Aristotle', that supports a claim of no prior treatment, from which 'first work' is a close paraphrase.",
+    "innocent_reading_fails_at": "The source does not say 'first work' or 'in ancient Greece'; it says there was no earlier account of syllogizing. 'First work' is a priority formulation, and 'ancient Greece' is an added setting.",
+    "support": [
+     "partially supported",
+     "qualifier added",
+     "interpretation beyond descriptive paraphrase"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "SE 34: about syllogizing we had absolutely nothing else earlier to say. Pickard-Cambridge: on the subject of reasoning we had nothing else of an earlier date to speak of at all.",
+    "deltas": [
+     {
+      "sentence_says": "this is the first work to treat the subject of deductive reasoning",
+      "source_says": "περὶ δὲ τοῦ συλλογίζεσθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν",
+      "kind": "equivalence asserted",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "deductive reasoning",
+      "source_says": "on the subject of reasoning we had nothing else of an earlier date to speak of at all",
+      "kind": "term changed",
+      "measure": "primary-text adequacy",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "in ancient Greece",
+      "source_says": "nothing else of an earlier date to speak of at all",
+      "kind": "idea introduced",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": "first work to treat deductive reasoning in ancient Greece",
+    "attributization": "yes",
+    "attributization_reason": "Aristotle's first-person claim of no earlier account of syllogizing is restated as a priority property of the work.",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "The attribution 'According to Aristotle' survives and the no-prior-treatment claim is retained, but 'first work' and 'ancient Greece' are stronger or different from the cited lines.",
+     "revision_required": "Revise to 'According to Aristotle, there was no earlier account of syllogizing (SE 34, 183b34 ff.)' unless a source supports the priority wording."
+    },
+    "surviving_relations": [
+     "Aristotle's claim",
+     "no earlier account of syllogizing"
+    ],
+    "lost_relations": [
+     "scope as syllogizing rather than general deductive reasoning",
+     "no explicit 'ancient Greece'",
+     "first-work priority wording"
+    ],
+    "alternatives": [
+     "'first work' may be an inference from the no-earlier-account claim; 'ancient Greece' may be contextual background rather than the source's wording."
+    ],
+    "correction_pathway": "Use the source's no-earlier-account formulation and avoid 'first work' and 'ancient Greece' unless separately cited.",
+    "confidence": "medium",
+    "confidence_note": "The supplied SE 34 window supports no earlier account of syllogizing but does not itself state 'first work' or 'ancient Greece'.",
+    "windows_too_narrow": "The window is enough for the no-earlier-account claim but too narrow for the priority phrase 'first work' and for 'ancient Greece'.",
+    "spans": [
+     {
+      "source": "SE34GR",
+      "quote": "περὶ δὲ τοῦ συλλογίζεσθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν"
+     },
+     {
+      "source": "MIT",
+      "quote": "on the subject of reasoning we had nothing else of an earlier date to speak of at all"
+     }
+    ]
+   },
+   "SR-W3": {
+    "case": "SR-W3",
+    "case_type": "sentence",
+    "innocent_reading": "Pickard-Cambridge says the programme was to discover a faculty of reasoning, annexed to dialectic because of the near presence of the art of sophistry, and to defend a thesis; Krabbe calls the book logical self-defense and says sophistry is a certain appearance of wisdom without the reality. The sentence's general contrast is therefore defensible.",
+    "innocent_reading_fails_at": "The sources do not say the aim is 'in opposition to' sophistry as a moral campaign; Krabbe expressly says the book is refreshingly uncommitted to moral views and useful to sophists. 'Sound and genuine' is also an added characterization.",
+    "support": [
+     "partially supported",
+     "interpretation beyond descriptive paraphrase"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "The programme was to discover a faculty of reasoning from generally accepted premisses, the task of dialectic and peirastic; it is annexed to this on account of the near presence of the art of sophistry, and the art of sophistry is an appearance of wisdom without the reality. Krabbe adds that the book is logical self-defense but uncommitted to moral views and useful to sophists.",
+    "deltas": [
+     {
+      "sentence_says": "in opposition to the deceptive or misleading \"art of sophistry\"",
+      "source_says": "annexed to it, on account of the near presence of the art of sophistry",
+      "kind": "idea introduced",
+      "measure": "operative retention",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "sound and genuine reasoning",
+      "source_says": "some faculty of reasoning about any theme put before us from the most generally accepted premisses that there are",
+      "kind": "qualifier added",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": "attempts to develop a pattern of sound and genuine reasoning in opposition to the deceptive or misleading art of sophistry",
+    "attributization": "no",
+    "attributization_reason": "The source reports a programme and self-defense aim, not a credential or category membership; the issue is characterization, not attributization.",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "The general aim of reasoning and defense survives, but 'opposition' and the moralized characterization overstate Krabbe's uncommitted stance and his point that the book is useful to sophists.",
+     "revision_required": "Soften to 'attempts to develop a faculty of reasoning for dialectical examination and logical self-defense, in proximity to the art of sophistry' and retain Krabbe's caveat."
+    },
+    "surviving_relations": [
+     "aim to develop a faculty of reasoning",
+     "dialectic/peirastic context",
+     "logical self-defense",
+     "sophistry as appearance of wisdom without reality"
+    ],
+    "lost_relations": [
+     "Krabbe's uncommitted moral stance",
+     "usefulness to sophists",
+     "scope 'from generally accepted premisses'"
+    ],
+    "alternatives": [
+     "'in opposition' may summarize the defensive aim but not the whole stance."
+    ],
+    "correction_pathway": "Replace 'in opposition to' with a proximity/self-defense formulation and add Krabbe's caveat if the sentence is expanded.",
+    "confidence": "medium",
+    "confidence_note": "The supplied MIT and Krabbe windows support a defensive aim but also contain the qualification that limits 'opposition'.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "MIT",
+      "quote": "Our programme was, then, to discover some faculty of reasoning about any theme put before us from the most generally accepted premisses that there are."
+     },
+     {
+      "source": "MIT",
+      "quote": "for the art of sophistry is a certain appearance of wisdom without the reality"
+     },
+     {
+      "source": "KRABBE",
+      "quote": "Indeed, the book is refreshingly uncommitted to moral views about a dialectician’s giving advice to the bona fide discussant and the polemist or sophist alike."
+     }
+    ]
+   },
+   "SR-W4-6": {
+    "case": "SR-W4-6",
+    "case_type": "sentence group",
+    "innocent_reading": "Krabbe's contents paragraph is nearly verbatim: the book contains 34 chapters, falls into two parts with the exact chapter ranges for Questioner and Answerer, and has an introduction, interlude, and conclusion. The sentence group matches it.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Krabbe: The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34).",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence group restates the book's structure; the source does not perform a credential or property attribution.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "The chapter count and all ranges match Krabbe's paragraph.",
+     "revision_required": "None."
+    },
+    "surviving_relations": [
+     "34 chapters",
+     "Questioner chapters 3–8 and 12–15",
+     "Answerer chapters 16–32",
+     "introduction 1–2",
+     "interlude 9–11",
+     "conclusion 33–34"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None.",
+    "confidence": "high",
+    "confidence_note": "The cited Krabbe paragraph is essentially identical.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "KRABBE",
+      "quote": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for the Questioner (3–8 and 12–15) and chapters concerned with tactics for the Answerer (16–32). Besides, there is an introduction (1–2), an interlude (9–11), and a conclusion (33–34)."
+     }
+    ]
+   },
+   "SR-W7-8": {
+    "case": "SR-W7-8",
+    "case_type": "heading with lists",
+    "innocent_reading": "Krabbe supplies the two groups and the six/seven lists: six language-dependent items and seven language-independent items, with examples of the seven except petitio principii in Chapter 5. The lists largely match Krabbe's enumeration.",
+    "innocent_reading_fails_at": "The heading's 'Chapter 4 (formal fallacies) and 5 (informal fallacies)' is not Krabbe's classification; Krabbe puts the division in ch. 4 and only the examples of the seven in ch. 5. 'Affirming the consequent' is not Krabbe's 'consequence', and 'irrelevant conclusion' and 'false cause' are glosses/term changes.",
+    "support": [
+     "partially supported",
+     "interpretation beyond descriptive paraphrase",
+     "unresolved"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "Krabbe: In Chapter 4 sophistical refutations are divided into two groups, those depending on use of language and those not. Exactly six kinds belong to the first group: equivocation, amphiboly, combination of words, division of words, accent, and form of expression. Seven kinds do not depend on language: accident, secundum quid, ignoratio elenchi, petitio principii, consequence, non causa, and making one question out of two. Examples of these except petitio principii are given in Chapter 5.",
+    "deltas": [
+     {
+      "sentence_says": "in Chapter 4 (formal fallacies) and 5 (informal fallacies)",
+      "source_says": "In Chapter 4, sophistical refutations are divided into two groups",
+      "kind": "idea introduced",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "formal fallacies (in dictionem)",
+      "source_says": "those that depend on the ‘‘use of language’’ (lexis)",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "Irrelevant conclusion",
+      "source_says": "ignoratio elenchi (ignorance of refutation)",
+      "kind": "term changed",
+      "measure": "primary-text adequacy",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "False cause",
+      "source_says": "non causa (wrong ground)",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "Affirming the consequent",
+      "source_says": "consequence",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     },
+     {
+      "sentence_says": "Fallacy of many questions",
+      "source_says": "making one question out of two",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": "The fallacies Aristotle identifies in Chapter 4 (formal fallacies) and 5 (informal fallacies)",
+    "attributization": "no",
+    "attributization_reason": "The heading names an act of identification, not a credential or category membership; the issue is the list's terminology and chapter classification.",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "The six/seven membership is largely retained, but the formal/informal classification and 'affirming the consequent' depart from Krabbe's wording, and Chapter 6's reduction to ignoratio elenchi is omitted.",
+     "revision_required": "Use Krabbe's language-dependent/not-language-dependent labels, restore 'consequence' or source 'affirming the consequent', and say the examples of the seven are in ch. 5."
+    },
+    "surviving_relations": [
+     "two groups",
+     "six language-dependent items",
+     "seven language-independent items",
+     "Chapter 4 division"
+    ],
+    "lost_relations": [
+     "Krabbe's distinction between division in ch. 4 and examples in ch. 5",
+     "Krabbe's 'consequence'",
+     "Chapter 6 reduction to ignoratio elenchi"
+    ],
+    "alternatives": [
+     "'Affirming the consequent' may be a standard rendering of one Aristotelian consequence fallacy, but it is not the term in the supplied Krabbe window."
+    ],
+    "correction_pathway": "Relabel the groups as language-dependent and not language-dependent, restore Krabbe's list terms, and cite the chapter placement carefully.",
+    "confidence": "medium",
+    "confidence_note": "Krabbe supplies the lists, but not the article's formal/informal labels or a source for 'affirming the consequent'.",
+    "windows_too_narrow": "Krabbe supplies the lists but not a source for the article's formal/informal labels or for 'affirming the consequent'.",
+    "spans": [
+     {
+      "source": "KRABBE",
+      "quote": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of language’’ (lexis) and those that do not."
+     },
+     {
+      "source": "KRABBE",
+      "quote": "It can be shown by experience and by theory that there are exactly six kinds of sophistical refutations that belong to this group: equivocation, amphiboly, combination of words, division of words, accent, and form of expression; these are illustrated by examples."
+     },
+     {
+      "source": "KRABBE",
+      "quote": "There are seven kinds that do not depend on the way language is used: accident, secundum quid (omission or addition of qualifications), ignoratio elenchi (ignorance of refutation), petitio principii (begging the question), consequence, non causa (wrong ground), and making one question out of two."
+     },
+     {
+      "source": "KRABBE",
+      "quote": "Examples of these (except petitio principii) are given in Chapter 5."
+     }
+    ]
+   },
+   "TH-1": {
+    "case": "TH-1",
+    "case_type": "sentence",
+    "innocent_reading": "The cited 1911 Britannica sentence is almost verbatim: 'His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details.' The article's 'Aristotle's' for 'Aristotelian' is equivalent.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "EB1911: His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details.",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence describes a probable relation between writings; the source does not perform a credential or category attribution.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "The hedge 'probably' and the qualification 'though supplementary in details' are both retained.",
+     "revision_required": "None."
+    },
+    "surviving_relations": [
+     "probable closeness to Aristotelian treatment",
+     "supplementary in details"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None.",
+    "confidence": "high",
+    "confidence_note": "The cited EB1911 wording is nearly identical.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "EB1911",
+      "quote": "His writing probably differed little from the Aristotelian treatment of the same themes, though supplementary in details"
+     }
+    ]
+   },
+   "TH-2": {
+    "case": "TH-2",
+    "case_type": "sentence",
+    "innocent_reading": "Ierodiakonou's SEP entry says: 'He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system.' The lead sentence is a close paraphrase: 'numerous' for 'many', 'working to' for 'in order to'.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "elsewhere in the article"
+    ],
+    "paraphrase": "SEP: He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system.",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence reports an activity and aim; the source does not perform a credential or category attribution.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "The scope 'all areas of philosophy' and the four aims 'support, improve, expand, and develop' are retained.",
+     "revision_required": "None."
+    },
+    "surviving_relations": [
+     "many treatises",
+     "all areas of philosophy",
+     "support/improve/expand/develop the Aristotelian system"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None.",
+    "confidence": "high",
+    "confidence_note": "The SEP sentence is almost exactly reproduced.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "SEPTHEO",
+      "quote": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develop the Aristotelian system."
+     }
+    ]
+   },
+   "IW-1": {
+    "case": "IW-1",
+    "case_type": "sentence",
+    "innocent_reading": "Wilson says Carson tries to translate nothing not in the Greek and to follow the original word order and line breaks as far as possible; she also says Carson adds no possessive pronouns or definite articles not present in the Greek. The sentence is a faithful summary.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Wilson: Carson tries to translate nothing which is not in the Greek, and to follow the original word order and line breaks as far as possible; unlike other translators, Carson adds no possessive pronouns or definite articles that are not present in the Greek.",
+    "deltas": [
+     {
+      "sentence_says": "personal pronouns",
+      "source_says": "possessive pronouns",
+      "kind": "term changed",
+      "measure": "source fidelity",
+      "lambda": 4
+     }
+    ],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence describes a translation method; the source does not perform a credential or category attribution.",
+    "retained_authority": {
+     "value": "retained",
+     "evidence": "The method of following word order and adding nothing absent from the Greek is retained; only 'personal' versus 'possessive' is a minor term change.",
+     "revision_required": "Consider 'possessive pronouns' rather than 'personal pronouns' if following Wilson exactly."
+    },
+    "surviving_relations": [
+     "follow word order as far as possible",
+     "add nothing not in Greek",
+     "no possessive pronouns/definite articles not in Greek"
+    ],
+    "lost_relations": [
+     "Wilson's explicit mention of line breaks"
+    ],
+    "alternatives": [
+     "'Personal pronouns' may be intended broadly, but Wilson's wording is 'possessive pronouns'."
+    ],
+    "correction_pathway": "Change 'personal pronouns' to 'possessive pronouns' or add a source for the broader wording.",
+    "confidence": "high",
+    "confidence_note": "Wilson supports the method; the only visible change is the pronoun term.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "WILSON",
+      "quote": "Carson tries to translate nothing which is not in the Greek, and to follow the original word order and line breaks as far as possible."
+     },
+     {
+      "source": "WILSON",
+      "quote": "Unlike other translators, Carson adds no possessive pronouns or definite articles that are not present in the Greek."
+     }
+    ]
+   },
+   "EB-1": {
+    "case": "EB-1",
+    "case_type": "sentence",
+    "innocent_reading": "Rae says Carson's book examines Longus, Heliodorus, Achilles Tatius, and Chariton through her thesis on literacy and erotic triangulation, and discusses Sappho's erotic lyrics. That supports the novelists and Sappho; Scranton 2014, though not supplied, may support Plato/Phaedrus.",
+    "innocent_reading_fails_at": "The supplied Rae window does not mention Plato or Phaedrus; Scranton 2014 is cited at the sentence but is not supplied.",
+    "support": [
+     "partially supported",
+     "unresolved"
+    ],
+    "support_source": [
+     "at the sentence",
+     "none"
+    ],
+    "paraphrase": "Rae: Carson's book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation; for Carson, the erotic lyrics of Sappho condensed and refined a literary configuration of erotic desire.",
+    "deltas": [
+     {
+      "sentence_says": "and Plato (in his Phaedrus)",
+      "source_says": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation.",
+      "kind": "idea introduced",
+      "measure": "source fidelity",
+      "lambda": 5
+     }
+    ],
+    "omega": null,
+    "attribute": "triangulations of desire appear in the writings of Sappho, ancient Greek novelists, and Plato",
+    "attributization": "no",
+    "attributization_reason": "The sentence reports what Carson considers; the source does not perform a credential or category attribution.",
+    "retained_authority": {
+     "value": "mixed",
+     "evidence": "Sappho and the four novelists are supported by Rae; Plato/Phaedrus is unresolved in the supplied window.",
+     "revision_required": "Cite Scranton for Plato/Phaedrus or remove that clause."
+    },
+    "surviving_relations": [
+     "Sappho",
+     "Longus",
+     "Heliodorus",
+     "Achilles Tatius",
+     "Chariton",
+     "erotic triangulation"
+    ],
+    "lost_relations": [
+     "support for Plato/Phaedrus in the supplied window"
+    ],
+    "alternatives": [
+     "Scranton 2014 likely supplies Plato/Phaedrus but is not in the supplied materials."
+    ],
+    "correction_pathway": "Supply the Scranton passage or delete 'and Plato (in his Phaedrus)'.",
+    "confidence": "medium",
+    "confidence_note": "Rae supports most of the list; Scranton is unavailable.",
+    "windows_too_narrow": "Scranton 2014 is cited but not supplied; the Plato/Phaedrus clause cannot be decided.",
+    "spans": [
+     {
+      "source": "RAE",
+      "quote": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the lens of her thesis on literacy and erotic triangulation."
+     }
+    ]
+   },
+   "AC-1": {
+    "case": "AC-1",
+    "case_type": "placement",
+    "innocent_reading": "The lead states no operation of Carson (no stated method, argument, or result with its object); it gives career, books, awards, and honours.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Lead contains only biographical, career, bibliography, and award statements; no operation is stated.",
+    "deltas": [],
+    "omega": null,
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "Placement record only; no source attribution or operation is restated.",
+    "retained_authority": {
+     "value": "unknown",
+     "evidence": "No operation of the subject is stated in the supplied lead.",
+     "revision_required": "None; record the first operation if later text supplies one."
+    },
+    "surviving_relations": [],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None.",
+    "confidence": "high",
+    "confidence_note": "The lead is fully supplied and contains no stated method, argument, or result.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "ARTICLE",
+      "quote": "Carson has written more than twenty books, including collections of essays and poetry, as well as translations of ancient Greek tragedies."
+     }
+    ]
+   },
+   "TU-1": {
+    "case": "TU-1",
+    "case_type": "placement",
+    "innocent_reading": "The lead states several operations of Turing: formalising algorithm and computation with the Turing machine; cryptanalysis contributions; the Turing test; the Turing pattern; designing the Automatic Computing Engine; and work on morphogenesis and chemical oscillators.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Lead states operations including formalising algorithm/computation with the Turing machine, contributing to cryptanalysis and the Turing test, designing the ACE, and working on morphogenesis.",
+    "deltas": [],
+    "omega": null,
+    "attribute": "formalised the concepts of algorithm and computation with the Turing machine",
+    "attributization": "no",
+    "attributization_reason": "Placement record only; the lead states operations, but no source attribution is assessed.",
+    "retained_authority": {
+     "value": "unknown",
+     "evidence": "Placement record only; no source is supplied.",
+     "revision_required": "None; first operation appears in the lead's second sentence."
+    },
+    "surviving_relations": [
+     "formalised algorithm/computation with Turing machine",
+     "cryptanalysis contributions",
+     "Turing test",
+     "Turing pattern",
+     "designed Automatic Computing Engine",
+     "morphogenesis and chemical oscillators"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None.",
+    "confidence": "high",
+    "confidence_note": "The lead explicitly states the operations.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "ARTICLE",
+      "quote": "He formalised the concepts of algorithm and computation with the Turing machine, a model of a general-purpose computer"
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "He also contributed the Turing test to philosophy of artificial intelligence and the Turing pattern concept to mathematical and theoretical biology."
+     }
+    ]
+   },
+   "CU-1": {
+    "case": "CU-1",
+    "case_type": "placement",
+    "innocent_reading": "The lead states operations of Curie: she studied at the Flying University and began practical scientific training; conducted pioneering research on radioactivity and coined the term; directed the first studies into treatment of neoplasms by radioactive isotopes; founded the Curie Institutes; developed mobile radiography units; and named polonium.",
+    "innocent_reading_fails_at": null,
+    "support": [
+     "supported"
+    ],
+    "support_source": [
+     "at the sentence"
+    ],
+    "paraphrase": "Lead states operations including studying at the Flying University, conducting pioneering radioactivity research and coining the term, directing early studies on treating neoplasms with radioactive isotopes, founding institutes, developing mobile radiography units, and naming polonium.",
+    "deltas": [],
+    "omega": null,
+    "attribute": "conducted pioneering research on radioactivity—a term she coined",
+    "attributization": "no",
+    "attributization_reason": "Placement record only; the lead states operations, but no source attribution is assessed.",
+    "retained_authority": {
+     "value": "unknown",
+     "evidence": "Placement record only; no source is supplied.",
+     "revision_required": "None; first scientific operation appears in the lead after the marriage sentence."
+    },
+    "surviving_relations": [
+     "studied at Flying University",
+     "began practical scientific training",
+     "conducted pioneering research on radioactivity",
+     "coined radioactivity term",
+     "directed first studies on neoplasms",
+     "founded Curie Institutes",
+     "developed mobile radiography units",
+     "named polonium"
+    ],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None.",
+    "confidence": "high",
+    "confidence_note": "The lead explicitly states the operations.",
+    "windows_too_narrow": null,
+    "spans": [
+     {
+      "source": "ARTICLE",
+      "quote": "In 1895, Curie married Pierre, with whom she conducted pioneering research on radioactivity—a term she coined."
+     },
+     {
+      "source": "ARTICLE",
+      "quote": "Under Curie's direction, the world's first studies were conducted into the treatment of neoplasms by the use of radioactive isotopes."
+     }
+    ]
+   }
+  },
+  "spans": [
+   {
+    "case": "SR-W1",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of"
+   },
+   {
+    "case": "SR-W1",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "It can be shown by experience and by theory that there are exactly six kinds of sophistical refutati"
+   },
+   {
+    "case": "SR-W1",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "There are seven kinds that do not depend on the way language is used: accident, secundum quid (omiss"
+   },
+   {
+    "case": "SR-W1",
+    "src": "SEPLOGIC",
+    "seen": true,
+    "full": true,
+    "q": "On Sophistical Refutations is a final section, or an appendix, to the Topics"
+   },
+   {
+    "case": "SR-W2",
+    "src": "SE34GR",
+    "seen": true,
+    "full": true,
+    "q": "περὶ δὲ τοῦ συλλογίζεσθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν"
+   },
+   {
+    "case": "SR-W2",
+    "src": "MIT",
+    "seen": true,
+    "full": true,
+    "q": "on the subject of reasoning we had nothing else of an earlier date to speak of at all"
+   },
+   {
+    "case": "SR-W3",
+    "src": "MIT",
+    "seen": true,
+    "full": true,
+    "q": "Our programme was, then, to discover some faculty of reasoning about any theme put before us from th"
+   },
+   {
+    "case": "SR-W3",
+    "src": "MIT",
+    "seen": true,
+    "full": true,
+    "q": "for the art of sophistry is a certain appearance of wisdom without the reality"
+   },
+   {
+    "case": "SR-W3",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "Indeed, the book is refreshingly uncommitted to moral views about a dialectician’s giving advice to "
+   },
+   {
+    "case": "SR-W4-6",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "The book contains 34 chapters, but naturally falls in two parts: chapters concerned with tactics for"
+   },
+   {
+    "case": "SR-W7-8",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "In Chapter 4, sophistical refutations are divided into two groups: those that depend on the ‘‘use of"
+   },
+   {
+    "case": "SR-W7-8",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "It can be shown by experience and by theory that there are exactly six kinds of sophistical refutati"
+   },
+   {
+    "case": "SR-W7-8",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "There are seven kinds that do not depend on the way language is used: accident, secundum quid (omiss"
+   },
+   {
+    "case": "SR-W7-8",
+    "src": "KRABBE",
+    "seen": true,
+    "full": true,
+    "q": "Examples of these (except petitio principii) are given in Chapter 5."
+   },
+   {
+    "case": "TH-1",
+    "src": "EB1911",
+    "seen": true,
+    "full": true,
+    "q": "His writing probably differed little from the Aristotelian treatment of the same themes, though supp"
+   },
+   {
+    "case": "TH-2",
+    "src": "SEPTHEO",
+    "seen": true,
+    "full": true,
+    "q": "He wrote many treatises in all areas of philosophy, in order to support, improve, expand, and develo"
+   },
+   {
+    "case": "IW-1",
+    "src": "WILSON",
+    "seen": true,
+    "full": true,
+    "q": "Carson tries to translate nothing which is not in the Greek, and to follow the original word order a"
+   },
+   {
+    "case": "IW-1",
+    "src": "WILSON",
+    "seen": true,
+    "full": true,
+    "q": "Unlike other translators, Carson adds no possessive pronouns or definite articles that are not prese"
+   },
+   {
+    "case": "EB-1",
+    "src": "RAE",
+    "seen": true,
+    "full": true,
+    "q": "Carson’s book examines the works of Longus, Heliodorus, Achilles Tatius, and Chariton through the le"
+   },
+   {
+    "case": "AC-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "Carson has written more than twenty books, including collections of essays and poetry, as well as tr"
+   },
+   {
+    "case": "TU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "He formalised the concepts of algorithm and computation with the Turing machine, a model of a genera"
+   },
+   {
+    "case": "TU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "He also contributed the Turing test to philosophy of artificial intelligence and the Turing pattern "
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "In 1895, Curie married Pierre, with whom she conducted pioneering research on radioactivity—a term s"
+   },
+   {
+    "case": "CU-1",
+    "src": "ARTICLE",
+    "seen": true,
+    "full": true,
+    "q": "Under Curie's direction, the world's first studies were conducted into the treatment of neoplasms by"
+   }
+  ]
+ }
+}

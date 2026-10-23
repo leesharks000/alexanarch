@@ -1,0 +1,314 @@
+```json
+[
+  {
+    "case": "SY-1",
+    "case_type": "sentence",
+    "innocent_reading": "Prior Analytics defines a syllogism as discourse in which, certain things being stated, something other than what is stated follows of necessity; the SEP entry says the definition appears to require at least two premises and a conclusion, necessity, and difference from the premises. The sentence's broad description is close to that definition.",
+    "innocent_reading_fails_at": "No supplied source says exactly two propositions, and the Greek gloss 'conclusion, inference' is unsourced in the supplied window; 'two' over-specifies the definition's 'certain things' and SEP's 'at least two premises'.",
+    "support": ["partially supported", "qualifier added", "interpretation beyond descriptive paraphrase"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "A syllogism is discourse in which, certain things being stated, something other than what is stated follows of necessity from their being so; the SEP says the definition appears to require at least two premises and a conclusion, necessity, and difference.",
+    "deltas": [
+      {"sentence_says": "based on two propositions", "source_says": "certain things being stated", "kind": "scope", "measure": "source fidelity", "lambda": 4},
+      {"sentence_says": "two propositions", "source_says": "at least two premises and a conclusion", "kind": "qualifier added", "measure": "primary-text adequacy", "lambda": 4},
+      {"sentence_says": "conclusion, inference", "source_says": "no supplied source for the gloss", "kind": "idea introduced", "measure": "source fidelity", "lambda": null}
+    ],
+    "omega": "defines a syllogism as discourse in which, certain things stated, something different follows of necessity.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence defines a term; it does not restate a source act as a credential or category property.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The argument-premise-conclusion structure survives, but the necessity relation is softened into 'applies deductive reasoning', and 'two' narrows the source's 'certain things'.",
+      "revision_required": "Replace 'two propositions' with 'certain propositions' or 'at least two premises', and cite the definition."
+    },
+    "holder_and_mood": {
+      "source": {"holder": "Aristotle, reported by the SEP author", "mood": "asserted", "span": {"source": "SEPANC", "quote": "Aristotle defines a syllogism as ‘an argument ( logos ) in which, certain things having been laid down, something different from what has been laid down follows of necessity because these things are so’."}},
+      "sentence": {"holder": "article voice, unattributed", "mood": "asserted", "span": {"source": "ARTICLE", "quote": "A syllogism (Ancient Greek συλλογισμός, syllogismos, 'conclusion, inference') is a kind of logical argument"}},
+      "match": false
+    },
+    "surviving_relations": ["argument", "premises", "conclusion", "necessity in part"],
+    "lost_relations": ["at least two premises", "difference of conclusion from premises", "no external term", "source for the Greek gloss"],
+    "alternatives": ["'Two propositions' may describe the traditional categorical syllogism rather than Aristotle's general definition."],
+    "correction_pathway": "Cite Prior Analytics or the SEP and revise 'two' to 'certain' or 'at least two'; source the etymology or remove it.",
+    "confidence": "medium",
+    "confidence_note": "The supplied sources support the broad definition but not the exact 'two' or the Greek gloss.",
+    "windows_too_narrow": "The window does not supply a lexical source for 'conclusion, inference'.",
+    "spans": [
+      {"source": "APRMIT", "quote": "A syllogism is discourse in which, certain things being stated, something other than what is stated follows of necessity from their being so."},
+      {"source": "SEPANC", "quote": "This definition appears to require (i) that a syllogism consists of at least two premises and a conclusion"}
+    ]
+  },
+  {
+    "case": "PA-1",
+    "case_type": "sentence",
+    "innocent_reading": "Barnes's quoted phrase 'History's first logic has also been the most influential' supports a priority claim for Aristotle's logic, and SE 34 says that about syllogizing there was nothing earlier to say. The sentence may summarize that priority.",
+    "innocent_reading_fails_at": "No supplied source says Prior Analytics, 'scientifically investigated', or 'Logic' as a field. The Barnes quotation gives only 'History's first logic'; SE 34 speaks of syllogizing and an undertaking, not of Prior Analytics or scientific investigation.",
+    "support": ["partially supported", "interpretation beyond descriptive paraphrase", "unresolved"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "Barnes: History's first logic has also been the most influential. SE 34: about syllogizing we had nothing else earlier to say.",
+    "deltas": [
+      {"sentence_says": "Aristotle's Prior Analytics represents the first time in history", "source_says": "History's first logic has also been the most influential", "kind": "term changed", "measure": "source fidelity", "lambda": 4},
+      {"sentence_says": "Logic is scientifically investigated", "source_says": "no supplied source for scientific investigation", "kind": "idea introduced", "measure": "source fidelity", "lambda": null},
+      {"sentence_says": "Prior Analytics", "source_says": "on the subject of reasoning we had nothing else of an earlier date to speak of at all", "kind": "idea introduced", "measure": "source fidelity", "lambda": 4}
+    ],
+    "omega": "claims history's first logic and its influence.",
+    "attribute": "first time in history when Logic is scientifically investigated",
+    "attributization": "yes",
+    "attributization_reason": "The sentence converts a priority claim about logic into a credential of the work, Prior Analytics.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "A broad priority claim is retained via Barnes, but the work, the field 'Logic', and 'scientifically investigated' are not in the supplied source lines.",
+      "revision_required": "Cite Barnes at the sentence and narrow to 'History's first logic', or supply a source for Prior Analytics and scientific investigation."
+    },
+    "holder_and_mood": {
+      "source": {"holder": "Barnes, in his own voice; Aristotle in SE 34", "mood": "asserted", "span": {"source": "BARNES", "quote": "History's first logic has also been the most influential..."}},
+      "sentence": {"holder": "article voice, unattributed", "mood": "asserted", "span": {"source": "ARTICLE", "quote": "Aristotle's Prior Analytics represents the first time in history when Logic is scientifically investigated."}},
+      "match": false
+    },
+    "surviving_relations": ["broad priority of Aristotle's logic"],
+    "lost_relations": ["Prior Analytics as subject", "scientific investigation", "Logic as a field", "citation at the sentence"],
+    "alternatives": ["Barnes's full page may support more than the quoted sentence, but it was not supplied."],
+    "correction_pathway": "Quote and cite Barnes at the sentence, or revise to 'History's first logic' and add a source for the stronger claim.",
+    "confidence": "medium",
+    "confidence_note": "The supplied Barnes quotation is only a fragment and the stronger predicates are absent.",
+    "windows_too_narrow": "Barnes p. 27 was not fetched; only the article's quoted fragment is supplied.",
+    "spans": [
+      {"source": "BARNES", "quote": "History's first logic has also been the most influential..."},
+      {"source": "SE34GR", "quote": "περὶ δὲ τοῦ συλλογίζεσθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν"}
+    ]
+  },
+  {
+    "case": "NE-1",
+    "case_type": "sentence",
+    "innocent_reading": "NE II.6 says virtue is a mean between two vices, one depending on excess and one on deficiency, and Ross translates it as virtue lying in a mean between excess and defect. The sentence's core claim is directly supported.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "Virtue is a state of character concerned with choice, lying in a mean relative to us, determined by reason; it is a mean between two vices, excess and deficiency.",
+    "deltas": [
+      {"sentence_says": "at a mean between deficiency and excess", "source_says": "lying in a mean, i.e. the mean relative to us", "kind": "omission", "measure": "operative retention", "lambda": 4}
+    ],
+    "omega": "places moral virtue at a mean between excess and deficiency.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence reports Aristotle's doctrine as an act of saying, not a credential or category property.",
+    "retained_authority": {
+      "value": "retained",
+      "evidence": "The mean-between-extremes relation is retained; the relative-to-us qualification and exceptions are omitted but not contradicted.",
+      "revision_required": "None for the core claim; add 'relative to us' if precision is wanted."
+    },
+    "holder_and_mood": {
+      "source": {"holder": "Aristotle, in his own voice", "mood": "asserted", "span": {"source": "NEMIT", "quote": "Virtue, then, is a state of character concerned with choice, lying in a mean"}},
+      "sentence": {"holder": "Aristotle, reported by the article", "mood": "reported", "span": {"source": "ARTICLE", "quote": "Aristotle says moral virtues are found at a mean (mesótēs) between deficiency and excess."}},
+      "match": true
+    },
+    "surviving_relations": ["mean between excess and deficiency", "moral virtue"],
+    "lost_relations": ["mean relative to us", "determination by reason", "exceptions for some actions and passions"],
+    "alternatives": [],
+    "correction_pathway": "None required; optionally add the relative-to-us qualification.",
+    "confidence": "high",
+    "confidence_note": "NE II.6 and Ross directly support the core sentence.",
+    "windows_too_narrow": null,
+    "spans": [
+      {"source": "NEMIT", "quote": "Now it is a mean between two vices, that which depends on excess and that which depends on defect"},
+      {"source": "NEGR", "quote": "μεσότης δὲ δύο κακιῶν, τῆς μὲν καθ᾽ ὑπερβολὴν τῆς δὲ κατ᾽ ἔλλειψιν"}
+    ]
+  },
+  {
+    "case": "CA-1",
+    "case_type": "sentence",
+    "innocent_reading": "Categories ch. 4 lists ten kinds of things said without combination: substance, quantity, quality, relation, place, time, position, state, action, affection. That supports 'ten categories' and a broad classification of things said.",
+    "innocent_reading_fails_at": "No supplied source says 'every object of human apprehension' or gives the medieval Latin term 'praedicamenta'.",
+    "support": ["partially supported", "interpretation beyond descriptive paraphrase", "unresolved"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "Expressions which are in no way composite signify substance, quantity, quality, relation, place, time, position, state, action, or affection.",
+    "deltas": [
+      {"sentence_says": "places every object of human apprehension", "source_says": "Expressions which are in no way composite signify substance, quantity, quality, relation, place, time, position, state, action, or affection", "kind": "idea introduced", "measure": "source fidelity", "lambda": 4},
+      {"sentence_says": "praedicamenta", "source_says": "no supplied source for the medieval Latin term", "kind": "idea introduced", "measure": "source fidelity", "lambda": null}
+    ],
+    "omega": "lists ten kinds of non-composite expressions.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence describes a classificatory scheme, not a credential or category membership attributed to a person.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The tenfold list is retained; 'every object of human apprehension' and 'praedicamenta' are not in the supplied source.",
+      "revision_required": "Cite Categories ch. 4 and qualify the scope; source or remove the medieval Latin term."
+    },
+    "holder_and_mood": {
+      "source": {"holder": "Aristotle, in his own voice", "mood": "asserted", "span": {"source": "CATMIT", "quote": "Expressions which are in no way composite signify substance, quantity, quality, relation, place, time, position, state, action, or affection."}},
+      "sentence": {"holder": "article voice, unattributed", "mood": "asserted", "span": {"source": "ARTICLE", "quote": "The Categories places every object of human apprehension under one of ten categories"}},
+      "match": false
+    },
+    "surviving_relations": ["ten categories", "non-composite expressions"],
+    "lost_relations": ["scope of 'every object of human apprehension'", "source for praedicamenta"],
+    "alternatives": ["The medieval term may be supported by an unsupplied source; the supplied window does not show it."],
+    "correction_pathway": "Cite Categories ch. 4, narrow the scope, and source the medieval term.",
+    "confidence": "medium",
+    "confidence_note": "The tenfold list is clear; the universal scope and Latin term are not in the supplied window.",
+    "windows_too_narrow": "The window lacks a source for the medieval Latin term and for the 'every object' formulation.",
+    "spans": [
+      {"source": "CATMIT", "quote": "Expressions which are in no way composite signify substance, quantity, quality, relation, place, time, position, state, action, or affection."},
+      {"source": "CATGR", "quote": "Τῶν κατὰ μηδεμίαν συμπλοκὴν λεγομένων ἕκαστον ἤτοι οὐσίαν σημαίνει ἢ ποσὸν ἢ ποιὸν ἢ πρός τι ἢ ποῦ ἢ ποτὲ ἢ κεῖσθαι ἢ ἔχειν ἢ ποιεῖν ἢ πάσχειν."}
+    ]
+  },
+  {
+    "case": "AR-1",
+    "case_type": "sentence",
+    "innocent_reading": "The SEP says Aristotle's logical works contain the earliest formal study of logic; the article's cited Britannica, Durant, and Kukkonen may support the other claims. The sentence may summarize a broad legacy.",
+    "innocent_reading_fails_at": "The supplied SEP supports only 'earliest formal study of logic', not 'founder of term logic', 'pioneered zoology', or 'contributions to the scientific method'. The cited Britannica, Durant, and Kukkonen were not supplied.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": ["elsewhere in the article", "none"],
+    "paraphrase": "Aristotle's logical works contain the earliest formal study of logic that we have.",
+    "deltas": [
+      {"sentence_says": "founder of term logic", "source_says": "earliest formal study of logic", "kind": "term changed", "measure": "source fidelity", "lambda": 4},
+      {"sentence_says": "pioneered the study of zoology", "source_says": "no supplied source", "kind": "idea introduced", "measure": "source fidelity", "lambda": null},
+      {"sentence_says": "benefited future scientists and philosophers through his contributions to the scientific method", "source_says": "no supplied source", "kind": "idea introduced", "measure": "source fidelity", "lambda": null}
+    ],
+    "omega": "earliest formal study of logic.",
+    "attribute": "founder of term logic; pioneer of zoology; benefactor through scientific method",
+    "attributization": "yes",
+    "attributization_reason": "The sentence attributes multiple founding and benefit properties to Aristotle.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "A broad priority in logic is supported by the SEP; the other two claims are unsupported in the supplied materials.",
+      "revision_required": "Supply the cited Britannica/Durant/Kukkonen passages or narrow the sentence to the SEP-supported claim."
+    },
+    "holder_and_mood": {
+      "source": {"holder": "Robin Smith in the SEP, in his own voice", "mood": "asserted", "span": {"source": "SEPLOGIC", "quote": "Aristotle’s logical works contain the earliest formal study of logic that we have."}},
+      "sentence": {"holder": "article voice, with citations not supplied", "mood": "asserted", "span": {"source": "ARTICLE", "quote": "Aristotle was the founder of term logic, pioneered the study of zoology, and benefited future scientists and philosophers through his contributions to the scientific method."}},
+      "match": false
+    },
+    "surviving_relations": ["earliest formal study of logic"],
+    "lost_relations": ["term logic", "zoology", "scientific method"],
+    "alternatives": ["The unfetched Britannica and books may support the full sentence."],
+    "correction_pathway": "Fetch and quote the cited sources, or reduce the sentence to what the SEP supports.",
+    "confidence": "medium",
+    "confidence_note": "Only the logic clause has a supplied source; the other clauses are unresolved.",
+    "windows_too_narrow": "The Britannica page and the two books were not supplied.",
+    "spans": [
+      {"source": "SEPLOGIC", "quote": "Aristotle’s logical works contain the earliest formal study of logic that we have."}
+    ]
+  },
+  {
+    "case": "ARE-1",
+    "case_type": "sentence",
+    "innocent_reading": "LSJ gives ἀρετή as 'goodness, excellence, of any kind', and the article's cited Collins may support 'full realization of potential or inherent function'.",
+    "innocent_reading_fails_at": "The supplied LSJ supports 'excellence of any kind' but not 'full realization of potential or inherent function'; Collins was not supplied.",
+    "support": ["partially supported", "unresolved"],
+    "support_source": ["at the sentence", "none"],
+    "paraphrase": "ἀρετή means goodness, excellence, of any kind; later, moral virtue.",
+    "deltas": [
+      {"sentence_says": "full realization of potential or inherent function", "source_says": "goodness, excellence, of any kind", "kind": "idea introduced", "measure": "source fidelity", "lambda": 5},
+      {"sentence_says": "especially a person or thing's", "source_says": "of any kind", "kind": "qualifier added", "measure": "source fidelity", "lambda": 4}
+    ],
+    "omega": "glosses ἀρετή as excellence of any kind.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence gives a lexical definition, not a credential or category property.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The 'excellence' sense is retained; the 'full realization' gloss is unresolved and the 'especially' relation is not in LSJ.",
+      "revision_required": "Supply Collins or remove the 'full realization' clause."
+    },
+    "holder_and_mood": {
+      "source": {"holder": "LSJ lexicographers", "mood": "asserted", "span": {"source": "LSJ", "quote": "goodness, excellence, of any kind"}},
+      "sentence": {"holder": "article voice, unattributed", "mood": "asserted", "span": {"source": "ARTICLE", "quote": "Arete (Ancient Greek ἀρετή, aretḗ) is a concept in ancient Greek thought that refers to \"excellence\" of any kind"}},
+      "match": false
+    },
+    "surviving_relations": ["excellence of any kind"],
+    "lost_relations": ["source for full realization", "the 'especially' relation"],
+    "alternatives": ["Collins may define arete as full realization; it was not supplied."],
+    "correction_pathway": "Fetch and quote Collins or drop the unsupported gloss.",
+    "confidence": "medium",
+    "confidence_note": "LSJ supports the first gloss; the second is unresolved.",
+    "windows_too_narrow": "The Collins dictionary entry was not supplied.",
+    "spans": [
+      {"source": "LSJ", "quote": "goodness, excellence, of any kind"},
+      {"source": "LSJ", "quote": "esp. moral virtue"}
+    ]
+  },
+  {
+    "case": "OR-1",
+    "case_type": "sentence",
+    "innocent_reading": "The SEP says ancient commentators grouped several of Aristotle's treatises under the title Organon ('Instrument') and regarded them as comprising his logical works, listing six works. That supports the six-work collection and the 'instrument' meaning.",
+    "innocent_reading_fails_at": "The source does not say 'standard collection', and it gives 'Instrument' rather than 'instrument, tool, organ'.",
+    "support": ["partially supported", "qualifier added"],
+    "support_source": ["elsewhere in the article"],
+    "paraphrase": "Ancient commentators grouped several of Aristotle's treatises under the title Organon ('Instrument') and regarded them as comprising his logical works: Categories, On Interpretation, Prior Analytics, Posterior Analytics, Topics, On Sophistical Refutations.",
+    "deltas": [
+      {"sentence_says": "standard collection", "source_says": "grouped together several of Aristotle’s treatises under the title Organon", "kind": "qualifier added", "measure": "source fidelity", "lambda": 4},
+      {"sentence_says": "instrument, tool, organ", "source_says": "Organon (“Instrument”)", "kind": "term changed", "measure": "source fidelity", "lambda": 4}
+    ],
+    "omega": "groups six logical works under the title Organon, meaning Instrument.",
+    "attribute": null,
+    "attributization": "no",
+    "attributization_reason": "The sentence describes a collection and its title, not a credential or category property.",
+    "retained_authority": {
+      "value": "mixed",
+      "evidence": "The six works and the instrument sense are retained; 'standard' and 'tool, organ' are added.",
+      "revision_required": "Cite the SEP and align 'standard collection' and the gloss with its wording."
+    },
+    "holder_and_mood": {
+      "source": {"holder": "ancient commentators, reported by the SEP author", "mood": "reported", "span": {"source": "SEPLOGIC", "quote": "The ancient commentators grouped together several of Aristotle’s treatises under the title Organon (“Instrument”)"}},
+      "sentence": {"holder": "article voice, unattributed", "mood": "asserted", "span": {"source": "ARTICLE", "quote": "The Organon (Ancient Greek Ὄργανον, meaning \"instrument, tool, organ\") is the standard collection of Aristotle's six works"}},
+      "match": false
+    },
+    "surviving_relations": ["six works", "title Organon", "instrument meaning"],
+    "lost_relations": ["standardness", "tool and organ gloss", "attribution to ancient commentators"],
+    "alternatives": ["'Standard collection' may be a common summary, but the supplied source says only that commentators grouped them."],
+    "correction_pathway": "Cite the SEP, say 'collection' rather than 'standard collection', and source the fuller gloss.",
+    "confidence": "medium",
+    "confidence_note": "The six works and instrument sense are supported; the added qualifiers are not.",
+    "windows_too_narrow": null,
+    "spans": [
+      {"source": "SEPLOGIC", "quote": "The ancient commentators grouped together several of Aristotle’s treatises under the title Organon (“Instrument”) and regarded them as comprising his logical works"},
+      {"source": "SEPLOGIC", "quote": "Categories On Interpretation Prior Analytics Posterior Analytics Topics On Sophistical Refutations"}
+    ]
+  },
+  {
+    "case": "AV-1",
+    "case_type": "placement",
+    "innocent_reading": "The lead states an operation of the subject: Avicenna combines empirical observation, philosophical reasoning, and logical analysis in order to conduct his analysis and reach conclusions, especially in his medical works.",
+    "innocent_reading_fails_at": null,
+    "support": ["supported"],
+    "support_source": ["at the sentence"],
+    "paraphrase": "The lead states a methodological operation with its object: combining empirical observation, philosophical reasoning, and logical analysis to conduct analysis and reach conclusions.",
+    "deltas": [],
+    "omega": "combines empirical observation, philosophical reasoning, and logical analysis to conduct analysis and reach conclusions.",
+    "attribute": "unique methodological approach",
+    "attributization": "no",
+    "attributization_reason": "Placement record only; the lead states an operation as an act, not a source credential.",
+    "retained_authority": {
+      "value": "unknown",
+      "evidence": "Placement record only; no source is supplied.",
+      "revision_required": "None; first operation appears in the lead's penultimate sentences."
+    },
+    "holder_and_mood": null,
+    "surviving_relations": ["empirical observation", "philosophical reasoning", "logical analysis", "conduct analysis and reach conclusions"],
+    "lost_relations": [],
+    "alternatives": [],
+    "correction_pathway": "None.",
+    "confidence": "high",
+    "confidence_note": "The lead explicitly states the method and its object.",
+    "windows_too_narrow": null,
+    "spans": [
+      {"source": "ARTICLE", "quote": "He combines a unique blend of empirical observation, philosophical reasoning, and logical analysis, in order to conduct his analysis and reach his conclusions."}
+    ]
+  },
+  {
+    "case": "SR-W2",
+    "holder_and_mood": {
+      "source": {"holder": "Aristotle, speaking in his own voice in the retrospective", "mood": "asserted", "span": {"source": "SE34GR", "quote": "Ταύτης δὲ τῆς πραγματείας οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν παντελῶς ὑπῆρχεν."}},
+      "sentence": {"holder": "Aristotle, attributed by 'According to Aristotle'", "mood": "reported", "span": {"source": "ARTICLE", "quote": "According to Aristotle, this is the first work to treat the subject of deductive reasoning in ancient Greece"}},
+      "match": true
+    },
+    "spans": [
+      {"source": "ARTICLE", "quote": "According to Aristotle, this is the first work to treat the subject of deductive reasoning in ancient Greece (Soph. Ref., 34, 183b34 ff.)."},
+      {"source": "SE34GR", "quote": "περὶ δὲ τοῦ συλλογίζεσθαι παντελῶς οὐδὲν εἴχομεν πρότερον ἄλλο λέγειν"},
+      {"source": "MIT", "quote": "on the subject of reasoning we had nothing else of an earlier date to speak of at all"}
+    ]
+  }
+]
+```
