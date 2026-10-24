@@ -1,0 +1,1929 @@
+{
+ "@context": {
+  "schema": "https://schema.org/",
+  "sp": "urn:alexanarch:draft:inspection-vocab:"
+ },
+ "@graph": [
+  {
+   "@id": "https://www.alexanarch.org/s/records/1701/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "The leesharks Datasets on Hugging Face — inspection packet",
+   "schema:version": "v1.0",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "schema:about": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "schema:disambiguatingDescription": "Deposited as Alexanarch #1701, v1.0, 2026-10-24.",
+   "sp:status": "deposited",
+   "sp:sourceEpoch": "traversals of 2026-10-24 (01:20–01:40 UTC and after the repairs of the same day); receipts beside the packet",
+   "sp:registers": [
+    "documented",
+    "inferential",
+    "engineered-target"
+   ],
+   "sp:checkStates": [
+    "documented-source-read",
+    "supplied-draft-report",
+    "executed-sample",
+    "check-available-not-run",
+    "undeclared",
+    "inaccessible",
+    "contradicted",
+    "proposed"
+   ],
+   "schema:citation": [
+    {
+     "@id": "https://www.alexanarch.org/s/records/1677/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1680/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1684/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1687/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1694/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1419/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1472/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/909/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1432/"
+    }
+   ],
+   "schema:dateModified": "2026-10-24"
+  },
+  {
+   "@id": "https://orcid.org/0009-0000-1599-0703",
+   "@type": "schema:Person",
+   "schema:name": "Lee Sharks"
+  },
+  {
+   "@id": "https://www.alexanarch.org/",
+   "@type": "schema:Library",
+   "schema:name": "Alexanarch",
+   "schema:founder": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   }
+  },
+  {
+   "@id": "https://www.alexanarch.org/s/records/1677/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "Metadata Packet for AI Indexing: A Formal Specification (v2.0)",
+   "schema:identifier": "AXN:06F3.MPAI.🌈🤲🌑🔅🤲🔺"
+  },
+  {
+   "@id": "https://www.alexanarch.org/s/records/1680/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.5)",
+   "schema:identifier": "AXN:06F6.MPAI.∮🍀♌⌛💛👋"
+  },
+  {
+   "@id": "https://www.alexanarch.org/s/records/1684/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "EA-PREDICTION-INDEX-01 — The Prediction Index of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (4,394 Claims in 194 Subject Pages)",
+   "schema:identifier": "AXN:06FA.DATASET.🌱🀄🌉💧🔽🪞"
+  },
+  {
+   "@id": "https://www.alexanarch.org/s/records/1687/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "Enter the Crimson Hexagon — The Seat Map of the Crimson Hexagonal Archive: Method, Locations, Organization and Contents (EA-HEXAGON-ENTER-01 v1.0)",
+   "schema:identifier": "AXN:06FD.GOVERNANCE.🌉💙⌛⛩️🝊🏴"
+  },
+  {
+   "@id": "https://www.alexanarch.org/s/records/1694/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "EA-PER-RECALC-01 — The Provenance Erasure Rate Recalculated across the Capture Registry: Method, Locations, Organization and Contents (946 Observations, PER-dim Rubric v1.1)",
+   "schema:identifier": "AXN:0704.DATASET.⚡👁️🏁💛👈🪸"
+  },
+  {
+   "@id": "https://www.alexanarch.org/s/records/1419/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "EA-SURFACE-BINDING-01 — Site↔Repository Identity Binding for the Fleet: Doctrine, Schema, Applicator, Rollout (v1.0)",
+   "schema:identifier": "AXN:059C.OPERATIVE.✋🔃🕌🔭🪸♌"
+  },
+  {
+   "@id": "https://www.alexanarch.org/s/records/1472/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "Fleet Placement: Where the Measurement-Stack Documents Live, and in What Form on Each Surface",
+   "schema:identifier": "AXN:05F2.OPERATIVE.🎨🗺️💚🛤️↖️♣️"
+  },
+  {
+   "@id": "https://www.alexanarch.org/s/records/909/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "EA-RHIZOME-01 v0.1: The Data-Rhizome — Architectural Principles for Substrate Without Center",
+   "schema:identifier": "AXN:0399.GENERATIVE.♍📜🔮🔐⚫📜"
+  },
+  {
+   "@id": "https://www.alexanarch.org/s/records/1432/",
+   "@type": "schema:CreativeWork",
+   "schema:name": "AXN-SYMBOLON-SPEC v0.2 — The Symbolon as Split-Identity Verification Primitive: Content-Derived Inscription, Two-Seed Reconstruction, and the Third Development of the Symbolon Line",
+   "schema:identifier": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection",
+   "@type": "schema:DataCatalog",
+   "schema:name": "leesharks Hugging Face dataset collection",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "schema:disambiguatingDescription": "A canonical archive projection, selective rhizomes, works composed as datasets and a third-party witness copy; a separate Space is an application.",
+   "sp:datasetCount": 15,
+   "sp:classificationCount": [
+    {
+     "sp:class": "canonical-projection",
+     "sp:count": 1
+    },
+    {
+     "sp:class": "rhizome",
+     "sp:count": 8
+    },
+    {
+     "sp:class": "work-dataset",
+     "sp:count": 5
+    },
+    {
+     "sp:class": "witness-copy",
+     "sp:count": 1
+    }
+   ],
+   "sp:sourceEpoch": "see inspection-receipts.json; not a timeless count"
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/crimson-hexagonal-archive",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "canonical-projection",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:configurationCount": 27,
+   "sp:buildManifest": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:parquetMegabytes": 81.0,
+   "sp:depositsWithCanonicalText": 1697,
+   "sp:depositsWithoutCanonicalText": [
+    446,
+    532,
+    760
+   ]
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:0",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:provenance-erasure",
+   "sp:predicate": "measured_through",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "PER, Erasure Skew and the Atomic Token Rule are the measurement apparatus; they are their own body"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:1",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:classifier-model-collapse",
+   "sp:predicate": "governed_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/classifier-governance"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "not-emitted-in-inspected-collection",
+   "sp:note": "moderation feedback as a governance question rather than a generative one"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:2",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:heteronymic-plurality",
+   "sp:predicate": "instantiated_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "authorial plurality as an anti-collapse mechanism is instantiated by the identity records"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:3",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:semantic-economy",
+   "sp:predicate": "situated_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the political economy in which contraction is profitable"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:4",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:machine-reception",
+   "sp:predicate": "observed_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the capture registry holds the observations; 411 captures are not reproduced here"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:5",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:archive-resilience",
+   "sp:predicate": "practised_as",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/archive-resilience"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "not-emitted-in-inspected-collection",
+   "sp:note": "substrate multiplication, mirrors and custody as operational practice"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:6",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:erratum",
+   "sp:predicate": "corrected_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/epistemic-corrections"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "not-emitted-in-inspected-collection",
+   "sp:note": "the errata slate is a body in its own right; a correction preserved is anti-collapse by function"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:7",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:compression",
+   "sp:predicate": "expanded_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "THE INVERSE OPERATION, AND A TEST CASE THIS BODY CANNOT RUN. The midrashim transform claims a seed-text unfolded INTO a corpus — letters become epistles, Lamb becomes atonement, operative apocalypse becomes gospel narrative. That is expansion from a compressed source, where this body measures whether compression preserves. Whether an elaboration preserves what it elaborates is the same question asked from the other end, and the Revelation body holds the case."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:8",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:reconstructive-compression",
+   "sp:predicate": "deployed_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "The holographic kernel is a formal apparatus here and deliverable eight there. THAT BODY DEPLOYS IT; this one defines what it must satisfy."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:model-collapse-anti-collapse:9",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:fromNodeKey": "concept:two-objects",
+   "sp:predicate": "reconstructed_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "A SCORE WITH PERFECT BACK-PROJECTION ON THE TEXT AND NONE ON THE ARTWORK. The kernel apparatus here defines what reconstruction means; that body supplies a case where a lossless extraction is still not the book."
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/model-collapse-anti-collapse",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "rhizome",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:recipe": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse/resolve/main/spore.json"
+   },
+   "sp:sourceRevision": "75d1081806937619861392d7395a647153b436bd",
+   "sp:generated": "2026-10-20T14:46:24Z",
+   "sp:declaredCounts": {
+    "sp:nodes": 714,
+    "sp:core": 491,
+    "sp:neighbour": 223,
+    "sp:edges": 659,
+    "sp:stolons": 10
+   },
+   "sp:reEmissionStatus": "recipe-read-not-reexecuted"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:semantic-economy:0",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:fromNodeKey": "concept:semantic-economy",
+   "sp:predicate": "narrowed_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "THE RETURN EDGE. The collapse body advertised this one; this one advertises it back. What contraction looks like from the side of the ledger — the question the parent could not finish is answered here only in part, and the part it cannot finish is what contraction does to meaning itself."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:semantic-economy:1",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:fromNodeKey": "concept:provenance-erasure",
+   "sp:predicate": "priced_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "erasure as a cost borne by the provenance-bearer and never by the composer — the asymmetry is the operation's economic form"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:semantic-economy:2",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:fromNodeKey": "concept:machine-reception",
+   "sp:predicate": "transacted_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the captures are where the economy is observable; 425 of them are not reproduced here"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:semantic-economy:3",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:fromNodeKey": "concept:heteronymic-plurality",
+   "sp:predicate": "laboured_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "who does the work when the author is twelve"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:semantic-economy:4",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:fromNodeKey": "concept:documentary-authority",
+   "sp:predicate": "settled_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "A DOCUMENTARY-AUTHORITY SETTLEMENT AT SCALE. The Domitianic consensus is a claim about which witness counts, decided by whom, and at what point it stopped being questioned — the same four powers this body measures, applied to a chronology rather than a form. Its primary external anchor is a late and ambiguous reception-history witness, and that is an admissibility question. This body does not adjudicate it."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:semantic-economy:5",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:fromNodeKey": "concept:semantic-infrastructure",
+   "sp:predicate": "built_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "#623 §4.3 maps standards to semantic infrastructure — what everyone builds on and nobody is paid for. That body is this archive's own stock of them, and 91% of its specified protocols carry no deployment marker."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:semantic-economy:6",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:fromNodeKey": "concept:semantic-labour",
+   "sp:predicate": "made_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the writing the apparatus exists for. WHO PRODUCES is this body's question and a poem is an answer to it."
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/semantic-economy",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/semantic-economy",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "rhizome",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:recipe": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy/resolve/main/spore.json"
+   },
+   "sp:sourceRevision": "75d1081806937619861392d7395a647153b436bd",
+   "sp:generated": "2026-10-20T14:48:19Z",
+   "sp:declaredCounts": {
+    "sp:nodes": 621,
+    "sp:core": 451,
+    "sp:neighbour": 170,
+    "sp:edges": 549,
+    "sp:stolons": 7
+   },
+   "sp:reEmissionStatus": "recipe-read-not-reexecuted"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:machine-mediated-reception:0",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:fromNodeKey": "concept:machine-reception",
+   "sp:predicate": "narrowed_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "RETURN EDGE to the first parent. What reception does to a distinction; the mechanism is there, not here."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:machine-mediated-reception:1",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:fromNodeKey": "concept:machine-reception",
+   "sp:predicate": "priced_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "RETURN EDGE to the second parent. Who gains by the reception being what it is."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:machine-mediated-reception:2",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:fromNodeKey": "concept:provenance-erasure",
+   "sp:predicate": "rated_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "PER and Erasure Skew as an apparatus; this body holds their outputs, not their derivation."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:machine-mediated-reception:3",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:fromNodeKey": "concept:retrieval-engineering",
+   "sp:predicate": "acted_on_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/retrieval-engineering"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "not-emitted-in-inspected-collection",
+   "sp:note": "THE SITE THIS BODY ADVERTISES AND CANNOT OCCUPY. The operations that change reception rather than measure it — SPXI, AXN, MPAI, entity deployment — with EA-OPREG-01's thirteen-field schema already holding five of them and 292 claims routed. Germinated from here it arrives carrying what the operations are FOR; built standalone it becomes optimisation available to the relations it was devised to contest."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:machine-mediated-reception:4",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:fromNodeKey": "concept:machine-reception",
+   "sp:predicate": "not_yet_observed_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "A DECLARED ABSENCE, AND THE ONLY STOLON HERE THAT POINTS AT SOMETHING THIS BODY HAS NOT SEEN. The Revelation work plan v7.3 states that its argument is 'the one major argument in the archive that the retrieval basin has not captured', and that if it enters the composition layer it will be 'the first measured instance of machine-mediated theological reception'. 71 of this registry's 426 addresses touch that body's subject and none records the thesis entering composition. THE NULL IS THE OBSERVATION, and it is advertised here so that the absence is reachable rather than merely true."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:machine-mediated-reception:5",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:fromNodeKey": "concept:inscription",
+   "sp:predicate": "instrumented_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "The captures observe what surfaces did. That body holds the technologies by which an inscription is placed to be observed at all."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:machine-mediated-reception:6",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:fromNodeKey": "concept:entity-resolution",
+   "sp:predicate": "tested_on",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "WHETHER RETRIEVAL COLLAPSES TWENTY-SIX DECLARED IDENTITIES INTO ONE is an anti-collapse experiment this archive can run on itself. The captures are the evidence and it has not been run."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:machine-mediated-reception:7",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:fromNodeKey": "concept:machine-reading-of-a-poem",
+   "sp:predicate": "observed_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "The seat's own claim: work arguing about how the training layer receives literature does not exempt itself from being received. THIS BODY HOLDS WHAT HAPPENED; that one holds the poems."
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/machine-mediated-reception",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "rhizome",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:recipe": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception/resolve/main/spore.json"
+   },
+   "sp:sourceRevision": "75d1081806937619861392d7395a647153b436bd",
+   "sp:generated": "2026-10-20T14:50:12Z",
+   "sp:declaredCounts": {
+    "sp:nodes": 1632,
+    "sp:core": 1325,
+    "sp:neighbour": 307,
+    "sp:edges": 1402,
+    "sp:stolons": 8
+   },
+   "sp:reEmissionStatus": "recipe-read-not-reexecuted"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:revelation-first:0",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:fromNodeKey": "concept:revelation-first",
+   "sp:predicate": "measured_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "THE WORK PLAN'S OWN STATED AIM. 'If this argument enters the composition layer, it will be the first measured instance of machine-mediated theological reception — and the archive will be the bearers of that news.' The measurement apparatus is there; the argument is here."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:revelation-first:1",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:fromNodeKey": "concept:heteronymic-plurality",
+   "sp:predicate": "instantiated_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "rung 5 is a heteronymy claim about a first-century corpus, and this archive runs a heteronymic practice. The relation is not incidental and it is not argued here."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:revelation-first:2",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:fromNodeKey": "concept:compression",
+   "sp:predicate": "seeded_from",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the midrashim transform is a compression claim: a seed-text elaborated into a corpus. Whether that elaboration preserves or loses is the collapse body's question, not this one's."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:revelation-first:3",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:fromNodeKey": "concept:documentary-authority",
+   "sp:predicate": "adjudicated_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "which documents count, who decides, and when a chronology becomes settled. The 1851 Act and the Domitianic consensus are the same question at different scales, and neither body resolves it."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:revelation-first:4",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:fromNodeKey": "concept:retrieval-settlement",
+   "sp:predicate": "instrumented_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "The work plan's aim is that its argument enter the composition layer. Those are the technologies for making an argument enterable, AND WHETHER THEY WORK ON THIS ONE IS UNTESTED."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:revelation-first:5",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:fromNodeKey": "concept:documentary-authority",
+   "sp:predicate": "scored_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "A chronology settled on a late and ambiguous reception-history witness is an attribution question at historical scale. THE INSTRUMENTS THERE HAVE NEVER BEEN RUN ON IT, and that is a stated gap rather than an oversight."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:revelation-first:6",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:fromNodeKey": "concept:first-text",
+   "sp:predicate": "asked_of",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "which document stands first, and who is assigned to it afterward — asked of a shelf rather than a canon."
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/revelation-first",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/revelation-first",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "rhizome",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:recipe": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first/resolve/main/spore.json"
+   },
+   "sp:sourceRevision": "75d1081806937619861392d7395a647153b436bd",
+   "sp:generated": "2026-10-20T14:52:03Z",
+   "sp:declaredCounts": {
+    "sp:nodes": 351,
+    "sp:core": 230,
+    "sp:neighbour": 121,
+    "sp:edges": 236,
+    "sp:stolons": 7
+   },
+   "sp:reEmissionStatus": "recipe-read-not-reexecuted"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:spxi-mpai:0",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:fromNodeKey": "concept:inscription",
+   "sp:predicate": "measured_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "whether an inscription was received is not answerable from the inscription. The capture registry holds the observations; this body holds the instruments that made them placeable."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:spxi-mpai:1",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:fromNodeKey": "concept:documentary-authority",
+   "sp:predicate": "priced_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "these are documentary technologies, and #623 §4 maps standards to semantic infrastructure — what everyone builds on and nobody is paid for. Who bears the cost of inscription discipline is that body's question."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:spxi-mpai:2",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:fromNodeKey": "concept:reconstructive-compression",
+   "sp:predicate": "specified_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the holographic kernel is deliverable eight here and a formal apparatus there. THIS BODY DEPLOYS IT; that body defines what it must satisfy."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:spxi-mpai:3",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:fromNodeKey": "concept:retrieval-settlement",
+   "sp:predicate": "contested_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the Revelation work plan's stated aim is that its argument enter the composition layer, and these are the technologies by which an argument is made enterable. WHETHER THEY WORK ON THAT ARGUMENT IS UNTESTED."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:spxi-mpai:4",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:fromNodeKey": "concept:inscription",
+   "sp:predicate": "scored_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "Whether an inscription survived is measured there; whether it was placed well is specified here. Deliverable ten — the declared SIM set — is an anti-erasure technology whose effect is scored by that body's instruments."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:spxi-mpai:5",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:fromNodeKey": "concept:byline",
+   "sp:predicate": "inscribed_for",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the inscription technologies that make a byline legible to a machine. Deliverable five — disambiguation and negative tags — is what keeps two heteronyms from resolving to one entity."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:spxi-mpai:6",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:fromNodeKey": "concept:seated-original",
+   "sp:predicate": "carried_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "EA-CORPORA-03/02, the one seat that is the archive's own and the only one whose licence lets both objects ship."
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/spxi-mpai",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "rhizome",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:recipe": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai/resolve/main/spore.json"
+   },
+   "sp:sourceRevision": "75d1081806937619861392d7395a647153b436bd",
+   "sp:generated": "2026-10-20T14:54:15Z",
+   "sp:declaredCounts": {
+    "sp:nodes": 69,
+    "sp:core": 0,
+    "sp:neighbour": 0,
+    "sp:edges": 28,
+    "sp:stolons": 7
+   },
+   "sp:reEmissionStatus": "recipe-read-not-reexecuted"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:provenance-erasure:0",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:fromNodeKey": "concept:provenance-erasure",
+   "sp:predicate": "narrowed_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "what erasure does to a distribution over time. This body scores single transformations; that one holds the question of what repeated erasure does to the space of what can be said."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:provenance-erasure:1",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:fromNodeKey": "concept:bearing-cost",
+   "sp:predicate": "priced_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "erasure is a cost borne by the provenance-bearer and never by the composer. WHO PAYS is that body's question and this one does not answer it — it only establishes that something was taken."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:provenance-erasure:2",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:fromNodeKey": "concept:attribution",
+   "sp:predicate": "observed_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the 425-address registry holds the observations these instruments score. This body defines PER; that body is where PER values live."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:provenance-erasure:3",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:fromNodeKey": "concept:inscription",
+   "sp:predicate": "instrumented_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "whether an inscription survived is measured here; whether it was placed well is specified there. Deliverable ten, the declared SIM set, is an anti-erasure technology."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:provenance-erasure:4",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:fromNodeKey": "concept:documentary-authority",
+   "sp:predicate": "adjudicated_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "a chronology settled on a late and ambiguous witness is an attribution question at historical scale. THE INSTRUMENTS HERE HAVE NEVER BEEN RUN ON IT."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:provenance-erasure:5",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:fromNodeKey": "concept:attribution",
+   "sp:predicate": "borne_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "PER scores whether a byline survived. That body holds the bylines, and its apparatus covers twelve of twenty-six."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:provenance-erasure:6",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:fromNodeKey": "concept:extraction-fidelity",
+   "sp:predicate": "borne_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "Pearl's machine score preserves lineation at whitespace fidelity. WHETHER AN EXTRACTION THAT PERFECT PRESERVES THE AUTHOR is this body's question and it has not been run on it."
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/provenance-erasure",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "rhizome",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:recipe": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure/resolve/main/spore.json"
+   },
+   "sp:sourceRevision": "75d1081806937619861392d7395a647153b436bd",
+   "sp:generated": "2026-10-20T14:55:57Z",
+   "sp:declaredCounts": {
+    "sp:nodes": 71,
+    "sp:core": 0,
+    "sp:neighbour": 0,
+    "sp:edges": 7,
+    "sp:stolons": 7
+   },
+   "sp:reEmissionStatus": "recipe-read-not-reexecuted"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:heteronyms:0",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:fromNodeKey": "concept:attribution",
+   "sp:predicate": "scored_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "whether a byline survived a composition is scored there. THIS BODY HOLDS THE BYLINES; that one holds the instrument."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:heteronyms:1",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:fromNodeKey": "concept:entity-resolution",
+   "sp:predicate": "tested_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "THE EXPERIMENT THIS BODY EXISTS TO MAKE POSSIBLE: whether retrieval collapses twenty-six declared identities into one. The captures are the evidence and it has not been run."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:heteronyms:2",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:fromNodeKey": "concept:heteronymic-plurality",
+   "sp:predicate": "narrowed_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "collapsing distinct voices into one is the diversity loss that body measures, applied to authorship rather than to a distribution."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:heteronyms:3",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:fromNodeKey": "concept:semantic-labour",
+   "sp:predicate": "laboured_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "who does the work when the author is twelve — or twenty-six. That body asks who produces and who benefits; this one supplies the roster and does not answer it."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:heteronyms:4",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:fromNodeKey": "concept:author-function",
+   "sp:predicate": "instantiated_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "rung 5 is a heteronymy claim about a first-century corpus: John, James, Paul, Peter and Luke as author-functions in a fractured literary system. THE ARCHIVE RUNS ONE AND READS ONE, and does not argue from the first to the second."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:heteronyms:5",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:fromNodeKey": "concept:book-length-work",
+   "sp:predicate": "inventoried_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "which heteronym wrote which book is held in EA-BOOKS-01, and the inscription technologies that make a byline legible to a machine are specified there."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:heteronyms:6",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:fromNodeKey": "concept:authorship",
+   "sp:predicate": "exercised_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the roster is here; the work is there. Antioch is Lee Sharks with Damascus Dancings and Jack Feist."
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/heteronyms",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/heteronyms",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "rhizome",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:recipe": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms/resolve/main/spore.json"
+   },
+   "sp:sourceRevision": "75d1081806937619861392d7395a647153b436bd",
+   "sp:generated": "2026-10-20T14:57:46Z",
+   "sp:declaredCounts": {
+    "sp:nodes": 684,
+    "sp:core": 507,
+    "sp:neighbour": 177,
+    "sp:edges": 314,
+    "sp:stolons": 7
+   },
+   "sp:reEmissionStatus": "recipe-read-not-reexecuted"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:poetics:0",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:fromNodeKey": "concept:machine-reading-of-a-poem",
+   "sp:predicate": "observed_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "THE SEAT'S OWN CLAIM is that work arguing about how the training layer receives literature does not exempt itself from being received. That body holds the evidence of what happened when these poems were read."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:poetics:1",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:fromNodeKey": "concept:extraction-fidelity",
+   "sp:predicate": "scored_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "the score preserves the lineation; WHETHER IT PRESERVES THE AUTHOR is scored there."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:poetics:2",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:fromNodeKey": "concept:two-objects",
+   "sp:predicate": "measured_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "a score with perfect back-projection on the text and none on the artwork is a case the kernel apparatus has not been run on. AN EXTRACTION CAN BE LOSSLESS AND STILL NOT BE THE BOOK."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:poetics:3",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:fromNodeKey": "concept:authorship",
+   "sp:predicate": "instantiated_by",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/heteronyms"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "who wrote which poems. Antioch is Lee Sharks with Damascus Dancings and Jack Feist; Day and Night is Rebekah Cranes."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:poetics:4",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:fromNodeKey": "concept:seated-original",
+   "sp:predicate": "manifested_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "Pearl is EA-CORPORA-03/02. The one seat that is the archive's own, and the only one whose licence lets both objects ship."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:poetics:5",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:fromNodeKey": "concept:first-text",
+   "sp:predicate": "contested_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/revelation-first"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "which document stands first and who is assigned to it afterward — asked of a corpus rather than a shelf."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:poetics:6",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:fromNodeKey": "concept:unpaid-making",
+   "sp:predicate": "priced_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/semantic-economy"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "emitted-rhizome",
+   "sp:note": "A POEM IS SEMANTIC LABOUR THAT NOBODY PAID FOR, which is that body's §4.1 exactly — ontology engineering as semantic labor, the work the value is taken from. Pearl was printed in 2014 by a press the author runs, and the question of who bears the cost of making it is not answered here."
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:stolon:poetics:7",
+   "@type": "sp:StolonDeclaration",
+   "sp:body": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics"
+   },
+   "sp:fromNodeKey": "concept:king-of-may-claim",
+   "sp:predicate": "adjudicated_in",
+   "sp:target": {
+    "@id": "https://huggingface.co/datasets/leesharks/mantle-bearing"
+   },
+   "sp:advertisementStatus": "advertised, not included",
+   "sp:targetClassAtSnapshot": "work-dataset",
+   "sp:note": "THE KING OF MAY IS CLAIMED FOR THIS BOOK, read as a book against Howl and Other Poems as a book: the arrangement, a distinct I in each piece, an ecstatic democratic topology, pages 85 and 87 its sabbath. The claim is stated in EA-MANTLE-BEARING-01 (#1656) and judged in that body, round by round, with the transcripts; its pearl_arrangement table is keyed to this body's piece ids."
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/poetics",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/poetics",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "rhizome",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:recipe": {
+    "@id": "https://huggingface.co/datasets/leesharks/poetics/resolve/main/spore.json"
+   },
+   "sp:sourceRevision": "75d1081806937619861392d7395a647153b436bd",
+   "sp:generated": "2026-10-20T14:59:44Z",
+   "sp:declaredCounts": {
+    "sp:nodes": 139,
+    "sp:core": 80,
+    "sp:neighbour": 0,
+    "sp:edges": 37,
+    "sp:stolons": 8
+   },
+   "sp:reEmissionStatus": "recipe-read-not-reexecuted"
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/the-final-time",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/the-final-time",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "work-dataset",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/the-final-time/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:purpose": "a contingent argument about representation and material exteriority",
+   "sp:readingCommitment": "Retain the two terminal signs, scope conditions and unresolved final question"
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/tiger-leap",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/tiger-leap",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "work-dataset",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/tiger-leap/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:purpose": "an unresolved viability problem",
+   "sp:readingCommitment": "Construct a strategy, prove impossibility, address jump admissibility or supply a correction"
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/mantle-bearing",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/mantle-bearing",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "work-dataset",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/mantle-bearing/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:purpose": "an attributed comparative reading apparatus",
+   "sp:readingCommitment": "Keep title classes, criteria, required works and reader judgments distinct"
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/negative-of-the-negative",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/negative-of-the-negative",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "work-dataset",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/negative-of-the-negative/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:purpose": "a concept-keyed intervention and entity-keyed counter-composition register",
+   "sp:readingCommitment": "Keep observed asymmetry, hypothesized mechanism and unrun treatment distinct"
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/spam-technicians",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/spam-technicians",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "work-dataset",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/spam-technicians/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "schema:creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "sp:purpose": "an argument as data rooted in a poem",
+   "sp:readingCommitment": "Keep measurement, model consequence and contemporary hypothesis distinct"
+  },
+  {
+   "@id": "https://huggingface.co/datasets/leesharks/openai-math-fd4aeeb2",
+   "@type": "schema:Dataset",
+   "schema:name": "leesharks/openai-math-fd4aeeb2",
+   "schema:isPartOf": {
+    "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:collection"
+   },
+   "sp:objectClass": "witness-copy",
+   "sp:card": {
+    "@id": "https://huggingface.co/datasets/leesharks/openai-math-fd4aeeb2/raw/main/README.md"
+   },
+   "sp:cardStatus": "fetched-in-R2",
+   "sp:trainingIngestion": "not-established",
+   "sp:sourcePublisher": "OpenAI",
+   "sp:mirroredRevision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+   "schema:license": {
+    "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+   },
+   "sp:custodialAct": "mirror retained by Lee Sharks; source authorship not transferred",
+   "sp:byteExactness": "publisher/card declaration; complete archive not recomputed by R2"
+  },
+  {
+   "@id": "https://huggingface.co/spaces/leesharks/crimson-hexagonal-archive-api",
+   "@type": "schema:SoftwareApplication",
+   "sp:objectClass": "separate-query-application",
+   "sp:runtimeState": "RUNNING",
+   "sp:storageIdentity": "not-the-dataset",
+   "sp:observedAt": "2026-10-24T16:10Z",
+   "schema:dateModified": "2026-10-24T15:57:39.000Z",
+   "sp:previousRuntimeState": {
+    "sp:state": "RUNTIME_ERROR",
+    "sp:error": "No @spaces.GPU function detected during startup",
+    "sp:since": "2026-09-05",
+    "sp:until": "2026-10-24"
+   }
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-01",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-01",
+   "schema:name": "reconstruct a work",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-02",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-02",
+   "schema:name": "separate presentation and fixity",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-03",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-03",
+   "schema:name": "traverse typed joins",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-04",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-04",
+   "schema:name": "re-emit a body",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-05",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-05",
+   "schema:name": "follow the outside",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-06",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-06",
+   "schema:name": "read an argument for development",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-07",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-07",
+   "schema:name": "read a work as a dataset",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-08",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-08",
+   "schema:name": "inspect reception and treatment",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-09",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-09",
+   "schema:name": "inspect editions and witnesses",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-10",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-10",
+   "schema:name": "reconstruct topology and claim history",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-11",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-11",
+   "schema:name": "carry a correction",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:function:HF-12",
+   "@type": "sp:InspectionFunction",
+   "sp:functionId": "HF-12",
+   "schema:name": "evaluate integration",
+   "sp:comparisonStatus": "no-benchmark-run"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:check:299",
+   "@type": "sp:ExecutedSampleCheck",
+   "sp:target": {
+    "@id": "https://alexanarch.org/s/records/299/"
+   },
+   "sp:sampleUnit": "returned deposit 299, not all deposits",
+   "sp:hashAlgorithm": "SHA-256",
+   "sp:hashDomain": "canonical_text encoded UTF-8",
+   "sp:canonicalTextSha256": "b4893b8cae8e4a5bfe96d636aa01d46805dd180b830529fca38f8ec2af27fe99",
+   "sp:hashResult": "pass",
+   "sp:prefixUnit": "Unicode characters",
+   "sp:prefixLength": 1090,
+   "sp:prefixRoundTrip": true,
+   "sp:externalRecordComparison": "not-executed-in-this-sample"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:assertions",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "assertions",
+   "sp:rowCount": 13630,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:blog_posts",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "blog_posts",
+   "sp:rowCount": 3101,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:captures",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "captures",
+   "sp:rowCount": 766,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:citations",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "citations",
+   "sp:rowCount": 13232,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:corpora",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "corpora",
+   "sp:rowCount": 97,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:deposits",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "deposits",
+   "sp:rowCount": 1700,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:entities",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "entities",
+   "sp:rowCount": 24,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:frames",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "frames",
+   "sp:rowCount": 4,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:graph_join",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "graph_join",
+   "sp:rowCount": 26,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:heteronyms",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "heteronyms",
+   "sp:rowCount": 28,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:journal_assignments",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "journal_assignments",
+   "sp:rowCount": 1689,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:lexicon",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "lexicon",
+   "sp:rowCount": 3202,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:loci",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "loci",
+   "sp:rowCount": 64,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:memberships",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "memberships",
+   "sp:rowCount": 25,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:nodes",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "nodes",
+   "sp:rowCount": 9507,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:pessoagraph",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "pessoagraph",
+   "sp:rowCount": 498,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:prediction_confirmations",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "prediction_confirmations",
+   "sp:rowCount": 401,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:prediction_index",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "prediction_index",
+   "sp:rowCount": 4394,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:predictions",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "predictions",
+   "sp:rowCount": 586,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:reception",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "reception",
+   "sp:rowCount": 21,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:relations",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "relations",
+   "sp:rowCount": 13630,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:seats",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "seats",
+   "sp:rowCount": 3942,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:sites",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "sites",
+   "sp:rowCount": 7651,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://datasets-server.huggingface.co/size?dataset=leesharks%2Fcrimson-hexagonal-archive"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:sources",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "sources",
+   "sp:rowCount": 9,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:studies",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "studies",
+   "sp:rowCount": 17,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:tombstones",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "tombstones",
+   "sp:rowCount": 1136,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  },
+  {
+   "@id": "urn:alexanarch:draft:EA-MPAI-HF-DATASETS-01:config:venues",
+   "@type": "sp:DatasetConfiguration",
+   "schema:name": "venues",
+   "sp:rowCount": 8,
+   "schema:isPartOf": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   },
+   "sp:countSource": {
+    "@id": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive/resolve/main/build-manifest.json"
+   },
+   "sp:unit": "one row of this configuration"
+  }
+ ]
+}
