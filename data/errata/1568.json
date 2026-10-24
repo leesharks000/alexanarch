@@ -2,8 +2,18 @@
  "deposit_number": 1568,
  "axn": "AXN:0660.EMPIRICAL.🗿🦅⭕🪐🌿🤝",
  "record": "https://www.alexanarch.org/s/records/1568/",
- "errata": [],
- "count": 0,
+ "errata": [
+  {
+   "date": "2026-10-22",
+   "kind": "metadata correction",
+   "locus": "registry field orcid",
+   "was": "0009-0000-1599-0703 (Lee Sharks's ORCID), set at mint on a paper whose creator is Enli Lucente; the record page therefore showed Lee Sharks as accountable for the deposit.",
+   "now": "No ORCID, as for #1539. The creator is Enli Lucente. The paper was prepared by her, marked CC BY 4.0 in its own front matter and submitted for deposit; the mint (commit 615674d, 2026-08-30) was made from the archive's side.",
+   "reason": "Mislabelled attribution: the ORCID belonged to the archive operator.",
+   "status": "registry field corrected; canonical bytes unchanged (the text's frontmatter keeps the mint-time value)"
+  }
+ ],
+ "count": 1,
  "scope": "reference, citation, source and count corrections; the deposited bytes and AXN are unchanged",
  "erratum_deposits": "https://www.alexanarch.org/errata/",
  "specification": "https://www.alexanarch.org/s/records/1677/"
