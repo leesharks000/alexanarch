@@ -112,6 +112,9 @@ def main():
         passes.append(('read 2026-10-16', json.load(open(rp))['seats']))
     if P2.get('seats'):                                    # the second pass (2026-10-18): records deposited after the first
         passes.append(('read 2026-10-18', P2['seats']))
+    R3 = ROOT / 'data/room-readings/reading-2026-10-24.json'  # the third pass: the twenty #1687 §6 left unseated
+    if R3.exists():
+        passes.append(('read 2026-10-24', json.load(open(R3))['seats']))
     for label, ps in passes:
         for n, ss in ps.items():
             d = next((x for x in reg['deposits'] if str(x['deposit_number']) == n), None)
