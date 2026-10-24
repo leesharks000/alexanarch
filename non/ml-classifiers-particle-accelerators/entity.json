@@ -26,6 +26,1967 @@
   "frozen": false,
   "composed": true
  },
+ "reading": "A reader that fetches this page may stop short of its end; the entry's text, every sentence of its knowledge object with the claims it cites and each claim's quote, source and locus, is in entity.json beside it.",
+ "entry": {
+  "composed": true,
+  "title": "Machine learning classifiers in particle accelerators",
+  "genre": "knowledge object, equal case, under EA-NEGONT-02 v0.9 (#1690): the archive's sources and the field's admitted on equal terms, ontology included, in one claim space",
+  "status": "composed 2026-10-18 under v0.9 on the operator's ruling ('lets craft those /non entries'); not frozen; ledger unaudited",
+  "compression": {
+   "title": "Machine learning classifiers in particle accelerators",
+   "lede": "are learned models explored, proposed or field-tested in an accelerator's operation (fault diagnosis, failure and faulty-beam prediction, anomaly identification, tuning) and deployed in its event selection, where AXOL1TL, CICADA and GELATO score events at CMS and ATLAS Level-1 triggers."
+  },
+  "sentences": [
+   {
+    "n": 1,
+    "para": 0,
+    "text": "Machine learning classifiers at particle accelerators are learned models placed in an accelerator's operation and in its event selection: they are explored to identify the source of occasional poor performance at the injector of Argonne's Advanced Photon Source (Lobach et al.), proposed to predict machine failures from beam-current measurements at the Spallation Neutron Source (Rescic, Seviour and Blokland), explored to detect faulty beams before failure from a pair of sensors (ORNL), built to monitor the accelerator cavities of CEBAF (Jefferson Lab), and proposed or presented to help tune accelerators (Rautela, Williams and Scheinker; Los Alamos), and, in the CMS Level-1 Global Trigger, AXOL1TL is deployed as a real-time unsupervised, signal-agnostic event-level anomaly detector trained on Zero Bias data (#1452, #932).",
+    "claims": [
+     "F1",
+     "F12",
+     "F42",
+     "F25",
+     "F17",
+     "F32",
+     "Q1452-04",
+     "Q932-07"
+    ]
+   },
+   {
+    "n": 2,
+    "para": 0,
+    "text": "At the LHC the deployed anomaly score forms are AXOL1TL at CMS Level-1 (encoder-side latent-prior), CICADA at CMS Level-1 (a distilled reconstruction-loss surrogate), GELATO Level-1 at ATLAS (encoder-side) and GELATO at the ATLAS High-Level Trigger (reconstruction-based) (#932), AXOL1TL deploying only the encoder of a variational autoencoder, its score the sum of squared latent means (#931), and AXOL1TL and CICADA running in the CMS Level-1 trigger through Run 3 on 2024 collision data (#1449); Belle II has implemented a graph neural network for the electromagnetic calorimeter trigger (#1452), an architectural spread that falsifies any simple claim that real-time accelerator machine learning has converged on one autoencoder design (#1454), and the more expressive an irreversible early selector becomes, the more consequential its retention metrology becomes (#1452).",
+    "claims": [
+     "Q932-07",
+     "Q931-06",
+     "Q1449-06",
+     "Q1452-06",
+     "Q1454-04",
+     "Q1452-07"
+    ]
+   },
+   {
+    "n": 3,
+    "para": 1,
+    "text": "Lobach et al.'s autoencoder is trained on the baseline data, so that its reconstruction error constitutes an anomaly score, and the ORNL approach models the mapping from a pair of sensors located across the accelerator, trained to represent normal operation and evaluated on known faulty beam pulses; none of the deployed trigger scores, #931 holds, is a measurement of physical novelty in any direct sense, and a model can be agnostic with respect to signal labels during training while remaining highly selective with respect to the geometry, complexity and representation of departures from its learned reference distribution (#1454).",
+    "claims": [
+     "F6",
+     "F42",
+     "F43",
+     "Q931-09",
+     "Q1454-01"
+    ]
+   },
+   {
+    "n": 4,
+    "para": 1,
+    "text": "Accelerator failures, Rescic, Seviour and Blokland write, lead to unscheduled downtime and lower reliability and are difficult to predict beforehand; evaluating SNS beam pulses against a set of common classification techniques, they show failure identified before it occurs with almost 80% accuracy and bad pulses classified at almost 92% after tuning classifier parameters and refining datasets, and they establish that information about the failure is encoded in the pulses prior to it; the ORNL errant-beam study holds that predicting impending failures only from diagnostic equipment already on board can help operators avoid installing expensive sensors, unscheduled downtime and associated costs, investigates its model on unseen data by k-fold cross-validation, recaps the analysis with a neural architecture search and hyperparameter optimization study, and introduces a framework to standardize machine learning workflow applied to accelerators.",
+    "claims": [
+     "F11",
+     "F13",
+     "F14",
+     "F15",
+     "F41",
+     "F44",
+     "F45"
+    ]
+   },
+   {
+    "n": 5,
+    "para": 2,
+    "text": "Signal-template agnosticism is a property of the scoring function's output interface, read off an architecture, and model independence a distributional property of an entire pipeline, which can only be measured and at present is not (#1436), at the deployed LHC anomaly triggers unmeasured (#1449); on that distinction #931 argues that the model-independence claim for AXOL1TL, CICADA and GELATO cannot be sustained on signal-template agnosticism alone, while accepting as accurate the literature's narrower sense, that no named Beyond-Standard-Model hypothesis is required to deploy the score; in motivational and public-facing summaries, #1436 holds, the weaker, architecturally supported property is reported under the stronger, unmeasured term, and #1436 does not claim the deployed triggers invalid or template-agnostic scoring a defect.",
+    "claims": [
+     "Q1436-01",
+     "Q1449-01",
+     "Q931-01",
+     "Q931-02",
+     "Q1436-03",
+     "Q1436-02"
+    ]
+   },
+   {
+    "n": 6,
+    "para": 2,
+    "text": "The CMS and ATLAS literatures, #931 holds, are genuinely aware of local failure modes of deployed anomaly detection; the field, #1427 writes, already knows model dependence and turned to model-independent and anomaly-detection searches because of it, the unmeasured part being what the pipeline discards before analysis begins; and the direction-dependence conversation exists, which #1449 joins rather than founds; #1436 sets the rule that signal-template agnosticism must not be rendered as model independence, theory-free discovery or unbiased search, while #1454, 'model-independent' being used in several senses across collider physics, holds that it should not attempt to police the term.",
+    "claims": [
+     "Q931-03",
+     "Q1427-01",
+     "Q1449-05",
+     "Q1436-04",
+     "Q1454-07"
+    ]
+   },
+   {
+    "n": 7,
+    "para": 3,
+    "text": "At the APS injector Lobach et al. investigate the possibility to use unsupervised and supervised methods for anomaly detection and classification in the Particle Accumulator Ring and the Linac-To-PAR line, holding that the cause of reduced injection or extraction efficiencies may be as simple as one parameter out of range, which may take an expert considerable time to notice whereas a well-trained model can point at it instantly; they create intentional perturbations, log about 9000 process variables, and note that supervised models require labeled data for training; for supervised trigger classifiers, whose primary failure mode is not necessarily anomaly-score inversion, #1454 defines open-set assimilation, an unseen class confidently mapped into a known background category.",
+    "claims": [
+     "F3",
+     "F2",
+     "F4",
+     "F5",
+     "F8",
+     "Q1454-03"
+    ]
+   },
+   {
+    "n": 8,
+    "para": 4,
+    "text": "Finke et al., as #931 reports, trained an autoencoder on QCD jets that treated top jets as anomalies while the same architecture trained on top jets did not recognize QCD jets as anomalous, from which #931 infers that single-direction success does not validate sensitivity to anomalies whose structure differs from those tested, the result being, for #932, the empirical counterexample to universal inference from single-direction anomaly-detection success, which does not by itself quantify open-world assimilation at the deployed LHC triggers; a pre-registered battery executed on public community datasets, the top-quark tagging reference and the LHC Olympics 2020 R&D set, single-seed, demonstration-scale and on surrogates rather than deployed systems, finds the direction-dependence replicated in an independent implementation and extended beyond reconstruction loss, QCD-trained systems detecting top jets at AUC 0.84–0.87 while top-trained systems rate QCD as more ordinary than their own training class (AUC 0.24–0.30), and every tested system at trigger-like operating points assimilating at least 93% of the structurally distinct partner class as ordinary (#1449).",
+    "claims": [
+     "Q931-07",
+     "Q931-08",
+     "Q932-08",
+     "Q1449-07",
+     "Q1449-04",
+     "Q1449-02",
+     "Q1449-03"
+    ]
+   },
+   {
+    "n": 9,
+    "para": 4,
+    "text": "Re-running the battery with five independent seeds per cell, #1455 finds the top/QCD inversion reproduced across five independent trainings, the reconstruction autoencoder detecting top jets from a QCD-trained system at AUC 0.838 and, reversed, rating QCD as more ordinary than its own training class at AUC 0.243, rejects two witnesses' descriptions of the run as unassailable, as proving the thesis and as a pristine payload, and states that nothing in it bounds any open-world assimilation rate in either direction or measures a deployed trigger; #1455 wrote that architecture changes the orientation of the blind spot, and #1456, designed to clear #1455's correction ledger, finds that with model weights fixed changing the score function is sufficient to reverse the directional ordering of the anomaly relation, records the earlier sentence as falsified, finds that the constituent inversion survives with its entire interval below chance, and notes that the two readout families whose orientations diverge are the families the two deployed CMS anomaly triggers use, while nothing in the battery measures those systems.",
+    "claims": [
+     "Q1455-06",
+     "Q1455-01",
+     "Q1455-04",
+     "Q1455-05",
+     "Q1455-02",
+     "Q1456-09",
+     "Q1456-01",
+     "Q1456-02",
+     "Q1456-06",
+     "Q1456-03"
+    ]
+   },
+   {
+    "n": 10,
+    "para": 4,
+    "text": "Global rank agreement between a teacher and its distilled student is moderate while only 36 to 47 percent of the teacher's top one percent survives into the student's top one percent (#1455); global teacher–student agreement does not guarantee preservation of the operational tail, an architecture's detection behaviour is not transportable across representations of the same events, on the LHCO pairs 'the remedy works, and the diagnostic says we may believe it', and one case is handed on: if a converged normalized autoencoder reaches 0.5, every inversion claim in the program becomes bounded to non-normalized scores (#1456); #1454 does not assert that all accelerator classifier architectures share the same blind spot, their shared properties being sufficient to motivate common metrology and not sufficient to assert common blind spots.",
+    "claims": [
+     "Q1455-03",
+     "Q1456-04",
+     "Q1456-05",
+     "Q1456-07",
+     "Q1456-08",
+     "Q1454-02",
+     "Q1454-05"
+    ]
+   },
+   {
+    "n": 11,
+    "para": 5,
+    "text": "At CEBAF, where problems in the accelerator cavities can cause the machine to trip off like a fuse and accelerator experts previously needed to take time to diagnose a fault, a novel machine learning system monitors the cavities: in its first field test it correctly identified which cavities were tripping off about 85 percent of the time and what kind of fault caused each trip about 78 percent of the time; connected to the control system for about 20 percent of the cavities, it analysed the few hundred faults CEBAF experienced in a two-week test in March 2020 and gave operators almost real-time feedback, reducing the time the electron beam was not available for research (Jefferson Lab).",
+    "claims": [
+     "F25",
+     "F26",
+     "F28",
+     "F27",
+     "F29",
+     "F30"
+    ]
+   },
+   {
+    "n": 12,
+    "para": 5,
+    "text": "Complex dynamical systems such as accelerators often require complicated and time-consuming tuning, and the CBOL-Tuner of Rautela, Williams and Scheinker explores a latent space with a Bayesian optimizer that minimizes total beam loss, its exploration history filtered through a pretrained ResNet50 classifier to eliminate non-physical signals, the classifier trained to about 0.99989 accuracy to map phase-space projections into 48 classes and designed to discard explored points whose decoding does not belong to the true classes; run on HPSim, software designed to replicate the accelerator and so to represent realistically the beam used at the Los Alamos Neutron Science Center, the tuner identifies multiple optimal settings, outperforms alternative global optimization methods and produces significantly lower total beam loss despite a minor offset between predicted and true optimal values (Rautela, Williams and Scheinker).",
+    "claims": [
+     "F16",
+     "F17",
+     "F18",
+     "F19",
+     "F20",
+     "F21",
+     "F22",
+     "F23"
+    ]
+   },
+   {
+    "n": 13,
+    "para": 5,
+    "text": "#931 defines the Ontological Assimilation Rate as the probability that events drawn from a distribution Q fall on the ordinary side of the deployed anomaly gate, the open-world OAR as a family of quantities indexed by Q, with no defensible probability distribution over all unknown unknowns, and the Inversion Asymmetry Index as direction-dependence on a tested pair at a specified operating rate; Benchmark Assimilation Rate values neither upper- nor lower-bound the OAR for an unobserved Q without explicit assumptions linking the benchmark distributions to that Q (#931), and the earlier lower and upper bounds were both retracted as synthesis-overreach (#932).",
+    "claims": [
+     "Q931-10",
+     "Q931-11",
+     "Q931-13",
+     "Q931-12",
+     "Q932-09"
+    ]
+   },
+   {
+    "n": 14,
+    "para": 5,
+    "text": "Lobach et al.'s neural network classifier, trained on data from the beginning of a study and tested on data from its end a few hours apart, exceeded 99 % test accuracy for each study shift, its performance not degrading significantly over a couple of months; #931 holds that validation against named simulated signals establishes neither a low BAR across a pre-registered held-out panel nor a small IAI, that the current literature measures neither, and that the existing defenses are not absent or worthless but do not constitute, and have not been claimed to constitute, measurement of the BAR or the IAI; measurements of what a pipeline discards, #1427 writes, are not published, not for the repository and not, in any form its author has located, for the classification pipelines of frontier experimental physics, an absence that is not evidence of foreclosure but the condition under which foreclosure would be undetectable.",
+    "claims": [
+     "F7",
+     "F9",
+     "Q931-14",
+     "Q931-17",
+     "Q1427-01",
+     "Q1427-02",
+     "Q1427-03"
+    ]
+   },
+   {
+    "n": 15,
+    "para": 6,
+    "text": "A classifier that did not foreclose anything, #933 argues, would not classify; #932's synthesis holds that anomaly detection systems deployed on physical reality cannot detect what their architecture has foreclosed, that a validation framework closed under its own assumptions cannot detect this failure, that the classifier does not merely filter data but constitutes it, collisions occurring whether or not the trigger sees them, and that anomaly detection does not prevent ontological collapse when the anomaly detector inherits the ontology whose collapse is in question; and #935 holds that the machinery responsible for revealing failures of the physical model is itself trained and evaluated through products of the physical model.",
+    "claims": [
+     "Q933-02",
+     "Q932-01",
+     "Q932-05",
+     "Q932-12",
+     "Q932-18",
+     "Q935-05"
+    ]
+   },
+   {
+    "n": 16,
+    "para": 6,
+    "text": "#932's first witness defines classifier collapse in physical systems as the degenerative process by which a discriminative model, trained exclusively or dominantly on a known distribution of physical events, progressively loses the capacity to represent, detect or retain events that fall outside that distribution, and #932 treats its witnesses' 'Irretrievability Theorem' and 'Inevitability Theorem' as arguments; its central claim is graded: Claim A, that foreclosure is structurally present in every classifier-mediated trigger architecture deployed at the LHC, its witnesses proposing eight foreclosure mechanisms and twelve associated institutional beliefs, published trigger systems instantiating several of the mechanisms in their corresponding architectural forms, and the institutional claims remaining hypotheses for audit rather than established measurements of collaboration-wide belief, and Claim B, marked stronger and not empirically established, that recursive phenomenal collapse has occurred or is occurring at the deployed triggers; foreclosure, #932 concludes, is an active structural feature and recursive collapse an unmeasured possible consequence of accumulated foreclosure and feedback, internal validation being unable by itself to establish sensitivity to distinctions already removed upstream, and whether accumulated foreclosure has composed into recursive collapse is, for #931, precisely the missing measurement.",
+    "claims": [
+     "Q932-13",
+     "Q932-14",
+     "Q932-02",
+     "Q932-03",
+     "Q932-04",
+     "Q932-06",
+     "Q931-04"
+    ]
+   },
+   {
+    "n": 17,
+    "para": 6,
+    "text": "The grade is contested inside #932, where an appended witness writes 'The collapse is not coming. It is here. It is operating.' and another finds 'The ingredients are visible. Full recursive collapse has not been demonstrated.' and no evidence that CERN simply discards novel physics as bad detector data, which would be an unsupported claim.",
+    "claims": [
+     "Q932-15",
+     "Q932-16",
+     "Q932-17"
+    ]
+   },
+   {
+    "n": 18,
+    "para": 6,
+    "text": "The sources state the bounds of their own claims: Lobach et al. call theirs a proof-of-principle experiment and hold that the classifier may be useful in real life if the current meter for one of the considered magnets becomes faulty and stops reflecting the real magnetic field; Rautela, Williams and Scheinker's pruning is currently a post-processing step that does not directly influence the exploration process; at CEBAF additional results are under analysis and the team hopes to expand the system to more cavities if they are favorable (Jefferson Lab); #931 does not claim that classifier collapse has occurred at the LHC anomaly streams, #1450 not that model collapse has occurred in any deployed scientific pipeline, only that its structural prerequisites are documented and its longitudinal measurement absent, #1452 not that an undiscovered physical phenomenon has already been rejected, #1558 neither that learned triggers are uniquely unreliable nor that an unknown physical phenomenon has already been discarded, and failure on benchmark distributions, #1454 states, does not establish loss of unknown new physics.",
+    "claims": [
+     "F10",
+     "F24",
+     "F31",
+     "Q931-05",
+     "Q1450-03",
+     "Q1452-03",
+     "Q1558-03",
+     "Q1454-06"
+    ]
+   },
+   {
+    "n": 19,
+    "para": 6,
+    "text": "On #935's hypothesis, distillation, model-produced targets, simulation conditioning and training on historically selected data create partial feedback pathways homologous to the prerequisites of model collapse, whether they have produced cross-generational phenomenal contraction being what the prospective frozen replay bank is designed to test; #932 holds its homology a hypothesis to be tested domain by domain, not an assertion that every classifier-mediated system instantiates identical mechanisms or rates; and #931 states its central claim falsifiable, a BAR measured negligible (e.g., below 10⁻⁴) on the pre-registered deployed-model held-out panel for all deployed systems against all held-out families being evidence that would bound the held-out-family assimilation concern at levels that do not threaten the narrow 'model-independent' claim, no such result establishing the open-world OAR to be zero, which is structurally not measurable, while #932 states that the listed measurements, if negative, would show the structural-feature claim overstated.",
+    "claims": [
+     "Q935-07",
+     "Q932-10",
+     "Q931-20",
+     "Q931-18",
+     "Q931-19",
+     "Q932-11"
+    ]
+   },
+   {
+    "n": 20,
+    "para": 7,
+    "text": "#1450 holds that validation of each stage on its design and validation support establishes no nontrivial lower bound on end-to-end retention for a novelty distribution outside that characterized support, unless the relevant off-support conditional retention functions are themselves constrained, the claim being not that end-to-end retention is near zero but that the standard evidence does not bound it away from zero; that a null result constrains only those hypotheses for which the end-to-end acceptance of the acquisition and analysis chain is sufficiently characterized; and that the irreversibility locus, not the presence of ML, is the fundamental variable.",
+    "claims": [
+     "Q1450-01",
+     "Q1450-02",
+     "Q1450-05",
+     "Q1450-04"
+    ]
+   },
+   {
+    "n": 21,
+    "para": 7,
+    "text": "#1452 defines, for a specified scientific question and fidelity hierarchy, the irreversibility frontier as the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which that loss can later be audited; the frontier predates machine learning, conventional thresholds, object definitions, zero suppression, compression and trigger logic creating irreversible selection too, while learned selectors can make their priors harder to enumerate; LHCb's Run-3 upgrade removed the hardware physics trigger and reads out all detectors at about 30 MHz, #1452 not claiming that CMS or ATLAS could simply adopt the LHCb or CBM architecture under their own detector conditions, and the model determines where a miss region lies, the acquisition architecture whether science can later discover that it was there (#1452).",
+    "claims": [
+     "Q1452-01",
+     "Q1452-02",
+     "Q1452-08",
+     "Q1452-05",
+     "Q1452-11",
+     "Q1452-09"
+    ]
+   },
+   {
+    "n": 22,
+    "para": 7,
+    "text": "At the LHC the retained fraction of physical interactions is approximately 2.5 × 10⁻⁵, a number that makes the epistemic condition legible, does not demonstrate wrongdoing and should not be confused with an anomaly-trigger rejection rate (#934); #935's claim is not that anomaly detectors alone determine what physics can see but that the entire trigger system, of which anomaly detectors are one component, operates as classifier-mediated foreclosure under a bureaucratic justification, 'rate budget', that does not require disclosure of what is being foreclosed.",
+    "claims": [
+     "Q934-04",
+     "Q935-09"
+    ]
+   },
+   {
+    "n": 23,
+    "para": 8,
+    "text": "Tuning, Alexander Scheinker of Los Alamos holds, is a high-dimensional optimization problem that must be repeated again and again as the systems drift with time, and retuning between experiments can take weeks; his approach, with Lawrence Berkeley National Laboratory, couples adaptive feedback control algorithms, deep convolutional neural networks and physics-based models in one large feedback loop to make better, noninvasive predictions that enable autonomous control of compact accelerators, holding that local feedback algorithms can get stuck with a local solution where machine learning can take a higher-level, global view (LANL).",
+    "claims": [
+     "F33",
+     "F32",
+     "F34",
+     "F35"
+    ]
+   },
+   {
+    "n": 24,
+    "para": 8,
+    "text": "#931 proposes three protocols, a paired inversion battery with a deployed-model BAR audit, a prospective frozen replay bank for compatible future algorithms, and cross-representation disagreement preservation with quantile-normalized scores, and holds that per-stage retention maps should accompany any anomaly-detection publication as a documentation standard; trigger documentation, #1452 adds, should include an explicit Irreversibility Statement.",
+    "claims": [
+     "Q931-15",
+     "Q931-16",
+     "Q1452-10"
+    ]
+   },
+   {
+    "n": 25,
+    "para": 8,
+    "text": "#933 defines an architecture for auditable foreclosure as one in which foreclosure, which cannot be eliminated, is visible, measurable and architecturally reviewable, its five features abstention and estimated noncoverage, cross-representation disagreement preservation, a prospective anchor, per-stage retention mapping and audited noncoverage output; noncoverage estimation is not novelty detection, none of the architectures addresses detector-level, theoretical-language, institutional, adversarial-stress-quality or bandwidth-base foreclosure, the alternative being necessary but not sufficient, and feasibility for any specific deployment is not established (#933).",
+    "claims": [
+     "Q933-01",
+     "Q933-03",
+     "Q933-04",
+     "Q933-05",
+     "Q933-06"
+    ]
+   },
+   {
+    "n": 26,
+    "para": 8,
+    "text": "#1453 holds that under a finite storage budget no content-sensitive algorithm can be a less assumption-laden baseline than a probability sample whose inclusion mechanism is independent of event content and whose inclusion probability is known; in #1558's controlled numerical study a content-sensitive pseudo-baseline estimates the retention of a shifted class at 0.76 (95% interval 0.71–0.81) against a true 0.016 while the content-independent sample measures a deliberately representation-blind class at 0.000 (interval 0–0.073); the Baseline Capture Architecture does not guarantee capture of arbitrarily rare unknown phenomena but makes the selection function statistically auditable over the population its control channels represent and treats existing CMS components as precedents, not a completed implementation (#1453), and it does not solve the unknown-unknown problem (#1558).",
+    "claims": [
+     "Q1453-01",
+     "Q1558-01",
+     "Q1453-02",
+     "Q1453-03",
+     "Q1558-02"
+    ]
+   },
+   {
+    "n": 27,
+    "para": 8,
+    "text": "The Los Alamos team's adaptive diffusion model diagnoses the beam virtually, in real time during beam operations, and captured images of the beam in time versus energy at the European X-Ray Free-Electron Laser Facility, the cDVAE extrapolated beyond the training data and between beam setups, suggesting its potential as a general method for accelerator diagnostics, a version is in development for LANSCE, and the results, Scheinker says, show a great deal of promise (LANL).",
+    "claims": [
+     "F36",
+     "F37",
+     "F38",
+     "F40",
+     "F39"
+    ]
+   },
+   {
+    "n": 28,
+    "para": 9,
+    "text": "Contested within the archive, #935's restored manifesto holds that frontier experimental high-energy physics has, in its operational core, become a machine learning discipline while retaining the institutional authority of physics, its ML methods deployed with neither physics's classical disciplinary checks nor ML's own disciplinary self-knowledge as guardrails, records that the prior version (#934) dampened the thesis until a lay reader could no longer identify what was claimed, carries its witness's 'High-energy physics has not ceased to be physics, but its empirical faculty has increasingly become a machine-learning system.' and 'Sophons break the experimental feedback loop by making reality uninterpretable. Classifier collapse breaks it by making reality prematurely interpretable.', and keeps 'terminal condition' for the existing institutional trajectory while rejecting its extension to the broader possibility space; #934 holds that the discipline has not ceased to be physics, its empirical faculty inseparable from machine-mediated representation, reconstruction, classification and real-time selection, its form authority without integrated self-audit, with local technical self-knowledge of classifier failure modes in the literature.",
+    "claims": [
+     "Q935-01",
+     "Q935-06",
+     "Q935-02",
+     "Q935-03",
+     "Q935-04",
+     "Q935-10",
+     "Q934-01",
+     "Q934-02"
+    ]
+   },
+   {
+    "n": 29,
+    "para": 9,
+    "text": "#935 calls the Zenodo termination and the LHC trigger system the same architecture at different budgets, #934 not the same institution and not the same kind of object though instantiating the same foreclosure topology, and #1611, placing the archive's own repository exclusion at CERN, holds that the two occurring within one institution adds no evidentiary force to the analogy and claims no organisational relation; #1611 reads the standing representation of the trigger as engineering, the rate budget non-epistemic, the anomaly detector neutral, validation by known-unknown injection coverage and the discarded events noise, and the archive's representation as holding each of these a belief that prevents a mechanism from being measured, the synthesis cataloguing twelve, the decisive epistemic acts now occurring before any physicist sees an event, and the standing one having no field for noncoverage as a quantity; whether the protocols would estimate the relevant unknown population adequately is not established, the cost under Claim A being the foregone opportunity and a physical loss only under Claim B with a validated protocol, and under Claim A alone, #1611 writes, 'the cell is not the finding; the finding is that L is the quantity the exclusion keeps unmeasured'.",
+    "claims": [
+     "Q935-08",
+     "Q934-03",
+     "Q1611-04",
+     "Q1611-01",
+     "Q1611-02",
+     "Q1611-03",
+     "Q1611-05"
+    ]
+   }
+  ],
+  "claims": {
+   "F1": {
+    "kind": "field",
+    "quote": "We explore the possibility of using a Machine Learning (ML) algorithm to identify the source of occasional poor performance of the Particle Accumulator Ring (PAR) and the Linac-To-PAR (LTP) transport line, which are parts of the injector complex of the Advanced Photon Source (APS) at Argonne National Lab.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Abstract",
+    "modality": "stipulation"
+   },
+   "F12": {
+    "kind": "field",
+    "quote": "In this work we propose using machine learning approaches to predict machine failures via beam current measurements before they actual occur. To demonstrate this technique in this paper we examine beam pulses from the Oakridge Spallation Neutron Source (SNS).",
+    "source": "B2",
+    "source_label": "ScienceDirect.com — Predicting particle accelerator failures using binary classifiers",
+    "locus": "Abstract",
+    "modality": "stipulation"
+   },
+   "F42": {
+    "kind": "field",
+    "quote": "For this purpose we explore the predictive power of Machine Learning algorithms to detect faulty beams prior to the failure. In this study, we propose a Machine Learning approach to model mapping from a pair of sensors located across the accelerator.",
+    "source": "B6",
+    "source_label": "Oak Ridge National Laboratory (ORNL) (.gov) — A machine learning approach for particle accelerator errant beam prediction ...",
+    "locus": "Abstract",
+    "modality": "stipulation"
+   },
+   "F25": {
+    "kind": "field",
+    "quote": "Scientists and engineers have designed and built a novel machine learning system to use with the Continuous Electron Beam Accelerator Facility (CEBAF). The system monitors structures called accelerator cavities inside the particle accelerator.",
+    "source": "B4",
+    "source_label": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+    "locus": "The Science",
+    "modality": "documented"
+   },
+   "F17": {
+    "kind": "field",
+    "quote": "To address this, we propose a Classifier-pruned Bayesian Optimization-based Latent space Tuner (CBOL-Tuner), a framework for efficient exploration within a temporally-structured latent space.",
+    "source": "B3",
+    "source_label": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "locus": "Abstract",
+    "modality": "stipulation"
+   },
+   "F32": {
+    "kind": "field",
+    "quote": "A Los Alamos National Laboratory-led project presents a machine learning algorithm that harnesses artificial intelligence capabilities to help tune accelerators, making continuous adjustments that keep the beam precise and useful for scientific discovery.",
+    "source": "B5",
+    "source_label": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "locus": "¶1",
+    "modality": "stipulation"
+   },
+   "Q1452-04": {
+    "kind": "archive",
+    "quote": "AXOL1TL is now deployed in the Level-1 Global Trigger as a real-time unsupervised, signal-agnostic event-level anomaly detector trained on Zero Bias data.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "§5",
+    "modality": "attributed",
+    "date": "2026-08-11"
+   },
+   "Q932-07": {
+    "kind": "archive",
+    "quote": "The deployed LHC anomaly score forms are: AXOL1TL (CMS L1, encoder-side latent-prior); CICADA (CMS L1, distilled reconstruction-loss surrogate); GELATO L1 (ATLAS L1, encoder-side); GELATO HLT (ATLAS HLT, reconstruction-based).",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§3 Finding 3",
+    "modality": "documented",
+    "date": "2026-06-29"
+   },
+   "Q931-06": {
+    "kind": "archive",
+    "quote": "AXOL1TL (CMS-DP-2025-061) deploys only the encoder of a variational autoencoder. The operational anomaly score is the sum of squared latent means:",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§2.1",
+    "modality": "attributed",
+    "date": "2026-06-29"
+   },
+   "Q1449-06": {
+    "kind": "archive",
+    "quote": "Deployed-system status: AXOL1TL and CICADA are running in the CMS Level-1 trigger through Run 3 on 2024 collision data",
+    "deposit": 1449,
+    "source_label": "#1449 The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program (EA-SEI-BATTERY-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1449/",
+    "locus": "§2",
+    "modality": "attributed",
+    "date": "2026-08-11"
+   },
+   "Q1452-06": {
+    "kind": "archive",
+    "quote": "Belle II has long developed neural-network methods for first-level track triggering. More recently, a graph neural network has been implemented for the electromagnetic calorimeter trigger.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "§9",
+    "modality": "attributed",
+    "date": "2026-08-11"
+   },
+   "Q1454-04": {
+    "kind": "archive",
+    "quote": "This architectural spread falsifies any simple claim that real-time accelerator machine learning has converged on one autoencoder design.",
+    "deposit": 1454,
+    "source_label": "#1454 Assimilation Across Accelerator Classifier Architectures: A Cross-Family Metrology of Directional Failure in Real-Time Learned Selection (EA-SEI-ACRB-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1454/",
+    "locus": "§1",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "Q1452-07": {
+    "kind": "archive",
+    "quote": "the more expressive an irreversible early selector becomes, the more consequential its retention metrology becomes.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "§9",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "F6": {
+    "kind": "field",
+    "quote": "An autoencoder is used for anomaly detection in the following way. First, it is trained on the baseline data, so that it can learn various patterns, typical for the baseline data only. Then, when it encounters an anomalous data sample, it is unlikely to reconstruct it well. Hence, the reconstruction error constitutes an anomaly score.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Unsupervised anomaly detection",
+    "modality": "stipulation"
+   },
+   "F43": {
+    "kind": "field",
+    "quote": "While the model is trained to represent normal operation, we evaluate the predictive performance on known faulty beam pulses.",
+    "source": "B6",
+    "source_label": "Oak Ridge National Laboratory (ORNL) (.gov) — A machine learning approach for particle accelerator errant beam prediction ...",
+    "locus": "Abstract",
+    "modality": "documented"
+   },
+   "Q931-09": {
+    "kind": "archive",
+    "quote": "None of the deployed scores is a measurement of physical novelty in any direct sense.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§2.5",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q1454-01": {
+    "kind": "archive",
+    "quote": "A model can be agnostic with respect to signal labels during training while remaining highly selective with respect to the geometry, complexity, and representation of departures from its learned reference distribution.",
+    "deposit": 1454,
+    "source_label": "#1454 Assimilation Across Accelerator Classifier Architectures: A Cross-Family Metrology of Directional Failure in Real-Time Learned Selection (EA-SEI-ACRB-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1454/",
+    "locus": "Abstract",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "F11": {
+    "kind": "field",
+    "quote": "Particle accelerator failures lead to unscheduled downtime and lower reliability. Although simple to mitigate while they are actually happening such failures are difficult to predict or identify beforehand.",
+    "source": "B2",
+    "source_label": "ScienceDirect.com — Predicting particle accelerator failures using binary classifiers",
+    "locus": "Abstract",
+    "modality": "documented"
+   },
+   "F13": {
+    "kind": "field",
+    "quote": "By evaluating a pulse against a set of common classification techniques we show that accelerator failure can be identified prior to actually failing with almost 80% accuracy.",
+    "source": "B2",
+    "source_label": "ScienceDirect.com — Predicting particle accelerator failures using binary classifiers",
+    "locus": "Abstract",
+    "modality": "documented"
+   },
+   "F14": {
+    "kind": "field",
+    "quote": "We also show that tuning classifier parameters and using pulse properties for refining datasets can further lead to almost 92% accuracy in classification of bad pulses.",
+    "source": "B2",
+    "source_label": "ScienceDirect.com — Predicting particle accelerator failures using binary classifiers",
+    "locus": "Abstract",
+    "modality": "documented"
+   },
+   "F15": {
+    "kind": "field",
+    "quote": "Most importantly, in the paper we establish there is information about the failure encoded in the pulses prior to it, so we also present a list of feasible next steps for increasing pulse classification accuracy.",
+    "source": "B2",
+    "source_label": "ScienceDirect.com — Predicting particle accelerator failures using binary classifiers",
+    "locus": "Abstract",
+    "modality": "documented"
+   },
+   "F41": {
+    "kind": "field",
+    "quote": "Particle accelerators are extremely complex systems that are expected to operate on high availability. Predicting impending failures only by utilizing data collected from diagnostic equipment already on board can help operators to avoid installing expensive sensors, unscheduled downtime and associated costs.",
+    "source": "B6",
+    "source_label": "Oak Ridge National Laboratory (ORNL) (.gov) — A machine learning approach for particle accelerator errant beam prediction ...",
+    "locus": "Abstract",
+    "modality": "interpretation"
+   },
+   "F44": {
+    "kind": "field",
+    "quote": "We also investigate the model performance on unseen data through k-fold cross-validation. Then we recap the analysis with a neural architecture search and hyperparameter optimization study to fine tune our initial model.",
+    "source": "B6",
+    "source_label": "Oak Ridge National Laboratory (ORNL) (.gov) — A machine learning approach for particle accelerator errant beam prediction ...",
+    "locus": "Abstract",
+    "modality": "documented"
+   },
+   "F45": {
+    "kind": "field",
+    "quote": "This paper will also introduce a sustainable framework that can standardize Machine Learning workflow applied to particle accelerators.",
+    "source": "B6",
+    "source_label": "Oak Ridge National Laboratory (ORNL) (.gov) — A machine learning approach for particle accelerator errant beam prediction ...",
+    "locus": "Abstract",
+    "modality": "stipulation"
+   },
+   "Q1436-01": {
+    "kind": "archive",
+    "quote": "Signal-template agnosticism is a property of the scoring function's output interface: the decision boundary is computed without evaluating an explicit parametric hypothesis for a named target class. Model independence is a distributional property of an entire pipeline: sensitivity that does not vary across structurally distinct out-of-distribution processes. The first can be read off an architecture. The second can only be measured, and at present is not.",
+    "deposit": 1436,
+    "source_label": "#1436 Signal-Template Agnosticism Is Not Model Independence — Metadata Packet for AI Indexing (EA-MPAI-SIGAGNOSTIC-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1436/",
+    "locus": "§1 Canonical Claim",
+    "modality": "stipulation",
+    "date": "2026-08-07"
+   },
+   "Q1449-01": {
+    "kind": "archive",
+    "quote": "Signal-template agnosticism is an **interface** property: it can be read off an architecture. Model independence is a **distributional** property of an entire pipeline: it can only be established by measurement, and at the deployed LHC anomaly triggers it is unmeasured.",
+    "deposit": 1449,
+    "source_label": "#1449 The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program (EA-SEI-BATTERY-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1449/",
+    "locus": "§0",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "Q931-01": {
+    "kind": "archive",
+    "quote": "We argue that the claim of model-independence for the autoencoder-based and encoder-only anomaly detection systems currently deployed at the CMS and ATLAS Level-1 triggers — AXOL1TL (CMS, encoder-side latent-prior score), CICADA (CMS, distilled surrogate of a reconstruction-loss teacher), and GELATO (ATLAS, staged Level-1 and High-Level Trigger anomaly scores) — cannot be sustained on the strength of *signal-template agnosticism* alone.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "Abstract ¶1",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q931-02": {
+    "kind": "archive",
+    "quote": "The deployed LHC anomaly-detection literature uses the phrase *model-independent* in a specific and bounded sense: no named Beyond-Standard-Model signal hypothesis is required to deploy the score. The systems are *signal-template-agnostic* at the final scoring stage. We accept this narrower claim as accurate to the literature.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§1.1",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q1436-03": {
+    "kind": "archive",
+    "quote": "The two terms are used interchangeably in motivational and public-facing summaries of anomaly-trigger work, and the interchange runs in one direction: the weaker, architecturally supported property is reported using the stronger, unmeasured term.",
+    "deposit": 1436,
+    "source_label": "#1436 Signal-Template Agnosticism Is Not Model Independence — Metadata Packet for AI Indexing (EA-MPAI-SIGAGNOSTIC-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1436/",
+    "locus": "§4",
+    "modality": "interpretation",
+    "date": "2026-08-07"
+   },
+   "Q1436-02": {
+    "kind": "archive",
+    "quote": "This packet does not claim that deployed LHC anomaly triggers are invalid, nor that template-agnostic scoring is a defect.",
+    "deposit": 1436,
+    "source_label": "#1436 Signal-Template Agnosticism Is Not Model Independence — Metadata Packet for AI Indexing (EA-MPAI-SIGAGNOSTIC-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1436/",
+    "locus": "§1",
+    "modality": "self-description",
+    "date": "2026-08-07"
+   },
+   "Q931-03": {
+    "kind": "archive",
+    "quote": "The CMS and ATLAS literatures are genuinely aware of local failure modes of deployed anomaly detection.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§1.2",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q1427-01": {
+    "kind": "archive",
+    "quote": "The field already knows the underlying problem and has a name for it — model dependence — and the turn toward model-independent and anomaly-detection searches at the LHC exists precisely because a pipeline tuned on simulated signatures can only find what the simulation can imagine. The unmeasured part is not whether model dependence exists. It is what the *pipeline* discards before analysis begins.",
+    "deposit": 1427,
+    "source_label": "#1427 Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN",
+    "record": "https://www.alexanarch.org/s/records/1427/",
+    "locus": "What would measure this",
+    "modality": "interpretation",
+    "date": "2026-07-30"
+   },
+   "Q1449-05": {
+    "kind": "archive",
+    "quote": "The direction-dependence conversation exists, and the program joins it rather than founding it.",
+    "deposit": 1449,
+    "source_label": "#1449 The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program (EA-SEI-BATTERY-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1449/",
+    "locus": "§2",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1436-04": {
+    "kind": "archive",
+    "quote": "signal-template agnosticism must not be rendered as model independence, theory-free discovery, or unbiased search.",
+    "deposit": 1436,
+    "source_label": "#1436 Signal-Template Agnosticism Is Not Model Independence — Metadata Packet for AI Indexing (EA-MPAI-SIGAGNOSTIC-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1436/",
+    "locus": "§3.2",
+    "modality": "stipulation",
+    "date": "2026-08-07"
+   },
+   "Q1454-07": {
+    "kind": "archive",
+    "quote": "Fourth, “model-independent” is used in several senses across collider physics. The paper should not attempt to police the term.",
+    "deposit": 1454,
+    "source_label": "#1454 Assimilation Across Accelerator Classifier Architectures: A Cross-Family Metrology of Directional Failure in Real-Time Learned Selection (EA-SEI-ACRB-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1454/",
+    "locus": "§13",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "F3": {
+    "kind": "field",
+    "quote": "This contribution investigates the possibility to use unsupervised and supervised Machine Learning (ML) methods for anomaly detection and classification in the Particle Accumulator Ring (PAR) and in the Linac-To-PAR (LTP) transport line in the injector complex of the Advanced Photon Source (APS) at Argonne National Lab.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Introduction",
+    "modality": "stipulation"
+   },
+   "F2": {
+    "kind": "field",
+    "quote": "The cause of reduced injection or extraction efficiencies may be as simple as one parameter being out of range. Still, it may take an expert considerable time to notice it, whereas a well-trained ML model can point at it instantly.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Abstract",
+    "modality": "interpretation"
+   },
+   "F4": {
+    "kind": "field",
+    "quote": "We create intentional perturbations in PAR and LTP, which result in poor injection and extraction efficiencies. Then, these data are used for training and testing of various ML models.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Introduction",
+    "modality": "documented"
+   },
+   "F5": {
+    "kind": "field",
+    "quote": "Overall, we logged about 9000 PVs related to PAR, LTP, and the linac.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Data",
+    "modality": "documented"
+   },
+   "F8": {
+    "kind": "field",
+    "quote": "One drawback of supervised ML models is that they require labeled data for training.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Supervised classification",
+    "modality": "interpretation"
+   },
+   "Q1454-03": {
+    "kind": "archive",
+    "quote": "Supervised trigger classifiers require a terminological distinction. Their primary failure mode is not necessarily anomaly-score inversion because they are trained to separate named classes. The analogous open-set problem occurs when an unseen class is confidently mapped into a known background category. This can be called **open-set assimilation**",
+    "deposit": 1454,
+    "source_label": "#1454 Assimilation Across Accelerator Classifier Architectures: A Cross-Family Metrology of Directional Failure in Real-Time Learned Selection (EA-SEI-ACRB-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1454/",
+    "locus": "§4.6",
+    "modality": "stipulation",
+    "date": "2026-08-11"
+   },
+   "Q931-07": {
+    "kind": "archive",
+    "quote": "an autoencoder trained on QCD jets successfully treated top jets as anomalies, while the same architecture trained on top jets did not recognize QCD jets as anomalous",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§2.2",
+    "modality": "attributed",
+    "date": "2026-06-29"
+   },
+   "Q931-08": {
+    "kind": "archive",
+    "quote": "single-direction success does not validate sensitivity to anomalies whose structure differs from those tested",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§2.2",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-08": {
+    "kind": "archive",
+    "quote": "The Finke et al. (2021) result is the empirical counterexample to universal inference from single-direction anomaly-detection success. It does not, by itself, quantify open-world assimilation at the deployed LHC triggers.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§3 Finding 2",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q1449-07": {
+    "kind": "archive",
+    "quote": "The record contains the pre-registered inversion battery v0.1 executed 2026-08-11 on public community datasets — the top-quark tagging reference dataset (10.5281/zenodo.2603256) and the LHC Olympics 2020 R&D dataset (10.5281/zenodo.6466204)",
+    "deposit": 1449,
+    "source_label": "#1449 The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program (EA-SEI-BATTERY-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1449/",
+    "locus": "Description",
+    "modality": "documented",
+    "date": "2026-08-11"
+   },
+   "Q1449-04": {
+    "kind": "archive",
+    "quote": "Calibrated claims, no more: v0.1 is single-seed and demonstration-scale, on surrogates, not deployed systems.",
+    "deposit": 1449,
+    "source_label": "#1449 The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program (EA-SEI-BATTERY-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1449/",
+    "locus": "Description",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1449-02": {
+    "kind": "archive",
+    "quote": "the Finke et al. (2021) direction-dependence replicates in an independent implementation and extends beyond reconstruction loss — on jet constituents, QCD-trained systems detect top jets at AUC 0.84–0.87 while top-trained systems rate QCD as more ordinary than their own training class (AUC 0.24–0.30), for the autoencoder and the density family alike",
+    "deposit": 1449,
+    "source_label": "#1449 The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program (EA-SEI-BATTERY-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1449/",
+    "locus": "Description (1)",
+    "modality": "documented",
+    "date": "2026-08-11"
+   },
+   "Q1449-03": {
+    "kind": "archive",
+    "quote": "at trigger-like operating points every tested system assimilates ≥93% of the structurally distinct partner class as ordinary",
+    "deposit": 1449,
+    "source_label": "#1449 The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program (EA-SEI-BATTERY-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1449/",
+    "locus": "Description (3)",
+    "modality": "documented",
+    "date": "2026-08-11"
+   },
+   "Q1455-06": {
+    "kind": "archive",
+    "quote": "v0.2 re-runs the pre-registered inversion battery of #1449 with five independent seeds per cell",
+    "deposit": 1455,
+    "source_label": "#1455 Inversion Battery v0.2: Multi-Seed Direction-Dependence, a Correction Ledger, and Four Rejected Overclaims (EA-SEI-BATTERY-01 v2.0)",
+    "record": "https://www.alexanarch.org/s/records/1455/",
+    "locus": "§1",
+    "modality": "self-description",
+    "date": "2026-08-12"
+   },
+   "Q1455-01": {
+    "kind": "archive",
+    "quote": "The top/QCD inversion reproduces across five independent trainings: the reconstruction autoencoder detects top jets from a QCD-trained system at AUC 0.838 and, reversed, rates QCD as more ordinary than its own training class at AUC 0.243.",
+    "deposit": 1455,
+    "source_label": "#1455 Inversion Battery v0.2: Multi-Seed Direction-Dependence, a Correction Ledger, and Four Rejected Overclaims (EA-SEI-BATTERY-01 v2.0)",
+    "record": "https://www.alexanarch.org/s/records/1455/",
+    "locus": "§3",
+    "modality": "documented",
+    "date": "2026-08-12"
+   },
+   "Q1455-04": {
+    "kind": "archive",
+    "quote": "Two witnesses described the run as unassailable, as proving the thesis, and as a pristine payload. Rejected:",
+    "deposit": 1455,
+    "source_label": "#1455 Inversion Battery v0.2: Multi-Seed Direction-Dependence, a Correction Ledger, and Four Rejected Overclaims (EA-SEI-BATTERY-01 v2.0)",
+    "record": "https://www.alexanarch.org/s/records/1455/",
+    "locus": "§7",
+    "modality": "self-description",
+    "date": "2026-08-12"
+   },
+   "Q1455-05": {
+    "kind": "archive",
+    "quote": "Nothing here bounds any open-world assimilation rate in either direction, and nothing here measures a deployed trigger.",
+    "deposit": 1455,
+    "source_label": "#1455 Inversion Battery v0.2: Multi-Seed Direction-Dependence, a Correction Ledger, and Four Rejected Overclaims (EA-SEI-BATTERY-01 v2.0)",
+    "record": "https://www.alexanarch.org/s/records/1455/",
+    "locus": "Falsification Conditions",
+    "modality": "self-description",
+    "date": "2026-08-12"
+   },
+   "Q1455-02": {
+    "kind": "archive",
+    "quote": "The encoder-side latent score alone escapes the T1 inversion (0.535 / 0.739) while carrying the largest T1 asymmetry. Architecture changes the orientation of the blind spot",
+    "deposit": 1455,
+    "source_label": "#1455 Inversion Battery v0.2: Multi-Seed Direction-Dependence, a Correction Ledger, and Four Rejected Overclaims (EA-SEI-BATTERY-01 v2.0)",
+    "record": "https://www.alexanarch.org/s/records/1455/",
+    "locus": "§3",
+    "modality": "documented",
+    "date": "2026-08-12"
+   },
+   "Q1456-09": {
+    "kind": "archive",
+    "quote": "v0.2 (#1455) closed with a seven-item correction ledger. v0.3 was designed to clear it",
+    "deposit": 1456,
+    "source_label": "#1456 Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "record": "https://www.alexanarch.org/s/records/1456/",
+    "locus": "§0",
+    "modality": "self-description",
+    "date": "2026-08-12"
+   },
+   "Q1456-01": {
+    "kind": "archive",
+    "quote": "With model weights fixed, changing the score function is sufficient to reverse the directional ordering of the anomaly relation.",
+    "deposit": 1456,
+    "source_label": "#1456 Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "record": "https://www.alexanarch.org/s/records/1456/",
+    "locus": "§2 T5",
+    "modality": "documented",
+    "date": "2026-08-12"
+   },
+   "Q1456-02": {
+    "kind": "archive",
+    "quote": "After v0.2 this program wrote: *architecture changes the orientation of the blind spot*. That sentence is **falsified**.",
+    "deposit": 1456,
+    "source_label": "#1456 Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "record": "https://www.alexanarch.org/s/records/1456/",
+    "locus": "§2 T5",
+    "modality": "self-description",
+    "date": "2026-08-12"
+   },
+   "Q1456-06": {
+    "kind": "archive",
+    "quote": "The constituent inversion survives with its entire interval below chance.",
+    "deposit": 1456,
+    "source_label": "#1456 Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "record": "https://www.alexanarch.org/s/records/1456/",
+    "locus": "§1 T3",
+    "modality": "documented",
+    "date": "2026-08-12"
+   },
+   "Q1456-03": {
+    "kind": "archive",
+    "quote": "Deployment relevance, stated at the strength the evidence permits: the two readout families whose orientations diverge here are the families the two deployed CMS anomaly triggers use — an encoder-side latent score and a distilled reconstruction teacher. **Nothing in this battery measures those systems.**",
+    "deposit": 1456,
+    "source_label": "#1456 Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "record": "https://www.alexanarch.org/s/records/1456/",
+    "locus": "§2 T5",
+    "modality": "self-description",
+    "date": "2026-08-12"
+   },
+   "Q1455-03": {
+    "kind": "archive",
+    "quote": "Global rank agreement is moderate while only 36 to 47 percent of the teacher's top one percent survives into the student's top one percent.",
+    "deposit": 1455,
+    "source_label": "#1455 Inversion Battery v0.2: Multi-Seed Direction-Dependence, a Correction Ledger, and Four Rejected Overclaims (EA-SEI-BATTERY-01 v2.0)",
+    "record": "https://www.alexanarch.org/s/records/1455/",
+    "locus": "§4",
+    "modality": "documented",
+    "date": "2026-08-12"
+   },
+   "Q1456-04": {
+    "kind": "archive",
+    "quote": "Global teacher–student agreement does not guarantee preservation of the operational tail.",
+    "deposit": 1456,
+    "source_label": "#1456 Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "record": "https://www.alexanarch.org/s/records/1456/",
+    "locus": "§3 T6",
+    "modality": "documented",
+    "date": "2026-08-12"
+   },
+   "Q1456-05": {
+    "kind": "archive",
+    "quote": "An architecture's detection behaviour is not transportable across representations of the same events.",
+    "deposit": 1456,
+    "source_label": "#1456 Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "record": "https://www.alexanarch.org/s/records/1456/",
+    "locus": "§5 T7",
+    "modality": "documented",
+    "date": "2026-08-12"
+   },
+   "Q1456-07": {
+    "kind": "archive",
+    "quote": "On the LHCO pairs the remedy works, and the diagnostic says we may believe it",
+    "deposit": 1456,
+    "source_label": "#1456 Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "record": "https://www.alexanarch.org/s/records/1456/",
+    "locus": "§6 T8",
+    "modality": "documented",
+    "date": "2026-08-12"
+   },
+   "Q1456-08": {
+    "kind": "archive",
+    "quote": "if a converged normalized autoencoder reaches 0.5, every inversion claim in this program becomes bounded to non-normalized scores.",
+    "deposit": 1456,
+    "source_label": "#1456 Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
+    "record": "https://www.alexanarch.org/s/records/1456/",
+    "locus": "§8 T10",
+    "modality": "self-description",
+    "date": "2026-08-12"
+   },
+   "Q1454-02": {
+    "kind": "archive",
+    "quote": "ACRB does **not** assert that all accelerator classifier architectures share the same blind spot.",
+    "deposit": 1454,
+    "source_label": "#1454 Assimilation Across Accelerator Classifier Architectures: A Cross-Family Metrology of Directional Failure in Real-Time Learned Selection (EA-SEI-ACRB-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1454/",
+    "locus": "Claim boundary",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1454-05": {
+    "kind": "archive",
+    "quote": "Those shared properties are sufficient to motivate common metrology. They are not sufficient to assert common blind spots.",
+    "deposit": 1454,
+    "source_label": "#1454 Assimilation Across Accelerator Classifier Architectures: A Cross-Family Metrology of Directional Failure in Real-Time Learned Selection (EA-SEI-ACRB-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1454/",
+    "locus": "§11",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "F26": {
+    "kind": "field",
+    "quote": "Problems in these cavities can cause the CEBAF to trip off like a fuse.",
+    "source": "B4",
+    "source_label": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+    "locus": "The Science",
+    "modality": "documented"
+   },
+   "F28": {
+    "kind": "field",
+    "quote": "Previously, when an accelerator cavity or series of cavities faulted in CEBAF, accelerator experts needed to take time to diagnose the issue.",
+    "source": "B4",
+    "source_label": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+    "locus": "Summary",
+    "modality": "documented"
+   },
+   "F27": {
+    "kind": "field",
+    "quote": "In its first field test, the machine learning system correctly identified which of these cavities were tripping off about 85 percent of the time. About 78 percent of the time, the system also correctly identified what kind of fault caused each cavity to trip.",
+    "source": "B4",
+    "source_label": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+    "locus": "The Science",
+    "modality": "documented"
+   },
+   "F29": {
+    "kind": "field",
+    "quote": "The system was connected to the control system for about 20 percent of the accelerator cavities in the machine. In a two-week test of the system in March 2020, CEBAF experienced a few hundred faults that the system analyzed.",
+    "source": "B4",
+    "source_label": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+    "locus": "Summary",
+    "modality": "documented"
+   },
+   "F30": {
+    "kind": "field",
+    "quote": "It provided almost real-time feedback to operators, allowing them to use the information to recover faulted cavities quickly, reducing the time CEBAF's electron beam was not available for research.",
+    "source": "B4",
+    "source_label": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+    "locus": "Summary",
+    "modality": "documented"
+   },
+   "F16": {
+    "kind": "field",
+    "quote": "Complex dynamical systems, such as particle accelerators, often require complicated and time-consuming tuning procedures for optimal performance.",
+    "source": "B3",
+    "source_label": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "locus": "Abstract",
+    "modality": "documented"
+   },
+   "F18": {
+    "kind": "field",
+    "quote": "Classifier-pruned Bayesian optimizer (C-BO): A Bayesian optimizer that sequentially explores the latent space to maximize the negative of the total beam loss (or minimize the total beam loss). The exploration history is filtered through a pretrained ResNet50 classifier to eliminate non-physical signals.",
+    "source": "B3",
+    "source_label": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "locus": "Introduction (contributions)",
+    "modality": "stipulation"
+   },
+   "F19": {
+    "kind": "field",
+    "quote": "The classifier is trained with high accuracy ( $\\sim 0.99989$ ) to map phase space projections (X) across different modules into 48 classes (m).",
+    "source": "B3",
+    "source_label": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "locus": "Theoretical background",
+    "modality": "documented"
+   },
+   "F20": {
+    "kind": "field",
+    "quote": "Classifier-pruned BO is designed to discard explored points ( $z_{1:48}$ ) if their decoding ( $X_{1:48}$ ) does not belong to the true classes.",
+    "source": "B3",
+    "source_label": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "locus": "Theoretical background",
+    "modality": "stipulation"
+   },
+   "F21": {
+    "kind": "field",
+    "quote": "High-Performance Simulator (HPSim) is an open-source, GPU-accelerated code developed at Los Alamos National Laboratory (LANL) for simulations of multi-particle beam dynamics (Pang and Rybarcyk (2014)). The software is designed to replicate the accelerator and, therefore, provides a realistic representation of the true beam used at the Los Alamos Neutron Science Center (LANSCE).",
+    "source": "B3",
+    "source_label": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "locus": "Results",
+    "modality": "documented"
+   },
+   "F22": {
+    "kind": "field",
+    "quote": "CBOL-Tuner demonstrates superior performance in identifying multiple optimal settings and outperforms alternative global optimization methods.",
+    "source": "B3",
+    "source_label": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "locus": "Abstract",
+    "modality": "documented"
+   },
+   "F23": {
+    "kind": "field",
+    "quote": "While a minor offset is observed between the predicted and true optimal values, CBOL-Tuner demonstrates consistent performance, producing significantly lower values of total beam loss.",
+    "source": "B3",
+    "source_label": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "locus": "Discussions",
+    "modality": "documented"
+   },
+   "Q931-10": {
+    "kind": "archive",
+    "quote": "The OAR is the probability that events drawn from $Q$ fall on the ordinary side of the deployed anomaly gate.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§3.1",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q931-11": {
+    "kind": "archive",
+    "quote": "The open-world OAR is a family of quantities indexed by $Q$, not a universal scalar. There is no defensible probability distribution over all unknown unknowns.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§3.1",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q931-13": {
+    "kind": "archive",
+    "quote": "IAI measures direction-dependence on the tested pair at the specified operating rate.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§3.3",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q931-12": {
+    "kind": "archive",
+    "quote": "BAR values neither upper- nor lower-bound OAR for an unobserved $Q$ without explicit assumptions linking the benchmark distributions to that $Q$.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§3.2",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q932-09": {
+    "kind": "archive",
+    "quote": "The v0.1 lower-bound claim ($\\mathrm{OAR} \\geq \\Delta_{\\max}$) and the v0.2 upper-bound claim (OAR bounded above by structurally-similar BARs) are both retracted as synthesis-overreach.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§3 Finding 4",
+    "modality": "self-description",
+    "date": "2026-06-29"
+   },
+   "F7": {
+    "kind": "field",
+    "quote": "One can train the neural network classifier on the data from the beginning of one study, and test it on the data from the end of the same study (a few hours apart). In this case, the prediction accuracy on the test data was above 99 % for each of our study shifts.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Supervised classification",
+    "modality": "documented"
+   },
+   "F9": {
+    "kind": "field",
+    "quote": "The neural network classifier for the considered anomalies in PAR and LTP is rather accurate and its performance does not degrade significantly with time on a scale of a couple months, see Fig. 1.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Conclusion",
+    "modality": "documented"
+   },
+   "Q931-14": {
+    "kind": "archive",
+    "quote": "The institutional claim becomes: validation against named simulated signals does not establish that BAR is low across a pre-registered held-out panel, and does not establish that IAI is small. Both should be measured. The current literature does neither.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§3.4",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q931-17": {
+    "kind": "archive",
+    "quote": "The argument is not that the existing defenses are absent or worthless. It is that the existing defenses do not constitute, and have not been claimed to constitute, measurement of the BAR or the IAI.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§6",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q1427-02": {
+    "kind": "archive",
+    "quote": "Here is the peculiar fact: these measurements are not published.** Not for the repository, and not, in any form this author has located, for the classification pipelines of frontier experimental physics.",
+    "deposit": 1427,
+    "source_label": "#1427 Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN",
+    "record": "https://www.alexanarch.org/s/records/1427/",
+    "locus": "What would measure this",
+    "modality": "interpretation",
+    "date": "2026-07-30"
+   },
+   "Q1427-03": {
+    "kind": "archive",
+    "quote": "That absence is not evidence of foreclosure. It is the condition under which foreclosure would be undetectable",
+    "deposit": 1427,
+    "source_label": "#1427 Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN",
+    "record": "https://www.alexanarch.org/s/records/1427/",
+    "locus": "What would measure this",
+    "modality": "self-description",
+    "date": "2026-07-30"
+   },
+   "Q933-02": {
+    "kind": "archive",
+    "quote": "A classifier that did not foreclose anything would not classify.",
+    "deposit": 933,
+    "source_label": "#933 06.UMB.ARCH.01 v0.2: Architectures for Auditable Foreclosure in Physical Anomaly Detection",
+    "record": "https://www.alexanarch.org/s/records/933/",
+    "locus": "§1.1",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-01": {
+    "kind": "archive",
+    "quote": "Anomaly detection systems deployed on physical reality cannot detect what their architecture has foreclosed, and the validation framework — closed under its own assumptions — cannot detect this failure.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§2",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-05": {
+    "kind": "archive",
+    "quote": "the classifier does not merely filter data; it constitutes the data",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§2.3",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-12": {
+    "kind": "archive",
+    "quote": "Collisions occur whether or not the trigger sees them.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§5.1",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-18": {
+    "kind": "archive",
+    "quote": "Anomaly detection does not prevent ontological collapse when the anomaly detector inherits the ontology whose collapse is in question.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§8.3; Appendix W3 §5",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q935-05": {
+    "kind": "archive",
+    "quote": "The machinery responsible for revealing failures of the physical model is itself trained and evaluated through products of the physical model.",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "§2.4",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-13": {
+    "kind": "archive",
+    "quote": "in physical systems is the degenerative process by which a discriminative model, trained exclusively or dominantly on a known distribution of physical events, progressively loses the capacity to represent, detect, or retain events that fall outside that distribution.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "Appendix W1 §0",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q932-14": {
+    "kind": "archive",
+    "quote": "The witnesses' \"Irretrievability Theorem\" (Witness 1) and \"Inevitability Theorem\" (Witness 2) are treated in this deposit as **Irretrievability Argument** and **Inevitability Argument** respectively, preserving force without overstating formal status.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "Appendix A",
+    "modality": "self-description",
+    "date": "2026-06-29"
+   },
+   "Q932-02": {
+    "kind": "archive",
+    "quote": "Foreclosure is structurally present in every classifier-mediated trigger architecture deployed at the LHC. The witnesses propose eight foreclosure mechanisms and twelve associated institutional beliefs; published trigger systems instantiate several of the mechanisms in their corresponding architectural forms; the institutional claims remain hypotheses for audit rather than established measurements of collaboration-wide belief.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§2.2 Claim A",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-03": {
+    "kind": "archive",
+    "quote": "**Claim B (stronger, not empirically established):** Recursive phenomenal collapse has occurred or is occurring at the deployed LHC triggers.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§2.2 Claim B",
+    "modality": "hypothesis",
+    "date": "2026-06-29"
+   },
+   "Q932-04": {
+    "kind": "archive",
+    "quote": "Foreclosure is an active structural feature. Recursive phenomenal collapse is an unmeasured possible consequence of accumulated foreclosure and feedback.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§2.2",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-06": {
+    "kind": "archive",
+    "quote": "Standard internal validation can test behavior within those layers, but it cannot by itself establish sensitivity to distinctions already removed upstream. Whether repeated local foreclosure has composed into longitudinal classifier collapse is an empirical question.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§2.4",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q931-04": {
+    "kind": "archive",
+    "quote": "foreclosure is a structurally present feature of every classifier-mediated trigger architecture deployed at the LHC, and whether accumulated foreclosure has composed longitudinally into recursive phenomenal collapse is precisely the missing measurement.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "Abstract ¶4",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-15": {
+    "kind": "archive",
+    "quote": "The collapse is not coming. It is here. It is operating.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "Appendix W2 closing",
+    "modality": "contested",
+    "date": "2026-06-29"
+   },
+   "Q932-16": {
+    "kind": "archive",
+    "quote": "The ingredients are visible. Full recursive collapse has not been demonstrated.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "Appendix W3 §4",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q932-17": {
+    "kind": "archive",
+    "quote": "I found no evidence that CERN simply discards novel physics as bad detector data. That would be an unsupported claim.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "Appendix W3 §2 Mechanism J",
+    "modality": "self-description",
+    "date": "2026-06-29"
+   },
+   "F10": {
+    "kind": "field",
+    "quote": "Even though this was a proof-of-principle experiment, the obtained classifier may be useful in real life, if the current meter for one of the considered magnets (see Fig. 1) becomes faulty and stops reflecting the real magnetic field.",
+    "source": "B1",
+    "source_label": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "locus": "Conclusion",
+    "modality": "hypothesis"
+   },
+   "F24": {
+    "kind": "field",
+    "quote": "Currently, the method is implemented as a post-processing step, meaning it does not directly influence the exploration process of BO.",
+    "source": "B3",
+    "source_label": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "locus": "Discussions",
+    "modality": "self-description"
+   },
+   "F31": {
+    "kind": "field",
+    "quote": "Additional results are under analysis after further system tests with the machine learning system. If results are favorable, the team hopes to expand the system to more accelerator cavities.",
+    "source": "B4",
+    "source_label": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+    "locus": "Summary",
+    "modality": "self-description"
+   },
+   "Q931-05": {
+    "kind": "archive",
+    "quote": "We do not claim that classifier collapse has occurred at the LHC anomaly streams.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§1.4",
+    "modality": "self-description",
+    "date": "2026-06-29"
+   },
+   "Q1450-03": {
+    "kind": "archive",
+    "quote": "This document does **not** claim: (1) that new physics has been missed — only that the null-result era is observationally ambiguous under unaudited instruments; (2) that the post-Higgs desert is illusory — only that some unknown fraction *could* reflect instrument-conditioned absence, and that this fraction is currently unbounded in either direction; (3) that model collapse has occurred in any deployed scientific pipeline — only that its structural prerequisites are documented and its longitudinal measurement absent",
+    "deposit": 1450,
+    "source_label": "#1450 The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise (EA-SEI-ICEBERG-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1450/",
+    "locus": "§0.1",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1452-03": {
+    "kind": "archive",
+    "quote": "The manuscript does **not** claim that an undiscovered physical phenomenon has already been rejected.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "Claim boundary",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1558-03": {
+    "kind": "archive",
+    "quote": "It does not assert that learned triggers are uniquely unreliable. It does not assert that an unknown physical phenomenon has already been discarded.",
+    "deposit": 1558,
+    "source_label": "#1558 Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)",
+    "record": "https://www.alexanarch.org/s/records/1558/",
+    "locus": "§15",
+    "modality": "self-description",
+    "date": "2026-08-27"
+   },
+   "Q1454-06": {
+    "kind": "archive",
+    "quote": "First, failure on benchmark distributions does not establish loss of unknown new physics.",
+    "deposit": 1454,
+    "source_label": "#1454 Assimilation Across Accelerator Classifier Architectures: A Cross-Family Metrology of Directional Failure in Real-Time Learned Selection (EA-SEI-ACRB-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1454/",
+    "locus": "§13",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q935-07": {
+    "kind": "archive",
+    "quote": "distillation, model-produced targets, simulation conditioning, and training on historically selected data create partial feedback pathways homologous to the prerequisites of model collapse; whether these pathways have produced cross-generational phenomenal contraction is precisely what the operative paper's prospective frozen replay bank — 06.SEI.OAR_PROTOCOL v0.3 §4.2 — is designed to test.",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "§4.4",
+    "modality": "hypothesis",
+    "date": "2026-06-29"
+   },
+   "Q932-10": {
+    "kind": "archive",
+    "quote": "This is a homology hypothesis to be tested domain by domain, not an assertion that every classifier-mediated system instantiates identical mechanisms or rates.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§3 Finding 9",
+    "modality": "hypothesis",
+    "date": "2026-06-29"
+   },
+   "Q931-20": {
+    "kind": "archive",
+    "quote": "The paper's central claim is falsifiable. The following measurements, if performed and producing the corresponding results, would constitute evidence against the paper's claim:",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§8.1",
+    "modality": "self-description",
+    "date": "2026-06-29"
+   },
+   "Q931-18": {
+    "kind": "archive",
+    "quote": "If the BAR is measured on the pre-registered deployed-model held-out panel and found to be negligible (e.g., $< 10^{-4}$) for all deployed systems against all held-out families, the held-out-family assimilation concern would be shown to be empirically bounded at levels that do not threaten the narrow \"model-independent\" claim.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§8.1",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q931-19": {
+    "kind": "archive",
+    "quote": "None of these results would establish that the open-world OAR is zero; that is structurally not measurable.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§8.1",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q932-11": {
+    "kind": "archive",
+    "quote": "then the claim that foreclosure is an active structural feature requiring architectural response would be shown to be overstated.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "§3.1",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q1450-01": {
+    "kind": "archive",
+    "quote": "Validation of each stage on its design and validation support establishes no nontrivial lower bound on R_end(Q) for a novelty distribution Q outside that characterized support, unless the relevant off-support conditional retention functions are themselves constrained.",
+    "deposit": 1450,
+    "source_label": "#1450 The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise (EA-SEI-ICEBERG-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1450/",
+    "locus": "§2.1 (Layer II)",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "Q1450-02": {
+    "kind": "archive",
+    "quote": "The claim is not that end-to-end retention *is* near zero. The claim is that the standard evidence *does not bound it away from zero*",
+    "deposit": 1450,
+    "source_label": "#1450 The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise (EA-SEI-ICEBERG-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1450/",
+    "locus": "§2.1",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1450-05": {
+    "kind": "archive",
+    "quote": "A null result constrains only those hypotheses for which the end-to-end acceptance of the acquisition and analysis chain is sufficiently characterized.",
+    "deposit": 1450,
+    "source_label": "#1450 The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise (EA-SEI-ICEBERG-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1450/",
+    "locus": "§3.2 (Layer III)",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "Q1450-04": {
+    "kind": "archive",
+    "quote": "The irreversibility locus, not the presence of ML, is the fundamental variable.",
+    "deposit": 1450,
+    "source_label": "#1450 The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise (EA-SEI-ICEBERG-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1450/",
+    "locus": "§2.2 (Layer II)",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "Q1452-01": {
+    "kind": "archive",
+    "quote": "For a specified scientific question and fidelity hierarchy, define the **irreversibility frontier** as the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which that loss can later be audited.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "§3",
+    "modality": "stipulation",
+    "date": "2026-08-11"
+   },
+   "Q1452-02": {
+    "kind": "archive",
+    "quote": "The irreversibility frontier predates machine learning; conventional thresholds, object definitions, zero suppression, compression, and trigger logic can also create irreversible selection.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "Claim boundary",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1452-08": {
+    "kind": "archive",
+    "quote": "It is that learned selectors can make their priors harder to enumerate.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "§14",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "Q1452-05": {
+    "kind": "archive",
+    "quote": "LHCb provides the strongest existing LHC counterarchitecture. The Run-3 upgrade removed the hardware physics trigger and reads out all detectors at the full non-empty LHC collision rate of approximately 30 MHz.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "§7",
+    "modality": "attributed",
+    "date": "2026-08-11"
+   },
+   "Q1452-11": {
+    "kind": "archive",
+    "quote": "The paper does not claim that CMS or ATLAS could simply adopt the LHCb or CBM architecture under their own detector conditions.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "§20",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1452-09": {
+    "kind": "archive",
+    "quote": "The model determines where a miss region lies; the acquisition architecture determines whether science can later discover that it was there.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "Canonical compression",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "Q934-04": {
+    "kind": "archive",
+    "quote": "At the LHC, the retained fraction of physical interactions is approximately $2.5 \\times 10^{-5}$; the discarded fraction is approximately 99.9975%. This number makes the epistemic condition legible. It does not demonstrate wrongdoing and should not be confused with an anomaly-trigger rejection rate.",
+    "deposit": 934,
+    "source_label": "#934 EA-SEI-INVERSION-01 v0.2: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/934/",
+    "locus": "§7 Finding 8",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q935-09": {
+    "kind": "archive",
+    "quote": "The claim is therefore not that anomaly detectors alone determine what physics can see; it is that the entire trigger system, of which anomaly detectors are one component, operates as classifier-mediated foreclosure under a bureaucratic justification — \"rate budget\" — that does not require disclosure of what is being foreclosed.",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "§3.5",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "F33": {
+    "kind": "field",
+    "quote": "said Alexander Scheinker, research and development engineer at Los Alamos and the project's lead. \"Factors like vibrations and temperature changes can cause problems for accelerators, which have thousands of components, and even the best accelerator technicians can struggle to identify and address issues or return them to optimum parameters quickly. It is a high-dimensional optimization problem that must be repeated again and again as the systems drift with time. Turning these machines on after an outage or retuning between different experiments can take weeks.\"",
+    "source": "B5",
+    "source_label": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "locus": "¶2 (Scheinker)",
+    "modality": "attributed"
+   },
+   "F34": {
+    "kind": "field",
+    "quote": "In a collaboration with Lawrence Berkeley National Laboratory, the approach developed by Scheinker couples adaptive feedback control algorithms, deep convolutional neural networks and physics-based models in one large feedback loop to make better, noninvasive predictions that enable autonomous control of compact accelerators.",
+    "source": "B5",
+    "source_label": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "locus": "¶3",
+    "modality": "documented"
+   },
+   "F35": {
+    "kind": "field",
+    "quote": "But because they are based on local accelerator feedback, such algorithms can get stuck with a local solution that is not the overall best solution. Machine learning algorithms, however, can use training data to identify relationships between data and results with a higher-level, global view.",
+    "source": "B5",
+    "source_label": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "locus": "Teaching machine learning applications",
+    "modality": "interpretation"
+   },
+   "Q931-15": {
+    "kind": "archive",
+    "quote": "Three protocols are proposed: paired inversion battery and BAR audit; prospective frozen replay bank for compatible future algorithms; cross-representation disagreement preservation with quantile-normalized scores.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§8 Finding 7",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q931-16": {
+    "kind": "archive",
+    "quote": "Per-stage retention maps should accompany any anomaly-detection publication as a documentation standard. Without retention maps, anomaly-detection results report what the trigger allows to count as physical reality, not what physical reality is.",
+    "deposit": 931,
+    "source_label": "#931 EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+    "record": "https://www.alexanarch.org/s/records/931/",
+    "locus": "§8 Finding 8",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q1452-10": {
+    "kind": "archive",
+    "quote": "Trigger documentation should include an explicit **Irreversibility Statement**.",
+    "deposit": 1452,
+    "source_label": "#1452 The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1452/",
+    "locus": "§17",
+    "modality": "stipulation",
+    "date": "2026-08-11"
+   },
+   "Q933-01": {
+    "kind": "archive",
+    "quote": "An architecture for auditable foreclosure is not a system free of foreclosure (impossible) but a system in which foreclosure is visible, measurable, and architecturally reviewable.",
+    "deposit": 933,
+    "source_label": "#933 06.UMB.ARCH.01 v0.2: Architectures for Auditable Foreclosure in Physical Anomaly Detection",
+    "record": "https://www.alexanarch.org/s/records/933/",
+    "locus": "§8 Finding 1",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q933-03": {
+    "kind": "archive",
+    "quote": "Five features compose the architectural target: abstention and estimated noncoverage; cross-representation disagreement preservation; temporal invariance via prospective anchor preservation for compatible future algorithms; per-stage retention mapping as architectural property; audited noncoverage estimation as first-class output.",
+    "deposit": 933,
+    "source_label": "#933 06.UMB.ARCH.01 v0.2: Architectures for Auditable Foreclosure in Physical Anomaly Detection",
+    "record": "https://www.alexanarch.org/s/records/933/",
+    "locus": "§8 Finding 2",
+    "modality": "stipulation",
+    "date": "2026-06-29"
+   },
+   "Q933-04": {
+    "kind": "archive",
+    "quote": "Noncoverage estimation is not novelty detection.",
+    "deposit": 933,
+    "source_label": "#933 06.UMB.ARCH.01 v0.2: Architectures for Auditable Foreclosure in Physical Anomaly Detection",
+    "record": "https://www.alexanarch.org/s/records/933/",
+    "locus": "§2.1",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q933-05": {
+    "kind": "archive",
+    "quote": "None of the architectures addresses detector-level, theoretical-language, institutional, adversarial-stress quality, or bandwidth-base foreclosure. The architectural alternative is necessary but not sufficient.",
+    "deposit": 933,
+    "source_label": "#933 06.UMB.ARCH.01 v0.2: Architectures for Auditable Foreclosure in Physical Anomaly Detection",
+    "record": "https://www.alexanarch.org/s/records/933/",
+    "locus": "§8 Finding 5",
+    "modality": "self-description",
+    "date": "2026-06-29"
+   },
+   "Q933-06": {
+    "kind": "archive",
+    "quote": "Feasibility for any specific deployment has not been established by this document.",
+    "deposit": 933,
+    "source_label": "#933 06.UMB.ARCH.01 v0.2: Architectures for Auditable Foreclosure in Physical Anomaly Detection",
+    "record": "https://www.alexanarch.org/s/records/933/",
+    "locus": "§9",
+    "modality": "self-description",
+    "date": "2026-06-29"
+   },
+   "Q1453-01": {
+    "kind": "archive",
+    "quote": "Under a finite storage budget, no content-sensitive algorithm can constitute a less assumption-laden baseline than a probability sample whose inclusion mechanism is independent of event content and whose inclusion probability is known.",
+    "deposit": 1453,
+    "source_label": "#1453 Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1453/",
+    "locus": "Abstract",
+    "modality": "interpretation",
+    "date": "2026-08-11"
+   },
+   "Q1558-01": {
+    "kind": "archive",
+    "quote": "A controlled numerical study quantifies what binding them yields: a content-sensitive pseudo-baseline estimates the retention of a shifted class at 0.76 (95\\% interval [0.71, 0.81]) against a true 0.016, while the content-independent sample measures a deliberately representation-blind class at 0.000 [0, 0.073].",
+    "deposit": 1558,
+    "source_label": "#1558 Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)",
+    "record": "https://www.alexanarch.org/s/records/1558/",
+    "locus": "Abstract",
+    "modality": "documented",
+    "date": "2026-08-27"
+   },
+   "Q1453-02": {
+    "kind": "archive",
+    "quote": "BCA does **not** guarantee capture of arbitrarily rare unknown phenomena; it makes the selection function statistically auditable over the population represented by its control channels.",
+    "deposit": 1453,
+    "source_label": "#1453 Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1453/",
+    "locus": "Claim boundary",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1453-03": {
+    "kind": "archive",
+    "quote": "Existing CMS components are treated as architectural precedents, not retroactively relabeled as a completed BCA implementation.",
+    "deposit": 1453,
+    "source_label": "#1453 Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1453/",
+    "locus": "Claim boundary",
+    "modality": "self-description",
+    "date": "2026-08-11"
+   },
+   "Q1558-02": {
+    "kind": "archive",
+    "quote": "BCA does not solve the unknown-unknown problem.",
+    "deposit": 1558,
+    "source_label": "#1558 Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)",
+    "record": "https://www.alexanarch.org/s/records/1558/",
+    "locus": "§14",
+    "modality": "self-description",
+    "date": "2026-08-27"
+   },
+   "F36": {
+    "kind": "field",
+    "quote": "The team has developed an adaptive version of the advanced generative AI process known as diffusion, which includes the capability to virtually diagnose the accelerator beam. The non-invasive approach, described in Scientific Reports, means that diagnostics can occur in real time during beam operations.",
+    "source": "B5",
+    "source_label": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "locus": "Teaching machine learning applications",
+    "modality": "documented"
+   },
+   "F37": {
+    "kind": "field",
+    "quote": "Demonstrating the diffusion-based model at the European X-Ray Free-Electron Laser Facility, an X-ray pulse accelerator in Germany, the team was able to capture images of the particle beam in respect to time versus energy.",
+    "source": "B5",
+    "source_label": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "locus": "¶ European XFEL",
+    "modality": "documented"
+   },
+   "F38": {
+    "kind": "field",
+    "quote": "The cDVAE was able to extrapolate beyond the training data and between various beam setups, suggesting its potential as a general method that can be applied for accelerator diagnostics.",
+    "source": "B5",
+    "source_label": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "locus": "¶ cDVAE",
+    "modality": "documented"
+   },
+   "F40": {
+    "kind": "field",
+    "quote": "Scheinker's team at Los Alamos is also developing such adaptive diffusion models for the Laboratory's LANSCE accelerator.",
+    "source": "B5",
+    "source_label": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "locus": "¶ LANSCE",
+    "modality": "documented"
+   },
+   "F39": {
+    "kind": "field",
+    "quote": "\"The results we've seen from our diffusion model studies show a great deal of promise,\" Scheinker said.",
+    "source": "B5",
+    "source_label": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "locus": "¶ Scheinker quote",
+    "modality": "attributed"
+   },
+   "Q935-01": {
+    "kind": "archive",
+    "quote": "Frontier experimental high-energy physics has, in its operational core, become a machine learning discipline while retaining the institutional authority of physics.",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "Abstract",
+    "modality": "contested",
+    "date": "2026-06-29"
+   },
+   "Q935-06": {
+    "kind": "archive",
+    "quote": "ML methods deployed under physics's institutional authority, with neither physics's classical disciplinary checks nor ML's own disciplinary self-knowledge as guardrails",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "§4",
+    "modality": "contested",
+    "date": "2026-06-29"
+   },
+   "Q935-02": {
+    "kind": "archive",
+    "quote": "The v0.2 perfective sweep responded to Kimi and ChatGPT third-round audits by dampening the manifesto's central thesis to the point where a lay reader could no longer identify what was being claimed. The v0.2 deposit (AXN:03B1, deposit #934) stands as the record of that over-correction. v0.3 restores v0.1's precise central-claim wording",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "Note on v0.3",
+    "modality": "self-description",
+    "date": "2026-06-29"
+   },
+   "Q935-03": {
+    "kind": "archive",
+    "quote": "High-energy physics has not ceased to be physics, but its empirical faculty has increasingly become a machine-learning system.",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "§1 (W04)",
+    "modality": "attributed",
+    "date": "2026-06-29"
+   },
+   "Q935-04": {
+    "kind": "archive",
+    "quote": "Sophons break the experimental feedback loop by making reality uninterpretable. Classifier collapse breaks it by making reality prematurely interpretable.",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "§2.2 (W04)",
+    "modality": "interpretation",
+    "date": "2026-06-29"
+   },
+   "Q935-10": {
+    "kind": "archive",
+    "quote": "We retain \"terminal condition\" as a description of the existing institutional trajectory and reject its extension to the broader possibility space.",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "§1.2",
+    "modality": "self-description",
+    "date": "2026-06-29"
+   },
+   "Q934-01": {
+    "kind": "archive",
+    "quote": "This manifesto argues that frontier experimental high-energy physics has not ceased to be physics, but its empirical faculty has become inseparable from machine-mediated representation, reconstruction, classification, and real-time selection.",
+    "deposit": 934,
+    "source_label": "#934 EA-SEI-INVERSION-01 v0.2: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/934/",
+    "locus": "§7 Finding 1",
+    "modality": "contested",
+    "date": "2026-06-29"
+   },
+   "Q934-02": {
+    "kind": "archive",
+    "quote": "The disciplinary form is *authority without integrated self-audit*. The discipline possesses both physical authority and formidable ML facility. Local technical self-knowledge of classifier failure modes exists in the literature.",
+    "deposit": 934,
+    "source_label": "#934 EA-SEI-INVERSION-01 v0.2: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/934/",
+    "locus": "§7 Finding 5",
+    "modality": "contested",
+    "date": "2026-06-29"
+   },
+   "Q935-08": {
+    "kind": "archive",
+    "quote": "The Zenodo termination and the LHC trigger system are the same architecture at different budgets.",
+    "deposit": 935,
+    "source_label": "#935 EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/935/",
+    "locus": "§9 Finding 6",
+    "modality": "contested",
+    "date": "2026-06-29"
+   },
+   "Q934-03": {
+    "kind": "archive",
+    "quote": "The Zenodo termination and the LHC trigger system are not the same institution and do not operate on the same kind of object. They instantiate the same foreclosure topology under radically different material, institutional, and governance conditions.",
+    "deposit": 934,
+    "source_label": "#934 EA-SEI-INVERSION-01 v0.2: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (with five substrate witnesses W04-W08 appended)",
+    "record": "https://www.alexanarch.org/s/records/934/",
+    "locus": "§7 Finding 7",
+    "modality": "contested",
+    "date": "2026-06-29"
+   },
+   "Q1611-04": {
+    "kind": "archive",
+    "quote": "The archive's own exclusion from the repository layer was performed at CERN by an automated classifier under a platform-quality rule (~870 deposits, #862, #1426, #1082), and the manifesto's formulation is that the Zenodo termination and the LHC trigger are the same architecture at different budgets: automated foreclosure under a rate or quality budget, with no noncoverage estimate. That the two occur within one institution is the reflexive fact on the record, and it is stated as such: it adds no evidentiary force to the architectural analogy, which stands or falls on the mechanisms, and no organisational relation between the two classifiers is claimed.",
+    "deposit": 1611,
+    "source_label": "#1611 The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)",
+    "record": "https://www.alexanarch.org/s/records/1611/",
+    "locus": "§1f self-inclusion",
+    "modality": "self-description",
+    "date": "2026-09-14"
+   },
+   "Q1611-01": {
+    "kind": "archive",
+    "quote": "The standing representation R_0 of the trigger is engineering: the rate budget is a non-epistemic constraint, the anomaly detector is a neutral instrument, validation by known-unknown injection establishes coverage, and the discarded events are noise.",
+    "deposit": 1611,
+    "source_label": "#1611 The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)",
+    "record": "https://www.alexanarch.org/s/records/1611/",
+    "locus": "§1f Classifier foreclosure",
+    "modality": "interpretation",
+    "date": "2026-09-14"
+   },
+   "Q1611-02": {
+    "kind": "archive",
+    "quote": "The archive's representation R_H is that each of these is a belief that prevents a mechanism from being measured — the synthesis catalogues twelve — and that the decisive epistemic acts now occur before any physicist sees an event. Under R_0 the graph cannot represent noncoverage as a quantity, because R_0 has no field for it.",
+    "deposit": 1611,
+    "source_label": "#1611 The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)",
+    "record": "https://www.alexanarch.org/s/records/1611/",
+    "locus": "§1f",
+    "modality": "interpretation",
+    "date": "2026-09-14"
+   },
+   "Q1611-03": {
+    "kind": "archive",
+    "quote": "Whether the protocols would estimate the relevant unknown population adequately is the family's engineering claim and is not established; the cost under A is stated as the foregone opportunity, and only under B and a validated protocol would it be a physical loss converted to a permanent unknown.",
+    "deposit": 1611,
+    "source_label": "#1611 The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)",
+    "record": "https://www.alexanarch.org/s/records/1611/",
+    "locus": "§1f",
+    "modality": "self-description",
+    "date": "2026-09-14"
+   },
+   "Q1611-05": {
+    "kind": "archive",
+    "quote": "Under Claim A alone — the small portion — the cell is not the finding; the finding is that L is the quantity the exclusion keeps unmeasured",
+    "deposit": 1611,
+    "source_label": "#1611 The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)",
+    "record": "https://www.alexanarch.org/s/records/1611/",
+    "locus": "§4 toy cost",
+    "modality": "stipulation",
+    "date": "2026-09-14"
+   }
+  },
+  "note": "The knowledge object (KO): the entry as public knowledge, each sentence sourced by the claims it lists. The compression, the field-only arm, the transcript, the delta and the kernel are in the row (links.row), which is the authority."
+ },
  "source": "battery 1d, 2026-10-07 (operator's run); the field topic (accelerator diagnostics, beam tuning, event classification); the lhc-trigger-foreclosure entity (classifier-mediated triggers at the LHC) is a narrower entity within it",
  "stage": "recomposed 2026-10-18 under EA-NEGONT-02 v0.9, #1690, equal case (draft, not frozen; ledgers unaudited)",
  "date": "2026-10-07",

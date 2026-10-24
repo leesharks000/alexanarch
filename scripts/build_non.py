@@ -375,6 +375,49 @@ def composition_of(r, landing=None):
                 **({"breaches": r["breaches"]} if r.get("breaches") else {})})
     return {k: v for k, v in out.items() if v is not None}
 
+READING_NOTE = ("A reader that fetches this page may stop short of its end; the entry's text, every sentence of its knowledge object "
+                "with the claims it cites and each claim's quote, source and locus, is in entity.json beside it.")
+
+def entry_of(r, reg):
+    """The entry itself, for entity.json (2026-10-24: the record carries the entry, as a capture's record.json carries
+    the composition): the knowledge object's title, the compression's lede, every sentence with its claims, and each
+    claim's quote, source and locus. Read from the row and its archive ledger; the row is the authority."""
+    o = (r or {}).get("objects") or {}
+    ko = o.get("KO")
+    if not ko:
+        return {"composed": False, "note": o.get("note") or "no knowledge object composed"}
+    P = o.get("P") or {}
+    try:
+        ledger = {c["id"]: c for c in json.loads((ROOT / r["ledger"]["archive"]).read_text(encoding="utf-8"))}
+    except Exception:
+        ledger = {}
+    FC = {**(r.get("field_claims") or {}), **(ko.get("field_claims") or {})}
+    FS = {**(r.get("field_sources") or {}), **(ko.get("field_sources") or {})}
+    claims = {}
+    for s in ko.get("sentences") or []:
+        for cid in s.get("claims") or []:
+            if cid in claims:
+                continue
+            if cid in FC:
+                f = FC[cid]
+                claims[cid] = {"kind": "field", "quote": unquote(f.get("quote")), "source": f.get("source"),
+                               "source_label": FS.get(f.get("source")), "locus": f.get("locus"), "modality": f.get("modality")}
+            elif cid in ledger:
+                c = ledger[cid]
+                d = reg.get(c["dep"]) or {}
+                claims[cid] = {"kind": "archive", "quote": unquote(c.get("quote")), "deposit": c["dep"] if isinstance(c["dep"], int) else None,
+                               "source_label": (f'#{c["dep"]} {d.get("title", "")}'.strip() if isinstance(c["dep"], int) else str(c.get("title") or c["dep"])),
+                               "record": (f'{BASE}/s/records/{c["dep"]}/' if isinstance(c["dep"], int) else (c.get("surface") or {}).get("url") or (c.get("record") or {}).get("url")),
+                               "locus": c.get("locus"), "modality": c.get("modality"), "date": c.get("date")}
+            else:
+                claims[cid] = {"kind": "unresolved", "note": "in neither the field claims nor the archive ledger"}
+    return {"composed": True, "title": ko.get("title"), "genre": ko.get("genre"), "status": ko.get("status"),
+            "compression": {"title": P.get("title"), "lede": (P.get("lede") or {}).get("text")} if P else None,
+            "sentences": [{"n": s.get("n"), "para": s.get("para"), "text": s.get("text"), "claims": s.get("claims") or []} for s in ko.get("sentences") or []],
+            "claims": claims,
+            "note": ("The knowledge object (KO): the entry as public knowledge, each sentence sourced by the claims it lists. The compression, "
+                     "the field-only arm, the transcript, the delta and the kernel are in the row (links.row), which is the authority.")}
+
 def earlier_rows(k):
     """Rows an entity had before a landing replaced them, kept by scripts/land_non_row.py under v2/history/<row>/."""
     d = V2 / "history" / k
@@ -777,6 +820,7 @@ def main():
                             "reading": json.loads((d / "reading.json").read_text(encoding="utf-8")) if (d / "reading.json").exists() else None}
     REGH, ROWH, TRAVH, REGQ, STATS = {}, {}, {}, {}, {}
     AX, LANDS = load_axn(), load_landings()
+    REG = _sources()
 
     LEDE = ('<p class="sub">Public knowledge of an entity, constructed before the addresses at which it is found, and composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
     STATUS = ('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.9, <a href="/s/records/1690/">#1690</a>, which supersedes <a href="/s/records/1671/">#1671</a>) is being tested, iterated and revised. Under v0.9 the archive\'s sources are admitted on equal terms, ontology included, where the archive extends the field\'s ontology, and the archive\'s ontology rules where it supplies one no other source makes available, by the law of the suppressed witness; each entry\'s case is read from its defining papers, and the entries composed under v0.7 are recomposed one at a time (ruled 2026-10-18), each page showing its v0.7 composition below the current one, labelled; SPXI and Theophrastus stand at v0.8, the cases v0.9\'s law of the suppressed witness calls for (ruled 2026-10-19); the panel (<a href="/non/panel/">/non/panel/</a>) is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on /non is a frozen measurement.</div>')
@@ -1076,6 +1120,8 @@ def main():
                "case": _case_of(r), "composition": comp}
         if hist:
             rec["earlier_rows"] = hist
+        rec["reading"] = READING_NOTE
+        rec["entry"] = entry_of(r, REG) if r else {"composed": False, "note": "no row: the entity has addresses or a traversal, and no composition"}
         if en.get("type_basis"):
             rec["type_basis"] = en["type_basis"]
         rec.update({"source": en.get("source"), "stage": en.get("stage"), "date": last,
@@ -1102,7 +1148,8 @@ def main():
             sub.append(f'<a href="{esc(addr_url[len(BASE):])}">the address page</a>')
         sec = [f'<p style="font-size:.85em;margin:0 0 4px"><a href="/non/">The Negative of the Negative</a> › entity <code>{esc(k)}</code></p>',
                f'<p class="sub" style="font-size:.85em">One entity of the Negative of the Negative (EA-NEGONT-02, <a href="/s/records/{spec_no(en, r)}/">#{spec_no(en, r)}</a>), '
-               f'cited at <code>{url}</code>. ' + " · ".join(sub) + '.</p>',
+               f'cited at <code>{url}</code>. ' + " · ".join(sub) + '.</p>'
+               f'<p class="meta" data-for="machines">{esc(READING_NOTE)}</p>',
                f'<section id="e-{esc(k)}"><h1>{esc(en["name"])}</h1>'
                f'<p class="meta">{esc(onto_line(en))} · sought at {" · ".join("<code>" + esc(x["address"]) + "</code>" for x in addr_rows)}</p>'
                f'<p class="meta">{md_inline(en.get("stage") or "")}</p>']
@@ -1144,7 +1191,9 @@ def main():
               "creativeWorkStatus": "working; not frozen", "isBasedOn": f"{BASE}/s/records/{spec_no(en, r)}/",
               "isPartOf": {"@type": "Dataset", "name": "The Negative of the Negative (EA-NEGONT-02)", "url": f"{BASE}/non/", "version": reg.get("version"),
                            "description": NON_DESC, "creator": CREATOR, "license": LICENSE},
-              "encoding": {"@type": "MediaObject", "encodingFormat": "application/json", "contentUrl": url + "entity.json"}}
+              "encoding": {"@type": "MediaObject", "encodingFormat": "application/json", "contentUrl": url + "entity.json",
+                           "description": "the entry itself: its knowledge object, every sentence with its claims, each claim's quote, source and locus"},
+              "usageInfo": READING_NOTE}
         if deps:
             ld["mentions"] = [{"@type": "CreativeWork", "url": f"{BASE}/s/records/{n}/", "identifier": f"#{n}"} for n in deps]
         head = (f'<link rel="canonical" href="{url}">\n<link rel="cite-as" href="{url}">\n'
@@ -1229,6 +1278,9 @@ def main():
          f'each entry\'s <code>/non/{{entity}}/entity.json</code> · <a href="{HF_NON}">the dataset on the Hub</a>. '
          'Also: <a href="/non/by/">by type, case and month</a> · <a href="/non/register/">the register</a> (every address and transcript) · '
          '<a href="/non/panel/">the panel</a> (the working list).</p>',
+         '<p class="meta" data-for="machines">A reader of this page finds each entry\'s page, its citation, at /non/{entity}/, and the entry itself '
+         '(its knowledge object, every sentence with the claims it cites, each claim\'s quote, source and locus) at /non/{entity}/entity.json; '
+         '/non/index.json lists every entry with both addresses and its AXN.</p>',
          '<div class="find" role="search"><input id="nq" type="search" placeholder="Search names, addresses, AXNs" aria-label="Search the entries">'
          + facet(idxrows, "code", "type", {k_: f"{k_}" for k_ in TYPE_KEY})
          + facet(idxrows, "case", "case", CASE_SHORT) + facet(idxrows, "comp", "composed by", COMP_SHORT)
@@ -1363,7 +1415,7 @@ def main():
                    "traversals": len(trav)},
         "statement": ("The Negative of the Negative (EA-NEGONT-02, #1690, v0.9): per-entity knowledge objects composed with the archive's sources on equal terms, ontology included, or in the archive's ontology where it is the suppressed witness, "
                       "the field carried whole and translated; entries composed under v0.7 (#1665) are recomposed one at a time. One row per entity with a page. Each record_url is the entity's own page and "
-                      "its citation; json_url is the entity as a compact record that points to its row, ledgers and traversal. "
+                      "its citation; json_url is the entry as data: its AXN, its composition, and the entry itself (entry: the knowledge object, every sentence with its claims, each claim's quote, source and locus), with links to its row, ledgers and traversal. "
                       "Working, not frozen (§7.0)."),
         "spec": f"{BASE}/s/records/1690/", "dataset": HF_NON, "panel": f"{BASE}{DS_URL}/panel/panel.json", "register": f"{BASE}{DS_URL}/register.json",
         "record_form": f"{BASE}/non/{{entity}}/", "json_form": f"{BASE}/non/{{entity}}/entity.json",

@@ -25,6 +25,509 @@
   "frozen": false,
   "composed": true
  },
+ "reading": "A reader that fetches this page may stop short of its end; the entry's text, every sentence of its knowledge object with the claims it cites and each claim's quote, source and locus, is in entity.json beside it.",
+ "entry": {
+  "composed": true,
+  "title": "Model collapse",
+  "genre": "encyclopedic knowledge object (the plan of L(B ∪ A), realized without provenance in the prose)",
+  "status": "draft 2026-10-05; ruled as the object the dataset is striving towards ('yes. this is the object. this is the one it is striving towards.' — operator, 2026-10-05)",
+  "compression": {
+   "title": "Model collapse",
+   "lede": "is the progressive loss of rare distinctions when a system learns from outputs it helped produce. It is demonstrated in generative AI; analogous collapse in other selection systems is described, and one general law is proposed, though not established."
+  },
+  "sentences": [
+   {
+    "n": 1,
+    "para": 0,
+    "text": "Model collapse is a degenerative process in generative models trained, generation after generation, on data that earlier models produced: the generated data pollute the next training set, and models trained on it come to misperceive the reality they were built to model.",
+    "claims": [
+     "F1"
+    ]
+   },
+   {
+    "n": 2,
+    "para": 0,
+    "text": "Information about the tails of the original distribution is lost first; later, the learned distribution converges toward one with little resemblance to the original and much reduced variance.",
+    "claims": [
+     "F2",
+     "F3"
+    ]
+   },
+   {
+    "n": 3,
+    "para": 0,
+    "text": "The effect has been shown in large language models, variational autoencoders and Gaussian mixture models, and under indiscriminate recursive training it is inevitable even in conditions close to ideal.",
+    "claims": [
+     "F2",
+     "F4"
+    ]
+   },
+   {
+    "n": 4,
+    "para": 0,
+    "text": "In language models it can appear as increasingly irrelevant, nonsensical or repetitive text; in image models, as digits and faces that grow more alike.",
+    "claims": [
+     "F13"
+    ]
+   },
+   {
+    "n": 5,
+    "para": 0,
+    "text": "It is distinct from catastrophic forgetting, mode collapse and model drift, and close to performative prediction, a self-fulfilling loop that becomes a fairness feedback loop when it entrenches discrimination.",
+    "claims": [
+     "F11",
+     "F15"
+    ]
+   },
+   {
+    "n": 6,
+    "para": 1,
+    "text": "Because the head of a distribution survives longest, collapse can proceed while standard evaluations hold steady: in a toy model, tail mass halves by the seventh generation while a standard benchmark does not turn until the fifteenth.",
+    "claims": [
+     "C1556-06"
+    ]
+   },
+   {
+    "n": 7,
+    "para": 1,
+    "text": "A diagnostic that samples only what a system already admits is head-sampling by construction and can fail to perceive tail loss; an instrument that reads the tail directly has been specified but not calibrated, tested or run.",
+    "claims": [
+     "C1613-02",
+     "L1573-01",
+     "L1573-04"
+    ]
+   },
+   {
+    "n": 8,
+    "para": 1,
+    "text": "What is lost is the rare: low-probability events are often those relevant to marginalized groups, long-tail ideas may fade from public consciousness, and a rare output, though neither common nor popular, may be the accurate one.",
+    "claims": [
+     "F8",
+     "F14",
+     "F17"
+    ]
+   },
+   {
+    "n": 9,
+    "para": 2,
+    "text": "On one proposal, model collapse is a property of language rather than of language models: a single dynamical law would govern recursively trained models, writers habituated to AI-generated text and children deprived of linguistic input, the three differing in severity, mechanism and timescale, and in whether the loss can be reversed.",
+    "claims": [
+     "L855-01",
+     "L855-11",
+     "L855-05"
+    ]
+   },
+   {
+    "n": 10,
+    "para": 2,
+    "text": "Described more cautiously, what such cases share is an operator form, transmission composed with selection, and not a common causal mechanism.",
+    "claims": [
+     "A779-10",
+     "A779-02"
+    ]
+   },
+   {
+    "n": 11,
+    "para": 3,
+    "text": "Preserving original data keeps degradation minor, and accumulating real data alongside synthetic, determining provenance, improving synthetic data and governance tools are proposed as preventives.",
+    "claims": [
+     "F5",
+     "F16"
+    ]
+   },
+   {
+    "n": 12,
+    "para": 3,
+    "text": "How model-generated content can be tracked at scale is unclear, and the preventives depend on it: on one analysis provenance is the operating condition of any solution, capping a corpus's synthetic share presupposes telling synthetic from human text, and provenance cannot modulate collapse unless it reaches the training system as a signal.",
+    "claims": [
+     "F7",
+     "B939-02",
+     "C1556-11",
+     "A745-03"
+    ]
+   },
+   {
+    "n": 13,
+    "para": 3,
+    "text": "Data from genuine human interaction is expected to grow more valuable; whether it is a clean corrective is disputed, since human inputs to chat systems may already carry the signatures of model mediation and training on them may produce collapse signatures comparable to those of synthetic data, if more slowly, and the studies that would decide it have not been conducted.",
+    "claims": [
+     "F6",
+     "L856-01",
+     "A161-02",
+     "L856-06"
+    ]
+   },
+   {
+    "n": 14,
+    "para": 4,
+    "text": "Recursive narrowing of the same shape has been described outside generative training: in moderation classifiers trained on their own enforcement, in particle-physics triggers that never learn the tails of the physical distribution, in journal screening, in the reception of a discipline, in code, where it shows as declining solution-space diversity rather than declining correctness, in detectors that prune high-perplexity input, and in retrieval layers whose flattened summaries are written back as sources.",
+    "claims": [
+     "P001-08",
+     "P932-04",
+     "D1540-03",
+     "D1574-03",
+     "C199-02",
+     "C191-05",
+     "D1616-02"
+    ]
+   },
+   {
+    "n": 15,
+    "para": 4,
+    "text": "In none of these has full recursive collapse in the strict technical sense been demonstrated.",
+    "claims": [
+     "P001-08",
+     "P932-09",
+     "D1540-03"
+    ]
+   }
+  ],
+  "claims": {
+   "F1": {
+    "kind": "field",
+    "quote": "Model collapse is a degenerative process affecting generations of learned generative models, in which the data they generate end up polluting the training set of the next generation. Being trained on polluted data, they then mis-perceive reality.",
+    "source": "B1",
+    "source_label": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "locus": "Def. 2.1",
+    "modality": null
+   },
+   "F2": {
+    "kind": "field",
+    "quote": "indiscriminate use of model-generated content in training causes irreversible defects in the resulting models, in which tails of the original content distribution disappear … it can occur in LLMs as well as in variational autoencoders (VAEs) and Gaussian mixture models (GMMs)",
+    "source": "B1",
+    "source_label": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "locus": "Abstract",
+    "modality": null
+   },
+   "F3": {
+    "kind": "field",
+    "quote": "early collapse loses \"information about the tails\"; late collapse converges on \"a distribution that carries little resemblance to the original one, often with substantially reduced variance\"",
+    "source": "B1",
+    "source_label": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "locus": "text",
+    "modality": null
+   },
+   "F4": {
+    "kind": "field",
+    "quote": "this process is inevitable, even for cases with almost ideal conditions for long-term learning",
+    "source": "B1",
+    "source_label": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "locus": "Main",
+    "modality": null
+   },
+   "F13": {
+    "kind": "field",
+    "quote": "In LLMs, model collapse can manifest in increasingly irrelevant, nonsensical and repetitive text outputs\"; image models give digits that resemble each other and \"more homogeneous faces",
+    "source": "B2",
+    "source_label": "IBM, \"What Is Model Collapse?\" (Gomstyn & Jonker, 14 Oct 2024)",
+    "locus": "text",
+    "modality": null
+   },
+   "F11": {
+    "kind": "field",
+    "quote": "catastrophic forgetting and data poisoning are close concepts; \"Neither is able to explain the phenomenon of model collapse fully\"",
+    "source": "B1",
+    "source_label": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "locus": "Main",
+    "modality": null
+   },
+   "F15": {
+    "kind": "field",
+    "quote": "distinct from catastrophic forgetting, mode collapse and model drift; compared to performative prediction, a \"self-fulling [sic] prophecy\", \"also known as a fairness feedback loop when this process entrenches discrimination\"",
+    "source": "B2",
+    "source_label": "IBM, \"What Is Model Collapse?\" (Gomstyn & Jonker, 14 Oct 2024)",
+    "locus": "text",
+    "modality": null
+   },
+   "C1556-06": {
+    "kind": "archive",
+    "quote": "Full loop: tail mass halves by generation 7; the standard 90/9/1 benchmark does not inflect until generation 15; head-only probes, generation 17.",
+    "deposit": 1556,
+    "source_label": "#1556 The Interlocking Autoregression: Three Coupled Recursions Under a Mismatched Observation Regime, with Toy Dynamics (EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1556/",
+    "locus": "§6.2 F1",
+    "modality": "documented (toy simulation, seed 20260827)",
+    "date": "2026-08-27"
+   },
+   "C1613-02": {
+    "kind": "archive",
+    "quote": "a diagnostic that samples the admitted component is head-sampling by construction: it can fail to perceive tail loss.",
+    "deposit": 1613,
+    "source_label": "#1613 What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it approximates, measured on the ontology; with the fleet topology audit and the Spam Technicians dataset attached (EA-MIRROR-01 v0.5)",
+    "record": "https://www.alexanarch.org/s/records/1613/",
+    "locus": "§6",
+    "modality": "model consequence (hypothesis, \"in the modelled regime\")",
+    "date": "2026-09-15"
+   },
+   "L1573-01": {
+    "kind": "archive",
+    "quote": "each item is answered from the *head* of the model's distribution",
+    "deposit": 1573,
+    "source_label": "#1573 The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Models, and for the Reader (EA-LO-COLLAPSE-DIAGNOSTIC-01 v0.2, CONCEPT DRAFT)",
+    "record": "https://www.alexanarch.org/s/records/1573/",
+    "locus": "§I.2",
+    "modality": "hypothesis",
+    "date": "2026-09-01"
+   },
+   "L1573-04": {
+    "kind": "archive",
+    "quote": "The instrument is specified and NOT calibrated, NOT tested, NOT run",
+    "deposit": 1573,
+    "source_label": "#1573 The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Models, and for the Reader (EA-LO-COLLAPSE-DIAGNOSTIC-01 v0.2, CONCEPT DRAFT)",
+    "record": "https://www.alexanarch.org/s/records/1573/",
+    "locus": "front matter",
+    "modality": "self-description",
+    "date": "2026-09-01"
+   },
+   "F8": {
+    "kind": "field",
+    "quote": "Preserving the ability of LLMs to model low-probability events is essential to the fairness of their predictions: such events are often relevant to marginalized groups.",
+    "source": "B1",
+    "source_label": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "locus": "Discussion",
+    "modality": null
+   },
+   "F14": {
+    "kind": "field",
+    "quote": "consequences: poor decision-making (a rare disease \"forgotten\"); user disengagement; knowledge decline, \"'long-tail' ideas might eventually fade out of the public's consciousness\"; research tools \"might provide only widely cited studies\"",
+    "source": "B2",
+    "source_label": "IBM, \"What Is Model Collapse?\" (Gomstyn & Jonker, 14 Oct 2024)",
+    "locus": "text",
+    "modality": null
+   },
+   "F17": {
+    "kind": "field",
+    "quote": "a rare output \"might not be common or popular, but is still, in fact, most accurate\" (the \"rarely cited study\")",
+    "source": "B2",
+    "source_label": "IBM, \"What Is Model Collapse?\" (Gomstyn & Jonker, 14 Oct 2024)",
+    "locus": "text",
+    "modality": null
+   },
+   "L855-01": {
+    "kind": "archive",
+    "quote": "This paper argues it is not a property of language models. It is a property of language.",
+    "deposit": 855,
+    "source_label": "#855 The Wolf Boy and the Language Model: Model Collapse as Substrate-Agnostic Capacity Loss",
+    "record": "https://www.alexanarch.org/s/records/855/",
+    "locus": "Abstract",
+    "modality": "hypothesis",
+    "date": "2026-06-18"
+   },
+   "L855-11": {
+    "kind": "archive",
+    "quote": "The three cases differ in severity, in mechanism, and in timescale. But they are governed by the same dynamical law",
+    "deposit": 855,
+    "source_label": "#855 The Wolf Boy and the Language Model: Model Collapse as Substrate-Agnostic Capacity Loss",
+    "record": "https://www.alexanarch.org/s/records/855/",
+    "locus": "§II The Structural Identity",
+    "modality": "hypothesis",
+    "date": "2026-06-18"
+   },
+   "L855-05": {
+    "kind": "archive",
+    "quote": "The dynamical law is the same; the reversibility parameter is substrate-specific.",
+    "deposit": 855,
+    "source_label": "#855 The Wolf Boy and the Language Model: Model Collapse as Substrate-Agnostic Capacity Loss",
+    "record": "https://www.alexanarch.org/s/records/855/",
+    "locus": "§II The Structural Identity",
+    "modality": "hypothesis",
+    "date": "2026-06-18"
+   },
+   "A779-10": {
+    "kind": "archive",
+    "quote": "This is a claim about shared operator form — that each domain's dynamics can be written as transmission composed with selection — not a shared causal mechanism.",
+    "deposit": 779,
+    "source_label": "#779 Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion",
+    "record": "https://www.alexanarch.org/s/records/779/",
+    "locus": "§4 The operator family",
+    "modality": "self-description",
+    "date": "2026-06-02"
+   },
+   "A779-02": {
+    "kind": "archive",
+    "quote": "| Model collapse | Resampling from the model's own output distribution | Loss-minimization on a fixed objective | Endogenous (case 3) |",
+    "deposit": 779,
+    "source_label": "#779 Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion",
+    "record": "https://www.alexanarch.org/s/records/779/",
+    "locus": "§4 The operator family (table)",
+    "modality": "interpretation",
+    "date": "2026-06-02"
+   },
+   "F5": {
+    "kind": "field",
+    "quote": "preservation of the original data allows for better model fine-tuning and leads to only minor degradation of performance.",
+    "source": "B1",
+    "source_label": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "locus": "text",
+    "modality": null
+   },
+   "F16": {
+    "kind": "field",
+    "quote": "prevention: retaining non-AI data sources; determining data provenance (the Data Provenance Initiative, \"more than 4,000 datasets\"); data accumulation; better synthetic data; governance tools",
+    "source": "B2",
+    "source_label": "IBM, \"What Is Model Collapse?\" (Gomstyn & Jonker, 14 Oct 2024)",
+    "locus": "text",
+    "modality": null
+   },
+   "F7": {
+    "kind": "field",
+    "quote": "it is unclear how content generated by LLMs can be tracked at scale. One option is community-wide coordination",
+    "source": "B1",
+    "source_label": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "locus": "Discussion",
+    "modality": null
+   },
+   "B939-02": {
+    "kind": "archive",
+    "quote": "This means provenance is not adjacent to the model collapse question. It is the operating condition of the solution to it.",
+    "deposit": 939,
+    "source_label": "#939 EA-PROVENANCE-DEBT-01 v0.2: Provenance Debt and the Extraction Economy of Unmarked Augmentation",
+    "record": "https://www.alexanarch.org/s/records/939/",
+    "locus": "§2 l.91",
+    "modality": "interpretation",
+    "date": "2026-07-01"
+   },
+   "C1556-11": {
+    "kind": "archive",
+    "quote": "The Shumailov mitigation reproduces in the interlocked setting — and the lever it requires is the distinction Component I withholds *from downstream builders*: capping synthetic share presupposes the ability to distinguish it.",
+    "deposit": 1556,
+    "source_label": "#1556 The Interlocking Autoregression: Three Coupled Recursions Under a Mismatched Observation Regime, with Toy Dynamics (EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0)",
+    "record": "https://www.alexanarch.org/s/records/1556/",
+    "locus": "§6.2 F5",
+    "modality": "documented (toy) + interpretation",
+    "date": "2026-08-27"
+   },
+   "A745-03": {
+    "kind": "archive",
+    "quote": "Provenance cannot modulate collapse unless provenance is presented to the training system as a signal.",
+    "deposit": 745,
+    "source_label": "#745 Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v3",
+    "record": "https://www.alexanarch.org/s/records/745/",
+    "locus": "Research Question, Operationalized",
+    "modality": "attributed (to \"Assembly review\")",
+    "date": "2026-05-20"
+   },
+   "F6": {
+    "kind": "field",
+    "quote": "the value of data collected about genuine human interactions with systems will be increasingly valuable",
+    "source": "B1",
+    "source_label": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "locus": "Abstract",
+    "modality": null
+   },
+   "L856-01": {
+    "kind": "archive",
+    "quote": "Chat data fails the pristine test on three independent grounds.",
+    "deposit": 856,
+    "source_label": "#856 The Pristine Fallacy: Why Chat Data Is Not a Clean Training Source",
+    "record": "https://www.alexanarch.org/s/records/856/",
+    "locus": "Abstract",
+    "modality": "hypothesis",
+    "date": "2026-06-18"
+   },
+   "A161-02": {
+    "kind": "archive",
+    "quote": "that training on AI-mediated human text — including unaided text from cognitively-habituated writers — produces model-collapse signatures comparable to, though plausibly slower than, purely synthetic training data",
+    "deposit": 161,
+    "source_label": "#161 The Reverse Turing Test: A Three-Stage Protocol for Detecting AI-Mediation Signatures in Human Text and Their Propagation to Model Training (v1.1)",
+    "record": "https://www.alexanarch.org/s/records/161/",
+    "locus": "Abstract",
+    "modality": "hypothesis",
+    "date": "2026-06-07"
+   },
+   "L856-06": {
+    "kind": "archive",
+    "quote": "None of these studies has been conducted.",
+    "deposit": 856,
+    "source_label": "#856 The Pristine Fallacy: Why Chat Data Is Not a Clean Training Source",
+    "record": "https://www.alexanarch.org/s/records/856/",
+    "locus": "§VI",
+    "modality": "self-description",
+    "date": "2026-06-18"
+   },
+   "P001-08": {
+    "kind": "archive",
+    "quote": "Classifier model collapse, as defined here, is not identical to generative model collapse in the strict technical sense (Shumailov et al., 2024). It names a moderation-specific feedback contraction:",
+    "deposit": 1,
+    "source_label": "#1 Zenodotus' Book-Burning: Loud Exclusion at Repository Scale",
+    "record": "https://www.alexanarch.org/s/records/1/",
+    "locus": "§6",
+    "modality": "stipulation",
+    "date": "2026-06-19"
+   },
+   "P932-04": {
+    "kind": "archive",
+    "quote": "Classifier collapse is the **discriminative analogue** of generative model collapse. Where Shumailov's models forget the tails of their own distribution, physical classifiers **never learn the tails** of the true physical distribution. The collapse is present from the first forward pass.",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "Appendix W1, §10. Distinction from Generative Model Collapse",
+    "modality": "attributed (Witness 1)",
+    "date": "2026-06-29"
+   },
+   "D1540-03": {
+    "kind": "archive",
+    "quote": "This stage alone establishes recursive distributional contraction under a statistical boundary — classifier-mediated recursive selection over a discourse — but not yet the canonical loop, which requires filtered outputs to recur into later model training.",
+    "deposit": 1540,
+    "source_label": "#1540 The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse in Philosophy",
+    "record": "https://www.alexanarch.org/s/records/1540/",
+    "locus": "§IV",
+    "modality": "stipulation",
+    "date": "2026-08-24"
+   },
+   "D1574-03": {
+    "kind": "archive",
+    "quote": "The operation is therefore measured to one particle. Twenty rounds, two models, eleven configurations; the invariant is the deletion of οὐ.",
+    "deposit": 1574,
+    "source_label": "#1574 The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)",
+    "record": "https://www.alexanarch.org/s/records/1574/",
+    "locus": "§3.3 The terminal form",
+    "modality": "documented",
+    "date": "2026-09-02"
+   },
+   "C199-02": {
+    "kind": "archive",
+    "quote": "model collapse in code does not manifest primarily as declining functional correctness (the property benchmarks measure) but as declining solution-space diversity (the property no benchmark measures)",
+    "deposit": 199,
+    "source_label": "#199 Generative Monoculture Model Collapse in Code as Systemic Vulnerability",
+    "record": "https://www.alexanarch.org/s/records/199/",
+    "locus": "Abstract ¶2, first claim",
+    "modality": "hypothesis",
+    "date": "2026-06-13"
+   },
+   "C191-05": {
+    "kind": "archive",
+    "quote": "A high-perplexity-content detector that rejects on positive detection is, viewed from the model-collapse literature, an automated tail-pruning instrument applied at the input layer.",
+    "deposit": 191,
+    "source_label": "#191 The Threat Model Is Backwards: On Classifying High-Perplexity Text as a Security Threat in an Era of Model Collapse",
+    "record": "https://www.alexanarch.org/s/records/191/",
+    "locus": "§3",
+    "modality": "interpretation (self-typed *Structural*)",
+    "date": "2026-06-11"
+   },
+   "D1616-02": {
+    "kind": "archive",
+    "quote": "*Flattening* is the loss of a distinction from the reachable set while the things distinguished still exist. *Collapse* is flattening that compounds because the flattened composition is written back as a source.",
+    "deposit": 1616,
+    "source_label": "#1616 Ontological Flattening: Toy Models of the Collapse of Distinctions in a Represented World, the Instrument They Specified, and Its First Wave — with Wave 2 Pre-Registered (EA-FLAT-01 v0.3)",
+    "record": "https://www.alexanarch.org/s/records/1616/",
+    "locus": "§0",
+    "modality": "stipulation",
+    "date": "2026-09-15"
+   },
+   "P932-09": {
+    "kind": "archive",
+    "quote": "**The ingredients are visible. Full recursive collapse has not been demonstrated.**\" / \"*the LHC community has built an architecture in which phenomenal model collapse is possible, and the current validation literature does not yet demonstrate that it has been ruled out.*",
+    "deposit": 932,
+    "source_label": "#932 EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)",
+    "record": "https://www.alexanarch.org/s/records/932/",
+    "locus": "Appendix W3, §4. Are the operations of full collapse already visible?; §1.3",
+    "modality": "attributed (Witness 3), adopted by the synthesis",
+    "date": "2026-06-29"
+   }
+  },
+  "note": "The knowledge object (KO): the entry as public knowledge, each sentence sourced by the claims it lists. The compression, the field-only arm, the transcript, the delta and the kernel are in the row (links.row), which is the authority."
+ },
  "type_basis": "C: a conventional reading holds the address (Shumailov et al. 2024); the archive did not coin the term and bears on it. v1 typed it B, reading Shumailov's definition as a rival occupant of the archive's substrate-agnostic reading; the v2 row was composed as C (2026-10-07).",
  "source": "v1 row",
  "stage": "worked example: T, P, C, D, K drafted (Appendix A)",
