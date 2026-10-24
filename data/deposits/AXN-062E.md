@@ -8,7 +8,7 @@ date: 2026-08-21
 content_type: Schema specification — SPXI logic module. UNIMPLEMENTED.
 license: CC-BY-SA-4.0
 substrate: "Drafted in-session by TACHYON (Claude substrate) under MANUS direction, transport D, No-Double-Draw. The specification's central correction at section 0.1 identifies an error the drafting substrate made in its own earlier drafts: specifying a linter over hand-maintained copies while describing it as a single-source binding. The two worked packets at Appendix A are hand-authored and are not generated. Hand-authored packets were embedded in the two documents this schema was built for and subsequently removed, on the grounds that an unbacked packet is an additional synchronization surface rather than a source.\n\n### Version Series\n\nSERIES-CLAIM-STATUS-PACKET · 1"
-version: v0.6
+version: v0.7
 related_ids: "https://www.alexanarch.org/s/records/1528/ (Four Interfaces map — states the status law this schema would enforce); https://www.alexanarch.org/s/records/1527/ (The Lucente Extension — the first worked packet targets it); https://www.alexanarch.org/s/records/817/ (Self-Audit Module v3.1)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -33,20 +33,17 @@ keywords:
 
 **Claim state as carried data. Five objects. Working name: CSP.**
 
-> **STATUS — SCHEMA DRAFT v0.6.** No implementation. The generator and checker at
-> §8 are specified and unwritten. **Not a deployed instrument.**
+> **STATUS — SCHEMA DRAFT v0.7.** No implementation. The generator and checker at §8 are specified and unwritten. **Not a deployed instrument.**
 
 ---
 
 ## 0. CHANGES AT v0.4 — THREE ARCHITECTURAL CORRECTIONS
 
-**v0.3 was a consistency linter that described itself as a single-source
-binding.** Three corrections, and the first invalidates the prior design.
+**v0.3 was a consistency linter that described itself as a single-source binding.** Three corrections, and the first invalidates the prior design.
 
 ### 0.1 The counts.json analogy was not carried through
 
-v0.3 said *the fact is held once and consumed everywhere* — then specified T1 and
-T2 as **checks that six hand-maintained copies match the packet.**
+v0.3 said *the fact is held once and consumed everywhere* — then specified T1 and T2 as **checks that six hand-maintained copies match the packet.**
 
 **That is not the counts.json repair.** `assets/counts.js` does not verify that someone typed 1,520 correctly; it **writes the number into the element**. The repair was generation, not audit.
 
@@ -68,8 +65,7 @@ T2 as **checks that six hand-maintained copies match the packet.**
 
 ### 0.3 Rank is not a total order
 
-v0.3 made numeric rank load-bearing: *a status at a higher rank may not qualify a
-claim at a lower one.*
+v0.3 made numeric rank load-bearing: *a status at a higher rank may not qualify a claim at a lower one.*
 
 **That gets the motivating failure right and the general rule wrong.**
 
@@ -84,8 +80,7 @@ If an observation is phrased *AI systems do X*, a generality correction **must**
 
 ## 0.4 CHANGES AT v0.5 — RECORDED LATE
 
-**v0.5 shipped without a changes section**, which is a silent version in a
-document whose subject is version drift. Recorded here:
+**v0.5 shipped without a changes section**, which is a silent version in a document whose subject is version drift. Recorded here:
 
 Added the incentive analysis at §1 — **three of four outcomes reward weakening**, which is why multiple reviewers do not cancel the bias. Added `weakening_ justification` (§6.2), the stagnation alert (§6.3), history consolidation under Non-Erasure (§6.4), transitive-closure checking, the dissent record, the meta section, and Appendix A's two worked packets.
 
@@ -93,14 +88,11 @@ Added the incentive analysis at §1 — **three of four outcomes reward weakenin
 
 ## 0.5 CHANGES AT v0.6 — SYNCHRONIZATION
 
-**A cross-file review read the three documents as one system and found a class of
-defect the prose sweeps could not.** All applied.
+**A cross-file review read the three documents as one system and found a class of defect the prose sweeps could not.** All applied.
 
-**The central law was restated.** v0.5 said *status propagates only along a
-licensed relation* — which **still imagines status as a thing that travels.**
+**The central law was restated.** v0.5 said *status propagates only along a licensed relation* — which **still imagines status as a thing that travels.**
 
-> **State is typed and claim-local. Relations do not copy state. They license
-> specified state transitions on specified dimensions.**
+> **State is typed and claim-local. Relations do not copy state. They license specified state transitions on specified dimensions.**
 
 **Relation policy replaces the boolean.** `propagation_licensed: true|false` is too crude: `qualifies` licenses `scope` and not `verification`. §5.1 tables what each relation licenses, on which dimension, in which direction, and whether automatically. **Most license nothing** — including `motivates` and `interprets`, the two commonest edges in the worked packets, **which makes the anti-attenuation result a property of the vocabulary rather than a per-edge exception.** And `motivates` was used throughout v0.5's examples while **absent from its vocabulary**; added.
 
@@ -112,10 +104,17 @@ licensed relation* — which **still imagines status as a thing that travels.**
 
 **`review_for: elevation` reintroduced scalar status.** Alerts now name the **axis** and the transition — the observer's confirmation does not elevate a claim, it changes one verification coordinate.
 
-**`unsupported_attenuation` is `N/A` where no weakening occurred**, not 0. A
-document with no attenuation has demonstrated nothing about attenuation.
+**`unsupported_attenuation` is `N/A` where no weakening occurred**, not 0. A document with no attenuation has demonstrated nothing about attenuation.
 
 **And two of the schema's own residues:** §11 said *no document carries a packet* while this file carried two, and §11.5 invoked the no-downward rule **retired at v0.4.**
+
+---
+
+## 0.6 CHANGES AT v0.7 — REISSUED IN PLACE
+
+**The worked packet at A.1 brought into line with EA-PER-LUCENTE-01 v9.6 (#1527).** `contributing_observation.consent` is dated: consent given at deposit, withdrawn on 2026-10-22, attribution standing. `deposit_condition` is marked WITHDRAWN, after #1527 v9.2 withdrew the invented condition; the packet was authored against v9.0 and keeps the field as its historical state. The §6.3 stagnation example, which shows that condition as pending, is marked historical. Two provenance fields that attributed a constraint selection and a weakening to review by the observer now name the author's revision, since her correspondence enters no public record (her notice of 2026-10-22, invoking §3 of the approval instrument).
+
+**Line breaks.** Hard-coded breaks inside prose paragraphs are joined.
 
 ---
 
@@ -135,11 +134,9 @@ The archive already ruled this. Deposit counts drifted to 57% of true — **trai
 
 **The change log naming the defect did not prevent the defect.** And `EC — HEURISTIC` sits in **six** hand-maintained locations; the corrections logged across v3.0–v8.0 as *sweep residue* are largely those copies disagreeing. **They were recorded as editing failures. They are a schema failure.**
 
-**A third failure, and its cause.** Successive precision passes weaken claims,
-with no symmetric pressure restoring standing a correction took too much of.
+**A third failure, and its cause.** Successive precision passes weaken claims, with no symmetric pressure restoring standing a correction took too much of.
 
-**The batch has described the ratchet without explaining it. The explanation is
-an incentive asymmetry:**
+**The batch has described the ratchet without explaining it. The explanation is an incentive asymmetry:**
 
 | | wrong | right |
 |---|---|---|
@@ -148,8 +145,7 @@ an incentive asymmetry:**
 
 **Three of four outcomes reward weakening; only one punishes it, and the punishment for strengthening wrongly is the harshest cell in the table.** Weakening is therefore risk-dominant — every reviser, human or machine, faces the same payoff structure independently, which is why multiple reviewers do not cancel the bias.
 
-**Making the ratchet countable does not change the incentives.** §6.1 measures it;
-§6.2 prices it.
+**Making the ratchet countable does not change the incentives.** §6.1 measures it; §6.2 prices it.
 
 ---
 
@@ -166,11 +162,9 @@ an incentive asymmetry:**
 | adjudicates a relation dispute | MANUS; no other adjudicator | dispute recorded as consistency |
 | answers when it drifts anyway | the author | no one to report to |
 
-**Every row resolves to one person.** No schema distributes that. **The packet
-makes state legible; it does not make it cared for.**
+**Every row resolves to one person.** No schema distributes that. **The packet makes state legible; it does not make it cared for.**
 
-**And the packet is a convention, not a ground** — an agreement about where to
-stop interpreting a claim, written down so the stopping point can be checked.
+**And the packet is a convention, not a ground** — an agreement about where to stop interpreting a claim, written down so the stopping point can be checked.
 
 ---
 
@@ -188,11 +182,9 @@ stop interpreting a claim, written down so the stopping point can be checked.
 
 **Integrity hashes sit across all five.** The decomposition follows nanopublication practice — assertion, provenance of assertion, publication information kept as separate graphs — which is the closest existing analogue and solves the conflation directly.
 
-**What CSP adds that those do not:** they ask *what is this claim, where did it
-come from, how does it relate.* CSP asks
+**What CSP adds that those do not:** they ask *what is this claim, where did it come from, how does it relate.* CSP asks
 
-> **what standing is this claim permitted to carry, and did mediation alter that
-> standing without a warrant?**
+> **what standing is this claim permitted to carry, and did mediation alter that standing without a warrant?**
 
 ---
 
@@ -235,11 +227,9 @@ An instrument's state uses different axes:
 }
 ```
 
-**This stops *candidate* being a universal solvent** — it is a value on *one*
-axis, not a general dimming.
+**This stops *candidate* being a universal solvent** — it is a value on *one* axis, not a general dimming.
 
-**Claim kinds** — observation, administration, instrument, interpretation,
-generality — retain a default rank used only as a protection heuristic (§5).
+**Claim kinds** — observation, administration, instrument, interpretation, generality — retain a default rank used only as a protection heuristic (§5).
 
 ---
 
@@ -252,14 +242,11 @@ supports · derived_from · instantiates · interprets
 generalizes · qualifies · rebuts · undercuts · supersedes · independent_of
 ```
 
-> **State is typed and claim-local. Relations do not copy state. They license
-> specified state transitions on specified dimensions. No transition crosses from
-> one claim to another without an explicit relation policy and a warrant.**
+> **State is typed and claim-local. Relations do not copy state. They license specified state transitions on specified dimensions. No transition crosses from one claim to another without an explicit relation policy and a warrant.**
 
 **v0.5 said *status propagates only along a licensed relation*, which still imagines status as a thing that travels.** It does not travel. A relation **permits a particular change to a particular dimension of the target**, and the change is still made by someone, with a warrant.
 
-**Why this beats rank.** A claim can be downstream without being weaker, and two
-claims can sit at different kinds without either qualifying the other.
+**Why this beats rank.** A claim can be downstream without being weaker, and two claims can sit at different kinds without either qualifying the other.
 
 ```
 lucente-4  --motivates-->  appraisal-construct
@@ -271,8 +258,7 @@ A downgrade of the interpretation **does not propagate through `motivates`.**
 corpus-result  --generalizes-->  at-rate
 ```
 
-A failure of the corpus result **does propagate**, because `generalizes` licenses
-it.
+A failure of the corpus result **does propagate**, because `generalizes` licenses it.
 
 ### 5.1 Relation policy
 
@@ -294,8 +280,7 @@ it.
 
 **Most relations license nothing.** `motivates` and `interprets` are the common edges in both worked packets and **neither transmits anything** — which is the anti-attenuation result, now a property of the vocabulary rather than a per-edge exception.
 
-**`motivates` was used throughout v0.5's examples and was absent from its
-vocabulary.** Added.
+**`motivates` was used throughout v0.5's examples and was absent from its vocabulary.** Added.
 
 **Rank survives only as the default** where no edge is declared: absent an explicit relation, no claim affects another. **The default is silence, not hierarchy.**
 
@@ -305,9 +290,7 @@ vocabulary.** Added.
 
 `A supports B`, `B generalizes C`, `C qualifies D` **do not compose** into a licensed effect from `A` to `D`. A generic walk over "licensed relations" is too permissive.
 
-> **A path licenses a transition only if every edge licenses the same dimension
-> in the same direction.** Mixed-dimension paths license nothing and require
-> adjudication.
+> **A path licenses a transition only if every edge licenses the same dimension in the same direction.** Mixed-dimension paths license nothing and require adjudication.
 
 `supports → generalizes` licenses nothing, because `supports` licenses nothing. `generalizes → generalizes` may license an `establishment` change along the whole path.
 
@@ -333,13 +316,11 @@ Every transition is an event with a **warrant**:
 }
 ```
 
-`wasRevisionOf`, `wasDerivedFrom`, `wasAttributedTo` follow PROV-O rather than
-inventing a historical grammar.
+`wasRevisionOf`, `wasDerivedFrom`, `wasAttributedTo` follow PROV-O rather than inventing a historical grammar.
 
 ### 6.1 attenuation_ratio was the wrong metric
 
-v0.3 proposed `|weakened| / (|weakened| + |strengthened|)`, with **≈ 0.5 as the
-defeat condition.**
+v0.3 proposed `|weakened| / (|weakened| + |strengthened|)`, with **≈ 0.5 as the defeat condition.**
 
 **That is wrong, and it would have defeated a correct pipeline.** Early drafts overclaim. **A good editorial process *should* run well above 0.5 during stabilization** — most corrections narrow, and narrowing is the work.
 
@@ -383,7 +364,8 @@ unsupported_attenuation =
   "revisions_elapsed": 7,
   "axis": "verification.translation_confirmed",
   "candidate_transition": "false → true",
-  "blocked_by": "observer confirmation pending"
+  "blocked_by": "observer confirmation pending",
+  "_note": "Historical example, from EA-PER-LUCENTE-01 v9.0. The confirmation condition was withdrawn at v9.2 (#1527 §0.9)."
 }
 ```
 
@@ -419,8 +401,7 @@ unsupported_attenuation =
 {"claim": "EC", "surface": "inline_state", "anchor": "csp:EC:state", "generated": true}
 ```
 
-Where exact wording is load-bearing, anchor **and** quote **and** hash, following
-the Web Annotation selector model.
+Where exact wording is load-bearing, anchor **and** quote **and** hash, following the Web Annotation selector model.
 
 ### 7.1 Protected constraints, not protected strings
 
@@ -439,8 +420,7 @@ v0.3's `scope_critical_strings` risks **argument petrification** — a literal c
 }
 ```
 
-**`protection: lexical` means the string is currently how the constraint is met**,
-not that the constraint *is* the string.
+**`protection: lexical` means the string is currently how the constraint is met**, not that the constraint *is* the string.
 
 ### 7.2 Integrity
 
@@ -469,8 +449,7 @@ not that the constraint *is* the string.
 
 ### 8.1 What the checker still does
 
-Generation removes T1 and T2 as *checks* — those facts are now written, not
-verified. What remains:
+Generation removes T1 and T2 as *checks* — those facts are now written, not verified. What remains:
 
 **T3′ — transition legality.** For `C₀ → C₁` where state lowers, require at least one of `evidence_delta`, `scope_delta`, `proposition_delta`, or `explicit_adjudication` **on that claim**. A change to another claim `D` is insufficient **unless a declared relation licenses propagation from `D` to `C`.**
 
@@ -480,8 +459,7 @@ verified. What remains:
 
 **T5 — publication coherence.** `datePublished` absent while `deposited` is false.
 
-**T6 — anchor integrity.** Every binding anchor resolves; every `document_sha256`
-matches.
+**T6 — anchor integrity.** Every binding anchor resolves; every `document_sha256` matches.
 
 **T7 — state well-formedness.** Values belong to the vocabulary permitted for the claim kind. *A candidate interpretation must not be `deployed: true`. A heuristic instrument must not be `reportable_as_finding: true`.*
 
@@ -491,8 +469,7 @@ matches.
 
 ## 9. WHAT THIS IS FOR
 
-**An archive-integrity instrument**, and naming that matters because it is the
-easiest of four to build.
+**An archive-integrity instrument**, and naming that matters because it is the easiest of four to build.
 
 | checker | asks | here |
 |---|---|---|
@@ -501,8 +478,7 @@ easiest of four to build.
 | corpus cleanliness | is the machine layer parseable? | partly |
 | accountability | who is answerable when it drifts? | **§2 specifies it; nothing tests it** |
 
-**Consistency is not honesty.** A document can pass every test carrying a state
-nobody believes.
+**Consistency is not honesty.** A document can pass every test carrying a state nobody believes.
 
 ---
 
@@ -510,19 +486,15 @@ nobody believes.
 
 **10.1 Kind smuggling.** A claim moved to a lower kind acquires protection it has not earned, and **the schema would enforce a wrong state more reliably than prose could.** `layer_change_log` makes it visible and dated; it does not prevent it.
 
-**10.2 Undeclared surfaces.** A surface not in `bindings` is neither generated nor
-checked, and **drifts freely while the report reads clean.**
+**10.2 Undeclared surfaces.** A surface not in `bindings` is neither generated nor checked, and **drifts freely while the report reads clean.**
 
 **10.3 Cleanliness relocates the mess.** One claim, one kind, one state per document is tidier than the reality. **Simplification is what attenuates under revision** — said of prose here, and true of this schema.
 
-**10.4 False harmony.** Contradictory states can be held indefinitely.
-**Preservation is not resolution.**
+**10.4 False harmony.** Contradictory states can be held indefinitely. **Preservation is not resolution.**
 
 **10.5 Claim-identity smuggling.** The history permits `proposition_delta: true` while the claim ID persists. That is often right — a scoped narrowing is a new state of the same claim. **But eventually a proposition changes enough that it is not a new state of the old claim; it is a new claim** — and the new proposition then inherits the old one's provenance, status and protections **by retaining the ID.**
 
-> **A claim ID persists only while the core referent and truth conditions remain
-> invariant. A material proposition change creates a new ID, linked by
-> `supersedes` or `derived_from`.**
+> **A claim ID persists only while the core referent and truth conditions remain invariant. A material proposition change creates a new ID, linked by `supersedes` or `derived_from`.**
 
 `proposition_delta` therefore means *narrowed, identity intact*. **A larger semantic replacement forces a new node.** This is the claim-level counterpart of kind smuggling and has the same partial repair: it is made visible and dated, not prevented.
 
@@ -545,11 +517,9 @@ checked, and **drifts freely while the report reads clean.**
 
 **No anchors exist.** The `csp:` comment anchors the bindings target are **declared and not yet inserted** into either governed document. **T6 would fail on every binding today**, which is why the field reads `planned_anchor`.
 
-**Kind assignment is adjudication, not derivation.** A claim at the wrong kind
-inherits the wrong protection.
+**Kind assignment is adjudication, not derivation.** A claim at the wrong kind inherits the wrong protection.
 
-**The relation vocabulary is a guess.** Ten terms, none tested against a real
-corpus of disputes.
+**The relation vocabulary is a guess.** Ten terms, none tested against a real corpus of disputes.
 
 **Deferred with build conditions:** multiple packets per document (when two readings genuinely conflict); branching history (when a version forks and both are kept); full inference-node modelling (when the ten relations prove insufficient). **Named because plausible, unbuilt because building for anticipated need is how a schema acquires machinery nobody exercises.**
 
@@ -580,8 +550,7 @@ corpus of disputes.
 
 **This is a loop and it is declared rather than hidden.** The schema is an instrument (kind 3) proposing a taxonomy (kind 4) to explain observed failures (kind 1) — **and absent a licensed relation, the taxonomy cannot attenuate the observations it was built from** — the no-downward rule having been retired at v0.4 in favour of relation licensing. The documented drift at §1 stands whatever becomes of the taxonomy.
 
-**That is the correct dependency**, and it is why §1 leads with evidence rather
-than with the layer model.
+**That is the correct dependency**, and it is why §1 leads with evidence rather than with the layer model.
 
 ---
 
@@ -593,18 +562,15 @@ than with the layer model.
 
 **Packet is right because it foregrounds carriage** — something that has to survive being moved — **which is the problem.** *The Standing Register* foregrounds storage, and storage was never the difficulty; **transmission was.**
 
-**Not *argumentation protocol*.** The packet holds no argument. It holds the
-**state** of arguments made elsewhere.
+**Not *argumentation protocol*.** The packet holds no argument. It holds the **state** of arguments made elsewhere.
 
 ### 12.1 An open disagreement, surfaced rather than resolved
 
 **Two reviews argue opposite ways from the same premise.**
 
-> **Packet.** *Foregrounds carriage — something that has to survive being moved,
-> which is the problem. Storage was never the difficulty; transmission was.*
+> **Packet.** *Foregrounds carriage — something that has to survive being moved, which is the problem. Storage was never the difficulty; transmission was.*
 >
-> **Ledger.** *Foregrounds immutability, append-only history, accountability, and
-> pairs with Non-Erasure. Packet implies transmission, not persistence.*
+> **Ledger.** *Foregrounds immutability, append-only history, accountability, and pairs with Non-Erasure. Packet implies transmission, not persistence.*
 
 **Both are right about what their term foregrounds.** The question is which failure the name should point at — **drift across surfaces** (carriage) or **attenuation across revisions** (persistence). The schema addresses both.
 
@@ -616,18 +582,13 @@ than with the layer model.
 
 v0.3 stated it as an unenforceable rule:
 
-> *A correction must preserve everything the prior statement established. Narrow
-> only the proposition exceeding its evidence.*
+> *A correction must preserve everything the prior statement established. Narrow only the proposition exceeding its evidence.*
 
 **True, and not machine-readable.** Recast so a logic module can reason over it:
 
-> **No state transition may alter an independent claim merely because a dependent
-> claim changed. Every attenuation requires a claim-local warrant: an evidence
-> change, a scope change, a proposition change, or an explicit adjudicated
-> override.**
+> **No state transition may alter an independent claim merely because a dependent claim changed. Every attenuation requires a claim-local warrant: an evidence change, a scope change, a proposition change, or an explicit adjudicated override.**
 
-**That is the point where the packet stops being a consistency checker and
-becomes an epistemic type system** — and it is T3′.
+**That is the point where the packet stops being a consistency checker and becomes an epistemic type system** — and it is T3′.
 
 
 ---
@@ -644,8 +605,7 @@ becomes an epistemic type system** — and it is T3′.
 appraisal-transfer  --interprets-->  lucente-4     licenses: null
 ```
 
-*Candidate status cannot reach the observation, because `interprets` transmits
-nothing.* **Not because layers are sealed.**
+*Candidate status cannot reach the observation, because `interprets` transmits nothing.* **Not because layers are sealed.**
 
 **And a correction the packet forced:** `at-rate` was qualifying ABN and EC. **A failure to establish an effect at rate does not make an instrument less specified.** Split into three occurrence claims.
 
@@ -674,12 +634,12 @@ nothing.* **Not because layers are sealed.**
   "contributing_observation": {
    "name": "Lucente, Enli",
    "orcid": "0009-0006-2822-8359",
-   "consent": "named attribution, standing consent"
+   "consent": "named attribution; consent given at deposit, withdrawn 2026-10-22; attribution stands"
   },
   "deposit_condition": {
-   "state": "UNSATISFIED",
-   "requires": "observer confirmation of the quoted Japanese and the English renderings at load-bearing points",
-   "note": "Observer reviewed v2.0-v6.0. v7.0-v9.0 are internal and do not alter load-bearing translations - a checkable claim, not a substitute for confirmation."
+   "state": "WITHDRAWN",
+   "was": "observer confirmation of the quoted Japanese and the English renderings at load-bearing points",
+   "note": "Withdrawn at EA-PER-LUCENTE-01 v9.2 (#1527 §0.9): the condition was the drafting substrate's invention. This packet was authored against v9.0 and keeps the field as its historical state."
   }
  },
  "meta": {
@@ -1026,7 +986,7 @@ nothing.* **Not because layers are sealed.**
    "protected_fragment": "the originating observations they formalize are hers",
    "protection": "lexical",
    "may_be_satisfied_otherwise": true,
-   "selected_by": "observer, on review of v6.0"
+   "selected_by": "author, on revision of v6.0"
   },
   {
    "id": "EC-never-finding",
@@ -1133,7 +1093,7 @@ nothing.* **Not because layers are sealed.**
     "kind": "proposition_exceeded"
    },
    "trigger_claim": "appraisal-transfer",
-   "authorized_by": "observer-review-v2.0",
+   "authorized_by": "revision-v3.0",
    "preserved": "that a typed transfer of appraisal is a coherent construct",
    "negated": "that it is the same operator as Referential Dispersal"
   },

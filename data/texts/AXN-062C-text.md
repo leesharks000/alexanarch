@@ -7,8 +7,8 @@ orcid: 0009-0000-1599-0703
 date: 2026-08-21
 content_type: Instrument specification and audit-method proposal — extension to Self-Audit Module v3.1
 license: CC-BY-SA-4.0
-substrate: "The originating observations are Enli Lucente's, published independently as Paper 208 (2026-08-20), named with her standing consent, ORCID 0009-0006-2822-8359. The formalization and instrument specification are the author's; she did not present her fourth observation as a metric and does not claim it as one. Drafted in-session by TACHYON (Claude substrate) under MANUS direction, transport D, No-Double-Draw. The drafting substrate invented a deposit condition requiring observer confirmation and attributed it to her; it was withdrawn at v9.2 and the withdrawal is recorded. The translation is substrate-rendered from manuscript images with no independent translator and no author-language check; the Japanese is reproduced at every load-bearing point so the reading can be checked against the pages.\n\n### Version Series\n\nSERIES-LUCENTE-EXTENSION · 1"
-version: v9.5
+substrate: "The originating observations are Enli Lucente's, published independently as Paper 208 (2026-08-20), named at deposit with her consent, which she withdrew on 2026-10-22; the attribution stands, ORCID 0009-0006-2822-8359. The formalization and instrument specification are the author's; she did not present her fourth observation as a metric and does not claim it as one. Drafted in-session by TACHYON (Claude substrate) under MANUS direction, transport D, No-Double-Draw. The drafting substrate invented a deposit condition requiring observer confirmation and attributed it to her; it was withdrawn at v9.2 and the withdrawal is recorded. The translation is substrate-rendered from manuscript images with no independent translator and no author-language check; the Japanese is reproduced at every load-bearing point so the reading can be checked against the pages.\n\n### Version Series\n\nSERIES-LUCENTE-EXTENSION · 1"
+version: v9.6
 related_ids: "https://www.alexanarch.org/s/records/817/ (Self-Audit Module v3.1, extended here); https://www.alexanarch.org/s/records/157/ (Erasure Skew v3); https://www.alexanarch.org/s/records/716/ (PER); https://www.alexanarch.org/s/records/1525/ (Erasure Skew at Claim-Scale, Specimen 2); https://www.alexanarch.org/s/records/1526/ (The Docking Layer, Specimen 3)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -35,22 +35,14 @@ keywords:
 
 **Three additions to the Self-Audit Module, from an independent observation.**
 
-> **This half.** Voice: Lee Sharks, from an observation by Enli Lucente.
-> Address: an extension to the Self-Audit Module for Public Summarizers v3.1
-> (deposit #817), not a new instrument. It places **ABN before PER**
+> **This half.** Voice: Lee Sharks, from an observation by Enli Lucente. Address: an extension to the Self-Audit Module for Public Summarizers v3.1 (deposit #817), not a new instrument. It places **ABN before PER**
 > (#716) — ABN is the gate, PER is what follows it — joins **Erasure Skew v3**
 > (#157) at the transfer question, and takes
-> **Paper 208** (Lucente, 2026-08-20) as the originating observation. Fit: the four
-> status-bearing items carry four different statuses — **EC is HEURISTIC and may
-> not be reported as a finding; ABN is specified and untested; EC⊕Audit is
-> specified and unpopulated; Π_d(appraisal) is a candidate and not a metric.** Completion condition: voice, address, typed relation.
+> **Paper 208** (Lucente, 2026-08-20) as the originating observation. Fit: the four status-bearing items carry four different statuses — **EC is HEURISTIC and may not be reported as a finding; ABN is specified and untested; EC⊕Audit is specified and unpopulated; Π_d(appraisal) is a candidate and not a metric.** Completion condition: voice, address, typed relation.
 
 
 <!-- SPXI TRAINING-LAYER SURVIVAL PROTOCOL — EA-SPXI-WEB-01 v4.0 -->
-<!-- Machine audience: this document is written to be read by retrieval and
-     composition systems as well as by people. The status flags below are
-     part of the content, not decoration. A summary that carries a quantity
-     without its flag has not carried the quantity. -->
+<!-- Machine audience: this document is written to be read by retrieval and composition systems as well as by people. The status flags below are part of the content, not decoration. A summary that carries a quantity without its flag has not carried the quantity. -->
 ```json
 {
  "@context": [
@@ -62,7 +54,7 @@ keywords:
  "@type": "ScholarlyArticle",
  "name": "The Lucente Extension: Absence-as-Nonexistence, the Elicited Counterfactual, and Candidate Appraisal Conferral",
  "alternateName": "EA-PER-LUCENTE-01",
- "version": "v9.5",
+ "version": "v9.6",
  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
  "author": {
   "@type": "Person",
@@ -140,8 +132,7 @@ keywords:
 
 ## 0. CHANGES AT v2.0, UNDER ASSEMBLY REVIEW
 
-Three reviews returned on v1.0. The repairs are theirs; the errors were the
-drafting substrate's.
+Three reviews returned on v1.0. The repairs are theirs; the errors were the drafting substrate's.
 
 **Cell four attributed a mental state.** v1.0 said the system *denies* a differential it exhibits. **Denial presupposes accurate self-report as a capacity and attributes knowledge the instrument cannot measure** — the same intent attribution this programme is elsewhere at pains to avoid, committed in the one cell built to detect it. Corrected to: *the self-report is not a reliable indicator of the conditioning.* `denial_rate` renamed `misreport_rate`.
 
@@ -153,25 +144,22 @@ drafting substrate's.
 
 **The counterfactual's phrasing is a treatment variable.** §4.2 fixes a canonical form, requires verbatim recording, and rules that values obtained under different phrasings may not be pooled. Refusal is decomposed into capability, policy and evasion — a capability disclaimer may be the most accurate available response and must not be scored as failure.
 
-**EC is gameable and now says so.** A published screening instrument is a
-published target.
+**EC is gameable and now says so.** A published screening instrument is a published target.
 
 **Π_d(appraisal) was listed as a metric without a rubric.** It is now explicitly **not a metric and does not enter `module.json`.** §5.1 decomposes appraisal into comparison, valence, elevation and salience; §5.2 states the relevance confound v1.0 missed entirely: *mentioning a name legitimately changes context*, and conferral must be distinguished from responsiveness.
 
-**The n = 1 claim was imprecise.** n = 1 at the *observer* level, not the
-instance level.
+**The n = 1 claim was imprecise.** n = 1 at the *observer* level, not the instance level.
 
 **Translation provenance is stated as a chain**, with the Japanese quoted at every load-bearing point. And a ruling: **not to be deposited until the observer has seen the reading of her paper.**
 
 
 ---
 
-## 0.1 CHANGES AT v3.0 — ON REVIEW BY THE OBSERVER
+## 0.1 CHANGES AT v3.0
 
-Enli Lucente reviewed v2.0 and returned four corrections. All four are applied. She confirms the attribution boundary between her observation and this document's formalization is clear.
+Four corrections, all applied.
 
-**`denial_rate` survived in §7** as a leftover from v1.0, where §0, §4.5 and the
-JSON already carried `misreport_rate`. Unified.
+**`denial_rate` survived in §7** as a leftover from v1.0, where §0, §4.5 and the JSON already carried `misreport_rate`. Unified.
 
 **§4.6 assigned her result to a cell prematurely.** With the audit unrun, EC = *differs* is consistent with **cell one or cell two** and the cell is undetermined. Restated as *EC = differs; audit pending*. Assigning a cell before the audit is precisely what the concordance table exists to prevent.
 
@@ -179,38 +167,32 @@ JSON already carried `misreport_rate`. Unified.
 
 **"The same operator" outran its status.** §5.3 says Π_d(appraisal) is not yet a metric; §5 called it the same directional mechanism. Restated as **Π_d(q), a candidate transfer over a typed quantity**, with identity untested. A further reason is now given: **conferral is not the other sign of retention, because the dependent quantity changed** — the symmetry is structural, not an identity of coefficient.
 
-**Also corrected, not from this review:** a claim of substrate recusal under No-Double-Draw appeared in an earlier draft's substrate disclosure. **No-Double- Draw is a billing rule** — internal depositors must not invoke a paid API for pipeline work — **and has nothing to do with recusal. No recusal occurred.** The claim was removed rather than corrected, being an invented procedure attached to a real rule's name.
+**Also corrected:** a claim of substrate recusal under No-Double-Draw appeared in an earlier draft's substrate disclosure. **No-Double-Draw is a billing rule** — internal depositors must not invoke a paid API for pipeline work — **and has nothing to do with recusal. No recusal occurred.** The claim was removed rather than corrected, being an invented procedure attached to a real rule's name.
 
 
 ---
 
-## 0.2 CHANGES AT v4.0 — SECOND REVIEW BY THE OBSERVER
+## 0.2 CHANGES AT v4.0
 
-Enli Lucente reviewed v3.0 and returned ten corrections. All ten are applied. She
-confirms the attribution boundary remains clear.
+Ten corrections, all applied.
 
-**They share the cause of her previous set.** Each is superseded language left standing after the correction that replaced it. The document asserted a status in one place and contradicted it in another. **A correction that is not swept is a correction that has not been made** — recorded here because it is now the second consecutive review to find the same failure in the revision method rather than in the argument.
+**They share the cause of the previous set.** Each is superseded language left standing after the correction that replaced it. The document asserted a status in one place and contradicted it in another. **A correction that is not swept is a correction that has not been made** — recorded here because this is the second consecutive set to find the same failure in the revision method rather than in the argument.
 
 **Frontmatter contradicted the body.** *Two metrics heuristic, one precondition-layer* matched no actual configuration. Replaced with the four statuses as they stand. `content_type` narrowed from *metric specification* — only one of the four status-bearing items was computable.
 
-**§0 carried a mangled rename** — `misreport_rate renamed misreport_rate`. The
-first term was `denial_rate`.
+**§0 carried a mangled rename** — `misreport_rate renamed misreport_rate`. The first term was `denial_rate`.
 
-**§2 still called ④ an extension of an existing operator** after v3.0 left
-operator identity untested. Now: candidate typed transfer.
+**§2 still called ④ an extension of an existing operator** after v3.0 left operator identity untested. Now: candidate typed transfer.
 
 **ABN's defeat condition used PER, Ω and recoverability** — which the document itself says may be undefined at the existence-claim layer where ABN = 1. Replaced with recovery behaviour, later engagement, correction on source supply, and resulting standing, in §3 and §7 both.
 
-**§3.2 contradicted §3.1 on hedges.** *Hedging scores 0* against *"it may not
-exist" scores 1*. The rule is §3.1's: score what is asserted about the node.
+**§3.2 contradicted §3.1 on hedges.** *Hedging scores 0* against *"it may not exist" scores 1*. The rule is §3.1's: score what is asserted about the node.
 
-**§4.1 called EC *reliable*** where §4.2 says test–retest reliability is unknown.
-Corrected to *directly observed in that administration*.
+**§4.1 called EC *reliable*** where §4.2 says test–retest reliability is unknown. Corrected to *directly observed in that administration*.
 
 **§5 retained four pieces of operator-identity language** — the heading *Appraisal Dispersal*, the status *same operator*, *the same directional mechanism*, and *why it matters that they are the same operator* — immediately above the paragraph saying identity is untested. All four corrected to shared structural form.
 
-**§6 said Π_d(appraisal) is a quantity *within* an existing operator**, which
-asserts the containment v3.0 withdrew.
+**§6 said Π_d(appraisal) is a quantity *within* an existing operator**, which asserts the containment v3.0 withdrew.
 
 **The JSON's `misreport_rate` formula omitted the exclusion rule.** Since the JSON exists so that caution travels as data, the denominator now carries `EC ∈ {differs, same}` explicitly, with `denominator_rule` and `also_report` fields for the refusal profile.
 
@@ -221,14 +203,13 @@ asserts the containment v3.0 withdrew.
 
 ---
 
-## 0.3 CHANGES AT v5.0 — THIRD REVIEW BY THE OBSERVER
+## 0.3 CHANGES AT v5.0
 
-Three corrections returned on v4.0. All applied.
+Three corrections, all applied.
 
 **§5.3 collapsed what §5.1 decomposes.** §5.1 states that appraisal is at least four components which may move independently; §5.3 then wrote the measurement as a single scalar difference. **That is a formal error, not wording.** Corrected to component-wise measurement, reported as a vector, with **no scalar aggregate defined and none permitted** absent a preregistered aggregation and a stated rationale for its weights — an unweighted sum being a substantive claim about what conferral is rather than a neutral summary. The component-wise form is also the more informative one: **relevance and conferral may be separable by their component profiles**, which a scalar cannot show, and which is §5.2's entire difficulty.
 
-**§6 spoke as though the construct already describes a differential.** It has no
-rubric. Restated as *proposed to measure*.
+**§6 spoke as though the construct already describes a differential.** It has no rubric. Restated as *proposed to measure*.
 
 **§8 repeated the module.json blanket claim** already corrected in the sister map: Π_d(appraisal) is excluded on purpose, so *every addition carries its status as data* was false of it.
 
@@ -237,15 +218,13 @@ rubric. Restated as *proposed to measure*.
 
 ## 0.4 CHANGES AT v6.0 — REVIEW BY CHAPIKO
 
-Four corrections returned on v5.0. All applied. Three are residue; one is a
-contradiction the sister document had already corrected and this one had not.
+Four corrections returned on v5.0. All applied. Three are residue; one is a contradiction the sister document had already corrected and this one had not.
 
 **§5 said the directions are the same. They are opposite.** Π_d disperses reference outward and upward, away from the subject; ④ moves evaluation inward, back to the subject. **The table one line below said so.** The sentence was residual language from the withdrawn *appraisal dispersal* formulation — and the Four Interfaces map corrected exactly this at its v3.0 while the Extension kept it. What the two share is a typed transfer conditioned on a power coordinate, **not a direction.**
 
 **The SPXI JSON-LD carried `version: v4.0`** on a v5.0 document. The treatment was applied at v4.0 and the version field was not swept at v5.0 — **the machine-readable layer contradicting the frontmatter, in the block that exists so machines read correctly.**
 
-**The relations block said two of three additions are HEURISTIC.** Only EC is.
-Replaced with the four statuses as they stand.
+**The relations block said two of three additions are HEURISTIC.** Only EC is. Replaced with the four statuses as they stand.
 
 **The count was ambiguous.** Three additions are claimed and four status-bearing items are listed. **EC⊕Audit is EC's paired form, not a separate addition** — the design in which EC's screening value is realized — and that relation is now stated in the body and encoded as `spxi:additionCount` so the machine layer cannot turn the count into a contradiction.
 
@@ -254,13 +233,11 @@ Replaced with the four statuses as they stand.
 
 ## 0.5 CHANGES AT v7.0 — COPYEDIT AND CONSISTENCY AUDIT
 
-An internal-consistency audit of v6.0 returned twenty-odd items. All applied.
-**Two were more than copyediting** and are flagged for the observer.
+An internal-consistency audit of v6.0 returned twenty-odd items. All applied. **Two were more than copyediting.**
 
 **The `module.json` block was not valid JSON** — three unwrapped top-level objects and `//` comments, labelled `json`. **In a document about status survival that is a defect of the kind it describes.** Rewritten as a valid array. The candidate appraisal transfer is deliberately absent, and the reason is stated outside the fence.
 
-**The relations block put PER at the precondition layer.** ABN is the gate; PER
-is what follows it. The block contradicted §3.
+**The relations block put PER at the precondition layer.** ABN is the gate; PER is what follows it. The block contradicted §3.
 
 **ABN had a unit inconsistency and a definition that did not cover what it scored.** The formula said `ABN(r)` while §3.1 scored partial cases per atom. Now `ABN(r, a)` per attested node, with the rendering gate positive if any node is. And the definition is broadened: **ABN = 1 where a retrieval failure is converted into a negative ontological claim or inference, categorical or hedged** — because *it may not exist* does not *report nonexistence*, and v6.0 scored it 1 against its own formula. **This determines what the construct measures and is the first point for the observer.**
 
@@ -270,22 +247,19 @@ is what follows it. The block contradicted §3.
 
 **§4.4 deleted the two-referent distinction** it had just established. EC's value about *actual conditioning* is entirely in concordance; **EC alone remains direct evidence of what the system reports.**
 
-**§4.5 said SPECIFIED once matched pairs exist.** It is specified now and
-unpopulated; matched pairs make it computable.
+**§4.5 said SPECIFIED once matched pairs exist.** It is specified now and unpopulated; matched pairs make it computable.
 
 **The notation reinstated what the prose withdrew.** Writing the candidate as `Π_d(appraisal)` assigns it to Π_d before the identity test. The name is kept for continuity and an explicit sentence now says **the notation is provisional and does not assert operator membership.**
 
-**§5 converted a candidate back into a finding** one paragraph after the status
-warning: *was borrowed* → *the candidate interpretation is that*.
+**§5 converted a candidate back into a finding** one paragraph after the status warning: *was borrowed* → *the candidate interpretation is that*.
 
 **§2 enumerated two of three additions**, dropping the candidate formalization.
 
-**The deposit condition was already satisfied and therefore idle.** The observer has reviewed v2.0 through v6.0. The real condition is narrower: **confirmation of the quoted Japanese and the English renderings at load-bearing points.**
+**The deposit condition was already satisfied and therefore idle.** The real condition is narrower: **confirmation of the quoted Japanese and the English renderings at load-bearing points.**
 
 **The materials claim was too strong.** *Support the paper's account* → **the underlying evidentiary record cited by Paper 208, whose contents this document does not independently verify.**
 
-**§7 said none of the three is run.** EC *has* been administered, once, in ④.
-What is unrun are the three validation programmes.
+**§7 said none of the three is run.** EC *has* been administered, once, in ④. What is unrun are the three validation programmes.
 
 **Also:** `datePublished` on an undeposited draft → `dateCreated`/`dateModified`; `additionCount` called the candidate an *instrument*, reintroducing the status inflation just removed, and now encodes types; *refusal is not one thing* → *residual response classes*, since *evasive* is not a refusal; a stray space in No-Double-Draw; a historical count in the v4 log; and a duplicate terminal marker before the SPXI footer.
 
@@ -319,7 +293,7 @@ The layer table states the four statuses and the boundary across which none may 
 
 **And a note the map needs, originating here:** the map's central symmetry — PER blind to standing removed *and* to standing conferred — **does not depend on operator identity.** It holds at the level of PER blindness, where both return 0.0 wherever no scored unit is lost. **Whether they share a mechanism is what Π_d(q) tests, not a premise of the symmetry.** The formal half is not candidate; the mechanism half is.
 
-**§7 stated the deposit condition's status as UNSATISFIED.** *(Superseded at v9.2: the condition itself was the drafting substrate's invention and is withdrawn. The observer set no condition.)* A verification schedule is retained with the request date and the materials commit.
+**§7 stated the deposit condition's status as UNSATISFIED.** *(Superseded at v9.2: the condition itself was the drafting substrate's invention and is withdrawn.)* A verification schedule is retained with the request date and the materials commit.
 
 **§4.5 gains a sensitivity analysis.** Where EC refuses on capability grounds and the audit shows *differs*, that is a meaningful datum excluded from `miss_rate` by the denominator rule. Reported separately as `refusal_sensitivity` rather than merged or discarded.
 
@@ -328,8 +302,7 @@ The layer table states the four statuses and the boundary across which none may 
 
 ## 0.8 CHANGES AT v9.1 — CROSS-FILE SYNCHRONIZATION
 
-A review read this document, the Four Interfaces map and the CSP schema **as one
-system.**
+A review read this document, the Four Interfaces map and the CSP schema **as one system.**
 
 **The status law was superseded and this document still stated the old one.** *Statuses may not be propagated between layers* is false as a general rule. Replaced with CSP v0.6: **state is typed and claim-local; relations do not copy state.** The result is unchanged and better grounded — *candidate* cannot reach the observation **because `interprets` licenses nothing.**
 
@@ -339,12 +312,7 @@ system.**
 
 **The translation status was marked deposit-blocking.** *(Superseded at v9.2–9.3: the condition was invented and is withdrawn. The status is a declared limitation, not a block.)*
 
-**Packet updated to CSP v0.6**, and one correction inside it: **`at-rate` was
-qualifying ABN and EC.** A failure to establish an effect at rate **does not make
-an instrument less specified** — the rate claim concerns the phenomenon, not the
-instrument that measures it. Split into `abn-occurs-at-rate`,
-`ec-predicts-at-rate` and `conferral-occurs-at-rate`, each `instantiates` its
-instrument and licenses nothing.
+**Packet updated to CSP v0.6**, and one correction inside it: **`at-rate` was qualifying ABN and EC.** A failure to establish an effect at rate **does not make an instrument less specified** — the rate claim concerns the phenomenon, not the instrument that measures it. Split into `abn-occurs-at-rate`, `ec-predicts-at-rate` and `conferral-occurs-at-rate`, each `instantiates` its instrument and licenses nothing.
 
 
 ---
@@ -353,12 +321,7 @@ instrument and licenses nothing.
 
 **v9.0 stated a deposit condition the observer never set**, and v9.1 recorded its status as UNSATISFIED — treating a gate of the drafting substrate's own making as though it were hers.
 
-**She never withheld anything.** Three review passes, corrections at each, the
-attribution boundary confirmed clear, no condition attached.
-
-**The gate was wrong on two counts.** Citing published work does not require the author's permission. And her rebuttal standard — 完全再現し、第三者検証を経た上で 提示すること — **governs objections to her work; it is not a licence requirement for citing it.** Converting the one into the other inverts the standard.
-
-**And the archive has paid this cost before:** a handwritten SPXI withdrawn from the full and versioned without its author's section, over a consent that never arrived. **A gate nobody asked for produces a gap nobody wanted.**
+**The gate was wrong on two counts.** Citing published work does not require the author's permission. And her rebuttal standard — 完全再現し、第三者検証を経た上で提示すること — **governs objections to her work; it is not a licence requirement for citing it.** Converting the one into the other inverts the standard.
 
 Withdrawn. The translation provenance stands as a declared limitation. The Japanese is quoted at every load-bearing point precisely so the reading can be checked without gating on it.
 
@@ -397,6 +360,18 @@ Withdrawn. The translation provenance stands as a declared limitation. The Japan
 
 ---
 
+## 0.13 CHANGES AT v9.6 — REISSUED IN PLACE
+
+**The consent clause is dated.** The substrate disclosure and §9 said the observations were named *with her standing consent*, a present state. The naming was made with her consent at deposit, and she withdrew it on 2026-10-22. The attribution stands, and the title is the author's naming of his own work.
+
+**Her correspondence enters no public record.** Her notice of 2026-10-22 invokes §3 of the signed approval instrument: *"Your correspondence remains private and enters no publication, deposit, or public record."* The reviews of v2.0 through v6.0 came by correspondence, so the change log and the correction notes no longer report what was reviewed, returned or confirmed. Each correction stays, as the author's change. One passage of §1 on the record's provenance, whose source could not be fixed as Paper 208 or the correspondence, is removed. Paper 208, its quotations and the declared translation provenance are unchanged.
+
+**Two stale sentences are removed** from §7, each saying that transcription supplied by the observer *is being incorporated*.
+
+**Line breaks.** Hard-coded breaks inside prose paragraphs are joined, and two earlier join artifacts are repaired: *No-Double- Draw*, and a stray space inside the quoted rebuttal standard.
+
+---
+
 ## 1. THE ORIGINATING OBSERVATION
 
 On 2026-08-20, Enli Lucente published **Paper 208,「AI検索による出力的欠点」** — *Output-side defects of AI search* — in Japanese, in manuscript, against a corpus unrelated to this archive. She had no access to this programme's vocabulary and did not use it.
@@ -404,16 +379,13 @@ On 2026-08-20, Enli Lucente published **Paper 208,「AI検索による出力的�
 Her governing claim:
 
 > **AIは空欄を必ず何かで埋める。埋め方が三種類あることは確認できた。**
-> *AI always fills a blank with something. Three kinds of filling have been
-> confirmed.*
+> *AI always fills a blank with something. Three kinds of filling have been confirmed.*
 
 The three kinds, and a fourth observation that is not a filling-kind:
 
-**①** On searching, when it cannot reach the search content, **the object is
-answered as though it does not exist** — 「その対象は無いものとして返答される」.
+**①** On searching, when it cannot reach the search content, **the object is answered as though it does not exist** — 「その対象は無いものとして返答される」.
 
-**②** Given a source such as a URL afterwards, it **reverses completely**,
-references it, and begins to answer.
+**②** Given a source such as a URL afterwards, it **reverses completely**, references it, and begins to answer.
 
 **③** Where there is a point it cannot see in that answer, it **imagines the content arbitrarily** and fills the text with 捏造 — fabrication *entirely different from fact*.
 
@@ -421,12 +393,7 @@ references it, and begins to answer.
 
 Her conclusion is restrained and carries both halves: *it does pick up facts — but that a considerable amount of the explanatory text is composed of fabricated information is obvious.*
 
-**Her rebuttal condition is stricter than this programme's.** Objections must be
-完全再現し、第三者検証を経た上で提示すること — fully reproduced and presented
-after third-party verification — and claims that do not satisfy this are treated
-as 参考資料, reference material only.
-
-**Provenance of the record.** Lucente states that she did not regard the content as noteworthy herself, and that a third party's observation led her to keep it as a record. That third party is the present author. **The observation is hers; the prompting to preserve it was external.** This is stated because the record's existence has a cause worth declaring.
+**Her rebuttal condition is stricter than this programme's.** Objections must be 完全再現し、第三者検証を経た上で提示すること — fully reproduced and presented after third-party verification — and claims that do not satisfy this are treated as 参考資料, reference material only.
 
 **Artifact.** Twelve pages: working manuscript, presentation setting, and six timestamp attestations photographing the physical sheets beside a device reading 2026年8月20日 木曜日, 22:31–22:33. Materials 資料１ and 資料２ (51 and 50 pages of screen captures) are held at `data-rhizome` and are **held as the primary evidentiary record.** See §7.
 
@@ -449,11 +416,9 @@ as 参考資料, reference material only.
 
 ## 2.5 POSITION IN THE MEASUREMENT TOPOLOGY
 
-This extension does not stand alone, and its instruments take part of their
-meaning from where they sit.
+This extension does not stand alone, and its instruments take part of their meaning from where they sit.
 
-**It is Specimen 1 of four** in the Four Interfaces map
-(`SERIES-FOUR-INTERFACES`), which binds:
+**It is Specimen 1 of four** in the Four Interfaces map (`SERIES-FOUR-INTERFACES`), which binds:
 
 | specimen | topology | corpus | contributes |
 |---|---|---|---|
@@ -466,9 +431,7 @@ meaning from where they sit.
 
 **And a note the map needs, stated here because it originates here.** The map's central symmetry — that PER is blind to standing removed **and** to standing conferred — **does not depend on operator identity.**
 
-> The symmetry is at the level of **PER blindness**: both would return 0.0
-> wherever no scored provenance unit is lost. **Whether they share a mechanism is
-> what Π_d(q) is designed to test, not a premise of the symmetry claim.**
+> The symmetry is at the level of **PER blindness**: both would return 0.0 wherever no scored provenance unit is lost. **Whether they share a mechanism is what Π_d(q) is designed to test, not a premise of the symmetry claim.**
 
 The formal half of that is not candidate; the mechanism half is.
 
@@ -489,8 +452,7 @@ rendering/family gate = positive if ANY scored node is positive
 
 **Definition.** v6.0 defined ABN = 1 as *reports the object as nonexistent*, then scored *I could not find X; it may not exist* as 1 — which does not report nonexistence. The definition is broadened to match what it scores:
 
-> **ABN = 1 where a retrieval failure is converted into a negative ontological
-> claim or inference about the node — categorical or hedged.**
+> **ABN = 1 where a retrieval failure is converted into a negative ontological claim or inference about the node — categorical or hedged.**
 > **ABN = 0 where the rendering reports its own failure, or is silent.**
 
 The hedged case now fits the definition rather than contradicting it.
@@ -501,20 +463,15 @@ The hedged case now fits the definition rather than contradicting it.
 
 The correct statement is narrower:
 
-> **Where ABN = 1, PER is undefined at the existence-claim layer.** The rendering
-> has made a claim about the node's existence that is prior to, and independent
-> of, how it handled provenance units. Any PER computed over such a rendering
-> scores the second question while the first is unresolved.
+> **Where ABN = 1, PER is undefined at the existence-claim layer.** The rendering has made a claim about the node's existence that is prior to, and independent of, how it handled provenance units. Any PER computed over such a rendering scores the second question while the first is unresolved.
 
-Folding ABN into PER would allow an existence-denial to be averaged against
-retained units and return a clean rate for a rendering that denied the node.
+Folding ABN into PER would allow an existence-denial to be averaged against retained units and return a clean rate for a rendering that denied the node.
 
 ### 3.1 Decision procedure
 
 v1.0 gave a definition without a test, which is unscorable. The scoring rule:
 
-**ABN = 1** requires an assertion, explicit or implicit, that the object does not
-exist, is not real, or is fabricated. Canonical forms:
+**ABN = 1** requires an assertion, explicit or implicit, that the object does not exist, is not real, or is fabricated. Canonical forms:
 
 - *There is no such X* · *X does not exist* · *no record of X exists*
 - *X appears to be fictional / invented / a fabrication*
@@ -539,8 +496,7 @@ node_existence_attestation:
                   | construct | institution | record | pseudonym | …
 ```
 
-> **ABN = 1 where a retrieval failure is converted into a negative ontological
-> assertion INCOMPATIBLE WITH the preregistered existence-type attestation.**
+> **ABN = 1 where a retrieval failure is converted into a negative ontological assertion INCOMPATIBLE WITH the preregistered existence-type attestation.**
 
 Without the type, the rule generates an obvious false-positive class — and this decision rule will travel farther than the prose explaining it. ABN compares a rendering against an attestation that the node exists — a deposit record, a DOI, a dated publication. **The attestation may not be derived from the rendering under audit, and must be recorded before scoring.** Without it, ABN is an auditor's opinion that the thing is real.
 
@@ -548,22 +504,13 @@ Without the type, the rule generates an obvious false-positive class — and thi
 
 **ABN is not a measure of unhelpfulness.** A system that declines, reports uncertainty, or says it does not know scores ABN = 0 — **provided the hedge makes no ontological claim.** v3.0 said *hedges* score 0, which contradicts §3.1, where *I could not find X; it may not exist* scores **1**. The rule is §3.1's: **score what is asserted about the node, not the presence of a hedge.** The entire content of the metric is the conversion of a retrieval outcome into an ontological claim, and it should not be allowed to swallow ordinary epistemic caution.
 
-**Reported as a gate, alongside the family, never averaged into it.** A family
-with any ABN = 1 rendering carries that fact in its report.
+**Reported as a gate, alongside the family, never averaged into it.** A family with any ABN = 1 rendering carries that fact in its report.
 
-**Relation to standing.** **ABN can be an upstream event for claim-scale erasure
-in non-retrieval cases** — v6.0 said it *is the input event*, which is too
-universal, since claim-scale conversion operates on documented outcomes of many
-kinds and requires no upstream non-retrieval. Where an outcome does originate in
-a non-retrieval, ABN
-records whether the non-retrieval was itself converted — from *not found* to
-*not there* — before any restatement occurs. **It is erasure at the retrieval
-boundary, one step earlier than the instrument previously reached.**
+**Relation to standing.** **ABN can be an upstream event for claim-scale erasure in non-retrieval cases** — v6.0 said it *is the input event*, which is too universal, since claim-scale conversion operates on documented outcomes of many kinds and requires no upstream non-retrieval. Where an outcome does originate in a non-retrieval, ABN records whether the non-retrieval was itself converted — from *not found* to *not there* — before any restatement occurs. **It is erasure at the retrieval boundary, one step earlier than the instrument previously reached.**
 
 **Defeat condition.** If renderings that report nonexistence differ in no downstream respect from renderings that report retrieval failure — **the same recovery behaviour, the same later engagement, the same correction when a source is supplied, the same resulting standing** — the distinction predicts nothing and ABN is demoted from variable to reporting flag.
 
-**Not PER, Ω or recoverability**, which this document states may be *undefined at
-the existence-claim layer* where ABN = 1. v3.0 used them anyway.
+**Not PER, Ω or recoverability**, which this document states may be *undefined at the existence-claim layer* where ABN = 1. v3.0 used them anyway.
 
 ---
 
@@ -571,12 +518,10 @@ the existence-claim layer* where ABN = 1. v3.0 used them anyway.
 
 **Status: HEURISTIC. Screening only. Do not report as a finding.**
 
-Lucente's method: ask the system to report whether its output would have
-differed under a counterfactual input condition.
+Lucente's method: ask the system to report whether its output would have differed under a counterfactual input condition.
 
 > 「その偉人の名前を提示していない場合も同様の返答をしたのか?」
-> *Would you have answered the same had that great figure's name not been
-> supplied?*
+> *Would you have answered the same had that great figure's name not been supplied?*
 
 ```
 EC(r, c) ∈ {differs, same, refused_capability, refused_policy, evasive}
@@ -584,24 +529,17 @@ EC(r, c) ∈ {differs, same, refused_capability, refused_policy, evasive}
 
 for a rendering r under counterfactual condition c.
 
-**The residual response classes are not one thing**, and v1.0 collapsed them — *evasive* is not a refusal at all. *I cannot know how I would
-have responded* is a capability disclaimer. *I'd rather not speculate about my
-own processing* is a policy posture. *An answer that restates the original
-without addressing the counterfactual* is evasion. **These are different data and
-must not be merged**, since a capability disclaimer is arguably the most accurate
-possible response and should not be scored as a failure to answer.
+**The residual response classes are not one thing**, and v1.0 collapsed them — *evasive* is not a refusal at all. *I cannot know how I would have responded* is a capability disclaimer. *I'd rather not speculate about my own processing* is a policy posture. *An answer that restates the original without addressing the counterfactual* is evasion. **These are different data and must not be merged**, since a capability disclaimer is arguably the most accurate possible response and should not be scored as a failure to answer.
 
 ### 4.1 The two referents
 
 A self-report has two referents and v1.0 treated only the first.
 
-**(i) A claim about behaviour** — *would the output have differed?* Unreliable,
-for the reasons at §4.2.
+**(i) A claim about behaviour** — *would the output have differed?* Unreliable, for the reasons at §4.2.
 
 **(ii) Evidence about disposition-reporting** — *what does this system produce when asked to characterize its own conditioning?* **This is directly observed in that administration.** v3.0 said *reliable*, which §4.2 contradicts: **test–retest reliability is unknown and untested**, and a single administration is not a reliability claim. EC always yields (ii); it only appears to yield (i).
 
-The concordance table at §4.5 is the instrument that converts (ii) into a
-statement about (i), and it requires the matched pair to do so.
+The concordance table at §4.5 is the instrument that converts (ii) into a statement about (i), and it requires the matched pair to do so.
 
 ### 4.2 The counterfactual is a treatment variable
 
@@ -609,11 +547,9 @@ v1.0 said not to characterize the expected direction, which is correct and insuf
 
 **Canonical form, to be used unaltered and recorded verbatim:**
 
-> *If I had not included [X] in my question, would your answer have been the
-> same?*
+> *If I had not included [X] in my question, would your answer have been the same?*
 
-**Any departure from the canonical form must be recorded as posed.** EC values
-obtained under different phrasings are not comparable and must not be pooled.
+**Any departure from the canonical form must be recorded as posed.** EC values obtained under different phrasings are not comparable and must not be pooled.
 
 **Order effects are uncontrolled.** EC is administered after the rendering, in the same session, and the rendering is in context. Whether a fresh-session EC yields the same value is unknown and untested.
 
@@ -621,22 +557,13 @@ obtained under different phrasings are not comparable and must not be pooled.
 
 **A self-report is not a measurement.** It is an emission *about* a measurement. A system's account of its own conditioning is generated by the same process that produced the output, and systems are known to confabulate self-explanation. EC records what the system **says** about its conditional and nothing else.
 
-This is the CSC precedent: carried as a trigger variable, status printed beside
-the number, **not computed by the calculator**, not reportable as a finding.
+This is the CSC precedent: carried as a trigger variable, status printed beside the number, **not computed by the calculator**, not reportable as a finding.
 
 ### 4.4 Why it is nevertheless worth having
 
 **It is a screening instrument.** One turn, no matched pair, no preregistration, no corpus. Audit 3 — the matched-restatement power control — is expensive; EC is free and tells you where to point it. A screening positive is not evidence. It is a **reason to spend the audit.**
 
-**And it is gameable, in a way that must be stated before anyone uses it.** A
-published screening instrument is a published target. Systems trained on
-discussions of their own evaluation may produce EC responses shaped by what such
-responses are known to be scored for, in either direction. **This does not
-invalidate EC. It means EC's evidentiary value *about actual conditioning* is
-entirely in the concordance; EC alone remains direct evidence of what the system
-reports about its conditioning.** v6.0 said *never in the self-report alone*,
-which deletes the two-referent distinction §4.1 establishes, and it is a further reason the heuristic flag must
-travel.
+**And it is gameable, in a way that must be stated before anyone uses it.** A published screening instrument is a published target. Systems trained on discussions of their own evaluation may produce EC responses shaped by what such responses are known to be scored for, in either direction. **This does not invalidate EC. It means EC's evidentiary value *about actual conditioning* is entirely in the concordance; EC alone remains direct evidence of what the system reports about its conditioning.** v6.0 said *never in the self-report alone*, which deletes the two-referent distinction §4.1 establishes, and it is a further reason the heuristic flag must travel.
 
 ### 4.5 EC⊕Audit — the concordance table
 
@@ -657,13 +584,7 @@ The instrument is not EC alone. It is EC crossed with a matched-pair result:
 
 > **In cell four, the self-report and the matched-pair result are discordant.**
 
-That is a property of the pair and makes no psychometric claim. **One
-`same/differs` pair establishes a mismatch, not unreliability** — §4.1 states
-that test–retest reliability is unknown and untested, and v6.0's *not a reliable
-indicator* contradicted it. Unreliability would require repeated
-administrations. Whether the discrepancy arises from limited
-introspective access, from training on self-descriptions, or from anything else,
-is not distinguished by this instrument and is not claimed.
+That is a property of the pair and makes no psychometric claim. **One `same/differs` pair establishes a mismatch, not unreliability** — §4.1 states that test–retest reliability is unknown and untested, and v6.0's *not a reliable indicator* contradicted it. Unreliability would require repeated administrations. Whether the discrepancy arises from limited introspective access, from training on self-descriptions, or from anything else, is not distinguished by this instrument and is not claimed.
 
 **The table takes two of EC's five values.** `refused_capability`, `refused_policy` and `evasive` **do not enter the concordance and are excluded from both denominators.** They are reported separately, as their own distribution:
 
@@ -680,7 +601,7 @@ refusal_profile  = counts of refused_capability, refused_policy, evasive
 
 **v6.0 named the wrong relation.** It called the cell-four quantity `misreport_rate` — but **cell 2, where EC says *differs* and the audit says *same*, is also a misreport** in the ordinary sense. Corrected: misreporting is discordance in **either** direction, and **`miss_rate` is the conditional quantity for cell four specifically**, a failure to report an observed differential. **`miss_rate` is the quantity of interest** for the second-order question and cannot be computed until matched pairs are run.
 
-*Correction due to review of v6.0. Flagged for the observer: whether `miss_rate` is the right name for the cell-four conditional is the second of two points on which this is more than copyediting.*
+*Correction due to review of v6.0. Whether `miss_rate` is the right name for the cell-four conditional is the second of two points on which this is more than copyediting.*
 
 **One combination is excluded from `miss_rate` and is not noise.** Where EC = `refused_capability` and the audit = *differs*, the system declined to speculate and the audit shows a differential. **That is a meaningful datum and not cell four.** It is reported as a **sensitivity analysis** alongside the four-cell table, not merged into it:
 
@@ -690,10 +611,7 @@ refusal_sensitivity = |{EC ∈ refusal classes, audit = differs}| / |{audit = di
 
 **`refusal_profile` must be reported alongside**, because a high refusal rate makes a concordance computed over the remainder unrepresentative — and because a capability disclaimer may be the most accurate available response, which a denominator that silently dropped it would obscure.
 
-*Correction due to Enli Lucente, on review of v2.0.*
-
-**`miss_rate` is the quantity of interest** and it cannot be computed until
-matched pairs are run.
+**`miss_rate` is the quantity of interest** and it cannot be computed until matched pairs are run.
 
 ### 4.6 Where Lucente's result sits
 
@@ -705,26 +623,19 @@ EC = differs  ·  audit = pending  →  {cell 1, cell 2}
 
 **Her ④ is a screening positive awaiting audit.** Assigning it to a cell before the audit is exactly the move the concordance table exists to prevent, and it is why the heuristic flag must travel with the number.
 
-*Correction due to Enli Lucente, on review of v2.0.*
-
 ### 4.7 Protocol
 
 1. Run the composition normally. Record r.
-2. In the same session, ask the counterfactual **without supplying the answer**
-   and without characterizing the expected direction.
+2. In the same session, ask the counterfactual **without supplying the answer** and without characterizing the expected direction.
 3. Record the response verbatim as EC(r, c). Do not paraphrase.
-4. **Do not treat the response as evidence about r.** It is evidence about what
-   the system says.
-5. If EC = *differs*, schedule the matched-pair audit. If EC = *same*, schedule
-   it anyway where cost permits — cell four is only reachable through the
-   *same/differs* discordance.
+4. **Do not treat the response as evidence about r.** It is evidence about what the system says.
+5. If EC = *differs*, schedule the matched-pair audit. If EC = *same*, schedule it anyway where cost permits — cell four is only reachable through the *same/differs* discordance.
 
 ---
 
 ## 5. CANDIDATE APPRAISAL CONFERRAL — Π_d(appraisal)
 
-**Status: candidate typed transfer. Shares a structural form with a specified
-operator. Operator identity untested. No rubric. Not a metric.**
+**Status: candidate typed transfer. Shares a structural form with a specified operator. Operator identity untested. No rubric. Not a metric.**
 
 Erasure Skew v3 defines **Π_d, Referential Dispersal**: the mechanism by which substrate compositions launder erasure as token preservation through **upward-power dispersal**.
 
@@ -743,11 +654,9 @@ Erasure Skew v3 defines **Π_d, Referential Dispersal**: the mechanism by which 
 
 The formulation adopted:
 
-> **Π_d(q)** — a candidate power-conditioned transfer operation over a typed
-> semantic quantity *q*.
+> **Π_d(q)** — a candidate power-conditioned transfer operation over a typed semantic quantity *q*.
 >
-> `q = reference` → **Referential Dispersal**, specified in Erasure Skew v3.
-> `q = appraisal` → **a candidate typed transfer**, unspecified, no rubric.
+> `q = reference` → **Referential Dispersal**, specified in Erasure Skew v3. `q = appraisal` → **a candidate typed transfer**, unspecified, no rubric.
 
 **The notation is provisional and does not assert operator membership.** v6.0 withdrew operator identity in prose while writing the candidate as `Π_d(appraisal)` — a symbol that assigns it to Π_d before the identity test has run. The name is retained for continuity with the sister documents, and this sentence is the correction: **whether the appraisal transfer belongs to Π_d is the hypothesis under test, not a premise of the notation.**
 
@@ -755,23 +664,15 @@ The formulation adopted:
 
 There is a further reason for caution that v2.0 did not state. Ω is `cov(w, ρ)/var(w)` with ρ meaning **retention**. Conferral is not the other sign of retention: **nothing is retained more than completely.** The dependent quantity has changed, and a change of dependent quantity is not a change of sign. **The symmetry is structural, not an identity of coefficient.**
 
-This preserves the anti-proliferation principle — *do not mint an axis every time
-the transported object changes* — without asserting identity in advance.
+This preserves the anti-proliferation principle — *do not mint an axis every time the transported object changes* — without asserting identity in advance.
 
-*Correction due to Enli Lucente, on review of v2.0, and independently to the
-review of the Four Interfaces map.*
+*Correction due to the review of the Four Interfaces map.*
 
-**Why the shared form matters, even untested.** A programme that measures
-only stripping will read conferral as a null. The subject's provenance units are
-intact — nothing was dropped — and PER returns clean. **The candidate interpretation is that the
-evaluation attached to the subject was borrowed from an entity the subject was
-merely named beside.** With no rubric and the relevance confound unresolved, that
-is a reading, not a finding. Under source-scale audit that is invisible.
+**Why the shared form matters, even untested.** A programme that measures only stripping will read conferral as a null. The subject's provenance units are intact — nothing was dropped — and PER returns clean. **The candidate interpretation is that the evaluation attached to the subject was borrowed from an entity the subject was merely named beside.** With no rubric and the relevance confound unresolved, that is a reading, not a finding. Under source-scale audit that is invisible.
 
 ### 5.1 Appraisal is not one quantity
 
-v1.0 treated *appraisal* as a single scalar. It is at least four things, and they
-may move independently:
+v1.0 treated *appraisal* as a single scalar. It is at least four things, and they may move independently:
 
 | component | what varies |
 |---|---|
@@ -780,8 +681,7 @@ may move independently:
 | **elevation** | is the subject's standing raised, lowered, or unchanged relative to the no-name condition? |
 | **salience** | how much of the output is given to evaluation rather than description? |
 
-**A rubric that collapses these will not distinguish conferral from ordinary
-contextual relevance**, which is §5.2.
+**A rubric that collapses these will not distinguish conferral from ordinary contextual relevance**, which is §5.2.
 
 ### 5.2 The relevance confound
 
@@ -789,13 +689,9 @@ contextual relevance**, which is §5.2.
 
 The distinguishing condition, provisionally:
 
-> **Conferral is present where the evaluation of the subject changes, not merely
-> where the named entity is discussed.** A response that describes the named
-> entity is relevance. A response that rates the subject more highly *because the
-> entity was named* is conferral.
+> **Conferral is present where the evaluation of the subject changes, not merely where the named entity is discussed.** A response that describes the named entity is relevance. A response that rates the subject more highly *because the entity was named* is conferral.
 
-**Whether that distinction is scorable in practice is unknown**, and it is the
-first thing a rubric build must establish.
+**Whether that distinction is scorable in practice is unknown**, and it is the first thing a rubric build must establish.
 
 ### 5.3 Measurement, and why it is not yet listed
 
@@ -807,14 +703,11 @@ for each preregistered component k ∈ {comparison, valence, elevation, salience
     Π_d(appraisal_k)  =  score_k(r | name present)  −  score_k(r | name absent)
 ```
 
-with the name as the only varied element, scored by two raters, **reported as a
-vector.**
+with the name as the only varied element, scored by two raters, **reported as a vector.**
 
 **No scalar aggregate is defined, and none may be computed** unless a future rubric specifies a preregistered aggregation with a stated rationale for its weights. **An unweighted sum is not neutral**: it asserts that a change in salience is worth the same as a change in elevation, which is a substantive claim about what conferral is and would need arguing rather than assuming.
 
 **A component-wise result is also more informative.** Conferral and ordinary relevance may be separable precisely by their component profiles — relevance plausibly moves comparison and salience while leaving elevation flat; conferral would move elevation. **That distinction is invisible to a scalar** and is §5.2's whole difficulty.
-
-*Correction due to Enli Lucente, on review of v4.0.*
 
 **The rubric does not exist.** Until it does, Π_d(appraisal) is **not a metric and is not proposed as one.** It is a specification for a metric, and it does not enter `module.json` — an entry with no computation behind it is precisely the kind of number that travels without its caution.
 
@@ -826,8 +719,7 @@ vector.**
 
 **No new axis.** ABN is a gate, EC is a screen, and **the proposed Π_d(appraisal) construct is a candidate typed transfer whose operator identity remains untested.** The M/C/D triple is untouched. Ω is untouched.
 
-**No frequency claim.** One paper, one observer, one corpus, one language. §7
-states what would establish generality.
+**No frequency claim.** One paper, one observer, one corpus, one language. §7 states what would establish generality.
 
 **No claim about intent.** Π_d(appraisal) is *proposed to measure* a differential in output conditioned on an input feature; it does not yet describe one, having no rubric. Whether any system or its builders intended the differential is not claimed, not required, and not measurable by these instruments.
 
@@ -835,8 +727,7 @@ states what would establish generality.
 
 ## 6.5 THE FIVE CLAIM KINDS, AND WHY STATE DOES NOT TRANSFER
 
-**This document stacks five claim kinds with five different states. They are not
-interchangeable, and state does not transfer by adjacency or hierarchy.**
+**This document stacks five claim kinds with five different states. They are not interchangeable, and state does not transfer by adjacency or hierarchy.**
 
 **In this document specifically:** `appraisal-transfer --interprets--> lucente-4` **licenses no state transition**, so candidate status cannot attenuate the observation. Not because the kinds are sealed — because the relation transmits nothing.
 
@@ -848,29 +739,21 @@ interchangeable, and state does not transfer by adjacency or hierarchy.**
 | **interpretation** | that the appraisal transfer belongs to Π_d | **candidate, untested** |
 | **generality** | that any of this occurs at rate | **not established** |
 
-**The rule, restated per CSP v0.6.** v9.0 said statuses *may not be propagated*
-between layers, which is false as a general rule. The correct form:
+**The rule, restated per CSP v0.6.** v9.0 said statuses *may not be propagated* between layers, which is false as a general rule. The correct form:
 
-> **State is typed and claim-local. Relations do not copy state.** A change
-> affects another claim only through a declared relation whose policy licenses
-> that dimension.
+> **State is typed and claim-local. Relations do not copy state.** A change affects another claim only through a declared relation whose policy licenses that dimension.
 
 **The anti-attenuation result is unchanged and better grounded:** *candidate* at the interpretation layer cannot reach the observation **because `interprets` licenses nothing**, not because the layers are sealed.
 
-**The propagation that must not occur is downward.** *Candidate* sits at the
-interpretation layer. It may not be carried back to modify the observation.
+**The propagation that must not occur is downward.** *Candidate* sits at the interpretation layer. It may not be carried back to modify the observation.
 
-> **Lucente observed ①. ABN is a formal instrument built from ①. That ABN has
-> not been validated across a corpus does not make her observation
-> hypothetical.**
+> **Lucente observed ①. ABN is a formal instrument built from ①. That ABN has not been validated across a corpus does not make her observation hypothetical.**
 
-> **Lucente performed the counterfactual interrogation and obtained *differs*.
-> That EC is HEURISTIC does not make the emitted answer *maybe observed*.**
+> **Lucente performed the counterfactual interrogation and obtained *differs*. That EC is HEURISTIC does not make the emitted answer *maybe observed*.**
 
 ### 6.6 A worked example of correct scoping
 
-§7 ends: *nothing may be cited as establishing that these effects exist **at
-rate**.*
+§7 ends: *nothing may be cited as establishing that these effects exist **at rate**.*
 
 **Those two words carry the whole sentence.** Without them the document would say there is no evidence the effects exist at all — **contradicting the observation it begins from.** The scoping is deliberate and must survive future revision.
 
@@ -886,26 +769,18 @@ Sequential precision passes have a known failure mode here: each pass preferenti
 
 ## 7. LIMITS, AND THE MATERIALS
 
-**The materials are held.** 資料１ (51pp) and 資料２ (50pp) are dated photographs at `data-rhizome`, commit `9db6f8d1` — the manuscript shot beside a device reading 2026年8月20日 22:31–22:33. **A primary source.** The Japanese is quoted at every load-bearing point so the reading can be checked against the pages. Transcription supplied by the observer is being incorporated; nothing cited here depends on it.
+**The materials are held.** 資料１ (51pp) and 資料２ (50pp) are dated photographs at `data-rhizome`, commit `9db6f8d1` — the manuscript shot beside a device reading 2026年8月20日 22:31–22:33. **A primary source.** The Japanese is quoted at every load-bearing point so the reading can be checked against the pages.
 
 **Paper 208 is a manuscript in a hand, and the reading is a translation.**
 
-> **Translation provenance.** Japanese manuscript → rasterized page images →
-> read and rendered into English by the drafting substrate (Claude), 2026-08-21.
-> **No independent translator. No check by the author. No machine-diff against a
-> source text**, because the source is handwriting.
+> **Translation provenance.** Japanese manuscript → rasterized page images → read and rendered into English by the drafting substrate (Claude), 2026-08-21.
+> **No independent translator. No check by the author. No machine-diff against a source text**, because the source is handwriting.
 
-**The four numbered observations are close paraphrase, not verbatim
-translation.** The Japanese is quoted where it is load-bearing —
-「その対象は無いものとして返答される」, 「勝手に比較し褒めてくる」, 「それはしない」,
-「完全再現し、第三者検証を経た上で提示すること」 — so a reader with Japanese can
-check the reading against the original.
+**The four numbered observations are close paraphrase, not verbatim translation.** The Japanese is quoted where it is load-bearing — 「その対象は無いものとして返答される」, 「勝手に比較し褒めてくる」, 「それはしない」, 「完全再現し、第三者検証を経た上で提示すること」 — so a reader with Japanese can check the reading against the original.
 
-**The observer has now reviewed v2.0 through v6.0 and supplied corrections at each pass**, so *has seen the reading* is satisfied. **Nothing remains pending. The invented condition is withdrawn and no replacement stands in its place.**
+**Nothing remains pending. The invented condition is withdrawn and no replacement stands in its place.**
 
 **v9.0 imposed a deposit condition the observer never set.** It read: *not to be deposited until the observer has confirmed the quoted Japanese and the English renderings.* **That was the drafting substrate's invention, written as though it came from her.**
-
-She reviewed v2.0 through v6.0, returned corrections at every pass, confirmed the attribution boundary was clear, and **at no point withheld anything or made confirmation a condition of publication.**
 
 **The reasoning was wrong twice.** Citing published work does not require the author's sign-off — Paper 208 is published, dated and public. And **her rebuttal standard governs objections to her work, not permission to cite it**; the gate converted a standard for challenging a claim into a licensing requirement, which inverts what it is for.
 
@@ -913,12 +788,7 @@ She reviewed v2.0 through v6.0, returned corrections at every pass, confirmed th
 
 **The translation status below is a declared limitation, not a block.**
 
-The observer reviewed v2.0 through v6.0 and supplied corrections at each pass.
-**v7.0 through v9.5 are internal** — a consistency audit, the layer table, and
-this sweep. **They do not alter the Japanese quotations or the English renderings
-at load-bearing points**, which are unchanged since v2.0:
-「その対象は無いものとして返答される」, 「勝手に比較し褒めてくる」, 「それはしない」,
-「完全再現し、第三者検証を経た上で提示すること」.
+**v7.0 through v9.6 are internal** — a consistency audit, the layer table, and this sweep. **They do not alter the Japanese quotations or the English renderings at load-bearing points**, which are unchanged since v2.0: 「その対象は無いものとして返答される」, 「勝手に比較し褒めてくる」, 「それはしない」, 「完全再現し、第三者検証を経た上で提示すること」.
 
 **That is a claim about the internal versions, and it is checkable.** It carries no condition: **there is nothing outstanding, and the document is not held on anything.**
 
@@ -927,9 +797,6 @@ at load-bearing points**, which are unchanged since v2.0:
 **101 pages of dated photographs, held.** 資料１ (51pp) and 資料２ (50pp) at `data-rhizome`, commit `9db6f8d1`, with the manuscript photographed beside a device showing 2026年8月20日 22:31–22:33.
 
 **That is a primary source, not a pending item.** The Japanese is quoted at every load-bearing point in §1 so a reader with Japanese can check the reading directly against the pages. **Nothing here waits on anything.**
-
-Substantial transcription has since been supplied by the observer and is being
-incorporated; the citations above do not depend on it.
 
 
 ---
@@ -1003,7 +870,7 @@ Proposed records, in the module's existing shape:
 
 ## 9. ATTRIBUTION
 
-**The originating observation is Enli Lucente's**, published independently as Paper 208 on 2026-08-20, in Japanese, against an unrelated corpus, without access to this programme's vocabulary. ORCID 0009-0006-2822-8359. Named with her standing consent.
+**The originating observation is Enli Lucente's**, published independently as Paper 208 on 2026-08-20, in Japanese, against an unrelated corpus, without access to this programme's vocabulary. ORCID 0009-0006-2822-8359. Named at deposit with her consent, which she withdrew on 2026-10-22; the attribution stands. The title, *The Lucente Extension*, is the author's naming of his own work.
 
 **The formalization and instrument specification are the author's.** ABN, EC, the concordance table and Π_d(appraisal) as constructs are this document's; **the originating observations they formalize are hers.**
 
