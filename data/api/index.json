@@ -67,7 +67,7 @@
       "current_version": "axn/v2",
       "schema_version": "2026-06-22-axn-v2",
       "canonical_path": "/api/axn-protocol.json",
-      "content_sha256": "fd3e988e08494d61f52c12ce3815886a4aa31071af3ce8ae5332963d67e43e91",
+      "content_sha256": "6a26fcb04f7a1c6bc203f61a8d0a4edf66d819ae691cee4c139eb4d0db64785b",
       "governs": "AXN format, AXN_GLYPHS table (256 entries), CLUSTERS table (256 entries), generation algorithm, legacy resolution (v1 → v2), substrate-chosen glyph preservation in glyphic_canary, recognition-vs-identity principle.",
       "depends_on": [],
       "referenced_by": [
@@ -84,7 +84,7 @@
       "canonical_implementations": {
         "python": "scripts/axn_lib.py"
       },
-      "last_updated": "2026-10-13"
+      "last_updated": "2026-10-24"
     },
     "enrichment": {
       "name": "enrichment",
@@ -573,6 +573,13 @@
       "date": "2026-10-13",
       "changes": [
         "Updated protocol 'deposit': Add errata (the per-record errata sidecar) to recommended_deposit_fields: reference, citation, source and count corrections rendered below the full text and served at /data/errata/<n>.json; canonical bytes and AXN unchanged (MPAI Formal Specification v2.0, #1677 §10; MANUS ruling 2026-10-13)."
+      ]
+    },
+    {
+      "index_version": "v1.1",
+      "date": "2026-10-24",
+      "changes": [
+        "Updated protocol 'axn': v2.3: family NON for /non entries only; the /non mint route (non_entries)"
       ]
     }
   ],

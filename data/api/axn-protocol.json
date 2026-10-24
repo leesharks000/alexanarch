@@ -5,7 +5,7 @@
   "protocol_name": "axn",
   "protocol_version": "axn/v2",
   "schema_version": "2026-06-22-axn-v2",
-  "last_updated": "2026-10-13",
+  "last_updated": "2026-10-24",
   "summary": "Canonical specification of the AXN (Alexanarch Identifier) format, generation algorithm, glyph table, cluster table, family enum, validation rules, and legacy resolution. Any code that generates, validates, parses, or resolves AXNs must be derivable from this document. The canonical Python implementation is scripts/axn_lib.py. The canonical JavaScript implementation is embedded in .github/workflows/mint-axn.yml. Both must agree with this protocol.",
   "canonical_implementations": {
     "python": "scripts/axn_lib.py",
@@ -36,8 +36,12 @@
         "HETERONYMIC",
         "MPAI",
         "DATASET",
+        "NON",
         "UNCLASSIFIED"
-      ]
+      ],
+      "scope": {
+        "NON": "The entries of the Negative of the Negative (alexanarch.org/non) only, ruled 2026-10-24: the family is never assigned to a deposit, and a /non entry takes no other family."
+      }
     },
     "emoji": {
       "description": "6-emoji canonical glyph derived from the first 6 bytes of the SHA-256 of the canonical bytes.",
@@ -116,6 +120,14 @@
   ],
   "change_log": [
     {
+      "version": "axn/v2.3",
+      "date": "2026-10-24",
+      "changes": [
+        "Family NON added, scoped to the entries of the Negative of the Negative only (ruled 2026-10-24).",
+        "non_entries added: the /non mint route — position from the shared allocation ledger, version glyph from the row file's bytes, a new version minted at the same position on recomposition with the earlier versions kept in history (the row, with history: ruled 2026-10-24)."
+      ]
+    },
+    {
       "version": "axn/v2.2",
       "date": "2026-10-13",
       "changes": [
@@ -184,5 +196,16 @@
     },
     "surfaces": "A renderer describing one record's AXN reads scripts/axn_derivation.py: where mint_derivation.status is unverified_input_not_retained, the AXN is not called content-derived; the served bytes' SHA-256 and SWHID are given beside it, and JSON-LD carries a SWHID PropertyValue.",
     "unchanged": "AXN format, generation algorithm for new mints, legacy resolution, and the 2026-09-18 redaction rule (a redaction re-derives the AXN and records the prior hash) stand as before. The record_dimensions model is applied to the 2026-06-20 batch; extending it to other records is a separate ruling."
+  },
+  "non_entries": {
+    "since": "axn/v2.3 (2026-10-24)",
+    "what": "An entry of the Negative of the Negative with a composed row takes a position in the one AXN sequence, through its own mint route (scripts/non_axn.py), beside deposits and symbolon witnesses.",
+    "position": "allocated from the shared ledger data/symbolon-registry/allocation.json under its rule, max(registry hex, ledger) + 1; the ledger is advanced past it. The position is the entry's for its lifetime.",
+    "root": "AXN:<hex>.NON — the entry across its compositions (identity_semantics.axn_root).",
+    "version": "AXN:<hex>.NON.<glyph> — one composition of the entry's row; the glyph is derived from the first 6 bytes of sha256 of the row file's bytes (datasets/negative-of-the-negative/v2/rows/<entity>.json). Minted once (identity_semantics.minting_is_once).",
+    "recomposition": "When the row's bytes change (a recomposition, or a landing that replaces the row), a new version is minted at the same position; the earlier version is kept in the entry's history with its hash, date and reason, and keeps resolving. Nothing is re-derived in place.",
+    "ledger": "datasets/negative-of-the-negative/v2/axn.json — one entry per row: position, root, current version, its sha256, and the history of earlier versions. The AXN is not written into the row, whose bytes it is derived from.",
+    "resolution": "/s/axn/<HEX>/ names the entry and its /non page; data/api/axn-index.json carries the position with source non-entry; data/axn-central-registry.json lists it with source non-entry.",
+    "one_kernel_one_position": "a row whose sha256 is already positioned (a deposit's kernel or a symbolon witness) is not minted a second position; the refusal is printed."
   }
 }
