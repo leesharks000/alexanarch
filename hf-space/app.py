@@ -186,7 +186,10 @@ with gr.Blocks(title="Crimson Hexagonal Archive — machine interface") as demo:
     # ZeroGPU's startup check looks for a @spaces.GPU function REGISTERED AS A GRADIO EVENT,
     # not merely defined; wire the no-op to a hidden button so the tier will start the app.
     _gpu_btn = gr.Button("zerogpu", visible=False); _gpu_out = gr.Textbox(visible=False)
-    _gpu_btn.click(zerogpu_declaration, None, _gpu_out)
+    # 2026-10-24: the Hub reported RUNTIME_ERROR "No @spaces.GPU function detected during startup" again, with no
+    # change to this code since 2026-09-05 (a rebuild picks up newer gradio/spaces). The event is now named, so it is
+    # registered in the app's API as well as its event graph; the redeploy rebuilds the container.
+    _gpu_btn.click(zerogpu_declaration, None, _gpu_out, api_name="zerogpu_declaration")
     gr.Markdown("<small>CC BY 4.0 · Lee Sharks · [alexanarch.org](https://alexanarch.org) · [axn-node.json](https://alexanarch.org/.well-known/axn-node.json)</small>")
 
 # ZeroGPU's startup check hooks Gradio's own launch(); so boot through
