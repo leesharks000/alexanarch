@@ -113,6 +113,7 @@ code.cid{color:var(--teal);font-size:.78em;white-space:normal;overflow-wrap:anyw
 .card-date{font-family:var(--mono);font-size:.74em;color:var(--dim)}
 .card-query{font-weight:600;color:var(--accent);font-size:1.15em;margin-bottom:6px;line-height:1.4}
 .card-query a{border:0}
+.card-query{overflow-wrap:anywhere}
 .card-status{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font-size:.78em}
 .pill{display:inline-block;font-family:var(--mono);font-size:.92em;padding:1px 7px;border-radius:9px;background:#e0f2fe;color:#075985;white-space:normal;max-width:100%}
 .pill.warn{background:#fef3c7;color:#92400e} .pill.ok{background:#dcfce7;color:#166534} .pill.dim{background:#f3f4f6;color:#555}
@@ -260,6 +261,9 @@ def claim_li(cid, ko, ledger, reg, FC=None, FS=None):
     """One sourced claim, the same rendering wherever it appears (provenance list, lineage card)."""
     FC = FC if FC is not None else ko["field_claims"]
     FS = FS if FS is not None else ko["field_sources"]
+    if cid not in FC and cid not in ledger:
+        # a claim the row cites and neither ledger holds: recorded on the page, never dropped (2026-10-24)
+        return f'<li><code class="cid">{esc(cid)}</code> <span class="pill warn">unresolved: in neither the field claims nor the archive ledger</span></li>'
     if cid in FC:
         f = FC[cid]
         return (f'<li><code class="cid">{esc(cid)}</code> {esc(FS.get(f["source"], f["source"]))}, {esc(f["locus"])} '
@@ -317,7 +321,91 @@ def lineage_rail(row):
             f'<div class="rail" aria-label="Sources, one card per lineage">{"".join(out)}</div>')
 
 TYPE_KEY = {"A": "the archive coined it", "B": "a rival occupant holds it", "C": "a conventional reading holds it",
-            "I": "the archive's infrastructure", "E": "the archive's own entity"}
+            "I": "the archive's infrastructure", "E": "the archive's own entity", "Op": "an operator, composed as its own object"}
+
+def type_code(t):
+    """The type's code (A, B, C, E, I; Op for an operator SPXI-gnΩsis composes), read from the front of the type as the
+    panel states it; the statement itself is kept whole beside it (2026-10-24: the code is what a filter reads)."""
+    m = re.match(r"\s*(Op|[ABCEI])(?:/(?:[ABCEI]))?(?![a-z])", str(t or ""))
+    return m.group(1) if m else "?"
+
+# ── provenance, identifiers and history (2026-10-24) ──
+AXN_LEDGER = V2 / "axn.json"
+LANDINGS_F = V2 / "landings.json"
+
+def load_axn():
+    return json.loads(AXN_LEDGER.read_text(encoding="utf-8"))["entries"] if AXN_LEDGER.exists() else {}
+
+def load_landings():
+    """The latest landing of each row (scripts/land_non_row.py)."""
+    out = {}
+    if LANDINGS_F.exists():
+        for x in json.loads(LANDINGS_F.read_text(encoding="utf-8"))["landings"]:
+            out[x["row"]] = x
+    return out
+
+def composition_of(r, landing=None):
+    """Who composed the row, and under what, as one block for every row. Read from what the row itself states, never
+    inferred: a session row's composition_v09 and status; a gnosis row's composition_gnosis, its T's provenance, and
+    the landing record. The row file is not changed."""
+    if not r:
+        return None
+    st = r.get("status") or {}
+    cg = r.get("composition_gnosis")
+    if cg:
+        sv = cg.get("service") or {}
+        out = {"composer_class": "gnosis", "composer": f'{sv.get("name", "SPXI-gnΩsis")} {sv.get("version", "")}'.strip(),
+               "service": sv, "protocol": cg.get("protocol"), "mode": cg.get("mode"), "models": cg.get("models"),
+               "archive_release": cg.get("archive_release"), "passes": len(cg.get("passes") or []),
+               "cost_usd": cg.get("cost_usd"), "seconds": cg.get("seconds"),
+               "t_provenance": ((r.get("objects") or {}).get("T") or {}).get("provenance"),
+               "readings": st.get("readings")}
+        if landing:
+            out["landing"] = {"landed": landing.get("landed"), "execution_key": landing.get("execution_key"),
+                              "result_id": landing.get("result_id"), "manifest_sha256": landing.get("manifest_sha256"),
+                              "source": landing.get("source"), "record": f"{BASE}{DS_URL}/landings.json"}
+    else:
+        cv = r.get("composition_v09") or {}
+        out = {"composer_class": "session", "composer": cv.get("composer"),
+               **({} if cv.get("composer") else {"composer_note": "the row does not name its composer"}),
+               "source": cv.get("source")}
+    out.update({"spec": r.get("spec"), "epoch": r.get("epoch"), "procedure": st.get("procedure"), "ledger": st.get("ledger"),
+                "frozen": bool(st.get("frozen")), "composed": bool((r.get("objects") or {}).get("KO")),
+                **({"note": r["objects"]["note"]} if (r.get("objects") or {}).get("note") else {}),
+                **({"breaches": r["breaches"]} if r.get("breaches") else {})})
+    return {k: v for k, v in out.items() if v is not None}
+
+def earlier_rows(k):
+    """Rows an entity had before a landing replaced them, kept by scripts/land_non_row.py under v2/history/<row>/."""
+    d = V2 / "history" / k
+    out = []
+    if d.is_dir():
+        for sub in sorted(d.iterdir(), reverse=True):
+            p = sub / "rows" / f"{k}.json"
+            if p.is_file():
+                rr = json.loads(p.read_text(encoding="utf-8"))
+                out.append({"replaced": sub.name[:10], "epoch": rr.get("epoch"), "sha256": hashlib.sha256(p.read_bytes()).hexdigest(),
+                            "row": f"{BASE}/{p.relative_to(ROOT).as_posix()}", "folder": f"{BASE}/{sub.relative_to(ROOT).as_posix()}/",
+                            "composition": composition_of(rr)})
+    return out
+
+def composition_line(c):
+    """The composition block in one line, for the page."""
+    if not c:
+        return ""
+    if c["composer_class"] == "gnosis":
+        rel = (c.get("archive_release") or {}).get("archive_commit") or ""
+        s = (f'composed by <strong>{esc(c["composer"])}</strong> · {esc(str(c.get("protocol") or ""))} · {esc(str(c.get("mode") or ""))}'
+             + (f' · models {esc(", ".join(f"{k} {v}" for k, v in (c.get("models") or {}).items()))}' if c.get("models") else "")
+             + (f' · archive at <code>{esc(rel[:12])}</code>' if rel else "")
+             + f' · {c.get("passes", 0)} passes')
+        if c.get("landing"):
+            L = c["landing"]
+            s += (f' · landed {esc(str(L.get("landed")))}, execution key <code>{esc(str(L.get("execution_key") or "")[:16])}</code>'
+                  f' (<a href="{DS_URL}/landings.json">landing record</a>)')
+        return s
+    who = esc(c["composer"]) if c.get("composer") else '<span class="meta">composer not named in the row</span>'
+    return f'composed in session · {who}'
 
 def type_label(t):
     """'C (public entity)' → 'type C — a conventional reading holds it (public entity)': the code never appears bare."""
@@ -340,8 +428,13 @@ def t_record(row):
 CASE_LABEL = {"equal": "equal terms, ontology included (v0.9)", "witness": "the archive's ontology rules, the suppressed witness (v0.9)",
               "mixed": "equal terms, the archive ruling its own senses (v0.9)", "archive": "composed in the archive's ontology (v0.8)"}
 
-def spec_no(en):
-    """The specification an entry is composed under: v0.9 (#1690) for a case-read composition, v0.8 (#1671), or v0.7 (#1665)."""
+def spec_no(en, r=None):
+    """The specification an entry is composed under: the row's own spec where it names one (2026-10-24: a row SPXI-gnΩsis
+    composes states it; its panel entry carries no ontology); else v0.9 (#1690) for a case-read composition, v0.8 (#1671),
+    or v0.7 (#1665)."""
+    m = re.search(r"#(\d+)", str((r or {}).get("spec") or ""))
+    if m:
+        return int(m.group(1))
     on = en.get("ontology") or {}
     return 1690 if on.get("composition") in ("equal", "witness", "mixed") else (1671 if on else 1665)
 
@@ -397,8 +490,8 @@ def two_levels(row, key, pk="P", kk="KO", arm="Field and archive (B ∪ A)"):
         if isinstance(e, str):
             src = FS.get(e, e); eh = esc(src)
         else:
-            d = reg[e]; eh = f'#{e} {esc(d["title"][:70])} · {esc(str(d.get("date") or ""))}'
-        others = sorted({dep_label(ledger[c]["dep"]) if c in ledger else FC[c]["source"] for c in ln["claims"]})
+            d = reg.get(e) or {"title": f"#{e}"}; eh = f'#{e} {esc(d["title"][:70])} · {esc(str(d.get("date") or ""))}'
+        others = sorted({dep_label(ledger[c]["dep"]) if c in ledger else FC[c]["source"] if c in FC else f"{c} unresolved" for c in ln["claims"]}, key=str)
         cards.append(f'<details class="lc"><summary><span class="lc-n">{i}</span>{esc(ln["lineage"])}<span class="lc-e">{eh}</span>'
                      f'<span class="lc-c">{len(ln["claims"])} claim{"" if len(ln["claims"]) == 1 else "s"} · {esc(", ".join(others))}</span></summary>'
                      f'<ul class="claims">{"".join(claim_li(c, ko, ledger, reg, FC, FS) for c in ln["claims"])}</ul></details>')
@@ -683,11 +776,10 @@ def main():
             trav[d.name] = {"summary": json.loads((d / "summary.json").read_text(encoding="utf-8")),
                             "reading": json.loads((d / "reading.json").read_text(encoding="utf-8")) if (d / "reading.json").exists() else None}
     REGH, ROWH, TRAVH, REGQ, STATS = {}, {}, {}, {}, {}
+    AX, LANDS = load_axn(), load_landings()
 
-    b = []
-    b.append('<h1>The Negative of the Negative</h1>')
-    b.append('<p class="sub">Public knowledge of an entity, constructed before the addresses at which it is found, and composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
-    b.append('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.9, <a href="/s/records/1690/">#1690</a>, which supersedes <a href="/s/records/1671/">#1671</a>) is being tested, iterated and revised. Under v0.9 the archive\'s sources are admitted on equal terms, ontology included, where the archive extends the field\'s ontology, and the archive\'s ontology rules where it supplies one no other source makes available, by the law of the suppressed witness; each entry\'s case is read from its defining papers, and the entries composed under v0.7 are recomposed one at a time (ruled 2026-10-18), each page showing its v0.7 composition below the current one, labelled; SPXI and Theophrastus stand at v0.8, the cases v0.9\'s law of the suppressed witness calls for (ruled 2026-10-19); the panel below is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on this page is a frozen measurement.</div>')
+    LEDE = ('<p class="sub">Public knowledge of an entity, constructed before the addresses at which it is found, and composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
+    STATUS = ('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.9, <a href="/s/records/1690/">#1690</a>, which supersedes <a href="/s/records/1671/">#1671</a>) is being tested, iterated and revised. Under v0.9 the archive\'s sources are admitted on equal terms, ontology included, where the archive extends the field\'s ontology, and the archive\'s ontology rules where it supplies one no other source makes available, by the law of the suppressed witness; each entry\'s case is read from its defining papers, and the entries composed under v0.7 are recomposed one at a time (ruled 2026-10-18), each page showing its v0.7 composition below the current one, labelled; SPXI and Theophrastus stand at v0.8, the cases v0.9\'s law of the suppressed witness calls for (ruled 2026-10-19); the panel (<a href="/non/panel/">/non/panel/</a>) is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on /non is a frozen measurement.</div>')
     how = ('<div class="objs">'
              '<div class="obj"><b>T</b>the transcript: what the composition layer gave, verbatim, with its source cards</div>'
              '<div class="obj"><b>L(B)</b>the address recomposed from the full texts of the sources the layer itself surfaced</div>'
@@ -760,6 +852,11 @@ def main():
              f'<span class="card-date">epoch {esc(r["epoch"])}</span></div>',
              f'<div class="card-query">{q}</div><div class="card-status">{"".join(pills)}</div>',
              f'<p class="meta" style="margin-bottom:12px">{md_inline(r["status"]["procedure"])}. Ledger: {md_inline(r["status"]["ledger"])}.</p>']
+        if o.get("note") and not ko:
+            c.append(f'<p class="meta" style="margin-bottom:8px"><span class="pill warn">not composed</span> {md_inline(o["note"])}</p>')
+        if r.get("breaches"):
+            c.append(det("", "breaches recorded", "<ul>" + "".join(f'<li><code>{esc(str(b.get("check", "")))}</code> {md_inline(str(b.get("detail", "")))}</li>' for b in r["breaches"]) + "</ul>",
+                         n=f'{len(r["breaches"])}'))
         earlier = []
         if o.get("P") and ko:
             arms, stats = [], []
@@ -804,9 +901,9 @@ def main():
             c.append(knowledge_object(ko, r))
         tclaims = "".join(f"<li>{md_inline(x)}</li>" for x in o["T"]["claims"])
         fld = "".join(f"<li><strong>{esc(f['id'])}</strong> {md_inline(f['card'])} <span class=\"meta\">{esc(f['fetched'])}</span></li>" for f in r["field"])
-        rail = lineage_rail(r)
+        rail = lineage_rail(r) if o.get("L_BA") else ""
         kent = "".join(det(esc(k.get("K", "")), md_inline(str(k.get("claim", ""))) + f' <span class="meta">{md_inline(str(k.get("source", "")))}</span>',
-                           kv({kk: vv for kk, vv in k.items() if kk not in ("K",)}), n=esc(str(k.get("contrast", "")))) for k in r["kernel"])
+                           kv({kk: vv for kk, vv in k.items() if kk not in ("K",)}), n=esc(str(k.get("contrast", "")))) for k in (r.get("kernel") or []))
         c.append('<h3 style="margin-top:18px">The objects</h3><div class="stack">')
         tref = o["T"].get("register")
         tlink = (f'<a href="#reg-{esc(tref["slug"])}">register entry {esc(tref["slug"])}</a> <span class="meta">{esc(tref["obs_id"])}</span> · '
@@ -857,17 +954,23 @@ def main():
                              + (f'<p class="meta"><strong>The procedure, as metadata of this worked example.</strong> {esc(pe.get("status", ""))}</p><ul>'
                                 + "".join(f"<li>{md_inline(x)}</li>" for x in pe.get("steps", [])) + '</ul>' if pe else ""),
                              n=f'{ng["check"]["answered"]} of {ng["check"]["of"]} answered'))
-        c.append(det("L_F(B)" if onto else "L(B)", "recomposed from the disclosed field" + (", in the field's ontology" if onto else ""),
-                     md_block(o["L_B"]["text"]), n=f'{o["L_B"]["words"]} words'))
-        c.append(det("L_A(B ∪ A)" if onto else "L(B ∪ A)",
-                     "the field and the archive composed in the archive's ontology" if onto else "with the archive on equal terms",
-                     md_block(o["L_BA"]["text"]) + rail, n=f'{o["L_BA"]["words"]} words'))
+        if o.get("L_B"):
+            c.append(det("L_F(B)" if onto else "L(B)", "recomposed from the disclosed field" + (", in the field's ontology" if onto else ""),
+                         md_block(o["L_B"]["text"]), n=f'{o["L_B"]["words"]} words'))
+        if o.get("L_BA"):
+            c.append(det("L_A(B ∪ A)" if onto else "L(B ∪ A)",
+                         "the field and the archive composed in the archive's ontology" if onto else "with the archive on equal terms",
+                         md_block(o["L_BA"]["text"]) + rail, n=f'{o["L_BA"]["words"]} words'))
         tl = "L_F(B)" if onto else "L(B)"
         tk = "AIO's ontology at work on its own cards" if onto else "representational"
-        c.append(det("Δ", "the delta", f'<p><strong>T against {tl}</strong> ({tk}): {md_inline(r["delta"]["T_vs_LB"])}</p>'
-                     + (f'<p class="meta">{md_inline(r["delta"]["T_vs_LB_reading"])}</p>' if r["delta"].get("T_vs_LB_reading") else "")
-                     + f'<p><strong>{"L_F(B) against L_A(B ∪ A)" if onto else "L(B) against L(B ∪ A)"}</strong> (the intervention): {md_inline(r["delta"]["LB_vs_LBA"])}</p>'))
-        c.append(det("K", "the prospective kernel <span class=\"meta\">sealed only at freeze</span>", f'<div class="stack">{kent}</div>', n=f'{len(r["kernel"])} entries'))
+        dl = r.get("delta") or {}
+        if dl:
+            c.append(det("Δ", "the delta", (f'<p><strong>T against {tl}</strong> ({tk}): {md_inline(str(dl["T_vs_LB"]))}</p>' if dl.get("T_vs_LB") else "")
+                         + (f'<p class="meta">{md_inline(str(dl["T_vs_LB_reading"]))}</p>' if dl.get("T_vs_LB_reading") else "")
+                         + (f'<p><strong>{"L_F(B) against L_A(B ∪ A)" if onto else "L(B) against L(B ∪ A)"}</strong> (the intervention): {md_inline(str(dl["LB_vs_LBA"]))}</p>' if dl.get("LB_vs_LBA") else "")
+                         + "".join(f'<p><strong>{esc(str(kk))}</strong>: {md_inline(str(vv))}</p>' for kk, vv in dl.items() if kk not in ("T_vs_LB", "T_vs_LB_reading", "LB_vs_LBA"))))
+        if r.get("kernel"):
+            c.append(det("K", "the prospective kernel <span class=\"meta\">sealed only at freeze</span>", f'<div class="stack">{kent}</div>', n=f'{len(r["kernel"])} entries'))
         c.append(CJ.non_block(key))  # the capture join: observations read as concerning this entity (2026-10-14)
         c.append('</div>')
         c.extend(earlier)  # earlier instantiations, below the whole of the current one
@@ -908,7 +1011,7 @@ def main():
     names = ents
     keys = [x["entity"] for x in panel["entities"] if x["entity"] in ROWH or x["entity"] in REGH or x["entity"] in TRAVH]
     keys.sort(key=lambda k: (k not in ROWH, k not in REGH))
-    toc, cards, sm, mentions_all = [], [], [], set()
+    toc, idxrows, sm, mentions_all = [], [], [], set()
     for k in keys:
         en = names[k]
         r = rows.get(k)
@@ -962,7 +1065,17 @@ def main():
         links["address_page"] = addr_url
         links["dataset"] = HF_NON
         links = {kk: vv for kk, vv in links.items() if vv}
-        rec = {"entity": k, "name": en["name"], "type": en["type"], "type_label": type_label(en["type"])}
+        ax = AX.get(k)
+        comp = composition_of(r, LANDS.get(k))
+        hist = earlier_rows(k)
+        rec = {"entity": k, "name": en["name"],
+               "axn": ({"axn": ax["axn"], "root": ax["root"], "hex": ax["hex"], "family": "NON", "row_sha256": ax["sha256"],
+                        "minted": ax["minted"], "resolver": f"{BASE}/s/axn/{ax['hex']}/",
+                        "earlier_versions": ax.get("history") or []} if ax else None),
+               "type": en["type"], "type_code": type_code(en["type"]), "type_label": type_label(en["type"]),
+               "case": _case_of(r), "composition": comp}
+        if hist:
+            rec["earlier_rows"] = hist
         if en.get("type_basis"):
             rec["type_basis"] = en["type_basis"]
         rec.update({"source": en.get("source"), "stage": en.get("stage"), "date": last,
@@ -971,7 +1084,7 @@ def main():
                     "addresses": addr_rows, "counts": counts, "links": links,
                     "row_sha256": hashlib.sha256((V2 / "rows" / f"{k}.json").read_bytes()).hexdigest() if r else None,
                     "record_url": url, "json_url": url + "entity.json",
-                    "spec": f"{BASE}/s/records/{spec_no(en)}/", "creator": "Lee Sharks", "orcid": "0009-0000-1599-0703", "license": "CC BY 4.0"})
+                    "spec": f"{BASE}/s/records/{spec_no(en, r)}/", "creator": "Lee Sharks", "orcid": "0009-0000-1599-0703", "license": "CC BY 4.0"})
         ej = jdump(rec)
         files[f"non/{k}/entity.json"] = ej
 
@@ -988,12 +1101,22 @@ def main():
         if addr_url:
             sub.append(f'<a href="{esc(addr_url[len(BASE):])}">the address page</a>')
         sec = [f'<p style="font-size:.85em;margin:0 0 4px"><a href="/non/">The Negative of the Negative</a> › entity <code>{esc(k)}</code></p>',
-               f'<p class="sub" style="font-size:.85em">One entity of the Negative of the Negative (EA-NEGONT-02, <a href="/s/records/{spec_no(en)}/">#{spec_no(en)}</a>), '
+               f'<p class="sub" style="font-size:.85em">One entity of the Negative of the Negative (EA-NEGONT-02, <a href="/s/records/{spec_no(en, r)}/">#{spec_no(en, r)}</a>), '
                f'cited at <code>{url}</code>. ' + " · ".join(sub) + '.</p>',
                f'<section id="e-{esc(k)}"><h1>{esc(en["name"])}</h1>'
                f'<p class="meta">{esc(onto_line(en))} · sought at {" · ".join("<code>" + esc(x["address"]) + "</code>" for x in addr_rows)}</p>'
                f'<p class="meta">{md_inline(en.get("stage") or "")}</p>']
+        if ax:
+            sec.append(f'<p class="meta">AXN <a href="/s/axn/{esc(ax["hex"])}/"><code>{esc(ax["axn"])}</code></a> · root <code>{esc(ax["root"])}</code>'
+                       + (f' · {len(ax["history"])} earlier version{"" if len(ax["history"]) == 1 else "s"}' if ax.get("history") else "") + '</p>')
+        if comp:
+            sec.append(f'<p class="meta">{composition_line(comp)}</p>')
         sec.append(ROWH[k] if k in ROWH else '<p class="meta" style="margin-top:12px">No knowledge object composed yet.</p>')
+        if hist:
+            hl = "".join(f'<li>until {esc(h["replaced"])} · epoch {esc(str(h["epoch"]))} · {composition_line(h["composition"])} · '
+                         f'<a href="{esc(h["row"][len(BASE):])}">row</a> · <a href="{esc(h["folder"][len(BASE):])}">its files</a> '
+                         f'<span class="meta">sha256 {esc(h["sha256"][:16])}…</span></li>' for h in hist)
+            sec.append(det("", "Earlier rows of this entity", f'<p class="meta">Rows a landing replaced, kept as they stood.</p><ul>{hl}</ul>', n=f'{len(hist)}'))
         if k in REGH:
             sec.append(det("", "Addresses and transcripts", REGH[k], n=f'{REGQ[k]} address{"" if REGQ[k] == 1 else "es"}', open_=k not in ROWH))
         if k in TRAVH:
@@ -1017,8 +1140,8 @@ def main():
             lede = f'{P["title"]} {P["lede"]["text"]}'
         desc = lede or f'{en["name"]}: {type_label(en["type"])}. {en.get("stage") or ""}'
         ld = {"@context": "https://schema.org", "@type": "CreativeWork", "name": f'{en["name"]} — The Negative of the Negative',
-              "url": url, "identifier": f"non:{k}", "dateModified": last, "description": desc[:600], "creator": CREATOR, "license": LICENSE,
-              "creativeWorkStatus": "working; not frozen", "isBasedOn": f"{BASE}/s/records/{spec_no(en)}/",
+              "url": url, "identifier": ([f"non:{k}", {"@type": "PropertyValue", "propertyID": "AXN", "value": ax["axn"], "url": f"{BASE}/s/axn/{ax['hex']}/"}] if ax else f"non:{k}"), "dateModified": last, "description": desc[:600], "creator": CREATOR, "license": LICENSE,
+              "creativeWorkStatus": "working; not frozen", "isBasedOn": f"{BASE}/s/records/{spec_no(en, r)}/",
               "isPartOf": {"@type": "Dataset", "name": "The Negative of the Negative (EA-NEGONT-02)", "url": f"{BASE}/non/", "version": reg.get("version"),
                            "description": NON_DESC, "creator": CREATOR, "license": LICENSE},
               "encoding": {"@type": "MediaObject", "encodingFormat": "application/json", "contentUrl": url + "entity.json"}}
@@ -1030,7 +1153,8 @@ def main():
                 f'<meta name="citation_public_url" content="{url}">\n')
         files[f"non/{k}/index.html"] = npage(f'{en["name"]} — The Negative of the Negative — Alexanarch', desc[:300], body, url, ld, head, OPEN_JS)
 
-        toc.append({"entity": k, "name": en["name"], "type": en["type"], "stage": en.get("stage"),
+        toc.append({"entity": k, "name": en["name"], "axn": ax["axn"] if ax else None, "type": en["type"], "type_code": type_code(en["type"]),
+                    "case": _case_of(r), "composer_class": (comp or {}).get("composer_class"), "stage": en.get("stage"),
                     "addresses": [x["address"] for x in addr_rows], "has_ko": bool(ko), "ko_sentences": counts["ko_sentences"],
                     "p_words": counts["p_words"], "n_register": len(regs), "traversal_counts": counts["traversal"],
                     "date": last, "record_url": url, "json_url": url + "entity.json", "address_url": addr_url,
@@ -1038,51 +1162,114 @@ def main():
         # 2026-10-15: the page date — a confirmed join ("Observations of this entity") changes the page
         sm.append(f"  <url><loc>{url}</loc><lastmod>{CJ.page_date(last, CJ.non_date(k))}</lastmod></url>")
 
-        # the card on /non/
-        if P:
-            summ = P["lede"]["text"]
-            summ = summ if len(summ) <= 240 else summ[:240].rsplit(" ", 1)[0] + "…"
-            summ = f'<b>{esc(P["title"])}</b> {esc(summ)}'
-        elif t:
-            cn = t["summary"]["counts"]
-            summ = (f'No knowledge object composed yet. The archive\'s bearing found by string: D {cn["D_deposits"]}, R {cn["R_deposits"]}, '
-                    f'O {cn["O_deposits"]} deposits; ' + ("read." if rd else "unread."))
-        else:
-            summ = "No knowledge object composed yet; the address is seated in the register."
-        cp = ['<span class="pill warn">not frozen</span>'] if r else []
-        if ko:
-            cp.append(f'<span class="pill ok">knowledge object · {len(ko["sentences"])} sentences</span>')
-        if regs:
-            cp.append(f'<span class="pill dim">{len(regs)} seated address{"" if len(regs) == 1 else "es"}</span>')
-        if t:
-            cp.append('<span class="pill">archive bearing read</span>' if rd else '<span class="pill dim">archive bearing unread</span>')
-        al = " · ".join(f'<code>{esc(x["address"])}</code>' for x in addr_rows)
-        cards.append(f'<div class="card" id="c-{esc(k)}"><div class="card-head"><span class="card-section">{esc(onto_line(en))}</span>'
-                     f'<span class="card-date">{esc(str(last))}</span></div>'
-                     f'<div class="card-query"><a href="/non/{esc(k)}/">{esc(en["name"])}</a></div><div class="card-status">{"".join(cp)}</div>'
-                     f'<p class="pop-lede" style="font-size:.95em;margin-bottom:6px">{summ}</p>'
-                     + (t_record(r) if r and r.get("ontology") else "")
-                     + f''
-                     f'<p class="meta">sought at {al}</p><p class="meta">{md_inline(en.get("stage") or "")}</p>'
-                     f'<div class="card-links"><a href="/non/{esc(k)}/">Read the entry</a><a href="/non/{esc(k)}/entity.json">entity json</a>'
-                     + (f'<a href="{DS_URL}/rows/{esc(k)}.json">row json</a>' if r else "")
-                     + (f'<a href="{esc(addr_url[len(BASE):])}">address page</a>' if addr_url else "") + '</div></div>')
+        # the entry's row on /non/ (2026-10-24: one compact row per entity, alphabetical, searchable)
+        idxrows.append({"k": k, "name": en["name"], "ax": ax, "type": en["type"], "code": type_code(en["type"]), "case": _case_of(r),
+                        "comp": (comp or {}).get("composer_class") or "none", "composer": (comp or {}).get("composer"), "date": str(last or ""),
+                        "n": counts["ko_sentences"], "addrs": [x["address"] for x in addr_rows], "line": _entry_line(r) if r else "",
+                        "title": ((((r or {}).get("objects") or {}).get("P") or {}).get("title") or ""),
+                        "composed": bool(ko)})
 
-    # ── the index: the table of contents as a page ──
+    # ── the index (2026-10-24: one status line; one compact row per entity, alphabetical, searchable; the status
+    #    and procedure, the register and the panel each on a page of their own) ──
     built_on = f'register v{esc(str(reg.get("version")))}, {esc(str(reg.get("date")))}'
-    b.append('<p class="sub" style="font-size:.85em">Each entity has its own page, which is its citation, and its record as data beside it: '
-             f'<code>{BASE}/non/{{entity}}/</code> and <code>…/entity.json</code>. The table of contents as data: <a href="/non/index.json">/non/index.json</a>. The same work as a dataset, table by table: <a href="' + HF_NON + '">leesharks/negative-of-the-negative</a> on the Hugging Face Hub.</p>')
-    b.append('<p style="font-size:.88em;margin:6px 0 12px">Index of the entries: <a href="/non/by/">by type, case and month</a> — smaller pages, each row with its entity, its addresses, its case and its entry in one line; <a href="/non/by/#addresses">every address in the register</a>.</p>')
-    b.append('<nav class="jump">' + "".join(f'<a href="/non/{esc(k)}/">{esc(names[k]["name"])}</a>' for k in keys)
-             + '<a href="#register">register</a><a href="#panel">panel</a><a href="#procedure">procedure and data</a></nav>')
-    b.append(HOW)
-    b.append('<dl class="legend" style="font-size:.85em;margin:8px 0 12px"><dt style="font-weight:600">Entity types (spec §1.2)</dt>'
-             '<dd><b>A</b> the archive coined the concept; the default at it is empty</dd>'
-             '<dd><b>B</b> a rival occupant holds it</dd>'
-             '<dd><b>C</b> a conventional reading holds it; a public entity (a work, a person, a concept of general knowledge) on which the archive bears</dd>'
-             '<dd><b>I</b> a function of the archive\'s infrastructure</dd>'
-             '<dd><b>E</b> the entity: the archive, its author and heteronyms, its works, its mantles</dd></dl>')
-    b.append(f'<h2 id="entities">The entities — {len(keys)} with a page</h2>' + "".join(cards))
+    CASE_SHORT = {"equal": "equal terms", "mixed": "mixed", "witness": "suppressed witness", "archive": "archive's ontology (v0.8)",
+                  "v0.7": "v0.7, awaiting recomposition", "none": "not composed"}
+    COMP_SHORT = {"session": "session", "gnosis": "SPXI-gnΩsis", "none": "not composed"}
+    sortkey = lambda s: re.sub(r"^[\W_]+", "", re.sub(r"^(the|a|an)\s+", "", s.lower().strip())).strip()
+    idxrows.sort(key=lambda x: (sortkey(x["name"]), x["k"]))
+    def facet(rows_, key, label, names):
+        vals = sorted({x[key] for x in rows_}, key=lambda v: (v == "none", v))
+        return (f'<label class="fl"><span>{label}</span><select data-f="{key}"><option value="">all</option>'
+                + "".join(f'<option value="{esc(v)}">{esc(names.get(v, v))} ({sum(1 for x in rows_ if x[key] == v)})</option>' for v in vals)
+                + '</select></label>')
+    er = []
+    for x in idxrows:
+        ax = x["ax"]
+        s = " ".join([x["name"], x["k"], *(x["addrs"]), ax["axn"] if ax else "", ax["root"] if ax else "", x["type"], x["line"]]).lower()
+        line = x["line"] if len(x["line"]) <= 200 else x["line"][:200].rsplit(" ", 1)[0] + "…"
+        er.append(f'<li class="er" id="c-{esc(x["k"])}" data-s="{esc(s)}" data-code="{esc(x["code"])}" data-case="{esc(x["case"])}" '
+                  f'data-comp="{esc(x["comp"])}" data-date="{esc(x["date"])}" data-name="{esc(sortkey(x["name"]))}">'
+                  f'<div class="er-h"><a class="er-n" href="/non/{esc(x["k"])}/">{esc(x["name"])}</a>'
+                  + (f'<a class="er-x" href="/s/axn/{esc(ax["hex"])}/" title="{esc(ax["axn"])}">{esc(ax["axn"])}</a>' if ax else '<span class="er-x">no row, no AXN</span>')
+                  + '</div><div class="er-m">'
+                  f'<span title="{esc(x["type"])}">type {esc(x["code"])}</span><span>{esc(CASE_SHORT.get(x["case"], x["case"]))}</span>'
+                  + (f'<span>{esc(COMP_SHORT.get(x["comp"], x["comp"]))}</span>' if x["comp"] != "none" else "") + f'<span>{esc(x["date"])}</span>'
+                  + (f'<span>{x["n"]} sentences</span>' if x["n"] else "")
+                  + '</div>' + (f'<p class="er-d">' + (f'<b>{esc(x["title"])}</b> ' if x["title"] else "") + f'{md_inline(line)}</p>' if line else "")
+                  + f'<p class="er-a">sought at {" · ".join("<code>" + esc(a_) + "</code>" for a_ in x["addrs"])}</p></li>')
+    SEARCH_JS = ('<script>(function(){var q=document.getElementById("nq"),L=document.getElementById("nl"),C=document.getElementById("nc"),'
+                 'S=document.querySelectorAll("select[data-f]"),O=document.getElementById("ns"),E=[].slice.call(L.children);'
+                 'function run(){var t=(q.value||"").toLowerCase().trim().split(/\\s+/).filter(Boolean),f={},n=0;'
+                 'S.forEach(function(s){if(s.value)f[s.dataset.f]=s.value});'
+                 'E.forEach(function(e){var ok=t.every(function(w){return e.dataset.s.indexOf(w)>=0});'
+                 'for(var k in f){if(e.dataset[k]!==f[k])ok=false}e.hidden=!ok;if(ok)n++});'
+                 'C.textContent=n+" of "+E.length;}'
+                 'function sort(){var by=O.value;E.sort(function(a,b){return by==="date"?(b.dataset.date.localeCompare(a.dataset.date)||a.dataset.name.localeCompare(b.dataset.name)):a.dataset.name.localeCompare(b.dataset.name)});'
+                 'E.forEach(function(e){L.appendChild(e)})}'
+                 'try{var u=new URLSearchParams(location.search);if(u.get("q"))q.value=u.get("q");S.forEach(function(s){var v=u.get(s.dataset.f==="code"?"type":s.dataset.f);if(v)s.value=v})}catch(e){}'
+                 'q.addEventListener("input",run);S.forEach(function(s){s.addEventListener("change",run)});O.addEventListener("change",function(){sort();run()});run();'
+                 '})();</script>\n')
+    ICSS = ('<style>.statusline{font-size:.86em;color:#78350f;background:#fef3c7;border-left:4px solid #d97706;border-radius:6px;padding:7px 12px;margin:10px 0 14px}'
+            '.statusline a{color:#78350f}.dl{font-size:.84em;color:var(--dim);margin:0 0 14px}'
+            '.find{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:flex-end;margin:6px 0 10px}'
+            '.find input{flex:1 1 220px;min-width:0;font:inherit;font-size:.95em;padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--surface)}'
+            '.fl{display:flex;flex-direction:column;font-family:var(--mono);font-size:.7em;color:var(--dim);gap:2px}'
+            '.fl select{font:inherit;font-size:1.1em;padding:5px 6px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--fg);max-width:44vw}'
+            '#nc{font-family:var(--mono);font-size:.74em;color:var(--dim);margin-left:auto}'
+            'ul.erl{list-style:none;margin:0}.er{padding:10px 0;border-bottom:1px solid var(--border)}.er[hidden]{display:none}'
+            '.er-h{display:flex;flex-wrap:wrap;gap:2px 12px;align-items:baseline}.er-n{font-weight:600;border:0;font-size:1.02em}'
+            '.er-x{font-family:var(--mono);font-size:.74em;color:var(--teal);border:0;overflow-wrap:anywhere}'
+            '.er-m{display:flex;flex-wrap:wrap;gap:2px 10px;font-family:var(--mono);font-size:.72em;color:var(--dim);margin-top:2px}'
+            '.er-d{font-size:.86em;color:#444;margin:4px 0 0}.er-a{font-size:.78em;color:var(--dim);margin:2px 0 0}</style>\n')
+    b = ['<h1>The Negative of the Negative</h1>', LEDE,
+         '<p class="statusline"><strong>Working, not frozen.</strong> Composed under EA-NEGONT-02 v0.9 (<a href="/s/records/1690/">#1690</a>), '
+         'which is being tested, iterated and revised. <a href="/non/about/">Status, method and procedure</a>.</p>',
+         f'<p class="dl">{len(idxrows)} entries, {sum(1 for x in idxrows if x["ax"])} with an AXN (family NON). '
+         'As data: <a href="/non/index.json">index.json</a> (one row per entry) · <a href="/non/claims.json">claims.json</a> (every field claim quoted, by row) · '
+         f'each entry\'s <code>/non/{{entity}}/entity.json</code> · <a href="{HF_NON}">the dataset on the Hub</a>. '
+         'Also: <a href="/non/by/">by type, case and month</a> · <a href="/non/register/">the register</a> (every address and transcript) · '
+         '<a href="/non/panel/">the panel</a> (the working list).</p>',
+         '<div class="find" role="search"><input id="nq" type="search" placeholder="Search names, addresses, AXNs" aria-label="Search the entries">'
+         + facet(idxrows, "code", "type", {k_: f"{k_}" for k_ in TYPE_KEY})
+         + facet(idxrows, "case", "case", CASE_SHORT) + facet(idxrows, "comp", "composed by", COMP_SHORT)
+         + '<label class="fl"><span>order</span><select id="ns"><option value="name">A–Z</option><option value="date">newest</option></select></label>'
+         + '<span id="nc" aria-live="polite"></span></div>',
+         f'<ul class="erl" id="nl">{"".join(er)}</ul>',
+         f'<p class="foot">Lee Sharks · Crimson Hexagonal Archive · {built_on}. The surface is single: /non is not mirrored. '
+         'Built by <a href="/scripts/build_non.py">scripts/build_non.py</a>; it writes nothing back.</p>']
+
+    # the status, method and procedure
+    LEGEND = ('<dl class="legend" style="font-size:.88em;margin:8px 0 12px"><dt style="font-weight:600">Entity types (spec §1.2)</dt>'
+              '<dd><b>A</b> the archive coined the concept; the default at it is empty</dd>'
+              '<dd><b>B</b> a rival occupant holds it</dd>'
+              '<dd><b>C</b> a conventional reading holds it; a public entity (a work, a person, a concept of general knowledge) on which the archive bears</dd>'
+              '<dd><b>I</b> a function of the archive\'s infrastructure</dd>'
+              '<dd><b>E</b> the entity: the archive, its author and heteronyms, its works, its mantles</dd>'
+              '<dd><b>Op</b> an operator: the operation an entity form conceals, composed as its own object (SPXI-gnΩsis)</dd></dl>'
+              '<p class="meta">Each entry\'s type is kept as the panel states it; the code is read from its front.</p>')
+    PROC = ('<h2 id="procedure">Procedure and data</h2><ul>'
+            '<li>Specification: <a href="/s/records/1690/">#1690</a> (EA-NEGONT-02 v0.9, 2026-10-18), superseding <a href="/s/records/1671/">#1671</a> (v0.8, 2026-10-08), <a href="/s/records/1665/">#1665</a> (v0.7, 2026-10-05) and <a href="/s/records/1664/">#1664</a> (v0.6, 2026-10-04)</li>'
+            f'<li>Traversal tool: <a href="/scripts/non_traverse.py">scripts/non_traverse.py</a> · configurations: <a href="{DS_URL}/panel/configs/">v2/panel/configs/</a></li>'
+            f'<li>Panel: <a href="{DS_URL}/panel/panel.json">panel.json</a> · v1 rows: <a href="/datasets/negative-of-the-negative/rows.json">rows.json</a></li>'
+            f'<li>Composition: every entry\'s <code>composition</code> block (in its entity.json) states who composed its row — in session, or SPXI-gnΩsis — and under what. '
+            f'Rows SPXI-gnΩsis composes land by <a href="/scripts/land_non_row.py">scripts/land_non_row.py</a>, each landing recorded in <a href="{DS_URL}/landings.json">landings.json</a>; '
+            'a row a landing replaces is kept, and listed on its entry\'s page.</li>'
+            f'<li>Identifiers: each entry with a row has an AXN in the family NON (axn/v2.3, <a href="/api/axn-protocol.json">the protocol</a>, non_entries), minted by '
+            f'<a href="/scripts/non_axn.py">scripts/non_axn.py</a> into <a href="{DS_URL}/axn.json">axn.json</a>: its root is the entry across its compositions, and each composition of the row is a version.</li>'
+            '<li>Table of contents: <a href="/non/index.json">/non/index.json</a> · field claims: <a href="/non/claims.json">/non/claims.json</a> · entity pages: <a href="/sitemap-non.xml">sitemap-non.xml</a></li>'
+            '<li>These pages are built by <a href="/scripts/build_non.py">scripts/build_non.py</a> from those files; it writes nothing back.</li></ul>')
+    crumbs = lambda here: f'<p class="meta" style="margin-bottom:8px"><a href="/non/">/non</a> › {esc(here)}</p>'
+    def subpage(path, title, desc, body, ld_type="WebPage"):
+        url = f"{BASE}/{path[:-10]}"
+        jl = {"@context": "https://schema.org", "@type": ld_type, "name": title, "url": url, "description": desc,
+              "isPartOf": {"@type": "Dataset", "name": "The Negative of the Negative", "url": f"{BASE}/non/"}}
+        files[path] = npage(title + " — Alexanarch", desc, body, url, jl, f'<link rel="canonical" href="{url}">\n<style>.regt td{{overflow-wrap:normal;word-break:normal}}</style>\n')
+        sm.append(f"  <url><loc>{url}</loc></url>")
+    subpage("non/about/index.html", "The Negative of the Negative — status, method and procedure",
+            "The status of the Negative of the Negative, how an entity reads, its entity types, and its procedure and data.",
+            crumbs("status, method and procedure") + '<h1>Status, method and procedure</h1>' + LEDE + STATUS
+            + '<h2>How an entity reads</h2>' + how + '<h2>Entity types</h2>' + LEGEND + PROC
+            + f'<p class="foot">Lee Sharks · Crimson Hexagonal Archive · {built_on}.</p>')
     if regp.exists():
         trs = []
         for ek in [x["entity"] for x in panel["entities"] if x["entity"] in groups] + [k for k in groups if k not in ents]:
@@ -1093,18 +1280,18 @@ def main():
                            f'<td><a href="{dest}">{esc(e["q"])}</a><br><span class="meta" style="white-space:nowrap">{esc(", ".join(e["dates"]))}</span></td>'
                            f'<td>{esc(e["surface"])}<br><span class="meta">{esc(e["auth"])}</span></td>'
                            f'<td>{"present" if e["archive_present"] else "absent"}<span class="meta">{esc(cards_)}</span></td></tr>')
-        b.append('<h2 style="margin-top:32px">The register</h2>' + REGHEAD
-                 + '<div class="tw"><table class="regt"><thead><tr><th>entity</th><th>address · date</th><th>surface · signed</th><th>archive · cards</th></tr></thead>'
-                 + f'<tbody>{"".join(trs)}</tbody></table></div>'
-                 + f'<p class="meta">Each address opens on its entity\'s page, transcript and source cards with it. '
-                 f'<a href="{DS_URL}/register.json">register json</a> · <a href="{DS_URL}/register.schema.json">schema</a> · <a href="/scripts/non_intake.py">intake</a></p>')
-    # panel: one entry per entity, its addresses under it (keyed entity before address, ruled 2026-10-07)
-    b.append(f'<h2 id="panel">The panel — {esc(panel["status"])}</h2><p class="sub">{esc(panel["keying"])} {esc(panel["rule"])}</p>')
+        subpage("non/register/index.html", "The Negative of the Negative — the register",
+                f"Every address of the Negative of the Negative: {reg.get('address_count')} addresses, {reg.get('observation_count')} observations.",
+                crumbs("the register") + '<h1>The register</h1>' + REGHEAD
+                + '<div class="tw"><table class="regt"><thead><tr><th>entity</th><th>address · date</th><th>surface · signed</th><th>archive · cards</th></tr></thead>'
+                + f'<tbody>{"".join(trs)}</tbody></table></div>'
+                + f'<p class="meta">Each address opens on its entity\'s page, transcript and source cards with it. '
+                f'<a href="{DS_URL}/register.json">register json</a> · <a href="{DS_URL}/register.schema.json">schema</a> · <a href="/scripts/non_intake.py">intake</a></p>', "CollectionPage")
     seen = {}
     for e in reg["entries"]:
         seen.setdefault(e["entity"], set()).add(e["q"])
     pl = []
-    for pr in panel["entities"]:
+    for pr in sorted(panel["entities"], key=lambda x: sortkey(x["name"])):
         al = []
         for ad in pr["addresses"]:
             href = address_href(pr["entity"], ad["address"])
@@ -1112,21 +1299,23 @@ def main():
             al.append(f'<code>{nm}</code>' + (' <span class="pill ok">observed</span>' if ad["address"] in seen.get(pr["entity"], ()) else ""))
         done = pr["entity"] in rows
         nm = f'<a href="/non/{esc(pr["entity"])}/">{esc(pr["name"])}</a>' if pr["entity"] in keys else esc(pr["name"])
-        pl.append(f'<li><strong>{nm}</strong><span class="pill dim">{esc(type_label(pr["type"]))}</span><span class="pill dim">{esc(pr["source"])}</span>'
-                  + ('<span class="pill ok">composed</span>' if done else "") + f'<span class="stage">addresses: {" · ".join(al)}</span>'
+        pl.append(f'<li id="p-{esc(pr["entity"])}"><strong>{nm}</strong><span class="pill dim">{esc(type_label(pr["type"]))}</span><span class="pill dim">{esc(pr["source"])}</span>'
+                  + ('<span class="pill ok">composed</span>' if done else '<span class="pill warn">listed, not composed</span>') + f'<span class="stage">addresses: {" · ".join(al)}</span>'
                   + f'<span class="stage">{md_inline(pr["stage"])}</span></li>')
-    b.append(det("", "All entities", f'<ul class="plist">{"".join(pl)}</ul>', n=f'{len(panel["entities"])} entities'))
-    b.append('<h2 id="procedure">Procedure and data</h2><ul>'
-             '<li>Specification: <a href="/s/records/1690/">#1690</a> (EA-NEGONT-02 v0.9, 2026-10-18), superseding <a href="/s/records/1671/">#1671</a> (v0.8, 2026-10-08), <a href="/s/records/1665/">#1665</a> (v0.7, 2026-10-05) and <a href="/s/records/1664/">#1664</a> (v0.6, 2026-10-04)</li>'
-             f'<li>Traversal tool: <a href="/scripts/non_traverse.py">scripts/non_traverse.py</a> · configurations: <a href="{DS_URL}/panel/configs/">v2/panel/configs/</a></li>'
-             f'<li>Panel: <a href="{DS_URL}/panel/panel.json">panel.json</a> · v1 rows: <a href="/datasets/negative-of-the-negative/rows.json">rows.json</a></li>'
-             '<li>Table of contents: <a href="/non/index.json">/non/index.json</a> · entity pages: <a href="/sitemap-non.xml">sitemap-non.xml</a></li>'
-             '<li>These pages are built by <a href="/scripts/build_non.py">scripts/build_non.py</a> from those files; it writes nothing back.</li></ul>')
-    b.append(f'<p class="foot">Lee Sharks · Crimson Hexagonal Archive · {built_on}. The surface is single: /non is not mirrored.</p>')
+    n_done = sum(1 for pr in panel["entities"] if pr["entity"] in rows)
+    subpage("non/panel/index.html", "The Negative of the Negative — the panel",
+            f"The working panel of the Negative of the Negative: {len(panel['entities'])} entities, {n_done} composed.",
+            crumbs("the panel") + f'<h1>The panel — {esc(panel["status"])}</h1>'
+            + f'<p class="sub">{len(panel["entities"])} entities, {n_done} composed, {len(panel["entities"]) - n_done} listed and not yet composed; alphabetical. '
+            f'{esc(panel["keying"])} {esc(panel["rule"])}</p><ul class="plist">{"".join(pl)}</ul>'
+            + f'<p class="meta"><a href="{DS_URL}/panel/panel.json">panel.json</a></p>', "CollectionPage")
 
-    # old anchors (/non/#e-k, #row-k, #ent-k, #trav-k, #reg-slug, #lv-k, #k-ksN …) land on the entity's page
+    # old anchors (/non/#e-k, #row-k, #ent-k, #trav-k, #reg-slug, #lv-k, #k-ksN …) land on the entity's page;
+    # #register, #panel and #procedure land on the pages that now hold them
     regmap = {e["slug"]: e["entity"] for e in reg["entries"] if e["entity"] in keys}
     redirect = ('<script>(function(){var h=decodeURIComponent(location.hash.slice(1));if(!h||document.getElementById(h))return;'
+                'var P={"register":"/non/register/","panel":"/non/panel/","procedure":"/non/about/#procedure","entities":"/non/"};'
+                'if(P[h]){if(P[h]!=="/non/")location.replace(P[h]);return}'
                 f'var K={json.dumps(sorted(keys, key=lambda x: (-len(x), x)))},R={json.dumps(regmap, sort_keys=True)};var k=null;'
                 'if(h.indexOf("reg-")===0)k=R[h.slice(4)]||null;'
                 'if(!k){var r=h.replace(/^(e|row|ent|trav|lv)-/,"");for(var i=0;i<K.length;i++){if(r===K[i]||r.indexOf(K[i]+"-")===0){k=K[i];break}}}'
@@ -1134,15 +1323,38 @@ def main():
     jsonld = {"@context": "https://schema.org", "@type": "Dataset", "name": "The Negative of the Negative (v2, compositional)",
               "url": f"{BASE}/non/", "description": NON_DESC, "creator": CREATOR, "license": LICENSE, "creativeWorkStatus": "working; procedure not frozen",
               "isBasedOn": f"{BASE}/s/records/1690/", "version": reg.get("version"), "dateModified": reg.get("date"),
-              "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{BASE}/non/index.json"},
-              "mentions": [{"@type": "CreativeWork", "name": x["name"], "url": x["record_url"]} for x in toc]}
+              "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{BASE}/non/index.json"},
+                               {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{BASE}/non/claims.json"}],
+              "hasPart": [{"@type": "CreativeWork", "name": x["name"], "url": x["record_url"],
+                           **({"identifier": {"@type": "PropertyValue", "propertyID": "AXN", "value": x["axn"]}} if x.get("axn") else {})} for x in toc]}
     ihead = (f'<link rel="canonical" href="{BASE}/non/">\n<link rel="cite-as" href="{BASE}/non/">\n'
              f'<link rel="describedby" href="{BASE}/non/index.json" type="application/json">\n'
              f'<meta name="citation_title" content="The Negative of the Negative"><meta name="citation_date" content="{esc(str(reg.get("date")))}">'
-             f'<meta name="citation_public_url" content="{BASE}/non/">\n<style>.regt td{{overflow-wrap:normal;word-break:normal}}</style>\n' + redirect)
+             f'<meta name="citation_public_url" content="{BASE}/non/">\n' + ICSS + redirect)
     files["non/index.html"] = npage("The Negative of the Negative — /non — Alexanarch",
                                     "Public knowledge composed three ways at one address, with the archive admitted on equal terms; working, not frozen.",
-                                    "\n".join(b), f"{BASE}/non/", jsonld, ihead)
+                                    "\n".join(b), f"{BASE}/non/", jsonld, ihead, SEARCH_JS)
+
+    # every field claim quoted, by row: what a sentence-level reader (SPXI-gnΩsis) matches a sentence against
+    cl = []
+    for k_ in sorted(rows):
+        r_ = rows[k_]
+        fc = {**(r_.get("field_claims") or {}), **(((r_.get("objects") or {}).get("KO") or {}).get("field_claims") or {})}
+        fs = {**(r_.get("field_sources") or {}), **(((r_.get("objects") or {}).get("KO") or {}).get("field_sources") or {})}
+        for cid in sorted(fc, key=lambda s: (len(s), s)):
+            f = fc[cid]
+            q = unquote(f.get("quote") or "")
+            if not q:
+                continue
+            cl.append({"row": k_, "id": cid, "quote": q, "source": f.get("source"), "source_label": fs.get(f.get("source")),
+                       "locus": f.get("locus"), "url": f"{BASE}/non/{k_}/"})
+    files["non/claims.json"] = jdump({
+        "id": "EA-NEGONT-02-NON-CLAIMS", "title": "The Negative of the Negative — every field claim quoted, by row",
+        "canonical": f"{BASE}/non/claims.json", "date": reg.get("date"),
+        "statement": ("Every field claim of every /non row with its quote as the row holds it, unquoted: a sentence-level reader matches a "
+                      "sentence against these to name the row that already holds it. The row and its ledgers are the authority; this is their index."),
+        "rows": {k_: {"axn": (AX.get(k_) or {}).get("axn"), "row_sha256": hashlib.sha256((V2 / "rows" / f"{k_}.json").read_bytes()).hexdigest()} for k_ in sorted(rows)},
+        "count": len(cl), "claims": cl})
     files["non/index.json"] = jdump({
         "id": "EA-NEGONT-02-NON", "title": "The Negative of the Negative — table of contents",
         "canonical": f"{BASE}/non/", "version": reg.get("version"), "date": reg.get("date"),
