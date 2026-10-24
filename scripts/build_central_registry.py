@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Central AXN registry: one index across every route a kernel can enter the
-sequence — formal deposits, symbolon witnessings, and (future) mandala-book
+sequence — formal deposits, symbolon witnessings, /non entries (axn/v2.3), and (future) mandala-book
 and petition mints. Position-keyed and kernel-keyed. Regenerate after any
 mint or witnessing; the witness endpoint's entries are read directly.
 
@@ -85,6 +85,18 @@ if sdir.is_dir():
         if t.get("axn0", {}).get("sha256"): kernels[t["axn0"]["sha256"]] = {"role": "axn0", **e}
         if t.get("axn1", {}).get("sha256"): kernels[t["axn1"]["sha256"]] = {"role": "axn1_stamped_form", **e}
 
+# the /non mint route (axn/v2.3 non_entries, 2026-10-24): one position per composed /non row, family NON
+n_non = 0
+nl = ROOT/"datasets/negative-of-the-negative/v2/axn.json"
+if nl.exists():
+    for k, x in sorted(json.loads(nl.read_text(encoding="utf-8"))["entries"].items()):
+        e = {"axn": x["axn"], "root": x["root"], "source": "non-entry", "entity": k, "family": "NON",
+             "record": x["page"], "row": x["row"], "sha256": x["sha256"], "status": "composed, not frozen",
+             "minted": x["minted"], "versions": 1 + len(x.get("history") or [])}
+        claim(norm(x["hex"]), e); n_non += 1
+        kernels[x["sha256"]] = {"role": "axn0", **e}
+        for h in x.get("history") or []:
+            kernels[h["sha256"]] = {"role": "earlier version", **e, "axn": h["axn"], "sha256": h["sha256"], "until": h["until"]}
 # aliases never shadow live or contested keys
 for k in list(aliases):
     if k in positions or k in contested: del aliases[k]
@@ -98,8 +110,8 @@ if contested:
 
 out = {"description": "Central AXN registry: every allocated position across all mint routes, position- and kernel-keyed.",
        "generated": datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
-       "positions_count": len(positions), "symbolon_entries": n_sym,
+       "positions_count": len(positions), "symbolon_entries": n_sym, "non_entries": n_non,
        "contested_count": len(contested), "alias_count": len(aliases),
        "positions": dict(sorted(merged.items())), "kernels": kernels}
 (ROOT/"data/axn-central-registry.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
-print(f"central registry: {len(positions)} positions ({n_sym} symbolon) · {len(aliases)} aliases · {len(contested)} CONTESTED · {len(kernels)} kernels")
+print(f"central registry: {len(positions)} positions ({n_sym} symbolon, {n_non} /non) · {len(aliases)} aliases · {len(contested)} CONTESTED · {len(kernels)} kernels")

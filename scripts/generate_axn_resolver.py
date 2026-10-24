@@ -158,6 +158,63 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
 <p>Resolver policy: never silently select. Disambiguate by glyphs or sha256.</p>
 {rows}
 </body></html>""")
+    # /non entries (axn/v2.3 non_entries, 2026-10-24): the identifier page names the entry and its page; earlier
+    # versions of the row are listed, each still an identifier of the composition it named.
+    non_lm = {}
+    _nl = ROOT/'datasets/negative-of-the-negative/v2/axn.json'
+    if _nl.exists():
+        _names = {x['entity']: x['name'] for x in json.load(open(ROOT/'datasets/negative-of-the-negative/v2/panel/panel.json'))['entities']}
+        for k, x in sorted(json.load(open(_nl))['entries'].items()):
+            hx = x['hex']
+            if hx in idx:
+                print(f"axn resolver: /non entry {k} at {hx} collides with a deposit; not written", file=_sys_axd.stderr); continue
+            name = _names.get(k, k)
+            url = f"https://www.alexanarch.org/non/{k}/"
+            axn_url = f"https://www.alexanarch.org/s/axn/{hx}/"
+            hist = x.get('history') or []
+            idx[hx] = {"source": "non-entry", "entity": k, "axn": x['axn'], "root": x['root'], "record": url, "sha256": x['sha256'],
+                       "row": f"https://www.alexanarch.org/{x['row']}", "versions": [{"axn": h['axn'], "sha256": h['sha256'], "until": h['until']} for h in hist]}
+            non_lm[hx] = x.get('version_date') or x['minted']
+            _desc = (f"{x['axn']} is the content-derived identifier of the entry {name} in the Negative of the Negative (alexanarch.org/non). "
+                     f"The hex marks its position in the archive's one AXN sequence; NON is the family of /non entries; the six-glyph suffix is a "
+                     f"display hash of the SHA-256 of the entry's row file, so each composition of the row is its own version.")
+            ld = {"@context": "https://schema.org", "@type": "DefinedTerm", "@id": axn_url, "url": axn_url, "name": x['axn'], "termCode": x['axn'],
+                  "identifier": [{"@type": "PropertyValue", "propertyID": "AXN", "value": x['axn']},
+                                 {"@type": "PropertyValue", "propertyID": "AXN-root", "value": x['root']},
+                                 {"@type": "PropertyValue", "propertyID": "AXN-hex", "value": hx},
+                                 {"@type": "PropertyValue", "propertyID": "sha256", "value": x['sha256'], "description": "SHA-256 of the row file"}],
+                  "inDefinedTermSet": {"@type": "DefinedTermSet", "@id": "https://www.alexanarch.org/s/axn/", "name": "AXN — Alexanarch content-derived identifiers",
+                                       "url": "https://www.alexanarch.org/s/axn/"},
+                  "description": _desc, "about": {"@type": "CreativeWork", "@id": url, "url": url, "name": f"{name} — The Negative of the Negative"},
+                  "subjectOf": {"@type": "WebPage", "@id": url, "url": url}, "sameAs": [url],
+                  "additionalProperty": [{"@type": "PropertyValue", "name": "family", "value": "NON"},
+                                         {"@type": "PropertyValue", "name": "glyph_hash", "value": x['axn'].split('.')[-1]}]}
+            hrows = "".join(f"<dt>Earlier version, until {html.escape(h['until'])}</dt><dd><code>{html.escape(h['axn'])}</code> &mdash; sha256 <code>{h['sha256']}</code> &mdash; {html.escape(h.get('reason',''))}</dd>" for h in hist)
+            d = ROOT/'s/axn'/hx; d.mkdir(exist_ok=True)
+            (d/'index.html').write_text(f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>{html.escape(x['axn'])} — Alexanarch AXN resolver</title>
+<link rel="canonical" href="{axn_url}">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="description" content="{html.escape(_desc)}">
+<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
+<h1>{html.escape(x['axn'])}</h1>
+<p>{html.escape(_desc)}</p>
+<dl>
+<dt>Identifies</dt><dd><a href="{url}">{html.escape(name)}</a>, an entry of the Negative of the Negative</dd>
+<dt>Root</dt><dd><code>{html.escape(x['root'])}</code> (the entry across its compositions)</dd>
+<dt>Hex position</dt><dd><code>{hx}</code></dd>
+<dt>Family</dt><dd><code>NON</code></dd>
+<dt>Glyph hash</dt><dd>{html.escape(x['axn'].split('.')[-1])}</dd>
+<dt>Row SHA-256</dt><dd><code>{x['sha256']}</code> &mdash; <a href="/{x['row']}">the row</a></dd>
+{hrows}
+<dt>Ledger</dt><dd><a href="/datasets/negative-of-the-negative/v2/axn.json">/datasets/negative-of-the-negative/v2/axn.json</a></dd>
+</dl>
+<p>Resolver rule: <code>alexanarch.org/axn/&lt;HEX&gt;</code> &middot;
+term set: <a href="/s/axn/">AXN identifier set</a> &middot;
+machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
+</body></html>""")
     json.dump({"name":"Alexanarch AXN resolver index","rule":"https://www.alexanarch.org/axn/<HEX>/",
                "canonical":"https://www.alexanarch.org/api/axn-index.json",
                "total": len(idx), "generated": r['deposits'][-1].get('date','') or '', "map": idx},
@@ -168,7 +225,7 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
         # record's own last modification (record_modification.last_modified: date_modified, else the
         # deposit date); a disambiguation page carries the latest of its records. Never the run date.
         for hx in sorted(idx):
-            lm = max(((e.get('date_modified') or e.get('date') or '')[:10] for e in byhex[hx]), default='')
+            lm = non_lm[hx] if hx in non_lm else max(((e.get('date_modified') or e.get('date') or '')[:10] for e in byhex[hx]), default='')
             lm_tag = f'<lastmod>{lm}</lastmod>' if lm else ''
             f.write(f'  <url><loc>https://www.alexanarch.org/s/axn/{hx}/</loc>{lm_tag}</url>\n')
         f.write('</urlset>\n')
