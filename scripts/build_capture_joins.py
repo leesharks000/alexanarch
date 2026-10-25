@@ -95,7 +95,11 @@ def non_entities():
             continue
         cl = L["claims"] if isinstance(L, dict) else L
         defin = {int(c["dep"]) for c in cl if str(c.get("dep")).isdigit() and c.get("kernel")}
-        addrs = {a.strip().lower() for a in ([r.get("address")] + list(r.get("addresses") or [])) if a}
+        # A row composed by SPXI-gnΩsis writes its address as {address, surface, date} (2026-10-25: the first two such rows
+        # stopped every capture seating here); an archive row writes the string. Both are read as the issued string.
+        addrs = {(a.get("address") if isinstance(a, dict) else a).strip().lower()
+                 for a in ([r.get("address")] + list(r.get("addresses") or []))
+                 if a and (a.get("address") if isinstance(a, dict) else a)}
         out[f.stem] = (defin, addrs)
     return out
 

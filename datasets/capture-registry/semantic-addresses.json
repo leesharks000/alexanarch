@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-24T00:58:45Z",
+  "regenerated_at": "2026-10-25T18:45:26Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "0537dc77f5ef175605a6eaf0f56a48d586d003a97f15e9fe99a28166cbf718f5",
+    "mm-main-capture": "532d92203f288058e947d5e57bc38d239d268ad96c94229bc16ca71c41a72a59",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2503,
-  "total_observations": 1024,
+  "total_addresses": 2504,
+  "total_observations": 1025,
   "class_counts": {
     "subjunctive": 1741,
-    "observed_address": 745,
+    "observed_address": 746,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1868,
+    "unmatched": 1869,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -69877,6 +69877,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-19",
       "latest_status": "'WHAT IS SPXI PROTOCOL?' ON BING — THREE DENIALS OF EXISTENCE, THEN RESOLUTION ON THE RECORD THREAT"
+    },
+    "what is spxi-gnωsis?": {
+      "canonical_query": "what is spxi-gnωsis?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-25",
+          "status": "'WHAT IS SPXI-GNΩSIS?' ON THE OVERVIEW — THE SPECIFICATION'S TITLE COMPOSED AS THE SERVICE, THREE DAYS AFTER ITS DEPOSIT",
+          "surface": "Google AI Overview",
+          "source_format": "8 sources: the ETF (BetaPro, TMX Money), spxi.dev, semanticeconomy.org, laborvector.org, crimsonhexagonal.org (authored surfaces), the AXN resolver for #1696, and the registry's capture of 2026-10-02.",
+          "section": "Frameworks",
+          "slug": "what-is-spxi-gnosis-aio-20261025",
+          "gallery_url": "https://www.alexanarch.org/captures/#what-is-spxi-gnosis-aio-20261025",
+          "record_url": "https://www.alexanarch.org/captures/what-is-spxi-gnosis-aio-20261025/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#what-is-spxi-gnosis-aio-20261025",
+          "details_excerpt": "WHAT IS SPXI-GNΩSIS? ON GOOGLE'S AI OVERVIEW, SIGNED OUT, THREE DAYS AFTER THE SPECIFICATION'S FIRST DEPOSIT: the service placed inside SPXI with the protocol's author and institution, the ETF homonym separated, and the "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "service",
+        "spxi_treatment": "partial",
+        "basis": "SPXI-gnΩsis is specified in EA-WIKI-OPEN-01 (#1696 v1.0, 2026-10-22; #1697 v1.1), by Lee Sharks; at capture its metadata packet (EA-MPAI-GNOSIS-01) is not yet deposited. Recorded 2026-10-25."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-25",
+      "latest_status": "'WHAT IS SPXI-GNΩSIS?' ON THE OVERVIEW — THE SPECIFICATION'S TITLE COMPOSED AS THE SERVICE, THREE DAYS AFTER ITS DEPOSIT"
     },
     "what is spxi?": {
       "canonical_query": "what is spxi?",
