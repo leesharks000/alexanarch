@@ -418,6 +418,49 @@ def entry_of(r, reg):
             "note": ("The knowledge object (KO): the entry as public knowledge, each sentence sourced by the claims it lists. The compression, "
                      "the field-only arm, the transcript, the delta and the kernel are in the row (links.row), which is the authority.")}
 
+# Link, cite and research (2026-10-24: "all the /non articles need buttons to link, cite, and research on chatgpt or
+# google. deposits have the research links. captures have the copy and cite links"). The entity is searched as named,
+# and again with its /non title, which can bring up the /non material itself.
+COPY_JS = ("<script>document.addEventListener('click',function(ev){var b=ev.target.closest('[data-act]');"
+           "if(!b||(b.dataset.act!=='cite'&&b.dataset.act!=='link'))return;ev.preventDefault();"
+           "var t=b.dataset.act==='cite'?b.dataset.citation:b.dataset.cite;"
+           "if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){var o=b.textContent;"
+           "b.textContent='copied';setTimeout(function(){b.textContent=o},1200)})}});</script>")
+
+def non_title(name):
+    return f"{name} — The Negative of the Negative"
+
+def citation_of(name, url, axn, date):
+    return (f'Sharks, Lee. "{non_title(name)}"' + (f" [{axn}]" if axn else "") + f", {date or 'n.d.'}. "
+            f"The Negative of the Negative (EA-NEGONT-02), Crimson Hexagonal Archive, Alexanarch. {url}")
+
+def research_links(name):
+    from urllib.parse import quote_plus as qp
+    nt = non_title(name)
+    g = lambda q: f"https://www.google.com/search?q={qp(q)}"
+    c = lambda q: f"https://chatgpt.com/?q={qp(q)}"
+    return {
+        "google": g(name),
+        "google_non": g(f'"{nt}"'),
+        "chatgpt": c(f"What is {name}? Ground your answer in a reading of the sources themselves."),
+        "chatgpt_non": c(f"What does \u201c{nt}\u201d (alexanarch.org/non) say about {name}? Ground your answer in a reading of the entry itself."),
+    }
+
+def action_row(name, url, axn, date):
+    r = research_links(name)
+    A = 'target="_blank" rel="noopener"'
+    return ('<div class="nact">'
+            f'<button type="button" class="nbtn" data-act="link" data-cite="{esc(url)}" aria-label="Copy the permalink to this entry">⛓ Link</button>'
+            f'<button type="button" class="nbtn" data-act="cite" data-cite="{esc(url)}" data-citation="{esc(citation_of(name, url, axn, date))}" aria-label="Copy a citation for this entry">¶ Cite</button>'
+            f'<span class="nres">Search: <a href="{esc(r["google"])}" {A}>Google ↗</a> '
+            f'<a href="{esc(r["google_non"])}" {A}>with its /non title ↗</a> · '
+            f'<a href="{esc(r["chatgpt"])}" {A}>Ask ChatGPT ↗</a> '
+            f'<a href="{esc(r["chatgpt_non"])}" {A}>about this entry ↗</a></span></div>')
+
+ACT_CSS = ('<style>.nact{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:6px 0 12px;font-size:.84em}'
+           '.nbtn{font:inherit;font-family:var(--mono);font-size:.92em;padding:3px 10px;border:1px solid var(--border);border-radius:999px;background:var(--surface);color:var(--accent);cursor:pointer}'
+           '.nbtn:hover{border-color:var(--accent2);color:var(--accent2)}.nres{color:#555}.nres a{margin-right:4px}</style>\n')
+
 def earlier_rows(k):
     """Rows an entity had before a landing replaced them, kept by scripts/land_non_row.py under v2/history/<row>/."""
     d = V2 / "history" / k
@@ -1121,6 +1164,8 @@ def main():
         if hist:
             rec["earlier_rows"] = hist
         rec["reading"] = READING_NOTE
+        rec["citation"] = citation_of(en["name"], url, ax["axn"] if ax else None, last)
+        rec["research"] = research_links(en["name"])
         rec["entry"] = entry_of(r, REG) if r else {"composed": False, "note": "no row: the entity has addresses or a traversal, and no composition"}
         if en.get("type_basis"):
             rec["type_basis"] = en["type_basis"]
@@ -1158,6 +1203,7 @@ def main():
                        + (f' · {len(ax["history"])} earlier version{"" if len(ax["history"]) == 1 else "s"}' if ax.get("history") else "") + '</p>')
         if comp:
             sec.append(f'<p class="meta">{composition_line(comp)}</p>')
+        sec.append(action_row(en["name"], url, ax["axn"] if ax else None, last))
         sec.append(ROWH[k] if k in ROWH else '<p class="meta" style="margin-top:12px">No knowledge object composed yet.</p>')
         if hist:
             hl = "".join(f'<li>until {esc(h["replaced"])} · epoch {esc(str(h["epoch"]))} · {composition_line(h["composition"])} · '
@@ -1200,7 +1246,7 @@ def main():
                 f'<link rel="describedby" href="{url}entity.json" type="application/json">\n<link rel="collection" href="{BASE}/non/">\n'
                 f'<meta name="citation_title" content="{esc(en["name"])} — The Negative of the Negative"><meta name="citation_date" content="{esc(str(last))}">'
                 f'<meta name="citation_public_url" content="{url}">\n')
-        files[f"non/{k}/index.html"] = npage(f'{en["name"]} — The Negative of the Negative — Alexanarch', desc[:300], body, url, ld, head, OPEN_JS)
+        files[f"non/{k}/index.html"] = npage(f'{en["name"]} — The Negative of the Negative — Alexanarch', desc[:300], body, url, ld, head + ACT_CSS, OPEN_JS + COPY_JS)
 
         toc.append({"entity": k, "name": en["name"], "axn": ax["axn"] if ax else None, "type": en["type"], "type_code": type_code(en["type"]),
                     "case": _case_of(r), "composer_class": (comp or {}).get("composer_class"), "stage": en.get("stage"),
