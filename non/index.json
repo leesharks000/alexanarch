@@ -19,6 +19,22 @@
  "register": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/register.json",
  "record_form": "https://www.alexanarch.org/non/{entity}/",
  "json_form": "https://www.alexanarch.org/non/{entity}/entity.json",
+ "service": {
+  "name": "SPXI-gnΩsis",
+  "url": "https://gnosis.spxi.dev/",
+  "index": "https://gnosis.spxi.dev/v1/quote",
+  "statement": "SPXI-gnΩsis opens pinned Wikipedia revisions sentence by sentence against the sources they cite (EA-WIKI-OPEN-01 v1.1, #1697); a commission consults the Crimson Hexagonal Archive by its own procedure and composes the entity's /non row, which lands here. Quotes are free: POST https://gnosis.spxi.dev/v1/quote with {oldid, tier: \"commission\"} or {object: {name, …}}."
+ },
+ "spxi_instrument": {
+  "method": "0.16",
+  "name": "The Negative of the Negative (/non)",
+  "level": 0,
+  "level_name": "Measurement",
+  "url": "https://www.spxi.dev/methods/#m-0-16",
+  "inventory": "https://www.spxi.dev/methods/",
+  "statement": "SPXI instrument: method 0.16 of 87, level 0 (Measurement), The Negative of the Negative (/non).",
+  "also": []
+ },
  "entities": [
   {
    "entity": "sappho-31",
@@ -51,7 +67,7 @@
    "record_url": "https://www.alexanarch.org/non/sappho-31/",
    "json_url": "https://www.alexanarch.org/non/sappho-31/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/sappho-31/",
-   "sha256": "af2ad30cbcff50f362970ef8ed38701ec1905334e539502af7b298106a275d55"
+   "sha256": "00bfe3bbdad95b90aa33361bdc1a4d2b675d186f7b18d783c21bd0e065f73f72"
   },
   {
    "entity": "se-183b34",
@@ -83,7 +99,7 @@
    "record_url": "https://www.alexanarch.org/non/se-183b34/",
    "json_url": "https://www.alexanarch.org/non/se-183b34/entity.json",
    "address_url": null,
-   "sha256": "e589475ce9a5c38328aa5ddb028745d08e997a852e2c14ba903d23ad7e9fe852"
+   "sha256": "6b4e4a7dcb0713682b0f7b0428119b302bb6316dc8db5c44061e18cae5f84c85"
   },
   {
    "entity": "aristotle-originality-claim",
@@ -115,7 +131,7 @@
    "record_url": "https://www.alexanarch.org/non/aristotle-originality-claim/",
    "json_url": "https://www.alexanarch.org/non/aristotle-originality-claim/entity.json",
    "address_url": null,
-   "sha256": "0a4ee4adc8b610f9c1a801934852a175019bf14438333b3c1601eacf0a285987"
+   "sha256": "5252defe0f4dec13231788a314e83b5fc1b23d57bb230408d8d26964ba9f9f71"
   },
   {
    "entity": "model-collapse",
@@ -146,7 +162,7 @@
    "record_url": "https://www.alexanarch.org/non/model-collapse/",
    "json_url": "https://www.alexanarch.org/non/model-collapse/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/model-collapse/",
-   "sha256": "4e994ee894eb1b831396b3a5f509c38be7c8ceb61628fdb71c337b54f91d4671"
+   "sha256": "99514b93a7dfce94e62118818a4dc057ea2fb62531f7ee2e2d2ad78c4eb6566a"
   },
   {
    "entity": "howl",
@@ -179,7 +195,7 @@
    "record_url": "https://www.alexanarch.org/non/howl/",
    "json_url": "https://www.alexanarch.org/non/howl/entity.json",
    "address_url": null,
-   "sha256": "9499f7cd71e03a98029a8a692fb3e4775055bcc7165a337ff8267886dd8e8f5d"
+   "sha256": "30968ed4a185908ce4e2fcf60b5cbe30f8de8473813619b88ac4641c15031591"
   },
   {
    "entity": "theophrastus",
@@ -212,7 +228,7 @@
    "record_url": "https://www.alexanarch.org/non/theophrastus/",
    "json_url": "https://www.alexanarch.org/non/theophrastus/entity.json",
    "address_url": null,
-   "sha256": "d6977b2dbf2c364aa2bc60c26b7d68a979248afa5eb98169dc30153427e1611e"
+   "sha256": "28eb3924b0a893a25e214648a2ee87dffeb71f011234aee41dcc78d4c72d3457"
   },
   {
    "entity": "the-socratic-problem",
@@ -244,7 +260,7 @@
    "record_url": "https://www.alexanarch.org/non/the-socratic-problem/",
    "json_url": "https://www.alexanarch.org/non/the-socratic-problem/entity.json",
    "address_url": null,
-   "sha256": "adef58aa48f0e1ceadf88fc5285219672c9baa6160c2c9e19656fbb310b185b5"
+   "sha256": "f03132c908a7cfe4f6390cfbd8df54e02342e738f9f56f7c2238ecac5ce5be3a"
   },
   {
    "entity": "marxism",
@@ -276,7 +292,7 @@
    "record_url": "https://www.alexanarch.org/non/marxism/",
    "json_url": "https://www.alexanarch.org/non/marxism/entity.json",
    "address_url": null,
-   "sha256": "84deae24321da45734d42f7613c56bd47144372110ec957d86c41d46a4e39ca9"
+   "sha256": "aa89c138718c2b3ee191df5567f8c010a3c87d22c529a45955c267c502588e64"
   },
   {
    "entity": "book-of-revelation",
@@ -308,7 +324,7 @@
    "record_url": "https://www.alexanarch.org/non/book-of-revelation/",
    "json_url": "https://www.alexanarch.org/non/book-of-revelation/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/book-of-revelation/",
-   "sha256": "7493f05d8152c7b7917e2ec05e0f3fd71bdafaaaf9f3f4988e2053df616736fd"
+   "sha256": "407425c389a7596502ff7e400aee13fb188a30eb7da619751d05efb710b93bd2"
   },
   {
    "entity": "the-singularity",
@@ -340,7 +356,7 @@
    "record_url": "https://www.alexanarch.org/non/the-singularity/",
    "json_url": "https://www.alexanarch.org/non/the-singularity/entity.json",
    "address_url": null,
-   "sha256": "01f191dba1dbb6efb51fe128d9ad39b213122c8979fe91aebd7c8da6b550b2a2"
+   "sha256": "9e5298334f8e4be4f913f843263ffeae7d54f3012e8d7e83be1ac42402bf2e74"
   },
   {
    "entity": "political-economy",
@@ -372,7 +388,7 @@
    "record_url": "https://www.alexanarch.org/non/political-economy/",
    "json_url": "https://www.alexanarch.org/non/political-economy/entity.json",
    "address_url": null,
-   "sha256": "20fb1f47a9f05c0e7184365ddf6177d9304733ccb80bb5939a8261ec16d10512"
+   "sha256": "5dfa808485502a05d09919158da1778d729a2f5887af9a4f626f1d85ac76b78c"
   },
   {
    "entity": "literary-heteronym",
@@ -404,7 +420,7 @@
    "record_url": "https://www.alexanarch.org/non/literary-heteronym/",
    "json_url": "https://www.alexanarch.org/non/literary-heteronym/entity.json",
    "address_url": null,
-   "sha256": "53398a6505bd21e2a6b71e3f7412921ffcf4e5c197ed68e824ec470e4d53dc5e"
+   "sha256": "444cc7082863decadc5213af4b8712fc6b19105f84536a9375c403d46783824e"
   },
   {
    "entity": "ml-classifiers-particle-accelerators",
@@ -436,7 +452,7 @@
    "record_url": "https://www.alexanarch.org/non/ml-classifiers-particle-accelerators/",
    "json_url": "https://www.alexanarch.org/non/ml-classifiers-particle-accelerators/entity.json",
    "address_url": null,
-   "sha256": "ac118ad1d84e476eafa0d5582c4a6eab0c1332afadc9c1e809fb2a69c3652e5b"
+   "sha256": "f3fa58eb3fddcab7483f212051e28e2aab27e94f3c8838bbbbfe358bd4eb9560"
   },
   {
    "entity": "american-civil-war",
@@ -468,7 +484,7 @@
    "record_url": "https://www.alexanarch.org/non/american-civil-war/",
    "json_url": "https://www.alexanarch.org/non/american-civil-war/entity.json",
    "address_url": null,
-   "sha256": "2324581ffdd334dbc717031f7bf1f4ccb9e7d1385c50681c15fe5ed587e4150e"
+   "sha256": "9808b7f6d688d2b94f36596ff8a483160426cb26a77c7ec204fa920827743e98"
   },
   {
    "entity": "germany-role-wwii",
@@ -500,7 +516,7 @@
    "record_url": "https://www.alexanarch.org/non/germany-role-wwii/",
    "json_url": "https://www.alexanarch.org/non/germany-role-wwii/entity.json",
    "address_url": null,
-   "sha256": "4c4b518e32cfab8f5050f276d88959f933dc181b2961488c5c1466a9e59b88fe"
+   "sha256": "0be1658126e705035ae30e3e7dcc20a1bdc60cf9fcb566988fc72e01fb974cdb"
   },
   {
    "entity": "google-ai-overviews",
@@ -532,7 +548,7 @@
    "record_url": "https://www.alexanarch.org/non/google-ai-overviews/",
    "json_url": "https://www.alexanarch.org/non/google-ai-overviews/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/google-ai-overview/",
-   "sha256": "a3834ffadebc3eca22f8bbcf77931b39de26783d3e05b35b81ce522aaf603821"
+   "sha256": "72aa21a0d9e58cd70ed37cff749ef6b33bf0c79dfeb974993360826c2fcd9430"
   },
   {
    "entity": "anne-carson",
@@ -569,7 +585,7 @@
    "record_url": "https://www.alexanarch.org/non/anne-carson/",
    "json_url": "https://www.alexanarch.org/non/anne-carson/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/anne-carson/",
-   "sha256": "808f067080abc073f6f1e77d730364c41398fec718d0d74d79adacee99fa9385"
+   "sha256": "b713ce83f331dfd5608920b4c4d44afccc3a3d18548452fb8dfdec32a0be7ae6"
   },
   {
    "entity": "spxi",
@@ -602,7 +618,7 @@
    "record_url": "https://www.alexanarch.org/non/spxi/",
    "json_url": "https://www.alexanarch.org/non/spxi/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/spxi/",
-   "sha256": "7ce01e7203744b2d1b0fe4fb7bc28b420079338c6b90efb031039493db08e5c1"
+   "sha256": "e3a04b897293ee12742bb10e5f47d109b43b4d9029ac972090563ab759d9adb4"
   },
   {
    "entity": "crimson-hexagon",
@@ -635,7 +651,7 @@
    "record_url": "https://www.alexanarch.org/non/crimson-hexagon/",
    "json_url": "https://www.alexanarch.org/non/crimson-hexagon/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/crimson-hexagon/",
-   "sha256": "764102e1893103dcf94cbc46ae8523cda731288675dbe65b93e0ae7c12941204"
+   "sha256": "b60e54b1a83b4cbacc3e193870be536f92c021c6328b3e2f9d792d17ad3d0b2c"
   },
   {
    "entity": "prince-of-poets",
@@ -668,7 +684,7 @@
    "record_url": "https://www.alexanarch.org/non/prince-of-poets/",
    "json_url": "https://www.alexanarch.org/non/prince-of-poets/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/prince-of-poets/",
-   "sha256": "93f34b5a362218777727cf86a85dd2902cc719805de20ec7f57a93879a34dfce"
+   "sha256": "f85a57d94d88af715c72dabd00efb17fa87e4b1199bb7c317f79581c9f08e441"
   },
   {
    "entity": "secret-book-of-walt",
@@ -701,7 +717,7 @@
    "record_url": "https://www.alexanarch.org/non/secret-book-of-walt/",
    "json_url": "https://www.alexanarch.org/non/secret-book-of-walt/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/secret-book-of-walt/",
-   "sha256": "432fc9b47155efe26cdc0dcc6ad87b3a06d01c2015234615b249e996b6691307"
+   "sha256": "010a936ee381b0c63b9f811cc4d6a974272efdef3523cde72b1d34f6bb7c9a8c"
   },
   {
    "entity": "ai-overview-capture-registry",
@@ -733,7 +749,7 @@
    "record_url": "https://www.alexanarch.org/non/ai-overview-capture-registry/",
    "json_url": "https://www.alexanarch.org/non/ai-overview-capture-registry/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/ai-overview-capture-registry/",
-   "sha256": "a125b512645f6d455f723b2eb74a5e0b41e4d8179bd493a1417a3f2409226eda"
+   "sha256": "4992384ea01d0b6da135398851ec52d479570ad76a95e593a72795c512a2bda5"
   },
   {
    "entity": "allen-ginsberg",
@@ -764,7 +780,7 @@
    "record_url": "https://www.alexanarch.org/non/allen-ginsberg/",
    "json_url": "https://www.alexanarch.org/non/allen-ginsberg/entity.json",
    "address_url": "https://www.alexanarch.org/addresses/allen-ginsberg/",
-   "sha256": "1c31ff84e62bc01d73b1d05fb6e82f0e1d1d649aea552da27ab820bd3ec0de69"
+   "sha256": "1677fc876d69423f20170ee49db53a9f68daa0379dcc9a9fc63527f0736672b3"
   }
  ]
 }
