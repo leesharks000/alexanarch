@@ -1,0 +1,323 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://orcid.org/0009-0000-1599-0703",
+   "name": "Lee Sharks",
+   "identifier": "https://orcid.org/0009-0000-1599-0703"
+  },
+  {
+   "@type": "Project",
+   "@id": "https://www.spxi.dev/#spxi-protocol",
+   "name": "SPXI Protocol",
+   "url": "https://www.spxi.dev",
+   "description": "The specification and practice of durable entity inscription; its method inventory is at https://www.spxi.dev/methods/.",
+   "founder": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://gnosis.spxi.dev/#service",
+   "name": "SPXI-gnΩsis",
+   "alternateName": [
+    "SPXI-gnosis",
+    "SPXI gnosis",
+    "spxignosis"
+   ],
+   "url": "https://gnosis.spxi.dev",
+   "serviceType": "Opening existing knowledge compositions against their sources, and constructing sourced knowledge objects, for entities and operators",
+   "description": "A paid service, for agents and people, that opens existing compositions against their sources and constructs sourced knowledge objects, for entities and for operators (the operations an entity form conceals). Its principal application opens pinned Wikipedia revisions sentence by sentence: each sentence kept verbatim and read twice against the sources it cites, every quotation located by code in the stored source, the reading kept as evidence. A commission consults the Crimson Hexagonal Archive by its own procedure and composes the object's row in the Negative of the Negative (alexanarch.org/non), which lands there public. Prices derive from measured model cost. Charges follow the work delivered, never below its model cost and payment fee and never above the quote; the rest is refunded, an order that delivers nothing is refunded in full, and a card order quoted under $0.50 is charged and keeps the $0.50 card minimum, as its checkout states before payment.",
+   "disambiguatingDescription": "SPXI-gnΩsis, specified by Lee Sharks in October 2026 (EA-WIKI-OPEN-01) as part of SPXI. Unrelated to Gnosis (GNO, Gnosis Chain), Safe (formerly Gnosis Safe), the GNΩSIS high-level synthesis dataset and TSX:SPXI; distinct from Grokipedia.",
+   "provider": [
+    {
+     "@id": "https://orcid.org/0009-0000-1599-0703"
+    },
+    {
+     "@id": "https://www.spxi.dev/#spxi-protocol"
+    }
+   ],
+   "availableChannel": {
+    "@type": "ServiceChannel",
+    "@id": "https://gnosis.spxi.dev/#channel",
+    "serviceUrl": "https://gnosis.spxi.dev",
+    "description": "HTTP API (quote, pay by card or x402, retrieve by id) and MCP at https://gnosis.spxi.dev/mcp",
+    "providesService": {
+     "@id": "https://gnosis.spxi.dev/#service"
+    }
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "build",
+     "value": "0.21.5"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "protocols",
+     "value": [
+      "gnosis-S3/0.6",
+      "gnosis-S7/0.1"
+     ]
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "ontology rules",
+     "value": "2026-10-25c"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "observed",
+     "value": "2026-10-25"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "MCP Registry",
+     "value": "dev.spxi/gnosis",
+     "url": "https://registry.modelcontextprotocol.io/v0/servers?search=dev.spxi/gnosis"
+    }
+   ],
+   "subjectOf": [
+    {
+     "@id": "https://www.alexanarch.org/s/records/1697/"
+    },
+    {
+     "@id": "#this-packet"
+    }
+   ],
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "A sentence, opened",
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "0.22",
+      "minPrice": "0.05",
+      "priceCurrency": "USD",
+      "validFrom": "2026-10-25",
+      "description": "typical price, from the measured model cost of an average sentence × 1.5; a sentence with long sources quotes higher; free or 1¢ where already read"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "A sentence, checked",
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "0.02",
+      "minPrice": "0.01",
+      "priceCurrency": "USD",
+      "validFrom": "2026-10-25",
+      "description": "typical price; two passes on the small model"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Commission",
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": "1.00",
+      "priceCurrency": "USD",
+      "validFrom": "2026-10-25",
+      "description": "the reading (at least $0.75) and the construction (at least $0.25), each at its estimate × 3, quoted free before payment, charged as each delivers at its measured model cost × 3, never below model cost and payment fee, the rest refunded; a card order under $0.50 is charged and keeps $0.50"
+     }
+    }
+   ],
+   "potentialAction": {
+    "@type": "CreateAction",
+    "result": {
+     "@id": "https://www.alexanarch.org/non/"
+    },
+    "description": "a commission composes a /non row, which lands in the dataset"
+   }
+  },
+  {
+   "@type": "WebAPI",
+   "@id": "https://gnosis.spxi.dev/#api",
+   "name": "SPXI-gnΩsis API",
+   "documentation": "https://gnosis.spxi.dev/llms.txt",
+   "provider": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "potentialAction": [
+    {
+     "@type": "Action",
+     "name": "quote",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gnosis.spxi.dev/v1/quote",
+      "httpMethod": "POST"
+     }
+    },
+    {
+     "@type": "Action",
+     "name": "open a sentence",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gnosis.spxi.dev/v1/sentence?text={text}&url={url}",
+      "httpMethod": "GET"
+     }
+    },
+    {
+     "@type": "Action",
+     "name": "composition",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gnosis.spxi.dev/v1/results/{id}/composition",
+      "httpMethod": "GET"
+     }
+    },
+    {
+     "@type": "Action",
+     "name": "evidence",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gnosis.spxi.dev/v1/results/{id}/evidence",
+      "httpMethod": "GET"
+     }
+    },
+    {
+     "@type": "Action",
+     "name": "publication",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gnosis.spxi.dev/v1/results/{id}/publication",
+      "httpMethod": "GET"
+     }
+    },
+    {
+     "@type": "Action",
+     "name": "find a /non entry",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gnosis.spxi.dev/v1/non?name={name}",
+      "httpMethod": "GET"
+     }
+    },
+    {
+     "@type": "Action",
+     "name": "MCP",
+     "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gnosis.spxi.dev/mcp",
+      "httpMethod": "POST"
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://www.alexanarch.org/non/",
+   "name": "The Negative of the Negative (/non)",
+   "disambiguatingDescription": "The Crimson Hexagonal Archive's dataset of per-entity knowledge objects (EA-NEGONT-02); a distinct referent from Hegel's negation of the negation and Adorno's negative dialectics.",
+   "creator": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isBasedOn": {
+    "@id": "https://www.alexanarch.org/s/records/1690/"
+   },
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://www.alexanarch.org/non/index.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://www.alexanarch.org/non/claims.json",
+     "encodingFormat": "application/json"
+    }
+   ]
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://www.alexanarch.org/s/records/1697/",
+   "name": "EA-WIKI-OPEN-01 v1.1: Opening the Encyclopedia",
+   "identifier": "AXN:0708",
+   "author": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://www.alexanarch.org/s/records/1690/",
+   "name": "The Negative of the Negative v0.9 (EA-NEGONT-02)",
+   "author": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   }
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://www.alexanarch.org/s/records/1611/",
+   "name": "The Negative of the Negative (EA-NEGONT-01 v0.13)",
+   "identifier": "AXN:069B",
+   "author": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   }
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://www.alexanarch.org/s/records/1677/",
+   "name": "Metadata Packet for AI Indexing: A Formal Specification v2.0",
+   "author": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   }
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "#this-packet",
+   "name": "SPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not, for Entities and Operators, and Building the Negative of the Negative — Metadata Packet for AI Indexing (EA-MPAI-GNOSIS-01 v1.0)",
+   "author": {
+    "@id": "https://orcid.org/0009-0000-1599-0703"
+   },
+   "datePublished": "2026-10-25",
+   "dateModified": "2026-10-25",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "about": [
+    {
+     "@id": "https://gnosis.spxi.dev/#service"
+    },
+    {
+     "@id": "https://www.alexanarch.org/non/"
+    },
+    "https://www.spxi.dev/methods/#m-0-17",
+    "https://www.spxi.dev/methods/#m-0-16"
+   ],
+   "isBasedOn": [
+    {
+     "@id": "https://www.alexanarch.org/s/records/1697/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1690/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1677/"
+    },
+    "https://www.spxi.dev/methods.json"
+   ],
+   "citation": [
+    {
+     "@id": "https://www.alexanarch.org/s/records/1697/"
+    },
+    "https://www.alexanarch.org/s/records/1696/",
+    "https://www.alexanarch.org/s/records/1603/",
+    "https://www.alexanarch.org/s/records/71/",
+    {
+     "@id": "https://www.alexanarch.org/s/records/1690/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1611/"
+    },
+    {
+     "@id": "https://www.alexanarch.org/s/records/1677/"
+    },
+    "https://huggingface.co/datasets/aferikoglou/GNWSIS",
+    "https://en.wikipedia.org/wiki/Grokipedia",
+    "https://doi.org/10.1038/s42256-023-00726-1",
+    "https://www.alexanarch.org/captures/what-is-spxi-gnosis-aio-20261025/"
+   ],
+   "genre": "Instrument of SPXI method 3.12 (MPAI packets)"
+  }
+ ]
+}

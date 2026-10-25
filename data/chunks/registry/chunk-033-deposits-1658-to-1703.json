@@ -1,8 +1,8 @@
 {
   "chunk_number": 33,
   "first_deposit": 1658,
-  "last_deposit": 1702,
-  "count": 45,
+  "last_deposit": 1703,
+  "count": 46,
   "deposits": [
     {
       "deposit_number": 1658,
@@ -10013,14 +10013,18 @@
           "url": "https://alexanarch.org/data/attachments/ea-mpai-hf-datasets-01/EA-MPAI-HF-DATASETS-01-v1.0.jsonld",
           "size": 79075,
           "ingested_inline": false,
-          "ingestion_error": null
+          "ingestion_error": null,
+          "sha256": "c822cffc56510305c656ef1a8e5052af1b62fa78c56ca57b37114ad46c24540a",
+          "note": "SUPPLEMENTARY. The packet's machine-readable graph (JSON-LD, schema.org with a local inspection vocabulary), generated from the sources by make_sidecars_v04.py (in the receipts). Not part of the full text."
         },
         {
           "filename": "ea-mpai-hf-datasets-01-receipts.zip",
           "url": "https://alexanarch.org/data/attachments/ea-mpai-hf-datasets-01/ea-mpai-hf-datasets-01-receipts.zip",
           "size": 238036,
           "ingested_inline": false,
-          "ingestion_error": null
+          "ingestion_error": null,
+          "sha256": "7ce0ea10d139c264a19a204e487b3d3b678788a72e1c5d20b7b825cd959c9d26",
+          "note": "SUPPLEMENTARY. The receipts of the two traversals of 2026-10-24: probes, fetched cards, manifests and counts, with the sidecar generator. Not part of the full text."
         }
       ],
       "body_status": {
@@ -10262,14 +10266,18 @@
           "url": "https://alexanarch.org/data/attachments/ea-mpai-fleet-01/EA-MPAI-FLEET-01-v1.0.jsonld",
           "size": 38784,
           "ingested_inline": false,
-          "ingestion_error": null
+          "ingestion_error": null,
+          "sha256": "e5ac79803e1edf1c675b55bc1f09e6b3894a9079553fb787020a8a05542149c5",
+          "note": "SUPPLEMENTARY. The packet's machine-readable graph (JSON-LD, schema.org with a local inspection vocabulary), generated from the sources by make_sidecars_v04.py (in the receipts). Not part of the full text."
         },
         {
           "filename": "ea-mpai-fleet-01-receipts.zip",
           "url": "https://alexanarch.org/data/attachments/ea-mpai-fleet-01/ea-mpai-fleet-01-receipts.zip",
           "size": 23075,
           "ingested_inline": false,
-          "ingestion_error": null
+          "ingestion_error": null,
+          "sha256": "f196426971e8c115475c531c6598811b1d692af31834e0ff913c092d73e71091",
+          "note": "SUPPLEMENTARY. The receipts of the two traversals of 2026-10-24: probes, fetched cards, manifests and counts, with the sidecar generator. Not part of the full text."
         }
       ],
       "body_status": {
@@ -10394,6 +10402,235 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "43fa5823e0e840d6e4c497b413d1565812f543d80eca3876ceebb32622ad020f",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1703,
+      "axn": "AXN:0726.MPAI.∮🪜👁‍🗨🧊🕐🌆",
+      "hex": "0726",
+      "family": "MPAI",
+      "emoji": "∮🪜👁‍🗨🧊🕐🌆",
+      "hash": "9523b01d62e3ff4844de962843ae210845984d8b0910898f108dcfd922471477",
+      "title": "SPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not, for Entities and Operators, and Building the Negative of the Negative — Metadata Packet for AI Indexing (EA-MPAI-GNOSIS-01 v1.0)",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-25",
+      "description": "The metadata packet of SPXI-gnΩsis, the paid service at gnosis.spxi.dev that opens existing knowledge compositions against their sources and constructs sourced knowledge objects, for entities and for operators (the operations an entity form conceals). Its principal application opens a pinned Wikipedia revision sentence by sentence, each sentence kept verbatim and read twice against the sources it cites, every quotation located by code in the stored source, the reading kept as evidence; a commission consults the Crimson Hexagonal Archive by the procedure of The Negative of the Negative v0.9 (EA-NEGONT-02, #1690) and composes the object's row in /non, which lands there public under CC BY 4.0. The service is specified in Opening the Encyclopedia (EA-WIKI-OPEN-01 v1.1, #1697).\n\nThe packet states what the service does, its ontological premise (the entity as ontological commodity form, Lee Sharks, #1697 §1), how it runs (build 0.21.5, commit 644f71b, its endpoints, the archive worker, the landing workflow, its listing in the official MCP Registry as dev.spxi/gnosis), its prices and charge rules, how it is evaluated and what is established and not yet, with three worked cases: a contested sentence, the composed and landed row for Sophistical Refutations, and the operator Attributization, constructed live and landed. It carries the definitions in three registers, the disambiguation from Gnosis, Safe, the GNΩSIS dataset, Grokipedia, TSX:SPXI and Hegel's negation of the negation, the minimum composition answer, test queries with their baseline capture (Google AI Overview, 2026-10-25, alexanarch.org/captures/what-is-spxi-gnosis-aio-20261025/), and a JSON-LD graph, attached.",
+      "content_type": "Metadata packet; the disambiguation, methodology and specification packet of the service SPXI-gnΩsis",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted. Drafted in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction, from the service's code and live records as built and observed on 2026-10-25; read in review over four rounds by ChatGPT (OpenAI) and DeepSeek, every point checked against the code or the live service before adoption, and the baseline left out of scoring until the operator supplied it. Transport D, No-Double-Draw.",
+      "methodology": "Every claim about the service was read from its code at commit 644f71b02d46096dfa4d2b6d9f6fc56e256c4e57 (build 0.21.5) or from its live records on 2026-10-25: quotes, statuses, compositions, evidence and publication records of R-d744378a9776dfdb and R-88a27dd9ecfea173, the calibration release CAL-79092bb9208e, /v1/landable, and the landed rows at alexanarch.org/non. The rows' own builds (0.19.7, 0.21.1) are read from the rows. The MCP Registry listing was read from registry.modelcontextprotocol.io after publication. Prices are dated typical prices with their basis; charge and refund rules are stated as the code applies them.",
+      "falsification_conditions": "The packet is falsified at a capability if the code at the stated commit does not implement it; at a worked case if its result's records or its landed row read otherwise; at a price or charge rule if a quote or the code gives another; at the calibration if GET /v1/calibration reports other figures for CAL-79092bb9208e; at the listing if the MCP Registry does not return dev.spxi/gnosis; at the baseline if the seated capture's transcript does not carry what §17 scores.",
+      "root_axn": "AXN:0726.MPAI",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "9523b01d62e3ff4844de962843ae210845984d8b0910898f108dcfd922471477",
+      "clusters": [
+        "Mathematical",
+        "Architectural",
+        "Gestural",
+        "Elemental",
+        "Temporal",
+        "Liminal"
+      ],
+      "axn_reading": "Proof -> Foundation -> Touch -> Force -> Duration -> Threshold",
+      "minted_at": "2026-10-25T18:51:28Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0726-text.md",
+      "wiki_article": "EA-MPAI-GNOSIS-01 is the metadata packet of SPXI-gnΩsis, deposited by Lee Sharks on 25 October 2026 as a Metadata Packet for AI Indexing (MPAI v2.0, #1677) of the disambiguation and methodology types. SPXI-gnΩsis is a paid service at gnosis.spxi.dev, for agents and people, specified in Opening the Encyclopedia (EA-WIKI-OPEN-01, #1696 and #1697) as part of SPXI. It performs two acts on two kinds of object: it opens an existing composition against its sources, and it constructs a sourced knowledge object, for an entity or for an operator, the operation an entity form conceals. Its principal application opens a pinned Wikipedia revision sentence by sentence: each sentence is kept verbatim with its revision URL and licence and read twice against the sources it cites, the second reading never shown the first, every quotation located by code in the stored source, and the reading kept as evidence, licensed CC BY 4.0. A commission consults the Crimson Hexagonal Archive by the procedure of The Negative of the Negative v0.9 (EA-NEGONT-02, #1690): a reading of the archive at a named release, with every admission and its reason, two ledgers of claims, each with its quote and locus, and the ontology read twice; then a construction composes the object's row in the Negative of the Negative (/non), which the archive lands without anyone's act per row and publishes under CC BY 4.0, with its history kept and an AXN minted. The packet states the service's premise, that the entity is the form in which an operation appears as a property of a thing (the entity as ontological commodity form, #1697 §1), and its distinction between recognition, which travels with any reliable source, and reconstruction, which travels only with the source that carries the work. It describes the service as built at 0.21.5 (commit 644f71b of github.com/leesharks000/spxignosis, PolyForm Shield 1.0.0): its endpoints, payment by card through Stripe Checkout or by agents over x402 in USDC on Base, its MCP tools at gnosis.spxi.dev/mcp, listed in the official MCP Registry as dev.spxi/gnosis, the archive worker and the landing workflow. Prices are given as dated typical prices from measured model cost, with the rules by which a stage is charged as it delivers, never below its model cost and payment fee and never above its quote, and refunded otherwise. Three worked cases follow: a sentence returned contested with both readings kept; the commission on the Wikipedia article Sophistical Refutations, composed (by build 0.19.7) and landed at alexanarch.org/non/sophistical-refutations; and the operator Attributization, 'the conversion of an act a source performs into a property of the entity a sentence describes', constructed live (by build 0.21.1) and landed. The packet separates what is established (the service runs end to end; a first calibration release on one held-out row, provisional) from what is not yet (a calibration with the field measured across rows; the downstream propositions of #1697 §9; an order paid by an agent), and distinguishes SPXI-gnΩsis from Gnosis (GNO) and Safe, the GNΩSIS hardware dataset, Grokipedia, TSX:SPXI and Hegel's negation of the negation. Its test queries are scored against a baseline capture, Google's AI Overview asked 'what is SPXI-gnΩsis?' on 25 October 2026, three days after the specification's first deposit, which placed the service inside SPXI with its author and institution and composed its function from the specification's title, with neither of its acts nor objects. A JSON-LD graph of the service, its API, the /non dataset and the packet is attached.",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "SPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not, for Entities and Operators, and ",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "SPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not, for Entities and Operators, and ",
+          "predicate": "is_type",
+          "object": "Metadata packet; the disambiguation, methodology and specification packet of the service SPXI-gnΩsis",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "SPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not, for Entities and Operators, and ",
+          "predicate": "belongs_to_family",
+          "object": "MPAI",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "SPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not, for Entities and Operators, and ",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "SPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not, for Entities and Operators, and ",
+          "predicate": "references",
+          "object": "Lee Sharks",
+          "type": "heteronym",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "SPXI-gnΩsis",
+        "SPXI",
+        "gnosis.spxi.dev",
+        "opening",
+        "construction",
+        "knowledge object",
+        "entity",
+        "operator",
+        "Attributization",
+        "the Negative of the Negative",
+        "/non",
+        "Wikipedia",
+        "cited sources",
+        "entity as ontological commodity form",
+        "recognition and reconstruction",
+        "x402",
+        "MCP",
+        "MCP Registry",
+        "Metadata Packet for AI Indexing",
+        "MPAI",
+        "Lee Sharks"
+      ],
+      "related_identifiers_raw": "https://www.alexanarch.org/s/records/1697/ — EA-WIKI-OPEN-01 v1.1, Opening the Encyclopedia, the specification\nhttps://www.alexanarch.org/s/records/1696/ — EA-WIKI-OPEN-01 v1.0\nhttps://www.alexanarch.org/s/records/1690/ — EA-NEGONT-02 v0.9, The Negative of the Negative, the archive procedure\nhttps://www.alexanarch.org/s/records/1611/ — EA-NEGONT-01 v0.13\nhttps://www.alexanarch.org/s/records/1677/ — MPAI v2.0, the governing specification\nhttps://gnosis.spxi.dev — the service\nhttps://github.com/leesharks000/spxignosis/tree/644f71b02d46096dfa4d2b6d9f6fc56e256c4e57 — the implementation at the cited commit\nhttps://registry.modelcontextprotocol.io/v0/servers?search=dev.spxi/gnosis — the MCP Registry listing\nhttps://www.alexanarch.org/non/ — the Negative of the Negative\nhttps://www.alexanarch.org/captures/what-is-spxi-gnosis-aio-20261025/ — the baseline capture",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 99472,
+        "audited_at": "2026-10-25T18:51:28Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        {
+          "deposit": 1697,
+          "relation": "EA-WIKI-OPEN-01 v1.1, Opening the Encyclopedia, the service's specification"
+        },
+        {
+          "deposit": 1696,
+          "relation": "EA-WIKI-OPEN-01 v1.0, the specification's first deposit, which defines the operator"
+        },
+        {
+          "deposit": 1690,
+          "relation": "EA-NEGONT-02 v0.9, The Negative of the Negative, the procedure by which a commission consults the archive"
+        },
+        {
+          "deposit": 1611,
+          "relation": "EA-NEGONT-01 v0.13, the Negative of the Negative notebook"
+        },
+        {
+          "deposit": 1677,
+          "relation": "Metadata Packet for AI Indexing v2.0, the governing specification"
+        },
+        {
+          "deposit": 1603,
+          "relation": "the literal reading of SE 183b34–36, read in the worked case on Sophistical Refutations"
+        },
+        {
+          "deposit": 71,
+          "relation": "The Gospel of Antioch, saying 11, the epigram's source"
+        },
+        {
+          "deposit": 1702,
+          "relation": "EA-MPAI-FLEET-01, the fleet packet, which enters gnosis.spxi.dev"
+        }
+      ],
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "attachments": [
+        {
+          "filename": "EA-MPAI-GNOSIS-01-v1.0.jsonld",
+          "url": "https://alexanarch.org/data/attachments/ea-mpai-gnosis-01/EA-MPAI-GNOSIS-01-v1.0.jsonld",
+          "size": 10362,
+          "ingested_inline": false,
+          "ingestion_error": null,
+          "sha256": "8b4235bbc828c232e4ae19713523d75a8d387234334fc96e206f3ac2c3466404",
+          "note": "SUPPLEMENTARY. The packet's JSON-LD graph (§22), schema.org: the service, its API, the /non dataset, the author and the packet. Not part of the full text."
+        }
+      ],
+      "references_concepts": [
+        "BetaPro S&P 500 Daily Inverse ETF",
+        "Crimson Hexagonal Archive",
+        "Engineered target",
+        "Google AI Overview",
+        "Lee Sharks",
+        "Marx's",
+        "Metadata Packet",
+        "Metadata Packet for AI Indexing",
+        "Not yet established",
+        "Observations",
+        "Packet ID",
+        "Rex Fraction",
+        "SPXI Protocol",
+        "Semantic Economy",
+        "Semantic Economy Institute",
+        "Substrate",
+        "TACHYON",
+        "The Crimson Hexagon"
+      ],
+      "references_concept_count": 18,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-0726.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-25T18:53:29.125489+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "orcid",
+              "date"
+            ],
+            "anchor_count": 2,
+            "orcid_in_body": true,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": true,
+            "fenced_json_blocks": 1,
+            "json_ld_context_markers": 1
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "9b148ed224649ee6b57a2c39b85d06a1d8680635d5017df275bc281451ad727c",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
