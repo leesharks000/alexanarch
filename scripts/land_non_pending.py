@@ -42,7 +42,15 @@ def main():
     a = ap.parse_args()
 
     listed = get_json(a.service.rstrip("/") + "/v1/landable").get("landable") or []
-    landed_ids = {L.get("result_id") for L in (json.loads(LANDINGS.read_text(encoding="utf-8")).get("landings", []) if LANDINGS.exists() else [])}
+    LL = json.loads(LANDINGS.read_text(encoding="utf-8")).get("landings", []) if LANDINGS.exists() else []
+    landed_ids = {L.get("result_id") for L in LL}
+    # A row already landed is replaced only by a composition made on or after its latest landing: an earlier composition
+    # listed beside it (2026-10-25: R-2c2717089a3c0c81, composed in the equal case under ρ = constructs, listed beside the
+    # landed R-d744378a9776dfdb) is superseded and is not landed over it. A listing with no composition date predates the
+    # list and is superseded wherever the row has a landing.
+    last_landed = {}
+    for L in LL:
+        last_landed[L.get("row")] = max(last_landed.get(L.get("row"), ""), str(L.get("landed_at") or L.get("landed") or ""))
     refusals = json.loads(REFUSALS.read_text(encoding="utf-8")) if REFUSALS.exists() else {
         "_what_this_is": ("Composed /non rows the archive's landing tool refused, with what it said. A refused result is not tried "
                           "again unless its listing changes. Written by scripts/land_non_pending.py."), "refused": {}}
@@ -51,6 +59,9 @@ def main():
     for item in listed:
         rid, row = item.get("result_id"), item.get("row")
         if not rid or not row or rid in landed_ids:
+            continue
+        if row in last_landed and str(item.get("composed_at") or "")[:10] < last_landed[row][:10]:
+            print(f"{row} ({rid}): superseded by the row's landing of {last_landed[row][:10]}")
             continue
         cur = V2 / "rows" / f"{row}.json"
         if item.get("row_sha256") and cur.exists() and hashlib.sha256(cur.read_bytes()).hexdigest() == item["row_sha256"]:

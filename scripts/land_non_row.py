@@ -195,7 +195,7 @@ def main():
         "landings": []}
     man_bytes = json.dumps(man, ensure_ascii=False, sort_keys=True).encode()
     L["landings"].append({
-        "row": row, "entity": panel_entry["entity"], "landed": a.date, "source": source,
+        "row": row, "entity": panel_entry["entity"], "landed": a.date, "landed_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"), "source": source,
         "result_id": a.result or None, "execution_key": man.get("key"), "manifest_sha256": sha_bytes(man_bytes),
         "service": cg.get("service"), "protocol": cg.get("protocol"), "models": cg.get("models"),
         "archive_release": cg.get("archive_release"), "cost_usd": cg.get("cost_usd"),
