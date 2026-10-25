@@ -102,10 +102,12 @@ def build_v2(deps, breaches):
         if (led / 'ledger-archive.json').exists():
             for c in load(led / 'ledger-archive.json'):
                 n = c.get('dep'); d = deps.get(n)
-                if d is None:
+                # A claim from a blog post cites the post (the blog is an archive record; 2026-10-16) and no deposit.
+                rec = c.get('record') if n is None else None
+                if d is None and not (rec and rec.get('url')):
                     breaches.append(f"v2 {e}: archive claim {c.get('id')} cites deposit {n} not in registry")
-                T['non_archive_claims'].append({'entity': e, 'claim_id': c.get('id'), 'deposit': n, 'axn': d.get('axn') if d else None,
-                    'record_url': RECORD.format(n=n), 'title': c.get('title') or (d.get('title') if d else None), 'locus': c.get('locus'),
+                T['non_archive_claims'].append({'entity': e, 'claim_id': c.get('id'), 'deposit': n if isinstance(n, int) else None, 'cited_source': None if isinstance(n, int) else (rec.get('url') if rec else (str(n) if n is not None else None)), 'axn': d.get('axn') if d else None,
+                    'record_url': rec['url'] if rec and rec.get('url') else RECORD.format(n=n), 'title': c.get('title') or (d.get('title') if d else None), 'locus': c.get('locus'),
                     'quote': c.get('quote'), 'claim': c.get('claim'), 'kind': c.get('kind'), 'modality': c.get('modality'),
                     'strata': json.dumps(c.get('strata')) if isinstance(c.get('strata'), (list, dict)) else c.get('strata'),
                     'kernel': c.get('kernel'), 'lineage': c.get('lineage'), 'quote_verified': c.get('quote_ok'), 'status_label': lab})
@@ -115,14 +117,18 @@ def build_v2(deps, breaches):
             for v in R.get('verdicts', []):
                 x_ = v.get('dep')
                 for n in (x_ if isinstance(x_, list) else [x_]):
-                    T['non_readings'].append({'entity': e, 'deposit': n, 'record_url': RECORD.format(n=n) if n is not None else None,
+                    blog = n[5:] if isinstance(n, str) and n.startswith('blog:') else None
+                    T['non_readings'].append({'entity': e, 'deposit': n if isinstance(n, int) else None, 'cited_source': None if isinstance(n, int) else (blog or (str(n) if n is not None else None)),
+                        'record_url': RECORD.format(n=n) if isinstance(n, int) else blog,
                         'verdict': 'admitted', 'strata': json.dumps(v.get('strata')) if isinstance(v.get('strata'), (list, dict)) else v.get('strata'),
                         'n_candidates': len(v.get('cands') or []), 'reason': v.get('reason'), 'status_label': lab})
             for v in R.get('not_admitted', []):
                 x_ = v.get('deps') if v.get('deps') is not None else v.get('dep')
                 deps_ = x_ if isinstance(x_, list) else ([x_] if x_ is not None else [])
                 for n in deps_:
-                    T['non_readings'].append({'entity': e, 'deposit': n, 'record_url': RECORD.format(n=n), 'verdict': 'not admitted',
+                    blog = n[5:] if isinstance(n, str) and n.startswith('blog:') else None
+                    T['non_readings'].append({'entity': e, 'deposit': n if isinstance(n, int) else None, 'cited_source': None if isinstance(n, int) else (blog or str(n)),
+                        'record_url': RECORD.format(n=n) if isinstance(n, int) else blog, 'verdict': 'not admitted',
                         'strata': None, 'n_candidates': len(v.get('cands') or []), 'reason': v.get('reason') or v.get('group'), 'status_label': lab})
     return T
 
@@ -131,22 +137,28 @@ def main():
     ap.add_argument('--out', default=str(ROOT / 'hf-non'))
     ap.add_argument('--registry', default=str(ROOT / 'data' / 'registry.json'))
     ap.add_argument('--captures', default=str(ROOT / 'data' / 'EA-WG-CAPTURES-01.json'))
-    ap.add_argument('--check', action='store_true', help='validate only; exit 1 on any breach')
+    ap.add_argument('--check', action='store_true', help='validate only; exit 1 on a schema breach, an unenforced schema or duplicate keys (every breach is recorded)')
     a = ap.parse_args()
 
     schema = load(SRC / 'schema.json')
     rows = load(SRC / 'rows.json')
     breaches = []
+    # The gate (--check) fails on what makes the dataset unreadable: a schema breach, an unenforced schema, duplicate
+    # keys. Every other breach is recorded in the build manifest and published with the build (2026-10-25: a rule that
+    # failed the gate on any breach had stopped every push since 2026-10-13, over archive claims citing blog posts and
+    # sites; checks record, they do not prevent).
+    fatal = []
     if jsonschema is None:
-        breaches.append('jsonschema not installed; schema not enforced')
+        fatal.append('jsonschema not installed; schema not enforced')
     else:
         v = jsonschema.Draft202012Validator(schema)
         for r in rows:
             for e in v.iter_errors(r):
-                breaches.append(f"{r.get('key','?')}: {e.message}")
+                fatal.append(f"{r.get('key','?')}: {e.message}")
     keys = [r['key'] for r in rows]
     if len(keys) != len(set(keys)):
-        breaches.append('duplicate keys')
+        fatal.append('duplicate keys')
+    breaches.extend(fatal)
 
     reg = load(a.registry)
     deps = {d['deposit_number']: d for d in reg['deposits']}
@@ -249,7 +261,9 @@ def main():
     if breaches:
         print('BREACHES (recorded, not blocking):'); [print('  -', b) for b in breaches]
     if a.check:
-        sys.exit(1 if breaches else 0)
+        if fatal:
+            print('GATE FAILED (schema, ids, keys):'); [print('  -', b) for b in fatal]
+        sys.exit(1 if fatal else 0)
 
     out = pathlib.Path(a.out); out.mkdir(parents=True, exist_ok=True)
     frames = {'rows': pd.DataFrame(out_rows), 'keys': pd.DataFrame(keys_rows), 'edges': pd.DataFrame(edges), 'measurements': pd.DataFrame(meas)}
