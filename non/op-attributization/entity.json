@@ -1,0 +1,1032 @@
+{
+ "entity": "op-attributization",
+ "name": "Attributization",
+ "axn": {
+  "axn": "AXN:0725.NON.💫🔙🔭📐👇🔐",
+  "root": "AXN:0725.NON",
+  "hex": "0725",
+  "family": "NON",
+  "row_sha256": "0af3384eb7fbdde97ace4154ee3610515179d668727383be78d67c5bd994a54a",
+  "minted": "2026-10-25",
+  "resolver": "https://www.alexanarch.org/s/axn/0725/",
+  "earlier_versions": []
+ },
+ "type": "Op (an operator: the operation an entity form conceals, composed as its own object)",
+ "type_code": "Op",
+ "type_label": "type Op (an operator: the operation an entity form conceals, composed as its own object)",
+ "case": "witness",
+ "composition": {
+  "composer_class": "gnosis",
+  "composer": "SPXI-gnΩsis 0.21.1",
+  "service": {
+   "name": "SPXI-gnΩsis",
+   "version": "0.21.1",
+   "protocol": "EA-WIKI-OPEN-01 v1.1 (#1697)"
+  },
+  "protocol": "gnosis-S7/0.1 (EA-NEGONT-02 v0.9, #1690)",
+  "mode": "live",
+  "models": {
+   "triage": "claude-haiku-5-5",
+   "reading": "claude-sonnet-5-5",
+   "thinking": "up-front thinking off"
+  },
+  "archive_release": {
+   "archive_commit": "49f596e1d074f8233d8a282abc60e1d57068cd2b",
+   "registry_sha256": "9f835f1aa71e5fd5e46dfde8c72b80d953f133d768b6e37340d30696474c3843",
+   "citation_graph_sha256": "b1fdd083c109a303130092ecc7a2779e2f54afe951defd209129640b535ae082",
+   "traverse_script_sha256": "83737905f980ae5e70b075fc0112cd9b0e3f5af2ef769f4e646d6e388733d2ff"
+  },
+  "passes": 35,
+  "cost_usd": 0.85523,
+  "seconds": 315.801,
+  "t_provenance": {
+   "class": "construction",
+   "statement": "no composition at an address is read: the operator is composed from the archive and the sources the caller named"
+  },
+  "readings": "live (claude-sonnet-5-5; triage claude-haiku-5-5)",
+  "landing": {
+   "landed": "2026-10-25",
+   "execution_key": "bddad4c3ad35920740c676ce9ebb6cfc4b0f862ebffd0abbb1754fd3c1c3e029.66c108fc",
+   "result_id": "R-88a27dd9ecfea173",
+   "manifest_sha256": "2d93da7f9b7791863fef71c914785f0122bb28b7f10cc45070148141a4c76670",
+   "source": "https://gnosis.spxi.dev/v1/results/R-88a27dd9ecfea173/landing",
+   "record": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/landings.json"
+  },
+  "spec": "EA-NEGONT-02 v0.9, #1690",
+  "epoch": "2026-10-25",
+  "procedure": "EA-NEGONT-02 v0.9, #1690: witness case, ρ = constructs, read by SPXI-gnΩsis 0.21.1 (gnosis-S7/0.1 (EA-NEGONT-02 v0.9, #1690)); archive subset selected under §3.4 D/R/O with the hop (scripts/non_traverse.py at archive commit 49f596e1d074), admission by two independent reading passes, the hop screened by string and read; composed from the entity's ledgers; the composer read the ledgers, never the transcript",
+  "ledger": "unaudited (§3.8: one extractor per ledger); field quotes located verbatim in the saved source texts 0/0; archive quotes located verbatim in the deposit texts 172/178",
+  "frozen": false,
+  "composed": true,
+  "breaches": [
+   {
+    "check": "ontology-contested",
+    "detail": "the two readings differ (pass 1: ρ = outside the vocabulary: no counterpart (the archive composes the operator where the field holds nothing), case witness; pass 2: ρ = constructs, case witness); composed under pass 2: the readings disagree on ρ; the reading of ρ = constructs is taken (ruled 2026-10-25: \"if the readings disagree go constructs\")"
+   },
+   {
+    "check": "coverage",
+    "detail": "140 carried claims neither composed nor logged in the channel",
+    "claims": [
+     "OA1696-10",
+     "OA1696-15",
+     "OA1697-14",
+     "OA1697-15",
+     "OA1697-16",
+     "OA1697-20",
+     "OA1580-01",
+     "OA1580-02",
+     "OA1580-03",
+     "OA1580-04",
+     "OA1580-05",
+     "OA1580-06",
+     "OA1580-07",
+     "OA1580-08",
+     "OA1580-09",
+     "OA1580-10",
+     "OA1580-11",
+     "OA1580-12",
+     "OA1580-13",
+     "OA1580-14",
+     "OA1580-15",
+     "OA1580-16",
+     "OA1580-17",
+     "OA1580-18",
+     "OA1580-19",
+     "OA1580-20",
+     "OA1580-21",
+     "OA1580-22",
+     "OA1580-23",
+     "OA1580-24",
+     "OA1580-25",
+     "OA1580-26",
+     "OA1587-01",
+     "OA1587-02",
+     "OA1587-03",
+     "OA1587-04",
+     "OA1587-05",
+     "OA1587-06",
+     "OA1587-07",
+     "OA1587-08",
+     "OA1587-09",
+     "OA1587-10",
+     "OA1587-11",
+     "OA1587-12",
+     "OA1587-13",
+     "OA1587-14",
+     "OA1587-15",
+     "OA1587-16",
+     "OA1587-17",
+     "OA1587-18",
+     "OA1587-19",
+     "OA1587-20",
+     "OA1587-21",
+     "OA1587-22",
+     "OA1587-23",
+     "OA1587-24",
+     "OA1587-25",
+     "OA1590-01",
+     "OA1590-02",
+     "OA1590-03",
+     "OA1590-04",
+     "OA1590-05",
+     "OA1590-06",
+     "OA1590-07",
+     "OA1590-08",
+     "OA1590-10",
+     "OA1590-11",
+     "OA1590-12",
+     "OA1590-13",
+     "OA1590-14",
+     "OA1590-15",
+     "OA1590-16",
+     "OA1590-17",
+     "OA1590-18",
+     "OA1590-19",
+     "OA1590-20",
+     "OA1590-21",
+     "OA1590-22",
+     "OA1590-23",
+     "OA1590-24",
+     "OA1590-25",
+     "OA1590-26",
+     "OA1590-27",
+     "OA1590-28",
+     "OA1590-29",
+     "OA1590-30",
+     "OA1590-31",
+     "OA1590-32",
+     "OA1590-33",
+     "OA1629-01",
+     "OA1629-02",
+     "OA1629-03",
+     "OA1629-04",
+     "OA1629-06",
+     "OA1629-07",
+     "OA1629-08",
+     "OA1629-09",
+     "OA1629-10",
+     "OA1629-11",
+     "OA1629-12",
+     "OA1629-13",
+     "OA1629-15",
+     "OA1629-16",
+     "OA1629-18",
+     "OA1629-19",
+     "OA1702-01",
+     "OA1702-02",
+     "OA1702-03",
+     "OA1702-04",
+     "OA1702-05",
+     "OA1702-06",
+     "OA1702-07",
+     "OA1702-08",
+     "OA1702-09",
+     "OA1702-10",
+     "OA1702-11",
+     "OA1702-12",
+     "OA1702-13",
+     "OA1702-14",
+     "OA1702-16",
+     "OA1702-17",
+     "OA1702-18",
+     "OA1702-19",
+     "OA1702-20",
+     "OA1702-21",
+     "OA1702-22",
+     "OA1702-23",
+     "OA1702-24",
+     "OA1702-25",
+     "OA1702-26",
+     "OA1702-27",
+     "OA1702-28",
+     "OA1702-29",
+     "OA1702-30",
+     "OA1702-31",
+     "OA1702-33",
+     "OA1702-34",
+     "OA1702-35",
+     "OA1702-36",
+     "OA1702-37"
+    ]
+   },
+   {
+    "check": "kernel-coverage",
+    "detail": "16 source kernels absent from the compression's body and rail",
+    "claims": [
+     "OA1580-01",
+     "OA1580-03",
+     "OA1580-21",
+     "OA1587-01",
+     "OA1587-02",
+     "OA1587-09",
+     "OA1587-19",
+     "OA1590-01",
+     "OA1590-02",
+     "OA1590-03",
+     "OA1629-01",
+     "OA1629-12",
+     "OA1629-16",
+     "OA1702-01",
+     "OA1702-02",
+     "OA1702-04"
+    ]
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "KO1",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grounding (heuristic)",
+    "at": "KO2",
+    "detail": "0% of the unit's content words occur in the quotes it cites (floor 30%)",
+    "share": 0
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "KO3",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "KO4",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "KO5",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "KO7",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "KO14",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "KO18",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "KO22",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "P1.1",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "P1.2",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "P1.3",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "P2.2",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "P3.2",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "P3.3",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "P4.2",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grade (heuristic)",
+    "at": "P6.2",
+    "detail": "every cited claim is graded (interpretation, hypothesis or stipulation) and the sentence carries no grade in its grammar"
+   },
+   {
+    "check": "grounding",
+    "at": "B:P-lede",
+    "detail": "a unit that cites no claim"
+   },
+   {
+    "check": "reverse-entailment",
+    "at": "KO2",
+    "detail": "the unit says more than the claims it cites",
+    "exceeds": [
+     "The field holds no entry and no claim for it",
+     "so the account here rests wholly on the archive's defining papers",
+     "The field holds no entry and no claim for it",
+     "so the account here rests wholly on the archive's defining papers, #1696 and #1697"
+    ],
+    "raters": [
+     false,
+     false
+    ]
+   },
+   {
+    "check": "reverse-entailment",
+    "at": "KO5",
+    "detail": "the unit says more than the claims it cites",
+    "exceeds": [
+     "Because an operator is no author in the archive, #1696 stipulates that every mention of its strings is bearing (the quote gives the clause with 'so' as the deposit's own inference; the unit's grammar is fine on causation, but it omits 'read as #1690 §3.4 reads it', the qualifier fixing what 'bearing' means)"
+    ],
+    "raters": [
+     false,
+     true
+    ]
+   },
+   {
+    "check": "reverse-entailment",
+    "at": "KO8",
+    "detail": "the unit says more than the claims it cites",
+    "exceeds": [
+     "In the specimen of #1696, the operation is read as ... (an interpretation presented as a bare reading with no hedge; the quote is an interpretation, and 'is read as' is borderline) "
+    ],
+    "raters": [
+     true,
+     false
+    ]
+   },
+   {
+    "check": "reverse-entailment",
+    "at": "KO14",
+    "detail": "the unit says more than the claims it cites",
+    "exceeds": [
+     "The paper attributes the description of the inversion as chiastic to Lee Sharks, 2026-10-23 (the quote is truncated and the interpretation-modality claim does not show the paper 'attributes' it; it only records a parenthetical, with the quotation cut off before its close)"
+    ],
+    "raters": [
+     false,
+     true
+    ]
+   },
+   {
+    "check": "reverse-entailment",
+    "at": "KO17",
+    "detail": "the unit says more than the claims it cites",
+    "exceeds": [
+     "Where the operation survives in the sentence there is no attributization (stated as a general rule; the quote is one record, 'No attributization: the operation survives.', with the 'W4–W6 rows' scope not given in it)",
+     "of its W4–W6 rows"
+    ],
+    "raters": [
+     false,
+     true
+    ]
+   },
+   {
+    "check": "reverse-entailment",
+    "at": "KO19",
+    "detail": "the unit says more than the claims it cites",
+    "exceeds": [
+     "The deposits state the operator's limits at their own strength",
+     "the concept ... \"does not transfer\" is said of 'the concept, as Message 1 defines it', and the quote comes only from #1697, not 'the deposits'"
+    ],
+    "raters": [
+     true,
+     false
+    ]
+   },
+   {
+    "check": "reverse-entailment",
+    "at": "P-lede",
+    "detail": "the unit says more than the claims it cites",
+    "exceeds": [
+     "The field holds no account of it.",
+     "The field holds no account of it."
+    ],
+    "raters": [
+     false,
+     false
+    ]
+   },
+   {
+    "check": "reverse-entailment",
+    "at": "P5.1",
+    "detail": "the unit says more than the claims it cites",
+    "exceeds": [
+     "Where the operation survives in the sentence, no attributization (stated as a general control rule; the quote is a record of particular rows' outcome, with no scope or generality given)"
+    ],
+    "raters": [
+     false,
+     true
+    ]
+   }
+  ]
+ },
+ "reading": "A reader that fetches this page may stop short of its end; the entry's text, every sentence of its knowledge object with the claims it cites and each claim's quote, source and locus, is in entity.json beside it.",
+ "service": {
+  "name": "SPXI-gnΩsis",
+  "url": "https://gnosis.spxi.dev/",
+  "index": "https://gnosis.spxi.dev/v1/quote",
+  "statement": "SPXI-gnΩsis opens pinned Wikipedia revisions sentence by sentence against the sources they cite (EA-WIKI-OPEN-01 v1.1, #1697); a commission consults the Crimson Hexagonal Archive by its own procedure and composes the entity's /non row, which lands here. Quotes are free: POST https://gnosis.spxi.dev/v1/quote with {oldid, tier: \"commission\"} or {object: {name, …}}."
+ },
+ "spxi_instrument": {
+  "method": "0.16",
+  "name": "The Negative of the Negative (/non)",
+  "level": 0,
+  "level_name": "Measurement",
+  "url": "https://www.spxi.dev/methods/#m-0-16",
+  "inventory": "https://www.spxi.dev/methods/",
+  "statement": "SPXI instrument: method 0.16 of 87, level 0 (Measurement), The Negative of the Negative (/non).",
+  "also": []
+ },
+ "citation": "Sharks, Lee. \"Attributization — The Negative of the Negative\" [AXN:0725.NON.💫🔙🔭📐👇🔐], 2026-10-25. The Negative of the Negative (EA-NEGONT-02), Crimson Hexagonal Archive, Alexanarch. https://www.alexanarch.org/non/op-attributization/",
+ "research": {
+  "google": "https://www.google.com/search?q=Attributization",
+  "google_non": "https://www.google.com/search?q=%22Attributization+%E2%80%94+The+Negative+of+the+Negative%22",
+  "chatgpt": "https://chatgpt.com/?q=What+is+Attributization%3F+Ground+your+answer+in+a+reading+of+the+sources+themselves.",
+  "chatgpt_non": "https://chatgpt.com/?q=What+does+%E2%80%9CAttributization+%E2%80%94+The+Negative+of+the+Negative%E2%80%9D+%28alexanarch.org%2Fnon%29+say+about+Attributization%3F+Ground+your+answer+in+a+reading+of+the+entry+itself."
+ },
+ "entry": {
+  "composed": true,
+  "title": "Attributization",
+  "genre": "knowledge object, witness case, under EA-NEGONT-02 v0.9 (#1690)",
+  "status": "composed 2026-10-25 by SPXI-gnΩsis; not frozen",
+  "compression": {
+   "title": "Attributization",
+   "lede": "An operator: the act a text performs and the encyclopedic sentence states as an attribute of an entity, so that the operator speaks with the entity's voice (#1696). The field holds no account of it."
+  },
+  "sentences": [
+   {
+    "n": 1,
+    "para": 1,
+    "text": "Attributization is an operator, the operation the entity form conceals, defined in deposit #1696 as \"the act a text performs and the encyclopedic sentence states as an attribute of an entity, in which the operator speaks with the entity's voice.\"",
+    "claims": [
+     "OA1696-02"
+    ]
+   },
+   {
+    "n": 2,
+    "para": 1,
+    "text": "The field holds no entry and no claim for it, so the account here rests wholly on the archive's defining papers, #1696 and #1697.",
+    "claims": [
+     "OA1696-02",
+     "OA1697-03"
+    ]
+   },
+   {
+    "n": 3,
+    "para": 1,
+    "text": "Deposit #1696 stipulates that an operator enters by a label, a description, and its strings, \"the phrases in which it is performed and the phrases in which entities speak it\", and for the specimen these are \"nothing at all\" and \"first work\".",
+    "claims": [
+     "OA1696-01",
+     "OA1697-01"
+    ]
+   },
+   {
+    "n": 4,
+    "para": 1,
+    "text": "The same deposit stipulates that an operator's row composes it as the subject: \"what it does, on what domain, where it is performed, which entities it speaks through (each attributization of S3(c) an instance), and where it stops.\"",
+    "claims": [
+     "OA1696-03",
+     "OA1697-02"
+    ]
+   },
+   {
+    "n": 5,
+    "para": 1,
+    "text": "Because an operator is no author in the archive, #1696 stipulates that every mention of its strings is bearing.",
+    "claims": [
+     "OA1696-04"
+    ]
+   },
+   {
+    "n": 6,
+    "para": 2,
+    "text": "The test is stated in S3(c) of #1696 and again in #1697: \"Does the source perform an act that the sentence states as a property of the entity? Record the conversion; which operative relations survive it (scope, distinctions, evidence, consequences); and whether those relations keep authority to revise the description.\"",
+    "claims": [
+     "OA1696-05",
+     "OA1697-03"
+    ]
+   },
+   {
+    "n": 7,
+    "para": 2,
+    "text": "A candidate locator is stipulated to flag \"an active verb in the source rendered as a credential noun or priority adjective in the sentence\", with the example \"we had nothing to say\" → \"first work\".",
+    "claims": [
+     "OA1696-06",
+     "OA1697-04"
+    ]
+   },
+   {
+    "n": 8,
+    "para": 3,
+    "text": "In the specimen of #1696, the operation is read as \"a first-person count over a stated domain ending in a total negation\" (\"nothing at all\"; \"absolutely nothing else\"), and the attribute is the primacy of a work.",
+    "claims": [
+     "OA1696-07"
+    ]
+   },
+   {
+    "n": 9,
+    "para": 3,
+    "text": "The deposit reads the surviving relations as the attribution to Aristotle and the locus, and the lost ones as \"the quantifier's exhaustiveness and its domain.\"",
+    "claims": [
+     "OA1696-08"
+    ]
+   },
+   {
+    "n": 10,
+    "para": 3,
+    "text": "It reads authority to revise as present where the cited locus survives, since \"any reader holding the text can reopen the sentence\", while \"the lead sentence as reused carries no such route.\"",
+    "claims": [
+     "OA1696-09"
+    ]
+   },
+   {
+    "n": 11,
+    "para": 3,
+    "text": "In summary form, #1696 reads the transformation as one in which \"the exhaustive negation becomes a priority claim, and the negation's object becomes a modern category.\"",
+    "claims": [
+     "OA1696-11"
+    ]
+   },
+   {
+    "n": 12,
+    "para": 4,
+    "text": "Deposit #1697 reads the operation as running by inversion in one row of its table: \"the verdict SE 34 hands to its hearers (184b3–8) becomes Aristotle's assertion of primacy in a modern subject, bounded to a region.\"",
+    "claims": [
+     "OA1697-05"
+    ]
+   },
+   {
+    "n": 13,
+    "para": 4,
+    "text": "The attribute is stated as Aristotle's own claim, \"According to Aristotle, this is the first work\", and #1697 reads the article as performing \"the reverse of the source's operation: it closes what the source holds open.\"",
+    "claims": [
+     "OA1697-06",
+     "OA1697-07"
+    ]
+   },
+   {
+    "n": 14,
+    "para": 4,
+    "text": "The paper attributes the description of the inversion as chiastic to Lee Sharks, 2026-10-23.",
+    "claims": [
+     "OA1697-08"
+    ]
+   },
+   {
+    "n": 15,
+    "para": 4,
+    "text": "It reads the surviving relations as the attribution to Aristotle and the locus, whose \"ff.\" reaches 184b3–8, and the lost ones as \"the condition, the hearers' task, the pardon for what the method leaves out\"; it also reads that in none of the sentences is the operation presented, since no sentence reports that Aristotle holds the claim out to be inspected.",
+    "claims": [
+     "OA1697-10",
+     "OA1697-09"
+    ]
+   },
+   {
+    "n": 16,
+    "para": 5,
+    "text": "The operation also runs by narrowing: #1697 reads \"a stated criterion becomes membership in a later taxonomy\", and reads Aristotle's consequence (τὸ ἑπόμενον) as becoming \"Affirming the consequent\", one modern formal fallacy, standing under the heading \"informal fallacies\".",
+    "claims": [
+     "OA1697-12",
+     "OA1697-13"
+    ]
+   },
+   {
+    "n": 17,
+    "para": 5,
+    "text": "Where the operation survives in the sentence there is no attributization; #1697 records of its W4–W6 rows, \"No attributization: the operation survives.\"",
+    "claims": [
+     "OA1697-17"
+    ]
+   },
+   {
+    "n": 18,
+    "para": 5,
+    "text": "The same paper's innocent-reading rule stipulates that a claim the source's claim entails is supported and the narrowing recorded as a loss of scope, while \"a species put for a genus is no entailment\".",
+    "claims": [
+     "OA1697-11"
+    ]
+   },
+   {
+    "n": 19,
+    "para": 6,
+    "text": "The deposits state the operator's limits at their own strength: the concept, as Message 1 defines it, \"does not transfer: readers outside the session apply it only where a noun or adjective of standing replaces a verb.\"",
+    "claims": [
+     "OA1697-21"
+    ]
+   },
+   {
+    "n": 20,
+    "para": 6,
+    "text": "Deposit #1697 records of round 01 that \"no reply is a clean blind cross-family reading, so round 01 yields no validation\", and records the fidelity of the translation as contested, with both arguments.",
+    "claims": [
+     "OA1697-22",
+     "OA1697-23"
+    ]
+   },
+   {
+    "n": 21,
+    "para": 6,
+    "text": "The one empirical prediction is stated as a hypothesis: attributization with loss of operative authority \"occurs at a higher rate on entity pages than on work and method pages.\"",
+    "claims": [
+     "OA1696-12",
+     "OA1697-18"
+    ]
+   },
+   {
+    "n": 22,
+    "para": 6,
+    "text": "Its falsifier is \"no difference or a lower rate on entity pages\", with the positive controls of §7.3 as the first test, and #1696 stipulates that a null \"leaves the protocol intact and removes the claim that closures fall unevenly on these entities.\"",
+    "claims": [
+     "OA1696-13",
+     "OA1697-19",
+     "OA1696-14"
+    ]
+   }
+  ],
+  "claims": {
+   "OA1696-02": {
+    "kind": "archive",
+    "quote": "the operation the entity form conceals (§1), the act a text performs and the encyclopedic sentence states as an attribute of an entity, in which the operator speaks with the entity's voice.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "The commission and its object",
+    "modality": "stipulation",
+    "date": "2026-10-22"
+   },
+   "OA1697-03": {
+    "kind": "archive",
+    "quote": "Does the source perform an act that the sentence states as a property of the entity? Record the conversion; which operative relations survive it (scope, distinctions, evidence, consequences); and whether those relations keep authority to revise the description.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "S3(c) Attributization",
+    "modality": "stipulation",
+    "date": "2026-10-23"
+   },
+   "OA1696-01": {
+    "kind": "archive",
+    "quote": "An operator enters by a label, a description, and its strings: the phrases in which it is performed and the phrases in which entities speak it (for the specimen, \"nothing at all\" and \"first work\").",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "The commission and its object",
+    "modality": "stipulation",
+    "date": "2026-10-22"
+   },
+   "OA1697-01": {
+    "kind": "archive",
+    "quote": "An operator enters by a label, a description, and its strings: the phrases in which it is performed and the phrases in which entities speak it (for the specimen, \"nothing at all\" and \"first work\").",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "S0′, The commission and its object",
+    "modality": "stipulation",
+    "date": "2026-10-23"
+   },
+   "OA1696-03": {
+    "kind": "archive",
+    "quote": "Its row composes the operator as the subject: what it does, on what domain, where it is performed, which entities it speaks through (each attributization of S3(c) an instance), and where it stops.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "The commission and its object",
+    "modality": "stipulation",
+    "date": "2026-10-22"
+   },
+   "OA1697-02": {
+    "kind": "archive",
+    "quote": "Its row composes the operator as the subject: what it does, on what domain, where it is performed, which entities it speaks through (each attributization of S3(c) an instance), and where it stops.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "S0′, The commission and its object",
+    "modality": "stipulation",
+    "date": "2026-10-23"
+   },
+   "OA1696-04": {
+    "kind": "archive",
+    "quote": "An operator is no author in the archive, so every mention of its strings is bearing, read as #1690 §3.4 reads it.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "The commission and its object",
+    "modality": "stipulation",
+    "date": "2026-10-22"
+   },
+   "OA1696-05": {
+    "kind": "archive",
+    "quote": "Does the source perform an act that the sentence states as a property of the entity? Record the conversion; which operative relations survive it (scope, distinctions, evidence, consequences); and whether those relations keep authority to revise the description.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "S3(c) Attributization",
+    "modality": "stipulation",
+    "date": "2026-10-22"
+   },
+   "OA1696-06": {
+    "kind": "archive",
+    "quote": "A candidate locator flags an active verb in the source rendered as a credential noun or priority adjective in the sentence (\"we had nothing to say\" → \"first work\").",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "S3(c) Attributization",
+    "modality": "stipulation",
+    "date": "2026-10-22"
+   },
+   "OA1697-04": {
+    "kind": "archive",
+    "quote": "A candidate locator flags an active verb in the source rendered as a credential noun or priority adjective in the sentence (\"we had nothing to say\" → \"first work\").",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "S3(c) Attributization",
+    "modality": "stipulation",
+    "date": "2026-10-23"
+   },
+   "OA1696-07": {
+    "kind": "archive",
+    "quote": "ω = a first-person count over a stated domain ending in a total negation (\"nothing at all\"; \"absolutely nothing else\"); attribute = primacy of a work.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "Specimen, S3(c)",
+    "modality": "interpretation",
+    "date": "2026-10-22"
+   },
+   "OA1696-08": {
+    "kind": "archive",
+    "quote": "Surviving relations: the attribution to Aristotle and the locus. Lost: the quantifier's exhaustiveness and its domain.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "Specimen, S3(c)",
+    "modality": "interpretation",
+    "date": "2026-10-22"
+   },
+   "OA1696-09": {
+    "kind": "archive",
+    "quote": "Authority to revise: the cited locus is present, so any reader holding the text can reopen the sentence; the lead sentence as reused carries no such route.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "Specimen, S3(c)",
+    "modality": "interpretation",
+    "date": "2026-10-22"
+   },
+   "OA1696-11": {
+    "kind": "archive",
+    "quote": "T: the exhaustive negation becomes a priority claim, and the negation's object becomes a modern category.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "Specimen, S4",
+    "modality": "interpretation",
+    "date": "2026-10-22"
+   },
+   "OA1697-05": {
+    "kind": "archive",
+    "quote": "yes, by inversion: the verdict SE 34 hands to its hearers (184b3–8) becomes Aristotle's assertion of primacy in a modern subject, bounded to a region",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "6.2, table, W2 row",
+    "modality": "interpretation",
+    "date": "2026-10-23"
+   },
+   "OA1697-06": {
+    "kind": "archive",
+    "quote": "Attribute = primacy, stated as Aristotle's own claim: \"According to Aristotle, this is the first work\".",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "6.3, (c) Attributization, by inversion",
+    "modality": "interpretation",
+    "date": "2026-10-23"
+   },
+   "OA1697-07": {
+    "kind": "archive",
+    "quote": "The article performs the reverse of the source's operation: it closes what the source holds open.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "6.3, (c) Attributization, by inversion",
+    "modality": "interpretation",
+    "date": "2026-10-23"
+   },
+   "OA1697-08": {
+    "kind": "archive",
+    "quote": "The inversion is chiastic (Lee Sharks, 2026-10-23: \"it is a chiastic inversion.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "6.3, (c) Attributization, by inversion",
+    "modality": "interpretation",
+    "date": "2026-10-23"
+   },
+   "OA1697-10": {
+    "kind": "archive",
+    "quote": "Surviving: the attribution to Aristotle; the locus, whose \"ff.\" reaches 184b3–8. Lost: the condition, the hearers' task, the pardon for what the method leaves out",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "6.3, Responding and presenting",
+    "modality": "interpretation",
+    "date": "2026-10-23"
+   },
+   "OA1697-09": {
+    "kind": "archive",
+    "quote": "In none of them is the operation presented; no sentence reports that Aristotle holds the claim out to be inspected.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "6.3, Responding and presenting",
+    "modality": "interpretation",
+    "date": "2026-10-23"
+   },
+   "OA1697-12": {
+    "kind": "archive",
+    "quote": "Attributization: yes, a stated criterion becomes membership in a later taxonomy.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "6.4, W7–W8",
+    "modality": "interpretation",
+    "date": "2026-10-23"
+   },
+   "OA1697-13": {
+    "kind": "archive",
+    "quote": "Aristotle's consequence (τὸ ἑπόμενον; Krabbe: \"consequence\") becomes \"Affirming the consequent\", one modern formal fallacy, and that formal fallacy stands under the heading \"informal fallacies\"",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "6.4, W7–W8",
+    "modality": "interpretation",
+    "date": "2026-10-23"
+   },
+   "OA1697-17": {
+    "kind": "archive",
+    "quote": "No attributization: the operation survives.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "6.5, W4–W6",
+    "modality": "documented",
+    "date": "2026-10-23"
+   },
+   "OA1697-11": {
+    "kind": "archive",
+    "quote": "A claim the source's claim entails (the same claim bounded, or weakened) is supported, and the narrowing is recorded as a loss of scope; a species put for a genus is no entailment",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "S3(0), the innocent reading",
+    "modality": "stipulation",
+    "date": "2026-10-23"
+   },
+   "OA1697-21": {
+    "kind": "archive",
+    "quote": "The concept, as Message 1 defines it, does not transfer: readers outside the session apply it only where a noun or adjective of standing replaces a verb.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "Appendix C, where the session stands alone",
+    "modality": "self-description",
+    "date": "2026-10-23"
+   },
+   "OA1697-22": {
+    "kind": "archive",
+    "quote": "No reply is a clean blind cross-family reading, so round 01 yields no validation.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "Appendix C, review of round 01",
+    "modality": "self-description",
+    "date": "2026-10-23"
+   },
+   "OA1697-23": {
+    "kind": "archive",
+    "quote": "the fidelity of the translation as such is recorded *contested*, with both arguments.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "Appendix C, review of round 01",
+    "modality": "contested",
+    "date": "2026-10-23"
+   },
+   "OA1696-12": {
+    "kind": "archive",
+    "quote": "Attributization with loss of operative authority (S3(c)) occurs at a higher rate on entity pages than on work and method pages.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "9.1 P1 (entity form)",
+    "modality": "hypothesis",
+    "date": "2026-10-22"
+   },
+   "OA1697-18": {
+    "kind": "archive",
+    "quote": "Attributization with loss of operative authority (S3(c)) occurs at a higher rate on entity pages than on work and method pages.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "9.1, P1 (entity form)",
+    "modality": "hypothesis",
+    "date": "2026-10-23"
+   },
+   "OA1696-13": {
+    "kind": "archive",
+    "quote": "Falsifier: no difference or a lower rate on entity pages; the positive controls of §7.3 are the first test.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "9.1 P1 (entity form)",
+    "modality": "stipulation",
+    "date": "2026-10-22"
+   },
+   "OA1697-19": {
+    "kind": "archive",
+    "quote": "Falsifier: no difference or a lower rate on entity pages; the positive controls of §7.3 are the first test.",
+    "deposit": 1697,
+    "source_label": "#1697 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1697/",
+    "locus": "9.1, P1 (entity form)",
+    "modality": "stipulation",
+    "date": "2026-10-23"
+   },
+   "OA1696-14": {
+    "kind": "archive",
+    "quote": "A null leaves the protocol intact and removes the claim that closures fall unevenly on these entities.",
+    "deposit": 1696,
+    "source_label": "#1696 Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)",
+    "record": "https://www.alexanarch.org/s/records/1696/",
+    "locus": "9.2 P2 (immanent integrity)",
+    "modality": "stipulation",
+    "date": "2026-10-22"
+   }
+  },
+  "note": "The knowledge object (KO): the entry as public knowledge, each sentence sourced by the claims it lists. The compression, the field-only arm, the transcript, the delta and the kernel are in the row (links.row), which is the authority."
+ },
+ "source": "SPXI-gnΩsis opening, 2026-10-25 (live (claude-sonnet-5-5; triage claude-haiku-5-5))",
+ "stage": "composed 2026-10-25 under EA-NEGONT-02 v0.9, #1690, witness case, ρ = constructs (draft, not frozen; ledgers unaudited; 29 breaches recorded)",
+ "date": "2026-10-25",
+ "status": {
+  "procedure": "EA-NEGONT-02 v0.9, #1690: witness case, ρ = constructs, read by SPXI-gnΩsis 0.21.1 (gnosis-S7/0.1 (EA-NEGONT-02 v0.9, #1690)); archive subset selected under §3.4 D/R/O with the hop (scripts/non_traverse.py at archive commit 49f596e1d074), admission by two independent reading passes, the hop screened by string and read; composed from the entity's ledgers; the composer read the ledgers, never the transcript",
+  "ledger": "unaudited (§3.8: one extractor per ledger); field quotes located verbatim in the saved source texts 0/0; archive quotes located verbatim in the deposit texts 172/178",
+  "frozen": false,
+  "readings": "live (claude-sonnet-5-5; triage claude-haiku-5-5)"
+ },
+ "addresses": [
+  {
+   "address": "attributization",
+   "address_url": null,
+   "register": []
+  }
+ ],
+ "counts": {
+  "ko_sentences": 22,
+  "p_words": 336,
+  "field_claims": 0,
+  "archive_claims": 178,
+  "ko_field_claims_cited": 0,
+  "ko_archive_claims_cited": 32,
+  "admitted_deposits": 9,
+  "register_addresses": 0,
+  "traversal": {
+   "D_sentences": 32,
+   "D_deposits": 2,
+   "R_sentences": 2,
+   "R_deposits": 2,
+   "O_direct": 12,
+   "O_class": 0,
+   "O_deposits": 2,
+   "H_candidates": 19
+  }
+ },
+ "links": {
+  "record": "https://www.alexanarch.org/non/op-attributization/",
+  "table_of_contents": "https://www.alexanarch.org/non/index.json",
+  "register": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/register.json",
+  "row": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/rows/op-attributization.json",
+  "archive_ledger": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/ledgers/op-attributization/ledger-archive.json",
+  "field_ledger": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/ledgers/op-attributization/field.json",
+  "selection": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/traversal/op-attributization/",
+  "traversal": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/traversal/op-attributization/",
+  "traversal_summary": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/traversal/op-attributization/summary.json",
+  "reading": "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/traversal/op-attributization/reading.json",
+  "dataset": "https://huggingface.co/datasets/leesharks/negative-of-the-negative"
+ },
+ "row_sha256": "0af3384eb7fbdde97ace4154ee3610515179d668727383be78d67c5bd994a54a",
+ "record_url": "https://www.alexanarch.org/non/op-attributization/",
+ "json_url": "https://www.alexanarch.org/non/op-attributization/entity.json",
+ "spec": "https://www.alexanarch.org/s/records/1690/",
+ "creator": "Lee Sharks",
+ "orcid": "0009-0000-1599-0703",
+ "license": "CC BY 4.0"
+}

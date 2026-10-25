@@ -1,0 +1,76 @@
+{
+ "row": "op-attributization",
+ "address": "attributization",
+ "entity": "Attributization",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "op-attributization",
+  "address": "attributization",
+  "entity": "Attributization",
+  "row_type": "Op (an operator: the operation an entity form conceals, composed as its own object)",
+  "aliases": [
+   {
+    "pattern": "\\battributization\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\battributized\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\battributizes\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [],
+  "classes_note": "O-class not run: class membership must be sourced from the field or the archive by locus before the pass (§3.4); the aliases are the article's title and the names its lead gives.",
+  "hop_from": [
+   1696,
+   1697
+  ]
+ },
+ "texts_scanned": 1696,
+ "counts": {
+  "D_sentences": 32,
+  "D_deposits": 2,
+  "R_sentences": 2,
+  "R_deposits": 2,
+  "O_direct": 12,
+  "O_class": 0,
+  "O_deposits": 2,
+  "H_candidates": 19
+ },
+ "per_deposit": {
+  "D": {
+   "1696": 8,
+   "1697": 24
+  },
+  "R": {
+   "1696": 1,
+   "1697": 1
+  },
+  "O": {
+   "1696": 5,
+   "1697": 7
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "f790b7456c726ba318a9d815c4d97a9966f751241d7cc9e7288a5c066a809aea",
+  "candidates-R.jsonl": "5c7aed4acd160478e68a8c10346e285063bfbb420a05ae6444eead8497ce6d2d",
+  "candidates-O.jsonl": "c8a44e4eb7f3cd860f3d41cb91f551bf4c8b7b500eb9842c5f9300a7628ca108",
+  "candidates-H.jsonl": "8d140844b5febf954621747cbcc2cc2d055991389aa2bd64899b0bab7adbaec9"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11062
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted.",
+ "blog": {
+  "corpus": "data/blog-index.json (posts the blog–deposit map does not assign to a deposit)",
+  "index_sha256": "a56f6e21cdfb86c75ab2716583155dec14bc2cdad0f61cba0129929c5e39b45e",
+  "posts_scanned": 2084,
+  "D_sentences": 0,
+  "D_posts": 0
+ }
+}
