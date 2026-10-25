@@ -506,6 +506,10 @@ def type_label(t):
 def t_record(row):
     """AIO's transcript as a record inside the compression, opened on expansion (v0.8 §4.8, ruled 2026-10-08)."""
     T = row["objects"]["T"]
+    if not T.get("path"):
+        # A construction reads no composition at an address (2026-10-25: an operator constructed by SPXI-gnΩsis has T null).
+        return (f'<details class="trec"><summary>no composition at the address · {esc(row["address"])} · {esc(row["surface"])}</summary>'
+                f'<p class="meta">{esc(T.get("note") or "the null composition")}{" · " + esc((T.get("provenance") or {}).get("statement", "")) if (T.get("provenance") or {}).get("statement") else ""}</p></details>')
     txt = (ROOT / T["path"]).read_text(encoding="utf-8").strip()
     ref = T.get("register") or {}
     return (f'<details class="trec"><summary>AIO\'s transcript, a record · {esc(row["address"])} · {esc(row["surface"])} · '
@@ -636,7 +640,8 @@ def form_ledger(row, arms):
             cols.append((f"{label} {name}", st[lvl]["words"], st[lvl]["claims"], rail, mod))
     rows_ = [("body words", [c[1] for c in cols]),
              ("distinct claims", [tcl] + [len(c[2]) for c in cols[1:]]),
-             ("claims per 100 words", [f"{100 * tcl / tw:.1f}"] + [f"{100 * len(c[2]) / c[1]:.1f}" for c in cols[1:]]),
+             # a construction has no T (0 words); a zero denominator is shown as a dash (2026-10-25)
+             ("claims per 100 words", [f"{100 * tcl / tw:.1f}" if tw else "—"] + [f"{100 * len(c[2]) / c[1]:.1f}" if c[1] else "—" for c in cols[1:]]),
              ("field claims carried (of %d)" % len(FC), ["—"] + [len(c[2] & FC) for c in cols[1:]]),
              ("archive claims", ["0"] + [len(c[2] - FC) for c in cols[1:]]),
              ("rail", [c[3] for c in cols]), ("modality shown in", [c[4] for c in cols])]
@@ -1214,8 +1219,9 @@ def main():
             sub.append(f'<a href="{DS_URL}/traversal/{k}/">D/R/O traversal</a>')
         if addr_url:
             sub.append(f'<a href="{esc(addr_url[len(BASE):])}">the address page</a>')
-        sec = [f'<p style="font-size:.85em;margin:0 0 4px"><a href="/non/">The Negative of the Negative</a> › entity <code>{esc(k)}</code></p>',
-               f'<p class="sub" style="font-size:.85em">One entity of the Negative of the Negative (EA-NEGONT-02, <a href="/s/records/{spec_no(en, r)}/">#{spec_no(en, r)}</a>), '
+        kind_ = "operator" if (r or {}).get("object_kind") == "operator" else "entity"
+        sec = [f'<p style="font-size:.85em;margin:0 0 4px"><a href="/non/">The Negative of the Negative</a> › {kind_} <code>{esc(k)}</code></p>',
+               f'<p class="sub" style="font-size:.85em">One {kind_} of the Negative of the Negative (EA-NEGONT-02, <a href="/s/records/{spec_no(en, r)}/">#{spec_no(en, r)}</a>), '
                f'cited at <code>{url}</code>. ' + " · ".join(sub) + '.</p>'
                f'<p class="meta" data-for="machines">{esc(READING_NOTE)}</p>',
                f'<section id="e-{esc(k)}"><h1>{esc(en["name"])}</h1>'
