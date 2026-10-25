@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """land_non_row.py — land a /non row composed by SPXI-gnΩsis into the archive (ruled 2026-10-24).
 
-Landing is the operator's act: this tool is run on the operator's word, and its commit lands through the bundle link.
+It is run for every composed row by scripts/land_non_pending.py, from .github/workflows/land-non-rows.yml, and can be run by hand.
 It takes a landing tree — what the service writes under its execution key: datasets/negative-of-the-negative/v2/…
 paths mirroring the archive's, landing/panel-entry.json, and landing/manifest.json naming every file with its sha256 —
 from a local folder (--tree) or from the service (--result R-…, read from /v1/results/<id>/landing).
@@ -191,7 +191,7 @@ def main():
 
     L = json.loads(LANDINGS.read_text(encoding="utf-8")) if LANDINGS.exists() else {
         "_what_this_is": ("Every /non row landed from SPXI-gnΩsis, in order: what landed, from where, verified against which manifest, "
-                          "and what it replaced. Written by scripts/land_non_row.py; landing is the operator's act."),
+                          "and what it replaced. Written by scripts/land_non_row.py."),
         "landings": []}
     man_bytes = json.dumps(man, ensure_ascii=False, sort_keys=True).encode()
     L["landings"].append({
