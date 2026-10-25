@@ -1032,7 +1032,7 @@ def main():
                             + "".join(f'<p class="meta">#{L["dep"]} {esc(L.get("locus", ""))}: <span class="qt">{esc(L["quote"])}</span></p>' for L in on["case"].get("loci", []))
                             if on.get("case") else ""),
                          n=f'ρ = {esc(on["rho"]["value"])}' + (f' · {esc(on["case"]["value"])} case' if on.get("case") else "")))
-            trs = "".join(f'<tr><td>{esc(", ".join(t_["field_claims"]))}</td><td>{md_inline(t_["received"])}</td><td>{md_inline(t_["receiving_text"])}</td>'
+            trs = "".join(f'<tr><td>{esc(", ".join(t_["field_claims"]))}</td><td>{md_inline(t_["received"])}</td><td>{md_inline(t_["receiving_text"]) if t_.get("receiving_text") else '<span class="meta">not located</span>'}</td>'
                           f'<td>{md_inline(t_["translation"])}</td><td>{esc(", ".join(t_["archive_claims"]))}</td></tr>' for t_ in on["translation"])
             nfc = len({x for t_ in on["translation"] for x in t_["field_claims"]})
             c.append(det("τ", "the translation: every field claim carried, beside its statement in the archive's ontology",
