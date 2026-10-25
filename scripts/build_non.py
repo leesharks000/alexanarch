@@ -1025,6 +1025,15 @@ def main():
                      n=f'{o["T"]["words"]} words · {o["T"]["cards"]} cards'))
         c.append(det("B", "the disclosed field", f"<ul>{fld}</ul>", n=f'{len(r["field"])} sources'))
         onto = bool(r.get("ontology"))
+        if onto and not ((r["ontology"].get("E_A") or {}).get("definition") and (r["ontology"].get("E_F") or {}).get("definition")):
+            # The ontology was not read (2026-10-25: the first operator commission's ontology passes were not run); the
+            # row says so, and its composition stands in the case it was composed in.
+            on = r["ontology"]
+            c.append(det("E", "the two entities and their relation: not read",
+                         f'<p>{md_inline((on.get("rho") or {}).get("statement") or "not read")}. '
+                         f'The case: {esc(CASE_LABEL.get((on.get("case") or {}).get("value"), (on.get("case") or {}).get("value") or "none"))}. '
+                         f'{md_inline((on.get("case") or {}).get("statement") or "")}</p>', n="ρ not read"))
+            onto = False
         if onto:
             on = r["ontology"]
             c.append(det("E", "the two entities and their relation",
