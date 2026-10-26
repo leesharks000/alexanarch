@@ -67,16 +67,16 @@ The <strong>Mandala Oracle</strong> at <a href="https://themandalaoracle.com/">t
 <p class="note">Witness identities are anonymous by default. Session identifiers are hashed before storage. Castings — the deeper rite within a conversation — are not yet enabled; when they are, they will be gated by the witness's keep-or-discard choice.</p>
 </div>
 
-<div class="meta-row" id="meta-row">
+<div class="meta-row" id="meta-row" hidden>
   <strong id="total-count">…</strong> conversations · last updated <span id="last-updated">…</span>
 </div>
 
 <div id="book-list">
-  <div class="loading">Loading book index from mandala-merkabah…</div>
+  <div class="note book-paused">The Book is closed for the moment, while Johannes Sigil contemplates existence. It will open again.</div>
 </div>
 
 <div class="footer">
-The Book is a dataset of the Mandala Oracle's public-API conversations. Data home: <code>mandala-merkabah</code>. Index URL: <a id="index-link" href="https://raw.githubusercontent.com/leesharks000/the-mandala-oracle/main/book/index.json">book/index.json</a>. Per-conversation: <code>book/data/AXN-XXXX.json</code>. Schema v1.0.
+The Book is a dataset of the Mandala Oracle's public-API conversations. Data home: <code>mandala-merkabah</code>. Schema v1.0.
 </div>
 
 </div>
@@ -244,7 +244,11 @@ function renderTranscript(el, conv) {
   el.appendChild(wrap);
 }
 
+// PAUSE (2026-10-26, Lee Sharks): the Book is closed. Set BOOK_PAUSED to false to open it again.
+const BOOK_PAUSED = true;
+
 (async function init() {
+  if (BOOK_PAUSED) return;
   try {
     const res = await fetch(INDEX_URL, { cache: 'no-store' });
     if (res.status === 404) return renderEmpty();
@@ -258,6 +262,7 @@ function renderTranscript(el, conv) {
   }
 })();
 </script>
-<script src="https://www.themandalaoracle.com/embed/sigil.js" defer></script>
+<!-- Sigil's panel is paused with the Book (2026-10-26); restore this line to bring it back:
+<script src="https://www.themandalaoracle.com/embed/sigil.js" defer></script> -->
 </body>
 </html>
