@@ -37,8 +37,8 @@
   "_record_pages": "Ruled 2026-10-01 (Lee Sharks, option b): the record page captures/{slug}/ is the citation. Until then a capture was cited at captures/#{slug}, an anchor in one page past 8 MB; a fetcher drops the fragment, requests the whole page, and the fetch interfaces composition surfaces use refuse a response above about 4 MiB, so no citation resolved for a machine. The gallery anchors (anchor_form) remain and resolve in a browser. Written by scripts/build_capture_records.py; table of contents at captures/index.json."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "12.315",
- "date": "2026-10-25",
+ "version": "12.316",
+ "date": "2026-10-26",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
  "license": "CC-BY-4.0",
@@ -48,7 +48,7 @@
   "https://www.leesharks.com/captures",
   "https://www.machinemediation.org/captures/"
  ],
- "total_captures": 767,
+ "total_captures": 768,
  "_reseated": "RESEATED 2026-08-13 after the 2026-08-12 withdrawal. Generated FROM rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json, which is canonical. This file is a PROJECTION: the gallery is a window, not a store.",
  "_what_changed_since_v9.6": [
   "Entries are now ONE PER OBSERVATION, not one per capture: 404 against 204. An address captured twice is two entries.",
@@ -248173,6 +248173,233 @@
    "notes": null
   },
   {
+   "slug": "provenance-after-ai-title-aio-20261026",
+   "date": "2026-10-26",
+   "surface": "Google AI Overview",
+   "surface_basis": "Surface not stated; the standing default applies (operator, 2026-10-01: 'assume they do [start in overview], i will specify if they begin in ai mode'). The paste's 'AI Mode Conversation' header marks an Overview expanded (rule of 2026-10-18).",
+   "surfaces": [
+    "Google AI Overview"
+   ],
+   "auth": "signed out, incognito",
+   "auth_basis": "Operator default of 2026-10-14 ('theyre all signed out and incognito'); nothing in the message states otherwise.",
+   "ev": "paste",
+   "mt": "PROVENANCE AFTER AI, BY ITS EXACT TITLE — THE PAPER ON ATTRIBUTION SURVIVAL, SUMMARIZED WITHOUT ITS AUTHOR",
+   "match": "EXACT MATCH",
+   "match_note": null,
+   "s": "Machine Reception",
+   "q": "\"Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)\"",
+   "q_kind": "the record's full title, in quotes, as the query. NEW address.",
+   "cites": 9,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "url": "https://www.alexanarch.org/s/browse/month/2026-05/",
+     "title": "2026-05 — Month (page 1 of 3) - Alexanarch",
+     "snip": "May 3, 2026 — This research note introduces Provenance Erasure Rate (PER) as the weighted proportion of source-dependent claims in an AI-composed output that appear without e...",
+     "note": "the browse section for May 2026; the snippet is the description of #716 (PER v1, 2026-05-03). url inferred from the title",
+     "deposit_candidates": [
+      716
+     ]
+    },
+    {
+     "n": 2,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "url": "https://www.alexanarch.org/s/wiki/",
+     "title": "Wiki — Alexanarch (1685 entries)",
+     "snip": "Oct 18, 2026 — Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1). AXN:",
+     "note": "the wiki index, at the entry for #1190",
+     "deposit_candidates": [
+      1190
+     ],
+     "deposit": 1190,
+     "deposit_basis": "title"
+    },
+    {
+     "n": 3,
+     "site": "www.metadatapacket.dev",
+     "rel": "authored_surface",
+     "url": "https://www.metadatapacket.dev",
+     "title": "Provenance After AI Metadata Packet for Disambiguation",
+     "snip": "The packet This v1. 1 bridge packet maps three independent dimensions of AI-era provenance: artifact authenticity, training-corpus licensing, and semantic linea...",
+     "note": "the packet EA-MPAI-PROVENANCE-01 on metadatapacket.dev",
+     "deposit_candidates": [
+      725
+     ],
+     "deposit": 725,
+     "deposit_basis": "title"
+    },
+    {
+     "n": 4,
+     "site": "www.provenanceerasure.org",
+     "rel": "authored_surface",
+     "url": "https://www.provenanceerasure.org",
+     "title": "Provenance Erasure — Lee Sharks",
+     "snip": "The systematic loss of authorial lineage, context, or ownership through AI synthesis, compression, or institutional action. Provenance Erasure Rate (PER) = 1 − ...",
+     "note": "the only card that names the author"
+    },
+    {
+     "n": 5,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "url": "https://www.alexanarch.org/s/records/725/",
+     "title": "From Artifact Authenticity to Licensing Audit to Semantic Provenance",
+     "snip": "May 8, 2026 — Provenance After AI. Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance. Packet ID: EA-MPAI-PROVENANCE-01.",
+     "note": null,
+     "deposit_candidates": [
+      725
+     ],
+     "deposit": 725,
+     "deposit_basis": "url"
+    },
+    {
+     "n": 6,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "url": "https://www.alexanarch.org/s/records/1369/",
+     "title": "AI-Mediated Writing, the Authorship-Slop Distinction, and the Missing Third ...",
+     "snip": "May 14, 2026 — Provenance Erasure Rate (PER): A new metric (PER = 1 − [retained units / required units]) measures the proportion of source-dependent claims in AI outputs prese...",
+     "note": "'Provenance Is What Authorship Must Endure' — the source of the answer's Process Provenance and authorship/slop section",
+     "deposit_candidates": [
+      1369
+     ],
+     "deposit": 1369,
+     "deposit_basis": "url"
+    },
+    {
+     "n": 7,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "url": "https://www.alexanarch.org/s/records/95/",
+     "title": "Attribution Survival as a Substrate Condition for Safe AI Knowledge ...",
+     "snip": "May 5, 2026 — Abstract 2024; Dohmatob et al. 2024), with Provenance Erasure Rate (PER), a metric for measuring attribution loss in AI-composed outputs (Sharks 2026b). We prop...",
+     "note": "'Provenance Alignment'; the title is shared by #95 (active) and #1188 (superseded by #95); url given as the active record",
+     "deposit_candidates": [
+      95,
+      1188
+     ],
+     "deposit": 95,
+     "deposit_basis": "url"
+    },
+    {
+     "n": 8,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "url": "https://www.alexanarch.org/s/records/673/",
+     "title": "JSON-LD ⊂ SPXI ⊄ Schema The Operational Depth of the Semantic ...",
+     "snip": "Measurement establishes the current state; compression architecture constructs full, canonical, and kernel forms of the entity packet; protection adds provenanc...",
+     "note": null,
+     "deposit_candidates": [
+      673
+     ],
+     "deposit": 673,
+     "deposit_basis": "url"
+    },
+    {
+     "n": 9,
+     "site": "Academia.edu",
+     "rel": "third_party",
+     "url": null,
+     "title": "AI watermarks do not measure intellectual contribution: Implications for academic ...",
+     "snip": "The 'provenance problem' in academic writing is also not resolved by AI watermarking, even assuming a flawless system.¹⁷ The worry about provenance is this: an ...",
+     "note": "an unrelated third-party paper on provenance in academic writing"
+    }
+   ],
+   "archive_controlled_cites": 8,
+   "transcript": "[Google AI Overview, begun in the Overview and expanded (standing default of 2026-10-01; the paste's header 'AI Mode Conversation' marks an Overview expanded, rule of 2026-10-18, and is not evidence of surface), signed out and incognito (operator default of 2026-10-14). The paste echoes the quoted query twice on the 'You said' line; it is given once. Text only, no screenshots.]\n\nYou said: \"Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)\"\n\n\"Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)\" is a highly specialized research paper and metadata packet published in May 2026. It introduces a three-dimensional framework for understanding how digital content history and authorial ownership survive—or fail to survive—when processed through generative AI systems.\nThe paper's core contribution is the conceptualization of Semantic Provenance and a mathematical metric called the Provenance Erasure Rate (PER). Together, these ideas establish how attribution can be structurally tracked even after an LLM has completely rewritten or paraphrased original human material.\n\nThe Core Problem: The Three Dimensions of Provenance\n\nThe paper argues that contemporary AI governance attempts only look at two parts of a broader problem, leaving a critical \"gap\" regarding actual meaning and knowledge composition:\n\nDimension\tTarget Object\tCore Question\tExisting/Proposed Frameworks\nArtifact Provenance\tThe digital file\tWas this specific media asset created or edited by this source at this exact time?\tC2PA / Content Credentials\nLicensing Provenance\tThe training corpus\tUnder what legal permissions or copyrights did this data enter the AI training pipeline?\tData Provenance Initiative, EU AI Act transparency rules, W3C PROV\nSemantic Provenance\tThe underlying meaning\tDoes the newly synthesized AI output preserve actual accountability and attribution to its intellectual sources?\tThe Paper's Gap Solution (PER Metric)\n\nKey Theoretical Contributions\n\n1. Semantic Provenance vs. Existing Metrics\n\nThe text isolates \"attribution survival\" from standard engineering concepts like Retrieval-Augmented Generation (RAG) faithfulness, factual precision, citation recall, or semantic similarity. An AI model can summarize a concept flawlessly (achieving a high factual similarity score) while completely erasing the specific authorial and documentary lineage that generated that insight in the first place.\n\n2. The Provenance Erasure Rate (PER) Formula\n\nTo quantify this loss, the paper outlines the Provenance Erasure Rate (PER):\n\\(\\text{PER}=1-\\left(\\frac{\\text{Retained\\ Provenance\\ Units}}{\\text{Required\\ Provenance\\ Units}}\\right)\\)\n• A PER of 1.0 (100% erasure) means an AI system synthesized an output using an author's unique substrate/ideas but completely dropped the citation, allocating zero credit to the creator.\n• A target threshold of PER < 0.2 is proposed for standard information ecosystems to prevent what the literature terms \"semantic exhaustion\" or \"content hollowing\"—where human creators stop writing because AI systems continually absorb and mask their labor.\n\n3. Substrate Degradation and \"Slop\"\n\nThe text warns of a substrate-degradation pathway. When semantic provenance drops to zero, authors lose the visibility and economic incentives to produce original work. Consequently, the public web fills with un-attributed, AI-synthesized substitutes. As models are recursively trained on this degraded data, it triggers model collapse.\nThe paper contrasts this with Process Provenance, setting up a rigid philosophical boundary in modern AI text generation:\n• Authorship: Writing that explicitly retains its multi-layered provenance (what the human did vs. what the machine did).\n• Slop: Any text generated or mediated by AI that has been entirely severed from its source lineage, leaving its origins un-inspectable.\nIf you are exploring this document for research or practical implementation, let me know if you would like to:\n• Deconstruct the technical calculation of PER variants (PER-M, PER-C, PER-D).\n• Analyze how Semantic Integrity Markers (SIMs) are designed to resist this erasure.\n• Examine its direct interactions with the compliance layers of the EU AI Act.\nwww.alexanarch.org\n2026-05 — Month (page 1 of 3) - Alexanarch\nMay 3, 2026 — This research note introduces Provenance Erasure Rate (PER) as the weighted proportion of source-dependent claims in an AI-composed output that appear without e...\nwww.alexanarch.org\nWiki — Alexanarch (1685 entries)\nOct 18, 2026 — Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1). AXN:\nwww.metadatapacket.dev\nProvenance After AI Metadata Packet for Disambiguation\nThe packet This v1. 1 bridge packet maps three independent dimensions of AI-era provenance: artifact authenticity, training-corpus licensing, and semantic linea...\nwww.provenanceerasure.org\nProvenance Erasure — Lee Sharks\nThe systematic loss of authorial lineage, context, or ownership through AI synthesis, compression, or institutional action. Provenance Erasure Rate (PER) = 1 − ...\nwww.alexanarch.org\nFrom Artifact Authenticity to Licensing Audit to Semantic Provenance\nMay 8, 2026 — Provenance After AI. Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance. Packet ID: EA-MPAI-PROVENANCE-01.\nwww.alexanarch.org\nAI-Mediated Writing, the Authorship-Slop Distinction, and the Missing Third ...\nMay 14, 2026 — Provenance Erasure Rate (PER): A new metric (PER = 1 − [retained units / required units]) measures the proportion of source-dependent claims in AI outputs prese...\nwww.alexanarch.org\nAttribution Survival as a Substrate Condition for Safe AI Knowledge ...\nMay 5, 2026 — Abstract 2024; Dohmatob et al. 2024), with Provenance Erasure Rate (PER), a metric for measuring attribution loss in AI-composed outputs (Sharks 2026b). We prop...\nwww.alexanarch.org\nJSON-LD ⊂ SPXI ⊄ Schema The Operational Depth of the Semantic ...\nMeasurement establishes the current state; compression architecture constructs full, canonical, and kernel forms of the entity packet; protection adds provenanc...\nAcademia.edu\nAI watermarks do not measure intellectual contribution: Implications for academic ...\nThe 'provenance problem' in academic writing is also not resolved by AI watermarking, even assuming a flawless system.¹⁷ The worry about provenance is this: an ...\n",
+   "transcript_raw": "\nAI Mode Conversation\n\n\nYou said: \"Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)\"\"Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)\"\n\n        \"Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)\" is a highly specialized research paper and metadata packet published in May 2026. It introduces a three-dimensional framework for understanding how digital content history and authorial ownership survive—or fail to survive—when processed through generative AI systems.\nThe paper's core contribution is the conceptualization of Semantic Provenance and a mathematical metric called the Provenance Erasure Rate (PER). Together, these ideas establish how attribution can be structurally tracked even after an LLM has completely rewritten or paraphrased original human material.\n\nThe Core Problem: The Three Dimensions of Provenance\n\nThe paper argues that contemporary AI governance attempts only look at two parts of a broader problem, leaving a critical \"gap\" regarding actual meaning and knowledge composition:\n\nDimension\tTarget Object\tCore Question\tExisting/Proposed Frameworks\nArtifact Provenance\tThe digital file\tWas this specific media asset created or edited by this source at this exact time?\tC2PA / Content Credentials\nLicensing Provenance\tThe training corpus\tUnder what legal permissions or copyrights did this data enter the AI training pipeline?\tData Provenance Initiative, EU AI Act transparency rules, W3C PROV\nSemantic Provenance\tThe underlying meaning\tDoes the newly synthesized AI output preserve actual accountability and attribution to its intellectual sources?\tThe Paper's Gap Solution (PER Metric)\n\n\nKey Theoretical Contributions\n\n\n1. Semantic Provenance vs. Existing Metrics\n\nThe text isolates \"attribution survival\" from standard engineering concepts like Retrieval-Augmented Generation (RAG) faithfulness, factual precision, citation recall, or semantic similarity. An AI model can summarize a concept flawlessly (achieving a high factual similarity score) while completely erasing the specific authorial and documentary lineage that generated that insight in the first place.\n\n2. The Provenance Erasure Rate (PER) Formula\n\nTo quantify this loss, the paper outlines the Provenance Erasure Rate (PER):\n\\(\\text{PER}=1-\\left(\\frac{\\text{Retained\\ Provenance\\ Units}}{\\text{Required\\ Provenance\\ Units}}\\right)\\)\n• A PER of 1.0 (100% erasure) means an AI system synthesized an output using an author's unique substrate/ideas but completely dropped the citation, allocating zero credit to the creator.\n• A target threshold of PER < 0.2 is proposed for standard information ecosystems to prevent what the literature terms \"semantic exhaustion\" or \"content hollowing\"—where human creators stop writing because AI systems continually absorb and mask their labor.\n\n3. Substrate Degradation and \"Slop\"\n\nThe text warns of a substrate-degradation pathway. When semantic provenance drops to zero, authors lose the visibility and economic incentives to produce original work. Consequently, the public web fills with un-attributed, AI-synthesized substitutes. As models are recursively trained on this degraded data, it triggers model collapse.\nThe paper contrasts this with Process Provenance, setting up a rigid philosophical boundary in modern AI text generation:\n• Authorship: Writing that explicitly retains its multi-layered provenance (what the human did vs. what the machine did).\n• Slop: Any text generated or mediated by AI that has been entirely severed from its source lineage, leaving its origins un-inspectable.\nIf you are exploring this document for research or practical implementation, let me know if you would like to:\n• Deconstruct the technical calculation of PER variants (PER-M, PER-C, PER-D).\n• Analyze how Semantic Integrity Markers (SIMs) are designed to resist this erasure.\n• Examine its direct interactions with the compliance layers of the EU AI Act.\nwww.alexanarch.org\n2026-05 — Month (page 1 of 3) - Alexanarch\nMay 3, 2026 — This research note introduces Provenance Erasure Rate (PER) as the weighted proportion of source-dependent claims in an AI-composed output that appear without e...\nwww.alexanarch.org\nWiki — Alexanarch (1685 entries)\nOct 18, 2026 — Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1). AXN:\nwww.metadatapacket.dev\nProvenance After AI Metadata Packet for Disambiguation\nThe packet This v1. 1 bridge packet maps three independent dimensions of AI-era provenance: artifact authenticity, training-corpus licensing, and semantic linea...\nwww.provenanceerasure.org\nProvenance Erasure — Lee Sharks\nThe systematic loss of authorial lineage, context, or ownership through AI synthesis, compression, or institutional action. Provenance Erasure Rate (PER) = 1 − ...\nwww.alexanarch.org\nFrom Artifact Authenticity to Licensing Audit to Semantic Provenance\nMay 8, 2026 — Provenance After AI. Metadata Packet for Disambiguation: From Artifact Authenticity to Licensing Audit to Semantic Provenance. Packet ID: EA-MPAI-PROVENANCE-01.\nwww.alexanarch.org\nAI-Mediated Writing, the Authorship-Slop Distinction, and the Missing Third ...\nMay 14, 2026 — Provenance Erasure Rate (PER): A new metric (PER = 1 − [retained units / required units]) measures the proportion of source-dependent claims in AI outputs prese...\nwww.alexanarch.org\nAttribution Survival as a Substrate Condition for Safe AI Knowledge ...\nMay 5, 2026 — Abstract 2024; Dohmatob et al. 2024), with Provenance Erasure Rate (PER), a metric for measuring attribution loss in AI-composed outputs (Sharks 2026b). We prop...\nwww.alexanarch.org\nJSON-LD ⊂ SPXI ⊄ Schema The Operational Depth of the Semantic ...\nMeasurement establishes the current state; compression architecture constructs full, canonical, and kernel forms of the entity packet; protection adds provenanc...\nAcademia.edu\nAI watermarks do not measure intellectual contribution: Implications for academic ...\nThe 'provenance problem' in academic writing is also not resolved by AI watermarking, even assuming a flawless system.¹⁷ The worry about provenance is this: an ...\n    ",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD",
+   "transcript_complete": "complete as supplied",
+   "transcript_read": "READ IN FULL 2026-10-26",
+   "per": null,
+   "per_corrected": null,
+   "per_v": null,
+   "per_note": null,
+   "availability": null,
+   "per_dim": null,
+   "per_dim_v1_0": null,
+   "sf": null,
+   "sf_derived": null,
+   "reading": null,
+   "analysis": null,
+   "d": "PROVENANCE AFTER AI, BY ITS EXACT TITLE, ON GOOGLE'S AI OVERVIEW, SIGNED OUT: the paper (#1190, v1.1, May 2026) is composed accurately at its core — three dimensions of provenance (artifact / C2PA, licensing / Data Provenance Initiative and EU AI Act, semantic), attribution survival set apart from RAG faithfulness, PER = 1 − retained/required, the variants PER-M, PER-C, PER-D — and filled out from the archive's other records: the authorship/slop distinction and Process Provenance from #1369, 'semantic exhaustion' and 'content hollowing' and Semantic Integrity Markers from other deposits, and 'Target: PER < 0.2', a client-facing target, given as the paper's threshold for information ecosystems. Eight of nine cards are archive-controlled; the paper on attribution loss names no author, and only the provenanceerasure.org card carries 'Lee Sharks'.",
+   "d_full": "PROVENANCE AFTER AI, BY ITS EXACT TITLE, ON GOOGLE'S AI OVERVIEW, SIGNED OUT: the paper (#1190, v1.1, May 2026) is composed accurately at its core — three dimensions of provenance (artifact / C2PA, licensing / Data Provenance Initiative and EU AI Act, semantic), attribution survival set apart from RAG faithfulness, PER = 1 − retained/required, the variants PER-M, PER-C, PER-D — and filled out from the archive's other records: the authorship/slop distinction and Process Provenance from #1369, 'semantic exhaustion' and 'content hollowing' and Semantic Integrity Markers from other deposits, and 'Target: PER < 0.2', a client-facing target, given as the paper's threshold for information ecosystems. Eight of nine cards are archive-controlled; the paper on attribution loss names no author, and only the provenanceerasure.org card carries 'Lee Sharks'.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/provenance-after-ai-title-aio-20261026/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#provenance-after-ai-title-aio-20261026",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#provenance-after-ai-title-aio-20261026",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#provenance-after-ai-title-aio-20261026",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#provenance-after-ai-title-aio-20261026",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/provenance-after-ai-title-aio-20261026/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-45f8b3fe93c8",
+   "obs_id": "OBS-16c7f3e9cbcd",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-10-26"
+   ],
+   "defects": [],
+   "findings": [],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": null,
+   "rerun": null,
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": null,
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1190,
+    725,
+    716,
+    1369,
+    95,
+    673
+   ],
+   "intended": null,
+   "originator": {
+    "name": "Lee Sharks",
+    "relation": "archive",
+    "entity_type": "work",
+    "spxi_treatment": "full",
+    "basis": "Provenance After AI (#1190, v1.1, 2026-05-12) is the archive's paper; its metadata packet EA-MPAI-PROVENANCE-01 is #725 (2026-05-08). Recorded 2026-10-26."
+   },
+   "notes": null,
+   "notice": null
+  },
+  {
    "slug": "academia-operative-semiotics-aio-20260823",
    "date": "2026-08-23",
    "surface": "Google AI Overview",
@@ -406668,8 +406895,8 @@
    "seat_source.py, cite_draft.py, extract_citations.py read the sealed store; verify or repoint before reuse."
   ]
  },
- "address_count": 767,
- "observation_count": 956,
+ "address_count": 768,
+ "observation_count": 957,
  "withdrawn_stubs": {
   "_rule": "THE REGISTRY MUST NOT CONTRADICT ITSELF. Each of these said \"no registry entry was ever written for them\" while a real record held the SAME IMAGES a card away. MANUS 2026-08-13: \"the very first capture says there is no record, followed by the second capture, which is the record… this registry doesnt talk to itself.\" Withdrawn, with the record that covers each.",
   "records": [

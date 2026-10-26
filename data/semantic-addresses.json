@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-26T02:24:50Z",
+  "regenerated_at": "2026-10-26T06:22:53Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "532d92203f288058e947d5e57bc38d239d268ad96c94229bc16ca71c41a72a59",
+    "mm-main-capture": "f91ff38ff066978e6c23dd751a9a75e5aaca7a068c95ee40128470d1d3bb9b35",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2504,
-  "total_observations": 1025,
+  "total_addresses": 2505,
+  "total_observations": 1026,
   "class_counts": {
     "subjunctive": 1741,
-    "observed_address": 746,
+    "observed_address": 747,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1869,
+    "unmatched": 1870,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -4024,6 +4024,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-18",
       "latest_status": "\"PREDATION OF MEANING\", QUOTED — TRACE AND FRACTION NAMED, A TAXONOMY #1154 DOES NOT HAVE"
+    },
+    "\"provenance after ai: semantic provenance and the provenance erasure rate as extension of c2pa, data provenance initiative, and eu ai act frameworks (v1.1)\"": {
+      "canonical_query": "\"provenance after ai: semantic provenance and the provenance erasure rate as extension of c2pa, data provenance initiative, and eu ai act frameworks (v1.1)\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-26",
+          "status": "PROVENANCE AFTER AI, BY ITS EXACT TITLE — THE PAPER ON ATTRIBUTION SURVIVAL, SUMMARIZED WITHOUT ITS AUTHOR",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "provenance-after-ai-title-aio-20261026",
+          "gallery_url": "https://www.alexanarch.org/captures/#provenance-after-ai-title-aio-20261026",
+          "record_url": "https://www.alexanarch.org/captures/provenance-after-ai-title-aio-20261026/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#provenance-after-ai-title-aio-20261026",
+          "details_excerpt": "PROVENANCE AFTER AI, BY ITS EXACT TITLE, ON GOOGLE'S AI OVERVIEW, SIGNED OUT: the paper (#1190, v1.1, May 2026) is composed accurately at its core — three dimensions of provenance (artifact / C2PA, licensing / Data Prove"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Provenance After AI (#1190, v1.1, 2026-05-12) is the archive's paper; its metadata packet EA-MPAI-PROVENANCE-01 is #725 (2026-05-08). Recorded 2026-10-26."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-26",
+      "latest_status": "PROVENANCE AFTER AI, BY ITS EXACT TITLE — THE PAPER ON ATTRIBUTION SURVIVAL, SUMMARIZED WITHOUT ITS AUTHOR"
     },
     "\"provenance alignment\"": {
       "canonical_query": "\"provenance alignment\"",
