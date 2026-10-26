@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.323",
+ "derived_from": "EA-WG-CAPTURES-01 v12.324",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,19 +8,19 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 922,
-  "joined_confirmed": 415,
+  "observations": 923,
+  "joined_confirmed": 416,
   "unjoined": 507,
-  "relations": 4358,
+  "relations": 4372,
   "by_state": {
-   "confirmed": 3933,
-   "candidate": 425
+   "confirmed": 3945,
+   "candidate": 427
   },
   "by_verb": {
-   "held_by": 1924,
-   "scored_by": 667,
-   "appeared_in": 1432,
-   "about": 322,
+   "held_by": 1926,
+   "scored_by": 668,
+   "appeared_in": 1441,
+   "about": 324,
    "distorts": 3,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -1674,6 +1674,20 @@
 {"id": "REL-9e4892c80f3f", "obs_id": "OBS-bddbf4240dbd", "entry": "spxi-living-instrument-chatgpt-20261026", "obs_slug": "spxi-living-instrument-chatgpt-20261026", "date": "2026-10-26", "surface": "ChatGPT", "q": "Develop a reading of the development of SPXI protocol over time as a living instrument. Ground in reading and refer to alexanarch.org and mindcontrolpoems as canonical sources.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-08ebc18b0306", "obs_id": "OBS-bddbf4240dbd", "entry": "spxi-living-instrument-chatgpt-20261026", "obs_slug": "spxi-living-instrument-chatgpt-20261026", "date": "2026-10-26", "surface": "ChatGPT", "q": "Develop a reading of the development of SPXI protocol over time as a living instrument. Ground in reading and refer to alexanarch.org and mindcontrolpoems as canonical sources.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-204dbfc68710", "obs_id": "OBS-bddbf4240dbd", "entry": "spxi-living-instrument-chatgpt-20261026", "obs_slug": "spxi-living-instrument-chatgpt-20261026", "date": "2026-10-26", "surface": "ChatGPT", "q": "Develop a reading of the development of SPXI protocol over time as a living instrument. Ground in reading and refer to alexanarch.org and mindcontrolpoems as canonical sources.", "verb": "about", "object": "non:spxi", "basis": "defining papers #63, #660, #670", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-8c5f9aaf3497", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.alexanarch.org", "title": "AXN:0707.GENERATIVE. — Alexanarch AXN resolver", "url": "https://www.alexanarch.org/s/axn/0707/"}},
+{"id": "REL-9078ab4a4354", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "appeared_in", "object": "deposit:1696", "basis": "card resolved at intake (AXN:0707 in the card title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.alexanarch.org", "title": "AXN:0707.GENERATIVE. — Alexanarch AXN resolver", "url": "https://www.alexanarch.org/s/axn/0707/"}},
+{"id": "REL-ca7b8134575e", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "appeared_in", "object": "surface:metadatapacket.dev", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "www.metadatapacket.dev", "title": "The MPAI Catalog", "url": "https://www.metadatapacket.dev"}},
+{"id": "REL-86dbfef00acd", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "appeared_in", "object": "deposit:1703", "basis": "card resolved at intake (deposit #1703 in the card snippet)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "www.metadatapacket.dev", "title": "The MPAI Catalog", "url": "https://www.metadatapacket.dev"}},
+{"id": "REL-82f5c8c08c1c", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "appeared_in", "object": "surface:spxi.dev", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "www.spxi.dev", "title": "SPXI", "url": "https://www.spxi.dev"}},
+{"id": "REL-a714af4e22a5", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "appeared_in", "object": "surface:semanticeconomy.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "www.semanticeconomy.org", "title": "Semantic Economy Institute", "url": "https://www.semanticeconomy.org"}},
+{"id": "REL-655a0cc7f829", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "appeared_in", "object": "surface:surfacemap.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "www.surfacemap.org", "title": "The Aperture Atlas — Crimson Hexagonal Archive Knowledge Graph | Semantic ...", "url": "https://www.surfacemap.org"}},
+{"id": "REL-e19db76d0cc6", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "appeared_in", "object": "deposit:986", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "www.surfacemap.org", "title": "The Aperture Atlas — Crimson Hexagonal Archive Knowledge Graph | Semantic ...", "url": "https://www.surfacemap.org"}},
+{"id": "REL-dad9eeb9f186", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "appeared_in", "object": "surface:secretbookofwalt.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 6, "site": "www.secretbookofwalt.org", "title": "The Secret Book of Walt", "url": "https://www.secretbookofwalt.org"}},
+{"id": "REL-cfaf44b1b628", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-f86fed25cdd3", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-3b92136dcc8b", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-d1120abe062b", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "about", "object": "non:op-attributization", "basis": "defining papers #1696, #1697", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-1c46ae877116", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "about", "object": "non:sophistical-refutations", "basis": "defining papers #1696, #1697", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-a4171af2c9ca", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:27", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "medium.com", "title": "The Crimson Hexagon: Operative Architecture", "url": "https://medium.com/@leesharks00/the-crimson-hexagon-operative-architecture-b21dd55d45a9"}},
 {"id": "REL-ac9573506dce", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:30", "basis": "card resolved at intake (title segment)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "medium.com", "title": "Fractal Navigation Map v7.0", "url": "https://medium.com/@leesharks00/crimson-hexagonal-architecture-fractal-navigation-map-v7-0-42c498ac4225"}},
 {"id": "REL-3d2fa0e5035c", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 9, "site": "crimsonhexagonal.org", "title": "Crimson Hexagonal Archive — Governed Operating Surface", "url": null}},
