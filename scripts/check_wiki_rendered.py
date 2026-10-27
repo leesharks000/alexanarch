@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A record whose wiki is authored must have it on the page.
+"""A record whose wiki is authored must have it on its identifier page (/s/axn/<HEX>/; the record page until 2026-10-27).
 
 The record page renders wiki_article only where wiki_status marks the text as
 authored; provisional, pending and AUTHORSHIP_REQUIRED entries are deliberately
@@ -36,7 +36,8 @@ for d in reg['deposits']:
         continue
     if (d.get('status') or 'ACTIVE') != 'ACTIVE':
         continue
-    p = f's/records/{n}/index.html'
+    # 2026-10-27 (MANUS): the wiki text is published on the identifier page, not the record page.
+    p = f"s/axn/{d.get('hex')}/index.html"
     if not os.path.exists(p):
         fail.append(f"#{n}: authored wiki, but no record page at {p}"); continue
     checked += 1

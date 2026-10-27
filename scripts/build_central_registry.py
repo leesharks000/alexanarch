@@ -44,9 +44,15 @@ for d in deps:
     e = {"axn": axn, "source": "deposit", "deposit_number": d["deposit_number"],
          "title": (d.get("title") or "")[:110], "record": f"/s/records/{d['deposit_number']}/",
          "status": "deposited"}
+    _prior = [x for x in (d.get("axn_prior") or []) if x.get("axn")]
+    if _prior:
+        e["prior"] = [x["axn"] for x in _prior]  # 2026-10-27: prior forms name the same record
     claim(hx, e)
     sha = sha_by_axn.get(axn)
     if sha: kernels[sha] = {"role": "axn0", **e}
+    for x in _prior:
+        if x.get("hash") and x["hash"] not in kernels:
+            kernels[x["hash"]] = {"role": "axn0-prior", "prior_axn": x["axn"], "until": x.get("until"), **e}
     # alias emission: any retired label whose hex differs from the current key
     for h in (d.get("axn_history") or []):
         m = re.match(r"AXN:([0-9A-Fa-f]+)\.", h.get("axn",""))

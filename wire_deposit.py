@@ -2040,20 +2040,12 @@ def regenerate_static_page(d, eidx, registry=None):
 
     kw_html = ''.join(f'<span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">{esc(k)}</span>' for k in d.get('keywords', []))
     
-    # Wiki article section
+    # Wiki article section. MANUS, 2026-10-27: the wiki text is published on the identifier page (/s/axn/<HEX>/),
+    # which AI Overview reads for records it cannot reach, and not repeated here beside the description.
     wiki_html = ''
-    if d.get('wiki_article'):
-        wiki_text = esc(d['wiki_article'])
-        wiki_text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', wiki_text)
-        wiki_text = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', wiki_text)
-        wiki_html = (
-            f'<h2>Wiki Article</h2>\n'
-            f'<div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;'
-            f'padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333">{wiki_text}'
-            f'<div style="margin-top:12px;padding-top:9px;border-top:1px solid var(--border);'
-            f'font-size:.88em;color:#666">Also published as a standalone entry: '
-            f'<a href="/s/wiki/{d["deposit_number"]}/" style="color:var(--accent)">'
-            f'/s/wiki/{d["deposit_number"]}/</a></div></div>')
+    if d.get('wiki_article') and d.get('hex'):
+        wiki_html = (f'<p style="font-size:.86em;color:#666;margin:10px 0">The encyclopedic entry for this work is on its '
+                     f'identifier page: <a href="/s/axn/{d["hex"]}/" style="color:var(--accent)">/s/axn/{d["hex"]}/</a></p>')
     
     # Concepts section
     concepts_html = ''
@@ -2308,7 +2300,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}}*{{margin:0;padding:0;box-sizing:border-box}}body{{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}}.wrap{{max-width:720px;margin:0 auto;padding:60px 24px}}a{{color:var(--accent);text-decoration:none}}a:hover{{color:var(--accent2)}}h1{{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}}h2{{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}}p{{margin-bottom:10px;color:#333}}.nav{{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}}.nav a{{color:#777;font-weight:500;text-decoration:none}}.nav a:hover{{color:var(--accent)}}.ft{{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}}.ft h1,.ft h2,.ft h3{{color:var(--accent);margin:12px 0 6px}}.ft h1{{font-size:1.1em}}.ft h2{{font-size:1em;border-bottom:none}}.ft h3{{font-size:.95em}}.ft strong{{color:var(--fg)}}.ft blockquote{{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}}.ft hr{{border:none;border-top:1px solid var(--border);margin:12px 0}}.footer{{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}}</style>
 </head><body><div class="wrap">
 {render_navbar()}
-<div role="text" aria-label="{esc(_axn_aria(d["axn"]))}" style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">{esc(d["axn"])}</div>
+<div role="text" aria-label="{esc(_axn_aria(d["axn"]))}" style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0"><a href="/s/axn/{esc(str(d.get("hex","")))}/" style="color:inherit;border:none;text-decoration:none" title="the identifier's resolver">{esc(d["axn"])}</a>{"".join(f'<div style="font-size:.62em;color:#888;margin-top:4px">prior form: {esc(x.get("axn",""))}</div>' for x in (d.get("axn_prior") or []))}</div>
 {version_banner}
 {rel_block}
 <h1>{esc(d["title"])}</h1>

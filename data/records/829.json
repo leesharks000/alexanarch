@@ -1,10 +1,10 @@
 {
- "axn": "AXN:0347.GOVERNANCE.🔆📌🧊∮🕓🌺",
+ "axn": "AXN:0347.GOVERNANCE.⊗🗿🐚➗👐❤️",
  "root_axn": "AXN:0347.GOVERNANCE",
  "hex": "0347",
  "family": "GOVERNANCE",
- "emoji": "🔆📌🧊∮🕓🌺",
- "hash": "ec461d95657199967d3157e55695dbebcd7580625ee0ff99ac0f3bd92c127cc4",
+ "emoji": "⊗🗿🐚➗👐❤️",
+ "hash": "97fc7a93b2812c544d6ad329cd03bf3cb1a057d98c2fdddee2d6ef802c479d94",
  "title": "Proposal: optional summarization-governance fields — provenance_kernel, disambiguation, summary_policy",
  "creator": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -29,15 +29,15 @@
  "minted_at": "2026-06-20T22:00:00Z",
  "status": "ACTIVE",
  "clusters": [
-  "Liminal",
-  "Scriptural",
-  "Elemental",
   "Mathematical",
-  "Temporal",
-  "Organic"
+  "Terminal",
+  "Organic",
+  "Mathematical",
+  "Gestural",
+  "Symbolic"
  ],
- "reading": "Threshold → Text → Force → Proof → Duration → Growth",
- "axn_canonical": "ec461d95657199967d3157e55695dbebcd7580625ee0ff99ac0f3bd92c127cc4",
+ "reading": "Proof -> Closure -> Growth -> Proof -> Touch -> Play",
+ "axn_canonical": "97fc7a93b2812c544d6ad329cd03bf3cb1a057d98c2fdddee2d6ef802c479d94",
  "axn_display": "🔆📌🧊∮🕓🌺",
  "mirrors": {
   "blog": "https://mindcontrolpoems.blogspot.com/2026/06/proposal-optional-summarization.html"
@@ -141,9 +141,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": ">",
    "now": "This record preserves a proposal filed to the Google Cloud Open Knowledge Format project asking the format to support optional producer-declared summarization-governance fields. The proposed fields are `provenance_kernel`, `disambiguation`, and `summary_policy`, with an optional human-readable provenance section in the document body.\n\nThe proposal distinguishes three problems that are often collapsed. Descriptive provenance states where knowledge came from. Trust and safety address whether knowledge should be used. Summarization governance states which distinctions, identities, or formulations a producer considers load-bearing when an agent later compresses the knowledge. The proposed fields would let a producer name a preferred attribution kernel, identify nearby entities or meanings that must not be merged, and state required or forbidden summary behaviors.\n\nThe proposal is deliberately non-enforcing. It does not claim that an author may dictate every downstream interpretation or prevent criticism. A consumer or model may ignore the fields. Their value is to create a machine-readable surface where the producer’s declared expectations can be compared with the actual output. This converts a vague fidelity dispute into an observable compliance question.\n\nThe body uses the archive’s capture registry as motivation and argues that structurally clean input formats can still lose author, source, correction, or conceptual boundaries at output. It also argues that governance carried only in metadata may be stripped before generation, making visible body text an important fallback.\n\nThis is a timestamped standards contribution, not part of an adopted OKF specification. Its relation to later issues, maintainer discussion, or implementation must be verified against the repository history. The descriptive article should not imply Google accepted, endorsed, or deployed the fields."
+  },
+  {
+   "date": "2026-10-27",
+   "field": "axn",
+   "reason": "AXN re-derived from the canonical text (batch)",
+   "was": "AXN:0347.GOVERNANCE.🔆📌🧊∮🕓🌺",
+   "now": "AXN:0347.GOVERNANCE.⊗🗿🐚➗👐❤️"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-27",
  "publisher": "Pergamon Press",
  "journal_assignment": {
   "assigned": "2026-08-15",
@@ -173,7 +180,7 @@
   "sovereign_id": "MM-CHA-0835",
   "batch_axn": "AXN:0347.GOVERNANCE.🔆📌🧊∮🕓🌺",
   "batch_hash": "ec461d95657199967d3157e55695dbebcd7580625ee0ff99ac0f3bd92c127cc4",
-  "batch_axn_current": true,
+  "batch_axn_current": false,
   "batch_derivation": "as mint_derivation",
   "attestation": {
    "by": "Lee Sharks (MANUS)",
@@ -181,7 +188,12 @@
    "statement": "what the batch axns were minting over was the absence of the deleted records themselves",
    "standing": "attestation of the founding event; not derivation evidence"
   },
-  "former_doi_count": 0
+  "former_doi_count": 0,
+  "batch_axn_superseded": {
+   "on": "2026-10-27",
+   "by": "AXN:0347.GOVERNANCE.⊗🗿🐚➗👐❤️",
+   "ruled_by": "Lee Sharks, 2026-10-27: \"axns should match their records\" — \"1. all 762.\" — \"2. leave as is as long as old axns resolve correctly.\" — \"fill the two.\""
+  }
  },
  "manifestations": {
   "ledger": "/data/axn-derivation-ledger.json#829",
@@ -204,6 +216,16 @@
   },
   "unaccounted_byte_differences": 2
  },
+ "axn_prior": [
+  {
+   "axn": "AXN:0347.GOVERNANCE.🔆📌🧊∮🕓🌺",
+   "hash": "ec461d95657199967d3157e55695dbebcd7580625ee0ff99ac0f3bd92c127cc4",
+   "until": "2026-10-27",
+   "why": "the 2026-06-20 batch assignment; the stored hash is of no bytes the archive holds"
+  }
+ ],
+ "axn_reading": "Proof -> Closure -> Growth -> Proof -> Touch -> Play",
+ "axn_glyph_table": "v2.1",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/829/",

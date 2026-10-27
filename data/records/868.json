@@ -1,9 +1,9 @@
 {
- "axn": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+ "axn": "AXN:0371.EMPIRICAL.💛👁️⭕🔆🛸🧬",
  "hex": "0371",
  "family": "EMPIRICAL",
- "emoji": "👋☁️⛩️☄️🤙📝",
- "hash": "ba04230bbf4773988d3fb16682abfc1a7fb8a08898bd722ca4f4d123a07cbf83",
+ "emoji": "💛👁️⭕🔆🛸🧬",
+ "hash": "cd57eeec5e3b3508323932e87b3e18e17b969382ba4e004eb1305fb9c78943bb",
  "title": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite (EA-MPAI-DOI-IMPERMANENCE-01)",
  "creator": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -32,8 +32,15 @@
  "issue_url": "",
  "minted_at": "2026-06-22T02:55:00Z",
  "status": "ACTIVE",
- "clusters": [],
- "reading": "",
+ "clusters": [
+  "Signal",
+  "Navigational",
+  "Liminal",
+  "Liminal",
+  "Navigational",
+  "Instrumental"
+ ],
+ "reading": "Alarm -> Search -> Threshold -> Threshold -> Search -> Method",
  "mirrors": [],
  "full_text_path": "data/deposits/AXN-0371.md",
  "citations": [],
@@ -114,7 +121,7 @@
    "note": "the structured description of what the DOI identifies"
   }
  ],
- "axn_canonical": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+ "axn_canonical": "cd57eeec5e3b3508323932e87b3e18e17b969382ba4e004eb1305fb9c78943bb",
  "axn_display": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
  "download_md": "data/deposits/AXN-0371.md",
  "deposit_number": 868,
@@ -168,9 +175,16 @@
    "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
    "was": "Empirical falsification of DOI persistence. Of 1,817 DOIs audited, 871 return HTTP 404 from DataCite's public metadata API — complete public metadata erasure. 946 preserved, 871 severed, sum exact. Stripping correlates with DOI type (concept vs version), not content. Mints identifier severance: the persistence of an identifier string after the public semantic relation between the string and its referent has been removed. Includes executable verification procedure.",
    "now": "This draft paper audits 1,817 DOI strings associated with the Crimson Hexagonal Archive and distinguishes three layers commonly collapsed under “persistent identifier”: the character string, URL resolution, and publicly recoverable identifying metadata.\n\nThe reconciled result reports 946 DOI records returning public DataCite metadata and 871 returning HTTP 404 from the DataCite public API on June 22, 2026. The sum is exact. The paper further reports that 926 of the 946 preserved records carried version relations, while the absent set was predominantly concept DOIs. This type correlation supports a mechanical paired-record explanation more strongly than a content-selective explanation, though the initiating system and exact process were undisclosed.\n\nThe paper coins **identifier severance** for a state in which a DOI string and perhaps a generic landing-page route persist while the public metadata needed to identify the scholarly referent is unavailable. It distinguishes a functioning persistent identifier, an identity-preserving tombstone, and what it calls a semantically severed token.\n\nThis conceptual distinction is valuable, but the title’s categorical “DOIs ≠ Persistent Identifiers” and several institutional statements require narrowing. A DOI’s persistence standard does not necessarily promise that every public API will serve every historical metadata record forever, nor does one repository episode falsify the entire DOI system. The observation establishes public DataCite API unavailability for the tested records at a specified time. It does not by itself establish that DOI strings were deregistered, that all metadata was erased internally, that no tombstone contained identity, or that persistence was contingent solely on account good standing.\n\nThe paper’s reproducibility section is a major strength. It provides example API requests and a method that could be rerun. A durable release should publish the complete classified DOI list, response logs, scripts, status timestamps, resolution checks, registry records, and later re-audits."
+  },
+  {
+   "date": "2026-10-27",
+   "field": "axn",
+   "reason": "AXN re-derived from the canonical text (text_changed)",
+   "was": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+   "now": "AXN:0371.EMPIRICAL.💛👁️⭕🔆🛸🧬"
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-27",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "journal": "Provenance: Journal of Forensic Semiotics",
  "journal_assignment": {
@@ -185,6 +199,16 @@
  "line": "doi-severance-and-restoration",
  "line_parent": "infrastructure",
  "line_basis": "derived",
+ "axn_prior": [
+  {
+   "axn": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+   "hash": "ba04230bbf4773988d3fb16682abfc1a7fb8a08898bd722ca4f4d123a07cbf83",
+   "until": "2026-10-27",
+   "why": "derived at mint; the canonical text was changed afterwards, and the AXN stayed on the earlier bytes"
+  }
+ ],
+ "axn_reading": "Alarm -> Search -> Threshold -> Threshold -> Search -> Method",
+ "axn_glyph_table": "v2.1",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/868/",

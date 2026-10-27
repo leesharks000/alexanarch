@@ -130,6 +130,10 @@ def card(name, seat, card_no, tpl, title=None):
     if src.exists():
         s = json.loads(src.read_text())
         bits = []
+        if s.get("axn"):
+            bits.append(f'<p><b>AXN</b> &middot; <span class="mono">{html.escape(s["axn"])}</span> &middot; '
+                        f'six glyphs of the SHA-256 of the seat&rsquo;s MANIFEST.sha256, under the hex of its seating '
+                        f'deposit (<a href="{CANON}/s/axn/{html.escape(s["axn"].split(":",1)[1].split(".",1)[0])}/">resolver</a>)</p>')
         for key, label in (("edition", "edition"), ("license", "license")):
             if s.get(key):
                 val = license_text(s[key]) if key == "license" else str(s[key])
@@ -176,6 +180,8 @@ def ocard(name, seat, display_title=None):
     """
     s = json.loads((seat / "source.json").read_text())
     rows = []
+    if s.get("axn"):
+        rows.append(f"AXN &middot; {html.escape(str(s['axn']))}")
     if s.get("edition"):
         rows.append(f"EDITION &middot; {html.escape(str(s['edition']))}")
     lang = s.get("language") or LANG_OF.get(name)

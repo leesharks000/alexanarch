@@ -53,7 +53,7 @@ AXN_GLYPHS = [
     "⌛", "⏰", "🕐", "🕑",
     "🕒", "🕓", "🕔", "🕕",
     "🕖", "🕗", "🕘", "🕙",
-    "🕚", "🕛", "⌛", "🔄",
+    "🕚", "🕛", "⏳", "🔄",
     "🌸", "🌺", "🌻", "🌹",
     "🍀", "🌲", "🌳", "🍁",
     "🍂", "🍄", "🐚", "🪸",
@@ -77,7 +77,7 @@ AXN_GLYPHS = [
     "🚨", "🔴", "🟠", "🟡",
     "🟢", "🔵", "🟣", "⚪",
     "⚫", "🟤", "💜", "💙",
-    "💚", "💛", "🧡", "❤️",
+    "💚", "💛", "🧡", "🖤",
     "🔺", "🔻", "◀️", "▶️",
     "🔼", "🔽", "⏩", "⏪",
     "⏫", "⏬", "↗️", "↘️",
@@ -91,6 +91,20 @@ AXN_GLYPHS = [
     "⏏️", "🔒", "🔓", "🔐",
     "🗿", "🪦", "♻️", "∞",
 ]
+
+# TABLE REVISION v2.1 (2026-10-27). The v2.0 table repeated two glyphs: "⌛" at 0x60 and again at
+# 0x6E, "❤️" at 0x81 and again at 0xCF, so a glyph string could not be read back to its bytes at
+# those positions. MANUS, 2026-10-27, offered the choice of filling the two duplicate slots or a
+# wider alphabet: "fill the two." 0x6E is now "⏳" (Temporal, beside "⌛"), 0xCF is now "🖤"
+# (Signal, the row of coloured hearts). Every archive deposit whose AXN derives through either
+# slot was re-derived the same day, its prior form kept (registry `axn_prior`, /api/axn-aliases.json).
+# AXN_GLYPHS_V20 is kept so that a symbolon registration made under the earlier table verifies
+# under the table it was made with (entries carry `glyph_table`).
+AXN_GLYPH_TABLE = "v2.1"
+AXN_GLYPHS_V20 = list(AXN_GLYPHS)
+AXN_GLYPHS_V20[0x6E] = "⌛"
+AXN_GLYPHS_V20[0xCF] = "❤️"
+assert len(set(AXN_GLYPHS)) == 256, "the v2.1 table must have 256 distinct glyphs"
 
 assert len(AXN_GLYPHS) == 256, f"AXN_GLYPHS must have 256 entries, has {len(AXN_GLYPHS)}"
 
@@ -185,15 +199,15 @@ CLUSTER_READINGS = {
 }
 
 
-def axn_glyph_from_hash(sha256_hex):
+def axn_glyph_from_hash(sha256_hex, table=None):
     """Given the full SHA-256 hex digest of canonical bytes, return the
-    canonical 6-emoji AXN glyph.
+    canonical 6-emoji AXN glyph (the current table, or `table` if given, e.g. AXN_GLYPHS_V20).
     """
     if len(sha256_hex) < 12:
         raise ValueError(f"sha256_hex too short: {len(sha256_hex)} chars (need >=12)")
     # First 6 bytes = first 12 hex chars
     bytes_used = bytes.fromhex(sha256_hex[:12])
-    return "".join(AXN_GLYPHS[b] for b in bytes_used)
+    return "".join((table or AXN_GLYPHS)[b] for b in bytes_used)
 
 
 def axn_clusters_from_hash(sha256_hex):

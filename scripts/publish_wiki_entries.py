@@ -118,6 +118,9 @@ def render_entry_page(entry: dict) -> str:
 
     page_url = f"https://www.alexanarch.org/s/wiki/{n}/"
     record_url = f"https://www.alexanarch.org/s/records/{n}/"
+    # 2026-10-27 (MANUS): the wiki text's indexed home is the identifier page; this standalone copy points there.
+    _hx = str(axn).split(":", 1)[-1].split(".", 1)[0] if str(axn).startswith("AXN:") else ""
+    axn_page_url = f"https://www.alexanarch.org/s/axn/{_hx}/" if _hx else record_url
 
     jsonld = {
         "@context": "https://schema.org",
@@ -141,7 +144,7 @@ def render_entry_page(entry: dict) -> str:
         f'<title>Wiki: {esc(title)} — Alexanarch</title>'
         f'<meta name="description" content="{esc(wiki_body[:160])}">'
         f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>'
-        f'<link rel="canonical" href="{record_url}">'
+        f'<link rel="canonical" href="{axn_page_url}">'
         '<meta name="robots" content="noindex,follow">'
         f'<meta name="citation_title" content="Wiki entry: {esc(title)}">'
         f'<meta name="citation_author" content="{esc(creator or "Lee Sharks")}">'

@@ -65520,5 +65520,10 @@
     "observed": "2026-10-13"
    }
   }
+ },
+ "re_derivation_2026_10_27": {
+  "ruling": "Lee Sharks, 2026-10-27: \"axns should match their records\" — \"1. all 762.\" — \"2. leave as is as long as old axns resolve correctly.\" — \"fill the two.\"",
+  "what": "Every deposit's AXN re-derived from the SHA-256 of its canonical text under glyph table v2.1 (808 records: 400 of this batch, 329 whose text changed after mint, 33 whose glyphs were not derived with the canonical table, 46 through the two slots filled in v2.1). The batch AXN and hash recorded here remain the historical assignment; each record's founding_event keeps them (batch_axn_current: false, batch_axn_superseded), its mint_derivation keeps the stored hash and its status, and its axn_prior keeps the form it carried until 2026-10-27. Recovery of bytes, derivation from them and later revisions stay distinct events: the derivation of 2026-10-27 verifies against the bytes the record serves, and asserts nothing about the batch hash's input.",
+  "aliases": "/api/axn-aliases.json"
  }
 }

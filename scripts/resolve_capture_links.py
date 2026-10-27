@@ -74,6 +74,13 @@ def build():
         n = d['deposit_number']
         by_num[n] = d
         a = str(d.get('axn') or '')
+        # 2026-10-27: a prior form of an AXN still names its record (data/api/axn-aliases.json).
+        for _pf in (d.get('axn_prior') or []):
+            if _pf.get('axn'):
+                by_axn.setdefault(_pf['axn'], n)
+        _fe = d.get('founding_event') or {}
+        if isinstance(_fe, dict) and _fe.get('batch_axn'):
+            by_axn.setdefault(_fe['batch_axn'], n)
         if a:
             by_axn[a] = n
             m = re.match(r'AXN:([0-9A-Fa-f]{4})', a)

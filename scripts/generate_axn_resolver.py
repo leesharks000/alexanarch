@@ -31,12 +31,28 @@ from collections import defaultdict
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
+def _md_inline(t):
+    """The wiki article's inline emphasis (**bold**, *italic*), escaped and rendered."""
+    import re as _re
+    t = html.escape(t)
+    t = _re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
+    return _re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])", r"<em>\1</em>", t)
+
+
 def main():
     r = json.load(open(ROOT/'data/registry.json'))
     byhex = defaultdict(list)
     for e in r['deposits']:
         if e.get('hex'): byhex[e['hex']].append(e)
     (ROOT/'s/axn').mkdir(parents=True, exist_ok=True)
+    # Seats of the originals shelf carry AXNs under the hex of the deposit that numbers them (family ORIGINAL).
+    _seats = defaultdict(list)
+    try:
+        for _c in json.load(open(ROOT/'data/api/corpora.json'))['corpora']:
+            if str(_c.get('axn','')).startswith('AXN:'):
+                _seats[_c['axn'].split(':',1)[1].split('.',1)[0]].append(_c)
+    except Exception:
+        pass
     idx = {}
     for hx, es in byhex.items():
         d = ROOT/'s/axn'/hx; d.mkdir(exist_ok=True)
@@ -44,6 +60,8 @@ def main():
             e = es[0]; n = e['deposit_number']
             url = f"https://www.alexanarch.org/s/records/{n}/"
             idx[hx] = {"deposit_number": n, "axn": e['axn'], "record": url, "sha256": e.get('hash','')}
+            _pf = [x.get('axn') for x in (e.get('axn_prior') or []) if x.get('axn')]
+            if _pf: idx[hx]["prior"] = _pf
             axn_url = f"https://www.alexanarch.org/s/axn/{hx}/"
             parts = str(e['axn']).split('.')
             family = parts[1] if len(parts) > 2 else ''
@@ -53,20 +71,19 @@ def main():
             _md = e.get('mint_derivation') or {}
             _cur = (e.get('manifestations') or {}).get('current') or {}
             _fe = e.get('founding_event') or {}
-            if _md.get('status') == _axd.STATUS_UNRETAINED:
-                _desc = (f"AXN {hx} is the identifier of Alexanarch deposit #{n}, established {_fe.get('date','2026-06-20')} in the "
-                         f"batch assignment that followed the 2026-06-19 deletion. Its mint input was not retained, so the six-glyph "
-                         f"suffix (a display hash of the stored SHA-256) cannot be re-derived from bytes the archive holds; the "
-                         f"record's served bytes carry their own SHA-256 and SWHID. Family: {family}.")
-            elif _md.get('status') == _axd.STATUS_VERIFIES_RETAINED:
-                _desc = (f"AXN {hx} is the identifier of Alexanarch deposit #{n}, derived from an earlier manifestation of the "
-                         f"record that the archive retains; the served bytes have changed since and carry their own SHA-256 and "
-                         f"SWHID. Family: {family}.")
-            else:
-                _desc = (f"AXN {hx} is the content-derived identifier of Alexanarch deposit "
-                         f"#{n}. The hex marks position in the archive; the six-glyph suffix is "
-                         f"a display hash of the canonical text's SHA-256, so the identifier is "
-                         f"derived from the work rather than assigned to it. Family: {family}.")
+            # 2026-10-27 (MANUS: "axns should match their records"): every AXN derives from the record's text; a record
+            # re-derived that day carries its prior forms, which resolve here and in /api/axn-aliases.json.
+            _prior = [x.get('axn') for x in (e.get('axn_prior') or []) if x.get('axn')]
+            _rd = e.get('axn_rederived') or {}
+            if isinstance(_rd, dict) and _rd.get('axn_before'): _prior.insert(0, _rd['axn_before'])
+            if _fe.get('batch_axn'): _prior.insert(0, _fe['batch_axn'])
+            _prior = [x for x in dict.fromkeys(_prior) if x != e['axn']]
+            _wiki = str(e.get('wiki_article') or '').strip()
+            _desc = (f"AXN {hx} is the content-derived identifier of Alexanarch deposit "
+                     f"#{n}. The hex marks position in the archive; the six-glyph suffix is "
+                     f"a display hash of the canonical text's SHA-256, so the identifier is "
+                     f"derived from the work rather than assigned to it. Family: {family}."
+                     + (f" Prior forms, which name the same record: {'; '.join(_prior)}." if _prior else ""))
             ld_obj = {
                 "@context": "https://schema.org",
                 "@type": "DefinedTerm",
@@ -88,10 +105,13 @@ def main():
                 },
                 "description": _desc,
                 "about": {"@type": "ScholarlyArticle", "@id": url, "url": url,
-                          "name": e.get('title', '')},
+                          "name": e.get('title', ''), **({"description": _wiki} if _wiki else {})},
                 "subjectOf": {"@type": "WebPage", "@id": url, "url": url},
-                "sameAs": [url],
             }
+            # 2026-10-27: no sameAs. The identifier is not the work; "about" names what it identifies.
+            for _p in _prior:
+                ld_obj["identifier"].append({"@type": "PropertyValue", "propertyID": "AXN-prior", "value": _p,
+                                             "description": "a prior form of this AXN; it names the same record"})
             if _md:
                 ld_obj["identifier"][2]["description"] = f"stored mint hash; {_md.get('status','')}"
                 _swp = _axd.ld_swhid_property(e)
@@ -106,21 +126,34 @@ def main():
                     {"@type": "PropertyValue", "name": "glyph_hash", "value": glyphs},
                 ]
             ld = json.dumps(ld_obj, ensure_ascii=False)
-            _meta = f'<meta name="description" content="AXN {hx} — content-derived identifier of Alexanarch deposit #{n}. Hex position {hx}; family {html.escape(family)}; six-glyph display hash of the canonical text SHA-256.">'
-            if _md and _md.get('status') != _axd.STATUS_VERIFIES_SERVED:
-                _meta = f'<meta name="description" content="{html.escape(_desc)}">'
-                _intro = f'<p>{html.escape(_desc).replace(f"#{n}", f"<a href=\"{url}\">#{n}</a>", 1)}</p>'
-                _sw = _cur.get('swhid') or ''
-                _hashrows = (f"<dt>Stored hash (mint)</dt><dd><code>{e.get('hash','')}</code> &mdash; {html.escape(_md.get('status','').replace('_',' '))}</dd>"
-                             f"<dt>Served bytes SHA-256</dt><dd><code>{_cur.get('sha256','')}</code></dd>"
-                             + (f"<dt>SWHID</dt><dd><code>{html.escape(_sw)}</code>" + (" (held by Software Heritage)" if _cur.get('swh_known') else " (computed)") + "</dd>" if _sw else "")
-                             + "<dt>Derivation ledger</dt><dd><a href=\"/data/axn-derivation-ledger.json\">/data/axn-derivation-ledger.json</a></dd>")
-            else:
-                _intro = (f'<p><strong>AXN {hx}</strong> is the content-derived identifier of Alexanarch deposit\n'
-                          f'<a href="{url}">#{n}</a>. It is an identifier, not a copy of the work: the hex marks\n'
-                          f'position in the archive, and the six-glyph suffix is a display hash of the canonical\n'
-                          f'text&rsquo;s SHA-256, so the identifier is derived from the work rather than assigned to it.</p>')
-                _hashrows = f"<dt>Canonical-text SHA-256</dt><dd><code>{e.get('hash','')}</code></dd>"
+            _meta_txt = _wiki or (f"AXN {hx} — content-derived identifier of Alexanarch deposit #{n}. Hex position {hx}; family {family}; six-glyph display hash of the canonical text SHA-256.")
+            if len(_meta_txt) > 320:
+                _cut = _meta_txt[:320]; _meta_txt = _cut[:_cut.rfind(' ')] + ' …'
+            _meta = f'<meta name="description" content="{html.escape(_meta_txt)}">'
+            _intro = (f'<p><strong>AXN {hx}</strong> is the content-derived identifier of Alexanarch deposit\n'
+                      f'<a href="{url}">#{n}</a>. It is an identifier, not a copy of the work: the hex marks\n'
+                      f'position in the archive, and the six-glyph suffix is a display hash of the canonical\n'
+                      f'text&rsquo;s SHA-256, so the identifier is derived from the work rather than assigned to it.</p>')
+            if _wiki:
+                _intro += ('\n<section><h2>The work</h2>\n' + ''.join(f'<p>{_md_inline(par.strip())}</p>' for par in _wiki.split('\n\n') if par.strip())
+                           + f'\n<p><a href="{url}">The record, with the full text</a></p></section>')
+            _seatrows = ''
+            if _seats.get(hx):
+                _seatrows = ('<dt>Originals seated</dt><dd>' + '<br>'.join(
+                    f'<code>{html.escape(c["axn"])}</code> &mdash; seat {html.escape(c["seat"].split("-")[-1])}, '
+                    f'<a href="https://traininglayerliterature.org/originals/{c["corpus"]}/">{html.escape(c["corpus"])}</a> '
+                    f'(<a href="https://www.alexanarch.org/data/corpora/{c["corpus"]}/MANIFEST.sha256">MANIFEST</a>)'
+                    for c in sorted(_seats[hx], key=lambda c: c["seat"])) + '</dd>')
+                for c in _seats[hx]:
+                    ld_obj["identifier"].append({"@type": "PropertyValue", "propertyID": "AXN-seat", "value": c["axn"],
+                                                 "description": f"seat {c['seat'].split('-')[-1]} of the originals shelf ({c['corpus']}): glyphs of the SHA-256 of its MANIFEST.sha256"})
+                ld = json.dumps(ld_obj, ensure_ascii=False)
+            _hashrows = f"<dt>Canonical-text SHA-256</dt><dd><code>{e.get('hash','')}</code></dd>"
+            if _prior:
+                _hashrows += "<dt>Prior forms</dt><dd>" + "<br>".join(f"<code>{html.escape(x)}</code>" for x in _prior) + " &mdash; each names this record (<a href=\"/api/axn-aliases.json\">/api/axn-aliases.json</a>)</dd>"
+            if _md.get('hash') and _md.get('hash') != e.get('hash'):
+                _hashrows += (f"<dt>Stored hash at mint</dt><dd><code>{_md.get('hash','')}</code> &mdash; {html.escape(str(_md.get('status','')).replace('_',' '))}; "
+                              "<a href=\"/data/axn-derivation-ledger.json\">derivation ledger</a></dd>")
             (d/'index.html').write_text(f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <title>{html.escape(e['axn'])} — Alexanarch AXN resolver</title>
@@ -138,6 +171,7 @@ def main():
 <dt>Glyph hash</dt><dd>{html.escape(glyphs)}</dd>
 {_hashrows}
 <dt>Record</dt><dd><a href="{url}">{url}</a></dd>
+{_seatrows}
 </dl>
 <p>Resolver rule: <code>alexanarch.org/axn/&lt;HEX&gt;</code> &middot;
 term set: <a href="/s/axn/">AXN identifier set</a> &middot;
