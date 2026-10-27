@@ -17,6 +17,13 @@ for d in reg['deposits']:
         if x.get('hash') and x['hash'] not in idx:
             idx[x['hash']] = {"axn": d['axn'], "prior_axn": x.get('axn'), "deposit_number": d['deposit_number'],
                               "record": f"/s/records/{d['deposit_number']}/", "status": "prior", "why": x.get('why')}
+# 2026-10-27: capture observations, each sealed with its analysis and measures (data/captures/sealed/), find their AXN.
+_cl = ROOT/'data/captures/axn.json'
+if _cl.exists():
+    for slug, a in json.loads(_cl.read_text())['addresses'].items():
+        for k, o in a['observations'].items():
+            idx.setdefault(o['sha256'], {"axn": o['axn'], "root": a['root'], "observation": k, "sealed": o['file'],
+                                         "record": f"/captures/{slug}/", "source": "capture"})
 out = {"description": "Full SHA-256 identity kernel → registered AXN. The reverse lookup: enter bytes, hash them, find the record.",
        "count": len(idx), "kernels": idx}
 (ROOT/'data/api/kernel-index.json').write_text(json.dumps(out, ensure_ascii=False, separators=(',',':')) + '\n')

@@ -249,6 +249,94 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
 term set: <a href="/s/axn/">AXN identifier set</a> &middot;
 machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
 </body></html>""")
+    # Capture positions (2026-10-27, MANUS: "one observation / analysis / measure should have one axn" — "one position per
+    # address"). The page of a capture position carries each observation with its analysis and measures, so the
+    # identifier is never reached without the reading it names.
+    cap_lm = {}
+    _cl = ROOT/'data/captures/axn.json'
+    if _cl.exists():
+        _toc = {}
+        try:
+            for _r in json.load(open(ROOT/'captures/index.json'))['records']:
+                _toc[_r['slug']] = _r
+                for _o in (_r.get('observations') or []):
+                    _toc.setdefault(_o['slug'], {'record_url': _o['url']})
+        except Exception:
+            pass
+        def _txt(v, n):
+            v = ' '.join(str(v or '').split())
+            return v if len(v) <= n else v[:v.rfind(' ', 0, n)] + ' …'
+        for slug, a in sorted(json.load(open(_cl))['addresses'].items()):
+            hx = a['hex']
+            if hx in idx:
+                print(f"axn resolver: capture {slug} at {hx} collides; not written", file=_sys_axd.stderr); continue
+            rec = (_toc.get(slug) or {}).get('record_url') or f"https://www.alexanarch.org/captures/{slug}/"
+            axn_url = f"https://www.alexanarch.org/s/axn/{hx}/"
+            obs = sorted(a['observations'].items(), key=lambda kv: (str(kv[1].get('date') or ''), kv[0]))
+            idx[hx] = {"source": "capture", "root": a['root'], "q": a.get('q'), "record": rec,
+                       "observations": [{"axn": o['axn'], "sha256": o['sha256'], "date": o.get('date'), "surface": o.get('surface'),
+                                         "sealed": f"https://www.alexanarch.org{o['file']}",
+                                         **({"prior": [h['axn'] for h in o['history']]} if o.get('history') else {})} for _, o in obs]}
+            cap_lm[hx] = max([str(o.get('date_derived') or '') for _, o in obs] or [a.get('allocated', '')])
+            blocks, ids, desc_first = [], [], ''
+            for k, o in obs:
+                try:
+                    sd = json.load(open(ROOT/o['file'].lstrip('/')))
+                except Exception:
+                    sd = {"analysis": {}, "measures": {}, "observation": {}}
+                an, me = sd.get('analysis') or {}, sd.get('measures') or {}
+                d_ = an.get('d') or ''
+                if not desc_first and d_: desc_first = d_
+                orl = (_toc.get(k) or {}).get('record_url') or rec
+                per = me.get('per')
+                rows = [f"<dt>Observation</dt><dd>{html.escape(str(o.get('surface') or ''))}, {html.escape(str(o.get('date') or ''))} &middot; <a href=\"{orl}\">the capture</a></dd>"]
+                if d_: rows.append(f"<dt>Description</dt><dd>{html.escape(_txt(d_, 900))}</dd>")
+                if an.get('reading'): rows.append(f"<dt>Reading</dt><dd>{html.escape(_txt(an['reading'], 1400))}</dd>")
+                if an.get('analysis'): rows.append(f"<dt>Analysis</dt><dd>{html.escape(_txt(an['analysis'], 1400))}</dd>")
+                if an.get('mt'): rows.append(f"<dt>Match</dt><dd>{html.escape(str(an.get('match') or ''))} &mdash; {html.escape(_txt(an['mt'], 400))}</dd>")
+                if per is not None: rows.append(f"<dt>PER</dt><dd>{html.escape(str(per))}" + (f" &mdash; {html.escape(_txt(me['per_note'], 300))}" if me.get('per_note') else '') + "</dd>")
+                if me.get('cites') not in (None, ''): rows.append(f"<dt>Citations</dt><dd>{html.escape(str(me['cites']))}" + (f" ({html.escape(str(me['archive_controlled_cites']))} archive-controlled)" if me.get('archive_controlled_cites') not in (None, '') else '') + "</dd>")
+                rows.append(f"<dt>Sealed observation</dt><dd><a href=\"{o['file']}\">{html.escape(o['file'])}</a> &mdash; SHA-256 <code>{o['sha256']}</code></dd>")
+                for h in (o.get('history') or []):
+                    rows.append(f"<dt>Earlier form, until {html.escape(h['until'])}</dt><dd><code>{html.escape(h['axn'])}</code> &mdash; {html.escape(h.get('reason',''))}</dd>")
+                blocks.append(f"<section><h2><code>{html.escape(o['axn'])}</code></h2>\n<dl>{''.join(rows)}</dl></section>")
+                ids.append({"@type": "PropertyValue", "propertyID": "AXN", "value": o['axn'], "url": orl,
+                            "description": f"observation of {o.get('surface') or ''}, {o.get('date') or ''}, sealed with its analysis and measures; SHA-256 {o['sha256']}"})
+            q = str(a.get('q') or '')
+            _desc = (f"{a['root']} is the position of the Capture Registry address for the query \u201c{q}\u201d. Each observation at the address "
+                     f"(one surface, one date) is one AXN, its glyphs derived from the SHA-256 of the observation sealed with its analysis and measures.")
+            _meta_txt = _txt((f"Query \u201c{q}\u201d: " + desc_first) if desc_first else _desc, 320)
+            ld = {"@context": "https://schema.org", "@type": "DefinedTerm", "@id": axn_url, "url": axn_url, "name": a['root'], "termCode": a['root'],
+                  "identifier": [{"@type": "PropertyValue", "propertyID": "AXN-root", "value": a['root']},
+                                 {"@type": "PropertyValue", "propertyID": "AXN-hex", "value": hx}] + ids,
+                  "inDefinedTermSet": {"@type": "DefinedTermSet", "@id": "https://www.alexanarch.org/s/axn/", "name": "AXN — Alexanarch content-derived identifiers",
+                                       "url": "https://www.alexanarch.org/s/axn/"},
+                  "description": _desc, "about": {"@type": "Dataset", "@id": rec, "url": rec, "name": f"Capture: {q}"},
+                  "subjectOf": {"@type": "WebPage", "@id": rec, "url": rec},
+                  "additionalProperty": [{"@type": "PropertyValue", "name": "family", "value": "CAPTURE"}]}
+            d = ROOT/'s/axn'/hx; d.mkdir(exist_ok=True)
+            (d/'index.html').write_text(f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>{html.escape(a['root'])} — {html.escape(_txt(q, 80))} — Alexanarch AXN resolver</title>
+<link rel="canonical" href="{axn_url}">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="description" content="{html.escape(_meta_txt)}">
+<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
+<h1>{html.escape(a['root'])}</h1>
+<p>{html.escape(_desc)}</p>
+<dl>
+<dt>Query</dt><dd>{html.escape(q)}</dd>
+<dt>Identifies</dt><dd><a href="{rec}">the capture record</a> of the Capture Registry</dd>
+<dt>Hex position</dt><dd><code>{hx}</code></dd>
+<dt>Family</dt><dd><code>CAPTURE</code></dd>
+<dt>Ledger</dt><dd><a href="/data/captures/axn.json">/data/captures/axn.json</a></dd>
+</dl>
+{chr(10).join(blocks)}
+<p>Resolver rule: <code>alexanarch.org/axn/&lt;HEX&gt;</code> &middot;
+term set: <a href="/s/axn/">AXN identifier set</a> &middot;
+machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
+</body></html>""")
     json.dump({"name":"Alexanarch AXN resolver index","rule":"https://www.alexanarch.org/axn/<HEX>/",
                "canonical":"https://www.alexanarch.org/api/axn-index.json",
                "total": len(idx), "generated": r['deposits'][-1].get('date','') or '', "map": idx},
@@ -259,7 +347,7 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
         # record's own last modification (record_modification.last_modified: date_modified, else the
         # deposit date); a disambiguation page carries the latest of its records. Never the run date.
         for hx in sorted(idx):
-            lm = non_lm[hx] if hx in non_lm else max(((e.get('date_modified') or e.get('date') or '')[:10] for e in byhex[hx]), default='')
+            lm = non_lm[hx] if hx in non_lm else cap_lm[hx] if hx in cap_lm else max(((e.get('date_modified') or e.get('date') or '')[:10] for e in byhex[hx]), default='')
             lm_tag = f'<lastmod>{lm}</lastmod>' if lm else ''
             f.write(f'  <url><loc>https://www.alexanarch.org/s/axn/{hx}/</loc>{lm_tag}</url>\n')
         f.write('</urlset>\n')

@@ -224,6 +224,38 @@ def related_line(e, titles):
 DEFS = None
 
 
+_AXNL = None
+
+
+def capture_axns(slug):
+    """2026-10-27: the address's position and each observation's AXN (data/captures/axn.json, scripts/capture_axn.py)."""
+    global _AXNL
+    if _AXNL is None:
+        try:
+            _AXNL = json.loads((pathlib.Path(__file__).resolve().parents[1] / "data/captures/axn.json").read_text(encoding="utf-8"))["addresses"]
+        except Exception:
+            _AXNL = {}
+    return _AXNL.get(slug)
+
+
+def axn_block(e):
+    a = capture_axns(e["slug"])
+    if not a:
+        return "", None
+    rows = "".join(
+        f'<li><code>{esc(o["axn"])}</code> &mdash; {esc(str(o.get("surface") or ""))}, {esc(str(o.get("date") or ""))} '
+        f'&middot; <a href="{esc(o["file"])}">sealed observation</a> (SHA-256 <code>{esc(o["sha256"][:16])}…</code>)</li>'
+        for _, o in sorted(a["observations"].items(), key=lambda kv: str(kv[1].get("date") or "")))
+    html_ = (f'<div style="font-family:var(--mono,monospace);font-size:.82em;border-left:4px solid #1c6e4a;padding:8px 12px;margin:10px 0;background:#f6f8f4">'
+             f'<div><a href="{BASE}/s/axn/{esc(a["hex"])}/"><strong>{esc(a["root"])}</strong></a> &mdash; this address. Each observation below is '
+             f'one AXN, sealed with its analysis and measures; the identifier names the reading together with the response it reads.</div>'
+             f'<ul style="margin:6px 0 0 18px;padding:0">{rows}</ul></div>\n')
+    ids = [{"@type": "PropertyValue", "propertyID": "AXN-root", "value": a["root"], "url": f"{BASE}/s/axn/{a['hex']}/"}] + [
+        {"@type": "PropertyValue", "propertyID": "AXN", "value": o["axn"], "description": f"observation {k}, sealed with its analysis and measures"}
+        for k, o in a["observations"].items()]
+    return html_, ids
+
+
 def page(e, reg, style, addr_url, titles=None, deps=None):
     slug = e["slug"]
     q = e.get("q") or slug
@@ -247,6 +279,9 @@ def page(e, reg, style, addr_url, titles=None, deps=None):
              '<a href="/captures/index.json">table of contents</a>']
     if addr_url:
         links.insert(1, f'<a href="{esc(addr_url)}">the address page</a>')
+    _axhtml, _axids = axn_block(e)
+    if _axids:
+        ld["identifier"] = [slug] + _axids
     cblock, cld = concept_block(e, deps or {}, DEFS)
     if cld:
         ld["about"] = cld
@@ -268,7 +303,7 @@ def page(e, reg, style, addr_url, titles=None, deps=None):
         f'<p style="font-size:.85em;margin:10px 0 4px"><a href="/captures/">Capture Registry</a> › capture <code>{esc(slug)}</code></p>\n'
         f'<p class="sub" style="font-size:.85em">One record of the canonical Capture Registry (EA-WG-CAPTURES-01), '
         f'cited at <code>{url}</code>. ' + " · ".join(links) + ".</p>\n"
-        + cblock + related_line(e, titles or {}) + CJ.observation_block(e)
+        + _axhtml + cblock + related_line(e, titles or {}) + CJ.observation_block(e)
         + G.card(e, record=True) + "\n" + COPY_JS + "\n</body></html>\n")
 
 

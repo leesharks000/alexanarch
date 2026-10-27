@@ -103,6 +103,20 @@ if nl.exists():
         kernels[x["sha256"]] = {"role": "axn0", **e}
         for h in x.get("history") or []:
             kernels[h["sha256"]] = {"role": "earlier version", **e, "axn": h["axn"], "sha256": h["sha256"], "until": h["until"]}
+# the capture mint route (2026-10-27, scripts/capture_axn.py): one position per address, one AXN per observation
+# sealed with its analysis and measures, family CAPTURE
+n_cap = 0
+cl = ROOT/"data/captures/axn.json"
+if cl.exists():
+    for k, x in sorted(json.loads(cl.read_text(encoding="utf-8"))["addresses"].items()):
+        e = {"axn": x["root"], "root": x["root"], "source": "capture", "family": "CAPTURE", "record": f"https://www.alexanarch.org/captures/{k}/",
+             "q": x.get("q"), "allocated": x.get("allocated"), "observations": {s_: o["axn"] for s_, o in x["observations"].items()}}
+        claim(norm(x["hex"]), e); n_cap += 1
+        for s_, o in x["observations"].items():
+            kernels[o["sha256"]] = {"role": "capture-observation", "axn": o["axn"], "root": x["root"], "source": "capture", "observation": s_,
+                                    "sealed": o["file"], "date": o.get("date"), "surface": o.get("surface")}
+            for h in o.get("history") or []:
+                kernels[h["sha256"]] = {"role": "earlier version", "axn": h["axn"], "root": x["root"], "source": "capture", "observation": s_, "until": h["until"]}
 # aliases never shadow live or contested keys
 for k in list(aliases):
     if k in positions or k in contested: del aliases[k]
@@ -116,8 +130,8 @@ if contested:
 
 out = {"description": "Central AXN registry: every allocated position across all mint routes, position- and kernel-keyed.",
        "generated": datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
-       "positions_count": len(positions), "symbolon_entries": n_sym, "non_entries": n_non,
+       "positions_count": len(positions), "symbolon_entries": n_sym, "non_entries": n_non, "capture_positions": n_cap,
        "contested_count": len(contested), "alias_count": len(aliases),
        "positions": dict(sorted(merged.items())), "kernels": kernels}
 (ROOT/"data/axn-central-registry.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
-print(f"central registry: {len(positions)} positions ({n_sym} symbolon, {n_non} /non) · {len(aliases)} aliases · {len(contested)} CONTESTED · {len(kernels)} kernels")
+print(f"central registry: {len(positions)} positions ({n_sym} symbolon, {n_non} /non, {n_cap} capture) · {len(aliases)} aliases · {len(contested)} CONTESTED · {len(kernels)} kernels")
