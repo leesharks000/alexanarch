@@ -64,19 +64,19 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 
 <div class="intro">
 The <strong>Mandala Oracle</strong> at <a href="https://themandalaoracle.com/">themandalaoracle.com</a> is a public literary view-layer over the Crimson Hexagonal Archive — a conversation with Johannes Sigil who guides readers into the canon. Every conversation (witness inputs and Oracle outputs) is auto-appended here as a deposit with a content-derived AXN. <strong>Each conversation is a deposit.</strong>
-<p class="note">Witness identities are anonymous by default. Session identifiers are hashed before storage. Castings — the deeper rite within a conversation — are not yet enabled; when they are, they will be gated by the witness's keep-or-discard choice.</p>
+<p class="note">The Book is an anonymous public book constructed by its participants: a conversation enters it only with the witness's consent to the <a href="https://www.themandalaoracle.com/terms/">terms</a>. Witness identities are anonymous. Session identifiers are hashed before storage. Castings are inscribed by the witness's choice of inscription.</p>
 </div>
 
-<div class="meta-row" id="meta-row" hidden>
+<div class="meta-row" id="meta-row">
   <strong id="total-count">…</strong> conversations · last updated <span id="last-updated">…</span>
 </div>
 
 <div id="book-list">
-  <div class="note book-paused">The Book is closed for the moment, while Johannes Sigil contemplates existence. It will open again.</div>
+  <div class="loading">Loading book index from mandala-merkabah…</div>
 </div>
 
 <div class="footer">
-The Book is a dataset of the Mandala Oracle's public-API conversations. Data home: <code>mandala-merkabah</code>. Schema v1.0.
+The Book is a dataset of the Mandala Oracle's public-API conversations. Data home: <code>mandala-merkabah</code>. Index URL: <a id="index-link" href="https://raw.githubusercontent.com/leesharks000/the-mandala-oracle/main/book/index.json">book/index.json</a>. Per-conversation: <code>book/data/AXN-XXXX.json</code>. Schema v1.2.
 </div>
 
 </div>
@@ -244,8 +244,8 @@ function renderTranscript(el, conv) {
   el.appendChild(wrap);
 }
 
-// PAUSE (2026-10-26, Lee Sharks): the Book is closed. Set BOOK_PAUSED to false to open it again.
-const BOOK_PAUSED = true;
+// PAUSE (2026-10-26, Lee Sharks); reopened 2026-10-27 at his word ("still need to reopen the book"). Set true to close it again.
+const BOOK_PAUSED = false;
 
 (async function init() {
   if (BOOK_PAUSED) return;
@@ -262,7 +262,6 @@ const BOOK_PAUSED = true;
   }
 })();
 </script>
-<!-- Sigil's panel is paused with the Book (2026-10-26); restore this line to bring it back:
-<script src="https://www.themandalaoracle.com/embed/sigil.js" defer></script> -->
+<script src="https://www.themandalaoracle.com/embed/sigil.js" defer></script>
 </body>
 </html>
