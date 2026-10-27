@@ -293,6 +293,9 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
                 if d_: rows.append(f"<dt>Description</dt><dd>{html.escape(_txt(d_, 900))}</dd>")
                 if an.get('reading'): rows.append(f"<dt>Reading</dt><dd>{html.escape(_txt(an['reading'], 1400))}</dd>")
                 if an.get('analysis'): rows.append(f"<dt>Analysis</dt><dd>{html.escape(_txt(an['analysis'], 1400))}</dd>")
+                _orr = (an.get('notes') or {}).get('operator_reading') if isinstance(an.get('notes'), dict) else None
+                if isinstance(_orr, dict) and _orr.get('words'):
+                    rows.append(f"<dt>Operator&rsquo;s reading</dt><dd>{html.escape(str(_orr.get('by') or ''))}, {html.escape(str(_orr.get('on') or ''))}: &lsquo;{html.escape(_orr['words'])}&rsquo;</dd>")
                 if an.get('mt'): rows.append(f"<dt>Match</dt><dd>{html.escape(str(an.get('match') or ''))} &mdash; {html.escape(_txt(an['mt'], 400))}</dd>")
                 if per is not None: rows.append(f"<dt>PER</dt><dd>{html.escape(str(per))}" + (f" &mdash; {html.escape(_txt(me['per_note'], 300))}" if me.get('per_note') else '') + "</dd>")
                 if me.get('cites') not in (None, ''): rows.append(f"<dt>Citations</dt><dd>{html.escape(str(me['cites']))}" + (f" ({html.escape(str(me['archive_controlled_cites']))} archive-controlled)" if me.get('archive_controlled_cites') not in (None, '') else '') + "</dd>")

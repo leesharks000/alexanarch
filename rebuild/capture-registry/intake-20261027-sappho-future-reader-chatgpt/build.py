@@ -194,3 +194,11 @@ for s in ("refers to the future reader, rather than to a rival present in the sc
     assert s in T[2]
 (D / f"{dr['slug']}.json").write_text(json.dumps(dr, ensure_ascii=False, indent=1))
 print(dr["slug"], len(dr["transcript"]), PD["scores"], PD["after_challenge"]["scores"])
+
+# 2026-10-27 13:50 EDT, after seating (repair commit): the operator's reading, in his words ("sure, words can go in.").
+W = ("the capture is evidence that it resorted to disarming the argument by sophistry rather than direct engagement. "
+     "the argument cant be easily disarmed by direct engagement.")
+dr["reading"] += " The operator's reading (Lee Sharks, 2026-10-27, 13:46 EDT): '" + W + "'"
+dr["findings"].append("THE OPERATOR'S READING. Lee Sharks, 2026-10-27: '" + W + "' The record bears it at the third answer: given the five claims, it offers no counterargument to any of them, and withdraws.")
+dr["notes"]["operator_reading"] = {"by": "Lee Sharks (operator)", "on": "2026-10-27 13:46 EDT", "words": W, "seated": "2026-10-27 13:50 EDT, on the operator's word: 'sure, words can go in.'"}
+(D / f"{dr['slug']}.json").write_text(json.dumps(dr, ensure_ascii=False, indent=1))
