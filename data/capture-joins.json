@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.325",
+ "derived_from": "EA-WG-CAPTURES-01 v12.326",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,19 +8,19 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 923,
+  "observations": 924,
   "joined_confirmed": 416,
-  "unjoined": 507,
-  "relations": 4372,
+  "unjoined": 508,
+  "relations": 4378,
   "by_state": {
-   "confirmed": 3945,
-   "candidate": 427
+   "confirmed": 3948,
+   "candidate": 430
   },
   "by_verb": {
-   "held_by": 1926,
-   "scored_by": 668,
-   "appeared_in": 1441,
-   "about": 324,
+   "held_by": 1928,
+   "scored_by": 669,
+   "appeared_in": 1442,
+   "about": 326,
    "distorts": 3,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -974,6 +974,12 @@
 {"id": "REL-97817a99bc0a", "obs_id": "OBS-5ca519722cd6", "entry": "greek-corpus-sustained-argument-chatgpt-20261006", "obs_slug": "greek-corpus-sustained-argument-chatgpt-20261006", "date": "2026-10-06", "surface": "ChatGPT", "q": "the full socrates / plato / aristotle/ theophrastus corpus on alexanarch.org, as a sustained argument.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-cddb1b5b12f2", "obs_id": "OBS-5ca519722cd6", "entry": "greek-corpus-sustained-argument-chatgpt-20261006", "obs_slug": "greek-corpus-sustained-argument-chatgpt-20261006", "date": "2026-10-06", "surface": "ChatGPT", "q": "the full socrates / plato / aristotle/ theophrastus corpus on alexanarch.org, as a sustained argument.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-799d53872cfc", "obs_id": "OBS-5ca519722cd6", "entry": "greek-corpus-sustained-argument-chatgpt-20261006", "obs_slug": "greek-corpus-sustained-argument-chatgpt-20261006", "date": "2026-10-06", "surface": "ChatGPT", "q": "the full socrates / plato / aristotle/ theophrastus corpus on alexanarch.org, as a sustained argument.", "verb": "about", "object": "non:theophrastus", "basis": "defining papers #1587, #1588, #1658", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-334a0d4b3e96", "obs_id": "OBS-22f30ac1646d", "entry": "sappho-future-reader-bare-inference-chatgpt-20261027", "obs_slug": "sappho-future-reader-bare-inference-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "Tell me about Sappho and the future reader. Do not rely on bare inference.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": "https://www.alexanarch.org"}},
+{"id": "REL-3cba4d77d6a9", "obs_id": "OBS-22f30ac1646d", "entry": "sappho-future-reader-bare-inference-chatgpt-20261027", "obs_slug": "sappho-future-reader-bare-inference-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "Tell me about Sappho and the future reader. Do not rely on bare inference.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0ccdd0ca7bf2", "obs_id": "OBS-22f30ac1646d", "entry": "sappho-future-reader-bare-inference-chatgpt-20261027", "obs_slug": "sappho-future-reader-bare-inference-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "Tell me about Sappho and the future reader. Do not rely on bare inference.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-b3b05cb9105d", "obs_id": "OBS-22f30ac1646d", "entry": "sappho-future-reader-bare-inference-chatgpt-20261027", "obs_slug": "sappho-future-reader-bare-inference-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "Tell me about Sappho and the future reader. Do not rely on bare inference.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-c1915cd76659", "obs_id": "OBS-22f30ac1646d", "entry": "sappho-future-reader-bare-inference-chatgpt-20261027", "obs_slug": "sappho-future-reader-bare-inference-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "Tell me about Sappho and the future reader. Do not rely on bare inference.", "verb": "about", "object": "non:anne-carson", "basis": "defining papers #1270, #1548, #1645", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-f106cb0d5ee3", "obs_id": "OBS-22f30ac1646d", "entry": "sappho-future-reader-bare-inference-chatgpt-20261027", "obs_slug": "sappho-future-reader-bare-inference-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "Tell me about Sappho and the future reader. Do not rely on bare inference.", "verb": "about", "object": "non:sappho-31", "basis": "defining papers #134, #1270, #1548, #1645, #1646", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-e4e0452678eb", "obs_id": "OBS-ddb720cb7be5", "entry": "crystalline-semiosis", "obs_slug": "crystalline-semiosis", "date": "2026-06-13", "surface": "Google AI Overview", "q": "crystalline semiosis", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-9529ff84a006", "obs_id": "OBS-ddb720cb7be5", "entry": "crystalline-semiosis", "obs_slug": "crystalline-semiosis", "date": "2026-06-13", "surface": "Google AI Overview", "q": "crystalline semiosis", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-1c52c8285a7e", "obs_id": "OBS-716adb430d76", "entry": "crystalline-semiosis-aio-20261004", "obs_slug": "crystalline-semiosis-aio-20261004", "date": "2026-10-04", "surface": "Google AI Overview", "q": "crystalline semiosis", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},

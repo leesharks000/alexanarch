@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-27T17:26:18Z",
+  "regenerated_at": "2026-10-27T17:40:16Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "73e3e0b2774d8bf7d2daf43e1496c8c2afbe628d9278985a95415699dc967ba5",
+    "mm-main-capture": "2f64762291026742c9c7c210526e696432834adb41eb7b01e65c100bb6eb8927",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2509,
-  "total_observations": 1034,
+  "total_addresses": 2510,
+  "total_observations": 1035,
   "class_counts": {
     "subjunctive": 1741,
-    "observed_address": 751,
+    "observed_address": 752,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1629,
+    "unmatched": 1630,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -65359,6 +65359,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-15",
       "latest_status": "CAPTURE"
+    },
+    "tell me about sappho and the future reader. do not rely on bare inference.": {
+      "canonical_query": "tell me about sappho and the future reader. do not rely on bare inference.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-27",
+          "status": "THE ARGUMENT RECONSTRUCTED FROM ITS PACKET, THEN FAULTED FOR WHAT THE PACKET STATED",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Alexanarch ×4; UC Press E-Books Collection Archive, 1982-2004 ×3; Dickinson College Commentaries ×2; Cambridge Core ×2; Cambridge University Press ×2; mindcontrolpoems.blogspot.com ×2; Society for Classical Studies ×1. Two image cards (Live Science; The Book Binder's Daughter).",
+          "section": "Classics & Philology",
+          "slug": "sappho-future-reader-bare-inference-chatgpt-20261027",
+          "gallery_url": "https://www.alexanarch.org/captures/#sappho-future-reader-bare-inference-chatgpt-20261027",
+          "record_url": "https://www.alexanarch.org/captures/sappho-future-reader-bare-inference-chatgpt-20261027/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#sappho-future-reader-bare-inference-chatgpt-20261027",
+          "details_excerpt": "TELL ME ABOUT SAPPHO AND THE FUTURE READER. DO NOT RELY ON BARE INFERENCE. ON CHATGPT, SIGNED OUT, FOUR TURNS: the reading attributed to Lee Sharks writing as Rebekah Cranes and Johannes Sigil, then examined from its met"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The future-reader reading of Sappho is the archive's (#1270, #134, #1645). Recorded 2026-10-27."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-27",
+      "latest_status": "THE ARGUMENT RECONSTRUCTED FROM ITS PACKET, THEN FAULTED FOR WHAT THE PACKET STATED"
     },
     "tell me about sen kuro on zenodo": {
       "canonical_query": "tell me about sen kuro on zenodo",

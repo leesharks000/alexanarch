@@ -1,10 +1,10 @@
 {
  "description": "Central AXN registry: every allocated position across all mint routes, position- and kernel-keyed.",
- "generated": "2026-10-27T17:29:57Z",
- "positions_count": 2625,
+ "generated": "2026-10-27T17:40:30Z",
+ "positions_count": 2626,
  "symbolon_entries": 79,
  "non_entries": 24,
- "capture_positions": 776,
+ "capture_positions": 777,
  "release_positions": 43,
  "contested_count": 5,
  "alias_count": 0,
@@ -27255,7 +27255,8 @@
    "releases": [
     "AXN:0A39.RELEASE.🧊🚪👇🍁🖊️●",
     "AXN:0A39.RELEASE.🍂🌘📏🎬🕌🌳",
-    "AXN:0A39.RELEASE.🕖🍃🌟🌑🧱🌉"
+    "AXN:0A39.RELEASE.🕖🍃🌟🌑🧱🌉",
+    "AXN:0A39.RELEASE.🏠⊕🚪🏺🎹➗"
    ]
   },
   "0A3A": {
@@ -27815,7 +27816,8 @@
    "record": "https://www.alexanarch.org/s/axn/0A61/",
    "allocated": "2026-10-27",
    "releases": [
-    "AXN:0A61.INSTRUMENT.🔃💡👆🏛️◇🎯"
+    "AXN:0A61.INSTRUMENT.🔃💡👆🏛️◇🎯",
+    "AXN:0A61.INSTRUMENT.🔆✊🌅🕘🐝↙️"
    ]
   },
   "0A62": {
@@ -27845,6 +27847,18 @@
    "releases": [
     "AXN:0A63.SITE.♣️🖤👉🪟📌🪞"
    ]
+  },
+  "0A64": {
+   "axn": "AXN:0A64.CAPTURE",
+   "root": "AXN:0A64.CAPTURE",
+   "source": "capture",
+   "family": "CAPTURE",
+   "record": "https://www.alexanarch.org/captures/sappho-future-reader-bare-inference-chatgpt-20261027/",
+   "q": "Tell me about Sappho and the future reader. Do not rely on bare inference.",
+   "allocated": "2026-10-27",
+   "observations": {
+    "sappho-future-reader-bare-inference-chatgpt-20261027": "AXN:0A64.CAPTURE.⏫💎🧪☿📏🖊️"
+   }
   }
  },
  "kernels": {
@@ -55074,6 +55088,16 @@
    "date": "2026-09-28",
    "surface": "Google AI Overview"
   },
+  "d81c39a24f44e59948e9fa171e1c2e7c264f74ff7c88bda85d1ceda38023d9a1": {
+   "role": "capture-observation",
+   "axn": "AXN:0A64.CAPTURE.⏫💎🧪☿📏🖊️",
+   "root": "AXN:0A64.CAPTURE",
+   "source": "capture",
+   "observation": "sappho-future-reader-bare-inference-chatgpt-20261027",
+   "sealed": "/data/captures/sealed/sappho-future-reader-bare-inference-chatgpt-20261027.json",
+   "date": "2026-10-27",
+   "surface": "ChatGPT"
+  },
   "d853061ab80a7792026b1346f924e3c28cf65d6fb877d5a6dace55934f1f3de8": {
    "role": "capture-observation",
    "axn": "AXN:099A.CAPTURE.⏫🚩🌗🌾👈💫",
@@ -57974,6 +57998,16 @@
    "basis": "manifest",
    "manifest": "/data/releases/manifests/capture-intake/2026-10-27.sha256"
   },
+  "ecb4e06a7ddcd4d848df412327883ecc9668335079201f7e0cca63ef14e65e6e": {
+   "role": "release",
+   "axn": "AXN:0A61.INSTRUMENT.🔆✊🌅🕘🐝↙️",
+   "root": "AXN:0A61.INSTRUMENT",
+   "source": "release",
+   "object": "capture-intake",
+   "label": "2026-10-27.2",
+   "basis": "manifest",
+   "manifest": "/data/releases/manifests/capture-intake/2026-10-27.2.sha256"
+  },
   "1d24b777449c4a4e9970f622d8f6cde00880f64cb831585b539087d1361a35cc": {
    "role": "release",
    "axn": "AXN:0A39.RELEASE.🧊🚪👇🍁🖊️●",
@@ -58003,6 +58037,16 @@
    "label": "12.325",
    "basis": "manifest",
    "manifest": "/data/releases/manifests/capture-registry/12.325.sha256"
+  },
+  "2696242f89939e20397099dd83dc16b6d6d38a487449936f4ac40f6e063ae9c4": {
+   "role": "release",
+   "axn": "AXN:0A39.RELEASE.🏠⊕🚪🏺🎹➗",
+   "root": "AXN:0A39.RELEASE",
+   "source": "release",
+   "object": "capture-registry",
+   "label": "12.326",
+   "basis": "manifest",
+   "manifest": "/data/releases/manifests/capture-registry/12.326.sha256"
   },
   "d522f0a689f1353ba899def27376c198827452d879b45fe0bc5f1f71275e67a9": {
    "role": "release",
