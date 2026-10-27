@@ -1,8 +1,8 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-10-27T14:22:06.882999Z",
- "seats": 116,
+ "_generated": "2026-10-27T15:07:49.022441Z",
+ "seats": 122,
  "lines_total": 4335335,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
@@ -6912,7 +6912,181 @@
    "why_seated": "MANUS, 27 October 2026, after the twenty-sixth seating: \"deleuze and guattari... no way around that copyright, huh?\" Told that every route through it is closed for decades, and offered a declared absence for them and the open sources they read: \"yes - i cant believe we havent seated spinoza yet. yes to all\" — and \"and leibniz' monodology only\". Deleuze and Guattari are entered as an absence because no route through their copyright is open: Guattari's works open in France on 1 January 2063, Deleuze's and the joint works on 1 January 2066, and the books in the United States between 2049 and 2088. The seat states what is missing and why, beside the six seats of the sources they read.",
    "scope": "Declared, not seated: Gilles Deleuze, Empirisme et subjectivité (Presses Universitaires de France, 1953), opens in the United States on 2049-01-01; Gilles Deleuze, Nietzsche et la philosophie (Presses Universitaires de France, 1962), opens in the United States on 2058-01-01; Gilles Deleuze, Le Bergsonisme (Presses Universitaires de France, 1966), opens in the United States on 2062-01-01; Gilles Deleuze, Différence et répétition (Presses Universitaires de France, 1968), opens in the United States on 2064-01-01; Gilles Deleuze, Spinoza et le problème de l'expression (Les Éditions de Minuit, 1968), opens in the United States on 2064-01-01; Gilles Deleuze, Logique du sens (Les Éditions de Minuit, 1969), opens in the United States on 2065-01-01; Gilles Deleuze, Spinoza: philosophie pratique (Les Éditions de Minuit, 1981), opens in the United States on 2077-01-01; Gilles Deleuze, Le Pli: Leibniz et le baroque (Les Éditions de Minuit, 1988), opens in the United States on 2084-01-01; Gilles Deleuze and Félix Guattari, L'Anti-Œdipe (Capitalisme et schizophrénie 1) (Les Éditions de Minuit, 1972), opens in the United States on 2068-01-01; Gilles Deleuze and Félix Guattari, Kafka: pour une littérature mineure (Les Éditions de Minuit, 1975), opens in the United States on 2071-01-01; Gilles Deleuze and Félix Guattari, Mille plateaux (Capitalisme et schizophrénie 2) (Les Éditions de Minuit, 1980), opens in the United States on 2076-01-01; Gilles Deleuze and Félix Guattari, Qu'est-ce que la philosophie ? (Les Éditions de Minuit, 1991), opens in the United States on 2087-01-01; Félix Guattari, Psychanalyse et transversalité (François Maspero, 1972), opens in the United States on 2068-01-01; Félix Guattari, Chaosmose (Éditions Galilée, 1992), opens in the United States on 2088-01-01. Deleuze's courses at Vincennes and Saint-Denis (1971–1987): the recordings and the transcriptions (WebDeleuze; the Purdue Deleuze Seminars) are published by permission of the estate, under no open licence; not seated.",
    "data": "https://www.alexanarch.org/data/corpora/deleuze-guattari/"
+  },
+  {
+   "seat": "EA-CORPORA-28/01",
+   "corpus": "hypatia",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-10-27",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "grc (the witnesses declared)",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "MANUS, 27 October 2026, after the twenty-seventh seating entered Deleuze and Guattari as a declared absence: \"and a declared absence/ wanted seating: hypatia, d & g, pkd, allen ginsberg, anne carson, and tao lin - including the mandalas. and paul klee. too many files and too many image copyright landmines.\" Hypatia is entered as an absence of a different kind from the others of this seating. Her works are not held back by copyright; they are lost, or they survive inside other texts under other names. The Suda names a commentary on Diophantus, a commentary on Apollonius' Conics and an Astronomical Canon, and the heading of Theon's commentary on the third book of Ptolemy's Almagest credits the text to an edition \"revised by my daughter Hypatia, the philosopher\". What can be seated are the witnesses: Synesius' letters to her, the historians who record her life and death, and the texts in which her editing is believed to stand.",
+   "scope": "Declared, not seated: Hypatia, Commentary on Diophantus, Arithmetica, opens: lost or embedded; Hypatia, Commentary on Apollonius of Perga, Conics, opens: lost; Hypatia, Astronomical Canon, opens: lost; Hypatia, Ptolemy, Almagest III, the revised text, opens: embedded in the Almagest as transmitted. Wanted, and open: Synesius of Cyrene's letters to and about her, in Greek (seven to her survive, none of hers to him); Socrates Scholasticus, Historia ecclesiastica VII.15; the Suda (Υ 166), with Damascius' Life of Isidore as it carries; Philostorgius and Hesychius as quoted; John of Nikiu's chronicle, in Ge'ez; the heading of Theon's commentary on Almagest III; Diophantus' Arithmetica in Tannery's edition (1893–1895). QUEUED.",
+   "data": "https://www.alexanarch.org/data/corpora/hypatia/"
+  },
+  {
+   "seat": "EA-CORPORA-28/02",
+   "corpus": "philip-k-dick",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-10-27",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "MANUS, 27 October 2026, after the twenty-seventh seating entered Deleuze and Guattari as a declared absence: \"and a declared absence/ wanted seating: hypatia, d & g, pkd, allen ginsberg, anne carson, and tao lin - including the mandalas. and paul klee. too many files and too many image copyright landmines.\" Philip K. Dick (1928–1982) is entered as wanted. His novels and the Exegesis are in copyright: the works published before 1978 run ninety-five years from publication, those after it seventy years from his death, to 1 January 2053.",
+   "scope": "Declared, not seated: Philip K. Dick, Solar Lottery (Ace Books, 1955), opens: 2051-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Philip K. Dick, Time Out of Joint (J. B. Lippincott, 1959), opens: 2055-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Philip K. Dick, The Man in the High Castle (G. P. Putnam's Sons, 1962), opens: 2058-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Philip K. Dick, Martian Time-Slip (Ballantine Books, 1964), opens: 2060-01-01; Philip K. Dick, The Three Stigmata of Palmer Eldritch (Doubleday, 1965), opens: 2061-01-01; Philip K. Dick, Do Androids Dream of Electric Sheep? (Doubleday, 1968), opens: 2064-01-01; Philip K. Dick, Ubik (Doubleday, 1969), opens: 2065-01-01; Philip K. Dick, Flow My Tears, the Policeman Said (Doubleday, 1974), opens: 2070-01-01; Philip K. Dick, A Scanner Darkly (Doubleday, 1977), opens: 2073-01-01; Philip K. Dick, VALIS (Bantam Books, 1981), opens: 2053-01-01; Philip K. Dick, The Divine Invasion (Timescape Books, 1981), opens: 2053-01-01; Philip K. Dick, The Transmigration of Timothy Archer (Timescape Books, 1982), opens: 2053-01-01; Philip K. Dick, The Exegesis of Philip K. Dick, ed. Pamela Jackson and Jonathan Lethem (Houghton Mifflin Harcourt, 2011), opens: 2053-01-01. Open now, and wanted for seating at the operator's word: thirteen stories of the early 1950s whose copyrights were not renewed, in Project Gutenberg's transcriptions from their magazine printings: Beyond Lies the Wub, The Gun, The Skull, The Crystal Crypt, The Defenders, Mr. Spaceship, Piper in the Woods, The Variable Man, Second Variety, The Eyes Have It, Beyond the Door, Tony and the Beetles, The Hanging Stranger (Project Gutenberg EBooks #28554, #29132, #30255, #28698, #28767, #32522, #32832, #32154, #32032, #31516, #28644, #40964, #41562).",
+   "data": "https://www.alexanarch.org/data/corpora/philip-k-dick/"
+  },
+  {
+   "seat": "EA-CORPORA-28/03",
+   "corpus": "allen-ginsberg",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-10-27",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "MANUS, 27 October 2026, after the twenty-seventh seating entered Deleuze and Guattari as a declared absence: \"and a declared absence/ wanted seating: hypatia, d & g, pkd, allen ginsberg, anne carson, and tao lin - including the mandalas. and paul klee. too many files and too many image copyright landmines.\" Allen Ginsberg (1926–1997) is entered as wanted: the poet of the American line that runs from Whitman (03/01), whom \"A Supermarket in California\", in Howl and Other Poems, addresses. His books are in copyright: those published before 1978 run ninety-five years from publication, those after it seventy years from his death, to 1 January 2068.",
+   "scope": "Declared, not seated: Allen Ginsberg, Howl and Other Poems (City Lights, 1956), opens: 2052-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Allen Ginsberg, Kaddish and Other Poems 1958–1960 (City Lights, 1961), opens: 2057-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Allen Ginsberg, Empty Mirror: Early Poems (Totem Press / Corinth Books, 1961), opens: 2057-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Allen Ginsberg, Reality Sandwiches (City Lights, 1963), opens: 2059-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Allen Ginsberg, Planet News (City Lights, 1968), opens: 2064-01-01; Allen Ginsberg, The Fall of America: Poems of These States 1965–1971 (City Lights, 1973), opens: 2069-01-01; Allen Ginsberg, Mind Breaths (City Lights, 1977), opens: 2073-01-01; Allen Ginsberg, Plutonian Ode (City Lights, 1982), opens: 2068-01-01; Allen Ginsberg, Collected Poems 1947–1980 (Harper & Row, 1984), opens: 2068-01-01; Allen Ginsberg, White Shroud (Harper & Row, 1986), opens: 2068-01-01; Allen Ginsberg, Cosmopolitan Greetings (HarperCollins, 1994), opens: 2068-01-01; Allen Ginsberg, Death & Fame (HarperFlamingo, 1999), opens: 2068-01-01. Wanted: the recordings of the readings, held by their recorders and archives under their terms; the manuscripts at Stanford University Libraries.",
+   "data": "https://www.alexanarch.org/data/corpora/allen-ginsberg/"
+  },
+  {
+   "seat": "EA-CORPORA-28/04",
+   "corpus": "anne-carson",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-10-27",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "eng (with the Greek she translates)",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "MANUS, 27 October 2026, after the twenty-seventh seating entered Deleuze and Guattari as a declared absence: \"and a declared absence/ wanted seating: hypatia, d & g, pkd, allen ginsberg, anne carson, and tao lin - including the mandalas. and paul klee. too many files and too many image copyright landmines.\" Anne Carson (b. 1950), awarded the Nobel Prize in Literature on 8 October 2026, is entered as wanted. She is living, and her works open seventy years after her death. They stand on the shelf's own ground: If Not, Winter translates the Sappho the shelf holds as fragment 31 (01/10), Autobiography of Red is built on Stesichorus, Economy of the Unlost reads Simonides with Celan.",
+   "scope": "Declared, not seated: Anne Carson, Eros the Bittersweet (Princeton University Press, 1986), opens: seventy years after the author's death (the author is living); Anne Carson, Short Talks (Brick Books, 1992), opens: seventy years after the author's death (the author is living); Anne Carson, Glass, Irony, and God (New Directions, 1995), opens: seventy years after the author's death (the author is living); Anne Carson, Plainwater (Alfred A. Knopf, 1995), opens: seventy years after the author's death (the author is living); Anne Carson, Autobiography of Red (Alfred A. Knopf, 1998), opens: seventy years after the author's death (the author is living); Anne Carson, Economy of the Unlost (Princeton University Press, 1999), opens: seventy years after the author's death (the author is living); Anne Carson, Men in the Off Hours (Alfred A. Knopf, 2000), opens: seventy years after the author's death (the author is living); Anne Carson, The Beauty of the Husband (Alfred A. Knopf, 2001), opens: seventy years after the author's death (the author is living); Anne Carson (trans.), If Not, Winter: Fragments of Sappho (Alfred A. Knopf, 2002), opens: seventy years after the author's death (the author is living); Anne Carson, Decreation (Alfred A. Knopf, 2005), opens: seventy years after the author's death (the author is living); Anne Carson (trans.), Grief Lessons: Four Plays by Euripides (New York Review Books, 2006), opens: seventy years after the author's death (the author is living); Anne Carson (trans.), An Oresteia (Farrar, Straus and Giroux, 2009), opens: seventy years after the author's death (the author is living); Anne Carson, Nox (New Directions, 2010), opens: seventy years after the author's death (the author is living); Anne Carson, Antigonick (New Directions, 2012), opens: seventy years after the author's death (the author is living); Anne Carson, Red Doc> (Alfred A. Knopf, 2013), opens: seventy years after the author's death (the author is living); Anne Carson, Float (Alfred A. Knopf, 2016), opens: seventy years after the author's death (the author is living); Anne Carson, Norma Jeane Baker of Troy (Oberon Books, 2019), opens: seventy years after the author's death (the author is living); Anne Carson, H of H Playbook (New Directions, 2021), opens: seventy years after the author's death (the author is living); Anne Carson, Wrong Norma (New Directions, 2024), opens: seventy years after the author's death (the author is living); Anne Carson, The Gender of Sound (Spiral House, 2025), opens: seventy years after the author's death (the author is living). Wanted: whatever Carson or her publishers release under an open licence. The Greek she translates is partly on the shelf already, and the rest is open: Stesichorus, Simonides, Euripides, Aeschylus and Sophocles in their Greek, QUEUED.",
+   "data": "https://www.alexanarch.org/data/corpora/anne-carson/"
+  },
+  {
+   "seat": "EA-CORPORA-28/05",
+   "corpus": "tao-lin",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-10-27",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "MANUS, 27 October 2026, after the twenty-seventh seating entered Deleuze and Guattari as a declared absence: \"and a declared absence/ wanted seating: hypatia, d & g, pkd, allen ginsberg, anne carson, and tao lin - including the mandalas. and paul klee. too many files and too many image copyright landmines.\" Tao Lin (b. 1983) is entered as wanted, the mandalas with the books. He is living, and his works open seventy years after his death. The mandalas, which he began drawing in 2014 and first sold on eBay, are images whose every reproduction is his to license.",
+   "scope": "Declared, not seated: Tao Lin, this emotion was a little e-book (Bear Parade, 2006), opens: seventy years after the author's death (the author is living); Tao Lin, you are a little bit happier than i am (Action Books, 2006), opens: seventy years after the author's death (the author is living); Tao Lin, Today the Sky Is Blue and White with Bright Blue Spots and a Small Pale Moon and I Will Destroy Our Relationship Today (Bear Parade, 2006), opens: seventy years after the author's death (the author is living); Tao Lin, Eeeee Eee Eeee (Melville House, 2007), opens: seventy years after the author's death (the author is living); Tao Lin, Bed (Melville House, 2007), opens: seventy years after the author's death (the author is living); Tao Lin, cognitive-behavioral therapy (Melville House, 2008), opens: seventy years after the author's death (the author is living); Tao Lin, Shoplifting from American Apparel (Melville House, 2009), opens: seventy years after the author's death (the author is living); Tao Lin, Richard Yates (Melville House, 2010), opens: seventy years after the author's death (the author is living); Tao Lin, Taipei (Vintage Books, 2013), opens: seventy years after the author's death (the author is living); Tao Lin, Selected Tweets (Short Flight/Long Drive Books, 2015), opens: seventy years after the author's death (the author is living); Tao Lin, Trip: Psychedelics, Alienation, and Change (Vintage Books, 2018), opens: seventy years after the author's death (the author is living); Tao Lin, Leave Society (Vintage Books, 2021), opens: seventy years after the author's death (the author is living); Tao Lin, the mandalas (drawings, from 2014) (sold by the artist, 2014), opens: seventy years after the author's death (the author is living). Wanted: whatever Lin releases openly; his writing on the web as he dates and publishes it, under his terms.",
+   "data": "https://www.alexanarch.org/data/corpora/tao-lin/"
+  },
+  {
+   "seat": "EA-CORPORA-28/06",
+   "corpus": "paul-klee",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-10-27",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "MANUS, 27 October 2026, after the twenty-seventh seating entered Deleuze and Guattari as a declared absence: \"and a declared absence/ wanted seating: hypatia, d & g, pkd, allen ginsberg, anne carson, and tao lin - including the mandalas. and paul klee. too many files and too many image copyright landmines.\" Paul Klee (1879–1940) is entered as wanted for a reason of his own: \"too many files and too many image copyright landmines.\" His work runs to some ten thousand pictures, scattered across collections whose reproductions carry their own claims, and the shelf takes no file whose licence cannot be verified at the file.",
+   "scope": "Declared, not seated: Paul Klee, Schöpferische Konfession, in Tribüne der Kunst und Zeit XIII (Erich Reiss, 1920), opens: open (published before 1931); Paul Klee, Pädagogisches Skizzenbuch (Bauhausbücher 2) (Albert Langen, 1925), opens: open (published before 1931); Paul Klee, Über die moderne Kunst (the Jena lecture of 1924) (Benteli, 1945), opens: 1 January 2041 in the United States, if its term was restored; Paul Klee, ed. Jürg Spiller, Das bildnerische Denken (Benno Schwabe, 1956), opens: the editor's apparatus under its own terms; Paul Klee, ed. Felix Klee, Tagebücher 1898–1918 (DuMont Schauberg, 1957), opens: the editor's apparatus under its own terms; Paul Klee, the pictures (about ten thousand works, 1883–1940), opens: the works open; the photographs under their holders' terms. Wanted, and open: the Pädagogisches Skizzenbuch (1925) and the Schöpferische Konfession (1920) in their first printings, with their drawings, from a scan whose licence is verified at the file. The pictures wait on a source whose images carry an open licence of their own.",
+   "data": "https://www.alexanarch.org/data/corpora/paul-klee/"
   }
  ],
- "count": 116
+ "count": 122
 }
