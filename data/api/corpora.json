@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-10-27T11:57:19.505612Z",
- "seats": 107,
- "lines_total": 3640191,
+ "_generated": "2026-10-27T13:10:42.440262Z",
+ "seats": 109,
+ "lines_total": 3967153,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -6235,7 +6235,277 @@
    "why_seated": "The constitution of the Semantic Economy, as the Waltian canon's site carries it.",
    "scope": "The installable edition as deposited and as published. The other records of the Constitution are not seated here: the enacted version of January (#350; #1127, superseded), the critical apparatus (#715), the Pocket Humans book (#87), the work plan (#82), the navigation map (#351), the companion charters and amendments (#1223, #1224, #719, #94).",
    "data": "https://www.alexanarch.org/data/corpora/constitution-of-the-semantic-economy/"
+  },
+  {
+   "seat": "EA-CORPORA-26/01",
+   "corpus": "du-bois",
+   "edition": "W. E. Burghardt Du Bois, The Suppression of the African Slave-Trade to the United States of America, 1638–1870, Harvard Historical Studies I (New York: Longmans, Green, and Co., 1896) — the first edition, the doctoral dissertation; Library of Congress copy; The Suppression of the African Slave-Trade (1896), Project Gutenberg EBook #17700 — transcription; The Conservation of Races, American Negro Academy Occasional Papers No. 2 (Washington, D.C., 1897), Project Gutenberg EBook #31254 — transcription; The Philadelphia Negro: A Social Study, Publications of the University of Pennsylvania, Series in Political Economy and Public Law No. 14 (Philadelphia: Published for the University, 1899) — the first edition; Wellesley College Library copy; The Souls of Black Folk: Essays and Sketches (Chicago: A. C. McClurg & Co., 1903) — the first edition, 'Published April 18, 1903'; Northwestern University copy (HathiTrust ien.35556032538837), uploaded to the Internet Archive; held as the page images (JP2), the Archive's PDF of this item being over the repository's file limit; The Souls of Black Folk (1903), Project Gutenberg EBook #408 — transcription; Booker T. Washington and others, The Negro Problem: A Series of Articles by Representative American Negroes of To-day (New York: James Pott & Company, 1903), with Du Bois's 'The Talented Tenth', Project Gutenberg EBook #15041 — transcription; John Brown, American Crisis Biographies (Philadelphia: George W. Jacobs & Company, [1909]) — the first edition; Library of Congress copy; John Brown (1909), Project Gutenberg EBook #62799 — transcription; The Crisis: A Record of the Darker Races, Vol. 1 No. 1 (New York: National Association for the Advancement of Colored People, November 1910), W. E. Burghardt Du Bois, editor — the first number, in the facsimile of the Arno Press authorized reprint (New York, 1969), whose title leaf precedes it; The Quest of the Silver Fleece: A Novel (Chicago: A. C. McClurg & Co., 1911) — the first edition; University of California Libraries copy; The Quest of the Silver Fleece (1911), Project Gutenberg EBook #15265 — transcription; The Negro, Home University Library of Modern Knowledge (New York: Henry Holt and Company, 1915) — the first edition; Princeton Theological Seminary Library copy; The Negro (1915), Project Gutenberg EBook #15359 — transcription; Darkwater: Voices from Within the Veil (New York: Harcourt, Brace and Howe, 1920) — the first edition; New York Public Library copy; Darkwater (1920), Project Gutenberg EBook #15210 — transcription; The Gift of Black Folk: The Negroes in the Making of America (Boston: The Stratford Co., 1924) — the first edition; State Library of Pennsylvania copy; The Gift of Black Folk (1924), Project Gutenberg EBook #66398 — transcription; Dark Princess: A Romance (New York: Harcourt, Brace and Company, 1928) — the first edition, 'Copyright, 1928'; a Google Books scan of a library copy, uploaded to the Internet Archive with the Public Domain Mark",
+   "license": {
+    "payload": "Public domain in the United States: every item was first published in the United States in 1930 or earlier. Internet Archive scans of public-domain volumes and periodical numbers; Project Gutenberg transcriptions under the Project Gutenberg License (the text is public domain in the United States; the licence governs use of the Project Gutenberg name and trademark), whose header each file carries. Outside the United States the terms differ: life plus seventy years opens Du Bois (d. 1963) in 2034 and Hughes (d. 1967) in 2038.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "suppressionofafr00dubo",
+      "url": "https://archive.org/details/suppressionofafr00dubo",
+      "files": [
+       "suppressionofafr00dubo.pdf",
+       "suppressionofafr00dubo_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/17700/pg17700.txt"
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/31254/pg31254.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "philadelphianegr00dubo",
+      "url": "https://archive.org/details/philadelphianegr00dubo",
+      "files": [
+       "philadelphianegr00dubo.pdf",
+       "philadelphianegr00dubo_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "duboissoulsofblackfolk",
+      "url": "https://archive.org/details/duboissoulsofblackfolk",
+      "files": [
+       "duboissoulsofblackfolk_jp2.zip",
+       "duboissoulsofblackfolk_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/408/pg408.txt"
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/15041/pg15041.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "johnbrown00dubo",
+      "url": "https://archive.org/details/johnbrown00dubo",
+      "files": [
+       "johnbrown00dubo.pdf",
+       "johnbrown00dubo_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/62799/pg62799.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_crisis_1910-11_1_1",
+      "url": "https://archive.org/details/sim_crisis_1910-11_1_1",
+      "files": [
+       "sim_crisis_1910-11_1_1.pdf",
+       "sim_crisis_1910-11_1_1_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "questofthesilver00duborich",
+      "url": "https://archive.org/details/questofthesilver00duborich",
+      "files": [
+       "questofthesilver00duborich.pdf",
+       "questofthesilver00duborich_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/15265/pg15265.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "negro00dubo",
+      "url": "https://archive.org/details/negro00dubo",
+      "files": [
+       "negro00dubo.pdf",
+       "negro00dubo_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/15359/pg15359.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "darkwatervoicesf00dubo",
+      "url": "https://archive.org/details/darkwatervoicesf00dubo",
+      "files": [
+       "darkwatervoicesf00dubo.pdf",
+       "darkwatervoicesf00dubo_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/15210/pg15210.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "giftofblackfolkn00dubo",
+      "url": "https://archive.org/details/giftofblackfolkn00dubo",
+      "files": [
+       "giftofblackfolkn00dubo.pdf",
+       "giftofblackfolkn00dubo_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/66398/pg66398.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "dark-princess-romance",
+      "url": "https://archive.org/details/dark-princess-romance",
+      "files": [
+       "Dark_Princess.pdf",
+       "Dark_Princess_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-27",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 248282,
+   "verified_loci": [
+    "Suppression, 1896, the preface — 'THIS monograph was begun during my residence as Rogers Memorial Fellow'",
+    "Suppression, 1896, the imprint — 'LONGMANS, GREEN, AND CO.'",
+    "Suppression, transcription — 'Rogers Memorial Fellow'",
+    "The Conservation of Races, 1897, the opening — 'The American Negro has always felt an intense personal interest in discussions as to the origins and destinies of races'",
+    "The Philadelphia Negro, 1899, the title page — 'TOGETHER WITH A SPECIAL REPORT ON DOMESTIC'",
+    "The Souls of Black Folk, 1903, the first edition — 'Published April 18, 1903'",
+    "The Souls of Black Folk, 1903, the color-line — 'problem of the twentieth century is the'",
+    "The Souls of Black Folk, 1903, double-consciousness — 'this double-con'",
+    "The Souls of Black Folk, transcription, the color-line — 'The problem of the twentieth century is the problem of the color-line'",
+    "The Souls of Black Folk, transcription, the veil — 'through the eyes of others, of measuring one’s soul by the tape of a'",
+    "The Talented Tenth, 1903 — 'The Negro race, like all races, is going to be saved by its exceptional men.'",
+    "John Brown, 1909, the imprint — 'GEORGE W. JACOBS & COMPANY'",
+    "John Brown, 1909, the closing — 'The price of repression is greater than the cost of'",
+    "John Brown, transcription — 'The price of repression is greater than the cost of liberty.'",
+    "The Crisis, November 1910, the masthead — 'Edited by W. E. BURGHARDT DU BOIS'",
+    "The Crisis, November 1910, the reprint's title leaf — 'AUTHORIZED REPRINT EDITION'",
+    "The Quest of the Silver Fleece, 1911, the imprint — 'Published October, 1911'",
+    "The Quest of the Silver Fleece, transcription, the dedication — 'whose name may not be written but to whose tireless'",
+    "The Negro, 1915, the series — 'HOME UNIVERSITY LIBRARY OF MODERN KNOWLEDGE'",
+    "The Negro, transcription — 'organization, with its monthly organ, _The Crisis_, is now waging a'",
+    "Darkwater, 1920, the imprint — 'HARCOURT, BRACE AND HOWE'",
+    "Darkwater, 1920, the dedication — 'AD NINAM'",
+    "Darkwater, transcription, the Credo — 'I believe in God, who made of one blood all nations that on earth'",
+    "Darkwater, transcription, chapter II — 'THE SOULS OF WHITE FOLK'",
+    "The Gift of Black Folk, 1924, the imprint — 'THE STRATFORD CO.'",
+    "The Gift of Black Folk, transcription — 'The Negroes in the Making of America'",
+    "Dark Princess, 1928, the imprint — 'HARCOURT, BRACE AND COMPANY'",
+    "Dark Princess, 1928, the dedication — 'To Her High Loveliness'"
+   ],
+   "why_seated": "MANUS, 27 October 2026, after the twenty-fourth seating set the Book of Mormon on the shelf (\"its as american as literature comes. but then i am like, i dont have king of malcolm or mao. it leads down a path where things start getting hairy\"): \"du bois and langston hughes are public domain tho, right?\" — then \"lets seat what can be seated of du bois and hughes\", and, versioning the originals packet to include them: \"the canon's america is way too white\". The shelf held America in Whitman, Dickinson, Pound, Stein, the Book of Mormon and the Millerites; Du Bois is seated as far as the public domain reaches, and with him the first number of the magazine in which Hughes's first poem appeared.",
+   "scope": "Du Bois's books to 1930, each in its first edition where an open scan was found: The Suppression of the African Slave-Trade (1896), The Philadelphia Negro (1899), The Souls of Black Folk (first edition, April 1903), John Brown (1909), The Quest of the Silver Fleece (1911), The Negro (1915), Darkwater (1920), The Gift of Black Folk (1924) and Dark Princess (1928), with Project Gutenberg transcriptions beside seven of them; The Conservation of Races (1897) and The Talented Tenth in The Negro Problem (1903), as transcriptions only; and the first number of The Crisis (November 1910), which he edited, in the facsimile of the Arno Press reprint (1969). His essay in The New Negro (1925) is seated in 26/02, with the anthology. QUEUED: the Atlanta University Publications he edited (1896–1914); The Horizon and The Moon; the further numbers of The Crisis to 1930; The Star of Ethiopia (1913); Africa, Its Place in Modern History (1930). Not seated: Black Reconstruction (1935) and everything after 1930, in copyright in the United States.",
+   "data": "https://www.alexanarch.org/data/corpora/du-bois/"
+  },
+  {
+   "seat": "EA-CORPORA-26/02",
+   "corpus": "langston-hughes",
+   "edition": "The Crisis, Vol. 22 No. 2 (New York: NAACP, June 1921), W. E. Burghardt Du Bois, editor — the number that printed 'The Negro Speaks of Rivers'; microfilm scan; Alain Locke, ed., The New Negro: An Interpretation (New York: Albert and Charles Boni, 1925), with poems by Langston Hughes and W. E. Burghardt Du Bois's 'The Negro Mind Reaches Out' — the first edition; State Library of Pennsylvania copy; The Nation, Vol. 122 No. 3181 (New York, 23 June 1926), with Langston Hughes, 'The Negro Artist and the Racial Mountain' — microfilm scan; The Weary Blues (New York: Alfred A. Knopf, 1926), Project Gutenberg EBook #74745 — transcription of the first edition; Fire!! A Quarterly Devoted to the Younger Negro Artists, Vol. 1 No. 1 (New York, November 1926), with Langston Hughes's poems and his name among its editors, Project Gutenberg EBook #71448 — transcription from the Beinecke Library copy; Countee Cullen, ed., Caroling Dusk: An Anthology of Verse by Negro Poets (New York and London: Harper & Brothers, 1927), with Langston Hughes's poems and his note on himself — the first edition, 'Copyright, 1927, by Harper & Brothers'; Caroling Dusk (1927), Project Gutenberg EBook #76889 — transcription; Not Without Laughter (New York: Alfred A. Knopf, 1930) — the first edition",
+   "license": {
+    "payload": "Public domain in the United States: every item was first published in the United States in 1930 or earlier. Internet Archive scans of public-domain volumes and periodical numbers; Project Gutenberg transcriptions under the Project Gutenberg License (the text is public domain in the United States; the licence governs use of the Project Gutenberg name and trademark), whose header each file carries. Outside the United States the terms differ: life plus seventy years opens Du Bois (d. 1963) in 2034 and Hughes (d. 1967) in 2038.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_crisis_1921-06_22_2",
+      "url": "https://archive.org/details/sim_crisis_1921-06_22_2",
+      "files": [
+       "sim_crisis_1921-06_22_2.pdf",
+       "sim_crisis_1921-06_22_2_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "newnegrointerpre00unse",
+      "url": "https://archive.org/details/newnegrointerpre00unse",
+      "files": [
+       "newnegrointerpre00unse.pdf",
+       "newnegrointerpre00unse_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_nation_1926-06-23_122_3181",
+      "url": "https://archive.org/details/sim_nation_1926-06-23_122_3181",
+      "files": [
+       "sim_nation_1926-06-23_122_3181.pdf",
+       "sim_nation_1926-06-23_122_3181_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/74745/pg74745.txt"
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/71448/pg71448.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "carolingdusk0000coun_p9z2",
+      "url": "https://archive.org/details/carolingdusk0000coun_p9z2",
+      "files": [
+       "carolingdusk0000coun_p9z2.pdf",
+       "carolingdusk0000coun_p9z2_djvu.txt"
+      ]
+     },
+     {
+      "source": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/cache/epub/76889/pg76889.txt"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "notwithoutlaught00lang",
+      "url": "https://archive.org/details/notwithoutlaught00lang",
+      "files": [
+       "notwithoutlaught00lang.pdf",
+       "notwithoutlaught00lang_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-10-27",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 78680,
+   "verified_loci": [
+    "The Crisis, June 1921, the contents — 'THE NEGRO SPEAKS OF RIVERS'",
+    "The Crisis, June 1921, the poem — 'known rivers'",
+    "The New Negro, 1925, the imprint — 'Published, December, 1925'",
+    "The New Negro, 1925, Hughes's Epilogue — 'sing America'",
+    "The New Negro, 1925, Du Bois's essay — 'THE NEGRO MIND REACHES OUT'",
+    "The Nation, 23 June 1926, the contents — 'Negro Artist and the Racial Mountain'",
+    "The Nation, 23 June 1926, the essay — 'dark-skinned selves without fear or shame'",
+    "The Weary Blues, 1926, the title poem — 'Droning a drowsy syncopated tune'",
+    "The Weary Blues, 1926, Epilogue — 'I, too, sing America.'",
+    "Fire!!, 1926, Hughes's poem — '_Elevator Boy_'",
+    "Caroling Dusk, 1927, the imprint — 'COPYRIGHT, 1927, BY HARPER & BROTHERS'",
+    "Caroling Dusk, 1927, Hughes's note — 'Joplin, Missouri'",
+    "Caroling Dusk, transcription — 'Joplin, Missouri'",
+    "Not Without Laughter, 1930, the imprint — 'Copyright 1930 by Alfred A. Knopf'",
+    "Not Without Laughter, 1930, the title — 'NOT WITHOUT LAUGHTER'"
+   ],
+   "why_seated": "MANUS, 27 October 2026, after the twenty-fourth seating set the Book of Mormon on the shelf (\"its as american as literature comes. but then i am like, i dont have king of malcolm or mao. it leads down a path where things start getting hairy\"): \"du bois and langston hughes are public domain tho, right?\" — then \"lets seat what can be seated of du bois and hughes\", and, versioning the originals packet to include them: \"the canon's america is way too white\". Hughes is seated as far as the public domain reaches, from the poem Du Bois printed in The Crisis of June 1921 to his first novel, beside Du Bois (26/01) and beside Whitman (03/01), whose America the Epilogue of The Weary Blues answers: 'I, too, sing America.'",
+   "scope": "Hughes's work to 1930 as first printed: 'The Negro Speaks of Rivers' in The Crisis of June 1921, edited by Du Bois; his poems in The New Negro (1925), the anthology that also carries Du Bois's 'The Negro Mind Reaches Out'; 'The Negro Artist and the Racial Mountain' in The Nation of 23 June 1926; The Weary Blues (1926), as Project Gutenberg's transcription of the Knopf first edition, no open scan found; his poems in Fire!! (1926), the quarterly he helped to edit, as transcription; his poems and his note on himself in Caroling Dusk (1927); and Not Without Laughter (1930), his first novel. QUEUED: Fine Clothes to the Jew (1927), whose one open scan is at HathiTrust, unreachable from this session; his further poems in The Crisis, Opportunity and The Messenger (1921–1930); the Palms numbers of October and November 1926 (only extracts uploaded by individuals, without their source). Not seated: The Dream Keeper (1932) and everything after 1930, in copyright in the United States; Mule Bone, written with Zora Neale Hurston in 1930 and first published in 1991.",
+   "data": "https://www.alexanarch.org/data/corpora/langston-hughes/"
   }
  ],
- "count": 107
+ "count": 109
 }
