@@ -5,7 +5,7 @@
   "protocol_name": "axn",
   "protocol_version": "axn/v2",
   "schema_version": "2026-06-22-axn-v2",
-  "last_updated": "2026-10-24",
+  "last_updated": "2026-10-27",
   "summary": "Canonical specification of the AXN (Alexanarch Identifier) format, generation algorithm, glyph table, cluster table, family enum, validation rules, and legacy resolution. Any code that generates, validates, parses, or resolves AXNs must be derivable from this document. The canonical Python implementation is scripts/axn_lib.py. The canonical JavaScript implementation is embedded in .github/workflows/mint-axn.yml. Both must agree with this protocol.",
   "canonical_implementations": {
     "python": "scripts/axn_lib.py",
@@ -207,5 +207,45 @@
     "ledger": "datasets/negative-of-the-negative/v2/axn.json — one entry per row: position, root, current version, its sha256, and the history of earlier versions. The AXN is not written into the row, whose bytes it is derived from.",
     "resolution": "/s/axn/<HEX>/ names the entry and its /non page; data/api/axn-index.json carries the position with source non-entry; data/axn-central-registry.json lists it with source non-entry.",
     "one_kernel_one_position": "a row whose sha256 is already positioned (a deposit's kernel or a symbolon witness) is not minted a second position; the refusal is printed."
+  },
+  "glyph_table": {
+    "since": "axn/v2.4 (2026-10-27)",
+    "current": "v2.1",
+    "what": "The AXN_GLYPHS table v2.0 held two duplicate glyphs, so two byte values shared a glyph with others. Table v2.1 fills the two slots: 0x6E \"⏳\", 0xCF \"🖤\"; the 256 glyphs are distinct. AXN_GLYPHS_V20 is kept in scripts/axn_lib.py, and an AXN derived under v2.0 through one of the two slots carries its v2.0 form as a prior form. Ruling: Lee Sharks, 2026-10-27, \"fill the two.\"",
+    "copies": [
+      "scripts/axn_lib.py",
+      "api/register-symbolon.js",
+      "serverless/axn_glyphs.json",
+      "mint/index.html",
+      "mint/stamp/index.html"
+    ]
+  },
+  "capture_entries": {
+    "since": "axn/v2.4 (2026-10-27)",
+    "what": "The Capture Registry takes positions in the one AXN sequence through its own mint route (scripts/capture_axn.py). Ruling: Lee Sharks, 2026-10-27: \"one observation / analysis / measure should have one axn. that is the unit of the capture record, and i dont want summarizers citing the captures without the analysis\" — \"one position per address.\"",
+    "position": "one per address (one registry record, one exact query string), allocated from the shared ledger data/symbolon-registry/allocation.json under its rule, max(registry hex, ledger) + 1; a later run at the address joins its position.",
+    "root": "AXN:<hex>.CAPTURE — the address across its runs.",
+    "version": "AXN:<hex>.CAPTURE.<glyph> — one observation (one surface, one date) sealed with its analysis and measures: the glyph is derived from the first 6 bytes of sha256 of data/captures/sealed/<observation>.json, canonical JSON (keys sorted, UTF-8, no insignificant whitespace) of the observation's fields, its analysis, its measures and its evidence files with the SHA-256 of their bytes. The AXN is not written into the sealed file.",
+    "recomposition": "When an observation's sealed bytes change (a corrected transcript, a revised analysis or score), its AXN is re-derived and the earlier form kept in the ledger's history.",
+    "ledger": "data/captures/axn.json; the registry entries carry axn_root and axn, each observation item axn.",
+    "resolution": "/s/axn/<HEX>/ carries every observation at the address with its description, reading, analysis, match, PER, citations and sealed file; data/api/axn-index.json source capture; data/axn-central-registry.json and data/api/kernel-index.json carry the positions and the sealed kernels. seat_capture_postflight runs the route on every registry write."
+  },
+  "release_entries": {
+    "since": "axn/v2.4 (2026-10-27)",
+    "what": "Frozen releases of continuing objects take positions through their own mint route (scripts/release_axn.py). Adopted by Lee Sharks, 2026-10-27 (\"adopted. lets proceed\"), with the rule: mint when preserving the distinction will matter later, hash when integrity matters, locate when pointing is enough. Regenerated pages, the gallery, the addresses and dashboards are projections; the release that produces them is the identified state.",
+    "distinctions": {
+      "continuity": "the position: AXN:<hex>.<FAMILY>, the object across its releases",
+      "version": "the release: AXN:<hex>.<FAMILY>.<glyph>",
+      "location": "where the release's bytes are had (a site path, the git commit that records it, a hub copy); a location can change and the release keeps its identity"
+    },
+    "families": {
+      "RELEASE": "a dataset (datasets/catalog.json; the Capture Registry: the registry, its sealed observations and their AXN ledger, with its held copies v8.11 and v9.6)",
+      "INSTRUMENT": "a protocol, schema, rhizome grammar, the Capture Registry's intake instrument, the PER-dim rubric",
+      "SITE": "a site; alexanarch first"
+    },
+    "glyph_source": "the first 6 bytes of sha256 of the release's manifest (data/releases/manifests/<object>/<label>.sha256: every constituent file with the SHA-256 of its bytes, sha256sum format, paths from the repository root, sorted, HTML pages left out), or, for a one-file instrument, of the file itself (a copy kept in data/releases/frozen/). A SITE release is the tree of one commit (base_commit), read from git, HTML pages, sitemaps, SHA256SUMS.txt and the release ledger left out.",
+    "label": "the version the object declares (the Capture Registry's version, a protocol's current_version, a grammar's version), else the date. A state already released is not released again.",
+    "ledger": "data/releases/axn.json",
+    "relations": "data/axn-relations.json (scripts/build_axn_relations.py): typed relations read from the fields that record them — a /non row follows its spec, opens the observations it registers, grounds in its kernel sources and reads its defining papers; a capture observation draws on the deposits its confirmed joins name; a dataset follows its grammar or instrument, is scored by its rubric; an instrument is documented in its deposit. The resolver renders them on each page in both directions. A hash names bytes and supplies no relation."
   }
 }

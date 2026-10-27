@@ -2190,6 +2190,9 @@ if __name__ == "__main__":
 # AXN resolution layer — regenerate on every surface pass (added 2026-07-04)
 if __name__ == "__main__" and "--dry-run" not in __import__("sys").argv:
     import generate_axn_resolver as _axn
+    # 2026-10-27: the typed relations first (scripts/build_axn_relations.py); the resolver renders them on each page.
+    import build_axn_relations as _rel
+    _rel.main()
     _axn.main()
     # 2026-10-06: Speak with Sigil on every page, once, after every surface has been written (scripts/sync_sigil.py)
     import subprocess as _sp2

@@ -1,0 +1,1249 @@
+{
+ "_what_this_is": "The AXN ledger of releases: one position per continuing object (a dataset, an instrument, a site), root AXN:<HEX>.<FAMILY>; one AXN per frozen release, AXN:<HEX>.<FAMILY>.<glyphs>, the glyphs derived from the SHA-256 of the release's manifest (data/releases/manifests/) or, for a one-file instrument, of the file itself (a copy kept in data/releases/frozen/). Continuity is the position, version the release, location where its bytes are had.",
+ "ruling": "Lee Sharks, 2026-10-27: \"adopted. lets proceed\" — dataset releases, instrument versions, typed relations, site releases.",
+ "minted_by": "scripts/release_axn.py",
+ "glyph_table": "v2.1",
+ "objects": {
+  "capture-registry": {
+   "hex": "0A39",
+   "root": "AXN:0A39.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A39.RELEASE.🧊🚪👇🍁🖊️●",
+     "label": "8.11",
+     "date": "2026-07-06",
+     "sha256": "1d24b777449c4a4e9970f622d8f6cde00880f64cb831585b539087d1361a35cc",
+     "basis": "manifest",
+     "files": 1,
+     "bytes": 269400,
+     "manifest": "/data/releases/manifests/capture-registry/8.11.sha256",
+     "note": "a copy of this version held in the archive"
+    },
+    {
+     "axn": "AXN:0A39.RELEASE.🍂🌘📏🎬🕌🌳",
+     "label": "9.6",
+     "date": "2026-07-14",
+     "sha256": "78074ff129768a95071d8e889a077294fc657bc09aedbe13a6bf6915e282176c",
+     "basis": "manifest",
+     "files": 1,
+     "bytes": 288806,
+     "manifest": "/data/releases/manifests/capture-registry/9.6.sha256",
+     "note": "a copy of this version held in the archive"
+    },
+    {
+     "axn": "AXN:0A39.RELEASE.🕖🍃🌟🌑🧱🌉",
+     "label": "12.325",
+     "date": "2026-10-27",
+     "sha256": "68180900222bbb02de013c0d326046c8b6c17a8e240449397b7fadbbdc8d85fd",
+     "basis": "manifest",
+     "files": 965,
+     "bytes": 49009036,
+     "manifest": "/data/releases/manifests/capture-registry/12.325.sha256"
+    }
+   ],
+   "name": "capture-registry",
+   "class": "archive_set_member",
+   "source": [
+    "data/EA-WG-CAPTURES-01.json",
+    "data/captures/axn.json",
+    "data/captures/sealed"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/capture-registry/"
+   ]
+  },
+  "rhizome-model-collapse-anti-collapse": {
+   "hex": "0A3A",
+   "root": "AXN:0A3A.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A3A.RELEASE.🌉▽⭐📐⚓🔓",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "2b99084e2cfa462599c82b91726d56365e0eb2445c1a9a3c70bad3aeac0997a9",
+     "basis": "manifest",
+     "files": 7,
+     "bytes": 716358,
+     "manifest": "/data/releases/manifests/rhizome-model-collapse-anti-collapse/2026-10-27.sha256"
+    }
+   ],
+   "name": "model-collapse-anti-collapse",
+   "class": "rhizome",
+   "source": [
+    "rhizomes/model-collapse-anti-collapse",
+    "rhizomes/_grammars/collapse.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/model-collapse-anti-collapse/",
+    "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
+   ],
+   "builder": "scripts/build_rhizome_mc.py",
+   "instrument": "grammar-collapse"
+  },
+  "rhizome-semantic-economy": {
+   "hex": "0A3B",
+   "root": "AXN:0A3B.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A3B.RELEASE.⊕📦✊🫶🔚🝊",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "964bb4bdf2a13313e1f7d25fa9b447870673d6343ee8e77f07a2acb19833423c",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 693194,
+     "manifest": "/data/releases/manifests/rhizome-semantic-economy/2026-10-27.sha256"
+    }
+   ],
+   "name": "semantic-economy",
+   "class": "rhizome",
+   "source": [
+    "rhizomes/semantic-economy",
+    "rhizomes/_grammars/semantic-economy.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/semantic-economy/",
+    "https://huggingface.co/datasets/leesharks/semantic-economy"
+   ],
+   "builder": "scripts/build_rhizome_mc.py",
+   "instrument": "grammar-semantic-economy"
+  },
+  "rhizome-machine-mediated-reception": {
+   "hex": "0A3C",
+   "root": "AXN:0A3C.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A3C.RELEASE.🔒🌸⛩️🔙💛🟣",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "f97028f3cdc658de5ab0f5de4500b1f0c0fcd334ddf98befafcccc233209d81c",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 1496852,
+     "manifest": "/data/releases/manifests/rhizome-machine-mediated-reception/2026-10-27.sha256"
+    }
+   ],
+   "name": "machine-mediated-reception",
+   "class": "rhizome",
+   "source": [
+    "rhizomes/machine-mediated-reception",
+    "rhizomes/_grammars/machine-mediated-reception.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/machine-mediated-reception/",
+    "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
+   ],
+   "builder": "scripts/build_rhizome_mc.py",
+   "instrument": "grammar-machine-mediated-reception"
+  },
+  "rhizome-revelation-first": {
+   "hex": "0A3D",
+   "root": "AXN:0A3D.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A3D.RELEASE.🎇⊗👋💎△⏳",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "e897bf1c986e00c2320f8a5eb9c448bf53ce1879fc89166620b6df4ede06b3b7",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 311573,
+     "manifest": "/data/releases/manifests/rhizome-revelation-first/2026-10-27.sha256"
+    }
+   ],
+   "name": "revelation-first",
+   "class": "rhizome",
+   "source": [
+    "rhizomes/revelation-first",
+    "rhizomes/_grammars/revelation-first.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/revelation-first/",
+    "https://huggingface.co/datasets/leesharks/revelation-first"
+   ],
+   "builder": "scripts/build_rhizome_mc.py",
+   "instrument": "grammar-revelation-first"
+  },
+  "rhizome-spxi-mpai": {
+   "hex": "0A3E",
+   "root": "AXN:0A3E.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A3E.RELEASE.↙️🍃🪐🧲↗️📐",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "dc180d35da4ebc1f94f3bbb58b671afca88b7465352af6e13aa57d0b9064c240",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 96001,
+     "manifest": "/data/releases/manifests/rhizome-spxi-mpai/2026-10-27.sha256"
+    }
+   ],
+   "name": "spxi-mpai",
+   "class": "rhizome",
+   "source": [
+    "rhizomes/spxi-mpai",
+    "rhizomes/_grammars/spxi-mpai.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/spxi-mpai/",
+    "https://huggingface.co/datasets/leesharks/spxi-mpai"
+   ],
+   "builder": "scripts/build_rhizome_mc.py",
+   "instrument": "grammar-spxi-mpai"
+  },
+  "rhizome-provenance-erasure": {
+   "hex": "0A3F",
+   "root": "AXN:0A3F.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A3F.RELEASE.🔝❄️🚀⏳🪧🌳",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "f5145d6e4d760a31b0b7b56b29a69da2c398b3a01eb99d417e9be36964b4013d",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 103356,
+     "manifest": "/data/releases/manifests/rhizome-provenance-erasure/2026-10-27.sha256"
+    }
+   ],
+   "name": "provenance-erasure",
+   "class": "rhizome",
+   "source": [
+    "rhizomes/provenance-erasure",
+    "rhizomes/_grammars/provenance-erasure.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/provenance-erasure/",
+    "https://huggingface.co/datasets/leesharks/provenance-erasure"
+   ],
+   "builder": "scripts/build_rhizome_mc.py",
+   "instrument": "grammar-provenance-erasure"
+  },
+  "rhizome-heteronyms": {
+   "hex": "0A40",
+   "root": "AXN:0A40.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A40.RELEASE.🍀⚪🔭🫵🔺🔆",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "74c738bad0ec0fab7b16add41ba153fe3c9a0e7c5f0d2759e90a458325583bee",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 525375,
+     "manifest": "/data/releases/manifests/rhizome-heteronyms/2026-10-27.sha256"
+    }
+   ],
+   "name": "heteronyms",
+   "class": "rhizome",
+   "source": [
+    "rhizomes/heteronyms",
+    "rhizomes/_grammars/heteronyms.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/heteronyms/",
+    "https://huggingface.co/datasets/leesharks/heteronyms"
+   ],
+   "builder": "scripts/build_rhizome_mc.py",
+   "instrument": "grammar-heteronyms"
+  },
+  "rhizome-poetics": {
+   "hex": "0A41",
+   "root": "AXN:0A41.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A41.RELEASE.🖐️🐝☽□🏔️🎯",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "bb7da89d1655865844f596ba3a4a4f989f7eee237bbcb4d93a99126fc8f6a139",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 120510,
+     "manifest": "/data/releases/manifests/rhizome-poetics/2026-10-27.sha256"
+    }
+   ],
+   "name": "poetics",
+   "class": "rhizome",
+   "source": [
+    "rhizomes/poetics",
+    "rhizomes/_grammars/poetics.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/poetics/",
+    "https://huggingface.co/datasets/leesharks/poetics"
+   ],
+   "builder": "scripts/build_rhizome_mc.py",
+   "instrument": "grammar-poetics"
+  },
+  "negative-of-the-negative": {
+   "hex": "0A42",
+   "root": "AXN:0A42.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A42.RELEASE.👉◀️🎶💎☽☽",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "b9d2881ca8a8d1992b70e36077cf2439a50160c03a756a083722de51e937ccfa",
+     "basis": "manifest",
+     "files": 364,
+     "bytes": 50640005,
+     "manifest": "/data/releases/manifests/negative-of-the-negative/2026-10-27.sha256"
+    }
+   ],
+   "name": "negative-of-the-negative",
+   "class": "intervention",
+   "source": [
+    "datasets/negative-of-the-negative"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/negative-of-the-negative/",
+    "https://huggingface.co/datasets/leesharks/negative-of-the-negative"
+   ],
+   "builder": "scripts/build_negative_of_the_negative.py"
+  },
+  "the-final-time": {
+   "hex": "0A43",
+   "root": "AXN:0A43.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A43.RELEASE.👁️🕚👁‍🗨☽🌪️▶️",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "576cb0a812d3e816d398c753b20604489309142901fb5d1df758cdf976de0df0",
+     "basis": "manifest",
+     "files": 19,
+     "bytes": 126724,
+     "manifest": "/data/releases/manifests/the-final-time/2026-10-27.sha256"
+    }
+   ],
+   "name": "the-final-time",
+   "class": "experiment",
+   "source": [
+    "datasets/the-final-time"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/the-final-time/",
+    "https://huggingface.co/datasets/leesharks/the-final-time"
+   ],
+   "builder": "scripts/build_final_time_dataset.py"
+  },
+  "spam-technicians": {
+   "hex": "0A44",
+   "root": "AXN:0A44.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A44.RELEASE.🌪️📝🪄🧬🌻🖤",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "12423e3b72cf5e9c686310b59c28da648130d38e62d495fb2474bf3b0969f91c",
+     "basis": "manifest",
+     "files": 3,
+     "bytes": 66000,
+     "manifest": "/data/releases/manifests/spam-technicians/2026-10-27.sha256"
+    }
+   ],
+   "name": "spam-technicians",
+   "class": "argument",
+   "source": [
+    "datasets/argument-as-dataset"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/argument-as-dataset/",
+    "https://huggingface.co/datasets/leesharks/spam-technicians"
+   ],
+   "builder": "scripts/build_argument_as_dataset.py"
+  },
+  "tiger-leap": {
+   "hex": "0A45",
+   "root": "AXN:0A45.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A45.RELEASE.📌👐✖️🏴💥🤲",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "46b29252ebb1dbb1bb6b0f6df3684e68bfb4c0698ab77a099f2c4ddca8790849",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 53010,
+     "manifest": "/data/releases/manifests/tiger-leap/2026-10-27.sha256"
+    }
+   ],
+   "name": "tiger-leap",
+   "class": "problem",
+   "source": [
+    "datasets/tiger-leap"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/tiger-leap/",
+    "https://huggingface.co/datasets/leesharks/tiger-leap"
+   ]
+  },
+  "mantle-bearing": {
+   "hex": "0A46",
+   "root": "AXN:0A46.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A46.RELEASE.🐝💧🗼👁️🔴🌘",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "7d112a57c107b87c02400c24ad2899917f586405f61a8970133d30ab2962450b",
+     "basis": "manifest",
+     "files": 27,
+     "bytes": 2762666,
+     "manifest": "/data/releases/manifests/mantle-bearing/2026-10-27.sha256"
+    }
+   ],
+   "name": "mantle-bearing",
+   "class": "evaluation",
+   "source": [
+    "datasets/mantle-bearing"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/mantle-bearing/",
+    "https://huggingface.co/datasets/leesharks/mantle-bearing"
+   ],
+   "builder": "scripts/build_mantle_bearing_dataset.py"
+  },
+  "tombstone-mirror": {
+   "hex": "0A47",
+   "root": "AXN:0A47.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A47.RELEASE.🔽🕌🕊️🌑⚡🍀",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "d5297e0013747ca6325c683c3f508e2f5fd1ae2f2304eb7af960ee6bae489173",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 9943864,
+     "manifest": "/data/releases/manifests/tombstone-mirror/2026-10-27.sha256"
+    }
+   ],
+   "name": "tombstone-mirror",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/tombstone-mirror"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/tombstone-mirror/"
+   ]
+  },
+  "zenodo-datacite-batch": {
+   "hex": "0A48",
+   "root": "AXN:0A48.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A48.RELEASE.🪦❄️🌅▽🎺⚫",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "fd14e0998bc83504eec2ff68d881ae097e4f1f4c82c9f2cd49518bac68b30f75",
+     "basis": "manifest",
+     "files": 5,
+     "bytes": 3794966,
+     "manifest": "/data/releases/manifests/zenodo-datacite-batch/2026-10-27.sha256"
+    }
+   ],
+   "name": "zenodo-datacite-batch",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/zenodo-datacite-batch"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/zenodo-datacite-batch/"
+   ]
+  },
+  "heteronyms": {
+   "hex": "0A49",
+   "root": "AXN:0A49.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A49.RELEASE.♅♾️🦅🌈⏩🎶",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "a5947f1ed688b5cd35d465d3bef544f9c0f0ba6e612356cb359f1414816f82f9",
+     "basis": "manifest",
+     "files": 71,
+     "bytes": 4041074,
+     "manifest": "/data/releases/manifests/heteronyms/2026-10-27.sha256"
+    }
+   ],
+   "name": "heteronyms",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/heteronyms"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/heteronyms/"
+   ]
+  },
+  "new-human-primary": {
+   "hex": "0A4A",
+   "root": "AXN:0A4A.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A4A.RELEASE.👐🟠🪟🏔️🔽💎",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "b2c22516d51cfef3c64050068f2a7760b0683573782ca294e5f6b357cacd5bbf",
+     "basis": "manifest",
+     "files": 2,
+     "bytes": 149894,
+     "manifest": "/data/releases/manifests/new-human-primary/2026-10-27.sha256"
+    }
+   ],
+   "name": "new-human-primary",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/new-human-primary"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/new-human-primary/"
+   ]
+  },
+  "gutenberg-classical": {
+   "hex": "0A4B",
+   "root": "AXN:0A4B.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A4B.RELEASE.🕓🌲💫🍄🏺🪝",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "65750a792f34dd98fba931589109cac7376a95aedbb998babf3f2c0015aaafbc",
+     "basis": "manifest",
+     "files": 3,
+     "bytes": 580222,
+     "manifest": "/data/releases/manifests/gutenberg-classical/2026-10-27.sha256"
+    }
+   ],
+   "name": "gutenberg-classical",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/gutenberg-classical"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/gutenberg-classical/"
+   ]
+  },
+  "perseus-classical": {
+   "hex": "0A4C",
+   "root": "AXN:0A4C.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A4C.RELEASE.🔔🟣🔴❄️🔮🚩",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "2ec6c1143d531b1deffcecadbd3391d33d0c7bda3da4207c4d1d6606f0053b0f",
+     "basis": "manifest",
+     "files": 4,
+     "bytes": 814545,
+     "manifest": "/data/releases/manifests/perseus-classical/2026-10-27.sha256"
+    }
+   ],
+   "name": "perseus-classical",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/perseus-classical"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/perseus-classical/"
+   ]
+  },
+  "negshape-deletion-bibliography": {
+   "hex": "0A4D",
+   "root": "AXN:0A4D.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A4D.RELEASE.✏️🤙📖🟠🔧🔔",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "43be41c2302ee53f7fd3463b80a02538eba1deca5f402880717f483f9ed5f63d",
+     "basis": "manifest",
+     "files": 21,
+     "bytes": 13319316,
+     "manifest": "/data/releases/manifests/negshape-deletion-bibliography/2026-10-27.sha256"
+    }
+   ],
+   "name": "negshape-deletion-bibliography",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/negshape-deletion-bibliography"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/negshape-deletion-bibliography/"
+   ]
+  },
+  "dataflow-atlas": {
+   "hex": "0A4E",
+   "root": "AXN:0A4E.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A4E.RELEASE.🎨🝊🎇🌘🍃⏳",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "86a1e807186e3fcc19ec933466a78bbcbd49f8b8e71c7f31b6fe21904b6e6428",
+     "basis": "manifest",
+     "files": 38,
+     "bytes": 3492198,
+     "manifest": "/data/releases/manifests/dataflow-atlas/2026-10-27.sha256"
+    }
+   ],
+   "name": "dataflow-atlas",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/dataflow-atlas"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/dataflow-atlas/"
+   ]
+  },
+  "cha-doi-work-identity-map": {
+   "hex": "0A4F",
+   "root": "AXN:0A4F.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A4F.RELEASE.🔽🧱🏁♆🎹🎬",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "d522f0a689f1353ba899def27376c198827452d879b45fe0bc5f1f71275e67a9",
+     "basis": "manifest",
+     "files": 3,
+     "bytes": 1414191,
+     "manifest": "/data/releases/manifests/cha-doi-work-identity-map/2026-10-27.sha256"
+    }
+   ],
+   "name": "CHA DOI–Work Identity Map",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/doi-work-identity"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/doi-work-identity/"
+   ]
+  },
+  "peo-case-001-florence-fup": {
+   "hex": "0A50",
+   "root": "AXN:0A50.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A50.RELEASE.🎇🌪️☉○✨🌱",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "e812a79be919bab412a74dae498b79d99925ce573c7bf320dcf4fb9ce73f42c0",
+     "basis": "manifest",
+     "files": 4,
+     "bytes": 1059791,
+     "manifest": "/data/releases/manifests/peo-case-001-florence-fup/2026-10-27.sha256"
+    }
+   ],
+   "name": "peo-case-001-florence-fup",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/peo-case-001-florence-fup"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/peo-case-001-florence-fup/"
+   ]
+  },
+  "protocol-deposit": {
+   "hex": "0A51",
+   "root": "AXN:0A51.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A51.INSTRUMENT.🗿♎🫵🔓🔺🔻",
+     "label": "alexanarch-deposit-protocol/v1",
+     "date": "2026-10-27",
+     "sha256": "fcafbafad0d1c95b560ba5e0cfd0503c76182bdf1feb7b419caedf41ae1296bf",
+     "basis": "file",
+     "files": 1,
+     "bytes": 13699,
+     "file": "data/api/deposit-protocol.json",
+     "frozen": "/data/releases/frozen/protocol-deposit/alexanarch-deposit-protocol_v1/deposit-protocol.json"
+    }
+   ],
+   "name": "Alexanarch Deposit Protocol",
+   "source": [
+    "data/api/deposit-protocol.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/api/deposit-protocol.json"
+   ],
+   "governs": "What a deposit is, what fields it requires, how it's submitted (Path A auto-mint, Path B canonical rich), how it's validated, what enrichment runs."
+  },
+  "protocol-axn": {
+   "hex": "0A52",
+   "root": "AXN:0A52.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A52.INSTRUMENT.🤲♻️🫵💡🚀🕓",
+     "label": "axn/v2",
+     "date": "2026-10-27",
+     "sha256": "b1feba3c5d6599144568b7b24615a8b09642a96ec107b76c6d7d68160e30935c",
+     "basis": "file",
+     "files": 1,
+     "bytes": 20642,
+     "file": "data/api/axn-protocol.json",
+     "frozen": "/data/releases/frozen/protocol-axn/axn_v2/axn-protocol.json"
+    }
+   ],
+   "name": "AXN Identifier Protocol",
+   "source": [
+    "data/api/axn-protocol.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/api/axn-protocol.json"
+   ],
+   "governs": "AXN format, AXN_GLYPHS table (256 entries), CLUSTERS table (256 entries), generation algorithm, legacy resolution (v1 → v2), substrate-chosen glyph preservation in glyphic_canary, recognition-vs-identity principle."
+  },
+  "protocol-enrichment": {
+   "hex": "0A53",
+   "root": "AXN:0A53.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A53.INSTRUMENT.🔐🕕🪝♍🟢🗝️",
+     "label": "enrichment/v1",
+     "date": "2026-10-27",
+     "sha256": "fb6734aec43fbc6c4cab20c244ebadd5ce3a8f8b4ebcbc6a10366815bfcd0e62",
+     "basis": "file",
+     "files": 1,
+     "bytes": 8630,
+     "file": "data/api/enrichment-protocol.json",
+     "frozen": "/data/releases/frozen/protocol-enrichment/enrichment_v1/enrichment-protocol.json"
+    }
+   ],
+   "name": "enrichment",
+   "source": [
+    "data/api/enrichment-protocol.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/api/enrichment-protocol.json"
+   ],
+   "governs": "Three-stage enrichment pipeline (mint-time / reading-pass / build-time) + canonical citation extraction mechanism with five via types"
+  },
+  "protocol-lifecycle": {
+   "hex": "0A54",
+   "root": "AXN:0A54.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A54.INSTRUMENT.📝🔐🎭🖊️🌳🔀",
+     "label": "alexanarch-lifecycle-protocol/v1.0",
+     "date": "2026-10-27",
+     "sha256": "42fb844476df669150898bc91695cfc802e09abbdf70a3df3d6f6e2b7177385e",
+     "basis": "file",
+     "files": 1,
+     "bytes": 8261,
+     "file": "data/api/lifecycle-protocol.json",
+     "frozen": "/data/releases/frozen/protocol-lifecycle/alexanarch-lifecycle-protocol_v1.0/lifecycle-protocol.json"
+    }
+   ],
+   "name": "Alexanarch Lifecycle Protocol",
+   "source": [
+    "data/api/lifecycle-protocol.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/api/lifecycle-protocol.json"
+   ],
+   "governs": "Status vocabulary (ACTIVE/SUPERSEDED/WITHDRAWN/DRAFT_PENDING) and version-chain data model for deposits. Specifies how supersession, draft state, and series membership are recorded and rendered. Invariants: at most one ACTIVE in a supersession series; sequential series may have many ACTIVE entries; bidirectional consistency between predecessor and superseded_by fields."
+  },
+  "protocol-deposit-completeness": {
+   "hex": "0A55",
+   "root": "AXN:0A55.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A55.INSTRUMENT.🔙🔄♣️👉📋🌿",
+     "label": "deposit-completeness/v1",
+     "date": "2026-10-27",
+     "sha256": "f36f83b94517bf3b5cf79b97bc1f547f19563bb7c98ff7aa8e5e579d7dd3eb07",
+     "basis": "file",
+     "files": 1,
+     "bytes": 1777,
+     "file": "data/api/deposit-completeness.json",
+     "frozen": "/data/releases/frozen/protocol-deposit-completeness/deposit-completeness_v1/deposit-completeness.json"
+    }
+   ],
+   "name": "deposit-completeness",
+   "source": [
+    "data/api/deposit-completeness.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/api/deposit-completeness.json"
+   ],
+   "governs": "Per-deposit completeness: authored wiki, concepts, related, lexical receipt, citation edges, artifact-free render, verified files. Fails closed before commit."
+  },
+  "schema-deposit-entry": {
+   "hex": "0A56",
+   "root": "AXN:0A56.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A56.INSTRUMENT.🧬🕓♉🟢🕛🔄",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "3b65aac46d6f75b3ede6edcdf3cca66e4e75bef4dd20fb9af283ebba7684577a",
+     "basis": "file",
+     "files": 1,
+     "bytes": 3531,
+     "file": "data/api/schemas/deposit-entry.schema.json",
+     "frozen": "/data/releases/frozen/schema-deposit-entry/2026-10-27/deposit-entry.schema.json"
+    }
+   ],
+   "name": "Deposit Entry Schema",
+   "source": [
+    "data/api/schemas/deposit-entry.schema.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/api/schemas/deposit-entry.schema.json"
+   ],
+   "governs": "Individual entries in /data/registry.json deposits array."
+  },
+  "schema-deposit-submission": {
+   "hex": "0A57",
+   "root": "AXN:0A57.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A57.INSTRUMENT.🎶🛤️❌❌▽🜁",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "885befef99a0eeb3cff072ec1be82f14cea627ee845045d8dd440439169c7e64",
+     "basis": "file",
+     "files": 1,
+     "bytes": 3365,
+     "file": "data/api/deposit-schema.json",
+     "frozen": "/data/releases/frozen/schema-deposit-submission/2026-10-27/deposit-schema.json"
+    }
+   ],
+   "name": "Deposit Submission Schema (Issue Body Template)",
+   "source": [
+    "data/api/deposit-schema.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/api/deposit-schema.json"
+   ],
+   "governs": "GitHub Issue bodies submitted as [DEPOSIT] for Path A auto-mint."
+  },
+  "schema-external-metadata": {
+   "hex": "0A58",
+   "root": "AXN:0A58.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A58.INSTRUMENT.♊🌿☿🔓💫□",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "ab17a2fa0a9de1f63f7cb1a083f62b7c6ae1910f256e8ba6bbcef9526c82fd03",
+     "basis": "file",
+     "files": 1,
+     "bytes": 5552,
+     "file": "data/api/schemas/external-metadata.schema.json",
+     "frozen": "/data/releases/frozen/schema-external-metadata/2026-10-27/external-metadata.schema.json"
+    }
+   ],
+   "name": "external_metadata",
+   "source": [
+    "data/api/schemas/external-metadata.schema.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/api/schemas/external-metadata.schema.json"
+   ]
+  },
+  "grammar-collapse": {
+   "hex": "0A59",
+   "root": "AXN:0A59.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A59.INSTRUMENT.🛸🔺🕗♣️📚🏁",
+     "label": "1.0",
+     "date": "2026-10-27",
+     "sha256": "5ed0698349f00d583fce0ea4b75cfff96381638dc9f8f8413673c7b6ee27bd78",
+     "basis": "file",
+     "files": 1,
+     "bytes": 18863,
+     "file": "rhizomes/_grammars/collapse.json",
+     "frozen": "/data/releases/frozen/grammar-collapse/1.0/collapse.json"
+    }
+   ],
+   "name": "rhizome grammar collapse",
+   "source": [
+    "rhizomes/_grammars/collapse.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/_grammars/collapse.json"
+   ]
+  },
+  "grammar-heteronyms": {
+   "hex": "0A5A",
+   "root": "AXN:0A5A.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A5A.INSTRUMENT.⛩️👁‍🗨⚓🌻⭕🌋",
+     "label": "0.1",
+     "date": "2026-10-27",
+     "sha256": "28b02c72ee15e4164761a3a0e8ea9e17b03f918fe11c552dc41d5bda364316d9",
+     "basis": "file",
+     "files": 1,
+     "bytes": 17717,
+     "file": "rhizomes/_grammars/heteronyms.json",
+     "frozen": "/data/releases/frozen/grammar-heteronyms/0.1/heteronyms.json"
+    }
+   ],
+   "name": "rhizome grammar heteronyms",
+   "source": [
+    "rhizomes/_grammars/heteronyms.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/_grammars/heteronyms.json"
+   ]
+  },
+  "grammar-machine-mediated-reception": {
+   "hex": "0A5B",
+   "root": "AXN:0A5B.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A5B.INSTRUMENT.🔖🔩🌸⛵🔴⭐",
+     "label": "0.1",
+     "date": "2026-10-27",
+     "sha256": "4831705cc1088754839901a816b33f081cc9a9124621c059bb6a3e519c162d08",
+     "basis": "file",
+     "files": 1,
+     "bytes": 17520,
+     "file": "rhizomes/_grammars/machine-mediated-reception.json",
+     "frozen": "/data/releases/frozen/grammar-machine-mediated-reception/0.1/machine-mediated-reception.json"
+    }
+   ],
+   "name": "rhizome grammar machine-mediated-reception",
+   "source": [
+    "rhizomes/_grammars/machine-mediated-reception.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/_grammars/machine-mediated-reception.json"
+   ]
+  },
+  "grammar-poetics": {
+   "hex": "0A5C",
+   "root": "AXN:0A5C.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A5C.INSTRUMENT.💚🏗️🌓✏️🧪🏗️",
+     "label": "0.4",
+     "date": "2026-10-27",
+     "sha256": "cc2102433921db7d5c009386e3260cbce484f51a4d649932acb55c3638823511",
+     "basis": "file",
+     "files": 1,
+     "bytes": 18392,
+     "file": "rhizomes/_grammars/poetics.json",
+     "frozen": "/data/releases/frozen/grammar-poetics/0.4/poetics.json"
+    }
+   ],
+   "name": "rhizome grammar poetics",
+   "source": [
+    "rhizomes/_grammars/poetics.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/_grammars/poetics.json"
+   ]
+  },
+  "grammar-provenance-erasure": {
+   "hex": "0A5D",
+   "root": "AXN:0A5D.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A5D.INSTRUMENT.○♋🟠❄️💥🎹",
+     "label": "1.0",
+     "date": "2026-10-27",
+     "sha256": "9bacc214eb898bf4b7724852987251a15f04c4b8f1654741ed9f5d7f54c6c21b",
+     "basis": "file",
+     "files": 1,
+     "bytes": 27774,
+     "file": "rhizomes/_grammars/provenance-erasure.json",
+     "frozen": "/data/releases/frozen/grammar-provenance-erasure/1.0/provenance-erasure.json"
+    }
+   ],
+   "name": "rhizome grammar provenance-erasure",
+   "source": [
+    "rhizomes/_grammars/provenance-erasure.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/_grammars/provenance-erasure.json"
+   ]
+  },
+  "grammar-revelation-first": {
+   "hex": "0A5E",
+   "root": "AXN:0A5E.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A5E.INSTRUMENT.♎▽⛵🜁🕗☁️",
+     "label": "0.1",
+     "date": "2026-10-27",
+     "sha256": "af995ca0691f7dea001833bd0ffe231031865a9207502ab99d29712d48504b5f",
+     "basis": "file",
+     "files": 1,
+     "bytes": 18895,
+     "file": "rhizomes/_grammars/revelation-first.json",
+     "frozen": "/data/releases/frozen/grammar-revelation-first/0.1/revelation-first.json"
+    }
+   ],
+   "name": "rhizome grammar revelation-first",
+   "source": [
+    "rhizomes/_grammars/revelation-first.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/_grammars/revelation-first.json"
+   ]
+  },
+  "grammar-semantic-economy": {
+   "hex": "0A5F",
+   "root": "AXN:0A5F.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A5F.INSTRUMENT.🔚🌊🌖🪐🌿🌔",
+     "label": "0.3",
+     "date": "2026-10-27",
+     "sha256": "f20f050d1703d9027675bbde222b180d7f5ec8e4a34653fa288732e3a277369c",
+     "basis": "file",
+     "files": 1,
+     "bytes": 31746,
+     "file": "rhizomes/_grammars/semantic-economy.json",
+     "frozen": "/data/releases/frozen/grammar-semantic-economy/0.3/semantic-economy.json"
+    }
+   ],
+   "name": "rhizome grammar semantic-economy",
+   "source": [
+    "rhizomes/_grammars/semantic-economy.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/_grammars/semantic-economy.json"
+   ]
+  },
+  "grammar-spxi-mpai": {
+   "hex": "0A60",
+   "root": "AXN:0A60.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A60.INSTRUMENT.❄️🕓🤲🌠⭐🤲",
+     "label": "1.0",
+     "date": "2026-10-27",
+     "sha256": "1465b1ea08b1315267a22f229a3506f4f0a654bec569396c1ad8b407958b2549",
+     "basis": "file",
+     "files": 1,
+     "bytes": 18301,
+     "file": "rhizomes/_grammars/spxi-mpai.json",
+     "frozen": "/data/releases/frozen/grammar-spxi-mpai/1.0/spxi-mpai.json"
+    }
+   ],
+   "name": "rhizome grammar spxi-mpai",
+   "source": [
+    "rhizomes/_grammars/spxi-mpai.json"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rhizomes/_grammars/spxi-mpai.json"
+   ]
+  },
+  "capture-intake": {
+   "hex": "0A61",
+   "root": "AXN:0A61.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A61.INSTRUMENT.🔃💡👆🏛️◇🎯",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "de3cb6209a550fa9e875a36cdb0ef7764be8e1d5a16c179a14d536a2a891d7eb",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 77699,
+     "manifest": "/data/releases/manifests/capture-intake/2026-10-27.sha256"
+    }
+   ],
+   "name": "Capture Registry intake instrument (schema, contract, pipeline, intake and scalar code)",
+   "source": [
+    "rebuild/capture-registry/EA-WG-CAPTURES-01.schema.json",
+    "rebuild/capture-registry/INTAKE-CONTRACT.md",
+    "rebuild/capture-registry/PIPELINE.md",
+    "scripts/capture_intake.py",
+    "scripts/per_scalar.py",
+    "scripts/capture_axn.py"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/rebuild/capture-registry/"
+   ]
+  },
+  "per-dim-rubric": {
+   "hex": "0A62",
+   "root": "AXN:0A62.INSTRUMENT",
+   "kind": "instrument",
+   "family": "INSTRUMENT",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A62.INSTRUMENT.🌆🌻🙏🗿🪐🕒",
+     "label": "PER-dim rubric v1.1",
+     "date": "2026-10-27",
+     "sha256": "e372b3fc0d640c603f3b5d4e371e38e3c81f94af44b28bf84d0e74a70cd65a61",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 4781683,
+     "manifest": "/data/releases/manifests/per-dim-rubric/PER-dim_rubric_v1.1.sha256"
+    }
+   ],
+   "name": "PER-dim rubric (atom sets, templates and scorers)",
+   "source": [
+    "data/per-atom-sets.json",
+    "rebuild/capture-registry/per-atoms/templates.json",
+    "scripts/per_dim_score.py",
+    "scripts/per_d_score.py",
+    "scripts/per_dim_write.py",
+    "scripts/per_d_write.py"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/data/per-atom-sets.json"
+   ],
+   "documented_in": 1694
+  },
+  "alexanarch": {
+   "hex": "0A63",
+   "root": "AXN:0A63.SITE",
+   "kind": "site",
+   "family": "SITE",
+   "allocated": "2026-10-27",
+   "releases": [
+    {
+     "axn": "AXN:0A63.SITE.♣️🖤👉🪟📌🪞",
+     "label": "2026-10-27",
+     "date": "2026-10-27",
+     "sha256": "83cfb9254659c3a24a362f95b0b2239274819847f992c45f9c53fff21fcf2202",
+     "basis": "manifest",
+     "files": 33467,
+     "bytes": 6395830361,
+     "manifest": "/data/releases/manifests/alexanarch/2026-10-27.sha256",
+     "base_commit": "7881bb560fe6ce46c52eaf90bd6cf4a75e513eb0"
+    }
+   ],
+   "name": "alexanarch.org",
+   "locations": [
+    "https://www.alexanarch.org/",
+    "https://github.com/leesharks000/alexanarch",
+    "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
+   ]
+  }
+ }
+}

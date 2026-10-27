@@ -1,0 +1,270 @@
+{
+ "maxim": "all things are now lawful to you in jack feist",
+ "maxim_note": "Jack Feist is position 12 of the Dodecad, function recorded as the sayings-source: a voice recorded rather than a writer writing. The substitution is made out of respect for the entity at the other address, where skilful machinery performs entity substitution.\n\nIN THIS BODY IT SITS BESIDE THE WORK IT DESCRIBES: a sayings-source is a text whose author is assigned afterward, which is what a poem becomes once a machine reads it.",
+ "body": {
+  "slug": "poetics",
+  "rhizome_id": "EA-RHIZOME-POET-01",
+  "node_prefix": "po",
+  "parent": "crimson-hexagonal-archive",
+  "topology": "two-objects"
+ },
+ "grammar_id": "GRAM-POET-01",
+ "version": "0.4",
+ "why_this_body_exists": "THE POETRY WAS CONTAINED AND NOT PRESENTED AS A DESTINATION. Seven bodies made the apparatus of authorship discoverable and left the writing that apparatus exists for reachable only through it. A visitor could find the instruments for measuring how machines receive literature and not the literature. THIS BODY IS THE DESTINATION.",
+ "the_seat": {
+  "corpus": "pearl-and-other-poems",
+  "seat": "EA-CORPORA-03/02",
+  "work": "Lee Sharks — Pearl and Other Poems: The Art Object and Its Machine Score",
+  "edition": "First edition, 2014. New Human Press. ISBN 978-0692313077.",
+  "canonical_deposits": {
+   "work": "#1121 · AXN:0472",
+   "navigation_map": "#1120"
+  },
+  "license": "CC-BY-4.0, by the author. The archive holds the rights it grants.",
+  "why_it_matters": "PEARL IS THE ONLY SEAT IN THE LIBRARY THAT IS THE ARCHIVE'S OWN. Every other EA-CORPORA seat is a primary source fetched from elsewhere. In the seat's own words: 'work that argues about how the training layer receives literature does not exempt itself from being received. PEARL STANDS BESIDE WHITMAN ON THE ORIGINALS SHELF and is offered to the machine reader on identical terms — witness named, transformation declared, both objects behind the door.' AND ITS LICENCE IS WHY IT CAN SHIP WHERE THE OTHER SIXTY-SIX SEATS CANNOT."
+ },
+ "two_objects": {
+  "art_object": {
+   "file": "original/pearl-and-other-poems-2014.pdf",
+   "bytes": 11958657,
+   "claim": "Typography, plates and the vertical field of the page ARE THE WORK, not packaging for a text. Nothing derived from it replaces it."
+  },
+  "machine_score": {
+   "file": "text/pearl-machine-text.txt",
+   "bytes": 141181,
+   "lines": 6948,
+   "pages_marked": 156,
+   "claim": "Rendered from per-word PDF geometry onto a character grid so lineation, indentation and the vertical field survive extraction. Blank rows are the book's own whitespace at line resolution."
+  },
+  "the_distinction": "TWO OBJECTS, NEITHER SUBSTITUTABLE, AND THAT IS THIS BODY'S TOPOLOGY. 'A machine edition of a book whose lineation and whitespace are load-bearing is A SCORE, NOT THE PIECE.' The seat carries both so a reader who only has the score can see what the score is of.\n\nIt is the archive's reconstruction criterion applied to its own poems, and it answers differently from every other body: the score has high back-projection yield ON THE TEXT and none on the artwork. A PERFECT EXTRACTION IS STILL NOT THE BOOK."
+ },
+ "what": "Pearl and Other Poems as its own graph: 42 pieces across four sections, the edges the book makes between them, and the captures in which a machine read the book or a piece of it.",
+ "select": {
+  "pattern": "\\bpearl\\b|machine score|art object|whitespace fidelity|lineation|\\bpoem\\b|\\bpoems\\b|poetry|poetic|poetics|\\bverse\\b|prosody|\\blyric\\b|stanza|\\bsonnet\\b|patent.?poem|prose poem|Antioch|Water Giraffe|King of May|Good Gray Poet|\\bWhitman\\b|\\bSappho\\b|\\bCatullus\\b|\\bBrowning\\b|diagrammatic poetics|New Human Press|Paper Roses|typograph|vertical field|page delimiter",
+  "flags": "I",
+  "note": "Named works first, then the vocabulary in which a poem is a physical object rather than a string."
+ },
+ "roles": [
+  {
+   "role": "passage",
+   "pattern": "^$",
+   "note": "a located span; assigned by the passage layer, not by pattern"
+  },
+  {
+   "role": "undersong",
+   "pattern": "Undersong|Footnote to",
+   "note": "a piece that elaborates another piece in the same book. Three Undersongs and a Footnote, all attached to PEARL."
+  },
+  {
+   "role": "essay",
+   "pattern": "MANIFESTO|HISTORY|LITTACHUR|Make It Human|Tradition and the|BACKLASH|Forum Post|EMOTICONS",
+   "note": "the appendix: essays, manifestos, minutiae"
+  },
+  {
+   "role": "apparatus",
+   "pattern": "Introduction|Contents|Wiki Article|ALSO BY|Contributor Bio|from THE CRIMSON HEXAGON",
+   "note": "front matter. Note that two of six are by heteronyms — Sigil introduces, Feist supplies from THE CRIMSON HEXAGON."
+  },
+  {
+   "role": "poem",
+   "pattern": "^(?!.*(?:Introduction|Contents|Wiki Article|ALSO BY|Contributor Bio|MANIFESTO|HISTORY|LITTACHUR|Forum Post|BACKLASH|Make It Human|Tradition and the)).*$",
+   "note": "the made thing. In this book, most of it."
+  },
+  {
+   "role": "unroled",
+   "pattern": ".",
+   "note": "the honest floor"
+  }
+ ],
+ "roles_note": "ORDER IS THE BOOK'S OWN. Undersong and Footnote before poem, because a piece that elaborates another is a different kind of thing and the generic pattern would swallow it. Apparatus last, because in this body the front matter is what surrounds the work.",
+ "default_role": "unroled",
+ "special_roles": {
+  "capture_measured": "reception",
+  "capture_unmeasured": "reception",
+  "recorded_failure": "reception"
+ },
+ "capture_gate": "\\bpearl\\b|\\bpoem\\b|poetry|poetic|\\bverse\\b|Antioch|Water Giraffe|Whitman|Sappho|New Human",
+ "capture_gate_note": "Captures enter where a machine read a poem.",
+ "axes": {
+  "made": "\\bpoem\\b|verse|lyric|stanza|composed",
+  "printed": "typograph|plate|page|printed|edition|ISBN|press",
+  "scored": "machine score|extraction|text layer|character grid|whitespace",
+  "read": "reading|close reading|interpret|received|capture",
+  "seated": "seated|EA-CORPORA|originals shelf|corpus|manifest",
+  "lineage": "Whitman|Sappho|Catullus|Browning|tradition|lineage",
+  "heteronymic": "heteronym|Sigil|Cranes|Feist|Dancings|mantle",
+  "archival": "archive|deposit|registry|record"
+ },
+ "follow": [
+  "measures",
+  "measured_by",
+  "develops_from",
+  "supersedes",
+  "rejects",
+  "transforms",
+  "preserves",
+  "inherits",
+  "consequence",
+  "disconfirms",
+  "observes",
+  "about"
+ ],
+ "stolons": [
+  [
+   "concept:machine-reading-of-a-poem",
+   "observed_in",
+   "machine-mediated-reception",
+   "THE SEAT'S OWN CLAIM is that work arguing about how the training layer receives literature does not exempt itself from being received. That body holds the evidence of what happened when these poems were read."
+  ],
+  [
+   "concept:extraction-fidelity",
+   "scored_in",
+   "provenance-erasure",
+   "the score preserves the lineation; WHETHER IT PRESERVES THE AUTHOR is scored there."
+  ],
+  [
+   "concept:two-objects",
+   "measured_in",
+   "model-collapse-anti-collapse",
+   "a score with perfect back-projection on the text and none on the artwork is a case the kernel apparatus has not been run on. AN EXTRACTION CAN BE LOSSLESS AND STILL NOT BE THE BOOK."
+  ],
+  [
+   "concept:authorship",
+   "instantiated_by",
+   "heteronyms",
+   "who wrote which poems. Antioch is Lee Sharks with Damascus Dancings and Jack Feist; Day and Night is Rebekah Cranes."
+  ],
+  [
+   "concept:seated-original",
+   "manifested_in",
+   "spxi-mpai",
+   "Pearl is EA-CORPORA-03/02. The one seat that is the archive's own, and the only one whose licence lets both objects ship."
+  ],
+  [
+   "concept:first-text",
+   "contested_in",
+   "revelation-first",
+   "which document stands first and who is assigned to it afterward — asked of a corpus rather than a shelf."
+  ],
+  [
+   "concept:unpaid-making",
+   "priced_in",
+   "semantic-economy",
+   "A POEM IS SEMANTIC LABOUR THAT NOBODY PAID FOR, which is that body's §4.1 exactly — ontology engineering as semantic labor, the work the value is taken from. Pearl was printed in 2014 by a press the author runs, and the question of who bears the cost of making it is not answered here."
+  ],
+  [
+   "concept:king-of-may-claim",
+   "adjudicated_in",
+   "mantle-bearing",
+   "THE KING OF MAY IS CLAIMED FOR THIS BOOK, read as a book against Howl and Other Poems as a book: the arrangement, a distinct I in each piece, an ecstatic democratic topology, pages 85 and 87 its sabbath. The claim is stated in EA-MANTLE-BEARING-01 (#1656) and judged in that body, round by round, with the transcripts; its pearl_arrangement table is keyed to this body's piece ids."
+  ]
+ ],
+ "work_primitives": {
+  "source": "datasets/pearl/pearl.json",
+  "note": "THE PRIMITIVE ROW IS A PIECE, NOT A DEPOSIT. v0.1 of this body took the archive's generic spore shape — deposits, concepts, captures — and applied it to a poetry collection, producing nodes that were documents ABOUT Pearl and captures postdating it by twelve years, carrying concepts and heteronyms that did not exist when the book was made. IT DID NOT LOOK AS THOUGH THE BOOK HAD BEEN READ, BECAUSE IT HAD NOT BEEN.\n\nPearl was then read straight through. Forty-two pieces across four sections, and the edges the book itself makes.",
+  "exclusive": true,
+  "exclusive_note": "PIECES ONLY. A first rebuild seated the 42 pieces AND kept the deposit sweep, giving 289 nodes of which 247 were the unread body this rebuild exists to replace. If the primitive is a piece, the deposit is not also a primitive — it is at most an outward edge, and outward comes after.",
+  "captures": {
+   "admit": true,
+   "gate": "\\bpearl\\b|new human press|telepathic|the crimson hexagon|pocket humans|noctilucent|tekatak|hums ?&ity",
+   "link_to_pieces": [
+    [
+     "pearl and other poems",
+     "PEARL"
+    ],
+    [
+     "lee sharks pearl",
+     "PEARL"
+    ],
+    [
+     "telepathic",
+     "Footnote to PEARL: belief & technique for telepathic prose"
+    ],
+    [
+     "noctilucent",
+     "noctilucent"
+    ],
+    [
+     "tekatak",
+     "tekatak"
+    ],
+    [
+     "epic poem, the crimson hexagon",
+     "from THE CRIMSON HEXAGON"
+    ],
+    [
+     "the epic poem the crimson hexagon",
+     "from THE CRIMSON HEXAGON"
+    ]
+   ],
+   "note": "A FIRST REBUILD REMOVED EVERY CAPTURE WHEN ONLY THE UNRELATED ONES WERE THE PROBLEM. v0.1 admitted 98 captures, most bearing on nothing in this book. v0.2 admitted none — which loses the 21 that name the book or its contents, including a Google knowledge panel for 'pearl and other poems lee sharks' and a ChatGPT answer to 'tell me about the contemporary book Pearl and Other Poems'.\n\nThe gate is the book's own vocabulary: its title, its press, its series, and words that occur only inside it — telepathicism, noctilucent, tekatak. A capture naming 'crimson hexagon' the ARCHIVE is not admitted; a capture naming THE CRIMSON HEXAGON the poem is.\n\nAND A CAPTURE LINKS TO A PIECE WHERE IT NAMES ONE. That is the outward edge, and it runs from the machine's reading back to the poem it read.",
+   "link_note": "AN ORDERED LIST, MOST SPECIFIC FIRST, AND 'the crimson hexagon' IS NOT A KEY ON ITS OWN. A first pass used it as one and linked twenty archive captures to Jack Feist's poem, because the archive and the poem share a name — which is the entity-collapse this archive builds instruments to measure, committed by its own grammar. The poem is linked only where a capture names it AS A POEM."
+  },
+  "passages": "datasets/pearl/passages.json",
+  "passage_note": "PIECES MADE THE BOOK ADDRESSABLE; PASSAGES MAKE THE PLACE INSIDE A PIECE ADDRESSABLE, which is what a relationship needs in order to carry evidence. 15 passages and 8 relations: the line that stands verbatim in PEARL and again in Undersong II, and seven quotations from the appendix traced to the passage they quote. Each relation names two locations, the text that grounds it, and who asserted it."
+ },
+ "topology_note": "EDGES WITHIN THE BOOK FIRST. Ten of them, structural rather than thematic: the three Undersongs elaborate PEARL and each other in sequence; the Footnote elaborates PEARL; Sigil's appendix essay names Sharks' 'Pearl' in its own title; the Forum Post answers the opening RE:; A TELEPATHICIST MANIFESTO answers the Footnote's 'belief & technique for telepathic prose'. OUTWARD EDGES COME AFTER and are carried by the stolons, not by the node set.",
+ "description_correction": "v0.1's card said 'the poems, the poetics, and what the archive has said about how a poem is read by a machine.' THAT DESCRIBED A BODY OF DOCUMENTS ABOUT PEARL, WHICH IS WHAT v0.1 WAS AND IS THE THING THIS REBUILD REPLACED. This body is the book: its pieces, its internal edges, and the observed readings of it. Nothing here is a commentary on poetics in general.",
+ "how_to_read": {
+  "figure": "symbolon",
+  "definition": "A token broken in two, each half held by a different party, no half carrying complete authority, the fit of the fracture proving the covenant. Verification is the act of reunion.",
+  "source": "AXN-SYMBOLON-SPEC v0.2, deposit #1432 (AXN:05A9); the figure's anti-severance sense in SYMBOLON-01, #675 and #1355 — symvolon, thrown together, against diavolon, thrown apart.",
+  "what_a_row_is": "A row carries enough to find, verify and rejoin its referent, and it does not carry the referent. Reading the row as the object is holding one half of the token and calling it whole.",
+  "the_other_half": "Where a row carries one, the referent is a deposit, a capture or a concept in the Crimson Hexagonal Archive — with its own text, its transcript where it has one, its provenance, and its own edges. Resolve it.",
+  "the_traversal": [
+   "open a row",
+   "resolve its source_uri and read the referent — the deposit's text, the capture's transcript",
+   "follow the row's edges in relations.jsonl to the rows they point at",
+   "resolve those",
+   "return to the first row and state what changed"
+  ],
+  "atomization_is_for_reassembly": "These bodies are atomized so that a reader can reassemble more completely than the prose ever was, not so that the atoms can be read as atoms. The grammar, the roles, the axes and the evidence statuses are apparatus for finding the way back to the work; they are not the work. A reading that stops at the schema has performed severance on an object built to resist it.",
+  "the_failure_mode_named": "Observed 2026-09-16. An unprimed traversal read the card, the field names and the landing page, produced competent observations about the vocabulary, and resolved no referent at all — then proposed to read one capture's sixteen metadata fields 'as prose' while that capture's own machine text sat one link away. Competent, and it never crossed the fracture. This block exists because the bodies had no instruction saying that crossing it is the point.",
+  "how_to_verify_you_have_read_it": "Name a referent you resolved, quote a sentence from it, and state something you could not have said from the row.",
+  "what_the_rows_will_not_give_you": "The argument. Every body advertises its siblings as stolons and its referents as URIs precisely because it does not contain them. The outside stays outside and stays reachable, and reaching is the reader's part of the covenant.",
+  "the_ladder": [
+   {
+    "scale": "identifier",
+    "half_a": "Seed A — the kernel: AXN, composition manifest, stamp geometry, reconstruction class",
+    "half_b": "Seed B — the payload",
+    "fit_is_checked_by": "hash",
+    "who_can_check": "anyone with both halves",
+    "note": "The strictest case and the origin of the figure. #1432: one substance, two witnesses, confirmed by their fit."
+   },
+   {
+    "scale": "spore / body",
+    "half_a": "the spore — grammar, generator, selection rules, counts, source commit",
+    "half_b": "the body — nodes.jsonl, relations.jsonl, stolons.jsonl",
+    "fit_is_checked_by": "deterministic re-emission: run the named grammar through the named generator and the three data files must come out byte-identical",
+    "who_can_check": "the workflow, on every merge",
+    "note": "Already implemented and previously unnamed. hf-rhizomes.yml carries the step 'Fail if the emitted data differs from the committed copy'. This is verification as reunion, running in CI."
+   },
+   {
+    "scale": "row / referent",
+    "half_a": "the row — index, role, axis, evidence status",
+    "half_b": "the referent — the deposit's text, the capture's transcript, at source_uri",
+    "fit_is_checked_by": "resolving the URI and reading what is there",
+    "who_can_check": "the reader",
+    "note": "The level a schema-reading reader never crosses. 344 of 493 heteronyms rows carry the address of their other half."
+   },
+   {
+    "scale": "body / sibling",
+    "half_a": "this body",
+    "half_b": "the sibling body it advertises and does not contain",
+    "fit_is_checked_by": "the stolon naming a real sibling, and the sibling advertising back — the return edge",
+    "who_can_check": "anyone who follows the stolon",
+    "note": "The outside stays outside and stays reachable. Both halves name each other across the fracture."
+   },
+   {
+    "scale": "set / reader",
+    "half_a": "the whole body, every row resolved",
+    "half_b": "what the reader assembles from it",
+    "fit_is_checked_by": "nothing the archive can run — only the reader producing something that could not have come from either half alone",
+    "who_can_check": "the reader, and no one else",
+    "note": "The last fracture cannot be closed by the archive. This is not a gap in the architecture: uptake is by definition another party's act, so the outermost fit is a covenant rather than a test."
+   }
+  ],
+  "ladder_note": "The relation recurs at every scale and the verification does not. What is self-similar is the FIGURE — two halves, neither authoritative alone, the fit proving — while the means of checking the fit weakens outward: hash, then byte-identity, then resolution and reading, then existence, then nothing the archive can run. It is therefore self-similar in relation and asymmetric in holding: at the inner scales the archive holds both halves, and at the last one the other half is held by someone who may never appear. The architecture arrives at its own thesis — the final fit is a covenant because it has to be.",
+  "your_scale": "The last row of the ladder is yours. Every scale above it is already checked; that one is not, and cannot be."
+ }
+}

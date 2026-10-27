@@ -67,7 +67,7 @@
       "current_version": "axn/v2",
       "schema_version": "2026-06-22-axn-v2",
       "canonical_path": "/api/axn-protocol.json",
-      "content_sha256": "6a26fcb04f7a1c6bc203f61a8d0a4edf66d819ae691cee4c139eb4d0db64785b",
+      "content_sha256": "b1feba3c5d6599144568b7b24615a8b09642a96ec107b76c6d7d68160e30935c",
       "governs": "AXN format, AXN_GLYPHS table (256 entries), CLUSTERS table (256 entries), generation algorithm, legacy resolution (v1 → v2), substrate-chosen glyph preservation in glyphic_canary, recognition-vs-identity principle.",
       "depends_on": [],
       "referenced_by": [
@@ -84,7 +84,7 @@
       "canonical_implementations": {
         "python": "scripts/axn_lib.py"
       },
-      "last_updated": "2026-10-24"
+      "last_updated": "2026-10-27"
     },
     "enrichment": {
       "name": "enrichment",
@@ -581,12 +581,19 @@
       "changes": [
         "Updated protocol 'axn': v2.3: family NON for /non entries only; the /non mint route (non_entries)"
       ]
+    },
+    {
+      "index_version": "v1.1",
+      "date": "2026-10-27",
+      "changes": [
+        "Updated protocol 'axn': axn/v2.4 (2026-10-27): glyph_table (v2.1, the two slots filled), capture_entries (one position per address, one AXN per observation sealed with its analysis and measures), release_entries (datasets, instruments, sites; continuity, version, location; typed relations)"
+      ]
     }
   ],
   "state": {
     "canonical_path": "/data/state.json",
     "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
-    "content_sha256": "76d0c2c4a449458c0144f9a455d891cfbc10fb7da796635c3c50403dcbf7b87c"
+    "content_sha256": "1f26774367b6b1f7df8097b4aa1f3fa403700d0251a296b4861cface47ceee17"
   },
   "surface_hashes": {
     "algorithm": "sha256",

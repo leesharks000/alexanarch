@@ -24,6 +24,13 @@ if _cl.exists():
         for k, o in a['observations'].items():
             idx.setdefault(o['sha256'], {"axn": o['axn'], "root": a['root'], "observation": k, "sealed": o['file'],
                                          "record": f"/captures/{slug}/", "source": "capture"})
+# 2026-10-27: releases (data/releases/axn.json): the SHA-256 of a release's manifest, or of a one-file instrument, finds its AXN.
+_rl = ROOT/'data/releases/axn.json'
+if _rl.exists():
+    for k, L in json.loads(_rl.read_text())['objects'].items():
+        for r in L.get('releases') or []:
+            idx.setdefault(r['sha256'], {"axn": r['axn'], "root": L['root'], "object": k, "label": r['label'], "source": "release",
+                                         "record": f"/s/axn/{L['hex']}/", **({"manifest": r['manifest']} if r.get('manifest') else {"file": r.get('file')})})
 out = {"description": "Full SHA-256 identity kernel → registered AXN. The reverse lookup: enter bytes, hash them, find the record.",
        "count": len(idx), "kernels": idx}
 (ROOT/'data/api/kernel-index.json').write_text(json.dumps(out, ensure_ascii=False, separators=(',',':')) + '\n')

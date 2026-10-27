@@ -1,0 +1,145 @@
+{
+  "protocol": "alexanarch-lifecycle-protocol",
+  "version": "v1.0",
+  "effective_date": "2026-06-23",
+  "purpose": "Defines the status vocabulary and version-chain data model for Alexanarch deposits. Specifies how supersession, draft state, and series membership are recorded in the registry and rendered on public surfaces.",
+  "status_vocabulary": {
+    "ACTIVE": {
+      "description": "The deposit is the current canonical record. Standalone deposits, and the latest version within a supersession series, both carry this status.",
+      "default": true,
+      "ui_treatment": "Normal rendering. No special banner."
+    },
+    "SUPERSEDED": {
+      "description": "The deposit has been replaced by a later version in its version series. The record stands historically — the deposit is not deleted, only marked as no longer the current version. The successor is recorded in `superseded_by_deposit_number` and `superseded_by_axn`.",
+      "required_companion_fields": ["superseded_by_deposit_number", "superseded_by_axn"],
+      "recommended_companion_fields": ["superseded_at", "superseded_reason"],
+      "ui_treatment": "Muted browse card with 'superseded by #N' link; banner at top of record page with link to current version."
+    },
+    "WITHDRAWN": {
+      "description": "Deliberately retracted — different from supersession. Implies the work itself has been pulled (rare; e.g. discovered factual error, requested takedown). The deposit identifier remains but the body is no longer authoritative.",
+      "recommended_companion_fields": ["withdrawn_at", "withdrawn_reason"],
+      "ui_treatment": "Withdrawn banner at top of record page. Card retained in browse for audit-trail."
+    },
+    "DRAFT_PENDING": {
+      "description": "Identifier and metadata are minted, but the body has not been written. Holds a place in the registry for future authoring.",
+      "recommended_companion_fields": ["draft_pending_reason"],
+      "ui_treatment": "Muted browse card with 'draft pending' badge; gray banner at top of record page noting the body is not yet written."
+    }
+  },
+  "version_chain_fields": {
+    "version": {
+      "type": "string",
+      "format": "semantic-version-prefixed (vX.Y, vX.Y.Z)",
+      "examples": ["v1.0", "v1.1", "v1.1.1", "v2.0"],
+      "universal": true,
+      "default": "v1.0"
+    },
+    "version_series_id": {
+      "type": "string",
+      "format": "SERIES-DOMAIN-IDENTIFIER",
+      "examples": ["SERIES-MMRS-SURFACE-VISIBILITY-METHODOLOGY", "SERIES-TACHYON-CONTINUITY"],
+      "required_when": "Two or more deposits relate as supersession OR as sequential entries in a recurring series.",
+      "shared_across_series_members": true
+    },
+    "version_in_series": {
+      "type": "integer",
+      "format": "1-indexed position within the series",
+      "required_when": "version_series_id is set",
+      "note": "For supersession series, this is the version number (1=v1.0, 2=v1.1, 3=v1.1.1 etc). For sequential series (e.g. continuity records), this is the entry index."
+    },
+    "predecessor_deposit_number": {
+      "type": "integer",
+      "required_when": "This deposit supersedes a prior version in the same series",
+      "note": "Backward pointer: 'I succeed deposit #N'."
+    },
+    "predecessor_axn": {
+      "type": "string",
+      "format": "AXN canonical string"
+    },
+    "superseded_by_deposit_number": {
+      "type": "integer",
+      "required_when": "status=SUPERSEDED",
+      "note": "Forward pointer: 'I am succeeded by deposit #N'. The successor's predecessor_deposit_number should equal this deposit's number — bidirectional consistency."
+    },
+    "superseded_by_axn": {
+      "type": "string",
+      "format": "AXN canonical string"
+    },
+    "superseded_at": {
+      "type": "string",
+      "format": "ISO 8601 timestamp",
+      "required_when": "status=SUPERSEDED"
+    },
+    "superseded_reason": {
+      "type": "string",
+      "recommended": true,
+      "note": "Free-text explanation of what changed and why. Renders in the supersession banner."
+    },
+    "draft_pending_reason": {
+      "type": "string",
+      "required_when": "status=DRAFT_PENDING",
+      "note": "Free-text. Renders in the draft-pending banner."
+    }
+  },
+  "invariants": [
+    {
+      "rule": "Within a `version_series_id`, at most one supersession-chain deposit may be ACTIVE.",
+      "scope": "supersession_series_only",
+      "note": "Sequential series (e.g. continuity records, journal-style series) may have many ACTIVE entries — every entry is canonical in its own right."
+    },
+    {
+      "rule": "If status=SUPERSEDED, both `superseded_by_deposit_number` and `superseded_by_axn` must be set.",
+      "scope": "all"
+    },
+    {
+      "rule": "Bidirectional consistency: if deposit A.superseded_by = B, then B.predecessor = A.",
+      "scope": "supersession_chains",
+      "validation": "validate-registry CI should warn on asymmetry"
+    },
+    {
+      "rule": "AXN strings never change after minting. A new version produces a new AXN (because content has changed, the SHA-256 changes, the glyph derivation changes). The series_id links the new AXN to the old.",
+      "scope": "all"
+    }
+  ],
+  "series_taxonomy": {
+    "supersession_series": {
+      "description": "One canonical document evolves through versions; each new version supersedes the prior. Examples: methodology specifications, papers being revised, protocol documents.",
+      "marker": "deposits in the series have `superseded_by_*` fields populated",
+      "examples": ["SERIES-MMRS-SURFACE-VISIBILITY-METHODOLOGY"],
+      "ui_treatment": "Version history block at bottom of each record page; oldest → newest; current marked with bullet."
+    },
+    "sequential_series": {
+      "description": "Each entry in the series is independently canonical (e.g. session records, periodic registries). No supersession; each entry stands on its own.",
+      "marker": "deposits share `version_series_id` but none have `superseded_by_*`",
+      "examples": ["SERIES-TACHYON-CONTINUITY"],
+      "ui_treatment": "Series entries block at bottom of each record page; chronological; all marked as canonical."
+    }
+  },
+  "ui_specification": {
+    "browse_card": {
+      "version_chip": "Show <vX.Y> chip when version is non-default (≠ v1.0) OR deposit is in a real series.",
+      "supersession_badge": "When status=SUPERSEDED, append '· superseded by #N' inline; card opacity reduced to 0.65.",
+      "draft_badge": "When status=DRAFT_PENDING, append '· draft pending' inline; card opacity reduced to 0.65."
+    },
+    "record_page": {
+      "supersession_banner": "Inserted between AXN block and title. Amber background, warning icon, current-version link.",
+      "draft_pending_banner": "Inserted between AXN block and title. Gray background, hourglass icon.",
+      "version_history_block": "Inserted between Description and full text. Lists all series siblings oldest→newest. Current marked with ●; others with ○. Each is a link except the current."
+    },
+    "recent_deposits_homepage": {
+      "filter": "Show latest activity regardless of status (no filtering — superseded deposits remain visible to preserve the audit trail of revisions).",
+      "supersession_visual": "Muted card opacity 0.65 + amber 'Superseded by #N' badge inline.",
+      "draft_visual": "Muted card opacity 0.65 + gray 'Draft — body not yet written' badge inline."
+    }
+  },
+  "implementation_status": {
+    "data_model_backfilled": ["#880 SUPERSEDED→882", "#882 SUPERSEDED→884", "#446 DRAFT_PENDING", "#532 DRAFT_PENDING", "#760 DRAFT_PENDING"],
+    "renderers_updated": ["wire_deposit.py (record-page banner + history block + metadata version chip)", "scripts/regenerate_surfaces.py (browse-card version chip + supersession/draft badges)", "index.html (Recent Deposits JS — supersession styling + version chip)"],
+    "still_to_do": ["Mint-workflow integration: on version_in_series > 1 mint, auto-mark predecessor as SUPERSEDED", "Per-series landing pages at /s/series/{series_id}/", "validate-registry CI check for bidirectional consistency invariant"]
+  },
+  "see_also": {
+    "axn_protocol": "/api/axn-protocol.json",
+    "deposit_protocol": "/api/deposit-protocol.json",
+    "deposit_schema": "/api/deposit-schema.json"
+  }
+}

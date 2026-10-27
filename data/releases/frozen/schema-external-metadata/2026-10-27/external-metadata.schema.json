@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alexanarch.org/api/schemas/external-metadata.schema.json",
+  "title": "Alexanarch External-Metadata Sidecar",
+  "description": "Per-deposit external-metadata sidecar. One file per deposit at /data/external-metadata/AXN-NNNN.json. THIN INDEX format — the sidecar maps each of the deposit's legacy Zenodo DOIs to its identifier in each bulk data store (data/openalex-severed-recovery.json, data/zenodo-xml-pretermination-2026-06-07.tar.gz, data/datacite-full-backup.json, data/datacite-survivors-multi-heteronym.json). The sidecar does NOT duplicate the source records. Small useful fields (title, publication_date, abstract_chars) are inlined under per_doi for quick rendering. Sidecars are pointed at by registry.deposits[*].external_metadata_path and may be added, replaced, or removed without altering the deposit's canonical bytes (AXN hash).",
+  "type": "object",
+  "required": ["axn", "deposit_number", "generated_at", "schema_version", "purpose", "zenodo_dois_covered", "sources"],
+  "additionalProperties": true,
+  "properties": {
+    "@context":   {"type": "string", "const": "https://schema.org"},
+    "@type":      {"type": "string", "const": "Dataset"},
+    "axn":        {"type": "string", "description": "Canonical AXN v2 of the deposit this sidecar belongs to. Must match registry.deposits[*].axn."},
+    "deposit_number": {"type": "integer", "minimum": 1},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "schema_version": {"type": "string", "const": "1.0"},
+    "purpose":    {"type": "string"},
+    "zenodo_dois_covered": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^10\\.5281/zenodo\\.[0-9]+$"},
+      "description": "All legacy Zenodo DOIs covered by this sidecar. Mirrors registry.deposits[*].zenodo_dois."
+    },
+    "severance_status": {
+      "type": "string",
+      "enum": ["severed", "anonymized", "retained", "post_window", "typo_immunity", "mixed"],
+      "description": "Net severance status across all covered DOIs. severed = scrubbed from DataCite REST; anonymized = creator metadata replaced with institutional name; retained = still surfaces under heteronym/ORCID search; post_window = minted after 2026-06-07 bulk-export snapshot; typo_immunity = escaped severance because creator name has a typo; mixed = different status per DOI."
+    },
+    "sources": {
+      "type": "object",
+      "description": "Per-data-store INDEX. Sidecars do not duplicate the source records themselves; the records live in the data stores under data/. Each subkey describes one store, its lookup pattern, and which of this deposit's DOIs are present in it.",
+      "additionalProperties": true,
+      "properties": {
+        "openalex": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "data_store":   {"type": "string", "description": "Path to bulk OpenAlex data store, typically /data/openalex-severed-recovery.json"},
+            "lookup":       {"type": "string"},
+            "dois_present": {"type": "array", "items": {"type": "string", "pattern": "^10\\.5281/zenodo\\.[0-9]+$"}}
+          }
+        },
+        "zenodo_bulk_xml": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "data_store":     {"type": "string"},
+            "snapshot_date":  {"type": "string", "format": "date"},
+            "snapshot_url":   {"type": "string"},
+            "schema":         {"type": "string"},
+            "lookup":         {"type": "string"},
+            "entries":        {"type": "array", "items": {"type": "string", "pattern": "^[0-9]+\\.xml$"}}
+          }
+        },
+        "datacite_backup": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "data_store":   {"type": "string"},
+            "harvested_at": {"type": "string"},
+            "lookup":       {"type": "string"},
+            "dois_present": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "datacite_survivor_sweep": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "data_store":   {"type": "string"},
+            "harvested_at": {"type": "string"},
+            "lookup":       {"type": "string"},
+            "dois_present": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    },
+    "per_doi": {
+      "type": "object",
+      "description": "Per-DOI dereferenceable map. Keys are Zenodo DOIs. Values include identifiers in each data store (openalex_id, zenodo_bulk_xml_entry, datacite_*_present) plus small inlined fields for quick rendering (title, publication_date, abstract_chars).",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "abstract_recovered_chars": {"type": "integer", "minimum": 0},
+    "recovered_fields_summary": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "has_title":        {"type": "boolean"},
+        "has_abstract":     {"type": "boolean"},
+        "has_authors":      {"type": "boolean"},
+        "has_keywords":     {"type": "boolean"},
+        "has_publication_date": {"type": "boolean"},
+        "has_references":   {"type": "boolean"},
+        "has_concepts":     {"type": "boolean"},
+        "has_topics":       {"type": "boolean"},
+        "has_full_datacite_xml": {"type": "boolean"}
+      }
+    }
+  }
+}

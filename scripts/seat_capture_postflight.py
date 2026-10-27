@@ -49,6 +49,9 @@ STEPS = [
     # 2026-10-20: PER first. The historical scalar is derived from its four-unit vector (scripts/per_scalar.py); a seating
     # that wrote a disagreeing figure is corrected here, with per_corrected recorded, before anything renders it.
     ("PER", [sys.executable, "scripts/per_scalar.py"]),
+    # 2026-10-27: AXN after PER. One position per address, one AXN per observation sealed with its analysis and measures
+    # (scripts/capture_axn.py; MANUS, 2026-10-27). A new address takes the next position; a changed observation is re-derived.
+    ("AXN", [sys.executable, "scripts/capture_axn.py", "--apply"]),
     # 2026-09-21: LINK before BAKE. build_capture_links.py writes each observation's `cite`; without it a
     # newly seated observation has no citation, audit_capture_citability fails, and nothing here said so.
     # Five seatings on 2026-09-21 hit it. Links first, so the bake and the projection carry them.
@@ -70,6 +73,14 @@ STEPS = [
     ("JOIN", [sys.executable, "scripts/build_capture_joins.py"]),
     ("RECS", [sys.executable, "scripts/build_capture_records.py"]),
     ("SYNC", [sys.executable, "scripts/sync_capture_dataset.py"]),
+    # 2026-10-27: RELEASE after SYNC. The Capture Registry's release (its version, frozen as a manifest of the dataset), and
+    # its intake instrument and PER-dim rubric where they moved (scripts/release_axn.py); then the relations and the
+    # resolver pages, so the new position, observation and release resolve in the same commit.
+    ("RELEASE", [sys.executable, "scripts/release_axn.py", "--apply", "--only", "capture-registry", "capture-intake", "per-dim-rubric"]),
+    ("RELATE", [sys.executable, "scripts/build_axn_relations.py"]),
+    ("RESOLVE", [sys.executable, "scripts/generate_axn_resolver.py"]),
+    ("CENTRAL", [sys.executable, "scripts/build_central_registry.py"]),
+    ("KERNELS", [sys.executable, "scripts/build_kernel_index.py"]),
     # 2026-10-06: SIGIL after every page-writing step: Speak with Sigil on every page, once (scripts/sync_sigil.py).
     # The gallery, record and address generators write no common footer, so the panel is restored here.
     ("SIGIL", [sys.executable, "scripts/sync_sigil.py"]),

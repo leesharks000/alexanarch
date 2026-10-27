@@ -26,7 +26,7 @@ refreshes resolution automatically.
 import sys as _sys_axd, pathlib as _pl_axd
 _sys_axd.path.insert(0, str(_pl_axd.Path(__file__).resolve().parent))
 import axn_derivation as _axd
-import json, os, html
+import json, os, html, re
 from collections import defaultdict
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
@@ -337,6 +337,143 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
 term set: <a href="/s/axn/">AXN identifier set</a> &middot;
 machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
 </body></html>""")
+    # Releases (2026-10-27, adopted: "mint when preserving the distinction will matter later"): one position per
+    # continuing object (a dataset, an instrument, a site); one AXN per frozen release. Continuity, version, location.
+    rel_lm = {}
+    _rl = ROOT/'data/releases/axn.json'
+    if _rl.exists():
+        _kind_name = {"dataset": "dataset", "instrument": "instrument", "site": "site"}
+        for key, L in sorted(json.load(open(_rl))['objects'].items()):
+            hx = L['hex']
+            if hx in idx:
+                print(f"axn resolver: release object {key} at {hx} collides; not written", file=_sys_axd.stderr); continue
+            axn_url = f"https://www.alexanarch.org/s/axn/{hx}/"
+            rs = L.get('releases') or []
+            idx[hx] = {"source": "release", "kind": L['kind'], "object": key, "root": L['root'], "name": L.get('name'),
+                       "locations": L.get('locations') or [],
+                       "releases": [{k: x[k] for k in ("axn", "label", "date", "sha256", "basis", "files", "bytes", "manifest", "file", "frozen", "base_commit") if k in x} for x in rs]}
+            rel_lm[hx] = max([x['date'] for x in rs] or [L.get('allocated', '')])
+            what = {"manifest": "the SHA-256 of its manifest (every constituent file with the SHA-256 of its bytes)",
+                    "file": "the SHA-256 of the file itself"}
+            blocks, ids = [], []
+            for rr in reversed(rs):
+                rows = [f"<dt>Release</dt><dd>{html.escape(rr['label'])} &middot; frozen {html.escape(rr['date'])}</dd>",
+                        f"<dt>SHA-256</dt><dd><code>{rr['sha256']}</code> &mdash; {what.get(rr['basis'], '')}</dd>",
+                        f"<dt>Size</dt><dd>{rr['files']:,} file{'s' if rr['files'] != 1 else ''}, {rr['bytes']:,} bytes</dd>"]
+                if rr.get('manifest'):
+                    rows.append(f"<dt>Manifest</dt><dd><a href=\"{rr['manifest']}\">{html.escape(rr['manifest'])}</a> &mdash; verify from the repository root with <code>sha256sum -c</code></dd>")
+                if rr.get('frozen'):
+                    rows.append(f"<dt>Frozen copy</dt><dd><a href=\"{rr['frozen']}\">{html.escape(rr['frozen'])}</a> (of <code>{html.escape(rr['file'])}</code>)</dd>")
+                if rr.get('base_commit'):
+                    rows.append(f"<dt>Commit</dt><dd><a href=\"https://github.com/leesharks000/alexanarch/tree/{rr['base_commit']}\"><code>{rr['base_commit']}</code></a> &mdash; the release is this commit&rsquo;s tree, HTML pages and sitemaps left out</dd>")
+                if rr.get('note'):
+                    rows.append(f"<dt>Note</dt><dd>{html.escape(rr['note'])}</dd>")
+                blocks.append(f"<section><h2><code>{html.escape(rr['axn'])}</code></h2>\n<dl>{''.join(rows)}</dl></section>")
+                ids.append({"@type": "PropertyValue", "propertyID": "AXN", "value": rr['axn'], "description": f"release {rr['label']}, frozen {rr['date']}; SHA-256 {rr['sha256']}"})
+            nm = L.get('name') or key
+            _desc = (f"{L['root']} is the position of the {_kind_name.get(L['kind'], L['kind'])} {nm} in the archive's one AXN sequence. "
+                     f"The position names the {L['kind']} across its releases; each release is one AXN, its glyphs derived from "
+                     f"the SHA-256 of what the release freezes. Locations can change; a release keeps its identity.")
+            loc_html = "<br>".join(f'<a href="{html.escape(u)}">{html.escape(u)}</a>' for u in (L.get('locations') or []))
+            extra = ""
+            if L.get('governs'):
+                extra += f"<dt>Governs</dt><dd>{html.escape(str(L['governs']))}</dd>"
+            if L.get('source'):
+                extra += "<dt>Constituted by</dt><dd>" + "<br>".join(f"<code>{html.escape(x)}</code>" for x in L['source']) + "</dd>"
+            ld = {"@context": "https://schema.org", "@type": "DefinedTerm", "@id": axn_url, "url": axn_url, "name": L['root'], "termCode": L['root'],
+                  "identifier": [{"@type": "PropertyValue", "propertyID": "AXN-root", "value": L['root']},
+                                 {"@type": "PropertyValue", "propertyID": "AXN-hex", "value": hx}] + ids,
+                  "inDefinedTermSet": {"@type": "DefinedTermSet", "@id": "https://www.alexanarch.org/s/axn/", "name": "AXN — Alexanarch content-derived identifiers",
+                                       "url": "https://www.alexanarch.org/s/axn/"},
+                  "description": _desc,
+                  "about": {"@type": {"dataset": "Dataset", "instrument": "CreativeWork", "site": "WebSite"}.get(L['kind'], "Thing"),
+                            "name": nm, **({"url": L['locations'][0]} if L.get('locations') else {})},
+                  "additionalProperty": [{"@type": "PropertyValue", "name": "family", "value": L['family']}]}
+            d = ROOT/'s/axn'/hx; d.mkdir(exist_ok=True)
+            (d/'index.html').write_text(f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>{html.escape(L['root'])} — {html.escape(nm)} — Alexanarch AXN resolver</title>
+<link rel="canonical" href="{axn_url}">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="description" content="{html.escape(_desc)}">
+<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
+<h1>{html.escape(L['root'])}</h1>
+<p>{html.escape(_desc)}</p>
+<dl>
+<dt>Identifies</dt><dd>{html.escape(nm)} ({html.escape(L['kind'])})</dd>
+<dt>Hex position</dt><dd><code>{hx}</code></dd>
+<dt>Family</dt><dd><code>{html.escape(L['family'])}</code></dd>
+<dt>Locations</dt><dd>{loc_html or '&mdash;'}</dd>
+{extra}
+<dt>Ledger</dt><dd><a href="/data/releases/axn.json">/data/releases/axn.json</a></dd>
+</dl>
+{chr(10).join(blocks)}
+<p>Resolver rule: <code>alexanarch.org/axn/&lt;HEX&gt;</code> &middot;
+term set: <a href="/s/axn/">AXN identifier set</a> &middot;
+machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
+</body></html>""")
+    # Typed relations (data/axn-relations.json, scripts/build_axn_relations.py): each page carries the relations its hex
+    # has, in both directions, with the field each was read from.
+    _rf = ROOT/'data/axn-relations.json'
+    if _rf.exists():
+        R = json.load(open(_rf))
+        rels = R['relations']
+        names = {}
+        for _hx, v in idx.items():
+            nm_ = v.get('name') or v.get('q') or v.get('entity') or (f"deposit #{v['deposit_number']}" if v.get('deposit_number') else '')
+            if v.get('deposit_number') and byhex.get(_hx):
+                nm_ = byhex[_hx][0].get('title') or nm_
+            names[_hx] = nm_
+        OUT = {"follows": "Follows", "opens": "Opens", "grounds_in": "Grounds in", "read": "Read", "appeared_in": "Drew on",
+               "about": "About", "mentions": "Mentions", "mentions_instrument": "Mentions", "pair_of": "Paired with",
+               "documented_in": "Documented in", "scored_by": "Scored by", "distorts": "Distorts"}
+        IN = {"follows": "Followed by", "opens": "Opened by", "grounds_in": "Grounds", "read": "Read by", "appeared_in": "Drawn on by",
+              "about": "Subject of", "mentions": "Mentioned by", "mentions_instrument": "Mentioned by", "pair_of": "Paired with",
+              "documented_in": "Documents", "scored_by": "Scores", "distorts": "Distorted by"}
+        def _hx(a):
+            m_ = re.match(r"AXN:([0-9A-F]+)", str(a)); return m_.group(1) if m_ else None
+        def _ref(a, label=None):
+            h_ = _hx(a)
+            if h_:
+                t_ = names.get(h_, '')
+                return f'<a href="/s/axn/{h_}/"><code>{html.escape(a)}</code></a>' + (f" &mdash; {html.escape(str(t_)[:110])}" if t_ else "")
+            return f'<a href="{html.escape(a)}">{html.escape(label or a)}</a>'
+        CAP = 60
+        n_pages = 0
+        for h_, ent in R['by_hex'].items():
+            f_ = ROOT/'s/axn'/h_/'index.html'
+            if not f_.exists():
+                continue
+            parts, ld_rel = [], {"isBasedOn": [], "subjectOf": []}
+            for direction, ids_, lab in (("out", ent['out'], OUT), ("in", ent['in'], IN)):
+                groups = defaultdict(list)
+                for i_ in ids_:
+                    groups[rels[i_]['verb']].append(rels[i_])
+                for verb, rs_ in sorted(groups.items()):
+                    items = []
+                    for r_ in rs_[:CAP]:
+                        other = r_['object'] if direction == "out" else r_['subject']
+                        b_ = f' <span style="color:#666">({html.escape(str(r_.get("basis"))[:160])}; <code>{html.escape(r_["field"] or "")}</code>)</span>' if r_.get('basis') else f' <span style="color:#666">(<code>{html.escape(r_["field"] or "")}</code>)</span>'
+                        items.append(f"<li>{_ref(other, r_.get('object_label') if direction == 'out' else None)}{b_}</li>")
+                        if str(other).startswith("AXN:") or str(other).startswith("http"):
+                            u_ = f"https://www.alexanarch.org/s/axn/{_hx(other)}/" if _hx(other) else other
+                            ld_rel["isBasedOn" if direction == "out" else "subjectOf"].append({"@id": u_, "name": other, "description": verb})
+                    more = f"<li>and {len(rs_) - CAP} more &mdash; <a href=\"/data/axn-relations.json\">/data/axn-relations.json</a></li>" if len(rs_) > CAP else ""
+                    parts.append(f"<dt>{lab.get(verb, verb)}</dt><dd><ul style=\"margin:0;padding-left:18px\">{''.join(items)}{more}</ul></dd>")
+            if not parts:
+                continue
+            sec = ('<section><h2>Relations</h2>\n<p>Read from the fields that record them (<a href="/data/axn-relations.json">/data/axn-relations.json</a>); '
+                   'a hash names bytes and supplies no relation.</p>\n<dl>' + "".join(parts) + '</dl></section>\n')
+            ldr = {"@context": "https://schema.org", "@id": f"https://www.alexanarch.org/s/axn/{h_}/", **{k: v[:200] for k, v in ld_rel.items() if v}}
+            t_ = f_.read_text()
+            if '<section><h2>Relations</h2>' in t_:
+                continue
+            t_ = t_.replace("<p>Resolver rule:", sec + "<p>Resolver rule:", 1)
+            t_ = t_.replace("</head>", f'<script type="application/ld+json">{json.dumps(ldr, ensure_ascii=False)}</script>\n</head>', 1)
+            f_.write_text(t_); n_pages += 1
+            idx[h_]["relations"] = {"out": len(ent['out']), "in": len(ent['in'])}
+        print(f"axn resolver: relations on {n_pages} pages ({len(rels)} relations)")
     json.dump({"name":"Alexanarch AXN resolver index","rule":"https://www.alexanarch.org/axn/<HEX>/",
                "canonical":"https://www.alexanarch.org/api/axn-index.json",
                "total": len(idx), "generated": r['deposits'][-1].get('date','') or '', "map": idx},
@@ -347,7 +484,7 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
         # record's own last modification (record_modification.last_modified: date_modified, else the
         # deposit date); a disambiguation page carries the latest of its records. Never the run date.
         for hx in sorted(idx):
-            lm = non_lm[hx] if hx in non_lm else cap_lm[hx] if hx in cap_lm else max(((e.get('date_modified') or e.get('date') or '')[:10] for e in byhex[hx]), default='')
+            lm = non_lm[hx] if hx in non_lm else cap_lm[hx] if hx in cap_lm else rel_lm[hx] if hx in rel_lm else max(((e.get('date_modified') or e.get('date') or '')[:10] for e in byhex[hx]), default='')
             lm_tag = f'<lastmod>{lm}</lastmod>' if lm else ''
             f.write(f'  <url><loc>https://www.alexanarch.org/s/axn/{hx}/</loc>{lm_tag}</url>\n')
         f.write('</urlset>\n')
