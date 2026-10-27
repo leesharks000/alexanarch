@@ -82,10 +82,10 @@ desc = (f"Four seats on the originals shelf, {nw} works in their original langua
         "not seated is named.")
 
 kw = ("corpus seating, primary sources, original language, public domain, 1844, Book of Mormon, Joseph Smith, Latter Day Saints, "
-      "Mormonism, Book of Commandments, Doctrine and Covenants, Lectures on Faith, succession crisis, Times and Seasons, Sidney Rigdon, "
-      "Quorum of the Twelve, James J. Strang, Voree, Strangites, the Bab, Babi, Qayyum al-Asma, Persian Bayan, Panj Sha'n, Baha'u'llah, "
-      "Kitab-i Iqan, Kitab-i Aqdas, Subh-i Azal, Azali, Baha'i, Traveller's Narrative, Nuqtat al-Kaf, Edward G. Browne, Tumanskii, "
-      "Iran National Baha'i Archives, H-Bahai, William Miller, Millerites, Great Disappointment, Midnight Cry, Samuel S. Snow, "
+      "Book of Commandments, Doctrine and Covenants, succession crisis, Times and Seasons, Sidney Rigdon, "
+      "Quorum of the Twelve, James J. Strang, Voree, Strangites, the Bab, Babi, Qayyum al-Asma, Persian Bayan, Baha'u'llah, "
+      "Kitab-i Iqan, Kitab-i Aqdas, Subh-i Azal, Azali, Baha'i, Traveller's Narrative, Nuqtat al-Kaf, Edward G. Browne, "
+      "Iran National Baha'i Archives, H-Bahai, William Miller, Millerites, Great Disappointment, Midnight Cry, "
       "Joseph Bates, Seventh Day Sabbath, Ellen G. White, Sabbatarian Adventists, Taiping Heavenly Kingdom, Hong Xiuquan, "
       "Yang Xiuqing, Hong Rengan, Taiping Bible, God Worshippers' Society, Training Layer Literature, originals shelf, EA-CORPORA")
 

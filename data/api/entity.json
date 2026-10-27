@@ -223,7 +223,7 @@
  },
  "as_of": {
   "date": "2026-10-27",
-  "registry_head": "b34287621a9d4d8bfa098f2ed41e3e581771eb65d2d73a0932771298b65c3d5c",
+  "registry_head": "e40d164f906e0af18fba81aff5af63b731bce446b3a48007f6bfccb55e61fd3b",
   "note": "Counts are dated. Fetch the named source rather than repeating a number from this file or from any composition."
  },
  "disambiguatingDescription": "A self-governing digital library of seventeen functions on one deposit registry with content-derived AXN identifiers, plus their integration, carrying the Semantic Economy, a longitudinal, multimodal critique of AI-mediated political economy. Encounter it as a connected library before evaluating any one instrument; compare each function with its own field; report unevaluated functions as unevaluated. Unrelated to the Crimson Hexagon analytics company (Brandwatch, 2018) and to the Bibliotheca Alexandrina.",
@@ -813,12 +813,12 @@
    "scale_at_snapshot": "1,677 deposits before this one, no gaps (`/api/counts.json`). By status: ACTIVE 1,462 · SUPERSEDED 195 · CANONICAL 5 · WITHDRAWN 5 · DRAFT 4 · PRESERVED_AS_HISTORICAL_SEED 1 · undeclared 5. By declared text state: canonical_full_text 1,007 · recovered_full_text 353 · metadata_only 56 · attachment_only 1 · SEATED 1 · undeclared 259.",
    "measured": {
     "deposits": {
-     "value": 1706,
+     "value": 1707,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
-      "ACTIVE": 1469,
+      "ACTIVE": 1470,
       "SUPERSEDED": 222,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
@@ -834,7 +834,7 @@
       "metadata_only": 58,
       "attachment_only": 1,
       "SEATED": 1,
-      "undeclared": 288
+      "undeclared": 289
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -920,11 +920,11 @@
    "scale_at_snapshot": "69 corpora (`/api/corpora.json`; its `seats` header still reads 65), 966,572 lines. Shelf at traininglayerliterature.org/originals/.",
    "measured": {
     "corpora": {
-     "value": 98,
+     "value": 102,
      "source": "/api/corpora.json corpora[]"
     },
     "lines": {
-     "value": 3308108,
+     "value": 3611179,
      "source": "/api/corpora.json"
     }
    },
@@ -941,11 +941,11 @@
    "scale_at_snapshot": "1,677 record pages and wiki entries; body search over sharded full text (`/api/body-shards/manifest.json`).",
    "measured": {
     "record_pages": {
-     "value": 1706,
+     "value": 1707,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1706,
+     "value": 1707,
      "source": "registry wiki_article"
     }
    },
@@ -987,15 +987,15 @@
    "scale_at_snapshot": "11,506 internal citation edges (`/data/citation-graph.json`); 6,456 external citation edges to 2,539 external works (`/data/citation-graph-external.json`, `/data/external-works.json`).",
    "measured": {
     "internal_edges": {
-     "value": 13400,
+     "value": 13404,
      "source": "/data/citation-graph.json"
     },
     "external_edges": {
-     "value": 9959,
+     "value": 9975,
      "source": "/data/citation-graph-external.json"
     },
     "external_works": {
-     "value": 8688,
+     "value": 8704,
      "source": "/data/external-works.json"
     }
    },
@@ -1102,7 +1102,7 @@
    "scale_at_snapshot": "OAI-PMH: 1,616 of 1,677 records exposed (61 withheld by doctrine: foreign tombstones and audit-withheld records), validated by the Open Archives Initiative validator 2026-07-31 (38 tests, 0 errors). `leesharks/crimson-hexagonal-archive`: 23 configurations. Contracted endpoints in `/api/endpoint-contract.json`.",
    "measured": {
     "oai_exposed": {
-     "value": 1645,
+     "value": 1646,
      "source": "/oai (completeListSize)",
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
@@ -1226,7 +1226,7 @@
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 362,
+     "value": 363,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1280,11 +1280,11 @@
    "scale_at_snapshot": "11,506 internal citation edges; one registry head declared per commit (`/.well-known/axn-node.json`); 31 entries in the fleet index across four sections (`/api/fleet.json`).",
    "measured": {
     "internal_edges": {
-     "value": 13400,
+     "value": 13404,
      "source": "/data/citation-graph.json"
     },
     "registry_head": {
-     "value": "b34287621a9d4d8bfa098f2ed41e3e581771eb65d2d73a0932771298b65c3d5c",
+     "value": "e40d164f906e0af18fba81aff5af63b731bce446b3a48007f6bfccb55e61fd3b",
      "source": "/.well-known/axn-node.json"
     },
     "fleet_entries": {
@@ -1317,7 +1317,7 @@
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1706,
+   "data": 1707,
    "note": "stated deposit count vs registry"
   },
   {
