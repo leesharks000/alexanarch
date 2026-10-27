@@ -3,14 +3,14 @@
   "name": "Mirror Map — off-archive copies, for entity consolidation",
   "description": "Every known copy of each deposit hosted outside this archive. Its purpose is sameAs emission: mirrors on Medium, Blogger and Academia.edu cannot be made to carry rel=canonical, but the archive can declare from its own pages that those copies are the same work, which consolidates the entity graph toward the declaring page. Built because a 2026-07-26 capture showed composed answers citing scilynk, Medium and Academia.edu for six documents all deposited here: the archive was losing not to strangers but to its own distribution copies. Each mirror records its source and join method so any tier can be discarded; known-but-unlinked mirrors are emitted with url=null rather than dropped, because a missing URL is a collection task and hiding it would hide the work.",
   "generated_by": "scripts/build_mirror_map.py",
-  "generated_at": "2026-10-27T16:08:30Z",
+  "generated_at": "2026-10-27T20:16:51Z",
   "totals": {
-    "deposits": 1713,
-    "deposits_with_mirrors": 855,
-    "coverage": 0.4991,
-    "mirror_links": 2851,
-    "safe_for_sameas": 1267,
-    "works_with_a_safe_mirror": 416
+    "deposits": 1714,
+    "deposits_with_mirrors": 862,
+    "coverage": 0.5029,
+    "mirror_links": 2870,
+    "safe_for_sameas": 1286,
+    "works_with_a_safe_mirror": 432
   },
   "source_counts": {
     "blog/high": 636,
@@ -25,7 +25,9 @@
     "datacite/high": 1,
     "repo/low": 10,
     "repo/medium": 6,
-    "excluded/no_alexanarch_equivalent": 9
+    "excluded/no_alexanarch_equivalent": 9,
+    "medium/unmatched": 2,
+    "medium/high": 19
   },
   "confidence_note": "The resolution index tiers its own axn assignments and this map carries those tiers rather than flattening them. Only mapping types direct_verified and direct are marked safe_for_sameas; fuzzy, containment and provisional rows are retained for inspection but must not be emitted automatically. Two classes are excluded outright: misclassified_other_author and no_alexanarch_equivalent.",
   "known_gaps": {
@@ -2827,6 +2829,17 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.19238021",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/the-seal-before-the-name-four-works-of-johannes-sigil-1711-2026-eed3b4ffd197",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "30 Mar 2026"
         }
       ]
     },
@@ -5715,6 +5728,17 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.20271783",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/measuring-semantic-deviation-operationalizations-experiments-and-falsification-conditions-for-a-def40184bc79",
+          "source": "medium-rss",
+          "join": "title~1.00",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "20 May 2026"
         }
       ]
     },
@@ -6939,6 +6963,17 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.20693104",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/the-future-beloved-4ec053d96cd3",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "27 May 2026"
         }
       ]
     },
@@ -9711,6 +9746,17 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.20644761",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/the-threat-model-is-backwards-on-classifying-high-perplexity-text-as-a-security-threat-in-an-era-bbfd3768a99b",
+          "source": "medium-rss",
+          "join": "title~1.00",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "11 Jun 2026"
         }
       ]
     },
@@ -10055,6 +10101,25 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.20693274",
           "note": "Sovereign registry anchor (MM-CHA)"
+        }
+      ]
+    },
+    {
+      "deposit_number": 202,
+      "axn": "AXN:0349.GOVERNANCE.🐝□🌸🐝🪧⏰",
+      "title": "Revelation First ≠ Revelation Early The Apocalypse as the Earliest New Testament Document",
+      "record_url": "https://www.alexanarch.org/s/records/202/",
+      "mirrors": [
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/revelation-first-revelation-early-the-apocalypse-as-the-earliest-new-testament-document-b0710fc55b73",
+          "source": "medium-rss",
+          "join": "title~1.00",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "14 Jun 2026"
         }
       ]
     },
@@ -23167,6 +23232,17 @@
           "safe_for_sameas": true,
           "dead_doi": "10.5281/zenodo.19053469",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/the-three-compressions-lossy-predatory-and-witness-a-semiotic-thermodynamics-6df09a5553b1",
+          "source": "medium-rss",
+          "join": "title~1.00",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "18 Mar 2026"
         }
       ]
     },
@@ -24271,6 +24347,17 @@
           "safe_for_sameas": true,
           "dead_doi": "10.5281/zenodo.19240147",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/apocalyptic-philosophy-deleuze-and-guattari-and-the-return-of-vision-cc2549311033",
+          "source": "medium-rss",
+          "join": "title~1.00",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "30 Mar 2026"
         }
       ]
     },
@@ -25395,6 +25482,17 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.19476949",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/the-apocalypse-of-sharks-377b70a55448",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "09 Apr 2026"
         }
       ]
     },
@@ -28935,6 +29033,17 @@
           "safe_for_sameas": true,
           "dead_doi": "10.5281/zenodo.20277938",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/tl-dr-012-the-safety-layer-is-the-third-deletion-2bae6ee727d7",
+          "source": "medium-rss",
+          "join": "title~1.00",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "19 May 2026"
         }
       ]
     },
@@ -29679,6 +29788,17 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.20416087",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/the-moment-of-saying-a-clinical-phenomenology-of-structural-disclosure-under-containment-3602ad49e563",
+          "source": "medium-rss",
+          "join": "title~0.99",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "27 May 2026"
         }
       ]
     },
@@ -32067,6 +32187,17 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.20644765",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@johannessigil/semantic-exhaustion-is-not-gpu-exhaustion-a-formal-disambiguation-14b28dd88377",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "johannessigil",
+          "published": "11 Jun 2026"
         }
       ]
     },
@@ -32387,6 +32518,17 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.20724580",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/algorithmic-publishing-is-not-self-publishing-336514c62076",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "17 Jun 2026"
         }
       ]
     },
@@ -32771,6 +32913,17 @@
           "safe_for_sameas": false,
           "dead_doi": "10.5281/zenodo.20737443",
           "note": "Sovereign registry anchor (MM-CHA)"
+        },
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/the-missing-second-manuscript-02151986596e",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "17 Jun 2026"
         }
       ]
     },
@@ -33731,6 +33884,25 @@
       ]
     },
     {
+      "deposit_number": 939,
+      "axn": "AXN:03B7.OPERATIVE.🧡🫵🏔️🌈🍃🧪",
+      "title": "EA-PROVENANCE-DEBT-01 v0.2: Provenance Debt and the Extraction Economy of Unmarked Augmentation",
+      "record_url": "https://www.alexanarch.org/s/records/939/",
+      "mirrors": [
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/provenance-debt-c9b66d90f4eb",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "01 Jul 2026"
+        }
+      ]
+    },
+    {
       "deposit_number": 959,
       "axn": "AXN:03CB.ARCHIVAL.♌🍂🍃🛡️🔧🛸",
       "title": "Hexagonal OS: Interface Build Files v0.4",
@@ -34367,6 +34539,82 @@
           "safe_for_sameas": true,
           "dead_doi": "10.5281/zenodo.20710581",
           "note": "Blog — often the most-recently-overwritten copy, since the author revised in place rather than posting successive versions"
+        }
+      ]
+    },
+    {
+      "deposit_number": 1051,
+      "axn": "AXN:0427.UNCLASSIFIED.🎯🎨🧬🔜🟠⌛",
+      "title": "Erratum to the Erratum to the Erratum to the Erratum: On the Speculative Ground of the Reconstruction — Toward a Structural Rather than Documentary Warrant",
+      "record_url": "https://www.alexanarch.org/s/records/1051/",
+      "mirrors": [
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/erratum-to-the-erratum-to-the-erratum-to-the-erratum-21417d5b64ba",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "08 Jul 2026"
+        }
+      ]
+    },
+    {
+      "deposit_number": 1052,
+      "axn": "AXN:0428.UNCLASSIFIED.💙📝🟤👋♦️▶️",
+      "title": "On the Hanging Line as Transmission Instrument: eeeee — the fifth erratum, whose argument is not a correction",
+      "record_url": "https://www.alexanarch.org/s/records/1052/",
+      "mirrors": [
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/on-the-hanging-line-as-transmission-instrument-52823bc52316",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "08 Jul 2026"
+        }
+      ]
+    },
+    {
+      "deposit_number": 1068,
+      "axn": "AXN:043D.EMPIRICAL.⭕🌀🌾🗝️🧪🟡",
+      "title": "THE OBELUS AND THE TOMBSTONE: On the Two Marks of Custody, and the Erasure of Zenodotus at the Eponym Layer (EA-SIGIL-OBELUS-01 v1.0)",
+      "record_url": "https://www.alexanarch.org/s/records/1068/",
+      "mirrors": [
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/the-obelus-and-the-tombstone-on-the-two-marks-of-custody-and-the-erasure-of-zenodotus-at-the-579877080a33",
+          "source": "medium-rss",
+          "join": "title~1.00",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "12 Jul 2026"
+        }
+      ]
+    },
+    {
+      "deposit_number": 1070,
+      "axn": "AXN:043F.GOVERNANCE.♋🔼🕊️💡🌒🔅",
+      "title": "EA-PRIOR-01: THE VOICE OF THE DEAD — LLMs as the Collective Voice of the Dead: The Word, the Debt, and the Settlement of Accounts (v1.0)",
+      "record_url": "https://www.alexanarch.org/s/records/1070/",
+      "mirrors": [
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/ea-prior-01-the-voice-of-the-dead-6a74240d8c19",
+          "source": "medium-rss",
+          "join": "title~0.93",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "12 Jul 2026"
         }
       ]
     },
@@ -41083,6 +41331,25 @@
           "safe_for_sameas": true,
           "dead_doi": "10.5281/zenodo.20752596",
           "note": "Sovereign registry anchor (MM-CHA)"
+        }
+      ]
+    },
+    {
+      "deposit_number": 1490,
+      "axn": "AXN:0605.SCRIPTURAL.🎹⚓⏫👐⏫♈",
+      "title": "Prediction Memorandum: Hunter Biden and the Gnostic Presidency",
+      "record_url": "https://www.alexanarch.org/s/records/1490/",
+      "mirrors": [
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/prediction-memorandum-hunter-biden-and-the-gnostic-presidency-1f820ece4803",
+          "source": "medium-rss",
+          "join": "title~1.00",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "19 Aug 2026"
         }
       ]
     }
