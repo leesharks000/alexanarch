@@ -1200,6 +1200,16 @@
      ]
     }
    }
+  },
+  "axn_root": {
+   "type": "string",
+   "pattern": "^AXN:[0-9A-F]{4,}\\.CAPTURE$",
+   "description": "Added 2026-10-27 (MANUS: \"one position per address\"). The address's position in the shared allocation ledger: AXN:<HEX>.CAPTURE, resolving at /s/axn/<HEX>/. Minted by scripts/capture_axn.py; ledger data/captures/axn.json."
+  },
+  "axn": {
+   "type": "string",
+   "pattern": "^AXN:[0-9A-F]{4,}\\.CAPTURE\\..+$",
+   "description": "Added 2026-10-27 (MANUS: \"one observation / analysis / measure should have one axn\"). The AXN of the entry's own observation: the address's position, family CAPTURE, and six glyphs derived (table v2.1) from the SHA-256 of the observation sealed with its analysis and measures (data/captures/sealed/<slug>.json). Each item of observations carries its own axn the same way."
   }
  }
 }
