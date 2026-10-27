@@ -2194,6 +2194,9 @@ if __name__ == "__main__" and "--dry-run" not in __import__("sys").argv:
     import build_axn_relations as _rel
     _rel.main()
     _axn.main()
+    # 2026-10-27: the lookup indexes SPXI-gnΩsis's 1¢ lookups read (data/api/lookup/, scripts/build_lookup_indexes.py)
+    import build_lookup_indexes as _lk
+    _lk.main()
     # 2026-10-06: Speak with Sigil on every page, once, after every surface has been written (scripts/sync_sigil.py)
     import subprocess as _sp2
     _sp2.run([__import__("sys").executable, str(Path(__file__).resolve().parent / "sync_sigil.py")], check=False)

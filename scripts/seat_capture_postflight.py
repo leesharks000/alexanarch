@@ -81,6 +81,8 @@ STEPS = [
     ("RESOLVE", [sys.executable, "scripts/generate_axn_resolver.py"]),
     ("CENTRAL", [sys.executable, "scripts/build_central_registry.py"]),
     ("KERNELS", [sys.executable, "scripts/build_kernel_index.py"]),
+    # 2026-10-27: the lookup indexes, whose capture comparison carries every scored observation
+    ("LOOKUP", [sys.executable, "scripts/build_lookup_indexes.py"]),
     # 2026-10-06: SIGIL after every page-writing step: Speak with Sigil on every page, once (scripts/sync_sigil.py).
     # The gallery, record and address generators write no common footer, so the panel is restored here.
     ("SIGIL", [sys.executable, "scripts/sync_sigil.py"]),
