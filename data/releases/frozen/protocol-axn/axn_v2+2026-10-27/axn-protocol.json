@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alexanarch.org/api/axn-protocol.json",
+  "title": "Alexanarch AXN Identifier Protocol",
+  "protocol_name": "axn",
+  "protocol_version": "axn/v2",
+  "schema_version": "2026-06-22-axn-v2",
+  "last_updated": "2026-10-27",
+  "summary": "Canonical specification of the AXN (Alexanarch Identifier) format, generation algorithm, glyph table, cluster table, family enum, validation rules, and legacy resolution. Any code that generates, validates, parses, or resolves AXNs must be derivable from this document. The canonical Python implementation is scripts/axn_lib.py. The canonical JavaScript implementation is embedded in .github/workflows/mint-axn.yml. Both must agree with this protocol.",
+  "canonical_implementations": {
+    "python": "scripts/axn_lib.py",
+    "javascript": ".github/workflows/mint-axn.yml (inline)"
+  },
+  "format": {
+    "pattern": "AXN:<HEX>.<FAMILY>.<EMOJI>",
+    "regex": "^AXN:[0-9A-F]{2,4}\\.[A-Z]+\\.[^.]{1,}$",
+    "example": "AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄"
+  },
+  "components": {
+    "hex": {
+      "description": "Uppercase hex label. Convention: ASCII hex of deposit_number padded to 2+ digits. Treat as an opaque label — the canonical key for lookups is deposit_number, not hex.",
+      "regex": "^[0-9A-F]{2,4}$",
+      "stability": "stable for the lifetime of the deposit"
+    },
+    "family": {
+      "description": "Semantic family. Auto-detected from keywords in the auto-mint flow; manually chosen for rich Path B deposits.",
+      "enum": [
+        "GOVERNANCE",
+        "EMPIRICAL",
+        "GENERATIVE",
+        "ARCHIVAL",
+        "PHILOLOGICAL",
+        "STRUCTURAL",
+        "COMPOSITIONAL",
+        "OPERATIVE",
+        "HETERONYMIC",
+        "MPAI",
+        "DATASET",
+        "NON",
+        "UNCLASSIFIED"
+      ],
+      "scope": {
+        "NON": "The entries of the Negative of the Negative (alexanarch.org/non) only, ruled 2026-10-24: the family is never assigned to a deposit, and a /non entry takes no other family."
+      }
+    },
+    "emoji": {
+      "description": "6-emoji canonical glyph derived from the first 6 bytes of the SHA-256 of the canonical bytes.",
+      "byte_count": 6,
+      "byte_source": "first 6 bytes of sha256(canonical text file bytes) — see generation_algorithm.step_1_assemble_bytes",
+      "table_source": "AXN_GLYPHS array of 256 entries indexed by byte value 0..255 — see canonical_implementations",
+      "grapheme_validation": "Must contain exactly 6 emoji graphemes. Variation selectors (U+FE00..U+FE0F) and ZWJ (U+200D) sequences glue adjacent codepoints into a single grapheme. Counting must respect this."
+    }
+  },
+  "generation_algorithm": {
+    "step_1_assemble_bytes": "canonical_bytes = the COMPLETE canonical text file as written to data/texts/AXN-<HEX>-text.md, UTF-8 encoded — YAML frontmatter, the H1 title line, the rendered Description / Methodology / Falsification Conditions / Files sections, and the body. The AXN is anchored to the file's bytes, so sha256(file) == registry.hash for any deposit minted through the canonical path.",
+    "step_2_compute_hash": "h = sha256(canonical_bytes)",
+    "step_3_derive_glyph": "emoji = ''.join(AXN_GLYPHS[h[i]] for i in range(6))",
+    "step_4_derive_clusters": "clusters = [CLUSTERS[h[i]] for i in range(6)]",
+    "step_5_compose_axn": "axn = f'AXN:{hex_label}.{family}.{emoji}'",
+    "reference_python": "scripts/axn_lib.py — see derive_axn() function",
+    "_superseded_assembly": "Prior to the audit §6 fix this step read: canonical_bytes = title + '\\n' + creator + '\\n' + description + '\\n' + body. That scheme hashed a reconstruction rather than the artifact, so a file could be rewritten without the hash noticing and the hash could not be checked by anyone holding only the file. Superseded; recorded because deposits minted under it will not verify against the current definition and that is expected, not corruption."
+  },
+  "cluster_readings": {
+    "Celestial": "Origin",
+    "Elemental": "Force",
+    "Architectural": "Foundation",
+    "Instrumental": "Method",
+    "Scriptural": "Text",
+    "Navigational": "Search",
+    "Temporal": "Duration",
+    "Organic": "Growth",
+    "Symbolic": "Play",
+    "Mathematical": "Proof",
+    "Alchemical": "Transmutation",
+    "Gestural": "Touch",
+    "Signal": "Alarm",
+    "Structural": "Direction",
+    "Liminal": "Threshold",
+    "Terminal": "Closure"
+  },
+  "schema_versions": {
+    "v2": {
+      "status": "current",
+      "since": "2026-06-22",
+      "byte_count": 6,
+      "summary": "6 emoji from first 6 bytes of SHA-256."
+    },
+    "v1": {
+      "status": "deprecated",
+      "deprecated_at": "2026-06-22",
+      "byte_count": 4,
+      "summary": "4 emoji from first 4 bytes of SHA-256.",
+      "migration": "Deposits minted under v1 were backfilled to v2 on 2026-06-22. Each backfilled deposit has its pre-v2 AXN preserved in legacy_axn (string) and axn_history[] (array of {axn, schema_version, retired_at, reason}) fields. Substrate-chosen glyphs (where applicable) are preserved in glyphic_canary."
+    }
+  },
+  "legacy_resolution": {
+    "rule": "A request for a legacy_axn should be redirected to the current canonical axn. Resolution sources:",
+    "sources": [
+      {
+        "field": "legacy_axn",
+        "description": "Most recent pre-canonical AXN. Single string per deposit."
+      },
+      {
+        "field": "axn_history",
+        "description": "Array of all retired AXNs with retirement timestamps and reasons."
+      }
+    ],
+    "resolver_path": "GET /data/registry.json then linear-search for matching legacy_axn or axn_history[].axn"
+  },
+  "identity_vs_recognition": {
+    "principle": "The emoji glyph is a recognition marker, not the cryptographic identity. The cryptographic identity is the SHA-256 in the `hash` field of the registry entry.",
+    "operative_law": "See LABOR canonical invariant #6 in /data/texts/AXN-037B-text.md.",
+    "substrate_chosen_glyphs": "When a substrate (PRAXIS, TECHNE, LABOR, etc.) composes a meaningful glyph sequence for a deposit, that glyph is preserved in the glyphic_canary field even after the canonical AXN is derived from SHA-256. The canonical AXN is identity; the glyphic_canary is recognition. They serve different purposes and are stored in different fields."
+  },
+  "validation_rules_referenced": [
+    "AXN-001 (AXN format match)",
+    "AXN-002 (exactly 6 emoji graphemes)",
+    "AXN-003 (hash is 64-char hex SHA-256)",
+    "AXN-004 (deposit_numbers contiguous from 1)"
+  ],
+  "change_log": [
+    {
+      "version": "axn/v2.3",
+      "date": "2026-10-24",
+      "changes": [
+        "Family NON added, scoped to the entries of the Negative of the Negative only (ruled 2026-10-24).",
+        "non_entries added: the /non mint route — position from the shared allocation ledger, version glyph from the row file's bytes, a new version minted at the same position on recomposition with the earlier versions kept in history (the row, with history: ruled 2026-10-24)."
+      ]
+    },
+    {
+      "version": "axn/v2.2",
+      "date": "2026-10-13",
+      "changes": [
+        "record_dimensions added: mint_derivation / founding_event / manifestations as independent fields (MANUS ruling 2026-10-13, reviewer corrections adopted).",
+        "Applied to the 2026-06-20 batch: 858 registered records; 841 unverified_input_not_retained, 16 verifies_against_served_bytes, 1 verifies_against_retained_bytes; 13 assignments never registered are listed in the ledger.",
+        "Ledger /data/axn-derivation-ledger.json built by scripts/build_axn_derivation_ledger.py; renderers read scripts/axn_derivation.py.",
+        "No AXN, hash or canonical text changed."
+      ]
+    },
+    {
+      "version": "axn/v2.1",
+      "date": "2026-08-14",
+      "changes": [
+        "step_1_assemble_bytes corrected to describe the implementation: the AXN is anchored to the complete canonical text file, per the audit §6 fix already carried in mint_deposit.py and the mint workflow. The prior title+creator+description+body assembly is retained as _superseded_assembly.",
+        "components.emoji.byte_source aligned to the same definition.",
+        "identity_semantics section added, carrying the LABOR canonical invariant: AXN version is minted once and does not move on update; a hash/file mismatch is content drift, not identity failure.",
+        "known_gap recorded: axn_root is not yet stable across editions of a work."
+      ]
+    },
+    {
+      "version": "axn/v2",
+      "date": "2026-06-22",
+      "changes": [
+        "Promoted from inline section of deposit-protocol.json to standalone protocol JSON.",
+        "AXN_GLYPHS and CLUSTERS tables documented as canonical with cross-references to scripts/axn_lib.py and mint-axn.yml.",
+        "Legacy resolution formalized via legacy_axn + axn_history[] fields.",
+        "Recognition vs identity formalized as protocol principle."
+      ]
+    }
+  ],
+  "identity_semantics": {
+    "operative_law": "LABOR canonical invariant, data/texts/AXN-037B-text.md",
+    "glyphic_canary": "recognition and trajectory",
+    "content_sha256": "byte identity",
+    "axn_root": "stable work relation — AXN:<hex>.<FAMILY>, the work across its editions",
+    "axn_version": "immutable version relation — AXN:<hex>.<FAMILY>.<glyph>, one edition",
+    "record_number": "local presentation address",
+    "minting_is_once": "An AXN version is minted ONCE, at deposit, and does NOT move when the record is later updated. It names the edition that was minted. A registry hash that no longer matches its file therefore indicates CONTENT DRIFT — the file has changed since minting — and not a broken identifier. Content that has genuinely changed should become a new version with its own AXN, not a silent re-derivation of the existing one.",
+    "known_gap": "axn_root is currently composed from the per-deposit hex, so it is NOT yet stable across editions of one work as the invariant requires. Two editions of the same work today carry different roots. Implementing a genuinely stable work relation is open work, not a new identifier type.",
+    "record_dimensions": "See record_dimensions (axn/v2.2): mint derivation, founding event and manifestation history are recorded separately, so an AXN can persist without the record overstating what its hash witnesses."
+  },
+  "record_dimensions": {
+    "ruling": "MANUS, 2026-10-13: \"lets go ahead and adopt the solution for those batched axns\" — first applied to the 2026-06-20 batch (858 registered records), with the reviewer corrections of the same day.",
+    "principle": "A record's AXN, the act that established it, and the bytes the record has held are three different facts, recorded in three independent fields. No AXN, hash or text is changed by recording them.",
+    "mint_derivation": {
+      "fields": "hash (the stored registry hash, unchanged), status, verified_against, input_retained, recipe, checked",
+      "status": {
+        "verifies_against_served_bytes": "the stored hash equals the SHA-256 of the file served now",
+        "verifies_against_retained_bytes": "the stored hash equals the SHA-256 of an earlier manifestation held in git",
+        "unverified_input_not_retained": "no bytes this archive holds hash to the stored value; the derivation cannot be re-checked, and the record says so"
+      },
+      "rule": "A hash's preimage is bytes. No retained body is described as the preimage unless it hashes to the stored value. Recording this dimension cannot repair an unreproduced hash; it states the limit and the verification walk ends at the first retained manifestation."
+    },
+    "founding_event": {
+      "fields": "date, kind, basis, upstream_deletion, sovereign_id, batch_axn, batch_hash, batch_axn_current, batch_derivation, former_doi_count (full list in the ledger), attestation, superseded_by_restoration_mint (where a restoration recomposed the AXN)",
+      "rule": "The founding event records the act under which the AXN was established. An operator attestation about that act is kept as attestation, never as derivation evidence."
+    },
+    "manifestations": {
+      "fields": "ledger pointer, count, first_retained, current {path, sha256, swhid, swh_known, swh_checked, observed}, unaccounted_byte_differences; the full chain (placeholder, first retained canonical body, later bodies, each with commit, date, sha256, swhid, swh_known, commit_subject) lives in /data/axn-derivation-ledger.json",
+      "rules": [
+        "∅ before a first retained canonical body means: no canonical body was seated in this archive at the preceding recorded state. It asserts nothing about the work or about an old hash's input.",
+        "A body that differs from the preceding manifestation is an unaccounted_byte_difference. A cause is named only where a commit or ledger entry states it; the commit subject is carried as what the commit said.",
+        "A byte change does not establish that two bodies are the same edition: same_edition is 'undetermined' unless an editorial determination, with its reason, is recorded.",
+        "A SWHID is computed from bytes; swh_known records separately, and dated, whether Software Heritage holds them."
+      ]
+    },
+    "surfaces": "A renderer describing one record's AXN reads scripts/axn_derivation.py: where mint_derivation.status is unverified_input_not_retained, the AXN is not called content-derived; the served bytes' SHA-256 and SWHID are given beside it, and JSON-LD carries a SWHID PropertyValue.",
+    "unchanged": "AXN format, generation algorithm for new mints, legacy resolution, and the 2026-09-18 redaction rule (a redaction re-derives the AXN and records the prior hash) stand as before. The record_dimensions model is applied to the 2026-06-20 batch; extending it to other records is a separate ruling."
+  },
+  "non_entries": {
+    "since": "axn/v2.3 (2026-10-24)",
+    "what": "An entry of the Negative of the Negative with a composed row takes a position in the one AXN sequence, through its own mint route (scripts/non_axn.py), beside deposits and symbolon witnesses.",
+    "position": "allocated from the shared ledger data/symbolon-registry/allocation.json under its rule, max(registry hex, ledger) + 1; the ledger is advanced past it. The position is the entry's for its lifetime.",
+    "root": "AXN:<hex>.NON — the entry across its compositions (identity_semantics.axn_root).",
+    "version": "AXN:<hex>.NON.<glyph> — one composition of the entry's row; the glyph is derived from the first 6 bytes of sha256 of the row file's bytes (datasets/negative-of-the-negative/v2/rows/<entity>.json). Minted once (identity_semantics.minting_is_once).",
+    "recomposition": "When the row's bytes change (a recomposition, or a landing that replaces the row), a new version is minted at the same position; the earlier version is kept in the entry's history with its hash, date and reason, and keeps resolving. Nothing is re-derived in place.",
+    "ledger": "datasets/negative-of-the-negative/v2/axn.json — one entry per row: position, root, current version, its sha256, and the history of earlier versions. The AXN is not written into the row, whose bytes it is derived from.",
+    "resolution": "/s/axn/<HEX>/ names the entry and its /non page; data/api/axn-index.json carries the position with source non-entry; data/axn-central-registry.json lists it with source non-entry.",
+    "one_kernel_one_position": "a row whose sha256 is already positioned (a deposit's kernel or a symbolon witness) is not minted a second position; the refusal is printed."
+  },
+  "glyph_table": {
+    "since": "axn/v2.4 (2026-10-27)",
+    "current": "v2.1",
+    "what": "The AXN_GLYPHS table v2.0 held two duplicate glyphs, so two byte values shared a glyph with others. Table v2.1 fills the two slots: 0x6E \"⏳\", 0xCF \"🖤\"; the 256 glyphs are distinct. AXN_GLYPHS_V20 is kept in scripts/axn_lib.py, and an AXN derived under v2.0 through one of the two slots carries its v2.0 form as a prior form. Ruling: Lee Sharks, 2026-10-27, \"fill the two.\"",
+    "copies": [
+      "scripts/axn_lib.py",
+      "api/register-symbolon.js",
+      "serverless/axn_glyphs.json",
+      "mint/index.html",
+      "mint/stamp/index.html"
+    ]
+  },
+  "capture_entries": {
+    "since": "axn/v2.4 (2026-10-27)",
+    "what": "The Capture Registry takes positions in the one AXN sequence through its own mint route (scripts/capture_axn.py). Ruling: Lee Sharks, 2026-10-27: \"one observation / analysis / measure should have one axn. that is the unit of the capture record, and i dont want summarizers citing the captures without the analysis\" — \"one position per address.\"",
+    "position": "one per address (one registry record, one exact query string), allocated from the shared ledger data/symbolon-registry/allocation.json under its rule, max(registry hex, ledger) + 1; a later run at the address joins its position.",
+    "root": "AXN:<hex>.CAPTURE — the address across its runs.",
+    "version": "AXN:<hex>.CAPTURE.<glyph> — one observation (one surface, one date) sealed with its analysis and measures: the glyph is derived from the first 6 bytes of sha256 of data/captures/sealed/<observation>.json, canonical JSON (keys sorted, UTF-8, no insignificant whitespace) of the observation's fields, its analysis, its measures and its evidence files with the SHA-256 of their bytes. The AXN is not written into the sealed file.",
+    "recomposition": "When an observation's sealed bytes change (a corrected transcript, a revised analysis or score), its AXN is re-derived and the earlier form kept in the ledger's history.",
+    "ledger": "data/captures/axn.json; the registry entries carry axn_root and axn, each observation item axn.",
+    "resolution": "/s/axn/<HEX>/ carries every observation at the address with its description, reading, analysis, match, PER, citations and sealed file; data/api/axn-index.json source capture; data/axn-central-registry.json and data/api/kernel-index.json carry the positions and the sealed kernels. seat_capture_postflight runs the route on every registry write."
+  },
+  "release_entries": {
+    "since": "axn/v2.4 (2026-10-27)",
+    "what": "Frozen releases of continuing objects take positions through their own mint route (scripts/release_axn.py). Adopted by Lee Sharks, 2026-10-27 (\"adopted. lets proceed\"), with the rule: mint when preserving the distinction will matter later, hash when integrity matters, locate when pointing is enough. Regenerated pages, the gallery, the addresses and dashboards are projections; the release that produces them is the identified state.",
+    "distinctions": {
+      "continuity": "the position: AXN:<hex>.<FAMILY>, the object across its releases",
+      "version": "the release: AXN:<hex>.<FAMILY>.<glyph>",
+      "location": "where the release's bytes are had (a site path, the git commit that records it, a hub copy); a location can change and the release keeps its identity"
+    },
+    "families": {
+      "RELEASE": "a dataset (datasets/catalog.json; the Capture Registry: the registry, its sealed observations and their AXN ledger, with its held copies v8.11 and v9.6)",
+      "INSTRUMENT": "a protocol, schema, rhizome grammar, the Capture Registry's intake instrument, the PER-dim rubric",
+      "SITE": "a site; alexanarch first"
+    },
+    "glyph_source": "the first 6 bytes of sha256 of the release's manifest (data/releases/manifests/<object>/<label>.sha256: every constituent file with the SHA-256 of its bytes, sha256sum format, paths from the repository root, sorted, HTML pages left out), or, for a one-file instrument, of the file itself (a copy kept in data/releases/frozen/). A SITE release is the tree of one commit (base_commit), read from git, HTML pages, sitemaps, SHA256SUMS.txt and the release ledger left out.",
+    "label": "the version the object declares (the Capture Registry's version, a protocol's current_version, a grammar's version), else the date. A state already released is not released again.",
+    "ledger": "data/releases/axn.json",
+    "relations": "data/axn-relations.json (scripts/build_axn_relations.py): typed relations read from the fields that record them — a /non row follows its spec, opens the observations it registers, grounds in its kernel sources and reads its defining papers; a capture observation draws on the deposits its confirmed joins name; a dataset follows its grammar or instrument, is scored by its rubric; an instrument is documented in its deposit. The resolver renders them on each page in both directions. A hash names bytes and supplies no relation."
+  },
+  "panel_entries": {
+    "since": "axn/v2.4 (2026-10-27)",
+    "what": "The /non register (datasets/negative-of-the-negative/v2/register.json: public knowledge at the addresses of the /non panel, where the archive is most often not represented) takes positions through its own mint route (scripts/nonreg_axn.py). Ruling: Lee Sharks, 2026-10-27: \"yes, they should probably also have a[n axn]\", with capture_entries' rulings.",
+    "position": "one per address, allocated from the shared ledger; root AXN:<hex>.PANEL.",
+    "version": "AXN:<hex>.PANEL.<glyph> — one observation sealed with its reading and measures (datasets/negative-of-the-negative/v2/sealed/<observation>.json, canonical JSON); the AXN is not written into the register.",
+    "shared_observations": "An observation seated in both registers (one obs_id, ruled 2026-10-06) is one observation: it carries the Capture Registry's AXN, and no PANEL AXN is minted for it; an address whose observations are all shared takes no position.",
+    "ledger": "datasets/negative-of-the-negative/v2/register-axn.json",
+    "resolution": "/s/axn/<HEX>/ with each observation's reading and measures; relations: a /non row opens the observations it registers. non_intake.py runs the route on every seating."
+  }
+}

@@ -31,6 +31,13 @@ if _rl.exists():
         for r in L.get('releases') or []:
             idx.setdefault(r['sha256'], {"axn": r['axn'], "root": L['root'], "object": k, "label": r['label'], "source": "release",
                                          "record": f"/s/axn/{L['hex']}/", **({"manifest": r['manifest']} if r.get('manifest') else {"file": r.get('file')})})
+_pl = ROOT/'datasets/negative-of-the-negative/v2/register-axn.json'
+if _pl.exists():
+    for slug, a in json.loads(_pl.read_text())['addresses'].items():
+        for k, o in a['observations'].items():
+            if o.get('sha256'):
+                idx.setdefault(o['sha256'], {"axn": o['axn'], "root": a['root'], "observation": k, "sealed": o['file'], "source": "non-register",
+                                             "record": "/datasets/negative-of-the-negative/v2/register.json"})
 out = {"description": "Full SHA-256 identity kernel → registered AXN. The reverse lookup: enter bytes, hash them, find the record.",
        "count": len(idx), "kernels": idx}
 (ROOT/'data/api/kernel-index.json').write_text(json.dumps(out, ensure_ascii=False, separators=(',',':')) + '\n')

@@ -337,6 +337,87 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
 term set: <a href="/s/axn/">AXN identifier set</a> &middot;
 machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
 </body></html>""")
+    # /non register positions (2026-10-27, MANUS: "yes, they should probably also have a[n axn]"): one position per
+    # address of the /non register, one AXN per observation sealed with its reading and measures; an observation seated in
+    # both registers carries the Capture Registry's AXN and is shown with it.
+    pan_lm = {}
+    _pl = ROOT/'datasets/negative-of-the-negative/v2/register-axn.json'
+    if _pl.exists():
+        def _t2(v, n):
+            v = ' '.join(str(v or '').split())
+            return v if len(v) <= n else v[:v.rfind(' ', 0, n)] + ' …'
+        for slug, a in sorted(json.load(open(_pl))['addresses'].items()):
+            if 'hex' not in a:
+                continue
+            hx = a['hex']
+            if hx in idx:
+                print(f"axn resolver: /non register address {slug} at {hx} collides; not written", file=_sys_axd.stderr); continue
+            axn_url = f"https://www.alexanarch.org/s/axn/{hx}/"
+            reg_url = "https://www.alexanarch.org/datasets/negative-of-the-negative/v2/register.json"
+            ent_url = f"https://www.alexanarch.org/non/{a['entity']}/" if a.get('entity') else reg_url
+            obs = sorted(a['observations'].items(), key=lambda kv: (str(kv[1].get('date') or ''), kv[0]))
+            idx[hx] = {"source": "non-register", "root": a['root'], "q": a.get('q'), "entity": a.get('entity'), "record": reg_url,
+                       "observations": [{"axn": o['axn'], "date": o.get('date'), "surface": o.get('surface'), **({"sha256": o['sha256'], "sealed": "https://www.alexanarch.org" + o['file']} if o.get('file') else {"shared_with_capture_registry": o.get('shared_with_capture_registry')})} for _, o in obs]}
+            pan_lm[hx] = max([str(o.get('date_derived') or o.get('date') or '') for _, o in obs] or [a.get('allocated', '')])
+            blocks, ids = [], []
+            for k, o in obs:
+                rows = [f"<dt>Observation</dt><dd>{html.escape(str(o.get('surface') or ''))}, {html.escape(str(o.get('date') or ''))} &middot; <code>{html.escape(str(o.get('obs_id') or ''))}</code></dd>"]
+                if o.get('file'):
+                    try:
+                        sd = json.load(open(ROOT/o['file'].lstrip('/')))
+                    except Exception:
+                        sd = {}
+                    rd, me = sd.get('reading') or {}, sd.get('measures') or {}
+                    if 'archive_present' in rd:
+                        rows.append(f"<dt>Archive</dt><dd>{'present' if rd['archive_present'] else 'absent'}" + (f" &mdash; {html.escape(_t2(rd.get('archive_basis'), 900))}" if rd.get('archive_basis') else '') + "</dd>")
+                    if me.get('cites') not in (None, ''):
+                        rows.append(f"<dt>Citations</dt><dd>{html.escape(str(me['cites']))}</dd>")
+                    if me.get('sf'):
+                        rows.append(f"<dt>Source strip</dt><dd>{html.escape(_t2(me['sf'], 400))}</dd>")
+                    rows.append(f"<dt>Sealed observation</dt><dd><a href=\"{o['file']}\">{html.escape(o['file'])}</a> &mdash; SHA-256 <code>{o['sha256']}</code></dd>")
+                    for h in (o.get('history') or []):
+                        rows.append(f"<dt>Earlier form, until {html.escape(h['until'])}</dt><dd><code>{html.escape(h['axn'])}</code> &mdash; {html.escape(h.get('reason',''))}</dd>")
+                else:
+                    sh = o.get('shared_with_capture_registry') or {}
+                    h_ = str(sh.get('root', '')).split(':')[-1].split('.')[0]
+                    rows.append(f"<dt>Seated in both registers</dt><dd>one observation, one AXN: the Capture Registry's, at <a href=\"/s/axn/{h_}/\"><code>{html.escape(sh.get('root', ''))}</code></a>, sealed with its analysis and measures (<a href=\"{html.escape(sh.get('sealed', ''))}\">{html.escape(sh.get('sealed', ''))}</a>)</dd>")
+                blocks.append(f"<section><h2><code>{html.escape(o['axn'])}</code></h2>\n<dl>{''.join(rows)}</dl></section>")
+                ids.append({"@type": "PropertyValue", "propertyID": "AXN", "value": o['axn'], "description": f"observation of {o.get('surface') or ''}, {o.get('date') or ''}"})
+            q = str(a.get('q') or '')
+            _desc = (f"{a['root']} is the position of the /non register address for the query \u201c{q}\u201d on {a.get('surface') or ''}: public knowledge "
+                     f"at an address of the /non panel, where the archive is most often not represented. Each observation is one AXN, its glyphs derived "
+                     f"from the SHA-256 of the observation sealed with its reading and measures.")
+            ld = {"@context": "https://schema.org", "@type": "DefinedTerm", "@id": axn_url, "url": axn_url, "name": a['root'], "termCode": a['root'],
+                  "identifier": [{"@type": "PropertyValue", "propertyID": "AXN-root", "value": a['root']},
+                                 {"@type": "PropertyValue", "propertyID": "AXN-hex", "value": hx}] + ids,
+                  "inDefinedTermSet": {"@type": "DefinedTermSet", "@id": "https://www.alexanarch.org/s/axn/", "name": "AXN — Alexanarch content-derived identifiers",
+                                       "url": "https://www.alexanarch.org/s/axn/"},
+                  "description": _desc, "about": {"@type": "Dataset", "@id": reg_url, "url": reg_url, "name": f"/non register: {q}"},
+                  "additionalProperty": [{"@type": "PropertyValue", "name": "family", "value": "PANEL"}]}
+            d = ROOT/'s/axn'/hx; d.mkdir(exist_ok=True)
+            (d/'index.html').write_text(f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>{html.escape(a['root'])} — {html.escape(_t2(q, 80))} — Alexanarch AXN resolver</title>
+<link rel="canonical" href="{axn_url}">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="description" content="{html.escape(_t2(_desc, 320))}">
+<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
+<h1>{html.escape(a['root'])}</h1>
+<p>{html.escape(_desc)}</p>
+<dl>
+<dt>Query</dt><dd>{html.escape(q)}</dd>
+<dt>Entity of the panel</dt><dd><a href="{ent_url}">{html.escape(str(a.get('entity') or ''))}</a></dd>
+<dt>Register</dt><dd><a href="{reg_url}">{reg_url}</a></dd>
+<dt>Hex position</dt><dd><code>{hx}</code></dd>
+<dt>Family</dt><dd><code>PANEL</code></dd>
+<dt>Ledger</dt><dd><a href="/datasets/negative-of-the-negative/v2/register-axn.json">/datasets/negative-of-the-negative/v2/register-axn.json</a></dd>
+</dl>
+{chr(10).join(blocks)}
+<p>Resolver rule: <code>alexanarch.org/axn/&lt;HEX&gt;</code> &middot;
+term set: <a href="/s/axn/">AXN identifier set</a> &middot;
+machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
+</body></html>""")
     # Releases (2026-10-27, adopted: "mint when preserving the distinction will matter later"): one position per
     # continuing object (a dataset, an instrument, a site); one AXN per frozen release. Continuity, version, location.
     rel_lm = {}
@@ -484,7 +565,7 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
         # record's own last modification (record_modification.last_modified: date_modified, else the
         # deposit date); a disambiguation page carries the latest of its records. Never the run date.
         for hx in sorted(idx):
-            lm = non_lm[hx] if hx in non_lm else cap_lm[hx] if hx in cap_lm else rel_lm[hx] if hx in rel_lm else max(((e.get('date_modified') or e.get('date') or '')[:10] for e in byhex[hx]), default='')
+            lm = non_lm[hx] if hx in non_lm else cap_lm[hx] if hx in cap_lm else rel_lm[hx] if hx in rel_lm else pan_lm[hx] if hx in pan_lm else max(((e.get('date_modified') or e.get('date') or '')[:10] for e in byhex[hx]), default='')
             lm_tag = f'<lastmod>{lm}</lastmod>' if lm else ''
             f.write(f'  <url><loc>https://www.alexanarch.org/s/axn/{hx}/</loc>{lm_tag}</url>\n')
         f.write('</urlset>\n')

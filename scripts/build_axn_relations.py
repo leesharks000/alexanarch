@@ -5,8 +5,8 @@ A hash names bytes; it supplies no relation. Relations are read only from fields
 
   /non rows (datasets/negative-of-the-negative/v2/rows/*.json), subject the row's current AXN
     follows      the row's spec (`spec`, the "#N" it names): the deposit whose procedure the composition follows
-    opens        a capture observation the row registers (any `obs_id` field of the row outside its superseded versions); an
-                 observation of the /non register, which carries no AXN, is given by its locator
+    opens        a capture observation the row registers (any `obs_id` field of the row outside its superseded versions); since 2026-10-27
+                 an observation of the /non register has its own AXN (scripts/nonreg_axn.py); one without is given by its locator
     grounds_in   a deposit a kernel claim takes its source from (`kernel[].source`, "#N")
     read         a defining paper read for the composition (`composition_v09.defining_papers_read[]`, with the extent read)
   capture joins (data/capture-joins.json), confirmed relations only (its render rule), subject the observation's AXN
@@ -41,6 +41,10 @@ def main():
         for k, o in a["observations"].items():
             if o.get("obs_id"):
                 by_obs[o["obs_id"]] = o["axn"]
+    for a in ((load("datasets/negative-of-the-negative/v2/register-axn.json") or {}).get("addresses") or {}).values():
+        for k, o in a["observations"].items():
+            if o.get("obs_id"):
+                by_obs.setdefault(o["obs_id"], o["axn"])   # /non register observations (scripts/nonreg_axn.py, 2026-10-27)
     non = (load("datasets/negative-of-the-negative/v2/axn.json") or {}).get("entries", {})
     rel_led = (load("data/releases/axn.json") or {}).get("objects", {})
     non_reg = {e["obs_id"]: e.get("slug") for e in ((load("datasets/negative-of-the-negative/v2/register.json") or {}).get("entries") or []) if e.get("obs_id")}

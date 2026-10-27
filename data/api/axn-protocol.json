@@ -247,5 +247,14 @@
     "label": "the version the object declares (the Capture Registry's version, a protocol's current_version, a grammar's version), else the date. A state already released is not released again.",
     "ledger": "data/releases/axn.json",
     "relations": "data/axn-relations.json (scripts/build_axn_relations.py): typed relations read from the fields that record them — a /non row follows its spec, opens the observations it registers, grounds in its kernel sources and reads its defining papers; a capture observation draws on the deposits its confirmed joins name; a dataset follows its grammar or instrument, is scored by its rubric; an instrument is documented in its deposit. The resolver renders them on each page in both directions. A hash names bytes and supplies no relation."
+  },
+  "panel_entries": {
+    "since": "axn/v2.4 (2026-10-27)",
+    "what": "The /non register (datasets/negative-of-the-negative/v2/register.json: public knowledge at the addresses of the /non panel, where the archive is most often not represented) takes positions through its own mint route (scripts/nonreg_axn.py). Ruling: Lee Sharks, 2026-10-27: \"yes, they should probably also have a[n axn]\", with capture_entries' rulings.",
+    "position": "one per address, allocated from the shared ledger; root AXN:<hex>.PANEL.",
+    "version": "AXN:<hex>.PANEL.<glyph> — one observation sealed with its reading and measures (datasets/negative-of-the-negative/v2/sealed/<observation>.json, canonical JSON); the AXN is not written into the register.",
+    "shared_observations": "An observation seated in both registers (one obs_id, ruled 2026-10-06) is one observation: it carries the Capture Registry's AXN, and no PANEL AXN is minted for it; an address whose observations are all shared takes no position.",
+    "ledger": "datasets/negative-of-the-negative/v2/register-axn.json",
+    "resolution": "/s/axn/<HEX>/ with each observation's reading and measures; relations: a /non row opens the observations it registers. non_intake.py runs the route on every seating."
   }
 }

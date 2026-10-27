@@ -223,6 +223,9 @@ def main():
     reg["date"] = _dt.date.today().isoformat()
     REG.write_text(json.dumps(reg, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"7. EMIT       written; v{reg['version']}; {reg['address_count']} address(es), {reg['observation_count']} observation(s)")
+    # 2026-10-27: the observation's AXN (scripts/nonreg_axn.py; MANUS: "yes, they should probably also have a[n axn]")
+    import subprocess as _sp
+    _sp.run([sys.executable, str(ROOT / "scripts/nonreg_axn.py"), "--apply"], check=False)
     return 0
 
 
