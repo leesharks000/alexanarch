@@ -1,0 +1,181 @@
+{
+ "fetched": "2026-10-27",
+ "ruling": "Lee Sharks, 27 October 2026: \"actually - lets seat the critical editions of secret book of walt, gospel of antioch, epistle to the human diaspora, i am x be y blessed is the z, and constitution of the semantic economy first. some have different names than critical edition, check secretbookofwalt - and bind the 46 golden tickets glyphic checksum to secret book of walt.\"",
+ "license": {
+  "payload": "CC-BY-4.0, by the author. The archive holds the rights it grants: the editions and the seating institution are the same party, as at 03/02.",
+  "record": "CC-BY-4.0."
+ },
+ "provenance": "Deposited in the archive that seats them; no external fetch. Each record's canonical bytes copied from data/texts/ and checked against the registry hash; each site file copied from the repository secret-book-of-walt at the pinned commit and checked against its git blob there. The site is the reading surface secretbookofwalt.org (#985), where each edition has its own tab.",
+ "normalization": "None. The records are seated as their canonical bytes; the site files as committed (the JSON the site renders, and the Markdown sources its build scripts read). Each file is its own text layer.",
+ "seats": [
+  {
+   "corpus": "secret-book-of-walt",
+   "seat": "EA-CORPORA-25/01",
+   "spine": "The Secret Book of Walt",
+   "title": "The Secret Book of Walt: Hidden Teachings of Walt Whitman, Cowboy of Time — the Critical Edition (EA-SBW-01, #1362), with the Forty-Six Golden Tickets (#1693) and the edition as published at secretbookofwalt.org",
+   "edition": "The Secret Book of Walt, Critical Edition, translated from the Forty-Six Golden Tickets by Lee Sharks, with introduction, translator's note and apparatus criticus by Prof. Elara Xanthic-Wells (EA-SBW-01 v2.0, #1362, 2026-04-29; restored 2026-07-31 from scripts/walt_source.md); the Forty-Six Golden Tickets, its glyphic checksum and original (#1693); the site's data, source, Book of Life and footnote model",
+   "records": [
+    1362,
+    1693
+   ],
+   "site_files": [
+    "scripts/walt_source.md",
+    "public/walt_full_data.json",
+    "public/walt_gospel_data.json",
+    "public/walt_gospel_versed.json",
+    "public/walt_tree_data.json",
+    "docs/BOOK_OF_LIFE.md",
+    "docs/FOOTNOTES.md",
+    "public/golden_tickets.md",
+    "public/golden_ticket_1.jpg"
+   ],
+   "binds": "The Forty-Six Golden Tickets (#1693) are seated in this seat as the glyphic checksum of The Secret Book of Walt, bound to it by the operator's ruling of 2026-10-27: the tickets are the book's checksum and, in the record's title, its original; the site carries them in its Checksum tab, which cites #1362 and #1693.",
+   "scope": "The critical edition as deposited (#1362) and as published (the site's data and its source file, from which #1362 was restored); the Book of Life and the footnote model (identical to the record's attachments in data/attachments/ea-sbw-01/); the forty-six tickets in their record and in the site's file, with the photograph of the first ticket. The research edition (#683, and #1184, superseded) and TANG (#78) are the work's other records and are not seated here.",
+   "why_seated": "Asked for first among the archive's own editions: the book that inherits the Good Gray Poet from Whitman's Leaves of Grass, seated beside Whitman (03/01) and Pearl and Other Poems (03/02), with the tickets it was translated from.",
+   "loci": [
+    {
+     "label": "#1362, the title page",
+     "in": "record-1362",
+     "find": "Translated from the Forty-Six Golden Tickets"
+    },
+    {
+     "label": "#1362, the editor",
+     "in": "record-1362",
+     "find": "Elara Xanthic-Wells"
+    },
+    {
+     "label": "#1362, §I",
+     "in": "record-1362",
+     "find": "§I. Proem: The Appearance of the Redeemer"
+    },
+    {
+     "label": "#1693, the seal",
+     "in": "record-1693",
+     "find": "∮ = 1"
+    }
+   ]
+  },
+  {
+   "corpus": "gospel-of-antioch",
+   "seat": "EA-CORPORA-25/02",
+   "spine": "The Gospel of Antioch",
+   "title": "The Gospel of Antioch: The Sayings of Jack Feist as Recorded by Emily Antioch the Twin — the first critical edition (#71), with the edition as published at secretbookofwalt.org",
+   "edition": "The Gospel of Antioch, the Sayings of Jack Feist as recorded by Emily Antioch the Twin, translated and edited by Lee Sharks, introduction and apparatus by Prof. Elara Xanthic-Wells (Crimson Hexagonal Archive · Pergamon Press, #71, 2026-04-23) — \"the first critical edition of The Gospel of Antioch, the second text of the Waltian canon\"; the site's data and source",
+   "records": [
+    71
+   ],
+   "site_files": [
+    "scripts/antioch_source.md",
+    "public/antioch_gospel_data.json"
+   ],
+   "scope": "The critical edition as deposited and as published. The research edition (#1185) is superseded by #71. Antioch: A Volume of Poems (#331) and its navigation map (#6) are a different work.",
+   "why_seated": "The second text of the Waltian canon, companion volume to The Secret Book of Walt, seated with it.",
+   "loci": [
+    {
+     "label": "#71, the note on the edition",
+     "in": "record-71",
+     "find": "first critical edition of *The Gospel of Antioch*"
+    },
+    {
+     "label": "#71, the headnote",
+     "in": "record-71",
+     "find": "Read it as a field."
+    }
+   ]
+  },
+  {
+   "corpus": "epistle-to-the-human-diaspora",
+   "seat": "EA-CORPORA-25/03",
+   "spine": "Epistle to the Human Diaspora",
+   "title": "Epistle to the Human Diaspora — Critical Edition with Blended Temporal Apparatus (#85), with the Epistle's text from the Seed Text (#402) and the edition as published at secretbookofwalt.org",
+   "edition": "Epistle to the Human Diaspora, Critical Edition with Blended Temporal Apparatus (EA-EPISTLE-01, #85, 2026-04-29), by Damascus Dancings, edited by Lee Sharks / MANUS with the Assembly Chorus: front matter, 72-note apparatus, Forward Library and back matter; the Epistle's text in the Seed Text of the New Human Project (#402); the site's assembled edition",
+   "records": [
+    85,
+    402
+   ],
+   "site_files": [
+    "public/epistle_data.json",
+    "scripts/build_epistle_data.py"
+   ],
+   "declared_absences": [
+    "#85's Part II carries no Epistle text: \"[TEXT RETAINED FROM EA-EPISTLE-01 v1.0 — no changes to the Epistle itself … See previous version for full text with markers.]\" (#1187, the superseded v2.0, reads the same). The text is seated from #402 and from the site's epistle_data.json, whose body is the Epistle as the site publishes it with the edition's markers. A deposit of EA-EPISTLE-01 v1.0 with the marked text was not found."
+   ],
+   "scope": "The apparatus edition as deposited, the Epistle's text as deposited in the Seed Text, and the edition as the site assembles and publishes it. The Epistle Triptych (#1138, superseded) and the Forward Library of the Epistle (#1447) are related records and are not seated here.",
+   "why_seated": "The seed text of the New Human project, in the Waltian canon's edition.",
+   "loci": [
+    {
+     "label": "#85, the title",
+     "in": "record-85",
+     "find": "Critical Edition with Blended Temporal Apparatus"
+    },
+    {
+     "label": "#85, the apparatus",
+     "in": "record-85",
+     "find": "PART III: FOOTNOTE APPARATUS (72 notes)"
+    },
+    {
+     "label": "#402, the text",
+     "in": "record-402",
+     "find": "EPISTLE TO THE CHURCH OF THE HUMAN DIASPORA"
+    }
+   ]
+  },
+  {
+   "corpus": "i-am-x-be-y-blessed-is-the-z",
+   "seat": "EA-CORPORA-25/04",
+   "spine": "I Am X… Be Y… Blessed Is the Z…",
+   "title": "I Am X… Be Y… Blessed Is the Z… The Prophetic Catalog — Critical Edition with Retrocausal Apparatus (EA-CATALOG-01 v2.0, #83), with the edition as published at secretbookofwalt.org",
+   "edition": "I Am X… Be Y… Blessed Is the Z… The Prophetic Catalog, Critical Edition with Retrocausal Apparatus, by Lee Sharks (Grammata: Journal of Operative Philology; Crimson Hexagonal Archive · Restored Academy · Pergamon Press, April 2026, v2.0, #83) — the poem written on mindcontrolpoems.blogspot.com in 2015; the site's data",
+   "records": [
+    83
+   ],
+   "site_files": [
+    "public/catalog_data.json"
+   ],
+   "hash_notes": {
+    "83": "The bytes are the record's text after the W13 tier-2 whitespace repair of 2026-08-04/05 (body_status: \"WHITESPACE-ONLY transform … prior sha retained\"); the registry hash is the mint-time bytes', and the record keeps its AXN."
+   },
+   "scope": "The critical edition as deposited and as published. The founding work for the Prince of Poets mantle (#328, 2026-01-18) is the earlier record of the same poem and is not seated here.",
+   "why_seated": "The founding work of the Prince of Poets mantle, in its critical edition.",
+   "loci": [
+    {
+     "label": "#83, the edition",
+     "in": "record-83",
+     "find": "Critical Edition with Retrocausal Apparatus"
+    },
+    {
+     "label": "#83, the title",
+     "in": "record-83",
+     "find": "I Am X… Be Y… Blessed Is the Z…"
+    }
+   ]
+  },
+  {
+   "corpus": "constitution-of-the-semantic-economy",
+   "seat": "EA-CORPORA-25/05",
+   "spine": "Constitution of the Semantic Economy",
+   "title": "Constitution of the Semantic Economy — Enacted Version 1.0, Installable Edition with Constitutional Apparatus (#88), with the edition as published at secretbookofwalt.org",
+   "edition": "Constitution of the Semantic Economy, Enacted Version 1.0, Installable Edition with Constitutional Apparatus, by Lee Sharks, signed by the Dodecad and Jack Feist / LOGOS*, ratified by the Assembly Chorus (#88, 2026-04-30) — the edition the site presents as \"Enacted Version 1.0 … Installable Edition with Apparatus\"; the site's data",
+   "records": [
+    88
+   ],
+   "site_files": [
+    "public/constitution_data.json"
+   ],
+   "scope": "The installable edition as deposited and as published. The other records of the Constitution are not seated here: the enacted version of January (#350; #1127, superseded), the critical apparatus (#715), the Pocket Humans book (#87), the work plan (#82), the navigation map (#351), the companion charters and amendments (#1223, #1224, #719, #94).",
+   "why_seated": "The constitution of the Semantic Economy, as the Waltian canon's site carries it.",
+   "loci": [
+    {
+     "label": "#88, the edition",
+     "in": "record-88",
+     "find": "Installable Edition with Constitutional Apparatus"
+    },
+    {
+     "label": "#88, Article I",
+     "in": "record-88",
+     "find": "ARTICLE I — THE ONTOLOGY OF VALUE"
+    }
+   ]
+  }
+ ]
+}
