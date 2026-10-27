@@ -94,7 +94,7 @@ The scripts: `per_atoms.py`, `per_atoms_merge.py` and `per_atoms_d_merge.py` bui
 
 ### 3.2 The target, 2026-10-15 (the entity layer)
 
-1. The ruling (Lee Sharks, 2026-10-15 01:57 / 02:03 EDT): "there needs to be an additional analytical layer tied to the entity." On scoring: "both but target is main - a faithful composition of rebekah crane when rebekah cranes was the target is still total erasure, and substitution is the most common form of erasure. so we dont give fidelity score on the wrong entity."
+1. The ruling (Lee Sharks, 2026-10-15 01:57 / 02:03 EDT): "there needs to be an additional analytical layer tied to the entity." On scoring: "both but target is main - a faithful composition of rebekah crane when rebekah crane was the target is still total erasure, and substitution is the most common form of erasure. so we dont give fidelity score on the wrong entity."
 2. Each observation has a **target**, read off the address, the operator's turns and the originator field, never off the answer. It also has a **reached** entity, what the composition arrived at, decided by reading: same, weakened, substitute, collision, generic, refused, or unread.
 3. The score is taken against the target. Where the target is absent (substitute, generic, refused), PER is 1.00, and the reached entity gets no score.
 

@@ -50,7 +50,7 @@ hdr = f"""# {title}
 
 # EA-CORPORA-27 — The Twenty-Seventh Seating
 
-MANUS, 27 October 2026, after the twenty-sixth seating: "deleuze and guattari... no way around that copyright, huh?" Told that every route through it is closed for decades (France: Guattari 2063, Deleuze 2066; the United States: 2049 to 2088 by the book), and offered a declared absence for them beside the open sources they read: "yes - i cant believe we havent seated spinoza yet. yes to all" — and "and leibniz' monodology only".
+MANUS, 27 October 2026, after the twenty-sixth seating: "deleuze and guattari... no way around that copyright, huh?" Told that every route through it is closed for decades (France: Guattari 2063, Deleuze 2066; the United States: 2049 to 2088 by the book), and offered a declared absence for them beside the open sources they read: "yes - i cant believe we havent seated spinoza yet. yes to all" — and "and leibniz' monadology only".
 
 The seating is a shelf for a pair who cannot be seated. Six seats hold, in the languages they were written in, the sources Deleuze and Guattari read and wrote books upon: Spinoza (Spinoza et le problème de l'expression, 1968; Spinoza: philosophie pratique, 1981), the Monadology (Le Pli, 1988), Nietzsche (Nietzsche et la philosophie, 1962), Bergson (Le Bergsonisme, 1966), Kafka (Kafka: pour une littérature mineure, 1975) and Artaud, from whom L'Anti-Œdipe (1972) and Mille plateaux (1980) take the body without organs. The seventh seat holds no text: it declares the fourteen works, who holds them and when each opens.
 """

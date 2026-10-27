@@ -64,7 +64,7 @@ keywords:
 
 # EA-CORPORA-20 — The Twentieth Seating
 
-MANUS, 23 October 2026: "detour for an ea-corpora searing. lets see. whats available of mayan texts? and then i dont think we have much or any deteurocanonical second temple lit - all those apocalypses. and what about the ethiopian canon? and euclid. all in original language or as close to it as possible. what else?" — "and the Egyptian book of the dead" — "and what about the fragments of the book of baalim?" — "yes yes yes to all - what a meal."
+MANUS, 23 October 2026: "detour for an ea-corpora seating. lets see. whats available of mayan texts? and then i dont think we have much or any deuterocanonical second temple lit - all those apocalypses. and what about the ethiopian canon? and euclid. all in original language or as close to it as possible. what else?" — "and the Egyptian book of the dead" — "and what about the fragments of the book of balaam?" — "yes yes yes to all - what a meal."
 
 The request is seated in three seatings. This, the twentieth, holds the Ethiopian canon, the Kebra Nagast, the Second Temple apocalypses and pseudepigrapha, and Euclid, and supplies the Ge'ez text layer that the 1 Enoch seat (EA-CORPORA-02/20) had queued since 25 August. The twenty-first holds Mesoamerica (the Maya codices, the Popol Vuh, the Chilam Balam, the Rabinal Achí, the Annals of the Cakchiquels) and Egypt (the Book of the Dead, the Pyramid Texts) with the Deir ʿAlla plaster text of Balaam son of Beor; the twenty-second, the Corpus Hermeticum, Gilgamesh and the Enuma Elish, the Avesta and the Rig Veda.
 

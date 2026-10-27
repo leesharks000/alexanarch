@@ -59,8 +59,8 @@ out = ["### Protocol Version\n\nalexanarch-deposit-protocol/v1\n",
        "1996; or if the four surfaces (seat, index, deposit, shelf) disagree.\n",
        "### Body\n\n# EA-CORPORA-18 — The Eighteenth Seating\n\n"
        "MANUS, 15 October 2026: \"we need more seatings of avant garde literature. dada. farce. oulipo. futurist. - whatevers in the "
-       "public domain. originals is good on classics, impoverished on modern. and i want the italian troubadors. and pound, more pound. "
-       "need the cantos.\" — \"and the concrete poets\" — \"also need jarry, schlovsky, etc\".\n"]
+       "public domain. originals is good on classics, impoverished on modern. and i want the italian troubadours. and pound, more pound. "
+       "need the cantos.\" — \"and the concrete poets\" — \"also need jarry, shklovsky, etc\".\n"]
 for S, s in zip(spec["seats"], seats):
     n = S["corpus"]
     out.append(f"## Seat {S['card']} — {S['spine']}\n\n*{s['title']}*\n")

@@ -47,7 +47,7 @@ hdr = f"""# {title}
 
 # EA-CORPORA-26 — The Twenty-Sixth Seating
 
-MANUS, 27 October 2026. After the twenty-fourth seating set the Book of Mormon on the shelf: "its as american as literature comes. but then i am like, i dont have king of malcolm or mao. it leads down a path where things start getting hairy." Then: "du bois and langston hughes are public domain tho, right?" — "lets seat what can be seated of du bois and hughes" — and, versioning the originals packet (#1709) to include them: "the canon's america is way too white."
+MANUS, 27 October 2026. After the twenty-fourth seating set the Book of Mormon on the shelf: "its as american as literature comes. but then i am like, i dont have king or malcolm or mao. it leads down a path where things start getting hairy." Then: "du bois and langston hughes are public domain tho, right?" — "lets seat what can be seated of du bois and hughes" — and, versioning the originals packet (#1709) to include them: "the canon's america is way too white."
 
 The shelf's America was Whitman (03/01), Dickinson (02/14), Pound (05/02, 18/01), Stein (18/09), the Latter Day Saints (24/01) and the Millerites (24/03). This seating adds Du Bois and Hughes as far as the public domain of the United States reaches: everything first published there in 1930 or earlier. The two seats meet in The Crisis, which Du Bois edited from its first number (November 1910, seated in 26/01) and which printed Hughes's "The Negro Speaks of Rivers" in June 1921 (seated in 26/02), and in The New Negro (1925), which carries both. Their later work is in copyright and is named below as not seated.
 """

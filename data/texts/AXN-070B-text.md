@@ -52,7 +52,7 @@ keywords:
 
 # EA-CORPORA-22 — The Twenty-Second Seating
 
-MANUS, 23 October 2026: "detour for an ea-corpora searing. lets see. whats available of mayan texts? and then i dont think we have much or any deteurocanonical second temple lit - all those apocalypses. and what about the ethiopian canon? and euclid. all in original language or as close to it as possible. what else?" — "and the Egyptian book of the dead" — "and what about the fragments of the book of baalim? i might be miswriting this. recent discovery. if theyre available anywhere." — "yes yes yes to all - what a meal."
+MANUS, 23 October 2026: "detour for an ea-corpora seating. lets see. whats available of mayan texts? and then i dont think we have much or any deuterocanonical second temple lit - all those apocalypses. and what about the ethiopian canon? and euclid. all in original language or as close to it as possible. what else?" — "and the Egyptian book of the dead" — "and what about the fragments of the book of balaam? i might be miswriting this. recent discovery. if theyre available anywhere." — "yes yes yes to all - what a meal."
 
 The third of three seatings from one request (EA-CORPORA-20 and 21 before it): the neighbours of what the shelf already holds. The Hermetica beside the Chaldaean Oracles, the Greek Magical Papyri and Nag Hammadi; the Babylonian epics beside the Hebrew Bible, the Septuagint and the apocalypses; the Avesta beside the apocalypses that inherit its dualism; the Rig Veda beside the Upanishads.
 

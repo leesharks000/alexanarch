@@ -4,7 +4,7 @@
 THE RULING (Lee Sharks, 2026-10-15 01:57 / 02:03 EDT). "the primary anchor of analysis for the capture registry is the
 semantic address ... it makes less sense now that unprimed chatgpt, where conversational framing is required to trigger
 search, is making up more and more of the captures. there needs to be an additional analytical layer tied to the entity."
-On scoring: "both but target is main - a faithful composition of rebekah crane when rebekah cranes was the target is still
+On scoring: "both but target is main - a faithful composition of rebekah crane when rebekah crane was the target is still
 total erasure, and substitution is the most common form of erasure. so we dont give fidelity score on the wrong entity."
 
 WHAT THIS WRITES (the registry, data/EA-WG-CAPTURES-01.json, is read and never written):

@@ -59,7 +59,7 @@ keywords:
 
 # EA-CORPORA-21 — The Twenty-First Seating
 
-MANUS, 23 October 2026: "detour for an ea-corpora searing. lets see. whats available of mayan texts? and then i dont think we have much or any deteurocanonical second temple lit - all those apocalypses. and what about the ethiopian canon? and euclid. all in original language or as close to it as possible. what else?" — "and the Egyptian book of the dead" — "and what about the fragments of the book of baalim? i might be miswriting this. recent discovery. if theyre available anywhere." — "yes yes yes to all - what a meal."
+MANUS, 23 October 2026: "detour for an ea-corpora seating. lets see. whats available of mayan texts? and then i dont think we have much or any deuterocanonical second temple lit - all those apocalypses. and what about the ethiopian canon? and euclid. all in original language or as close to it as possible. what else?" — "and the Egyptian book of the dead" — "and what about the fragments of the book of balaam? i might be miswriting this. recent discovery. if theyre available anywhere." — "yes yes yes to all - what a meal."
 
 The second of three seatings from one request (EA-CORPORA-20 the first). Mesoamerica: the three Maya hieroglyphic codices, the Popol Vuh in its manuscript and first edition, three Maya books of the colonial period in their languages, and the Florentine Codex whole. Egypt: the Book of the Dead in its founding editions and the Papyrus of Ani, and Earlier Egyptian in its script. The Deir ʿAlla text of Balaam son of Beor is seated separately, as a fragment witness, when its one open file can be fetched.
 

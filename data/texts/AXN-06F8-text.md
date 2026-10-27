@@ -69,7 +69,7 @@ keywords:
 
 # EA-CORPORA-18 — The Eighteenth Seating
 
-MANUS, 15 October 2026: "we need more seatings of avant garde literature. dada. farce. oulipo. futurist. - whatevers in the public domain. originals is good on classics, impoverished on modern. and i want the italian troubadors. and pound, more pound. need the cantos." — "and the concrete poets" — "also need jarry, schlovsky, etc".
+MANUS, 15 October 2026: "we need more seatings of avant garde literature. dada. farce. oulipo. futurist. - whatevers in the public domain. originals is good on classics, impoverished on modern. and i want the italian troubadours. and pound, more pound. need the cantos." — "and the concrete poets" — "also need jarry, shklovsky, etc".
 
 ## Seat 18/01 — Pound II
 
