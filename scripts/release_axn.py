@@ -231,7 +231,9 @@ def main():
             if any(r["sha256"] == h for r in L["releases"]):
                 continue
             if any(r["label"] == label for r in L["releases"]):
-                label = f"{label}+{today}"
+                # a declared version whose bytes moved without the version moving keeps the version and takes the date;
+                # a date label already used that day takes a running number
+                label = f"{label}.{sum(1 for r in L['releases'] if r['label'].startswith(label))+1}" if label == today else f"{label}+{today}"
             if any(r["label"] == label for r in L["releases"]):
                 label = f"{label}.{len(L['releases'])}"
             slab = re.sub(r"[^A-Za-z0-9._+-]+", "_", label)
