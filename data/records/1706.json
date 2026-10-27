@@ -1,0 +1,205 @@
+{
+ "deposit_number": 1706,
+ "axn": "AXN:0729.DATASET.🏔️🪞⛵🕚⛵💎",
+ "hex": "0729",
+ "family": "DATASET",
+ "emoji": "🏔️🪞⛵🕚⛵💎",
+ "hash": "16595c6c5c1c4fb0ade1adbd16e50d8da64d7bc533b53d2343b94b05311d2f1b",
+ "title": "EA-CORPORA-23 — The Twenty-Third Seating: The Hadith in Arabic, the Nine Books, the Four Books of the Imami Tradition and al-Nawawi's Forty",
+ "creator": "Sharks, Lee",
+ "date": "2026-10-27",
+ "description": "One seat on the originals shelf, 14 collections and 675,049 lines of Arabic: the hadith, the reports of what the Prophet Muhammad said and did, which with the Qur'an (seated since EA-CORPORA-02/08) are the sources of Islamic law and practice. The nine books Sunni scholarship calls al-Kutub al-Tis'a (the Muwatta of Malik, the Musnad of Ahmad ibn Hanbal, the Sunan of al-Darimi, the Sahihs of al-Bukhari and Muslim, and the Sunans of Ibn Majah, Abu Dawud, al-Tirmidhi and al-Nasa'i); the four books of the Imami Shi'i tradition, al-Kutub al-Arba'a (al-Kulayni's al-Kafi, Ibn Babawayh's Man la yahduruhu al-faqih, al-Tusi's Tahdhib al-ahkam and al-Istibsar); and al-Nawawi's Forty. Each is the version the Open Islamicate Texts Initiative (OpenITI) marks primary, pinned by commit, checked against its git blob, with the printed edition its header names and its OpenITI version record. The texts are OpenITI's, under CC BY-NC-SA 4.0. What is not seated (the Sunan al-Kubra, the Sahihs of Ibn Khuzayma and Ibn Hibban, the Mustadrak, al-Bayhaqi, the Zaydi and Ibadi musnads, translations) is named.",
+ "content_type": "Dataset",
+ "license": "CC-BY-4.0",
+ "substrate": "Human–machine collaborative. Sources located, fetched, checked against their git blob ids and against their headers, assembled into a seat, hashed and indexed, and every locus found in the seated text, all in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction. The request, the hadith supplementary to the Qur'an as an EA-CORPORA seating, is Lee Sharks's; the witness and the scope were chosen in session and are reported in the seat record. CC-BY-4.0 applies to this record and the seat record; the payload carries its own licence, CC BY-NC-SA 4.0.",
+ "methodology": "Works located in OpenITI's text repositories on GitHub by OpenITI URI; for each, the version OpenITI marks PRIMARY_VERSION in its version record chosen. Text and version record fetched at the pinned commit and checked against the git blob id at that commit. Edition statements read from each file's #META# header and version record, with nothing asserted beyond them. Licence read from the KITAB project's FAQ and the Zenodo release record. Texts seated as published, in OpenITI mARkdown, each its own text layer. Every file hashed into the seat's MANIFEST.sha256; every verified locus is a string found in the seated text by rebuild/corpora/ea-corpora-23/seat.py; a locus not found is recorded as not found. The builder, the pins, the specification and this body are under rebuild/corpora/ea-corpora-23/.",
+ "falsification_conditions": "The seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a seated file's git blob id differs from the blob OpenITI's repository lists at the commit its source.json names; if an edition statement misstates the #META# header or version record of the file it describes; if a seated version is not the one OpenITI marks PRIMARY_VERSION at that commit; if a verified locus cannot be found in the seated text; if the licence statement is not what OpenITI publishes; or if the four surfaces (seat, index, deposit, shelf) disagree.",
+ "root_axn": "AXN:0729.DATASET",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "16595c6c5c1c4fb0ade1adbd16e50d8da64d7bc533b53d2343b94b05311d2f1b",
+ "clusters": [
+  "Elemental",
+  "Navigational",
+  "Navigational",
+  "Temporal",
+  "Navigational",
+  "Elemental"
+ ],
+ "axn_reading": "Force -> Search -> Search -> Duration -> Search -> Force",
+ "minted_at": "2026-10-27T04:42:29Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-0729-text.md",
+ "wiki_article": "EA-CORPORA-23 is the twenty-third seating of primary sources on the Crimson Hexagonal Archive's originals shelf, deposited by Lee Sharks on 27 October 2026. It seats the hadith, the reports of the sayings and acts of the Prophet Muhammad transmitted through chains of named narrators, in Arabic, as a supplement to the Qur'an, which the shelf has held since EA-CORPORA-02 (seat 02/08, the Tanzil Uthmani text). The seat, 23/01, holds fourteen collections in two canons. The Sunni canon is represented by the nine books known as al-Kutub al-Tis'a: the Muwatta of Malik ibn Anas, the Musnad of Ahmad ibn Hanbal, the Sunan of al-Darimi, the Sahih collections of al-Bukhari and Muslim, and the Sunan collections of Ibn Majah, Abu Dawud, al-Tirmidhi and al-Nasa'i. The Imami Shi'i canon is represented by its four books, al-Kutub al-Arba'a: al-Kulayni's al-Kafi, Ibn Babawayh's Man la yahduruhu al-faqih, and al-Tusi's Tahdhib al-ahkam and al-Istibsar. Al-Nawawi's Forty Hadith completes the seat. Each text is the version that the Open Islamicate Texts Initiative (OpenITI) marks as primary, fetched at a pinned commit and checked against its git blob identifier, and seated with its OpenITI version record and the printed edition its header names. The seat totals 675,049 lines, with fifteen loci, among them the hadith on intentions that opens Sahih al-Bukhari, located in the seated text. The digital texts are OpenITI's and carry its CC BY-NC-SA 4.0 licence; the record is CC BY 4.0. Collections held in OpenITI and not seated in this pass, including al-Nasa'i's al-Sunan al-Kubra, Ibn Khuzayma, Ibn Hibban, al-Hakim, al-Bayhaqi and the Zaydi and Ibadi musnads, are listed as queued.",
+ "wiki_status": "in-session",
+ "entities": [
+  {
+   "subject": "EA-CORPORA-23 — The Twenty-Third Seating: The Hadith in Arabic, the Nine Books, the Four Books of th",
+   "predicate": "created_by",
+   "object": "Sharks, Lee",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-CORPORA-23 — The Twenty-Third Seating: The Hadith in Arabic, the Nine Books, the Four Books of th",
+   "predicate": "is_type",
+   "object": "Dataset",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-CORPORA-23 — The Twenty-Third Seating: The Hadith in Arabic, the Nine Books, the Four Books of th",
+   "predicate": "belongs_to_family",
+   "object": "DATASET",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-CORPORA-23 — The Twenty-Third Seating: The Hadith in Arabic, the Nine Books, the Four Books of th",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [],
+ "orcid": "0009-0000-1599-0703",
+ "version": "v1.0",
+ "keywords": [
+  "corpus seating",
+  "primary sources",
+  "original language",
+  "Arabic",
+  "hadith",
+  "sunna",
+  "al-Kutub al-Tis'a",
+  "al-Kutub al-Sitta",
+  "al-Kutub al-Arba'a",
+  "Muwatta",
+  "Malik ibn Anas",
+  "Musnad",
+  "Ahmad ibn Hanbal",
+  "al-Darimi",
+  "Sahih al-Bukhari",
+  "al-Bukhari",
+  "Sahih Muslim",
+  "Muslim ibn al-Hajjaj",
+  "Sunan Ibn Majah",
+  "Sunan Abi Dawud",
+  "Jami' al-Tirmidhi",
+  "Sunan al-Nasa'i",
+  "al-Mujtaba",
+  "al-Kafi",
+  "al-Kulayni",
+  "Man la yahduruhu al-faqih",
+  "Ibn Babawayh",
+  "al-Shaykh al-Saduq",
+  "Tahdhib al-ahkam",
+  "al-Istibsar",
+  "al-Shaykh al-Tusi",
+  "Forty Hadith",
+  "al-Nawawi",
+  "Sunni",
+  "Imami Shi'i",
+  "Qur'an",
+  "OpenITI",
+  "KITAB",
+  "Training Layer Literature",
+  "originals shelf",
+  "EA-CORPORA"
+ ],
+ "related_identifiers_raw": "AXN deposit #1531 — EA-CORPORA-02: the seating that placed the Qur'an on the shelf (seat 02/08)\nAXN deposit #1700 — EA-CORPORA-22: the preceding seating, whose form this one follows\nAXN deposit #1580 — EA-CORPORA-12: the rule that seatings are periodically gathered\nSeat EA-CORPORA-02/08 (quran) — on the same shelf",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 0,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 16900,
+  "audited_at": "2026-10-27T04:42:29Z",
+  "audit_version": "mint-time-declaration"
+ },
+ "related_deposits": [
+  {
+   "deposit": 1531,
+   "relation": "EA-CORPORA-02, the seating that placed the Qur'an on the shelf (seat 02/08)"
+  },
+  {
+   "deposit": 1700,
+   "relation": "EA-CORPORA-22, the preceding seating, whose form this one follows"
+  },
+  {
+   "deposit": 1580,
+   "relation": "EA-CORPORA-12, the rule that seatings are periodically gathered"
+  }
+ ],
+ "references_concepts": [
+  "Lee Sharks",
+  "TACHYON",
+  "Training Layer",
+  "Training Layer Literature"
+ ],
+ "references_concept_count": 4,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "external_metadata_path": "/data/external-metadata/AXN-0729.json",
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-10-27T04:44:25.191865+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [
+     "date",
+     "authorial_position_phrase"
+    ],
+    "anchor_count": 2,
+    "orcid_in_body": false,
+    "creator_in_body": false,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "4f22f0000110bc0497aa769e7e15ab571bcc6bf2bc6d40c19bbdb0f6f3687027",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "concepts_attested_none": true,
+ "lexical_attested_none": true,
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1706/",
+  "self_url": "https://www.alexanarch.org/data/records/1706.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0729-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}
