@@ -291,7 +291,7 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
                 per = me.get('per')
                 rows = [f"<dt>Observation</dt><dd>{html.escape(str(o.get('surface') or ''))}, {html.escape(str(o.get('date') or ''))} &middot; <a href=\"{orl}\">the capture</a></dd>"]
                 if d_: rows.append(f"<dt>Description</dt><dd>{html.escape(_txt(d_, 900))}</dd>")
-                if an.get('reading'): rows.append(f"<dt>Reading</dt><dd>{html.escape(_txt(an['reading'], 1400))}</dd>")
+                if an.get('reading'): rows.append(f"<dt>Reading</dt><dd>{html.escape(_txt(an['reading'], 100000))}</dd>")
                 if an.get('analysis'): rows.append(f"<dt>Analysis</dt><dd>{html.escape(_txt(an['analysis'], 1400))}</dd>")
                 _orr = (an.get('notes') or {}).get('operator_reading') if isinstance(an.get('notes'), dict) else None
                 if isinstance(_orr, dict) and _orr.get('words'):
