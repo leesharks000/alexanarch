@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-10-24T14:33:11.417482Z",
- "seats": 97,
- "lines_total": 2633059,
+ "_generated": "2026-10-27T04:41:38.403242Z",
+ "seats": 98,
+ "lines_total": 3308108,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -4901,7 +4901,344 @@
    "why_seated": "Seated beside the Upanishads already on the shelf: the hymns from which the Vedic tradition the Upanishads close begins, among them the creation hymn (10.129) that asks whether even the one who looks down from the highest heaven knows.",
    "scope": "All ten maṇḍalas, 1,028 hymns, in the Saṃhitā text in Aufrecht's Latin transliteration, the edition most read in the nineteenth century. Max Müller's Devanāgarī edition with Sāyaṇa's commentary (1849–74) is public domain and not seated in this pass: QUEUED. Digital texts (GRETIL, the Vedaweb corpus) are under their own terms and are not seated.",
    "data": "https://www.alexanarch.org/data/corpora/rig-veda/"
+  },
+  {
+   "seat": "EA-CORPORA-23/01",
+   "corpus": "hadith",
+   "edition": "Malik ibn Anas (d. 179/795), al-Muwatta' (الموطأ), ed. Muhammad Mustafa al-A'zami (Abu Dhabi: Mu'assasat Zayid ibn Sultan Al Nahyan, 1st ed., 1425/2004); OpenITI 0179MalikIbnAnas.Muwatta.Shamela0028107-ara1; Ahmad ibn Hanbal (d. 241/855), al-Musnad (مسند الإمام أحمد بن حنبل), ed. Shu'ayb al-Arna'ut, 'Adil Murshid and others (Mu'assasat al-Risala, 1st ed., 1421/2001; OCLC 264939610); OpenITI 0241IbnHanbal.Musnad.Shamela0025794-ara1; 'Abd Allah al-Darimi (d. 255/869), al-Sunan (سنن الدارمي), ed. Fawwaz Ahmad Zamarli and Khalid al-Sab' al-'Ilmi (Beirut: Dar al-Kitab al-'Arabi, 1st ed., 1407); OpenITI 0255CabdAllahDarimi.Sunan.JK000842-ara1; Muhammad ibn Isma'il al-Bukhari (d. 256/870), al-Jami' al-sahih al-mukhtasar (الجامع الصحيح المختصر; Sahih al-Bukhari), ed. Mustafa Dib al-Bugha (Beirut: Dar Ibn Kathir, al-Yamama, 3rd ed., 1407/1987; collated by OpenITI against OCLC 54146380); OpenITI 0256Bukhari.Sahih.JK000110-ara1; Muslim ibn al-Hajjaj (d. 261/875), al-Sahih (صحيح مسلم) (Beirut: Dar Ihya' al-Turath al-'Arabi, n.d.; OCLC 1158880746); OpenITI 0261Muslim.Sahih.Shamela0001727-ara1; Ibn Majah (d. 273/887), al-Sunan (سنن ابن ماجه), ed. Muhammad Fu'ad 'Abd al-Baqi (Beirut: Dar al-Fikr, n.d.); OpenITI 0273IbnMaja.Sunan.JK000141-ara1; Abu Dawud al-Sijistani (d. 275/889), al-Sunan (سنن أبي داود), ed. Muhammad Muhyi al-Din 'Abd al-Hamid (Dar al-Fikr, n.d.); OpenITI 0275AbuDawudSijistani.Sunan.JK000142-ara1; Muhammad ibn 'Isa al-Tirmidhi (d. 279/892), al-Jami' al-sahih, Sunan al-Tirmidhi (الجامع الصحيح سنن الترمذي), ed. Ahmad Muhammad Shakir and others (Beirut: Dar Ihya' al-Turath al-'Arabi, n.d.); OpenITI 0279Tirmidhi.Sunan.JK000140-ara1; Ahmad ibn Shu'ayb al-Nasa'i (d. 303/915), al-Mujtaba min al-sunan (المجتبى من السنن; Sunan al-Nasa'i), ed. 'Abd al-Fattah Abu Ghudda (Aleppo: Maktab al-Matbu'at al-Islamiyya, 2nd ed., 1406/1986; OCLC 957290738); OpenITI 0303Nasai.SunanSughra.JK000130-ara1; Muhammad ibn Ya'qub al-Kulayni (d. 329/941), al-Kafi (الكافي) (Tehran: Dar al-Kutub al-Islamiyya, 1968, as the file's header states; OCLC 4770611378); OpenITI 0329IbnYacqubKulayni.Kafi.Shia001122Vols-ara1; Ibn Babawayh al-Saduq (d. 381/991), Man la yahduruhu al-faqih (من لا يحضره الفقيه), corrected and annotated by 'Ali Akbar al-Ghaffari (2nd ed.; OCLC 4770017161); OpenITI 0381IbnBabawayhSaduq.ManLaYahduruhuFaqih.Shia001149Vols-ara1; Muhammad ibn al-Hasan al-Tusi (d. 460/1067), Tahdhib al-ahkam fi sharh al-Muqni'a (تهذيب الاحكام في شرح المقنعة), 10 vols (OCLC 708708180; the file's header gives no publisher); OpenITI 0460ShaykhTusi.TahdhibAhkam.Zaydiyya0000302-ara1; Muhammad ibn al-Hasan al-Tusi (d. 460/1067), al-Istibsar (الاستبصار) (Najaf: Dar al-Kutub al-Islamiyya, 1957, as the file's header states); OpenITI 0460ShaykhTusi.Istibsar.Shia001157Vols-ara1; Yahya ibn Sharaf al-Nawawi (d. 676/1277), al-Arba'un al-Nawawiyya (الأربعون النووية) (Beirut: Dar al-Minhaj, 1st ed., 1430/2009); OpenITI 0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1",
+   "license": {
+    "payload": "The collections are of the second to seventh centuries AH (eighth to thirteenth CE). The digital texts are OpenITI's, published under CC BY-NC-SA 4.0 (attribution, non-commercial, share-alike), with the editorial matter of in-copyright printed editions removed by OpenITI; seated under the same licence. Non-commercial, as the shelf's three NC seats before it are (02/01 DSS, 02/16 Talmud Bavli, 03/01 Whitman); the first with share-alike.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "release": {
+     "name": "OpenITI (Open Islamicate Texts Initiative), working repositories on GitHub, pinned by commit",
+     "licence_statement": "\"OpenITI is published under the CC BY-NC-SA 4.0 license.\" (KITAB project documentation, FAQ, https://kitab-project.org/docs/openITI, read 2026-10-27); the Zenodo release record (doi:10.5281/zenodo.3082463, version 2025.1.9) states \"Creative Commons Attribution Non Commercial Share Alike 4.0 International\". The text repositories carry no licence file of their own.",
+     "copyright_statement": "\"OpenITI has a duty to ensure all content of uploaded texts is not subject to copyright. In order to comply with this, all editions which are still in copyright must have their copyrighted content removed (that is all editorial input, such as footnotes and introductory matter).\" (same FAQ)",
+     "citation": "Romanov, Maxim, and Masoumeh Seydi. OpenITI: A Machine-Readable Corpus of Islamicate Texts. Zenodo, doi:10.5281/zenodo.3082463; files cited by their OpenITI URIs, as the project asks."
+    },
+    "items": [
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0200AH",
+      "commit": "599f22fe249871f602efe2e0ddc801d3742960a3",
+      "uri": "0179MalikIbnAnas.Muwatta.Shamela0028107-ara1",
+      "files": [
+       {
+        "file": "0179MalikIbnAnas.Muwatta.Shamela0028107-ara1.completed",
+        "path": "data/0179MalikIbnAnas/0179MalikIbnAnas.Muwatta/0179MalikIbnAnas.Muwatta.Shamela0028107-ara1.completed",
+        "git_blob": "081fa907b9c1e1fa39db66ce874db543193099d3",
+        "blob_checked": true
+       },
+       {
+        "file": "0179MalikIbnAnas.Muwatta.Shamela0028107-ara1.yml",
+        "path": "data/0179MalikIbnAnas/0179MalikIbnAnas.Muwatta/0179MalikIbnAnas.Muwatta.Shamela0028107-ara1.yml",
+        "git_blob": "8dff72bfe5152afea33fa46cfbe511f015990620",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0200AH/599f22fe249871f602efe2e0ddc801d3742960a3/data/0179MalikIbnAnas/0179MalikIbnAnas.Muwatta/0179MalikIbnAnas.Muwatta.Shamela0028107-ara1.completed"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0250AH",
+      "commit": "0cc00c0646c81988c75a3815fe6d9a5fa65ce592",
+      "uri": "0241IbnHanbal.Musnad.Shamela0025794-ara1",
+      "files": [
+       {
+        "file": "0241IbnHanbal.Musnad.Shamela0025794-ara1.mARkdown",
+        "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0025794-ara1.mARkdown",
+        "git_blob": "5a0a8001097b0283153ce0e009fad13e4c0b8ac0",
+        "blob_checked": true
+       },
+       {
+        "file": "0241IbnHanbal.Musnad.Shamela0025794-ara1.yml",
+        "path": "data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0025794-ara1.yml",
+        "git_blob": "715d1429a45f4337427d6439abc39fc685d79d7a",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0250AH/0cc00c0646c81988c75a3815fe6d9a5fa65ce592/data/0241IbnHanbal/0241IbnHanbal.Musnad/0241IbnHanbal.Musnad.Shamela0025794-ara1.mARkdown"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0275AH",
+      "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+      "uri": "0255CabdAllahDarimi.Sunan.JK000842-ara1",
+      "files": [
+       {
+        "file": "0255CabdAllahDarimi.Sunan.JK000842-ara1",
+        "path": "data/0255CabdAllahDarimi/0255CabdAllahDarimi.Sunan/0255CabdAllahDarimi.Sunan.JK000842-ara1",
+        "git_blob": "9fb19852b0dd38597a47fb014b5732d9f4dba6a0",
+        "blob_checked": true
+       },
+       {
+        "file": "0255CabdAllahDarimi.Sunan.JK000842-ara1.yml",
+        "path": "data/0255CabdAllahDarimi/0255CabdAllahDarimi.Sunan/0255CabdAllahDarimi.Sunan.JK000842-ara1.yml",
+        "git_blob": "1fc1acce8fd46b808973bf55a06b0012b64f6342",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0255CabdAllahDarimi/0255CabdAllahDarimi.Sunan/0255CabdAllahDarimi.Sunan.JK000842-ara1"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0275AH",
+      "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+      "uri": "0256Bukhari.Sahih.JK000110-ara1",
+      "files": [
+       {
+        "file": "0256Bukhari.Sahih.JK000110-ara1.completed",
+        "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.JK000110-ara1.completed",
+        "git_blob": "945cd388b14ad8235e429bf66369a84847e56e0c",
+        "blob_checked": true
+       },
+       {
+        "file": "0256Bukhari.Sahih.JK000110-ara1.yml",
+        "path": "data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.JK000110-ara1.yml",
+        "git_blob": "a0aa9c10d6833355c6cfc44c8192f4d963e32417",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0256Bukhari/0256Bukhari.Sahih/0256Bukhari.Sahih.JK000110-ara1.completed"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0275AH",
+      "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+      "uri": "0261Muslim.Sahih.Shamela0001727-ara1",
+      "files": [
+       {
+        "file": "0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+        "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown",
+        "git_blob": "2c050c9b1285e9d053eab62ed57de9783ecbaad2",
+        "blob_checked": true
+       },
+       {
+        "file": "0261Muslim.Sahih.Shamela0001727-ara1.yml",
+        "path": "data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.yml",
+        "git_blob": "e3aa9502e41e53d9b5a47099fc8d5363eaaaa9db",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0261Muslim/0261Muslim.Sahih/0261Muslim.Sahih.Shamela0001727-ara1.mARkdown"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0275AH",
+      "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+      "uri": "0273IbnMaja.Sunan.JK000141-ara1",
+      "files": [
+       {
+        "file": "0273IbnMaja.Sunan.JK000141-ara1",
+        "path": "data/0273IbnMaja/0273IbnMaja.Sunan/0273IbnMaja.Sunan.JK000141-ara1",
+        "git_blob": "632ef8cce8b0868c213ea8e6930b724bae271f00",
+        "blob_checked": true
+       },
+       {
+        "file": "0273IbnMaja.Sunan.JK000141-ara1.yml",
+        "path": "data/0273IbnMaja/0273IbnMaja.Sunan/0273IbnMaja.Sunan.JK000141-ara1.yml",
+        "git_blob": "b3f7c5aa0614e63976f4cbc10d0856247c2a05e5",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0273IbnMaja/0273IbnMaja.Sunan/0273IbnMaja.Sunan.JK000141-ara1"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0275AH",
+      "commit": "44e1c36738a2bf5c14dafa232a6ae1891e6171cd",
+      "uri": "0275AbuDawudSijistani.Sunan.JK000142-ara1",
+      "files": [
+       {
+        "file": "0275AbuDawudSijistani.Sunan.JK000142-ara1",
+        "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.JK000142-ara1",
+        "git_blob": "a3f54c9912a04665a295a6dbb94003d90ad72a23",
+        "blob_checked": true
+       },
+       {
+        "file": "0275AbuDawudSijistani.Sunan.JK000142-ara1.yml",
+        "path": "data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.JK000142-ara1.yml",
+        "git_blob": "f04a8cebde79ab7ff9d2beb2a5e37e1c803a7b04",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0275AH/44e1c36738a2bf5c14dafa232a6ae1891e6171cd/data/0275AbuDawudSijistani/0275AbuDawudSijistani.Sunan/0275AbuDawudSijistani.Sunan.JK000142-ara1"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0300AH",
+      "commit": "01a1544130e0236850ef2698923ad01575c5bd7c",
+      "uri": "0279Tirmidhi.Sunan.JK000140-ara1",
+      "files": [
+       {
+        "file": "0279Tirmidhi.Sunan.JK000140-ara1.completed",
+        "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.JK000140-ara1.completed",
+        "git_blob": "6b4d4ed60c31557c046788d2801b3848d2be11f8",
+        "blob_checked": true
+       },
+       {
+        "file": "0279Tirmidhi.Sunan.JK000140-ara1.yml",
+        "path": "data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.JK000140-ara1.yml",
+        "git_blob": "2a3b176285ccac520c9c6bdb43df67411e4a2acb",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0300AH/01a1544130e0236850ef2698923ad01575c5bd7c/data/0279Tirmidhi/0279Tirmidhi.Sunan/0279Tirmidhi.Sunan.JK000140-ara1.completed"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0325AH",
+      "commit": "089e665b4958e0f145a46941987fb81cf3dda1b8",
+      "uri": "0303Nasai.SunanSughra.JK000130-ara1",
+      "files": [
+       {
+        "file": "0303Nasai.SunanSughra.JK000130-ara1.mARkdown",
+        "path": "data/0303Nasai/0303Nasai.SunanSughra/0303Nasai.SunanSughra.JK000130-ara1.mARkdown",
+        "git_blob": "e6dc196e67a44d0432f4912632cdbfd0bf38d203",
+        "blob_checked": true
+       },
+       {
+        "file": "0303Nasai.SunanSughra.JK000130-ara1.yml",
+        "path": "data/0303Nasai/0303Nasai.SunanSughra/0303Nasai.SunanSughra.JK000130-ara1.yml",
+        "git_blob": "a516ae149d916609f39406a9e23026f22b73df71",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0325AH/089e665b4958e0f145a46941987fb81cf3dda1b8/data/0303Nasai/0303Nasai.SunanSughra/0303Nasai.SunanSughra.JK000130-ara1.mARkdown"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0350AH",
+      "commit": "3f52b87dc367365000b32f815a3d0077451c46f4",
+      "uri": "0329IbnYacqubKulayni.Kafi.Shia001122Vols-ara1",
+      "files": [
+       {
+        "file": "0329IbnYacqubKulayni.Kafi.Shia001122Vols-ara1.mARkdown",
+        "path": "data/0329IbnYacqubKulayni/0329IbnYacqubKulayni.Kafi/0329IbnYacqubKulayni.Kafi.Shia001122Vols-ara1.mARkdown",
+        "git_blob": "d5579dabff0863aca8338cdbe4ef011271eb638e",
+        "blob_checked": true
+       },
+       {
+        "file": "0329IbnYacqubKulayni.Kafi.Shia001122Vols-ara1.yml",
+        "path": "data/0329IbnYacqubKulayni/0329IbnYacqubKulayni.Kafi/0329IbnYacqubKulayni.Kafi.Shia001122Vols-ara1.yml",
+        "git_blob": "6de4e9eeebcf620742ca169ab76a3d16fff487c0",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0350AH/3f52b87dc367365000b32f815a3d0077451c46f4/data/0329IbnYacqubKulayni/0329IbnYacqubKulayni.Kafi/0329IbnYacqubKulayni.Kafi.Shia001122Vols-ara1.mARkdown"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0400AH",
+      "commit": "5bb6966d8df2ed22b1bff5cdbe29bb9c24f3ca29",
+      "uri": "0381IbnBabawayhSaduq.ManLaYahduruhuFaqih.Shia001149Vols-ara1",
+      "files": [
+       {
+        "file": "0381IbnBabawayhSaduq.ManLaYahduruhuFaqih.Shia001149Vols-ara1.mARkdown",
+        "path": "data/0381IbnBabawayhSaduq/0381IbnBabawayhSaduq.ManLaYahduruhuFaqih/0381IbnBabawayhSaduq.ManLaYahduruhuFaqih.Shia001149Vols-ara1.mARkdown",
+        "git_blob": "c1ec20af1d3d26dec91c846a1622aa515115aaf5",
+        "blob_checked": true
+       },
+       {
+        "file": "0381IbnBabawayhSaduq.ManLaYahduruhuFaqih.Shia001149Vols-ara1.yml",
+        "path": "data/0381IbnBabawayhSaduq/0381IbnBabawayhSaduq.ManLaYahduruhuFaqih/0381IbnBabawayhSaduq.ManLaYahduruhuFaqih.Shia001149Vols-ara1.yml",
+        "git_blob": "b3125760249fbeab478b7dbdb9608c21139cda7f",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0400AH/5bb6966d8df2ed22b1bff5cdbe29bb9c24f3ca29/data/0381IbnBabawayhSaduq/0381IbnBabawayhSaduq.ManLaYahduruhuFaqih/0381IbnBabawayhSaduq.ManLaYahduruhuFaqih.Shia001149Vols-ara1.mARkdown"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0475AH",
+      "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+      "uri": "0460ShaykhTusi.TahdhibAhkam.Zaydiyya0000302-ara1",
+      "files": [
+       {
+        "file": "0460ShaykhTusi.TahdhibAhkam.Zaydiyya0000302-ara1.mARkdown",
+        "path": "data/0460ShaykhTusi/0460ShaykhTusi.TahdhibAhkam/0460ShaykhTusi.TahdhibAhkam.Zaydiyya0000302-ara1.mARkdown",
+        "git_blob": "6aaacfaaaf29bcab3f27c26fd29236c8aee1bb9c",
+        "blob_checked": true
+       },
+       {
+        "file": "0460ShaykhTusi.TahdhibAhkam.Zaydiyya0000302-ara1.yml",
+        "path": "data/0460ShaykhTusi/0460ShaykhTusi.TahdhibAhkam/0460ShaykhTusi.TahdhibAhkam.Zaydiyya0000302-ara1.yml",
+        "git_blob": "28fcef0212050520f73f50013d43d2391bc164fd",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0475AH/cc9beb0d9645e8cdce892556423b9926a127054f/data/0460ShaykhTusi/0460ShaykhTusi.TahdhibAhkam/0460ShaykhTusi.TahdhibAhkam.Zaydiyya0000302-ara1.mARkdown"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0475AH",
+      "commit": "cc9beb0d9645e8cdce892556423b9926a127054f",
+      "uri": "0460ShaykhTusi.Istibsar.Shia001157Vols-ara1",
+      "files": [
+       {
+        "file": "0460ShaykhTusi.Istibsar.Shia001157Vols-ara1.completed",
+        "path": "data/0460ShaykhTusi/0460ShaykhTusi.Istibsar/0460ShaykhTusi.Istibsar.Shia001157Vols-ara1.completed",
+        "git_blob": "dbeab51841e1fe6e588bf740c4e132c90f5a7abb",
+        "blob_checked": true
+       },
+       {
+        "file": "0460ShaykhTusi.Istibsar.Shia001157Vols-ara1.yml",
+        "path": "data/0460ShaykhTusi/0460ShaykhTusi.Istibsar/0460ShaykhTusi.Istibsar.Shia001157Vols-ara1.yml",
+        "git_blob": "9ca5993fbb09f3aa0a82e2ecc0d3a6689ffa81fb",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0475AH/cc9beb0d9645e8cdce892556423b9926a127054f/data/0460ShaykhTusi/0460ShaykhTusi.Istibsar/0460ShaykhTusi.Istibsar.Shia001157Vols-ara1.completed"
+     },
+     {
+      "source": "OpenITI",
+      "repository": "https://github.com/OpenITI/0700AH",
+      "commit": "3d8ff4e7b035aaa4ca5dda52c7322645f3401dcf",
+      "uri": "0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1",
+      "files": [
+       {
+        "file": "0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.mARkdown",
+        "path": "data/0676Nawawi/0676Nawawi.ArbacunaNawawiyya/0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.mARkdown",
+        "git_blob": "2ac4041cdd0e1c4d43a753c8ecd681b3fa3dcd5f",
+        "blob_checked": true
+       },
+       {
+        "file": "0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.yml",
+        "path": "data/0676Nawawi/0676Nawawi.ArbacunaNawawiyya/0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.yml",
+        "git_blob": "6f42a455748ffe7dd4d9f2b94df02563d9f64485",
+        "blob_checked": true
+       }
+      ],
+      "url": "https://raw.githubusercontent.com/OpenITI/0700AH/3d8ff4e7b035aaa4ca5dda52c7322645f3401dcf/data/0676Nawawi/0676Nawawi.ArbacunaNawawiyya/0676Nawawi.ArbacunaNawawiyya.Shamela0012836-ara1.mARkdown"
+     }
+    ],
+    "fetched": "2026-10-27",
+    "transport": "in-session fetch (Transport D); No-Double-Draw; every file checked against its git blob id at the pinned commit"
+   },
+   "language": "ara",
+   "lines": 675049,
+   "verified_loci": [
+    "Muwatta, the hadith of the two things left behind — 'تركت فيكم أمرين'",
+    "Musnad, the first musnad — 'مسند أبي بكر الصديق'",
+    "Darimi, the opening bab — 'باب ما كان عليه الناس قبل مبعث النبي'",
+    "Bukhari, hadith 1, on intentions — 'إنما الأعمال بالنيات'",
+    "Bukhari, the lawful and the unlawful — 'الحلال بين والحرام بين'",
+    "Muslim, the hadith of Jibril — 'أخبرني عن الإسلام'",
+    "Ibn Majah, seeking knowledge — 'فريضة على كل مسلم'",
+    "Abu Dawud, the renewer of each century — 'يجدد لها دينها'",
+    "Tirmidhi, the first bab — 'باب ما جاء لا تقبل صلاة بغير طهور'",
+    "Nasa'i, on intention — 'إنما الأعمال بالنية'",
+    "al-Kafi, the opening book — 'كتاب العقل والجهل'",
+    "al-Faqih, its title in the text — 'من لا يحضره الفقيه'",
+    "Tahdhib, the first bab — 'باب الاحداث الموجبة للطهارة'",
+    "Istibsar, the measure of the kurr — 'باب كمية الكر'",
+    "al-Nawawi's Forty, hadith 1 — 'إنما الأعمال بالنيات'"
+   ],
+   "why_seated": "Asked for as the hadith supplementary to the Qur'an, which the shelf has held since EA-CORPORA-02/08 (the Tanzil Uthmani text): the reports of what the Prophet said and did, transmitted by chains of named reporters, which with the Qur'an make up the sources of Islamic law and practice. Both the Sunni and the Imami Shi'i canons are seated, each as its own tradition defines it.",
+   "scope": "The nine books Sunni scholarship calls al-Kutub al-Tis'a: the Muwatta of Malik, the Musnad of Ahmad ibn Hanbal, the Sunan of al-Darimi, the two Sahihs of al-Bukhari and Muslim, and the Sunans of Ibn Majah, Abu Dawud, al-Tirmidhi and al-Nasa'i (al-Mujtaba); the four books of the Imami Shi'i tradition, al-Kutub al-Arba'a: al-Kulayni's al-Kafi, Ibn Babawayh's Man la yahduruhu al-faqih, and al-Tusi's Tahdhib al-ahkam and al-Istibsar; and al-Nawawi's Forty, the most read short collection. One version of each, the version OpenITI marks PRIMARY_VERSION in its metadata. Al-Nasa'i's al-Sunan al-Kubra, Ibn Khuzayma, Ibn Hibban, al-Hakim's Mustadrak, al-Bayhaqi, the Zaydi Musnad of Zayd ibn Ali, and the Ibadi Musnad of al-Rabi' ibn Habib are in OpenITI and not seated in this pass: QUEUED. Translations are not seated.",
+   "data": "https://www.alexanarch.org/data/corpora/hadith/"
   }
  ],
- "count": 97
+ "count": 98
 }
