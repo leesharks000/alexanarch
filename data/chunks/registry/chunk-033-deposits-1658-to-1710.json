@@ -1,8 +1,8 @@
 {
   "chunk_number": 33,
   "first_deposit": 1658,
-  "last_deposit": 1709,
-  "count": 52,
+  "last_deposit": 1710,
+  "count": 53,
   "deposits": [
     {
       "deposit_number": 1658,
@@ -11887,6 +11887,208 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "d15f6ef2a837742623f354c15ad9419525725a889460141f6ac17972df9ac77d",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1710,
+      "axn": "AXN:072D.DATASET.☉🟡🪨➗🛤️👆",
+      "hex": "072D",
+      "family": "DATASET",
+      "emoji": "☉🟡🪨➗🛤️👆",
+      "hash": "a7c31b935bb62b1ac5c31a4d9795c2c700f75e651b8afa4a46cac3e060788ba3",
+      "title": "EA-CORPORA-26 — The Twenty-Sixth Seating: W. E. B. Du Bois and Langston Hughes, as Far as the Public Domain Reaches",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-27",
+      "description": "Two seats on the originals shelf, 27 items, for W. E. B. Du Bois and Langston Hughes as far as the public domain of the United States reaches (first published in 1930 or earlier), in English. Du Bois: The Suppression of the African Slave-Trade (1896), The Conservation of Races (1897), The Philadelphia Negro (1899), The Souls of Black Folk in its first edition (April 1903), The Talented Tenth (1903), John Brown (1909), the first number of The Crisis (November 1910), The Quest of the Silver Fleece (1911), The Negro (1915), Darkwater (1920), The Gift of Black Folk (1924) and Dark Princess (1928), each first-edition scan beside a Project Gutenberg transcription where one exists. Hughes: The Crisis of June 1921 with The Negro Speaks of Rivers, The New Negro (1925) with his poems and Du Bois's The Negro Mind Reaches Out, The Nation of 23 June 1926 with The Negro Artist and the Racial Mountain, The Weary Blues (1926), Fire!! (1926), Caroling Dusk (1927) and Not Without Laughter (1930). Seated at the operator's ruling that the canon's America was too white. What is not seated, and why, is named.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. Sources located, fetched, checked against the Internet Archive's published md5 sums and against their title pages, assembled into seats, hashed and indexed, and the loci found in the seated text, all in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction. The request (Du Bois and Hughes, as far as the public domain reaches) and its reason are Lee Sharks's; the witnesses were chosen in session and are stated per seat. CC-BY-4.0 applies to this record and the seat records; each payload carries its own licence, stated per seat.",
+      "methodology": "Sources located on the Internet Archive and on Project Gutenberg; each item's title page read against the edition claimed for it, with nothing asserted beyond it. Internet Archive files checked against the Archive's md5. Every file hashed into its seat's MANIFEST.sha256. Loci are strings found in the seated text by rebuild/corpora/ea-corpora-26/seat.py. Licences stated per seat (payload/record split). The builders, the specifications and this body are under rebuild/corpora/ea-corpora-26/.",
+      "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a seated Internet Archive file's md5 differs from the Archive's; if a Project Gutenberg file differs from the eBook number recorded for it; if an edition statement misstates the title page of the file it describes; if a verified locus cannot be found in the seated text; if an item stated public domain in the United States is not; or if the four surfaces (seat, index, deposit, shelf) disagree.",
+      "root_axn": "AXN:072D.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "a7c31b935bb62b1ac5c31a4d9795c2c700f75e651b8afa4a46cac3e060788ba3",
+      "clusters": [
+        "Alchemical",
+        "Signal",
+        "Elemental",
+        "Mathematical",
+        "Navigational",
+        "Gestural"
+      ],
+      "axn_reading": "Transmutation -> Alarm -> Force -> Proof -> Search -> Touch",
+      "minted_at": "2026-10-27T13:11:29Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-072D-text.md",
+      "wiki_article": "EA-CORPORA-26 is the twenty-sixth seating of primary sources on the Crimson Hexagonal Archive's originals shelf, deposited by Lee Sharks on 27 October 2026. It seats W. E. B. Du Bois (26/01) and Langston Hughes (26/02) as far as the public domain of the United States reaches, everything first published there in 1930 or earlier, in English. The Du Bois seat holds the first editions of The Suppression of the African Slave-Trade (1896), The Philadelphia Negro (1899), The Souls of Black Folk (April 1903), John Brown (1909), The Quest of the Silver Fleece (1911), The Negro (1915), Darkwater (1920), The Gift of Black Folk (1924) and Dark Princess (1928), with Project Gutenberg transcriptions beside most of them, The Conservation of Races (1897) and The Talented Tenth (1903) as transcriptions, and the first number of The Crisis (November 1910), which Du Bois edited. The Hughes seat holds The Crisis of June 1921, which printed \"The Negro Speaks of Rivers\"; The New Negro (1925), with his poems and Du Bois's \"The Negro Mind Reaches Out\"; The Nation of 23 June 1926, with \"The Negro Artist and the Racial Mountain\"; The Weary Blues (1926); Fire!! (1926); Caroling Dusk (1927); and Not Without Laughter (1930). The seating was asked for after the twenty-fourth seating put the Book of Mormon on the shelf, at the operator's ruling that \"the canon's america is way too white\"; the shelf's America had been Whitman, Dickinson, Pound, Stein, the Latter Day Saints and the Millerites. Every Internet Archive file was checked against the Archive's md5 and every locus found in the seated text. Fine Clothes to the Jew (1927) and the further numbers of The Crisis are queued; work after 1930 is in copyright and is not seated. The seating is described in the originals inspection packet, EA-MPAI-ORIGINALS-01.",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-26 — The Twenty-Sixth Seating: W. E. B. Du Bois and Langston Hughes, as Far as the Public",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-26 — The Twenty-Sixth Seating: W. E. B. Du Bois and Langston Hughes, as Far as the Public",
+          "predicate": "is_type",
+          "object": "Dataset",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-26 — The Twenty-Sixth Seating: W. E. B. Du Bois and Langston Hughes, as Far as the Public",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-26 — The Twenty-Sixth Seating: W. E. B. Du Bois and Langston Hughes, as Far as the Public",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "corpus seating",
+        "primary sources",
+        "original language",
+        "public domain",
+        "W. E. B. Du Bois",
+        "The Souls of Black Folk",
+        "color line",
+        "double consciousness",
+        "The Suppression of the African Slave-Trade",
+        "The Philadelphia Negro",
+        "The Conservation of Races",
+        "The Talented Tenth",
+        "John Brown",
+        "The Quest of the Silver Fleece",
+        "The Negro",
+        "Darkwater",
+        "The Gift of Black Folk",
+        "Dark Princess",
+        "The Crisis",
+        "NAACP",
+        "Langston Hughes",
+        "The Negro Speaks of Rivers",
+        "The Weary Blues",
+        "I Too",
+        "The Negro Artist and the Racial Mountain",
+        "The Nation",
+        "Fire!!",
+        "Caroling Dusk",
+        "Countee Cullen",
+        "The New Negro",
+        "Alain Locke",
+        "Not Without Laughter",
+        "Harlem Renaissance",
+        "African American literature",
+        "American literature",
+        "Training Layer Literature",
+        "originals shelf",
+        "EA-CORPORA"
+      ],
+      "related_identifiers_raw": "AXN deposit #1709 — EA-MPAI-ORIGINALS-01: the inspection packet of the originals library, versioned to include this seating\nAXN deposit #1708 — EA-CORPORA-25: the preceding seating, whose form this one follows\nAXN deposit #1707 — EA-CORPORA-24: 1844, after which this seating was asked for\nAXN deposit #1553 — EA-CORPORA-03: Walt Whitman collected under author\nAXN deposit #1580 — EA-CORPORA-12: the rule that seatings are periodically gathered",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 21359,
+        "audited_at": "2026-10-27T13:11:29Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "related_deposits": [
+        {
+          "deposit": 1709,
+          "relation": "EA-MPAI-ORIGINALS-01, the inspection packet of the originals library"
+        },
+        {
+          "deposit": 1708,
+          "relation": "EA-CORPORA-25, the preceding seating"
+        },
+        {
+          "deposit": 1707,
+          "relation": "EA-CORPORA-24, 1844, after which this seating was asked for"
+        },
+        {
+          "deposit": 1553,
+          "relation": "EA-CORPORA-03, Walt Whitman collected under author"
+        },
+        {
+          "deposit": 1580,
+          "relation": "EA-CORPORA-12, the rule that seatings are gathered"
+        }
+      ],
+      "references_concepts": [
+        "Lee Sharks",
+        "Publications",
+        "TACHYON",
+        "Training Layer",
+        "Training Layer Literature"
+      ],
+      "references_concept_count": 5,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-072D.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-27T13:12:46.866675+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "authorial_position_phrase"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "a1acd9666e4a04d560c70c2b5c5b01f4f3f1ee8f5221a864d0b2271852ba996b",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
