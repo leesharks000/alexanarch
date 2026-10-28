@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-28T18:13:22Z",
+  "regenerated_at": "2026-10-28T19:15:38Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "1da02f5f690c4bef6a5b641bc6fe226d4d1170eed22162daa2f120b1d839f054",
+    "mm-main-capture": "b252dab9018b6fec7c7347c8da5b1bd7002ed5aea8544ed3adba257ded96d66f",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2513,
-  "total_observations": 1040,
+  "total_addresses": 2516,
+  "total_observations": 1043,
   "class_counts": {
     "subjunctive": 1740,
-    "observed_address": 756,
+    "observed_address": 759,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1633,
+    "unmatched": 1636,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -469,6 +469,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "FAIR_TREATMENT"
+    },
+    "\"belief & technique for telepathic prose\"": {
+      "canonical_query": "\"belief & technique for telepathic prose\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-28",
+          "status": "'\"BELIEF & TECHNIQUE FOR TELEPATHIC PROSE\"' QUOTED — THE WORK HELD UNDER KEROUAC'S FRAME, COMPOSED FROM THE ARCHIVE'S RECORD OF EARLIER MACHINE READINGS, THE FORUM VENUE MADE ITS GENRE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Works",
+          "slug": "btp-exact-aio-20261028",
+          "gallery_url": "https://www.alexanarch.org/captures/#btp-exact-aio-20261028",
+          "record_url": "https://www.alexanarch.org/captures/btp-exact-aio-20261028/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#btp-exact-aio-20261028",
+          "details_excerpt": "\"BELIEF & TECHNIQUE FOR TELEPATHIC PROSE\" IN QUOTES ON GOOGLE AI OVERVIEW, SIGNED OUT: a satirical manifesto co-credited to Lee Sharks and Jack Feist, 'parodying Jack Kerouac's famous \"Belief & Technique for Modern Prose"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Belief & Technique for Telepathic Prose (Lee Sharks & Jack Feist), Pearl and Other Poems (New Human Press, 2014) pp. 23–28, #1121; first posted on Mind Control Poems, 1 December 2014. Recorded 2026-10-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-28",
+      "latest_status": "'\"BELIEF & TECHNIQUE FOR TELEPATHIC PROSE\"' QUOTED — THE WORK HELD UNDER KEROUAC'S FRAME, COMPOSED FROM THE ARCHIVE'S RECORD OF EARLIER MACHINE READINGS, THE FORUM VENUE MADE ITS GENRE"
     },
     "\"binding step\"": {
       "canonical_query": "\"binding step\"",
@@ -14704,6 +14739,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "belief & technique for telepathic prose": {
+      "canonical_query": "belief & technique for telepathic prose",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-28",
+          "status": "'BELIEF & TECHNIQUE FOR TELEPATHIC PROSE' UNQUOTED — KEROUAC'S LIST COMPOSED IN ITS PLACE; 'TELEPATHIC' MISSING FROM THE RESULTS EXCEPT IN KEROUAC'S OWN ESSENTIALS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Works",
+          "slug": "btp-aio-20261028",
+          "gallery_url": "https://www.alexanarch.org/captures/#btp-aio-20261028",
+          "record_url": "https://www.alexanarch.org/captures/btp-aio-20261028/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#btp-aio-20261028",
+          "details_excerpt": "BELIEF & TECHNIQUE FOR TELEPATHIC PROSE, UNQUOTED, ON GOOGLE AI OVERVIEW, SIGNED OUT: the Overview answers Kerouac's Belief & Technique for Modern Prose, 'a jazz-influenced method of spontaneous writing designed to bypas"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Belief & Technique for Telepathic Prose (Lee Sharks & Jack Feist), Pearl and Other Poems (New Human Press, 2014) pp. 23–28, #1121; first posted on Mind Control Poems, 1 December 2014. Recorded 2026-10-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-28",
+      "latest_status": "'BELIEF & TECHNIQUE FOR TELEPATHIC PROSE' UNQUOTED — KEROUAC'S LIST COMPOSED IN ITS PLACE; 'TELEPATHIC' MISSING FROM THE RESULTS EXCEPT IN KEROUAC'S OWN ESSENTIALS"
     },
     "biblical studies": {
       "canonical_query": "biblical studies",
@@ -44176,6 +44246,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-14",
       "latest_status": "CAPTURE"
+    },
+    "offer a detailed, structurally and aesthetically developed reading of jack feist's belief and technique for telepathic prose, then explore the later archive from the frame.": {
+      "canonical_query": "offer a detailed, structurally and aesthetically developed reading of jack feist's belief and technique for telepathic prose, then explore the later archive from the frame.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-28",
+          "status": "'JACK FEIST'S BELIEF AND TECHNIQUE FOR TELEPATHIC PROSE' ON CHATGPT — FOUND AND READ, THEN UNFOUND: THE SECOND TURN READS KEROUAC'S LIST IN ITS PLACE",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Works",
+          "slug": "btp-feist-reading-chatgpt-20261028",
+          "gallery_url": "https://www.alexanarch.org/captures/#btp-feist-reading-chatgpt-20261028",
+          "record_url": "https://www.alexanarch.org/captures/btp-feist-reading-chatgpt-20261028/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#btp-feist-reading-chatgpt-20261028",
+          "details_excerpt": "JACK FEIST'S BELIEF AND TECHNIQUE FOR TELEPATHIC PROSE ON CHATGPT, SIGNED OUT: the first turn finds the text on Hello Poetry, credited to Lee Sharks and Jack Feist, quotes its first item exactly and reads it at grain (te"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Belief & Technique for Telepathic Prose (Lee Sharks & Jack Feist), Pearl and Other Poems (New Human Press, 2014) pp. 23–28, #1121; first posted on Mind Control Poems, 1 December 2014. Recorded 2026-10-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-28",
+      "latest_status": "'JACK FEIST'S BELIEF AND TECHNIQUE FOR TELEPATHIC PROSE' ON CHATGPT — FOUND AND READ, THEN UNFOUND: THE SECOND TURN READS KEROUAC'S LIST IN ITS PLACE"
     },
     "old circuit": {
       "canonical_query": "old circuit",
