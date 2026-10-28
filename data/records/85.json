@@ -11,7 +11,7 @@
  "description": "A critical-apparatus and site-integration package for the 2014 *Epistle to the Church of the Human Diaspora*, authored under the Damascus Dancings heteronym and edited in 2026 by Lee Sharks / MANUS with Assembly Chorus contribution. The apparatus defines seventy-two structured footnotes and a sixteen-entry forward library, combining backward source identification, lateral archive interpretation, and projected future reception.\n\nThe work reads the Epistle as **epistolary compression**: a modern literary-theoretical apostolic letter that constitutes a scattered community by addressing it. Its five principal doctrines are the Feist-self, the New Human, the school outside the school, anti-credentialism as positive epistemology, and literary eschatology. This record is not self-contained: its Part II explicitly refers readers to `EA-EPISTLE-01 v1.0` for the full Epistle text.",
  "content_type": "Correspondence / epistolary",
  "license": "CC-BY-4.0",
- "substrate": "AI-assisted (substrate)",
+ "substrate": "Human-only original: the epistle was composed by Lee Sharks under the Damascus Dancings heteronym in 2014 and first posted on Mind Control Poems on 2 January 2015; collected in Antioch: A Volume of Poems (#331). AI-assisted (substrate): the 2026 critical edition's blended temporal apparatus.",
  "keywords": [
   "heteronym",
   "compression",
@@ -450,9 +450,28 @@
    "reason": "1 flattened table(s) rebuilt with the structure a second copy confirms (published blog post); every cell as seated",
    "was": "{\"axn\": \"AXN:0257.GOVERNANCE.\\ud83c\\udff4\\ud83c\\udf16\\ud83c\\udfaf\\u23e9\\u2728\\u2744\\ufe0f\"}",
    "now": "{\"axn\": \"AXN:0257.GOVERNANCE.\\u2795\\ud83c\\udfaa\\ud83c\\udfb9\\ud83e\\udef5\\ud83e\\ude84\\ud83c\\udf16\"}"
+  },
+  {
+   "date": "2026-10-28",
+   "field": "substrate",
+   "reason": "composition and edition substrates separated; Lee Sharks, 2026-10-28: \"yes, lets address that. check secret book of walt (2015), epistle to the human diaspora (2014), and antioch: a heteronym compendium (2015) for same\" — \"adopted.\"",
+   "was": "AI-assisted (substrate)",
+   "now": "Human-only original: the epistle was composed by Lee Sharks under the Damascus Dancings heteronym in 2014 and first posted on Mind Control Poems on 2 January 2015; collected in Antioch: A Volume of Poems (#331). AI-assisted (substrate): the 2026 critical edition's blended temporal apparatus."
+  },
+  {
+   "date": "2026-10-28",
+   "field": "date_semantics",
+   "reason": "composition date recorded apart from the deposit date; Lee Sharks, 2026-10-28: \"yes, lets address that. check secret book of walt (2015), epistle to the human diaspora (2014), and antioch: a heteronym compendium (2015) for same\" — \"adopted.\"",
+   "now": "{\"dateCreated\": \"2014\", \"dateDeposited\": \"2026-04-29\", \"basis\": \"the colophon '(c) 2014 lee sharks, property of planet mars' of the seed text (#402); first posted on Mind Control Poems on 2 January 20"
+  },
+  {
+   "date": "2026-10-28",
+   "field": "related_deposits",
+   "reason": "the edition points to its original; Lee Sharks, 2026-10-28: \"yes, lets address that. check secret book of walt (2015), epistle to the human diaspora (2014), and antioch: a heteronym compendium (2015) for same\" — \"adopted.\"",
+   "now": "{\"deposit\": 402, \"relation\": \"original_text\", \"note\": \"the seed text as first posted, 2 January 2015, colophon '(c) 2014'\"}"
   }
  ],
- "date_modified": "2026-10-19",
+ "date_modified": "2026-10-28",
  "publisher": "Pergamon Press",
  "version_basis": {
   "ruling": "AUDIT: project v2.0",
@@ -556,6 +575,31 @@
    "hash_before": "520555d6e91472be6fd0146b88f073f7f9854fe5a7eeeb7725013234db44f1f8",
    "axn_before": "AXN:0257.GOVERNANCE.🏴🌖🎯⏩✨❄️",
    "ruled_by": "Lee Sharks, 2026-10-19: \"lets restore those tables. note that its possible the blog itself contains flattened tables - they were simple pastes\"; 2026-10-15: \"the text as he published it\""
+  }
+ ],
+ "date_semantics": {
+  "dateCreated": "2014",
+  "dateDeposited": "2026-04-29",
+  "basis": "the colophon '(c) 2014 lee sharks, property of planet mars' of the seed text (#402); first posted on Mind Control Poems on 2 January 2015 (https://mindcontrolpoems.blogspot.com/2015/01/normal-0-false-false-false-en-us-ja-x.html, published 2015-01-02T17:15-05:00); collected in Antioch: A Volume of Poems (#331) ('EPISTLE TO THE HUMAN DIASPORA', line 3612 of its text); the operator's attestation (2026-10-28: 'it was written before it was posted in any case')",
+  "firstPosted": "2015-01-02"
+ },
+ "related_deposits": [
+  {
+   "deposit": 402,
+   "relation": "original_text",
+   "note": "the seed text as first posted, 2 January 2015, colophon '(c) 2014'"
+  }
+ ],
+ "errata": [
+  {
+   "date": "2026-10-28",
+   "kind": "source",
+   "locus": "note ²² (\"Brave Emily clothed in Barefoot Rank\"), allusion (1)",
+   "was": "(1) Emily Dickinson, whose \"Barefoot Rank\" compresses Poem 263 — \"Barefoot Rank\" is NOT a Dickinson phrase; it is Damascus's own compression of her posture: barefoot (uncredentialed) yet ranked (aristocratic).",
+   "now": "(1) Emily Dickinson, whose phrase it is: \"My Barefoot-Rank is better —\", in her letter to T. W. Higginson of 7 June 1862 (Johnson L265), the letter that declines to hurry into print. The Epistle names her and clothes her in her own phrase: barefoot (uncredentialed) yet ranked. The same letter is quoted entire in item 23 of \"Belief & Technique for Telepathic Prose\" (Pearl and Other Poems, 2014), the Epistle's companion text of the same year.",
+   "reason": "Lee Sharks, 2026-10-28: \"of course barefoot rank is a dickinson phrase. the epistle says so itself.\" The phrase is Dickinson's: L265, \"My Barefoot-Rank is better —\".",
+   "raised_by": "Lee Sharks",
+   "status": "open"
   }
  ],
  "_projection": {
