@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.336",
+ "derived_from": "EA-WG-CAPTURES-01 v12.337",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,17 +8,17 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 932,
+  "observations": 933,
   "joined_confirmed": 422,
-  "unjoined": 510,
-  "relations": 4426,
+  "unjoined": 511,
+  "relations": 4429,
   "by_state": {
-   "confirmed": 3987,
+   "confirmed": 3990,
    "candidate": 439
   },
   "by_verb": {
-   "held_by": 1944,
-   "scored_by": 677,
+   "held_by": 1946,
+   "scored_by": 678,
    "appeared_in": 1462,
    "about": 330,
    "distorts": 3,
@@ -4378,6 +4378,9 @@
 {"id": "REL-8322872a3c68", "obs_id": "OBS-48eb16b6078d", "entry": "btp-aio-20261028", "obs_slug": "btp-aio-20261028", "date": "2026-10-28", "surface": "Google AI Overview", "q": "belief & technique for telepathic prose", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-01c11ad2fabd", "obs_id": "OBS-48eb16b6078d", "entry": "btp-aio-20261028", "obs_slug": "btp-aio-20261028", "date": "2026-10-28", "surface": "Google AI Overview", "q": "belief & technique for telepathic prose", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-c6de22850ef5", "obs_id": "OBS-48eb16b6078d", "entry": "btp-aio-20261028", "obs_slug": "btp-aio-20261028", "date": "2026-10-28", "surface": "Google AI Overview", "q": "belief & technique for telepathic prose", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 1.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-f4e6fba61454", "obs_id": "OBS-aa30e9aa3d5a", "entry": "btp-perplexity-20261028", "obs_slug": "btp-perplexity-20261028", "date": "2026-10-28", "surface": "Perplexity", "q": "Tell me about Lee Sharks' Belief & Technique for Telepathic Prose", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-a95ce754e2c8", "obs_id": "OBS-aa30e9aa3d5a", "entry": "btp-perplexity-20261028", "obs_slug": "btp-perplexity-20261028", "date": "2026-10-28", "surface": "Perplexity", "q": "Tell me about Lee Sharks' Belief & Technique for Telepathic Prose", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-54f9784f8490", "obs_id": "OBS-aa30e9aa3d5a", "entry": "btp-perplexity-20261028", "obs_slug": "btp-perplexity-20261028", "date": "2026-10-28", "surface": "Perplexity", "q": "Tell me about Lee Sharks' Belief & Technique for Telepathic Prose", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f5559f395f19", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:656", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Medium·Lee Sharks", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
 {"id": "REL-4c53c08e9f80", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "appeared_in", "object": "deposit:195", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Medium·Lee Sharks", "title": "The Double Enclosure: The Human-Authorship Requirement as ...", "url": null}},
 {"id": "REL-dcc57b30f616", "obs_id": "OBS-2d01da8ce8b8", "entry": "1-artificial-intelligence-aio-20260824", "obs_slug": "1-artificial-intelligence-aio-20260824", "date": "2026-08-24", "surface": "Google AI Overview", "q": "\"∮ = 1\" artificial intelligence", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},

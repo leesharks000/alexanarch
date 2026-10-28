@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-28T19:15:38Z",
+  "regenerated_at": "2026-10-28T19:49:09Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "b252dab9018b6fec7c7347c8da5b1bd7002ed5aea8544ed3adba257ded96d66f",
+    "mm-main-capture": "6076c075448d6f98ca94007d0f1f6541b6ce2a48290d2cdbdc915a2c583bb265",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2516,
-  "total_observations": 1043,
+  "total_addresses": 2517,
+  "total_observations": 1044,
   "class_counts": {
     "subjunctive": 1740,
-    "observed_address": 759,
+    "observed_address": 760,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1636,
+    "unmatched": 1637,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -65316,6 +65316,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-01",
       "latest_status": "THE RADICAL THESIS ADMITTED THROUGH THE STANDARD PROBLEM"
+    },
+    "tell me about lee sharks' belief & technique for telepathic prose": {
+      "canonical_query": "tell me about lee sharks' belief & technique for telepathic prose",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-28",
+          "status": "'LEE SHARKS' BELIEF & TECHNIQUE FOR TELEPATHIC PROSE' ON PERPLEXITY — IDENTIFIED AT ONCE, READ FROM THE BLOG TEXT, AND KEROUAC NEVER NAMED",
+          "surface": "Perplexity",
+          "source_format": null,
+          "section": "Works",
+          "slug": "btp-perplexity-20261028",
+          "gallery_url": "https://www.alexanarch.org/captures/#btp-perplexity-20261028",
+          "record_url": "https://www.alexanarch.org/captures/btp-perplexity-20261028/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#btp-perplexity-20261028",
+          "details_excerpt": "LEE SHARKS' BELIEF & TECHNIQUE FOR TELEPATHIC PROSE ON PERPLEXITY, SIGNED OUT: identified at once as a satirical writing manifesto credited to Lee Sharks and Jack Feist, part of Pearl and Other Poems, posted on Mind Cont"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Belief & Technique for Telepathic Prose (Lee Sharks & Jack Feist), Pearl and Other Poems (New Human Press, 2014) pp. 23–28, #1121; first posted on Mind Control Poems, 1 December 2014. Recorded 2026-10-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-28",
+      "latest_status": "'LEE SHARKS' BELIEF & TECHNIQUE FOR TELEPATHIC PROSE' ON PERPLEXITY — IDENTIFIED AT ONCE, READ FROM THE BLOG TEXT, AND KEROUAC NEVER NAMED"
     },
     "tell me about mary lee sharks. disambiguate carefully": {
       "canonical_query": "tell me about mary lee sharks. disambiguate carefully",

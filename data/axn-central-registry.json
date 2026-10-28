@@ -1,10 +1,10 @@
 {
  "description": "Central AXN registry: every allocated position across all mint routes, position- and kernel-keyed.",
- "generated": "2026-10-28T19:15:56Z",
- "positions_count": 2678,
+ "generated": "2026-10-28T19:50:08Z",
+ "positions_count": 2679,
  "symbolon_entries": 79,
  "non_entries": 24,
- "capture_positions": 784,
+ "capture_positions": 785,
  "release_positions": 60,
  "panel_positions": 27,
  "contested_count": 5,
@@ -27297,7 +27297,8 @@
     "AXN:0A39.RELEASE.🪸🌾🌋🕘🎆🌸",
     "AXN:0A39.RELEASE.👈🎻📝🍃🕐👇",
     "AXN:0A39.RELEASE.👇💛🔮🎪💫♣️",
-    "AXN:0A39.RELEASE.♍🔴🌻🗺️🧫💥"
+    "AXN:0A39.RELEASE.♍🔴🌻🗺️🧫💥",
+    "AXN:0A39.RELEASE.💙📚🔭🕊️💜🪜"
    ]
   },
   "0A3A": {
@@ -28588,6 +28589,18 @@
    "allocated": "2026-10-28",
    "observations": {
     "btp-feist-reading-chatgpt-20261028": "AXN:0A98.CAPTURE.🚪🪦🀄📐🎪⏫"
+   }
+  },
+  "0A99": {
+   "axn": "AXN:0A99.CAPTURE",
+   "root": "AXN:0A99.CAPTURE",
+   "source": "capture",
+   "family": "CAPTURE",
+   "record": "https://www.alexanarch.org/captures/btp-perplexity-20261028/",
+   "q": "Tell me about Lee Sharks' Belief & Technique for Telepathic Prose",
+   "allocated": "2026-10-28",
+   "observations": {
+    "btp-perplexity-20261028": "AXN:0A99.CAPTURE.🃏✊◇📌❌🛤️"
    }
   }
  },
@@ -50645,6 +50658,16 @@
    "date": "2026-10-28",
    "surface": "ChatGPT"
   },
+  "8eb49a46ef5b40744fd91c245f4d4c518e9ba84777abab53aa0a5d612a5cc8ed": {
+   "role": "capture-observation",
+   "axn": "AXN:0A99.CAPTURE.🃏✊◇📌❌🛤️",
+   "root": "AXN:0A99.CAPTURE",
+   "source": "capture",
+   "observation": "btp-perplexity-20261028",
+   "sealed": "/data/captures/sealed/btp-perplexity-20261028.json",
+   "date": "2026-10-28",
+   "surface": "Perplexity"
+  },
   "487c5be979478842065f91877ab97bb3d7c58713703fa2c720ccdbfc390a7df1": {
    "role": "capture-observation",
    "axn": "AXN:074E.CAPTURE.🔖🦋🛤️✨🍄📎",
@@ -59310,6 +59333,16 @@
    "label": "12.336",
    "basis": "manifest",
    "manifest": "/data/releases/manifests/capture-registry/12.336.sha256"
+  },
+  "cb49387eca231383490cb7809a07082e73a6740f926ae87ea3cda07e19bd0ec6": {
+   "role": "release",
+   "axn": "AXN:0A39.RELEASE.💙📚🔭🕊️💜🪜",
+   "root": "AXN:0A39.RELEASE",
+   "source": "release",
+   "object": "capture-registry",
+   "label": "12.337",
+   "basis": "manifest",
+   "manifest": "/data/releases/manifests/capture-registry/12.337.sha256"
   },
   "d522f0a689f1353ba899def27376c198827452d879b45fe0bc5f1f71275e67a9": {
    "role": "release",
