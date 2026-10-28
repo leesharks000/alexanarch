@@ -127,6 +127,17 @@ def build(spec, stage):
             origin_items.append({"source": "Blogger (mindcontrolpoems.blogspot.com)", "url": it["url"], "published": it.get("published", ""), "sha256": S.sha(dest)})
             w = {"slug": it["slug"], "work": it["work"], "text": tr, "originals": [f"original/{it['path']}"],
                  "lines": sum(1 for _ in open(seat / tr, encoding="utf-8"))}
+        elif k == "drive":
+            # A file in the author's Google Drive, reached through the session's Drive connector: its text export as served,
+            # written to the stage in session; the .docx itself is recorded by reference (file id, title, size, created time).
+            tr = f"text/{it['slug']}.txt"
+            (seat / "text").mkdir(parents=True, exist_ok=True)
+            (seat / tr).write_bytes(pathlib.Path(it["from"]).read_bytes())
+            origin_items.append({"source": "Google Drive (the author's)", "title": it["drive_title"], "file_id": it["file_id"], "size": it["size"],
+                                 "created": it["created"], "export": "the connector's text export of the .docx, fetched 2026-10-28",
+                                 "by_reference": "the .docx is held in the author's Drive and not copied; its id, size and created time identify it"})
+            w = {"slug": it["slug"], "work": it["work"], "text": tr, "originals": [f"drive:{it['file_id']}"],
+                 "lines": sum(1 for _ in open(seat / tr, encoding="utf-8"))}
         elif k == "extract":
             src_path = pathlib.Path(it["from"])
             L = src_path.read_text(encoding="utf-8").splitlines()

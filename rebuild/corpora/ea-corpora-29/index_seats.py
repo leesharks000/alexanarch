@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Enter the EA-CORPORA-29 seats (29/01 Kerouac, declared; 29/02 Horace; 29/03 Ovid; 29/04 Ars Poetica; 29/05 the
-Avant-Garde, II; 29/06 Ars Poetica, wanted, declared; 29/07 Telepathic Prose) in data/api/corpora.json and datasets/corpora/corpora.json.
+Avant-Garde, II; 29/06 Ars Poetica, wanted, declared; 29/07 Telepathic Prose;
+29/08 the Pali Tipiṭaka; 29/09 the Buddhist canon in Sanskrit; 29/10 the Mahāyāna in East Asia; 29/11 the Derge Kangyur) in data/api/corpora.json and datasets/corpora/corpora.json.
 
 Additive and idempotent: an existing row for any of the ten corpora is replaced, totals are recomputed from the
 difference. license_class follows the manifest's stated derivation, most-restrictive-first over the packaging the
@@ -8,7 +9,7 @@ seat actually carries: Wikisource transcription (CC BY-SA) > Project Gutenberg >
 import json, hashlib, pathlib, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
-SPEC = {"seats": [{"corpus": c} for c in ("jack-kerouac", "horace", "ovid", "ars-poetica", "avant-garde-ii", "ars-poetica-wanted", "telepathic-prose")]}
+SPEC = {"seats": [{"corpus": c} for c in ("jack-kerouac", "horace", "ovid", "ars-poetica", "avant-garde-ii", "ars-poetica-wanted", "telepathic-prose", "pali-tipitaka", "buddhist-sanskrit", "east-asian-buddhism", "derge-kangyur")]}
 NAMES = [s["corpus"] for s in SPEC["seats"]]
 now = datetime.datetime.now(datetime.timezone.utc)
 
@@ -17,7 +18,7 @@ def lclass(src):
     kinds = {i["source"] for i in src["origin"]["items"]}
     if any(k.startswith("GRETIL") for k in kinds):
         return "cc-by-nc-sa"  # GRETIL TEI: CC BY-NC-SA 4.0 at the file; the NC payload/record split of EA-CORPORA-02
-    if kinds and kinds <= {"this library", "Blogger (mindcontrolpoems.blogspot.com)"}:
+    if kinds and kinds <= {"this library", "Blogger (mindcontrolpoems.blogspot.com)", "Google Drive (the author's)"}:
         return "cc-by"  # the author's own works, as at the Pearl seat
     if any(k.startswith("Wikisource") or k.startswith("PerseusDL") for k in kinds):  # Perseus TEI: CC BY-SA 4.0, as the Perseus seats before it
         return "cc-by-sa"

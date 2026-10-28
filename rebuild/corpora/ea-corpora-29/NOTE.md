@@ -14,7 +14,18 @@ The pluriform bundle of arts of poetry, at the author's directions of 2026-10-28
 - **29/06 ars-poetica-wanted**: a declared absence of fifty-nine works (absences29_wanted.py). Eleven are public domain with no copy found this session. The rest are the copyrighted moderns, Language writing, conceptual writing and the contemporary arts of poetry, each with its opening date.
 - **29/07 telepathic-prose**: Belief & Technique for Telepathic Prose, Make It Human and A Telepathicist Manifesto, each in both witnesses. The P text is copied from the Pearl seat by line range and sha256; the B text is the blog page as served. The edition (#1715) is copied from data/deposits. The drafts of 2014 are held out pending the author's ruling (gen_spec29_tp.py).
 
-The source.json `seat`, `spine` and `seating` fields of 29/03–29/07 were set to the form 29/01–29/02 carry. `build29.py --loci` re-verifies a built seat's loci without refetching.
+The 2014 drafts were added to 29/07 at the author's ruling of 2026-10-28 ("sure i suppose the drafts can be seated"). They are the Drive connector's text exports of "BELIEF AND TECHNIQUE FOR TELEPATHIC PROSE.docx" (D2, D3, D1, with the notebook entries) and "word riot 4.docx" (W). The .docx files are recorded by Drive id.
+
+The Buddhist canons, at the author's direction of 2026-10-28 ("we need buddhist canon, various traditions, mahayana included"):
+
+- **29/08 pali-tipitaka**: the three piṭakas in root Pali (Mahāsaṅgīti), from suttacentral/bilara-data at commit da23a8a, in 37 collections and books. The original is a byte-reproducible git archive of root/pli/ms (pali29.py). This is the harvest 02/17 queued.
+- **29/09 buddhist-sanskrit**: thirty-two GRETIL TEI files: fourteen Mahāyāna sūtras, twelve śāstras, and six works of kāvya and narrative (gen_spec29_mahayana.py).
+- **29/10 east-asian-buddhism**: twenty works from Wikisource. Nine are of the Chinese canon and six of Chan. Four are of Japan: the Tannishō in the 1923 rendering, Hōnen, Hakuin, and the Heart Sūtra. One is of Korea: Han Yong-un's 님의 沈默 (1926), in ninety pages. The Shōbōgenzō and the Zuimonki are queued.
+- **29/11 derge-kangyur**: eight volumes of the Digital Derge Kangyur (Esukhia, public domain by its README) (tib29.py). They carry the Aṣṭasāhasrikā, the Diamond, the Heart, the Lalitavistara, the Laṅkāvatāra, the Lotus, the Sukhāvatīvyūha and the Vimalakīrti, with the Vinaya's first volume and the catalogue. The loci are the Tohoku markers.
+
+The seating is deposited as EA-CORPORA-29 (body29.py writes the issue body), at the author's request of 2026-10-28.
+
+The source.json `seat`, `spine` and `seating` fields of 29/03–29/11 were set to the form 29/01–29/02 carry. `build29.py --loci` re-verifies a built seat's loci without refetching.
 
 - **02/14 dickinson-mss** — the first queued print layer seated: Letters of Emily Dickinson, ed. Todd (1894), Internet Archive lettersemilydic00toadgoog, md5-checked; L265 verified at pp. 303–304 (source.json, print_layers).
 - **01/13 homer, repair** — the Odyssey text layer's book tags re-derived from the TEI (every line was tagged book 1); the Greek unchanged; recorded in source.json, repairs.

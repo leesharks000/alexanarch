@@ -12,15 +12,15 @@ import html, json, re, sys, time, urllib.parse, urllib.request, pathlib, hashlib
 UA = {"User-Agent": "alexanarch-seating/1.0 (https://www.alexanarch.org; leesharks000@users.noreply.github.com)"}
 
 
-def get(url, tries=6):
+def get(url, tries=8):
     for k in range(tries):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
                 return r.read()
         except Exception as e:
-            if k == tries - 1:
+            if getattr(e, "code", None) == 404 or k == tries - 1:
                 raise
-            time.sleep(8 * (k + 1))
+            time.sleep(15 * (k + 1))
 
 
 def search(lang, q, n=20):
@@ -67,7 +67,7 @@ def fetch(lang, title, dest, slug):
     t = text_of(h)
     (dest / "text" / f"{slug}.txt").write_text(t, encoding="utf-8")
     if not (have.exists() and raw is not None and have.stat().st_mtime < time.time() - 5):
-        time.sleep(2)
+        time.sleep(4)
     return {"source": f"Wikisource ({lang})", "title": title, "url": f"https://{lang}.wikisource.org/wiki/" + urllib.parse.quote(title.replace(' ', '_')),
             "revision": rev, "permalink": f"https://{lang}.wikisource.org/w/index.php?oldid={rev}" if rev else None,
             "file": f"original/{slug}.html", "text": f"text/{slug}.txt", "lines": t.count("\n"),
