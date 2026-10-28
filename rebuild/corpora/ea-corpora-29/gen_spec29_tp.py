@@ -33,8 +33,11 @@ add("Drafts (2014)", "drive", "btp-drafts-d2-d3-d1", "Lee Sharks, “Belief and 
     **{"from": D + "belief-and-technique-drafts.txt", "drive_title": "BELIEF AND TECHNIQUE FOR TELEPATHIC PROSE.docx", "file_id": "0B1alN_rJZUKKU293OUt6ZlBicms", "size": 83044, "created": "2014-07-12T21:43:07Z (a bulk upload; it does not date composition)"})
 add("Drafts (2014)", "drive", "btp-draft-w-word-riot", "Lee Sharks, “Belief and Technique for Telepathic Prose”, the copy submitted to Word Riot (W), spring 2014: the Drive file “word riot 4.docx” — the connector's text export", "Penelope weaves impening glory",
     **{"from": D + "word-riot-4.txt", "drive_title": "word riot 4.docx", "file_id": "0B1alN_rJZUKKZW04TVUyazFrcEU", "size": 22890, "created": "2014-07-12T21:40:45Z (a bulk upload; it does not date composition)"})
-add("Edition", "extract", "btp-critical-edition-1715", "Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl (EA-BTP-EDITION-01; #1715, AXN:0A9A), the deposit's body as minted 2026-10-28 — copied from data/deposits", "sublation",
+add("Edition", "extract", "btp-critical-edition-1715", "Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl (EA-BTP-EDITION-01; #1715, AXN:0A9A), version 1.0, the deposit's body as minted 2026-10-28 (superseded by #1717) — copied from data/deposits", "sublation",
     **{"from": str(R / ED), "from_rel": ED, "lines": [1, n_ed], "seat_of_source": "#1715"})
+ED2 = "data/deposits/AXN-0AA0.md"
+add("Edition", "extract", "btp-critical-edition-1717", "Belief & Technique for Telepathic Prose: A Critical Edition, version 1.1 (EA-BTP-EDITION-01 v1.1; #1717, AXN:0AA0), the deposit's body as minted 2026-10-28, with the final commandment reread as a challenge — copied from data/deposits", "it only costs everything",
+    **{"from": str(R / ED2), "from_rel": ED2, "lines": [1, sum(1 for _ in open(R / ED2, encoding="utf-8"))], "seat_of_source": "#1717"})
 
 spec = {
  "corpus": "telepathic-prose",
@@ -43,7 +46,7 @@ spec = {
  "language": "eng",
  "fetched": "2026-10-28",
  "license": {"payload": "CC-BY-4.0, by the author: the corpus and the seating institution are the same party (as at the Pearl seat).", "record": "CC-BY-4.0."},
- "normalization": "P texts are line ranges of the Pearl seat's machine text, copied with that file's path and sha256, page-number lines kept as the machine text has them. B texts are the Blogger pages as served, under original/, with text/<slug>.txt reduced by code from the post body. The drafts (D1, D2, D3 and W) are the Drive connector's text exports of the two .docx files the edition collates (its §3), seated at the author's ruling of 2026-10-28; the exports escape two characters as Markdown does (a backslash before # and *), kept as served, and the .docx files are recorded by Drive id, size and created time. The edition is the deposit body of #1715 as minted. No text corrected: Pearl is the canonical form, not to be altered (the author's ruling of 2026-10-28), so 'retrictio s' and the repeated item stand.",
+ "normalization": "P texts are line ranges of the Pearl seat's machine text, copied with that file's path and sha256, page-number lines kept as the machine text has them. B texts are the Blogger pages as served, under original/, with text/<slug>.txt reduced by code from the post body. The drafts (D1, D2, D3 and W) are the Drive connector's text exports of the two .docx files the edition collates (its §3), seated at the author's ruling of 2026-10-28; the exports escape two characters as Markdown does (a backslash before # and *), kept as served, and the .docx files are recorded by Drive id, size and created time. The editions are the deposit bodies of #1715 (v1.0, superseded) and #1717 (v1.1) as minted, both kept. No text corrected: Pearl is the canonical form, not to be altered (the author's ruling of 2026-10-28), so 'retrictio s' and the repeated item stand.",
  "units": "one text file per witness; class names the witness (P, B, edition)",
  "items": items,
  "loci": loci,

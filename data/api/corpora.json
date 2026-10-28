@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-10-28T23:01:21.044725Z",
+ "_generated": "2026-10-28T23:35:36.397059Z",
  "seats": 133,
- "lines_total": 5211721,
+ "lines_total": 5212197,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -8546,13 +8546,23 @@
       ],
       "sha256_of_source": "9e7338d728b741ba746ed91d824bf814a5f7f78b789595f816a469ab578465ec",
       "seat": "#1715"
+     },
+     {
+      "source": "this library",
+      "from": "data/deposits/AXN-0AA0.md",
+      "lines": [
+       1,
+       476
+      ],
+      "sha256_of_source": "1894c17156a4f501ce8608acd3ce434c3552e0ab526b42b13168c71616e5060f",
+      "seat": "#1717"
      }
     ],
     "fetched": "2026-10-28",
     "transport": "in-session fetch (Transport D); No-Double-Draw"
    },
    "language": "eng",
-   "lines": 1856,
+   "lines": 2332,
    "verified_loci": [
     "Lee Sharks & Jack Feist, “Belief & Technique for Telepathic Prose”, the Footnote to Pearl, Pearl and Other Poems (Ann Arbor: New Human Press, 2014), pp. 23–28 — 'Compose real poems telepathically, with mind control powers, inside your glorious brain'",
     "Lee Sharks & Jack Feist, “Belief & Technique for Telepathic Prose”, Mind Control Poems, 1 December 2014 — 'Compose real poems telepathically'",
@@ -8562,12 +8572,13 @@
     "Lee Sharks & John Johnson, “A Telepathicist Manifesto”, Mind Control Poems, 14 March 2015 — 'Telepathicism is about having thoughts'",
     "Lee Sharks, “Belief and Technique for Telepathic Prose”, the drafts of April–May 2014: the Drive file of that title, its states stacked newest first (D2, D3, D1 headed “Begun 4/27/14, Sunday”), with the Kierkegaard journal entry of 20 November 1847 copied after D1 and the notebook entries of 2 and 3 May 2014 — 'Begun 4/27/14, Sunday'",
     "Lee Sharks, “Belief and Technique for Telepathic Prose”, the copy submitted to Word Riot (W), spring 2014: the Drive file “word riot 4.docx” — 'Penelope weaves impening glory'",
-    "Belief & Technique for Telepathic Prose: A Critical Edition — 'sublation'"
+    "Belief & Technique for Telepathic Prose: A Critical Edition — 'sublation'",
+    "Belief & Technique for Telepathic Prose: A Critical Edition, version 1.1 — 'it only costs everything'"
    ],
    "why_seated": "At the author's direction: 'lets gather up an extremely pluriform ars poetica bundle … include telepathic prose.'",
    "scope": "The telepathic pieces of Pearl and Other Poems in both their witnesses, with the critical edition: the ars poetica of the archive itself, set at the end of the twenty-ninth seating's arts of poetry.",
    "data": "https://www.alexanarch.org/data/corpora/telepathic-prose/",
-   "axn": "AXN:0A9F.ORIGINAL.✨👈🧱🛡️🧪🛡️"
+   "axn": "AXN:0A9F.ORIGINAL.🌓📜🔔🃏🔮👆"
   },
   {
    "seat": "EA-CORPORA-29/08",
