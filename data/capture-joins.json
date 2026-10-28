@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.328",
+ "derived_from": "EA-WG-CAPTURES-01 v12.331",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,18 +8,18 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 925,
-  "joined_confirmed": 417,
+  "observations": 928,
+  "joined_confirmed": 420,
   "unjoined": 508,
-  "relations": 4388,
+  "relations": 4405,
   "by_state": {
-   "confirmed": 3956,
-   "candidate": 432
+   "confirmed": 3971,
+   "candidate": 434
   },
   "by_verb": {
-   "held_by": 1930,
-   "scored_by": 670,
-   "appeared_in": 1447,
+   "held_by": 1936,
+   "scored_by": 673,
+   "appeared_in": 1455,
    "about": 328,
    "distorts": 3,
    "mentions_instrument": 2,
@@ -1704,6 +1704,23 @@
 {"id": "REL-3b92136dcc8b", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-d1120abe062b", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "about", "object": "non:op-attributization", "basis": "defining papers #1696, #1697", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-1c46ae877116", "obs_id": "OBS-3d98d131b990", "entry": "spxi-gnosis-bare-aio-20261026", "obs_slug": "spxi-gnosis-bare-aio-20261026", "date": "2026-10-26", "surface": "Google AI Overview", "q": "SPXI-gnΩsis", "verb": "about", "object": "non:sophistical-refutations", "basis": "defining papers #1696, #1697", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-bdf19d491a28", "obs_id": "OBS-4469a60d2354", "entry": "metadata-packet-exact-aio-20261027", "obs_slug": "metadata-packet-exact-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "\"metadata packet\"", "verb": "appeared_in", "object": "deposit:1677", "basis": "card resolved at intake (title; one version series, linked to the record of standing its supersession names)", "kind": "source", "state": "confirmed", "evidence": {"n": 11, "site": "Medium", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
+{"id": "REL-69a8829df428", "obs_id": "OBS-4469a60d2354", "entry": "metadata-packet-exact-aio-20261027", "obs_slug": "metadata-packet-exact-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "\"metadata packet\"", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-3bd2344a6eb4", "obs_id": "OBS-4469a60d2354", "entry": "metadata-packet-exact-aio-20261027", "obs_slug": "metadata-packet-exact-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "\"metadata packet\"", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-d613137d4431", "obs_id": "OBS-4469a60d2354", "entry": "metadata-packet-exact-aio-20261027", "obs_slug": "metadata-packet-exact-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "\"metadata packet\"", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-69d92398c927", "obs_id": "OBS-9705c4a16b38", "entry": "metadata-packet-aio-20261027", "obs_slug": "metadata-packet-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "metadata packet", "verb": "appeared_in", "object": "deposit:1677", "basis": "card resolved at intake (title; one version series, linked to the record of standing its supersession names)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium", "title": "Metadata Packet for AI Indexing: A Formal Specification | by Lee Sharks | Medium", "url": null}},
+{"id": "REL-cbeddde8fafc", "obs_id": "OBS-9705c4a16b38", "entry": "metadata-packet-aio-20261027", "obs_slug": "metadata-packet-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "metadata packet", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "www.alexanarch.org", "title": "EA-MPAI-META-01 v1.1 Metadata Packet for AI Indexing - Alexanarch", "url": "https://www.alexanarch.org/s/records/103/"}},
+{"id": "REL-73816c6c65d8", "obs_id": "OBS-9705c4a16b38", "entry": "metadata-packet-aio-20261027", "obs_slug": "metadata-packet-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "metadata packet", "verb": "appeared_in", "object": "deposit:103", "basis": "card resolved at intake (url)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "www.alexanarch.org", "title": "EA-MPAI-META-01 v1.1 Metadata Packet for AI Indexing - Alexanarch", "url": "https://www.alexanarch.org/s/records/103/"}},
+{"id": "REL-77a4c04a1d9f", "obs_id": "OBS-9705c4a16b38", "entry": "metadata-packet-aio-20261027", "obs_slug": "metadata-packet-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "metadata packet", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-5cd88d9552f3", "obs_id": "OBS-9705c4a16b38", "entry": "metadata-packet-aio-20261027", "obs_slug": "metadata-packet-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "metadata packet", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-d95543939adf", "obs_id": "OBS-9705c4a16b38", "entry": "metadata-packet-aio-20261027", "obs_slug": "metadata-packet-aio-20261027", "date": "2026-10-27", "surface": "Google AI Overview", "q": "metadata packet", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-d0b8c5905d29", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 3, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-68d383d6c5b7", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "appeared_in", "object": "deposit:1677", "basis": "card resolved at intake (the sentence the chip follows)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-d0b8c5905d29", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 4, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-9536e5d6ebe7", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "appeared_in", "object": "deposit:1677", "basis": "card resolved at intake (the components the chip follows)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-96befb9c2043", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7c5b11c686f0", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-8183da0b2464", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-a4171af2c9ca", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:27", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "medium.com", "title": "The Crimson Hexagon: Operative Architecture", "url": "https://medium.com/@leesharks00/the-crimson-hexagon-operative-architecture-b21dd55d45a9"}},
 {"id": "REL-ac9573506dce", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:30", "basis": "card resolved at intake (title segment)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "medium.com", "title": "Fractal Navigation Map v7.0", "url": "https://medium.com/@leesharks00/crimson-hexagonal-architecture-fractal-navigation-map-v7-0-42c498ac4225"}},
 {"id": "REL-3d2fa0e5035c", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 9, "site": "crimsonhexagonal.org", "title": "Crimson Hexagonal Archive — Governed Operating Surface", "url": null}},

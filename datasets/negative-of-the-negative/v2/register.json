@@ -1,8 +1,8 @@
 {
  "register_id": "EA-NEGONT-02-REGISTER",
  "title": "The Negative of the Negative — register of public knowledge at the panel's addresses",
- "version": "1.33",
- "date": "2026-10-20",
+ "version": "1.36",
+ "date": "2026-10-27",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
  "license": "CC BY 4.0",
@@ -10,8 +10,8 @@
  "_both_registers": "A panel run that returns the archive is seated in both registers: here, and in the Capture Registry through its own intake. The two observations share one obs_id, derived the same way in both. (Ruled 2026-10-06.)",
  "_erasure_rows": "An erasure row (spec §1.3) keeps pointing at its seated capture: its entry here has ev 'capture' and a capture_ref, and holds no copy of the transcript. (Ruled 2026-10-06.)",
  "_intake": "Seated only by scripts/non_intake.py: ADMIT (the Capture Registry's minimum, plus a panel row) → ROUTE (exact issued string on the same surface) → NORMALISE (scripts/clean_transcript.py; raw kept) → ARCHIVE (presence computed with scripts/extract_citations.relation; the both-registers rule enforced) → VALIDATE (register.schema.json) → EMIT. A refusal writes nothing.",
- "address_count": 31,
- "observation_count": 31,
+ "address_count": 34,
+ "observation_count": 34,
  "entries": [
   {
    "slug": "model-collapse-20261004",
@@ -2646,6 +2646,117 @@
    "notes": null,
    "dates": [
     "2026-10-20"
+   ],
+   "n_observations": 1,
+   "observations": []
+  },
+  {
+   "slug": "metadata-packet-exact-aio-20261027",
+   "addr_id": "ADDR-e632b31aa56d",
+   "obs_id": "OBS-4469a60d2354",
+   "q": "\"metadata packet\"",
+   "date": "2026-10-27",
+   "surface": "Google AI Overview",
+   "surface_basis": "as recorded in the Capture Registry entry metadata-packet-exact-aio-20261027",
+   "auth": "signed out, incognito",
+   "auth_basis": "as recorded in the Capture Registry entry",
+   "ev": "capture",
+   "entity": "mpai-packet",
+   "transcript": null,
+   "transcript_raw": null,
+   "transcript_removed": null,
+   "transcript_sha256": null,
+   "transcript_class": null,
+   "transcript_complete": null,
+   "transcript_read": null,
+   "cites": null,
+   "cite_list": null,
+   "archive_present": true,
+   "archive_basis": "declared",
+   "capture_ref": {
+    "slug": "metadata-packet-exact-aio-20261027",
+    "obs_id": "OBS-4469a60d2354"
+   },
+   "sf": null,
+   "notes": {
+    "why": "Seated in /non at the operator's word (2026-10-27): 'this one is so egregious it goes to captures with serious corrections and gets a /non entry'. The address is the entity's bare name; the engineering exact-order senses (NDN, MS-WMSP, KLV) are reversed with the archive's."
+   },
+   "dates": [
+    "2026-10-27"
+   ],
+   "n_observations": 1,
+   "observations": []
+  },
+  {
+   "slug": "metadata-packet-aio-20261027",
+   "addr_id": "ADDR-bf512a5fa068",
+   "obs_id": "OBS-9705c4a16b38",
+   "q": "metadata packet",
+   "date": "2026-10-27",
+   "surface": "Google AI Overview",
+   "surface_basis": "as recorded in the Capture Registry entry metadata-packet-aio-20261027",
+   "auth": "signed out, incognito",
+   "auth_basis": "as recorded in the Capture Registry entry",
+   "ev": "capture",
+   "entity": "mpai-packet",
+   "transcript": null,
+   "transcript_raw": null,
+   "transcript_removed": null,
+   "transcript_sha256": null,
+   "transcript_class": null,
+   "transcript_complete": null,
+   "transcript_read": null,
+   "cites": null,
+   "cite_list": null,
+   "archive_present": true,
+   "archive_basis": "declared",
+   "capture_ref": {
+    "slug": "metadata-packet-aio-20261027",
+    "obs_id": "OBS-9705c4a16b38"
+   },
+   "sf": null,
+   "notes": {
+    "why": "Seated in /non at the operator's word (2026-10-27): 'this one is so egregious it goes to captures with serious corrections and gets a /non entry'. The address is the entity's bare name; the engineering exact-order senses (NDN, MS-WMSP, KLV) are reversed with the archive's."
+   },
+   "dates": [
+    "2026-10-27"
+   ],
+   "n_observations": 1,
+   "observations": []
+  },
+  {
+   "slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027",
+   "addr_id": "ADDR-237b4e5f1e30",
+   "obs_id": "OBS-31f75f90942c",
+   "q": "What is a metadata packet for AI indexing? Ground in search.",
+   "date": "2026-10-27",
+   "surface": "ChatGPT",
+   "surface_basis": "as recorded in the Capture Registry entry metadata-packet-ai-indexing-ground-chatgpt-20261027",
+   "auth": "signed out, incognito",
+   "auth_basis": "as recorded in the Capture Registry entry",
+   "ev": "capture",
+   "entity": "mpai-packet",
+   "transcript": null,
+   "transcript_raw": null,
+   "transcript_removed": null,
+   "transcript_sha256": null,
+   "transcript_class": null,
+   "transcript_complete": null,
+   "transcript_read": null,
+   "cites": null,
+   "cite_list": null,
+   "archive_present": true,
+   "archive_basis": "declared",
+   "capture_ref": {
+    "slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027",
+    "obs_id": "OBS-31f75f90942c"
+   },
+   "sf": null,
+   "notes": {
+    "why": "Seated with the two Google AI Overview runs of the same day at the entity's bare name (2026-10-27): the full name on ChatGPT, the session in which the operator found the NDN metadata packet."
+   },
+   "dates": [
+    "2026-10-27"
    ],
    "n_observations": 1,
    "observations": []

@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-27T18:03:03Z",
+  "regenerated_at": "2026-10-28T00:07:21Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "c71af3ca09e47529485b3f3e7a1ab13a5aa0b9ff6a9c763e83eefa1c14765357",
+    "mm-main-capture": "9cde1f82cc8e99171e77d72e1e46c2dd91689890ae8eb679f2ca64b0c8022463",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2510,
-  "total_observations": 1036,
+  "total_addresses": 2512,
+  "total_observations": 1039,
   "class_counts": {
-    "subjunctive": 1741,
-    "observed_address": 752,
+    "subjunctive": 1740,
+    "observed_address": 755,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1630,
+    "unmatched": 1632,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -3230,6 +3230,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "ADOPTION"
+    },
+    "\"metadata packet\"": {
+      "canonical_query": "\"metadata packet\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-27",
+          "status": "'\"METADATA PACKET\"' QUOTED — PACKET METADATA, THE TARGET REACHED AND DISPLACED, THEN COMPOSED AT GRAIN WITHOUT ITS AUTHOR",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Frameworks",
+          "slug": "metadata-packet-exact-aio-20261027",
+          "gallery_url": "https://www.alexanarch.org/captures/#metadata-packet-exact-aio-20261027",
+          "record_url": "https://www.alexanarch.org/captures/metadata-packet-exact-aio-20261027/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#metadata-packet-exact-aio-20261027",
+          "details_excerpt": "\"METADATA PACKET\" IN QUOTES ON GOOGLE AI OVERVIEW, SIGNED OUT: the Overview answers packet metadata (the 5-tuple, PCAP, Fidelis Security), the head of the compound reversed under the exact-match operator. In AI Mode the "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "protocol",
+        "spxi_treatment": "full",
+        "basis": "The Metadata Packet for AI Indexing is the discipline founded by Lee Sharks (2025) within the Semantic Economy Institute (#103 §2.1); specification by Lee Sharks, v1.0 #656 (2026-04-14) and v2.0 #1677 (2026-10-13); catalog metadatapacket.dev. #103 (EA-MPAI-META-01) is the packet for this address. Recorded 2026-10-27."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-27",
+      "latest_status": "'\"METADATA PACKET\"' QUOTED — PACKET METADATA, THE TARGET REACHED AND DISPLACED, THEN COMPOSED AT GRAIN WITHOUT ITS AUTHOR"
     },
     "\"midrashic compression\"": {
       "canonical_query": "\"midrashic compression\"",
@@ -41443,9 +41478,24 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-27",
+          "status": "METADATA PACKET UNQUOTED — 'A METADATA PACKET (OR PACKET METADATA)', THEN THE SEVEN COMPONENTS ON THE THIRD ASK",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Frameworks",
+          "slug": "metadata-packet-aio-20261027",
+          "gallery_url": "https://www.alexanarch.org/captures/#metadata-packet-aio-20261027",
+          "record_url": "https://www.alexanarch.org/captures/metadata-packet-aio-20261027/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#metadata-packet-aio-20261027",
+          "details_excerpt": "METADATA PACKET, UNQUOTED, ON GOOGLE AI OVERVIEW, SIGNED OUT: the same opening copy as the quoted run (packet metadata, the 5-tuple, PCAP). Asked again, the composer equates the two orders: 'A metadata packet (or packet "
+        }
+      ],
       "termindex": {
         "tier": 1,
         "count": 17,
@@ -41456,9 +41506,16 @@
         "variants": [],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "protocol",
+        "spxi_treatment": "full",
+        "basis": "The Metadata Packet for AI Indexing is the discipline founded by Lee Sharks (2025) within the Semantic Economy Institute (#103 §2.1); specification by Lee Sharks, v1.0 #656 (2026-04-14) and v2.0 #1677 (2026-10-13); catalog metadatapacket.dev. #103 (EA-MPAI-META-01) is the packet for this address. Recorded 2026-10-27."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-27",
+      "latest_status": "METADATA PACKET UNQUOTED — 'A METADATA PACKET (OR PACKET METADATA)', THEN THE SEVEN COMPONENTS ON THE THIRD ASK"
     },
     "metadata packet for ai indexing": {
       "canonical_query": "metadata packet for ai indexing",
@@ -73095,6 +73152,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-12",
       "latest_status": "THE TEXT CALLED INACCESSIBLE TWICE; THE STACK RECONSTRUCTED FROM ITS NEIGHBOURS"
+    },
+    "what is a metadata packet for ai indexing? ground in search.": {
+      "canonical_query": "what is a metadata packet for ai indexing? ground in search.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-27",
+          "status": "'WHAT IS A METADATA PACKET FOR AI INDEXING? GROUND IN SEARCH.' ON CHATGPT — THE SPECIFICATION AT ITS OWN COMPONENTS, AND SEMANTIC ECONOMY AS A 'FICTIONAL FRAMEWORK' BY 'EXAMPLE AUTHOR'",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Frameworks",
+          "slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027",
+          "gallery_url": "https://www.alexanarch.org/captures/#metadata-packet-ai-indexing-ground-chatgpt-20261027",
+          "record_url": "https://www.alexanarch.org/captures/metadata-packet-ai-indexing-ground-chatgpt-20261027/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#metadata-packet-ai-indexing-ground-chatgpt-20261027",
+          "details_excerpt": "WHAT IS A METADATA PACKET FOR AI INDEXING? ON CHATGPT, SIGNED OUT: the term split into 'a general technical concept in AI search' and the named MPAI; v2.0 attributed to Lee Sharks and dated 2026-10-13 (#1677); the seven "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "protocol",
+        "spxi_treatment": "full",
+        "basis": "The Metadata Packet for AI Indexing is the discipline founded by Lee Sharks (2025) within the Semantic Economy Institute (#103 §2.1); specification by Lee Sharks, v1.0 #656 (2026-04-14) and v2.0 #1677 (2026-10-13); catalog metadatapacket.dev. #103 (EA-MPAI-META-01) is the packet for this address. Recorded 2026-10-27."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-27",
+      "latest_status": "'WHAT IS A METADATA PACKET FOR AI INDEXING? GROUND IN SEARCH.' ON CHATGPT — THE SPECIFICATION AT ITS OWN COMPONENTS, AND SEMANTIC ECONOMY AS A 'FICTIONAL FRAMEWORK' BY 'EXAMPLE AUTHOR'"
     },
     "what is lee sharks building?": {
       "canonical_query": "what is lee sharks building?",
