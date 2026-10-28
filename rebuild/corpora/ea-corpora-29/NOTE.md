@@ -23,7 +23,7 @@ The Buddhist canons, at the author's direction of 2026-10-28 ("we need buddhist 
 - **29/10 east-asian-buddhism**: twenty works from Wikisource. Nine are of the Chinese canon and six of Chan. Four are of Japan: the Tannishō in the 1923 rendering, Hōnen, Hakuin, and the Heart Sūtra. One is of Korea: Han Yong-un's 님의 沈默 (1926), in ninety pages. The Shōbōgenzō and the Zuimonki are queued.
 - **29/11 derge-kangyur**: eight volumes of the Digital Derge Kangyur (Esukhia, public domain by its README) (tib29.py). They carry the Aṣṭasāhasrikā, the Diamond, the Heart, the Lalitavistara, the Laṅkāvatāra, the Lotus, the Sukhāvatīvyūha and the Vimalakīrti, with the Vinaya's first volume and the catalogue. The loci are the Tohoku markers.
 
-The seating is deposited as EA-CORPORA-29 (body29.py writes the issue body), at the author's request of 2026-10-28.
+The seating is deposited as EA-CORPORA-29, #1716, AXN:0A9F.DATASET (body29.py writes the issue body), at the author's request of 2026-10-28. The eleven seats take their AXNs from it as AXN:0A9F.ORIGINAL (seat_axns29.py).
 
 The source.json `seat`, `spine` and `seating` fields of 29/03–29/11 were set to the form 29/01–29/02 carry. `build29.py --loci` re-verifies a built seat's loci without refetching.
 

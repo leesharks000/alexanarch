@@ -38,7 +38,7 @@ def section(corpus, heading, sub):
     for k, lab in (("queued", "Queued"), ("cross_references", "Cross-references")):
         v = s.get(k)
         if v:
-            out += [f"- {lab}: " + ("; ".join(v) if isinstance(v, list) else "; ".join(f"{a}: {b}" for a, b in v.items()))]
+            out += [f"- {lab}: " + ("; ".join(v) if isinstance(v, list) else "; ".join(f"{a}: {b}" for a, b in v.items()) if isinstance(v, dict) else str(v))]
     out += [f"- Why seated: {s['why_seated']}",
             f"- Files: [the seat](https://www.alexanarch.org/data/corpora/{corpus}/) — [source.json](https://www.alexanarch.org/data/corpora/{corpus}/source.json), "
             f"[MANIFEST.sha256](https://www.alexanarch.org/data/corpora/{corpus}/MANIFEST.sha256). Shelf: "
@@ -72,12 +72,11 @@ desc = ("The twenty-ninth seating of the originals shelf, eleven seats. Kerouac 
         "Individual Seismograph' beside Eliot's essay. The avant-garde's statements of method, 1913–1929, and the arts of poetry still wanted. "
         "Belief & Technique for Telepathic Prose in its 2014 drafts, the book and the blog, with Make It Human, A Telepathicist Manifesto and "
         "the critical edition. And the Buddhist canons: the Pali Tipiṭaka complete; the Mahāyāna sūtras and śāstras in Sanskrit; the Chinese "
-        "canon with Chan, Dōgen, the Tannishō, Hakuin and Han Yong-un; and the Derge Kangyur in Tibetan.")
-kw = ("EA-CORPORA, originals shelf, ars poetica, art of poetry, poetics, Horace, Ovid, Nāṭyaśāstra, Dhvanyāloka, Great Preface, Wenfu, Wenxin "
-      "diaolong, Kokinshū, Pahanjip, Bialik, Qudama, Chahar Maqala, Snorri, Auraicept, Leys d'Amors, Dante, Boileau, Rimbaud, Mallarmé, Lope de "
-      "Vega, Mayakovsky, Sidney, Shelley, Eliot, Tradition and the Individual Seismograph, Imagism, Dada, Surrealism, Hu Shi, Language writing, "
+        "canon with Chan, the Tannishō, Hakuin and Han Yong-un; and the Derge Kangyur in Tibetan.")
+kw = ("EA-CORPORA, originals shelf, ars poetica, art of poetry, Horace, Ovid, Nāṭyaśāstra, Great Preface, Wenfu, Wenxin "
+      "diaolong, Kokinshū, Bialik, Snorri, Dante, Rimbaud, Mallarmé, Mayakovsky, Shelley, Eliot, Tradition and the Individual Seismograph, Imagism, Dada, Surrealism, Hu Shi, Language writing, "
       "Belief & Technique for Telepathic Prose, Kerouac, Pali Tipiṭaka, SuttaCentral, Mahāyāna, Lotus Sūtra, Prajñāpāramitā, Heart Sūtra, "
-      "Diamond Sūtra, Nāgārjuna, Śāntideva, Vasubandhu, Chan, Platform Sūtra, Linji, Blue Cliff Record, Gateless Barrier, Dōgen, Tannishō, "
+      "Diamond Sūtra, Nāgārjuna, Śāntideva, Vasubandhu, Chan, Platform Sūtra, Linji, Blue Cliff Record, Gateless Barrier, Tannishō, "
       "Hakuin, Han Yong-un, Derge Kangyur, Tibetan, GRETIL, Wikisource, Training Layer Literature")
 issue = "\n".join([
     "### Protocol Version\n\nalexanarch-deposit-protocol/v1\n",
