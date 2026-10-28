@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-10-27T15:07:49.022441Z",
- "seats": 122,
- "lines_total": 4335335,
+ "_generated": "2026-10-28T19:44:28.475301Z",
+ "seats": 124,
+ "lines_total": 4343326,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -879,7 +879,7 @@
   {
    "seat": "EA-CORPORA-02/14",
    "corpus": "dickinson-mss",
-   "edition": "Amherst College Digital Collections, Emily Dickinson Collection (/view/EmilyDickinson), served via Cantaloupe IIIF at arbitrary resolution. The manuscripts, not the print regularizations, are the authority; PD print layers (Poems 1890/1891/1896; Letters 1894) queued as subordinate finding layers.",
+   "edition": "Amherst College Digital Collections, Emily Dickinson Collection (/view/EmilyDickinson), served via Cantaloupe IIIF at arbitrary resolution. The manuscripts, not the print regularizations, are the authority; PD print layers as subordinate finding layers: Letters 1894 seated 2026-10-28 (print_layers); Poems 1890/1891/1896 queued.",
    "license": {
     "payload": "Manuscripts PD (Dickinson d. 1886). Image-rights ground: faithful reproductions of PD 2D works (Bridgeman) plus Amherst's open-collections practice; the per-object rights statements were UNVERIFIABLE at seat time (item pages 503) and their verification is the campaign's first gate, recorded as such rather than assumed.",
     "record": "CC-BY-4.0 applies to this seat record only.",
@@ -896,13 +896,25 @@
    "language": "English; the manuscripts carry the un-regularized text — dashes, variants, lineation the print tradition flattened",
    "lines": 0,
    "verified_loci": [
-    "ed0096 image fetched at /full/1600,/ and opened in-session; pilot-manifest.json carries URL, bytes, sha256"
+    "ed0096 image fetched at /full/1600,/ and opened in-session; pilot-manifest.json carries URL, bytes, sha256",
+    "L265, 7 June 1862 (Todd 1894, pp. 303–304) — 'My barefoot rank is better.' (text layer; the scan governs)",
+    "L265, the request — 'will you be my preceptor, Mr Higginson?' (text layer; the scan governs)",
+    "L265, 'to publish' — 'I smile when you suggest that I delay' (text layer; the scan governs)"
    ],
    "data": {
     "source": "https://www.alexanarch.org/data/corpora/dickinson-mss/source.json",
     "manifest": "https://www.alexanarch.org/data/corpora/dickinson-mss/MANIFEST.sha256"
    },
-   "axn": "AXN:0630.ORIGINAL.👁️🪜☉♅🔍↗️"
+   "axn": "AXN:0630.ORIGINAL.👁️🪜☉♅🔍↗️",
+   "print_layers": [
+    {
+     "slug": "letters-1894-todd",
+     "work": "Letters of Emily Dickinson, ed. Mabel Loomis Todd (Boston: Roberts Brothers, 1894), the University of Michigan copy",
+     "url": "https://archive.org/details/lettersemilydic00toadgoog",
+     "text": "text/letters-1894-todd.ocr.txt",
+     "seated": "2026-10-28"
+    }
+   ]
   },
   {
    "seat": "EA-CORPORA-02/01",
@@ -7208,7 +7220,105 @@
    "scope": "Declared, not seated: Paul Klee, Schöpferische Konfession, in Tribüne der Kunst und Zeit XIII (Erich Reiss, 1920), opens: open (published before 1931); Paul Klee, Pädagogisches Skizzenbuch (Bauhausbücher 2) (Albert Langen, 1925), opens: open (published before 1931); Paul Klee, Über die moderne Kunst (the Jena lecture of 1924) (Benteli, 1945), opens: 1 January 2041 in the United States, if its term was restored; Paul Klee, ed. Jürg Spiller, Das bildnerische Denken (Benno Schwabe, 1956), opens: the editor's apparatus under its own terms; Paul Klee, ed. Felix Klee, Tagebücher 1898–1918 (DuMont Schauberg, 1957), opens: the editor's apparatus under its own terms; Paul Klee, the pictures (about ten thousand works, 1883–1940), opens: the works open; the photographs under their holders' terms. Wanted, and open: the Pädagogisches Skizzenbuch (1925) and the Schöpferische Konfession (1920) in their first printings, with their drawings, from a scan whose licence is verified at the file. The pictures wait on a source whose images carry an open licence of their own.",
    "data": "https://www.alexanarch.org/data/corpora/paul-klee/",
    "axn": "AXN:0730.ORIGINAL.🌌⏳🝊🕊️📖📖"
+  },
+  {
+   "seat": "EA-CORPORA-29/01",
+   "corpus": "jack-kerouac",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-10-28",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "Jack Kerouac (1922–1969) is entered as wanted, at the operator's ruling of 2026-10-28 on the proposals of Belief & Technique for Telepathic Prose: A Critical Edition (§11). His two statements of method are the model the Footnote to Pearl names (Dead Letters, #1099, post #4, 10 May 2014): \"Belief & Technique for Modern Prose\", thirty items, written in a letter to Donald Allen in 1958 and printed in Evergreen Review in 1959, and \"Essentials of Spontaneous Prose\", printed in the Black Mountain Review in 1957 and in Evergreen Review in 1958, whose word for what spontaneous prose does to its reader, \"telepathic\", the Footnote takes into its title. His works are in copyright: those published before 1964 needed renewal, which is to be checked work by work; the later works run ninety-five years from publication.",
+   "scope": "Declared, not seated: Jack Kerouac, The Town and the City (Harcourt, Brace, 1950), opens: 2046-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, Essentials of Spontaneous Prose, in Black Mountain Review 7 (Black Mountain College, 1957), opens: 2053-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, On the Road (Viking Press, 1957), opens: 2053-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, The Subterraneans (Grove Press, 1958), opens: 2054-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, The Dharma Bums (Viking Press, 1958), opens: 2054-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, Essentials of Spontaneous Prose, in Evergreen Review 2.5 (Grove Press, 1958), opens: 2054-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, Belief & Technique for Modern Prose: List of Essentials, in Evergreen Review 2.8 (Grove Press, 1959), opens: 2055-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, Doctor Sax (Grove Press, 1959), opens: 2055-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, Mexico City Blues (Grove Press, 1959), opens: 2055-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, Book of Dreams (City Lights, 1961), opens: 2057-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, Big Sur (Farrar, Straus and Cudahy, 1962), opens: 2058-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Jack Kerouac, Visions of Cody (McGraw-Hill, 1972), opens: 2068-01-01; Jack Kerouac, Selected Letters, 1957–1969, ed. Ann Charters (the letter of 1958 to Donald Allen) (Viking, 1999), opens: 2040-01-01, seventy years after the author's death, for matter first published after 1977; the editor's apparatus under its own terms; Jack Kerouac, On the Road: The Original Scroll, ed. Howard Cunnell (Viking, 2007), opens: 2040-01-01, seventy years after the author's death; the editors' apparatus under its own terms. Wanted: the two statements of method first, in their first printings (Black Mountain Review 7, 1957; Evergreen Review 2.5, 1958, and 2.8, 1959), and the 1958 letter to Donald Allen in which the list was written; the renewal record of each work published before 1964, which decides when it opens. Until then the shelf describes the list and cites it by item number (Belief & Technique for Telepathic Prose: A Critical Edition, §7).",
+   "data": "https://www.alexanarch.org/data/corpora/jack-kerouac/"
+  },
+  {
+   "seat": "EA-CORPORA-29/02",
+   "corpus": "horace",
+   "edition": "Horace, Carmina (Odes), books I–IV — Paul Shorey and Gordon J. Laing, Horace, Odes and Epodes (Chicago: Benj. H. Sanborn, 1919), via Perseus lat2; Horace, Carmen Saeculare — Shorey and Laing (1919), via Perseus lat2; Horace, Epodi (Epodes) — Friedrich Vollmer, Q. Horati Flacci Carmina (Leipzig: Teubner, 1912), via Perseus lat2; Horace, Sermones (Satires), books I–II — Christopher Smart, The Works of Horace, vol. II (Philadelphia: Joseph Whetham, 1836), the Latin text, via Perseus lat2; Horace, Epistulae (Epistles), books I–II — H. Rushton Fairclough, Horace: Satires, Epistles and Ars Poetica (Loeb Classical Library; London: Heinemann; Cambridge, MA: Harvard University Press, 1929), via Perseus lat2; Horace, Ars Poetica (Epistula ad Pisones) — Smart (1836), the Latin text, via Perseus lat2",
+   "license": {
+    "payload": "Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); the underlying editions are in the public domain in the United States (Smart 1836, Vollmer 1912, Shorey and Laing 1919, Fairclough 1929: all published before 1931).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/8b536bdf3ed1f43494055efe112433b4a58eab67/data/phi0893/phi001/phi0893.phi001.perseus-lat2.xml",
+      "source": "PerseusDL/canonical-latinLit",
+      "repository": "https://github.com/PerseusDL/canonical-latinLit",
+      "commit": "8b536bdf3ed1f43494055efe112433b4a58eab67",
+      "file": "data/phi0893/phi001/phi0893.phi001.perseus-lat2.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/8b536bdf3ed1f43494055efe112433b4a58eab67/data/phi0893/phi002/phi0893.phi002.perseus-lat2.xml",
+      "source": "PerseusDL/canonical-latinLit",
+      "repository": "https://github.com/PerseusDL/canonical-latinLit",
+      "commit": "8b536bdf3ed1f43494055efe112433b4a58eab67",
+      "file": "data/phi0893/phi002/phi0893.phi002.perseus-lat2.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/8b536bdf3ed1f43494055efe112433b4a58eab67/data/phi0893/phi003/phi0893.phi003.perseus-lat2.xml",
+      "source": "PerseusDL/canonical-latinLit",
+      "repository": "https://github.com/PerseusDL/canonical-latinLit",
+      "commit": "8b536bdf3ed1f43494055efe112433b4a58eab67",
+      "file": "data/phi0893/phi003/phi0893.phi003.perseus-lat2.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/8b536bdf3ed1f43494055efe112433b4a58eab67/data/phi0893/phi004/phi0893.phi004.perseus-lat2.xml",
+      "source": "PerseusDL/canonical-latinLit",
+      "repository": "https://github.com/PerseusDL/canonical-latinLit",
+      "commit": "8b536bdf3ed1f43494055efe112433b4a58eab67",
+      "file": "data/phi0893/phi004/phi0893.phi004.perseus-lat2.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/8b536bdf3ed1f43494055efe112433b4a58eab67/data/phi0893/phi005/phi0893.phi005.perseus-lat2.xml",
+      "source": "PerseusDL/canonical-latinLit",
+      "repository": "https://github.com/PerseusDL/canonical-latinLit",
+      "commit": "8b536bdf3ed1f43494055efe112433b4a58eab67",
+      "file": "data/phi0893/phi005/phi0893.phi005.perseus-lat2.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/8b536bdf3ed1f43494055efe112433b4a58eab67/data/phi0893/phi006/phi0893.phi006.perseus-lat2.xml",
+      "source": "PerseusDL/canonical-latinLit",
+      "repository": "https://github.com/PerseusDL/canonical-latinLit",
+      "commit": "8b536bdf3ed1f43494055efe112433b4a58eab67",
+      "file": "data/phi0893/phi006/phi0893.phi006.perseus-lat2.xml"
+     }
+    ],
+    "fetched": "2026-10-28",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 7991,
+   "verified_loci": [
+    "Ars Poetica 1 — 'Humano capiti cervicem pictor equinam'",
+    "Ars Poetica 453–476, the mad poet and Empedocles — 'sit ius liceatque perire poetis'",
+    "Ars Poetica 465, Empedocles in Etna — 'Empedocles'",
+    "Carmina 3.30.1 — 'Exegi monumentum aere perennius'",
+    "Carmina 1.1.1 — 'Maecenas atavis edite regibus'"
+   ],
+   "why_seated": "At the operator's ruling of 2026-10-28, on the proposals of Belief & Technique for Telepathic Prose: A Critical Edition (§11): the Ars Poetica is the genre's founding text, whose close (the mad poet in the pit, Empedocles in Etna, 453–476) the Footnote to Pearl distributes through its list. The shelf held Longinus (01/06) and no Horace.",
+   "scope": "Horace's poems entire in Latin, six works in six TEI files at one pinned commit of PerseusDL/canonical-latinLit. The editions differ by work, as Perseus carries them; each is named with its file.",
+   "data": "https://www.alexanarch.org/data/corpora/horace/"
   }
  ],
- "count": 122
+ "count": 124
 }

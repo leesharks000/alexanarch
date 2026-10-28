@@ -2,7 +2,7 @@
  "seat": "EA-CORPORA-02/14",
  "corpus": "dickinson-mss",
  "title": "Emily Dickinson — The Manuscripts (Amherst College, IIIF): ROUTE PROVEN, PILOT SECURED, CAMPAIGN QUEUED",
- "edition": "Amherst College Digital Collections, Emily Dickinson Collection (/view/EmilyDickinson), served via Cantaloupe IIIF at arbitrary resolution. The manuscripts, not the print regularizations, are the authority; PD print layers (Poems 1890/1891/1896; Letters 1894) queued as subordinate finding layers.",
+ "edition": "Amherst College Digital Collections, Emily Dickinson Collection (/view/EmilyDickinson), served via Cantaloupe IIIF at arbitrary resolution. The manuscripts, not the print regularizations, are the authority; PD print layers as subordinate finding layers: Letters 1894 seated 2026-10-28 (print_layers); Poems 1890/1891/1896 queued.",
  "origin": {
   "host": "acdc.amherst.edu",
   "collection": "/view/EmilyDickinson",
@@ -20,7 +20,10 @@
  "scope": "Amherst holds the fascicle sheets and loose manuscripts at the heart of the corpus. The campaign: enumerate ed-objects, verify per-object rights statements, harvest at study resolution with full-res IIIF pointers, seat Franklin-number concordance.",
  "status": "ROUTE PROVEN; PILOT SECURED (ed0096 p01, sha256 in pilot-manifest.json); enumeration, rights verification, and harvest QUEUED pending host stability.",
  "verified_loci": [
-  "ed0096 image fetched at /full/1600,/ and opened in-session; pilot-manifest.json carries URL, bytes, sha256"
+  "ed0096 image fetched at /full/1600,/ and opened in-session; pilot-manifest.json carries URL, bytes, sha256",
+  "L265, 7 June 1862 (Todd 1894, pp. 303–304) — 'My barefoot rank is better.' (text layer; the scan governs)",
+  "L265, the request — 'will you be my preceptor, Mr Higginson?' (text layer; the scan governs)",
+  "L265, 'to publish' — 'I smile when you suggest that I delay' (text layer; the scan governs)"
  ],
  "rulings_pending_gathering_record": [
   "Rights-statement verification as campaign gate",
@@ -34,5 +37,29 @@
   "family": "ORIGINAL",
   "glyph_table": "v2.1",
   "assigned": "2026-10-27"
- }
+ },
+ "print_layers": [
+  {
+   "slug": "letters-1894-todd",
+   "work": "Letters of Emily Dickinson, ed. Mabel Loomis Todd (Boston: Roberts Brothers, 1894), the University of Michigan copy",
+   "source": "Internet Archive",
+   "identifier": "lettersemilydic00toadgoog",
+   "url": "https://archive.org/details/lettersemilydic00toadgoog",
+   "files": [
+    "original/lettersemilydic00toadgoog/lettersemilydic00toadgoog.pdf",
+    "original/lettersemilydic00toadgoog/lettersemilydic00toadgoog_djvu.txt"
+   ],
+   "text": "text/letters-1894-todd.ocr.txt",
+   "md5_checked": "both files against the md5 the Archive publishes, 2026-10-28; the PDF opened (pdfinfo)",
+   "rights": "Public domain (published 1894; the Archive marks it NOT_IN_COPYRIGHT)",
+   "authority": "A subordinate finding layer under the seat's doctrine: the manuscripts are the authority, and Todd's text is a regularization (L265 prints 'My barefoot rank is better.', where the manuscript reads 'My Barefoot-Rank is better —').",
+   "seated": "2026-10-28",
+   "why": "At the operator's ruling of 2026-10-28, on the proposals of Belief & Technique for Telepathic Prose: A Critical Edition (§11), which quotes L265 in item 23; the first of the queued print layers.",
+   "verified_loci": [
+    "L265, 7 June 1862 (Todd 1894, pp. 303–304) — 'My barefoot rank is better.' (text layer; the scan governs)",
+    "L265, the request — 'will you be my preceptor, Mr Higginson?' (text layer; the scan governs)",
+    "L265, 'to publish' — 'I smile when you suggest that I delay' (text layer; the scan governs)"
+   ]
+  }
+ ]
 }

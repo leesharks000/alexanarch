@@ -44,5 +44,17 @@
   "family": "ORIGINAL",
   "glyph_table": "v2.1",
   "assigned": "2026-10-27"
- }
+ },
+ "repairs": [
+  {
+   "date": "2026-10-28",
+   "file": "text/tlg002-Odyssey.txt",
+   "defect": "every line of the Odyssey text layer was tagged 'Odyssey 1.n': the converter matched the Iliad's subtype=\"Book\" and missed the Odyssey's subtype=\"book\", so the book numbers were lost (24.6 read '1.6')",
+   "repair": "tags re-derived from the original TEI (original/tlg0012.tlg002.perseus-grc2.xml), book by book; 12,107 lines, every line number matched to the TEI before the tag was rewritten; the Greek text of every line unchanged",
+   "sha256_before": "1bdbc0e2588e9743f1009c3da849fc3ccc5cf414ea3408133394ee21199efd97",
+   "sha256_after": "031855fb39a101caf2856c9a2b023548511c74da6cf21f76a0fda2022d29546b",
+   "raised_by": "Belief & Technique for Telepathic Prose: A Critical Edition (§11), at the operator's ruling of 2026-10-28",
+   "axn": "the seat's AXN stands as assigned; its basis records the manifest at assignment"
+  }
+ ]
 }
