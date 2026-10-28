@@ -413,6 +413,26 @@ def kernels(d):
     L = []
     mt = {m["mantle"]: m for m in d.get("mantles", [])}
     ev = [e for e in d.get("evaluations", [])]
+    k6 = next((c for c in d.get("criteria", []) if c["criterion_id"] == "criteria::KOM-6"), None)
+    if k6:
+        L += ["## The King of May — KOM-6, the command", "",
+              f"*A sixth slot of the King of May (#1656 §9), at the author's ruling of {k6['ruled_on']}. Status: {k6['status']}.*", "",
+              f"**The slot.** {k6['formulation']}", "",
+              f"**The ruling.** {k6['author_ruling']}", "",
+              f"**The claim, recorded and not evaluated.** \"{k6['claim_recorded']['text']}\" ({k6['claim_recorded']['by']}, {k6['claim_recorded']['date']}).", "",
+              "**Inspection operations** (table `inspection_operations`; specified, not run):", ""]
+        L += [f"- **{o['operation_id']} · {o['name']}.** {o['task']} → {o['output']} Entry: {o['entry']}"
+              for o in d.get("inspection_operations", []) if o["operation_id"].startswith("KOM-O")]
+        L += ["", "**Comparands** (table `candidates`; initial objects for inspection, not a ranked list):", "",
+              "| ID | comparand | status |", "|---|---|---|"]
+        L += [f"| {c['cand_id']} | {c['name']} | {c.get('status') or ''} |" for c in d.get("candidates", []) if c["cand_id"].startswith("KOM-C")]
+        rk = [r for r in d.get("readings", []) if r["mantle"] == "king-of-may"]
+        if rk:
+            L += ["", "**Readings of the Footnote so far** (table `readings`; coded on STANDING_PRIOR_TO_WORK, #1656 §11.0):", ""]
+            L += [f"- `{r['reading_id']}` — {r['reader']}, [capture]({r['capture_url']}): {r['object_taken']}. "
+                  f"Coded: {', '.join(r['collapses']) or 'none'}." for r in rk]
+        L += ["", "**Required work:** BTP-2014 (table `required_works`), read whole; reading aid "
+              f"[#1717]({A}/s/records/1717/).", ""]
     la = mt.get("the-living-academy")
     if la:
         L += ["## The Living Academy — a critical program", "",
