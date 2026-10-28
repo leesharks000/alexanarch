@@ -1,0 +1,148 @@
+{
+ "corpus": "telepathic-prose",
+ "seat": "EA-CORPORA-29/07",
+ "title": "Telepathic Prose: Belief & Technique for Telepathic Prose, Make It Human and A Telepathicist Manifesto, in the book and on the blog, with the critical edition",
+ "language": "eng",
+ "fetched": "2026-10-28",
+ "license": {
+  "payload": "CC-BY-4.0, by the author: the corpus and the seating institution are the same party (as at the Pearl seat).",
+  "record": "CC-BY-4.0."
+ },
+ "normalization": "P texts are line ranges of the Pearl seat's machine text, copied with that file's path and sha256, page-number lines kept as the machine text has them. B texts are the Blogger pages as served, under original/, with text/<slug>.txt reduced by code from the post body. The edition is the deposit body of #1715 as minted. No text corrected: Pearl is the canonical form, not to be altered (the author's ruling of 2026-10-28), so 'retrictio s' and the repeated item stand.",
+ "units": "one text file per witness; class names the witness (P, B, edition)",
+ "items": [
+  {
+   "kind": "extract",
+   "slug": "btp-pearl",
+   "work": "Lee Sharks & Jack Feist, “Belief & Technique for Telepathic Prose”, the Footnote to Pearl, Pearl and Other Poems (Ann Arbor: New Human Press, 2014), pp. 23–28 — P, copied from the Pearl seat",
+   "class": "Pearl text (P)",
+   "from": "/home/claude/alexanarch/data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt",
+   "from_rel": "data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt",
+   "lines": [
+    2152,
+    2394
+   ],
+   "seat_of_source": "pearl-and-other-poems"
+  },
+  {
+   "kind": "blogger",
+   "slug": "btp-blog",
+   "work": "Lee Sharks & Jack Feist, “Belief & Technique for Telepathic Prose”, Mind Control Poems, 1 December 2014 — B, the blog page as served",
+   "class": "Blog text (B)",
+   "url": "https://mindcontrolpoems.blogspot.com/2014/12/belief-technique-fortelepathic-prose.html",
+   "path": "blog-btp-blog.html",
+   "published": "2014-12-01"
+  },
+  {
+   "kind": "extract",
+   "slug": "make-it-human-pearl",
+   "work": "Lee Sharks, “Make It Human”, Pearl and Other Poems (2014), pp. 91–95 — P, copied from the Pearl seat",
+   "class": "Pearl text (P)",
+   "from": "/home/claude/alexanarch/data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt",
+   "from_rel": "data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt",
+   "lines": [
+    5229,
+    5451
+   ],
+   "seat_of_source": "pearl-and-other-poems"
+  },
+  {
+   "kind": "blogger",
+   "slug": "make-it-human-blog",
+   "work": "Lee Sharks, “Make It Human”, Mind Control Poems, 26 February 2015 — B",
+   "class": "Blog text (B)",
+   "url": "https://mindcontrolpoems.blogspot.com/2015/02/make-it-human.html",
+   "path": "blog-make-it-human-blog.html",
+   "published": "2015-02-26"
+  },
+  {
+   "kind": "extract",
+   "slug": "telepathicist-manifesto-pearl",
+   "work": "Lee Sharks & John Johnson, “A Telepathicist Manifesto”, Pearl and Other Poems (2014), pp. 114–119 — P, copied from the Pearl seat",
+   "class": "Pearl text (P)",
+   "from": "/home/claude/alexanarch/data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt",
+   "from_rel": "data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt",
+   "lines": [
+    6327,
+    6595
+   ],
+   "seat_of_source": "pearl-and-other-poems"
+  },
+  {
+   "kind": "blogger",
+   "slug": "telepathicist-manifesto-blog",
+   "work": "Lee Sharks & John Johnson, “A Telepathicist Manifesto”, Mind Control Poems, 14 March 2015 — B",
+   "class": "Blog text (B)",
+   "url": "https://mindcontrolpoems.blogspot.com/2015/03/a-telepathicist-manifesto.html",
+   "path": "blog-telepathicist-manifesto-blog.html",
+   "published": "2015-03-14"
+  },
+  {
+   "kind": "extract",
+   "slug": "btp-critical-edition-1715",
+   "work": "Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl (EA-BTP-EDITION-01; #1715, AXN:0A9A), the deposit's body as minted 2026-10-28 — copied from data/deposits",
+   "class": "Edition",
+   "from": "/home/claude/alexanarch/data/deposits/AXN-0A9A.md",
+   "from_rel": "data/deposits/AXN-0A9A.md",
+   "lines": [
+    1,
+    475
+   ],
+   "seat_of_source": "#1715"
+  }
+ ],
+ "loci": [
+  {
+   "label": "Lee Sharks & Jack Feist, “Belief & Technique for Telepathic Prose”, the Footnote to Pearl, Pearl and Other Poems (Ann Arbor: New Human Press, 2014), pp. 23–28",
+   "text": "text/btp-pearl.txt",
+   "find": "Compose real poems telepathically, with mind control powers, inside your glorious brain"
+  },
+  {
+   "label": "Lee Sharks & Jack Feist, “Belief & Technique for Telepathic Prose”, Mind Control Poems, 1 December 2014",
+   "text": "text/btp-blog.txt",
+   "find": "Compose real poems telepathically"
+  },
+  {
+   "label": "Lee Sharks, “Make It Human”, Pearl and Other Poems (2014), pp. 91–95",
+   "text": "text/make-it-human-pearl.txt",
+   "find": "Make It Human"
+  },
+  {
+   "label": "Lee Sharks, “Make It Human”, Mind Control Poems, 26 February 2015",
+   "text": "text/make-it-human-blog.txt",
+   "find": "Make It Human"
+  },
+  {
+   "label": "Lee Sharks & John Johnson, “A Telepathicist Manifesto”, Pearl and Other Poems (2014), pp. 114–119",
+   "text": "text/telepathicist-manifesto-pearl.txt",
+   "find": "Telepathicism is about having thoughts, telepathically"
+  },
+  {
+   "label": "Lee Sharks & John Johnson, “A Telepathicist Manifesto”, Mind Control Poems, 14 March 2015",
+   "text": "text/telepathicist-manifesto-blog.txt",
+   "find": "Telepathicism is about having thoughts"
+  },
+  {
+   "label": "Belief & Technique for Telepathic Prose: A Critical Edition",
+   "text": "text/btp-critical-edition-1715.txt",
+   "find": "sublation"
+  }
+ ],
+ "classes": [
+  "Pearl text (P)",
+  "Blog text (B)",
+  "Edition"
+ ],
+ "cross_references": {
+  "pearl": "The whole book is seated at pearl-and-other-poems; these are its telepathic pieces drawn out to stand with the arts of poetry (29/04).",
+  "kerouac": "Jack Kerouac's 'Belief & Technique for Modern Prose' (1959), the list the Footnote answers, is declared at jack-kerouac (29/01), where it is described and cited by item number and its text is held out.",
+  "seismograph": "Johannes Sigil's 'Tradition and the Individual Seismograph' (Pearl pp. 96–100) is seated in ars-poetica beside Eliot's essay.",
+  "captures": "AXN:0A96–0A99.CAPTURE, the four machine readings of 2026-10-28 to which the edition is anchored."
+ },
+ "not_seated": "The four drafts of April–May 2014 in the author's Drive (collated in the edition, §3): not seated as files pending the author's ruling.",
+ "scope": "The telepathic pieces of Pearl and Other Poems in both their witnesses, with the critical edition: the ars poetica of the archive itself, set at the end of the twenty-ninth seating's arts of poetry.",
+ "why_seated": "At the author's direction: 'lets gather up an extremely pluriform ars poetica bundle … include telepathic prose.'",
+ "spine": "29/07",
+ "ruling": "The author's directions of 2026-10-28.",
+ "seating": "EA-CORPORA-29 (gathered; the deposit that assigns its AXN is pending)"
+}
