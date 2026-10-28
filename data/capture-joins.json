@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.332",
+ "derived_from": "EA-WG-CAPTURES-01 v12.333",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,18 +8,18 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 928,
-  "joined_confirmed": 420,
+  "observations": 929,
+  "joined_confirmed": 421,
   "unjoined": 508,
-  "relations": 4405,
+  "relations": 4410,
   "by_state": {
-   "confirmed": 3971,
-   "candidate": 434
+   "confirmed": 3975,
+   "candidate": 435
   },
   "by_verb": {
-   "held_by": 1936,
-   "scored_by": 673,
-   "appeared_in": 1455,
+   "held_by": 1938,
+   "scored_by": 674,
+   "appeared_in": 1457,
    "about": 328,
    "distorts": 3,
    "mentions_instrument": 2,
@@ -1721,6 +1721,11 @@
 {"id": "REL-96befb9c2043", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7c5b11c686f0", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-8183da0b2464", "obs_id": "OBS-31f75f90942c", "entry": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "obs_slug": "metadata-packet-ai-indexing-ground-chatgpt-20261027", "date": "2026-10-27", "surface": "ChatGPT", "q": "What is a metadata packet for AI indexing? Ground in search.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-1d10728e643a", "obs_id": "OBS-21e52e336c98", "entry": "mcp-2014-2015-living-body-chatgpt-20261028", "obs_slug": "mcp-2014-2015-living-body-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Read 2014-2015 posts to mindcontrolpoems as a living body of evolving thought. Ground in reading.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-76278c98f699", "obs_id": "OBS-21e52e336c98", "entry": "mcp-2014-2015-living-body-chatgpt-20261028", "obs_slug": "mcp-2014-2015-living-body-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Read 2014-2015 posts to mindcontrolpoems as a living body of evolving thought. Ground in reading.", "verb": "appeared_in", "object": "deposit:184", "basis": "card resolved at intake (the critical edition it names)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-d2a78f0c7bce", "obs_id": "OBS-21e52e336c98", "entry": "mcp-2014-2015-living-body-chatgpt-20261028", "obs_slug": "mcp-2014-2015-living-body-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Read 2014-2015 posts to mindcontrolpoems as a living body of evolving thought. Ground in reading.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-81215ff46819", "obs_id": "OBS-21e52e336c98", "entry": "mcp-2014-2015-living-body-chatgpt-20261028", "obs_slug": "mcp-2014-2015-living-body-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Read 2014-2015 posts to mindcontrolpoems as a living body of evolving thought. Ground in reading.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-04c2d7c9134c", "obs_id": "OBS-21e52e336c98", "entry": "mcp-2014-2015-living-body-chatgpt-20261028", "obs_slug": "mcp-2014-2015-living-body-chatgpt-20261028", "date": "2026-10-28", "surface": "ChatGPT", "q": "Read 2014-2015 posts to mindcontrolpoems as a living body of evolving thought. Ground in reading.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-a4171af2c9ca", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:27", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "medium.com", "title": "The Crimson Hexagon: Operative Architecture", "url": "https://medium.com/@leesharks00/the-crimson-hexagon-operative-architecture-b21dd55d45a9"}},
 {"id": "REL-ac9573506dce", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "deposit:30", "basis": "card resolved at intake (title segment)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "medium.com", "title": "Fractal Navigation Map v7.0", "url": "https://medium.com/@leesharks00/crimson-hexagonal-architecture-fractal-navigation-map-v7-0-42c498ac4225"}},
 {"id": "REL-3d2fa0e5035c", "obs_id": "OBS-9943ca89397a", "entry": "lee-sharks-rex-fraction-20260609", "obs_slug": "lee-sharks-rex-fraction-20260609", "date": "2026-06-09", "surface": "UNRESOLVED", "q": "lee sharks rex fraction", "verb": "appeared_in", "object": "surface:crimsonhexagonal.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 9, "site": "crimsonhexagonal.org", "title": "Crimson Hexagonal Archive — Governed Operating Surface", "url": null}},
