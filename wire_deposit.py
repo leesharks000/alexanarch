@@ -985,6 +985,16 @@ def _authorship(d):
     sub = str(d.get('substrate') or '').strip()
     if sub:
         rows.append(f'<div><strong>Substrate:</strong> {e(sub)}</div>')
+    # 2026-10-28 (MANUS): a work composed years before its deposit carries its composition date apart from the
+    # deposit date, and the edition points to its original — readers had been dating 2014–2015 texts by their
+    # 2026 deposit and calling them AI-assisted from an undivided substrate line.
+    _ds = d.get('date_semantics') if isinstance(d.get('date_semantics'), dict) else {}
+    if _ds.get('dateCreated'):
+        _posted = f"; first posted {e(_ds['firstPosted'])}" if _ds.get('firstPosted') else ''
+        _orig = [r for r in (d.get('related_deposits') or []) if isinstance(r, dict) and r.get('relation') in ('original_text', 'collected_in') and r.get('deposit')]
+        _ol = ''.join(f' · {"original text" if r["relation"] == "original_text" else "collected in"}: <a href="/s/records/{r["deposit"]}/" style="color:var(--accent)">#{r["deposit"]}</a>' + (f' ({e(r["note"])})' if r.get('note') else '') for r in _orig)
+        rows.append(f'<div><strong>Composed:</strong> {e(_ds["dateCreated"])}{_posted} · deposited {e(_ds.get("dateDeposited") or d.get("date") or "")}{_ol}'
+                    + (f' <span style="color:#777">— {e(_ds["basis"])}</span>' if _ds.get('basis') else '') + '</div>')
     lic = str(d.get('license') or '').strip()
     if lic:
         rows.append(f'<div><strong>License:</strong> {e(lic)}</div>')
@@ -1144,6 +1154,7 @@ def regenerate_static_page(d, eidx, registry=None):
         "headline": str(d['title'])[:110],
         "author": {"@type": "Person", "name": d['creator']},
         "datePublished": d['date'],
+        **({"dateCreated": d['date_semantics']['dateCreated']} if isinstance(d.get('date_semantics'), dict) and d['date_semantics'].get('dateCreated') else {}),
         **({"dateModified": d['date_modified']} if d.get('date_modified') else {}),
         "identifier": d['axn'],
         **({"version": d['version']} if d.get('version') else {}),
@@ -1348,6 +1359,9 @@ def regenerate_static_page(d, eidx, registry=None):
                        + '</div></div>')
         _bases = [f"https://www.alexanarch.org/s/records/{e['to']}/" for e in (_pr.get('backward') or []) if e.get('k') == 'inherits' and isinstance(e.get('to'), int)]
         if _bases: _ld['isBasedOn'] = _bases
+    _origs = [f"https://www.alexanarch.org/s/records/{r['deposit']}/" for r in (d.get('related_deposits') or []) if isinstance(r, dict) and r.get('relation') == 'original_text' and r.get('deposit')]
+    if _origs:
+        _ld['isBasedOn'] = list(dict.fromkeys((_ld.get('isBasedOn') or []) + _origs))
     _ident_html = ''
     if _dois or d.get('mint_derivation'):
         _rows = ''.join(f'<div><span style="color:#b23">former DOI</span> <span class="m" style="font-family:var(--mono);font-size:.85em">{esc(_u.replace("https://doi.org/",""))}</span> — severed 2026-06-19 by the registrant; {esc(_doi_state(_u.replace("https://doi.org/","")))}; <a href="/s/doi/{esc(_u.replace("https://doi.org/",""))}/" style="color:var(--accent)">resolution page</a></div>' for _u in _dois)
