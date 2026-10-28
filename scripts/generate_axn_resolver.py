@@ -473,13 +473,21 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
                   "about": {"@type": {"dataset": "Dataset", "instrument": "CreativeWork", "site": "WebSite"}.get(L['kind'], "Thing"),
                             "name": nm, **({"url": L['locations'][0]} if L.get('locations') else {})},
                   "additionalProperty": [{"@type": "PropertyValue", "name": "family", "value": L['family']}]}
+            # 2026-10-28 (MANUS: "build wikis for the dataset resolver pages"): the object's wiki (data/releases/wikis.json,
+            # carried into the ledger by release_axn.py) is shown as "The dataset" / "The instrument" / "The site".
+            _rw = str(L.get('wiki') or '').strip()
+            _wiki_html = (f'<section><h2>The {html.escape(_kind_name.get(L["kind"], L["kind"]))}</h2>\n'
+                          + ''.join(f'<p>{_md_inline(par.strip())}</p>' for par in _rw.split('\n\n') if par.strip()) + '</section>\n') if _rw else ''
+            if _rw:
+                ld["about"]["description"] = _rw
+                idx[hx]["wiki"] = True
             d = ROOT/'s/axn'/hx; d.mkdir(exist_ok=True)
             (d/'index.html').write_text(f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <title>{html.escape(L['root'])} — {html.escape(nm)} — Alexanarch AXN resolver</title>
 <link rel="canonical" href="{axn_url}">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
-<meta name="description" content="{html.escape(_desc)}">
+<meta name="description" content="{html.escape(_rw[:300] if _rw else _desc)}">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
 <h1>{html.escape(L['root'])}</h1>
@@ -492,7 +500,7 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
 {extra}
 <dt>Ledger</dt><dd><a href="/data/releases/axn.json">/data/releases/axn.json</a></dd>
 </dl>
-{chr(10).join(blocks)}
+{_wiki_html}{chr(10).join(blocks)}
 <p>Resolver rule: <code>alexanarch.org/axn/&lt;HEX&gt;</code> &middot;
 term set: <a href="/s/axn/">AXN identifier set</a> &middot;
 machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>

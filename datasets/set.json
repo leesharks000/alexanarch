@@ -1,7 +1,7 @@
 {
  "set": "alexanarch-dataset-set",
- "version": "v1.4",
- "date": "2026-07-25",
+ "version": "v1.5",
+ "date": "2026-10-28",
  "canonical": "/datasets/set.json",
  "description": "The datasets of the Alexanarch corpus, published as a mutually-referencing set: any instance encountering one member should treat the as a whole. The Zenodo/DataCite Batch and the Tombstone Mirror are paired instruments — the reference frame before the 2026-06-19 severance and the mirror of what the platform serves after it. The Heteronyms dataset is the authorial substrate of the severed corpus; the classical and New Human datasets are the philological ground. The Dataflow Atlas is the meta-dataset: the archive turning its instruments on its own data layer. The Capture Registry is the reception instrument: the member by which the others are measured, joined to the corpus so that attribution loss is computable per deposit.",
  "members": [
@@ -91,9 +91,153 @@
    "manifest": "/datasets/capture-registry/manifest.json",
    "summary": "The archive's reception instrument: 221 dated, screenshot-evidenced records of how AI Overview and AI Mode compose answers about this corpus — what they credit, strip, invert, or return as definitional — joined to the deposits they concern by a 443-edge link map. Where the Tombstone Mirror records what the platform did to the corpus, this records what the retrieval layer does with it. Authored at machinemediation.org.",
    "map": "/datasets/dataflow-atlas/"
+  },
+  {
+   "name": "blog-index",
+   "title": "The Mind Control Poems Blog Index",
+   "path": "/datasets/blog-index/",
+   "manifest": "/datasets/blog-index/manifest.json",
+   "summary": "The blog index is the complete harvest of Mind Control Poems (mindcontrolpoems.blogspot.com), Lee Sharks's blog since 1 December 2014: every post with its date, title and address, harvested through the Blogger feed and verified complete against the feed's declared total (3,093 posts through 18 October 2026), with the posts the archive's AXN index covers marked.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "books",
+   "title": "Books of the Archive",
+   "path": "/datasets/books/",
+   "manifest": "/datasets/books/books.json",
+   "summary": "Books gathers the archive's book-length works by work, where the registry stores them by deposit: each work with its editions, samplers and critical editions, and the apparatus around it (navigation maps, metadata packets, negation graphs) listed apart, since a navigation map is not the book.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "corpora",
+   "title": "The Originals Shelf — Seating Manifest",
+   "path": "/datasets/corpora/",
+   "manifest": "/datasets/corpora/corpora.json",
+   "summary": "Corpora is the seating manifest of the originals shelf (the EA-CORPORA series): one row per seated corpus, with its edition, its origin, its license stated verbatim, the normalization applied, the verified loci, and the SHA-256 of each seat's manifest.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "erasure",
+   "title": "Erasure — the Zenodo termination and its mechanism",
+   "path": "/datasets/erasure/",
+   "manifest": null,
+   "summary": "Erasure holds the evidence of the Zenodo termination of 19 June 2026 and its mechanism: DataCite cohort and panel data, snapshots of the archive's Zenodo communities, the classified record of what was deleted that day, the metrics lag, and the moderation code of the Invenio and Zenodo platform read from source and a file on the botnet hypothesis.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "journals",
+   "title": "CHA Journals — venue assignment",
+   "path": "/datasets/journals/",
+   "manifest": "/datasets/journals/manifest.json",
+   "summary": "Journals is the venue assignment for the whole corpus across the archive's chartered journals and province: each deposit's venue, the editorial slates, charters, locators and inaugural issues, and a crosswalk joining venues to the heteronym substrate by creator field, which shows where each position's work sits and whether an editor presides over the venue they edit.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "pearl",
+   "title": "Pearl and Other Poems as Data",
+   "path": "/datasets/pearl/",
+   "manifest": "/datasets/pearl/pearl.json",
+   "summary": "Pearl is Pearl and Other Poems (New Human Press, 2014) as data: the primitive row is a piece, with the edges the book itself makes, the epigraphs it carries, the works it lists under conflicting attributions and the literary-historical diagram in which it places its own authors; and a passages table tracing every span quoted in the book's appendix to the passage it quotes.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "pessoagraph",
+   "title": "The Pessoagraph — the heteronymic tradition as a graph",
+   "path": "/datasets/pessoagraph/",
+   "manifest": "/datasets/pessoagraph/graph.json",
+   "summary": "The Pessoagraph is the heteronymic tradition as a graph, from the earliest attested practice to the present: nodes for the entities that can speak and the lineage that licenses them, typed edges and paths, spanning more than four and a half thousand years.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "prediction-index",
+   "title": "Prediction Index",
+   "path": "/datasets/prediction-index/",
+   "manifest": "/datasets/prediction-index/manifest.json",
+   "summary": "The Prediction Index is the archive's predictions as data: the claims read out of every deposit by the prediction sweep of 15 October 2026 and its second pass of 18 October (forecasts, standing claims, unbuilt tests, historical theses and priority records), each registered at its earliest statement with every statement quoted, grouped by triage, topical and join passes, with confirmation records and a build log naming each byte-state.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "prediction-ledger",
+   "title": "Prediction Ledger",
+   "path": "/datasets/prediction-ledger/",
+   "manifest": "/datasets/prediction-ledger/manifest.json",
+   "summary": "The Prediction Ledger records the archive's registered predictions in two layers: a census of the conditions stated in named falsification sections across the deposits, each classed by its resolution route, and a hand-verified set with status, where the rows resolved wrong are kept as the ledger's credential: 'An archive's registered predictions are worth exactly what its failed ones are worth.'",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "venues",
+   "title": "Venues — publishers and journals",
+   "path": "/datasets/venues/",
+   "manifest": "/datasets/venues/venues.json",
+   "summary": "Venues is the registry of the archive's publishers and journals, the canonical store from which the venue pages are generated, with each journal's issues and records and the captures in which composition surfaces read a venue, and the specification of the WHERE pages on the heteronyms' own sites.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "bleed",
+   "title": "Bleed — off-entity bleed into the retrieval basin",
+   "path": "/datasets/bleed/",
+   "manifest": "/datasets/bleed/analysis.json",
+   "summary": "Bleed measures off-entity bleed into the retrieval basin: material with no relation to the archive or its subject composed into answers about the archive's own terms, measured across the Capture Registry's observations and their host citations.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "frames",
+   "title": "Frames and Memberships",
+   "path": "/datasets/frames/",
+   "manifest": "/datasets/frames/frames.json",
+   "summary": "Frames records the arrangements under which identities take positions, and the positions they take: four frames and their memberships, built because the archive's primary set has no single stable configuration ('which figure stands outside the twelve rotates by frame').",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "erosion-empirical-audit-01",
+   "title": "Platform Erosion — Empirical Audit 01",
+   "path": "/datasets/erosion-empirical-audit-01/",
+   "manifest": "/datasets/erosion-empirical-audit-01/MANIFEST.json",
+   "summary": "Platform Erosion, Empirical Audit 01 is the dataset of EA-EROSION-EMPIRICAL-01: a 33-day set-comparison test of Zenodo's classifier as an accrual-sorting apparatus, with its contingency matrix over the 2026 non-spam population, the withdrawal and terminated-cohort records, the alive-side control, its generator, and the corrections made to it (the compression ratio withdrawn on 27 August 2026).",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "mret",
+   "title": "MRET — Machine Retrieval Eligibility Test report",
+   "path": "/datasets/mret/",
+   "manifest": "/datasets/mret/mret-report.json",
+   "summary": "MRET is the report of the Machine Retrieval Eligibility Test (v1.0), an executable gate scoring each deposit on the axes a machine reader needs to retrieve and cite it, with the distribution, the fill rate of each axis and the lowest-scoring records.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "provenance-erasure",
+   "title": "Provenance Erasure — the rhizome seed (EA-PER-SPORE-01)",
+   "path": "/datasets/provenance-erasure/",
+   "manifest": "/datasets/provenance-erasure/spore.json",
+   "summary": "EA-PER-SPORE-01 is the seed of the provenance-erasure rhizome as first built on 14 September 2026: the framework, the cases explicitly excluded, the counts and the verification from which the rhizome grew.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
+  },
+  {
+   "name": "spxi-mpai",
+   "title": "SPXI / MPAI — the rhizome seed (EA-SPXI-SPORE-01)",
+   "path": "/datasets/spxi-mpai/",
+   "manifest": "/datasets/spxi-mpai/spore.json",
+   "summary": "EA-SPXI-SPORE-01 is the seed of the SPXI/MPAI rhizome as first built on 14 September 2026: the characteristic form of the archive's documentary technologies, the framework, the edges and relations from which the rhizome grew.",
+   "added": "2026-10-28",
+   "added_basis": "Lee Sharks, 2026-10-28: \"your sense of which is which is already correct. lets fill the gaps\""
   }
  ],
- "member_count": 11,
+ "member_count": 27,
  "cardinality_note": "member_count is derived from members[] at generation; prose never states a number",
  "map": "/datasets/dataflow-atlas/",
  "changelog": [
@@ -101,6 +245,11 @@
    "version": "v1.2",
    "date": "2026-07-19",
    "note": "member_count corrected 7→9 (G10; the 2026-07-18 atlas pin was itself a PATHOLOGY-01 source-detached value). doi-work-identity registered as 9th member. Per MANUS ruling 2026-07-19: the dataflow atlas is the machine-visible data navigation surface; every dataset points to it via map."
+  },
+  {
+   "version": "v1.5",
+   "date": "2026-10-28",
+   "note": "Sixteen dataset directories that no entry covered joined the set, so each takes a release AXN: blog-index, books, corpora, erasure, journals, pearl, pessoagraph, prediction-index, prediction-ledger, venues, bleed, frames, erosion-empirical-audit-01, mret, provenance-erasure, spxi-mpai. Working files (work-queue, registry-audit, study-dashboard, the deletion test fixtures, the axnidentifiers planning documents, refrain-index) stay out."
   }
  ]
 }

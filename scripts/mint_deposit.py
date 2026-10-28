@@ -573,6 +573,11 @@ def next_hex_id(deposit_number: int, registry: dict | None = None) -> str:
     only as a fallback for an empty registry.
     """
     floor = _symbolon_ledger_floor()
+    try:  # 2026-10-28: the floor includes every claim on origin/main (scripts/axn_positions.py), so a stale checkout cannot reuse a position
+        import sys as _s, pathlib as _p; _s.path.insert(0, str(_p.Path(__file__).resolve().parent))
+        floor = max(floor, __import__('axn_positions').next_free() - 1)
+    except Exception:
+        pass
     if registry:
         existing = [int(d["hex"], 16) for d in registry.get("deposits", [])
                     if d.get("hex")]

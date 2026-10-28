@@ -112,6 +112,16 @@
      "files": 970,
      "bytes": 49393408,
      "manifest": "/data/releases/manifests/capture-registry/12.331+2026-10-27.sha256"
+    },
+    {
+     "axn": "AXN:0A39.RELEASE.👈🎻📝🍃🕐👇",
+     "label": "12.332",
+     "date": "2026-10-28",
+     "sha256": "b88a421862b7895b27cd7ea6a084c0b062e63caf68155d075834c439648fa970",
+     "basis": "manifest",
+     "files": 970,
+     "bytes": 49394098,
+     "manifest": "/data/releases/manifests/capture-registry/12.332.sha256"
     }
    ],
    "name": "capture-registry",
@@ -123,7 +133,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/capture-registry/"
-   ]
+   ],
+   "wiki": "The Capture Registry (EA-WG-CAPTURES-01) is the archive's record of machine reception: dated observations of how composition surfaces (Google AI Overview and AI Mode, ChatGPT, Bing, Perplexity and others) compose answers about this corpus, each with its transcript, its source cards, the analysis that restores the work at its own grain, and its measures (PER and its dimensional rubric). The unit is the address, the exact issued string on one surface; each observation, sealed with its analysis, is one AXN (AXN:<HEX>.CAPTURE.<glyphs>). Its canonical surface is alexanarch.org/captures/; each release freezes the registry, its sealed observations and their AXN ledger."
   },
   "rhizome-model-collapse-anti-collapse": {
    "hex": "0A3A",
@@ -154,7 +165,8 @@
     "https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse"
    ],
    "builder": "scripts/build_rhizome_mc.py",
-   "instrument": "grammar-collapse"
+   "instrument": "grammar-collapse",
+   "wiki": "EA-RHIZOME-MC-01, Model Collapse / Anti-Collapse: the archive's body on model collapse as a graph of nodes, typed relations and stolons, asking what narrows when composition feeds on composition and what the archive builds against it. It is published as symbola for traversal: each node is a half whose fit with the archive's records verifies it. Released with its rhizome grammar (rhizomes/_grammars/collapse.json)."
   },
   "rhizome-semantic-economy": {
    "hex": "0A3B",
@@ -185,7 +197,8 @@
     "https://huggingface.co/datasets/leesharks/semantic-economy"
    ],
    "builder": "scripts/build_rhizome_mc.py",
-   "instrument": "grammar-semantic-economy"
+   "instrument": "grammar-semantic-economy",
+   "wiki": "EA-RHIZOME-SE-01, the semantic economy: the archive's political economy of meaning as nodes, relations and stolons, seeded at the stolon the collapse body left open. Where the collapse body asks what narrows, this body asks who gains by the narrowing. Released with its grammar (rhizomes/_grammars/semantic-economy.json)."
   },
   "rhizome-machine-mediated-reception": {
    "hex": "0A3C",
@@ -216,7 +229,8 @@
     "https://huggingface.co/datasets/leesharks/machine-mediated-reception"
    ],
    "builder": "scripts/build_rhizome_mc.py",
-   "instrument": "grammar-machine-mediated-reception"
+   "instrument": "grammar-machine-mediated-reception",
+   "wiki": "EA-RHIZOME-MMRS-01, machine-mediated reception: what composition surfaces actually did with this archive, what that cost in provenance, and the distance between the theory of reception and its evidence, as nodes, relations and stolons drawn from the Capture Registry and the papers that read it. Released with its grammar (rhizomes/_grammars/machine-mediated-reception.json)."
   },
   "rhizome-revelation-first": {
    "hex": "0A3D",
@@ -247,7 +261,8 @@
     "https://huggingface.co/datasets/leesharks/revelation-first"
    ],
    "builder": "scripts/build_rhizome_mc.py",
-   "instrument": "grammar-revelation-first"
+   "instrument": "grammar-revelation-first",
+   "wiki": "EA-RHIZOME-REV-01, Revelation First: the Revelation-priority thesis and what it draws, the pre-70 argument, the midrashim transform, the Josephus heteronym cluster and the Sappho material that bears on the same question of what stands first and who is assigned to it. The body marks which of six rungs each node sits on, so the ladder is read rung by rung. Released with its grammar (rhizomes/_grammars/revelation-first.json)."
   },
   "rhizome-spxi-mpai": {
    "hex": "0A3E",
@@ -278,7 +293,8 @@
     "https://huggingface.co/datasets/leesharks/spxi-mpai"
    ],
    "builder": "scripts/build_rhizome_mc.py",
-   "instrument": "grammar-spxi-mpai"
+   "instrument": "grammar-spxi-mpai",
+   "wiki": "EA-RHIZOME-SPXI-01, the archive's documentary technologies: SPXI and its protocol family, MPAI packets, conformance instruments, disambiguation matrices, entity-definition blocks, compression kernels and inscription surfaces. It is an inventory, and its distinguishing field records whether each technology is deployed, specified and dormant, or superseded. Released with its grammar (rhizomes/_grammars/spxi-mpai.json)."
   },
   "rhizome-provenance-erasure": {
    "hex": "0A3F",
@@ -309,7 +325,8 @@
     "https://huggingface.co/datasets/leesharks/provenance-erasure"
    ],
    "builder": "scripts/build_rhizome_mc.py",
-   "instrument": "grammar-provenance-erasure"
+   "instrument": "grammar-provenance-erasure",
+   "wiki": "EA-RHIZOME-PER-01, provenance erasure: where provenance disappears and what measures it, as a transformation chain (source, retrieval, selection, composition, summarisation, reception) with the instruments that score retention at each step and the cases where the instruments were applied to themselves. Released with its grammar (rhizomes/_grammars/provenance-erasure.json)."
   },
   "rhizome-heteronyms": {
    "hex": "0A40",
@@ -340,7 +357,8 @@
     "https://huggingface.co/datasets/leesharks/heteronyms"
    ],
    "builder": "scripts/build_rhizome_mc.py",
-   "instrument": "grammar-heteronyms"
+   "instrument": "grammar-heteronyms",
+   "wiki": "EA-RHIZOME-HET-01, non-singular authorship: the declared identities of the archive, what each claims, what each wrote, and how unevenly the archive's own apparatus covers them, as nodes, relations and stolons. Its identity records come from the heteronym substrate (datasets/heteronyms). Released with its grammar (rhizomes/_grammars/heteronyms.json)."
   },
   "rhizome-poetics": {
    "hex": "0A41",
@@ -371,7 +389,8 @@
     "https://huggingface.co/datasets/leesharks/poetics"
    ],
    "builder": "scripts/build_rhizome_mc.py",
-   "instrument": "grammar-poetics"
+   "instrument": "grammar-poetics",
+   "wiki": "EA-RHIZOME-POET-01, poetics: Pearl and Other Poems (New Human Press, 2014) as its own graph, its pieces across four sections, the edges the book makes between them, and the captures in which a machine read the book or a piece of it. Released with its grammar (rhizomes/_grammars/poetics.json)."
   },
   "negative-of-the-negative": {
    "hex": "0A42",
@@ -389,6 +408,16 @@
      "files": 364,
      "bytes": 50640005,
      "manifest": "/data/releases/manifests/negative-of-the-negative/2026-10-27.sha256"
+    },
+    {
+     "axn": "AXN:0A42.RELEASE.🔙⏩♠️🕚♋🌋",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "f3d6806cac15cc61ea61e482c82011981a0eaeb0840aed18e98a964ee47658d3",
+     "basis": "manifest",
+     "files": 392,
+     "bytes": 51047250,
+     "manifest": "/data/releases/manifests/negative-of-the-negative/2026-10-28.sha256"
     }
    ],
    "name": "negative-of-the-negative",
@@ -400,7 +429,8 @@
     "https://www.alexanarch.org/datasets/negative-of-the-negative/",
     "https://huggingface.co/datasets/leesharks/negative-of-the-negative"
    ],
-   "builder": "scripts/build_negative_of_the_negative.py"
+   "builder": "scripts/build_negative_of_the_negative.py",
+   "wiki": "The Negative of the Negative (EA-NEGONT-02) is the dataset behind alexanarch.org/non: per-entity knowledge objects composed with the archive's sources on equal terms, and the earlier concept-keyed edges, each joining one claim or function of the archive to a general concept outside it, with the claim stated at that concept, what stands there when the archive is absent, and the Capture Registry measurements that show which a composition produced. Its version 2 holds the panel, the composed rows with their ledgers and traversals, and the register of observations at panel addresses; each entry and each register observation carries its own AXN (families NON and CAPTURE)."
   },
   "the-final-time": {
    "hex": "0A43",
@@ -429,7 +459,8 @@
     "https://www.alexanarch.org/datasets/the-final-time/",
     "https://huggingface.co/datasets/leesharks/the-final-time"
    ],
-   "builder": "scripts/build_final_time_dataset.py"
+   "builder": "scripts/build_final_time_dataset.py",
+   "wiki": "The Final Time is a dataset made from Lee Sharks's The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn (v0.5, #1637), for a summarizer that must not make the outside disappear. Its tables carry the work's summarizer contract, handholds, derivations, compressions, counterorders, witness protocol, exteriorization tests, transmission events, admissibility ratchet and purpose-edge tests, with a checksum lineage. It is dedicated to Rhys Owens."
   },
   "spam-technicians": {
    "hex": "0A44",
@@ -458,7 +489,8 @@
     "https://www.alexanarch.org/datasets/argument-as-dataset/",
     "https://huggingface.co/datasets/leesharks/spam-technicians"
    ],
-   "builder": "scripts/build_argument_as_dataset.py"
+   "builder": "scripts/build_argument_as_dataset.py",
+   "wiki": "Spam Technicians (argument as dataset) is the source-admission ontology cluster translated out of prose: the argument of EA-MIRROR-01, the fleet topology report of 2026-09-15, #1612 (What Enters Composition Through the Cards) and #1611 (The Negative of the Negative) as atomic claims, evidence objects (measurement gaps recorded as data), typed relations, specified tests, defined terms and a derived support topology. The documents survive as provenance on every row. Its name is the seventh blessing of I Am X… Be Y… Blessed is the Z… (posted 17 September 2015; #328)."
   },
   "tiger-leap": {
    "hex": "0A45",
@@ -486,7 +518,8 @@
    "locations": [
     "https://www.alexanarch.org/datasets/tiger-leap/",
     "https://huggingface.co/datasets/leesharks/tiger-leap"
-   ]
+   ],
+   "wiki": "Tiger Leap is an unresolved problem in viability theory, stated in full and open to be worked on: whether a viable corridor exists for a reach-avoid game under the dynamics, adversary and constraints the card sets out. Its tables carry the sections, variables, conditions and corrigenda as structured rows, and its card carries the whole problem as text; the question of §44 is addressed to machine readers."
   },
   "mantle-bearing": {
    "hex": "0A46",
@@ -504,6 +537,16 @@
      "files": 27,
      "bytes": 2762666,
      "manifest": "/data/releases/manifests/mantle-bearing/2026-10-27.sha256"
+    },
+    {
+     "axn": "AXN:0A46.RELEASE.🏁🔻🕒🔙🐚🎹",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "f0d164f37a89b6503ead7dc6ad01708373df40a904d9eaf0aa9a393934d977ba",
+     "basis": "manifest",
+     "files": 27,
+     "bytes": 2762666,
+     "manifest": "/data/releases/manifests/mantle-bearing/2026-10-28.sha256"
     }
    ],
    "name": "mantle-bearing",
@@ -515,7 +558,8 @@
     "https://www.alexanarch.org/datasets/mantle-bearing/",
     "https://huggingface.co/datasets/leesharks/mantle-bearing"
    ],
-   "builder": "scripts/build_mantle_bearing_dataset.py"
+   "builder": "scripts/build_mantle_bearing_dataset.py",
+   "wiki": "The Work Bears the Mantle holds the archive's mantle-bearing under one standard, that a title means something because what it names is carried and can be read (#1655, #1670, #1678, #1679): the titles the archive claims for works of its own (the Good Gray Poet, the King of May, the Prince of Poets), judged by readers in the works, a contest mantle, a conferred title, a critical program and a transmitted mantle. Its rows are evaluations and findings with their loci."
   },
   "tombstone-mirror": {
    "hex": "0A47",
@@ -542,7 +586,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/tombstone-mirror/"
-   ]
+   ],
+   "wiki": "The Tombstone Mirror is the post-severance mirror of what Zenodo serves for the deletion of the archive's account on 19 June 2026: the API-tombstone census of all 2,027 deleted objects with the sweep's chronology and its removed_by enumeration, 57 rich pre-shrink metadata captures, the kill-ledger cohort extraction, and the stripped-page corpus documenting the live reduction of the tombstone surface on 12 July 2026. Its forensic basis is #1068; its evidence anchor #1071."
   },
   "zenodo-datacite-batch": {
    "hex": "0A48",
@@ -569,7 +614,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/zenodo-datacite-batch/"
-   ]
+   ],
+   "wiki": "The Zenodo/DataCite batch is the pre-severance reference frame: the DOI Resolution Index (#4), which maps the severed Zenodo DOIs to their records in Alexanarch, packaged with the DataCite metadata backup captured before the termination of 19 June 2026 propagated. Together they are the empirical foundation of EA-EROSION-01 (#1045) and the remediation work."
   },
   "heteronyms": {
    "hex": "0A49",
@@ -596,7 +642,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/heteronyms/"
-   ]
+   ],
+   "wiki": "The heteronym substrate is the canonical store of the archive's declared identities: one identity card per heteronym in records/*.json (the twelve of the Dodecad, the aperture, an institutional persona, provenanced historical figures, collaborators and the Assembly Chorus mantles, with Elias and Elara Xanthic-Wells added on 20 October 2026, #1695), mirrored to the live /who/ surfaces. heteronyms.jsonl is a generated projection of the cards, each row carrying its derivation; the SVG fields are derived from the archive's data."
   },
   "new-human-primary": {
    "hex": "0A4A",
@@ -623,7 +670,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/new-human-primary/"
-   ]
+   ],
+   "wiki": "New Human Primary Texts is a curated inventory of the New Human Project's primary texts within the archive: deposits whose content type is creative work, poetry or short work, and deposits matching the canonical New Human titles, by Lee Sharks and the Dodecad heteronyms. The full curation pass is still to follow."
   },
   "gutenberg-classical": {
    "hex": "0A4B",
@@ -650,7 +698,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/gutenberg-classical/"
-   ]
+   ],
+   "wiki": "Gutenberg Classical is the archive's Project Gutenberg working corpus for the operative-philology workstreams: a catalog snapshot, a mirrored pilot subset of canonical public-domain translations, and the inventory of further targets identified for seating."
   },
   "perseus-classical": {
    "hex": "0A4C",
@@ -677,7 +726,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/perseus-classical/"
-   ]
+   ],
+   "wiki": "Perseus Classical is the inventory of the Perseus Digital Library's canonical TEI-XML corpus as the archive uses it: authors and works addressable by canonical URN, with aligned English translations where Perseus holds them, grounding the philological instruments. File-level curation is pending."
   },
   "negshape-deletion-bibliography": {
    "hex": "0A4D",
@@ -704,7 +754,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/negshape-deletion-bibliography/"
-   ]
+   ],
+   "wiki": "The Negative Shape of the Work holds Appendices A and B of EA-NEGSHAPE-01 v0.2 (#1075): the bulk deletion of 19 June 2026 constituted as a formal bibliographic container (CHA-DELETION-CORPUS-20260619), with 1,834 identifier entries, 1,621 of them membership-confirmed, formal citations in four styles, a bibliographic matrix with per-cell metadata provenance and per-row membership provenance, the rejected-candidate ledger of 68 name-string collisions, and the two generators that reproduce it."
   },
   "dataflow-atlas": {
    "hex": "0A4E",
@@ -731,7 +782,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/dataflow-atlas/"
-   ]
+   ],
+   "wiki": "The AXN Dataflow Atlas is the archive's map of itself: where data enters, what transforms it, where it is published, and which instruments watch the map. It keeps its successive versions, the Assembly reviews each answered, and the raw machine-readable inventories it was built on (the rhizome file inventory, the inventory of source-detached displayed values, the script producer-consumer graph). Its provenance anchor is #1097."
   },
   "cha-doi-work-identity-map": {
    "hex": "0A4F",
@@ -758,7 +810,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/doi-work-identity/"
-   ]
+   ],
+   "wiki": "The DOI–Work Identity Map records which DOI resolves to which work, graded by truth source, built after the Zenodo DOIs of the archive were tombstoned on 19 June 2026. It carries the identity map, the restoration queue and the blog-post inventory used to match DOIs to works."
   },
   "peo-case-001-florence-fup": {
    "hex": "0A50",
@@ -785,7 +838,8 @@
    ],
    "locations": [
     "https://www.alexanarch.org/datasets/peo-case-001-florence-fup/"
-   ]
+   ],
+   "wiki": "PEO Case 001 is a recovery map for the 14,284 DataCite DOIs formerly registered under crui.unifi (Firenze University Press, prefix 10.13128) and abandoned by the registration-agency migration of 16 July 2026, enumerated from the DataCite Public Data File 2025 snapshot of 6 January 2026 and preserved as a public recovery resource for a corpus that now dead-ends at fupress.net/inactive-doi/."
   },
   "protocol-deposit": {
    "hex": "0A51",
@@ -1263,6 +1317,16 @@
      "files": 6,
      "bytes": 78001,
      "manifest": "/data/releases/manifests/capture-intake/2026-10-27.2.sha256"
+    },
+    {
+     "axn": "AXN:0A61.INSTRUMENT.🟢🏙️🌪️💧🎨☿",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "c4e5121186a2dfaaaac64e97cbe4d1e63c7c396da972ff5d73eabffdbe1d7c5f",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 78124,
+     "manifest": "/data/releases/manifests/capture-intake/2026-10-28.sha256"
     }
    ],
    "name": "Capture Registry intake instrument (schema, contract, pipeline, intake and scalar code)",
@@ -1327,6 +1391,17 @@
      "bytes": 6395830361,
      "manifest": "/data/releases/manifests/alexanarch/2026-10-27.sha256",
      "base_commit": "7881bb560fe6ce46c52eaf90bd6cf4a75e513eb0"
+    },
+    {
+     "axn": "AXN:0A63.SITE.🌋🖤🔄🫵🃏👇",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "15cf6fba8eb70d5c1a87aeff5104c7bdd7a7e7b6a6b38c172d59c9c8ed11b1c3",
+     "basis": "manifest",
+     "files": 33930,
+     "bytes": 6405780041,
+     "manifest": "/data/releases/manifests/alexanarch/2026-10-28.sha256",
+     "base_commit": "ed2b585eda82dd905209daf85762bcce54e3cf32"
     }
    ],
    "name": "alexanarch.org",
@@ -1335,6 +1410,494 @@
     "https://github.com/leesharks000/alexanarch",
     "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive"
    ]
+  },
+  "crimson-hexagonal-archive": {
+   "hex": "0A84",
+   "root": "AXN:0A84.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A84.RELEASE.🌗🕚⭐📎●🎆",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "066c08479ce74145ebd2ff1571c697c66519e637ba33aa8ed932a98ab6d39bc8",
+     "basis": "manifest",
+     "files": 1728,
+     "bytes": 151521103,
+     "manifest": "/data/releases/manifests/crimson-hexagonal-archive/2026-10-28.sha256"
+    }
+   ],
+   "name": "crimson-hexagonal-archive",
+   "class": "canonical",
+   "source": [
+    "data/registry.json",
+    "data/texts",
+    "data/EA-WG-CAPTURES-01.json",
+    "data/citation-graph.json",
+    "data/lexical-minting-registry.json",
+    "data/named-entities.json",
+    "data/hexagon-seats.json",
+    "data/nodes.jsonl",
+    "data/relations.jsonl",
+    "data/assertions.jsonl",
+    "data/blog-index.json"
+   ],
+   "locations": [
+    "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",
+    "https://www.alexanarch.org/datasets/"
+   ],
+   "builder": "scripts/build_hf_dataset.py",
+   "wiki": "The Crimson Hexagonal Archive dataset is the archive's canonical projection on the Hugging Face Hub (leesharks/crimson-hexagonal-archive). It is built in CI by scripts/build_hf_dataset.py from the archive's own stores: the deposit registry and the seated texts, the Capture Registry, the citation graph, the lexical minting registry, the named-entity and hexagon-seat indexes, and the node, relation and assertion layers. Its releases freeze those source files, so a Hub build can be checked against the state it was built from. The whole archive's tree is released separately as the site (AXN:0A63.SITE)."
+  },
+  "blog-index": {
+   "hex": "0A85",
+   "root": "AXN:0A85.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A85.RELEASE.🀄◇☿⊕🟤🀄",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "8f9aa296c98ff62528630e905967a57a75210671e2ba6acc0ef4649c12330860",
+     "basis": "manifest",
+     "files": 2,
+     "bytes": 2110569,
+     "manifest": "/data/releases/manifests/blog-index/2026-10-28.sha256"
+    }
+   ],
+   "name": "blog-index",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/blog-index"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/blog-index/"
+   ],
+   "wiki": "The blog index is the complete harvest of Mind Control Poems (mindcontrolpoems.blogspot.com), Lee Sharks's blog since 1 December 2014: every post with its date, title and address, harvested through the Blogger feed and verified complete against the feed's declared total (3,093 posts through 18 October 2026), with the posts the archive's AXN index covers marked. The blog is a record surface of the archive in its own right."
+  },
+  "books": {
+   "hex": "0A86",
+   "root": "AXN:0A86.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A86.RELEASE.🕗💛🔎🔥🍂🕖",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "69cd581078685a5fe26e54df68e640783de251e4dc4b38429cdab935f532afdc",
+     "basis": "manifest",
+     "files": 1,
+     "bytes": 11550,
+     "manifest": "/data/releases/manifests/books/2026-10-28.sha256"
+    }
+   ],
+   "name": "books",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/books"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/books/"
+   ],
+   "wiki": "Books gathers the archive's book-length works by work, where the registry stores them by deposit: each work with its editions, samplers and critical editions, and the apparatus around it (navigation maps, metadata packets, negation graphs) listed apart, since a navigation map is not the book. It records twenty works, the editions deposited, two works not yet recovered, and the reassignments made in building it."
+  },
+  "corpora": {
+   "hex": "0A87",
+   "root": "AXN:0A87.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A87.RELEASE.⌛♎🃏🪐⭕🌘",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "60af8e0dee078f171a77d85ffa0c970e6dd61551179bfc4cc398852930dfa169",
+     "basis": "manifest",
+     "files": 1,
+     "bytes": 449749,
+     "manifest": "/data/releases/manifests/corpora/2026-10-28.sha256"
+    }
+   ],
+   "name": "corpora",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/corpora"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/corpora/"
+   ],
+   "wiki": "Corpora is the seating manifest of the originals shelf (the EA-CORPORA series): one row per seated corpus, with its edition, its origin, its license stated verbatim, the normalization applied, the verified loci, and the SHA-256 of each seat's manifest. The texts stay with their licensors, several under CC BY-SA, one under CC BY-NC and one under GPL-2.0, so the manifest carries what the archive made and points to the seats."
+  },
+  "erasure": {
+   "hex": "0A88",
+   "root": "AXN:0A88.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A88.RELEASE.🔃⚙️🌌♾️☉🌓",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "de32e694a70217a6d629879b1d0fae02d794a5f922f73d7f8d67d021f55a88ac",
+     "basis": "manifest",
+     "files": 28,
+     "bytes": 24557003,
+     "manifest": "/data/releases/manifests/erasure/2026-10-28.sha256"
+    }
+   ],
+   "name": "erasure",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/erasure"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/erasure/"
+   ],
+   "wiki": "Erasure holds the evidence of the Zenodo termination of 19 June 2026 and its mechanism: DataCite cohort and panel data, snapshots of the archive's Zenodo communities, the classified record of what was deleted that day, the metrics lag, and the moderation code of the Invenio and Zenodo platform read from source and a file on the botnet hypothesis."
+  },
+  "journals": {
+   "hex": "0A89",
+   "root": "AXN:0A89.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A89.RELEASE.🔼🪜🔔♆🔩▽",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "d4232ea631996f4c34ebca209d312b295f2a11d3d802e846f7d526c5ceb5fe1e",
+     "basis": "manifest",
+     "files": 11,
+     "bytes": 2290031,
+     "manifest": "/data/releases/manifests/journals/2026-10-28.sha256"
+    }
+   ],
+   "name": "journals",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/journals"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/journals/"
+   ],
+   "wiki": "Journals is the venue assignment for the whole corpus across the archive's chartered journals and province: each deposit's venue, the editorial slates, charters, locators and inaugural issues, and a crosswalk joining venues to the heteronym substrate by creator field, which shows where each position's work sits and whether an editor presides over the venue they edit. It supersedes the preliminary mapping of 21 June 2026 (#866)."
+  },
+  "pearl": {
+   "hex": "0A8A",
+   "root": "AXN:0A8A.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A8A.RELEASE.⏏️📎📋🔀☿♣️",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "f84745dfa2838f8f16ac9503ee6bb8882240db6228b8dff0a8784b42306f3eda",
+     "basis": "manifest",
+     "files": 2,
+     "bytes": 31692,
+     "manifest": "/data/releases/manifests/pearl/2026-10-28.sha256"
+    }
+   ],
+   "name": "pearl",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/pearl"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/pearl/"
+   ],
+   "wiki": "Pearl is Pearl and Other Poems (New Human Press, 2014) as data: the primitive row is a piece, with the edges the book itself makes, the epigraphs it carries, the works it lists under conflicting attributions and the literary-historical diagram in which it places its own authors; and a passages table tracing every span quoted in the book's appendix to the passage it quotes. One finding: the line 'and moons no longer walk the earth.' stands twice, in PEARL and in UNDERSONG II: THE METAPHOR FACTORY."
+  },
+  "pessoagraph": {
+   "hex": "0A8B",
+   "root": "AXN:0A8B.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A8B.RELEASE.🍄⏩🏗️🗂️🔩🔧",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "79d6214a3130e4e622c42d706ec858eeb67789e0a286e0ad64bb578bf714af35",
+     "basis": "manifest",
+     "files": 2,
+     "bytes": 174268,
+     "manifest": "/data/releases/manifests/pessoagraph/2026-10-28.sha256"
+    }
+   ],
+   "name": "pessoagraph",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/pessoagraph"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/pessoagraph/"
+   ],
+   "wiki": "The Pessoagraph is the heteronymic tradition as a graph, from the earliest attested practice to the present: nodes for the entities that can speak and the lineage that licenses them, typed edges and paths, spanning more than four and a half thousand years. This file is the canonical store, rendered by pessoagraph.org; join.json links it to the archive's own heteronym substrate."
+  },
+  "prediction-index": {
+   "hex": "0A8C",
+   "root": "AXN:0A8C.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A8C.RELEASE.♆🥁🌠🦅🎪🔎",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "a68cea7f8558a51397a972febeea0b6466c43c79605bb2463d8481124e9c18cf",
+     "basis": "manifest",
+     "files": 6,
+     "bytes": 16494379,
+     "manifest": "/data/releases/manifests/prediction-index/2026-10-28.sha256"
+    }
+   ],
+   "name": "prediction-index",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/prediction-index"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/prediction-index/"
+   ],
+   "wiki": "The Prediction Index is the archive's predictions as data: the claims read out of every deposit by the prediction sweep of 15 October 2026 and its second pass of 18 October (forecasts, standing claims, unbuilt tests, historical theses and priority records), each registered at its earliest statement with every statement quoted, grouped by triage, topical and join passes, with confirmation records and a build log naming each byte-state. It is generated from the operative-semiotics reading data."
+  },
+  "prediction-ledger": {
+   "hex": "0A8D",
+   "root": "AXN:0A8D.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A8D.RELEASE.↙️📐🌓🌍▶️🤝",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "dc4e020ed3b570db4ad00662bad400b3bb08780f69fc00e2fa7c87b09a40fdcc",
+     "basis": "manifest",
+     "files": 3,
+     "bytes": 280213,
+     "manifest": "/data/releases/manifests/prediction-ledger/2026-10-28.sha256"
+    }
+   ],
+   "name": "prediction-ledger",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/prediction-ledger"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/prediction-ledger/"
+   ],
+   "wiki": "The Prediction Ledger records the archive's registered predictions in two layers: a census of the conditions stated in named falsification sections across the deposits, each classed by its resolution route, and a hand-verified set with status, where the rows resolved wrong are kept as the ledger's credential: 'An archive's registered predictions are worth exactly what its failed ones are worth.'"
+  },
+  "venues": {
+   "hex": "0A8E",
+   "root": "AXN:0A8E.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A8E.RELEASE.🌀🧬♎⏪🎺🎶",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "5f3bafd78b889cf193246c7b98624398bef1127c7fa0647a431d44f642ec193a",
+     "basis": "manifest",
+     "files": 18,
+     "bytes": 104379,
+     "manifest": "/data/releases/manifests/venues/2026-10-28.sha256"
+    }
+   ],
+   "name": "venues",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/venues"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/venues/"
+   ],
+   "wiki": "Venues is the registry of the archive's publishers and journals, the canonical store from which the venue pages are generated, with each journal's issues and records and the captures in which composition surfaces read a venue, and the specification of the WHERE pages on the heteronyms' own sites."
+  },
+  "bleed": {
+   "hex": "0A8F",
+   "root": "AXN:0A8F.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A8F.RELEASE.⚪💚🧫🌸🟢🌍",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "c7cc3a70c40e5529602b0f7b9163aa3cafa2934fda9c2b2b6dd6b3dd0ac857c5",
+     "basis": "manifest",
+     "files": 3,
+     "bytes": 47163,
+     "manifest": "/data/releases/manifests/bleed/2026-10-28.sha256"
+    }
+   ],
+   "name": "bleed",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/bleed"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/bleed/"
+   ],
+   "wiki": "Bleed measures off-entity bleed into the retrieval basin: material with no relation to the archive or its subject composed into answers about the archive's own terms, measured across the Capture Registry's observations and their host citations. Its analysis ranks the driving factors and the defences that measurably work, and predicts that a coinage's exposure grows with the commonness of its words and falls with its freedom from collision."
+  },
+  "frames": {
+   "hex": "0A90",
+   "root": "AXN:0A90.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A90.RELEASE.🔻♠️👋👁‍🗨🏛️🎺",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "d180bfb0208ba915451d72ca184d8dac0ad7edc81595f4be1e00859cdb11f144",
+     "basis": "manifest",
+     "files": 1,
+     "bytes": 10452,
+     "manifest": "/data/releases/manifests/frames/2026-10-28.sha256"
+    }
+   ],
+   "name": "frames",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/frames"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/frames/"
+   ],
+   "wiki": "Frames records the arrangements under which identities take positions, and the positions they take: four frames and their memberships, built because the archive's primary set has no single stable configuration ('which figure stands outside the twelve rotates by frame'). It sits beside the heteronym substrate and the Pessoagraph join."
+  },
+  "erosion-empirical-audit-01": {
+   "hex": "0A91",
+   "root": "AXN:0A91.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A91.RELEASE.🌇✏️♅♦️♆🔄",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "e443a582a66fe8baba9af8ec0e281a9650be786aec4ecd9ba00225d0c5bdf6ad",
+     "basis": "manifest",
+     "files": 9,
+     "bytes": 705811,
+     "manifest": "/data/releases/manifests/erosion-empirical-audit-01/2026-10-28.sha256"
+    }
+   ],
+   "name": "erosion-empirical-audit-01",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/erosion-empirical-audit-01"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/erosion-empirical-audit-01/"
+   ],
+   "wiki": "Platform Erosion, Empirical Audit 01 is the dataset of EA-EROSION-EMPIRICAL-01: a 33-day set-comparison test of Zenodo's classifier as an accrual-sorting apparatus, with its contingency matrix over the 2026 non-spam population, the withdrawal and terminated-cohort records, the alive-side control, its generator, and the corrections made to it (the compression ratio withdrawn on 27 August 2026)."
+  },
+  "mret": {
+   "hex": "0A92",
+   "root": "AXN:0A92.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A92.RELEASE.◀️🛸🖐️🗺️♊🕐",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "d25ebb51ab62fcde8ee7bdb813c28f100523a9f158292fdc58c516e9d0ca2c4f",
+     "basis": "manifest",
+     "files": 2,
+     "bytes": 384323,
+     "manifest": "/data/releases/manifests/mret/2026-10-28.sha256"
+    }
+   ],
+   "name": "mret",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/mret"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/mret/"
+   ],
+   "wiki": "MRET is the report of the Machine Retrieval Eligibility Test (v1.0), an executable gate scoring each deposit on the axes a machine reader needs to retrieve and cite it, with the distribution, the fill rate of each axis and the lowest-scoring records. A field scored as absent is part of the measurement, so the backlog is recorded as data."
+  },
+  "provenance-erasure": {
+   "hex": "0A93",
+   "root": "AXN:0A93.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A93.RELEASE.♉🔻⛳🔮♈💧",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "aad1543da911df640205fc26b2b024e647f7c3dd868cdfd85fd7f428cff46e8a",
+     "basis": "manifest",
+     "files": 1,
+     "bytes": 11451,
+     "manifest": "/data/releases/manifests/provenance-erasure/2026-10-28.sha256"
+    }
+   ],
+   "name": "provenance-erasure",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/provenance-erasure"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/provenance-erasure/"
+   ],
+   "wiki": "EA-PER-SPORE-01 is the seed of the provenance-erasure rhizome as first built on 14 September 2026: the framework, the cases explicitly excluded, the counts and the verification from which the rhizome grew. The rhizome itself is released separately (rhizome-provenance-erasure)."
+  },
+  "spxi-mpai": {
+   "hex": "0A94",
+   "root": "AXN:0A94.RELEASE",
+   "kind": "dataset",
+   "family": "RELEASE",
+   "allocated": "2026-10-28",
+   "releases": [
+    {
+     "axn": "AXN:0A94.RELEASE.🔚♠️🌿▽🌱☉",
+     "label": "2026-10-28",
+     "date": "2026-10-28",
+     "sha256": "f280179919a7789642bfc7ee4a17440f541788ce3f260ebb378738fd83e72468",
+     "basis": "manifest",
+     "files": 1,
+     "bytes": 16082,
+     "manifest": "/data/releases/manifests/spxi-mpai/2026-10-28.sha256"
+    }
+   ],
+   "name": "spxi-mpai",
+   "class": "archive_set_member",
+   "source": [
+    "datasets/spxi-mpai"
+   ],
+   "locations": [
+    "https://www.alexanarch.org/datasets/spxi-mpai/"
+   ],
+   "wiki": "EA-SPXI-SPORE-01 is the seed of the SPXI/MPAI rhizome as first built on 14 September 2026: the characteristic form of the archive's documentary technologies, the framework, the edges and relations from which the rhizome grew. The rhizome itself is released separately (rhizome-spxi-mpai)."
   }
  }
 }

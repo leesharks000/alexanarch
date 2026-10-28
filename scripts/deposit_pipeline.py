@@ -148,6 +148,10 @@ STAGE_ORDER = [
     # archive's own PRIMARY discovery index, the one api/index.json instructs
     # agents to use first. Found by external audit at a 1444/1445/1456 split.
     # These two stages run before commit and fail closed.
+    # release (2026-10-28, MANUS: "yup lets add the release step"): every dataset, instrument and the site whose state
+    # moved since its last release is released before the surfaces are built, so the resolver shows the new release
+    # AXNs. The site release names the tree of the commit the mint started from (base_commit, verifiable by checkout).
+    "release",
     "surfaces", "synchrony",
     "commit", "verify",
     "announce",
@@ -615,6 +619,12 @@ def stage_completeness(args):
         "--deposit-number", str(args.deposit_number)], check=True)
 
 
+def stage_release(args):
+    """Release every continuing object whose state moved (scripts/release_axn.py): datasets, instruments, the site.
+    A state already released is not released again; positions come from axn_positions.next_free()."""
+    sh([sys.executable, SCRIPTS / "release_axn.py", "--apply"], check=True)
+
+
 def stage_surfaces(args):
     """Bring the discovery surfaces to registry head.
 
@@ -647,6 +657,7 @@ STAGES = {
     "mint": stage_mint, "validate": stage_validate, "record": stage_record,
     "rendered": stage_rendered,
     "completeness": stage_completeness,
+    "release": stage_release,
     "surfaces": stage_surfaces, "synchrony": stage_synchrony,
     "pdf": stage_pdf, "body-index": stage_body_index,
     "counts": stage_counts, "wiki": stage_wiki,

@@ -132,6 +132,7 @@ def main():
             print(f"{row} ({rid}): not landed this run, tried again next run\n  " + out[-1500:].replace("\n", "\n  "))
 
     if landed:
+        subprocess.run([sys.executable, "scripts/release_axn.py", "--apply", "--only", "negative-of-the-negative"], cwd=ROOT, check=True)
         for s in ("scripts/build_central_registry.py", "scripts/generate_axn_resolver.py", "scripts/sync_sigil.py"):
             subprocess.run([sys.executable, s], cwd=ROOT, check=True)
     print("landed: " + (", ".join(landed) if landed else "none"))

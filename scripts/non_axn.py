@@ -98,7 +98,7 @@ def main():
     reg_max = max(int(d["hex"], 16) for d in reg["deposits"] if d.get("hex"))
     alloc = json.loads(ALLOC.read_text(encoding="utf-8"))
     taken = positioned_kernels()
-    nxt = max(reg_max + 1, int(alloc["next_hex"], 16))
+    nxt = max(reg_max + 1, int(alloc["next_hex"], 16), __import__('axn_positions').next_free())  # 2026-10-28: the floor includes origin/main
     minted, versioned = [], []
     for p in new:
         h = sha(p)

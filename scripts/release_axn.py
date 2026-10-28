@@ -114,6 +114,13 @@ def ver_of(path, *keys):
     return None
 
 
+# the stores scripts/build_hf_dataset.py reads (2026-10-28)
+HF_SOURCES = ["data/registry.json", "data/texts", "data/EA-WG-CAPTURES-01.json", "data/citation-graph.json",
+              "data/lexical-minting-registry.json", "data/named-entities.json", "data/hexagon-seats.json",
+              "data/nodes.jsonl", "data/relations.jsonl", "data/assertions.jsonl", "data/blog-index.json"]
+WIKIS = ROOT / "data/releases/wikis.json"
+
+
 def objects():
     """The continuing objects and, for each, how to read its current state."""
     objs = []
@@ -121,8 +128,17 @@ def objects():
     seen = set()
     for e in cat:
         src = str(e.get("source_path") or "")
+        if e.get("slug") == "crimson-hexagonal-archive":
+            # 2026-10-28 (MANUS: "lets fill the gaps"): the canonical Hub dataset takes its own position. Its release
+            # freezes the stores scripts/build_hf_dataset.py builds it from, so a Hub build can be checked against them.
+            objs.append({"key": "crimson-hexagonal-archive", "kind": "dataset", "family": "RELEASE", "name": "crimson-hexagonal-archive",
+                         "class": e.get("dataset_class"), "source": [x for x in HF_SOURCES if (ROOT / x).exists()],
+                         "locations": [f"https://huggingface.co/datasets/{e.get('hub_repo') or 'leesharks/crimson-hexagonal-archive'}", f"{SITE}/datasets/"],
+                         "label": None, "basis": "manifest", "builder": e.get("builder"), "instrument": None})
+            seen.add("crimson-hexagonal-archive")
+            continue
         if not src.startswith(("datasets/", "rhizomes/")):
-            continue   # the canonical dataset is a projection of the whole archive: its release is the site release
+            continue
         src = src.rstrip("/")
         key = ("rhizome-" if src.startswith("rhizomes/") else "") + e["slug"].lower().replace(" ", "-").replace("–", "-")
         key = re.sub(r"[^a-z0-9-]+", "-", key).strip("-")
@@ -206,7 +222,7 @@ def main():
         "minted_by": "scripts/release_axn.py", "glyph_table": A.AXN_GLYPH_TABLE, "objects": {}}
     alloc = json.loads(ALLOC.read_text(encoding="utf-8"))
     deps = json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]
-    nxt = max(int(alloc["next_hex"], 16), max(int(d["hex"], 16) for d in deps if d.get("hex")) + 1)
+    nxt = max(int(alloc["next_hex"], 16), max(int(d["hex"], 16) for d in deps if d.get("hex")) + 1, __import__('axn_positions').next_free())  # 2026-10-28: the floor includes origin/main
     new_pos, made, writes = 0, [], []
     for o in objects():
         if only and o["key"] not in only:
@@ -221,6 +237,10 @@ def main():
         for k in ("name", "class", "source", "locations", "builder", "instrument", "governs", "documented_in"):
             if o.get(k) is not None:
                 L[k] = o[k]
+        # 2026-10-28: the dataset's wiki (data/releases/wikis.json) travels with its position; the resolver renders it
+        _w = (json.loads(WIKIS.read_text(encoding="utf-8")).get("wikis") or {}).get(o["key"]) if WIKIS.exists() else None
+        if _w:
+            L["wiki"] = _w
         todo = []
         for path, label, date in HISTORICAL.get(o["key"], []):
             m = manifest([path]); h = hashlib.sha256(m).hexdigest()

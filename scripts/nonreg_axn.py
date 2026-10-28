@@ -82,7 +82,7 @@ def main():
     cap_by_obs = {o.get("obs_id"): (a["root"], o["axn"], o["file"]) for a in cap.values() for o in a["observations"].values() if o.get("obs_id")}
     alloc = json.loads(ALLOC.read_text(encoding="utf-8"))
     deps = json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]
-    nxt = max(int(alloc["next_hex"], 16), max(int(d["hex"], 16) for d in deps if d.get("hex")) + 1)
+    nxt = max(int(alloc["next_hex"], 16), max(int(d["hex"], 16) for d in deps if d.get("hex")) + 1, __import__('axn_positions').next_free())  # 2026-10-28: the floor includes origin/main
     order = sorted(reg["entries"], key=lambda e: (min(str(u.get("date") or "") for u in units(e)), e["slug"]))
     new_pos, minted, shared, rederived, files = 0, 0, 0, 0, {}
     for e in order:

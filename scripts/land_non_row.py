@@ -207,6 +207,9 @@ def main():
     reason = f"landed the SPXI-gnΩsis composition {str(man.get('key'))[:16]}" + (f" (result {a.result})" if a.result else "")
     run = lambda *c: subprocess.run([sys.executable, *c], cwd=ROOT, check=True)
     run("scripts/non_axn.py", "--date", a.date, "--reason", reason)
+    # 2026-10-28 (MANUS: "yup lets add the release step"): the /non dataset is released whenever a landing moves it,
+    # so its release AXN names the state the resolver shows (scripts/release_axn.py; a state already released is not re-released).
+    run("scripts/release_axn.py", "--apply", "--only", "negative-of-the-negative")
     if not a.no_build:
         run("scripts/build_non.py")
         run("scripts/build_central_registry.py")

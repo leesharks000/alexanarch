@@ -107,7 +107,7 @@ def main():
     alloc = json.loads(ALLOC.read_text(encoding="utf-8"))
     deps = json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]
     reg_max = max(int(d["hex"], 16) for d in deps if d.get("hex"))
-    nxt = next_hex(alloc, reg_max)
+    nxt = max(next_hex(alloc, reg_max), __import__('axn_positions').next_free())  # 2026-10-28: the floor includes origin/main (no stale-checkout collisions)
     order = sorted(reg["entries"], key=lambda e: (min([str(o.get("date") or "") for o in observations(e)] or [""]), e["slug"]))
     new_pos, minted, rederived, files = 0, 0, 0, {}
     for e in order:

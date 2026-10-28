@@ -1,10 +1,10 @@
 {
  "catalog": "alexanarch-dataset-catalog",
- "generated": "2026-10-19T21:04:56Z",
+ "generated": "2026-10-28T17:34:22Z",
  "generator": "scripts/build_dataset_catalog.py",
- "registry_latest_deposit_date": "2026-10-19",
+ "registry_latest_deposit_date": "2037-01-01",
  "note": "Generated from the publishing workflows, the rhizome grammars, the dataset directories and git. Freshness is recorded, not enforced: trails_registry_by_days is the gap between the registry's latest deposit and a body's latest node, measured on the emission committed in this repository — the Hub copy is rebuilt in CI from source and may be newer or older. datasets/set.json (the hand-kept set of July) is carried as members of class archive_set_member; directories under datasets/ that no entry covers are listed in unlisted_directories.",
- "count": 25,
+ "count": 41,
  "entries": [
   {
    "slug": "crimson-hexagonal-archive",
@@ -16,8 +16,8 @@
    "hub_repo": "leesharks/crimson-hexagonal-archive",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching data/registry.json, data/texts/**, captures, citations, datasets/**",
-   "last_source_commit": "5bcce5871012",
-   "last_source_date": "2026-10-19",
+   "last_source_commit": "ed2b585eda82",
+   "last_source_date": "2026-10-28",
    "parent_body": null,
    "status": "live"
   },
@@ -33,12 +33,12 @@
    "hub_repo": "leesharks/model-collapse-anti-collapse",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching the grammars, the graph layer or the registry (hf-rhizomes.yml paths)",
-   "last_source_commit": "1e6e37c726e4",
-   "last_source_date": "2026-09-29",
-   "generated": "2026-09-29",
-   "row_count": 638,
-   "latest_node_date": "2026-09-28",
-   "trails_registry_by_days": 21,
+   "last_source_commit": "f88dc5317237",
+   "last_source_date": "2026-10-20",
+   "generated": "2026-10-20",
+   "row_count": 714,
+   "latest_node_date": "2026-10-20",
+   "trails_registry_by_days": 3726,
    "parent_body": "crimson-hexagonal-archive",
    "stolons": [
     "archive-resilience",
@@ -66,12 +66,12 @@
    "hub_repo": "leesharks/semantic-economy",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching the grammars, the graph layer or the registry (hf-rhizomes.yml paths)",
-   "last_source_commit": "1e6e37c726e4",
-   "last_source_date": "2026-09-29",
-   "generated": "2026-09-29",
-   "row_count": 550,
-   "latest_node_date": "2026-09-29",
-   "trails_registry_by_days": 20,
+   "last_source_commit": "f88dc5317237",
+   "last_source_date": "2026-10-20",
+   "generated": "2026-10-20",
+   "row_count": 621,
+   "latest_node_date": "2026-10-19",
+   "trails_registry_by_days": 3727,
    "parent_body": "crimson-hexagonal-archive",
    "stolons": [
     "heteronyms",
@@ -96,12 +96,12 @@
    "hub_repo": "leesharks/machine-mediated-reception",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching the grammars, the graph layer or the registry (hf-rhizomes.yml paths)",
-   "last_source_commit": "1e6e37c726e4",
-   "last_source_date": "2026-09-29",
-   "generated": "2026-09-29",
-   "row_count": 1357,
-   "latest_node_date": "2026-09-29",
-   "trails_registry_by_days": 20,
+   "last_source_commit": "f88dc5317237",
+   "last_source_date": "2026-10-20",
+   "generated": "2026-10-20",
+   "row_count": 1632,
+   "latest_node_date": "2026-10-20",
+   "trails_registry_by_days": 3726,
    "parent_body": "crimson-hexagonal-archive",
    "stolons": [
     "heteronyms",
@@ -127,12 +127,12 @@
    "hub_repo": "leesharks/revelation-first",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching the grammars, the graph layer or the registry (hf-rhizomes.yml paths)",
-   "last_source_commit": "1e6e37c726e4",
-   "last_source_date": "2026-09-29",
-   "generated": "2026-09-29",
-   "row_count": 292,
-   "latest_node_date": "2026-09-28",
-   "trails_registry_by_days": 21,
+   "last_source_commit": "f88dc5317237",
+   "last_source_date": "2026-10-20",
+   "generated": "2026-10-20",
+   "row_count": 351,
+   "latest_node_date": "2026-10-19",
+   "trails_registry_by_days": 3727,
    "parent_body": "crimson-hexagonal-archive",
    "stolons": [
     "heteronyms",
@@ -157,12 +157,12 @@
    "hub_repo": "leesharks/spxi-mpai",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching the grammars, the graph layer or the registry (hf-rhizomes.yml paths)",
-   "last_source_commit": "1e6e37c726e4",
-   "last_source_date": "2026-09-29",
-   "generated": "2026-09-29",
+   "last_source_commit": "f88dc5317237",
+   "last_source_date": "2026-10-20",
+   "generated": "2026-10-20",
    "row_count": 69,
    "latest_node_date": "2026-09-06",
-   "trails_registry_by_days": 43,
+   "trails_registry_by_days": 3770,
    "parent_body": "crimson-hexagonal-archive",
    "stolons": [
     "heteronyms",
@@ -187,12 +187,12 @@
    "hub_repo": "leesharks/provenance-erasure",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching the grammars, the graph layer or the registry (hf-rhizomes.yml paths)",
-   "last_source_commit": "1e6e37c726e4",
-   "last_source_date": "2026-09-29",
-   "generated": "2026-09-29",
+   "last_source_commit": "f88dc5317237",
+   "last_source_date": "2026-10-20",
+   "generated": "2026-10-20",
    "row_count": 71,
    "latest_node_date": "2026-09-11",
-   "trails_registry_by_days": 38,
+   "trails_registry_by_days": 3765,
    "parent_body": "crimson-hexagonal-archive",
    "stolons": [
     "heteronyms",
@@ -217,12 +217,12 @@
    "hub_repo": "leesharks/heteronyms",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching the grammars, the graph layer or the registry (hf-rhizomes.yml paths)",
-   "last_source_commit": "1e6e37c726e4",
-   "last_source_date": "2026-09-29",
-   "generated": "2026-09-29",
-   "row_count": 534,
-   "latest_node_date": "2026-09-28",
-   "trails_registry_by_days": 21,
+   "last_source_commit": "f88dc5317237",
+   "last_source_date": "2026-10-20",
+   "generated": "2026-10-20",
+   "row_count": 684,
+   "latest_node_date": "2026-10-20",
+   "trails_registry_by_days": 3726,
    "parent_body": "crimson-hexagonal-archive",
    "stolons": [
     "machine-mediated-reception",
@@ -247,12 +247,12 @@
    "hub_repo": "leesharks/poetics",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching the grammars, the graph layer or the registry (hf-rhizomes.yml paths)",
-   "last_source_commit": "9ef93e7db3ae",
-   "last_source_date": "2026-09-29",
-   "generated": "2026-09-29",
-   "row_count": 104,
-   "latest_node_date": "2026-09-28",
-   "trails_registry_by_days": 21,
+   "last_source_commit": "f88dc5317237",
+   "last_source_date": "2026-10-20",
+   "generated": "2026-10-20",
+   "row_count": 139,
+   "latest_node_date": "2026-10-19",
+   "trails_registry_by_days": 3727,
    "parent_body": "crimson-hexagonal-archive",
    "stolons": [
     "heteronyms",
@@ -276,8 +276,8 @@
    "hub_repo": "leesharks/negative-of-the-negative",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching datasets/negative-of-the-negative/**, data/registry.json, data/EA-WG-CAPTURES-01.json, scripts/build_negative_of_the_negative.py",
-   "last_source_commit": "b4c92761b6a4",
-   "last_source_date": "2026-10-19",
+   "last_source_commit": "ed2b585eda82",
+   "last_source_date": "2026-10-28",
    "parent_body": "crimson-hexagonal-archive",
    "status": "live"
   },
@@ -336,8 +336,8 @@
    "hub_repo": "leesharks/mantle-bearing",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "see workflow",
-   "last_source_commit": "ec76f8c9ade8",
-   "last_source_date": "2026-10-19",
+   "last_source_commit": "324989b366c4",
+   "last_source_date": "2026-10-27",
    "parent_body": "crimson-hexagonal-archive",
    "status": "live"
   },
@@ -356,8 +356,8 @@
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -375,8 +375,8 @@
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -389,13 +389,13 @@
    "hub_repo": null,
    "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
    "update_trigger": "manual",
-   "last_source_commit": "a1423b5f127b",
-   "last_source_date": "2026-10-06",
+   "last_source_commit": "f88dc5317237",
+   "last_source_date": "2026-10-20",
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -413,8 +413,8 @@
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -432,8 +432,8 @@
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -451,8 +451,8 @@
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -470,8 +470,8 @@
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -489,8 +489,8 @@
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -508,8 +508,8 @@
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -527,8 +527,8 @@
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   },
   {
@@ -541,37 +541,327 @@
    "hub_repo": null,
    "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
    "update_trigger": "manual",
-   "last_source_commit": "9adf9403ad9e",
-   "last_source_date": "2026-10-19",
+   "last_source_commit": "b7a375e80f09",
+   "last_source_date": "2026-10-27",
    "parent_body": "crimson-hexagonal-archive",
    "status": "live",
    "set_json": {
-    "version": "v1.4",
-    "date": "2026-07-25"
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "blog-index",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/blog-index/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "64b0444ed245",
+   "last_source_date": "2026-10-18",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "books",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/books/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "5d1d74a4c0b2",
+   "last_source_date": "2026-09-14",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "corpora",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/corpora/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "324989b366c4",
+   "last_source_date": "2026-10-27",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "erasure",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/erasure/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "7a011c05da80",
+   "last_source_date": "2026-08-24",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "journals",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/journals/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "691afd1fc4d0",
+   "last_source_date": "2026-10-22",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "pearl",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/pearl/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "678bd2360ace",
+   "last_source_date": "2026-09-29",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "pessoagraph",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/pessoagraph/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "822fe733c793",
+   "last_source_date": "2026-09-12",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "prediction-index",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/prediction-index/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "d42f9fa38bd7",
+   "last_source_date": "2026-10-18",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "prediction-ledger",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/prediction-ledger/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "a1423b5f127b",
+   "last_source_date": "2026-10-06",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "venues",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/venues/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "9d0089e74bad",
+   "last_source_date": "2026-10-05",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "bleed",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/bleed/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "a1423b5f127b",
+   "last_source_date": "2026-10-06",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "frames",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/frames/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "822fe733c793",
+   "last_source_date": "2026-09-12",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "erosion-empirical-audit-01",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/erosion-empirical-audit-01/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "a1423b5f127b",
+   "last_source_date": "2026-10-06",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "mret",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/mret/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "c37da5f9b9ed",
+   "last_source_date": "2026-10-18",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "provenance-erasure",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/provenance-erasure/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "a365d789fdee",
+   "last_source_date": "2026-09-14",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
+   }
+  },
+  {
+   "slug": "spxi-mpai",
+   "dataset_class": "archive_set_member",
+   "source_path": "datasets/spxi-mpai/",
+   "builder": null,
+   "workflow": null,
+   "hub_repo_var": null,
+   "hub_repo": null,
+   "hub_repo_basis": "on-site dataset; carried inside the canonical projection",
+   "update_trigger": "manual",
+   "last_source_commit": "9aeca8031f47",
+   "last_source_date": "2026-09-14",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live",
+   "set_json": {
+    "version": "v1.5",
+    "date": "2026-10-28"
    }
   }
  ],
  "unlisted_directories": [
   "axnidentifiers",
-  "bleed",
-  "blog-index",
-  "books",
-  "corpora",
   "deletion-conformance-fixture",
   "deletion-semantics-cross-implementation-test",
-  "erasure",
-  "erosion-empirical-audit-01",
-  "frames",
-  "journals",
-  "mret",
-  "pearl",
-  "pessoagraph",
-  "prediction-index",
-  "prediction-ledger",
   "refrain-index",
   "registry-audit",
   "study-dashboard",
-  "venues",
   "work-queue"
  ]
 }
