@@ -549,6 +549,33 @@
     }
    }
   },
+  "per_dim_pending": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "Set at intake when a capture is seated without per_dim (operator, 2026-10-29: dimensional PER is standard at intake). Recorded, not refused (laws record): since (the seating date), reason (the stated reason it was seated unscored, e.g. no atom set for the target yet; null when none was given) and breach (true when no reason was given). Cleared when per_dim is written.",
+   "properties": {
+    "since": {
+     "type": "string"
+    },
+    "reason": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "breach": {
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "since",
+    "reason",
+    "breach"
+   ],
+   "additionalProperties": false
+  },
   "per_dim_v1_0": {
    "type": [
     "object",

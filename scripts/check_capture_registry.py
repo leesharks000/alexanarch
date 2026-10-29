@@ -52,6 +52,17 @@ def main():
         print(f"no-loss: no base at {base}; skipped")
     secs = [s for s, _ in __import__("itertools").groupby(e["s"] for e in E)]
     if secs != sorted(secs) or len(secs) != len(set(secs)): fails.append(f"ORDER sections not grouped/alphabetical: {secs[:6]}…")
+    # PER-DIM STANDARD (2026-10-29). Recorded, never a failure (laws record): every observation seated without per_dim is
+    # counted, with those that carry a stated reason (per_dim_pending.reason), those flagged as breaches, and those that carry
+    # no pending record at all (seated before the standard, or written around the intake).
+    un = {"unscored": 0, "reason": 0, "breach": 0, "unrecorded": 0}
+    for e in E:
+        for o in (e.get("observations") or [e]):
+            if o.get("per_dim") or (o is not e and e.get("per_dim") and o.get("obs_id") == e.get("obs_id")): continue
+            un["unscored"] += 1
+            pd = o.get("per_dim_pending") or (e.get("per_dim_pending") if o.get("obs_id") == e.get("obs_id") else None)
+            un["unrecorded" if not pd else ("breach" if pd.get("breach") else "reason")] += 1
+    print("per-dim: %(unscored)d observation(s) unscored · %(reason)d with a stated reason · %(breach)d breach(es) · %(unrecorded)d with no pending record" % un)
     for f in fails[:40]: print("✗", f)
     print(f"check_capture_registry: {len(E)} entries · {len(fails)} failure(s) · schema {SCHEMA.name} · base {base}")
     return 1 if fails else 0

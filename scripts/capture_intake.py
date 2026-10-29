@@ -244,8 +244,23 @@ def seat_flat(draft, registry, schema):
     missing = [k for k in req if draft.get(k) in (None, "", "null")]
     # DIMENSIONAL PER AT INTAKE (cutover 2026-10-19, rubric rebuild/capture-registry/per-atoms/templates.json). Recorded, not
     # refused (laws record): a new capture without per_dim is seated and named here, so the backlog cannot grow unseen.
+    # STANDARD AT INTAKE (operator, 2026-10-29: "we do dimensional per scoring on intake now"; the ruling to make it standard
+    # followed the finding that 57 captures, 2026-10-20 to 10-29, had been seated with the scalar alone). Still recorded, not
+    # refused: a capture seated without per_dim carries per_dim_pending on its record — since, reason (a draft may state one
+    # in per_dim_pending.reason, e.g. "no atom set for the target yet") and breach (no reason given) — and
+    # check_capture_registry.py counts every unscored observation and every one that carries no pending record.
     if not draft.get("per_dim"):
-        print("   NOTICE: no per_dim (dimensional PER, PER-dim rubric v1.1); the historical scalar alone will be seated — score it under the rubric (a reader reads the atoms with spans; scripts/per_dim_score.py and per_d_score.py compute; per_dim_write.py and per_d_write.py write)")
+        import datetime as _dt0
+        _pend = dict(draft.get("per_dim_pending") or {})
+        _pend = {"since": _pend.get("since") or _dt0.date.today().isoformat(), "reason": _pend.get("reason") or None}
+        _pend["breach"] = _pend["reason"] is None
+        draft["per_dim_pending"] = _pend
+        if _pend["breach"]:
+            print("   BREACH: no per_dim and no stated reason. Dimensional PER is standard at intake (PER-dim rubric v1.1): score the capture against its target's atom set before seating (see the per_dim of any capture seated since 2026-10-29), or state why it cannot be scored yet in per_dim_pending.reason. Seated with per_dim_pending.breach = true; it is counted by check_capture_registry.py until scored.")
+        else:
+            print("   PENDING: no per_dim; reason stated: %s. Seated with per_dim_pending; counted by check_capture_registry.py until scored." % _pend["reason"])
+    else:
+        draft["per_dim_pending"] = None
     if missing: raise Refused("ADMIT refused — missing: %s (transcript, date, surface, auth are the contract; q, ev, s, d are the record; originator says whose entity it is)" % missing)
     # THE SCALAR IS DERIVED (2026-10-20, ruling: "yes lets correct those 38 and patch intake"). per is the share of per_v's
     # four units lost, never a figure entered beside it: 38 observations seated 2026-10-16 to 10-19 stored a hand-entered
@@ -262,7 +277,7 @@ def seat_flat(draft, registry, schema):
             # its presented set, and its reading. Found missing on the 11 Sept seatings and repaired by hand
             # at the mint of #1611; fixed here at intake so it is never missing again (2026-09-15).
             obs["slug"] = draft.get("slug") or f"{e['slug']}-{draft['date'].replace('-', '')}"
-            for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors", "per_v", "per_corrected", "per_dim", "availability"):
+            for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors", "per_v", "per_corrected", "per_dim", "per_dim_pending", "availability"):
                 if draft.get(k) is not None:
                     obs[k] = draft[k]
             # 2026-09-21: an entry seated before observations existed has no `observations` list, and its root
