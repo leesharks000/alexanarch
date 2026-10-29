@@ -1,0 +1,401 @@
+{
+ "row": "data-provenance-explorer",
+ "pass": "first reading, 2026-10-29; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Data Provenance Explorer or the Data Provenance Initiative, the Initiative or its Explorer named (the task's ruling: D only where the Initiative or its Explorer is named); R, a relation the archive states between the Initiative and an archive object; O, an archive category applied to the Initiative or to the class the field sources for it (training-data provenance and licensing audits: B7, B3, B6). A bare mention, a list of anchors or keywords, a citation-list entry or a reference line is not a claim. Beyond the string pass, the 17 texts that use 'data provenance' (the task's count; 12 with 'Data Provenance' capitalised, 5 lower-case only) were read whole at the passages.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 725,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "Provenance After AI (EA-MPAI-PROVENANCE-01 v1.1): the Initiative as the corpus (licensing) dimension of provenance, its audit's figures, its bound (it audits whether datasets were licensed, not whether outputs preserve attribution), the licensing dimension's object and question, the independence of the dimensions, and semantic provenance as the dimension that follows",
+   "claims": [
+    "D725-01",
+    "D725-02",
+    "O725-03",
+    "D725-04",
+    "O725-05",
+    "O725-06",
+    "O725-07",
+    "D725-08",
+    "D725-09"
+   ],
+   "cands": [
+    "D0005",
+    "D0006",
+    "D0007",
+    "D0008",
+    "D0009",
+    "D0010",
+    "D0011",
+    "D0012",
+    "D0013",
+    "D0014",
+    "D0015",
+    "R0001",
+    "R0002",
+    "O0005",
+    "O0006",
+    "O0007",
+    "O0008",
+    "O0009",
+    "O0010",
+    "O0011",
+    "O0012",
+    "O0013"
+   ]
+  },
+  {
+   "dep": 1190,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "the same work as #725 (v1.1, the blog-canonical recovery, 2026-05-12): every claim falls in #725's lineages and adds nothing (S4); kept as an instance under #725, the earliest (2026-05-08)",
+   "claims": [],
+   "instance_of": 725,
+   "cands": [
+    "D0019",
+    "D0020",
+    "D0021",
+    "D0022",
+    "D0023",
+    "D0024",
+    "D0025",
+    "D0026",
+    "D0027",
+    "D0028",
+    "D0029",
+    "D0030",
+    "D0031",
+    "R0003",
+    "R0004",
+    "R0005",
+    "O0015",
+    "O0016",
+    "O0017",
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0021",
+    "O0022",
+    "O0023",
+    "O0024",
+    "O0025"
+   ]
+  },
+  {
+   "dep": 98,
+   "strata": [
+    "D",
+    "R",
+    "O"
+   ],
+   "reason": "Distributed Compute Is Not Distributed Intelligence: the Initiative documents provenance of training datasets, 'Documentation project, not infrastructure'; Consent in Crisis a diagnostic paper; the Initiative at L4 of the archive's layer stack; and the archive's own adoption of its provenance schema ('Implemented (in CHA)'), a relation of inheritance (R). The R row was not returned by the string pass (its table is one 'sentence' cut at 900 characters before the alias) and was found by reading the paragraphs D0001–D0003 stand in",
+   "claims": [
+    "D98-01",
+    "D98-02",
+    "O98-03",
+    "R98-04"
+   ],
+   "cands": [
+    "D0001",
+    "D0002",
+    "D0003",
+    "O0002"
+   ]
+  },
+  {
+   "dep": 1003,
+   "strata": [
+    "D"
+   ],
+   "reason": "AI-Native Intellectual Biography: provenance and attribution studies, the Initiative among them, 'have focused on attribution loss in AI outputs' (a reading held against #725 under P_coh)",
+   "claims": [
+    "D1003-01"
+   ],
+   "cands": [
+    "D0018",
+    "O0014"
+   ]
+  },
+  {
+   "dep": 121,
+   "strata": [
+    "D"
+   ],
+   "reason": "the same sentence as #1003 (another version of the work, 2026-05-22): an instance under #1003 (S4)",
+   "claims": [],
+   "instance_of": 1003,
+   "cands": [
+    "D0004",
+    "O0003"
+   ]
+  },
+  {
+   "dep": 1194,
+   "strata": [
+    "D"
+   ],
+   "reason": "the same sentence as #1003 (another version, 2026-05-22): an instance under #1003 (S4)",
+   "claims": [],
+   "instance_of": 1003,
+   "cands": [
+    "D0032",
+    "O0026"
+   ]
+  },
+  {
+   "dep": 1714,
+   "strata": [
+    "D"
+   ],
+   "reason": "Meaning Feudalism at the Discovery Layer §9.2: the Initiative's finding as what is lost before training begins, and the requirement that provenance survive the training pipeline, sources recorded at ingestion",
+   "claims": [
+    "D1714-01",
+    "D1714-02",
+    "D1714-03"
+   ],
+   "cands": [
+    "D0033",
+    "D0034",
+    "D0035"
+   ]
+  },
+  {
+   "dep": 95,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Alignment: PER reaches parametric claims only indirectly, and at the substrate level they need companion infrastructure, training-data provenance records among it (O-class: the archive's measure applied to the class). Not a string-pass candidate (the class sentence carries no category from the script's vocabulary); found in the reading of the 17 texts",
+   "claims": [
+    "O95-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1188,
+   "strata": [
+    "O"
+   ],
+   "reason": "the same text as #95 (the journal-form deposit, 2026-05-05): an instance under #95 (S4)",
+   "claims": [],
+   "instance_of": 95,
+   "cands": []
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Infrastructure §8.3: standardized documentation of training-data provenance (datasheets) 'a step toward the accounting the framework demands' (O-class)",
+   "claims": [
+    "O623-01"
+   ],
+   "cands": [
+    "O0004"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/data-provenance-explorer-aio-20261029/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and attribution note for the entity's capture (OBS-dc0adc018f10, 2026-10-29), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/data-provenance-explorer/ (source: /home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json rows[slug == 'data-provenance-explorer'] and scripts/meta_aggregator/articles.py ARTICLES['data-provenance-explorer']; rendered aggregators/data-provenance-explorer/index.html read for agreement)",
+   "reason": "the MMRS meta-aggregator record of the entity (editor Lee Sharks, 2026-10-28, corrected 2026-10-29): its article sentences and its fields with their basis; where a field restates an own page ledgered in B it is carried as one lineage with that page",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    726
+   ],
+   "reason": "Lateral Field Bleed: 'External anchors required: … Data Provenance Initiative' and a bracketed anchor list: bare listings, no claim (D0016, D0017)"
+  },
+  {
+   "dep": [
+    1664,
+    1665,
+    1671,
+    1690
+   ],
+   "reason": "the specification's versions reproduce the model-collapse row's field claim F16 (IBM's page: the Initiative's 'more than 4,000 datasets'): a field ledger's claim of another row, not the archive's claim on the entity; not returned by the string pass (the table row falls past its 900-character cut), found by reading"
+  },
+  {
+   "dep": [
+    73
+   ],
+   "reason": "O-class candidate O0001: a semantic debt exceeding 'any claim based on training data provenance' in a retrocausal history: a claim about claims based on provenance, not about provenance audits"
+  },
+  {
+   "dep": [
+    1334
+   ],
+   "reason": "O-class candidate O0027: a checklist line 'Audit training corpus provenance — Pending ACR signoff' in an incident-report packet: no claim on the class"
+  },
+  {
+   "dep": [
+    727
+   ],
+   "reason": "AXN-0278: 'data provenance AI' in a list of capture targets: a listing"
+  },
+  {
+   "dep": [
+    45,
+    48,
+    64,
+    87,
+    89,
+    91,
+    92,
+    100,
+    103,
+    112,
+    113,
+    115,
+    122,
+    123,
+    124,
+    129,
+    130,
+    133,
+    140,
+    141,
+    149,
+    151,
+    160,
+    162,
+    178,
+    204,
+    250,
+    264,
+    274,
+    349,
+    363,
+    561,
+    576,
+    636,
+    643,
+    673,
+    722,
+    729,
+    749,
+    752,
+    753,
+    754,
+    768,
+    791,
+    823,
+    845,
+    998,
+    1022,
+    1196,
+    1201,
+    1202,
+    1210,
+    1229,
+    1258,
+    1368,
+    1369,
+    1384,
+    1385,
+    1386,
+    1389,
+    1393,
+    1460,
+    1540,
+    1574,
+    1643,
+    1644,
+    1673,
+    1677,
+    1678,
+    1680,
+    1684
+   ],
+   "reason": "hop (forward and reverse) from the admitted deposits: none names the Initiative, its Explorer, its papers or its domain, none matches the class term, and none states a relation to it (screened by the alias and class patterns, then the titles read)"
+  }
+ ],
+ "hop": {
+  "from": [
+   95,
+   98,
+   121,
+   623,
+   725,
+   1003,
+   1188,
+   1190,
+   1194,
+   1714
+  ],
+  "candidates": 73,
+  "admitted": 0
+ },
+ "class_pass": "O-class: the class term (training-data provenance and licensing audits, sourced from B7, B3, B6) matched 9 sentences; admitted by reading at #725 (O725-03, O725-06) and, outside the string pass, #95 and #623; the rest rejected above",
+ "observations": "The archive names the Initiative in 12 texts (8 deposits of the string pass, 4 specification versions found by reading) and the Explorer by name in none; 'DPI Explorer', the domain and the arXiv numbers occur only in #725/#1190 and #1714's reference lists. Its bearing is a reading of the Initiative's place: the corpus dimension of provenance (#725), documentation rather than infrastructure (#98), what is lost before training (#1714), and the training-layer end of one chain whose other end the composition layer holds (MMRS record).",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 35,
+   "D_deposits": 8,
+   "R_sentences": 5,
+   "R_deposits": 2,
+   "O_direct": 18,
+   "O_class": 9,
+   "O_deposits": 9,
+   "H_candidates": 73
+  },
+  "texts_with_phrase": 17,
+  "deposits_candidate": 11,
+  "deposits_admitted": 10,
+  "deposits_admitted_with_claims": 6,
+  "instances_grouped_S4": 4,
+  "hop_candidates": 73,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 9,
+   "mmrs": 21,
+   "deposit": 19
+  }
+ }
+}

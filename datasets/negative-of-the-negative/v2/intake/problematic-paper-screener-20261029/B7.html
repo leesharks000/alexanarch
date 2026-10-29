@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><title>Service d&#39;authentification aux services numeriques de l&#39;Universite Grenoble Alpes Application non autorisée à utiliser CAS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link rel="stylesheet" type="text/css" href="/cas/webjars/normalize.css/8.0.1/normalize-112272e51c80ffe5bd01becd2ce7d656.css" /><link rel="stylesheet" type="text/css" href="/cas/webjars/bootstrap/5.3.8/css/bootstrap-grid.min-895b9494c7178ac12ad9c56d81305665.css" /><link rel="stylesheet" type="text/css" href="/cas/webjars/material-components-web/14.0.0/dist/material-components-web.min-9da9033e8d04504fe54b3dbb1298fd78.css" /><link rel="stylesheet" type="text/css" href="/cas/webjars/mdi__font/7.4.47/css/materialdesignicons.min-2c83c4bce691e18f82409f87b2bf84e4.css" /><link rel="stylesheet" type="text/css" href="/cas/webjars/datatables/2.3.2/css/dataTables.dataTables-86c98d6ce5aa289ccf4492ac3a785fad.css" /><link rel="stylesheet" type="text/css" href="/cas/themes/theme-uga/css/cas-ba572633a7cb8847acb0fd61e05f81ac.css" /><link rel="shortcut icon" href="/cas/themes/theme-uga/favicon-951fb0a5ef3cf635368c6ea1bf57df46.ico" /></head>
+
+<body>
+    <script type="text/javascript" src="/cas/webjars/jquery/3.7.1/jquery.min-2c872dbe60f4ba70fb85356113d8b35e.js"></script>
+<script type="text/javascript" src="/cas/webjars/datatables/2.3.2/js/dataTables-8e31487c41abe2938c55b5dcde42a604.js"></script>
+<script type="text/javascript" src="/cas/webjars/clientjs/0.2.1/dist/client.min-5b6a46b3fb2ab9307d013def98fd7289.js"></script>
+
+<script type="text/javascript" src="/cas/webjars/material-components-web/14.0.0/dist/material-components-web.min-3c99031127092dd1984f2e3aa6aeed8b.js"></script>
+<script type="text/javascript" src="/cas/themes/theme-uga/js/cas-3aa926ae5789b234c25d4a8bad8eb47f.js"></script>
+<script type="text/javascript" src="/cas/themes/theme-uga/js/material-2390ca2aa86b68d155ca43f80fb8d7a8.js"></script>
+<script>
+    if (typeof resourceLoadedSuccessfully === "function") {
+        resourceLoadedSuccessfully();
+    }
+    let trackGeoLocation = null;
+</script>
+
+<div>
+
+    <style>
+        .bgimage {
+            background-image: url(\/cas\/images\/background-553db102696ee497e02b357414b118e6\.jpg);
+        }
+    </style>
+
+    <header id="app-bar" class="mdc-top-app-bar mdc-top-app-bar--fixed mdc-elevation--z4 shadow-sm"
+            role="banner">
+        <nav class="mdc-top-app-bar__row navbar navbar-dark bg-dark">
+            <div class="container-fluid container-fluid d-flex align-items-center justify-content-between">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <button class="mdc-icon-button mdc-top-app-bar__navigation-icon  btn btn-outline-light"
+                            id="drawerButton"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#app-drawer">
+                        <span class="mdi mdi-menu fa fa-bars" aria-hidden="true"></span>
+                        <span class="visually-hidden">menu</span>
+                    </button>
+                </section>
+                <section class="mdc-top-app-bar__section">
+                    <div class="cas-brand mx-auto">
+                        <h1 class="visually-hidden">Service d&#39;authentification aux services numeriques de l&#39;Universite Grenoble Alpes</h1>
+                        <a href="/cas/">
+                            <img id="cas-logo"
+                                 class="cas-logo"
+                                 alt="Service d&#39;authentification aux services numeriques de l&#39;Universite Grenoble Alpes"
+                                 src="/cas/themes/theme-uga/images/logo_blanc-7ca250214552f7cad3ea6d7359a20176.svg"
+                            /></a>
+                    </div>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                    </section>
+            </div>
+        </nav>
+    </header>
+
+    <div id="logindrawer">
+        <aside id="app-drawer"
+               class="mdc-drawer mdc-drawer--dismissible mdc-drawer--modal offcanvas offcanvas-start">
+            
+            <div class="mdc-drawer__header offcanvas-header flex-column">
+                <h2 class="mdc-drawer__title offcanvas-title">Service d&#39;authentification aux services numeriques de l&#39;Universite Grenoble Alpes</h2>
+                <div class="mdc-drawer__subtitle offcanvas-title">Central Authentication Service</div>
+            </div>
+            <div class="mdc-drawer__content offcanvas-body">
+                <nav class="mdc-list list-group list-group-flush">
+                    <a href="/cas/actuator" class="mdc-list-item list-group-item list-group-item-action">
+                        <i class="mdi mdi-cogs fa fa-cogs" aria-hidden="true"></i>&nbsp;
+                        <span class="mdc-list-item__text">Actuator Endpoints</span>
+                    </a>
+                    <a class="mdc-list-item list-group-item list-group-item-action" href="https://apereo.github.io/cas">
+                        <i class="mdi mdi-file-code-outline fas fa-file-code" aria-hidden="true"></i>&nbsp;
+                        <span class="mdc-list-item__text">Documentation</span>
+                    </a>
+                    <a class="mdc-list-item list-group-item list-group-item-action" href="https://github.com/apereo/cas/pulls">
+                        <i class="mdi mdi-call-merge fas fa-code-branch" aria-hidden="true"></i>&nbsp;
+                        <span class="mdc-list-item__text">Pull Requests</span>
+                    </a>
+                    <a class="mdc-list-item list-group-item list-group-item-action"
+                       href="https://apereo.github.io/cas/developer/Contributor-Guidelines.html">
+                        <i class="mdi mdi-information fas fa-info-circle" aria-hidden="true"></i>&nbsp;
+                        <span class="mdc-list-item__text">Guide pour les contributeurs</span>
+                    </a>
+                    <a class="mdc-list-item list-group-item list-group-item-action" href="https://apereo.github.io/cas/Support.html">
+                        <i class="mdi mdi-help-circle fas fa-question-circle" aria-hidden="true"></i>&nbsp;
+                        <span class="mdc-list-item__text">Support</span>
+                    </a>
+                    <a class="mdc-list-item list-group-item list-group-item-action" href="https://apereo.github.io/cas/Mailing-Lists.html">
+                        <i class="mdi mdi-email-newsletter fas fa-envelope-open-text" aria-hidden="true"></i>&nbsp;
+                        <span class="mdc-list-item__text">Listes de diffusion</span>
+                    </a>
+                    <a class="mdc-list-item list-group-item list-group-item-action" href="https://apereo.github.io/">
+                        <i class="mdi mdi-post fas fa-newspaper" aria-hidden="true"></i>&nbsp;
+                        <span class="mdc-list-item__text">Blog</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+    </div>
+
+    <script>let countMessages = 0;</script>
+    <script type="text/javascript">
+        function supportsCookies() {
+            try {
+                document.cookie = 'testcookie=1';
+                const ret = document.cookie.indexOf('testcookie=') !== -1;
+                document.cookie = 'testcookie=1; expires=Thu, 01-Jan-1970 00:00:01 GMT';
+                return ret;
+            } catch (e) {
+                console.log(e);
+                return false;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!supportsCookies()) {
+                countMessages++;
+                window.jQuery('#cookiesSupportedDiv').show();
+            }
+
+            if (countMessages === 0) {
+                window.jQuery('#notifications-count').remove();
+                window.jQuery('#cas-notifications-menu').remove();
+            } else {
+                window.jQuery('#notifications-count').text(`(${countMessages})`)
+            }
+        });
+    </script>
+</div>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="fade-in mdc-drawer-app-content mdc-top-app-bar--fixed-adjust d-flex justify-content-center bgimage">
+        <main id="main-content" class="container-lg py-4" role="main">
+            <div id="content" class="banner banner-danger alert alert-danger mdc-card card p-4 m-auto w-lg-66">
+        <h2>Application non autorisée à utiliser CAS</h2>
+        <p >L’application pour laquelle vous avez tenté de vous authentifier n’est pas autorisée à utiliser CAS. Ceci signifie habituellement que l’application n’est pas enregistrée auprès de CAS, ou sa politique d’accès définie lors de son enregistrement ne lui permet pas d’utiliser les fonctionnalités de CAS, ou elle est invalide et non reconnue par CAS. Contactez votre administrateur CAS pour savoir comment enregistrer et intégrer votre application à CAS.</p>
+    </div>
+        </main>
+    </div>
+
+    </body>
+
+</html>

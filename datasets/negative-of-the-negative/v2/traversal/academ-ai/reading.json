@@ -1,0 +1,99 @@
+{
+ "row": "academ-ai",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). The string pass over 1,711 archive texts found no D or R candidate: no deposit text names Academ-AI (hyphenated or spaced), academ-ai.info, arXiv:2411.15218 or Alex Glynn (also checked by grep over data/texts and data/blog-corpus: no hit). O-class ran on one class sourced from the field (config: 'documentation of undeclared AI use in academic publishing', basis B1/B5, B7, B8) and returned one sentence in one deposit (#1540). Admission by reading: a sentence is admitted to O when it applies an archive category to the documentation of undeclared AI use in scholarship as a class; a disambiguation line about a deposit's own claims is not. The hop (H) was not run: it runs from admitted D/R/O deposits, and none was admitted. The archive's own records of the entity are not deposits and are reached outside the string pass: the Capture Registry's entry (findings, reading and analysis) and the MMRS meta-aggregator record (census.json row academ-ai and the census's schema note; articles.py ARTICLES['academ-ai'], and the sentence on Academ-AI in ARTICLES['problematic-paper-screener']), ledgered as CAP-1-NN and MMRS-NN.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [],
+ "admitted_surface": [
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/academ-ai-aio-20261029/",
+   "reason": "the registry's findings, reading and analysis at the entity's capture by name (OBS-e884288abc5d, AXN:0AA4.CAPTURE.⏬🏺⛳🗼↙️🔺), read from data/EA-WG-CAPTURES-01.json (entries[482])",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/academ-ai/",
+   "reason": "the MMRS meta-aggregator record of the entity (editor Lee Sharks; compiled 2026-10-28, the disambiguation, negative tags and capture relation added 2026-10-29 from the capture, against the copy rebuild/capture-registry/intake-20261029-aggregators/census-20261028.json): census.json row academ-ai, the census's schema note, articles.py ARTICLES['academ-ai'] and the Problematic Paper Screener article's sentence on Academ-AI",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22",
+    "MMRS-23",
+    "MMRS-24",
+    "MMRS-25",
+    "MMRS-26",
+    "MMRS-27",
+    "MMRS-28",
+    "MMRS-29",
+    "MMRS-30",
+    "MMRS-31"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 1540,
+   "reason": "O-class candidate O0001: the sentence is #1540's own disambiguation block ('not: \"a defense of undisclosed AI authorship in academic journals\"'), a negative tag on the deposit's claims; it applies no archive category to the documentation of undeclared AI use as a class and says nothing of Academ-AI",
+   "cands": [
+    "O0001"
+   ]
+  }
+ ],
+ "hop": {
+  "from": [],
+  "candidates": 0,
+  "admitted": 0,
+  "note": "not run: no deposit admitted"
+ },
+ "observations": "No archive deposit names Academ-AI, its domain, its paper or its operator. The archive's bearing on the entity is carried by its own records of it: the MMRS meta-aggregator record and the capture of 2026-10-29.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 1,
+   "O_deposits": 1,
+   "H_candidates": 0
+  },
+  "candidate_deposits": 1,
+  "admitted": 0,
+  "not_admitted": 1,
+  "archive_claims": {
+   "capture": 9,
+   "mmrs": 31,
+   "deposit": 0
+  }
+ }
+}

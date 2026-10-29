@@ -1,0 +1,42 @@
+{
+ "row": "ai-incident-database",
+ "address": "ai incident database",
+ "entity": "The AI Incident Database (AIID, incidentdatabase.ai), a project of the Responsible AI Collaborative, launched by Sean McGregor (arXiv:2011.08512, 17 November 2020), Partnership on AI its database founding sponsor: editor-resolved incidents with the reports that document them attached, a citation page per incident at /cite/N, weekly snapshots",
+ "row_type": "C (a public entity on which the archive bears: a database, one of the MMRS meta-aggregator's entities)",
+ "aliases": [
+  {
+   "pattern": "\\bAI Incident Database\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bAI Incident DB\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bAIID\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bincidentdatabase\\.ai\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bResponsible AI Collaborative\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "AI incident databases and incident reporting",
+   "pattern": "\\b(AI )?incident (databases?|databasing|repositor(y|ies)|reporting|trackers?|registr(y|ies))\\b",
+   "flags": "i",
+   "basis": "field: B12 (Paeth et al., AAAI-25) §'The AI Incident Database and Related Work': 'Inspired by the CVE program and other incident reporting practices, the AI Incident Database (AIID) catalogs AI incidents'; B1 (incidentdatabase.ai, About the Database): 'Like similar databases in aviation and computer security'; B2 (MIT AI Incident Tracker): 'current databases struggle with inconsistent structure'"
+  }
+ ],
+ "classes_note": "One class, sourced from the field by locus: the AIID as an incident database, a practice of incident reporting, among similar databases (B12, B1, B2). No field source places the AIID in a class of the archive's own (aggregators of machine-mediated reception work is the MMRS record's class, an archive source, ledgered as MMRS claims and not run as an O-class here, since the brief confines classes to what B sources). The aliases are the entity's name, its short form 'AI Incident DB' (as #543 writes it), its abbreviation AIID (case-sensitive), its domain and its operator's name. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the AIID or on incident databases as a class to which the archive applies its own category; a bare mention, a link list or a generic use of 'incident reporting' about another object is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; addresses 'ai incident database' (ai-incident-database-aio-20261029, OBS-d2d81aafd207) and 'what counts as an incident in the ai incident database' (what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029, OBS-bd807797964a), Google AI Overview (expanded), signed out, incognito. Second pass: one citation hop forward and back from the deposit admitted by reading (#543).",
+ "hop_from": [
+  543
+ ]
+}

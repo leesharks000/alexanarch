@@ -16,6 +16,8 @@ and seat_capture_postflight.py). A page a generator rewrites without the tag get
 THE RULE
 --------
 Every tracked .html page outside data/ carries the tag exactly once, immediately before its last </body>.
+  - data/ and the /non intake folders (datasets/negative-of-the-negative/v2/intake/, saved source pages
+    hashed in the field ledgers; excluded 2026-10-29 after a postflight altered them) are excluded.
   - data/ is excluded: it holds deposited artifacts (corpora, attachments, trackers), whose bytes are
     the deposit's and are not the site's to change.
   - A redirect stub (meta refresh) is excluded: nobody reads it.
@@ -41,7 +43,7 @@ BODY_END_RE = re.compile(r'</body\s*>', re.I)
 def pages():
     out = subprocess.check_output(["git", "-c", "core.quotepath=off", "ls-files", "-z", "*.html"], cwd=ROOT)
     for f in out.decode("utf-8").split("\0"):
-        if f and not f.startswith("data/"):
+        if f and not f.startswith(("data/", "datasets/negative-of-the-negative/v2/intake/", "datasets/negative-of-the-negative/v2/ledgers/")):
             yield f
 
 

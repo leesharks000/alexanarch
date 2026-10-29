@@ -1,0 +1,1014 @@
+{
+ "row": "problematic-paper-screener",
+ "address": "problematic paper screener",
+ "addresses": [
+  "problematic paper screener"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), or the oEmbed title for the video card; 41/41 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (T1: B1–B6, six sources for six cards); 'own_page', the entity's own pages the MMRS record cites and the task names that T did not surface (B7, the Grenoble Alpes republication of The Conversation article, unreachable); two own pages are also cards (B1 the screener's page, B3 the operators' arXiv paper) and are carried once, as cards, and The Conversation article the task names is card B2 at its own address; 'wikipedia', no article for the name, none for tortured phrases (W1, the requests recorded). Unreachable: B7 (302 to a CAS login, 403; no snippet, no claim). B6 read by its title only.",
+ "lineage_note": "Lineages: what it is (B1, B3); the detectors (B1, B2); tortured phrases (B1, B2); the bibliographic detectors, Feet of Clay (B1); intake (B1, B2); scale and cadence (B2); origin and makers (B1, B2, B3); recognition, Nature's 10 (B1, B2); method (B4); purpose (B3); reporting (B1); what it has found (B2); limits (B2); uptake by publishers (B2), the Signals Graph (B4), Episciences (B5); the database of flagged references (B5); an adopter's description (B5, kept apart from the screener's own list: distinct o, §3.6); maintenance (B1); reception, video (B6). The Conversation article at B2 and its republication at B7 are one text.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped by a stdlib HTML parser; B6.json the oEmbed response, B6-watch.html the watch page; W1.html, W2.wiki, W2.html, W3.wiki and W1-search-*.json from Wikipedia); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 at T1",
+   "card": "Institut de Recherche en Informatique de Toulouse - IRIT — PPS – Problematic Paper Screener",
+   "url": "https://dbrech.irit.fr/pls/apex/f?p=9999:1::::::",
+   "kind": "the screener's own page (IRIT); also an own page the MMRS record cites",
+   "card_title": "PPS – Problematic Paper Screener",
+   "card_snippet": "Tool: Problematic Paper Screener (PPS) screens scientific literature for problematic publications using data APIs (Crossref/Retraction Watch, Dimensions, PubMed...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "problematic-paper-screener-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B1.html",
+     "sha256": "17dc1cfc7a8164947c466bceecdb24c18805b00ef0a2bc9f0686ea23ecef6e76"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B1.txt",
+     "sha256": "42b30b9d56eb70f07d4ae6f19e86f19845085beb954bc2a5e5109c7ef85f0414"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:12Z",
+    "http": 200,
+    "url": "https://dbrech.irit.fr/pls/apex/f?p=9999:1::::::",
+    "raw": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B1.html",
+    "raw_sha256": "17dc1cfc7a8164947c466bceecdb24c18805b00ef0a2bc9f0686ea23ecef6e76",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B1.txt"
+    ]
+   },
+   "names_operator": "yes (Cabanac, Labbé, Magazinov in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card is the screener's home page, carried once, as a card; also the MMRS record's first source ('detectors, sources, start date'). The page's counts ('Number of problematic papers', 'Number of annulled articles') are drawn by script and are not in the saved text; its 'Key highlights' embed posts by Nature, the Bulletin of the Atomic Scientists, CNRS and Cabanac (one ledgered, F10). Stable URL given on the page: https://www.irit.fr/~Guillaume.Cabanac/problematic-paper-screener"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2 at T1",
+   "card": "The Conversation — Problematic Paper Screener: Trawling for fraud in the scientific literature",
+   "url": "https://theconversation.com/problematic-paper-screener-trawling-for-fraud-in-the-scientific-literature-246317",
+   "kind": "article (The Conversation, 29 January 2025; Guillaume Cabanac, Cyril Labbé, Frederik Joelving)",
+   "card_title": "Problematic Paper Screener: Trawling for fraud in the scientific literature",
+   "card_snippet": "Tool Overview: Problematic Paper Screener developed by Guillaume Cabanac scans 130 million scholarly papers weekly across nine detectors to identify fraudulent ...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "problematic-paper-screener-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B2.html",
+     "sha256": "f0b03dc0ab03444ba61a77bdb992e8128f293af40ce455aeb955f4a480f211c4"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B2.txt",
+     "sha256": "61394ca7f2f1f1edbea08fb65f63495d6dc2d961601e8e53cadb3430458d50e8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:06Z",
+    "http": 200,
+    "url": "https://theconversation.com/problematic-paper-screener-trawling-for-fraud-in-the-scientific-literature-246317",
+    "raw": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B2.html",
+    "raw_sha256": "f0b03dc0ab03444ba61a77bdb992e8128f293af40ce455aeb955f4a480f211c4",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B2.txt"
+    ]
+   },
+   "names_operator": "yes (Cabanac, Labbé in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found by The Conversation's site search for the card title; written by two of the three makers with Frederik Joelving (Retraction Watch). The MMRS record cites the same article at the Grenoble Alpes republication (B7), unreachable"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 at T1",
+   "card": "arXiv — [2210.04895] The 'Problematic Paper Screener' automatically selects suspect publications for post-publication (re)assessment",
+   "url": "https://arxiv.org/abs/2210.04895",
+   "kind": "the makers' paper, arXiv abstract page (submitted 7 October 2022); also named by the task as an own page",
+   "card_title": "[2210.04895] The 'Problematic Paper Screener' automatically selects suspect publications for post-publication (re)assessment",
+   "card_snippet": "Platform: Problematic Paper Screener (online platform for literature curation). Authors: Guillaume Cabanac, Cyril Labbé, Alexander Magazinov. Function: Automati...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "problematic-paper-screener-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B3.html",
+     "sha256": "1de09e3df08a0bb3603ef7ed0547da6afda84789feca9c28ede559e6e11669a4"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B3.txt",
+     "sha256": "4232e70e72f48a7fca057248b3908a2ce34d6dea345683cec4b3fed36e432ed7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:14Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2210.04895",
+    "raw": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B3.html",
+    "raw_sha256": "1de09e3df08a0bb3603ef7ed0547da6afda84789feca9c28ede559e6e11669a4",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B3.txt"
+    ]
+   },
+   "names_operator": "yes (Cabanac, Labbé, Magazinov in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card is the operators' paper's abstract page, carried once, as a card; the abstract page only (the PDF not read, as the task specifies)"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4 at T1",
+   "card": "Research Signals — Problematic Paper Screener: a new signal to help protect research integrity – Signals",
+   "url": "https://www.research-signals.com/2024/06/20/problematic-paper-screener/",
+   "kind": "blog post (Research Signals, 20 June 2024, the Signals Team)",
+   "card_title": "Problematic Paper Screener: a new signal to help protect research integrity – Signals",
+   "card_snippet": "Integration: Problematic Paper Screener added to Signals Graph by Signals Team. Scope: Over 12,000 unretracted problematic publications flagged via automatic ma...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "problematic-paper-screener-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B4.html",
+     "sha256": "8d8604d8a654149a552241cf46e9ea00f4e64398ba0886fcd094234b579d1f66"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B4.txt",
+     "sha256": "1f294af8c7e3f2b69314bd41125a0d3a245fd686bae928aa036a9fd863aca7f4"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:06Z",
+    "http": 200,
+    "url": "https://www.research-signals.com/2024/06/20/problematic-paper-screener/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B4.html",
+    "raw_sha256": "8d8604d8a654149a552241cf46e9ea00f4e64398ba0886fcd094234b579d1f66",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B4.txt"
+    ]
+   },
+   "names_operator": "yes (Cabanac in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found by the site's own search for 'problematic paper screener'. The card snippet's 'Over 12,000 unretracted problematic publications flagged via automatic ma...' is Google's wording; the page reads 'over 12,000 problematic publications that have not been retracted'"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 at T1",
+   "card": "ccsd.cnrs.fr — Episciences Adopts Problematic Paper Screener as a Tool for Verifying ... - CCSD",
+   "url": "https://www.ccsd.cnrs.fr/en/2026/07/episciences-adopts-problematic-paper-screener-as-a-tool-for-verifying-bibliographic-references/",
+   "kind": "news post (CCSD, Episciences, 3 July 2026, Agnès Magron)",
+   "card_title": "Episciences Adopts Problematic Paper Screener as a Tool for Verifying ... - CCSD",
+   "card_snippet": "Jul 3, 2026 — The PPS is a tool designed to identify and filter out potentially problematic scientific articles, such as those containing methodological ...",
+   "card_note": null,
+   "surfaced_by_T": [
+    {
+     "slug": "problematic-paper-screener-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B5.html",
+     "sha256": "8634979de90d1f07ea8ec90331a78928f9f15665cafce0ea9cfcc7bdbc5d1793"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B5.txt",
+     "sha256": "853236210094f64b4caf358342c16c8e9c8079632fff74c4284835a7366bac55"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:08Z",
+    "http": 200,
+    "url": "https://www.ccsd.cnrs.fr/en/2026/07/episciences-adopts-problematic-paper-screener-as-a-tool-for-verifying-bibliographic-references/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B5.html",
+    "raw_sha256": "8634979de90d1f07ea8ec90331a78928f9f15665cafce0ea9cfcc7bdbc5d1793",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B5.txt"
+    ]
+   },
+   "names_operator": "yes (Cabanac, Labbé, Magazinov in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "found by WebSearch on the card title"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 at T1 (video, 31m)",
+   "card": "YouTube·Crossref — Exploring Retraction Watch Data in Crossref 2025-05-09",
+   "url": "https://www.youtube.com/watch?v=vQCc6frMQTE",
+   "kind": "Overview card (video): Crossref webinar",
+   "card_title": "Exploring Retraction Watch Data in Crossref 2025-05-09",
+   "card_snippet": null,
+   "card_note": "video, 31m",
+   "surfaced_by_T": [
+    {
+     "slug": "problematic-paper-screener-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B6.json",
+     "sha256": "133646a325a17123989e0b2e4cf0a2eb95c6d3abfe8f81afe8c8ec704db3a410"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B6.txt",
+     "sha256": "67aa865b227dd9a354e2e3436f1312cb4585cf391b8f3a7ba8ef80f3bf8c49ff"
+    },
+    "B6-watch.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B6-watch.html",
+     "sha256": "7a54e85c1aad36501a7cc76d0364d02fb724872b9e37b82c1eb047314d9e28b1"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:08Z",
+    "http": 200,
+    "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=vQCc6frMQTE&format=json",
+    "raw": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B6.json",
+    "raw_sha256": "133646a325a17123989e0b2e4cf0a2eb95c6d3abfe8f81afe8c8ec704db3a410",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B6.txt"
+    ]
+   },
+   "names_operator": "no in the card title and oEmbed text; yes in the saved watch page's description ('Guillaume Cabanac'), not ledgered",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "located on YouTube's results page for the card title (the exact title; channel Crossref), confirmed by oEmbed (B6.json, B6.txt); the watch page saved as B6-watch.html (sha256 7a54e85c1aad3650…): length 53:48 and published 2025-05-12, where the card shows '31m', perhaps a timestamp into the video, not established. Its description says the webinar 'share[s] a community example from Guillaume Cabanac, highlighting how the Problematic Paper Screener uses Crossref and Retraction Watch data' (outside the card's title; not ledgered). No transcript fetched; admitted by title"
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "own page the MMRS record cites and the task names; not surfaced by T",
+   "card": "Université Grenoble Alpes — The Conversation : \"Problematic Paper Screener: Trawling for fraud in the scientific literature\"",
+   "url": "https://univ-grenoble-alpes.fr/news/the-conversation/the-conversation-problematic-paper-screener-trawling-for-fraud-in-the-scientific-literature--1547580.kjsp",
+   "kind": "the Grenoble Alpes republication of The Conversation article (the MMRS record's source for counts and the weekly scan)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B7.html",
+     "sha256": "089de94bfd1cbc8cee822c1e464b5f95331c26913bd6159ab293af1fedecb20f"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B7.txt",
+     "sha256": "a8a42b2c1e7f556741e1a6aa9c5db0dc48d17367f9cfc8c3dd8f5caa5d9f14a5"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:13Z",
+    "http": 403,
+    "url": "https://univ-grenoble-alpes.fr/news/the-conversation/the-conversation-problematic-paper-screener-trawling-for-fraud-in-the-scientific-literature--1547580.kjsp",
+    "raw": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B7.html",
+    "raw_sha256": "089de94bfd1cbc8cee822c1e464b5f95331c26913bd6159ab293af1fedecb20f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/B7.txt"
+    ],
+    "redirect": "HTTP 302 → https://authentification.univ-grenoble-alpes.fr:443/cas/login?service=… → 403"
+   },
+   "unreachable": true,
+   "names_operator": "no (the saved page is the CAS error page)",
+   "names_archive": "no (the saved page is the CAS error page)",
+   "note": "unreachable: HTTP 302 to the university's CAS login (authentification.univ-grenoble-alpes.fr), which answers 403 'Application non autorisée à utiliser CAS'; tried three times (05:07:13, 05:07:21 and 05:07:29 UTC, the last two also with the www. host, each 302 to the CAS login). The saved B7.html/B7.txt are the CAS error page, not the article. It has no card and no snippet: no claim is ledgered from it; its text is The Conversation's article (B2), one lineage, by its title in the search results ('The Conversation : \"Problematic Paper Screener: Trawling for fraud in the scientific literature\"')"
+  }
+ ],
+ "wikipedia": {
+  "id": "W1",
+  "origin": "wikipedia",
+  "result": "no article",
+  "checked": "2026-10-29 05:08:30–05:13:54 UTC",
+  "requests": [
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Problematic_Paper_Screener&action=raw&redirect=no",
+    "http": 404,
+    "at": "05:08:30Z"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Problematic_paper_screener&action=raw&redirect=no",
+    "http": 404,
+    "at": "05:08:31Z"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Problematic_Paper_Screener",
+    "http": 404,
+    "at": "05:13:54Z",
+    "file": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/W1.html",
+    "sha256": "3a8cb117470f4f6e9939dde6dc7046ea9e414c1c389ca2aca6512e4ec4e6d88d",
+    "text": "Wikipedia does not have an article with this exact name."
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Problematic+Paper+Screener%22&format=json&srlimit=50",
+    "http": 200,
+    "at": "05:09:01Z",
+    "file": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/W1-search-problematic-paper-screener.json",
+    "result": "totalhits 0"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Tortured_phrases&action=raw&redirect=no",
+    "http": 404,
+    "at": "05:08:31Z"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Tortured_phrase&action=raw&redirect=no",
+    "http": 200,
+    "at": "05:08:53Z",
+    "file": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/W2.wiki",
+    "sha256": "20a2ee8e42cfc110cd54f33052d40f0778a11d3b2ead541e4bc283e8d44fef9c",
+    "result": "'{{Wiktionary redirect}}': a soft redirect to Wiktionary"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Tortured_phrase&redirect=no",
+    "http": 200,
+    "at": "05:09:00Z",
+    "file": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/W2.html",
+    "sha256": "23d889c38a495f04e5d410b5ebb9a16c3c693f85951cd5caf291ba296adb570d",
+    "result": "'Wikipedia does not have an article on \"tortured phrase\", but its sister project Wiktionary does'; category Redirects to Wiktionary; last edited 24 August 2026"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22tortured+phrases%22&format=json&srlimit=50",
+    "http": 200,
+    "at": "05:09:08Z",
+    "file": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/W1-search-tortured-phrases.json",
+    "result": "totalhits 0"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Guillaume_Cabanac&action=raw&redirect=no",
+    "http": 404,
+    "at": "05:08:32Z"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Cyril_Labb%C3%A9&action=raw&redirect=no",
+    "http": 404,
+    "at": "05:08:32Z"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Guillaume+Cabanac%22&format=json&srlimit=50",
+    "http": 200,
+    "at": "05:09:09Z",
+    "file": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/W1-search-guillaume-cabanac.json",
+    "result": "totalhits 2: Nature's 10 and Workers' Party (Brazil) (the second a different person in a reference list)"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/index.php?title=Nature%27s_10&action=raw",
+    "http": 200,
+    "at": "05:09:20Z",
+    "file": "datasets/negative-of-the-negative/v2/intake/problematic-paper-screener-20261029/W3.wiki",
+    "sha256": "983aed63273a1c83f3a89d948f9bcf7d9b187cbb88209e00b7f282c2df3f26dd",
+    "result": "under '== 2021 ==': '# [[Guillaume Cabanac]], deception sleuth' (a red link); the screener is not named"
+   },
+   {
+    "url": "https://en.wikipedia.org/w/api.php (three further searches: insource tortured phrase, Cabanac, insource Problematic Paper Screener)",
+    "http": 429,
+    "at": "05:09:29Z–05:13:44Z",
+    "result": "refused, 'Too many requests'; not retried further"
+   }
+  ],
+  "redirect": "none for the name; 'Tortured_phrase' is a soft redirect to Wiktionary (W2), 'Tortured_phrases' does not exist",
+  "note": "No English Wikipedia article for the Problematic Paper Screener under either capitalization, and a full-text search for the quoted name returns no hit: the encyclopedia does not name the screener. No article on tortured phrases: the singular title is a soft redirect to Wiktionary, the plural absent, and a full-text search for the quoted phrase returns no hit. Guillaume Cabanac has no article; the list Nature's 10 names him for 2021 as 'deception sleuth' (a red link), without the screener (W3, recorded, not ledgered: it is not the entity's article). No Wikipedia claim is ledgered; the absence is a fact of the row."
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Info (opening)",
+   "quote": "The PPS website screens the scientific literature for papers (partly) generated with: … Tortured phrases … SCIgen … Mathgen",
+   "claim": "what it is, by its own page: a website screening the literature for papers (partly) generated with tortured phrases, SCIgen and Mathgen",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a screener of the literature",
+   "date": "2026-10-28 (page's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Info",
+   "quote": "... and issues in the bibliographies of articles citing: … Retracted references … References marked with expressions of concern … References flagged by the PPS detectors",
+   "claim": "and screens bibliographies citing retracted references, references under expressions of concern, and references the PPS detectors flag",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the bibliographic detectors: Feet of Clay",
+   "date": "2026-10-28 (page's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Info",
+   "quote": "Harvesting data from these APIs: … Crossref, now including the Retraction Watch Database … Dimensions, see our webinar and the associated blog post … PubMed … PubPeer",
+   "claim": "its data harvested from the APIs of Crossref (with the Retraction Watch Database), Dimensions, PubMed and PubPeer",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: the data sources",
+   "date": "2026-10-28 (page's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "heading",
+   "quote": "Est. February 27th, 2021",
+   "claim": "established 27 February 2021",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and makers",
+   "date": "2026-10-28 (page's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Info",
+   "quote": "Problematic papers are reported on PubPeer, see the tortured phrases and more.",
+   "claim": "problematic papers are reported on PubPeer",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "reporting: PubPeer",
+   "date": "2026-10-28 (page's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "menu, Detectors",
+   "quote": "Detectors: … Annulled … Concerning … Feet of Clay … Tortured … Suspect … SCIgen … Mathgen … Citejacked … Seek&Blastn … Problematic Cell Lines",
+   "claim": "ten detectors listed: Annulled, Concerning, Feet of Clay, Tortured, Suspect, SCIgen, Mathgen, Citejacked, Seek&Blastn, Problematic Cell Lines",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the detectors",
+   "date": "2026-10-28 (page's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Reference",
+   "quote": "Cabanac, G., Labbé, C., & Magazinov, A. (2022). The ‘Problematic Paper Screener’ automatically selects suspect publications for post-publication (re)assessment. … Presented at WCRI 2022: 7th World Conference on Research Integrity.",
+   "claim": "the reference for the screener: Cabanac, Labbé and Magazinov (2022), presented at WCRI 2022",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and makers",
+   "date": "2026-10-28 (page's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Reference",
+   "quote": "Featured in the Nature's 10 list of 2021 that ‘explores key developments in science this year.’",
+   "claim": "featured in Nature's 10 list of 2021",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "recognition: Nature's 10 (2021)",
+   "date": "2026-10-28 (page's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "heading",
+   "quote": "Last Update: 2026-10-28 at 15:54",
+   "claim": "last updated 2026-10-28 at 15:54",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "maintenance: last update",
+   "date": "2026-10-28",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Key highlights, embedded post by Nature (8 August 2021)",
+   "quote": "Why say 'colossal information' instead of big data? Or 'counterfeit consciousness' instead of artificial intelligence? These tortured phases in research articles could be evidence of a new and disturbing fabrication trend.",
+   "claim": "Nature's examples of tortured phrases, quoted on the page: 'colossal information' for big data, 'counterfeit consciousness' for artificial intelligence; possible evidence of a fabrication trend",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "tortured phrases: what they are",
+   "date": "2021-08-08 (the embedded post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 42b30b9d56eb70f0…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "standfirst",
+   "quote": "The Problematic Paper Screener trawls through 130 million scholarly papers every week looking for telltale signs that papers were produced by paper mills.",
+   "claim": "it trawls 130 million scholarly papers every week for signs of paper-mill production",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale and cadence: 130 million a week",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1–2",
+   "quote": "These nonsensical, and sometimes amusing, word sequences are among thousands of “tortured phrases” that sleuths have found littered throughout reputable scientific journals. … They typically result from using paraphrasing tools to evade plagiarism-detection software when stealing someone else’s text.",
+   "claim": "tortured phrases: nonsensical word sequences found in reputable journals, typically from paraphrasing tools used to evade plagiarism detection",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "tortured phrases: what they are",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶1–2",
+   "quote": "Have you ever heard of the Joined Together States? … The phrases above are real examples of bungled synonyms for the United States, breast cancer, kidney failure, artificial neural networks, and lactose intolerance, respectively.",
+   "claim": "examples: 'Joined Together States' for the United States, and others",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "tortured phrases: what they are",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "We are a pair of computer scientists at Université de Toulouse and Université Grenoble Alpes, both in France, who specialize in detecting bogus publications.",
+   "claim": "the authors: two computer scientists at Toulouse and Grenoble Alpes who specialize in detecting bogus publications",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and makers",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "One of us, Guillaume Cabanac, has built an automated tool that combs through 130 million scientific publications every week and flags those containing tortured phrases.",
+   "claim": "Cabanac built the automated tool, which combs 130 million publications a week and flags tortured phrases",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and makers",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "The Problematic Paper Screener also includes eight other detectors, each of which looks for a specific type of problematic content.",
+   "claim": "eight other detectors besides tortured phrases, each for one type of problematic content",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the detectors",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "figure caption",
+   "quote": "In addition to tortured phrases, the Problematic Paper Screener flags ChatGPT fingerprints: snippets of telltale text left behind by the AI agent.",
+   "claim": "it flags ChatGPT fingerprints, telltale text left by the AI agent",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the detectors",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶5",
+   "quote": "Several publishers use our paper screener, which has been instrumental in more than 1,000 retractions. Some have integrated the technology into the editorial workflow to spot suspect papers upfront.",
+   "claim": "several publishers use it; instrumental in more than 1,000 retractions; some integrate it into the editorial workflow",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "uptake: publishers and retractions",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶5",
+   "quote": "Analytics companies have used the screener for things like picking out suspect authors from lists of highly cited researchers.",
+   "claim": "analytics companies have used it to pick out suspect authors among highly cited researchers",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uptake: publishers and retractions",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "¶5",
+   "quote": "It was named one of 10 key developments in science by the journal Nature in 2021.",
+   "claim": "named one of Nature's 10 key developments of 2021 (the article's wording)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "recognition: Nature's 10 (2021)",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "findings list, item 1",
+   "quote": "Nearly 19,000 papers containing at least five tortured phrases each.",
+   "claim": "nearly 19,000 papers with at least five tortured phrases each",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it has found",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "findings list, item 2",
+   "quote": "More than 280 gibberish papers – some still in circulation – written entirely by the spoof SCIgen program that Massachusetts Institute of Technology students came up with nearly 20 years ago.",
+   "claim": "more than 280 SCIgen papers, some still in circulation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it has found",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "findings list, item 3",
+   "quote": "More than 764,000 articles that cite retracted works that could be unreliable. About 5,000 of these articles have at least five retracted references listed in their bibliographies. We called the software that finds these the “Feet of Clay” detector",
+   "claim": "more than 764,000 articles cite retracted works (about 5,000 with five or more); the detector that finds them is Feet of Clay",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it has found",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "findings list, item 4",
+   "quote": "More than 70 papers containing ChatGPT “fingerprints” with obvious signs such as “Regenerate Response” or “As an AI language model, I cannot …” in the text.",
+   "claim": "more than 70 papers with ChatGPT fingerprints",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it has found",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "findings list, item 4",
+   "quote": "These articles represent the tip of the tip of the iceberg: They are cases where ChatGPT output has been copy-pasted wholesale into papers without any editing (or even reading) and has also slipped past peer reviewers and journal editors alike.",
+   "claim": "its limit: the fingerprinted papers are the tip of the tip of the iceberg, output copy-pasted wholesale",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits: what a detector catches",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "findings list, item 4",
+   "quote": "The challenge is to identify cases where chatbots are used not just for language-editing purposes but to generate content – essentially fabricating data.",
+   "claim": "the open challenge: chatbots used to generate content, not only to edit language",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: what a detector catches",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Disclosure statement",
+   "quote": "He is the administrator of the Problematic Paper Screener, a public platform that uses metadata from Digital Science and PubPeer via no-cost agreements.",
+   "claim": "Cabanac administers it, a public platform using Digital Science and PubPeer metadata under no-cost agreements",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: the data sources",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Disclosure statement",
+   "quote": "Cabanac has been in touch with most of the major publishers and their integrity officers, offering pro bono consulting regarding detection tools to various actors in the field including ClearSkies, Morressier, River Valley, Signals, and STM.",
+   "claim": "pro bono consulting on detection tools to publishers and actors including ClearSkies, Morressier, River Valley, Signals and STM",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uptake: publishers and retractions",
+   "date": "2025-01-29",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 61394ca7f2f1f1ed…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "Post publication assessment remains necessary to check erroneous or fraudulent scientific publications.",
+   "claim": "the problem: post-publication assessment remains necessary for erroneous or fraudulent publications",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose: post-publication assessment",
+   "date": "2022-10-07",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 4232e70e72f48a7f…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s2",
+   "quote": "We present an online platform, the 'Problematic Paper Screener' (this https URL) that leverages both automatic machine detection and human assessment to identify and flag already published problematic articles.",
+   "claim": "an online platform combining automatic machine detection and human assessment to identify and flag published problematic articles",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a screener of the literature",
+   "date": "2022-10-07",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 4232e70e72f48a7f…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s3",
+   "quote": "We provide a new effective tool to curate the scientific literature.",
+   "claim": "a new effective tool to curate the scientific literature",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: post-publication assessment",
+   "date": "2022-10-07",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 4232e70e72f48a7f…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "header and Comments",
+   "quote": "Authors:Guillaume Cabanac, Cyril Labbé, Alexander Magazinov … [Submitted on 7 Oct 2022] … Presented at WCRI 2022: 7th World Conference on Research Integrity, Cape Town, South Africa. 29 May -- 1 June 2022",
+   "claim": "authors Cabanac, Labbé, Magazinov; submitted 7 October 2022; presented at WCRI 2022, Cape Town",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and makers",
+   "date": "2022-10-07",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 4232e70e72f48a7f…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "The Problematic Paper Screener, an academic project led by Guillaume Cabanac and collaborators, combines automatic machine detection and human evaluation to identify issues in publications, including the presence of tortured phrases.",
+   "claim": "an academic project led by Cabanac and collaborators, combining machine detection and human evaluation",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "method: machine detection with human assessment",
+   "date": "2024-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1f294af8c7e3f2b6…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "We’re excited to announce the integration of articles flagged by the Problematic Paper Screener into the Signals Graph as a new signal. This includes over 12,000 problematic publications that have not been retracted. These problematic publications are cited more than 160,000 times by articles.",
+   "claim": "flagged articles integrated into the Signals Graph: over 12,000 unretracted problematic publications, cited more than 160,000 times",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "uptake: the Signals Graph",
+   "date": "2024-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1f294af8c7e3f2b6…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "¶4",
+   "quote": "We aim to help sleuths, publishers, and researchers gain greater visibility of these problematic papers and enable them to uncover additional research integrity issues with Signals.",
+   "claim": "Signals' aim: visibility of the problematic papers for sleuths, publishers and researchers",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "uptake: the Signals Graph",
+   "date": "2024-06-20",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 1f294af8c7e3f2b6…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "The PPS is a tool designed to identify and filter out potentially problematic scientific articles, such as those containing methodological errors, plagiarism, data manipulation, or conflicts of interest.",
+   "claim": "an adopter's description: a tool to identify and filter out problematic articles (methodological errors, plagiarism, data manipulation, conflicts of interest)",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "an adopter's description",
+   "date": "2026-07-03",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 853236210094f64b…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "Developed by G. Cabanac, C. Labbé, and A. Magazinov , it provides a database of over one million references identified as containing problematic elements, categorised according to a typology that distinguishes between anomalies of varying severity – ranging from articles written entirely by AI to articles that are valid but contain references with anomalies (“Feet of clay”).",
+   "claim": "a database of over one million problematic references, typed by severity from AI-written articles to valid articles with anomalous references (Feet of clay)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the database of flagged references",
+   "date": "2026-07-03",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 853236210094f64b…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "This database is now available among the Episciences tools. It is used to analyze citations extracted from articles, detect and then display problematic citations, either for correction or for informational purposes.",
+   "claim": "Episciences uses the database to analyse extracted citations and display problematic ones",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "uptake: Episciences",
+   "date": "2026-07-03",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 853236210094f64b…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Toward a more comprehensive and automated verification solution ¶2",
+   "quote": "The platform takes this process a step further by incorporating automatic reference verification right after the submission is received, to help assess its quality, and subsequently by automatically updating any references that are retracted or change status after publication. This automatic check is performed using the PPS database.",
+   "claim": "Episciences' automatic reference check, at submission and after publication, runs on the PPS database",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "uptake: Episciences",
+   "date": "2026-07-03",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 853236210094f64b…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Work is currently underway ¶1",
+   "quote": "the first step involved analyzing nearly 170,000 references from an initial data extraction. The results of this analysis identified 226 references indexed in the PPS, the majority of which fall into the “Feet of clay” category.",
+   "claim": "of nearly 170,000 references analysed, 226 indexed in the PPS, most in Feet of clay",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uptake: Episciences",
+   "date": "2026-07-03",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 853236210094f64b…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "card title (oEmbed)",
+   "quote": "Exploring Retraction Watch Data in Crossref 2025-05-09",
+   "claim": "a Crossref webinar on Retraction Watch data in Crossref, 9 May 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: video",
+   "date": "2025-05-09",
+   "from": "title",
+   "quote_ok": true,
+   "checked_against": "card title in the Capture Registry's cite_list and the oEmbed title (B6.txt)"
+  }
+ },
+ "field_sources": {
+  "B1": "Institut de Recherche en Informatique de Toulouse - IRIT — PPS – Problematic Paper Screener",
+  "B2": "The Conversation — Problematic Paper Screener: Trawling for fraud in the scientific literature",
+  "B3": "arXiv — [2210.04895] The 'Problematic Paper Screener' automatically selects suspect publications for post-publication (re)assessment",
+  "B4": "Research Signals — Problematic Paper Screener: a new signal to help protect research integrity – Signals",
+  "B5": "ccsd.cnrs.fr — Episciences Adopts Problematic Paper Screener as a Tool for Verifying ... - CCSD",
+  "B6": "YouTube·Crossref — Exploring Retraction Watch Data in Crossref 2025-05-09",
+  "B7": "Université Grenoble Alpes — The Conversation : \"Problematic Paper Screener: Trawling for fraud in the scientific literature\""
+ }
+}

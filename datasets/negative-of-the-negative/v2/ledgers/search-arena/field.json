@@ -1,0 +1,1136 @@
+{
+ "row": "search-arena",
+ "address": "search arena leaderboard",
+ "addresses": [
+  "search arena leaderboard"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the dataset's README and the API's JSON as saved, the raw wikitext, or the card's title and snippet for an unreachable card; 48/48 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', the two cards on T's rail (B1 the Search leaderboard, also an own page the MMRS record cites; B2 Arena's leaderboard overview), both unreachable verbatim (HTTP 403, a Cloudflare challenge) and admitted by title and snippet; 'own_page', the entity's own pages that T did not surface: B3 the launch post (named by the task; the MMRS record does not cite it), B4 the dataset paper's arXiv page (cited by the record), B5 the leaderboard's own published data (Arena's Hugging Face dataset, fetched as the data the leaderboard publishes, in place of the unreadable page), B6 Arena's post announcing B5; 'wikipedia', the absence at 'Search Arena' (B7, HTTP 404) and the operator's article (B8, with the redirects LMArena and Chatbot Arena). The page at B1, read by a summarising fetch only (not ledgered), agrees with B5's snapshot of 2026-02-26.",
+ "lineage_note": "Lineages: what it is: a leaderboard of search models by human vote (B1, B3); the current board: snapshots and dates (B1, B3, B5, B6); operator: Arena, formerly LMArena and Chatbot Arena (B2, B3, B8); the rated systems: search-augmented LLMs (B3, B4); the citation finding: preference follows citation count (B3, B4); genealogy: the launch, the paper, the dataset (B3, B4, B5); the vote and the score (B3, B5); sources cited and preferred (B3, B4); the dataset: interactions and votes (B4); reception: the encyclopedia (B7, B8); Arena's method and its limits (B8).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/search-arena-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped by the session's HTML-to-text pass; B5.README.md and B5.hf-*.json the dataset's README and API responses; B7-raw.html the raw-wikitext 404; B8.wiki and B8-redirect-*.wiki raw wikitext); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1 at T1; also an own page the MMRS record cites (arena.ai/leaderboard/search, read 2026-10-28 'for counts')",
+   "card": "Arena AI — AI Search Leaderboard: Top Models for Research",
+   "url": "https://arena.ai/leaderboard/search",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "search-arena-leaderboard-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B1.html",
+     "sha256": "a94c489196949291fbd7524a7d5de05f2324d00acc9e11faaa06a2a5d71de0b3"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B1.txt",
+     "sha256": "d44c878b16cb238c3c267f979438cd2a940ab62532af72961dde5e9cda9b23a4"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:05:51Z",
+    "http": 403,
+    "url": "https://arena.ai/leaderboard/search",
+    "raw": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B1.html",
+    "raw_sha256": "a94c489196949291fbd7524a7d5de05f2324d00acc9e11faaa06a2a5d71de0b3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B1.txt"
+    ]
+   },
+   "unreachable": true,
+   "card_title": "AI Search Leaderboard: Top Models for Research",
+   "card_snippet": "AI Search Leaderboard: Top Models for Research Start Voting Agent Chat Code Start Voting Agent Chat Code Image Video View overall rankings across LLMs with inte...",
+   "card_note": null,
+   "names_operator": "yes (the card's site, 'Arena AI'; the saved page is a challenge page and names nothing)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "webfetch": {
+    "at": "2026-10-29T05:06Z (about)",
+    "tool": "WebFetch (a summarising fetch, §3.1(a): not a fetch; nothing ledgered from it)",
+    "reported": "the page 'describes itself as \"View overall rankings across LLMs with integrated web search.\"'; 'a date of Feb 25, 2026, 247,944 votes, and 22 models'; top rows by provider only: '1: Anthropic, 1255±10 (3,607 votes)', '2: xAI, 1225±8 (4,687 votes)', '3: OpenAI, 1219±6 (20,150 votes)', '4: Google, 1218±6 (25,311 votes)', '5: Google, 1214±5 (31,966 votes)'; 'Diffbot (1024±8) at rank 21 and OpenAI (1006±11) at rank 22'; a section 'Default Leaderboard Plots'"
+   },
+   "note": "unreachable verbatim: curl answered HTTP 403 with a Cloudflare 'Just a moment...' challenge page (saved as B1.html, 5,421 bytes; its text B1.txt is the challenge title only); no retry with another client was made (the session declined to work around the challenge). The card's snippet stands as its only text. The page as a summarising fetch reported it (webfetch) agrees, figure for figure, with the 2026-02-26 snapshot of Arena's own published leaderboard data (B5, F39), not with the latest (2026-10-13, F38); the page's displayed date (25 February) and the snapshot's publish date (26 February) differ by a day. What a browser renders at the address on 2026-10-29 is not established here."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2 at T1 (Arena's leaderboard overview, all arenas)",
+   "card": "Arena AI — Arena Leaderboard: Official AI Model Rankings & Benchmarks",
+   "url": "https://arena.ai/leaderboard",
+   "kind": "Overview card (operator's page)",
+   "surfaced_by_T": [
+    {
+     "slug": "search-arena-leaderboard-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B2.html",
+     "sha256": "e562ebae953ba5de14eac9dddb0b9b48b0cf52d30c789a89c47876f2d6f0e694"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B2.txt",
+     "sha256": "d44c878b16cb238c3c267f979438cd2a940ab62532af72961dde5e9cda9b23a4"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:05:52Z",
+    "http": 403,
+    "url": "https://arena.ai/leaderboard",
+    "raw": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B2.html",
+    "raw_sha256": "e562ebae953ba5de14eac9dddb0b9b48b0cf52d30c789a89c47876f2d6f0e694",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B2.txt"
+    ]
+   },
+   "unreachable": true,
+   "card_title": "Arena Leaderboard: Official AI Model Rankings & Benchmarks",
+   "card_snippet": "GPT-6.1 Terra is #8 in Agent · Max Kimi K3.1 Pro is #9 in WebDev · Max MAI-Image-2.7-Preview is #3 in Image Edit Spark-X2.6 is #71 in WebDev Krea 3 Ultra is #9 ...",
+   "card_note": null,
+   "names_operator": "yes (the card's site, 'Arena AI')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "webfetch": {
+    "at": "2026-10-29T05:06Z (about)",
+    "tool": "WebFetch (summarising; nothing ledgered from it)",
+    "reported": "headings 'Leaderboard Overview', 'Arena Overview'; 'See how leading AI models stack up across text, image, vision, and more.'; 'The page contains no text mentioning Search'"
+   },
+   "note": "unreachable verbatim: HTTP 403, Cloudflare challenge (B2.html). Found by its title: the Arena site's leaderboard overview, the parent of B1. The card's snippet, ranks of models in other arenas (Agent, WebDev, Image Edit), stands as its only text; it names no search model."
+  },
+  {
+   "id": "B3",
+   "origin": "own_page",
+   "role": "the entity's launch post on Arena's blog; named by the task; not cited by the MMRS record and not surfaced by T",
+   "card": "Arena.ai blog — Introducing the Search Arena: Evaluating Search-Enabled AI",
+   "url": "https://arena.ai/blog/search-arena",
+   "kind": "own page (blog post)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B3.html",
+     "sha256": "251720f2c64e59fb72f01d73b7cbaeab5f9e82dd1d010ae5aa0be31463266dba"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B3.txt",
+     "sha256": "e0d10dc29692ef837f358c25fd2cb398a2e386876510a5f6c4a769dcde6fa24b"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:05:52Z",
+    "http": 200,
+    "url": "https://arena.ai/blog/search-arena",
+    "raw": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B3.html",
+    "raw_sha256": "251720f2c64e59fb72f01d73b7cbaeab5f9e82dd1d010ae5aa0be31463266dba",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B3.txt"
+    ]
+   },
+   "names_operator": "yes ('Arena Team'; '© 2026 Arena Intelligence Inc.')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Published on 15 Apr 2025, last updated on 2 Aug 2025, by 'Arena Team' with eight named authors; its own citation gives the post's earlier address, blog.lmarena.ai/blog/2025/search-arena/. Its figures and tables (the leaderboard, Fig. 1, Tab. 3) are images; their values are not in the text and are not ledgered."
+  },
+  {
+   "id": "B4",
+   "origin": "own_page",
+   "role": "the dataset paper's arXiv abstract page; cited by the MMRS record (arxiv.org/abs/2506.05334, read 2026-10-28)",
+   "card": "arXiv — [2506.05334] Search Arena: Analyzing Search-Augmented LLMs",
+   "url": "https://arxiv.org/abs/2506.05334",
+   "kind": "own page (paper, abstract page)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B4.html",
+     "sha256": "b35a50c458405ec9125f68069491164c4fd29acbc345f0bc576e290229f92589"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B4.txt",
+     "sha256": "22c03d0fef7adb358c98e1cd04f44d42dab65c0bc054e0f6947a9893d8c5d062"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:05:53Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2506.05334",
+    "raw": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B4.html",
+    "raw_sha256": "b35a50c458405ec9125f68069491164c4fd29acbc345f0bc576e290229f92589",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B4.txt"
+    ]
+   },
+   "names_operator": "no ('Arena' absent as operator; the authors include Wei-Lin Chiang and Anastasios N. Angelopoulos, whom Wikipedia names as Arena's founders, B8)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "v1 5 June 2025, v2 2 March 2026, 'Accepted to ICLR 2026'; the HTML links the code at github.com/lmarena/search-arena and the dataset at huggingface.co/datasets/lmarena-ai/search-arena-24k (the text renders both as 'this https URL'). The PDF was not fetched; the abstract is the ledgered text."
+  },
+  {
+   "id": "B5",
+   "origin": "own_page",
+   "role": "the leaderboard's own published data: Arena's Hugging Face dataset lmarena-ai/leaderboard-dataset, subsets search and search_style_control; fetched as 'any data it loads' in place of the unreadable page; not cited by the MMRS record and not surfaced by T",
+   "card": "Hugging Face (lmarena-ai) — Arena Leaderboard Dataset, subset search",
+   "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+   "kind": "own data (dataset card and rows)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards as the leaderboard's own data)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.html",
+     "sha256": "729a6836c088af3e6fa7f96d4f867a4628d626e0afa9d260f130c572fe110c00"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.txt",
+     "sha256": "7a2e36e91b366c1d66407cc53f112f7f401403275a1becff6630d6f38b5a09c0"
+    },
+    "B5.README.md": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.README.md",
+     "sha256": "b13bf3169c5ec5ffc1e1f4c3b4307de28343e4ed272ad972e8a18da460b7af00"
+    },
+    "B5.hf-search-latest.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-latest.json",
+     "sha256": "f5ee84f9d2bd1b581c08e39ce6ee0f7da982a3b3c5ee6a42d5f9c8dace83249b"
+    },
+    "B5.hf-search_style_control-latest.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search_style_control-latest.json",
+     "sha256": "bec4d22199bd44aa445a17a0987a29cc7a48975872156f4c215af2cc48924419"
+    },
+    "B5.hf-search-full-dates.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-full-dates.json",
+     "sha256": "7df292de7bae2ddf776b95a16d4a3566d779ea24e2cf771c8a83011ebed79049"
+    },
+    "B5.hf-search-full-0.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-full-0.json",
+     "sha256": "1b95929ca99acfb4a0d2ffa83651d481ee710f14abf034e535fdab02899dbcbe"
+    },
+    "B5.hf-search-full-100.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-full-100.json",
+     "sha256": "4638309a0612e4240b9842cac43376a428744bebdb5bba5117607e883fd85a2a"
+    },
+    "B5.hf-search-full-200.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-full-200.json",
+     "sha256": "803334809b94eca08a41788014ac2f03f4c0f08b85e0f37a35b413a89eeb4819"
+    },
+    "B5.hf-search-full-300.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-full-300.json",
+     "sha256": "41cbe6bf16e03619f661823c98bfe7be19701cde342214812d975a28a910e417"
+    },
+    "B5.hf-search-full-400.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-full-400.json",
+     "sha256": "7e1999f30f2d158bd4114bacc540ce9db7f1b9f6c8da8886ea7cef0404c86b82"
+    },
+    "B5.hf-search-full-500.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-full-500.json",
+     "sha256": "63b00f44b1733d1576590ad34328960eb0604e5d6a24639aa80a48758d438e6e"
+    },
+    "B5.hf-search-full-600.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-full-600.json",
+     "sha256": "719b68a38ef0507e927a61ec00c96008a0fdfcfbfd613d9b8d2e29b1e32748c7"
+    },
+    "B5.hf-search-full-700.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.hf-search-full-700.json",
+     "sha256": "8352e05a51bc35f1a823d17806b983c455114177fa7ffe8ca2ebc646aa0f6dc5"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:35Z–05:09:17Z",
+    "http": 200,
+    "url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+    "raw": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.html",
+    "raw_sha256": "729a6836c088af3e6fa7f96d4f867a4628d626e0afa9d260f130c572fe110c00",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.txt",
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B5.README.md"
+    ],
+    "data": {
+     "latest (search)": "https://datasets-server.huggingface.co/rows?dataset=lmarena-ai/leaderboard-dataset&config=search&split=latest&offset=0&length=100 (05:07:35Z, 200; 42 rows)",
+     "latest (search_style_control)": "same, config=search_style_control (05:07:35Z, 200; 42 rows)",
+     "full (search)": "same, split=full, offsets 0–700 (05:08:12Z, 200; 764 rows, 41 publish dates 2025-08-07 to 2026-10-13)",
+     "statistics (search, full)": "https://datasets-server.huggingface.co/statistics?dataset=lmarena-ai/leaderboard-dataset&config=search&split=full (05:07:54Z, 200)",
+     "README": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/raw/main/README.md (05:09:17Z, 200)"
+    },
+    "dataset_last_modified": "2026-10-29T03:05:31.000Z (Hub API, sha 4491b06c6382aebe3224461fc7209b57f7beb1ae)"
+   },
+   "names_operator": "yes ('Arena' in the README; the namespace lmarena-ai)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Arena announces the dataset as 'the entire history of those leaderboards' (B6). The latest search snapshot (published 2026-10-13, 42 models) gives, rank for rank 1–11, the models, organizations, ratings (rounded) and confidence half-widths (rounded) that T's table gives; the 2026-02-26 snapshot (22 models) gives, figure for figure, what the summarising fetch reported of the page (B1, webfetch). The data's vote_count is 'Number of battles for this model'; no snapshot's sum reproduces the page's 247,944 votes (2026-02-26: 479,042 battle-counts, i.e. 239,521 if each battle is counted twice; 2026-02-25: 475,340). Quotes from the data are verbatim spans of the API's JSON."
+  },
+  {
+   "id": "B6",
+   "origin": "own_page",
+   "role": "Arena's blog post announcing B5; not cited by the MMRS record and not surfaced by T",
+   "card": "Arena.ai blog — Arena Leaderboard Dataset",
+   "url": "https://arena.ai/blog/arena-leaderboard-dataset/",
+   "kind": "own page (blog post)",
+   "surfaced_by_T": "no (not surfaced by T; admitted as the provenance of B5)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B6.html",
+     "sha256": "945b31ff964c24cd4052062010c8d49f6256ccd579bfb0de9af50495a180e80d"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B6.txt",
+     "sha256": "e91db567eb6ab2c916e5309455a3a27e0aa6c61b0f0c0f6bb659558a81d920de"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:19Z",
+    "http": 200,
+    "url": "https://arena.ai/blog/arena-leaderboard-dataset/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B6.html",
+    "raw_sha256": "945b31ff964c24cd4052062010c8d49f6256ccd579bfb0de9af50495a180e80d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B6.txt"
+    ]
+   },
+   "names_operator": "yes ('Arena Team'; 'Arena has been publishing leaderboards')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Published on 2 Apr 2026, 'Arena Team'."
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "role": "Wikipedia's page for the entity's name: none",
+   "card": "Wikipedia — Search Arena (no article)",
+   "url": "https://en.wikipedia.org/wiki/Search_Arena",
+   "kind": "Wikipedia (absence)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B7.html",
+     "sha256": "7b2ce79be00f677cd706008e8b4843f5b82c2372c0278f7386b4da8258117260"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B7.txt",
+     "sha256": "5b819aeaa91b2097959ad15c1ab6c9a38f7520e4e4c4e3821f89e19b52a813b8"
+    },
+    "B7-raw.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B7-raw.html",
+     "sha256": "65139f38e1a266c847fd7ed266e67f01996ec6aa8c2c1ab321ad010f1692f7ea"
+    },
+    "B7-raw.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B7-raw.txt",
+     "sha256": "34a97e3b2e1c9da8811395a6251ec557c30eaf935a2edd2e9fd74e308de51c59"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:53Z",
+    "http": 404,
+    "url": "https://en.wikipedia.org/wiki/Search_Arena",
+    "raw": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B7.html",
+    "raw_sha256": "7b2ce79be00f677cd706008e8b4843f5b82c2372c0278f7386b4da8258117260",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B7.txt"
+    ],
+    "raw_wikitext": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Search_Arena&action=raw&redirect=no",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B7-raw.html",
+     "sha256": "65139f38e1a266c847fd7ed266e67f01996ec6aa8c2c1ab321ad010f1692f7ea"
+    }
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "no article and no redirect at 'Search Arena': raw wikitext HTTP 404 (Wikimedia error page), rendered page HTTP 404 'Wikipedia does not have an article with this exact name.'"
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "Wikipedia's article on the operator, Arena (Arena.ai; LMArena and Chatbot Arena redirect to it)",
+   "card": "Wikipedia — Arena.ai",
+   "url": "https://en.wikipedia.org/wiki/Arena.ai",
+   "kind": "Wikipedia article (the operator)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8.html",
+     "sha256": "75667836aeaf4811daddd35422ed8fd89838b06f46f5f9190f099597e8279054"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8.txt",
+     "sha256": "15e7f68eb70ffd421fd07cfc4e9cda0dde947c3bf6dfce7c343d0edc1a2e2c79"
+    },
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8.wiki",
+     "sha256": "cdf882d3f4f01a813bcd5f6600e47a469b74c8def083e1de580633350700d7c0"
+    },
+    "B8-redirect-LMArena.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8-redirect-LMArena.wiki",
+     "sha256": "5f608ef8b6839e0fd3fc7e88180ccd940d36027fb92e8a436a9b2cac782a5fa7"
+    },
+    "B8-redirect-Chatbot_Arena.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8-redirect-Chatbot_Arena.wiki",
+     "sha256": "2ce8ba248f74faacfa0ab3e4104c2a1bb5c8d884e11b6312bae77ad58a1200ad"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:53Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Arena.ai",
+    "raw": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8.html",
+    "raw_sha256": "75667836aeaf4811daddd35422ed8fd89838b06f46f5f9190f099597e8279054",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8.txt",
+     "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8.wiki"
+    ],
+    "raw_wikitext": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Arena.ai&action=raw",
+     "http": 200,
+     "file": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8.wiki",
+     "sha256": "cdf882d3f4f01a813bcd5f6600e47a469b74c8def083e1de580633350700d7c0",
+     "bytes": 9055
+    },
+    "redirects": {
+     "LMArena": {
+      "url": "https://en.wikipedia.org/w/index.php?title=LMArena&action=raw&redirect=no",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8-redirect-LMArena.wiki",
+      "text": "#REDIRECT [[Arena.ai]] (R from move)"
+     },
+     "Chatbot_Arena": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Chatbot_Arena&action=raw&redirect=no",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/search-arena-20261029/B8-redirect-Chatbot_Arena.wiki",
+      "text": "#REDIRECT [[Arena.ai]] (R from move, R from former name, R printworthy)"
+     }
+    }
+   },
+   "names_operator": "yes (the article is the operator's)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the article does not mention Search Arena: the raw wikitext (9,055 bytes) contains 'search' only inside 'Research' (one occurrence, 'Research has identified specific limitations in Arena's methodology.'), and neither 'Search Arena' nor 'search' as a word; the rendered text likewise names no search arena. Its infobox gives founders Wei-Lin Chiang, Anastasios N. Angelopoulos and Ion Stoica, launch 24 April 2023."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "card title",
+   "quote": "AI Search Leaderboard: Top Models for Research",
+   "claim": "the leaderboard's page titled as an AI search leaderboard of top models for research",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a leaderboard of search models by human vote",
+   "date": "— (card title)",
+   "quote_ok": true,
+   "checked_against": "the card's title in the registry's cite_list"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "card snippet (truncated)",
+   "quote": "View overall rankings across LLMs with inte",
+   "claim": "the page offers overall rankings across LLMs (the snippet cut at 'inte…')",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "— (card snippet)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet in the registry's cite_list"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card title",
+   "quote": "Arena Leaderboard: Official AI Model Rankings & Benchmarks",
+   "claim": "Arena's leaderboard overview titled 'Official AI Model Rankings & Benchmarks'",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator: Arena, formerly LMArena and Chatbot Arena",
+   "date": "— (card title)",
+   "quote_ok": true,
+   "checked_against": "the card's title in the registry's cite_list"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card snippet",
+   "quote": "GPT-6.1 Terra is #8 in Agent · Max Kimi K3.1 Pro is #9 in WebDev · Max MAI-Image-2.7-Preview is #3 in Image Edit",
+   "claim": "the overview states ranks of models in other arenas (Agent, WebDev, Image Edit); no search model",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: Arena, formerly LMArena and Chatbot Arena",
+   "date": "— (card snippet)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet in the registry's cite_list"
+  },
+  "F5": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "TL;DR ¶1 (and the post's opening)",
+   "quote": "We introduce Search Arena, a crowdsourced in-the-wild evaluation platform for search-augmented LLM systems based on human preference.",
+   "claim": "Search Arena defined by its launch post: a crowdsourced in-the-wild evaluation platform for search-augmented LLM systems based on human preference",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a leaderboard of search models by human vote",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "TL;DR ¶1",
+   "quote": "Unlike LM-Arena or SimpleQA, our data focuses on current events and diverse real-world use cases",
+   "claim": "its data, unlike LM-Arena's or SimpleQA's, focuses on current events and diverse real-world use cases",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the rated systems: search-augmented LLMs",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "TL;DR ¶2",
+   "quote": "Based on 7k human votes (03/18–04/13), Gemini-2.5-Pro-Grounding and Perplexity-Sonar-Reasoning-Pro are at the top, followed by the rest of Perplexity’s Sonar models, Gemini-2.0-Flash-Grounding, and OpenAI’s web search API models.",
+   "claim": "the first leaderboard, on 7k votes from 18 March to 13 April 2025: Gemini-2.5-Pro-Grounding and Perplexity-Sonar-Reasoning-Pro at the top",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "TL;DR ¶2",
+   "quote": "Standardizing citation styles had minimal effect on rankings (see Sec. 2).",
+   "claim": "standardizing citation styles had minimal effect on rankings",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the citation finding: preference follows citation count",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "TL;DR ¶3",
+   "quote": "Three features show strong positive correlation with human preference: response length, citation count, and citing specific web sources like YouTube and online forum/blogs (see Sec. 3).",
+   "claim": "three features correlate strongly with preference: response length, citation count, citing YouTube and forums/blogs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the citation finding: preference follows citation count",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§1 Why Search Arena?, ¶3",
+   "quote": "To this end, we developed search arena, aiming to (1) enable crowd-sourced evaluation of search-augmented LLMs and (2) release a diverse, in-the-wild dataset of user–system interactions.",
+   "claim": "its two aims: crowd-sourced evaluation of search-augmented LLMs and a released in-the-wild dataset of interactions",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a leaderboard of search models by human vote",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§1, ¶4",
+   "quote": "Since our initial launch on March 18th, we’ve collected over 11k votes across 10+ models. We then filtered this data to construct 7k battles with user votes",
+   "claim": "launched 18 March (2025); over 11k votes across 10+ models, filtered to 7k battles",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the launch, the paper, the dataset",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§1.A Data, ¶1",
+   "quote": "To balance these considerations, we introduced “style randomization”: responses are displayed either in a standardized format or in the original format (i.e., the citation style agreed upon with each model provider).",
+   "claim": "style randomization: responses shown in a standardized or the provider's original citation format",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the vote and the score",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§1.B Models, ¶1",
+   "quote": "Search Arena currently supports 11 models from three providers: Perplexity, Gemini, and OpenAI.",
+   "claim": "at launch, 11 models from three providers: Perplexity, Gemini, OpenAI",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the rated systems: search-augmented LLMs",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§2 Leaderboard, ¶3",
+   "quote": "Consistent with LM Arena, we apply the Bradley-Terry (BT) model to compute model scores. The resulting BT coefficients are then translated to Elo scale",
+   "claim": "the score: a Bradley-Terry model over battles, its coefficients translated to the Elo scale, as in LM Arena",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the vote and the score",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§2 Leaderboard, ¶3",
+   "quote": "The confidence intervals are still wide, which means the leaderboard hasn’t fully settled and there’s still some uncertainty.",
+   "claim": "its stated limit at launch: wide confidence intervals; the leaderboard not settled",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the vote and the score",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§3 Control Experiments, 'Number of citations'",
+   "quote": "Controlling for citation count also results in a positive and significant coefficient (0.234, p < 0.05), suggesting a preference for responses with more cited sources.",
+   "claim": "citation count as a control: positive, significant coefficient (0.234, p < 0.05)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the citation finding: preference follows citation count",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§3 Control Experiments, 'Joint controls'",
+   "quote": "When controlling for all features, only response length and citation count remain statistically significant.",
+   "claim": "under joint controls only response length and citation count stay significant",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the citation finding: preference follows citation count",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§3 Control Experiments, Tab. 5 note 2",
+   "quote": "When controlling for the number of citations, model rankings converge (i.e., multiple models share the same rank), suggesting that the number of citations is a significant factor impacting differences across models and the resulting rankings.",
+   "claim": "controlling for citation count, rankings converge: citation count drives differences in the rankings",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the citation finding: preference follows citation count",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§3 Model Characteristics, findings 1–2",
+   "quote": "All models favor authoritative sources (e.g., Wikipedia, .edu, .gov domains). … OpenAI models heavily cite news sources—51.3% overall and 87.3% for Trump-related prompts.",
+   "claim": "all models favor authoritative sources; OpenAI's cite news heavily (51.3%; 87.3% on Trump-related prompts)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "sources cited and preferred",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§1.B Models, Table 2 note",
+   "quote": "†We evaluate OpenAI’s web search API, which is different from the search feature in the ChatGPT product.",
+   "claim": "a limit: OpenAI's web search API is evaluated, not ChatGPT's search feature",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the rated systems: search-augmented LLMs",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "§4 Conclusion & What's Next",
+   "quote": "Open participation: We are inviting model submissions from researchers and industry, and encouraging public voting.",
+   "claim": "open participation: model submissions invited, public voting encouraged",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the vote and the score",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "header; Citation",
+   "quote": "Published on 15 Apr 2025 … Last updated on 2 Aug 2025 … Mihran Miroyan*. (2025). Introducing the Search Arena: Evaluating Search-Enabled AI. https://blog.lmarena.ai/blog/2025/search-arena/",
+   "claim": "the post published 15 April 2025, updated 2 August 2025, cited at its lmarena.ai address",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the launch, the paper, the dataset",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "own_page",
+   "locus": "footer",
+   "quote": "© 2026 Arena Intelligence Inc.",
+   "claim": "the site's operator: Arena Intelligence Inc.",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: Arena, formerly LMArena and Chatbot Arena",
+   "date": "2025-04-15 (published; last updated 2025-08-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e0d10dc29692ef83…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "abstract page header",
+   "quote": "[Submitted on 5 Jun 2025 (v1), last revised 2 Mar 2026 (this version, v2)] … Authors:Mihran Miroyan, Tsung-Han Wu, Logan King, Tianle Li, Jiayi Pan, Xinyan Hu, Wei-Lin Chiang, Anastasios N. Angelopoulos, Trevor Darrell, Narges Norouzi, Joseph E. Gonzalez",
+   "claim": "the paper: Miroyan et al. (eleven authors), v1 5 June 2025, v2 2 March 2026",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the launch, the paper, the dataset",
+   "date": "2025-06-05 (v1; v2 2026-03-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 22c03d0fef7adb35…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "Abstract s1–s2",
+   "quote": "Search-augmented language models combine web search with Large Language Models (LLMs) to improve response groundedness and freshness. However, analyzing these systems remains challenging: existing datasets are limited in scale and narrow in scope, often constrained to static, single-turn, fact-checking questions.",
+   "claim": "the class and the problem: search-augmented LLMs combine web search with LLMs; existing datasets are small, narrow, static, single-turn",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the rated systems: search-augmented LLMs",
+   "date": "2025-06-05 (v1; v2 2026-03-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 22c03d0fef7adb35…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "Abstract s3",
+   "quote": "In this work, we introduce Search Arena, a crowd-sourced, large-scale, human-preference dataset of over 24,000 paired multi-turn user interactions with search-augmented LLMs.",
+   "claim": "Search Arena defined by its paper: a crowd-sourced human-preference dataset of over 24,000 paired multi-turn interactions with search-augmented LLMs",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the dataset: interactions and votes",
+   "date": "2025-06-05 (v1; v2 2026-03-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 22c03d0fef7adb35…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "Abstract s4",
+   "quote": "The dataset spans diverse intents and languages, and contains full system traces with around 12,000 human preference votes.",
+   "claim": "diverse intents and languages, full system traces, around 12,000 preference votes",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the dataset: interactions and votes",
+   "date": "2025-06-05 (v1; v2 2026-03-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 22c03d0fef7adb35…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "Abstract s5",
+   "quote": "Our analysis reveals that user preferences are influenced by the number of citations, even when the cited content does not directly support the attributed claims, uncovering a gap between perceived and actual credibility.",
+   "claim": "headline finding: preference follows the number of citations even when the cited content does not support the attributed claims; a gap between perceived and actual credibility",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the citation finding: preference follows citation count",
+   "date": "2025-06-05 (v1; v2 2026-03-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 22c03d0fef7adb35…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "Abstract s6",
+   "quote": "Furthermore, user preferences vary across cited sources, revealing that community-driven platforms are generally preferred and static encyclopedic sources are not always appropriate and reliable.",
+   "claim": "preference varies by cited source: community-driven platforms generally preferred; static encyclopedic sources not always appropriate and reliable",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "sources cited and preferred",
+   "date": "2025-06-05 (v1; v2 2026-03-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 22c03d0fef7adb35…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "Abstract s7–s8",
+   "quote": "We find that web search does not degrade and may even improve performance in non-search settings; however, the quality in search settings is significantly affected if solely relying on the model's parametric knowledge.",
+   "claim": "cross-arena finding: web search does not degrade non-search performance; parametric knowledge alone hurts search settings",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the rated systems: search-augmented LLMs",
+   "date": "2025-06-05 (v1; v2 2026-03-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 22c03d0fef7adb35…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "Abstract s9; Comments",
+   "quote": "We open-sourced the dataset to support future research. … Accepted to ICLR 2026.",
+   "claim": "the dataset open-sourced; the paper accepted to ICLR 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the dataset: interactions and votes",
+   "date": "2025-06-05 (v1; v2 2026-03-02)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 22c03d0fef7adb35…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "README, title and opening",
+   "quote": "Historical snapshots of the [Arena](https://arena.ai/leaderboard) leaderboard.",
+   "claim": "Arena's leaderboard dataset: historical snapshots of the Arena leaderboard",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "2026-10-29 (dataset last modified 2026-10-29T03:05Z)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.README.md (sha256 b13bf3169c5ec5ff…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "README, Splits",
+   "quote": "- `full`: All historically published leaderboards - `latest`: Only the most recently published leaderboards",
+   "claim": "two splits: full, every published leaderboard; latest, only the most recent",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "2026-10-29 (dataset last modified)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.README.md (sha256 b13bf3169c5ec5ff…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "README, Notes",
+   "quote": "- Search and Webdev Arena data starts from their releases on the arena.ai (then lmarena.ai) on August 7 and November 12 2025 respectively.",
+   "claim": "the search data starts from its release on lmarena.ai on 7 August 2025",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the launch, the paper, the dataset",
+   "date": "2026-10-29 (dataset last modified)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.README.md (sha256 b13bf3169c5ec5ff…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "README, Schema",
+   "quote": "| rating | float | Arena Score | … | vote_count | int | Number of battles for this model |",
+   "claim": "the schema: rating is the 'Arena Score'; vote_count the number of battles for the model",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the vote and the score",
+   "date": "2026-10-29 (dataset last modified)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.README.md (sha256 b13bf3169c5ec5ff…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "search, split latest: rows rank 1 and 11; num_rows_total",
+   "quote": "{\"model_name\":\"gpt-5.6-sol-xhigh\",\"organization\":\"openai\",\"license\":\"Proprietary\",\"rating\":1261.1307593350664,\"rating_lower\":1254.8406048513853,\"rating_upper\":1267.4209138187477,\"variance\":10.299744257424065,\"vote_count\":60437,\"rank\":1,\"category\":\"overall\",\"leaderboard_publish_date\":\"2026-10-13\"} … {\"model_name\":\"ernie-5.1\",\"organization\":\"baidu\",\"license\":\"Proprietary\",\"rating\":1226.7150529766889 … \"rank\":11,\"category\":\"overall\",\"leaderboard_publish_date\":\"2026-10-13\"} … \"num_rows_total\":42",
+   "claim": "the latest published search leaderboard, 13 October 2026: 42 models; first gpt-5.6-sol-xhigh (openai) at 1261.1, 60,437 battles; eleventh ernie-5.1 (baidu) at 1226.7",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "2026-10-13 (publish date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.hf-search-latest.json (sha256 f5ee84f9d2bd1b58…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "search, split latest: rows rank 2 and 3",
+   "quote": "{\"model_name\":\"qwen3.8-max\",\"organization\":\"alibaba\",\"license\":\"Proprietary\",\"rating\":1261.0761861904762 … {\"model_name\":\"claude-opus-4-6-search\",\"organization\":\"anthropic\",\"license\":\"Proprietary\",\"rating\":1251.3682634708416",
+   "claim": "second qwen3.8-max (alibaba) at 1261.1, third claude-opus-4-6-search (anthropic) at 1251.4: the first two within a tenth of a point",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "2026-10-13 (publish date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.hf-search-latest.json (sha256 f5ee84f9d2bd1b58…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "search, split full: snapshot of 2026-02-26, rows rank 1 and 2",
+   "quote": "{\"model_name\":\"claude-opus-4-6-search\",\"organization\":\"anthropic\",\"license\":\"Proprietary\",\"rating\":1255.4140677086834,\"rating_lower\":1245.0272537380415,\"rating_upper\":1265.8008816793258,\"variance\":28.084618239181463,\"vote_count\":3607,\"rank\":1,\"category\":\"overall\",\"leaderboard_publish_date\":\"2026-02-26\"} … {\"model_name\":\"grok-4.20-beta1\",\"organization\":\"xai\",\"license\":\"Proprietary\",\"rating\":1225.0104803795257",
+   "claim": "the snapshot of 26 February 2026: first claude-opus-4-6-search (anthropic) at 1255.4 ± 10.4, 3,607 battles; second grok-4.20-beta1 (xai) at 1225.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "2026-02-26 (publish date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.hf-search-full-200.json (sha256 803334809b94eca0…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "search_style_control, split latest: row rank 2",
+   "quote": "{\"model_name\":\"gpt-6.1-sol-max\",\"organization\":\"openai\",\"license\":\"Proprietary\",\"rating\":1249.9181501199778,\"rating_lower\":1240.895777035074,\"rating_upper\":1258.9405232048819,\"variance\":21.190703814049858,\"vote_count\":5555,\"rank\":2,\"category\":\"overall\",\"leaderboard_publish_date\":\"2026-10-13\"}",
+   "claim": "with style control the order differs: second gpt-6.1-sol-max (openai) at 1249.9 (eighth without it)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "2026-10-13 (publish date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.hf-search_style_control-latest.json (sha256 bec4d22199bd44aa…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "search, split full: statistics, leaderboard_publish_date",
+   "quote": "\"min\":\"2025-08-07 00:00:00\",\"max\":\"2026-10-13 00:00:00\"",
+   "claim": "the published search leaderboards run from 7 August 2025 to 13 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "2026-10-13 (latest publish date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.hf-search-full-dates.json (sha256 7df292de7bae2ddf…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "¶1",
+   "quote": "For almost three years, Arena has been publishing leaderboards covering frontier AI capabilities across 10 arenas, dozens of categories, and hundreds of models, and today we're releasing the entire history of those leaderboards as a public-access dataset.",
+   "claim": "Arena releases the entire history of its published leaderboards as a public dataset (10 arenas)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the current board: snapshots and dates",
+   "date": "2026-04-02 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 e91db567eb6ab2c9…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "rendered page (HTTP 404)",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "no Wikipedia article at 'Search Arena' (HTTP 404, rendered and raw)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 5b819aeaa91b2097…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "lead ¶1",
+   "quote": "Arena (formerly LMArena and Chatbot Arena) is a public, web-based platform that evaluates large language models (LLMs). Users enter prompts for two anonymous models to respond to and vote on the model that gave the better response, after which the models' identities are revealed.",
+   "claim": "Wikipedia: the operator, Arena (formerly LMArena and Chatbot Arena), a public web platform evaluating LLMs by anonymous pairwise votes",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator: Arena, formerly LMArena and Chatbot Arena",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 15e7f68eb70ffd42…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "lead ¶4",
+   "quote": "Research has identified specific limitations in Arena's methodology.",
+   "claim": "Wikipedia: research has identified limitations in Arena's methodology (refs: rigged votes, Fast Company 2025; TechCrunch 2024)",
+   "modality": "attributed",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "Arena's method and its limits",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 15e7f68eb70ffd42…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "History ¶4",
+   "quote": "Llama 4 Maverick beat GPT-4o and Gemini 2.0 Flash on LMArena, but the version of Maverick on LMArena unfairly differed from the publicly available version. LMArena updated their policies in response.",
+   "claim": "Wikipedia: the Llama 4 Maverick episode (April 2025) and the policy change",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Arena's method and its limits",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 15e7f68eb70ffd42…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "History ¶1, ¶5, ¶8",
+   "quote": "Chatbot Arena was released on April 24, 2023. … In April 2025, LMArena incorporated as an independent company. … On January 28, 2026, LMArena rebranded to \"Arena\".",
+   "claim": "Wikipedia: Chatbot Arena released 24 April 2023; LMArena incorporated April 2025; rebranded Arena 28 January 2026",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: Arena, formerly LMArena and Chatbot Arena",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 15e7f68eb70ffd42…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "History ¶9",
+   "quote": "On October 8, 2026, Arena announced it raised $200 million in a Series B funding round co-led by Lightspeed Venture Partners and Khosla Ventures, thus placing the company at a $3.1 billion valuation.",
+   "claim": "Wikipedia: Series B of $200 million, 8 October 2026, at a $3.1 billion valuation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: Arena, formerly LMArena and Chatbot Arena",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 15e7f68eb70ffd42…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "redirect pages LMArena and Chatbot Arena (raw wikitext)",
+   "quote": "#REDIRECT [[Arena.ai]]",
+   "claim": "Wikipedia: 'LMArena' and 'Chatbot Arena' redirect to the operator's article, which does not mention Search Arena",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8-redirect-LMArena.wiki (sha256 5f608ef8b6839e0f…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Arena AI — AI Search Leaderboard: Top Models for Research",
+  "B2": "Arena AI — Arena Leaderboard: Official AI Model Rankings & Benchmarks",
+  "B3": "Arena.ai blog — Introducing the Search Arena: Evaluating Search-Enabled AI",
+  "B4": "arXiv — [2506.05334] Search Arena: Analyzing Search-Augmented LLMs",
+  "B5": "Hugging Face (lmarena-ai) — Arena Leaderboard Dataset, subset search",
+  "B6": "Arena.ai blog — Arena Leaderboard Dataset",
+  "B7": "Wikipedia — Search Arena (no article)",
+  "B8": "Wikipedia — Arena.ai"
+ }
+}

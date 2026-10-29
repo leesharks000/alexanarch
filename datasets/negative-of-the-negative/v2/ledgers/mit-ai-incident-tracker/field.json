@@ -1,0 +1,1221 @@
+{
+ "row": "mit-ai-incident-tracker",
+ "address": "mit ai incident tracker",
+ "addresses": [
+  "mit ai incident tracker"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the extracted meta descriptions (B1-meta.txt), or the card's title and snippet where the card's text is not in the page; 54/54 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B6, six sources for six cards, all MIT's: the tracker page, the Initiative's home and about pages, the June 2026 and June 2025 updates, the Navigator's incidents page); 'own_page': none apart from the cards: the MMRS record cites one source, the tracker page, which is card 1 (B1), and the two update pages the task names are cards 3 and 4 (B3, B4), each carried once, as a card; 'wikipedia': no article (W1, HTTP 404, with three related titles also 404 and a full-text search with no result), and the encyclopedia's one mention of the work under the AI Risk Repository's name (W3), with the reference it gives (W4). Unreachable: none.",
+ "lineage_note": "Lineages: what it is (B1, B6); source, the AIID (B1, B6); purpose (B1, B3); method (B1, B3, B5); dimensions (B1, B2, B3, B4); the national-security view (B1, B4); operator (B1, B2, B6); origin (B1, B6); count, four figures across MIT's surfaces (B1, B1's card, B5, B5's card); updates (B3, B4); validation (B3); limits (B1, B3, B5); openness (B1, B6); neighbours (B3); uptake (B3); the encyclopedia (W1, W3, W4).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped by the workspace's h2t; B1-meta.txt and B5-meta.txt the pages' meta descriptions extracted verbatim; W1 the 404 pages and searches, W3.wiki raw wikitext); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; also the own page the MMRS record cites (its only source)",
+   "card": "MIT AI Risk Initiative — MIT AI Incident Tracker",
+   "url": "https://airisk.mit.edu/ai-incident-tracker",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-incident-tracker-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B1.html",
+     "sha256": "720c3b26f04adc57970c7e6090668c43a909a5f9601b94db9fa6a26d0fb0a91c"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B1.txt",
+     "sha256": "8d0169460225d22859c9cc71be61e32a3fac3d064e0719f239eeff4f7da2c683"
+    },
+    "B1-meta.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B1-meta.txt",
+     "sha256": "f6cbad6e571b1744c4c6523a3d1b85d3ade3b55a7f1387ff2b469ee5d52fb0ab"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:24Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/ai-incident-tracker",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B1.html",
+    "raw_sha256": "720c3b26f04adc57970c7e6090668c43a909a5f9601b94db9fa6a26d0fb0a91c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B1.txt",
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B1-meta.txt"
+    ]
+   },
+   "card_title": "MIT AI Incident Tracker",
+   "card_snippet": "Overview: MIT AI Incident Tracker classifies 1,752 real-world AI incident reports from the AI Incident Database using Arcola AI's LLM pipeline, MIT Risk Reposit...",
+   "card_note": null,
+   "names_operator": "yes ('MIT AI Risk Initiative' in the saved text or card)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "note": "URL the MMRS record's source and the task's; the card's snippet ('classifies 1,752 real-world AI incident reports … using Arcola AI's LLM pipeline') is not in the saved page, whose heading gives 1,600 and whose meta description (B1-meta.txt, extracted verbatim from the name=description, og:description and twitter:description tags) gives 'more than 1,400'; the page carries unfinished template blocks ('[TO UPDATE / REMOVE] Frequently Asked Questions … Question 1 … Response 1', '[TO UPDATE / REMOVE] Acknowledgments'), recorded, not ledgered"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "MIT AI Risk Initiative — MIT AI Risk Initiative",
+   "url": "https://airisk.mit.edu/",
+   "kind": "Overview card (the operator's home page)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-incident-tracker-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B2.html",
+     "sha256": "d3f35366280a66cad3739c9cecb5216a73be687644466f0fabfd204af408be21"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B2.txt",
+     "sha256": "935d8b0170045fd4112c26b32af21b397d0d9e2dfa05f6e14c1a7b3156cae3ac"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:24Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B2.html",
+    "raw_sha256": "d3f35366280a66cad3739c9cecb5216a73be687644466f0fabfd204af408be21",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B2.txt"
+    ]
+   },
+   "card_title": "MIT AI Risk Initiative",
+   "card_snippet": "Tools and Data: Expert Survey (expert consensus on severe AI risks, vulnerabilities, and responsibilities), AI Risk Repository (living repository of AI risks), ...",
+   "card_note": null,
+   "names_operator": "yes ('MIT AI Risk Initiative' in the saved text or card)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "date": "2026-10-29 (undated; as fetched)",
+   "note": "URL by title and site (the page's <title> is 'MIT AI Risk Initiative'); the card's snippet ('Tools and Data: Expert Survey (…), AI Risk Repository (living repository of AI risks), …') is a summary not found verbatim in the saved page, whose tools block reads 'Which risks are most important? … What are the risks from AI? … What real-world harms are occurring?'"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3; an own page the task names (not among the MMRS record's sources)",
+   "card": "MIT AI Risk Initiative — AI Incident Tracker June 2026 Update - MIT AI Risk Initiative",
+   "url": "https://airisk.mit.edu/blog/ai-incident-tracker-june-2026-update",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-incident-tracker-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B3.html",
+     "sha256": "d8b013b1dbc4f948e86e6bbea4936765db871e58df93007f478793ef05cdefba"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B3.txt",
+     "sha256": "c994f9c9ff3a14b5446b59a03c2aa587f48c5888ac61ed538c254e21b3a9e0fe"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:25Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/blog/ai-incident-tracker-june-2026-update",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B3.html",
+    "raw_sha256": "d8b013b1dbc4f948e86e6bbea4936765db871e58df93007f478793ef05cdefba",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B3.txt"
+    ]
+   },
+   "card_title": "AI Incident Tracker June 2026 Update - MIT AI Risk Initiative",
+   "card_snippet": "Executive Summary. The AI Incident Tracker uses large language models (LLMs) to process incident reports from the AI Incident Database (AIID) and classify them ...",
+   "card_note": null,
+   "names_operator": "yes ('MIT AI Risk Initiative' in the saved text or card)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "date": "2026-06-30 (posted)",
+   "note": "URL found by WebSearch on the title; dated June 30, 2026; the card's snippet is the Executive Summary's first sentence; a PDF download is linked, not fetched"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4; an own page the task names (not among the MMRS record's sources)",
+   "card": "MIT AI Risk Initiative — Incident Tracker - June 2025 Update - MIT AI Risk Repository",
+   "url": "https://airisk.mit.edu/blog/incident-tracker---june-2025-update",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-incident-tracker-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B4.html",
+     "sha256": "952b48f0be997dc30853047c6f386d621ea1fca27dc8920f6d14055db97fde9d"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B4.txt",
+     "sha256": "90c383e98ee57e5b7ac6a5fb4244a094f34fe3704f2da287ef2cf778c839a495"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:25Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/blog/incident-tracker---june-2025-update",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B4.html",
+    "raw_sha256": "952b48f0be997dc30853047c6f386d621ea1fca27dc8920f6d14055db97fde9d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B4.txt"
+    ]
+   },
+   "card_title": "Incident Tracker - June 2025 Update - MIT AI Risk Repository",
+   "card_snippet": "This brings us completely up to date with the latest incidents on the AI Incident Database as at 23 June 2025 (up to incident ID #1116) LLM Analysis Some update...",
+   "card_note": null,
+   "names_operator": "yes ('MIT AI Risk Initiative' in the saved text or card)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "date": "2025-07-18 (posted; the update of 2025-06-23)",
+   "note": "URL found by WebSearch on the snippet's 'incident ID #1116' (the guessed slug /blog/incident-tracker-june-2025-update returned 404); dated July 18, 2025, for the update of 23 June 2025; the card's title ends 'MIT AI Risk Repository', the page's <title> 'Incident Tracker - June 2025 Update'"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "MIT AI Risk Navigator — Incidents - MIT AI Risk Navigator",
+   "url": "https://www.airi-navigator.com/incidents",
+   "kind": "Overview card (the Navigator, a project of the MIT FutureTech AI Risk Initiative)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-incident-tracker-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B5.html",
+     "sha256": "8c6757061ebc4be13c52000e335d5efc4210282b8e51d4d99a1e07de91a61528"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B5.txt",
+     "sha256": "b78ae81d171a1695208f7eb462831f2e68508c24bd8a4d958d9e4bca2b3ed462"
+    },
+    "B5-meta.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B5-meta.txt",
+     "sha256": "1dd25599daef30317a180517487fc0b1d0ac91ff793e4f88d5926e5909331eeb"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:26Z",
+    "http": 200,
+    "url": "https://www.airi-navigator.com/incidents",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B5.html",
+    "raw_sha256": "8c6757061ebc4be13c52000e335d5efc4210282b8e51d4d99a1e07de91a61528",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B5.txt",
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B5-meta.txt"
+    ]
+   },
+   "card_title": "Incidents - MIT AI Risk Navigator",
+   "card_snippet": "Explore more than 1300 real-world reported incidents from the AI Incident Database by risk, cause, harm, severity, and other relevant dimensions.",
+   "card_note": null,
+   "names_operator": "no ('MIT AI Risk Initiative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "date": "2026-10-29 (v1.3.2; as fetched)",
+   "note": "URL from airisk.mit.edu/llms.txt (the Navigator at www.airi-navigator.com) and the card's title; the page's <title> 'Incidents | MIT AI Risk Navigator'; the card's snippet is the meta description (B5-meta.txt) save 'more than 1300' for '1,300'; the page's heading gives 1,497; version v1.3.2; the footer credits Spencer Michaels"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "MIT AI Risk Initiative — About - MIT AI Risk Initiative",
+   "url": "https://airisk.mit.edu/about",
+   "kind": "Overview card (the operator's about page)",
+   "surfaced_by_T": [
+    {
+     "slug": "mit-ai-incident-tracker-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B6.html",
+     "sha256": "b40b72f7dbd5c16c3d50da84dc12cbfc9974e71e5ffd84e3dc8f0a95305e3396"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B6.txt",
+     "sha256": "9be294440171b8044981eb4e2f6bb29d6610c0cec83ae5cd86df63ac59467a78"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:26Z",
+    "http": 200,
+    "url": "https://airisk.mit.edu/about",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B6.html",
+    "raw_sha256": "b40b72f7dbd5c16c3d50da84dc12cbfc9974e71e5ffd84e3dc8f0a95305e3396",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/B6.txt"
+    ]
+   },
+   "card_title": "About - MIT AI Risk Initiative",
+   "card_snippet": "AI risk is a large and fast-moving subject. Understanding it means keeping track of what can go wrong, who is affected, how organizations are responding, and wh...",
+   "card_note": null,
+   "names_operator": "yes ('MIT AI Risk Initiative' in the saved text or card)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "date": "2026-10-29 (undated; as fetched)",
+   "note": "URL by title and site; the card's snippet is 'What we do' ¶1"
+  },
+  {
+   "id": "W1",
+   "origin": "wikipedia",
+   "role": "Wikipedia's page for the name: none",
+   "card": "Wikipedia — MIT AI Incident Tracker (no article)",
+   "url": "https://en.wikipedia.org/wiki/MIT_AI_Incident_Tracker",
+   "kind": "Wikipedia (HTTP 404)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "W1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W1.html",
+     "sha256": "079e59d86eb3bc8c9302519d36bc05fc2785b5bd2a610580a5f463b68248509e"
+    },
+    "W1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W1.txt",
+     "sha256": "86ceb4ca3feeeb06b900ac02d99298dcaeccf22add0e7a3d5423efd6a7fd5a82"
+    },
+    "W1-raw.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W1-raw.html",
+     "sha256": "5531fa583eab1ce6274baa3ff8c97ae2893067ae935275f88d671a218f060c3e"
+    },
+    "W1-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W1-search.html",
+     "sha256": "1a569d35b508c453a5f968970ab96358f7f8bc8a85844ae9b2777d0d8453abdb"
+    },
+    "W1-search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W1-search.txt",
+     "sha256": "b752a925085856a6c1a893895f1fbfcdeb2568d42d8bb128578aa5cf4fd9cc31"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:26Z",
+    "http": 404,
+    "url": "https://en.wikipedia.org/wiki/MIT_AI_Incident_Tracker",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W1.html",
+    "raw_sha256": "079e59d86eb3bc8c9302519d36bc05fc2785b5bd2a610580a5f463b68248509e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W1.txt",
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W1-search.txt"
+    ]
+   },
+   "unreachable": false,
+   "no_article": true,
+   "names_operator": "no ('MIT AI Risk Initiative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "date": "2026-10-29 (HTTP 404, as fetched)",
+   "note": "no article: the rendered page and the raw wikitext (https://en.wikipedia.org/w/index.php?title=MIT_AI_Incident_Tracker&action=raw, W1-raw.html) both HTTP 404; the same for AI_Incident_Tracker, MIT_AI_Risk_Repository and MIT_AI_Risk_Initiative (W1-alt-*.html, HTTP 404 each, 2026-10-29T05:07:27Z–05:07:30Z); full-text search for '\"AI Incident Tracker\"' (W1-search.html, HTTP 200, 05:10:17Z): no results. The MediaWiki search API answered HTTP 429 (rate limit) at 05:07:38Z and was not retried; the Special:Search page was used instead"
+  },
+  {
+   "id": "W3",
+   "origin": "wikipedia",
+   "role": "the encyclopedia's one mention of the tracker's work, found by full-text search for '\"AI Risk Repository\"' (W2-search.html, HTTP 200, 2026-10-29T05:10:24Z: 'Result 1 of 1'), under the repository's name",
+   "card": "Wikipedia — Voiceverse NFT plagiarism scandal",
+   "url": "https://en.wikipedia.org/wiki/Voiceverse_NFT_plagiarism_scandal",
+   "kind": "Wikipedia article (a mention)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "W3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W3.html",
+     "sha256": "b5916526f7bbf7c1fb86f816c6ef842741f79548574eb28890d0d1c7105d7b31"
+    },
+    "W3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W3.txt",
+     "sha256": "036aa5c461bbe8958ca9d2b3de0c8eef411ee7545b3ea1e0d920f8a1efc14a74"
+    },
+    "W3.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W3.wiki",
+     "sha256": "ea09a4740b6caa9b1e86fbffc93cd30970820b0288bde3db4a3a0a6955cc09c2"
+    },
+    "W2-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W2-search.html",
+     "sha256": "be689c38f669d18fca7fd8f08367c9aa54358ad2c75dd36cee5d6273a1c8040b"
+    },
+    "W2-search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W2-search.txt",
+     "sha256": "f0f2921e1c6e2a2ab3f5d8afa63333799a89cad524ccd4317c23f5b8c4e1a4d5"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:11:17Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Voiceverse_NFT_plagiarism_scandal",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W3.html",
+    "raw_sha256": "b5916526f7bbf7c1fb86f816c6ef842741f79548574eb28890d0d1c7105d7b31",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W3.txt",
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W2-search.txt"
+    ]
+   },
+   "names_operator": "no ('MIT AI Risk Initiative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "date": "2026-10-10 (last edit, by the search listing)",
+   "note": "raw wikitext (https://en.wikipedia.org/w/index.php?title=Voiceverse_NFT_plagiarism_scandal&action=raw, HTTP 200, 05:10:44Z, W3.wiki) and rendered page; last edited 10 October 2026 by the search listing; the sentence's reference is the AIID's citation page for incident 277 (ref name Sonali-2022, access-date October 5, 2025)"
+  },
+  {
+   "id": "W4",
+   "origin": "wikipedia",
+   "role": "the reference Wikipedia gives for its mention (incidentdatabase.ai/cite/277), fetched to read the classification it cites",
+   "card": "AI Incident Database — Incident 277 (Wikipedia's reference)",
+   "url": "https://incidentdatabase.ai/cite/277/",
+   "kind": "Wikipedia's reference (an AIID page)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "W4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W4.html",
+     "sha256": "e4d67493c6e1de915dfb97bfb34dbde0ef13454cfd325a8cbd76eda35ff93714"
+    },
+    "W4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W4.txt",
+     "sha256": "51fdb16c0c23c6daa2717338589d48961c2ff915778ef3f3a7261369648da4c5"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:10:56Z",
+    "http": 200,
+    "url": "https://incidentdatabase.ai/cite/277/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W4.html",
+    "raw_sha256": "e4d67493c6e1de915dfb97bfb34dbde0ef13454cfd325a8cbd76eda35ff93714",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/mit-ai-incident-tracker-20261029/W4.txt"
+    ]
+   },
+   "names_operator": "no ('MIT AI Risk Initiative' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "date": "2026-10-29 (as fetched)",
+   "note": "the page shows 'MIT Taxonomy Classifications … Machine-Classified', subdomain '4.3. Fraud, scams, and targeted manipulation', domain 'Malicious Actors & Misuse'; the phrase Wikipedia quotes ('economic and cultural devaluation of human effort') is not on the page as fetched"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "opening ('How is AI harming us?')",
+   "quote": "The MIT AI Incident Tracker classifies 1,600 real-world report incidents from the AI Incident Database by risk, cause, harm, severity, and other relevant dimensions.",
+   "claim": "the tracker defined by its own page: it classifies 1,600 AIID incidents by risk, cause, harm, severity and other dimensions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a classification of AIID incidents",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "meta description (name=description, og:description, twitter:description), extracted to B1-meta.txt",
+   "quote": "The MIT AI Incident Tracker classifies more than 1,400 real-world reported incidents from the AI Incident Database by risk, cause, harm, severity, and other relevant dimensions.",
+   "claim": "the same page's description gives the count as more than 1,400",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: four figures across MIT's surfaces",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1-meta.txt (sha256 f6cbad6e571b1744…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "card 1 snippet (the count is not in the saved page)",
+   "quote": "Overview: MIT AI Incident Tracker classifies 1,752 real-world AI incident reports from the AI Incident Database using Arcola AI's LLM pipeline",
+   "claim": "the card's summary gives 1,752 real-world AI incident reports",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: four figures across MIT's surfaces",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "What is the AI Incident Tracker? ¶1 s1",
+   "quote": "AI incidents are on the rise, yet current databases struggle with inconsistent structure, limiting their utility for policymaking.",
+   "claim": "its occasion: incident databases' inconsistent structure limits their use for policy",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: structure for policymaking",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "What is the AI Incident Tracker? ¶1 s2",
+   "quote": "The AI Incident Tracker project addresses this by creating a tool to classify AI incidents based on risks and harm severity.",
+   "claim": "its purpose: a tool to classify AI incidents by risk and harm severity",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: structure for policymaking",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "What is the AI Incident Tracker? ¶1 s3",
+   "quote": "Raw reports from the AI Incident Database (AIID) are processed by Arcola AI's LLM pipeline, which categorizes them using established frameworks, such as the MIT Risk Repository and a harm severity rating system based on CSET’s AI Harm Taxonomy.",
+   "claim": "its method: AIID raw reports processed by Arcola AI's LLM pipeline against the MIT Risk Repository and a CSET-based severity rating",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "method: Arcola AI's LLM pipeline over AIID reports",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "What is the AI Incident Tracker? ¶3 s1",
+   "quote": "The AI Incident Tracker is part of the MIT AI Risk Initiative, which aims to increase awareness and adoption of best practice AI risk management across the AI ecosystem.",
+   "claim": "the operator: part of the MIT AI Risk Initiative",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator: the MIT AI Risk Initiative at MIT FutureTech",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "What is the AI Incident Tracker? ¶3 s2–3",
+   "quote": "We build on the great work done by the Responsible AI Collaborative who created and maintain the AI Incident Database, reviewing all submitted reports and ensuring the quality of the dataset. … Visit the AIID site to learn more about how incidents are defined and the ingestion process",
+   "claim": "its source: the AIID, created and maintained by the Responsible AI Collaborative, which reviews the reports; incident definition and ingestion are the AIID's",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "source: the AI Incident Database",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Incident Overview",
+   "quote": "View how incidents in the AI Incident Database are classified using the MIT AI Risk Repository’s causal and domain taxonomies, along with risk levels defined by the EU AI Act.",
+   "claim": "dimensions: the repository's causal and domain taxonomies and the EU AI Act's risk levels",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "dimensions: taxonomies and scales",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Incident View; Harm Taxonomy",
+   "quote": "View detailed analysis of each AI incident in the incident database, including how the incident is classified, how severe the harm is (across 10 categories of harm), and the classification confidence. … View a harm taxonomy for AI incidents, which distinguishes between 10 types of harm (e.g., physical harm, property damage, financial loss, human rights) based on work by CSET",
+   "claim": "per incident: its classification, its harm severity across ten CSET-based harm types, and the classification's confidence",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "dimensions: taxonomies and scales",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "NatSec Incident View; NatSec Impact Framework",
+   "quote": "National Security impact assessment for each AI incident in the database, including 5 categories of impact and threat classification (novelty, imminence, autonomy) … It is intended to be applicable across different nations, grading the impact to the primary target country and identifying other nations that were also affected.",
+   "claim": "a national-security impact assessment per incident: five impact categories and a threat classification, graded for the primary target country",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "dimensions: the national-security view",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "What can I use the AI Incident Tracker for?",
+   "quote": "A common frame of reference for researchers, developers, businesses, evaluators, auditors, policymakers, and regulators",
+   "claim": "its uses: a common frame of reference for researchers to regulators",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: structure for policymaking",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Limitations of the analysis and dataset ¶1 s1",
+   "quote": "This classification database is intended to explore the potential capabilities and limitations of a scalable incident analysis framework.",
+   "claim": "its status: a classification database exploring the capabilities and limits of a scalable incident analysis framework",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits: indicative, not validated",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Limitations ¶1 s2–3",
+   "quote": "The classification analysis uses reports from the AI Incident Database (AIID) as input data which rely on submissions from the public and subject matter experts. The quality, reliability and depth of detail in the reports varies across the dataset.",
+   "claim": "its input: AIID reports from public and expert submissions, of varying quality, reliability and detail",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: indicative, not validated",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Limitations ¶1 s4",
+   "quote": "As the reporting is voluntary, the dataset is inevitably subject to some degree of sampling bias.",
+   "claim": "voluntary reporting gives some sampling bias",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: indicative, not validated",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Limitations ¶1 s5",
+   "quote": "Spot-checks have been used to provide feedback on misclassifications and to iterate the tool, improving its reliability, however a systematic validation study has not yet been completed.",
+   "claim": "spot-checks only: no systematic validation study completed",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits: indicative, not validated",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Limitations ¶2",
+   "quote": "Therefore patterns and trends observed in the data should be taken as indicative and validated through further analysis.",
+   "claim": "patterns and trends are to be taken as indicative",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits: indicative, not validated",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "Team",
+   "quote": "Simon Mylius MIT FutureTech Peter Slattery MIT FutureTech … Sean McGregor AI Incident Database … Neil Thompson MIT FutureTech",
+   "claim": "the team: MIT FutureTech and University of Queensland researchers, with the AIID's Sean McGregor",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: developed by Simon Mylius",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Website © MIT FutureTech 2026 … Data from the MIT AI Risk Initiative is licensed under CC BY 4.0",
+   "claim": "the data licence: CC BY 4.0; the site MIT FutureTech's",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness: CC BY 4.0",
+   "date": "2026-10-29 (undated; as fetched; the MMRS record read it 2026-10-28)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 8d0169460225d228…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "Our tools and data, 'What real-world harms are occurring?'",
+   "quote": "Explore and compare real-world AI incidents by risk domain, type and severity of harm, number of people affected, alleged developer, time, or national security impact.",
+   "claim": "the Initiative's home page gives the tracker as real-world AI incidents compared by risk domain, harm, people affected, developer, time and national-security impact",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "dimensions: taxonomies and scales",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 935d8b0170045fd4…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card 2 snippet",
+   "quote": "Tools and Data: Expert Survey (expert consensus on severe AI risks, vulnerabilities, and responsibilities), AI Risk Repository (living repository of AI risks)",
+   "claim": "the card's summary of the Initiative's tools: an expert survey, the AI Risk Repository, and others",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the MIT AI Risk Initiative at MIT FutureTech",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "hero",
+   "quote": "Authoritative data and frameworks to help you identify, prioritize, and manage the risks from AI",
+   "claim": "the Initiative's self-description: authoritative data and frameworks for managing AI risk",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the MIT AI Risk Initiative at MIT FutureTech",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 935d8b0170045fd4…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Executive Summary s1",
+   "quote": "The AI Incident Tracker uses large language models (LLMs) to process incident reports from the AI Incident Database (AIID) and classify them along five taxonomies, producing standardized data that policymakers and researchers can use to track trends.",
+   "claim": "the method restated: LLMs classify AIID incident reports along five taxonomies, producing standardized data",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "method: Arcola AI's LLM pipeline over AIID reports",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "What We Did ¶1",
+   "quote": "Harm Severity (how serious the harm was, rated across 10 harm-types), EU AI Act Risk Level (the regulatory risk tier under the EU AI Act), Causal Taxonomy (what stage of the AI lifecycle the harm stems from and whether it was intentional), Domain Taxonomy (7 high-level categories of risks, such as discrimination or malicious use), and Subdomain Taxonomy (24 more specific subcategories within domains)",
+   "claim": "the five taxonomies: harm severity, EU AI Act risk level, causal, domain (7) and subdomain (24)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "dimensions: taxonomies and scales",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Executive Summary s2–3",
+   "quote": "Because the tracker relies on automated LLM classification rather than manual review, we need to understand whether LLMs can classify incidents as consistently as expert humans. This report describes a pilot study to compare the performance of eight LLMs against expert human reviewers",
+   "claim": "the occasion of validation: automated classification without manual review; a pilot study of eight LLMs against expert reviewers",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "validation: the June 2026 pilot",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "What We Did ¶1; Methodology",
+   "quote": "We asked two expert reviewers to independently read reports of 10 incidents and classify each one using five taxonomies … We selected 10 incident reports from the AI Incident Database.",
+   "claim": "the pilot's design: two expert reviewers, ten incidents, five taxonomies",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "validation: the June 2026 pilot",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "What We Found ¶1",
+   "quote": "Opus 4.6 and Kimi K2.5 were the two strongest models in our evaluation and met or exceeded the currently used model, Sonnet 4, on most taxonomies.",
+   "claim": "the model the tracker currently uses is Sonnet 4; Opus 4.6 and Kimi K2.5 met or exceeded it on most taxonomies",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "validation: the June 2026 pilot",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "What We Found ¶3–4",
+   "quote": "On the EU AI Act Risk Level taxonomy they performed substantially worse. … After targeted prompt refinement, Opus 4.6 matched or exceeded the human-human agreement baseline on all five taxonomies on this pilot sample.",
+   "claim": "the EU AI Act level was the weak taxonomy; after prompt refinement Opus 4.6 met the human baseline on all five, on the pilot sample",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "validation: the June 2026 pilot",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Results, Evaluating the human baseline",
+   "quote": "By the Landis & Koch interpretation scale, the human-human agreement is itself only \"Fair\" for Harm Severity (0.31) and \"Moderate\" for EU AI Act Risk Level (0.56).",
+   "claim": "the human baseline itself is only fair for harm severity (0.31) and moderate for EU AI Act level (0.56)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "validation: the June 2026 pilot",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Introduction ¶1",
+   "quote": "Incident reporting has contributed to major safety improvements in high-stakes sectors such as aviation, healthcare, and nuclear power",
+   "claim": "its premise: incident reporting improved safety in aviation, healthcare and nuclear power",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: structure for policymaking",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Introduction ¶2",
+   "quote": "Several databases already collect reports of AI-related incidents, including the AI Incident Database, the OECD’s AI Incident Monitor, the AIAAIC Repository, the Political Deepfakes Database, and others. The MIT AI Incident Tracker project builds on these efforts by classifying each incident against a set of risk taxonomies and rating the severity of the harm involved.",
+   "claim": "its place: built on the incident databases (AIID, OECD monitor, AIAAIC, Political Deepfakes Database), classifying each incident and rating its harm",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: the incident databases it builds on",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Introduction ¶3 s3",
+   "quote": "These outputs have been used to report on incident trends, including in the 2026 World Disasters Report and Time magazine.",
+   "claim": "its uptake: used in the 2026 World Disasters Report and Time magazine",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: uptake of the tracker",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Introduction ¶4–5",
+   "quote": "The Incident Tracker uses large language models (LLMs) to make incident classification scalable. … However, LLMs can make mistakes when interpreting incident reports and assigning classifications. For instance, they can occasionally hallucinate details and can exhibit a score-range bias, where ratings cluster within a narrow band of an ordinal scale rather than using the full range.",
+   "claim": "LLMs for scale; and their errors: hallucinated details and score-range bias",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: indicative, not validated",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Future Work ¶1 s2",
+   "quote": "The human consensus labels used as the benchmark for evaluating LLM performance were based on a small review sample: two reviewers per incident across 10 incidents.",
+   "claim": "the pilot's stated limit: a small review sample",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "validation: the June 2026 pilot",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Next steps",
+   "quote": "Our results suggest that LLM-based incident classification has comparable accuracy to the human baseline and is a viable approach for scaling the Incident Tracker. … The next step is to run a more comprehensive validation study based on this pilot. … The full set of reports from the AI Incident Database will be reclassified using the updated model selection and adapted prompts, to refresh the Incident Tracker with more reliable classifications.",
+   "claim": "its conclusion and plan: comparable accuracy, a fuller validation study next, and a reclassification of every AIID report",
+   "modality": "prediction",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "updates: reclassification by version",
+   "date": "2026-06-30 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 c994f9c9ff3a14b5…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Major update - 23 June 2025",
+   "quote": "This brings us completely up to date with the latest incidents on the AI Incident Database as at 23 June 2025 (up to incident ID #1116)",
+   "claim": "on 23 June 2025 the tracker reached AIID incident ID #1116",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "updates: reclassification by version",
+   "date": "2025-07-18 (posted; the update of 2025-06-23)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90c383e98ee57e5b…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "LLM Analysis",
+   "quote": "The full dataset has been classified using this latest iteration of the tool (reclassification of all incidents that were classified with the previous version, to ensure consistency across the dataset).",
+   "claim": "every incident reclassified with the new iteration, for consistency",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "updates: reclassification by version",
+   "date": "2025-07-18 (posted; the update of 2025-06-23)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90c383e98ee57e5b…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Harm Severity",
+   "quote": "The harm severity analysis uses a new scale, simplifying scoring to 1-5 points (previously 0-10). … I have tried to remove ambiguities from the definitions in the scale and to make it possible to grade incidents consistently with greater objectivity.",
+   "claim": "the severity scale changed from 0–10 to 1–5, its definitions disambiguated (in the first person)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dimensions: taxonomies and scales",
+   "date": "2025-07-18 (posted; the update of 2025-06-23)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90c383e98ee57e5b…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "National Security Impact Assessment",
+   "quote": "Assesses NatSec impact of each incident in 5 categories: Physical Security & Critical Infrastructure / Information Warfare & Intelligence Security / Sovereignty & Government Functions / Economic & Technological Security / Societal Stability & Human Rights using this framework. … Classifies threat for Imminence, Novelty and Autonomy",
+   "claim": "the five national-security categories and the threat classification",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "dimensions: the national-security view",
+   "date": "2025-07-18 (posted; the update of 2025-06-23)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90c383e98ee57e5b…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Ambiguities and Alternative Interpretations; Primary Goal of AI Systems",
+   "quote": "‘Ambiguities identified’ and ‘Alternative interpretations’ - makes it easier to spot analyses where further review of the reports or investigation is required … Now includes the primary goal of the AI system involved in each incident, classified according to a taxonomy based on the AIID GMF.",
+   "claim": "added fields: ambiguities and alternative interpretations flagged for review; the system's primary goal by a taxonomy based on the AIID's GMF",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "dimensions: taxonomies and scales",
+   "date": "2025-07-18 (posted; the update of 2025-06-23)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 90c383e98ee57e5b…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "card 5 snippet (the page's meta description reads 'more than 1,300')",
+   "quote": "Explore more than 1300 real-world reported incidents from the AI Incident Database by risk, cause, harm, severity, and other relevant dimensions.",
+   "claim": "the Navigator's card gives more than 1,300 incidents",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: four figures across MIT's surfaces",
+   "date": "2026-10-29 (v1.3.2; as fetched)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "AI Incident Tracker heading",
+   "quote": "1,497 real-world AI incidents from the AI Incident Database, classified by risk domain, cause, harm type, and severity.",
+   "claim": "the Navigator's page heading gives 1,497 incidents (2026-10-29)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: four figures across MIT's surfaces",
+   "date": "2026-10-29 (v1.3.2; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b78ae81d171a1695…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "banner",
+   "quote": "This is a research prototype. The data and analyses are preliminary and not yet validated",
+   "claim": "the Navigator: a research prototype, its data and analyses preliminary and not yet validated",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: indicative, not validated",
+   "date": "2026-10-29 (v1.3.2; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b78ae81d171a1695…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "What is the AI Incident Tracker?",
+   "quote": "The AI Incident Tracker draws on publicly reported incidents from the AI Incident Database — sourced from news coverage, academic publications, and government reports — and classifies each one against the Navigator's shared taxonomies using an LLM pipeline with human spot-checking.",
+   "claim": "in the Navigator: AIID incidents from news, papers and government reports, each classified against shared taxonomies by an LLM pipeline with human spot-checking",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: Arcola AI's LLM pipeline over AIID reports",
+   "date": "2026-10-29 (v1.3.2; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b78ae81d171a1695…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "headline figures",
+   "quote": "Up -76% … year-over-year … 64% … caused by AI systems … high-severity in 2026 … Malicious Actors & Misuse … most affected domain",
+   "claim": "the Navigator's headline figures: 'Up -76%' year over year, 64% caused by AI systems, Malicious Actors & Misuse the most affected domain",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: four figures across MIT's surfaces",
+   "date": "2026-10-29 (v1.3.2; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b78ae81d171a1695…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "What we do, AI Incident Tracker",
+   "quote": "A catalogue that classifies incidents where AI has already caused harm. Developed in collaboration with the AI Incident Database.",
+   "claim": "the about page: a catalogue classifying incidents of AI harm, developed with the AIID",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a classification of AIID incidents",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9be294440171b804…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Who we are ¶2–3",
+   "quote": "We are based at MIT FutureTech, a joint initiative of the Institute of the Digital Economy and MIT CSAIL at the Massachusetts Institute of Technology … Our work is free to use and openly available, and most of our outputs are published under a CC BY 4.0 licence.",
+   "claim": "the Initiative based at MIT FutureTech (IDE and CSAIL); most outputs CC BY 4.0",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the MIT AI Risk Initiative at MIT FutureTech",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9be294440171b804…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "What we do ¶1 (also the card 6 snippet)",
+   "quote": "AI risk is a large and fast-moving subject. Understanding it means keeping track of what can go wrong, who is affected, how organizations are responding, and where the gaps are. No single dataset captures all of this, so we maintain several connected workstreams, each answering a different question.",
+   "claim": "the Initiative's workstreams, the tracker one of them",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: the MIT AI Risk Initiative at MIT FutureTech",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9be294440171b804…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Team, Simon Mylius",
+   "quote": "He developed and leads the AI Incident Tracker - a classification tool and dashboard to add structure to datasets of reported AI safety incidents, which is now hosted by the MIT AI Risk Repository and its analysis features on AI Incident Database.",
+   "claim": "Simon Mylius developed and leads it; now hosted by the MIT AI Risk Repository, its analysis featured on the AIID",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: developed by Simon Mylius",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9be294440171b804…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Who uses our work, AI Incident Database",
+   "quote": "AI Incident Database … Maps real-world incidents to our taxonomy in the incident tracker.",
+   "claim": "the AIID listed as a user: it maps incidents to the Initiative's taxonomy in the tracker",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "source: the AI Incident Database",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9be294440171b804…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "W1",
+   "origin": "wikipedia",
+   "locus": "rendered page https://en.wikipedia.org/wiki/MIT_AI_Incident_Tracker (HTTP 404)",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article 'MIT AI Incident Tracker' (HTTP 404; also no 'AI Incident Tracker', 'MIT AI Risk Repository', 'MIT AI Risk Initiative')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the encyclopedia: no article; one mention under the repository's name",
+   "date": "2026-10-29 (HTTP 404, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text W1.txt (sha256 86ceb4ca3feeeb06…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "W1",
+   "origin": "wikipedia",
+   "locus": "full-text search '\"AI Incident Tracker\"' (W1-search.txt)",
+   "quote": "There were no results matching the query.",
+   "claim": "no article text in the encyclopedia contains the phrase 'AI Incident Tracker'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia: no article; one mention under the repository's name",
+   "date": "2026-10-29 (HTTP 404, as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text W1-search.txt (sha256 b752a925085856a6…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "W3",
+   "origin": "wikipedia",
+   "locus": "Voiceverse NFT plagiarism scandal, Reactions and legacy ¶ (found by full-text search '\"AI Risk Repository\"', W2-search.txt: one result)",
+   "quote": "The MIT AI Risk Repository catalogued the incident as an example of \"economic and cultural devaluation of human effort\"",
+   "claim": "the encyclopedia's one mention: the repository (not the tracker) catalogued AIID incident 277 under 'economic and cultural devaluation of human effort', referenced to the AIID's citation page",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia: no article; one mention under the repository's name",
+   "date": "2026-10-10 (last edit, by the search listing)",
+   "quote_ok": true,
+   "checked_against": "saved text W3.txt (sha256 036aa5c461bbe895…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "W4",
+   "origin": "wikipedia",
+   "locus": "incidentdatabase.ai/cite/277 (the reference Wikipedia gives), Applied Taxonomies",
+   "quote": "GMF, MIT MIT Taxonomy Classifications Machine-Classified … 4.3. Fraud, scams, and targeted manipulation … Malicious Actors & Misuse",
+   "claim": "on 2026-10-29 the AIID's page for incident 277 shows the MIT classification as machine-classified, subdomain 4.3 (fraud, scams, targeted manipulation), domain Malicious Actors & Misuse",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia: no article; one mention under the repository's name",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text W4.txt (sha256 51fdb16c0c23c6da…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "MIT AI Risk Initiative — MIT AI Incident Tracker",
+  "B2": "MIT AI Risk Initiative — MIT AI Risk Initiative",
+  "B3": "MIT AI Risk Initiative — AI Incident Tracker June 2026 Update - MIT AI Risk Initiative",
+  "B4": "MIT AI Risk Initiative — Incident Tracker - June 2025 Update - MIT AI Risk Repository",
+  "B5": "MIT AI Risk Navigator — Incidents - MIT AI Risk Navigator",
+  "B6": "MIT AI Risk Initiative — About - MIT AI Risk Initiative",
+  "W1": "Wikipedia — MIT AI Incident Tracker (no article)",
+  "W3": "Wikipedia — Voiceverse NFT plagiarism scandal",
+  "W4": "AI Incident Database — Incident 277 (Wikipedia's reference)"
+ }
+}

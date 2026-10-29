@@ -889,6 +889,8 @@ def main():
                             "reading": json.loads((d / "reading.json").read_text(encoding="utf-8")) if (d / "reading.json").exists() else None}
     REGH, ROWH, TRAVH, REGQ, STATS = {}, {}, {}, {}, {}
     AX, LANDS = load_axn(), load_landings()
+    _mm = V2 / "panel/mmrs-records.json"  # the MMRS meta-aggregator record of an entity, where one exists (declared 2026-10-29)
+    MMRS = json.loads(_mm.read_text(encoding="utf-8"))["records"] if _mm.exists() else {}
     REG = _sources()
 
     LEDE = ('<p class="sub">Public knowledge of an entity, constructed before the addresses at which it is found, and composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
@@ -1185,6 +1187,8 @@ def main():
         if (V2 / "panel/configs" / f"{k}.json").exists():
             links["configuration"] = f"{BASE}{DS_URL}/panel/configs/{k}.json"
         links["address_page"] = addr_url
+        if k in MMRS:
+            links["mmrs_record"] = MMRS[k]["url"]
         links["dataset"] = HF_NON
         links = {kk: vv for kk, vv in links.items() if vv}
         ax = AX.get(k)
@@ -1228,6 +1232,8 @@ def main():
             sub.append(f'<a href="{DS_URL}/traversal/{k}/">D/R/O traversal</a>')
         if addr_url:
             sub.append(f'<a href="{esc(addr_url[len(BASE):])}">the address page</a>')
+        if k in MMRS:
+            sub.append(f'<a href="{esc(MMRS[k]["url"])}">the MMRS meta-aggregator record</a>')
         kind_ = "operator" if (r or {}).get("object_kind") == "operator" else "entity"
         sec = [f'<p style="font-size:.85em;margin:0 0 4px"><a href="/non/">The Negative of the Negative</a> › {kind_} <code>{esc(k)}</code></p>',
                f'<p class="sub" style="font-size:.85em">One {kind_} of the Negative of the Negative (EA-NEGONT-02, <a href="/s/records/{spec_no(en, r)}/">#{spec_no(en, r)}</a>), '
@@ -1281,6 +1287,9 @@ def main():
               "usageInfo": READING_NOTE}
         if deps:
             ld["mentions"] = [{"@type": "CreativeWork", "url": f"{BASE}/s/records/{n}/", "identifier": f"#{n}"} for n in deps]
+        if k in MMRS:
+            ld["citation"] = [{"@type": "WebPage", "name": f'{MMRS[k]["name"]} — MMRS meta-aggregator record', "url": MMRS[k]["url"],
+                               "isPartOf": {"@type": "Dataset", "name": "MMRS meta-aggregator", "url": "https://www.machinemediation.org/aggregators/"}}]
         head = (f'<link rel="canonical" href="{url}">\n<link rel="cite-as" href="{url}">\n'
                 f'<link rel="describedby" href="{url}entity.json" type="application/json">\n<link rel="collection" href="{BASE}/non/">\n'
                 f'<meta name="citation_title" content="{esc(en["name"])} — The Negative of the Negative"><meta name="citation_date" content="{esc(str(last))}">'

@@ -1,0 +1,42 @@
+{
+  "row": "academ-ai",
+  "address": "academ-ai",
+  "addresses": [
+    "academ-ai"
+  ],
+  "entity": "Academ-AI (academ-ai.info), Alex Glynn's database of published scholarship with suspected undeclared AI use, identified by chatbot phrasing and quoted with the phrases highlighted (Kornhauser Health Sciences Library, University of Louisville); its dataset paper arXiv:2411.15218 (v1 2024-11-20, first 500 examples; v2 2025-11-15, first 768); formalized in the MMRS meta-aggregator record of 2026-10-28 (compiled 2026-10-29, the disambiguation added from the capture); the edtech homonyms AcademAI (academai.app), Academi.AI and Academiq kept as distinct entities",
+  "row_type": "C (public entity: a database of suspected undeclared AI use in published scholarship; monitoring)",
+  "aliases": [
+    {
+      "pattern": "\\bacadem-ai\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bacadem ai\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bacadem-ai\\.info\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\b2411\\.15218\\b",
+      "flags": ""
+    },
+    {
+      "pattern": "\\bAlex\\s+Glynn\\b",
+      "flags": ""
+    }
+  ],
+  "classes": [
+    {
+      "term": "documentation of undeclared AI use in academic publishing",
+      "pattern": "\\b(undeclared|undisclosed)\\s+(use\\s+of\\s+)?(generative\\s+)?(AI|artificial intelligence)\\b|\\bAI\\s+(use|usage)\\s+in\\s+(academic|scholarly)\\s+(papers|publishing|literature)\\b",
+      "flags": "i",
+      "basis": "field: B1/B5 (Glynn, arXiv:2411.15218, abstract: 'Academ-AI documents examples of suspected undeclared AI usage in the academic literature'); B8 (eDiscovery Today, headline and ¶1: 'AI Use in Academic Papers? There's a Site for That Too'; 'There's also one tracking AI use in academic papers'); B7 (academ-ai.info/about: 'suspected instances of AI being used to author research without appropriate declaration')"
+    }
+  ],
+  "classes_note": "One class, sourced from the field by locus: Academ-AI as a documentation of undeclared AI use in academic publishing, beside other trackers the field names (Retraction Watch's list, PubPeer, Charlotin's hallucination cases: B5 §2.1, B8 ¶1–2). No field source places Academ-AI in a class of the archive's own (aggregators of machine-mediated reception work is the MMRS record's class, an archive source, ledgered as MMRS claims and not run as an O-class here, since the brief confines classes to what B sources). The aliases are the entity's name (hyphenated, and spaced), its domain, its dataset paper's arXiv number and its operator's name. 'AcademAI', 'Academi.AI' and 'Academiq' are homonyms and are not aliases; the hyphen or space is required. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on Academ-AI, or applies an archive category to the documentation of undeclared AI use in scholarship as a class; a bare mention, a link list, or a sentence on undeclared AI use as such (the database's object, not its class) is not a claim on the entity.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'academ-ai' (academ-ai-aio-20261029, OBS-e884288abc5d, ADDR-b459d7aa5026), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the MMRS meta-aggregator record) are ledgered beside the deposits as CAP-1-NN and MMRS-NN."
+}

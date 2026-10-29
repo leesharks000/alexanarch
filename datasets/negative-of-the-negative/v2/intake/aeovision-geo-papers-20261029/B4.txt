@@ -1,0 +1,389 @@
+TITLE: GEO Research — Papers Behind AI Search Visibility
+
+Skip to main content
+
+GeoReadyv4.19.8
+
+Tools
+AuditFree GEO audit of any URLCompareScore your site against anotherAnalyze competitorsBenchmark several domains at onceChatGPT visibilityCheck whether your site is ready for AI answersPerplexity citationSee whether AI answers cite your domainAI SEO auditFree ChatGPT and Perplexity readiness auditAI citation checkerIs your brand cited by AI? Free checkllms.txt generatorFree AI-ready llms.txt from your sitemap
+
+Learn
+GuidesPractical AI visibility guidesDocsGEO Optimizer technical referenceBest GEO toolsHow to choose a GEO toolResearchPrinceton KDD + AutoGEOMethodologyHow GEO scores are calculatedState of GEOLive benchmark of audited sitesGEO Readiness Manual160-page technical PDF guideRoadmapWhat's coming nextManifestoWhy we built GeoReady
+
+Compare
+RankScaleRankScale vs GeoReady: monitoring, engines, pricingGoodie AIGoodie vs GeoReady: revenue attribution & opennessAEO VisionAEO Vision vs GeoReady: engines, tiers, transparencyProfoundProfound vs GeoReady: monitoring depth, scoringOtterlyOtterly vs GeoReady: AI visibility dashboardsVeesieVeesie vs GeoReady: GEO monitoring, engines, EUR/USDSemrush AI ToolkitSemrush vs GeoReady: suite vs open engineOpen-source rivalsOpen-source GEO optimizer: MIT, self-host, CLI, transparent
+
+Pricing
+Get started
+
+Menu
+
+Pricing: plans from $0
+
+Free audit · Pro · Agency
+
+Tools
+
+AuditFree GEO audit of any URLCompareScore your site against anotherAnalyze competitorsBenchmark several domains at onceChatGPT visibilityCheck whether your site is ready for AI answersPerplexity citationSee whether AI answers cite your domainAI SEO auditFree ChatGPT and Perplexity readiness auditAI citation checkerIs your brand cited by AI? Free checkllms.txt generatorFree AI-ready llms.txt from your sitemap
+
+Learn
+
+GuidesPractical AI visibility guidesDocsGEO Optimizer technical referenceBest GEO toolsHow to choose a GEO toolResearchPrinceton KDD + AutoGEOMethodologyHow GEO scores are calculatedState of GEOLive benchmark of audited sitesGEO Readiness Manual160-page technical PDF guideRoadmapWhat's coming nextManifestoWhy we built GeoReady
+
+Compare
+
+RankScaleRankScale vs GeoReady: monitoring, engines, pricingGoodie AIGoodie vs GeoReady: revenue attribution & opennessAEO VisionAEO Vision vs GeoReady: engines, tiers, transparencyProfoundProfound vs GeoReady: monitoring depth, scoringOtterlyOtterly vs GeoReady: AI visibility dashboardsVeesieVeesie vs GeoReady: GEO monitoring, engines, EUR/USDSemrush AI ToolkitSemrush vs GeoReady: suite vs open engineOpen-source rivalsOpen-source GEO optimizer: MIT, self-host, CLI, transparent
+
+Get started freeLog inView on GitHub
+
+The research foundation behind AI visibility scoring.
+
+GEO Optimizer · Research
+
+Built on published research and our own documented analysis, not marketing claims. The weights are a considered starting point, not a law of nature.
+
+Last updated: September 2026
+
+Papers
+
+Research patterns that shape the scoring model.
+
+Benchmarks
+
+Evidence from retrieval and answer behavior.
+
+Rules
+
+Auditable checks that map evidence to action.
+
+To turn this research into practice, seewhat Generative Engine Optimization is, the AI visibility checklist, the GEO vs SEO comparison, and thellms.txt implementation guide. To see how this evidence becomes the published scoring weights, read thescoring methodology.
+
+Citation uplift by methodKDD 2024
+
+Cite Sources+115%
+
+Quotations+41%
+
+Statistics+40%
+
+Fluency+24%
+
+Measured visibility gain in AI-generated answers — the signals GEO Optimizer scores.
+
+source: arXiv 2311.09735 · KDD 2024
+
+src/lib/researchContent.ts · typeResearch paperBenchmarkIndustry reportInternal analysis
+
+Sources and findings
+Traceable scoring
+Read the manifesto
+
+Research paperKDD 2024 · 2024
+
+GEO: Generative Engine Optimization
+
+Aggarwal et al. — Princeton, Georgia Tech, Allen Institute for AI, IIT Delhi
+
+Finding
+
+Coined the term GEO and introduced GEO-bench (10,000 queries across 9 domains). Tested 9 content strategies and showed that adding quotations, statistics, and cited sources measurably raises how much of an answer a source contributes. The headline gains are a relative maximum on one metric (position-adjusted word count) and are measured with the source already present in the model’s context.
+
+How GEO Optimizer uses it
+
+The scoring engine’s categories (robots.txt, llms.txt, schema, meta, content, signals, AI discovery, brand entity) and the citability suite are derived from this signal taxonomy. The Google AI readiness category follows Google’s own published documentation instead. Direct quotations and concrete statistics carry the most weight in the content checks.
+
+Key metrics
+
+Cite Sources
+
++27–115%
+
+Quotations
+
++41%
+
+Statistics
+
++33%
+
+Fluency
+
++29%
+
+Technical Terms
+
++18%
+
+Authority
+
++16%
+
+Readability
+
++14%
+
+Unique Words
+
++7%
+
+Keyword Stuffing
+
+~0%
+
+Read paper
+
+Research paperarXiv · 2026
+
+A Critical Survey of Generative Engine Optimization (2023–2026)
+
+O. Martinez
+
+Finding
+
+Reviews 45 GEO studies across a Nov 2023 – Jul 2026 window and grades the evidence. Strong support: query–document topical relevance and position within the retrieved context are the dominant citation levers, and generative engines differ substantially in their source ecosystems. Weak or unproven: no reviewed technique shows a stable, cross-platform causal effect on organic discoverability or on downstream clicks and conversions. The "+40% visibility" figure is reframed as a conditional relative maximum, not a universal rank gain.
+
+How GEO Optimizer uses it
+
+Confirms the design choice to score machine-readable infrastructure and passage-level structure rather than promise ranking gains. The survey’s "competition erodes individual gains" finding is why GEO Optimizer reports a readiness score, not a projected traffic number.
+
+Read survey
+
+Research paperEMNLP 2023 (Findings) · 2023
+
+Evaluating Verifiability in Generative Search Engines
+
+Liu, Zhang, Liang — Stanford
+
+Finding
+
+Human audit of four generative search engines. On average only 51.5% of generated sentences are fully supported by their citations, and only 74.5% of citations actually support the statement they are attached to. Fluent answers routinely contain unsupported claims.
+
+How GEO Optimizer uses it
+
+Motivates the citability checks that reward self-contained, quotable statements with inline evidence — the passages an engine can attribute cleanly — and the negative-signal checks that flag thin or unsourced content.
+
+Read paper
+
+Research paperarXiv · 2026
+
+How Generative AI Disrupts Search: An Empirical Study of Google Search, Gemini, and AI Overviews
+
+Finding
+
+Large-scale audit of Google Search, AI Overviews, and Gemini. AI Overviews surface a markedly different set of sources than the organic results on the same query, cross-surface overlap is low, and answers change on repeated runs for the same query.
+
+How GEO Optimizer uses it
+
+Underpins the "audit recurring, not once" guidance and the State of GEO methodology: each monthly cohort is treated as an independent sample, and re-audits are expected to move as engines update.
+
+Read paper
+
+Research paperarXiv · 2026
+
+Don’t Measure Once: Measuring Visibility in AI Search (GEO)
+
+Schulte, Bleeker, Kaufmann
+
+Finding
+
+AI-search visibility is a distribution, not a single value. Across four engines (ChatGPT, Gemini, Google AI Mode, Perplexity) over a 45–46 day window, the day-to-day Jaccard similarity of cited sources averaged 0.34–0.42, and 57.8% of ChatGPT runs returned no citations. A one-shot check is an unreliable estimate. The data come from Swiss-German verticals, so the authors caution against generalising.
+
+How GEO Optimizer uses it
+
+Directly shapes the State of GEO benchmark (aggregate distributions, medians and percentiles rather than point claims) and the monitoring product, which runs scheduled repeat checks and tracks score history.
+
+Read paper
+
+Research paperarXiv · 2026
+
+Quantifying Uncertainty in AI Visibility: A Statistical Framework for Generative Search Measurement
+
+Finding
+
+Proposes treating citation-visibility metrics as sample estimators of an underlying response distribution, with confidence intervals and a minimum number of runs needed before a visibility claim is statistically meaningful.
+
+How GEO Optimizer uses it
+
+Informs how the score-stability figure on the methodology page is reported (measured over thousands of back-to-back audit pairs) and why single-audit deltas are described as directional.
+
+Read paper
+
+Research paperarXiv preprint · 2025
+
+What Generative Search Engines Like and How to Optimize Web Content Cooperatively (AutoGEO)
+
+Carnegie Mellon University
+
+Finding
+
+Learns generative-engine preferences automatically and rewrites content to match them, reporting an average improvement of about 36% over the strongest Princeton method (about 21% for the smaller AutoGEO-Mini) while preserving answer utility. Cooperative, semantically explicit content earns a 35–60% higher citation rate than adversarial or terse equivalents.
+
+How GEO Optimizer uses it
+
+Validates the "cooperative, explicit, machine-readable" direction of the fixer layer (llms.txt, schema, meta, AI discovery generation) over adversarial rewriting, and the choice to generate structure rather than manipulate phrasing.
+
+Read paper
+
+BenchmarkarXiv · 2025
+
+E-GEO: A Testbed for Generative Engine Optimization in E-Commerce
+
+Bagga et al.
+
+Finding
+
+Of 15 common GEO heuristics tested on e-commerce content, 10 were neutral or negative. Systematic optimization converges on domain-agnostic structural improvements rather than any single copy trick.
+
+How GEO Optimizer uses it
+
+Reinforces scoring structure (headings, lists, answer-first blocks, schema) over tactic-of-the-month advice, and the e-commerce checks that focus on machine-readable product and offer data.
+
+Read paper
+
+BenchmarkarXiv · 2025
+
+C-SEO Bench: Does Conversational SEO Work?
+
+Puerto, Gubri, Green, Oh, Yun — Parameter Lab / Tübingen
+
+Finding
+
+First benchmark to test conversational-SEO methods across multiple tasks, domains, and competing actors. Most current C-SEO methods are ineffective or actively hurt document ranking, and the few positive effects erode as more documents adopt the same method.
+
+How GEO Optimizer uses it
+
+Used to validate the citability score and to keep the engine focused on durable structural signals. The "gains erode under adoption" result is why GEO Optimizer scores readiness rather than a competitive edge.
+
+Read paper
+
+Research paperEMNLP 2024 · 2024
+
+Ranking Manipulation for Conversational Search Engines
+
+Pfrommer et al. — UC Berkeley
+
+Finding
+
+Prompt injection hidden in a document can move a target source up roughly 3 ranks in a conversational search engine (tested on Perplexity Sonar). Retrieved content is an attack surface: what a page says can influence the ranking of the answer it appears in.
+
+How GEO Optimizer uses it
+
+Drives the prompt-injection pattern detection in the audit (instructions aimed at AI crawlers, hidden directives) and the negative-signal checks that flag manipulative content.
+
+Read paper
+
+Research paperarXiv · 2024
+
+Adversarial Search Engine Optimization for Large Language Models
+
+Nestaas, Debenedetti, Tramèr — ETH Zürich
+
+Finding
+
+Preference Manipulation Attacks: crafted website or plugin content tricks an LLM into promoting the attacker and discrediting competitors. Demonstrated on production Bing and Perplexity and on GPT-4 / Claude plugins. Everyone is incentivised to attack, which degrades answers for all users.
+
+How GEO Optimizer uses it
+
+Sets the boundary GEO Optimizer stays inside: it audits and fixes infrastructure and structure, and explicitly does not generate injection payloads or manipulative copy. Detects these patterns as negative signals instead.
+
+Read paper
+
+Internal analysisGEO Optimizer analysis · 2026
+
+Schema Markup & AI Citations
+
+Finding
+
+In GeoReady’s audited sample, sites with valid JSON-LD (Organization, WebSite, Article) score higher on the GEO rubric on average than sites with none. That is an association inside a self-selected sample, and the score includes the schema category itself, so it does not show that structured data causes citations. The size of the gap is not published here.
+
+How GEO Optimizer uses it
+
+Drives the Schema JSON-LD scoring category (max 14 points in rubric v2, 16 in v1) and the structured-data fixer that generates complete @context + @type + sameAs blocks.
+
+See the benchmark data
+
+BenchmarkGeoReady · 2026
+
+State of GEO — Monthly AI Search Readiness Benchmark
+
+Finding
+
+GeoReady’s own monthly benchmark of audited domains: average and median GEO score, llms.txt and schema adoption, band distribution, and the biggest readiness gaps, tracked month over month.
+
+How GEO Optimizer uses it
+
+Provides the empirical baseline for the readiness bands, the negative-signal thresholds, and the "what to fix first" ordering in every audit.
+
+Read the latest edition
+
+Internal analysisGEO Optimizer analysis · 2026
+
+AI Mode Citation Factors
+
+Finding
+
+The on-page and technical factors the audit checks because they decide whether an AI system can fetch, parse and quote a page: crawlability, passage-level structure, entity signals, and freshness. Whether each one changes which sources an engine cites is not established; the audit measures readiness, not citation outcomes.
+
+How GEO Optimizer uses it
+
+Mapped into the scoring categories and the technical-signal checks (X-Robots-Tag, noai directives, crawl-delay, canonical, HTTPS).
+
+GEO Optimizer focuses on infrastructure optimization — crawlability, structured data, meta signals, and content architecture — not on content manipulation, keyword stuffing, or prompt injection. The published benchmarks (C-SEO Bench, E-GEO) and the 2026 GEO survey all point the same way: durable gains come from structure and relevance, and copy tricks erode as everyone adopts them.
+
+GeoReadyv4.19.8
+
+Open-source AI search visibility audit and monitoring. Built in Italy by Juan Camilo Auriti.
+
+Product
+
+Audit
+
+Compare
+
+Analyze competitors
+
+AI citation checker
+
+Pricing
+
+Resources
+
+Best GEO tools
+
+Guides
+
+State of GEO
+
+Methodology
+
+GitHub
+
+Docs
+
+PyPI
+
+Company
+
+About
+
+Transparency
+
+Instagram
+
+YouTube
+
+Privacy
+
+Cookies
+
+Terms
+
+The Book
+
+AI Search Engineering
+
+Google non è più l'unica porta d'accesso ai clienti. Manuale tecnico per far citare il tuo sito da LLM e agenti AI, con protocolli validati su AutoGEO (preprint arXiv:2510.11438) e KDD 2024.992 pagine, paperback e Kindle.
+
+Get the book
+
+Built in Italy by Juan Camilo Auriti. Designed for the global AI search ecosystem. Powered by Princeton KDD 2024 + AutoGEO (arXiv:2510.11438, preprint) research.

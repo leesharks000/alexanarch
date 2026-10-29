@@ -1,0 +1,1360 @@
+{
+ "row": "oecd-ai-incidents-monitor",
+ "address": "oecd ai incidents and hazards monitor",
+ "addresses": [
+  "oecd ai incidents and hazards monitor"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the PDFs' text (pdftotext), the oEmbed title, or the card's snippet for the unreachable card; 64/64 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B6, six cards); 'own_page', the entity's own pages the MMRS record cites that T did not surface (B7, the holding oecd.ai/en/incidents/2025-03-11-8537); the MMRS record's two own-page sources (oecd.ai/en/incidents, oecd.ai/en/incidents-methodology) are cards B1 and B3 and are carried once, as cards; 'wikipedia', no article (W1) and the OECD article, which does not mention the monitor (W2). Unreachable: B2 (OECD topic page, 403). B4's card page answered 403 and the same publication was read as its PDF; B5 is the definitions report's PDF; B6 is read by its oEmbed title only.",
+ "lineage_note": "Lineages: what it is (B1, B4); maker (B3, B5); purpose (B1, B2, B3); definitions (B3, B5); graded terms (B5); the unit (B1); intake (B3, B4); method (B3); the record machine-written (B1, B3); cadence (B3); count (B1, B3); trend (B1, B4); themes (B4); limits, a subset (B3, B4); limits, disclaimers (B1, B3); next steps (B3, B4); place, the framework and proxies (B4); name and terms (B3, B4); neighbours (B5); holding (B7); reception, video (B6). The methodology page's definitions restate the May 2024 paper's (one lineage, B5 the earlier).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped by the composer's html-to-text (python html.parser); B4.pdf and B5.pdf with B4.pdf.txt and B5.pdf.txt by pdftotext; B2.html and B4-html-403.html the 403 responses; B6.json the oEmbed response; W1.html, W1.api.json, W1-search.html, W1-search2.html, W2.wiki, W2.html); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; also an own page the MMRS record cites (oecd.ai/en/incidents: count, self-description)",
+   "card": "OECD AI Policy Observatory — OECD AI Incidents Monitor, an evidence base for trustworthy AI",
+   "url": "https://oecd.ai/en/incidents",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B1.html",
+     "sha256": "e1681d645755e7c4094dd031225d55214520c0b6b0afdac1b6d6dc361430c679"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B1.txt",
+     "sha256": "74cf4b7530591ace479bca49d0af9594fbda19d94a0fe781eeb9aef049c13d7f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:49Z",
+    "http": 200,
+    "url": "https://oecd.ai/en/incidents",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B1.html",
+    "raw_sha256": "e1681d645755e7c4094dd031225d55214520c0b6b0afdac1b6d6dc361430c679",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B1.txt"
+    ]
+   },
+   "card_title": "OECD AI Incidents Monitor, an evidence base for trustworthy AI",
+   "card_snippet": "Evolution of incidents and hazard by affected stakeholder As percentage of total AI events Note: An AI incident or hazard can be reported by one or more news ar...",
+   "card_note": null,
+   "names_operator": "yes ('OECD.AI' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the page title is the card's title; the request redirected to the default search view (search_terms=[], from_date=1900-10-29, to_date=2026-10-29, order_by=date, num_results=20); the card snippet's chart caption and note are on the page ('Evolution of incidents and hazard by affected stakeholder', 'As percentage of total AI events', the note F6). The result list is the day's (20 items, each with an '[AI generated]' summary and explanation); only the header, introduction, note, count and two explanations are ledgered"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "OECD — AI risks and incidents",
+   "url": "https://www.oecd.org/en/topics/ai-risks-and-incidents.html",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B2.html",
+     "sha256": "54fda3deeb29a2f2dac931dfcb8951b91e2c95ffe18b43647dc8a6662c5b2a2d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:47Z",
+    "http": 403,
+    "url": "https://www.oecd.org/en/topics/ai-risks-and-incidents.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B2.html",
+    "raw_sha256": "54fda3deeb29a2f2dac931dfcb8951b91e2c95ffe18b43647dc8a6662c5b2a2d",
+    "text": []
+   },
+   "unreachable": true,
+   "card_title": "AI risks and incidents",
+   "card_snippet": "All actors must monitor AI incidents and hazards to mitigate risks As AI adoption continues to grow, successful risk mitigation will require a solid evidence ba...",
+   "card_note": null,
+   "names_operator": "no ('OECD.AI' absent from the card title and snippet; page unread)",
+   "names_archive": "no (card title and snippet; page unread)",
+   "note": "unreachable: URL found by WebSearch (title and site: oecd.org/en/topics/ai-risks-and-incidents); HTTP 403 (a Cloudflare 'Just a moment...' challenge page) on three requests 2026-10-29 between 05:07 and 05:08:47Z (.html, /sub-issues/ and extensionless paths); no further retry, the challenge not circumvented; the card snippet stands as its only text. oecd.ai/en/site/incidents (fetched, not saved as a source) is a different page and does not carry the snippet"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3; also an own page the MMRS record cites (oecd.ai/en/incidents-methodology: method, definitions)",
+   "card": "OECD AI Policy Observatory — Overview and methodology of the AI Incidents and Hazards Monitor - OECD.AI",
+   "url": "https://oecd.ai/en/incidents-methodology",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B3.html",
+     "sha256": "26400e79e67de5eeed8d471a5ddfc5e61a71156f0d8614bade6dd6f6ad18b066"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B3.txt",
+     "sha256": "edfcba595f3fb6b8c8696c92b6ea402d8a9c0c8d323dce34b1ed4894606df5cc"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:50Z",
+    "http": 200,
+    "url": "https://oecd.ai/en/incidents-methodology",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B3.html",
+    "raw_sha256": "26400e79e67de5eeed8d471a5ddfc5e61a71156f0d8614bade6dd6f6ad18b066",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B3.txt"
+    ]
+   },
+   "card_title": "Overview and methodology of the AI Incidents and Hazards Monitor - OECD.AI",
+   "card_snippet": "Overview The AI Incidents and Hazards Monitor (AIM) was initiated and is being developed by the OECD.AI expert group on AI incidents with the support of the Pat...",
+   "card_note": null,
+   "names_operator": "yes ('OECD.AI' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card snippet is the page's Overview ¶1 (F11); the page gives no count of themes (CAP-1-06 confirmed); its summary table gives two daily rates (F32 about 10, F33 about 30); 'Please find this archive' (the pre-November-2024 method) links an archive not fetched"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "OECD — Trends in AI incidents and hazards reported by the media | OECD",
+   "url": "https://www.oecd.org/en/publications/trends-in-ai-incidents-and-hazards-reported-by-the-media_4f5ff43c-en.html",
+   "kind": "Overview card (OECD Artificial Intelligence Papers No. 53, February 2026; read as its PDF)",
+   "surfaced_by_T": [
+    {
+     "slug": "oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4-html-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B4-html-403.html",
+     "sha256": "0bbd53ffd919f2ffebdf71abe9454306a939b1ed9b18cce4911898ce3c482208"
+    },
+    "B4.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B4.pdf",
+     "sha256": "aab2727da192624f766ed676a616b3de376ed92430ad3826063e291d951d1ce5"
+    },
+    "B4.pdf.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B4.pdf.txt",
+     "sha256": "ec4d42002736b0233c5c4def2222bc2fece78a8031274c9b8e3eacc410d0467d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:47Z",
+    "http": 200,
+    "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/trends-in-ai-incidents-and-hazards-reported-by-the-media_7c824ca9/4f5ff43c-en.pdf",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B4.pdf",
+    "raw_sha256": "aab2727da192624f766ed676a616b3de376ed92430ad3826063e291d951d1ce5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B4.pdf.txt"
+    ]
+   },
+   "card_title": "Trends in AI incidents and hazards reported by the media | OECD",
+   "card_snippet": "8 The OECD.AI Incidents and Hazards Monitor (AIM) tracks these media-reported AI incidents and hazards in real-time and leverages the OECD common reporting fram...",
+   "card_note": null,
+   "names_operator": "yes ('OECD.AI' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's title is the publication's HTML page on oecd.org, which answered HTTP 403 (Cloudflare challenge) at 05:08:47Z (B4-html-403.html; also oecd-ilibrary.org and read.oecd-ilibrary.org, 403); the same publication's PDF, linked from its OECD.AI page (oecd.ai/en/ai-publications/trends-in-ai-incidents-and-hazards-reported-by-the-media), was fetched from oecd.org (HTTP 200, application/pdf, 36 pages; PDF title 'Trends in AI incidents and hazards reported by the media (EN)', DOI 10.1787/4f5ff43c-en) and its text extracted with pdftotext. The card's snippet is the PDF's executive summary (page 8; F38). The paper is CC BY 4.0 (F47); quoted in short spans"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5 (the OECD's May 2024 definitions report, named in the task)",
+   "card": "OECD — Defining AI incidents and related terms (EN)",
+   "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/defining-ai-incidents-and-related-terms_88d089ec/d1a8d965-en.pdf",
+   "kind": "Overview card (OECD Artificial Intelligence Papers No. 16, May 2024; PDF)",
+   "surfaced_by_T": [
+    {
+     "slug": "oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.pdf": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B5.pdf",
+     "sha256": "9c46e00f1b3ff6de1aeb99564df9e57cc53b60db50e412c8048b213836af45e1"
+    },
+    "B5.pdf.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B5.pdf.txt",
+     "sha256": "97db457717a855e24cca3ab852d7e47fe71ff40a3aecdc8a8c4b86358c880f87"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:48Z",
+    "http": 200,
+    "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/defining-ai-incidents-and-related-terms_88d089ec/d1a8d965-en.pdf",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B5.pdf",
+    "raw_sha256": "9c46e00f1b3ff6de1aeb99564df9e57cc53b60db50e412c8048b213836af45e1",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B5.pdf.txt"
+    ]
+   },
+   "card_title": "Defining AI incidents and related terms (EN)",
+   "card_snippet": "OECD May 2024 Report No. 16 defines AI incident terminology for reporting frameworks and the AI Incidents Monitor (AIM), approved 14 Mar 2024 by the Digital Pol...",
+   "card_note": null,
+   "names_operator": "yes ('OECD.AI' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's title is the PDF's own title metadata ('Defining AI incidents and related terms (EN)', DOI 10.1787/d1a8d965-en), so the card is the PDF; the URL is the PDF link on the paper's OECD.AI page (oecd.ai/en/ai-publications/defining-ai-incidents-and-related-terms); the publication's HTML page on oecd.org answered 403. The card snippet is a summary ('defines AI incident terminology … approved 14 Mar 2024 by the Digital Pol...'), its facts in F48–F49. 15 pages; text by pdftotext"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6 (video, 29:48)",
+   "card": "YouTube·International Association for Safe & Ethical AI — Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell",
+   "url": "https://www.youtube.com/watch?v=kSuVPwr5Ll0",
+   "kind": "Overview card (video)",
+   "surfaced_by_T": [
+    {
+     "slug": "oecd-ai-incidents-and-hazards-monitor-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B6.json",
+     "sha256": "5a063beb92dbc8496affd425301302f30259d11aa5d4aa0b2cca557e0e8d57f5"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B6.txt",
+     "sha256": "8c9f8a79bff55d6b7979d200bdd7d2a6752644483f88c701df0d80618d31906c"
+    },
+    "B6-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B6-search.html",
+     "sha256": "0ef80d04d98bf92b8980a04b4ed318131ef2a9f0465499c80167cac234ba940b"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:49Z",
+    "http": 200,
+    "url": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=kSuVPwr5Ll0&format=json",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B6.json",
+    "raw_sha256": "5a063beb92dbc8496affd425301302f30259d11aa5d4aa0b2cca557e0e8d57f5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B6.txt"
+    ]
+   },
+   "card_title": "Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell ...",
+   "card_snippet": null,
+   "card_note": "video, 29:48",
+   "names_operator": "no ('OECD.AI' absent from the oEmbed title and the card)",
+   "names_archive": "no (oEmbed title and card)",
+   "note": "located on YouTube's results page for the card title (B6-search.html, 05:09:3xZ: kSuVPwr5Ll0, length 29:48, the card's duration); oEmbed title adds '| IASEAI 2025'; no transcript fetched; admitted by title (§3.1(a)). The same video is the AI Incident Database row's B14; the Capture Registry's record of that card (what-counts-as-an-incident-in-the-ai-incident-database-aio-20261029, card 9) notes it 'video, 19m'"
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "own page the MMRS record cites (relation 'holding'); not surfaced by T",
+   "card": "OECD AI Policy Observatory — AI Search Engines Fabricate News Citations, Undermining Publishers (AIM item 2025-03-11-8537)",
+   "url": "https://oecd.ai/en/incidents/2025-03-11-8537",
+   "kind": "own page (an item of the monitor)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B7.html",
+     "sha256": "9edcbeb65fe222f43523c5d6fc97202e09ccb3fd3651b9a23b2ccd7b3ed5915c"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B7.txt",
+     "sha256": "4dc98555510507f272be5da32e42468f466797e0aa45fd7d1a8cfd035a65d05c"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:49Z",
+    "http": 200,
+    "url": "https://oecd.ai/en/incidents/2025-03-11-8537",
+    "raw": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B7.html",
+    "raw_sha256": "9edcbeb65fe222f43523c5d6fc97202e09ccb3fd3651b9a23b2ccd7b3ed5915c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/B7.txt"
+    ]
+   },
+   "names_operator": "yes ('OECD.AI' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the item page: title, '[AI generated]' summary and label explanation, principles, industries, stakeholders, harm types, 25 articles (2025-03-11 to 2025-03-17), each with its own label explanation link. The MMRS record's own-page sources (oecd.ai/en/incidents-methodology, oecd.ai/en/incidents) are cards B3 and B1, carried once, as cards"
+  }
+ ],
+ "wikipedia": [
+  {
+   "id": "W1",
+   "origin": "wikipedia",
+   "result": "no article",
+   "checked": "2026-10-29 05:09:57–05:22:03 UTC",
+   "requests": [
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=OECD_AI_Incidents_and_Hazards_Monitor&action=raw&redirect=no",
+     "http": 404
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=OECD_AI_Incidents_Monitor&action=raw",
+     "http": 404
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=AI_Incidents_Monitor&action=raw",
+     "http": 404
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=AI_Incidents_and_Hazards_Monitor&action=raw&redirect=no",
+     "http": 404
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=OECD.AI&action=raw",
+     "http": 404
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=OECD_AI_Policy_Observatory&action=raw",
+     "http": 404
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?title=OECD_AI_Principles&action=raw&redirect=no",
+     "http": 404
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/OECD_AI_Incidents_and_Hazards_Monitor",
+     "http": 404,
+     "file": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/W1.html",
+     "sha256": "b373c35b4f50e7dbf4194f3fe68ec39776f5013f9eb221d6fca1828ed1863aa1",
+     "says": "Wikipedia does not have an article with this exact name."
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&format=json&titles=OECD_AI_Incidents_and_Hazards_Monitor|OECD_AI_Incidents_Monitor|AI_Incidents_Monitor|AI_Incidents_and_Hazards_Monitor|OECD.AI|OECD_AI_Policy_Observatory|OECD_AI_Principles|AI_Incident_Monitor|OECD_AI_Incident_Monitor|AIM_(OECD)",
+     "http": 200,
+     "file": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/W1.api.json",
+     "sha256": "c93f211697c66593a7a5fb233e2d02603098fd958505a66874f313d7825c8aca",
+     "says": "all ten titles 'missing' (two earlier attempts answered 429, rate-limited)"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?search=%22AI+Incidents+Monitor%22&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+     "http": 200,
+     "file": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/W1-search.html",
+     "sha256": "b0afefd8289d609531dc132d24047e0c445b3af3fee6f9144d09e9ea3036960a",
+     "says": "There were no results matching the query."
+    },
+    {
+     "url": "https://en.wikipedia.org/w/index.php?search=%22OECD+AI+Incidents%22&title=Special%3ASearch&profile=advanced&fulltext=1&ns0=1",
+     "http": 200,
+     "file": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/W1-search2.html",
+     "sha256": "1864aa0f81d0d902e3ea8851111b362f4d621872c5d950850a5860ee9dfe4973",
+     "says": "There were no results matching the query."
+    }
+   ],
+   "redirect": "none (no title variant resolves; no redirect page)",
+   "note": "No article for the monitor, for OECD.AI or for the OECD AI Policy Observatory exists on English Wikipedia on 2026-10-29. A full-text API search for 'OECD.AI' (05:09:57Z, not saved; 18 hits) returned only articles citing oecd.ai pages as references, several of them items of the monitor (e.g. 'OECD AI Monitor' as the work cited in 'Emily Hart (virtual influencer)' and 'Artificial intelligence controversies'; oecd.ai items in 'Halupedia', 'Daisy Dixon', 'Google Chrome'): the encyclopedia takes the monitor's machine-written item pages as sources and has no page for the monitor. Not ledgered (the search response was not saved verbatim)."
+  },
+  {
+   "id": "W2",
+   "origin": "wikipedia",
+   "result": "the OECD article: no mention of the monitor",
+   "url": "https://en.wikipedia.org/w/index.php?title=OECD&action=raw",
+   "http": 200,
+   "files": {
+    "W2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/W2.wiki",
+     "sha256": "03ca69ee493875ab72e364695ebebf19fc17a7e980e8cf2d1a4b5bd7c799744e"
+    },
+    "W2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/W2.html",
+     "sha256": "0f6759444535f525951c5fe2351c9027debb843eaeaf83b8d5a3ffddc00f836b"
+    },
+    "W2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/oecd-ai-incidents-monitor-20261029/W2.txt",
+     "sha256": "4d938f4bb993922e7e9f839a4ef4cd04a8f30c10e3d9d4cf0f6da635d9250105"
+    }
+   },
+   "fetched_at": "2026-10-29T05:10:57Z",
+   "note": "raw wikitext (85,737 bytes) and the rendered article (https://en.wikipedia.org/wiki/OECD, HTTP 200): no occurrence of 'incident', 'OECD.AI', 'AI Policy Observatory' or 'AI Principles'; artificial intelligence appears once, in the OECD Observer paragraph (its last issue, 2019, 'looking ahead at artificial intelligence'). The OECD's article does not mention the monitor or OECD.AI."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header (subtitle under 'AIM: AI Incidents and Hazards Monitor')",
+   "quote": "Automated media discourse monitor of AI incidents and hazards (Beta)",
+   "claim": "the monitor's self-description: an automated media discourse monitor of AI incidents and hazards, in beta",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an automated media monitor",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74cf4b7530591ace…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "introduction ¶1 s2",
+   "quote": "The OECD AI Incidents and Hazards Monitor (AIM) documents AI incidents and hazards to help policymakers, AI practitioners, and all stakeholders worldwide gain valuable insights into the risks and harms of AI systems.",
+   "claim": "its purpose: documenting incidents and hazards for policymakers, practitioners and stakeholders",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: an evidence base for policy",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74cf4b7530591ace…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "introduction ¶1 s3",
+   "quote": "Over time, AIM will help to show risk patterns and establish a collective understanding of AI incidents and hazards and their multifaceted nature, serving as an important tool for trustworthy AI.",
+   "claim": "its expected use: to show risk patterns over time and a collective understanding of incidents and hazards",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: an evidence base for policy",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74cf4b7530591ace…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "introduction ¶1 s4",
+   "quote": "AI incidents seem to be getting more media attention lately, but they've actually gone down as a share of all AI news (see chart below!).",
+   "claim": "the page's headline trend: more attention, a falling share of all AI news",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "trend: counts and shares",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74cf4b7530591ace…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "introduction ¶2",
+   "quote": "The information displayed in the AIM should not be reported as representing the official views of the OECD or of its member countries.",
+   "claim": "a limit on its standing: the monitor's information is not the OECD's official view",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits: the monitor's own disclaimers",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74cf4b7530591ace…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "chart block, note",
+   "quote": "Note: An AI incident or hazard can be reported by one or more news articles covering the same event. Data processing powered by Microsoft Azure using data from Event Registry.",
+   "claim": "the unit is the event, reported by one or more articles; processing on Microsoft Azure with Event Registry data",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: the event and its articles",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74cf4b7530591ace…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "results line",
+   "quote": "Results: About 18579 incidents & hazards",
+   "claim": "the count on 2026-10-29: about 18,579 incidents and hazards",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74cf4b7530591ace…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "result list, the first item's explanation (as fetched 2026-10-29)",
+   "quote": "Why's our monitor labelling this an incident or hazard? … Therefore, the event is best classified as an AI Hazard due to the credible risk of AI exacerbating economic disparities and job losses in the future.[AI generated]",
+   "claim": "each listed item carries an explanation of its label, marked '[AI generated]', as are its summaries",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the record: machine-written",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74cf4b7530591ace…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "result list, an item's explanation (as fetched 2026-10-29)",
+   "quote": "It is not Complementary Information because the article is not about responses or updates to a past incident, nor is it Beneficial Use or Unrelated.[AI generated]",
+   "claim": "the machine-written explanations rule out further classes by name: Complementary Information, Beneficial Use, Unrelated",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: machine-written",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74cf4b7530591ace…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card snippet (page HTTP 403)",
+   "quote": "All actors must monitor AI incidents and hazards to mitigate risks As AI adoption continues to grow, successful risk mitigation will require a solid evidence ba...",
+   "claim": "the OECD's topic page: all actors must monitor incidents and hazards; risk mitigation needs an evidence base",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose: an evidence base for policy",
+   "date": "2026-10-29 (card snippet; page unreachable)",
+   "quote_ok": true,
+   "checked_against": "card snippet (the page answered 403)"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Overview ¶1 s1",
+   "quote": "The AI Incidents and Hazards Monitor (AIM) was initiated and is being developed by the OECD.AI expert group on AI incidents with the support of the Patrick J. McGovern Foundation.",
+   "claim": "its maker: initiated and developed by the OECD.AI expert group on AI incidents, supported by the Patrick J. McGovern Foundation",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "maker: the OECD.AI expert group, McGovern support",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Overview ¶1 s2",
+   "quote": "The goal of the AIM is to track actual AI incidents and hazards, as defined by the OECD, in real time and provide the evidence-base to inform related AI policy discussions.",
+   "claim": "its goal: to track incidents and hazards as the OECD defines them, in real time, as an evidence base for policy",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: an evidence base for policy",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Overview ¶2 s1–2",
+   "quote": "The AIM detects AI incidents and hazards from reputable international news outlets. The data is provided by Event Registry (ER), a news intelligence platform that monitors and aggregates world news by processing over 150 000 news articles daily.",
+   "claim": "intake: reputable international news outlets; data from Event Registry, which processes over 150,000 articles a day",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: Event Registry's news events",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Overview ¶2 s3–5",
+   "quote": "Event Registry detects events, which are clusters of news articles reporting on the same happening. These events are tagged with related concepts. The events provided by Event Registry to AIM are limited to those that include AI concepts.",
+   "claim": "Event Registry clusters articles into events and tags them; only events with AI concepts reach the monitor",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: Event Registry's news events",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Overview ¶3",
+   "quote": "While recognising the likelihood that these incidents and hazards only represent a subset of all AI incidents and hazards worldwide, these publicly reported incidents and hazards nonetheless provide a useful starting point for building the evidence base.",
+   "claim": "its stated limit: the publicly reported incidents and hazards are likely a subset of all, a starting point for the evidence base",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits: a subset of what happens",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Overview ¶4",
+   "quote": "An open submission process following the common reporting framework for AI incidents is currently being developed to complement AI incidents and hazards from news articles. Other next steps include complementing incidents and hazards with court rulings and decisions by supervisory authorities wherever they exist.",
+   "claim": "next steps: an open submission process under the common reporting framework; court rulings and supervisory decisions",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "next steps: open submission, other sources",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Overview ¶5",
+   "quote": "The data collection and analysis for the AIM is done to ensure, to the best extent possible, the reliability, objectivity and quality of the information for AI incidents and hazards.",
+   "claim": "its stated aim for the data: reliability, objectivity and quality to the best extent possible",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: the monitor's own disclaimers",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Definitions ¶1",
+   "quote": "Published in May 2024, the paper Defining AI incidents and related terms, defines an event where the development or use of an AI system results in actual harm as an “AI incident”, while an event where the development or use of an AI system is potentially harmful is termed an “AI hazard”.",
+   "claim": "the methodology page sources its terms to the OECD paper of May 2024: actual harm an incident, potential harm a hazard",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Definitions: AI incident",
+   "quote": "An AI incident is an event, circumstance or series of events where the development, use or malfunction of one or more AI systems directly or indirectly leads to any of the following harms:",
+   "claim": "the methodology page restates the paper's definition of an AI incident, with its four harms (a)–(d)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Definitions: AI hazard",
+   "quote": "An AI hazard is an event, circumstance or series of events where the development, use or malfunction of one or more AI systems could plausibly lead to an AI incident, i.e., any of the following harms:",
+   "claim": "the methodology page restates the paper's definition of an AI hazard",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Definitions: AI system",
+   "quote": "These definitions were built based on the definition of an AI system as described in the OECD recommendation on AI of 2019 and revised in 2024. An AI system is a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments.",
+   "claim": "the definitions rest on the OECD Recommendation's definition of an AI system (2019, revised 2024)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Information Transparency Disclosures: Background",
+   "quote": "Your use of the OECD AI incidents and hazards monitor (previously AI Incidents Monitor) (“AIM”) is subject to the terms and conditions found at www.oecd.org/termsandconditions.",
+   "claim": "its former name, AI Incidents Monitor; its use governed by the OECD's terms and conditions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "name and terms",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Information Transparency Disclosures: Third-Party Information",
+   "quote": "the AIM is populated with news articles from various third-party outlets and news aggregators with which the OECD has no affiliation.",
+   "claim": "its contents are third-party news articles from outlets and aggregators the OECD is not affiliated with",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: the monitor's own disclaimers",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Information Transparency Disclosures: Errors and Omissions",
+   "quote": "The OECD cannot guarantee and does not independently verify the accuracy, completeness, or validity of third-party information provided in the AIM.",
+   "claim": "the OECD does not independently verify the third-party information in the monitor",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: the monitor's own disclaimers",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology ¶1–2",
+   "quote": "Since November 2024, incidents and hazards are identified and added to the AIM through the following steps. Historical incidents and hazards, collected prior to November 2024, are currently being retrospectively annotated using the same methodology to ensure consistency.",
+   "claim": "the present method dates from November 2024; earlier items are being re-annotated with it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: LLM classification since November 2024",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology step 2",
+   "quote": "LLMs are used to classify AI-related events into three categories: AI incidents, AI hazards or unrelated events, as defined above. This classification is based on the event summary provided from Event Registry. The classification follows a two-step process: first, a smaller model (OpenAI’s GPT-4o mini) filters out events that seem unrelated to AI incidents and hazards; next, a larger model (OpenAI’s GPT-4o) reclassifies the remaining events to confirm whether they are incidents or hazards.",
+   "claim": "classification by LLMs into incidents, hazards or unrelated, from Event Registry's summary: GPT-4o mini filters, GPT-4o reclassifies",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "method: LLM classification since November 2024",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology step 3",
+   "quote": "Individual news articles are classified into incidents and hazards using LLMs, following the same process as for events. In this case, however, article content is used instead of event summaries to enhance reliability. … If some articles are classified differently, the event will adopt the most common classification among them.",
+   "claim": "articles are classified by LLMs from their content; the event takes the most common label among its articles",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: LLM classification since November 2024",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology step 5",
+   "quote": "Each event is enriched with relevant metadata, including an event title, summary, the harm type, severity, affected stakeholders, and the country where it occurred, among others. This metadata is LLM-generated (OpenAI’s o3-mini) from the top three articles of each event, selected from different news outlets.",
+   "claim": "each record's title, summary, harm type, severity, stakeholders and country are written by o3-mini from the top three articles",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the record: machine-written",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology step 5, continued",
+   "quote": "Articles are ranked based on their outlets’ ranking in their respective country. This approach ensures a balance between the popularity of the outlets and fair geographical representation. Currently, the summary and metadata are generated at the time the incident or hazard is added to the AIM.",
+   "claim": "the top articles are chosen by their outlets' national ranking; summary and metadata are generated once, when the item is added",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: machine-written",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology step 6",
+   "quote": "Similar events are grouped by analysing their summaries and identifying related events in AIM using cosine similarity. For each new incident or hazard, the top 10 closest summaries (i.e., “embeddings”) from existing events in AIM are identified. An LLM (OpenAI’s o3-mini) is then used to assess whether any of these similar events can be clustered together.",
+   "claim": "grouping: the ten nearest summaries by cosine similarity, then o3-mini decides whether to cluster",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: LLM classification since November 2024",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Update frequency ¶1–2",
+   "quote": "The pipeline runs daily, processing events from one to four days ago. … Articles appearing after this timeframe are likely to be misclassified as a separate event.",
+   "claim": "daily, on events one to four days old; later articles are likely misclassified as a separate event",
+   "modality": "documented",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "cadence: daily, one to four days",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Summary table, Identification and classification",
+   "quote": "On average, about 1 000 AI events are analysed daily, resulting in around 10 AI incidents or hazards.",
+   "claim": "about 1,000 events analysed a day yield about 10 incidents or hazards",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised",
+   "marks": [
+    "internally_inconsistent (B3 states the daily yield two ways: about 10 (F32) and about 30 (F33), both loci cited)"
+   ]
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Summary table, note",
+   "quote": "the AIM detects on average 30 incidents and hazards per day.",
+   "claim": "the AIM detects about 30 incidents and hazards a day (the same page gives about 10 above)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "count",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised",
+   "marks": [
+    "internally_inconsistent (B3: about 30 (F33) against about 10 (F32))"
+   ]
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Methodology, last ¶",
+   "quote": "Prior to November 2024, AI incidents and hazards were classified and included on the AIM using traditional machine learning techniques.",
+   "claim": "before November 2024 the monitor classified with traditional machine learning",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: LLM classification since November 2024",
+   "date": "2026-10-29 (page undated; as fetched; describes the method 'since November 2024')",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 edfcba595f3fb6b8…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "This paper analyses live data from the OECD.AI Incidents and Hazards Monitor (AIM), classifying media reports into 14 themes, including synthetic media, child safety, cyberattacks, privacy, and health. It identifies three distinct patterns of media coverage – increasing, intermittent, and declining – and traces how media attention shifts across themes over time.",
+   "claim": "the 2026 paper analyses the monitor's data, classifying its media reports into 14 themes, with three patterns of coverage",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "themes: the 2026 paper's analysis",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Executive summary ¶5",
+   "quote": "The findings reflect media and public interest rather than comprehensive or systematic tracking of AI incidents and hazards. Importantly, media reports capture only what journalists are aware of and deemed newsworthy.",
+   "claim": "the paper's governing limit: its findings reflect media and public interest, not systematic tracking; media capture only what journalists know and deem newsworthy",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits: a subset of what happens",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Executive summary ¶6",
+   "quote": "Conversely, reliance on media sources may introduce errors of inclusion, as some reported incidents may be mischaracterised, exaggerated, or inaccurately attributed to AI due to limited background or technical understanding.",
+   "claim": "reliance on media may admit errors: incidents mischaracterised, exaggerated or wrongly attributed to AI",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: a subset of what happens",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Executive summary ¶7",
+   "quote": "The OECD.AI Incidents and Hazards Monitor (AIM) tracks these media-reported AI incidents and hazards in real-time and leverages the OECD common reporting framework to categorise them consistently.",
+   "claim": "the paper's account of the monitor: tracking media-reported incidents and hazards in real time, categorised by the common reporting framework",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an automated media monitor",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "§1 Introduction ¶6",
+   "quote": "Currently the data rely on reports from the top 50% of media outlets, based on the Alexa traffic rankings (OECD.AI, 2025[6]). These reports are aggregated by Event Registry, a news intelligence platform which monitors over 150 000 news articles daily.",
+   "claim": "the data rely on the top 50% of outlets by Alexa traffic rank, aggregated by Event Registry",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: Event Registry's news events",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "§1 Introduction ¶8",
+   "quote": "Between 2022 and 2025, the number of AI incidents and hazards reported by the media rose steadily, from 92 to 324 per month on average (Figure 1.1, Panel A). However, their share relative to total AI news declined, from 3.2% in 2022 to around 2.5% in 2025 (Figure 1.1, Panel B).",
+   "claim": "92 to 324 a month between 2022 and 2025; their share of AI news down from 3.2% to about 2.5%",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "trend: counts and shares",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Annex A, Identifying key thematic clusters ¶1",
+   "quote": "LLM-generated summaries of AI incidents and hazards were collected and transformed into a semantic representation capturing the underlying concepts. Using a k-means clustering algorithm, these reports were classified into 25 thematic clusters each capturing semantically similar risk characteristics. … This resulted in 14 distinct themes.",
+   "claim": "the 14 themes were made by clustering the monitor's LLM-generated summaries (k-means, 25 clusters, consolidated to 14)",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "themes: the 2026 paper's analysis",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F42": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Annex A, Clustering ¶2",
+   "quote": "Since these methods gave inconsistent results, the authors chose 25 clusters based on a qualitative keywords review.",
+   "claim": "the number of clusters was chosen by a qualitative keyword review after the statistical tests disagreed",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "themes: the 2026 paper's analysis",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "§2 ¶2",
+   "quote": "To maintain analytical clarity and avoid double counting, each media-reported incident or hazard is assigned to the single most relevant theme based on the available information.",
+   "claim": "one theme per item",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "themes: the 2026 paper's analysis",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "§2, after Figure 2.1",
+   "quote": "These trends do not measure how severe incidents are, the types of harm involved, or the number of affected stakeholders, and should not be read as indicators of these factors.",
+   "claim": "the trends measure attention, not severity, harm type or the number affected",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits: a subset of what happens",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "Executive summary ¶2–4",
+   "quote": "In early 2025, the members of the Global Partnership on AI (GPAI) approved a common framework for reporting AI incidents, designed as an international data-sharing template for public and private organisations across jurisdictions and sectors … At present, there are few public and comparable sources of information on AI incidents and hazards. … Proxy indicators – such as court rulings on AI-related cases or media reports – can offer partial insights into where and what types of incidents are occurring.",
+   "claim": "the common reporting framework (GPAI, early 2025); few public, comparable sources; media reports as a proxy",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "place: the common reporting framework and proxies",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F46": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "§6 Conclusion ¶4",
+   "quote": "Next steps could include allowing open submissions to complement media-based monitoring and reorganising incidents and hazards visually by theme to support deeper analysis.",
+   "claim": "next steps: open submissions; the record reorganised by theme",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "next steps: open submission, other sources",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "rights page",
+   "quote": "Attribution 4.0 International (CC BY 4.0)",
+   "claim": "the paper (not the monitor's data) is licensed CC BY 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "name and terms",
+   "date": "2026-02 (OECD Artificial Intelligence Papers No. 53; PDF created 2026-02-09)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.pdf.txt (sha256 ec4d42002736b023…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "cover; Foreword ¶1",
+   "quote": "May 2024 No. 16 … This report provides a definition of AI incident and related terminology. These definitions aim to clarify what constitutes an AI incident, an AI hazard, and associated terminology without being overly prescriptive. This document will inform the development of a common AI incidents reporting framework and its application through the OECD AI Incidents Monitor (AIM).",
+   "claim": "the definitions paper (OECD AI Papers No. 16, May 2024): definitions of AI incident and related terms, not overly prescriptive, for the reporting framework and the AIM",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F49": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Foreword ¶3–4",
+   "quote": "The report was written by Karine Perset and Luis Aranda under the supervision of Audrey Plonk, Deputy Director of the OECD Science Technology and Innovation Directorate. … This paper was approved and declassified by written procedure by the OECD Digital Policy Committee (DPC) on 14 March 2024 and prepared for publication by the OECD Secretariat.",
+   "claim": "authors Karine Perset and Luis Aranda; approved by the Digital Policy Committee on 14 March 2024",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F50": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Executive summary ¶1",
+   "quote": "In January 2023, the OECD formalised the OECD.AI Expert Group on AI Incidents to advance the development of i) a common AI incident reporting framework and ii) an AI Incidents Monitor (AIM).",
+   "claim": "origin: the expert group formalised in January 2023 to develop the reporting framework and the monitor",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "maker: the OECD.AI expert group, McGovern support",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "§4 Draft definition of an AI incident",
+   "quote": "An AI incident is an event, circumstance or series of events where the development, use or malfunction of one or more AI systems directly or indirectly leads to any of the following harms: (a) injury or harm to the health of a person or groups of people; (b) disruption of the management and operation of critical infrastructure; (c) violations of human rights or a breach of obligations under the applicable law intended to protect fundamental, labour and intellectual property rights; (d) harm to property, communities or the environment.",
+   "claim": "the definition of an AI incident: development, use or malfunction leading directly or indirectly to harms (a)–(d)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "definitions: incident and hazard",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "§5 Draft definition of an AI hazard",
+   "quote": "An AI hazard is an event, circumstance or series of events where the development, use or malfunction of one or more AI systems could plausibly lead to an AI incident, i.e., any of the following harms:",
+   "claim": "the definition of an AI hazard: an event that could plausibly lead to an AI incident",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "definitions: incident and hazard",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "§5 key clarifications",
+   "quote": "Near misses are events that could have led to an AI incident and are therefore included under this definition of AI hazards.",
+   "claim": "near misses are hazards",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "§4 serious AI incident; AI disaster",
+   "quote": "Serious AI incidents are a subset of AI incidents and are intended to include substantial, material incidents. … An AI disaster is a serious AI incident that disrupts the functioning of a community or a society and that may test or exceed its capacity to cope, using its own resources.",
+   "claim": "the graded terms: serious AI incident (a subset) and AI disaster (a serious incident beyond a society's capacity to cope)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: the graded terms",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F55": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "§5 serious AI hazard",
+   "quote": "Serious AI hazards are a subset of AI hazards.",
+   "claim": "serious AI hazards are a subset of hazards",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: the graded terms",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "§4 key clarifications",
+   "quote": "Reputational harm to individuals and intangible harms such as hate speech and mis- and disinformation are included under (c) in relation to a breach of fundamental rights. … For example, violations of authors’ and personal rights fit into (c), while violations of industrial property rights are included under the concept of harm to property in (d).",
+   "claim": "reputational harm, misinformation and violations of authors' rights fall under (c)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F57": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Abstract",
+   "quote": "These definitions aim to foster international interoperability while providing flexibility for jurisdictions to determine the scope of AI incidents and hazards they wish to address.",
+   "claim": "the definitions' governing limit: interoperable, with each jurisdiction setting its own scope",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "§6 Conclusion ¶2",
+   "quote": "Assessing the “seriousness” of an AI incident, harm, damage, or disruption (e.g., to determine whether an event is classified as an incident or a serious incident) is context-dependent and is also left for further discussion.",
+   "claim": "seriousness is context-dependent and left open",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: the graded terms",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "§3 ¶4",
+   "quote": "This classification is based on a stocktaking exercise of over 30 frameworks, standards and legal instruments relevant to risk and harms",
+   "claim": "the classification rests on a stocktaking of more than 30 frameworks, standards and legal instruments",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "definitions: incident and hazard",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "Acknowledgements ¶2",
+   "quote": "Many experts provided invaluable feedback and suggestions, including Sean McGregor (Responsible AI Collaborative)",
+   "claim": "the AI Incident Database's founder among those who gave feedback on the definitions",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: the AI Incident Database",
+   "date": "2024-05 (OECD Artificial Intelligence Papers No. 16; approved by the DPC 2024-03-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.pdf.txt (sha256 97db457717a855e2…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "oEmbed title (video, 29:48)",
+   "quote": "Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell | IASEAI 2025",
+   "claim": "a conference talk on serious incident reporting frameworks (IASEAI 2025), admitted by title",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: video",
+   "date": "2025 (IASEAI 2025; title only)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 8c9f8a79bff55d6b…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "item title and summary",
+   "quote": "AI Search Engines Fabricate News Citations, Undermining Publishers … A study by the Tow Center found that eight AI-powered search engines and chatbots, including ChatGPT, Perplexity and Elon Musk’s Grok3, frequently misquote or fabricate news citations, remixing publisher content without credit and driving down traffic. Over 60% of responses contained wrong or broken links, undermining journalistic credibility.[AI generated]",
+   "claim": "the Tow Center's study of AI search citation, entered as an item; its summary machine-written",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "holding: the Tow Center study",
+   "date": "2025-03-11 (event id 2025-03-11-8537; page as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 4dc98555510507f2…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F63": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "label explanation; harm types",
+   "quote": "Hence, the event meets the criteria for an AI Incident as it involves realized harm caused by AI system outputs.[AI generated] … Harm types Economic/PropertyReputationalPublic interest",
+   "claim": "labelled an AI incident (realized harm from AI outputs), harm types economic/property, reputational, public interest",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holding: the Tow Center study",
+   "date": "2025-03-11 (event id 2025-03-11-8537; page as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 4dc98555510507f2…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  },
+  "F64": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "articles list (25 articles, 2025-03-11 to 2025-03-17)",
+   "quote": "Articles about this incident or hazard … New study finds that AI search tools are 60 percent inaccurate on average 2025-03-11 TechSpot",
+   "claim": "the item is built from news articles about the study, the earliest dated 11 March 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holding: the Tow Center study",
+   "date": "2025-03-11 (event id 2025-03-11-8537; page as fetched 2026-10-29)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 4dc98555510507f2…), whitespace-normalised (multi-part quote joined by ' … ', each part checked)"
+  }
+ },
+ "field_sources": {
+  "B1": "OECD AI Policy Observatory — OECD AI Incidents Monitor, an evidence base for trustworthy AI",
+  "B2": "OECD — AI risks and incidents",
+  "B3": "OECD AI Policy Observatory — Overview and methodology of the AI Incidents and Hazards Monitor - OECD.AI",
+  "B4": "OECD — Trends in AI incidents and hazards reported by the media | OECD",
+  "B5": "OECD — Defining AI incidents and related terms (EN)",
+  "B6": "YouTube·International Association for Safe & Ethical AI — Establishing Effective Serious Incident Reporting Frameworks – Jimmy Farrell",
+  "B7": "OECD AI Policy Observatory — AI Search Engines Fabricate News Citations, Undermining Publishers (AIM item 2025-03-11-8537)",
+  "W1": "Wikipedia — no article (OECD AI Incidents and Hazards Monitor, its variants, OECD.AI, OECD AI Policy Observatory)",
+  "W2": "Wikipedia — OECD (no mention of the monitor)"
+ }
+}

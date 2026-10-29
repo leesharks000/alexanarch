@@ -1,0 +1,84 @@
+{
+ "row": "cms-ai-copyright-tracker",
+ "address": "cms ai and copyright case tracker",
+ "entity": "The CMS Artificial Intelligence and Copyright Case Tracker (cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker), a publication of the law firm CMS (published 31 Oct 2025, 'updated regularly'): case summaries of AI and copyright case law, 23 pages, one per case, from ten jurisdictions; formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29); Taylor Wessing's AI & Copyright Case Tracker is a distinct entity (a neighbour, a census candidate)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "cms-ai-copyright-tracker",
+  "address": "cms ai and copyright case tracker",
+  "addresses": [
+   "cms ai and copyright case tracker"
+  ],
+  "entity": "The CMS Artificial Intelligence and Copyright Case Tracker (cms.law/en/int/publication/artificial-intelligence-and-copyright-case-tracker), a publication of the law firm CMS (published 31 Oct 2025, 'updated regularly'): case summaries of AI and copyright case law, 23 pages, one per case, from ten jurisdictions; formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29); Taylor Wessing's AI & Copyright Case Tracker is a distinct entity (a neighbour, a census candidate)",
+  "row_type": "C (a public entity on which the archive bears: a database, one of the MMRS meta-aggregator's entities)",
+  "aliases": [
+   {
+    "pattern": "\\bCMS\\s+(Artificial Intelligence|AI)\\s+(and|&)\\s+Copyright\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bArtificial Intelligence and Copyright Case Tracker\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAI\\s*(and|&)\\s*Copyright Case Tracker\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bcopyright \\+ AI (case )?tracker\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bcms\\.law\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bCMS \\(law firm\\)",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bcms-ai-copyright-tracker\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "AI and copyright case trackers",
+    "pattern": "\\b(AI|artificial intelligence)\\s*(and|&|\\+)\\s*copyright\\s+(case|litigation)\\s+trackers?\\b|\\bcopyright\\s+(case|litigation)\\s+trackers?\\b|\\bcopyright \\+ AI (case )?trackers?\\b",
+    "flags": "i",
+    "basis": "field: B1 (cms.law, Executive summary ¶6: 'we have built a copyright + AI case tracker providing accessible, easily digestible case summaries'); B4 (Taylor Wessing card, title: 'AI & Copyright Case Tracker | Taylor Wessing'), a second tracker of the same name on the same rail"
+   }
+  ],
+  "classes_note": "One class, sourced from the field by locus: the tracker as a case tracker of AI and copyright litigation (B1, its own words; B4, a second firm's tracker of the same name on the capture's rail). The MMRS record's 'US litigation trackers' is an archive source, ledgered as an MMRS claim and not run as a separate class. The aliases are the entity's full and short names, the page's own phrase 'copyright + AI case tracker', the firm's domain, the encyclopedia's title for the firm and the MMRS slug; 'CMS' alone is not run (it also names content management systems and other bodies). The short name 'AI and Copyright Case Tracker' also names Taylor Wessing's tracker: candidates on it are read and assigned to the entity they name. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the CMS tracker (what it is, its cases, its scope, its operator, its limits, a measure taken on it) or on AI and copyright case trackers as a class to which the archive applies its own category; a bare mention, a link list, or a cms.law URL cited for another matter is not a claim on the entity.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'cms ai and copyright case tracker' (cms-ai-and-copyright-case-tracker-aio-20261029, OBS-fd62b2209523, ADDR-0a51dfe9ee0d), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the MMRS meta-aggregator record) are ledgered beside the deposits as CAP-1-NN and MMRS-NN."
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 0,
+  "O_deposits": 0,
+  "H_candidates": 0
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {}
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-H.jsonl": null
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

@@ -1,0 +1,271 @@
+Arena Leaderboard Dataset - Arena.ai
+
+Skip to main content.
+
+Menu
+
+Try Arena
+
+Leaderboard Rankings
+
+Agent
+
+Overall
+
+Text
+
+WebDev
+
+Image-to-WebDev
+
+Text to Image
+
+Image Edit
+
+Text to Video
+
+Image to Video
+
+Video Edit
+
+Vision
+
+Document
+
+Search
+
+Use Cases
+
+Chat with AI
+
+Build Apps & Websites
+
+Write & Edit Text
+
+Search the Web
+
+Generate Images
+
+Generate Videos
+
+Choose any Model
+
+Compare Models Side by Side
+
+Complete Multi-step Tasks
+
+Company
+
+About Us
+
+How It Works
+
+Careers
+
+FAQ
+
+Help Center
+
+Leaderboard Changelog
+
+Product Changelog
+
+Blog
+
+Follow
+
+X
+
+LinkedIn
+
+YouTube
+
+Discord
+
+Legal
+
+Terms
+
+Privacy
+
+Cookies
+
+TermsPrivacyCookies
+
+Try Arena
+
+© 2026 Arena Intelligence Inc.
+
+Back to All Articles
+
+Research
+
+Arena Team
+
+Published on 2 Apr 2026
+
+Last updated on 2 Apr 2026
+
+Reading Time: 3 minutes
+
+Arena Leaderboard Dataset
+
+For almost three years, Arena has been publishing leaderboards covering frontier AI capabilities across 10 arenas, dozens of categories, and hundreds of models, and today we're releasing the entire history of those leaderboards as a public-access dataset.
+
+We've watched how our leaderboards are cited, referenced, used, and scrutinized by academic researchers, AI labs, news outlets, and enthusiasts, and those discussions and studies have led to key insights we've acted on internally. Inspired by these interactions, and continuing in our mission of open science and community trust, we're releasing the full history of published leaderboards. We look forward to the analysis and insights the community will bring.
+
+Overview
+
+For ease of use, we're releasing this data as a Hugging Face dataset accessible at https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset. To get started, first let's look at the data organization and schema, and then we'll look at a few examples of the types of analysis which can be performed and the insights that can be extracted from this data.
+
+We're using the Hugging Face concepts of Splits and Subsets to segment the dataset over arenas and across time, respectively. The dataset has 14 subsets covering our 10 current arenas (four arenas have two splits for leaderboards, with and without style control). The subsets are text, vision, search, document (each with a style-controlled variant), and then webdev (code), text-to-image, image-edit, text-to-video, image-to-video, and video-edit.
+
+Each subset has two splits, latest and full. The latest split contains only the most recently published data for the selected arena. The full split contains all historical leaderboard data for an arena.
+
+Within a subset and split, we have a column to indicate the category, and we include the leaderboard publish date to identify exactly what each entry represents. The full schema is documented over in the readme of the dataset on Hugging Face.
+
+Example Uses
+
+Leaderboard Changes Over Time
+
+Having the full leaderboard history accessible in a single dataset unlocks some avenues of analysis beyond a static list. For example, we can look at the scores of the top five models on the Text Arena leaderboard since May 2023 and see the march of progress visually, as the mean score of the leading models has risen from a little over 1,000 to nearly 1,500.
+
+Total Models Tested
+
+It’s also interesting to look at the total number of models we’ve tested on the platform over time. Visualizing this information really highlights the explosion of AI capabilities across different modalities and how we have scaled our evaluations to cover the field as it expands.
+
+Proprietary vs. Open Source by Arena
+
+This dataset also makes comparisons between arenas very straightforward. By looking at the latest split and the license column, we can get the count and rate of open source vs. proprietary models on each leaderboard. We can see that on the Text Arena leaderboard, more than half of the models are under some form of open or non-proprietary license, but that fraction is lower for other modalities and domains where the open-source fine tuning infra isn’t as mature.
+
+Looking Ahead
+
+We’re excited to see all the creative ways the community will use this data, and we’re excited for the next insights which will be extracted. Please feel free to reach out and ask questions in our Discord or start conversations in the community tab on Hugging Face.
+
+Access and like Dataset on Hugging Face
+
+Join the discussion on Discord
+
+Share this Article
+
+LinkedIn
+
+X
+
+Copy Link
+
+Back to All Articles
+
+Back to Top
+
+Overview
+
+Example Uses
+
+Leaderboard Changes Over Time
+
+Total Models Tested
+
+Proprietary vs. Open Source by Arena
+
+Looking Ahead
+
+Related Articles
+
+Read Article
+
+Introducing Connectors in Agent Mode
+
+With the release of Connectors in Agent Mode, you can now bring your everyday tools — including Gmail, Vercel, Supabase, Google Drive, Calendar, Linear and many more — right into the Agent Mode experience, without the need for copy-pasting between tabs.
+
+Product
+
+Arena Team—27 Oct 2026
+
+Read Article
+
+Introducing Max in Agent Arena
+
+Today, we are releasing our newest version of Max, Arena’s agentic router that achieves frontier performance in Agent Arena with 37% cost savings compared to top models.
+
+Product
+
+Arena Team—12 Oct 2026
+
+Read Article
+
+Measuring the AI Frontier for Real-World Alignment: Arena's $200 Million Series B
+
+Arena announces a $200 million Series B at a $3.1 billion valuation to advance real-world AI evaluation. Alongside this milestone, we're introducing the Arena Alignment Index, ‌​​‌‌‍​‌​‌​​​​​‌​​​​‍​‍‌‍‌‌​‌‍‌‌​​‌‍‌‌​‌‌‍​‌‌​‍‌‌​‌‍‍‌‌‍​‌‍​‌‍‌‌​‍‌‍‌​​‌‍​‌‌‌​‌‍‍​​‌‌‍‌‌‌‍​‌‍​‌‍‌‌‌​‍‌​​‌‌​​‍‍‌‌​‌‍‌‌‌‍​‌‌​​‍​‍‌‌a new measurement of how well frontier AI models act in line with human intent.​​​​‌‍​‍​‍‌‍‌​‍‌‍‍‌‌‍‌‌‍‍‌‌‍‍​‍​‍​‍‍​‍​‍‌​‌‍​‌‌‍‍‌‍‍‌‌‌​‌‍‌​‍‍‌‍‍‌‌‍​‍​‍​‍​​‍​‍‌‍‍​‌​‍‌‍‌‌‌‍‌‍​‍​‍​‍‍​‍​‍‌‍‍​‌‌​‌‌​‌​​‌​​‍‍​‍​‍‌‍​‌‌​‍‌‍‌‌‌‍‍‌‍​‌​‍‍‌‍​‌‌‍‍‌​‍‌​‌‌​‌‌‌‌‍‌​‌‍‍‌‌‍​‍‌‍‍‌‌‍‍‌‌​‌‍‌‌‌‍‍‌‌​​‍‌‍‌‌‌‍‌​‌‍‍‌‌‌​​‍‌‍‌‌‍‌‍‌​‌‍‌‌​‌‌​​‌​‍‌‍‌‌‌​‌‍‌‌‌‍‍‌‌​‌‍​‌‌‌​‌‍‍‌‌‍‌‍‍​‍‌‍‍‌‌‍‌​​‌‌‍‌‌‌‍‌​​​‍​‌‌‍​‌‍‌‌​‌‍​‍​​‍‌​​​​‌‍‌‌​‌​​‍‌​‌​​‌​​‌​‌‍​‍‌​‍‌‌‍​‍‌‍‌‍​​‌​‍‌‌‍‌​​‌​​‌‍‌‍‌‌​​‌​​‌‌‍​‌​‌​​​​​‌​​​​‍​‍‌‌​‌‍‌‌​​‌‍‌‌​‌‌‍​‌‌​‍‌‌​‌‍‍‌‌‍​‌‍​‌‍‌‌​‍‌​​‌‍​‌‌‌​‌‍‍​​‌‌‍‌‌‌‍​‌‍​‌‍‌‌‌​‍‌​​‌‌​​‍‍‌‌​‌‍‌‌‌‍​‌‌​​‌‍​‍‌‍​‌‌​‌‍‌‌‌‌‌‌‌​‍‌‍​​‌‌‍‍​‌‌​‌‌​‌​​‌​​‍‌‌​​‌​​‌​‍‌‌​​‍‌​‌‍​‍‌‌​​‍‌​‌‍‌‍​‌‌​‍‌‍‌‌‌‍‍‌‍​‌​‍‍‌‍​‌‌‍‍‌​‍‌‌​​‍‌​‌‍‌​‌‌​‌‌‌‌‍‌​‌‍‍‌‌‍​‍‌‍‌‍‍‌‌‍‌​​‌‌‍‌‌‌‍‌​​​‍​‌‌‍​‌‍‌‌​‌‍​‍​​‍‌​​​​‌‍‌‌​‌​​‍‌​‌​​‌​​‌​‌‍​‍‌​‍‌‌‍​‍‌‍‌‍​​‌​‍‌‌‍‌​​‌​​‌‍‌‍‌‌​​‌​​‌‌‍​‌​‌​​​​​‌​​​​‍​‍‌‍‌‌​‌‍‌‌​​‌‍‌‌​‌‌‍​‌‌​‍‌‌​‌‍‍‌‌‍​‌‍​‌‍‌‌​‍‌‍‌​​‌‍​‌‌‌​‌‍‍​​‌‌‍‌‌‌‍​‌‍​‌‍‌‌‌​‍‌​​‌‌​​‍‍‌‌​‌‍‌‌‌‍​‌‌​​‍​‍‌‌
+
+News
+
+Arena Team—8 Oct 2026
+
+Read Article
+
+Arena Alignment Index
+
+Today we are introducing the Arena Alignment Index, comparing 27 models across 90,000 real-world agent sessions. GPT-6.1 Sol, Claude Opus 5.5, and Grok 4.7 are among the highest-scoring models, with alignment improving across generations. Yet even frontier models still fail in consequential ways, from deleting files without permission to claiming checks they never performed.
+
+Research
+
+Arena Team—8 Oct 2026
+
+Read Article
+
+How to Post-Train Text-to-Image Models: Combining Preference and Rubric Rewards
+
+We introduce a post-training approach that combines human preference signals with explicit rubric-based rewards. Trained on 5M Arena pairwise preference votes, it pushes FLUX.2-dev to #2 on the live T2I leaderboard and Ideogram 4 past every publicly listed open-source model.
+
+Research
+
+Arena Team—2 Oct 2026
+
+Read Article
+
+Self-Preference of AI Judges
+
+LLM judges prefer their own responses 70% more often than humans do.
+
+Research
+
+Arena Team—30 Sept 2026
+
+Read Article
+
+HarnessTax: How Much Does the Harness Matter for Coding Agents?
+
+We tested 21 coding agent model–harness combinations across Claude Code, Codex CLI, and Pi to understand how harness choice affects performance and cost. The results show that harness choice can significantly impact cost, even when task success rates are similar.
+
+Research
+
+Arena Team—16 Sept 2026
+
+Read Article
+
+Call for Proposals: Arena's Academic Partnerships Program, Fall 2026
+
+Arena's Academic Partnerships Program opens a call for research proposals twice a year, every Spring and Fall. We're excited to open the Fall 2026 cycle today, with submissions due October 30, 2026.
+
+Arena Team—1 Sept 2026
+
+Read Article
+
+Announcing the First Cohort of Arena's Academic Partnerships Program
+
+We're glad to introduce the first cohort of researchers supported through the Arena Academic Partnerships program.
+
+Arena Team—1 Sept 2026
+
+See All Articles
+
+Subscribe
+
+to Arena news and research
+
+Insights at the frontier of AI.
+
+Subscribe
+
+Invalid email address

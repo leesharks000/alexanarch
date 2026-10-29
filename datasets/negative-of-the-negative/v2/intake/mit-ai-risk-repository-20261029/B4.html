@@ -1,0 +1,578 @@
+<!DOCTYPE html><!-- Last Published: Fri Oct 23 2026 20:36:25 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="futuretech.mit.edu" data-wf-page="65031d8c8e3acecbaf7fd477" data-wf-site="6501f77fe3413fa9dbfbd69d" lang="en" data-wf-collection="65031d8c8e3acecbaf7fd462" data-wf-item-slug="the-ai-risk-repository"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>FutureTech</title><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="noLRTW9bzsnANiuryrU4XHr3YAIko8qYf7BzSAnWin4" name="google-site-verification"/><link href="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/css/futuretech-7ec4f8.webflow.shared.566be1167.css" rel="stylesheet" type="text/css" integrity="sha384-VmvhFnsQm4vKKq+RsUy2b+FT8g3a2OewqzU2hAM6m+KGfXRwB8bMtUd4ohj+qNvf" crossorigin="anonymous"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic","Droid Sans:400,700","Varela Round:400"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/6515b6d5e39ba7daa4f2abc1_futuretech-favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/6515b9361b12dcbae4df6112_Webclip.png" rel="apple-touch-icon"/><link href="https://futuretech.mit.edu/publication/the-ai-risk-repository" rel="canonical"/><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push.apply(w[g],Array.isArray(i)?i:[i]);})(window,['G-689KPBZJXH'],'google_tags_first_party');</script><script async="" src="/9i1h7htkfq16NjUwMWY3N2ZlMzQxM2ZhOWRiZmJkNjlk/SyaKhMqX4fgezGdNbERaPP_KvSI"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('set', 'developer_id.dZGVlNj', true);gtag('set', 'developer_id.dYWYxNW', true);gtag('js', new Date());gtag('config', 'G-689KPBZJXH');</script><script>
+function alignCards() {
+  const cards = Array.from(document.querySelectorAll('.w-dyn-item'));
+  if (!cards.length) return;
+
+  // Determine cards per row
+  let cardsPerRow = 3; // default
+  const width = window.innerWidth;
+  if (width <= 991 && width > 767) cardsPerRow = 2;
+  if (width <= 767) cardsPerRow = 1;
+
+  // Skip alignment if only 1 card per row
+  if (cardsPerRow === 1) {
+    // Reset any previous min-heights
+    cards.forEach(card => {
+      const title = card.querySelector('.heading-7');
+      const desc  = card.querySelector('.paragraph-14');
+      if (title) title.style.minHeight = '';
+      if (desc)  desc.style.minHeight = '';
+    });
+    return;
+  }
+
+  // Reset previous heights
+  cards.forEach(card => {
+    const title = card.querySelector('.heading-7');
+    const desc  = card.querySelector('.paragraph-14');
+    if (title) title.style.minHeight = '';
+    if (desc)  desc.style.minHeight = '';
+  });
+
+  // Align cards per row
+  for (let i = 0; i < cards.length; i += cardsPerRow) {
+    const row = cards.slice(i, i + cardsPerRow);
+
+    const titles = row.map(c => c.querySelector('.heading-7'));
+    const descs  = row.map(c => c.querySelector('.paragraph-14'));
+
+    const maxTitle = Math.max(...titles.map(t => t.offsetHeight));
+    const maxDesc  = Math.max(...descs.map(d => d.offsetHeight));
+
+    titles.forEach(t => t.style.minHeight = maxTitle + 'px');
+    descs.forEach(d => d.style.minHeight = maxDesc + 'px');
+  }
+}
+
+// Run on load, resize, and CMS filter update
+window.addEventListener('load', alignCards);
+window.addEventListener('resize', alignCards);
+document.addEventListener('fs-cmsfilter-updated', alignCards);
+</script><style>
+/* =========================
+   CITATION + BIBTEX BASE
+   ========================= */
+
+/* Shared container styling */
+.citation-code,
+.bibtex-code {
+  position: relative; /* anchor for copy button + tooltip */
+  border-radius: 8px;
+  padding: 20px;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+
+  background: transparent;
+  color: #1f2937;
+}
+
+/* =========================
+   TEXT CONTENT
+   ========================= */
+
+/* Regular citation: normal text flow */
+.citation-text {
+  margin: 0;
+  padding-right: 48px; /* reserve space for copy icon */
+  padding-top: 0;
+
+  white-space: pre-wrap; /* FIX: ignore embed indentation/newlines */
+  word-break: break-word;
+}
+
+/* BibTeX: preserve formatting */
+.bibtex-text {
+  margin: 0;
+  padding-right: 48px;
+  padding-top: 0;
+
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Normalize <pre> default behavior for BibTeX */
+pre.bibtex-text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  font-family: inherit;
+}
+
+/* Optional emphasis styling */
+.citation-text em {
+  font-style: italic;
+}
+
+/* =========================
+   COPY BUTTON (top-right)
+   ========================= */
+
+.copy-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  cursor: pointer;
+
+  color: currentColor;
+  opacity: 0.8;
+}
+
+.copy-button:hover {
+  opacity: 1;
+}
+
+/* SVG sizing */
+.copy-icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+/* =========================
+   COPY CONFIRMATION TOOLTIP
+   ========================= */
+
+.copy-tooltip {
+  position: absolute;
+  top: 44px;
+  right: 12px;
+
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 6px;
+
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.citation-code.show-copied .copy-tooltip,
+.bibtex-code.show-copied .copy-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   VISUALLY HIDDEN (CMS DATE SOURCE)
+   ========================= */
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+</style>
+</head><body><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar navbar-2 navbar-3 w-nav"><div class="container header-container w-container"><a href="/" class="brand w-nav-brand"><img src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/696024be143635071eba87b2_logo-trans-cropped.png" loading="lazy" sizes="(max-width: 774px) 100vw, 774px" srcset="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/696024be143635071eba87b2_logo-trans-cropped-p-500.png 500w, https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/696024be143635071eba87b2_logo-trans-cropped.png 774w" alt="" class="image"/></a><img src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/6a107be85804af0cd0046e3c_search.svg" loading="lazy" data-w-id="f0c6c77d-c0ec-5367-b974-64fc5ab0a005" alt="" class="search-icon desktop"/><nav role="navigation" class="nav-menu w-nav-menu"><div data-hover="false" data-delay="0" class="dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="nav-link dropdown-nav-link">About</div><div class="icon-3 w-icon-dropdown-toggle"></div></div><nav class="dropdown-list w-dropdown-list"><a href="/about" class="nav-link in-one-line w-nav-link">About Us</a><a href="/team" class="nav-link in-one-line w-nav-link">Team</a><a href="/opportunities" class="nav-link in-one-line w-nav-link">Careers</a></nav></div><a href="/research" class="nav-link w-nav-link">Research</a><div data-hover="false" data-delay="0" class="dropdown-2 w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="nav-link dropdown-nav-link">Data &amp; Resources</div><div class="icon-3 w-icon-dropdown-toggle"></div></div><nav class="dropdown-list w-dropdown-list"><a href="/datasets" class="nav-link in-one-line w-nav-link">Datasets</a><a href="/community-resources" class="nav-link in-one-line w-nav-link">Community Resources</a></nav></div><a href="/news" class="nav-link w-nav-link">News</a><div data-hover="false" data-delay="0" class="dropdown-2 w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="nav-link dropdown-nav-link">Events</div><div class="icon-3 w-icon-dropdown-toggle"></div></div><nav class="dropdown-list side-right w-dropdown-list"><div class="w-dyn-list"></div><a href="/past-events" class="nav-link events_link w-nav-link">Past Events</a><a href="/mit-futuretech-conference-2026-predicting-ais-future" class="nav-link events_link w-nav-link">Predicting AI&#x27;s Future</a><a href="/research-alliance-on-ai-labor-implications-conference" class="nav-link events_link w-nav-link">Research Alliance on AI Labor Implications Convening</a><a href="/ai-in-geopolitics-network-aigen-inaugural-convening" class="nav-link events_link w-nav-link">AIGEN Inaugural Convening</a></nav></div><a href="/futuretech-conference-2025" class="nav-link-2 w-nav-link">2025 FutureTech Conference</a></nav><div class="menu-button w-nav-button"><div class="icon w-icon-nav-menu"></div></div></div><div class="w-layout-blockcontainer container header-container search-container w-container"><div class="search-container-inner"><form action="/search" class="search-2 w-form"><input class="search-input-2 w-input" maxlength="256" name="query" placeholder="Search…" type="search" id="search-2" required=""/></form><img src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/6a108645f1ed5a6824841921_close.svg" loading="lazy" data-w-id="7e4fd8f9-63a4-1548-96c1-f7159264a233" alt="" class="close-search"/></div></div></div><div class="hero-research-page"><div class="div-block-research-page"><div class="w-layout-blockcontainer container w-container"><div class="div-block-59"><h1 class="heading-copy">The AI Risk Repository: A Comprehensive Meta-Review, Database, and Taxonomy of Risks From Artificial Intelligence</h1></div></div></div></div><section class="abstract-section"><div class="w-layout-blockcontainer container-11 w-container"><div class="columns-2 w-row"><div class="column-2 w-col w-col-3"><div><div class="collection-list-wrapper-5 w-dyn-list"><div role="list" class="heading-6 w-dyn-items"><div role="listitem" class="w-dyn-item"><h1 class="heading-6">Peter Slattery</h1></div><div role="listitem" class="w-dyn-item"><h1 class="heading-6">Alexander K. Saeri</h1></div><div role="listitem" class="w-dyn-item"><h1 class="heading-6">Emily A. C. Grundy</h1></div><div role="listitem" class="w-dyn-item"><h1 class="heading-6">Jess Graham</h1></div><div role="listitem" class="w-dyn-item"><h1 class="heading-6">Michael Noetel</h1></div><div role="listitem" class="w-dyn-item"><h1 class="heading-6">Risto Uuk</h1></div><div role="listitem" class="w-dyn-item"><h1 class="heading-6">James Dao</h1></div><div role="listitem" class="w-dyn-item"><h1 class="heading-6">Soroush Pour</h1></div><div role="listitem" class="w-dyn-item"><h1 class="heading-6">Stephen Casper</h1></div><div role="listitem" class="w-dyn-item"><h1 class="heading-6">Neil Thompson</h1></div></div></div><div class="authors-template-page">August 14, 2024</div></div></div><div class="column w-col w-col-9"><div class="div-block-63"><div class="research-abstract">The risks posed by Artificial Intelligence (AI) are of considerable concern to academics, auditors, policymakers, AI companies, and the public. However, a lack of shared understanding of AI risks can impede our ability to comprehensively discuss, research, and react to them. This paper addresses this gap by creating an AI Risk Repository to serve as a common frame of reference. This comprises a living database of 777 risks extracted from 43 taxonomies, which can be filtered based on two overarching taxonomies and easily accessed, modified, and updated via our website and online spreadsheets. We construct our Repository with a systematic review of taxonomies and other structured classifications of AI risk followed by an expert consultation. We develop our taxonomies of AI risk using a best-fit framework synthesis. Our high-level Causal Taxonomy of AI Risks classifies each risk by its causal factors (1) Entity: Human, AI; (2) Intentionality: Intentional, Unintentional; and (3) Timing: Pre-deployment; Post-deployment. Our mid-level Domain Taxonomy of AI Risks classifies risks into seven AI risk domains: (1) Discrimination &amp; toxicity, (2) Privacy &amp; security, (3) Misinformation, (4) Malicious actors &amp; misuse, (5) Human-computer interaction, (6) Socioeconomic &amp; environmental, and (7) AI system safety, failures, &amp; limitations. These are further divided into 23 subdomains. The AI Risk Repository is, to our knowledge, the first attempt to rigorously curate, analyze, and extract AI risk frameworks into a publicly accessible, comprehensive, extensible, and categorized risk database. This creates a foundation for a more coordinated, coherent, and complete approach to defining, auditing, and managing the risks posed by AI systems.</div><div class="div-block-61"><div class="div-block-58 paper_link"><a href="https://arxiv.org/abs/2408.12622" target="_blank" class="learn-more-button w-button">Paper Link</a></div><div class="share-block"><div class="paragraph-8">Share:</div><a data-share="copy" href="#" target="_blank" class="w-inline-block"><div data-share="" class="share-copy-link w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448">
+  <!-- Grey square background -->
+  <rect width="448" height="448" fill="currentColor" rx="32" ry="32"/>
+  
+  <!-- White chain link icon -->
+  <path fill="#FFFFFF" d="M144.9 303c-22.9-22.9-22.9-60.1 0-83l45.3-45.3c22.9-22.9 60.1-22.9 83 0 6.2 6.2 6.2 16.4 0 22.6l-11.3 11.3c-6.2 6.2-16.4 6.2-22.6 0-8.3-8.3-21.8-8.3-30.1 0l-45.3 45.3c-8.3 8.3-8.3 21.8 0 30.1 8.3 8.3 21.8 8.3 30.1 0l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l11.3 11.3c6.2 6.2 6.2 16.4 0 22.6l-22.6 22.6c-22.9 22.9-60.1 22.9-83 0zm158.2-158c22.9 22.9 22.9 60.1 0 83l-45.3 45.3c-22.9 22.9-60.1 22.9-83 0-6.2-6.2-6.2-16.4 0-22.6l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 8.3 8.3 21.8 8.3 30.1 0l45.3-45.3c8.3-8.3 8.3-21.8 0-30.1-8.3-8.3-21.8-8.3-30.1 0L258.4 166c-6.2 6.2-16.4 6.2-22.6 0l-11.3-11.3c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c22.9-22.9 60.1-22.9 83 0z"/>
+</svg></div></a><a data-share="twitter" href="#" target="_blank" class="w-inline-block"><div data-share="" class="share-twitter w-embed"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6L379.4 396h-95.6L209 298.1L123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5l78.2-89.5h47.5zm-37.8 251.6L153.4 142.9h-28.3l171.8 224.7h26.3z"/></svg></div></a><a data-share="linkedin" href="#" target="_blank" class="w-inline-block"><div class="share-linkedin w-embed"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></div></a><a data-share="email" href="#" target="_blank" class="w-inline-block"><div class="share-email w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448">
+  <!-- Grey square background -->
+  <rect width="448" height="448" fill="currentColor" rx="32" ry="32"/>
+  
+  <!-- White envelope icon -->
+  <path fill="#FFFFFF" d="M64 128c-17.7 0-32 14.3-32 32v128c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H64zm160 112L96 160h256L224 240zm-160 48v-96l120.6 75.4c12.3 7.7 27.8 7.7 40.1 0L384 192v96H64z"/>
+</svg></div></a></div></div></div></div></div></div></section><section class="section-15"><div class="w-layout-blockcontainer subsection w-container"><h1 class="citation">Cite this work</h1><div class="citation-grid"><div class="citation-code"><div class="pub-date-source visually-hidden">August 14, 2024</div><div class="w-embed"><div class="citation-text">Peter Slattery, Alexander K. Saeri, Emily A. C. Grundy, Jess Graham, Michael Noetel, Risto Uuk, James Dao, Soroush Pour, Stephen Casper, Neil Thompson
+(<span class="pub-date"></span>).
+<em>The AI Risk Repository: A Comprehensive Meta-Review, Database, and Taxonomy of Risks From Artificial Intelligence</em>.
+Published in arxiv.org.
+Retrieved from https://arxiv.org/abs/2408.12622.
+Accessed <span class="current-date"></span>.</div></div><a href="#" class="copy-button w-inline-block"><div class="copy-icon w-embed"><svg
+  class="copy-icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.8"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+>
+  <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+</svg></div><div class="copy-tooltip"><div class="text-block-30">Copied</div></div></a></div><div class="bibtex-code"><div class="w-embed"><pre class="bibtex-text">@article{<span class="bibtex-key"></span>,
+  title     = { The AI Risk Repository: A Comprehensive Meta-Review, Database, and Taxonomy of Risks From Artificial Intelligence },
+  author    = { Peter Slattery, Alexander K. Saeri, Emily A. C. Grundy, Jess Graham, Michael Noetel, Risto Uuk, James Dao, Soroush Pour, Stephen Casper, Neil Thompson },
+  journal   = { arxiv.org },
+  year      = { <span class="bibtex-year"></span> },
+  url       = { https://arxiv.org/abs/2408.12622 }
+}</pre></div><a href="#" class="copy-button w-inline-block"><div class="copy-icon w-embed"><svg
+  class="copy-icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.8"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+>
+  <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+</svg></div><div class="copy-tooltip"><div class="text-block-30">Copied</div></div></a></div></div></div></section><section class="section-responsive"><div class="w-layout-blockcontainer container w-container"><h3 class="citation">Related Publications</h3><div class="related-authors-topic"><div class="w-dyn-list"><div role="list" class="collection-list publications-list w-dyn-items"><div related-item="Ho Ting Hung, Angelica Chowdhury, James Teague, Simon Mylius, Spencer Michaels, Peter Slattery, Alexander Saeri, Neil Thompson" role="listitem" class="collection-item related-item w-dyn-item"><a href="https://arxiv.org/abs/2609.16260" class="link-block w-inline-block"><div class="publication-card"><img src="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6abe7a05472aea70d04b752a_mapping.PNG" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6abe7a05472aea70d04b752a_mapping-p-500.png 500w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6abe7a05472aea70d04b752a_mapping-p-800.png 800w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6abe7a05472aea70d04b752a_mapping.PNG 1062w" class="publication-image"/><div class="publication-content-box"><div class="div-block-7"><h3 fs-cmsfilter-field="title" class="publication-title">Mapping U.S. Federal AI Governance Against Sector Vulnerability</h3><div class="publication-card-text date">September 2026</div><div fs-cmsfilter-field="authors" class="publication-card-text publication-card-authors">Ho Ting Hung, Angelica Chowdhury, James Teague, Simon Mylius, Spencer Michaels, Peter Slattery, Alexander Saeri, Neil Thompson</div><div class="research-card-abstract-block"><p fs-cmsfilter-field="abstract" class="paragraph-3">Artificial intelligence (AI) poses different levels of risk across sectors, but are these differences reflected in U.S. federal AI governance? To help answer this question, we assess 684 federal AI governance documents for their coverage of 14 sectors and 24 AI risks. We measure coverage as breadth (i.e., how frequently the risk or sector is addressed across documents) and depth (i.e., how substantively the risk or sector is discussed). We then compare sector coverage patterns for each of the 24 risks with vulnerability assessments from a Delphi study of 272 experts. Our analysis finds substantial variation in coverage: AI risks related to robustness, system security, and governance receive more attention than socioeconomic, environmental, and emerging risks, including multi-agent risks. Public administration, national security, information, and scientific services receive comparatively high levels of coverage relative to other sectors, such as finance and healthcare, which experts rate as highly vulnerable to AI risks. By mapping current coverage and identifying where it differs from expert assessments of vulnerability, we surface potential AI governance gaps which may help inform AI risk-related decisions across government and industry.</p></div></div></div></div></a></div><div related-item="Sophia Abraham, Taiye Chen, Cyril Chhun, Giovanna Jaramillo-Gutierrez, Simon Mylius, Sayash Raaj, Peter Slattery, Sean McGregor" role="listitem" class="collection-item related-item w-dyn-item"><a href="https://arxiv.org/abs/2604.19914" class="link-block w-inline-block"><div class="publication-card"><img src="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3810349ef3712dc915c6_3.PNG" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3810349ef3712dc915c6_3-p-500.png 500w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3810349ef3712dc915c6_3-p-800.png 800w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3810349ef3712dc915c6_3.PNG 975w" class="publication-image"/><div class="publication-content-box"><div class="div-block-7"><h3 fs-cmsfilter-field="title" class="publication-title">AI Incident Monitoring through a Public Health Lens</h3><div class="publication-card-text date">April 2026</div><div fs-cmsfilter-field="authors" class="publication-card-text publication-card-authors">Sophia Abraham, Taiye Chen, Cyril Chhun, Giovanna Jaramillo-Gutierrez, Simon Mylius, Sayash Raaj, Peter Slattery, Sean McGregor</div><div class="research-card-abstract-block"><p fs-cmsfilter-field="abstract" class="paragraph-3">Artificial intelligence systems are now deployed at scale across sectors, accompa- nied by a growing number of real-world incidents ranging from misinformation and cybercrime to autonomous-system failures. Databases of AI incidents index these events, but they cannot measure “risk” (i.e., a joint measure of likelihood and severity) without additional data regarding the prevalence of risk-associated systems and their incident reporting rates. As a result, policymakers, companies, and the general public lack a means to weigh the benefits of AI against their in-context risks. Inspired by public-health processes, which presume noisy and incomplete disease surveillance, we identify six phases of incident emergence. We demonstrate the framework through a detailed case study of autonomous vehicles, whose mandatory reporting requirements produces reliable incident-rate ground truth expressed in distance traveled. The case study shows that an informed panel of domain experts (e.g., self-driving experts) can combine their domain expertise, incident data, and a collection of statistical and visualization tools to arrive at incident phase determinations serving public needs. We further demonstrate the approach with a deepfake incident case study and chart a path for future research in incident phase determination.</p></div></div></div></div></a></div><div related-item="Isaak Mengesha, Branwen Owen, Charlie Collins, Tina Wong, Simon Mylius, Peter Slattery, Sean McGregor" role="listitem" class="collection-item related-item w-dyn-item"><a href="https://arxiv.org/html/2604.21412v1" class="link-block w-inline-block"><div class="publication-card"><img src="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3802cd9197d0691c6fdb_2-classification.PNG" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3802cd9197d0691c6fdb_2-classification-p-500.png 500w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3802cd9197d0691c6fdb_2-classification-p-800.png 800w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3802cd9197d0691c6fdb_2-classification.PNG 1026w" class="publication-image"/><div class="publication-content-box"><div class="div-block-7"><h3 fs-cmsfilter-field="title" class="publication-title">A simple classification of AI incident trajectories</h3><div class="publication-card-text date">April 2026</div><div fs-cmsfilter-field="authors" class="publication-card-text publication-card-authors">Isaak Mengesha, Branwen Owen, Charlie Collins, Tina Wong, Simon Mylius, Peter Slattery, Sean McGregor</div><div class="research-card-abstract-block"><p fs-cmsfilter-field="abstract" class="paragraph-3">Public AI incident counts conflate reporting propensity, deployment growth, and actual harm rates, muddying policy conclusions. Emerg- ing legislative frameworks adopt narrow report- ing requirements unlikely to generate the feed- back loops that have driven safety improvements in other high-reliability industries. Meanwhile, news-sourced public databases remain the pri- mary record of AI harm and require methodol- ogy to interpret. We propose a framework that separates exposure from harm-rate trends and clas- sifies results into trajectory categories for gover- nance decisions. Borrowing from epidemiology, it pairs structured monitoring questions with esti- mation procedures that scale to the evidence avail- able. Applied to worked case studies, the frame- work yields interpretable classifications, clarifies what can and cannot be claimed from available data, and identifies the binding constraint on more robust classifications going forward.</p></div></div></div></div></a></div></div><div role="navigation" aria-label="List" class="w-pagination-wrapper pagination-3"><a href="?bed3467a_page=2" aria-label="Next Page" class="w-pagination-next"><div class="w-inline-block">Next</div><svg class="w-pagination-next-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)"><path fill="none" stroke="currentColor" fill-rule="evenodd" d="M4 2l4 4-4 4"></path></svg></a><link rel="prerender" href="?bed3467a_page=2"/></div></div></div><div class="related-topic-only"><div class="w-dyn-list"><div role="list" class="collection-list publications-list related-item w-dyn-items"><div role="listitem" class="collection-item w-dyn-item"><a href="https://arxiv.org/abs/2609.16260" class="link-block w-inline-block"><div class="publication-card"><img src="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6abe7a05472aea70d04b752a_mapping.PNG" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6abe7a05472aea70d04b752a_mapping-p-500.png 500w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6abe7a05472aea70d04b752a_mapping-p-800.png 800w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6abe7a05472aea70d04b752a_mapping.PNG 1062w" class="publication-image"/><div class="publication-content-box"><div class="div-block-7"><h3 fs-cmsfilter-field="title" class="publication-title">Mapping U.S. Federal AI Governance Against Sector Vulnerability</h3><div class="publication-card-text date">September 2026</div><div fs-cmsfilter-field="authors" class="publication-card-text publication-card-authors">Ho Ting Hung, Angelica Chowdhury, James Teague, Simon Mylius, Spencer Michaels, Peter Slattery, Alexander Saeri, Neil Thompson</div><div class="research-card-abstract-block"><p fs-cmsfilter-field="abstract" class="paragraph-3">Artificial intelligence (AI) poses different levels of risk across sectors, but are these differences reflected in U.S. federal AI governance? To help answer this question, we assess 684 federal AI governance documents for their coverage of 14 sectors and 24 AI risks. We measure coverage as breadth (i.e., how frequently the risk or sector is addressed across documents) and depth (i.e., how substantively the risk or sector is discussed). We then compare sector coverage patterns for each of the 24 risks with vulnerability assessments from a Delphi study of 272 experts. Our analysis finds substantial variation in coverage: AI risks related to robustness, system security, and governance receive more attention than socioeconomic, environmental, and emerging risks, including multi-agent risks. Public administration, national security, information, and scientific services receive comparatively high levels of coverage relative to other sectors, such as finance and healthcare, which experts rate as highly vulnerable to AI risks. By mapping current coverage and identifying where it differs from expert assessments of vulnerability, we surface potential AI governance gaps which may help inform AI risk-related decisions across government and industry.</p></div></div></div></div></a></div><div role="listitem" class="collection-item w-dyn-item"><a href="https://arxiv.org/abs/2604.19914" class="link-block w-inline-block"><div class="publication-card"><img src="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3810349ef3712dc915c6_3.PNG" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3810349ef3712dc915c6_3-p-500.png 500w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3810349ef3712dc915c6_3-p-800.png 800w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3810349ef3712dc915c6_3.PNG 975w" class="publication-image"/><div class="publication-content-box"><div class="div-block-7"><h3 fs-cmsfilter-field="title" class="publication-title">AI Incident Monitoring through a Public Health Lens</h3><div class="publication-card-text date">April 2026</div><div fs-cmsfilter-field="authors" class="publication-card-text publication-card-authors">Sophia Abraham, Taiye Chen, Cyril Chhun, Giovanna Jaramillo-Gutierrez, Simon Mylius, Sayash Raaj, Peter Slattery, Sean McGregor</div><div class="research-card-abstract-block"><p fs-cmsfilter-field="abstract" class="paragraph-3">Artificial intelligence systems are now deployed at scale across sectors, accompa- nied by a growing number of real-world incidents ranging from misinformation and cybercrime to autonomous-system failures. Databases of AI incidents index these events, but they cannot measure “risk” (i.e., a joint measure of likelihood and severity) without additional data regarding the prevalence of risk-associated systems and their incident reporting rates. As a result, policymakers, companies, and the general public lack a means to weigh the benefits of AI against their in-context risks. Inspired by public-health processes, which presume noisy and incomplete disease surveillance, we identify six phases of incident emergence. We demonstrate the framework through a detailed case study of autonomous vehicles, whose mandatory reporting requirements produces reliable incident-rate ground truth expressed in distance traveled. The case study shows that an informed panel of domain experts (e.g., self-driving experts) can combine their domain expertise, incident data, and a collection of statistical and visualization tools to arrive at incident phase determinations serving public needs. We further demonstrate the approach with a deepfake incident case study and chart a path for future research in incident phase determination.</p></div></div></div></div></a></div><div role="listitem" class="collection-item w-dyn-item"><a href="https://arxiv.org/html/2604.21412v1" class="link-block w-inline-block"><div class="publication-card"><img src="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3802cd9197d0691c6fdb_2-classification.PNG" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px" srcset="https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3802cd9197d0691c6fdb_2-classification-p-500.png 500w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3802cd9197d0691c6fdb_2-classification-p-800.png 800w, https://cdn.prod.website-files.com/6503091b71bdad6f3590a62a/6aac3802cd9197d0691c6fdb_2-classification.PNG 1026w" class="publication-image"/><div class="publication-content-box"><div class="div-block-7"><h3 fs-cmsfilter-field="title" class="publication-title">A simple classification of AI incident trajectories</h3><div class="publication-card-text date">April 2026</div><div fs-cmsfilter-field="authors" class="publication-card-text publication-card-authors">Isaak Mengesha, Branwen Owen, Charlie Collins, Tina Wong, Simon Mylius, Peter Slattery, Sean McGregor</div><div class="research-card-abstract-block"><p fs-cmsfilter-field="abstract" class="paragraph-3">Public AI incident counts conflate reporting propensity, deployment growth, and actual harm rates, muddying policy conclusions. Emerg- ing legislative frameworks adopt narrow report- ing requirements unlikely to generate the feed- back loops that have driven safety improvements in other high-reliability industries. Meanwhile, news-sourced public databases remain the pri- mary record of AI harm and require methodol- ogy to interpret. We propose a framework that separates exposure from harm-rate trends and clas- sifies results into trajectory categories for gover- nance decisions. Borrowing from epidemiology, it pairs structured monitoring questions with esti- mation procedures that scale to the evidence avail- able. Applied to worked case studies, the frame- work yields interpretable classifications, clarifies what can and cannot be claimed from available data, and identifies the binding constraint on more robust classifications going forward.</p></div></div></div></div></a></div></div><div role="navigation" aria-label="List" class="w-pagination-wrapper pagination-3"><a href="?b182cb30_page=2" aria-label="Next Page" class="w-pagination-next"><div class="w-inline-block">Next</div><svg class="w-pagination-next-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)"><path fill="none" stroke="currentColor" fill-rule="evenodd" d="M4 2l4 4-4 4"></path></svg></a><link rel="prerender" href="?b182cb30_page=2"/></div></div></div></div></section><section class="footer"><div class="w-layout-blockcontainer container-10 w-container"><div class="w-layout-grid grid"><div class="div-block-4"><img src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/698b9efd4833117ff37f28ce_best%20logo.png" loading="lazy" sizes="(max-width: 4096px) 100vw, 4096px" srcset="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/698b9efd4833117ff37f28ce_best%20logo-p-500.png 500w, https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/698b9efd4833117ff37f28ce_best%20logo-p-800.png 800w, https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/698b9efd4833117ff37f28ce_best%20logo-p-1080.png 1080w, https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/698b9efd4833117ff37f28ce_best%20logo-p-1600.png 1600w, https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/698b9efd4833117ff37f28ce_best%20logo-p-2000.png 2000w, https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/698b9efd4833117ff37f28ce_best%20logo-p-2600.png 2600w, https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/698b9efd4833117ff37f28ce_best%20logo-p-3200.png 3200w, https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/698b9efd4833117ff37f28ce_best%20logo.png 4096w" alt="" class="footer-logo"/><div class="div-block-2"><a href="https://www.csail.mit.edu/" target="_blank" class="w-inline-block"><img src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/6503082564a74f499cb4bd15_logo-mit-csail.svg" loading="lazy" alt="" class="footer-logo"/></a><a href="https://computing.mit.edu/" target="_blank" class="w-inline-block"><img src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/6a725bdbb17295a0c4d90388_MIT_Schwarzman.svg" loading="lazy" alt="" class="footer-logo image-logo"/></a></div><div class="div-block-2"><a href="https://ide.mit.edu/" target="_blank" class="w-inline-block"><img src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/6a725bdc069d03569f4d1d13_IDE.png" loading="lazy" alt="" class="footer-logo custom"/></a><a href="https://mitsloan.mit.edu/" target="_blank" class="w-inline-block"><img src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/6503082292c6ee53f4ab3a10_logo-mit-sloan.svg" loading="lazy" alt="" class="footer-logo"/></a></div></div><div><p class="paragraph-8"><strong>MIT FutureTech<br/>‍</strong>MIT Computer Science and <br/>Artificial Intelligence Laboratory<br/>32 Vassar Street, Office 386, <br/>Cambridge, MA 02139<br/><a href="tel:+6172585030" class="link">617-258-5030</a><br/></p><div class="div-block-45"><a href="https://twitter.com/MITFutureTech" target="_blank" class="w-inline-block"><div class="html-embed-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6L379.4 396h-95.6L209 298.1L123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5l78.2-89.5h47.5zm-37.8 251.6L153.4 142.9h-28.3l171.8 224.7h26.3z"/></svg></div></a><a href="https://www.linkedin.com/company/mitfuturetech/" target="_blank" class="w-inline-block"><div class="html-embed-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></div></a><a href="https://mitfuturetech.substack.com/" target="_blank" class="w-inline-block"><div class="html-embed-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <path fill="currentColor" d="M64 64v64h384V64H64zm0 96v64h384v-64H64zm0 96v192l192-80 192 80V256H64z"/>
+</svg></div></a><a href="https://www.youtube.com/@MITFutureTech" target="_blank" class="w-inline-block"><div class="html-embed-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597c-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821c11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205l-142.739 81.201z"/></svg></div></a></div></div><div><p class="paragraph-13">© 2026 FutureTech.<br/>All rights reserved.</p><a href="https://accessibility.mit.edu" class="link-7">MIT Accessibility</a></div></div></div></section><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6501f77fe3413fa9dbfbd69d" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/js/webflow.schunk.dd60a0b34d2869a3.js" type="text/javascript" integrity="sha384-cbCoPJ8zh355yedwegjtEVg+2fz0HAmBKuxoeRpPAhTsCIusGf5uzB2SiIXL4QuU" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/6501f77fe3413fa9dbfbd69d/js/webflow.1092edbb.ba597e5fd43ae9de.js" type="text/javascript" integrity="sha384-cwEprND4w6cn6fJ5vm4+ZX82E0uALfnMTfz7QXNew8P+Y5phMUkV9EyyiE020R9T" crossorigin="anonymous"></script><style>
+  .search-but-new.fs-cmsfilter_active {
+    background: rgba(138, 21, 56, 0.1);
+  }
+  .reset-new {
+    text-decoration: none!important;
+  }
+</style><!-- =========================
+     CITATION + BIBTEX (dates + copy + tooltip)
+     ========================= -->
+<!-- =========================
+     CITATION + BIBTEX (dates + bibtex key + copy + tooltip)
+     Paste in Page Settings -> Before </body>
+     ========================= -->
+<script>
+  function initCitationAndBibtex() {
+    // --- For each citation pair (grid) or standalone citation block ---
+    document.querySelectorAll(".citation-grid, .citation-code").forEach((wrap) => {
+      const citationBlock = wrap.classList.contains("citation-code")
+        ? wrap
+        : wrap.querySelector(".citation-code");
+
+      const bibtexBlock = wrap.classList.contains("bibtex-code")
+        ? wrap
+        : wrap.querySelector(".bibtex-code");
+
+      // ---- Year from bound publication date source ----
+      let year = "";
+      const source = citationBlock?.querySelector(".pub-date-source");
+      const rawDate = (source?.textContent || "").trim(); // e.g. "June 1, 2025" or "10/15/2025"
+      const yearMatch = rawDate.match(/(\d{4})/);
+      year = yearMatch ? yearMatch[1] : "";
+
+      // Fill citation year placeholder(s)
+      if (citationBlock) {
+        citationBlock.querySelectorAll(".pub-date").forEach((el) => {
+          el.textContent = year;
+        });
+      }
+
+      // Fill bibtex year placeholder(s)
+      if (bibtexBlock) {
+        bibtexBlock.querySelectorAll(".bibtex-year").forEach((el) => {
+          el.textContent = year;
+        });
+
+        // ---- Generate + fill BibTeX key placeholders (author last name + year + first word of title) ----
+        bibtexBlock.querySelectorAll(".bibtex-text").forEach((bib) => {
+          const keyEl = bib.querySelector(".bibtex-key");
+          if (!keyEl) return;
+
+          const bibStr = bib.innerText;
+
+          // Extract author/title from BibTeX block text
+          const authorMatch = bibStr.match(/author\s*=\s*\{\s*([^}]+)\s*\}/i);
+          const authorRaw = (authorMatch ? authorMatch[1] : "").trim();
+
+          const titleMatch = bibStr.match(/title\s*=\s*\{\s*([^}]+)\s*\}/i);
+          const titleRaw = (titleMatch ? titleMatch[1] : "").trim();
+
+          // Prefer extracted year from publication date; fallback to BibTeX year field
+          const yearFromBib = bibStr.match(/year\s*=\s*\{\s*(\d{4})\s*\}/i)?.[1] || "";
+          const keyYear = year || yearFromBib;
+
+          // First author only; handle "and" / "&"
+          const firstAuthor = (authorRaw.split(/\s+(?:and|&)\s+/i)[0] || authorRaw).trim();
+
+          // Last name heuristic: last token of first author
+          const lastName = (firstAuthor.split(/\s+/).pop() || "paper")
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "");
+
+          // First word of title
+          const firstWord = (titleRaw.split(/\s+/)[0] || "work")
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "");
+
+          keyEl.textContent = `${lastName}${keyYear}${firstWord}`;
+        });
+      }
+    });
+
+    // ---- Access date everywhere ----
+    document.querySelectorAll(".current-date").forEach((el) => {
+      el.textContent = new Date().toLocaleDateString("en-GB", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+      });
+    });
+
+    // ---- Copy behavior + tooltip for BOTH citation + bibtex blocks ----
+    document.querySelectorAll(".citation-code, .bibtex-code").forEach((block) => {
+      const btn = block.querySelector(".copy-button");
+      const textEl = block.querySelector(".citation-text, .bibtex-text");
+      if (!btn || !textEl) return;
+
+      // Prevent double-binding if init runs multiple times
+      if (btn.dataset.copyBound === "1") return;
+      btn.dataset.copyBound = "1";
+
+      btn.addEventListener("click", async (e) => {
+        e.preventDefault();
+        const text = textEl.innerText.trim();
+
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch (err) {
+          // Fallback for older browsers / permissions
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand("copy"); } catch (e2) {}
+          document.body.removeChild(ta);
+        }
+
+        // Tooltip feedback (per block)
+        block.classList.add("show-copied");
+        clearTimeout(block._copiedTimer);
+        block._copiedTimer = setTimeout(() => {
+          block.classList.remove("show-copied");
+        }, 900);
+      });
+    });
+  }
+
+  // Run after Webflow is initialized
+  window.Webflow = window.Webflow || [];
+  window.Webflow.push(initCitationAndBibtex);
+
+  // Safety nets: rerun after CMS paint
+  setTimeout(initCitationAndBibtex, 300);
+  setTimeout(initCitationAndBibtex, 1200);
+</script>
+
+<!-- =========================
+     DEBUG LOGS (optional)
+     ========================= -->
+<script>
+  console.log("CUSTOM FOOTER CODE LOADED:", location.href);
+  window.addEventListener("load", () => console.log("WINDOW LOADED"));
+</script>
+
+<!-- =========================
+     SHARE BUTTONS (twitter/linkedin/email/copy link)
+     ========================= -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var pageUrl = window.location.href;
+    var cmsTitleEl = document.getElementById("cms-share-title");
+    var pageTitle = cmsTitleEl ? cmsTitleEl.textContent.trim() : (document.title || "");
+
+    var encodedUrl = encodeURIComponent(pageUrl);
+    var encodedTitle = encodeURIComponent(pageTitle);
+
+    var twitterLink = "https://twitter.com/intent/tweet?url=" + encodedUrl + "&text=" + encodedTitle;
+    var linkedinLink = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodedUrl;
+
+    var emailSubject = encodedTitle;
+    var emailBody = pageTitle + "%0D%0A" + pageUrl;
+    var emailLink = "mailto:?subject=" + emailSubject + "&body=" + emailBody;
+
+    var twitterBtn = document.querySelector('[data-share="twitter"]');
+    var linkedinBtn = document.querySelector('[data-share="linkedin"]');
+    var emailBtn = document.querySelector('[data-share="email"]');
+    var copyBtn = document.querySelector('[data-share="copy"]');
+
+    if (twitterBtn) twitterBtn.setAttribute("href", twitterLink);
+    if (linkedinBtn) linkedinBtn.setAttribute("href", linkedinLink);
+    if (emailBtn) emailBtn.setAttribute("href", emailLink);
+
+    [twitterBtn, linkedinBtn].forEach(function (btn) {
+      if (btn) {
+        btn.setAttribute("target", "_blank");
+        btn.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+
+    // Copy page link behavior
+    if (copyBtn) {
+      copyBtn.setAttribute("href", "#");
+      copyBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(pageUrl).then(function () {
+            alert("Link copied to clipboard!");
+          }).catch(function () {
+            alert("Unable to copy link, please copy manually.");
+          });
+        } else {
+          var tempInput = document.createElement("input");
+          tempInput.value = pageUrl;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          try {
+            document.execCommand("copy");
+            alert("Link copied to clipboard!");
+          } catch (err) {
+            alert("Unable to copy link, please copy manually.");
+          }
+          document.body.removeChild(tempInput);
+        }
+      });
+    }
+  });
+</script>
+
+<!-- =========================
+     RELATED LIST VISIBILITY (primary vs fallback)
+     ========================= -->
+<script>
+  window.Webflow = window.Webflow || [];
+  Webflow.push(function () {
+    const primaryWrap = document.querySelector(".related-authors-topic");
+    const fallbackWrap = document.querySelector(".related-topic-only");
+
+    const primaryItems =
+      primaryWrap?.querySelector(".w-dyn-items")?.children.length || 0;
+
+    const fallbackItems =
+      fallbackWrap?.querySelector(".w-dyn-items")?.children.length || 0;
+
+    if (primaryWrap) primaryWrap.style.display = "none";
+    if (fallbackWrap) fallbackWrap.style.display = "none";
+
+    if (primaryItems > 0 && primaryWrap) {
+      primaryWrap.style.display = "";
+      return;
+    }
+
+    if (fallbackItems > 0 && fallbackWrap) {
+      fallbackWrap.style.display = "";
+    }
+  });
+</script>
+
+
+
+<!-- =========================
+     SHARE BUTTONS (twitter/linkedin/email/copy link)
+     ========================= -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var pageUrl = window.location.href;
+    var cmsTitleEl = document.getElementById("cms-share-title");
+    var pageTitle = cmsTitleEl ? cmsTitleEl.textContent.trim() : (document.title || "");
+
+    var encodedUrl = encodeURIComponent(pageUrl);
+    var encodedTitle = encodeURIComponent(pageTitle);
+
+    var twitterLink = "https://twitter.com/intent/tweet?url=" + encodedUrl + "&text=" + encodedTitle;
+    var linkedinLink = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodedUrl;
+
+    var emailSubject = encodedTitle;
+    var emailBody = pageTitle + "%0D%0A" + pageUrl;
+    var emailLink = "mailto:?subject=" + emailSubject + "&body=" + emailBody;
+
+    var twitterBtn = document.querySelector('[data-share="twitter"]');
+    var linkedinBtn = document.querySelector('[data-share="linkedin"]');
+    var emailBtn = document.querySelector('[data-share="email"]');
+    var copyBtn = document.querySelector('[data-share="copy"]');
+
+    if (twitterBtn) twitterBtn.setAttribute("href", twitterLink);
+    if (linkedinBtn) linkedinBtn.setAttribute("href", linkedinLink);
+    if (emailBtn) emailBtn.setAttribute("href", emailLink);
+
+    [twitterBtn, linkedinBtn].forEach(function (btn) {
+      if (btn) {
+        btn.setAttribute("target", "_blank");
+        btn.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+
+    // Copy page link behavior
+    if (copyBtn) {
+      copyBtn.setAttribute("href", "#");
+      copyBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(pageUrl).then(function () {
+            alert("Link copied to clipboard!");
+          }).catch(function () {
+            alert("Unable to copy link, please copy manually.");
+          });
+        } else {
+          var tempInput = document.createElement("input");
+          tempInput.value = pageUrl;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          try {
+            document.execCommand("copy");
+            alert("Link copied to clipboard!");
+          } catch (err) {
+            alert("Unable to copy link, please copy manually.");
+          }
+          document.body.removeChild(tempInput);
+        }
+      });
+    }
+  });
+</script>
+
+<!-- =========================
+     RELATED LIST VISIBILITY (primary vs fallback)
+     ========================= -->
+<script>
+  window.Webflow = window.Webflow || [];
+  Webflow.push(function () {
+    const primaryWrap = document.querySelector(".related-authors-topic");
+    const fallbackWrap = document.querySelector(".related-topic-only");
+
+    const primaryItems =
+      primaryWrap?.querySelector(".w-dyn-items")?.children.length || 0;
+
+    const fallbackItems =
+      fallbackWrap?.querySelector(".w-dyn-items")?.children.length || 0;
+
+    // Hide both by default
+    if (primaryWrap) primaryWrap.style.display = "none";
+    if (fallbackWrap) fallbackWrap.style.display = "none";
+
+    // Show primary if it has items
+    if (primaryItems > 0 && primaryWrap) {
+      primaryWrap.style.display = "";
+      return;
+    }
+
+    // Otherwise show fallback if it has items
+    if (fallbackItems > 0 && fallbackWrap) {
+      fallbackWrap.style.display = "";
+    }
+  });
+</script>
+</body></html>

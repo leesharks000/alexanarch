@@ -1,0 +1,154 @@
+[meta description] One routing layer for AI tasks. Compare models for documents, code, speech, and vision, inspect benchmark evidence, and explore the CodeSOTA selection and execution API.
+CodeSOTA — One Routing Layer for AI Tasks
+Codesota.By Fabryka AI
+RouterDocumentsSpeechCodingAll tasksBenchmarks
+Data APISign inTry the router →
+Menu
+CodeSOTA / AI task routing
+One routing layer.
+Every kind of AI task.
+Start with the work you need done. Compare models across quality and cost, inspect the evidence, and use a common API to choose a route.
+Explore task routes →Read the API docs
+Available today: model selection across the registry and an execution API for code & text. Document, speech, and vision execution are planned.
+What do you want to do?
+Choose a task, compare actual benchmark observations, and inspect the Pareto frontier before selecting a route.
+DocumentsCodeText & reasoningTranscriptionVoiceVision
+Benchmark tradeoffs
+Find the Pareto frontier.
+Every dot is a recorded result. Highlighted models have no competitor in this cohort that is at least as good on both axes and strictly better on one.
+Loading benchmark observations…
+01 / Define the work
+Documents
+Input
+Scans & PDFs
+Target output
+Text, tables & fields
+Routing preference
+Quality first
+Balance quality & cost
+Cost first
+Open-weight candidates only
+Registry selection only · execution planned
+Target outputs describe the task. This preview returns model recommendations. It does not process your files or run inference.
+Explore documents evidence →
+02 / Inspect the shortlist
+03 / Use the same selection API
+curl 'https://www.codesota.com/api/pareto-router?task=document-ocr&objective=balanced&limit=3'
+Copy request
+Inspect JSON ↗API documentation →Browse all tasks →
+The product we are building
+Choose the task.
+Keep your integration.
+Our direction is a common API and account across AI tasks, with versioned recipes and a stable output contract for each task. Switch the model behind document parsing, transcription, voice generation, or code without rewriting your application.
+Explore the router →
+A contract for each task.Documents return text and layout; transcription returns segments; voice returns audio. Each task keeps its own output format across providers.
+Evidence behind each route.Compare models on the same task and protocol, with measured quality, latency, and cost as coverage grows.
+One place to run and compare.The roadmap brings provider adapters, versioned recipes, task validation, fallback, and usage accounting into the same routing layer.
+First expansion / Documents
+Documents are the
+next execution family.
+Turn scans and PDFs into text, tables, or structured fields. Choose for your documents, language, and deployment.
+Explore OCR & document AI →
+OCR for Python→
+Handwriting→
+Invoices & receipts→
+PDFs & document parsing→
+Working with Polish documents? See Polish OCR evidence →
+Already have a shortlist?
+Compare the tools you are considering.
+PaddleOCR vs Tesseract ↗
+Compare a modern OCR pipeline with a classic CPU baseline.
+Docling vs MinerU ↗
+Compare document parsing workflows for structured output.
+PaddleOCR vs EasyOCR ↗
+Compare Python library setup, speed, and accuracy.
+Working with speech or code?
+Explore the task guides and evidence behind future speech routes and the existing coding API.
+Speech →
+Transcribe recordings or generate a voice. Compare language coverage, latency, intelligibility, and deployment.
+Speech-to-text→
+Text-to-speech→
+Realtime voice→
+Audiobooks→
+Coding & agents →
+Generate functions or repair a repository. Compare models and agents on evidence that matches the work.
+Code generation→
+Repository repair→
+Coding agents→
+Coding benchmarks explained→
+Have a more specific question?
+Describe your task, language, budget, or hardware to search CodeSOTA’s guides and registry.
+⌕⌘KAsk CodeSOTA
+TryOCR invoicesHandwritingText-to-speechCoding agents
+Explore the demonstration decision workspace →
+Evidence behind the choice
+A benchmark score needs context.
+A strong result on one test does not guarantee a fit for your documents, recordings, or repository. Check the model version, evaluation protocol, source, and deployment requirements. Then test representative examples.
+How to read our evidence →
+Match the task.Use a benchmark that measures the work you need done.
+Check the source.Distinguish reported results from independently reproduced runs.
+Try your workload.Measure output quality, speed, and cost on your own examples.
+Explore the wider library
+More tasks, model results, and research when you need to go deeper.
+All tasks →
+Explore the wider catalogue, from embeddings to computer vision.
+Benchmarks →
+Inspect results, metrics, sources, and evaluation protocols.
+Models →
+Look up a model and the evidence recorded for it.
+Research & papers →
+Follow original experiments and the claims they support.
+Language modelsEmbeddingsChoose by GPURecent papersBenchmark data APIContribute evidence
+Codesota.
+Choose AI tools with evidence
+Built in public from Warsaw
+open JSON · rankings stay earned
+Codesota.
+CodeSOTA helps developers choose AI tools for documents, speech, and coding, with practical comparisons and inspectable benchmark evidence.
+Built in public from Warsaw · open JSON · rankings stay earned
+Submit a score ↵Try /api/sota →
+Choose a tool
+OCR & documents
+Speech
+Coding & agents
+Decision workspace
+Choose by GPU
+Wider library
+Tasks
+Benchmarks
+Research Graph
+Models
+Recent Papers
+Leaderboards
+Benchmark Lineages
+Methodology
+Submit a score
+Developer / Data
+/api/sota
+API schema
+Open JSON registry
+Data snapshots
+GitHub
+Report issue ↗
+Activity Log
+Changelog
+Learn
+Guides
+Explainers
+Course & lessons
+AI Model News
+Recent paper scan
+Papers with Code Story
+Research Challenges
+Data Flywheel
+CodeSOTA / Fabryka
+Fabryka AI · Research laboratory ↗
+Brandbook & media assets ↗
+About
+Consulting
+Praktyki
+Discord
+Get updates
+Privacy
+© 2026 Codesota·Built by Kacper Wikiel in Warsaw
+PrivacyGitHubReport issue ↗

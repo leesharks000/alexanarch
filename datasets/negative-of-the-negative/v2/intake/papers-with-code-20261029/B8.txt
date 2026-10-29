@@ -1,0 +1,198 @@
+Papers With Code Alternative: SOTA Leaderboards and Archived Data | CodeSOTA | CodeSOTA
+Codesota . By Fabryka AI
+Router Documents Speech Coding All tasks Benchmarks
+Data API Sign in Try the router → Menu
+Codesota · Papers with Code A dispatch on the archived Meta registry Issue: April 22, 2026
+Dispatch · April 2026
+Papers With Code alternative:
+leaderboards after shutdown.
+Direct answer: Papers With Code was retired by Meta in July 2025. The old leaderboards are not maintained; use CodeSOTA for live SOTA benchmark pages, and use the frozen paperswithcode-data archive when you need historical JSON. Papers with Code was, in effect, the Wikipedia of machine-learning research: a wiki of papers linked to implementations, benchmarks organised as <Task, Dataset, Metric> tuples, and leaderboards that showed, for each tuple, who currently held the top score and with what code. In July 2025, Meta shut it down. The domain now redirects to Hugging Face Trending Papers; the leaderboards are gone.
+This page is our record of what happened, what was lost, and where to look now — with Codesota positioned as the calmer, stricter successor.
+At a glance
+Shutdown
+July 24–25, 2025 · No prior notice
+What changed
+paperswithcode.com redirects to Hugging Face Trending Papers
+What remains
+Historical JSON at paperswithcode/paperswithcode-data (frozen)
+Successor
+Codesota — traceable, dated, routable
+Fig 0 · Card file. A seven-year archive reduced to four lines.
+§ 00½ · Quick route
+Came from Google? Start here.
+Leaderboard replacement
+Papers With Code leaderboard alternative
+Start here if you searched for Papers With Code leaderboards, SOTA tables, or benchmark rankings.
+Shutdown date
+Papers with Code shutdown
+Direct answer for July 2025 shutdown, Meta sunset, redirects, and where the old data went.
+API replacement
+Papers with Code API alternatives
+How to replace the old API: historical archive, paper metadata APIs, and SOTA lookup.
+Live registry
+CodeSOTA tasks
+Capability-first task ontology with dated benchmark evidence and current leaders.
+§ 01 · Event
+What happened.
+A terse record, without speculation. Dates are as reported by the site's archived banner and community tracking.
+On July 24–25, 2025, Meta sunsetted Papers with Code without prior notice. Users reported “Bad Gateway 502” errors and garbled text; GitHub issues went unanswered. Within days, the domain began redirecting to Hugging Face's Trending Papers feature, and the 9,327 benchmark leaderboards, 79,817 paper-to-code linkages and 5,628 datasets that had been tracked were no longer served from the canonical URL.
+The site had been acquired by Meta (then Facebook AI) in December 2019 from its founders Robert Stojnic and Ross Taylor, under a public commitment that it would “remain a neutral, open and free resource.” That commitment held for five and a half years.
+Historical data was rescued by the community — as JSON dumps on GitHub, as the pwc-archive on Hugging Face, and as 2021-era imports into the Open Research Knowledge Graph. The data survives; the integrated experience does not.
+Timeline
+Date Event
+Jul 2018 Robert Stojnic and Ross Taylor launch Papers with Code as an independent project.
+Dec 2019 Meta (Facebook AI) acquires the site, pledging to keep it neutral, open and free.
+Oct 2020 arXiv integration adds a “Code” tab to paper pages.
+Peak 79,817 papers · 9,327 benchmarks · 5,628 datasets indexed.
+Jul 2025 Meta shuts the site without notice; domain redirects to Hugging Face.
+Fig 1 · Compiled from community reporting, GitHub issue threads and the site's archived state.
+§ 02
+Why it mattered
+A small piece of infrastructure, used daily.
+Papers with Code was, in effect, the Wikipedia of machine-learning research: a wiki of papers linked to implementations, benchmarks organised as <Task, Dataset, Metric> tuples, and leaderboards that showed, for each tuple, who currently held the top score and with what code.
+Before PWC, establishing a baseline meant searching GitHub with keyword guesses, hoping the authors had released code, and debugging frameworks that had since been deprecated. After PWC, a researcher could read the abstract, click “Code,” and start. That small convenience raised the rate at which results were reproduced — and papers with linked code were cited, by community estimates, noticeably more often.
+For engineers, it collapsed the “find a reference implementation” step of a project from days to minutes. For decision-makers, it made it possible to distinguish actual state-of-the-art scores from press-release claims. For the field, it made reproducibility an expectation rather than an aspiration.
+None of the successors Meta pointed at — Hugging Face Trending Papers, Semantic Scholar, Connected Papers — replicate the unified paper-code-benchmark-dataset-method linkage. The data survived; the rhythm didn't.
+Note 1 · For researchers
+Establish baselines instantly. Know what SOTA looks like before starting. Find existing implementations to build on.
+Note 2 · For engineers
+Find working code, compare frameworks, skip the reproduction phase and move straight to production.
+Note 3 · For the field
+Papers with linked code were cited more often. PWC made reproducibility the norm, not the exception.
+Note 4 · For decision-makers
+Clear benchmark comparisons. Distinguish real state-of-the-art from marketing claims.
+§ 03 · Preservation
+What we're preserving.
+Five qualities of PWC at its best, carried forward into Codesota by default rather than by aspiration. Read the full methodology .
+Principle Commitment
+Reproduction Every submission carries code — a frozen commit, a declared environment, a recorded seed. If it does not run, the row does not publish.
+Dates Every score is stamped with the day it was published and the day it was verified. The table never silently forgets a regression.
+Lineage Model cards include the parent checkpoint, training-set fingerprint and — when available — the evaluation harness commit.
+Open data Every score on the site is also available as JSON under the same URL. No paywall, no sign-up, no crawler trap.
+No vendor capture Maintained independently, not owned by any single model vendor. Sponsored evaluations, when they exist, are flagged as such.
+Fig 2 · Reader-visible commitments. Each is mechanically enforced at submission time; see /methodology for the full gate list.
+§ 04 · Where to look now
+Alternatives, by use case.
+Codesota is the v2 replacement for what PWC did — reproduced scores with verification dates, code links, and lineage. Below is where on Codesota to land by domain, plus third-party sources for coverage we don’t yet reproduce.
+Domain Common metric Codesota · reproduced Other public sources
+LLMs / NLP MMLU · GSM8K · HumanEval /llm Hugging Face Open LLM Leaderboard
+Speech WER on LibriSpeech, CommonVoice /speech Open ASR Leaderboard (HF)
+OCR / Document AI CER, F1 on DocVQA, FUNSD /ocr OmniDocBench
+Computer Vision top-1, mAP, mIoU /vision Kaggle benchmarks · legacy PWC JSON
+Code generation pass@1 on HumanEval · SWE-bench solve /code-generation BigCode Arena · SWE-bench website
+Agentic AI WebArena, GAIA, OSWorld /agentic Individual benchmark sites
+Multimodal / Every task Task index across modalities /tasks Hugging Face pipeline tags
+Paper discovery Title, abstract, code link · all papers tracked; benchmark scores may be pending or verified, and can be added by the community /papers Hugging Face Trending Papers · Semantic Scholar
+Dataset registry Canonical splits, licence, citation /browse Hugging Face Datasets hub
+Historical PWC data JSON dump, frozen /browse/pwc github.com/paperswithcode/paperswithcode-data
+Fig 3 · Each Codesota route lists currently verified SOTA with date, code commit, and reproduction notes. Third-party sources listed for coverage — we do not claim their numbers were independently reproduced.
+Feature parity with the archived PWC
+Feature Papers with Code Hugging Face Codesota
+Paper discovery Yes Yes Yes · /papers
+Code links Yes Yes Yes · per score
+SOTA leaderboards 9,327 benchmarks (archived) Limited Growing, reproduced
+Dataset registry 5,628 (frozen) Different focus Per-domain
+Method explanations Yes No Per-task pages
+Task hierarchy 16 areas, nested Pipeline tags 17 modalities · /tasks
+Scores dated & lineaged Partial No Yes · first-class
+Fig 4 · “Reproduced” here means an independently executed run or a signed container hash — not an aggregated claim.
+§ 05
+The difference
+Three ordinary ways Codesota is different.
+We inherit PWC's best habits; we correct its worst. The difference is small and, we hope, boring — which is what you want from a registry.
+First, every benchmark here is traceable . Reproducible code where the model is open and the eval is deterministic — verified by a signed container hash on rerun. Where it isn’t — closed APIs whose behaviour drifts behind the same name, sampled outputs that vary across seeds — we publish the dated source link, the prompt template, and the vendor model-card snapshot, and we say so. What never publishes is a number with no source. That single rule eliminates most of the drift that made late-stage PWC tables unreliable.
+Second, every score is dated — publication date, verification date, and the date of the model checkpoint it refers to. Regressions stay visible. The table never silently forgets.
+Third, the registry is routable . Every benchmark row corresponds to an API endpoint; we are slowly building the “router” that lets a caller send a prompt or a document to the current SOTA without rewriting their code when the SOTA changes. See the roadmap page for what that looks like at scale.
+Everything else — the wiki-style task pages, the dataset cards, the method explanations — we are rebuilding gradually, in the open, one modality at a time.
+Note · Reproduced
+Independently executed, or verified via a signed container hash. Not a scraped claim.
+Note · Dated
+Publication date, verification date, checkpoint date — all three, not one.
+Note · Routable
+Every score has a URL; every URL has JSON; every JSON has a runnable endpoint on the roadmap.
+Note · Ownership
+Maintained in Warsaw, in public on GitHub. Not owned by a model vendor.
+§ 06 · FAQ
+Frequently asked, honestly answered.
+Questions that arrive about the shutdown and the alternatives. Schema.org FAQPage markup is preserved below for search.
+Q 01 Is Papers with Code still working? + No. Papers with Code was shut down by Meta in July 2025 and now redirects to Hugging Face. The SOTA leaderboards and comprehensive benchmark tracking are gone.
+Q 02 What is the best Papers with Code alternative? + CodeSOTA is building comprehensive ML benchmarks starting with OCR and document AI. Unlike aggregator sites, CodeSOTA verifies results independently and focuses on practical recommendations for production use.
+Q 03 Can I still access Papers with Code data? + Historical data is archived at paperswithcode/paperswithcode-data on GitHub, but it's not being updated. CodeSOTA provides fresh, maintained benchmark data with verified results.
+Q 04 Does Hugging Face replace Papers with Code? + Partially. Hugging Face has trending papers and some leaderboards like Open LLM Leaderboard, but lacks the comprehensive task-based SOTA tracking across 9,327 benchmarks that Papers with Code provided.
+Q 05 What happened to Papers with Code benchmarks? + Meta shut down Papers with Code in July 2025 without notice. The 9,327 benchmarks, 79,817 papers, and 5,628 datasets that were tracked are no longer maintained. CodeSOTA is rebuilding this infrastructure independently.
+§ 07 · Further reading
+What to read next.
+All routes verified live · April 2026
+/landing
+Codesota · overview
+The front page, in full editorial treatment.
+/tasks
+Every ML task, indexed
+An alphabetical register of the tasks we track, with trust grades.
+/vision
+The router pitch
+What a registry of reproduced SOTA enables — send work to the current best model.
+/ocr
+OCR & document AI
+16+ models, 9 datasets, verified independently.
+/speech
+Speech recognition
+WER tracked on LibriSpeech, CommonVoice, and real conversational audio.
+/llm
+LLM benchmarks
+Reasoning, coding, multilingual — with scores dated and reproduced.
+/methodology
+Methodology
+How submissions are gated and why these numbers can be trusted.
+Codesota .
+Choose AI tools with evidence
+Built in public from Warsaw
+open JSON · rankings stay earned
+Codesota . CodeSOTA helps developers choose AI tools for documents, speech, and coding, with practical comparisons and inspectable benchmark evidence.
+Built in public from Warsaw · open JSON · rankings stay earned
+Submit a score ↵ Try /api/sota →
+Choose a tool
+OCR & documents
+Speech
+Coding & agents
+Decision workspace
+Choose by GPU
+Wider library
+Tasks
+Benchmarks
+Research Graph
+Models
+Recent Papers
+Leaderboards
+Benchmark Lineages
+Methodology
+Submit a score
+Developer / Data
+/api/sota
+API schema
+Open JSON registry
+Data snapshots
+GitHub
+Report issue ↗
+Activity Log
+Changelog
+Learn
+Guides
+Explainers
+Course & lessons
+AI Model News
+Recent paper scan
+Papers with Code Story
+Research Challenges
+Data Flywheel
+CodeSOTA / Fabryka
+Fabryka AI · Research laboratory ↗
+Brandbook & media assets ↗
+About
+Consulting
+Praktyki
+Discord
+Get updates
+Privacy
+© 2026 Codesota · Built by Kacper Wikiel in Warsaw
+Privacy GitHub Report issue ↗

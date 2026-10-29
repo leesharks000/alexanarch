@@ -1,0 +1,30 @@
+{
+ "row": "codesota",
+ "address": "codesota",
+ "entity": "CodeSOTA (codesota.com), 'By Fabryka AI', built and edited by Kacper Wikiel in Warsaw, launched 10 December 2025 (its about page): a routing layer for AI tasks on its homepage ('CodeSOTA — One Routing Layer for AI Tasks'), a successor to Papers with Code on its /papers-with-code/ pages ('Codesota is the v2 replacement for what PWC did'), and 'an independent registry of machine-learning benchmarks' on its about page; formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29), census row codesota, relation claims_succession_to papers-with-code. Papers with Code (paperswithcode.com, 2018–2025) and its revival at paperswithcode.co are distinct entities (census rows papers-with-code, papers-with-code-revival)",
+ "row_type": "C (a public entity on which the archive bears: a service, one of the MMRS meta-aggregator's entities)",
+ "aliases": [
+  {"pattern": "\\bcode\\s?sota\\b", "flags": "i"},
+  {"pattern": "\\bcodesota\\.com\\b", "flags": "i"},
+  {"pattern": "\\bFabryka AI\\b", "flags": "i"},
+  {"pattern": "\\bKacper Wikiel\\b", "flags": "i"},
+  {"pattern": "\\bkwikiel\\b", "flags": "i"}
+ ],
+ "classes": [
+  {
+   "term": "benchmark leaderboards and registries",
+   "pattern": "\\b(SOTA|state[- ]of[- ]the[- ]art|benchmark)\\s+(leaderboards?|registr(y|ies))\\b",
+   "flags": "i",
+   "basis": "field: B2 (codesota.com/papers-with-code, meta description: 'Use CodeSOTA for maintained SOTA leaderboards, benchmark pages'); B4 (codesota.com/about, meta description: 'Codesota is an independent registry of machine-learning benchmarks'); B3 (codesota.com/papers-with-code/shutdown, §03: 'CodeSOTA benchmark pages … Benchmark-level leaderboards')"
+  },
+  {
+   "term": "model routing for AI tasks",
+   "pattern": "\\b(model|task|AI)\\s+rout(ing|er)s?\\b|\\brouting layers?\\b",
+   "flags": "i",
+   "basis": "field: B1 (codesota.com, the card, title: 'CodeSOTA — One Routing Layer for AI Tasks'; 'CodeSOTA / AI task routing')"
+  }
+ ],
+ "classes_note": "Two classes, each sourced from the field by locus: CodeSOTA as a keeper of benchmark leaderboards and a benchmark registry (B2, B3, B4) and CodeSOTA as a routing layer for AI tasks (B1, the card). The aggregator class is not run: the MMRS record places CodeSOTA in its census of aggregators (an archive source, ledgered as MMRS claims), while the field refuses the class ('Unlike aggregator sites, CodeSOTA verifies results independently', B2 FAQ Q02; 'Not a press-release aggregator', B4 §02), so no field source sources it. The aliases are the entity's name (with or without a space, any case), its domain, its maker's name as the homepage gives it ('By Fabryka AI'), its editor's name and his GitHub handle (github.com/kwikiel/codesota.com, B4). 'Papers with Code' is not an alias: it names another entity (census row papers-with-code), whose own row ran it. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on CodeSOTA (what it is, its maker, its succession claim, its offerings, a measure taken on it) or applies an archive category to benchmark leaderboards or task routing as a class; a sentence using 'router' or 'leaderboard' about another object, or a bare listing, is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'codesota' (codesota-aio-20261029, OBS-df84f10ecc75, ADDR-e42b2275bc5a), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the MMRS meta-aggregator record) are ledgered beside the deposits as CAP-1-NN and MMRS-NN."
+}

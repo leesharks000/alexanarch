@@ -1,0 +1,1309 @@
+{
+ "row": "aeovision-geo-papers",
+ "address": "aeo vision top arxiv papers geo",
+ "addresses": [
+  "aeo vision top arxiv papers geo"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the rendered Wikipedia text, or the card's title and snippet for the unreachable card; 59/59 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B8, eight cards, eight sources); 'own_page', the entity's own pages the MMRS record cites: the article itself (the record's one source), which T also surfaced as card 8 (B8), and the vendor's articles index the task names, which T surfaced as card 1 (B1): both are carried as cards and marked own pages in their role, so no own page stands outside T's rail; 'wikipedia', B9 (AEO Vision: no article, HTTP 404) and B10 (Generative engine optimization, the class's article). B2 (LinkedIn) was not found and stands by its card's title and snippet.",
+ "lineage_note": "Lineages: the vendor: AEO Vision, its articles and its product (B1, B8); other lists in the field (B2, B4, B5, B6, B7); the critical survey: what GEO's evidence establishes (B3, B4); GEO as a term: definitions, synonyms, no consensus (B3, B6, B10); the foundational gains and their conditions (B3, B4, B6, B7); the GEO paper: Aggarwal et al., arXiv 2311.09735, KDD 2024 (B4, B5, B6, B7, B8); the verifiability paper: Liu, Zhang and Liang (B4, B5, B6); measurement: the vendor's loop and the field's measurement problem (B4, B7, B8); the commercial frame: vendors, investment, tools (B4, B7, B10); the RAG papers: two works, and a merged entry (B5, B6, B8); what it is: a vendor list of twelve arXiv papers for GEO (B8); the papers listed: GEO, earned media, conversational SEO, citation studies (B8); reading the research: the list's guidance to teams (B8); the encyclopedia (B9, B10)",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/ (Bn.html raw, Bn.txt text with scripts and styles stripped by a parser written for this row; B9.raw.html, B9.html and B9.search.html the three Wikipedia responses for AEO Vision (404, 404, 429); B10.wiki raw wikitext, B10.html rendered); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; the vendor's articles index",
+   "card": "AEO Vision — Articles | AEO Vision",
+   "url": "https://aeovision.ai/articles/",
+   "kind": "Overview card (own page: the vendor's articles index)",
+   "surfaced_by_T": [
+    {
+     "slug": "aeo-vision-top-arxiv-papers-geo-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B1.html",
+     "sha256": "4e503d1c4878237a44003767f1962c810dea4e32b19a5d92eb077618c3d9b543"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B1.txt",
+     "sha256": "861d880dd313a0edeee73ebd50d3678509818054ccf6cc93dd0f3b9656d895e6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:47Z",
+    "http": 200,
+    "url": "https://aeovision.ai/articles/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B1.html",
+    "raw_sha256": "4e503d1c4878237a44003767f1962c810dea4e32b19a5d92eb077618c3d9b543",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B1.txt"
+    ]
+   },
+   "card_title": "Articles | AEO Vision",
+   "card_snippet": "Jul 15, 2026 — [Tested & Ranked] The Best Generative Engine Optimization Tools (GEO Tools) for 2026. GEO tools exist to answer a different question than classic SEO software. ...",
+   "card_note": null,
+   "names_operator": "yes ('AEO Vision' in the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by the card's title and site (aeovision.ai/articles redirects to /articles/). The card's snippet is the index's lead article ('[Tested & Ranked] The Best Generative Engine Optimization Tools (GEO Tools) for 2026'), not the papers list, which the index lists third. An own page of the entity's operator (the task names it); the MMRS record cites only the article"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "LinkedIn·Kashmala Malik — Top 6 Research Papers & Studies on GEO & AEO | Kashmala Malik - LinkedIn",
+   "url": null,
+   "kind": "Overview card (LinkedIn post; unreachable)",
+   "surfaced_by_T": [
+    {
+     "slug": "aeo-vision-top-arxiv-papers-geo-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {},
+   "fetched": null,
+   "card_title": "Top 6 Research Papers & Studies on GEO & AEO | Kashmala Malik - LinkedIn",
+   "card_snippet": "July 23, 2025 — Verifiability in AI Search: The Stanford University paper, \"Evaluating Verifiability in Generative Search Engines\" (https://lnkd.in/en8grjwh), provides insight ...",
+   "card_note": null,
+   "names_operator": "no ('AEO Vision' absent from the card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the card title and snippet)",
+   "note": "not found: three WebSearch queries on 2026-10-29 (05:07–05:10Z): 'Kashmala Malik \"Top 6 Research Papers & Studies on GEO & AEO\" LinkedIn'; '\"Kashmala Malik\" research papers GEO AEO verifiability generative search engines'; 'site:linkedin.com Kashmala Malik \"Research Papers\" GEO AEO'; and '\"Top 6 Research Papers\" GEO AEO LinkedIn post'. None returned the post. Admitted by card title and snippet, which stand as its only text (§3.1(a))",
+   "unreachable": {
+    "tried": "not found: three WebSearch queries on 2026-10-29 (05:07–05:10Z): 'Kashmala Malik \"Top 6 Research Papers & Studies on GEO & AEO\" LinkedIn'; '\"Kashmala Malik\" research papers GEO AEO verifiability generative search engines'; 'site:linkedin.com Kashmala Malik \"Research Papers\" GEO AEO'; and '\"Top 6 Research Papers\" GEO AEO LinkedIn post'. None returned the post. Admitted by card title and snippet, which stand as its only text (§3.1(a))",
+    "at": "2026-10-29T05:07Z–05:10Z",
+    "result": "not found (no URL to fetch)"
+   }
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3",
+   "card": "arXiv — [2607.14035] Optimizing Visibility in Generative Engines: A Critical Survey of Generative Engine Optimization (2023-2026)",
+   "url": "https://arxiv.org/abs/2607.14035",
+   "kind": "Overview card (arXiv abstract page)",
+   "surfaced_by_T": [
+    {
+     "slug": "aeo-vision-top-arxiv-papers-geo-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B3.html",
+     "sha256": "0b8cd0685ce1f107b7de2ffadb5cbf89bc95ffb82874030856560bfad21e0902"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B3.txt",
+     "sha256": "a7fcedc144c8c845baf1d0d423d3e497a6e7c2b11276ce4c52d50485ce423d3d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:54Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2607.14035",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B3.html",
+    "raw_sha256": "0b8cd0685ce1f107b7de2ffadb5cbf89bc95ffb82874030856560bfad21e0902",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B3.txt"
+    ]
+   },
+   "card_title": "[2607.14035] Optimizing Visibility in Generative Engines: A Critical Survey of Generative Engine Optimization (2023-2026)",
+   "card_snippet": "Optimizing Visibility in Generative Engines: A Critical Survey of Generative Engine Optimization (2023-2026) Olivier Martinez View a PDF of the paper titled Opt...",
+   "card_note": null,
+   "names_operator": "no ('AEO Vision' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's identifier; the abstract page (the PDF not fetched); submitted 15 Jul 2026, the date of AEO Vision's article; not on AEO Vision's list"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "geoready.dev — GEO Research — Papers Behind AI Search Visibility - GeoReady",
+   "url": "https://geoready.dev/research/",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "aeo-vision-top-arxiv-papers-geo-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B4.html",
+     "sha256": "8d0657719fe790b6ca8cbac305b7960b8ba02406d8fdd06c4cb5c506a1acb015"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B4.txt",
+     "sha256": "043504f0594c316eede296d29c237acbadae38958235fb21e2f0aa9ba5f118ce"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:54Z",
+    "http": 200,
+    "url": "https://geoready.dev/research/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B4.html",
+    "raw_sha256": "8d0657719fe790b6ca8cbac305b7960b8ba02406d8fdd06c4cb5c506a1acb015",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B4.txt"
+    ]
+   },
+   "card_title": "GEO Research — Papers Behind AI Search Visibility - GeoReady",
+   "card_snippet": "Sep 15, 2026 — GEO: Generative Engine Optimization. Aggarwal et al. — Princeton, Georgia Tech, Allen Institute for AI, IIT Delhi. Finding. Coined the term GEO and introduced G...",
+   "card_note": null,
+   "names_operator": "yes ('AEO Vision' in the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by the card's title and site (geoready.dev/research redirects to /research/). The page carries both of T's papers not on AEO Vision's list (the Martinez survey, the Stanford verifiability paper) and the snippet's wording 'Coined the term GEO and introduced GEO-bench'. It names AEO Vision as a competitor in its navigation ('AEO Vision vs GeoReady')"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "AEO VC — AEO & GEO Research Papers",
+   "url": "https://www.aeo.vc/research",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "aeo-vision-top-arxiv-papers-geo-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B5.html",
+     "sha256": "b98049f66c93ebdf92041bac1974d8bfbeb3a0e25c7f578265e8d0b35aa27a7c"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B5.txt",
+     "sha256": "1cc51aa42fbaf4a576d05565776c7e99311a8a4cbd0194ff3ac6f961ded27a94"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:55Z",
+    "http": 200,
+    "url": "https://www.aeo.vc/research",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B5.html",
+    "raw_sha256": "b98049f66c93ebdf92041bac1974d8bfbeb3a0e25c7f578265e8d0b35aa27a7c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B5.txt"
+    ]
+   },
+   "card_title": "AEO & GEO Research Papers",
+   "card_snippet": "Research Papers. Academic research and studies on AEO, GEO, and AI-powered search optimization. GEO. AI Search. Optimization. Generative Engine Optimization. Pr...",
+   "card_note": null,
+   "names_operator": "no ('AEO Vision' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by the card's title and site. Nine entries. Its second entry is the merged RAG entry: 'Retrieval-Augmented Generation for Large Language Models', 'Patrick Lewis, Ethan Perez, et al. · 2023', 'NeurIPS 2020', linked to arXiv 2005.11401 (in the HTML)"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Marketing.Chat — GEO & AEO: the guide to showing up in ChatGPT, Claude, Gemini and Perplexity.",
+   "url": "https://marketing.chat/en/guias/geo-generative-engine-optimization",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "aeo-vision-top-arxiv-papers-geo-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B6.html",
+     "sha256": "26bcc5975e4287b119bbc8da8871a4b944797cd4fc4d1285ab1886ed8d2960f2"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B6.txt",
+     "sha256": "b1564e40b573812520b649138f58046fdfe582c98ca48c6832d3104fd2330d53"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:18Z",
+    "http": 200,
+    "url": "https://marketing.chat/en/guias/geo-generative-engine-optimization",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B6.html",
+    "raw_sha256": "26bcc5975e4287b119bbc8da8871a4b944797cd4fc4d1285ab1886ed8d2960f2",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B6.txt"
+    ]
+   },
+   "card_title": "GEO & AEO: the guide to showing up in ChatGPT, Claude, Gemini and Perplexity.",
+   "card_snippet": "Search is splitting into three layers running in parallel: traditional search (SEO), answer engines (AEO) and generative engines (GEO). The seminal paper \"GEO: ...",
+   "card_note": null,
+   "names_operator": "no ('AEO Vision' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found through the site's sitemap (the Portuguese guide at /guias/geo-generative-engine-optimization) and its English path /en/, whose text carries the card's snippet ('Search is splitting into three layers running in parallel'). A long guide (about 9,400 words saved); ledgered at its header, executive summary, the founding paper's section, the terms and the foundational-papers table"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "role": "Overview card 7",
+   "card": "Veza Digital — 13 Best AEO and GEO Agencies in 2026 - Veza Digital",
+   "url": "https://www.vezadigital.com/post/best-aeo-geo-agencies",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "aeo-vision-top-arxiv-papers-geo-aio-20261029",
+     "card": 7
+    }
+   ],
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B7.html",
+     "sha256": "ab8e778ad49384f89a77dd9d9ac4cf4b5d3bc5a9ec925d7ee4c890a20874d912"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B7.txt",
+     "sha256": "73158ecd680f8b8c3b46a5bee7782957c0f148d3bc312f9f9be1711ac6780e9f"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:19Z",
+    "http": 200,
+    "url": "https://www.vezadigital.com/post/best-aeo-geo-agencies",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B7.html",
+    "raw_sha256": "ab8e778ad49384f89a77dd9d9ac4cf4b5d3bc5a9ec925d7ee4c890a20874d912",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B7.txt"
+    ]
+   },
+   "card_title": "13 Best AEO and GEO Agencies in 2026 - Veza Digital",
+   "card_snippet": "AEO And GEO Are The Same Thing Where The Two Terms Came From When we look back to the early days of these two terms, the differences become much clearer. GEO or...",
+   "card_note": null,
+   "names_operator": "no ('AEO Vision' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found through the site's sitemap; the page title '13 Best AEO and GEO Agencies 2026 (They Are The Same Thing)'; the card's snippet is its section 'AEO And GEO Are The Same Thing'. Agency profiles not ledgered; the opening, the terms' history and the evidence sections are"
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "role": "Overview card 8; the entity's own page",
+   "card": "aeovision.ai — Top 12 Arxiv Papers for Generative Engine ... - AEO Vision",
+   "url": "https://aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization/",
+   "kind": "Overview card (own page: the entity itself; the MMRS record's source)",
+   "surfaced_by_T": [
+    {
+     "slug": "aeo-vision-top-arxiv-papers-geo-aio-20261029",
+     "card": 8
+    }
+   ],
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B8.html",
+     "sha256": "92e30ed06fbd515843e9b1a638abd947df5e06436a64372b15a9185c223c118a"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B8.txt",
+     "sha256": "d478c90d3ac5054c6e5e2446adf11d54d52eca025dc40254d588892659077ef0"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:46Z",
+    "http": 200,
+    "url": "https://aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B8.html",
+    "raw_sha256": "92e30ed06fbd515843e9b1a638abd947df5e06436a64372b15a9185c223c118a",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B8.txt"
+    ]
+   },
+   "card_title": "Top 12 Arxiv Papers for Generative Engine ... - AEO Vision",
+   "card_snippet": "Jul 15, 2026 — This roundup highlights the top 12 arXiv papers for Generative Engine Optimization that practitioners actually use: the foundational GEO paper, conversational .",
+   "card_note": null,
+   "names_operator": "yes ('AEO Vision' in the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the entity's own page; the MMRS record's one source (aeovision.ai/articles/top-arxiv-papers-for-generative-engine-optimization, read 2026-10-28, for existence), which redirects to the trailing-slash URL. Also surfaced by T, as card 8 and as the composition's closing pointer. Its og:image points to http://localhost:3000/ (raw HTML, not ledgered)"
+  },
+  {
+   "id": "B9",
+   "origin": "wikipedia",
+   "role": "Wikipedia: the vendor's name",
+   "card": "Wikipedia — AEO Vision (no article)",
+   "url": "https://en.wikipedia.org/wiki/AEO_Vision",
+   "kind": "Wikipedia (no article)",
+   "surfaced_by_T": [],
+   "files": {
+    "B9.raw.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B9.raw.html",
+     "sha256": "5f28e1ed57311decc0caa765342373047018aac937a56265f3097a3cec41a4ee"
+    },
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B9.html",
+     "sha256": "4091e29af5997e206ca8c3f4761f200d9693ad4d09937007962111085f0eba45"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B9.txt",
+     "sha256": "4dafd99d27a347d69e20646f5e63dc88ec6f80591027c9308245e8a50b9f8c80"
+    },
+    "B9.search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B9.search.html",
+     "sha256": "330bb19e5ecef1790849f2b10d15d3d829819b09b798ae1c803c2f1b178764fa"
+    },
+    "B9.search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B9.search.txt",
+     "sha256": "327b4595f405a2f08c9c1b1662aa9cc62e2675cd50f612406fe4c675f444583b"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:39Z",
+    "http": 404,
+    "url": "https://en.wikipedia.org/wiki/AEO_Vision",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B9.raw.html",
+    "raw_sha256": "5f28e1ed57311decc0caa765342373047018aac937a56265f3097a3cec41a4ee",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B9.txt",
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B9.search.txt"
+    ]
+   },
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": null,
+   "names_operator": "the name only as the missing title the 404 page echoes ('Please search for AEO Vision in Wikipedia'); no article",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "no article: index.php?title=AEO_Vision&action=raw&redirect=no returned HTTP 404 (05:09:39Z), the rendered /wiki/AEO_Vision HTTP 404 ('Wikipedia does not have an article with this exact name'); a full-text search for \"AEO Vision\" was refused with HTTP 429 (twice: the API at 05:09:4xZ, Special:Search at 05:10:04Z), so mentions elsewhere in Wikipedia were not checked. The GEO article (B10) does not name AEO Vision"
+  },
+  {
+   "id": "B10",
+   "origin": "wikipedia",
+   "role": "Wikipedia: Generative engine optimization",
+   "card": "Wikipedia — Generative engine optimization",
+   "url": "https://en.wikipedia.org/wiki/Generative_engine_optimization",
+   "kind": "Wikipedia (the class's article)",
+   "surfaced_by_T": [],
+   "files": {
+    "B10.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B10.wiki",
+     "sha256": "9da191442c0b49b86dbf74029e35c0ba84dadd84452a31818fd609333e1e5318"
+    },
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B10.html",
+     "sha256": "0967735702685f6392084f28700278002b83ae47a9e6ce2352117470aec3af66"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B10.txt",
+     "sha256": "8a4d31da33adf47b5cef56e50d4155bb836244c4ffa28372afbd466cad4b70f8"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:09:39Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Generative_engine_optimization",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B10.wiki",
+    "raw_sha256": "9da191442c0b49b86dbf74029e35c0ba84dadd84452a31818fd609333e1e5318",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B10.wiki",
+     "datasets/negative-of-the-negative/v2/intake/aeovision-geo-papers-20261029/B10.txt"
+    ]
+   },
+   "card_title": null,
+   "card_snippet": null,
+   "card_note": null,
+   "names_operator": "no ('AEO Vision' absent from the saved text, card title and snippet)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the article for the class the list names: raw wikitext (index.php?title=Generative_engine_optimization&action=raw&redirect=no, 200, 05:09:39Z) and the rendered page (200, 05:09:49Z); quotes from the rendered text. It names no AEO Vision and no list of GEO papers"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Expert guides on AI search visibility, answer engine optimization, and modern brand strategy.",
+   "claim": "the vendor's articles index describes its articles as guides on AI search visibility, answer engine optimization and brand strategy",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the vendor: AEO Vision, its articles and its product",
+   "date": "2026-10-29 (index undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 861d880dd313a0ed…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "first listed article (the card's snippet)",
+   "quote": "[Tested & Ranked] The Best Generative Engine Optimization Tools (GEO Tools) for 2026 … GEO tools exist to answer a different question than classic SEO software.",
+   "claim": "the index's lead article, a tested-and-ranked list of GEO tools, opens by setting GEO tools apart from classic SEO software",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the vendor: AEO Vision, its articles and its product",
+   "date": "2026-10-29 (index undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 861d880dd313a0ed…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "listing: AI Search & Discovery Trends",
+   "quote": "Top 12 Arxiv Papers for Generative Engine Optimization in 2026 … Generative Engine Optimization moved from a buzzword to a research field",
+   "claim": "the index lists the article among its articles, dated 15 July 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the vendor: AEO Vision, its articles and its product",
+   "date": "2026-10-29 (index undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 861d880dd313a0ed…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer (also B8 footer)",
+   "quote": "The AI Search Visibility Platform. Track, analyze, and optimize your brand's presence across ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, and AI Overviews.",
+   "claim": "AEO Vision describes itself as an AI search visibility platform that tracks and optimizes a brand's presence across six answer surfaces",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the vendor: AEO Vision, its articles and its product",
+   "date": "2026-10-29 (index undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 861d880dd313a0ed…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card title and snippet (not found; snippet stands)",
+   "quote": "Top 6 Research Papers & Studies on GEO & AEO | Kashmala Malik - LinkedIn … July 23, 2025 — Verifiability in AI Search: The Stanford University paper, \"Evaluating Verifiability in Generative Search Engines\" (https://lnkd.in/en8grjwh), provides insight ...",
+   "claim": "a LinkedIn post of 23 July 2025 listing six GEO and AEO research papers, the Stanford verifiability paper among them (snippet only)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "other lists in the field",
+   "date": "2025-07-23 (card date)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F6": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "abstract page header",
+   "quote": "[Submitted on 15 Jul 2026] … Authors:Olivier Martinez",
+   "claim": "Olivier Martinez's critical survey, submitted to arXiv on 15 July 2026, the same date as AEO Vision's article",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critical survey: what GEO's evidence establishes",
+   "date": "2026-07-15 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a7fcedc144c8c845…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s1",
+   "quote": "Generative Engine Optimization (GEO) seeks to increase content's presence, likelihood of citation, or influence in answers produced by generative engines.",
+   "claim": "the survey defines GEO: increasing content's presence, likelihood of citation or influence in generative engines' answers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "GEO as a term: definitions, synonyms, no consensus",
+   "date": "2026-07-15 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a7fcedc144c8c845…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s2–s3",
+   "quote": "Since the foundational GEO paper, the field has expanded rapidly, but terminology, metrics, and evidence standards remain heterogeneous. This critical survey reviews 45 studies selected under a November 2023-July 2026 publication window",
+   "claim": "the field has expanded with heterogeneous terminology, metrics and evidence standards; the survey reviews 45 studies, November 2023 to July 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critical survey: what GEO's evidence establishes",
+   "date": "2026-07-15 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a7fcedc144c8c845…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s4",
+   "quote": "We argue that GEO is not a single ranking task but a stochastic, partially observable pipeline spanning search activation, crawling and indexing, retrieval, reranking and context allocation, citation, prominence, factual absorption, fidelity, and user behavior.",
+   "claim": "GEO as a stochastic, partially observable multistage pipeline, not one ranking task",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the critical survey: what GEO's evidence establishes",
+   "date": "2026-07-15 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a7fcedc144c8c845…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s5",
+   "quote": "The foundational paper's widely cited gains are valid within its experimental setting but conditional on a source already being present in a fixed context; they establish neither organic discoverability nor durable traffic effects.",
+   "claim": "the foundational paper's gains hold in its setting, conditional on the source already in a fixed context; they establish neither discoverability nor durable traffic",
+   "modality": "interpretation",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the foundational gains and their conditions",
+   "date": "2026-07-15 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a7fcedc144c8c845…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s6–s7",
+   "quote": "Reviewed work indicates that topical relevance and context position are the most reproducible levers, generic heuristics transfer poorly, competition can erode individual gains, and citation-oriented rewrites can impair retrieval. Commercial audits further reveal low source overlap, substantial run-to-run variability, and persistent fidelity gaps.",
+   "claim": "relevance and context position the most reproducible levers; heuristics transfer poorly; competition erodes gains; commercial audits show low overlap, run-to-run variability, fidelity gaps",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critical survey: what GEO's evidence establishes",
+   "date": "2026-07-15 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a7fcedc144c8c845…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Abstract s9",
+   "quote": "Within this corpus, the evidence is narrow: already-retrieved content can causally alter its citation or use, but no reviewed technique shows a stable, longitudinal, cross-platform causal effect on organic discoverability or downstream behavior.",
+   "claim": "the survey's governing limit: no reviewed technique shows a stable, longitudinal, cross-platform causal effect on discoverability or downstream behaviour",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the critical survey: what GEO's evidence establishes",
+   "date": "2026-07-15 (submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a7fcedc144c8c845…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Built on published research and our own documented analysis, not marketing claims. The weights are a considered starting point, not a law of nature. … Last updated: September 2026",
+   "claim": "GeoReady's research page presents the papers behind its scoring weights, which it calls a starting point",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "other lists in the field",
+   "date": "2026-09 (page 'Last updated: September 2026'; card dated 15 Sep 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 043504f0594c316e…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "entry: GEO: Generative Engine Optimization (KDD 2024)",
+   "quote": "Aggarwal et al. — Princeton, Georgia Tech, Allen Institute for AI, IIT Delhi … Coined the term GEO and introduced GEO-bench (10,000 queries across 9 domains).",
+   "claim": "the GEO paper, by Aggarwal et al. of four institutions, coined the term and introduced GEO-bench",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the GEO paper: Aggarwal et al., arXiv 2311.09735, KDD 2024",
+   "date": "2026-09 (page 'Last updated: September 2026'; card dated 15 Sep 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 043504f0594c316e…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "entry: GEO, Finding s3",
+   "quote": "The headline gains are a relative maximum on one metric (position-adjusted word count) and are measured with the source already present in the model’s context.",
+   "claim": "the headline gains are a relative maximum on one metric, measured with the source already in context",
+   "modality": "interpretation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundational gains and their conditions",
+   "date": "2026-09 (page 'Last updated: September 2026'; card dated 15 Sep 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 043504f0594c316e…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "entry: A Critical Survey of Generative Engine Optimization (2023–2026)",
+   "quote": "The \"+40% visibility\" figure is reframed as a conditional relative maximum, not a universal rank gain.",
+   "claim": "GeoReady reports the survey's reframing of the +40% figure as a conditional relative maximum",
+   "modality": "attributed",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critical survey: what GEO's evidence establishes",
+   "date": "2026-09 (page 'Last updated: September 2026'; card dated 15 Sep 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 043504f0594c316e…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "entry: Evaluating Verifiability in Generative Search Engines (EMNLP 2023 Findings)",
+   "quote": "Liu, Zhang, Liang — Stanford … On average only 51.5% of generated sentences are fully supported by their citations, and only 74.5% of citations actually support the statement they are attached to.",
+   "claim": "the Stanford verifiability audit: 51.5% of sentences fully supported, 74.5% of citations supporting their statement",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the verifiability paper: Liu, Zhang and Liang",
+   "date": "2026-09 (page 'Last updated: September 2026'; card dated 15 Sep 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 043504f0594c316e…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "entry: Don’t Measure Once (Schulte, Bleeker, Kaufmann)",
+   "quote": "AI-search visibility is a distribution, not a single value.",
+   "claim": "AI-search visibility is a distribution, not a single value",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "measurement: the vendor's loop and the field's measurement problem",
+   "date": "2026-09 (page 'Last updated: September 2026'; card dated 15 Sep 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 043504f0594c316e…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "closing note",
+   "quote": "GEO Optimizer focuses on infrastructure optimization — crawlability, structured data, meta signals, and content architecture — not on content manipulation, keyword stuffing, or prompt injection. The published benchmarks (C-SEO Bench, E-GEO) and the 2026 GEO survey all point the same way: durable gains come from structure and relevance, and copy tricks erode as everyone adopts them.",
+   "claim": "GeoReady's product scope, and its reading of the benchmarks and the survey: durable gains from structure and relevance; copy tricks erode",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundational gains and their conditions",
+   "date": "2026-09 (page 'Last updated: September 2026'; card dated 15 Sep 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 043504f0594c316e…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "navigation: Compare",
+   "quote": "AEO Vision vs GeoReady: engines, tiers, transparency",
+   "claim": "GeoReady compares itself with AEO Vision among its competitors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the commercial frame: vendors, investment, tools",
+   "date": "2026-09 (page 'Last updated: September 2026'; card dated 15 Sep 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 043504f0594c316e…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Open-source AI search visibility audit and monitoring. Built in Italy by Juan Camilo Auriti.",
+   "claim": "GeoReady is an open-source AI search visibility audit, built by Juan Camilo Auriti",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "other lists in the field",
+   "date": "2026-09 (page 'Last updated: September 2026'; card dated 15 Sep 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 043504f0594c316e…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Research Papers … Academic research and studies on AEO, GEO, and AI-powered search optimization.",
+   "claim": "AEO VC's page of research papers on AEO, GEO and AI-powered search optimization",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "other lists in the field",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1cc51aa42fbaf4a5…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "entry 2",
+   "quote": "Retrieval-Augmented Generation for Large Language Models … Patrick Lewis, Ethan Perez, et al. · 2023 … NeurIPS 2020",
+   "claim": "AEO VC's RAG entry gives the survey's title to Lewis and Perez, dated 2023 and NeurIPS 2020",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the RAG papers: two works, and a merged entry",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1cc51aa42fbaf4a5…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "entry 1",
+   "quote": "Generative Engine Optimization … Pranjal Aggarwal, Vishwas Srivastava, et al. · 2024 … This paper introduces Generative Engine Optimization (GEO), strategies for optimizing content visibility in AI-powered search systems like ChatGPT, Perplexity, and Gemini.",
+   "claim": "AEO VC's GEO entry, its second author given as Vishwas Srivastava",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the GEO paper: Aggarwal et al., arXiv 2311.09735, KDD 2024",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1cc51aa42fbaf4a5…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "entry 9",
+   "quote": "Evaluating Verifiability in Generative Search Engines … Nelson F. Liu, Maged S. Al-shaibani, et al. · 2023",
+   "claim": "AEO VC gives the verifiability paper to Liu and Al-shaibani",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the verifiability paper: Liu, Zhang and Liang",
+   "date": "2026-10-29 (undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 1cc51aa42fbaf4a5…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "header",
+   "quote": "Updated on April 21, 2026 … We consolidated Princeton's seminal paper (KDD 2024), 40+ market benchmarks, the Brazilian context and a 90-day roadmap. … Gustavo Stork + Marketing.Chat Research",
+   "claim": "Marketing.Chat's guide (Gustavo Stork and Marketing.Chat Research, updated 21 April 2026) consolidates the KDD paper, market benchmarks and a roadmap",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "other lists in the field",
+   "date": "2026-04-21 (page 'Updated on April 21, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b1564e40b5738125…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Executive summary ¶1",
+   "quote": "Search is splitting into three layers running in parallel: traditional search (SEO), answer engines (AEO) and generative engines (GEO). The seminal paper \"GEO: Generative Engine Optimization\" by Aggarwal et al. (Princeton, Georgia Tech, Allen Institute, IIT Delhi), presented at KDD 2024, coined the discipline academically. It showed LLM optimization techniques can raise a source's visibility by up to 40%, with peaks of 115% for sources ranked 5th.",
+   "claim": "search split into SEO, AEO and GEO layers; the KDD paper coined the discipline and showed gains up to 40%, peaks of 115% for fifth-ranked sources",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the foundational gains and their conditions",
+   "date": "2026-04-21 (page 'Updated on April 21, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b1564e40b5738125…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "1.1 The paper that created the field ¶2",
+   "quote": "First version: arXiv 2311.09735 v1, November 16, 2023. Final v3 on June 28, 2024.",
+   "claim": "the GEO paper's identifier and versions: arXiv 2311.09735, v1 16 November 2023, v3 28 June 2024",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the GEO paper: Aggarwal et al., arXiv 2311.09735, KDD 2024",
+   "date": "2026-04-21 (page 'Updated on April 21, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b1564e40b5738125…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "9.1 Foundational papers, table rows 1 and 9",
+   "quote": "2023/2024 | Formalization; GEO-Bench; 9 techniques; +40% … RAG (Lewis et al.) | Facebook AI | NeurIPS 2020 | 2020 | Underlying technical foundation",
+   "claim": "Marketing.Chat's table dates the GEO paper 2023/2024 and gives RAG to Lewis et al., NeurIPS 2020",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the RAG papers: two works, and a merged entry",
+   "date": "2026-04-21 (page 'Updated on April 21, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b1564e40b5738125…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "verifiability entry",
+   "quote": "Liu, Zhang, Liang (Stanford, EMNLP Findings 2023), \"Evaluating Verifiability in Generative Search Engines\" (arXiv 2304.09848): found that only 51.5% of generated sentences are fully supported by citations",
+   "claim": "the verifiability paper by Liu, Zhang and Liang, arXiv 2304.09848: 51.5% fully supported",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the verifiability paper: Liu, Zhang and Liang",
+   "date": "2026-04-21 (page 'Updated on April 21, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b1564e40b5738125…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "1.2 Where the terms come from",
+   "quote": "Wikipedia (entry \"Generative Engine Optimization\") confirms there's no academic consensus yet to rigidly distinguish AEO and GEO in 2026.",
+   "claim": "no academic consensus to distinguish AEO from GEO, attributed to Wikipedia",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "GEO as a term: definitions, synonyms, no consensus",
+   "date": "2026-04-21 (page 'Updated on April 21, 2026')",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 b1564e40b5738125…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "opening; byline",
+   "quote": "Thirteen AEO and GEO agencies, listed alphabetically. Plus what the independent evidence actually says about whether any of this works. … Ivana Poposka … September 26, 2026",
+   "claim": "Veza Digital's list of thirteen AEO and GEO agencies with the independent evidence (Ivana Poposka, 26 September 2026)",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "other lists in the field",
+   "date": "2026-09-26 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 73158ecd680f8b8c…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "AEO And GEO Are The Same Thing; Where The Two Terms Came From",
+   "quote": "GEO originated from academia. Researchers affiliated with Princeton University, IIT Delhi, Georgia Tech, and the Allen Institute for AI published a research paper, \"Generative Engine Optimization,\" on arXiv in November 2023.",
+   "claim": "GEO originated in a research paper on arXiv in November 2023, by researchers of four institutions",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the GEO paper: Aggarwal et al., arXiv 2311.09735, KDD 2024",
+   "date": "2026-09-26 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 73158ecd680f8b8c…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "Where The Two Terms Came From ¶4",
+   "quote": "In the same newsletter, a16z disclosed that it had investments in several companies working on GEO measurement.",
+   "claim": "a16z, which popularized GEO in May 2025, disclosed investments in GEO measurement companies",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the commercial frame: vendors, investment, tools",
+   "date": "2026-09-26 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 73158ecd680f8b8c…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "The Genuinely New Part Is Measurement ¶2",
+   "quote": "the optimization work is mostly SEO, the measurement work is genuinely new, and the measurement is actually the harder problem to solve well.",
+   "claim": "the optimization is mostly SEO; measurement is new and the harder problem",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "measurement: the vendor's loop and the field's measurement problem",
+   "date": "2026-09-26 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 73158ecd680f8b8c…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "The Forty Percent Figure, Properly Qualified ¶2–3",
+   "quote": "The same paper's Table 2 shows that identical technique cutting a rank-1 page's visibility by 30.3 percent, while lifting a rank-5 page's visibility by 115.1 percent. … The test itself was run on a simulated generative search engine with a zero-sum, five-source setup, not on live ChatGPT or Perplexity.",
+   "claim": "the 40% figure qualified: rank-dependent (−30.3% at rank 1, +115.1% at rank 5), on a simulated zero-sum five-source engine",
+   "modality": "interpretation",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the foundational gains and their conditions",
+   "date": "2026-09-26 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 73158ecd680f8b8c…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "card",
+   "locus": "How Would You Even Verify It ¶1",
+   "quote": "eMarketer research found that 40 to 60 percent of the sources an AI system cites for a given query change from one month to the next.",
+   "claim": "40 to 60 percent of cited sources change month to month (eMarketer)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "measurement: the vendor's loop and the field's measurement problem",
+   "date": "2026-09-26 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 73158ecd680f8b8c…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "title; date line",
+   "quote": "Top 12 Arxiv Papers for Generative Engine Optimization in 2026 … July 15, 2026",
+   "claim": "the article's title and date, 15 July 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a vendor list of twelve arXiv papers for GEO",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶1",
+   "quote": "Generative Engine Optimization moved from a buzzword to a research field with reproducible benchmarks, citation studies, and uncomfortable findings about earned media bias. If you are building an AEO/GEO program in 2026, these arXiv papers are the shortest path from LinkedIn tips to evidence.",
+   "claim": "GEO become a research field; the papers as the shortest path from tips to evidence for an AEO/GEO program",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a vendor list of twelve arXiv papers for GEO",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶2",
+   "quote": "This roundup highlights the top 12 arXiv papers for Generative Engine Optimization that practitioners actually use: the foundational GEO paper, conversational SEO benchmarks, citation-behavior studies, structural optimization work, and the RAG papers that explain why retrieval sits under every answer engine.",
+   "claim": "the list defined by itself: twelve arXiv papers practitioners use, in five groups",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a vendor list of twelve arXiv papers for GEO",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "¶3",
+   "quote": "Links go to arXiv abstracts so you can open the PDF, check versions, and cite correctly.",
+   "claim": "each entry links its arXiv abstract, for checking versions and citing correctly",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a vendor list of twelve arXiv papers for GEO",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "item 1",
+   "quote": "arXiv: 2311.09735 · KDD 2024 … In their experiments, GEO methods improved visibility by up to about 40%, with gains varying by domain.",
+   "claim": "item 1: the GEO paper, arXiv 2311.09735, KDD 2024; gains up to about 40%, varying by domain",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the GEO paper: Aggarwal et al., arXiv 2311.09735, KDD 2024",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "items 2–3",
+   "quote": "AI search systems show a systematic bias toward earned media (third-party authoritative sources) over brand-owned and social content … arXiv: 2506.11097 · NeurIPS 2025 Datasets & Benchmarks … Many popular C-SEO document edits are ineffective or even hurt ranking once multiple actors apply the same tricks.",
+   "claim": "item 2: earned-media bias (Chen et al., 2509.08919); item 3: C-SEO Bench, NeurIPS 2025, conversational SEO edits fail under multi-actor adoption",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papers listed: GEO, earned media, conversational SEO, citation studies",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "items 4–8 (quick table)",
+   "quote": "What Gets Cited: Competitive GEO in AI Answer Engines … Structural Feature Engineering for GEO … AI Answer Engine Citation Behavior (GEO-16) … GEO at Scale: Measuring Brand Visibility … Authority Signals in Claude Health Citations",
+   "claim": "items 4–8: five citation-behaviour, structure and measurement studies of 2025–2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papers listed: GEO, earned media, conversational SEO, citation studies",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "items 9–10",
+   "quote": "9. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (Lewis et al.) … arXiv: 2005.11401 … 10. Retrieval-Augmented Generation for Large Language Models: A Survey (Gao et al.) … arXiv: 2312.10997",
+   "claim": "items 9 and 10: two RAG works, Lewis et al. (2005.11401) and Gao et al.'s survey (2312.10997)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the RAG papers: two works, and a merged entry",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "items 11–12",
+   "quote": "Shows retrieval framed as generating document identifiers rather than only embedding similarity. … Demonstrates that LLMs can be prompted to generate URLs that often contain answers",
+   "claim": "items 11–12: retrieval as generating document identifiers; LLMs prompted to generate URLs",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papers listed: GEO, earned media, conversational SEO, citation studies",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "item 8",
+   "quote": "Related findings in this research lane show extremely high concentration on established institutional sources, which matches what many operators see when Claude is the pickiest engine in the stack.",
+   "claim": "item 8's summary goes beyond its paper to 'related findings' and operators' experience",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the papers listed: GEO, earned media, conversational SEO, citation studies",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "item 1 takeaway; item 7 takeaway",
+   "quote": "Treat GEO as measurable visibility inside synthesized answers, not as “rank #1.” … GEO without a measurement loop is content theater. Fixed prompts, multi-engine sampling, and competitor share are the minimum instrumentation.",
+   "claim": "the takeaways for teams: GEO as measurable visibility in answers; no GEO without a measurement loop",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "reading the research: the list's guidance to teams",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "How to read these papers",
+   "quote": "Check whether competitors also optimize. C-SEO Bench is the warning label here. … Papers without measurement stay opinions. … Engine differences are the point.",
+   "claim": "reading guidance: check competitive adoption; papers without measurement stay opinions; engines differ",
+   "modality": "interpretation",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "reading the research: the list's guidance to teams",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "What this research implies for AEO Vision users",
+   "quote": "That is the measurement loop AEO Vision is built for: daily or near-daily sampling across ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, and AI Overviews, with competitor context and citation visibility.",
+   "claim": "the article closes on its product: AEO Vision's measurement loop across six surfaces",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "measurement: the vendor's loop and the field's measurement problem",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "call to action",
+   "quote": "AEO Vision tracks brand mentions, citations, and competitors across the major AI search engines so you can test what the papers claim on your own prompt set. Plans start at $9/mo.",
+   "claim": "the product offered to test the papers' claims, from $9 a month",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the vendor: AEO Vision, its articles and its product",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "FAQ: Why include RAG papers in a GEO list?",
+   "quote": "Why include RAG papers in a GEO list? … Because most live AI search systems retrieve then generate.",
+   "claim": "the list calls itself a GEO list and includes RAG because live systems retrieve then generate",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a vendor list of twelve arXiv papers for GEO",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "FAQ: How should marketers use these papers?",
+   "quote": "Do not rewrite your site after reading a single abstract.",
+   "claim": "the list's own limit on its use: not to act on a single abstract",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "reading the research: the list's guidance to teams",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B8",
+   "origin": "card",
+   "locus": "byline",
+   "quote": "AEO Vision Content Team … Insights on AI search visibility, answer engine optimization, and brand discovery across ChatGPT, Perplexity, Gemini, Claude, and Google AI Mode.",
+   "claim": "byline: AEO Vision Content Team",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the vendor: AEO Vision, its articles and its product",
+   "date": "2026-07-15 (the page's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d478c90d3ac5054c…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B9",
+   "origin": "wikipedia",
+   "locus": "rendered page (HTTP 404); raw wikitext request (HTTP 404)",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article for AEO Vision",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 4dafd99d27a347d6…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "lead s1",
+   "quote": "Generative engine optimization (GEO), also known as answer engine optimization (AEO)[1] and artificial intelligence optimization (AIO),[2] is the practice of improving visibility in responses generated by generative artificial intelligence (AI) systems.",
+   "claim": "Wikipedia's definition: GEO, also known as AEO and AIO, the practice of improving visibility in generative AI responses",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "GEO as a term: definitions, synonyms, no consensus",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 8a4d31da33adf47b…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶1",
+   "quote": "The term \"generative engine optimization\" was introduced in a 2023 paper by Pranjal Aggarwal and co-authors, later presented at the KDD 2024 conference.[4] Several overlapping terms describe related practices, and usage varies across practitioners, vendors, and publications, with no consensus definition.",
+   "claim": "the term introduced by Aggarwal and co-authors in 2023 (KDD 2024); overlapping terms, no consensus definition",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "GEO as a term: definitions, synonyms, no consensus",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 8a4d31da33adf47b…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Terminology ¶4",
+   "quote": "\"tend to exaggerate SEO and AEO's differences to carve a startup-sized hole in marketers' tech stacks.\"",
+   "claim": "Forrester's Nikhil Lai: advocates exaggerate the differences to carve a hole in tech stacks",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the commercial frame: vendors, investment, tools",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 8a4d31da33adf47b…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B10",
+   "origin": "wikipedia",
+   "locus": "Tools ¶2",
+   "quote": "While the efficacy of third-party tools is debated within the overall GEO and SEO industries,",
+   "claim": "the efficacy of third-party GEO tools is debated (AEO Vision is not named)",
+   "modality": "documented",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 8a4d31da33adf47b…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "AEO Vision — Articles | AEO Vision",
+  "B2": "LinkedIn·Kashmala Malik — Top 6 Research Papers & Studies on GEO & AEO | Kashmala Malik - LinkedIn",
+  "B3": "arXiv — [2607.14035] Optimizing Visibility in Generative Engines: A Critical Survey of Generative Engine Optimization (2023-2026)",
+  "B4": "geoready.dev — GEO Research — Papers Behind AI Search Visibility - GeoReady",
+  "B5": "AEO VC — AEO & GEO Research Papers",
+  "B6": "Marketing.Chat — GEO & AEO: the guide to showing up in ChatGPT, Claude, Gemini and Perplexity.",
+  "B7": "Veza Digital — 13 Best AEO and GEO Agencies in 2026 - Veza Digital",
+  "B8": "aeovision.ai — Top 12 Arxiv Papers for Generative Engine ... - AEO Vision",
+  "B9": "Wikipedia — AEO Vision (no article)",
+  "B10": "Wikipedia — Generative engine optimization"
+ }
+}

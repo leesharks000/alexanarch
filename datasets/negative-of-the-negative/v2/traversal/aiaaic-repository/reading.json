@@ -1,0 +1,165 @@
+{
+ "row": "aiaaic-repository",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the AIAAIC Repository (what it is, its operator, its unit, its records, its intake, its licence, its limits); R, a relation the archive states between the repository and an archive object (the archive's terms, instruments, the MMRS meta-aggregator); O, an archive category applied to the repository or to the class the field sources for it (AI incident databases and incident tracking: B2 Tags, B3). A bare mention, a link list, a citation list or a generic use of 'incident' about another object is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 543,
+   "strata": [
+    "R"
+   ],
+   "reason": "the Hexagonal Lexical Engine's deployment map (Phase 4, Scholarly Venue Targeting) names 'AI Ethics glossaries (AIAAIC, AI Incident DB)' as the venue for definitions with citations of Semantic Liquidation, Ghost Governance and Taxonomic Violence: a relation of address between the archive's terms and the AIAAIC, which keeps an AI ethics glossary (B1, F7). Not admitted at D (the row says nothing about the repository itself) or at O (the three terms are offered to the venue, not applied to it as categories). The same row is admitted at R in the ai-incident-database row (R543-01 there)",
+   "claims": [
+    "R543-01"
+   ],
+   "cands": [
+    "D0001",
+    "R0001",
+    "O0001"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/aiaaic-repository-aio-20261029/",
+   "reason": "the Capture Registry's findings and analysis for the entity's capture by name (OBS-524198c4efed, AXN:0AA8.CAPTURE.🔓🔀◇🎬🟠🔛, 2026-10-29), read from data/EA-WG-CAPTURES-01.json",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/aiaaic-repository/ (source: /home/claude/fleet/machinemediation-org/data/meta-aggregator/census.json rows[slug == 'aiaaic-repository'] and scripts/meta_aggregator/articles.py ARTICLES['aiaaic-repository']; rendered aggregators/aiaaic-repository/index.html read for agreement)",
+   "reason": "the MMRS meta-aggregator record of the entity (editor Lee Sharks, compiled 2026-10-28; census compiled 2026-10-29, the row's only change since the 2026-10-28 copy the capture relation): its article sentences and its fields with their basis; where a field restates an own page ledgered in B it is carried as one lineage with that page",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22",
+    "MMRS-23",
+    "MMRS-24",
+    "MMRS-25",
+    "MMRS-26",
+    "MMRS-27",
+    "MMRS-28"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/ai-incident-database/",
+   "reason": "the MMRS record of a neighbour that states relations to this entity (article 'Place in the field' s2; census disambiguation and battery)",
+   "claims": [
+    "MMRS-29",
+    "MMRS-30",
+    "MMRS-31"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    2,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    40,
+    41,
+    519,
+    533,
+    540
+   ],
+   "reason": "hop, forward: #543's reference list (the archive's earlier deposits by DOI); none names the AIAAIC or an incident database (none matches the aliases or the class term in the string pass), and none states a relation to it"
+  },
+  {
+   "dep": [
+    1684
+   ],
+   "reason": "hop, reverse: #1684 (the Prediction Index) cites #543 as a location of predictions; it names neither the repository nor the class"
+  }
+ ],
+ "class_pass": "O-class: the class term (AI incident databases and incident tracking, sourced from B2 Tags and B3) matched no sentence in the archive's 1,711 scanned texts (summary.json, O_class 0)",
+ "observations": "The archive's deposits name the AIAAIC once (#543, 'AIAAIC' in the deployment map's glossary row, shared with the AI Incident DB); its expansion, its domain, its newsletter and Charlie Pownall occur in no deposit text. The hop from #543 is the same 41 candidates the ai-incident-database row read. The archive's bearing on the entity is carried by its own records of it: the MMRS meta-aggregator record and the one capture.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 1,
+   "D_deposits": 1,
+   "R_sentences": 1,
+   "R_deposits": 1,
+   "O_direct": 1,
+   "O_class": 0,
+   "O_deposits": 1,
+   "H_candidates": 41
+  },
+  "deposits_candidate": 1,
+  "deposits_admitted": 1,
+  "hop_candidates": 41,
+  "hop_admitted": 0,
+  "archive_claims": {
+   "capture": 5,
+   "mmrs": 31,
+   "deposit": 1
+  }
+ },
+ "hop": {
+  "from": [
+   543
+  ],
+  "candidates": 41,
+  "admitted": 0
+ }
+}

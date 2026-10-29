@@ -1,0 +1,172 @@
+What Happened to Papers With Code + What to Use Instead | Coursera
+For Individuals
+For Businesses
+For Universities
+For Governments
+Explore
+Degrees
+​
+Log In
+Join for Free
+Join for Free
+Data
+AI and Machine Learning
+What Happened to Papers With Code + What to Use Instead
+What Happened to Papers With Code + What to Use Instead
+Written by Coursera Staff • Updated on Oct 5, 2026
+Learn what happened to Papers With Code, where to access its data today, and which platforms can replace it for SOTA tracking, benchmark comparisons, and paper-to-code mapping.
+Key takeaways
+Papers With Code (PWC) shut down in July 2025, but its data remains publicly available, and several platforms have emerged to fill its place [ 1 ].
+Papers With Code hosted more than 18,000 papers, 1,500 leaderboards, and over 1,000 tasks, all freely accessible under a CC-BY-SA license, according to a blog post by Robert Stojnic, one of PWC’s creators [ 2 ].
+Hugging Face's Daily Papers includes a Trending Papers section added after PWC's shutdown, offering a curated feed of popular artificial intelligence (AI) research papers linked to their code implementations [ 3 ].
+You can find alternatives to PWC that cover state-of-the-art (SOTA) tracking for AI and machine learning models , benchmark comparisons, and more.
+Learn more about what happened to Papers With Code and where to find its data and tools today. If you're ready to build deeper expertise in machine learning, enroll in the IBM Machine Learning Professional Certificate . In as little as three months, you can develop hands-on skills in supervised and unsupervised learning, deep learning, and reinforcement learning using tools such as scikit-learn, Keras, and TensorFlow.
+What was Papers With Code?
+Papers With Code (PWC) was a free, open-access platform that connected machine learning research papers to their code, data sets, and benchmark results. Robert Stojnic and Ross Taylor debuted it in 2018 with a straightforward goal: make it easier to find and actually use deep learning research, not just read about it [ 1 , 4 ].
+Facebook acquired the platform in December 2019 and operated it under Meta AI Research until it sunsetted on July 24, 2025 [ 1 ]. The following day, Hugging Face's Chief Technology Officer (CTO) and co-founder, Julien Chaumond, announced a new partnership with Meta to replace PWC .
+Why was Papers With Code important?
+Papers With Code ran on an open contribution model. Researchers submitted their own papers and linked them directly to code repositories, keeping the platform current without a central editorial team. All published data operated under a CC-BY-SA license, so anyone could access, share, and build on it freely.
+At the time of its merger with Meta, PWC hosted more than 18,000 papers, 1,500 leaderboards, and over 1,000 tasks [ 2 ]. This structure gave students and AI professionals the ability to find the paper, the code, the data set, and the benchmark rankings all in one place. They did not need to search through GitHub , arXiv, and individual lab pages to piece together how a method worked.
+Learn more: The History of AI: A Timeline of Artificial Intelligence
+What happened to Papers With Code?
+Papers With Code sunsetted on July 24, 2025 [ 1 ]. The platform now redirects to Hugging Face's Trending Papers section. You can find the historical data set preserved in the Papers With Code data repository on GitHub [ 5 ].
+Can you still access Papers With Code data?
+The Papers With Code data repository on GitHub remains publicly accessible, and was last updated on September 8, 2025. You can access the raw data as JSON files covering papers, methods, data sets, and evaluation tables, but no new entries have appeared since the final snapshot [ 5 ].
+For researchers who prefer a more browsable format, a community-maintained mirror on Hugging Face preserves the same snapshot across six structured data sets, including papers with abstracts, links between papers and code, and evaluation tables. Both archives are static, and new papers, benchmarks, and leaderboard results added to the field since July 2025 do not appear in either.
+How does Hugging Face compare to Papers With Code?
+Hugging Face is the official successor to Papers With Code, and it replicates some of what the platform offered. The Papers With Code URL redirects you to the Hugging Face Trending Papers, which showcases popular research linked to their code implementations on GitHub. If you're looking to discover new papers and find associated tools, Daily Papers covers much of the same territory.
+When you get to benchmark and leaderboard coverage, the two platforms diverge. Papers With Code organized research around a paper-centric model in which any researcher could submit benchmark results from any model. This created a task-based hierarchy across multiple benchmarks. Hugging Face leaderboards take a model-centric approach, which focuses on reproducible evaluation pipelines for deployed models. The Open LLM Leaderboard, for instance, ranks open source large language models against standardized benchmarks, a narrower metric than the cross-domain SOTA tracking that made Papers With Code essential to the field.
+Method explanations, task hierarchies, and data set-level organization are also absent from Hugging Face's current offering. For researchers whose workflows depend on those features, the alternatives below can help fill the gap.
+What are the best Papers With Code alternatives?
+No single platform replicates everything Papers With Code offered. The tools below cover different parts of the workflow it supports, from state-of-the-art (SOTA) tracking and benchmark comparisons to paper-to-code mapping and data set discovery. This gives you options depending on how you used PWC.
+Wizwand
+Designed as a Papers With Code alternative for machine learning research engineers and scientists, Wizwand focuses on SOTA paper discovery and benchmark comparisons. The company built its first version directly on top of Papers With Code data. The v2 release in February 2026 then rebuilt the benchmark comparison engine to address a core limitation of the PWC model: that results that appear comparable may not be, because data set naming and task definitions can vary across papers. Rather than forcing results into a rigid schema, Wizwand v2 uses LLM-based judgment to decide whether or not two results belong in the same comparable group, making it a meaningful improvement for researchers who relied on PWC leaderboards for SOTA tracking [ 6 ].
+Hyper.ai
+Hyper.ai offers some of the broadest feature coverage of the platforms on this list, with papers, notebooks, data sets, benchmarks, SOTA tracking, and a GPU leaderboard all in one place. The platform covers more than 3,900 tasks, 73,000 benchmarks, and 18,000 papers, a scale which is comparable to Papers With Code. Its English-language interface makes it accessible to researchers worldwide, and its breadth makes it a strong option for anyone who used Papers With Code as a general-purpose machine learning research hub rather than for a specific workflow [ 7 ].
+CatalyzeX
+CatalyzeX focuses on the paper-to-code mapping use case. The platform automatically finds and surfaces old code links directly on arXiv, Google Scholar, Semantic Scholar, and other research sites as you browse. If you used Papers With Code primarily to jump from a paper to its implementation, CatalyzeX replicates that workflow without requiring you to change where you already read papers [ 8 ].
+CodeSOTA
+CodeSOTA's developers built the platform to fill the SOTA tracking gap left by Papers With Code. The platform maintains leaderboards organized by task and data set, following the paper-centric model that distinguished Papers With Code from Hugging Face's model-centric approach. For researchers tracking state-of-the-art results across specific benchmarks, CodeSOTA is a close structural replacement for that feature set [ 9 ].
+Is the Papers With Code data still free to use?
+Yes. The full data set is publicly available under a CC-BY-SA license, meaning anyone can access, use, and build on it as long as they credit the source and share derivatives under the same terms. Both the GitHub archive and the Hugging Face mirror are freely accessible with no login required. Several platforms were built directly on top of that data, which means the open-access model that made Papers With Code valuable is still alive in the tools that succeeded it.
+Keep building your machine learning expertise
+Subscribe to our weekly LinkedIn newsletter, Career Chat , for industry updates, tips, and trends in machine learning and AI. Then, explore these additional resources:
+Keep your skills current: 5 Fastest-Growing AI Skills to Build
+Hear from an expert: How to Become an AI Engineer
+Read this article: 6 Machine Learning Certificates + How to Choose the Right One for You
+With Coursera Plus , you can learn and earn credentials at your own pace from over 350 leading companies and universities. With a monthly or annual subscription, you’ll gain access to over 10,000 programs, so check the course page to confirm your selection is included.
+Build job-ready skills with Coursera Plus
+Start 7-day free trial
+Start 7-day free trial
+Article sources
+1 . Codesota. “ Papers with Code, retired , https://www.codesota.com/papers-with-code/.” Accessed April 28, 2026.
+2 . Medium. " Papers with Code is joining Facebook AI , https://medium.com/paperswithcode/papers-with-code-is-joining-facebook-ai-90b51055f694/." Accessed April 28, 2026.
+3 . Hugging Face. “ Trending Papers , https://huggingface.co/papers/trending/.” Accessed April 28, 2026.
+4 . TechCrunch. " Facebook quietly acquired another UK AI startup and almost no one noticed , https://techcrunch.com/2020/02/10/facebook-quietly-acquired-atlast-ml/." Accessed April 28, 2026.
+5 . GitHub. " Papers with code datasets , https://github.com/paperswithcode/paperswithcode-data/." Accessed April 28, 2026.
+6 . Wizwand. " Introducing Wizwand v2 — and what we learned after burning 5.4B tokens , https://www.wizwand.com/blog/introducing-wizwand-v2/." Accessed April 28, 2026.
+7 . HyperAI. " Build the Future of Artificial Intelligence , https://hyper.ai/en/." Accessed April 28, 2026.
+8 . CatalyzeX. “ Find open-source code to catalyze your research , https://www.catalyzex.com/.” Accessed October 5, 2026.
+9 . Codesota. “ A registry, not a leaderboard , https://www.codesota.com/about/.” Accessed April 28, 2026.
+View all sources
+Keep reading
+AI vs. Deep Learning: What’s the Difference?
+January 6, 2025
+How to Learn Artificial Intelligence: A Beginner’s Guide
+March 13, 2026
+What Is a Generative AI Learning Path?
+June 22, 2026
+Exploring Deep Learning Frameworks: Tools for Building Intelligent Systems
+August 10, 2026
+How to Learn AI
+May 19, 2025
+Reimagining Work and Learning with AI: Expert Insights from Dr. Jules White
+February 26, 2025
+Updated on Oct 5, 2026
+Written by: C
+Coursera Staff
+Editorial Team
+Coursera’s editorial team is comprised of highly experienced professional editors, writers, and fact...
+This content has been made available for informational purposes only. Learners are advised to conduct additional research to ensure that courses and other credentials pursued meet their personal, professional, and financial goals.
+Coursera Footer
+Skills
+Accounting
+Artificial Intelligence (AI)
+Cybersecurity
+Data Analytics
+Digital Marketing
+Human Resources (HR)
+Microsoft Excel
+Project Management
+Python
+SQL
+Professional Certificates
+Google AI Certificate
+Google Cybersecurity Certificate
+Google Data Analytics Certificate
+Google IT Support Certificate
+Google Project Management Certificate
+Google UX Design Certificate
+IBM AI Engineering Certificate
+IBM AI Product Manager Certificate
+IBM Data Science Certificate
+Intuit Academy Bookkeeping Certificate
+Courses & Specializations
+AI Essentials Specialization
+AI For Business Specialization
+AI For Everyone Course
+AI in Healthcare Specialization
+Deep Learning Specialization
+Excel Skills for Business Specialization
+Financial Markets Course
+Machine Learning Specialization
+Prompt Engineering for ChatGPT Course
+Python for Everybody Specialization
+Career Resources
+Career Aptitude Test
+CAPM Certification Requirements
+CompTIA A+ Certification Requirements
+CompTIA Security+ Certification Requirements
+Essential IT Certifications
+High-Income Skills to Learn
+How to Learn Artificial Intelligence
+PMP Certification Requirements
+Popular Cybersecurity Certifications
+Share your Coursera learning story
+Coursera
+About
+Leadership
+Careers
+Catalog
+Coursera Plus
+Professional Certificates
+Degrees
+For Enterprise
+For Government
+For Campus
+Become a Partner
+Udemy
+Community
+Learners
+Partners
+Beta Testers
+Free Courses
+Blog
+The Coursera Podcast
+Tech Blog
+Social Impact
+More
+Press
+Investors
+Terms
+Privacy
+Help
+Accessibility
+Contact
+Articles
+Directory
+Affiliates
+Modern Slavery Statement
+Do Not Sell/Share
+Learn Anywhere
+© 2026 Coursera Inc. All rights reserved.

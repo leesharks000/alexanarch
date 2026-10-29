@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html class="no-js  page-1 app-PPS" lang="en" >
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta charset="utf-8">
+  <title>PPS – Problematic Paper Screener</title>
+  <link rel="stylesheet" href="/i/libraries/oraclejet/8.0.0/css/libs/oj/v8.0.0/alta/oj-alta-notag-min.css?v=20.1.0.00.13" type="text/css" />
+<link rel="stylesheet" href="/i/app_ui/css/Core.min.css?v=20.1.0.00.13" type="text/css" />
+<link rel="stylesheet" href="/i/app_ui/css/Theme-Standard.min.css?v=20.1.0.00.13" type="text/css" />
+<link rel="stylesheet" href="/i/libraries/jquery-ui/1.12.1/jquery-ui-apex.min.css?v=20.1.0.00.13" type="text/css" />
+
+  <link rel="stylesheet" href="/i/libraries/font-apex/2.1/css/font-apex.min.css?v=20.1.0.00.13" type="text/css" />
+<link rel="stylesheet" href="/i/themes/theme_42/1.5/css/Core.min.css?v=20.1.0.00.13" type="text/css" />
+
+  
+  <link rel="stylesheet" href="r/cabanac_pharma/9999/files/theme/42/v67/12255346724853483.css" type="text/css" />
+
+  <link rel="stylesheet" href="r/cabanac_pharma/9999/files/static/v37/app-icon.css?version=2026.10.22" type="text/css" />
+
+  <style type="text/css">
+span.t-HeroRegion-icon {
+background-image: url('r/cabanac_pharma/9999/files/static/v37/pps.jpg');
+background-size: cover;
+}
+</style>
+
+  <!--
+<link rel="shortcut icon" href="/i/favicon.ico">
+<link rel="icon" sizes="16x16" href="/i/favicon-16x16.png">
+<link rel="icon" sizes="32x32" href="/i/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/i/favicon-180x180.png">
+-->
+
+<!-- https://apexapplab.dev/2021/05/17/quick-tips-add-favicon-and-custom-application-icon-in-apex/ -->
+<link rel="icon" type="image/png" sizes="32x32" href="r/cabanac_pharma/9999/files/static/v37/pps-ico-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="r/cabanac_pharma/9999/files/static/v37/pps-ico-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="r/cabanac_pharma/9999/files/static/v37/pps-ico-180x180.png">
+  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Expires" content="-1" /><meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions no-anim   apex-side-nav apex-icons-fontapex apex-theme-vita-all-blue"   id="t_PageBody">
+<a href="#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form action="wwv_flow.accept" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate  autocomplete="off">
+<input type="hidden" name="p_flow_id" value="9999" id="pFlowId" /><input type="hidden" name="p_flow_step_id" value="1" id="pFlowStepId" /><input type="hidden" name="p_instance" value="10570065893126" id="pInstance" /><input type="hidden" name="p_page_submission_id" value="256946056096942710815680154838346605935" id="pPageSubmissionId" /><input type="hidden" name="p_request" value="" id="pRequest" /><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit" /><input type="hidden" value="256946056096942710815680154838346605935" id="pSalt" />
+<header class="t-Header" id="t_Header" role="banner">
+  <div id="R15775251709817218"  class=""><input type="hidden" id="P0_LAST_SCREENED" name="P0_LAST_SCREENED" value="2026-10-28 at 15:54"><input type="hidden" data-for="P0_LAST_SCREENED" value="jHl0hDmlBuNX0DkviEz6qb26ZPlIlKD-kcQEoLHi-OSXx19Xx3ThGdfFB_FztLqeg8CCJDNH5-XE9udyEw76LQ"><style>
+.m-1 {
+  content: url("r/cabanac_pharma/9999/files/static/v37/powered-by-Dimensions.png");
+}
+</style></div>
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree" aria-label="Expand / Collapse Navigation" title="Expand / Collapse Navigation" id="t_Button_navControl" type="button"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="f?p=9999:1::::::" class="t-Header-logo-link"><span class="apex-logo-text">Problematic Paper Screener</span></a>
+    </div>
+    <div class="t-Header-navBar"><ul class="t-NavigationBar js-menu-callout" id="10633080870247652"><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="javascript:window.open('https://www.dimensions.ai','_blank');">
+    <span class="t-Icon m-1" ></span><span class="t-Button-label"> </span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="javascript:apex.navigation.dialog('f?p=9999:6::::6:P6_PAGE_ID:1\u0026p_dialog_cs=MA7ls7h5omJzaTZPNv2HQwittpIxG0fEWINYB0RxQdisvZ_-MtDjZs40EP1KWaByDWPSDvdh7z4hlOi9OSta7A',{title:'Feedback',height:'auto',width:'480',maxWidth:'960',modal:true,dialog:null},'t-Dialog-page--standard '+'',apex.gPageContext$);">
+    <span class="t-Icon fa&#x20;fa-comment-o" ></span><span class="t-Button-label">Feedback</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar js-menuButton" type="button" id="L10645166235247729" data-menu="menu_L10645166235247729">
+      <span class="t-Icon fa&#x20;fa-user" ></span><span class="t-Button-label">nobody</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow"></span>
+  </button><div class="t-NavigationBar-menu" style="display: none" id="menu_L10645166235247729"><ul><li data-current="false" data-icon=""><a href="separator">---</a></li><li data-current="false" data-icon="fa&#x20;fa-box-arrow-in-east"><a href="f?p=9999:9999::::::">Log In</a></li></ul></div></li></ul></div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Problematic Paper Screener">
+<div class="t-TreeNav js-navCollapsed--hidden t-TreeNav--classic" id="t_TreeNav" data-id="1_tree" aria-label="Problematic Paper Screener"><ul style="display:none"><li data-current="true" data-id="" data-disabled="" data-icon="fa&#x20;fa-home"><a href="f?p=9999:1::::::" title="" target="">Home</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-newspaper-o"><a href="f?p=9999:11::::::" title="" target="">Media Coverage</a></li><li data-id="" data-disabled="" data-icon="null"><a href="" title="" target=""> </a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-hand-o-up"><a href="f?p=9999:5::::::" title="" target="">Fingerprints</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-search"><a href="f?p=9999:3::::::" title="" target="">All Problematic Papers</a></li><li data-id="" data-disabled="" data-icon="null"><a href="" title="" target=""> </a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-chevron-down"><a href="" title="" target="">Detectors:</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-1"><a href="f?p=9999:33::::::" title="" target="">Annulled</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-2"><a href="f?p=9999:34::::::" title="" target="">Concerning</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-3"><a href="f?p=9999:31::::::" title="" target="">Feet of Clay</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-4"><a href="f?p=9999:24::::::" title="" target="">Tortured</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-5"><a href="f?p=9999:25::::::" title="" target="">Suspect</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-6"><a href="f?p=9999:21::::::" title="" target="">SCIgen</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-7"><a href="f?p=9999:22::::::" title="" target="">Mathgen</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-8"><a href="f?p=9999:27::::::" title="" target="">Citejacked</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-9"><a href="f?p=9999:28::::::" title="" target="">Seek&amp;Blastn</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-number-0"><a href="f?p=9999:29::::::" title="" target="">Problematic Cell Lines</a></li><li data-id="" data-disabled="" data-icon="null"><a href="" title="" target=""> </a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-question-square-o"><a href="f?p=9999:12::::::" title="" target="">FAQ</a></li><li data-id="" data-disabled="" data-icon="fa&#x20;fa-terminal"><a href="f?p=9999:2:10570065893126:::::" title="" target="">Admin</a></li></ul></div></div>
+  <div class="t-Body-main">
+    <div class="t-Body-title" id="t_Body_title"><div class="t-HeroRegion " id="R10644566558247720" >
+  <div class="t-HeroRegion-wrap">
+    <div class="t-HeroRegion-col t-HeroRegion-col--left"><span class="t-HeroRegion-icon t-Icon "></span></div>
+    <div class="t-HeroRegion-col t-HeroRegion-col--content">
+      <h1 class="t-HeroRegion-title">Problematic Paper Screener</h1>
+      Est. February 27<sup>th</sup>, 2021
+    </div>
+    <div class="t-HeroRegion-col t-HeroRegion-col--right"><div class="t-HeroRegion-form"><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R15775333114817219" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R15775333114817219_heading">Last updated</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <p align="right">
+⏰ Last Update: 2026-10-28 at 15:54
+</p>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="t-HeroRegion-buttons"></div></div>
+  </div>
+</div></div>
+    <div class="t-Body-content" id="t_Body_content">
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="10528977427247580_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="10528977427247580_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row">
+<div class="col col-5 " ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody margin-bottom-lg" id="R10666779499993128" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R10666779499993128_heading">Info</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <p style="margin-bottom:30px;">
+    🌐 Stable URL: <a href="https://www.irit.fr/~Guillaume.Cabanac/problematic-paper-screener" target="_blank">https://www.irit.fr/~Guillaume.Cabanac/problematic-paper-screener</a>
+</p>
+
+<p>
+    <dl>
+        <dt>🕵️ The PPS website screens the scientific literature for papers (partly) generated with:</dt>
+        <dd>▶ <a href="https://arxiv.org/abs/2107.06751" target="_blank">Tortured phrases</a> 😵‍💫
+        <dd>▶ <a href="https://pdos.csail.mit.edu/archive/scigen/" target="_blank">SCIgen</a></dd>         
+        <dd>▶ <a href="https://thatsmathematics.com/mathgen/" target="_blank">Mathgen</a></dd>
+        <dd>... and issues in the bibliographies of articles citing:
+        <dd style="margin-left:70px;">▷ <a href="https://www.irit.fr/~Guillaume.Cabanac/problematic-paper-screener/annulled" style="color:red;" target="_blank">Retracted</a> references</dd>
+        <dd style="margin-left:70px;">▷ References marked with <a href="https://www.irit.fr/~Guillaume.Cabanac/problematic-paper-screener/concerning" style="color:orange;" target="_blank">expressions of concern</a></dd>
+        <dd style="margin-left:70px;">▷ References <a href="https://www.irit.fr/~Guillaume.Cabanac/problematic-paper-screener/problematic" target="_blank">flagged by the PPS detectors</a></dd>
+    </dl>
+</p>
+
+<p>
+    <dl>
+        <dt>⚗️ Harvesting data from these APIs:</dt>
+        <dd>▶ <a href="https://www.crossref.org/documentation/retrieve-metadata/rest-api/" target="_blank">Crossref</a>, now including the <a href="https://doi.org/10.13003/c23rw1d9" target="_blank">Retraction Watch Database</a></dd>
+        <dd>▶ <a href="https://github.com/digital-science/dimensions-api-lab" target="_blank">Dimensions</a>, see our <a href="https://www.youtube.com/watch?v=OG6fARFHY50" target="_blank">webinar</a> and the associated <a href="https://www.dimensions.ai/blog/detecting-tortured-phrases-to-unmask-fake-science/" target="_blank">blog post</a></dd>
+        <dd>▶ <a href="https://www.ncbi.nlm.nih.gov/home/develop/api/" target="_blank">PubMed</a></dd>
+        <dd>▶ <a href="https://pubpeer.com" target="_blank">PubPeer</a></dd>            
+    </dl>
+</p>
+
+<p style="margin-top:72pt">
+    🧑‍🏫 <a href="https://hal.science/hal-04267976" target="_blank" title="Presentation of the PPS">PPS in a nutshell</a>: problem tackled and method used.
+</p>
+<p>
+    ⸻ 🎥 Video <a href="https://hal.science/hal-04267976v2/file/20250331_FAIRS_Cababac.mp4" target="_blank" title="Invited talk to Fostering Accountability for the Integrity of Research Studies (FAIRS), St John's College, Oxford, United Kingdom. 2025.">in English</a> 
+    or <a href="https://doi.org/10.60527/7f0h-ds61" target="_blank" title="Conference à la semaine numérique des Urfist 2024">in French</a>.
+</p>
+<p>
+    ⸻ 📄 Article in <a href="https://theconversation.com/problematic-paper-screener-trawling-for-fraud-in-the-scientific-literature-246317" target="_blank" title="Article in The Conversation">The Conversation</a>.
+</p>
+
+
+<p style="margin-top:30px;">
+👨‍💻 Problematic papers are reported on PubPeer, see the <a href="https://pubpeer.com/search?q=tortured+OR+%22Problematic+Paper+Screener%22" target="_blank">tortured phrases</a> and more.
+</p>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="col col-7 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R18841921814706005" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R18841921814706005_heading">Number of problematic papers</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div id="R18841921814706005_jet"></div>
+     <div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R455665478632376818" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R455665478632376818_heading">Number of annulled articles</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div id="R455665478632376818_jet"></div>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R455664306072376807" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R455664306072376807_heading">Reference</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <p style="margin-top:30px;">
+    📄 Cabanac, G., Labbé, C., & Magazinov, A. (2022). The ‘Problematic Paper Screener’ automatically selects suspect publications for post-publication (re)assessment.<br>
+    <span style="margin-left:25px" />Presented at WCRI 2022: 7th World Conference on Research Integrity.
+    <i>arXiv</i> preprint. <a href="https://doi.org/10.48550/arXiv.2210.04895" target="_blank">https://doi.org/10.48550/arXiv.2210.04895</a><br>
+    <span style="margin-left:50px" />▷ Featured in the <a href="https://www.nature.com/immersive/d41586-021-03621-0/index.html#section-gM9iO4XBRl" target="_blank" title="The Nature’s 10 list explores key developments in science this year and some of the people who played important parts in these milestones."><i>Nature</i>'s 10 list of 2021</a> that ‘explores key developments in science this year.’
+</p>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto" ><div class="t-Region t-Region--accent1 t-Region--scrollBody" id="R11921807404545829" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R11921807404545829_heading">Key highlights</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     <div class="container">
+<div class="row">
+<div class="col col-3 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R15776327726817229" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R15776327726817229_heading">Bulletin of the Atomic Scientists</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Modern plagiarists are making use of software and perhaps even emerging AI technologies to draft articles—and they’re getting away with it. <a href="https://t.co/fBThIjRwnt">https://t.co/fBThIjRwnt</a></p>&mdash; Bulletin of the Atomic Scientists (@BulletinAtomic) <a href="https://twitter.com/BulletinAtomic/status/1481672439188889604?ref_src=twsrc%5Etfw">January 13, 2022</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="col col-3 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R15774908065817215" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R15774908065817215_heading">Nature's 10</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I spoke to <a href="https://twitter.com/gcabanac?ref_src=twsrc%5Etfw">@gcabanac</a> about his work uncovering fabricated papers containing &quot;tortured phrases&quot; -- weirdly paraphrased versions of scientific terms (like &quot;underground creepy crawly state&quot; for &quot;ant colony&quot;) -- for this year&#39;s Nature&#39;s 10. <a href="https://t.co/orRmF0XtXw">https://t.co/orRmF0XtXw</a></p>&mdash; Diana Kwon (@DianaMKwon) <a href="https://twitter.com/DianaMKwon/status/1471224775104253962?ref_src=twsrc%5Etfw">December 15, 2021</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="col col-3 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R15774431839817210" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R15774431839817210_heading">Nature bullshit</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hundreds of junk-science papers have been retracted from reputable journals after fraudsters used ‘special issues’ to manipulate the publication process. And the problem is growing. <a href="https://t.co/FSKKvfV2ez">https://t.co/FSKKvfV2ez</a></p>&mdash; nature (@Nature) <a href="https://twitter.com/Nature/status/1457924064144732179?ref_src=twsrc%5Etfw">November 9, 2021</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="col col-3 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R11922266763545833" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R11922266763545833_heading">ArXiv Nature</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Why say &#39;colossal information&#39; instead of big data? Or &#39;counterfeit consciousness&#39; instead of artificial intelligence? These tortured phases in research articles could be evidence of a new and disturbing fabrication trend. <a href="https://t.co/TO6U0qckig">https://t.co/TO6U0qckig</a></p>&mdash; nature (@Nature) <a href="https://twitter.com/Nature/status/1424405795375140869?ref_src=twsrc%5Etfw">August 8, 2021</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div><div class="row">
+<div class="col col-3 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R11922014242545831" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R11922014242545831_heading">JASIST Nature</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hundreds of nonsensical computer-generated articles, spotted years after the problem was first seen, could lead to a wave of retractions. <a href="https://t.co/u89i4315oT">https://t.co/u89i4315oT</a></p>&mdash; nature (@Nature) <a href="https://twitter.com/Nature/status/1397947978539835392?ref_src=twsrc%5Etfw">May 27, 2021</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="col col-3 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R18841513820706001" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R18841513820706001_heading">Journal CNRS</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/CNRSnews?src=hash&amp;ref_src=twsrc%5Etfw">#CNRSnews</a> 📰 | This researcher tracks “tortured” expressions in scientific publications to identify those that are unreliable. The software program that he co-developed for this purpose earned him a spot in the 2021 Top 10 selected by <a href="https://twitter.com/Nature?ref_src=twsrc%5Etfw">@Nature</a> ⤵<a href="https://t.co/lqDEqcItU8">https://t.co/lqDEqcItU8</a></p>&mdash; CNRS 🌍 (@CNRS) <a href="https://twitter.com/CNRS/status/1501604354108895235?ref_src=twsrc%5Etfw">March 9, 2022</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="col col-3 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R11922156204545832" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R11922156204545832_heading">arXiv Tortured</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just out <a href="https://twitter.com/arxiv?ref_src=twsrc%5Etfw">@arxiv</a>: “Tortured phrases: A dubious writing style emerging in science. Evidence of critical issues affecting established journals” w/ Labbé &amp; Magazinov <a href="https://t.co/eh0YNO5T8v">https://t.co/eh0YNO5T8v</a> Probable systematic manipulation of the publication process of Microprocessors in Microsystems <a href="https://t.co/vrVQUi3TNn">pic.twitter.com/vrVQUi3TNn</a></p>&mdash; Guillaume Cabanac (@gcabanac) <a href="https://twitter.com/gcabanac/status/1415559427743174661?ref_src=twsrc%5Etfw">July 15, 2021</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="col col-3 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R11921993644545830" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R11921993644545830_heading">JASIST</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just out: “Prevalence of nonsensical algorithmically generated papers in the scientific literature” w/ Cyril Labbé in <a href="https://twitter.com/JASIST?ref_src=twsrc%5Etfw">@JASIST</a> <a href="https://t.co/N4wVqI8JHF">https://t.co/N4wVqI8JHF</a>. We report cases of SCIgen-generated publications. 😵 Companion website <a href="https://t.co/fSmzEq49x9">https://t.co/fSmzEq49x9</a> + thread: <a href="https://t.co/he2nEkzTpC">https://t.co/he2nEkzTpC</a> <a href="https://t.co/67x3XIuvFc">pic.twitter.com/67x3XIuvFc</a></p>&mdash; Guillaume Cabanac (@gcabanac) <a href="https://twitter.com/gcabanac/status/1397490534042771458?ref_src=twsrc%5Etfw">May 26, 2021</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div><div class="row">
+<div class="col col-6 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R455665930399376823" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R455665930399376823_heading">Science</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The Problematic Paper Screener is featured in <a href="https://twitter.com/ScienceMagazine?ref_src=twsrc%5Etfw">@ScienceMagazine</a> today ☺️, as we travel to <a href="https://twitter.com/hashtag/WCRI2024?src=hash&amp;ref_src=twsrc%5Etfw">#WCRI2024</a> in Athens 🇬🇷 w/ <a href="https://twitter.com/alexcla99?ref_src=twsrc%5Etfw">@alexcla99</a> <a href="https://t.co/JzaeUDbhGV">https://t.co/JzaeUDbhGV</a> HT <a href="https://twitter.com/cathleenogrady?ref_src=twsrc%5Etfw">@cathleenogrady</a></p>&mdash; Guillaume Cabanac ⟨here and elsewhere⟩ (@gcabanac) <a href="https://twitter.com/gcabanac/status/1796806074395185210?ref_src=twsrc%5Etfw">June 1, 2024</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="col col-6 apex-col-auto" ><div class="t-Region t-Region--removeHeader t-Region--noBorder t-Region--scrollBody" id="R455666613858376830" >
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R455666613858376830_heading">Nature</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🗞️ Just out: ‘The papers that most heavily cite retracted studies’ by <a href="https://twitter.com/MiryamNaddaf?ref_src=twsrc%5Etfw">@MiryamNaddaf</a> <a href="https://twitter.com/Richvn?ref_src=twsrc%5Etfw">@Richvn</a> <a href="https://t.co/893LUO6w0X">https://t.co/893LUO6w0X</a>, a companion paper to my Comment: ‘Chain retraction: how to stop bad science propagating through the literature’ <a href="https://t.co/GERFzrZMzj">https://t.co/GERFzrZMzj</a> feat. PPS Feet of Clay.</p>&mdash; Guillaume Cabanac ⟨here and elsewhere⟩ (@gcabanac) <a href="https://twitter.com/gcabanac/status/1828827981017698589?ref_src=twsrc%5Etfw">August 28, 2024</a></blockquote>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"><div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto" ><div id="R11414376962979118"  class=""><!-- Default Statcounter code for https://dbrech.irit.fr/pls/apex/f?p=451 -->
+<script type="text/javascript">
+  var sc_project=12342183; 
+  var sc_invisible=1; 
+  var sc_security="0659b65b"; 
+</script>
+<script type="text/javascript" src="https://secure.statcounter.com/counter/counter.js"></script>
+<!-- End of Statcounter Code --></div></div>
+</div>
+</div></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">2026.10.22</div>
+            <div class="t-Footer-customize"></div>
+            
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="#top" class="t-Footer-topButton" id="t_Footer_topButton"><span class="a-Icon icon-up-chevron"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="&#x5B;&#x5D;">
+<input type="hidden" id="pPageItemsRowVersion" value="" /><input type="hidden" id="pPageItemsProtected" value="syvHen_edKnxCpZJsGanLjhem3KT6qaEAavrH3GC5jE" /></form>
+
+
+<script>
+var apex_img_dir = "/i/", htmldb_Img_Dir = apex_img_dir;
+</script>
+<script src="/i/libraries/apex/minified/desktop_all.min.js?v=20.1.0.00.13"></script>
+<script src="wwv_flow.js_messages?p_app_id=9999&p_lang=en&p_version=20.1.0.00.13-28164279792"></script>
+
+
+<script src="/i/libraries/apex/minified/widget.stickyWidget.min.js?v=20.1.0.00.13"></script>
+<script src="/i/themes/theme_42/1.5/js/theme42.min.js?v=20.1.0.00.13"></script>
+
+
+
+  
+
+
+<script src="/i/libraries/apex/minified/widget.treeView.min.js?v=20.1.0.00.13"></script>
+
+
+<script src="/i/libraries/oraclejet/8.0.0/js/libs/require/require.js?v=20.1.0.00.13"></script>
+<script>
+define("jquery",[],function(){return apex.jQuery});
+define("hammerjs",[],function(){return Hammer});
+define("jqueryui-amd/widget",[],function(){return apex.jQuery.widget});
+define("jqueryui-amd/focusable",[],function(){return apex.jQuery.ui.focusable});
+define("jqueryui-amd/position",[],function(){return apex.jQuery.ui.position});
+define("jqueryui-amd/keycode",[],function(){return apex.jQuery.ui.keyCode});
+define("jqueryui-amd/tabbable",[],function(){return { tabbable: function(){ apex.debug.info("Unexpected call: jQuery UI tabbable function"); }}});
+define("jqueryui-amd/unique-id",[],function(){return apex.jQuery.fn});
+</script>
+<script src="/i/libraries/apex/minified/requirejs.jetConfig.min.js?v=20.1.0.00.13"></script>
+<script src="/i/libraries/apex/minified/jetCommonBundle.min.js?v=20.1.0.00.13"></script>
+<script src="/i/libraries/apex/minified/chartBundle.min.js?v=20.1.0.00.13"></script>
+<script type="text/javascript">
+apex.jQuery( function() {
+apex.page.init( this, function() {
+apex.jQuery.when.apply( apex.jQuery, apex.page.loadingDeferreds ).done(function() {
+try {
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+(function(){apex.widget.jetChart.init("R18841921814706005","","",{"type":"bar","legend":{"rendered":"off"},"valueFormats":{"series":{"tooltipDisplay":"off"},"value":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"},"label":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"styleDefaults":{},"xAxis":{"title":"PPS Detectors","baselineScaling":"zero","scale":"linear","majorTick":{"rendered":"on"},"minorTick":{"rendered":"off"},"tickLabel":{"rendered":"on","position":"outside","rotation":"auto"}},"yAxis":{"title":"Articles flagged by the PPS (log scale)","baselineScaling":"zero","scale":"log","position":"auto","majorTick":{"rendered":"on"},"minorTick":{"rendered":"off"},"tickLabel":{"rendered":"on","converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"animationOnDisplay":"auto","animationOnDataChange":"auto","orientation":"horizontal","hoverBehavior":"none","stack":"off","zoomAndScroll":"off","translations":{"labelNoData":"Refreshing...","componentName":"Bar: Number of problematic papers"}},false,false,null,"w85a-fBgduUqkjaEzziYYtsCFVyw6EnkoNWGPY4V1yM");})();
+(function(){apex.widget.jetChart.init("R455665478632376818","","",{"type":"bar","legend":{"rendered":"off"},"valueFormats":{"series":{"tooltipDisplay":"off"},"value":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"},"label":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"styleDefaults":{},"xAxis":{"title":"PPS Detectors","baselineScaling":"zero","scale":"linear","majorTick":{"rendered":"on"},"minorTick":{"rendered":"off"},"tickLabel":{"rendered":"on","position":"outside","rotation":"auto"}},"yAxis":{"title":"Articles flagged by the PPS that are annulled (i.e., retracted, removed, or withdrawn)","baselineScaling":"zero","scale":"linear","position":"auto","majorTick":{"rendered":"on"},"minorTick":{"rendered":"off"},"tickLabel":{"rendered":"on","converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"animationOnDisplay":"auto","animationOnDataChange":"auto","orientation":"horizontal","hoverBehavior":"none","stack":"off","zoomAndScroll":"off","translations":{"labelNoData":"Refreshing...","componentName":"Bar: Number of annulled articles"}},false,true,null,"Q9VL6RwThEWJqckviJH-s-xyQmPWCiXTzEke3NgBhMD9hokF3WSZjDZ855W6rpyM");})();
+apex.theme42.initializePage.noSideCol();
+
+apex.page.warnOnUnsavedChanges();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+}
+});
+});
+});</script>
+
+</body>
+</html>

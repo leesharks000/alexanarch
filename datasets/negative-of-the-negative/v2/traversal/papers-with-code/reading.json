@@ -1,0 +1,290 @@
+{
+ "row": "papers-with-code",
+ "pass": "first reading, 2026-10-29",
+ "procedure": "EA-NEGONT-02 v0.9 §3.4 D/R/O (working; not frozen). The string pass over 1,711 archive texts found no D or R candidate: no deposit text names Papers with Code, PapersWithCode, paperswithcode, PwC, paperswithcode-data or pwc-archive (also checked by grep over data/texts, data/blog-index.json and data/blog-corpus: no hit). O-class ran on two sourced classes (config): 'benchmark leaderboards' (no candidate) and 'aggregators' (38 sentences in 20 deposits). Admission by reading: a sentence is admitted to O when it applies an archive category to aggregators as a class; a sentence on one named aggregator (SciLynk, OpenAIRE, OpenAlex), a homonym, or aggregators as a foil or a list item is not. The hop (H) was not run: it runs from admitted D/R/O deposits over the citation graph, and the three admitted deposits bear on the class, not the entity. The archive's own records of the entity are not deposits and are reached outside the string pass: the Capture Registry's two entries (findings and analysis) and the MMRS meta-aggregator record (census.json rows papers-with-code and papers-with-code-revival; articles.py), ledgered as CAP-<k>-NN and MMRS-NN.",
+ "reader": "Claude (Opus 5.5), in session, 2026-10-29",
+ "verdicts": [
+  {
+   "dep": 256,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: the semantic-labour table places aggregators among those that capture the value of human semantic labour (row 'Value captured by'); an archive category (value capture of semantic labour) applied to aggregators as a class",
+   "claims": [
+    "O256-01"
+   ],
+   "cands": [
+    "O0007"
+   ]
+  },
+  {
+   "dep": 1465,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: the differentiated model of semantic class places aggregators among the means of semantic production or circulation whose ownership is the semantic-bourgeois position; the earliest instance of the lineage",
+   "claims": [
+    "O1465-01"
+   ],
+   "cands": [
+    "O0033"
+   ]
+  },
+  {
+   "dep": 1545,
+   "strata": [
+    "O"
+   ],
+   "reason": "O-class: aggregators among the means of semantic circulation (M_c), with the distinction of procedural from infrastructural means and the platform combining both (a qualification, its own slot under §3.6), and the downstream questions of ownership",
+   "claims": [
+    "O1545-01",
+    "O1545-02",
+    "O1545-03",
+    "O1545-04"
+   ],
+   "cands": [
+    "O0034",
+    "O0035",
+    "O0036"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/papers-with-code-aio-20261029/",
+   "reason": "the registry's findings and analysis at the entity's capture by name (OBS-2533339c5ea5, AXN:0AB3.CAPTURE.🗡️🎪🤙👁‍🗨🍃▽), read from data/EA-WG-CAPTURES-01.json",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08"
+   ]
+  },
+  {
+   "dep": "capture-registry",
+   "url": "https://www.alexanarch.org/captures/is-papers-with-code-still-active-aio-20261029/",
+   "reason": "the registry's findings and analysis at the status capture (OBS-65cddace9423, AXN:0AAD.CAPTURE.🔥🫶🌿↘️🝊🔼)",
+   "claims": [
+    "CAP-2-01",
+    "CAP-2-02",
+    "CAP-2-03",
+    "CAP-2-04",
+    "CAP-2-05",
+    "CAP-2-06",
+    "CAP-2-07"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/papers-with-code/",
+   "reason": "the MMRS meta-aggregator record (compiled 2026-10-28, corrected 2026-10-29; editor Lee Sharks): article sentences (articles.py) and fields with their basis (census.json, row papers-with-code)",
+   "claims": [
+    "MMRS-01",
+    "MMRS-02",
+    "MMRS-03",
+    "MMRS-04",
+    "MMRS-05",
+    "MMRS-06",
+    "MMRS-07",
+    "MMRS-08",
+    "MMRS-09",
+    "MMRS-10",
+    "MMRS-11",
+    "MMRS-12",
+    "MMRS-13",
+    "MMRS-14",
+    "MMRS-15",
+    "MMRS-16",
+    "MMRS-17",
+    "MMRS-18",
+    "MMRS-19",
+    "MMRS-20",
+    "MMRS-21",
+    "MMRS-22",
+    "MMRS-23",
+    "MMRS-24",
+    "MMRS-25",
+    "MMRS-26",
+    "MMRS-27",
+    "MMRS-28",
+    "MMRS-29",
+    "MMRS-30",
+    "MMRS-31",
+    "MMRS-32",
+    "MMRS-33",
+    "MMRS-34",
+    "MMRS-35"
+   ]
+  },
+  {
+   "dep": "MMRS",
+   "url": "https://www.machinemediation.org/aggregators/papers-with-code-revival/",
+   "reason": "the MMRS record of the revival, a distinct entity related to this one (census row papers-with-code-revival)",
+   "claims": [
+    "MMRS-40",
+    "MMRS-41",
+    "MMRS-42",
+    "MMRS-43",
+    "MMRS-44",
+    "MMRS-45",
+    "MMRS-46",
+    "MMRS-47",
+    "MMRS-48",
+    "MMRS-49",
+    "MMRS-50",
+    "MMRS-51"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 49,
+   "reason": "a worked example in which 'an aggregator' is a foil for the journalist's report; no category applied to aggregators as a class",
+   "cands": [
+    "O0001"
+   ]
+  },
+  {
+   "dep": 87,
+   "reason": "the 'aggregator' of the sentence is the secondary blog of a worked example (an AI overview citing a blog); not a claim on aggregators as a class; lineage instance of #1127",
+   "cands": [
+    "O0002"
+   ]
+  },
+  {
+   "dep": 126,
+   "reason": "PER's circulation surfaces include 'citation aggregators': the class is not sourced for the entity (the field gives it as aggregating studies, not citations); lineage instance of #402",
+   "cands": [
+    "O0003",
+    "O0004",
+    "O0005",
+    "O0006"
+   ]
+  },
+  {
+   "dep": 402,
+   "reason": "as #126 (the earlier instance): 'citation aggregators' as a circulation surface of PER; class not sourced for the entity. The captures score PER on the entity themselves (registry per fields, noted in the row)",
+   "cands": [
+    "O0008",
+    "O0009",
+    "O0010",
+    "O0011"
+   ]
+  },
+  {
+   "dep": 597,
+   "reason": "aggregators as downstream surfaces of arXiv moderation and of Google's deduplication; mechanisms of other objects, no category applied to aggregators",
+   "cands": [
+    "O0012",
+    "O0013"
+   ]
+  },
+  {
+   "dep": 634,
+   "reason": "the 'Wq aggregator' of the drone specification: a homonym (a disposition function), not the class",
+   "cands": [
+    "O0014",
+    "O0015"
+   ]
+  },
+  {
+   "dep": 746,
+   "reason": "'a news aggregator … every existing aggregator optimizes for engagement': the sentence's subject is news aggregators; the class is not sourced for the entity",
+   "cands": [
+    "O0016"
+   ]
+  },
+  {
+   "dep": 875,
+   "reason": "identifier severance at 'the FAIR aggregator (OpenAIRE disclaims)': a claim on one named aggregator",
+   "cands": [
+    "O0017"
+   ]
+  },
+  {
+   "dep": 876,
+   "reason": "OpenAIRE's disclaimer: a claim on one named aggregator",
+   "cands": [
+    "O0018"
+   ]
+  },
+  {
+   "dep": 1077,
+   "reason": "'the authority move the aggregator cannot copy': the colophon of the archive's apparatus; aggregators as a foil",
+   "cands": [
+    "O0019",
+    "O0020"
+   ]
+  },
+  {
+   "dep": 1082,
+   "reason": "'A public-good aggregator's first obligation is that its record of the record be trustworthy' and 'an aggregator that inherits upstream moderation outcomes … is a moderation mirror': both apply archive categories to aggregators, but to public-good aggregators and to aggregators inheriting moderation outcomes, classes not sourced for the entity (B1 sets public infrastructures against commercial platforms such as this one); stated to OpenAIRE. Not admitted; a candidate for the operator's reading if the class is ruled to hold",
+   "cands": [
+    "O0021"
+   ]
+  },
+  {
+   "dep": 1100,
+   "reason": "SciLynk's aggregator normalization: a provisional category for one named scholarly aggregator's metadata display; not applied to the class",
+   "cands": [
+    "O0022",
+    "O0023",
+    "O0024",
+    "O0025",
+    "O0026",
+    "O0027",
+    "O0028"
+   ]
+  },
+  {
+   "dep": 1116,
+   "reason": "session tether: aggregator fan-out of one named record",
+   "cands": [
+    "O0029",
+    "O0030"
+   ]
+  },
+  {
+   "dep": 1127,
+   "reason": "as #87 (the same sentence, earlier); and ¶1213 ('any aggregator can repackage') names aggregators only among those that treat meaning as fungible content",
+   "cands": [
+    "O0031"
+   ]
+  },
+  {
+   "dep": 1459,
+   "reason": "a list of machine readers addressed ('scholarly aggregators'); no category applied",
+   "cands": [
+    "O0032"
+   ]
+  },
+  {
+   "dep": 1575,
+   "reason": "a citation verified from 'aggregator records only'; no category applied",
+   "cands": [
+    "O0037"
+   ]
+  },
+  {
+   "dep": 1616,
+   "reason": "an affiliation string 'traced in session to a downstream aggregator': a claim on one record",
+   "cands": [
+    "O0038"
+   ]
+  }
+ ],
+ "counts": {
+  "candidate_deposits": 20,
+  "admitted": 3,
+  "not_admitted": 17,
+  "D": 0,
+  "R": 0,
+  "O_class_sentences": 38,
+  "H": "not run"
+ }
+}

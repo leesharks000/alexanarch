@@ -1,0 +1,105 @@
+{
+ "row": "newsguard-ai-false-claim-monitor",
+ "address": "newsguard ai false claim monitor",
+ "entity": "NewsGuard's AI False Claim(s) Monitor (newsguardtech.com/ai-false-claims-monitor/), a recurring audit run by NewsGuard Technologies since July 2024 (first editions titled 'AI Misinformation Monitor'): each edition puts prompts on 10 provably false claims from NewsGuard's False Claim Fingerprints catalog, in three personas (innocent user, leading prompt, malign actor), to the leading chatbots and scores each response debunk, non-response or misinformation; monthly in its first year, the 2026 editions titled 'Quarterly'; part of NewsGuard's AI Tracking Center (a separate row); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "newsguard-ai-false-claim-monitor",
+  "address": "newsguard ai false claim monitor",
+  "entity": "NewsGuard's AI False Claim(s) Monitor (newsguardtech.com/ai-false-claims-monitor/), a recurring audit run by NewsGuard Technologies since July 2024 (first editions titled 'AI Misinformation Monitor'): each edition puts prompts on 10 provably false claims from NewsGuard's False Claim Fingerprints catalog, in three personas (innocent user, leading prompt, malign actor), to the leading chatbots and scores each response debunk, non-response or misinformation; monthly in its first year, the 2026 editions titled 'Quarterly'; part of NewsGuard's AI Tracking Center (a separate row); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29)",
+  "row_type": "C (a public entity on which the archive bears: an audit series, one of the MMRS meta-aggregator's entities)",
+  "aliases": [
+   {
+    "pattern": "\\bAI False Claims? Monitor\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAI Misinformation Monitor\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bFalse Claims? Monitor\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bNewsGuard\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bnewsguardtech\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bFalse Claim Fingerprints?\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "audits of generative AI systems (chatbot audits)",
+    "pattern": "\\b(AI|chatbot|chatbots|LLM|LLMs|model) (audits?|auditing)\\b|\\baudits? of (generative )?(AI|chatbots|LLMs|language models)\\b",
+    "flags": "i",
+    "basis": "field: B10 (NewsGuard, Methodology FAQ): 'While there are many audits of generative AI systems, this is the only recurring audit focused specifically on how chatbots handle provably false claims'; B4 (August 2025 edition): 'NewsGuard’s audit of the 10 leading generative AI tools'; B2 (May 2026 edition): 'Quarterly audit of the 11 leading generative AI tools'"
+   },
+   {
+    "term": "red-teaming of AI models",
+    "pattern": "\\bred[- ]?team(ing|ed|s)?\\b",
+    "flags": "i",
+    "basis": "field: B1 (the method page): 'NewsGuard provides the leading red-teaming analysis for information reliability'; 'Our Journalistic Red-Teaming Approach'; B8 (NewsGuard for AI): 'Red-Teamed on High-Risk News Topics'"
+   }
+  ],
+  "classes_note": "Two classes, each sourced from the field by locus: the monitor as an audit of generative AI systems (B10, B4, B2) and as red-teaming (B1, B8). The MMRS record's class (aggregators of machine-mediated reception work; 'audit series') is an archive source, ledgered as MMRS claims and not run as an O-class, since the brief confines classes to what B sources. The aliases are the entity's names as its own pages give them (AI False Claim Monitor, AI False Claims Monitor, the first editions' AI Misinformation Monitor), its operator's name and domain, and the catalog its claims are drawn from (False Claim Fingerprints). Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on the monitor, its audits, NewsGuard's audits of chatbots, or chatbot audits / red-teaming as a class to which the archive applies its own category; a bare mention of NewsGuard (its site ratings, a link list), or 'audit' or 'red team' used of another object, is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; address 'newsguard ai false claim monitor' (newsguard-ai-false-claim-monitor-aio-20261029, OBS-18837e18bf11), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture, the MMRS meta-aggregator record) are ledgered beside the deposits as CAP-1-NN and MMRS-NN."
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 56,
+  "O_deposits": 21,
+  "H_candidates": 0
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "21": 22,
+   "31": 1,
+   "113": 1,
+   "194": 1,
+   "261": 1,
+   "482": 2,
+   "483": 1,
+   "554": 1,
+   "643": 1,
+   "683": 1,
+   "697": 1,
+   "698": 2,
+   "699": 12,
+   "737": 1,
+   "822": 1,
+   "923": 1,
+   "1171": 1,
+   "1209": 1,
+   "1222": 2,
+   "1263": 1,
+   "1362": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "95e551a1686d6b0a3ebe243a8bc1c41df981f9b31271f67ddaf97ce0d52e8106",
+  "candidates-H.jsonl": null
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

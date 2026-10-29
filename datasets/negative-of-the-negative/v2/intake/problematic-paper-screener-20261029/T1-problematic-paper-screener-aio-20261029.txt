@@ -1,0 +1,38 @@
+[Google AI Overview at the query, signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14), 2026-10-29. The paste is the Overview expanded (the 'AI Mode Conversation' view, with the source cards that follow the answer); the 'You said' line carries the query twice, run together, and is given once here. Inline links are Google redirect URLs, kept as pasted. The closing disclaimer cut.]
+
+[QUERENT] problematic paper screener
+
+[SYSTEM] The Problematic Paper Screener (PPS) is an online platform and automated screening tool developed by Guillaume Cabanac, Cyril Labbé, and Alexander Magazinov to detect fraudulent, error-filled, or computer-generated scientific literature. [[1](https://www.google.com/goto?url=CAESegHrOzAV8ssH4YuyzXH-7jZ7r8lC6wdexvCc9-qv_KPvpoq3ZevVQuluv6m4iFgagWOAzfdrjSDU9sBa4KnwCfM110wNvcA72Z6qELjoCCaGHCiRCuu9-XYqJWH-bItiV3x10sXCAtDY9zv0KgnnNBzC485GHu5AdaL-), [2](https://www.google.com/goto?url=CAESWAHrOzAVdPdG6ZcwF_9hiFNiBbYAQmKr64ty8LbDt-8GilFnBTP7ja3lhKBrLFBF4D9Fy-amU5uCUNafRpaNJDrayo9BIOLRhai-oribmAcea0MqsmZMjyk)]
+What It Detects
+PPS scans millions of scholarly papers using data APIs (such as Crossref, Dimensions, PubMed, and PubPeer) across several specialized detectors: [[1](https://www.google.com/goto?url=CAESpQEB6zswFYTNqhkmwOB_WpwElKixQzAgPEG430q65mypNNf9yrzASxZaXfauIKpghtOPsZvu6I289NGdwfTpFLF0cB57Cg2tbXOzmp3a9_sXWoaLcnrEhev2pFp36AiybcmCmgqdQMxavoLs3qzY8ZvBWbo_z9-wjZSuewyYuZi9SDbliJbm6Thpkxd43HJZbWves0EU79VqwjXH6CTf_13EUniGtyo), [2](https://www.google.com/goto?url=CAESegHrOzAV8ssH4YuyzXH-7jZ7r8lC6wdexvCc9-qv_KPvpoq3ZevVQuluv6m4iFgagWOAzfdrjSDU9sBa4KnwCfM110wNvcA72Z6qELjoCCaGHCiRCuu9-XYqJWH-bItiV3x10sXCAtDY9zv0KgnnNBzC485GHu5AdaL-)]
+
+* Tortured Phrases: Identifies nonsensical paraphrased terms (e.g., "counterfeit consciousness" instead of "artificial intelligence") used by paper mills to bypass plagiarism checkers. [[1](https://www.google.com/goto?url=CAESagHrOzAVdihLDpY-GrqzAs2cidfr9A6E0xEA5NsCdiT1k6bmGfNl4ZUfMvaXyXg3lDpaGPoWjW5VyXD8Ho7iBXaem40fdSQgVUj5HO5jPNKOK-BTrfzFiaAVyayoS8RpjlbjPPrsh5VbX0c), [2](https://www.google.com/goto?url=CAESegHrOzAV8ssH4YuyzXH-7jZ7r8lC6wdexvCc9-qv_KPvpoq3ZevVQuluv6m4iFgagWOAzfdrjSDU9sBa4KnwCfM110wNvcA72Z6qELjoCCaGHCiRCuu9-XYqJWH-bItiV3x10sXCAtDY9zv0KgnnNBzC485GHu5AdaL-)]
+* Computer-Generated Gibberish: Flags texts produced by automated paper generators like SCIgen and Mathgen. [[1](https://www.google.com/goto?url=CAESegHrOzAV8ssH4YuyzXH-7jZ7r8lC6wdexvCc9-qv_KPvpoq3ZevVQuluv6m4iFgagWOAzfdrjSDU9sBa4KnwCfM110wNvcA72Z6qELjoCCaGHCiRCuu9-XYqJWH-bItiV3x10sXCAtDY9zv0KgnnNBzC485GHu5AdaL-)]
+* AI/LLM Fingerprints: Detects unedited AI-generated text patterns (such as ChatGPT remnants). [[1](https://www.google.com/goto?url=CAESpQEB6zswFYTNqhkmwOB_WpwElKixQzAgPEG430q65mypNNf9yrzASxZaXfauIKpghtOPsZvu6I289NGdwfTpFLF0cB57Cg2tbXOzmp3a9_sXWoaLcnrEhev2pFp36AiybcmCmgqdQMxavoLs3qzY8ZvBWbo_z9-wjZSuewyYuZi9SDbliJbm6Thpkxd43HJZbWves0EU79VqwjXH6CTf_13EUniGtyo)]
+* Feet of Clay (Retracted References): Tracks active or unretracted papers that improperly cite previously retracted works, expressions of concern, or withdrawn articles. [[1](https://www.google.com/goto?url=CAESegHrOzAV8ssH4YuyzXH-7jZ7r8lC6wdexvCc9-qv_KPvpoq3ZevVQuluv6m4iFgagWOAzfdrjSDU9sBa4KnwCfM110wNvcA72Z6qELjoCCaGHCiRCuu9-XYqJWH-bItiV3x10sXCAtDY9zv0KgnnNBzC485GHu5AdaL-), [2](https://www.google.com/goto?url=CAESagHrOzAVdihLDpY-GrqzAs2cidfr9A6E0xEA5NsCdiT1k6bmGfNl4ZUfMvaXyXg3lDpaGPoWjW5VyXD8Ho7iBXaem40fdSQgVUj5HO5jPNKOK-BTrfzFiaAVyayoS8RpjlbjPPrsh5VbX0c)]
+
+How It Works & Impact
+
+* Combination Approach: It pairs automated machine-detection algorithms with human post-publication review. [[1](https://www.google.com/goto?url=CAESWAHrOzAVdPdG6ZcwF_9hiFNiBbYAQmKr64ty8LbDt-8GilFnBTP7ja3lhKBrLFBF4D9Fy-amU5uCUNafRpaNJDrayo9BIOLRhai-oribmAcea0MqsmZMjyk)]
+* Reporting: Flagged papers are often automatically shared or logged on platforms like PubPeer and Pepia to alert editors, publishers, and the research community. [[1](https://www.google.com/goto?url=CAESegHrOzAV8ssH4YuyzXH-7jZ7r8lC6wdexvCc9-qv_KPvpoq3ZevVQuluv6m4iFgagWOAzfdrjSDU9sBa4KnwCfM110wNvcA72Z6qELjoCCaGHCiRCuu9-XYqJWH-bItiV3x10sXCAtDY9zv0KgnnNBzC485GHu5AdaL-), [2](https://www.google.com/goto?url=CAESagHrOzAVdihLDpY-GrqzAs2cidfr9A6E0xEA5NsCdiT1k6bmGfNl4ZUfMvaXyXg3lDpaGPoWjW5VyXD8Ho7iBXaem40fdSQgVUj5HO5jPNKOK-BTrfzFiaAVyayoS8RpjlbjPPrsh5VbX0c)]
+* Adoption: The tool has been integrated into editorial workflows, repository platforms (such as Episciences), and analytics frameworks (such as Signals Graph) to help scrub the scientific record of fabricated or corrupted studies. [[1](https://www.google.com/goto?url=CAESewHrOzAVdgRI6xW5dtQ02z6LRxaRnfusy1FeCyq8zi6RS1pJsOmxzZYHLttYgYLJFXU3eaKKVKJBkfSEu5hehC-0gdJN5kXqW9Y3WVrHFs5-H0illGRlauqKoBDO0ozdoe4U0vgz9vrt03Vz6ULeZAapK_OW7RrJcSCTtg), [2](https://www.google.com/goto?url=CAESvAEB6zswFV-brn59UpZ0PxIrTzGUbqK7vxWA2X8DKXvY9zxXG1aJXnr9OcV8GXrmZkb6-s0nFnWBVL4S2cPTDL01B5-b1FZIIrkLOlhWF1jB3qkXkd283bVPGhddUaNWlQyLmlZyPz57TEARXfqDijOrk7ehNbsbEUGlY2ID8YPkBo2itUL3pMkjbRe6MTrO8fOJHqN2QFjaMkBdTBVYlfwAxkSCUe6QZ9pa3bDnLMMaRHtzHyXrVd9oN8eAbQ), [3](https://www.google.com/goto?url=CAESpQEB6zswFYTNqhkmwOB_WpwElKixQzAgPEG430q65mypNNf9yrzASxZaXfauIKpghtOPsZvu6I289NGdwfTpFLF0cB57Cg2tbXOzmp3a9_sXWoaLcnrEhev2pFp36AiybcmCmgqdQMxavoLs3qzY8ZvBWbo_z9-wjZSuewyYuZi9SDbliJbm6Thpkxd43HJZbWves0EU79VqwjXH6CTf_13EUniGtyo)]
+
+Would you like to explore how to use the tool to check specific references or learn more about how publishers handle tortured phrases?
+Institut de Recherche en Informatique de Toulouse - IRIT
+PPS – Problematic Paper Screener
+Tool: Problematic Paper Screener (PPS) screens scientific literature for problematic publications using data APIs (Crossref/Retraction Watch, Dimensions, PubMed...
+The Conversation
+Problematic Paper Screener: Trawling for fraud in the scientific literature
+Tool Overview: Problematic Paper Screener developed by Guillaume Cabanac scans 130 million scholarly papers weekly across nine detectors to identify fraudulent ...
+arXiv
+[2210.04895] The 'Problematic Paper Screener' automatically selects suspect publications for post-publication (re)assessment
+Platform: Problematic Paper Screener (online platform for literature curation). Authors: Guillaume Cabanac, Cyril Labbé, Alexander Magazinov. Function: Automati...
+Research Signals
+Problematic Paper Screener: a new signal to help protect research integrity – Signals
+Integration: Problematic Paper Screener added to Signals Graph by Signals Team. Scope: Over 12,000 unretracted problematic publications flagged via automatic ma...
+ccsd.cnrs.fr
+Episciences Adopts Problematic Paper Screener as a Tool for Verifying ... - CCSD
+Jul 3, 2026 — The PPS is a tool designed to identify and filter out potentially problematic scientific articles, such as those containing methodological ...
+YouTube·Crossref
+31m
+Exploring Retraction Watch Data in Crossref 2025-05-09

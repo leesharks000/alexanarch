@@ -1,0 +1,1114 @@
+{
+ "row": "aiaaic-repository",
+ "address": "aiaaic repository",
+ "addresses": [
+  "aiaaic repository"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the raw wikitext, the saved history text, or the card's title and snippet where the card's own wording is not on the saved page; 52/52 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B3; three cards, one address); 'own_page', the entity's own pages that the MMRS record cites or the task names and that T did not surface (B4 about AIAAIC, B5 the newsletter's about page, B6 one entry page); the repository page (B1) is also an own page the MMRS record cites and is carried once, as a card; the OECD catalogue entry (B2) is a card and a third-party source the MMRS record cites; 'wikipedia', the redirect for the name (B7) and its target article (B8). Every card was reached; none is a video. The card snippets of B1 and B2 are not the saved pages' wording and are ledgered as the cards' own text (F9, F19).",
+ "lineage_note": "Lineages: what it is (B1, B2, B3, with the two card snippets); origin (B2, B3); operator (B2, B4); mission (B4); use (B2); intake (B1, B3, B6); the record (B1, B3, B6); classification (B1, B3); openness (B1, B2); class: an incident database (B2, B3); limits (B2, B3); neighbours (B3); newsletter (B5); resources (B1); the index case (B1, B6); reception: the catalogues (B2); reception: the encyclopedia (B7, B8). F12 and F21 are one lineage (the June 2019 start), the OECD's the earlier dated instance; F2 and F15 one lineage (the licence), the own page carried first.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/ (Bn.html raw, Bn.txt text; B7.wiki and B8.wiki raw wikitext; B7-history.html/.txt the redirect's history); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1; also the entity's own page the MMRS record cites (aiaaic.org/aiaaic-repository)",
+   "card": "AIAAIC — AIAAIC - AIAAIC Repository",
+   "url": "https://www.aiaaic.org/aiaaic-repository",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "aiaaic-repository-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B1.html",
+     "sha256": "92368c7f90250b41b9947eebc37238390c35ce2f150c078526b885870fd5a3a9"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B1.txt",
+     "sha256": "3911da48bd4691c0540509cbc53ccc44e32b37db43937bb032134ee73c9bc97e"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:24Z",
+    "http": 200,
+    "url": "https://www.aiaaic.org/aiaaic-repository",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B1.html",
+    "raw_sha256": "92368c7f90250b41b9947eebc37238390c35ce2f150c078526b885870fd5a3a9",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B1.txt"
+    ],
+    "method": "curl -sSL -m 30 -A 'Mozilla/5.0' (Wikipedia raw and history with curl -sS); text extracted by a workspace HTML-to-text pass (scripts, styles, noscript, svg and template removed; block tags to line breaks; the page's description, author, og:title, og:description and article time meta tags written above the text, marked '[meta …]')"
+   },
+   "card_title": "AIAAIC - AIAAIC Repository",
+   "card_snippet": "Incidents: AI and algorithmic automation harms (autonomous vehicle crashes, robotic workplace fatalities and malfunctions, generative AI copyright and training ...",
+   "card_note": null,
+   "names_operator": "yes ('AIAAIC' in the saved text); names no person as running it",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL taken from the MMRS record's source (the card's title is the page's og:title, 'AIAAIC - AIAAIC Repository'). The card's snippet ('Incidents: AI and algorithmic automation harms (autonomous vehicle crashes, robotic workplace fatalities…') is not in the saved page text or its meta tags; it is carried as the card's own text (F9). The page is a Google Site; its saved text repeats the site navigation (every entry title) three times before the page body, which begins at 'AIAAIC Repository / The independent, grassroots public interest collection…'. It lists 'Google AI Overviews' among systems and AIAAIC2256 'Google AI summaries give cancer patients wrong advice' among the 2026 entries; its navigation carries 'About AIAAIC', 'Team', 'Transparency' (not fetched beyond the about page)."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2 (third-party catalogue entry)",
+   "card": "OECD AI Policy Observatory — AIAAIC Repository - OECD.AI",
+   "url": "https://oecd.ai/en/catalogue/tools/aiaaic-repository",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "aiaaic-repository-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B2.html",
+     "sha256": "ab766dbf5dcde467c98509f3c5573f3a8b482183ad414c834ab49f7d09df0a28"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B2.txt",
+     "sha256": "a9fc2b4a082027b0bd2e94f3101e6c9731aba4489dcdee62d6c4a6949f0a61f9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:24Z",
+    "http": 200,
+    "url": "https://oecd.ai/en/catalogue/tools/aiaaic-repository",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B2.html",
+    "raw_sha256": "ab766dbf5dcde467c98509f3c5573f3a8b482183ad414c834ab49f7d09df0a28",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B2.txt"
+    ],
+    "method": "curl -sSL -m 30 -A 'Mozilla/5.0' (Wikipedia raw and history with curl -sS); text extracted by a workspace HTML-to-text pass (scripts, styles, noscript, svg and template removed; block tags to line breaks; the page's description, author, og:title, og:description and article time meta tags written above the text, marked '[meta …]')"
+   },
+   "card_title": "AIAAIC Repository - OECD.AI",
+   "card_snippet": "Overview: AIAAIC Repository is an independent, open-access, public interest resource detailing AI, algorithmic, and automation incidents and controversies, star...",
+   "card_note": null,
+   "names_operator": "yes ('AIAAIC' in the saved text); names no person as running it",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the MMRS record's source and confirmed by WebSearch (2026-10-29). Catalogue entry 'Uploaded on Jun 8, 2023'. The card's snippet ('Overview: AIAAIC Repository is an independent, open-access, public interest resource…') is not the saved page's wording ('An independent, open, public interest resource, the AIAAIC Repository details…'); 'open-access' is in neither the saved text nor the raw html; the snippet is carried as the card's own text (F19). The catalogue's disclaimer says the tools featured are the originating authors' (F18)."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3 (third-party article)",
+   "card": "EthicAI — Tracking AI incidents: OECD AIM and AIAAIC Repository - EthicAI",
+   "url": "https://ethicai.net/ai-incidents",
+   "kind": "Overview card",
+   "surfaced_by_T": [
+    {
+     "slug": "aiaaic-repository-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B3.html",
+     "sha256": "d349dd9210de7a5b643ea7e79d84ad42a736e85a0339e67b5f3595576a61bb49"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B3.txt",
+     "sha256": "7dc8cb554b90d5b6e897d27ecaaf85df13398222c7219fff22869e8449412239"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:08Z",
+    "http": 200,
+    "url": "https://ethicai.net/ai-incidents",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B3.html",
+    "raw_sha256": "d349dd9210de7a5b643ea7e79d84ad42a736e85a0339e67b5f3595576a61bb49",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B3.txt"
+    ],
+    "method": "curl -sSL -m 30 -A 'Mozilla/5.0' (Wikipedia raw and history with curl -sS); text extracted by a workspace HTML-to-text pass (scripts, styles, noscript, svg and template removed; block tags to line breaks; the page's description, author, og:title, og:description and article time meta tags written above the text, marked '[meta …]')"
+   },
+   "card_title": "Tracking AI incidents: OECD AIM and AIAAIC Repository - EthicAI",
+   "card_snippet": "Apr 24, 2025 — The AIAAIC is an independent resource, launched as a private initiative in 2019 to better understand to better understand the reputational risks ...",
+   "card_note": null,
+   "names_operator": "yes ('AIAAIC' in the saved text); names no person as running it",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL found through WebSearch (2026-10-29): the title is syndicated at verifywise.ai, whose page links the original at https://ethicai.net/ai-incidents; the saved page's og:title is the card's title exactly and its byline 'by Team EthicAI | Apr 24, 2025 | AI Safety' matches the card's date. Its sentence 'launched as a private initiative in 2019 to better understand to better understand' carries the doubled phrase as published."
+  },
+  {
+   "id": "B4",
+   "origin": "own_page",
+   "role": "the entity's own about page (named by the task; not among the MMRS record's sources); not surfaced by T",
+   "card": "AIAAIC — About AIAAIC",
+   "url": "https://www.aiaaic.org/about-aiaaic",
+   "kind": "own page",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B4.html",
+     "sha256": "c088cb1616de229fcbdc2bc327515e1751b51086b90730bed310dd34789718f3"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B4.txt",
+     "sha256": "af3caf81935dd0c4ea601b1f6f4cab1a4beb7844465cba3f3f8c3437cdb18ef7"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:26Z",
+    "http": 200,
+    "url": "https://www.aiaaic.org/about-aiaaic",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B4.html",
+    "raw_sha256": "c088cb1616de229fcbdc2bc327515e1751b51086b90730bed310dd34789718f3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B4.txt"
+    ],
+    "method": "curl -sSL -m 30 -A 'Mozilla/5.0' (Wikipedia raw and history with curl -sS); text extracted by a workspace HTML-to-text pass (scripts, styles, noscript, svg and template removed; block tags to line breaks; the page's description, author, og:title, og:description and article time meta tags written above the text, marked '[meta …]')"
+   },
+   "names_operator": "yes ('AIAAIC' in the saved text); names no person as running it",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Read for 'who runs the repository' (MMRS unchecked): the page names no person; it describes AIAAIC as an initiative that 'comprises a diverse set of individuals across the world' and funded by individuals' donations. Its navigation links a 'Team' page (/about-aiaaic/team), not fetched: the task named the about page."
+  },
+  {
+   "id": "B5",
+   "origin": "own_page",
+   "role": "the newsletter's about page, an own page the MMRS record cites; not surfaced by T",
+   "card": "AIAAIC (Substack) — About - AIAAIC",
+   "url": "https://aiaaicalert.substack.com/about",
+   "kind": "own page",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B5.html",
+     "sha256": "cc219629c095ed9b0fc414f11fe5bed9b0d611e76f8eb5863e9940b39a84d801"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B5.txt",
+     "sha256": "90b0161b955dc1cf90e31d0dc4f0248300e3db549027a4b0b7cf8a90d4980e5a"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:06:26Z",
+    "http": 200,
+    "url": "https://aiaaicalert.substack.com/about",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B5.html",
+    "raw_sha256": "cc219629c095ed9b0fc414f11fe5bed9b0d611e76f8eb5863e9940b39a84d801",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B5.txt"
+    ],
+    "method": "curl -sSL -m 30 -A 'Mozilla/5.0' (Wikipedia raw and history with curl -sS); text extracted by a workspace HTML-to-text pass (scripts, styles, noscript, svg and template removed; block tags to line breaks; the page's description, author, og:title, og:description and article time meta tags written above the text, marked '[meta …]')"
+   },
+   "names_operator": "yes ('AIAAIC' in the saved text); names Charlie Pownall (meta tags only)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The page body names no person; the name Charlie Pownall is in the page's meta description and author tag ('Click to read AIAAIC, by Charlie Pownall, a Substack publication…'), which Substack writes from the publication's owner. The saved text carries the meta tags above the page text, marked '[meta …]'."
+  },
+  {
+   "id": "B6",
+   "origin": "own_page",
+   "role": "one entry page of the repository, read for the per-entry fields (MMRS unchecked; named by the task); not surfaced by T",
+   "card": "AIAAIC — Google AI Overviews give wrong, dangerous answers",
+   "url": "https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/google-ai-overviews-give-wrong-dangerous-answers",
+   "kind": "own page (entry)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B6.html",
+     "sha256": "e15e140aa91db3546a74b7e417de86278e26543ce06da5618f05879c001f3061"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B6.txt",
+     "sha256": "de2a1f70996b3e8962b8eb453f5f305433274493da8dfabc32af26347adf6355"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:07:21Z",
+    "http": 200,
+    "url": "https://www.aiaaic.org/aiaaic-repository/ai-algorithmic-and-automation-incidents/google-ai-overviews-give-wrong-dangerous-answers",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B6.html",
+    "raw_sha256": "e15e140aa91db3546a74b7e417de86278e26543ce06da5618f05879c001f3061",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B6.txt"
+    ],
+    "method": "curl -sSL -m 30 -A 'Mozilla/5.0' (Wikipedia raw and history with curl -sS); text extracted by a workspace HTML-to-text pass (scripts, styles, noscript, svg and template removed; block tags to line breaks; the page's description, author, og:title, og:description and article time meta tags written above the text, marked '[meta …]')"
+   },
+   "names_operator": "yes ('AIAAIC' in the saved text); names no person as running it",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Chosen from the repository's links as the entry on Google AI Overviews' launch errors (the counterpart of the AI Incident Database's incident 693). The page's og:title is 'AIAAIC - Google AI Overviews give wrong, dangerous answers' and its heading 'Google AI Overviews tell users to add glue to pizzas'. The entry shows no AIAAIC number; its 'Page info' types it 'Issue'."
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "role": "Wikipedia's page for the name: a redirect to a section",
+   "card": "Wikipedia — AIAAIC (redirect)",
+   "url": "https://en.wikipedia.org/w/index.php?title=AIAAIC&action=raw&redirect=no",
+   "kind": "Wikipedia redirect",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B7.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B7.wiki",
+     "sha256": "43b1fcf94b3af38aa3230a56ef1a5a7b6c92abcccc5094dec6ef6d0c8f7e2dde"
+    },
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B7.html",
+     "sha256": "a2573c2c99660b4f468204e07dae773bfbcb12c82f5a930b421897355593ec5d"
+    },
+    "B7-history.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B7-history.html",
+     "sha256": "82c07d1804161d14fc912c7da661e1ffa7790fcaf6c4fe22e875b3141f1a61ca"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B7.txt",
+     "sha256": "6be4e450dd3387260aba48828d7bfd129359d0b213def9734c7912945bffe152"
+    },
+    "B7-history.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B7-history.txt",
+     "sha256": "46c947275f571e7c87b693dde0a87e51c36350c669c06bcfc41dbbdccd0a8543"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:22Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/w/index.php?title=AIAAIC&action=raw&redirect=no",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B7.wiki",
+    "raw_sha256": "43b1fcf94b3af38aa3230a56ef1a5a7b6c92abcccc5094dec6ef6d0c8f7e2dde",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B7.wiki",
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B7.txt",
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B7-history.txt"
+    ],
+    "method": "curl -sSL -m 30 -A 'Mozilla/5.0' (Wikipedia raw and history with curl -sS); text extracted by a workspace HTML-to-text pass (scripts, styles, noscript, svg and template removed; block tags to line breaks; the page's description, author, og:title, og:description and article time meta tags written above the text, marked '[meta …]')"
+   },
+   "names_operator": "yes ('AIAAIC' in the saved text); names no person as running it",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Raw wikitext (B7.wiki, 107 bytes, HTTP 200 at 05:08:22Z) and the rendered redirect page (https://en.wikipedia.org/w/index.php?title=AIAAIC&redirect=no, HTTP 200, 05:08:33Z, B7.html/B7.txt): '#REDIRECT [[Ethics_of_artificial_intelligence#AI, Algorithmic, and Automation Incidents and Controversies]]', no redirect categories; history (https://en.wikipedia.org/w/index.php?title=AIAAIC&action=history, HTTP 200, 05:10:40Z, B7-history.html/.txt): one revision, 15 September 2025. The title 'AI, Algorithmic, and Automation Incidents and Controversies' (raw, redirect=no) is the same redirect, byte for byte (fetched 05:08:22Z, not saved separately: identical to B7.wiki); 'AIAAIC Repository' has no page (HTTP 404, 05:08:22Z). Two further API reads (search, revision history) and one history read of the target were refused with HTTP 429 and not retried."
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "role": "the redirect's target article",
+   "card": "Wikipedia — Ethics of artificial intelligence",
+   "url": "https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence",
+   "kind": "Wikipedia article",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B8.wiki",
+     "sha256": "ab049f50ac4220597b057bae34c9327ccc3d1dd5690be378148cb093b851a984"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B8.html",
+     "sha256": "0f29c8754c1d7af67e0c071fc7dfc1acfc90bacfb32b7e4d08ff091d7941e463"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B8.txt",
+     "sha256": "baa144a4932864984c663f05cb4f1774dd97b53cbfc0bf74cc94b89024500fd6"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:08:34Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence",
+    "raw": "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B8.wiki",
+    "raw_sha256": "ab049f50ac4220597b057bae34c9327ccc3d1dd5690be378148cb093b851a984",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B8.txt",
+     "datasets/negative-of-the-negative/v2/intake/aiaaic-repository-20261029/B8.wiki"
+    ],
+    "method": "curl -sSL -m 30 -A 'Mozilla/5.0' (Wikipedia raw and history with curl -sS); text extracted by a workspace HTML-to-text pass (scripts, styles, noscript, svg and template removed; block tags to line breaks; the page's description, author, og:title, og:description and article time meta tags written above the text, marked '[meta …]')"
+   },
+   "names_operator": "no ('AIAAIC' absent); names no person as running it",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Raw wikitext (https://en.wikipedia.org/w/index.php?title=Ethics_of_artificial_intelligence&action=raw, HTTP 200, 05:08:34Z, B8.wiki) and rendered page (B8.html, B8.txt). The section the redirect names does not exist in the article as fetched, and the article names neither AIAAIC nor its expansion (string search of B8.wiki and B8.txt: no hit); the redirect lands at the head of the article."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page body, header",
+   "quote": "The independent, grassroots public interest collection of incidents and ethical controversies caused by and associated with AI, algorithms, and automation.",
+   "claim": "the repository defined by its own page: an independent, grassroots, public interest collection of incidents and ethical controversies caused by and associated with AI, algorithms and automation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: incidents and controversies",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3911da48bd4691c0…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page footer",
+   "quote": "AIAAIC content is available to use, copy, adapt, and redistribute under a CC BY-SA 4.0 licence.",
+   "claim": "the repository's content is licensed CC BY-SA 4.0, on its own page",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "openness: the licence",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3911da48bd4691c0…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page body, header buttons; navigation",
+   "quote": "REPORT INCIDENT🔥 … ACCESS DATABASE 🔢 … Submit incident/controversy",
+   "claim": "the page invites incident reports and submissions of incidents or controversies, and gives access to the database",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: open submission",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3911da48bd4691c0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "'Latest entries (2026)', first item (the highest number on the page, 2026-10-29)",
+   "quote": "AIAAIC2276: Otter AI accused of secretly recording private work conversations",
+   "claim": "entries are numbered AIAAIC + n; the highest number listed on 2026-10-29 is AIAAIC2276 (an upper bound on entries, the list skipping numbers)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: entries, systems, datasets",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3911da48bd4691c0…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "navigation: the three collections",
+   "quote": "AI, algorithmic, and automation incidents … AI, algorithmic, and automation systems … AI, algorithmic, and automation datasets",
+   "claim": "the repository holds three collections: incidents, systems and datasets",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: entries, systems, datasets",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3911da48bd4691c0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page body, 'About the AIAAIC Repository'",
+   "quote": "Classifications and definitions 🏛️ … Ethical issue taxonomy … External harm taxonomy … Consequence taxonomy … News trigger taxonomy … Response taxonomy",
+   "claim": "the repository classifies by five taxonomies: ethical issue, external harm, consequence, news trigger and response",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "classification: the taxonomies",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3911da48bd4691c0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "navigation: Resources",
+   "quote": "Resources … AI and algorithmic repositories, registers, databases … AI ethics glossary",
+   "claim": "its resources include a list of AI and algorithmic repositories, registers and databases, and an AI ethics glossary",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "resources: the AI ethics glossary",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3911da48bd4691c0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page body, 'Systems' and 'Latest entries (2026)'",
+   "quote": "Google AI Overviews … AIAAIC2256: Google AI summaries give cancer patients wrong advice",
+   "claim": "Google AI Overviews is among the systems the repository records, and a 2026 entry (AIAAIC2256) records Google's AI summaries giving cancer patients wrong advice",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the index case: Google AI Overviews",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 3911da48bd4691c0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "card snippet (not in the saved page text)",
+   "quote": "Incidents: AI and algorithmic automation harms (autonomous vehicle crashes, robotic workplace fatalities and malfunctions, generative AI copyright and training ...",
+   "claim": "the card's own text: the repository's incidents as AI and algorithmic automation harms, listed from autonomous vehicle crashes to generative AI copyright and training",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: incidents and controversies",
+   "date": "2026-10-29 (card as rendered)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "entry header",
+   "quote": "Uploaded on Jun 8, 2023",
+   "claim": "the OECD catalogue's entry for the repository was uploaded on 8 June 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the catalogues",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "catalogue entry, description ¶1",
+   "quote": "An independent, open, public interest resource, the AIAAIC Repository details incidents and controversies driven by and relating to artificial intelligence, algorithms, and automation.",
+   "claim": "the catalogue describes the repository as an independent, open, public interest resource detailing incidents and controversies driven by and relating to AI, algorithms and automation",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: incidents and controversies",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "catalogue entry, description ¶2",
+   "quote": "Started in June 2019 as a private, professional project to better understand the reputational risks of artificial intelligence, the AIAAIC Repository has evolved into an open, public interest initiative that collects, dissects, examines, and divulges a broad range of incidents and issues posed by AI, algorithmic, and automation systems.",
+   "claim": "started in June 2019 as a private, professional project to understand the reputational risks of AI; evolved into an open public interest initiative that collects, dissects, examines and divulges incidents and issues",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: June 2019, a private project",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "catalogue entry, description ¶3",
+   "quote": "The repository is independent of government and industry, and is used by researchers, academics, teachers, NGS, journalists, policymakers, and industry experts across the world looking to better understand the nature, risks, and impacts of AI, algorithms, and automation.",
+   "claim": "independent of government and industry; used by researchers, academics, teachers, NGOs (written NGS), journalists, policymakers and industry experts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "use: who reads it",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About the tool: developing organisation",
+   "quote": "Developing organisation(s): … aiaaic",
+   "claim": "the catalogue names AIAAIC as the developing organisation",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: AIAAIC",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About the tool: usage rights, licence",
+   "quote": "Usage rights: … Open source/Permissive … Creative commons … Free of charge … License: … Creative Commons Attribution Share Alike 4.0 International",
+   "claim": "usage rights open source/permissive, Creative Commons, free of charge; licence CC BY-SA 4.0 International",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness: the licence",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About the tool: tool types",
+   "quote": "Tool type(s): … Risk management framework … Awareness building … Education & training",
+   "claim": "the catalogue types the tool as a risk management framework, awareness building, and education and training",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "class: an incident database",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About the tool: tags",
+   "quote": "Tags: … incident database … transparency … ai risk management",
+   "claim": "the catalogue tags it 'incident database', 'transparency', 'ai risk management'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "class: an incident database",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "page foot: disclaimer",
+   "quote": "Disclaimer: The tools and metrics featured herein are solely those of the originating authors and are not vetted or endorsed by the OECD or its member countries.",
+   "claim": "the catalogue's stated limit: the tools featured are their originating authors' and are not vetted or endorsed by the OECD",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card snippet (its wording not in the saved page text)",
+   "quote": "Overview: AIAAIC Repository is an independent, open-access, public interest resource detailing AI, algorithmic, and automation incidents and controversies, star...",
+   "claim": "the card's own text: 'an independent, open-access, public interest resource' (the saved page reads 'independent, open'), starting…",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: incidents and controversies",
+   "date": "2026-10-29 (card as rendered)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "About the tool: maturity, validity",
+   "quote": "Maturity: … Published document … Validity: … Always up to date",
+   "claim": "the catalogue records the tool's maturity as a published document and its validity as always up to date",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the catalogues",
+   "date": "2023-06-08 (catalogue upload)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a9fc2b4a082027b0…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "The AIAAIC Repository (AIAAIC) / Mission ¶1, s1",
+   "quote": "The AIAAIC is an independent resource, launched as a private initiative in 2019 to better understand to better understand the reputational risks of artificial intelligence, the AIAAIC Repository has now evolved into an open source, public interest initiative.",
+   "claim": "EthicAI: an independent resource launched as a private initiative in 2019 to understand the reputational risks of AI, now an open source, public interest initiative",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: June 2019, a private project",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Mission ¶1, s2–3",
+   "quote": "Its foundational goal is to support a robust ecosystem of AI accountability by systematically documenting incidents where AI systems cause or contribute to harms. The AIAAIC is meant to serve as a collective memory for the AI field.",
+   "claim": "EthicAI: its goal is AI accountability through documenting incidents where AI systems cause or contribute to harms; a collective memory for the AI field",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: incidents and controversies",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Structure and usage",
+   "quote": "The AIAAIC Repository entries include detailed metadata such as: … Incident dates … Locations … System developers … Types of AI technologies involved … Types of harms reported",
+   "claim": "EthicAI: entries carry metadata such as incident dates, locations, system developers, types of AI technologies and types of harms reported",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: entries, systems, datasets",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Structure and usage, after the list",
+   "quote": "The database supports search and filtering by these attributes, allowing researchers to identify patterns over time or across geographies. It also includes a taxonomy of incident types and causes that continues to evolve as more data is collected.",
+   "claim": "EthicAI: search and filtering by those attributes; a taxonomy of incident types and causes that evolves as data is collected",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "classification: the taxonomies",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Comparing the AIM and AIAAIC: institutional grounding",
+   "quote": "Institutional grounding: The OECD AIM has formal international backing and is integrated with broader governance frameworks. AIAAIC is grassroots and community-driven.",
+   "claim": "EthicAI: the OECD monitor has formal international backing; AIAAIC is grassroots and community-driven",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: the OECD monitor",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Comparing the AIM and AIAAIC: scope and submission model",
+   "quote": "Scope and submission model: AIM uses a curated approach with controlled input channels; AIAAIC allows more open submissions from a broader set of contributors.",
+   "claim": "EthicAI: AIM curated with controlled input; AIAAIC allows more open submissions from more contributors",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: open submission",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Comparing the AIM and AIAAIC: focus",
+   "quote": "Focus: AIM leans towards policy-relevant cases that align with governance interests. AIAAIC includes a wider array of incidents, from technical failures to social impacts.",
+   "claim": "EthicAI: AIM leans to policy-relevant cases; AIAAIC includes a wider array, from technical failures to social impacts",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: the OECD monitor",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Comparing the AIM and AIAAIC, close",
+   "quote": "The initiatives are complementary, not competitive.",
+   "claim": "EthicAI: the two initiatives are complementary, not competitive",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: the OECD monitor",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "opening ¶2",
+   "quote": "An AI incident can be broadly defined as any situation where an AI system causes, contributes to, or is associated with an outcome that negatively impacts individuals, groups, systems, or the environment.",
+   "claim": "EthicAI's definition of an AI incident, applied to both trackers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "class: an incident database",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "Challenges and criticisms",
+   "quote": "Underreporting: Many incidents go unreported due to proprietary constraints, lack of media coverage, or fear of reputational damage. … Verification: Ensuring that submitted incidents are accurate, well-documented and contextualised is a non-trivial task. … Bias and coverage gaps: Certain regions, sectors or populations may be underrepresented.",
+   "claim": "EthicAI's stated limits of AI incident trackers: underreporting, verification of submissions, coverage gaps",
+   "modality": "interpretation",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "opening ¶3",
+   "quote": "Though still relatively under-the-radar outside specialist circles, these initiatives are critical tools in the global conversation around AI risk, accountability and trustworthiness.",
+   "claim": "EthicAI: the two trackers are under the radar outside specialist circles and critical tools in the conversation on AI risk and accountability",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "class: an incident database",
+   "date": "2025-04-24 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 7dc8cb554b90d5b6…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "About AIAAIC ¶1",
+   "quote": "AIAAIC (standing for \"AI, Algorithmic and Automation Incidents and Controversies\") is an independent, politically and technologically non-partisan grassroots public interest initiative that examines and makes the case for real AI, algorithmic and automation transparency, openness and accountability.",
+   "claim": "the operator defined by its own about page: AIAAIC, 'AI, Algorithmic and Automation Incidents and Controversies', an independent, non-partisan grassroots public interest initiative for AI, algorithmic and automation transparency, openness and accountability",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "operator: AIAAIC",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 af3caf81935dd0c4…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "Who we are",
+   "quote": "AIAAIC comprises a diverse set of individuals across the world passionate about advancing the cause of the transparency, openness and accountability of AI, algorithmic and automation systems.",
+   "claim": "who runs it, by the about page: a diverse set of individuals across the world; no person is named",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator: AIAAIC",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 af3caf81935dd0c4…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "What we believe ¶2",
+   "quote": "AIAAIC's mission is to make AI, algorithmic and automation systems transparent, open and accountable.",
+   "claim": "AIAAIC's mission: to make AI, algorithmic and automation systems transparent, open and accountable",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "mission: transparency, openness, accountability",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 af3caf81935dd0c4…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "What we do",
+   "quote": "Empowering academic and civil society entities with high quality, actionable data … Educating users, citizens, policymakers and others … Making the case to policymakers and businesses.",
+   "claim": "what it does: data for academic and civil society entities; education; advocacy to policymakers and businesses",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "mission: transparency, openness, accountability",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 af3caf81935dd0c4…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "How we are funded",
+   "quote": "AIAAIC is funded by donations provided by individuals across the world. … we take seriously actual or potential conflicts of interest, and do not accept funding or in-kind donations from commercial entities.",
+   "claim": "funded by donations from individuals; no funding or in-kind donations from commercial entities",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: AIAAIC",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 af3caf81935dd0c4…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "own_page",
+   "locus": "What we believe ¶1",
+   "quote": "AIAAIC believes that everyone should know when they are using or being assessed, instructed, nudged, coerced or manipulated by an AI, algorithmic or automation system",
+   "claim": "its belief: everyone should know when an AI, algorithmic or automation system is used on them",
+   "modality": "stipulation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "mission: transparency, openness, accountability",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 af3caf81935dd0c4…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "About ¶1",
+   "quote": "AIAAIC's weekly Alert newsletter details latest incidents and controversies driven by AI, algorithmic and automation systems, and explores latest developments in transparency and accountability.",
+   "claim": "AIAAIC's weekly newsletter, the Alert, details the latest incidents and controversies and developments in transparency and accountability",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "newsletter: AIAAIC Alert",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 90b0161b955dc1cf…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "About ¶2",
+   "quote": "It is read by people in government, civil society, academia and business in 92 countries.",
+   "claim": "the newsletter is read in government, civil society, academia and business in 92 countries, by its own account",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "newsletter: AIAAIC Alert",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 90b0161b955dc1cf…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "own_page",
+   "locus": "meta description and author tag (Substack page metadata)",
+   "quote": "Click to read AIAAIC, by Charlie Pownall, a Substack publication with thousands of subscribers. … [meta author] Charlie Pownall",
+   "claim": "the Substack publication AIAAIC is 'by Charlie Pownall' in the page's metadata; the page body names no person",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "newsletter: AIAAIC Alert",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 90b0161b955dc1cf…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "entry heading and date",
+   "quote": "Google AI Overviews tell users to add glue to pizzas … Occurred: May 2024",
+   "claim": "the entry's heading and event date: Google AI Overviews telling users to add glue to pizzas, occurred May 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the index case: Google AI Overviews",
+   "date": "2024-05 (published May 2024, last updated June 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 de2a1f70996b3e89…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F42": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "entry body ¶1",
+   "quote": "Google’s “AI Overviews” feature was criticised for providing factually inaccurate, misleading and nonsensical answers, leading to questions about its reliability and potential to spout misinformation and perpetuate bias.",
+   "claim": "the entry's summary: AI Overviews criticised for inaccurate, misleading and nonsensical answers, raising questions of reliability, misinformation and bias",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the index case: Google AI Overviews",
+   "date": "2024-05 (published May 2024, last updated June 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 de2a1f70996b3e89…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "entry body ¶3",
+   "quote": "In one instance, users reported that AI Overviews suggested using \"non-toxic glue\" to stop cheese sliding off pizza, which was traced back to a troll post. It also recommended people consume rocks, based on a satirical article from The Onion",
+   "claim": "the glue advice traced to a troll post; rocks recommended from a satirical Onion article",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the index case: Google AI Overviews",
+   "date": "2024-05 (published May 2024, last updated June 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 de2a1f70996b3e89…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "entry body ¶5",
+   "quote": "After a public backlash, Google said it would refine AI Overviews by limiting which queries generate AI summaries",
+   "claim": "after the backlash Google said it would refine AI Overviews by limiting the queries that generate summaries",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the index case: Google AI Overviews",
+   "date": "2024-05 (published May 2024, last updated June 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 de2a1f70996b3e89…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "entry fields",
+   "quote": "Operator: Google users … Developer: Google … Country: USA … Sector: Multiple … Purpose: Generate search results … Technology: Generative AI; Machine learning … Issue: Accuracy/reliability; Bias/discrimination; Mis/disinformation",
+   "claim": "the per-entry fields, on one entry: operator, developer, country, sector, purpose, technology, issue (here operator 'Google users', developer Google)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the record: the entry page",
+   "date": "2024-05 (published May 2024, last updated June 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 de2a1f70996b3e89…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F46": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "entry: System, Documents, News sources",
+   "quote": "System 🤖 … Google AI Overviews … Documents 📃 … Google. AI Overviews: About last week … News, commentary, analysis 🗞️ … https://www.theverge.com/2024/5/23/24162896/google-ai-overview-hallucinations-glue-in-pizza",
+   "claim": "the entry links its system page, the developer's own document and seven news, commentary and analysis sources by URL",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: the entry page",
+   "date": "2024-05 (published May 2024, last updated June 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 de2a1f70996b3e89…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "entry: Page info",
+   "quote": "Page info … Type: Issue … Published: May 2024 … Last updated: June 2024",
+   "claim": "the entry is typed 'Issue', published May 2024, last updated June 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: the entry page",
+   "date": "2024-05 (published May 2024, last updated June 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 de2a1f70996b3e89…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F48": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "entry: glossary block",
+   "quote": "In the field of artificial intelligence (AI), a hallucination or artificial hallucination (also called bullshitting, confabulation or delusion) is a response generated by AI that contains false or misleading information presented as fact. … Source: Wikipedia 🔗",
+   "claim": "the entry glosses 'hallucination' with Wikipedia's definition, credited to Wikipedia",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: the entry page",
+   "date": "2024-05 (published May 2024, last updated June 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 de2a1f70996b3e89…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "own_page",
+   "locus": "entry header links",
+   "quote": "Report incident 🔥 | Improve page 💁 | Access database 🔢",
+   "claim": "each entry invites a report and an improvement of the page",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "intake: open submission",
+   "date": "2024-05 (published May 2024, last updated June 2024)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 de2a1f70996b3e89…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "raw wikitext of the redirect page (action=raw&redirect=no)",
+   "quote": "#REDIRECT [[Ethics_of_artificial_intelligence#AI, Algorithmic, and Automation Incidents and Controversies]]",
+   "claim": "Wikipedia has no article for AIAAIC: the title redirects to a section 'AI, Algorithmic, and Automation Incidents and Controversies' of Ethics of artificial intelligence",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2025-09-15 (redirect created)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.wiki (sha256 43b1fcf94b3af38a…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "locus": "page history (action=history), the one revision",
+   "quote": "08:11, 15 September 2025 Silvers Rayleigh talk contribs 107 bytes +107 ←Redirected page to Ethics of artificial intelligence#AI, Algorithmic, and Automation Incidents and Controversies Tag: New redirect",
+   "claim": "the redirect was created on 15 September 2025 and has one revision",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2025-09-15 (redirect created)",
+   "quote_ok": true,
+   "checked_against": "saved text B7-history.txt (sha256 46c947275f571e7c…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "locus": "lead, s1 (rendered page); the section named by the redirect absent",
+   "quote": "The ethics of artificial intelligence covers a broad range of topics within AI that are considered to have particular ethical stakes.",
+   "claim": "the target article's subject, opened at its head: the redirect's section does not exist in the article as fetched, and the article names neither AIAAIC nor its expansion (string search of the raw wikitext and the rendered text)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 baa144a493286498…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "AIAAIC — AIAAIC - AIAAIC Repository",
+  "B2": "OECD AI Policy Observatory — AIAAIC Repository - OECD.AI",
+  "B3": "EthicAI — Tracking AI incidents: OECD AIM and AIAAIC Repository - EthicAI",
+  "B4": "AIAAIC — About AIAAIC",
+  "B5": "AIAAIC (Substack) — About - AIAAIC",
+  "B6": "AIAAIC — Google AI Overviews give wrong, dangerous answers",
+  "B7": "Wikipedia — AIAAIC (redirect)",
+  "B8": "Wikipedia — Ethics of artificial intelligence"
+ }
+}

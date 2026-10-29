@@ -1,0 +1,104 @@
+{
+ "row": "papers-with-code",
+ "address": "papers with code",
+ "entity": "Papers with Code (paperswithcode.com, 2018–2025), founded by Robert Stojnic and Ross Taylor (Atlas ML, Deeptide Ltd.), majority-owned by Facebook (later Meta) from 13 December 2019, sunset 24 July 2025; its data in CC BY-SA dumps (github.com/paperswithcode/paperswithcode-data); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29), with its revival at paperswithcode.co (code github.com/huggingface/paperswithcode, Apache-2.0) kept as a distinct, related entity (census row papers-with-code-revival); CodeSOTA claims succession",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "papers-with-code",
+  "address": "papers with code",
+  "addresses": [
+   "papers with code",
+   "is papers with code still active"
+  ],
+  "entity": "Papers with Code (paperswithcode.com, 2018–2025), founded by Robert Stojnic and Ross Taylor (Atlas ML, Deeptide Ltd.), majority-owned by Facebook (later Meta) from 13 December 2019, sunset 24 July 2025; its data in CC BY-SA dumps (github.com/paperswithcode/paperswithcode-data); formalized in the MMRS meta-aggregator record of 2026-10-28 (corrected 2026-10-29), with its revival at paperswithcode.co (code github.com/huggingface/paperswithcode, Apache-2.0) kept as a distinct, related entity (census row papers-with-code-revival); CodeSOTA claims succession",
+  "row_type": "C (public entity: a field aggregator, ended)",
+  "aliases": [
+   {
+    "pattern": "\\bpapers\\s+with\\s+code\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bpaperswithcode\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bPwC\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bpaperswithcode-data\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bpwc-archive\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "benchmark leaderboards",
+    "pattern": "\\b(SOTA|state[- ]of[- ]the[- ]art)\\s+leaderboards?\\b",
+    "flags": "i",
+    "basis": "field: B1 (TIB-Blog, ¶1: 'served as a central hub for benchmarked research in the form of leaderboards'); B8 (CodeSOTA, the dispatch: 'leaderboards that showed, for each tuple, who currently held the top score'); B18 (the revival's README, Features: 'Leaderboards.')"
+   },
+   {
+    "term": "aggregators",
+    "pattern": "\\baggregators?\\b",
+    "flags": "i",
+    "basis": "field: B1 (TIB-Blog, ¶1: 'The platform aggregated studies from multiple sources and served as a central hub for benchmarked research'); archive: the MMRS record (articles.py ARTICLES['papers-with-code'], 'Why it is here': 'A field aggregator held by a platform ended under that platform'; census.json, the census of aggregators of machine-mediated reception work in which the entity is a row)"
+   }
+  ],
+  "classes_note": "Two classes, each sourced by locus: Papers with Code as a keeper of state-of-the-art benchmark leaderboards (field: B1, B8, B18), and Papers with Code as an aggregator (field: B1, 'The platform aggregated studies from multiple sources'; archive: the MMRS record, 'A field aggregator held by a platform', and the census whose row it is). O-class admits only a sentence that applies an archive category to aggregators as a class (ownership of the means of semantic circulation, preservation and deletion downstream, the obligation of a record of the record); a sentence on one named aggregator (SciLynk, OpenAIRE, OpenAlex) is a claim on that aggregator and is not admitted. 'PwC' is case-sensitive and also names PricewaterhouseCoopers; candidates on it are read and set aside where they name the firm. Admission by reading (§3.4): a candidate is admitted when its sentence or paragraph makes a claim bearing on Papers with Code (what it was, its ending, its data, its successors, its standing as an aggregator, a measure taken on it); a citation of a paperswithcode.com page as the location of a benchmark, a bare listing, or the name used as a generic phrase ('papers with code' meaning papers that ship code) is not a claim on the entity.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-29, on the brief rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md; addresses 'papers with code' (papers-with-code-aio-20261029, OBS-2533339c5ea5) and 'is papers with code still active' (is-papers-with-code-still-active-aio-20261029, OBS-65cddace9423), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at both captures, the MMRS meta-aggregator record) are ledgered beside the deposits as CAP-<k>-NN and MMRS-NN."
+ },
+ "texts_scanned": 1711,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 38,
+  "O_deposits": 20,
+  "H_candidates": 0
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "49": 1,
+   "87": 1,
+   "126": 4,
+   "256": 1,
+   "402": 4,
+   "597": 2,
+   "634": 2,
+   "746": 1,
+   "875": 1,
+   "876": 1,
+   "1077": 2,
+   "1082": 1,
+   "1100": 7,
+   "1116": 2,
+   "1127": 1,
+   "1459": 1,
+   "1465": 1,
+   "1545": 3,
+   "1575": 1,
+   "1616": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "5f0270a054bd1bfe52ac42297a36a902415e135914a774ae1f5444a4f065ad2f",
+  "candidates-H.jsonl": null
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11067
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

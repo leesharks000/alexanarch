@@ -1,0 +1,1296 @@
+{
+ "row": "data-provenance-explorer",
+ "address": "data provenance explorer",
+ "addresses": [
+  "data provenance explorer"
+ ],
+ "extracted": "2026-10-29",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.9 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the data file's header row, the Wikipedia response texts, or the card's title and snippet for the unreachable card; 48/48 verified by script; third-party pages quoted only in short spans",
+ "B_note": "The field B (§0.4, §3.1(a)), three origins kept apart: 'card', every card on the transcript's rail (B1–B6: four of the Initiative's pages, MIT Media Lab, Cohere); 'own_page', the entity's own pages the MMRS record cites and the task names that T did not surface (B7 and B8, the operators' two papers' abstract pages; B9, the data file the Dataset Explorer loads; B10, the Web Data Explorer page); the home page (B3) is both a card and the own page the MMRS record cites and is carried once, as a card; 'wikipedia', the two titles, both without an article (B11, B12). Unreachable: B2 (MIT Media Lab, TLS failure on three fetches). The Initiative's pages are script-rendered: their HTML holds a title and a meta description, and their text is taken from the site's script bundle by route component.",
+ "lineage_note": "Lineages: what it is (B1, B2, B4, B6, B7); the operator (B2, B3); the unit (B3, B5, B6, B9); count (B3, B4, B5); origin (B5, B6, B7); licence findings (B6, B7); the commercial divide and the Western skew (B6, B7); stated limits (B6); data provenance defined (B6); the Web Data Explorer and Consent in Crisis (B3, B4, B8, B10); consent findings (B8, B10); the multimodal audit (B3); the operator's other systems (B3); reception (B3); the encyclopedia (B11, B12). The home page's meta description is the MMRS record's self-description (one lineage, the page earliest).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/ (Bn.html raw, Bn.txt text: for the Initiative's script-rendered pages the served HTML's title and meta description, then the string literals of the route's component in site-main.af19d7fc.js; B6.txt adds the article body from the page's flight data; B9.csv.gz the data file, B9.txt its header; B11/B12 .wiki, .html, -search.html raw responses with .txt summaries of the HTTP codes and notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "role": "Overview card 1",
+   "card": "Data Provenance Initiative — Data Provenance Explorer",
+   "url": "https://www.dataprovenance.org/explorer-introduction",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-explorer-aio-20261029",
+     "card": 1
+    }
+   ],
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B1.html",
+     "sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B1.txt",
+     "sha256": "2af1b48c11922848d4a50b1d5254e79d0900e539ab52d001e210628b11e5d7e1"
+    },
+    "site-main.af19d7fc.js": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/site-main.af19d7fc.js",
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:12:02Z",
+    "http": 200,
+    "url": "https://www.dataprovenance.org/explorer-introduction",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B1.html",
+    "raw_sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B1.txt"
+    ],
+    "bundle": {
+     "url": "https://www.dataprovenance.org/static/js/main.af19d7fc.js",
+     "at": "2026-10-29T05:12:01Z",
+     "http": 200,
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "card_title": "Data Provenance Explorer",
+   "card_snippet": "Data Provenance Initiative The Data Provenance Explorer Explore the datasets included in our audit. The DPI Explorer tool allows you to filter for and analyze l...",
+   "card_note": null,
+   "names_operator": "yes ('DPI', 'Data Provenance Initiative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL identified by the card's text: the snippet's 'Explore the datasets included in our audit. The DPI Explorer tool allows you to filter for and analyze l…' is the heading of the /explorer-introduction route's component (d2) and occurs nowhere else in the bundle; the card's own URL is not in the paste. The served HTML is the site's script shell (title, meta description, an empty root; the same 1,601 bytes at every path, sha256 bf609f38…); the page text is the string literals of the route's component in the site's script bundle /static/js/main.af19d7fc.js, fetched verbatim and saved as site-main.af19d7fc.js, extracted in source order by a tokenizing pass (component and offsets named in the .txt)."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "role": "Overview card 2",
+   "card": "MIT Media Lab — Data Provenance Explorers - MIT Media Lab",
+   "url": "https://www.media.mit.edu/projects/data-provenance-for-ai/tools",
+   "kind": "Overview card (unreachable)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-explorer-aio-20261029",
+     "card": 2
+    }
+   ],
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-10-29T05:12:03Z",
+      "url": "https://www.media.mit.edu/projects/data-provenance-for-ai/tools",
+      "http": 0,
+      "error": "curl: (60) SSL certificate problem: self-signed certificate in certificate chain"
+     },
+     {
+      "at": "2026-10-29T05:12:03Z",
+      "url": "https://www.media.mit.edu/projects/data-provenance-for-ai/tools",
+      "http": 0,
+      "error": "curl: (60) SSL certificate problem: self-signed certificate in certificate chain"
+     },
+     {
+      "at": "2026-10-29T05:12:04Z",
+      "url": "https://www-prod.media.mit.edu/projects/data-provenance-for-ai/tools",
+      "http": 0,
+      "error": "curl: (60) SSL certificate problem: self-signed certificate in certificate chain"
+     }
+    ],
+    "note": "URL found by WebSearch on the card's title and site (media.mit.edu and www-prod.media.mit.edu, /projects/data-provenance-for-ai/tools). Three fetches, 2026-10-29: curl with the brief's command; the same with --cacert /root/.ccr/ca-bundle.crt; the www-prod host. Each failed TLS verification (curl error 60, self-signed certificate in chain) before any HTTP response. A request for an archived copy was refused by the workspace and not pursued. The card's title and snippet stand as its only text."
+   },
+   "card_title": "Data Provenance Explorers - MIT Media Lab",
+   "card_snippet": "Share this tool Based on our extensive audits of AI data, we've built data explorers to allow practitioners to make more nuanced and informed decisions about th...",
+   "card_note": "unreachable: snippet only",
+   "names_operator": "no (the title and snippet name neither the Initiative nor its members)",
+   "names_archive": "no (title and snippet)",
+   "note": "MIT Media Lab's project page for the Initiative's explorers (the plural in its title). Its claims (F3, F4) are quoted from the card's title and snippet."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "role": "Overview card 3; also the own page the MMRS record cites (dataprovenance.org)",
+   "card": "Data Provenance Initiative — Data Provenance Initiative",
+   "url": "https://www.dataprovenance.org/",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-explorer-aio-20261029",
+     "card": 3
+    }
+   ],
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B3.html",
+     "sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B3.txt",
+     "sha256": "d1f28f3a590faab9ab608d7781fd06b1bacce7d2901e6f65ba25de0949d620dc"
+    },
+    "site-main.af19d7fc.js": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/site-main.af19d7fc.js",
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:12:02Z",
+    "http": 200,
+    "url": "https://www.dataprovenance.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B3.html",
+    "raw_sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B3.txt"
+    ],
+    "bundle": {
+     "url": "https://www.dataprovenance.org/static/js/main.af19d7fc.js",
+     "at": "2026-10-29T05:12:01Z",
+     "http": 200,
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "card_title": "Data Provenance Initiative",
+   "card_snippet": "Data Provenance Explorer. 4,000+ datasets. Inspect dataset sources, licenses, creators, geographies, modalities, and derivation chains. Explore datasets · Web d...",
+   "card_note": null,
+   "names_operator": "yes ('DPI', 'Data Provenance Initiative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the card's snippet ('Data Provenance Explorer. 4,000+ datasets. Inspect dataset sources…') is the home page's flagship-systems card (Cr, constant xr). The served HTML is the site's script shell (title, meta description, an empty root; the same 1,601 bytes at every path, sha256 bf609f38…); the page text is the string literals of the route's component in the site's script bundle /static/js/main.af19d7fc.js, fetched verbatim and saved as site-main.af19d7fc.js, extracted in source order by a tokenizing pass (component and offsets named in the .txt)."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "role": "Overview card 4",
+   "card": "Data Provenance Initiative — Data Provenance Explorer",
+   "url": "https://www.dataprovenance.org/data-provenance-explorer",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-explorer-aio-20261029",
+     "card": 4
+    }
+   ],
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B4.html",
+     "sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B4.txt",
+     "sha256": "ca844fa5c36fd62d903d620f34850819565b92c92fed8b10bf23b85ad4a50025"
+    },
+    "site-main.af19d7fc.js": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/site-main.af19d7fc.js",
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:12:02Z",
+    "http": 200,
+    "url": "https://www.dataprovenance.org/data-provenance-explorer",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B4.html",
+    "raw_sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B4.txt"
+    ],
+    "bundle": {
+     "url": "https://www.dataprovenance.org/static/js/main.af19d7fc.js",
+     "at": "2026-10-29T05:12:01Z",
+     "http": 200,
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "card_title": "Data Provenance Explorer",
+   "card_snippet": "Discover the datasets featured in our audit! The DPI Explorer tool enables you to filter and analyze language model training datasets effortlessly. Dataset Expl...",
+   "card_note": null,
+   "names_operator": "yes ('DPI', 'Data Provenance Initiative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the snippet ('Discover the datasets featured in our audit!…Dataset Expl…') is the /data-provenance-explorer route's heading and its first tile (p2, f2). The served HTML is the site's script shell (title, meta description, an empty root; the same 1,601 bytes at every path, sha256 bf609f38…); the page text is the string literals of the route's component in the site's script bundle /static/js/main.af19d7fc.js, fetched verbatim and saved as site-main.af19d7fc.js, extracted in source order by a tokenizing pass (component and offsets named in the .txt)."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "role": "Overview card 5",
+   "card": "Data Provenance Initiative — Dataset Explorer - Data Provenance Initiative",
+   "url": "https://www.dataprovenance.org/data-provenance-explorer/dataset-explorer",
+   "kind": "Overview card (own page)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-explorer-aio-20261029",
+     "card": 5
+    }
+   ],
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B5.html",
+     "sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B5.txt",
+     "sha256": "fb49cb6607f887ec58400e261da917030083586ce6319537d7cbae209d960c20"
+    },
+    "site-main.af19d7fc.js": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/site-main.af19d7fc.js",
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:12:03Z",
+    "http": 200,
+    "url": "https://www.dataprovenance.org/data-provenance-explorer/dataset-explorer",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B5.html",
+    "raw_sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B5.txt"
+    ],
+    "bundle": {
+     "url": "https://www.dataprovenance.org/static/js/main.af19d7fc.js",
+     "at": "2026-10-29T05:12:01Z",
+     "http": 200,
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "card_title": "Dataset Explorer - Data Provenance Initiative",
+   "card_snippet": "Data Provenance Explorer. > Dataset Explorer. Dataset Explorer. Explore nearly 4,000 text, video, and speech datasets, and their characteristics. Paper Reposito...",
+   "card_note": null,
+   "names_operator": "yes ('Data Provenance Initiative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the snippet's 'Data Provenance Explorer. > Dataset Explorer.' is the breadcrumb (Qh) and 'Paper Reposito…' the header's two buttons (Lh, 'Paper' and 'Repository'); the buttons link the founding paper (https://arxiv.org/pdf/2310.16787, in the component) and the Data-Provenance-Collection repository. The served HTML is the site's script shell (title, meta description, an empty root; the same 1,601 bytes at every path, sha256 bf609f38…); the page text is the string literals of the route's component in the site's script bundle /static/js/main.af19d7fc.js, fetched verbatim and saved as site-main.af19d7fc.js, extracted in source order by a tokenizing pass (component and offsets named in the .txt)."
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "role": "Overview card 6",
+   "card": "Cohere — Data Provenance Explorer Launches to Tackle Data Transparency Crisis",
+   "url": "https://cohere.com/blog/data-provenance-explorer-launches-tackle-data-transparency-crisis",
+   "kind": "Overview card (press post by the operators)",
+   "surfaced_by_T": [
+    {
+     "slug": "data-provenance-explorer-aio-20261029",
+     "card": 6
+    }
+   ],
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B6.html",
+     "sha256": "aa465dcc01c69325c46d7abecf7b3c3f60d80cec9522c1f4b54961cb9752dc80"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B6.txt",
+     "sha256": "77dc370bbe2dfad003b8ff5176c86dcfdba0c7f978851c91d3cddf75b2d8bb5e"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:12:04Z",
+    "http": 200,
+    "url": "https://cohere.com/blog/data-provenance-explorer-launches-tackle-data-transparency-crisis",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B6.html",
+    "raw_sha256": "aa465dcc01c69325c46d7abecf7b3c3f60d80cec9522c1f4b54961cb9752dc80",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B6.txt"
+    ]
+   },
+   "card_title": "Data Provenance Explorer Launches to Tackle Data Transparency Crisis",
+   "card_snippet": "By Shayne Longpre and Sara Hooker Collectively, these data sets have been downloaded tens of millions of times, and are the backbone of many published NLP break...",
+   "card_note": null,
+   "names_operator": "yes ('Data Provenance Initiative', 'Longpre' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the Initiative's own press list in its script bundle (cohere.com/blog/data-provenance-explorer-launches-tackle-data-transparency-crisis), confirmed by the page title. Dated 25 October 2023; by Shayne Longpre and Sara Hooker. The page's served text holds only navigation; the article body is in its Next.js flight data (record 29:T20fe, HTML), extracted and appended to B6.txt under a marked header."
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "role": "own page the MMRS record cites (the operators' paper)",
+   "card": "arXiv — [2310.16787] The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing & Attribution in AI",
+   "url": "https://arxiv.org/abs/2310.16787",
+   "kind": "own page (abstract page)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B7.html",
+     "sha256": "d01552052066b391aeed8b50adde61897cb194ea14727553cbf65971af51bb53"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B7.txt",
+     "sha256": "cf127e18a98a4ee768753591e9e8a09c79c6b92f8ead98a6a1dd45f62a036504"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:12:04Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2310.16787",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B7.html",
+    "raw_sha256": "d01552052066b391aeed8b50adde61897cb194ea14727553cbf65971af51bb53",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B7.txt"
+    ]
+   },
+   "names_operator": "yes ('Data Provenance Initiative', 'Longpre', 'Mahari' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the founding paper's abstract page; cited by the MMRS record (sources: arxiv.org/abs/2310.16787, for 'audit'; evidence for operator, self_description and records_attribution)"
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "role": "own page the MMRS record cites (the operators' paper)",
+   "card": "arXiv — [2407.14933] Consent in Crisis: The Rapid Decline of the AI Data Commons",
+   "url": "https://arxiv.org/abs/2407.14933",
+   "kind": "own page (abstract page)",
+   "surfaced_by_T": "no (not surfaced by T; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B8.html",
+     "sha256": "8cedde3659e5ed29df809dfd194af1b64f4bcf5c215933d3b1741f1ad120c98b"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B8.txt",
+     "sha256": "d90c4cbbca83904750a946084c4adb455164500d67431e02f7c8bd90868c07fd"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:12:04Z",
+    "http": 200,
+    "url": "https://arxiv.org/abs/2407.14933",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B8.html",
+    "raw_sha256": "8cedde3659e5ed29df809dfd194af1b64f4bcf5c215933d3b1741f1ad120c98b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B8.txt"
+    ]
+   },
+   "names_operator": "yes ('Longpre', 'Mahari' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the second audit's abstract page; cited by the MMRS record (sources: arxiv.org/abs/2407.14933, for 'Consent in Crisis audit'; evidence for note)"
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "role": "the data the Dataset Explorer loads (the JSON/CSV the page fetches)",
+   "card": "Data Provenance Initiative — /data_summaries.csv",
+   "url": "https://www.dataprovenance.org/data_summaries.csv",
+   "kind": "own page (data file)",
+   "surfaced_by_T": "no (not surfaced by T; found in the script bundle, which fetches it for the Dataset Explorer)",
+   "files": {
+    "B9.csv.gz": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B9.csv.gz",
+     "sha256": "e1eb7bf01f96315f5c7a6261e66afbf12cbc66328d3904dd0adf153a2f22c9e7"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B9.txt",
+     "sha256": "65ff8518cd883799afa5d68f7502269a2f56ca5b24dfe89497e49ef6b7f4c10d"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:12:04Z",
+    "http": 200,
+    "url": "https://www.dataprovenance.org/data_summaries.csv",
+    "content_type": "text/csv; charset=utf-8",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B9.csv.gz",
+    "raw_sha256_uncompressed": "ca7049b3f307ef6cd3bdb409e7184e054c42816d1551cdfe918a6f6b081658ad",
+    "raw_sha256": "e1eb7bf01f96315f5c7a6261e66afbf12cbc66328d3904dd0adf153a2f22c9e7",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B9.txt"
+    ],
+    "rows": 3917,
+    "by_modality": {
+     "Text": 3717,
+     "Speech": 95,
+     "Video": 105
+    },
+    "by_license_use": {
+     "unspecified": 701,
+     "non-commercial": 873,
+     "commercial": 2116,
+     "academic-only": 227
+    },
+    "collections": 308,
+    "note": "13,152,102 bytes as served, saved gzip-compressed (raw_sha256_uncompressed is the served file's); rows counted with Python's csv reader; B9.txt holds the header row verbatim"
+   },
+   "names_operator": "yes (the header's '(DataProvenance)' columns are the Initiative's own licence readings)",
+   "names_archive": "no",
+   "note": "The bundle also loads /constants/*.json (licence classes, creator, domain, task and model groups) and /html_constants/*.json (country and language codes), not fetched: lookup tables for the filters."
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "role": "the Initiative's explorer page for web data (task: its explorer pages)",
+   "card": "Data Provenance Initiative — Web Data Explorer",
+   "url": "https://www.dataprovenance.org/data-provenance-explorer/web-data-explorer",
+   "kind": "own page (explorer)",
+   "surfaced_by_T": "no (not surfaced by T, whose web-data bullet has no card of its own; admitted beside the cards by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B10.html",
+     "sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B10.txt",
+     "sha256": "ab370b14791658a228880d53c69187198ba2a6cf80a2f8daea5a251ad155679a"
+    },
+    "site-main.af19d7fc.js": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/site-main.af19d7fc.js",
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "fetched": {
+    "at": "2026-10-29T05:12:03Z",
+    "http": 200,
+    "url": "https://www.dataprovenance.org/data-provenance-explorer/web-data-explorer",
+    "raw": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B10.html",
+    "raw_sha256": "bf609f385257c3a179dc564d68d8ec46b2f096a34f61918cc7d750b83f6d7e2f",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B10.txt"
+    ],
+    "bundle": {
+     "url": "https://www.dataprovenance.org/static/js/main.af19d7fc.js",
+     "sha256": "91de539c0ec5317faec490142648792d586b0ee21e82a88f5d7feba90a0898e9"
+    }
+   },
+   "names_operator": "yes ('Data Provenance Initiative' in the saved text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "the route's component ($h, ed) with the shared breadcrumb (Qh) and header buttons (Lh); its paper link is /Consent_in_Crisis.pdf. The served HTML is the site's script shell (title, meta description, an empty root; the same 1,601 bytes at every path, sha256 bf609f38…); the page text is the string literals of the route's component in the site's script bundle /static/js/main.af19d7fc.js, fetched verbatim and saved as site-main.af19d7fc.js, extracted in source order by a tokenizing pass (component and offsets named in the .txt)."
+  },
+  {
+   "id": "B11",
+   "origin": "wikipedia",
+   "role": "the entity's Wikipedia title",
+   "card": "Wikipedia — Data Provenance Explorer (no article)",
+   "url": "https://en.wikipedia.org/wiki/Data_Provenance_Explorer",
+   "kind": "Wikipedia (no article)",
+   "surfaced_by_T": "no (not surfaced by T; checked by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B11.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B11.wiki",
+     "sha256": "ae88bc8014d236e3d1d5d71f37597fcd135734056aa3c713db66d4aa0999c7a0"
+    },
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B11.html",
+     "sha256": "136eb91afa8a5c7f30f34144a07ff5e379bb00c32b6cfbfa6c8953894f865c56"
+    },
+    "B11-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B11-search.html",
+     "sha256": "d510d4b8db965748ad8f7fb7fe5406329f363093ef85122c6688c98e0f944658"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B11.txt",
+     "sha256": "4f6b81e12554dfb5c6af75dd107702f06a9aa8ec016ce056c21a02f992a5bc43"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Data_Provenance_Explorer&action=raw&redirect=no",
+     "at": "2026-10-29T05:12:05Z",
+     "http": 404,
+     "sha256": "ae88bc8014d236e3d1d5d71f37597fcd135734056aa3c713db66d4aa0999c7a0"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Data_Provenance_Explorer",
+     "at": "2026-10-29T05:12:06Z",
+     "http": 404,
+     "sha256": "136eb91afa8a5c7f30f34144a07ff5e379bb00c32b6cfbfa6c8953894f865c56"
+    },
+    "search": {
+     "url": "https://en.wikipedia.org/w/index.php?search=%22Data+Provenance+Explorer%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+     "at": "2026-10-29T05:12:06Z",
+     "http": 200,
+     "sha256": "d510d4b8db965748ad8f7fb7fe5406329f363093ef85122c6688c98e0f944658"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B11.txt"
+    ],
+    "note": "the API search (list=search) answered HTTP 429 (rate limit) in a probe; the rendered Special:Search page was used instead"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "no article; the full-text search for the quoted phrase in article space returns no results"
+  },
+  {
+   "id": "B12",
+   "origin": "wikipedia",
+   "role": "the operator's Wikipedia title",
+   "card": "Wikipedia — Data Provenance Initiative (no article)",
+   "url": "https://en.wikipedia.org/wiki/Data_Provenance_Initiative",
+   "kind": "Wikipedia (no article)",
+   "surfaced_by_T": "no (not surfaced by T; checked by the operator's ruling of 2026-10-29)",
+   "files": {
+    "B12.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B12.wiki",
+     "sha256": "1d1b5b8029e76a2946ee2990b1cf27dcf3d6f9502c7dc691ea2fd3147410e7c4"
+    },
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B12.html",
+     "sha256": "683496b15564dda466febcf9071448d4c21ebed5af92b66b6aee8ed7fe2af035"
+    },
+    "B12-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B12-search.html",
+     "sha256": "8ebe0a384da0592782ff6655bdee204a7210b96179d97c2af8b74bec65399610"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B12.txt",
+     "sha256": "979ddc1b561c6122262e6aa8caf4136e2206817fac7fd21ad0023c459ba10827"
+    }
+   },
+   "fetched": {
+    "raw": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Data_Provenance_Initiative&action=raw&redirect=no",
+     "at": "2026-10-29T05:12:07Z",
+     "http": 404,
+     "sha256": "1d1b5b8029e76a2946ee2990b1cf27dcf3d6f9502c7dc691ea2fd3147410e7c4"
+    },
+    "rendered": {
+     "url": "https://en.wikipedia.org/wiki/Data_Provenance_Initiative",
+     "at": "2026-10-29T05:12:07Z",
+     "http": 404,
+     "sha256": "683496b15564dda466febcf9071448d4c21ebed5af92b66b6aee8ed7fe2af035"
+    },
+    "search": {
+     "url": "https://en.wikipedia.org/w/index.php?search=%22Data+Provenance+Initiative%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+     "at": "2026-10-29T05:12:07Z",
+     "http": 200,
+     "sha256": "8ebe0a384da0592782ff6655bdee204a7210b96179d97c2af8b74bec65399610"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/data-provenance-explorer-20261029/B12.txt"
+    ],
+    "note": "the API search (list=search) answered HTTP 429 (rate limit) in a probe; the rendered Special:Search page was used instead"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "no article; the full-text search for the quoted phrase in article space returns no results"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "/explorer-introduction (d2): headings",
+   "quote": "The Data Provenance Explorer … Explore the datasets included in our audit. The DPI Explorer tool allows you to filter for and analyze language model training datasets.",
+   "claim": "the explorer introduced by its own page: the datasets included in the Initiative's audit, filtered and analysed as language-model training datasets",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the explorer of an audit of training datasets",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2af1b48c11922848…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "/explorer-introduction (d2): slide caption",
+   "quote": "Select and filter use cases, languages, and more",
+   "claim": "what can be filtered: use cases, languages and more",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: the explorer of an audit of training datasets",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2af1b48c11922848…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card snippet (MIT Media Lab unreachable: TLS failure)",
+   "quote": "Based on our extensive audits of AI data, we've built data explorers to allow practitioners to make more nuanced and informed decisions about th",
+   "claim": "MIT Media Lab's page: data explorers built on the Initiative's audits, for practitioners' decisions (snippet only)",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: the explorer of an audit of training datasets",
+   "date": "— (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "card title (MIT Media Lab unreachable)",
+   "quote": "Data Provenance Explorers - MIT Media Lab",
+   "claim": "the MIT Media Lab project page carries the name in the plural (title only)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator: the Data Provenance Initiative",
+   "date": "— (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title/snippet in the registry's cite_list"
+  },
+  "F5": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "dataprovenance.org: meta description (served HTML)",
+   "quote": "Public measurement infrastructure for AI data, model ecosystems, and real-world AI use.",
+   "claim": "the Initiative's self-description: public measurement infrastructure for AI data, model ecosystems and real-world AI use",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the operator: the Data Provenance Initiative",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): flagship system 'Data Provenance Explorer'",
+   "quote": "Data Provenance Explorer … Training data … 4,000+ datasets … 608 languages across text, speech, and video",
+   "claim": "the Explorer on the home page: training data, 4,000+ datasets, 608 languages across text, speech and video",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count: nearly 4,000 text, speech and video datasets",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): flagship system 'Data Provenance Explorer', description",
+   "quote": "Inspect dataset sources, licenses, creators, geographies, modalities, and derivation chains.",
+   "claim": "what it records: each dataset's sources, licences, creators, geographies, modalities and derivation chains",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the unit: a dataset traced to its sources, licences and creators",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): flagship system 'Web Consent Explorer'",
+   "quote": "Web Consent Explorer … Web data … 14,000 domains … Terms, robots.txt, and crawl restrictions … Track how web consent signals are changing as AI developers compete for training data.",
+   "claim": "the Web Consent Explorer: 14,000 domains, terms, robots.txt and crawl restrictions, tracking changing consent signals",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Web Data Explorer and Consent in Crisis",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): 'Flagship systems'",
+   "quote": "Four public measurement systems … Together they trace AI from source data and web consent to model markets and real-world use.",
+   "claim": "the Explorer is one of four measurement systems (with Open Model Evolution and the AI Observatory) tracing AI from source data to real-world use",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator's other measurement systems",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): findings strip, 'Dataset restrictions'",
+   "quote": "Dataset restrictions … Source content often carries stricter terms than dataset releases … Multimodal Data Provenance",
+   "claim": "headline finding (the multimodal audit): source content often carries stricter terms than dataset releases",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the multimodal audit (ICLR 2025)",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): publications, 2025",
+   "quote": "Bridging the Data Provenance Gap Across Text, Speech, and Video … An audit of four thousand public text, speech, and video datasets. … ICLR 2025",
+   "claim": "the multimodal audit (ICLR 2025): four thousand public text, speech and video datasets",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the multimodal audit (ICLR 2025)",
+   "date": "2025 (ICLR 2025, as the home page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): publications, 2024",
+   "quote": "Consent in Crisis: The Rapid Decline of the AI Data Commons … An audit of terms, restrictions, and consent signals across the web. … NeurIPS 2024",
+   "claim": "Consent in Crisis (NeurIPS 2024): an audit of terms, restrictions and consent signals across the web",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Web Data Explorer and Consent in Crisis",
+   "date": "2024 (NeurIPS 2024, as the home page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): 'Public-interest infrastructure'",
+   "quote": "DPI releases papers, datasets, and dashboards that help researchers, journalists, policymakers, and builders reason from shared evidence.",
+   "claim": "the Initiative releases papers, datasets and dashboards for reasoning from shared evidence",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the operator: the Data Provenance Initiative",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): 'Featured coverage'",
+   "quote": "DPI findings have been covered by the Financial Times, The New York Times, The Washington Post, MIT Technology Review, IEEE Spectrum, and VentureBeat.",
+   "claim": "press coverage the Initiative lists",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press and governance",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "home (Cr): 'Policy and governance relevance'",
+   "quote": "Our work has been cited in public AI safety and governance reporting and used to ground debates about data transparency, consent, and market concentration.",
+   "claim": "the Initiative's account of its uptake in AI safety and governance reporting",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: press and governance",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d1f28f3a590faab9…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "/data-provenance-explorer (p2): heading",
+   "quote": "Data Provenance Explorer … Discover the datasets featured in our audit! The DPI Explorer tool enables you to filter and analyze language model training datasets effortlessly.",
+   "claim": "the explorer's landing page: the audit's datasets, filtered and analysed as language-model training datasets",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: the explorer of an audit of training datasets",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ca844fa5c36fd62d…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "/data-provenance-explorer (f2): 'Dataset Explorer'",
+   "quote": "A tool to explore and filter 4000 text, video, and speech datasets, for their license, sources, creators, and other metadata.",
+   "claim": "the Dataset Explorer: 4000 text, video and speech datasets, filtered by licence, sources, creators and other metadata",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "count: nearly 4,000 text, speech and video datasets",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ca844fa5c36fd62d…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "/data-provenance-explorer (f2): 'Web Data Explorer'",
+   "quote": "An explorer of the trends in data-use preferences from the websites commonly used to source AI data.",
+   "claim": "the Web Data Explorer: trends in data-use preferences of the websites commonly used to source AI data",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Web Data Explorer and Consent in Crisis",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 ca844fa5c36fd62d…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "/data-provenance-explorer/dataset-explorer (u2): header",
+   "quote": "Dataset Explorer … Explore nearly 4,000 text, video, and speech datasets, and their characteristics.",
+   "claim": "the Dataset Explorer's header: nearly 4,000 text, video and speech datasets and their characteristics",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "count: nearly 4,000 text, speech and video datasets",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 fb49cb6607f887ec…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "breadcrumb (Qh) and header buttons (Lh)",
+   "quote": "Data Provenance Explorer … Paper … Repository",
+   "claim": "the Dataset Explorer stands under the Data Provenance Explorer, with links to its paper (arXiv:2310.16787, by the bundle) and the repository",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: the founding audit and the launch, October 2023",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 fb49cb6607f887ec…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "/data-provenance-explorer/dataset-explorer (u2): summary table",
+   "quote": "Text Sources … Model Generated … Mean Input Chars … Mean Target Chars … Generated By … % Datasets Used",
+   "claim": "the summary the Dataset Explorer computes over a selection: text sources, model-generated share, mean input and target characters, generating model, share of datasets used",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a dataset traced to its sources, licences and creators",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 fb49cb6607f887ec…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "article body: standfirst",
+   "quote": "Researchers from MIT, Cohere for AI, and 11 other institutions launch free Data Provenance Explorer platform to track and filter audited datasets for ethical, legal, and transparency considerations",
+   "claim": "the launch: MIT, Cohere for AI and 11 other institutions release the free Explorer to track and filter audited datasets",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: the founding audit and the launch, October 2023",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "article body ¶1",
+   "quote": "Inconsistent tracking of the origins of a piece of data, which we refer to as data provenance, has introduced a range of legal and ethical challenges.",
+   "claim": "data provenance defined by the authors: the tracking of the origins of a piece of data; its inconsistency raises legal and ethical challenges",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "data provenance defined",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "article body ¶2",
+   "quote": "audit and trace nearly 2,000 of the most widely used fine-tuning datasets. Collectively, these data sets have been downloaded tens of millions of times, and are the backbone of many published NLP breakthroughs.",
+   "claim": "the founding audit as the launch states it: nearly 2,000 widely used fine-tuning datasets, downloaded tens of millions of times",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: the founding audit and the launch, October 2023",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "article body ¶3",
+   "quote": "The result of this multidisciplinary initiative is the single largest audit to date of AI datasets. For the first time, these datasets include tags to the original data sources, numerous re-licensings, creators, and other data properties.",
+   "claim": "the largest audit of AI datasets to date; the datasets tagged with original sources, re-licensings and creators",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the unit: a dataset traced to its sources, licences and creators",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "article body ¶4",
+   "quote": "The platform allows developers to track and filter thousands of datasets for legal and ethical considerations, and enables scholars and journalists to explore the composition and data lineage of popular AI datasets.",
+   "claim": "the platform's users: developers filtering for legal and ethical considerations; scholars and journalists exploring composition and data lineage",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: the explorer of an audit of training datasets",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Addressing the Data Transparency Crisis ¶1",
+   "quote": "Crowdsourced aggregators like GitHub, Papers with Code, and many of the open source LLMs trained from data on these aggregators, have an extremely high proportion of missing data licenses (“Unspecified”), ranging from 72 to 83 percent. This compares to 30 percent missing licenses with our own annotation protocol",
+   "claim": "crowdsourced aggregators (GitHub, Papers with Code) miss licences for 72–83 percent of datasets, against 30 percent under the Initiative's protocol",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "audit findings: licence omission and misattribution",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Addressing the Data Transparency Crisis ¶2",
+   "quote": "Crowdsourced aggregators listed licenses too permissively in up to 29 percent of the various cases audited. Incorrect or distorted licensing leads to cascading misattribution",
+   "claim": "aggregators list licences too permissively in up to 29 percent of cases; distorted licensing cascades into misattribution",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: licence omission and misattribution",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Understanding Systematic Differences ¶2",
+   "quote": "There is a sharp and widening divide between data licensed as commercially open versus closed.",
+   "claim": "a widening divide between commercially open and closed data",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: the commercial divide and the Western skew",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Understanding Systematic Differences ¶4",
+   "quote": "We find a stark Western-centric skew in representation across datasets.",
+   "claim": "a Western-centric skew in the datasets' geographic coverage",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: the commercial divide and the Western skew",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Open Legal Ambiguities ¶1",
+   "quote": "major legal ambiguities remain in data licensing that the authors acknowledge cannot be resolved by tooling alone.",
+   "claim": "the stated limit: legal ambiguities in data licensing that tooling alone cannot resolve",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limits: what tooling cannot resolve",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "card",
+   "locus": "Path Forward ¶2",
+   "quote": "This large-scale audit is the launch of a wider multi-institutional initiative, where users all over the world can contribute to the explorer",
+   "claim": "the audit launches a wider initiative; users can contribute to the explorer",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: the founding audit and the launch, October 2023",
+   "date": "2023-10-25 (posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 77dc370bbe2dfad0…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "abstract page header",
+   "quote": "[Submitted on 25 Oct 2023 (v1), last revised 4 Nov 2023 (this version, v3)] … Title:The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing & Attribution in AI … Authors:Shayne Longpre, Robert Mahari, Anthony Chen, Naana Obeng-Marnu",
+   "claim": "the founding paper, submitted 25 October 2023 (v3 4 November), by Longpre, Mahari, Chen, Obeng-Marnu and others",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: the founding audit and the launch, October 2023",
+   "date": "2023-10-25 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cf127e18a98a4ee7…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "we convene a multi-disciplinary effort between legal and machine learning experts to systematically audit and trace 1800+ text datasets. We develop tools and standards to trace the lineage of these datasets, from their source, creators, series of license conditions, properties, and subsequent use.",
+   "claim": "the founding audit: 1800+ text datasets traced by legal and ML experts from source and creators through licence conditions to subsequent use",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "origin: the founding audit and the launch, October 2023",
+   "date": "2023-10-25 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cf127e18a98a4ee7…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "Our landscape analysis highlights the sharp divides in composition and focus of commercially open vs closed datasets, with closed datasets monopolizing important categories: lower resource languages, more creative tasks, richer topic variety, newer and more synthetic training data.",
+   "claim": "closed datasets monopolize lower-resource languages, creative tasks, topic variety and newer synthetic data",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "audit findings: the commercial divide and the Western skew",
+   "date": "2023-10-25 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cf127e18a98a4ee7…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "We also observe frequent miscategorization of licenses on widely used dataset hosting sites, with license omission of 70%+ and error rates of 50%+. This points to a crisis in misattribution and informed use of the most popular datasets driving many recent breakthroughs.",
+   "claim": "on hosting sites, licence omission of 70%+ and error rates of 50%+: a crisis in misattribution",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "audit findings: licence omission and misattribution",
+   "date": "2023-10-25 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cf127e18a98a4ee7…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "we release our entire audit, with an interactive UI, the Data Provenance Explorer, which allows practitioners to trace and filter on data provenance for the most popular open source finetuning data collections",
+   "claim": "the Explorer defined by the paper: the whole audit released with an interactive UI to trace and filter on provenance of popular open fine-tuning collections",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the explorer of an audit of training datasets",
+   "date": "2023-10-25 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 cf127e18a98a4ee7…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "abstract page header",
+   "quote": "[Submitted on 20 Jul 2024 (v1), last revised 24 Jul 2024 (this version, v2)] … Title:Consent in Crisis: The Rapid Decline of the AI Data Commons … Authors:Shayne Longpre, Robert Mahari, Ariel Lee",
+   "claim": "Consent in Crisis, submitted 20 July 2024, by Longpre, Mahari, Lee and others",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Web Data Explorer and Consent in Crisis",
+   "date": "2024-07-20 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d90c4cbbca839047…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "we conduct the first, large-scale, longitudinal audit of the consent protocols for the web domains underlying AI training corpora. Our audit of 14,000 web domains provides an expansive view of crawlable web data and how codified data use preferences are changing over time.",
+   "claim": "the second audit: the first longitudinal audit of consent protocols for 14,000 web domains underlying AI training corpora",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Web Data Explorer and Consent in Crisis",
+   "date": "2024-07-20 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d90c4cbbca839047…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "in a single year (2023-2024) there has been a rapid crescendo of data restrictions from web sources, rendering ~5%+ of all tokens in C4, or 28%+ of the most actively maintained, critical sources in C4, fully restricted from use. For Terms of Service crawling restrictions, a full 45% of C4 is now restricted.",
+   "claim": "in one year ~5%+ of C4's tokens (28%+ of its critical sources) fully restricted; by terms of service, 45% of C4",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "consent findings: the decline of the AI data commons",
+   "date": "2024-07-20 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d90c4cbbca839047…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "We diagnose these as symptoms of ineffective web protocols, not designed to cope with the widespread re-purposing of the internet for AI.",
+   "claim": "the restrictions diagnosed as symptoms of web protocols not designed for AI's re-purposing of the internet",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "consent findings: the decline of the AI data commons",
+   "date": "2024-07-20 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d90c4cbbca839047…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B8",
+   "origin": "own_page",
+   "locus": "Abstract",
+   "quote": "If respected or enforced, these restrictions are rapidly biasing the diversity, freshness, and scaling laws for general-purpose AI systems.",
+   "claim": "conditional: if respected or enforced, the restrictions bias diversity, freshness and scaling laws",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "consent findings: the decline of the AI data commons",
+   "date": "2024-07-20 (v1 submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 d90c4cbbca839047…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B9",
+   "origin": "own_page",
+   "locus": "header row of /data_summaries.csv (3,917 rows at fetch)",
+   "quote": "Unique Dataset Identifier,Dataset Name … Text Sources,Model Generated,Human Annotation,Derived from Datasets,Creators,Licenses … License Use (DataProvenance),License Attribution (DataProvenance),License Share Alike (DataProvenance),Modality",
+   "claim": "the data the Dataset Explorer loads records, per dataset, its sources, derivation, creators and licences, with the Initiative's own licence-use, attribution and share-alike readings; 3,917 rows at fetch (3,717 text, 105 video, 95 speech), licence use commercial 2,116, non-commercial 873, academic-only 227, unspecified 701 (counted by script)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the unit: a dataset traced to its sources, licences and creators",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 65ff8518cd883799…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "/data-provenance-explorer/web-data-explorer (ed): header",
+   "quote": "Web Data Explorer … Shifting preferences in how websites allow their data to be used for AI",
+   "claim": "the Web Data Explorer's header: shifting preferences in how websites allow their data to be used for AI",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Web Data Explorer and Consent in Crisis",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ab370b14791658a2…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "web-data-explorer ($h): 'Trends for Robots.txt and Terms of Service'",
+   "quote": "We conduct a temporal analysis, from 2016 to April 2024, of the web consent signals in HEAD-C4, 2k of the largest and most critical web domains. … A web domain is considered restricted if its robots.txt disallows access to AI crawlers from OpenAI, Google, Anthropic, Common Crawl, Cohere, Meta, or the Internet Archive.",
+   "claim": "the consent explorer's method: HEAD-C4's 2k critical domains, 2016 to April 2024; restricted when robots.txt disallows the named AI crawlers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Web Data Explorer and Consent in Crisis",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ab370b14791658a2…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B10",
+   "origin": "own_page",
+   "locus": "web-data-explorer ($h): 'Trends for Robots.txt and Terms of Service'",
+   "quote": "In all cases there are significant recent spikes in restrictions.",
+   "claim": "significant recent spikes in restrictions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "consent findings: the decline of the AI data commons",
+   "date": "2026-10-29 (page undated; as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 ab370b14791658a2…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title Data_Provenance_Explorer",
+   "quote": "raw wikitext (action=raw, redirect=no): HTTP 404 … Wikipedia does not have an article with this exact name. … There were no results matching the query.",
+   "claim": "Wikipedia has no article 'Data Provenance Explorer' and no article text containing the phrase",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 4f6b81e12554dfb5…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "locus": "Wikipedia: title Data_Provenance_Initiative",
+   "quote": "raw wikitext (action=raw, redirect=no): HTTP 404 … Wikipedia does not have an article with this exact name. … There were no results matching the query.",
+   "claim": "Wikipedia has no article 'Data Provenance Initiative' and no article text containing the phrase",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-29 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 979ddc1b561c6122…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Data Provenance Initiative — Data Provenance Explorer",
+  "B2": "MIT Media Lab — Data Provenance Explorers - MIT Media Lab",
+  "B3": "Data Provenance Initiative — Data Provenance Initiative",
+  "B4": "Data Provenance Initiative — Data Provenance Explorer",
+  "B5": "Data Provenance Initiative — Dataset Explorer - Data Provenance Initiative",
+  "B6": "Cohere — Data Provenance Explorer Launches to Tackle Data Transparency Crisis",
+  "B7": "arXiv — [2310.16787] The Data Provenance Initiative: A Large Scale Audit of Dataset Licensing & Attribution in AI",
+  "B8": "arXiv — [2407.14933] Consent in Crisis: The Rapid Decline of the AI Data Commons",
+  "B9": "Data Provenance Initiative — /data_summaries.csv",
+  "B10": "Data Provenance Initiative — Web Data Explorer",
+  "B11": "Wikipedia — Data Provenance Explorer (no article)",
+  "B12": "Wikipedia — Data Provenance Initiative (no article)"
+ }
+}

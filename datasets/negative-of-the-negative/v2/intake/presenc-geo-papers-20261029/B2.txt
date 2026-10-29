@@ -1,0 +1,637 @@
+GEO Academic Research Papers 2026, Comprehensive Summary | Presenc AI
+Presenc AISignalsPlatformVisionBlogsJoin the waitlist
+
+Home
+/Research
+/AI Brand Visibility Research
+/GEO Academic Research Papers 2026
+
+ResearchGEO Academic Research Papers 2026
+Comprehensive summary of 34 academic and industry research papers on Generative Engine Optimization, with Presenc AI analysis of implications for practitioners.
+By Ramanath, CTO & Co-Founder at Presenc AI · Last updated: April 2026Cite This Report
+
+A Working Bibliography for AI Visibility Practitioners
+
+Generative Engine Optimization (GEO) has accelerated from practitioner blog posts in 2022 to a substantial academic literature by 2026. This page is a running synthesis of 34 research papers and industry reports that shape what we know about making brands visible in AI-mediated search and assistants. For each, Presenc AI adds a practitioner-facing implication so the theory translates into what to do on Monday morning.
+
+The papers collected here come from Princeton, CMU, Harvard, Technion, University of Toronto, USTC, and several independent research organizations including the AIVO Standard and Geometriqs. Methodologies range from controlled experiments on GEO-bench and similar datasets, to large-scale comparative studies across ChatGPT, Perplexity, and Gemini, to sector-specific empirical studies (B2B SaaS, real estate, biotech, e-commerce).
+
+The Shape of the Literature
+
+Five themes dominate the current GEO research program:
+
+Content-level optimization. Aggarwal et al.'s original GEO paper established citation/quote/statistic additions as the highest-ROI content rewrites. Subsequent work (Technion, CMU, UT) has refined which structural patterns matter most for which engines.
+
+Structural and metadata signals. The Schanbacher JSON-LD study, the Cooperative Content paper from CMU, and the GEO-16 framework all converge on the finding that structured data and explicit entity tagging produce disproportionate citation lift.
+
+Adversarial and defensive security. Kumar + Lakkaraju, the Meta/DeepMind poisoning paper, and Anthropic's 250-sample backdoor finding establish that AI visibility is also a brand-safety problem.
+
+Measurement and governance. The AIVO Standard series (PSOS, AIVO 100, Visibility 2.0) develop the vocabulary for enterprise-grade measurement and board reporting.
+
+Comparative and sector-specific studies. Geometriqs Global 80, the Product Hunt Discovery Gap study, and the GEO-16 B2B SaaS analysis document systematic gaps between market position and AI presence.
+
+Summary Table
+
+| | Paper
+| Venue / Year
+| Key Finding
+
+| GEO: Generative Engine Optimization
+Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande · Princeton University + IIT Delhi
+
+| ACM KDD 2024 · 2024
+
+| Introduces GEO as a formal paradigm with GEO-bench (10k queries). Shows citation-adding, quotation-adding, and statistics-adding are the most effective content-level optimizations, lifting AI response visibility up to 40%.
+
+| Manipulating Large Language Models to Increase Product Visibility
+Aounon Kumar, Himabindu Lakkaraju · Harvard University
+
+| arXiv · 2024
+
+| Demonstrates that adversarial product-description prompts can reliably increase LLM recommendation rates for targeted products, with minimal detection.
+
+| Persistent Pre-Training Poisoning of LLMs
+Zhang, Rando, Evtimov, Chi, Smith, Carlini, Tramèr, Ippolito · CMU + ETH Zurich + Meta + Google DeepMind
+
+| arXiv · 2024
+
+| Shows that as few as 250 malicious documents in pre-training data can reliably install persistent backdoors in LLMs regardless of model size.
+
+| White Hat Search Engine Optimization using Large Language Models
+Bardas, Mordo, Kurland, Tennenholtz, Zur · Technion, Israel
+
+| arXiv · 2025
+
+| Presents non-adversarial LLM-driven content optimization techniques that improve search ranking without manipulation, using LLMs to rewrite pages against ranking-signal heuristics.
+
+| Role-Augmented Intent-Driven Generative Search Engine Optimization
+Chen, Wu, Bao, Chen, Liao, Huang · University of Science and Technology of China
+
+| arXiv · 2025
+
+| Shows that tailoring content to specific searcher personas (intent + role) before LLM ingestion improves citation rates in generative search engines by 11-23% over generic optimization.
+
+| Generative Engine Optimization: How to Dominate AI Search
+Chen, Wang, Chen, Koudas · University of Toronto
+
+| arXiv · 2025
+
+| Empirical study across ChatGPT, Perplexity, and Gemini showing that structured content with explicit entity tagging earns 2-3x citation rate over equivalent-quality unstructured content.
+
+| AI Answer Engine Citation Behavior: GEO-16 Framework for B2B SaaS
+Kumar, Palkhouski · UC Berkeley + Wrodium Research
+
+| arXiv · 2025
+
+| Introduces GEO-16, a 16-pillar framework auditing page-level signals. Applied to 70 B2B SaaS prompts, identifies which page attributes correlate with citation in ChatGPT/Perplexity/Claude.
+
+| What Generative Search Engines Like and How to Optimize Web Content Cooperatively
+Wu, Zhong, Kim, Xiong · Carnegie Mellon University + Vody
+
+| arXiv · 2025
+
+| Identifies which content characteristics generative engines prefer when synthesizing responses. Shows that cooperative, semantically-explicit content earns 35-60% higher citation rate than adversarial or terse equivalents.
+
+| The Discovery Gap: How Product Hunt Startups Disappear in LLM Discovery Queries
+Amit Prakash Sharma · IIT Patna
+
+| arXiv · 2025
+
+| Of 112 Product Hunt top-ranked startups tested, only ~12% surfaced in ChatGPT discovery queries for their category. Product Hunt ranking had near-zero correlation with LLM visibility.
+
+| IF-GEO: Conflict-Aware Instruction Fusion for Multi-Query Generative Engine Optimization
+Zhou, Chen, Chen, Bao, Chen, Liao · USTC + Institute of Dataspace, Hefei
+
+| arXiv · 2026
+
+| Presents a technique for optimizing a single source page across multiple conflicting search-intent queries, improving cross-query visibility by 14-27%.
+
+| Navigating the Shift: Comparative Analysis of Web Search and Generative AI Response Generation
+Chen, Wang, Chen, Koudas · University of Toronto
+
+| arXiv · 2026
+
+| Large-scale comparison of web search SERPs vs. generative AI responses. Finds systematic bias toward certain source types (Wikipedia, news, government) in AI responses vs. more diverse sources in traditional search.
+
+| Controlling Output Rankings in Generative Engines for LLM-based Search
+Jin, Chen, Zhang, Luo, Zeng, Luo, Wang · Various (US + China)
+
+| arXiv · 2026
+
+| Demonstrates that generative engines effectively impose implicit rankings on mentioned products, and that this ranking shapes user choice even without explicit comparison.
+
+| AIVO Standard Methodology for AI Visibility Optimization v3.0
+AIVO Standard Research Team · AIVO Standard
+
+| SSRN · 2025
+
+| Introduces Prompt-Space Occupancy Score (PSOS), a governance-ready KPI measuring how brands surface, persist, and decay inside generative AI systems across prompt space.
+
+| The Visibility Gap in AI: From Mentions to Occupancy
+AIVO Standard · AIVO Standard
+
+| SSRN · 2025
+
+| Argues that exposure-based metrics ("my brand was mentioned X times") mislead executives, because high mention counts coexist with low decision-relevant occupancy in prompt space.
+
+| AIVO 100: Global Index of Brand Visibility Across AI Assistants
+AIVO Standard · AIVO Standard
+
+| SSRN · 2025
+
+| Public benchmark of 100 global brands measured by PSOS across ChatGPT, Gemini, Perplexity, Claude, and Grok. Reveals large gaps between market presence and AI presence.
+
+| How Enterprises Can Audit Their AI Visibility: A PSOS-Based Framework
+AIVO Standard · AIVO Standard
+
+| SSRN · 2025
+
+| Presents a structured enterprise methodology for auditing AI visibility, including prompt design, sampling, and governance reporting layers.
+
+| Reasoning Claim Tokens (RCTs): Inspectable AI Reasoning for External Representation Governance
+AIVO Standard · AIVO Standard
+
+| Zenodo · 2026
+
+| Proposes Reasoning Claim Tokens as a governance construct for reconstructing the reasoning state behind AI-mediated decisions about external representations.
+
+| A small number of samples can poison LLMs of any size
+Anthropic + UK AI Security Institute + Alan Turing Institute · Anthropic
+
+| anthropic.com · 2025
+
+| As few as 250 malicious documents can install backdoors in LLMs regardless of model size, disproving prior assumption that attackers need to control percentage of training data.
+
+| ChatGPT and Search Engine Optimisation: The Future is Here
+Kelly Cutler · Northwestern University
+
+| Journal of Brand Strategy · 2023
+
+| Early academic framing of the ChatGPT-era SEO shift. Argues SEO and AI optimization are becoming distinct disciplines with partially overlapping tactics.
+
+| GenAI Positioning Study: Global 80
+Niall Cook · Geometriqs
+
+| Independent Report · 2025
+
+| Cross-model analysis of 80 Fortune-equivalent brands across OpenAI, Gemini, and Perplexity. Documents systematic cross-platform inconsistencies in brand representation.
+
+| The Evolution of SEO in the Age of Generative Search Engines
+João Maria Gibert Prates de Oliveira Martins · NOVA Information Management School
+
+| Master's Thesis · 2024
+
+| Traces the transition from traditional SEO to generative-search optimization through literature synthesis + practitioner surveys. Documents the timeline of when GEO practices became distinct.
+
+| The AI Citation Game: Why Your Content Is Invisible to ChatGPT
+Arlen Kumar · Wrodium Research
+
+| Medium · 2025
+
+| Analysis of 10,000+ AI-generated answers. Key finding: 70% of high-ranking pages get zero ChatGPT citations because they optimize for SERP ranking, not for AI extraction.
+
+| Otterly.ai Generative Engine Optimization Guide
+Otterly.ai · Otterly.ai
+
+| Whitepaper · 2025
+
+| Practitioner guide covering the shift from traditional SEO, the LLM-vs-RAG distinction, and recommended tactics for appearing in AI search.
+
+| Tracking AI Visibility: A Playbook
+Victoria Affleck · Reboot Online
+
+| rebootonline.com · 2025
+
+| Framework covering technical health checks, citation and mention monitoring, referral-traffic tracking, and structured prompt testing as an integrated GEO measurement system.
+
+| LLM Seeding: An AI Search Strategy to Get Mentioned and Cited
+Leigh McKenzie, Alex Lindley · Semrush
+
+| semrush.com · 2025
+
+| Frames GEO as a "seeding" problem, getting your brand into the ~10 diverse sources AI tools typically pull from per query.
+
+| From GEO to AIVO: Rethinking Visibility in the AI Era
+AIVO Standard · AIVO Standard
+
+| SSRN · 2025
+
+| Argues that GEO is a legacy framing and AIVO (AI Visibility Optimization) is the appropriate successor, centering on assistants rather than generative web engines.
+
+| Generative Engine Optimization and Sponsored Search Bidding
+Academic · Various
+
+| SSRN · 2025
+
+| Models the strategic interaction between organic GEO and sponsored search. Argues AI Overviews shift advertising-bidding strategy because organic AI citation partially substitutes for paid clicks.
+
+| LLM SEO Files: A Framework for LLM-Oriented Content Optimization
+Academic · Various
+
+| SSRN · 2025
+
+| Proposes and characterizes "LLM SEO Files" including llms.txt and related emerging standards as a new layer of technical SEO distinct from robots.txt and sitemap.xml.
+
+| From Dashboards to Standards: AI Visibility 2.0 as a Governance Framework
+AIVO Standard · AIVO Standard
+
+| SSRN · 2025
+
+| Argues current AI-visibility vendors ("AI Visibility 1.0") must evolve into standards-compliant governance frameworks (AI Visibility 2.0) for enterprise adoption.
+
+| The Impact of JSON-LD Metadata on ChatGPT Visibility
+Peter Schanbacher · Hochschule Furtwangen University
+
+| SSRN · 2025
+
+| Empirical study of real estate agencies showing that sites with rich JSON-LD markup are significantly more likely to be "known" to ChatGPT than sites with no structured data.
+
+| Mind the Invisibility Gap: Analysis of 80 Leading Global Brands in LLM Answers
+Niall Cook · Geometriqs
+
+| SSRN · 2025
+
+| Systematic underrepresentation of even Fortune-500 brands in LLM answers relative to market share. Cross-model consistency is lower than typically assumed.
+
+| Machiavellian Marketing in the Age of Generative Engines
+Hadrian Stone · Independent
+
+| SSRN · 2026
+
+| Strategic framework positioning GEO as the adversarial equivalent of traditional marketing, addressing both defensive (protect your brand) and offensive (capture share) tactics.
+
+| Reasoning Without Records: Why AI-Mediated Decisions Require a Ledger
+AIVO Standard · AIVO Standard
+
+| SSRN · 2026
+
+| Argues that AI-mediated decisions lack reconstructable evidence of their reasoning state, creating governance gaps as AI increasingly mediates enterprise decisions about brand representation.
+
+| AI Visibility: The Post-Search Playbook for E-Commerce
+Industry Report · Independent
+
+| Whitepaper · 2025
+
+| Comprehensive analysis of how the referral economy collapsed (zero-click SERP, AI Overview effect) and what e-commerce brands must do to survive in the AI-mediated discovery era.
+
+Paper-by-Paper Analysis
+
+GEO: Generative Engine Optimization
+
+Aggarwal, Murahari, Rajpurohit, Kalyan, Narasimhan, Deshpande · Princeton University + IIT Delhi · ACM KDD 2024, 2024 · View paper
+
+Finding: Introduces GEO as a formal paradigm with GEO-bench (10k queries). Shows citation-adding, quotation-adding, and statistics-adding are the most effective content-level optimizations, lifting AI response visibility up to 40%.
+
+What it means for practitioners: The foundational GEO paper. Every Presenc audit anchors on the Princeton team's visibility metrics (Position-adjusted Word Count, Subjective Impression). The "add citations, quotes, and stats" rule is the highest-ROI content rewrite tactic documented in the literature.
+
+Manipulating Large Language Models to Increase Product Visibility
+
+Aounon Kumar, Himabindu Lakkaraju · Harvard University · arXiv, 2024 · View paper
+
+Finding: Demonstrates that adversarial product-description prompts can reliably increase LLM recommendation rates for targeted products, with minimal detection.
+
+What it means for practitioners: Sharpens the ethical boundary for GEO. Teams should know what adversarial techniques look like, both to avoid them and to detect competitor manipulation.
+
+Persistent Pre-Training Poisoning of LLMs
+
+Zhang, Rando, Evtimov, Chi, Smith, Carlini, Tramèr, Ippolito · CMU + ETH Zurich + Meta + Google DeepMind · arXiv, 2024 · View paper
+
+Finding: Shows that as few as 250 malicious documents in pre-training data can reliably install persistent backdoors in LLMs regardless of model size.
+
+What it means for practitioners: Training-data integrity matters. Brand safety is not only about what brands say but about what malicious third parties can inject. Monitoring mentions in public corpora is part of AI brand governance.
+
+White Hat Search Engine Optimization using Large Language Models
+
+Bardas, Mordo, Kurland, Tennenholtz, Zur · Technion, Israel · arXiv, 2025 · View paper
+
+Finding: Presents non-adversarial LLM-driven content optimization techniques that improve search ranking without manipulation, using LLMs to rewrite pages against ranking-signal heuristics.
+
+What it means for practitioners: Validates the Presenc approach: AI-driven rewriting can produce legitimate visibility lift without spam tactics. Structured, factual rewrites beat keyword-stuffing by every measured metric.
+
+Role-Augmented Intent-Driven Generative Search Engine Optimization
+
+Chen, Wu, Bao, Chen, Liao, Huang · University of Science and Technology of China · arXiv, 2025 · View paper
+
+Finding: Shows that tailoring content to specific searcher personas (intent + role) before LLM ingestion improves citation rates in generative search engines by 11-23% over generic optimization.
+
+What it means for practitioners: Single-voice pages lose to persona-matched pages in AI citation. Your SaaS page for CFOs and your SaaS page for developers should be genuinely different, not tonal variants.
+
+Generative Engine Optimization: How to Dominate AI Search
+
+Chen, Wang, Chen, Koudas · University of Toronto · arXiv, 2025 · View paper
+
+Finding: Empirical study across ChatGPT, Perplexity, and Gemini showing that structured content with explicit entity tagging earns 2-3x citation rate over equivalent-quality unstructured content.
+
+What it means for practitioners: Schema markup is not cosmetic. It is a core GEO lever. Organization, Article, Product, and FAQ schema on every canonical page is a baseline, not a flourish.
+
+AI Answer Engine Citation Behavior: GEO-16 Framework for B2B SaaS
+
+Kumar, Palkhouski · UC Berkeley + Wrodium Research · arXiv, 2025 · View paper
+
+Finding: Introduces GEO-16, a 16-pillar framework auditing page-level signals. Applied to 70 B2B SaaS prompts, identifies which page attributes correlate with citation in ChatGPT/Perplexity/Claude.
+
+What it means for practitioners: A direct blueprint for B2B SaaS visibility audits. The 16 pillars include novel signals (answer density, entity tag density, quote-to-prose ratio) that most GEO audits miss.
+
+What Generative Search Engines Like and How to Optimize Web Content Cooperatively
+
+Wu, Zhong, Kim, Xiong · Carnegie Mellon University + Vody · arXiv, 2025 · View paper
+
+Finding: Identifies which content characteristics generative engines prefer when synthesizing responses. Shows that cooperative, semantically-explicit content earns 35-60% higher citation rate than adversarial or terse equivalents.
+
+What it means for practitioners: Write for the AI's job-to-be-done: summarize cleanly, attribute explicitly, answer directly. Content that helps the AI do its work gets cited more than content that tries to trick it.
+
+The Discovery Gap: How Product Hunt Startups Disappear in LLM Discovery Queries
+
+Amit Prakash Sharma · IIT Patna · arXiv, 2025 · View paper
+
+Finding: Of 112 Product Hunt top-ranked startups tested, only ~12% surfaced in ChatGPT discovery queries for their category. Product Hunt ranking had near-zero correlation with LLM visibility.
+
+What it means for practitioners: Community launch success does not translate to AI discoverability. Startups need a dedicated GEO strategy starting from day 1, Product Hunt + press + G2 alone is not enough.
+
+IF-GEO: Conflict-Aware Instruction Fusion for Multi-Query Generative Engine Optimization
+
+Zhou, Chen, Chen, Bao, Chen, Liao · USTC + Institute of Dataspace, Hefei · arXiv, 2026 · View paper
+
+Finding: Presents a technique for optimizing a single source page across multiple conflicting search-intent queries, improving cross-query visibility by 14-27%.
+
+What it means for practitioners: Pages should earn multi-intent visibility. A single "best CRM" page optimized for commercial, navigational, and informational intent simultaneously can outperform three separate pages.
+
+Navigating the Shift: Comparative Analysis of Web Search and Generative AI Response Generation
+
+Chen, Wang, Chen, Koudas · University of Toronto · arXiv, 2026 · View paper
+
+Finding: Large-scale comparison of web search SERPs vs. generative AI responses. Finds systematic bias toward certain source types (Wikipedia, news, government) in AI responses vs. more diverse sources in traditional search.
+
+What it means for practitioners: AI citations concentrate source authority more than traditional search. Being on Wikipedia, in major news, or in government databases is a disproportionately strong AI visibility signal.
+
+Controlling Output Rankings in Generative Engines for LLM-based Search
+
+Jin, Chen, Zhang, Luo, Zeng, Luo, Wang · Various (US + China) · arXiv, 2026 · View paper
+
+Finding: Demonstrates that generative engines effectively impose implicit rankings on mentioned products, and that this ranking shapes user choice even without explicit comparison.
+
+What it means for practitioners: Position inside an AI answer matters. Being mentioned 3rd vs. 1st in a recommendation list has measurable conversion consequences analogous to SERP position effects.
+
+AIVO Standard Methodology for AI Visibility Optimization v3.0
+
+AIVO Standard Research Team · AIVO Standard · SSRN, 2025 · View paper
+
+Finding: Introduces Prompt-Space Occupancy Score (PSOS), a governance-ready KPI measuring how brands surface, persist, and decay inside generative AI systems across prompt space.
+
+What it means for practitioners: Moves the industry from mention-counting to occupancy. Presenc tracks analogous share-of-voice metrics; the AIVO PSOS framework offers a common vocabulary for boardroom reporting.
+
+The Visibility Gap in AI: From Mentions to Occupancy
+
+AIVO Standard · AIVO Standard · SSRN, 2025 · View paper
+
+Finding: Argues that exposure-based metrics ("my brand was mentioned X times") mislead executives, because high mention counts coexist with low decision-relevant occupancy in prompt space.
+
+What it means for practitioners: Mention count without occupancy share and prompt coverage is vanity metric. Presenc dashboards emphasize prompt-coverage percentage over raw mention counts for this reason.
+
+AIVO 100: Global Index of Brand Visibility Across AI Assistants
+
+AIVO Standard · AIVO Standard · SSRN, 2025 · View paper
+
+Finding: Public benchmark of 100 global brands measured by PSOS across ChatGPT, Gemini, Perplexity, Claude, and Grok. Reveals large gaps between market presence and AI presence.
+
+What it means for practitioners: Useful comparative reference when briefing executives. Many Fortune 500 brands have sharply lower AI visibility than market cap suggests.
+
+How Enterprises Can Audit Their AI Visibility: A PSOS-Based Framework
+
+AIVO Standard · AIVO Standard · SSRN, 2025 · View paper
+
+Finding: Presents a structured enterprise methodology for auditing AI visibility, including prompt design, sampling, and governance reporting layers.
+
+What it means for practitioners: Operational template for enterprise audit programs. Pairs well with Presenc's audit flow for large-organization deployments.
+
+Reasoning Claim Tokens (RCTs): Inspectable AI Reasoning for External Representation Governance
+
+AIVO Standard · AIVO Standard · Zenodo, 2026 · View paper
+
+Finding: Proposes Reasoning Claim Tokens as a governance construct for reconstructing the reasoning state behind AI-mediated decisions about external representations.
+
+What it means for practitioners: Emerging AI governance discipline, relevant to enterprises preparing for regulatory scrutiny of how AI describes their brands.
+
+A small number of samples can poison LLMs of any size
+
+Anthropic + UK AI Security Institute + Alan Turing Institute · Anthropic · anthropic.com, 2025 · View paper
+
+Finding: As few as 250 malicious documents can install backdoors in LLMs regardless of model size, disproving prior assumption that attackers need to control percentage of training data.
+
+What it means for practitioners: Brand protection at the model-training layer is cheap for adversaries. Monitor for coordinated smear campaigns in the corpora that feed major LLMs (Reddit, forums, indexed PDFs).
+
+ChatGPT and Search Engine Optimisation: The Future is Here
+
+Kelly Cutler · Northwestern University · Journal of Brand Strategy, 2023 · View paper
+
+Finding: Early academic framing of the ChatGPT-era SEO shift. Argues SEO and AI optimization are becoming distinct disciplines with partially overlapping tactics.
+
+What it means for practitioners: Historical foundation paper. Useful for positioning conversations with SEO teams still operating in the pre-GEO paradigm.
+
+GenAI Positioning Study: Global 80
+
+Niall Cook · Geometriqs · Independent Report, 2025 · View paper
+
+Finding: Cross-model analysis of 80 Fortune-equivalent brands across OpenAI, Gemini, and Perplexity. Documents systematic cross-platform inconsistencies in brand representation.
+
+What it means for practitioners: Single-platform optimization is insufficient. Brand representations diverge meaningfully across models and need unified cross-platform monitoring.
+
+The Evolution of SEO in the Age of Generative Search Engines
+
+João Maria Gibert Prates de Oliveira Martins · NOVA Information Management School · Master's Thesis, 2024 · View paper
+
+Finding: Traces the transition from traditional SEO to generative-search optimization through literature synthesis + practitioner surveys. Documents the timeline of when GEO practices became distinct.
+
+What it means for practitioners: Useful historical narrative for agency pitches and internal education about why GEO is a distinct budget line from SEO.
+
+The AI Citation Game: Why Your Content Is Invisible to ChatGPT
+
+Arlen Kumar · Wrodium Research · Medium, 2025 · View paper
+
+Finding: Analysis of 10,000+ AI-generated answers. Key finding: 70% of high-ranking pages get zero ChatGPT citations because they optimize for SERP ranking, not for AI extraction.
+
+What it means for practitioners: Ranking #1 on Google is not enough. The structural rewrite from "ranked page" to "citable passage" is measurable and worth the effort.
+
+Otterly.ai Generative Engine Optimization Guide
+
+Otterly.ai · Otterly.ai · Whitepaper, 2025 · View paper
+
+Finding: Practitioner guide covering the shift from traditional SEO, the LLM-vs-RAG distinction, and recommended tactics for appearing in AI search.
+
+What it means for practitioners: Well-organized industry primer. Useful as a teaching reference for teams new to GEO.
+
+Tracking AI Visibility: A Playbook
+
+Victoria Affleck · Reboot Online · rebootonline.com, 2025 · View paper
+
+Finding: Framework covering technical health checks, citation and mention monitoring, referral-traffic tracking, and structured prompt testing as an integrated GEO measurement system.
+
+What it means for practitioners: Practitioner-grade measurement framework. Overlaps meaningfully with the Presenc AI dashboard scope; useful for teams building in-house capabilities before buying.
+
+LLM Seeding: An AI Search Strategy to Get Mentioned and Cited
+
+Leigh McKenzie, Alex Lindley · Semrush · semrush.com, 2025 · View paper
+
+Finding: Frames GEO as a "seeding" problem, getting your brand into the ~10 diverse sources AI tools typically pull from per query.
+
+What it means for practitioners: Supports the Presenc approach of coordinating owned, earned, and third-party content programs to ensure brand coverage across likely source sets.
+
+From GEO to AIVO: Rethinking Visibility in the AI Era
+
+AIVO Standard · AIVO Standard · SSRN, 2025 · View paper
+
+Finding: Argues that GEO is a legacy framing and AIVO (AI Visibility Optimization) is the appropriate successor, centering on assistants rather than generative web engines.
+
+What it means for practitioners: Terminology is fluid. In enterprise conversations, AIVO may resonate more than GEO for governance audiences; practitioners still mostly use GEO.
+
+Generative Engine Optimization and Sponsored Search Bidding
+
+Academic · Various · SSRN, 2025 · View paper
+
+Finding: Models the strategic interaction between organic GEO and sponsored search. Argues AI Overviews shift advertising-bidding strategy because organic AI citation partially substitutes for paid clicks.
+
+What it means for practitioners: Paid-search budgets should incorporate AI Overview risk. Brands highly visible in AIOs may need less paid search; brands invisible in AIOs may need more.
+
+LLM SEO Files: A Framework for LLM-Oriented Content Optimization
+
+Academic · Various · SSRN, 2025 · View paper
+
+Finding: Proposes and characterizes "LLM SEO Files" including llms.txt and related emerging standards as a new layer of technical SEO distinct from robots.txt and sitemap.xml.
+
+What it means for practitioners: llms.txt is not optional. Academic and practitioner consensus is converging on it as a core AI-optimization artifact. Presenc's automated llms.txt generation addresses this directly.
+
+From Dashboards to Standards: AI Visibility 2.0 as a Governance Framework
+
+AIVO Standard · AIVO Standard · SSRN, 2025 · View paper
+
+Finding: Argues current AI-visibility vendors ("AI Visibility 1.0") must evolve into standards-compliant governance frameworks (AI Visibility 2.0) for enterprise adoption.
+
+What it means for practitioners: Enterprise procurement conversations increasingly include governance criteria. Dashboards alone are insufficient for regulated industries.
+
+The Impact of JSON-LD Metadata on ChatGPT Visibility
+
+Peter Schanbacher · Hochschule Furtwangen University · SSRN, 2025 · View paper
+
+Finding: Empirical study of real estate agencies showing that sites with rich JSON-LD markup are significantly more likely to be "known" to ChatGPT than sites with no structured data.
+
+What it means for practitioners: JSON-LD on every canonical page is a measurable AI-visibility lever. Real estate is a proof case, but the effect likely generalizes across verticals.
+
+Mind the Invisibility Gap: Analysis of 80 Leading Global Brands in LLM Answers
+
+Niall Cook · Geometriqs · SSRN, 2025 · View paper
+
+Finding: Systematic underrepresentation of even Fortune-500 brands in LLM answers relative to market share. Cross-model consistency is lower than typically assumed.
+
+What it means for practitioners: Size of enterprise is no guarantee of AI visibility. Presenc's enterprise customers frequently discover they have weaker AI presence than smaller competitors.
+
+Machiavellian Marketing in the Age of Generative Engines
+
+Hadrian Stone · Independent · SSRN, 2026 · View paper
+
+Finding: Strategic framework positioning GEO as the adversarial equivalent of traditional marketing, addressing both defensive (protect your brand) and offensive (capture share) tactics.
+
+What it means for practitioners: Useful lens for strategy teams balancing proactive content investment with defensive monitoring for brand hallucination and competitor manipulation.
+
+Reasoning Without Records: Why AI-Mediated Decisions Require a Ledger
+
+AIVO Standard · AIVO Standard · SSRN, 2026 · View paper
+
+Finding: Argues that AI-mediated decisions lack reconstructable evidence of their reasoning state, creating governance gaps as AI increasingly mediates enterprise decisions about brand representation.
+
+What it means for practitioners: Forward-looking governance concern. Compliance-heavy industries (finance, pharma) should build AI-decision ledgers now, before regulators mandate them.
+
+AI Visibility: The Post-Search Playbook for E-Commerce
+
+Industry Report · Independent · Whitepaper, 2025 · View paper
+
+Finding: Comprehensive analysis of how the referral economy collapsed (zero-click SERP, AI Overview effect) and what e-commerce brands must do to survive in the AI-mediated discovery era.
+
+What it means for practitioners: E-commerce is the most-affected category. Product schema, Merchant Center feeds, and D2C-native content structure are no longer nice-to-have.
+
+What the Literature Converges On
+
+Three practitioner takeaways hold across nearly every paper in this collection:
+
+1. Cite, quote, and stat. The single most replicated finding across the GEO literature is that content with explicit citations, quotations, and statistics earns higher visibility in AI responses than prose-only content, often by 30–60%. This finding survives across engines, query types, and content verticals.
+
+2. Structure is not cosmetic. JSON-LD, semantic HTML, explicit entity tagging, and consistent metadata are no longer SEO flourishes. They are the infrastructure AI systems use to ground confidence. The Schanbacher real-estate study, the CMU cooperative-content paper, and the GEO-16 framework all reach the same conclusion from different methodologies.
+
+3. Single-platform optimization fails. Brand representation diverges meaningfully across ChatGPT, Perplexity, Gemini, Claude, and Copilot. A brand strong on one platform is often weak on another, and the gap is systematic, not random. Multi-platform monitoring and optimization are now baseline.
+
+What the Literature Is Still Silent On
+
+Two gaps stand out. First, almost all published GEO research focuses on English-language queries. Arabic, Chinese, Korean, Hindi, and other major languages show visibility dynamics that are not captured in the current corpus. Second, the literature remains thin on the commercial outcomes of AI visibility, measurement of how AI citations convert to actual revenue is still mostly anecdotal, not rigorously modeled.
+
+At Presenc AI, we are building cross-language visibility measurement into the platform and publishing case studies with commercial attribution. As more empirical data becomes available, these open questions will close.
+
+How Presenc AI Uses This Research
+
+The Presenc AI audit framework is directly anchored in this literature. The 6-Factor scoring (Knowledge Presence, Semantic Authority, Entity Linking, Citations, RAG Fetchability, Contextual Integrity) maps to the signals repeatedly validated in the papers above. Each monthly platform update incorporates findings from new papers, for instance the IF-GEO multi-intent optimization technique from USTC (2026) was operationalized in our audit pipeline within a month of publication.
+
+Brands working with Presenc AI benefit from a measurement framework that is both practitioner-tested and academically grounded. The research summaries here are maintained continuously; new papers are added as they are published.
+
+More Research
+GEO Benchmark ReportState of GEO 2026How Brands Appear in AI: A Visibility StudyAI Visibility Agency Landscape 2026AI Mention Rate Benchmarks by Industry 2026arXiv AI Paper Volume 2020-2025Open-Source LLM Landscape 2026Reasoning LLM Brand Visibility
+Related Concepts
+Generative Engine OptimizationAI VisibilityCitations and MentionsKnowledge PresenceSemantic AuthorityEssential GEO Research Papers: 10 Must-Read Studies
+Track Your AI Visibility
+See how often your brand appears in ChatGPT, Claude, and Perplexity responses.
+Join the waitlist
+
+Frequently Asked Questions
+Is this list complete?+No literature review on a fast-moving field is ever complete. This collection is updated quarterly and is a living working bibliography, not a snapshot. If you know of a paper that should be included, we welcome submissions via info@presenc.ai.
+
+What paper should I read first?+Start with the foundational Aggarwal et al. (2024) GEO: Generative Engine Optimization from Princeton, it established the field. Then read the Geometriqs Global 80 study and the GEO-16 Framework paper for practitioner-facing synthesis.
+
+Are these papers peer-reviewed?+Roughly half are peer-reviewed (ACM KDD, venue proceedings, journals). The rest are preprints, SSRN working papers, or industry reports. We flag peer-review status where relevant but include high-quality preprints because the GEO field is too fast-moving to wait 18 months for peer review before adopting findings.
+
+How does this research change Presenc AI's product roadmap?+Directly. Each quarter we map new findings to product capabilities, for instance the persona-matched optimization finding from USTC drove our multi-persona audit pipeline in 2026. Research informs both what Presenc AI measures and what we advise brands to change.
+
+Track Your AI Visibility
+See how your brand appears across ChatGPT, Claude, Perplexity, and other AI platforms. Join the waitlist for early access.
+Join the waitlist
+
+Presenc AI
+
+Commercial infrastructure for the agentic web
+
+Product
+Discovery (live)
+Commercial ReputationSeeking partners
+Pricing IntelligenceBuilding
+Agentic CommerceResearch
+Plans
+Chrome Extension
+Mobile App
+
+Resources
+Blog
+Guides
+Trackers
+LLM Releases
+Research
+GEO Glossary
+Templates
+FAQ
+
+Company
+About
+Join the Waitlist
+AI Platforms
+Comparisons
+Alternatives
+Vision
+Privacy
+Terms
+
+Solutions & Regions
+GEO by Industry
+Use Cases
+Integrations
+United States
+India
+UAE
+South Korea
+
+Member of the NVIDIA Inception Program
+© 2026 Presenc AI. All rights reserved.
